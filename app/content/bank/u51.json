@@ -22,7 +22,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0002",
@@ -44,7 +48,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u51-0003",
@@ -69,7 +77,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0004",
@@ -93,7 +105,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u51-0005",
@@ -117,7 +133,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u51-0006",
@@ -146,7 +166,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0007",
@@ -169,7 +193,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0008",
@@ -195,7 +223,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0009",
@@ -222,7 +254,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0010",
@@ -245,7 +281,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0011",
@@ -269,7 +309,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u51-0012",
@@ -293,7 +337,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u51-0013",
@@ -320,7 +368,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0014",
@@ -348,7 +400,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u51-0015",
@@ -398,7 +454,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u51-0017",
@@ -426,7 +486,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0018",
@@ -449,7 +513,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0019",
@@ -478,7 +546,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0020",
@@ -507,7 +579,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0021",
@@ -535,7 +611,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0022",
@@ -559,7 +639,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0023",
@@ -583,7 +667,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0024",
@@ -605,7 +693,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0025",
@@ -632,7 +724,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u51-0026",
@@ -656,7 +752,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0027",
@@ -682,7 +782,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0028",
@@ -704,7 +808,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u51-0029",
@@ -728,7 +836,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u51-0030",
@@ -756,7 +868,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u51-0031",
@@ -780,7 +896,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0032",
@@ -803,7 +923,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0033",
@@ -830,7 +954,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0034",
@@ -861,7 +989,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u51-0035",
@@ -888,7 +1020,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u51-0036",
@@ -919,7 +1055,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0037",
@@ -951,7 +1091,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0038",
@@ -975,7 +1119,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u51-0039",
@@ -999,7 +1147,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u51-0040",
@@ -1020,7 +1172,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0041",
@@ -1044,7 +1200,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0042",
@@ -1071,7 +1231,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0043",
@@ -1093,7 +1257,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u51-0044",
@@ -1124,7 +1292,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0045",
@@ -1157,7 +1329,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      33
+    ]
   },
   {
     "id": "u51-0046",
@@ -1185,7 +1361,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u51-0047",
@@ -1212,7 +1392,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u51-0048",
@@ -1241,7 +1425,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0049",
@@ -1269,7 +1457,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u51-0050",
@@ -1298,7 +1490,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u51-0051",
@@ -1324,7 +1520,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0052",
@@ -1352,7 +1552,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0053",
@@ -1374,7 +1578,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u51-0054",
@@ -1403,7 +1611,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0055",
@@ -1427,7 +1639,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0056",
@@ -1456,7 +1672,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u51-0057",
@@ -1482,7 +1702,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0058",
@@ -1509,7 +1733,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u51-0059",
@@ -1538,7 +1766,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u51-0060",
@@ -1562,7 +1794,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u51-0061",
@@ -1588,7 +1824,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u51-0062",
@@ -1620,7 +1860,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u51-0063",
@@ -1645,7 +1889,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0064",
@@ -1670,7 +1918,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u51-0065",
@@ -1700,7 +1952,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      42
+    ]
   },
   {
     "id": "u51-0066",
@@ -1725,7 +1981,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u51-0067",
@@ -1748,7 +2008,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0068",
@@ -1777,7 +2041,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u51-0069",
@@ -1802,7 +2070,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u51-0070",
@@ -1828,7 +2100,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0071",
@@ -1854,7 +2130,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u51-0072",
@@ -1883,7 +2163,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      47
+    ]
   },
   {
     "id": "u51-0073",
@@ -1909,7 +2193,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Lucía and her friends arrive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0074",
@@ -1932,7 +2220,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0075",
@@ -1959,7 +2251,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u51-0076",
@@ -1985,7 +2281,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0077",
@@ -2012,7 +2312,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u51-0078",
@@ -2038,7 +2342,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0079",
@@ -2065,7 +2373,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0080",
@@ -2095,7 +2407,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0081",
@@ -2120,7 +2436,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0082",
@@ -2148,7 +2468,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0083",
@@ -2173,7 +2497,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0084",
@@ -2197,7 +2525,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0085",
@@ -2226,7 +2558,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0086",
@@ -2256,7 +2592,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0087",
@@ -2279,7 +2619,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0088",
@@ -2304,7 +2648,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0089",
@@ -2352,7 +2700,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0091",
@@ -2376,7 +2728,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0092",
@@ -2401,7 +2757,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0093",
@@ -2425,7 +2785,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0094",
@@ -2453,7 +2817,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0095",
@@ -2483,7 +2851,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0096",
@@ -2511,7 +2883,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0097",
@@ -2538,7 +2914,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u51-0098",
@@ -2562,7 +2942,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0099",
@@ -2589,7 +2973,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0100",
@@ -2616,7 +3004,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0101",
@@ -2640,7 +3032,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0102",
@@ -2664,7 +3060,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0103",
@@ -2714,7 +3114,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0105",
@@ -2739,7 +3143,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u51-0106",
@@ -2761,7 +3169,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0107",
@@ -2786,7 +3198,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0108",
@@ -2815,7 +3231,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0109",
@@ -2839,7 +3259,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0110",
@@ -2865,7 +3289,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u51-0111",
@@ -2888,7 +3316,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u51-0112",
@@ -2913,7 +3345,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u51-0113",
@@ -2937,7 +3373,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u51-0114",
@@ -2962,7 +3402,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      16
+    ]
   },
   {
     "id": "u51-0115",
@@ -2986,7 +3430,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u51-0116",
@@ -3010,7 +3458,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0117",
@@ -3036,7 +3488,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u51-0118",
@@ -3065,7 +3521,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u51-0119",
@@ -3090,7 +3550,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u51-0120",
@@ -3116,7 +3580,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u51-0121",
@@ -3141,7 +3609,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0122",
@@ -3170,7 +3642,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u51-0123",
@@ -3196,7 +3672,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u51-0124",
@@ -3220,7 +3700,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u51-0125",
@@ -3245,7 +3729,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0126",
@@ -3271,7 +3759,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u51-0127",
@@ -3296,7 +3788,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u51-0128",
@@ -3323,7 +3819,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0129",
@@ -3347,7 +3847,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      32
+    ]
   },
   {
     "id": "u51-0130",
@@ -3372,7 +3876,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u51-0131",
@@ -3400,7 +3908,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0132",
@@ -3429,7 +3941,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0133",
@@ -3455,7 +3971,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0134",
@@ -3482,7 +4002,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u51-0135",
@@ -3513,7 +4037,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u51-0136",
@@ -3542,7 +4070,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u51-0137",
@@ -3571,7 +4103,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u51-0138",
@@ -3599,7 +4135,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u51-0139",
@@ -3626,7 +4166,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u51-0140",
@@ -3655,7 +4199,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u51-0141",
@@ -3684,7 +4232,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u51-0142",
@@ -3714,7 +4266,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u51-0143",
@@ -3741,7 +4297,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u51-0144",
@@ -3768,7 +4328,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u51-0145",
@@ -3795,7 +4359,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u51-0146",
@@ -3822,7 +4390,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u51-0147",
@@ -3850,7 +4422,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      39
+    ]
   },
   {
     "id": "u51-0148",
@@ -3876,7 +4452,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u51-0149",
@@ -3903,7 +4483,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      60
+    ]
   },
   {
     "id": "u51-0150",
@@ -3929,7 +4513,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u51-0151",
@@ -3959,7 +4547,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      48
+    ]
   },
   {
     "id": "u51-0152",
@@ -3985,7 +4577,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      43
+    ]
   },
   {
     "id": "u51-0153",
@@ -4010,7 +4606,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u51-0154",
@@ -4035,7 +4635,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u51-0155",
@@ -4057,7 +4661,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0156",
@@ -4079,7 +4687,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u51-0157",
@@ -4110,7 +4722,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u51-0158",
@@ -4137,7 +4753,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u51-0159",
@@ -4166,7 +4786,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u51-0160",
@@ -4194,7 +4818,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0161",
@@ -4219,7 +4847,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "commands and past tense in vosotros",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0162",
@@ -4245,7 +4877,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u51-0163",
@@ -4275,7 +4911,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      52
+    ]
   },
   {
     "id": "u51-0164",
@@ -4302,7 +4942,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0165",
@@ -4331,7 +4975,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      57
+    ]
   },
   {
     "id": "u51-0166",
@@ -4389,7 +5037,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      43
+    ]
   },
   {
     "id": "u51-0168",
@@ -4415,7 +5067,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u51-0169",
@@ -4492,7 +5148,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      53
+    ]
   },
   {
     "id": "u51-0172",
@@ -4543,7 +5203,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u51-0174",
@@ -4598,7 +5262,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      60
+    ]
   },
   {
     "id": "u51-0176",
@@ -4626,7 +5294,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      60
+    ]
   },
   {
     "id": "u51-0177",
@@ -4654,7 +5326,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      33
+    ]
   },
   {
     "id": "u51-0178",
@@ -4684,7 +5360,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      50
+    ]
   },
   {
     "id": "u51-0179",
@@ -4738,7 +5418,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      45
+    ]
   },
   {
     "id": "u51-0181",
@@ -4764,7 +5448,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      46
+    ]
   },
   {
     "id": "u51-0182",
@@ -4863,7 +5551,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      42
+    ]
   },
   {
     "id": "u51-0186",
@@ -4939,7 +5631,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      52
+    ]
   },
   {
     "id": "u51-0189",
@@ -4990,7 +5686,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u51-0191",
@@ -5014,7 +5714,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u51-0192",
@@ -5067,7 +5771,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u51-0194",
@@ -5145,7 +5853,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      47
+    ]
   },
   {
     "id": "u51-0197",
@@ -5338,7 +6050,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u51-0205",
@@ -5594,7 +6310,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      42
+    ]
   },
   {
     "id": "u51-0216",
@@ -5805,7 +6525,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0225",
@@ -6051,7 +6775,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0235",
@@ -6122,7 +6850,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u51-0238",
@@ -6149,7 +6881,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      44
+    ]
   },
   {
     "id": "u51-0239",
@@ -6679,7 +7415,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      64,
+      68
+    ]
   },
   {
     "id": "u51-0260",
@@ -6727,7 +7467,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spain's today past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u51-0262",
@@ -6842,7 +7586,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0267",
@@ -6870,7 +7618,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u51-0268",
@@ -6895,7 +7647,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u51-0269",
@@ -6919,7 +7675,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0270",
@@ -6943,7 +7703,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u51-0271",
@@ -6969,7 +7733,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u51-0272",
@@ -6996,7 +7764,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u51-0273",
@@ -7022,7 +7794,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u51-0274",
@@ -7050,7 +7826,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u51-0275",
@@ -7076,7 +7856,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u51-0276",
@@ -7106,7 +7890,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u51-0277",
@@ -7134,7 +7922,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u51-0278",
@@ -7157,7 +7949,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0279",
@@ -7183,7 +7979,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u51-0280",
@@ -7210,7 +8010,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0281",
@@ -7237,7 +8041,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u51-0282",
@@ -7265,7 +8073,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u51-0283",
@@ -7290,7 +8102,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0284",
@@ -7315,7 +8131,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0285",
@@ -7345,7 +8165,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u51-0286",
@@ -7374,7 +8198,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u51-0287",
@@ -7397,7 +8225,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0288",
@@ -7425,7 +8257,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u51-0289",
@@ -7454,7 +8290,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u51-0290",
@@ -7479,7 +8319,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u51-0291",
@@ -7506,7 +8350,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u51-0292",
@@ -7534,7 +8382,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u51-0293",
@@ -7563,7 +8415,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u51-0294",
@@ -7592,7 +8448,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u51-0295",
@@ -7623,7 +8483,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u51-0296",
@@ -7650,7 +8514,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0297",
@@ -7676,7 +8544,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0298",
@@ -7697,7 +8569,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u51-0299",
@@ -7728,7 +8604,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u51-0300",
@@ -7755,7 +8635,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u51-0301",
@@ -7781,7 +8665,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      36
+    ]
   },
   {
     "id": "u51-0302",
@@ -7811,7 +8699,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u51-0303",
@@ -7839,7 +8731,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u51-0304",
@@ -7865,7 +8761,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u51-0305",
@@ -7893,7 +8793,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u51-0306",
@@ -7920,7 +8824,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      34
+    ]
   },
   {
     "id": "u51-0307",
@@ -7949,7 +8857,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u51-0308",
@@ -7975,7 +8887,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u51-0309",
@@ -8007,7 +8923,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u51-0310",
@@ -8034,7 +8954,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0311",
@@ -8062,7 +8986,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u51-0312",
@@ -8087,7 +9015,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u51-0313",
@@ -8313,7 +9245,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u51-0322",
@@ -8338,7 +9274,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u51-0323",
@@ -8496,7 +9436,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u51-0329",
@@ -8524,7 +9468,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u51-0330",
@@ -8553,7 +9501,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u51-0331",
@@ -8586,7 +9538,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u51-0332",
@@ -8614,7 +9570,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0333",
@@ -8641,7 +9601,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u51-0334",
@@ -8668,7 +9632,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u51-0335",
@@ -8724,7 +9692,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u51-0337",
@@ -8749,7 +9721,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0338",
@@ -8775,7 +9751,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u51-0339",
@@ -8804,7 +9784,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0340",
@@ -8832,7 +9816,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0341",
@@ -8861,7 +9849,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u51-0342",
@@ -8887,7 +9879,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u51-0343",
@@ -8915,7 +9911,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u51-0344",
@@ -8943,7 +9943,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u51-0345",
@@ -8973,7 +9977,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u51-0346",
@@ -9000,7 +10008,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u51-0347",
@@ -9027,7 +10039,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0348",
@@ -9055,7 +10071,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u51-0349",
@@ -9085,7 +10105,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u51-0350",
@@ -9116,7 +10140,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u51-0351",
@@ -9144,7 +10172,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0352",
@@ -9172,7 +10204,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u51-0353",
@@ -9199,7 +10235,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u51-0354",
@@ -9227,7 +10267,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u51-0355",
@@ -9254,7 +10298,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u51-0356",
@@ -9283,7 +10331,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u51-0357",
@@ -9308,7 +10360,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0358",
@@ -9336,7 +10392,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u51-0359",
@@ -9362,7 +10422,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u51-0360",
@@ -9389,7 +10453,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u51-0361",
@@ -9415,7 +10483,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u51-0362",
@@ -9445,7 +10517,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      49
+    ]
   },
   {
     "id": "u51-0363",
@@ -9476,7 +10552,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      46
+    ]
   },
   {
     "id": "u51-0364",
@@ -9505,7 +10585,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      33
+    ]
   },
   {
     "id": "u51-0365",
@@ -9531,7 +10615,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      41
+    ]
   },
   {
     "id": "u51-0366",
@@ -9563,7 +10651,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u51-0367",
@@ -9589,7 +10681,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u51-0368",
@@ -9617,7 +10713,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u51-0369",
@@ -9648,7 +10748,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u51-0370",
@@ -9676,7 +10780,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u51-0371",
@@ -9702,7 +10810,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u51-0372",
@@ -9728,7 +10840,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u51-0373",
@@ -9753,7 +10869,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u51-0374",
@@ -9784,7 +10904,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u51-0375",
@@ -9811,7 +10935,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0376",
@@ -9842,7 +10970,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u51-0377",
@@ -9868,7 +11000,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0378",
@@ -9896,7 +11032,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u51-0379",
@@ -9923,7 +11063,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u51-0380",
@@ -9952,7 +11096,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0381",
@@ -9981,7 +11129,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u51-0382",
@@ -10008,7 +11160,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u51-0383",
@@ -10034,7 +11190,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0384",
@@ -10060,7 +11220,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0385",
@@ -10086,7 +11250,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u51-0386",
@@ -10114,7 +11282,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u51-0387",
@@ -10140,7 +11312,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u51-0388",
@@ -10166,7 +11342,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u51-0389",
@@ -10191,7 +11371,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u51-0390",
@@ -10220,7 +11404,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u51-0391",
@@ -10246,7 +11434,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u51-0392",
@@ -10274,7 +11466,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u51-0393",
@@ -10301,7 +11497,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      35
+    ]
   },
   {
     "id": "u51-0394",
@@ -10327,7 +11527,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the other if only form",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u51-0395",
@@ -10373,7 +11577,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0397",
@@ -10397,7 +11605,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u51-0398",
@@ -10426,7 +11638,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      54
+    ]
   },
   {
     "id": "u51-0399",
@@ -10452,7 +11668,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0400",
@@ -10473,7 +11693,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      27
+    ]
   },
   {
     "id": "u51-0401",
@@ -10520,7 +11744,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      45
+    ]
   },
   {
     "id": "u51-0403",
@@ -10543,7 +11771,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      42
+    ]
   },
   {
     "id": "u51-0404",
@@ -10565,7 +11797,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u51-0405",
@@ -10592,7 +11828,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0406",
@@ -10618,7 +11858,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      41
+    ]
   },
   {
     "id": "u51-0407",
@@ -10643,7 +11887,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u51-0408",
@@ -10671,7 +11919,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0409",
@@ -10700,7 +11952,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u51-0410",
@@ -10730,7 +11986,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0411",
@@ -10757,7 +12017,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0412",
@@ -10804,7 +12068,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0414",
@@ -10828,7 +12096,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0415",
@@ -10851,7 +12123,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u51-0416",
@@ -10878,7 +12154,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0417",
@@ -10907,7 +12187,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      40
+    ]
   },
   {
     "id": "u51-0418",
@@ -10932,7 +12216,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u51-0419",
@@ -10958,7 +12246,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u51-0420",
@@ -11007,7 +12299,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u51-0422",
@@ -11034,7 +12330,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u51-0423",
@@ -11059,7 +12359,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u51-0424",
@@ -11087,7 +12391,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u51-0425",
@@ -11115,7 +12423,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0426",
@@ -11140,7 +12452,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u51-0427",
@@ -11165,7 +12481,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u51-0428",
@@ -11191,7 +12511,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u51-0429",
@@ -11217,7 +12541,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u51-0430",
@@ -11243,7 +12571,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u51-0431",
@@ -11270,7 +12602,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u51-0432",
@@ -11296,7 +12632,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u51-0433",
@@ -11323,7 +12663,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u51-0434",
@@ -11350,7 +12694,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u51-0435",
@@ -11376,7 +12724,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u51-0436",
@@ -11402,7 +12754,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u51-0437",
@@ -11426,7 +12782,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u51-0438",
@@ -11453,7 +12813,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "adapting to a new place",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u51-0439",
@@ -11477,7 +12841,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u51-0440",
@@ -11499,7 +12867,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0441",
@@ -11521,7 +12893,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u51-0442",
@@ -11546,7 +12922,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      33
+    ]
   },
   {
     "id": "u51-0443",
@@ -11569,7 +12949,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0444",
@@ -11592,7 +12976,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0445",
@@ -11618,7 +13006,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u51-0446",
@@ -11647,7 +13039,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u51-0447",
@@ -11674,7 +13070,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u51-0448",
@@ -11698,7 +13098,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u51-0449",
@@ -11723,7 +13127,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u51-0450",
@@ -11747,7 +13155,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0451",
@@ -11775,7 +13187,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u51-0452",
@@ -11803,7 +13219,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u51-0453",
@@ -11829,7 +13249,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u51-0454",
@@ -11855,7 +13279,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u51-0455",
@@ -11882,7 +13310,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u51-0456",
@@ -11907,7 +13339,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u51-0457",
@@ -11930,7 +13366,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u51-0458",
@@ -11953,7 +13393,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u51-0459",
@@ -11978,7 +13422,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u51-0460",
@@ -12004,7 +13452,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      39
+    ]
   },
   {
     "id": "u51-0461",
@@ -12032,7 +13484,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u51-0462",
@@ -12057,7 +13513,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      39
+    ]
   },
   {
     "id": "u51-0463",
@@ -12084,7 +13544,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      30
+    ]
   },
   {
     "id": "u51-0464",
@@ -12111,7 +13575,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      31
+    ]
   },
   {
     "id": "u51-0465",
@@ -12137,7 +13605,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      49
+    ]
   },
   {
     "id": "u51-0466",
@@ -12164,7 +13636,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      50
+    ]
   },
   {
     "id": "u51-0467",
@@ -12194,7 +13670,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      28
+    ]
   },
   {
     "id": "u51-0468",
@@ -12220,7 +13700,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      45
+    ]
   },
   {
     "id": "u51-0469",
@@ -12250,7 +13734,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      55
+    ]
   },
   {
     "id": "u51-0470",
@@ -12278,7 +13766,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u51-0471",
@@ -12305,7 +13797,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u51-0472",
@@ -12333,7 +13829,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      48
+    ]
   },
   {
     "id": "u51-0473",
@@ -12359,7 +13859,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      45
+    ]
   },
   {
     "id": "u51-0474",
@@ -12387,7 +13891,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u51-0475",
@@ -12411,7 +13919,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u51-0476",
@@ -12435,7 +13947,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u51-0477",
@@ -12458,7 +13974,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u51-0478",
@@ -12481,7 +14001,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u51-0479",
@@ -12506,7 +14030,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u51-0480",
@@ -12530,7 +14058,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u51-0481",
@@ -12558,7 +14090,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u51-0482",
@@ -12585,7 +14121,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u51-0483",
@@ -12610,7 +14150,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u51-0484",
@@ -12642,7 +14186,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0485",
@@ -12677,7 +14225,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0486",
@@ -12708,7 +14260,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u51-0487",
@@ -12733,7 +14289,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      36
+    ]
   },
   {
     "id": "u51-0488",
@@ -12765,7 +14325,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u51-0489",
@@ -12793,7 +14357,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u51-0490",
@@ -12821,7 +14389,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      49
+    ]
   },
   {
     "id": "u51-0491",
@@ -12846,7 +14418,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0492",
@@ -12874,7 +14450,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "where words and customs come from",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u51-0493",
@@ -12898,7 +14478,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u51-0494",
@@ -12925,7 +14509,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u51-0495",
@@ -12952,7 +14540,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u51-0496",
@@ -12977,7 +14569,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u51-0497",
@@ -13003,7 +14599,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u51-0498",
@@ -13026,7 +14626,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0499",
@@ -13051,7 +14655,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0500",
@@ -13074,7 +14682,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u51-0501",
@@ -13100,7 +14712,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u51-0502",
@@ -13124,7 +14740,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u51-0503",
@@ -13146,7 +14766,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u51-0504",
@@ -13170,7 +14794,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u51-0505",
@@ -13194,7 +14822,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u51-0506",
@@ -13219,7 +14851,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u51-0507",
@@ -13241,7 +14877,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u51-0508",
@@ -13265,7 +14905,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u51-0509",
@@ -13289,7 +14933,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u51-0510",
@@ -13312,7 +14960,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u51-0511",
@@ -13336,7 +14988,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u51-0512",
@@ -13362,7 +15018,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u51-0513",
@@ -13384,7 +15044,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u51-0514",
@@ -13408,7 +15072,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u51-0515",
@@ -13431,7 +15099,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u51-0516",
@@ -13455,7 +15127,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      40
+    ]
   },
   {
     "id": "u51-0517",
@@ -13478,7 +15154,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      52
+    ]
   },
   {
     "id": "u51-0518",
@@ -13499,7 +15179,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0519",
@@ -13526,7 +15210,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u51-0520",
@@ -13550,7 +15238,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0521",
@@ -13577,7 +15269,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u51-0522",
@@ -13600,7 +15296,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u51-0523",
@@ -13624,7 +15324,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      20
+    ]
   },
   {
     "id": "u51-0524",
@@ -13646,7 +15350,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      32
+    ]
   },
   {
     "id": "u51-0525",
@@ -13669,7 +15377,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u51-0526",
@@ -13690,7 +15402,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u51-0527",
@@ -13714,7 +15430,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u51-0528",
@@ -13739,7 +15459,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      20
+    ]
   },
   {
     "id": "u51-0529",
@@ -13762,7 +15486,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0530",
@@ -13785,7 +15513,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u51-0531",
@@ -13808,7 +15540,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0532",
@@ -13832,7 +15568,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u51-0533",
@@ -13858,7 +15598,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0534",
@@ -13883,7 +15627,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u51-0535",
@@ -13913,7 +15661,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      67,
+      78
+    ]
   },
   {
     "id": "u51-0536",
@@ -13949,7 +15701,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u51-0537",
@@ -13980,7 +15736,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u51-0538",
@@ -14007,7 +15767,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u51-0539",
@@ -14031,7 +15795,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u51-0540",
@@ -14055,7 +15823,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      26
+    ]
   },
   {
     "id": "u51-0541",
@@ -14075,7 +15847,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u51-0542",
@@ -14101,7 +15877,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Spanish around the world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u51-0543",
@@ -14125,7 +15905,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0544",
@@ -14149,7 +15933,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u51-0545",
@@ -14173,7 +15961,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u51-0546",
@@ -14194,7 +15986,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u51-0547",
@@ -14218,7 +16014,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0548",
@@ -14240,7 +16040,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0549",
@@ -14263,7 +16067,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u51-0550",
@@ -14288,7 +16096,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u51-0551",
@@ -14314,7 +16126,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0552",
@@ -14338,7 +16154,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u51-0553",
@@ -14363,7 +16183,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0554",
@@ -14385,7 +16209,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0555",
@@ -14408,7 +16236,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u51-0556",
@@ -14433,7 +16265,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0557",
@@ -14456,7 +16292,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      42
+    ]
   },
   {
     "id": "u51-0558",
@@ -14483,7 +16323,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u51-0559",
@@ -14507,7 +16351,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u51-0560",
@@ -14529,7 +16377,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u51-0561",
@@ -14555,7 +16407,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u51-0562",
@@ -14582,7 +16438,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u51-0563",
@@ -14605,7 +16465,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u51-0564",
@@ -14635,7 +16499,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u51-0565",
@@ -14657,7 +16525,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u51-0566",
@@ -14680,7 +16552,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u51-0567",
@@ -14707,7 +16583,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u51-0568",
@@ -14730,7 +16610,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u51-0569",
@@ -14758,7 +16642,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0570",
@@ -14782,7 +16670,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0571",
@@ -14806,7 +16698,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u51-0572",
@@ -14830,7 +16726,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u51-0573",
@@ -14854,7 +16754,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u51-0574",
@@ -14878,7 +16782,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u51-0575",
@@ -14901,7 +16809,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u51-0576",
@@ -14922,7 +16834,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u51-0577",
@@ -14944,7 +16860,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u51-0578",
@@ -14967,7 +16887,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u51-0579",
@@ -14991,7 +16915,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0580",
@@ -15018,7 +16946,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "trips and transport",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0581",
@@ -15040,7 +16972,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u51-0582",
@@ -15064,7 +17000,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u51-0583",
@@ -15086,7 +17026,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u51-0584",
@@ -15109,7 +17053,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u51-0585",
@@ -15135,7 +17083,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u51-0586",
@@ -15161,7 +17113,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u51-0587",
@@ -15188,7 +17144,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u51-0588",
@@ -15212,7 +17172,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u51-0589",
@@ -15235,7 +17199,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u51-0590",
@@ -15260,7 +17228,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      35
+    ]
   },
   {
     "id": "u51-0591",
@@ -15283,7 +17255,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0592",
@@ -15310,7 +17286,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u51-0593",
@@ -15335,7 +17315,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u51-0594",
@@ -15362,7 +17346,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0595",
@@ -15385,7 +17373,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u51-0596",
@@ -15410,7 +17402,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u51-0597",
@@ -15439,7 +17435,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u51-0598",
@@ -15465,7 +17465,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u51-0599",
@@ -15488,7 +17492,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u51-0600",
@@ -15510,7 +17518,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u51-0601",
@@ -15535,7 +17547,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u51-0602",
@@ -15559,7 +17575,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u51-0603",
@@ -15584,7 +17604,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      46
+    ]
   },
   {
     "id": "u51-0604",
@@ -15609,7 +17633,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u51-0605",
@@ -15634,7 +17662,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0606",
@@ -15657,7 +17689,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u51-0607",
@@ -15679,7 +17715,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u51-0608",
@@ -15705,7 +17745,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u51-0609",
@@ -15728,7 +17772,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u51-0610",
@@ -15751,7 +17799,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u51-0611",
@@ -15773,7 +17825,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u51-0612",
@@ -15798,7 +17854,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0613",
@@ -15822,7 +17882,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u51-0614",
@@ -15847,7 +17911,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0615",
@@ -15869,7 +17937,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u51-0616",
@@ -15893,7 +17965,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0617",
@@ -15915,7 +17991,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0618",
@@ -15941,7 +18021,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u51-0619",
@@ -15964,7 +18048,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u51-0620",
@@ -15989,7 +18077,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u51-0621",
@@ -16013,7 +18105,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u51-0622",
@@ -16035,7 +18131,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      45
+    ]
   },
   {
     "id": "u51-0623",
@@ -16062,7 +18162,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u51-0624",
@@ -16085,7 +18189,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0625",
@@ -16112,7 +18220,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u51-0626",
@@ -16133,7 +18245,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u51-0627",
@@ -16155,7 +18271,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0628",
@@ -16182,7 +18302,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u51-0629",
@@ -16206,7 +18330,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u51-0630",
@@ -16231,7 +18359,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0631",
@@ -16256,7 +18388,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u51-0632",
@@ -16281,7 +18417,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u51-0633",
@@ -16306,7 +18446,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u51-0634",
@@ -16329,7 +18473,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u51-0635",
@@ -16355,7 +18503,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      7
+    ]
   },
   {
     "id": "u51-0636",
@@ -16382,7 +18534,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u51-0637",
@@ -16410,7 +18566,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      7
+    ]
   },
   {
     "id": "u51-0638",
@@ -16435,7 +18595,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u51-0639",
@@ -16460,7 +18624,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u51-0640",
@@ -16484,7 +18652,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u51-0641",
@@ -16508,7 +18680,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u51-0642",
@@ -16532,7 +18708,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u51-0643",
@@ -16554,7 +18734,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u51-0644",
@@ -16577,7 +18761,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0645",
@@ -16598,7 +18786,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u51-0646",
@@ -16623,7 +18815,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0647",
@@ -16647,7 +18843,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u51-0648",
@@ -16673,7 +18873,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u51-0649",
@@ -16695,7 +18899,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u51-0650",
@@ -16718,7 +18926,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u51-0651",
@@ -16742,7 +18954,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u51-0652",
@@ -16763,7 +18979,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u51-0653",
@@ -16787,7 +19007,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u51-0654",
@@ -16811,7 +19035,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u51-0655",
@@ -16832,7 +19060,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u51-0656",
@@ -16854,7 +19086,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u51-0657",
@@ -16881,7 +19117,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u51-0658",
@@ -16906,7 +19146,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u51-0659",
@@ -16928,7 +19172,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "the café and the house",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u51-0660",
@@ -17306,7 +19554,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía's visit in dialogue",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      47
+    ]
   },
   {
     "id": "u51-0676",
@@ -17541,7 +19793,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "Lucía's visit in dialogue",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u51-0685",
@@ -17586,7 +19842,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      57
+    ]
   },
   {
     "id": "u51-0687",
@@ -17786,7 +20046,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u51-0696",
@@ -17812,7 +20076,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u51-0697",
@@ -17838,7 +20106,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u51-0698",
@@ -17864,7 +20136,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      37
+    ]
   },
   {
     "id": "u51-0699",
@@ -17892,7 +20168,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      53,
+      74
+    ]
   },
   {
     "id": "u51-0700",
@@ -17916,7 +20196,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      44
+    ]
   },
   {
     "id": "u51-0701",
@@ -17941,7 +20225,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      49
+    ]
   },
   {
     "id": "u51-0702",
@@ -17972,7 +20260,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      54
+    ]
   },
   {
     "id": "u51-0703",
@@ -18003,7 +20295,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u51-0704",
@@ -18033,7 +20329,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u51-0705",
@@ -18057,7 +20357,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u51-0706",
@@ -18084,7 +20388,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      49
+    ]
   },
   {
     "id": "u51-0707",
@@ -18106,7 +20414,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u51-0708",
@@ -18126,7 +20438,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u51-0709",
@@ -18148,7 +20464,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u51-0710",
@@ -18169,7 +20489,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u51-0711",
@@ -18191,7 +20515,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      43
+    ]
   },
   {
     "id": "u51-0712",
@@ -18217,7 +20545,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      36
+    ]
   },
   {
     "id": "u51-0713",
@@ -18241,7 +20573,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      45
+    ]
   },
   {
     "id": "u51-0714",
@@ -18267,7 +20603,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      47
+    ]
   },
   {
     "id": "u51-0715",
@@ -18293,7 +20633,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      57,
+      79
+    ]
   },
   {
     "id": "u51-0716",
@@ -18312,7 +20656,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      46
+    ]
   },
   {
     "id": "u51-0717",
@@ -18334,7 +20682,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "chunks from Spain",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u51-0718",
@@ -18496,7 +20848,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Tomás understands everything",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      39
+    ]
   },
   {
     "id": "u51-0725",
@@ -18548,7 +20904,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Tomás understands everything",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      44
+    ]
   },
   {
     "id": "u51-0727",
@@ -18831,6 +21191,7 @@
       "g:adjective-agreement",
       "g:estar-location-states",
       "g:reflexive-routine",
+      "g:ser-estar-adjectives",
       "g:ser-identity",
       "l:estar",
       "l:hoy",
@@ -18855,6 +21216,7 @@
     "requires": [
       "c:en-serio",
       "g:estar-location-states",
+      "g:ser-estar-adjectives",
       "g:ser-identity",
       "l:callado",
       "l:estar",
@@ -19511,7 +21873,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Vale and the offer",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      44
+    ]
   },
   {
     "id": "u51-0767",
@@ -19562,7 +21928,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Vale and the offer",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u51-0769",
@@ -19587,7 +21957,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Vale and the offer",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u51-0770",
@@ -19612,7 +21986,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Vale and the offer",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0771",
@@ -19643,7 +22021,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "Vale and the offer",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u51-0772",
@@ -19670,7 +22052,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u51-0773",
@@ -19695,7 +22081,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u51-0774",
@@ -19723,7 +22113,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u51-0775",
@@ -19746,7 +22140,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u51-0776",
@@ -19774,7 +22172,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u51-0777",
@@ -19799,7 +22201,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u51-0778",
@@ -19825,7 +22231,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u51-0779",
@@ -19848,7 +22258,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u51-0780",
@@ -19873,7 +22287,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u51-0781",
@@ -19897,7 +22315,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0782",
@@ -19919,7 +22341,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u51-0783",
@@ -19943,7 +22369,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u51-0784",
@@ -19968,7 +22398,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u51-0785",
@@ -19990,7 +22424,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u51-0786",
@@ -20047,7 +22485,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u51-0788",
@@ -20076,7 +22518,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u51-0789",
@@ -20101,7 +22547,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u51-0790",
@@ -20137,7 +22587,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      67,
+      72
+    ]
   },
   {
     "id": "u51-0791",
@@ -20162,7 +22616,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u51-0792",
@@ -20195,7 +22653,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      60
+    ]
   },
   {
     "id": "u51-0793",
@@ -20227,7 +22689,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      42
+    ]
   },
   {
     "id": "u51-0794",
@@ -20252,7 +22718,11 @@
     "kind": "statement",
     "unit": "u51",
     "theme": "odds and ends of the week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0795",
@@ -20282,7 +22752,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0796",
@@ -20305,7 +22779,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u51-0797",
@@ -20332,7 +22810,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u51-0798",
@@ -20361,7 +22843,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u51-0799",
@@ -20391,7 +22877,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0800",
@@ -20419,7 +22909,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u51-0801",
@@ -20448,7 +22942,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u51-0802",
@@ -20473,7 +22971,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0803",
@@ -20505,7 +23007,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u51-0804",
@@ -20536,7 +23042,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u51-0805",
@@ -20566,7 +23076,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0806",
@@ -20596,7 +23110,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u51-0807",
@@ -20627,7 +23145,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u51-0808",
@@ -20655,7 +23177,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u51-0809",
@@ -20690,7 +23216,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u51-0810",
@@ -20721,7 +23251,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u51-0811",
@@ -20753,7 +23287,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u51-0812",
@@ -20783,7 +23321,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0813",
@@ -20815,7 +23357,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      47
+    ]
   },
   {
     "id": "u51-0814",
@@ -20843,7 +23389,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u51-0815",
@@ -20872,7 +23422,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0816",
@@ -20907,7 +23461,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u51-0817",
@@ -20944,7 +23502,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u51-0818",
@@ -20978,7 +23540,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u51-0819",
@@ -21001,7 +23567,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      27
+    ]
   },
   {
     "id": "u51-0820",
@@ -21027,7 +23597,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u51-0821",
@@ -21053,7 +23627,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u51-0822",
@@ -21080,7 +23658,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      59
+    ]
   },
   {
     "id": "u51-0823",
@@ -21109,7 +23691,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u51-0824",
@@ -21139,7 +23725,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u51-0825",
@@ -21165,7 +23755,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u51-0826",
@@ -21193,7 +23787,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u51-0827",
@@ -21218,7 +23816,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u51-0828",
@@ -21244,7 +23846,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u51-0829",
@@ -21270,7 +23876,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      45
+    ]
   },
   {
     "id": "u51-0830",
@@ -21296,7 +23906,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u51-0831",
@@ -21320,7 +23934,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u51-0832",
@@ -21348,7 +23966,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      58,
+      66
+    ]
   },
   {
     "id": "u51-0833",
@@ -21377,7 +23999,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u51-0834",
@@ -21401,7 +24027,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u51-0835",
@@ -21426,7 +24056,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u51-0836",
@@ -21453,7 +24087,11 @@
     "kind": "dialogue",
     "unit": "u51",
     "theme": "small talk with the Madrid friends",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u51-0837",
@@ -21479,7 +24117,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u51-0838",
@@ -21504,7 +24146,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u51-0839",
@@ -21552,7 +24198,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u51-0841",
@@ -21582,7 +24232,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      54
+    ]
   },
   {
     "id": "u51-0842",
@@ -21703,7 +24357,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u51-0847",
@@ -21753,7 +24411,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u51-0849",
@@ -21779,7 +24441,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u51-0850",
@@ -21804,7 +24470,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u51-0851",
@@ -21827,7 +24497,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u51-0852",
@@ -21853,7 +24527,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      49
+    ]
   },
   {
     "id": "u51-0853",
@@ -21877,7 +24555,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u51-0854",
@@ -21900,7 +24582,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u51-0855",
@@ -21925,7 +24611,11 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u51-0856",
@@ -21951,6 +24641,10 @@
     "kind": "question",
     "unit": "u51",
     "theme": "questions about Spain and Colombia",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   }
 ]

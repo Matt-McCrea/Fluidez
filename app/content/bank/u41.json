@@ -27,7 +27,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u41-0002",
@@ -59,7 +63,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   },
   {
     "id": "u41-0003",
@@ -90,7 +98,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      49
+    ]
   },
   {
     "id": "u41-0004",
@@ -119,7 +131,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      45
+    ]
   },
   {
     "id": "u41-0005",
@@ -146,7 +162,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      45
+    ]
   },
   {
     "id": "u41-0006",
@@ -179,7 +199,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      44
+    ]
   },
   {
     "id": "u41-0007",
@@ -209,7 +233,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u41-0008",
@@ -239,7 +267,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      41
+    ]
   },
   {
     "id": "u41-0009",
@@ -267,7 +299,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      41
+    ]
   },
   {
     "id": "u41-0010",
@@ -295,7 +331,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u41-0011",
@@ -329,7 +369,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      53
+    ]
   },
   {
     "id": "u41-0012",
@@ -358,7 +402,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      48
+    ]
   },
   {
     "id": "u41-0013",
@@ -390,7 +438,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      56
+    ]
   },
   {
     "id": "u41-0014",
@@ -418,7 +470,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u41-0015",
@@ -451,7 +507,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      43
+    ]
   },
   {
     "id": "u41-0016",
@@ -478,7 +538,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u41-0017",
@@ -540,7 +604,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      48
+    ]
   },
   {
     "id": "u41-0019",
@@ -567,7 +635,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u41-0020",
@@ -594,7 +666,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0021",
@@ -644,7 +720,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0023",
@@ -669,7 +749,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u41-0024",
@@ -694,7 +778,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0025",
@@ -720,7 +808,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0026",
@@ -744,7 +836,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u41-0027",
@@ -795,7 +891,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0029",
@@ -823,7 +923,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u41-0030",
@@ -875,7 +979,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u41-0032",
@@ -902,7 +1010,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u41-0033",
@@ -930,7 +1042,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u41-0034",
@@ -982,7 +1098,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u41-0036",
@@ -1033,7 +1153,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0038",
@@ -1061,7 +1185,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      22
+    ]
   },
   {
     "id": "u41-0039",
@@ -1091,7 +1219,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0040",
@@ -1117,7 +1249,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0041",
@@ -1142,7 +1278,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u41-0042",
@@ -1168,7 +1308,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u41-0043",
@@ -1194,7 +1338,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u41-0044",
@@ -1219,7 +1367,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0045",
@@ -1246,7 +1398,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0046",
@@ -1273,7 +1429,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u41-0047",
@@ -1327,7 +1487,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u41-0049",
@@ -1356,7 +1520,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0050",
@@ -1382,7 +1550,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      35
+    ]
   },
   {
     "id": "u41-0051",
@@ -1407,7 +1579,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0052",
@@ -1432,7 +1608,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0053",
@@ -1458,7 +1638,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0054",
@@ -1482,7 +1666,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u41-0055",
@@ -1508,7 +1696,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0056",
@@ -1535,7 +1727,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u41-0057",
@@ -1560,7 +1756,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u41-0058",
@@ -1586,7 +1786,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0059",
@@ -1612,7 +1816,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u41-0060",
@@ -1636,7 +1844,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u41-0061",
@@ -1662,7 +1874,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0062",
@@ -1715,7 +1931,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u41-0064",
@@ -1743,7 +1963,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0065",
@@ -1769,7 +1993,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u41-0066",
@@ -1797,7 +2025,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0067",
@@ -1848,7 +2080,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0069",
@@ -1875,7 +2111,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u41-0070",
@@ -1901,7 +2141,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u41-0071",
@@ -1929,7 +2173,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0072",
@@ -1957,7 +2205,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0073",
@@ -1985,7 +2237,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0074",
@@ -2009,7 +2265,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u41-0075",
@@ -2039,7 +2299,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0076",
@@ -2064,7 +2328,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u41-0077",
@@ -2089,7 +2357,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told me to (reported requests)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0078",
@@ -2117,7 +2389,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      42
+    ]
   },
   {
     "id": "u41-0079",
@@ -2146,7 +2422,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      47
+    ]
   },
   {
     "id": "u41-0080",
@@ -2179,7 +2459,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      50
+    ]
   },
   {
     "id": "u41-0081",
@@ -2214,7 +2498,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      44
+    ]
   },
   {
     "id": "u41-0082",
@@ -2244,7 +2532,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      60
+    ]
   },
   {
     "id": "u41-0083",
@@ -2268,7 +2560,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u41-0084",
@@ -2293,7 +2589,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u41-0085",
@@ -2322,7 +2622,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      49
+    ]
   },
   {
     "id": "u41-0086",
@@ -2355,7 +2659,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      53
+    ]
   },
   {
     "id": "u41-0087",
@@ -2385,7 +2693,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u41-0088",
@@ -2411,7 +2723,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u41-0089",
@@ -2446,7 +2762,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      59
+    ]
   },
   {
     "id": "u41-0090",
@@ -2474,7 +2794,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u41-0091",
@@ -2506,7 +2830,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      44
+    ]
   },
   {
     "id": "u41-0092",
@@ -2535,7 +2863,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      44
+    ]
   },
   {
     "id": "u41-0093",
@@ -2566,7 +2898,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u41-0094",
@@ -2598,7 +2934,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      60
+    ]
   },
   {
     "id": "u41-0095",
@@ -2612,6 +2952,7 @@
       "g:imperfect-subj",
       "g:indirect-objects",
       "g:preterite-spelling-stem",
+      "g:ser-estar-adjectives",
       "g:subj-past-triggers",
       "g:that-clauses",
       "l:callado",
@@ -2630,7 +2971,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      40
+    ]
   },
   {
     "id": "u41-0096",
@@ -2665,7 +3010,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u41-0097",
@@ -2695,7 +3044,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      39
+    ]
   },
   {
     "id": "u41-0098",
@@ -2730,7 +3083,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      51
+    ]
   },
   {
     "id": "u41-0099",
@@ -2761,7 +3118,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      39
+    ]
   },
   {
     "id": "u41-0100",
@@ -2793,7 +3154,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u41-0101",
@@ -2819,7 +3184,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u41-0102",
@@ -2871,7 +3240,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0104",
@@ -2900,7 +3273,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      17
+    ]
   },
   {
     "id": "u41-0105",
@@ -2929,7 +3306,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u41-0106",
@@ -2961,7 +3342,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      53
+    ]
   },
   {
     "id": "u41-0107",
@@ -2992,7 +3377,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      38
+    ]
   },
   {
     "id": "u41-0108",
@@ -3020,7 +3409,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      45
+    ]
   },
   {
     "id": "u41-0109",
@@ -3052,7 +3445,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      56
+    ]
   },
   {
     "id": "u41-0110",
@@ -3083,7 +3480,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      43
+    ]
   },
   {
     "id": "u41-0111",
@@ -3112,7 +3513,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      63
+    ]
   },
   {
     "id": "u41-0112",
@@ -3136,7 +3541,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      40
+    ]
   },
   {
     "id": "u41-0113",
@@ -3168,7 +3577,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      68
+    ]
   },
   {
     "id": "u41-0114",
@@ -3194,7 +3607,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      48
+    ]
   },
   {
     "id": "u41-0115",
@@ -3228,7 +3645,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      61
+    ]
   },
   {
     "id": "u41-0116",
@@ -3257,7 +3678,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      50
+    ]
   },
   {
     "id": "u41-0117",
@@ -3289,7 +3714,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      52
+    ]
   },
   {
     "id": "u41-0118",
@@ -3319,7 +3748,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      54
+    ]
   },
   {
     "id": "u41-0119",
@@ -3350,7 +3783,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      51
+    ]
   },
   {
     "id": "u41-0120",
@@ -3377,7 +3814,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      55
+    ]
   },
   {
     "id": "u41-0121",
@@ -3406,7 +3847,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u41-0122",
@@ -3441,7 +3886,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u41-0123",
@@ -3471,7 +3920,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      45
+    ]
   },
   {
     "id": "u41-0124",
@@ -3497,7 +3950,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0125",
@@ -3526,7 +3983,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      48
+    ]
   },
   {
     "id": "u41-0126",
@@ -3554,7 +4015,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      42
+    ]
   },
   {
     "id": "u41-0127",
@@ -3668,7 +4133,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u41-0131",
@@ -3704,7 +4173,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      48
+    ]
   },
   {
     "id": "u41-0132",
@@ -3729,7 +4202,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u41-0133",
@@ -3765,7 +4242,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      47
+    ]
   },
   {
     "id": "u41-0134",
@@ -3788,7 +4269,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0135",
@@ -3844,7 +4329,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u41-0137",
@@ -3874,7 +4363,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      49
+    ]
   },
   {
     "id": "u41-0138",
@@ -3907,7 +4400,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      56
+    ]
   },
   {
     "id": "u41-0139",
@@ -3933,7 +4430,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      16
+    ]
   },
   {
     "id": "u41-0140",
@@ -3966,7 +4467,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      44
+    ]
   },
   {
     "id": "u41-0141",
@@ -3995,7 +4500,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      44
+    ]
   },
   {
     "id": "u41-0142",
@@ -4044,7 +4553,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0144",
@@ -4072,7 +4585,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u41-0145",
@@ -4098,7 +4615,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u41-0146",
@@ -4127,7 +4648,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      46
+    ]
   },
   {
     "id": "u41-0147",
@@ -4210,7 +4735,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u41-0150",
@@ -4236,7 +4765,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wanting and asking in the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u41-0151",
@@ -4268,7 +4801,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u41-0152",
@@ -4300,7 +4837,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      39
+    ]
   },
   {
     "id": "u41-0153",
@@ -4330,7 +4871,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      44
+    ]
   },
   {
     "id": "u41-0154",
@@ -4357,7 +4902,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u41-0155",
@@ -4383,7 +4932,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0156",
@@ -4414,7 +4967,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      55,
+      68
+    ]
   },
   {
     "id": "u41-0157",
@@ -4449,7 +5006,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      52
+    ]
   },
   {
     "id": "u41-0158",
@@ -4483,7 +5044,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      50
+    ]
   },
   {
     "id": "u41-0159",
@@ -4516,7 +5081,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      39
+    ]
   },
   {
     "id": "u41-0160",
@@ -4572,7 +5141,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      44
+    ]
   },
   {
     "id": "u41-0162",
@@ -4606,7 +5179,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      58
+    ]
   },
   {
     "id": "u41-0163",
@@ -4632,7 +5209,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u41-0164",
@@ -4661,7 +5242,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      50
+    ]
   },
   {
     "id": "u41-0165",
@@ -4691,7 +5276,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u41-0166",
@@ -4722,7 +5311,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u41-0167",
@@ -4753,7 +5346,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      42
+    ]
   },
   {
     "id": "u41-0168",
@@ -4779,7 +5376,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u41-0169",
@@ -4813,7 +5414,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      47
+    ]
   },
   {
     "id": "u41-0170",
@@ -4845,7 +5450,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      46
+    ]
   },
   {
     "id": "u41-0171",
@@ -4879,7 +5488,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      56
+    ]
   },
   {
     "id": "u41-0172",
@@ -4916,7 +5529,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      77
+    ]
   },
   {
     "id": "u41-0173",
@@ -4949,7 +5566,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      50
+    ]
   },
   {
     "id": "u41-0174",
@@ -4999,7 +5620,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      56
+    ]
   },
   {
     "id": "u41-0176",
@@ -5033,7 +5658,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      57
+    ]
   },
   {
     "id": "u41-0177",
@@ -5065,7 +5694,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      34
+    ]
   },
   {
     "id": "u41-0178",
@@ -5098,7 +5731,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      51
+    ]
   },
   {
     "id": "u41-0179",
@@ -5151,7 +5788,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      42
+    ]
   },
   {
     "id": "u41-0181",
@@ -5185,7 +5826,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      61
+    ]
   },
   {
     "id": "u41-0182",
@@ -5222,7 +5867,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      61
+    ]
   },
   {
     "id": "u41-0183",
@@ -5279,7 +5928,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      60
+    ]
   },
   {
     "id": "u41-0185",
@@ -5305,7 +5958,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0186",
@@ -5328,7 +5985,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u41-0187",
@@ -5351,7 +6012,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0188",
@@ -5375,7 +6040,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0189",
@@ -5401,7 +6070,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      24
+    ]
   },
   {
     "id": "u41-0190",
@@ -5426,7 +6099,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u41-0191",
@@ -5451,7 +6128,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0192",
@@ -5473,7 +6154,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u41-0193",
@@ -5498,7 +6183,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0194",
@@ -5546,7 +6235,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u41-0196",
@@ -5572,7 +6265,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u41-0197",
@@ -5599,7 +6296,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u41-0198",
@@ -5629,7 +6330,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      34
+    ]
   },
   {
     "id": "u41-0199",
@@ -5658,7 +6363,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      36
+    ]
   },
   {
     "id": "u41-0200",
@@ -5689,7 +6398,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u41-0201",
@@ -5716,7 +6429,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0202",
@@ -5770,7 +6487,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      58
+    ]
   },
   {
     "id": "u41-0204",
@@ -5803,7 +6524,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      40
+    ]
   },
   {
     "id": "u41-0205",
@@ -5829,7 +6554,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "feelings, opinions and doubts about the past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      32
+    ]
   },
   {
     "id": "u41-0206",
@@ -6653,7 +7382,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0246",
@@ -6679,7 +7412,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0247",
@@ -6705,7 +7442,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0248",
@@ -6738,7 +7479,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u41-0249",
@@ -6764,7 +7509,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0250",
@@ -6793,7 +7542,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u41-0251",
@@ -6819,7 +7572,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u41-0252",
@@ -6845,7 +7602,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes that things were different",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u41-0253",
@@ -6884,6 +7645,7 @@
       "g:estar-location-states",
       "g:present-ar",
       "g:reflexive-routine",
+      "g:ser-estar-adjectives",
       "g:that-clauses",
       "l:abuela",
       "l:estar",
@@ -7280,7 +8042,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0271",
@@ -7303,7 +8069,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0272",
@@ -7328,7 +8098,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0273",
@@ -7355,7 +8129,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u41-0274",
@@ -7395,7 +8173,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0276",
@@ -7417,7 +8199,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0277",
@@ -7442,7 +8228,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0278",
@@ -7467,7 +8257,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0279",
@@ -7492,7 +8286,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0280",
@@ -7515,7 +8313,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0281",
@@ -7538,7 +8340,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0282",
@@ -7582,7 +8388,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0284",
@@ -7610,7 +8420,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u41-0285",
@@ -7638,7 +8452,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u41-0286",
@@ -7662,7 +8480,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u41-0287",
@@ -7689,7 +8511,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0288",
@@ -7715,7 +8541,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u41-0289",
@@ -7738,7 +8568,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0290",
@@ -7763,7 +8597,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0291",
@@ -7787,7 +8625,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0292",
@@ -7812,7 +8654,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0293",
@@ -7835,7 +8681,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0294",
@@ -7861,7 +8711,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0295",
@@ -7886,7 +8740,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0296",
@@ -7912,7 +8770,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0297",
@@ -7939,7 +8801,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u41-0298",
@@ -7964,7 +8830,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0299",
@@ -7988,7 +8858,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0300",
@@ -8013,7 +8887,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0301",
@@ -8038,7 +8916,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u41-0302",
@@ -8061,7 +8943,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0303",
@@ -8085,7 +8971,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0304",
@@ -8107,7 +8997,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0305",
@@ -8129,7 +9023,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0306",
@@ -8154,7 +9052,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0307",
@@ -8178,7 +9080,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0308",
@@ -8202,7 +9108,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0309",
@@ -8227,7 +9137,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0310",
@@ -8251,7 +9165,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0311",
@@ -8294,7 +9212,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0313",
@@ -8316,7 +9238,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0314",
@@ -8342,7 +9268,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0315",
@@ -8366,7 +9296,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0316",
@@ -8389,7 +9323,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0317",
@@ -8414,7 +9352,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0318",
@@ -8440,7 +9382,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0319",
@@ -8466,7 +9412,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u41-0320",
@@ -8490,7 +9440,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0321",
@@ -8515,7 +9469,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u41-0322",
@@ -8542,7 +9500,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0323",
@@ -8566,7 +9528,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0324",
@@ -8590,7 +9556,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0325",
@@ -8615,7 +9585,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0326",
@@ -8643,7 +9617,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0327",
@@ -8665,7 +9643,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0328",
@@ -8689,7 +9671,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0329",
@@ -8715,7 +9701,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0330",
@@ -8740,7 +9730,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0331",
@@ -8764,7 +9758,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0332",
@@ -8790,7 +9788,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u41-0333",
@@ -8814,7 +9816,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0334",
@@ -8839,7 +9845,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u41-0335",
@@ -8863,7 +9873,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u41-0336",
@@ -8890,7 +9904,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u41-0337",
@@ -8972,7 +9990,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0341",
@@ -8999,7 +10021,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      47
+    ]
   },
   {
     "id": "u41-0342",
@@ -9025,7 +10051,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0343",
@@ -9051,7 +10081,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0344",
@@ -9078,7 +10112,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u41-0345",
@@ -9131,7 +10169,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u41-0347",
@@ -9157,7 +10199,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0348",
@@ -9183,7 +10229,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u41-0349",
@@ -9207,7 +10257,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0350",
@@ -9233,7 +10287,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0351",
@@ -9258,7 +10316,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0352",
@@ -9282,7 +10344,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0353",
@@ -9307,7 +10373,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0354",
@@ -9330,7 +10400,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0355",
@@ -9376,7 +10450,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0357",
@@ -9401,7 +10479,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0358",
@@ -9426,7 +10508,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u41-0359",
@@ -9452,7 +10538,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0360",
@@ -9476,7 +10566,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u41-0361",
@@ -9500,7 +10594,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0362",
@@ -9524,7 +10622,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0363",
@@ -9548,7 +10650,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0364",
@@ -9571,7 +10677,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0365",
@@ -9599,7 +10709,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0366",
@@ -9624,7 +10738,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0367",
@@ -9649,7 +10767,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0368",
@@ -9673,7 +10795,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0369",
@@ -9696,7 +10822,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0370",
@@ -9720,7 +10850,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u41-0371",
@@ -9745,7 +10879,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0372",
@@ -9772,7 +10910,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0373",
@@ -9800,7 +10942,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0374",
@@ -9825,7 +10971,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0375",
@@ -9851,7 +11001,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0376",
@@ -9881,7 +11035,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0377",
@@ -9909,7 +11067,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u41-0378",
@@ -9935,7 +11097,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u41-0379",
@@ -9960,7 +11126,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u41-0380",
@@ -9989,7 +11159,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u41-0381",
@@ -10018,7 +11192,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u41-0382",
@@ -10048,7 +11226,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      55
+    ]
   },
   {
     "id": "u41-0383",
@@ -10074,7 +11256,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u41-0384",
@@ -10101,7 +11287,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0385",
@@ -10134,7 +11324,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u41-0386",
@@ -10183,7 +11377,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u41-0388",
@@ -10209,7 +11407,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "as if",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u41-0389",
@@ -10229,7 +11431,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0390",
@@ -10257,7 +11463,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0391",
@@ -10282,7 +11492,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0392",
@@ -10307,7 +11521,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0393",
@@ -10331,7 +11549,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u41-0394",
@@ -10359,7 +11581,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      40
+    ]
   },
   {
     "id": "u41-0395",
@@ -10386,7 +11612,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u41-0396",
@@ -10416,7 +11646,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0397",
@@ -10447,7 +11681,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      61
+    ]
   },
   {
     "id": "u41-0398",
@@ -10473,7 +11711,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0399",
@@ -10500,7 +11742,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0400",
@@ -10535,7 +11781,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      39
+    ]
   },
   {
     "id": "u41-0401",
@@ -10564,7 +11814,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      51
+    ]
   },
   {
     "id": "u41-0402",
@@ -10582,7 +11836,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0403",
@@ -10606,7 +11864,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      52
+    ]
   },
   {
     "id": "u41-0404",
@@ -10628,7 +11890,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u41-0405",
@@ -10648,7 +11914,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u41-0406",
@@ -10672,7 +11942,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      48
+    ]
   },
   {
     "id": "u41-0407",
@@ -10696,7 +11970,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      50
+    ]
   },
   {
     "id": "u41-0408",
@@ -10720,7 +11998,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      21
+    ]
   },
   {
     "id": "u41-0409",
@@ -10741,7 +12023,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u41-0410",
@@ -10763,7 +12049,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0411",
@@ -10787,7 +12077,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0412",
@@ -10815,7 +12109,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      43
+    ]
   },
   {
     "id": "u41-0413",
@@ -10839,7 +12137,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u41-0414",
@@ -10872,7 +12174,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      51
+    ]
   },
   {
     "id": "u41-0415",
@@ -10896,7 +12202,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u41-0416",
@@ -10917,7 +12227,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "not fair, count on me",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u41-0417",
@@ -10946,7 +12260,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0418",
@@ -10975,7 +12293,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0419",
@@ -11004,7 +12326,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0420",
@@ -11034,7 +12360,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0421",
@@ -11061,7 +12391,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0422",
@@ -11090,7 +12424,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0423",
@@ -11119,7 +12457,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0424",
@@ -11149,7 +12491,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0425",
@@ -11182,7 +12528,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0426",
@@ -11211,7 +12561,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0427",
@@ -11241,7 +12595,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0428",
@@ -11272,7 +12630,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0429",
@@ -11301,7 +12663,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0430",
@@ -11332,7 +12698,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0431",
@@ -11361,7 +12731,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0432",
@@ -11391,7 +12765,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0433",
@@ -11422,7 +12800,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0434",
@@ -11455,7 +12837,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0435",
@@ -11483,7 +12869,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0436",
@@ -11513,7 +12903,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0437",
@@ -11542,7 +12936,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0438",
@@ -11572,7 +12970,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0439",
@@ -11600,7 +13002,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0440",
@@ -11631,7 +13037,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0441",
@@ -11661,7 +13071,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0442",
@@ -11690,7 +13104,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0443",
@@ -11720,7 +13138,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0444",
@@ -11749,7 +13171,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0445",
@@ -11781,7 +13207,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0446",
@@ -11811,7 +13241,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0447",
@@ -11844,7 +13278,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0448",
@@ -11871,7 +13309,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0449",
@@ -11900,7 +13342,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0450",
@@ -11931,7 +13377,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0451",
@@ -11959,7 +13409,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0452",
@@ -11990,7 +13444,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0453",
@@ -12021,7 +13479,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0454",
@@ -12052,7 +13514,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0455",
@@ -12083,7 +13549,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0456",
@@ -12115,7 +13585,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0457",
@@ -12149,7 +13623,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0458",
@@ -12187,7 +13665,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0459",
@@ -12221,7 +13703,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0460",
@@ -12256,7 +13742,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "would you mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0461",
@@ -12330,7 +13820,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0464",
@@ -12367,7 +13861,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0466",
@@ -12387,7 +13885,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u41-0467",
@@ -12406,7 +13908,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u41-0468",
@@ -12425,7 +13931,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u41-0469",
@@ -12445,7 +13955,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0470",
@@ -12465,7 +13979,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0471",
@@ -12523,7 +14041,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0474",
@@ -12545,7 +14067,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0475",
@@ -12570,7 +14096,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0476",
@@ -12593,7 +14123,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0477",
@@ -12621,7 +14155,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0478",
@@ -12647,7 +14185,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0479",
@@ -12669,7 +14211,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0480",
@@ -12691,7 +14237,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0481",
@@ -12716,7 +14266,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0482",
@@ -12740,7 +14294,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0483",
@@ -12761,7 +14319,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0484",
@@ -12790,7 +14352,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0485",
@@ -12818,7 +14384,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0486",
@@ -12847,7 +14417,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u41-0487",
@@ -12873,7 +14447,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u41-0488",
@@ -12898,7 +14476,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      41
+    ]
   },
   {
     "id": "u41-0489",
@@ -12921,7 +14503,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0490",
@@ -12987,7 +14573,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u41-0493",
@@ -13009,7 +14599,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u41-0494",
@@ -13033,7 +14627,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u41-0495",
@@ -13061,7 +14659,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u41-0496",
@@ -13107,7 +14709,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0498",
@@ -13138,7 +14744,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "toasts",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      61
+    ]
   },
   {
     "id": "u41-0499",
@@ -13178,7 +14788,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u41-0501",
@@ -13208,7 +14822,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      31
+    ]
   },
   {
     "id": "u41-0502",
@@ -13232,7 +14850,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      30
+    ]
   },
   {
     "id": "u41-0503",
@@ -13264,7 +14886,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      66
+    ]
   },
   {
     "id": "u41-0504",
@@ -13289,7 +14915,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u41-0505",
@@ -13316,7 +14946,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u41-0506",
@@ -13342,7 +14976,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u41-0507",
@@ -13363,7 +15001,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u41-0508",
@@ -13386,7 +15028,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u41-0509",
@@ -13410,7 +15056,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u41-0510",
@@ -13435,7 +15085,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      30
+    ]
   },
   {
     "id": "u41-0511",
@@ -13458,7 +15112,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u41-0512",
@@ -13483,7 +15141,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      21
+    ]
   },
   {
     "id": "u41-0513",
@@ -13514,7 +15176,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      25
+    ]
   },
   {
     "id": "u41-0514",
@@ -13540,7 +15206,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u41-0515",
@@ -13563,7 +15233,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u41-0516",
@@ -13587,7 +15261,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      35
+    ]
   },
   {
     "id": "u41-0517",
@@ -13610,7 +15288,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u41-0518",
@@ -13663,7 +15345,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u41-0520",
@@ -13685,7 +15371,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      20
+    ]
   },
   {
     "id": "u41-0521",
@@ -13706,7 +15396,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u41-0522",
@@ -13757,7 +15451,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      37
+    ]
   },
   {
     "id": "u41-0524",
@@ -13781,7 +15479,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      25
+    ]
   },
   {
     "id": "u41-0525",
@@ -13806,7 +15508,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      36
+    ]
   },
   {
     "id": "u41-0526",
@@ -13830,7 +15536,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      32
+    ]
   },
   {
     "id": "u41-0527",
@@ -13857,7 +15567,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      21
+    ]
   },
   {
     "id": "u41-0528",
@@ -13907,7 +15621,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      22
+    ]
   },
   {
     "id": "u41-0530",
@@ -13935,7 +15653,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u41-0531",
@@ -13961,7 +15683,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      21
+    ]
   },
   {
     "id": "u41-0532",
@@ -13990,7 +15716,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u41-0533",
@@ -14013,7 +15743,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      23
+    ]
   },
   {
     "id": "u41-0534",
@@ -14039,7 +15773,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u41-0535",
@@ -14065,7 +15803,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u41-0536",
@@ -14109,7 +15851,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u41-0538",
@@ -14139,7 +15885,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u41-0539",
@@ -14166,7 +15916,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      47
+    ]
   },
   {
     "id": "u41-0540",
@@ -14195,7 +15949,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      58
+    ]
   },
   {
     "id": "u41-0541",
@@ -14220,7 +15978,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "dreams and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      57
+    ]
   },
   {
     "id": "u41-0542",
@@ -14243,7 +16005,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0543",
@@ -14265,7 +16031,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0544",
@@ -14289,7 +16059,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u41-0545",
@@ -14313,7 +16087,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0546",
@@ -14339,7 +16117,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u41-0547",
@@ -14360,7 +16142,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0548",
@@ -14384,7 +16170,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u41-0549",
@@ -14408,7 +16198,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0550",
@@ -14433,7 +16227,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u41-0551",
@@ -14457,7 +16255,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0552",
@@ -14481,7 +16283,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u41-0553",
@@ -14505,7 +16311,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0554",
@@ -14531,7 +16341,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0555",
@@ -14558,7 +16372,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u41-0556",
@@ -14586,7 +16404,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u41-0557",
@@ -14613,7 +16435,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u41-0558",
@@ -14637,7 +16463,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u41-0559",
@@ -14659,7 +16489,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u41-0560",
@@ -14685,7 +16519,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0561",
@@ -14707,7 +16545,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0562",
@@ -14733,7 +16575,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0563",
@@ -14756,7 +16602,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u41-0564",
@@ -14782,7 +16632,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0565",
@@ -14806,7 +16660,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u41-0566",
@@ -14830,7 +16688,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u41-0567",
@@ -14855,7 +16717,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0568",
@@ -14877,7 +16743,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0569",
@@ -14900,7 +16770,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0570",
@@ -14925,7 +16799,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0571",
@@ -14947,7 +16825,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0572",
@@ -14977,7 +16859,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0573",
@@ -15003,7 +16889,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u41-0574",
@@ -15027,7 +16917,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0575",
@@ -15051,7 +16945,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0576",
@@ -15074,7 +16972,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u41-0577",
@@ -15099,7 +17001,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0578",
@@ -15126,7 +17032,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0579",
@@ -15150,7 +17060,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0580",
@@ -15177,7 +17091,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u41-0581",
@@ -15205,7 +17123,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "wearing something new",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u41-0582",
@@ -15230,7 +17152,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      41
+    ]
   },
   {
     "id": "u41-0583",
@@ -15253,7 +17179,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u41-0584",
@@ -15276,7 +17206,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u41-0585",
@@ -15301,7 +17235,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      27
+    ]
   },
   {
     "id": "u41-0586",
@@ -15326,7 +17264,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      53
+    ]
   },
   {
     "id": "u41-0587",
@@ -15349,7 +17291,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u41-0588",
@@ -15374,7 +17320,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u41-0589",
@@ -15397,7 +17347,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u41-0590",
@@ -15421,7 +17375,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u41-0591",
@@ -15444,7 +17402,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0592",
@@ -15466,7 +17428,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u41-0593",
@@ -15491,7 +17457,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u41-0594",
@@ -15517,7 +17487,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u41-0595",
@@ -15543,7 +17517,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u41-0596",
@@ -15565,7 +17543,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u41-0597",
@@ -15587,7 +17569,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u41-0598",
@@ -15608,7 +17594,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      40
+    ]
   },
   {
     "id": "u41-0599",
@@ -15630,7 +17620,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      25
+    ]
   },
   {
     "id": "u41-0600",
@@ -15650,7 +17644,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0601",
@@ -15674,7 +17672,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u41-0602",
@@ -15699,7 +17701,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0603",
@@ -15724,7 +17730,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0604",
@@ -15749,7 +17759,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0605",
@@ -15773,7 +17787,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "reconciliation and regret",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0606",
@@ -15795,7 +17813,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u41-0607",
@@ -15821,7 +17843,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u41-0608",
@@ -15847,7 +17873,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0609",
@@ -15871,7 +17901,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0610",
@@ -15891,7 +17925,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u41-0611",
@@ -15919,7 +17957,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0612",
@@ -15939,7 +17981,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0613",
@@ -15965,7 +18011,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u41-0614",
@@ -15989,7 +18039,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u41-0615",
@@ -16017,7 +18071,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u41-0616",
@@ -16038,7 +18096,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u41-0617",
@@ -16063,7 +18125,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "wishes and requests",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u41-0618",
@@ -16086,7 +18152,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u41-0619",
@@ -16116,7 +18186,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u41-0620",
@@ -16140,7 +18214,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u41-0621",
@@ -16161,7 +18239,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      35
+    ]
   },
   {
     "id": "u41-0622",
@@ -16189,7 +18271,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0623",
@@ -16216,7 +18302,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0624",
@@ -16238,7 +18328,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u41-0625",
@@ -16262,7 +18356,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0626",
@@ -16283,7 +18381,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u41-0627",
@@ -16306,7 +18408,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0628",
@@ -16329,7 +18435,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0629",
@@ -16352,7 +18462,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u41-0630",
@@ -16377,7 +18491,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      57
+    ]
   },
   {
     "id": "u41-0631",
@@ -16401,7 +18519,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      19
+    ]
   },
   {
     "id": "u41-0632",
@@ -16421,7 +18543,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u41-0633",
@@ -16445,7 +18571,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u41-0634",
@@ -16466,7 +18596,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u41-0635",
@@ -16491,7 +18625,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u41-0636",
@@ -16512,7 +18650,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      39
+    ]
   },
   {
     "id": "u41-0637",
@@ -16535,7 +18677,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u41-0638",
@@ -16558,7 +18704,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u41-0639",
@@ -16580,7 +18730,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u41-0640",
@@ -16601,7 +18755,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u41-0641",
@@ -16627,7 +18785,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u41-0642",
@@ -16651,7 +18813,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "meeting and talking",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0643",
@@ -16715,7 +18881,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u41-0646",
@@ -16742,7 +18912,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u41-0647",
@@ -16772,7 +18946,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u41-0648",
@@ -16800,7 +18978,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0649",
@@ -16824,7 +19006,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u41-0650",
@@ -16845,7 +19031,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u41-0651",
@@ -16872,7 +19062,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u41-0652",
@@ -16898,7 +19092,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u41-0653",
@@ -16926,7 +19124,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u41-0654",
@@ -16952,7 +19154,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u41-0655",
@@ -16979,7 +19185,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u41-0656",
@@ -17000,7 +19210,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u41-0657",
@@ -17022,7 +19236,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0658",
@@ -17045,7 +19263,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0659",
@@ -17072,7 +19294,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0660",
@@ -17098,7 +19324,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0661",
@@ -17120,7 +19350,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u41-0662",
@@ -17144,7 +19378,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u41-0663",
@@ -17169,7 +19407,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u41-0664",
@@ -17191,7 +19433,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u41-0665",
@@ -17213,7 +19459,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u41-0666",
@@ -17237,7 +19487,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u41-0667",
@@ -17262,7 +19516,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u41-0668",
@@ -17286,7 +19544,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u41-0669",
@@ -17310,7 +19572,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u41-0670",
@@ -17340,7 +19606,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      34
+    ]
   },
   {
     "id": "u41-0671",
@@ -17362,7 +19632,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0672",
@@ -17387,7 +19661,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0673",
@@ -17408,7 +19686,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u41-0674",
@@ -17429,7 +19711,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u41-0675",
@@ -17454,7 +19740,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u41-0676",
@@ -17474,7 +19764,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0677",
@@ -17496,7 +19790,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u41-0678",
@@ -17518,7 +19816,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u41-0679",
@@ -17540,7 +19842,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u41-0680",
@@ -17564,7 +19870,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      23
+    ]
   },
   {
     "id": "u41-0681",
@@ -17590,7 +19900,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "jobs, family and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0682",
@@ -17616,7 +19930,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u41-0683",
@@ -17641,7 +19959,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u41-0684",
@@ -17666,7 +19988,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      37
+    ]
   },
   {
     "id": "u41-0685",
@@ -17692,7 +20018,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u41-0686",
@@ -17713,7 +20043,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      34
+    ]
   },
   {
     "id": "u41-0687",
@@ -17743,7 +20077,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u41-0688",
@@ -17768,7 +20106,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u41-0689",
@@ -17794,7 +20136,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u41-0690",
@@ -17817,7 +20163,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      38
+    ]
   },
   {
     "id": "u41-0691",
@@ -17839,7 +20189,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u41-0692",
@@ -17870,7 +20224,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u41-0693",
@@ -17895,7 +20253,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u41-0694",
@@ -17926,7 +20288,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0695",
@@ -17951,7 +20317,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u41-0696",
@@ -17973,7 +20343,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u41-0697",
@@ -17997,7 +20371,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u41-0698",
@@ -18021,7 +20399,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u41-0699",
@@ -18043,7 +20425,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u41-0700",
@@ -18071,7 +20457,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u41-0701",
@@ -18093,7 +20483,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0702",
@@ -18117,7 +20511,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0703",
@@ -18142,7 +20540,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0704",
@@ -18165,7 +20567,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0705",
@@ -18190,7 +20596,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0706",
@@ -18212,7 +20622,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0707",
@@ -18239,7 +20653,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0708",
@@ -18263,7 +20681,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u41-0709",
@@ -18286,7 +20708,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      47
+    ]
   },
   {
     "id": "u41-0710",
@@ -18312,7 +20738,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0711",
@@ -18334,7 +20764,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0712",
@@ -18359,7 +20793,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0713",
@@ -18382,7 +20820,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0714",
@@ -18409,7 +20851,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u41-0715",
@@ -18430,7 +20876,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   },
   {
     "id": "u41-0716",
@@ -18452,7 +20902,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0717",
@@ -18478,7 +20932,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u41-0718",
@@ -18511,7 +20969,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u41-0719",
@@ -18534,7 +20996,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u41-0720",
@@ -18557,7 +21023,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0721",
@@ -18582,7 +21052,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0722",
@@ -18604,7 +21078,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u41-0723",
@@ -18631,7 +21109,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u41-0724",
@@ -18656,7 +21138,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0725",
@@ -18679,7 +21165,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0726",
@@ -18701,7 +21191,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u41-0727",
@@ -18725,7 +21219,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u41-0728",
@@ -18749,7 +21247,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u41-0729",
@@ -18778,7 +21280,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u41-0730",
@@ -18825,7 +21331,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0732",
@@ -18850,7 +21360,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u41-0733",
@@ -18874,7 +21388,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u41-0734",
@@ -18899,7 +21417,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u41-0735",
@@ -18924,7 +21446,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u41-0736",
@@ -18946,7 +21472,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u41-0737",
@@ -18968,7 +21498,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u41-0738",
@@ -18990,7 +21524,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      30
+    ]
   },
   {
     "id": "u41-0739",
@@ -19013,7 +21551,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u41-0740",
@@ -19039,7 +21581,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0741",
@@ -19061,7 +21607,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u41-0742",
@@ -19082,7 +21632,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u41-0743",
@@ -19104,7 +21658,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u41-0744",
@@ -19128,7 +21686,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u41-0745",
@@ -19151,7 +21713,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u41-0746",
@@ -19173,7 +21739,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u41-0747",
@@ -19202,7 +21772,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u41-0748",
@@ -19225,7 +21799,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u41-0749",
@@ -19255,7 +21833,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0750",
@@ -19281,7 +21863,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0751",
@@ -19305,7 +21891,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0752",
@@ -19332,7 +21922,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u41-0753",
@@ -19354,7 +21948,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0754",
@@ -19375,7 +21973,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u41-0755",
@@ -19404,7 +22006,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u41-0756",
@@ -19428,7 +22034,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u41-0757",
@@ -19452,7 +22062,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "things and senses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u41-0758",
@@ -19474,7 +22088,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u41-0759",
@@ -19494,7 +22112,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u41-0760",
@@ -19514,7 +22136,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0761",
@@ -19534,7 +22160,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0762",
@@ -19553,7 +22183,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u41-0763",
@@ -19571,7 +22205,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0764",
@@ -19591,7 +22229,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u41-0765",
@@ -19629,7 +22271,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u41-0767",
@@ -19649,7 +22295,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0768",
@@ -19669,7 +22319,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u41-0769",
@@ -19690,7 +22344,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      21
+    ]
   },
   {
     "id": "u41-0770",
@@ -19718,7 +22376,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "toasts and promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u41-0771",
@@ -19742,7 +22404,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "signs, notes and messages (reported)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0772",
@@ -19768,7 +22434,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "signs, notes and messages (reported)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0773",
@@ -19793,7 +22463,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "signs, notes and messages (reported)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0774",
@@ -19818,7 +22492,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "signs, notes and messages (reported)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u41-0775",
@@ -19872,7 +22550,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "signs, notes and messages (reported)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u41-0777",
@@ -19902,7 +22584,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0778",
@@ -19930,7 +22616,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0779",
@@ -19959,7 +22649,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u41-0780",
@@ -19986,7 +22680,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u41-0781",
@@ -20012,7 +22710,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u41-0782",
@@ -20041,7 +22743,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u41-0783",
@@ -20066,7 +22772,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0784",
@@ -20096,7 +22806,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0785",
@@ -20121,7 +22835,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u41-0786",
@@ -20147,7 +22865,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0787",
@@ -20175,7 +22897,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u41-0788",
@@ -20203,7 +22929,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0789",
@@ -20229,7 +22959,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u41-0790",
@@ -20256,7 +22990,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0791",
@@ -20280,7 +23018,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0792",
@@ -20306,7 +23048,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0793",
@@ -20332,7 +23078,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0794",
@@ -20359,7 +23109,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0795",
@@ -20385,7 +23139,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0796",
@@ -20416,7 +23174,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0797",
@@ -20447,7 +23209,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0798",
@@ -20474,7 +23240,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0799",
@@ -20500,7 +23270,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      22
+    ]
   },
   {
     "id": "u41-0800",
@@ -20528,7 +23302,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0801",
@@ -20554,7 +23332,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u41-0802",
@@ -20583,7 +23365,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u41-0803",
@@ -20637,7 +23423,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u41-0805",
@@ -20688,7 +23478,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u41-0807",
@@ -20714,7 +23508,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u41-0808",
@@ -20739,7 +23537,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0809",
@@ -20763,7 +23565,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u41-0810",
@@ -20790,7 +23596,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0811",
@@ -20819,7 +23629,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0812",
@@ -20893,7 +23707,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      39
+    ]
   },
   {
     "id": "u41-0815",
@@ -20947,7 +23765,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      43
+    ]
   },
   {
     "id": "u41-0817",
@@ -20977,7 +23799,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u41-0818",
@@ -21032,7 +23858,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "told to do things, at home and work",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u41-0820",
@@ -21060,7 +23890,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0821",
@@ -21085,7 +23919,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u41-0822",
@@ -21113,7 +23951,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u41-0823",
@@ -21138,7 +23980,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u41-0824",
@@ -21163,7 +24009,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u41-0825",
@@ -21189,7 +24039,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "as if, again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u41-0826",
@@ -21216,7 +24070,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "present and past subjunctive side by side",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u41-0827",
@@ -21246,7 +24104,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "present and past subjunctive side by side",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      50
+    ]
   },
   {
     "id": "u41-0828",
@@ -21273,7 +24135,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "present and past subjunctive side by side",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u41-0829",
@@ -21327,7 +24193,11 @@
     "kind": "dialogue",
     "unit": "u41",
     "theme": "present and past subjunctive side by side",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      38
+    ]
   },
   {
     "id": "u41-0831",
@@ -21385,7 +24255,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0833",
@@ -21417,7 +24291,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0834",
@@ -21448,7 +24326,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0835",
@@ -21480,7 +24362,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0836",
@@ -21503,7 +24389,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u41-0837",
@@ -21526,7 +24416,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u41-0838",
@@ -21548,7 +24442,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u41-0839",
@@ -21571,7 +24469,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u41-0840",
@@ -21595,7 +24497,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "more would-you-mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      36
+    ]
   },
   {
     "id": "u41-0841",
@@ -21624,7 +24530,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "heavy, previous",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u41-0842",
@@ -21651,7 +24561,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "heavy, previous",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u41-0843",
@@ -21678,7 +24592,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "heavy, previous",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u41-0844",
@@ -21707,7 +24625,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "heavy, previous",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u41-0845",
@@ -21730,7 +24652,11 @@
     "kind": "statement",
     "unit": "u41",
     "theme": "heavy, previous",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u41-0846",
@@ -21756,7 +24682,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u41-0847",
@@ -21803,7 +24733,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      16
+    ]
   },
   {
     "id": "u41-0849",
@@ -21829,7 +24763,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      20
+    ]
   },
   {
     "id": "u41-0850",
@@ -21857,7 +24795,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0851",
@@ -21935,7 +24877,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u41-0854",
@@ -21958,7 +24904,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u41-0855",
@@ -21982,7 +24932,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u41-0856",
@@ -22009,7 +24963,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      17
+    ]
   },
   {
     "id": "u41-0857",
@@ -22034,7 +24992,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u41-0858",
@@ -22060,7 +25022,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0859",
@@ -22087,7 +25053,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u41-0860",
@@ -22116,7 +25086,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u41-0861",
@@ -22142,7 +25116,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0862",
@@ -22171,7 +25149,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u41-0863",
@@ -22198,7 +25180,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0864",
@@ -22247,7 +25233,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u41-0866",
@@ -22298,7 +25288,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u41-0868",
@@ -22323,7 +25317,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u41-0869",
@@ -22379,7 +25377,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about wishes, requests and feelings",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u41-0871",
@@ -22429,7 +25431,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0873",
@@ -22525,7 +25531,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u41-0877",
@@ -22600,7 +25610,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0880",
@@ -22627,7 +25641,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u41-0881",
@@ -22656,7 +25674,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u41-0882",
@@ -22731,7 +25753,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u41-0885",
@@ -22758,7 +25784,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions about what people said to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u41-0886",
@@ -22784,7 +25814,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u41-0887",
@@ -22809,7 +25843,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0888",
@@ -22836,7 +25874,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u41-0889",
@@ -22886,7 +25928,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u41-0891",
@@ -22915,7 +25961,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u41-0892",
@@ -22940,7 +25990,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u41-0893",
@@ -22967,7 +26021,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u41-0894",
@@ -22992,7 +26050,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u41-0895",
@@ -23017,7 +26079,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u41-0896",
@@ -23045,7 +26111,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      18
+    ]
   },
   {
     "id": "u41-0897",
@@ -23095,7 +26165,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u41-0899",
@@ -23123,7 +26197,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u41-0900",
@@ -23183,7 +26261,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0902",
@@ -23213,7 +26295,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0903",
@@ -23243,7 +26329,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with as if, would you mind and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u41-0904",
@@ -23269,7 +26359,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u41-0905",
@@ -23295,7 +26389,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u41-0906",
@@ -23319,7 +26417,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u41-0907",
@@ -23344,7 +26446,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u41-0908",
@@ -23366,7 +26472,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0909",
@@ -23394,7 +26504,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u41-0910",
@@ -23418,7 +26532,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u41-0911",
@@ -23442,7 +26560,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u41-0912",
@@ -23468,7 +26590,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u41-0913",
@@ -23493,7 +26619,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u41-0914",
@@ -23518,7 +26648,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u41-0915",
@@ -23544,7 +26678,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u41-0916",
@@ -23568,7 +26706,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      26
+    ]
   },
   {
     "id": "u41-0917",
@@ -23618,7 +26760,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u41-0919",
@@ -23641,7 +26787,11 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u41-0920",
@@ -23663,6 +26813,10 @@
     "kind": "question",
     "unit": "u41",
     "theme": "questions with the unit's words",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   }
 ]

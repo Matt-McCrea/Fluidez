@@ -24,7 +24,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0002",
@@ -48,7 +52,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0003",
@@ -76,7 +84,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0004",
@@ -99,7 +111,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0005",
@@ -123,7 +139,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0006",
@@ -148,7 +168,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0007",
@@ -173,7 +197,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0008",
@@ -200,7 +228,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0009",
@@ -228,7 +260,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0010",
@@ -256,7 +292,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0011",
@@ -285,7 +325,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0012",
@@ -308,7 +352,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      37
+    ]
   },
   {
     "id": "u17-0013",
@@ -331,7 +379,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0014",
@@ -355,7 +407,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0015",
@@ -383,7 +439,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      38
+    ]
   },
   {
     "id": "u17-0016",
@@ -410,7 +470,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0017",
@@ -432,7 +496,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0018",
@@ -457,7 +525,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0019",
@@ -480,7 +552,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0020",
@@ -510,7 +586,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0021",
@@ -534,7 +614,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0022",
@@ -554,7 +638,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0023",
@@ -580,7 +668,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0024",
@@ -605,7 +697,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0025",
@@ -629,7 +725,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0026",
@@ -658,7 +758,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0027",
@@ -685,7 +789,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u17-0028",
@@ -710,7 +818,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0029",
@@ -739,7 +851,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u17-0030",
@@ -760,7 +876,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0031",
@@ -783,7 +903,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0032",
@@ -808,7 +932,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0033",
@@ -835,7 +963,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0034",
@@ -859,7 +991,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0035",
@@ -885,7 +1021,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0036",
@@ -908,7 +1048,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0037",
@@ -935,7 +1079,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0038",
@@ -959,7 +1107,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0039",
@@ -986,7 +1138,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0040",
@@ -1012,7 +1168,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0041",
@@ -1036,7 +1196,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0042",
@@ -1065,7 +1229,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0043",
@@ -1093,7 +1261,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      32
+    ]
   },
   {
     "id": "u17-0044",
@@ -1120,7 +1292,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0045",
@@ -1150,7 +1326,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0046",
@@ -1177,7 +1357,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0047",
@@ -1201,7 +1385,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0048",
@@ -1227,7 +1415,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0049",
@@ -1249,7 +1441,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0050",
@@ -1273,7 +1469,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0051",
@@ -1295,7 +1495,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "si-present invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0052",
@@ -1345,7 +1549,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      48
+    ]
   },
   {
     "id": "u17-0054",
@@ -1598,7 +1806,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u17-0065",
@@ -1694,7 +1906,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      36
+    ]
   },
   {
     "id": "u17-0069",
@@ -1926,7 +2142,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u17-0079",
@@ -1954,7 +2174,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u17-0080",
@@ -1982,7 +2206,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u17-0081",
@@ -2126,7 +2354,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u17-0087",
@@ -2154,7 +2386,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u17-0088",
@@ -2182,7 +2418,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u17-0089",
@@ -2299,7 +2539,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      27
+    ]
   },
   {
     "id": "u17-0094",
@@ -2371,7 +2615,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u17-0097",
@@ -2397,7 +2645,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u17-0098",
@@ -2424,7 +2676,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0099",
@@ -2450,7 +2706,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      23
+    ]
   },
   {
     "id": "u17-0100",
@@ -2475,7 +2735,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u17-0101",
@@ -2499,7 +2763,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "cuando habits and past",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u17-0102",
@@ -2719,7 +2987,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u17-0112",
@@ -2743,7 +3015,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u17-0113",
@@ -2767,7 +3043,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0114",
@@ -2788,7 +3068,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0115",
@@ -2814,7 +3098,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0116",
@@ -2837,7 +3125,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0117",
@@ -2860,7 +3152,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0118",
@@ -2883,7 +3179,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0119",
@@ -2909,7 +3209,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0120",
@@ -2935,7 +3239,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0121",
@@ -2955,7 +3263,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0122",
@@ -2978,7 +3290,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0123",
@@ -3002,7 +3318,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0124",
@@ -3028,7 +3348,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u17-0125",
@@ -3051,7 +3375,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0126",
@@ -3074,7 +3402,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0127",
@@ -3097,7 +3429,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0128",
@@ -3120,7 +3456,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0129",
@@ -3143,7 +3483,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0130",
@@ -3168,7 +3512,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0131",
@@ -3194,7 +3542,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0132",
@@ -3220,7 +3572,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0133",
@@ -3247,7 +3603,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0134",
@@ -3273,7 +3633,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u17-0135",
@@ -3296,7 +3660,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0136",
@@ -3319,7 +3687,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0137",
@@ -3346,7 +3718,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u17-0138",
@@ -3367,7 +3743,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u17-0139",
@@ -3397,7 +3777,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u17-0140",
@@ -3425,7 +3809,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u17-0141",
@@ -3449,7 +3837,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u17-0142",
@@ -3472,7 +3864,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u17-0143",
@@ -3495,7 +3891,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u17-0144",
@@ -3518,7 +3918,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0145",
@@ -3544,7 +3948,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0146",
@@ -3567,7 +3975,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0147",
@@ -3590,7 +4002,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u17-0148",
@@ -3635,7 +4051,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0150",
@@ -3659,7 +4079,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0151",
@@ -3684,7 +4108,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u17-0152",
@@ -3709,7 +4137,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      47
+    ]
   },
   {
     "id": "u17-0153",
@@ -3730,7 +4162,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0154",
@@ -3754,7 +4190,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0155",
@@ -3776,7 +4216,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0156",
@@ -3800,7 +4244,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0157",
@@ -3822,7 +4270,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0158",
@@ -3846,7 +4298,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns, plans and favours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0159",
@@ -3875,7 +4331,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u17-0160",
@@ -3903,7 +4363,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u17-0161",
@@ -3930,7 +4394,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u17-0162",
@@ -3955,7 +4423,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0163",
@@ -3982,7 +4454,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u17-0164",
@@ -4005,7 +4481,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u17-0165",
@@ -4035,7 +4515,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0166",
@@ -4064,7 +4548,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u17-0167",
@@ -4091,7 +4579,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0168",
@@ -4116,7 +4608,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0169",
@@ -4142,7 +4638,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u17-0170",
@@ -4166,7 +4666,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      30
+    ]
   },
   {
     "id": "u17-0171",
@@ -4192,7 +4696,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0172",
@@ -4218,7 +4726,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u17-0173",
@@ -4242,7 +4754,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0174",
@@ -4268,7 +4784,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0175",
@@ -4291,7 +4811,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0176",
@@ -4317,7 +4841,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      26
+    ]
   },
   {
     "id": "u17-0177",
@@ -4340,7 +4868,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0178",
@@ -4365,7 +4897,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u17-0179",
@@ -4388,7 +4924,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u17-0180",
@@ -4412,7 +4952,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0181",
@@ -4433,7 +4977,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0182",
@@ -4454,7 +5002,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u17-0183",
@@ -4480,7 +5032,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0184",
@@ -4506,7 +5062,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      15
+    ]
   },
   {
     "id": "u17-0185",
@@ -4528,7 +5088,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u17-0186",
@@ -4551,7 +5115,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u17-0187",
@@ -4577,7 +5145,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0188",
@@ -4602,7 +5174,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u17-0189",
@@ -4625,7 +5201,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0190",
@@ -4648,7 +5228,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u17-0191",
@@ -4673,7 +5257,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u17-0192",
@@ -4698,7 +5286,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      42
+    ]
   },
   {
     "id": "u17-0193",
@@ -4723,7 +5315,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u17-0194",
@@ -4745,7 +5341,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0195",
@@ -4767,7 +5367,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0196",
@@ -4793,7 +5397,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u17-0197",
@@ -4837,7 +5445,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0199",
@@ -4860,7 +5472,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u17-0200",
@@ -4884,7 +5500,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      35
+    ]
   },
   {
     "id": "u17-0201",
@@ -4908,7 +5528,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0202",
@@ -4931,7 +5555,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0203",
@@ -4956,7 +5584,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0204",
@@ -4980,7 +5612,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0205",
@@ -5005,7 +5641,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0206",
@@ -5029,7 +5669,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0207",
@@ -5054,7 +5698,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0208",
@@ -5078,7 +5726,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u17-0209",
@@ -5102,7 +5754,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0210",
@@ -5131,7 +5787,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u17-0211",
@@ -5153,7 +5813,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u17-0212",
@@ -5174,7 +5838,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0213",
@@ -5196,7 +5864,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u17-0214",
@@ -5217,7 +5889,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0215",
@@ -5240,7 +5916,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0216",
@@ -5264,7 +5944,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0217",
@@ -5291,7 +5975,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u17-0218",
@@ -5318,7 +6006,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u17-0219",
@@ -5341,7 +6033,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0220",
@@ -5373,7 +6069,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      47
+    ]
   },
   {
     "id": "u17-0221",
@@ -5405,7 +6105,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u17-0222",
@@ -5432,7 +6136,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u17-0223",
@@ -5463,7 +6171,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      50
+    ]
   },
   {
     "id": "u17-0224",
@@ -5488,7 +6200,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      39
+    ]
   },
   {
     "id": "u17-0225",
@@ -5517,7 +6233,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      53
+    ]
   },
   {
     "id": "u17-0226",
@@ -5553,7 +6273,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      68,
+      81
+    ]
   },
   {
     "id": "u17-0227",
@@ -5575,7 +6299,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0228",
@@ -5599,7 +6327,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u17-0229",
@@ -5621,7 +6353,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u17-0230",
@@ -5642,7 +6378,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0231",
@@ -5666,7 +6406,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0232",
@@ -5687,7 +6431,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0233",
@@ -5710,7 +6458,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0234",
@@ -5733,7 +6485,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0235",
@@ -5755,7 +6511,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0236",
@@ -5779,7 +6539,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0237",
@@ -5806,7 +6570,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u17-0238",
@@ -5999,7 +6767,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0247",
@@ -6017,7 +6789,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0248",
@@ -6036,7 +6812,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u17-0249",
@@ -6057,7 +6837,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0250",
@@ -6077,7 +6861,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0251",
@@ -6096,7 +6884,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0252",
@@ -6120,7 +6912,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0253",
@@ -6140,7 +6936,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u17-0254",
@@ -6163,7 +6963,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u17-0255",
@@ -6187,7 +6991,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u17-0256",
@@ -6211,7 +7019,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u17-0257",
@@ -6237,7 +7049,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u17-0258",
@@ -6262,7 +7078,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      34
+    ]
   },
   {
     "id": "u17-0259",
@@ -6285,7 +7105,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "suggestions and invitations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u17-0260",
@@ -6308,7 +7132,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0261",
@@ -6334,7 +7162,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0262",
@@ -6358,7 +7190,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0263",
@@ -6385,7 +7221,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0264",
@@ -6410,7 +7250,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0265",
@@ -6434,7 +7278,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0266",
@@ -6459,7 +7307,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0267",
@@ -6484,7 +7336,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0268",
@@ -6510,7 +7366,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u17-0269",
@@ -6534,7 +7394,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0270",
@@ -6562,7 +7426,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0271",
@@ -6588,7 +7456,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0272",
@@ -6615,7 +7487,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u17-0273",
@@ -6639,7 +7515,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u17-0274",
@@ -6667,7 +7547,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      23
+    ]
   },
   {
     "id": "u17-0275",
@@ -6696,7 +7580,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u17-0276",
@@ -6722,7 +7610,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u17-0277",
@@ -6747,7 +7639,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      24
+    ]
   },
   {
     "id": "u17-0278",
@@ -6773,7 +7669,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      26
+    ]
   },
   {
     "id": "u17-0279",
@@ -6798,7 +7698,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u17-0280",
@@ -6826,7 +7730,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0281",
@@ -6854,7 +7762,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0282",
@@ -6880,7 +7792,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u17-0283",
@@ -6905,7 +7821,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u17-0284",
@@ -6930,7 +7850,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0285",
@@ -6959,7 +7883,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      23
+    ]
   },
   {
     "id": "u17-0286",
@@ -6987,7 +7915,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      37
+    ]
   },
   {
     "id": "u17-0287",
@@ -7016,7 +7948,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u17-0288",
@@ -7047,7 +7983,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u17-0289",
@@ -7073,7 +8013,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      29
+    ]
   },
   {
     "id": "u17-0290",
@@ -7104,7 +8048,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u17-0291",
@@ -7134,7 +8082,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u17-0292",
@@ -7162,7 +8114,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0293",
@@ -7190,7 +8146,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0294",
@@ -7218,7 +8178,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0295",
@@ -7245,7 +8209,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u17-0296",
@@ -7271,7 +8239,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "not knowing what to do",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u17-0297",
@@ -7356,7 +8328,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "conclusions and so",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u17-0301",
@@ -7379,7 +8355,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "conclusions and so",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u17-0302",
@@ -7463,7 +8443,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "conclusions and so",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u17-0306",
@@ -7520,7 +8504,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u17-0308",
@@ -7552,7 +8540,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u17-0309",
@@ -7585,7 +8577,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u17-0310",
@@ -7642,7 +8638,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u17-0312",
@@ -7673,7 +8673,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u17-0313",
@@ -7709,7 +8713,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u17-0314",
@@ -7738,7 +8746,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u17-0315",
@@ -7771,7 +8783,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u17-0316",
@@ -7829,7 +8845,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0318",
@@ -7855,7 +8875,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      45
+    ]
   },
   {
     "id": "u17-0319",
@@ -7882,7 +8906,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      58
+    ]
   },
   {
     "id": "u17-0320",
@@ -7935,7 +8963,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      65
+    ]
   },
   {
     "id": "u17-0322",
@@ -7961,7 +8993,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0323",
@@ -8031,7 +9067,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0326",
@@ -8055,7 +9095,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0327",
@@ -8078,7 +9122,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0328",
@@ -8194,7 +9242,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u17-0333",
@@ -8223,7 +9275,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u17-0334",
@@ -8246,7 +9302,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0335",
@@ -8291,7 +9351,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u17-0337",
@@ -8316,7 +9380,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      36
+    ]
   },
   {
     "id": "u17-0338",
@@ -8339,7 +9407,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      26
+    ]
   },
   {
     "id": "u17-0339",
@@ -8361,7 +9433,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u17-0340",
@@ -8384,7 +9460,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u17-0341",
@@ -8406,7 +9486,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "saying no nicely",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u17-0342",
@@ -8432,7 +9516,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0343",
@@ -8457,7 +9545,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u17-0344",
@@ -8485,7 +9577,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u17-0345",
@@ -8510,7 +9606,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u17-0346",
@@ -8533,7 +9633,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u17-0347",
@@ -8557,7 +9661,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0348",
@@ -8582,7 +9690,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u17-0349",
@@ -8606,7 +9718,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      24
+    ]
   },
   {
     "id": "u17-0350",
@@ -8630,7 +9746,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0351",
@@ -8656,7 +9776,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u17-0352",
@@ -8678,7 +9802,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u17-0353",
@@ -8701,7 +9829,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u17-0354",
@@ -8767,7 +9899,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u17-0357",
@@ -8794,7 +9930,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u17-0358",
@@ -8821,7 +9961,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u17-0359",
@@ -8846,7 +9990,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u17-0360",
@@ -8876,7 +10024,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0361",
@@ -8898,7 +10050,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u17-0362",
@@ -8922,7 +10078,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0363",
@@ -8943,7 +10103,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u17-0364",
@@ -9009,7 +10173,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u17-0367",
@@ -9032,7 +10200,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u17-0368",
@@ -9058,7 +10230,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u17-0369",
@@ -9083,7 +10259,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u17-0370",
@@ -9123,7 +10303,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0372",
@@ -9165,7 +10349,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u17-0374",
@@ -9188,7 +10376,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u17-0375",
@@ -9212,7 +10404,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u17-0376",
@@ -9235,7 +10431,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u17-0377",
@@ -9260,7 +10460,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u17-0378",
@@ -9289,7 +10493,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u17-0379",
@@ -9316,7 +10524,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u17-0380",
@@ -9338,7 +10550,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0381",
@@ -9362,7 +10578,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0382",
@@ -9383,7 +10603,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0383",
@@ -9408,7 +10632,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u17-0384",
@@ -9430,7 +10658,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0385",
@@ -9452,7 +10684,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0386",
@@ -9474,7 +10710,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0387",
@@ -9496,7 +10736,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0388",
@@ -9519,7 +10763,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0389",
@@ -9546,7 +10794,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u17-0390",
@@ -9572,7 +10824,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u17-0391",
@@ -9597,7 +10853,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u17-0392",
@@ -9624,7 +10884,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u17-0393",
@@ -9646,7 +10910,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0394",
@@ -9668,7 +10936,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0395",
@@ -9695,7 +10967,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0396",
@@ -9724,7 +11000,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0397",
@@ -9750,7 +11030,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u17-0398",
@@ -9777,7 +11061,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "events, timing and duration",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u17-0399",
@@ -9801,7 +11089,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u17-0400",
@@ -9824,7 +11116,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      22
+    ]
   },
   {
     "id": "u17-0401",
@@ -9850,7 +11146,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0402",
@@ -9871,7 +11171,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0403",
@@ -9893,7 +11197,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u17-0404",
@@ -9915,7 +11223,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      26
+    ]
   },
   {
     "id": "u17-0405",
@@ -9937,7 +11249,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u17-0406",
@@ -9964,7 +11280,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u17-0407",
@@ -9992,7 +11312,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u17-0408",
@@ -10018,7 +11342,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u17-0409",
@@ -10042,7 +11370,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u17-0410",
@@ -10066,7 +11398,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u17-0411",
@@ -10090,7 +11426,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      22
+    ]
   },
   {
     "id": "u17-0412",
@@ -10137,7 +11477,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u17-0414",
@@ -10165,7 +11509,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u17-0415",
@@ -10192,7 +11540,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      25
+    ]
   },
   {
     "id": "u17-0416",
@@ -10219,7 +11571,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u17-0417",
@@ -10243,7 +11599,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0418",
@@ -10265,7 +11625,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      17
+    ]
   },
   {
     "id": "u17-0419",
@@ -10290,7 +11654,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u17-0420",
@@ -10319,7 +11687,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      40
+    ]
   },
   {
     "id": "u17-0421",
@@ -10348,7 +11720,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0422",
@@ -10373,7 +11749,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u17-0423",
@@ -10398,7 +11778,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u17-0424",
@@ -10423,7 +11807,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u17-0425",
@@ -10447,7 +11835,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u17-0426",
@@ -10473,7 +11865,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u17-0427",
@@ -10516,7 +11912,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u17-0429",
@@ -10540,7 +11940,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0430",
@@ -10569,7 +11973,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0431",
@@ -10597,7 +12005,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      43
+    ]
   },
   {
     "id": "u17-0432",
@@ -10620,7 +12032,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0433",
@@ -10642,7 +12058,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u17-0434",
@@ -10666,7 +12086,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u17-0435",
@@ -10688,7 +12112,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0436",
@@ -10717,7 +12145,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u17-0437",
@@ -10745,7 +12177,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u17-0438",
@@ -10768,7 +12204,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u17-0439",
@@ -10790,7 +12230,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0440",
@@ -10817,7 +12261,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u17-0441",
@@ -10840,7 +12288,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u17-0442",
@@ -10862,7 +12314,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u17-0443",
@@ -10888,7 +12344,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u17-0444",
@@ -10914,7 +12374,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u17-0445",
@@ -10939,7 +12403,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u17-0446",
@@ -10964,7 +12432,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u17-0447",
@@ -10988,7 +12460,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u17-0448",
@@ -11013,7 +12489,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u17-0449",
@@ -11038,7 +12518,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u17-0450",
@@ -11063,7 +12547,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u17-0451",
@@ -11091,7 +12579,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u17-0452",
@@ -11115,7 +12607,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u17-0453",
@@ -11140,7 +12636,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u17-0454",
@@ -11170,7 +12670,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      35
+    ]
   },
   {
     "id": "u17-0455",
@@ -11197,7 +12701,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0456",
@@ -11230,7 +12738,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0457",
@@ -11259,7 +12771,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "inviting and events",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      45
+    ]
   },
   {
     "id": "u17-0458",
@@ -11285,7 +12801,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0459",
@@ -11310,7 +12830,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u17-0460",
@@ -11333,7 +12857,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u17-0461",
@@ -11359,7 +12887,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      44
+    ]
   },
   {
     "id": "u17-0462",
@@ -11384,7 +12916,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0463",
@@ -11411,7 +12947,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u17-0464",
@@ -11436,7 +12976,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u17-0465",
@@ -11461,7 +13005,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0466",
@@ -11484,7 +13032,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0467",
@@ -11510,7 +13062,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      23
+    ]
   },
   {
     "id": "u17-0468",
@@ -11533,7 +13089,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0469",
@@ -11557,7 +13117,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0470",
@@ -11583,7 +13147,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u17-0471",
@@ -11607,7 +13175,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u17-0472",
@@ -11632,7 +13204,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u17-0473",
@@ -11655,7 +13231,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0474",
@@ -11679,7 +13259,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u17-0475",
@@ -11703,7 +13287,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "why don't we",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u17-0476",
@@ -11731,7 +13319,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0477",
@@ -11755,7 +13347,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0478",
@@ -11782,7 +13378,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0479",
@@ -11805,7 +13405,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u17-0480",
@@ -11826,7 +13430,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u17-0481",
@@ -11851,7 +13459,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0482",
@@ -11874,7 +13486,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u17-0483",
@@ -11896,7 +13512,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u17-0484",
@@ -11921,7 +13541,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0485",
@@ -11941,7 +13565,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "what if / how about",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u17-0486",
@@ -11964,7 +13592,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0487",
@@ -11987,7 +13619,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0488",
@@ -12010,7 +13646,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u17-0489",
@@ -12033,7 +13673,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u17-0490",
@@ -12058,7 +13702,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u17-0491",
@@ -12083,7 +13731,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0492",
@@ -12105,7 +13757,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0493",
@@ -12149,7 +13805,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u17-0495",
@@ -12172,7 +13832,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u17-0496",
@@ -12193,7 +13857,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u17-0497",
@@ -12216,7 +13884,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0498",
@@ -12241,7 +13913,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0499",
@@ -12264,7 +13940,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0500",
@@ -12291,7 +13971,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u17-0501",
@@ -12319,7 +14003,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u17-0502",
@@ -12344,7 +14032,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u17-0503",
@@ -12373,7 +14065,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u17-0504",
@@ -12401,7 +14097,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      58,
+      63
+    ]
   },
   {
     "id": "u17-0505",
@@ -12428,7 +14128,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u17-0506",
@@ -12454,7 +14158,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u17-0507",
@@ -12482,7 +14190,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      46
+    ]
   },
   {
     "id": "u17-0508",
@@ -12509,7 +14221,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0509",
@@ -12534,7 +14250,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u17-0510",
@@ -12562,7 +14282,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u17-0511",
@@ -12586,7 +14310,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      32
+    ]
   },
   {
     "id": "u17-0512",
@@ -12611,7 +14339,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u17-0513",
@@ -12639,7 +14371,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0514",
@@ -12663,7 +14399,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u17-0515",
@@ -12688,7 +14428,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0516",
@@ -12717,7 +14461,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0517",
@@ -12744,7 +14492,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u17-0518",
@@ -12774,7 +14526,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u17-0519",
@@ -12801,7 +14557,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0520",
@@ -12827,7 +14587,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0521",
@@ -12847,7 +14611,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0522",
@@ -12868,7 +14636,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0523",
@@ -12889,7 +14661,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0524",
@@ -12913,7 +14689,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0525",
@@ -12934,7 +14714,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0526",
@@ -12957,7 +14741,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0527",
@@ -12981,7 +14769,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0528",
@@ -13002,7 +14794,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0529",
@@ -13029,7 +14825,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u17-0530",
@@ -13054,7 +14854,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u17-0531",
@@ -13079,7 +14883,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u17-0532",
@@ -13105,7 +14913,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u17-0533",
@@ -13129,7 +14941,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      22
+    ]
   },
   {
     "id": "u17-0534",
@@ -13154,7 +14970,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u17-0535",
@@ -13178,7 +14998,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u17-0536",
@@ -13202,7 +15026,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u17-0537",
@@ -13229,7 +15057,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u17-0538",
@@ -13253,7 +15085,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "lending, giving, telling",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0539",
@@ -13299,7 +15135,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      49
+    ]
   },
   {
     "id": "u17-0541",
@@ -13326,7 +15166,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u17-0542",
@@ -13349,7 +15193,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u17-0543",
@@ -13372,7 +15220,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u17-0544",
@@ -13394,7 +15246,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u17-0545",
@@ -13420,7 +15276,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u17-0546",
@@ -13445,7 +15305,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0547",
@@ -13472,7 +15336,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u17-0548",
@@ -13494,7 +15362,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u17-0549",
@@ -13522,7 +15394,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0550",
@@ -13545,7 +15421,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u17-0551",
@@ -13569,7 +15449,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u17-0552",
@@ -13593,7 +15477,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      40
+    ]
   },
   {
     "id": "u17-0553",
@@ -13616,7 +15504,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u17-0554",
@@ -13643,7 +15535,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0555",
@@ -13665,7 +15561,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      56
+    ]
   },
   {
     "id": "u17-0556",
@@ -13688,7 +15588,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u17-0557",
@@ -13714,7 +15618,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0558",
@@ -13738,7 +15646,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0559",
@@ -13766,7 +15678,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0560",
@@ -13790,7 +15706,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u17-0561",
@@ -13816,7 +15736,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u17-0562",
@@ -13839,7 +15763,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0563",
@@ -13862,7 +15790,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0564",
@@ -13885,7 +15817,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u17-0565",
@@ -13908,7 +15844,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u17-0566",
@@ -13932,7 +15872,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      53
+    ]
   },
   {
     "id": "u17-0567",
@@ -13957,7 +15901,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0568",
@@ -13982,7 +15930,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u17-0569",
@@ -14004,7 +15956,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0570",
@@ -14026,7 +15982,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u17-0571",
@@ -14052,7 +16012,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u17-0572",
@@ -14073,7 +16037,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u17-0573",
@@ -14097,7 +16065,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u17-0574",
@@ -14121,7 +16093,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u17-0575",
@@ -14143,7 +16119,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0576",
@@ -14167,7 +16147,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u17-0577",
@@ -14192,7 +16176,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      44
+    ]
   },
   {
     "id": "u17-0578",
@@ -14215,7 +16203,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u17-0579",
@@ -14238,7 +16230,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0580",
@@ -14263,7 +16259,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u17-0581",
@@ -14289,7 +16289,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u17-0582",
@@ -14320,7 +16324,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      51
+    ]
   },
   {
     "id": "u17-0583",
@@ -14345,7 +16353,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u17-0584",
@@ -14370,7 +16382,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0585",
@@ -14396,7 +16412,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u17-0586",
@@ -14423,7 +16443,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0587",
@@ -14446,7 +16470,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u17-0588",
@@ -14472,7 +16500,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0589",
@@ -14496,7 +16528,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u17-0590",
@@ -14522,7 +16558,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      52
+    ]
   },
   {
     "id": "u17-0591",
@@ -14542,7 +16582,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0592",
@@ -14564,7 +16608,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u17-0593",
@@ -14585,7 +16633,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u17-0594",
@@ -14606,7 +16658,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u17-0595",
@@ -14627,7 +16683,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u17-0596",
@@ -14651,7 +16711,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u17-0597",
@@ -14674,7 +16738,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u17-0598",
@@ -14697,7 +16765,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u17-0599",
@@ -14721,7 +16793,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0600",
@@ -14744,7 +16820,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      36
+    ]
   },
   {
     "id": "u17-0601",
@@ -14768,7 +16848,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0602",
@@ -14791,7 +16875,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u17-0603",
@@ -14818,7 +16906,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u17-0604",
@@ -14846,7 +16938,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u17-0605",
@@ -14871,7 +16967,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u17-0606",
@@ -14895,7 +16995,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u17-0607",
@@ -14920,7 +17024,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0608",
@@ -14943,7 +17051,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u17-0609",
@@ -14966,7 +17078,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0610",
@@ -14994,7 +17110,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0611",
@@ -15017,7 +17137,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u17-0612",
@@ -15042,7 +17166,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u17-0613",
@@ -15067,7 +17195,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u17-0614",
@@ -15091,7 +17223,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u17-0615",
@@ -15116,7 +17252,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u17-0616",
@@ -15140,7 +17280,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u17-0617",
@@ -15165,7 +17309,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0618",
@@ -15188,7 +17336,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u17-0619",
@@ -15212,7 +17364,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0620",
@@ -15237,7 +17393,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u17-0621",
@@ -15262,7 +17422,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0622",
@@ -15288,7 +17452,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u17-0623",
@@ -15316,7 +17484,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0624",
@@ -15342,7 +17514,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0625",
@@ -15370,7 +17546,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0626",
@@ -15394,7 +17574,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0627",
@@ -15480,7 +17664,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0631",
@@ -15504,7 +17692,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0632",
@@ -15523,7 +17715,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u17-0633",
@@ -15547,7 +17743,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u17-0634",
@@ -15589,7 +17789,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u17-0636",
@@ -15612,7 +17816,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u17-0637",
@@ -15634,7 +17842,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u17-0638",
@@ -15656,7 +17868,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u17-0639",
@@ -15680,7 +17896,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u17-0640",
@@ -15706,7 +17926,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u17-0641",
@@ -15730,7 +17954,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u17-0642",
@@ -15752,7 +17980,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u17-0643",
@@ -15779,7 +18011,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u17-0644",
@@ -15802,7 +18038,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0645",
@@ -15829,7 +18069,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0646",
@@ -15855,7 +18099,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0647",
@@ -15877,7 +18125,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u17-0648",
@@ -15898,7 +18150,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u17-0649",
@@ -15919,7 +18175,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "decisions and vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0650",
@@ -15947,7 +18207,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0651",
@@ -15972,7 +18236,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0652",
@@ -15997,7 +18265,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0653",
@@ -16024,7 +18296,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0654",
@@ -16046,7 +18322,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u17-0655",
@@ -16069,7 +18349,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u17-0656",
@@ -16114,7 +18398,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u17-0658",
@@ -16367,7 +18655,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0669",
@@ -16391,7 +18683,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u17-0670",
@@ -16418,7 +18714,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0671",
@@ -16439,7 +18739,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0672",
@@ -16461,7 +18765,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0673",
@@ -16480,7 +18788,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u17-0674",
@@ -16524,7 +18836,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0676",
@@ -16552,7 +18868,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0677",
@@ -16575,7 +18895,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      26
+    ]
   },
   {
     "id": "u17-0678",
@@ -16598,7 +18922,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u17-0679",
@@ -16621,7 +18949,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0680",
@@ -16644,7 +18976,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u17-0681",
@@ -16669,7 +19005,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0682",
@@ -16691,7 +19031,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u17-0683",
@@ -16716,7 +19060,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      37
+    ]
   },
   {
     "id": "u17-0684",
@@ -16739,7 +19087,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u17-0685",
@@ -16764,7 +19116,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u17-0686",
@@ -16788,7 +19144,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u17-0687",
@@ -16810,7 +19170,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u17-0688",
@@ -16836,7 +19200,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u17-0689",
@@ -16861,7 +19229,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0690",
@@ -16887,7 +19259,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0691",
@@ -16912,7 +19288,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0692",
@@ -16934,7 +19314,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0693",
@@ -16956,7 +19340,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u17-0694",
@@ -16978,7 +19366,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      34
+    ]
   },
   {
     "id": "u17-0695",
@@ -17001,7 +19393,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u17-0696",
@@ -17027,7 +19423,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      49
+    ]
   },
   {
     "id": "u17-0697",
@@ -17052,7 +19452,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0698",
@@ -17073,7 +19477,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0699",
@@ -17101,7 +19509,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u17-0700",
@@ -17125,7 +19537,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0701",
@@ -17148,7 +19564,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0702",
@@ -17171,7 +19591,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0703",
@@ -17195,7 +19619,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0704",
@@ -17219,7 +19647,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0705",
@@ -17245,7 +19677,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      42
+    ]
   },
   {
     "id": "u17-0706",
@@ -17273,7 +19709,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u17-0707",
@@ -17298,7 +19738,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0708",
@@ -17322,7 +19766,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0709",
@@ -17347,7 +19795,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u17-0710",
@@ -17370,7 +19822,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u17-0711",
@@ -17390,7 +19846,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0712",
@@ -17413,7 +19873,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u17-0713",
@@ -17439,7 +19903,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u17-0714",
@@ -17461,7 +19929,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u17-0715",
@@ -17486,7 +19958,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "plans, chunks and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u17-0716",
@@ -17513,7 +19989,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0717",
@@ -17541,7 +20021,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      49
+    ]
   },
   {
     "id": "u17-0718",
@@ -17567,7 +20051,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u17-0719",
@@ -17597,7 +20085,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      51
+    ]
   },
   {
     "id": "u17-0720",
@@ -17621,7 +20113,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0721",
@@ -17649,7 +20145,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u17-0722",
@@ -17673,7 +20173,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0723",
@@ -17701,7 +20205,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u17-0724",
@@ -17726,7 +20234,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u17-0725",
@@ -17749,7 +20261,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0726",
@@ -17775,7 +20291,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u17-0727",
@@ -17822,7 +20342,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0729",
@@ -17848,7 +20372,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u17-0730",
@@ -17894,7 +20422,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0732",
@@ -17918,7 +20450,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u17-0733",
@@ -18017,7 +20553,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u17-0737",
@@ -18048,7 +20588,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u17-0738",
@@ -18073,7 +20617,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      46
+    ]
   },
   {
     "id": "u17-0739",
@@ -18185,7 +20733,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u17-0744",
@@ -18212,7 +20764,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "more no-thanks and refusals",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      50
+    ]
   },
   {
     "id": "u17-0745",
@@ -18258,7 +20814,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u17-0747",
@@ -18284,7 +20844,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u17-0748",
@@ -18312,7 +20876,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u17-0749",
@@ -18339,7 +20907,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u17-0750",
@@ -18365,7 +20937,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      29
+    ]
   },
   {
     "id": "u17-0751",
@@ -18390,7 +20966,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0752",
@@ -18418,7 +20998,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u17-0753",
@@ -18445,7 +21029,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0754",
@@ -18468,7 +21056,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u17-0755",
@@ -18489,7 +21081,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      22
+    ]
   },
   {
     "id": "u17-0756",
@@ -18515,7 +21111,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u17-0757",
@@ -18540,7 +21140,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u17-0758",
@@ -18565,7 +21169,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u17-0759",
@@ -18589,7 +21197,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      24
+    ]
   },
   {
     "id": "u17-0760",
@@ -18614,7 +21226,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u17-0761",
@@ -18639,7 +21255,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u17-0762",
@@ -18664,7 +21284,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      41
+    ]
   },
   {
     "id": "u17-0763",
@@ -18689,7 +21313,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0764",
@@ -18716,7 +21344,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0765",
@@ -18741,7 +21373,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0766",
@@ -18766,7 +21402,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u17-0767",
@@ -18793,7 +21433,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u17-0768",
@@ -18814,7 +21458,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u17-0769",
@@ -18859,7 +21507,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u17-0771",
@@ -18881,7 +21533,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0772",
@@ -18910,7 +21566,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0773",
@@ -18942,7 +21602,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "extra suggestions and durations",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u17-0774",
@@ -19008,7 +21672,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u17-0777",
@@ -19030,7 +21698,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      28
+    ]
   },
   {
     "id": "u17-0778",
@@ -19052,7 +21724,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0779",
@@ -19073,7 +21749,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u17-0780",
@@ -19098,7 +21778,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0781",
@@ -19124,7 +21808,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u17-0782",
@@ -19149,7 +21837,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u17-0783",
@@ -19174,7 +21866,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u17-0784",
@@ -19238,7 +21934,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0787",
@@ -19262,7 +21962,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0788",
@@ -19288,7 +21992,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0789",
@@ -19310,7 +22018,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u17-0790",
@@ -19338,7 +22050,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      48
+    ]
   },
   {
     "id": "u17-0791",
@@ -19361,7 +22077,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u17-0792",
@@ -19387,7 +22107,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u17-0793",
@@ -19411,7 +22135,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u17-0794",
@@ -19438,7 +22166,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u17-0795",
@@ -19463,7 +22195,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0796",
@@ -19484,7 +22220,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u17-0797",
@@ -19509,7 +22249,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u17-0798",
@@ -19537,7 +22281,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u17-0799",
@@ -19559,7 +22307,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0800",
@@ -19582,7 +22334,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u17-0801",
@@ -19613,7 +22369,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u17-0802",
@@ -19636,7 +22396,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u17-0803",
@@ -19658,7 +22422,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u17-0804",
@@ -19680,7 +22448,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0805",
@@ -19704,7 +22476,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u17-0806",
@@ -19728,7 +22504,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u17-0807",
@@ -19750,7 +22530,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u17-0808",
@@ -19772,7 +22556,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u17-0809",
@@ -19791,7 +22579,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u17-0810",
@@ -19815,7 +22607,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u17-0811",
@@ -19840,7 +22636,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      44
+    ]
   },
   {
     "id": "u17-0812",
@@ -19863,7 +22663,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   },
   {
     "id": "u17-0813",
@@ -19887,7 +22691,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u17-0814",
@@ -19910,7 +22718,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0815",
@@ -19932,7 +22744,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0816",
@@ -19959,7 +22775,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      58
+    ]
   },
   {
     "id": "u17-0817",
@@ -19982,7 +22802,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u17-0818",
@@ -20003,7 +22827,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u17-0819",
@@ -20031,7 +22859,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u17-0820",
@@ -20053,7 +22885,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u17-0821",
@@ -20078,7 +22914,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u17-0822",
@@ -20104,7 +22944,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u17-0823",
@@ -20125,7 +22969,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u17-0824",
@@ -20154,7 +23002,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0825",
@@ -20177,7 +23029,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      49
+    ]
   },
   {
     "id": "u17-0826",
@@ -20203,7 +23059,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u17-0827",
@@ -20227,7 +23087,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u17-0828",
@@ -20254,7 +23118,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u17-0829",
@@ -20279,7 +23147,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0830",
@@ -20300,7 +23172,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0831",
@@ -20325,7 +23201,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u17-0832",
@@ -20349,7 +23229,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u17-0833",
@@ -20373,7 +23257,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0834",
@@ -20397,7 +23285,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0835",
@@ -20422,7 +23314,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u17-0836",
@@ -20449,7 +23345,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0837",
@@ -20472,7 +23372,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u17-0838",
@@ -20495,7 +23399,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u17-0839",
@@ -20522,7 +23430,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u17-0840",
@@ -20548,7 +23460,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u17-0841",
@@ -20573,7 +23489,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u17-0842",
@@ -20595,7 +23515,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0843",
@@ -20619,7 +23543,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0844",
@@ -20642,7 +23570,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u17-0845",
@@ -20670,7 +23602,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "story colour and leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u17-0846",
@@ -20715,7 +23651,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0848",
@@ -20738,7 +23678,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u17-0849",
@@ -20760,7 +23704,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0850",
@@ -20780,7 +23728,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0851",
@@ -20803,7 +23755,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u17-0852",
@@ -20825,7 +23781,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0853",
@@ -20849,7 +23809,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u17-0854",
@@ -20888,7 +23852,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u17-0856",
@@ -20915,7 +23883,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u17-0857",
@@ -20960,7 +23932,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0859",
@@ -20984,7 +23960,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u17-0860",
@@ -21005,7 +23985,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0861",
@@ -21027,7 +24011,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u17-0862",
@@ -21048,7 +24036,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u17-0863",
@@ -21074,7 +24066,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0864",
@@ -21098,7 +24094,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u17-0865",
@@ -21121,7 +24121,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u17-0866",
@@ -21140,7 +24144,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u17-0867",
@@ -21160,7 +24168,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u17-0868",
@@ -21180,7 +24192,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u17-0869",
@@ -21223,7 +24239,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0871",
@@ -21246,7 +24266,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0872",
@@ -21269,7 +24293,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u17-0873",
@@ -21293,7 +24321,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u17-0874",
@@ -21317,7 +24349,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u17-0875",
@@ -21342,7 +24378,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "double pronouns again",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u17-0876",
@@ -21365,7 +24405,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u17-0877",
@@ -21388,7 +24432,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u17-0878",
@@ -21411,7 +24459,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0879",
@@ -21434,7 +24486,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u17-0880",
@@ -21456,7 +24512,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u17-0881",
@@ -21483,7 +24543,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u17-0882",
@@ -21509,7 +24573,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u17-0883",
@@ -21530,7 +24598,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u17-0884",
@@ -21552,7 +24624,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u17-0885",
@@ -21596,7 +24672,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0887",
@@ -21646,7 +24726,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u17-0889",
@@ -21674,7 +24758,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0890",
@@ -21740,7 +24828,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      35
+    ]
   },
   {
     "id": "u17-0893",
@@ -21768,7 +24860,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u17-0894",
@@ -21791,7 +24887,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u17-0895",
@@ -21819,7 +24919,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "leftovers 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u17-0896",
@@ -21842,7 +24946,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u17-0897",
@@ -21862,7 +24970,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u17-0898",
@@ -21885,7 +24997,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u17-0899",
@@ -21907,7 +25023,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u17-0900",
@@ -21930,7 +25050,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u17-0901",
@@ -21954,7 +25078,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "leftovers 3",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u17-0902",
@@ -21981,7 +25109,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u17-0903",
@@ -22010,7 +25142,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      53
+    ]
   },
   {
     "id": "u17-0904",
@@ -22036,7 +25172,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u17-0905",
@@ -22057,7 +25197,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u17-0906",
@@ -22085,7 +25229,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u17-0907",
@@ -22111,7 +25259,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u17-0908",
@@ -22136,7 +25288,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u17-0909",
@@ -22159,7 +25315,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u17-0910",
@@ -22225,7 +25385,11 @@
     "kind": "dialogue",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u17-0913",
@@ -22246,7 +25410,11 @@
     "kind": "question",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u17-0914",
@@ -22270,7 +25438,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      24
+    ]
   },
   {
     "id": "u17-0915",
@@ -22296,7 +25468,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "replacements",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u17-0916",
@@ -22322,7 +25498,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "last two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u17-0917",
@@ -22344,7 +25524,11 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "last two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u17-0918",
@@ -22372,6 +25556,10 @@
     "kind": "statement",
     "unit": "u17",
     "theme": "last two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   }
 ]

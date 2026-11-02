@@ -22,7 +22,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0002",
@@ -48,7 +52,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0003",
@@ -74,7 +82,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0004",
@@ -104,7 +116,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0005",
@@ -128,7 +144,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0006",
@@ -154,7 +174,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      20
+    ]
   },
   {
     "id": "u14-0007",
@@ -179,7 +203,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0008",
@@ -210,7 +238,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0009",
@@ -237,7 +269,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      29
+    ]
   },
   {
     "id": "u14-0010",
@@ -268,7 +304,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0011",
@@ -294,7 +334,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0012",
@@ -320,7 +364,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      19
+    ]
   },
   {
     "id": "u14-0013",
@@ -346,7 +394,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0014",
@@ -370,7 +422,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0015",
@@ -395,7 +451,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0016",
@@ -421,7 +481,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0017",
@@ -448,7 +512,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u14-0018",
@@ -474,7 +542,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      23
+    ]
   },
   {
     "id": "u14-0019",
@@ -499,7 +571,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      33
+    ]
   },
   {
     "id": "u14-0020",
@@ -525,7 +601,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u14-0021",
@@ -552,7 +632,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0022",
@@ -577,7 +661,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      20
+    ]
   },
   {
     "id": "u14-0023",
@@ -610,7 +698,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u14-0024",
@@ -637,7 +729,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      30
+    ]
   },
   {
     "id": "u14-0025",
@@ -666,7 +762,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      29
+    ]
   },
   {
     "id": "u14-0026",
@@ -693,7 +793,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "people and things I describe",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      28
+    ]
   },
   {
     "id": "u14-0027",
@@ -721,7 +825,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u14-0028",
@@ -752,7 +860,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0029",
@@ -783,7 +895,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0030",
@@ -809,7 +925,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0031",
@@ -838,7 +958,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      45
+    ]
   },
   {
     "id": "u14-0032",
@@ -867,7 +991,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0033",
@@ -892,7 +1020,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0034",
@@ -920,7 +1052,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      25
+    ]
   },
   {
     "id": "u14-0035",
@@ -949,7 +1085,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u14-0036",
@@ -977,7 +1117,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      10
+    ]
   },
   {
     "id": "u14-0037",
@@ -1007,7 +1151,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      35
+    ]
   },
   {
     "id": "u14-0038",
@@ -1034,7 +1182,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "messages and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u14-0039",
@@ -1063,7 +1215,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u14-0040",
@@ -1087,7 +1243,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0041",
@@ -1115,7 +1275,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u14-0042",
@@ -1141,7 +1305,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0043",
@@ -1166,7 +1334,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0044",
@@ -1193,7 +1365,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0045",
@@ -1219,7 +1395,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u14-0046",
@@ -1246,7 +1426,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u14-0047",
@@ -1276,7 +1460,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u14-0048",
@@ -1304,7 +1492,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0049",
@@ -1331,7 +1523,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u14-0050",
@@ -1359,7 +1555,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u14-0051",
@@ -1383,7 +1583,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u14-0052",
@@ -1408,7 +1612,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0053",
@@ -1435,7 +1643,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0054",
@@ -1461,7 +1673,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0055",
@@ -1485,7 +1701,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u14-0056",
@@ -1515,7 +1735,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u14-0057",
@@ -1538,7 +1762,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0058",
@@ -1563,7 +1791,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u14-0059",
@@ -1592,7 +1824,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0060",
@@ -1618,7 +1854,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u14-0061",
@@ -1644,7 +1884,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0062",
@@ -1694,7 +1938,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u14-0064",
@@ -1724,7 +1972,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u14-0065",
@@ -1749,7 +2001,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0066",
@@ -1776,7 +2032,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0067",
@@ -1803,7 +2063,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u14-0068",
@@ -1828,7 +2092,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u14-0069",
@@ -1853,7 +2121,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u14-0070",
@@ -1881,7 +2153,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0071",
@@ -1911,7 +2187,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u14-0072",
@@ -1935,7 +2215,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0073",
@@ -1966,7 +2250,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u14-0074",
@@ -1995,7 +2283,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0075",
@@ -2023,7 +2315,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0076",
@@ -2046,7 +2342,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0077",
@@ -2072,7 +2372,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u14-0078",
@@ -2098,7 +2402,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u14-0079",
@@ -2124,7 +2432,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0080",
@@ -2152,7 +2464,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0081",
@@ -2183,7 +2499,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0082",
@@ -2209,7 +2529,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0083",
@@ -2295,7 +2619,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      45
+    ]
   },
   {
     "id": "u14-0087",
@@ -2367,7 +2695,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0090",
@@ -2395,7 +2727,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u14-0091",
@@ -2423,7 +2759,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0092",
@@ -2450,7 +2790,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0093",
@@ -2476,7 +2820,11 @@
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0094",
@@ -2504,7 +2852,11 @@
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u14-0095",
@@ -2532,7 +2884,11 @@
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u14-0096",
@@ -2558,7 +2914,11 @@
     "unit": "u14",
     "theme": "reasons with porque, como, por eso",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      53,
+      60
+    ]
   },
   {
     "id": "u14-0097",
@@ -2605,7 +2965,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0099",
@@ -2656,7 +3020,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u14-0101",
@@ -2679,7 +3047,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u14-0102",
@@ -2703,7 +3075,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u14-0103",
@@ -2750,7 +3126,11 @@
     "unit": "u14",
     "theme": "little words that go before or after the verb",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u14-0105",
@@ -2779,7 +3159,11 @@
     "unit": "u14",
     "theme": "little words that go before or after the verb",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0106",
@@ -2869,7 +3253,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u14-0110",
@@ -2936,7 +3324,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u14-0113",
@@ -2962,7 +3354,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0114",
@@ -2990,7 +3386,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0115",
@@ -3017,7 +3417,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u14-0116",
@@ -3041,7 +3445,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0117",
@@ -3067,7 +3475,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0118",
@@ -3094,7 +3506,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u14-0119",
@@ -3407,7 +3823,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u14-0135",
@@ -3434,7 +3854,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u14-0136",
@@ -3458,7 +3882,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "little words that go before or after the verb",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u14-0137",
@@ -3482,7 +3910,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u14-0138",
@@ -3504,7 +3936,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u14-0139",
@@ -3530,7 +3966,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u14-0140",
@@ -3556,7 +3996,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u14-0141",
@@ -3578,7 +4022,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u14-0142",
@@ -3628,7 +4076,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      53
+    ]
   },
   {
     "id": "u14-0144",
@@ -3653,7 +4105,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u14-0145",
@@ -3680,7 +4136,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u14-0146",
@@ -3706,7 +4166,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u14-0147",
@@ -3732,7 +4196,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u14-0148",
@@ -3781,7 +4249,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      32
+    ]
   },
   {
     "id": "u14-0150",
@@ -3806,7 +4278,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u14-0151",
@@ -3828,7 +4304,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      35
+    ]
   },
   {
     "id": "u14-0152",
@@ -3853,7 +4333,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u14-0153",
@@ -3879,7 +4363,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u14-0154",
@@ -3904,7 +4392,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      31
+    ]
   },
   {
     "id": "u14-0155",
@@ -3929,7 +4421,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u14-0156",
@@ -3954,7 +4450,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u14-0157",
@@ -3977,7 +4477,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u14-0158",
@@ -4004,7 +4508,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u14-0159",
@@ -4031,7 +4539,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u14-0160",
@@ -4055,7 +4567,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u14-0161",
@@ -4108,7 +4624,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      46
+    ]
   },
   {
     "id": "u14-0163",
@@ -4134,7 +4654,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u14-0164",
@@ -4179,7 +4703,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u14-0166",
@@ -4208,7 +4736,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u14-0167",
@@ -4232,7 +4764,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u14-0168",
@@ -4258,7 +4794,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      31
+    ]
   },
   {
     "id": "u14-0169",
@@ -4303,7 +4843,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u14-0171",
@@ -4331,7 +4875,11 @@
     "unit": "u14",
     "theme": "what for, and my view",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      34
+    ]
   },
   {
     "id": "u14-0172",
@@ -4357,7 +4905,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u14-0173",
@@ -4406,7 +4958,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u14-0175",
@@ -4432,7 +4988,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u14-0176",
@@ -4456,7 +5016,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u14-0177",
@@ -4484,7 +5048,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u14-0178",
@@ -4534,7 +5102,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u14-0180",
@@ -4561,7 +5133,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      37
+    ]
   },
   {
     "id": "u14-0181",
@@ -4589,7 +5165,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u14-0182",
@@ -4613,7 +5193,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u14-0183",
@@ -4644,7 +5228,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u14-0184",
@@ -4668,7 +5256,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u14-0185",
@@ -4693,7 +5285,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u14-0186",
@@ -4743,7 +5339,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u14-0188",
@@ -4769,7 +5369,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u14-0189",
@@ -4797,7 +5401,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "what for, and my view",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      35
+    ]
   },
   {
     "id": "u14-0190",
@@ -4824,7 +5432,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      48
+    ]
   },
   {
     "id": "u14-0191",
@@ -4849,7 +5461,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u14-0192",
@@ -4877,7 +5493,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u14-0193",
@@ -4902,7 +5522,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      42
+    ]
   },
   {
     "id": "u14-0194",
@@ -4933,7 +5557,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u14-0195",
@@ -4962,7 +5590,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      33,
+      54
+    ]
   },
   {
     "id": "u14-0196",
@@ -4992,7 +5624,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      52
+    ]
   },
   {
     "id": "u14-0197",
@@ -5023,7 +5659,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      26,
+      37
+    ]
   },
   {
     "id": "u14-0198",
@@ -5051,7 +5691,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u14-0199",
@@ -5077,7 +5721,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u14-0200",
@@ -5099,7 +5747,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u14-0201",
@@ -5126,7 +5778,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      50
+    ]
   },
   {
     "id": "u14-0202",
@@ -5155,7 +5811,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      33
+    ]
   },
   {
     "id": "u14-0203",
@@ -5183,7 +5843,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u14-0204",
@@ -5211,7 +5875,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u14-0205",
@@ -5238,7 +5906,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u14-0206",
@@ -5262,7 +5934,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u14-0207",
@@ -5290,7 +5966,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u14-0208",
@@ -5317,7 +5997,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0209",
@@ -5343,7 +6027,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u14-0210",
@@ -5373,7 +6061,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u14-0211",
@@ -5395,7 +6087,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u14-0212",
@@ -5430,7 +6126,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      52
+    ]
   },
   {
     "id": "u14-0213",
@@ -5461,7 +6161,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      49
+    ]
   },
   {
     "id": "u14-0214",
@@ -5486,7 +6190,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u14-0215",
@@ -5512,7 +6220,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u14-0216",
@@ -5534,7 +6246,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u14-0217",
@@ -5557,7 +6273,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u14-0218",
@@ -5588,7 +6308,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u14-0219",
@@ -5618,7 +6342,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u14-0220",
@@ -5646,7 +6374,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      41
+    ]
   },
   {
     "id": "u14-0221",
@@ -5673,7 +6405,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u14-0222",
@@ -5702,7 +6438,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u14-0223",
@@ -5727,7 +6467,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u14-0224",
@@ -5747,7 +6491,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0225",
@@ -5764,7 +6512,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0226",
@@ -5787,7 +6539,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0227",
@@ -5812,7 +6568,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0228",
@@ -5835,7 +6595,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u14-0229",
@@ -5861,7 +6625,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u14-0230",
@@ -5891,7 +6659,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u14-0231",
@@ -5917,7 +6689,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u14-0232",
@@ -5941,7 +6717,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u14-0233",
@@ -5964,7 +6744,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u14-0234",
@@ -5985,7 +6769,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0235",
@@ -6005,7 +6793,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0236",
@@ -6026,7 +6818,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0237",
@@ -6051,7 +6847,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u14-0238",
@@ -6076,7 +6876,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0239",
@@ -6098,7 +6902,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0240",
@@ -6120,7 +6928,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      32
+    ]
   },
   {
     "id": "u14-0241",
@@ -6145,7 +6957,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u14-0242",
@@ -6166,7 +6982,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u14-0243",
@@ -6190,7 +7010,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0244",
@@ -6213,7 +7037,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u14-0245",
@@ -6236,7 +7064,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0246",
@@ -6259,7 +7091,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0247",
@@ -6286,7 +7122,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0248",
@@ -6316,7 +7156,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0249",
@@ -6334,7 +7178,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u14-0250",
@@ -6352,7 +7200,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u14-0251",
@@ -6380,7 +7232,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u14-0252",
@@ -6398,7 +7254,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u14-0253",
@@ -6453,7 +7313,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u14-0256",
@@ -6514,7 +7378,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u14-0259",
@@ -6532,7 +7400,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u14-0260",
@@ -6558,7 +7430,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u14-0261",
@@ -6579,7 +7455,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u14-0262",
@@ -6617,7 +7497,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u14-0264",
@@ -6637,7 +7521,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u14-0265",
@@ -6656,7 +7544,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u14-0266",
@@ -6677,7 +7569,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u14-0267",
@@ -6695,7 +7591,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u14-0268",
@@ -6713,7 +7613,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u14-0269",
@@ -6731,7 +7635,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u14-0270",
@@ -6751,7 +7659,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u14-0271",
@@ -6781,7 +7693,11 @@
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u14-0272",
@@ -6802,7 +7718,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "joining ideas and writing to a friend",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u14-0273",
@@ -6843,7 +7763,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u14-0275",
@@ -6867,7 +7791,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0276",
@@ -6893,7 +7821,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0277",
@@ -6922,7 +7854,11 @@
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      41,
+      48
+    ]
   },
   {
     "id": "u14-0278",
@@ -6952,7 +7888,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u14-0279",
@@ -6976,7 +7916,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0280",
@@ -7009,7 +7953,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u14-0281",
@@ -7040,7 +7988,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      61,
+      69
+    ]
   },
   {
     "id": "u14-0282",
@@ -7067,7 +8019,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u14-0283",
@@ -7095,7 +8051,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u14-0284",
@@ -7124,7 +8084,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0285",
@@ -7150,7 +8114,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      54
+    ]
   },
   {
     "id": "u14-0286",
@@ -7177,7 +8145,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      53
+    ]
   },
   {
     "id": "u14-0287",
@@ -7223,7 +8195,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      30
+    ]
   },
   {
     "id": "u14-0289",
@@ -7248,7 +8224,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      27
+    ]
   },
   {
     "id": "u14-0290",
@@ -7297,7 +8277,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      37
+    ]
   },
   {
     "id": "u14-0292",
@@ -7324,7 +8308,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u14-0293",
@@ -7351,7 +8339,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0294",
@@ -7380,7 +8372,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u14-0295",
@@ -7403,7 +8399,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      20
+    ]
   },
   {
     "id": "u14-0296",
@@ -7432,7 +8432,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u14-0297",
@@ -7457,7 +8461,11 @@
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      30,
+      33
+    ]
   },
   {
     "id": "u14-0298",
@@ -7488,7 +8496,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u14-0299",
@@ -7516,7 +8528,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u14-0300",
@@ -7541,7 +8557,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u14-0301",
@@ -7567,7 +8587,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0302",
@@ -7592,7 +8616,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0303",
@@ -7619,7 +8647,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0304",
@@ -7647,7 +8679,11 @@
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      33,
+      36
+    ]
   },
   {
     "id": "u14-0305",
@@ -7694,7 +8730,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u14-0307",
@@ -7721,7 +8761,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u14-0308",
@@ -7769,7 +8813,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0310",
@@ -7792,7 +8840,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u14-0311",
@@ -7845,7 +8897,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      43
+    ]
   },
   {
     "id": "u14-0313",
@@ -7927,7 +8983,11 @@
     "unit": "u14",
     "theme": "Tomás writes to Vale (story)",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u14-0316",
@@ -7955,7 +9015,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0317",
@@ -7982,7 +9046,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u14-0318",
@@ -8010,7 +9078,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u14-0319",
@@ -8041,7 +9113,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u14-0320",
@@ -8068,7 +9144,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0321",
@@ -8094,7 +9174,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u14-0322",
@@ -8121,7 +9205,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0323",
@@ -8150,7 +9238,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0324",
@@ -8177,7 +9269,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u14-0325",
@@ -8202,7 +9298,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u14-0326",
@@ -8229,7 +9329,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u14-0327",
@@ -8253,7 +9357,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u14-0328",
@@ -8282,7 +9390,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0329",
@@ -8310,7 +9422,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0330",
@@ -8340,7 +9456,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0331",
@@ -8367,7 +9487,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0332",
@@ -8398,7 +9522,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0333",
@@ -8425,7 +9553,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0334",
@@ -8451,7 +9583,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0335",
@@ -8478,7 +9614,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0336",
@@ -8505,7 +9645,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0337",
@@ -8533,7 +9677,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0338",
@@ -8560,7 +9708,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0339",
@@ -8585,7 +9737,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u14-0340",
@@ -8609,7 +9765,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u14-0341",
@@ -8634,7 +9794,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0342",
@@ -8660,7 +9824,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0343",
@@ -8691,7 +9859,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      33,
+      42
+    ]
   },
   {
     "id": "u14-0344",
@@ -8717,7 +9889,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u14-0345",
@@ -8746,7 +9922,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u14-0346",
@@ -8775,7 +9955,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u14-0347",
@@ -8803,7 +9987,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u14-0348",
@@ -8831,7 +10019,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u14-0349",
@@ -8854,7 +10046,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0350",
@@ -8879,7 +10075,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u14-0351",
@@ -8906,7 +10106,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u14-0352",
@@ -8933,7 +10137,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0353",
@@ -8958,7 +10166,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0354",
@@ -8984,7 +10196,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0355",
@@ -9010,7 +10226,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0356",
@@ -9038,7 +10258,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0357",
@@ -9064,7 +10288,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0358",
@@ -9095,7 +10323,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u14-0359",
@@ -9123,7 +10355,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u14-0360",
@@ -9150,7 +10386,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u14-0361",
@@ -9175,7 +10415,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0362",
@@ -9200,7 +10444,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u14-0363",
@@ -9226,7 +10474,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0364",
@@ -9255,7 +10507,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u14-0365",
@@ -9286,7 +10542,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      33,
+      40
+    ]
   },
   {
     "id": "u14-0366",
@@ -9318,7 +10578,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u14-0367",
@@ -9344,7 +10608,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u14-0368",
@@ -9372,7 +10640,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u14-0369",
@@ -9398,7 +10670,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u14-0370",
@@ -9423,7 +10699,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0371",
@@ -9450,7 +10730,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0372",
@@ -9478,7 +10762,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u14-0373",
@@ -9526,7 +10814,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u14-0375",
@@ -9552,7 +10844,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0376",
@@ -9576,7 +10872,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u14-0377",
@@ -9601,7 +10901,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u14-0378",
@@ -9625,7 +10929,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u14-0379",
@@ -9650,7 +10958,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u14-0380",
@@ -9676,7 +10988,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u14-0381",
@@ -9702,7 +11018,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u14-0382",
@@ -9728,7 +11048,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u14-0383",
@@ -9754,7 +11078,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u14-0384",
@@ -9779,7 +11107,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u14-0385",
@@ -9805,7 +11137,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u14-0386",
@@ -9829,7 +11165,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u14-0387",
@@ -9852,7 +11192,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u14-0388",
@@ -9874,7 +11218,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u14-0389",
@@ -9899,7 +11247,11 @@
     "unit": "u14",
     "theme": "plans with a little word on the end",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u14-0390",
@@ -9926,7 +11278,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u14-0391",
@@ -9953,7 +11309,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0392",
@@ -9977,7 +11337,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u14-0393",
@@ -10002,7 +11366,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0394",
@@ -10027,7 +11395,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u14-0395",
@@ -10053,7 +11425,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      15
+    ]
   },
   {
     "id": "u14-0396",
@@ -10081,7 +11457,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0397",
@@ -10107,7 +11487,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u14-0398",
@@ -10133,7 +11517,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u14-0399",
@@ -10186,7 +11574,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u14-0401",
@@ -10215,7 +11607,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0402",
@@ -10241,7 +11637,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u14-0403",
@@ -10268,7 +11668,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u14-0404",
@@ -10294,7 +11698,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u14-0405",
@@ -10322,7 +11730,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u14-0406",
@@ -10349,7 +11761,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0407",
@@ -10374,7 +11790,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u14-0408",
@@ -10407,7 +11827,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u14-0409",
@@ -10435,7 +11859,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "plans with a little word on the end",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u14-0410",
@@ -10461,7 +11889,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u14-0411",
@@ -10488,7 +11920,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0412",
@@ -10515,7 +11951,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      24
+    ]
   },
   {
     "id": "u14-0413",
@@ -10542,7 +11982,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0414",
@@ -10568,7 +12012,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0415",
@@ -10595,7 +12043,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      34
+    ]
   },
   {
     "id": "u14-0416",
@@ -10621,7 +12073,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0417",
@@ -10648,7 +12104,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0418",
@@ -10676,7 +12136,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0419",
@@ -10701,7 +12165,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0420",
@@ -10728,7 +12196,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0421",
@@ -10756,7 +12228,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0422",
@@ -10783,7 +12259,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0423",
@@ -10812,7 +12292,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0424",
@@ -10839,7 +12323,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0425",
@@ -10864,7 +12352,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0426",
@@ -10890,7 +12382,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0427",
@@ -10914,7 +12410,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0428",
@@ -10940,7 +12440,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0429",
@@ -10968,7 +12472,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0430",
@@ -10994,7 +12502,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0431",
@@ -11020,7 +12532,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0432",
@@ -11044,7 +12560,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0433",
@@ -11070,7 +12590,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0434",
@@ -11099,7 +12623,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0435",
@@ -11126,7 +12654,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0436",
@@ -11154,7 +12686,11 @@
     "unit": "u14",
     "theme": "city, work and home with que",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      7,
+      10
+    ]
   },
   {
     "id": "u14-0437",
@@ -11181,7 +12717,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0438",
@@ -11210,7 +12750,11 @@
     "unit": "u14",
     "theme": "city, work and home with que",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0439",
@@ -11241,7 +12785,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0440",
@@ -11265,7 +12813,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0441",
@@ -11291,7 +12843,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0442",
@@ -11316,7 +12872,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      9
+    ]
   },
   {
     "id": "u14-0443",
@@ -11343,7 +12903,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0444",
@@ -11374,7 +12938,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0445",
@@ -11402,7 +12970,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0446",
@@ -11430,7 +13002,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      40
+    ]
   },
   {
     "id": "u14-0447",
@@ -11460,7 +13036,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      34
+    ]
   },
   {
     "id": "u14-0448",
@@ -11488,7 +13068,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      34
+    ]
   },
   {
     "id": "u14-0449",
@@ -11515,7 +13099,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      24
+    ]
   },
   {
     "id": "u14-0450",
@@ -11542,7 +13130,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      36
+    ]
   },
   {
     "id": "u14-0451",
@@ -11569,7 +13161,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      46
+    ]
   },
   {
     "id": "u14-0452",
@@ -11597,7 +13193,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      35
+    ]
   },
   {
     "id": "u14-0453",
@@ -11624,7 +13224,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "city, work and home with que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      24
+    ]
   },
   {
     "id": "u14-0454",
@@ -11650,7 +13254,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u14-0455",
@@ -11675,7 +13283,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0456",
@@ -11701,7 +13313,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u14-0457",
@@ -11727,7 +13343,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0458",
@@ -11752,7 +13372,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0459",
@@ -11779,7 +13403,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0460",
@@ -11806,7 +13434,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u14-0461",
@@ -11838,7 +13470,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0462",
@@ -11865,7 +13501,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0463",
@@ -11894,7 +13534,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u14-0464",
@@ -11924,7 +13568,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u14-0465",
@@ -11950,7 +13598,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u14-0466",
@@ -11977,7 +13629,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      33
+    ]
   },
   {
     "id": "u14-0467",
@@ -12007,7 +13663,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0468",
@@ -12032,7 +13692,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0469",
@@ -12062,7 +13726,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u14-0470",
@@ -12091,7 +13759,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0471",
@@ -12120,7 +13792,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0472",
@@ -12146,7 +13822,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u14-0473",
@@ -12172,7 +13852,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u14-0474",
@@ -12201,7 +13885,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u14-0475",
@@ -12226,7 +13914,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0476",
@@ -12252,7 +13944,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0477",
@@ -12279,7 +13975,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u14-0478",
@@ -12304,7 +14004,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u14-0479",
@@ -12334,7 +14038,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u14-0480",
@@ -12361,7 +14069,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0481",
@@ -12389,7 +14101,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u14-0482",
@@ -12417,7 +14133,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0483",
@@ -12443,7 +14163,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u14-0484",
@@ -12471,7 +14195,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u14-0485",
@@ -12500,7 +14228,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0486",
@@ -12527,7 +14259,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0487",
@@ -12556,7 +14292,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0488",
@@ -12585,7 +14325,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u14-0489",
@@ -12613,7 +14357,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u14-0490",
@@ -12641,7 +14389,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u14-0491",
@@ -12674,7 +14426,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0492",
@@ -12702,7 +14458,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u14-0493",
@@ -12730,7 +14490,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u14-0494",
@@ -12758,7 +14522,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0495",
@@ -12786,7 +14554,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u14-0496",
@@ -12815,7 +14587,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0497",
@@ -12842,7 +14618,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u14-0498",
@@ -12894,7 +14674,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0500",
@@ -12920,7 +14704,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      40
+    ]
   },
   {
     "id": "u14-0501",
@@ -12944,7 +14732,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u14-0502",
@@ -12971,7 +14763,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u14-0503",
@@ -13004,7 +14800,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      39,
+      46
+    ]
   },
   {
     "id": "u14-0504",
@@ -13031,7 +14831,11 @@
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u14-0505",
@@ -13057,7 +14861,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0506",
@@ -13081,7 +14889,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0507",
@@ -13105,7 +14917,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0508",
@@ -13127,7 +14943,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0509",
@@ -13156,7 +14976,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "reasons, excuses and decisions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u14-0510",
@@ -13179,7 +15003,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0511",
@@ -13204,7 +15032,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0512",
@@ -13227,7 +15059,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0513",
@@ -13249,7 +15085,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0514",
@@ -13270,7 +15110,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0515",
@@ -13295,7 +15139,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0516",
@@ -13324,7 +15172,11 @@
     "unit": "u14",
     "theme": "to whom, for whom",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0517",
@@ -13347,7 +15199,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0518",
@@ -13371,7 +15227,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0519",
@@ -13393,7 +15253,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0520",
@@ -13422,7 +15286,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u14-0521",
@@ -13445,7 +15313,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0522",
@@ -13469,7 +15341,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0523",
@@ -13491,7 +15367,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0524",
@@ -13512,7 +15392,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      7
+    ]
   },
   {
     "id": "u14-0525",
@@ -13590,7 +15474,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0529",
@@ -13613,7 +15501,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0530",
@@ -13635,7 +15527,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0531",
@@ -13656,7 +15552,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0532",
@@ -13699,7 +15599,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0534",
@@ -13720,7 +15624,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      3
+    ]
   },
   {
     "id": "u14-0535",
@@ -13744,7 +15652,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u14-0536",
@@ -13803,7 +15715,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u14-0539",
@@ -13826,7 +15742,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u14-0540",
@@ -13966,7 +15886,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0547",
@@ -13989,7 +15913,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u14-0548",
@@ -14013,7 +15941,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u14-0549",
@@ -14035,7 +15967,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u14-0550",
@@ -14086,7 +16022,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      8
+    ]
   },
   {
     "id": "u14-0552",
@@ -14130,7 +16070,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      4
+    ]
   },
   {
     "id": "u14-0554",
@@ -14177,7 +16121,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "to whom, for whom",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      7
+    ]
   },
   {
     "id": "u14-0556",
@@ -14225,7 +16173,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0558",
@@ -14248,7 +16200,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u14-0559",
@@ -14271,7 +16227,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u14-0560",
@@ -14296,7 +16256,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u14-0561",
@@ -14319,7 +16283,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u14-0562",
@@ -14346,7 +16314,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      48
+    ]
   },
   {
     "id": "u14-0563",
@@ -14366,7 +16338,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u14-0564",
@@ -14389,7 +16365,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u14-0565",
@@ -14410,7 +16390,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u14-0566",
@@ -14439,7 +16423,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   },
   {
     "id": "u14-0567",
@@ -14460,7 +16448,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u14-0568",
@@ -14484,7 +16476,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u14-0569",
@@ -14503,7 +16499,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0570",
@@ -14527,7 +16527,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0571",
@@ -14550,7 +16554,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u14-0572",
@@ -14573,7 +16581,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u14-0573",
@@ -14596,7 +16608,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u14-0574",
@@ -14618,7 +16634,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u14-0575",
@@ -14643,7 +16663,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      42,
+      52
+    ]
   },
   {
     "id": "u14-0576",
@@ -14667,7 +16691,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u14-0577",
@@ -14690,7 +16718,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u14-0578",
@@ -14713,7 +16745,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u14-0579",
@@ -14737,7 +16773,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u14-0580",
@@ -14759,7 +16799,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u14-0581",
@@ -14790,7 +16834,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0582",
@@ -14812,7 +16860,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u14-0583",
@@ -14839,7 +16891,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0584",
@@ -14863,7 +16919,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u14-0585",
@@ -14898,7 +16958,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u14-0586",
@@ -14922,7 +16986,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0587",
@@ -14946,7 +17014,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u14-0588",
@@ -14969,7 +17041,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0589",
@@ -14994,7 +17070,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u14-0590",
@@ -15017,7 +17097,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0591",
@@ -15040,7 +17124,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u14-0592",
@@ -15068,7 +17156,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u14-0593",
@@ -15091,7 +17183,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u14-0594",
@@ -15113,7 +17209,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u14-0595",
@@ -15134,7 +17234,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u14-0596",
@@ -15156,7 +17260,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u14-0597",
@@ -15182,7 +17290,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0598",
@@ -15208,7 +17320,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      29
+    ]
   },
   {
     "id": "u14-0599",
@@ -15232,7 +17348,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u14-0600",
@@ -15257,7 +17377,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0601",
@@ -15280,7 +17404,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0602",
@@ -15304,7 +17432,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u14-0603",
@@ -15328,7 +17460,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0604",
@@ -15349,7 +17485,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0605",
@@ -15371,7 +17511,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u14-0606",
@@ -15393,7 +17537,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u14-0607",
@@ -15416,7 +17564,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u14-0608",
@@ -15440,7 +17592,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u14-0609",
@@ -15461,7 +17617,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u14-0610",
@@ -15482,7 +17642,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u14-0611",
@@ -15507,7 +17671,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u14-0612",
@@ -15529,7 +17697,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u14-0613",
@@ -15555,7 +17727,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u14-0614",
@@ -15579,7 +17755,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u14-0615",
@@ -15604,7 +17784,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u14-0616",
@@ -15629,7 +17813,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u14-0617",
@@ -15655,7 +17843,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0618",
@@ -15681,7 +17873,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u14-0619",
@@ -15703,7 +17899,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u14-0620",
@@ -15729,7 +17929,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u14-0621",
@@ -15751,7 +17955,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u14-0622",
@@ -15777,7 +17985,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u14-0623",
@@ -15800,7 +18012,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0624",
@@ -15821,7 +18037,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u14-0625",
@@ -15842,7 +18062,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u14-0626",
@@ -15867,7 +18091,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u14-0627",
@@ -15889,7 +18117,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u14-0628",
@@ -15910,7 +18142,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      10
+    ]
   },
   {
     "id": "u14-0629",
@@ -15935,7 +18171,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u14-0630",
@@ -15958,7 +18198,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0631",
@@ -15979,7 +18223,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u14-0632",
@@ -16000,7 +18248,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u14-0633",
@@ -16025,7 +18277,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      36
+    ]
   },
   {
     "id": "u14-0634",
@@ -16046,7 +18302,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0635",
@@ -16070,7 +18330,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u14-0636",
@@ -16095,7 +18359,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0637",
@@ -16118,7 +18386,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0638",
@@ -16143,7 +18415,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u14-0639",
@@ -16166,7 +18442,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u14-0640",
@@ -16189,7 +18469,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u14-0641",
@@ -16214,7 +18498,11 @@
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u14-0642",
@@ -16236,7 +18524,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0643",
@@ -16261,7 +18553,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u14-0644",
@@ -16284,7 +18580,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u14-0645",
@@ -16307,7 +18607,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0646",
@@ -16327,7 +18631,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u14-0647",
@@ -16350,7 +18658,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u14-0648",
@@ -16372,7 +18684,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u14-0649",
@@ -16395,7 +18711,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u14-0650",
@@ -16418,7 +18738,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u14-0651",
@@ -16439,7 +18763,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u14-0652",
@@ -16463,7 +18791,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u14-0653",
@@ -16485,7 +18817,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u14-0654",
@@ -16527,7 +18863,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u14-0656",
@@ -16550,7 +18890,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "words for texts, replies and the phone",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u14-0657",
@@ -16598,7 +18942,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u14-0659",
@@ -16620,7 +18968,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u14-0660",
@@ -16642,7 +18994,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u14-0661",
@@ -16667,7 +19023,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u14-0662",
@@ -16695,7 +19055,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0663",
@@ -16722,7 +19086,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u14-0664",
@@ -16746,7 +19114,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u14-0665",
@@ -16769,7 +19141,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u14-0666",
@@ -16795,7 +19171,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u14-0667",
@@ -16819,7 +19199,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u14-0668",
@@ -16840,7 +19224,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0669",
@@ -16863,7 +19251,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0670",
@@ -16886,7 +19278,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u14-0671",
@@ -16908,7 +19304,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u14-0672",
@@ -16931,7 +19331,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u14-0673",
@@ -16952,7 +19356,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0674",
@@ -16974,7 +19382,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u14-0675",
@@ -16993,7 +19405,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0676",
@@ -17015,7 +19431,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      10
+    ]
   },
   {
     "id": "u14-0677",
@@ -17036,7 +19456,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      7
+    ]
   },
   {
     "id": "u14-0678",
@@ -17058,7 +19482,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      30
+    ]
   },
   {
     "id": "u14-0679",
@@ -17081,7 +19509,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u14-0680",
@@ -17106,7 +19538,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      32
+    ]
   },
   {
     "id": "u14-0681",
@@ -17132,7 +19568,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u14-0682",
@@ -17156,7 +19596,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      44
+    ]
   },
   {
     "id": "u14-0683",
@@ -17180,7 +19624,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u14-0684",
@@ -17202,7 +19650,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u14-0685",
@@ -17225,7 +19677,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0686",
@@ -17246,7 +19702,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0687",
@@ -17268,7 +19728,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u14-0688",
@@ -17290,7 +19754,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u14-0689",
@@ -17313,7 +19781,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0690",
@@ -17334,7 +19806,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u14-0691",
@@ -17358,7 +19834,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      28
+    ]
   },
   {
     "id": "u14-0692",
@@ -17379,7 +19859,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u14-0693",
@@ -17401,7 +19885,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u14-0694",
@@ -17423,7 +19911,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u14-0695",
@@ -17445,7 +19937,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u14-0696",
@@ -17468,7 +19964,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u14-0697",
@@ -17491,7 +19991,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u14-0698",
@@ -17514,7 +20018,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u14-0699",
@@ -17536,7 +20044,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u14-0700",
@@ -17559,7 +20071,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0701",
@@ -17583,7 +20099,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u14-0702",
@@ -17607,7 +20127,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u14-0703",
@@ -17629,7 +20153,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u14-0704",
@@ -17658,7 +20186,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u14-0705",
@@ -17684,7 +20216,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0706",
@@ -17707,7 +20243,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0707",
@@ -17729,7 +20269,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u14-0708",
@@ -17754,7 +20298,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u14-0709",
@@ -17773,7 +20321,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0710",
@@ -17797,7 +20349,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u14-0711",
@@ -17817,7 +20373,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u14-0712",
@@ -17839,7 +20399,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u14-0713",
@@ -17862,7 +20426,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u14-0714",
@@ -17885,7 +20453,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0715",
@@ -17907,7 +20479,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u14-0716",
@@ -17933,7 +20509,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u14-0717",
@@ -17955,7 +20535,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u14-0718",
@@ -17976,7 +20560,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u14-0719",
@@ -17997,7 +20585,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0720",
@@ -18018,7 +20610,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u14-0721",
@@ -18039,7 +20635,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u14-0722",
@@ -18061,7 +20661,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u14-0723",
@@ -18091,7 +20695,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u14-0724",
@@ -18121,7 +20729,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0725",
@@ -18146,7 +20758,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u14-0726",
@@ -18172,7 +20788,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      8
+    ]
   },
   {
     "id": "u14-0727",
@@ -18200,7 +20820,11 @@
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      50,
+      57
+    ]
   },
   {
     "id": "u14-0728",
@@ -18231,7 +20855,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u14-0729",
@@ -18258,7 +20886,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "habits, body, feelings and small stakes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u14-0730",
@@ -18281,7 +20913,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u14-0731",
@@ -18305,7 +20941,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u14-0732",
@@ -18336,7 +20976,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0733",
@@ -18365,7 +21009,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u14-0734",
@@ -18390,7 +21038,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u14-0735",
@@ -18414,7 +21066,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u14-0736",
@@ -18438,7 +21094,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0737",
@@ -18461,7 +21121,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u14-0738",
@@ -18482,7 +21146,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0739",
@@ -18505,7 +21173,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u14-0740",
@@ -18530,7 +21202,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u14-0741",
@@ -18552,7 +21228,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u14-0742",
@@ -18575,7 +21255,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u14-0743",
@@ -18595,7 +21279,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u14-0744",
@@ -18617,7 +21305,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u14-0745",
@@ -18642,7 +21334,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u14-0746",
@@ -18663,7 +21359,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u14-0747",
@@ -18685,7 +21385,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u14-0748",
@@ -18710,7 +21414,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u14-0749",
@@ -18740,7 +21448,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u14-0750",
@@ -18769,7 +21481,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      37
+    ]
   },
   {
     "id": "u14-0751",
@@ -18795,7 +21511,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u14-0752",
@@ -18821,7 +21541,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u14-0753",
@@ -18845,7 +21569,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u14-0754",
@@ -18871,7 +21599,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      53,
+      61
+    ]
   },
   {
     "id": "u14-0755",
@@ -18918,7 +21650,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0757",
@@ -18944,7 +21680,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u14-0758",
@@ -18971,7 +21711,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u14-0759",
@@ -19039,7 +21783,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u14-0762",
@@ -19067,7 +21815,11 @@
     "kind": "question",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u14-0763",
@@ -19095,7 +21847,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u14-0764",
@@ -19122,7 +21878,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u14-0765",
@@ -19150,7 +21910,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u14-0766",
@@ -19180,7 +21944,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      32
+    ]
   },
   {
     "id": "u14-0767",
@@ -19224,7 +21992,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u14-0769",
@@ -19250,7 +22022,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0770",
@@ -19276,7 +22052,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0771",
@@ -19303,7 +22083,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0772",
@@ -19329,7 +22113,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0773",
@@ -19354,7 +22142,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      17
+    ]
   },
   {
     "id": "u14-0774",
@@ -19379,7 +22171,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      25
+    ]
   },
   {
     "id": "u14-0775",
@@ -19407,7 +22203,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0776",
@@ -19433,7 +22233,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0777",
@@ -19461,7 +22265,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0778",
@@ -19488,7 +22296,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      23
+    ]
   },
   {
     "id": "u14-0779",
@@ -19514,7 +22326,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0780",
@@ -19539,7 +22355,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      19
+    ]
   },
   {
     "id": "u14-0781",
@@ -19564,7 +22384,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      19
+    ]
   },
   {
     "id": "u14-0782",
@@ -19587,7 +22411,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u14-0783",
@@ -19615,7 +22443,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      23
+    ]
   },
   {
     "id": "u14-0784",
@@ -19641,7 +22473,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u14-0785",
@@ -19666,7 +22502,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u14-0786",
@@ -19692,7 +22532,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u14-0787",
@@ -19716,7 +22560,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0788",
@@ -19743,7 +22591,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0789",
@@ -19769,7 +22621,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0790",
@@ -19798,7 +22654,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u14-0791",
@@ -19824,7 +22684,11 @@
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      25,
+      28
+    ]
   },
   {
     "id": "u14-0792",
@@ -19852,7 +22716,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "opinions, small worries and story colour",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      14
+    ]
   },
   {
     "id": "u14-0793",
@@ -19880,7 +22748,11 @@
     "unit": "u14",
     "theme": "last gaps and small talk",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u14-0794",
@@ -19902,7 +22774,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0795",
@@ -19926,7 +22802,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u14-0796",
@@ -19954,7 +22834,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      41
+    ]
   },
   {
     "id": "u14-0797",
@@ -19978,7 +22862,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u14-0798",
@@ -20005,7 +22893,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u14-0799",
@@ -20030,7 +22922,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u14-0800",
@@ -20054,7 +22950,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      30
+    ]
   },
   {
     "id": "u14-0801",
@@ -20080,7 +22980,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      29
+    ]
   },
   {
     "id": "u14-0802",
@@ -20105,7 +23009,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u14-0803",
@@ -20134,7 +23042,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u14-0804",
@@ -20157,7 +23069,11 @@
     "unit": "u14",
     "theme": "last gaps and small talk",
     "source": "gen",
-    "lexemes": []
+    "lexemes": [],
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u14-0805",
@@ -20181,7 +23097,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u14-0806",
@@ -20207,7 +23127,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u14-0807",
@@ -20230,7 +23154,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u14-0808",
@@ -20256,7 +23184,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      36
+    ]
   },
   {
     "id": "u14-0809",
@@ -20282,7 +23214,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u14-0810",
@@ -20309,7 +23245,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u14-0811",
@@ -20333,7 +23273,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u14-0812",
@@ -20358,7 +23302,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u14-0813",
@@ -20382,7 +23330,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u14-0814",
@@ -20426,7 +23378,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0816",
@@ -20450,7 +23406,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0817",
@@ -20471,7 +23431,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      2
+    ]
   },
   {
     "id": "u14-0818",
@@ -20515,7 +23479,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0820",
@@ -20535,7 +23503,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      3
+    ]
   },
   {
     "id": "u14-0821",
@@ -20641,7 +23613,11 @@
     "kind": "dialogue",
     "unit": "u14",
     "theme": "last gaps and small talk",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      4
+    ]
   },
   {
     "id": "u14-0826",
@@ -20663,7 +23639,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "care",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u14-0827",
@@ -20691,7 +23671,11 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "care",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u14-0828",
@@ -20720,6 +23704,10 @@
     "kind": "statement",
     "unit": "u14",
     "theme": "care",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   }
 ]

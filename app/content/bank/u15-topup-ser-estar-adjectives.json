@@ -181,6 +181,7 @@
       "c:era",
       "g:adjective-agreement",
       "g:imperfect-states",
+      "g:ser-estar-adjectives",
       "g:ser-identity",
       "l:listo",
       "l:ser",
@@ -192,7 +193,11 @@
     "kind": "statement",
     "unit": "u15",
     "theme": "ser or estar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      18
+    ]
   },
   {
     "id": "u15-t-ser-estar-adjectives-0010",

@@ -23,7 +23,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      39
+    ]
   },
   {
     "id": "u36-0002",
@@ -70,7 +74,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u36-0004",
@@ -99,7 +107,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      42
+    ]
   },
   {
     "id": "u36-0005",
@@ -145,7 +157,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u36-0007",
@@ -173,7 +189,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      47
+    ]
   },
   {
     "id": "u36-0008",
@@ -200,7 +220,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u36-0009",
@@ -245,7 +269,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u36-0011",
@@ -335,7 +363,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0015",
@@ -406,7 +438,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u36-0018",
@@ -432,7 +468,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u36-0019",
@@ -457,7 +497,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u36-0020",
@@ -508,7 +552,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0022",
@@ -557,7 +605,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u36-0024",
@@ -587,7 +639,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      50
+    ]
   },
   {
     "id": "u36-0025",
@@ -633,7 +689,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u36-0027",
@@ -676,7 +736,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u36-0029",
@@ -700,7 +764,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u36-0030",
@@ -747,7 +815,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u36-0032",
@@ -771,7 +843,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u36-0033",
@@ -797,7 +873,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u36-0034",
@@ -820,7 +900,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u36-0035",
@@ -847,7 +931,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u36-0036",
@@ -872,7 +960,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u36-0037",
@@ -900,7 +992,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u36-0038",
@@ -923,7 +1019,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0039",
@@ -949,7 +1049,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u36-0040",
@@ -1048,7 +1152,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u36-0044",
@@ -1115,7 +1223,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u36-0047",
@@ -1137,7 +1249,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u36-0048",
@@ -1164,7 +1280,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u36-0049",
@@ -1257,7 +1377,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u36-0053",
@@ -1302,7 +1426,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u36-0055",
@@ -1326,7 +1454,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u36-0056",
@@ -1370,7 +1502,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u36-0058",
@@ -1393,7 +1529,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0059",
@@ -1415,7 +1555,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u36-0060",
@@ -1516,7 +1660,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u36-0064",
@@ -1543,7 +1691,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      30
+    ]
   },
   {
     "id": "u36-0065",
@@ -1654,7 +1806,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u36-0070",
@@ -1677,7 +1833,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u36-0071",
@@ -1701,7 +1861,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u36-0072",
@@ -1726,7 +1890,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u36-0073",
@@ -1755,7 +1923,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      38
+    ]
   },
   {
     "id": "u36-0074",
@@ -1868,7 +2040,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      34
+    ]
   },
   {
     "id": "u36-0079",
@@ -1984,7 +2160,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u36-0084",
@@ -2010,7 +2190,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u36-0085",
@@ -2129,7 +2313,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u36-0090",
@@ -2155,7 +2343,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0091",
@@ -2198,7 +2390,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0093",
@@ -2249,7 +2445,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u36-0095",
@@ -2271,7 +2471,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0096",
@@ -2317,7 +2521,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u36-0098",
@@ -2341,7 +2549,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u36-0099",
@@ -2389,7 +2601,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u36-0101",
@@ -2458,7 +2674,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      48
+    ]
   },
   {
     "id": "u36-0104",
@@ -2483,7 +2703,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0105",
@@ -2512,7 +2736,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u36-0106",
@@ -2564,7 +2792,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      28
+    ]
   },
   {
     "id": "u36-0108",
@@ -2590,7 +2822,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      46
+    ]
   },
   {
     "id": "u36-0109",
@@ -2634,7 +2870,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0111",
@@ -2660,7 +2900,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "café and sales, passive se",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u36-0112",
@@ -2710,7 +2954,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0114",
@@ -2764,7 +3012,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0116",
@@ -2793,7 +3045,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u36-0117",
@@ -2823,7 +3079,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u36-0118",
@@ -2852,7 +3112,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0119",
@@ -2903,7 +3167,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0121",
@@ -2931,7 +3199,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0122",
@@ -2960,7 +3232,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0123",
@@ -2992,7 +3268,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      54
+    ]
   },
   {
     "id": "u36-0124",
@@ -3088,7 +3368,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      44
+    ]
   },
   {
     "id": "u36-0128",
@@ -3115,7 +3399,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      35
+    ]
   },
   {
     "id": "u36-0129",
@@ -3141,7 +3429,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u36-0130",
@@ -3173,7 +3465,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      56
+    ]
   },
   {
     "id": "u36-0131",
@@ -3200,7 +3496,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      36
+    ]
   },
   {
     "id": "u36-0132",
@@ -3228,7 +3528,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      50
+    ]
   },
   {
     "id": "u36-0133",
@@ -3259,7 +3563,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0134",
@@ -3310,7 +3618,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      30
+    ]
   },
   {
     "id": "u36-0136",
@@ -3339,7 +3651,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      40
+    ]
   },
   {
     "id": "u36-0137",
@@ -3366,7 +3682,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      51
+    ]
   },
   {
     "id": "u36-0138",
@@ -3392,7 +3712,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      27
+    ]
   },
   {
     "id": "u36-0139",
@@ -3420,7 +3744,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      33
+    ]
   },
   {
     "id": "u36-0140",
@@ -3447,7 +3775,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      48
+    ]
   },
   {
     "id": "u36-0141",
@@ -3474,7 +3806,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      39
+    ]
   },
   {
     "id": "u36-0142",
@@ -3500,7 +3836,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      34
+    ]
   },
   {
     "id": "u36-0143",
@@ -3544,7 +3884,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u36-0145",
@@ -3569,7 +3913,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      32
+    ]
   },
   {
     "id": "u36-0146",
@@ -3594,7 +3942,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      31
+    ]
   },
   {
     "id": "u36-0147",
@@ -3620,7 +3972,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      30
+    ]
   },
   {
     "id": "u36-0148",
@@ -3645,7 +4001,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u36-0149",
@@ -3668,7 +4028,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u36-0150",
@@ -3696,7 +4060,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      46
+    ]
   },
   {
     "id": "u36-0151",
@@ -3722,7 +4090,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      37
+    ]
   },
   {
     "id": "u36-0152",
@@ -3746,7 +4118,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0153",
@@ -3776,7 +4152,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      60
+    ]
   },
   {
     "id": "u36-0154",
@@ -3800,7 +4180,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u36-0155",
@@ -3847,7 +4231,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      32
+    ]
   },
   {
     "id": "u36-0157",
@@ -3874,7 +4262,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      68
+    ]
   },
   {
     "id": "u36-0158",
@@ -3903,7 +4295,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      58,
+      86
+    ]
   },
   {
     "id": "u36-0159",
@@ -3932,7 +4328,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      33
+    ]
   },
   {
     "id": "u36-0160",
@@ -3959,7 +4359,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      62
+    ]
   },
   {
     "id": "u36-0161",
@@ -3983,7 +4387,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      57
+    ]
   },
   {
     "id": "u36-0162",
@@ -4013,7 +4421,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      65,
+      71
+    ]
   },
   {
     "id": "u36-0163",
@@ -4039,7 +4451,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u36-0164",
@@ -4062,7 +4478,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0165",
@@ -4085,7 +4505,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u36-0166",
@@ -4160,7 +4584,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u36-0169",
@@ -4207,7 +4635,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0171",
@@ -4230,7 +4662,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0172",
@@ -4258,7 +4694,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u36-0173",
@@ -4282,7 +4722,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u36-0174",
@@ -4305,7 +4749,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0175",
@@ -4330,7 +4778,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u36-0176",
@@ -4358,7 +4810,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      54
+    ]
   },
   {
     "id": "u36-0177",
@@ -4385,7 +4841,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u36-0178",
@@ -4409,7 +4869,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0179",
@@ -4433,7 +4897,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u36-0180",
@@ -4457,7 +4925,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u36-0181",
@@ -4481,7 +4953,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u36-0182",
@@ -4507,7 +4983,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      56
+    ]
   },
   {
     "id": "u36-0183",
@@ -4533,7 +5013,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0184",
@@ -4563,7 +5047,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u36-0185",
@@ -4587,7 +5075,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      35
+    ]
   },
   {
     "id": "u36-0186",
@@ -4613,7 +5105,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u36-0187",
@@ -4641,7 +5137,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      61
+    ]
   },
   {
     "id": "u36-0188",
@@ -4663,7 +5163,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      44
+    ]
   },
   {
     "id": "u36-0189",
@@ -4686,7 +5190,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      40
+    ]
   },
   {
     "id": "u36-0190",
@@ -4709,7 +5217,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      47
+    ]
   },
   {
     "id": "u36-0191",
@@ -4730,7 +5242,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u36-0192",
@@ -4753,7 +5269,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u36-0193",
@@ -4776,7 +5296,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      40
+    ]
   },
   {
     "id": "u36-0194",
@@ -4799,7 +5323,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      42
+    ]
   },
   {
     "id": "u36-0195",
@@ -4830,7 +5358,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      40
+    ]
   },
   {
     "id": "u36-0196",
@@ -4853,7 +5385,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      24
+    ]
   },
   {
     "id": "u36-0197",
@@ -4875,7 +5411,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      18
+    ]
   },
   {
     "id": "u36-0198",
@@ -4904,7 +5444,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      63
+    ]
   },
   {
     "id": "u36-0199",
@@ -4926,7 +5470,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      18
+    ]
   },
   {
     "id": "u36-0200",
@@ -4950,7 +5498,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0201",
@@ -4973,7 +5525,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      23
+    ]
   },
   {
     "id": "u36-0202",
@@ -4999,7 +5555,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      40
+    ]
   },
   {
     "id": "u36-0203",
@@ -5024,7 +5584,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      35
+    ]
   },
   {
     "id": "u36-0204",
@@ -5049,7 +5613,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u36-0205",
@@ -5072,7 +5640,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      52
+    ]
   },
   {
     "id": "u36-0206",
@@ -5095,7 +5667,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u36-0207",
@@ -5118,7 +5694,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u36-0208",
@@ -5140,7 +5720,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u36-0209",
@@ -5162,7 +5746,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      28
+    ]
   },
   {
     "id": "u36-0210",
@@ -5185,7 +5773,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      15
+    ]
   },
   {
     "id": "u36-0211",
@@ -5212,7 +5804,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      36
+    ]
   },
   {
     "id": "u36-0212",
@@ -5238,7 +5834,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u36-0213",
@@ -5264,7 +5864,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u36-0214",
@@ -5289,7 +5893,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u36-0215",
@@ -5313,7 +5921,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u36-0216",
@@ -5336,7 +5948,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u36-0217",
@@ -5369,7 +5985,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      53
+    ]
   },
   {
     "id": "u36-0218",
@@ -5393,7 +6013,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u36-0219",
@@ -5418,7 +6042,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      44
+    ]
   },
   {
     "id": "u36-0220",
@@ -5442,7 +6070,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u36-0221",
@@ -5467,7 +6099,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u36-0222",
@@ -5490,7 +6126,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u36-0223",
@@ -5512,7 +6152,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u36-0224",
@@ -5536,7 +6180,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u36-0225",
@@ -5559,7 +6207,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u36-0226",
@@ -5583,7 +6235,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u36-0227",
@@ -5607,7 +6263,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u36-0228",
@@ -5632,7 +6292,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0229",
@@ -5654,7 +6318,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0230",
@@ -5677,7 +6345,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u36-0231",
@@ -5703,7 +6375,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0232",
@@ -5729,7 +6405,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u36-0233",
@@ -5755,7 +6435,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u36-0234",
@@ -5778,7 +6462,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "market prices and offers",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u36-0235",
@@ -5806,7 +6494,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u36-0236",
@@ -5838,7 +6530,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0237",
@@ -5872,7 +6568,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      68
+    ]
   },
   {
     "id": "u36-0238",
@@ -5901,7 +6601,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      60,
+      72
+    ]
   },
   {
     "id": "u36-0239",
@@ -5932,7 +6636,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      65
+    ]
   },
   {
     "id": "u36-0240",
@@ -5962,7 +6670,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      66,
+      79
+    ]
   },
   {
     "id": "u36-0241",
@@ -5990,7 +6702,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      55,
+      67
+    ]
   },
   {
     "id": "u36-0242",
@@ -6021,7 +6737,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      57,
+      69
+    ]
   },
   {
     "id": "u36-0243",
@@ -6052,7 +6772,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      65,
+      76
+    ]
   },
   {
     "id": "u36-0244",
@@ -6079,7 +6803,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      42
+    ]
   },
   {
     "id": "u36-0245",
@@ -6110,7 +6838,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      49
+    ]
   },
   {
     "id": "u36-0246",
@@ -6139,7 +6871,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u36-0247",
@@ -6168,7 +6904,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      45
+    ]
   },
   {
     "id": "u36-0248",
@@ -6204,7 +6944,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      64
+    ]
   },
   {
     "id": "u36-0249",
@@ -6240,7 +6984,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      64,
+      77
+    ]
   },
   {
     "id": "u36-0250",
@@ -6270,7 +7018,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u36-0251",
@@ -6301,7 +7053,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u36-0252",
@@ -6334,7 +7090,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u36-0253",
@@ -6365,7 +7125,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      61
+    ]
   },
   {
     "id": "u36-0254",
@@ -6398,7 +7162,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      69
+    ]
   },
   {
     "id": "u36-0255",
@@ -6426,7 +7194,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      46
+    ]
   },
   {
     "id": "u36-0256",
@@ -6456,7 +7228,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      75,
+      87
+    ]
   },
   {
     "id": "u36-0257",
@@ -6487,7 +7263,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      70,
+      81
+    ]
   },
   {
     "id": "u36-0258",
@@ -6517,7 +7297,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      56
+    ]
   },
   {
     "id": "u36-0259",
@@ -6549,7 +7333,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      60,
+      72
+    ]
   },
   {
     "id": "u36-0260",
@@ -6578,7 +7366,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      50
+    ]
   },
   {
     "id": "u36-0261",
@@ -6610,7 +7402,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      48
+    ]
   },
   {
     "id": "u36-0262",
@@ -6638,7 +7434,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      50
+    ]
   },
   {
     "id": "u36-0263",
@@ -6665,7 +7465,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u36-0264",
@@ -6696,7 +7500,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      70,
+      82
+    ]
   },
   {
     "id": "u36-0265",
@@ -6729,7 +7537,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u36-0266",
@@ -6757,7 +7569,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      38
+    ]
   },
   {
     "id": "u36-0267",
@@ -6790,7 +7606,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      60
+    ]
   },
   {
     "id": "u36-0268",
@@ -6821,7 +7641,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      60
+    ]
   },
   {
     "id": "u36-0269",
@@ -6849,7 +7673,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      48
+    ]
   },
   {
     "id": "u36-0270",
@@ -6876,7 +7704,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      41
+    ]
   },
   {
     "id": "u36-0271",
@@ -6905,7 +7737,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      53
+    ]
   },
   {
     "id": "u36-0272",
@@ -6932,7 +7768,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      36
+    ]
   },
   {
     "id": "u36-0273",
@@ -6964,7 +7804,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      65
+    ]
   },
   {
     "id": "u36-0274",
@@ -6996,7 +7840,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      55
+    ]
   },
   {
     "id": "u36-0275",
@@ -7024,7 +7872,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      67
+    ]
   },
   {
     "id": "u36-0276",
@@ -7053,7 +7905,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u36-0277",
@@ -7082,7 +7938,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u36-0278",
@@ -7112,7 +7972,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u36-0279",
@@ -7139,7 +8003,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      53,
+      65
+    ]
   },
   {
     "id": "u36-0280",
@@ -7167,7 +8035,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      58,
+      69
+    ]
   },
   {
     "id": "u36-0281",
@@ -7197,7 +8069,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u36-0282",
@@ -7222,7 +8098,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u36-0283",
@@ -7256,7 +8136,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      64,
+      77
+    ]
   },
   {
     "id": "u36-0284",
@@ -7287,7 +8171,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      46
+    ]
   },
   {
     "id": "u36-0285",
@@ -7321,7 +8209,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      57,
+      68
+    ]
   },
   {
     "id": "u36-0286",
@@ -7353,7 +8245,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      63,
+      76
+    ]
   },
   {
     "id": "u36-0287",
@@ -7382,7 +8278,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      60,
+      71
+    ]
   },
   {
     "id": "u36-0288",
@@ -7409,7 +8309,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      40
+    ]
   },
   {
     "id": "u36-0289",
@@ -7436,7 +8340,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      44
+    ]
   },
   {
     "id": "u36-0290",
@@ -7469,7 +8377,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      57
+    ]
   },
   {
     "id": "u36-0291",
@@ -7498,7 +8410,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      68
+    ]
   },
   {
     "id": "u36-0292",
@@ -7522,7 +8438,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      53,
+      65
+    ]
   },
   {
     "id": "u36-0293",
@@ -7550,7 +8470,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      43
+    ]
   },
   {
     "id": "u36-0294",
@@ -7583,7 +8507,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      60
+    ]
   },
   {
     "id": "u36-0295",
@@ -7608,7 +8536,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u36-0296",
@@ -7638,7 +8570,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      61
+    ]
   },
   {
     "id": "u36-0297",
@@ -7664,7 +8600,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u36-0298",
@@ -7692,7 +8632,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u36-0299",
@@ -7723,7 +8667,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      53
+    ]
   },
   {
     "id": "u36-0300",
@@ -7752,7 +8700,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      54
+    ]
   },
   {
     "id": "u36-0301",
@@ -7787,7 +8739,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      41
+    ]
   },
   {
     "id": "u36-0302",
@@ -7817,7 +8773,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      51
+    ]
   },
   {
     "id": "u36-0303",
@@ -7846,7 +8806,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      71,
+      83
+    ]
   },
   {
     "id": "u36-0304",
@@ -7872,7 +8836,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u36-0305",
@@ -7901,7 +8869,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u36-0306",
@@ -7933,7 +8905,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      58
+    ]
   },
   {
     "id": "u36-0307",
@@ -7963,7 +8939,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      46
+    ]
   },
   {
     "id": "u36-0308",
@@ -7994,7 +8974,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      65
+    ]
   },
   {
     "id": "u36-0309",
@@ -8021,7 +9005,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u36-0310",
@@ -8046,7 +9034,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      41
+    ]
   },
   {
     "id": "u36-0311",
@@ -8074,7 +9066,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      63
+    ]
   },
   {
     "id": "u36-0312",
@@ -8104,7 +9100,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u36-0313",
@@ -8132,7 +9132,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u36-0314",
@@ -8161,7 +9165,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      58
+    ]
   },
   {
     "id": "u36-0315",
@@ -8192,7 +9200,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      44
+    ]
   },
   {
     "id": "u36-0316",
@@ -8230,7 +9242,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      60
+    ]
   },
   {
     "id": "u36-0317",
@@ -8258,7 +9274,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      59
+    ]
   },
   {
     "id": "u36-0318",
@@ -8286,7 +9306,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u36-0319",
@@ -8315,7 +9339,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u36-0320",
@@ -8343,7 +9371,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      66
+    ]
   },
   {
     "id": "u36-0321",
@@ -8371,7 +9403,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      53
+    ]
   },
   {
     "id": "u36-0322",
@@ -8398,7 +9434,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      35
+    ]
   },
   {
     "id": "u36-0323",
@@ -8424,7 +9464,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u36-0324",
@@ -8455,7 +9499,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      54
+    ]
   },
   {
     "id": "u36-0325",
@@ -8485,7 +9533,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      48
+    ]
   },
   {
     "id": "u36-0326",
@@ -8511,7 +9563,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u36-0327",
@@ -8535,7 +9591,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      53
+    ]
   },
   {
     "id": "u36-0328",
@@ -8563,7 +9623,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u36-0329",
@@ -8590,7 +9654,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      45
+    ]
   },
   {
     "id": "u36-0330",
@@ -8624,7 +9692,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      54
+    ]
   },
   {
     "id": "u36-0331",
@@ -8662,7 +9734,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      64
+    ]
   },
   {
     "id": "u36-0332",
@@ -8690,7 +9766,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      42
+    ]
   },
   {
     "id": "u36-0333",
@@ -8717,7 +9797,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      47
+    ]
   },
   {
     "id": "u36-0334",
@@ -8745,7 +9829,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      35
+    ]
   },
   {
     "id": "u36-0335",
@@ -8774,7 +9862,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      37
+    ]
   },
   {
     "id": "u36-0336",
@@ -8803,7 +9895,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      43
+    ]
   },
   {
     "id": "u36-0337",
@@ -8835,7 +9931,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      62,
+      74
+    ]
   },
   {
     "id": "u36-0338",
@@ -8859,7 +9959,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      63
+    ]
   },
   {
     "id": "u36-0339",
@@ -8888,7 +9992,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      45
+    ]
   },
   {
     "id": "u36-0340",
@@ -8915,7 +10023,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      46
+    ]
   },
   {
     "id": "u36-0341",
@@ -8944,7 +10056,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "consequences and results",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u36-0342",
@@ -8976,7 +10092,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      36
+    ]
   },
   {
     "id": "u36-0343",
@@ -9001,7 +10121,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u36-0344",
@@ -9029,7 +10153,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      38
+    ]
   },
   {
     "id": "u36-0345",
@@ -9052,7 +10180,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u36-0346",
@@ -9076,7 +10208,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0347",
@@ -9104,7 +10240,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      63
+    ]
   },
   {
     "id": "u36-0348",
@@ -9125,7 +10265,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u36-0349",
@@ -9148,7 +10292,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u36-0350",
@@ -9173,7 +10321,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u36-0351",
@@ -9196,7 +10348,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u36-0352",
@@ -9222,7 +10378,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u36-0353",
@@ -9247,7 +10407,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      30
+    ]
   },
   {
     "id": "u36-0354",
@@ -9271,7 +10435,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u36-0355",
@@ -9294,7 +10462,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0356",
@@ -9320,7 +10492,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u36-0357",
@@ -9346,7 +10522,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0358",
@@ -9371,7 +10551,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u36-0359",
@@ -9395,7 +10579,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u36-0360",
@@ -9422,7 +10610,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u36-0361",
@@ -9542,7 +10734,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u36-0366",
@@ -9571,7 +10767,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      19
+    ]
   },
   {
     "id": "u36-0367",
@@ -9598,7 +10798,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      42
+    ]
   },
   {
     "id": "u36-0368",
@@ -9623,7 +10827,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u36-0369",
@@ -9647,7 +10855,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u36-0370",
@@ -9671,7 +10883,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u36-0371",
@@ -9694,7 +10910,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u36-0372",
@@ -9718,7 +10938,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u36-0373",
@@ -9766,7 +10990,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u36-0375",
@@ -9789,7 +11017,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u36-0376",
@@ -9815,7 +11047,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u36-0377",
@@ -9839,7 +11075,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u36-0378",
@@ -9861,7 +11101,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u36-0379",
@@ -9884,7 +11128,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u36-0380",
@@ -9909,7 +11157,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u36-0381",
@@ -9938,7 +11190,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u36-0382",
@@ -9961,7 +11217,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u36-0383",
@@ -9985,7 +11245,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u36-0384",
@@ -10039,7 +11303,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u36-0386",
@@ -10066,7 +11334,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u36-0387",
@@ -10092,7 +11364,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u36-0388",
@@ -10116,7 +11392,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u36-0389",
@@ -10137,7 +11417,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      26
+    ]
   },
   {
     "id": "u36-0390",
@@ -10160,7 +11444,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      53
+    ]
   },
   {
     "id": "u36-0391",
@@ -10184,7 +11472,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u36-0392",
@@ -10209,7 +11501,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u36-0393",
@@ -10232,7 +11528,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u36-0394",
@@ -10257,7 +11557,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      40
+    ]
   },
   {
     "id": "u36-0395",
@@ -10281,7 +11585,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u36-0396",
@@ -10305,7 +11613,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0397",
@@ -10331,7 +11643,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u36-0398",
@@ -10355,7 +11671,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u36-0399",
@@ -10381,7 +11701,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u36-0400",
@@ -10408,7 +11732,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      48
+    ]
   },
   {
     "id": "u36-0401",
@@ -10433,7 +11761,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u36-0402",
@@ -10459,7 +11791,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u36-0403",
@@ -10484,7 +11820,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0404",
@@ -10512,7 +11852,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0405",
@@ -10539,7 +11883,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      44
+    ]
   },
   {
     "id": "u36-0406",
@@ -10564,7 +11912,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0407",
@@ -10588,7 +11940,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0408",
@@ -10613,7 +11969,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u36-0409",
@@ -10635,7 +11995,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u36-0410",
@@ -10658,7 +12022,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u36-0411",
@@ -10707,7 +12075,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u36-0413",
@@ -10737,7 +12109,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u36-0414",
@@ -10763,7 +12139,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      32
+    ]
   },
   {
     "id": "u36-0415",
@@ -10787,7 +12167,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u36-0416",
@@ -10833,7 +12217,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0418",
@@ -10856,7 +12244,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u36-0419",
@@ -10880,7 +12272,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u36-0420",
@@ -10906,7 +12302,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u36-0421",
@@ -10929,7 +12329,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u36-0422",
@@ -10952,7 +12356,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u36-0423",
@@ -10973,7 +12381,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u36-0424",
@@ -10999,7 +12411,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u36-0425",
@@ -11250,7 +12666,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u36-0436",
@@ -11384,7 +12804,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u36-0442",
@@ -11452,7 +12876,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u36-0445",
@@ -11476,7 +12904,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0446",
@@ -11598,7 +13030,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u36-0451",
@@ -11621,7 +13057,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u36-0452",
@@ -11646,7 +13086,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      17
+    ]
   },
   {
     "id": "u36-0453",
@@ -11672,7 +13116,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0454",
@@ -11700,7 +13148,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0455",
@@ -11726,7 +13178,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0456",
@@ -11761,7 +13217,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "comparing figures",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      16
+    ]
   },
   {
     "id": "u36-0457",
@@ -11791,7 +13251,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      39
+    ]
   },
   {
     "id": "u36-0458",
@@ -11815,7 +13279,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      20
+    ]
   },
   {
     "id": "u36-0459",
@@ -11865,7 +13333,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0461",
@@ -11892,7 +13364,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0462",
@@ -11918,7 +13394,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u36-0463",
@@ -11947,7 +13427,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u36-0464",
@@ -11973,7 +13457,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0465",
@@ -11996,7 +13484,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u36-0466",
@@ -12020,7 +13512,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u36-0467",
@@ -12043,7 +13539,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u36-0468",
@@ -12069,7 +13569,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0469",
@@ -12093,7 +13597,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      20
+    ]
   },
   {
     "id": "u36-0470",
@@ -12124,7 +13632,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u36-0471",
@@ -12150,7 +13662,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u36-0472",
@@ -12175,7 +13691,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u36-0473",
@@ -12199,7 +13719,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0474",
@@ -12227,7 +13751,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0475",
@@ -12251,7 +13779,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0476",
@@ -12277,7 +13809,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0477",
@@ -12304,7 +13840,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u36-0478",
@@ -12331,7 +13871,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      51
+    ]
   },
   {
     "id": "u36-0479",
@@ -12359,7 +13903,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      43
+    ]
   },
   {
     "id": "u36-0480",
@@ -12387,7 +13935,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0481",
@@ -12420,7 +13972,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u36-0482",
@@ -12446,7 +14002,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0483",
@@ -12475,7 +14035,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0484",
@@ -12499,7 +14063,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u36-0485",
@@ -12550,7 +14118,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0487",
@@ -12573,7 +14145,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0488",
@@ -12596,7 +14172,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u36-0489",
@@ -12620,7 +14200,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0490",
@@ -12645,7 +14229,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0491",
@@ -12669,7 +14257,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0492",
@@ -12718,7 +14310,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0494",
@@ -12742,7 +14338,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0495",
@@ -12766,7 +14366,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0496",
@@ -12789,7 +14393,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u36-0497",
@@ -12837,7 +14445,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0499",
@@ -12886,7 +14498,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u36-0501",
@@ -12909,7 +14525,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u36-0502",
@@ -12938,7 +14558,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u36-0503",
@@ -12963,7 +14587,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0504",
@@ -12986,7 +14614,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u36-0505",
@@ -13011,7 +14643,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u36-0506",
@@ -13035,7 +14671,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      33
+    ]
   },
   {
     "id": "u36-0507",
@@ -13059,7 +14699,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u36-0508",
@@ -13084,7 +14728,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u36-0509",
@@ -13113,7 +14761,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u36-0510",
@@ -13140,7 +14792,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      49
+    ]
   },
   {
     "id": "u36-0511",
@@ -13167,7 +14823,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u36-0512",
@@ -13192,7 +14852,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u36-0513",
@@ -13218,7 +14882,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u36-0514",
@@ -13242,7 +14910,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u36-0515",
@@ -13269,7 +14941,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u36-0516",
@@ -13299,7 +14975,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      44
+    ]
   },
   {
     "id": "u36-0517",
@@ -13324,7 +15004,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      33
+    ]
   },
   {
     "id": "u36-0518",
@@ -13351,7 +15035,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u36-0519",
@@ -13374,7 +15062,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      24
+    ]
   },
   {
     "id": "u36-0520",
@@ -13398,7 +15090,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u36-0521",
@@ -13423,7 +15119,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      32
+    ]
   },
   {
     "id": "u36-0522",
@@ -13447,7 +15147,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u36-0523",
@@ -13470,7 +15174,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u36-0524",
@@ -13521,7 +15229,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u36-0526",
@@ -13545,7 +15257,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u36-0527",
@@ -13570,7 +15286,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u36-0528",
@@ -13627,7 +15347,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      52
+    ]
   },
   {
     "id": "u36-0530",
@@ -13676,7 +15400,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      31
+    ]
   },
   {
     "id": "u36-0532",
@@ -13705,7 +15433,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u36-0533",
@@ -13732,7 +15464,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0534",
@@ -13761,7 +15497,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      57
+    ]
   },
   {
     "id": "u36-0535",
@@ -13791,7 +15531,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      48
+    ]
   },
   {
     "id": "u36-0536",
@@ -13819,7 +15563,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      32
+    ]
   },
   {
     "id": "u36-0537",
@@ -13845,7 +15593,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      34
+    ]
   },
   {
     "id": "u36-0538",
@@ -13870,7 +15622,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      32
+    ]
   },
   {
     "id": "u36-0539",
@@ -13895,7 +15651,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      26
+    ]
   },
   {
     "id": "u36-0540",
@@ -13922,7 +15682,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u36-0541",
@@ -13948,7 +15712,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      28
+    ]
   },
   {
     "id": "u36-0542",
@@ -13982,7 +15750,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      58
+    ]
   },
   {
     "id": "u36-0543",
@@ -14009,7 +15781,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      44
+    ]
   },
   {
     "id": "u36-0544",
@@ -14034,7 +15810,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      30
+    ]
   },
   {
     "id": "u36-0545",
@@ -14063,7 +15843,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      40
+    ]
   },
   {
     "id": "u36-0546",
@@ -14089,7 +15873,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      33
+    ]
   },
   {
     "id": "u36-0547",
@@ -14114,7 +15902,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u36-0548",
@@ -14139,7 +15931,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      30
+    ]
   },
   {
     "id": "u36-0549",
@@ -14171,7 +15967,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      50
+    ]
   },
   {
     "id": "u36-0550",
@@ -14202,7 +16002,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      52
+    ]
   },
   {
     "id": "u36-0551",
@@ -14249,7 +16053,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u36-0553",
@@ -14274,7 +16082,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u36-0554",
@@ -14338,7 +16150,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u36-0557",
@@ -14413,7 +16229,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      34
+    ]
   },
   {
     "id": "u36-0560",
@@ -14457,7 +16277,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u36-0562",
@@ -14504,7 +16328,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u36-0564",
@@ -14532,7 +16360,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u36-0565",
@@ -14554,7 +16386,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u36-0566",
@@ -14582,7 +16418,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      39
+    ]
   },
   {
     "id": "u36-0567",
@@ -14606,7 +16446,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u36-0568",
@@ -14628,7 +16472,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u36-0569",
@@ -14653,7 +16501,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u36-0570",
@@ -14679,7 +16531,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u36-0571",
@@ -14706,7 +16562,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u36-0572",
@@ -14731,7 +16591,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u36-0573",
@@ -14755,7 +16619,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u36-0574",
@@ -14782,7 +16650,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      31
+    ]
   },
   {
     "id": "u36-0575",
@@ -14811,7 +16683,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      52
+    ]
   },
   {
     "id": "u36-0576",
@@ -14840,7 +16716,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      49
+    ]
   },
   {
     "id": "u36-0577",
@@ -14901,7 +16781,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u36-0580",
@@ -14924,7 +16808,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u36-0581",
@@ -14971,7 +16859,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u36-0583",
@@ -14995,7 +16887,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      21
+    ]
   },
   {
     "id": "u36-0584",
@@ -15024,7 +16920,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u36-0585",
@@ -15073,7 +16973,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "most of, half of, more than expected",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u36-0587",
@@ -15118,7 +17022,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      44
+    ]
   },
   {
     "id": "u36-0589",
@@ -15147,7 +17055,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      40
+    ]
   },
   {
     "id": "u36-0590",
@@ -15174,7 +17086,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u36-0591",
@@ -15201,7 +17117,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u36-0592",
@@ -15230,7 +17150,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u36-0593",
@@ -15257,7 +17181,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      39
+    ]
   },
   {
     "id": "u36-0594",
@@ -15287,7 +17215,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      37
+    ]
   },
   {
     "id": "u36-0595",
@@ -15318,7 +17250,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      28
+    ]
   },
   {
     "id": "u36-0596",
@@ -15348,7 +17284,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      44
+    ]
   },
   {
     "id": "u36-0597",
@@ -15378,7 +17318,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      51
+    ]
   },
   {
     "id": "u36-0598",
@@ -15407,7 +17351,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0599",
@@ -15435,7 +17383,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u36-0600",
@@ -15467,7 +17419,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0601",
@@ -15497,7 +17453,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u36-0602",
@@ -15524,7 +17484,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0603",
@@ -15552,7 +17516,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0604",
@@ -15607,7 +17575,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0606",
@@ -15630,7 +17602,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u36-0607",
@@ -15655,7 +17631,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u36-0608",
@@ -15679,7 +17659,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u36-0609",
@@ -15703,7 +17687,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u36-0610",
@@ -15730,7 +17718,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u36-0611",
@@ -15754,7 +17746,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u36-0612",
@@ -15779,7 +17775,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u36-0613",
@@ -15803,7 +17803,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      35
+    ]
   },
   {
     "id": "u36-0614",
@@ -15828,7 +17832,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      34
+    ]
   },
   {
     "id": "u36-0615",
@@ -15856,7 +17864,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      55,
+      63
+    ]
   },
   {
     "id": "u36-0616",
@@ -15881,7 +17893,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u36-0617",
@@ -15951,7 +17967,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      52
+    ]
   },
   {
     "id": "u36-0620",
@@ -15976,7 +17996,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      56
+    ]
   },
   {
     "id": "u36-0621",
@@ -15999,7 +18023,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      43
+    ]
   },
   {
     "id": "u36-0622",
@@ -16024,7 +18052,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u36-0623",
@@ -16051,7 +18083,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      51
+    ]
   },
   {
     "id": "u36-0624",
@@ -16073,7 +18109,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u36-0625",
@@ -16099,7 +18139,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      47
+    ]
   },
   {
     "id": "u36-0626",
@@ -16126,7 +18170,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u36-0627",
@@ -16148,7 +18196,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u36-0628",
@@ -16171,7 +18223,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u36-0629",
@@ -16198,7 +18254,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0630",
@@ -16223,7 +18283,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0631",
@@ -16254,7 +18318,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      42
+    ]
   },
   {
     "id": "u36-0632",
@@ -16283,7 +18351,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u36-0633",
@@ -16310,7 +18382,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      47
+    ]
   },
   {
     "id": "u36-0634",
@@ -16335,7 +18411,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      27
+    ]
   },
   {
     "id": "u36-0635",
@@ -16358,7 +18438,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u36-0636",
@@ -16383,7 +18467,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0637",
@@ -16409,7 +18497,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      35
+    ]
   },
   {
     "id": "u36-0638",
@@ -16434,7 +18526,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u36-0639",
@@ -16458,7 +18554,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      35
+    ]
   },
   {
     "id": "u36-0640",
@@ -16483,7 +18583,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0641",
@@ -16508,7 +18612,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0642",
@@ -16536,7 +18644,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      52
+    ]
   },
   {
     "id": "u36-0643",
@@ -16559,7 +18671,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0644",
@@ -16587,7 +18703,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0645",
@@ -16610,7 +18730,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0646",
@@ -16636,7 +18760,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u36-0647",
@@ -16661,7 +18789,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u36-0648",
@@ -16688,7 +18820,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u36-0649",
@@ -16714,7 +18850,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u36-0650",
@@ -16740,7 +18880,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      46
+    ]
   },
   {
     "id": "u36-0651",
@@ -16764,7 +18908,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u36-0652",
@@ -16792,7 +18940,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      45
+    ]
   },
   {
     "id": "u36-0653",
@@ -16819,7 +18971,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u36-0654",
@@ -16845,7 +19001,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u36-0655",
@@ -16873,7 +19033,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "stock, offers and bargains",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u36-0656",
@@ -16901,7 +19065,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0657",
@@ -16936,7 +19104,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      74,
+      80
+    ]
   },
   {
     "id": "u36-0658",
@@ -16963,7 +19135,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u36-0659",
@@ -16990,7 +19166,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      49
+    ]
   },
   {
     "id": "u36-0660",
@@ -17017,7 +19197,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      41
+    ]
   },
   {
     "id": "u36-0661",
@@ -17050,7 +19234,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u36-0662",
@@ -17075,7 +19263,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u36-0663",
@@ -17103,7 +19295,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      45
+    ]
   },
   {
     "id": "u36-0664",
@@ -17128,7 +19324,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u36-0665",
@@ -17155,7 +19355,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u36-0666",
@@ -17183,7 +19387,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u36-0667",
@@ -17213,7 +19421,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      58
+    ]
   },
   {
     "id": "u36-0668",
@@ -17243,7 +19455,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      49
+    ]
   },
   {
     "id": "u36-0669",
@@ -17269,7 +19485,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u36-0670",
@@ -17300,7 +19520,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      52
+    ]
   },
   {
     "id": "u36-0671",
@@ -17328,7 +19552,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0672",
@@ -17354,7 +19582,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0673",
@@ -17382,7 +19614,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u36-0674",
@@ -17408,7 +19644,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      22
+    ]
   },
   {
     "id": "u36-0675",
@@ -17442,7 +19682,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      51
+    ]
   },
   {
     "id": "u36-0676",
@@ -17468,7 +19712,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0677",
@@ -17495,7 +19743,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      60
+    ]
   },
   {
     "id": "u36-0678",
@@ -17521,7 +19773,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      22
+    ]
   },
   {
     "id": "u36-0679",
@@ -17548,7 +19804,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      49
+    ]
   },
   {
     "id": "u36-0680",
@@ -17580,7 +19840,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      62
+    ]
   },
   {
     "id": "u36-0681",
@@ -17608,7 +19872,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      49
+    ]
   },
   {
     "id": "u36-0682",
@@ -17634,7 +19902,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      35
+    ]
   },
   {
     "id": "u36-0683",
@@ -17664,7 +19936,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u36-0684",
@@ -17694,7 +19970,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u36-0685",
@@ -17720,7 +20000,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u36-0686",
@@ -17751,7 +20035,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u36-0687",
@@ -17783,7 +20071,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      44
+    ]
   },
   {
     "id": "u36-0688",
@@ -17811,7 +20103,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      55
+    ]
   },
   {
     "id": "u36-0689",
@@ -17840,7 +20136,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      46
+    ]
   },
   {
     "id": "u36-0690",
@@ -17867,7 +20167,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      50
+    ]
   },
   {
     "id": "u36-0691",
@@ -17893,7 +20197,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u36-0692",
@@ -17918,7 +20226,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u36-0693",
@@ -17945,7 +20257,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u36-0694",
@@ -17976,7 +20292,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u36-0695",
@@ -18002,7 +20322,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u36-0696",
@@ -18026,7 +20350,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0697",
@@ -18059,7 +20387,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      49
+    ]
   },
   {
     "id": "u36-0698",
@@ -18112,7 +20444,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u36-0700",
@@ -18166,7 +20502,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0702",
@@ -18194,7 +20534,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      30
+    ]
   },
   {
     "id": "u36-0703",
@@ -18274,7 +20618,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0706",
@@ -18369,7 +20717,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u36-0710",
@@ -18416,7 +20768,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u36-0712",
@@ -18464,7 +20820,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u36-0714",
@@ -18492,7 +20852,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u36-0715",
@@ -18753,7 +21117,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      23
+    ]
   },
   {
     "id": "u36-0726",
@@ -18778,7 +21146,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "the crowdfunding week",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      45
+    ]
   },
   {
     "id": "u36-0727",
@@ -18808,7 +21180,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      37
+    ]
   },
   {
     "id": "u36-0728",
@@ -18830,7 +21206,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u36-0729",
@@ -18858,7 +21238,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      58,
+      65
+    ]
   },
   {
     "id": "u36-0730",
@@ -18904,7 +21288,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u36-0732",
@@ -18932,7 +21320,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      55,
+      64
+    ]
   },
   {
     "id": "u36-0733",
@@ -18965,7 +21357,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      76,
+      86
+    ]
   },
   {
     "id": "u36-0734",
@@ -18990,7 +21386,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u36-0735",
@@ -19014,7 +21414,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u36-0736",
@@ -19040,7 +21444,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u36-0737",
@@ -19065,7 +21473,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u36-0738",
@@ -19099,7 +21511,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      48
+    ]
   },
   {
     "id": "u36-0739",
@@ -19125,7 +21541,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u36-0740",
@@ -19152,7 +21572,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      60,
+      67
+    ]
   },
   {
     "id": "u36-0741",
@@ -19181,7 +21605,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u36-0742",
@@ -19205,7 +21633,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u36-0743",
@@ -19228,7 +21660,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u36-0744",
@@ -19256,7 +21692,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0745",
@@ -19284,7 +21724,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      52
+    ]
   },
   {
     "id": "u36-0746",
@@ -19318,7 +21762,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u36-0747",
@@ -19344,7 +21792,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u36-0748",
@@ -19368,7 +21820,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u36-0749",
@@ -19399,7 +21855,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u36-0750",
@@ -19423,7 +21883,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u36-0751",
@@ -19447,7 +21911,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u36-0752",
@@ -19471,7 +21939,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u36-0753",
@@ -19497,7 +21969,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u36-0754",
@@ -19520,7 +21996,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u36-0755",
@@ -19549,7 +22029,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      39
+    ]
   },
   {
     "id": "u36-0756",
@@ -19575,7 +22059,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u36-0757",
@@ -19598,7 +22086,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u36-0758",
@@ -19624,7 +22116,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u36-0759",
@@ -19651,7 +22147,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u36-0760",
@@ -19677,7 +22177,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u36-0761",
@@ -19703,7 +22207,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u36-0762",
@@ -19729,7 +22237,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      19
+    ]
   },
   {
     "id": "u36-0763",
@@ -19760,7 +22272,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      52,
+      60
+    ]
   },
   {
     "id": "u36-0764",
@@ -19790,7 +22306,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      65,
+      73
+    ]
   },
   {
     "id": "u36-0765",
@@ -19812,7 +22332,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u36-0766",
@@ -19839,7 +22363,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      44
+    ]
   },
   {
     "id": "u36-0767",
@@ -19868,7 +22396,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      34
+    ]
   },
   {
     "id": "u36-0768",
@@ -19893,7 +22425,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u36-0769",
@@ -19916,7 +22452,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u36-0770",
@@ -19941,7 +22481,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u36-0771",
@@ -19970,7 +22514,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u36-0772",
@@ -19994,7 +22542,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u36-0773",
@@ -20024,7 +22576,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u36-0774",
@@ -20048,7 +22604,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u36-0775",
@@ -20073,7 +22633,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u36-0776",
@@ -20102,7 +22666,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u36-0777",
@@ -20129,7 +22697,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u36-0778",
@@ -20158,7 +22730,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u36-0779",
@@ -20183,7 +22759,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u36-0780",
@@ -20210,7 +22790,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u36-0781",
@@ -20234,7 +22818,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u36-0782",
@@ -20256,7 +22844,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u36-0783",
@@ -20286,7 +22878,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      37
+    ]
   },
   {
     "id": "u36-0784",
@@ -20308,7 +22904,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u36-0785",
@@ -20333,7 +22933,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      15
+    ]
   },
   {
     "id": "u36-0786",
@@ -20358,7 +22962,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u36-0787",
@@ -20383,7 +22991,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      48
+    ]
   },
   {
     "id": "u36-0788",
@@ -20410,7 +23022,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u36-0789",
@@ -20436,7 +23052,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      41
+    ]
   },
   {
     "id": "u36-0790",
@@ -20464,7 +23084,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      61,
+      76
+    ]
   },
   {
     "id": "u36-0791",
@@ -20493,7 +23117,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u36-0792",
@@ -20518,7 +23146,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u36-0793",
@@ -20542,7 +23174,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u36-0794",
@@ -20567,7 +23203,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u36-0795",
@@ -20597,7 +23237,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      52
+    ]
   },
   {
     "id": "u36-0796",
@@ -20620,7 +23264,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u36-0797",
@@ -20644,7 +23292,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      42
+    ]
   },
   {
     "id": "u36-0798",
@@ -20668,7 +23320,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u36-0799",
@@ -20689,7 +23345,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      30
+    ]
   },
   {
     "id": "u36-0800",
@@ -20713,7 +23373,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      49
+    ]
   },
   {
     "id": "u36-0801",
@@ -20734,7 +23398,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u36-0802",
@@ -20761,7 +23429,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u36-0803",
@@ -20785,7 +23457,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u36-0804",
@@ -20810,7 +23486,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u36-0805",
@@ -20837,7 +23517,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      50,
+      59
+    ]
   },
   {
     "id": "u36-0806",
@@ -20862,7 +23546,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u36-0807",
@@ -20886,7 +23574,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u36-0808",
@@ -20917,7 +23609,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u36-0809",
@@ -20942,7 +23638,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u36-0810",
@@ -20964,7 +23664,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u36-0811",
@@ -20990,7 +23694,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u36-0812",
@@ -21018,7 +23726,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u36-0813",
@@ -21043,7 +23755,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u36-0814",
@@ -21064,7 +23780,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u36-0815",
@@ -21088,7 +23808,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u36-0816",
@@ -21115,7 +23839,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      42
+    ]
   },
   {
     "id": "u36-0817",
@@ -21139,7 +23867,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u36-0818",
@@ -21163,7 +23895,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u36-0819",
@@ -21186,7 +23922,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u36-0820",
@@ -21219,7 +23959,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u36-0821",
@@ -21245,7 +23989,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u36-0822",
@@ -21267,7 +24015,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u36-0823",
@@ -21294,7 +24046,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u36-0824",
@@ -21321,7 +24077,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u36-0825",
@@ -21348,7 +24108,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u36-0826",
@@ -21373,7 +24137,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u36-0827",
@@ -21399,7 +24167,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      43
+    ]
   },
   {
     "id": "u36-0828",
@@ -21422,7 +24194,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u36-0829",
@@ -21444,7 +24220,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u36-0830",
@@ -21469,7 +24249,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u36-0831",
@@ -21495,7 +24279,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u36-0832",
@@ -21519,7 +24307,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u36-0833",
@@ -21543,7 +24335,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u36-0834",
@@ -21569,7 +24365,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      34
+    ]
   },
   {
     "id": "u36-0835",
@@ -21592,7 +24392,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u36-0836",
@@ -21621,7 +24425,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      44
+    ]
   },
   {
     "id": "u36-0837",
@@ -21643,7 +24451,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u36-0838",
@@ -21666,7 +24478,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u36-0839",
@@ -21691,7 +24507,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u36-0840",
@@ -21724,7 +24544,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u36-0841",
@@ -21747,7 +24571,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u36-0842",
@@ -21769,7 +24597,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u36-0843",
@@ -21791,7 +24623,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u36-0844",
@@ -21814,7 +24650,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u36-0845",
@@ -21837,7 +24677,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      37
+    ]
   },
   {
     "id": "u36-0846",
@@ -21865,7 +24709,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u36-0847",
@@ -21892,7 +24740,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u36-0848",
@@ -21916,7 +24768,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u36-0849",
@@ -21942,7 +24798,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      45
+    ]
   },
   {
     "id": "u36-0850",
@@ -21966,7 +24826,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u36-0851",
@@ -21989,7 +24853,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u36-0852",
@@ -22010,7 +24878,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0853",
@@ -22033,7 +24905,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0854",
@@ -22085,7 +24961,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      52
+    ]
   },
   {
     "id": "u36-0856",
@@ -22106,7 +24986,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u36-0857",
@@ -22133,7 +25017,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      48,
+      57
+    ]
   },
   {
     "id": "u36-0858",
@@ -22157,7 +25045,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u36-0859",
@@ -22180,7 +25072,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u36-0860",
@@ -22213,7 +25109,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u36-0861",
@@ -22234,7 +25134,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "work, sport and the wider world",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u36-0862",
@@ -22260,7 +25164,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0863",
@@ -22287,7 +25195,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0864",
@@ -22311,7 +25223,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0865",
@@ -22338,7 +25254,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u36-0866",
@@ -22361,7 +25281,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0867",
@@ -22387,7 +25311,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0868",
@@ -22414,7 +25342,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u36-0869",
@@ -22441,7 +25373,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      53
+    ]
   },
   {
     "id": "u36-0870",
@@ -22473,7 +25409,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0871",
@@ -22499,7 +25439,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0872",
@@ -22565,7 +25509,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u36-0875",
@@ -22612,7 +25560,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u36-0877",
@@ -22644,7 +25596,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u36-0878",
@@ -22667,7 +25623,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0879",
@@ -22692,7 +25652,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0880",
@@ -22717,7 +25681,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      41
+    ]
   },
   {
     "id": "u36-0881",
@@ -22745,7 +25713,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      48
+    ]
   },
   {
     "id": "u36-0882",
@@ -22768,7 +25740,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u36-0883",
@@ -22794,7 +25770,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      42
+    ]
   },
   {
     "id": "u36-0884",
@@ -22816,7 +25796,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u36-0885",
@@ -22842,7 +25826,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u36-0886",
@@ -22871,7 +25859,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u36-0887",
@@ -22894,7 +25886,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u36-0888",
@@ -22943,7 +25939,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u36-0890",
@@ -22969,7 +25969,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0891",
@@ -22994,7 +25998,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0892",
@@ -23020,7 +26028,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u36-0893",
@@ -23041,7 +26053,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u36-0894",
@@ -23061,7 +26077,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u36-0895",
@@ -23129,7 +26149,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u36-0898",
@@ -23153,7 +26177,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u36-0899",
@@ -23186,7 +26214,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u36-0900",
@@ -23212,7 +26244,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      52
+    ]
   },
   {
     "id": "u36-0901",
@@ -23235,7 +26271,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u36-0902",
@@ -23264,7 +26304,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      70
+    ]
   },
   {
     "id": "u36-0903",
@@ -23293,7 +26337,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      56
+    ]
   },
   {
     "id": "u36-0904",
@@ -23322,7 +26370,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u36-0905",
@@ -23377,7 +26429,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u36-0907",
@@ -23427,7 +26483,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u36-0909",
@@ -23456,7 +26516,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      25
+    ]
   },
   {
     "id": "u36-0910",
@@ -23483,7 +26547,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      19
+    ]
   },
   {
     "id": "u36-0911",
@@ -23513,7 +26581,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0912",
@@ -23564,7 +26636,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u36-0914",
@@ -23590,7 +26666,11 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u36-0915",
@@ -23616,7 +26696,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u36-0916",
@@ -23642,7 +26726,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      44
+    ]
   },
   {
     "id": "u36-0917",
@@ -23672,7 +26760,11 @@
     "kind": "question",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u36-0918",
@@ -23696,7 +26788,11 @@
     "kind": "statement",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u36-0919",
@@ -23725,6 +26821,10 @@
     "kind": "dialogue",
     "unit": "u36",
     "theme": "last small gaps",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   }
 ]

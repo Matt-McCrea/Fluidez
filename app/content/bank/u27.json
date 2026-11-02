@@ -20,7 +20,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0002",
@@ -42,7 +46,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u27-0003",
@@ -64,7 +72,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u27-0004",
@@ -86,7 +98,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0005",
@@ -108,7 +124,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u27-0006",
@@ -130,7 +150,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u27-0007",
@@ -152,7 +176,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0008",
@@ -174,7 +202,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u27-0009",
@@ -196,7 +228,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u27-0010",
@@ -222,7 +258,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      34
+    ]
   },
   {
     "id": "u27-0011",
@@ -244,7 +284,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0012",
@@ -267,7 +311,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u27-0013",
@@ -289,7 +337,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      20
+    ]
   },
   {
     "id": "u27-0014",
@@ -310,7 +362,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0015",
@@ -332,7 +388,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0016",
@@ -355,7 +415,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      29
+    ]
   },
   {
     "id": "u27-0017",
@@ -377,7 +441,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      30
+    ]
   },
   {
     "id": "u27-0018",
@@ -399,7 +467,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u27-0019",
@@ -425,7 +497,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0020",
@@ -450,7 +526,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      28
+    ]
   },
   {
     "id": "u27-0021",
@@ -472,7 +552,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0022",
@@ -494,7 +578,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0023",
@@ -517,7 +605,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0024",
@@ -541,7 +633,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      28
+    ]
   },
   {
     "id": "u27-0025",
@@ -564,7 +660,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0026",
@@ -588,7 +688,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      27
+    ]
   },
   {
     "id": "u27-0027",
@@ -612,7 +716,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      27
+    ]
   },
   {
     "id": "u27-0028",
@@ -635,7 +743,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u27-0029",
@@ -657,7 +769,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u27-0030",
@@ -683,7 +799,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0031",
@@ -708,7 +828,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u27-0032",
@@ -731,7 +855,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      31
+    ]
   },
   {
     "id": "u27-0033",
@@ -753,7 +881,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0034",
@@ -775,7 +907,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u27-0035",
@@ -795,7 +931,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u27-0036",
@@ -820,7 +960,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      21
+    ]
   },
   {
     "id": "u27-0037",
@@ -843,7 +987,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0038",
@@ -868,7 +1016,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u27-0039",
@@ -893,7 +1045,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0040",
@@ -916,7 +1072,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0041",
@@ -940,7 +1100,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      26
+    ]
   },
   {
     "id": "u27-0042",
@@ -964,7 +1128,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0043",
@@ -990,7 +1158,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u27-0044",
@@ -1012,7 +1184,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u27-0045",
@@ -1037,7 +1213,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u27-0046",
@@ -1059,7 +1239,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0047",
@@ -1083,7 +1267,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0048",
@@ -1108,7 +1296,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0049",
@@ -1130,7 +1322,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      20
+    ]
   },
   {
     "id": "u27-0050",
@@ -1152,7 +1348,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u27-0051",
@@ -1174,7 +1374,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      27
+    ]
   },
   {
     "id": "u27-0052",
@@ -1198,7 +1402,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0053",
@@ -1220,7 +1428,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      23
+    ]
   },
   {
     "id": "u27-0054",
@@ -1242,7 +1454,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0055",
@@ -1269,7 +1485,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      27
+    ]
   },
   {
     "id": "u27-0056",
@@ -1295,7 +1515,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0057",
@@ -1319,7 +1543,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      22
+    ]
   },
   {
     "id": "u27-0058",
@@ -1342,7 +1570,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0059",
@@ -1364,7 +1596,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u27-0060",
@@ -1388,7 +1624,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u27-0061",
@@ -1414,7 +1654,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      22
+    ]
   },
   {
     "id": "u27-0062",
@@ -1442,7 +1686,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0063",
@@ -1469,7 +1717,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u27-0064",
@@ -1496,7 +1748,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      22
+    ]
   },
   {
     "id": "u27-0065",
@@ -1522,7 +1778,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0066",
@@ -1549,7 +1809,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      27
+    ]
   },
   {
     "id": "u27-0067",
@@ -1575,7 +1839,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0068",
@@ -1603,7 +1871,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      25
+    ]
   },
   {
     "id": "u27-0069",
@@ -1627,7 +1899,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0070",
@@ -1651,7 +1927,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u27-0071",
@@ -1675,7 +1955,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0072",
@@ -1701,7 +1985,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      25
+    ]
   },
   {
     "id": "u27-0073",
@@ -1724,7 +2012,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0074",
@@ -1748,7 +2040,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u27-0075",
@@ -1773,7 +2069,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      35
+    ]
   },
   {
     "id": "u27-0076",
@@ -1797,7 +2097,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0077",
@@ -1818,7 +2122,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      22
+    ]
   },
   {
     "id": "u27-0078",
@@ -1841,7 +2149,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0079",
@@ -1863,7 +2175,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      22
+    ]
   },
   {
     "id": "u27-0080",
@@ -1887,7 +2203,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0081",
@@ -1911,7 +2231,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0082",
@@ -1935,7 +2259,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u27-0083",
@@ -1959,7 +2287,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      26
+    ]
   },
   {
     "id": "u27-0084",
@@ -1983,7 +2315,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0085",
@@ -2009,7 +2345,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      26
+    ]
   },
   {
     "id": "u27-0086",
@@ -2032,7 +2372,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0087",
@@ -2056,7 +2400,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      23
+    ]
   },
   {
     "id": "u27-0088",
@@ -2079,7 +2427,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0089",
@@ -2102,7 +2454,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u27-0090",
@@ -2124,7 +2480,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      23
+    ]
   },
   {
     "id": "u27-0091",
@@ -2149,7 +2509,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      26
+    ]
   },
   {
     "id": "u27-0092",
@@ -2172,7 +2536,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u27-0093",
@@ -2194,7 +2562,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0094",
@@ -2216,7 +2588,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u27-0095",
@@ -2240,7 +2616,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0096",
@@ -2264,7 +2644,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      32
+    ]
   },
   {
     "id": "u27-0097",
@@ -2291,7 +2675,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0098",
@@ -2313,7 +2701,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u27-0099",
@@ -2335,7 +2727,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u27-0100",
@@ -2357,7 +2753,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      30
+    ]
   },
   {
     "id": "u27-0101",
@@ -2380,7 +2780,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0102",
@@ -2404,7 +2808,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      21
+    ]
   },
   {
     "id": "u27-0103",
@@ -2430,7 +2838,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0104",
@@ -2455,7 +2867,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      21
+    ]
   },
   {
     "id": "u27-0105",
@@ -2476,7 +2892,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0106",
@@ -2498,7 +2918,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u27-0107",
@@ -2525,7 +2949,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0108",
@@ -2550,7 +2978,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0109",
@@ -2570,7 +3002,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0110",
@@ -2594,7 +3030,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u27-0111",
@@ -2621,7 +3061,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "acaba de pasar",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0112",
@@ -2647,7 +3091,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u27-0113",
@@ -2670,7 +3118,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u27-0114",
@@ -2694,7 +3146,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0115",
@@ -2718,7 +3174,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u27-0116",
@@ -2747,7 +3207,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0117",
@@ -2773,7 +3237,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u27-0118",
@@ -2797,7 +3265,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0119",
@@ -2822,7 +3294,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0120",
@@ -2847,7 +3323,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u27-0121",
@@ -2874,7 +3354,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0122",
@@ -2903,7 +3387,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0123",
@@ -2931,7 +3419,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u27-0124",
@@ -2958,7 +3450,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u27-0125",
@@ -2981,7 +3477,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0126",
@@ -3010,7 +3510,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      46
+    ]
   },
   {
     "id": "u27-0127",
@@ -3038,7 +3542,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0128",
@@ -3063,7 +3571,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u27-0129",
@@ -3090,7 +3602,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0130",
@@ -3115,7 +3631,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0131",
@@ -3144,7 +3664,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0132",
@@ -3169,7 +3693,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0133",
@@ -3194,7 +3722,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0134",
@@ -3220,7 +3752,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0135",
@@ -3246,7 +3782,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u27-0136",
@@ -3273,7 +3813,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u27-0137",
@@ -3295,7 +3839,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0138",
@@ -3322,7 +3870,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0139",
@@ -3348,7 +3900,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0140",
@@ -3373,7 +3929,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u27-0141",
@@ -3400,7 +3960,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      44
+    ]
   },
   {
     "id": "u27-0142",
@@ -3444,7 +4008,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0144",
@@ -3471,7 +4039,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0145",
@@ -3499,7 +4071,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0146",
@@ -3524,7 +4100,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0147",
@@ -3553,7 +4133,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u27-0148",
@@ -3579,7 +4163,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0149",
@@ -3611,7 +4199,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0150",
@@ -3634,7 +4226,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0151",
@@ -3658,7 +4254,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0152",
@@ -3682,7 +4282,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0153",
@@ -3709,7 +4313,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u27-0154",
@@ -3733,7 +4341,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0155",
@@ -3762,7 +4374,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0156",
@@ -3787,7 +4403,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0157",
@@ -3809,7 +4429,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0158",
@@ -3835,7 +4459,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0159",
@@ -3863,7 +4491,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0160",
@@ -3890,7 +4522,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u27-0161",
@@ -3916,7 +4552,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0162",
@@ -3940,7 +4580,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0163",
@@ -3967,7 +4611,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0164",
@@ -3992,7 +4640,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0165",
@@ -4020,7 +4672,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0166",
@@ -4045,7 +4701,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0167",
@@ -4070,7 +4730,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0168",
@@ -4099,7 +4763,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u27-0169",
@@ -4124,7 +4792,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0170",
@@ -4151,7 +4823,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0171",
@@ -4176,7 +4852,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0172",
@@ -4205,7 +4885,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0173",
@@ -4230,7 +4914,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0174",
@@ -4256,7 +4944,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0175",
@@ -4281,7 +4973,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0176",
@@ -4305,7 +5001,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0177",
@@ -4329,7 +5029,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0178",
@@ -4355,7 +5059,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0179",
@@ -4382,7 +5090,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u27-0180",
@@ -4429,7 +5141,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0182",
@@ -4451,7 +5167,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u27-0183",
@@ -4478,7 +5198,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0184",
@@ -4504,7 +5228,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u27-0185",
@@ -4532,7 +5260,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0186",
@@ -4545,6 +5277,7 @@
       "g:estar-location-states",
       "g:gender-articles",
       "g:para-que",
+      "g:ser-estar-adjectives",
       "g:subj-wanting",
       "g:yo-irregular",
       "l:callado",
@@ -4559,7 +5292,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u27-0187",
@@ -4583,7 +5320,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0188",
@@ -4608,7 +5349,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0189",
@@ -4632,7 +5377,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0190",
@@ -4659,7 +5408,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0191",
@@ -4683,7 +5436,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0192",
@@ -4707,7 +5464,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0193",
@@ -4732,7 +5493,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0194",
@@ -4758,7 +5523,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que alguien haga algo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u27-0195",
@@ -4784,7 +5553,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0196",
@@ -4810,7 +5583,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0197",
@@ -4839,7 +5616,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0198",
@@ -4864,7 +5645,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u27-0199",
@@ -4891,7 +5676,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u27-0200",
@@ -4918,7 +5707,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u27-0201",
@@ -4941,7 +5734,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u27-0202",
@@ -4965,7 +5762,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0203",
@@ -4987,7 +5788,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0204",
@@ -5011,7 +5816,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0205",
@@ -5034,7 +5843,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0206",
@@ -5061,7 +5874,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u27-0207",
@@ -5089,7 +5906,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0208",
@@ -5117,7 +5938,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0209",
@@ -5140,7 +5965,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u27-0210",
@@ -5208,7 +6037,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0213",
@@ -5234,7 +6067,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0214",
@@ -5259,7 +6096,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u27-0215",
@@ -5287,7 +6128,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0216",
@@ -5311,7 +6156,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u27-0217",
@@ -5337,7 +6186,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0218",
@@ -5363,7 +6216,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0219",
@@ -5389,7 +6246,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u27-0220",
@@ -5415,7 +6276,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u27-0221",
@@ -5445,7 +6310,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      24
+    ]
   },
   {
     "id": "u27-0222",
@@ -5469,7 +6338,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0223",
@@ -5499,7 +6372,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0224",
@@ -5523,7 +6400,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u27-0225",
@@ -5549,7 +6430,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u27-0226",
@@ -5575,7 +6460,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0227",
@@ -5600,7 +6489,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0228",
@@ -5626,7 +6519,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0229",
@@ -5653,7 +6550,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u27-0230",
@@ -5683,7 +6584,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u27-0231",
@@ -5713,7 +6618,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u27-0232",
@@ -5737,7 +6646,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u27-0233",
@@ -5762,7 +6675,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u27-0234",
@@ -5789,7 +6706,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0235",
@@ -5813,7 +6734,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0236",
@@ -5840,7 +6765,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0237",
@@ -5864,7 +6793,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0238",
@@ -5894,7 +6827,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u27-0239",
@@ -5921,7 +6858,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u27-0240",
@@ -5948,7 +6889,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u27-0241",
@@ -5975,7 +6920,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0242",
@@ -6000,7 +6949,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0243",
@@ -6025,7 +6978,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0244",
@@ -6053,7 +7010,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0245",
@@ -6078,7 +7039,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      23
+    ]
   },
   {
     "id": "u27-0246",
@@ -6106,7 +7071,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0247",
@@ -6133,7 +7102,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u27-0248",
@@ -6160,7 +7133,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0249",
@@ -6184,7 +7161,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u27-0250",
@@ -6210,7 +7191,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u27-0251",
@@ -6234,7 +7219,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0252",
@@ -6259,7 +7248,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u27-0253",
@@ -6288,7 +7281,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0254",
@@ -6319,7 +7316,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u27-0255",
@@ -6342,7 +7343,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0256",
@@ -6368,7 +7373,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u27-0257",
@@ -6395,7 +7404,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0258",
@@ -6419,7 +7432,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u27-0259",
@@ -6448,7 +7465,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0260",
@@ -6475,7 +7496,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0261",
@@ -6502,7 +7527,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u27-0262",
@@ -6528,7 +7557,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0263",
@@ -6554,7 +7587,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0264",
@@ -6581,7 +7618,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u27-0265",
@@ -6607,7 +7648,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u27-0266",
@@ -6634,7 +7679,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0267",
@@ -6662,7 +7711,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u27-0268",
@@ -6689,7 +7742,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0269",
@@ -6716,7 +7773,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u27-0270",
@@ -6741,7 +7802,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0271",
@@ -6766,7 +7831,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0272",
@@ -6795,7 +7864,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u27-0273",
@@ -6821,7 +7894,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u27-0274",
@@ -6848,7 +7925,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0275",
@@ -6875,7 +7956,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0276",
@@ -6901,7 +7986,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0277",
@@ -6925,7 +8014,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0278",
@@ -6953,7 +8046,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0279",
@@ -6981,7 +8078,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0280",
@@ -7007,7 +8108,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u27-0281",
@@ -7034,7 +8139,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0282",
@@ -7060,7 +8169,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0283",
@@ -7081,7 +8194,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u27-0284",
@@ -7156,7 +8273,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0287",
@@ -7180,7 +8301,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0288",
@@ -7205,7 +8330,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u27-0289",
@@ -7228,7 +8357,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0290",
@@ -7260,7 +8393,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u27-0291",
@@ -7285,7 +8422,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0292",
@@ -7313,7 +8454,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0293",
@@ -7339,7 +8484,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u27-0294",
@@ -7367,7 +8516,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      16
+    ]
   },
   {
     "id": "u27-0295",
@@ -7394,7 +8547,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0296",
@@ -7423,7 +8580,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u27-0297",
@@ -7448,7 +8609,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u27-0298",
@@ -7494,7 +8659,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0300",
@@ -7521,7 +8690,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u27-0301",
@@ -7544,7 +8717,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0302",
@@ -7568,7 +8745,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0303",
@@ -7594,7 +8775,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u27-0304",
@@ -7624,7 +8809,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u27-0305",
@@ -7653,7 +8842,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0306",
@@ -7679,7 +8872,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0307",
@@ -7703,7 +8900,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0308",
@@ -7728,7 +8929,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0309",
@@ -7755,7 +8960,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0310",
@@ -7784,7 +8993,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0311",
@@ -7809,7 +9022,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0312",
@@ -7838,7 +9055,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u27-0313",
@@ -7869,7 +9090,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0314",
@@ -7892,7 +9117,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0315",
@@ -7919,7 +9148,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0316",
@@ -7945,7 +9178,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u27-0317",
@@ -7971,7 +9208,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "reacciones: me alegra, me molesta, qué bueno que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0318",
@@ -7992,7 +9233,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0319",
@@ -8014,7 +9259,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0320",
@@ -8037,7 +9286,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0321",
@@ -8060,7 +9313,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0322",
@@ -8083,7 +9340,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0323",
@@ -8111,7 +9372,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0324",
@@ -8136,7 +9401,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0325",
@@ -8163,7 +9432,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      44
+    ]
   },
   {
     "id": "u27-0326",
@@ -8189,7 +9462,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      44
+    ]
   },
   {
     "id": "u27-0327",
@@ -8210,7 +9487,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0328",
@@ -8232,7 +9513,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0329",
@@ -8255,7 +9540,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0330",
@@ -8277,7 +9566,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0331",
@@ -8302,7 +9595,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u27-0332",
@@ -8327,7 +9624,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      39
+    ]
   },
   {
     "id": "u27-0333",
@@ -8349,7 +9650,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0334",
@@ -8371,7 +9676,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0335",
@@ -8389,7 +9698,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0336",
@@ -8410,7 +9723,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0337",
@@ -8433,7 +9750,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0338",
@@ -8455,7 +9776,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0339",
@@ -8473,7 +9798,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0340",
@@ -8495,7 +9824,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0341",
@@ -8519,7 +9852,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      30
+    ]
   },
   {
     "id": "u27-0342",
@@ -8541,7 +9878,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0343",
@@ -8562,7 +9903,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0344",
@@ -8581,7 +9926,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0345",
@@ -8601,7 +9950,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      21
+    ]
   },
   {
     "id": "u27-0346",
@@ -8623,7 +9976,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u27-0347",
@@ -8644,7 +10001,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u27-0348",
@@ -8666,7 +10027,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u27-0349",
@@ -8688,7 +10053,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u27-0350",
@@ -8710,7 +10079,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u27-0351",
@@ -8732,7 +10105,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0352",
@@ -8751,7 +10128,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0353",
@@ -8773,7 +10154,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0354",
@@ -8792,7 +10177,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0355",
@@ -8815,7 +10204,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0356",
@@ -8837,7 +10230,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0357",
@@ -8856,7 +10253,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0358",
@@ -8879,7 +10280,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0359",
@@ -8904,7 +10309,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u27-0360",
@@ -8926,7 +10335,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0361",
@@ -8945,7 +10358,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0362",
@@ -8963,7 +10380,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u27-0363",
@@ -8985,7 +10406,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0364",
@@ -9010,7 +10435,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u27-0365",
@@ -9031,7 +10460,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0366",
@@ -9056,7 +10489,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0367",
@@ -9079,7 +10516,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0368",
@@ -9102,7 +10543,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      16
+    ]
   },
   {
     "id": "u27-0369",
@@ -9146,7 +10591,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0371",
@@ -9168,7 +10617,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0372",
@@ -9191,7 +10644,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0373",
@@ -9213,7 +10670,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0374",
@@ -9234,7 +10695,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0375",
@@ -9257,7 +10722,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0376",
@@ -9279,7 +10748,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0377",
@@ -9301,7 +10774,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0378",
@@ -9326,7 +10803,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0379",
@@ -9347,7 +10828,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0380",
@@ -9372,7 +10857,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u27-0381",
@@ -9393,7 +10882,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u27-0382",
@@ -9411,7 +10904,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0383",
@@ -9431,7 +10928,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u27-0384",
@@ -9453,7 +10954,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0385",
@@ -9481,7 +10986,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0386",
@@ -9503,7 +11012,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      30
+    ]
   },
   {
     "id": "u27-0387",
@@ -9528,7 +11041,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0388",
@@ -9548,7 +11065,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0389",
@@ -9568,7 +11089,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u27-0390",
@@ -9588,7 +11113,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      25
+    ]
   },
   {
     "id": "u27-0391",
@@ -9606,7 +11135,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0392",
@@ -9628,7 +11161,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0393",
@@ -9649,7 +11186,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0394",
@@ -9691,7 +11232,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0396",
@@ -9711,7 +11256,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0397",
@@ -9735,7 +11284,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      34
+    ]
   },
   {
     "id": "u27-0398",
@@ -9780,7 +11333,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0400",
@@ -9798,7 +11355,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u27-0401",
@@ -9824,7 +11385,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      27
+    ]
   },
   {
     "id": "u27-0402",
@@ -9848,7 +11413,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u27-0403",
@@ -9874,7 +11443,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0404",
@@ -9898,7 +11471,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0405",
@@ -9920,7 +11497,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u27-0406",
@@ -9942,7 +11523,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u27-0407",
@@ -9966,7 +11551,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u27-0408",
@@ -9989,7 +11578,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "cartas y correos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u27-0409",
@@ -10012,7 +11605,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0410",
@@ -10056,7 +11653,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0412",
@@ -10078,7 +11679,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0413",
@@ -10163,7 +11768,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0417",
@@ -10191,7 +11800,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u27-0418",
@@ -10240,7 +11853,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0420",
@@ -10284,7 +11901,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0422",
@@ -10373,7 +11994,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u27-0426",
@@ -10395,7 +12020,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0427",
@@ -10440,7 +12069,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0429",
@@ -10482,7 +12115,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0431",
@@ -10507,7 +12144,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0432",
@@ -10550,7 +12191,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0434",
@@ -10572,7 +12217,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0435",
@@ -10594,7 +12243,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u27-0436",
@@ -10642,7 +12295,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0438",
@@ -10664,7 +12321,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0439",
@@ -10687,7 +12348,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u27-0440",
@@ -10709,7 +12374,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0441",
@@ -10730,7 +12399,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0442",
@@ -10752,7 +12425,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0443",
@@ -10775,7 +12452,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0444",
@@ -10801,7 +12482,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0445",
@@ -10823,7 +12508,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0446",
@@ -10868,7 +12557,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0448",
@@ -10893,7 +12586,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0449",
@@ -11034,7 +12731,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0457",
@@ -11072,7 +12773,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0459",
@@ -11092,7 +12797,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0460",
@@ -11147,7 +12856,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0463",
@@ -11187,7 +12900,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u27-0465",
@@ -11209,7 +12926,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      29
+    ]
   },
   {
     "id": "u27-0466",
@@ -11249,7 +12970,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      30
+    ]
   },
   {
     "id": "u27-0468",
@@ -11271,7 +12996,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u27-0469",
@@ -11292,7 +13021,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u27-0470",
@@ -11332,7 +13065,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0472",
@@ -11353,7 +13090,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      31
+    ]
   },
   {
     "id": "u27-0473",
@@ -11374,7 +13115,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u27-0474",
@@ -11397,7 +13142,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0475",
@@ -11418,7 +13167,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u27-0476",
@@ -11459,7 +13212,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      31
+    ]
   },
   {
     "id": "u27-0478",
@@ -11480,7 +13237,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      36
+    ]
   },
   {
     "id": "u27-0479",
@@ -11502,7 +13263,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0480",
@@ -11560,7 +13325,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u27-0483",
@@ -11582,7 +13351,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u27-0484",
@@ -11604,7 +13377,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u27-0485",
@@ -11626,7 +13403,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u27-0486",
@@ -11664,7 +13445,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u27-0488",
@@ -11687,7 +13472,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u27-0489",
@@ -11727,7 +13516,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u27-0491",
@@ -11748,7 +13541,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u27-0492",
@@ -11769,7 +13566,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0493",
@@ -11790,7 +13591,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u27-0494",
@@ -11829,7 +13634,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u27-0496",
@@ -11890,7 +13699,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0499",
@@ -11919,7 +13732,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0500",
@@ -11948,7 +13765,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      27
+    ]
   },
   {
     "id": "u27-0501",
@@ -11972,7 +13793,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u27-0502",
@@ -12003,7 +13828,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0503",
@@ -12034,7 +13863,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u27-0504",
@@ -12062,7 +13895,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0505",
@@ -12088,7 +13925,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0506",
@@ -12116,7 +13957,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0507",
@@ -12142,7 +13987,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u27-0508",
@@ -12171,7 +14020,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      21
+    ]
   },
   {
     "id": "u27-0509",
@@ -12229,7 +14082,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0511",
@@ -12260,7 +14117,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      29
+    ]
   },
   {
     "id": "u27-0512",
@@ -12287,7 +14148,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u27-0513",
@@ -12313,7 +14178,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u27-0514",
@@ -12339,7 +14208,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0515",
@@ -12367,7 +14240,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0516",
@@ -12393,7 +14270,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0517",
@@ -12421,7 +14302,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0518",
@@ -12448,7 +14333,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0519",
@@ -12479,7 +14368,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      48
+    ]
   },
   {
     "id": "u27-0520",
@@ -12505,7 +14398,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0521",
@@ -12533,7 +14430,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0522",
@@ -12584,7 +14485,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0524",
@@ -12612,7 +14517,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      20
+    ]
   },
   {
     "id": "u27-0525",
@@ -12637,7 +14546,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u27-0526",
@@ -12671,7 +14584,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u27-0527",
@@ -12702,7 +14619,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u27-0528",
@@ -12730,7 +14651,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u27-0529",
@@ -12758,7 +14683,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u27-0530",
@@ -12864,7 +14793,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0534",
@@ -12896,7 +14829,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u27-0535",
@@ -12927,7 +14864,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0536",
@@ -12958,7 +14899,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u27-0537",
@@ -12989,7 +14934,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0538",
@@ -13017,7 +14966,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0539",
@@ -13045,7 +14998,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0540",
@@ -13071,7 +15028,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0541",
@@ -13100,7 +15061,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0542",
@@ -13127,7 +15092,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0543",
@@ -13158,7 +15127,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0544",
@@ -13187,7 +15160,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "te escribo para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0545",
@@ -13207,7 +15184,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u27-0546",
@@ -13232,7 +15213,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u27-0547",
@@ -13254,7 +15239,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u27-0548",
@@ -13281,7 +15270,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u27-0549",
@@ -13302,7 +15295,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u27-0550",
@@ -13326,7 +15323,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u27-0551",
@@ -13350,7 +15351,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u27-0552",
@@ -13371,7 +15376,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u27-0553",
@@ -13394,7 +15403,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u27-0554",
@@ -13416,7 +15429,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u27-0555",
@@ -13439,7 +15456,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u27-0556",
@@ -13463,7 +15484,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u27-0557",
@@ -13487,7 +15512,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u27-0558",
@@ -13509,7 +15538,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0559",
@@ -13532,7 +15565,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u27-0560",
@@ -13557,7 +15594,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u27-0561",
@@ -13581,7 +15622,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      33
+    ]
   },
   {
     "id": "u27-0562",
@@ -13604,7 +15649,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u27-0563",
@@ -13626,7 +15675,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u27-0564",
@@ -13648,7 +15701,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u27-0565",
@@ -13671,7 +15728,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u27-0566",
@@ -13693,7 +15754,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0567",
@@ -13718,7 +15783,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u27-0568",
@@ -13743,7 +15812,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u27-0569",
@@ -13766,7 +15839,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u27-0570",
@@ -13786,7 +15863,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u27-0571",
@@ -13807,7 +15888,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u27-0572",
@@ -13828,7 +15913,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u27-0573",
@@ -13850,7 +15939,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u27-0574",
@@ -13875,7 +15968,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u27-0575",
@@ -13900,7 +15997,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0576",
@@ -13925,7 +16026,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u27-0577",
@@ -13950,7 +16055,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0578",
@@ -13970,7 +16079,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0579",
@@ -13997,7 +16110,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0580",
@@ -14021,7 +16138,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u27-0581",
@@ -14043,7 +16164,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u27-0582",
@@ -14065,7 +16190,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u27-0583",
@@ -14087,7 +16216,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u27-0584",
@@ -14110,7 +16243,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u27-0585",
@@ -14133,7 +16270,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u27-0586",
@@ -14157,7 +16298,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u27-0587",
@@ -14179,7 +16324,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u27-0588",
@@ -14203,7 +16352,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u27-0589",
@@ -14227,7 +16380,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u27-0590",
@@ -14253,7 +16410,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0591",
@@ -14275,7 +16436,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u27-0592",
@@ -14298,7 +16463,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u27-0593",
@@ -14320,7 +16489,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u27-0594",
@@ -14341,7 +16514,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u27-0595",
@@ -14366,7 +16543,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u27-0596",
@@ -14390,7 +16571,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u27-0597",
@@ -14412,7 +16597,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u27-0598",
@@ -14495,7 +16684,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u27-0602",
@@ -14518,7 +16711,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      33
+    ]
   },
   {
     "id": "u27-0603",
@@ -14540,7 +16737,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u27-0604",
@@ -14561,7 +16762,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u27-0605",
@@ -14587,7 +16792,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      48
+    ]
   },
   {
     "id": "u27-0606",
@@ -14609,7 +16818,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u27-0607",
@@ -14629,7 +16842,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u27-0608",
@@ -14651,7 +16868,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u27-0609",
@@ -14671,7 +16892,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u27-0610",
@@ -14694,7 +16919,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0611",
@@ -14740,7 +16969,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u27-0613",
@@ -14763,7 +16996,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0614",
@@ -14785,7 +17022,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0615",
@@ -14805,7 +17046,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0616",
@@ -14827,7 +17072,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u27-0617",
@@ -14848,7 +17097,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u27-0618",
@@ -14869,7 +17122,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0619",
@@ -14891,7 +17148,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u27-0620",
@@ -14912,7 +17173,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u27-0621",
@@ -14936,7 +17201,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u27-0622",
@@ -14960,7 +17229,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0623",
@@ -14983,7 +17256,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0624",
@@ -15004,7 +17281,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u27-0625",
@@ -15028,7 +17309,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u27-0626",
@@ -15052,7 +17337,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u27-0627",
@@ -15075,7 +17364,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u27-0628",
@@ -15097,7 +17390,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u27-0629",
@@ -15118,7 +17415,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u27-0630",
@@ -15139,7 +17440,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0631",
@@ -15161,7 +17466,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      23
+    ]
   },
   {
     "id": "u27-0632",
@@ -15187,7 +17496,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0633",
@@ -15211,7 +17524,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u27-0634",
@@ -15233,7 +17550,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u27-0635",
@@ -15256,7 +17577,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u27-0636",
@@ -15278,7 +17603,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u27-0637",
@@ -15299,7 +17628,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      29
+    ]
   },
   {
     "id": "u27-0638",
@@ -15321,7 +17654,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u27-0639",
@@ -15342,7 +17679,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u27-0640",
@@ -15364,7 +17705,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u27-0641",
@@ -15388,7 +17733,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u27-0642",
@@ -15409,7 +17758,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u27-0643",
@@ -15432,7 +17785,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      40
+    ]
   },
   {
     "id": "u27-0644",
@@ -15451,7 +17808,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u27-0645",
@@ -15473,7 +17834,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u27-0646",
@@ -15498,7 +17863,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0647",
@@ -15519,7 +17888,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u27-0648",
@@ -15541,7 +17914,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0649",
@@ -15564,7 +17941,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      42
+    ]
   },
   {
     "id": "u27-0650",
@@ -15587,7 +17968,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u27-0651",
@@ -15609,7 +17994,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u27-0652",
@@ -15629,7 +18018,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0653",
@@ -15651,7 +18044,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u27-0654",
@@ -15672,7 +18069,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u27-0655",
@@ -15696,7 +18097,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      39
+    ]
   },
   {
     "id": "u27-0656",
@@ -15719,7 +18124,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u27-0657",
@@ -15742,7 +18151,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u27-0658",
@@ -15765,7 +18178,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u27-0659",
@@ -15788,7 +18205,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      28
+    ]
   },
   {
     "id": "u27-0660",
@@ -15811,7 +18232,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0661",
@@ -15834,7 +18259,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u27-0662",
@@ -15857,7 +18286,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u27-0663",
@@ -15886,7 +18319,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0664",
@@ -15912,7 +18349,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u27-0665",
@@ -15933,7 +18374,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u27-0666",
@@ -15953,7 +18398,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u27-0667",
@@ -15977,7 +18426,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u27-0668",
@@ -15998,7 +18451,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u27-0669",
@@ -16019,7 +18476,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0670",
@@ -16041,7 +18502,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u27-0671",
@@ -16061,7 +18526,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u27-0672",
@@ -16085,7 +18554,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u27-0673",
@@ -16109,7 +18582,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u27-0674",
@@ -16130,7 +18607,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u27-0675",
@@ -16150,7 +18631,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u27-0676",
@@ -16169,7 +18654,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u27-0677",
@@ -16192,7 +18681,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u27-0678",
@@ -16211,7 +18704,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u27-0679",
@@ -16232,7 +18729,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u27-0680",
@@ -16254,7 +18755,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u27-0681",
@@ -16276,7 +18781,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0682",
@@ -16296,7 +18805,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u27-0683",
@@ -16317,7 +18830,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0684",
@@ -16341,7 +18858,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0685",
@@ -16362,7 +18883,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u27-0686",
@@ -16385,7 +18910,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u27-0687",
@@ -16408,7 +18937,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u27-0688",
@@ -16430,7 +18963,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u27-0689",
@@ -16451,7 +18988,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u27-0690",
@@ -16475,7 +19016,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0691",
@@ -16496,7 +19041,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u27-0692",
@@ -16519,7 +19068,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u27-0693",
@@ -16540,7 +19093,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u27-0694",
@@ -16560,7 +19117,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u27-0695",
@@ -16584,7 +19145,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u27-0696",
@@ -16606,7 +19171,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u27-0697",
@@ -16628,7 +19197,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u27-0698",
@@ -16648,7 +19221,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u27-0699",
@@ -16669,7 +19246,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u27-0700",
@@ -16692,7 +19273,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u27-0701",
@@ -16716,7 +19301,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u27-0702",
@@ -16739,7 +19328,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u27-0703",
@@ -16763,7 +19356,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u27-0704",
@@ -16785,7 +19382,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      32
+    ]
   },
   {
     "id": "u27-0705",
@@ -16807,7 +19408,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u27-0706",
@@ -16829,7 +19434,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u27-0707",
@@ -16870,7 +19479,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u27-0709",
@@ -16896,7 +19509,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u27-0710",
@@ -16916,7 +19533,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u27-0711",
@@ -16939,7 +19560,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u27-0712",
@@ -16963,7 +19588,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u27-0713",
@@ -16986,7 +19615,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u27-0714",
@@ -17008,7 +19641,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u27-0715",
@@ -17030,7 +19667,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u27-0716",
@@ -17058,7 +19699,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0717",
@@ -17085,7 +19730,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u27-0718",
@@ -17113,7 +19762,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0719",
@@ -17140,7 +19793,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0720",
@@ -17169,7 +19826,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u27-0721",
@@ -17198,7 +19859,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0722",
@@ -17225,7 +19890,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u27-0723",
@@ -17250,7 +19919,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0724",
@@ -17278,7 +19951,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0725",
@@ -17306,7 +19983,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u27-0726",
@@ -17331,7 +20012,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0727",
@@ -17360,7 +20045,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0728",
@@ -17389,7 +20078,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0729",
@@ -17416,7 +20109,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u27-0730",
@@ -17447,7 +20144,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0731",
@@ -17475,7 +20176,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u27-0732",
@@ -17502,7 +20207,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0733",
@@ -17527,7 +20236,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0734",
@@ -17555,7 +20268,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0735",
@@ -17582,7 +20299,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0736",
@@ -17608,7 +20329,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u27-0737",
@@ -17638,7 +20363,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0738",
@@ -17665,7 +20394,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u27-0739",
@@ -17693,7 +20426,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      24
+    ]
   },
   {
     "id": "u27-0740",
@@ -17722,7 +20459,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u27-0741",
@@ -17748,7 +20489,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0742",
@@ -17773,7 +20518,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0743",
@@ -17797,7 +20546,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0744",
@@ -17820,7 +20573,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      22
+    ]
   },
   {
     "id": "u27-0745",
@@ -17844,7 +20601,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u27-0746",
@@ -17868,7 +20629,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u27-0747",
@@ -17893,7 +20658,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      24
+    ]
   },
   {
     "id": "u27-0748",
@@ -17919,7 +20688,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0749",
@@ -17945,7 +20718,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u27-0750",
@@ -17970,7 +20747,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u27-0751",
@@ -17994,7 +20775,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0752",
@@ -18017,7 +20802,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la semana de Tomás",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0753",
@@ -18216,7 +21005,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      32
+    ]
   },
   {
     "id": "u27-0762",
@@ -18266,7 +21059,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u27-0764",
@@ -18293,7 +21090,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0765",
@@ -18319,7 +21120,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u27-0766",
@@ -18345,7 +21150,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0767",
@@ -18391,7 +21200,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      48
+    ]
   },
   {
     "id": "u27-0769",
@@ -18417,7 +21230,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0770",
@@ -18441,7 +21258,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0771",
@@ -18469,7 +21290,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0772",
@@ -18492,7 +21317,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      26
+    ]
   },
   {
     "id": "u27-0773",
@@ -18518,7 +21347,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0774",
@@ -18543,7 +21376,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      50
+    ]
   },
   {
     "id": "u27-0775",
@@ -18570,7 +21407,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u27-0776",
@@ -18593,7 +21434,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u27-0777",
@@ -18622,7 +21467,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0778",
@@ -18651,7 +21500,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u27-0779",
@@ -18677,7 +21530,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "la carta de Altamira",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u27-0780",
@@ -18701,7 +21558,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0781",
@@ -18726,7 +21587,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0782",
@@ -18755,7 +21620,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0783",
@@ -18780,7 +21649,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0784",
@@ -18805,7 +21678,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u27-0785",
@@ -18831,7 +21708,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0786",
@@ -18856,7 +21737,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0787",
@@ -18882,7 +21767,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0788",
@@ -18907,7 +21796,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0789",
@@ -18932,7 +21825,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0790",
@@ -18956,7 +21853,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u27-0791",
@@ -18981,7 +21882,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0792",
@@ -19005,7 +21910,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0793",
@@ -19035,7 +21944,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0794",
@@ -19062,7 +21975,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0795",
@@ -19087,7 +22004,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u27-0796",
@@ -19113,7 +22034,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u27-0797",
@@ -19139,7 +22064,11 @@
     "kind": "question",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0798",
@@ -19159,7 +22088,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0799",
@@ -19187,7 +22120,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      39
+    ]
   },
   {
     "id": "u27-0800",
@@ -19208,7 +22145,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      29
+    ]
   },
   {
     "id": "u27-0801",
@@ -19228,7 +22169,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "preguntas con para que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0802",
@@ -19251,7 +22196,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0803",
@@ -19278,7 +22227,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0804",
@@ -19302,7 +22255,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0805",
@@ -19328,7 +22285,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u27-0806",
@@ -19353,7 +22314,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0807",
@@ -19398,7 +22363,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0809",
@@ -19424,7 +22393,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u27-0810",
@@ -19448,7 +22421,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u27-0811",
@@ -19473,7 +22450,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0812",
@@ -19498,7 +22479,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u27-0813",
@@ -19524,7 +22509,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u27-0814",
@@ -19550,7 +22539,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      36
+    ]
   },
   {
     "id": "u27-0815",
@@ -19573,7 +22566,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0816",
@@ -19599,7 +22596,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0817",
@@ -19630,7 +22631,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      45
+    ]
   },
   {
     "id": "u27-0818",
@@ -19658,7 +22663,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      47
+    ]
   },
   {
     "id": "u27-0819",
@@ -19682,7 +22691,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u27-0820",
@@ -19708,7 +22721,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u27-0821",
@@ -19734,7 +22751,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0822",
@@ -19762,7 +22783,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0823",
@@ -19790,7 +22815,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0824",
@@ -19816,7 +22845,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0825",
@@ -19843,7 +22876,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0826",
@@ -19869,7 +22906,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0827",
@@ -19896,7 +22937,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0828",
@@ -19919,7 +22964,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0829",
@@ -19951,7 +23000,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0830",
@@ -19976,7 +23029,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u27-0831",
@@ -20002,7 +23059,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u27-0832",
@@ -20028,7 +23089,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u27-0833",
@@ -20056,7 +23121,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u27-0834",
@@ -20082,7 +23151,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0835",
@@ -20107,7 +23180,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u27-0836",
@@ -20136,7 +23213,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u27-0837",
@@ -20163,7 +23244,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      40
+    ]
   },
   {
     "id": "u27-0838",
@@ -20188,7 +23273,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u27-0839",
@@ -20214,7 +23303,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u27-0840",
@@ -20260,7 +23353,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0842",
@@ -20287,7 +23384,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0843",
@@ -20312,7 +23413,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u27-0844",
@@ -20336,7 +23441,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u27-0845",
@@ -20360,7 +23469,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u27-0846",
@@ -20387,7 +23500,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u27-0847",
@@ -20412,7 +23529,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u27-0848",
@@ -20443,7 +23564,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u27-0849",
@@ -20468,7 +23593,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      46
+    ]
   },
   {
     "id": "u27-0850",
@@ -20493,7 +23622,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u27-0851",
@@ -20517,7 +23650,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u27-0852",
@@ -20540,7 +23677,11 @@
     "kind": "dialogue",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u27-0853",
@@ -20565,7 +23706,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "para que, más casos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0854",
@@ -20588,7 +23733,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0855",
@@ -20613,7 +23762,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0856",
@@ -20636,7 +23789,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0857",
@@ -20660,7 +23817,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0858",
@@ -20682,7 +23843,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0859",
@@ -20707,7 +23872,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u27-0860",
@@ -20732,7 +23901,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0861",
@@ -20757,7 +23930,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0862",
@@ -20781,7 +23958,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0863",
@@ -20803,7 +23984,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0864",
@@ -20830,7 +24015,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0865",
@@ -20854,7 +24043,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u27-0866",
@@ -20877,7 +24070,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0867",
@@ -20900,7 +24097,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0868",
@@ -20924,7 +24125,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u27-0869",
@@ -20951,7 +24156,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0870",
@@ -20973,7 +24182,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0871",
@@ -20996,7 +24209,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0872",
@@ -21020,7 +24237,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0873",
@@ -21044,7 +24265,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u27-0874",
@@ -21067,7 +24292,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0875",
@@ -21093,7 +24322,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u27-0876",
@@ -21140,7 +24373,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u27-0878",
@@ -21162,7 +24399,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0879",
@@ -21185,7 +24426,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0880",
@@ -21208,7 +24453,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0881",
@@ -21234,7 +24483,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0882",
@@ -21256,7 +24509,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0883",
@@ -21279,7 +24536,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0884",
@@ -21303,7 +24564,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0885",
@@ -21327,7 +24592,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u27-0886",
@@ -21370,7 +24639,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0888",
@@ -21417,7 +24690,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u27-0890",
@@ -21456,7 +24733,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u27-0892",
@@ -21481,7 +24762,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "buenos deseos 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u27-0893",
@@ -21501,7 +24786,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0894",
@@ -21521,7 +24810,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0895",
@@ -21540,7 +24833,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u27-0896",
@@ -21560,7 +24857,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u27-0897",
@@ -21618,7 +24919,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u27-0900",
@@ -21638,7 +24943,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u27-0901",
@@ -21677,7 +24986,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      33
+    ]
   },
   {
     "id": "u27-0903",
@@ -21698,7 +25011,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u27-0904",
@@ -21719,7 +25036,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0905",
@@ -21760,7 +25081,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      34
+    ]
   },
   {
     "id": "u27-0907",
@@ -21782,7 +25107,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u27-0908",
@@ -21803,7 +25132,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      29
+    ]
   },
   {
     "id": "u27-0909",
@@ -21825,7 +25158,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u27-0910",
@@ -21846,7 +25183,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0911",
@@ -21867,7 +25208,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u27-0912",
@@ -21906,7 +25251,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0914",
@@ -21946,7 +25295,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u27-0916",
@@ -21984,7 +25337,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u27-0918",
@@ -22006,7 +25363,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u27-0919",
@@ -22045,7 +25406,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u27-0921",
@@ -22067,7 +25432,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u27-0922",
@@ -22088,7 +25457,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      37
+    ]
   },
   {
     "id": "u27-0923",
@@ -22109,7 +25482,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u27-0924",
@@ -22132,7 +25509,11 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u27-0925",
@@ -22171,6 +25552,10 @@
     "kind": "statement",
     "unit": "u27",
     "theme": "letreros, formularios y recetas 2",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   }
 ]

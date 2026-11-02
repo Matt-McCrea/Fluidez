@@ -141,6 +141,7 @@
       "why": "The English says \"Vale is very clever.\", so it's es.",
       "requires": [
         "g:adjective-agreement",
+        "g:ser-estar-adjectives",
         "g:ser-identity",
         "l:listo",
         "l:ser",
@@ -399,6 +400,7 @@
       "why": "The English says \"Mariana is clever.\", so it's es.",
       "requires": [
         "g:adjective-agreement",
+        "g:ser-estar-adjectives",
         "g:ser-identity",
         "l:listo",
         "l:ser"
@@ -498,6 +500,7 @@
       "why": "Clever is what she's like, so es lista.",
       "requires": [
         "g:adjective-agreement",
+        "g:ser-estar-adjectives",
         "g:ser-identity",
         "l:listo",
         "l:ser",

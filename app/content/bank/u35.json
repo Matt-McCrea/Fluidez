@@ -24,7 +24,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      29
+    ]
   },
   {
     "id": "u35-0002",
@@ -53,7 +57,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u35-0003",
@@ -79,7 +87,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u35-0004",
@@ -106,7 +118,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0005",
@@ -135,7 +151,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u35-0006",
@@ -160,7 +180,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u35-0007",
@@ -211,7 +235,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u35-0009",
@@ -236,7 +264,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0010",
@@ -261,7 +293,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0011",
@@ -285,7 +321,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u35-0012",
@@ -309,7 +349,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls two",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u35-0013",
@@ -335,7 +379,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u35-0014",
@@ -362,7 +410,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      51
+    ]
   },
   {
     "id": "u35-0015",
@@ -388,7 +440,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0016",
@@ -415,7 +471,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0017",
@@ -441,7 +501,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0018",
@@ -470,7 +534,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      21
+    ]
   },
   {
     "id": "u35-0019",
@@ -497,7 +565,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u35-0020",
@@ -523,7 +595,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0021",
@@ -549,7 +625,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u35-0022",
@@ -575,7 +655,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0023",
@@ -603,7 +687,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u35-0024",
@@ -630,7 +718,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u35-0025",
@@ -649,7 +741,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0026",
@@ -669,7 +765,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0027",
@@ -690,7 +790,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0028",
@@ -710,7 +814,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0029",
@@ -729,7 +837,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0030",
@@ -748,7 +860,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0031",
@@ -767,7 +883,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0032",
@@ -786,7 +906,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      26
+    ]
   },
   {
     "id": "u35-0033",
@@ -812,7 +936,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      22
+    ]
   },
   {
     "id": "u35-0034",
@@ -839,7 +967,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0035",
@@ -866,7 +998,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0036",
@@ -892,7 +1028,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0037",
@@ -919,7 +1059,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0038",
@@ -943,7 +1087,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0039",
@@ -971,7 +1119,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0040",
@@ -998,7 +1150,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u35-0041",
@@ -1025,7 +1181,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0042",
@@ -1051,7 +1211,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "signs and rules, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0043",
@@ -1078,7 +1242,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u35-0044",
@@ -1105,7 +1273,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0045",
@@ -1130,7 +1302,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u35-0046",
@@ -1154,7 +1330,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      19
+    ]
   },
   {
     "id": "u35-0047",
@@ -1178,7 +1358,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u35-0048",
@@ -1203,7 +1387,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      23
+    ]
   },
   {
     "id": "u35-0049",
@@ -1227,7 +1415,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u35-0050",
@@ -1252,7 +1444,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      35
+    ]
   },
   {
     "id": "u35-0051",
@@ -1277,7 +1473,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0052",
@@ -1300,7 +1500,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0053",
@@ -1326,7 +1530,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u35-0054",
@@ -1351,7 +1559,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u35-0055",
@@ -1377,7 +1589,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0056",
@@ -1404,7 +1620,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0057",
@@ -1430,7 +1650,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u35-0058",
@@ -1455,7 +1679,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0059",
@@ -1484,7 +1712,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u35-0060",
@@ -1532,7 +1764,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0062",
@@ -1562,7 +1798,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0063",
@@ -1593,7 +1833,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      27
+    ]
   },
   {
     "id": "u35-0064",
@@ -1622,7 +1866,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u35-0065",
@@ -1647,7 +1895,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u35-0066",
@@ -1675,7 +1927,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u35-0067",
@@ -1700,7 +1956,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u35-0068",
@@ -1729,7 +1989,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0069",
@@ -1754,7 +2018,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u35-0070",
@@ -1778,7 +2046,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0071",
@@ -1804,7 +2076,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u35-0072",
@@ -1830,7 +2106,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u35-0073",
@@ -1856,7 +2136,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u35-0074",
@@ -1882,7 +2166,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u35-0075",
@@ -1908,7 +2196,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u35-0076",
@@ -1956,7 +2248,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u35-0078",
@@ -2008,7 +2304,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u35-0080",
@@ -2031,7 +2331,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u35-0081",
@@ -2056,7 +2360,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u35-0082",
@@ -2082,7 +2390,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u35-0083",
@@ -2108,7 +2420,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      39
+    ]
   },
   {
     "id": "u35-0084",
@@ -2135,7 +2451,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0085",
@@ -2193,7 +2513,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "top-ups",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      41
+    ]
   },
   {
     "id": "u35-0087",
@@ -2273,7 +2597,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      32
+    ]
   },
   {
     "id": "u35-0090",
@@ -2470,7 +2798,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u35-0098",
@@ -2502,7 +2834,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u35-0099",
@@ -2553,7 +2889,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      48
+    ]
   },
   {
     "id": "u35-0101",
@@ -2601,7 +2941,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u35-0103",
@@ -2629,7 +2973,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "clinic dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u35-0104",
@@ -2680,7 +3028,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      59,
+      64
+    ]
   },
   {
     "id": "u35-0106",
@@ -2708,7 +3060,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      39
+    ]
   },
   {
     "id": "u35-0107",
@@ -2757,7 +3113,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0109",
@@ -2785,7 +3145,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      49
+    ]
   },
   {
     "id": "u35-0110",
@@ -2807,7 +3171,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u35-0111",
@@ -2974,7 +3342,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      44
+    ]
   },
   {
     "id": "u35-0118",
@@ -2998,7 +3370,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      47,
+      56
+    ]
   },
   {
     "id": "u35-0119",
@@ -3024,7 +3400,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "café dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u35-0120",
@@ -3100,7 +3480,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0123",
@@ -3131,7 +3515,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      45
+    ]
   },
   {
     "id": "u35-0124",
@@ -3161,7 +3549,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      55
+    ]
   },
   {
     "id": "u35-0125",
@@ -3187,7 +3579,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u35-0126",
@@ -3211,7 +3607,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u35-0127",
@@ -3239,7 +3639,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      24
+    ]
   },
   {
     "id": "u35-0128",
@@ -3264,7 +3668,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      25
+    ]
   },
   {
     "id": "u35-0129",
@@ -3294,7 +3702,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u35-0130",
@@ -3319,7 +3731,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0131",
@@ -3366,7 +3782,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0133",
@@ -3392,7 +3812,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u35-0134",
@@ -3422,7 +3846,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u35-0135",
@@ -3450,7 +3878,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u35-0136",
@@ -3480,7 +3912,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u35-0137",
@@ -3528,7 +3964,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0139",
@@ -3557,7 +3997,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0140",
@@ -3583,7 +4027,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u35-0141",
@@ -3631,7 +4079,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u35-0143",
@@ -3658,7 +4110,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0144",
@@ -3686,7 +4142,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u35-0145",
@@ -3713,7 +4173,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0146",
@@ -3764,7 +4228,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0148",
@@ -3792,7 +4260,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0149",
@@ -3818,7 +4290,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0150",
@@ -3847,7 +4323,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0151",
@@ -3897,7 +4377,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0153",
@@ -3926,7 +4410,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u35-0154",
@@ -3974,7 +4462,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0156",
@@ -4028,7 +4520,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u35-0158",
@@ -4057,7 +4553,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0159",
@@ -4085,7 +4585,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u35-0160",
@@ -4114,7 +4618,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0161",
@@ -4141,7 +4649,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u35-0162",
@@ -4170,7 +4682,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0163",
@@ -4200,7 +4716,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u35-0164",
@@ -4230,7 +4750,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0165",
@@ -4256,7 +4780,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "everyday dialogues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u35-0166",
@@ -4288,7 +4816,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u35-0167",
@@ -4314,7 +4846,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u35-0168",
@@ -4346,7 +4882,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u35-0169",
@@ -4375,7 +4915,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0170",
@@ -4430,7 +4974,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u35-0172",
@@ -4459,7 +5007,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0173",
@@ -4490,7 +5042,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0174",
@@ -4517,7 +5073,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0175",
@@ -4542,7 +5102,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u35-0176",
@@ -4569,7 +5133,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0177",
@@ -4597,7 +5165,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0178",
@@ -4624,7 +5196,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0179",
@@ -4652,7 +5228,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0180",
@@ -4676,7 +5256,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0181",
@@ -4705,7 +5289,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u35-0182",
@@ -4732,7 +5320,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0183",
@@ -4764,7 +5356,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0184",
@@ -4787,7 +5383,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u35-0185",
@@ -4813,7 +5413,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u35-0186",
@@ -4843,7 +5447,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, doctor's advice",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0187",
@@ -4869,7 +5477,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0188",
@@ -4897,7 +5509,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0189",
@@ -4924,7 +5540,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0190",
@@ -4951,7 +5571,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u35-0191",
@@ -4980,7 +5604,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0192",
@@ -5006,7 +5634,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u35-0193",
@@ -5033,7 +5665,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0194",
@@ -5061,7 +5697,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0195",
@@ -5087,7 +5727,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0196",
@@ -5113,7 +5757,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0197",
@@ -5164,7 +5812,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0199",
@@ -5192,7 +5844,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0200",
@@ -5222,7 +5878,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0201",
@@ -5252,7 +5912,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0202",
@@ -5302,7 +5966,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0204",
@@ -5330,7 +5998,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, rules and manners",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0205",
@@ -5359,7 +6031,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0206",
@@ -5415,7 +6091,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0208",
@@ -5470,7 +6150,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u35-0210",
@@ -5499,7 +6183,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0211",
@@ -5525,7 +6213,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0212",
@@ -5555,7 +6247,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u35-0213",
@@ -5590,7 +6286,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u35-0214",
@@ -5621,7 +6321,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u35-0215",
@@ -5649,7 +6353,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0216",
@@ -5676,7 +6384,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0217",
@@ -5702,7 +6414,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u35-0218",
@@ -5733,7 +6449,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0219",
@@ -5786,7 +6506,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0221",
@@ -5811,7 +6535,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, work, money and the café",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0222",
@@ -5839,7 +6567,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0223",
@@ -5865,7 +6597,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0224",
@@ -5917,7 +6653,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0226",
@@ -5946,7 +6686,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0227",
@@ -5970,7 +6714,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0228",
@@ -6019,7 +6767,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0230",
@@ -6045,7 +6797,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0231",
@@ -6096,7 +6852,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0233",
@@ -6150,7 +6910,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0235",
@@ -6198,7 +6962,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0237",
@@ -6268,7 +7036,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0240",
@@ -6321,7 +7093,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0242",
@@ -6347,7 +7123,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u35-0243",
@@ -6375,7 +7155,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, home, travel and daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u35-0244",
@@ -6430,7 +7214,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u35-0246",
@@ -6456,7 +7244,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0247",
@@ -6482,7 +7274,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u35-0248",
@@ -6508,7 +7304,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u35-0249",
@@ -6539,7 +7339,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u35-0250",
@@ -6568,7 +7372,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0251",
@@ -6595,7 +7403,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u35-0252",
@@ -6620,7 +7432,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u35-0253",
@@ -6647,7 +7463,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0254",
@@ -6676,7 +7496,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      37
+    ]
   },
   {
     "id": "u35-0255",
@@ -6703,7 +7527,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      23
+    ]
   },
   {
     "id": "u35-0256",
@@ -6731,7 +7559,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0257",
@@ -6761,7 +7593,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u35-0258",
@@ -6792,7 +7628,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      35
+    ]
   },
   {
     "id": "u35-0259",
@@ -6823,7 +7663,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0260",
@@ -6853,7 +7697,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u35-0261",
@@ -6884,7 +7732,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u35-0262",
@@ -6913,7 +7765,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      30
+    ]
   },
   {
     "id": "u35-0263",
@@ -6939,7 +7795,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u35-0264",
@@ -6963,7 +7823,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u35-0265",
@@ -6991,7 +7855,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u35-0266",
@@ -7018,7 +7886,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      33
+    ]
   },
   {
     "id": "u35-0267",
@@ -7028,6 +7900,7 @@
     "acceptEn": [],
     "requires": [
       "g:impersonal-obligation",
+      "g:por-para-2",
       "g:present-er-ir",
       "g:se-impersonal",
       "g:ser-identity",
@@ -7046,7 +7919,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u35-0268",
@@ -7071,7 +7948,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u35-0269",
@@ -7098,7 +7979,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "se debe, more voices",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u35-0270",
@@ -7122,7 +8007,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u35-0271",
@@ -7146,7 +8035,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u35-0272",
@@ -7173,7 +8066,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u35-0273",
@@ -7198,7 +8095,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      34
+    ]
   },
   {
     "id": "u35-0274",
@@ -7223,7 +8124,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u35-0275",
@@ -7248,7 +8153,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      25
+    ]
   },
   {
     "id": "u35-0276",
@@ -7275,7 +8184,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u35-0277",
@@ -7300,7 +8213,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      41
+    ]
   },
   {
     "id": "u35-0278",
@@ -7328,7 +8245,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      40
+    ]
   },
   {
     "id": "u35-0279",
@@ -7354,7 +8275,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u35-0280",
@@ -7381,7 +8306,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u35-0281",
@@ -7409,7 +8338,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u35-0282",
@@ -7433,7 +8366,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u35-0283",
@@ -7461,7 +8398,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u35-0284",
@@ -7491,7 +8432,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      64
+    ]
   },
   {
     "id": "u35-0285",
@@ -7524,7 +8469,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      55
+    ]
   },
   {
     "id": "u35-0286",
@@ -7549,7 +8498,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u35-0287",
@@ -7574,7 +8527,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u35-0288",
@@ -7601,7 +8558,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      45
+    ]
   },
   {
     "id": "u35-0289",
@@ -7628,7 +8589,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u35-0290",
@@ -7679,7 +8644,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u35-0292",
@@ -7703,7 +8672,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      40
+    ]
   },
   {
     "id": "u35-0293",
@@ -7728,7 +8701,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u35-0294",
@@ -7754,7 +8731,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, health and the clinic",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u35-0295",
@@ -7779,7 +8760,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u35-0296",
@@ -7806,7 +8791,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      34
+    ]
   },
   {
     "id": "u35-0297",
@@ -7837,7 +8826,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u35-0298",
@@ -7862,7 +8855,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u35-0299",
@@ -7889,7 +8886,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u35-0300",
@@ -7915,7 +8916,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u35-0301",
@@ -7939,7 +8944,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u35-0302",
@@ -7965,7 +8974,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u35-0303",
@@ -7992,7 +9005,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      41
+    ]
   },
   {
     "id": "u35-0304",
@@ -8018,7 +9035,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u35-0305",
@@ -8044,7 +9065,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      42
+    ]
   },
   {
     "id": "u35-0306",
@@ -8069,7 +9094,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u35-0307",
@@ -8094,7 +9123,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      36
+    ]
   },
   {
     "id": "u35-0308",
@@ -8121,7 +9154,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u35-0309",
@@ -8171,7 +9208,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      35
+    ]
   },
   {
     "id": "u35-0311",
@@ -8198,7 +9239,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u35-0312",
@@ -8223,7 +9268,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      34
+    ]
   },
   {
     "id": "u35-0313",
@@ -8247,7 +9296,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u35-0314",
@@ -8273,7 +9326,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u35-0315",
@@ -8301,7 +9358,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      42
+    ]
   },
   {
     "id": "u35-0316",
@@ -8325,7 +9386,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, feelings and news",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      33
+    ]
   },
   {
     "id": "u35-0317",
@@ -8349,7 +9414,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0318",
@@ -8374,7 +9443,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      35
+    ]
   },
   {
     "id": "u35-0319",
@@ -8399,7 +9472,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u35-0320",
@@ -8425,7 +9502,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      41
+    ]
   },
   {
     "id": "u35-0321",
@@ -8453,7 +9534,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u35-0322",
@@ -8476,7 +9561,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u35-0323",
@@ -8502,7 +9591,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u35-0324",
@@ -8526,7 +9619,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u35-0325",
@@ -8551,7 +9648,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      40
+    ]
   },
   {
     "id": "u35-0326",
@@ -8579,7 +9680,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      31
+    ]
   },
   {
     "id": "u35-0327",
@@ -8605,7 +9710,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u35-0328",
@@ -8629,7 +9738,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      33
+    ]
   },
   {
     "id": "u35-0329",
@@ -8655,7 +9768,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u35-0330",
@@ -8681,7 +9798,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      56
+    ]
   },
   {
     "id": "u35-0331",
@@ -8709,7 +9830,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      43
+    ]
   },
   {
     "id": "u35-0332",
@@ -8734,7 +9859,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u35-0333",
@@ -8758,7 +9887,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u35-0334",
@@ -8782,7 +9915,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u35-0335",
@@ -8809,7 +9946,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u35-0336",
@@ -8837,7 +9978,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      39
+    ]
   },
   {
     "id": "u35-0337",
@@ -8861,7 +10006,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u35-0338",
@@ -8886,7 +10035,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      39
+    ]
   },
   {
     "id": "u35-0339",
@@ -8907,7 +10060,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      26
+    ]
   },
   {
     "id": "u35-0340",
@@ -8933,7 +10090,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, work and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      37
+    ]
   },
   {
     "id": "u35-0341",
@@ -8957,7 +10118,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u35-0342",
@@ -8983,7 +10148,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      28
+    ]
   },
   {
     "id": "u35-0343",
@@ -9011,7 +10180,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      40
+    ]
   },
   {
     "id": "u35-0344",
@@ -9036,7 +10209,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      34
+    ]
   },
   {
     "id": "u35-0345",
@@ -9062,7 +10239,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      38
+    ]
   },
   {
     "id": "u35-0346",
@@ -9087,7 +10268,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u35-0347",
@@ -9113,7 +10298,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      40
+    ]
   },
   {
     "id": "u35-0348",
@@ -9141,7 +10330,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      31
+    ]
   },
   {
     "id": "u35-0349",
@@ -9167,7 +10360,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      40
+    ]
   },
   {
     "id": "u35-0350",
@@ -9191,7 +10388,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u35-0351",
@@ -9215,7 +10416,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      37
+    ]
   },
   {
     "id": "u35-0352",
@@ -9239,7 +10444,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u35-0353",
@@ -9294,7 +10503,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u35-0355",
@@ -9320,7 +10533,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u35-0356",
@@ -9344,7 +10561,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, daily life",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u35-0357",
@@ -9372,7 +10593,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u35-0358",
@@ -9399,7 +10624,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u35-0359",
@@ -9425,7 +10654,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u35-0360",
@@ -9449,7 +10682,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u35-0361",
@@ -9473,7 +10710,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u35-0362",
@@ -9497,7 +10738,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      35
+    ]
   },
   {
     "id": "u35-0363",
@@ -9525,7 +10770,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u35-0364",
@@ -9547,7 +10796,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u35-0365",
@@ -9574,7 +10827,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      40
+    ]
   },
   {
     "id": "u35-0366",
@@ -9600,7 +10857,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      23
+    ]
   },
   {
     "id": "u35-0367",
@@ -9627,7 +10888,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u35-0368",
@@ -9677,7 +10942,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      28
+    ]
   },
   {
     "id": "u35-0370",
@@ -9701,7 +10970,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u35-0371",
@@ -9726,7 +10999,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u35-0372",
@@ -9753,7 +11030,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      47
+    ]
   },
   {
     "id": "u35-0373",
@@ -9779,7 +11060,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u35-0374",
@@ -9803,7 +11088,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u35-0375",
@@ -9830,7 +11119,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u35-0376",
@@ -9857,7 +11150,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      31
+    ]
   },
   {
     "id": "u35-0377",
@@ -9885,7 +11182,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      41
+    ]
   },
   {
     "id": "u35-0378",
@@ -9910,7 +11211,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      31
+    ]
   },
   {
     "id": "u35-0379",
@@ -9936,7 +11241,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      33
+    ]
   },
   {
     "id": "u35-0380",
@@ -9960,7 +11269,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      32
+    ]
   },
   {
     "id": "u35-0381",
@@ -9986,7 +11299,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u35-0382",
@@ -10012,7 +11329,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      31
+    ]
   },
   {
     "id": "u35-0383",
@@ -10037,7 +11358,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      26
+    ]
   },
   {
     "id": "u35-0384",
@@ -10064,7 +11389,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      34
+    ]
   },
   {
     "id": "u35-0385",
@@ -10088,7 +11417,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      25
+    ]
   },
   {
     "id": "u35-0386",
@@ -10112,7 +11445,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      28
+    ]
   },
   {
     "id": "u35-0387",
@@ -10139,7 +11476,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u35-0388",
@@ -10162,7 +11503,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u35-0389",
@@ -10185,7 +11530,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u35-0390",
@@ -10210,7 +11559,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      20
+    ]
   },
   {
     "id": "u35-0391",
@@ -10232,7 +11585,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u35-0392",
@@ -10255,7 +11612,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u35-0393",
@@ -10279,7 +11640,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u35-0394",
@@ -10304,7 +11669,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u35-0395",
@@ -10329,7 +11698,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      34
+    ]
   },
   {
     "id": "u35-0396",
@@ -10353,7 +11726,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      29
+    ]
   },
   {
     "id": "u35-0397",
@@ -10377,7 +11754,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u35-0398",
@@ -10401,7 +11782,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u35-0399",
@@ -10427,7 +11812,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u35-0400",
@@ -10451,7 +11840,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      34
+    ]
   },
   {
     "id": "u35-0401",
@@ -10478,7 +11871,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u35-0402",
@@ -10504,7 +11901,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u35-0403",
@@ -10530,7 +11931,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      30
+    ]
   },
   {
     "id": "u35-0404",
@@ -10558,7 +11963,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      31
+    ]
   },
   {
     "id": "u35-0405",
@@ -10586,7 +11995,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      46
+    ]
   },
   {
     "id": "u35-0406",
@@ -10608,7 +12021,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u35-0407",
@@ -10634,7 +12051,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u35-0408",
@@ -10658,7 +12079,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      35
+    ]
   },
   {
     "id": "u35-0409",
@@ -10682,7 +12107,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u35-0410",
@@ -10706,7 +12135,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u35-0411",
@@ -10732,7 +12165,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "subj-perfect, more",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      45
+    ]
   },
   {
     "id": "u35-0412",
@@ -10756,7 +12193,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      34
+    ]
   },
   {
     "id": "u35-0413",
@@ -10780,7 +12221,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0414",
@@ -10804,7 +12249,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u35-0415",
@@ -10826,7 +12275,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u35-0416",
@@ -10850,7 +12303,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u35-0417",
@@ -10875,7 +12332,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      22
+    ]
   },
   {
     "id": "u35-0418",
@@ -10896,7 +12357,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u35-0419",
@@ -10922,7 +12387,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      33
+    ]
   },
   {
     "id": "u35-0420",
@@ -10946,7 +12415,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      33
+    ]
   },
   {
     "id": "u35-0421",
@@ -10970,7 +12443,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0422",
@@ -10998,7 +12475,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u35-0423",
@@ -11022,7 +12503,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0424",
@@ -11049,7 +12534,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u35-0425",
@@ -11075,7 +12564,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      32
+    ]
   },
   {
     "id": "u35-0426",
@@ -11100,7 +12593,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u35-0427",
@@ -11124,7 +12621,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u35-0428",
@@ -11149,7 +12650,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u35-0429",
@@ -11173,7 +12678,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u35-0430",
@@ -11197,7 +12706,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u35-0431",
@@ -11222,7 +12735,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u35-0432",
@@ -11250,7 +12767,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      45
+    ]
   },
   {
     "id": "u35-0433",
@@ -11277,7 +12798,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      43
+    ]
   },
   {
     "id": "u35-0434",
@@ -11302,7 +12827,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      48
+    ]
   },
   {
     "id": "u35-0435",
@@ -11335,7 +12864,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      42
+    ]
   },
   {
     "id": "u35-0436",
@@ -11359,7 +12892,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u35-0437",
@@ -11383,7 +12920,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      26
+    ]
   },
   {
     "id": "u35-0438",
@@ -11407,7 +12948,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0439",
@@ -11432,7 +12977,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      23
+    ]
   },
   {
     "id": "u35-0440",
@@ -11455,7 +13004,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      30
+    ]
   },
   {
     "id": "u35-0441",
@@ -11480,7 +13033,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      34
+    ]
   },
   {
     "id": "u35-0442",
@@ -11504,7 +13061,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      34
+    ]
   },
   {
     "id": "u35-0443",
@@ -11528,7 +13089,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      35
+    ]
   },
   {
     "id": "u35-0444",
@@ -11552,7 +13117,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      19
+    ]
   },
   {
     "id": "u35-0445",
@@ -11598,7 +13167,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u35-0447",
@@ -11621,7 +13194,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      28
+    ]
   },
   {
     "id": "u35-0448",
@@ -11671,7 +13248,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u35-0450",
@@ -11714,7 +13295,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "advice and permission with an infinitive",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u35-0452",
@@ -11742,7 +13327,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u35-0453",
@@ -11766,7 +13355,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u35-0454",
@@ -11793,7 +13386,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u35-0455",
@@ -11817,7 +13414,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u35-0456",
@@ -11841,7 +13442,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u35-0457",
@@ -11868,7 +13473,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u35-0458",
@@ -11890,7 +13499,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u35-0459",
@@ -11915,7 +13528,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u35-0460",
@@ -11940,7 +13557,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0461",
@@ -11967,7 +13588,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u35-0462",
@@ -11992,7 +13617,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      46
+    ]
   },
   {
     "id": "u35-0463",
@@ -12023,7 +13652,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      41
+    ]
   },
   {
     "id": "u35-0464",
@@ -12047,7 +13680,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u35-0465",
@@ -12071,7 +13708,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u35-0466",
@@ -12094,7 +13735,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u35-0467",
@@ -12119,7 +13764,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u35-0468",
@@ -12141,7 +13790,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u35-0469",
@@ -12168,7 +13821,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u35-0470",
@@ -12191,7 +13848,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u35-0471",
@@ -12216,7 +13877,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u35-0472",
@@ -12245,7 +13910,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u35-0473",
@@ -12271,7 +13940,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u35-0474",
@@ -12296,7 +13969,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      32
+    ]
   },
   {
     "id": "u35-0475",
@@ -12320,7 +13997,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u35-0476",
@@ -12344,7 +14025,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0477",
@@ -12370,7 +14055,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u35-0478",
@@ -12393,7 +14082,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u35-0479",
@@ -12418,7 +14111,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u35-0480",
@@ -12451,7 +14148,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u35-0481",
@@ -12476,7 +14177,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "early starts and late nights",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u35-0482",
@@ -12502,7 +14207,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0483",
@@ -12527,7 +14236,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0484",
@@ -12554,7 +14267,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0485",
@@ -12580,7 +14297,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0486",
@@ -12604,7 +14325,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0487",
@@ -12631,7 +14356,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0488",
@@ -12658,7 +14387,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0489",
@@ -12687,7 +14420,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0490",
@@ -12717,7 +14454,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u35-0491",
@@ -12742,7 +14483,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0492",
@@ -12768,7 +14513,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0493",
@@ -12798,7 +14547,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0494",
@@ -12822,7 +14575,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0495",
@@ -12850,7 +14607,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0496",
@@ -12874,7 +14635,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0497",
@@ -12898,7 +14663,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0498",
@@ -12924,7 +14693,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0499",
@@ -12949,7 +14722,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u35-0500",
@@ -12974,7 +14751,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0501",
@@ -13000,7 +14781,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0502",
@@ -13027,7 +14812,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0503",
@@ -13054,7 +14843,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0504",
@@ -13082,7 +14875,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0505",
@@ -13112,7 +14909,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0506",
@@ -13144,7 +14945,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0507",
@@ -13171,7 +14976,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0508",
@@ -13200,7 +15009,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      24
+    ]
   },
   {
     "id": "u35-0509",
@@ -13231,7 +15044,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0510",
@@ -13260,7 +15077,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u35-0511",
@@ -13284,7 +15105,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u35-0512",
@@ -13316,7 +15141,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      49
+    ]
   },
   {
     "id": "u35-0513",
@@ -13344,7 +15173,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      28
+    ]
   },
   {
     "id": "u35-0514",
@@ -13367,7 +15200,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u35-0515",
@@ -13391,7 +15228,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u35-0516",
@@ -13417,7 +15258,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "asking if they mind",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      27
+    ]
   },
   {
     "id": "u35-0517",
@@ -13459,7 +15304,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0519",
@@ -13482,7 +15331,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0520",
@@ -13507,7 +15360,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      21
+    ]
   },
   {
     "id": "u35-0521",
@@ -13529,7 +15386,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u35-0522",
@@ -13553,7 +15414,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0523",
@@ -13579,7 +15444,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      31
+    ]
   },
   {
     "id": "u35-0524",
@@ -13604,7 +15473,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0525",
@@ -13630,7 +15503,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0526",
@@ -13656,7 +15533,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u35-0527",
@@ -13681,7 +15562,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0528",
@@ -13726,7 +15611,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u35-0530",
@@ -13752,7 +15641,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u35-0531",
@@ -13779,7 +15672,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u35-0532",
@@ -13804,7 +15701,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0533",
@@ -13827,7 +15728,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0534",
@@ -13852,7 +15757,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0535",
@@ -13876,7 +15785,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u35-0536",
@@ -13904,7 +15817,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0537",
@@ -13926,7 +15843,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0538",
@@ -13949,7 +15870,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0539",
@@ -13991,7 +15916,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0541",
@@ -14016,7 +15945,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u35-0542",
@@ -14040,7 +15973,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      21
+    ]
   },
   {
     "id": "u35-0543",
@@ -14085,7 +16022,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0545",
@@ -14113,7 +16054,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u35-0546",
@@ -14139,7 +16084,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u35-0547",
@@ -14173,7 +16122,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0548",
@@ -14200,7 +16153,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0549",
@@ -14229,7 +16186,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0550",
@@ -14262,7 +16223,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u35-0551",
@@ -14291,7 +16256,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0552",
@@ -14319,7 +16288,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0553",
@@ -14346,7 +16319,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0554",
@@ -14369,7 +16346,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0555",
@@ -14393,7 +16374,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0556",
@@ -14419,7 +16404,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u35-0557",
@@ -14448,7 +16437,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u35-0558",
@@ -14472,7 +16465,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "asking permission and what is allowed",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0559",
@@ -14512,7 +16509,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0561",
@@ -14531,7 +16532,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0562",
@@ -14550,7 +16555,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0563",
@@ -14588,7 +16597,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u35-0565",
@@ -14611,7 +16624,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0566",
@@ -14639,7 +16656,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      30
+    ]
   },
   {
     "id": "u35-0567",
@@ -14666,7 +16687,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0568",
@@ -14694,7 +16719,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u35-0569",
@@ -14723,7 +16752,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      37
+    ]
   },
   {
     "id": "u35-0570",
@@ -14755,7 +16788,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      48
+    ]
   },
   {
     "id": "u35-0571",
@@ -14785,7 +16822,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u35-0572",
@@ -14818,7 +16859,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      48
+    ]
   },
   {
     "id": "u35-0573",
@@ -14845,7 +16890,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0574",
@@ -14874,7 +16923,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "prohibitions and signs",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      54,
+      68
+    ]
   },
   {
     "id": "u35-0575",
@@ -14901,7 +16954,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      28
+    ]
   },
   {
     "id": "u35-0576",
@@ -14927,7 +16984,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u35-0577",
@@ -14954,7 +17015,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      25
+    ]
   },
   {
     "id": "u35-0578",
@@ -14983,7 +17048,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u35-0579",
@@ -15009,7 +17078,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0580",
@@ -15034,7 +17107,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      27
+    ]
   },
   {
     "id": "u35-0581",
@@ -15061,7 +17138,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0582",
@@ -15088,7 +17169,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      45
+    ]
   },
   {
     "id": "u35-0583",
@@ -15111,7 +17196,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0584",
@@ -15136,7 +17225,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0585",
@@ -15161,7 +17254,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      41
+    ]
   },
   {
     "id": "u35-0586",
@@ -15189,7 +17286,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      47
+    ]
   },
   {
     "id": "u35-0587",
@@ -15220,7 +17321,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      46
+    ]
   },
   {
     "id": "u35-0588",
@@ -15249,7 +17354,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      29
+    ]
   },
   {
     "id": "u35-0589",
@@ -15277,7 +17386,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u35-0590",
@@ -15303,7 +17416,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u35-0591",
@@ -15333,7 +17450,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      31
+    ]
   },
   {
     "id": "u35-0592",
@@ -15360,7 +17481,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      39
+    ]
   },
   {
     "id": "u35-0593",
@@ -15387,7 +17512,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u35-0594",
@@ -15418,7 +17547,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "it is compulsory",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u35-0595",
@@ -15440,7 +17573,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0596",
@@ -15464,7 +17601,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0597",
@@ -15487,7 +17628,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0598",
@@ -15513,7 +17658,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0599",
@@ -15539,7 +17688,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0600",
@@ -15562,7 +17715,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0601",
@@ -15584,7 +17741,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u35-0602",
@@ -15611,7 +17772,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u35-0603",
@@ -15640,7 +17805,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u35-0604",
@@ -15663,7 +17832,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0605",
@@ -15691,7 +17864,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0606",
@@ -15717,7 +17894,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u35-0607",
@@ -15743,7 +17924,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0608",
@@ -15767,7 +17952,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0609",
@@ -15790,7 +17979,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0610",
@@ -15815,7 +18008,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0611",
@@ -15839,7 +18036,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0612",
@@ -15866,7 +18067,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u35-0613",
@@ -15889,7 +18094,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0614",
@@ -15913,7 +18122,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0615",
@@ -15943,7 +18156,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      40
+    ]
   },
   {
     "id": "u35-0616",
@@ -15971,7 +18188,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      36
+    ]
   },
   {
     "id": "u35-0617",
@@ -16000,7 +18221,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u35-0618",
@@ -16032,7 +18257,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      44
+    ]
   },
   {
     "id": "u35-0619",
@@ -16056,7 +18285,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u35-0620",
@@ -16088,7 +18321,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u35-0621",
@@ -16108,7 +18345,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u35-0622",
@@ -16134,7 +18375,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u35-0623",
@@ -16162,7 +18407,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      41
+    ]
   },
   {
     "id": "u35-0624",
@@ -16191,7 +18440,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      47
+    ]
   },
   {
     "id": "u35-0625",
@@ -16218,7 +18471,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "be careful",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      31
+    ]
   },
   {
     "id": "u35-0626",
@@ -16242,7 +18499,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u35-0627",
@@ -16266,7 +18527,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0628",
@@ -16289,7 +18554,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0629",
@@ -16312,7 +18581,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u35-0630",
@@ -16336,7 +18609,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0631",
@@ -16362,7 +18639,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      38
+    ]
   },
   {
     "id": "u35-0632",
@@ -16392,7 +18673,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0633",
@@ -16417,7 +18702,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      48
+    ]
   },
   {
     "id": "u35-0634",
@@ -16460,7 +18749,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0636",
@@ -16483,7 +18776,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0637",
@@ -16509,7 +18806,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0638",
@@ -16535,7 +18836,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0639",
@@ -16558,7 +18863,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0640",
@@ -16581,7 +18890,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0641",
@@ -16605,7 +18918,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0642",
@@ -16632,7 +18949,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0643",
@@ -16658,7 +18979,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0644",
@@ -16686,7 +19011,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0645",
@@ -16712,7 +19041,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0646",
@@ -16739,7 +19072,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0647",
@@ -16765,7 +19102,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      37
+    ]
   },
   {
     "id": "u35-0648",
@@ -16789,7 +19130,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u35-0649",
@@ -16817,7 +19162,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0650",
@@ -16844,7 +19193,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      45
+    ]
   },
   {
     "id": "u35-0651",
@@ -16869,7 +19222,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      36
+    ]
   },
   {
     "id": "u35-0652",
@@ -16896,7 +19253,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      41
+    ]
   },
   {
     "id": "u35-0653",
@@ -16924,7 +19285,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      25
+    ]
   },
   {
     "id": "u35-0654",
@@ -16949,7 +19314,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "mind you don't",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      37
+    ]
   },
   {
     "id": "u35-0655",
@@ -16972,7 +19341,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0656",
@@ -17034,7 +19407,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      39
+    ]
   },
   {
     "id": "u35-0659",
@@ -17060,7 +19437,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u35-0660",
@@ -17083,7 +19464,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u35-0661",
@@ -17110,7 +19495,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u35-0662",
@@ -17134,7 +19523,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u35-0663",
@@ -17160,7 +19553,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0664",
@@ -17184,7 +19581,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0665",
@@ -17215,7 +19616,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      23
+    ]
   },
   {
     "id": "u35-0666",
@@ -17241,7 +19646,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u35-0667",
@@ -17272,7 +19681,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u35-0668",
@@ -17297,7 +19710,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      33
+    ]
   },
   {
     "id": "u35-0669",
@@ -17326,7 +19743,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      40
+    ]
   },
   {
     "id": "u35-0670",
@@ -17354,7 +19775,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0671",
@@ -17383,7 +19808,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0672",
@@ -17411,7 +19840,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0673",
@@ -17440,7 +19873,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0674",
@@ -17505,7 +19942,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u35-0677",
@@ -17533,7 +19974,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u35-0678",
@@ -17557,7 +20002,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u35-0679",
@@ -17581,7 +20030,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0680",
@@ -17612,7 +20065,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      37
+    ]
   },
   {
     "id": "u35-0681",
@@ -17658,7 +20115,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      33
+    ]
   },
   {
     "id": "u35-0683",
@@ -17687,7 +20148,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u35-0684",
@@ -17716,7 +20181,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u35-0685",
@@ -17767,7 +20236,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "feeling unwell",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      38
+    ]
   },
   {
     "id": "u35-0687",
@@ -17793,7 +20266,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      21
+    ]
   },
   {
     "id": "u35-0688",
@@ -17840,7 +20317,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u35-0690",
@@ -17868,7 +20349,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0691",
@@ -17890,7 +20375,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      17
+    ]
   },
   {
     "id": "u35-0692",
@@ -17916,7 +20405,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u35-0693",
@@ -17941,7 +20434,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u35-0694",
@@ -17969,7 +20466,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0695",
@@ -17993,7 +20494,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u35-0696",
@@ -18022,7 +20527,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u35-0697",
@@ -18071,7 +20580,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0699",
@@ -18100,7 +20613,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      39
+    ]
   },
   {
     "id": "u35-0700",
@@ -18149,7 +20666,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u35-0702",
@@ -18176,7 +20697,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u35-0703",
@@ -18198,7 +20723,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u35-0704",
@@ -18226,7 +20755,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      51
+    ]
   },
   {
     "id": "u35-0705",
@@ -18252,7 +20785,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      43
+    ]
   },
   {
     "id": "u35-0706",
@@ -18308,7 +20845,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u35-0708",
@@ -18337,7 +20878,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "body positions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u35-0709",
@@ -18380,7 +20925,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      42
+    ]
   },
   {
     "id": "u35-0711",
@@ -18448,7 +20997,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u35-0714",
@@ -18475,7 +21028,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u35-0715",
@@ -18498,7 +21055,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      45
+    ]
   },
   {
     "id": "u35-0716",
@@ -18521,7 +21082,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u35-0717",
@@ -18545,7 +21110,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u35-0718",
@@ -18576,7 +21145,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u35-0719",
@@ -18599,7 +21172,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u35-0720",
@@ -18625,7 +21202,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u35-0721",
@@ -18648,7 +21229,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u35-0722",
@@ -18674,7 +21259,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u35-0723",
@@ -18699,7 +21288,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u35-0724",
@@ -18723,7 +21316,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u35-0725",
@@ -18747,7 +21344,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u35-0726",
@@ -18758,6 +21359,7 @@
     "requires": [
       "g:commands-usted",
       "g:gender-articles",
+      "g:por-para-2",
       "l:día",
       "l:jarabe",
       "l:tomar",
@@ -18771,7 +21373,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u35-0727",
@@ -18797,7 +21403,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u35-0728",
@@ -18823,7 +21433,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u35-0729",
@@ -18847,7 +21461,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u35-0730",
@@ -18874,7 +21492,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u35-0731",
@@ -18898,7 +21520,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      34
+    ]
   },
   {
     "id": "u35-0732",
@@ -18924,7 +21550,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u35-0733",
@@ -18947,7 +21577,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u35-0734",
@@ -18969,7 +21603,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u35-0735",
@@ -18992,7 +21630,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u35-0736",
@@ -19018,7 +21660,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "clinic vocabulary",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u35-0737",
@@ -19042,7 +21688,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      33
+    ]
   },
   {
     "id": "u35-0738",
@@ -19065,7 +21715,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u35-0739",
@@ -19090,7 +21744,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      42
+    ]
   },
   {
     "id": "u35-0740",
@@ -19112,7 +21770,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u35-0741",
@@ -19139,7 +21801,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u35-0742",
@@ -19164,7 +21830,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      42
+    ]
   },
   {
     "id": "u35-0743",
@@ -19187,7 +21857,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u35-0744",
@@ -19210,7 +21884,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u35-0745",
@@ -19235,7 +21913,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u35-0746",
@@ -19263,7 +21945,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u35-0747",
@@ -19285,7 +21971,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u35-0748",
@@ -19306,7 +21996,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u35-0749",
@@ -19327,7 +22021,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "blood, pain and the body",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u35-0750",
@@ -19351,7 +22049,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u35-0751",
@@ -19375,7 +22077,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0752",
@@ -19399,7 +22105,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u35-0753",
@@ -19425,7 +22135,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u35-0754",
@@ -19451,7 +22165,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u35-0755",
@@ -19478,7 +22196,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u35-0756",
@@ -19501,7 +22223,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u35-0757",
@@ -19527,7 +22253,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u35-0758",
@@ -19548,7 +22278,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u35-0759",
@@ -19578,7 +22312,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u35-0760",
@@ -19600,7 +22338,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u35-0761",
@@ -19623,7 +22365,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u35-0762",
@@ -19653,7 +22399,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0763",
@@ -19676,7 +22426,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u35-0764",
@@ -19702,7 +22456,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u35-0765",
@@ -19724,7 +22482,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "medicines, vaccines and questions",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u35-0766",
@@ -19750,7 +22512,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u35-0767",
@@ -19775,7 +22541,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0768",
@@ -19797,7 +22567,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u35-0769",
@@ -19824,7 +22598,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u35-0770",
@@ -19848,7 +22626,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0771",
@@ -19873,7 +22655,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u35-0772",
@@ -19895,7 +22681,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u35-0773",
@@ -19916,7 +22706,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u35-0774",
@@ -19941,7 +22735,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u35-0775",
@@ -19966,7 +22764,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      42
+    ]
   },
   {
     "id": "u35-0776",
@@ -19990,7 +22792,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u35-0777",
@@ -20015,7 +22821,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      33
+    ]
   },
   {
     "id": "u35-0778",
@@ -20037,7 +22847,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      36
+    ]
   },
   {
     "id": "u35-0779",
@@ -20059,7 +22873,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u35-0780",
@@ -20085,7 +22903,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u35-0781",
@@ -20107,7 +22929,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u35-0782",
@@ -20130,7 +22956,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      44
+    ]
   },
   {
     "id": "u35-0783",
@@ -20156,7 +22986,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0784",
@@ -20181,7 +23015,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u35-0785",
@@ -20207,7 +23045,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u35-0786",
@@ -20236,7 +23078,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u35-0787",
@@ -20258,7 +23104,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u35-0788",
@@ -20284,7 +23134,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u35-0789",
@@ -20311,7 +23165,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u35-0790",
@@ -20337,7 +23195,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0791",
@@ -20359,7 +23221,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u35-0792",
@@ -20386,7 +23252,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u35-0793",
@@ -20409,7 +23279,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u35-0794",
@@ -20432,7 +23306,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u35-0795",
@@ -20459,7 +23337,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u35-0796",
@@ -20482,7 +23364,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-0797",
@@ -20506,7 +23392,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u35-0798",
@@ -20531,7 +23421,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u35-0799",
@@ -20553,7 +23447,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u35-0800",
@@ -20578,7 +23476,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0801",
@@ -20604,7 +23506,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0802",
@@ -20628,7 +23534,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0803",
@@ -20656,7 +23566,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u35-0804",
@@ -20681,7 +23595,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u35-0805",
@@ -20703,7 +23621,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u35-0806",
@@ -20723,7 +23645,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0807",
@@ -20748,7 +23674,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0808",
@@ -20778,7 +23708,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u35-0809",
@@ -20801,7 +23735,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      29
+    ]
   },
   {
     "id": "u35-0810",
@@ -20826,7 +23764,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u35-0811",
@@ -20849,7 +23791,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u35-0812",
@@ -20872,7 +23818,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u35-0813",
@@ -20898,7 +23848,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u35-0814",
@@ -20924,7 +23878,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      50
+    ]
   },
   {
     "id": "u35-0815",
@@ -20949,7 +23907,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u35-0816",
@@ -20972,7 +23934,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u35-0817",
@@ -20996,7 +23962,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u35-0818",
@@ -21022,7 +23992,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u35-0819",
@@ -21048,7 +24022,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u35-0820",
@@ -21075,7 +24053,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u35-0821",
@@ -21099,7 +24081,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u35-0822",
@@ -21124,7 +24110,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u35-0823",
@@ -21146,7 +24136,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0824",
@@ -21170,7 +24164,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u35-0825",
@@ -21195,7 +24193,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u35-0826",
@@ -21219,7 +24221,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0827",
@@ -21242,7 +24248,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0828",
@@ -21264,7 +24274,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      43
+    ]
   },
   {
     "id": "u35-0829",
@@ -21285,7 +24299,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u35-0830",
@@ -21311,7 +24329,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u35-0831",
@@ -21334,7 +24356,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "money, rules and other lexemes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u35-0832",
@@ -21354,7 +24380,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0833",
@@ -21379,7 +24409,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0834",
@@ -21407,7 +24441,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0835",
@@ -21431,7 +24469,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u35-0836",
@@ -21455,7 +24497,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u35-0837",
@@ -21476,7 +24522,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0838",
@@ -21498,7 +24548,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u35-0839",
@@ -21525,7 +24579,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      47
+    ]
   },
   {
     "id": "u35-0840",
@@ -21554,7 +24612,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      40
+    ]
   },
   {
     "id": "u35-0841",
@@ -21581,7 +24643,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u35-0842",
@@ -21608,7 +24674,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u35-0843",
@@ -21633,7 +24703,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u35-0844",
@@ -21654,7 +24728,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0845",
@@ -21676,7 +24754,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u35-0846",
@@ -21703,7 +24785,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      22
+    ]
   },
   {
     "id": "u35-0847",
@@ -21773,7 +24859,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      48
+    ]
   },
   {
     "id": "u35-0850",
@@ -21798,7 +24888,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u35-0851",
@@ -21849,7 +24943,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u35-0853",
@@ -21927,7 +25025,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "ni se te ocurra and queues",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u35-0856",
@@ -22072,7 +25174,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "deber in advice and guesses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u35-0862",
@@ -22284,7 +25390,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "deber in advice and guesses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u35-0871",
@@ -22314,7 +25424,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "deber in advice and guesses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      41
+    ]
   },
   {
     "id": "u35-0872",
@@ -22359,7 +25473,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "deber in advice and guesses",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u35-0874",
@@ -22545,6 +25663,7 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-2",
       "g:present-ar",
       "l:día",
       "l:pastilla",
@@ -22559,7 +25678,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "por and para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u35-0882",
@@ -22611,6 +25734,7 @@
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:por-para-2",
       "g:ser-identity",
       "l:clínica",
       "l:gente",
@@ -22674,7 +25798,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "por and para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u35-0887",
@@ -22697,7 +25825,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "por and para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u35-0888",
@@ -22955,7 +26087,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "por and para",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0900",
@@ -23212,7 +26348,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u35-0911",
@@ -23241,7 +26381,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u35-0912",
@@ -23267,7 +26411,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u35-0913",
@@ -23289,7 +26437,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u35-0914",
@@ -23315,7 +26467,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u35-0915",
@@ -23343,7 +26499,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0916",
@@ -23368,7 +26528,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0917",
@@ -23394,7 +26558,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u35-0918",
@@ -23421,7 +26589,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u35-0919",
@@ -23450,7 +26622,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0920",
@@ -23479,7 +26655,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u35-0921",
@@ -23502,7 +26682,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u35-0922",
@@ -23530,7 +26714,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u35-0923",
@@ -23557,7 +26745,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0924",
@@ -23582,7 +26774,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0925",
@@ -23606,7 +26802,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u35-0926",
@@ -23632,7 +26832,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u35-0927",
@@ -23657,7 +26861,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0928",
@@ -23680,7 +26888,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0929",
@@ -23704,7 +26916,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u35-0930",
@@ -23731,7 +26947,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u35-0931",
@@ -23781,7 +27001,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      24
+    ]
   },
   {
     "id": "u35-0933",
@@ -23805,7 +27029,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u35-0934",
@@ -23855,7 +27083,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u35-0936",
@@ -23880,7 +27112,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      16
+    ]
   },
   {
     "id": "u35-0937",
@@ -23932,7 +27168,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u35-0939",
@@ -23960,7 +27200,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0940",
@@ -24011,7 +27255,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u35-0942",
@@ -24037,7 +27285,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u35-0943",
@@ -24085,7 +27337,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u35-0945",
@@ -24112,7 +27368,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u35-0946",
@@ -24140,7 +27400,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u35-0947",
@@ -24191,7 +27455,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u35-0949",
@@ -24217,7 +27485,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u35-0950",
@@ -24242,7 +27514,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u35-0951",
@@ -24266,7 +27542,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u35-0952",
@@ -24288,7 +27568,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u35-0953",
@@ -24332,7 +27616,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u35-0955",
@@ -24360,7 +27648,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u35-0956",
@@ -24383,7 +27675,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u35-0957",
@@ -24407,7 +27703,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u35-0958",
@@ -24432,7 +27732,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "extra shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u35-0959",
@@ -24458,7 +27762,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u35-0960",
@@ -24486,7 +27794,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u35-0961",
@@ -24508,7 +27820,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u35-0962",
@@ -24534,7 +27850,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u35-0963",
@@ -24558,7 +27878,11 @@
     "kind": "question",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u35-0964",
@@ -24581,7 +27905,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u35-0965",
@@ -24606,7 +27934,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u35-0966",
@@ -24634,7 +27966,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u35-0967",
@@ -24657,7 +27993,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u35-0968",
@@ -24682,7 +28022,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u35-0969",
@@ -24708,7 +28052,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u35-0970",
@@ -24733,6 +28081,10 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "last shortfalls",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      33
+    ]
   }
 ]

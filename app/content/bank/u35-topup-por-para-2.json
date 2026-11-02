@@ -140,6 +140,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:por-para-2",
       "g:present-ar",
       "l:café",
       "l:día",
@@ -156,7 +157,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "frequency and means",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u35-t-por-para-2-0008",
@@ -212,6 +217,7 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-2",
       "g:present-ar",
       "g:questions",
       "l:cuánto",
@@ -228,7 +234,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "frequency and means",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u35-t-por-para-2-0011",
@@ -237,6 +247,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:por-para-2",
       "g:present-er-ir",
       "l:comer",
       "l:día",
@@ -250,7 +261,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "frequency and means",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u35-t-por-para-2-0012",
@@ -580,6 +595,7 @@
       "c:hay",
       "g:gender-articles",
       "g:hay-vs-esta",
+      "g:por-para-2",
       "g:ser-identity",
       "l:café",
       "l:gente",
@@ -598,7 +614,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-t-por-para-2-0026",
@@ -608,6 +628,7 @@
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:por-para-2",
       "g:present-ar",
       "g:ser-identity",
       "l:animal",
@@ -623,7 +644,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-t-por-para-2-0027",
@@ -632,6 +657,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:por-para-2",
       "g:present-ar",
       "g:ser-identity",
       "l:joven",
@@ -648,7 +674,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-t-por-para-2-0028",
@@ -657,6 +687,7 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "g:por-para-2",
       "g:present-er-ir",
       "g:ser-identity",
       "l:calor",
@@ -674,7 +705,11 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u35-t-por-para-2-0029",
@@ -709,6 +744,7 @@
     "requires": [
       "c:que-rico",
       "g:estar-location-states",
+      "g:por-para-2",
       "g:ser-identity",
       "l:barato",
       "l:bueno",
@@ -727,7 +763,11 @@
     "kind": "dialogue",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u35-t-por-para-2-0031",
@@ -738,6 +778,7 @@
     "requires": [
       "g:estar-location-states",
       "g:gender-articles",
+      "g:por-para-2",
       "g:ser-identity",
       "l:domingo",
       "l:estar",
@@ -754,6 +795,10 @@
     "kind": "statement",
     "unit": "u35",
     "theme": "comparison",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   }
 ]

@@ -19,7 +19,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0002",
@@ -43,7 +47,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u25-0003",
@@ -66,7 +74,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0004",
@@ -90,7 +102,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u25-0005",
@@ -238,7 +254,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u25-0012",
@@ -260,7 +280,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0013",
@@ -283,7 +307,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      30
+    ]
   },
   {
     "id": "u25-0014",
@@ -307,7 +335,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0015",
@@ -398,7 +430,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u25-0019",
@@ -424,7 +460,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u25-0020",
@@ -446,7 +486,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      29
+    ]
   },
   {
     "id": "u25-0021",
@@ -468,7 +512,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0022",
@@ -537,7 +585,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u25-0025",
@@ -562,7 +614,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0026",
@@ -587,7 +643,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u25-0027",
@@ -611,7 +671,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0028",
@@ -682,7 +746,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      26
+    ]
   },
   {
     "id": "u25-0031",
@@ -727,7 +795,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u25-0033",
@@ -795,7 +867,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0036",
@@ -840,7 +916,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0038",
@@ -887,7 +967,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0040",
@@ -911,7 +995,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0041",
@@ -936,7 +1024,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0042",
@@ -963,7 +1055,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dar y decir a alguien",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0043",
@@ -987,7 +1083,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      45
+    ]
   },
   {
     "id": "u25-0044",
@@ -1009,7 +1109,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u25-0045",
@@ -1032,7 +1136,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u25-0046",
@@ -1059,7 +1167,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0047",
@@ -1081,7 +1193,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u25-0048",
@@ -1106,7 +1222,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0049",
@@ -1130,7 +1250,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      28
+    ]
   },
   {
     "id": "u25-0050",
@@ -1154,7 +1278,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0051",
@@ -1177,7 +1305,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0052",
@@ -1200,7 +1332,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0053",
@@ -1221,7 +1357,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0054",
@@ -1246,7 +1386,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u25-0055",
@@ -1271,7 +1415,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0056",
@@ -1293,7 +1441,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u25-0057",
@@ -1316,7 +1468,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0058",
@@ -1338,7 +1494,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0059",
@@ -1360,7 +1520,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0060",
@@ -1381,7 +1545,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u25-0061",
@@ -1446,7 +1614,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u25-0064",
@@ -1551,7 +1723,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      19
+    ]
   },
   {
     "id": "u25-0069",
@@ -1574,7 +1750,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0070",
@@ -1599,7 +1779,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u25-0071",
@@ -1621,7 +1805,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      24
+    ]
   },
   {
     "id": "u25-0072",
@@ -1644,7 +1832,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0073",
@@ -1666,7 +1858,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      28
+    ]
   },
   {
     "id": "u25-0074",
@@ -1691,7 +1887,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0075",
@@ -1713,7 +1913,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u25-0076",
@@ -1731,7 +1935,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u25-0077",
@@ -1756,7 +1964,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      42
+    ]
   },
   {
     "id": "u25-0078",
@@ -1777,7 +1989,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      25
+    ]
   },
   {
     "id": "u25-0079",
@@ -1801,7 +2017,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u25-0080",
@@ -1825,7 +2045,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u25-0081",
@@ -1848,7 +2072,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u25-0082",
@@ -1870,7 +2098,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      36
+    ]
   },
   {
     "id": "u25-0083",
@@ -1894,7 +2126,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u25-0084",
@@ -1918,7 +2154,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u25-0085",
@@ -1941,7 +2181,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u25-0086",
@@ -1964,7 +2208,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      28
+    ]
   },
   {
     "id": "u25-0087",
@@ -1991,7 +2239,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      48
+    ]
   },
   {
     "id": "u25-0088",
@@ -2039,7 +2291,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      37
+    ]
   },
   {
     "id": "u25-0090",
@@ -2064,7 +2320,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0091",
@@ -2087,7 +2347,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      17
+    ]
   },
   {
     "id": "u25-0092",
@@ -2110,7 +2374,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      25
+    ]
   },
   {
     "id": "u25-0093",
@@ -2132,7 +2400,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u25-0094",
@@ -2155,7 +2427,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0095",
@@ -2179,7 +2455,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u25-0096",
@@ -2201,7 +2481,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo se hace, adverbios en -mente",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      37
+    ]
   },
   {
     "id": "u25-0097",
@@ -2221,7 +2505,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0098",
@@ -2241,7 +2529,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0099",
@@ -2271,7 +2563,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      30
+    ]
   },
   {
     "id": "u25-0100",
@@ -2298,7 +2594,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      18
+    ]
   },
   {
     "id": "u25-0101",
@@ -2324,7 +2624,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      30
+    ]
   },
   {
     "id": "u25-0102",
@@ -2353,7 +2657,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      29
+    ]
   },
   {
     "id": "u25-0103",
@@ -2379,7 +2687,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0104",
@@ -2406,7 +2718,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      35
+    ]
   },
   {
     "id": "u25-0105",
@@ -2434,7 +2750,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      37
+    ]
   },
   {
     "id": "u25-0106",
@@ -2461,7 +2781,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      31
+    ]
   },
   {
     "id": "u25-0107",
@@ -2489,7 +2813,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      23
+    ]
   },
   {
     "id": "u25-0108",
@@ -2519,7 +2847,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      20
+    ]
   },
   {
     "id": "u25-0109",
@@ -2548,7 +2880,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0110",
@@ -2575,7 +2911,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      28
+    ]
   },
   {
     "id": "u25-0111",
@@ -2602,7 +2942,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      23
+    ]
   },
   {
     "id": "u25-0112",
@@ -2628,7 +2972,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      21
+    ]
   },
   {
     "id": "u25-0113",
@@ -2658,7 +3006,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0114",
@@ -2686,7 +3038,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      28
+    ]
   },
   {
     "id": "u25-0115",
@@ -2714,7 +3070,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u25-0116",
@@ -2738,7 +3098,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0117",
@@ -2791,7 +3155,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      17
+    ]
   },
   {
     "id": "u25-0119",
@@ -2818,7 +3186,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      38
+    ]
   },
   {
     "id": "u25-0120",
@@ -2845,7 +3217,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u25-0121",
@@ -2874,7 +3250,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      36
+    ]
   },
   {
     "id": "u25-0122",
@@ -2902,7 +3282,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      30
+    ]
   },
   {
     "id": "u25-0123",
@@ -2952,7 +3336,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      44
+    ]
   },
   {
     "id": "u25-0125",
@@ -2977,7 +3365,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0126",
@@ -3002,7 +3394,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      23
+    ]
   },
   {
     "id": "u25-0127",
@@ -3026,7 +3422,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u25-0128",
@@ -3055,7 +3455,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      19
+    ]
   },
   {
     "id": "u25-0129",
@@ -3083,7 +3487,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0130",
@@ -3109,7 +3517,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0131",
@@ -3134,7 +3546,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0132",
@@ -3188,7 +3604,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      27
+    ]
   },
   {
     "id": "u25-0134",
@@ -3216,7 +3636,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0135",
@@ -3244,7 +3668,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0136",
@@ -3270,7 +3698,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      28
+    ]
   },
   {
     "id": "u25-0137",
@@ -3298,7 +3730,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      18
+    ]
   },
   {
     "id": "u25-0138",
@@ -3324,7 +3760,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0139",
@@ -3358,7 +3798,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      35
+    ]
   },
   {
     "id": "u25-0140",
@@ -3385,7 +3829,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u25-0141",
@@ -3408,7 +3856,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u25-0142",
@@ -3429,7 +3881,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      22
+    ]
   },
   {
     "id": "u25-0143",
@@ -3457,7 +3913,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      20
+    ]
   },
   {
     "id": "u25-0144",
@@ -3484,7 +3944,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u25-0145",
@@ -3512,7 +3976,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u25-0146",
@@ -3541,7 +4009,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      49
+    ]
   },
   {
     "id": "u25-0147",
@@ -3569,7 +4041,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      31
+    ]
   },
   {
     "id": "u25-0148",
@@ -3597,7 +4073,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      26
+    ]
   },
   {
     "id": "u25-0149",
@@ -3622,7 +4102,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0150",
@@ -3650,7 +4134,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "lo que me dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0151",
@@ -3673,7 +4161,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u25-0152",
@@ -3694,7 +4186,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0153",
@@ -3714,7 +4210,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0154",
@@ -3738,7 +4238,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u25-0155",
@@ -3759,7 +4263,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0156",
@@ -3779,7 +4287,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u25-0157",
@@ -3799,7 +4311,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0158",
@@ -3819,7 +4335,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      30
+    ]
   },
   {
     "id": "u25-0159",
@@ -3844,7 +4364,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      24
+    ]
   },
   {
     "id": "u25-0160",
@@ -3868,7 +4392,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      50
+    ]
   },
   {
     "id": "u25-0161",
@@ -3892,7 +4420,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      48
+    ]
   },
   {
     "id": "u25-0162",
@@ -3917,7 +4449,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      29
+    ]
   },
   {
     "id": "u25-0163",
@@ -3941,7 +4477,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      43
+    ]
   },
   {
     "id": "u25-0164",
@@ -3967,7 +4507,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      46
+    ]
   },
   {
     "id": "u25-0165",
@@ -3998,7 +4542,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      41
+    ]
   },
   {
     "id": "u25-0166",
@@ -4021,7 +4569,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      42
+    ]
   },
   {
     "id": "u25-0167",
@@ -4050,7 +4602,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      40
+    ]
   },
   {
     "id": "u25-0168",
@@ -4078,7 +4634,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0169",
@@ -4103,7 +4663,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0170",
@@ -4127,7 +4691,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0171",
@@ -4149,7 +4717,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0172",
@@ -4170,7 +4742,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u25-0173",
@@ -4192,7 +4768,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u25-0174",
@@ -4216,7 +4796,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u25-0175",
@@ -4235,7 +4819,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u25-0176",
@@ -4255,7 +4843,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u25-0177",
@@ -4277,7 +4869,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0178",
@@ -4302,7 +4898,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u25-0179",
@@ -4328,7 +4928,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u25-0180",
@@ -4355,7 +4959,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u25-0181",
@@ -4393,7 +5001,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      31
+    ]
   },
   {
     "id": "u25-0183",
@@ -4417,7 +5029,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      39
+    ]
   },
   {
     "id": "u25-0184",
@@ -4470,7 +5086,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u25-0186",
@@ -4493,7 +5113,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0187",
@@ -4516,7 +5140,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u25-0188",
@@ -4543,7 +5171,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      42
+    ]
   },
   {
     "id": "u25-0189",
@@ -4566,7 +5198,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u25-0190",
@@ -4589,7 +5225,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      30
+    ]
   },
   {
     "id": "u25-0191",
@@ -4611,7 +5251,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u25-0192",
@@ -4635,7 +5279,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u25-0193",
@@ -4657,7 +5305,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u25-0194",
@@ -4683,7 +5335,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0195",
@@ -4706,7 +5362,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u25-0196",
@@ -4730,7 +5390,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0197",
@@ -4751,7 +5415,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u25-0198",
@@ -4773,7 +5441,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u25-0199",
@@ -4798,7 +5470,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u25-0200",
@@ -4822,7 +5498,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0201",
@@ -4847,7 +5527,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u25-0202",
@@ -4867,7 +5551,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      41
+    ]
   },
   {
     "id": "u25-0203",
@@ -4890,7 +5578,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u25-0204",
@@ -4915,7 +5607,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      49
+    ]
   },
   {
     "id": "u25-0205",
@@ -4936,7 +5632,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u25-0206",
@@ -4958,7 +5658,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u25-0207",
@@ -4982,7 +5686,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0208",
@@ -5004,7 +5712,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0209",
@@ -5030,7 +5742,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u25-0210",
@@ -5056,7 +5772,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0211",
@@ -5075,7 +5795,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u25-0212",
@@ -5101,7 +5825,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0213",
@@ -5126,7 +5854,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u25-0214",
@@ -5152,7 +5884,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      37
+    ]
   },
   {
     "id": "u25-0215",
@@ -5180,7 +5916,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      40
+    ]
   },
   {
     "id": "u25-0216",
@@ -5203,7 +5943,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u25-0217",
@@ -5224,7 +5968,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u25-0218",
@@ -5251,7 +5999,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u25-0219",
@@ -5274,7 +6026,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u25-0220",
@@ -5299,7 +6055,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u25-0221",
@@ -5320,7 +6080,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u25-0222",
@@ -5344,7 +6108,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "paisajes y clima",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u25-0223",
@@ -5363,7 +6131,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0224",
@@ -5390,7 +6162,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      59
+    ]
   },
   {
     "id": "u25-0225",
@@ -5413,7 +6189,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      26
+    ]
   },
   {
     "id": "u25-0226",
@@ -5434,7 +6214,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      15
+    ]
   },
   {
     "id": "u25-0227",
@@ -5453,7 +6237,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u25-0228",
@@ -5479,7 +6267,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      24
+    ]
   },
   {
     "id": "u25-0229",
@@ -5525,7 +6317,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      35
+    ]
   },
   {
     "id": "u25-0231",
@@ -5550,7 +6346,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      27
+    ]
   },
   {
     "id": "u25-0232",
@@ -5578,7 +6378,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      15
+    ]
   },
   {
     "id": "u25-0233",
@@ -5604,7 +6408,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      27
+    ]
   },
   {
     "id": "u25-0234",
@@ -5626,7 +6434,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      30
+    ]
   },
   {
     "id": "u25-0235",
@@ -5651,7 +6463,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      29
+    ]
   },
   {
     "id": "u25-0236",
@@ -5677,7 +6493,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      38
+    ]
   },
   {
     "id": "u25-0237",
@@ -5702,7 +6522,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      23
+    ]
   },
   {
     "id": "u25-0238",
@@ -5727,7 +6551,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u25-0239",
@@ -5751,7 +6579,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0240",
@@ -5777,7 +6609,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u25-0241",
@@ -5802,7 +6638,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      24
+    ]
   },
   {
     "id": "u25-0242",
@@ -5827,7 +6667,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      29
+    ]
   },
   {
     "id": "u25-0243",
@@ -5879,7 +6723,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      39
+    ]
   },
   {
     "id": "u25-0245",
@@ -5903,7 +6751,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u25-0246",
@@ -5929,7 +6781,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      28
+    ]
   },
   {
     "id": "u25-0247",
@@ -5953,7 +6809,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0248",
@@ -5979,7 +6839,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0249",
@@ -6005,7 +6869,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      40
+    ]
   },
   {
     "id": "u25-0250",
@@ -6031,7 +6899,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u25-0251",
@@ -6056,7 +6928,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      31
+    ]
   },
   {
     "id": "u25-0252",
@@ -6082,7 +6958,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      27
+    ]
   },
   {
     "id": "u25-0253",
@@ -6129,7 +7009,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      22
+    ]
   },
   {
     "id": "u25-0255",
@@ -6153,7 +7037,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      29
+    ]
   },
   {
     "id": "u25-0256",
@@ -6199,7 +7087,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      44
+    ]
   },
   {
     "id": "u25-0258",
@@ -6226,7 +7118,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      41
+    ]
   },
   {
     "id": "u25-0259",
@@ -6251,7 +7147,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u25-0260",
@@ -6275,7 +7175,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u25-0261",
@@ -6321,7 +7225,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      39
+    ]
   },
   {
     "id": "u25-0263",
@@ -6391,7 +7299,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      43
+    ]
   },
   {
     "id": "u25-0266",
@@ -6416,7 +7328,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      54
+    ]
   },
   {
     "id": "u25-0267",
@@ -6484,7 +7400,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0270",
@@ -6508,7 +7428,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u25-0271",
@@ -6533,7 +7457,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u25-0272",
@@ -6558,7 +7486,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      35
+    ]
   },
   {
     "id": "u25-0273",
@@ -6587,7 +7519,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "describir personas",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u25-0274",
@@ -6611,7 +7547,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u25-0275",
@@ -6636,7 +7576,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u25-0276",
@@ -6658,7 +7602,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0277",
@@ -6684,7 +7632,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u25-0278",
@@ -6709,7 +7661,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u25-0279",
@@ -6733,7 +7689,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u25-0280",
@@ -6758,7 +7718,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u25-0281",
@@ -6786,7 +7750,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0282",
@@ -6806,7 +7774,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u25-0283",
@@ -6831,7 +7803,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0284",
@@ -6852,7 +7828,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u25-0285",
@@ -6876,7 +7856,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u25-0286",
@@ -6898,7 +7882,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u25-0287",
@@ -6923,7 +7911,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u25-0288",
@@ -6943,7 +7935,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u25-0289",
@@ -6968,7 +7964,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      19
+    ]
   },
   {
     "id": "u25-0290",
@@ -6995,7 +7995,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      29
+    ]
   },
   {
     "id": "u25-0291",
@@ -7020,7 +8024,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u25-0292",
@@ -7043,7 +8051,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u25-0293",
@@ -7067,7 +8079,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0294",
@@ -7089,7 +8105,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u25-0295",
@@ -7111,7 +8131,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0296",
@@ -7136,7 +8160,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u25-0297",
@@ -7162,7 +8190,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      37
+    ]
   },
   {
     "id": "u25-0298",
@@ -7185,7 +8217,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u25-0299",
@@ -7205,7 +8241,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0300",
@@ -7227,7 +8267,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0301",
@@ -7253,7 +8297,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u25-0302",
@@ -7276,7 +8324,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u25-0303",
@@ -7297,7 +8349,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u25-0304",
@@ -7320,7 +8376,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u25-0305",
@@ -7344,7 +8404,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u25-0306",
@@ -7367,7 +8431,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u25-0307",
@@ -7390,7 +8458,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u25-0308",
@@ -7416,7 +8488,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u25-0309",
@@ -7442,7 +8518,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u25-0310",
@@ -7463,7 +8543,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u25-0311",
@@ -7487,7 +8571,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u25-0312",
@@ -7509,7 +8597,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u25-0313",
@@ -7532,7 +8624,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u25-0314",
@@ -7558,7 +8654,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u25-0315",
@@ -7584,7 +8684,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u25-0316",
@@ -7614,7 +8718,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      53
+    ]
   },
   {
     "id": "u25-0317",
@@ -7640,7 +8748,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      46
+    ]
   },
   {
     "id": "u25-0318",
@@ -7663,7 +8775,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u25-0319",
@@ -7687,7 +8803,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      38
+    ]
   },
   {
     "id": "u25-0320",
@@ -7717,7 +8837,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      43
+    ]
   },
   {
     "id": "u25-0321",
@@ -7740,7 +8864,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0322",
@@ -7765,7 +8893,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0323",
@@ -7788,7 +8920,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0324",
@@ -7813,7 +8949,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0325",
@@ -7839,7 +8979,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u25-0326",
@@ -7862,7 +9006,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0327",
@@ -7884,7 +9032,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pelearse, mentir, llorar (historias de familia)",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u25-0328",
@@ -7909,7 +9061,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0329",
@@ -7932,7 +9088,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      26
+    ]
   },
   {
     "id": "u25-0330",
@@ -8038,7 +9198,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0335",
@@ -8063,7 +9227,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u25-0336",
@@ -8085,7 +9253,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u25-0337",
@@ -8111,7 +9283,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u25-0338",
@@ -8137,7 +9313,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u25-0339",
@@ -8166,7 +9346,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      41
+    ]
   },
   {
     "id": "u25-0340",
@@ -8188,7 +9372,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0341",
@@ -8210,7 +9398,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0342",
@@ -8236,7 +9428,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u25-0343",
@@ -8258,7 +9454,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0344",
@@ -8284,7 +9484,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      45
+    ]
   },
   {
     "id": "u25-0345",
@@ -8306,7 +9510,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0346",
@@ -8328,7 +9536,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0347",
@@ -8352,7 +9564,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0348",
@@ -8376,7 +9592,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u25-0349",
@@ -8399,7 +9619,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u25-0350",
@@ -8423,7 +9647,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0351",
@@ -8446,7 +9674,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u25-0352",
@@ -8470,7 +9702,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u25-0353",
@@ -8492,7 +9728,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u25-0354",
@@ -8513,7 +9753,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      22
+    ]
   },
   {
     "id": "u25-0355",
@@ -8534,7 +9778,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u25-0356",
@@ -8555,7 +9803,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u25-0357",
@@ -8579,7 +9831,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u25-0358",
@@ -8602,7 +9858,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0359",
@@ -8624,7 +9884,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u25-0360",
@@ -8648,7 +9912,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u25-0361",
@@ -8736,7 +10004,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0365",
@@ -8761,7 +10033,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u25-0366",
@@ -8784,7 +10060,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0367",
@@ -8809,7 +10089,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      37
+    ]
   },
   {
     "id": "u25-0368",
@@ -8835,7 +10119,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0369",
@@ -8860,7 +10148,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u25-0370",
@@ -8881,7 +10173,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u25-0371",
@@ -8900,7 +10196,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u25-0372",
@@ -8923,7 +10223,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0373",
@@ -8945,7 +10249,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u25-0374",
@@ -8967,7 +10275,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u25-0375",
@@ -8991,7 +10303,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u25-0376",
@@ -9014,7 +10330,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u25-0377",
@@ -9038,7 +10358,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u25-0378",
@@ -9063,7 +10387,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u25-0379",
@@ -9088,7 +10416,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      31
+    ]
   },
   {
     "id": "u25-0380",
@@ -9113,7 +10445,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u25-0381",
@@ -9135,7 +10471,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u25-0382",
@@ -9156,7 +10496,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u25-0383",
@@ -9241,7 +10585,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "palabras de la semana",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u25-0387",
@@ -9262,7 +10610,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u25-0388",
@@ -9289,7 +10641,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u25-0389",
@@ -9309,7 +10665,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u25-0390",
@@ -9329,7 +10689,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u25-0391",
@@ -9351,7 +10715,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u25-0392",
@@ -9375,7 +10743,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u25-0393",
@@ -9399,7 +10771,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u25-0394",
@@ -9424,7 +10800,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      35
+    ]
   },
   {
     "id": "u25-0395",
@@ -9446,7 +10826,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u25-0396",
@@ -9469,7 +10853,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u25-0397",
@@ -9493,7 +10881,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u25-0398",
@@ -9518,7 +10910,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u25-0399",
@@ -9542,7 +10938,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u25-0400",
@@ -9567,7 +10967,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u25-0401",
@@ -9592,7 +10996,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u25-0402",
@@ -9617,7 +11025,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u25-0403",
@@ -9641,7 +11053,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u25-0404",
@@ -9663,7 +11079,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u25-0405",
@@ -9688,7 +11108,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      51
+    ]
   },
   {
     "id": "u25-0406",
@@ -9711,7 +11135,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u25-0407",
@@ -9733,7 +11161,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u25-0408",
@@ -9778,7 +11210,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u25-0410",
@@ -9798,7 +11234,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u25-0411",
@@ -9821,7 +11261,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u25-0412",
@@ -9862,7 +11306,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u25-0414",
@@ -9886,7 +11334,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u25-0415",
@@ -9906,7 +11358,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u25-0416",
@@ -9928,7 +11384,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u25-0417",
@@ -9952,7 +11412,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0418",
@@ -9974,7 +11438,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u25-0419",
@@ -9997,7 +11465,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      34
+    ]
   },
   {
     "id": "u25-0420",
@@ -10025,7 +11497,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u25-0421",
@@ -10050,7 +11526,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0422",
@@ -10075,7 +11555,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u25-0423",
@@ -10097,7 +11581,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u25-0424",
@@ -10121,7 +11609,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u25-0425",
@@ -10142,7 +11634,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u25-0426",
@@ -10168,7 +11664,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u25-0427",
@@ -10190,7 +11690,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u25-0428",
@@ -10214,7 +11718,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u25-0429",
@@ -10236,7 +11744,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u25-0430",
@@ -10260,7 +11772,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u25-0431",
@@ -10283,7 +11799,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u25-0432",
@@ -10307,7 +11827,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u25-0433",
@@ -10331,7 +11855,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u25-0434",
@@ -10357,7 +11885,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u25-0435",
@@ -10386,7 +11918,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u25-0436",
@@ -10410,7 +11946,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0437",
@@ -10433,7 +11973,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u25-0438",
@@ -10456,7 +12000,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u25-0439",
@@ -10480,7 +12028,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u25-0440",
@@ -10504,7 +12056,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "pertenecer, contener, alejar, extraño",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u25-0441",
@@ -10530,7 +12086,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      32
+    ]
   },
   {
     "id": "u25-0442",
@@ -10555,7 +12115,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      41
+    ]
   },
   {
     "id": "u25-0443",
@@ -10579,7 +12143,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      31
+    ]
   },
   {
     "id": "u25-0444",
@@ -10602,7 +12170,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      42
+    ]
   },
   {
     "id": "u25-0445",
@@ -10626,7 +12198,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0446",
@@ -10654,7 +12230,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0447",
@@ -10683,7 +12263,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0448",
@@ -10706,7 +12290,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0449",
@@ -10727,7 +12315,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0450",
@@ -10750,7 +12342,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      41
+    ]
   },
   {
     "id": "u25-0451",
@@ -10777,7 +12373,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      30
+    ]
   },
   {
     "id": "u25-0452",
@@ -10802,7 +12402,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      30
+    ]
   },
   {
     "id": "u25-0453",
@@ -10827,7 +12431,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u25-0454",
@@ -10850,7 +12458,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0455",
@@ -10873,7 +12485,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      28
+    ]
   },
   {
     "id": "u25-0456",
@@ -10896,7 +12512,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u25-0457",
@@ -10940,7 +12560,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0459",
@@ -10964,7 +12588,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u25-0460",
@@ -10987,7 +12615,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0461",
@@ -11012,7 +12644,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0462",
@@ -11036,7 +12672,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0463",
@@ -11059,7 +12699,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0464",
@@ -11082,7 +12726,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0465",
@@ -11106,7 +12754,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u25-0466",
@@ -11129,7 +12781,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      23
+    ]
   },
   {
     "id": "u25-0467",
@@ -11152,7 +12808,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u25-0468",
@@ -11196,7 +12856,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u25-0470",
@@ -11219,7 +12883,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u25-0471",
@@ -11242,7 +12910,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0472",
@@ -11266,7 +12938,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0473",
@@ -11289,7 +12965,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      26
+    ]
   },
   {
     "id": "u25-0474",
@@ -11312,7 +12992,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0475",
@@ -11354,7 +13038,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      30
+    ]
   },
   {
     "id": "u25-0477",
@@ -11377,7 +13065,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u25-0478",
@@ -11400,7 +13092,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0479",
@@ -11423,7 +13119,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0480",
@@ -11446,7 +13146,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0481",
@@ -11471,7 +13175,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u25-0482",
@@ -11493,7 +13201,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      24
+    ]
   },
   {
     "id": "u25-0483",
@@ -11515,7 +13227,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      19
+    ]
   },
   {
     "id": "u25-0484",
@@ -11538,7 +13254,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u25-0485",
@@ -11560,7 +13280,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      17
+    ]
   },
   {
     "id": "u25-0486",
@@ -11582,7 +13306,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      28
+    ]
   },
   {
     "id": "u25-0487",
@@ -11607,7 +13335,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      26
+    ]
   },
   {
     "id": "u25-0488",
@@ -11629,7 +13361,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      26
+    ]
   },
   {
     "id": "u25-0489",
@@ -11673,7 +13409,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      26
+    ]
   },
   {
     "id": "u25-0491",
@@ -11823,7 +13563,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      21
+    ]
   },
   {
     "id": "u25-0498",
@@ -11872,7 +13616,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      14
+    ]
   },
   {
     "id": "u25-0500",
@@ -11898,7 +13646,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      33
+    ]
   },
   {
     "id": "u25-0501",
@@ -11946,7 +13698,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      20
+    ]
   },
   {
     "id": "u25-0503",
@@ -11969,7 +13725,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u25-0504",
@@ -12011,7 +13771,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u25-0506",
@@ -12036,7 +13800,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u25-0507",
@@ -12064,7 +13832,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0508",
@@ -12107,7 +13879,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      29
+    ]
   },
   {
     "id": "u25-0510",
@@ -12134,7 +13910,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0511",
@@ -12159,7 +13939,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      33
+    ]
   },
   {
     "id": "u25-0512",
@@ -12184,7 +13968,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      32
+    ]
   },
   {
     "id": "u25-0513",
@@ -12212,7 +14000,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      27
+    ]
   },
   {
     "id": "u25-0514",
@@ -12238,7 +14030,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      33
+    ]
   },
   {
     "id": "u25-0515",
@@ -12265,7 +14061,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u25-0516",
@@ -12289,7 +14089,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      28
+    ]
   },
   {
     "id": "u25-0517",
@@ -12317,7 +14121,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      28
+    ]
   },
   {
     "id": "u25-0518",
@@ -12342,7 +14150,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u25-0519",
@@ -12367,7 +14179,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      33
+    ]
   },
   {
     "id": "u25-0520",
@@ -12394,7 +14210,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      34
+    ]
   },
   {
     "id": "u25-0521",
@@ -12420,7 +14240,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      35
+    ]
   },
   {
     "id": "u25-0522",
@@ -12445,7 +14269,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      29
+    ]
   },
   {
     "id": "u25-0523",
@@ -12490,7 +14318,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      31
+    ]
   },
   {
     "id": "u25-0525",
@@ -12514,7 +14346,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u25-0526",
@@ -12537,7 +14373,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      26
+    ]
   },
   {
     "id": "u25-0527",
@@ -12562,7 +14402,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      38
+    ]
   },
   {
     "id": "u25-0528",
@@ -12587,7 +14431,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0529",
@@ -12607,7 +14455,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      29
+    ]
   },
   {
     "id": "u25-0530",
@@ -12630,7 +14482,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      32
+    ]
   },
   {
     "id": "u25-0531",
@@ -12652,7 +14508,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      21
+    ]
   },
   {
     "id": "u25-0532",
@@ -12674,7 +14534,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      23
+    ]
   },
   {
     "id": "u25-0533",
@@ -12696,7 +14560,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      32
+    ]
   },
   {
     "id": "u25-0534",
@@ -12719,7 +14587,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      44
+    ]
   },
   {
     "id": "u25-0535",
@@ -12743,7 +14615,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      38
+    ]
   },
   {
     "id": "u25-0536",
@@ -12765,7 +14641,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      28
+    ]
   },
   {
     "id": "u25-0537",
@@ -12787,7 +14667,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      36
+    ]
   },
   {
     "id": "u25-0538",
@@ -12808,7 +14692,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      32
+    ]
   },
   {
     "id": "u25-0539",
@@ -12831,7 +14719,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      37
+    ]
   },
   {
     "id": "u25-0540",
@@ -12852,7 +14744,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      33
+    ]
   },
   {
     "id": "u25-0541",
@@ -12875,7 +14771,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "a quién se lo digo",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      34
+    ]
   },
   {
     "id": "u25-0542",
@@ -12907,7 +14807,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      27
+    ]
   },
   {
     "id": "u25-0543",
@@ -12931,7 +14835,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      25
+    ]
   },
   {
     "id": "u25-0544",
@@ -12960,7 +14868,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      32
+    ]
   },
   {
     "id": "u25-0545",
@@ -12987,7 +14899,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      36
+    ]
   },
   {
     "id": "u25-0546",
@@ -13018,7 +14934,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      29
+    ]
   },
   {
     "id": "u25-0547",
@@ -13046,7 +14966,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      30
+    ]
   },
   {
     "id": "u25-0548",
@@ -13123,7 +15047,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      30
+    ]
   },
   {
     "id": "u25-0551",
@@ -13150,7 +15078,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      27
+    ]
   },
   {
     "id": "u25-0552",
@@ -13178,7 +15110,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      31
+    ]
   },
   {
     "id": "u25-0553",
@@ -13206,7 +15142,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      36
+    ]
   },
   {
     "id": "u25-0554",
@@ -13236,7 +15176,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      34
+    ]
   },
   {
     "id": "u25-0555",
@@ -13261,7 +15205,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      28
+    ]
   },
   {
     "id": "u25-0556",
@@ -13292,7 +15240,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      19
+    ]
   },
   {
     "id": "u25-0557",
@@ -13318,7 +15270,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      18
+    ]
   },
   {
     "id": "u25-0558",
@@ -13350,7 +15306,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0559",
@@ -13379,7 +15339,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0560",
@@ -13406,7 +15370,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0561",
@@ -13437,7 +15405,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      15
+    ]
   },
   {
     "id": "u25-0562",
@@ -13465,7 +15437,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      17
+    ]
   },
   {
     "id": "u25-0563",
@@ -13494,7 +15470,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      21
+    ]
   },
   {
     "id": "u25-0564",
@@ -13522,7 +15502,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u25-0565",
@@ -13553,7 +15537,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0566",
@@ -13579,7 +15567,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      29
+    ]
   },
   {
     "id": "u25-0567",
@@ -13602,7 +15594,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      21
+    ]
   },
   {
     "id": "u25-0568",
@@ -13627,7 +15623,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      25
+    ]
   },
   {
     "id": "u25-0569",
@@ -13656,7 +15656,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      31
+    ]
   },
   {
     "id": "u25-0570",
@@ -13685,7 +15689,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u25-0571",
@@ -13714,7 +15722,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u25-0572",
@@ -13764,7 +15776,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0574",
@@ -13792,7 +15808,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      28
+    ]
   },
   {
     "id": "u25-0575",
@@ -13820,7 +15840,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0576",
@@ -13849,7 +15873,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      24
+    ]
   },
   {
     "id": "u25-0577",
@@ -13875,7 +15903,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      27
+    ]
   },
   {
     "id": "u25-0578",
@@ -13904,7 +15936,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      27
+    ]
   },
   {
     "id": "u25-0579",
@@ -13956,7 +15992,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      26
+    ]
   },
   {
     "id": "u25-0581",
@@ -13983,7 +16023,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      39
+    ]
   },
   {
     "id": "u25-0582",
@@ -14010,7 +16054,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      30
+    ]
   },
   {
     "id": "u25-0583",
@@ -14038,7 +16086,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      37
+    ]
   },
   {
     "id": "u25-0584",
@@ -14086,7 +16138,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u25-0586",
@@ -14132,7 +16188,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      26
+    ]
   },
   {
     "id": "u25-0588",
@@ -14158,7 +16218,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u25-0589",
@@ -14184,7 +16248,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0590",
@@ -14215,7 +16283,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0591",
@@ -14242,7 +16314,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0592",
@@ -14269,7 +16345,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0593",
@@ -14299,7 +16379,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0594",
@@ -14325,7 +16409,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      39
+    ]
   },
   {
     "id": "u25-0595",
@@ -14355,7 +16443,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      33
+    ]
   },
   {
     "id": "u25-0596",
@@ -14382,7 +16474,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      49
+    ]
   },
   {
     "id": "u25-0597",
@@ -14413,7 +16509,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      46
+    ]
   },
   {
     "id": "u25-0598",
@@ -14441,7 +16541,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      32
+    ]
   },
   {
     "id": "u25-0599",
@@ -14470,7 +16574,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      31
+    ]
   },
   {
     "id": "u25-0600",
@@ -14500,7 +16608,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u25-0601",
@@ -14529,7 +16641,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      31
+    ]
   },
   {
     "id": "u25-0602",
@@ -14557,7 +16673,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      46
+    ]
   },
   {
     "id": "u25-0603",
@@ -14583,7 +16703,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      29
+    ]
   },
   {
     "id": "u25-0604",
@@ -14615,7 +16739,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      54
+    ]
   },
   {
     "id": "u25-0605",
@@ -14647,7 +16775,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      40
+    ]
   },
   {
     "id": "u25-0606",
@@ -14678,7 +16810,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      51
+    ]
   },
   {
     "id": "u25-0607",
@@ -14708,7 +16844,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      35
+    ]
   },
   {
     "id": "u25-0608",
@@ -14736,7 +16876,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      32
+    ]
   },
   {
     "id": "u25-0609",
@@ -14766,7 +16910,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      29
+    ]
   },
   {
     "id": "u25-0610",
@@ -14793,7 +16941,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u25-0611",
@@ -14817,7 +16969,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u25-0612",
@@ -14841,7 +16997,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      27
+    ]
   },
   {
     "id": "u25-0613",
@@ -14866,7 +17026,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      26
+    ]
   },
   {
     "id": "u25-0614",
@@ -14895,7 +17059,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      41
+    ]
   },
   {
     "id": "u25-0615",
@@ -14947,7 +17115,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u25-0617",
@@ -14976,7 +17148,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u25-0618",
@@ -15001,7 +17177,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      33
+    ]
   },
   {
     "id": "u25-0619",
@@ -15027,7 +17207,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "dijo que, contó que",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      34
+    ]
   },
   {
     "id": "u25-0620",
@@ -15051,7 +17235,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u25-0621",
@@ -15073,7 +17261,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u25-0622",
@@ -15097,7 +17289,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u25-0623",
@@ -15122,7 +17318,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      30
+    ]
   },
   {
     "id": "u25-0624",
@@ -15148,7 +17348,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      24
+    ]
   },
   {
     "id": "u25-0625",
@@ -15169,7 +17373,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      21
+    ]
   },
   {
     "id": "u25-0626",
@@ -15193,7 +17401,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      22
+    ]
   },
   {
     "id": "u25-0627",
@@ -15216,7 +17428,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      24
+    ]
   },
   {
     "id": "u25-0628",
@@ -15239,7 +17455,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      15
+    ]
   },
   {
     "id": "u25-0629",
@@ -15260,7 +17480,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u25-0630",
@@ -15283,7 +17507,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u25-0631",
@@ -15307,7 +17535,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      31
+    ]
   },
   {
     "id": "u25-0632",
@@ -15329,7 +17561,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u25-0633",
@@ -15375,7 +17611,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      29
+    ]
   },
   {
     "id": "u25-0635",
@@ -15396,7 +17636,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      28
+    ]
   },
   {
     "id": "u25-0636",
@@ -15422,7 +17666,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      34
+    ]
   },
   {
     "id": "u25-0637",
@@ -15445,7 +17693,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      39
+    ]
   },
   {
     "id": "u25-0638",
@@ -15467,7 +17719,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      32
+    ]
   },
   {
     "id": "u25-0639",
@@ -15491,7 +17747,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      44
+    ]
   },
   {
     "id": "u25-0640",
@@ -15512,7 +17772,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      29
+    ]
   },
   {
     "id": "u25-0641",
@@ -15534,7 +17798,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      30
+    ]
   },
   {
     "id": "u25-0642",
@@ -15558,7 +17826,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u25-0643",
@@ -15580,7 +17852,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      33
+    ]
   },
   {
     "id": "u25-0644",
@@ -15602,7 +17878,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      20
+    ]
   },
   {
     "id": "u25-0645",
@@ -15623,7 +17903,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u25-0646",
@@ -15645,7 +17929,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      23
+    ]
   },
   {
     "id": "u25-0647",
@@ -15666,7 +17954,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u25-0648",
@@ -15689,7 +17981,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      31
+    ]
   },
   {
     "id": "u25-0649",
@@ -15710,7 +18006,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0650",
@@ -15731,7 +18031,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0651",
@@ -15759,7 +18063,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0652",
@@ -15783,7 +18091,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0653",
@@ -15807,7 +18119,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u25-0654",
@@ -15830,7 +18146,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0655",
@@ -15852,7 +18172,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0656",
@@ -15874,7 +18198,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0657",
@@ -15897,7 +18225,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0658",
@@ -15922,7 +18254,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0659",
@@ -15945,7 +18281,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      32
+    ]
   },
   {
     "id": "u25-0660",
@@ -15969,7 +18309,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0661",
@@ -15992,7 +18336,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      29
+    ]
   },
   {
     "id": "u25-0662",
@@ -16012,7 +18360,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u25-0663",
@@ -16034,7 +18386,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u25-0664",
@@ -16059,7 +18415,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      26
+    ]
   },
   {
     "id": "u25-0665",
@@ -16081,7 +18441,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u25-0666",
@@ -16103,7 +18467,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u25-0667",
@@ -16225,7 +18593,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "cómo lo hacen",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u25-0673",
@@ -16324,7 +18696,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u25-0677",
@@ -16347,7 +18723,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u25-0678",
@@ -16371,7 +18751,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u25-0679",
@@ -16401,7 +18785,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      41
+    ]
   },
   {
     "id": "u25-0680",
@@ -16428,7 +18816,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u25-0681",
@@ -16452,7 +18844,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u25-0682",
@@ -16501,7 +18897,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u25-0684",
@@ -16578,7 +18978,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      18
+    ]
   },
   {
     "id": "u25-0687",
@@ -16603,7 +19007,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u25-0688",
@@ -16634,7 +19042,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u25-0689",
@@ -16682,7 +19094,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      56
+    ]
   },
   {
     "id": "u25-0691",
@@ -16710,7 +19126,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      28
+    ]
   },
   {
     "id": "u25-0692",
@@ -16731,7 +19151,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u25-0693",
@@ -16760,7 +19184,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      40
+    ]
   },
   {
     "id": "u25-0694",
@@ -16787,7 +19215,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u25-0695",
@@ -16816,7 +19248,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u25-0696",
@@ -16845,7 +19281,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u25-0697",
@@ -16869,7 +19309,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u25-0698",
@@ -16896,7 +19340,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      53,
+      59
+    ]
   },
   {
     "id": "u25-0699",
@@ -16925,7 +19373,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u25-0700",
@@ -16953,7 +19405,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      23
+    ]
   },
   {
     "id": "u25-0701",
@@ -16980,7 +19436,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0702",
@@ -17011,7 +19471,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u25-0703",
@@ -17038,7 +19502,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u25-0704",
@@ -17065,7 +19533,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u25-0705",
@@ -17091,7 +19563,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      28
+    ]
   },
   {
     "id": "u25-0706",
@@ -17114,7 +19590,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      43
+    ]
   },
   {
     "id": "u25-0707",
@@ -17136,7 +19616,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u25-0708",
@@ -17161,7 +19645,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u25-0709",
@@ -17181,7 +19669,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u25-0710",
@@ -17207,7 +19699,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u25-0711",
@@ -17233,7 +19729,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u25-0712",
@@ -17255,7 +19755,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0713",
@@ -17281,7 +19785,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u25-0714",
@@ -17304,7 +19812,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u25-0715",
@@ -17334,7 +19846,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u25-0716",
@@ -17394,7 +19910,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      37
+    ]
   },
   {
     "id": "u25-0718",
@@ -17447,7 +19967,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u25-0720",
@@ -17473,7 +19997,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      31
+    ]
   },
   {
     "id": "u25-0721",
@@ -17555,7 +20083,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      42
+    ]
   },
   {
     "id": "u25-0724",
@@ -17654,7 +20186,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u25-0728",
@@ -17679,7 +20215,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0729",
@@ -17705,7 +20245,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0730",
@@ -17730,7 +20274,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0731",
@@ -17757,7 +20305,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      46
+    ]
   },
   {
     "id": "u25-0732",
@@ -17785,7 +20337,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u25-0733",
@@ -17812,7 +20368,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      43
+    ]
   },
   {
     "id": "u25-0734",
@@ -17844,7 +20404,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "conversaciones del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      48
+    ]
   },
   {
     "id": "u25-0735",
@@ -17869,7 +20433,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      29
+    ]
   },
   {
     "id": "u25-0736",
@@ -17898,7 +20466,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0737",
@@ -17922,7 +20494,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0738",
@@ -17947,7 +20523,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      29
+    ]
   },
   {
     "id": "u25-0739",
@@ -17976,7 +20556,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      37
+    ]
   },
   {
     "id": "u25-0740",
@@ -18000,7 +20584,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      22
+    ]
   },
   {
     "id": "u25-0741",
@@ -18025,7 +20613,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      23
+    ]
   },
   {
     "id": "u25-0742",
@@ -18049,7 +20641,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      27
+    ]
   },
   {
     "id": "u25-0743",
@@ -18075,7 +20671,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      27
+    ]
   },
   {
     "id": "u25-0744",
@@ -18101,7 +20701,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0745",
@@ -18128,7 +20732,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      34
+    ]
   },
   {
     "id": "u25-0746",
@@ -18154,7 +20762,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      29
+    ]
   },
   {
     "id": "u25-0747",
@@ -18180,7 +20792,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      30
+    ]
   },
   {
     "id": "u25-0748",
@@ -18206,7 +20822,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      27
+    ]
   },
   {
     "id": "u25-0749",
@@ -18252,7 +20872,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0751",
@@ -18276,7 +20900,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      28
+    ]
   },
   {
     "id": "u25-0752",
@@ -18322,7 +20950,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      24
+    ]
   },
   {
     "id": "u25-0754",
@@ -18348,7 +20980,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      30
+    ]
   },
   {
     "id": "u25-0755",
@@ -18372,7 +21008,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      35
+    ]
   },
   {
     "id": "u25-0756",
@@ -18398,7 +21038,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      36
+    ]
   },
   {
     "id": "u25-0757",
@@ -18425,7 +21069,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      39
+    ]
   },
   {
     "id": "u25-0758",
@@ -18450,7 +21098,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      32
+    ]
   },
   {
     "id": "u25-0759",
@@ -18473,7 +21125,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      39
+    ]
   },
   {
     "id": "u25-0760",
@@ -18501,7 +21157,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      37
+    ]
   },
   {
     "id": "u25-0761",
@@ -18529,7 +21189,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u25-0762",
@@ -18557,7 +21221,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      43
+    ]
   },
   {
     "id": "u25-0763",
@@ -18583,7 +21251,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      41
+    ]
   },
   {
     "id": "u25-0764",
@@ -18611,7 +21283,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      51
+    ]
   },
   {
     "id": "u25-0765",
@@ -18667,7 +21343,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      44
+    ]
   },
   {
     "id": "u25-0767",
@@ -18691,7 +21371,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      32
+    ]
   },
   {
     "id": "u25-0768",
@@ -18717,7 +21401,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      46
+    ]
   },
   {
     "id": "u25-0769",
@@ -18746,7 +21434,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      37
+    ]
   },
   {
     "id": "u25-0770",
@@ -18773,7 +21465,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      42
+    ]
   },
   {
     "id": "u25-0771",
@@ -18821,7 +21517,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u25-0773",
@@ -18846,7 +21546,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u25-0774",
@@ -18874,7 +21578,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      56
+    ]
   },
   {
     "id": "u25-0775",
@@ -18906,7 +21614,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      44
+    ]
   },
   {
     "id": "u25-0776",
@@ -18933,7 +21645,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u25-0777",
@@ -18964,7 +21680,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0778",
@@ -18990,7 +21710,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      29
+    ]
   },
   {
     "id": "u25-0779",
@@ -19016,7 +21740,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "quién es quién en la feria",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      27
+    ]
   },
   {
     "id": "u25-0780",
@@ -19047,7 +21775,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      28
+    ]
   },
   {
     "id": "u25-0781",
@@ -19075,7 +21807,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      36
+    ]
   },
   {
     "id": "u25-0782",
@@ -19105,7 +21841,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      35
+    ]
   },
   {
     "id": "u25-0783",
@@ -19131,7 +21871,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      26
+    ]
   },
   {
     "id": "u25-0784",
@@ -19161,7 +21905,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      33
+    ]
   },
   {
     "id": "u25-0785",
@@ -19188,7 +21936,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      34
+    ]
   },
   {
     "id": "u25-0786",
@@ -19216,7 +21968,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      25
+    ]
   },
   {
     "id": "u25-0787",
@@ -19243,7 +21999,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0788",
@@ -19272,7 +22032,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0789",
@@ -19301,7 +22065,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0790",
@@ -19330,7 +22098,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u25-0791",
@@ -19362,7 +22134,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0792",
@@ -19388,7 +22164,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u25-0793",
@@ -19417,7 +22197,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u25-0794",
@@ -19445,7 +22229,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u25-0795",
@@ -19499,7 +22287,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0797",
@@ -19524,7 +22316,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      37
+    ]
   },
   {
     "id": "u25-0798",
@@ -19553,7 +22349,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u25-0799",
@@ -19584,7 +22384,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      22
+    ]
   },
   {
     "id": "u25-0800",
@@ -19612,7 +22416,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0801",
@@ -19643,7 +22451,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      48
+    ]
   },
   {
     "id": "u25-0802",
@@ -19669,7 +22481,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      25
+    ]
   },
   {
     "id": "u25-0803",
@@ -19694,7 +22510,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0804",
@@ -19719,7 +22539,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      25
+    ]
   },
   {
     "id": "u25-0805",
@@ -19745,7 +22569,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      30
+    ]
   },
   {
     "id": "u25-0806",
@@ -19773,7 +22601,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      33
+    ]
   },
   {
     "id": "u25-0807",
@@ -19811,7 +22643,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      34
+    ]
   },
   {
     "id": "u25-0808",
@@ -19837,7 +22673,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u25-0809",
@@ -19864,7 +22704,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      39
+    ]
   },
   {
     "id": "u25-0810",
@@ -19894,7 +22738,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      35
+    ]
   },
   {
     "id": "u25-0811",
@@ -19945,7 +22793,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u25-0813",
@@ -19973,7 +22825,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      34
+    ]
   },
   {
     "id": "u25-0814",
@@ -20002,7 +22858,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      33
+    ]
   },
   {
     "id": "u25-0815",
@@ -20033,7 +22893,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      35
+    ]
   },
   {
     "id": "u25-0816",
@@ -20066,7 +22930,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      48
+    ]
   },
   {
     "id": "u25-0817",
@@ -20093,7 +22961,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u25-0818",
@@ -20142,7 +23014,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      38
+    ]
   },
   {
     "id": "u25-0820",
@@ -20169,7 +23045,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u25-0821",
@@ -20199,7 +23079,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      29
+    ]
   },
   {
     "id": "u25-0822",
@@ -20230,7 +23114,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      31
+    ]
   },
   {
     "id": "u25-0823",
@@ -20262,7 +23150,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      44
+    ]
   },
   {
     "id": "u25-0824",
@@ -20294,7 +23186,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      47
+    ]
   },
   {
     "id": "u25-0825",
@@ -20325,7 +23221,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      31
+    ]
   },
   {
     "id": "u25-0826",
@@ -20356,7 +23256,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      41
+    ]
   },
   {
     "id": "u25-0827",
@@ -20389,7 +23293,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      34
+    ]
   },
   {
     "id": "u25-0828",
@@ -20419,7 +23327,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      37
+    ]
   },
   {
     "id": "u25-0829",
@@ -20446,7 +23358,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0830",
@@ -20469,7 +23385,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u25-0831",
@@ -20498,7 +23418,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      38
+    ]
   },
   {
     "id": "u25-0832",
@@ -20529,7 +23453,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      36
+    ]
   },
   {
     "id": "u25-0833",
@@ -20561,7 +23489,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      36
+    ]
   },
   {
     "id": "u25-0834",
@@ -20593,7 +23525,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      31
+    ]
   },
   {
     "id": "u25-0835",
@@ -20624,7 +23560,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      22
+    ]
   },
   {
     "id": "u25-0836",
@@ -20652,7 +23592,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      35
+    ]
   },
   {
     "id": "u25-0837",
@@ -20682,7 +23626,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      41
+    ]
   },
   {
     "id": "u25-0838",
@@ -20710,7 +23658,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      38
+    ]
   },
   {
     "id": "u25-0839",
@@ -20737,7 +23689,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u25-0840",
@@ -20768,7 +23724,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      28
+    ]
   },
   {
     "id": "u25-0841",
@@ -20797,7 +23757,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      34
+    ]
   },
   {
     "id": "u25-0842",
@@ -20821,7 +23785,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u25-0843",
@@ -20848,7 +23816,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      38
+    ]
   },
   {
     "id": "u25-0844",
@@ -20876,7 +23848,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      38
+    ]
   },
   {
     "id": "u25-0845",
@@ -20901,7 +23877,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0846",
@@ -20924,7 +23904,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      24
+    ]
   },
   {
     "id": "u25-0847",
@@ -20943,7 +23927,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      25
+    ]
   },
   {
     "id": "u25-0848",
@@ -20964,7 +23952,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      26
+    ]
   },
   {
     "id": "u25-0849",
@@ -20989,7 +23981,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u25-0850",
@@ -21011,7 +24007,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u25-0851",
@@ -21032,7 +24032,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      27
+    ]
   },
   {
     "id": "u25-0852",
@@ -21052,7 +24056,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      27
+    ]
   },
   {
     "id": "u25-0853",
@@ -21077,7 +24085,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "más historias del viaje",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      23
+    ]
   },
   {
     "id": "u25-0854",
@@ -21100,7 +24112,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u25-0855",
@@ -21123,7 +24139,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u25-0856",
@@ -21149,7 +24169,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u25-0857",
@@ -21226,7 +24250,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u25-0860",
@@ -21249,7 +24277,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u25-0861",
@@ -21276,7 +24308,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      37
+    ]
   },
   {
     "id": "u25-0862",
@@ -21302,7 +24338,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u25-0863",
@@ -21330,7 +24370,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u25-0864",
@@ -21353,7 +24397,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u25-0865",
@@ -21378,7 +24426,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u25-0866",
@@ -21401,7 +24453,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u25-0867",
@@ -21426,7 +24482,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      41
+    ]
   },
   {
     "id": "u25-0868",
@@ -21448,7 +24508,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u25-0869",
@@ -21471,7 +24535,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u25-0870",
@@ -21495,7 +24563,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u25-0871",
@@ -21521,7 +24593,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u25-0872",
@@ -21547,7 +24623,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u25-0873",
@@ -21569,7 +24649,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u25-0874",
@@ -21592,7 +24676,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      42
+    ]
   },
   {
     "id": "u25-0875",
@@ -21617,7 +24705,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      19
+    ]
   },
   {
     "id": "u25-0876",
@@ -21638,7 +24730,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u25-0877",
@@ -21664,7 +24760,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u25-0878",
@@ -21684,7 +24784,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u25-0879",
@@ -21709,7 +24813,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u25-0880",
@@ -21732,7 +24840,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      47
+    ]
   },
   {
     "id": "u25-0881",
@@ -21755,7 +24867,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u25-0882",
@@ -21779,7 +24895,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      33
+    ]
   },
   {
     "id": "u25-0883",
@@ -21804,7 +24924,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u25-0884",
@@ -21828,7 +24952,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      27
+    ]
   },
   {
     "id": "u25-0885",
@@ -21850,7 +24978,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      26
+    ]
   },
   {
     "id": "u25-0886",
@@ -21872,7 +25004,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      35,
+      46
+    ]
   },
   {
     "id": "u25-0887",
@@ -21894,7 +25030,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      23
+    ]
   },
   {
     "id": "u25-0888",
@@ -21916,7 +25056,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      30
+    ]
   },
   {
     "id": "u25-0889",
@@ -21940,7 +25084,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      25
+    ]
   },
   {
     "id": "u25-0890",
@@ -21967,7 +25115,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0891",
@@ -21990,7 +25142,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      38
+    ]
   },
   {
     "id": "u25-0892",
@@ -22011,7 +25167,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      24
+    ]
   },
   {
     "id": "u25-0893",
@@ -22033,7 +25193,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0894",
@@ -22057,7 +25221,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0895",
@@ -22080,7 +25248,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u25-0896",
@@ -22105,7 +25277,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      12
+    ]
   },
   {
     "id": "u25-0897",
@@ -22127,7 +25303,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      44
+    ]
   },
   {
     "id": "u25-0898",
@@ -22153,7 +25333,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0899",
@@ -22177,7 +25361,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0900",
@@ -22202,7 +25390,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "detalles sueltos",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      35
+    ]
   },
   {
     "id": "u25-0901",
@@ -22228,7 +25420,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u25-0902",
@@ -22250,7 +25446,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      36
+    ]
   },
   {
     "id": "u25-0903",
@@ -22289,7 +25489,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      14
+    ]
   },
   {
     "id": "u25-0905",
@@ -22314,7 +25518,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u25-0906",
@@ -22337,7 +25545,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u25-0907",
@@ -22358,7 +25570,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u25-0908",
@@ -22384,7 +25600,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u25-0909",
@@ -22407,7 +25627,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u25-0910",
@@ -22432,7 +25656,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u25-0911",
@@ -22456,7 +25684,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u25-0912",
@@ -22485,7 +25717,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u25-0913",
@@ -22508,7 +25744,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "últimos detalles",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      46,
+      51
+    ]
   },
   {
     "id": "u25-0914",
@@ -22555,7 +25795,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      28
+    ]
   },
   {
     "id": "u25-0916",
@@ -22583,7 +25827,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      28
+    ]
   },
   {
     "id": "u25-0917",
@@ -22611,7 +25859,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      18
+    ]
   },
   {
     "id": "u25-0918",
@@ -22638,7 +25890,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u25-0919",
@@ -22664,7 +25920,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      29
+    ]
   },
   {
     "id": "u25-0920",
@@ -22693,7 +25953,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      22
+    ]
   },
   {
     "id": "u25-0921",
@@ -22750,7 +26014,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      28
+    ]
   },
   {
     "id": "u25-0923",
@@ -22778,7 +26046,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      34
+    ]
   },
   {
     "id": "u25-0924",
@@ -22806,7 +26078,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      37
+    ]
   },
   {
     "id": "u25-0925",
@@ -22831,7 +26107,11 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      22
+    ]
   },
   {
     "id": "u25-0926",
@@ -22855,7 +26135,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u25-0927",
@@ -22886,7 +26170,11 @@
     "kind": "dialogue",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      21
+    ]
   },
   {
     "id": "u25-0928",
@@ -22912,7 +26200,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      53
+    ]
   },
   {
     "id": "u25-0929",
@@ -22934,7 +26226,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u25-0930",
@@ -22957,7 +26253,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u25-0931",
@@ -22981,7 +26281,11 @@
     "kind": "statement",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u25-0932",
@@ -23008,6 +26312,10 @@
     "kind": "question",
     "unit": "u25",
     "theme": "preguntas sobre lo que dijeron",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      45
+    ]
   }
 ]

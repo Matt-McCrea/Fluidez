@@ -21,7 +21,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0002",
@@ -41,7 +45,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0003",
@@ -68,7 +76,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0004",
@@ -94,7 +106,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u20-0005",
@@ -116,7 +132,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0006",
@@ -139,7 +159,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u20-0007",
@@ -161,7 +185,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0008",
@@ -187,7 +215,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u20-0009",
@@ -257,7 +289,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0012",
@@ -328,7 +364,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0015",
@@ -350,7 +390,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0016",
@@ -373,7 +417,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0017",
@@ -398,7 +446,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u20-0018",
@@ -421,7 +473,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0019",
@@ -444,7 +500,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0020",
@@ -466,7 +526,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0021",
@@ -488,7 +552,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0022",
@@ -510,7 +578,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0023",
@@ -530,7 +602,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0024",
@@ -555,7 +631,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0025",
@@ -580,7 +660,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0026",
@@ -604,7 +688,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0027",
@@ -627,7 +715,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      25
+    ]
   },
   {
     "id": "u20-0028",
@@ -653,7 +745,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      30
+    ]
   },
   {
     "id": "u20-0029",
@@ -678,7 +774,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0030",
@@ -756,7 +856,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0034",
@@ -776,7 +880,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0035",
@@ -799,7 +907,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0036",
@@ -822,7 +934,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0037",
@@ -844,7 +960,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0038",
@@ -866,7 +986,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0039",
@@ -889,7 +1013,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0040",
@@ -912,7 +1040,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0041",
@@ -935,7 +1067,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      30
+    ]
   },
   {
     "id": "u20-0042",
@@ -962,7 +1098,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      34
+    ]
   },
   {
     "id": "u20-0043",
@@ -985,7 +1125,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0044",
@@ -1012,7 +1156,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0045",
@@ -1034,7 +1182,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0046",
@@ -1054,7 +1206,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0047",
@@ -1076,7 +1232,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0048",
@@ -1098,7 +1258,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0049",
@@ -1119,7 +1283,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0050",
@@ -1140,7 +1308,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0051",
@@ -1163,7 +1335,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0052",
@@ -1185,7 +1361,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0053",
@@ -1209,7 +1389,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0054",
@@ -1232,7 +1416,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0055",
@@ -1255,7 +1443,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0056",
@@ -1281,7 +1473,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0057",
@@ -1305,7 +1501,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0058",
@@ -1335,7 +1535,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      34
+    ]
   },
   {
     "id": "u20-0059",
@@ -1359,7 +1563,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0060",
@@ -1381,7 +1589,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0061",
@@ -1404,7 +1616,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0062",
@@ -1429,7 +1645,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u20-0063",
@@ -1452,7 +1672,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0064",
@@ -1481,7 +1705,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0065",
@@ -1502,7 +1730,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0066",
@@ -1525,7 +1757,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0067",
@@ -1547,7 +1783,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u20-0068",
@@ -1576,7 +1816,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u20-0069",
@@ -1601,7 +1845,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u20-0070",
@@ -1631,7 +1879,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u20-0071",
@@ -1659,7 +1911,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      49
+    ]
   },
   {
     "id": "u20-0072",
@@ -1684,7 +1940,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u20-0073",
@@ -1706,7 +1966,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "where is Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0074",
@@ -1728,7 +1992,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      22
+    ]
   },
   {
     "id": "u20-0075",
@@ -1754,7 +2022,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      28
+    ]
   },
   {
     "id": "u20-0076",
@@ -1779,7 +2051,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u20-0077",
@@ -1803,7 +2079,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u20-0078",
@@ -1824,7 +2104,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0079",
@@ -1845,7 +2129,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      29
+    ]
   },
   {
     "id": "u20-0080",
@@ -1868,7 +2156,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u20-0081",
@@ -1891,7 +2183,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      40
+    ]
   },
   {
     "id": "u20-0082",
@@ -1917,7 +2213,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      51,
+      64
+    ]
   },
   {
     "id": "u20-0083",
@@ -1941,7 +2241,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0084",
@@ -1967,7 +2271,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      37,
+      43
+    ]
   },
   {
     "id": "u20-0085",
@@ -1987,7 +2295,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0086",
@@ -2010,7 +2322,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0087",
@@ -2032,7 +2348,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      27
+    ]
   },
   {
     "id": "u20-0088",
@@ -2059,7 +2379,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      40
+    ]
   },
   {
     "id": "u20-0089",
@@ -2083,7 +2407,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u20-0090",
@@ -2107,7 +2435,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      16
+    ]
   },
   {
     "id": "u20-0091",
@@ -2128,7 +2460,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      20
+    ]
   },
   {
     "id": "u20-0092",
@@ -2155,7 +2491,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      23
+    ]
   },
   {
     "id": "u20-0093",
@@ -2178,7 +2518,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      35
+    ]
   },
   {
     "id": "u20-0094",
@@ -2204,7 +2548,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      41
+    ]
   },
   {
     "id": "u20-0095",
@@ -2230,7 +2578,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      43
+    ]
   },
   {
     "id": "u20-0096",
@@ -2249,7 +2601,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0097",
@@ -2270,7 +2626,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u20-0098",
@@ -2295,7 +2655,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u20-0099",
@@ -2318,7 +2682,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0100",
@@ -2339,7 +2707,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u20-0101",
@@ -2364,7 +2736,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      27
+    ]
   },
   {
     "id": "u20-0102",
@@ -2385,7 +2761,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0103",
@@ -2407,7 +2787,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0104",
@@ -2429,7 +2813,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u20-0105",
@@ -2451,7 +2839,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0106",
@@ -2474,7 +2866,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0107",
@@ -2495,7 +2891,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0108",
@@ -2517,7 +2917,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0109",
@@ -2540,7 +2944,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0110",
@@ -2562,7 +2970,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0111",
@@ -2585,7 +2997,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u20-0112",
@@ -2607,7 +3023,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0113",
@@ -2629,7 +3049,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u20-0114",
@@ -2654,7 +3078,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0115",
@@ -2675,7 +3103,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0116",
@@ -2696,7 +3128,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0117",
@@ -2717,7 +3153,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u20-0118",
@@ -2740,7 +3180,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0119",
@@ -2762,7 +3206,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u20-0120",
@@ -2784,7 +3232,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u20-0121",
@@ -2806,7 +3258,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0122",
@@ -2829,7 +3285,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0123",
@@ -2850,7 +3310,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0124",
@@ -2875,7 +3339,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0125",
@@ -2903,7 +3371,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      30
+    ]
   },
   {
     "id": "u20-0126",
@@ -2931,7 +3403,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0127",
@@ -2953,7 +3429,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0128",
@@ -2978,7 +3458,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0129",
@@ -2998,7 +3482,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "promises",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u20-0130",
@@ -3045,7 +3533,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      37
+    ]
   },
   {
     "id": "u20-0132",
@@ -3069,7 +3561,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u20-0133",
@@ -3093,7 +3589,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      20
+    ]
   },
   {
     "id": "u20-0134",
@@ -3119,7 +3619,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u20-0135",
@@ -3150,7 +3654,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0136",
@@ -3178,7 +3686,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      63
+    ]
   },
   {
     "id": "u20-0137",
@@ -3202,7 +3714,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0138",
@@ -3229,7 +3745,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      44,
+      49
+    ]
   },
   {
     "id": "u20-0139",
@@ -3255,7 +3775,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      45
+    ]
   },
   {
     "id": "u20-0140",
@@ -3280,7 +3804,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0141",
@@ -3305,7 +3833,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u20-0142",
@@ -3328,7 +3860,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u20-0143",
@@ -3358,7 +3894,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0144",
@@ -3383,7 +3923,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u20-0145",
@@ -3409,7 +3953,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0146",
@@ -3434,7 +3982,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0147",
@@ -3461,7 +4013,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0148",
@@ -3483,7 +4039,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0149",
@@ -3510,7 +4070,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0150",
@@ -3537,7 +4101,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0151",
@@ -3562,7 +4130,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0152",
@@ -3584,7 +4156,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      27
+    ]
   },
   {
     "id": "u20-0153",
@@ -3609,7 +4185,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u20-0154",
@@ -3633,7 +4213,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u20-0155",
@@ -3655,7 +4239,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u20-0156",
@@ -3678,7 +4266,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u20-0157",
@@ -3702,7 +4294,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u20-0158",
@@ -3726,7 +4322,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0159",
@@ -3749,7 +4349,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0160",
@@ -3773,7 +4377,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0161",
@@ -3795,7 +4403,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u20-0162",
@@ -3816,7 +4428,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0163",
@@ -3838,7 +4454,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u20-0164",
@@ -3864,7 +4484,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u20-0165",
@@ -3888,7 +4512,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u20-0166",
@@ -3915,7 +4543,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0167",
@@ -3939,7 +4571,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0168",
@@ -3963,7 +4599,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      18
+    ]
   },
   {
     "id": "u20-0169",
@@ -3984,7 +4624,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0170",
@@ -4006,7 +4650,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u20-0171",
@@ -4030,7 +4678,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      26
+    ]
   },
   {
     "id": "u20-0172",
@@ -4052,7 +4704,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0173",
@@ -4075,7 +4731,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0174",
@@ -4096,7 +4756,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u20-0175",
@@ -4120,7 +4784,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0176",
@@ -4145,7 +4813,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u20-0177",
@@ -4166,7 +4838,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      22
+    ]
   },
   {
     "id": "u20-0178",
@@ -4194,7 +4870,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u20-0179",
@@ -4219,7 +4899,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      39
+    ]
   },
   {
     "id": "u20-0180",
@@ -4242,7 +4926,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0181",
@@ -4263,7 +4951,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u20-0182",
@@ -4305,7 +4997,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u20-0184",
@@ -4329,7 +5025,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u20-0185",
@@ -4350,7 +5050,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0186",
@@ -4372,7 +5076,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      36
+    ]
   },
   {
     "id": "u20-0187",
@@ -4396,7 +5104,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      33
+    ]
   },
   {
     "id": "u20-0188",
@@ -4418,7 +5130,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0189",
@@ -4442,7 +5158,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0190",
@@ -4465,7 +5185,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0191",
@@ -4492,7 +5216,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0192",
@@ -4515,7 +5243,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0193",
@@ -4540,7 +5272,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0194",
@@ -4564,7 +5300,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0195",
@@ -4585,7 +5325,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0196",
@@ -4611,7 +5355,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather and forecast",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      31
+    ]
   },
   {
     "id": "u20-0197",
@@ -4634,7 +5382,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0198",
@@ -4656,7 +5408,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0199",
@@ -4680,7 +5436,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0200",
@@ -4702,7 +5462,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0201",
@@ -4727,7 +5491,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0202",
@@ -4751,7 +5519,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0203",
@@ -4772,7 +5544,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0204",
@@ -4794,7 +5570,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0205",
@@ -4822,7 +5602,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0206",
@@ -4845,7 +5629,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0207",
@@ -4865,7 +5653,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0208",
@@ -4888,7 +5680,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0209",
@@ -4910,7 +5706,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0210",
@@ -4933,7 +5733,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0211",
@@ -4956,7 +5760,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0212",
@@ -4981,7 +5789,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0213",
@@ -5001,7 +5813,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u20-0214",
@@ -5024,7 +5840,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u20-0215",
@@ -5047,7 +5867,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u20-0216",
@@ -5069,7 +5893,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u20-0217",
@@ -5090,7 +5918,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      14
+    ]
   },
   {
     "id": "u20-0218",
@@ -5115,7 +5947,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      42
+    ]
   },
   {
     "id": "u20-0219",
@@ -5142,7 +5978,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u20-0220",
@@ -5167,7 +6007,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u20-0221",
@@ -5194,7 +6038,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      30
+    ]
   },
   {
     "id": "u20-0222",
@@ -5218,7 +6066,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      29
+    ]
   },
   {
     "id": "u20-0223",
@@ -5250,7 +6102,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      33
+    ]
   },
   {
     "id": "u20-0224",
@@ -5275,7 +6131,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "advice with yo que tú",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0225",
@@ -5298,7 +6158,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0226",
@@ -5320,7 +6184,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0227",
@@ -5342,7 +6210,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0228",
@@ -5364,7 +6236,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0229",
@@ -5386,7 +6262,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0230",
@@ -5410,7 +6290,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0231",
@@ -5433,7 +6317,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0232",
@@ -5458,7 +6346,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u20-0233",
@@ -5484,7 +6376,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u20-0234",
@@ -5510,7 +6406,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u20-0235",
@@ -5532,7 +6432,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u20-0236",
@@ -5555,7 +6459,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0237",
@@ -5583,7 +6491,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0238",
@@ -5609,7 +6521,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0239",
@@ -5637,7 +6553,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      30
+    ]
   },
   {
     "id": "u20-0240",
@@ -5663,7 +6583,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0241",
@@ -5687,7 +6611,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u20-0242",
@@ -5709,7 +6637,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u20-0243",
@@ -5732,7 +6664,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u20-0244",
@@ -5755,7 +6691,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u20-0245",
@@ -5775,7 +6715,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      23
+    ]
   },
   {
     "id": "u20-0246",
@@ -5799,7 +6743,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      14
+    ]
   },
   {
     "id": "u20-0247",
@@ -5823,7 +6771,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0248",
@@ -5846,7 +6798,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0249",
@@ -5869,7 +6825,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0250",
@@ -5890,7 +6850,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0251",
@@ -5916,7 +6880,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0252",
@@ -5943,7 +6911,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      36
+    ]
   },
   {
     "id": "u20-0253",
@@ -5965,7 +6937,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0254",
@@ -5986,7 +6962,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0255",
@@ -6008,7 +6988,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u20-0256",
@@ -6029,7 +7013,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      27
+    ]
   },
   {
     "id": "u20-0257",
@@ -6052,7 +7040,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u20-0258",
@@ -6077,7 +7069,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      24
+    ]
   },
   {
     "id": "u20-0259",
@@ -6098,7 +7094,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u20-0260",
@@ -6117,7 +7117,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0261",
@@ -6137,7 +7141,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0262",
@@ -6158,7 +7166,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u20-0263",
@@ -6179,7 +7191,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0264",
@@ -6199,7 +7215,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      16
+    ]
   },
   {
     "id": "u20-0265",
@@ -6221,7 +7241,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0266",
@@ -6241,7 +7265,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0267",
@@ -6261,7 +7289,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0268",
@@ -6283,7 +7315,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u20-0269",
@@ -6304,7 +7340,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0270",
@@ -6325,7 +7365,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u20-0271",
@@ -6348,7 +7392,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0272",
@@ -6374,7 +7422,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0273",
@@ -6398,7 +7450,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0274",
@@ -6418,7 +7474,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u20-0275",
@@ -6442,7 +7502,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u20-0276",
@@ -6466,7 +7530,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0277",
@@ -6487,7 +7555,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u20-0278",
@@ -6509,7 +7581,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u20-0279",
@@ -6532,7 +7608,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u20-0280",
@@ -6553,7 +7633,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "would and should, wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u20-0281",
@@ -6597,7 +7681,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u20-0283",
@@ -6640,7 +7728,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0285",
@@ -6665,7 +7757,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0286",
@@ -6688,7 +7784,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0287",
@@ -6711,7 +7811,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0288",
@@ -6732,7 +7836,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0289",
@@ -6755,7 +7863,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0290",
@@ -6779,7 +7891,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0291",
@@ -6803,7 +7919,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u20-0292",
@@ -6825,7 +7945,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      22
+    ]
   },
   {
     "id": "u20-0293",
@@ -6849,7 +7973,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u20-0294",
@@ -6869,7 +7997,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u20-0295",
@@ -6892,7 +8024,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0296",
@@ -6917,7 +8053,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      38
+    ]
   },
   {
     "id": "u20-0297",
@@ -6943,7 +8083,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0298",
@@ -6966,7 +8110,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0299",
@@ -6987,7 +8135,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0300",
@@ -7014,7 +8166,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0301",
@@ -7035,7 +8191,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      38,
+      42
+    ]
   },
   {
     "id": "u20-0302",
@@ -7058,7 +8218,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0303",
@@ -7083,7 +8247,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u20-0304",
@@ -7104,7 +8272,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      13
+    ]
   },
   {
     "id": "u20-0305",
@@ -7126,7 +8298,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0306",
@@ -7149,7 +8325,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0307",
@@ -7175,7 +8355,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u20-0308",
@@ -7200,7 +8384,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u20-0309",
@@ -7222,7 +8410,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0310",
@@ -7246,7 +8438,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0311",
@@ -7271,7 +8467,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      37
+    ]
   },
   {
     "id": "u20-0312",
@@ -7294,7 +8494,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0313",
@@ -7317,7 +8521,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0314",
@@ -7345,7 +8553,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0315",
@@ -7366,7 +8578,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u20-0316",
@@ -7388,7 +8604,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0317",
@@ -7413,7 +8633,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      26
+    ]
   },
   {
     "id": "u20-0318",
@@ -7436,7 +8660,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0319",
@@ -7459,7 +8687,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u20-0320",
@@ -7483,7 +8715,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u20-0321",
@@ -7504,7 +8740,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u20-0322",
@@ -7526,7 +8766,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0323",
@@ -7550,7 +8794,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0324",
@@ -7573,7 +8821,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      17
+    ]
   },
   {
     "id": "u20-0325",
@@ -7598,7 +8850,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      32
+    ]
   },
   {
     "id": "u20-0326",
@@ -7619,7 +8875,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u20-0327",
@@ -7644,7 +8904,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0328",
@@ -7667,7 +8931,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      26
+    ]
   },
   {
     "id": "u20-0329",
@@ -7692,7 +8960,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0330",
@@ -7716,7 +8988,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      38
+    ]
   },
   {
     "id": "u20-0331",
@@ -7739,7 +9015,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0332",
@@ -7761,7 +9041,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0333",
@@ -7783,7 +9067,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u20-0334",
@@ -7800,7 +9088,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u20-0335",
@@ -7824,7 +9116,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u20-0336",
@@ -7848,7 +9144,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0337",
@@ -7870,7 +9170,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u20-0338",
@@ -7892,7 +9196,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u20-0339",
@@ -7915,7 +9223,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0340",
@@ -7937,7 +9249,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u20-0341",
@@ -7960,7 +9276,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0342",
@@ -7988,7 +9308,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0343",
@@ -8009,7 +9333,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0344",
@@ -8031,7 +9359,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u20-0345",
@@ -8055,7 +9387,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u20-0346",
@@ -8078,7 +9414,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u20-0347",
@@ -8099,7 +9439,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "new words in use",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u20-0348",
@@ -8123,7 +9467,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0349",
@@ -8148,7 +9496,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0350",
@@ -8170,7 +9522,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      27
+    ]
   },
   {
     "id": "u20-0351",
@@ -8193,7 +9549,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0352",
@@ -8216,7 +9576,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u20-0353",
@@ -8242,7 +9606,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u20-0354",
@@ -8265,7 +9633,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0355",
@@ -8291,7 +9663,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0356",
@@ -8316,7 +9692,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u20-0357",
@@ -8338,7 +9718,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0358",
@@ -8360,7 +9744,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0359",
@@ -8386,7 +9774,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u20-0360",
@@ -8412,7 +9804,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      23
+    ]
   },
   {
     "id": "u20-0361",
@@ -8434,7 +9830,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0362",
@@ -8459,7 +9859,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0363",
@@ -8481,7 +9885,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0364",
@@ -8505,7 +9913,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0365",
@@ -8527,7 +9939,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0366",
@@ -8554,7 +9970,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0367",
@@ -8576,7 +9996,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0368",
@@ -8599,7 +10023,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0369",
@@ -8621,7 +10049,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0370",
@@ -8642,7 +10074,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u20-0371",
@@ -8669,7 +10105,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u20-0372",
@@ -8692,7 +10132,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u20-0373",
@@ -8714,7 +10158,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      26
+    ]
   },
   {
     "id": "u20-0374",
@@ -8734,7 +10182,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u20-0375",
@@ -8753,7 +10205,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u20-0376",
@@ -8776,7 +10232,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   },
   {
     "id": "u20-0377",
@@ -8797,7 +10257,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u20-0378",
@@ -8821,7 +10285,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0379",
@@ -8843,7 +10311,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0380",
@@ -8866,7 +10338,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      29
+    ]
   },
   {
     "id": "u20-0381",
@@ -8888,7 +10364,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0382",
@@ -8911,7 +10391,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u20-0383",
@@ -8936,7 +10420,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0384",
@@ -8957,7 +10445,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0385",
@@ -8979,7 +10471,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      10
+    ]
   },
   {
     "id": "u20-0386",
@@ -9000,7 +10496,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u20-0387",
@@ -9022,7 +10522,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0388",
@@ -9045,7 +10549,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0389",
@@ -9068,7 +10576,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      21
+    ]
   },
   {
     "id": "u20-0390",
@@ -9090,7 +10602,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0391",
@@ -9114,7 +10630,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0392",
@@ -9138,7 +10658,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0393",
@@ -9162,7 +10686,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0394",
@@ -9183,7 +10711,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0395",
@@ -9205,7 +10737,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      33
+    ]
   },
   {
     "id": "u20-0396",
@@ -9227,7 +10763,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      25
+    ]
   },
   {
     "id": "u20-0397",
@@ -9250,7 +10790,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u20-0398",
@@ -9275,7 +10819,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u20-0399",
@@ -9296,7 +10844,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u20-0400",
@@ -9321,7 +10873,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u20-0401",
@@ -9345,7 +10901,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      13
+    ]
   },
   {
     "id": "u20-0402",
@@ -9366,7 +10926,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u20-0403",
@@ -9390,7 +10954,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      26
+    ]
   },
   {
     "id": "u20-0404",
@@ -9413,7 +10981,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      25
+    ]
   },
   {
     "id": "u20-0405",
@@ -9434,7 +11006,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u20-0406",
@@ -9457,7 +11033,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u20-0407",
@@ -9480,7 +11060,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0408",
@@ -9506,7 +11090,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u20-0409",
@@ -9528,7 +11116,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u20-0410",
@@ -9554,7 +11146,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0411",
@@ -9575,7 +11171,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0412",
@@ -9596,7 +11196,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0413",
@@ -9622,7 +11226,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      26
+    ]
   },
   {
     "id": "u20-0414",
@@ -9646,7 +11254,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u20-0415",
@@ -9670,7 +11282,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u20-0416",
@@ -9692,7 +11308,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0417",
@@ -9713,7 +11333,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0418",
@@ -9736,7 +11360,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0419",
@@ -9756,7 +11384,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0420",
@@ -9779,7 +11411,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u20-0421",
@@ -9804,7 +11440,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u20-0422",
@@ -9825,7 +11465,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u20-0423",
@@ -9849,7 +11493,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0424",
@@ -9877,7 +11525,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      31
+    ]
   },
   {
     "id": "u20-0425",
@@ -9900,7 +11552,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u20-0426",
@@ -9924,7 +11580,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      18
+    ]
   },
   {
     "id": "u20-0427",
@@ -9947,7 +11607,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "animals, nature, trust",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0428",
@@ -9970,7 +11634,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u20-0429",
@@ -9995,7 +11663,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      30,
+      36
+    ]
   },
   {
     "id": "u20-0430",
@@ -10018,7 +11690,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u20-0431",
@@ -10042,7 +11718,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u20-0432",
@@ -10067,7 +11747,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      39
+    ]
   },
   {
     "id": "u20-0433",
@@ -10090,7 +11774,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u20-0434",
@@ -10117,7 +11805,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      40
+    ]
   },
   {
     "id": "u20-0435",
@@ -10144,7 +11836,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u20-0436",
@@ -10170,7 +11866,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0437",
@@ -10192,7 +11892,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0438",
@@ -10215,7 +11919,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0439",
@@ -10238,7 +11946,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0440",
@@ -10261,7 +11973,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0441",
@@ -10282,7 +11998,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u20-0442",
@@ -10305,7 +12025,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0443",
@@ -10330,7 +12054,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0444",
@@ -10353,7 +12081,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      29
+    ]
   },
   {
     "id": "u20-0445",
@@ -10378,7 +12110,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u20-0446",
@@ -10401,7 +12137,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u20-0447",
@@ -10425,7 +12165,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      31
+    ]
   },
   {
     "id": "u20-0448",
@@ -10447,7 +12191,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0449",
@@ -10471,7 +12219,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      21
+    ]
   },
   {
     "id": "u20-0450",
@@ -10495,7 +12247,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0451",
@@ -10520,7 +12276,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      29
+    ]
   },
   {
     "id": "u20-0452",
@@ -10544,7 +12304,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0453",
@@ -10567,7 +12331,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0454",
@@ -10592,7 +12360,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0455",
@@ -10615,7 +12387,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      22
+    ]
   },
   {
     "id": "u20-0456",
@@ -10639,7 +12415,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0457",
@@ -10663,7 +12443,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u20-0458",
@@ -10685,7 +12469,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0459",
@@ -10708,7 +12496,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u20-0460",
@@ -10730,7 +12522,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0461",
@@ -10752,7 +12548,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0462",
@@ -10776,7 +12576,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      39
+    ]
   },
   {
     "id": "u20-0463",
@@ -10796,7 +12600,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u20-0464",
@@ -10818,7 +12626,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      17
+    ]
   },
   {
     "id": "u20-0465",
@@ -10839,7 +12651,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      21
+    ]
   },
   {
     "id": "u20-0466",
@@ -10860,7 +12676,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u20-0467",
@@ -10881,7 +12701,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0468",
@@ -10904,7 +12728,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u20-0469",
@@ -10926,7 +12754,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      18
+    ]
   },
   {
     "id": "u20-0470",
@@ -10948,7 +12780,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      19
+    ]
   },
   {
     "id": "u20-0471",
@@ -10973,7 +12809,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      33
+    ]
   },
   {
     "id": "u20-0472",
@@ -11003,7 +12843,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      42
+    ]
   },
   {
     "id": "u20-0473",
@@ -11027,7 +12871,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      23
+    ]
   },
   {
     "id": "u20-0474",
@@ -11053,7 +12901,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      40
+    ]
   },
   {
     "id": "u20-0475",
@@ -11077,7 +12929,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      15
+    ]
   },
   {
     "id": "u20-0476",
@@ -11099,7 +12955,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      30
+    ]
   },
   {
     "id": "u20-0477",
@@ -11125,7 +12985,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u20-0478",
@@ -11153,7 +13017,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      35
+    ]
   },
   {
     "id": "u20-0479",
@@ -11174,7 +13042,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u20-0480",
@@ -11195,7 +13067,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      22
+    ]
   },
   {
     "id": "u20-0481",
@@ -11220,7 +13096,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      42
+    ]
   },
   {
     "id": "u20-0482",
@@ -11245,7 +13125,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      27,
+      40
+    ]
   },
   {
     "id": "u20-0483",
@@ -11268,7 +13152,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0484",
@@ -11289,7 +13177,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      13
+    ]
   },
   {
     "id": "u20-0485",
@@ -11312,7 +13204,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u20-0486",
@@ -11334,7 +13230,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0487",
@@ -11359,7 +13259,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0488",
@@ -11383,7 +13287,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u20-0489",
@@ -11409,7 +13317,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0490",
@@ -11432,7 +13344,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0491",
@@ -11453,7 +13369,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0492",
@@ -11479,7 +13399,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0493",
@@ -11553,7 +13477,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0497",
@@ -11576,7 +13504,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0498",
@@ -11596,7 +13528,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0499",
@@ -11621,7 +13557,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u20-0500",
@@ -11646,7 +13586,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "top-up chunks and conditional",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0501",
@@ -11668,7 +13612,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u20-0502",
@@ -11689,7 +13637,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      20
+    ]
   },
   {
     "id": "u20-0503",
@@ -11714,7 +13666,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      34
+    ]
   },
   {
     "id": "u20-0504",
@@ -11738,7 +13694,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      14
+    ]
   },
   {
     "id": "u20-0505",
@@ -11766,7 +13726,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u20-0506",
@@ -11788,7 +13752,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0507",
@@ -11813,7 +13781,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u20-0508",
@@ -11839,7 +13811,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0509",
@@ -11862,7 +13838,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0510",
@@ -11887,7 +13867,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0511",
@@ -11910,7 +13894,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u20-0512",
@@ -11930,7 +13918,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      13
+    ]
   },
   {
     "id": "u20-0513",
@@ -11952,7 +13944,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u20-0514",
@@ -11974,7 +13970,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0515",
@@ -11996,7 +13996,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u20-0516",
@@ -12020,7 +14024,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u20-0517",
@@ -12044,7 +14052,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      45,
+      52
+    ]
   },
   {
     "id": "u20-0518",
@@ -12069,7 +14081,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      24
+    ]
   },
   {
     "id": "u20-0519",
@@ -12091,7 +14107,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0520",
@@ -12117,7 +14137,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0521",
@@ -12137,7 +14161,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0522",
@@ -12159,7 +14187,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      19
+    ]
   },
   {
     "id": "u20-0523",
@@ -12180,7 +14212,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0524",
@@ -12205,7 +14241,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0525",
@@ -12231,7 +14271,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0526",
@@ -12255,7 +14299,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      22,
+      27
+    ]
   },
   {
     "id": "u20-0527",
@@ -12278,7 +14326,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0528",
@@ -12301,7 +14353,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0529",
@@ -12324,7 +14380,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0530",
@@ -12356,7 +14416,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      40,
+      45
+    ]
   },
   {
     "id": "u20-0531",
@@ -12378,7 +14442,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      11
+    ]
   },
   {
     "id": "u20-0532",
@@ -12398,7 +14466,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u20-0533",
@@ -12419,7 +14491,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0534",
@@ -12446,7 +14522,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0535",
@@ -12473,7 +14553,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0536",
@@ -12495,7 +14579,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      16
+    ]
   },
   {
     "id": "u20-0537",
@@ -12518,7 +14606,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0538",
@@ -12540,7 +14632,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      33
+    ]
   },
   {
     "id": "u20-0539",
@@ -12562,7 +14658,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      19
+    ]
   },
   {
     "id": "u20-0540",
@@ -12586,7 +14686,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0541",
@@ -12607,7 +14711,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0542",
@@ -12630,7 +14738,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      23
+    ]
   },
   {
     "id": "u20-0543",
@@ -12654,7 +14766,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0544",
@@ -12679,7 +14795,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0545",
@@ -12700,7 +14820,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u20-0546",
@@ -12721,7 +14845,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u20-0547",
@@ -12744,7 +14872,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0548",
@@ -12767,7 +14899,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      31,
+      41
+    ]
   },
   {
     "id": "u20-0549",
@@ -12790,7 +14926,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u20-0550",
@@ -12814,7 +14954,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u20-0551",
@@ -12836,7 +14980,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      16
+    ]
   },
   {
     "id": "u20-0552",
@@ -12857,7 +15005,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      21
+    ]
   },
   {
     "id": "u20-0553",
@@ -12881,7 +15033,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      12
+    ]
   },
   {
     "id": "u20-0554",
@@ -12903,7 +15059,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      19
+    ]
   },
   {
     "id": "u20-0555",
@@ -12927,7 +15087,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      28
+    ]
   },
   {
     "id": "u20-0556",
@@ -12950,7 +15114,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u20-0557",
@@ -12976,7 +15144,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      34
+    ]
   },
   {
     "id": "u20-0558",
@@ -12997,7 +15169,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0559",
@@ -13020,7 +15196,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u20-0560",
@@ -13045,7 +15225,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0561",
@@ -13068,7 +15252,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      20
+    ]
   },
   {
     "id": "u20-0562",
@@ -13133,7 +15321,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      12
+    ]
   },
   {
     "id": "u20-0565",
@@ -13153,7 +15345,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      6
+    ]
   },
   {
     "id": "u20-0566",
@@ -13178,7 +15374,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0567",
@@ -13204,7 +15404,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u20-0568",
@@ -13224,7 +15428,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u20-0569",
@@ -13247,7 +15455,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0570",
@@ -13269,7 +15481,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      32
+    ]
   },
   {
     "id": "u20-0571",
@@ -13292,7 +15508,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0572",
@@ -13314,7 +15534,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u20-0573",
@@ -13335,7 +15559,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      4
+    ]
   },
   {
     "id": "u20-0574",
@@ -13356,7 +15584,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u20-0575",
@@ -13379,7 +15611,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      13
+    ]
   },
   {
     "id": "u20-0576",
@@ -13402,7 +15638,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0577",
@@ -13427,7 +15667,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      19
+    ]
   },
   {
     "id": "u20-0578",
@@ -13449,7 +15693,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0579",
@@ -13473,7 +15721,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0580",
@@ -13494,7 +15746,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      6
+    ]
   },
   {
     "id": "u20-0581",
@@ -13516,7 +15772,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0582",
@@ -13541,7 +15801,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0583",
@@ -13564,7 +15828,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0584",
@@ -13590,7 +15858,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0585",
@@ -13610,7 +15882,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0586",
@@ -13629,7 +15905,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0587",
@@ -13649,7 +15929,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      35
+    ]
   },
   {
     "id": "u20-0588",
@@ -13669,7 +15953,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      16
+    ]
   },
   {
     "id": "u20-0589",
@@ -13690,7 +15978,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      7
+    ]
   },
   {
     "id": "u20-0590",
@@ -13713,7 +16005,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u20-0591",
@@ -13736,7 +16032,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      8
+    ]
   },
   {
     "id": "u20-0592",
@@ -13759,7 +16059,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      11
+    ]
   },
   {
     "id": "u20-0593",
@@ -13784,7 +16088,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      29
+    ]
   },
   {
     "id": "u20-0594",
@@ -13805,7 +16113,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0595",
@@ -13825,7 +16137,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0596",
@@ -13847,7 +16163,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0597",
@@ -13870,7 +16190,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0598",
@@ -13894,7 +16218,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      41
+    ]
   },
   {
     "id": "u20-0599",
@@ -13915,7 +16243,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0600",
@@ -13937,7 +16269,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      15
+    ]
   },
   {
     "id": "u20-0601",
@@ -13959,7 +16295,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      24
+    ]
   },
   {
     "id": "u20-0602",
@@ -13980,7 +16320,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u20-0603",
@@ -14004,7 +16348,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0604",
@@ -14026,7 +16374,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      8
+    ]
   },
   {
     "id": "u20-0605",
@@ -14052,7 +16404,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      49,
+      54
+    ]
   },
   {
     "id": "u20-0606",
@@ -14074,7 +16430,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      20
+    ]
   },
   {
     "id": "u20-0607",
@@ -14096,7 +16456,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      18
+    ]
   },
   {
     "id": "u20-0608",
@@ -14117,7 +16481,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0609",
@@ -14160,7 +16528,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0611",
@@ -14182,7 +16554,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0612",
@@ -14203,7 +16579,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0613",
@@ -14225,7 +16605,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0614",
@@ -14247,7 +16631,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "weather and sky, second pass",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      10
+    ]
   },
   {
     "id": "u20-0615",
@@ -14294,7 +16682,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0617",
@@ -14317,7 +16709,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0618",
@@ -14343,7 +16739,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      11
+    ]
   },
   {
     "id": "u20-0619",
@@ -14367,7 +16767,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0620",
@@ -14390,7 +16794,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u20-0621",
@@ -14412,7 +16820,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u20-0622",
@@ -14432,7 +16844,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u20-0623",
@@ -14452,7 +16868,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      7
+    ]
   },
   {
     "id": "u20-0624",
@@ -14477,7 +16897,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0625",
@@ -14500,7 +16924,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0626",
@@ -14523,7 +16951,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u20-0627",
@@ -14563,7 +16995,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u20-0629",
@@ -14585,7 +17021,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0630",
@@ -14606,7 +17046,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0631",
@@ -14626,7 +17070,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0632",
@@ -14650,7 +17098,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u20-0633",
@@ -14693,7 +17145,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0635",
@@ -14718,7 +17174,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0636",
@@ -14745,7 +17205,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u20-0637",
@@ -14768,7 +17232,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      17
+    ]
   },
   {
     "id": "u20-0638",
@@ -14870,7 +17338,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      35
+    ]
   },
   {
     "id": "u20-0643",
@@ -14909,7 +17381,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      25
+    ]
   },
   {
     "id": "u20-0645",
@@ -14932,7 +17408,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      32
+    ]
   },
   {
     "id": "u20-0646",
@@ -14953,7 +17433,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0647",
@@ -14974,7 +17458,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0648",
@@ -14995,7 +17483,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0649",
@@ -15017,7 +17509,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0650",
@@ -15040,7 +17536,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0651",
@@ -15061,7 +17561,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0652",
@@ -15084,7 +17588,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0653",
@@ -15108,7 +17616,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0654",
@@ -15133,7 +17645,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      18
+    ]
   },
   {
     "id": "u20-0655",
@@ -15157,7 +17673,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u20-0656",
@@ -15180,7 +17700,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      12
+    ]
   },
   {
     "id": "u20-0657",
@@ -15206,7 +17730,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0658",
@@ -15229,7 +17757,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0659",
@@ -15270,7 +17802,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0661",
@@ -15289,7 +17825,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0662",
@@ -15312,7 +17852,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      16
+    ]
   },
   {
     "id": "u20-0663",
@@ -15335,7 +17879,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0664",
@@ -15358,7 +17906,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0665",
@@ -15379,7 +17931,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0666",
@@ -15401,7 +17957,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0667",
@@ -15423,7 +17983,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0668",
@@ -15450,7 +18014,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0669",
@@ -15475,7 +18043,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      11
+    ]
   },
   {
     "id": "u20-0670",
@@ -15497,7 +18069,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      6
+    ]
   },
   {
     "id": "u20-0671",
@@ -15515,7 +18091,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0672",
@@ -15535,7 +18115,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0673",
@@ -15557,7 +18141,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0674",
@@ -15579,7 +18167,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u20-0675",
@@ -15600,7 +18192,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0676",
@@ -15624,7 +18220,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0677",
@@ -15644,7 +18244,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0678",
@@ -15665,7 +18269,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0679",
@@ -15691,7 +18299,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u20-0680",
@@ -15712,7 +18324,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      13
+    ]
   },
   {
     "id": "u20-0681",
@@ -15752,7 +18368,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      15
+    ]
   },
   {
     "id": "u20-0683",
@@ -15773,7 +18393,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0684",
@@ -15794,7 +18418,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      18
+    ]
   },
   {
     "id": "u20-0685",
@@ -15814,7 +18442,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0686",
@@ -15835,7 +18467,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0687",
@@ -15859,7 +18495,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      16
+    ]
   },
   {
     "id": "u20-0688",
@@ -15883,7 +18523,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u20-0689",
@@ -15906,7 +18550,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0690",
@@ -15930,7 +18578,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u20-0691",
@@ -15953,7 +18605,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      18
+    ]
   },
   {
     "id": "u20-0692",
@@ -15976,7 +18632,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0693",
@@ -16000,7 +18660,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0694",
@@ -16022,7 +18686,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0695",
@@ -16043,7 +18711,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0696",
@@ -16067,7 +18739,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      21
+    ]
   },
   {
     "id": "u20-0697",
@@ -16089,7 +18765,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      21
+    ]
   },
   {
     "id": "u20-0698",
@@ -16110,7 +18790,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0699",
@@ -16134,7 +18818,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0700",
@@ -16155,7 +18843,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0701",
@@ -16180,7 +18872,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0702",
@@ -16201,7 +18897,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      10
+    ]
   },
   {
     "id": "u20-0703",
@@ -16222,7 +18922,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u20-0704",
@@ -16247,7 +18951,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      16
+    ]
   },
   {
     "id": "u20-0705",
@@ -16271,7 +18979,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      20
+    ]
   },
   {
     "id": "u20-0706",
@@ -16291,7 +19003,11 @@
     "kind": "question",
     "unit": "u20",
     "theme": "questions about guesses and plans",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      9
+    ]
   },
   {
     "id": "u20-0707",
@@ -16358,7 +19074,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u20-0710",
@@ -16387,7 +19107,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      54
+    ]
   },
   {
     "id": "u20-0711",
@@ -16412,7 +19136,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      24
+    ]
   },
   {
     "id": "u20-0712",
@@ -16435,7 +19163,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      42
+    ]
   },
   {
     "id": "u20-0713",
@@ -16464,7 +19196,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      49
+    ]
   },
   {
     "id": "u20-0714",
@@ -16489,7 +19225,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      25
+    ]
   },
   {
     "id": "u20-0715",
@@ -16513,7 +19253,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u20-0716",
@@ -16538,7 +19282,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      29
+    ]
   },
   {
     "id": "u20-0717",
@@ -16565,7 +19313,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      31
+    ]
   },
   {
     "id": "u20-0718",
@@ -16590,7 +19342,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      25
+    ]
   },
   {
     "id": "u20-0719",
@@ -16615,7 +19371,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      27
+    ]
   },
   {
     "id": "u20-0720",
@@ -16644,7 +19404,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u20-0721",
@@ -16672,7 +19436,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0722",
@@ -16699,7 +19467,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0723",
@@ -16725,7 +19497,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      32,
+      39
+    ]
   },
   {
     "id": "u20-0724",
@@ -16817,7 +19593,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u20-0728",
@@ -16841,7 +19621,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, the search for Simón",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      15
+    ]
   },
   {
     "id": "u20-0729",
@@ -17107,7 +19891,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      56,
+      63
+    ]
   },
   {
     "id": "u20-0740",
@@ -17152,7 +19940,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      31
+    ]
   },
   {
     "id": "u20-0742",
@@ -17182,7 +19974,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      34,
+      39
+    ]
   },
   {
     "id": "u20-0743",
@@ -17211,7 +20007,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      16
+    ]
   },
   {
     "id": "u20-0744",
@@ -17238,7 +20038,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      17
+    ]
   },
   {
     "id": "u20-0745",
@@ -17266,7 +20070,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0746",
@@ -17291,7 +20099,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      39,
+      46
+    ]
   },
   {
     "id": "u20-0747",
@@ -17312,7 +20124,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      21
+    ]
   },
   {
     "id": "u20-0748",
@@ -17339,7 +20155,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      15
+    ]
   },
   {
     "id": "u20-0749",
@@ -17365,7 +20185,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      27
+    ]
   },
   {
     "id": "u20-0750",
@@ -17390,7 +20214,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, plans and the weather",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      32
+    ]
   },
   {
     "id": "u20-0751",
@@ -17414,7 +20242,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0752",
@@ -17438,7 +20270,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      10
+    ]
   },
   {
     "id": "u20-0753",
@@ -17463,7 +20299,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      11
+    ]
   },
   {
     "id": "u20-0754",
@@ -17489,7 +20329,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      13
+    ]
   },
   {
     "id": "u20-0755",
@@ -17515,7 +20359,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0756",
@@ -17538,7 +20386,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0757",
@@ -17563,7 +20415,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      12
+    ]
   },
   {
     "id": "u20-0758",
@@ -17593,7 +20449,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      29
+    ]
   },
   {
     "id": "u20-0759",
@@ -17620,7 +20480,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      38
+    ]
   },
   {
     "id": "u20-0760",
@@ -17644,7 +20508,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      28
+    ]
   },
   {
     "id": "u20-0761",
@@ -17671,7 +20539,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      17
+    ]
   },
   {
     "id": "u20-0762",
@@ -17694,7 +20566,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0763",
@@ -17719,7 +20595,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0764",
@@ -17741,7 +20621,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      47
+    ]
   },
   {
     "id": "u20-0765",
@@ -17770,7 +20654,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      33
+    ]
   },
   {
     "id": "u20-0766",
@@ -17797,7 +20685,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      33
+    ]
   },
   {
     "id": "u20-0767",
@@ -17817,7 +20709,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0768",
@@ -17862,7 +20758,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      36,
+      45
+    ]
   },
   {
     "id": "u20-0770",
@@ -17886,7 +20786,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      25,
+      32
+    ]
   },
   {
     "id": "u20-0771",
@@ -17913,7 +20817,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0772",
@@ -17937,7 +20845,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0773",
@@ -17960,7 +20872,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, advice and wishes",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u20-0774",
@@ -18009,7 +20925,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      34
+    ]
   },
   {
     "id": "u20-0776",
@@ -18101,7 +21021,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u20-0780",
@@ -18127,7 +21051,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      19
+    ]
   },
   {
     "id": "u20-0781",
@@ -18178,7 +21106,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      52
+    ]
   },
   {
     "id": "u20-0783",
@@ -18202,7 +21134,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0784",
@@ -18230,7 +21166,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      17
+    ]
   },
   {
     "id": "u20-0785",
@@ -18256,7 +21196,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      10
+    ]
   },
   {
     "id": "u20-0786",
@@ -18282,7 +21226,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      25
+    ]
   },
   {
     "id": "u20-0787",
@@ -18310,7 +21258,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      57,
+      62
+    ]
   },
   {
     "id": "u20-0788",
@@ -18337,7 +21289,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      28
+    ]
   },
   {
     "id": "u20-0789",
@@ -18362,7 +21318,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u20-0790",
@@ -18382,7 +21342,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u20-0791",
@@ -18402,7 +21366,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0792",
@@ -18449,7 +21417,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      26,
+      32
+    ]
   },
   {
     "id": "u20-0794",
@@ -18472,7 +21444,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      9
+    ]
   },
   {
     "id": "u20-0795",
@@ -18499,7 +21475,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      21
+    ]
   },
   {
     "id": "u20-0796",
@@ -18523,7 +21503,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      35
+    ]
   },
   {
     "id": "u20-0797",
@@ -18548,7 +21532,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      14
+    ]
   },
   {
     "id": "u20-0798",
@@ -18573,7 +21561,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u20-0799",
@@ -18594,7 +21586,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      23
+    ]
   },
   {
     "id": "u20-0800",
@@ -18620,7 +21616,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      11
+    ]
   },
   {
     "id": "u20-0801",
@@ -18647,7 +21647,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      33,
+      39
+    ]
   },
   {
     "id": "u20-0802",
@@ -18674,7 +21678,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      19
+    ]
   },
   {
     "id": "u20-0803",
@@ -18698,7 +21706,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      5
+    ]
   },
   {
     "id": "u20-0804",
@@ -18731,7 +21743,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      41,
+      58
+    ]
   },
   {
     "id": "u20-0805",
@@ -18758,7 +21774,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      36
+    ]
   },
   {
     "id": "u20-0806",
@@ -18784,7 +21804,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      15
+    ]
   },
   {
     "id": "u20-0807",
@@ -18809,7 +21833,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      20
+    ]
   },
   {
     "id": "u20-0808",
@@ -18831,7 +21859,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      12
+    ]
   },
   {
     "id": "u20-0809",
@@ -18854,7 +21886,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      12
+    ]
   },
   {
     "id": "u20-0810",
@@ -18880,7 +21916,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      11
+    ]
   },
   {
     "id": "u20-0811",
@@ -18904,7 +21944,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      18,
+      24
+    ]
   },
   {
     "id": "u20-0812",
@@ -18927,7 +21971,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      9
+    ]
   },
   {
     "id": "u20-0813",
@@ -18950,7 +21998,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      28,
+      41
+    ]
   },
   {
     "id": "u20-0814",
@@ -18976,7 +22028,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      29,
+      42
+    ]
   },
   {
     "id": "u20-0815",
@@ -18998,7 +22054,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      36
+    ]
   },
   {
     "id": "u20-0816",
@@ -19019,7 +22079,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      13,
+      26
+    ]
   },
   {
     "id": "u20-0817",
@@ -19041,7 +22105,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      7
+    ]
   },
   {
     "id": "u20-0818",
@@ -19070,7 +22138,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      10
+    ]
   },
   {
     "id": "u20-0819",
@@ -19121,7 +22193,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      23,
+      30
+    ]
   },
   {
     "id": "u20-0821",
@@ -19145,7 +22221,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0822",
@@ -19172,7 +22252,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      58
+    ]
   },
   {
     "id": "u20-0823",
@@ -19194,7 +22278,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      30
+    ]
   },
   {
     "id": "u20-0824",
@@ -19216,7 +22304,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0825",
@@ -19247,7 +22339,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      22
+    ]
   },
   {
     "id": "u20-0826",
@@ -19277,7 +22373,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      9
+    ]
   },
   {
     "id": "u20-0827",
@@ -19303,7 +22403,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      16
+    ]
   },
   {
     "id": "u20-0828",
@@ -19333,7 +22437,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      18
+    ]
   },
   {
     "id": "u20-0829",
@@ -19356,7 +22464,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0830",
@@ -19381,7 +22493,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      5,
+      13
+    ]
   },
   {
     "id": "u20-0831",
@@ -19401,7 +22517,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      11,
+      20
+    ]
   },
   {
     "id": "u20-0832",
@@ -19426,7 +22546,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      15
+    ]
   },
   {
     "id": "u20-0833",
@@ -19447,7 +22571,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      16,
+      24
+    ]
   },
   {
     "id": "u20-0834",
@@ -19474,7 +22602,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      0,
+      5
+    ]
   },
   {
     "id": "u20-0835",
@@ -19502,7 +22634,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      19,
+      27
+    ]
   },
   {
     "id": "u20-0836",
@@ -19549,7 +22685,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      20,
+      23
+    ]
   },
   {
     "id": "u20-0838",
@@ -19573,7 +22713,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      15,
+      21
+    ]
   },
   {
     "id": "u20-0839",
@@ -19602,7 +22746,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      43,
+      49
+    ]
   },
   {
     "id": "u20-0840",
@@ -19628,7 +22776,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      13
+    ]
   },
   {
     "id": "u20-0841",
@@ -19652,7 +22804,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      21,
+      26
+    ]
   },
   {
     "id": "u20-0842",
@@ -19674,7 +22830,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      13
+    ]
   },
   {
     "id": "u20-0843",
@@ -19700,7 +22860,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      7,
+      14
+    ]
   },
   {
     "id": "u20-0844",
@@ -19724,7 +22888,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u20-0845",
@@ -19770,7 +22938,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      15
+    ]
   },
   {
     "id": "u20-0847",
@@ -19792,7 +22964,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      14
+    ]
   },
   {
     "id": "u20-0848",
@@ -19812,7 +22988,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      4,
+      8
+    ]
   },
   {
     "id": "u20-0849",
@@ -19837,7 +23017,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "dialogues, café and neighbours",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      12
+    ]
   },
   {
     "id": "u20-0850",
@@ -19858,7 +23042,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      3,
+      9
+    ]
   },
   {
     "id": "u20-0851",
@@ -19879,7 +23067,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      12,
+      18
+    ]
   },
   {
     "id": "u20-0852",
@@ -19901,7 +23093,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      8
+    ]
   },
   {
     "id": "u20-0853",
@@ -19925,7 +23121,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      1,
+      11
+    ]
   },
   {
     "id": "u20-0854",
@@ -19947,7 +23147,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      10,
+      14
+    ]
   },
   {
     "id": "u20-0855",
@@ -20077,7 +23281,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      14,
+      20
+    ]
   },
   {
     "id": "u20-0861",
@@ -20100,7 +23308,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      17,
+      24
+    ]
   },
   {
     "id": "u20-0862",
@@ -20143,7 +23355,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      24,
+      34
+    ]
   },
   {
     "id": "u20-0864",
@@ -20162,7 +23378,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      6,
+      12
+    ]
   },
   {
     "id": "u20-0865",
@@ -20186,7 +23406,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      8,
+      14
+    ]
   },
   {
     "id": "u20-0866",
@@ -20209,7 +23433,11 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      17
+    ]
   },
   {
     "id": "u20-0867",
@@ -20236,7 +23464,11 @@
     "kind": "dialogue",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      42,
+      49
+    ]
   },
   {
     "id": "u20-0868",
@@ -20260,6 +23492,10 @@
     "kind": "statement",
     "unit": "u20",
     "theme": "last top-up",
-    "source": "gen"
+    "source": "gen",
+    "focus": [
+      9,
+      18
+    ]
   }
 ]
