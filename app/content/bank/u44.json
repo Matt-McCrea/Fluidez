@@ -5062,7 +5062,7 @@
   },
   {
     "id": "u44-0195",
-    "es": "¿Traigo las fotos?\nTráelas en caso de que las pidan.",
+    "es": "¿Traigo las fotos?\nTráelas por si las piden.",
     "en": "Shall I bring the photos?\nBring them in case they ask for them.",
     "accept": [],
     "acceptEn": [],
@@ -5071,10 +5071,10 @@
       "g:commands-with-pronouns",
       "g:direct-objects",
       "g:gender-articles",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:por-para-1",
+      "g:si-present",
+      "g:stem-e-i",
       "g:yo-irregular",
-      "l:caso",
       "l:foto",
       "l:pedir",
       "l:traer",
@@ -5082,7 +5082,7 @@
       "p:preguntar-pedir"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "dialogue",
     "unit": "u44",
@@ -5139,24 +5139,24 @@
   },
   {
     "id": "u44-0198",
-    "es": "Yesid llevó los papeles en caso de que los pidieran.",
+    "es": "Yesid llevó los papeles por si los pedían.",
     "en": "Yesid brought the papers in case they asked for them.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
       "g:gender-articles",
-      "g:imperfect-subj",
+      "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:subj-conditions",
-      "l:caso",
       "l:llevar",
       "l:papel",
       "l:pedir",
       "p:preguntar-pedir"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -5223,16 +5223,15 @@
   },
   {
     "id": "u44-0201",
-    "es": "Vale preparó más pasteles en caso de que viniera mucha gente.",
+    "es": "Vale preparó más pasteles por si venía mucha gente.",
     "en": "Vale prepared more pastries in case lots of people came.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:comparatives",
-      "g:imperfect-subj",
+      "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:subj-conditions",
-      "l:caso",
       "l:gente",
       "l:pastel",
       "l:preparar",
@@ -5241,7 +5240,7 @@
       "p:quantifiers-basic"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -5336,18 +5335,18 @@
   },
   {
     "id": "u44-0205",
-    "es": "Dejé la ventana abierta en caso de que Simón quisiera salir.",
+    "es": "Dejé la ventana abierta por si Simón quería salir.",
     "en": "I left the window open in case Simón wanted to go out.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
-      "g:imperfect-subj",
+      "g:imperfect-habitual",
+      "g:por-para-1",
+      "g:pret-vs-imperfect",
       "g:preterite-ar",
-      "g:subj-conditions",
       "g:verb-infinitive",
       "l:abrir",
-      "l:caso",
       "l:dejar",
       "l:querer",
       "l:salir",
@@ -5355,7 +5354,7 @@
       "p:encontrar-participle"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:imperfect-habitual"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -5600,7 +5599,7 @@
   },
   {
     "id": "u44-0215",
-    "es": "Traiga los documentos en caso de que el juez los pida.",
+    "es": "Traiga los documentos por si el juez los pide.",
     "en": "Bring the documents in case the judge asks for them. (polite)",
     "accept": [],
     "acceptEn": [],
@@ -5608,9 +5607,9 @@
       "g:commands-usted",
       "g:direct-objects",
       "g:gender-articles",
-      "g:subj-conditions",
-      "g:subj-wanting",
-      "l:caso",
+      "g:por-para-1",
+      "g:si-present",
+      "g:stem-e-i",
       "l:documento",
       "l:juez",
       "l:pedir",
@@ -5619,7 +5618,7 @@
       "p:preguntar-pedir"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -5957,25 +5956,25 @@
   },
   {
     "id": "u44-0228",
-    "es": "Pon la alarma en caso de que me quede dormido.",
+    "es": "Pon la alarma por si me quedo dormido.",
     "en": "Set the alarm in case I oversleep. (to a friend, a man speaking)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
       "g:gender-articles",
+      "g:por-para-1",
+      "g:present-ar",
       "g:reflexive-routine",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:si-present",
       "l:alarma",
-      "l:caso",
       "l:dormir",
       "l:poner",
       "l:quedarse",
       "p:quedar-participio"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",
@@ -32009,8 +32008,8 @@
   },
   {
     "id": "u44-1221",
-    "es": "La primavera llega a Bogotá con lluvias y flores.",
-    "en": "Spring arrives in Bogotá with rain and flowers.",
+    "es": "La primavera llega a Toronto con lluvias y flores.",
+    "en": "Spring arrives in Toronto with rain and flowers.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32031,17 +32030,17 @@
   },
   {
     "id": "u44-1222",
-    "es": "En primavera el patio se llena de gente.",
-    "en": "In spring the courtyard fills with people.",
+    "es": "En primavera los parques de Toronto se llenan de gente.",
+    "en": "In spring Toronto's parks fill with people.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
+      "g:passive-se",
       "g:present-ar",
-      "g:se-impersonal",
       "l:gente",
       "l:llenar",
-      "l:patio",
+      "l:parque",
       "l:primavera",
       "p:la-gente-singular"
     ],
@@ -32055,19 +32054,20 @@
   },
   {
     "id": "u44-1223",
-    "es": "Rosa puso estas flores el año pasado, en primavera.",
-    "en": "Rosa put these flowers in last year, in spring.",
+    "es": "Mi hermana vino de Toronto el año pasado, en primavera.",
+    "en": "My sister came from Toronto last year, in spring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:demonstratives",
       "g:gender-articles",
       "g:preterite-irregular-strong",
       "l:año",
-      "l:flor",
+      "l:hermana",
       "l:pasado",
-      "l:poner",
       "l:primavera",
+      "l:venir",
+      "p:ir-a-venir-de-place",
+      "p:possessives-basic",
       "p:time-pasado-que-viene"
     ],
     "targets": [
@@ -32080,20 +32080,16 @@
   },
   {
     "id": "u44-1224",
-    "es": "En la próxima primavera, el café cumple cuarenta años.",
-    "en": "Next spring the café turns forty.",
+    "es": "En Toronto, la primavera empieza en marzo.",
+    "en": "In Toronto, spring starts in March.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "g:adjective-agreement",
       "g:gender-articles",
-      "g:present-er-ir",
-      "l:año",
-      "l:café",
-      "l:cumplir",
-      "l:primavera",
-      "l:próximo",
-      "p:cumplir-anos"
+      "g:stem-boot",
+      "l:empezar",
+      "l:marzo",
+      "l:primavera"
     ],
     "targets": [
       "l:primavera"
@@ -32133,8 +32129,8 @@
   },
   {
     "id": "u44-1226",
-    "es": "El museo abre una sala nueva esta primavera.",
-    "en": "The museum opens a new room this spring.",
+    "es": "El museo de Toronto abre una sala nueva esta primavera.",
+    "en": "The Toronto museum opens a new room this spring.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -39187,24 +39183,24 @@
   },
   {
     "id": "u44-1494",
-    "es": "Compra el pan hoy en caso de que mañana no abran.",
+    "es": "Compra el pan hoy por si mañana no abren.",
     "en": "Buy the bread today in case they don't open tomorrow. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:subj-conditions",
-      "g:subj-wanting",
+      "g:present-er-ir",
+      "g:si-present",
       "l:abrir",
-      "l:caso",
       "l:comprar",
       "l:hoy",
       "l:mañana",
-      "l:pan"
+      "l:pan",
+      "p:costar-pagar"
     ],
     "targets": [
-      "g:subj-conditions"
+      "g:si-present"
     ],
     "kind": "statement",
     "unit": "u44",

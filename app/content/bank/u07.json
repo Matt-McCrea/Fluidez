@@ -5527,18 +5527,18 @@
   },
   {
     "id": "u07-0233",
-    "es": "Vivo en este apartamento hace dos meses.",
-    "en": "I've lived in this apartment for two months.",
+    "es": "Vine a este apartamento hace dos meses.",
+    "en": "I came to this apartment two months ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:vivo-en",
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-irregular-strong",
       "l:apartamento",
       "l:hacer",
       "l:mes",
-      "l:vivo",
+      "l:venir",
       "p:demonstratives-basic"
     ],
     "targets": [
@@ -5960,19 +5960,20 @@
   },
   {
     "id": "u07-0251",
-    "es": "Trabajo en la cocina hace un año.",
-    "en": "I've worked in the kitchen for a year.",
+    "es": "Trabajé en la cocina hace un año.",
+    "en": "I worked in the kitchen a year ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:trabajo-en",
+      "c:compre-trabaje",
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-ar",
       "l:año",
       "l:cocina",
       "l:hacer",
-      "l:trabajo"
+      "l:trabajar"
     ],
     "targets": [
       "g:hace-ago",
@@ -6596,18 +6597,16 @@
   },
   {
     "id": "u07-0276",
-    "es": "Está cerrada hace una semana.",
-    "en": "It's been closed for a week.",
+    "es": "Cerró hace una semana.",
+    "en": "It closed a week ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:abierto-cerrado",
-      "g:estar-participle",
       "g:gender-articles",
       "g:hace-ago",
       "g:present-er-ir",
+      "g:preterite-ar",
       "l:cerrar",
-      "l:estar",
       "l:hacer",
       "l:semana"
     ],
@@ -7765,19 +7764,19 @@
   },
   {
     "id": "u07-0324",
-    "es": "Espero al portero hace un rato.",
-    "en": "I've been waiting for the doorman for a while.",
+    "es": "Vi al portero hace un rato.",
+    "en": "I saw the doorman a while ago.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:hace-ago",
-      "g:present-ar",
       "g:present-er-ir",
-      "l:esperar",
+      "g:preterite-er-ir",
       "l:hacer",
       "l:portero",
       "l:rato",
+      "l:ver",
       "p:personal-a"
     ],
     "targets": [

@@ -46,17 +46,16 @@
   },
   {
     "id": "u49-t-verbs-prepositions-0003",
-    "es": "La carta se trata de un reembolso.",
+    "es": "La carta trata de un reembolso.",
     "en": "The letter is about a refund.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:carta",
       "l:reembolso",
-      "l:tratarse",
+      "l:tratar",
       "p:se-trata-de",
       "p:tratar-de"
     ],
@@ -212,18 +211,18 @@
   },
   {
     "id": "u49-t-verbs-prepositions-0010",
-    "es": "¿De qué se trata la carta de Hernando?",
+    "es": "¿De qué trata la carta de Hernando?",
     "en": "What is Hernando's letter about?",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:carta",
       "l:qué",
-      "l:tratarse",
-      "p:prep-questions-basic"
+      "l:tratar",
+      "p:prep-questions-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:verbs-prepositions"
@@ -480,19 +479,19 @@
   },
   {
     "id": "u49-t-verbs-prepositions-0022",
-    "es": "¿De qué se trata el libro?\nSe trata de un loro.",
+    "es": "¿De qué trata el libro?\nTrata de un loro.",
     "en": "What is the book about?\nIt is about a parrot.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:present-ar",
-      "g:reflexive-routine",
       "l:libro",
       "l:loro",
       "l:qué",
-      "l:tratarse",
+      "l:tratar",
       "p:prep-questions-basic",
+      "p:question-word-order",
       "p:se-trata-de",
       "p:tratar-de"
     ],
