@@ -9,7 +9,7 @@ import {
   type Block, type Item, type LearnItem, type Mode, type PathState, type RecapBlock, type RecapItem, type ServedRef, type SessionPlan,
 } from '../../compiler';
 import type { NodeId } from '../../content/schema';
-import { Rating, type Direction, type Grade, type Learner, type Tier } from '../../learner';
+import { Rating, type Direction, type ExposureEvent, type Grade, type Learner, type Tier } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
@@ -366,6 +366,17 @@ export class SessionRunner {
     this.learner.introduce(node, { at: this.now(), productive: p });
   }
 
+  /**
+   * An answered sentence is graded for its target alone. The other nodes it
+   * needs are counted as seen, with no event of their own: Weak spots reads the
+   * events, and a miss logged for every node would charge the preterite for a
+   * por/para slip.
+   */
+  private exposeAbout(target: NodeId, credit: readonly NodeId[], event: ExposureEvent, at = this.now()): void {
+    this.learner.expose(credit.filter((n) => n !== target), { at });
+    this.learner.expose(credit.filter((n) => n === target), { at, event });
+  }
+
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn', typed = false): boolean {
     if (!this.inScore) this.bump();
@@ -376,7 +387,7 @@ export class SessionRunner {
     if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
     else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
-      this.learner.expose(credit, { at: this.now(), event: { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms } });
+      this.exposeAbout(node, credit, { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms });
       return true;
     }
     const st = this.learner.learningStep(node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries) });
@@ -428,7 +439,7 @@ export class SessionRunner {
         const op = eventOp(item);
         const tries = tries12(o.tries);
         if (!targets.length) {
-          this.learner.expose(item.credit, { at, event: { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined } });
+          this.exposeAbout(item.node, item.credit, { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined }, at);
           return;
         }
         if (sentence) {
@@ -447,12 +458,10 @@ export class SessionRunner {
         this.learningStep(item.node, o, item.credit, item.op === 'learn' ? item.productive : undefined, eventOp(item));
         return;
       case 'exposure':
-        this.learner.expose(item.credit, {
-          at, event: {
-            op: eventOp(item), direction: 'direction' in item ? item.direction : 'receptive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms,
-            sentence: 'sentence' in item ? item.sentence : undefined,
-          },
-        });
+        this.exposeAbout(item.node, item.credit, {
+          op: eventOp(item), direction: 'direction' in item ? item.direction : 'receptive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms,
+          sentence: 'sentence' in item ? item.sentence : undefined,
+        }, at);
         return;
       case 'none':
         return;
@@ -507,7 +516,7 @@ export class SessionRunner {
     const grade = gradeOf(o);
     const tries = tries12(o.tries);
     if (item.kind === 'new') {
-      this.learner.expose(item.credit, { at, event: { op: 'recap', direction: item.direction, grade, tries, ms: o.ms } });
+      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms }, at);
       return;
     }
     if (!this.learner.hasCard(item.node, item.direction)) return;
