@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { TeachingScript } from '../../../content/schema';
 import type { TenseKey } from '../../../engine';
+import { practiceFor } from '../../../learner/weak';
 import type { PracticeSpec } from '../../session/practice-spec';
 import { Es, Heading, Paras, Rich, undash } from '../../components/text';
 import { useApp } from '../../context';
@@ -209,7 +210,7 @@ function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPr
           </div>
         ) : null}
         <div class="actions">
-          <button class="btn primary" onClick={() => onPractise({ kind: 'nodes', nodes: [e.id] })}>Practise this</button>
+          <button class="btn primary" onClick={() => onPractise(practiceFor(e.id, (id) => bundle.node(id), (id) => learner.isIntroduced(id)))}>Practise this</button>
         </div>
         {e.week ? <p class="small-print">From week {e.week}</p> : null}
       </> : null}

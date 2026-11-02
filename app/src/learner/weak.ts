@@ -3,6 +3,7 @@
 // wrong for synonym or phrasing reasons, so they only LOCATE a weak tense or
 // feature, and only through grammar-kind nodes. The fix is always a form drill
 // on fresh material, never those questions again.
+import { assertHits } from '../check/traps';
 import type { GraphNode, NodeId } from '../content/schema';
 import { analyzeToken, tokenize, verbByInf } from '../engine';
 import type { PracticeSpec } from '../ui/session/practice-spec';
@@ -79,7 +80,9 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     const n = look(e.node);
     if (!n) continue;
     if (free && !GRAMMAR_KINDS.has(n.kind)) continue;
-    const miss = e.grade === Rating.Again || e.tries === 2;
+    const missed = e.grade === Rating.Again || e.tries === 2;
+    // a free-form answer is marked wrong for many reasons: it is a miss of this point only where the checker asserted a named error (R14)
+    const miss = missed && (!free || assertHits([e]).size > 0);
     const tenses = n.kind === 'grammar' || n.kind === 'pattern' ? tensesOfNode(n) : [];
     if (tenses.length) { for (const t of tenses) add(byTense, t, e, miss, e.node); continue; }
     if (n.kind === 'lexeme' && !((n.freqRank ?? Infinity) <= 2000)) continue;
@@ -146,6 +149,14 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     });
   }
   return spots.sort((a, b) => b.misses * b.rate - a.misses * a.rate).slice(0, opts.max ?? DEFAULT_MAX_SPOTS);
+}
+
+/** The practice a grammar node's "Practise this" starts: the contrast it is one side of, when the learner has been taught it, else the node. */
+export function practiceFor(id: NodeId, look: (id: NodeId) => GraphNode | undefined, introduced?: (id: NodeId) => boolean): PracticeSpec {
+  const between = (look(id)?.contrasts ?? []).filter((x) => x.startsWith('x:') && look(x)?.kind === 'contrast' && !!introduced?.(x)).slice(0, 2);
+  return between.length
+    ? { kind: 'nodes', nodes: between, title: `${look(between[0])?.title ?? look(id)?.title ?? id}: a workout` }
+    : { kind: 'nodes', nodes: [id] };
 }
 
 export interface RecentMiss {

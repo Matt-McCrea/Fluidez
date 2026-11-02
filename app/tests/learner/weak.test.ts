@@ -16,16 +16,23 @@ const ev = (node: string, op: string, miss: boolean, ageDays = 1): ReviewEvent =
   at: NOW - ageDays * DAY, node, dir: 'productive', grade: miss ? Rating.Again : Rating.Good, op,
   tries: miss ? 2 : 1, novel: false, session: 1, scored: 'exposure',
 });
+const named = (e: ReviewEvent): ReviewEvent => ({ ...e, rule: 'mood-hard' });
 const run = (n: number, f: (i: number) => ReviewEvent) => Array.from({ length: n }, (_, i) => f(i));
 
 describe('weakSpots', () => {
   it('turns free-form misses on a tense node into a conjugation spot, never a translate spec', () => {
-    const spots = weakSpots(run(5, () => ev('g:preterite-ar', 'translate', true)), look, { now: NOW, metVerbs: ['hablar', 'comer'] });
+    const spots = weakSpots(run(5, () => named(ev('g:preterite-ar', 'translate', true))), look, { now: NOW, metVerbs: ['hablar', 'comer'] });
     expect(spots).toHaveLength(1);
     expect(spots[0].kind).toBe('tense');
     expect(spots[0].label).toBe('Preterite');
     expect(spots[0].spec).toMatchObject({ kind: 'conjugate', tenses: ['preterito'], verbs: ['hablar', 'comer'] });
     expect(spots.every((s) => s.spec.kind !== 'translate')).toBe(true);
+  });
+  it('a free-form miss with no Assert is no weak spot, one the checker named is (R14)', () => {
+    const unnamed = run(5, () => ev('g:preterite-ar', 'translate', true));
+    expect(weakSpots(unnamed, look, { now: NOW, metVerbs: ['hablar'] })).toEqual([]);
+    expect(unnamed[0].grade).toBe(Rating.Again);
+    expect(weakSpots(run(5, () => named(ev('g:preterite-ar', 'translate', true))), look, { now: NOW, metVerbs: ['hablar'] })).toHaveLength(1);
   });
   it('ignores free-form misses on lexemes', () => {
     expect(weakSpots(run(5, () => ev('l:casa', 'translate', true)), look, { now: NOW })).toEqual([]);
@@ -60,7 +67,7 @@ describe('weakSpots max and recentMisses', () => {
   it('max raises the number of spots returned', () => {
     const events = [
       ...run(6, (i) => ev('p:ir-a', 'type', i < 4)),
-      ...run(5, () => ev('g:preterite-ar', 'translate', true)),
+      ...run(5, () => named(ev('g:preterite-ar', 'translate', true))),
     ];
     expect(weakSpots(events, look, { now: NOW })).toHaveLength(2);
     expect(weakSpots(events, look, { now: NOW, max: 1 })).toHaveLength(1);

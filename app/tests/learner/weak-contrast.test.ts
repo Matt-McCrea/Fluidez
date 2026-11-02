@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { GraphNode } from '../../src/content/schema';
 import { Rating, type ReviewEvent } from '../../src/learner';
-import { weakSpots } from '../../src/learner/weak';
+import { practiceFor, weakSpots } from '../../src/learner/weak';
 
 const GRAPH = join(__dirname, '../../content/graph');
 const nodes = new Map<string, GraphNode>(readdirSync(GRAPH).filter((f) => f.endsWith('.json') && !f.startsWith('_')).flatMap((f) => (JSON.parse(readFileSync(join(GRAPH, f), 'utf8')) as GraphNode[]).map((n) => [n.id, n] as const)));
@@ -79,7 +79,7 @@ describe('a weak spot on a point that sets two things against each other', () =>
   });
 
   it('free-form misses are still only signal: a miss in a translation does not send anyone to a contrast', () => {
-    const free = run(6, () => ev('g:por-para-1', 'translate', true));
+    const free = run(6, () => ({ ...ev('g:por-para-1', 'translate', true), rule: 'mood-hard' }));
     const spots = weakSpots(free, look, { now: NOW, introduced: has('x:por-para') });
     // located by a free-form answer, the grammar point is a spot and its drill goes by form: the contrast's items are forms
     expect(spots.every((s) => s.spec.kind !== 'translate')).toBe(true);
@@ -88,5 +88,12 @@ describe('a weak spot on a point that sets two things against each other', () =>
   it('claims are neither misses nor attempts here either', () => {
     const claimed = run(6, () => ({ ...ev('g:por-para-1', 'type', true), claimed: true as const }));
     expect(weakSpots(claimed, look, { now: NOW, introduced: has('x:por-para') })).toEqual([]);
+  });
+});
+
+describe('Reference "Practise this" on a grammar node', () => {
+  it('goes to the contrast the node names when the learner has it, else to the node', () => {
+    expect(practiceFor('g:por-para-1', look, has('x:por-para'))).toMatchObject({ kind: 'nodes', nodes: ['x:por-para'] });
+    expect(practiceFor('g:por-para-1', look, has())).toEqual({ kind: 'nodes', nodes: ['g:por-para-1'] });
   });
 });
