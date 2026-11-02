@@ -13,25 +13,20 @@ import {
   Band, BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
+import type { ContentDir } from '../../content/kinds';
 import { Bundle } from './bundle';
 
 export type FileLoader = () => Promise<unknown>;
 export type FileMap = Record<string, FileLoader>;
 
-export interface ContentFiles {
-  graph: FileMap;
-  units: FileMap;
-  bank: FileMap;
-  scripts: FileMap;
-  story: FileMap;
-  scenes: FileMap;
-  writing: FileMap;
+/** One lazy file map per content kind (src/content/kinds.ts lists them; a test holds this to it), and the content's own past. */
+export interface ContentFiles extends Record<ContentDir, FileMap> {
   /** the content migrations and the shipped path, bundled whole (boot needs them before any content, and offline); absent = the course has no past */
   history?: { migrations: Record<string, unknown>; legacy?: unknown };
 }
 
 /** The kinds of content file that load lazily, window by window. */
-export type FileKind = Exclude<keyof ContentFiles, 'history'>;
+export type FileKind = ContentDir;
 
 /** The real content tree. Files and folders starting with `_` are ignored. */
 export const CONTENT_FILES: ContentFiles = {

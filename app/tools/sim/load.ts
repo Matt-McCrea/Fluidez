@@ -10,6 +10,7 @@ import {
   BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../src/content/schema';
 import type { ContentSource } from '../../src/compiler';
+import { dirOf } from '../../src/content/kinds';
 
 export interface LoadedContent {
   units: Unit[];
@@ -56,14 +57,14 @@ function load<T extends z.ZodTypeAny>(dir: string, schema: T, problems: string[]
 
 export function loadContent(contentDir: string): LoadedContent {
   const problems: string[] = [];
-  const units = load(join(contentDir, 'units'), Unit, problems);
-  const nodes = load(join(contentDir, 'graph'), GraphNode, problems);
-  const sentences = load(join(contentDir, 'bank'), BankSentence, problems);
+  const units = load(join(contentDir, dirOf('unit')), Unit, problems);
+  const nodes = load(join(contentDir, dirOf('graph')), GraphNode, problems);
+  const sentences = load(join(contentDir, dirOf('bank')), BankSentence, problems);
   // keepExtra: chapters/scenes/tasks may carry tagger `requires` beyond the schema
-  const chapters = load(join(contentDir, 'story'), StoryChapter, problems, true);
-  const scenes = load(join(contentDir, 'scenes'), Scene, problems, true);
-  const writing = load(join(contentDir, 'writing'), WritingTask, problems, true);
-  const scripts = load(join(contentDir, 'scripts'), TeachingScript, problems);
+  const chapters = load(join(contentDir, dirOf('story')), StoryChapter, problems, true);
+  const scenes = load(join(contentDir, dirOf('scene')), Scene, problems, true);
+  const writing = load(join(contentDir, dirOf('writing')), WritingTask, problems, true);
+  const scripts = load(join(contentDir, dirOf('script')), TeachingScript, problems);
   return { units, nodes, source: { sentences, chapters, scenes, writing, scripts }, problems };
 }
 

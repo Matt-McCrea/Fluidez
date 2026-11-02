@@ -1,7 +1,7 @@
 // Which strings in a content file are Spanish, and what each one is for.
-import { basename, dirname } from 'node:path';
+import { kindOfFile, type ContentKind } from '../../src/content/kinds';
 
-export type Kind = 'graph' | 'unit' | 'bank' | 'script' | 'story' | 'scene' | 'writing' | 'other';
+export type Kind = ContentKind | 'other';
 
 export interface EsString {
   /** JSON path inside the file, e.g. [3].es or turns[2].accept[0] */
@@ -19,20 +19,9 @@ export interface EsString {
   unit?: string;
 }
 
+/** What a content file is: by its folder and name, from the kinds registry (src/content/kinds.ts). */
 export function kindOf(file: string): Kind {
-  const dir = basename(dirname(file));
-  const name = basename(file);
-  if (name.startsWith('_')) return 'other';
-  switch (dir) {
-    case 'graph': return 'graph';
-    case 'units': return /^u\d{2}\.json$/.test(name) ? 'unit' : 'other';
-    case 'bank': return 'bank';
-    case 'scripts': return 'script';
-    case 'story': return /^ch\d{3}\.json$/.test(name) ? 'story' : 'other';
-    case 'scenes': return 'scene';
-    case 'writing': return 'writing';
-    default: return 'other';
-  }
+  return kindOfFile(file) ?? 'other';
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
