@@ -832,6 +832,7 @@
   "title": "por or para?",
   "es": "Gracias por el regalo.",
   "requires": [
+   "p:para-inf",
    "g:por-para-1"
   ],
   "contrasts": [
