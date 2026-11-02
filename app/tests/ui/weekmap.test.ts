@@ -51,6 +51,19 @@ describe('only five minutes', () => {
   });
 });
 
+describe('quick session that finishes the lesson', () => {
+  it('quickFinished is set when the path moved on, cleared when it did not', async () => {
+    const w = await world();
+    const day = w.learner.day(w.now());
+    const moved = structuredClone(w.ui.path);
+    moved.day += 1;
+    await w.ui.commitSession(w.learner, moved, day, { quick: true });
+    expect(w.ui.state.stats.quickFinished).toBe(true);
+    await w.ui.commitSession(w.learner, structuredClone(w.ui.path), day, { quick: true });
+    expect(w.ui.state.stats.quickFinished).toBe(false);
+  });
+});
+
 describe('close screen misses', () => {
   it('a wrong session collects unique nodes, capped', async () => {
     const w = await world();

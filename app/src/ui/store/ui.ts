@@ -51,6 +51,8 @@ export interface UiState {
     today: number;
     /** day key of the last "only five minutes" session: it keeps the streak but not the day's lesson */
     quickToday?: string;
+    /** the last quick session finished the day's lesson (its slices added up), so no lesson is left waiting */
+    quickFinished?: boolean;
   };
   saved: SavedWord[];
   canDos: CanDoMark[];
@@ -390,7 +392,10 @@ export class UiStore {
     const next = structuredClone(this.state);
     applyStreak(next, day);
     next.stats.sessions += 1;
-    if (opts.quick) next.stats.quickToday = day;
+    if (opts.quick) {
+      next.stats.quickToday = day;
+      next.stats.quickFinished = before.path.unit !== this.path.unit || before.path.day !== this.path.day;
+    }
     else {
       next.stats.today = next.stats.lastDay === day ? next.stats.today + 1 : 1;
       next.stats.lastDay = day;

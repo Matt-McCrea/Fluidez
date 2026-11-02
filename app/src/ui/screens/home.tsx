@@ -186,7 +186,7 @@ export function Home({ onPlay, onStart, onStory, onWeak, onPractise, onLook }: {
           {short && !saved ? <button class="btn quiet" data-full onClick={() => { requestFullLesson(); onStart('next'); }}>Do the full lesson instead</button> : null}
           {!doneToday && !saved && !short && hasReviews ? <button class="btn link small" data-five onClick={() => onStart('next', { tier: 'minimum', cap: 5, quick: true })}>Only five minutes?</button> : null}
         </div>
-        {quickDone && !saved ? <p class="small" data-quick-done>Five minutes done. The full lesson is still here when you have time.</p> : null}
+        {quickDone && !saved ? <p class="small" data-quick-done>{ui.state.stats.quickFinished ? 'Five minutes done. That finished the lesson, and the next one is ready when you are.' : 'Five minutes done. The rest of this lesson is still here when you have time.'}</p> : null}
       </section>
 
       <section class="card" aria-labelledby="practise-title">
