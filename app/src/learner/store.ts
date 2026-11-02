@@ -1,6 +1,7 @@
 // Persistence for the learner. The whole LearnerState is one versioned JSON
 // document under one key; Learner.open() migrates whatever it loads.
 import { createStore, del, get, keys, set, setMany } from 'idb-keyval';
+import type { AttemptLog } from './attempts';
 import type { EventLog } from './events';
 import type { LearnerState } from './state';
 
@@ -12,6 +13,9 @@ export interface LearnerStore {
   /** The review event log (kept apart from the state document), unvalidated, or undefined. */
   loadEvents?(): Promise<unknown | undefined>;
   saveEvents?(log: EventLog): Promise<void>;
+  /** The attempts log (what was typed, kept apart from the events), unvalidated, or undefined. */
+  loadAttempts?(): Promise<unknown | undefined>;
+  saveAttempts?(log: AttemptLog): Promise<void>;
   /** Write every provided document in ONE transaction: all land or none do. */
   saveAll?(docs: SaveAll): Promise<void>;
   /** The state's one-step backup (the document before the last save), unmigrated, or undefined. */
@@ -31,10 +35,10 @@ export interface LearnerStore {
 }
 
 /** The documents the learner store owns; the UI store keeps `path` and `ui` itself. */
-export type StoredDoc = 'state' | 'events';
+export type StoredDoc = 'state' | 'events' | 'attempts';
 
 /** The documents a session save may carry. `path` and `ui` are owned by the UI store. */
-export interface SaveAll { state?: LearnerState; events?: EventLog; path?: unknown; ui?: unknown }
+export interface SaveAll { state?: LearnerState; events?: EventLog; attempts?: AttemptLog; path?: unknown; ui?: unknown }
 
 /** For tests and the simulator. Stores a structured clone, like IndexedDB does. */
 export class MemoryStore implements LearnerStore {
@@ -55,24 +59,29 @@ export class MemoryStore implements LearnerStore {
   eventSaves = 0;
   async loadEvents() { return this.evs === undefined ? undefined : structuredClone(this.evs); }
   async saveEvents(log: EventLog) { this.evs = structuredClone(log); this.eventSaves += 1; }
+  private atts: unknown | undefined;
+  async loadAttempts() { return this.atts === undefined ? undefined : structuredClone(this.atts); }
+  async saveAttempts(log: AttemptLog) { this.atts = structuredClone(log); }
   /** Path and ui documents written through saveAll, by key. */
   readonly extras = new Map<string, unknown>();
   async saveAll(d: SaveAll) {
     // Stage everything first, then commit: nothing is applied if a clone throws.
     const state = d.state && structuredClone(d.state);
     const events = d.events && structuredClone(d.events);
+    const attempts = d.attempts && structuredClone(d.attempts);
     const path = d.path !== undefined ? structuredClone(d.path) : undefined;
     const ui = d.ui !== undefined ? structuredClone(d.ui) : undefined;
     if (state) { this.previous = this.doc; this.doc = state; this.saves += 1; }
     if (events) { this.evs = events; this.eventSaves += 1; }
+    if (attempts) this.atts = attempts;
     if (path !== undefined) this.extras.set('path', path);
     if (ui !== undefined) this.extras.set('ui', ui);
   }
-  async clear() { this.doc = undefined; this.previous = undefined; this.evs = undefined; this.extras.clear(); this.kept.clear(); }
+  async clear() { this.doc = undefined; this.previous = undefined; this.evs = undefined; this.atts = undefined; this.extras.clear(); this.kept.clear(); }
   async exportAll(keys: readonly string[]) {
     const out: Record<string, unknown> = {};
     for (const k of keys) {
-      const v = k === 'state' ? this.doc : k === 'events' ? this.evs : this.extras.get(k);
+      const v = k === 'state' ? this.doc : k === 'events' ? this.evs : k === 'attempts' ? this.atts : this.extras.get(k);
       if (v !== undefined) out[k] = structuredClone(v);
     }
     return out;
@@ -84,7 +93,8 @@ export class MemoryStore implements LearnerStore {
     this.previous = this.doc;
     this.doc = staged.state;
     this.evs = staged.events;
-    for (const k of keys) if (k !== 'state' && k !== 'events') { if (staged[k] === undefined) this.extras.delete(k); else this.extras.set(k, staged[k]); }
+    this.atts = staged.attempts;
+    for (const k of keys) if (k !== 'state' && k !== 'events' && k !== 'attempts') { if (staged[k] === undefined) this.extras.delete(k); else this.extras.set(k, staged[k]); }
   }
   /** What a JSON export of the stored document would contain. */
   snapshot(): unknown { return this.doc === undefined ? undefined : JSON.parse(JSON.stringify(this.doc)); }
@@ -105,6 +115,7 @@ export const IDB_DB = 'fluidez';
 export const IDB_OBJECT_STORE = 'learner';
 export const IDB_KEY = 'state';
 export const IDB_EVENTS_KEY = 'events';
+export const IDB_ATTEMPTS_KEY = 'attempts';
 export const IDB_PATH_KEY = 'path';
 export const IDB_UI_KEY = 'ui';
 
@@ -115,15 +126,17 @@ export function idbKV(db = IDB_DB, objectStore = IDB_OBJECT_STORE): KV {
 
 /** The browser store. Keeps the previous document under `state.prev` as a one-step backup. */
 export class IdbStore implements LearnerStore {
-  constructor(readonly kv: KV = idbKV(), private readonly key = IDB_KEY, private readonly eventsKey = IDB_EVENTS_KEY) {}
+  constructor(readonly kv: KV = idbKV(), private readonly key = IDB_KEY, private readonly eventsKey = IDB_EVENTS_KEY, private readonly attemptsKey = IDB_ATTEMPTS_KEY) {}
   async loadEvents() { return (await this.kv.get(this.eventsKey)) ?? undefined; }
   async saveEvents(log: EventLog) { await this.kv.set(this.eventsKey, log); }
+  async loadAttempts() { return (await this.kv.get(this.attemptsKey)) ?? undefined; }
+  async saveAttempts(log: AttemptLog) { await this.kv.set(this.attemptsKey, log); }
   async load() {
     const doc = await this.kv.get(this.key);
     return doc ?? (await this.loadPrevious());
   }
   async loadPrevious() { return (await this.kv.get(`${this.key}.prev`)) ?? undefined; }
-  private nameOf(doc: StoredDoc) { return doc === 'state' ? this.key : this.eventsKey; }
+  private nameOf(doc: StoredDoc) { return doc === 'state' ? this.key : doc === 'events' ? this.eventsKey : this.attemptsKey; }
   async quarantine(doc: StoredDoc, raw: unknown) {
     try { await this.kv.set(`${this.nameOf(doc)}.quarantine`, raw); } catch { /* best effort */ }
   }
@@ -145,6 +158,7 @@ export class IdbStore implements LearnerStore {
       entries.push([this.key, d.state]);
     }
     if (d.events) entries.push([this.eventsKey, d.events]);
+    if (d.attempts) entries.push([this.attemptsKey, d.attempts]);
     if (d.path !== undefined) entries.push([IDB_PATH_KEY, d.path]);
     if (d.ui !== undefined) entries.push([IDB_UI_KEY, d.ui]);
     if (!entries.length) return;
@@ -152,7 +166,7 @@ export class IdbStore implements LearnerStore {
     else for (const [k, v] of entries) await this.kv.set(k, v);
   }
   /** Where a key's document lives: `state` and `events` under this store's own keys, anything else under its own name. */
-  private nameFor(key: string) { return key === 'state' ? this.key : key === 'events' ? this.eventsKey : key; }
+  private nameFor(key: string) { return key === 'state' ? this.key : key === 'events' ? this.eventsKey : key === 'attempts' ? this.attemptsKey : key; }
   async exportAll(keys: readonly string[]) {
     const out: Record<string, unknown> = {};
     for (const k of keys) {
@@ -179,7 +193,7 @@ export class IdbStore implements LearnerStore {
   }
   /** Everything the store holds, copies included: a reset that promises to delete progress must not keep a snapshot of it. */
   async clear() {
-    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [this.key, this.eventsKey].some((n) => k.startsWith(`${n}.`)));
-    for (const k of [this.key, `${this.key}.prev`, this.eventsKey, ...copies]) await this.kv.del(k);
+    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [this.key, this.eventsKey, this.attemptsKey].some((n) => k.startsWith(`${n}.`)));
+    for (const k of [this.key, `${this.key}.prev`, this.eventsKey, this.attemptsKey, ...copies]) await this.kv.del(k);
   }
 }

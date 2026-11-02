@@ -3,6 +3,7 @@
 // survives JSON, structuredClone and IndexedDB unchanged. The Learner class
 // (learner.ts) is the only code that mutates it; LearnerStore persists it.
 import type { NodeId } from '../content/schema';
+import type { Fingerprint } from './attempts';
 import { newCard } from './scheduler';
 
 export const STATE_VERSION = 2;
@@ -96,6 +97,12 @@ export interface LearnerState {
   timing: Record<Direction, TimingStats>;
   /** Fitted FSRS weights once enough reviews exist; undefined = FSRS-5 defaults. */
   weights?: number[];
+  /**
+   * The kinds of slip the checker has named, counted (see attempts.ts). A rollup, so it outlives the
+   * capped attempts log. Additive: absent until the first named slip, and a build that does not know
+   * it carries it through a save untouched.
+   */
+  fingerprint?: Fingerprint;
 }
 
 export const DEFAULT_SETTINGS: Settings = {

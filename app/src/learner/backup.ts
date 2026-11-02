@@ -8,6 +8,7 @@
 // other way still serves it. Restore stores the raw documents and lets boot
 // migrate them, but only after a dry run has migrated every one without
 // writing anything, and after a `.pre-restore` copy of what is there now.
+import { readAttempts } from './attempts';
 import { readEvents } from './events';
 import { migrate, StoredDocumentError } from './state';
 import type { LearnerState } from './state';
@@ -25,7 +26,7 @@ export type DocReader = (raw: unknown) => unknown;
 export type BackupReaders = Record<string, DocReader>;
 
 /** The learner store's own documents. The UI store adds its own (see BACKUP_READERS in ui/store/ui.ts). */
-export const LEARNER_READERS: BackupReaders = { state: migrate, events: readEvents };
+export const LEARNER_READERS: BackupReaders = { state: migrate, events: readEvents, attempts: readAttempts };
 
 export interface BackupFile {
   format: typeof BACKUP_FORMAT;

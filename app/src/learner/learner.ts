@@ -7,6 +7,7 @@
 // coalesced save to the LearnerStore; `flush()` awaits the pending save.
 import type { Card, FSRS } from 'ts-fsrs';
 import type { NodeId } from '../content/schema';
+import { appendAttempt, emptyAttempts, readAttempts, tally, type AttemptLog, type AttemptRow } from './attempts';
 import { compact, emptyLog, readEvents, type EventLog, type ReviewEvent } from './events';
 import { Ledger } from './ledger';
 import { fromCard, makeScheduler, newCard, Rating, State, toCard, type Grade } from './scheduler';
@@ -81,6 +82,8 @@ export interface ReviewOptions {
   op?: string;          // event log: what produced the outcome (default 'other')
   tries?: number;       // event log: attempts used (clamped to 1 or 2)
   sentence?: string;    // event log: bank sentence id
+  err?: string;         // event log: the kind of slip the checker named on the first try (see ReviewEvent.err)
+  rule?: string;        // event log: the trap rule that named it
 }
 
 /** Describes an answered item whose credit is exposure only (see Learner.expose). */
@@ -92,9 +95,13 @@ export interface ExposureEvent {
   ms?: number;
   sentence?: string;
   novel?: boolean;
+  err?: string;
+  rule?: string;
 }
 
 const triesOf = (t?: number): 1 | 2 => (t !== undefined && t > 1 ? 2 : 1);
+/** The slip an answer made, as the fields an event carries it in. */
+const slipOf = (o: { err?: string; rule?: string }) => ({ ...(o.err ? { err: o.err } : {}), ...(o.rule ? { rule: o.rule } : {}) });
 
 export interface SentenceCreditOptions extends ReviewOptions {
   /** the single target (default: the first id) */
@@ -170,6 +177,8 @@ export class Learner {
   readonly ledger: Ledger;
   private log: EventLog = emptyLog();
   private eventsDirty = false;
+  private attemptLog: AttemptLog = emptyAttempts();
+  private attemptsDirty = false;
 
   private constructor(state: LearnerState, private readonly store: LearnerStore | null, opts: LearnerOptions) {
     this.state = state;
@@ -206,11 +215,24 @@ export class Learner {
     if (read && read.version < STATE_VERSION) {
       try { await store.keepVersion?.('state', read.version, read.raw); } catch (e) { console.warn('fluidez: could not keep a copy of the state before migrating it', e); }
     }
+    const rawAttempts = await store.loadAttempts?.();
+    let attempts: AttemptLog | undefined;
+    let attemptsDamaged = false;
+    if (rawAttempts !== undefined) {
+      try { attempts = readAttempts(rawAttempts); } catch (e) {
+        if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
+        console.warn(`fluidez: the attempts log could not be read (${e.detail}); starting an empty one`);
+        await store.quarantine?.('attempts', rawAttempts);
+        attemptsDamaged = true;
+      }
+    }
     const l = new Learner(state, store, opts);
     if (log) l.log = compact(log, 365, l.now());
+    if (attempts) l.attemptLog = attempts;
     // the empty log takes the damaged one's place in the store: a backup is made of what is stored
     if (logDamaged) l.eventsDirty = true;
-    if (!read || read.healed || logDamaged || read.version !== state.version) {
+    if (attemptsDamaged) l.attemptsDirty = true;
+    if (!read || read.healed || logDamaged || attemptsDamaged || read.version !== state.version) {
       l.touch();
       // a refused write must not keep a readable learner out: it stays dirty and is retried
       try { await l.flush(); } catch (e) { if (!(e instanceof SaveFailedError)) throw e; }
@@ -294,20 +316,25 @@ export class Learner {
   private async write(extra?: SaveExtra): Promise<boolean> {
     const store = this.store!;
     const hadEvents = this.eventsDirty;
+    const hadAttempts = this.attemptsDirty;
     if (!extra && !this.dirty) return true;
     this.dirty = false;
     this.eventsDirty = false;
+    this.attemptsDirty = false;
     try {
       const state = structuredClone(this.state);
       const events = hadEvents ? structuredClone(this.log) : undefined;
-      if (extra && store.saveAll) await store.saveAll({ state, events, ...extra });
+      const attempts = hadAttempts ? structuredClone(this.attemptLog) : undefined;
+      if (extra && store.saveAll) await store.saveAll({ state, events, attempts, ...extra });
       else {
         await store.save(state);
         if (events && store.saveEvents) await store.saveEvents(events);
+        if (attempts && store.saveAttempts) await store.saveAttempts(attempts);
       }
     } catch (e) {
       this.dirty = true;
       if (hadEvents) this.eventsDirty = true;
+      if (hadAttempts) this.attemptsDirty = true;
       this.failures += 1;
       this.cause = e;
       if (this.failures >= 2) this.announce(SAVE_PROBLEM);
@@ -392,6 +419,22 @@ export class Learner {
   events(): ReviewEvent[] { return structuredClone(this.log.events); }
   /** The counts of events compacted away. */
   eventSummary(): EventLog['summary'] { return structuredClone(this.log.summary); }
+
+  /** The attempts log, oldest first (a copy). */
+  attempts(): AttemptRow[] { return structuredClone(this.attemptLog.rows); }
+
+  /**
+   * Log one answered card: the newest rows are kept, and a slip the checker named
+   * is also counted in the state's fingerprint, which the cap on the log never
+   * touches. Nothing here reads a row back to grade with.
+   */
+  recordAttempt(row: AttemptRow): void {
+    appendAttempt(this.attemptLog, { ...row });
+    const fp = this.state.fingerprint;
+    tally(fp && typeof fp === 'object' && !Array.isArray(fp) ? fp : (this.state.fingerprint = {}), row);
+    this.attemptsDirty = true;
+    this.touch();
+  }
 
   private record(e: Omit<ReviewEvent, 'session' | 'novel' | 'tries'> & { novel?: boolean; tries?: number }): void {
     const { tries, novel, ...rest } = e;
@@ -585,14 +628,14 @@ export class Learner {
   }
 
   /** Record one within-session retrieval. `done` says the session can stop asking. */
-  learningStep(id: NodeId, correct: boolean, opts: { at?: number; ms?: number; op?: string; tries?: number; sentence?: string; novel?: boolean } = {}): StepResult {
+  learningStep(id: NodeId, correct: boolean, opts: { at?: number; ms?: number; op?: string; tries?: number; sentence?: string; novel?: boolean; err?: string; rule?: string } = {}): StepResult {
     const r = this.rec(id);
     if (!r.learning) throw new Error(`node ${id} is not in in-lesson learning`);
     const at = opts.at ?? this.now();
     r.learning.steps.push({ at, correct, ...(opts.ms !== undefined ? { ms: opts.ms } : {}) });
     this.record({
       at, node: id, dir: 'receptive', grade: correct ? Rating.Good : Rating.Again, op: opts.op ?? 'learn', scored: 'intro',
-      tries: opts.tries, novel: opts.novel, ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}),
+      tries: opts.tries, novel: opts.novel, ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}), ...slipOf(opts),
     });
     if (opts.ms !== undefined) this.recordTime('receptive', opts.ms);
     this.touch();
@@ -641,7 +684,7 @@ export class Learner {
     this.record({
       at, node: id, dir: direction, grade, op: opts.op ?? 'other', scored: 'review', tries: opts.tries, novel: opts.novel,
       ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}),
-      ...(ret !== undefined ? { r: ret } : {}),
+      ...(ret !== undefined ? { r: ret } : {}), ...slipOf(opts),
     });
     const next = this.capInterval((maint ? this.maintenanceScheduler : this.scheduler).next(toCard(card), new Date(at), grade).card, this.maxInterval(r, direction));
     r[direction] = fromCard(next, { baseStability: next.stability, partials: card.partials, suspended: card.suspended });
@@ -668,13 +711,16 @@ export class Learner {
     const targets = [...new Set(opts.targets ?? [opts.target ?? nodeIds[0]])].filter((x): x is NodeId => x !== undefined);
     const out: { target?: ReviewResult; targets: ReviewResult[]; partial: PartialResult[] } = { targets: [], partial: [] };
     // Multi-item review: every target gets its own full review (its own grade);
-    // only the first target's time is recorded (the item was answered once).
+    // only the first target's time is recorded (the item was answered once), and
+    // only the first event names the slip.
     let allPassed = true;
+    let named = false;
     targets.forEach((t, i) => {
       const g = opts.grades?.[t] ?? grade;
       if (g !== Rating.Good && g !== Rating.Easy) allPassed = false;
       if (!this.state.nodes[t]?.[direction]) return;
-      out.targets.push(this.review(t, direction, g, { ...opts, at, ms: i === 0 ? opts.ms : undefined }));
+      out.targets.push(this.review(t, direction, g, { ...opts, at, ms: i === 0 ? opts.ms : undefined, ...(named ? { err: undefined, rule: undefined } : {}) }));
+      named = true;
     });
     out.target = out.targets[0];
     if (!allPassed) return out;
@@ -711,6 +757,7 @@ export class Learner {
   expose(nodeIds: Iterable<NodeId>, opts: { at?: number; event?: ExposureEvent } = {}): void {
     const at = opts.at ?? this.now();
     let changed = false;
+    let named = false;
     for (const id of new Set(nodeIds)) {
       const r = this.state.nodes[id];
       if (!r) continue;
@@ -722,7 +769,9 @@ export class Learner {
         this.record({
           at, node: id, dir: ev.direction ?? 'receptive', grade: ev.grade ?? Rating.Good, op: ev.op, scored: 'exposure',
           tries: ev.tries, novel: ev.novel, ...(ev.ms !== undefined ? { ms: ev.ms } : {}), ...(ev.sentence ? { sentence: ev.sentence } : {}),
+          ...(named ? {} : slipOf(ev)),
         });
+        named = true;
       }
     }
     if (changed) this.touch();

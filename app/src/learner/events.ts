@@ -19,11 +19,21 @@ export interface ReviewEvent {
   session: number;            // learner session index at the time
   r?: number;                 // FSRS retrievability just before the rating (undefined for a first review)
   scored: 'review' | 'exposure' | 'intro';
+  /**
+   * The kind of slip the checker named on the learner's first try (a HintKind), and the trap rule that
+   * named it. On the first event an answer writes, and on no other: one answer can write an event per node.
+   * Never the text of the answer, which lives in the attempts log.
+   */
+  err?: string;
+  rule?: string;
+  /** the learner said "mine says the same thing", or the card was a transfer probe: compaction keeps these (see `keeps`) */
+  claimed?: true;
+  probe?: true;
 }
 
 /** What compaction keeps of dropped events: counts per node and direction. */
 export interface EventSummary {
-  /** events at or before this time (epoch ms) were folded in; 0 = none yet */
+  /** events at or before this time (epoch ms) were folded in, bar the ones compaction keeps; 0 = none yet */
   upTo: number;
   counts: Record<NodeId, Record<Direction, number>>;
 }
@@ -98,14 +108,20 @@ export function productionShare(events: readonly ReviewEvent[], since?: number):
   return n ? p / n : undefined;
 }
 
-/** Drop events older than `keepDays` before `now`, folding them into per-node per-direction counts. */
+/** A miss, as Weak spots counts one: shown the answer, or right only on the retry. */
+export const isMiss = (e: Pick<ReviewEvent, 'grade' | 'tries'>): boolean => e.grade === AGAIN || e.tries === 2;
+
+/** What compaction never folds into counts: a miss, a claim and a probe cannot be worked out again from a count, and a course runs longer than a year. */
+const keeps = (e: ReviewEvent): boolean => isMiss(e) || !!e.claimed || !!e.probe;
+
+/** Drop events older than `keepDays` before `now`, folding them into per-node per-direction counts. Misses, claims and probes stay. */
 export function compact(log: EventLog, keepDays: number, now = Date.now()): EventLog {
   const cutoff = now - keepDays * DAY_MS;
   const keep: ReviewEvent[] = [];
   const counts: EventSummary['counts'] = structuredClone(log.summary.counts);
   let upTo = log.summary.upTo;
   for (const e of log.events) {
-    if (e.at >= cutoff) { keep.push(e); continue; }
+    if (e.at >= cutoff || keeps(e)) { keep.push(e); continue; }
     (counts[e.node] ??= { receptive: 0, productive: 0 })[e.dir] += 1;
     upTo = Math.max(upTo, e.at);
   }
