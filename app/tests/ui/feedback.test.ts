@@ -4,8 +4,9 @@ import { describe, expect, test } from 'vitest';
 import { checkExact } from '../../src/check';
 import { wordHint } from '../../src/check/wordhint';
 import { matchTranslation } from '../../src/check/translate';
-import { missPunct, revealLines, retryLead } from '../../src/ui/components/card';
-import { chunkCheck, gapWhy, lexemeWhy, verbFormWhy } from '../../src/ui/session/cards';
+import { missPunct, passLines, revealLines, retryLead } from '../../src/ui/components/card';
+import { chunkCheck, gapWhy, lexemeWhy, scriptCard, sentenceCheck, verbFormWhy } from '../../src/ui/session/cards';
+import { checkItem } from '../../src/exercises';
 
 describe('retryLead', () => {
   test('an accent slip is Almost', () => {
@@ -91,5 +92,36 @@ describe('missPunct', () => {
     expect(missPunct('Wow!')).toBe('');
     expect(missPunct('Well\u2026')).toBe('');
     expect(missPunct('Hi')).toBe('.');
+  });
+});
+
+// R13: a pass through a swap the card did not teach says so. The matcher already
+// reported it (TranslationResult.note); the card's check dropped it on the way,
+// so the pass screen could not show it and the swap went through silently.
+describe('a pass through a swap says so', () => {
+  const es = 'Si hubiera sabido, habría venido.';
+  const en = 'If I had known, I would have come.';
+  const swapped = 'Si hubiera sabido, hubiera venido.';
+
+  test('the sentence check carries the matcher\'s note, and only when there was a swap', () => {
+    const check = sentenceCheck({ es, en, accept: [] });
+    expect(check(swapped)).toMatchObject({ pass: true, note: expect.stringMatching(/habría and hubiera/i) });
+    expect(check(es).note).toBeUndefined();
+  });
+
+  test('so do the typed exercise items and the lesson\'s own your-turn card', () => {
+    const item = { id: 'i', generator: 'translate', nodes: [], kind: 'translate', dir: 'en-es', prompt: en, answer: es, accept: [], en } as Parameters<typeof checkItem>[0];
+    expect(checkItem(item, swapped)).toMatchObject({ pass: true, note: expect.stringMatching(/habría and hubiera/i) });
+    const card = scriptCard(
+      { op: 'yourTurn', index: 0, node: 'g:x', id: 'yt' } as Parameters<typeof scriptCard>[0],
+      { readAndPick: [], yourTurn: [{ prompt: `Translate: ${en}`, answer: es, accept: [], why: 'why' }] } as unknown as Parameters<typeof scriptCard>[1],
+    );
+    expect(card?.type === 'type' && card.check(swapped)).toMatchObject({ pass: true, note: expect.stringMatching(/habría and hubiera/i) });
+  });
+
+  test('the pass screen shows it, after the reason a lenient pass gives', () => {
+    expect(passLines({ note: 'Habría and hubiera both work in the result clause.' })).toEqual(['Habría and hubiera both work in the result clause.']);
+    expect(passLines({ lenient: true, hint: 'We\'d say a; b works too.', note: 'n' })).toEqual(['We\'d say a; b works too.', 'n']);
+    expect(passLines({ hint: 'a hint belongs to a retry, not a pass' })).toEqual([]);
   });
 });

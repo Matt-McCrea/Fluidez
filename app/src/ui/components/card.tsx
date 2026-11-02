@@ -38,6 +38,11 @@ export function revealLines(hint: string | undefined, why: string): string[] {
   return [h, w].filter((x, i, a) => x && a.indexOf(x) === i);
 }
 
+/** The lines under a right answer: why a lenient pass counted, and the swap a pass went through. */
+export function passLines(r: Pick<Check, 'lenient' | 'hint' | 'note'>): string[] {
+  return [r.lenient ? r.hint : undefined, r.note].filter((x): x is string => !!x);
+}
+
 /** "." unless the text already ends in sentence punctuation. */
 export function missPunct(text: string): string {
   return /[.!?\u2026]\s*$/.test(text) ? '' : '.';
@@ -158,7 +163,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
         {passed ? (
           <>
             <p class="ok">{tries > 1 ? 'Got it.' : 'Right.'}{result!.near ? ' Just watch the accents:' : ''} {result!.near || tries > 1 ? <Es>{result!.answer}</Es> : null}</p>
-            {result!.lenient && result!.hint ? <p class="why"><Rich text={result!.hint} /></p> : null}
+            {passLines(result!).map((l) => <p class="why" key={l}><Rich text={l} /></p>)}
             {result!.variant === 'peninsular' ? <p class="why">That's how they say it in Spain. In Latin America you'll hear <Es>{result!.answer}</Es>.</p> : null}
           </>
         ) : revealed ? (
