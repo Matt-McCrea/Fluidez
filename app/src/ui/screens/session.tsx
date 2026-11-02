@@ -11,6 +11,7 @@ import type { Tier } from '../../learner';
 import type { PracticeSpec } from '../session/practice-spec';
 import type { SavedSession } from '../store/ui';
 import { BlockView } from '../blocks';
+import type { GameChoice } from '../games/Play';
 import { Close } from '../blocks/writing';
 import { Continue } from '../components/card';
 import { Bar, Heading } from '../components/text';
@@ -18,8 +19,8 @@ import { useApp } from '../context';
 import { compilePlan, SessionRunner, softBlock, STOP_AFTER_MINUTES, truncatable } from '../session/runner';
 import { offerMore } from '../session/more';
 
-export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractise, tier, quick }: {
-  mode: Mode; tier?: Tier; quick?: boolean; onExit: () => void; onAnother: () => void; capMinutes?: number; resume?: SavedSession; onPractise?: (spec: PracticeSpec) => void;
+export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractise, onPlay, tier, quick }: {
+  mode: Mode; tier?: Tier; quick?: boolean; onExit: () => void; onAnother: () => void; capMinutes?: number; resume?: SavedSession; onPractise?: (spec: PracticeSpec) => void; onPlay?: (c: GameChoice) => void;
 }) {
   const app = useApp();
   const runner = useMemo(() => {
@@ -184,7 +185,7 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
       </>
     );
   } else if (block.kind === 'close') {
-    body = <Close block={block} run={runner} ui={app.ui} onDone={onExit} more={more} onMore={onAnother} onHome={onExit} onPractise={onPractise} />;
+    body = <Close block={block} run={runner} ui={app.ui} onDone={onExit} more={more} onMore={onAnother} onHome={onExit} onPractise={onPractise} onPlay={onPlay} />;
   } else {
     body = <BlockView key={idx} block={block as Exclude<Block, { kind: 'close' }>} run={runner} ui={app.ui} onDone={() => void next(idx)} resume={resumeAt.current?.block === idx ? resumeAt.current.cursor : undefined} />;
   }

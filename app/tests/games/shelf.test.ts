@@ -167,3 +167,26 @@ describe('what the screens are', () => {
     expect(round.match(/<AnswerField/g)).toHaveLength(1);
   });
 });
+
+describe('the quiet offers', () => {
+  const deck = { deck: { id: 'words', title: 'Words' }, best: undefined } as never;
+  const base = { flash: [], doc: {} } as never;
+  it('Home offers Rescate or De corrido, never both', async () => {
+    const { homeOffer } = await import('../../src/games/shelf');
+    expect(homeOffer({ ...(base as object), rescue: { count: 4, asks: 4 }, reread: 2 } as never)).toBe('rescue');
+    expect(homeOffer({ ...(base as object), reread: 2 } as never)).toBe('reread');
+    expect(homeOffer(base)).toBeUndefined();
+  });
+  it('the close screen offers one Relámpago deck, and only when a deck is open', async () => {
+    const { closeOffer } = await import('../../src/games/shelf');
+    expect(closeOffer({ ...(base as object), flash: [deck] } as never)).toBe((deck as { deck: unknown }).deck);
+    expect(closeOffer(base)).toBeUndefined();
+  });
+  it('is wired: Home line, close line before the hook', () => {
+    expect(src('ui/games/Board.tsx')).toContain('data-game-offer');
+    expect(src('ui/screens/home.tsx')).toContain('<GameOffer');
+    const w = src('ui/blocks/writing.tsx');
+    expect(w).toContain('<GameOffer');
+    expect(w.indexOf('<GameOffer')).toBeLessThan(w.indexOf('class="hook">{undash(hook)}'));
+  });
+});

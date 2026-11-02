@@ -1,6 +1,9 @@
 // Writing: a live checklist from the writing checker as the learner types,
 // a word count, then their text beside a model and a three-question
 // self-rubric. Then the self-check and the close.
+import { GameOffer } from '../games/Board';
+import { closeOffer } from '../../games/shelf';
+import type { GameChoice } from '../games/Play';
 import { useMemo, useRef, useState } from 'preact/hooks';
 import { canDoServers, withRemediate, withoutRemediate, type CloseBlock, type SelfCheckBlock, type WritingBlock } from '../../compiler';
 import { checkWriting, type Constraint } from '../../check';
@@ -166,7 +169,7 @@ export function unitEndLine(progress: CloseBlock['progress'], unit: { title: str
   return progress && unit && progress.of > 0 && progress.done >= progress.of ? `You finished "${undash(unit.title)}".` : undefined;
 }
 
-export function Close({ block, run, more, onMore, onHome, onPractise }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
+export function Close({ block, run, more, onMore, onHome, onPractise, onPlay }: BlockProps<CloseBlock> & { onPlay?: (c: GameChoice) => void; more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
   const unit = run.bundle.unit(block.unit);
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;
@@ -187,6 +190,7 @@ export function Close({ block, run, more, onMore, onHome, onPractise }: BlockPro
           </>
         ) : null}
         {back.of > 0 ? <p class="small" data-came-back>From last week, {back.came} of {back.of} came back.</p> : null}
+        {onPlay && !offer ? <GameOffer pick={(s) => { const d = closeOffer(s); return d ? { game: 'flash', deck: d } : undefined; }} onPlay={onPlay} /> : null}
         {hook ? <p class="hook">{undash(hook)}</p> : block.next ? <p class="hook">Next time: {lessonTypeWord(block.next)}.</p> : null}
       </section>
       {run.misses.length ? (

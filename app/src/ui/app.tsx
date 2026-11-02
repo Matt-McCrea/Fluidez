@@ -11,6 +11,7 @@ import { prepareFor } from './data/prepare';
 import { Ctx, type AppCtx } from './context';
 import { Home } from './screens/home';
 import { Onboarding } from './screens/onboarding';
+import type { GameChoice } from './games/Play';
 import { Practice } from './screens/practice';
 import { Progress } from './screens/progress';
 import { Reference } from './screens/reference';
@@ -24,7 +25,7 @@ import { MORE_MINUTES } from './session/more';
 import { settleContent } from './session/settle';
 
 type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings' | 'weak';
-type Route = { tab: Tab; open?: string } | { session: Mode; key: number; cap?: number; resume?: SavedSession; tier?: Tier; quick?: boolean } | { practice: PracticeSpec | undefined; key: number };
+type Route = { tab: Tab; open?: string } | { session: Mode; key: number; cap?: number; resume?: SavedSession; tier?: Tier; quick?: boolean } | { practice: PracticeSpec | undefined; game?: GameChoice; key: number };
 
 /** Each session start gets a fresh key, so "Do another" always mounts a new player. */
 let sessionSeq = 0;
@@ -178,6 +179,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   if (!ctx) return <main class="screen loading" id="main" aria-busy="true"><p>Loading your Spanish</p></main>;
 
   const toPractice = (spec: PracticeSpec) => setRoute({ practice: spec, key: ++sessionSeq });
+  const toPlay = (game: GameChoice) => setRoute({ practice: undefined, game, key: ++sessionSeq });
   const goHome = () => { setRoute({ tab: 'home' }); void ctx.reloadBundle(); };
   let body;
   if (!ctx.ui.state.onboarded) {
@@ -185,17 +187,17 @@ export function App({ opts }: { opts?: BootOptions }) {
   } else if ('session' in route) {
     body = (
       <Session
-        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap} tier={route.tier} quick={route.quick} resume={route.resume} onPractise={toPractice}
+        key={route.key} mode={route.session} onExit={goHome} capMinutes={route.cap} tier={route.tier} quick={route.quick} resume={route.resume} onPractise={toPractice} onPlay={toPlay}
         onAnother={() => setRoute({ session: 'another', key: ++sessionSeq, cap: MORE_MINUTES })}
       />
     );
   } else if ('practice' in route) {
-    body = <Practice key={route.key} spec={route.practice} onDone={goHome} />;
+    body = <Practice key={route.key} spec={route.practice} game={route.game} onDone={goHome} />;
   } else {
     const tab = route.tab;
     body = (
       <>
-        {tab === 'home' ? <Home onStart={(m, o) => setRoute({ session: m, key: ++sessionSeq, ...(o && 'plan' in o ? { resume: o } : o) })} onLook={(open) => setRoute({ tab: 'reference', open })} onStory={() => setRoute({ tab: 'story' })} onWeak={() => setRoute({ tab: 'weak' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
+        {tab === 'home' ? <Home onPlay={toPlay} onStart={(m, o) => setRoute({ session: m, key: ++sessionSeq, ...(o && 'plan' in o ? { resume: o } : o) })} onLook={(open) => setRoute({ tab: 'reference', open })} onStory={() => setRoute({ tab: 'story' })} onWeak={() => setRoute({ tab: 'weak' })} onPractise={(spec) => setRoute({ practice: spec, key: ++sessionSeq })} /> : null}
         {tab === 'story' ? <Story onPractise={toPractice} /> : null}
         {tab === 'reference' ? <Reference onPractise={toPractice} open={route.open} /> : null}
         {tab === 'progress' ? <Progress onPractise={toPractice} /> : null}

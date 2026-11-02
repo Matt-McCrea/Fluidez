@@ -39,3 +39,9 @@ export async function loadShelf(d: ShelfDeps): Promise<Shelf> {
 
 /** Nothing is open: the shelf is not drawn at all. */
 export const shelfIsEmpty = (s: Shelf): boolean => !s.flash.length && !s.rescue && !s.reread;
+
+/** Home mentions one game, quietly: Rescate when a round is due, else De corrido when a chapter is ready. */
+export const homeOffer = (s: Shelf): 'rescue' | 'reread' | undefined => (s.rescue ? 'rescue' : s.reread ? 'reread' : undefined);
+
+/** The close screen mentions at most one thing: a Relámpago deck, when one is open. */
+export const closeOffer = (s: Shelf): FlashDeck | undefined => s.flash[0]?.deck;

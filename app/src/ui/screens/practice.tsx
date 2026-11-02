@@ -16,9 +16,9 @@ import { Play, type GameChoice } from '../games/Play';
 
 const clock = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, s) % 60).padStart(2, '0')}`;
 
-export function Practice({ spec, onDone }: { spec?: PracticeSpec; onDone: () => void }) {
+export function Practice({ spec, game, onDone }: { spec?: PracticeSpec; game?: GameChoice; onDone: () => void }) {
   const [chosen, setChosen] = useState<PracticeSpec | undefined>(spec);
-  const [playing, setPlaying] = useState<GameChoice>();
+  const [playing, setPlaying] = useState<GameChoice | undefined>(game);
   // a game can end by sending the learner to a drill of what slipped: the drill is a run like any other
   // a game can end by sending the learner to a drill of what slipped: the drill is a run like any other
   const leave = () => setPlaying(undefined);

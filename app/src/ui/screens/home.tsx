@@ -13,6 +13,9 @@ import { isResumable, streakStatus, type CanDoMark, type CheckpointResult, type 
 import { canDoGroups } from './progress';
 import type { Bundle } from '../data/bundle';
 import type { Learner } from '../../learner';
+import { GameOffer } from '../games/Board';
+import { homeOffer } from '../../games/shelf';
+import type { GameChoice } from '../games/Play';
 import { chapterBefore, chaptersRead } from '../session/storyline';
 
 /** "Only five minutes?": the minimum tier under a five minute cap. */
@@ -111,7 +114,7 @@ export function StoryCard({ bundle, learner, path, placedAt, onStory }: { bundle
   );
 }
 
-export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?: () => void; onLook?: (node: string) => void; onStart: (mode: Mode, o?: SavedSession | QuickStart) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
+export function Home({ onPlay, onStart, onStory, onWeak, onPractise, onLook }: { onPlay?: (c: GameChoice) => void; onWeak?: () => void; onLook?: (node: string) => void; onStart: (mode: Mode, o?: SavedSession | QuickStart) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, ui, bundle } = app;
   const now = app.now();
@@ -193,6 +196,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
           <button class="btn primary" data-quick onClick={() => onPractise({ kind: 'quickReview' })}>Quick review</button>
           <button class="btn quiet" data-more-practice onClick={() => onPractise(undefined)}>More practice</button>
         </div>
+        {onPlay ? <GameOffer pick={(s) => { const o = homeOffer(s); return o === 'rescue' ? { game: 'rescue' } : o === 'reread' ? { game: 'reread' } : undefined; }} onPlay={onPlay} /> : null}
       </section>
 
       {spots.length ? (

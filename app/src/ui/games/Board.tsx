@@ -49,3 +49,23 @@ export function Board({ onPlay }: { onPlay: (c: GameChoice) => void }) {
     </section>
   );
 }
+
+/** One quiet line and a link, or nothing: what a screen outside Practice says about the games. */
+export function GameOffer({ pick, onPlay }: { pick: (s: Shelf) => GameChoice | undefined; onPlay: (c: GameChoice) => void }) {
+  const { learner, bundle, ui, now } = useApp();
+  const [offer, setOffer] = useState<{ choice: GameChoice; line: string; button: string }>();
+  useEffect(() => {
+    let live = true;
+    void loadShelf({ learner, bundle, ui, now }).then((s) => {
+      if (!live) return;
+      const choice = pick(s);
+      if (!choice) return;
+      if (choice.game === 'rescue') setOffer({ choice, line: `${s.rescue!.count} cards are ready to review.`, button: 'Rescate' });
+      else if (choice.game === 'reread') setOffer({ choice, line: 'A chapter you have read is ready to read again.', button: 'De corrido' });
+      else setOffer({ choice, line: 'Sixty seconds, if you feel like it.', button: 'Relámpago' });
+    }, () => undefined);
+    return () => { live = false; };
+  }, []);
+  if (!offer) return null;
+  return <p class="small" data-game-offer>{offer.line} <button class="btn link small" onClick={() => onPlay(offer.choice)}>{offer.button}</button></p>;
+}
