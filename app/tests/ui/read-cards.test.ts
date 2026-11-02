@@ -32,24 +32,31 @@ async function world() {
 
 describe('a read-only card is an exposure, never a grade', () => {
   it('a due grammar or pattern node with nothing to ask gets a read card, and answering it leaves the card as it was', async () => {
-    const node = [...bundle.course.nodes.values()].find((n) => ['grammar', 'pattern'].includes(n.kind) && reviewCard(bare(n.id), bundle).type === 'read');
-    expect(node, 'some A1 node has a bare read card').toBeTruthy();
-    const w = await world();
-    w.learner.introduce(node!.id, { results: [true, true, true] });
-    w.clock.t += 30 * DAY;
-    expect(w.learner.due(w.now()).map((d) => d.node)).toContain(node!.id);
+    // a node with no pair to ask whose script has not arrived: with its script, the review is one of its items (contrast-review.test.ts)
+    const node = [...bundle.course.nodes.values()].find((n) => ['grammar', 'pattern'].includes(n.kind) && !bundle.segments(n.id).length && bundle.scripts.has(n.id));
+    expect(node, 'some A1 node has no pair to ask').toBeTruthy();
+    const script = bundle.scripts.get(node!.id)!;
+    bundle.scripts.delete(node!.id);
+    try { await readCardLeavesTheCardAlone(node!.id); } finally { bundle.scripts.set(node!.id, script); }
+  });
 
-    const item = bare(node!.id);
+  async function readCardLeavesTheCardAlone(id: string) {
+    const w = await world();
+    w.learner.introduce(id, { results: [true, true, true] });
+    w.clock.t += 30 * DAY;
+    expect(w.learner.due(w.now()).map((d) => d.node)).toContain(id);
+
+    const item = bare(id);
     const card = reviewCard(item, bundle);
     expect(card.type).toBe('read');
-    const before = { card: w.learner.card(node!.id, 'receptive'), events: w.learner.events().length, exposures: w.learner.node(node!.id)!.exposures };
+    const before = { card: w.learner.card(id, 'receptive'), events: w.learner.events().length, exposures: w.learner.node(id)!.exposures };
     w.run.score(item, readOutcome(1500));
-    expect(w.learner.card(node!.id, 'receptive')).toEqual(before.card);
+    expect(w.learner.card(id, 'receptive')).toEqual(before.card);
     expect(w.learner.events().length).toBe(before.events);
-    expect(w.learner.node(node!.id)!.exposures).toBe(before.exposures + 1);
-    expect(w.learner.due(w.now()).map((d) => d.node), 'still due: nothing was retrieved').toContain(node!.id);
+    expect(w.learner.node(id)!.exposures).toBe(before.exposures + 1);
+    expect(w.learner.due(w.now()).map((d) => d.node), 'still due: nothing was retrieved').toContain(id);
     expect(w.run.tally).toEqual({ scored: 0, correct: 0, firstTry: 0 });
-  });
+  }
 
   it('the outcome a read card reports says so', () => {
     expect(readOutcome(900)).toMatchObject({ correct: true, tries: 1, ms: 900, exposure: true });
@@ -86,19 +93,24 @@ describe('a read-only card is an exposure, never a grade', () => {
   it('a read card in Quick review leaves the due card as it was and is not an answer', async () => {
     const node = [...bundle.course.nodes.values()].find((n) => n.kind === 'contrast' && !bundle.segments(n.id).length && !bundle.index.byTarget.get(n.id)?.length && !bundle.index.byRequire.get(n.id)?.length);
     expect(node, 'some A1 node has nothing to ask at all').toBeTruthy();
-    const w = await world();
-    w.learner.introduce(node!.id, { results: [true, true, true] });
-    w.clock.t += 30 * DAY;
-    const fp = new Freeplay({ kind: 'quickReview' }, { learner: w.learner, bundle, rng: () => 0.5, now: w.now });
-    const card = fp.next()!;
-    expect(card.type).toBe('read');
-    const before = { card: w.learner.card(node!.id, 'receptive'), events: w.learner.events().length, exposures: w.learner.node(node!.id)!.exposures };
-    fp.answer(readOutcome(900));
-    expect(w.learner.card(node!.id, 'receptive'), 'no Good on a card nobody answered').toEqual(before.card);
-    expect(w.learner.events().length).toBe(before.events);
-    expect(w.learner.node(node!.id)!.exposures).toBe(before.exposures + 1);
-    expect(fp.answered, 'the score counts answers').toBe(0);
-    expect(fp.right).toBe(0);
+    // (nothing to ask and no script: with the script, the review is one of its items)
+    const script = bundle.scripts.get(node!.id);
+    bundle.scripts.delete(node!.id);
+    try {
+      const w = await world();
+      w.learner.introduce(node!.id, { results: [true, true, true] });
+      w.clock.t += 30 * DAY;
+      const fp = new Freeplay({ kind: 'quickReview' }, { learner: w.learner, bundle, rng: () => 0.5, now: w.now });
+      const card = fp.next()!;
+      expect(card.type).toBe('read');
+      const before = { card: w.learner.card(node!.id, 'receptive'), events: w.learner.events().length, exposures: w.learner.node(node!.id)!.exposures };
+      fp.answer(readOutcome(900));
+      expect(w.learner.card(node!.id, 'receptive'), 'no Good on a card nobody answered').toEqual(before.card);
+      expect(w.learner.events().length).toBe(before.events);
+      expect(w.learner.node(node!.id)!.exposures).toBe(before.exposures + 1);
+      expect(fp.answered, 'the score counts answers').toBe(0);
+      expect(fp.right).toBe(0);
+    } finally { if (script) bundle.scripts.set(node!.id, script); }
   });
 
   it('a read card in the learn pool is not a retrieval: no step is counted for the node', async () => {

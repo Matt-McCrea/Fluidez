@@ -244,6 +244,17 @@ describe('the first session back after days away', () => {
     expect(read).toBeGreaterThan(0);
   });
 
+  test('a grammar point owed its drill is drilled on the return, however long the break (the drill rule outranks the gentle start)', () => {
+    const { plan, path0 } = returner(21);
+    const owed = path0.recentGrammar[0] ?? path0.pendingDrills[0]?.node;
+    const withDrill = { ...path0, pendingDrills: [{ node: owed ?? 'g:g1', at: path0.coreSessions - budget.DRILL_WITHIN }] };
+    const p = plan({ path: withDrill });
+    expect(p.reentry).toBeDefined();
+    expect(p.type).toBe('drill');
+    expect(p.converted?.reason).not.toBe('reentry');
+    expect(p.blocks.some((b) => b.kind === 'ruleRecall' && b.node === withDrill.pendingDrills[0].node)).toBe(true);
+  });
+
   test('six days away is not a return; seven is', () => {
     expect(returner(5).plan().reentry).toBeUndefined();
     expect(returner(7).plan().reentry).toEqual({ days: 7 });
@@ -281,7 +292,7 @@ describe('the first session back after days away', () => {
 });
 
 describe('the profiles the policy is for, on the real course', () => {
-  const real = realCourse(12);
+  const real = realCourse(16);
   /** the sessions that are the first after a gap of a week or more, and the longest run of sessions without anything new */
   function walk(name: 'returner' | 'lapsed' | 'average', days: number) {
     const run = simulateProfile(PROFILES[name], { days, tier: 'standard', course: real.course, content: real.content, seed: 1 });

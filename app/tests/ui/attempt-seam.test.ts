@@ -4,6 +4,11 @@
 // one place, a digest here moves with it. See replay.ts for what the transcript holds.
 //
 // When grading is changed on purpose, take the new digests from the failing run and say why in the commit.
+// 2 Nov 2026: the plans changed on purpose (contrasts taught from their scripts, the debt policy and the return plan, the first chapter before
+// the lesson on day 1, the five-minute session's slice, respond items only for questions asked of the learner, recognition-only points
+// receptive, misses that come back in the recap and at the start of the next session). Nothing in how an answer is graded moved: the
+// same calls (gradeOf, reviewSentence, seen, climb) are made on different cards, and a miss in practice is now re-asked in the recap as
+// an exposure.
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
@@ -11,11 +16,11 @@ import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
 
 const EXPECTED = {
-  sessions: { events: 238, eventDigest: '7c15460bfd15bb96c2c9d5a01a91b5daca34d8f07ab28c0fcf205549a6c6a6ff', memoryDigest: '592b9513ba9c1cedf3728a8f02db35adcb8c948e5490851cb2cb4c23af28ef13' },
-  dealt: { events: 169, eventDigest: '06350e97b96886bb9bebcf9090999f1fadc58562f8b1b1bd247fd91daa665894', memoryDigest: '1c0764ba34d49ce82ed667869380c83689c35518218d65cb0a139570d98614b1' },
-  freeplay: { events: 270, eventDigest: 'f37fae44d4b9eedfa5a81e3068e6f5de1431b51d1bff96e2b754800a0c97092d', memoryDigest: 'f1d94c4ba6ad59a9ca7ba2df8fb8a8386eeda74792322a92b95c8a893f017315' },
-  average: { events: 4726, eventDigest: '254afbd2088c11365ceb9bb458e61f6a6d2dd5b5bb5eb7f4e5430ccdacb2f6c8', memoryDigest: '449bae5632f6b8f58f1aba1bfe4be74b105903e0320f06bb05911ec91b02b622' },
-  irregular: { events: 3351, eventDigest: '1af42e829ce0ebe0e7e5940aab4c0666b724082e1b5a8bd0e614f85b0ee163db', memoryDigest: '871a1693f8d68704b05a904f40efc558e938eefd255fe03d99102bf6714a0bef' },
+  sessions: { events: 238, eventDigest: '47c6f21a5f252a45b90a15de70dfe6de2fb1ff5f08f1b5d3363bc8a9e459aa02', memoryDigest: '7c5987252f214684c257a328902c5461b5eb8af749a2dc8de6c163caf3a2be04' },
+  dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
+  freeplay: { events: 270, eventDigest: '722842906e49e87ce41fa78d56e628d47bbe7d357190d62f69e73d0e4aaac697', memoryDigest: '0ee3ad9b3bbe7b99d46d153a6c5436e0934128113173a3642058ac48e9391169' },
+  average: { events: 5136, eventDigest: '88f5d23a032aa46c1563d6e3c46147af2576e00a01f0b6524752eb6d51cae4fb', memoryDigest: 'b50dce4ccdf3a3cfe0cc6ea284fe642b8c93f915d62a84593c49bac64f43b3af' },
+  irregular: { events: 3070, eventDigest: 'a12080ddb744d2b96569ae1444a81f2d903c245e835f12efbb1a14ad74588d26', memoryDigest: 'e0627700f03087f8cc3ae2588992da03ef7809fdf7b780f21e5556fa9e5d4901' },
 };
 
 describe('grading is identical through the attempt seam', () => {
