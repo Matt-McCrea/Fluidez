@@ -44,9 +44,9 @@ describe('compiler rules hold on every compiled plan', () => {
     let shortages = 0, conversions = 0;
     for (const seed of SEEDS.slice(0, 4)) {
       const c = corpus({ seed, supply: 0.08 });
-      // drop most scenes and tasks too
-      for (const id of [...c.content.scenes.keys()].filter((_, i) => i % 3)) c.content.scenes.delete(id);
-      for (const id of [...c.content.tasks.keys()].filter((_, i) => i % 3)) c.content.tasks.delete(id);
+      // drop every scene and task too (a scene no longer waits for owed words, so a few left would always be played, and no day would convert)
+      for (const id of [...c.content.scenes.keys()]) c.content.scenes.delete(id);
+      for (const id of [...c.content.tasks.keys()]) c.content.tasks.delete(id);
       const { plans, run } = walk({ seed, corpus: c, profile: PROFILES.average, days: 60, check: (s) => { for (const ch of ALL_CHECKS) ch(s); } });
       checkSpacing(plans);
       shortages += plans.reduce((a, p) => a + p.plan.diagnostics.filter((d) => d.code === 'shortage' || d.code === 'bareReview').length, 0);

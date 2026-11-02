@@ -11,7 +11,10 @@
 //  - contrasts only once both sides are known
 //  - content gate: everything served has requires ⊆ known ∪ introduced-this-session
 //    (a known chunk satisfies itself; it stands in for the grammar it unpacks only
-//    when the same item also requires that chunk, i.e. the grammar sits inside it)
+//    when the same item also requires that chunk, i.e. the grammar sits inside it).
+//    The one exception is the story: a chapter or a scene may also stand on chunks,
+//    lexemes and patterns the unit has scheduled by today and the learner is owed
+//    (R26, L7): they are glossed, and a grammar point still has to be taught
 //  - review budget in minutes by band and tier (budget.ts; learner.secondsPerReview);
 //    multi-target review items (≤ 3 due nodes in one sentence) cost
 //    MULTI_REVIEW_COST × a single review; backlog throttle cuts
@@ -643,6 +646,22 @@ class Compiler {
   }
 
   /**
+   * Whether what `requires` lacks is only what the learner is owed: chunks, lexemes and patterns the unit has scheduled by
+   * today (so the path has passed them) and not yet taught. A chapter or a scene may go ahead on those, glossed (R26); a grammar
+   * point, a contrast, or a word the unit has not reached still holds it back.
+   */
+  private owedOnly(requires: readonly NodeId[]): boolean {
+    const here = dayPos(this.course, this.path.unit, this.path.day);
+    const missing = unmetRequires(requires, (r) => this.known.has(r) || this.sessionNew.has(r), this.course.nodes);
+    return missing.every((r) => ['chunk', 'lexeme', 'pattern'].includes(kindOf(r, this.course.nodes)) && (this.course.teachPos.get(r) ?? Infinity) <= here);
+  }
+
+  /** How many of `requires` are owed words the story goes ahead without. */
+  private owedCount(requires: readonly NodeId[]): number {
+    return unmetRequires(requires, (r) => this.known.has(r) || this.sessionNew.has(r), this.course.nodes).length;
+  }
+
+  /**
    * Reading coverage against what is retained, not merely introduced. A
    * required node that is introduced but not stable counts as unknown-glossed:
    * allowed up to 5% of the requirement (at least one); one that is not
@@ -723,11 +742,12 @@ class Compiler {
         if (!blocked && this.content.lacking?.has(lackKey('story', s.id))) return { reason: 'unavailable', blocked: s.id };
         continue;
       }
-      if (this.gated(c.requires)) {
+      if (this.gated(c.requires) || this.owedOnly(c.requires)) {
         const cov = this.coverage(c.requires);
         // `glossed`: the reader glosses every word, so words that are slipping do not hold the chapter back (the learner returning after days away)
         if (cov.admitted || glossed) {
           if (cov.unstable && !probe) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, ${cov.admitted ? 'within' : 'over'} cap ${cov.allowed})` });
+          if (cov.unknown && !probe) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${this.owedCount(c.requires)} owed words, glossed` });
           return { ch: c };
         }
         if (!probe) {
@@ -773,7 +793,7 @@ class Compiler {
   private sceneFor(preferred: string | undefined): string | undefined {
     const ok = (id: string) => {
       const s = this.content.scenes.get(id);
-      return !!s && !this.L.ledger.hasSeen('scene', id) && this.gated(s.requires);
+      return !!s && !this.L.ledger.hasSeen('scene', id) && (this.gated(s.requires) || this.owedOnly(s.requires));
     };
     if (preferred && ok(preferred)) return preferred;
     if (preferred && this.L.ledger.hasSeen('scene', preferred)) this.diag({ code: 'alreadySeen', block: 'scene', message: `scene ${preferred} already played` });
@@ -966,10 +986,16 @@ class Compiler {
     this.owedGrammar = rest;
     const learn = this.takeNew('introduce', day, true, { focusNonGrammar: true });
     this.pushLearn(learn);
-    if (g) this.blocks.push(...this.teach(g, 'full'));
     const { ch, reason, blocked } = this.chapterFor(day);
-    if (ch) this.pushRead(ch);
-    else if (day.chapter) this.chapterProblem(blocked ?? day.chapter, reason!);
+    // Day 1: the first chapter comes after the new phrases and before the lesson (L6), so the story is read by about minute 8
+    // instead of minute 14. It uses the phrases it has just been given; nothing is taken out, the lesson follows it.
+    const early = this.path.coreSessions === 0 && !!ch;
+    if (early) this.pushRead(ch!);
+    if (g) this.blocks.push(...this.teach(g, 'full'));
+    if (!early) {
+      if (ch) this.pushRead(ch);
+      else if (day.chapter) this.chapterProblem(blocked ?? day.chapter, reason!);
+    }
     if (g && this.content.scripts.has(g)) this.blocks.push({ kind: 'personal', part: 'core', deliberate: false, node: g, minutes: round1(SECONDS.personal / 60) });
   }
 
@@ -1308,7 +1334,7 @@ class Compiler {
     if (repaid.length) this.diag({ code: 'repaid', block: 'learn', message: `introduced ${repaid.join(', ')} ahead of the caps so the output scene can be served` });
     const scene = this.sceneFor(day.scene);
     const task = this.taskFor();
-    if (scene) this.blocks.push({ kind: 'scene', part: 'core', deliberate: false, scene, purpose: 'output', minutes: this.content.scenes.get(scene)!.minutes });
+    if (scene) this.pushScene(scene, 'output');
     else this.sceneProblem('output day');
     if (task) this.blocks.push({ kind: 'writing', part: 'core', deliberate: false, task, purpose: 'output', minutes: this.content.tasks.get(task)!.minutes });
     else this.diag({ code: 'shortage', block: 'writing', what: 'task', wanted: 1, got: 0, unit: this.unit?.id, message: 'no unseen gated writing task for the output day' });
@@ -1335,6 +1361,13 @@ class Compiler {
     for (const d of this.unit?.days ?? []) for (const n of [...d.chunks, ...d.lexemes, ...d.focus]) if ((this.course.teachPos.get(n) ?? Infinity) <= here) scheduled.add(n);
     const ok = unmet.every((n) => ['chunk', 'lexeme', 'pattern'].includes(kindOf(n, this.course.nodes)) && scheduled.has(n));
     return ok ? unmet : [];
+  }
+
+  private pushScene(scene: string, purpose: 'output' | 'checkpoint') {
+    const s = this.content.scenes.get(scene)!;
+    const owed = this.owedCount(s.requires);
+    if (owed) this.diag({ code: 'coverage', block: 'scene', unit: s.unit, message: `scene ${scene}: ${owed} owed words, one tap from English` });
+    this.blocks.push({ kind: 'scene', part: 'core', deliberate: false, scene, purpose, minutes: s.minutes });
   }
 
   /** No scene: deferred if an unseen scene of this unit only waits on owed items, else a shortage. */
@@ -1367,7 +1400,7 @@ class Compiler {
     if (task) this.blocks.push({ kind: 'writing', part: 'core', deliberate: false, task, purpose: 'checkpoint', minutes: this.content.tasks.get(task)!.minutes });
     else this.diag({ code: 'shortage', block: 'writing', what: 'task', wanted: 1, got: 0, unit: this.unit?.id, message: 'no writing task for the checkpoint' });
     const scene = this.sceneFor(undefined);
-    if (scene) this.blocks.push({ kind: 'scene', part: 'core', deliberate: false, scene, purpose: 'checkpoint', minutes: this.content.scenes.get(scene)!.minutes });
+    if (scene) this.pushScene(scene, 'checkpoint');
     else this.sceneProblem('checkpoint interaction');
     if (this.unit) this.blocks.push({ kind: 'selfCheck', part: 'core', deliberate: false, unit: this.unit.id, canDo: this.unit.canDo, minutes: round1(SECONDS.selfCheck / 60) });
   }

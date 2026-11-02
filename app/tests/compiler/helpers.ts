@@ -6,9 +6,10 @@ import path from 'node:path';
 import { expect } from 'vitest';
 import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, type NodeId } from '../../src/content/schema';
 import {
-  buildContentIndex, buildCourse, contrastSides, servedRefs, budget, reviewTargets,
+  buildContentIndex, buildCourse, contrastSides, kindOf, servedRefs, budget, reviewTargets, unmetRequires,
   type CompileInput, type ContentIndex, type Course, type SessionPlan,
 } from '../../src/compiler';
+import { dayPos } from '../../src/compiler/content';
 import type { Profile } from '../../tools/sim/profiles';
 import { PROFILES } from '../../tools/sim/profiles';
 import { simulateProfile, type ProfileRun } from '../../tools/sim/run';
@@ -113,18 +114,24 @@ export function checkContrasts({ plan, input, known }: Seen) {
   for (const b of plan.blocks) if ('contrast' in b && b.contrast) expect(sidesKnown(b.contrast), b.contrast).toBe(true);
 }
 
-/** Everything served passes the gate: requires ⊆ known-before ∪ introduced-this-session. */
+/**
+ * Everything served passes the gate: requires ⊆ known-before ∪ introduced-this-session. A chapter or a scene may also stand on the
+ * chunks, lexemes and patterns the unit has scheduled by the path's day and the learner is owed (R26): glossed, never a grammar point.
+ */
 export function checkGate({ plan, input, known }: Seen) {
   const allowed = new Set([...known, ...Object.values(plan.newNodes).flat()]);
-  const ok = (req: NodeId[], what: string) => {
-    const missing = req.filter((r) => !allowed.has(r));
+  const here = dayPos(input.course, input.path.unit, input.path.day);
+  const owed = (r: NodeId) => ['chunk', 'lexeme', 'pattern'].includes(kindOf(r, input.course.nodes)) && (input.course.teachPos.get(r) ?? Infinity) <= here;
+  const ok = (req: NodeId[], what: string, glossed = false) => {
+    // (a lexeme that is not a graph node is a phantom the tagger could not lemmatise: nothing can teach it, and the gate lets it through)
+    const missing = unmetRequires(req, (r) => allowed.has(r), input.course.nodes).filter((r) => !(glossed && owed(r)));
     expect(missing, `${what} needs ${missing.join(',')}`).toEqual([]);
   };
   const c = input.content;
   for (const ref of servedRefs(plan)) {
     if (ref.kind === 'sentence') ok(c.sentences.get(ref.id)!.requires, ref.id);
-    if (ref.kind === 'chapter') ok(c.chapterById.get(ref.id)!.requires, ref.id);
-    if (ref.kind === 'scene') ok(c.scenes.get(ref.id)!.requires, ref.id);
+    if (ref.kind === 'chapter') ok(c.chapterById.get(ref.id)!.requires, ref.id, true);
+    if (ref.kind === 'scene') ok(c.scenes.get(ref.id)!.requires, ref.id, true);
     if (ref.kind === 'item' && ref.id.startsWith('wt:')) ok(c.tasks.get(ref.id.slice(3))!.requires, ref.id);
   }
 }
