@@ -106,4 +106,14 @@ describe('the Cue Test: a deck of meaning or earlier text is not passed by the w
     const same = Array.from({ length: 12 }, (_, i) => row(i, `Frase ${i} uno por dos${'x'.repeat(i)}`, [`Frase ${i} uno `.length, `Frase ${i} uno por`.length], ['por', 'para']));
     expect(score(same).commoner).toBeGreaterThan(0.9);
   });
+
+  it('a pair asked once is not its own answer: a deck whose words change is held to its sides instead', () => {
+    const row = (i: number, side: string): ContrastItem => ({ id: `x:t#${i}`, node: 'x:t', side, rung: 1, en: 'e', why: 'w', requires: [], es: `Frase ${i} uno${i} dos`, gap: [`Frase ${i} `.length, `Frase ${i} uno${i}`.length], options: [`uno${i}`, `otro${i}`], answer: 0 });
+    // every pair different, the two sides even: nothing to lean on
+    const even = Array.from({ length: 12 }, (_, i) => row(i, i % 2 ? 'g:a' : 'g:b'));
+    expect(score(even).commoner).toBeLessThanOrEqual(COMMONER_LIMIT);
+    expect(score(even).cue).toBeLessThanOrEqual(CUE_LIMIT);
+    // every pair different, one side always right: "always the perfect" passes it, and the test says so
+    expect(score(Array.from({ length: 12 }, (_, i) => row(i, 'g:a'))).commoner).toBeGreaterThan(0.9);
+  });
 });

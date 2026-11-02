@@ -1,0 +1,121 @@
+[
+ {
+  "id": "1",
+  "side": "g:hay-vs-esta",
+  "rung": 1,
+  "en": "Excuse me, is there a bank near here?",
+  "es": "Disculpe, ¿hay un banco cerca de aquí?",
+  "gap": [
+   11,
+   14
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 0,
+  "why": "A bank, any bank, is new to the talk."
+ },
+ {
+  "id": "2",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "Excuse me, is the bank near here?",
+  "es": "Disculpe, ¿el banco está cerca de aquí?",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 1,
+  "why": "The bank is a known one, so está."
+ },
+ {
+  "id": "3",
+  "side": "g:hay-vs-esta",
+  "rung": 1,
+  "en": "In the kitchen there's a pot of soup.",
+  "es": "En la cocina hay una olla de sopa.",
+  "gap": [
+   13,
+   16
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 0,
+  "why": "The pot is new information."
+ },
+ {
+  "id": "4",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "The pot of soup is in the kitchen.",
+  "es": "La olla de sopa está en la cocina.",
+  "gap": [
+   16,
+   20
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 1,
+  "why": "The pot is already known, so está."
+ },
+ {
+  "id": "5",
+  "side": "g:hay-vs-esta",
+  "rung": 1,
+  "en": "There are three people waiting outside.",
+  "es": "Hay tres personas esperando afuera.",
+  "gap": [
+   0,
+   3
+  ],
+  "options": [
+   "Hay",
+   "Están"
+  ],
+  "answer": 0,
+  "why": "Three people are introduced as new."
+ },
+ {
+  "id": "6",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "Rosa's brother is outside.",
+  "es": "El hermano de Rosa está afuera.",
+  "gap": [
+   19,
+   23
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 1,
+  "why": "A specific person takes está."
+ },
+ {
+  "id": "7",
+  "side": "g:hay-vs-esta",
+  "rung": 1,
+  "en": "Is there any coffee left?",
+  "es": "¿Todavía hay café?",
+  "gap": [
+   9,
+   12
+  ],
+  "options": [
+   "hay",
+   "está"
+  ],
+  "answer": 0,
+  "why": "Any coffee is not a specific one."
+ }
+]

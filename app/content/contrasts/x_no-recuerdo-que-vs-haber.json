@@ -116,6 +116,479 @@
         "p:demonstratives-basic",
         "p:recordar-acordarse"
       ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-1",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I don't remember closing the door.",
+      "es": "No recuerdo haber cerrado la puerta.",
+      "gap": [
+        12,
+        25
+      ],
+      "options": [
+        "haber cerrado",
+        "que Vale cerró"
+      ],
+      "answer": 0,
+      "why": "The same person forgets and did it: haber.",
+      "requires": [
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:cerrar",
+        "l:haber",
+        "l:puerta",
+        "l:recordar",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-2",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't remember Vale closing the door.",
+      "es": "No recuerdo que Vale cerrara la puerta.",
+      "gap": [
+        12,
+        28
+      ],
+      "options": [
+        "haber cerrado",
+        "que Vale cerrara"
+      ],
+      "answer": 1,
+      "why": "Vale is a new subject: que plus subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:puerta",
+        "l:recordar",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-3",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "Tomás doesn't remember saying that.",
+      "es": "Tomás no recuerda haberlo dicho.",
+      "gap": [
+        18,
+        31
+      ],
+      "options": [
+        "haberlo dicho",
+        "que yo lo dijera"
+      ],
+      "answer": 0,
+      "why": "Same person, so haber.",
+      "requires": [
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "l:decir",
+        "l:haber",
+        "l:recordar",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-4",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "Tomás doesn't remember me saying that.",
+      "es": "Tomás no recuerda que yo lo dijera.",
+      "gap": [
+        18,
+        34
+      ],
+      "options": [
+        "haberlo dicho",
+        "que yo lo dijera"
+      ],
+      "answer": 1,
+      "why": "A different subject, me, so que.",
+      "requires": [
+        "g:direct-objects",
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:recordar",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-5",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I don't remember meeting Rosa.",
+      "es": "No recuerdo haber conocido a Rosa.",
+      "gap": [
+        12,
+        26
+      ],
+      "options": [
+        "haber conocido",
+        "que Vale conociera"
+      ],
+      "answer": 0,
+      "why": "The same person: haber.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:conocer",
+        "l:haber",
+        "l:recordar",
+        "p:personal-a",
+        "p:recordar-acordarse",
+        "p:saber-conocer",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-6",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't remember Rosa meeting Vale.",
+      "es": "No recuerdo que Rosa conociera a Vale.",
+      "gap": [
+        12,
+        30
+      ],
+      "options": [
+        "haber conocido",
+        "que Rosa conociera"
+      ],
+      "answer": 1,
+      "why": "Rosa is a new subject: que.",
+      "requires": [
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:conocer",
+        "l:recordar",
+        "p:no-recuerdo-que-subj",
+        "p:personal-a",
+        "p:recordar-acordarse",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-7",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I don't remember paying anything.",
+      "es": "No recuerdo haber pagado nada.",
+      "gap": [
+        12,
+        24
+      ],
+      "options": [
+        "haber pagado",
+        "que Vale pagara"
+      ],
+      "answer": 0,
+      "why": "Same person: haber.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:negation-words",
+        "g:stem-boot",
+        "l:haber",
+        "l:pagar",
+        "l:recordar",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-8",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't remember them paying.",
+      "es": "No recuerdo que ellos pagaran.",
+      "gap": [
+        12,
+        29
+      ],
+      "options": [
+        "haber pagado",
+        "que ellos pagaran"
+      ],
+      "answer": 1,
+      "why": "They are a new subject: que.",
+      "requires": [
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:pagar",
+        "l:recordar",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-9",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "Rosa doesn't remember leaving the bag here.",
+      "es": "Rosa no recuerda haber dejado la bolsa aquí.",
+      "gap": [
+        17,
+        29
+      ],
+      "options": [
+        "haber dejado",
+        "que Vale dejara"
+      ],
+      "answer": 0,
+      "why": "Same person: haber.",
+      "requires": [
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:aquí",
+        "l:bolsa",
+        "l:dejar",
+        "l:haber",
+        "l:recordar",
+        "p:aqui-ahi-alla",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-10",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "Rosa doesn't remember Tomás leaving the bag here.",
+      "es": "Rosa no recuerda que Tomás dejara la bolsa aquí.",
+      "gap": [
+        17,
+        33
+      ],
+      "options": [
+        "haber dejado",
+        "que Tomás dejara"
+      ],
+      "answer": 1,
+      "why": "Tomás is a new subject: que.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:aquí",
+        "l:bolsa",
+        "l:dejar",
+        "l:recordar",
+        "p:aqui-ahi-alla",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-11",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "We don't remember being there.",
+      "es": "No recordamos haber estado allá.",
+      "gap": [
+        14,
+        26
+      ],
+      "options": [
+        "haber estado",
+        "que Vale estuviera"
+      ],
+      "answer": 0,
+      "why": "Same people: haber.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:present-ar",
+        "l:allá",
+        "l:estar",
+        "l:haber",
+        "l:recordar",
+        "p:aqui-ahi-alla",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-12",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "We don't remember Don Hernando being there.",
+      "es": "No recordamos que don Hernando estuviera allá.",
+      "gap": [
+        14,
+        40
+      ],
+      "options": [
+        "haber estado",
+        "que don Hernando estuviera"
+      ],
+      "answer": 1,
+      "why": "Don Hernando is new: que.",
+      "requires": [
+        "g:estar-location-states",
+        "g:imperfect-subj",
+        "g:present-ar",
+        "g:reported-commands-past",
+        "g:that-clauses",
+        "l:allá",
+        "l:estar",
+        "l:recordar",
+        "p:aqui-ahi-alla",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-13",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I don't remember taking that medicine.",
+      "es": "No recuerdo haber tomado esa medicina.",
+      "gap": [
+        12,
+        24
+      ],
+      "options": [
+        "haber tomado",
+        "que Vale tomara"
+      ],
+      "answer": 0,
+      "why": "Same person: haber.",
+      "requires": [
+        "g:demonstratives",
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:haber",
+        "l:medicina",
+        "l:recordar",
+        "l:tomar",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-14",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't remember you taking that medicine.",
+      "es": "No recuerdo que tú tomaras esa medicina.",
+      "gap": [
+        12,
+        26
+      ],
+      "options": [
+        "haber tomado",
+        "que tú tomaras"
+      ],
+      "answer": 1,
+      "why": "You are a new subject: que.",
+      "requires": [
+        "g:demonstratives",
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:medicina",
+        "l:recordar",
+        "l:tomar",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-15",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "Vale doesn't remember writing to him.",
+      "es": "Vale no recuerda haberle escrito.",
+      "gap": [
+        17,
+        32
+      ],
+      "options": [
+        "haberle escrito",
+        "que Tomás le escribiera"
+      ],
+      "answer": 0,
+      "why": "Same person: haber.",
+      "requires": [
+        "g:indirect-objects",
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "l:escribir",
+        "l:haber",
+        "l:recordar",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#a-16",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "Vale doesn't remember her mother writing to her.",
+      "es": "Vale no recuerda que su mamá le escribiera.",
+      "gap": [
+        17,
+        42
+      ],
+      "options": [
+        "haberle escrito",
+        "que su mamá le escribiera"
+      ],
+      "answer": 1,
+      "why": "Her mother is new: que.",
+      "requires": [
+        "g:imperfect-subj",
+        "g:indirect-objects",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:escribir",
+        "l:mamá",
+        "l:recordar",
+        "p:no-recuerdo-que-subj",
+        "p:possessives-basic",
+        "p:recordar-acordarse"
+      ]
     }
   ]
 }

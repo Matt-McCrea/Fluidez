@@ -136,6 +136,379 @@
         "l:querer",
         "p:me-te-nos-objects"
       ]
+    },
+    {
+      "id": "x:subj-present-past#a-1",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I want you to come tomorrow.",
+      "es": "Quiero que vengas mañana.",
+      "gap": [
+        11,
+        17
+      ],
+      "options": [
+        "vengas",
+        "vinieras"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:mañana",
+        "l:querer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-2",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Vale wants Tomás to stay today.",
+      "es": "Vale quiere que Tomás se quede hoy.",
+      "gap": [
+        25,
+        30
+      ],
+      "options": [
+        "quede",
+        "quedara"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:hoy",
+        "l:quedarse",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-3",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I'm glad you're here.",
+      "es": "Me alegra que estés aquí.",
+      "gap": [
+        14,
+        19
+      ],
+      "options": [
+        "estés",
+        "estuvieras"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:alegrar",
+        "l:aquí",
+        "l:estar",
+        "p:aqui-ahi-alla",
+        "p:me-encanta-que"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-4",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Rosa asks me to close the café.",
+      "es": "Rosa me pide que cierre el café.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "cierre",
+        "cerrara"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "g:subj-influence",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:pedir",
+        "p:me-te-nos-objects",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-5",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I hope Simón arrives soon.",
+      "es": "Espero que Simón llegue pronto.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "llegue",
+        "llegara"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-wanting",
+        "g:subj-wishes",
+        "g:that-clauses",
+        "l:esperar",
+        "l:llegar",
+        "l:pronto"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-6",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Don Hernando prefers that we talk now.",
+      "es": "Don Hernando prefiere que hablemos ahora.",
+      "gap": [
+        26,
+        34
+      ],
+      "options": [
+        "hablemos",
+        "habláramos"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ahora",
+        "l:hablar",
+        "l:preferir",
+        "p:preferir-a",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-7",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "It's important that you eat something.",
+      "es": "Es importante que comas algo.",
+      "gap": [
+        18,
+        23
+      ],
+      "options": [
+        "comas",
+        "comieras"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:ser-identity",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:comer",
+        "l:importante",
+        "l:ser",
+        "p:indefinites-basic"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-8",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I'm telling you not to go out alone today.",
+      "es": "Te digo que no salgas solo hoy.",
+      "gap": [
+        15,
+        21
+      ],
+      "options": [
+        "salgas",
+        "salieras"
+      ],
+      "answer": 0,
+      "why": "The second thing is now or still ahead, so the present subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:decir",
+        "l:hoy",
+        "l:salir",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-10",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "Vale wanted Tomás to stay.",
+      "es": "Vale quería que Tomás se quedara.",
+      "gap": [
+        25,
+        32
+      ],
+      "options": [
+        "quedara",
+        "quede"
+      ],
+      "answer": 0,
+      "why": "The second thing is already over, so the past subjunctive.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:imperfect-subj",
+        "g:reflexive-routine",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:quedarse",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-12",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "Rosa asked me to close the café and I did.",
+      "es": "Rosa me pidió que cerrara el café y lo cerré.",
+      "gap": [
+        18,
+        25
+      ],
+      "options": [
+        "cerrara",
+        "cierre"
+      ],
+      "answer": 0,
+      "why": "The second thing is already over, so the past subjunctive.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:preterite-ar",
+        "g:preterite-spelling-stem",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:pedir",
+        "p:me-te-nos-objects",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-13",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "I was surprised Mariana didn't call.",
+      "es": "Me sorprendió que Mariana no llamara.",
+      "gap": [
+        29,
+        36
+      ],
+      "options": [
+        "llamara",
+        "llame"
+      ],
+      "answer": 0,
+      "why": "The second thing is already over, so the past subjunctive.",
+      "requires": [
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:preterite-er-ir",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:llamar",
+        "l:sorprender",
+        "p:me-extrana-que",
+        "p:me-sorprende-que"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-14",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "Don Hernando hoped Simón would arrive early.",
+      "es": "Don Hernando esperaba que Simón llegara temprano.",
+      "gap": [
+        32,
+        39
+      ],
+      "options": [
+        "llegara",
+        "llegue"
+      ],
+      "answer": 0,
+      "why": "The second thing is already over, so the past subjunctive.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:esperar",
+        "l:llegar",
+        "l:temprano",
+        "p:llegar-a-tiempo",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#a-15",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "It was important for you to eat something.",
+      "es": "Era importante que comieras algo.",
+      "gap": [
+        19,
+        27
+      ],
+      "options": [
+        "comieras",
+        "comas"
+      ],
+      "answer": 0,
+      "why": "The second thing is already over, so the past subjunctive.",
+      "requires": [
+        "c:era",
+        "g:imperfect-states",
+        "g:imperfect-subj",
+        "g:ser-identity",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:comer",
+        "l:importante",
+        "l:ser",
+        "p:indefinites-basic"
+      ]
     }
   ]
 }

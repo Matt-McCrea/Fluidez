@@ -1,5 +1,314 @@
 {
   "node": "x:molesta-vs-no-soporto",
   "decides": "synonym",
-  "items": []
+  "items": [
+    {
+      "id": "x:molesta-vs-no-soporto#a-1",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me a little that the music is so loud.",
+      "es": "Me molesta un poco que la música esté tan alta.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 0,
+      "why": "A little irritation is me molesta. No soporto has no small size.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:alto",
+        "l:estar",
+        "l:molestar",
+        "l:música",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-2",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when the neighbors smoke here.",
+      "es": "No soporto que los vecinos fumen aquí.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 1,
+      "why": "This is the limit, so no soporto.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:aquí",
+        "l:fumar",
+        "l:soportar",
+        "l:vecino",
+        "p:aqui-ahi-alla",
+        "p:no-soportar-que",
+        "p:no-soporto-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-3",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "Does it bother you if I turn on the TV? (to a friend)",
+      "es": "¿Te molesta que prenda el televisor?",
+      "gap": [
+        1,
+        11
+      ],
+      "options": [
+        "Te molesta",
+        "No soportas"
+      ],
+      "answer": 0,
+      "why": "A polite question uses te molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:molestar",
+        "l:prender",
+        "l:televisor",
+        "p:me-encanta-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-4",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when Tomás doesn't answer.",
+      "es": "No soporto que Tomás no conteste.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 1,
+      "why": "Full annoyance, no half measure: no soporto.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:contestar",
+        "l:soportar",
+        "p:no-soportar-que",
+        "p:no-soporto-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-5",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me quite a bit that nobody cleans.",
+      "es": "Me molesta bastante que nadie limpie.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 0,
+      "why": "Quite a bit is a size that only me molesta has.",
+      "requires": [
+        "g:gustar-full",
+        "g:present-ar",
+        "g:quantifiers",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:limpiar",
+        "l:molestar"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-6",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when people tell me lies.",
+      "es": "No soporto que me digan mentiras.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 1,
+      "why": "I can't stand it is the top of the scale: no soporto.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:mentira",
+        "l:soportar",
+        "p:me-te-nos-objects",
+        "p:no-soportar-que",
+        "p:no-soporto-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-7",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me that the bus is always full.",
+      "es": "Me molesta que el bus siempre vaya lleno.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 0,
+      "why": "This is an ordinary annoyance, so me molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:bus",
+        "l:ir",
+        "l:lleno",
+        "l:molestar",
+        "l:siempre",
+        "p:frequency-scale"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-8",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when Rosa arrives late and says nothing.",
+      "es": "No soporto que Rosa llegue tarde y no diga nada.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 1,
+      "why": "The speaker has reached the limit: no soporto.",
+      "requires": [
+        "g:negation-words",
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:llegar",
+        "l:soportar",
+        "l:tarde",
+        "p:llegar-a-tiempo",
+        "p:no-soportar-que",
+        "p:no-soporto-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-9",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me a lot that they close so early.",
+      "es": "Me molesta mucho que cierren tan temprano.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 0,
+      "why": "Mucho is a size of me molesta.",
+      "requires": [
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:molestar",
+        "l:temprano",
+        "p:me-encanta-que",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#a-10",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when they make noise at night.",
+      "es": "No soporto que hagan ruido en la noche.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Me molesta",
+        "No soporto"
+      ],
+      "answer": 1,
+      "why": "I can't stand it is no soporto.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:hacer",
+        "l:noche",
+        "l:ruido",
+        "l:soportar",
+        "p:no-soportar-que",
+        "p:no-soporto-que",
+        "p:por-la-manana"
+      ]
+    }
+  ]
 }

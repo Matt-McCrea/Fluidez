@@ -141,6 +141,408 @@
         "p:llevar-sin-inf",
         "p:llevar-tiempo-gerundio"
       ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-1",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "I have been living here for two months.",
+      "es": "Llevo dos meses viviendo aquí.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "viviendo",
+        "vivir"
+      ],
+      "answer": 0,
+      "why": "Llevar plus time plus a gerund says what you keep doing.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:aquí",
+        "l:llevar",
+        "l:mes",
+        "l:vivir",
+        "p:aqui-ahi-alla",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-2",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "I have not slept in two days.",
+      "es": "Llevo dos días sin dormir.",
+      "gap": [
+        15,
+        25
+      ],
+      "options": [
+        "durmiendo",
+        "sin dormir"
+      ],
+      "answer": 1,
+      "why": "Without doing it is sin plus the infinitive.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:dormir",
+        "l:día",
+        "l:llevar",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-3",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "Vale has been working here for a year.",
+      "es": "Vale lleva un año trabajando aquí.",
+      "gap": [
+        18,
+        28
+      ],
+      "options": [
+        "trabajando",
+        "trabajar"
+      ],
+      "answer": 0,
+      "why": "Llevar plus time plus a gerund.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:aquí",
+        "l:año",
+        "l:llevar",
+        "l:trabajar",
+        "p:aqui-ahi-alla",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-4",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "Vale has not worked in a year.",
+      "es": "Vale lleva un año sin trabajar.",
+      "gap": [
+        18,
+        30
+      ],
+      "options": [
+        "trabajando",
+        "sin trabajar"
+      ],
+      "answer": 1,
+      "why": "The English says she has not worked.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:año",
+        "l:llevar",
+        "l:trabajar",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-5",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "We have been waiting for an hour.",
+      "es": "Llevamos una hora esperando.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "esperando",
+        "esperar"
+      ],
+      "answer": 0,
+      "why": "Llevar plus time plus a gerund.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:esperar",
+        "l:hora",
+        "l:llevar",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-6",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "We have not eaten for an hour.",
+      "es": "Llevamos una hora sin comer.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "comiendo",
+        "sin comer"
+      ],
+      "answer": 1,
+      "why": "The English says we have not eaten.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:comer",
+        "l:hora",
+        "l:llevar",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-7",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "Tomás has been cooking for hours.",
+      "es": "Tomás lleva horas cocinando.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "cocinando",
+        "cocinar"
+      ],
+      "answer": 0,
+      "why": "He is still cooking.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:cocinar",
+        "l:hora",
+        "l:llevar",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-8",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "Tomás has not cooked for weeks.",
+      "es": "Tomás lleva semanas sin cocinar.",
+      "gap": [
+        20,
+        31
+      ],
+      "options": [
+        "cocinando",
+        "sin cocinar"
+      ],
+      "answer": 1,
+      "why": "The English says he has not cooked.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:cocinar",
+        "l:llevar",
+        "l:semana",
+        "p:llevar-sin-inf"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-10",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "I have not studied for three months.",
+      "es": "Llevo tres meses sin estudiar.",
+      "gap": [
+        17,
+        29
+      ],
+      "options": [
+        "estudiando",
+        "sin estudiar"
+      ],
+      "answer": 1,
+      "why": "The English says I have not studied.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:estudiar",
+        "l:llevar",
+        "l:mes",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-11",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "Rosa has been calling you all day.",
+      "es": "Rosa lleva todo el día llamándote.",
+      "gap": [
+        23,
+        33
+      ],
+      "options": [
+        "llamándote",
+        "llamarte"
+      ],
+      "answer": 0,
+      "why": "She keeps calling, so the gerund.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:object-pronoun-position",
+        "g:present-ar",
+        "l:día",
+        "l:llamar",
+        "l:llevar",
+        "p:llevar-tiempo-gerundio",
+        "p:me-te-nos-objects",
+        "p:todos-los-dias"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-12",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "Rosa has not called me in a week.",
+      "es": "Rosa lleva una semana sin llamarme.",
+      "gap": [
+        22,
+        34
+      ],
+      "options": [
+        "llamándome",
+        "sin llamarme"
+      ],
+      "answer": 1,
+      "why": "The English says she has not called.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:object-pronoun-position",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:llamar",
+        "l:llevar",
+        "l:semana",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-13",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "Hernando has not come to the café for a month.",
+      "es": "Hernando lleva un mes sin venir al café.",
+      "gap": [
+        22,
+        31
+      ],
+      "options": [
+        "sin venir",
+        "viniendo"
+      ],
+      "answer": 0,
+      "why": "The English says he has not come.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:café",
+        "l:llevar",
+        "l:mes",
+        "l:venir",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-14",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "Hernando has been coming to the café for years.",
+      "es": "Hernando lleva años viniendo al café.",
+      "gap": [
+        20,
+        28
+      ],
+      "options": [
+        "venir",
+        "viniendo"
+      ],
+      "answer": 1,
+      "why": "He keeps coming, so the gerund.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:año",
+        "l:café",
+        "l:llevar",
+        "l:venir",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#a-15",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "I have not seen my family for a year.",
+      "es": "Llevo un año sin ver a mi familia.",
+      "gap": [
+        13,
+        20
+      ],
+      "options": [
+        "sin ver",
+        "viendo"
+      ],
+      "answer": 0,
+      "why": "The English says I have not seen.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:año",
+        "l:familia",
+        "l:llevar",
+        "l:ver",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio",
+        "p:personal-a",
+        "p:possessives-basic"
+      ]
     }
   ]
 }

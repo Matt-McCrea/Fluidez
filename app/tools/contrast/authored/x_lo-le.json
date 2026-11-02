@@ -1,0 +1,427 @@
+[
+ {
+  "id": "4",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I told my parents the news.",
+  "es": "Les conté la noticia a mis papás.",
+  "gap": [
+   0,
+   3
+  ],
+  "options": [
+   "Los",
+   "Les"
+  ],
+  "answer": 1,
+  "why": "The news goes to them, so les."
+ },
+ {
+  "id": "5",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Vale is nice. I love her a lot.",
+  "es": "Vale es amable. La quiero mucho.",
+  "gap": [
+   16,
+   18
+  ],
+  "options": [
+   "La",
+   "Le"
+  ],
+  "answer": 0,
+  "why": "Loving lands straight on him."
+ },
+ {
+  "id": "6",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "Tomás wrote Vale a letter.",
+  "es": "Tomás le escribió una carta a Vale.",
+  "gap": [
+   6,
+   8
+  ],
+  "options": [
+   "la",
+   "le"
+  ],
+  "answer": 1,
+  "why": "The letter goes to her, so le."
+ },
+ {
+  "id": "7",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "The kids are late. I am waiting for them.",
+  "es": "Los niños llegan tarde. Los estoy esperando.",
+  "gap": [
+   24,
+   27
+  ],
+  "options": [
+   "Los",
+   "Les"
+  ],
+  "answer": 0,
+  "why": "Waiting for them lands straight on them."
+ },
+ {
+  "id": "11",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I am sending you the photos tonight.",
+  "es": "Le mando las fotos esta noche a usted.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Le",
+   "Lo"
+  ],
+  "answer": 0,
+  "why": "The photos go to you, so le."
+ },
+ {
+  "id": "12",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "The coffee is hot. Don't drink it yet.",
+  "es": "El tinto está caliente. No lo tomes todavía.",
+  "gap": [
+   27,
+   29
+  ],
+  "options": [
+   "le",
+   "lo"
+  ],
+  "answer": 1,
+  "why": "It is the coffee itself, so lo."
+ },
+ {
+  "id": "13",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "We are teaching the kids Spanish.",
+  "es": "Les enseñamos español a los niños.",
+  "gap": [
+   0,
+   3
+  ],
+  "options": [
+   "Les",
+   "Los"
+  ],
+  "answer": 0,
+  "why": "Spanish is taught to them, so les."
+ },
+ {
+  "id": "14",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Mariana called us. We called her back.",
+  "es": "Mariana nos llamó y nosotros la llamamos después.",
+  "gap": [
+   29,
+   31
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 1,
+  "why": "Calling lands straight on her."
+ },
+ {
+  "id": "15",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "The waiter brought us the bill and I paid him.",
+  "es": "El mesero nos trajo la cuenta y yo le pagué.",
+  "gap": [
+   35,
+   37
+  ],
+  "options": [
+   "le",
+   "lo"
+  ],
+  "answer": 0,
+  "why": "Money is paid to him, so le."
+ },
+ {
+  "id": "16",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Where is the bus stop? I can't find it.",
+  "es": "¿Dónde queda la parada? No la encuentro.",
+  "gap": [
+   27,
+   29
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 1,
+  "why": "Finding lands straight on the stop."
+ },
+ {
+  "id": "17",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "Tell me, did you let Rosa know that I'm coming?",
+  "es": "Dime, ¿le avisaste a Rosa que ya voy?",
+  "gap": [
+   7,
+   9
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 0,
+  "why": "News is passed to her, so le."
+ },
+ {
+  "id": "18",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Vale makes pandebonos. I buy them every day.",
+  "es": "Vale hace pandebonos y yo los compro todos los días.",
+  "gap": [
+   26,
+   29
+  ],
+  "options": [
+   "les",
+   "los"
+  ],
+  "answer": 1,
+  "why": "Buying lands straight on the pandebonos."
+ },
+ {
+  "id": "19",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "Don Hernando, can I ask you something?",
+  "es": "Don Hernando, ¿puedo preguntarle algo?",
+  "gap": [
+   30,
+   32
+  ],
+  "options": [
+   "le",
+   "lo"
+  ],
+  "answer": 0,
+  "why": "A question goes to him, so le."
+ },
+ {
+  "id": "21",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "They sold us the house.",
+  "es": "Nos vendieron la casa a nosotros.",
+  "gap": [
+   0,
+   3
+  ],
+  "options": [
+   "Nos",
+   "Los"
+  ],
+  "answer": 0,
+  "why": "Nos is the same for to us and us, so it never becomes los."
+ },
+ {
+  "id": "22",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Rosa lost her bag and we found it.",
+  "es": "Rosa perdió la bolsa y nosotros la encontramos.",
+  "gap": [
+   32,
+   34
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 1,
+  "why": "Finding lands straight on the bag."
+ },
+ {
+  "id": "23",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I explained the problem to Vale.",
+  "es": "Le expliqué el problema a Vale.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Le",
+   "La"
+  ],
+  "answer": 0,
+  "why": "The problem is explained to her, so le."
+ },
+ {
+  "id": "24",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Where are the girls? I haven't seen them.",
+  "es": "¿Dónde están las niñas? No las he visto.",
+  "gap": [
+   27,
+   30
+  ],
+  "options": [
+   "les",
+   "las"
+  ],
+  "answer": 1,
+  "why": "Seeing lands straight on them."
+ },
+ {
+  "id": "25",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "The teacher asked the students a question.",
+  "es": "La profesora les hizo una pregunta a los estudiantes.",
+  "gap": [
+   13,
+   16
+  ],
+  "options": [
+   "les",
+   "los"
+  ],
+  "answer": 0,
+  "why": "A question goes to them, so les."
+ },
+ {
+  "id": "26",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "Tomás brought the cake and Vale ate it.",
+  "es": "Tomás trajo la torta y Vale se la comió.",
+  "gap": [
+   31,
+   33
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 1,
+  "why": "Eating lands straight on the cake."
+ },
+ {
+  "id": "27",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I bought Don Hernando a gift.",
+  "es": "Le compré un regalo a don Hernando.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Le",
+   "Lo"
+  ],
+  "answer": 0,
+  "why": "The gift goes to him, so le."
+ },
+ {
+  "id": "28",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "I always greet them.",
+  "es": "Los vecinos son amables. Siempre los saludo.",
+  "gap": [
+   33,
+   36
+  ],
+  "options": [
+   "les",
+   "los"
+  ],
+  "answer": 1,
+  "why": "Greeting lands straight on them."
+ },
+ {
+  "id": "29",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "Rosa wrote to me and I answered her.",
+  "es": "Rosa me escribió y yo le respondí.",
+  "gap": [
+   22,
+   24
+  ],
+  "options": [
+   "le",
+   "la"
+  ],
+  "answer": 0,
+  "why": "You answer to a person with le."
+ },
+ {
+  "id": "30",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "You have the report? I'll read it tonight.",
+  "es": "¿Tienes el informe? Lo leo esta noche.",
+  "gap": [
+   20,
+   22
+  ],
+  "options": [
+   "Le",
+   "Lo"
+  ],
+  "answer": 1,
+  "why": "Reading lands straight on the report."
+ },
+ {
+  "id": "31",
+  "side": "g:direct-objects",
+  "rung": 1,
+  "en": "The report? I read it yesterday.",
+  "es": "¿El informe? Lo leí ayer.",
+  "gap": [
+   13,
+   15
+  ],
+  "options": [
+   "Lo",
+   "Le"
+  ],
+  "answer": 0,
+  "why": "Reading lands straight on the report."
+ },
+ {
+  "id": "32",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I sent him the report yesterday.",
+  "es": "Le mandé el informe ayer.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Le",
+   "Lo"
+  ],
+  "answer": 0,
+  "why": "The report goes to him, so he gets le."
+ }
+]

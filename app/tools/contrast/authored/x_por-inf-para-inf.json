@@ -1,53 +1,87 @@
 [
-  {
-    "id": "1",
-    "side": "g:causal-advanced",
-    "rung": 1,
-    "en": "They congratulated her for winning the race.",
-    "es": "La felicitaron por ganar la carrera.",
-    "gap": [
-      15,
-      18
-    ],
-    "options": [
-      "por",
-      "para"
-    ],
-    "answer": 0,
-    "why": "The reason behind praise is por."
-  },
-  {
-    "id": "3",
-    "side": "g:causal-advanced",
-    "rung": 1,
-    "en": "Vale was punished for lying.",
-    "es": "Castigaron a Vale por mentir.",
-    "gap": [
-      18,
-      21
-    ],
-    "options": [
-      "por",
-      "para"
-    ],
-    "answer": 0,
-    "why": "The cause of a punishment is por."
-  },
-  {
-    "id": "5",
-    "side": "p:para-inf",
-    "rung": 1,
-    "en": "Tomás practices every day to improve.",
-    "es": "Tomás practica todos los días para mejorar.",
-    "gap": [
-      30,
-      34
-    ],
-    "options": [
-      "para",
-      "por"
-    ],
-    "answer": 0,
-    "why": "A goal is para."
-  }
+ {
+  "id": "1",
+  "side": "g:causal-advanced",
+  "rung": 1,
+  "en": "They congratulated her for winning the race.",
+  "es": "La felicitaron por ganar la carrera.",
+  "gap": [
+   15,
+   18
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "The reason behind praise is por."
+ },
+ {
+  "id": "2",
+  "side": "p:para-inf",
+  "rung": 1,
+  "en": "I saved money in order to buy a bike.",
+  "es": "Ahorré plata para comprar una bicicleta.",
+  "gap": [
+   13,
+   17
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "A goal is para."
+ },
+ {
+  "id": "3",
+  "side": "g:causal-advanced",
+  "rung": 1,
+  "en": "Vale was punished for lying.",
+  "es": "Castigaron a Vale por mentir.",
+  "gap": [
+   18,
+   21
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "The cause of a punishment is por."
+ },
+ {
+  "id": "4",
+  "side": "p:para-inf",
+  "rung": 1,
+  "en": "I'm calling to ask about the price.",
+  "es": "Llamo para preguntar el precio.",
+  "gap": [
+   6,
+   10
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "A purpose is para."
+ },
+ {
+  "id": "5",
+  "side": "p:para-inf",
+  "rung": 1,
+  "en": "Tomás practices every day to improve.",
+  "es": "Tomás practica todos los días para mejorar.",
+  "gap": [
+   30,
+   34
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 0,
+  "why": "A goal is para."
+ }
 ]

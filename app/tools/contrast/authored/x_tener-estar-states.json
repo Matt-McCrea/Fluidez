@@ -1,0 +1,138 @@
+[
+ {
+  "id": "2",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "Vale is tired.",
+  "es": "Vale está cansada.",
+  "gap": [
+   5,
+   9
+  ],
+  "options": [
+   "tiene",
+   "está"
+  ],
+  "answer": 1,
+  "why": "Tired is a describing word, so estar."
+ },
+ {
+  "id": "4",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "Rosa is ill today.",
+  "es": "Rosa está enferma hoy.",
+  "gap": [
+   5,
+   9
+  ],
+  "options": [
+   "tiene",
+   "está"
+  ],
+  "answer": 1,
+  "why": "Ill describes her, so estar."
+ },
+ {
+  "id": "5",
+  "side": "p:tener-hambre",
+  "rung": 1,
+  "en": "Are you cold? (to a friend)",
+  "es": "¿Tienes frío?",
+  "gap": [
+   1,
+   7
+  ],
+  "options": [
+   "Tienes",
+   "Estás"
+  ],
+  "answer": 0,
+  "why": "Cold is a noun here, so you have it."
+ },
+ {
+  "id": "7",
+  "side": "p:tener-hambre",
+  "rung": 1,
+  "en": "The kids are sleepy.",
+  "es": "Los niños tienen sueño.",
+  "gap": [
+   10,
+   16
+  ],
+  "options": [
+   "tienen",
+   "están"
+  ],
+  "answer": 0,
+  "why": "Sleep is a noun, so they have it."
+ },
+ {
+  "id": "8",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "I'm busy right now.",
+  "es": "Estoy ocupado ahora.",
+  "gap": [
+   0,
+   5
+  ],
+  "options": [
+   "Tengo",
+   "Estoy"
+  ],
+  "answer": 1,
+  "why": "Busy is a describing word."
+ },
+ {
+  "id": "9",
+  "side": "p:tener-hambre",
+  "rung": 1,
+  "en": "Don Hernando is afraid of the dog.",
+  "es": "Don Hernando tiene miedo del perro.",
+  "gap": [
+   13,
+   18
+  ],
+  "options": [
+   "tiene",
+   "está"
+  ],
+  "answer": 0,
+  "why": "Fear is something you have."
+ },
+ {
+  "id": "10",
+  "side": "g:estar-location-states",
+  "rung": 1,
+  "en": "Are you all fine?",
+  "es": "¿Ustedes están bien?",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "tienen",
+   "están"
+  ],
+  "answer": 1,
+  "why": "Bien describes how you are."
+ },
+ {
+  "id": "11",
+  "side": "p:tener-hambre",
+  "rung": 1,
+  "en": "I'm not hungry, I'm just thirsty.",
+  "es": "No tengo hambre, solo tengo sed.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "tengo",
+   "estoy"
+  ],
+  "answer": 0,
+  "why": "Hunger is a noun, so tener."
+ }
+]

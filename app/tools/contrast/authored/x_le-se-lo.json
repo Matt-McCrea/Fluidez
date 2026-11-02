@@ -1,36 +1,87 @@
 [
-  {
-    "id": "3",
-    "side": "g:double-pronouns",
-    "rung": 1,
-    "en": "Tomás gave it to them. (the key)",
-    "es": "Tomás se la dio.",
-    "gap": [
-      6,
-      8
-    ],
-    "options": [
-      "se",
-      "les"
-    ],
-    "answer": 0,
-    "why": "Les turns into se before la."
-  },
-  {
-    "id": "6",
-    "side": "g:indirect-objects",
-    "rung": 1,
-    "en": "Rosa explained the menu to him.",
-    "es": "Rosa le explicó el menú.",
-    "gap": [
-      5,
-      7
-    ],
-    "options": [
-      "se",
-      "le"
-    ],
-    "answer": 1,
-    "why": "Without lo or la it stays le."
-  }
+ {
+  "id": "1",
+  "side": "g:double-pronouns",
+  "rung": 1,
+  "en": "I gave it to her yesterday. (the coffee)",
+  "es": "Ayer se lo di.",
+  "gap": [
+   5,
+   7
+  ],
+  "options": [
+   "se",
+   "le"
+  ],
+  "answer": 0,
+  "why": "Le turns into se before lo."
+ },
+ {
+  "id": "2",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "I gave her the coffee.",
+  "es": "Le di el café.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Se",
+   "Le"
+  ],
+  "answer": 1,
+  "why": "Without lo or la it stays le."
+ },
+ {
+  "id": "3",
+  "side": "g:double-pronouns",
+  "rung": 1,
+  "en": "Tomás gave it to them. (the key)",
+  "es": "Tomás se la dio.",
+  "gap": [
+   6,
+   8
+  ],
+  "options": [
+   "se",
+   "les"
+  ],
+  "answer": 0,
+  "why": "Les turns into se before la."
+ },
+ {
+  "id": "5",
+  "side": "g:double-pronouns",
+  "rung": 1,
+  "en": "I brought it to him. (the bill)",
+  "es": "Se la traje.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Se",
+   "Le"
+  ],
+  "answer": 0,
+  "why": "Le before la becomes se."
+ },
+ {
+  "id": "6",
+  "side": "g:indirect-objects",
+  "rung": 1,
+  "en": "Rosa explained the menu to him.",
+  "es": "Rosa le explicó el menú.",
+  "gap": [
+   5,
+   7
+  ],
+  "options": [
+   "se",
+   "le"
+  ],
+  "answer": 1,
+  "why": "Without lo or la it stays le."
+ }
 ]

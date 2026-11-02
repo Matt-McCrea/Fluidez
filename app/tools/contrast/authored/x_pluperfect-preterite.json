@@ -1,0 +1,121 @@
+[
+ {
+  "id": "1",
+  "side": "g:pluperfect",
+  "rung": 1,
+  "en": "When I arrived, Vale had already left.",
+  "es": "Cuando llegué, Vale ya se había ido.",
+  "gap": [
+   23,
+   35
+  ],
+  "options": [
+   "se había ido",
+   "se fue"
+  ],
+  "answer": 0,
+  "why": "She left before I arrived."
+ },
+ {
+  "id": "4",
+  "side": "g:pluperfect",
+  "rung": 1,
+  "en": "When we got to the cinema, the movie had already started.",
+  "es": "Cuando llegamos al cine, la película ya había empezado.",
+  "gap": [
+   40,
+   54
+  ],
+  "options": [
+   "había empezado",
+   "empezó"
+  ],
+  "answer": 0,
+  "why": "Starting came before we arrived."
+ },
+ {
+  "id": "8",
+  "side": "g:pluperfect",
+  "rung": 1,
+  "en": "When the doctor came, the pain had already gone.",
+  "es": "Cuando llegó el doctor, el dolor ya había pasado.",
+  "gap": [
+   36,
+   48
+  ],
+  "options": [
+   "había pasado",
+   "pasó"
+  ],
+  "answer": 0,
+  "why": "The pain ended first."
+ },
+ {
+  "id": "9",
+  "side": "g:pluperfect",
+  "rung": 1,
+  "en": "When Tomás woke up, it had already stopped raining.",
+  "es": "Cuando Tomás despertó, ya había dejado de llover.",
+  "gap": [
+   26,
+   38
+  ],
+  "options": [
+   "había dejado",
+   "dejó"
+  ],
+  "answer": 0,
+  "why": "The rain stopped first."
+ },
+ {
+  "id": "17",
+  "side": "g:preterite-ser-ir-hacer",
+  "rung": 1,
+  "en": "Then Tomás stood up and said goodbye.",
+  "es": "Entonces Tomás se levantó y se despidió.",
+  "gap": [
+   28,
+   39
+  ],
+  "options": [
+   "se había despedido",
+   "se despidió"
+  ],
+  "answer": 1,
+  "why": "Then marks the next step."
+ },
+ {
+  "id": "18",
+  "side": "g:preterite-ser-ir-hacer",
+  "rung": 1,
+  "en": "Vale took the bus, got off at the park, and walked home.",
+  "es": "Vale tomó el bus, se bajó en el parque y caminó a casa.",
+  "gap": [
+   41,
+   47
+  ],
+  "options": [
+   "había caminado",
+   "caminó"
+  ],
+  "answer": 1,
+  "why": "A chain of steps in order."
+ },
+ {
+  "id": "19",
+  "side": "g:preterite-ser-ir-hacer",
+  "rung": 1,
+  "en": "The teacher asked a question and nobody answered.",
+  "es": "La profesora hizo una pregunta y nadie respondió.",
+  "gap": [
+   39,
+   48
+  ],
+  "options": [
+   "había respondido",
+   "respondió"
+  ],
+  "answer": 1,
+  "why": "The answer followed the question."
+ }
+]

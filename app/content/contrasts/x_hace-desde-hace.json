@@ -111,6 +111,137 @@
         "l:hacer",
         "l:máquina"
       ]
+    },
+    {
+      "id": "x:hace-desde-hace#a-10",
+      "node": "x:hace-desde-hace",
+      "side": "g:hace-que-desde",
+      "rung": 1,
+      "en": "Rosa has been waiting for an hour.",
+      "es": "Rosa espera desde hace una hora.",
+      "gap": [
+        12,
+        22
+      ],
+      "options": [
+        "desde",
+        "desde hace"
+      ],
+      "answer": 1,
+      "why": "She is still waiting, so desde hace.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:esperar",
+        "l:hace",
+        "l:hora"
+      ]
+    },
+    {
+      "id": "x:hace-desde-hace#a-11",
+      "node": "x:hace-desde-hace",
+      "side": "g:hace-que-desde",
+      "rung": 1,
+      "en": "I have had this job since March.",
+      "es": "Tengo este trabajo desde marzo.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "desde",
+        "desde hace"
+      ],
+      "answer": 0,
+      "why": "A month is a starting point, so desde.",
+      "requires": [
+        "c:tengo",
+        "g:yo-irregular",
+        "l:marzo",
+        "l:tener",
+        "l:trabajo",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:hace-desde-hace#a-13",
+      "node": "x:hace-desde-hace",
+      "side": "g:hace-que-desde",
+      "rung": 1,
+      "en": "Don Hernando has lived here for ten years.",
+      "es": "Don Hernando vive aquí desde hace diez años.",
+      "gap": [
+        23,
+        33
+      ],
+      "options": [
+        "desde hace",
+        "desde"
+      ],
+      "answer": 0,
+      "why": "An amount of time needs desde hace.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:present-er-ir",
+        "l:aquí",
+        "l:año",
+        "l:hace",
+        "l:vivir",
+        "p:aqui-ahi-alla",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:hace-desde-hace#a-15",
+      "node": "x:hace-desde-hace",
+      "side": "g:hace-que-desde",
+      "rung": 1,
+      "en": "It has rained since Monday.",
+      "es": "Llueve desde el lunes.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "desde",
+        "desde hace"
+      ],
+      "answer": 0,
+      "why": "A day is a starting point, so desde.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:llover",
+        "l:lunes",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:hace-desde-hace#a-16",
+      "node": "x:hace-desde-hace",
+      "side": "g:hace-ago",
+      "rung": 1,
+      "en": "He left ten minutes ago.",
+      "es": "Salió hace diez minutos.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "desde hace",
+        "hace"
+      ],
+      "answer": 1,
+      "why": "A finished event, so hace.",
+      "requires": [
+        "g:hace-ago",
+        "g:present-er-ir",
+        "g:preterite-er-ir",
+        "l:hacer",
+        "l:minuto",
+        "l:salir"
+      ]
     }
   ]
 }

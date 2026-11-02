@@ -154,28 +154,30 @@
       ]
     },
     {
-      "id": "x:segun-depende#a-5",
+      "id": "x:segun-depende#a-4",
       "node": "x:segun-depende",
       "side": "p:depender-de",
       "rung": 1,
-      "en": "Do you want coffee? It depends.",
-      "es": "¿Quieres café? Depende.",
+      "en": "It depends on how much traffic there is.",
+      "es": "Depende de cuánto tráfico haya.",
       "gap": [
-        15,
-        22
+        0,
+        7
       ],
       "options": [
-        "Depende",
-        "Según"
+        "Según",
+        "Depende"
       ],
-      "answer": 0,
-      "why": "Depende can stand alone as an answer. Según cannot.",
+      "answer": 1,
+      "why": "De plus a clause goes with depende.",
       "requires": [
         "c:depende",
-        "g:stem-boot",
-        "l:café",
+        "g:indirect-questions",
+        "g:subj-irregulars",
+        "l:cuánto",
         "l:depender",
-        "l:querer"
+        "l:haya",
+        "l:tráfico"
       ]
     },
     {

@@ -1,0 +1,257 @@
+[
+ {
+  "id": "1",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think Rosa is right.",
+  "es": "Creo que Rosa tiene razón.",
+  "gap": [
+   14,
+   19
+  ],
+  "options": [
+   "tiene",
+   "tenga"
+  ],
+  "answer": 0,
+  "why": "Creo que states a belief, so the normal verb."
+ },
+ {
+  "id": "2",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think Rosa is right.",
+  "es": "No creo que Rosa tenga razón.",
+  "gap": [
+   17,
+   22
+  ],
+  "options": [
+   "tiene",
+   "tenga"
+  ],
+  "answer": 1,
+  "why": "No creo que opens doubt, so the subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think the café is expensive.",
+  "es": "Creo que el café es caro.",
+  "gap": [
+   17,
+   19
+  ],
+  "options": [
+   "es",
+   "sea"
+  ],
+  "answer": 0,
+  "why": "A plain belief takes the normal verb."
+ },
+ {
+  "id": "4",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think the café is expensive.",
+  "es": "No creo que el café sea caro.",
+  "gap": [
+   20,
+   23
+  ],
+  "options": [
+   "es",
+   "sea"
+  ],
+  "answer": 1,
+  "why": "Doubt after no creo que takes the subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think Tomás speaks English.",
+  "es": "No creo que Tomás hable inglés.",
+  "gap": [
+   18,
+   23
+  ],
+  "options": [
+   "hable",
+   "habla"
+  ],
+  "answer": 0,
+  "why": "Doubt takes the subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think Tomás speaks English.",
+  "es": "Creo que Tomás habla inglés.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "hable",
+   "habla"
+  ],
+  "answer": 1,
+  "why": "Creo que is a belief, so the normal verb."
+ },
+ {
+  "id": "7",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think we can go today.",
+  "es": "No creo que podamos ir hoy.",
+  "gap": [
+   12,
+   19
+  ],
+  "options": [
+   "podamos",
+   "podemos"
+  ],
+  "answer": 0,
+  "why": "Doubt takes the subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think we can go today.",
+  "es": "Creo que podemos ir hoy.",
+  "gap": [
+   9,
+   16
+  ],
+  "options": [
+   "podamos",
+   "podemos"
+  ],
+  "answer": 1,
+  "why": "Belief takes the normal verb."
+ },
+ {
+  "id": "9",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think Vale is at home.",
+  "es": "Creo que Vale está en casa.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "Creo que is a belief."
+ },
+ {
+  "id": "10",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think Vale is at home.",
+  "es": "No creo que Vale esté en casa.",
+  "gap": [
+   17,
+   21
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 1,
+  "why": "No creo que is doubt, so esté."
+ },
+ {
+  "id": "11",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think the bus comes at six.",
+  "es": "No creo que el bus llegue a las seis.",
+  "gap": [
+   19,
+   25
+  ],
+  "options": [
+   "llegue",
+   "llega"
+  ],
+  "answer": 0,
+  "why": "Doubt takes the subjunctive."
+ },
+ {
+  "id": "12",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think the bus comes at six.",
+  "es": "Creo que el bus llega a las seis.",
+  "gap": [
+   16,
+   21
+  ],
+  "options": [
+   "llegue",
+   "llega"
+  ],
+  "answer": 1,
+  "why": "Belief takes the normal verb."
+ },
+ {
+  "id": "13",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think there is time.",
+  "es": "No creo que haya tiempo.",
+  "gap": [
+   12,
+   16
+  ],
+  "options": [
+   "haya",
+   "hay"
+  ],
+  "answer": 0,
+  "why": "Doubt takes the subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I think there is time.",
+  "es": "Creo que hay tiempo.",
+  "gap": [
+   9,
+   12
+  ],
+  "options": [
+   "haya",
+   "hay"
+  ],
+  "answer": 1,
+  "why": "Belief takes the normal verb."
+ },
+ {
+  "id": "15",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "I don't think Hernando knows.",
+  "es": "No pienso que Hernando sepa.",
+  "gap": [
+   23,
+   27
+  ],
+  "options": [
+   "sepa",
+   "sabe"
+  ],
+  "answer": 0,
+  "why": "No pienso que is doubt, so the subjunctive."
+ }
+]

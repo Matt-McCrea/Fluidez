@@ -54,6 +54,269 @@
         "l:vez",
         "p:otro-no-article"
       ]
+    },
+    {
+      "id": "x:present-progressive#a-1",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Don't come in, I'm sleeping.",
+      "es": "No entres, estoy durmiendo.",
+      "gap": [
+        11,
+        26
+      ],
+      "options": [
+        "estoy durmiendo",
+        "duermo"
+      ],
+      "answer": 0,
+      "why": "Something happening right now takes estar and the gerund.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:negative-commands",
+        "l:dormir",
+        "l:entrar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-3",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Rosa is cooking, don't bother her.",
+      "es": "Rosa está cocinando, no la molestes.",
+      "gap": [
+        5,
+        19
+      ],
+      "options": [
+        "está cocinando",
+        "cocina"
+      ],
+      "answer": 0,
+      "why": "Something happening at this moment takes estar and the gerund.",
+      "requires": [
+        "g:direct-objects",
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:negative-commands",
+        "l:cocinar",
+        "l:estar",
+        "l:molestar"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-6",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "I can't talk, I'm driving.",
+      "es": "No puedo hablar, estoy manejando.",
+      "gap": [
+        17,
+        32
+      ],
+      "options": [
+        "manejo",
+        "estoy manejando"
+      ],
+      "answer": 1,
+      "why": "Something happening now takes estar and the gerund.",
+      "requires": [
+        "c:puedo",
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:estar",
+        "l:hablar",
+        "l:manejar",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-8",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Tomás is taking a shower.",
+      "es": "Tomás se está bañando.",
+      "gap": [
+        6,
+        21
+      ],
+      "options": [
+        "se baña",
+        "se está bañando"
+      ],
+      "answer": 1,
+      "why": "Something happening now takes estar and the gerund.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:reflexive-routine",
+        "l:bañarse",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-9",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "We're eating, call later.",
+      "es": "Estamos comiendo, llama más tarde.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Estamos comiendo",
+        "Comemos"
+      ],
+      "answer": 0,
+      "why": "Something happening now takes estar and the gerund.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:present-ar",
+        "l:comer",
+        "l:estar",
+        "l:llamar",
+        "l:tarde"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-11",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "Vale reads the news every day.",
+      "es": "Vale lee las noticias todos los días.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "lee",
+        "está leyendo"
+      ],
+      "answer": 0,
+      "why": "A daily habit takes the simple present.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:día",
+        "l:leer",
+        "l:noticias",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-13",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "Don Hernando always drinks coffee at four.",
+      "es": "Don Hernando siempre toma tinto a las cuatro.",
+      "gap": [
+        21,
+        25
+      ],
+      "options": [
+        "toma",
+        "está tomando"
+      ],
+      "answer": 0,
+      "why": "A habit takes the simple present.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:siempre",
+        "l:tinto",
+        "l:tomar",
+        "p:frequency-scale",
+        "p:senor-don-article",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-16",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "She doesn't eat meat.",
+      "es": "No come carne.",
+      "gap": [
+        3,
+        7
+      ],
+      "options": [
+        "está comiendo",
+        "come"
+      ],
+      "answer": 1,
+      "why": "A general fact takes the simple present.",
+      "requires": [
+        "g:present-er-ir",
+        "l:carne",
+        "l:comer"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-17",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "On Sundays I visit my grandmother.",
+      "es": "Los domingos visito a mi abuela.",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "visito",
+        "estoy visitando"
+      ],
+      "answer": 0,
+      "why": "A habit takes the simple present.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:abuela",
+        "l:domingo",
+        "l:visitar",
+        "p:days-el-lunes",
+        "p:personal-a",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:present-progressive#a-18",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "Simón sleeps eight hours.",
+      "es": "Simón duerme ocho horas.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "está durmiendo",
+        "duerme"
+      ],
+      "answer": 1,
+      "why": "A general fact takes the simple present.",
+      "requires": [
+        "g:stem-boot",
+        "l:dormir",
+        "l:hora"
+      ]
     }
   ]
 }

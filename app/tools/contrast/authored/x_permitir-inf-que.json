@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "I want to eat now.",
+  "es": "Quiero comer ahora.",
+  "gap": [
+   7,
+   12
+  ],
+  "options": [
+   "comer",
+   "que coma"
+  ],
+  "answer": 0,
+  "why": "Same person wants and eats: infinitive."
+ },
+ {
+  "id": "2",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "I want you to eat now.",
+  "es": "Quiero que comas ahora.",
+  "gap": [
+   11,
+   16
+  ],
+  "options": [
+   "comer",
+   "comas"
+  ],
+  "answer": 1,
+  "why": "You eat, I want: que plus subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "Rosa prefers to stay here.",
+  "es": "Rosa prefiere quedarse aquí.",
+  "gap": [
+   14,
+   22
+  ],
+  "options": [
+   "quedarse",
+   "que se quede"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "4",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "Rosa prefers that Tomás stay here.",
+  "es": "Rosa prefiere que Tomás se quede aquí.",
+  "gap": [
+   27,
+   32
+  ],
+  "options": [
+   "quedarse",
+   "quede"
+  ],
+  "answer": 1,
+  "why": "Tomás is a new subject: subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "I need to sleep more.",
+  "es": "Necesito dormir más.",
+  "gap": [
+   9,
+   15
+  ],
+  "options": [
+   "dormir",
+   "que duerma"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "6",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "I need you to sleep more.",
+  "es": "Necesito que duermas más.",
+  "gap": [
+   13,
+   20
+  ],
+  "options": [
+   "dormir",
+   "duermas"
+  ],
+  "answer": 1,
+  "why": "You are a new subject: subjunctive."
+ },
+ {
+  "id": "7",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "Vale wants to leave early.",
+  "es": "Vale quiere salir temprano.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "salir",
+   "que salga"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "8",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "Vale wants us to leave early.",
+  "es": "Vale quiere que salgamos temprano.",
+  "gap": [
+   16,
+   24
+  ],
+  "options": [
+   "salir",
+   "salgamos"
+  ],
+  "answer": 1,
+  "why": "We are a new subject: subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "Don Hernando wants to rest for a while.",
+  "es": "Don Hernando quiere descansar un rato.",
+  "gap": [
+   20,
+   29
+  ],
+  "options": [
+   "descansar",
+   "que descanse"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "10",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "Don Hernando wants his son to rest for a while.",
+  "es": "Don Hernando quiere que su hijo descanse un rato.",
+  "gap": [
+   32,
+   40
+  ],
+  "options": [
+   "descansar",
+   "descanse"
+  ],
+  "answer": 1,
+  "why": "His son is new: subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "I prefer to pay now.",
+  "es": "Prefiero pagar ahora.",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "pagar",
+   "que pague"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "I prefer that you pay now.",
+  "es": "Prefiero que pagues ahora.",
+  "gap": [
+   13,
+   19
+  ],
+  "options": [
+   "pagar",
+   "pagues"
+  ],
+  "answer": 1,
+  "why": "You are a new subject: subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "Tomás needs to call Rosa.",
+  "es": "Tomás necesita llamar a Rosa.",
+  "gap": [
+   15,
+   21
+  ],
+  "options": [
+   "llamar",
+   "que llame"
+  ],
+  "answer": 0,
+  "why": "Same person: infinitive."
+ },
+ {
+  "id": "14",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "Tomás needs Vale to call Rosa.",
+  "es": "Tomás necesita que Vale llame a Rosa.",
+  "gap": [
+   24,
+   29
+  ],
+  "options": [
+   "llamar",
+   "llame"
+  ],
+  "answer": 1,
+  "why": "Vale is a new subject: subjunctive."
+ },
+ {
+  "id": "15",
+  "side": "p:permitir-inf",
+  "rung": 1,
+  "en": "We want to go home.",
+  "es": "Queremos ir a la casa.",
+  "gap": [
+   9,
+   11
+  ],
+  "options": [
+   "ir",
+   "que vayamos"
+  ],
+  "answer": 0,
+  "why": "Same people: infinitive."
+ },
+ {
+  "id": "16",
+  "side": "g:subj-influence",
+  "rung": 1,
+  "en": "We want them to go home.",
+  "es": "Queremos que ellos vayan a la casa.",
+  "gap": [
+   19,
+   24
+  ],
+  "options": [
+   "ir",
+   "vayan"
+  ],
+  "answer": 1,
+  "why": "They are a new subject: subjunctive."
+ }
+]

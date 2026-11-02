@@ -1,138 +1,155 @@
 [
-  {
-    "id": "1",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "After years of study, Rosa became a doctor.",
-    "es": "Después de años de estudio, Rosa se hizo doctora.",
-    "gap": [
-      33,
-      40
-    ],
-    "options": [
-      "se puso",
-      "se hizo"
-    ],
-    "answer": 1,
-    "why": "A chosen profession is hacerse."
-  },
-  {
-    "id": "2",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "Tomás got nervous when he saw the inspector.",
-    "es": "Tomás se puso nervioso al ver al inspector.",
-    "gap": [
-      6,
-      13
-    ],
-    "options": [
-      "se puso",
-      "se hizo"
-    ],
-    "answer": 0,
-    "why": "A passing reaction is ponerse."
-  },
-  {
-    "id": "4",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "She worked so hard that she ended up as the director.",
-    "es": "Trabajó tanto que llegó a ser la directora.",
-    "gap": [
-      18,
-      29
-    ],
-    "options": [
-      "llegó a ser",
-      "se puso"
-    ],
-    "answer": 0,
-    "why": "Reaching a high position after effort is llegar a ser."
-  },
-  {
-    "id": "5",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "Vale blushed when everyone looked at her.",
-    "es": "Vale se puso roja cuando todos la miraron.",
-    "gap": [
-      5,
-      12
-    ],
-    "options": [
-      "llegó a ser",
-      "se puso"
-    ],
-    "answer": 1,
-    "why": "A sudden state is ponerse."
-  },
-  {
-    "id": "6",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "Mariana became a famous reporter.",
-    "es": "Mariana llegó a ser una periodista famosa.",
-    "gap": [
-      8,
-      19
-    ],
-    "options": [
-      "llegó a ser",
-      "se puso"
-    ],
-    "answer": 0,
-    "why": "Reaching fame is llegar a ser."
-  },
-  {
-    "id": "7",
-    "side": "g:verbs-of-change",
-    "rung": 2,
-    "en": "My brother became very quiet after the divorce.",
-    "es": "Mi hermano se volvió muy callado después del divorcio.",
-    "gap": [
-      11,
-      20
-    ],
-    "options": [
-      "se hizo",
-      "se volvió"
-    ],
-    "answer": 1,
-    "why": "A lasting change brought by events is volverse."
-  },
-  {
-    "id": "8",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "Don Hernando became a taxi driver at twenty.",
-    "es": "Don Hernando se hizo taxista a los veinte años.",
-    "gap": [
-      13,
-      20
-    ],
-    "options": [
-      "se hizo",
-      "se puso"
-    ],
-    "answer": 0,
-    "why": "A job you take on is hacerse."
-  },
-  {
-    "id": "9",
-    "side": "g:verbs-of-change",
-    "rung": 1,
-    "en": "The soup went cold while we talked.",
-    "es": "La sopa se puso fría mientras hablábamos.",
-    "gap": [
-      8,
-      15
-    ],
-    "options": [
-      "se hizo",
-      "se puso"
-    ],
-    "answer": 1,
-    "why": "A temporary state is ponerse."
-  }
+ {
+  "id": "1",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "After years of study, Rosa became a doctor.",
+  "es": "Después de años de estudio, Rosa se hizo doctora.",
+  "gap": [
+   33,
+   40
+  ],
+  "options": [
+   "se puso",
+   "se hizo"
+  ],
+  "answer": 1,
+  "why": "A chosen profession is hacerse."
+ },
+ {
+  "id": "2",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "Tomás got nervous when he saw the inspector.",
+  "es": "Tomás se puso nervioso al ver al inspector.",
+  "gap": [
+   6,
+   13
+  ],
+  "options": [
+   "se puso",
+   "se hizo"
+  ],
+  "answer": 0,
+  "why": "A passing reaction is ponerse."
+ },
+ {
+  "id": "3",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "After the accident, he became very bitter.",
+  "es": "Después del accidente, se volvió muy amargo.",
+  "gap": [
+   23,
+   32
+  ],
+  "options": [
+   "se hizo",
+   "se volvió"
+  ],
+  "answer": 1,
+  "why": "A lasting change in character is volverse."
+ },
+ {
+  "id": "4",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "She worked so hard that she ended up as the director.",
+  "es": "Trabajó tanto que llegó a ser la directora.",
+  "gap": [
+   18,
+   29
+  ],
+  "options": [
+   "llegó a ser",
+   "se puso"
+  ],
+  "answer": 0,
+  "why": "Reaching a high position after effort is llegar a ser."
+ },
+ {
+  "id": "5",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "Vale blushed when everyone looked at her.",
+  "es": "Vale se puso roja cuando todos la miraron.",
+  "gap": [
+   5,
+   12
+  ],
+  "options": [
+   "llegó a ser",
+   "se puso"
+  ],
+  "answer": 1,
+  "why": "A sudden state is ponerse."
+ },
+ {
+  "id": "6",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "Mariana became a famous reporter.",
+  "es": "Mariana llegó a ser una periodista famosa.",
+  "gap": [
+   8,
+   19
+  ],
+  "options": [
+   "llegó a ser",
+   "se puso"
+  ],
+  "answer": 0,
+  "why": "Reaching fame is llegar a ser."
+ },
+ {
+  "id": "7",
+  "side": "g:verbs-of-change",
+  "rung": 2,
+  "en": "My brother became very quiet after the divorce.",
+  "es": "Mi hermano se volvió muy callado después del divorcio.",
+  "gap": [
+   11,
+   20
+  ],
+  "options": [
+   "se hizo",
+   "se volvió"
+  ],
+  "answer": 1,
+  "why": "A lasting change brought by events is volverse."
+ },
+ {
+  "id": "8",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "Don Hernando became a taxi driver at twenty.",
+  "es": "Don Hernando se hizo taxista a los veinte años.",
+  "gap": [
+   13,
+   20
+  ],
+  "options": [
+   "se hizo",
+   "se puso"
+  ],
+  "answer": 0,
+  "why": "A job you take on is hacerse."
+ },
+ {
+  "id": "9",
+  "side": "g:verbs-of-change",
+  "rung": 1,
+  "en": "The soup went cold while we talked.",
+  "es": "La sopa se puso fría mientras hablábamos.",
+  "gap": [
+   8,
+   15
+  ],
+  "options": [
+   "se hizo",
+   "se puso"
+  ],
+  "answer": 1,
+  "why": "A temporary state is ponerse."
+ }
 ]

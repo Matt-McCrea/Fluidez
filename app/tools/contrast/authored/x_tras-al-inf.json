@@ -1,0 +1,19 @@
+[
+ {
+  "id": "2",
+  "side": "g:prep-infinitive",
+  "rung": 1,
+  "en": "As she left the bank, she ran into Simón.",
+  "es": "Al salir del banco, se encontró con Simón.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Al",
+   "Tras"
+  ],
+  "answer": 0,
+  "why": "Al means at that very moment, as it happened."
+ }
+]

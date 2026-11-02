@@ -28,6 +28,30 @@
       ]
     },
     {
+      "id": "x:imperfecto-tres-usos#yt0",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-sorpresa",
+      "rung": 2,
+      "en": "Weren't you working today? (to a friend)",
+      "es": "¿Tú no trabajabas hoy?",
+      "gap": [
+        7,
+        17
+      ],
+      "options": [
+        "trabajas",
+        "trabajabas"
+      ],
+      "answer": 1,
+      "why": "The imperfect shows you expected something else.",
+      "requires": [
+        "g:imperfect-habitual",
+        "l:hoy",
+        "l:trabajar",
+        "p:imperfecto-sorpresa"
+      ]
+    },
+    {
       "id": "x:imperfecto-tres-usos#yt1",
       "node": "x:imperfecto-tres-usos",
       "side": "p:imperfecto-cortesia-venia",
@@ -57,6 +81,36 @@
         "p:para-inf",
         "p:preguntar-pedir",
         "p:queria-cortesia"
+      ]
+    },
+    {
+      "id": "x:imperfecto-tres-usos#p.imperfecto-cortesia-venia.pf0",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-cortesia-venia",
+      "rung": 1,
+      "en": "I was wondering if someone could see me.",
+      "es": "Venía a ver si me podían atender.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Vine",
+        "Venía"
+      ],
+      "answer": 1,
+      "why": "Almost. Vine says you came and that is over; the polite ask needs venía, which keeps the request open.",
+      "requires": [
+        "c:a-ver",
+        "g:imperfect-habitual",
+        "g:indirect-questions",
+        "g:verb-infinitive",
+        "l:atender",
+        "l:poder",
+        "l:venir",
+        "l:ver",
+        "p:imperfecto-cortesia-venia",
+        "p:me-te-nos-objects"
       ]
     },
     {

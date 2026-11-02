@@ -1,138 +1,138 @@
 [
-  {
-    "id": "1",
-    "side": "p:a-mi-modo-de-ver",
-    "rung": 1,
-    "en": "The way I see it, the bus is faster.",
-    "es": "A mi modo de ver, el bus es más rápido.",
-    "gap": [
-      0,
-      16
-    ],
-    "options": [
-      "A mi modo de ver",
-      "Yo diría que"
-    ],
-    "answer": 0,
-    "why": "You are stating a firm position, so a mi modo de ver."
-  },
-  {
-    "id": "2",
-    "side": "p:yo-diria-que",
-    "rung": 1,
-    "en": "I'd say the bus is faster.",
-    "es": "Yo diría que el bus es más rápido.",
-    "gap": [
-      0,
-      12
-    ],
-    "options": [
-      "A mi modo de ver",
-      "Yo diría que"
-    ],
-    "answer": 1,
-    "why": "You are floating a view gently, so yo diría que."
-  },
-  {
-    "id": "3",
-    "side": "p:yo-diria-que",
-    "rung": 1,
-    "en": "I'd say Rosa is about forty.",
-    "es": "Yo diría que Rosa tiene unos cuarenta años.",
-    "gap": [
-      0,
-      12
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 0,
-    "why": "A rough guess is tentative, so yo diría que."
-  },
-  {
-    "id": "4",
-    "side": "p:a-mi-modo-de-ver",
-    "rung": 1,
-    "en": "The way I see it, Don Hernando should keep the shop.",
-    "es": "A mi modo de ver, Don Hernando debe quedarse con la tienda.",
-    "gap": [
-      0,
-      16
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 1,
-    "why": "This is a firm position you would defend, so a mi modo de ver."
-  },
-  {
-    "id": "5",
-    "side": "p:yo-diria-que",
-    "rung": 1,
-    "en": "I'd say it is going to rain.",
-    "es": "Yo diría que va a llover.",
-    "gap": [
-      0,
-      12
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 0,
-    "why": "A soft prediction leaves room to disagree, so yo diría que."
-  },
-  {
-    "id": "6",
-    "side": "p:a-mi-modo-de-ver",
-    "rung": 1,
-    "en": "The way I see it, the price is unfair.",
-    "es": "A mi modo de ver, el precio es injusto.",
-    "gap": [
-      0,
-      16
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 1,
-    "why": "A firm judgment takes a mi modo de ver."
-  },
-  {
-    "id": "7",
-    "side": "p:yo-diria-que",
-    "rung": 1,
-    "en": "I'd say Tomás is tired.",
-    "es": "Yo diría que Tomás está cansado.",
-    "gap": [
-      0,
-      12
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 0,
-    "why": "You are only guessing, so yo diría que."
-  },
-  {
-    "id": "8",
-    "side": "p:a-mi-modo-de-ver",
-    "rung": 1,
-    "en": "The way I see it, Vale is right.",
-    "es": "A mi modo de ver, Vale tiene razón.",
-    "gap": [
-      0,
-      16
-    ],
-    "options": [
-      "Yo diría que",
-      "A mi modo de ver"
-    ],
-    "answer": 1,
-    "why": "You are taking a side firmly, so a mi modo de ver."
-  }
+ {
+  "id": "1",
+  "side": "p:a-mi-modo-de-ver",
+  "rung": 1,
+  "en": "The way I see it, the bus is faster.",
+  "es": "A mi modo de ver, el bus es más rápido.",
+  "gap": [
+   0,
+   16
+  ],
+  "options": [
+   "A mi modo de ver",
+   "Yo diría que"
+  ],
+  "answer": 0,
+  "why": "You are stating a firm position, so a mi modo de ver."
+ },
+ {
+  "id": "2",
+  "side": "p:yo-diria-que",
+  "rung": 1,
+  "en": "I'd say the bus is faster.",
+  "es": "Yo diría que el bus es más rápido.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "A mi modo de ver",
+   "Yo diría que"
+  ],
+  "answer": 1,
+  "why": "You are floating a view gently, so yo diría que."
+ },
+ {
+  "id": "3",
+  "side": "p:yo-diria-que",
+  "rung": 1,
+  "en": "I'd say Rosa is about forty.",
+  "es": "Yo diría que Rosa tiene unos cuarenta años.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 0,
+  "why": "A rough guess is tentative, so yo diría que."
+ },
+ {
+  "id": "4",
+  "side": "p:a-mi-modo-de-ver",
+  "rung": 1,
+  "en": "The way I see it, Don Hernando should keep the shop.",
+  "es": "A mi modo de ver, Don Hernando debe quedarse con la tienda.",
+  "gap": [
+   0,
+   16
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 1,
+  "why": "This is a firm position you would defend, so a mi modo de ver."
+ },
+ {
+  "id": "5",
+  "side": "p:yo-diria-que",
+  "rung": 1,
+  "en": "I'd say it is going to rain.",
+  "es": "Yo diría que va a llover.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 0,
+  "why": "A soft prediction leaves room to disagree, so yo diría que."
+ },
+ {
+  "id": "6",
+  "side": "p:a-mi-modo-de-ver",
+  "rung": 1,
+  "en": "The way I see it, the price is unfair.",
+  "es": "A mi modo de ver, el precio es injusto.",
+  "gap": [
+   0,
+   16
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 1,
+  "why": "A firm judgment takes a mi modo de ver."
+ },
+ {
+  "id": "7",
+  "side": "p:yo-diria-que",
+  "rung": 1,
+  "en": "I'd say Tomás is tired.",
+  "es": "Yo diría que Tomás está cansado.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 0,
+  "why": "You are only guessing, so yo diría que."
+ },
+ {
+  "id": "8",
+  "side": "p:a-mi-modo-de-ver",
+  "rung": 1,
+  "en": "The way I see it, Vale is right.",
+  "es": "A mi modo de ver, Vale tiene razón.",
+  "gap": [
+   0,
+   16
+  ],
+  "options": [
+   "Yo diría que",
+   "A mi modo de ver"
+  ],
+  "answer": 1,
+  "why": "You are taking a side firmly, so a mi modo de ver."
+ }
 ]

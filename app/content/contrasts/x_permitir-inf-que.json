@@ -104,6 +104,428 @@
         "l:recomendar",
         "p:permitir-inf"
       ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-1",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I want to eat now.",
+      "es": "Quiero comer ahora.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "comer",
+        "que coma"
+      ],
+      "answer": 0,
+      "why": "Same person wants and eats: infinitive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:ahora",
+        "l:comer",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-2",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "I want you to eat now.",
+      "es": "Quiero que comas ahora.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "comer",
+        "comas"
+      ],
+      "answer": 1,
+      "why": "You eat, I want: que plus subjunctive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ahora",
+        "l:comer",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-3",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "Rosa prefers to stay here.",
+      "es": "Rosa prefiere quedarse aquí.",
+      "gap": [
+        14,
+        22
+      ],
+      "options": [
+        "quedarse",
+        "que se quede"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:aquí",
+        "l:preferir",
+        "l:quedarse",
+        "p:aqui-ahi-alla",
+        "p:prefieres-x-o-y"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-4",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "Rosa prefers that Tomás stay here.",
+      "es": "Rosa prefiere que Tomás se quede aquí.",
+      "gap": [
+        27,
+        32
+      ],
+      "options": [
+        "quedarse",
+        "quede"
+      ],
+      "answer": 1,
+      "why": "Tomás is a new subject: subjunctive.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:aquí",
+        "l:preferir",
+        "l:quedarse",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-5",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I need to sleep more.",
+      "es": "Necesito dormir más.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "dormir",
+        "que duerma"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:dormir",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-6",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "I need you to sleep more.",
+      "es": "Necesito que duermas más.",
+      "gap": [
+        13,
+        20
+      ],
+      "options": [
+        "dormir",
+        "duermas"
+      ],
+      "answer": 1,
+      "why": "You are a new subject: subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dormir",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-7",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "Vale wants to leave early.",
+      "es": "Vale quiere salir temprano.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "salir",
+        "que salga"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:salir",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-8",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "Vale wants us to leave early.",
+      "es": "Vale quiere que salgamos temprano.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "salir",
+        "salgamos"
+      ],
+      "answer": 1,
+      "why": "We are a new subject: subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:querer",
+        "l:salir",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-9",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "Don Hernando wants to rest for a while.",
+      "es": "Don Hernando quiere descansar un rato.",
+      "gap": [
+        20,
+        29
+      ],
+      "options": [
+        "descansar",
+        "que descanse"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:descansar",
+        "l:querer",
+        "l:rato",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-10",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "Don Hernando wants his son to rest for a while.",
+      "es": "Don Hernando quiere que su hijo descanse un rato.",
+      "gap": [
+        32,
+        40
+      ],
+      "options": [
+        "descansar",
+        "descanse"
+      ],
+      "answer": 1,
+      "why": "His son is new: subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:descansar",
+        "l:hijo",
+        "l:querer",
+        "l:rato",
+        "p:possessives-basic",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-11",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I prefer to pay now.",
+      "es": "Prefiero pagar ahora.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "pagar",
+        "que pague"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:stem-boot",
+        "l:ahora",
+        "l:pagar",
+        "l:preferir",
+        "p:prefieres-x-o-y"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-12",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "I prefer that you pay now.",
+      "es": "Prefiero que pagues ahora.",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "pagar",
+        "pagues"
+      ],
+      "answer": 1,
+      "why": "You are a new subject: subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ahora",
+        "l:pagar",
+        "l:preferir",
+        "p:preferir-a"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-13",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "Tomás needs to call Rosa.",
+      "es": "Tomás necesita llamar a Rosa.",
+      "gap": [
+        15,
+        21
+      ],
+      "options": [
+        "llamar",
+        "que llame"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:llamar",
+        "l:necesitar",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-14",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "Tomás needs Vale to call Rosa.",
+      "es": "Tomás necesita que Vale llame a Rosa.",
+      "gap": [
+        24,
+        29
+      ],
+      "options": [
+        "llamar",
+        "llame"
+      ],
+      "answer": 1,
+      "why": "Vale is a new subject: subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:llamar",
+        "l:necesitar",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-15",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "We want to go home.",
+      "es": "Queremos ir a la casa.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "ir",
+        "que vayamos"
+      ],
+      "answer": 0,
+      "why": "Same people: infinitive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:verb-infinitive",
+        "l:casa",
+        "l:ir",
+        "l:querer",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#a-16",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "We want them to go home.",
+      "es": "Queremos que ellos vayan a la casa.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "ir",
+        "vayan"
+      ],
+      "answer": 1,
+      "why": "They are a new subject: subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:subj-irregulars",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:casa",
+        "l:ir",
+        "l:querer",
+        "p:ir-a-venir-de-place"
+      ]
     }
   ]
 }

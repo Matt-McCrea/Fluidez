@@ -88,9 +88,8 @@ describe('Train it on a contrast the learner has reached', () => {
     expect(new Set(await shape('x:perdon-lo-siento'))).toEqual(new Set(['type']));
   }, 120_000);
 
-  it('a near-synonym with no items of its own is typed throughout too: it is the file that says so, and every contrast has one', async () => {
+  it('a near-synonym is typed throughout, what fills the run included: it is the file that says so, and every contrast has one', async () => {
     for (const x of ['x:molesta-vs-no-soporto', 'x:orden-escalera']) {
-      expect(bundle.contrastItems(x), x).toHaveLength(0);
       expect(bundle.contrasts.get(x)?.decides, x).toBe('synonym');
       const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
       expect(cards.length, x).toBe(CONTRAST_RUN);
@@ -103,7 +102,7 @@ describe('Train it on a contrast the learner has reached', () => {
     const learner = await learnerAt(unitOf(x) + 1);
     const items = bundle.contrastItems(x).map((i) => i.id);
     const asked: string[] = [];
-    for (let r = 0; r < 4; r++) for (const c of play(run(learner, [x], `run${r}`))) { const id = items.find((i) => c.key.includes(i)); if (id) asked.push(id); }
+    for (let r = 0; r < 4; r++) for (const c of play(run(learner, [x], `run${r}`))) { const id = items.find((i) => c.key.endsWith(i)); if (id) asked.push(id); }
     // no item is asked a second time while there are others left to ask (those the learner can be shown: the rest wait for their words)
     const pool = new Set(asked).size;
     const once = new Set<string>();
@@ -128,7 +127,7 @@ describe('Train it on a contrast the learner has reached', () => {
   }, 120_000);
 
   it('tops the run up from the contrast\'s script where its items run short, so a contrast with a few items still has a run', async () => {
-    const x = 'x:perdon-lo-siento';
+    const x = 'x:pret-perfecto-latam';
     expect(bundle.contrastItems(x).length).toBeLessThan(CONTRAST_RUN);
     const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
     expect(cards.length).toBe(CONTRAST_RUN);
@@ -160,7 +159,7 @@ describe('Train it on a contrast the learner has not reached', () => {
     for (const x of contrasts()) {
       const fp = run(learner, [x]);
       expect(fp.next(), x).toBeUndefined();
-      const week = Number(fp.emptyReason?.match(/week (\d+)/)?.[1] ?? 0);
+      const week = Number(fp.emptyReason?.match(/unit (\d+)/)?.[1] ?? 0);
       expect(fp.emptyReason, x).not.toMatch(/165/);
       expect(week, `${x}: ${fp.emptyReason}`).toBeGreaterThanOrEqual(1);
       expect(week, `${x}: ${fp.emptyReason}`).toBeLessThanOrEqual(bundle.course.units.length);
@@ -191,7 +190,7 @@ describe('Train it on a contrast the learner has not reached', () => {
     const fp = run(learner, [x], 'x', b);
     expect(fp.next()).toBeUndefined();
     expect(fp.emptyReason).toBeTruthy();
-    expect(fp.emptyReason).not.toMatch(/week/);
+    expect(fp.emptyReason).not.toMatch(/unit/);
     expect(fp.emptyReason).not.toMatch(/comes|come/);
   }, 120_000);
 });

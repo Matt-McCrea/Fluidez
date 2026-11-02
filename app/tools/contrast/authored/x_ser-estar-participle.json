@@ -1,0 +1,70 @@
+[
+ {
+  "id": "3",
+  "side": "g:passive-ser",
+  "rung": 1,
+  "en": "The cakes were made by Hernando.",
+  "es": "Los pasteles fueron hechos por Hernando.",
+  "gap": [
+   13,
+   19
+  ],
+  "options": [
+   "fueron",
+   "estaban"
+  ],
+  "answer": 0,
+  "why": "Someone did it at a moment, so ser."
+ },
+ {
+  "id": "5",
+  "side": "g:estar-participle",
+  "rung": 1,
+  "en": "The store was closed when I arrived.",
+  "es": "La tienda estaba cerrada cuando llegué.",
+  "gap": [
+   10,
+   16
+  ],
+  "options": [
+   "estaba",
+   "fue"
+  ],
+  "answer": 0,
+  "why": "It is how things were at that moment, so estar."
+ },
+ {
+  "id": "7",
+  "side": "g:estar-participle",
+  "rung": 1,
+  "en": "The doors are open.",
+  "es": "Las puertas están abiertas.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "están",
+   "son"
+  ],
+  "answer": 0,
+  "why": "It is how things are now, so estar."
+ },
+ {
+  "id": "14",
+  "side": "g:passive-ser",
+  "rung": 1,
+  "en": "The movie was seen by millions of people.",
+  "es": "La película fue vista por millones de personas.",
+  "gap": [
+   12,
+   15
+  ],
+  "options": [
+   "estaba",
+   "fue"
+  ],
+  "answer": 1,
+  "why": "Someone did it at a moment, so ser."
+ }
+]

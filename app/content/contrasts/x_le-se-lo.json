@@ -344,6 +344,56 @@
       ]
     },
     {
+      "id": "x:le-se-lo#a-1",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I gave it to her yesterday. (the coffee)",
+      "es": "Ayer se lo di.",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "se",
+        "le"
+      ],
+      "answer": 0,
+      "why": "Le turns into se before lo.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:double-pronouns",
+        "g:preterite-irregular-strong",
+        "l:ayer",
+        "l:dar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#a-2",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I gave her the coffee.",
+      "es": "Le di el café.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 1,
+      "why": "Without lo or la it stays le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "l:café",
+        "l:dar"
+      ]
+    },
+    {
       "id": "x:le-se-lo#a-3",
       "node": "x:le-se-lo",
       "side": "g:double-pronouns",
@@ -365,6 +415,28 @@
         "g:preterite-irregular-strong",
         "g:reflexive-routine",
         "l:darse"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#a-5",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I brought it to him. (the bill)",
+      "es": "Se la traje.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "Le before la becomes se.",
+      "requires": [
+        "g:gender-articles",
+        "l:traje"
       ]
     },
     {

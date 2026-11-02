@@ -201,6 +201,316 @@
       ]
     },
     {
+      "id": "x:pret-imp#a-t1",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "When I was a kid, I played in the street every afternoon.",
+      "es": "Cuando era niño, jugaba en la calle todas las tardes.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "jugaba",
+        "jugué"
+      ],
+      "answer": 0,
+      "why": "Every afternoon is a habit.",
+      "requires": [
+        "c:cuando-era-nino",
+        "c:era",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "l:calle",
+        "l:jugar",
+        "l:niño",
+        "l:ser",
+        "l:tarde",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t3",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "It was raining when we left.",
+      "es": "Llovía cuando salimos.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Llovía",
+        "Llovió"
+      ],
+      "answer": 0,
+      "why": "Rain is the background scene.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:present-er-ir",
+        "l:llover",
+        "l:salir",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t7",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Tomás opened the door and saw a parrot.",
+      "es": "Tomás abrió la puerta y vio un loro.",
+      "gap": [
+        6,
+        11
+      ],
+      "options": [
+        "abría",
+        "abrió"
+      ],
+      "answer": 1,
+      "why": "One action after another.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:abrir",
+        "l:loro",
+        "l:puerta",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t9",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Last night Vale called me twice.",
+      "es": "Anoche Vale me llamó dos veces.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "llamaba",
+        "llamó"
+      ],
+      "answer": 1,
+      "why": "Two calls is a counted event.",
+      "requires": [
+        "c:ayer-anoche",
+        "c:me-llamo",
+        "g:preterite-ar",
+        "l:anoche",
+        "l:llamar",
+        "l:vez"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t10",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Vale was tired, so she went to bed early.",
+      "es": "Vale estaba cansada, así que se acostó temprano.",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "estaba",
+        "estuvo"
+      ],
+      "answer": 0,
+      "why": "Tired is the state behind the action.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:cause-result",
+        "g:estar-location-states",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:acostarse",
+        "l:cansado",
+        "l:estar",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t11",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Vale was at the hospital for three days.",
+      "es": "Vale estuvo tres días en el hospital.",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "estaba",
+        "estuvo"
+      ],
+      "answer": 1,
+      "why": "Three days is a closed stretch.",
+      "requires": [
+        "c:estuvo",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "l:día",
+        "l:estar",
+        "l:hospital"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t13",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "We lived in Medellín for five years, and then we moved.",
+      "es": "Vivimos cinco años en Medellín y luego nos mudamos.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Vivíamos",
+        "Vivimos"
+      ],
+      "answer": 1,
+      "why": "Five years then a move, a closed period.",
+      "requires": [
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:reflexive-routine",
+        "l:año",
+        "l:mudarse",
+        "l:vivir",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t15",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "At six the bus arrived and everyone got on.",
+      "es": "A las seis llegó el bus y todos subieron.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "llegaba",
+        "llegó"
+      ],
+      "answer": 1,
+      "why": "One event in the story.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "l:bus",
+        "l:llegar",
+        "l:subir",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-t16",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "The bus arrived at six every day.",
+      "es": "El bus llegaba a las seis todos los días.",
+      "gap": [
+        7,
+        14
+      ],
+      "options": [
+        "llegaba",
+        "llegó"
+      ],
+      "answer": 0,
+      "why": "Every day is a habit.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:bus",
+        "l:día",
+        "l:llegar",
+        "p:telling-time",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-1",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "When I was little, my grandmother made arepas every Sunday.",
+      "es": "Cuando yo era chiquito, mi abuela hacía arepas todos los domingos.",
+      "gap": [
+        34,
+        39
+      ],
+      "options": [
+        "hizo",
+        "hacía"
+      ],
+      "answer": 1,
+      "why": "Every Sunday means a habit, not one event.",
+      "requires": [
+        "c:era",
+        "g:diminutives",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "l:abuela",
+        "l:arepa",
+        "l:domingo",
+        "l:hacer",
+        "l:ser",
+        "p:cuando-basic",
+        "p:days-el-lunes",
+        "p:possessives-basic",
+        "p:todos-los-dias"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-2",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Yesterday Tomás made the coffee for the whole café.",
+      "es": "Ayer Tomás hizo el café para todo el local.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "hizo",
+        "hacía"
+      ],
+      "answer": 0,
+      "why": "One finished job yesterday.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:ayer",
+        "l:café",
+        "l:hacer",
+        "l:local",
+        "p:para-inf"
+      ]
+    },
+    {
       "id": "x:pret-imp#a-3",
       "node": "x:pret-imp",
       "side": "g:imperfect-habitual",
@@ -255,6 +565,96 @@
         "p:days-el-lunes",
         "p:ir-a-venir-de-place",
         "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-6",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Rosa had a lot of work, so she stayed until ten.",
+      "es": "Rosa tenía mucho trabajo, así que se quedó hasta las diez.",
+      "gap": [
+        37,
+        42
+      ],
+      "options": [
+        "quedó",
+        "quedaba"
+      ],
+      "answer": 0,
+      "why": "Staying until ten is one finished event.",
+      "requires": [
+        "g:cause-result",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:quedarse",
+        "l:tener",
+        "l:trabajo",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-7",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "When we were kids, we always had lunch at my aunt's house.",
+      "es": "Cuando éramos niños, siempre almorzábamos en la casa de mi tía.",
+      "gap": [
+        29,
+        41
+      ],
+      "options": [
+        "almorzamos",
+        "almorzábamos"
+      ],
+      "answer": 1,
+      "why": "Always means a habit.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "g:ser-identity",
+        "l:almorzar",
+        "l:casa",
+        "l:niño",
+        "l:ser",
+        "l:siempre",
+        "l:tía",
+        "p:cuando-basic",
+        "p:frequency-scale",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-8",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Tomás came in, saw Vale and said hello.",
+      "es": "Tomás entró, vio a Vale y la saludó.",
+      "gap": [
+        29,
+        35
+      ],
+      "options": [
+        "saludó",
+        "saludaba"
+      ],
+      "answer": 0,
+      "why": "A chain of finished events, one after another.",
+      "requires": [
+        "g:direct-objects",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "l:entrar",
+        "l:saludar",
+        "l:ver",
+        "p:personal-a"
       ]
     },
     {
@@ -319,6 +719,61 @@
       ]
     },
     {
+      "id": "x:pret-imp#a-11",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Rosa was cleaning the tables when the phone rang.",
+      "es": "Rosa limpiaba las mesas cuando sonó el teléfono.",
+      "gap": [
+        5,
+        13
+      ],
+      "options": [
+        "limpió",
+        "limpiaba"
+      ],
+      "answer": 1,
+      "why": "The cleaning was in progress when the phone rang.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "l:limpiar",
+        "l:mesa",
+        "l:sonar",
+        "l:teléfono",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-12",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "The phone rang and Rosa answered right away.",
+      "es": "Sonó el teléfono y Rosa contestó enseguida.",
+      "gap": [
+        24,
+        32
+      ],
+      "options": [
+        "contestó",
+        "contestaba"
+      ],
+      "answer": 0,
+      "why": "Answering is a new event after the ring.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:contestar",
+        "l:enseguida",
+        "l:sonar",
+        "l:teléfono"
+      ]
+    },
+    {
       "id": "x:pret-imp#a-13",
       "node": "x:pret-imp",
       "side": "g:imperfect-habitual",
@@ -379,6 +834,246 @@
       ]
     },
     {
+      "id": "x:pret-imp#a-15",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 2,
+      "en": "I didn't know what to do and I kept looking at the door.",
+      "es": "No sabía qué hacer y miraba la puerta.",
+      "gap": [
+        21,
+        27
+      ],
+      "options": [
+        "miré",
+        "miraba"
+      ],
+      "answer": 1,
+      "why": "Both are the state of mind at that moment, not finished events.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:indirect-questions",
+        "l:hacer",
+        "l:mirar",
+        "l:puerta",
+        "l:qué",
+        "l:saber",
+        "p:no-se-que-hacer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-16",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 2,
+      "en": "Suddenly I realized what to do, and I called Tomás.",
+      "es": "De repente supe qué hacer y llamé a Tomás.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "supe",
+        "sabía"
+      ],
+      "answer": 0,
+      "why": "Suddenly marks the moment I found out.",
+      "requires": [
+        "c:de-repente",
+        "g:indirect-questions",
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "l:hacer",
+        "l:llamar",
+        "l:qué",
+        "l:repente",
+        "l:saber",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-17",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Every morning Don Hernando read the newspaper before opening.",
+      "es": "Cada mañana Don Hernando leía el periódico antes de abrir.",
+      "gap": [
+        25,
+        29
+      ],
+      "options": [
+        "leyó",
+        "leía"
+      ],
+      "answer": 1,
+      "why": "Every morning is a habit.",
+      "requires": [
+        "g:cada-cualquier",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:prep-infinitive",
+        "l:abrir",
+        "l:antes",
+        "l:leer",
+        "l:mañana",
+        "l:periódico",
+        "p:senor-don-article",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-18",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "This morning Don Hernando read the whole newspaper in ten minutes.",
+      "es": "Esta mañana Don Hernando leyó todo el periódico en diez minutos.",
+      "gap": [
+        25,
+        29
+      ],
+      "options": [
+        "leyó",
+        "leía"
+      ],
+      "answer": 0,
+      "why": "One finished reading, with a time given.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-spelling-stem",
+        "l:leer",
+        "l:mañana",
+        "l:minuto",
+        "l:periódico",
+        "p:demonstratives-basic",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-19",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Tomás was tired and he was walking slowly.",
+      "es": "Tomás estaba cansado y caminaba despacio.",
+      "gap": [
+        23,
+        31
+      ],
+      "options": [
+        "caminó",
+        "caminaba"
+      ],
+      "answer": 1,
+      "why": "Walking slowly is the scene, not an event.",
+      "requires": [
+        "g:estar-location-states",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "l:caminar",
+        "l:cansado",
+        "l:despacio",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-20",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Tomás was so tired that he fell asleep on the bus.",
+      "es": "Tomás estaba tan cansado que se durmió en el bus.",
+      "gap": [
+        32,
+        38
+      ],
+      "options": [
+        "durmió",
+        "dormía"
+      ],
+      "answer": 0,
+      "why": "Falling asleep is one event.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-spelling-stem",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:bus",
+        "l:cansado",
+        "l:dormirse",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-21",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "When Rosa was young, she sang at every party.",
+      "es": "Cuando Rosa era joven, cantaba en todas las fiestas.",
+      "gap": [
+        23,
+        30
+      ],
+      "options": [
+        "cantó",
+        "cantaba"
+      ],
+      "answer": 1,
+      "why": "Every party means it used to happen.",
+      "requires": [
+        "c:era",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "g:ser-identity",
+        "l:cantar",
+        "l:fiesta",
+        "l:joven",
+        "l:ser",
+        "p:cuando-basic",
+        "p:es-tiene-lleva"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-22",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Rosa sang one song and then went home.",
+      "es": "Rosa cantó una canción y luego se fue a su casa.",
+      "gap": [
+        31,
+        37
+      ],
+      "options": [
+        "se fue",
+        "se iba"
+      ],
+      "answer": 0,
+      "why": "Leaving is one event after the song.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-ser-ir-hacer",
+        "l:canción",
+        "l:cantar",
+        "l:casa",
+        "l:irse",
+        "p:ir-a-venir-de-place",
+        "p:ir-venir",
+        "p:possessives-basic",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
       "id": "x:pret-imp#a-24",
       "node": "x:pret-imp",
       "side": "g:preterite-irregular-strong",
@@ -434,6 +1129,181 @@
         "p:telling-time",
         "p:todos-los-dias",
         "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-26",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Rosa put the soup on the table and everyone started to eat.",
+      "es": "Rosa puso la sopa en la mesa y todos empezaron a comer.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "puso",
+        "ponía"
+      ],
+      "answer": 0,
+      "why": "Putting the soup down is one event that starts the meal.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "g:verb-infinitive",
+        "l:comer",
+        "l:empezar",
+        "l:mesa",
+        "l:poner",
+        "l:sopa",
+        "p:empezar-terminar"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-27",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Tomás was waiting outside while it was getting dark.",
+      "es": "Tomás esperaba afuera mientras oscurecía.",
+      "gap": [
+        31,
+        40
+      ],
+      "options": [
+        "oscureció",
+        "oscurecía"
+      ],
+      "answer": 1,
+      "why": "Two things going on at once, with no end in sight.",
+      "requires": [
+        "g:imperfect-habitual",
+        "l:afuera",
+        "l:esperar",
+        "l:oscurecer",
+        "p:encarecer-abaratar"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-28",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "The power went out at nine and the whole street was dark.",
+      "es": "A las nueve se fue la luz y toda la calle quedó a oscuras.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "fue",
+        "iba"
+      ],
+      "answer": 0,
+      "why": "One event at a given time.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-ser-ir-hacer",
+        "l:calle",
+        "l:irse",
+        "l:luz",
+        "l:oscuro",
+        "l:quedar",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-29",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 2,
+      "en": "Hernando was a taxi driver, and he knew every street in Bogotá.",
+      "es": "Hernando era taxista y conocía cada calle de Bogotá.",
+      "gap": [
+        23,
+        30
+      ],
+      "options": [
+        "conoció",
+        "conocía"
+      ],
+      "answer": 1,
+      "why": "Knowing the streets is how things were.",
+      "requires": [
+        "c:era",
+        "g:cada-cualquier",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "g:ser-identity",
+        "l:calle",
+        "l:conocer",
+        "l:ser",
+        "l:taxista",
+        "p:saber-conocer",
+        "p:ser-profession-no-article"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-30",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 2,
+      "en": "Hernando met Rosa in 1980 and married her a year later.",
+      "es": "Hernando conoció a Rosa en 1980 y se casó con ella un año después.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "conoció",
+        "conocía"
+      ],
+      "answer": 0,
+      "why": "Meeting someone is one event.",
+      "requires": [
+        "c:con-el-ella",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "g:reflexive-routine",
+        "l:año",
+        "l:casarse",
+        "l:conocer",
+        "l:después",
+        "p:dates-years",
+        "p:dentro-de-vs-despues",
+        "p:personal-a",
+        "p:saber-conocer",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-32",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Vale said yes and everyone clapped.",
+      "es": "Vale dijo que sí y todos aplaudieron.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "dijo",
+        "decía"
+      ],
+      "answer": 0,
+      "why": "One answer, then a reaction.",
+      "requires": [
+        "g:preterite-er-ir",
+        "g:preterite-irregular-strong",
+        "g:that-clauses",
+        "l:aplaudir",
+        "l:decir"
       ]
     }
   ]

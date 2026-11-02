@@ -45,7 +45,7 @@
 // seeded directly (see applyPlacement) with a stability for how long ago the
 // course would have taught them, due dates spread over a window sized to the
 // band's warm-up budget.
-import { initialPath, type PathState } from '../../compiler';
+import { admissible, dayPos, initialPath, type PathState } from '../../compiler';
 import { BAND_WARMUP_MINUTES } from '../../compiler/budget';
 import type { BankSentence, Band, ContrastItem, NodeId } from '../../content/schema';
 import type { TenseKey } from '../../engine';
@@ -257,10 +257,13 @@ export function probeLevels(b: Bundle, seed = 'placement'): Level[] {
     const byKind: Record<ProbeKind, ProbeItem[]> = { form: [], choose: [], question: [], contrast: [] };
     // the contrasts the unit teaches, one item at a time from each in turn so no one skill fills the level
     const perNode: ProbeItem[][] = [];
+    // an item in the store can need what comes after its contrast: at this level it asks only what the level has taught
+    const here = dayPos(b.course, i, u.days.length - 1);
+    const reached = (c: ContrastItem) => admissible(c.requires, (r) => (b.course.teachPos.get(r) ?? Infinity) <= here, b.course.nodes);
     for (const d of u.days) for (const n of [...d.focus, ...d.chunks]) {
       if (!n.startsWith('x:') || perNode.some((l) => l[0]?.skill === n)) continue;
       const own: ProbeItem[] = [];
-      for (const c of shuffle([...b.contrastItems(n)], rng(`${seed}|${u.id}|${n}`))) {
+      for (const c of shuffle(b.contrastItems(n).filter(reached), rng(`${seed}|${u.id}|${n}`))) {
         const it = contrastProbeItem(c, i);
         if (it && own.length < CONTRAST_PER_NODE) own.push(it);
       }

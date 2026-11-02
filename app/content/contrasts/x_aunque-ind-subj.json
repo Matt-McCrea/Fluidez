@@ -3,6 +3,32 @@
   "decides": "discourse",
   "items": [
     {
+      "id": "x:aunque-ind-subj#rp0",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "Even though it's raining, I'm going out.",
+      "es": "Aunque llueve, salgo.",
+      "gap": [
+        7,
+        20
+      ],
+      "options": [
+        "llueve, salgo",
+        "llueva, saldré"
+      ],
+      "answer": 0,
+      "why": "The English says \"Even though it's raining, I'm going out.\", so it's llueve, salgo.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:aunque-indicative",
+        "g:stem-boot",
+        "g:yo-irregular",
+        "l:llover",
+        "l:salir"
+      ]
+    },
+    {
       "id": "x:aunque-ind-subj#rp5",
       "node": "x:aunque-ind-subj",
       "side": "g:subj-concessive",
@@ -27,6 +53,35 @@
         "l:razón",
         "l:tener",
         "p:tener-razon"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#rp7",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "It may get cold, and we'll open the window anyway.",
+      "es": "Aunque haga frío, abriremos la ventana.",
+      "gap": [
+        7,
+        27
+      ],
+      "options": [
+        "hace frío, abrimos",
+        "haga frío, abriremos"
+      ],
+      "answer": 1,
+      "why": "The English says \"It may get cold, and we'll open the window anyway.\", so it's haga frío, abriremos.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "l:abrir",
+        "l:frío",
+        "l:hacer",
+        "l:ventana",
+        "p:hace-frio"
       ]
     },
     {
@@ -106,6 +161,279 @@
         "g:stem-boot",
         "l:llover",
         "l:salir"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-1",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "Although it's raining hard, we're going to the park.",
+      "es": "Aunque llueve mucho, vamos al parque.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "answer": 0,
+      "why": "It is raining, a fact, so indicative.",
+      "requires": [
+        "g:aunque-indicative",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:stem-boot",
+        "l:ir",
+        "l:llover",
+        "l:parque",
+        "p:ir-a-venir-de-place",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-2",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if it rains tomorrow, we're going to the park.",
+      "es": "Aunque llueva mañana, vamos al parque.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "answer": 1,
+      "why": "Tomorrow is not known yet, so subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "l:ir",
+        "l:llover",
+        "l:mañana",
+        "l:parque",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-5",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "Although she told me the truth, I didn't believe her.",
+      "es": "Aunque ella me dijo la verdad, no le creí.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "dijo",
+        "dijera"
+      ],
+      "answer": 0,
+      "why": "She did tell it, a fact.",
+      "requires": [
+        "c:la-verdad",
+        "g:aunque-indicative",
+        "g:indirect-objects",
+        "g:preterite-er-ir",
+        "g:preterite-irregular-strong",
+        "l:creer",
+        "l:decir",
+        "l:verdad",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-10",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if Rosa knew the way, I wouldn't let her drive.",
+      "es": "Aunque Rosa conociera el camino, no la dejaría manejar.",
+      "gap": [
+        12,
+        21
+      ],
+      "options": [
+        "conocía",
+        "conociera"
+      ],
+      "answer": 1,
+      "why": "It is imagined, so subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:subj-concessive",
+        "l:camino",
+        "l:conocer",
+        "l:dejar",
+        "l:manejar",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-12",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if Don Hernando says no tomorrow, I'll ask him again.",
+      "es": "Aunque Don Hernando diga que no mañana, se lo preguntaré otra vez.",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "dice",
+        "diga"
+      ],
+      "answer": 1,
+      "why": "His answer has not happened yet.",
+      "requires": [
+        "g:double-pronouns",
+        "g:future-promises",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:preguntar",
+        "l:vez",
+        "p:otro-no-article",
+        "p:preguntar-pedir",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-13",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "Although we arrived early, the shop was already closed.",
+      "es": "Aunque llegamos temprano, la tienda ya estaba cerrada.",
+      "gap": [
+        7,
+        15
+      ],
+      "options": [
+        "llegamos",
+        "llegáramos"
+      ],
+      "answer": 0,
+      "why": "We did arrive early.",
+      "requires": [
+        "g:aunque-indicative",
+        "g:estar-participle",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:present-ar",
+        "l:cerrar",
+        "l:estar",
+        "l:llegar",
+        "l:temprano",
+        "l:tienda",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-14",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if we arrive early, the shop will be closed.",
+      "es": "Aunque lleguemos temprano, la tienda estará cerrada.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "llegamos",
+        "lleguemos"
+      ],
+      "answer": 1,
+      "why": "Arriving is still ahead of us.",
+      "requires": [
+        "g:estar-participle",
+        "g:future-conjecture",
+        "g:gender-articles",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "l:cerrar",
+        "l:estar",
+        "l:llegar",
+        "l:temprano",
+        "l:tienda",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-15",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "Although the exam was difficult, Tomás passed.",
+      "es": "Aunque el examen fue difícil, Tomás aprobó.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "fue",
+        "fuera"
+      ],
+      "answer": 0,
+      "why": "It was difficult, a fact.",
+      "requires": [
+        "g:aunque-indicative",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:aprobar",
+        "l:difícil",
+        "l:examen",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#a-16",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if the exam is difficult next week, Tomás will pass.",
+      "es": "Aunque el examen sea difícil la próxima semana, Tomás aprobará.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "es",
+        "sea"
+      ],
+      "answer": 1,
+      "why": "Next week is unknown.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:future-promises",
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:subj-concessive",
+        "g:subj-irregulars",
+        "l:aprobar",
+        "l:difícil",
+        "l:examen",
+        "l:próximo",
+        "l:semana",
+        "l:ser",
+        "p:time-pasado-que-viene"
       ]
     }
   ]

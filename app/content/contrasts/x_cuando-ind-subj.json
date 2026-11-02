@@ -57,6 +57,33 @@
       ]
     },
     {
+      "id": "x:cuando-ind-subj#yt0",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "This is about a day still to come: When I have time, I'll help Hernando.",
+      "es": "Cuando tenga tiempo, ayudo a Hernando.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "tenga",
+        "tengo"
+      ],
+      "answer": 0,
+      "why": "It is still to come, so it takes the subjunctive: tenga.",
+      "requires": [
+        "c:aqui-tiene",
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "l:ayudar",
+        "l:tener",
+        "l:tiempo",
+        "p:personal-a"
+      ]
+    },
+    {
       "id": "x:cuando-ind-subj#yt1",
       "node": "x:cuando-ind-subj",
       "side": "g:cuando-indicative",
@@ -138,6 +165,62 @@
       ]
     },
     {
+      "id": "x:cuando-ind-subj#g.cuando-indicative.rp1",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "When I arrived, Vale was already there.",
+      "es": "Cuando llegué, Vale ya estaba ahí.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llegué",
+        "llegue"
+      ],
+      "answer": 0,
+      "why": "The English says \"When I arrived, Vale was already there.\", so it's llegué.",
+      "requires": [
+        "g:estar-location-states",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-spelling-stem",
+        "l:ahí",
+        "l:estar",
+        "l:llegar",
+        "p:aqui-ahi-alla",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#g.cuando-indicative.rp2",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "When I arrive, Vale is already there.",
+      "es": "Cuando llego, Vale ya está ahí.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "llegue",
+        "llego"
+      ],
+      "answer": 1,
+      "why": "The English says \"When I arrive, Vale is already there.\", so it's llego.",
+      "requires": [
+        "g:estar-location-states",
+        "g:present-ar",
+        "l:ahí",
+        "l:estar",
+        "l:llegar",
+        "p:aqui-ahi-alla",
+        "p:cuando-basic"
+      ]
+    },
+    {
       "id": "x:cuando-ind-subj#g.subj-cuando-future.yt5",
       "node": "x:cuando-ind-subj",
       "side": "g:subj-cuando-future",
@@ -163,6 +246,400 @@
         "l:reunión",
         "l:salir",
         "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#g.subj-cuando-future.rp5",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "Wait until the lawyer gets here.",
+      "es": "Espera hasta que llegue la abogada.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "llegue",
+        "llego"
+      ],
+      "answer": 0,
+      "why": "The English says \"Wait until the lawyer gets here.\", so it's llegue.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:abogado",
+        "l:esperar",
+        "l:llegar"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-1",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Whenever I get to the café, Vale is already here.",
+      "es": "Cuando llego al café, Vale ya está aquí.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "llego",
+        "llegue"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:aquí",
+        "l:café",
+        "l:estar",
+        "l:llegar",
+        "p:aqui-ahi-alla",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-2",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Whenever I close up, I clean the tables.",
+      "es": "Cuando cierro, limpio las mesas.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "cierro",
+        "cierre"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:stem-boot",
+        "l:cerrar",
+        "l:limpiar",
+        "l:mesa",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-3",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "When the lawyer arrived, we started.",
+      "es": "Cuando llegó la abogada, empezamos.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "llegó",
+        "llegue"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:abogado",
+        "l:empezar",
+        "l:llegar",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-4",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Whenever Rosa cooks, the whole house smells good.",
+      "es": "Cuando Rosa cocina, toda la casa huele rico.",
+      "gap": [
+        12,
+        18
+      ],
+      "options": [
+        "cocina",
+        "cocine"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:yo-irregular",
+        "l:casa",
+        "l:cocinar",
+        "l:oler",
+        "l:rico",
+        "p:cuando-basic",
+        "p:oler-a-saber-a"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-5",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "When I was a boy, I lived in Cali.",
+      "es": "Cuando era niño, vivía en Cali.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "era",
+        "sea"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "c:cuando-era-nino",
+        "c:era",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "l:niño",
+        "l:ser",
+        "l:vivir"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-6",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "When I left the bank, it was raining.",
+      "es": "Cuando salí del banco, llovía.",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "salí",
+        "salga"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-er-ir",
+        "l:banco",
+        "l:llover",
+        "l:salir",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-7",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "What do you do when you're hungry?",
+      "es": "¿Qué haces cuando tienes hambre?",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "tienes",
+        "tengas"
+      ],
+      "answer": 0,
+      "why": "A habit or a fact that already happened takes the ordinary verb.",
+      "requires": [
+        "c:tienes",
+        "g:present-er-ir",
+        "g:questions",
+        "g:stem-boot",
+        "l:hacer",
+        "l:hambre",
+        "l:qué",
+        "l:tener",
+        "p:cuando-basic",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-8",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When I get home, I'll call you.",
+      "es": "Cuando llegue a casa, te llamo.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llegue",
+        "llego"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:casa",
+        "l:llamar",
+        "l:llegar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-9",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When Vale comes tomorrow, we'll talk.",
+      "es": "Cuando Vale venga mañana, hablamos.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:hablar",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-11",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When you finish, let me know.",
+      "es": "Cuando termines, avísame.",
+      "gap": [
+        7,
+        15
+      ],
+      "options": [
+        "termines",
+        "terminas"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:avisar",
+        "l:terminar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-12",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "What are you going to do when you get there?",
+      "es": "¿Qué vas a hacer cuando llegues?",
+      "gap": [
+        24,
+        31
+      ],
+      "options": [
+        "llegues",
+        "llegas"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "c:voy-vas",
+        "g:ir-a-plans",
+        "g:questions",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:hacer",
+        "l:ir",
+        "l:llegar",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-13",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When I grow up, I want to be a doctor.",
+      "es": "Cuando sea grande, quiero ser doctora.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "sea",
+        "soy"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "c:quiero",
+        "g:ser-identity",
+        "g:stem-boot",
+        "g:subj-cuando-future",
+        "g:subj-irregulars",
+        "g:verb-infinitive",
+        "l:doctor",
+        "l:grande",
+        "l:querer",
+        "l:ser",
+        "p:ser-profession-no-article"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#a-14",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When Tomás opens the café tomorrow, I'll be there.",
+      "es": "Cuando Tomás abra el café mañana, estaré allí.",
+      "gap": [
+        13,
+        17
+      ],
+      "options": [
+        "abra",
+        "abre"
+      ],
+      "answer": 0,
+      "why": "Something still to come takes the subjunctive.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-promises",
+        "g:gender-articles",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:abrir",
+        "l:allí",
+        "l:café",
+        "l:estar",
+        "l:mañana",
+        "p:aqui-ahi-alla"
       ]
     }
   ]

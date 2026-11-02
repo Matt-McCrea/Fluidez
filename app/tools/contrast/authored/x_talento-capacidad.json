@@ -1,53 +1,155 @@
 [
-  {
-    "id": "3",
-    "side": "p:ser-capaz-de",
-    "rung": 1,
-    "en": "I could not bring myself to sing in front of everyone.",
-    "es": "No fui capaz de cantar frente a todos.",
-    "gap": [
-      7,
-      15
-    ],
-    "options": [
-      "capaz de",
-      "bueno para"
-    ],
-    "answer": 0,
-    "why": "Being able to do one particular thing, or not, is capaz de."
-  },
-  {
-    "id": "5",
-    "side": "p:ser-capaz-de",
-    "rung": 1,
-    "en": "Are you able to carry that box alone? (to a friend)",
-    "es": "¿Eres capaz de cargar esa caja solo?",
-    "gap": [
-      1,
-      14
-    ],
-    "options": [
-      "Eres capaz de",
-      "Eres bueno para"
-    ],
-    "answer": 0,
-    "why": "One particular feat is ser capaz de."
-  },
-  {
-    "id": "8",
-    "side": "p:ser-capaz-de",
-    "rung": 1,
-    "en": "I couldn't bring myself to fire him.",
-    "es": "No fui capaz de despedirlo.",
-    "gap": [
-      7,
-      15
-    ],
-    "options": [
-      "bueno para",
-      "capaz de"
-    ],
-    "answer": 1,
-    "why": "A single hard act you could not do is capaz de."
-  }
+ {
+  "id": "1",
+  "side": "p:darsele-bien",
+  "rung": 1,
+  "en": "Languages come easily to Rosa.",
+  "es": "A Rosa se le dan bien los idiomas.",
+  "gap": [
+   7,
+   21
+  ],
+  "options": [
+   "se le dan bien",
+   "es buena para"
+  ],
+  "answer": 0,
+  "why": "A natural knack with a plural noun: se le dan bien."
+ },
+ {
+  "id": "2",
+  "side": "p:ser-bueno-para",
+  "rung": 1,
+  "en": "I'm good at math. (I have built the skill over years)",
+  "es": "Soy bueno para las matemáticas.",
+  "gap": [
+   4,
+   14
+  ],
+  "options": [
+   "capaz de",
+   "bueno para"
+  ],
+  "answer": 1,
+  "why": "A built up general skill is soy bueno para."
+ },
+ {
+  "id": "3",
+  "side": "p:ser-capaz-de",
+  "rung": 1,
+  "en": "I could not bring myself to sing in front of everyone.",
+  "es": "No fui capaz de cantar frente a todos.",
+  "gap": [
+   7,
+   15
+  ],
+  "options": [
+   "capaz de",
+   "bueno para"
+  ],
+  "answer": 0,
+  "why": "Being able to do one particular thing, or not, is capaz de."
+ },
+ {
+  "id": "4",
+  "side": "p:darsele-bien",
+  "rung": 1,
+  "en": "Drawing comes naturally to me.",
+  "es": "Se me da bien dibujar.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "Soy capaz de",
+   "Se me da bien"
+  ],
+  "answer": 1,
+  "why": "A natural knack is se me da bien."
+ },
+ {
+  "id": "5",
+  "side": "p:ser-capaz-de",
+  "rung": 1,
+  "en": "Are you able to carry that box alone? (to a friend)",
+  "es": "¿Eres capaz de cargar esa caja solo?",
+  "gap": [
+   1,
+   14
+  ],
+  "options": [
+   "Eres capaz de",
+   "Eres bueno para"
+  ],
+  "answer": 0,
+  "why": "One particular feat is ser capaz de."
+ },
+ {
+  "id": "6",
+  "side": "p:ser-bueno-para",
+  "rung": 1,
+  "en": "Don Hernando is good at fixing motorcycles.",
+  "es": "Don Hernando es bueno para arreglar motos.",
+  "gap": [
+   13,
+   26
+  ],
+  "options": [
+   "es capaz de",
+   "es bueno para"
+  ],
+  "answer": 1,
+  "why": "Skill earned by practice is ser bueno para."
+ },
+ {
+  "id": "7",
+  "side": "p:darsele-bien",
+  "rung": 1,
+  "en": "Singing comes naturally to Vale.",
+  "es": "A Vale se le da bien cantar.",
+  "gap": [
+   7,
+   20
+  ],
+  "options": [
+   "se le da bien",
+   "es capaz de"
+  ],
+  "answer": 0,
+  "why": "A knack that someone is given is se le da bien."
+ },
+ {
+  "id": "8",
+  "side": "p:ser-capaz-de",
+  "rung": 1,
+  "en": "I couldn't bring myself to fire him.",
+  "es": "No fui capaz de despedirlo.",
+  "gap": [
+   7,
+   15
+  ],
+  "options": [
+   "bueno para",
+   "capaz de"
+  ],
+  "answer": 1,
+  "why": "A single hard act you could not do is capaz de."
+ },
+ {
+  "id": "9",
+  "side": "p:darsele-bien",
+  "rung": 1,
+  "en": "Dancing does not come naturally to me.",
+  "es": "No se me da bien bailar.",
+  "gap": [
+   3,
+   16
+  ],
+  "options": [
+   "se me da bien",
+   "soy capaz de"
+  ],
+  "answer": 0,
+  "why": "A missing knack is no se me da bien."
+ }
 ]

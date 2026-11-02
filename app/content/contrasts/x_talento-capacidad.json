@@ -31,6 +31,64 @@
       ]
     },
     {
+      "id": "x:talento-capacidad#a-1",
+      "node": "x:talento-capacidad",
+      "side": "p:darsele-bien",
+      "rung": 1,
+      "en": "Languages come easily to Rosa.",
+      "es": "A Rosa se le dan bien los idiomas.",
+      "gap": [
+        7,
+        21
+      ],
+      "options": [
+        "se le dan bien",
+        "es buena para"
+      ],
+      "answer": 0,
+      "why": "A natural knack with a plural noun: se le dan bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:se-accidental",
+        "l:bien",
+        "l:darse",
+        "l:idioma",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:darsele-bien",
+        "p:darsele-bien-mal"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-2",
+      "node": "x:talento-capacidad",
+      "side": "p:ser-bueno-para",
+      "rung": 1,
+      "en": "I'm good at math. (I have built the skill over years)",
+      "es": "Soy bueno para las matemáticas.",
+      "gap": [
+        4,
+        14
+      ],
+      "options": [
+        "capaz de",
+        "bueno para"
+      ],
+      "answer": 1,
+      "why": "A built up general skill is soy bueno para.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:bueno",
+        "l:matemáticas",
+        "l:ser",
+        "p:para-inf",
+        "p:ser-bueno-para"
+      ]
+    },
+    {
       "id": "x:talento-capacidad#a-3",
       "node": "x:talento-capacidad",
       "side": "p:ser-capaz-de",
@@ -59,6 +117,36 @@
         "p:darsele-bien-mal",
         "p:posicion-precisa",
         "p:ser-capaz-de"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-4",
+      "node": "x:talento-capacidad",
+      "side": "p:darsele-bien",
+      "rung": 1,
+      "en": "Drawing comes naturally to me.",
+      "es": "Se me da bien dibujar.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Soy capaz de",
+        "Se me da bien"
+      ],
+      "answer": 1,
+      "why": "A natural knack is se me da bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:me-regala",
+        "g:se-accidental",
+        "l:bien",
+        "l:darse",
+        "l:dibujar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:darsele-bien",
+        "p:darsele-bien-mal"
       ]
     },
     {
@@ -92,6 +180,65 @@
       ]
     },
     {
+      "id": "x:talento-capacidad#a-6",
+      "node": "x:talento-capacidad",
+      "side": "p:ser-bueno-para",
+      "rung": 1,
+      "en": "Don Hernando is good at fixing motorcycles.",
+      "es": "Don Hernando es bueno para arreglar motos.",
+      "gap": [
+        13,
+        26
+      ],
+      "options": [
+        "es capaz de",
+        "es bueno para"
+      ],
+      "answer": 1,
+      "why": "Skill earned by practice is ser bueno para.",
+      "requires": [
+        "g:ser-identity",
+        "l:arreglar",
+        "l:bueno",
+        "l:moto",
+        "l:ser",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:senor-don-article",
+        "p:ser-bueno-para"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-7",
+      "node": "x:talento-capacidad",
+      "side": "p:darsele-bien",
+      "rung": 1,
+      "en": "Singing comes naturally to Vale.",
+      "es": "A Vale se le da bien cantar.",
+      "gap": [
+        7,
+        20
+      ],
+      "options": [
+        "se le da bien",
+        "es capaz de"
+      ],
+      "answer": 0,
+      "why": "A knack that someone is given is se le da bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:present-ar",
+        "g:se-accidental",
+        "l:bien",
+        "l:cantar",
+        "l:darse",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:darsele-bien",
+        "p:darsele-bien-mal"
+      ]
+    },
+    {
       "id": "x:talento-capacidad#a-8",
       "node": "x:talento-capacidad",
       "side": "p:ser-capaz-de",
@@ -120,6 +267,37 @@
         "p:capaz-dispuesto-a",
         "p:darsele-bien-mal",
         "p:ser-capaz-de"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-9",
+      "node": "x:talento-capacidad",
+      "side": "p:darsele-bien",
+      "rung": 1,
+      "en": "Dancing does not come naturally to me.",
+      "es": "No se me da bien bailar.",
+      "gap": [
+        3,
+        16
+      ],
+      "options": [
+        "se me da bien",
+        "soy capaz de"
+      ],
+      "answer": 0,
+      "why": "A missing knack is no se me da bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:me-regala",
+        "c:no-se",
+        "g:se-accidental",
+        "l:bailar",
+        "l:bien",
+        "l:darse",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:darsele-bien",
+        "p:darsele-bien-mal"
       ]
     }
   ]

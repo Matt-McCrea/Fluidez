@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You should call her today.",
+  "es": "Deberías llamarla hoy.",
+  "gap": [
+   9,
+   17
+  ],
+  "options": [
+   "llamarla",
+   "haberla llamado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "2",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You should rest tonight.",
+  "es": "Deberías descansar esta noche.",
+  "gap": [
+   9,
+   18
+  ],
+  "options": [
+   "descansar",
+   "haber descansado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "3",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "I should study more from now on.",
+  "es": "Debería estudiar más desde ahora.",
+  "gap": [
+   8,
+   16
+  ],
+  "options": [
+   "estudiar",
+   "haber estudiado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "4",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "We should leave early tomorrow.",
+  "es": "Deberíamos salir temprano mañana.",
+  "gap": [
+   11,
+   16
+  ],
+  "options": [
+   "salir",
+   "haber salido"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "5",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You shouldn't smoke anymore.",
+  "es": "No deberías fumar más.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "fumar",
+   "haber fumado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "6",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You should talk to Rosa tomorrow.",
+  "es": "Deberías hablar con Rosa mañana.",
+  "gap": [
+   9,
+   15
+  ],
+  "options": [
+   "hablar",
+   "haber hablado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "7",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "Vale should ask for help next time.",
+  "es": "Vale debería pedir ayuda la próxima vez.",
+  "gap": [
+   13,
+   18
+  ],
+  "options": [
+   "pedir",
+   "haber pedido"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "8",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "We should save money starting this month.",
+  "es": "Deberíamos ahorrar desde este mes.",
+  "gap": [
+   11,
+   18
+  ],
+  "options": [
+   "ahorrar",
+   "haber ahorrado"
+  ],
+  "answer": 0,
+  "why": "Advice about what to do from now on takes deber plus the infinitive."
+ },
+ {
+  "id": "9",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "You should have called her yesterday.",
+  "es": "Deberías haberla llamado ayer.",
+  "gap": [
+   9,
+   24
+  ],
+  "options": [
+   "haberla llamado",
+   "llamarla"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "10",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "I should have gone to the party.",
+  "es": "Debería haber ido a la fiesta.",
+  "gap": [
+   8,
+   17
+  ],
+  "options": [
+   "haber ido",
+   "ir"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "11",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "We should have left earlier.",
+  "es": "Deberíamos haber salido antes.",
+  "gap": [
+   11,
+   23
+  ],
+  "options": [
+   "haber salido",
+   "salir"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "12",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "You shouldn't have said it.",
+  "es": "No deberías haberlo dicho.",
+  "gap": [
+   12,
+   25
+  ],
+  "options": [
+   "haberlo dicho",
+   "decirlo"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "13",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "Vale should have asked for help.",
+  "es": "Vale debería haber pedido ayuda.",
+  "gap": [
+   13,
+   25
+  ],
+  "options": [
+   "haber pedido",
+   "pedir"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "14",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "Tomás should have closed the door last night.",
+  "es": "Tomás debería haber cerrado la puerta anoche.",
+  "gap": [
+   14,
+   27
+  ],
+  "options": [
+   "haber cerrado",
+   "cerrar"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "15",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "You should have let me know.",
+  "es": "Deberías haberme avisado.",
+  "gap": [
+   9,
+   24
+  ],
+  "options": [
+   "haberme avisado",
+   "avisarme"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ },
+ {
+  "id": "16",
+  "side": "p:no-deberias-haberlo-hecho",
+  "rung": 1,
+  "en": "We should have bought the bread this morning.",
+  "es": "Deberíamos haber comprado el pan esta mañana.",
+  "gap": [
+   11,
+   25
+  ],
+  "options": [
+   "haber comprado",
+   "comprar"
+  ],
+  "answer": 0,
+  "why": "Something already done that went wrong takes deber plus haber and the participle."
+ }
+]

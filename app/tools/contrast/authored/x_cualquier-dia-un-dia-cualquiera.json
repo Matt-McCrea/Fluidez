@@ -1,70 +1,70 @@
 [
-  {
-    "id": "1",
-    "side": "g:cada-cualquier",
-    "rung": 1,
-    "en": "You can order any drink.",
-    "es": "Puedes pedir cualquier bebida.",
-    "gap": [
-      13,
-      22
-    ],
-    "options": [
-      "cualquiera",
-      "cualquier"
-    ],
-    "answer": 1,
-    "why": "Any before a noun is cualquier."
-  },
-  {
-    "id": "2",
-    "side": "p:un-x-cualquiera",
-    "rung": 1,
-    "en": "Don Hernando was wearing an ordinary shirt.",
-    "es": "Don Hernando llevaba una camisa cualquiera.",
-    "gap": [
-      32,
-      42
-    ],
-    "options": [
-      "cualquiera",
-      "cualquier"
-    ],
-    "answer": 0,
-    "why": "Ordinary goes after the noun as cualquiera."
-  },
-  {
-    "id": "3",
-    "side": "g:cada-cualquier",
-    "rung": 1,
-    "en": "Any day works for me.",
-    "es": "Cualquier día me sirve.",
-    "gap": [
-      0,
-      9
-    ],
-    "options": [
-      "Cualquiera",
-      "Cualquier"
-    ],
-    "answer": 1,
-    "why": "Before the noun it shortens to cualquier."
-  },
-  {
-    "id": "4",
-    "side": "p:un-x-cualquiera",
-    "rung": 2,
-    "en": "It's not a special restaurant, just an ordinary one.",
-    "es": "No es un restaurante especial, es un restaurante cualquiera.",
-    "gap": [
-      49,
-      59
-    ],
-    "options": [
-      "cualquiera",
-      "cualquier"
-    ],
-    "answer": 0,
-    "why": "Ordinary after the noun is cualquiera."
-  }
+ {
+  "id": "1",
+  "side": "g:cada-cualquier",
+  "rung": 1,
+  "en": "You can order any drink.",
+  "es": "Puedes pedir cualquier bebida.",
+  "gap": [
+   13,
+   22
+  ],
+  "options": [
+   "cualquiera",
+   "cualquier"
+  ],
+  "answer": 1,
+  "why": "Any before a noun is cualquier."
+ },
+ {
+  "id": "2",
+  "side": "p:un-x-cualquiera",
+  "rung": 1,
+  "en": "Don Hernando was wearing an ordinary shirt.",
+  "es": "Don Hernando llevaba una camisa cualquiera.",
+  "gap": [
+   32,
+   42
+  ],
+  "options": [
+   "cualquiera",
+   "cualquier"
+  ],
+  "answer": 0,
+  "why": "Ordinary goes after the noun as cualquiera."
+ },
+ {
+  "id": "3",
+  "side": "g:cada-cualquier",
+  "rung": 1,
+  "en": "Any day works for me.",
+  "es": "Cualquier día me sirve.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Cualquiera",
+   "Cualquier"
+  ],
+  "answer": 1,
+  "why": "Before the noun it shortens to cualquier."
+ },
+ {
+  "id": "4",
+  "side": "p:un-x-cualquiera",
+  "rung": 2,
+  "en": "It's not a special restaurant, just an ordinary one.",
+  "es": "No es un restaurante especial, es un restaurante cualquiera.",
+  "gap": [
+   49,
+   59
+  ],
+  "options": [
+   "cualquiera",
+   "cualquier"
+  ],
+  "answer": 0,
+  "why": "Ordinary after the noun is cualquiera."
+ }
 ]

@@ -1,0 +1,189 @@
+[
+ {
+  "id": "1",
+  "side": "g:tener-que-hay-que",
+  "rung": 1,
+  "en": "I have to be at work at six.",
+  "es": "Tengo que estar en el trabajo a las seis.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Tengo que",
+   "Debería"
+  ],
+  "answer": 0,
+  "why": "Have to means no choice."
+ },
+ {
+  "id": "2",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You should call your mom. (to a friend)",
+  "es": "Deberías llamar a tu mamá.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Tienes que",
+   "Deberías"
+  ],
+  "answer": 1,
+  "why": "Should is advice, so deberías."
+ },
+ {
+  "id": "4",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "You must not eat that. (to a friend)",
+  "es": "No debes comer eso.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "tienes que",
+   "debes"
+  ],
+  "answer": 1,
+  "why": "Not allowed is no debes."
+ },
+ {
+  "id": "5",
+  "side": "g:tener-que-hay-que",
+  "rung": 1,
+  "en": "We have to leave now.",
+  "es": "Tenemos que salir ya.",
+  "gap": [
+   0,
+   11
+  ],
+  "options": [
+   "Tenemos que",
+   "Deberíamos"
+  ],
+  "answer": 0,
+  "why": "Have to means no choice."
+ },
+ {
+  "id": "6",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "I should sleep more.",
+  "es": "Debería dormir más.",
+  "gap": [
+   0,
+   7
+  ],
+  "options": [
+   "Tengo que",
+   "Debería"
+  ],
+  "answer": 1,
+  "why": "Should is advice."
+ },
+ {
+  "id": "7",
+  "side": "g:tener-que-hay-que",
+  "rung": 1,
+  "en": "She has to go to the doctor tomorrow.",
+  "es": "Ella tiene que ir al médico mañana.",
+  "gap": [
+   5,
+   14
+  ],
+  "options": [
+   "tiene que",
+   "debería"
+  ],
+  "answer": 0,
+  "why": "Has to is an outside need."
+ },
+ {
+  "id": "8",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "He shouldn't drive so fast.",
+  "es": "No debería manejar tan rápido.",
+  "gap": [
+   3,
+   10
+  ],
+  "options": [
+   "tiene que",
+   "debería"
+  ],
+  "answer": 1,
+  "why": "Shouldn't is advice, so debería."
+ },
+ {
+  "id": "9",
+  "side": "g:tener-que-hay-que",
+  "rung": 1,
+  "en": "You don't have to come, but you can. (to a friend)",
+  "es": "No tienes que venir, pero puedes.",
+  "gap": [
+   3,
+   13
+  ],
+  "options": [
+   "tienes que",
+   "debes"
+  ],
+  "answer": 0,
+  "why": "Not needed is no tienes que."
+ },
+ {
+  "id": "10",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "Children must not cross here.",
+  "es": "Los niños no deben cruzar aquí.",
+  "gap": [
+   13,
+   18
+  ],
+  "options": [
+   "tienen que",
+   "deben"
+  ],
+  "answer": 1,
+  "why": "Must not means forbidden, so deben."
+ },
+ {
+  "id": "11",
+  "side": "g:tener-que-hay-que",
+  "rung": 1,
+  "en": "Do you have to work on Saturday? (to a friend)",
+  "es": "¿Tienes que trabajar el sábado?",
+  "gap": [
+   1,
+   11
+  ],
+  "options": [
+   "Tienes que",
+   "Deberías"
+  ],
+  "answer": 0,
+  "why": "Have to asks about a real need."
+ },
+ {
+  "id": "12",
+  "side": "g:deber-modal",
+  "rung": 1,
+  "en": "They should arrive early.",
+  "es": "Deberían llegar temprano.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Tienen que",
+   "Deberían"
+  ],
+  "answer": 1,
+  "why": "Should is advice."
+ }
+]

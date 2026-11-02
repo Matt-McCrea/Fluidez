@@ -1,0 +1,138 @@
+[
+ {
+  "id": "1",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "I asked Rosa where the bank is.",
+  "es": "Le pregunté a Rosa dónde queda el banco.",
+  "gap": [
+   3,
+   11
+  ],
+  "options": [
+   "pregunté",
+   "pedí"
+  ],
+  "answer": 0,
+  "why": "Asking for information is preguntar."
+ },
+ {
+  "id": "2",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "I asked Rosa for a pen.",
+  "es": "Le pedí un esfero a Rosa.",
+  "gap": [
+   3,
+   7
+  ],
+  "options": [
+   "pregunté",
+   "pedí"
+  ],
+  "answer": 1,
+  "why": "Asking for a thing is pedir."
+ },
+ {
+  "id": "3",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Can I ask you something?",
+  "es": "¿Te puedo preguntar algo?",
+  "gap": [
+   10,
+   19
+  ],
+  "options": [
+   "preguntar",
+   "pedir"
+  ],
+  "answer": 0,
+  "why": "Asking a question is preguntar."
+ },
+ {
+  "id": "4",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Can I ask you a favor?",
+  "es": "¿Te puedo pedir un favor?",
+  "gap": [
+   10,
+   15
+  ],
+  "options": [
+   "preguntar",
+   "pedir"
+  ],
+  "answer": 1,
+  "why": "Asking for a favor is pedir."
+ },
+ {
+  "id": "8",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Ask Vale if she is coming.",
+  "es": "Pregúntale a Vale si viene.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Pídele",
+   "Pregúntale"
+  ],
+  "answer": 1,
+  "why": "Asking for information is preguntar."
+ },
+ {
+  "id": "9",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Ask the waiter for the check.",
+  "es": "Pídele la cuenta al mesero.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Pídele",
+   "Pregúntale"
+  ],
+  "answer": 0,
+  "why": "Asking for a thing is pedir."
+ },
+ {
+  "id": "11",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Nobody asked me what my name was.",
+  "es": "Nadie me preguntó cómo me llamaba.",
+  "gap": [
+   9,
+   17
+  ],
+  "options": [
+   "preguntó",
+   "pidió"
+  ],
+  "answer": 0,
+  "why": "Asking a question is preguntar."
+ },
+ {
+  "id": "14",
+  "side": "g:stem-e-i",
+  "rung": 1,
+  "en": "Tomás asked Don Hernando for advice.",
+  "es": "Tomás le pidió un consejo a Don Hernando.",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "preguntó",
+   "pidió"
+  ],
+  "answer": 1,
+  "why": "Asking for advice is pedir."
+ }
+]

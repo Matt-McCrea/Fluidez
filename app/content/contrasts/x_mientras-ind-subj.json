@@ -79,6 +79,391 @@
         "l:leer",
         "l:periódico"
       ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-3",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "As long as I live, I won't sell this house.",
+      "es": "Mientras viva, no venderé esta casa.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "viva",
+        "vivo"
+      ],
+      "answer": 0,
+      "why": "As long as, about the unknown future, takes the subjunctive.",
+      "requires": [
+        "g:future-promises",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:casa",
+        "l:vender",
+        "l:vivir",
+        "p:demonstratives-basic",
+        "p:mientras-subj"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-4",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "As long as you have doubts, ask.",
+      "es": "Mientras tengas dudas, pregunta.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "tienes",
+        "tengas"
+      ],
+      "answer": 1,
+      "why": "As long as, with an open time, takes the subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:duda",
+        "l:preguntar",
+        "l:tener",
+        "p:mientras-subj",
+        "p:no-tengo-tan-claro",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-5",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "We'll be fine as long as we stay together.",
+      "es": "Estaremos bien mientras sigamos juntos.",
+      "gap": [
+        24,
+        31
+      ],
+      "options": [
+        "sigamos",
+        "seguimos"
+      ],
+      "answer": 0,
+      "why": "As long as, about the future, takes the subjunctive.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:estar-location-states",
+        "g:future-promises",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:bien",
+        "l:estar",
+        "l:juntos",
+        "l:seguir",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:mientras-subj"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-6",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "I'll wait as long as it's necessary.",
+      "es": "Esperaré mientras sea necesario.",
+      "gap": [
+        18,
+        21
+      ],
+      "options": [
+        "es",
+        "sea"
+      ],
+      "answer": 1,
+      "why": "As long as, about the future, takes the subjunctive.",
+      "requires": [
+        "g:future-promises",
+        "g:ser-identity",
+        "g:subj-cuando-future",
+        "g:subj-irregulars",
+        "l:esperar",
+        "l:necesario",
+        "l:ser",
+        "p:mientras-subj"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-8",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "As long as you don't tell me the truth, I won't help you.",
+      "es": "Mientras no me digas la verdad, no te ayudo.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "dices",
+        "digas"
+      ],
+      "answer": 1,
+      "why": "As long as, with a condition not yet met, takes the subjunctive.",
+      "requires": [
+        "c:la-verdad",
+        "c:le-ayudo",
+        "c:no-me-digas",
+        "g:subj-cuando-future",
+        "l:ayudar",
+        "l:decir",
+        "l:verdad",
+        "p:mientras-subj",
+        "p:si-pero-que"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-9",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "As long as you pay, I'll cook.",
+      "es": "Mientras tú pagues, yo cocino.",
+      "gap": [
+        12,
+        18
+      ],
+      "options": [
+        "pagues",
+        "pagas"
+      ],
+      "answer": 0,
+      "why": "As long as, with a condition, takes the subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:cocinar",
+        "l:pagar",
+        "p:mientras-subj"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-10",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While Rosa was cooking, Tomás was setting the table.",
+      "es": "Mientras Rosa cocinaba, Tomás ponía la mesa.",
+      "gap": [
+        14,
+        22
+      ],
+      "options": [
+        "cocinara",
+        "cocinaba"
+      ],
+      "answer": 1,
+      "why": "Two real actions at the same time take the indicative.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:cocinar",
+        "l:mesa",
+        "l:poner"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-11",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While I wash the dishes, you dry them.",
+      "es": "Mientras yo lavo los platos, tú los secas.",
+      "gap": [
+        12,
+        16
+      ],
+      "options": [
+        "lavo",
+        "lave"
+      ],
+      "answer": 0,
+      "why": "Two actions happening together take the indicative.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:lavar",
+        "l:plato",
+        "l:seco"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-12",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Yesterday, while I was walking, I saw Don Hernando.",
+      "es": "Ayer, mientras caminaba, vi a Don Hernando.",
+      "gap": [
+        15,
+        23
+      ],
+      "options": [
+        "caminara",
+        "caminaba"
+      ],
+      "answer": 1,
+      "why": "A real past moment takes the indicative.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-er-ir",
+        "l:ayer",
+        "l:caminar",
+        "l:ver",
+        "p:personal-a",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-13",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While we eat, we watch the news.",
+      "es": "Mientras comemos, vemos las noticias.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "comemos",
+        "comamos"
+      ],
+      "answer": 0,
+      "why": "A real habit at the same time takes the indicative.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:comer",
+        "l:noticias",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-14",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While my mom was sleeping, I cleaned the house.",
+      "es": "Mientras mi mamá dormía, yo limpié la casa.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "durmiera",
+        "dormía"
+      ],
+      "answer": 1,
+      "why": "A real past moment takes the indicative.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "l:casa",
+        "l:dormir",
+        "l:limpiar",
+        "l:mamá",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-15",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "He talks on the phone while he drives.",
+      "es": "Habla por teléfono mientras maneja.",
+      "gap": [
+        28,
+        34
+      ],
+      "options": [
+        "maneja",
+        "maneje"
+      ],
+      "answer": 0,
+      "why": "Two real actions at the same time take the indicative.",
+      "requires": [
+        "g:present-ar",
+        "l:hablar",
+        "l:manejar",
+        "l:teléfono"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-16",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While you were at work, someone called.",
+      "es": "Mientras tú estabas en el trabajo, alguien llamó.",
+      "gap": [
+        12,
+        19
+      ],
+      "options": [
+        "estuvieras",
+        "estabas"
+      ],
+      "answer": 1,
+      "why": "A real past moment takes the indicative.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "l:estar",
+        "l:llamar",
+        "l:trabajo",
+        "p:indefinites-basic"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#a-17",
+      "node": "x:mientras-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "While Simón studies, his sister plays.",
+      "es": "Mientras Simón estudia, su hermana juega.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "estudia",
+        "estudie"
+      ],
+      "answer": 0,
+      "why": "Two real actions at the same time take the indicative.",
+      "requires": [
+        "g:present-ar",
+        "g:stem-boot",
+        "l:estudiar",
+        "l:hermana",
+        "l:jugar",
+        "p:possessives-basic"
+      ]
     }
   ]
 }

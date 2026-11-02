@@ -605,6 +605,60 @@
       ]
     },
     {
+      "id": "x:ser-estar-adj#a-1",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "My neighbor is a very quiet person.",
+      "es": "Mi vecino es muy callado.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:ser-estar-adjectives",
+        "g:ser-identity",
+        "l:callado",
+        "l:ser",
+        "l:vecino",
+        "p:possessives-basic",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-2",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "My neighbor is quiet today, unusually.",
+      "es": "Hoy mi vecino está callado.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:ser-estar-adjectives",
+        "l:callado",
+        "l:estar",
+        "l:hoy",
+        "l:vecino",
+        "p:possessives-basic"
+      ]
+    },
+    {
       "id": "x:ser-estar-adj#a-3",
       "node": "x:ser-estar-adj",
       "side": "g:ser-estar-adjectives",
@@ -627,6 +681,32 @@
         "l:estar",
         "l:frío",
         "l:sopa"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-4",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Rosa is very smart.",
+      "es": "Rosa es muy lista.",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-estar-adjectives",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser",
+        "p:quantifiers-basic"
       ]
     },
     {
@@ -778,6 +858,35 @@
       ]
     },
     {
+      "id": "x:ser-estar-adj#a-12",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "The chicken has gone off, it smells strange.",
+      "es": "El pollo está malo, huele raro.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:yo-irregular",
+        "l:estar",
+        "l:malo",
+        "l:oler",
+        "l:pollo",
+        "l:raro",
+        "p:oler-a-saber-a"
+      ]
+    },
+    {
       "id": "x:ser-estar-adj#a-13",
       "node": "x:ser-estar-adj",
       "side": "g:ser-identity",
@@ -829,6 +938,31 @@
         "l:trabajo",
         "p:contento-con-de",
         "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-15",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Mariana is a serious person.",
+      "es": "Mariana es muy seria.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:ser",
+        "l:serio",
+        "p:quantifiers-basic"
       ]
     }
   ]

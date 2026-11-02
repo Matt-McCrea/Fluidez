@@ -348,6 +348,35 @@
       ]
     },
     {
+      "id": "x:que-three-ways#a-6",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The coffee that I drink is Colombian.",
+      "es": "El café que tomo es colombiano.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "That points back to coffee, no accent.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:café",
+        "l:colombiano",
+        "l:ser",
+        "l:tomar",
+        "p:ser-profession-no-article"
+      ]
+    },
+    {
       "id": "x:que-three-ways#a-7",
       "node": "x:que-three-ways",
       "side": "g:questions",

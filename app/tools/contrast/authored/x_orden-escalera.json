@@ -1,0 +1,172 @@
+[
+ {
+  "id": "1",
+  "side": "p:orden-sin-imperativo",
+  "rung": 1,
+  "en": "You close the door. (to your little brother, annoyed)",
+  "es": "Tú cierras la puerta.",
+  "gap": [
+   0,
+   21
+  ],
+  "options": [
+   "Tú cierras la puerta.",
+   "¿Sería tan amable de cerrar la puerta?"
+  ],
+  "answer": 0,
+  "why": "An angry order to a sibling is the bluntest rung: tú cierras."
+ },
+ {
+  "id": "2",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you be so kind as to close the window? (to a bank manager you call usted)",
+  "es": "¿Sería tan amable de cerrar la ventana?",
+  "gap": [
+   0,
+   39
+  ],
+  "options": [
+   "Cierra la ventana.",
+   "¿Sería tan amable de cerrar la ventana?"
+  ],
+  "answer": 1,
+  "why": "A formal stranger calls for the ceremonious rung."
+ },
+ {
+  "id": "3",
+  "side": "p:orden-sin-imperativo",
+  "rung": 1,
+  "en": "Close the window. (to a close friend, casual)",
+  "es": "Cierra la ventana.",
+  "gap": [
+   0,
+   18
+  ],
+  "options": [
+   "Cierra la ventana.",
+   "¿Sería tan amable de cerrar la ventana?"
+  ],
+  "answer": 0,
+  "why": "Among friends the plain command is right. The ceremonious one sounds like teasing."
+ },
+ {
+  "id": "4",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you do me the favor of passing the salt? (to a friend)",
+  "es": "¿Me haces el favor de pasar la sal?",
+  "gap": [
+   0,
+   35
+  ],
+  "options": [
+   "¿Me hace el favor y pasa la sal?",
+   "¿Me haces el favor de pasar la sal?"
+  ],
+  "answer": 1,
+  "why": "A friend gets tú, so me haces el favor de."
+ },
+ {
+  "id": "5",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you do me the favor and pass the salt? (to a waiter you call usted)",
+  "es": "¿Me hace el favor y pasa la sal?",
+  "gap": [
+   0,
+   32
+  ],
+  "options": [
+   "¿Me hace el favor y pasa la sal?",
+   "¿Me haces el favor de pasar la sal?"
+  ],
+  "answer": 0,
+  "why": "Usted needs me hace el favor y."
+ },
+ {
+  "id": "6",
+  "side": "p:orden-sin-imperativo",
+  "rung": 1,
+  "en": "You sit here, now. (a mother to her son, annoyed)",
+  "es": "Tú te sientas aquí, ya.",
+  "gap": [
+   0,
+   23
+  ],
+  "options": [
+   "¿Sería tan amable de sentarse aquí?",
+   "Tú te sientas aquí, ya."
+  ],
+  "answer": 1,
+  "why": "A parent giving an order uses the blunt rung."
+ },
+ {
+  "id": "7",
+  "side": "p:orden-sin-imperativo",
+  "rung": 1,
+  "en": "Please speak more slowly. (to a friend)",
+  "es": "Habla más despacio, por favor.",
+  "gap": [
+   0,
+   30
+  ],
+  "options": [
+   "Habla más despacio, por favor.",
+   "¿Sería tan amable de hablar más despacio?"
+  ],
+  "answer": 0,
+  "why": "The ordinary command fits a friend."
+ },
+ {
+  "id": "8",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you do me the favor of coming earlier? (to a friend)",
+  "es": "¿Me haces el favor de venir más temprano?",
+  "gap": [
+   0,
+   41
+  ],
+  "options": [
+   "¿Me hace el favor y viene más temprano?",
+   "¿Me haces el favor de venir más temprano?"
+  ],
+  "answer": 1,
+  "why": "A friendly favor with tú is me haces el favor de."
+ },
+ {
+  "id": "9",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you be so kind as to wait a moment? (to an elderly stranger, very ceremonious)",
+  "es": "¿Sería tan amable de esperar un momento?",
+  "gap": [
+   0,
+   40
+  ],
+  "options": [
+   "¿Sería tan amable de esperar un momento?",
+   "¿Me haces el favor de esperar un momento?"
+  ],
+  "answer": 0,
+  "why": "Very ceremonious to a stranger: sería tan amable de."
+ },
+ {
+  "id": "10",
+  "side": "p:serias-tan-amable",
+  "rung": 1,
+  "en": "Would you do me the favor and sign here? (to the notary, usted)",
+  "es": "¿Me hace el favor y firma aquí?",
+  "gap": [
+   0,
+   31
+  ],
+  "options": [
+   "Firma aquí.",
+   "¿Me hace el favor y firma aquí?"
+  ],
+  "answer": 1,
+  "why": "A bare command would be rude to the notary."
+ }
+]

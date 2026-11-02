@@ -174,31 +174,6 @@
       ]
     },
     {
-      "id": "x:saber-conocer#a-2",
-      "node": "x:saber-conocer",
-      "side": "g:yo-irregular",
-      "rung": 1,
-      "en": "Vale knows how to speak English.",
-      "es": "Vale sabe hablar inglés.",
-      "gap": [
-        5,
-        9
-      ],
-      "options": [
-        "conoce",
-        "sabe"
-      ],
-      "answer": 1,
-      "why": "A fact or a skill, so saber.",
-      "requires": [
-        "g:present-er-ir",
-        "l:hablar",
-        "l:inglés",
-        "l:saber",
-        "p:saber-conocer"
-      ]
-    },
-    {
       "id": "x:saber-conocer#a-3",
       "node": "x:saber-conocer",
       "side": "g:yo-irregular",
@@ -380,6 +355,33 @@
         "g:gender-articles",
         "g:present-er-ir",
         "l:conocer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-13",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Vale knows that Tomás arrives today.",
+      "es": "Vale sabe que Tomás llega hoy.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "sabe",
+        "conoce"
+      ],
+      "answer": 0,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:hoy",
+        "l:llegar",
+        "l:saber",
         "p:saber-conocer"
       ]
     }

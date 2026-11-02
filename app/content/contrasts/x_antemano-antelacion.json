@@ -81,7 +81,7 @@
       "side": "p:con-antelacion",
       "rung": 1,
       "en": "We bought the tickets a month in advance.",
-      "es": "Compramos los boletos con un mes de antelación.",
+      "es": "Compramos las boletas con un mes de antelación.",
       "gap": [
         36,
         46
@@ -96,36 +96,9 @@
         "g:gender-articles",
         "g:present-ar",
         "l:antelación",
-        "l:boleto",
+        "l:boleta",
         "l:comprar",
         "l:mes"
-      ]
-    },
-    {
-      "id": "x:antemano-antelacion#a-2",
-      "node": "x:antemano-antelacion",
-      "side": "c:gracias-de-antemano",
-      "rung": 1,
-      "en": "I thank you in advance for your help.",
-      "es": "Te agradezco de antemano tu ayuda.",
-      "gap": [
-        13,
-        24
-      ],
-      "options": [
-        "de antemano",
-        "con antelación"
-      ],
-      "answer": 0,
-      "why": "Thanking beforehand is de antemano.",
-      "requires": [
-        "g:yo-irregular",
-        "l:agradecer",
-        "l:antemano",
-        "l:ayuda",
-        "p:me-te-nos-objects",
-        "p:possessives-basic",
-        "p:te-lo-agradezco"
       ]
     },
     {
@@ -152,32 +125,6 @@
         "l:avisar",
         "l:semana",
         "p:me-te-nos-objects"
-      ]
-    },
-    {
-      "id": "x:antemano-antelacion#a-4",
-      "node": "x:antemano-antelacion",
-      "side": "c:gracias-de-antemano",
-      "rung": 1,
-      "en": "I already knew the answer beforehand.",
-      "es": "Ya conocía la respuesta de antemano.",
-      "gap": [
-        24,
-        35
-      ],
-      "options": [
-        "de antemano",
-        "con antelación"
-      ],
-      "answer": 0,
-      "why": "Knowing something before is de antemano.",
-      "requires": [
-        "g:gender-articles",
-        "g:imperfect-habitual",
-        "l:antemano",
-        "l:conocer",
-        "l:respuesta",
-        "p:saber-conocer"
       ]
     },
     {

@@ -169,6 +169,61 @@
       ]
     },
     {
+      "id": "x:si-real-unreal#a-1",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If it rains tomorrow, we'll stay home.",
+      "es": "Si llueve mañana, nos quedamos en casa.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "llueve",
+        "lloviera"
+      ],
+      "answer": 0,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:present-ar",
+        "g:reflexive-routine",
+        "g:si-present",
+        "g:stem-boot",
+        "l:casa",
+        "l:llover",
+        "l:mañana",
+        "l:quedarse"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-2",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If Vale arrives early, we'll have dinner together.",
+      "es": "Si Vale llega temprano, cenamos juntos.",
+      "gap": [
+        24,
+        31
+      ],
+      "options": [
+        "cenaríamos",
+        "cenamos"
+      ],
+      "answer": 1,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:present-ar",
+        "g:si-present",
+        "l:cenar",
+        "l:juntos",
+        "l:llegar",
+        "l:temprano",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
       "id": "x:si-real-unreal#a-3",
       "node": "x:si-real-unreal",
       "side": "g:si-present",
@@ -200,6 +255,116 @@
       ]
     },
     {
+      "id": "x:si-real-unreal#a-4",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If Tomás wants to, he can come with us.",
+      "es": "Si Tomás quiere, puede venir con nosotros.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "quisiera",
+        "quiere"
+      ],
+      "answer": 1,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:si-present",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:poder",
+        "l:querer",
+        "l:venir",
+        "p:request-ladder"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-5",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If you call me, I'll answer. (to a friend)",
+      "es": "Si me llamas, te contesto.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "llamas",
+        "llamaras"
+      ],
+      "answer": 0,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:present-ar",
+        "g:si-present",
+        "l:contestar",
+        "l:llamar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-6",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If it's cold tonight, I'll wear my ruana.",
+      "es": "Si hace frío esta noche, uso la ruana.",
+      "gap": [
+        3,
+        7
+      ],
+      "options": [
+        "hiciera",
+        "hace"
+      ],
+      "answer": 1,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:si-present",
+        "l:frío",
+        "l:hacer",
+        "l:noche",
+        "l:ruana",
+        "l:usar",
+        "p:demonstratives-basic",
+        "p:hace-frio"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-7",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If Rosa cooks, I'll wash the dishes.",
+      "es": "Si Rosa cocina, yo lavo los platos.",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "cocina",
+        "cocinara"
+      ],
+      "answer": 0,
+      "why": "It could really happen, so the ordinary present.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:si-present",
+        "l:cocinar",
+        "l:lavar",
+        "l:plato"
+      ]
+    },
+    {
       "id": "x:si-real-unreal#a-8",
       "node": "x:si-real-unreal",
       "side": "g:si-hypothetical",
@@ -226,6 +391,173 @@
         "l:tener",
         "p:llevar-traer",
         "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-9",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Hernando were younger, he would run.",
+      "es": "Si Hernando fuera más joven, correría.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "fuera",
+        "es"
+      ],
+      "answer": 0,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:conditional",
+        "l:correr",
+        "l:joven"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-10",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Vale won the lottery, she would travel around the world.",
+      "es": "Si Vale ganara la lotería, viajaría por el mundo.",
+      "gap": [
+        27,
+        35
+      ],
+      "options": [
+        "viaja",
+        "viajaría"
+      ],
+      "answer": 1,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:por-para-1",
+        "g:si-hypothetical",
+        "l:ganar",
+        "l:lotería",
+        "l:mundo",
+        "l:viajar"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-11",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I lived on the beach, I would swim every day.",
+      "es": "Si viviera en la playa, nadaría cada día.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "viviera",
+        "vivo"
+      ],
+      "answer": 0,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:cada-cualquier",
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:día",
+        "l:nadar",
+        "l:playa",
+        "l:vivir",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-12",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I were you, I wouldn't go.",
+      "es": "Si yo fuera tú, no iría.",
+      "gap": [
+        6,
+        11
+      ],
+      "options": [
+        "soy",
+        "fuera"
+      ],
+      "answer": 1,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:ser-identity",
+        "g:si-hypothetical",
+        "l:ir",
+        "l:ser",
+        "p:lo-mejor-seria-que",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-13",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If it snowed in Bogotá, everyone would go out to see it.",
+      "es": "Si nevara en Bogotá, todos saldrían a verlo.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "nevara",
+        "nieva"
+      ],
+      "answer": 0,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:imperfect-subj",
+        "g:object-pronoun-position",
+        "g:si-hypothetical",
+        "l:nevar",
+        "l:salir",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#a-14",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Tomás knew how to cook, he would make lunch.",
+      "es": "Si Tomás supiera cocinar, haría el almuerzo.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "sabe",
+        "supiera"
+      ],
+      "answer": 1,
+      "why": "It is imaginary, so the past subjunctive and the would form.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:almuerzo",
+        "l:cocinar",
+        "l:hacer",
+        "l:saber",
+        "p:saber-conocer"
       ]
     }
   ]

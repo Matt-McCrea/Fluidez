@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "I don't remember closing the door.",
+  "es": "No recuerdo haber cerrado la puerta.",
+  "gap": [
+   12,
+   25
+  ],
+  "options": [
+   "haber cerrado",
+   "que Vale cerró"
+  ],
+  "answer": 0,
+  "why": "The same person forgets and did it: haber."
+ },
+ {
+  "id": "2",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "I don't remember Vale closing the door.",
+  "es": "No recuerdo que Vale cerrara la puerta.",
+  "gap": [
+   12,
+   28
+  ],
+  "options": [
+   "haber cerrado",
+   "que Vale cerrara"
+  ],
+  "answer": 1,
+  "why": "Vale is a new subject: que plus subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "Tomás doesn't remember saying that.",
+  "es": "Tomás no recuerda haberlo dicho.",
+  "gap": [
+   18,
+   31
+  ],
+  "options": [
+   "haberlo dicho",
+   "que yo lo dijera"
+  ],
+  "answer": 0,
+  "why": "Same person, so haber."
+ },
+ {
+  "id": "4",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "Tomás doesn't remember me saying that.",
+  "es": "Tomás no recuerda que yo lo dijera.",
+  "gap": [
+   18,
+   34
+  ],
+  "options": [
+   "haberlo dicho",
+   "que yo lo dijera"
+  ],
+  "answer": 1,
+  "why": "A different subject, me, so que."
+ },
+ {
+  "id": "5",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "I don't remember meeting Rosa.",
+  "es": "No recuerdo haber conocido a Rosa.",
+  "gap": [
+   12,
+   26
+  ],
+  "options": [
+   "haber conocido",
+   "que Vale conociera"
+  ],
+  "answer": 0,
+  "why": "The same person: haber."
+ },
+ {
+  "id": "6",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "I don't remember Rosa meeting Vale.",
+  "es": "No recuerdo que Rosa conociera a Vale.",
+  "gap": [
+   12,
+   30
+  ],
+  "options": [
+   "haber conocido",
+   "que Rosa conociera"
+  ],
+  "answer": 1,
+  "why": "Rosa is a new subject: que."
+ },
+ {
+  "id": "7",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "I don't remember paying anything.",
+  "es": "No recuerdo haber pagado nada.",
+  "gap": [
+   12,
+   24
+  ],
+  "options": [
+   "haber pagado",
+   "que Vale pagara"
+  ],
+  "answer": 0,
+  "why": "Same person: haber."
+ },
+ {
+  "id": "8",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "I don't remember them paying.",
+  "es": "No recuerdo que ellos pagaran.",
+  "gap": [
+   12,
+   29
+  ],
+  "options": [
+   "haber pagado",
+   "que ellos pagaran"
+  ],
+  "answer": 1,
+  "why": "They are a new subject: que."
+ },
+ {
+  "id": "9",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "Rosa doesn't remember leaving the bag here.",
+  "es": "Rosa no recuerda haber dejado la bolsa aquí.",
+  "gap": [
+   17,
+   29
+  ],
+  "options": [
+   "haber dejado",
+   "que Vale dejara"
+  ],
+  "answer": 0,
+  "why": "Same person: haber."
+ },
+ {
+  "id": "10",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "Rosa doesn't remember Tomás leaving the bag here.",
+  "es": "Rosa no recuerda que Tomás dejara la bolsa aquí.",
+  "gap": [
+   17,
+   33
+  ],
+  "options": [
+   "haber dejado",
+   "que Tomás dejara"
+  ],
+  "answer": 1,
+  "why": "Tomás is a new subject: que."
+ },
+ {
+  "id": "11",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "We don't remember being there.",
+  "es": "No recordamos haber estado allá.",
+  "gap": [
+   14,
+   26
+  ],
+  "options": [
+   "haber estado",
+   "que Vale estuviera"
+  ],
+  "answer": 0,
+  "why": "Same people: haber."
+ },
+ {
+  "id": "12",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "We don't remember Don Hernando being there.",
+  "es": "No recordamos que don Hernando estuviera allá.",
+  "gap": [
+   14,
+   40
+  ],
+  "options": [
+   "haber estado",
+   "que don Hernando estuviera"
+  ],
+  "answer": 1,
+  "why": "Don Hernando is new: que."
+ },
+ {
+  "id": "13",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "I don't remember taking that medicine.",
+  "es": "No recuerdo haber tomado esa medicina.",
+  "gap": [
+   12,
+   24
+  ],
+  "options": [
+   "haber tomado",
+   "que Vale tomara"
+  ],
+  "answer": 0,
+  "why": "Same person: haber."
+ },
+ {
+  "id": "14",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "I don't remember you taking that medicine.",
+  "es": "No recuerdo que tú tomaras esa medicina.",
+  "gap": [
+   12,
+   26
+  ],
+  "options": [
+   "haber tomado",
+   "que tú tomaras"
+  ],
+  "answer": 1,
+  "why": "You are a new subject: que."
+ },
+ {
+  "id": "15",
+  "side": "p:same-subject-haber",
+  "rung": 1,
+  "en": "Vale doesn't remember writing to him.",
+  "es": "Vale no recuerda haberle escrito.",
+  "gap": [
+   17,
+   32
+  ],
+  "options": [
+   "haberle escrito",
+   "que Tomás le escribiera"
+  ],
+  "answer": 0,
+  "why": "Same person: haber."
+ },
+ {
+  "id": "16",
+  "side": "p:no-recuerdo-que-subj",
+  "rung": 1,
+  "en": "Vale doesn't remember her mother writing to her.",
+  "es": "Vale no recuerda que su mamá le escribiera.",
+  "gap": [
+   17,
+   42
+  ],
+  "options": [
+   "haberle escrito",
+   "que su mamá le escribiera"
+  ],
+  "answer": 1,
+  "why": "Her mother is new: que."
+ }
+]

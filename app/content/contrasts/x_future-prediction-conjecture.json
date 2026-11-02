@@ -181,6 +181,266 @@
         "l:estar",
         "p:cerca-de"
       ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-2",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "Next year there will be more tourists.",
+      "es": "El año que viene habrá más turistas.",
+      "gap": [
+        17,
+        22
+      ],
+      "options": [
+        "hubo",
+        "habrá"
+      ],
+      "answer": 1,
+      "why": "A prediction about next year uses the future.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:año",
+        "l:turista",
+        "l:venir",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-4",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "I'll be there at six, I promise.",
+      "es": "Estaré allá a las seis, te lo prometo.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Estuve",
+        "Estaré"
+      ],
+      "answer": 1,
+      "why": "A promise about later uses the future.",
+      "requires": [
+        "c:te-lo-prometo",
+        "g:estar-location-states",
+        "g:future-promises",
+        "g:gender-articles",
+        "l:allá",
+        "l:estar",
+        "l:prometer",
+        "p:aqui-ahi-alla",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-6",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "Tomorrow it will be sunny in Bogotá.",
+      "es": "Mañana hará sol en Bogotá.",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "hizo",
+        "hará"
+      ],
+      "answer": 1,
+      "why": "A forecast about tomorrow uses the future.",
+      "requires": [
+        "g:future-promises",
+        "l:hacer",
+        "l:mañana",
+        "l:sol",
+        "p:hace-frio"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-7",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Don Hernando must know the owner.",
+      "es": "Don Hernando conocerá al dueño.",
+      "gap": [
+        13,
+        21
+      ],
+      "options": [
+        "conocerá",
+        "conoce"
+      ],
+      "answer": 0,
+      "why": "The English says must, so it is a guess and takes the future.",
+      "requires": [
+        "g:future-conjecture",
+        "g:gender-articles",
+        "l:conocer",
+        "l:dueño",
+        "p:personal-a",
+        "p:saber-conocer",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-8",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "You'll see, everything will go well.",
+      "es": "Ya verás, todo saldrá bien.",
+      "gap": [
+        15,
+        21
+      ],
+      "options": [
+        "salió",
+        "saldrá"
+      ],
+      "answer": 1,
+      "why": "A prediction about what is coming uses the future.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:todo-saldra-bien",
+        "g:future-promises",
+        "l:bien",
+        "l:salir",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-9",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "She must live far away.",
+      "es": "Vivirá muy lejos.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Vivirá",
+        "Vive"
+      ],
+      "answer": 0,
+      "why": "The English says must, so it is a guess and takes the future.",
+      "requires": [
+        "g:future-promises",
+        "l:lejos",
+        "l:vivir",
+        "p:cerca-de",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-10",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "In June we will travel to Cartagena.",
+      "es": "En junio viajaremos a Cartagena.",
+      "gap": [
+        9,
+        19
+      ],
+      "options": [
+        "viajábamos",
+        "viajaremos"
+      ],
+      "answer": 1,
+      "why": "A plan for June uses the future.",
+      "requires": [
+        "g:future-promises",
+        "l:junio",
+        "l:viajar"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-11",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "It must be Tomás.",
+      "es": "Será Tomás.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Será",
+        "Es"
+      ],
+      "answer": 0,
+      "why": "The English says must, so it is a guess and takes the future.",
+      "requires": [
+        "g:future-conjecture",
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-12",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "Next week the café will open at seven.",
+      "es": "La próxima semana el café abrirá a las siete.",
+      "gap": [
+        26,
+        32
+      ],
+      "options": [
+        "abrió",
+        "abrirá"
+      ],
+      "answer": 1,
+      "why": "Something coming next week uses the future.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:future-promises",
+        "g:gender-articles",
+        "l:abrir",
+        "l:café",
+        "l:próximo",
+        "l:semana",
+        "p:telling-time",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#a-13",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "They must have about twenty tables.",
+      "es": "Tendrán unas veinte mesas.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Tendrán",
+        "Tienen"
+      ],
+      "answer": 0,
+      "why": "The English says must, so it is a guess and takes the future.",
+      "requires": [
+        "g:future-conjecture",
+        "g:gender-articles",
+        "l:mesa",
+        "l:tener",
+        "p:aproximar-cifras",
+        "p:unos-approx"
+      ]
     }
   ]
 }

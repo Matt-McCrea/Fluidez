@@ -1,0 +1,138 @@
+[
+ {
+  "id": "1",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "I am very tired.",
+  "es": "Estoy muy cansado.",
+  "gap": [
+   6,
+   9
+  ],
+  "options": [
+   "muy",
+   "mucho"
+  ],
+  "answer": 0,
+  "why": "Before an adjective, muy."
+ },
+ {
+  "id": "2",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "Rosa eats a lot.",
+  "es": "Rosa come mucho.",
+  "gap": [
+   10,
+   15
+  ],
+  "options": [
+   "muy",
+   "mucho"
+  ],
+  "answer": 1,
+  "why": "After a verb, mucho."
+ },
+ {
+  "id": "4",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "The soup is very hot.",
+  "es": "La sopa está muy caliente.",
+  "gap": [
+   13,
+   16
+  ],
+  "options": [
+   "mucha",
+   "muy"
+  ],
+  "answer": 1,
+  "why": "Before an adjective, muy."
+ },
+ {
+  "id": "5",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "There are a lot of people.",
+  "es": "Hay mucha gente.",
+  "gap": [
+   4,
+   9
+  ],
+  "options": [
+   "mucha",
+   "muy"
+  ],
+  "answer": 0,
+  "why": "Gente is a noun, so mucha."
+ },
+ {
+  "id": "6",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "Tomás walks very slowly.",
+  "es": "Tomás camina muy despacio.",
+  "gap": [
+   13,
+   16
+  ],
+  "options": [
+   "mucho",
+   "muy"
+  ],
+  "answer": 1,
+  "why": "Before an adverb, muy."
+ },
+ {
+  "id": "7",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "It is very hot today. (There is a lot of heat.)",
+  "es": "Hoy hace mucho calor.",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "mucho",
+   "muy"
+  ],
+  "answer": 0,
+  "why": "Calor is a noun, so mucho."
+ },
+ {
+  "id": "8",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "I like you a lot.",
+  "es": "Me gustas mucho.",
+  "gap": [
+   10,
+   15
+  ],
+  "options": [
+   "muy",
+   "mucho"
+  ],
+  "answer": 1,
+  "why": "After a verb, mucho."
+ },
+ {
+  "id": "9",
+  "side": "g:quantifiers",
+  "rung": 1,
+  "en": "Rosa has a lot of friends.",
+  "es": "Rosa tiene muchos amigos.",
+  "gap": [
+   11,
+   17
+  ],
+  "options": [
+   "muchos",
+   "muy"
+  ],
+  "answer": 0,
+  "why": "Amigos is a noun, so muchos."
+ }
+]

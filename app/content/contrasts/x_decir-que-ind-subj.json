@@ -90,6 +90,450 @@
         "p:possessives-basic",
         "p:preguntar-pedir"
       ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-1",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Vale says you're coming tomorrow.",
+      "es": "Vale dice que vienes mañana.",
+      "gap": [
+        14,
+        20
+      ],
+      "options": [
+        "vienes",
+        "vengas"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-2",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Rosa says the café is closed.",
+      "es": "Rosa dice que el café está cerrado.",
+      "gap": [
+        22,
+        26
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "c:abierto-cerrado",
+        "g:gender-articles",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:decir",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-3",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "My dad says I work a lot.",
+      "es": "Mi papá dice que trabajo mucho.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "trabajo",
+        "trabaje"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:present-ar",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:papá",
+        "l:trabajar",
+        "p:possessives-basic",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-4",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Tomás says he's hungry.",
+      "es": "Tomás dice que tiene hambre.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:hambre",
+        "l:tener",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-5",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Don Hernando says Simón came back yesterday.",
+      "es": "Don Hernando dice que Simón volvió ayer.",
+      "gap": [
+        28,
+        34
+      ],
+      "options": [
+        "volvió",
+        "vuelva"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:preterite-er-ir",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:ayer",
+        "l:decir",
+        "l:volver",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-6",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Mariana says she can come.",
+      "es": "Mariana dice que puede venir.",
+      "gap": [
+        17,
+        22
+      ],
+      "options": [
+        "puede",
+        "pueda"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "g:verb-infinitive",
+        "l:decir",
+        "l:poder",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-7",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "They tell me the coffee here is very good.",
+      "es": "Me dicen que el tinto es muy bueno aquí.",
+      "gap": [
+        22,
+        24
+      ],
+      "options": [
+        "es",
+        "sea"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:aquí",
+        "l:bueno",
+        "l:decir",
+        "l:ser",
+        "l:tinto",
+        "p:aqui-ahi-alla",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:me-te-nos-objects",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-8",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "Vale says you already finished.",
+      "es": "Vale dice que ya terminaste.",
+      "gap": [
+        17,
+        27
+      ],
+      "options": [
+        "terminaste",
+        "termines"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:preterite-ar",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:terminar"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-9",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "They say it's going to rain tomorrow.",
+      "es": "Dicen que mañana va a llover.",
+      "gap": [
+        17,
+        19
+      ],
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "answer": 0,
+      "why": "Passing on a fact keeps the ordinary verb.",
+      "requires": [
+        "g:ir-a-plans",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:ir",
+        "l:llover",
+        "l:mañana",
+        "p:me-contaron-que"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-10",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Vale says to come tomorrow.",
+      "es": "Vale dice que vengas mañana.",
+      "gap": [
+        14,
+        20
+      ],
+      "options": [
+        "vengas",
+        "vienes"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-11",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Rosa says to close the café.",
+      "es": "Rosa dice que cierres el café.",
+      "gap": [
+        14,
+        21
+      ],
+      "options": [
+        "cierres",
+        "cierras"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:decir"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-13",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Tomás says you should eat something.",
+      "es": "Tomás dice que comas algo.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "comas",
+        "comes"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:comer",
+        "l:decir",
+        "p:indefinites-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-14",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Don Hernando says Simón should come back soon.",
+      "es": "Don Hernando dice que Simón vuelva pronto.",
+      "gap": [
+        28,
+        34
+      ],
+      "options": [
+        "vuelva",
+        "vuelve"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:pronto",
+        "l:volver",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-15",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Mariana says you should call your mom.",
+      "es": "Mariana dice que llames a tu mamá.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "llames",
+        "llamas"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:llamar",
+        "l:mamá",
+        "p:personal-a",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-16",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "The doctor says you should rest more.",
+      "es": "El doctor dice que descanses más.",
+      "gap": [
+        19,
+        28
+      ],
+      "options": [
+        "descanses",
+        "descansas"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "c:que-descanses",
+        "g:gender-articles",
+        "g:reported-requests",
+        "g:stem-e-i",
+        "l:decir",
+        "l:descansar",
+        "l:doctor"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#a-17",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "Rosa says not to go out alone.",
+      "es": "Rosa dice que no salgas solo.",
+      "gap": [
+        17,
+        23
+      ],
+      "options": [
+        "salgas",
+        "sales"
+      ],
+      "answer": 0,
+      "why": "Passing on an order or a wish takes the subjunctive.",
+      "requires": [
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:decir",
+        "l:salir"
+      ]
     }
   ]
 }

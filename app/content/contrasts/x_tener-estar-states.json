@@ -197,6 +197,213 @@
         "p:bien-bueno",
         "p:bien-mal-vs-bueno-malo"
       ]
+    },
+    {
+      "id": "x:tener-estar-states#a-2",
+      "node": "x:tener-estar-states",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Vale is tired.",
+      "es": "Vale está cansada.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "tiene",
+        "está"
+      ],
+      "answer": 1,
+      "why": "Tired is a describing word, so estar.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-4",
+      "node": "x:tener-estar-states",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Rosa is ill today.",
+      "es": "Rosa está enferma hoy.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "tiene",
+        "está"
+      ],
+      "answer": 1,
+      "why": "Ill describes her, so estar.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:enfermo",
+        "l:estar",
+        "l:hoy"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-5",
+      "node": "x:tener-estar-states",
+      "side": "p:tener-hambre",
+      "rung": 1,
+      "en": "Are you cold? (to a friend)",
+      "es": "¿Tienes frío?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Tienes",
+        "Estás"
+      ],
+      "answer": 0,
+      "why": "Cold is a noun here, so you have it.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:frío",
+        "l:tener",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-7",
+      "node": "x:tener-estar-states",
+      "side": "p:tener-hambre",
+      "rung": 1,
+      "en": "The kids are sleepy.",
+      "es": "Los niños tienen sueño.",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "tienen",
+        "están"
+      ],
+      "answer": 0,
+      "why": "Sleep is a noun, so they have it.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:niño",
+        "l:sueño",
+        "l:tener",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-8",
+      "node": "x:tener-estar-states",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "I'm busy right now.",
+      "es": "Estoy ocupado ahora.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Tengo",
+        "Estoy"
+      ],
+      "answer": 1,
+      "why": "Busy is a describing word.",
+      "requires": [
+        "g:estar-location-states",
+        "l:ahora",
+        "l:estar",
+        "l:ocupado"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-9",
+      "node": "x:tener-estar-states",
+      "side": "p:tener-hambre",
+      "rung": 1,
+      "en": "Don Hernando is afraid of the dog.",
+      "es": "Don Hernando tiene miedo del perro.",
+      "gap": [
+        13,
+        18
+      ],
+      "options": [
+        "tiene",
+        "está"
+      ],
+      "answer": 0,
+      "why": "Fear is something you have.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:miedo",
+        "l:perro",
+        "l:tener",
+        "p:me-da-miedo-que",
+        "p:senor-don-article",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-10",
+      "node": "x:tener-estar-states",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Are you all fine?",
+      "es": "¿Ustedes están bien?",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "tienen",
+        "están"
+      ],
+      "answer": 1,
+      "why": "Bien describes how you are.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:estar-location-states",
+        "l:bien",
+        "l:estar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:tener-estar-states#a-11",
+      "node": "x:tener-estar-states",
+      "side": "p:tener-hambre",
+      "rung": 1,
+      "en": "I'm not hungry, I'm just thirsty.",
+      "es": "No tengo hambre, solo tengo sed.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "tengo",
+        "estoy"
+      ],
+      "answer": 0,
+      "why": "Hunger is a noun, so tener.",
+      "requires": [
+        "c:tengo",
+        "g:yo-irregular",
+        "l:hambre",
+        "l:sed",
+        "l:tener",
+        "p:sobre-todo-solo",
+        "p:tener-hambre"
+      ]
     }
   ]
 }

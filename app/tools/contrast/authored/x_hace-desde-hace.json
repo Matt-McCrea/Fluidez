@@ -1,0 +1,87 @@
+[
+ {
+  "id": "10",
+  "side": "g:hace-que-desde",
+  "rung": 1,
+  "en": "Rosa has been waiting for an hour.",
+  "es": "Rosa espera desde hace una hora.",
+  "gap": [
+   12,
+   22
+  ],
+  "options": [
+   "desde",
+   "desde hace"
+  ],
+  "answer": 1,
+  "why": "She is still waiting, so desde hace."
+ },
+ {
+  "id": "11",
+  "side": "g:hace-que-desde",
+  "rung": 1,
+  "en": "I have had this job since March.",
+  "es": "Tengo este trabajo desde marzo.",
+  "gap": [
+   19,
+   24
+  ],
+  "options": [
+   "desde",
+   "desde hace"
+  ],
+  "answer": 0,
+  "why": "A month is a starting point, so desde."
+ },
+ {
+  "id": "13",
+  "side": "g:hace-que-desde",
+  "rung": 1,
+  "en": "Don Hernando has lived here for ten years.",
+  "es": "Don Hernando vive aquí desde hace diez años.",
+  "gap": [
+   23,
+   33
+  ],
+  "options": [
+   "desde hace",
+   "desde"
+  ],
+  "answer": 0,
+  "why": "An amount of time needs desde hace."
+ },
+ {
+  "id": "15",
+  "side": "g:hace-que-desde",
+  "rung": 1,
+  "en": "It has rained since Monday.",
+  "es": "Llueve desde el lunes.",
+  "gap": [
+   7,
+   12
+  ],
+  "options": [
+   "desde",
+   "desde hace"
+  ],
+  "answer": 0,
+  "why": "A day is a starting point, so desde."
+ },
+ {
+  "id": "16",
+  "side": "g:hace-ago",
+  "rung": 1,
+  "en": "He left ten minutes ago.",
+  "es": "Salió hace diez minutos.",
+  "gap": [
+   6,
+   10
+  ],
+  "options": [
+   "desde hace",
+   "hace"
+  ],
+  "answer": 1,
+  "why": "A finished event, so hace."
+ }
+]

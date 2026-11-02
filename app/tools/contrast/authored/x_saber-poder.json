@@ -1,0 +1,138 @@
+[
+ {
+  "id": "2",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Today Vale can't go out.",
+  "es": "Hoy Vale no puede salir.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "sabe",
+   "puede"
+  ],
+  "answer": 1,
+  "why": "Free or able right now, so poder."
+ },
+ {
+  "id": "6",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Do you kids know how to swim?",
+  "es": "¿Saben nadar, chicos?",
+  "gap": [
+   1,
+   6
+  ],
+  "options": [
+   "Pueden",
+   "Saben"
+  ],
+  "answer": 1,
+  "why": "A learned skill, so saber."
+ },
+ {
+  "id": "7",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "My sister knows how to dance salsa.",
+  "es": "Mi hermana sabe bailar salsa.",
+  "gap": [
+   11,
+   15
+  ],
+  "options": [
+   "sabe",
+   "puede"
+  ],
+  "answer": 0,
+  "why": "A learned skill, so saber."
+ },
+ {
+  "id": "8",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Can you help me with this? (to a friend)",
+  "es": "¿Puedes ayudarme con esto?",
+  "gap": [
+   1,
+   7
+  ],
+  "options": [
+   "Sabes",
+   "Puedes"
+  ],
+  "answer": 1,
+  "why": "Free or able right now, so poder."
+ },
+ {
+  "id": "9",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Hernando can't walk much anymore.",
+  "es": "Hernando ya no puede caminar mucho.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "puede",
+   "sabe"
+  ],
+  "answer": 0,
+  "why": "Free or able right now, so poder."
+ },
+ {
+  "id": "11",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "The kids can't play because it's raining.",
+  "es": "Los niños no pueden jugar porque llueve.",
+  "gap": [
+   13,
+   19
+  ],
+  "options": [
+   "pueden",
+   "saben"
+  ],
+  "answer": 0,
+  "why": "Free or able right now, so poder."
+ },
+ {
+  "id": "12",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Do you know how to make arepas? (to a friend)",
+  "es": "¿Sabes hacer arepas?",
+  "gap": [
+   1,
+   6
+  ],
+  "options": [
+   "Puedes",
+   "Sabes"
+  ],
+  "answer": 1,
+  "why": "A learned skill, so saber."
+ },
+ {
+  "id": "14",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Rosa knows how to fix motorcycles.",
+  "es": "Rosa sabe arreglar motos.",
+  "gap": [
+   5,
+   9
+  ],
+  "options": [
+   "puede",
+   "sabe"
+  ],
+  "answer": 1,
+  "why": "A learned skill, so saber."
+ }
+]

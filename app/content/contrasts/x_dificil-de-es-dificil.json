@@ -230,6 +230,33 @@
       ]
     },
     {
+      "id": "x:dificil-de-es-dificil#a-6",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "It is hard to say those words.",
+      "es": "Es difícil decir esas palabras.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "Es plus a verb keeps difícil single.",
+      "requires": [
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:decir",
+        "l:difícil",
+        "l:palabra",
+        "l:ser",
+        "p:es-adj-inf"
+      ]
+    },
+    {
       "id": "x:dificil-de-es-dificil#a-7",
       "node": "x:dificil-de-es-dificil",
       "side": "p:dificil-de-inf",

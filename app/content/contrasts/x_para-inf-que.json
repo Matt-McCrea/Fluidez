@@ -143,6 +143,427 @@
         "p:para-inf",
         "p:para-inf-purpose"
       ]
+    },
+    {
+      "id": "x:para-inf-que#a-1",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I am going to the market to buy fruit.",
+      "es": "Voy al mercado para comprar fruta.",
+      "gap": [
+        20,
+        33
+      ],
+      "options": [
+        "comprar fruta",
+        "que compren fruta"
+      ],
+      "answer": 0,
+      "why": "Same person goes and buys: infinitive.",
+      "requires": [
+        "c:voy-vas",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:comprar",
+        "l:fruta",
+        "l:ir",
+        "l:mercado",
+        "p:ir-a-venir-de-place",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-2",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "I am going to the market so they can buy fruit.",
+      "es": "Voy al mercado para que ellos compren fruta.",
+      "gap": [
+        20,
+        43
+      ],
+      "options": [
+        "comprar fruta",
+        "que ellos compren fruta"
+      ],
+      "answer": 1,
+      "why": "They buy, I go: para que.",
+      "requires": [
+        "c:voy-vas",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:para-que",
+        "g:subj-wanting",
+        "l:comprar",
+        "l:fruta",
+        "l:ir",
+        "l:mercado",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-3",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Rosa called to ask for the address.",
+      "es": "Rosa llamó para pedir la dirección.",
+      "gap": [
+        16,
+        34
+      ],
+      "options": [
+        "pedir la dirección",
+        "que pidan la dirección"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:dirección",
+        "l:llamar",
+        "l:pedir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-4",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "Rosa called so that Tomás could ask for the address.",
+      "es": "Rosa llamó para que Tomás pidiera la dirección.",
+      "gap": [
+        16,
+        46
+      ],
+      "options": [
+        "pedir la dirección",
+        "que Tomás pidiera la dirección"
+      ],
+      "answer": 1,
+      "why": "Different person: para que.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:para-que",
+        "g:preterite-ar",
+        "l:dirección",
+        "l:llamar",
+        "l:pedir"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-5",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I study at night to work in the day.",
+      "es": "Estudio de noche para trabajar de día.",
+      "gap": [
+        22,
+        37
+      ],
+      "options": [
+        "trabajar de día",
+        "que trabaje de día"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:día",
+        "l:estudiar",
+        "l:noche",
+        "l:trabajar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-6",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "I study at night so that you can work in the day.",
+      "es": "Estudio de noche para que tú trabajes de día.",
+      "gap": [
+        22,
+        44
+      ],
+      "options": [
+        "trabajar de día",
+        "que tú trabajes de día"
+      ],
+      "answer": 1,
+      "why": "Different person: para que.",
+      "requires": [
+        "g:para-que",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:día",
+        "l:estudiar",
+        "l:noche",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-7",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Vale opens early to sell more.",
+      "es": "Vale abre temprano para vender más.",
+      "gap": [
+        24,
+        34
+      ],
+      "options": [
+        "vender más",
+        "que vendan más"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:present-er-ir",
+        "l:abrir",
+        "l:temprano",
+        "l:vender",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-8",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "Vale opens early so that people can eat breakfast.",
+      "es": "Vale abre temprano para que la gente desayune.",
+      "gap": [
+        24,
+        45
+      ],
+      "options": [
+        "desayunar",
+        "que la gente desayune"
+      ],
+      "answer": 1,
+      "why": "Different people: para que.",
+      "requires": [
+        "g:gender-articles",
+        "g:para-que",
+        "g:present-er-ir",
+        "g:subj-wanting",
+        "l:abrir",
+        "l:desayunar",
+        "l:gente",
+        "l:temprano",
+        "p:la-gente-singular"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-9",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "We leave now to arrive on time.",
+      "es": "Salimos ya para llegar a tiempo.",
+      "gap": [
+        16,
+        31
+      ],
+      "options": [
+        "llegar a tiempo",
+        "que lleguen a tiempo"
+      ],
+      "answer": 0,
+      "why": "Same people: infinitive.",
+      "requires": [
+        "g:present-ar",
+        "g:present-er-ir",
+        "l:llegar",
+        "l:parar",
+        "l:salir",
+        "l:tiempo",
+        "p:llegar-a-tiempo",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-10",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "We leave now so that you arrive on time.",
+      "es": "Salimos ya para que ustedes lleguen a tiempo.",
+      "gap": [
+        16,
+        44
+      ],
+      "options": [
+        "llegar a tiempo",
+        "que ustedes lleguen a tiempo"
+      ],
+      "answer": 1,
+      "why": "Different people: para que.",
+      "requires": [
+        "g:para-que",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:subj-wanting",
+        "l:llegar",
+        "l:parar",
+        "l:salir",
+        "l:tiempo",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-11",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Tomás saves money to travel.",
+      "es": "Tomás ahorra para viajar.",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "viajar",
+        "que viaje su mamá"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:ahorrar",
+        "l:viajar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-12",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "Tomás saves money so that his mother can travel.",
+      "es": "Tomás ahorra para que su mamá viaje.",
+      "gap": [
+        18,
+        35
+      ],
+      "options": [
+        "viajar",
+        "que su mamá viaje"
+      ],
+      "answer": 1,
+      "why": "Different person: para que.",
+      "requires": [
+        "g:para-que",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:ahorrar",
+        "l:mamá",
+        "l:viajar",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-13",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I call you to say hi.",
+      "es": "Te llamo para saludarte.",
+      "gap": [
+        14,
+        23
+      ],
+      "options": [
+        "saludarte",
+        "que te salude"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:object-pronoun-position",
+        "g:present-ar",
+        "l:llamar",
+        "l:saludar",
+        "p:me-te-nos-objects",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-14",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "I leave the light on so that the kids see.",
+      "es": "Dejo la luz prendida para que los niños vean.",
+      "gap": [
+        26,
+        44
+      ],
+      "options": [
+        "ver",
+        "que los niños vean"
+      ],
+      "answer": 1,
+      "why": "Different people: para que.",
+      "requires": [
+        "g:gender-articles",
+        "g:para-que",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:dejar",
+        "l:luz",
+        "l:niño",
+        "l:prender",
+        "l:ver",
+        "p:encontrar-participle"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#a-15",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Don Hernando walks every day to stay healthy.",
+      "es": "Don Hernando camina todos los días para estar sano.",
+      "gap": [
+        40,
+        50
+      ],
+      "options": [
+        "estar sano",
+        "que esté sano su hijo"
+      ],
+      "answer": 0,
+      "why": "Same person: infinitive.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:caminar",
+        "l:día",
+        "l:estar",
+        "l:sano",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:senor-don-article",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
     }
   ]
 }

@@ -103,6 +103,411 @@
         "p:demonstratives-basic",
         "p:possessives-basic"
       ]
+    },
+    {
+      "id": "x:tu-usted#a-1",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Vale, do you want coffee? (to a friend)",
+      "es": "Vale, ¿quieres café?",
+      "gap": [
+        7,
+        14
+      ],
+      "options": [
+        "quieres",
+        "quiere"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú, which ends in s.",
+      "requires": [
+        "g:stem-boot",
+        "l:café",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-2",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Madam, do you want coffee? (formal)",
+      "es": "Señora, ¿quiere café?",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "quieres",
+        "quiere"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "g:stem-boot",
+        "l:café",
+        "l:querer",
+        "l:señora"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-3",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Tomás, where do you live? (to a friend)",
+      "es": "Tomás, ¿dónde vives?",
+      "gap": [
+        14,
+        19
+      ],
+      "options": [
+        "vives",
+        "vive"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú.",
+      "requires": [
+        "c:vivo-en",
+        "g:present-er-ir",
+        "l:dónde",
+        "l:vivir"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-4",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Don Hernando, where do you live? (formal)",
+      "es": "Don Hernando, ¿dónde vive?",
+      "gap": [
+        21,
+        25
+      ],
+      "options": [
+        "vives",
+        "vive"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "g:present-er-ir",
+        "g:questions",
+        "l:dónde",
+        "l:vivir",
+        "p:don-dona-nombre",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-5",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Is this your bag? (to a friend)",
+      "es": "¿Este es tu bolso?",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "tu",
+        "su"
+      ],
+      "answer": 0,
+      "why": "Your for a friend is tu.",
+      "requires": [
+        "g:ser-identity",
+        "l:bolso",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-6",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Sir, is this your bag? (formal)",
+      "es": "Señor, ¿este es su bolso?",
+      "gap": [
+        16,
+        18
+      ],
+      "options": [
+        "tu",
+        "su"
+      ],
+      "answer": 1,
+      "why": "Your in formal speech is su.",
+      "requires": [
+        "g:ser-identity",
+        "l:bolso",
+        "l:ser",
+        "l:señor",
+        "p:demonstratives-basic",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-7",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Do you have time today? (to a friend)",
+      "es": "¿Tienes tiempo hoy?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Tienes",
+        "Tiene"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:hoy",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-8",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Do you have time today, doctor? (formal)",
+      "es": "Doctor, ¿tiene tiempo hoy?",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "tienes",
+        "tiene"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:doctor",
+        "l:hoy",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-9",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Can you help me, Rosa? (to a friend)",
+      "es": "Rosa, ¿me puedes ayudar?",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "puedes",
+        "puede"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú.",
+      "requires": [
+        "c:me-puede-ayudar",
+        "g:verb-infinitive",
+        "l:ayudar",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-10",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Can you help me, sir? (formal)",
+      "es": "Señor, ¿me puede ayudar?",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "puedes",
+        "puede"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "c:me-puede-ayudar",
+        "g:verb-infinitive",
+        "l:ayudar",
+        "l:poder",
+        "l:señor"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-11",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "How are you, Vale? (to a friend)",
+      "es": "Vale, ¿cómo estás?",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "estás",
+        "está"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú.",
+      "requires": [
+        "c:como-estas",
+        "g:estar-location-states",
+        "l:cómo",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-12",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "How are you, Don Hernando? (formal)",
+      "es": "Don Hernando, ¿cómo está?",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "estás",
+        "está"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "c:como-estas",
+        "g:estar-location-states",
+        "l:cómo",
+        "l:estar",
+        "p:don-dona-nombre",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-13",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Your sister is nice. (to a friend)",
+      "es": "Tu hermana es simpática.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Tu",
+        "Su"
+      ],
+      "answer": 0,
+      "why": "Your for a friend is tu.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:hermana",
+        "l:ser",
+        "l:simpático",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-14",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Your house is very pretty, madam. (formal)",
+      "es": "Su casa es muy bonita, señora.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Tu",
+        "Su"
+      ],
+      "answer": 1,
+      "why": "Your in formal speech is su.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:bonito",
+        "l:casa",
+        "l:ser",
+        "l:señora",
+        "p:possessives-basic",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-15",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Do you know my brother? (to a friend)",
+      "es": "¿Conoces a mi hermano?",
+      "gap": [
+        1,
+        8
+      ],
+      "options": [
+        "Conoces",
+        "Conoce"
+      ],
+      "answer": 0,
+      "why": "A friend gets tú.",
+      "requires": [
+        "g:present-er-ir",
+        "l:conocer",
+        "l:hermano",
+        "p:personal-a",
+        "p:possessives-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:tu-usted#a-16",
+      "node": "x:tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Do you know my brother, sir? (formal)",
+      "es": "Señor, ¿conoce a mi hermano?",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "conoces",
+        "conoce"
+      ],
+      "answer": 1,
+      "why": "Formal takes the usted form.",
+      "requires": [
+        "g:present-er-ir",
+        "l:conocer",
+        "l:hermano",
+        "l:señor",
+        "p:personal-a",
+        "p:possessives-basic",
+        "p:saber-conocer"
+      ]
     }
   ]
 }

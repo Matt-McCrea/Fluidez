@@ -2,6 +2,7 @@
 // name, a number or a cognate), the ladder adapts and stays short, and
 // placing late seeds the skipped weeks without a review avalanche.
 import { beforeAll, describe, expect, it } from 'vitest';
+import { admissible, dayPos } from '../../src/compiler';
 import { BAND_WARMUP_MINUTES } from '../../src/compiler/budget';
 import { Learner, MemoryStore, Rating } from '../../src/learner';
 import type { Band } from '../../src/content/schema';
@@ -329,6 +330,16 @@ describe('placement draws on the contrast store, and a failed skill is owed, not
   const order = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
   let levels: ReturnType<typeof probeLevels>;
   beforeAll(() => { levels = probeLevels(upper, 'sim'); }, 120_000);
+
+  it('a contrast item asks only what its level has taught: an item waiting in the store for later words stays out', () => {
+    const asked = levels.flatMap((l) => l.items.filter((i) => i.kind === 'contrast').map((i) => ({ i, l })));
+    expect(asked.length).toBeGreaterThan(0);
+    for (const { i, l } of asked) {
+      const here = dayPos(upper.course, l.unit, upper.course.units[l.unit].days.length - 1);
+      const it = upper.contrastItem(i.sentence)!;
+      expect(admissible(it.requires, (r) => (upper.course.teachPos.get(r) ?? Infinity) <= here, upper.course.nodes), it.id).toBe(true);
+    }
+  }, 60_000);
 
   it('contrast items are a large share of the upper levels, every one fair, none answerable from a name or a cognate', () => {
     const upperLevels = levels.filter((l) => order.indexOf(bandOf(l.unit)!) >= 2);

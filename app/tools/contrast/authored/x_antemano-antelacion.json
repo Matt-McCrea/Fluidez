@@ -1,121 +1,87 @@
 [
-  {
-    "id": "1",
-    "side": "p:con-antelacion",
-    "rung": 1,
-    "en": "We bought the tickets a month in advance.",
-    "es": "Compramos los boletos con un mes de antelación.",
-    "gap": [
-      36,
-      46
-    ],
-    "options": [
-      "antemano",
-      "antelación"
-    ],
-    "answer": 1,
-    "why": "A time amount takes con ... de antelación."
-  },
-  {
-    "id": "2",
-    "side": "c:gracias-de-antemano",
-    "rung": 1,
-    "en": "I thank you in advance for your help.",
-    "es": "Te agradezco de antemano tu ayuda.",
-    "gap": [
-      13,
-      24
-    ],
-    "options": [
-      "de antemano",
-      "con antelación"
-    ],
-    "answer": 0,
-    "why": "Thanking beforehand is de antemano."
-  },
-  {
-    "id": "3",
-    "side": "p:con-antelacion",
-    "rung": 1,
-    "en": "She told us a week ahead.",
-    "es": "Nos avisó con una semana de antelación.",
-    "gap": [
-      28,
-      38
-    ],
-    "options": [
-      "antemano",
-      "antelación"
-    ],
-    "answer": 1,
-    "why": "A span of time takes antelación."
-  },
-  {
-    "id": "4",
-    "side": "c:gracias-de-antemano",
-    "rung": 1,
-    "en": "I already knew the answer beforehand.",
-    "es": "Ya conocía la respuesta de antemano.",
-    "gap": [
-      24,
-      35
-    ],
-    "options": [
-      "de antemano",
-      "con antelación"
-    ],
-    "answer": 0,
-    "why": "Knowing something before is de antemano."
-  },
-  {
-    "id": "5",
-    "side": "c:gracias-de-antemano",
-    "rung": 1,
-    "en": "Sorry in advance for the mess.",
-    "es": "Perdón de antemano por el desorden.",
-    "gap": [
-      7,
-      18
-    ],
-    "options": [
-      "con antelación",
-      "de antemano"
-    ],
-    "answer": 1,
-    "why": "Apologizing ahead of time is de antemano."
-  },
-  {
-    "id": "6",
-    "side": "p:con-antelacion",
-    "rung": 1,
-    "en": "The restaurant asks you to book two days in advance.",
-    "es": "El restaurante pide reservar con dos días de antelación.",
-    "gap": [
-      45,
-      55
-    ],
-    "options": [
-      "antelación",
-      "antemano"
-    ],
-    "answer": 0,
-    "why": "Two days is a span, so antelación."
-  },
-  {
-    "id": "7",
-    "side": "c:gracias-de-antemano",
-    "rung": 2,
-    "en": "Vale was sure beforehand that it would go badly.",
-    "es": "Vale estaba segura de antemano de que saldría mal.",
-    "gap": [
-      19,
-      30
-    ],
-    "options": [
-      "con antelación",
-      "de antemano"
-    ],
-    "answer": 1,
-    "why": "Being sure before it happens is de antemano."
-  }
+ {
+  "id": "1",
+  "side": "p:con-antelacion",
+  "rung": 1,
+  "en": "We bought the tickets a month in advance.",
+  "es": "Compramos las boletas con un mes de antelación.",
+  "gap": [
+   36,
+   46
+  ],
+  "options": [
+   "antemano",
+   "antelación"
+  ],
+  "answer": 1,
+  "why": "A time amount takes con ... de antelación."
+ },
+ {
+  "id": "3",
+  "side": "p:con-antelacion",
+  "rung": 1,
+  "en": "She told us a week ahead.",
+  "es": "Nos avisó con una semana de antelación.",
+  "gap": [
+   28,
+   38
+  ],
+  "options": [
+   "antemano",
+   "antelación"
+  ],
+  "answer": 1,
+  "why": "A span of time takes antelación."
+ },
+ {
+  "id": "5",
+  "side": "c:gracias-de-antemano",
+  "rung": 1,
+  "en": "Sorry in advance for the mess.",
+  "es": "Perdón de antemano por el desorden.",
+  "gap": [
+   7,
+   18
+  ],
+  "options": [
+   "con antelación",
+   "de antemano"
+  ],
+  "answer": 1,
+  "why": "Apologizing ahead of time is de antemano."
+ },
+ {
+  "id": "6",
+  "side": "p:con-antelacion",
+  "rung": 1,
+  "en": "The restaurant asks you to book two days in advance.",
+  "es": "El restaurante pide reservar con dos días de antelación.",
+  "gap": [
+   45,
+   55
+  ],
+  "options": [
+   "antelación",
+   "antemano"
+  ],
+  "answer": 0,
+  "why": "Two days is a span, so antelación."
+ },
+ {
+  "id": "7",
+  "side": "c:gracias-de-antemano",
+  "rung": 2,
+  "en": "Vale was sure beforehand that it would go badly.",
+  "es": "Vale estaba segura de antemano de que saldría mal.",
+  "gap": [
+   19,
+   30
+  ],
+  "options": [
+   "con antelación",
+   "de antemano"
+  ],
+  "answer": 1,
+  "why": "Being sure before it happens is de antemano."
+ }
 ]

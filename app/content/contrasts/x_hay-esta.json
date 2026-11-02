@@ -325,6 +325,198 @@
         "g:hay-vs-esta",
         "l:lámpara"
       ]
+    },
+    {
+      "id": "x:hay-esta#a-1",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "Excuse me, is there a bank near here?",
+      "es": "Disculpe, ¿hay un banco cerca de aquí?",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 0,
+      "why": "A bank, any bank, is new to the talk.",
+      "requires": [
+        "c:hay",
+        "c:perdon-disculpe",
+        "g:commands-usted",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "l:aquí",
+        "l:banco",
+        "l:cerca",
+        "l:disculpar",
+        "p:aqui-ahi-alla",
+        "p:cerca-de",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-2",
+      "node": "x:hay-esta",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Excuse me, is the bank near here?",
+      "es": "Disculpe, ¿el banco está cerca de aquí?",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The bank is a known one, so está.",
+      "requires": [
+        "c:perdon-disculpe",
+        "g:commands-usted",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:aquí",
+        "l:banco",
+        "l:cerca",
+        "l:disculpar",
+        "l:estar",
+        "p:aqui-ahi-alla",
+        "p:cerca-de",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-3",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "In the kitchen there's a pot of soup.",
+      "es": "En la cocina hay una olla de sopa.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The pot is new information.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "l:cocina",
+        "l:olla",
+        "l:sopa",
+        "p:lugar-tiene"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-4",
+      "node": "x:hay-esta",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The pot of soup is in the kitchen.",
+      "es": "La olla de sopa está en la cocina.",
+      "gap": [
+        16,
+        20
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The pot is already known, so está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:cocina",
+        "l:estar",
+        "l:olla",
+        "l:sopa"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-5",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "There are three people waiting outside.",
+      "es": "Hay tres personas esperando afuera.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Hay",
+        "Están"
+      ],
+      "answer": 0,
+      "why": "Three people are introduced as new.",
+      "requires": [
+        "c:hay",
+        "g:gerund-ways",
+        "g:hay-vs-esta",
+        "l:afuera",
+        "l:esperar",
+        "l:persona"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-6",
+      "node": "x:hay-esta",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Rosa's brother is outside.",
+      "es": "El hermano de Rosa está afuera.",
+      "gap": [
+        19,
+        23
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A specific person takes está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:afuera",
+        "l:estar",
+        "l:hermano"
+      ]
+    },
+    {
+      "id": "x:hay-esta#a-7",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "Is there any coffee left?",
+      "es": "¿Todavía hay café?",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 0,
+      "why": "Any coffee is not a specific one.",
+      "requires": [
+        "c:hay",
+        "g:hay-vs-esta",
+        "l:café",
+        "p:ya-todavia-basic"
+      ]
     }
   ]
 }

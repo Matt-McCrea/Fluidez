@@ -86,6 +86,35 @@
       ]
     },
     {
+      "id": "x:hacerse-llegar-a-ser#a-3",
+      "node": "x:hacerse-llegar-a-ser",
+      "side": "g:verbs-of-change",
+      "rung": 1,
+      "en": "After the accident, he became very bitter.",
+      "es": "Después del accidente, se volvió muy amargo.",
+      "gap": [
+        23,
+        32
+      ],
+      "options": [
+        "se hizo",
+        "se volvió"
+      ],
+      "answer": 1,
+      "why": "A lasting change in character is volverse.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:verbs-of-change",
+        "l:accidente",
+        "l:amargo",
+        "l:después",
+        "l:volverse",
+        "p:quantifiers-basic",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
       "id": "x:hacerse-llegar-a-ser#a-4",
       "node": "x:hacerse-llegar-a-ser",
       "side": "g:verbs-of-change",

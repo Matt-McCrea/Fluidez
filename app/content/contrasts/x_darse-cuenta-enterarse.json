@@ -58,6 +58,350 @@
         "l:perder",
         "p:darse-cuenta-de"
       ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-3",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "Vale noticed there was no sugar.",
+      "es": "Vale se dio cuenta de que faltaba azúcar.",
+      "gap": [
+        5,
+        18
+      ],
+      "options": [
+        "se dio cuenta",
+        "se enteró"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:azúcar",
+        "l:cuenta",
+        "l:darse",
+        "l:faltar",
+        "p:darse-cuenta-de",
+        "p:quedar-faltar-sobrar"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-4",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "Did you notice Tomás was sad?",
+      "es": "¿Te diste cuenta de que Tomás estaba triste?",
+      "gap": [
+        1,
+        16
+      ],
+      "options": [
+        "Te diste cuenta",
+        "Te enteraste"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:estar-location-states",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:darse",
+        "l:estar",
+        "l:triste",
+        "p:darse-cuenta-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-5",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "Rosa noticed the mistake when counting the money.",
+      "es": "Rosa se dio cuenta del error al contar el dinero.",
+      "gap": [
+        5,
+        18
+      ],
+      "options": [
+        "se dio cuenta",
+        "se enteró"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-infinitive",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "l:contar",
+        "l:cuenta",
+        "l:darse",
+        "l:dinero",
+        "l:error",
+        "p:contar-dos-sentidos",
+        "p:darse-cuenta-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-6",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "We noticed the clock had stopped.",
+      "es": "Nos dimos cuenta de que el reloj estaba parado.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Nos dimos cuenta",
+        "Nos enteramos"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:darse",
+        "l:estar",
+        "l:parar",
+        "l:reloj",
+        "p:darse-cuenta-de",
+        "p:detenerse-estar-parado",
+        "p:postura"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-7",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "As I came in, I noticed it smelled burnt.",
+      "es": "Al entrar, me di cuenta de que olía a quemado.",
+      "gap": [
+        11,
+        23
+      ],
+      "options": [
+        "me di cuenta",
+        "me enteré"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:prep-infinitive",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:darse",
+        "l:entrar",
+        "l:oler",
+        "l:quemar",
+        "p:darse-cuenta-de",
+        "p:le-falta-sal",
+        "p:oler-a-saber-a"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-9",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "I realised I was talking too fast.",
+      "es": "Me di cuenta de que hablaba demasiado rápido.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Me di cuenta",
+        "Me enteré"
+      ],
+      "answer": 0,
+      "why": "Darse cuenta is for what clicks in your own head: you notice or realise.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:quantifiers",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:darse",
+        "l:hablar",
+        "l:rápido",
+        "p:darse-cuenta-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-10",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "I found out from Rosa that Vale is leaving.",
+      "es": "Me enteré por Rosa de que Vale se va.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me enteré",
+        "Me di cuenta"
+      ],
+      "answer": 0,
+      "why": "Enterarse is for news that reaches you from outside: you find out or hear.",
+      "requires": [
+        "g:ir-a-plans",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:enterarse",
+        "l:irse",
+        "p:enterarse-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-13",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "We found out from the newspaper that Altamira bought the block.",
+      "es": "Nos enteramos por el periódico de que Altamira compró la cuadra.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Nos enteramos",
+        "Nos dimos cuenta"
+      ],
+      "answer": 0,
+      "why": "Enterarse is for news that reaches you from outside: you find out or hear.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:comprar",
+        "l:cuadra",
+        "l:enterarse",
+        "l:periódico",
+        "p:enterarse-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-14",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "Rosa found out from Mariana that the bank is closing.",
+      "es": "Rosa se enteró por Mariana de que cierran el banco.",
+      "gap": [
+        5,
+        14
+      ],
+      "options": [
+        "se enteró",
+        "se dio cuenta"
+      ],
+      "answer": 0,
+      "why": "Enterarse is for news that reaches you from outside: you find out or hear.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:banco",
+        "l:cerrar",
+        "l:enterarse",
+        "p:enterarse-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-15",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "I found out from the newspaper that the price went up.",
+      "es": "Me enteré por el periódico de que subió el precio.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me enteré",
+        "Me di cuenta"
+      ],
+      "answer": 0,
+      "why": "Enterarse is for news that reaches you from outside: you find out or hear.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:enterarse",
+        "l:periódico",
+        "l:precio",
+        "l:subir",
+        "p:enterarse-de",
+        "p:subir-subida"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#a-18",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "Don Hernando heard about the party from a neighbor.",
+      "es": "Don Hernando se enteró de la fiesta por un vecino.",
+      "gap": [
+        13,
+        22
+      ],
+      "options": [
+        "se enteró",
+        "se dio cuenta"
+      ],
+      "answer": 0,
+      "why": "Enterarse is for news that reaches you from outside: you find out or hear.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:enterarse",
+        "l:fiesta",
+        "l:vecino",
+        "p:enterarse-de",
+        "p:senor-don-article"
+      ]
     }
   ]
 }

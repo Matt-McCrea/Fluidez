@@ -28,6 +28,258 @@
       ]
     },
     {
+      "id": "x:se-three-ways#a-1",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "Tomás takes a shower in the morning.",
+      "es": "Tomás se baña por la mañana.",
+      "gap": [
+        6,
+        13
+      ],
+      "options": [
+        "se baña",
+        "baña"
+      ],
+      "answer": 0,
+      "why": "Someone doing it to themselves or each other, so the se form.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:bañarse",
+        "l:mañana",
+        "p:por-la-manana"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-2",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "Vale washed her hands before eating.",
+      "es": "Vale se lavó las manos antes de comer.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "lavó",
+        "se lavó"
+      ],
+      "answer": 1,
+      "why": "Someone doing it to themselves or each other, so the se form.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-infinitive",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:antes",
+        "l:comer",
+        "l:lavarse",
+        "l:mano",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-3",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "The kids go to bed at eight.",
+      "es": "Los niños se acuestan a las ocho.",
+      "gap": [
+        10,
+        21
+      ],
+      "options": [
+        "se acuestan",
+        "acuestan"
+      ],
+      "answer": 0,
+      "why": "Someone doing it to themselves or each other, so the se form.",
+      "requires": [
+        "g:gender-articles",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:acostarse",
+        "l:niño",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-4",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "Rosa and Hernando greeted each other in the street.",
+      "es": "Rosa y Hernando se saludaron en la calle.",
+      "gap": [
+        16,
+        28
+      ],
+      "options": [
+        "saludaron",
+        "se saludaron"
+      ],
+      "answer": 1,
+      "why": "Someone doing it to themselves or each other, so the se form.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:calle",
+        "l:saludar",
+        "p:se-reciproco"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-5",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "I get up at five.",
+      "es": "Yo me levanto a las cinco.",
+      "gap": [
+        3,
+        13
+      ],
+      "options": [
+        "me levanto",
+        "levanto"
+      ],
+      "answer": 0,
+      "why": "Someone doing it to themselves or each other, so the se form.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:levantarse",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-10",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Houses are sold in this neighborhood.",
+      "es": "Se venden casas en este barrio.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "vende",
+        "venden"
+      ],
+      "answer": 1,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "g:passive-se",
+        "g:present-er-ir",
+        "l:barrio",
+        "l:casa",
+        "l:vender",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-11",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Car for sale.",
+      "es": "Se vende carro.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "vende",
+        "venden"
+      ],
+      "answer": 0,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "g:present-er-ir",
+        "g:se-impersonal",
+        "l:carro",
+        "l:vender"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-13",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Waiters needed.",
+      "es": "Se necesitan meseros.",
+      "gap": [
+        3,
+        12
+      ],
+      "options": [
+        "necesitan",
+        "necesita"
+      ],
+      "answer": 0,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "g:passive-se",
+        "g:present-ar",
+        "l:mesero",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-14",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "A lot of black coffee is drunk in Colombia.",
+      "es": "En Colombia se toma mucho tinto.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "toman",
+        "toma"
+      ],
+      "answer": 1,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "g:present-ar",
+        "g:se-impersonal",
+        "l:tinto",
+        "l:tomar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-15",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Two apartments for rent.",
+      "es": "Se arriendan dos apartamentos.",
+      "gap": [
+        3,
+        12
+      ],
+      "options": [
+        "arriendan",
+        "arrienda"
+      ],
+      "answer": 0,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "l:apartamento"
+      ]
+    },
+    {
       "id": "x:se-three-ways#a-16",
       "node": "x:se-three-ways",
       "side": "g:se-impersonal",
@@ -54,6 +306,54 @@
         "l:comer",
         "p:bien-bueno",
         "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-17",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Waitress wanted.",
+      "es": "Se busca mesera.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "busca",
+        "buscan"
+      ],
+      "answer": 0,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "c:se-busca",
+        "l:buscar",
+        "l:mesero"
+      ]
+    },
+    {
+      "id": "x:se-three-ways#a-18",
+      "node": "x:se-three-ways",
+      "side": "g:se-impersonal",
+      "rung": 1,
+      "en": "Many tourists are seen at Monserrate.",
+      "es": "Se ven muchos turistas en Monserrate.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "ve",
+        "ven"
+      ],
+      "answer": 1,
+      "why": "The thing sold or needed is the subject, so the verb agrees with it.",
+      "requires": [
+        "g:passive-se",
+        "g:present-er-ir",
+        "l:turista",
+        "l:ver",
+        "p:quantifiers-basic"
       ]
     },
     {

@@ -56,6 +56,17 @@ export function score(deck: ContrastItem[]): Scores {
   const byItem = { cue: [] as number[], commoner: [] as number[] };
   const rate = new Map<string, Count>();
   for (const r of deck) bump(rate, setOf(r), answerOf(r));
+  // a pair asked once has no word to lean on, and counting its one answer would hand the item its own answer: there the strategy is
+  // the commoner side of the contrast ("always the perfect"), which is all a learner could lean on in a deck where the words change
+  const sides = new Map<string, number>();
+  for (const r of deck) sides.set(r.side, (sides.get(r.side) ?? 0) + 1);
+  const topSide = [...sides].reduce<[string, number]>((a, b) => (b[1] > a[1] ? b : a), ['', 0])[0];
+  const leanOn = (it: ContrastItem): string[] => {
+    const seen = rate.get(setOf(it))!;
+    if ([...seen.values()].reduce((a, b) => a + b, 0) > 1) return best(it.options.map((o) => o.toLowerCase()), seen);
+    const answer = answerOf(it);
+    return it.side === topSide ? [answer] : it.options.map((o) => o.toLowerCase()).filter((o) => o !== answer);
+  };
   deck.forEach((it, i) => {
     // a twin of the item (the same frame, the other word) is left out too: it holds the same cue with the other answer, which would
     // turn the table against itself and say nothing about whether the cue decides
@@ -69,9 +80,11 @@ export function score(deck: ContrastItem[]): Scores {
     }
     const options = it.options.map((o) => o.toLowerCase());
     const c = cueOf(it);
-    const tap = [both.get(`${c.before}|${c.after}`), before.get(c.before), after.get(c.after), rate.get(setOf(it))].reduce<string[]>(
+    const beside = [both.get(`${c.before}|${c.after}`), before.get(c.before), after.get(c.after)].reduce<string[]>(
       (found, counts) => (found.length < options.length ? found : best(options, counts)), options);
-    const a = share(tap, it), b = share(best(options, rate.get(setOf(it))), it);
+    const lean = leanOn(it);
+    const tap = beside.length < options.length ? beside : lean;
+    const a = share(tap, it), b = share(lean, it);
     byItem.cue.push(a); byItem.commoner.push(b);
     cue += a; commoner += b;
   });
@@ -80,8 +93,8 @@ export function score(deck: ContrastItem[]): Scores {
 
 /**
  * Where a deck of choices leans: each pair of options asked more than once, how often it is asked and how often its commoner answer is the
- * right one. `score` holds a deck to the Cue Test as a whole, and a pair asked once counts there as always right; this is the plain
- * count, pair by pair, for any deck a learner taps through: a pair whose answer never changes is passed by tapping that word.
+ * right one. `score` holds a deck to the Cue Test as a whole; this is the plain count, pair by pair, for any deck a learner taps through:
+ * a pair whose answer never changes is passed by tapping that word.
  */
 export function leaning(deck: ContrastItem[]): Array<{ pair: string; n: number; top: number }> {
   const pairs = new Map<string, Count>();

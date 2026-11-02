@@ -1,0 +1,189 @@
+[
+ {
+  "id": "3",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "Vale noticed there was no sugar.",
+  "es": "Vale se dio cuenta de que faltaba azúcar.",
+  "gap": [
+   5,
+   18
+  ],
+  "options": [
+   "se dio cuenta",
+   "se enteró"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "4",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "Did you notice Tomás was sad?",
+  "es": "¿Te diste cuenta de que Tomás estaba triste?",
+  "gap": [
+   1,
+   16
+  ],
+  "options": [
+   "Te diste cuenta",
+   "Te enteraste"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "5",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "Rosa noticed the mistake when counting the money.",
+  "es": "Rosa se dio cuenta del error al contar el dinero.",
+  "gap": [
+   5,
+   18
+  ],
+  "options": [
+   "se dio cuenta",
+   "se enteró"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "6",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "We noticed the clock had stopped.",
+  "es": "Nos dimos cuenta de que el reloj estaba parado.",
+  "gap": [
+   0,
+   16
+  ],
+  "options": [
+   "Nos dimos cuenta",
+   "Nos enteramos"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "7",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "As I came in, I noticed it smelled burnt.",
+  "es": "Al entrar, me di cuenta de que olía a quemado.",
+  "gap": [
+   11,
+   23
+  ],
+  "options": [
+   "me di cuenta",
+   "me enteré"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "9",
+  "side": "p:darse-cuenta-de",
+  "rung": 1,
+  "en": "I realised I was talking too fast.",
+  "es": "Me di cuenta de que hablaba demasiado rápido.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Me di cuenta",
+   "Me enteré"
+  ],
+  "answer": 0,
+  "why": "Darse cuenta is for what clicks in your own head: you notice or realise."
+ },
+ {
+  "id": "10",
+  "side": "p:enterarse-de",
+  "rung": 1,
+  "en": "I found out from Rosa that Vale is leaving.",
+  "es": "Me enteré por Rosa de que Vale se va.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Me enteré",
+   "Me di cuenta"
+  ],
+  "answer": 0,
+  "why": "Enterarse is for news that reaches you from outside: you find out or hear."
+ },
+ {
+  "id": "13",
+  "side": "p:enterarse-de",
+  "rung": 1,
+  "en": "We found out from the newspaper that Altamira bought the block.",
+  "es": "Nos enteramos por el periódico de que Altamira compró la cuadra.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "Nos enteramos",
+   "Nos dimos cuenta"
+  ],
+  "answer": 0,
+  "why": "Enterarse is for news that reaches you from outside: you find out or hear."
+ },
+ {
+  "id": "14",
+  "side": "p:enterarse-de",
+  "rung": 1,
+  "en": "Rosa found out from Mariana that the bank is closing.",
+  "es": "Rosa se enteró por Mariana de que cierran el banco.",
+  "gap": [
+   5,
+   14
+  ],
+  "options": [
+   "se enteró",
+   "se dio cuenta"
+  ],
+  "answer": 0,
+  "why": "Enterarse is for news that reaches you from outside: you find out or hear."
+ },
+ {
+  "id": "15",
+  "side": "p:enterarse-de",
+  "rung": 1,
+  "en": "I found out from the newspaper that the price went up.",
+  "es": "Me enteré por el periódico de que subió el precio.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Me enteré",
+   "Me di cuenta"
+  ],
+  "answer": 0,
+  "why": "Enterarse is for news that reaches you from outside: you find out or hear."
+ },
+ {
+  "id": "18",
+  "side": "p:enterarse-de",
+  "rung": 1,
+  "en": "Don Hernando heard about the party from a neighbor.",
+  "es": "Don Hernando se enteró de la fiesta por un vecino.",
+  "gap": [
+   13,
+   22
+  ],
+  "options": [
+   "se enteró",
+   "se dio cuenta"
+  ],
+  "answer": 0,
+  "why": "Enterarse is for news that reaches you from outside: you find out or hear."
+ }
+]

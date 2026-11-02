@@ -1,0 +1,172 @@
+[
+ {
+  "id": "1",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "He must be asleep.",
+  "es": "Estará dormido.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Estará",
+   "Estaría"
+  ],
+  "answer": 0,
+  "why": "A guess about now uses the future."
+ },
+ {
+  "id": "2",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "She must have been at work then.",
+  "es": "Estaría en el trabajo en ese momento.",
+  "gap": [
+   0,
+   7
+  ],
+  "options": [
+   "Estará",
+   "Estaría"
+  ],
+  "answer": 1,
+  "why": "A guess about the past uses the conditional."
+ },
+ {
+  "id": "7",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "Where could Vale be?",
+  "es": "¿Dónde estará Vale?",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "estará",
+   "estaría"
+  ],
+  "answer": 0,
+  "why": "Wondering about now uses the future."
+ },
+ {
+  "id": "8",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "Where could Vale have been yesterday?",
+  "es": "¿Dónde estaría Vale ayer?",
+  "gap": [
+   7,
+   14
+  ],
+  "options": [
+   "estará",
+   "estaría"
+  ],
+  "answer": 1,
+  "why": "Wondering about the past uses the conditional."
+ },
+ {
+  "id": "9",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "Rosa must know the answer.",
+  "es": "Rosa sabrá la respuesta.",
+  "gap": [
+   5,
+   10
+  ],
+  "options": [
+   "sabrá",
+   "sabría"
+  ],
+  "answer": 0,
+  "why": "A guess about now uses the future."
+ },
+ {
+  "id": "10",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "Rosa must have known the answer back then.",
+  "es": "Rosa sabría la respuesta en esa época.",
+  "gap": [
+   5,
+   11
+  ],
+  "options": [
+   "sabrá",
+   "sabría"
+  ],
+  "answer": 1,
+  "why": "A guess about the past uses the conditional."
+ },
+ {
+  "id": "11",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "That must cost a lot.",
+  "es": "Eso costará mucho.",
+  "gap": [
+   4,
+   11
+  ],
+  "options": [
+   "costará",
+   "costaría"
+  ],
+  "answer": 0,
+  "why": "A guess about now uses the future."
+ },
+ {
+  "id": "12",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "That must have cost a lot back then.",
+  "es": "Eso costaría mucho en esa época.",
+  "gap": [
+   4,
+   12
+  ],
+  "options": [
+   "costará",
+   "costaría"
+  ],
+  "answer": 1,
+  "why": "A guess about the past uses the conditional."
+ },
+ {
+  "id": "13",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "He must be about forty.",
+  "es": "Tendrá unos cuarenta años.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Tendrá",
+   "Tendría"
+  ],
+  "answer": 0,
+  "why": "A guess about now uses the future."
+ },
+ {
+  "id": "14",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "He must have been about forty when he arrived.",
+  "es": "Tendría unos cuarenta años cuando llegó.",
+  "gap": [
+   0,
+   7
+  ],
+  "options": [
+   "Tendrá",
+   "Tendría"
+  ],
+  "answer": 1,
+  "why": "A guess about the past uses the conditional."
+ }
+]

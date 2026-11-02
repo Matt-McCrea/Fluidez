@@ -1,155 +1,155 @@
 [
-  {
-    "id": "1",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "After a long argument, we ended up ordering pizza.",
-    "es": "Después de una larga discusión, acabamos por pedir pizza.",
-    "gap": [
-      32,
-      44
-    ],
-    "options": [
-      "llegamos a",
-      "acabamos por"
-    ],
-    "answer": 1,
-    "why": "Ending up after a process is acabar por."
-  },
-  {
-    "id": "2",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "I didn't get to see the movie.",
-    "es": "No llegué a ver la película.",
-    "gap": [
-      3,
-      11
-    ],
-    "options": [
-      "llegué a",
-      "acabé por"
-    ],
-    "answer": 0,
-    "why": "Not getting to do something is no llegar a."
-  },
-  {
-    "id": "3",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "He was so angry that he even hit the wall.",
-    "es": "Estaba tan bravo que llegó a pegarle a la pared.",
-    "gap": [
-      21,
-      28
-    ],
-    "options": [
-      "acabó por",
-      "llegó a"
-    ],
-    "answer": 1,
-    "why": "Even going so far as to is llegar a."
-  },
-  {
-    "id": "4",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "Rosa ended up selling the old oven.",
-    "es": "Rosa acabó por vender el horno viejo.",
-    "gap": [
-      5,
-      14
-    ],
-    "options": [
-      "acabó por",
-      "llegó a"
-    ],
-    "answer": 0,
-    "why": "The result at the end of a process is acabar por."
-  },
-  {
-    "id": "5",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "We didn't manage to talk.",
-    "es": "No llegamos a hablar.",
-    "gap": [
-      3,
-      13
-    ],
-    "options": [
-      "acabamos por",
-      "llegamos a"
-    ],
-    "answer": 1,
-    "why": "Not managing to do it is no llegar a."
-  },
-  {
-    "id": "6",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "In the end Tomás got tired and ended up going home.",
-    "es": "Al final Tomás se cansó y acabó por irse a su casa.",
-    "gap": [
-      26,
-      35
-    ],
-    "options": [
-      "acabó por",
-      "llegó a"
-    ],
-    "answer": 0,
-    "why": "Al final points to acabar por."
-  },
-  {
-    "id": "7",
-    "side": "p:llegar-a-inf",
-    "rung": 2,
-    "en": "Vale even went so far as to cry at work.",
-    "es": "Vale llegó a llorar en el trabajo.",
-    "gap": [
-      5,
-      12
-    ],
-    "options": [
-      "acabó por",
-      "llegó a"
-    ],
-    "answer": 1,
-    "why": "Even going that far is llegar a."
-  },
-  {
-    "id": "8",
-    "side": "p:llegar-a-inf",
-    "rung": 1,
-    "en": "After three tries, I ended up learning the recipe.",
-    "es": "Después de tres intentos, acabé por aprender la receta.",
-    "gap": [
-      26,
-      35
-    ],
-    "options": [
-      "acabé por",
-      "llegué a"
-    ],
-    "answer": 0,
-    "why": "The outcome after tries is acabar por."
-  },
-  {
-    "id": "9",
-    "side": "p:llegar-a-inf",
-    "rung": 2,
-    "en": "She never came to understand why.",
-    "es": "Nunca llegó a entender por qué.",
-    "gap": [
-      6,
-      13
-    ],
-    "options": [
-      "acabó por",
-      "llegó a"
-    ],
-    "answer": 1,
-    "why": "Never getting to the point of understanding is nunca llegar a."
-  }
+ {
+  "id": "1",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "After a long argument, we ended up ordering pizza.",
+  "es": "Después de una larga discusión, acabamos por pedir pizza.",
+  "gap": [
+   32,
+   44
+  ],
+  "options": [
+   "llegamos a",
+   "acabamos por"
+  ],
+  "answer": 1,
+  "why": "Ending up after a process is acabar por."
+ },
+ {
+  "id": "2",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "I didn't get to see the movie.",
+  "es": "No llegué a ver la película.",
+  "gap": [
+   3,
+   11
+  ],
+  "options": [
+   "llegué a",
+   "acabé por"
+  ],
+  "answer": 0,
+  "why": "Not getting to do something is no llegar a."
+ },
+ {
+  "id": "3",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "He was so angry that he even hit the wall.",
+  "es": "Estaba tan bravo que llegó a pegarle a la pared.",
+  "gap": [
+   21,
+   28
+  ],
+  "options": [
+   "acabó por",
+   "llegó a"
+  ],
+  "answer": 1,
+  "why": "Even going so far as to is llegar a."
+ },
+ {
+  "id": "4",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "Rosa ended up selling the old oven.",
+  "es": "Rosa acabó por vender el horno viejo.",
+  "gap": [
+   5,
+   14
+  ],
+  "options": [
+   "acabó por",
+   "llegó a"
+  ],
+  "answer": 0,
+  "why": "The result at the end of a process is acabar por."
+ },
+ {
+  "id": "5",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "We didn't manage to talk.",
+  "es": "No llegamos a hablar.",
+  "gap": [
+   3,
+   13
+  ],
+  "options": [
+   "acabamos por",
+   "llegamos a"
+  ],
+  "answer": 1,
+  "why": "Not managing to do it is no llegar a."
+ },
+ {
+  "id": "6",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "In the end Tomás got tired and ended up going home.",
+  "es": "Al final Tomás se cansó y acabó por irse a su casa.",
+  "gap": [
+   26,
+   35
+  ],
+  "options": [
+   "acabó por",
+   "llegó a"
+  ],
+  "answer": 0,
+  "why": "Al final points to acabar por."
+ },
+ {
+  "id": "7",
+  "side": "p:llegar-a-inf",
+  "rung": 2,
+  "en": "Vale even went so far as to cry at work.",
+  "es": "Vale llegó a llorar en el trabajo.",
+  "gap": [
+   5,
+   12
+  ],
+  "options": [
+   "acabó por",
+   "llegó a"
+  ],
+  "answer": 1,
+  "why": "Even going that far is llegar a."
+ },
+ {
+  "id": "8",
+  "side": "p:llegar-a-inf",
+  "rung": 1,
+  "en": "After three tries, I ended up learning the recipe.",
+  "es": "Después de tres intentos, acabé por aprender la receta.",
+  "gap": [
+   26,
+   35
+  ],
+  "options": [
+   "acabé por",
+   "llegué a"
+  ],
+  "answer": 0,
+  "why": "The outcome after tries is acabar por."
+ },
+ {
+  "id": "9",
+  "side": "p:llegar-a-inf",
+  "rung": 2,
+  "en": "She never came to understand why.",
+  "es": "Nunca llegó a entender por qué.",
+  "gap": [
+   6,
+   13
+  ],
+  "options": [
+   "acabó por",
+   "llegó a"
+  ],
+  "answer": 1,
+  "why": "Never getting to the point of understanding is nunca llegar a."
+ }
 ]

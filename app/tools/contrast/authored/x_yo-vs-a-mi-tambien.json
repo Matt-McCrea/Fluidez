@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I work downtown.\nMe too.",
+  "es": "Trabajo en el centro.\nYo también.",
+  "gap": [
+   22,
+   24
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "2",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I'm hungry.\nMe too.",
+  "es": "Tengo hambre.\nYo también.",
+  "gap": [
+   14,
+   16
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "3",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I don't have time today.\nMe neither.",
+  "es": "No tengo tiempo hoy.\nYo tampoco.",
+  "gap": [
+   21,
+   23
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "4",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I live near the park.\nMe too.",
+  "es": "Vivo cerca del parque.\nYo también.",
+  "gap": [
+   23,
+   25
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "5",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I don't speak English.\nI do.",
+  "es": "No hablo inglés.\nYo sí.",
+  "gap": [
+   17,
+   19
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "6",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I'm going to Vale's party.\nI'm not.",
+  "es": "Voy a la fiesta de Vale.\nYo no.",
+  "gap": [
+   25,
+   27
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "7",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I'm very tired.\nMe too.",
+  "es": "Estoy muy cansada.\nYo también.",
+  "gap": [
+   19,
+   21
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "8",
+  "side": "p:tambien-tampoco",
+  "rung": 1,
+  "en": "I don't drink coffee at night.\nMe neither.",
+  "es": "No bebo café por la noche.\nYo tampoco.",
+  "gap": [
+   27,
+   29
+  ],
+  "options": [
+   "Yo",
+   "A mí"
+  ],
+  "answer": 0,
+  "why": "An ordinary verb was said with yo, so answer with yo."
+ },
+ {
+  "id": "9",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I like ajiaco.\nMe too.",
+  "es": "Me gusta el ajiaco.\nA mí también.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "10",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "My head hurts.\nMine too.",
+  "es": "Me duele la cabeza.\nA mí también.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "11",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I don't like the cold.\nMe neither.",
+  "es": "No me gusta el frío.\nA mí tampoco.",
+  "gap": [
+   21,
+   25
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "12",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I love arepas.\nMe too.",
+  "es": "Me encantan las arepas.\nA mí también.",
+  "gap": [
+   24,
+   28
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "13",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I don't like black coffee.\nI do.",
+  "es": "No me gusta el tinto.\nA mí sí.",
+  "gap": [
+   22,
+   26
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "14",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "It seems expensive to me.\nNot to me.",
+  "es": "Me parece caro.\nA mí no.",
+  "gap": [
+   16,
+   20
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "15",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I'm not interested in soccer.\nMe neither.",
+  "es": "No me interesa el fútbol.\nA mí tampoco.",
+  "gap": [
+   26,
+   30
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ },
+ {
+  "id": "16",
+  "side": "g:gustar-full",
+  "rung": 1,
+  "en": "I'm short on time.\nMe too.",
+  "es": "Me falta tiempo.\nA mí también.",
+  "gap": [
+   17,
+   21
+  ],
+  "options": [
+   "A mí",
+   "Yo"
+  ],
+  "answer": 0,
+  "why": "Gustar type verbs have me, not yo, so answer with a mí."
+ }
+]

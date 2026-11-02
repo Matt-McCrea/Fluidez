@@ -287,6 +287,60 @@
       ]
     },
     {
+      "id": "x:ser-event-estar-location#a-2",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "My office is downtown.",
+      "es": "Mi oficina está en el centro.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A person or thing is somewhere, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:centro",
+        "l:estar",
+        "l:oficina",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-3",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The concert is in the park.",
+      "es": "El concierto es en el parque.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "An event takes place somewhere, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:concierto",
+        "l:parque",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
       "id": "x:ser-event-estar-location#a-4",
       "node": "x:ser-event-estar-location",
       "side": "g:estar-location-states",
@@ -340,6 +394,89 @@
       ]
     },
     {
+      "id": "x:ser-event-estar-location#a-6",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Where are you? I'm at the party.",
+      "es": "¿Dónde estás? Estoy en la fiesta.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "answer": 1,
+      "why": "A person or thing is somewhere, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:questions",
+        "l:dónde",
+        "l:estar",
+        "l:fiesta"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-7",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The wedding was on a farm.",
+      "es": "La boda fue en una finca.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "answer": 0,
+      "why": "An event takes place somewhere, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:boda",
+        "l:finca",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-8",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Rosa was at the wedding all night.",
+      "es": "Rosa estuvo en la boda toda la noche.",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "answer": 1,
+      "why": "A person or thing is somewhere, so estar.",
+      "requires": [
+        "c:estuvo",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "l:boda",
+        "l:estar",
+        "l:noche",
+        "p:todos-los-dias"
+      ]
+    },
+    {
       "id": "x:ser-event-estar-location#a-9",
       "node": "x:ser-event-estar-location",
       "side": "g:estar-location-states",
@@ -362,6 +499,33 @@
         "l:estar",
         "l:libro",
         "l:mesa"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-10",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The class is in room two.",
+      "es": "La clase es en el salón dos.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "An event takes place somewhere, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:clase",
+        "l:salón",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location"
       ]
     }
   ]

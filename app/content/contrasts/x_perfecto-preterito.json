@@ -53,6 +53,31 @@
         "l:cuándo",
         "l:ser"
       ]
+    },
+    {
+      "id": "x:perfecto-preterito#a-9",
+      "node": "x:perfecto-preterito",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "We've lived here for ten years.",
+      "es": "Hemos vivido aquí diez años.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Hemos vivido",
+        "Vivimos"
+      ],
+      "answer": 0,
+      "why": "It is still true now.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:aquí",
+        "l:año",
+        "l:vivir",
+        "p:aqui-ahi-alla"
+      ]
     }
   ]
 }

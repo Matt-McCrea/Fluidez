@@ -1,104 +1,104 @@
 [
-  {
-    "id": "1",
-    "side": "p:no-hace-falta-que",
-    "rung": 1,
-    "en": "You don't need to wait for me. (to a friend)",
-    "es": "No hace falta que me esperes.",
-    "gap": [
-      0,
-      13
-    ],
-    "options": [
-      "No hace falta",
-      "Está prohibido"
-    ],
-    "answer": 0,
-    "why": "It is not needed, nothing is banned: no hace falta."
-  },
-  {
-    "id": "2",
-    "side": "p:esta-prohibido-que",
-    "rung": 1,
-    "en": "It is forbidden for you to park here. (to a friend)",
-    "es": "Está prohibido que parques aquí.",
-    "gap": [
-      0,
-      14
-    ],
-    "options": [
-      "No hace falta",
-      "Está prohibido"
-    ],
-    "answer": 1,
-    "why": "Parking is not allowed, so está prohibido."
-  },
-  {
-    "id": "3",
-    "side": "p:esta-prohibido-que",
-    "rung": 1,
-    "en": "It is forbidden for customers to smoke inside.",
-    "es": "Está prohibido que los clientes fumen adentro.",
-    "gap": [
-      0,
-      14
-    ],
-    "options": [
-      "Está prohibido",
-      "No hace falta"
-    ],
-    "answer": 0,
-    "why": "A rule against doing it is está prohibido."
-  },
-  {
-    "id": "4",
-    "side": "p:no-hace-falta-que",
-    "rung": 1,
-    "en": "You don't need to call me tonight. (to a friend)",
-    "es": "No hace falta que me llames esta noche.",
-    "gap": [
-      0,
-      13
-    ],
-    "options": [
-      "Está prohibido",
-      "No hace falta"
-    ],
-    "answer": 1,
-    "why": "Calling is optional, so no hace falta."
-  },
-  {
-    "id": "5",
-    "side": "p:no-hace-falta-que",
-    "rung": 1,
-    "en": "You don't need to pay for the coffee. (formal)",
-    "es": "No hace falta que pague el café.",
-    "gap": [
-      0,
-      13
-    ],
-    "options": [
-      "No hace falta",
-      "Está prohibido"
-    ],
-    "answer": 0,
-    "why": "Paying is not needed, not banned: no hace falta."
-  },
-  {
-    "id": "6",
-    "side": "p:esta-prohibido-que",
-    "rung": 1,
-    "en": "It is forbidden for anyone to go into the office.",
-    "es": "Está prohibido que alguien pase a la oficina.",
-    "gap": [
-      0,
-      14
-    ],
-    "options": [
-      "No hace falta",
-      "Está prohibido"
-    ],
-    "answer": 1,
-    "why": "Entry is banned, so está prohibido."
-  }
+ {
+  "id": "1",
+  "side": "p:no-hace-falta-que",
+  "rung": 1,
+  "en": "You don't need to wait for me. (to a friend)",
+  "es": "No hace falta que me esperes.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "No hace falta",
+   "Está prohibido"
+  ],
+  "answer": 0,
+  "why": "It is not needed, nothing is banned: no hace falta."
+ },
+ {
+  "id": "2",
+  "side": "p:esta-prohibido-que",
+  "rung": 1,
+  "en": "It is forbidden for you to park here. (to a friend)",
+  "es": "Está prohibido que parques aquí.",
+  "gap": [
+   0,
+   14
+  ],
+  "options": [
+   "No hace falta",
+   "Está prohibido"
+  ],
+  "answer": 1,
+  "why": "Parking is not allowed, so está prohibido."
+ },
+ {
+  "id": "3",
+  "side": "p:esta-prohibido-que",
+  "rung": 1,
+  "en": "It is forbidden for customers to smoke inside.",
+  "es": "Está prohibido que los clientes fumen adentro.",
+  "gap": [
+   0,
+   14
+  ],
+  "options": [
+   "Está prohibido",
+   "No hace falta"
+  ],
+  "answer": 0,
+  "why": "A rule against doing it is está prohibido."
+ },
+ {
+  "id": "4",
+  "side": "p:no-hace-falta-que",
+  "rung": 1,
+  "en": "You don't need to call me tonight. (to a friend)",
+  "es": "No hace falta que me llames esta noche.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "Está prohibido",
+   "No hace falta"
+  ],
+  "answer": 1,
+  "why": "Calling is optional, so no hace falta."
+ },
+ {
+  "id": "5",
+  "side": "p:no-hace-falta-que",
+  "rung": 1,
+  "en": "You don't need to pay for the coffee. (formal)",
+  "es": "No hace falta que pague el café.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "No hace falta",
+   "Está prohibido"
+  ],
+  "answer": 0,
+  "why": "Paying is not needed, not banned: no hace falta."
+ },
+ {
+  "id": "6",
+  "side": "p:esta-prohibido-que",
+  "rung": 1,
+  "en": "It is forbidden for anyone to go into the office.",
+  "es": "Está prohibido que alguien pase a la oficina.",
+  "gap": [
+   0,
+   14
+  ],
+  "options": [
+   "No hace falta",
+   "Está prohibido"
+  ],
+  "answer": 1,
+  "why": "Entry is banned, so está prohibido."
+ }
 ]

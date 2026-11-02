@@ -130,6 +130,236 @@
         "l:siempre",
         "p:frequency-scale"
       ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-1",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I asked Rosa where the bank is.",
+      "es": "Le pregunté a Rosa dónde queda el banco.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "pregunté",
+        "pedí"
+      ],
+      "answer": 0,
+      "why": "Asking for information is preguntar.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:indirect-questions",
+        "g:le-doubling",
+        "g:present-ar",
+        "g:preterite-ar",
+        "l:banco",
+        "l:dónde",
+        "l:preguntar",
+        "l:quedar",
+        "p:preguntar-pedir",
+        "p:quedar-cerca"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-2",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I asked Rosa for a pen.",
+      "es": "Le pedí un esfero a Rosa.",
+      "gap": [
+        3,
+        7
+      ],
+      "options": [
+        "pregunté",
+        "pedí"
+      ],
+      "answer": 1,
+      "why": "Asking for a thing is pedir.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:preterite-er-ir",
+        "l:esfero",
+        "l:pedir",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-3",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Can I ask you something?",
+      "es": "¿Te puedo preguntar algo?",
+      "gap": [
+        10,
+        19
+      ],
+      "options": [
+        "preguntar",
+        "pedir"
+      ],
+      "answer": 0,
+      "why": "Asking a question is preguntar.",
+      "requires": [
+        "c:puedo",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:poder",
+        "l:preguntar",
+        "p:indefinites-basic",
+        "p:me-te-nos-objects",
+        "p:preguntar-pedir",
+        "p:puedo-hacerte-una-pregunta"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-4",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Can I ask you a favor?",
+      "es": "¿Te puedo pedir un favor?",
+      "gap": [
+        10,
+        15
+      ],
+      "options": [
+        "preguntar",
+        "pedir"
+      ],
+      "answer": 1,
+      "why": "Asking for a favor is pedir.",
+      "requires": [
+        "c:me-haces-un-favor",
+        "c:puedo",
+        "g:stem-boot",
+        "l:favor",
+        "l:pedir",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-8",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Ask Vale if she is coming.",
+      "es": "Pregúntale a Vale si viene.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Pídele",
+        "Pregúntale"
+      ],
+      "answer": 1,
+      "why": "Asking for information is preguntar.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:si-present",
+        "g:stem-boot",
+        "l:preguntar",
+        "l:venir",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-9",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Ask the waiter for the check.",
+      "es": "Pídele la cuenta al mesero.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Pídele",
+        "Pregúntale"
+      ],
+      "answer": 0,
+      "why": "Asking for a thing is pedir.",
+      "requires": [
+        "c:la-cuenta",
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "l:cuenta",
+        "l:mesero",
+        "l:pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-11",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Nobody asked me what my name was.",
+      "es": "Nadie me preguntó cómo me llamaba.",
+      "gap": [
+        9,
+        17
+      ],
+      "options": [
+        "preguntó",
+        "pidió"
+      ],
+      "answer": 0,
+      "why": "Asking a question is preguntar.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:indirect-questions",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:cómo",
+        "l:llamarse",
+        "l:preguntar",
+        "p:me-te-nos-objects",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#a-14",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "Tomás asked Don Hernando for advice.",
+      "es": "Tomás le pidió un consejo a Don Hernando.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "preguntó",
+        "pidió"
+      ],
+      "answer": 1,
+      "why": "Asking for advice is pedir.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:preterite-spelling-stem",
+        "l:consejo",
+        "l:pedir",
+        "p:preguntar-pedir",
+        "p:senor-don-article"
+      ]
     }
   ]
 }

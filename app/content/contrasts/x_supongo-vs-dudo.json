@@ -139,6 +139,383 @@
         "l:posible",
         "l:ser"
       ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-1",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose Simón is at home.",
+      "es": "Supongo que Simón está en casa.",
+      "gap": [
+        18,
+        22
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:estar-location-states",
+        "l:casa",
+        "l:estar",
+        "l:suponer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-2",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose they want to sell.",
+      "es": "Supongo que ellos quieren vender.",
+      "gap": [
+        18,
+        25
+      ],
+      "options": [
+        "quieren",
+        "quieran"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:suponer",
+        "l:vender"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-3",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose Vale is working today.",
+      "es": "Supongo que Vale trabaja hoy.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "trabaja",
+        "trabaje"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:present-ar",
+        "l:hoy",
+        "l:suponer",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-4",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose the café opens at seven.",
+      "es": "Supongo que el café abre a las siete.",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:café",
+        "l:suponer",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-5",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose Rosa knows the answer.",
+      "es": "Supongo que Rosa sabe la respuesta.",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:respuesta",
+        "l:saber",
+        "l:suponer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-6",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose you're tired.",
+      "es": "Supongo que estás cansado.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "estás",
+        "estés"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "g:estar-location-states",
+        "l:cansado",
+        "l:estar",
+        "l:suponer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-7",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose Tomás has the keys.",
+      "es": "Supongo que Tomás tiene las llaves.",
+      "gap": [
+        18,
+        23
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:supongo-que",
+        "c:tienes",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:llave",
+        "l:suponer",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-8",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose it's going to rain.",
+      "es": "Supongo que va a llover.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:que-va",
+        "c:supongo-que",
+        "g:ir-a-plans",
+        "l:ir",
+        "l:llover",
+        "l:suponer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-10",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt they want to sell.",
+      "es": "Dudo que ellos quieran vender.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "quieran",
+        "quieren"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:verb-infinitive",
+        "l:dudar",
+        "l:querer",
+        "l:vender"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-11",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt Vale is working today.",
+      "es": "Dudo que Vale trabaje hoy.",
+      "gap": [
+        14,
+        21
+      ],
+      "options": [
+        "trabaje",
+        "trabaja"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:compre-trabaje",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:that-clauses",
+        "l:dudar",
+        "l:hoy",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-12",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt the café opens at seven.",
+      "es": "Dudo que el café abra a las siete.",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "abra",
+        "abre"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:abrir",
+        "l:café",
+        "l:dudar",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-13",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt Rosa knows the answer.",
+      "es": "Dudo que Rosa sepa la respuesta.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "sepa",
+        "sabe"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:dudar",
+        "l:respuesta",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-14",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt Tomás has the keys.",
+      "es": "Dudo que Tomás tenga las llaves.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "tenga",
+        "tiene"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "c:aqui-tiene",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:that-clauses",
+        "l:dudar",
+        "l:llave",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#a-15",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt it's going to rain.",
+      "es": "Dudo que vaya a llover.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "vaya",
+        "va"
+      ],
+      "answer": 0,
+      "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive.",
+      "requires": [
+        "g:ir-a-plans",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:dudar",
+        "l:ir",
+        "l:llover"
+      ]
     }
   ]
 }

@@ -119,6 +119,378 @@
         "l:temprano",
         "l:venir"
       ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-1",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Vale, look at this. (to a friend)",
+      "es": "Mira esto, Vale.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Mira",
+        "Mire"
+      ],
+      "answer": 0,
+      "why": "Vale is a friend, so the tú form.",
+      "requires": [
+        "c:oye-mira",
+        "l:mirar",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-2",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Sir, wait here. (formal)",
+      "es": "Espere aquí, señor.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Espera",
+        "Espere"
+      ],
+      "answer": 1,
+      "why": "Señor is usted, so the vowel swaps.",
+      "requires": [
+        "g:commands-usted",
+        "l:aquí",
+        "l:esperar",
+        "l:señor",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-3",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Vale, say it again. (to a friend)",
+      "es": "Vale, dilo otra vez.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "dilo",
+        "dígalo"
+      ],
+      "answer": 0,
+      "why": "Di is the short tú command.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "l:decir",
+        "l:vez",
+        "p:otro-no-article"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-4",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Madam, say it again. (formal)",
+      "es": "Señora, dígalo otra vez.",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "dilo",
+        "dígalo"
+      ],
+      "answer": 1,
+      "why": "Señora is usted, so diga.",
+      "requires": [
+        "g:commands-usted",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "l:decir",
+        "l:señora",
+        "l:vez",
+        "p:otro-no-article"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-5",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Come in, Tomás. (to a friend)",
+      "es": "Pasa, Tomás.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Pasa",
+        "Pase"
+      ],
+      "answer": 0,
+      "why": "Tomás is a friend, so the tú form.",
+      "requires": [
+        "g:present-ar",
+        "l:pasar"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-6",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Come in, Don Hernando. (formal)",
+      "es": "Pase, Don Hernando.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Pasa",
+        "Pase"
+      ],
+      "answer": 1,
+      "why": "Don Hernando is usted.",
+      "requires": [
+        "c:siga-siga",
+        "l:pasar",
+        "p:don-dona-nombre",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-7",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Put the coffee here, Vale. (to a friend)",
+      "es": "Pon el café aquí, Vale.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Pon",
+        "Ponga"
+      ],
+      "answer": 0,
+      "why": "Pon is the short tú command.",
+      "requires": [
+        "g:commands-tu",
+        "g:gender-articles",
+        "l:aquí",
+        "l:café",
+        "l:poner",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-8",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Put the coffee here, madam. (formal)",
+      "es": "Ponga el café aquí, señora.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Pon",
+        "Ponga"
+      ],
+      "answer": 1,
+      "why": "Señora is usted, so ponga.",
+      "requires": [
+        "g:commands-usted",
+        "g:gender-articles",
+        "l:aquí",
+        "l:café",
+        "l:poner",
+        "l:señora",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-9",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Vale, go out through the back. (to a friend)",
+      "es": "Vale, sal por atrás.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "sal",
+        "salga"
+      ],
+      "answer": 0,
+      "why": "Sal is the short tú command.",
+      "requires": [
+        "g:commands-tu",
+        "g:por-para-1",
+        "l:atrás",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-10",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Sir, go out through the back. (formal)",
+      "es": "Señor, salga por atrás.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "sal",
+        "salga"
+      ],
+      "answer": 1,
+      "why": "Señor is usted, so salga.",
+      "requires": [
+        "g:commands-usted",
+        "g:por-para-1",
+        "l:atrás",
+        "l:salir",
+        "l:señor"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-11",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Rosa and Tomás, come early. (you all)",
+      "es": "Rosa y Tomás, vengan temprano.",
+      "gap": [
+        14,
+        20
+      ],
+      "options": [
+        "vengan",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "Two people, so the ending takes an n.",
+      "requires": [
+        "g:commands-usted",
+        "l:temprano",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-12",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Vale, have a coffee. (to a friend)",
+      "es": "Vale, toma un café.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "tome",
+        "toma"
+      ],
+      "answer": 1,
+      "why": "Vale is a friend, so toma.",
+      "requires": [
+        "g:commands-tu",
+        "g:gender-articles",
+        "l:café",
+        "l:tomar"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-13",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Madam, have a coffee. (formal)",
+      "es": "Señora, tome un café.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "tome",
+        "toma"
+      ],
+      "answer": 0,
+      "why": "Señora is usted, so tome.",
+      "requires": [
+        "g:commands-usted",
+        "g:gender-articles",
+        "l:café",
+        "l:señora",
+        "l:tomar"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-14",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Do it now, Vale. (to a friend)",
+      "es": "Hazlo ahora, Vale.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Hágalo",
+        "Hazlo"
+      ],
+      "answer": 1,
+      "why": "Haz is the short tú command.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "l:ahora",
+        "l:hacer"
+      ]
+    },
+    {
+      "id": "x:commands-tu-usted#a-15",
+      "node": "x:commands-tu-usted",
+      "side": "g:commands-usted",
+      "rung": 1,
+      "en": "Do it now, sir. (formal)",
+      "es": "Hágalo ahora, señor.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Hágalo",
+        "Hazlo"
+      ],
+      "answer": 0,
+      "why": "Señor is usted, so haga.",
+      "requires": [
+        "g:commands-usted",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "l:ahora",
+        "l:hacer",
+        "l:señor"
+      ]
     }
   ]
 }

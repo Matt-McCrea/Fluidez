@@ -106,6 +106,33 @@
       ]
     },
     {
+      "id": "x:dar-igual-parecer-bien#a-1",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "I don't care which table.",
+      "es": "Me da igual qué mesa.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 1,
+      "why": "Not caring is dar igual.",
+      "requires": [
+        "c:me-da-igual",
+        "c:me-regala",
+        "g:indirect-questions",
+        "l:dar",
+        "l:igual",
+        "l:mesa",
+        "l:qué"
+      ]
+    },
+    {
       "id": "x:dar-igual-parecer-bien#a-2",
       "node": "x:dar-igual-parecer-bien",
       "side": "g:parecer-quedar",
@@ -140,7 +167,7 @@
       "node": "x:dar-igual-parecer-bien",
       "side": "p:dar-igual",
       "rung": 1,
-      "en": "It's all the same to Tomás whether we eat here or there.",
+      "en": "It's all the same to Tomás whether he eats here or there.",
       "es": "A Tomás le da igual comer aquí o allá.",
       "gap": [
         11,
@@ -196,6 +223,36 @@
         "p:bien-mal-vs-bueno-malo",
         "p:me-parece-bien-que",
         "p:te-parece-bien-que"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#a-5",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "Vale doesn't care what they say.",
+      "es": "A Vale le da igual lo que digan.",
+      "gap": [
+        10,
+        18
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 1,
+      "why": "Not caring is dar igual.",
+      "requires": [
+        "c:igual",
+        "g:indirect-objects",
+        "g:present-ar",
+        "g:relatives-donde-lo-que",
+        "g:subj-free-relatives",
+        "g:subj-wanting",
+        "l:dar",
+        "l:decir",
+        "l:igual",
+        "p:dar-igual"
       ]
     },
     {

@@ -245,6 +245,60 @@
       ]
     },
     {
+      "id": "x:es-en-esta-en#a-2",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The stadium is near the center.",
+      "es": "El estadio está cerca del centro.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A stadium is a place, so it says where it sits with está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:centro",
+        "l:cerca",
+        "l:estadio",
+        "l:estar",
+        "p:cerca-de",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-4",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "My keys are in the car.",
+      "es": "Mis llaves están en el carro.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "son",
+        "están"
+      ],
+      "answer": 1,
+      "why": "Keys are things, so they sit somewhere with estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:carro",
+        "l:estar",
+        "l:llave",
+        "p:possessives-basic"
+      ]
+    },
+    {
       "id": "x:es-en-esta-en#a-5",
       "node": "x:es-en-esta-en",
       "side": "p:ser-event-location",
@@ -295,6 +349,35 @@
       ]
     },
     {
+      "id": "x:es-en-esta-en#a-7",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The meeting will be in the café.",
+      "es": "La reunión será en el café.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "será",
+        "estará"
+      ],
+      "answer": 0,
+      "why": "A meeting is an event, so it takes ser en even in the future.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:café",
+        "l:reunión",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
       "id": "x:es-en-esta-en#a-8",
       "node": "x:es-en-esta-en",
       "side": "g:estar-location-states",
@@ -319,6 +402,59 @@
         "l:casa",
         "l:estar",
         "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-9",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The accident was on Carrera Séptima.",
+      "es": "El accidente fue en la Carrera Séptima.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "answer": 0,
+      "why": "An accident is an event, so it happened somewhere with fue en.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:accidente",
+        "l:ser",
+        "p:ser-event-location",
+        "p:street-names"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-10",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The books were on the shelf.",
+      "es": "Los libros estaban en el estante.",
+      "gap": [
+        11,
+        18
+      ],
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "answer": 1,
+      "why": "Books are things, so they sat somewhere with estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "l:estante",
+        "l:estar",
+        "l:libro"
       ]
     },
     {

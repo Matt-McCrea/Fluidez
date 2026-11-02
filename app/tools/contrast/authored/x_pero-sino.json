@@ -1,53 +1,87 @@
 [
-  {
-    "id": "2",
-    "side": "g:pero-sino",
-    "rung": 1,
-    "en": "Rosa didn't come, but she called.",
-    "es": "Rosa no vino, pero llamó.",
-    "gap": [
-      14,
-      18
-    ],
-    "options": [
-      "sino",
-      "pero"
-    ],
-    "answer": 1,
-    "why": "It adds a new fact, so pero."
-  },
-  {
-    "id": "4",
-    "side": "g:pero-sino",
-    "rung": 1,
-    "en": "The food is good, but expensive.",
-    "es": "La comida es buena, pero cara.",
-    "gap": [
-      20,
-      24
-    ],
-    "options": [
-      "sino",
-      "pero"
-    ],
-    "answer": 1,
-    "why": "No negation, so pero."
-  },
-  {
-    "id": "5",
-    "side": "g:pero-sino",
-    "rung": 1,
-    "en": "Vale didn't leave today, but yesterday.",
-    "es": "Vale no salió hoy, sino ayer.",
-    "gap": [
-      19,
-      23
-    ],
-    "options": [
-      "sino",
-      "pero"
-    ],
-    "answer": 0,
-    "why": "It corrects the day, so sino."
-  }
+ {
+  "id": "1",
+  "side": "g:pero-sino",
+  "rung": 1,
+  "en": "I don't want tea, but coffee.",
+  "es": "No quiero té, sino café.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "sino",
+   "pero"
+  ],
+  "answer": 0,
+  "why": "It replaces tea, so sino."
+ },
+ {
+  "id": "2",
+  "side": "g:pero-sino",
+  "rung": 1,
+  "en": "Rosa didn't come, but she called.",
+  "es": "Rosa no vino, pero llamó.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "sino",
+   "pero"
+  ],
+  "answer": 1,
+  "why": "It adds a new fact, so pero."
+ },
+ {
+  "id": "3",
+  "side": "g:pero-sino",
+  "rung": 1,
+  "en": "It isn't a house, but an apartment.",
+  "es": "No es una casa, sino un apartamento.",
+  "gap": [
+   16,
+   20
+  ],
+  "options": [
+   "sino",
+   "pero"
+  ],
+  "answer": 0,
+  "why": "It corrects what it is, so sino."
+ },
+ {
+  "id": "4",
+  "side": "g:pero-sino",
+  "rung": 1,
+  "en": "The food is good, but expensive.",
+  "es": "La comida es buena, pero cara.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "sino",
+   "pero"
+  ],
+  "answer": 1,
+  "why": "No negation, so pero."
+ },
+ {
+  "id": "5",
+  "side": "g:pero-sino",
+  "rung": 1,
+  "en": "Vale didn't leave today, but yesterday.",
+  "es": "Vale no salió hoy, sino ayer.",
+  "gap": [
+   19,
+   23
+  ],
+  "options": [
+   "sino",
+   "pero"
+  ],
+  "answer": 0,
+  "why": "It corrects the day, so sino."
+ }
 ]

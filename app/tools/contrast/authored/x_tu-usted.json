@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Vale, do you want coffee? (to a friend)",
+  "es": "Vale, ¿quieres café?",
+  "gap": [
+   7,
+   14
+  ],
+  "options": [
+   "quieres",
+   "quiere"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú, which ends in s."
+ },
+ {
+  "id": "2",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Madam, do you want coffee? (formal)",
+  "es": "Señora, ¿quiere café?",
+  "gap": [
+   9,
+   15
+  ],
+  "options": [
+   "quieres",
+   "quiere"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ },
+ {
+  "id": "3",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Tomás, where do you live? (to a friend)",
+  "es": "Tomás, ¿dónde vives?",
+  "gap": [
+   14,
+   19
+  ],
+  "options": [
+   "vives",
+   "vive"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú."
+ },
+ {
+  "id": "4",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Don Hernando, where do you live? (formal)",
+  "es": "Don Hernando, ¿dónde vive?",
+  "gap": [
+   21,
+   25
+  ],
+  "options": [
+   "vives",
+   "vive"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ },
+ {
+  "id": "5",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Is this your bag? (to a friend)",
+  "es": "¿Este es tu bolso?",
+  "gap": [
+   9,
+   11
+  ],
+  "options": [
+   "tu",
+   "su"
+  ],
+  "answer": 0,
+  "why": "Your for a friend is tu."
+ },
+ {
+  "id": "6",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Sir, is this your bag? (formal)",
+  "es": "Señor, ¿este es su bolso?",
+  "gap": [
+   16,
+   18
+  ],
+  "options": [
+   "tu",
+   "su"
+  ],
+  "answer": 1,
+  "why": "Your in formal speech is su."
+ },
+ {
+  "id": "7",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Do you have time today? (to a friend)",
+  "es": "¿Tienes tiempo hoy?",
+  "gap": [
+   1,
+   7
+  ],
+  "options": [
+   "Tienes",
+   "Tiene"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú."
+ },
+ {
+  "id": "8",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Do you have time today, doctor? (formal)",
+  "es": "Doctor, ¿tiene tiempo hoy?",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "tienes",
+   "tiene"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ },
+ {
+  "id": "9",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Can you help me, Rosa? (to a friend)",
+  "es": "Rosa, ¿me puedes ayudar?",
+  "gap": [
+   10,
+   16
+  ],
+  "options": [
+   "puedes",
+   "puede"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú."
+ },
+ {
+  "id": "10",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Can you help me, sir? (formal)",
+  "es": "Señor, ¿me puede ayudar?",
+  "gap": [
+   11,
+   16
+  ],
+  "options": [
+   "puedes",
+   "puede"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ },
+ {
+  "id": "11",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "How are you, Vale? (to a friend)",
+  "es": "Vale, ¿cómo estás?",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "estás",
+   "está"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú."
+ },
+ {
+  "id": "12",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "How are you, Don Hernando? (formal)",
+  "es": "Don Hernando, ¿cómo está?",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "estás",
+   "está"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ },
+ {
+  "id": "13",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Your sister is nice. (to a friend)",
+  "es": "Tu hermana es simpática.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Tu",
+   "Su"
+  ],
+  "answer": 0,
+  "why": "Your for a friend is tu."
+ },
+ {
+  "id": "14",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Your house is very pretty, madam. (formal)",
+  "es": "Su casa es muy bonita, señora.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "Tu",
+   "Su"
+  ],
+  "answer": 1,
+  "why": "Your in formal speech is su."
+ },
+ {
+  "id": "15",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Do you know my brother? (to a friend)",
+  "es": "¿Conoces a mi hermano?",
+  "gap": [
+   1,
+   8
+  ],
+  "options": [
+   "Conoces",
+   "Conoce"
+  ],
+  "answer": 0,
+  "why": "A friend gets tú."
+ },
+ {
+  "id": "16",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Do you know my brother, sir? (formal)",
+  "es": "Señor, ¿conoce a mi hermano?",
+  "gap": [
+   8,
+   14
+  ],
+  "options": [
+   "conoces",
+   "conoce"
+  ],
+  "answer": 1,
+  "why": "Formal takes the usted form."
+ }
+]

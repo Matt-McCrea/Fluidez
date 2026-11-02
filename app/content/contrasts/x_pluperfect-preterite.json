@@ -29,6 +29,196 @@
         "l:mercado",
         "p:ir-a-venir-de-place"
       ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-1",
+      "node": "x:pluperfect-preterite",
+      "side": "g:pluperfect",
+      "rung": 1,
+      "en": "When I arrived, Vale had already left.",
+      "es": "Cuando llegué, Vale ya se había ido.",
+      "gap": [
+        23,
+        35
+      ],
+      "options": [
+        "se había ido",
+        "se fue"
+      ],
+      "answer": 0,
+      "why": "She left before I arrived.",
+      "requires": [
+        "g:pluperfect",
+        "g:preterite-spelling-stem",
+        "l:ir",
+        "l:llegar",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-4",
+      "node": "x:pluperfect-preterite",
+      "side": "g:pluperfect",
+      "rung": 1,
+      "en": "When we got to the cinema, the movie had already started.",
+      "es": "Cuando llegamos al cine, la película ya había empezado.",
+      "gap": [
+        40,
+        54
+      ],
+      "options": [
+        "había empezado",
+        "empezó"
+      ],
+      "answer": 0,
+      "why": "Starting came before we arrived.",
+      "requires": [
+        "g:gender-articles",
+        "g:pluperfect",
+        "g:present-ar",
+        "l:cine",
+        "l:empezar",
+        "l:llegar",
+        "l:película",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-8",
+      "node": "x:pluperfect-preterite",
+      "side": "g:pluperfect",
+      "rung": 1,
+      "en": "When the doctor came, the pain had already gone.",
+      "es": "Cuando llegó el doctor, el dolor ya había pasado.",
+      "gap": [
+        36,
+        48
+      ],
+      "options": [
+        "había pasado",
+        "pasó"
+      ],
+      "answer": 0,
+      "why": "The pain ended first.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:preterite-ar",
+        "l:doctor",
+        "l:dolor",
+        "l:llegar",
+        "l:pasado",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-9",
+      "node": "x:pluperfect-preterite",
+      "side": "g:pluperfect",
+      "rung": 1,
+      "en": "When Tomás woke up, it had already stopped raining.",
+      "es": "Cuando Tomás despertó, ya había dejado de llover.",
+      "gap": [
+        26,
+        38
+      ],
+      "options": [
+        "había dejado",
+        "dejó"
+      ],
+      "answer": 0,
+      "why": "The rain stopped first.",
+      "requires": [
+        "g:pluperfect",
+        "g:preterite-ar",
+        "l:dejar",
+        "l:despertar",
+        "l:llover",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-17",
+      "node": "x:pluperfect-preterite",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "Then Tomás stood up and said goodbye.",
+      "es": "Entonces Tomás se levantó y se despidió.",
+      "gap": [
+        28,
+        39
+      ],
+      "options": [
+        "se había despedido",
+        "se despidió"
+      ],
+      "answer": 1,
+      "why": "Then marks the next step.",
+      "requires": [
+        "c:entonces-bueno",
+        "g:preterite-ar",
+        "g:preterite-spelling-stem",
+        "g:reflexive-routine",
+        "l:despedirse",
+        "l:levantarse"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-18",
+      "node": "x:pluperfect-preterite",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "Vale took the bus, got off at the park, and walked home.",
+      "es": "Vale tomó el bus, se bajó en el parque y caminó a casa.",
+      "gap": [
+        41,
+        47
+      ],
+      "options": [
+        "había caminado",
+        "caminó"
+      ],
+      "answer": 1,
+      "why": "A chain of steps in order.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:bajarse",
+        "l:bus",
+        "l:caminar",
+        "l:casa",
+        "l:parque",
+        "l:tomar",
+        "p:subirse-bajarse"
+      ]
+    },
+    {
+      "id": "x:pluperfect-preterite#a-19",
+      "node": "x:pluperfect-preterite",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "The teacher asked a question and nobody answered.",
+      "es": "La profesora hizo una pregunta y nadie respondió.",
+      "gap": [
+        39,
+        48
+      ],
+      "options": [
+        "había respondido",
+        "respondió"
+      ],
+      "answer": 1,
+      "why": "The answer followed the question.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:preterite-ser-ir-hacer",
+        "l:hacer",
+        "l:pregunta",
+        "l:profesora",
+        "l:responder"
+      ]
     }
   ]
 }

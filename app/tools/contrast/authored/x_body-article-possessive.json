@@ -1,0 +1,53 @@
+[
+ {
+  "id": "2",
+  "side": "p:lavarse-las-manos",
+  "rung": 1,
+  "en": "Rosa raises her hand.",
+  "es": "Rosa levanta la mano.",
+  "gap": [
+   13,
+   15
+  ],
+  "options": [
+   "su",
+   "la"
+  ],
+  "answer": 1,
+  "why": "Her own hand needs no su."
+ },
+ {
+  "id": "3",
+  "side": "p:lavarse-las-manos",
+  "rung": 1,
+  "en": "My feet hurt.",
+  "es": "Me duelen los pies.",
+  "gap": [
+   10,
+   13
+  ],
+  "options": [
+   "los",
+   "mis"
+  ],
+  "answer": 0,
+  "why": "Me already says they are your feet."
+ },
+ {
+  "id": "4",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "My café opens at six.",
+  "es": "Mi café abre a las seis.",
+  "gap": [
+   0,
+   2
+  ],
+  "options": [
+   "El",
+   "Mi"
+  ],
+  "answer": 1,
+  "why": "A café is something you own, not part of your body."
+ }
+]

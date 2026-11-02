@@ -122,6 +122,485 @@
         "p:sentir-lo-de",
         "p:siento-mucho-que"
       ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-1",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry Rosa is ill.",
+      "es": "Siento que Rosa esté enferma.",
+      "gap": [
+        7,
+        28
+      ],
+      "options": [
+        "que Rosa esté enferma",
+        "haber estado enferma"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:enfermo",
+        "l:estar",
+        "l:sentir",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-2",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry you lost your job.",
+      "es": "Siento que hayas perdido el trabajo.",
+      "gap": [
+        7,
+        35
+      ],
+      "options": [
+        "que hayas perdido el trabajo",
+        "haber perdido el trabajo"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-perfect",
+        "g:that-clauses",
+        "l:perder",
+        "l:sentir",
+        "l:trabajo",
+        "p:sentir-lo-de",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-3",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry the café is closed.",
+      "es": "Siento que el café esté cerrado.",
+      "gap": [
+        7,
+        31
+      ],
+      "options": [
+        "que el café esté cerrado",
+        "haber cerrado el café"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:estar",
+        "l:sentir",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-4",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry Tomás can't come.",
+      "es": "Siento que Tomás no pueda venir.",
+      "gap": [
+        7,
+        31
+      ],
+      "options": [
+        "que Tomás no pueda venir",
+        "no haber venido"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:verb-infinitive",
+        "l:poder",
+        "l:sentir",
+        "l:venir",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-5",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry you're so tired.",
+      "es": "Siento que estés tan cansado.",
+      "gap": [
+        7,
+        28
+      ],
+      "options": [
+        "que estés tan cansado",
+        "haber estado tan cansado"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cansado",
+        "l:estar",
+        "l:sentir",
+        "p:sentir-lo-de",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-6",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry Don Hernando didn't win.",
+      "es": "Siento que Don Hernando no haya ganado.",
+      "gap": [
+        7,
+        38
+      ],
+      "options": [
+        "que Don Hernando no haya ganado",
+        "no haber ganado"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-perfect",
+        "g:that-clauses",
+        "l:ganar",
+        "l:sentir",
+        "p:senor-don-article",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-7",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry your mom is alone.",
+      "es": "Siento que tu mamá esté sola.",
+      "gap": [
+        7,
+        28
+      ],
+      "options": [
+        "que tu mamá esté sola",
+        "haber estado sola"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:estar",
+        "l:mamá",
+        "l:sentir",
+        "p:possessives-basic",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-8",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry they didn't invite you.",
+      "es": "Siento que no te hayan invitado.",
+      "gap": [
+        7,
+        31
+      ],
+      "options": [
+        "que no te hayan invitado",
+        "no haberte invitado"
+      ],
+      "answer": 0,
+      "why": "Someone else's trouble takes siento que and the subjunctive.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-perfect",
+        "g:that-clauses",
+        "l:invitar",
+        "l:sentir",
+        "p:me-te-nos-objects",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-9",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I was late.",
+      "es": "Siento haber llegado tarde.",
+      "gap": [
+        7,
+        26
+      ],
+      "options": [
+        "haber llegado tarde",
+        "que haya llegado tarde"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:haber",
+        "l:llegar",
+        "l:sentir",
+        "l:tarde",
+        "p:llegar-a-tiempo",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-10",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I shouted at you.",
+      "es": "Siento haberte gritado.",
+      "gap": [
+        7,
+        22
+      ],
+      "options": [
+        "haberte gritado",
+        "que te haya gritado"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "l:gritar",
+        "l:haber",
+        "l:sentir",
+        "p:me-te-nos-objects",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-11",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I didn't call.",
+      "es": "Siento no haber llamado.",
+      "gap": [
+        7,
+        23
+      ],
+      "options": [
+        "no haber llamado",
+        "que no haya llamado"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:haber",
+        "l:llamar",
+        "l:sentir",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-12",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I forgot your birthday.",
+      "es": "Siento haber olvidado tu cumpleaños.",
+      "gap": [
+        7,
+        35
+      ],
+      "options": [
+        "haber olvidado tu cumpleaños",
+        "que haya olvidado tu cumpleaños"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:cumpleaños",
+        "l:haber",
+        "l:olvidar",
+        "l:sentir",
+        "p:possessives-basic",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-13",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I broke the cup.",
+      "es": "Siento haber roto la taza.",
+      "gap": [
+        7,
+        25
+      ],
+      "options": [
+        "haber roto la taza",
+        "que haya roto la taza"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:haber",
+        "l:romper",
+        "l:sentir",
+        "l:taza",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-14",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I said that to Rosa.",
+      "es": "Siento haberle dicho eso a Rosa.",
+      "gap": [
+        7,
+        31
+      ],
+      "options": [
+        "haberle dicho eso a Rosa",
+        "que le haya dicho eso a Rosa"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "l:decir",
+        "l:haber",
+        "l:sentir",
+        "p:demonstratives-basic",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-15",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I didn't help you.",
+      "es": "Siento no haberte ayudado.",
+      "gap": [
+        7,
+        25
+      ],
+      "options": [
+        "no haberte ayudado",
+        "que no te haya ayudado"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "l:ayudar",
+        "l:haber",
+        "l:sentir",
+        "p:me-te-nos-objects",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#a-16",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I spoke so loudly.",
+      "es": "Siento haber hablado tan fuerte.",
+      "gap": [
+        7,
+        31
+      ],
+      "options": [
+        "haber hablado tan fuerte",
+        "que haya hablado tan fuerte"
+      ],
+      "answer": 0,
+      "why": "Your own action takes siento haber and the participle, with no que.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:fuerte",
+        "l:haber",
+        "l:hablar",
+        "l:sentir",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
     }
   ]
 }

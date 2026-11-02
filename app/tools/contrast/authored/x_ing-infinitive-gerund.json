@@ -1,0 +1,223 @@
+[
+ {
+  "id": "1",
+  "side": "g:estar-gerund",
+  "rung": 1,
+  "en": "Rosa is eating.",
+  "es": "Rosa está comiendo.",
+  "gap": [
+   10,
+   18
+  ],
+  "options": [
+   "comiendo",
+   "comer"
+  ],
+  "answer": 0,
+  "why": "Estar plus a gerund says it is happening now."
+ },
+ {
+  "id": "2",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Eating late is bad.",
+  "es": "Comer tarde es malo.",
+  "gap": [
+   0,
+   5
+  ],
+  "options": [
+   "Comiendo",
+   "Comer"
+  ],
+  "answer": 1,
+  "why": "An action as the subject is an infinitive."
+ },
+ {
+  "id": "3",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Thanks for waiting.",
+  "es": "Gracias por esperar.",
+  "gap": [
+   12,
+   19
+  ],
+  "options": [
+   "esperar",
+   "esperando"
+  ],
+  "answer": 0,
+  "why": "After a preposition Spanish uses the infinitive."
+ },
+ {
+  "id": "4",
+  "side": "g:estar-gerund",
+  "rung": 1,
+  "en": "We are waiting for the bus.",
+  "es": "Estamos esperando el bus.",
+  "gap": [
+   8,
+   17
+  ],
+  "options": [
+   "esperar",
+   "esperando"
+  ],
+  "answer": 1,
+  "why": "Estar plus a gerund says it is happening now."
+ },
+ {
+  "id": "5",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "I like to walk.",
+  "es": "Me gusta caminar.",
+  "gap": [
+   9,
+   16
+  ],
+  "options": [
+   "caminar",
+   "caminando"
+  ],
+  "answer": 0,
+  "why": "After gustar the infinitive."
+ },
+ {
+  "id": "6",
+  "side": "g:estar-gerund",
+  "rung": 1,
+  "en": "Tomás is walking to the café.",
+  "es": "Tomás está caminando al café.",
+  "gap": [
+   11,
+   20
+  ],
+  "options": [
+   "caminar",
+   "caminando"
+  ],
+  "answer": 1,
+  "why": "Happening now, so the gerund."
+ },
+ {
+  "id": "7",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Before leaving, I pay.",
+  "es": "Antes de salir, pago.",
+  "gap": [
+   9,
+   14
+  ],
+  "options": [
+   "salir",
+   "saliendo"
+  ],
+  "answer": 0,
+  "why": "After antes de the infinitive."
+ },
+ {
+  "id": "8",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "After eating, we rest.",
+  "es": "Después de comer, descansamos.",
+  "gap": [
+   11,
+   16
+  ],
+  "options": [
+   "comiendo",
+   "comer"
+  ],
+  "answer": 1,
+  "why": "After después de the infinitive."
+ },
+ {
+  "id": "9",
+  "side": "g:estar-gerund",
+  "rung": 1,
+  "en": "Vale is reading a book.",
+  "es": "Vale está leyendo un libro.",
+  "gap": [
+   10,
+   17
+  ],
+  "options": [
+   "leyendo",
+   "leer"
+  ],
+  "answer": 0,
+  "why": "Happening now, so the gerund."
+ },
+ {
+  "id": "10",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Rosa wants to read.",
+  "es": "Rosa quiere leer.",
+  "gap": [
+   12,
+   16
+  ],
+  "options": [
+   "leyendo",
+   "leer"
+  ],
+  "answer": 1,
+  "why": "After querer the infinitive."
+ },
+ {
+  "id": "11",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "Learning Spanish takes time.",
+  "es": "Aprender español toma tiempo.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Aprender",
+   "Aprendiendo"
+  ],
+  "answer": 0,
+  "why": "An action as the subject is an infinitive."
+ },
+ {
+  "id": "12",
+  "side": "g:estar-gerund",
+  "rung": 1,
+  "en": "I am learning Spanish.",
+  "es": "Estoy aprendiendo español.",
+  "gap": [
+   6,
+   17
+  ],
+  "options": [
+   "aprender",
+   "aprendiendo"
+  ],
+  "answer": 1,
+  "why": "Happening now, so the gerund."
+ },
+ {
+  "id": "13",
+  "side": "g:verb-infinitive",
+  "rung": 1,
+  "en": "I am going to call Rosa.",
+  "es": "Voy a llamar a Rosa.",
+  "gap": [
+   6,
+   12
+  ],
+  "options": [
+   "llamar",
+   "llamando"
+  ],
+  "answer": 0,
+  "why": "After ir a the infinitive."
+ }
+]

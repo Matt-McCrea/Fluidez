@@ -154,6 +154,360 @@
         "l:querer",
         "p:me-te-nos-objects"
       ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-1",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I want to eat now.",
+      "es": "Quiero comer ahora.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "comer",
+        "que comas"
+      ],
+      "answer": 0,
+      "why": "Same person wants and eats, so the infinitive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:ahora",
+        "l:comer",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-2",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I want you to eat now.",
+      "es": "Quiero que comas ahora.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "comer",
+        "que comas"
+      ],
+      "answer": 1,
+      "why": "A different person eats, so que plus subjunctive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ahora",
+        "l:comer",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-3",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Vale needs to rest.",
+      "es": "Vale necesita descansar.",
+      "gap": [
+        14,
+        23
+      ],
+      "options": [
+        "descansar",
+        "que descanse"
+      ],
+      "answer": 0,
+      "why": "Same person, so the infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:descansar",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-4",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Vale needs you to rest.",
+      "es": "Vale necesita que descanses.",
+      "gap": [
+        14,
+        27
+      ],
+      "options": [
+        "descansar",
+        "que descanses"
+      ],
+      "answer": 1,
+      "why": "You rest, not Vale, so que plus subjunctive.",
+      "requires": [
+        "c:que-descanses",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:descansar",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-5",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Tomás prefers to cook.",
+      "es": "Tomás prefiere cocinar.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "cocinar",
+        "que cocine"
+      ],
+      "answer": 0,
+      "why": "Same person, so the infinitive.",
+      "requires": [
+        "g:stem-boot",
+        "l:cocinar",
+        "l:preferir",
+        "p:prefieres-x-o-y"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-6",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Tomás prefers that Rosa cooks.",
+      "es": "Tomás prefiere que Rosa cocine.",
+      "gap": [
+        15,
+        30
+      ],
+      "options": [
+        "cocinar",
+        "que Rosa cocine"
+      ],
+      "answer": 1,
+      "why": "Rosa is a different person.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cocinar",
+        "l:preferir"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-7",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I want to pay.",
+      "es": "Quiero pagar.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "pagar",
+        "que pague"
+      ],
+      "answer": 0,
+      "why": "Same person, so the infinitive.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:pagar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-8",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I want Tomás to pay.",
+      "es": "Quiero que Tomás pague.",
+      "gap": [
+        7,
+        22
+      ],
+      "options": [
+        "pagar",
+        "que Tomás pague"
+      ],
+      "answer": 1,
+      "why": "Tomás is a different person.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:pagar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-9",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Rosa wants to come early.",
+      "es": "Rosa quiere venir temprano.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "venir",
+        "que venga"
+      ],
+      "answer": 0,
+      "why": "Same person, so the infinitive.",
+      "requires": [
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:temprano",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-10",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Rosa wants us to come early.",
+      "es": "Rosa quiere que vengamos temprano.",
+      "gap": [
+        12,
+        24
+      ],
+      "options": [
+        "venir",
+        "que vengamos"
+      ],
+      "answer": 1,
+      "why": "We come, not Rosa.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:querer",
+        "l:temprano",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-11",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "We need to leave now.",
+      "es": "Necesitamos salir ahora.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "salir",
+        "que salgamos"
+      ],
+      "answer": 0,
+      "why": "Same people, so the infinitive.",
+      "requires": [
+        "g:present-ar",
+        "l:ahora",
+        "l:necesitar",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-12",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "We need Vale to leave now.",
+      "es": "Necesitamos que Vale salga ahora.",
+      "gap": [
+        12,
+        26
+      ],
+      "options": [
+        "salir",
+        "que Vale salga"
+      ],
+      "answer": 1,
+      "why": "Vale is a different person.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ahora",
+        "l:necesitar",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-13",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Hernando wants you to sit down.",
+      "es": "Hernando quiere que te sientes.",
+      "gap": [
+        16,
+        30
+      ],
+      "options": [
+        "que te sientes",
+        "sentarte"
+      ],
+      "answer": 0,
+      "why": "You sit, not Hernando.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:subj-irregulars",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:querer",
+        "l:sentarse"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#a-14",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Hernando wants to sit down.",
+      "es": "Hernando quiere sentarse.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "que se siente",
+        "sentarse"
+      ],
+      "answer": 1,
+      "why": "Same person, so the infinitive.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:sentarse"
+      ]
     }
   ]
 }

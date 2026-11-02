@@ -1,0 +1,223 @@
+[
+ {
+  "id": "1",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "Whenever I get to the café, Vale is already here.",
+  "es": "Cuando llego al café, Vale ya está aquí.",
+  "gap": [
+   7,
+   12
+  ],
+  "options": [
+   "llego",
+   "llegue"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "2",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "Whenever I close up, I clean the tables.",
+  "es": "Cuando cierro, limpio las mesas.",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "cierro",
+   "cierre"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "3",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "When the lawyer arrived, we started.",
+  "es": "Cuando llegó la abogada, empezamos.",
+  "gap": [
+   7,
+   12
+  ],
+  "options": [
+   "llegó",
+   "llegue"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "4",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "Whenever Rosa cooks, the whole house smells good.",
+  "es": "Cuando Rosa cocina, toda la casa huele rico.",
+  "gap": [
+   12,
+   18
+  ],
+  "options": [
+   "cocina",
+   "cocine"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "5",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "When I was a boy, I lived in Cali.",
+  "es": "Cuando era niño, vivía en Cali.",
+  "gap": [
+   7,
+   10
+  ],
+  "options": [
+   "era",
+   "sea"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "6",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "When I left the bank, it was raining.",
+  "es": "Cuando salí del banco, llovía.",
+  "gap": [
+   7,
+   11
+  ],
+  "options": [
+   "salí",
+   "salga"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "7",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "What do you do when you're hungry?",
+  "es": "¿Qué haces cuando tienes hambre?",
+  "gap": [
+   18,
+   24
+  ],
+  "options": [
+   "tienes",
+   "tengas"
+  ],
+  "answer": 0,
+  "why": "A habit or a fact that already happened takes the ordinary verb."
+ },
+ {
+  "id": "8",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "When I get home, I'll call you.",
+  "es": "Cuando llegue a casa, te llamo.",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "llegue",
+   "llego"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "When Vale comes tomorrow, we'll talk.",
+  "es": "Cuando Vale venga mañana, hablamos.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "venga",
+   "viene"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "When you finish, let me know.",
+  "es": "Cuando termines, avísame.",
+  "gap": [
+   7,
+   15
+  ],
+  "options": [
+   "termines",
+   "terminas"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "What are you going to do when you get there?",
+  "es": "¿Qué vas a hacer cuando llegues?",
+  "gap": [
+   24,
+   31
+  ],
+  "options": [
+   "llegues",
+   "llegas"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "When I grow up, I want to be a doctor.",
+  "es": "Cuando sea grande, quiero ser doctora.",
+  "gap": [
+   7,
+   10
+  ],
+  "options": [
+   "sea",
+   "soy"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:subj-cuando-future",
+  "rung": 1,
+  "en": "When Tomás opens the café tomorrow, I'll be there.",
+  "es": "Cuando Tomás abra el café mañana, estaré allí.",
+  "gap": [
+   13,
+   17
+  ],
+  "options": [
+   "abra",
+   "abre"
+  ],
+  "answer": 0,
+  "why": "Something still to come takes the subjunctive."
+ }
+]

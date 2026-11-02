@@ -1,0 +1,240 @@
+[
+ {
+  "id": "1",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "I have been living here for two months.",
+  "es": "Llevo dos meses viviendo aquí.",
+  "gap": [
+   16,
+   24
+  ],
+  "options": [
+   "viviendo",
+   "vivir"
+  ],
+  "answer": 0,
+  "why": "Llevar plus time plus a gerund says what you keep doing."
+ },
+ {
+  "id": "2",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "I have not slept in two days.",
+  "es": "Llevo dos días sin dormir.",
+  "gap": [
+   15,
+   25
+  ],
+  "options": [
+   "durmiendo",
+   "sin dormir"
+  ],
+  "answer": 1,
+  "why": "Without doing it is sin plus the infinitive."
+ },
+ {
+  "id": "3",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "Vale has been working here for a year.",
+  "es": "Vale lleva un año trabajando aquí.",
+  "gap": [
+   18,
+   28
+  ],
+  "options": [
+   "trabajando",
+   "trabajar"
+  ],
+  "answer": 0,
+  "why": "Llevar plus time plus a gerund."
+ },
+ {
+  "id": "4",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "Vale has not worked in a year.",
+  "es": "Vale lleva un año sin trabajar.",
+  "gap": [
+   18,
+   30
+  ],
+  "options": [
+   "trabajando",
+   "sin trabajar"
+  ],
+  "answer": 1,
+  "why": "The English says she has not worked."
+ },
+ {
+  "id": "5",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "We have been waiting for an hour.",
+  "es": "Llevamos una hora esperando.",
+  "gap": [
+   18,
+   27
+  ],
+  "options": [
+   "esperando",
+   "esperar"
+  ],
+  "answer": 0,
+  "why": "Llevar plus time plus a gerund."
+ },
+ {
+  "id": "6",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "We have not eaten for an hour.",
+  "es": "Llevamos una hora sin comer.",
+  "gap": [
+   18,
+   27
+  ],
+  "options": [
+   "comiendo",
+   "sin comer"
+  ],
+  "answer": 1,
+  "why": "The English says we have not eaten."
+ },
+ {
+  "id": "7",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "Tomás has been cooking for hours.",
+  "es": "Tomás lleva horas cocinando.",
+  "gap": [
+   18,
+   27
+  ],
+  "options": [
+   "cocinando",
+   "cocinar"
+  ],
+  "answer": 0,
+  "why": "He is still cooking."
+ },
+ {
+  "id": "8",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "Tomás has not cooked for weeks.",
+  "es": "Tomás lleva semanas sin cocinar.",
+  "gap": [
+   20,
+   31
+  ],
+  "options": [
+   "cocinando",
+   "sin cocinar"
+  ],
+  "answer": 1,
+  "why": "The English says he has not cooked."
+ },
+ {
+  "id": "10",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "I have not studied for three months.",
+  "es": "Llevo tres meses sin estudiar.",
+  "gap": [
+   17,
+   29
+  ],
+  "options": [
+   "estudiando",
+   "sin estudiar"
+  ],
+  "answer": 1,
+  "why": "The English says I have not studied."
+ },
+ {
+  "id": "11",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "Rosa has been calling you all day.",
+  "es": "Rosa lleva todo el día llamándote.",
+  "gap": [
+   23,
+   33
+  ],
+  "options": [
+   "llamándote",
+   "llamarte"
+  ],
+  "answer": 0,
+  "why": "She keeps calling, so the gerund."
+ },
+ {
+  "id": "12",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "Rosa has not called me in a week.",
+  "es": "Rosa lleva una semana sin llamarme.",
+  "gap": [
+   22,
+   34
+  ],
+  "options": [
+   "llamándome",
+   "sin llamarme"
+  ],
+  "answer": 1,
+  "why": "The English says she has not called."
+ },
+ {
+  "id": "13",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "Hernando has not come to the café for a month.",
+  "es": "Hernando lleva un mes sin venir al café.",
+  "gap": [
+   22,
+   31
+  ],
+  "options": [
+   "sin venir",
+   "viniendo"
+  ],
+  "answer": 0,
+  "why": "The English says he has not come."
+ },
+ {
+  "id": "14",
+  "side": "p:llevar-tiempo-gerundio",
+  "rung": 1,
+  "en": "Hernando has been coming to the café for years.",
+  "es": "Hernando lleva años viniendo al café.",
+  "gap": [
+   20,
+   28
+  ],
+  "options": [
+   "venir",
+   "viniendo"
+  ],
+  "answer": 1,
+  "why": "He keeps coming, so the gerund."
+ },
+ {
+  "id": "15",
+  "side": "p:llevar-sin-inf",
+  "rung": 1,
+  "en": "I have not seen my family for a year.",
+  "es": "Llevo un año sin ver a mi familia.",
+  "gap": [
+   13,
+   20
+  ],
+  "options": [
+   "sin ver",
+   "viendo"
+  ],
+  "answer": 0,
+  "why": "The English says I have not seen."
+ }
+]

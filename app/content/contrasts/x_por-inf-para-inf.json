@@ -437,6 +437,34 @@
       ]
     },
     {
+      "id": "x:por-inf-para-inf#a-2",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I saved money in order to buy a bike.",
+      "es": "Ahorré plata para comprar una bicicleta.",
+      "gap": [
+        13,
+        17
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "A goal is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:ahorrar",
+        "l:bicicleta",
+        "l:comprar",
+        "l:plata",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
       "id": "x:por-inf-para-inf#a-3",
       "node": "x:por-inf-para-inf",
       "side": "g:causal-advanced",
@@ -456,6 +484,34 @@
       "requires": [
         "g:por-para-1",
         "l:mentir"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#a-4",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I'm calling to ask about the price.",
+      "es": "Llamo para preguntar el precio.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "A purpose is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:llamar",
+        "l:precio",
+        "l:preguntar",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:preguntar-pedir"
       ]
     },
     {

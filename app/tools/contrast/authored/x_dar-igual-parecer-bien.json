@@ -1,70 +1,104 @@
 [
-  {
-    "id": "2",
-    "side": "g:parecer-quedar",
-    "rung": 1,
-    "en": "Friday seems good to me, let's do it.",
-    "es": "El viernes me parece bien, hagámoslo.",
-    "gap": [
-      14,
-      25
-    ],
-    "options": [
-      "parece bien",
-      "da igual"
-    ],
-    "answer": 0,
-    "why": "Approving is parecer bien."
-  },
-  {
-    "id": "3",
-    "side": "p:dar-igual",
-    "rung": 1,
-    "en": "It's all the same to Tomás whether we eat here or there.",
-    "es": "A Tomás le da igual comer aquí o allá.",
-    "gap": [
-      11,
-      19
-    ],
-    "options": [
-      "parece bien",
-      "da igual"
-    ],
-    "answer": 1,
-    "why": "Here or there makes no difference."
-  },
-  {
-    "id": "4",
-    "side": "g:parecer-quedar",
-    "rung": 1,
-    "en": "Does it seem fine to you all if we start now?",
-    "es": "¿Les parece bien si empezamos ahora?",
-    "gap": [
-      5,
-      16
-    ],
-    "options": [
-      "parece bien",
-      "da igual"
-    ],
-    "answer": 0,
-    "why": "Asking for approval is parecer bien."
-  },
-  {
-    "id": "6",
-    "side": "g:parecer-quedar",
-    "rung": 1,
-    "en": "That plan seems good to Rosa.",
-    "es": "A Rosa le parece bien ese plan.",
-    "gap": [
-      10,
-      21
-    ],
-    "options": [
-      "parece bien",
-      "da igual"
-    ],
-    "answer": 0,
-    "why": "Approving a plan is parecer bien."
-  }
+ {
+  "id": "1",
+  "side": "p:dar-igual",
+  "rung": 1,
+  "en": "I don't care which table.",
+  "es": "Me da igual qué mesa.",
+  "gap": [
+   3,
+   11
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 1,
+  "why": "Not caring is dar igual."
+ },
+ {
+  "id": "2",
+  "side": "g:parecer-quedar",
+  "rung": 1,
+  "en": "Friday seems good to me, let's do it.",
+  "es": "El viernes me parece bien, hagámoslo.",
+  "gap": [
+   14,
+   25
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 0,
+  "why": "Approving is parecer bien."
+ },
+ {
+  "id": "3",
+  "side": "p:dar-igual",
+  "rung": 1,
+  "en": "It's all the same to Tomás whether he eats here or there.",
+  "es": "A Tomás le da igual comer aquí o allá.",
+  "gap": [
+   11,
+   19
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 1,
+  "why": "Here or there makes no difference."
+ },
+ {
+  "id": "4",
+  "side": "g:parecer-quedar",
+  "rung": 1,
+  "en": "Does it seem fine to you all if we start now?",
+  "es": "¿Les parece bien si empezamos ahora?",
+  "gap": [
+   5,
+   16
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 0,
+  "why": "Asking for approval is parecer bien."
+ },
+ {
+  "id": "5",
+  "side": "p:dar-igual",
+  "rung": 1,
+  "en": "Vale doesn't care what they say.",
+  "es": "A Vale le da igual lo que digan.",
+  "gap": [
+   10,
+   18
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 1,
+  "why": "Not caring is dar igual."
+ },
+ {
+  "id": "6",
+  "side": "g:parecer-quedar",
+  "rung": 1,
+  "en": "That plan seems good to Rosa.",
+  "es": "A Rosa le parece bien ese plan.",
+  "gap": [
+   10,
+   21
+  ],
+  "options": [
+   "parece bien",
+   "da igual"
+  ],
+  "answer": 0,
+  "why": "Approving a plan is parecer bien."
+ }
 ]

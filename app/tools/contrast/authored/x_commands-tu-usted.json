@@ -1,0 +1,257 @@
+[
+ {
+  "id": "1",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Vale, look at this. (to a friend)",
+  "es": "Mira esto, Vale.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Mira",
+   "Mire"
+  ],
+  "answer": 0,
+  "why": "Vale is a friend, so the tú form."
+ },
+ {
+  "id": "2",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Sir, wait here. (formal)",
+  "es": "Espere aquí, señor.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Espera",
+   "Espere"
+  ],
+  "answer": 1,
+  "why": "Señor is usted, so the vowel swaps."
+ },
+ {
+  "id": "3",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Vale, say it again. (to a friend)",
+  "es": "Vale, dilo otra vez.",
+  "gap": [
+   6,
+   10
+  ],
+  "options": [
+   "dilo",
+   "dígalo"
+  ],
+  "answer": 0,
+  "why": "Di is the short tú command."
+ },
+ {
+  "id": "4",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Madam, say it again. (formal)",
+  "es": "Señora, dígalo otra vez.",
+  "gap": [
+   8,
+   14
+  ],
+  "options": [
+   "dilo",
+   "dígalo"
+  ],
+  "answer": 1,
+  "why": "Señora is usted, so diga."
+ },
+ {
+  "id": "5",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Come in, Tomás. (to a friend)",
+  "es": "Pasa, Tomás.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Pasa",
+   "Pase"
+  ],
+  "answer": 0,
+  "why": "Tomás is a friend, so the tú form."
+ },
+ {
+  "id": "6",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Come in, Don Hernando. (formal)",
+  "es": "Pase, Don Hernando.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Pasa",
+   "Pase"
+  ],
+  "answer": 1,
+  "why": "Don Hernando is usted."
+ },
+ {
+  "id": "7",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Put the coffee here, Vale. (to a friend)",
+  "es": "Pon el café aquí, Vale.",
+  "gap": [
+   0,
+   3
+  ],
+  "options": [
+   "Pon",
+   "Ponga"
+  ],
+  "answer": 0,
+  "why": "Pon is the short tú command."
+ },
+ {
+  "id": "8",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Put the coffee here, madam. (formal)",
+  "es": "Ponga el café aquí, señora.",
+  "gap": [
+   0,
+   5
+  ],
+  "options": [
+   "Pon",
+   "Ponga"
+  ],
+  "answer": 1,
+  "why": "Señora is usted, so ponga."
+ },
+ {
+  "id": "9",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Vale, go out through the back. (to a friend)",
+  "es": "Vale, sal por atrás.",
+  "gap": [
+   6,
+   9
+  ],
+  "options": [
+   "sal",
+   "salga"
+  ],
+  "answer": 0,
+  "why": "Sal is the short tú command."
+ },
+ {
+  "id": "10",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Sir, go out through the back. (formal)",
+  "es": "Señor, salga por atrás.",
+  "gap": [
+   7,
+   12
+  ],
+  "options": [
+   "sal",
+   "salga"
+  ],
+  "answer": 1,
+  "why": "Señor is usted, so salga."
+ },
+ {
+  "id": "11",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Rosa and Tomás, come early. (you all)",
+  "es": "Rosa y Tomás, vengan temprano.",
+  "gap": [
+   14,
+   20
+  ],
+  "options": [
+   "vengan",
+   "venga"
+  ],
+  "answer": 0,
+  "why": "Two people, so the ending takes an n."
+ },
+ {
+  "id": "12",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Vale, have a coffee. (to a friend)",
+  "es": "Vale, toma un café.",
+  "gap": [
+   6,
+   10
+  ],
+  "options": [
+   "tome",
+   "toma"
+  ],
+  "answer": 1,
+  "why": "Vale is a friend, so toma."
+ },
+ {
+  "id": "13",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Madam, have a coffee. (formal)",
+  "es": "Señora, tome un café.",
+  "gap": [
+   8,
+   12
+  ],
+  "options": [
+   "tome",
+   "toma"
+  ],
+  "answer": 0,
+  "why": "Señora is usted, so tome."
+ },
+ {
+  "id": "14",
+  "side": "g:commands-tu",
+  "rung": 1,
+  "en": "Do it now, Vale. (to a friend)",
+  "es": "Hazlo ahora, Vale.",
+  "gap": [
+   0,
+   5
+  ],
+  "options": [
+   "Hágalo",
+   "Hazlo"
+  ],
+  "answer": 1,
+  "why": "Haz is the short tú command."
+ },
+ {
+  "id": "15",
+  "side": "g:commands-usted",
+  "rung": 1,
+  "en": "Do it now, sir. (formal)",
+  "es": "Hágalo ahora, señor.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Hágalo",
+   "Hazlo"
+  ],
+  "answer": 0,
+  "why": "Señor is usted, so haga."
+ }
+]

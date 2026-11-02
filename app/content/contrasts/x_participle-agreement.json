@@ -248,6 +248,256 @@
         "l:cerrar",
         "l:puerta"
       ]
+    },
+    {
+      "id": "x:participle-agreement#a-1",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Rosa has closed the shop.",
+      "es": "Rosa ha cerrado la tienda.",
+      "gap": [
+        8,
+        15
+      ],
+      "options": [
+        "cerrado",
+        "cerrada"
+      ],
+      "answer": 0,
+      "why": "After haber, the participle never changes.",
+      "requires": [
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:cerrar",
+        "l:tienda"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-2",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The shop is closed.",
+      "es": "La tienda está cerrada.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "cerrado",
+        "cerrada"
+      ],
+      "answer": 1,
+      "why": "After estar, the participle agrees with shop.",
+      "requires": [
+        "c:abierto-cerrado",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:cerrar",
+        "l:estar",
+        "l:tienda"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-3",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "We have eaten all the arepas.",
+      "es": "Hemos comido todas las arepas.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "comido",
+        "comidas"
+      ],
+      "answer": 0,
+      "why": "After haber, the participle never changes.",
+      "requires": [
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:arepa",
+        "l:comer"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-4",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The arepas are already made.",
+      "es": "Las arepas ya están hechas.",
+      "gap": [
+        20,
+        26
+      ],
+      "options": [
+        "hecho",
+        "hechas"
+      ],
+      "answer": 1,
+      "why": "After estar, it agrees with arepas.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:arepa",
+        "l:estar",
+        "l:hacer"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-5",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Vale has called us twice.",
+      "es": "Vale nos ha llamado dos veces.",
+      "gap": [
+        12,
+        19
+      ],
+      "options": [
+        "llamado",
+        "llamada"
+      ],
+      "answer": 0,
+      "why": "After haber, the participle never changes.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:llamar",
+        "l:vez",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-6",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The doors are open.",
+      "es": "Las puertas están abiertas.",
+      "gap": [
+        18,
+        26
+      ],
+      "options": [
+        "abiertos",
+        "abiertas"
+      ],
+      "answer": 1,
+      "why": "After estar, it agrees with doors.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:abrir",
+        "l:estar",
+        "l:puerta"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-7",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "Rosa is tired. (she)",
+      "es": "Rosa está cansada.",
+      "gap": [
+        10,
+        17
+      ],
+      "options": [
+        "cansada",
+        "cansado"
+      ],
+      "answer": 0,
+      "why": "After estar, it agrees with Rosa.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-8",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "They have seen the new house.",
+      "es": "Han visto la casa nueva.",
+      "gap": [
+        4,
+        9
+      ],
+      "options": [
+        "vistas",
+        "visto"
+      ],
+      "answer": 1,
+      "why": "After haber, the participle never changes.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:casa",
+        "l:nuevo",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-9",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The tickets are already bought.",
+      "es": "Los pasajes ya están comprados.",
+      "gap": [
+        21,
+        30
+      ],
+      "options": [
+        "comprados",
+        "comprado"
+      ],
+      "answer": 0,
+      "why": "After estar, it agrees with tickets.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:comprar",
+        "l:estar",
+        "l:pasaje"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#a-10",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Tomás has written the letters.",
+      "es": "Tomás ha escrito las cartas.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "escritas",
+        "escrito"
+      ],
+      "answer": 1,
+      "why": "After haber, the participle never changes.",
+      "requires": [
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:carta",
+        "l:escribir"
+      ]
     }
   ]
 }

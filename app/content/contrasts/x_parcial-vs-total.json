@@ -41,11 +41,40 @@
       ]
     },
     {
+      "id": "x:parcial-vs-total#a-1",
+      "node": "x:parcial-vs-total",
+      "side": "p:coincidir-en",
+      "rung": 1,
+      "en": "I agree with you that we need more time.",
+      "es": "Coincido contigo en que hace falta más tiempo.",
+      "gap": [
+        0,
+        23
+      ],
+      "options": [
+        "Coincido contigo en que",
+        "No te falta razón"
+      ],
+      "answer": 0,
+      "why": "Full agreement with nothing taken back: coincido contigo en que.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:coincidir",
+        "l:falta",
+        "l:hacer",
+        "l:tiempo",
+        "p:coincidir-con-en",
+        "p:coincidir-en"
+      ]
+    },
+    {
       "id": "x:parcial-vs-total#a-2",
       "node": "x:parcial-vs-total",
       "side": "p:no-te-falta-razon",
       "rung": 1,
-      "en": "You have a point, but it's too expensive.",
+      "en": "You have a point, but it's very expensive.",
       "es": "No te falta razón, pero es muy caro.",
       "gap": [
         0,
@@ -97,6 +126,39 @@
       ]
     },
     {
+      "id": "x:parcial-vs-total#a-4",
+      "node": "x:parcial-vs-total",
+      "side": "p:coincidir-en",
+      "rung": 1,
+      "en": "I agree with you that the plan is good. (to a friend)",
+      "es": "Coincido contigo en que el plan es bueno.",
+      "gap": [
+        0,
+        23
+      ],
+      "options": [
+        "No te falta razón",
+        "Coincido contigo en que"
+      ],
+      "answer": 1,
+      "why": "Complete agreement is coincido contigo en que.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-pronouns",
+        "g:present-er-ir",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:bueno",
+        "l:coincidir",
+        "l:plan",
+        "l:ser",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:coincidir-con-en",
+        "p:coincidir-en"
+      ]
+    },
+    {
       "id": "x:parcial-vs-total#a-5",
       "node": "x:parcial-vs-total",
       "side": "p:no-te-falta-razon",
@@ -128,6 +190,35 @@
         "p:no-te-falta-razon",
         "p:quedar-faltar-sobrar",
         "p:se-podria-objetar-que"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-6",
+      "node": "x:parcial-vs-total",
+      "side": "p:coincidir-en",
+      "rung": 1,
+      "en": "I agree with you that Rosa should decide.",
+      "es": "Coincido contigo en que Rosa debe decidir.",
+      "gap": [
+        0,
+        23
+      ],
+      "options": [
+        "No te falta razón",
+        "Coincido contigo en que"
+      ],
+      "answer": 1,
+      "why": "The speaker is fully on your side.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:present-er-ir",
+        "g:tener-que-hay-que",
+        "g:that-clauses",
+        "l:coincidir",
+        "l:deber",
+        "l:decidir",
+        "p:coincidir-con-en",
+        "p:coincidir-en"
       ]
     },
     {
@@ -185,6 +276,38 @@
         "p:demonstratives-basic",
         "p:me-te-nos-objects",
         "p:no-te-falta-razon"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-9",
+      "node": "x:parcial-vs-total",
+      "side": "p:coincidir-en",
+      "rung": 1,
+      "en": "I agree with you that the café needs a new menu.",
+      "es": "Coincido contigo en que el café necesita un menú nuevo.",
+      "gap": [
+        0,
+        23
+      ],
+      "options": [
+        "Coincido contigo en que",
+        "No te falta razón"
+      ],
+      "answer": 0,
+      "why": "Plain full agreement is coincido contigo en que.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-pronouns",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:café",
+        "l:coincidir",
+        "l:menú",
+        "l:necesitar",
+        "l:nuevo",
+        "p:coincidir-con-en",
+        "p:coincidir-en"
       ]
     }
   ]

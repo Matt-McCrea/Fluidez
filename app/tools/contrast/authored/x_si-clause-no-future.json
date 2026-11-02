@@ -1,0 +1,206 @@
+[
+ {
+  "id": "1",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If it rains, we won't go to the park.",
+  "es": "Si llueve, no iremos al parque.",
+  "gap": [
+   3,
+   9
+  ],
+  "options": [
+   "llueve",
+   "lloverá"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "3",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If Vale comes, we'll make arepas.",
+  "es": "Si Vale viene, haremos arepas.",
+  "gap": [
+   8,
+   13
+  ],
+  "options": [
+   "viene",
+   "vendrá"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "4",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "I'll call you if I find Simón.",
+  "es": "Te llamaré si encuentro a Simón.",
+  "gap": [
+   14,
+   23
+  ],
+  "options": [
+   "encuentro",
+   "encontraré"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "5",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If you study a lot, you'll pass the exam.",
+  "es": "Si estudias mucho, pasarás el examen.",
+  "gap": [
+   3,
+   11
+  ],
+  "options": [
+   "estudias",
+   "estudiarás"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "6",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If Rosa arrives early, we'll open together.",
+  "es": "Si Rosa llega temprano, abriremos juntos.",
+  "gap": [
+   8,
+   13
+  ],
+  "options": [
+   "llega",
+   "llegará"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "7",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If there's no coffee, I'll have water.",
+  "es": "Si no hay tinto, tomaré agua.",
+  "gap": [
+   6,
+   9
+  ],
+  "options": [
+   "hay",
+   "habrá"
+  ],
+  "answer": 0,
+  "why": "After si, a real possibility stays in the present."
+ },
+ {
+  "id": "9",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If it rains, I'll stay home.",
+  "es": "Si llueve, me quedaré en casa.",
+  "gap": [
+   11,
+   21
+  ],
+  "options": [
+   "me quedaré",
+   "me quedé"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ },
+ {
+  "id": "10",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If Don Hernando calls, I'll let you know.",
+  "es": "Si Don Hernando llama, te avisaré.",
+  "gap": [
+   23,
+   33
+  ],
+  "options": [
+   "te avisaré",
+   "te avisé"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ },
+ {
+  "id": "11",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If Vale comes, we'll make arepas.",
+  "es": "Si Vale viene, haremos arepas.",
+  "gap": [
+   15,
+   22
+  ],
+  "options": [
+   "haremos",
+   "hicimos"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ },
+ {
+  "id": "12",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If you find Simón, I'll be happy.",
+  "es": "Si encuentras a Simón, estaré feliz.",
+  "gap": [
+   23,
+   29
+  ],
+  "options": [
+   "estaré",
+   "estuve"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ },
+ {
+  "id": "13",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If it's sunny, we'll go out for a walk.",
+  "es": "Si hace sol, saldremos a caminar.",
+  "gap": [
+   13,
+   22
+  ],
+  "options": [
+   "saldremos",
+   "saldríamos"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ },
+ {
+  "id": "14",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "If you invite me, I'll go with you.",
+  "es": "Si me invitas, iré contigo.",
+  "gap": [
+   15,
+   18
+  ],
+  "options": [
+   "iré",
+   "fui"
+  ],
+  "answer": 0,
+  "why": "The result half of the sentence takes the future."
+ }
+]

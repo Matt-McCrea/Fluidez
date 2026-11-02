@@ -126,6 +126,216 @@
         "l:dormir",
         "l:poder"
       ]
+    },
+    {
+      "id": "x:saber-poder#a-2",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Today Vale can't go out.",
+      "es": "Hoy Vale no puede salir.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "sabe",
+        "puede"
+      ],
+      "answer": 1,
+      "why": "Free or able right now, so poder.",
+      "requires": [
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:hoy",
+        "l:poder",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-6",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Do you kids know how to swim?",
+      "es": "¿Saben nadar, chicos?",
+      "gap": [
+        1,
+        6
+      ],
+      "options": [
+        "Pueden",
+        "Saben"
+      ],
+      "answer": 1,
+      "why": "A learned skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:chico",
+        "l:nadar",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-7",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "My sister knows how to dance salsa.",
+      "es": "Mi hermana sabe bailar salsa.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "sabe",
+        "puede"
+      ],
+      "answer": 0,
+      "why": "A learned skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:bailar",
+        "l:hermana",
+        "l:saber",
+        "l:salsa",
+        "p:possessives-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-8",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Can you help me with this? (to a friend)",
+      "es": "¿Puedes ayudarme con esto?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Sabes",
+        "Puedes"
+      ],
+      "answer": 1,
+      "why": "Free or able right now, so poder.",
+      "requires": [
+        "g:object-pronoun-position",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:ayudar",
+        "l:poder",
+        "p:demonstratives-basic",
+        "p:me-te-nos-objects",
+        "p:request-ladder"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-9",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Hernando can't walk much anymore.",
+      "es": "Hernando ya no puede caminar mucho.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "puede",
+        "sabe"
+      ],
+      "answer": 0,
+      "why": "Free or able right now, so poder.",
+      "requires": [
+        "c:ya-no",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:caminar",
+        "l:poder",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-11",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "The kids can't play because it's raining.",
+      "es": "Los niños no pueden jugar porque llueve.",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "pueden",
+        "saben"
+      ],
+      "answer": 0,
+      "why": "Free or able right now, so poder.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:jugar",
+        "l:llover",
+        "l:niño",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-12",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Do you know how to make arepas? (to a friend)",
+      "es": "¿Sabes hacer arepas?",
+      "gap": [
+        1,
+        6
+      ],
+      "options": [
+        "Puedes",
+        "Sabes"
+      ],
+      "answer": 1,
+      "why": "A learned skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:arepa",
+        "l:hacer",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-poder#a-14",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Rosa knows how to fix motorcycles.",
+      "es": "Rosa sabe arreglar motos.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "puede",
+        "sabe"
+      ],
+      "answer": 1,
+      "why": "A learned skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:arreglar",
+        "l:moto",
+        "l:saber",
+        "p:saber-conocer"
+      ]
     }
   ]
 }

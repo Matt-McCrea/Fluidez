@@ -1,0 +1,240 @@
+[
+ {
+  "id": "3",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "As long as I live, I won't sell this house.",
+  "es": "Mientras viva, no venderé esta casa.",
+  "gap": [
+   9,
+   13
+  ],
+  "options": [
+   "viva",
+   "vivo"
+  ],
+  "answer": 0,
+  "why": "As long as, about the unknown future, takes the subjunctive."
+ },
+ {
+  "id": "4",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "As long as you have doubts, ask.",
+  "es": "Mientras tengas dudas, pregunta.",
+  "gap": [
+   9,
+   15
+  ],
+  "options": [
+   "tienes",
+   "tengas"
+  ],
+  "answer": 1,
+  "why": "As long as, with an open time, takes the subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "We'll be fine as long as we stay together.",
+  "es": "Estaremos bien mientras sigamos juntos.",
+  "gap": [
+   24,
+   31
+  ],
+  "options": [
+   "sigamos",
+   "seguimos"
+  ],
+  "answer": 0,
+  "why": "As long as, about the future, takes the subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "I'll wait as long as it's necessary.",
+  "es": "Esperaré mientras sea necesario.",
+  "gap": [
+   18,
+   21
+  ],
+  "options": [
+   "es",
+   "sea"
+  ],
+  "answer": 1,
+  "why": "As long as, about the future, takes the subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "As long as you don't tell me the truth, I won't help you.",
+  "es": "Mientras no me digas la verdad, no te ayudo.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "dices",
+   "digas"
+  ],
+  "answer": 1,
+  "why": "As long as, with a condition not yet met, takes the subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "p:mientras-subj",
+  "rung": 1,
+  "en": "As long as you pay, I'll cook.",
+  "es": "Mientras tú pagues, yo cocino.",
+  "gap": [
+   12,
+   18
+  ],
+  "options": [
+   "pagues",
+   "pagas"
+  ],
+  "answer": 0,
+  "why": "As long as, with a condition, takes the subjunctive."
+ },
+ {
+  "id": "10",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While Rosa was cooking, Tomás was setting the table.",
+  "es": "Mientras Rosa cocinaba, Tomás ponía la mesa.",
+  "gap": [
+   14,
+   22
+  ],
+  "options": [
+   "cocinara",
+   "cocinaba"
+  ],
+  "answer": 1,
+  "why": "Two real actions at the same time take the indicative."
+ },
+ {
+  "id": "11",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While I wash the dishes, you dry them.",
+  "es": "Mientras yo lavo los platos, tú los secas.",
+  "gap": [
+   12,
+   16
+  ],
+  "options": [
+   "lavo",
+   "lave"
+  ],
+  "answer": 0,
+  "why": "Two actions happening together take the indicative."
+ },
+ {
+  "id": "12",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "Yesterday, while I was walking, I saw Don Hernando.",
+  "es": "Ayer, mientras caminaba, vi a Don Hernando.",
+  "gap": [
+   15,
+   23
+  ],
+  "options": [
+   "caminara",
+   "caminaba"
+  ],
+  "answer": 1,
+  "why": "A real past moment takes the indicative."
+ },
+ {
+  "id": "13",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While we eat, we watch the news.",
+  "es": "Mientras comemos, vemos las noticias.",
+  "gap": [
+   9,
+   16
+  ],
+  "options": [
+   "comemos",
+   "comamos"
+  ],
+  "answer": 0,
+  "why": "A real habit at the same time takes the indicative."
+ },
+ {
+  "id": "14",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While my mom was sleeping, I cleaned the house.",
+  "es": "Mientras mi mamá dormía, yo limpié la casa.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "durmiera",
+   "dormía"
+  ],
+  "answer": 1,
+  "why": "A real past moment takes the indicative."
+ },
+ {
+  "id": "15",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "He talks on the phone while he drives.",
+  "es": "Habla por teléfono mientras maneja.",
+  "gap": [
+   28,
+   34
+  ],
+  "options": [
+   "maneja",
+   "maneje"
+  ],
+  "answer": 0,
+  "why": "Two real actions at the same time take the indicative."
+ },
+ {
+  "id": "16",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While you were at work, someone called.",
+  "es": "Mientras tú estabas en el trabajo, alguien llamó.",
+  "gap": [
+   12,
+   19
+  ],
+  "options": [
+   "estuvieras",
+   "estabas"
+  ],
+  "answer": 1,
+  "why": "A real past moment takes the indicative."
+ },
+ {
+  "id": "17",
+  "side": "g:cuando-indicative",
+  "rung": 1,
+  "en": "While Simón studies, his sister plays.",
+  "es": "Mientras Simón estudia, su hermana juega.",
+  "gap": [
+   15,
+   22
+  ],
+  "options": [
+   "estudia",
+   "estudie"
+  ],
+  "answer": 0,
+  "why": "Two real actions at the same time take the indicative."
+ }
+]

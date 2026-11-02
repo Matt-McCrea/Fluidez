@@ -1,0 +1,138 @@
+[
+ {
+  "id": "1",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "Where is my phone?",
+  "es": "¿Dónde está mi celular?",
+  "gap": [
+   12,
+   22
+  ],
+  "options": [
+   "mi celular",
+   "un celular mío"
+  ],
+  "answer": 0,
+  "why": "Plain my before the noun."
+ },
+ {
+  "id": "3",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "Rosa is my aunt.",
+  "es": "Rosa es mi tía.",
+  "gap": [
+   8,
+   14
+  ],
+  "options": [
+   "mi tía",
+   "una tía mía"
+  ],
+  "answer": 0,
+  "why": "Plain my before the noun."
+ },
+ {
+  "id": "4",
+  "side": "g:possessives-stressed",
+  "rung": 1,
+  "en": "Tomás is a friend of mine.",
+  "es": "Tomás es un amigo mío.",
+  "gap": [
+   9,
+   21
+  ],
+  "options": [
+   "mi amigo",
+   "un amigo mío"
+  ],
+  "answer": 1,
+  "why": "The English says a friend of mine."
+ },
+ {
+  "id": "5",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "I am looking for my keys.",
+  "es": "Busco mis llaves.",
+  "gap": [
+   6,
+   16
+  ],
+  "options": [
+   "mis llaves",
+   "unas llaves mías"
+  ],
+  "answer": 0,
+  "why": "Plain my before the noun."
+ },
+ {
+  "id": "7",
+  "side": "g:possessives-stressed",
+  "rung": 1,
+  "en": "A cousin of mine lives in Cali.",
+  "es": "Un primo mío vive en Cali.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Un primo mío",
+   "Mi primo"
+  ],
+  "answer": 0,
+  "why": "The English says a cousin of mine."
+ },
+ {
+  "id": "8",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "My brother works at night.",
+  "es": "Mi hermano trabaja de noche.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Un hermano mío",
+   "Mi hermano"
+  ],
+  "answer": 1,
+  "why": "Plain my before the noun."
+ },
+ {
+  "id": "9",
+  "side": "g:possessives-stressed",
+  "rung": 1,
+  "en": "Those books are mine.",
+  "es": "Esos libros son míos.",
+  "gap": [
+   16,
+   20
+  ],
+  "options": [
+   "míos",
+   "mis"
+  ],
+  "answer": 0,
+  "why": "Mine alone after ser agrees with books: míos."
+ },
+ {
+  "id": "10",
+  "side": "g:possessives",
+  "rung": 1,
+  "en": "I love my city.",
+  "es": "Quiero mucho a mi ciudad.",
+  "gap": [
+   15,
+   24
+  ],
+  "options": [
+   "una ciudad mía",
+   "mi ciudad"
+  ],
+  "answer": 1,
+  "why": "Plain my before the noun."
+ }
+]

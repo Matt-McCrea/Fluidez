@@ -1,206 +1,189 @@
 [
-  {
-    "id": "1",
-    "side": "p:tengo-la-impresion-de-que",
-    "rung": 1,
-    "en": "I have the impression that Rosa is tired.",
-    "es": "Tengo la impresión de que Rosa está cansada.",
-    "gap": [
-      31,
-      35
-    ],
-    "options": [
-      "está",
-      "esté"
-    ],
-    "answer": 0,
-    "why": "An impression is a belief, so the normal verb."
-  },
-  {
-    "id": "2",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am not sure that Rosa is tired.",
-    "es": "No estoy seguro de que Rosa esté cansada.",
-    "gap": [
-      28,
-      32
-    ],
-    "options": [
-      "está",
-      "esté"
-    ],
-    "answer": 1,
-    "why": "Not sure is doubt, so the subjunctive."
-  },
-  {
-    "id": "3",
-    "side": "p:tengo-la-impresion-de-que",
-    "rung": 1,
-    "en": "I have the impression that it rains a lot here.",
-    "es": "Tengo la impresión de que llueve mucho aquí.",
-    "gap": [
-      26,
-      32
-    ],
-    "options": [
-      "llueve",
-      "llueva"
-    ],
-    "answer": 0,
-    "why": "An impression takes the normal verb."
-  },
-  {
-    "id": "4",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am not sure that it rains a lot here.",
-    "es": "No estoy seguro de que llueva mucho aquí.",
-    "gap": [
-      23,
-      29
-    ],
-    "options": [
-      "llueve",
-      "llueva"
-    ],
-    "answer": 1,
-    "why": "Not sure is doubt."
-  },
-  {
-    "id": "5",
-    "side": "p:tengo-la-impresion-de-que",
-    "rung": 1,
-    "en": "I have the impression that Tomás knows.",
-    "es": "Tengo la impresión de que Tomás sabe.",
-    "gap": [
-      32,
-      36
-    ],
-    "options": [
-      "sabe",
-      "sepa"
-    ],
-    "answer": 0,
-    "why": "An impression takes the normal verb."
-  },
-  {
-    "id": "6",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "We are not sure that Tomás knows.",
-    "es": "No estamos seguros de que Tomás sepa.",
-    "gap": [
-      32,
-      36
-    ],
-    "options": [
-      "sabe",
-      "sepa"
-    ],
-    "answer": 1,
-    "why": "Not sure is doubt."
-  },
-  {
-    "id": "7",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am sure that the bus comes.",
-    "es": "Estoy seguro de que el bus viene.",
-    "gap": [
-      27,
-      32
-    ],
-    "options": [
-      "viene",
-      "venga"
-    ],
-    "answer": 0,
-    "why": "Being sure is certainty, so the normal verb."
-  },
-  {
-    "id": "8",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am not sure that the bus comes.",
-    "es": "No estoy seguro de que el bus venga.",
-    "gap": [
-      30,
-      35
-    ],
-    "options": [
-      "viene",
-      "venga"
-    ],
-    "answer": 1,
-    "why": "Not sure is doubt."
-  },
-  {
-    "id": "9",
-    "side": "p:tengo-la-impresion-de-que",
-    "rung": 1,
-    "en": "I have the impression that we have time.",
-    "es": "Tengo la impresión de que tenemos tiempo.",
-    "gap": [
-      26,
-      33
-    ],
-    "options": [
-      "tenemos",
-      "tengamos"
-    ],
-    "answer": 0,
-    "why": "An impression takes the normal verb."
-  },
-  {
-    "id": "10",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am not sure that we have time.",
-    "es": "No estoy segura de que tengamos tiempo.",
-    "gap": [
-      23,
-      31
-    ],
-    "options": [
-      "tenemos",
-      "tengamos"
-    ],
-    "answer": 1,
-    "why": "Not sure is doubt."
-  },
-  {
-    "id": "12",
-    "side": "p:tengo-la-impresion-de-que",
-    "rung": 1,
-    "en": "I have the impression that the park is closed.",
-    "es": "Tengo la impresión de que el parque está cerrado.",
-    "gap": [
-      36,
-      40
-    ],
-    "options": [
-      "esté",
-      "está"
-    ],
-    "answer": 1,
-    "why": "An impression takes the normal verb."
-  },
-  {
-    "id": "13",
-    "side": "p:no-estoy-seguro-de-que",
-    "rung": 1,
-    "en": "I am not sure that the park is closed.",
-    "es": "No estoy seguro de que el parque esté cerrado.",
-    "gap": [
-      33,
-      37
-    ],
-    "options": [
-      "esté",
-      "está"
-    ],
-    "answer": 0,
-    "why": "Not sure is doubt."
-  }
+ {
+  "id": "1",
+  "side": "p:tengo-la-impresion-de-que",
+  "rung": 1,
+  "en": "I have the impression that Rosa is tired.",
+  "es": "Tengo la impresión de que Rosa está cansada.",
+  "gap": [
+   31,
+   35
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "An impression is a belief, so the normal verb."
+ },
+ {
+  "id": "2",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "I am not sure that Rosa is tired.",
+  "es": "No estoy seguro de que Rosa esté cansada.",
+  "gap": [
+   28,
+   32
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 1,
+  "why": "Not sure is doubt, so the subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "p:tengo-la-impresion-de-que",
+  "rung": 1,
+  "en": "I have the impression that it rains a lot here.",
+  "es": "Tengo la impresión de que llueve mucho aquí.",
+  "gap": [
+   26,
+   32
+  ],
+  "options": [
+   "llueve",
+   "llueva"
+  ],
+  "answer": 0,
+  "why": "An impression takes the normal verb."
+ },
+ {
+  "id": "4",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "I am not sure that it rains a lot here.",
+  "es": "No estoy seguro de que llueva mucho aquí.",
+  "gap": [
+   23,
+   29
+  ],
+  "options": [
+   "llueve",
+   "llueva"
+  ],
+  "answer": 1,
+  "why": "Not sure is doubt."
+ },
+ {
+  "id": "5",
+  "side": "p:tengo-la-impresion-de-que",
+  "rung": 1,
+  "en": "I have the impression that Tomás knows.",
+  "es": "Tengo la impresión de que Tomás sabe.",
+  "gap": [
+   32,
+   36
+  ],
+  "options": [
+   "sabe",
+   "sepa"
+  ],
+  "answer": 0,
+  "why": "An impression takes the normal verb."
+ },
+ {
+  "id": "6",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "We are not sure that Tomás knows.",
+  "es": "No estamos seguros de que Tomás sepa.",
+  "gap": [
+   32,
+   36
+  ],
+  "options": [
+   "sabe",
+   "sepa"
+  ],
+  "answer": 1,
+  "why": "Not sure is doubt."
+ },
+ {
+  "id": "9",
+  "side": "p:tengo-la-impresion-de-que",
+  "rung": 1,
+  "en": "I have the impression that we have time.",
+  "es": "Tengo la impresión de que tenemos tiempo.",
+  "gap": [
+   26,
+   33
+  ],
+  "options": [
+   "tenemos",
+   "tengamos"
+  ],
+  "answer": 0,
+  "why": "An impression takes the normal verb."
+ },
+ {
+  "id": "10",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "I am not sure that we have time.",
+  "es": "No estoy segura de que tengamos tiempo.",
+  "gap": [
+   23,
+   31
+  ],
+  "options": [
+   "tenemos",
+   "tengamos"
+  ],
+  "answer": 1,
+  "why": "Not sure is doubt."
+ },
+ {
+  "id": "12",
+  "side": "p:tengo-la-impresion-de-que",
+  "rung": 1,
+  "en": "I have the impression that the park is closed.",
+  "es": "Tengo la impresión de que el parque está cerrado.",
+  "gap": [
+   36,
+   40
+  ],
+  "options": [
+   "esté",
+   "está"
+  ],
+  "answer": 1,
+  "why": "An impression takes the normal verb."
+ },
+ {
+  "id": "13",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "I am not sure that the park is closed.",
+  "es": "No estoy seguro de que el parque esté cerrado.",
+  "gap": [
+   33,
+   37
+  ],
+  "options": [
+   "esté",
+   "está"
+  ],
+  "answer": 0,
+  "why": "Not sure is doubt."
+ },
+ {
+  "id": "14",
+  "side": "p:no-estoy-seguro-de-que",
+  "rung": 1,
+  "en": "I am sure that Hernando is right.",
+  "es": "Estoy segura de que Hernando tiene razón.",
+  "gap": [
+   29,
+   34
+  ],
+  "options": [
+   "tenga",
+   "tiene"
+  ],
+  "answer": 1,
+  "why": "Being sure is certainty."
+ }
 ]

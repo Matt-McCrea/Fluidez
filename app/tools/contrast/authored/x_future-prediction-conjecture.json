@@ -1,0 +1,172 @@
+[
+ {
+  "id": "2",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "Next year there will be more tourists.",
+  "es": "El año que viene habrá más turistas.",
+  "gap": [
+   17,
+   22
+  ],
+  "options": [
+   "hubo",
+   "habrá"
+  ],
+  "answer": 1,
+  "why": "A prediction about next year uses the future."
+ },
+ {
+  "id": "4",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "I'll be there at six, I promise.",
+  "es": "Estaré allá a las seis, te lo prometo.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Estuve",
+   "Estaré"
+  ],
+  "answer": 1,
+  "why": "A promise about later uses the future."
+ },
+ {
+  "id": "6",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "Tomorrow it will be sunny in Bogotá.",
+  "es": "Mañana hará sol en Bogotá.",
+  "gap": [
+   7,
+   11
+  ],
+  "options": [
+   "hizo",
+   "hará"
+  ],
+  "answer": 1,
+  "why": "A forecast about tomorrow uses the future."
+ },
+ {
+  "id": "7",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "Don Hernando must know the owner.",
+  "es": "Don Hernando conocerá al dueño.",
+  "gap": [
+   13,
+   21
+  ],
+  "options": [
+   "conocerá",
+   "conoce"
+  ],
+  "answer": 0,
+  "why": "The English says must, so it is a guess and takes the future."
+ },
+ {
+  "id": "8",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "You'll see, everything will go well.",
+  "es": "Ya verás, todo saldrá bien.",
+  "gap": [
+   15,
+   21
+  ],
+  "options": [
+   "salió",
+   "saldrá"
+  ],
+  "answer": 1,
+  "why": "A prediction about what is coming uses the future."
+ },
+ {
+  "id": "9",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "She must live far away.",
+  "es": "Vivirá muy lejos.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Vivirá",
+   "Vive"
+  ],
+  "answer": 0,
+  "why": "The English says must, so it is a guess and takes the future."
+ },
+ {
+  "id": "10",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "In June we will travel to Cartagena.",
+  "es": "En junio viajaremos a Cartagena.",
+  "gap": [
+   9,
+   19
+  ],
+  "options": [
+   "viajábamos",
+   "viajaremos"
+  ],
+  "answer": 1,
+  "why": "A plan for June uses the future."
+ },
+ {
+  "id": "11",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "It must be Tomás.",
+  "es": "Será Tomás.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Será",
+   "Es"
+  ],
+  "answer": 0,
+  "why": "The English says must, so it is a guess and takes the future."
+ },
+ {
+  "id": "12",
+  "side": "g:future-promises",
+  "rung": 1,
+  "en": "Next week the café will open at seven.",
+  "es": "La próxima semana el café abrirá a las siete.",
+  "gap": [
+   26,
+   32
+  ],
+  "options": [
+   "abrió",
+   "abrirá"
+  ],
+  "answer": 1,
+  "why": "Something coming next week uses the future."
+ },
+ {
+  "id": "13",
+  "side": "g:future-conjecture",
+  "rung": 1,
+  "en": "They must have about twenty tables.",
+  "es": "Tendrán unas veinte mesas.",
+  "gap": [
+   0,
+   7
+  ],
+  "options": [
+   "Tendrán",
+   "Tienen"
+  ],
+  "answer": 0,
+  "why": "The English says must, so it is a guess and takes the future."
+ }
+]

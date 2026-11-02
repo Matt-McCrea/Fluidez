@@ -66,29 +66,28 @@
       "side": "p:me-da-pena-que",
       "rung": 1,
       "en": "It makes me sad that the café is closing down.",
-      "es": "Me da pena que el café cierre.",
+      "es": "Me da tristeza que el café cierre.",
       "gap": [
         6,
-        10
+        14
       ],
       "options": [
-        "pena",
+        "tristeza",
         "rabia"
       ],
       "answer": 0,
-      "why": "Sadness over a loss is pena.",
+      "why": "Sadness over a loss is tristeza.",
       "requires": [
         "c:me-regala",
         "g:gender-articles",
-        "g:subj-emotion",
+        "g:relative-que",
+        "g:subj-relative",
         "g:subj-wanting",
-        "g:that-clauses",
         "l:café",
         "l:cerrar",
         "l:dar",
-        "l:pena",
-        "p:me-da-miedo",
-        "p:me-da-pena-que"
+        "l:tristeza",
+        "p:me-da-miedo"
       ]
     },
     {
@@ -159,28 +158,27 @@
       "side": "p:me-da-pena-que",
       "rung": 1,
       "en": "It makes me sad that Don Hernando is alone.",
-      "es": "Me da pena que Don Hernando esté solo.",
+      "es": "Me da tristeza que Don Hernando esté solo.",
       "gap": [
         6,
-        10
+        14
       ],
       "options": [
         "rabia",
-        "pena"
+        "tristeza"
       ],
       "answer": 1,
-      "why": "Sad for someone is pena.",
+      "why": "Sad for someone is tristeza.",
       "requires": [
         "c:me-regala",
         "g:estar-location-states",
-        "g:subj-emotion",
+        "g:relative-que",
+        "g:subj-relative",
         "g:subj-wanting",
-        "g:that-clauses",
         "l:dar",
         "l:estar",
-        "l:pena",
+        "l:tristeza",
         "p:me-da-miedo",
-        "p:me-da-pena-que",
         "p:senor-don-article"
       ]
     },
@@ -190,29 +188,28 @@
       "side": "p:me-da-pena-que",
       "rung": 1,
       "en": "I'm sad that you can't come. (to a friend)",
-      "es": "Me da pena que no puedas venir.",
+      "es": "Me da tristeza que no puedas venir.",
       "gap": [
         6,
-        10
+        14
       ],
       "options": [
-        "pena",
+        "tristeza",
         "rabia"
       ],
       "answer": 0,
-      "why": "A wistful disappointment is pena.",
+      "why": "A wistful disappointment is tristeza.",
       "requires": [
         "c:me-regala",
-        "g:subj-emotion",
+        "g:relative-que",
+        "g:subj-relative",
         "g:subj-wanting",
-        "g:that-clauses",
         "g:verb-infinitive",
         "l:dar",
-        "l:pena",
         "l:poder",
+        "l:tristeza",
         "l:venir",
-        "p:me-da-miedo",
-        "p:me-da-pena-que"
+        "p:me-da-miedo"
       ]
     },
     {
@@ -257,30 +254,29 @@
       "side": "p:me-da-pena-que",
       "rung": 1,
       "en": "It makes me sad that the kids are leaving the neighborhood.",
-      "es": "Me da pena que los niños se vayan del barrio.",
+      "es": "Me da tristeza que los niños se vayan del barrio.",
       "gap": [
         6,
-        10
+        14
       ],
       "options": [
-        "pena",
+        "tristeza",
         "rabia"
       ],
       "answer": 0,
-      "why": "Sadness at a loss is pena.",
+      "why": "Sadness at a loss is tristeza.",
       "requires": [
         "c:me-regala",
         "g:gender-articles",
-        "g:subj-emotion",
+        "g:relative-que",
         "g:subj-irregulars",
-        "g:that-clauses",
+        "g:subj-relative",
         "l:barrio",
         "l:dar",
         "l:irse",
         "l:niño",
-        "l:pena",
-        "p:me-da-miedo",
-        "p:me-da-pena-que"
+        "l:tristeza",
+        "p:me-da-miedo"
       ]
     },
     {

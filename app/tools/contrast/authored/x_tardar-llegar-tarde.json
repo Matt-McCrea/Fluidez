@@ -1,87 +1,155 @@
 [
-  {
-    "id": "2",
-    "side": "p:tardar-en",
-    "rung": 1,
-    "en": "It takes me forty minutes to get to work.",
-    "es": "Me demoro cuarenta minutos en llegar al trabajo.",
-    "gap": [
-      0,
-      9
-    ],
-    "options": [
-      "Llego tarde",
-      "Me demoro"
-    ],
-    "answer": 1,
-    "why": "How long something takes is demorarse en."
-  },
-  {
-    "id": "3",
-    "side": "p:tardar-en",
-    "rung": 1,
-    "en": "The bus took two hours, but it arrived on time.",
-    "es": "El bus se demoró dos horas, pero llegó a tiempo.",
-    "gap": [
-      7,
-      16
-    ],
-    "options": [
-      "se demoró",
-      "llegó tarde"
-    ],
-    "answer": 0,
-    "why": "The trip was long, but it was not late: se demoró."
-  },
-  {
-    "id": "5",
-    "side": "p:tardar-en",
-    "rung": 1,
-    "en": "How long does it take you to cook? (to a friend)",
-    "es": "¿Cuánto te demoras en cocinar?",
-    "gap": [
-      8,
-      18
-    ],
-    "options": [
-      "te demoras",
-      "llegas tarde"
-    ],
-    "answer": 0,
-    "why": "How long it takes is demorarse en."
-  },
-  {
-    "id": "7",
-    "side": "p:tardar-en",
-    "rung": 1,
-    "en": "Tomás took a long time to answer the message.",
-    "es": "Tomás se demoró mucho en contestar el mensaje.",
-    "gap": [
-      6,
-      15
-    ],
-    "options": [
-      "se demoró",
-      "llegó tarde"
-    ],
-    "answer": 0,
-    "why": "Time spent on an action is demorarse en."
-  },
-  {
-    "id": "9",
-    "side": "p:tardar-en",
-    "rung": 1,
-    "en": "We took three hours to paint the wall.",
-    "es": "Nos demoramos tres horas en pintar la pared.",
-    "gap": [
-      0,
-      13
-    ],
-    "options": [
-      "Nos demoramos",
-      "Llegamos tarde"
-    ],
-    "answer": 0,
-    "why": "Time an action took is demorarse en."
-  }
+ {
+  "id": "1",
+  "side": "p:llegar-a-tiempo",
+  "rung": 1,
+  "en": "I arrived late to class.",
+  "es": "Llegué tarde a clase.",
+  "gap": [
+   0,
+   12
+  ],
+  "options": [
+   "Llegué tarde",
+   "Me demoré"
+  ],
+  "answer": 0,
+  "why": "Missing the agreed time is llegar tarde."
+ },
+ {
+  "id": "2",
+  "side": "p:tardar-en",
+  "rung": 1,
+  "en": "It takes me forty minutes to get to work.",
+  "es": "Me demoro cuarenta minutos en llegar al trabajo.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Llego tarde",
+   "Me demoro"
+  ],
+  "answer": 1,
+  "why": "How long something takes is demorarse en."
+ },
+ {
+  "id": "3",
+  "side": "p:tardar-en",
+  "rung": 1,
+  "en": "The bus took two hours, but it arrived on time.",
+  "es": "El bus se demoró dos horas, pero llegó a tiempo.",
+  "gap": [
+   7,
+   16
+  ],
+  "options": [
+   "se demoró",
+   "llegó tarde"
+  ],
+  "answer": 0,
+  "why": "The trip was long, but it was not late: se demoró."
+ },
+ {
+  "id": "4",
+  "side": "p:llegar-a-tiempo",
+  "rung": 1,
+  "en": "Rosa arrived late to the party.",
+  "es": "Rosa llegó tarde a la fiesta.",
+  "gap": [
+   5,
+   16
+  ],
+  "options": [
+   "se demoró",
+   "llegó tarde"
+  ],
+  "answer": 1,
+  "why": "Arriving after the agreed time is llegar tarde."
+ },
+ {
+  "id": "5",
+  "side": "p:tardar-en",
+  "rung": 1,
+  "en": "How long does it take you to cook? (to a friend)",
+  "es": "¿Cuánto te demoras en cocinar?",
+  "gap": [
+   8,
+   18
+  ],
+  "options": [
+   "te demoras",
+   "llegas tarde"
+  ],
+  "answer": 0,
+  "why": "How long it takes is demorarse en."
+ },
+ {
+  "id": "6",
+  "side": "p:llegar-a-tiempo",
+  "rung": 1,
+  "en": "I'm going to arrive late to the meeting because of the traffic jam.",
+  "es": "Voy a llegar tarde a la reunión por el trancón.",
+  "gap": [
+   6,
+   18
+  ],
+  "options": [
+   "demorarme",
+   "llegar tarde"
+  ],
+  "answer": 1,
+  "why": "Missing the time is llegar tarde."
+ },
+ {
+  "id": "7",
+  "side": "p:tardar-en",
+  "rung": 1,
+  "en": "Tomás took a long time to answer the message.",
+  "es": "Tomás se demoró mucho en contestar el mensaje.",
+  "gap": [
+   6,
+   15
+  ],
+  "options": [
+   "se demoró",
+   "llegó tarde"
+  ],
+  "answer": 0,
+  "why": "Time spent on an action is demorarse en."
+ },
+ {
+  "id": "8",
+  "side": "p:llegar-a-tiempo",
+  "rung": 1,
+  "en": "Don Hernando never arrives late to work.",
+  "es": "Don Hernando nunca llega tarde al trabajo.",
+  "gap": [
+   19,
+   30
+  ],
+  "options": [
+   "se demora",
+   "llega tarde"
+  ],
+  "answer": 1,
+  "why": "Being on time or not is llegar tarde."
+ },
+ {
+  "id": "9",
+  "side": "p:tardar-en",
+  "rung": 1,
+  "en": "We took three hours to paint the wall.",
+  "es": "Nos demoramos tres horas en pintar la pared.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "Nos demoramos",
+   "Llegamos tarde"
+  ],
+  "answer": 0,
+  "why": "Time an action took is demorarse en."
+ }
 ]

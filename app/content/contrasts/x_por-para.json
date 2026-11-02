@@ -487,6 +487,568 @@
         "l:bus",
         "l:pasar"
       ]
+    },
+    {
+      "id": "x:por-para#a-1",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I walk through the park every day.",
+      "es": "Camino por el parque todos los días.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "Moving through a place is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:present-ar",
+        "l:caminar",
+        "l:día",
+        "l:parque",
+        "p:seguir-por",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:por-para#a-2",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Thank you for your help.",
+      "es": "Gracias por tu ayuda.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "Thanking for something takes por.",
+      "requires": [
+        "l:ayuda",
+        "p:gracias-por",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:por-para#a-3",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I'll call you by phone.",
+      "es": "Te llamo por teléfono.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The means of communication is por.",
+      "requires": [
+        "g:present-ar",
+        "l:llamar",
+        "l:teléfono",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:por-para#a-4",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I sold my bike for two million.",
+      "es": "Vendí mi bicicleta por dos millones.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "An exchange for a price is por.",
+      "requires": [
+        "g:preterite-er-ir",
+        "l:bicicleta",
+        "l:vender",
+        "p:costar-pagar",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:por-para#a-5",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I'm worried about my brother.",
+      "es": "Estoy preocupado por mi hermano.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The one you worry about is por.",
+      "requires": [
+        "g:estar-location-states",
+        "g:por-para-1",
+        "l:estar",
+        "l:hermano",
+        "l:preocuparse",
+        "p:me-preocupa-que",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:por-para#a-6",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "He works three times a week.",
+      "es": "Trabaja tres veces por semana.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "Frequency per period is por.",
+      "requires": [
+        "g:por-para-1",
+        "g:present-ar",
+        "l:semana",
+        "l:trabajar",
+        "l:vez",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:por-para#a-7",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "The thief came in through the window.",
+      "es": "El ladrón entró por la ventana.",
+      "gap": [
+        16,
+        19
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "Passing through an opening is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:entrar",
+        "l:ladrón",
+        "l:ventana"
+      ]
+    },
+    {
+      "id": "x:por-para#a-8",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Send it by email.",
+      "es": "Mándalo por correo.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The means of sending is por.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "l:correo",
+        "l:mandar"
+      ]
+    },
+    {
+      "id": "x:por-para#a-9",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "The medicine is for the cough.",
+      "es": "La medicina es para la tos.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The use of a thing is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:medicina",
+        "l:ser",
+        "l:tos",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#a-10",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "She'll be ready by seven.",
+      "es": "Estará lista para las siete.",
+      "gap": [
+        13,
+        17
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "A deadline is para.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "g:gender-articles",
+        "l:estar",
+        "l:listo",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#a-11",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I work for a big company.",
+      "es": "Trabajo para una empresa grande.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The employer you work for is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:empresa",
+        "l:grande",
+        "l:trabajar",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#a-12",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "He studies to be a doctor.",
+      "es": "Estudia para ser médico.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "A goal is para.",
+      "requires": [
+        "g:present-ar",
+        "g:ser-identity",
+        "l:estudiar",
+        "l:médico",
+        "l:ser",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:ser-profession-no-article"
+      ]
+    },
+    {
+      "id": "x:por-para#a-13",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "We left for the airport.",
+      "es": "Salimos para el aeropuerto.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "A destination is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:aeropuerto",
+        "l:salir",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#a-14",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "For a child, he speaks very well.",
+      "es": "Para ser un niño, habla muy bien.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Por",
+        "Para"
+      ],
+      "answer": 1,
+      "why": "Comparing with what is expected is para.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:gender-articles",
+        "g:por-para-2",
+        "g:present-ar",
+        "g:ser-identity",
+        "l:bien",
+        "l:hablar",
+        "l:niño",
+        "l:ser",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-para#a-15",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "What is this knife for?",
+      "es": "¿Para qué sirve este cuchillo?",
+      "gap": [
+        1,
+        5
+      ],
+      "options": [
+        "Para",
+        "Por"
+      ],
+      "answer": 0,
+      "why": "Asking about use is para.",
+      "requires": [
+        "g:stem-e-i",
+        "l:cuchillo",
+        "l:qué",
+        "l:servir",
+        "p:demonstratives-basic",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:prep-questions-basic",
+        "p:question-word-order",
+        "p:servir-para"
+      ]
+    },
+    {
+      "id": "x:por-para#a-16",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I bought a dress for the party.",
+      "es": "Compré un vestido para la fiesta.",
+      "gap": [
+        18,
+        22
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The event it is meant for is para.",
+      "requires": [
+        "c:compre-trabaje",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:comprar",
+        "l:fiesta",
+        "l:vestido",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#a-17",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "In my opinion, the soup needs salt.",
+      "es": "Para mí, a la sopa le falta sal.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Para",
+        "Por"
+      ],
+      "answer": 0,
+      "why": "Giving an opinion is para mí.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:parecer-quedar",
+        "g:prep-pronouns",
+        "g:present-ar",
+        "l:faltar",
+        "l:parar",
+        "l:sal",
+        "l:sopa",
+        "p:le-falta-sal",
+        "p:para-mi",
+        "p:quedar-faltar-sobrar"
+      ]
+    },
+    {
+      "id": "x:por-para#a-18",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Close the window so the cold doesn't come in.",
+      "es": "Cierra la ventana para que no entre frío.",
+      "gap": [
+        18,
+        22
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "A purpose is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:para-que",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "l:cerrar",
+        "l:entrar",
+        "l:frío",
+        "l:ventana"
+      ]
+    },
+    {
+      "id": "x:por-para#a-19",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I voted for her.",
+      "es": "Voté por ella.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "Voting in support is por.",
+      "requires": [
+        "g:por-para-1",
+        "g:prep-pronouns",
+        "g:preterite-ar",
+        "l:votar"
+      ]
+    },
+    {
+      "id": "x:por-para#a-20",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "Tomás did it for love.",
+      "es": "Tomás lo hizo por amor.",
+      "gap": [
+        14,
+        17
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The motive is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:por-para-1",
+        "g:preterite-ser-ir-hacer",
+        "l:amor",
+        "l:hacer"
+      ]
+    },
+    {
+      "id": "x:por-para#a-21",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "We came to learn Spanish.",
+      "es": "Vinimos para aprender español.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "A goal is para.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "l:aprender",
+        "l:español",
+        "l:venir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
     }
   ]
 }

@@ -1,0 +1,155 @@
+[
+ {
+  "id": "1",
+  "side": "g:aunque-indicative",
+  "rung": 1,
+  "en": "Although it's raining hard, we're going to the park.",
+  "es": "Aunque llueve mucho, vamos al parque.",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "llueve",
+   "llueva"
+  ],
+  "answer": 0,
+  "why": "It is raining, a fact, so indicative."
+ },
+ {
+  "id": "2",
+  "side": "g:subj-concessive",
+  "rung": 1,
+  "en": "Even if it rains tomorrow, we're going to the park.",
+  "es": "Aunque llueva mañana, vamos al parque.",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "llueve",
+   "llueva"
+  ],
+  "answer": 1,
+  "why": "Tomorrow is not known yet, so subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "g:aunque-indicative",
+  "rung": 1,
+  "en": "Although she told me the truth, I didn't believe her.",
+  "es": "Aunque ella me dijo la verdad, no le creí.",
+  "gap": [
+   15,
+   19
+  ],
+  "options": [
+   "dijo",
+   "dijera"
+  ],
+  "answer": 0,
+  "why": "She did tell it, a fact."
+ },
+ {
+  "id": "10",
+  "side": "g:subj-concessive",
+  "rung": 1,
+  "en": "Even if Rosa knew the way, I wouldn't let her drive.",
+  "es": "Aunque Rosa conociera el camino, no la dejaría manejar.",
+  "gap": [
+   12,
+   21
+  ],
+  "options": [
+   "conocía",
+   "conociera"
+  ],
+  "answer": 1,
+  "why": "It is imagined, so subjunctive."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-concessive",
+  "rung": 1,
+  "en": "Even if Don Hernando says no tomorrow, I'll ask him again.",
+  "es": "Aunque Don Hernando diga que no mañana, se lo preguntaré otra vez.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "dice",
+   "diga"
+  ],
+  "answer": 1,
+  "why": "His answer has not happened yet."
+ },
+ {
+  "id": "13",
+  "side": "g:aunque-indicative",
+  "rung": 1,
+  "en": "Although we arrived early, the shop was already closed.",
+  "es": "Aunque llegamos temprano, la tienda ya estaba cerrada.",
+  "gap": [
+   7,
+   15
+  ],
+  "options": [
+   "llegamos",
+   "llegáramos"
+  ],
+  "answer": 0,
+  "why": "We did arrive early."
+ },
+ {
+  "id": "14",
+  "side": "g:subj-concessive",
+  "rung": 1,
+  "en": "Even if we arrive early, the shop will be closed.",
+  "es": "Aunque lleguemos temprano, la tienda estará cerrada.",
+  "gap": [
+   7,
+   16
+  ],
+  "options": [
+   "llegamos",
+   "lleguemos"
+  ],
+  "answer": 1,
+  "why": "Arriving is still ahead of us."
+ },
+ {
+  "id": "15",
+  "side": "g:aunque-indicative",
+  "rung": 1,
+  "en": "Although the exam was difficult, Tomás passed.",
+  "es": "Aunque el examen fue difícil, Tomás aprobó.",
+  "gap": [
+   17,
+   20
+  ],
+  "options": [
+   "fue",
+   "fuera"
+  ],
+  "answer": 0,
+  "why": "It was difficult, a fact."
+ },
+ {
+  "id": "16",
+  "side": "g:subj-concessive",
+  "rung": 1,
+  "en": "Even if the exam is difficult next week, Tomás will pass.",
+  "es": "Aunque el examen sea difícil la próxima semana, Tomás aprobará.",
+  "gap": [
+   17,
+   20
+  ],
+  "options": [
+   "es",
+   "sea"
+  ],
+  "answer": 1,
+  "why": "Next week is unknown."
+ }
+]

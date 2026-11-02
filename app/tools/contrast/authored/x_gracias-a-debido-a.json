@@ -1,70 +1,104 @@
 [
-  {
-    "id": "1",
-    "side": "p:gracias-a-por-culpa-de",
-    "rung": 1,
-    "en": "Thanks to Vale, the café is full.",
-    "es": "Gracias a Vale, el café está lleno.",
-    "gap": [
-      0,
-      9
-    ],
-    "options": [
-      "Por culpa de",
-      "Gracias a"
-    ],
-    "answer": 1,
-    "why": "Something good deserves thanks."
-  },
-  {
-    "id": "2",
-    "side": "p:gracias-a-por-culpa-de",
-    "rung": 1,
-    "en": "Because of the traffic, I arrived late.",
-    "es": "Por culpa del tráfico, llegué tarde.",
-    "gap": [
-      0,
-      13
-    ],
-    "options": [
-      "Por culpa del",
-      "Gracias al"
-    ],
-    "answer": 0,
-    "why": "Something bad gets the blame."
-  },
-  {
-    "id": "4",
-    "side": "p:gracias-a-por-culpa-de",
-    "rung": 1,
-    "en": "Thanks to the new recipe, we sold everything.",
-    "es": "Gracias a la receta nueva, vendimos todo.",
-    "gap": [
-      0,
-      9
-    ],
-    "options": [
-      "Gracias a",
-      "Por culpa de"
-    ],
-    "answer": 0,
-    "why": "A good result is thanks to something."
-  },
-  {
-    "id": "6",
-    "side": "p:gracias-a-por-culpa-de",
-    "rung": 1,
-    "en": "I failed the exam because of my nerves.",
-    "es": "Perdí el examen por culpa de los nervios.",
-    "gap": [
-      16,
-      28
-    ],
-    "options": [
-      "por culpa de",
-      "gracias a"
-    ],
-    "answer": 0,
-    "why": "Failing is bad, so blame."
-  }
+ {
+  "id": "1",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "Thanks to Vale, the café is full.",
+  "es": "Gracias a Vale, el café está lleno.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Por culpa de",
+   "Gracias a"
+  ],
+  "answer": 1,
+  "why": "Something good deserves thanks."
+ },
+ {
+  "id": "2",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "Because of the traffic, I arrived late.",
+  "es": "Por culpa del tráfico, llegué tarde.",
+  "gap": [
+   0,
+   13
+  ],
+  "options": [
+   "Por culpa del",
+   "Gracias al"
+  ],
+  "answer": 0,
+  "why": "Something bad gets the blame."
+ },
+ {
+  "id": "3",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "Due to maintenance work, the elevator is out of service.",
+  "es": "Debido a trabajos de mantenimiento, el ascensor está fuera de servicio.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Gracias a",
+   "Debido a"
+  ],
+  "answer": 1,
+  "why": "A neutral cause takes debido a."
+ },
+ {
+  "id": "4",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "Thanks to the new recipe, we sold everything.",
+  "es": "Gracias a la receta nueva, vendimos todo.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Gracias a",
+   "Por culpa de"
+  ],
+  "answer": 0,
+  "why": "A good result is thanks to something."
+ },
+ {
+  "id": "5",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "Due to the strike, the buses aren't running.",
+  "es": "Debido a la huelga, no pasan los buses.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Gracias a",
+   "Debido a"
+  ],
+  "answer": 1,
+  "why": "A neutral cause."
+ },
+ {
+  "id": "6",
+  "side": "p:gracias-a-por-culpa-de",
+  "rung": 1,
+  "en": "I failed the exam because of my nerves.",
+  "es": "Perdí el examen por culpa de los nervios.",
+  "gap": [
+   16,
+   28
+  ],
+  "options": [
+   "por culpa de",
+   "gracias a"
+  ],
+  "answer": 0,
+  "why": "Failing is bad, so blame."
+ }
 ]

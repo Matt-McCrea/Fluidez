@@ -463,6 +463,33 @@
         "l:ver",
         "p:personal-a"
       ]
+    },
+    {
+      "id": "x:tras-al-inf#a-2",
+      "node": "x:tras-al-inf",
+      "side": "g:prep-infinitive",
+      "rung": 1,
+      "en": "As she left the bank, she ran into Simón.",
+      "es": "Al salir del banco, se encontró con Simón.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Al",
+        "Tras"
+      ],
+      "answer": 0,
+      "why": "Al means at that very moment, as it happened.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-infinitive",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:banco",
+        "l:encontrarse",
+        "l:salir"
+      ]
     }
   ]
 }

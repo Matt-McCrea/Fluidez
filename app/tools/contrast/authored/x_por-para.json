@@ -1,0 +1,359 @@
+[
+ {
+  "id": "1",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I walk through the park every day.",
+  "es": "Camino por el parque todos los días.",
+  "gap": [
+   7,
+   10
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "Moving through a place is por."
+ },
+ {
+  "id": "2",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "Thank you for your help.",
+  "es": "Gracias por tu ayuda.",
+  "gap": [
+   8,
+   11
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 1,
+  "why": "Thanking for something takes por."
+ },
+ {
+  "id": "3",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I'll call you by phone.",
+  "es": "Te llamo por teléfono.",
+  "gap": [
+   9,
+   12
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "The means of communication is por."
+ },
+ {
+  "id": "4",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I sold my bike for two million.",
+  "es": "Vendí mi bicicleta por dos millones.",
+  "gap": [
+   19,
+   22
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 1,
+  "why": "An exchange for a price is por."
+ },
+ {
+  "id": "5",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I'm worried about my brother.",
+  "es": "Estoy preocupado por mi hermano.",
+  "gap": [
+   17,
+   20
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "The one you worry about is por."
+ },
+ {
+  "id": "6",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "He works three times a week.",
+  "es": "Trabaja tres veces por semana.",
+  "gap": [
+   19,
+   22
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 1,
+  "why": "Frequency per period is por."
+ },
+ {
+  "id": "7",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "The thief came in through the window.",
+  "es": "El ladrón entró por la ventana.",
+  "gap": [
+   16,
+   19
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "Passing through an opening is por."
+ },
+ {
+  "id": "8",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "Send it by email.",
+  "es": "Mándalo por correo.",
+  "gap": [
+   8,
+   11
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 1,
+  "why": "The means of sending is por."
+ },
+ {
+  "id": "9",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "The medicine is for the cough.",
+  "es": "La medicina es para la tos.",
+  "gap": [
+   15,
+   19
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 0,
+  "why": "The use of a thing is para."
+ },
+ {
+  "id": "10",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "She'll be ready by seven.",
+  "es": "Estará lista para las siete.",
+  "gap": [
+   13,
+   17
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "A deadline is para."
+ },
+ {
+  "id": "11",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I work for a big company.",
+  "es": "Trabajo para una empresa grande.",
+  "gap": [
+   8,
+   12
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 0,
+  "why": "The employer you work for is para."
+ },
+ {
+  "id": "12",
+  "side": "p:para-inf",
+  "rung": 1,
+  "en": "He studies to be a doctor.",
+  "es": "Estudia para ser médico.",
+  "gap": [
+   8,
+   12
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "A goal is para."
+ },
+ {
+  "id": "13",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "We left for the airport.",
+  "es": "Salimos para el aeropuerto.",
+  "gap": [
+   8,
+   12
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 0,
+  "why": "A destination is para."
+ },
+ {
+  "id": "14",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "For a child, he speaks very well.",
+  "es": "Para ser un niño, habla muy bien.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Por",
+   "Para"
+  ],
+  "answer": 1,
+  "why": "Comparing with what is expected is para."
+ },
+ {
+  "id": "15",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "What is this knife for?",
+  "es": "¿Para qué sirve este cuchillo?",
+  "gap": [
+   1,
+   5
+  ],
+  "options": [
+   "Para",
+   "Por"
+  ],
+  "answer": 0,
+  "why": "Asking about use is para."
+ },
+ {
+  "id": "16",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I bought a dress for the party.",
+  "es": "Compré un vestido para la fiesta.",
+  "gap": [
+   18,
+   22
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "The event it is meant for is para."
+ },
+ {
+  "id": "17",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "In my opinion, the soup needs salt.",
+  "es": "Para mí, a la sopa le falta sal.",
+  "gap": [
+   0,
+   4
+  ],
+  "options": [
+   "Para",
+   "Por"
+  ],
+  "answer": 0,
+  "why": "Giving an opinion is para mí."
+ },
+ {
+  "id": "18",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "Close the window so the cold doesn't come in.",
+  "es": "Cierra la ventana para que no entre frío.",
+  "gap": [
+   18,
+   22
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 1,
+  "why": "A purpose is para."
+ },
+ {
+  "id": "19",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "I voted for her.",
+  "es": "Voté por ella.",
+  "gap": [
+   5,
+   8
+  ],
+  "options": [
+   "por",
+   "para"
+  ],
+  "answer": 0,
+  "why": "Voting in support is por."
+ },
+ {
+  "id": "20",
+  "side": "g:por-para-1",
+  "rung": 1,
+  "en": "Tomás did it for love.",
+  "es": "Tomás lo hizo por amor.",
+  "gap": [
+   14,
+   17
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 1,
+  "why": "The motive is por."
+ },
+ {
+  "id": "21",
+  "side": "p:para-inf",
+  "rung": 1,
+  "en": "We came to learn Spanish.",
+  "es": "Vinimos para aprender español.",
+  "gap": [
+   8,
+   12
+  ],
+  "options": [
+   "para",
+   "por"
+  ],
+  "answer": 0,
+  "why": "A goal is para."
+ }
+]

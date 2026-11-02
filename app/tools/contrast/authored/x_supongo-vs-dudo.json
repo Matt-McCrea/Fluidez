@@ -1,0 +1,240 @@
+[
+ {
+  "id": "1",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose Simón is at home.",
+  "es": "Supongo que Simón está en casa.",
+  "gap": [
+   18,
+   22
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "2",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose they want to sell.",
+  "es": "Supongo que ellos quieren vender.",
+  "gap": [
+   18,
+   25
+  ],
+  "options": [
+   "quieren",
+   "quieran"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose Vale is working today.",
+  "es": "Supongo que Vale trabaja hoy.",
+  "gap": [
+   17,
+   24
+  ],
+  "options": [
+   "trabaja",
+   "trabaje"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "4",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose the café opens at seven.",
+  "es": "Supongo que el café abre a las siete.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "abre",
+   "abra"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose Rosa knows the answer.",
+  "es": "Supongo que Rosa sabe la respuesta.",
+  "gap": [
+   17,
+   21
+  ],
+  "options": [
+   "sabe",
+   "sepa"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose you're tired.",
+  "es": "Supongo que estás cansado.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "estás",
+   "estés"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "7",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose Tomás has the keys.",
+  "es": "Supongo que Tomás tiene las llaves.",
+  "gap": [
+   18,
+   23
+  ],
+  "options": [
+   "tiene",
+   "tenga"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "c:supongo-que",
+  "rung": 1,
+  "en": "I suppose it's going to rain.",
+  "es": "Supongo que va a llover.",
+  "gap": [
+   12,
+   14
+  ],
+  "options": [
+   "va",
+   "vaya"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "10",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt they want to sell.",
+  "es": "Dudo que ellos quieran vender.",
+  "gap": [
+   15,
+   22
+  ],
+  "options": [
+   "quieran",
+   "quieren"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt Vale is working today.",
+  "es": "Dudo que Vale trabaje hoy.",
+  "gap": [
+   14,
+   21
+  ],
+  "options": [
+   "trabaje",
+   "trabaja"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt the café opens at seven.",
+  "es": "Dudo que el café abra a las siete.",
+  "gap": [
+   17,
+   21
+  ],
+  "options": [
+   "abra",
+   "abre"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt Rosa knows the answer.",
+  "es": "Dudo que Rosa sepa la respuesta.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "sepa",
+   "sabe"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt Tomás has the keys.",
+  "es": "Dudo que Tomás tenga las llaves.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "tenga",
+   "tiene"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ },
+ {
+  "id": "15",
+  "side": "g:subj-doubt",
+  "rung": 1,
+  "en": "I doubt it's going to rain.",
+  "es": "Dudo que vaya a llover.",
+  "gap": [
+   9,
+   13
+  ],
+  "options": [
+   "vaya",
+   "va"
+  ],
+  "answer": 0,
+  "why": "Supongo leans toward yes, so the ordinary verb; dudo leans toward no, so the subjunctive."
+ }
+]

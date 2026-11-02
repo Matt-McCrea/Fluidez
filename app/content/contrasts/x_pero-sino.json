@@ -387,6 +387,32 @@
       ]
     },
     {
+      "id": "x:pero-sino#a-1",
+      "node": "x:pero-sino",
+      "side": "g:pero-sino",
+      "rung": 1,
+      "en": "I don't want tea, but coffee.",
+      "es": "No quiero té, sino café.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "sino",
+        "pero"
+      ],
+      "answer": 0,
+      "why": "It replaces tea, so sino.",
+      "requires": [
+        "c:quiero",
+        "g:pero-sino",
+        "g:stem-boot",
+        "l:café",
+        "l:querer",
+        "l:té"
+      ]
+    },
+    {
       "id": "x:pero-sino#a-2",
       "node": "x:pero-sino",
       "side": "g:pero-sino",
@@ -408,6 +434,32 @@
         "g:preterite-irregular-strong",
         "l:llamar",
         "l:venir"
+      ]
+    },
+    {
+      "id": "x:pero-sino#a-3",
+      "node": "x:pero-sino",
+      "side": "g:pero-sino",
+      "rung": 1,
+      "en": "It isn't a house, but an apartment.",
+      "es": "No es una casa, sino un apartamento.",
+      "gap": [
+        16,
+        20
+      ],
+      "options": [
+        "sino",
+        "pero"
+      ],
+      "answer": 0,
+      "why": "It corrects what it is, so sino.",
+      "requires": [
+        "g:gender-articles",
+        "g:pero-sino",
+        "g:ser-identity",
+        "l:apartamento",
+        "l:casa",
+        "l:ser"
       ]
     },
     {

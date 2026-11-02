@@ -1,36 +1,325 @@
 [
-  {
-    "id": "7",
-    "side": "g:si-hypothetical",
-    "rung": 1,
-    "en": "If it weren't raining now, we would go out.",
-    "es": "Si no lloviera ahora, saldríamos.",
-    "gap": [
-      6,
-      14
-    ],
-    "options": [
-      "lloviera",
-      "hubiera llovido"
-    ],
-    "answer": 0,
-    "why": "It is about now or imagined, so the simple past subjunctive."
-  },
-  {
-    "id": "13",
-    "side": "g:si-past-unreal",
-    "rung": 1,
-    "en": "If it hadn't rained on Saturday, we would have gone to the park.",
-    "es": "Si no hubiera llovido el sábado, habríamos ido al parque.",
-    "gap": [
-      6,
-      21
-    ],
-    "options": [
-      "hubiera llovido",
-      "lloviera"
-    ],
-    "answer": 0,
-    "why": "It is about something already over, so hubiera plus the participle."
-  }
+ {
+  "id": "1",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I had more time, I would read more.",
+  "es": "Si tuviera más tiempo, leería más.",
+  "gap": [
+   3,
+   10
+  ],
+  "options": [
+   "tuviera",
+   "hubiera tenido"
+  ],
+  "answer": 0,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "2",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Rosa lived here, I would see her every day.",
+  "es": "Si Rosa viviera aquí, la vería todos los días.",
+  "gap": [
+   8,
+   15
+  ],
+  "options": [
+   "hubiera vivido",
+   "viviera"
+  ],
+  "answer": 1,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I were rich, I would buy a farm.",
+  "es": "Si fuera rico, compraría una finca.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "fuera",
+   "hubiera sido"
+  ],
+  "answer": 0,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "4",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If it were sunny today, we would go to the park.",
+  "es": "Si hoy hiciera sol, iríamos al parque.",
+  "gap": [
+   7,
+   14
+  ],
+  "options": [
+   "hubiera hecho",
+   "hiciera"
+  ],
+  "answer": 1,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Tomás spoke better, he would work as a guide.",
+  "es": "Si Tomás hablara mejor, trabajaría de guía.",
+  "gap": [
+   9,
+   16
+  ],
+  "options": [
+   "hablara",
+   "hubiera hablado"
+  ],
+  "answer": 0,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I were you, I would talk to her.",
+  "es": "Si yo fuera tú, hablaría con ella.",
+  "gap": [
+   16,
+   24
+  ],
+  "options": [
+   "habría hablado",
+   "hablaría"
+  ],
+  "answer": 1,
+  "why": "It is about now or imagined, so the would form."
+ },
+ {
+  "id": "7",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If it weren't raining now, we would go out.",
+  "es": "Si no lloviera ahora, saldríamos.",
+  "gap": [
+   6,
+   14
+  ],
+  "options": [
+   "lloviera",
+   "hubiera llovido"
+  ],
+  "answer": 0,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I knew the answer, I would tell you.",
+  "es": "Si supiera la respuesta, te la diría.",
+  "gap": [
+   3,
+   10
+  ],
+  "options": [
+   "hubiera sabido",
+   "supiera"
+  ],
+  "answer": 1,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Vale were here, she would help.",
+  "es": "Si Vale estuviera aquí, ayudaría.",
+  "gap": [
+   8,
+   17
+  ],
+  "options": [
+   "estuviera",
+   "hubiera estado"
+  ],
+  "answer": 0,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "10",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If they gave me a vacation, I would go to Cartagena.",
+  "es": "Si me dieran vacaciones, iría a Cartagena.",
+  "gap": [
+   6,
+   12
+  ],
+  "options": [
+   "hubieran dado",
+   "dieran"
+  ],
+  "answer": 1,
+  "why": "It is about now or imagined, so the simple past subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If I had had time yesterday, I would have gone.",
+  "es": "Si hubiera tenido tiempo ayer, habría ido.",
+  "gap": [
+   3,
+   17
+  ],
+  "options": [
+   "hubiera tenido",
+   "tuviera"
+  ],
+  "answer": 0,
+  "why": "It is about something already over, so hubiera plus the participle."
+ },
+ {
+  "id": "12",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If Rosa had arrived at six, she would have seen Vale.",
+  "es": "Si Rosa hubiera llegado a las seis, habría visto a Vale.",
+  "gap": [
+   8,
+   23
+  ],
+  "options": [
+   "llegara",
+   "hubiera llegado"
+  ],
+  "answer": 1,
+  "why": "It is about something already over, so hubiera plus the participle."
+ },
+ {
+  "id": "13",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If it hadn't rained on Saturday, we would have gone to the park.",
+  "es": "Si no hubiera llovido el sábado, habríamos ido al parque.",
+  "gap": [
+   6,
+   21
+  ],
+  "options": [
+   "hubiera llovido",
+   "lloviera"
+  ],
+  "answer": 0,
+  "why": "It is about something already over, so hubiera plus the participle."
+ },
+ {
+  "id": "14",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If Tomás had studied, he would have passed the exam.",
+  "es": "Si Tomás hubiera estudiado, habría pasado el examen.",
+  "gap": [
+   9,
+   26
+  ],
+  "options": [
+   "estudiara",
+   "hubiera estudiado"
+  ],
+  "answer": 1,
+  "why": "It is about something already over, so hubiera plus the participle."
+ },
+ {
+  "id": "15",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If I had known, I would have called you.",
+  "es": "Si lo hubiera sabido, te habría llamado.",
+  "gap": [
+   6,
+   20
+  ],
+  "options": [
+   "hubiera sabido",
+   "supiera"
+  ],
+  "answer": 0,
+  "why": "It is about something already over, so hubiera plus the participle."
+ },
+ {
+  "id": "16",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If we had left earlier, we would have arrived on time.",
+  "es": "Si hubiéramos salido más temprano, habríamos llegado a tiempo.",
+  "gap": [
+   35,
+   52
+  ],
+  "options": [
+   "llegaríamos",
+   "habríamos llegado"
+  ],
+  "answer": 1,
+  "why": "It is about something already over, so habría plus the participle."
+ },
+ {
+  "id": "17",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If Hernando hadn't fallen, he would have come to the party.",
+  "es": "Si Hernando no se hubiera caído, habría venido a la fiesta.",
+  "gap": [
+   33,
+   46
+  ],
+  "options": [
+   "habría venido",
+   "vendría"
+  ],
+  "answer": 0,
+  "why": "It is about something already over, so habría plus the participle."
+ },
+ {
+  "id": "18",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If you had come, you would have met Mariana. (to a friend)",
+  "es": "Si hubieras venido, habrías conocido a Mariana.",
+  "gap": [
+   20,
+   36
+  ],
+  "options": [
+   "conocerías",
+   "habrías conocido"
+  ],
+  "answer": 1,
+  "why": "It is about something already over, so habría plus the participle."
+ },
+ {
+  "id": "19",
+  "side": "g:si-past-unreal",
+  "rung": 1,
+  "en": "If we had had money last year, we would have bought the house.",
+  "es": "Si hubiéramos tenido plata el año pasado, habríamos comprado la casa.",
+  "gap": [
+   3,
+   13
+  ],
+  "options": [
+   "hubiéramos",
+   "tuviéramos"
+  ],
+  "answer": 0,
+  "why": "It is about something already over, so hubiera plus the participle."
+ }
 ]

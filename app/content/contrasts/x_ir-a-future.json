@@ -144,6 +144,58 @@
         "l:decir",
         "l:ir"
       ]
+    },
+    {
+      "id": "x:ir-a-future#yt0",
+      "node": "x:ir-a-future",
+      "side": "g:ir-a-plans",
+      "rung": 1,
+      "en": "On Saturday I'm going to work.",
+      "es": "El sábado voy a trabajar.",
+      "gap": [
+        10,
+        24
+      ],
+      "options": [
+        "voy a trabajar",
+        "trabajaré"
+      ],
+      "answer": 0,
+      "why": "A plan in a chat between friends: voy a.",
+      "requires": [
+        "c:voy-a",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:ir",
+        "l:sábado",
+        "l:trabajar",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#g.future-promises.pf3",
+      "node": "x:ir-a-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "I'm going to call you.",
+      "es": "Te voy a llamar.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "llamaré",
+        "llamar"
+      ],
+      "answer": 1,
+      "why": "After voy a the verb stays in its dictionary form. It's one future or the other, never both.",
+      "requires": [
+        "c:voy-a",
+        "g:ir-a-plans",
+        "l:ir",
+        "l:llamar",
+        "p:me-te-nos-objects"
+      ]
     }
   ]
 }

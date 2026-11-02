@@ -1,0 +1,87 @@
+[
+ {
+  "id": "1",
+  "side": "p:para-inf-purpose",
+  "rung": 1,
+  "en": "I am learning Spanish to talk with Rosa.",
+  "es": "Aprendo español para hablar con Rosa.",
+  "gap": [
+   16,
+   27
+  ],
+  "options": [
+   "para hablar",
+   "porque hablo"
+  ],
+  "answer": 0,
+  "why": "To talk is a purpose: para."
+ },
+ {
+  "id": "2",
+  "side": "c:porque",
+  "rung": 1,
+  "en": "I am learning Spanish because I live in Bogotá.",
+  "es": "Aprendo español porque vivo en Bogotá.",
+  "gap": [
+   16,
+   27
+  ],
+  "options": [
+   "para vivir",
+   "porque vivo"
+  ],
+  "answer": 1,
+  "why": "Because I live is a reason: porque."
+ },
+ {
+  "id": "3",
+  "side": "p:para-inf-purpose",
+  "rung": 1,
+  "en": "Tomás went to the bank to get money.",
+  "es": "Tomás fue al banco para sacar plata.",
+  "gap": [
+   19,
+   29
+  ],
+  "options": [
+   "para sacar",
+   "porque sacó"
+  ],
+  "answer": 0,
+  "why": "To get is a purpose: para."
+ },
+ {
+  "id": "4",
+  "side": "c:porque",
+  "rung": 1,
+  "en": "Tomás went to the bank because he needs money.",
+  "es": "Tomás fue al banco porque necesita plata.",
+  "gap": [
+   19,
+   34
+  ],
+  "options": [
+   "para necesitar",
+   "porque necesita"
+  ],
+  "answer": 1,
+  "why": "Because he needs is a reason: porque."
+ },
+ {
+  "id": "5",
+  "side": "c:porque",
+  "rung": 1,
+  "en": "Vale is happy because her sister arrived.",
+  "es": "Vale está feliz porque llegó su hermana.",
+  "gap": [
+   16,
+   28
+  ],
+  "options": [
+   "porque llegó",
+   "para llegar"
+  ],
+  "answer": 0,
+  "why": "Because she arrived is a reason: porque."
+ }
+]

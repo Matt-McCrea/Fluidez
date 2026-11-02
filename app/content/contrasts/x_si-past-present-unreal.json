@@ -29,6 +29,181 @@
       ]
     },
     {
+      "id": "x:si-past-present-unreal#a-1",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I had more time, I would read more.",
+      "es": "Si tuviera más tiempo, leería más.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "tuviera",
+        "hubiera tenido"
+      ],
+      "answer": 0,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:leer",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-2",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Rosa lived here, I would see her every day.",
+      "es": "Si Rosa viviera aquí, la vería todos los días.",
+      "gap": [
+        8,
+        15
+      ],
+      "options": [
+        "hubiera vivido",
+        "viviera"
+      ],
+      "answer": 1,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:aquí",
+        "l:día",
+        "l:ver",
+        "l:vivir",
+        "p:aqui-ahi-alla",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-3",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I were rich, I would buy a farm.",
+      "es": "Si fuera rico, compraría una finca.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "fuera",
+        "hubiera sido"
+      ],
+      "answer": 0,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:ser-identity",
+        "g:si-hypothetical",
+        "l:comprar",
+        "l:finca",
+        "l:rico",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-4",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If it were sunny today, we would go to the park.",
+      "es": "Si hoy hiciera sol, iríamos al parque.",
+      "gap": [
+        7,
+        14
+      ],
+      "options": [
+        "hubiera hecho",
+        "hiciera"
+      ],
+      "answer": 1,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:hacer",
+        "l:hoy",
+        "l:ir",
+        "l:parque",
+        "l:sol",
+        "p:hace-frio",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-5",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Tomás spoke better, he would work as a guide.",
+      "es": "Si Tomás hablara mejor, trabajaría de guía.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "hablara",
+        "hubiera hablado"
+      ],
+      "answer": 0,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:guía",
+        "l:hablar",
+        "l:mejor",
+        "l:trabajar",
+        "p:trabajar-de"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-6",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I were you, I would talk to her.",
+      "es": "Si yo fuera tú, hablaría con ella.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "habría hablado",
+        "hablaría"
+      ],
+      "answer": 1,
+      "why": "It is about now or imagined, so the would form.",
+      "requires": [
+        "c:con-el-ella",
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:ser-identity",
+        "g:si-hypothetical",
+        "l:hablar",
+        "l:ser",
+        "p:lo-mejor-seria-que",
+        "p:tendrias-que"
+      ]
+    },
+    {
       "id": "x:si-past-present-unreal#a-7",
       "node": "x:si-past-present-unreal",
       "side": "g:si-hypothetical",
@@ -52,6 +227,151 @@
         "l:ahora",
         "l:llover",
         "l:salir"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-8",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I knew the answer, I would tell you.",
+      "es": "Si supiera la respuesta, te la diría.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "hubiera sabido",
+        "supiera"
+      ],
+      "answer": 1,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:double-pronouns",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:decir",
+        "l:respuesta",
+        "l:saber",
+        "p:me-te-nos-objects",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-9",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If Vale were here, she would help.",
+      "es": "Si Vale estuviera aquí, ayudaría.",
+      "gap": [
+        8,
+        17
+      ],
+      "options": [
+        "estuviera",
+        "hubiera estado"
+      ],
+      "answer": 0,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:estar-location-states",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:aquí",
+        "l:ayudar",
+        "l:estar",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-10",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If they gave me a vacation, I would go to Cartagena.",
+      "es": "Si me dieran vacaciones, iría a Cartagena.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "hubieran dado",
+        "dieran"
+      ],
+      "answer": 1,
+      "why": "It is about now or imagined, so the simple past subjunctive.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:dar",
+        "l:ir",
+        "l:vacación",
+        "p:ir-a-venir-de-place",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-11",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If I had had time yesterday, I would have gone.",
+      "es": "Si hubiera tenido tiempo ayer, habría ido.",
+      "gap": [
+        3,
+        17
+      ],
+      "options": [
+        "hubiera tenido",
+        "tuviera"
+      ],
+      "answer": 0,
+      "why": "It is about something already over, so hubiera plus the participle.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:conditional-perfect",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:ayer",
+        "l:ir",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-12",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If Rosa had arrived at six, she would have seen Vale.",
+      "es": "Si Rosa hubiera llegado a las seis, habría visto a Vale.",
+      "gap": [
+        8,
+        23
+      ],
+      "options": [
+        "llegara",
+        "hubiera llegado"
+      ],
+      "answer": 1,
+      "why": "It is about something already over, so hubiera plus the participle.",
+      "requires": [
+        "g:conditional-perfect",
+        "g:gender-articles",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:llegar",
+        "l:ver",
+        "p:personal-a",
+        "p:telling-time"
       ]
     },
     {
@@ -83,6 +403,184 @@
         "l:sábado",
         "p:days-el-lunes",
         "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-14",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If Tomás had studied, he would have passed the exam.",
+      "es": "Si Tomás hubiera estudiado, habría pasado el examen.",
+      "gap": [
+        9,
+        26
+      ],
+      "options": [
+        "estudiara",
+        "hubiera estudiado"
+      ],
+      "answer": 1,
+      "why": "It is about something already over, so hubiera plus the participle.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:estudiar",
+        "l:examen",
+        "l:pasado"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-15",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If I had known, I would have called you.",
+      "es": "Si lo hubiera sabido, te habría llamado.",
+      "gap": [
+        6,
+        20
+      ],
+      "options": [
+        "hubiera sabido",
+        "supiera"
+      ],
+      "answer": 0,
+      "why": "It is about something already over, so hubiera plus the participle.",
+      "requires": [
+        "g:conditional-perfect",
+        "g:direct-objects",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:llamar",
+        "l:saber",
+        "p:me-te-nos-objects",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-16",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If we had left earlier, we would have arrived on time.",
+      "es": "Si hubiéramos salido más temprano, habríamos llegado a tiempo.",
+      "gap": [
+        35,
+        52
+      ],
+      "options": [
+        "llegaríamos",
+        "habríamos llegado"
+      ],
+      "answer": 1,
+      "why": "It is about something already over, so habría plus the participle.",
+      "requires": [
+        "g:conditional-perfect",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:llegar",
+        "l:salir",
+        "l:temprano",
+        "l:tiempo",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-17",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If Hernando hadn't fallen, he would have come to the party.",
+      "es": "Si Hernando no se hubiera caído, habría venido a la fiesta.",
+      "gap": [
+        33,
+        46
+      ],
+      "options": [
+        "habría venido",
+        "vendría"
+      ],
+      "answer": 0,
+      "why": "It is about something already over, so habría plus the participle.",
+      "requires": [
+        "c:no-se",
+        "g:conditional-perfect",
+        "g:gender-articles",
+        "g:pluperfect-subj",
+        "g:reflexive-routine",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:caer",
+        "l:fiesta",
+        "l:venir",
+        "p:ir-venir"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-18",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If you had come, you would have met Mariana. (to a friend)",
+      "es": "Si hubieras venido, habrías conocido a Mariana.",
+      "gap": [
+        20,
+        36
+      ],
+      "options": [
+        "conocerías",
+        "habrías conocido"
+      ],
+      "answer": 1,
+      "why": "It is about something already over, so habría plus the participle.",
+      "requires": [
+        "g:conditional-perfect",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:conocer",
+        "l:venir",
+        "p:me-hubieras-dicho",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:si-past-present-unreal#a-19",
+      "node": "x:si-past-present-unreal",
+      "side": "g:si-past-unreal",
+      "rung": 1,
+      "en": "If we had had money last year, we would have bought the house.",
+      "es": "Si hubiéramos tenido plata el año pasado, habríamos comprado la casa.",
+      "gap": [
+        3,
+        13
+      ],
+      "options": [
+        "hubiéramos",
+        "tuviéramos"
+      ],
+      "answer": 0,
+      "why": "It is about something already over, so hubiera plus the participle.",
+      "requires": [
+        "g:conditional-perfect",
+        "g:gender-articles",
+        "g:pluperfect-subj",
+        "g:si-hypothetical",
+        "g:si-past-unreal",
+        "l:año",
+        "l:casa",
+        "l:comprar",
+        "l:pasado",
+        "l:plata",
+        "l:tener",
+        "p:time-pasado-que-viene"
       ]
     }
   ]

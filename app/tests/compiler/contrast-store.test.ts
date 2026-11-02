@@ -127,10 +127,12 @@ describe('the real contrasts\' items are shown to a learner who has what the cou
     const day = shownWhen('its day');
     const items = [...day.values()].reduce((a, d) => a + d.of, 0);
     const shown = [...day.values()].reduce((a, d) => a + d.shown, 0);
-    expect(items).toBeGreaterThan(500);
-    expect(shown / items).toBeGreaterThan(0.8);
+    expect(items).toBeGreaterThan(1200);
+    // an authored item can need what comes after its contrast, so the share is below what the lessons' own sentences give, on far more items
+    expect(shown).toBeGreaterThan(1000);
+    expect(shown / items).toBeGreaterThan(0.75);
     // the exceptions: the words their items need come later, and until then they are reviewed with their script
-    expect([...day].filter(([, d]) => d.shown === 0).map(([x]) => x)).toEqual(['x:medir-caber', 'x:pedir-preguntar', 'x:talento-capacidad']);
+    expect([...day].filter(([, d]) => d.shown === 0).map(([x]) => x)).toEqual(['x:medir-caber', 'x:pedir-preguntar']);
   }, 120_000);
 
   it('by the end of the course every item can be shown: none is out of reach for ever', () => {

@@ -406,6 +406,37 @@
       ]
     },
     {
+      "id": "x:relative-ind-subj#a-3",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for the waitress who works here on Mondays.",
+      "es": "Busco a la mesera que trabaja aquí los lunes.",
+      "gap": [
+        22,
+        29
+      ],
+      "options": [
+        "trabaja",
+        "trabaje"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "l:aquí",
+        "l:buscar",
+        "l:lunes",
+        "l:mesero",
+        "l:trabajar",
+        "p:aqui-ahi-alla",
+        "p:days-el-lunes",
+        "p:personal-a"
+      ]
+    },
+    {
       "id": "x:relative-ind-subj#a-4",
       "node": "x:relative-ind-subj",
       "side": "g:subj-relative",
@@ -466,6 +497,34 @@
       ]
     },
     {
+      "id": "x:relative-ind-subj#a-6",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "There is nothing that costs less.",
+      "es": "No hay nada que cueste menos.",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "cuesta",
+        "cueste"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "c:hay",
+        "c:no-hay-nada",
+        "g:hay-vs-esta",
+        "g:negation-words",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:costar"
+      ]
+    },
+    {
       "id": "x:relative-ind-subj#a-7",
       "node": "x:relative-ind-subj",
       "side": "g:relative-que",
@@ -492,6 +551,35 @@
         "p:indefinites-basic",
         "p:personal-a",
         "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-8",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "I need a waiter, any waiter, who speaks English.",
+      "es": "Necesito un mesero que hable inglés.",
+      "gap": [
+        23,
+        28
+      ],
+      "options": [
+        "habla",
+        "hable"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:hablar",
+        "l:inglés",
+        "l:mesero",
+        "l:necesitar"
       ]
     },
     {
@@ -524,6 +612,35 @@
         "l:querer",
         "p:cerca-de",
         "p:position-de"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-11",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Rosa has a neighbor who plays the guitar.",
+      "es": "Rosa tiene un vecino que toca la guitarra.",
+      "gap": [
+        25,
+        29
+      ],
+      "options": [
+        "toca",
+        "toque"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:stem-boot",
+        "l:guitarra",
+        "l:tener",
+        "l:tocar",
+        "l:vecino"
       ]
     },
     {
@@ -586,6 +703,64 @@
       ]
     },
     {
+      "id": "x:relative-ind-subj#a-15",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Vale ordered the dish that has chicken.",
+      "es": "Vale pidió el plato que lleva pollo.",
+      "gap": [
+        24,
+        29
+      ],
+      "options": [
+        "lleva",
+        "lleve"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-spelling-stem",
+        "g:relative-que",
+        "l:llevar",
+        "l:pedir",
+        "l:plato",
+        "l:pollo",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-16",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "Vale is looking for a class, any class, that starts early.",
+      "es": "Vale busca una clase que empiece temprano.",
+      "gap": [
+        25,
+        32
+      ],
+      "options": [
+        "empieza",
+        "empiece"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:buscar",
+        "l:clase",
+        "l:empezar",
+        "l:temprano"
+      ]
+    },
+    {
       "id": "x:relative-ind-subj#a-17",
       "node": "x:relative-ind-subj",
       "side": "g:relative-que",
@@ -615,6 +790,66 @@
         "p:cerca-de",
         "p:position-de",
         "p:quedar-cerca"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-18",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "I can't find any book that I like.",
+      "es": "No encuentro ningún libro que me guste.",
+      "gap": [
+        33,
+        38
+      ],
+      "options": [
+        "gusta",
+        "guste"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "g:gustar-basic",
+        "g:indefinites",
+        "g:negation-words",
+        "g:relative-que",
+        "g:stem-boot",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:encontrar",
+        "l:gustar",
+        "l:libro"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-19",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I have a neighbor who cooks really well.",
+      "es": "Tengo una vecina que cocina muy rico.",
+      "gap": [
+        21,
+        27
+      ],
+      "options": [
+        "cocina",
+        "cocine"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "c:tengo",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:yo-irregular",
+        "l:cocinar",
+        "l:rico",
+        "l:tener",
+        "l:vecino",
+        "p:quantifiers-basic"
       ]
     },
     {
@@ -649,6 +884,35 @@
       ]
     },
     {
+      "id": "x:relative-ind-subj#a-22",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "Rosa needs a person, anyone at all, who can help in the kitchen.",
+      "es": "Rosa necesita una persona que ayude en la cocina.",
+      "gap": [
+        30,
+        35
+      ],
+      "options": [
+        "ayuda",
+        "ayude"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:ayudar",
+        "l:cocina",
+        "l:necesitar",
+        "l:persona"
+      ]
+    },
+    {
       "id": "x:relative-ind-subj#a-23",
       "node": "x:relative-ind-subj",
       "side": "g:relative-que",
@@ -680,32 +944,122 @@
       ]
     },
     {
-      "id": "x:relative-ind-subj#a-26",
+      "id": "x:relative-ind-subj#a-24",
       "node": "x:relative-ind-subj",
       "side": "g:subj-relative",
       "rung": 1,
-      "en": "Is there any restaurant that opens today?",
-      "es": "¿Hay algún restaurante que abra hoy?",
+      "en": "There's nobody here who knows Don Hernando.",
+      "es": "No hay nadie aquí que conozca a Don Hernando.",
       "gap": [
-        27,
-        31
+        22,
+        29
       ],
       "options": [
-        "abre",
-        "abra"
+        "conoce",
+        "conozca"
       ],
       "answer": 1,
       "why": "Any one at all, or none, so the subjunctive.",
       "requires": [
         "c:hay",
+        "c:no-hay-nada",
         "g:hay-vs-esta",
-        "g:indefinites",
+        "g:negation-words",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:aquí",
+        "l:conocer",
+        "p:aqui-ahi-alla",
+        "p:personal-a",
+        "p:saber-conocer",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-25",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Tomás bought a car that uses little gas.",
+      "es": "Tomás compró un carro que gasta poco.",
+      "gap": [
+        26,
+        31
+      ],
+      "options": [
+        "gasta",
+        "gaste"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:relative-que",
+        "l:carro",
+        "l:comprar",
+        "l:gastar",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-27",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The kids who study here are from Chapinero.",
+      "es": "Los niños que estudian aquí son de Chapinero.",
+      "gap": [
+        14,
+        22
+      ],
+      "options": [
+        "estudian",
+        "estudien"
+      ],
+      "answer": 0,
+      "why": "The one exists and is known, so the ordinary verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:aquí",
+        "l:estudiar",
+        "l:niño",
+        "l:ser",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#a-28",
+      "node": "x:relative-ind-subj",
+      "side": "g:subj-relative",
+      "rung": 1,
+      "en": "I'm looking for a taxi, any taxi, that takes cards.",
+      "es": "Busco un taxi que acepte tarjeta.",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "acepta",
+        "acepte"
+      ],
+      "answer": 1,
+      "why": "Any one at all, or none, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
         "g:relative-que",
         "g:subj-relative",
         "g:subj-wanting",
-        "l:abrir",
-        "l:hoy",
-        "l:restaurante"
+        "l:aceptar",
+        "l:buscar",
+        "l:tarjeta",
+        "l:taxi"
       ]
     }
   ]

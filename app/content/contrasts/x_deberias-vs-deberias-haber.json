@@ -122,6 +122,484 @@
         "p:podrias-haber",
         "p:tendrias-que"
       ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-1",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "You should call her today.",
+      "es": "Deberías llamarla hoy.",
+      "gap": [
+        9,
+        17
+      ],
+      "options": [
+        "llamarla",
+        "haberla llamado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:hoy",
+        "l:llamar",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-2",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "You should rest tonight.",
+      "es": "Deberías descansar esta noche.",
+      "gap": [
+        9,
+        18
+      ],
+      "options": [
+        "descansar",
+        "haber descansado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:descansar",
+        "l:noche",
+        "p:demonstratives-basic",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-3",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "I should study more from now on.",
+      "es": "Debería estudiar más desde ahora.",
+      "gap": [
+        8,
+        16
+      ],
+      "options": [
+        "estudiar",
+        "haber estudiado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:ahora",
+        "l:deber",
+        "l:estudiar",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-4",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "We should leave early tomorrow.",
+      "es": "Deberíamos salir temprano mañana.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "salir",
+        "haber salido"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:mañana",
+        "l:salir",
+        "l:temprano",
+        "p:podriamos-deberiamos"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-5",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "You shouldn't smoke anymore.",
+      "es": "No deberías fumar más.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "fumar",
+        "haber fumado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:fumar",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-6",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "You should talk to Rosa tomorrow.",
+      "es": "Deberías hablar con Rosa mañana.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "hablar",
+        "haber hablado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:hablar",
+        "l:mañana",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-7",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "Vale should ask for help next time.",
+      "es": "Vale debería pedir ayuda la próxima vez.",
+      "gap": [
+        13,
+        18
+      ],
+      "options": [
+        "pedir",
+        "haber pedido"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:conditional",
+        "g:gender-articles",
+        "g:tener-que-hay-que",
+        "l:ayuda",
+        "l:deber",
+        "l:pedir",
+        "l:próximo",
+        "l:vez",
+        "p:tendrias-que",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-8",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "We should save money starting this month.",
+      "es": "Deberíamos ahorrar desde este mes.",
+      "gap": [
+        11,
+        18
+      ],
+      "options": [
+        "ahorrar",
+        "haber ahorrado"
+      ],
+      "answer": 0,
+      "why": "Advice about what to do from now on takes deber plus the infinitive.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:ahorrar",
+        "l:deber",
+        "l:mes",
+        "p:demonstratives-basic",
+        "p:podriamos-deberiamos"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-9",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You should have called her yesterday.",
+      "es": "Deberías haberla llamado ayer.",
+      "gap": [
+        9,
+        24
+      ],
+      "options": [
+        "haberla llamado",
+        "llamarla"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:ayer",
+        "l:deber",
+        "l:haber",
+        "l:llamar",
+        "p:arrepentirse-de-haber",
+        "p:me-hubieras-dicho",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-10",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "I should have gone to the party.",
+      "es": "Debería haber ido a la fiesta.",
+      "gap": [
+        8,
+        17
+      ],
+      "options": [
+        "haber ido",
+        "ir"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:fiesta",
+        "l:haber",
+        "l:ir",
+        "p:arrepentirse-de-haber",
+        "p:ir-a-venir-de-place",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-11",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "We should have left earlier.",
+      "es": "Deberíamos haber salido antes.",
+      "gap": [
+        11,
+        23
+      ],
+      "options": [
+        "haber salido",
+        "salir"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:antes",
+        "l:deber",
+        "l:haber",
+        "l:salir",
+        "p:arrepentirse-de-haber",
+        "p:no-deberias-haberlo-hecho",
+        "p:podriamos-deberiamos",
+        "p:podrias-haber"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-12",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You shouldn't have said it.",
+      "es": "No deberías haberlo dicho.",
+      "gap": [
+        12,
+        25
+      ],
+      "options": [
+        "haberlo dicho",
+        "decirlo"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:decir",
+        "l:haber",
+        "p:arrepentirse-de-haber",
+        "p:me-hubieras-dicho",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-13",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "Vale should have asked for help.",
+      "es": "Vale debería haber pedido ayuda.",
+      "gap": [
+        13,
+        25
+      ],
+      "options": [
+        "haber pedido",
+        "pedir"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:ayuda",
+        "l:deber",
+        "l:haber",
+        "l:pedir",
+        "p:arrepentirse-de-haber",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-14",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "Tomás should have closed the door last night.",
+      "es": "Tomás debería haber cerrado la puerta anoche.",
+      "gap": [
+        14,
+        27
+      ],
+      "options": [
+        "haber cerrado",
+        "cerrar"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:conditional",
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:anoche",
+        "l:cerrar",
+        "l:deber",
+        "l:haber",
+        "l:puerta",
+        "p:arrepentirse-de-haber",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-15",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You should have let me know.",
+      "es": "Deberías haberme avisado.",
+      "gap": [
+        9,
+        24
+      ],
+      "options": [
+        "haberme avisado",
+        "avisarme"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:avisar",
+        "l:deber",
+        "l:haber",
+        "p:arrepentirse-de-haber",
+        "p:me-hubieras-dicho",
+        "p:me-te-nos-objects",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#a-16",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "We should have bought the bread this morning.",
+      "es": "Deberíamos haber comprado el pan esta mañana.",
+      "gap": [
+        11,
+        25
+      ],
+      "options": [
+        "haber comprado",
+        "comprar"
+      ],
+      "answer": 0,
+      "why": "Something already done that went wrong takes deber plus haber and the participle.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:comprar",
+        "l:deber",
+        "l:haber",
+        "l:mañana",
+        "l:pan",
+        "p:arrepentirse-de-haber",
+        "p:demonstratives-basic",
+        "p:no-deberias-haberlo-hecho",
+        "p:podriamos-deberiamos",
+        "p:podrias-haber"
+      ]
     }
   ]
 }

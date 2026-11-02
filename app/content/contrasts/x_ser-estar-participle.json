@@ -158,6 +158,117 @@
         "l:estar",
         "l:panadería"
       ]
+    },
+    {
+      "id": "x:ser-estar-participle#a-3",
+      "node": "x:ser-estar-participle",
+      "side": "g:passive-ser",
+      "rung": 1,
+      "en": "The cakes were made by Hernando.",
+      "es": "Los pasteles fueron hechos por Hernando.",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "fueron",
+        "estaban"
+      ],
+      "answer": 0,
+      "why": "Someone did it at a moment, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:passive-ser",
+        "g:por-para-1",
+        "g:preterite-ser-ir-hacer",
+        "l:hacer",
+        "l:pastel",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#a-5",
+      "node": "x:ser-estar-participle",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The store was closed when I arrived.",
+      "es": "La tienda estaba cerrada cuando llegué.",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "estaba",
+        "fue"
+      ],
+      "answer": 0,
+      "why": "It is how things were at that moment, so estar.",
+      "requires": [
+        "g:estar-participle",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:pret-vs-imperfect",
+        "g:preterite-spelling-stem",
+        "l:cerrar",
+        "l:estar",
+        "l:llegar",
+        "l:tienda",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#a-7",
+      "node": "x:ser-estar-participle",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The doors are open.",
+      "es": "Las puertas están abiertas.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "están",
+        "son"
+      ],
+      "answer": 0,
+      "why": "It is how things are now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:abrir",
+        "l:estar",
+        "l:puerta"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#a-14",
+      "node": "x:ser-estar-participle",
+      "side": "g:passive-ser",
+      "rung": 1,
+      "en": "The movie was seen by millions of people.",
+      "es": "La película fue vista por millones de personas.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "estaba",
+        "fue"
+      ],
+      "answer": 1,
+      "why": "Someone did it at a moment, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:película",
+        "l:persona",
+        "l:ser",
+        "l:vista"
+      ]
     }
   ]
 }

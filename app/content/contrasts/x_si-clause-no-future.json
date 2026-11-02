@@ -154,6 +154,333 @@
         "l:tarde",
         "p:por-la-manana"
       ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-1",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If it rains, we won't go to the park.",
+      "es": "Si llueve, no iremos al parque.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "llueve",
+        "lloverá"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:si-present",
+        "g:stem-boot",
+        "l:ir",
+        "l:llover",
+        "l:parque",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-3",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If Vale comes, we'll make arepas.",
+      "es": "Si Vale viene, haremos arepas.",
+      "gap": [
+        8,
+        13
+      ],
+      "options": [
+        "viene",
+        "vendrá"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "g:future-promises",
+        "g:si-present",
+        "g:stem-boot",
+        "l:arepa",
+        "l:hacer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-4",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "I'll call you if I find Simón.",
+      "es": "Te llamaré si encuentro a Simón.",
+      "gap": [
+        14,
+        23
+      ],
+      "options": [
+        "encuentro",
+        "encontraré"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "g:future-promises",
+        "g:si-present",
+        "g:stem-boot",
+        "l:encontrar",
+        "l:llamar",
+        "p:me-te-nos-objects",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-5",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If you study a lot, you'll pass the exam.",
+      "es": "Si estudias mucho, pasarás el examen.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "estudias",
+        "estudiarás"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:si-present",
+        "l:estudiar",
+        "l:examen",
+        "l:pasar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-6",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If Rosa arrives early, we'll open together.",
+      "es": "Si Rosa llega temprano, abriremos juntos.",
+      "gap": [
+        8,
+        13
+      ],
+      "options": [
+        "llega",
+        "llegará"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "g:future-promises",
+        "g:present-ar",
+        "g:si-present",
+        "l:abrir",
+        "l:juntos",
+        "l:llegar",
+        "l:temprano",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-7",
+      "node": "x:si-clause-no-future",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If there's no coffee, I'll have water.",
+      "es": "Si no hay tinto, tomaré agua.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "hay",
+        "habrá"
+      ],
+      "answer": 0,
+      "why": "After si, a real possibility stays in the present.",
+      "requires": [
+        "c:hay",
+        "g:future-promises",
+        "g:hay-vs-esta",
+        "g:si-present",
+        "l:agua",
+        "l:tinto",
+        "l:tomar"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-9",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If it rains, I'll stay home.",
+      "es": "Si llueve, me quedaré en casa.",
+      "gap": [
+        11,
+        21
+      ],
+      "options": [
+        "me quedaré",
+        "me quedé"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:future-promises",
+        "g:reflexive-routine",
+        "g:si-present",
+        "g:stem-boot",
+        "l:casa",
+        "l:llover",
+        "l:quedarse"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-10",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If Don Hernando calls, I'll let you know.",
+      "es": "Si Don Hernando llama, te avisaré.",
+      "gap": [
+        23,
+        33
+      ],
+      "options": [
+        "te avisaré",
+        "te avisé"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:future-promises",
+        "g:present-ar",
+        "g:si-present",
+        "l:avisar",
+        "l:llamar",
+        "p:me-te-nos-objects",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-11",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If Vale comes, we'll make arepas.",
+      "es": "Si Vale viene, haremos arepas.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "haremos",
+        "hicimos"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:future-promises",
+        "g:si-present",
+        "g:stem-boot",
+        "l:arepa",
+        "l:hacer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-12",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If you find Simón, I'll be happy.",
+      "es": "Si encuentras a Simón, estaré feliz.",
+      "gap": [
+        23,
+        29
+      ],
+      "options": [
+        "estaré",
+        "estuve"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-promises",
+        "g:si-present",
+        "g:stem-boot",
+        "l:encontrar",
+        "l:estar",
+        "l:feliz",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-13",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If it's sunny, we'll go out for a walk.",
+      "es": "Si hace sol, saldremos a caminar.",
+      "gap": [
+        13,
+        22
+      ],
+      "options": [
+        "saldremos",
+        "saldríamos"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:future-promises",
+        "g:present-er-ir",
+        "g:si-present",
+        "l:caminar",
+        "l:hacer",
+        "l:salir",
+        "l:sol",
+        "p:hace-frio"
+      ]
+    },
+    {
+      "id": "x:si-clause-no-future#a-14",
+      "node": "x:si-clause-no-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "If you invite me, I'll go with you.",
+      "es": "Si me invitas, iré contigo.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "iré",
+        "fui"
+      ],
+      "answer": 0,
+      "why": "The result half of the sentence takes the future.",
+      "requires": [
+        "g:future-promises",
+        "g:prep-pronouns",
+        "g:present-ar",
+        "g:si-present",
+        "l:invitar",
+        "l:ir",
+        "p:me-te-nos-objects"
+      ]
     }
   ]
 }

@@ -1,53 +1,138 @@
 [
-  {
-    "id": "1",
-    "side": "c:perdon-disculpe",
-    "rung": 1,
-    "en": "Sorry! (you bump someone's elbow on the bus)",
-    "es": "¡Perdón!",
-    "gap": [
-      1,
-      7
-    ],
-    "options": [
-      "Perdón",
-      "Lo siento mucho"
-    ],
-    "answer": 0,
-    "why": "A small bump gets the light word, perdón."
-  },
-  {
-    "id": "7",
-    "side": "p:siento-llegar-tarde",
-    "rung": 1,
-    "en": "I'm sorry to bother you with this. (to a friend)",
-    "es": "Siento molestarte con esto.",
-    "gap": [
-      0,
-      6
-    ],
-    "options": [
-      "Siento",
-      "Perdón"
-    ],
-    "answer": 0,
-    "why": "Siento plus a dictionary form names what you regret."
-  },
-  {
-    "id": "8",
-    "side": "c:perdon-disculpe",
-    "rung": 1,
-    "en": "Excuse me, may I get by? (on a crowded bus)",
-    "es": "Con permiso, ¿puedo pasar?",
-    "gap": [
-      0,
-      11
-    ],
-    "options": [
-      "Lo siento",
-      "Con permiso"
-    ],
-    "answer": 1,
-    "why": "To squeeze past, con permiso."
-  }
+ {
+  "id": "1",
+  "side": "c:perdon-disculpe",
+  "rung": 1,
+  "en": "Sorry! (you bump someone's elbow on the bus)",
+  "es": "¡Perdón!",
+  "gap": [
+   1,
+   7
+  ],
+  "options": [
+   "Perdón",
+   "Lo siento mucho"
+  ],
+  "answer": 0,
+  "why": "A small bump gets the light word, perdón."
+ },
+ {
+  "id": "2",
+  "side": "p:siento-llegar-tarde",
+  "rung": 1,
+  "en": "I'm so sorry about your father, Rosa.",
+  "es": "Lo siento mucho por tu papá, Rosa.",
+  "gap": [
+   0,
+   15
+  ],
+  "options": [
+   "Perdón",
+   "Lo siento mucho"
+  ],
+  "answer": 1,
+  "why": "Real loss needs the heavy word, lo siento mucho."
+ },
+ {
+  "id": "3",
+  "side": "c:perdon-disculpe",
+  "rung": 1,
+  "en": "Excuse me, could you tell me the time? (to a stranger)",
+  "es": "Disculpe, ¿me dice la hora?",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Disculpe",
+   "Lo siento mucho"
+  ],
+  "answer": 0,
+  "why": "Getting a stranger's attention takes disculpe."
+ },
+ {
+  "id": "4",
+  "side": "p:siento-llegar-tarde",
+  "rung": 1,
+  "en": "I'm sorry, Don Hernando, the bank did not approve the loan.",
+  "es": "Lo siento, Don Hernando, el banco no aprobó el préstamo.",
+  "gap": [
+   0,
+   9
+  ],
+  "options": [
+   "Perdón",
+   "Lo siento"
+  ],
+  "answer": 1,
+  "why": "Bad news takes lo siento."
+ },
+ {
+  "id": "5",
+  "side": "c:perdon-disculpe",
+  "rung": 1,
+  "en": "Sorry, I almost hit you with my bag. (to a stranger, usted)",
+  "es": "Disculpe, casi lo golpeo con mi maleta.",
+  "gap": [
+   0,
+   8
+  ],
+  "options": [
+   "Disculpe",
+   "Lo siento mucho"
+  ],
+  "answer": 0,
+  "why": "A small slip with a stranger is disculpe."
+ },
+ {
+  "id": "6",
+  "side": "p:siento-llegar-tarde",
+  "rung": 1,
+  "en": "I'm so sorry about your dog, Vale.",
+  "es": "Lo siento mucho por tu perro, Vale.",
+  "gap": [
+   0,
+   15
+  ],
+  "options": [
+   "Perdón",
+   "Lo siento mucho"
+  ],
+  "answer": 1,
+  "why": "A loss is lo siento mucho."
+ },
+ {
+  "id": "7",
+  "side": "p:siento-llegar-tarde",
+  "rung": 1,
+  "en": "I'm sorry to bother you with this. (to a friend)",
+  "es": "Siento molestarte con esto.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Siento",
+   "Perdón"
+  ],
+  "answer": 0,
+  "why": "Siento plus a dictionary form names what you regret."
+ },
+ {
+  "id": "8",
+  "side": "c:perdon-disculpe",
+  "rung": 1,
+  "en": "Excuse me, may I get by? (on a crowded bus)",
+  "es": "Con permiso, ¿puedo pasar?",
+  "gap": [
+   0,
+   11
+  ],
+  "options": [
+   "Lo siento",
+   "Con permiso"
+  ],
+  "answer": 1,
+  "why": "To squeeze past, con permiso."
+ }
 ]

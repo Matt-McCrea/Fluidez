@@ -32,6 +32,66 @@
       ]
     },
     {
+      "id": "x:lo-que-el-que#pf3",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "We ran out of money, which is a problem.",
+      "es": "Nos quedamos sin plata, lo cual es un problema.",
+      "gap": [
+        24,
+        31
+      ],
+      "options": [
+        "lo cual",
+        "la que"
+      ],
+      "answer": 0,
+      "why": "Almost. You are commenting on the whole situation, so use lo cual or lo que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "g:relatives-formal",
+        "g:ser-identity",
+        "l:plata",
+        "l:problema",
+        "l:quedarse",
+        "l:ser",
+        "p:lo-que-cosa-que"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#yt1",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 2,
+      "en": "The house I live in is old.",
+      "es": "La casa en la que vivo es vieja.",
+      "gap": [
+        11,
+        17
+      ],
+      "options": [
+        "lo que",
+        "la que"
+      ],
+      "answer": 1,
+      "why": "Casa is a feminine noun, so la que.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:casa",
+        "l:ser",
+        "l:viejo",
+        "l:vivir",
+        "p:viejo-antiguo-mayor"
+      ]
+    },
+    {
       "id": "x:lo-que-el-que#rp5",
       "node": "x:lo-que-el-que",
       "side": "p:lo-que-cosa-que",
@@ -89,6 +149,37 @@
       ]
     },
     {
+      "id": "x:lo-que-el-que#p.lo-que-cosa-que.rp5",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "It rained all week, which ruined our plans.",
+      "es": "Llovió toda la semana, lo que arruinó nuestros planes.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "la",
+        "el"
+      ],
+      "answer": 0,
+      "why": "The English says \"It rained all week, which ruined our plans.\", so it's la.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "g:relatives-donde-lo-que",
+        "l:arruinar",
+        "l:llover",
+        "l:plan",
+        "l:semana",
+        "p:lo-que-cosa-que",
+        "p:todos-los-dias"
+      ]
+    },
+    {
       "id": "x:lo-que-el-que#p.lo-que-cosa-que.rp6",
       "node": "x:lo-que-el-que",
       "side": "p:lo-que-cosa-que",
@@ -114,6 +205,431 @@
         "l:hablar",
         "p:lo-que-cosa-que",
         "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#g.relatives-prepositions.rp2",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The person I wrote to didn't answer.",
+      "es": "La persona a quien le escribí no contestó.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "El",
+        "La"
+      ],
+      "answer": 1,
+      "why": "The English says \"The person I wrote to didn't answer.\", so it's La.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "g:relatives-prepositions",
+        "l:contestar",
+        "l:escribir",
+        "l:persona"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#g.relatives-prepositions.rp3",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The park I told you about is big.",
+      "es": "El parque del que te hablé es grande.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "El",
+        "La"
+      ],
+      "answer": 0,
+      "why": "The English says \"The park I told you about is big.\", so it's El.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:grande",
+        "l:hablar",
+        "l:parque",
+        "l:ser",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#g.relatives-prepositions.rp4",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The place I'm going to is very pretty.",
+      "es": "El lugar al que voy es muy bonito.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "La",
+        "El"
+      ],
+      "answer": 1,
+      "why": "The English says \"The place I'm going to is very pretty.\", so it's El.",
+      "requires": [
+        "c:voy-vas",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:bonito",
+        "l:ir",
+        "l:lugar",
+        "l:ser",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-3",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "What Vale said surprised everyone.",
+      "es": "Lo que dijo Vale sorprendió a todos.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Lo que",
+        "El que"
+      ],
+      "answer": 0,
+      "why": "What means a thing said.",
+      "requires": [
+        "g:preterite-er-ir",
+        "g:preterite-irregular-strong",
+        "g:relatives-donde-lo-que",
+        "l:decir",
+        "l:sorprender"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-4",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The one who arrives first gets the best seat.",
+      "es": "El que llega primero consigue el mejor puesto.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "El que",
+        "Lo que"
+      ],
+      "answer": 0,
+      "why": "The one is a person.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relatives-prepositions",
+        "g:stem-e-i",
+        "g:superlatives",
+        "l:conseguir",
+        "l:llegar",
+        "l:mejor",
+        "l:poner",
+        "p:el-que-la-que",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-5",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "That's what I need.",
+      "es": "Eso es lo que necesito.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "lo que",
+        "el que"
+      ],
+      "answer": 0,
+      "why": "Eso points to an idea, so lo que.",
+      "requires": [
+        "g:present-ar",
+        "g:relatives-donde-lo-que",
+        "g:ser-identity",
+        "l:necesitar",
+        "l:ser",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-7",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "Tell me what you want to eat. (to a friend)",
+      "es": "Dime lo que quieres comer.",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "lo que",
+        "el que"
+      ],
+      "answer": 0,
+      "why": "What is an unnamed thing.",
+      "requires": [
+        "g:commands-tu",
+        "g:commands-with-pronouns",
+        "g:relatives-donde-lo-que",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:comer",
+        "l:decir",
+        "l:querer",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-9",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "What worries me is the price.",
+      "es": "Lo que me preocupa es el precio.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Lo que",
+        "El que"
+      ],
+      "answer": 0,
+      "why": "What is an unnamed thing.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:relatives-donde-lo-que",
+        "g:ser-identity",
+        "l:precio",
+        "l:preocupar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-10",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "Don Hernando is the one who knows everything.",
+      "es": "Don Hernando es el que lo sabe todo.",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "el que",
+        "lo que"
+      ],
+      "answer": 0,
+      "why": "The one is a man.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:saber",
+        "l:ser",
+        "p:el-que-la-que",
+        "p:saber-conocer",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-11",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "I did everything I could.",
+      "es": "Hice todo lo que pude.",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "lo que",
+        "el que"
+      ],
+      "answer": 0,
+      "why": "Todo goes with lo que.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:preterite-ser-ir-hacer",
+        "g:relatives-donde-lo-que",
+        "l:hacer",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-12",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "These are the ones I bought yesterday.",
+      "es": "Estas son las que compré ayer.",
+      "gap": [
+        10,
+        17
+      ],
+      "options": [
+        "las que",
+        "lo que"
+      ],
+      "answer": 0,
+      "why": "The ones are feminine things.",
+      "requires": [
+        "c:ayer-anoche",
+        "c:compre-trabaje",
+        "g:demonstratives",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:ayer",
+        "l:comprar",
+        "l:ser",
+        "p:el-que-la-que"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-13",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "That's not what I meant.",
+      "es": "Eso no es lo que quise decir.",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "lo que",
+        "el que"
+      ],
+      "answer": 0,
+      "why": "What means an idea.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:relatives-donde-lo-que",
+        "g:ser-identity",
+        "g:verb-infinitive",
+        "l:decir",
+        "l:querer",
+        "l:ser",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-14",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "Of the two books, the one I read is better.",
+      "es": "De los dos libros, el que leí es mejor.",
+      "gap": [
+        19,
+        25
+      ],
+      "options": [
+        "el que",
+        "lo que"
+      ],
+      "answer": 0,
+      "why": "The one stands for el libro.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:leer",
+        "l:libro",
+        "l:mejor",
+        "l:ser",
+        "p:el-que-la-que"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-15",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "Nobody knows what happened.",
+      "es": "Nadie sabe lo que pasó.",
+      "gap": [
+        11,
+        17
+      ],
+      "options": [
+        "lo que",
+        "el que"
+      ],
+      "answer": 0,
+      "why": "What is an unnamed event.",
+      "requires": [
+        "g:present-er-ir",
+        "g:preterite-ar",
+        "g:relatives-donde-lo-que",
+        "l:pasar",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#a-16",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The ones who came are my cousins.",
+      "es": "Los que vinieron son mis primos.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Los que",
+        "Lo que"
+      ],
+      "answer": 0,
+      "why": "The ones are people, plural.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-spelling-stem",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:primo",
+        "l:ser",
+        "l:venir",
+        "p:el-que-la-que",
+        "p:masculine-plural-mixed",
+        "p:possessives-basic"
       ]
     }
   ]

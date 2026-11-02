@@ -1,0 +1,223 @@
+[
+ {
+  "id": "1",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "I want you to come tomorrow.",
+  "es": "Quiero que vengas mañana.",
+  "gap": [
+   11,
+   17
+  ],
+  "options": [
+   "vengas",
+   "vinieras"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "2",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "Vale wants Tomás to stay today.",
+  "es": "Vale quiere que Tomás se quede hoy.",
+  "gap": [
+   25,
+   30
+  ],
+  "options": [
+   "quede",
+   "quedara"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "I'm glad you're here.",
+  "es": "Me alegra que estés aquí.",
+  "gap": [
+   14,
+   19
+  ],
+  "options": [
+   "estés",
+   "estuvieras"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "4",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "Rosa asks me to close the café.",
+  "es": "Rosa me pide que cierre el café.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "cierre",
+   "cerrara"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "I hope Simón arrives soon.",
+  "es": "Espero que Simón llegue pronto.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "llegue",
+   "llegara"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "Don Hernando prefers that we talk now.",
+  "es": "Don Hernando prefiere que hablemos ahora.",
+  "gap": [
+   26,
+   34
+  ],
+  "options": [
+   "hablemos",
+   "habláramos"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "7",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "It's important that you eat something.",
+  "es": "Es importante que comas algo.",
+  "gap": [
+   18,
+   23
+  ],
+  "options": [
+   "comas",
+   "comieras"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "g:subj-wanting",
+  "rung": 1,
+  "en": "I'm telling you not to go out alone today.",
+  "es": "Te digo que no salgas solo hoy.",
+  "gap": [
+   15,
+   21
+  ],
+  "options": [
+   "salgas",
+   "salieras"
+  ],
+  "answer": 0,
+  "why": "The second thing is now or still ahead, so the present subjunctive."
+ },
+ {
+  "id": "10",
+  "side": "g:subj-past-triggers",
+  "rung": 1,
+  "en": "Vale wanted Tomás to stay.",
+  "es": "Vale quería que Tomás se quedara.",
+  "gap": [
+   25,
+   32
+  ],
+  "options": [
+   "quedara",
+   "quede"
+  ],
+  "answer": 0,
+  "why": "The second thing is already over, so the past subjunctive."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-past-triggers",
+  "rung": 1,
+  "en": "Rosa asked me to close the café and I did.",
+  "es": "Rosa me pidió que cerrara el café y lo cerré.",
+  "gap": [
+   18,
+   25
+  ],
+  "options": [
+   "cerrara",
+   "cierre"
+  ],
+  "answer": 0,
+  "why": "The second thing is already over, so the past subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "g:subj-past-triggers",
+  "rung": 1,
+  "en": "I was surprised Mariana didn't call.",
+  "es": "Me sorprendió que Mariana no llamara.",
+  "gap": [
+   29,
+   36
+  ],
+  "options": [
+   "llamara",
+   "llame"
+  ],
+  "answer": 0,
+  "why": "The second thing is already over, so the past subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:subj-past-triggers",
+  "rung": 1,
+  "en": "Don Hernando hoped Simón would arrive early.",
+  "es": "Don Hernando esperaba que Simón llegara temprano.",
+  "gap": [
+   32,
+   39
+  ],
+  "options": [
+   "llegara",
+   "llegue"
+  ],
+  "answer": 0,
+  "why": "The second thing is already over, so the past subjunctive."
+ },
+ {
+  "id": "15",
+  "side": "g:subj-past-triggers",
+  "rung": 1,
+  "en": "It was important for you to eat something.",
+  "es": "Era importante que comieras algo.",
+  "gap": [
+   19,
+   27
+  ],
+  "options": [
+   "comieras",
+   "comas"
+  ],
+  "answer": 0,
+  "why": "The second thing is already over, so the past subjunctive."
+ }
+]

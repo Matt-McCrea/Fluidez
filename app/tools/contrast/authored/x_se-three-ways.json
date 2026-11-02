@@ -1,36 +1,240 @@
 [
-  {
-    "id": "16",
-    "side": "g:se-impersonal",
-    "rung": 1,
-    "en": "You eat really well at the café.",
-    "es": "En el café se come muy bien.",
-    "gap": [
-      14,
-      18
-    ],
-    "options": [
-      "comen",
-      "come"
-    ],
-    "answer": 1,
-    "why": "Nobody named, just people in general, so se and the singular."
-  },
-  {
-    "id": "19",
-    "side": "g:se-impersonal",
-    "rung": 1,
-    "en": "You can't smoke here.",
-    "es": "Aquí no se puede fumar.",
-    "gap": [
-      11,
-      16
-    ],
-    "options": [
-      "puede",
-      "pueden"
-    ],
-    "answer": 0,
-    "why": "Nobody named, just people in general, so se and the singular."
-  }
+ {
+  "id": "1",
+  "side": "g:reflexive-routine",
+  "rung": 1,
+  "en": "Tomás takes a shower in the morning.",
+  "es": "Tomás se baña por la mañana.",
+  "gap": [
+   6,
+   13
+  ],
+  "options": [
+   "se baña",
+   "baña"
+  ],
+  "answer": 0,
+  "why": "Someone doing it to themselves or each other, so the se form."
+ },
+ {
+  "id": "2",
+  "side": "g:reflexive-routine",
+  "rung": 1,
+  "en": "Vale washed her hands before eating.",
+  "es": "Vale se lavó las manos antes de comer.",
+  "gap": [
+   5,
+   12
+  ],
+  "options": [
+   "lavó",
+   "se lavó"
+  ],
+  "answer": 1,
+  "why": "Someone doing it to themselves or each other, so the se form."
+ },
+ {
+  "id": "3",
+  "side": "g:reflexive-routine",
+  "rung": 1,
+  "en": "The kids go to bed at eight.",
+  "es": "Los niños se acuestan a las ocho.",
+  "gap": [
+   10,
+   21
+  ],
+  "options": [
+   "se acuestan",
+   "acuestan"
+  ],
+  "answer": 0,
+  "why": "Someone doing it to themselves or each other, so the se form."
+ },
+ {
+  "id": "4",
+  "side": "g:reflexive-routine",
+  "rung": 1,
+  "en": "Rosa and Hernando greeted each other in the street.",
+  "es": "Rosa y Hernando se saludaron en la calle.",
+  "gap": [
+   16,
+   28
+  ],
+  "options": [
+   "saludaron",
+   "se saludaron"
+  ],
+  "answer": 1,
+  "why": "Someone doing it to themselves or each other, so the se form."
+ },
+ {
+  "id": "5",
+  "side": "g:reflexive-routine",
+  "rung": 1,
+  "en": "I get up at five.",
+  "es": "Yo me levanto a las cinco.",
+  "gap": [
+   3,
+   13
+  ],
+  "options": [
+   "me levanto",
+   "levanto"
+  ],
+  "answer": 0,
+  "why": "Someone doing it to themselves or each other, so the se form."
+ },
+ {
+  "id": "10",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Houses are sold in this neighborhood.",
+  "es": "Se venden casas en este barrio.",
+  "gap": [
+   3,
+   9
+  ],
+  "options": [
+   "vende",
+   "venden"
+  ],
+  "answer": 1,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "11",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Car for sale.",
+  "es": "Se vende carro.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "vende",
+   "venden"
+  ],
+  "answer": 0,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "13",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Waiters needed.",
+  "es": "Se necesitan meseros.",
+  "gap": [
+   3,
+   12
+  ],
+  "options": [
+   "necesitan",
+   "necesita"
+  ],
+  "answer": 0,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "14",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "A lot of black coffee is drunk in Colombia.",
+  "es": "En Colombia se toma mucho tinto.",
+  "gap": [
+   15,
+   19
+  ],
+  "options": [
+   "toman",
+   "toma"
+  ],
+  "answer": 1,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "15",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Two apartments for rent.",
+  "es": "Se arriendan dos apartamentos.",
+  "gap": [
+   3,
+   12
+  ],
+  "options": [
+   "arriendan",
+   "arrienda"
+  ],
+  "answer": 0,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "16",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "You eat really well at the café.",
+  "es": "En el café se come muy bien.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "comen",
+   "come"
+  ],
+  "answer": 1,
+  "why": "Nobody named, just people in general, so se and the singular."
+ },
+ {
+  "id": "17",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Waitress wanted.",
+  "es": "Se busca mesera.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "busca",
+   "buscan"
+  ],
+  "answer": 0,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "18",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "Many tourists are seen at Monserrate.",
+  "es": "Se ven muchos turistas en Monserrate.",
+  "gap": [
+   3,
+   6
+  ],
+  "options": [
+   "ve",
+   "ven"
+  ],
+  "answer": 1,
+  "why": "The thing sold or needed is the subject, so the verb agrees with it."
+ },
+ {
+  "id": "19",
+  "side": "g:se-impersonal",
+  "rung": 1,
+  "en": "You can't smoke here.",
+  "es": "Aquí no se puede fumar.",
+  "gap": [
+   11,
+   16
+  ],
+  "options": [
+   "puede",
+   "pueden"
+  ],
+  "answer": 0,
+  "why": "Nobody named, just people in general, so se and the singular."
+ }
 ]

@@ -1,0 +1,172 @@
+[
+ {
+  "id": "1",
+  "side": "g:subj-emotion-intro",
+  "rung": 1,
+  "en": "It bothers me a little that the music is so loud.",
+  "es": "Me molesta un poco que la música esté tan alta.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 0,
+  "why": "A little irritation is me molesta. No soporto has no small size."
+ },
+ {
+  "id": "2",
+  "side": "p:no-soportar-que",
+  "rung": 1,
+  "en": "I can't stand it when the neighbors smoke here.",
+  "es": "No soporto que los vecinos fumen aquí.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 1,
+  "why": "This is the limit, so no soporto."
+ },
+ {
+  "id": "3",
+  "side": "g:subj-emotion-intro",
+  "rung": 1,
+  "en": "Does it bother you if I turn on the TV? (to a friend)",
+  "es": "¿Te molesta que prenda el televisor?",
+  "gap": [
+   1,
+   11
+  ],
+  "options": [
+   "Te molesta",
+   "No soportas"
+  ],
+  "answer": 0,
+  "why": "A polite question uses te molesta."
+ },
+ {
+  "id": "4",
+  "side": "p:no-soportar-que",
+  "rung": 1,
+  "en": "I can't stand it when Tomás doesn't answer.",
+  "es": "No soporto que Tomás no conteste.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 1,
+  "why": "Full annoyance, no half measure: no soporto."
+ },
+ {
+  "id": "5",
+  "side": "g:subj-emotion-intro",
+  "rung": 1,
+  "en": "It bothers me quite a bit that nobody cleans.",
+  "es": "Me molesta bastante que nadie limpie.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 0,
+  "why": "Quite a bit is a size that only me molesta has."
+ },
+ {
+  "id": "6",
+  "side": "p:no-soportar-que",
+  "rung": 1,
+  "en": "I can't stand it when people tell me lies.",
+  "es": "No soporto que me digan mentiras.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 1,
+  "why": "I can't stand it is the top of the scale: no soporto."
+ },
+ {
+  "id": "7",
+  "side": "g:subj-emotion-intro",
+  "rung": 1,
+  "en": "It bothers me that the bus is always full.",
+  "es": "Me molesta que el bus siempre vaya lleno.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 0,
+  "why": "This is an ordinary annoyance, so me molesta."
+ },
+ {
+  "id": "8",
+  "side": "p:no-soportar-que",
+  "rung": 1,
+  "en": "I can't stand it when Rosa arrives late and says nothing.",
+  "es": "No soporto que Rosa llegue tarde y no diga nada.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 1,
+  "why": "The speaker has reached the limit: no soporto."
+ },
+ {
+  "id": "9",
+  "side": "g:subj-emotion-intro",
+  "rung": 1,
+  "en": "It bothers me a lot that they close so early.",
+  "es": "Me molesta mucho que cierren tan temprano.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 0,
+  "why": "Mucho is a size of me molesta."
+ },
+ {
+  "id": "10",
+  "side": "p:no-soportar-que",
+  "rung": 1,
+  "en": "I can't stand it when they make noise at night.",
+  "es": "No soporto que hagan ruido en la noche.",
+  "gap": [
+   0,
+   10
+  ],
+  "options": [
+   "Me molesta",
+   "No soporto"
+  ],
+  "answer": 1,
+  "why": "I can't stand it is no soporto."
+ }
+]

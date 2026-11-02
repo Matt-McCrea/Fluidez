@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Vale says you're coming tomorrow.",
+  "es": "Vale dice que vienes mañana.",
+  "gap": [
+   14,
+   20
+  ],
+  "options": [
+   "vienes",
+   "vengas"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "2",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Rosa says the café is closed.",
+  "es": "Rosa dice que el café está cerrado.",
+  "gap": [
+   22,
+   26
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "3",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "My dad says I work a lot.",
+  "es": "Mi papá dice que trabajo mucho.",
+  "gap": [
+   17,
+   24
+  ],
+  "options": [
+   "trabajo",
+   "trabaje"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "4",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Tomás says he's hungry.",
+  "es": "Tomás dice que tiene hambre.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "tiene",
+   "tenga"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "5",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Don Hernando says Simón came back yesterday.",
+  "es": "Don Hernando dice que Simón volvió ayer.",
+  "gap": [
+   28,
+   34
+  ],
+  "options": [
+   "volvió",
+   "vuelva"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "6",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Mariana says she can come.",
+  "es": "Mariana dice que puede venir.",
+  "gap": [
+   17,
+   22
+  ],
+  "options": [
+   "puede",
+   "pueda"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "7",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "They tell me the coffee here is very good.",
+  "es": "Me dicen que el tinto es muy bueno aquí.",
+  "gap": [
+   22,
+   24
+  ],
+  "options": [
+   "es",
+   "sea"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "8",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "Vale says you already finished.",
+  "es": "Vale dice que ya terminaste.",
+  "gap": [
+   17,
+   27
+  ],
+  "options": [
+   "terminaste",
+   "termines"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "9",
+  "side": "g:reported-past-basic",
+  "rung": 1,
+  "en": "They say it's going to rain tomorrow.",
+  "es": "Dicen que mañana va a llover.",
+  "gap": [
+   17,
+   19
+  ],
+  "options": [
+   "va",
+   "vaya"
+  ],
+  "answer": 0,
+  "why": "Passing on a fact keeps the ordinary verb."
+ },
+ {
+  "id": "10",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Vale says to come tomorrow.",
+  "es": "Vale dice que vengas mañana.",
+  "gap": [
+   14,
+   20
+  ],
+  "options": [
+   "vengas",
+   "vienes"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Rosa says to close the café.",
+  "es": "Rosa dice que cierres el café.",
+  "gap": [
+   14,
+   21
+  ],
+  "options": [
+   "cierres",
+   "cierras"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Tomás says you should eat something.",
+  "es": "Tomás dice que comas algo.",
+  "gap": [
+   15,
+   20
+  ],
+  "options": [
+   "comas",
+   "comes"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Don Hernando says Simón should come back soon.",
+  "es": "Don Hernando dice que Simón vuelva pronto.",
+  "gap": [
+   28,
+   34
+  ],
+  "options": [
+   "vuelva",
+   "vuelve"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "15",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Mariana says you should call your mom.",
+  "es": "Mariana dice que llames a tu mamá.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "llames",
+   "llamas"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "16",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "The doctor says you should rest more.",
+  "es": "El doctor dice que descanses más.",
+  "gap": [
+   19,
+   28
+  ],
+  "options": [
+   "descanses",
+   "descansas"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ },
+ {
+  "id": "17",
+  "side": "g:reported-requests",
+  "rung": 1,
+  "en": "Rosa says not to go out alone.",
+  "es": "Rosa dice que no salgas solo.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "salgas",
+   "sales"
+  ],
+  "answer": 0,
+  "why": "Passing on an order or a wish takes the subjunctive."
+ }
+]

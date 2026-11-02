@@ -1,0 +1,274 @@
+[
+ {
+  "id": "1",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry Rosa is ill.",
+  "es": "Siento que Rosa esté enferma.",
+  "gap": [
+   7,
+   28
+  ],
+  "options": [
+   "que Rosa esté enferma",
+   "haber estado enferma"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "2",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry you lost your job.",
+  "es": "Siento que hayas perdido el trabajo.",
+  "gap": [
+   7,
+   35
+  ],
+  "options": [
+   "que hayas perdido el trabajo",
+   "haber perdido el trabajo"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry the café is closed.",
+  "es": "Siento que el café esté cerrado.",
+  "gap": [
+   7,
+   31
+  ],
+  "options": [
+   "que el café esté cerrado",
+   "haber cerrado el café"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "4",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry Tomás can't come.",
+  "es": "Siento que Tomás no pueda venir.",
+  "gap": [
+   7,
+   31
+  ],
+  "options": [
+   "que Tomás no pueda venir",
+   "no haber venido"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "5",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry you're so tired.",
+  "es": "Siento que estés tan cansado.",
+  "gap": [
+   7,
+   28
+  ],
+  "options": [
+   "que estés tan cansado",
+   "haber estado tan cansado"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "6",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry Don Hernando didn't win.",
+  "es": "Siento que Don Hernando no haya ganado.",
+  "gap": [
+   7,
+   38
+  ],
+  "options": [
+   "que Don Hernando no haya ganado",
+   "no haber ganado"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "7",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry your mom is alone.",
+  "es": "Siento que tu mamá esté sola.",
+  "gap": [
+   7,
+   28
+  ],
+  "options": [
+   "que tu mamá esté sola",
+   "haber estado sola"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "p:siento-mucho-que",
+  "rung": 1,
+  "en": "I'm sorry they didn't invite you.",
+  "es": "Siento que no te hayan invitado.",
+  "gap": [
+   7,
+   31
+  ],
+  "options": [
+   "que no te hayan invitado",
+   "no haberte invitado"
+  ],
+  "answer": 0,
+  "why": "Someone else's trouble takes siento que and the subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I was late.",
+  "es": "Siento haber llegado tarde.",
+  "gap": [
+   7,
+   26
+  ],
+  "options": [
+   "haber llegado tarde",
+   "que haya llegado tarde"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "10",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I shouted at you.",
+  "es": "Siento haberte gritado.",
+  "gap": [
+   7,
+   22
+  ],
+  "options": [
+   "haberte gritado",
+   "que te haya gritado"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "11",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I didn't call.",
+  "es": "Siento no haber llamado.",
+  "gap": [
+   7,
+   23
+  ],
+  "options": [
+   "no haber llamado",
+   "que no haya llamado"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "12",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I forgot your birthday.",
+  "es": "Siento haber olvidado tu cumpleaños.",
+  "gap": [
+   7,
+   35
+  ],
+  "options": [
+   "haber olvidado tu cumpleaños",
+   "que haya olvidado tu cumpleaños"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "13",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I broke the cup.",
+  "es": "Siento haber roto la taza.",
+  "gap": [
+   7,
+   25
+  ],
+  "options": [
+   "haber roto la taza",
+   "que haya roto la taza"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "14",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I said that to Rosa.",
+  "es": "Siento haberle dicho eso a Rosa.",
+  "gap": [
+   7,
+   31
+  ],
+  "options": [
+   "haberle dicho eso a Rosa",
+   "que le haya dicho eso a Rosa"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "15",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I didn't help you.",
+  "es": "Siento no haberte ayudado.",
+  "gap": [
+   7,
+   25
+  ],
+  "options": [
+   "no haberte ayudado",
+   "que no te haya ayudado"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ },
+ {
+  "id": "16",
+  "side": "p:siento-no-haber",
+  "rung": 1,
+  "en": "I'm sorry I spoke so loudly.",
+  "es": "Siento haber hablado tan fuerte.",
+  "gap": [
+   7,
+   31
+  ],
+  "options": [
+   "haber hablado tan fuerte",
+   "que haya hablado tan fuerte"
+  ],
+  "answer": 0,
+  "why": "Your own action takes siento haber and the participle, with no que."
+ }
+]

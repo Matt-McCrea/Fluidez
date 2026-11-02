@@ -179,6 +179,39 @@
       ]
     },
     {
+      "id": "x:gracias-a-debido-a#a-3",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "Due to maintenance work, the elevator is out of service.",
+      "es": "Debido a trabajos de mantenimiento, el ascensor está fuera de servicio.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Gracias a",
+        "Debido a"
+      ],
+      "answer": 1,
+      "why": "A neutral cause takes debido a.",
+      "requires": [
+        "g:causal-advanced",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:ascensor",
+        "l:deber",
+        "l:estar",
+        "l:mantenimiento",
+        "l:servicio",
+        "l:trabajo",
+        "p:cerca-de",
+        "p:fuera-de-servicio",
+        "p:gracias-a-por-culpa-de",
+        "p:position-de"
+      ]
+    },
+    {
       "id": "x:gracias-a-debido-a#a-4",
       "node": "x:gracias-a-debido-a",
       "side": "p:gracias-a-por-culpa-de",
@@ -204,6 +237,34 @@
         "l:vender",
         "p:gracias-a-por-culpa-de",
         "p:por-culpa-de"
+      ]
+    },
+    {
+      "id": "x:gracias-a-debido-a#a-5",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "Due to the strike, the buses aren't running.",
+      "es": "Debido a la huelga, no pasan los buses.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Gracias a",
+        "Debido a"
+      ],
+      "answer": 1,
+      "why": "A neutral cause.",
+      "requires": [
+        "g:causal-advanced",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:bus",
+        "l:deber",
+        "l:huelga",
+        "l:pasar",
+        "p:gracias-a-por-culpa-de"
       ]
     },
     {

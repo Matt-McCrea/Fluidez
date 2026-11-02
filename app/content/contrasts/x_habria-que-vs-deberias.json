@@ -56,6 +56,32 @@
       ]
     },
     {
+      "id": "x:habria-que-vs-deberias#a-1",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "The façade would need painting.",
+      "es": "Habría que pintar la fachada.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Deberías",
+        "Habría que"
+      ],
+      "answer": 1,
+      "why": "No one in particular, so habría que.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:fachada",
+        "l:pintar",
+        "p:habria-que"
+      ]
+    },
+    {
       "id": "x:habria-que-vs-deberias#a-2",
       "node": "x:habria-que-vs-deberias",
       "side": "p:habria-que",

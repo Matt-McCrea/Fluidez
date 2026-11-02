@@ -1,36 +1,240 @@
 [
-  {
-    "id": "3",
-    "side": "g:si-present",
-    "rung": 1,
-    "en": "If I have money on Friday, I'll pay you.",
-    "es": "Si tengo plata el viernes, te pago.",
-    "gap": [
-      3,
-      8
-    ],
-    "options": [
-      "tengo",
-      "tuviera"
-    ],
-    "answer": 0,
-    "why": "It could really happen, so the ordinary present."
-  },
-  {
-    "id": "8",
-    "side": "g:si-hypothetical",
-    "rung": 1,
-    "en": "If I had a car, I would take you.",
-    "es": "Si tuviera un carro, te llevaría.",
-    "gap": [
-      3,
-      10
-    ],
-    "options": [
-      "tengo",
-      "tuviera"
-    ],
-    "answer": 1,
-    "why": "It is imaginary, so the past subjunctive and the would form."
-  }
+ {
+  "id": "1",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If it rains tomorrow, we'll stay home.",
+  "es": "Si llueve mañana, nos quedamos en casa.",
+  "gap": [
+   3,
+   9
+  ],
+  "options": [
+   "llueve",
+   "lloviera"
+  ],
+  "answer": 0,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "2",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If Vale arrives early, we'll have dinner together.",
+  "es": "Si Vale llega temprano, cenamos juntos.",
+  "gap": [
+   24,
+   31
+  ],
+  "options": [
+   "cenaríamos",
+   "cenamos"
+  ],
+  "answer": 1,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "3",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If I have money on Friday, I'll pay you.",
+  "es": "Si tengo plata el viernes, te pago.",
+  "gap": [
+   3,
+   8
+  ],
+  "options": [
+   "tengo",
+   "tuviera"
+  ],
+  "answer": 0,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "4",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If Tomás wants to, he can come with us.",
+  "es": "Si Tomás quiere, puede venir con nosotros.",
+  "gap": [
+   9,
+   15
+  ],
+  "options": [
+   "quisiera",
+   "quiere"
+  ],
+  "answer": 1,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "5",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If you call me, I'll answer. (to a friend)",
+  "es": "Si me llamas, te contesto.",
+  "gap": [
+   6,
+   12
+  ],
+  "options": [
+   "llamas",
+   "llamaras"
+  ],
+  "answer": 0,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "6",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If it's cold tonight, I'll wear my ruana.",
+  "es": "Si hace frío esta noche, uso la ruana.",
+  "gap": [
+   3,
+   7
+  ],
+  "options": [
+   "hiciera",
+   "hace"
+  ],
+  "answer": 1,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "7",
+  "side": "g:si-present",
+  "rung": 1,
+  "en": "If Rosa cooks, I'll wash the dishes.",
+  "es": "Si Rosa cocina, yo lavo los platos.",
+  "gap": [
+   8,
+   14
+  ],
+  "options": [
+   "cocina",
+   "cocinara"
+  ],
+  "answer": 0,
+  "why": "It could really happen, so the ordinary present."
+ },
+ {
+  "id": "8",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I had a car, I would take you.",
+  "es": "Si tuviera un carro, te llevaría.",
+  "gap": [
+   3,
+   10
+  ],
+  "options": [
+   "tengo",
+   "tuviera"
+  ],
+  "answer": 1,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "9",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Hernando were younger, he would run.",
+  "es": "Si Hernando fuera más joven, correría.",
+  "gap": [
+   12,
+   17
+  ],
+  "options": [
+   "fuera",
+   "es"
+  ],
+  "answer": 0,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "10",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Vale won the lottery, she would travel around the world.",
+  "es": "Si Vale ganara la lotería, viajaría por el mundo.",
+  "gap": [
+   27,
+   35
+  ],
+  "options": [
+   "viaja",
+   "viajaría"
+  ],
+  "answer": 1,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "11",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I lived on the beach, I would swim every day.",
+  "es": "Si viviera en la playa, nadaría cada día.",
+  "gap": [
+   3,
+   10
+  ],
+  "options": [
+   "viviera",
+   "vivo"
+  ],
+  "answer": 0,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "12",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If I were you, I wouldn't go.",
+  "es": "Si yo fuera tú, no iría.",
+  "gap": [
+   6,
+   11
+  ],
+  "options": [
+   "soy",
+   "fuera"
+  ],
+  "answer": 1,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "13",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If it snowed in Bogotá, everyone would go out to see it.",
+  "es": "Si nevara en Bogotá, todos saldrían a verlo.",
+  "gap": [
+   3,
+   9
+  ],
+  "options": [
+   "nevara",
+   "nieva"
+  ],
+  "answer": 0,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ },
+ {
+  "id": "14",
+  "side": "g:si-hypothetical",
+  "rung": 1,
+  "en": "If Tomás knew how to cook, he would make lunch.",
+  "es": "Si Tomás supiera cocinar, haría el almuerzo.",
+  "gap": [
+   9,
+   16
+  ],
+  "options": [
+   "sabe",
+   "supiera"
+  ],
+  "answer": 1,
+  "why": "It is imaginary, so the past subjunctive and the would form."
+ }
 ]

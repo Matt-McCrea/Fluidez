@@ -276,6 +276,203 @@
         "p:cerca-de",
         "p:quantifiers-basic"
       ]
+    },
+    {
+      "id": "x:muy-mucho#a-1",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "I am very tired.",
+      "es": "Estoy muy cansado.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "muy",
+        "mucho"
+      ],
+      "answer": 0,
+      "why": "Before an adjective, muy.",
+      "requires": [
+        "g:estar-location-states",
+        "l:cansado",
+        "l:estar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-2",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "Rosa eats a lot.",
+      "es": "Rosa come mucho.",
+      "gap": [
+        10,
+        15
+      ],
+      "options": [
+        "muy",
+        "mucho"
+      ],
+      "answer": 1,
+      "why": "After a verb, mucho.",
+      "requires": [
+        "g:present-er-ir",
+        "l:comer",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-4",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "The soup is very hot.",
+      "es": "La sopa está muy caliente.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "mucha",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "Before an adjective, muy.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:caliente",
+        "l:estar",
+        "l:sopa",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-5",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "There are a lot of people.",
+      "es": "Hay mucha gente.",
+      "gap": [
+        4,
+        9
+      ],
+      "options": [
+        "mucha",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "Gente is a noun, so mucha.",
+      "requires": [
+        "c:hay",
+        "g:hay-vs-esta",
+        "l:gente",
+        "p:la-gente-singular",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-6",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "Tomás walks very slowly.",
+      "es": "Tomás camina muy despacio.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "Before an adverb, muy.",
+      "requires": [
+        "g:present-ar",
+        "l:caminar",
+        "l:despacio",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-7",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "It is very hot today. (There is a lot of heat.)",
+      "es": "Hoy hace mucho calor.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "Calor is a noun, so mucho.",
+      "requires": [
+        "g:present-er-ir",
+        "l:calor",
+        "l:hacer",
+        "l:hoy",
+        "p:hace-frio",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-8",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "I like you a lot.",
+      "es": "Me gustas mucho.",
+      "gap": [
+        10,
+        15
+      ],
+      "options": [
+        "muy",
+        "mucho"
+      ],
+      "answer": 1,
+      "why": "After a verb, mucho.",
+      "requires": [
+        "g:gustar-basic",
+        "g:present-ar",
+        "l:gustar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#a-9",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "Rosa has a lot of friends.",
+      "es": "Rosa tiene muchos amigos.",
+      "gap": [
+        11,
+        17
+      ],
+      "options": [
+        "muchos",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "Amigos is a noun, so muchos.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:amigo",
+        "l:tener",
+        "p:quantifiers-basic"
+      ]
     }
   ]
 }

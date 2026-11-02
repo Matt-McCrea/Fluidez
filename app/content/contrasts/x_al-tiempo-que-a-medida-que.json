@@ -115,35 +115,6 @@
       ]
     },
     {
-      "id": "x:al-tiempo-que-a-medida-que#a-3",
-      "node": "x:al-tiempo-que-a-medida-que",
-      "side": "g:temporal-advanced",
-      "rung": 1,
-      "en": "As the café filled up, the noise grew.",
-      "es": "A medida que el café se llenaba, el ruido crecía.",
-      "gap": [
-        0,
-        12
-      ],
-      "options": [
-        "Al tiempo que",
-        "A medida que"
-      ],
-      "answer": 1,
-      "why": "Both grow together step by step.",
-      "requires": [
-        "g:gender-articles",
-        "g:imperfect-habitual",
-        "g:se-impersonal",
-        "g:temporal-advanced",
-        "l:café",
-        "l:crecer",
-        "l:llenar",
-        "l:medida",
-        "l:ruido"
-      ]
-    },
-    {
       "id": "x:al-tiempo-que-a-medida-que#a-4",
       "node": "x:al-tiempo-que-a-medida-que",
       "side": "p:al-tiempo-que",
@@ -229,37 +200,6 @@
         "l:tomar",
         "p:al-tiempo-que",
         "p:possessives-basic"
-      ]
-    },
-    {
-      "id": "x:al-tiempo-que-a-medida-que#a-7",
-      "node": "x:al-tiempo-que-a-medida-que",
-      "side": "g:temporal-advanced",
-      "rung": 1,
-      "en": "As prices rise, fewer people come.",
-      "es": "A medida que suben los precios, viene menos gente.",
-      "gap": [
-        0,
-        12
-      ],
-      "options": [
-        "Al tiempo que",
-        "A medida que"
-      ],
-      "answer": 1,
-      "why": "One change follows the other's growth.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-er-ir",
-        "g:stem-boot",
-        "g:temporal-advanced",
-        "l:gente",
-        "l:medida",
-        "l:precio",
-        "l:subir",
-        "l:venir",
-        "p:la-gente-singular",
-        "p:subir-subida"
       ]
     },
     {

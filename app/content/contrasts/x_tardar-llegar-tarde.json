@@ -29,6 +29,31 @@
       ]
     },
     {
+      "id": "x:tardar-llegar-tarde#a-1",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:llegar-a-tiempo",
+      "rung": 1,
+      "en": "I arrived late to class.",
+      "es": "Llegué tarde a clase.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Llegué tarde",
+        "Me demoré"
+      ],
+      "answer": 0,
+      "why": "Missing the agreed time is llegar tarde.",
+      "requires": [
+        "g:preterite-spelling-stem",
+        "l:clase",
+        "l:llegar",
+        "l:tarde",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
       "id": "x:tardar-llegar-tarde#a-2",
       "node": "x:tardar-llegar-tarde",
       "side": "p:tardar-en",
@@ -82,6 +107,32 @@
       ]
     },
     {
+      "id": "x:tardar-llegar-tarde#a-4",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:llegar-a-tiempo",
+      "rung": 1,
+      "en": "Rosa arrived late to the party.",
+      "es": "Rosa llegó tarde a la fiesta.",
+      "gap": [
+        5,
+        16
+      ],
+      "options": [
+        "se demoró",
+        "llegó tarde"
+      ],
+      "answer": 1,
+      "why": "Arriving after the agreed time is llegar tarde.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:fiesta",
+        "l:llegar",
+        "l:tarde",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
       "id": "x:tardar-llegar-tarde#a-5",
       "node": "x:tardar-llegar-tarde",
       "side": "p:tardar-en",
@@ -107,6 +158,36 @@
       ]
     },
     {
+      "id": "x:tardar-llegar-tarde#a-6",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:llegar-a-tiempo",
+      "rung": 1,
+      "en": "I'm going to arrive late to the meeting because of the traffic jam.",
+      "es": "Voy a llegar tarde a la reunión por el trancón.",
+      "gap": [
+        6,
+        18
+      ],
+      "options": [
+        "demorarme",
+        "llegar tarde"
+      ],
+      "answer": 1,
+      "why": "Missing the time is llegar tarde.",
+      "requires": [
+        "c:voy-a",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:por-para-1",
+        "l:ir",
+        "l:llegar",
+        "l:reunión",
+        "l:tarde",
+        "l:trancón",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
       "id": "x:tardar-llegar-tarde#a-7",
       "node": "x:tardar-llegar-tarde",
       "side": "p:tardar-en",
@@ -129,6 +210,34 @@
         "l:mensaje",
         "p:quantifiers-basic",
         "p:tardar-en"
+      ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-8",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:llegar-a-tiempo",
+      "rung": 1,
+      "en": "Don Hernando never arrives late to work.",
+      "es": "Don Hernando nunca llega tarde al trabajo.",
+      "gap": [
+        19,
+        30
+      ],
+      "options": [
+        "se demora",
+        "llega tarde"
+      ],
+      "answer": 1,
+      "why": "Being on time or not is llegar tarde.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:llegar",
+        "l:tarde",
+        "l:trabajo",
+        "p:frequency-scale",
+        "p:llegar-a-tiempo",
+        "p:senor-don-article"
       ]
     },
     {

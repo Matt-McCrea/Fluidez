@@ -1,0 +1,223 @@
+[
+ {
+  "id": "1",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is obvious that Rosa is tired.",
+  "es": "Es obvio que Rosa está cansada.",
+  "gap": [
+   18,
+   22
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "A plain fact takes the normal verb."
+ },
+ {
+  "id": "2",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is necessary that you come early.",
+  "es": "Es necesario que vengas temprano.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "vienes",
+   "vengas"
+  ],
+  "answer": 1,
+  "why": "Necessary is a judgment, so the subjunctive."
+ },
+ {
+  "id": "3",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is true that the café opens at six.",
+  "es": "Es verdad que el café abre a las seis.",
+  "gap": [
+   22,
+   26
+  ],
+  "options": [
+   "abre",
+   "abra"
+  ],
+  "answer": 0,
+  "why": "True states a fact."
+ },
+ {
+  "id": "5",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is clear that Vale knows.",
+  "es": "Está claro que Vale sabe.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "sabe",
+   "sepa"
+  ],
+  "answer": 0,
+  "why": "Clear states a fact."
+ },
+ {
+  "id": "6",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is strange that Vale is not here.",
+  "es": "Es raro que Vale no esté aquí.",
+  "gap": [
+   20,
+   24
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 1,
+  "why": "Strange is a reaction, so the subjunctive."
+ },
+ {
+  "id": "8",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is good that you speak Spanish.",
+  "es": "Es bueno que hables español.",
+  "gap": [
+   13,
+   19
+  ],
+  "options": [
+   "hablas",
+   "hables"
+  ],
+  "answer": 1,
+  "why": "Good is a judgment, so the subjunctive."
+ },
+ {
+  "id": "9",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is evident that the park is closed.",
+  "es": "Es evidente que el parque está cerrado.",
+  "gap": [
+   26,
+   30
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 0,
+  "why": "Evident states a fact."
+ },
+ {
+  "id": "10",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is incredible that she cooks so well.",
+  "es": "Es increíble que cocine tan bien.",
+  "gap": [
+   17,
+   23
+  ],
+  "options": [
+   "cocina",
+   "cocine"
+  ],
+  "answer": 1,
+  "why": "Incredible is a reaction, so the subjunctive."
+ },
+ {
+  "id": "11",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is true that we have time.",
+  "es": "Es verdad que tenemos tiempo.",
+  "gap": [
+   14,
+   21
+  ],
+  "options": [
+   "tenemos",
+   "tengamos"
+  ],
+  "answer": 0,
+  "why": "True states a fact."
+ },
+ {
+  "id": "12",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is normal that he is nervous.",
+  "es": "Es normal que esté nervioso.",
+  "gap": [
+   14,
+   18
+  ],
+  "options": [
+   "está",
+   "esté"
+  ],
+  "answer": 1,
+  "why": "Normal is a judgment, so the subjunctive."
+ },
+ {
+  "id": "13",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is a pity that it's raining today.",
+  "es": "Es una lástima que llueva hoy.",
+  "gap": [
+   19,
+   25
+  ],
+  "options": [
+   "llueva",
+   "llueve"
+  ],
+  "answer": 0,
+  "why": "A pity is a reaction, so the subjunctive."
+ },
+ {
+  "id": "14",
+  "side": "g:that-clauses",
+  "rung": 1,
+  "en": "It is obvious that it rains a lot here.",
+  "es": "Es obvio que llueve mucho aquí.",
+  "gap": [
+   13,
+   19
+  ],
+  "options": [
+   "llueva",
+   "llueve"
+  ],
+  "answer": 1,
+  "why": "Obvious states a fact."
+ },
+ {
+  "id": "15",
+  "side": "g:subj-value",
+  "rung": 1,
+  "en": "It is important that we pay today.",
+  "es": "Es importante que paguemos hoy.",
+  "gap": [
+   18,
+   26
+  ],
+  "options": [
+   "paguemos",
+   "pagamos"
+  ],
+  "answer": 0,
+  "why": "Important is a judgment, so the subjunctive."
+ }
+]

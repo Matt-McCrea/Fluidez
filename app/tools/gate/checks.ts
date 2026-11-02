@@ -81,7 +81,11 @@ export function positionOf(st: RunState, f: Loaded, item: Record<string, unknown
         st.findings.push({ severity: 'warning', check: 'legality', file: f.rel, path: 'node', problem: `contrast ${c.node} is not scheduled in any unit`, fix: 'add it to a unit day focus' });
         return null;
       }
-      return { at, label: `when ${c.node} is taught`, allow: new Set([c.node, ...(cur.nodes.get(c.node)?.contrasts ?? [])]) };
+      const allow = new Set([c.node, ...(cur.nodes.get(c.node)?.contrasts ?? [])]);
+      // an authored item is not read in the lesson: it waits in the store until its requires are known, so it may need anything the course teaches
+      const row = c.items[Number(path.match(/^items\[(\d+)\]/)?.[1] ?? -1)];
+      if (row?.id.includes('#a-')) return { at: Infinity, label: 'the end of the course', allow };
+      return { at, label: `when ${c.node} is taught`, allow };
     }
     default: return null;
   }

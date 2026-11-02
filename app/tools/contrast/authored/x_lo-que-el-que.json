@@ -1,0 +1,206 @@
+[
+ {
+  "id": "3",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "What Vale said surprised everyone.",
+  "es": "Lo que dijo Vale sorprendió a todos.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Lo que",
+   "El que"
+  ],
+  "answer": 0,
+  "why": "What means a thing said."
+ },
+ {
+  "id": "4",
+  "side": "g:relatives-prepositions",
+  "rung": 1,
+  "en": "The one who arrives first gets the best seat.",
+  "es": "El que llega primero consigue el mejor puesto.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "El que",
+   "Lo que"
+  ],
+  "answer": 0,
+  "why": "The one is a person."
+ },
+ {
+  "id": "5",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "That's what I need.",
+  "es": "Eso es lo que necesito.",
+  "gap": [
+   7,
+   13
+  ],
+  "options": [
+   "lo que",
+   "el que"
+  ],
+  "answer": 0,
+  "why": "Eso points to an idea, so lo que."
+ },
+ {
+  "id": "7",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "Tell me what you want to eat. (to a friend)",
+  "es": "Dime lo que quieres comer.",
+  "gap": [
+   5,
+   11
+  ],
+  "options": [
+   "lo que",
+   "el que"
+  ],
+  "answer": 0,
+  "why": "What is an unnamed thing."
+ },
+ {
+  "id": "9",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "What worries me is the price.",
+  "es": "Lo que me preocupa es el precio.",
+  "gap": [
+   0,
+   6
+  ],
+  "options": [
+   "Lo que",
+   "El que"
+  ],
+  "answer": 0,
+  "why": "What is an unnamed thing."
+ },
+ {
+  "id": "10",
+  "side": "g:relatives-prepositions",
+  "rung": 1,
+  "en": "Don Hernando is the one who knows everything.",
+  "es": "Don Hernando es el que lo sabe todo.",
+  "gap": [
+   16,
+   22
+  ],
+  "options": [
+   "el que",
+   "lo que"
+  ],
+  "answer": 0,
+  "why": "The one is a man."
+ },
+ {
+  "id": "11",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "I did everything I could.",
+  "es": "Hice todo lo que pude.",
+  "gap": [
+   10,
+   16
+  ],
+  "options": [
+   "lo que",
+   "el que"
+  ],
+  "answer": 0,
+  "why": "Todo goes with lo que."
+ },
+ {
+  "id": "12",
+  "side": "g:relatives-prepositions",
+  "rung": 1,
+  "en": "These are the ones I bought yesterday.",
+  "es": "Estas son las que compré ayer.",
+  "gap": [
+   10,
+   17
+  ],
+  "options": [
+   "las que",
+   "lo que"
+  ],
+  "answer": 0,
+  "why": "The ones are feminine things."
+ },
+ {
+  "id": "13",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "That's not what I meant.",
+  "es": "Eso no es lo que quise decir.",
+  "gap": [
+   10,
+   16
+  ],
+  "options": [
+   "lo que",
+   "el que"
+  ],
+  "answer": 0,
+  "why": "What means an idea."
+ },
+ {
+  "id": "14",
+  "side": "g:relatives-prepositions",
+  "rung": 1,
+  "en": "Of the two books, the one I read is better.",
+  "es": "De los dos libros, el que leí es mejor.",
+  "gap": [
+   19,
+   25
+  ],
+  "options": [
+   "el que",
+   "lo que"
+  ],
+  "answer": 0,
+  "why": "The one stands for el libro."
+ },
+ {
+  "id": "15",
+  "side": "p:lo-que-cosa-que",
+  "rung": 1,
+  "en": "Nobody knows what happened.",
+  "es": "Nadie sabe lo que pasó.",
+  "gap": [
+   11,
+   17
+  ],
+  "options": [
+   "lo que",
+   "el que"
+  ],
+  "answer": 0,
+  "why": "What is an unnamed event."
+ },
+ {
+  "id": "16",
+  "side": "g:relatives-prepositions",
+  "rung": 1,
+  "en": "The ones who came are my cousins.",
+  "es": "Los que vinieron son mis primos.",
+  "gap": [
+   0,
+   7
+  ],
+  "options": [
+   "Los que",
+   "Lo que"
+  ],
+  "answer": 0,
+  "why": "The ones are people, plural."
+ }
+]

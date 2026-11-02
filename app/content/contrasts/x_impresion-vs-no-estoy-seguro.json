@@ -374,68 +374,6 @@
       ]
     },
     {
-      "id": "x:impresion-vs-no-estoy-seguro#a-7",
-      "node": "x:impresion-vs-no-estoy-seguro",
-      "side": "p:no-estoy-seguro-de-que",
-      "rung": 1,
-      "en": "I am sure that the bus comes.",
-      "es": "Estoy seguro de que el bus viene.",
-      "gap": [
-        27,
-        32
-      ],
-      "options": [
-        "viene",
-        "venga"
-      ],
-      "answer": 0,
-      "why": "Being sure is certainty, so the normal verb.",
-      "requires": [
-        "g:estar-location-states",
-        "g:gender-articles",
-        "g:stem-boot",
-        "g:that-clauses",
-        "l:bus",
-        "l:estar",
-        "l:seguro",
-        "l:venir",
-        "p:estar-convencido-de",
-        "p:estar-seguro-de-que"
-      ]
-    },
-    {
-      "id": "x:impresion-vs-no-estoy-seguro#a-8",
-      "node": "x:impresion-vs-no-estoy-seguro",
-      "side": "p:no-estoy-seguro-de-que",
-      "rung": 1,
-      "en": "I am not sure that the bus comes.",
-      "es": "No estoy seguro de que el bus venga.",
-      "gap": [
-        30,
-        35
-      ],
-      "options": [
-        "viene",
-        "venga"
-      ],
-      "answer": 1,
-      "why": "Not sure is doubt.",
-      "requires": [
-        "g:estar-location-states",
-        "g:gender-articles",
-        "g:subj-opinion-negated",
-        "g:subj-wanting",
-        "g:that-clauses",
-        "l:bus",
-        "l:estar",
-        "l:seguro",
-        "l:venir",
-        "p:estar-convencido-de",
-        "p:estar-seguro-de-que",
-        "p:no-estoy-seguro-de-que"
-      ]
-    },
-    {
       "id": "x:impresion-vs-no-estoy-seguro#a-9",
       "node": "x:impresion-vs-no-estoy-seguro",
       "side": "p:tengo-la-impresion-de-que",
@@ -559,6 +497,38 @@
         "p:estar-convencido-de",
         "p:estar-seguro-de-que",
         "p:no-estoy-seguro-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-14",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am sure that Hernando is right.",
+      "es": "Estoy segura de que Hernando tiene razón.",
+      "gap": [
+        29,
+        34
+      ],
+      "options": [
+        "tenga",
+        "tiene"
+      ],
+      "answer": 1,
+      "why": "Being sure is certainty.",
+      "requires": [
+        "c:tienes",
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:estar",
+        "l:razón",
+        "l:seguro",
+        "l:tener",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:tener-razon"
       ]
     }
   ]
