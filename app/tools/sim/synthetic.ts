@@ -6,7 +6,7 @@
 // (bank, chapters, scenes, writing tasks, scripts) is synthesised for them.
 // Supply is deliberately generous (`supply` multiplies it) so the simulator
 // measures demand, not shortage.
-import type { Band, BankSentence, GraphNode, LessonType, NodeId, Scene, StoryChapter, Unit, WritingTask } from '../../src/content/schema';
+import type { Band, BankSentence, ContrastFile, GraphNode, LessonType, NodeId, Scene, StoryChapter, Unit, WritingTask } from '../../src/content/schema';
 import { makeRng, type ContentSource, type ScriptRef } from '../../src/compiler';
 
 export interface SyntheticOptions {
@@ -166,6 +166,7 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
   const scenes: Scene[] = [];
   const writing: WritingTask[] = [];
   const scripts: ScriptRef[] = [];
+  const contrasts: ContrastFile[] = [];
   let chn = 0;
   // a real unit map assigns its own chapter slots; only synthesise slots when it has none
   const mapHasChapters = units.some((u) => u.days.some((d) => d.chapter));
@@ -197,9 +198,12 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
   for (const n of order) {
     const k = kind(n);
     if (k === 'grammar' || k === 'pattern') scripts.push({ node: n, readAndPick: 8, yourTurn: 6 });
-    else if (k === 'contrast') scripts.push({ node: n, readAndPick: 9, yourTurn: 7 });
+    else if (k === 'contrast') {
+      scripts.push({ node: n, readAndPick: 9, yourTurn: 7 });
+      contrasts.push(mkContrast(n, byId.get(n)?.contrasts ?? []));
+    }
   }
-  return { units, nodes, source: { sentences, chapters, scenes, writing, scripts }, injectedLexemes };
+  return { units, nodes, source: { sentences, chapters, scenes, writing, scripts, contrasts }, injectedLexemes };
 }
 
 /** BLUEPRINT weekly new-word budgets (A1 35-40 items incl. chunks → ~30 words), per 7 days. */
@@ -223,6 +227,18 @@ function injectLexemes(units: Unit[], nodes: GraphNode[]): number {
     // anything left (a unit with few word-carrying days) is dropped: the week is full
   }
   return n;
+}
+
+/** A contrast's items: a dozen decisions, every other one needing one of its sides, as a real sentence needs the grammar it uses. */
+function mkContrast(node: NodeId, sides: NodeId[]): ContrastFile {
+  return {
+    node, decides: 'local',
+    items: Array.from({ length: 12 }, (_, k) => ({
+      id: `${node}#s${k}`, node, side: sides[k % Math.max(1, sides.length)] ?? node, rung: 1, en: `sentence ${k}`, es: `frase ${k} por ti.`,
+      gap: [`frase ${k} `.length, `frase ${k} por`.length] as [number, number], options: k % 2 ? ['por', 'para'] : ['para', 'por'], answer: k % 2 ? 0 : 1, why: 'because',
+      requires: k % 2 && sides.length ? [sides[k % sides.length]] : [],
+    })),
+  };
 }
 
 function mkScene(id: string, unit: string, grammar: NodeId[]): Scene {

@@ -179,6 +179,8 @@ describe('F2: a due contrast is reviewed with its script, a different item each 
   /** A learner who has both cards of a contrast (it has no bank sentence of its own, as in the real course) and lets them fall due. */
   function dueContrast(cards: 'both' | 'receptive' = 'both') {
     const { course, content } = corpus({ seed: 2 });
+    // F2 is the review with the script: a contrast with items of its own is reviewed with one of those (F3, contrast-store.test.ts)
+    content.contrasts.clear();
     const x = [...course.nodes.values()].find((n) => n.kind === 'contrast')!.id;
     expect(content.byTarget.get(x) ?? []).toEqual([]);
     expect(content.byRequire.get(x) ?? []).toEqual([]);
@@ -232,15 +234,19 @@ describe('F2: a due contrast is reviewed with its script, a different item each 
   });
 
   test('every other rule still holds on a walk where contrasts come due', () => {
-    let reviews = 0;
+    let reviews = 0, own = 0;
     for (const seed of SEEDS.slice(0, 3)) {
       const { plans } = walk({ seed, profile: PROFILES.average, days: 150, check: (s) => { for (const c of ALL_CHECKS) c(s); } });
       for (const { plan } of plans) {
         const w = plan.blocks[0];
-        if (w.kind === 'warmup') reviews += w.items.filter((i) => i.script).length;
+        if (w.kind !== 'warmup') continue;
+        reviews += w.items.filter((i) => i.script || i.contrast).length;
+        own += w.items.filter((i) => i.contrast).length;
       }
     }
     expect(reviews).toBeGreaterThan(5);
+    // the synthetic course's contrasts have items of their own, and they are what the reviews are
+    expect(own).toBeGreaterThan(5);
   });
 });
 
