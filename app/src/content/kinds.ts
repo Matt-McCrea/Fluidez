@@ -73,3 +73,6 @@ export function unregistered(dirs: readonly string[]): string[] {
  * the chapter for a chapter.
  */
 export const lackKey = (dir: ContentDir, id: string): string => `${dir}:${id}`;
+
+/** Whether what is lacking is the course itself: with a unit gone, every unit after it is a place off and no day can be trusted. */
+export const lacksCourse = (key: string): boolean => key.startsWith('units:') || key.startsWith('graph:');

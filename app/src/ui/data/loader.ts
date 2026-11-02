@@ -144,7 +144,7 @@ export class ContentLoader {
     const out = new Set<string>();
     for (const [path, kind] of this.failed) {
       const name = baseName(path);
-      if (kind === 'story') out.add(lackKey(kind, name));
+      if (kind === 'story' || kind === 'units' || kind === 'graph') out.add(lackKey(kind, name));
       else if (kind === 'scripts') out.add(lackKey(kind, name.replace('_', ':')));
       else { const m = name.match(/\b(u\d{2})\b/); if (m) out.add(lackKey(kind, m[1])); }
     }
@@ -160,6 +160,8 @@ export class ContentLoader {
         Promise.all(unitPaths.map((p) => this.read(this.files.units, p))),
         Promise.all(graphPaths.map((p) => this.read(this.files.graph, p))),
       ]);
+      unitPaths.forEach((p, i) => { if (unitRaw[i] === undefined) this.failed.set(p, 'units'); });
+      graphPaths.forEach((p, i) => { if (graphRaw[i] === undefined) this.failed.set(p, 'graph'); });
       this.units = unitPaths.flatMap((p, i) => parseAll([unitRaw[i]], Unit, this.problems, p));
       const seen = new Set<string>();
       this.nodes = graphPaths.flatMap((p, i) => parseAll([graphRaw[i]], GraphNode, this.problems, p))

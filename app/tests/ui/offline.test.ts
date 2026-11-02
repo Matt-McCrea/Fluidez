@@ -67,6 +67,35 @@ async function placed(unit: number) {
   return kv;
 }
 
+describe('a unit file that does not arrive', () => {
+  // every unit after the gap is a place off: at index 21 the course said u23, and the learner was taught it and moved on
+  const lost = () => ({ ...CONTENT_FILES, units: { ...CONTENT_FILES.units, '/content/units/u10.json': async () => { throw new Error('net::ERR_FAILED'); } } });
+
+  it('leaves the learner in the app, on review, and the path does not move on a day that is not theirs', async () => {
+    const kv = await placed(21);
+    const w = await boot({ kv, loader: new ContentLoader(lost()), now: () => AT + DAY, fixtures: false });
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: AT + DAY });
+    expect(plan.type).toBe('review');
+    expect(plan.advancesPath).toBe(false);
+    expect(plan.converted?.reason).toBe('offline');
+    expect(plan.blocks.some((b) => b.kind === 'teach' || b.kind === 'learn')).toBe(false);
+    expect(advancePath(w.ui.path, plan, true)).toMatchObject({ unit: 21, day: 0 });
+    expect(offlineLine(plan)).toBe(OFFLINE_LINE);
+  }, 180_000);
+
+  it('holds a day that is a review day too, since that one would move the path', async () => {
+    const kv = await placed(21);
+    const path = (await kv.get(PATH_KEY)) as { unit: number };
+    const u23 = (await CONTENT_FILES.units['/content/units/u23.json']()) as { days: Array<{ type: string }> };
+    const day = u23.days.findIndex((d) => d.type === 'review');
+    await kv.set(PATH_KEY, { ...path, day });
+    const w = await boot({ kv, loader: new ContentLoader(lost()), now: () => AT + DAY, fixtures: false });
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: AT + DAY });
+    expect(plan.dayType).toBe('review');
+    expect(plan.advancesPath).toBe(false);
+  }, 180_000);
+});
+
 describe('u22 d0 with the network gone', () => {
   it('is a day of review that does not move the path, not a lesson with no script', async () => {
     const kv = await placed(21);

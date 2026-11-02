@@ -23,7 +23,7 @@
 //    when supply runs short the block/session converts and a 'shortage' is logged;
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
-import { lackKey } from '../content/kinds';
+import { lackKey, lacksCourse } from '../content/kinds';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
 import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
@@ -660,14 +660,19 @@ class Compiler {
 
   /**
    * What the day needs that the build has and this device could not get (empty when nothing is lacking, and
-   * for anything nobody wrote: a gap in the authoring is a shortage, not a download that failed). The unit's
+   * for anything nobody wrote: a gap in the authoring is a shortage, not a download that failed). The course's
+   * own files, without which no day is the right one; then the unit's
    * sentences; the scripts of what it teaches, owed grammar first; the chapter it reads, or one before it that
    * is owed; the scene and the writing of an output day.
    */
   private lackedBy(day: Unit['days'][number]): string[] {
     const lacking = this.content.lacking;
+    if (!lacking?.size || !this.unit) return [];
+    // the course itself is short: the day under the path is not the learner's, whatever its type, so the path does not move on it
+    const course = [...lacking].filter(lacksCourse);
+    if (course.length) return course;
     // a review day teaches nothing of its unit's: it needs only what the learner has already met
-    if (!lacking?.size || !this.unit || day.type === 'review') return [];
+    if (day.type === 'review') return [];
     const unit = this.unit.id;
     const need = [lackKey('bank', unit)];
     const owed = day.type === 'introduce' ? this.grammarCandidates(day).slice(0, 1) : [];
