@@ -157,26 +157,44 @@ export class Bundle {
     const w = normWord(word);
     if (!w) return undefined;
     const phrase = chapter && at ? phraseAt(chapter, at) : undefined;
-    const own = this.wordGloss(word, w, chapter);
+    const own = this.wordGloss(word, w, chapter, at);
     if (!phrase) return own;
     return own && !own.name ? { ...own, phrase } : phrase;
   }
 
   /** What the word means on its own: the chapter's note on it, a name, a little word, the word list, a verb form. */
-  private wordGloss(word: string, w: string, chapter?: StoryChapter): Gloss | undefined {
-    const mine = chapter?.gloss.find((g) => { const t = wordsOfNote(g); return t.length === 1 && t[0] === w; });
+  private wordGloss(word: string, w: string, chapter?: StoryChapter, at?: TapAt): Gloss | undefined {
+    const name = this.isName(word);
+    // a note on a common noun is not a note on the name it looks like: "rosa, rose" is not Rosa
+    const mine = chapter?.gloss.find((g) => { const t = wordsOfNote(g); return t.length === 1 && t[0] === w && !(name && g.es === g.es.toLowerCase()); });
     if (mine) return mine;
-    if (this.isName(word)) return { es: word, en: 'a name', name: true };
-    const small = this.smallWord(w, word);
+    if (name) return { es: word, en: 'a name', name: true };
+    const small = this.objectPronoun(w, at) ?? this.smallWord(w, word);
     if (small) return small;
     const lex = this.lemmas.get(w) ?? this.plural(w);
     if (lex?.en) return { es: lex.es ?? word, en: lex.en };
-    const viaVerb = this.verbGloss(word, w);
+    const viaVerb = this.verbGloss(word, w, true);
     if (viaVerb) return viaVerb;
     // a sentence-bank chunk or node whose Spanish is exactly this word
     const exact = this.exactEn(w);
     if (exact) return { es: word, en: exact };
-    return this.agreement(w, word);
+    // a verb that only fits with an accent ignored comes last: seria is serio before it is sería
+    return this.agreement(w, word) ?? this.verbGloss(word, w, false);
+  }
+
+  /**
+   * la, las and los straight before a verb form are object pronouns (No la tengo), which the
+   * article's note would get wrong. Some nouns look like verb forms and are missing from the word
+   * list (la multa), so the note gives both readings. Nothing is said without a place in the text.
+   */
+  private objectPronoun(w: string, at?: TapAt): Gloss | undefined {
+    if (!at || !Object.hasOwn(OBJECT_PRONOUNS, w)) return undefined;
+    const tokens = [...at.line.matchAll(/\p{L}+/gu)];
+    const me = tokens[at.index], next = tokens[at.index + 1];
+    if (!me || !next || at.line.slice(me.index + me[0].length, next.index).trim()) return undefined;
+    const n = normWord(next[0]);
+    if (this.lemmas.has(n) || this.plural(n) || this.agreeingBase(n)) return undefined;
+    return analyzeToken(n).some((r) => r.target && r.accentExact) ? { es: w, en: OBJECT_PRONOUNS[w] } : undefined;
   }
 
   /** The contractions and the other forms of the articles: the word list has no headword for them. */
@@ -277,17 +295,28 @@ export class Bundle {
   private exact?: Map<string, string>;
 
   /** An inflected verb (clitics included) read back to its infinitive's lexeme. */
-  private verbGloss(word: string, w: string): Gloss | undefined {
-    const readings = analyzeToken(w).filter((a) => a.target);
+  private verbGloss(word: string, w: string, accentExact: boolean): Gloss | undefined {
+    const readings = analyzeToken(w).filter((a) => a.target && (!accentExact || a.accentExact));
     readings.sort((a, b) => Number(b.accentExact) - Number(a.accentExact) || Number(!!a.clitics?.length) - Number(!!b.clitics?.length));
     for (const r of readings) {
-      const lex = this.course.nodes.get(`l:${r.inf}`) ?? this.course.nodes.get(`l:${r.inf.replace(/se$/, '')}`);
+      const lex = this.verbLexeme(r.inf);
       if (!lex?.en) continue;
-      const person = PERSON_WORDS[r.person];
-      const how = [person, r.tense === 'imperativo' ? 'command' : tenseShort(r.tense).toLowerCase()].filter(Boolean).join(', ');
-      return { es: lex.es ?? r.inf, en: lex.en, form: word, how: r.clitics?.length ? `${how}, with ${r.clitics.join(' + ')} attached` : how };
+      // era is "I" and "he or she" alike, and the story is mostly about he or she: name every person the form can be
+      const persons = new Set(readings
+        .filter((o) => o.inf === r.inf && o.tense === r.tense && (o.clitics?.length ?? 0) === (r.clitics?.length ?? 0))
+        .map((o) => PERSON_WORDS[o.person]).filter(Boolean));
+      const how = [[...persons].join(' or '), r.tense === 'imperativo' ? 'command' : tenseShort(r.tense).toLowerCase()].filter(Boolean).join(', ');
+      const clitics = r.clitics?.length ? `${how}, with ${r.clitics.join(' + ')} attached` : how;
+      // fue is ser or ir, and the sentence decides: a note that picks one is wrong a third of the time
+      const also = SHARES_FORMS.has(verbBase(r.inf)) ? readings.find((o) => verbBase(o.inf) !== verbBase(r.inf) && SHARES_FORMS.has(verbBase(o.inf))) : undefined;
+      const other = also ? this.verbLexeme(also.inf) : undefined;
+      return { es: lex.es ?? r.inf, en: lex.en, form: word, how: other?.en ? `${clitics}; or from ${other.es ?? also!.inf}: ${other.en}` : clitics };
     }
     return undefined;
+  }
+
+  private verbLexeme(inf: string): GraphNode | undefined {
+    return this.course.nodes.get(`l:${inf}`) ?? this.course.nodes.get(`l:${verbBase(inf)}`);
   }
 
   /** The bank's English for a sentence of Spanish, matched exactly after trimming. */
@@ -320,9 +349,11 @@ const PERSON_ENDING = /(dor|tor|sor|ente|efe|ario|ado|ino|ico|ecto|acho)$|^socio
 /**
  * Little words the word list has no headword for: the contractions, the other forms of the
  * articles and demonstratives, the short forms before a noun, and hay. `of` is the headword they
- * come from; the English is the headword's unless given.
+ * come from; the English is the headword's unless given. sé is here because the engine reads it
+ * as the command of ser first, and the story only ever means "I know".
  */
 export const SMALL_WORDS: Readonly<Record<string, { of?: string; en?: string; how?: string }>> = {
+  'sé': { of: 'saber', how: 'I, present' },
   la: { of: 'el', en: 'the', how: 'feminine' },
   los: { of: 'el', en: 'the', how: 'plural' },
   las: { of: 'el', en: 'the', how: 'feminine plural' },
@@ -345,6 +376,18 @@ export const SMALL_WORDS: Readonly<Record<string, { of?: string; en?: string; ho
   quizás: { of: 'quizá' },
   uy: { en: 'oh, oops, wow' },
 };
+
+/** The article's forms as object pronouns: what they mean straight before a verb. */
+const OBJECT_PRONOUNS: Readonly<Record<string, string>> = {
+  la: 'her, it (before a verb); the (before a noun)',
+  las: 'them, you (before a verb); the (before a noun)',
+  los: 'them, you (before a verb); the (before a noun)',
+};
+
+/** Common verbs that share forms the story uses both ways (fue, ve, di, ven, siento). A rarer look-alike (vendar, crear, parir) is left out of the note. */
+const SHARES_FORMS: ReadonlySet<string> = new Set(['ser', 'ir', 'ver', 'venir', 'dar', 'decir', 'sentar', 'sentir']);
+/** A verb without its reflexive ending: irse is ir, and they share every form on purpose. */
+const verbBase = (inf: string): string => inf.replace(/se$/, '');
 
 /** The words of a line or a note, lower case and in order. */
 const wordsOf = (s: string): string[] => (s.match(/\p{L}+/gu) ?? []).map(normWord);

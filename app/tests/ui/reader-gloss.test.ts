@@ -153,6 +153,102 @@ describe('the loose lookup does not swap endings between unrelated words', () =>
   });
 });
 
+describe('a note says only what the word can be in this sentence', () => {
+  it('a form shared by "I" and "he or she" names both: the horario de Rosa is not "I"', () => {
+    const era = gloss('ch004', 'El horario de Rosa era', 'era');
+    expect(era?.how).toBe('I or he or she, imperfect');
+    expect(b.gloss('tenía')?.how).toBe('I or he or she, imperfect');
+    expect(b.gloss('habría')?.how).toBe('I or he or she, conditional');
+    expect(b.gloss('sea')?.how).toBe('I or he or she, present subjunctive');
+  });
+  it('a form that has one person still names one', () => {
+    expect(b.gloss('tengo')?.how).toBe('I, present');
+    expect(b.gloss('tiene')?.how).toBe('he or she, present');
+    expect(b.gloss('llegó')?.how).toBe('he or she, preterite');
+  });
+  it('no "I" alone on a form the engine also reads as he or she, in any chapter', () => {
+    const bad: string[] = [];
+    for (const ch of b.chapters.values()) {
+      for (const t of taps(ch)) {
+        const g = b.gloss(t.word, ch, t.at);
+        if (!g?.how?.startsWith('I,')) continue;
+        const exact = analyzeToken(normWord(t.word)).filter((r) => r.target && r.accentExact);
+        if (exact.some((r) => r.person === 'él/ella')) bad.push(`${ch.id} ${t.word}: ${g.how}`);
+      }
+    }
+    expect(bad.slice(0, 20)).toEqual([]);
+  }, 180_000);
+  it('sé is "I know": the story never uses it as the command of ser', () => {
+    for (const word of ['sé', 'Sé']) {
+      const g = b.gloss(word);
+      expect(g?.es, word).toBe('saber');
+      expect(g?.en, word).toMatch(/know/);
+      expect(g?.how, word).toBe('I, present');
+    }
+    expect(gloss('ch004', 'No sé, don Hernando', 'sé')?.es).toBe('saber');
+  });
+  it('fue says it can be ser or ir: "fue a Medellín" is not "to be"', () => {
+    for (const word of ['fue', 'fui', 'fueron', 'fuimos', 'fuiste']) {
+      expect(b.gloss(word)?.how, word).toMatch(/or from ir: to go/);
+    }
+    expect(b.gloss('ve')?.how).toMatch(/or from ver: to see/);
+    expect(b.gloss('siéntese')?.how).toMatch(/or from sentar/);
+  });
+  it('a rare look-alike does not crowd the note: vendo is vender, and nothing about bandages', () => {
+    for (const word of ['vendo', 'vende', 'creo', 'pare']) expect(b.gloss(word)?.how, word).not.toMatch(/or from/);
+  });
+  it('a verb and its reflexive are one verb to the note: voy is not "or from irse"', () => {
+    for (const word of ['voy', 'va', 'iba', 'sentó', 'sentía']) expect(b.gloss(word)?.how, word).not.toMatch(/or from/);
+  });
+  it('an adjective is not a verb with its accent ignored: seria, pública', () => {
+    const seria = gloss('ch004', 'muy seria', 'seria');
+    expect(seria?.es).toBe('serio');
+    expect(seria?.en).toMatch(/serious/);
+    expect(seria?.how).toBeUndefined();
+    expect(b.gloss('pública')?.es).toBe('público');
+    expect(b.gloss('pública')?.en).toMatch(/public/);
+  });
+  it('a verb with its accent ignored is still better than no note', () => {
+    expect(b.gloss('pagare')?.es).toBe('pagar');
+  });
+  it('a name is not a note on a common noun: Rosa in the chapter that glosses a rose', () => {
+    const name = gloss('ch185', 'la casa de Rosa', 'Rosa');
+    expect(name?.en).not.toMatch(/rose/);
+    expect(name?.name || name?.phrase).toBeTruthy();
+    expect(gloss('ch185', 'una rosa roja', 'rosa')?.en ?? '').not.toBe('a name');
+    expect(b.gloss('rosa', b.chapters.get('ch185'))?.en).toBe('rose');
+  });
+  it('a name in a chapter that glosses the name itself keeps that note', () => {
+    expect(gloss('ch166', 'Soy Lucía', 'Lucía')?.en).toMatch(/Hernando's daughter/);
+  });
+});
+
+describe('la, las and los before a verb are object pronouns', () => {
+  const ch = () => b.chapters.get('ch001')!;
+  const at = (line: string, word: string) => ({ line, index: [...line.matchAll(/\p{L}+/gu)].findIndex((m) => m[0] === word) });
+  const en = (line: string, word: string) => b.gloss(word, ch(), at(line, word))?.en;
+  it('"No la tengo" is not "the"', () => {
+    for (const [line, word, re] of [['No la tengo.', 'la', /her, it/], ['Tomás la leyó.', 'la', /her, it/], ['Yo las conté.', 'las', /them/], ['Vale los miró.', 'los', /them/]] as const) {
+      expect(en(line, word), line).toMatch(re);
+    }
+  });
+  it('before a noun or an adjective it is the article', () => {
+    for (const [line, word] of [['Tomás abre la puerta.', 'la'], ['Tomás abre la primera puerta.', 'la'], ['Son las cuentas.', 'las'], ['Son las siete.', 'las'], ['Vio los libros.', 'los']] as const) {
+      expect(en(line, word), line).toBe('the');
+    }
+  });
+  it('a word that only looks like a verb keeps the article in the note', () => {
+    expect(en('Pagó la multa.', 'la')).toMatch(/\bthe\b/);
+  });
+  it('it is the article when the verb is not the next thing in the line', () => {
+    expect(en('A las 8:20 llega Vale.', 'las')).toBe('the');
+    expect(en('Ella busca la. Tengo', 'la')).toBe('the');
+  });
+  it('with no place in the text it says the article, the commonest reading', () => {
+    expect(b.gloss('la', ch())?.en).toBe('the');
+  });
+});
+
 describe('the small words have notes', () => {
   for (const [word, en] of [['del', /of the/], ['al', /to the/], ['hay', /there is/], ['Hay', /there is/], ['primer', /first/], ['ningún', /no|none/], ['veces', /time/]] as const) {
     it(word, () => { expect(b.gloss(word)?.en).toMatch(en); });
