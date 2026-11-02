@@ -11,7 +11,8 @@
     "gate": "tsx tools/gate.ts",
     "shipped": "tsx tools/shipped.ts",
     "simulate": "vite-node tools/simulate.ts --",
-    "golden": "vite-node tools/golden.ts --"
+    "golden": "vite-node tools/golden.ts --",
+    "reconcile": "vite-node tools/reconcile.ts --"
   },
   "dependencies": {
     "idb-keyval": "^6.3.0",
