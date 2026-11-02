@@ -72,6 +72,160 @@
         "l:clima",
         "l:depender"
       ]
+    },
+    {
+      "id": "x:segun-depende#a-1",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "According to Rosa, the café opens at seven.",
+      "es": "Según Rosa, el café abre a las siete.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Según",
+        "Depende"
+      ],
+      "answer": 0,
+      "why": "Depende needs de and a thing, not a person as a source. Según names the source.",
+      "requires": [
+        "c:segun",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:café",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:segun-depende#a-2",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It depends on the boss.",
+      "es": "Depende del jefe.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Según",
+        "Depende"
+      ],
+      "answer": 1,
+      "why": "Del is de plus el, which only depender takes.",
+      "requires": [
+        "c:depende",
+        "g:gender-articles",
+        "l:depender",
+        "l:jefe"
+      ]
+    },
+    {
+      "id": "x:segun-depende#a-3",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "According to the map, the park is close.",
+      "es": "Según el mapa, el parque queda cerca.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Según",
+        "Depende"
+      ],
+      "answer": 0,
+      "why": "Según introduces the source with no de.",
+      "requires": [
+        "c:segun",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:cerca",
+        "l:mapa",
+        "l:parque",
+        "l:quedar",
+        "p:cerca-de",
+        "p:quedar-cerca",
+        "p:un-estudio-muestra-que"
+      ]
+    },
+    {
+      "id": "x:segun-depende#a-5",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "Do you want coffee? It depends.",
+      "es": "¿Quieres café? Depende.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 0,
+      "why": "Depende can stand alone as an answer. Según cannot.",
+      "requires": [
+        "c:depende",
+        "g:stem-boot",
+        "l:café",
+        "l:depender",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:segun-depende#a-6",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "According to Vale, Tomás is moving.",
+      "es": "Según Vale, Tomás se muda.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 1,
+      "why": "Según names who said it.",
+      "requires": [
+        "c:segun",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:mudarse"
+      ]
+    },
+    {
+      "id": "x:segun-depende#a-7",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It depends on whether Rosa comes.",
+      "es": "Depende de si viene Rosa.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 0,
+      "why": "De si is the frame of depende.",
+      "requires": [
+        "c:depende",
+        "g:si-present",
+        "g:stem-boot",
+        "l:depender",
+        "l:venir"
+      ]
     }
   ]
 }

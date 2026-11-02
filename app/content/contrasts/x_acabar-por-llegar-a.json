@@ -29,6 +29,269 @@
         "p:llegar-a-inf",
         "p:me-te-nos-objects"
       ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-1",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "After a long argument, we ended up ordering pizza.",
+      "es": "Después de una larga discusión, acabamos por pedir pizza.",
+      "gap": [
+        32,
+        44
+      ],
+      "options": [
+        "llegamos a",
+        "acabamos por"
+      ],
+      "answer": 1,
+      "why": "Ending up after a process is acabar por.",
+      "requires": [
+        "c:claro-listo",
+        "g:adjective-agreement",
+        "g:por-para-1",
+        "g:present-ar",
+        "l:acabar",
+        "l:después",
+        "l:discusión",
+        "l:largo",
+        "l:pedir",
+        "l:pizza",
+        "p:acabar-por-inf",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-2",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "I didn't get to see the movie.",
+      "es": "No llegué a ver la película.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "llegué a",
+        "acabé por"
+      ],
+      "answer": 0,
+      "why": "Not getting to do something is no llegar a.",
+      "requires": [
+        "c:a-ver",
+        "g:gender-articles",
+        "g:preterite-spelling-stem",
+        "l:llegar",
+        "l:película",
+        "l:ver",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-3",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He was so angry that he even hit the wall.",
+      "es": "Estaba tan bravo que llegó a pegarle a la pared.",
+      "gap": [
+        21,
+        28
+      ],
+      "options": [
+        "acabó por",
+        "llegó a"
+      ],
+      "answer": 1,
+      "why": "Even going so far as to is llegar a.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:object-pronoun-position",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:bravo",
+        "l:estar",
+        "l:llegar",
+        "l:pared",
+        "l:pegar",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-4",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "Rosa ended up selling the old oven.",
+      "es": "Rosa acabó por vender el horno viejo.",
+      "gap": [
+        5,
+        14
+      ],
+      "options": [
+        "acabó por",
+        "llegó a"
+      ],
+      "answer": 0,
+      "why": "The result at the end of a process is acabar por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:horno",
+        "l:vender",
+        "l:viejo",
+        "p:acabar-por-inf",
+        "p:viejo-antiguo-mayor"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-5",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "We didn't manage to talk.",
+      "es": "No llegamos a hablar.",
+      "gap": [
+        3,
+        13
+      ],
+      "options": [
+        "acabamos por",
+        "llegamos a"
+      ],
+      "answer": 1,
+      "why": "Not managing to do it is no llegar a.",
+      "requires": [
+        "g:present-ar",
+        "l:hablar",
+        "l:llegar",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-6",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "In the end Tomás got tired and ended up going home.",
+      "es": "Al final Tomás se cansó y acabó por irse a su casa.",
+      "gap": [
+        26,
+        35
+      ],
+      "options": [
+        "acabó por",
+        "llegó a"
+      ],
+      "answer": 0,
+      "why": "Al final points to acabar por.",
+      "requires": [
+        "c:al-final",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:acabar",
+        "l:cansarse",
+        "l:casa",
+        "l:final",
+        "l:irse",
+        "p:acabar-por-inf",
+        "p:ir-a-venir-de-place",
+        "p:ir-venir",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-7",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 2,
+      "en": "Vale even went so far as to cry at work.",
+      "es": "Vale llegó a llorar en el trabajo.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "acabó por",
+        "llegó a"
+      ],
+      "answer": 1,
+      "why": "Even going that far is llegar a.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:llegar",
+        "l:llorar",
+        "l:trabajo",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-8",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "After three tries, I ended up learning the recipe.",
+      "es": "Después de tres intentos, acabé por aprender la receta.",
+      "gap": [
+        26,
+        35
+      ],
+      "options": [
+        "acabé por",
+        "llegué a"
+      ],
+      "answer": 0,
+      "why": "The outcome after tries is acabar por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:aprender",
+        "l:después",
+        "l:intento",
+        "l:receta",
+        "p:acabar-por-inf",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#a-9",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 2,
+      "en": "She never came to understand why.",
+      "es": "Nunca llegó a entender por qué.",
+      "gap": [
+        6,
+        13
+      ],
+      "options": [
+        "acabó por",
+        "llegó a"
+      ],
+      "answer": 1,
+      "why": "Never getting to the point of understanding is nunca llegar a.",
+      "requires": [
+        "g:indirect-questions",
+        "g:preterite-ar",
+        "l:entender",
+        "l:llegar",
+        "l:qué",
+        "p:frequency-scale",
+        "p:llegar-a-inf"
+      ]
     }
   ]
 }

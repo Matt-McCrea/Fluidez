@@ -57,6 +57,238 @@
         "l:tiempo",
         "p:al-tiempo-que"
       ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-1",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "g:temporal-advanced",
+      "rung": 1,
+      "en": "As the days go by, Tomás gains confidence.",
+      "es": "A medida que pasan los días, Tomás gana confianza.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Al tiempo que",
+        "A medida que"
+      ],
+      "answer": 1,
+      "why": "Things changing little by little take a medida que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:temporal-advanced",
+        "l:confianza",
+        "l:día",
+        "l:ganar",
+        "l:medida",
+        "l:pasar"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-2",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "p:al-tiempo-que",
+      "rung": 1,
+      "en": "Rosa cooks while she talks on the phone.",
+      "es": "Rosa cocina al tiempo que habla por teléfono.",
+      "gap": [
+        12,
+        25
+      ],
+      "options": [
+        "al tiempo que",
+        "a medida que"
+      ],
+      "answer": 0,
+      "why": "Two actions at the same moment are al tiempo que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "l:cocinar",
+        "l:hablar",
+        "l:teléfono",
+        "l:tiempo",
+        "p:al-tiempo-que"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-3",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "g:temporal-advanced",
+      "rung": 1,
+      "en": "As the café filled up, the noise grew.",
+      "es": "A medida que el café se llenaba, el ruido crecía.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Al tiempo que",
+        "A medida que"
+      ],
+      "answer": 1,
+      "why": "Both grow together step by step.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:se-impersonal",
+        "g:temporal-advanced",
+        "l:café",
+        "l:crecer",
+        "l:llenar",
+        "l:medida",
+        "l:ruido"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-4",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "p:al-tiempo-que",
+      "rung": 1,
+      "en": "Vale smiled at the same time as she shook his hand.",
+      "es": "Vale sonrió al tiempo que le daba la mano.",
+      "gap": [
+        12,
+        25
+      ],
+      "options": [
+        "al tiempo que",
+        "a medida que"
+      ],
+      "answer": 0,
+      "why": "Just two things at once, no gradual change.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:indirect-objects",
+        "g:pret-vs-imperfect",
+        "g:preterite-irregular-strong",
+        "g:relative-que",
+        "l:dar",
+        "l:mano",
+        "l:sonreír",
+        "l:tiempo",
+        "p:al-tiempo-que"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-5",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "g:temporal-advanced",
+      "rung": 1,
+      "en": "As we learn more words, we understand more.",
+      "es": "A medida que aprendemos más palabras, entendemos más.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Al tiempo que",
+        "A medida que"
+      ],
+      "answer": 1,
+      "why": "More and more goes with a medida que.",
+      "requires": [
+        "g:present-er-ir",
+        "g:temporal-advanced",
+        "l:aprender",
+        "l:entender",
+        "l:medida",
+        "l:palabra"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-6",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "p:al-tiempo-que",
+      "rung": 1,
+      "en": "Hernando drinks his coffee while he reads the paper.",
+      "es": "Hernando toma su tinto al tiempo que lee el periódico.",
+      "gap": [
+        23,
+        36
+      ],
+      "options": [
+        "al tiempo que",
+        "a medida que"
+      ],
+      "answer": 0,
+      "why": "Two simultaneous actions.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:leer",
+        "l:periódico",
+        "l:tiempo",
+        "l:tinto",
+        "l:tomar",
+        "p:al-tiempo-que",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-7",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "g:temporal-advanced",
+      "rung": 1,
+      "en": "As prices rise, fewer people come.",
+      "es": "A medida que suben los precios, viene menos gente.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Al tiempo que",
+        "A medida que"
+      ],
+      "answer": 1,
+      "why": "One change follows the other's growth.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:stem-boot",
+        "g:temporal-advanced",
+        "l:gente",
+        "l:medida",
+        "l:precio",
+        "l:subir",
+        "l:venir",
+        "p:la-gente-singular",
+        "p:subir-subida"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#a-8",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "p:al-tiempo-que",
+      "rung": 1,
+      "en": "Tomás cleaned while listening to music.",
+      "es": "Tomás limpiaba al tiempo que escuchaba música.",
+      "gap": [
+        15,
+        28
+      ],
+      "options": [
+        "al tiempo que",
+        "a medida que"
+      ],
+      "answer": 0,
+      "why": "Doing two things at the same time.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:relative-que",
+        "l:escuchar",
+        "l:limpiar",
+        "l:música",
+        "l:tiempo",
+        "p:al-tiempo-que"
+      ]
     }
   ]
 }

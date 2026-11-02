@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "side": "p:me-da-pena-que",
+    "rung": 1,
+    "en": "It makes me sad that the café is closing down.",
+    "es": "Me da pena que el café cierre.",
+    "gap": [
+      6,
+      10
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 0,
+    "why": "Sadness over a loss is pena."
+  },
+  {
+    "id": "2",
+    "side": "p:me-da-rabia-que",
+    "rung": 1,
+    "en": "It makes me angry that they lie to Rosa.",
+    "es": "Me da rabia que le mientan a Rosa.",
+    "gap": [
+      6,
+      11
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 1,
+    "why": "Anger at something unfair is rabia."
+  },
+  {
+    "id": "3",
+    "side": "p:me-da-rabia-que",
+    "rung": 1,
+    "en": "It makes me angry that nobody says thank you.",
+    "es": "Me da rabia que nadie dé las gracias.",
+    "gap": [
+      6,
+      11
+    ],
+    "options": [
+      "rabia",
+      "pena"
+    ],
+    "answer": 0,
+    "why": "Anger at disrespect is rabia."
+  },
+  {
+    "id": "4",
+    "side": "p:me-da-pena-que",
+    "rung": 1,
+    "en": "It makes me sad that Don Hernando is alone.",
+    "es": "Me da pena que Don Hernando esté solo.",
+    "gap": [
+      6,
+      10
+    ],
+    "options": [
+      "rabia",
+      "pena"
+    ],
+    "answer": 1,
+    "why": "Sad for someone is pena."
+  },
+  {
+    "id": "5",
+    "side": "p:me-da-pena-que",
+    "rung": 1,
+    "en": "I'm sad that you can't come. (to a friend)",
+    "es": "Me da pena que no puedas venir.",
+    "gap": [
+      6,
+      10
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 0,
+    "why": "A wistful disappointment is pena."
+  },
+  {
+    "id": "6",
+    "side": "p:me-da-rabia-que",
+    "rung": 1,
+    "en": "It makes me angry that they raise the rent every year.",
+    "es": "Me da rabia que suban el arriendo cada año.",
+    "gap": [
+      6,
+      11
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 1,
+    "why": "Anger at something unfair is rabia."
+  },
+  {
+    "id": "7",
+    "side": "p:me-da-pena-que",
+    "rung": 1,
+    "en": "It makes me sad that the kids are leaving the neighborhood.",
+    "es": "Me da pena que los niños se vayan del barrio.",
+    "gap": [
+      6,
+      10
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 0,
+    "why": "Sadness at a loss is pena."
+  },
+  {
+    "id": "8",
+    "side": "p:me-da-rabia-que",
+    "rung": 1,
+    "en": "It makes me angry that they park on the sidewalk.",
+    "es": "Me da rabia que parqueen en el andén.",
+    "gap": [
+      6,
+      11
+    ],
+    "options": [
+      "pena",
+      "rabia"
+    ],
+    "answer": 1,
+    "why": "Anger at rude behavior is rabia."
+  }
+]

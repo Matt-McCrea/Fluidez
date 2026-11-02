@@ -182,6 +182,384 @@
         "p:estar-convencido-de",
         "p:estar-seguro-de-que"
       ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-1",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:tengo-la-impresion-de-que",
+      "rung": 1,
+      "en": "I have the impression that Rosa is tired.",
+      "es": "Tengo la impresión de que Rosa está cansada.",
+      "gap": [
+        31,
+        35
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 0,
+      "why": "An impression is a belief, so the normal verb.",
+      "requires": [
+        "c:tengo",
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:cansado",
+        "l:estar",
+        "l:impresión",
+        "l:tener",
+        "p:tener-la-sensacion",
+        "p:tengo-la-impresion-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-2",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am not sure that Rosa is tired.",
+      "es": "No estoy seguro de que Rosa esté cansada.",
+      "gap": [
+        28,
+        32
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 1,
+      "why": "Not sure is doubt, so the subjunctive.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:subj-opinion-negated",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cansado",
+        "l:estar",
+        "l:seguro",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:no-estoy-seguro-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-3",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:tengo-la-impresion-de-que",
+      "rung": 1,
+      "en": "I have the impression that it rains a lot here.",
+      "es": "Tengo la impresión de que llueve mucho aquí.",
+      "gap": [
+        26,
+        32
+      ],
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "answer": 0,
+      "why": "An impression takes the normal verb.",
+      "requires": [
+        "c:tengo",
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:aquí",
+        "l:impresión",
+        "l:llover",
+        "l:tener",
+        "p:aqui-ahi-alla",
+        "p:quantifiers-basic",
+        "p:tener-la-sensacion",
+        "p:tengo-la-impresion-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-4",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am not sure that it rains a lot here.",
+      "es": "No estoy seguro de que llueva mucho aquí.",
+      "gap": [
+        23,
+        29
+      ],
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "answer": 1,
+      "why": "Not sure is doubt.",
+      "requires": [
+        "g:estar-location-states",
+        "g:subj-opinion-negated",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:aquí",
+        "l:estar",
+        "l:llover",
+        "l:seguro",
+        "p:aqui-ahi-alla",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:no-estoy-seguro-de-que",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-5",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:tengo-la-impresion-de-que",
+      "rung": 1,
+      "en": "I have the impression that Tomás knows.",
+      "es": "Tengo la impresión de que Tomás sabe.",
+      "gap": [
+        32,
+        36
+      ],
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "answer": 0,
+      "why": "An impression takes the normal verb.",
+      "requires": [
+        "c:tengo",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:impresión",
+        "l:saber",
+        "l:tener",
+        "p:saber-conocer",
+        "p:tener-la-sensacion",
+        "p:tengo-la-impresion-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-6",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "We are not sure that Tomás knows.",
+      "es": "No estamos seguros de que Tomás sepa.",
+      "gap": [
+        32,
+        36
+      ],
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "answer": 1,
+      "why": "Not sure is doubt.",
+      "requires": [
+        "g:estar-location-states",
+        "g:subj-irregulars",
+        "g:subj-value",
+        "g:that-clauses",
+        "l:estar",
+        "l:saber",
+        "l:seguros",
+        "p:estar-convencido-de",
+        "p:no-estoy-seguro-de-que",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-7",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am sure that the bus comes.",
+      "es": "Estoy seguro de que el bus viene.",
+      "gap": [
+        27,
+        32
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "Being sure is certainty, so the normal verb.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:bus",
+        "l:estar",
+        "l:seguro",
+        "l:venir",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-8",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am not sure that the bus comes.",
+      "es": "No estoy seguro de que el bus venga.",
+      "gap": [
+        30,
+        35
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 1,
+      "why": "Not sure is doubt.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:subj-opinion-negated",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:bus",
+        "l:estar",
+        "l:seguro",
+        "l:venir",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:no-estoy-seguro-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-9",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:tengo-la-impresion-de-que",
+      "rung": 1,
+      "en": "I have the impression that we have time.",
+      "es": "Tengo la impresión de que tenemos tiempo.",
+      "gap": [
+        26,
+        33
+      ],
+      "options": [
+        "tenemos",
+        "tengamos"
+      ],
+      "answer": 0,
+      "why": "An impression takes the normal verb.",
+      "requires": [
+        "c:tengo",
+        "c:tienes",
+        "g:gender-articles",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:impresión",
+        "l:tener",
+        "l:tiempo",
+        "p:tener-la-sensacion",
+        "p:tengo-la-impresion-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-10",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am not sure that we have time.",
+      "es": "No estoy segura de que tengamos tiempo.",
+      "gap": [
+        23,
+        31
+      ],
+      "options": [
+        "tenemos",
+        "tengamos"
+      ],
+      "answer": 1,
+      "why": "Not sure is doubt.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:estar",
+        "l:seguro",
+        "l:tener",
+        "l:tiempo",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:no-estoy-seguro-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-12",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:tengo-la-impresion-de-que",
+      "rung": 1,
+      "en": "I have the impression that the park is closed.",
+      "es": "Tengo la impresión de que el parque está cerrado.",
+      "gap": [
+        36,
+        40
+      ],
+      "options": [
+        "esté",
+        "está"
+      ],
+      "answer": 1,
+      "why": "An impression takes the normal verb.",
+      "requires": [
+        "c:abierto-cerrado",
+        "c:tengo",
+        "g:gender-articles",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:cerrar",
+        "l:estar",
+        "l:impresión",
+        "l:parque",
+        "l:tener",
+        "p:tener-la-sensacion",
+        "p:tengo-la-impresion-de-que"
+      ]
+    },
+    {
+      "id": "x:impresion-vs-no-estoy-seguro#a-13",
+      "node": "x:impresion-vs-no-estoy-seguro",
+      "side": "p:no-estoy-seguro-de-que",
+      "rung": 1,
+      "en": "I am not sure that the park is closed.",
+      "es": "No estoy seguro de que el parque esté cerrado.",
+      "gap": [
+        33,
+        37
+      ],
+      "options": [
+        "esté",
+        "está"
+      ],
+      "answer": 0,
+      "why": "Not sure is doubt.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:subj-opinion-negated",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:estar",
+        "l:parque",
+        "l:seguro",
+        "p:estar-convencido-de",
+        "p:estar-seguro-de-que",
+        "p:no-estoy-seguro-de-que"
+      ]
     }
   ]
 }

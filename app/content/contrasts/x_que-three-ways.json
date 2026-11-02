@@ -295,6 +295,137 @@
         "l:le",
         "l:qué"
       ]
+    },
+    {
+      "id": "x:que-three-ways#a-1",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "What do you want to drink?",
+      "es": "¿Qué quieres tomar?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Qué",
+        "Que"
+      ],
+      "answer": 0,
+      "why": "A question word needs the accent.",
+      "requires": [
+        "g:questions",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:qué",
+        "l:tomar"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#a-4",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "What did Tomás say?",
+      "es": "¿Qué dijo Tomás?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Que",
+        "Qué"
+      ],
+      "answer": 1,
+      "why": "A question word needs the accent.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:questions",
+        "l:decir",
+        "l:qué",
+        "p:que-no-dice-que-si"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#a-7",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "What are you doing?",
+      "es": "¿Qué haces?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Qué",
+        "Que"
+      ],
+      "answer": 0,
+      "why": "A question word needs the accent.",
+      "requires": [
+        "g:present-er-ir",
+        "g:questions",
+        "l:hacer",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#a-8",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "Rosa knows that Tomás is here.",
+      "es": "Rosa sabe que Tomás está aquí.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "That joining two ideas has no accent.",
+      "requires": [
+        "g:estar-location-states",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:aquí",
+        "l:estar",
+        "l:saber",
+        "p:aqui-ahi-alla",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#a-9",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The house that we saw is big.",
+      "es": "La casa que vimos es grande.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "That points back to house, no accent.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:casa",
+        "l:grande",
+        "l:ser",
+        "l:ver"
+      ]
     }
   ]
 }

@@ -119,6 +119,121 @@
         "p:gracias-a-por-culpa-de",
         "p:por-culpa-de"
       ]
+    },
+    {
+      "id": "x:gracias-a-debido-a#a-1",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "Thanks to Vale, the café is full.",
+      "es": "Gracias a Vale, el café está lleno.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Por culpa de",
+        "Gracias a"
+      ],
+      "answer": 1,
+      "why": "Something good deserves thanks.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar",
+        "l:lleno",
+        "p:gracias-a-por-culpa-de",
+        "p:lleno-libre",
+        "p:por-culpa-de"
+      ]
+    },
+    {
+      "id": "x:gracias-a-debido-a#a-2",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "Because of the traffic, I arrived late.",
+      "es": "Por culpa del tráfico, llegué tarde.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Por culpa del",
+        "Gracias al"
+      ],
+      "answer": 0,
+      "why": "Something bad gets the blame.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-spelling-stem",
+        "l:culpa",
+        "l:llegar",
+        "l:tarde",
+        "l:tráfico",
+        "p:gracias-a-por-culpa-de",
+        "p:llegar-a-tiempo",
+        "p:por-culpa-de"
+      ]
+    },
+    {
+      "id": "x:gracias-a-debido-a#a-4",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "Thanks to the new recipe, we sold everything.",
+      "es": "Gracias a la receta nueva, vendimos todo.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Gracias a",
+        "Por culpa de"
+      ],
+      "answer": 0,
+      "why": "A good result is thanks to something.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:nuevo",
+        "l:receta",
+        "l:vender",
+        "p:gracias-a-por-culpa-de",
+        "p:por-culpa-de"
+      ]
+    },
+    {
+      "id": "x:gracias-a-debido-a#a-6",
+      "node": "x:gracias-a-debido-a",
+      "side": "p:gracias-a-por-culpa-de",
+      "rung": 1,
+      "en": "I failed the exam because of my nerves.",
+      "es": "Perdí el examen por culpa de los nervios.",
+      "gap": [
+        16,
+        28
+      ],
+      "options": [
+        "por culpa de",
+        "gracias a"
+      ],
+      "answer": 0,
+      "why": "Failing is bad, so blame.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-er-ir",
+        "l:culpa",
+        "l:examen",
+        "l:nervio",
+        "l:perder",
+        "p:gracias-a-por-culpa-de",
+        "p:por-culpa-de"
+      ]
     }
   ]
 }

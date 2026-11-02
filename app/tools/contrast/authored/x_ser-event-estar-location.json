@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1",
+    "side": "p:event-ser-en",
+    "rung": 1,
+    "en": "The meeting is in my office.",
+    "es": "La reunión es en mi oficina.",
+    "gap": [
+      11,
+      13
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 0,
+    "why": "An event takes place somewhere, so ser."
+  },
+  {
+    "id": "4",
+    "side": "g:estar-location-states",
+    "rung": 1,
+    "en": "Tomás is at the concert.",
+    "es": "Tomás está en el concierto.",
+    "gap": [
+      6,
+      10
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 1,
+    "why": "A person or thing is somewhere, so estar."
+  },
+  {
+    "id": "5",
+    "side": "p:event-ser-en",
+    "rung": 1,
+    "en": "Where is the party?",
+    "es": "¿Dónde es la fiesta?",
+    "gap": [
+      7,
+      9
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 0,
+    "why": "An event takes place somewhere, so ser."
+  },
+  {
+    "id": "9",
+    "side": "g:estar-location-states",
+    "rung": 1,
+    "en": "The book is on the table.",
+    "es": "El libro está en la mesa.",
+    "gap": [
+      9,
+      13
+    ],
+    "options": [
+      "está",
+      "es"
+    ],
+    "answer": 0,
+    "why": "A person or thing is somewhere, so estar."
+  }
+]

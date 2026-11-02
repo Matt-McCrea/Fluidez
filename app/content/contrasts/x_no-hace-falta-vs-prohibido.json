@@ -117,6 +117,192 @@
         "p:esta-prohibido",
         "p:esta-prohibido-que"
       ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-1",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to wait for me. (to a friend)",
+      "es": "No hace falta que me esperes.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 0,
+      "why": "It is not needed, nothing is banned: no hace falta.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:esperar",
+        "l:falta",
+        "l:hacer",
+        "p:me-te-nos-objects",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-2",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:esta-prohibido-que",
+      "rung": 1,
+      "en": "It is forbidden for you to park here. (to a friend)",
+      "es": "Está prohibido que parques aquí.",
+      "gap": [
+        0,
+        14
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 1,
+      "why": "Parking is not allowed, so está prohibido.",
+      "requires": [
+        "g:estar-location-states",
+        "g:that-clauses",
+        "l:aquí",
+        "l:estar",
+        "l:parque",
+        "l:prohibir",
+        "p:aqui-ahi-alla",
+        "p:es-obligatorio",
+        "p:esta-prohibido",
+        "p:esta-prohibido-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-3",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:esta-prohibido-que",
+      "rung": 1,
+      "en": "It is forbidden for customers to smoke inside.",
+      "es": "Está prohibido que los clientes fumen adentro.",
+      "gap": [
+        0,
+        14
+      ],
+      "options": [
+        "Está prohibido",
+        "No hace falta"
+      ],
+      "answer": 0,
+      "why": "A rule against doing it is está prohibido.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:adentro",
+        "l:cliente",
+        "l:estar",
+        "l:fumar",
+        "l:prohibir",
+        "p:es-obligatorio",
+        "p:esta-prohibido",
+        "p:esta-prohibido-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-4",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to call me tonight. (to a friend)",
+      "es": "No hace falta que me llames esta noche.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Está prohibido",
+        "No hace falta"
+      ],
+      "answer": 1,
+      "why": "Calling is optional, so no hace falta.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:falta",
+        "l:hacer",
+        "l:llamar",
+        "l:noche",
+        "p:demonstratives-basic",
+        "p:me-te-nos-objects",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-5",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to pay for the coffee. (formal)",
+      "es": "No hace falta que pague el café.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 0,
+      "why": "Paying is not needed, not banned: no hace falta.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:café",
+        "l:falta",
+        "l:hacer",
+        "l:pagar",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#a-6",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:esta-prohibido-que",
+      "rung": 1,
+      "en": "It is forbidden for anyone to go into the office.",
+      "es": "Está prohibido que alguien pase a la oficina.",
+      "gap": [
+        0,
+        14
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 1,
+      "why": "Entry is banned, so está prohibido.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:estar",
+        "l:oficina",
+        "l:pasar",
+        "l:prohibir",
+        "p:es-obligatorio",
+        "p:esta-prohibido",
+        "p:esta-prohibido-que",
+        "p:indefinites-basic"
+      ]
     }
   ]
 }

@@ -407,6 +407,85 @@
         "l:cocinar",
         "p:para-inf"
       ]
+    },
+    {
+      "id": "x:por-inf-para-inf#a-1",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "They congratulated her for winning the race.",
+      "es": "La felicitaron por ganar la carrera.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The reason behind praise is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:carrera",
+        "l:felicitar",
+        "l:ganar",
+        "p:felicitaciones-por"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#a-3",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "Vale was punished for lying.",
+      "es": "Castigaron a Vale por mentir.",
+      "gap": [
+        18,
+        21
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The cause of a punishment is por.",
+      "requires": [
+        "g:por-para-1",
+        "l:mentir"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#a-5",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "Tomás practices every day to improve.",
+      "es": "Tomás practica todos los días para mejorar.",
+      "gap": [
+        30,
+        34
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "A goal is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:día",
+        "l:mejorar",
+        "l:practicar",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
     }
   ]
 }

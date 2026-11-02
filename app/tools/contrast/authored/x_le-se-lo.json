@@ -1,0 +1,36 @@
+[
+  {
+    "id": "3",
+    "side": "g:double-pronouns",
+    "rung": 1,
+    "en": "Tomás gave it to them. (the key)",
+    "es": "Tomás se la dio.",
+    "gap": [
+      6,
+      8
+    ],
+    "options": [
+      "se",
+      "les"
+    ],
+    "answer": 0,
+    "why": "Les turns into se before la."
+  },
+  {
+    "id": "6",
+    "side": "g:indirect-objects",
+    "rung": 1,
+    "en": "Rosa explained the menu to him.",
+    "es": "Rosa le explicó el menú.",
+    "gap": [
+      5,
+      7
+    ],
+    "options": [
+      "se",
+      "le"
+    ],
+    "answer": 1,
+    "why": "Without lo or la it stays le."
+  }
+]

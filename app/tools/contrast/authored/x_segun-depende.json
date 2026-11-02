@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "According to Rosa, the café opens at seven.",
+    "es": "Según Rosa, el café abre a las siete.",
+    "gap": [
+      0,
+      5
+    ],
+    "options": [
+      "Según",
+      "Depende"
+    ],
+    "answer": 0,
+    "why": "Depende needs de and a thing, not a person as a source. Según names the source."
+  },
+  {
+    "id": "2",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "It depends on the boss.",
+    "es": "Depende del jefe.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Según",
+      "Depende"
+    ],
+    "answer": 1,
+    "why": "Del is de plus el, which only depender takes."
+  },
+  {
+    "id": "3",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "According to the map, the park is close.",
+    "es": "Según el mapa, el parque queda cerca.",
+    "gap": [
+      0,
+      5
+    ],
+    "options": [
+      "Según",
+      "Depende"
+    ],
+    "answer": 0,
+    "why": "Según introduces the source with no de."
+  },
+  {
+    "id": "5",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "Do you want coffee? It depends.",
+    "es": "¿Quieres café? Depende.",
+    "gap": [
+      15,
+      22
+    ],
+    "options": [
+      "Depende",
+      "Según"
+    ],
+    "answer": 0,
+    "why": "Depende can stand alone as an answer. Según cannot."
+  },
+  {
+    "id": "6",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "According to Vale, Tomás is moving.",
+    "es": "Según Vale, Tomás se muda.",
+    "gap": [
+      0,
+      5
+    ],
+    "options": [
+      "Depende",
+      "Según"
+    ],
+    "answer": 1,
+    "why": "Según names who said it."
+  },
+  {
+    "id": "7",
+    "side": "p:depender-de",
+    "rung": 1,
+    "en": "It depends on whether Rosa comes.",
+    "es": "Depende de si viene Rosa.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Depende",
+      "Según"
+    ],
+    "answer": 0,
+    "why": "De si is the frame of depende."
+  }
+]

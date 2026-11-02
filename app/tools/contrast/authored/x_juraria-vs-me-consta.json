@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "side": "p:juraria-que",
+    "rung": 1,
+    "en": "I could swear I left the keys here, but they aren't.",
+    "es": "Juraría que dejé las llaves aquí, pero no están.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 1,
+    "why": "The keys are missing, so it's only a strong memory."
+  },
+  {
+    "id": "2",
+    "side": "p:no-me-cabe-duda",
+    "rung": 1,
+    "en": "I know for a fact Rosa paid, I saw the receipt.",
+    "es": "Me consta que Rosa pagó, yo vi el recibo.",
+    "gap": [
+      0,
+      9
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 0,
+    "why": "Seeing the receipt makes it a verified fact."
+  },
+  {
+    "id": "3",
+    "side": "p:juraria-que",
+    "rung": 1,
+    "en": "I could swear Tomás said Thursday, but maybe it was Friday.",
+    "es": "Juraría que Tomás dijo el jueves, pero tal vez fue el viernes.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 1,
+    "why": "Doubt follows, so it's a memory."
+  },
+  {
+    "id": "4",
+    "side": "p:no-me-cabe-duda",
+    "rung": 1,
+    "en": "I can vouch that the money arrived, I was there when it came.",
+    "es": "Me consta que llegó la plata, yo estaba ahí cuando llegó.",
+    "gap": [
+      0,
+      9
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 0,
+    "why": "Being there makes it certain."
+  },
+  {
+    "id": "5",
+    "side": "p:juraria-que",
+    "rung": 1,
+    "en": "I'd swear I've seen that man before, but I don't know where.",
+    "es": "Juraría que ya vi a ese señor, pero no sé dónde.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 1,
+    "why": "Not knowing where means it's a hunch."
+  },
+  {
+    "id": "6",
+    "side": "p:no-me-cabe-duda",
+    "rung": 2,
+    "en": "I know for sure Don Hernando never missed a day, I checked the records.",
+    "es": "Me consta que Don Hernando nunca faltó, revisé los registros.",
+    "gap": [
+      0,
+      9
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 0,
+    "why": "Checking records gives proof."
+  },
+  {
+    "id": "7",
+    "side": "p:juraria-que",
+    "rung": 2,
+    "en": "I could swear it was raining when we left, but I can't be sure.",
+    "es": "Juraría que llovía cuando salimos, pero no estoy seguro.",
+    "gap": [
+      0,
+      7
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 1,
+    "why": "Not sure, so juraría."
+  },
+  {
+    "id": "8",
+    "side": "p:no-me-cabe-duda",
+    "rung": 1,
+    "en": "I can attest that Vale worked all night, I was with her.",
+    "es": "Me consta que Vale trabajó toda la noche, yo estuve con ella.",
+    "gap": [
+      0,
+      9
+    ],
+    "options": [
+      "Me consta",
+      "Juraría"
+    ],
+    "answer": 0,
+    "why": "Being with her makes it first hand."
+  }
+]

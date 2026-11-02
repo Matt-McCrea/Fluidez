@@ -1,0 +1,138 @@
+[
+  {
+    "id": "1",
+    "side": "p:que-tal-si",
+    "rung": 1,
+    "en": "What if we go to the movies on Saturday?",
+    "es": "¿Qué tal si vamos al cine el sábado?",
+    "gap": [
+      12,
+      17
+    ],
+    "options": [
+      "vamos",
+      "vayamos"
+    ],
+    "answer": 0,
+    "why": "After si the present stays plain."
+  },
+  {
+    "id": "2",
+    "side": "p:te-propongo-que",
+    "rung": 1,
+    "en": "I suggest we go to the movies on Saturday. (to a friend)",
+    "es": "Te propongo que vayamos al cine el sábado.",
+    "gap": [
+      16,
+      23
+    ],
+    "options": [
+      "vamos",
+      "vayamos"
+    ],
+    "answer": 1,
+    "why": "Te propongo que always takes the subjunctive."
+  },
+  {
+    "id": "3",
+    "side": "p:que-tal-si",
+    "rung": 1,
+    "en": "What if we order a pizza?",
+    "es": "¿Y si pedimos una pizza?",
+    "gap": [
+      6,
+      13
+    ],
+    "options": [
+      "pedimos",
+      "pidamos"
+    ],
+    "answer": 0,
+    "why": "After si, the plain present."
+  },
+  {
+    "id": "4",
+    "side": "p:te-propongo-que",
+    "rung": 1,
+    "en": "I propose that you pay half today. (formal)",
+    "es": "Le propongo que pague la mitad hoy.",
+    "gap": [
+      16,
+      21
+    ],
+    "options": [
+      "paga",
+      "pague"
+    ],
+    "answer": 1,
+    "why": "Le propongo que takes the subjunctive."
+  },
+  {
+    "id": "5",
+    "side": "p:que-tal-si",
+    "rung": 1,
+    "en": "What if we cook tonight?",
+    "es": "¿Qué tal si cocinamos esta noche?",
+    "gap": [
+      1,
+      11
+    ],
+    "options": [
+      "Qué tal si",
+      "Te propongo que"
+    ],
+    "answer": 0,
+    "why": "Cocinamos is plain present, which goes with qué tal si."
+  },
+  {
+    "id": "6",
+    "side": "p:te-propongo-que",
+    "rung": 1,
+    "en": "I propose that we start earlier. (to a friend)",
+    "es": "Te propongo que empecemos más temprano.",
+    "gap": [
+      0,
+      15
+    ],
+    "options": [
+      "¿Qué tal si",
+      "Te propongo que"
+    ],
+    "answer": 1,
+    "why": "Empecemos is subjunctive, which goes with te propongo que."
+  },
+  {
+    "id": "7",
+    "side": "p:que-tal-si",
+    "rung": 1,
+    "en": "What if Rosa brings the dessert?",
+    "es": "¿Qué tal si Rosa trae el postre?",
+    "gap": [
+      17,
+      21
+    ],
+    "options": [
+      "trae",
+      "traiga"
+    ],
+    "answer": 0,
+    "why": "After qué tal si, the plain present."
+  },
+  {
+    "id": "8",
+    "side": "p:te-propongo-que",
+    "rung": 1,
+    "en": "I propose that we talk to Don Hernando first. (to a group)",
+    "es": "Les propongo que hablemos con Don Hernando primero.",
+    "gap": [
+      17,
+      25
+    ],
+    "options": [
+      "hablamos",
+      "hablemos"
+    ],
+    "answer": 1,
+    "why": "The subjunctive follows les propongo que."
+  }
+]

@@ -54,6 +54,199 @@
         "l:llamar",
         "p:tendrias-que"
       ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-2",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Tomás, you should sleep more.",
+      "es": "Tomás, tú deberías dormir más.",
+      "gap": [
+        10,
+        18
+      ],
+      "options": [
+        "deberías",
+        "habría que"
+      ],
+      "answer": 0,
+      "why": "Addressed to a person with tú.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:dormir",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-3",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "It would be necessary to raise prices.",
+      "es": "Habría que subir los precios.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Deberías",
+        "Habría que"
+      ],
+      "answer": 1,
+      "why": "A general need, nobody addressed.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:precio",
+        "l:subir",
+        "p:habria-que",
+        "p:subir-subida"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-4",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Vale, you should call your mother.",
+      "es": "Vale, tú deberías llamar a tu mamá.",
+      "gap": [
+        9,
+        17
+      ],
+      "options": [
+        "deberías",
+        "habría que"
+      ],
+      "answer": 0,
+      "why": "Advice to one person.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:llamar",
+        "l:mamá",
+        "p:personal-a",
+        "p:possessives-basic",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-5",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "First we'd have to check the budget.",
+      "es": "Primero habría que revisar el presupuesto.",
+      "gap": [
+        8,
+        18
+      ],
+      "options": [
+        "deberías",
+        "habría que"
+      ],
+      "answer": 1,
+      "why": "An impersonal need.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:presupuesto",
+        "l:revisar",
+        "p:habria-que",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-6",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Don Hernando, you should rest a little.",
+      "es": "Don Hernando, usted debería descansar un poco.",
+      "gap": [
+        20,
+        27
+      ],
+      "options": [
+        "debería",
+        "habría que"
+      ],
+      "answer": 0,
+      "why": "Advice to usted.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:descansar",
+        "p:don-dona-nombre",
+        "p:poco-un-poco",
+        "p:quantifiers-basic",
+        "p:senor-don-article",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-7",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 2,
+      "en": "On Saturdays we'd have to open earlier.",
+      "es": "Los sábados habría que abrir más temprano.",
+      "gap": [
+        12,
+        22
+      ],
+      "options": [
+        "deberías",
+        "habría que"
+      ],
+      "answer": 1,
+      "why": "A general need.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:abrir",
+        "l:sábado",
+        "l:temprano",
+        "p:days-el-lunes",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#a-8",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "You all should try the new soup.",
+      "es": "Ustedes deberían probar la sopa nueva.",
+      "gap": [
+        8,
+        16
+      ],
+      "options": [
+        "deberían",
+        "habría que"
+      ],
+      "answer": 0,
+      "why": "Advice to ustedes.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:conditional",
+        "g:gender-articles",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:nuevo",
+        "l:probarse",
+        "l:sopa"
+      ]
     }
   ]
 }

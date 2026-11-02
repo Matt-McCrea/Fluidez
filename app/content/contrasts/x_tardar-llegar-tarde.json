@@ -27,6 +27,134 @@
         "l:tarde",
         "p:llegar-a-tiempo"
       ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-2",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:tardar-en",
+      "rung": 1,
+      "en": "It takes me forty minutes to get to work.",
+      "es": "Me demoro cuarenta minutos en llegar al trabajo.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Llego tarde",
+        "Me demoro"
+      ],
+      "answer": 1,
+      "why": "How long something takes is demorarse en.",
+      "requires": [
+        "g:gender-articles",
+        "l:llegar",
+        "l:minuto",
+        "l:trabajo",
+        "p:tardar-en"
+      ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-3",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:tardar-en",
+      "rung": 1,
+      "en": "The bus took two hours, but it arrived on time.",
+      "es": "El bus se demoró dos horas, pero llegó a tiempo.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "se demoró",
+        "llegó tarde"
+      ],
+      "answer": 0,
+      "why": "The trip was long, but it was not late: se demoró.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:bus",
+        "l:hora",
+        "l:llegar",
+        "l:tiempo",
+        "p:llegar-a-tiempo",
+        "p:tardar-en"
+      ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-5",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:tardar-en",
+      "rung": 1,
+      "en": "How long does it take you to cook? (to a friend)",
+      "es": "¿Cuánto te demoras en cocinar?",
+      "gap": [
+        8,
+        18
+      ],
+      "options": [
+        "te demoras",
+        "llegas tarde"
+      ],
+      "answer": 0,
+      "why": "How long it takes is demorarse en.",
+      "requires": [
+        "g:questions",
+        "l:cocinar",
+        "l:cuánto",
+        "l:demora",
+        "p:tardar-en"
+      ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-7",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:tardar-en",
+      "rung": 1,
+      "en": "Tomás took a long time to answer the message.",
+      "es": "Tomás se demoró mucho en contestar el mensaje.",
+      "gap": [
+        6,
+        15
+      ],
+      "options": [
+        "se demoró",
+        "llegó tarde"
+      ],
+      "answer": 0,
+      "why": "Time spent on an action is demorarse en.",
+      "requires": [
+        "g:gender-articles",
+        "l:contestar",
+        "l:mensaje",
+        "p:quantifiers-basic",
+        "p:tardar-en"
+      ]
+    },
+    {
+      "id": "x:tardar-llegar-tarde#a-9",
+      "node": "x:tardar-llegar-tarde",
+      "side": "p:tardar-en",
+      "rung": 1,
+      "en": "We took three hours to paint the wall.",
+      "es": "Nos demoramos tres horas en pintar la pared.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Nos demoramos",
+        "Llegamos tarde"
+      ],
+      "answer": 0,
+      "why": "Time an action took is demorarse en.",
+      "requires": [
+        "g:gender-articles",
+        "l:hora",
+        "l:pared",
+        "l:pintar",
+        "p:tardar-en"
+      ]
     }
   ]
 }

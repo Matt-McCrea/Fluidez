@@ -28,6 +28,248 @@
         "l:remedio",
         "p:no-quedar-mas-remedio"
       ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-1",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "I settle for a small coffee.",
+      "es": "Me conformo con un tinto pequeño.",
+      "gap": [
+        0,
+        15
+      ],
+      "options": [
+        "No me queda más remedio que",
+        "Me conformo con"
+      ],
+      "answer": 1,
+      "why": "Settling for a thing takes conformarse con.",
+      "requires": [
+        "g:gender-articles",
+        "l:pequeño",
+        "l:tinto",
+        "p:conformarse-con"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-2",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "We had no choice but to wait.",
+      "es": "No nos quedó más remedio que esperar.",
+      "gap": [
+        0,
+        28
+      ],
+      "options": [
+        "No nos quedó más remedio que",
+        "Nos conformamos con"
+      ],
+      "answer": 0,
+      "why": "No choice but is no quedar más remedio que.",
+      "requires": [
+        "g:comparatives",
+        "g:parecer-quedar",
+        "g:preterite-ar",
+        "l:esperar",
+        "l:quedar",
+        "l:remedio",
+        "p:no-quedar-mas-remedio"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-3",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "Rosa is happy with a small table.",
+      "es": "Rosa se conforma con una mesa pequeña.",
+      "gap": [
+        5,
+        20
+      ],
+      "options": [
+        "no le queda más remedio que",
+        "se conforma con"
+      ],
+      "answer": 1,
+      "why": "Settling for a table is conformarse con.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "l:mesa",
+        "l:pequeño",
+        "p:conformarse-con"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-4",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "The bus didn't come, so I had no choice but to walk.",
+      "es": "No llegó el bus, así que no me quedó más remedio que caminar.",
+      "gap": [
+        25,
+        52
+      ],
+      "options": [
+        "no me quedó más remedio que",
+        "me conformé con"
+      ],
+      "answer": 0,
+      "why": "Walking was forced on me.",
+      "requires": [
+        "g:cause-result",
+        "g:comparatives",
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:preterite-ar",
+        "l:bus",
+        "l:caminar",
+        "l:llegar",
+        "l:quedar",
+        "l:remedio",
+        "p:no-quedar-mas-remedio"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-5",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "Don Hernando is happy with a simple gift.",
+      "es": "Don Hernando se conforma con un regalo sencillo.",
+      "gap": [
+        13,
+        28
+      ],
+      "options": [
+        "no le queda más remedio que",
+        "se conforma con"
+      ],
+      "answer": 1,
+      "why": "A noun after it means settling for.",
+      "requires": [
+        "g:gender-articles",
+        "l:regalo",
+        "l:sencillo",
+        "p:conformarse-con",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-6",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "Vale had no choice but to ask for help.",
+      "es": "A Vale no le quedó más remedio que pedir ayuda.",
+      "gap": [
+        7,
+        34
+      ],
+      "options": [
+        "no le quedó más remedio que",
+        "se conformó con"
+      ],
+      "answer": 0,
+      "why": "The choice was forced.",
+      "requires": [
+        "g:comparatives",
+        "g:gustar-full",
+        "g:parecer-quedar",
+        "g:present-ar",
+        "g:preterite-ar",
+        "l:ayudar",
+        "l:pedir",
+        "l:quedar",
+        "l:remedio",
+        "p:no-quedar-mas-remedio"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-7",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "Don't settle for less.",
+      "es": "No te conformes con menos.",
+      "gap": [
+        6,
+        19
+      ],
+      "options": [
+        "quedes más remedio que",
+        "conformes con"
+      ],
+      "answer": 1,
+      "why": "Settling for less is conformarse con.",
+      "requires": [
+        "l:conforme",
+        "p:conformarse-con"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-8",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 2,
+      "en": "We had no choice but to close early because of the rain.",
+      "es": "No nos quedó más remedio que cerrar temprano por la lluvia.",
+      "gap": [
+        0,
+        28
+      ],
+      "options": [
+        "No nos quedó más remedio que",
+        "Nos conformamos con"
+      ],
+      "answer": 0,
+      "why": "The rain forced it.",
+      "requires": [
+        "g:comparatives",
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:cerrar",
+        "l:lluvia",
+        "l:quedar",
+        "l:remedio",
+        "l:temprano",
+        "p:no-quedar-mas-remedio"
+      ]
+    },
+    {
+      "id": "x:conformarse-no-remedio#a-9",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "She is never happy; she doesn't settle for anything.",
+      "es": "Nunca está contenta; no se conforma con nada.",
+      "gap": [
+        24,
+        39
+      ],
+      "options": [
+        "le queda más remedio que",
+        "se conforma con"
+      ],
+      "answer": 1,
+      "why": "Not settling for anything.",
+      "requires": [
+        "c:no-se",
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:contento",
+        "l:estar",
+        "p:conformarse-con",
+        "p:frequency-scale"
+      ]
     }
   ]
 }

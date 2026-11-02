@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "These songs are hard to sing.",
+    "es": "Estas canciones son difíciles de cantar.",
+    "gap": [
+      20,
+      29
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 1,
+    "why": "Canciones is plural, so difíciles."
+  },
+  {
+    "id": "5",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "Those words are hard to say.",
+    "es": "Esas palabras son difíciles de decir.",
+    "gap": [
+      18,
+      27
+    ],
+    "options": [
+      "difíciles",
+      "difícil"
+    ],
+    "answer": 0,
+    "why": "Palabras is plural."
+  },
+  {
+    "id": "7",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "The exercises are hard to do.",
+    "es": "Los ejercicios son difíciles de hacer.",
+    "gap": [
+      19,
+      28
+    ],
+    "options": [
+      "difíciles",
+      "difícil"
+    ],
+    "answer": 0,
+    "why": "Ejercicios is plural."
+  },
+  {
+    "id": "8",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "The exercise is hard to do.",
+    "es": "El ejercicio es difícil de hacer.",
+    "gap": [
+      16,
+      23
+    ],
+    "options": [
+      "difíciles",
+      "difícil"
+    ],
+    "answer": 1,
+    "why": "Ejercicio is singular."
+  },
+  {
+    "id": "9",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "It is hard to do the exercises.",
+    "es": "Es difícil hacer los ejercicios.",
+    "gap": [
+      3,
+      10
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 0,
+    "why": "Es plus a verb keeps difícil single."
+  },
+  {
+    "id": "10",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "The rules are hard to remember.",
+    "es": "Las reglas son difíciles de recordar.",
+    "gap": [
+      15,
+      24
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 1,
+    "why": "Reglas is plural."
+  },
+  {
+    "id": "11",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "This book is hard to find.",
+    "es": "Este libro es difícil de encontrar.",
+    "gap": [
+      14,
+      21
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 0,
+    "why": "Libro is singular."
+  },
+  {
+    "id": "12",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "It is hard to find a good book.",
+    "es": "Es difícil encontrar un buen libro.",
+    "gap": [
+      3,
+      10
+    ],
+    "options": [
+      "difíciles",
+      "difícil"
+    ],
+    "answer": 1,
+    "why": "Es plus a verb keeps difícil single."
+  },
+  {
+    "id": "13",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "Your name is hard to spell.",
+    "es": "Tu nombre es difícil de escribir.",
+    "gap": [
+      13,
+      20
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 0,
+    "why": "Nombre is singular."
+  },
+  {
+    "id": "14",
+    "side": "p:dificil-de-inf",
+    "rung": 1,
+    "en": "The numbers are hard to understand.",
+    "es": "Los números son difíciles de entender.",
+    "gap": [
+      16,
+      25
+    ],
+    "options": [
+      "difícil",
+      "difíciles"
+    ],
+    "answer": 1,
+    "why": "Números is plural."
+  }
+]

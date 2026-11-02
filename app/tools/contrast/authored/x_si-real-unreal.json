@@ -1,0 +1,36 @@
+[
+  {
+    "id": "3",
+    "side": "g:si-present",
+    "rung": 1,
+    "en": "If I have money on Friday, I'll pay you.",
+    "es": "Si tengo plata el viernes, te pago.",
+    "gap": [
+      3,
+      8
+    ],
+    "options": [
+      "tengo",
+      "tuviera"
+    ],
+    "answer": 0,
+    "why": "It could really happen, so the ordinary present."
+  },
+  {
+    "id": "8",
+    "side": "g:si-hypothetical",
+    "rung": 1,
+    "en": "If I had a car, I would take you.",
+    "es": "Si tuviera un carro, te llevaría.",
+    "gap": [
+      3,
+      10
+    ],
+    "options": [
+      "tengo",
+      "tuviera"
+    ],
+    "answer": 1,
+    "why": "It is imaginary, so the past subjunctive and the would form."
+  }
+]

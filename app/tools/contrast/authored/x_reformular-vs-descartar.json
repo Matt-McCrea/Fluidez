@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "side": "g:reformulation",
+    "rung": 1,
+    "en": "It's cheap, that is, it costs ten thousand pesos.",
+    "es": "Es barato, es decir, cuesta diez mil pesos.",
+    "gap": [
+      11,
+      19
+    ],
+    "options": [
+      "es decir",
+      "en cualquier caso"
+    ],
+    "answer": 0,
+    "why": "The second part says the same thing more clearly: es decir."
+  },
+  {
+    "id": "2",
+    "side": "p:en-cualquier-caso",
+    "rung": 1,
+    "en": "Maybe it will rain; anyway, we're going out.",
+    "es": "Tal vez llueva; en cualquier caso, vamos a salir.",
+    "gap": [
+      16,
+      33
+    ],
+    "options": [
+      "es decir",
+      "en cualquier caso"
+    ],
+    "answer": 1,
+    "why": "You move past the first part, so en cualquier caso."
+  },
+  {
+    "id": "3",
+    "side": "g:reformulation",
+    "rung": 1,
+    "en": "Vale lives nearby, that is, ten minutes from here.",
+    "es": "Vale vive cerca, o sea, a diez minutos de aquí.",
+    "gap": [
+      17,
+      22
+    ],
+    "options": [
+      "o sea",
+      "de todos modos"
+    ],
+    "answer": 0,
+    "why": "The second part makes the first one precise: o sea."
+  },
+  {
+    "id": "4",
+    "side": "p:en-cualquier-caso",
+    "rung": 1,
+    "en": "I don't know if he will come. Anyway, we start at six.",
+    "es": "No sé si él viene. De todos modos, empezamos a las seis.",
+    "gap": [
+      19,
+      33
+    ],
+    "options": [
+      "O sea",
+      "De todos modos"
+    ],
+    "answer": 1,
+    "why": "The first part is set aside, so de todos modos."
+  },
+  {
+    "id": "5",
+    "side": "g:reformulation",
+    "rung": 1,
+    "en": "It's the last bus; in other words, we can't be late.",
+    "es": "Es el último bus; en otras palabras, no podemos llegar tarde.",
+    "gap": [
+      18,
+      35
+    ],
+    "options": [
+      "en otras palabras",
+      "en cualquier caso"
+    ],
+    "answer": 0,
+    "why": "It restates the same point: en otras palabras."
+  },
+  {
+    "id": "6",
+    "side": "p:en-cualquier-caso",
+    "rung": 1,
+    "en": "The café may fail; in any case, we'll try again.",
+    "es": "El café puede fracasar; en cualquier caso, vamos a intentarlo de nuevo.",
+    "gap": [
+      24,
+      41
+    ],
+    "options": [
+      "es decir",
+      "en cualquier caso"
+    ],
+    "answer": 1,
+    "why": "The plan goes on whatever happens: en cualquier caso."
+  },
+  {
+    "id": "7",
+    "side": "g:reformulation",
+    "rung": 1,
+    "en": "It's Tuesday, I mean, Wednesday.",
+    "es": "Es martes, mejor dicho, miércoles.",
+    "gap": [
+      11,
+      22
+    ],
+    "options": [
+      "mejor dicho",
+      "de todos modos"
+    ],
+    "answer": 0,
+    "why": "You correct yourself: mejor dicho."
+  }
+]

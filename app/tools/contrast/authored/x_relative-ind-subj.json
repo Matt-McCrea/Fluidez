@@ -1,0 +1,206 @@
+[
+  {
+    "id": "1",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "I have a friend who lives in Cali.",
+    "es": "Tengo un amigo que vive en Cali.",
+    "gap": [
+      19,
+      23
+    ],
+    "options": [
+      "vive",
+      "viva"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "2",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "I don't know anyone who speaks French.",
+    "es": "No conozco a nadie que hable francés.",
+    "gap": [
+      23,
+      28
+    ],
+    "options": [
+      "habla",
+      "hable"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  },
+  {
+    "id": "4",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "Is there anyone who knows where Vale is?",
+    "es": "¿Hay alguien que sepa dónde está Vale?",
+    "gap": [
+      17,
+      21
+    ],
+    "options": [
+      "sabe",
+      "sepa"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  },
+  {
+    "id": "5",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "There's a store that opens at six.",
+    "es": "Hay una tienda que abre a las seis.",
+    "gap": [
+      19,
+      23
+    ],
+    "options": [
+      "abre",
+      "abra"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "7",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "I know someone who speaks French.",
+    "es": "Conozco a alguien que habla francés.",
+    "gap": [
+      22,
+      27
+    ],
+    "options": [
+      "habla",
+      "hable"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "10",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "Tomás wants a house, any house, that is near the sea.",
+    "es": "Tomás quiere una casa que quede cerca del mar.",
+    "gap": [
+      26,
+      31
+    ],
+    "options": [
+      "queda",
+      "quede"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  },
+  {
+    "id": "12",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "I don't have a single friend who lives in Cali.",
+    "es": "No tengo ningún amigo que viva en Cali.",
+    "gap": [
+      26,
+      30
+    ],
+    "options": [
+      "vive",
+      "viva"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  },
+  {
+    "id": "13",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "I saw a house that is cheap.",
+    "es": "Vi una casa que es barata.",
+    "gap": [
+      16,
+      18
+    ],
+    "options": [
+      "es",
+      "sea"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "17",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "Hernando lives in a house that is near the park.",
+    "es": "Hernando vive en una casa que queda cerca del parque.",
+    "gap": [
+      30,
+      35
+    ],
+    "options": [
+      "queda",
+      "quede"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "20",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "I want something, anything, that is cheap and tasty.",
+    "es": "Quiero algo que sea barato y rico.",
+    "gap": [
+      16,
+      19
+    ],
+    "options": [
+      "es",
+      "sea"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  },
+  {
+    "id": "23",
+    "side": "g:relative-que",
+    "rung": 1,
+    "en": "Here is someone who knows the answer.",
+    "es": "Aquí hay alguien que sabe la respuesta.",
+    "gap": [
+      21,
+      25
+    ],
+    "options": [
+      "sabe",
+      "sepa"
+    ],
+    "answer": 0,
+    "why": "The one exists and is known, so the ordinary verb."
+  },
+  {
+    "id": "26",
+    "side": "g:subj-relative",
+    "rung": 1,
+    "en": "Is there any restaurant that opens today?",
+    "es": "¿Hay algún restaurante que abra hoy?",
+    "gap": [
+      27,
+      31
+    ],
+    "options": [
+      "abre",
+      "abra"
+    ],
+    "answer": 1,
+    "why": "Any one at all, or none, so the subjunctive."
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "2",
+    "side": "p:no-te-falta-razon",
+    "rung": 1,
+    "en": "You have a point, but it's too expensive.",
+    "es": "No te falta razón, pero es muy caro.",
+    "gap": [
+      0,
+      17
+    ],
+    "options": [
+      "Coincido contigo en que",
+      "No te falta razón"
+    ],
+    "answer": 1,
+    "why": "A point given and then a but is partial agreement."
+  },
+  {
+    "id": "3",
+    "side": "p:no-te-falta-razon",
+    "rung": 1,
+    "en": "You have some of the point, but not all of it.",
+    "es": "Algo de razón tienes, pero no toda.",
+    "gap": [
+      0,
+      20
+    ],
+    "options": [
+      "Algo de razón tienes",
+      "Coincido contigo en todo"
+    ],
+    "answer": 0,
+    "why": "Algo de razón tienes gives only part."
+  },
+  {
+    "id": "5",
+    "side": "p:no-te-falta-razon",
+    "rung": 1,
+    "en": "You have a point; however, we have no money.",
+    "es": "No te falta razón; ahora bien, no tenemos plata.",
+    "gap": [
+      0,
+      17
+    ],
+    "options": [
+      "No te falta razón",
+      "Coincido contigo en que"
+    ],
+    "answer": 0,
+    "why": "Ahora bien turns the sentence, so partial agreement."
+  },
+  {
+    "id": "7",
+    "side": "p:no-te-falta-razon",
+    "rung": 1,
+    "en": "He has a point, but he arrived late.",
+    "es": "No le falta razón, pero llegó tarde.",
+    "gap": [
+      0,
+      17
+    ],
+    "options": [
+      "No le falta razón",
+      "Coincide con él"
+    ],
+    "answer": 0,
+    "why": "A point then a but is partial."
+  },
+  {
+    "id": "8",
+    "side": "p:no-te-falta-razon",
+    "rung": 1,
+    "en": "On that you convinced me, but not on the price.",
+    "es": "En eso me convenciste, pero no en el precio.",
+    "gap": [
+      0,
+      21
+    ],
+    "options": [
+      "Coincido contigo en todo",
+      "En eso me convenciste"
+    ],
+    "answer": 1,
+    "why": "It gives one point and holds back the rest."
+  }
+]

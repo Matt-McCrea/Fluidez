@@ -1,0 +1,155 @@
+[
+  {
+    "id": "3",
+    "side": "g:ser-estar-adjectives",
+    "rung": 1,
+    "en": "The soup is cold.",
+    "es": "La sopa está fría.",
+    "gap": [
+      8,
+      12
+    ],
+    "options": [
+      "está",
+      "es"
+    ],
+    "answer": 0,
+    "why": "It describes how it is right now, so estar."
+  },
+  {
+    "id": "5",
+    "side": "g:ser-estar-adjectives",
+    "rung": 1,
+    "en": "I'm ready now, let's go. (a woman speaking)",
+    "es": "Ya estoy lista, vámonos.",
+    "gap": [
+      3,
+      8
+    ],
+    "options": [
+      "estoy",
+      "soy"
+    ],
+    "answer": 0,
+    "why": "It describes how it is right now, so estar."
+  },
+  {
+    "id": "7",
+    "side": "g:ser-identity",
+    "rung": 1,
+    "en": "Don Hernando is rich and lives in Usaquén.",
+    "es": "Don Hernando es rico y vive en Usaquén.",
+    "gap": [
+      13,
+      15
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 0,
+    "why": "It describes what someone or something is like, so ser."
+  },
+  {
+    "id": "8",
+    "side": "g:ser-estar-adjectives",
+    "rung": 1,
+    "en": "My son has gotten so big.",
+    "es": "Mi hijo está muy grande.",
+    "gap": [
+      8,
+      12
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 1,
+    "why": "It describes how it is right now, so estar."
+  },
+  {
+    "id": "9",
+    "side": "g:ser-identity",
+    "rung": 1,
+    "en": "Tomás is tall.",
+    "es": "Tomás es alto.",
+    "gap": [
+      6,
+      8
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 0,
+    "why": "It describes what someone or something is like, so ser."
+  },
+  {
+    "id": "10",
+    "side": "g:ser-identity",
+    "rung": 1,
+    "en": "Bogotá is a cold city.",
+    "es": "Bogotá es fría.",
+    "gap": [
+      7,
+      9
+    ],
+    "options": [
+      "está",
+      "es"
+    ],
+    "answer": 1,
+    "why": "It describes what someone or something is like, so ser."
+  },
+  {
+    "id": "11",
+    "side": "g:ser-estar-adjectives",
+    "rung": 1,
+    "en": "Today Bogotá is cold.",
+    "es": "Hoy Bogotá está fría.",
+    "gap": [
+      11,
+      15
+    ],
+    "options": [
+      "está",
+      "es"
+    ],
+    "answer": 0,
+    "why": "It describes how it is right now, so estar."
+  },
+  {
+    "id": "13",
+    "side": "g:ser-identity",
+    "rung": 1,
+    "en": "That man is mean to everyone.",
+    "es": "Ese señor es malo con todos.",
+    "gap": [
+      10,
+      12
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 0,
+    "why": "It describes what someone or something is like, so ser."
+  },
+  {
+    "id": "14",
+    "side": "g:ser-estar-adjectives",
+    "rung": 1,
+    "en": "Vale is happy with her job.",
+    "es": "Vale está contenta con su trabajo.",
+    "gap": [
+      5,
+      9
+    ],
+    "options": [
+      "es",
+      "está"
+    ],
+    "answer": 1,
+    "why": "It describes how it is right now, so estar."
+  }
+]

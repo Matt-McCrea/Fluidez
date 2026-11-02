@@ -58,6 +58,248 @@
         "p:caber",
         "p:medir-pesar-caber"
       ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-1",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:para-mi-que",
+      "rung": 1,
+      "en": "My hunch is that Rosa is sick.",
+      "es": "Para mí que Rosa está enferma.",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 0,
+      "why": "After para mí que you lean one way, so the plain verb.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:prep-pronouns",
+        "g:that-clauses",
+        "l:enfermo",
+        "l:estar",
+        "p:para-inf",
+        "p:para-mi-que"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-2",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:cabe-la-posibilidad",
+      "rung": 1,
+      "en": "There is a chance that the bus won't come. (formal)",
+      "es": "Cabe la posibilidad de que el bus no venga.",
+      "gap": [
+        37,
+        42
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 1,
+      "why": "Cabe la posibilidad de que holds the idea open, so the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:bus",
+        "l:caber",
+        "l:posibilidad",
+        "l:venir",
+        "p:cabe-la-posibilidad",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-3",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:para-mi-que",
+      "rung": 1,
+      "en": "I'd bet Vale already left.",
+      "es": "Para mí que Vale ya se fue.",
+      "gap": [
+        0,
+        11
+      ],
+      "options": [
+        "Para mí que",
+        "Cabe la posibilidad de que"
+      ],
+      "answer": 0,
+      "why": "A hunch takes the plain verb se fue.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:preterite-ser-ir-hacer",
+        "g:that-clauses",
+        "l:irse",
+        "p:para-inf",
+        "p:para-mi-que"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-4",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:cabe-la-posibilidad",
+      "rung": 1,
+      "en": "There is a chance that the meeting will be moved. (formal)",
+      "es": "Cabe la posibilidad de que la reunión se cambie.",
+      "gap": [
+        0,
+        26
+      ],
+      "options": [
+        "Para mí que",
+        "Cabe la posibilidad de que"
+      ],
+      "answer": 1,
+      "why": "Se cambie is subjunctive, which goes with cabe la posibilidad de que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:se-impersonal",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:caber",
+        "l:cambiar",
+        "l:posibilidad",
+        "l:reunión",
+        "p:cabe-la-posibilidad",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-5",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:para-mi-que",
+      "rung": 1,
+      "en": "My hunch is that Don Hernando knows the truth.",
+      "es": "Para mí que Don Hernando sabe la verdad.",
+      "gap": [
+        25,
+        29
+      ],
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "answer": 0,
+      "why": "A hunch leans, so the plain verb.",
+      "requires": [
+        "c:la-verdad",
+        "g:prep-pronouns",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:saber",
+        "l:verdad",
+        "p:para-inf",
+        "p:para-mi-que",
+        "p:saber-conocer",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-6",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:cabe-la-posibilidad",
+      "rung": 1,
+      "en": "It is possible that the price will go up. (formal)",
+      "es": "Cabe la posibilidad de que el precio suba.",
+      "gap": [
+        37,
+        41
+      ],
+      "options": [
+        "sube",
+        "suba"
+      ],
+      "answer": 1,
+      "why": "The open idea after cabe la posibilidad de que takes the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:caber",
+        "l:posibilidad",
+        "l:precio",
+        "l:subir",
+        "p:cabe-la-posibilidad",
+        "p:caber",
+        "p:medir-pesar-caber",
+        "p:subir-subida"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-7",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:para-mi-que",
+      "rung": 1,
+      "en": "My hunch is that it's going to rain.",
+      "es": "Para mí que va a llover.",
+      "gap": [
+        0,
+        11
+      ],
+      "options": [
+        "Para mí que",
+        "Cabe la posibilidad de que"
+      ],
+      "answer": 0,
+      "why": "A casual hunch with a plain verb is para mí que.",
+      "requires": [
+        "c:que-va",
+        "g:ir-a-plans",
+        "g:prep-pronouns",
+        "l:ir",
+        "l:llover",
+        "p:para-inf",
+        "p:para-mi-que"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#a-8",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:cabe-la-posibilidad",
+      "rung": 1,
+      "en": "There is a possibility that the café will close in March. (in a report)",
+      "es": "Cabe la posibilidad de que el café cierre en marzo.",
+      "gap": [
+        0,
+        26
+      ],
+      "options": [
+        "Para mí que",
+        "Cabe la posibilidad de que"
+      ],
+      "answer": 1,
+      "why": "Cierre is subjunctive, so the formal frame.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:caber",
+        "l:café",
+        "l:cerrar",
+        "l:marzo",
+        "l:posibilidad",
+        "p:cabe-la-posibilidad",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
     }
   ]
 }

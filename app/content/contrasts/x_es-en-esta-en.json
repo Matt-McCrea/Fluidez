@@ -215,6 +215,163 @@
         "p:ser-event-location",
         "p:tener-lugar"
       ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-1",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The concert is at the stadium.",
+      "es": "El concierto es en el estadio.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "A concert is an event, so it says where it happens with es en.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:concierto",
+        "l:estadio",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-5",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The class is in room four.",
+      "es": "La clase es en el salón cuatro.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "A class is an event, so it happens somewhere with es en.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:clase",
+        "l:salón",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-6",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Rosa is at home.",
+      "es": "Rosa está en casa.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A person is somewhere with estar.",
+      "requires": [
+        "g:estar-location-states",
+        "l:casa",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-8",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Don Hernando's house is on that street.",
+      "es": "La casa de Don Hernando está en esa calle.",
+      "gap": [
+        24,
+        28
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A house is a thing in a place, so it sits there with estar.",
+      "requires": [
+        "g:demonstratives",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:calle",
+        "l:casa",
+        "l:estar",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-11",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The exam is in the main building.",
+      "es": "El examen es en el edificio principal.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "An exam is an event, so it happens somewhere with es en.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:edificio",
+        "l:examen",
+        "l:principal",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#a-12",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Is Vale at the party?",
+      "es": "¿Está Vale en la fiesta?",
+      "gap": [
+        1,
+        5
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "Vale is a person, so we ask where she is with estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:fiesta"
+      ]
     }
   ]
 }

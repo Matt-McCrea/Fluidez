@@ -199,6 +199,242 @@
         "l:arepa",
         "l:comer"
       ]
+    },
+    {
+      "id": "x:pret-imp#a-3",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Don Hernando used to go to the plaza every afternoon.",
+      "es": "Don Hernando iba a la plaza todas las tardes.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "fue",
+        "iba"
+      ],
+      "answer": 1,
+      "why": "Every afternoon is a repeated habit.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:ir",
+        "l:plaza",
+        "l:tarde",
+        "p:ir-a-venir-de-place",
+        "p:senor-don-article",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-4",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Last Saturday Vale went to Villa de Leyva.",
+      "es": "El sábado pasado Vale fue a Villa de Leyva.",
+      "gap": [
+        22,
+        25
+      ],
+      "options": [
+        "fue",
+        "iba"
+      ],
+      "answer": 0,
+      "why": "One trip, finished.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:ir",
+        "l:pasado",
+        "l:sábado",
+        "p:days-el-lunes",
+        "p:ir-a-venir-de-place",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-9",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "The café was small and it smelled like fresh bread.",
+      "es": "El café era pequeño y olía a pan fresco.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "fue",
+        "era"
+      ],
+      "answer": 1,
+      "why": "This describes how the place was.",
+      "requires": [
+        "c:era",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "g:ser-identity",
+        "l:café",
+        "l:fresco",
+        "l:oler",
+        "l:pan",
+        "l:pequeño",
+        "l:ser",
+        "p:le-falta-sal",
+        "p:oler-a-saber-a"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-10",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "The party was amazing, and everyone danced until two.",
+      "es": "La fiesta fue increíble y todos bailaron hasta las dos.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "fue",
+        "era"
+      ],
+      "answer": 0,
+      "why": "Judging the whole party as one finished thing.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:bailar",
+        "l:fiesta",
+        "l:increíble",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-13",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Back then Vale worked at a bakery and lived near the river.",
+      "es": "En esa época Vale trabajaba en una panadería y vivía cerca del río.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "trabajó",
+        "trabajaba"
+      ],
+      "answer": 1,
+      "why": "Back then sets a period as background.",
+      "requires": [
+        "c:en-esa-epoca",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:cerca",
+        "l:panadería",
+        "l:río",
+        "l:trabajar",
+        "l:vivir",
+        "l:época",
+        "p:cerca-de",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-14",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Last year Vale worked at a bakery for three months.",
+      "es": "El año pasado Vale trabajó en una panadería durante tres meses.",
+      "gap": [
+        19,
+        26
+      ],
+      "options": [
+        "trabajó",
+        "trabajaba"
+      ],
+      "answer": 0,
+      "why": "Three months is a closed stretch.",
+      "requires": [
+        "c:trabajo-en",
+        "g:gender-articles",
+        "l:año",
+        "l:mes",
+        "l:panadería",
+        "l:pasado",
+        "l:trabajar",
+        "p:durar-durante",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-24",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Yesterday Vale arrived at six and opened the café.",
+      "es": "Ayer Vale llegó a las seis y abrió el café.",
+      "gap": [
+        10,
+        15
+      ],
+      "options": [
+        "llegó",
+        "llegaba"
+      ],
+      "answer": 0,
+      "why": "One arrival, one day.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "l:abrir",
+        "l:ayer",
+        "l:café",
+        "l:llegar",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#a-25",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Vale arrived at six every day and opened the café.",
+      "es": "Vale llegaba a las seis todos los días y abría el café.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "llegó",
+        "llegaba"
+      ],
+      "answer": 1,
+      "why": "Every day is a habit.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:abrir",
+        "l:café",
+        "l:día",
+        "l:llegar",
+        "p:telling-time",
+        "p:todos-los-dias",
+        "p:veces-al"
+      ]
     }
   ]
 }

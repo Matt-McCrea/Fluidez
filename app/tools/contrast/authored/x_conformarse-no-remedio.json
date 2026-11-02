@@ -1,0 +1,155 @@
+[
+  {
+    "id": "1",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "I settle for a small coffee.",
+    "es": "Me conformo con un tinto pequeño.",
+    "gap": [
+      0,
+      15
+    ],
+    "options": [
+      "No me queda más remedio que",
+      "Me conformo con"
+    ],
+    "answer": 1,
+    "why": "Settling for a thing takes conformarse con."
+  },
+  {
+    "id": "2",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "We had no choice but to wait.",
+    "es": "No nos quedó más remedio que esperar.",
+    "gap": [
+      0,
+      28
+    ],
+    "options": [
+      "No nos quedó más remedio que",
+      "Nos conformamos con"
+    ],
+    "answer": 0,
+    "why": "No choice but is no quedar más remedio que."
+  },
+  {
+    "id": "3",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "Rosa is happy with a small table.",
+    "es": "Rosa se conforma con una mesa pequeña.",
+    "gap": [
+      5,
+      20
+    ],
+    "options": [
+      "no le queda más remedio que",
+      "se conforma con"
+    ],
+    "answer": 1,
+    "why": "Settling for a table is conformarse con."
+  },
+  {
+    "id": "4",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "The bus didn't come, so I had no choice but to walk.",
+    "es": "No llegó el bus, así que no me quedó más remedio que caminar.",
+    "gap": [
+      25,
+      52
+    ],
+    "options": [
+      "no me quedó más remedio que",
+      "me conformé con"
+    ],
+    "answer": 0,
+    "why": "Walking was forced on me."
+  },
+  {
+    "id": "5",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "Don Hernando is happy with a simple gift.",
+    "es": "Don Hernando se conforma con un regalo sencillo.",
+    "gap": [
+      13,
+      28
+    ],
+    "options": [
+      "no le queda más remedio que",
+      "se conforma con"
+    ],
+    "answer": 1,
+    "why": "A noun after it means settling for."
+  },
+  {
+    "id": "6",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "Vale had no choice but to ask for help.",
+    "es": "A Vale no le quedó más remedio que pedir ayuda.",
+    "gap": [
+      7,
+      34
+    ],
+    "options": [
+      "no le quedó más remedio que",
+      "se conformó con"
+    ],
+    "answer": 0,
+    "why": "The choice was forced."
+  },
+  {
+    "id": "7",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "Don't settle for less.",
+    "es": "No te conformes con menos.",
+    "gap": [
+      6,
+      19
+    ],
+    "options": [
+      "quedes más remedio que",
+      "conformes con"
+    ],
+    "answer": 1,
+    "why": "Settling for less is conformarse con."
+  },
+  {
+    "id": "8",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 2,
+    "en": "We had no choice but to close early because of the rain.",
+    "es": "No nos quedó más remedio que cerrar temprano por la lluvia.",
+    "gap": [
+      0,
+      28
+    ],
+    "options": [
+      "No nos quedó más remedio que",
+      "Nos conformamos con"
+    ],
+    "answer": 0,
+    "why": "The rain forced it."
+  },
+  {
+    "id": "9",
+    "side": "p:no-quedar-mas-remedio",
+    "rung": 1,
+    "en": "She is never happy; she doesn't settle for anything.",
+    "es": "Nunca está contenta; no se conforma con nada.",
+    "gap": [
+      24,
+      39
+    ],
+    "options": [
+      "le queda más remedio que",
+      "se conforma con"
+    ],
+    "answer": 1,
+    "why": "Not settling for anything."
+  }
+]

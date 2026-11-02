@@ -1,0 +1,36 @@
+[
+  {
+    "id": "16",
+    "side": "g:se-impersonal",
+    "rung": 1,
+    "en": "You eat really well at the café.",
+    "es": "En el café se come muy bien.",
+    "gap": [
+      14,
+      18
+    ],
+    "options": [
+      "comen",
+      "come"
+    ],
+    "answer": 1,
+    "why": "Nobody named, just people in general, so se and the singular."
+  },
+  {
+    "id": "19",
+    "side": "g:se-impersonal",
+    "rung": 1,
+    "en": "You can't smoke here.",
+    "es": "Aquí no se puede fumar.",
+    "gap": [
+      11,
+      16
+    ],
+    "options": [
+      "puede",
+      "pueden"
+    ],
+    "answer": 0,
+    "why": "Nobody named, just people in general, so se and the singular."
+  }
+]

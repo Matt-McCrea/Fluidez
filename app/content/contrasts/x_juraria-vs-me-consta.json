@@ -59,6 +59,277 @@
         "p:me-te-nos-objects",
         "p:no-me-cabe-duda"
       ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-1",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:juraria-que",
+      "rung": 1,
+      "en": "I could swear I left the keys here, but they aren't.",
+      "es": "Juraría que dejé las llaves aquí, pero no están.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 1,
+      "why": "The keys are missing, so it's only a strong memory.",
+      "requires": [
+        "g:conditional",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:aquí",
+        "l:dejar",
+        "l:estar",
+        "l:jurar",
+        "l:llave",
+        "p:aqui-ahi-alla",
+        "p:juraria-que",
+        "p:pues-claro-que"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-2",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:no-me-cabe-duda",
+      "rung": 1,
+      "en": "I know for a fact Rosa paid, I saw the receipt.",
+      "es": "Me consta que Rosa pagó, yo vi el recibo.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 0,
+      "why": "Seeing the receipt makes it a verified fact.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:preterite-er-ir",
+        "g:that-clauses",
+        "l:constar",
+        "l:pagar",
+        "l:recibo",
+        "l:ver",
+        "p:me-te-nos-objects",
+        "p:no-me-cabe-duda"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-3",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:juraria-que",
+      "rung": 1,
+      "en": "I could swear Tomás said Thursday, but maybe it was Friday.",
+      "es": "Juraría que Tomás dijo el jueves, pero tal vez fue el viernes.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 1,
+      "why": "Doubt follows, so it's a memory.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:decir",
+        "l:jueves",
+        "l:jurar",
+        "l:ser",
+        "l:vez",
+        "l:viernes",
+        "p:days-el-lunes",
+        "p:juraria-que",
+        "p:pues-claro-que"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-4",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:no-me-cabe-duda",
+      "rung": 1,
+      "en": "I can vouch that the money arrived, I was there when it came.",
+      "es": "Me consta que llegó la plata, yo estaba ahí cuando llegó.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 0,
+      "why": "Being there makes it certain.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:present-ar",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:ahí",
+        "l:constar",
+        "l:estar",
+        "l:llegar",
+        "l:plata",
+        "p:aqui-ahi-alla",
+        "p:cuando-basic",
+        "p:me-te-nos-objects",
+        "p:no-me-cabe-duda"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-5",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:juraria-que",
+      "rung": 1,
+      "en": "I'd swear I've seen that man before, but I don't know where.",
+      "es": "Juraría que ya vi a ese señor, pero no sé dónde.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 1,
+      "why": "Not knowing where means it's a hunch.",
+      "requires": [
+        "c:no-se",
+        "g:conditional",
+        "g:demonstratives",
+        "g:indirect-questions",
+        "g:preterite-er-ir",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:dónde",
+        "l:jurar",
+        "l:saber",
+        "l:señor",
+        "l:ver",
+        "p:juraria-que",
+        "p:personal-a",
+        "p:pues-claro-que"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-6",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:no-me-cabe-duda",
+      "rung": 2,
+      "en": "I know for sure Don Hernando never missed a day, I checked the records.",
+      "es": "Me consta que Don Hernando nunca faltó, revisé los registros.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 0,
+      "why": "Checking records gives proof.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:constar",
+        "l:faltar",
+        "l:registro",
+        "l:revisar",
+        "p:frequency-scale",
+        "p:me-te-nos-objects",
+        "p:no-me-cabe-duda",
+        "p:quedar-faltar-sobrar",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-7",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:juraria-que",
+      "rung": 2,
+      "en": "I could swear it was raining when we left, but I can't be sure.",
+      "es": "Juraría que llovía cuando salimos, pero no estoy seguro.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 1,
+      "why": "Not sure, so juraría.",
+      "requires": [
+        "g:conditional",
+        "g:estar-location-states",
+        "g:imperfect-habitual",
+        "g:present-er-ir",
+        "g:that-clauses",
+        "l:estar",
+        "l:jurar",
+        "l:llover",
+        "l:salir",
+        "l:seguro",
+        "p:cuando-basic",
+        "p:estar-seguro-de-que",
+        "p:juraria-que",
+        "p:pues-claro-que"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#a-8",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:no-me-cabe-duda",
+      "rung": 1,
+      "en": "I can attest that Vale worked all night, I was with her.",
+      "es": "Me consta que Vale trabajó toda la noche, yo estuve con ella.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me consta",
+        "Juraría"
+      ],
+      "answer": 0,
+      "why": "Being with her makes it first hand.",
+      "requires": [
+        "c:con-el-ella",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "g:that-clauses",
+        "l:constar",
+        "l:estar",
+        "l:noche",
+        "l:trabajar",
+        "p:me-te-nos-objects",
+        "p:no-me-cabe-duda",
+        "p:todos-los-dias"
+      ]
     }
   ]
 }

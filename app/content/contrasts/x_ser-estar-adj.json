@@ -603,6 +603,233 @@
         "l:estar",
         "l:serio"
       ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-3",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "The soup is cold.",
+      "es": "La sopa está fría.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:frío",
+        "l:sopa"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-5",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "I'm ready now, let's go. (a woman speaking)",
+      "es": "Ya estoy lista, vámonos.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "estoy",
+        "soy"
+      ],
+      "answer": 0,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:estar",
+        "l:listo",
+        "l:vámonos"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-7",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Don Hernando is rich and lives in Usaquén.",
+      "es": "Don Hernando es rico y vive en Usaquén.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:present-er-ir",
+        "g:ser-identity",
+        "l:rico",
+        "l:ser",
+        "l:vivir",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-8",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "My son has gotten so big.",
+      "es": "Mi hijo está muy grande.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "l:estar",
+        "l:grande",
+        "l:hijo",
+        "p:possessives-basic",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-9",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Tomás is tall.",
+      "es": "Tomás es alto.",
+      "gap": [
+        6,
+        8
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:ser-identity",
+        "l:alto",
+        "l:ser",
+        "p:es-tiene-lleva"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-10",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Bogotá is a cold city.",
+      "es": "Bogotá es fría.",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:ser-identity",
+        "l:frío",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-11",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "Today Bogotá is cold.",
+      "es": "Hoy Bogotá está fría.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "l:estar",
+        "l:frío",
+        "l:hoy"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-13",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "That man is mean to everyone.",
+      "es": "Ese señor es malo con todos.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "It describes what someone or something is like, so ser.",
+      "requires": [
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:malo",
+        "l:ser",
+        "l:señor",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#a-14",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-estar-adjectives",
+      "rung": 1,
+      "en": "Vale is happy with her job.",
+      "es": "Vale está contenta con su trabajo.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "It describes how it is right now, so estar.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:contento",
+        "l:estar",
+        "l:trabajo",
+        "p:contento-con-de",
+        "p:possessives-basic"
+      ]
     }
   ]
 }

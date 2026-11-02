@@ -1,0 +1,121 @@
+[
+  {
+    "id": "2",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "Tomás, you should sleep more.",
+    "es": "Tomás, tú deberías dormir más.",
+    "gap": [
+      10,
+      18
+    ],
+    "options": [
+      "deberías",
+      "habría que"
+    ],
+    "answer": 0,
+    "why": "Addressed to a person with tú."
+  },
+  {
+    "id": "3",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "It would be necessary to raise prices.",
+    "es": "Habría que subir los precios.",
+    "gap": [
+      0,
+      10
+    ],
+    "options": [
+      "Deberías",
+      "Habría que"
+    ],
+    "answer": 1,
+    "why": "A general need, nobody addressed."
+  },
+  {
+    "id": "4",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "Vale, you should call your mother.",
+    "es": "Vale, tú deberías llamar a tu mamá.",
+    "gap": [
+      9,
+      17
+    ],
+    "options": [
+      "deberías",
+      "habría que"
+    ],
+    "answer": 0,
+    "why": "Advice to one person."
+  },
+  {
+    "id": "5",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "First we'd have to check the budget.",
+    "es": "Primero habría que revisar el presupuesto.",
+    "gap": [
+      8,
+      18
+    ],
+    "options": [
+      "deberías",
+      "habría que"
+    ],
+    "answer": 1,
+    "why": "An impersonal need."
+  },
+  {
+    "id": "6",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "Don Hernando, you should rest a little.",
+    "es": "Don Hernando, usted debería descansar un poco.",
+    "gap": [
+      20,
+      27
+    ],
+    "options": [
+      "debería",
+      "habría que"
+    ],
+    "answer": 0,
+    "why": "Advice to usted."
+  },
+  {
+    "id": "7",
+    "side": "p:habria-que",
+    "rung": 2,
+    "en": "On Saturdays we'd have to open earlier.",
+    "es": "Los sábados habría que abrir más temprano.",
+    "gap": [
+      12,
+      22
+    ],
+    "options": [
+      "deberías",
+      "habría que"
+    ],
+    "answer": 1,
+    "why": "A general need."
+  },
+  {
+    "id": "8",
+    "side": "p:habria-que",
+    "rung": 1,
+    "en": "You all should try the new soup.",
+    "es": "Ustedes deberían probar la sopa nueva.",
+    "gap": [
+      8,
+      16
+    ],
+    "options": [
+      "deberían",
+      "habría que"
+    ],
+    "answer": 0,
+    "why": "Advice to ustedes."
+  }
+]

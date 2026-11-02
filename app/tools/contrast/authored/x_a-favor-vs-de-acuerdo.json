@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "side": "p:estar-de-acuerdo-con-en",
+    "rung": 1,
+    "en": "I agree with you, Rosa.",
+    "es": "Estoy de acuerdo contigo, Rosa.",
+    "gap": [
+      6,
+      16
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 1,
+    "why": "You agree with a person, you don't favor them."
+  },
+  {
+    "id": "2",
+    "side": "p:estar-a-favor-de",
+    "rung": 1,
+    "en": "Tomás is in favor of opening on Sundays.",
+    "es": "Tomás está a favor de abrir los domingos.",
+    "gap": [
+      11,
+      18
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 0,
+    "why": "Being for an idea is a favor de."
+  },
+  {
+    "id": "3",
+    "side": "p:estar-de-acuerdo-con-en",
+    "rung": 1,
+    "en": "We don't agree on the price.",
+    "es": "No estamos de acuerdo en el precio.",
+    "gap": [
+      11,
+      21
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 1,
+    "why": "Agreeing on something is de acuerdo."
+  },
+  {
+    "id": "4",
+    "side": "p:estar-a-favor-de",
+    "rung": 1,
+    "en": "Are you for or against the new menu?",
+    "es": "¿Estás a favor o en contra del menú nuevo?",
+    "gap": [
+      7,
+      14
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 0,
+    "why": "For or against is a favor or en contra."
+  },
+  {
+    "id": "5",
+    "side": "p:estar-de-acuerdo-con-en",
+    "rung": 1,
+    "en": "Vale agrees with her father.",
+    "es": "Vale está de acuerdo con su papá.",
+    "gap": [
+      10,
+      20
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 1,
+    "why": "Agreeing with someone is de acuerdo con."
+  },
+  {
+    "id": "6",
+    "side": "p:estar-a-favor-de",
+    "rung": 1,
+    "en": "Most people are in favor of the change.",
+    "es": "La mayoría está a favor del cambio.",
+    "gap": [
+      16,
+      23
+    ],
+    "options": [
+      "a favor",
+      "de acuerdo"
+    ],
+    "answer": 0,
+    "why": "Supporting a change is a favor de."
+  }
+]

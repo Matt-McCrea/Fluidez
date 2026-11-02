@@ -1,0 +1,138 @@
+[
+  {
+    "id": "3",
+    "side": "g:imperfect-habitual",
+    "rung": 1,
+    "en": "Don Hernando used to go to the plaza every afternoon.",
+    "es": "Don Hernando iba a la plaza todas las tardes.",
+    "gap": [
+      13,
+      16
+    ],
+    "options": [
+      "fue",
+      "iba"
+    ],
+    "answer": 1,
+    "why": "Every afternoon is a repeated habit."
+  },
+  {
+    "id": "4",
+    "side": "g:preterite-irregular-strong",
+    "rung": 1,
+    "en": "Last Saturday Vale went to Villa de Leyva.",
+    "es": "El sábado pasado Vale fue a Villa de Leyva.",
+    "gap": [
+      22,
+      25
+    ],
+    "options": [
+      "fue",
+      "iba"
+    ],
+    "answer": 0,
+    "why": "One trip, finished."
+  },
+  {
+    "id": "9",
+    "side": "g:imperfect-habitual",
+    "rung": 1,
+    "en": "The café was small and it smelled like fresh bread.",
+    "es": "El café era pequeño y olía a pan fresco.",
+    "gap": [
+      8,
+      11
+    ],
+    "options": [
+      "fue",
+      "era"
+    ],
+    "answer": 1,
+    "why": "This describes how the place was."
+  },
+  {
+    "id": "10",
+    "side": "g:preterite-irregular-strong",
+    "rung": 1,
+    "en": "The party was amazing, and everyone danced until two.",
+    "es": "La fiesta fue increíble y todos bailaron hasta las dos.",
+    "gap": [
+      10,
+      13
+    ],
+    "options": [
+      "fue",
+      "era"
+    ],
+    "answer": 0,
+    "why": "Judging the whole party as one finished thing."
+  },
+  {
+    "id": "13",
+    "side": "g:imperfect-habitual",
+    "rung": 1,
+    "en": "Back then Vale worked at a bakery and lived near the river.",
+    "es": "En esa época Vale trabajaba en una panadería y vivía cerca del río.",
+    "gap": [
+      18,
+      27
+    ],
+    "options": [
+      "trabajó",
+      "trabajaba"
+    ],
+    "answer": 1,
+    "why": "Back then sets a period as background."
+  },
+  {
+    "id": "14",
+    "side": "g:preterite-irregular-strong",
+    "rung": 1,
+    "en": "Last year Vale worked at a bakery for three months.",
+    "es": "El año pasado Vale trabajó en una panadería durante tres meses.",
+    "gap": [
+      19,
+      26
+    ],
+    "options": [
+      "trabajó",
+      "trabajaba"
+    ],
+    "answer": 0,
+    "why": "Three months is a closed stretch."
+  },
+  {
+    "id": "24",
+    "side": "g:preterite-irregular-strong",
+    "rung": 1,
+    "en": "Yesterday Vale arrived at six and opened the café.",
+    "es": "Ayer Vale llegó a las seis y abrió el café.",
+    "gap": [
+      10,
+      15
+    ],
+    "options": [
+      "llegó",
+      "llegaba"
+    ],
+    "answer": 0,
+    "why": "One arrival, one day."
+  },
+  {
+    "id": "25",
+    "side": "g:imperfect-habitual",
+    "rung": 1,
+    "en": "Vale arrived at six every day and opened the café.",
+    "es": "Vale llegaba a las seis todos los días y abría el café.",
+    "gap": [
+      5,
+      12
+    ],
+    "options": [
+      "llegó",
+      "llegaba"
+    ],
+    "answer": 1,
+    "why": "Every day is a habit."
+  }
+]

@@ -63,6 +63,248 @@
         "l:ser",
         "p:yo-diria-que"
       ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-1",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:a-mi-modo-de-ver",
+      "rung": 1,
+      "en": "The way I see it, the bus is faster.",
+      "es": "A mi modo de ver, el bus es más rápido.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "A mi modo de ver",
+        "Yo diría que"
+      ],
+      "answer": 0,
+      "why": "You are stating a firm position, so a mi modo de ver.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:bus",
+        "l:modo",
+        "l:rápido",
+        "l:ser",
+        "l:ver",
+        "p:a-mi-juicio",
+        "p:a-mi-modo-de-ver",
+        "p:en-mi-opinion",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-2",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:yo-diria-que",
+      "rung": 1,
+      "en": "I'd say the bus is faster.",
+      "es": "Yo diría que el bus es más rápido.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "A mi modo de ver",
+        "Yo diría que"
+      ],
+      "answer": 1,
+      "why": "You are floating a view gently, so yo diría que.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:bus",
+        "l:decir",
+        "l:rápido",
+        "l:ser",
+        "p:yo-diria-que"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-3",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:yo-diria-que",
+      "rung": 1,
+      "en": "I'd say Rosa is about forty.",
+      "es": "Yo diría que Rosa tiene unos cuarenta años.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 0,
+      "why": "A rough guess is tentative, so yo diría que.",
+      "requires": [
+        "c:tienes",
+        "g:conditional",
+        "g:gender-articles",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:año",
+        "l:decir",
+        "l:tener",
+        "p:aproximar-cifras",
+        "p:tener-anos",
+        "p:unos-approx",
+        "p:yo-diria-que"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-4",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:a-mi-modo-de-ver",
+      "rung": 1,
+      "en": "The way I see it, Don Hernando should keep the shop.",
+      "es": "A mi modo de ver, Don Hernando debe quedarse con la tienda.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 1,
+      "why": "This is a firm position you would defend, so a mi modo de ver.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:reflexive-routine",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:modo",
+        "l:quedarse",
+        "l:tienda",
+        "l:ver",
+        "p:a-mi-juicio",
+        "p:a-mi-modo-de-ver",
+        "p:en-mi-opinion",
+        "p:possessives-basic",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-5",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:yo-diria-que",
+      "rung": 1,
+      "en": "I'd say it is going to rain.",
+      "es": "Yo diría que va a llover.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 0,
+      "why": "A soft prediction leaves room to disagree, so yo diría que.",
+      "requires": [
+        "c:que-va",
+        "g:conditional",
+        "g:ir-a-plans",
+        "l:decir",
+        "l:ir",
+        "l:llover",
+        "p:yo-diria-que"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-6",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:a-mi-modo-de-ver",
+      "rung": 1,
+      "en": "The way I see it, the price is unfair.",
+      "es": "A mi modo de ver, el precio es injusto.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 1,
+      "why": "A firm judgment takes a mi modo de ver.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:injusto",
+        "l:modo",
+        "l:precio",
+        "l:ser",
+        "l:ver",
+        "p:a-mi-juicio",
+        "p:a-mi-modo-de-ver",
+        "p:en-mi-opinion",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-7",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:yo-diria-que",
+      "rung": 1,
+      "en": "I'd say Tomás is tired.",
+      "es": "Yo diría que Tomás está cansado.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 0,
+      "why": "You are only guessing, so yo diría que.",
+      "requires": [
+        "g:conditional",
+        "g:estar-location-states",
+        "g:that-clauses",
+        "l:cansado",
+        "l:decir",
+        "l:estar",
+        "p:yo-diria-que"
+      ]
+    },
+    {
+      "id": "x:modo-de-ver-vs-yo-diria#a-8",
+      "node": "x:modo-de-ver-vs-yo-diria",
+      "side": "p:a-mi-modo-de-ver",
+      "rung": 1,
+      "en": "The way I see it, Vale is right.",
+      "es": "A mi modo de ver, Vale tiene razón.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Yo diría que",
+        "A mi modo de ver"
+      ],
+      "answer": 1,
+      "why": "You are taking a side firmly, so a mi modo de ver.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:modo",
+        "l:razón",
+        "l:tener",
+        "l:ver",
+        "p:a-mi-juicio",
+        "p:a-mi-modo-de-ver",
+        "p:en-mi-opinion",
+        "p:possessives-basic",
+        "p:tener-razon"
+      ]
     }
   ]
 }

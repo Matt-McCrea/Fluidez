@@ -137,6 +137,138 @@
         "l:vivir",
         "p:seguir-gerundio"
       ]
+    },
+    {
+      "id": "x:seguir-dejar-de#a-1",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "I stopped eating meat.",
+      "es": "Dejé de comer carne.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Dejé de comer",
+        "Seguí comiendo"
+      ],
+      "answer": 0,
+      "why": "It ended, so dejar de plus the dictionary form.",
+      "requires": [
+        "g:preterite-ar",
+        "l:carne",
+        "l:comer",
+        "l:dejar",
+        "p:dejar-de-inf"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#a-2",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "Rosa keeps selling empanadas.",
+      "es": "Rosa sigue vendiendo empanadas.",
+      "gap": [
+        5,
+        20
+      ],
+      "options": [
+        "deja de vender",
+        "sigue vendiendo"
+      ],
+      "answer": 1,
+      "why": "It is still going, so seguir plus the -ando or -iendo form.",
+      "requires": [
+        "g:gerund-ways",
+        "g:stem-e-i",
+        "l:empanar",
+        "l:seguir",
+        "l:vender",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#a-3",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "Tomás stopped smoking last year.",
+      "es": "Tomás dejó de fumar el año pasado.",
+      "gap": [
+        6,
+        19
+      ],
+      "options": [
+        "dejó de fumar",
+        "siguió fumando"
+      ],
+      "answer": 0,
+      "why": "He quit, so dejar de.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:año",
+        "l:dejar",
+        "l:fumar",
+        "l:pasado",
+        "p:dejar-de-inf",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#a-4",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "Are you still studying English? (to a friend)",
+      "es": "¿Sigues estudiando inglés?",
+      "gap": [
+        1,
+        18
+      ],
+      "options": [
+        "Dejas de estudiar",
+        "Sigues estudiando"
+      ],
+      "answer": 1,
+      "why": "Still doing it is seguir plus the -ando form.",
+      "requires": [
+        "g:gerund-ways",
+        "g:stem-e-i",
+        "l:estudiar",
+        "l:inglés",
+        "l:seguir",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#a-5",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "It stopped raining in the afternoon.",
+      "es": "Dejó de llover por la tarde.",
+      "gap": [
+        0,
+        14
+      ],
+      "options": [
+        "Dejó de llover",
+        "Siguió lloviendo"
+      ],
+      "answer": 0,
+      "why": "The rain ended, so dejar de.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:dejar",
+        "l:llover",
+        "l:tarde",
+        "p:dejar-de-inf",
+        "p:por-la-manana"
+      ]
     }
   ]
 }

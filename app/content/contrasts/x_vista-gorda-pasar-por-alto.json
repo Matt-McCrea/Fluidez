@@ -1,5 +1,334 @@
 {
   "node": "x:vista-gorda-pasar-por-alto",
   "decides": "synonym",
-  "items": []
+  "items": [
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-1",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:hacer-la-vista-gorda",
+      "rung": 1,
+      "en": "The guard saw the boys jump the fence and turned a blind eye.",
+      "es": "El guardia vio a los niños saltar la reja y hizo la vista gorda.",
+      "gap": [
+        44,
+        63
+      ],
+      "options": [
+        "hizo la vista gorda",
+        "pasó por alto"
+      ],
+      "answer": 0,
+      "why": "He saw it and pretended not to: hacer la vista gorda.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:preterite-ser-ir-hacer",
+        "l:gordo",
+        "l:guardia",
+        "l:hacer",
+        "l:niño",
+        "l:saltar",
+        "l:ver",
+        "l:vista",
+        "p:hacer-la-vista-gorda",
+        "p:la-vi-salir",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-2",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:pasar-por-alto",
+      "rung": 1,
+      "en": "The teacher missed the mistake in the third line without noticing.",
+      "es": "La profesora pasó por alto el error de la tercera línea sin darse cuenta.",
+      "gap": [
+        13,
+        26
+      ],
+      "options": [
+        "hizo la vista gorda",
+        "pasó por alto"
+      ],
+      "answer": 1,
+      "why": "She did not see it, so pasar por alto.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:prep-infinitive",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:alto",
+        "l:cuenta",
+        "l:darse",
+        "l:error",
+        "l:línea",
+        "l:pasar",
+        "l:profesora",
+        "p:darse-cuenta-de",
+        "p:ordinal-floor",
+        "p:ordinals-primer-tercer",
+        "p:pasar-por-alto"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-3",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:hacer-la-vista-gorda",
+      "rung": 1,
+      "en": "Rosa knew he was late again, but she turned a blind eye.",
+      "es": "Rosa sabía que llegaba tarde otra vez, pero hizo la vista gorda.",
+      "gap": [
+        44,
+        63
+      ],
+      "options": [
+        "hizo la vista gorda",
+        "pasó por alto"
+      ],
+      "answer": 0,
+      "why": "She knew and let it go on purpose.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-ser-ir-hacer",
+        "g:that-clauses",
+        "l:gordo",
+        "l:hacer",
+        "l:llegar",
+        "l:saber",
+        "l:tarde",
+        "l:vez",
+        "l:vista",
+        "p:hacer-la-vista-gorda",
+        "p:llegar-a-tiempo",
+        "p:otro-no-article",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-4",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:pasar-por-alto",
+      "rung": 1,
+      "en": "I skipped the last page because it was not important.",
+      "es": "Pasé por alto la última página porque no era importante.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Hice la vista gorda",
+        "Pasé por alto"
+      ],
+      "answer": 1,
+      "why": "Skipping something unimportant is pasar por alto.",
+      "requires": [
+        "c:era",
+        "c:porque",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:por-para-1",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "g:ser-identity",
+        "l:alto",
+        "l:importante",
+        "l:pasar",
+        "l:página",
+        "l:ser",
+        "p:pasar-por-alto"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-5",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:hacer-la-vista-gorda",
+      "rung": 1,
+      "en": "The police turn a blind eye to the illegal vendors.",
+      "es": "La policía hace la vista gorda con los vendedores ilegales.",
+      "gap": [
+        11,
+        30
+      ],
+      "options": [
+        "hace la vista gorda",
+        "pasa por alto"
+      ],
+      "answer": 0,
+      "why": "Pretending not to see is hacer la vista gorda.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:gordo",
+        "l:hacer",
+        "l:ilegal",
+        "l:policía",
+        "l:vendedor",
+        "l:vista",
+        "p:hacer-la-vista-gorda"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-6",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:pasar-por-alto",
+      "rung": 1,
+      "en": "Tomás missed the sign and kept driving.",
+      "es": "Tomás pasó por alto la señal y siguió manejando.",
+      "gap": [
+        6,
+        19
+      ],
+      "options": [
+        "hizo la vista gorda",
+        "pasó por alto"
+      ],
+      "answer": 1,
+      "why": "He did not notice it, so pasar por alto.",
+      "requires": [
+        "g:gender-articles",
+        "g:gerund-ways",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "l:alto",
+        "l:manejar",
+        "l:pasar",
+        "l:seguir",
+        "l:señal",
+        "p:pasar-por-alto",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-7",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:hacer-la-vista-gorda",
+      "rung": 1,
+      "en": "The boss knows about the extra hours, but she pretends not to see.",
+      "es": "La jefa sabe de las horas extra, pero hace la vista gorda.",
+      "gap": [
+        38,
+        57
+      ],
+      "options": [
+        "hace la vista gorda",
+        "pasa por alto"
+      ],
+      "answer": 0,
+      "why": "Knowing and pretending not to is hacer la vista gorda.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:extra",
+        "l:gordo",
+        "l:hacer",
+        "l:hora",
+        "l:jefe",
+        "l:saber",
+        "l:vista",
+        "p:hacer-la-vista-gorda",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-8",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:pasar-por-alto",
+      "rung": 1,
+      "en": "Let's skip the details and get to the point.",
+      "es": "Pasemos por alto los detalles y vayamos al punto.",
+      "gap": [
+        0,
+        16
+      ],
+      "options": [
+        "Hagamos la vista gorda",
+        "Pasemos por alto"
+      ],
+      "answer": 1,
+      "why": "Leaving details aside is pasar por alto.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "l:alto",
+        "l:detalle",
+        "l:ir",
+        "l:pasar",
+        "l:punto",
+        "p:ir-a-venir-de-place",
+        "p:pasar-por-alto"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-9",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:hacer-la-vista-gorda",
+      "rung": 1,
+      "en": "My neighbor sees everything, but he turns a blind eye for his friends.",
+      "es": "Mi vecino lo ve todo, pero hace la vista gorda con sus amigos.",
+      "gap": [
+        27,
+        46
+      ],
+      "options": [
+        "hace la vista gorda",
+        "pasa por alto"
+      ],
+      "answer": 0,
+      "why": "Seeing it and ignoring it for friends carries blame: hacer la vista gorda.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:amigo",
+        "l:gordo",
+        "l:hacer",
+        "l:vecino",
+        "l:ver",
+        "l:vista",
+        "p:hacer-la-vista-gorda",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:vista-gorda-pasar-por-alto#a-10",
+      "node": "x:vista-gorda-pasar-por-alto",
+      "side": "p:pasar-por-alto",
+      "rung": 1,
+      "en": "Don Hernando missed a small detail in the contract by accident.",
+      "es": "Don Hernando pasó por alto un detalle del contrato sin querer.",
+      "gap": [
+        13,
+        26
+      ],
+      "options": [
+        "hizo la vista gorda",
+        "pasó por alto"
+      ],
+      "answer": 1,
+      "why": "An accidental miss is pasar por alto.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:prep-infinitive",
+        "g:preterite-ar",
+        "l:alto",
+        "l:contrato",
+        "l:detalle",
+        "l:pasar",
+        "l:querer",
+        "p:pasar-por-alto",
+        "p:senor-don-article"
+      ]
+    }
+  ]
 }

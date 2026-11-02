@@ -147,6 +147,267 @@
         "g:yo-irregular",
         "l:saber"
       ]
+    },
+    {
+      "id": "x:saber-conocer#a-1",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Do you know Don Hernando? (to a friend)",
+      "es": "¿Conoces a Don Hernando?",
+      "gap": [
+        1,
+        8
+      ],
+      "options": [
+        "Conoces",
+        "Sabes"
+      ],
+      "answer": 0,
+      "why": "A person or a place you have met, so conocer.",
+      "requires": [
+        "g:present-er-ir",
+        "l:conocer",
+        "p:personal-a",
+        "p:saber-conocer",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-2",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Vale knows how to speak English.",
+      "es": "Vale sabe hablar inglés.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "conoce",
+        "sabe"
+      ],
+      "answer": 1,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:hablar",
+        "l:inglés",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-3",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Tomás hasn't been to Cartagena.",
+      "es": "Tomás no conoce Cartagena.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "conoce",
+        "sabe"
+      ],
+      "answer": 0,
+      "why": "A person or a place you have met, so conocer.",
+      "requires": [
+        "g:present-er-ir",
+        "l:conocer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-5",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Do you know what time it is? (to a friend)",
+      "es": "¿Sabes qué hora es?",
+      "gap": [
+        1,
+        6
+      ],
+      "options": [
+        "Sabes",
+        "Conoces"
+      ],
+      "answer": 0,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "c:que-hora-es",
+        "g:present-er-ir",
+        "l:hora",
+        "l:qué",
+        "l:saber",
+        "l:ser",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-6",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Rosa knows a good restaurant nearby.",
+      "es": "Rosa conoce un buen restaurante cerca.",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "sabe",
+        "conoce"
+      ],
+      "answer": 1,
+      "why": "A person or a place you have met, so conocer.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:buen",
+        "l:cerca",
+        "l:conocer",
+        "l:restaurante",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-8",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Do you all know when the bus arrives?",
+      "es": "¿Saben cuándo llega el bus?",
+      "gap": [
+        1,
+        6
+      ],
+      "options": [
+        "Conocen",
+        "Saben"
+      ],
+      "answer": 1,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:questions",
+        "l:bus",
+        "l:cuándo",
+        "l:llegar",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-9",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Hernando knows a lot about coffee.",
+      "es": "Hernando sabe mucho de café.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "sabe",
+        "conoce"
+      ],
+      "answer": 0,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:café",
+        "l:saber",
+        "p:hedge-knowledge",
+        "p:quantifiers-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-10",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I know this neighborhood well.",
+      "es": "Yo conozco bien este barrio.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "sé",
+        "conozco"
+      ],
+      "answer": 1,
+      "why": "A person or a place you have met, so conocer.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:yo-irregular",
+        "l:barrio",
+        "l:bien",
+        "l:conocer",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:demonstratives-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-11",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I don't know how to cook.",
+      "es": "No sé cocinar.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "sé",
+        "conozco"
+      ],
+      "answer": 0,
+      "why": "A fact or a skill, so saber.",
+      "requires": [
+        "c:no-se",
+        "g:yo-irregular",
+        "l:cocinar",
+        "l:saber"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#a-12",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "Have you all been to the Gold Museum?",
+      "es": "¿Ustedes conocen el Museo del Oro?",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "saben",
+        "conocen"
+      ],
+      "answer": 1,
+      "why": "A person or a place you have met, so conocer.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:conocer",
+        "p:saber-conocer"
+      ]
     }
   ]
 }

@@ -29,6 +29,98 @@
         "p:darsele-bien-mal",
         "p:ser-capaz-de"
       ]
+    },
+    {
+      "id": "x:talento-capacidad#a-3",
+      "node": "x:talento-capacidad",
+      "side": "p:ser-capaz-de",
+      "rung": 1,
+      "en": "I could not bring myself to sing in front of everyone.",
+      "es": "No fui capaz de cantar frente a todos.",
+      "gap": [
+        7,
+        15
+      ],
+      "options": [
+        "capaz de",
+        "bueno para"
+      ],
+      "answer": 0,
+      "why": "Being able to do one particular thing, or not, is capaz de.",
+      "requires": [
+        "c:fui",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:cantar",
+        "l:capaz",
+        "l:frente",
+        "l:ser",
+        "p:capaz-dispuesto-a",
+        "p:darsele-bien-mal",
+        "p:posicion-precisa",
+        "p:ser-capaz-de"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-5",
+      "node": "x:talento-capacidad",
+      "side": "p:ser-capaz-de",
+      "rung": 1,
+      "en": "Are you able to carry that box alone? (to a friend)",
+      "es": "¿Eres capaz de cargar esa caja solo?",
+      "gap": [
+        1,
+        14
+      ],
+      "options": [
+        "Eres capaz de",
+        "Eres bueno para"
+      ],
+      "answer": 0,
+      "why": "One particular feat is ser capaz de.",
+      "requires": [
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:caja",
+        "l:capaz",
+        "l:cargar",
+        "l:ser",
+        "p:capaz-dispuesto-a",
+        "p:cargar-descargar",
+        "p:darsele-bien-mal",
+        "p:ser-capaz-de"
+      ]
+    },
+    {
+      "id": "x:talento-capacidad#a-8",
+      "node": "x:talento-capacidad",
+      "side": "p:ser-capaz-de",
+      "rung": 1,
+      "en": "I couldn't bring myself to fire him.",
+      "es": "No fui capaz de despedirlo.",
+      "gap": [
+        7,
+        15
+      ],
+      "options": [
+        "bueno para",
+        "capaz de"
+      ],
+      "answer": 1,
+      "why": "A single hard act you could not do is capaz de.",
+      "requires": [
+        "c:fui",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:capaz",
+        "l:despedir",
+        "l:ser",
+        "p:capaz-dispuesto-a",
+        "p:darsele-bien-mal",
+        "p:ser-capaz-de"
+      ]
     }
   ]
 }

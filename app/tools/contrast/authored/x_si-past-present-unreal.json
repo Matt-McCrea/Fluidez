@@ -1,0 +1,36 @@
+[
+  {
+    "id": "7",
+    "side": "g:si-hypothetical",
+    "rung": 1,
+    "en": "If it weren't raining now, we would go out.",
+    "es": "Si no lloviera ahora, saldríamos.",
+    "gap": [
+      6,
+      14
+    ],
+    "options": [
+      "lloviera",
+      "hubiera llovido"
+    ],
+    "answer": 0,
+    "why": "It is about now or imagined, so the simple past subjunctive."
+  },
+  {
+    "id": "13",
+    "side": "g:si-past-unreal",
+    "rung": 1,
+    "en": "If it hadn't rained on Saturday, we would have gone to the park.",
+    "es": "Si no hubiera llovido el sábado, habríamos ido al parque.",
+    "gap": [
+      6,
+      21
+    ],
+    "options": [
+      "hubiera llovido",
+      "lloviera"
+    ],
+    "answer": 0,
+    "why": "It is about something already over, so hubiera plus the participle."
+  }
+]

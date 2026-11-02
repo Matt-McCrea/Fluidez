@@ -1,0 +1,291 @@
+[
+  {
+    "id": "1",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Rosa walks more than me.",
+    "es": "Rosa camina más que yo.",
+    "gap": [
+      16,
+      19
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "After more than comes a person, so que."
+  },
+  {
+    "id": "2",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "It costs more than I thought.",
+    "es": "Cuesta más de lo que pensaba.",
+    "gap": [
+      11,
+      13
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "A whole thought follows: de lo que."
+  },
+  {
+    "id": "3",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "This bus is faster than that one.",
+    "es": "Este bus es más rápido que ese.",
+    "gap": [
+      23,
+      26
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "Two things are compared, so que."
+  },
+  {
+    "id": "4",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Vale cooks more than she says.",
+    "es": "Vale cocina más de lo que dice.",
+    "gap": [
+      16,
+      18
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "Than she says is a whole clause: de lo que."
+  },
+  {
+    "id": "5",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Tomás sleeps less than you.",
+    "es": "Tomás duerme menos que tú.",
+    "gap": [
+      19,
+      22
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "A person follows, so que."
+  },
+  {
+    "id": "6",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "The test was harder than I expected.",
+    "es": "La prueba fue más difícil de lo que esperaba.",
+    "gap": [
+      26,
+      28
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "Than I expected is a clause: de lo que."
+  },
+  {
+    "id": "7",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Bogotá is bigger than Cali.",
+    "es": "Bogotá es más grande que Cali.",
+    "gap": [
+      21,
+      24
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "Two cities are compared, so que."
+  },
+  {
+    "id": "8",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "You know more than you think.",
+    "es": "Sabes más de lo que crees.",
+    "gap": [
+      10,
+      12
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "Than you think is a clause: de lo que."
+  },
+  {
+    "id": "9",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "My house is smaller than yours.",
+    "es": "Mi casa es más pequeña que la tuya.",
+    "gap": [
+      23,
+      26
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "Two houses are compared, so que."
+  },
+  {
+    "id": "10",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "He talks less than he should.",
+    "es": "Habla menos de lo que debería.",
+    "gap": [
+      12,
+      14
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "Than he should is a clause: de lo que."
+  },
+  {
+    "id": "11",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Coffee is better than tea.",
+    "es": "El café es mejor que el té.",
+    "gap": [
+      17,
+      20
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 0,
+    "why": "Two drinks are compared, so que."
+  },
+  {
+    "id": "12",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "There are more than a hundred people here.",
+    "es": "Hay más de cien personas aquí.",
+    "gap": [
+      8,
+      10
+    ],
+    "options": [
+      "que",
+      "de"
+    ],
+    "answer": 1,
+    "why": "Before a number, it is de."
+  },
+  {
+    "id": "13",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "It rained more than they said.",
+    "es": "Llovió más de lo que dijeron.",
+    "gap": [
+      11,
+      13
+    ],
+    "options": [
+      "de",
+      "que"
+    ],
+    "answer": 0,
+    "why": "Than they said is a clause: de lo que."
+  },
+  {
+    "id": "14",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "Don Hernando works more than his son.",
+    "es": "Don Hernando trabaja más que su hijo.",
+    "gap": [
+      25,
+      28
+    ],
+    "options": [
+      "de",
+      "que"
+    ],
+    "answer": 1,
+    "why": "A person follows, so que."
+  },
+  {
+    "id": "15",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "The food is cheaper than I imagined.",
+    "es": "La comida es más barata de lo que imaginaba.",
+    "gap": [
+      24,
+      26
+    ],
+    "options": [
+      "de",
+      "que"
+    ],
+    "answer": 0,
+    "why": "Than I imagined is a clause: de lo que."
+  },
+  {
+    "id": "16",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "I have less money than you.",
+    "es": "Tengo menos plata que tú.",
+    "gap": [
+      18,
+      21
+    ],
+    "options": [
+      "de",
+      "que"
+    ],
+    "answer": 1,
+    "why": "A person follows, so que."
+  },
+  {
+    "id": "17",
+    "side": "g:comparatives",
+    "rung": 1,
+    "en": "The trip took less than we planned.",
+    "es": "El viaje duró menos de lo que planeamos.",
+    "gap": [
+      20,
+      22
+    ],
+    "options": [
+      "de",
+      "que"
+    ],
+    "answer": 0,
+    "why": "Than we planned is a clause: de lo que."
+  }
+]

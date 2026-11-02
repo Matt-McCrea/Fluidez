@@ -256,6 +256,113 @@
         "l:café",
         "l:estar"
       ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-1",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The meeting is in my office.",
+      "es": "La reunión es en mi oficina.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "An event takes place somewhere, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:oficina",
+        "l:reunión",
+        "l:ser",
+        "p:event-ser-en",
+        "p:possessives-basic",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-4",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Tomás is at the concert.",
+      "es": "Tomás está en el concierto.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A person or thing is somewhere, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:concierto",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-5",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "Where is the party?",
+      "es": "¿Dónde es la fiesta?",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "An event takes place somewhere, so ser.",
+      "requires": [
+        "g:gender-articles",
+        "g:questions",
+        "g:ser-identity",
+        "l:dónde",
+        "l:fiesta",
+        "l:ser",
+        "p:event-ser-en",
+        "p:question-word-order",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#a-9",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The book is on the table.",
+      "es": "El libro está en la mesa.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "A person or thing is somewhere, so estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:libro",
+        "l:mesa"
+      ]
     }
   ]
 }

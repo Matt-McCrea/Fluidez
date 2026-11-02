@@ -104,6 +104,131 @@
         "l:precio",
         "p:dar-igual"
       ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#a-2",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "Friday seems good to me, let's do it.",
+      "es": "El viernes me parece bien, hagámoslo.",
+      "gap": [
+        14,
+        25
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 0,
+      "why": "Approving is parecer bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:me-parece-bien",
+        "g:commands-with-pronouns",
+        "g:direct-objects",
+        "g:gender-articles",
+        "l:bien",
+        "l:hacer",
+        "l:parecer",
+        "l:viernes",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#a-3",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "It's all the same to Tomás whether we eat here or there.",
+      "es": "A Tomás le da igual comer aquí o allá.",
+      "gap": [
+        11,
+        19
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 1,
+      "why": "Here or there makes no difference.",
+      "requires": [
+        "c:igual",
+        "g:indirect-objects",
+        "g:present-ar",
+        "l:allá",
+        "l:aquí",
+        "l:comer",
+        "l:dar",
+        "l:igual",
+        "p:aqui-ahi-alla",
+        "p:dar-igual"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#a-4",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "Does it seem fine to you all if we start now?",
+      "es": "¿Les parece bien si empezamos ahora?",
+      "gap": [
+        5,
+        16
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 0,
+      "why": "Asking for approval is parecer bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:parecer-quedar",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:si-present",
+        "l:ahora",
+        "l:bien",
+        "l:empezar",
+        "l:parecer",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:me-parece-bien-que",
+        "p:te-parece-bien-que"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#a-6",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "That plan seems good to Rosa.",
+      "es": "A Rosa le parece bien ese plan.",
+      "gap": [
+        10,
+        21
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 0,
+      "why": "Approving a plan is parecer bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:demonstratives",
+        "g:gustar-full",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:bien",
+        "l:parecer",
+        "l:plan",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:me-parece-bien-que",
+        "p:te-parece-bien-que"
+      ]
     }
   ]
 }

@@ -62,6 +62,249 @@
         "p:te-importaria",
         "p:te-importaria-que"
       ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-1",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you mind if I sit here? (to a friend)",
+      "es": "¿Te importa si me siento aquí?",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "siento",
+        "sentara"
+      ],
+      "answer": 0,
+      "why": "After te importa si, the plain present.",
+      "requires": [
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:aquí",
+        "l:importar",
+        "l:sentirse",
+        "p:aqui-ahi-alla",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-2",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you mind if I opened the door? (to a stranger, very gentle)",
+      "es": "¿Le importaría que abriera la puerta?",
+      "gap": [
+        19,
+        26
+      ],
+      "options": [
+        "abro",
+        "abriera"
+      ],
+      "answer": 1,
+      "why": "Le importaría que takes the -ra verb.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:abrir",
+        "l:importar",
+        "l:puerta",
+        "p:me-encanta-que",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-3",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you mind if I use your phone? (to a friend)",
+      "es": "¿Te importa si uso tu celular?",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "uso",
+        "usara"
+      ],
+      "answer": 0,
+      "why": "Te importa si takes the plain present.",
+      "requires": [
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "l:celular",
+        "l:importar",
+        "l:usar",
+        "p:possessives-basic",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-4",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you mind if I asked you something personal?",
+      "es": "¿Te importaría que te preguntara algo personal?",
+      "gap": [
+        22,
+        32
+      ],
+      "options": [
+        "pregunto",
+        "preguntara"
+      ],
+      "answer": 1,
+      "why": "Te importaría que takes the -ra verb.",
+      "requires": [
+        "g:conditional",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:importar",
+        "l:personal",
+        "l:preguntar",
+        "p:indefinites-basic",
+        "p:me-encanta-que",
+        "p:me-te-nos-objects",
+        "p:preguntar-pedir",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-5",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you mind if I turn off the light? (to a friend, casual)",
+      "es": "¿Te importa si apago la luz?",
+      "gap": [
+        1,
+        14
+      ],
+      "options": [
+        "Te importa si",
+        "Te importaría que"
+      ],
+      "answer": 0,
+      "why": "Apago is plain present, so te importa si.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "l:apagar",
+        "l:importar",
+        "l:luz",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-6",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you mind if we left early? (to your boss, very gently)",
+      "es": "¿Le importaría que saliéramos temprano?",
+      "gap": [
+        1,
+        18
+      ],
+      "options": [
+        "Le importa si",
+        "Le importaría que"
+      ],
+      "answer": 1,
+      "why": "Saliéramos is the -ra verb, which goes with importaría que.",
+      "requires": [
+        "g:conditional",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:importar",
+        "l:salir",
+        "l:temprano",
+        "p:me-encanta-que",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-7",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you all mind if I bring a friend?",
+      "es": "¿Les importa si traigo a una amiga?",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "traigo",
+        "trajera"
+      ],
+      "answer": 0,
+      "why": "Importa si takes the plain present.",
+      "requires": [
+        "c:a-cuantas-cuotas",
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "g:yo-irregular",
+        "l:amiga",
+        "l:importar",
+        "l:traer",
+        "p:llevar-traer",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#a-8",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you mind if Rosa came with us?",
+      "es": "¿Te importaría que Rosa viniera con nosotros?",
+      "gap": [
+        24,
+        31
+      ],
+      "options": [
+        "viene",
+        "viniera"
+      ],
+      "answer": 1,
+      "why": "Importaría que takes the -ra verb.",
+      "requires": [
+        "g:conditional",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:prep-pronouns",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:importar",
+        "l:venir",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
     }
   ]
 }

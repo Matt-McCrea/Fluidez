@@ -1,0 +1,155 @@
+[
+  {
+    "id": "1",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "That song sounds familiar, but I can't place it.",
+    "es": "Esa canción me suena, pero no sé de dónde.",
+    "gap": [
+      12,
+      20
+    ],
+    "options": [
+      "me acuerdo",
+      "me suena"
+    ],
+    "answer": 1,
+    "why": "A vague familiarity is me suena."
+  },
+  {
+    "id": "2",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "I remember exactly where we met.",
+    "es": "Me acuerdo exactamente de dónde nos conocimos.",
+    "gap": [
+      0,
+      10
+    ],
+    "options": [
+      "Me acuerdo",
+      "Me suena"
+    ],
+    "answer": 0,
+    "why": "Exact memory is acordarse."
+  },
+  {
+    "id": "3",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "That street rings a bell.",
+    "es": "Esa calle me suena de algo.",
+    "gap": [
+      10,
+      18
+    ],
+    "options": [
+      "me acuerdo",
+      "me suena"
+    ],
+    "answer": 1,
+    "why": "It rings a bell, nothing more."
+  },
+  {
+    "id": "4",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "Do you remember the day we opened?",
+    "es": "¿Te acuerdas del día en que abrimos?",
+    "gap": [
+      1,
+      12
+    ],
+    "options": [
+      "Te acuerdas",
+      "Te suena"
+    ],
+    "answer": 0,
+    "why": "Asking for memory of an event."
+  },
+  {
+    "id": "5",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "I remember his name: it's Eduardo.",
+    "es": "Recuerdo su nombre: es Eduardo.",
+    "gap": [
+      0,
+      8
+    ],
+    "options": [
+      "Me suena",
+      "Recuerdo"
+    ],
+    "answer": 1,
+    "why": "You know the name, so it's remembering."
+  },
+  {
+    "id": "6",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "Those faces look familiar, but I can't say from where.",
+    "es": "Esas caras me suenan, pero no sé de dónde.",
+    "gap": [
+      11,
+      20
+    ],
+    "options": [
+      "me suenan",
+      "recuerdo"
+    ],
+    "answer": 0,
+    "why": "Vague familiarity again."
+  },
+  {
+    "id": "7",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "I don't remember what I ate yesterday.",
+    "es": "No me acuerdo de qué comí ayer.",
+    "gap": [
+      3,
+      13
+    ],
+    "options": [
+      "me suena",
+      "me acuerdo"
+    ],
+    "answer": 1,
+    "why": "Not remembering a fact."
+  },
+  {
+    "id": "8",
+    "side": "c:me-suena",
+    "rung": 1,
+    "en": "Does this address sound familiar to you?",
+    "es": "¿Esta dirección te suena?",
+    "gap": [
+      16,
+      24
+    ],
+    "options": [
+      "te suena",
+      "te acuerdas"
+    ],
+    "answer": 0,
+    "why": "Asking if it rings a bell."
+  },
+  {
+    "id": "9",
+    "side": "c:me-suena",
+    "rung": 2,
+    "en": "I remember perfectly that Rosa always wore a red apron.",
+    "es": "Me acuerdo perfectamente de que Rosa siempre usaba un delantal rojo.",
+    "gap": [
+      0,
+      10
+    ],
+    "options": [
+      "Me suena",
+      "Me acuerdo"
+    ],
+    "answer": 1,
+    "why": "Perfectly rules out a vague hint."
+  }
+]

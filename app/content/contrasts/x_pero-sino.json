@@ -385,6 +385,84 @@
         "l:necesitar",
         "l:tiempo"
       ]
+    },
+    {
+      "id": "x:pero-sino#a-2",
+      "node": "x:pero-sino",
+      "side": "g:pero-sino",
+      "rung": 1,
+      "en": "Rosa didn't come, but she called.",
+      "es": "Rosa no vino, pero llamó.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "sino",
+        "pero"
+      ],
+      "answer": 1,
+      "why": "It adds a new fact, so pero.",
+      "requires": [
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "l:llamar",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:pero-sino#a-4",
+      "node": "x:pero-sino",
+      "side": "g:pero-sino",
+      "rung": 1,
+      "en": "The food is good, but expensive.",
+      "es": "La comida es buena, pero cara.",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "sino",
+        "pero"
+      ],
+      "answer": 1,
+      "why": "No negation, so pero.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:buena",
+        "l:cara",
+        "l:comida",
+        "l:ser",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:pero-sino#a-5",
+      "node": "x:pero-sino",
+      "side": "g:pero-sino",
+      "rung": 1,
+      "en": "Vale didn't leave today, but yesterday.",
+      "es": "Vale no salió hoy, sino ayer.",
+      "gap": [
+        19,
+        23
+      ],
+      "options": [
+        "sino",
+        "pero"
+      ],
+      "answer": 0,
+      "why": "It corrects the day, so sino.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:pero-sino",
+        "g:preterite-er-ir",
+        "l:ayer",
+        "l:hoy",
+        "l:salir"
+      ]
     }
   ]
 }

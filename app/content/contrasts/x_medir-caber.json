@@ -58,6 +58,225 @@
         "p:caber",
         "p:medir-pesar-caber"
       ]
+    },
+    {
+      "id": "x:medir-caber#a-1",
+      "node": "x:medir-caber",
+      "side": "p:medir",
+      "rung": 1,
+      "en": "The shelf is one meter long.",
+      "es": "El estante mide un metro de largo.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 1,
+      "why": "Giving a size is medir.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "l:estante",
+        "l:largo",
+        "l:medir",
+        "l:metro",
+        "p:medir-pesar"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-2",
+      "node": "x:medir-caber",
+      "side": "p:caber",
+      "rung": 1,
+      "en": "Will the cake fit in the fridge?",
+      "es": "¿La torta cabe en la nevera?",
+      "gap": [
+        10,
+        14
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 0,
+      "why": "Fitting inside is caber.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:caber",
+        "l:nevera",
+        "l:torta",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-3",
+      "node": "x:medir-caber",
+      "side": "p:medir",
+      "rung": 1,
+      "en": "How tall is Tomás?",
+      "es": "¿Cuánto mide Tomás?",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 1,
+      "why": "Asking for height is medir.",
+      "requires": [
+        "g:questions",
+        "g:stem-e-i",
+        "l:cuánto",
+        "l:medir",
+        "p:medir",
+        "p:medir-pesar",
+        "p:medir-pesar-caber",
+        "p:question-word-order"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-4",
+      "node": "x:medir-caber",
+      "side": "p:caber",
+      "rung": 1,
+      "en": "We don't all fit in the car.",
+      "es": "No cabemos todos en el carro.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "cabemos",
+        "medimos"
+      ],
+      "answer": 0,
+      "why": "Fitting in a space is caber.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:caber",
+        "l:carro",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-5",
+      "node": "x:medir-caber",
+      "side": "p:medir",
+      "rung": 1,
+      "en": "The room is four meters wide.",
+      "es": "La habitación mide cuatro metros de ancho.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 1,
+      "why": "A measurement.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "l:ancho",
+        "l:habitación",
+        "l:medir",
+        "l:metro",
+        "p:medir",
+        "p:medir-pesar",
+        "p:medir-pesar-caber"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-6",
+      "node": "x:medir-caber",
+      "side": "p:caber",
+      "rung": 1,
+      "en": "That suitcase doesn't fit under the seat.",
+      "es": "Esa maleta no cabe debajo del asiento.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 0,
+      "why": "Fitting under something is caber.",
+      "requires": [
+        "g:demonstratives",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:asiento",
+        "l:caber",
+        "l:debajo",
+        "l:maleta",
+        "p:caber",
+        "p:cerca-de",
+        "p:medir-pesar-caber",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-7",
+      "node": "x:medir-caber",
+      "side": "p:medir",
+      "rung": 1,
+      "en": "Vale is one meter seventy tall.",
+      "es": "Vale mide un metro setenta.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 1,
+      "why": "Height is medir.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "l:medir",
+        "l:metro",
+        "p:medir-pesar"
+      ]
+    },
+    {
+      "id": "x:medir-caber#a-8",
+      "node": "x:medir-caber",
+      "side": "p:caber",
+      "rung": 1,
+      "en": "Everything fits in this box.",
+      "es": "Todo cabe en esta caja.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "cabe",
+        "mide"
+      ],
+      "answer": 0,
+      "why": "Fitting in a box is caber.",
+      "requires": [
+        "g:present-er-ir",
+        "l:caber",
+        "l:caja",
+        "p:caber",
+        "p:demonstratives-basic",
+        "p:medir-pesar-caber"
+      ]
     }
   ]
 }

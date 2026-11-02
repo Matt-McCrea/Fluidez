@@ -39,6 +39,153 @@
         "p:quedar-faltar-sobrar",
         "p:se-podria-objetar-que"
       ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-2",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "You have a point, but it's too expensive.",
+      "es": "No te falta razón, pero es muy caro.",
+      "gap": [
+        0,
+        17
+      ],
+      "options": [
+        "Coincido contigo en que",
+        "No te falta razón"
+      ],
+      "answer": 1,
+      "why": "A point given and then a but is partial agreement.",
+      "requires": [
+        "g:parecer-quedar",
+        "g:present-ar",
+        "g:ser-identity",
+        "l:caro",
+        "l:faltar",
+        "l:razón",
+        "l:ser",
+        "p:no-te-falta-razon",
+        "p:quantifiers-basic",
+        "p:quedar-faltar-sobrar"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-3",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "You have some of the point, but not all of it.",
+      "es": "Algo de razón tienes, pero no toda.",
+      "gap": [
+        0,
+        20
+      ],
+      "options": [
+        "Algo de razón tienes",
+        "Coincido contigo en todo"
+      ],
+      "answer": 0,
+      "why": "Algo de razón tienes gives only part.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "l:razón",
+        "l:tener",
+        "p:indefinites-basic",
+        "p:no-te-falta-razon"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-5",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "You have a point; however, we have no money.",
+      "es": "No te falta razón; ahora bien, no tenemos plata.",
+      "gap": [
+        0,
+        17
+      ],
+      "options": [
+        "No te falta razón",
+        "Coincido contigo en que"
+      ],
+      "answer": 0,
+      "why": "Ahora bien turns the sentence, so partial agreement.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:tienes",
+        "g:parecer-quedar",
+        "g:present-ar",
+        "l:ahora",
+        "l:bien",
+        "l:faltar",
+        "l:plata",
+        "l:razón",
+        "l:tener",
+        "p:ahora-bien-dicho-esto",
+        "p:no-te-falta-razon",
+        "p:quedar-faltar-sobrar",
+        "p:se-podria-objetar-que"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-7",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "He has a point, but he arrived late.",
+      "es": "No le falta razón, pero llegó tarde.",
+      "gap": [
+        0,
+        17
+      ],
+      "options": [
+        "No le falta razón",
+        "Coincide con él"
+      ],
+      "answer": 0,
+      "why": "A point then a but is partial.",
+      "requires": [
+        "g:parecer-quedar",
+        "g:present-ar",
+        "g:preterite-ar",
+        "l:faltar",
+        "l:llegar",
+        "l:razón",
+        "l:tarde",
+        "p:llegar-a-tiempo",
+        "p:no-te-falta-razon",
+        "p:quedar-faltar-sobrar"
+      ]
+    },
+    {
+      "id": "x:parcial-vs-total#a-8",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "On that you convinced me, but not on the price.",
+      "es": "En eso me convenciste, pero no en el precio.",
+      "gap": [
+        0,
+        21
+      ],
+      "options": [
+        "Coincido contigo en todo",
+        "En eso me convenciste"
+      ],
+      "answer": 1,
+      "why": "It gives one point and holds back the rest.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:convencer",
+        "l:precio",
+        "p:demonstratives-basic",
+        "p:me-te-nos-objects",
+        "p:no-te-falta-razon"
+      ]
     }
   ]
 }
