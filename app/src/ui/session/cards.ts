@@ -44,6 +44,8 @@ export interface Check {
   variant?: 'peninsular';
   /** passed through a synonym the course did not teach: counts, but as Hard */
   lenient?: boolean;
+  /** the trap rule that named the slip, when one did (see src/check/traps) */
+  rule?: string;
   /** passed through a swap the card did not teach but Spanish allows: said on the pass screen */
   note?: string;
 }

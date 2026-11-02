@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { execFileSync } from 'node:child_process';
 import { readFileSync, readdirSync } from 'node:fs';
 
 // Content chunks live under content/<kind>/ so the service worker can tell
@@ -29,6 +30,13 @@ function firstWindowGlobs(): string[] {
     ...[...scripts].filter((n) => scriptsOnDisk.has(n)).map((n) => one('scripts', n)),
   ];
 }
+
+// The git tree of content/ this build is made from, for the attempts log (src/ui/data/rev.ts): it moves when the
+// course does and holds still when only the app does. A checkout without git has none, and the log leaves it off.
+function contentRev(): string {
+  try { return execFileSync('git', ['rev-parse', 'HEAD:./content'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim().slice(0, 12); } catch { return ''; }
+}
+process.env.VITE_CONTENT_REV ??= contentRev();
 
 // BASE_PATH is set by the GitHub Pages workflow ('/Fluidez/'); dev, tests and local builds stay at '/'.
 export default defineConfig({

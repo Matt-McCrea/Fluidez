@@ -8,9 +8,11 @@
 // Nothing here chooses a grade or a time. `gradeOf` turns an outcome into a
 // grade, and no clock reading ever reaches it (R17).
 import type { NodeId } from '../../content/schema';
+import type { Feature } from '../../exercises/types';
 import {
   Rating, type Direction, type ExposureEvent, type Grade, type Learner, type ReviewOptions, type SentenceCreditOptions, type StepResult,
 } from '../../learner';
+import { contentRev } from '../data/rev';
 import type { Evidence } from './attribute';
 
 export interface Outcome {
@@ -25,6 +27,18 @@ export interface Outcome {
   lenient?: boolean;
   /** the card asked for no answer (a read card): it was shown, so it can be exposure but never a grade */
   exposure?: boolean;
+  // What the attempts log keeps (see logAnswer). None of it is read by `gradeOf`, and no clock reading ever is (R17).
+  /** the card's look as delivered (see formatOf) */
+  fmt?: string;
+  /** what the learner gave on the first try: the text typed, or the option picked ('' for "I don't know") */
+  given?: string;
+  /** the right version, when the learner was shown it */
+  shown?: string;
+  /** ms from the card appearing to the first key */
+  firstKeyMs?: number;
+  /** the kind of slip the checker named on the first try (a HintKind), and the trap rule that named it */
+  err?: string;
+  rule?: string;
 }
 
 /** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
@@ -41,6 +55,40 @@ export const eventOp = (item: { op: string }): string => (item.op === 'review' ?
 
 /** Which way an outcome moves a node on the output ladder. */
 export const ladderMove = (o: Pick<Outcome, 'correct' | 'tries'>): 'miss' | 'pass' | 'retry' => (!o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+
+// ---------------------------------------------------------------- the attempts log
+
+/** A wrong pick on options that differ in one feature puts the slip on that feature, in the words the checker uses for a typed one. */
+const FEATURE_SLIP: Record<Feature, string> = {
+  tense: 'tense', person: 'person', mood: 'mood', clitic: 'pronoun', copula: 'ser-estar', porpara: 'por-para', number: 'number', gender: 'agreement',
+};
+
+/** The kind of slip an answer made, if one was named, and the rule that named it: the fields an event carries them in, on its first event only. */
+export function slipOf(o: Outcome): { err?: string; rule?: string } {
+  const picked = o.evidence?.picked, feature = o.evidence?.feature;
+  const err = o.err ?? (!o.correct && typeof picked === 'number' && feature ? FEATURE_SLIP[feature] : undefined);
+  return { ...(err ? { err } : {}), ...(o.rule ? { rule: o.rule } : {}) };
+}
+
+/** What an answer was about, for its row: the node it is graded for, the op its event carries, and the sentence if there was one. */
+export interface Answered { node: NodeId; op: string; sentence?: string }
+
+/**
+ * Write the attempts-log row for one answered card: once per answer, by whichever caller took it. A card
+ * that asked for no answer has none to log. The text of the answer lives here and on no event.
+ */
+export function logAnswer(learner: Learner, at: number, about: Answered, o: Outcome): void {
+  if (o.exposure) return;
+  const rev = contentRev();
+  learner.recordAttempt({
+    at, node: about.node, op: about.op, fmt: o.fmt ?? '', given: o.given ?? '', verdict: o.correct ? 'right' : 'wrong',
+    ...(about.sentence ? { sentence: about.sentence } : {}),
+    ...(!o.correct && o.shown ? { answer: o.shown } : {}),
+    ...slipOf(o),
+    ...(o.firstKeyMs !== undefined ? { firstKeyMs: o.firstKeyMs } : {}),
+    ...(rev ? { contentRev: rev } : {}),
+  });
+}
 
 // ---------------------------------------------------------------- crediting an answer
 

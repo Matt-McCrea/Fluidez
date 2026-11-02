@@ -18,7 +18,7 @@ import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
 import type { PracticeSpec } from './practice-spec';
-import { climb, gradeOf, reviewSentence, seen, seenAbout, seenWithEvent, tries12, type Outcome } from './attempt';
+import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
 export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3, checkpoint: 10 }
@@ -94,7 +94,7 @@ export class Freeplay {
   private readonly d: FreeplayDeps;
   private seq = 0;
   private queue: Array<() => Card | undefined> = [];
-  private cur?: { grade: (o: Outcome) => void };
+  private cur?: { grade: (o: Outcome) => void; /** what the answer is about, for the attempts log */ about?: Answered };
   // translate
   private pool: string[] = [];
   private poolAt = 0;
@@ -142,6 +142,7 @@ export class Freeplay {
       if (o.correct && o.tries <= 1) this.right += 1;
       else if (o.correct && o.tries === 2) this.retried += 1;
     }
+    if (this.cur.about) logAnswer(this.d.learner, this.d.now(), this.cur.about, o);
     this.cur.grade(o);
     this.cur = undefined;
   }
@@ -269,11 +270,12 @@ export class Freeplay {
     const card = reviewCard(item, bundle, 'meaning', undefined, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = 'quick';
     this.cur = {
+      about: { node, op: 'quick', sentence },
       grade: (o) => {
         // a bare read card: shown, not asked, so the card stays as it was
         if (o.exposure) { seen(learner, [node], this.d.now()); return; }
         const grade = gradeOf(o);
-        const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: tries12(o.tries), sentence, novel };
+        const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: tries12(o.tries), sentence, novel, ...slipOf(o) };
         if (!learner.hasCard(node, dir)) return;
         reviewSentence(learner, [node], dir, grade, opts);
         if (sentence) this.markSeen(sentence);
@@ -318,8 +320,9 @@ export class Freeplay {
     const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = op;
     this.cur = {
+      about: { node, op: 'train', sentence },
       grade: (o) => {
-        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
+        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel, ...slipOf(o) });
         this.markSeen(sentence);
         climb(learner, node, o);
       },
@@ -370,6 +373,7 @@ export class Freeplay {
     const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = op;
     this.cur = {
+      about: { node, op: 'checkpoint', sentence },
       grade: (o) => {
         const first = o.correct && o.tries <= 1;
         const row = this.byUnit.get(unit) ?? { right: 0, total: 0 };
@@ -377,7 +381,7 @@ export class Freeplay {
         if (first) row.right += 1;
         this.byUnit.set(unit, row);
         if (!first) this.missed.add(node);
-        this.exposeAbout(node, credit, { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
+        this.exposeAbout(node, credit, { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel, ...slipOf(o) });
         this.markSeen(sentence);
       },
     };
@@ -412,8 +416,9 @@ export class Freeplay {
       const card = practiceCard(item, bundle, this.d.rng() * 1e9, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
       this.lastOp = 'translate';
       this.cur = {
+        about: { node, op: 'grind', sentence },
         grade: (o) => {
-          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
+          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel, ...slipOf(o) });
           this.markSeen(sentence);
         },
       };
@@ -452,8 +457,10 @@ export class Freeplay {
     const credit = [tenseNode(learner, cue.tense), learner.isIntroduced(`l:${cue.verb.inf}`) ? `l:${cue.verb.inf}` : undefined].filter((x): x is NodeId => !!x);
     this.lastOp = 'conjugate';
     this.cur = {
+      // a form drill with no tense node taught and no verb met has no node to key a row on
+      ...(credit[0] ? { about: { node: credit[0], op: 'grind' } } : {}),
       grade: (o) => {
-        seenWithEvent(learner, credit, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms }, this.d.now());
+        seenWithEvent(learner, credit, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, ...slipOf(o) }, this.d.now());
       },
     };
     return card;

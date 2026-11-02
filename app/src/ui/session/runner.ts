@@ -15,7 +15,7 @@ import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades } from './attribute';
-import { climb, eventOp, gradeOf, lessonStep, reviewNode, reviewSentence, seen, seenAbout, tries12, type Outcome } from './attempt';
+import { climb, eventOp, gradeOf, lessonStep, logAnswer, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome } from './attempt';
 import { LearnQueue } from './order';
 
 // An outcome and its grade are the seam's (attempt.ts); the runner is where everyone already imports them from.
@@ -350,8 +350,17 @@ export class SessionRunner {
     seenAbout(this.learner, target, credit, event, at);
   }
 
+  /** Log one answered card in the attempts log. Whoever takes an answer calls this once. */
+  answered(about: Answered, o: Outcome): void { logAnswer(this.learner, this.now(), about, o); }
+
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
   learningStep(node: NodeId, o: Outcome, credit: NodeId[] = [node], productive?: boolean, op = 'learn', typed = false): boolean {
+    this.answered({ node, op }, o);
+    return this.step(node, o, credit, productive, op, typed);
+  }
+
+  private step(node: NodeId, o: Outcome, credit: NodeId[], productive: boolean | undefined, op: string, typed: boolean): boolean {
+    const slip = slipOf(o);
     if (!this.inScore) this.bump();
     this.present(node, productive);
     if (o.exposure) return true; // shown, not asked: not a retrieval to count, nor one to ask again
@@ -360,10 +369,10 @@ export class SessionRunner {
     if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
     else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
     if (!this.learner.isLearning(node)) {
-      this.exposeAbout(node, credit, { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms });
+      this.exposeAbout(node, credit, { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, ...slip });
       return true;
     }
-    const st = lessonStep(this.learner, node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries) });
+    const st = lessonStep(this.learner, node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries), ...slip });
     if (st.done) this.learner.completeIntroduction(node, { at: this.now() });
     return st.done;
   }
@@ -377,6 +386,7 @@ export class SessionRunner {
   /** Credit one item exactly per its `scoring`. */
   score(item: Item, o: Outcome): void {
     this.bump();
+    this.answered({ node: item.node, op: eventOp(item), sentence: 'sentence' in item ? item.sentence : undefined }, o);
     this.inScore = true;
     try { this.scoreItem(item, o); } finally { this.inScore = false; }
   }
@@ -402,6 +412,7 @@ export class SessionRunner {
     if (item.scoring === 'learning') this.begin(item.node, item.op === 'learn' ? item.productive : undefined);
     this.stepLadder(item, o);
     const at = this.now();
+    const slip = slipOf(o);
     switch (item.scoring) {
       case 'review': {
         const dir: Direction = 'direction' in item ? item.direction : 'receptive';
@@ -412,28 +423,28 @@ export class SessionRunner {
         const op = eventOp(item);
         const tries = tries12(o.tries);
         if (!targets.length) {
-          this.exposeAbout(item.node, item.credit, { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined }, at);
+          this.exposeAbout(item.node, item.credit, { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined, ...slip }, at);
           return;
         }
         if (sentence) {
           const novel = item.op === 'review' ? item.novel : true; // a recombine item is novel by construction
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          reviewSentence(this.learner, item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence });
+          reviewSentence(this.learner, item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence, ...slip });
           if (expose.length) seen(this.learner, expose, at);
         } else {
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          Object.keys(grades).forEach((t, i) => reviewNode(this.learner, t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries }));
+          Object.keys(grades).forEach((t, i) => reviewNode(this.learner, t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries, ...(i === 0 ? slip : {}) }));
           if (expose.length) seen(this.learner, expose, at);
         }
         return;
       }
       case 'learning':
-        this.learningStep(item.node, o, item.credit, item.op === 'learn' ? item.productive : undefined, eventOp(item));
+        this.step(item.node, o, item.credit, item.op === 'learn' ? item.productive : undefined, eventOp(item), false);
         return;
       case 'exposure':
         this.exposeAbout(item.node, item.credit, {
           op: eventOp(item), direction: 'direction' in item ? item.direction : 'receptive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms,
-          sentence: 'sentence' in item ? item.sentence : undefined,
+          sentence: 'sentence' in item ? item.sentence : undefined, ...slip,
         }, at);
         return;
       case 'none':
@@ -481,6 +492,7 @@ export class SessionRunner {
    */
   scoreRecap(item: RecapItem, o: Outcome): void {
     this.bump();
+    this.answered({ node: item.node, op: 'recap', sentence: item.sentence }, o);
     if (o.exposure) { seen(this.learner, item.credit, this.now()); return; }
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
@@ -488,17 +500,18 @@ export class SessionRunner {
     const at = this.now();
     const grade = gradeOf(o);
     const tries = tries12(o.tries);
+    const slip = slipOf(o);
     if (item.kind === 'new') {
-      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms }, at);
+      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms, ...slip }, at);
       return;
     }
     if (!this.learner.hasCard(item.node, item.direction)) return;
     if (item.sentence) {
       reviewSentence(this.learner, item.credit, item.direction, grade, {
-        targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence,
+        targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence, ...slip,
       });
     } else {
-      reviewNode(this.learner, item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries });
+      reviewNode(this.learner, item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries, ...slip });
     }
   }
 

@@ -3,7 +3,8 @@
 // version and one plain reason. Read: read, peek at the English, move on.
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Card, Check } from '../session/cards';
-import type { Outcome } from '../session/runner';
+import { formatOf } from '../session/order';
+import type { Outcome } from '../session/attempt';
 import { AnswerField } from './answer';
 import { Es, Rich, Txt } from './text';
 
@@ -62,10 +63,13 @@ export function CardView(p: CardViewProps) {
   const t0 = useRef(performance.now());
   useEffect(() => { t0.current = performance.now(); }, [p.card.key]);
   const ms = () => Math.round(performance.now() - t0.current);
+  // every outcome says what the card looked like, for the attempts log
+  const fmt = formatOf(p.card);
+  const onDone = (o: Outcome, input?: string) => p.onDone({ ...o, fmt }, input);
   switch (p.card.type) {
-    case 'mcq': return <McqView {...p} card={p.card} ms={ms} />;
-    case 'type': return <TypeView {...p} card={p.card} ms={ms} />;
-    case 'read': return <ReadView {...p} card={p.card} ms={ms} />;
+    case 'mcq': return <McqView {...p} onDone={onDone} card={p.card} ms={ms} />;
+    case 'type': return <TypeView {...p} onDone={onDone} card={p.card} ms={ms} />;
+    case 'read': return <ReadView {...p} onDone={onDone} card={p.card} ms={ms} />;
   }
 }
 
@@ -78,7 +82,32 @@ function Continue({ onClick, label, focus = true }: { onClick: () => void; label
 /** What an MCQ reports and says once answered; `picked` is an option index, or 'unsure' for "I don't know". */
 export function mcqResult(card: Extract<Card, { type: 'mcq' }>, picked: number | 'unsure', ms: number): { outcome: Outcome; right: boolean; lead: string } {
   const right = picked === card.answer;
-  return { outcome: { correct: right, tries: 1, ms, evidence: { picked, feature: card.feature } }, right, lead: picked === 'unsure' ? 'No problem.' : 'Not quite.' };
+  return {
+    outcome: {
+      correct: right, tries: 1, ms, evidence: { picked, feature: card.feature },
+      given: picked === 'unsure' ? '' : card.options[picked].text, ...(right ? {} : { shown: card.options[card.answer].text }),
+    },
+    right, lead: picked === 'unsure' ? 'No problem.' : 'Not quite.',
+  };
+}
+
+/**
+ * What a typed card reports when it ends: how it ended, and, for the attempts log, what was given on
+ * the first try and the slip the checker named in it (not in a second try that fixed it). An accent
+ * slip is named whether the card forgave it or not. Showing the answer before typing anything names nothing.
+ */
+export function typedOutcome(p: {
+  passed: boolean; tries: number; ms: number; value: string; first: string; result: Check | null; firstCheck: Check | null; firstKeyMs?: number;
+}): Outcome {
+  const slip = p.firstCheck ?? (p.value.trim() ? p.result : null);
+  const err = slip && (!slip.pass || slip.near) ? slip.hintKind ?? (slip.near ? 'accents' : undefined) : undefined;
+  return {
+    correct: p.passed, tries: Math.max(1, p.tries), ms: p.ms, ...(p.result?.lenient ? { lenient: true } : {}),
+    evidence: { input: p.value, answer: p.result?.answer },
+    given: p.first || p.value, ...(!p.passed && p.result ? { shown: p.result.answer } : {}),
+    ...(p.firstKeyMs !== undefined ? { firstKeyMs: p.firstKeyMs } : {}),
+    ...(err ? { err } : {}), ...(slip?.rule ? { rule: slip.rule } : {}),
+  };
 }
 
 function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extract<Card, { type: 'mcq' }>; ms: () => number }) {
@@ -130,7 +159,10 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
   const [tries, setTries] = useState(0);
   const [result, setResult] = useState<Check | null>(null);
   const [first, setFirst] = useState('');
+  const [firstCheck, setFirstCheck] = useState<Check | null>(null);
   const [took, setTook] = useState(0);
+  /** ms to the first key: retrieval onset, without the thumbs (logged, never graded) */
+  const keyed = useRef<number | undefined>(undefined);
   const [revealed, setRevealed] = useState(false);
   const passed = !!result?.pass;
   const finished = passed || revealed;
@@ -143,7 +175,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
     const n = tries + 1;
     setTries(n);
     setResult(r);
-    if (n === 1) setFirst(value);
+    if (n === 1) { setFirst(value); setFirstCheck(r); }
     if (!r.pass && (!card.retry || n >= 2)) { setRevealed(true); setTook(ms()); }
     if (r.pass) setTook(ms());
   };
@@ -156,7 +188,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       {card.prompt ? <Txt t={card.prompt} block big /> : null}
       {card.sub ? <Txt t={card.sub} block /> : null}
       <AnswerField
-        value={value} onChange={setValue} onSubmit={submit} label={card.placeholder} placeholder={card.placeholder}
+        value={value} onChange={(v) => { if (keyed.current === undefined && v) keyed.current = ms(); setValue(v); }} onSubmit={submit} label={card.placeholder} placeholder={card.placeholder}
         lang={card.answerLang} disabled={finished} autoFocus
       />
       <div class="feedback" aria-live="polite">
@@ -178,7 +210,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       </div>
       <div class="actions">
         {finished
-          ? <Continue label={next} onClick={() => onDone({ correct: passed, tries: Math.max(1, tries), ms: took, ...(result?.lenient ? { lenient: true } : {}), evidence: { input: value, answer: result?.answer } }, value)} />
+          ? <Continue label={next} onClick={() => onDone(typedOutcome({ passed, tries, ms: took, value, first, result, firstCheck, firstKeyMs: keyed.current }), value)} />
           : (
             <>
               <button class="btn primary" data-primary disabled={!ready} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>
