@@ -2,7 +2,7 @@
 // the seeded RNG. Pure: no IO. Build once per content load, reuse for every
 // compile.
 import type {
-  BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
+  BankSentence, ContrastFile, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../content/schema';
 import { analyzeToken } from '../engine';
 import { askedOfYou } from '../exercises/addressee';
@@ -10,7 +10,7 @@ import { isMultiTurn, turnView } from '../exercises/dialogue';
 import { namesOf, placesOf } from '../exercises/licence';
 import { recognitionOnly } from '../learner/policy';
 import type { LibraryChapter } from '../content/library';
-import type { ChapterRef, ContentIndex, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
+import type { ChapterRef, ContentIndex, ContrastRef, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
 export interface Tagged { requires?: NodeId[] }
@@ -22,6 +22,8 @@ export interface ContentSource {
   writing: (WritingTask & Tagged)[];
   /** full scripts, or just their shape */
   scripts: (TeachingScript | ScriptRef)[];
+  /** the contrasts' own items, one file for each contrast (absent: none are loaded) */
+  contrasts?: ContrastFile[];
   /** every chapter of the story as the library knows it, loaded or not (absent: the story is the chapters above) */
   library?: LibraryChapter[];
   /** the files the build has that this device could not get (see ContentIndex.lacking) */
@@ -250,11 +252,17 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
     scripts.set(ref.node, ref);
   }
 
+  const contrasts = new Map<NodeId, ContrastRef[]>();
+  for (const f of src.contrasts ?? []) {
+    if (!f.items.length || contrasts.has(f.node)) continue;
+    contrasts.set(f.node, f.items.map((i) => ({ id: i.id, node: i.node, side: i.side, rung: i.rung, requires: i.requires })));
+  }
+
   return {
     sentences, byTarget, byRequire, byUnit,
     chapters, chapterById: new Map(chapters.map((c) => [c.id, c])), ...(story ? { story } : {}),
     ...(src.lacking?.length ? { lacking: new Set(src.lacking) } : {}),
-    scenes, scenesByUnit, tasks, tasksByUnit, scripts,
+    scenes, scenesByUnit, tasks, tasksByUnit, scripts, contrasts,
   };
 }
 

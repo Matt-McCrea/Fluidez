@@ -41,7 +41,7 @@ describe('rehearse', () => {
     const one = (d: unknown) => async () => d;
     const files: ContentFiles = {
       graph: { '/content/graph/a.json': one(['g:x', 'l:aa', 'l:new'].map(node)) }, units: { '/content/units/u01.json': one(unit) },
-      bank: {}, scripts: {}, story: {}, scenes: {}, writing: {},
+      bank: {}, scripts: {}, contrasts: {}, story: {}, scenes: {}, writing: {},
       history: { migrations: { a: ContentMigration.parse({ id: 1, note: 't', nodes: { rename: { 'l:a': 'l:aa' } } }) } },
     };
     const kv = new MemoryKV();

@@ -54,6 +54,14 @@ export function extractSpanish(file: string, data: any, kind: Kind = kindOf(file
       });
       break;
     }
+    case 'contrast':
+      // the options are slices of es, so es is the only Spanish; the learner types the gap, so what is typed must be typeable
+      arr(data?.items).forEach((it, i) => {
+        add(`items[${i}].es`, it?.es);
+        const gap = Array.isArray(it?.gap) && typeof it?.es === 'string' ? String(it.es).slice(it.gap[0], it.gap[1]) : undefined;
+        add(`items[${i}].gap`, gap, { answer: true, lint: false });
+      });
+      break;
     case 'story': {
       const d = data ?? {};
       add('text', d.text, { dedupe: true, unit: d.unit });

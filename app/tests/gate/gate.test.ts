@@ -567,3 +567,54 @@ describe('(r) options that give themselves away by length', () => {
     expect(by(runGate({ appDir: fx.app, paths: [script(fair)] }), 'options')).toEqual([]);
   });
 });
+
+describe('(o) a contrast\'s items', () => {
+  const item = (over: Record<string, unknown> = {}) => ({
+    id: 'x:ser-vs-ir#rp0', node: 'x:ser-vs-ir', side: 'g:preterite-ar', rung: 1, en: 'I spoke Spanish.', es: 'Hablé español.', gap: [0, 5],
+    options: ['Hablé', 'Hablo'], answer: 0, why: 'Done and finished, so the past.', requires: [], ...over,
+  });
+  const file = (items: unknown[], over: Record<string, unknown> = {}) => ({ node: 'x:ser-vs-ir', decides: 'local', items, ...over });
+  const setup = (items: unknown[], over: Record<string, unknown> = {}, name = 'x_ser-vs-ir.json') => {
+    const fx = makeFixture({ lexemes: true });
+    fx.write('graph/contrasts.json', [{ id: 'x:ser-vs-ir', kind: 'contrast', band: 'A1', priority: 14, title: 'past or now', requires: ['g:preterite-ar', 'g:present-ar'], contrasts: ['g:preterite-ar', 'g:present-ar'] }]);
+    fx.write('units/u02.json', {
+      id: 'u02', band: 'A1', title: 'Past', theme: 'ocio', canDo: 'I can say what I did', storyArc: 'Tomás and Vale go to the market.',
+      days: [{ type: 'introduce', focus: ['g:preterite-ar', 'g:preterite-ser-ir-hacer'], chunks: [], lexemes: [] }, { type: 'drill', focus: ['x:ser-vs-ir'], chunks: [], lexemes: [] },
+        { type: 'introduce', focus: ['g:present-er-ir'], chunks: [], lexemes: [] }, { type: 'drill', focus: [], chunks: [], lexemes: [] }, { type: 'input', focus: [], chunks: [], lexemes: [] },
+        { type: 'patterns', focus: [], chunks: [], lexemes: [] }, { type: 'review', focus: [], chunks: [], lexemes: [] }],
+    });
+    const p = fx.write(`contrasts/${name}`, file(items, over));
+    return runGate({ appDir: fx.app, paths: [p] });
+  };
+  const problems = (r: ReturnType<typeof runGate>) => r.findings.filter((f) => f.severity === 'error').map((f) => `${f.check} ${f.path ?? ''} ${f.problem}`).join(' | ');
+
+  test('a well-formed item passes except for requires, which the tagger computes and --fix writes', () => {
+    const r = setup([item()]);
+    expect(by(r, 'schema', 'error')).toEqual([]);
+    expect(by(r, 'requires', 'error').map((f) => f.path)).toEqual(['items[0].requires']);
+  });
+
+  test('the gap must hold the right option, and options must differ', () => {
+    expect(problems(setup([item({ options: ['Hablo', 'Hablé'], answer: 0 })]))).toMatch(/the right option "Hablo" is not what the gap holds \("Hablé"\)/);
+    expect(problems(setup([item({ options: ['Hablé', 'hablé'] })]))).toMatch(/two options are the same/);
+    expect(problems(setup([item({ gap: [0, 99] })]))).toMatch(/is not a place in/);
+    expect(problems(setup([item({ answer: 4 })]))).toMatch(/outside options/);
+  });
+
+  test('the id begins with the contrast, ids are unique, and the side is one of the contrast\'s', () => {
+    expect(problems(setup([item({ id: 'x:other#a' })]))).toMatch(/does not begin with "x:ser-vs-ir#"/);
+    expect(problems(setup([item(), item()]))).toMatch(/duplicate id/);
+    expect(problems(setup([item({ side: 'g:stem-boot' })]))).toMatch(/is not one of x:ser-vs-ir's sides/);
+  });
+
+  test('the file is named for its node, and the pair is one pair with no packed variants or dashes', () => {
+    expect(problems(setup([item()], {}, 'x_other.json'))).toMatch(/does not match the file name/);
+    expect(problems(setup([item({ en: 'I spoke / I talked.' })]))).toMatch(/no "\/" variants/);
+    expect(problems(setup([item({ why: 'Done — finished.' })]))).toMatch(/dash in learner-facing text/);
+  });
+
+  test('a sentence that uses what is not taught by the contrast\'s day is a legality error', () => {
+    const r = setup([item({ es: 'Prefiero que vengas.', en: 'I prefer that you come.', gap: [0, 8], options: ['Prefiero', 'Prefería'] })]);
+    expect(by(r, 'legality', 'error').length).toBeGreaterThan(0);
+  });
+});

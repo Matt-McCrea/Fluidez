@@ -63,11 +63,11 @@ describe('every content folder is cached when it is used, and none is installed 
     expect(rule.urlPattern({ url: new URL('https://example.org/content/reading/r-AbC123xy.js') })).toBe(false);
   });
 
-  it('precaches the graph, the units and the contrast scripts whole, and no other folder', () => {
+  it('precaches the graph, the units, the contrast scripts and the contrasts\' own items whole, and no other folder', () => {
     const globs = precacheGlobs();
     // a folder-wide pattern is a bare * or a name prefix then * (x_*.js); a named one carries a unit, a chapter or a node (u01-*.js)
     const whole = globs.filter((g) => /^content\/[^/]+\/[A-Za-z_]*\*\.js$/.test(g)).sort();
-    expect(whole).toEqual(['content/graph/*.js', 'content/scripts/x_*.js', 'content/units/*.js']);
+    expect(whole).toEqual(['content/contrasts/*.js', 'content/graph/*.js', 'content/scripts/x_*.js', 'content/units/*.js']);
     // the window kinds appear only by name (one unit, one chapter, one script), never as a folder-wide pattern
     for (const d of ['bank', 'story', 'scenes', 'writing']) expect(globs, d).not.toContain(`content/${d}/*.js`);
   });

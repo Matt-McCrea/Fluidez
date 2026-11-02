@@ -1,6 +1,6 @@
 // Per-file checks: accent, dialect, verb coverage, legality, typeability,
 // computed requires, reading coverage, structure.
-import type { BankSentence, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
+import type { BankSentence, ContrastFile, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
 import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, type TagResult } from '../../src/engine/tagger';
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { givesAwayByLength, longestShare } from '../../src/exercises/neighbours';
@@ -72,6 +72,16 @@ export function positionOf(st: RunState, f: Loaded, item: Record<string, unknown
         return null;
       }
       return { at, label: `when ${s.node} is taught`, allow: new Set([s.node]) };
+    }
+    case 'contrast': {
+      // a contrast's items are legal wherever its script is: the sentences come from it and from the scripts of its sides
+      const c = f.data as ContrastFile;
+      const at = cur.scriptAt.get(c.node) ?? cur.taughtAt.get(c.node);
+      if (at === undefined) {
+        st.findings.push({ severity: 'warning', check: 'legality', file: f.rel, path: 'node', problem: `contrast ${c.node} is not scheduled in any unit`, fix: 'add it to a unit day focus' });
+        return null;
+      }
+      return { at, label: `when ${c.node} is taught`, allow: new Set([c.node, ...(cur.nodes.get(c.node)?.contrasts ?? [])]) };
     }
     default: return null;
   }
@@ -195,6 +205,7 @@ function isRecognitionNode(st: RunState, id: string | undefined): boolean {
 function isRecognitionItem(st: RunState, f: Loaded, row: Record<string, unknown> | null): boolean {
   if (f.kind === 'graph') return isRecognitionNode(st, row?.id as string | undefined) || (!!row && row.variety !== undefined && row.variety !== 'neutral') || /recognition only/i.test(String(row?.note ?? ''));
   if (f.kind === 'script') return isRecognitionNode(st, (f.data as TeachingScript).node);
+  if (f.kind === 'contrast') return isRecognitionNode(st, (f.data as ContrastFile).node);
   if (f.kind === 'bank') return ((row?.targets as string[] | undefined) ?? []).some((t) => isRecognitionNode(st, t));
   if (f.kind === 'writing' || f.kind === 'scene') return isRecognitionNode(st, (row?.focus as string | undefined));
   return false;
@@ -347,6 +358,7 @@ export function checkStructure(st: RunState, f: Loaded): void {
     s.readAndPick.forEach((q, i) => { if (q.answer < 0 || q.answer >= q.options.length) push(`readAndPick[${i}].answer`, `answer index ${q.answer} is outside options[0..${q.options.length - 1}]`); });
     if (st.cur.graphIds.size && !st.cur.graphIds.has(s.node)) push('node', `node ${s.node} is not in the graph`, 'use a node id from content/graph');
   }
+  if (f.kind === 'contrast') checkContrastShape(st, f);
   if (f.kind === 'story') {
     const c = f.data as StoryChapter;
     c.questions.forEach((q, i) => {
@@ -391,6 +403,55 @@ export function checkStructure(st: RunState, f: Loaded): void {
       for (const r of [...n.requires, ...n.contrasts]) if (!st.cur.graphIds.has(r)) st.findings.push({ severity: 'warning', check: 'schema', file: f.rel, path: `[${i}]`, problem: `${n.id} references ${r}, which is not in the graph` });
     });
   }
+}
+
+/* ---- contrasts: the items of one contrast --------------------------------------
+ * A file holds one contrast's items and is named for it. Every item is one decision: the right option
+ * is the slice of es the gap names, the options differ from each other, and the English is one pair
+ * with the Spanish (no packed "/" variants). */
+export function checkContrastShape(st: RunState, f: Loaded): void {
+  const c = f.data as ContrastFile;
+  const push = (path: string, problem: string, fix?: string) => st.findings.push({ severity: 'error', check: 'schema', file: f.rel, path, problem, fix });
+  const want = `${c.node.replace(':', '_')}.json`;
+  if (!f.abs.endsWith(`/${want}`)) push('node', `node "${c.node}" does not match the file name`, `name the file ${want}`);
+  const node = st.cur.nodes.get(c.node);
+  if (st.cur.graphIds.size && !node) push('node', `contrast ${c.node} is not in the graph`, 'use a node id from content/graph');
+  else if (node && node.kind !== 'contrast') push('node', `${c.node} is not a contrast`, 'a contrast file is named for an x: node');
+  const sides = node?.contrasts ?? [];
+  const ids = new Set<string>();
+  c.items.forEach((it, i) => {
+    const at = `items[${i}]`;
+    if (it.node !== c.node) push(`${at}.node`, `item is for ${it.node}, in the file of ${c.node}`);
+    if (!it.id.startsWith(`${c.node}#`)) push(`${at}.id`, `id "${it.id}" does not begin with "${c.node}#"`, `ids are ${c.node}#<source>`);
+    if (ids.has(it.id)) push(`${at}.id`, `duplicate id "${it.id}"`);
+    ids.add(it.id);
+    if (sides.length && !sides.includes(it.side)) push(`${at}.side`, `side ${it.side} is not one of ${c.node}'s sides (${sides.join(', ')})`);
+    const [a, b] = it.gap;
+    if (!(a < b && b <= it.es.length)) { push(`${at}.gap`, `gap [${a}, ${b}] is not a place in "${clip(it.es, 40)}"`); return; }
+    if (it.answer >= it.options.length) { push(`${at}.answer`, `answer index ${it.answer} is outside options[0..${it.options.length - 1}]`); return; }
+    const filled = it.es.slice(a, b);
+    if (it.options[it.answer] !== filled) push(`${at}.options`, `the right option "${it.options[it.answer]}" is not what the gap holds ("${filled}")`, 'options[answer] is es.slice(gap)');
+    if (new Set(it.options.map((o) => o.toLowerCase())).size !== it.options.length) push(`${at}.options`, 'two options are the same');
+    if (it.options.some((o) => !o.trim() || o !== o.trim())) push(`${at}.options`, 'an option is empty or has spaces at its ends');
+    if (it.en.includes('/') || it.es.includes('/')) push(`${at}.en`, 'the English and the Spanish are one exact pair: no "/" variants');
+  });
+}
+
+/** requires is computed by the tagger over es, as for a bank row (--fix writes it). */
+export function checkContrastRequires(st: RunState, f: Loaded, fix: boolean): unknown | null {
+  const c = f.data as ContrastFile;
+  const raw = f.raw as { items: Array<Record<string, unknown>> };
+  let changed = false;
+  c.items.forEach((it, i) => {
+    const want = tagCached(st, it.es).requires;
+    const have = [...it.requires].sort();
+    if (want.join('|') === have.join('|')) return;
+    if (fix) { raw.items[i] = withRequires(raw.items[i], want); changed = true; return; }
+    const missing = want.filter((x) => !have.includes(x));
+    const extra = have.filter((x) => !want.includes(x));
+    st.findings.push({ severity: 'error', check: 'requires', file: f.rel, path: `items[${i}].requires`, problem: `requires is computed by the tagger and differs (${[missing.length ? '+' + missing.join(' +') : '', extra.length ? '-' + extra.join(' -') : ''].filter(Boolean).join(' ')})`, fix: `run: npm run gate -- --fix ${f.rel}` });
+  });
+  return changed ? raw : null;
 }
 
 /* ---- options that give themselves away by length ---------------------------------
@@ -449,10 +510,10 @@ export function optionBands(st: RunState, loaded: Loaded[]): void {
  * separate lines ("¿Ya comiste?\nTodavía no.") or "Vale: ¿Ya comiste?", and English
  * prose uses commas, colons, brackets and full stops. A node's es/en is ONE exact
  * translation pair: variants go in forms[], never packed with " / ". */
-const AUTHOR_ONLY = new Set(['note', 'storyArc', 'theme', 'sources', 'pcic', 'source', 'id', 'node', 'unit', 'chapter', 'scene', 'requires', 'lexemes', 'targets', 'focus', 'chunks', 'serves', 'contrasts', 'unpacks', 'tags', 'match', 'peninsular', 'next', 'kind', 'band', 'type', 'placement', 'variety', 'pos', 'gender']);
+const AUTHOR_ONLY = new Set(['side', 'decides', 'note', 'storyArc', 'theme', 'sources', 'pcic', 'source', 'id', 'node', 'unit', 'chapter', 'scene', 'requires', 'lexemes', 'targets', 'focus', 'chunks', 'serves', 'contrasts', 'unpacks', 'tags', 'match', 'peninsular', 'next', 'kind', 'band', 'type', 'placement', 'variety', 'pos', 'gender']);
 const DASH = /[\u2014\u2013]|\s-\s|^-\s|\s-$/;
 export function checkDashes(st: RunState, f: Loaded): void {
-  if (!['graph', 'unit', 'bank', 'script', 'story', 'scene', 'writing'].includes(f.kind)) return;
+  if (!['graph', 'unit', 'bank', 'script', 'contrast', 'story', 'scene', 'writing'].includes(f.kind)) return;
   const push = (path: string, problem: string, fix: string) => st.findings.push({ severity: 'error', check: 'dashes', file: f.rel, path, problem, fix });
   const walk = (x: unknown, path: string, key: string): void => {
     if (typeof x === 'string') {

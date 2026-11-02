@@ -7,7 +7,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import type { z } from 'zod';
 import {
-  BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, Band,
+  BankSentence, ContrastFile, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, Band,
 } from '../../src/content/schema';
 import type { ContentSource } from '../../src/compiler';
 import { dirOf } from '../../src/content/kinds';
@@ -65,7 +65,8 @@ export function loadContent(contentDir: string): LoadedContent {
   const scenes = load(join(contentDir, dirOf('scene')), Scene, problems, true);
   const writing = load(join(contentDir, dirOf('writing')), WritingTask, problems, true);
   const scripts = load(join(contentDir, dirOf('script')), TeachingScript, problems);
-  return { units, nodes, source: { sentences, chapters, scenes, writing, scripts }, problems };
+  const contrasts = load(join(contentDir, dirOf('contrast')), ContrastFile, problems);
+  return { units, nodes, source: { sentences, chapters, scenes, writing, scripts, contrasts }, problems };
 }
 
 /**

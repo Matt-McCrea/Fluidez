@@ -12,9 +12,10 @@
  * (the /burn runner does exactly that on a retry).
  *
  * Checks, in order:
- *   schema     zod per directory (graph, units, bank, scripts, story, scenes,
+ *   schema     zod per directory (graph, units, bank, scripts, contrasts, story, scenes,
  *              writing), id/file agreement, answer indices, scene links,
- *              writing models meet their own word counts and constraints
+ *              writing models meet their own word counts and constraints; a contrast's
+ *              items: the gap holds the right option, the options differ, the pair is exact
  *   accent     accent/spelling lint against the engine's paradigms (+ ¿ ¡)
  *   dialect    vosotros/voseo forms and pronouns, Peninsular lexicon,
  *              perfecto for same-day narration (warning)
@@ -51,7 +52,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, optionBands, optionLengths, type RunState } from './gate/checks';
+import { checkBank, checkComputed, checkContrastRequires, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, optionBands, optionLengths, type RunState } from './gate/checks';
 import { checkContinuity, idsOfLoaded, readLegacyPath, readMigrationFiles, readShippedIds, unpackShipped } from './gate/continuity';
 import { checkLibrary } from './build/library';
 import { checkPitfalls } from './build/pitfalls';
@@ -112,6 +113,10 @@ export function runGate(o: GateOptions = {}): GateResult {
       const rewrite = checkBank(st, f, !!o.fix);
       if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
       (f.data as BankSentence[]).forEach((b) => b.unit && touchedUnits.add(b.unit));
+    }
+    if (f.kind === 'contrast') {
+      const rewrite = checkContrastRequires(st, f, !!o.fix);
+      if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
     }
     if (f.kind === 'story' || f.kind === 'scene' || f.kind === 'writing') {
       const rewrite = checkComputed(st, f, !!o.fix);

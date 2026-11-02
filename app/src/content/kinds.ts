@@ -15,7 +15,7 @@ export interface ContentKindSpec {
   /** the folder under content/ */
   readonly dir: string;
   /** what the gate calls one file of it */
-  readonly kind: 'graph' | 'unit' | 'bank' | 'script' | 'story' | 'scene' | 'writing';
+  readonly kind: 'graph' | 'unit' | 'bank' | 'script' | 'contrast' | 'story' | 'scene' | 'writing';
   /** core: read at boot, whole, and installed with the app. window: fetched with the units around the learner and cached when first used */
   readonly load: 'core' | 'window';
   /** the names of the files that are material; other files in the folder are not */
@@ -29,6 +29,8 @@ export const CONTENT_KINDS = [
   { dir: 'units', kind: 'unit', load: 'core', file: /^u\d{2}\.json$/ },
   { dir: 'bank', kind: 'bank', load: 'window' },
   { dir: 'scripts', kind: 'script', load: 'window', corePrefix: 'x_' },
+  // a contrast comes due wherever the learner is, so its items are read with the course and installed with the app, one file for each contrast
+  { dir: 'contrasts', kind: 'contrast', load: 'core', file: /^x_[^/]+\.json$/ },
   { dir: 'story', kind: 'story', load: 'window', file: /^ch\d{3}\.json$/ },
   { dir: 'scenes', kind: 'scene', load: 'window' },
   { dir: 'writing', kind: 'writing', load: 'window' },

@@ -107,6 +107,42 @@ export const TeachingScript = z.object({
 });
 export type TeachingScript = z.infer<typeof TeachingScript>;
 
+// What decides a contrast, which decides how it is asked (audit R10). `local`: a word or structure
+// beside the slot, so a forced choice is the skill. `meaning`: what the speaker means, so the choice
+// is cued by a situation and then typed. `discourse`: earlier text or what the listener knows (aspect),
+// so it is typed from the English and never against a clock. `synonym`: usage and register, so phrase
+// retrieval and never a deck of two buttons.
+export const ContrastDecides = z.enum(['local', 'meaning', 'discourse', 'synonym']);
+export type ContrastDecides = z.infer<typeof ContrastDecides>;
+
+// One decision of a contrast: a sentence with one place in it that the contrast decides, and the options
+// for that place. Used by reviews, Train it, weak spots and the tests; the burn tops them up.
+export const ContrastItem = z.object({
+  id: z.string(),                       // `<contrast>#<source>`, unique in the store
+  node: NodeId,                         // the contrast (x:...)
+  side: NodeId,                         // the member of the contrast the right option belongs to
+  use: z.string().optional(),           // the sub-rule the item turns on, for the diagnosis
+  // the hardest way it can be asked fairly: 0 the meaning cue, 1 the gap with the English, 2 the gap alone.
+  // An item two options fit when the English is hidden stops at 1.
+  rung: z.number().int().min(0).max(2),
+  en: z.string(),                       // one aligned pair with es: the exact translation of the exact Spanish
+  es: z.string(),                       // the sentence with the right option in it
+  gap: z.tuple([z.number().int().nonnegative(), z.number().int().nonnegative()]), // the place the options fill: character offsets into es
+  options: z.array(z.string()).min(2),  // what can stand in the gap; options[answer] is es.slice(...gap)
+  answer: z.number().int().nonnegative(),
+  why: z.string(),                      // one plain-English reason, shown with the right version
+  requires: z.array(NodeId).default([]), // computed by the tagger over es, as for a bank row
+});
+export type ContrastItem = z.infer<typeof ContrastItem>;
+
+// A contrast's file: content/contrasts/x_<id>.json holds all of its items.
+export const ContrastFile = z.object({
+  node: NodeId,
+  decides: ContrastDecides,
+  items: z.array(ContrastItem),
+});
+export type ContrastFile = z.infer<typeof ContrastFile>;
+
 export const StoryChapter = z.object({
   id: z.string().regex(/^ch\d{3}$/),    // linear: ch001, ch002 ...
   unit: z.string(),

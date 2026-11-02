@@ -7,7 +7,7 @@ import {
 import { lackKey } from '../../content/kinds';
 import { libraryChapter, type LibraryChapter } from '../../content/library';
 import type {
-  BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
+  BankSentence, ContrastFile, ContrastItem, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
 import { alignedPairs, type AlignedPair, type LexemeLike } from '../../exercises';
 import { analyzeToken, deaccent } from '../../engine';
@@ -18,6 +18,7 @@ export interface ContentExtender {
   loadWindow(unit: string | number): Promise<ContentSource>;
   loadUnits(range: { from?: number; to: number }): Promise<ContentSource>;
   loadScript(node: string): Promise<ContentSource>;
+  loadContrast(node: string): Promise<ContentSource>;
   loadChapters(ids: readonly string[]): Promise<ContentSource>;
 }
 
@@ -31,6 +32,9 @@ export class Bundle {
   readonly scenes = new Map<string, Scene>();
   readonly tasks = new Map<string, WritingTask>();
   readonly scripts = new Map<NodeId, TeachingScript>();
+  /** each contrast's file of items, and every item by id */
+  readonly contrasts = new Map<NodeId, ContrastFile>();
+  private readonly contrastById = new Map<string, ContrastItem>();
   readonly bank: BankSentence[];
   /** lemma (lower case, no article) -> lexeme node, for tap-to-gloss */
   private readonly lemmas = new Map<string, GraphNode>();
@@ -52,6 +56,7 @@ export class Bundle {
     for (const s of source.scenes) this.scenes.set(s.id, s);
     for (const t of source.writing) this.tasks.set(t.id, t);
     for (const s of source.scripts) if ('hook' in s) this.scripts.set(s.node, s);
+    for (const f of source.contrasts ?? []) this.addContrasts(f);
     for (const n of nodes) {
       if (n.kind !== 'lexeme' || !n.es) continue;
       for (const form of n.es.split(/[/;,]/)) {
@@ -66,6 +71,19 @@ export class Bundle {
       }
     }
   }
+
+  private addContrasts(f: ContrastFile): boolean {
+    if (this.contrasts.has(f.node)) return false;
+    this.contrasts.set(f.node, f);
+    for (const i of f.items) if (!this.contrastById.has(i.id)) this.contrastById.set(i.id, i);
+    return true;
+  }
+
+  /** A contrast's items in file order; none when it has no file (or it has not arrived). */
+  contrastItems(node: NodeId): readonly ContrastItem[] { return this.contrasts.get(node)?.items ?? []; }
+
+  /** One contrast item by its id. */
+  contrastItem(id: string): ContrastItem | undefined { return this.contrastById.get(id); }
 
   /** Connect the loader that can fetch more content later (real bundles only). */
   attach(more: ContentExtender): void { this.more = more; }
@@ -82,6 +100,7 @@ export class Bundle {
       if (!('hook' in s) || this.scripts.has(s.node)) continue;
       this.scripts.set(s.node, s); src.scripts.push(s); changed = true;
     }
+    for (const f of add.contrasts ?? []) if (this.addContrasts(f)) { (src.contrasts ??= []).push(f); changed = true; }
     // what the loader still lacks is its whole current list, not a change to the last one
     if (add.lacking && add.lacking.join('\u0000') !== (src.lacking ?? []).join('\u0000')) { src.lacking = add.lacking; changed = true; }
     if (changed) {
@@ -118,6 +137,12 @@ export class Bundle {
     // a script nobody wrote is remembered; one that failed to arrive is asked for again
     if (!got && !this.source.lacking?.includes(lackKey('scripts', node))) this.noScript.add(node);
     return got;
+  }
+
+  /** A contrast's items: the loaded ones at once, otherwise fetched (and then cached). */
+  async contrastFor(node: NodeId): Promise<readonly ContrastItem[]> {
+    if (!this.contrasts.has(node) && this.more) this.extend(await this.more.loadContrast(node));
+    return this.contrastItems(node);
   }
 
   /** Every chapter of the story as the library lists it (title, hook, length), whichever are loaded; empty without a library. */

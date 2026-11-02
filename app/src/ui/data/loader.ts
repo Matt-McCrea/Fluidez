@@ -1,6 +1,6 @@
 // Content loading for the browser. Every JSON file under app/content is a
 // lazy Vite glob import (its own chunk), so the app only fetches what it
-// needs: the graph and units always (with the contrast scripts), the library of
+// needs: the graph and units always (with the contrast scripts and the contrasts' own items), the library of
 // chapter metadata always (an import of its own, content/_library), and the
 // bank/story/scenes/writing/scripts of a window of units around the learner
 // (2 before, 3 after). Later units are fetched on demand (Bundle.ensureWindow /
@@ -14,7 +14,7 @@
 import type { z } from 'zod';
 import type { ContentSource } from '../../compiler';
 import {
-  Band, BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
+  Band, BankSentence, ContrastFile, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
 import { Library, type LibraryChapter } from '../../content/library';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
@@ -44,6 +44,7 @@ export const CONTENT_FILES: ContentFiles = {
   units: import.meta.glob(['/content/units/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   bank: import.meta.glob(['/content/bank/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   scripts: import.meta.glob(['/content/scripts/**/*.json', '!**/_*'], { import: 'default', eager: false }),
+  contrasts: import.meta.glob(['/content/contrasts/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   story: import.meta.glob(['/content/story/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   scenes: import.meta.glob(['/content/scenes/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   writing: import.meta.glob(['/content/writing/**/*.json', '!**/_*'], { import: 'default', eager: false }),
@@ -112,16 +113,18 @@ function pour(to: ContentSource, from: ContentSource): void {
   to.scenes.push(...from.scenes);
   to.writing.push(...from.writing);
   to.scripts.push(...from.scripts);
+  (to.contrasts ??= []).push(...(from.contrasts ?? []));
 }
-/** `g:ser-identity` is stored as scripts/g_ser-identity.json. */
+/** `g:ser-identity` is stored as scripts/g_ser-identity.json, and `x:por-para` as contrasts/x_por-para.json. */
 const scriptFile = (node: string) => node.replace(':', '_');
 
 export class ContentLoader {
   private units?: Unit[];
   private nodes?: GraphNode[];
   private readonly loaded = new Set<string>();
-  private readonly src: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
+  private readonly src: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [], contrasts: [] };
   private readonly missingScripts = new Set<string>();
+  private readonly missingContrasts = new Set<string>();
   /** the files that exist in the build and failed to arrive, by path: asked for again next time, and what the compiler is told is lacking */
   private readonly failed = new Map<string, FileKind>();
   /** what the fetch that has a file in the air will bring: a second ask for that file waits for it, and does not take it for one nobody wrote */
@@ -149,7 +152,7 @@ export class ContentLoader {
     for (const [path, kind] of this.failed) {
       const name = baseName(path);
       if (kind === 'story' || kind === 'units' || kind === 'graph') out.add(lackKey(kind, name));
-      else if (kind === 'scripts') out.add(lackKey(kind, name.replace('_', ':')));
+      else if (kind === 'scripts' || kind === 'contrasts') out.add(lackKey(kind, name.replace('_', ':')));
       else { const m = name.match(/\b(u\d{2})\b/); if (m) out.add(lackKey(kind, m[1])); }
     }
     return [...out].sort();
@@ -184,10 +187,11 @@ export class ContentLoader {
 
   /** Read and parse every not-yet-loaded file `want` accepts; return just the new records, with those of any file `want` accepts that another call had in the air. */
   private async fetch(want: (kind: FileKind, path: string) => boolean): Promise<ContentSource> {
-    const add: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
+    const add: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [], contrasts: [] };
     const kinds: Array<[FileKind, (raw: unknown, p: string) => void]> = [
       ['bank', (raw, p) => add.sentences.push(...parseAll([raw], BankSentence, this.problems, p))],
       ['scripts', (raw, p) => add.scripts.push(...parseAll([raw], TeachingScript, this.problems, p))],
+      ['contrasts', (raw, p) => add.contrasts!.push(...parseAll([raw], ContrastFile, this.problems, p))],
       ['story', (raw, p) => add.chapters.push(...parseAll([raw], StoryChapter, this.problems, p, true))],
       ['scenes', (raw, p) => add.scenes.push(...parseAll([raw], Scene, this.problems, p, true))],
       ['writing', (raw, p) => add.writing.push(...parseAll([raw], WritingTask, this.problems, p, true))],
@@ -287,11 +291,22 @@ export class ContentLoader {
   /** One node's teaching script, fetched on demand (the records that are new; empty when absent). */
   async loadScript(node: string): Promise<ContentSource> {
     const name = scriptFile(node);
-    if (this.missingScripts.has(name)) return { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
+    if (this.missingScripts.has(name)) return { sentences: [], chapters: [], scenes: [], writing: [], scripts: [], contrasts: [] };
     const add = await this.fetch((kind, p) => kind === 'scripts' && baseName(p) === name);
     // a script that is not there is not written; one that failed to arrive is asked for again
     const failed = [...this.failed].some(([p, kind]) => kind === 'scripts' && baseName(p) === name);
     if (!add.scripts.length && !failed && !this.src.scripts.some((s) => s.node === node)) this.missingScripts.add(name);
+    return add;
+  }
+
+  /** One contrast's items, fetched on demand (the records that are new; empty when absent). */
+  async loadContrast(node: string): Promise<ContentSource> {
+    const name = scriptFile(node);
+    if (this.missingContrasts.has(name)) return { sentences: [], chapters: [], scenes: [], writing: [], scripts: [], contrasts: [] };
+    const add = await this.fetch((kind, p) => kind === 'contrasts' && baseName(p) === name);
+    // a file that is not there is not written; one that failed to arrive is asked for again
+    const failed = [...this.failed].some(([p, kind]) => kind === 'contrasts' && baseName(p) === name);
+    if (!add.contrasts?.length && !failed && !this.src.contrasts?.some((c) => c.node === node)) this.missingContrasts.add(name);
     return add;
   }
 
@@ -311,7 +326,7 @@ export class ContentLoader {
     const library = this.library();
     return {
       sentences: [...this.src.sentences], chapters: [...this.src.chapters], scenes: [...this.src.scenes],
-      writing: [...this.src.writing], scripts: [...this.src.scripts],
+      writing: [...this.src.writing], scripts: [...this.src.scripts], contrasts: [...(this.src.contrasts ?? [])],
       ...(library.length ? { library } : {}),
       lacking: this.lacking(),
     };

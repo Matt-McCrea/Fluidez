@@ -4,7 +4,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import { z } from 'zod';
-import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
+import { BankSentence, ContrastFile, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
 import { closedClass, registerLexemes, registerNames, type ChunkSpec, type PatternSpec, type TagOptions } from '../../src/engine/tagger';
 import { kindOf, type Kind } from './extract';
 import type { Finding } from './findings';
@@ -24,6 +24,7 @@ const SCHEMA: Partial<Record<Kind, z.ZodTypeAny>> = {
   unit: Unit,
   bank: z.array(BankSentence),
   script: TeachingScript,
+  contrast: ContrastFile,
   story: StoryChapter,
   scene: Scene,
   writing: z.array(WritingTask),
@@ -195,9 +196,9 @@ export function castNames(text: string): string[] {
 }
 
 
-/** Load all of content/ and build the curriculum (for tools that only tag). */
-export function loadCurriculum(appDir: string, contentDir = join(appDir, 'content')): Curriculum {
-  const files = listJson(contentDir).map((p) => loadFile(p, appDir, null));
+/** Load all of content/ (or just `paths`: the graph and the units are all a curriculum is made of) and build the curriculum (for tools that only tag). */
+export function loadCurriculum(appDir: string, contentDir = join(appDir, 'content'), paths: string[] = listJson(contentDir)): Curriculum {
+  const files = paths.map((p) => loadFile(p, appDir, null));
   return buildCurriculum(files, contentDir, []);
 }
 

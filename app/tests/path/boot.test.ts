@@ -24,7 +24,7 @@ function files(over: { history?: ContentFiles['history']; units?: unknown[] } = 
   return {
     graph: { '/content/graph/all.json': one(NODES) },
     units: Object.fromEntries((over.units ?? [U1]).map((u) => [`/content/units/${(u as { id: string }).id}.json`, one(u)])),
-    bank: {}, scripts: {}, story: {}, scenes: {}, writing: {},
+    bank: {}, scripts: {}, contrasts: {}, story: {}, scenes: {}, writing: {},
     history: over.history ?? { migrations: {} },
   };
 }

@@ -14,7 +14,7 @@ const files = (over: Partial<ContentFiles> = {}): ContentFiles => {
   return {
     graph: { '/content/graph/all.json': one(f.nodes) },
     units: { '/content/units/u01.json': one(f.units[0]) },
-    bank: {}, scripts: {}, story: {}, scenes: {}, writing: {},
+    bank: {}, scripts: {}, contrasts: {}, story: {}, scenes: {}, writing: {},
     ...over,
   };
 };

@@ -101,6 +101,8 @@ export interface StoryRef { id: string; unit: string; order: number; day?: numbe
 export interface SceneRef { id: string; unit: string; requires: NodeId[]; focus: NodeId[]; turns: number; minutes: number }
 export interface TaskRef { id: string; unit: string; requires: NodeId[]; focus?: NodeId; minutes: number }
 export interface ScriptRef { node: NodeId; readAndPick: number; yourTurn: number }
+/** What the compiler needs of a contrast item: which one it is, whose it is, and what it takes to be shown (the item itself is the bundle's). */
+export interface ContrastRef { id: string; node: NodeId; side: NodeId; rung: number; requires: NodeId[] }
 
 /** Lookup structure over all content. Build once with `buildContentIndex`; never mutated. */
 export interface ContentIndex {
@@ -125,6 +127,8 @@ export interface ContentIndex {
   tasks: Map<string, TaskRef>;
   tasksByUnit: Map<string, string[]>;
   scripts: Map<NodeId, ScriptRef>;
+  /** contrast node -> its items in the contrast's file, in file order (absent: the contrast has none, and is reviewed with its script) */
+  contrasts: Map<NodeId, ContrastRef[]>;
 }
 
 export type Mode = 'next' | 'another';
@@ -255,6 +259,11 @@ export interface ReviewItem extends ItemBase {
    * read-and-pick for a receptive card, your-turn for a productive one, a different item each session. Never a bare card.
    */
   script?: { op: 'readAndPick' | 'yourTurn'; index: number };
+  /**
+   * The id of one of the contrast's own items (content/contrasts), which a contrast is reviewed with when it has any:
+   * a decision between its two sides, a different one each session. It wins over `script`.
+   */
+  contrast?: string;
   /** true when the sentence is new to the learner (a recombination) */
   novel: boolean;
   /** a review context re-served after ≥ REVIEW_REUSE_DAYS: ledgered deliberate, reason REVIEW_REUSE_REASON */
