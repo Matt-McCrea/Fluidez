@@ -74,7 +74,7 @@ describe('choose: distractors are never right', () => {
       expect(w).not.toBe(g.answer);
       expect(g.accept).not.toContain(w);
       // same lemma, so it is the ending that is tested
-      expect(verbReadings(w).some((a) => a.inf.replace(/se$/, '') === g.clause.choice.inf.replace(/se$/, ''))).toBe(true);
+      expect(verbReadings(w).some((a) => a.inf.replace(/se$/, '') === g.clause!.choice.inf.replace(/se$/, ''))).toBe(true);
       expect(hasVosotros(w)).toBe(false);
     }
     expect(it.gapped).toContain('___');
