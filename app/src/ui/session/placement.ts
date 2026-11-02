@@ -31,8 +31,9 @@
 //
 // THE RESULT. The ladder climbs by twos, so most levels are only asked twice,
 // and a right answer shows the level it jumped over. A level is passed on the
-// right answers given at it and at the two levels above it, against its own
-// misses only (a miss further up says nothing about it): at least 2 of 3
+// right answers given at it and at the two levels above it, against the misses
+// at it and below it (a miss further up says nothing about it, a miss lower
+// down does: without those a guesser passes on luck): at least 2 of 3
 // right, from at least two answers at A1 and three above it, so a B1 or B2
 // placement rests on three items from that band. The learner starts at the
 // unit after the highest level passed (unit 0 when none is). Knowing more
@@ -101,6 +102,8 @@ export const MIN_LEVEL_ASKED = 3;
 export const OVERTIME_ITEMS = 3;
 /** the levels above a level whose right answers also count towards passing it (the ladder climbs by twos) */
 export const CREDIT_REACH = 2;
+/** the most levels one miss drops: misses in a row drop 1, 1, 2, 3, then this, so a learner who overclaims reaches their level inside the check */
+export const MISS_STEP_MAX = 4;
 /** which feature a sentence's form item is for, when it offers more than one: the ones the old check rarely reached first */
 export const FEATURE_PRIORITY = ['copula', 'porpara', 'clitic', 'mood', 'gender', 'number', 'tense', 'person'];
 export const MIN_ITEMS = 4;
@@ -325,6 +328,7 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
   let streak = 0;
   let missed = false;
   let missesAtBottom = 0;
+  let missRun = 0;
   let asked = 0;
   const skills = new Map<string, { right: number; total: number; level: number }>();
   let current: { item: ProbeItem; level: number } | undefined;
@@ -364,6 +368,7 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
       if (correct) {
         stats[k].right++;
         missesAtBottom = 0;
+        missRun = 0;
         streak++;
         // until the first miss two right in a row climb two levels (the learner is far from their edge); after it, one.
         // Not in overtime: those items are there to give the level being decided its third answer
@@ -372,7 +377,8 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
         missed = true;
         streak = 0;
         if (p === 0) missesAtBottom++;
-        p = Math.max(0, p - 1);
+        missRun++;
+        p = Math.max(0, p - Math.min(Math.max(1, missRun - 1), MISS_STEP_MAX));
         if (missesAtBottom >= EARLY_STOP_MISSES) over = true;
       }
     },
@@ -381,7 +387,9 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
       for (let k = levels.length - 1; k >= 0 && best < 0; k--) {
         let right = 0;
         for (let j = k; j <= Math.min(levels.length - 1, k + CREDIT_REACH); j++) right += stats[j].right;
-        const given = right + stats[k].total - stats[k].right;
+        let wrong = 0;
+        for (let j = 0; j <= k; j++) wrong += stats[j].total - stats[j].right;
+        const given = right + wrong;
         if (given >= (bands(levels[k].unit) === 'A1' ? 2 : 3) && right / given >= 2 / 3) best = k;
       }
       return best < 0 ? 0 : levels[best].unit + 1;
@@ -432,7 +440,7 @@ export function owedNodes(b: Bundle, skills: readonly string[]): NodeId[] {
  *  - due dates spread evenly over a window of W days, W sized so the first
  *    pass costs at most 60% of the band's warm-up budget per day (W within
  *    14..120), lowest stability first (never before tomorrow);
- *  - a node of a skill the learner failed (`owed`, at most OWED_GRAMMAR_CAP nodes) is not seeded;
+ *  - a node of a skill the learner failed (`owed`, worst first, at most OWED_GRAMMAR_CAP nodes) is not seeded, and goes on the path's owed lists;
  *  - beyond the most recent two units only the direction the productive
  *    policy would unlock is kept active (a productive node's receptive card is
  *    seeded suspended); a node seeded as learned (stability >= 60) has its
@@ -446,8 +454,10 @@ export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = 
   interface Seed { id: NodeId; productive: boolean; stability: number; recent: boolean }
   const seeds: Seed[] = [];
   const seen = new Set<NodeId>();
-  // grammar the learner failed stays unseeded, at most OWED_GRAMMAR_CAP of it: the course owes the rest as new
-  let held = 0;
+  // grammar the learner failed stays unseeded, the worst first and at most OWED_GRAMMAR_CAP of it, and is owed on the path from the first session
+  const skipped = new Set(b.course.units.slice(0, path.unit).flatMap((u) => u.days.flatMap((d) => [...d.focus, ...d.chunks, ...d.lexemes])));
+  const held = new Set(owed.filter((n) => skipped.has(n) && b.node(n)?.kind !== 'cando' && !learner.isIntroduced(n)).slice(0, OWED_GRAMMAR_CAP));
+  for (const n of held) (b.node(n)?.kind === 'grammar' ? path.owedGrammar : path.owedNew).push(n);
   // most recent unit first
   for (let u = path.unit - 1; u >= 0; u--) {
     const k = path.unit - 1 - u;
@@ -456,7 +466,7 @@ export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = 
       for (const n of [...d.focus, ...d.chunks, ...d.lexemes]) {
         if (seen.has(n) || b.node(n)?.kind === 'cando' || learner.isIntroduced(n)) continue;
         seen.add(n);
-        if (held < OWED_GRAMMAR_CAP && owed.includes(n)) { held++; continue; }
+        if (held.has(n)) continue;
         const node = b.node(n);
         const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank, recognition: !!node && recognitionOnly(node) });
         seeds.push({ id: n, productive, stability, recent: k < SEED_FULL_UNITS });

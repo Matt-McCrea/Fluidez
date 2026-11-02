@@ -387,6 +387,48 @@ describe('placement draws on the contrast store, and a failed skill is owed, not
     expect(p.owed?.().filter((s) => s !== missed).length).toBe(0);
   });
 
+  // answering as each person would: what they know right, the rest "I don't know" or a guess among the options
+  const honest = (known: number, dontKnow: number, seed: number, start: Band) => {
+    let s = seed * 7919 + 13;
+    const rnd = () => { s = (s * 1103515245 + 12345) & 0x7fffffff; return s / 0x7fffffff; };
+    const p = ladder(levels, bandOf, MAX_ITEMS, { start });
+    for (let it = p.next(); it; it = p.next()) p.answer(it.unit <= known ? rnd() >= 0.1 : rnd() >= dontKnow && rnd() < 1 / it.options.length);
+    return p.result();
+  };
+  const median = (xs: number[]) => [...xs].sort((a, c) => a - c)[xs.length >> 1];
+  const runs = Array.from({ length: 200 }, (_, i) => i);
+
+  it('a learner who claims far above their level is brought down to it inside the check', () => {
+    expect(Math.abs(median(runs.map((s) => honest(34, 0, s, 'C1'))) - 35)).toBeLessThanOrEqual(6);
+    expect(median(runs.map((s) => honest(8, 0.3, s, 'B2')))).toBeLessThanOrEqual(20);
+  });
+
+  it('a beginner who claims Advanced and mostly says they do not know stays at the start', () => {
+    for (const start of ['B1', 'C1'] as const) expect(median(runs.map((s) => honest(-1, 0.6, s, start)))).toBe(0);
+  });
+
+  it('an honest learner at their claimed band is not pulled down by the misses above them', () => {
+    for (const [band, known] of [['A1', 8], ['A2', 20], ['B1', 34], ['B2', 46]] as const) {
+      expect(Math.abs(median(runs.map((s) => honest(known, 0, s, band))) - (known + 1)), band).toBeLessThanOrEqual(1);
+    }
+  });
+
+  it('the worst skill is the one held, and what is held is owed on the path', async () => {
+    const T0 = new Date(2026, 9, 1, 18).getTime();
+    const skipped = (x: string) => upper.course.units.slice(0, 40).some((u) => u.days.some((d) => [...d.focus, ...d.chunks].includes(x)));
+    const skills = [...upper.contrasts.keys()].filter(skipped);
+    // the worst skill comes first and is taught early; those after it sit nearer the result, which the walk reaches first
+    const nodes = owedNodes(upper, [skills[0], ...skills.slice(-6)]);
+    const L = await Learner.open(new MemoryStore(), { now: () => T0 });
+    const path = applyPlacement(L, upper, 40, T0, nodes);
+    expect(L.nodes()).not.toContain(skills[0]);
+    const onPath = [...path.owedGrammar, ...path.owedNew];
+    expect(onPath).toContain(skills[0]);
+    expect(onPath.length).toBeLessThanOrEqual(OWED_GRAMMAR_CAP);
+    for (const n of onPath) expect(L.nodes()).not.toContain(n);
+    for (const n of path.owedGrammar) expect(upper.node(n)?.kind).toBe('grammar');
+  }, 60_000);
+
   it('owed grammar stays unseeded, and no more than the cap is held back', async () => {
     const T0 = new Date(2026, 9, 1, 18).getTime();
     const skills = [...upper.contrasts.keys()].filter((n) => upper.course.units.slice(0, 20).some((u) => u.days.some((d) => [...d.focus, ...d.chunks].includes(n))));
