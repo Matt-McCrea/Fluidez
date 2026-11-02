@@ -96,8 +96,8 @@ function scan(src: string, jsx: boolean): { code: string; strings: string[] } {
 }
 
 describe('UI copy', () => {
-  // the UI, and the exercise builders whose questions reach the screen verbatim
-  const all = [...files(ROOT), ...files(join(__dirname, '../../src/exercises')), ...files(join(__dirname, '../../src/check'))];
+  // the UI, and the builders whose words reach the screen verbatim: questions, checks, and what the games say
+  const all = [...files(ROOT), ...files(join(__dirname, '../../src/exercises')), ...files(join(__dirname, '../../src/check')), ...files(join(__dirname, '../../src/games'))];
 
   it('finds the UI sources', () => {
     expect(all.length).toBeGreaterThan(15);

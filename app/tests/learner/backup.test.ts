@@ -202,7 +202,7 @@ describe('a file that cannot be restored', () => {
     const state = await good(); (state.documents.state as LearnerState).version = STATE_VERSION + 1;
     const path = await good(); (path.documents.path as { version: number }).version = 99;
     const events = await good(); (events.documents.events as { version: number }).version = 99;
-    const extra = await good(); extra.documents.games = { anything: 1 };
+    const extra = await good(); extra.documents.gallery = { anything: 1 };
     for (const file of [wrapper, state, path, events, extra]) {
       const e = refused(backupText(file));
       expect(e.fault).toBe('newer');
@@ -269,14 +269,14 @@ describe('the allowlist', () => {
   });
 
   test('a new document is one more reader, and rides along both ways', async () => {
-    const readers: BackupReaders = { ...BACKUP_READERS, games: (raw) => raw };
+    const readers: BackupReaders = { ...BACKUP_READERS, gallery: (raw) => raw };
     const kv = kvOf(g);
-    await kv.set('games', { version: 1, list: [1, 2, 3] });
+    await kv.set('gallery', { version: 1, list: [1, 2, 3] });
     const file = await makeBackup(new IdbStore(kv), readers);
-    expect(file.documents.games).toEqual({ version: 1, list: [1, 2, 3] });
+    expect(file.documents.gallery).toEqual({ version: 1, list: [1, 2, 3] });
     const fresh = new MemoryKV();
     await restoreBackup(new IdbStore(fresh), readBackup(backupText(file), readers), readers);
-    expect(fresh.data.get('games')).toEqual({ version: 1, list: [1, 2, 3] });
+    expect(fresh.data.get('gallery')).toEqual({ version: 1, list: [1, 2, 3] });
     // and a build that has not heard of it refuses the file instead of dropping the document
     expect(() => readBackup(backupText(file), BACKUP_READERS)).toThrow(expect.objectContaining({ fault: 'newer' }));
   });

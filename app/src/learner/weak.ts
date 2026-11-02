@@ -42,7 +42,9 @@ export interface WeakOpts {
 
 const DAY_MS = 86_400_000;
 const FREE_FORM = new Set(['translate', 'respond', 'scene', 'recap']);
-const FORM = new Set(['warmup', 'pick', 'choose', 'type', 'transform', 'recombine', 'grind', 'train', 'quick', 'checkpoint']);
+const FORM = new Set(['warmup', 'pick', 'choose', 'type', 'transform', 'recombine', 'grind', 'train', 'quick', 'checkpoint', 'flash', 'rescue']);
+/** Drills of forms and words: a miss in one is a miss of the form, never of the choice between two tenses. */
+const DRILL = new Set(['grind', 'flash']);
 const GRAMMAR_KINDS = new Set(['grammar', 'pattern', 'contrast']);
 const TENSE_RATE = 0.4;
 const NODE_RATE = 0.5;
@@ -108,7 +110,7 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
   // contrast too, but a miss on the future is a miss of the future: a tense and its forms are what a form drill is for, and a grind has no choice in it
   const betweenTenses = (e: ReviewEvent): NodeId[] => {
     const n = look(e.node);
-    return e.op !== 'grind' && n && tensesOfNode(n).length > 1 ? contrastsOf(e.node) : [];
+    return !DRILL.has(e.op) && n && tensesOfNode(n).length > 1 ? contrastsOf(e.node) : [];
   };
 
   const spots: WeakSpot[] = [];

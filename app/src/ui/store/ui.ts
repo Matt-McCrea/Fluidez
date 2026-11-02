@@ -5,6 +5,7 @@
 // saved words, can-do self-checks) live under "ui". Both are plain JSON.
 import { initialPath, type Course, type Mode, type PathState, type SessionPlan } from '../../compiler';
 import { dayKeyOf } from '../../content/days';
+import { GAMES_KEY, GamesStore, readGames } from '../../games/store';
 import { idbKV, StoredDocumentError, type KV, type Learner, type Tier } from '../../learner';
 import { LEARNER_READERS, type BackupReaders } from '../../learner/backup';
 import { stampPosition, type UiNames } from '../../learner/reconcile';
@@ -201,9 +202,9 @@ export function salvagePath(raw: unknown): PathState {
 /**
  * The documents a backup carries: the learner's and the UI's, each with the
  * reader that opens it the way boot does. The allowlist is these keys. A new
- * document (games) is one more entry here.
+ * document is one more entry here.
  */
-export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi, [WRITING_KEY]: readWriting, [HISTORY_KEY]: readHistory };
+export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi, [WRITING_KEY]: readWriting, [HISTORY_KEY]: readHistory, [GAMES_KEY]: readGames };
 
 /** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
 export interface SavedSession {
@@ -243,11 +244,13 @@ export class UiStore {
   private listeners = new Set<() => void>();
   /** what the learner makes, kept in documents of their own (see keep.ts) */
   readonly keep: Keep;
+  /** what the games keep, in a document of its own (see games/store.ts) */
+  readonly games: GamesStore;
 
   /** the course this build carries, and the content version learner documents were settled at, once boot has settled them (see `track`) */
   private tracking?: { course: Pick<Course, 'units'>; version: number };
 
-  constructor(readonly kv: KV = idbKV()) { this.keep = new Keep(kv); }
+  constructor(readonly kv: KV = idbKV()) { this.keep = new Keep(kv); this.games = new GamesStore(kv); }
 
   /**
    * Boot has settled the learner's documents against this course (settleContent). From here a path
@@ -316,6 +319,7 @@ export class UiStore {
       else if ((path as any).version !== PATH_VERSION) { await this.keepVersion(PATH_KEY, path); await this.writeBack(PATH_KEY, this.path); }
     }
     await this.keep.tidy();
+    await this.games.tidy();
     return this;
   }
 
@@ -469,8 +473,8 @@ export class UiStore {
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
     // the copies kept beside the documents (quarantine, version snapshots) go too: this promises everything is deleted
-    await this.keep.settled(); // a write still queued must not bring a deleted document back
-    const own = [UI_KEY, PATH_KEY, SESSION_KEY, WRITING_KEY, HISTORY_KEY];
+    await Promise.all([this.keep.settled(), this.games.settled()]); // a write still queued must not bring a deleted document back
+    const own = [UI_KEY, PATH_KEY, SESSION_KEY, WRITING_KEY, HISTORY_KEY, GAMES_KEY];
     const copies = ((await this.kv.keys?.()) ?? []).filter((k) => own.some((n) => k.startsWith(`${n}.`)));
     for (const k of [...own, ...extraKeys, ...copies]) await this.kv.del(k);
     this.session = undefined;
