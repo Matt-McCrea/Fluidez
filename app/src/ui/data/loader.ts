@@ -12,6 +12,7 @@ import type { ContentSource } from '../../compiler';
 import {
   Band, BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
+import { Library, type LibraryChapter } from '../../content/library';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
 import type { ContentDir } from '../../content/kinds';
 import { Bundle } from './bundle';
@@ -23,6 +24,8 @@ export type FileMap = Record<string, FileLoader>;
 export interface ContentFiles extends Record<ContentDir, FileMap> {
   /** the content migrations and the shipped path, bundled whole (boot needs them before any content, and offline); absent = the course has no past */
   history?: { migrations: Record<string, unknown>; legacy?: unknown };
+  /** the chapter metadata (src/content/library.ts), imported on its own: no content glob covers an underscore folder; absent = the story is only what is loaded */
+  library?: Record<string, unknown>;
 }
 
 /** The kinds of content file that load lazily, window by window. */
@@ -37,6 +40,7 @@ export const CONTENT_FILES: ContentFiles = {
   story: import.meta.glob(['/content/story/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   scenes: import.meta.glob(['/content/scenes/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   writing: import.meta.glob(['/content/writing/**/*.json', '!**/_*'], { import: 'default', eager: false }),
+  library: import.meta.glob('/content/_library/library.json', { import: 'default', eager: true }),
   history: {
     migrations: import.meta.glob('/content/_migrations/*.json', { import: 'default', eager: true }),
     legacy: Object.values(import.meta.glob('/content/_shipped/path.json', { import: 'default', eager: true }))[0],
@@ -211,10 +215,24 @@ export class ContentLoader {
     return add;
   }
 
+  /** The story's chapters as the library lists them; none when the course ships no library or it cannot be read. */
+  library(): LibraryChapter[] {
+    if (!this.chapterList) {
+      const raw = Object.values(this.files.library ?? {})[0];
+      const r = raw === undefined ? undefined : Library.safeParse(raw);
+      if (r && !r.success) this.problems.push(`content/_library/library.json: ${r.error.issues[0]?.path.join('.')} ${r.error.issues[0]?.message}`);
+      this.chapterList = r?.success ? r.data.chapters : [];
+    }
+    return this.chapterList;
+  }
+  private chapterList?: LibraryChapter[];
+
   private snapshot(): ContentSource {
+    const library = this.library();
     return {
       sentences: [...this.src.sentences], chapters: [...this.src.chapters], scenes: [...this.src.scenes],
       writing: [...this.src.writing], scripts: [...this.src.scripts],
+      ...(library.length ? { library } : {}),
     };
   }
 

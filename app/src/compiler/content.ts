@@ -5,6 +5,7 @@ import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../content/schema';
 import { analyzeToken } from '../engine';
+import type { LibraryChapter } from '../content/library';
 import type { ChapterRef, ContentIndex, Course, SceneRef, ScriptRef, SentenceRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
@@ -17,6 +18,8 @@ export interface ContentSource {
   writing: (WritingTask & Tagged)[];
   /** full scripts, or just their shape */
   scripts: (TeachingScript | ScriptRef)[];
+  /** every chapter of the story as the library knows it, loaded or not (absent: the story is the chapters above) */
+  library?: LibraryChapter[];
 }
 
 export function buildCourse(units: Unit[], nodes: GraphNode[]): Course {

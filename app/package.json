@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsx tools/build/library.ts && tsc --noEmit && vite build",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "gate": "tsx tools/gate.ts",
+    "library": "tsx tools/build/library.ts",
     "shipped": "tsx tools/shipped.ts",
     "simulate": "vite-node tools/simulate.ts --",
     "golden": "vite-node tools/golden.ts --",

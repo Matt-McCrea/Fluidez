@@ -4,6 +4,7 @@
 import {
   buildContentIndex, buildCourse, type ContentIndex, type ContentSource, type Course,
 } from '../../compiler';
+import type { LibraryChapter } from '../../content/library';
 import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
@@ -106,6 +107,9 @@ export class Bundle {
     if (!got) this.noScript.add(node);
     return got;
   }
+
+  /** Every chapter of the story as the library lists it (title, hook, length), whichever are loaded; empty without a library. */
+  get library(): readonly LibraryChapter[] { return this.source.library ?? []; }
 
   get empty(): boolean { return this.sentences.size === 0; }
 
