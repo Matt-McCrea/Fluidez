@@ -142,14 +142,17 @@ export function isQuestionRow(s: Pick<BankSentence, 'es' | 'kind'>): boolean {
 /**
  * The chapters of the story the path has reached and the learner has not read, in story order: earlier
  * units, and this unit up to today, from the unit placement started them at. The compiler walks this to
- * choose a chapter and prepare walks it to know which to fetch, so the two cannot disagree.
+ * choose a chapter and prepare walks it to know which to fetch, so the two cannot disagree. Placement's
+ * unit is an index, which a change to the course can leave ahead of a path it moved back: the learner's
+ * own unit is never skipped for it.
  */
 export function unreadChapters<S extends { id: string; unit: string; day?: number }>(
   story: readonly S[], course: Pick<Course, 'unitIndex'>, path: Pick<PathState, 'unit' | 'day'>, from: number, seen: (id: string) => boolean,
 ): S[] {
+  const start = Math.min(from, path.unit);
   return story.filter((s) => {
     const ui = course.unitIndex.get(s.unit) ?? Infinity;
-    if (ui < from) return false;
+    if (ui < start) return false;
     const reached = ui < path.unit || (ui === path.unit && (s.day === undefined || s.day <= path.day));
     return reached && !seen(s.id);
   });

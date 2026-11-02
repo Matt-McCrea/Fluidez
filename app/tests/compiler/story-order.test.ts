@@ -57,6 +57,13 @@ describe('a chapter at the learner\'s level', () => {
     expect(unitOfChapter(read[0])).toBeGreaterThanOrEqual(AT);
   });
 
+  test('a placement a course change has left ahead of the path does not take the day\'s own chapter away', () => {
+    const plan = compileSession(input({ placedAt: AT + 2 }));
+    const read = readsIn(plan);
+    expect(read).toHaveLength(1);
+    expect(unitOfChapter(read[0])).toBe(AT);
+  });
+
   test('the first chapter of the story would otherwise be the one served', () => {
     const plan = compileSession(input());
     expect(readsIn(plan)).toEqual([library[0].id]);
