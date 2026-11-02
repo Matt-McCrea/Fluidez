@@ -3,6 +3,7 @@
 // ids are stable across runs and seeds, for the exposure ledger.
 import { checkExact } from '../check/exact';
 import { matchEnglish, matchTranslation, type MatchOptions } from '../check/translate';
+import { gapSlipNote } from '../check/translate/accents';
 import type { Item } from './types';
 
 export * from './types';
@@ -30,10 +31,16 @@ export interface ItemCheck {
   near?: boolean;
   hint?: string;
   variant?: 'peninsular';
-  /** Passed through a swap the item did not teach but Spanish allows. */
+  /** Passed through a swap the item did not teach but Spanish allows, or an accent slip that is only spelling. */
   note?: string;
   /** What to show as the answer. */
   answer: string;
+}
+
+/** A typed gap that is right but for its accents, under `accents: 'lenient'`: right, with a note, unless the accent is the word. */
+function gapSlip(response: string, answers: readonly string[], near: boolean, opts: MatchOptions, answer: string): ItemCheck | undefined {
+  const note = near && opts.accents === 'lenient' ? gapSlipNote(response, answers) : undefined;
+  return note ? { pass: true, near: true, note, answer } : undefined;
 }
 
 /** Check a learner's response to any item. `response` is the typed text, or
@@ -45,12 +52,14 @@ export function checkItem(item: Item, response: string | number, opts: MatchOpti
       return { pass: response === item.answer, answer: item.options[item.answer] };
     case 'typeForm': {
       const r = checkExact(String(response), [item.answer, ...item.accept]);
-      return { pass: r.pass, near: r.near, ...(r.near && !r.pass ? { hint: 'Check the accents.' } : {}), answer: item.answer };
+      const slip = r.pass ? undefined : gapSlip(String(response), [item.answer, ...item.accept], r.near, opts, item.answer);
+      return slip ?? { pass: r.pass, near: r.near, ...(r.near && !r.pass ? { hint: 'Check the accents.' } : {}), answer: item.answer };
     }
     case 'cue':
     case 'lexGap': {
       const r = checkExact(String(response), [item.answer, ...item.accept], { peninsular: item.peninsular });
-      return { pass: r.pass, near: r.near, ...(r.variant ? { variant: r.variant } : {}), ...(r.near && !r.pass ? { hint: 'Check the accents.' } : {}), answer: item.answer };
+      const slip = r.pass ? undefined : gapSlip(String(response), [item.answer, ...item.accept, ...(item.peninsular ?? [])], r.near, opts, item.answer);
+      return slip ?? { pass: r.pass, near: r.near, ...(r.variant ? { variant: r.variant } : {}), ...(r.near && !r.pass ? { hint: 'Check the accents.' } : {}), answer: item.answer };
     }
     case 'transform': {
       const r = matchTranslation(String(response), { es: item.answer, en: '', accept: item.accept }, opts);

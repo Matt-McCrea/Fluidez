@@ -14,7 +14,7 @@
 import { deaccent } from '../../engine';
 import { CLITICS, enSubject, enWords, EXPERIENCER, verbReadings } from '../../exercises/spanish';
 import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
-import { accentNote, accentSlips, changesWord } from './accents';
+import { accentSlips, forgiven, mendSlips } from './accents';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
 
@@ -131,6 +131,9 @@ function encliticAccentSlip(ci: Canon, cv: Canon): boolean {
   return ci.toks.some((t, i) => t.src && cv.toks[i]?.src && t.src !== cv.toks[i].src && deaccent(t.src) === deaccent(cv.toks[i].src!));
 }
 
+/** A pass can have gone through a swap and an accent slip at once; the learner is told both. */
+const joinNotes = (a: string | undefined, b: string) => (a ? `${a} ${b}` : b);
+
 export function matchTranslation(input: string, sentence: SentenceLike, opts: MatchOptions = {}): TranslationResult {
   const expanded = expandAccepted(sentence, opts);
   const seen = new Set(expanded.map((v) => v.es));
@@ -180,14 +183,23 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     if (sameToks && pronOk && advKey(ci) === advKey(cv) && !advOk) { orderHit ??= { v }; continue; }
     if (sameAccentless && pronOkLoose && (advOk || advLoose)) { nearHit ??= { v }; continue; }
   }
+  /** Forgive a slip only when the answer stands with it put right: the strict reading sees what a near match does not (una millón). */
+  const forgive = (v: Variant, tried = new Set<string>()): TranslationResult | undefined => {
+    const slips = accentSlips(input, v.es);
+    const note = forgiven(slips);
+    const text = note ? mendSlips(input, v.es, slips) : undefined;
+    if (!text || tried.has(text)) return undefined;
+    tried.add(text);
+    const mended = matchTranslation(text, sentence, { ...opts, accents: 'strict' });
+    return mended.pass ? { ...mended, near: true, hint: HINT_TEXT.accents, hintKind: 'accents', note: joinNotes(mended.note, note!) } : undefined;
+  };
   if (nearHit) {
     const v = nearHit.v;
     // an accent slip stays right unless the accent is the word (hablo, habló); a slip that cannot be located is not forgiven
-    const slips = accentSlips(input, v.es);
-    const forgiven = lenient && slips.length > 0 && !slips.some(changesWord);
+    const right = lenient ? forgive(v) : undefined;
+    if (right) return right;
     return {
-      pass: forgiven, near: true, hint: HINT_TEXT.accents, hintKind: 'accents', closest: v.es,
-      ...(forgiven ? { note: accentNote(slips) } : {}),
+      pass: false, near: true, hint: HINT_TEXT.accents, hintKind: 'accents', closest: v.es,
       ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}),
     };
   }
@@ -209,6 +221,15 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   if (slip) {
     return { pass: false, hint: HINT_TEXT.experiencer, hintKind: 'experiencer', closest: best.v.es, at: Math.max(0, ci.toks.findIndex((t) => CLITICS.has(t.t))) };
+  }
+  // canon finds a verb and a movable adverbial by their accents, so a slip on one (queria, tambien) hides the
+  // sentence's shape from it and nothing above matched
+  if (lenient) {
+    const tried = new Set<string>();
+    for (const { v } of cvs) {
+      const right = forgive(v, tried);
+      if (right) return right;
+    }
   }
   const dg = diagnose(fi, flat(best.cv));
   return { pass: false, hint: dg.hint, hintKind: dg.kind, closest: best.v.es, at: dg.at, ...(dg.kind === 'accents' ? { near: true } : {}) };
