@@ -28,4 +28,6 @@ If it fails, the migration is wrong, not the fixture.
 
 Do not regenerate the `head-*` files to make the test pass: they are what the new migration is tested against. Add a new set (`golden-<commit>-early.json` and so on), list it in `SHAPES` in the test with the versions it was written at, and keep the old ones. `SHAPES` pins each file's on-disk versions, so a file regenerated with newer code fails the test instead of quietly standing for something else.
 
+The attempts, writing and history documents (and the fingerprint on the state) are additive and in none of the fixtures: a learner saved before them boots as it was and gains them as they are made. `tests/learner/attempts.test.ts` boots every fixture, gives it an attempt, reopens it and checks it lost nothing.
+
 Each fixture's clock is fixed (1 October 2026, 18:00 UTC onwards), so none depends on the time zone or the day the test runs.
