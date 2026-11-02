@@ -10,6 +10,7 @@ import { isMultiTurn, turnView } from '../exercises/dialogue';
 import { namesOf, placesOf } from '../exercises/licence';
 import { recognitionOnly } from '../learner/policy';
 import type { LibraryChapter } from '../content/library';
+import { DAILY_BEAT_WORDS, splitBeats } from '../ui/session/beats';
 import type { ChapterRef, ContentIndex, ContrastRef, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
@@ -211,12 +212,16 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
   const storyOrder = new Map(story?.map((s) => [s.id, s.order]));
   const chapters: ChapterRef[] = [...src.chapters]
     .sort((a, b) => a.id.localeCompare(b.id))
-    .map((c, order) => ({
-      id: c.id, unit: c.unit, order: storyOrder.get(c.id) ?? order, day: dayOf(c.unit, 'chapter', c.id),
-      requires: c.requires?.length ? c.requires : positionGate(course, unitById.get(c.unit), dayOf(c.unit, 'chapter', c.id)),
-      questions: c.questions.length,
-      minutes: Math.max(2, Math.round(((c.text.split(/\s+/).length / READ_WPM) + c.questions.length * 0.3) * 2) / 2),
-    }));
+    .map((c, order) => {
+      const beats = splitBeats(c.text, c.questions, { target: DAILY_BEAT_WORDS });
+      return {
+        id: c.id, unit: c.unit, order: storyOrder.get(c.id) ?? order, day: dayOf(c.unit, 'chapter', c.id),
+        requires: c.requires?.length ? c.requires : positionGate(course, unitById.get(c.unit), dayOf(c.unit, 'chapter', c.id)),
+        questions: c.questions.length,
+        minutes: Math.max(2, Math.round(((c.text.split(/\s+/).length / READ_WPM) + c.questions.length * 0.3) * 2) / 2),
+        ...(beats.length > 1 ? { beats: beats.map((b) => ({ questions: b.questions.length, minutes: Math.max(0.5, Math.round(((b.words / READ_WPM) + b.questions.length * 0.3) * 2) / 2) })) } : {}),
+      };
+    });
 
   const scenes = new Map<string, SceneRef>();
   const scenesByUnit = new Map<string, string[]>();

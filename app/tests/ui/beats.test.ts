@@ -2,7 +2,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
-import { countWords, sentencesOf, splitBeats } from '../../src/ui/session/beats';
+import { countWords, DAILY_BEAT_WORDS, sentencesOf, splitBeats } from '../../src/ui/session/beats';
 
 let bundle: Bundle;
 beforeAll(async () => { bundle = await new ContentLoader().load({ band: 'A1' }); }, 60_000);
@@ -54,5 +54,28 @@ describe('splitBeats on small input', () => {
     const beats = splitBeats(`${a.trim()}\n${b.trim()}`, [{ q: 'Dónde repara bicicletas Esteban?', options: ['en el garaje', 'en la plaza'], answer: 0 }], { target: 60 });
     expect(beats).toHaveLength(2);
     expect(beats[1].questions).toEqual([0]);
+  });
+});
+
+describe('daily beats', () => {
+  const line = (n: number, end = '.') => `${Array.from({ length: n }, (_, i) => `palabra${String.fromCharCode(97 + (i % 26))}`).join(' ')}${end}`;
+  it('stop where a question is left hanging, when one comes in reach', () => {
+    const text = [line(20), line(20), line(14, '?'), line(30), line(30), line(30), line(25)].join('\n');
+    const beats = splitBeats(text, [], { target: DAILY_BEAT_WORDS });
+    expect(beats.length).toBeGreaterThan(2);
+    expect(beats[0].text.trimEnd().endsWith('?')).toBe(true);
+  });
+
+  it('on the real chapters, a daily beat is a minute of reading and most beats end on a hook', () => {
+    let beats = 0;
+    let hooks = 0;
+    for (const id of ids) {
+      const ch = bundle.chapters.get(id)!;
+      const bs = splitBeats(ch.text, ch.questions, { target: DAILY_BEAT_WORDS });
+      for (const b of bs) { expect(b.words).toBeGreaterThanOrEqual(40); expect(b.words).toBeLessThanOrEqual(100); }
+      bs.slice(0, -1).forEach((b) => { beats += 1; if (/[?…]["”»')\]]*$/u.test(b.text)) hooks += 1; });
+    }
+    expect(beats).toBeGreaterThan(10);
+    expect(hooks / beats).toBeGreaterThan(0.3);
   });
 });

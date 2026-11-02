@@ -9,9 +9,15 @@ export interface Beat {
   words: number;
 }
 
-interface Unit { text: string; words: number; paraEnd: boolean }
+interface Unit { text: string; words: number; paraEnd: boolean; hook: boolean }
 
 const MIN_WORDS = 40;
+
+/** The size of one day's piece of story: a minute of reading, so the story reaches most days. */
+export const DAILY_BEAT_WORDS = 55;
+
+/** A paragraph that ends on a question or a trailing off is a place to stop: the learner wants the answer. */
+const isHook = (s: string): boolean => /[?…]["”»')\]]*$/u.test(s);
 
 export const countWords = (s: string): number => (s.match(/\p{L}+/gu) ?? []).length;
 
@@ -33,7 +39,7 @@ export function splitBeats(
   const units: Unit[] = [];
   for (const para of text.split(/\n+/).map((l) => l.trim()).filter(Boolean)) {
     const ss = sentencesOf(para);
-    ss.forEach((s, i) => units.push({ text: s, words: countWords(s), paraEnd: i === ss.length - 1 }));
+    ss.forEach((s, i) => units.push({ text: s, words: countWords(s), paraEnd: i === ss.length - 1, hook: i === ss.length - 1 && isHook(s) }));
   }
   const total = units.reduce((n, u) => n + u.words, 0);
   const t = total / Math.max(1, Math.round(total / target));
@@ -44,7 +50,7 @@ export function splitBeats(
   for (const u of units) {
     if (n >= MIN_WORDS && n + u.words > t * 1.25) { groups.push(cur); cur = []; n = 0; }
     cur.push(u); n += u.words;
-    if ((n >= t * 0.9 && u.paraEnd) || n >= t) { groups.push(cur); cur = []; n = 0; }
+    if ((n >= t * 0.9 && u.paraEnd) || (n >= Math.max(MIN_WORDS, t * 0.7) && u.hook) || n >= t) { groups.push(cur); cur = []; n = 0; }
   }
   if (cur.length) {
     if (n < MIN_WORDS && groups.length) groups[groups.length - 1].push(...cur); else groups.push(cur);

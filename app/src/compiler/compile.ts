@@ -168,7 +168,11 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
         // a recombine item re-serves a sentence the learner knows on purpose: that repeat is deliberate
         for (const it of b.items) { add('sentence', it.sentence, it.op === 'recombine'); add('item', it.id, false); }
         break;
-      case 'read': add('chapter', b.chapter, false); break;
+      case 'read':
+        // a chapter read in beats is seen when its last beat is; each beat before that is only counted
+        if (b.beat) add('reading', b.chapter, true);
+        if (!b.beat || b.beat.ix === b.beat.of - 1) add('chapter', b.chapter, false);
+        break;
       case 'reread': add('chapter', b.chapter, true); break;
       case 'scene': add('scene', b.scene, false); break;
       case 'sceneRerun': add('scene', b.scene, true); break;
@@ -338,6 +342,7 @@ class Compiler {
       this.blocks.splice(at, 0, remedial.block);
     }
     this.fitToBudget();
+    if (d.type !== 'review') this.storyBeat();
     // a run over misses is an addition, so it goes where the plan cannot hold it (after the new words have been owed to make room); the checkpoint's stays
     if (remedial?.fromMiss && this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards) > this.minutes + 1e-9) {
       this.blocks.splice(this.blocks.indexOf(remedial.block), 1);
@@ -1331,9 +1336,24 @@ class Compiler {
     return any;
   }
 
+  /** The next beat of the chapter when it is cut into beats (a minute of it), else the chapter whole. */
   private pushRead(ch: ChapterRef) {
     this.readChapter = ch.id;
-    this.blocks.push({ kind: 'read', part: 'core', deliberate: false, chapter: ch.id, questions: ch.questions, minutes: ch.minutes });
+    const of = ch.beats?.length ?? 1;
+    const ix = Math.min(of - 1, this.L.ledger.views('reading', ch.id).length);
+    const beat = ch.beats?.[ix];
+    this.blocks.push({
+      kind: 'read', part: 'core', deliberate: false, chapter: ch.id, questions: beat?.questions ?? ch.questions, minutes: beat?.minutes ?? ch.minutes,
+      ...(beat ? { beat: { ix, of } } : {}),
+    });
+    return ix === of - 1;
+  }
+
+  /** A day with no story of its own carries the next beat of the chapter in hand, so the story reaches most days. */
+  private storyBeat() {
+    if (this.throttled || this.blocks.some((b) => b.kind === 'read' || b.kind === 'reread' || b.kind === 'scene')) return;
+    const { ch } = this.chapterFor(undefined);
+    if (ch?.beats) this.pushRead(ch);
   }
 
   /**
@@ -1369,7 +1389,8 @@ class Compiler {
     this.pushLearn(learn);
     const { ch, reason, blocked } = this.chapterFor(day);
     let shortage = false;
-    if (ch) this.pushRead(ch);
+    let whole = false;
+    if (ch) whole = this.pushRead(ch);
     else shortage = this.chapterProblem(blocked ?? day.chapter ?? '(unit chapter)', reason!);
     // cued production on today's new words
     const items: PracticeItem[] = [];
@@ -1379,7 +1400,7 @@ class Compiler {
       if (s) items.push(this.practiceItem(items.length % 2 ? 'translate' : 'gap', it.node, s, 'productive', 'exposure'));
     }
     if (items.length) this.blocks.push({ kind: 'cuedProduction', part: 'core', deliberate: false, items, minutes: round1(items.reduce((a, x) => a + SECONDS[x.op], 0) / 60) });
-    if (ch) this.blocks.push({ kind: 'reread', part: 'core', deliberate: true, chapter: ch.id, purpose: 'fluency', timed: true, minutes: round1(ch.minutes * 0.5) });
+    if (ch && whole) this.blocks.push({ kind: 'reread', part: 'core', deliberate: true, chapter: ch.id, purpose: 'fluency', timed: true, minutes: round1(ch.minutes * 0.5) });
     if (!ch && reason !== 'seen') {
       // the reading slot becomes review practice; never another text
       if (shortage) d.converted = learn.length ? { from: 'input', to: 'review', reason: 'shortage', partial: true } : { from: 'input', to: 'review', reason: 'shortage' };

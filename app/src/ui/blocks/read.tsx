@@ -12,7 +12,7 @@ import { Es, Heading, fmtSeconds, lines, undash } from '../components/text';
 import type { Bundle, TapAt } from '../data/bundle';
 import { seenWithEvent, slipOf } from '../session/attempt';
 import { questionCard } from '../session/cards';
-import { sentencesOf, splitBeats } from '../session/beats';
+import { DAILY_BEAT_WORDS, sentencesOf, splitBeats } from '../session/beats';
 import { blockHeading } from '../session/labels';
 import { CHAPTER_OFFLINE, storySoFar } from '../session/storyline';
 import { bringChapter } from '../data/prepare';
@@ -146,11 +146,17 @@ export function Reader({ chapter, bundle, ui, onFinish, finishLabel = "I've read
 }
 
 /** A first read, one beat at a time: the text, then the questions it answers. */
-function BeatReader({ chapter, questions, bundle, ui, keyPrefix, onQuestion, onFinish }: {
-  chapter: StoryChapter; questions: Question[]; bundle: Bundle; ui: UiStore; keyPrefix: string;
+function BeatReader({ chapter, questions, bundle, ui, keyPrefix, partOf, only, onQuestion, onFinish }: {
+  chapter: StoryChapter; questions: Question[]; bundle: Bundle; ui: UiStore; keyPrefix: string; partOf?: number;
+  /** a chapter read a beat a day: just this beat of it (the plan's index), cut the way the plan counted */
+  only?: number;
   onQuestion: (i: number, o: Outcome) => void; onFinish: (readSeconds: number, taps: number) => void;
 }) {
-  const beats = useMemo(() => splitBeats(chapter.text, questions), [chapter, questions]);
+  const beats = useMemo(() => {
+    if (only === undefined) return splitBeats(chapter.text, questions);
+    const all = splitBeats(chapter.text, questions, { target: DAILY_BEAT_WORDS });
+    return [all[Math.min(only, all.length - 1)]];
+  }, [chapter, questions, only]);
   const [ix, setIx] = useState(0);
   const [asking, setAsking] = useState(false);
   const readMs = useRef(0);
@@ -174,6 +180,7 @@ function BeatReader({ chapter, questions, bundle, ui, keyPrefix, onQuestion, onF
   return (
     <div class="reader">
       {beats.length > 1 ? <p class="small" aria-label={`Part ${ix + 1} of ${beats.length}`}>Part {ix + 1} of {beats.length}</p> : null}
+      {only !== undefined && partOf ? <p class="small" aria-label={`Part ${only + 1} of ${partOf}`}>Part {only + 1} of {partOf}</p> : null}
       <Passage key={ix} text={beat.text} label={chapter.title} bundle={bundle} selAt={g.sel?.at} tap={g.tap} showEn />
       {g.panel}
       <div class="actions"><Continue focus={false} label={label} onClick={done} /></div>
@@ -198,6 +205,7 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
     });
     return () => { live = false; };
   }, []);
+  const [asked, setAsked] = useState(0);
   const h = blockHeading(block, run.bundle);
   if (!chapter) {
     return (
@@ -215,13 +223,20 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   const questions = !reread ? chapter.questions
     : block.purpose === 'fluency' ? [] : (chapter.rereadQuestions.length ? chapter.rereadQuestions : chapter.questions);
 
+  // a chapter read a beat a day: this session's piece of it, and whether it is the last
+  const part = block.kind === 'read' ? block.beat : undefined;
+  const words = part
+    ? (() => { const all = splitBeats(chapter.text, chapter.questions, { target: DAILY_BEAT_WORDS }); return all[Math.min(part.ix, all.length - 1)].words; })()
+    : wordCount(chapter.text);
+  const lastPart = !part || part.ix === part.of - 1;
+
   const finishReading = (secs: number, taps: number, thenAsk = true) => {
     setTook(secs);
     const ref = run.bundle.index.chapterById.get(chapter.id);
     run.expose([...(ref?.requires ?? []), ...chapter.lexemes]);
-    void run.addWords(wordCount(chapter.text), 0);
-    void ui.keep.addRead({ at: Date.now(), chapter: chapter.id, words: wordCount(chapter.text), seconds: secs, taps, first: !reread });
-    if (!reread) {
+    void run.addWords(words, 0);
+    void ui.keep.addRead({ at: Date.now(), chapter: chapter.id, words, seconds: secs, taps, first: !reread && (!part || part.ix === 0) });
+    if (!reread && lastPart) {
       run.reads.set(chapter.id, secs);
       void ui.update((s) => { s.readSeconds[chapter.id] = secs; });
     }
@@ -236,7 +251,8 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
         {standing ? <p class="hook" data-story-so-far>{undash(standing)}</p> : null}
         <BeatReader
           chapter={chapter} questions={questions} bundle={run.bundle} ui={ui} keyPrefix={`${block.kind}:${chapter.id}`}
-          onQuestion={(i, o) => { if (o.correct) setRight((n) => n + 1); logComprehension(run, chapter, questions[i], o); }}
+          only={part?.ix} partOf={part?.of}
+          onQuestion={(i, o) => { setAsked((n) => n + 1); if (o.correct) setRight((n) => n + 1); logComprehension(run, chapter, questions[i], o); }}
           onFinish={(secs, taps) => finishReading(secs, taps, false)}
         />
       </>
@@ -263,10 +279,13 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   return (
     <>
       <Heading title={reread ? 'Nice reading' : 'Story so far'} />
-      {questions.length ? <p class="lead">{right} of {questions.length} questions right.</p> : null}
+      {part && asked ? <p class="lead">{right} of {asked} {asked === 1 ? 'question' : 'questions'} right.</p> : part ? null : questions.length ? <p class="lead">{right} of {questions.length} questions right.</p> : null}
       {reread && firstTime ? (
         <p>First time: {fmtSeconds(firstTime)}. This time: {fmtSeconds(took)}.{took < firstTime ? ' Faster, and it should feel easier too.' : ' It should feel easier, even if it took as long.'}</p>
-      ) : reread ? <p>Notice how much more of it you understood without stopping.</p> : <p>You just read a whole chapter in Spanish: {wordCount(chapter.text)} words.</p>}
+      ) : reread ? <p>Notice how much more of it you understood without stopping.</p>
+        : part && !lastPart ? <p>Part {part.ix + 1} of {part.of} of this chapter, in Spanish: {words} words. Part {part.ix + 2} is next in the story.</p>
+          : part ? <p>You finished the chapter: it took {part.of} parts, in Spanish.</p>
+            : <p>You just read a whole chapter in Spanish: {wordCount(chapter.text)} words.</p>}
       <div class="actions"><Continue onClick={onDone} /></div>
     </>
   );

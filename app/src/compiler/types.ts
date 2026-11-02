@@ -95,7 +95,11 @@ export interface SentenceRef {
  * plus the previous units' nodes are implied by being introduced earlier.
  */
 /** `day`: index of the unit day that lists the chapter (undefined = unlisted: read on the unit's first input day with room). */
-export interface ChapterRef { id: string; unit: string; order: number; day?: number; requires: NodeId[]; questions: number; minutes: number }
+export interface ChapterRef {
+  id: string; unit: string; order: number; day?: number; requires: NodeId[]; questions: number; minutes: number;
+  /** a chapter long enough to be read over several sessions: each beat's question count and minutes (absent: read whole) */
+  beats?: { questions: number; minutes: number }[];
+}
 /** A chapter of the story as the library lists it, loaded or not: enough to put it in order and to know when it is reached. */
 export interface StoryRef { id: string; unit: string; order: number; day?: number }
 export interface SceneRef { id: string; unit: string; requires: NodeId[]; focus: NodeId[]; turns: number; minutes: number }
@@ -407,7 +411,11 @@ export interface PracticeBlock extends BlockBase {
 export interface LeechBlock extends BlockBase { kind: 'leech'; items: ReviewItem[] }
 
 /** First read of a story chapter (never seen before). */
-export interface ReadBlock extends BlockBase { kind: 'read'; chapter: string; questions: number }
+export interface ReadBlock extends BlockBase {
+  kind: 'read'; chapter: string; questions: number;
+  /** one day's beat of a chapter read over several sessions: the chapter is read once its last beat is (absent: the whole chapter) */
+  beat?: { ix: number; of: number };
+}
 
 /**
  * Deliberate re-read of a seen chapter.
