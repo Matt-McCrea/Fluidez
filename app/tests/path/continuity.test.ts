@@ -50,6 +50,18 @@ describe('an id that shipped and is gone', () => {
     expect(problems({ current, shipped, migrations })).toEqual([]);
   });
 
+  it('walks a chain in table order: a rename onto an id an earlier entry already moved goes nowhere', () => {
+    const lateMid = ids({ ...current, rows: ['u01-0001', 'u01-0002'] });
+    const migrations = [mig(1, { nodes: { rename: { 'l:mid': 'l:new' } } }), mig(2, { nodes: { rename: { 'l:old': 'l:mid' } } })];
+    expect(problems({ current: lateMid, shipped, migrations }).join('|')).toMatch(/node l:old is renamed to l:mid, which is not in the content/);
+  });
+
+  it('fails renames that go round in a circle', () => {
+    const lateMid = ids({ ...current, nodes: ['g:a', 'l:kept'], rows: ['u01-0001', 'u01-0002'] });
+    const migrations = [mig(1, { nodes: { rename: { 'l:old': 'l:new' } } }), mig(2, { nodes: { rename: { 'l:new': 'l:old' } } })];
+    expect(problems({ current: lateMid, shipped, migrations }).join('|')).toMatch(/node l:old is renamed to l:new, which is not in the content \(the renames end at l:old\)/);
+  });
+
   it('fails a retired id that is back in the content', () => {
     const back = ids({ ...current, nodes: [...current.nodes, 'l:old'] });
     const migrations = [mig(1, { nodes: { rename: { 'l:old': 'l:new' } } }), mig(2, { rows: { remove: ['u01-0002'] } })];

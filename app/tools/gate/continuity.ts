@@ -208,11 +208,31 @@ export function checkContinuity(opts: {
     return m;
   };
 
+  /** Where an id ends up from migration `start` on, walked in table order as reconcile walks it; null when it is retired on the way. */
+  const landing = (kind: IdKind, id: string, start: number): string | null => {
+    let cur = id;
+    for (const { m: x } of table) {
+      if (x.id < start) continue;
+      if (kind === 'days') {
+        const to = x.days && Object.hasOwn(x.days, cur) ? x.days[cur] : cur;
+        if (to === null) return null;
+        cur = to;
+      } else {
+        const mv = movesOf(x, MOVE_OF[kind]);
+        if (mv.remove.includes(cur)) return null;
+        if (Object.hasOwn(mv.rename, cur)) cur = mv.rename[cur];
+      }
+    }
+    return cur;
+  };
+
   for (const kind of ID_KINDS) {
     const gone = retired(kind);
     for (const [from, g] of gone) {
       if (exists[kind].has(from)) out.push(err(`content/${MIGRATIONS_DIR}/${String(g.migration).padStart(4, '0')}.json`, `${KIND_NAME[kind]} ${from} was retired here and is back in the content`, 'a retired id is never used again: give the new thing a new id, or remove the entry'));
-      if (g.to && !exists[kind].has(g.to) && !gone.has(g.to)) out.push(err(`content/${MIGRATIONS_DIR}/${String(g.migration).padStart(4, '0')}.json`, `${KIND_NAME[kind]} ${from} is renamed to ${g.to}, which is not in the content`, 'rename to an id that exists'));
+      // the end of the chain has to exist, in the order the table runs: a later entry cannot rescue a rename that an earlier one already passed
+      const end = g.to ? landing(kind, from, g.migration) : null;
+      if (end !== null && !exists[kind].has(end)) out.push(err(`content/${MIGRATIONS_DIR}/${String(g.migration).padStart(4, '0')}.json`, `${KIND_NAME[kind]} ${from} is renamed to ${g.to}, which is not in the content${end === g.to ? '' : ` (the renames end at ${end})`}`, 'rename to an id that exists'));
     }
     if (shipped) {
       const vanished = shipped[kind].filter((id) => !exists[kind].has(id) && !gone.has(id));
