@@ -214,6 +214,8 @@ export interface Measure {
   contrastEst: number;
   contrastPlan: number;
   contrastOver: number;
+  /** practice misses queued, those re-asked in the recap, and the sessions that opened with a short run over them (F7) */
+  misses: string;
   /** nodes the run introduced, and sessions that moved the path on a day */
   introduced: number;
   advanced: number;
@@ -237,6 +239,7 @@ export function measures(runs: ProfileRun[]): Measure[] {
       contrastReturns: core.reduce((a, s) => a + s.contrastReturned.length, 0),
       contrastDays: days.length, contrastEst: avg(days.map((s) => s.estMinutes)), contrastPlan: avg(days.map((s) => s.planMinutes)),
       contrastOver: days.filter((s) => s.estMinutes > s.planMinutes + 0.05).length,
+      misses: `${r.misses.queued}/${r.misses.recap}/${r.misses.opened}`,
       introduced: core.reduce((a, s) => a + s.newItems, 0), advanced: core.filter((s) => s.advanced).length,
       est: avg(core.map((s) => s.estMinutes)), plan: avg(core.map((s) => s.planMinutes)), overPct: pct(core.filter((s) => s.estMinutes > s.planMinutes + 0.05).length, core.length),
     };
@@ -281,10 +284,10 @@ function returnLine(x: Return): string {
   return `  ${`${x.profile}/${x.tier}`.padEnd(18)} day ${String(x.day).padEnd(3)} after ${String(x.gap).padEnd(2)} days: ${String(x.due).padStart(4)} due (${x.dueMinutes.toFixed(1)} min)  ${ss}  ${x.toNew === undefined ? 'NO NEW IN SIX' : `new at session ${x.toNew}`}`;
 }
 
-const MEASURE_HEAD = ['profile', 'tier', 'core sessions', 'story %', 'new %', 'longest run without new', 'review-only, first 21 %', 'contrasts taught/listed', 'contrast returns', 'contrast days', 'est/plan min on them', 'over', 'est/plan min, all', 'over %', 'nodes introduced', 'days advanced'];
+const MEASURE_HEAD = ['profile', 'tier', 'core sessions', 'story %', 'new %', 'longest run without new', 'review-only, first 21 %', 'contrasts taught/listed', 'contrast returns', 'contrast days', 'est/plan min on them', 'over', 'est/plan min, all', 'over %', 'nodes introduced', 'days advanced', 'misses queued/recap/runs'];
 function measureCells(m: Measure): string[] {
   return [m.profile, m.tier, String(m.core), m.storyPct.toFixed(1), m.freshPct.toFixed(1), String(m.longestWithoutNew), m.reviewOnly21.toFixed(0), `${m.contrastsTaught}/${m.contrastsListed}`, String(m.contrastReturns),
-    String(m.contrastDays), m.contrastDays ? `${m.contrastEst.toFixed(1)}/${m.contrastPlan.toFixed(1)}` : '-', String(m.contrastOver), `${m.est.toFixed(1)}/${m.plan.toFixed(1)}`, m.overPct.toFixed(1), String(m.introduced), String(m.advanced)];
+    String(m.contrastDays), m.contrastDays ? `${m.contrastEst.toFixed(1)}/${m.contrastPlan.toFixed(1)}` : '-', String(m.contrastOver), `${m.est.toFixed(1)}/${m.plan.toFixed(1)}`, m.overPct.toFixed(1), String(m.introduced), String(m.advanced), m.misses];
 }
 
 export function formatReport(runs: ProfileRun[], quotas: Quotas, placed: ProfileRun[] = []): string {

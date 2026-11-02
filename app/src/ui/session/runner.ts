@@ -5,7 +5,7 @@
 //   `scoring` → on finishing the core: advancePath, persist the path.
 // An abandoned session leaves the path where it was.
 import {
-  advancePath, canDoAnother, carryOwed, compileSession, reviewTargets, servedRefs, stoppedPath,
+  advancePath, canDoAnother, carryOwed, compileSession, reviewTargets, servedRefs, stoppedPath, withMiss,
   type Block, type Item, type LearnItem, type Mode, type PathState, type RecapBlock, type RecapItem, type ServedRef, type SessionPlan,
 } from '../../compiler';
 import type { NodeId } from '../../content/schema';
@@ -15,7 +15,7 @@ import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades } from './attribute';
-import { climb, eventOp, gradeOf, lessonStep, logAnswer, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome } from './attempt';
+import { climb, eventOp, gradeOf, lessonStep, logAnswer, missRetest, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome, type Retest } from './attempt';
 import { progressNumbers } from './numbers';
 import { LearnQueue } from './order';
 
@@ -31,6 +31,8 @@ export interface RunnerSnapshot {
   presented: NodeId[];
   notPresented: NodeId[];
   lapses: Lapse[];
+  /** practice items missed this session (absent in a session saved before they were kept) */
+  retests?: Retest[];
   learnSteps: [NodeId, number][];
   learnMisses: NodeId[];
   typedOk: [NodeId, number][];
@@ -123,6 +125,8 @@ export class SessionRunner {
   private readonly notPresented = new Set<NodeId>();
   /** reviews missed this session, in order (the "Before you go" block re-asks them) */
   private readonly lapses: Lapse[] = [];
+  /** practice items missed this session, in order: their targets come back in "Before you go" and at the start of the next session (F7) */
+  readonly retests: Retest[] = [];
   /** in-lesson retrievals each new node has had */
   private readonly learnSteps = new Map<NodeId, number>();
   private readonly learnMisses = new Set<NodeId>();
@@ -173,7 +177,7 @@ export class SessionRunner {
     return structuredClone({
       entered: blocks(this.entered), skipped: blocks(this.skipped),
       presented: [...this.presented], notPresented: [...this.notPresented],
-      lapses: this.lapses, learnSteps: [...this.learnSteps], learnMisses: [...this.learnMisses], typedOk: [...this.typedOk],
+      lapses: this.lapses, retests: this.retests, learnSteps: [...this.learnSteps], learnMisses: [...this.learnMisses], typedOk: [...this.typedOk],
       cardsDone: [...this.cardsDone].map(([b, n]) => [idx(b), n] as [number, number]).filter(([i]) => i >= 0),
       tally: this.tally, misses: this.misses, scenes: [...this.scenes], reads: [...this.reads], marked: [...this.marked], startedAt: this.startedAt,
     });
@@ -193,6 +197,7 @@ export class SessionRunner {
     s.presented.forEach((n) => run.presented.add(n));
     s.notPresented.forEach((n) => run.notPresented.add(n));
     run.lapses.push(...s.lapses);
+    run.retests.push(...(s.retests ?? []));
     s.learnSteps.forEach(([n, c]) => run.learnSteps.set(n, c));
     s.learnMisses.forEach((n) => run.learnMisses.add(n));
     s.typedOk.forEach(([n, c]) => run.typedOk.set(n, c));
@@ -404,6 +409,7 @@ export class SessionRunner {
     // a card that asked for no answer cannot grade one: where a grade was due, the card stays as it was
     if (o.exposure && (item.scoring === 'review' || item.scoring === 'learning')) { seen(this.learner, item.credit, this.now()); return; }
     this.noteLapse(item, o);
+    this.noteRetest(item, o);
     if (!o.correct) {
       const sid = 'sentence' in item ? item.sentence : undefined;
       this.noteMiss(item.node, eventOp(item), sid ? this.bundle.sentence(sid)?.es : undefined);
@@ -456,6 +462,17 @@ export class SessionRunner {
     }
   }
 
+  /**
+   * Remember a practice item that was missed (attempt.ts missRetest): its target comes back in "Before you go" in another sentence,
+   * and goes on the remediation list, so the next session opens with a short run over it. The list holds the six most recent (compiler/remediate.ts).
+   */
+  private noteRetest(item: Item, o: Outcome): void {
+    const r = missRetest(item as Parameters<typeof missRetest>[0], o);
+    if (!r) return;
+    if (!this.retests.some((x) => x.node === r.node)) this.retests.push(r);
+    void this.ui.setPath({ ...this.ui.path, remediate: withMiss(this.ui.path.remediate ?? [], r.node, this.now()) });
+  }
+
   /** Remember a scored review that was missed: it comes back in "Before you go". */
   private noteLapse(item: Item, o: Outcome): void {
     if (o.correct || item.scoring !== 'review' || item.op !== 'review') return;
@@ -479,9 +496,9 @@ export class SessionRunner {
     const secondsPerCard = Math.max(SECONDS.recap, this.learner.secondsPerReview());
     const left = Math.max(0, this.capMinutes - this.elapsed());
     // over budget, a short recap of what was missed still beats none: those misses are tomorrow's lapses otherwise
-    const capacity = Math.max(Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard)), Math.min(3, this.lapses.length));
+    const capacity = Math.max(Math.min(block.capacity, Math.floor((left * 60) / secondsPerCard)), Math.min(3, this.lapses.length + this.retests.length));
     block.items = capacity > 0 ? planRecap({
-      learner: this.learner, bundle: this.bundle, capacity, lapses: this.lapses, newItems, steps: this.learnSteps,
+      learner: this.learner, bundle: this.bundle, capacity, lapses: this.lapses, retests: this.retests, newItems, steps: this.learnSteps,
       misses: this.learnMisses, typedOk: this.typedOk,
     }) : [];
     block.minutes = Math.round((block.items.length * secondsPerCard) / 6) / 10;
@@ -505,8 +522,8 @@ export class SessionRunner {
     const grade = gradeOf(o);
     const tries = tries12(o.tries);
     const slip = slipOf(o);
-    if (item.kind === 'new') {
-      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms, ...slip }, at);
+    if (item.kind === 'new' || item.kind === 'miss') {
+      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms, ...(item.sentence ? { sentence: item.sentence } : {}), ...slip }, at);
       return;
     }
     if (!this.learner.hasCard(item.node, item.direction)) return;

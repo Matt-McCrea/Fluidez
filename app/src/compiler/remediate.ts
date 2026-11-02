@@ -28,3 +28,14 @@ export function withoutRemediate(list: readonly RemediateEntry[], nodes: readonl
   const drop = new Set(nodes);
   return list.filter((e) => !drop.has(e.node));
 }
+
+/** The most targets the list holds from misses in practice at one time. */
+export const MISS_MARKS_MAX = 6;
+
+/** Add a target missed in practice (F7): marked 'miss', and the list keeps the MISS_MARKS_MAX most recent such marks. */
+export function withMiss(list: readonly RemediateEntry[], node: NodeId, at: number): RemediateEntry[] {
+  const next = withRemediate(list, [node], 'miss', at);
+  const misses = next.filter((e) => e.reason === 'miss').sort((a, b) => a.at - b.at);
+  const drop = new Set(misses.slice(0, Math.max(0, misses.length - MISS_MARKS_MAX)).map((e) => e.node));
+  return next.filter((e) => !drop.has(e.node));
+}

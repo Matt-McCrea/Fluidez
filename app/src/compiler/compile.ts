@@ -240,6 +240,8 @@ class Compiler {
   private groups: ReviewGroup[] = [];
   /** the old debt (see budget.ts), grouped the same way; the warm-up pays a capped part of it */
   private debtGroups: ReviewGroup[] = [];
+  /** the bank sentences the warm-up's review items are planned in, before the warm-up is built and takes them (a block built ahead of it must not use them) */
+  private planned: ReadonlySet<string> = new Set();
   /** debt among the servable due cards, and its minutes */
   private debtCards = 0;
   private debtMinutes = 0;
@@ -311,7 +313,7 @@ class Compiler {
     const d = this.decide(day);
     const c = this.path.coreSessions + 1;
 
-    const remedial = this.backToThese(); // built first so its sentences are not taken by the day's blocks
+    const remedial = this.backToThese(); // built first so its sentences are not taken by the day's blocks (its nodes are marked served if it stays)
     switch (d.type) {
       case 'introduce': this.introduce(day!, d); break;
       case 'drill': this.warmupStd(); this.drill(d.drillNode!, day, d.advances); break;
@@ -324,9 +326,15 @@ class Compiler {
     if (remedial) {
       let at = 0;
       this.blocks.forEach((x, i) => { if (x.kind === 'warmup') at = i + 1; });
-      this.blocks.splice(at, 0, remedial);
+      this.blocks.splice(at, 0, remedial.block);
     }
     this.fitToBudget();
+    // a run over misses is an addition, so it goes where the plan cannot hold it (after the new words have been owed to make room); the checkpoint's stays
+    if (remedial?.fromMiss && this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards) > this.minutes + 1e-9) {
+      this.blocks.splice(this.blocks.indexOf(remedial.block), 1);
+      remedial.nodes = [];
+    }
+    remedial?.nodes.forEach((n) => this.remServed.add(n));
     if (this.tier === 'extended' && !this.throttled && d.type !== 'review') this.extraReading();
     // placeholder: the runner fills it from the session's lapses and new items
     // its capacity is what the plan has room for (up to 8 cards; fewer or none when the plan is already near its minutes)
@@ -382,15 +390,16 @@ class Compiler {
       this.diag({ code: 'offline', unit: this.unit?.id, message: `${dt} day needs ${lacked.join(', ')}, which this device could not get: reviews only, the path stays` });
       return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'offline' } };
     }
-    // back after days away: a short warm-up and the next story beat, and the day waits for the next session
-    if (this.reentry && this.mode === 'next') return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'reentry' } };
-    // Spacing: a pending drill at its last allowed session wins over everything but a return.
+    // Spacing: a pending drill at its last allowed session wins over everything.
     const lastChance = [...this.path.pendingDrills].sort((a, b) => a.at - b.at).find((p) => c - p.at >= DRILL_WITHIN);
     if (lastChance) {
       if (dt === 'drill') return { type: 'drill', advances: true, drillNode: lastChance.node };
       this.diag({ code: 'spacing', node: lastChance.node, message: `drill of ${lastChance.node} due by core session ${lastChance.at + DRILL_WITHIN}` });
       return { type: 'drill', advances: false, drillNode: lastChance.node, converted: { from: dt, to: 'drill', reason: 'spacing' } };
     }
+    // back after days away: a short warm-up and the next story beat, and the day waits for the next session
+    // (after the spacing rule, which a return does not outrank: a grammar point is drilled within DRILL_WITHIN core sessions however long the break)
+    if (this.reentry && this.mode === 'next') return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'reentry' } };
     if (this.throttled && this.mode === 'another') {
       return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'throttle' } };
     }
@@ -523,6 +532,7 @@ class Compiler {
     const reserved = new Set<string>();
     this.groups = this.planReviews(servable.filter((c) => !debt.includes(c)), reserved);
     this.debtGroups = this.planReviews(debt, reserved);
+    this.planned = reserved;
     const cost = (gs: ReviewGroup[]) => gs.reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
     this.dueMinutes = cost(this.groups);
     this.debtMinutes = cost(this.debtGroups);
@@ -684,7 +694,7 @@ class Compiler {
    * in this plan. Sentences written for the node (targets) come first; the
    * RNG only orders candidates within each group.
    */
-  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string; seen?: boolean } = {}): SentenceRef[] {
+  private pickSentences(node: NodeId, n: number, opts: { question?: boolean; unit?: string; seen?: boolean; avoid?: ReadonlySet<string> } = {}): SentenceRef[] {
     if (n <= 0) return [];
     const want = Math.max(n * 2, n + 4);
     const groups: SentenceRef[][] = [];
@@ -694,7 +704,7 @@ class Compiler {
       if (list) {
         for (const id of list) {
           if (total + g.length >= want) break;
-          if (this.usedSentences.has(id) || this.L.ledger.hasSeen('sentence', id) !== !!opts.seen) continue;
+          if (this.usedSentences.has(id) || opts.avoid?.has(id) || this.L.ledger.hasSeen('sentence', id) !== !!opts.seen) continue;
           const s = this.content.sentences.get(id)!;
           if (opts.question && !s.own) continue;
           if (!this.gated(s.requires)) continue;
@@ -1116,22 +1126,27 @@ class Compiler {
       .slice(0, max);
   }
 
-  /** The session after a checkpoint opens (after the warm-up) with a short run over what was marked shaky. */
-  private backToThese(): PracticeBlock | undefined {
+  /**
+   * The session after a checkpoint opens (after the warm-up) with a short run over what was marked shaky, and so does one after a
+   * session in which practice items were missed (F7), over those targets, in sentences not seen: three items at most, since it comes
+   * on top of the day. Each mark is served this way once.
+   */
+  private backToThese(): { block: PracticeBlock; nodes: NodeId[]; fromMiss: boolean } | undefined {
     const last = this.path.log[this.path.log.length - 1];
-    if (!last || last.dayType !== 'checkpoint') return undefined;
-    const nodes = this.shakyNodes(3).filter((n) => this.producible(n));
+    const afterCheck = last?.dayType === 'checkpoint';
+    const missed = (this.path.remediate ?? []).filter((e) => e.reason === 'miss' && !e.served && this.known.has(e.node)).sort((a, b) => a.at - b.at).map((e) => e.node);
+    if (!afterCheck && !missed.length) return undefined;
+    const nodes = (afterCheck ? this.shakyNodes(3) : missed.slice(0, 3)).filter((n) => this.producible(n));
     if (!nodes.length) return undefined;
     const items: PracticeItem[] = [];
-    for (let i = 0; items.length < 6 && i < 18; i++) {
+    for (let i = 0; items.length < (afterCheck ? 6 : 3) && i < 18; i++) {
       const src = nodes[i % nodes.length];
-      const [s] = this.pickSentences(src, 1);
+      const [s] = this.pickSentences(src, 1, { avoid: this.planned });
       if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
     }
     if (!items.length) return undefined;
-    nodes.forEach((n) => this.remServed.add(n));
     const b: PracticeBlock = { kind: 'controlledOutput', part: 'core', deliberate: false, remedial: true, focus: nodes[0], items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) };
-    return b;
+    return { block: b, nodes, fromMiss: !afterCheck };
   }
 
   private drill(node: NodeId, day: Unit['days'][number] | undefined, advancing: boolean) {

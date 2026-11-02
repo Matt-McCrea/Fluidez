@@ -8,6 +8,7 @@ import type { NodeId } from '../../content/schema';
 import type { Direction, Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import { learnRetrieval, reviewCard, type Card } from './cards';
+import type { Retest } from './attempt';
 import type { TenseKey } from '../../engine';
 
 export interface Lapse { node: NodeId; direction: Direction; sentence?: string }
@@ -17,6 +18,8 @@ export interface RecapInput {
   bundle: Bundle;
   capacity: number;
   lapses: readonly Lapse[];
+  /** practice items missed this session, to be asked again in another sentence (see attempt.ts missRetest) */
+  retests?: readonly Retest[];
   /** learn-pool items whose node was presented this session, in order */
   newItems: readonly LearnItem[];
   /** retrievals each new node got this session */
@@ -48,6 +51,15 @@ export function planRecap(i: RecapInput): RecapItem[] {
     if (seen.has(l.node) || !i.learner.hasCard(l.node, l.direction)) continue;
     seen.add(l.node);
     out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...otherSentence(i, l.node, l.sentence), credit: [l.node] });
+  }
+  // a practice item missed today: its target again, in a sentence not seen (none left: not in the one it has just been shown the answer to)
+  for (const r of i.retests ?? []) {
+    if (out.length >= i.capacity) break;
+    if (seen.has(r.node)) continue;
+    const other = otherSentence(i, r.node, r.sentence);
+    if (!other.sentence || other.reused) continue;
+    seen.add(r.node);
+    out.push({ id: `recap:${r.node}:${r.direction}:miss`, kind: 'miss', node: r.node, direction: r.direction, sentence: other.sentence, credit: [r.node] });
   }
   // missed first, then never typed, then typed once; typed twice only if room is left
   const typed = (n: NodeId) => i.typedOk?.get(n) ?? 0;

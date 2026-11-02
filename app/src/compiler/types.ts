@@ -185,7 +185,7 @@ export interface PathState {
   /** most recently introduced grammar first (≤ 8), feeds drill interleaving and remix */
   recentGrammar: NodeId[];
   /** shaky nodes (self-check, reading check) drills and remixes draw from first; `served` counts older-set servings (gone at 2) */
-  remediate: { node: NodeId; reason: 'selfcheck' | 'readingCheck' | 'lapse'; at: number; served?: number }[];
+  remediate: { node: NodeId; reason: 'selfcheck' | 'readingCheck' | 'lapse' | 'miss'; at: number; served?: number }[];
   /** the last ≤ 60 completed sessions, newest last */
   log: SessionLogEntry[];
 }
@@ -418,8 +418,12 @@ export interface SelfCheckBlock extends BlockBase { kind: 'selfCheck'; unit: str
  */
 export interface RecapItem {
   id: string;
-  /** lapsed: a card missed in this session (graded for real, op 'recap'); new: a node introduced today (exposure only) */
-  kind: 'lapsed' | 'new';
+  /**
+   * lapsed: a card missed in this session (graded for real, op 'recap'); new: a node introduced today (exposure only);
+   * miss: the target of a practice item missed today, asked again in a sentence not seen (exposure only: the practice miss graded nothing, so
+   * this is the retrieval to criterion, never a second review)
+   */
+  kind: 'lapsed' | 'new' | 'miss';
   node: NodeId;
   direction: Direction;
   /** lapsed: bank sentence for the re-ask (a different one when available); undefined = bare card */

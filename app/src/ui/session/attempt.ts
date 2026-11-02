@@ -7,6 +7,7 @@
 //
 // Nothing here chooses a grade or a time. `gradeOf` turns an outcome into a
 // grade, and no clock reading ever reaches it (R17).
+import type { Item } from '../../compiler';
 import type { NodeId } from '../../content/schema';
 import type { GapKind } from '../../check/translate/hints';
 import type { Feature } from '../../exercises/types';
@@ -127,6 +128,23 @@ export function reviewNode(learner: Learner, node: NodeId, direction: Direction,
 /** One in-lesson retrieval of a node being introduced. */
 export function lessonStep(learner: Learner, node: NodeId, correct: boolean, opts: Parameters<Learner['learningStep']>[2]): StepResult {
   return learner.learningStep(node, correct, opts);
+}
+
+// ---------------------------------------------------------------- a miss comes back (F7)
+
+/** A target missed in practice, and the sentence it was missed in: asked again today in another, and again next session. */
+export interface Retest { node: NodeId; direction: Direction; sentence: string }
+
+/**
+ * Whether an answer is a miss that comes back. A practice item on a sentence, answered wrongly, queues its target for a fresh
+ * sentence later in the session ("Before you go") and for a short run at the start of the next one (the remediation list). A warm-up
+ * review already comes back as a lapse; a card that asked for no answer, a reading check (the checkpoint marks those itself) and a
+ * free-form answer do not: a miss in "Answer for yourself" is signal only, and training goes by form.
+ */
+export function missRetest(item: Pick<Item, 'op'> & { node: NodeId; sentence?: string; direction?: Direction }, o: Pick<Outcome, 'correct'> & { exposure?: boolean }): Retest | undefined {
+  if (o.correct || o.exposure || !item.sentence) return undefined;
+  if (!['pick', 'choose', 'type', 'transform', 'recombine', 'translate', 'gap'].includes(item.op)) return undefined;
+  return { node: item.node, direction: item.direction ?? 'productive', sentence: item.sentence };
 }
 
 /** Move a node on the output ladder by how an answer went. */

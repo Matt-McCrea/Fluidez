@@ -3,7 +3,7 @@
 // Collects everything the report needs. Deterministic for (seed, profile).
 import type { Band, NodeId } from '../../src/content/schema';
 import {
-  advancePath, budget, canDoAnother, compileSession, initialPath, makeRng, reviewCost, reviewTargets, servedRefs,
+  advancePath, budget, canDoAnother, compileSession, initialPath, makeRng, reviewCost, reviewTargets, servedRefs, withMiss,
   type Block, type CompileInput, type ContentIndex, type Course, type Item, type LearnItem, type PathState, type RecapBlock,
   type RecapItem, type ReviewItem, type ServedRef, type SessionPlan, type TeachBlock,
 } from '../../src/compiler';
@@ -12,7 +12,7 @@ import type { Bundle } from '../../src/ui/data/bundle';
 import { attributeGrades } from '../../src/ui/session/attribute';
 import { applyPlacement } from '../../src/ui/session/placement';
 import { planRecap, type Lapse } from '../../src/ui/session/recap';
-import { climb, eventOp, gradeOf, reviewNode, reviewSentence, seen, seenWithEvent } from '../../src/ui/session/attempt';
+import { climb, eventOp, gradeOf, missRetest, reviewNode, reviewSentence, seen, seenWithEvent, type Retest } from '../../src/ui/session/attempt';
 import { softBlock, truncatable } from '../../src/ui/session/runner';
 import type { Profile } from './profiles';
 
@@ -167,6 +167,8 @@ export interface ProfileRun {
   placement?: PlacementStat;
   /** recap block counts: sessions with a recap, items re-asked (lapsed / new) */
   recap: { blocks: number; lapsed: number; fresh: number; skipped: number };
+  /** practice misses (F7): queued, re-asked in the recap, and the short runs that opened a session over them */
+  misses: { queued: number; recap: number; opened: number };
   /** core blocks or cards cut because the session's planned seconds were spent */
   timeCap: { blocksSkipped: number; sessionsTruncated: number };
   /** total fresh sentences consumed (non-deliberate), and deliberate review-context reuses */
@@ -195,7 +197,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     freshSentences: 0, reusedSentences: 0,
     contrastsListed: new Set(course.units.flatMap((u) => u.days.flatMap((d) => d.focus)).filter((n) => course.nodes.get(n)?.kind === 'contrast')).size,
     gradeCounts: { again: 0, hard: 0, good: 0, easy: 0 }, opCounts: {}, retention: {},
-    recap: { blocks: 0, lapsed: 0, fresh: 0, skipped: 0 }, timeCap: { blocksSkipped: 0, sessionsTruncated: 0 },
+    recap: { blocks: 0, lapsed: 0, fresh: 0, skipped: 0 }, misses: { queued: 0, recap: 0, opened: 0 }, timeCap: { blocksSkipped: 0, sessionsTruncated: 0 },
   };
   const coverageSeen = new Map<string, { band: Band; frac: number; deferredEver: boolean }>();
   const chaptersRead = new Map<string, Band>();
@@ -229,7 +231,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   // per-session state (the runner's lapses, learn steps, presented nodes, clock and cap)
   interface Ctx {
     plan: SessionPlan; start: number; cap: number;
-    lapses: Lapse[]; steps: Map<NodeId, number>; presented: Set<NodeId>; skipped: Set<Block>;
+    lapses: Lapse[]; retests: Retest[]; steps: Map<NodeId, number>; presented: Set<NodeId>; skipped: Set<Block>;
     refs: ServedRef[]; marked: Set<string>; truncated: boolean;
   }
   let ctx!: Ctx;
@@ -269,6 +271,14 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     climb(L, it.node, o);
   };
   const retryMs = (ms: number, o: { tries: 1 | 2 }) => (o.tries > 1 ? Math.round(ms * 1.5) : ms);
+  /** A practice item missed (attempt.ts missRetest): its target comes back in the recap, and next session opens with a short run over it. */
+  const noteRetest = (it: Item, o: { correct: boolean }) => {
+    const rt = missRetest(it as Parameters<typeof missRetest>[0], o);
+    if (!rt) return;
+    run.misses.queued++;
+    if (!ctx.retests.some((x) => x.node === rt.node)) ctx.retests.push(rt);
+    path = { ...path, remediate: withMiss(path.remediate ?? [], rt.node, t) };
+  };
 
   const answer = (it: Item & { node: NodeId }, dir: Direction, credit: NodeId[], sentence: string | undefined, novel: boolean) => {
     const base = profile.secs * 1000 * (0.6 + 0.8 * r.next());
@@ -277,6 +287,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const grade = gradeOf(o);
     const op = eventOp(it);
     stepLadder(it, o);
+    noteRetest(it, o);
     if (!L.hasCard(it.node, dir)) { seenWithEvent(L, credit, { op, direction: dir, grade, tries: o.tries, ms, sentence, novel }, t); t += ms; return ms; }
     if (sentence) reviewSentence(L, credit, dir, grade, { target: it.node, novel, at: t, ms, op, tries: o.tries, sentence });
     else reviewNode(L, it.node, dir, grade, { at: t, ms, op, tries: o.tries });
@@ -316,7 +327,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const left = Math.max(0, ctx.cap - elapsedMin());
     const capacity = Math.min(b.capacity, Math.floor((left * 60) / spc));
     const newItems = ctx.plan.blocks.flatMap((x) => (x.kind === 'learn' ? x.items : [])).filter((it: LearnItem) => ctx.presented.has(it.node));
-    b.items = capacity > 0 ? planRecap({ learner: L, bundle: { index: content } as unknown as Bundle, capacity, lapses: ctx.lapses, newItems, steps: ctx.steps }) : [];
+    b.items = capacity > 0 ? planRecap({ learner: L, bundle: { index: content } as unknown as Bundle, capacity, lapses: ctx.lapses, retests: ctx.retests, newItems, steps: ctx.steps }) : [];
     if (!b.items.length) { ctx.skipped.add(b); run.recap.skipped++; return 0; }
     run.recap.blocks++;
     markRefs(b);
@@ -326,9 +337,9 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       const o = attempt(pCorrect(it.node, it.direction));
       const dt = retryMs(base, o);
       const grade = gradeOf(o);
-      if (it.kind === 'new') {
-        run.recap.fresh++;
-        seenWithEvent(L, it.credit, { op: 'recap', direction: it.direction, grade, tries: o.tries, ms: dt }, t);
+      if (it.kind === 'new' || it.kind === 'miss') {
+        if (it.kind === 'miss') run.misses.recap++; else run.recap.fresh++;
+        seenWithEvent(L, it.credit, { op: 'recap', direction: it.direction, grade, tries: o.tries, ms: dt, ...(it.sentence ? { sentence: it.sentence } : {}) }, t);
       } else {
         run.recap.lapsed++;
         if (L.hasCard(it.node, it.direction)) {
@@ -361,6 +372,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       const o = attempt(pCorrect(it.node, dir));
       const ms = retryMs(profile.secs * 1000 * (0.6 + 0.8 * r.next()), o);
       stepLadder(it, o);
+      noteRetest(it, o);
       seenWithEvent(L, it.credit, { op: eventOp(it), direction: dir, grade: gradeOf(o), tries: o.tries, ms, sentence }, t);
       t += ms;
       return ms;
@@ -440,12 +452,13 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     if (band !== 'done' && run.bandStart[band] === undefined) run.bandStart[band] = dayIdx;
     const input: CompileInput = { learnerId, learner: L, path, course, content, now: t, tier, mode, ...(opts.placement ? { placedAt: opts.placement } : {}) };
     const plan = compileSession(input);
+    if (plan.blocks.some((b) => b.kind === 'controlledOutput' && b.remedial) && (path.remediate ?? []).some((e) => e.reason === 'miss' && !e.served)) run.misses.opened++;
     opts.onPlan?.(plan, input);
     receptiveOnly = new Set(plan.receptiveOnly);
     L.startSession(t);
     const start = t;
     ctx = {
-      plan, start, cap: plan.budget?.minutes ?? 20, lapses: [], steps: new Map(), presented: new Set(), skipped: new Set(),
+      plan, start, cap: plan.budget?.minutes ?? 20, lapses: [], retests: [], steps: new Map(), presented: new Set(), skipped: new Set(),
       refs: [], marked: new Set(), truncated: false,
     };
     let reviewMs = 0;
