@@ -25,8 +25,8 @@ export const TENSE_PLAIN: Readonly<Record<string, string>> = {
   plusc: 'Pluperfect (had done)',
   futperf: 'Future perfect (will have done)',
   condperf: 'Conditional perfect (would have done)',
-  impsubj: 'Imperfect subjunctive (if only)',
-  perfsubj: 'Perfect subjunctive (hoping it has happened)',
+  impsubj: 'Imperfect subjunctive (an idea held up in the past, or in an "if")',
+  perfsubj: 'Perfect subjunctive (an idea held up about what has happened)',
   pluscsubj: 'Pluperfect subjunctive (if it had happened)',
 };
 
