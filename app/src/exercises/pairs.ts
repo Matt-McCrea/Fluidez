@@ -57,9 +57,11 @@ function zip(es: string[], en: string[]): AlignedPair[] {
   return es.map((e, i) => ({ es: e, en: en[i], accept: [] }));
 }
 
-/** The sentences of a string; a sentence said again straight after itself is the same sentence ("It's just that I wanted to tell you something." twice). */
+/** The sentences of a string; a sentence said again straight after itself is the same sentence (a doubled line in the English of a chunk). */
 function sentencesOf(s: string): string[] {
-  return s.split(SENTENCE).map((x) => x.trim()).filter(Boolean).filter((x, i, all) => i === 0 || x !== all[i - 1]);
+  const out: string[] = [];
+  for (const x of s.split(SENTENCE).map((y) => y.trim()).filter(Boolean)) if (x !== out.at(-1)) out.push(x);
+  return out;
 }
 
 /**
