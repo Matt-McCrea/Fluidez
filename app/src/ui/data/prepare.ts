@@ -1,7 +1,8 @@
 // prepare(): the async step before compile. The compiler is pure and sync, so it can only choose from
 // what it is handed; this hands it what the session ahead needs instead of whatever the tab happened
-// to load (audit P5, P7, C4): the window of units around the learner, and the next chapters they have
-// not read, which the window does not hold for a learner placed part way through or one catching up.
+// to load (audit P5, P7, C4): the window of units around the learner, the next chapters they have not
+// read, which the window does not hold for a learner placed part way through or one catching up, and
+// the scripts of grammar still owed from further back, which an introduce day teaches before its own.
 import type { PathState } from '../../compiler';
 import { unreadChapters } from '../../compiler';
 import type { Learner } from '../../learner';
@@ -16,18 +17,18 @@ export interface PrepareOptions {
 }
 
 /** Fetch what compiling the learner's next session needs. True when anything new arrived. Never throws: a fetch that fails is the loader's to remember. */
-export async function prepare(bundle: Bundle, learner: Pick<Learner, 'ledger'>, path: Pick<PathState, 'unit' | 'day'>, opts: PrepareOptions = {}): Promise<boolean> {
+export async function prepare(bundle: Bundle, learner: Pick<Learner, 'ledger'>, path: Pick<PathState, 'unit' | 'day' | 'owedGrammar'>, opts: PrepareOptions = {}): Promise<boolean> {
   if (bundle.fixture || !bundle.course.units.length) return false;
-  let changed = false;
+  const before = bundle.index;
   try {
-    changed = await bundle.ensureWindow(Math.min(path.unit, bundle.course.units.length - 1));
+    await bundle.ensureWindow(Math.min(path.unit, bundle.course.units.length - 1));
     const story = bundle.index.story ?? bundle.index.chapters;
     const next = unreadChapters(story, bundle.course, path, opts.placedAt ?? 0, (id) => learner.ledger.hasSeen('chapter', id)).slice(0, PREPARE_CHAPTERS);
-    changed = (await bundle.ensureChapters(next.map((s) => s.id))) || changed;
+    await Promise.all([bundle.ensureChapters(next.map((s) => s.id)), ...path.owedGrammar.map((n) => bundle.scriptFor(n))]);
   } catch (e) {
     console.warn('fluidez: could not prepare the next lesson', e);
   }
-  return changed;
+  return bundle.index !== before;
 }
 
 /** prepare() for the app as it stands: the learner's own path, and the unit they were placed at. */

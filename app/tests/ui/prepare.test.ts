@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { initialPath } from '../../src/compiler';
 import { IdbStore, Learner } from '../../src/learner';
 import { boot } from '../../src/ui/app';
-import { ContentLoader } from '../../src/ui/data/loader';
+import { CONTENT_FILES, ContentLoader } from '../../src/ui/data/loader';
 import { prepare, prepareFor } from '../../src/ui/data/prepare';
 import { applyPlacement } from '../../src/ui/session/placement';
 import { compilePlan } from '../../src/ui/session/runner';
@@ -83,6 +83,36 @@ describe('prepare', () => {
     const bundle = await fixtureBundle();
     expect(await prepare(bundle, Learner.fresh({ now: () => AT }), initialPath())).toBe(false);
   });
+});
+
+describe('grammar owed from outside the window', () => {
+  // u30's grammar, owed to a learner at u22: its script is outside the window, and nothing is wrong with the network
+  const owed = 'g:subj-emotion';
+  async function learnerOwing() {
+    const kv = await placed(21);
+    const path = (await kv.get(PATH_KEY)) as Record<string, unknown>;
+    await kv.set(PATH_KEY, { ...path, owedGrammar: [owed] });
+    return kv;
+  }
+
+  it('is taught from its script: the script is fetched before the compiler runs', async () => {
+    const kv = await learnerOwing();
+    const w = await boot({ kv, loader: new ContentLoader(), now: () => AT + DAY, fixtures: false });
+    expect(w.bundle.scripts.has(owed)).toBe(true);
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: AT + DAY });
+    expect(plan.blocks.find((b) => b.kind === 'teach')).toMatchObject({ node: owed, script: true });
+  }, 120_000);
+
+  it('waits when this device cannot get that script, instead of teaching it with nothing', async () => {
+    const kv = await learnerOwing();
+    const file = `/content/scripts/${owed.replace(':', '_')}.json`;
+    const scripts = { ...CONTENT_FILES.scripts, [file]: async () => { throw new Error('net::ERR_FAILED'); } };
+    const w = await boot({ kv, loader: new ContentLoader({ ...CONTENT_FILES, scripts }), now: () => AT + DAY, fixtures: false });
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: AT + DAY });
+    expect(plan.converted?.reason).toBe('offline');
+    expect(plan.advancesPath).toBe(false);
+    expect(plan.blocks.some((b) => b.kind === 'teach')).toBe(false);
+  }, 120_000);
 });
 
 describe('prepare is part of the app', () => {

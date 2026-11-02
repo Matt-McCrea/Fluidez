@@ -85,6 +85,18 @@ describe('a day whose content is lacking on this device', () => {
     expect(plan.blocks.some((b) => b.kind === 'teach')).toBe(false);
   });
 
+  test('the script of grammar owed from an earlier day lacking: the day waits, since it would be taught first', () => {
+    const g = course.units[AT + 1].days.flatMap((d) => d.focus).find((n) => kindOf(n, course.nodes) === 'grammar')!;
+    const plan = compileSession({
+      learnerId: 'learner-a', learner: learnerAt(AT, introduceDay), path: { ...initialPath(), unit: AT, day: introduceDay, coreSessions: 20, owedGrammar: [g] },
+      course, content: index({ lacking: [lackKey('scripts', g)], without: { scripts: [g] } }), now: T0 + DAY,
+    });
+    expect(plan.converted?.reason).toBe('offline');
+    expect(plan.advancesPath).toBe(false);
+    expect(plan.blocks.some((b) => b.kind === 'teach')).toBe(false);
+    expect(plan.diagnostics.find((d) => d.code === 'offline')?.message.match(new RegExp(lackKey('scripts', g), 'g'))).toHaveLength(1);
+  });
+
   test('the day\'s own chapter lacking: the story is not skipped to a shortage, and the day waits', () => {
     const ch = course.units[AT].days[inputDay].chapter!;
     const plan = compile(inputDay, index({ lacking: [lackKey('story', ch)], without: { chapters: [ch] } }));

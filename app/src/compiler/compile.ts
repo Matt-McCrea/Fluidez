@@ -661,8 +661,8 @@ class Compiler {
   /**
    * What the day needs that the build has and this device could not get (empty when nothing is lacking, and
    * for anything nobody wrote: a gap in the authoring is a shortage, not a download that failed). The unit's
-   * sentences; the scripts of what it teaches; the chapter it reads, or one before it that is owed; the scene
-   * and the writing of an output day.
+   * sentences; the scripts of what it teaches, owed grammar first; the chapter it reads, or one before it that
+   * is owed; the scene and the writing of an output day.
    */
   private lackedBy(day: Unit['days'][number]): string[] {
     const lacking = this.content.lacking;
@@ -670,7 +670,8 @@ class Compiler {
     if (!lacking?.size || !this.unit || day.type === 'review') return [];
     const unit = this.unit.id;
     const need = [lackKey('bank', unit)];
-    for (const n of day.focus) if (['grammar', 'pattern', 'contrast'].includes(kindOf(n, this.course.nodes))) need.push(lackKey('scripts', n));
+    const owed = day.type === 'introduce' ? this.grammarCandidates(day).slice(0, 1) : [];
+    for (const n of new Set([...owed, ...day.focus])) if (['grammar', 'pattern', 'contrast'].includes(kindOf(n, this.course.nodes))) need.push(lackKey('scripts', n));
     if (day.type === 'output' || day.type === 'checkpoint') need.push(lackKey('scenes', unit), lackKey('writing', unit));
     const lacked = need.filter((k) => lacking.has(k));
     if (day.chapter && (day.type === 'introduce' || day.type === 'input')) {
