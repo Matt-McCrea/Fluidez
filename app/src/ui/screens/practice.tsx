@@ -157,19 +157,21 @@ function Run({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: (
     if (finished.current) return;
     finished.current = true;
     setOver(true);
+    // every save is tried and none is waited on to succeed: a store that refuses them leaves the result as it is, and saving is retried
+    const saves: Promise<unknown>[] = [];
     if (spec.kind === 'conjugate' || spec.kind === 'translate') {
       const key = bestKey(spec);
       const was = ui.state.bests[key] ?? 0;
       if (run.right > was) {
         setBest({ was, now: run.right });
-        await ui.update((s) => { s.bests[key] = run.right; });
+        saves.push(ui.update((s) => { s.bests[key] = run.right; }));
       }
     }
     if (spec.kind === 'checkpoint' && run.answered) {
       const byUnit = Object.fromEntries(run.byUnit);
-      await ui.update((s) => { s.checkpoints = [...s.checkpoints, { at: now(), byUnit }]; });
+      saves.push(ui.update((s) => { s.checkpoints = [...s.checkpoints, { at: now(), byUnit }]; }));
     }
-    await learner.flush();
+    await Promise.allSettled([...saves, learner.flush()]);
     app.refresh();
   };
   useEffect(() => { if (over && !finished.current) void finish(); }, [over]);

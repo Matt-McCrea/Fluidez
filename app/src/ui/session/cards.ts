@@ -494,7 +494,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
       seg ? `${seg.es} means "${seg.en}". The rest gives the context.` : `This is about: ${title.toLowerCase()}.`);
   }
   // bare card: no fresh sentence left for this node
-  if (!seg) return { type: 'read', key: item.id, ask: 'Remember this one?', es: b.node(item.node)?.es ?? title, en: title, why: '' };
+  if (!seg) return { type: 'read', key: item.id, ask: 'Have another look', es: b.node(item.node)?.es ?? title, en: title, why: '' };
   if (item.direction === 'productive' && b.node(item.node)?.kind === 'lexeme') return lexemeTypeCard(item.id, item.node, b);
   if (item.direction === 'receptive') {
     if (fmt === 'typeEn' && wordCount(seg.en) <= 6) return typeMeaning(item.id, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
@@ -765,7 +765,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
 
 export function recallCard(item: RecallItem, b: Bundle): Card {
   const seg = b.segments(item.node)[0];
-  if (!seg) return { type: 'read', key: item.id, ask: 'Remember this?', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
+  if (!seg) return { type: 'read', key: item.id, ask: 'Have another look', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
   return {
     type: 'type', key: item.id, ask: 'Quick!', prompt: en(seg.en), answerLang: 'es', placeholder: 'In Spanish', retry: false,
     check: chunkCheck([seg.es, ...seg.accept]), why: `"${seg.en}" is ${seg.es}`,

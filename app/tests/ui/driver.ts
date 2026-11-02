@@ -44,11 +44,11 @@ export function answerFor(card: Card, mood: Mood): { mcq?: number; text?: string
 }
 
 /** Answer one card; returns whether it passed (typed cards get their one retry with the same answer). */
-export function answer(card: Card, mood: Mood): { correct: boolean; tries: number; ms: number } {
+export function answer(card: Card, mood: Mood): { correct: boolean; tries: number; ms: number; exposure?: boolean } {
   const a = answerFor(card, mood);
   // ms matches SCREEN_SECONDS so the learner's measured timing agrees with the walk's clock
   if (card.type === 'mcq') return { correct: a.mcq === card.answer, tries: 1, ms: SCREEN_SECONDS.mcq * 1000 };
-  if (card.type === 'read') return { correct: true, tries: 1, ms: SCREEN_SECONDS.read * 1000 };
+  if (card.type === 'read') return { correct: true, tries: 1, ms: SCREEN_SECONDS.read * 1000, exposure: true };
   const r = card.check(a.text!);
   if (r.pass) return { correct: true, tries: 1, ms: SCREEN_SECONDS.type * 1000 };
   if (!card.retry) return { correct: false, tries: 1, ms: SCREEN_SECONDS.type * 1000 };

@@ -7,7 +7,7 @@ import type { LearnBlock, PersonalBlock, RuleRecallBlock, TeachBlock } from '../
 import type { TeachingScript } from '../../content/schema';
 import { checkPersonal } from '../../check/personal';
 import { AnswerField } from '../components/answer';
-import { CardRun, CardView, Continue } from '../components/card';
+import { canCheck, CardRun, CardView, Continue } from '../components/card';
 import { Es, Heading, Paras, Rich, undash } from '../components/text';
 import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
 import { LEARN_ASKS_MAX, LearnQueue, teachOrder } from '../session/order';
@@ -268,24 +268,27 @@ export function Personal({ block, run, onDone }: BlockProps<PersonalBlock>) {
   const script = run.bundle.scripts.get(block.node);
   const [value, setValue] = useState('');
   const [tries, setTries] = useState(0);
+  const [tried, setTried] = useState('');
   const [sent, setSent] = useState<null | 'pass' | 'shown'>(null);
   const [hint, setHint] = useState('');
   const h = blockHeading(block, run.bundle);
   const words = value.trim().split(/\s+/).filter(Boolean).length;
+  const ready = words >= 2 && canCheck(value, tries ? tried : undefined);
   const submit = () => {
-    if (words < 2 || sent) return;
+    if (!ready || sent) return;
     const r = checkPersonal(value, { node: block.node, script, nodes: run.bundle.course.nodes, lexicon: bundleLexicon(run.bundle) });
     const done = (how: 'pass' | 'shown') => { setSent(how); void run.addWords(0, words); };
     if (r.pass) return done('pass');
     if (tries >= 1) return done('shown');
     setTries(1);
+    setTried(value);
     setHint(r.hint ?? '');
   };
   return (
     <>
       <Heading {...h} />
       <section class="card">
-        <p class="ask">{script?.personal ?? 'Write one true sentence about you, using what you learned today.'}</p>
+        <p class="ask"><Rich text={script?.personal ?? 'Write one true sentence about you, using what you learned today.'} /></p>
         <AnswerField value={value} onChange={setValue} onSubmit={submit} label="Your sentence" placeholder="Your sentence, in Spanish" lang="es" disabled={!!sent} autoFocus />
         <div class="feedback" aria-live="polite">
           {sent === 'pass'
@@ -296,7 +299,7 @@ export function Personal({ block, run, onDone }: BlockProps<PersonalBlock>) {
                 : value && words < 2 ? <p class="hint">A full sentence: two or three words is plenty.</p> : null}
         </div>
         <div class="actions">
-          {sent ? <Continue onClick={onDone} /> : <button class="btn primary" data-primary disabled={words < 2} onClick={submit}>{tries ? 'Check again' : 'Done'}</button>}
+          {sent ? <Continue onClick={onDone} /> : <button class="btn primary" data-primary disabled={!ready} onClick={submit}>{tries ? 'Check again' : 'Done'}</button>}
         </div>
       </section>
     </>

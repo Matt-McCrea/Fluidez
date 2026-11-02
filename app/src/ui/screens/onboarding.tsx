@@ -37,9 +37,12 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
   const finish = async (unit: number) => {
     app.learner.setSettings({ tier: 'standard' });
     const path = applyPlacement(app.learner, app.bundle, unit, app.now());
-    await app.ui.setPath(path);
-    await app.ui.update((s) => { s.onboarded = true; s.goal = goal; s.placedAt = unit; });
-    await app.learner.flush();
+    // each write is tried and none is waited on to succeed: a store that refuses them must not keep the learner here (the work stays in memory and saving is retried)
+    await Promise.allSettled([
+      app.ui.setPath(path),
+      app.ui.update((s) => { s.onboarded = true; s.goal = goal; s.placedAt = unit; }),
+      app.learner.flush(),
+    ]);
     onDone();
   };
 

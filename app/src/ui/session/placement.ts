@@ -24,15 +24,19 @@
 // in course order. The check starts in the middle of A1, or at the first
 // level of the band the learner says they are at. Two right in a row move up
 // (two levels until the first miss, then one); a wrong answer (or "I don't
-// know") moves down one. It asks MAX_ITEMS items (a level still short of its
-// third answer gets up to three more), and stops early when someone misses
-// four in a row at the bottom level: they are starting from zero, and do not
-// need to be told so six more times.
+// know") moves down one. It asks MAX_ITEMS items, then up to three more so the
+// level it ends on gets its third answer (those extra items do not climb), and
+// stops early when someone misses four in a row at the bottom level: they are
+// starting from zero, and do not need to be told so six more times.
 //
-// THE RESULT. A level is passed with at least 2 of 3 right (and at least
-// two asked at A1, three above it, so a B1 or B2 placement rests on three
-// items from that band). The learner starts at the unit after the highest level passed
-// (unit 0 when none is).
+// THE RESULT. The ladder climbs by twos, so most levels are only asked twice,
+// and a right answer shows the level it jumped over. A level is passed on the
+// right answers given at it and at the two levels above it, against its own
+// misses only (a miss further up says nothing about it): at least 2 of 3
+// right, from at least two answers at A1 and three above it, so a B1 or B2
+// placement rests on three items from that band. The learner starts at the
+// unit after the highest level passed (unit 0 when none is). Knowing more
+// never places a learner earlier.
 //
 // SEEDING. Placing at unit k makes the earlier units' nodes known, but not as
 // if each had just been learned perfectly (their second and third reviews
@@ -91,6 +95,8 @@ export const MAX_ITEMS = 20;
 /** a level with fewer than this many answers may keep being asked past MAX_ITEMS, up to this many extra items */
 export const MIN_LEVEL_ASKED = 3;
 export const OVERTIME_ITEMS = 3;
+/** the levels above a level whose right answers also count towards passing it (the ladder climbs by twos) */
+export const CREDIT_REACH = 2;
 /** which feature a sentence's form item is for, when it offers more than one: the ones the old check rarely reached first */
 export const FEATURE_PRIORITY = ['copula', 'porpara', 'clitic', 'mood', 'gender', 'number', 'tense', 'person'];
 export const MIN_ITEMS = 4;
@@ -312,14 +318,16 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
       if (!current) return;
       const k = current.level;
       current = undefined;
+      const overtime = asked >= max;
       asked++;
       stats[k].total++;
       if (correct) {
         stats[k].right++;
         missesAtBottom = 0;
         streak++;
-        // until the first miss two right in a row climb two levels (the learner is far from their edge); after it, one
-        if (streak >= 2) { p += missed ? Math.min(1, levels.length - 1 - p) : Math.min(2, levels.length - 1 - p); streak = 0; }
+        // until the first miss two right in a row climb two levels (the learner is far from their edge); after it, one.
+        // Not in overtime: those items are there to give the level being decided its third answer
+        if (streak >= 2 && !overtime) { p += missed ? Math.min(1, levels.length - 1 - p) : Math.min(2, levels.length - 1 - p); streak = 0; }
       } else {
         missed = true;
         streak = 0;
@@ -330,7 +338,12 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
     },
     result() {
       let best = -1;
-      stats.forEach((s, k) => { if (s.total >= (bands(levels[k].unit) === 'A1' ? 2 : 3) && s.right / s.total >= 2 / 3) best = k; });
+      for (let k = levels.length - 1; k >= 0 && best < 0; k--) {
+        let right = 0;
+        for (let j = k; j <= Math.min(levels.length - 1, k + CREDIT_REACH); j++) right += stats[j].right;
+        const given = right + stats[k].total - stats[k].right;
+        if (given >= (bands(levels[k].unit) === 'A1' ? 2 : 3) && right / given >= 2 / 3) best = k;
+      }
       return best < 0 ? 0 : levels[best].unit + 1;
     },
   };
