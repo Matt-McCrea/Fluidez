@@ -175,6 +175,7 @@ describe('Train it on a contrast the learner has not reached', () => {
     const b = Object.create(bundle) as Bundle;
     Object.defineProperty(b, 'contrasts', { value: new Map() });
     Object.defineProperty(b, 'scripts', { value: new Map() });
+    Object.defineProperty(b, 'index', { value: { ...bundle.index, contrasts: new Map() } });
     const fp = run(learner, [x], 'x', b);
     expect(fp.next()).toBeUndefined();
     expect(fp.emptyReason).toBeTruthy();

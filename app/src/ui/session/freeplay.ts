@@ -6,8 +6,8 @@
 //   translate    exposure only (op 'grind')
 //   nodes        exposure (op 'train') plus the output ladder step; a contrast has no sentence of
 //                its own, so it is trained on its own items (content/contrasts), never on a bank sentence
-import { admissible, knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
-import type { ContrastItem, NodeId } from '../../content/schema';
+import { knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
+import type { ContrastDecides, ContrastItem, NodeId } from '../../content/schema';
 import { checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
 import {
@@ -18,7 +18,7 @@ import { State, type Direction, type ExposureEvent, type Learner } from '../../l
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, scriptCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
-import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast } from './contrast-card';
+import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast, type ContrastForm } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
 import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
@@ -337,8 +337,7 @@ export class Freeplay {
     const { bundle, rng, learner } = this.d;
     if (!this.known().has(node)) return [];
     const file = bundle.contrasts.get(node);
-    const known = this.known();
-    const items = (file?.items ?? []).filter((it) => admissible(it.requires, (r) => known.has(r), bundle.course.nodes));
+    const items = file ? eligibleContrast(bundle, node, this.known()).flatMap((ref) => bundle.contrastItem(ref.id) ?? []) : [];
     const fresh = (id: string) => !learner.ledger.hasSeen('item', id);
     const order = [...shuffle(items.filter((it) => fresh(`cx:${it.id}`)), rng), ...shuffle(items.filter((it) => !fresh(`cx:${it.id}`)), rng)].slice(0, CONTRAST_RUN);
     // where the items run short, the script's own: its picks too for a cue or a meaning, but only its typed turns for aspect and near-synonyms,
@@ -365,7 +364,7 @@ export class Freeplay {
     ];
   }
 
-  private contrastItemCard(node: NodeId, decides: Parameters<typeof contrastCard>[1], it: ContrastItem, form: Parameters<typeof contrastCard>[2]['form']): Card {
+  private contrastItemCard(node: NodeId, decides: ContrastDecides, it: ContrastItem, form: ContrastForm): Card {
     const card = contrastCard(it, decides, { key: `train:${++this.seq}:${it.id}`, form });
     this.lastOp = 'contrast';
     this.answering(node, contrastCredit(it), `cx:${it.id}`);
