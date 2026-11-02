@@ -79,10 +79,10 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
         ) : null}
         <AnswerField value={text} onChange={setText} label="Your text" placeholder="Write in Spanish" lang="es" multiline rows={6} disabled={submitted} autoFocus />
         <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords} to {task.maxWords})</span></p>
+        {!result.floor.ok ? <p class="hint" data-floor aria-live="polite">{result.floor.reason}</p> : null}
+        {result.floor.note ? <p class="hint" data-floor-note aria-live="polite">{result.floor.note}</p> : null}
         {!submitted ? (
           <>
-            {!result.floor.ok ? <p class="hint" data-floor aria-live="polite">{result.floor.reason}</p> : null}
-            {result.floor.note ? <p class="hint" data-floor-note aria-live="polite">{result.floor.note}</p> : null}
             {!tooShort && result.floor.ok && constraints.length > 0 && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
             <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
           </>

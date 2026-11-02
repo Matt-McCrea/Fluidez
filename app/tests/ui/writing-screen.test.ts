@@ -36,8 +36,8 @@ const find = (node: any, pred: (n: any) => boolean, out: any[] = []): any[] => {
 
 const bundle = fixtureBundle();
 /** The writing screen with `typed` in the box. */
-function screen(typed: string, task = 'wt-u01-1') {
-  h.slots = [typed, false, {}];   // text, submitted, rubric
+function screen(typed: string, task = 'wt-u01-1', submitted = false) {
+  h.slots = [typed, submitted, {}];   // text, submitted, rubric
   h.at = 0;
   const run: any = { bundle, expose: () => {}, addWords: async () => {} };
   const ui: any = { state: {}, update: async () => {} };
@@ -49,6 +49,12 @@ describe('the floor on the writing screen', () => {
 
   it('is judged against what the course holds, so Spanish-looking nonsense earns no tick and says why', () => {
     const t = screen(salad);
+    expect(text(t)).toContain('Most of this is not Spanish yet. Write it in Spanish.');
+    expect(find(t, (n) => n.props?.class === 'done')).toHaveLength(0);
+  });
+
+  it('still says why once it is sent: the checklist stays on screen with no ticks', () => {
+    const t = screen(salad, 'wt-u01-1', true);
     expect(text(t)).toContain('Most of this is not Spanish yet. Write it in Spanish.');
     expect(find(t, (n) => n.props?.class === 'done')).toHaveLength(0);
   });
