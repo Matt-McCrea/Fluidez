@@ -104,6 +104,12 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
 
   // the contrasts a node is one side of, among those the learner has been taught
   const contrastsOf = (id: NodeId): NodeId[] => (look(id)?.contrasts ?? []).filter((x) => x.startsWith('x:') && look(x)?.kind === 'contrast' && !!opts.introduced?.(x));
+  // a miss on a point that is about two tenses, away from a drill of forms, is a miss of the choice between them. The future is a side of a
+  // contrast too, but a miss on the future is a miss of the future: a tense and its forms are what a form drill is for, and a grind has no choice in it
+  const betweenTenses = (e: ReviewEvent): NodeId[] => {
+    const n = look(e.node);
+    return e.op !== 'grind' && n && tensesOfNode(n).length > 1 ? contrastsOf(e.node) : [];
+  };
 
   const spots: WeakSpot[] = [];
   for (const [tense, t] of byTense) {
@@ -113,8 +119,8 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
     const verbs = verbsFor(t);
     const label = tenseShort(tense);
     // misses on the point that sets two tenses against each other are not misses of a form: the form is right, the choice is not
-    const between = [...new Set(t.missed.flatMap((e) => contrastsOf(e.node)))];
-    const onChoice = t.missed.filter((e) => contrastsOf(e.node).length).length;
+    const between = [...new Set(t.missed.flatMap(betweenTenses))];
+    const onChoice = t.missed.filter((e) => betweenTenses(e).length).length;
     const toContrast = between.length && onChoice * 2 >= t.misses ? between.slice(0, 2) : undefined;
     spots.push({
       kind: 'tense', key: tense, label, misses: t.misses, attempts: t.attempts, rate, nodes: toContrast ?? nodeIds, last: t.last,

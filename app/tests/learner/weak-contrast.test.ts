@@ -62,6 +62,22 @@ describe('a weak spot on a point that sets two things against each other', () =>
     expect(spots[0].spec).toMatchObject({ kind: 'conjugate', tenses: ['preterito'] });
   });
 
+  it('a tense that is only a side of a contrast is missed in its forms: the future and the subjunctive stay form drills', () => {
+    // g:future-promises names x:ir-a-future, and it is the node a conjugation drill of the future is logged on
+    for (const [node, contrast, tense] of [['g:future-promises', 'x:ir-a-future', 'futuro'], ['g:subj-wanting', 'x:inf-vs-que-subj', 'presubj'], ['g:commands-usted', 'x:tu-usted', 'imperativo']]) {
+      for (const op of ['grind', 'type']) {
+        const spots = weakSpots(run(6, (i) => ev(node, op, i < 5)), look, { now: NOW, introduced: has(contrast), metVerbs: ['hablar', 'comer'] });
+        expect(spots[0].spec, `${node} ${op}`).toMatchObject({ kind: 'conjugate', tenses: [tense] });
+      }
+    }
+  });
+
+  it('a grind has no choice in it, even on the point between two tenses', () => {
+    const grind = run(6, (i) => ev('g:pret-vs-imperfect', 'grind', i < 5));
+    const spots = weakSpots(grind, look, { now: NOW, introduced: has('x:pret-imp'), metVerbs: ['hablar'] });
+    expect(spots.every((s) => s.spec.kind === 'conjugate')).toBe(true);
+  });
+
   it('free-form misses are still only signal: a miss in a translation does not send anyone to a contrast', () => {
     const free = run(6, () => ev('g:por-para-1', 'translate', true));
     const spots = weakSpots(free, look, { now: NOW, introduced: has('x:por-para') });
