@@ -12,6 +12,7 @@ import type { ContentSource } from '../../compiler';
 import {
   Band, BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
+import { readContentHistory, type ContentHistory } from '../../content/migrations';
 import { Bundle } from './bundle';
 
 export type FileLoader = () => Promise<unknown>;
@@ -25,7 +26,12 @@ export interface ContentFiles {
   story: FileMap;
   scenes: FileMap;
   writing: FileMap;
+  /** the content migrations and the shipped path, bundled whole (boot needs them before any content, and offline); absent = the course has no past */
+  history?: { migrations: Record<string, unknown>; legacy?: unknown };
 }
+
+/** The kinds of content file that load lazily, window by window. */
+export type FileKind = Exclude<keyof ContentFiles, 'history'>;
 
 /** The real content tree. Files and folders starting with `_` are ignored. */
 export const CONTENT_FILES: ContentFiles = {
@@ -36,6 +42,10 @@ export const CONTENT_FILES: ContentFiles = {
   story: import.meta.glob(['/content/story/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   scenes: import.meta.glob(['/content/scenes/**/*.json', '!**/_*'], { import: 'default', eager: false }),
   writing: import.meta.glob(['/content/writing/**/*.json', '!**/_*'], { import: 'default', eager: false }),
+  history: {
+    migrations: import.meta.glob('/content/_migrations/*.json', { import: 'default', eager: true }),
+    legacy: Object.values(import.meta.glob('/content/_shipped/path.json', { import: 'default', eager: true }))[0],
+  },
 };
 
 const BANDS = Band.options;
@@ -122,10 +132,15 @@ export class ContentLoader {
     return { units: this.units, nodes: this.nodes };
   }
 
+  /** What became of the course's ids, and where its days stood before they had keys (see content/migrations.ts). */
+  history(): ContentHistory {
+    return readContentHistory({ migrations: Object.values(this.files.history?.migrations ?? {}), legacy: this.files.history?.legacy });
+  }
+
   /** Read and parse every not-yet-loaded file `want` accepts; return just the new records. */
-  private async fetch(want: (kind: keyof ContentFiles, path: string) => boolean): Promise<ContentSource> {
+  private async fetch(want: (kind: FileKind, path: string) => boolean): Promise<ContentSource> {
     const add: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
-    const kinds: Array<[keyof ContentFiles, (raw: unknown, p: string) => void]> = [
+    const kinds: Array<[FileKind, (raw: unknown, p: string) => void]> = [
       ['bank', (raw, p) => add.sentences.push(...parseAll([raw], BankSentence, this.problems, p))],
       ['scripts', (raw, p) => add.scripts.push(...parseAll([raw], TeachingScript, this.problems, p))],
       ['story', (raw, p) => add.chapters.push(...parseAll([raw], StoryChapter, this.problems, p, true))],
@@ -150,7 +165,7 @@ export class ContentLoader {
   private sortedUnits(units: Unit[]): Unit[] { return units.slice().sort((a, b) => a.id.localeCompare(b.id)); }
 
   /** The files a set of units owns: bank/scenes/writing by unit id, stories by the chapters their days name, scripts by the nodes they teach. */
-  private unitWanter(units: Unit[]): (kind: keyof ContentFiles, path: string) => boolean {
+  private unitWanter(units: Unit[]): (kind: FileKind, path: string) => boolean {
     const ids = new Set(units.map((u) => u.id));
     const chapters = new Set<string>();
     const scripts = new Set<string>();

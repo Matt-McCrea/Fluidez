@@ -7,6 +7,8 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import type { Block } from '../../src/compiler';
+import { dayKeyOf } from '../../src/content/days';
+import { contentVersionOf } from '../../src/content/migrations';
 import { PATH_VERSION, UI_VERSION, MemoryKV, isResumable } from '../../src/ui/store/ui';
 import { STATE_VERSION, type LearnerState } from '../../src/learner';
 import { boot } from '../../src/ui/app';
@@ -28,9 +30,13 @@ const SHAPES: Record<string, { state: number; path: number; ui: number; session:
   'head-early': { state: 2, path: 2, ui: 3, session: false },
   'head-mid-session': { state: 2, path: 2, ui: 3, session: true },
   'head-placed': { state: 2, path: 2, ui: 3, session: false },
+  // made after stable day keys and reconcile: path v3 names its place, the saved lesson is v2 and carries the content version
+  'v3-early': { state: 2, path: 3, ui: 3, session: false },
+  'v3-mid-session': { state: 2, path: 3, ui: 3, session: true },
 };
 
 const loader = new ContentLoader();
+const kvPath = (w: { kv: MemoryKV }) => w.kv.data.get('path') as { dayKey?: string };
 
 /** Every card's reps and lapses, and each node's novel passes and exposures: the memory a learner has built. */
 function memory(s: LearnerState) {
@@ -88,6 +94,18 @@ describe.each(Object.keys(SHAPES))('golden learner %s', (name) => {
     expect(w.ui.state.stats.sessions).toBe(g.kv.ui.stats.sessions);
     // an open session is a lesson the path log has not counted yet: that one warning is the only one allowed
     expect(warnings.filter((m) => !(shape.session && /path log ends at session/.test(m)))).toEqual([]);
+  });
+
+  it('is settled against the course: its place is named, nothing is owed that was not, and it stands where it stood', () => {
+    const p = w.ui.path;
+    const u = w.bundle.course.units[p.unit];
+    expect([p.unitId, p.dayKey]).toEqual([u.id, dayKeyOf(u, p.day)]);
+    expect(p.contentVersion).toBe(contentVersionOf(loader.history().migrations));
+    expect(kvPath(w).dayKey).toBe(p.dayKey);
+    // the course has not moved since these were saved, so reconcile only names where they are
+    expect([p.unit, p.day]).toEqual([g.kv.path.unit, g.kv.path.day]);
+    expect([p.owedNew, p.owedGrammar]).toEqual([g.kv.path.owedNew, g.kv.path.owedGrammar]);
+    if (w.ui.session) expect(w.ui.session).toMatchObject({ version: 2, contentVersion: p.contentVersion, dayKey: dayKeyOf(u, p.day) });
   });
 
   it('loses no node and invents none', () => {

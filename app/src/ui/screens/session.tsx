@@ -55,7 +55,7 @@ export function Session({ mode, onExit, onAnother, capMinutes, resume, onPractis
     const at = app.now();
     const elapsedMs = runner.elapsed() * 60_000;
     await app.ui.saveSession({
-      version: 1, learnerId: app.ui.state.learnerId, sessionIndex: app.learner.sessionIndex, mode: resume?.mode ?? mode, tier: plan.tier,
+      version: 2, learnerId: app.ui.state.learnerId, sessionIndex: app.learner.sessionIndex, mode: resume?.mode ?? mode, tier: plan.tier,
       capMinutes: runner.capMinutes, startedAt: at - elapsedMs, elapsedMs, savedAt: at,
       plan, block: idxRef.current, cursor: runner.cursor, runner: runner.snapshot(),
     });

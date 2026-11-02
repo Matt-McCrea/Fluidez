@@ -73,7 +73,7 @@ async function leaveMidSession(w: World, stop: number) {
   }
   const elapsedMs = run.elapsed() * 60_000;
   await w.ui.saveSession({
-    version: 1, learnerId: w.ui.state.learnerId, sessionIndex: w.learner.sessionIndex, mode: 'next', tier: plan.tier,
+    version: 2, learnerId: w.ui.state.learnerId, sessionIndex: w.learner.sessionIndex, mode: 'next', tier: plan.tier,
     capMinutes: run.capMinutes, startedAt: w.now() - elapsedMs, elapsedMs, savedAt: w.now(),
     plan, block: stop, cursor: run.cursor, runner: run.snapshot(),
   });

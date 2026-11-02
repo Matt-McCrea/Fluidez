@@ -288,6 +288,22 @@ export class Learner {
   /** A deep copy of the whole state, safe to JSON.stringify. */
   toJSON(): LearnerState { return structuredClone(this.state); }
 
+  /** The documents as they stand, not copied, for code that only reads them (reconcile). What this returns must never be changed. */
+  documents(): { state: LearnerState; events: EventLog; attempts: AttemptLog } {
+    return { state: this.state, events: this.log, attempts: this.attemptLog };
+  }
+
+  /**
+   * Take documents that `reconcile` rewrote because the course moved under the learner, in place of
+   * these. They are written with the next write. Nothing else may replace a document.
+   */
+  adopt(next: { state?: LearnerState; events?: EventLog; attempts?: AttemptLog }): void {
+    if (next.events) { this.log = next.events; this.eventsDirty = true; }
+    if (next.attempts) { this.attemptLog = next.attempts; this.attemptsDirty = true; }
+    if (next.state) this.state = next.state;
+    if (next.state || next.events || next.attempts) this.touch();
+  }
+
   // ---------------------------------------------------------------- persistence
 
   private touch(): void {

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'preact/hooks';
 import type { Mode } from '../compiler';
 import { BackupError, downloadBackup, IdbStore, idbKV, Learner, makeBackup, StoredDocumentError, type LearnerStore } from '../learner';
 import type { KV, Tier } from '../learner';
-import { ContentLoader, loadBundle } from './data/loader';
+import { ContentLoader, fixturesForced, loadBundle } from './data/loader';
 import { Ctx, type AppCtx } from './context';
 import { Home } from './screens/home';
 import { Onboarding } from './screens/onboarding';
@@ -20,6 +20,7 @@ import { Weak } from './screens/weak';
 import type { PracticeSpec } from './session/practice-spec';
 import { BACKUP_READERS, UiStore, type SavedSession } from './store/ui';
 import { MORE_MINUTES } from './session/more';
+import { settleContent } from './session/settle';
 
 type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings' | 'weak';
 type Route = { tab: Tab; open?: string } | { session: Mode; key: number; cap?: number; resume?: SavedSession; tier?: Tier; quick?: boolean } | { practice: PracticeSpec | undefined; key: number };
@@ -42,7 +43,9 @@ export async function boot(opts: BootOptions = {}): Promise<Omit<AppCtx, 'refres
   const [learner, ui] = await Promise.all([Learner.open(learnerStore, { now }), new UiStore(kv).load()]);
   await ui.reconcile(learner.sessionIndex);
   const loader = opts.loader ?? new ContentLoader();
-  const { units } = await loader.core();
+  const { units, nodes } = await loader.core();
+  // the learner's documents are brought to this course before anything reads them; a fixture course is nobody's
+  if (!(opts.fixtures === undefined && fixturesForced()) && !loader.problems.length) await settleContent(learner, ui, units, nodes, loader.history(), now());
   const bundle = await loadBundle(loader, { unit: Math.min(ui.path.unit, Math.max(0, units.length - 1)), fixtures: opts.fixtures });
   try { await globalThis.navigator?.storage?.persist?.(); } catch { /* not granted: fine */ }
   return { learner, learnerStore, ui, bundle, loader, now };
