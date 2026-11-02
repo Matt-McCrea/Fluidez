@@ -41,7 +41,7 @@ export interface NodeRecord {
   introducedAt: number;
   introDay: string;           // local day key of introduction (see dayKey)
   /** Present while the node is being taught in-lesson, before FSRS owns it. */
-  learning?: { steps: LearningStep[] };
+  learning?: { steps: LearningStep[]; /** a cognate: done after two right answers */ cognate?: boolean };
   receptive?: CardJSON;
   productive?: CardJSON;      // absent until unlocked
   productiveUnlockedAt?: number;

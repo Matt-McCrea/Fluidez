@@ -353,7 +353,8 @@ export class SessionRunner {
     if (this.learner.isIntroduced(node)) return;
     const p = productive ?? this.productive.get(node) ?? this.plan.blocks.flatMap((b) => (b.kind === 'learn' ? b.items : [])).find((it) => it.node === node)?.productive
       ?? !(this.plan.receptiveOnly ?? []).includes(node);
-    this.learner.introduce(node, { at: this.now(), productive: p });
+    const cognate = this.plan.blocks.flatMap((b) => (b.kind === 'learn' ? b.items : [])).some((it) => it.node === node && it.cognate);
+    this.learner.introduce(node, { at: this.now(), productive: p, cognate });
   }
 
   /** An answered sentence is graded for its target alone (see `seenAbout`). */

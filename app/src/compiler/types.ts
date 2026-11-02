@@ -280,6 +280,8 @@ export interface LearnItem extends ItemBase {
   /** an unseen gated example sentence, if one exists */
   example?: string;
   retrievals: number;
+  /** a lexeme that reads as its English gloss: it skips the recognition rung and is done after two right answers (compiler/cognate.ts) */
+  cognate?: boolean;
   /**
    * Whether the node gets a production card (productivePolicy); the runner
    * passes it to learner.introduce. The compiler always sets it; absent = true.

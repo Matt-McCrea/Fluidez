@@ -30,6 +30,7 @@
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
 import { lackKey, lacksCourse } from '../content/kinds';
+import { isCognate } from './cognate';
 import { alignedPairs } from '../exercises/pairs';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
 import { productivePolicy, recognitionOnly, SEEDED_REPS, State, type Direction, type DueCard, type Tier } from '../learner';
@@ -38,7 +39,7 @@ import {
   EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_MINUTES, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
   PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, RECALL_POOL, RECOGNITION_EXTRA_PICKS, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
-  SECONDS, SEVERE_FACTOR, SHORT_NEW_ITEMS, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
+  SECONDS, SEVERE_FACTOR, learnSeconds, SHORT_NEW_ITEMS, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
 import { admissible, dayPos, hash32, knownSet, unmetRequires, unreadChapters, makeRng, sessionSeed, type Rng } from './content';
 import type {
@@ -941,7 +942,9 @@ class Compiler {
       else this.newNodes.lexemes.push(id);
       const productive = this.productive(id, k);
       if (!productive) this.receptiveOnly.push(id);
-      return { op: 'learn', id: `ln:${id}`, node: id, nodeKind: k, retrievals: 4, productive, scoring: 'learning', credit: [id] } as LearnItem;
+      const gn = this.course.nodes.get(id);
+      const cognate = k === 'lexeme' && productive && !!gn?.es && !!gn.en && isCognate(gn.es, gn.en);
+      return { op: 'learn', id: `ln:${id}`, node: id, nodeKind: k, retrievals: cognate ? 2 : 4, ...(cognate ? { cognate } : {}), productive, scoring: 'learning', credit: [id] } as LearnItem;
     });
     for (const it of items) {
       const [s] = this.pickSentences(it.node, 1);
@@ -977,7 +980,7 @@ class Compiler {
       const it = learn.items[i];
       if (this.neededElsewhere(it)) continue;
       learn.items.splice(i, 1);
-      learn.minutes = round1(learn.items.length * SECONDS.learn / 60);
+      learn.minutes = round1(learn.items.reduce((a, it) => a + learnSeconds(it), 0) / 60);
       for (const k of Object.keys(this.newNodes) as (keyof SessionPlan['newNodes'])[]) {
         this.newNodes[k] = this.newNodes[k].filter((n) => n !== it.node);
       }
@@ -1015,7 +1018,7 @@ class Compiler {
 
   private pushLearn(items: LearnItem[]) {
     if (!items.length) return;
-    this.blocks.push({ kind: 'learn', part: 'core', deliberate: false, items, minutes: round1(items.length * SECONDS.learn / 60) });
+    this.blocks.push({ kind: 'learn', part: 'core', deliberate: false, items, minutes: round1(items.reduce((a, it) => a + learnSeconds(it), 0) / 60) });
   }
 
   // ---------------------------------------------------------------- lesson types

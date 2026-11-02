@@ -40,6 +40,9 @@ export const MAINTENANCE_MAX_INTERVAL_DAYS = 365;
 
 /** In-lesson retrievals: at least MIN, at most MAX (BLUEPRINT's 3–5 spaced retrievals). */
 export const LEARNING_STEPS_MIN = 3;
+/** A cognate needs two right answers in a row, not three (compiler/cognate.ts). */
+export const LEARNING_STEPS_MIN_COGNATE = 2;
+const minSteps = (r: { learning?: { cognate?: boolean } }) => (r.learning?.cognate ? LEARNING_STEPS_MIN_COGNATE : LEARNING_STEPS_MIN);
 export const LEARNING_STEPS_MAX = 5;
 
 /**
@@ -600,10 +603,10 @@ export class Learner {
    * `productive` (default true) fixes, once, whether the node will ever get a
    * production card (see productivePolicy); it is not changed by a re-introduce.
    */
-  introduce(id: NodeId, opts: { at?: number; results?: boolean[]; ms?: number[]; productive?: boolean } = {}): NodeRecord {
+  introduce(id: NodeId, opts: { at?: number; results?: boolean[]; ms?: number[]; productive?: boolean; cognate?: boolean } = {}): NodeRecord {
     const at = opts.at ?? this.now();
     if (!this.state.nodes[id]) {
-      this.state.nodes[id] = { id, introducedAt: at, introDay: this.day(at), learning: { steps: [] }, novelPasses: 0, exposures: 0, productiveTrack: opts.productive ?? true };
+      this.state.nodes[id] = { id, introducedAt: at, introDay: this.day(at), learning: { steps: [], ...(opts.cognate ? { cognate: true } : {}) }, novelPasses: 0, exposures: 0, productiveTrack: opts.productive ?? true };
       this.touch();
     }
     if (opts.results && this.state.nodes[id].learning) {
@@ -671,7 +674,7 @@ export class Learner {
     const n = steps.length;
     const correct = steps.filter((s) => s.correct).length;
     const lastTwo = n >= 2 && steps[n - 1].correct && steps[n - 2].correct;
-    return { steps: n, correct, done: n >= LEARNING_STEPS_MAX || (n >= LEARNING_STEPS_MIN && lastTwo) };
+    return { steps: n, correct, done: n >= LEARNING_STEPS_MAX || (n >= minSteps(r) && lastTwo) };
   }
 
   /**
@@ -686,7 +689,7 @@ export class Learner {
     const at = opts.at ?? this.now();
     let grade: Grade;
     if (steps.length === 0 || !steps[steps.length - 1].correct) grade = Rating.Again;
-    else if (steps.length < LEARNING_STEPS_MIN || steps.some((s) => !s.correct)) grade = Rating.Hard;
+    else if (steps.length < minSteps(r) || steps.some((s) => !s.correct)) grade = Rating.Hard;
     else grade = Rating.Good;
     const next = this.scheduler.next(toCard(newCard(r.introducedAt)), new Date(at), grade).card;
     r.receptive = fromCard(next, { baseStability: next.stability });

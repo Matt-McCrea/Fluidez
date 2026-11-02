@@ -124,6 +124,8 @@ async function main() {
     reviewContextReuseDays: budget.REVIEW_REUSE_DAYS,
   });
   console.log(formatReport(runs, quotas, placed));
+  const saved = runs.map((r) => { const s = r.sessions; return `${r.profile} ${(s.reduce((a, x) => a + x.cognateMinutes, 0) / Math.max(1, s.length)).toFixed(2)}`; });
+  console.log(`\nCognate fast path, minutes saved per session (all sessions): ${saved.join(', ')}`);
 
   if (arg('no-write') !== 'true') {
     const out = join(contentDir, '_reports', 'quotas.json');

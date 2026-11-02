@@ -678,6 +678,16 @@ export function learnFormat(round: number, productive = true): LearnFormat {
 }
 
 /**
+ * First contact as a test. From B1 a new word or phrase the learner will produce is first asked typed, after it is shown; a cognate
+ * is first asked typed at any band, since the pick-the-meaning rung teaches an English speaker nothing. Only the first ask: after a
+ * miss the rounds step down as before. Undefined: the usual rounds.
+ */
+export function firstContactFormat(it: { band?: string; kind?: string; productive?: boolean; cognate?: boolean }, n: number): LearnFormat | undefined {
+  if (n !== 0 || it.productive === false || (it.kind !== 'lexeme' && it.kind !== 'chunk')) return undefined;
+  return it.cognate || it.band === 'B1' || it.band === 'B2' || it.band === 'C1' ? 'type' : undefined;
+}
+
+/**
  * One in-lesson retrieval of a new word or phrase. Every card is built from
  * ONE aligned pair (exercises/pairs.ts): the English shown is the exact
  * translation of the Spanish expected. Round 0: what does it mean (pick the
@@ -691,10 +701,12 @@ export function learnRetrieval(item: LearnItem, b: Bundle, round: number, n?: nu
   if (!seg) return { type: 'read', key, ask: 'Have another look', es: b.node(item.node)?.es ?? b.title(item.node), en: b.title(item.node), why: '' };
   const why = `"${seg.en}" is ${seg.es}`;
   // round 1 of a short word: "pick the Spanish" is nearly free, so type what it means
-  if (round === 1 && b.node(item.node)?.kind === 'lexeme' && wordCount(seg.en) <= 2) {
+  if (round === 1 && !item.cognate && b.node(item.node)?.kind === 'lexeme' && wordCount(seg.en) <= 2) {
     return typeMeaning(key, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
   }
-  switch (learnFormat(round, item.productive !== false)) {
+  const node = b.node(item.node);
+  const first = firstContactFormat({ band: node?.band, kind: node?.kind, productive: item.productive, cognate: item.cognate }, n ?? round);
+  switch (first ?? learnFormat(round, item.productive !== false)) {
     case 'recognise':
       return nodeMeaningChoice(key, item.node, b, seg);
     case 'pickSpanish': {

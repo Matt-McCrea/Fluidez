@@ -157,6 +157,7 @@ export const REPAY_CAP = { lexeme: 6, chunk: 3, pattern: 2, contrast: 1 } as con
 /** Seconds per item, by op. Reviews use learner.secondsPerReview() instead. */
 export const SECONDS = {
   learn: 55,            // present + 3–5 interleaved retrievals (pick the meaning, pick the Spanish, type it): measured in the player, not 35
+  learnCognate: 30,     // a cognate: shown, typed, and one more right answer, no pick-the-meaning rung
   hook: 30,
   examples: 60,
   rule: 90,
@@ -179,6 +180,9 @@ export const SECONDS = {
   recall: 10,
   recap: 18,            // one re-asked card in "Before you go"
 } as const;
+
+/** Seconds one new item takes in the learn pool: a cognate skips a rung. */
+export const learnSeconds = (it: { cognate?: boolean }): number => (it.cognate ? SECONDS.learnCognate : SECONDS.learn);
 
 /** Counts per block (standard tier). */
 export const COUNTS = {

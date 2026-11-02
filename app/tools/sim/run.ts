@@ -49,6 +49,8 @@ export interface SessionStat {
   planMinutes: number;
   simMinutes: number;
   reviewMinutes: number;
+  /** minutes the plan's cognate items save against the full ladder (budget.learnSeconds) */
+  cognateMinutes: number;
   due: number;
   dueMinutes: number;
   budgetMinutes: number;
@@ -226,7 +228,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const p2 = Math.min(0.99, p + (1 - p) * profile.retryGain);
     return { correct: r.next() < p2, tries: 2 };
   };
-  const steps = (n: number) => Array.from({ length: Math.max(3, Math.min(5, n)) }, (_, i) => r.next() < Math.min(0.98, profile.learnP + 0.05 * i));
+  const steps = (n: number, min = 3) => Array.from({ length: Math.max(min, Math.min(5, n)) }, (_, i) => r.next() < Math.min(0.98, profile.learnP + 0.05 * i));
 
   // per-session state (the runner's lapses, learn steps, presented nodes, clock and cap)
   interface Ctx {
@@ -251,12 +253,12 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     }
   };
 
-  const introduce = (node: NodeId, n = 4) => {
+  const introduce = (node: NodeId, n = 4, cognate = false) => {
     if (L.isIntroduced(node)) return;
-    const results = steps(n);
+    const results = steps(n, cognate ? 2 : 3);
     const productive = !receptiveOnly.has(node);
     if (!productive) run.receptiveOnly++;
-    L.introduce(node, { at: t, results, productive });
+    L.introduce(node, { at: t, results, productive, cognate });
     ctx.steps.set(node, results.length);
     ctx.presented.add(node);
     t += results.length * 8_000;
@@ -361,7 +363,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       return answer(it, dir, it.credit, (it as { sentence?: string }).sentence, (it as { novel?: boolean }).novel ?? true);
     }
     if (it.scoring === 'learning') {
-      introduce(it.node, it.op === 'learn' ? it.retrievals : 4);
+      introduce(it.node, it.op === 'learn' ? it.retrievals : 4, it.op === 'learn' && !!it.cognate);
       if (it.op !== 'learn') stepLadder(it, attempt(pCorrect(it.node, 'direction' in it ? it.direction : 'receptive')));
       return 30_000;
     }
@@ -400,7 +402,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
         }
         break;
       case 'learn':
-        for (const it of b.items) { introduce(it.node, it.retrievals); t += 15_000; }
+        for (const it of b.items) { introduce(it.node, it.retrievals, !!it.cognate); t += 15_000; }
         break;
       case 'teach': {
         const learning = b.items.filter((i) => i.scoring === 'learning').length;
@@ -525,6 +527,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     run.sessions.push({
       day: dayIdx, band, unit: plan.unit, type: plan.type, tier: plan.tier, mode,
       estMinutes: plan.estimatedMinutes, planMinutes: plan.budget.minutes, simMinutes: (t - start) / 60_000, reviewMinutes: reviewMs / 60_000,
+      cognateMinutes: plan.blocks.flatMap((x) => (x.kind === 'learn' ? x.items : [])).filter((i) => i.cognate).length * (budget.SECONDS.learn - budget.SECONDS.learnCognate) / 60,
       due: plan.budget.due, dueMinutes: plan.budget.dueMinutes, budgetMinutes: plan.budget.reviewMinutes,
       throttled: plan.budget.throttled, converted: plan.converted?.reason, newItems: newNodes.length,
       advanced: plan.advancesPath, gap: dayIdx - lastDay, story,
