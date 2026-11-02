@@ -64,6 +64,21 @@ describe('I need to stop', () => {
     const path = await run.stop();
     expect(path.pendingDrills.map((d) => d.node)).toContain(g);
   });
+
+  it('a contrast lesson left before a single answer comes round again: it has no drill to catch it, and it must not count as taught', async () => {
+    const w = await world();
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    plan.newNodes.contrasts.push('x:left', 'x:answered');
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    run.start();
+    // Teach presents its node as the block opens
+    run.present('x:left');
+    run.present('x:answered');
+    run.learningStep('x:answered', { correct: true, tries: 1, ms: 1000 });
+    await run.stop();
+    expect(w.learner.isIntroduced('x:left')).toBe(false);
+    expect(w.learner.isIntroduced('x:answered')).toBe(true);
+  });
 });
 
 describe('the time cap', () => {

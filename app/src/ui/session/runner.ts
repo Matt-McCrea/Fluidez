@@ -576,7 +576,8 @@ export class SessionRunner {
   async stop(): Promise<PathState> {
     if (this.finished) return this.ui.path;
     this.start();
-    const taught = Object.values(this.plan.newNodes).flat().filter((n) => this.presented.has(n));
+    // a contrast has no drill to come back to it: one left before a single answer was given was not taught, and its lesson comes round again whole
+    const taught = Object.values(this.plan.newNodes).flat().filter((n) => this.presented.has(n) && (!this.plan.newNodes.contrasts.includes(n) || this.learnSteps.has(n)));
     for (const n of taught) {
       this.begin(n);
       if (this.learner.isLearning(n)) this.learner.completeIntroduction(n, { at: this.now() });
