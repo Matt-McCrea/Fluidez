@@ -1,7 +1,7 @@
 {
   "node": "x:se-three-ways",
   "hook": {
-    "line": "Walk down the block in La Candelaria and *se* is everywhere: on the signs, in the gossip, in everyone's morning. It's the same little word doing three different jobs.",
+    "line": "Walk down the block in La Candelaria and *se* is everywhere: on the signs, in the gossip, in everyone's morning. It's the same little word doing four different jobs.",
     "es": "En el café se come muy bien.",
     "en": "You eat really well at the café."
   },
@@ -35,8 +35,8 @@
       "en": "Waiter needed."
     }
   ],
-  "rule": "Ask one question: who is doing it, and to whom?\n\nOne person, doing it to themselves: *Vale se levanta.* Vale gets (herself) up. This is your daily routine *se*.\n\nTwo or more people, doing it to each other: *Tomás y Vale se conocieron.* They met each other. The verb is plural and there's a pair or a group.\n\nNobody named at all: *Se arrienda apartamento.* Somebody is renting it out, and it doesn't matter who. English says for rent, is spoken, or you (*Aquí se come bien*: you eat well here).\n\nSo look for the person. A name with a singular verb: themselves. A pair with a plural verb and a relationship verb (*conocerse*, *quererse*, *ayudarse*): each other. No person anywhere: people in general.",
-  "smallPrint": "Teachers call these the reflexive *se*, the reciprocal *se* and the impersonal *se*.",
+  "rule": "*Se* seems to have a dozen jobs. Most of them are one job.\n\nA normal sentence has someone doing something to something else: *Vale cerró la puerta.* *Se* says that isn't what's going on here. Nobody outside is doing it, or nobody is saying who.\n\nBack on yourself: *Vale se levanta.* Vale gets up. This is your daily routine *se*.\n\nTo each other: *Tomás y Vale se conocieron.* They met. The verb is plural and there's a pair or a group.\n\nIt just happened: *Se fue la luz.* The power went out. Nobody did it.\n\nNobody named at all: *Se arrienda apartamento.* Somebody is renting it out, and it doesn't matter who. English says for rent, is spoken, or you (*Aquí se come bien*: you eat well here).\n\nSo look for the person. A name with a singular verb: themselves. A pair with a plural verb and a relationship verb (*conocerse*, *quererse*, *ayudarse*): each other. No person anywhere: it just happened, or people in general do it.",
+  "smallPrint": "Teachers call these the reflexive *se*, the reciprocal *se*, the middle *se* and the impersonal *se*. You don't need the labels.",
   "readAndPick": [
     {
       "es": "Vale se levanta a las cuatro.",

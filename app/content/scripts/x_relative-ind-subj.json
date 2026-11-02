@@ -35,8 +35,8 @@
       "en": "I don't know anyone who lives there."
     }
   ],
-  "rule": "Look at the verb after *que*: its ending does the work.\n\n*Busco el local que tiene cocina.* The place is real and you know it.\n*Busco un local que tenga cocina.* Any place like that, if one exists.\n\nA quick test: can you point at it? Yes, ordinary ending (*tiene*, *abre*, *vive*). No, or you're not sure, or you're asking whether it exists, or the answer is *nadie* or *ningún*: wish ending (*tenga*, *abra*, *viva*).\n\nThe article helps (*el* leans real, *un* leans open) but it doesn't decide. The verb does.\n\nEnglish has no switch here. *A place that has a kitchen* covers both. In Spanish you must choose, and a question like *¿Hay alguien que…?* almost always takes the wish ending.",
-  "smallPrint": "Teachers call this the indicative versus subjunctive contrast in relative clauses: indicative for a known antecedent, subjunctive for an unknown or non-existent one.",
+  "rule": "Look at the verb after *que*: its ending does the work.\n\n*Busco el local que tiene cocina.* The place is real and you know it.\n*Busco un local que tenga cocina.* Any place like that, if one exists.\n\nA quick test: can you point at it? Yes, the ordinary form (*tiene*, *abre*, *vive*). No, or you're not sure, or you're asking whether it exists, or the answer is *nadie* or *ningún*: the subjunctive (*tenga*, *abra*, *viva*).\n\nThe article helps (*el* leans real, *un* leans open) but it doesn't decide. The verb does.\n\n**One idea behind the subjunctive**\n\nYou've now met the subjunctive after a dozen openings. It's one idea.\n\nThe ordinary verb says something is so. The subjunctive holds the idea up without saying it's so: you want it, you doubt it, you deny it, it hasn't happened yet, or you can't point to it.\n\n*Creo que Vale viene.* I think Vale is coming.\n*No creo que Vale venga.* I don't think Vale is coming.\n\n*Cuando Vale llegó, comimos.* When Vale arrived, we ate.\n*Cuando Vale llegue, comemos.* When Vale arrives, we'll eat.\n\n**The test.** Cover the opening with your hand and read what's left. Is someone in the sentence saying that's so? Ordinary verb. If not, subjunctive.\n\nCover *Creo que*: Vale is coming. Yes, I'm saying so. *Viene.*\nCover *No creo que*: Vale is coming. No. *Venga.*\nCover *Quiero que*: you're coming. No, I only want it. *Vengas.*\nCover *Cuando*: Vale arrives. Not yet. *Llegue.*\n\n**One catch.** An opening that reacts or judges takes the subjunctive even when the rest is true. *Me alegra que estés aquí. Es una pena que cierren el parque.* You are here, and they are closing it. But that's not what you're telling anyone. You're telling them how you feel about it.\n\n**Two riders.** *Si* and questions are looking for information, so they keep the ordinary form: *si llueve*, *¿Crees que viene?* And a label on a fact passes the fact on: *Lo bueno es que vienes.*\n\n**One to memorise.** *A lo mejor viene* and *Es posible que venga* mean the same thing. Only the frame differs, so that pair is just learned.\n\n**The trap.** English almost never changes its verb here, so your English gives no warning. *When you arrive* looks like a plain present and pulls you to *cuando llegas*. *I want you to come* pulls you to *quiero tú venir*. Spanish needs *que* and the subjunctive.\n\nWith practice you won't run the test. You'll know the openings.\nWanting: *quiero que*, *espero que*, *ojalá*, *te pido que*.\nDoubting and denying: *dudo que*, *no creo que*, *es posible que*.\nReacting and judging: *me alegra que*, *me molesta que*, *es importante que*, *es una pena que*.\nNot yet: *cuando*, *hasta que*, *antes de que*, *para que*.\nCan't point to it: *busco un...que*, *no hay nadie que*.",
+  "smallPrint": "Teachers call the ordinary verb the indicative. In relative clauses it goes with a known thing, and the subjunctive with an unknown or missing one. About something already over, you'll often hear the ordinary verb after *qué bueno que*: *¡Qué bueno que viniste!*",
   "readAndPick": [
     {
       "es": "Busco el local que tiene cocina.",
@@ -123,13 +123,13 @@
       "prompt": "Pick *abre* or *abra* and type the whole sentence: *¿Hay un café que ___ a las cuatro?* (Is there a café that opens at four?)",
       "answer": "¿Hay un café que abra a las cuatro?",
       "accept": [],
-      "why": "You're asking whether one exists, so the wish ending: *abra*."
+      "why": "You're asking whether one exists, so the subjunctive: *abra*."
     },
     {
       "prompt": "Say: There's a café that opens at six.",
       "answer": "Hay un café que abre a las seis.",
       "accept": [],
-      "why": "You're stating that it exists, so the ordinary ending: *abre*."
+      "why": "You're saying it exists, so the ordinary form: *abre*."
     },
     {
       "prompt": "Say: Do you know anyone who lives in Santa Marta? (to a friend)",
@@ -160,17 +160,17 @@
     {
       "wrong": "¿Conoces a alguien que vive allá?",
       "right": "¿Conoces a alguien que viva allá?",
-      "why": "Almost. You're asking whether anyone does, so the wish ending: *viva*."
+      "why": "Almost. You're asking whether anyone does, so the subjunctive: *viva*."
     },
     {
       "wrong": "Hernando conoce a un señor que viva en Santa Marta.",
       "right": "Hernando conoce a un señor que vive en Santa Marta.",
-      "why": "Almost. The man exists and Hernando knows him, so the ordinary ending: *vive*."
+      "why": "Almost. The man exists and Hernando knows him, so the ordinary form: *vive*."
     },
     {
       "wrong": "Busco el local que tenga cocina.",
       "right": "Busco el local que tiene cocina.",
-      "why": "Almost. If you mean one particular place you know, use the ordinary ending: *tiene*."
+      "why": "Almost. If you mean one particular place you know, use the ordinary form: *tiene*."
     },
     {
       "wrong": "Hay un café que abra a las seis.",

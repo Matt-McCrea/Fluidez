@@ -835,6 +835,7 @@
    "g:por-para-1"
   ],
   "contrasts": [
+   "p:para-inf",
    "g:por-para-1"
   ],
   "serves": [],
@@ -1034,7 +1035,7 @@
   "kind": "contrast",
   "band": "A2",
   "priority": 211,
-  "title": "Three se's: se levanta, se conocieron, se vende",
+  "title": "The jobs of se: se levanta, se conocieron, se fue, se vende",
   "es": "Se levanta a las seis.",
   "en": "He gets up at six.",
   "forms": [

@@ -13,7 +13,7 @@
     { "es": "Lo difícil es empezar.", "en": "The hard part is starting." },
     { "es": "Lo mejor es el olor del café.", "en": "The best thing is the smell of the coffee." }
   ],
-  "rule": "Put *lo* in front of an adjective and you get \"the ___ thing\" or \"the ___ part\": *lo bueno*, *lo malo*, *lo difícil*, *lo importante*. It also works with *mejor* and *peor*: *lo mejor*, *lo peor*.\n\nThen *es* (or *fue*, for something over):\n*Lo bueno es que tenemos clientes.*\n*Lo peor fue la espera.*\n\nThe *lo* never changes for gender or number, even when the thing is feminine, like *la espera*.\n\nEnglish needs extra words, \"the ___ thing\" or \"the ___ part\". Spanish just needs *lo*.",
+  "rule": "Put *lo* in front of an adjective and you get \"the ___ thing\" or \"the ___ part\": *lo bueno*, *lo malo*, *lo difícil*, *lo importante*. It also works with *mejor* and *peor*: *lo mejor*, *lo peor*.\n\nThen *es* (or *fue*, for something over):\n*Lo bueno es que tenemos clientes.*\n*Lo peor fue la espera.*\n\nThe *lo* never changes for gender or number, even when the thing is feminine, like *la espera*.\n\nEnglish needs extra words, \"the ___ thing\" or \"the ___ part\". Spanish just needs *lo*.\n\nA label like this passes a fact on, so the verb after *que* stays ordinary. *Es bueno que vengas* judges an idea, so it takes the subjunctive. *Lo bueno es que vienes* tells you that you're coming, and calls that the good part.",
   "smallPrint": "Teachers call this the neuter article *lo* used with an adjective to make an abstract noun.",
   "readAndPick": [
     { "es": "Lo bueno es que tenemos clientes.", "options": ["The bad thing is we have customers.", "The good thing is we have customers.", "The good thing is we had customers."], "answer": 1 },

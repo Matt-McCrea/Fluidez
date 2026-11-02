@@ -14,7 +14,7 @@
     { "es": "Trabajo ocho horas por día.", "en": "I work eight hours a day." },
     { "es": "Mando la receta por correo.", "en": "I send the prescription by mail." }
   ],
-  "rule": "You already know *para* as a goal or a deadline, and *por* as a reason, a route or a price. Here are the next uses.\n\n*por* is also:\n*how often*: *tres veces por día*, *una vez por semana*\n*the way you do it*: *por teléfono*, *por correo*\n*a swap*: *lo cambié por otro*, trading one thing for another\n*how long*, where English says for: *trabajé ahí por dos años*. Often Spanish needs no word at all: *estudié dos horas*. Not *para*.\n\n*para* is also:\n*in my view*: *Para mí, es grave*\n*measured against what you'd expect*: *Para ser lunes, hay mucha gente*\n\nSo ask yourself: is it a rate, a means or an exchange? *por*. Is it an opinion, or a comparison with a standard? *para*.",
+  "rule": "You already know the test: *para* is the target, and *por* is everything else. Here are more of each.\n\n*por* is also:\n*how often*: *tres veces por día*, *una vez por semana*\n*the way through*: *por teléfono*, *por correo*\n*a swap*: *lo cambié por otro*, trading one thing for another\n*how long*: *trabajé ahí por dos años*, or no word at all: *estudié dos horas*. For a stretch you are booking or planning, *para* works too: *una habitación para dos noches*.\n\n*para* can also aim an opinion or a yardstick:\n*Para mí, es grave.*\n*Para ser lunes, hay mucha gente.*",
   "smallPrint": "Teachers call this *para* the opinion or comparison use, and *por* here the frequency, means and exchange uses.",
   "readAndPick": [
     { "es": "Para mí, es grave.", "options": ["In my opinion, it's serious.", "Because of me, it's serious.", "It's serious, so I can pay."], "answer": 0 },

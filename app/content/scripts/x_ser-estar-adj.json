@@ -13,8 +13,8 @@
     { "es": "Este tinto está muy rico.", "en": "This coffee is really good." },
     { "es": "Bogotá es una ciudad grande, pero hoy está muy tranquila.", "en": "Bogotá is a big city, but today it's very quiet." }
   ],
-  "rule": "Ask one question: am I saying what it's like, or how it is right now?\n\nWhat it's like, the description you'd give a stranger: *es*. *Es aburrido*, he's boring.\nHow it is right now, or how it seems today: *está*. *Está aburrido*, he's bored.\n\nWords like *hoy*, *ahora* and *ya* usually point to *está*. *Siempre*, or a word like *hombre* or *ciudad* after the verb, points to *es*.\n\nLearn the pairs where the meaning flips:\n*es listo*: clever. *está listo*: ready.\n*es rico*: rich. *está rico*: tasty.\n*es aburrido*: boring. *está aburrido*: bored.\n*es malo*: bad. *está malo*: gone off, or ill.\n\nFeelings such as *contento*, *triste* and *preocupado* are nearly always *está*.",
-  "smallPrint": "Teachers often call this permanent (*ser*) against temporary (*estar*), but it's really about how you see it: a portrait or a snapshot.",
+  "rule": "Ask one question: compared with what?\n\nThan others: *es*. *Es aburrido*, he's boring, more than most people.\nThan usual: *está*. *Está aburrido*, he's bored, more than he usually is.\n\nIf neither fits, ask: did something happen to get it this way? Married, closed, broken, full, ready: yes, so *está*.\n\nA noun after the verb is always *es*: *Es un hombre tranquilo.*\n\nWords like *hoy*, *ahora* and *ya* are a clue, no more: *Hoy es lunes.*\n\nLearn the pairs where the meaning flips:\n*es listo*: clever. *está listo*: ready.\n*es rico*: rich. *está rico*: tasty.\n*es aburrido*: boring. *está aburrido*: bored.\n*es malo*: bad. *está malo*: gone off, or ill.\n\nFeelings such as *contento*, *triste* and *preocupado* are nearly always *está*.",
+  "smallPrint": "Teachers often call this permanent (*ser*) against temporary (*estar*). Drop that: *está muerto* is for ever, and *es joven* won't last.",
   "readAndPick": [
     { "es": "Es aburrido.", "options": ["He's boring.", "He's bored."], "answer": 0 },
     { "es": "Está aburrido.", "options": ["He's boring.", "He's bored."], "answer": 1 },
@@ -27,18 +27,18 @@
   ],
   "yourTurn": [
     { "prompt": "Choose *es* or *está*: Hernando ___ un hombre muy tranquilo.", "answer": "Hernando es un hombre muy tranquilo.", "accept": [], "why": "*Un hombre* describes who he is, and that always takes *es*." },
-    { "prompt": "Choose *es* or *está*: Hoy la ciudad ___ muy tranquila.", "answer": "Hoy la ciudad está muy tranquila.", "accept": [], "why": "*Hoy* makes it a snapshot: *está*." },
-    { "prompt": "Say about a man: He's bored.", "answer": "Está aburrido.", "accept": [], "why": "Bored is how he is right now, so *está*." },
+    { "prompt": "Choose *es* or *está*: Hoy la ciudad ___ muy tranquila.", "answer": "Hoy la ciudad está muy tranquila.", "accept": [], "why": "Today, compared with how it usually is: *está*." },
+    { "prompt": "Say about a man: He's bored.", "answer": "Está aburrido.", "accept": [], "why": "More bored than usual, so *está*." },
     { "prompt": "Say about a woman: She's very clever.", "answer": "Es muy lista.", "accept": [], "why": "Clever is what she's like: *es lista*." },
     { "prompt": "Say about the coffee in your cup: This coffee is really good.", "answer": "Este tinto está muy rico.", "accept": ["Este café está muy rico."], "why": "How food or drink tastes right now takes *está rico*." },
-    { "prompt": "Change it from what she's like to how she is today: Mariana es seria.", "answer": "Hoy Mariana está seria.", "accept": ["Mariana está seria hoy.", "Mariana está seria."], "why": "Today only is a snapshot, so *está*." },
+    { "prompt": "Change it from what she's like to how she is today: Mariana es seria.", "answer": "Hoy Mariana está seria.", "accept": ["Mariana está seria hoy.", "Mariana está seria."], "why": "Today, more than usual, so *está*." },
     { "prompt": "Change it from today to what he's like in general: Tomás está nervioso.", "answer": "Tomás es nervioso.", "accept": [], "why": "A nervous type is a description of him, so *es*." }
   ],
   "pitfalls": [
     { "wrong": "Soy listo, vamos.", "right": "Estoy listo, vamos.", "why": "Almost. *Soy listo* says you're clever. To say you're ready, use *estoy*." },
     { "wrong": "Soy aburrido en la reunión.", "right": "Estoy aburrido en la reunión.", "why": "*Soy aburrido* means you're a boring person. In a dull meeting you're bored right now: *estoy*." },
     { "wrong": "Hernando está un hombre tranquilo.", "right": "Hernando es un hombre tranquilo.", "why": "With a word like *un hombre* after it, it's always *es*." },
-    { "wrong": "La sopa es muy rica hoy.", "right": "La sopa está muy rica hoy.", "why": "*Hoy* is a snapshot, and how food tastes today takes *está*." }
+    { "wrong": "La sopa es muy rica hoy.", "right": "La sopa está muy rica hoy.", "why": "How food tastes today compares it with itself, so *está*." }
   ],
   "personal": "Think of a friend. Say what they're like with *es*, and how you think they are right now with *está*."
 }
