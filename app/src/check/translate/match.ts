@@ -14,11 +14,12 @@
 import { deaccent } from '../../engine';
 import { CLITICS, enSubject, enWords, EXPERIENCER, verbReadings } from '../../exercises/spanish';
 import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
+import { accentNote, accentSlips, changesWord } from './accents';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
 
 export interface MatchOptions extends ExpandOptions {
-  /** 'lenient': an accents-only slip passes (still reported as near). */
+  /** 'lenient': an accents-only slip passes (still reported as near, with a note saying which word), unless the accent changes the word. */
   accents?: 'strict' | 'lenient';
 }
 
@@ -181,8 +182,12 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   if (nearHit) {
     const v = nearHit.v;
+    // an accent slip stays right unless the accent is the word (hablo, habló); a slip that cannot be located is not forgiven
+    const slips = accentSlips(input, v.es);
+    const forgiven = lenient && slips.length > 0 && !slips.some(changesWord);
     return {
-      pass: lenient, near: true, hint: HINT_TEXT.accents, hintKind: 'accents', closest: v.es,
+      pass: forgiven, near: true, hint: HINT_TEXT.accents, hintKind: 'accents', closest: v.es,
+      ...(forgiven ? { note: accentNote(slips) } : {}),
       ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}),
     };
   }

@@ -200,13 +200,16 @@ function lenientSwap(input: string, r: { hintKind?: string; at?: number; closest
   return mine[r.at].src ?? a;
 }
 
+/** A sentence card forgives an accent slip, with a note, unless the accent makes the word (R15). */
+const SENTENCE_ACCENTS = { accents: 'lenient' } as const;
+
 /** A whole Spanish sentence, from English: the translation matcher. */
 export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>) {
   return (input: string): Check => {
-    const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept });
+    const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept }, SENTENCE_ACCENTS);
     const len = r.pass ? undefined : lenientSwap(input, r);
     if (len) return { pass: true, lenient: true, hint: `We'd say ${r.closest}; ${len} works too.`, answer: s.es };
-    return { pass: r.pass, near: r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant, note: r.note };
+    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant, note: r.note };
   };
 }
 
@@ -228,12 +231,12 @@ export function chunkCheck(answers: string[]) {
  *  the English the gap asks for (lexeme gaps only). */
 function itemCheck(item: ExItem, want?: string) {
   return (input: string): Check => {
-    const r = checkItem(item, input);
+    const r = checkItem(item, input, SENTENCE_ACCENTS);
     if (!r.pass && !r.near && !r.hint && (item.kind === 'typeForm' || item.kind === 'lexGap')) {
       const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined);
       if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer };
     }
-    return { pass: r.pass, near: r.near, hint: r.hint, answer: r.answer, variant: r.variant, note: r.note };
+    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, answer: r.answer, variant: r.variant, note: r.note };
   };
 }
 
@@ -618,8 +621,8 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
     check: (input) => {
       const exact = checkExact(input, answers);
       if (exact.pass) return { pass: true, answer: yt.answer };
-      const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept });
-      if (m.pass) return { pass: true, near: m.near, answer: yt.answer, variant: m.variant, note: m.note };
+      const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept }, SENTENCE_ACCENTS);
+      if (m.pass) return { pass: true, near: m.note ? undefined : m.near, answer: yt.answer, variant: m.variant, note: m.note };
       return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, hintKind: exact.near ? 'accents' : m.hintKind, answer: yt.answer };
     },
   };
