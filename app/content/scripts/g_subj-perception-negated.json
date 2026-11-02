@@ -1,7 +1,7 @@
 {
   "node": "g:subj-perception-negated",
   "hook": {
-    "line": "Sooner or later someone says \"you said it was urgent!\" and you need to answer \"I never said that\". In Spanish that little *no* changes the verb that follows, and getting it right makes you sound precise instead of defensive.",
+    "line": "Sooner or later someone says \"you said it was urgent!\" and you need to answer \"I never said that\". In Spanish that little *no* can change the verb that follows, and getting it right makes you sound precise instead of defensive.",
     "es": "No dije que fuera urgente.",
     "en": "I didn't say it was urgent."
   },
@@ -10,7 +10,7 @@
     { "es": "No dijo que fuera urgente.", "en": "He didn't say it was urgent." },
     { "es": "Dijo que era urgente.", "en": "He said it was urgent." },
     { "es": "Vi que Vale estaba enojada.", "en": "I saw that Vale was angry." },
-    { "es": "No vi que Vale estuviera enojada.", "en": "I didn't see that Vale was angry." },
+    { "es": "No vi que Vale estuviera enojada.", "en": "I saw no sign that Vale was angry." },
     { "es": "No oí que sonara el teléfono.", "en": "I didn't hear the phone ring." },
     { "es": "No vi que llegara nadie.", "en": "I didn't see anyone arrive." }
   ],
@@ -28,18 +28,18 @@
     { "es": "Mariana no dijo que el político mintiera.", "options": ["Mariana didn't say the politician lied.", "Mariana said the politician lied.", "The politician didn't say Mariana lied."], "answer": 0 }
   ],
   "yourTurn": [
-    { "prompt": "I didn't say it was urgent. Choose *fuera* or *era*: No dije que ___ urgente.", "answer": "No dije que fuera urgente.", "accept": ["No dije que fuera urgente"], "why": "After *no dije que* the verb takes the *-ra* form: *fuera*." },
+    { "prompt": "I didn't say it was urgent. Choose *fuera* or *era*: No dije que ___ urgente.", "answer": "No dije que fuera urgente.", "accept": ["No dije que fuera urgente"], "why": "*No dije que* here says you never claimed it, so the *-ra* form: *fuera*." },
     { "prompt": "I saw that Vale was angry. Choose *estaba* or *estuviera*: Vi que Vale ___ enojada.", "answer": "Vi que Vale estaba enojada.", "accept": ["Vi que Vale estaba enojada"], "why": "With no *no*, you are vouching for it, so the ordinary past is *estaba*." },
-    {"prompt": "Say: I didn't see that Vale was angry.", "answer": "No vi que Vale estuviera enojada.", "accept": ["No vi que Vale estuviera enojada", "No vi que Vale estaba enojada.", "No vi que Vale estaba enojada"], "why": "Both work. *Estuviera* says you saw no sign of it, and *estaba* says she was angry and you missed it."},
-    {"prompt": "Say: I didn't hear the phone ring.", "answer": "No oí que sonara el teléfono.", "accept": ["No oí que sonara el teléfono", "No oí que el teléfono sonara.", "No oí sonar el teléfono.", "No oí el teléfono sonar.", "No oí que sonó el teléfono."], "why": "*Sonara* doesn't vouch for the ring. If it rang and you missed it, *No oí que sonó* and *No oí sonar el teléfono* work too."},
-    {"prompt": "Say: He didn't say it was urgent.", "answer": "No dijo que fuera urgente.", "accept": ["No dijo que fuera urgente", "No dijo que era urgente.", "No dijo que era urgente"], "why": "Both work. *Fuera* doesn't vouch for it, and *era* says it was urgent and he left that out."},
-    { "prompt": "Make it negative: Dijo que Vale tenía la culpa.", "answer": "No dijo que Vale tuviera la culpa.", "accept": ["No dijo que Vale tuviera la culpa"], "why": "Add *no*, and *tenía* becomes *tuviera*." },
-    { "prompt": "Make it negative: Vi que llegaba Hernando.", "answer": "No vi que llegara Hernando.", "accept": ["No vi que llegara Hernando", "No vi que Hernando llegara."], "why": "Add *no*, and *llegaba* becomes *llegara*." },
+    { "prompt": "Say: I didn't see that Vale was angry.", "answer": "No vi que Vale estuviera enojada.", "accept": ["No vi que Vale estuviera enojada", "No vi que Vale estaba enojada.", "No vi que Vale estaba enojada"], "why": "Both work. *Estuviera* says you saw no sign of it, and *estaba* says she was angry and you missed it." },
+    { "prompt": "Say: I didn't hear the phone ring.", "answer": "No oí que sonara el teléfono.", "accept": ["No oí que sonara el teléfono", "No oí que el teléfono sonara.", "No oí sonar el teléfono.", "No oí el teléfono sonar.", "No oí que sonó el teléfono."], "why": "*Sonara* doesn't vouch for the ring. If it rang and you missed it, *No oí que sonó* and *No oí sonar el teléfono* work too." },
+    { "prompt": "Say: He didn't say it was urgent.", "answer": "No dijo que fuera urgente.", "accept": ["No dijo que fuera urgente", "No dijo que era urgente.", "No dijo que era urgente"], "why": "Both work. *Fuera* doesn't vouch for it, and *era* says it was urgent and he left that out." },
+    { "prompt": "Make it negative: Dijo que Vale tenía la culpa.", "answer": "No dijo que Vale tuviera la culpa.", "accept": ["No dijo que Vale tuviera la culpa", "No dijo que Vale tenía la culpa.", "No dijo que Vale tenía la culpa"], "why": "Add *no*. *Tuviera* doesn't vouch for it. *Tenía* says she was to blame and he left that out." },
+    { "prompt": "Make it negative: Vi que llegaba Hernando.", "answer": "No vi que llegara Hernando.", "accept": ["No vi que llegara Hernando", "No vi que Hernando llegara.", "No vi que llegaba Hernando.", "No vi que Hernando llegaba."], "why": "Add *no*. *Llegara* doesn't vouch for it. *Llegaba* says he was arriving and you missed it." },
     { "prompt": "Say: It's not that I don't want to, it's that I can't.", "answer": "No es que no quiera, es que no puedo.", "accept": ["No es que no quiera, es que no puedo"], "why": "The denied half takes *quiera*; the true half stays ordinary: *puedo*." }
   ],
   "pitfalls": [
-    {"wrong": "No veo que Vale está enojada.", "right": "No veo que Vale esté enojada.", "why": "Almost. You can't vouch for what you say you don't see, so *no veo que* takes the wish form: *esté*."},
-    {"wrong": "No es que no quiero, es que no puedo.", "right": "No es que no quiera, es que no puedo.", "why": "Almost. *No es que* denies the idea, so the verb takes the wish form: *quiera*."},
+    { "wrong": "No veo que Vale está enojada.", "right": "No veo que Vale esté enojada.", "why": "Almost. You can't vouch for what you say you don't see, so *no veo que* takes the wish form: *esté*." },
+    { "wrong": "No es que no quiero, es que no puedo.", "right": "No es que no quiera, es que no puedo.", "why": "Almost. *No es que* denies the idea, so the verb takes the wish form: *quiera*." },
     { "wrong": "No vi que llegó nadie.", "right": "No vi que llegara nadie.", "why": "Almost. A denied sighting takes the *-ra* form: *llegara*." },
     { "wrong": "Vi que Vale estuviera enojada.", "right": "Vi que Vale estaba enojada.", "why": "Almost. Without *no* you are reporting what you saw, so use the ordinary past." }
   ],

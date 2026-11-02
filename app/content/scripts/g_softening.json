@@ -29,6 +29,10 @@
     {
       "es": "Me imagino que está ocupado.",
       "en": "I imagine you're busy. (formal, to a man)"
+    },
+    {
+      "es": "Quisiera saber si hay mesa.",
+      "en": "I'd like to know if there's a table."
     }
   ],
   "rule": "English softens with \"I was wondering…\", \"could you possibly…\" and \"I imagine…\". Spanish has five matching moves.\n\n*Quisiera* (\"I would like\") is the classic polite opener. It looks like the past wish form, but here it stands alone with no *que* in front: *Quisiera saber si hay mesa.*\n\n*Quería* (\"I wanted\") instead of *quiero*: the past tense steps back from the demand. *Quería pedirte un favor.*\n\n*¿Será que…?* (\"could it be that…?\") before a plain question: *¿Será que me puede ayudar?* The verb after it stays ordinary. Very Colombian.\n\n*Un poquito* shrinks the request: *ayudar un poquito*.\n\n*Me imagino que* turns a claim into a guess, so nobody can say you accused them.",
@@ -161,6 +165,14 @@
         "¿Será que pagamos mañana?"
       ],
       "why": "*¿Será que…?* works with any person; here it is *we*."
+    },
+    {
+      "prompt": "Type in Spanish, politely: I'd like to know if there's a table.",
+      "answer": "Quisiera saber si hay mesa.",
+      "accept": [
+        "Quisiera saber si hay una mesa."
+      ],
+      "why": "*Quisiera* opens the request politely. It stands alone here, with no *que* in front."
     }
   ],
   "pitfalls": [

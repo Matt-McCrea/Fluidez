@@ -123,36 +123,39 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick *estáis* or *están* and type the whole sentence, the Spain way for a group of friends: *¿Cómo ___?*",
-      "answer": "¿Cómo estáis?",
-      "accept": [],
-      "why": "*Estáis* is the *vosotros* form, and the *-áis* ending is the giveaway."
+      "prompt": "Say it the way people say it in Colombia: *Vosotros tenéis razón.*",
+      "answer": "Ustedes tienen razón.",
+      "accept": [
+        "Tienen razón."
+      ],
+      "why": "*Tenéis* is Spain's form. In Colombia the group gets *ustedes*: *tienen*."
     },
     {
-      "prompt": "Pick *tenéis* or *tienen* and type the whole sentence, in the Spain way: *Vosotros ___ razón.* (You all are right.)",
-      "answer": "Vosotros tenéis razón.",
+      "prompt": "Say it the way people say it in Colombia: *¿Habéis comido ya?*",
+      "answer": "¿Ya comieron?",
       "accept": [
-        "Tenéis razón."
+        "¿Ustedes ya comieron?",
+        "¿Comieron ya?",
+        "¿Ya han comido?"
       ],
-      "why": "*Tenéis* is *tener* with the *vosotros* ending."
+      "why": "*Habéis comido* is Spain's form. In Colombia *ya* goes with the simple past: *comieron*."
     },
     {
-      "prompt": "Say it as a friend from Madrid would: Have you all eaten yet?",
-      "answer": "¿Habéis comido ya?",
+      "prompt": "Say it the way people say it in Colombia: *¿Dónde estáis?*",
+      "answer": "¿Dónde están?",
       "accept": [
-        "¿Ya habéis comido?",
-        "¿Vosotros habéis comido ya?"
+        "¿Dónde están ustedes?",
+        "¿Ustedes dónde están?"
       ],
-      "why": "*Habéis* is the *vosotros* form of the helper *haber*."
+      "why": "The ending *-áis* speaks to a group in Spain. In Colombia it's *-n*: *están*."
     },
     {
-      "prompt": "Say it the Spain way: Where are you all?",
-      "answer": "¿Dónde estáis?",
+      "prompt": "Say it the way people say it in Colombia: *Sois de Madrid.*",
+      "answer": "Son de Madrid.",
       "accept": [
-        "¿Dónde estáis vosotros?",
-        "¿Vosotros dónde estáis?"
+        "Ustedes son de Madrid."
       ],
-      "why": "*Estáis* ends in *-áis*, so it speaks to a group of friends."
+      "why": "*Sois* is *son* in Spain."
     },
     {
       "prompt": "Say it the way people say it in Colombia: *¿Cómo estáis?*",
@@ -164,18 +167,18 @@
       "why": "In Colombia the group gets *ustedes* and the *-n* ending."
     },
     {
-      "prompt": "Turn it into Spain's version: *¿Tienen hambre?* (you all)",
-      "answer": "¿Tenéis hambre?",
+      "prompt": "Say it the way people say it in Colombia: *¿Tenéis hambre?*",
+      "answer": "¿Tienen hambre?",
       "accept": [
-        "¿Vosotros tenéis hambre?"
+        "¿Ustedes tienen hambre?"
       ],
-      "why": "*Tenéis* replaces *tienen* when you say *vosotros*."
+      "why": "*Tenéis* becomes *tienen* with *ustedes*."
     },
     {
-      "prompt": "Turn it into a command for a group of friends in Spain: *Vengan mañana.*",
-      "answer": "Venid mañana.",
+      "prompt": "Say it the way people say it in Colombia: *Venid mañana.*",
+      "answer": "Vengan mañana.",
       "accept": [],
-      "why": "The *vosotros* command is the infinitive with the final *r* swapped for *d*."
+      "why": "*Venid* is a command to friends in Spain. In Colombia the group gets *vengan*."
     }
   ],
   "pitfalls": [

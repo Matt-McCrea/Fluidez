@@ -42256,5 +42256,333 @@
     "unit": "u44",
     "theme": "talking it through",
     "source": "gen"
+  },
+  {
+    "id": "u44-1613",
+    "es": "No firmo nada, a menos que Beatriz lo lea primero.",
+    "en": "I won't sign anything unless Beatriz reads it first.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:direct-objects",
+      "g:negation-words",
+      "g:present-ar",
+      "g:subj-conditions",
+      "g:subj-wanting",
+      "l:firmar",
+      "l:leer",
+      "p:si-solo-si-siempre-y-cuando",
+      "p:time-sequence-basic"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1614",
+    "es": "No abrimos el domingo, a menos que haya un pedido grande.",
+    "en": "We won't open on Sunday unless there's a big order.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:subj-conditions",
+      "g:subj-irregulars",
+      "l:abrir",
+      "l:domingo",
+      "l:grande",
+      "l:pedido",
+      "p:days-el-lunes",
+      "p:si-solo-si-siempre-y-cuando"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1615",
+    "es": "Mariana no escribe el artículo, a menos que alguien hable con ella.",
+    "en": "Mariana won't write the article unless someone talks to her.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:con-el-ella",
+      "g:comparatives",
+      "g:gender-articles",
+      "g:present-er-ir",
+      "g:subj-conditions",
+      "g:subj-wanting",
+      "l:artículo",
+      "l:escribir",
+      "l:hablar",
+      "p:indefinites-basic",
+      "p:si-solo-si-siempre-y-cuando"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1616",
+    "es": "¿Vamos en bus?\nSí, a menos que prefieras el taxi.",
+    "en": "Shall we go by bus?\nYes, unless you'd prefer a taxi. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:gender-articles",
+      "g:ir-a-plans",
+      "g:subj-conditions",
+      "g:subj-wanting",
+      "l:bus",
+      "l:ir",
+      "l:preferir",
+      "l:taxi",
+      "p:prefieres-x-o-y",
+      "p:si-solo-si-siempre-y-cuando",
+      "p:transport-en"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1617",
+    "es": "Tomás no vende, a menos que Vale esté de acuerdo.",
+    "en": "Tomás won't sell unless Vale agrees.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:estar-location-states",
+      "g:present-er-ir",
+      "g:subj-conditions",
+      "g:subj-wanting",
+      "l:acuerdo",
+      "l:estar",
+      "l:vender",
+      "p:estar-de-acuerdo-con-en",
+      "p:si-solo-si-siempre-y-cuando"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1618",
+    "es": "El juez no cambia la fecha, a menos que los dos abogados lo pidan.",
+    "en": "The judge won't change the date unless both lawyers ask for it.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:comparatives",
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:subj-conditions",
+      "g:subj-wanting",
+      "l:abogado",
+      "l:cambiar",
+      "l:fecha",
+      "l:juez",
+      "l:pedir",
+      "p:preguntar-pedir",
+      "p:si-solo-si-siempre-y-cuando"
+    ],
+    "targets": [
+      "g:subj-conditions"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1619",
+    "es": "Puedes usar el carro, siempre que lo devuelvas mañana.",
+    "en": "You can use the car as long as you bring it back tomorrow. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:gender-articles",
+      "g:stem-boot",
+      "g:subj-cuando-future",
+      "g:subj-wanting",
+      "g:verb-infinitive",
+      "l:carro",
+      "l:devolver",
+      "l:mañana",
+      "l:poder",
+      "l:siempre",
+      "l:usar",
+      "p:frequency-scale",
+      "p:request-ladder",
+      "p:si-pero-que"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1620",
+    "es": "Te doy la receta, siempre que no se la des a nadie.",
+    "en": "I'll give you the recipe as long as you don't give it to anyone. (to a friend)",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:no-se",
+      "g:gender-articles",
+      "g:yo-irregular",
+      "l:dar",
+      "l:de",
+      "l:receta",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:me-te-nos-objects"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1621",
+    "es": "Simón puede quedarse en el café, siempre que no grite.",
+    "en": "Simón can stay in the café as long as he doesn't shout.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:reflexive-routine",
+      "g:stem-boot",
+      "g:subj-cuando-future",
+      "g:subj-wanting",
+      "g:verb-infinitive",
+      "l:café",
+      "l:gritar",
+      "l:poder",
+      "l:quedarse",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:si-pero-que"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1622",
+    "es": "Firmamos hoy, siempre que el banco nos dé una respuesta.",
+    "en": "We'll sign today as long as the bank gives us an answer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "g:gender-articles",
+      "g:present-ar",
+      "g:subj-cuando-future",
+      "l:banco",
+      "l:dar",
+      "l:firmar",
+      "l:hoy",
+      "l:respuesta",
+      "l:siempre",
+      "p:frequency-scale",
+      "p:me-te-nos-objects",
+      "p:si-pero-que"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1623",
+    "es": "¿Puedo traer a mi hermana?\nClaro, siempre que llegue temprano.",
+    "en": "Can I bring my sister?\nOf course, as long as she arrives early.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:claro-listo",
+      "c:puedo",
+      "g:stem-boot",
+      "g:subj-cuando-future",
+      "g:subj-wanting",
+      "g:verb-infinitive",
+      "l:claro",
+      "l:hermana",
+      "l:llegar",
+      "l:poder",
+      "l:siempre",
+      "l:temprano",
+      "l:traer",
+      "p:frequency-scale",
+      "p:llegar-a-tiempo",
+      "p:llevar-traer",
+      "p:possessives-basic",
+      "p:si-pero-que"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "dialogue",
+    "unit": "u44",
+    "source": "gen"
+  },
+  {
+    "id": "u44-1624",
+    "es": "Los vecinos aceptan, siempre que el precio sea justo.",
+    "en": "The neighbours agree as long as the price is fair.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:gender-articles",
+      "g:present-ar",
+      "g:ser-identity",
+      "g:subj-cuando-future",
+      "g:subj-irregulars",
+      "l:aceptar",
+      "l:justo",
+      "l:precio",
+      "l:ser",
+      "l:siempre",
+      "l:vecino",
+      "p:frequency-scale",
+      "p:si-pero-que"
+    ],
+    "targets": [
+      "g:subj-cuando-future"
+    ],
+    "kind": "statement",
+    "unit": "u44",
+    "source": "gen"
   }
 ]

@@ -28,7 +28,7 @@
   "yourTurn": [
     { "prompt": "Pick *vemos* or *veamos* and type the whole sentence, to a friend: *¿Te parece bien que nos ___ a las ocho?*", "answer": "¿Te parece bien que nos veamos a las ocho?", "accept": [], "why": "You are proposing a plan, so the wish form: *veamos*." },
     { "prompt": "Ask a friend: How was the film?", "answer": "¿Qué tal la película?", "accept": [], "why": "*¿Qué tal...?* plus the thing, with no verb." },
-    { "prompt": "Ask a friend: What did you think of the restaurant?", "answer": "¿Qué te pareció el restaurante?", "accept": [], "why": "It already happened, so the simple past: *pareció*." },
+    { "prompt": "Ask a friend: What did you think of the restaurant?", "answer": "¿Qué te pareció el restaurante?", "accept": ["¿Qué te ha parecido el restaurante?"], "why": "It already happened, so the simple past: *pareció*." },
     { "prompt": "Ask a friend: Is it OK with you if I pay?", "answer": "¿Te parece bien que pague yo?", "accept": ["¿Te parece bien que yo pague?"], "why": "I am the one paying, so *que* and the wish form: *pague*." },
     { "prompt": "Ask a friend: Is it OK with you if we invite Mariana?", "answer": "¿Te parece bien que invitemos a Mariana?", "accept": [], "why": "For *nosotros*, the wish form of *invitar* is *invitemos*." },
     { "prompt": "Ask them formally instead: *¿Te parece bien que vayamos mañana?*", "answer": "¿Le parece bien que vayamos mañana?", "accept": [], "why": "For *usted*, *te* becomes *le*." },
@@ -36,7 +36,6 @@
   ],
   "pitfalls": [
     { "wrong": "¿Te parece bien que nos vemos a las ocho?", "right": "¿Te parece bien que nos veamos a las ocho?", "why": "Almost. After *te parece bien que*, use the wish form: *veamos*." },
-    { "wrong": "¿Qué te ha parecido el restaurante?", "right": "¿Qué te pareció el restaurante?", "why": "Almost. That form is heard in Spain; in Latin America you ask about the past with the simple past: *pareció*." },
     { "wrong": "¿Es bien para ti que nos veamos a las ocho?", "right": "¿Te parece bien que nos veamos a las ocho?", "why": "Almost. *Is it OK with you* isn't built word for word: Spanish asks *¿te parece bien...?*" }
   ],
   "personal": "Propose a real plan to someone with *¿Te parece bien que...?*, then say what you thought of something recent with *Me pareció...*."

@@ -1105,7 +1105,7 @@
   {
     "id": "u07-0047",
     "es": "Hay un baño en el primer piso y otro en el segundo.",
-    "en": "There's a bathroom on the first floor and another on the second.",
+    "en": "There's a bathroom on the ground floor and another on the second.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9245,7 +9245,7 @@
   {
     "id": "u07-0385",
     "es": "Bajo al primer piso para comprar pan.",
-    "en": "I go down to the first floor to buy bread.",
+    "en": "I go down to the ground floor to buy bread.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9334,7 +9334,7 @@
   {
     "id": "u07-0389",
     "es": "Siempre bajo al primer piso para hablar con el portero.",
-    "en": "I always go down to the first floor to talk to the doorman.",
+    "en": "I always go down to the ground floor to talk to the doorman.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9363,7 +9363,7 @@
   {
     "id": "u07-0390",
     "es": "En el primer piso están la panadería y la tienda.",
-    "en": "The bakery and the shop are on the first floor.",
+    "en": "The bakery and the shop are on the ground floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9888,7 +9888,7 @@
   {
     "id": "u07-0412",
     "es": "La cocina está en el primer piso, y los cuartos arriba.",
-    "en": "The kitchen is on the first floor, and the bedrooms upstairs.",
+    "en": "The kitchen is on the ground floor, and the bedrooms upstairs.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -10604,8 +10604,8 @@
   },
   {
     "id": "u07-0442",
-    "es": "Doña Gloria vive en el primer piso, encima de la panadería.",
-    "en": "Doña Gloria lives on the first floor, above the bakery.",
+    "es": "Doña Gloria vive en el segundo piso, encima de la panadería.",
+    "en": "Doña Gloria lives on the second floor, above the bakery.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -19142,7 +19142,7 @@
   {
     "id": "u07-0798",
     "es": "Una mujer de Cali arrienda el cuarto del primer piso.",
-    "en": "A woman from Cali rents the room on the first floor.",
+    "en": "A woman from Cali rents the room on the ground floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -24102,7 +24102,7 @@
   {
     "id": "u07-1003",
     "es": "Hay un portero en el edificio. El portero está en el primer piso.",
-    "en": "There's a doorman in the building. The doorman is on the first floor.",
+    "en": "There's a doorman in the building. The doorman is on the ground floor.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27484,7 +27484,7 @@
   {
     "id": "u07-1147",
     "es": "¿Prefiere el primer piso o el tercero?",
-    "en": "Do you prefer the first floor or the third? (polite)",
+    "en": "Do you prefer the ground floor or the third? (polite)",
     "accept": [],
     "acceptEn": [],
     "requires": [

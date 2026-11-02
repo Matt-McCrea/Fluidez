@@ -3419,17 +3419,17 @@
   "kind": "grammar",
   "band": "B1",
   "priority": 347,
-  "title": "Comparing in numbers and degrees: el doble, más de la mitad, cada vez más, cuanto más…",
-  "es": "Ganamos el doble que el año pasado.",
-  "en": "We earn twice as much as last year.",
+  "title": "Comparing as things change: cada vez más, mientras más, cuanto más…",
+  "es": "Cada vez hay más turistas.",
+  "en": "There are more and more tourists.",
   "forms": [
-   {
-    "es": "Ganamos el doble que el año pasado.",
-    "en": "We earn twice as much as last year."
-   },
    {
     "es": "Cada vez hay más turistas.",
     "en": "There are more and more tourists."
+   },
+   {
+    "es": "Mientras más trabajo, menos duermo.",
+    "en": "The more I work, the less I sleep."
    },
    {
     "es": "Cuanto más trabajo, menos duermo.",

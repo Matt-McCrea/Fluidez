@@ -29,9 +29,21 @@
     {
       "es": "Cierro con llave por si alguien entra.",
       "en": "I lock up in case someone comes in."
+    },
+    {
+      "es": "No vendemos, a menos que Altamira suba su oferta.",
+      "en": "We won't sell unless Altamira raises its offer."
+    },
+    {
+      "es": "No cerramos a no ser que llueva mucho.",
+      "en": "We won't close unless it rains a lot."
+    },
+    {
+      "es": "Te ayudo siempre que me avises antes.",
+      "en": "I'll help you as long as you tell me beforehand. (to a friend)"
     }
   ],
-  "rule": "Some little phrases set a condition:\n*con tal de que*: as long as, provided that\n*en caso de que*: if, in the event that\n*a menos que*: unless\n*siempre que*: as long as\n\nThe verb right after them takes the \"wish\" form: *dejen*, *haya*, *cuides*, *llueva*, *sea*. The thing is only a possibility, not a fact yet. English leaves the verb alone (\"as long as it isn't late\"), but Spanish marks it.\n\nCompare plain *si*: *Firmo si me dan una copia* keeps the ordinary verb. With these four phrases, use the wish form, and never *-ría*.\n\nEnglish *in case* hides two ideas. If you act only when the thing happens, use *en caso de que*: *En caso de que llueva, la reunión es adentro.* If you act now, just to be safe, use *por si* with the ordinary verb: *Llévate una chaqueta por si hace frío.* Test: would you do it anyway? Then it is *por si*.",
+  "rule": "Some little phrases set a condition:\n*con tal de que*: as long as, provided that\n*en caso de que*: if, in the event that\n*a menos que*, *a no ser que*: unless\n*siempre que*: as long as\n\nThe verb right after them takes the \"wish\" form: *dejen*, *haya*, *cuides*, *llueva*, *sea*. The thing is only a possibility, not a fact yet. English leaves the verb alone (\"as long as it isn't late\"), but Spanish marks it.\n\nCompare plain *si*: *Firmo si me dan una copia* keeps the ordinary verb. With these phrases, use the wish form, and never *-ría*.\n\nEnglish *in case* hides two ideas. If you act only when the thing happens, use *en caso de que*: *En caso de que llueva, la reunión es adentro.* If you act now, just to be safe, use *por si* with the ordinary verb: *Llévate una chaqueta por si hace frío.* Test: would you do it anyway? Then it is *por si*.",
   "smallPrint": "Teachers call these connectors conditional conjunctions. As conditions they take the subjunctive. *Siempre que* can also mean whenever, for a habit, and then it keeps the ordinary verb, as you already know: *Siempre que llueve, vendemos más tinto.*",
   "readAndPick": [
     {
@@ -104,6 +116,24 @@
         "You all can stay in case you don't make noise."
       ],
       "answer": 1
+    },
+    {
+      "es": "No publico nada, a menos que haya pruebas.",
+      "options": [
+        "I won't publish anything unless there's proof.",
+        "I'll publish everything as long as there's proof.",
+        "I didn't publish anything because there was proof."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "Te ayudo siempre que me avises antes.",
+      "options": [
+        "I always help you and tell you beforehand.",
+        "I'll help you as long as you tell me beforehand.",
+        "I helped you because you told me beforehand."
+      ],
+      "answer": 1
     }
   ],
   "yourTurn": [
@@ -158,6 +188,24 @@
         "Pueden quedarse con tal de que no hagan ruido."
       ],
       "why": "Switch to *ustedes*: *pueden* and the wish form *hagan*."
+    },
+    {
+      "prompt": "Type in Spanish, with *a menos que*: We won't sell unless Altamira raises its offer.",
+      "answer": "No vendemos, a menos que Altamira suba su oferta.",
+      "accept": [
+        "No vendemos a menos que Altamira suba su oferta.",
+        "No vendemos, a no ser que Altamira suba su oferta.",
+        "No vendemos a no ser que Altamira suba su oferta."
+      ],
+      "why": "The offer is only a possibility, so the wish form: *suba*."
+    },
+    {
+      "prompt": "Type in Spanish, to a friend, with *siempre que*: I'll help you as long as you tell me beforehand.",
+      "answer": "Te ayudo siempre que me avises antes.",
+      "accept": [
+        "Siempre que me avises antes, te ayudo."
+      ],
+      "why": "As a condition, *siempre que* takes the wish form: *avises*."
     }
   ],
   "pitfalls": [

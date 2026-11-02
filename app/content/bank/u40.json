@@ -1676,7 +1676,7 @@
   {
     "id": "u40-0062",
     "es": "Si la habitación estuviera en el primer piso, no necesitaríamos el ascensor.",
-    "en": "If the room were on the first floor, we wouldn't need the elevator.",
+    "en": "If the room were on the ground floor, we wouldn't need the elevator.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8126,8 +8126,8 @@
   },
   {
     "id": "u40-0303",
-    "es": "Tranquilo, haz como si no hubiera pasado nada.",
-    "en": "Relax, act as if nothing had happened. (to a friend)",
+    "es": "Tranquilo, haz como si no pasara nada.",
+    "en": "Relax, act as if nothing were happening. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -8137,7 +8137,7 @@
       "g:imperfect-subj",
       "g:negation-words",
       "l:hacer",
-      "l:pasado",
+      "l:pasar",
       "l:tranquilo"
     ],
     "targets": [

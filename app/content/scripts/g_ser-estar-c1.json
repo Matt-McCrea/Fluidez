@@ -29,9 +29,17 @@
     {
       "es": "La cuenta está por pagar.",
       "en": "The bill is still to be paid."
+    },
+    {
+      "es": "Era de esperar.",
+      "en": "That was to be expected."
+    },
+    {
+      "es": "El problema está en que no hay plata.",
+      "en": "The problem is that there's no money."
     }
   ],
-  "rule": "You know *ser* for what something is and *estar* for how or where. Four small frames sharpen them:\n\n*estar de* + job: working as something for now. *Está de mesero* means he's waiting tables at the moment. *Es mesero* means that is his profession.\n\n*ser de* + material: what it is made of. *El anillo es de oro.*\n\n*estar por* + verb: about to happen, or still to be done. *Está por llover. Eso está por verse.*\n\n*estar para* + noun: in the mood for it. *No estoy para bromas.*",
+  "rule": "You know the test: *es* compares with others, and *está* compares a thing with itself. It reaches further than it seems. *Está flaco* means thinner than he was. *Estás muy joven para pensar en eso* means younger than the thought deserves. Six small frames sharpen the pair:\n\n*estar de* + job: working as something for now. *Está de mesero* means he's waiting tables at the moment. *Es mesero* means that is his profession.\n\n*ser de* + material: what it is made of. *El anillo es de oro.*\n\n*estar por* + verb: about to happen, or still to be done. *Está por llover. Eso está por verse.*\n\n*estar para* + noun: in the mood for it. *No estoy para bromas.*\n\n*ser de* + verb: what you would expect, or what deserves it. *Era de esperar. Es de agradecer.*\n\n*estar en*: where the point lies. *El problema está en que no hay plata.*",
   "smallPrint": "Teachers call *estar de* a temporary role. *Estar por* + infinitive is the Latin American way to say \"about to\"; Spain often says *estar para* or *estar a punto de*.",
   "readAndPick": [
     {
@@ -105,6 +113,24 @@
         "My brother is teaching in Medellín for now."
       ],
       "answer": 2
+    },
+    {
+      "es": "Era de esperar.",
+      "options": [
+        "That was to be expected.",
+        "We had to wait.",
+        "It was about to happen."
+      ],
+      "answer": 0
+    },
+    {
+      "es": "El problema está en que no hay plata.",
+      "options": [
+        "The money is in the problem.",
+        "The problem is that there's no money.",
+        "There's no problem with the money."
+      ],
+      "answer": 1
     }
   ],
   "yourTurn": [
@@ -156,6 +182,22 @@
       "answer": "La mesa no es de madera.",
       "accept": [],
       "why": "*No* goes right before the verb."
+    },
+    {
+      "prompt": "Type in Spanish: That was to be expected.",
+      "answer": "Era de esperar.",
+      "accept": [
+        "Eso era de esperar."
+      ],
+      "why": "*Ser de* + a verb says what you would expect."
+    },
+    {
+      "prompt": "Type in Spanish: The problem is that nobody read the contract.",
+      "answer": "El problema está en que nadie leyó el contrato.",
+      "accept": [
+        "El problema es que nadie leyó el contrato."
+      ],
+      "why": "*Está en que* points at where the problem lies. *Es que* works too."
     }
   ],
   "pitfalls": [

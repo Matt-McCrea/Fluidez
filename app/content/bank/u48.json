@@ -18945,7 +18945,7 @@
   {
     "id": "u48-0717",
     "es": "A diferencia del primer piso, el segundo está en muy buen estado.",
-    "en": "Unlike the first floor, the second is in very good condition.",
+    "en": "Unlike the ground floor, the second is in very good condition.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -21636,7 +21636,7 @@
   {
     "id": "u48-0829",
     "es": "Las del primer piso son de adobe.",
-    "en": "The ones on the first floor are adobe.",
+    "en": "The ones on the ground floor are adobe.",
     "accept": [],
     "acceptEn": [],
     "requires": [

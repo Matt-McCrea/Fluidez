@@ -702,5 +702,142 @@
     "unit": "u58",
     "theme": "ser y estar en los bordes",
     "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0031",
+    "es": "Era de esperar que Altamira subiera la oferta.",
+    "en": "It was to be expected that Altamira would raise its offer.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:era",
+      "g:gender-articles",
+      "g:imperfect-states",
+      "g:imperfect-subj",
+      "g:ser-identity",
+      "g:subj-past-triggers",
+      "g:that-clauses",
+      "l:esperar",
+      "l:oferta",
+      "l:ser",
+      "l:subir"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0032",
+    "es": "Es de agradecer que todos hayan venido.",
+    "en": "We should be grateful that everyone came.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:ser-identity",
+      "g:subj-emotion",
+      "g:subj-perfect",
+      "g:that-clauses",
+      "l:agradecer",
+      "l:ser",
+      "l:venir"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0033",
+    "es": "No es de extrañar que Vale esté cansada.",
+    "en": "It's no surprise that Vale is tired.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:estar-location-states",
+      "g:ser-identity",
+      "g:subj-emotion",
+      "g:subj-wanting",
+      "g:that-clauses",
+      "l:cansado",
+      "l:estar",
+      "l:extrañar",
+      "l:ser"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0034",
+    "es": "El problema está en que nadie leyó el contrato.",
+    "en": "The problem is that nobody read the contract.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "g:preterite-spelling-stem",
+      "g:that-clauses",
+      "l:contrato",
+      "l:estar",
+      "l:leer",
+      "l:problema"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0035",
+    "es": "La diferencia está en el precio.",
+    "en": "The difference lies in the price.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:diferencia",
+      "l:estar",
+      "l:precio"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
+  },
+  {
+    "id": "u58-t-ser-estar-c1-0036",
+    "es": "La clave está en hablar con los vecinos.",
+    "en": "The key is to talk to the neighbours.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:estar-location-states",
+      "g:gender-articles",
+      "l:clave",
+      "l:estar",
+      "l:hablar",
+      "l:vecino"
+    ],
+    "targets": [
+      "g:ser-estar-c1"
+    ],
+    "kind": "statement",
+    "unit": "u58",
+    "source": "gen"
   }
 ]

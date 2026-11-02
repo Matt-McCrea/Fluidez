@@ -151,8 +151,10 @@
     {
       "prompt": "Say it: \"I don't doubt that Vale is happy, but my experience was different.\" (Vale is a woman.)",
       "answer": "No dudo que Vale esté contenta, pero mi experiencia fue otra.",
-      "accept": [],
-      "why": "*No dudo que* is the formal nod, and *esté* is the \"maybe\" form."
+      "accept": [
+        "No dudo que Vale está contenta, pero mi experiencia fue otra."
+      ],
+      "why": "Both work. *Esté* grants the point, and *está* says you really are sure."
     }
   ],
   "pitfalls": [

@@ -122,10 +122,12 @@
   ],
   "yourTurn": [
     {
-      "prompt": "Pick *he ido* or *fui* and type the whole sentence, the way Lucía says it: *Esta mañana ___ al médico.*",
-      "answer": "Esta mañana he ido al médico.",
-      "accept": [],
-      "why": "Lucía's morning is still today, so Spain uses *he* + the participle *ido*."
+      "prompt": "Pick *he ido* or *fui* and type the whole sentence, the way it's said in Colombia: *Esta mañana ___ al médico.*",
+      "answer": "Esta mañana fui al médico.",
+      "accept": [
+        "Fui al médico esta mañana."
+      ],
+      "why": "In Colombia a finished event stays in the simple past, even this morning."
     },
     {
       "prompt": "Pick *hemos abierto* or *abrimos* and type the whole sentence, the way it's said in Colombia: *Hoy ___ tarde.*",
@@ -136,20 +138,23 @@
       "why": "In Colombia a finished event stays in the simple past, even for today."
     },
     {
-      "prompt": "Say it like Lucía: I had breakfast at home today.",
-      "answer": "Hoy he desayunado en casa.",
+      "prompt": "Say it the Colombian way: *Hoy he desayunado en casa.*",
+      "answer": "Hoy desayuné en casa.",
       "accept": [
-        "He desayunado en casa hoy."
+        "Desayuné en casa hoy."
       ],
-      "why": "*Hoy* is still going, so Spain says *he desayunado*."
+      "why": "Colombia swaps *he desayunado* for the simple past *desayuné*."
     },
     {
-      "prompt": "Say it like Lucía, to a friend: Have you eaten today?",
-      "answer": "¿Has comido hoy?",
+      "prompt": "Say it the Colombian way, to a friend: *¿Has comido hoy?*",
+      "answer": "¿Ya comiste?",
       "accept": [
-        "¿Hoy has comido?"
+        "¿Comiste hoy?",
+        "¿Hoy comiste?",
+        "¿Ya comiste hoy?",
+        "¿Has comido hoy?"
       ],
-      "why": "*Has* is the helper for *tú*, and the participle *comido* never changes."
+      "why": "Colombia keeps *has comido* for not yet, but *¿Ya comiste?* is what you'll hear most."
     },
     {
       "prompt": "Say it the Colombian way: *Hoy he llegado temprano.*",
@@ -160,12 +165,12 @@
       "why": "Colombia swaps *he llegado* for the simple past *llegué*."
     },
     {
-      "prompt": "Say it the Spain way: *Hoy hablé con Vale.*",
-      "answer": "Hoy he hablado con Vale.",
+      "prompt": "Say it the Colombian way: *Hoy he hablado con Vale.*",
+      "answer": "Hoy hablé con Vale.",
       "accept": [
-        "He hablado con Vale hoy."
+        "Hablé con Vale hoy."
       ],
-      "why": "Spain uses *he* + participle for today: *he hablado*."
+      "why": "In Colombia it's the simple past: *hablé*."
     },
     {
       "prompt": "Make it negative: *Hoy he tomado café.*",
