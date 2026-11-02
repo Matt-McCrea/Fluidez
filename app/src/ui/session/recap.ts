@@ -58,7 +58,7 @@ export function planRecap(i: RecapInput): RecapItem[] {
     if (out.length >= i.capacity) break;
     if (seen.has(l.node) || !i.learner.hasCard(l.node, l.direction)) continue;
     seen.add(l.node);
-    const contrast = i.bundle.node(l.node)?.kind === 'contrast' ? otherContrast(i, l.node, l.contrast) : undefined;
+    const contrast = i.bundle.index.contrasts.has(l.node) ? otherContrast(i, l.node, l.contrast) : undefined;
     out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...(contrast ? { contrast } : otherSentence(i, l.node, l.direction, l.sentence)), credit: [l.node] });
   }
   // a practice item missed today: its target again, in a sentence not seen (none left: not in the one it has just been shown the answer to)

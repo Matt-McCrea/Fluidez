@@ -236,7 +236,22 @@ describe('F2: a due contrast is reviewed with its script, a different item each 
   test('every other rule still holds on a walk where contrasts come due', () => {
     let reviews = 0, own = 0;
     for (const seed of SEEDS.slice(0, 3)) {
-      const { plans } = walk({ seed, profile: PROFILES.average, days: 150, check: (s) => { for (const c of ALL_CHECKS) c(s); } });
+      const { plans } = walk({
+        seed, profile: PROFILES.average, days: 150,
+        check: (s) => {
+          for (const c of ALL_CHECKS) c(s);
+          // the gating property: whatever contrast item a review names, everything its sentence needs is known to the learner who is shown it
+          const w = s.plan.blocks[0];
+          if (w.kind !== 'warmup') return;
+          const known = new Set([...s.known, ...Object.values(s.plan.newNodes).flat()]);
+          for (const it of w.items) {
+            if (!it.contrast) continue;
+            const ref = s.input.content.contrasts.get(it.node)?.find((r) => r.id === it.contrast);
+            expect(ref, `${it.contrast} is the contrast's own`).toBeDefined();
+            expect(ref!.requires.filter((r) => !known.has(r)), `${it.contrast} needs what is not known`).toEqual([]);
+          }
+        },
+      });
       for (const { plan } of plans) {
         const w = plan.blocks[0];
         if (w.kind !== 'warmup') continue;

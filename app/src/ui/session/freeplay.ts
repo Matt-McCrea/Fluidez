@@ -4,7 +4,8 @@
 //   quickReview  a real FSRS review (op 'quick'), most at-risk cards first
 //   conjugate    exposure only (op 'grind'), never a scheduled review
 //   translate    exposure only (op 'grind')
-//   nodes        exposure (op 'train') plus the output ladder step
+//   nodes        exposure (op 'train') plus the output ladder step; a contrast has no sentence of
+//                its own, so it is trained on its own items (content/contrasts), never on a bank sentence
 import { admissible, knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
 import type { ContrastItem, NodeId } from '../../content/schema';
 import { checkExact } from '../../check';

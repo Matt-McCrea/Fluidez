@@ -327,7 +327,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const left = Math.max(0, ctx.cap - elapsedMin());
     const capacity = Math.min(b.capacity, Math.floor((left * 60) / spc));
     const newItems = ctx.plan.blocks.flatMap((x) => (x.kind === 'learn' ? x.items : [])).filter((it: LearnItem) => ctx.presented.has(it.node));
-    b.items = capacity > 0 ? planRecap({ learner: L, bundle: { index: content } as unknown as Bundle, capacity, lapses: ctx.lapses, retests: ctx.retests, newItems, steps: ctx.steps }) : [];
+    b.items = capacity > 0 ? planRecap({ learner: L, bundle: { index: content, course } as unknown as Bundle, capacity, lapses: ctx.lapses, retests: ctx.retests, newItems, steps: ctx.steps }) : [];
     if (!b.items.length) { ctx.skipped.add(b); run.recap.skipped++; return 0; }
     run.recap.blocks++;
     markRefs(b);

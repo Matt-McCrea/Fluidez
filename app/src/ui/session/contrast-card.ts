@@ -4,7 +4,7 @@
 // Earlier text (discourse) is typed from the English, and so is a near-synonym (synonym), which is phrase
 // retrieval and never a deck of two buttons. None of them runs against a clock. Both card kinds are the ones the
 // rest of the session already has: a multiple choice card and a typed one.
-import { admissible } from '../../compiler';
+import { admissible, type ContrastRef } from '../../compiler';
 import type { ContrastItem, ContrastDecides, NodeId } from '../../content/schema';
 import type { Bundle } from '../data/bundle';
 import { checkExact } from '../../check';
@@ -81,6 +81,6 @@ export function contrastCard(it: ContrastItem, decides: ContrastDecides, o: { ke
 export const contrastCredit = (it: Pick<ContrastItem, 'node' | 'side'>): NodeId[] => (it.side === it.node ? [it.node] : [it.node, it.side]);
 
 /** The items of a contrast the learner can be shown: everything the sentence needs is known (`known` is the compiler's own idea of it, see knownSet). */
-export function eligibleContrast(b: Bundle, node: NodeId, known: ReadonlySet<NodeId>): ContrastItem[] {
-  return b.contrastItems(node).filter((it) => admissible(it.requires, (r) => known.has(r), b.course.nodes));
+export function eligibleContrast(b: Pick<Bundle, 'index' | 'course'>, node: NodeId, known: ReadonlySet<NodeId>): ContrastRef[] {
+  return (b.index.contrasts.get(node) ?? []).filter((it) => admissible(it.requires, (r) => known.has(r), b.course.nodes));
 }
