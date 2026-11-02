@@ -266,8 +266,8 @@ describe('F2: no due card in the real course is left to be shown and never grade
       for (const n of batch) {
         const it = w.items.find((x) => x.targets?.includes(n.id));
         if (!it) { bare.push(`${n.id} not served`); continue; }
-        if (it.script) scripted++;
-        if (!it.sentence && !it.script) bare.push(n.id);
+        if (it.script || it.contrast) scripted++;
+        if (!it.sentence && !it.script && !it.contrast) bare.push(n.id);
       }
     }
     expect(bare).toEqual([]);

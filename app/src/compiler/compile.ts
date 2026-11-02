@@ -202,6 +202,8 @@ interface ReviewGroup {
   reused: boolean;
   /** a contrast's own script item, when there is no sentence (see ReviewItem.script) */
   script?: ReviewItem['script'];
+  /** a contrast's own item, when it has any (see ReviewItem.contrast) */
+  contrast?: string;
 }
 
 interface Decision {
@@ -230,6 +232,8 @@ class Compiler {
   private readonly sessionNew = new Set<NodeId>();
   private readonly receptiveOnly: NodeId[] = [];
   private readonly usedSentences = new Set<string>();
+  /** the contrast items this session's reviews have asked, so a contrast due twice is not asked the same way twice */
+  private readonly usedContrast = new Set<string>();
   private readonly diags: Diagnostic[] = [];
   private readonly blocks: Block[] = [];
   private readonly newNodes: SessionPlan['newNodes'] = { grammar: [], patterns: [], chunks: [], lexemes: [], contrasts: [] };
@@ -518,6 +522,9 @@ class Compiler {
         novel: !g.reused, ...(g.reused ? { reused: true } : {}), scoring: 'review', credit: creditOf(node, s),
       };
     }
+    if (g.contrast) {
+      return { op: 'review', id: `rv:${g.contrast}:${g.direction}`, node, targets: [node], direction: g.direction, contrast: g.contrast, novel: false, scoring: 'review', credit: [node] };
+    }
     if (g.script) {
       const { op, index } = g.script;
       return { op: 'review', id: `rv:${node}:${g.direction}:${op === 'readAndPick' ? 'rp' : 'yt'}${index}`, node, targets: [node], direction: g.direction, script: g.script, novel: false, scoring: 'review', credit: [node] };
@@ -630,12 +637,30 @@ class Compiler {
           if (extras.length >= MULTI_REVIEW_MAX - 1 && fresh === 1) break outer;
         }
       }
-      if (!best) { groups.push({ direction: card.direction, targets: [card.node], reused: false, script: this.scriptReview(card.node, card.direction) }); continue; }
+      if (!best) {
+        const contrast = this.contrastReview(card.node);
+        groups.push({ direction: card.direction, targets: [card.node], reused: false, ...(contrast ? { contrast } : { script: this.scriptReview(card.node, card.direction) }) });
+        continue;
+      }
       reserved.add(best.s.id);
       for (const x of best.extras) pool.delete(x);
       groups.push({ direction: card.direction, targets: [card.node, ...best.extras], sentence: best.s, reused: best.reused });
     }
     return groups;
+  }
+
+  /**
+   * The contrast item a due contrast is reviewed with, when the contrast has items the learner can be shown (everything the
+   * item's sentence needs is known): the session number moves it on, so two sessions in a row never ask the same one, and a
+   * contrast due twice in a session is not asked the same way twice.
+   */
+  private contrastReview(node: NodeId): string | undefined {
+    const pool = (this.content.contrasts.get(node) ?? []).filter((r) => this.gated(r.requires));
+    if (!pool.length) return undefined;
+    const start = (hash32(node) + this.sessionIndex) % pool.length;
+    const pick = pool.map((_, k) => pool[(start + k) % pool.length]).find((r) => !this.usedContrast.has(r.id)) ?? pool[start];
+    this.usedContrast.add(pick.id);
+    return pick.id;
   }
 
   /**

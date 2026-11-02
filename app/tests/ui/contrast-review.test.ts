@@ -11,9 +11,9 @@ let b: Bundle;
 beforeAll(async () => { b = await new ContentLoader().load({ band: 'A1', lookahead: false }); }, 60_000);
 
 const contrasts = () => [...b.course.nodes.values()].filter((n) => n.kind === 'contrast');
-const review = (node: string, direction: 'receptive' | 'productive', script?: ReviewItem['script']): ReviewItem => ({
-  op: 'review', id: `rv:${node}:${direction}:${script ? `${script.op}${script.index}` : 'bare'}`, node, targets: [node], direction,
-  ...(script ? { script } : {}), novel: false, scoring: 'review', credit: [node],
+const review = (node: string, direction: 'receptive' | 'productive', script?: ReviewItem['script'], contrast?: string): ReviewItem => ({
+  op: 'review', id: `rv:${contrast ?? node}:${direction}:${script ? `${script.op}${script.index}` : 'bare'}`, node, targets: [node], direction,
+  ...(script ? { script } : {}), ...(contrast ? { contrast } : {}), novel: false, scoring: 'review', credit: [node],
 });
 
 describe('the review of a contrast, and of a node with nothing to ask', () => {
@@ -50,5 +50,55 @@ describe('the review of a contrast, and of a node with nothing to ask', () => {
     const typed = reviewCard(review(n.id, 'productive', { op: 'yourTurn', index: 1 }), b);
     expect(typed.type).toBe('type');
     expect(typed.key).toContain(n.id);
+  });
+});
+
+describe('the review of a contrast with items of its own (F3)', () => {
+  const some = (node: string) => b.contrastItems(node);
+
+  it('asks the item the plan names, as a choice for recognition and a typed gap for production', () => {
+    const it = some('x:lo-le')[1];
+    const pick = reviewCard(review('x:lo-le', 'receptive', undefined, it.id), b);
+    expect(pick.type).toBe('mcq');
+    expect(pick.prompt?.text).toBe(`${it.es.slice(0, it.gap[0])}___${it.es.slice(it.gap[1])}`);
+    const typed = reviewCard(review('x:lo-le', 'productive', undefined, it.id), b);
+    expect(typed.type).toBe('type');
+    expect(typed.key).toContain(it.id);
+    if (typed.type === 'type') expect(typed.check(it.es.slice(...it.gap)).pass).toBe(true);
+  });
+
+  it('asks aspect typed from the English, whichever card is due', () => {
+    const it = some('x:pret-imp')[0];
+    for (const direction of ['receptive', 'productive'] as const) {
+      const c = reviewCard(review('x:pret-imp', direction, undefined, it.id), b);
+      expect(c.type).toBe('type');
+      expect(c.prompt?.text).toBe(it.en);
+    }
+  });
+
+  it('asks an item of its own where the plan names none (the recap, free practice), never a script item then', () => {
+    const ids = new Set(some('x:por-para').map((i) => i.id));
+    const c = reviewCard(review('x:por-para', 'receptive'), b);
+    expect(c.type).toBe('mcq');
+    expect(ids.size).toBeGreaterThan(10);
+    // por and para is decided by what is meant: the English is the question, and the sentences are the answers
+    expect(some('x:por-para').map((i) => i.en)).toContain(c.prompt?.text);
+  });
+
+  it('a plan that named a script item stands, and an item the bundle does not have falls back to the script', () => {
+    const named = reviewCard(review('x:por-para', 'receptive', { op: 'readAndPick', index: 2 }), b);
+    expect((named as { prompt: { text: string } }).prompt.text).toBe(b.scripts.get('x:por-para')!.readAndPick[2].es);
+    const gone = reviewCard(review('x:por-para', 'receptive', { op: 'readAndPick', index: 2 }, 'x:por-para#nobody-wrote-this'), b);
+    expect(gone.type).not.toBe('read');
+    expect((gone as { prompt: { text: string } }).prompt.text).toBe(b.scripts.get('x:por-para')!.readAndPick[2].es);
+  });
+
+  it('is never a read card, for any contrast with items, either way round', () => {
+    for (const n of contrasts()) {
+      for (const direction of ['receptive', 'productive'] as const) {
+        for (const it of some(n.id)) expect(reviewCard(review(n.id, direction, undefined, it.id), b).type, it.id).not.toBe('read');
+        expect(reviewCard(review(n.id, direction), b).type, `${n.id} ${direction} bare`).not.toBe('read');
+      }
+    }
   });
 });

@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { expect } from 'vitest';
-import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, type NodeId } from '../../src/content/schema';
+import { BankSentence, ContrastFile, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, type NodeId } from '../../src/content/schema';
 import {
   buildContentIndex, buildCourse, contrastSides, kindOf, servedRefs, budget, reviewTargets, unmetRequires,
   type CompileInput, type ContentIndex, type Course, type SessionPlan,
@@ -43,8 +43,22 @@ export function realCourse(through: number): { course: Course; content: ContentI
     scenes: files('scenes', (f) => mine.has(f.slice(3, 6))).map((c) => Scene.parse(c)),
     writing: files('writing', ofUnit).flat().map((w) => WritingTask.parse(w)),
     scripts: files('scripts', () => true).map((x) => TeachingScript.parse(x)),
+    contrasts: files('contrasts', () => true).map((x) => ContrastFile.parse(x)),
   }, course);
   return { course, content, bank };
+}
+
+/** The shipped graph, units, scripts and contrasts' items, with no bank: what a contrast's review needs, and a good deal lighter than the course. */
+export function lightCourse(): { course: Course; content: ContentIndex } {
+  const nodes = ['grammar', 'patterns', 'chunks', 'contrasts', 'candos', 'lexemes'].flatMap((f) => (json(`graph/${f}.json`) as unknown[]).map((n) => GraphNode.parse(n)));
+  const units = files('units', (f) => /^u\d\d\.json$/.test(f)).map((u) => Unit.parse(u));
+  const course = buildCourse(units, nodes);
+  const content = buildContentIndex({
+    sentences: [], chapters: [], scenes: [], writing: [],
+    scripts: files('scripts', (f) => f.startsWith('x_')).map((x) => TeachingScript.parse(x)),
+    contrasts: files('contrasts', () => true).map((x) => ContrastFile.parse(x)),
+  }, course);
+  return { course, content };
 }
 
 export interface Seen { plan: SessionPlan; input: CompileInput; known: Set<NodeId> }
