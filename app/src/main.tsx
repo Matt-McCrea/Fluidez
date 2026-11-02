@@ -1,6 +1,7 @@
 import { render } from 'preact';
 import { registerSW } from 'virtual:pwa-register';
 import './styles/app.css';
+import './styles/games.css';
 import { App } from './ui/app';
 
 // Offline: the service worker installs the shell, the graph, the units, the

@@ -418,6 +418,22 @@ function nodeMeaningChoice(key: string, node: NodeId, b: Bundle, seg: Segment): 
   return wrong.length >= 2 ? mcq(key, MEANS, es(seg.es), en(seg.en), wrong.map(en), why) : typeMeaning(key, seg.es, seg.en, [], why);
 }
 
+/**
+ * A word as a choice of four, for a game that times it: its Spanish for the English (`side` 'es'), or its English for the
+ * Spanish ('en'). The three wrong options are the node's near neighbours, the ones every other choice card uses. Undefined
+ * where the course has too few of them: a tap among two would be a coin, and a timed game does not deal coins.
+ */
+export function wordChoice(b: Bundle, node: NodeId, key: string, side: 'es' | 'en'): McqCard | undefined {
+  const seg = b.segments(node)[0];
+  if (!seg) return undefined;
+  const wrong = side === 'es' ? otherNodeSpanish(b, node, seg, key, 3) : otherNodeEnglish(b, node, seg, key, 3);
+  if (wrong.length < 3) return undefined;
+  const why = `${seg.es} means "${seg.en}".`;
+  return side === 'es'
+    ? mcq(key, 'Which one says this?', en(seg.en), es(seg.es), wrong.map(es), why)
+    : mcq(key, MEANS, es(seg.es), en(seg.en), wrong.map(en), why);
+}
+
 const words = (t: string) => deaccent(t.toLowerCase()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 
 /** A sentence with the stop it needs before another sentence follows it: "…del todo." stays, "No es de Cartagena" gets one. */

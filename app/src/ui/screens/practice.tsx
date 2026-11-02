@@ -10,12 +10,20 @@ import { useApp } from '../context';
 import type { Card } from '../session/cards';
 import { bestKey, DEFAULT_MINUTES, Freeplay, taughtTenses, tenseName, verbsMet } from '../session/freeplay';
 import type { PracticeSpec } from '../session/practice-spec';
+import { Board } from '../games/Board';
+import { Play, type GameChoice } from '../games/Play';
 
 const clock = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, s) % 60).padStart(2, '0')}`;
 
 export function Practice({ spec, onDone }: { spec?: PracticeSpec; onDone: () => void }) {
   const [chosen, setChosen] = useState<PracticeSpec | undefined>(spec);
-  if (!chosen) return <Pickers onPick={setChosen} onDone={onDone} />;
+  const [playing, setPlaying] = useState<GameChoice>();
+  // a game can end by sending the learner to a drill of what slipped: the drill is a run like any other
+  // a game can end by sending the learner to a drill of what slipped: the drill is a run like any other
+  const leave = () => setPlaying(undefined);
+  const drill = (s: PracticeSpec) => { setPlaying(undefined); setChosen(s); };
+  if (playing) return <Play choice={playing} onExit={leave} onPractise={drill} key="play" />;
+  if (!chosen) return <Pickers onPick={setChosen} onPlay={setPlaying} onDone={onDone} />;
   return <Ready key={`${chosen.kind}:${chosen.title ?? ''}`} spec={chosen} onSwitch={setChosen} onDone={spec ? onDone : () => setChosen(undefined)} onExit={onDone} />;
 }
 
@@ -45,7 +53,7 @@ function Ready({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone:
 
 // ---------------------------------------------------------------- pickers
 
-function Pickers({ onPick, onDone }: { onPick: (s: PracticeSpec) => void; onDone: () => void }) {
+function Pickers({ onPick, onPlay, onDone }: { onPick: (s: PracticeSpec) => void; onPlay: (c: GameChoice) => void; onDone: () => void }) {
   const { learner, bundle, now } = useApp();
   const verbs = useMemo(() => verbsMet(learner), []);
   const tenses = useMemo(() => taughtTenses(learner), []);
@@ -70,6 +78,9 @@ function Pickers({ onPick, onDone }: { onPick: (s: PracticeSpec) => void; onDone
     <main class="screen" id="main">
       <button class="btn link" onClick={onDone}>Back</button>
       <Heading title="More practice" lead="Pick something. None of it changes today's plan." />
+
+      {/* keyed on a word: the copy scanner reads a tag closed straight after a brace as a regex */}
+      <Board onPlay={onPlay} key="games" />
 
       <section class="card" aria-labelledby="pq-title">
         <p class="ask" id="pq-title">Quick review</p>

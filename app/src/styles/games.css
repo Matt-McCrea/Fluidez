@@ -1,0 +1,45 @@
+/* The games: a shelf on the practice screen, and the screens of a round. They borrow the app's colours and controls;
+   what they add is a score at the top, a prompt big enough to read at a glance, and a short flash on a right answer. */
+
+/* the shelf */
+.games .tile { padding: 12px 0; border-top: 1px solid var(--line); }
+.games .tile:first-of-type { border-top: 0; padding-top: 4px; }
+.games .tile-name { font-weight: 700; margin: 0 0 4px; }
+.games .tile p { margin: 4px 0; }
+.games .decks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.games .deck { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; }
+.games .deck .best { font-size: .8rem; font-weight: 400; color: var(--muted); }
+
+/* a round */
+.game-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 4px 0 8px; }
+.game-score { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.game-score small { font-size: .85rem; font-weight: 400; color: var(--muted); margin-left: 4px; }
+.game-top .timer { position: static; margin: 0; font-size: 1.1rem; }
+.game-top .timer.low { background: var(--miss-soft); color: var(--miss); }
+.game-card { padding: 16px; }
+.game-card .prompt { font-size: 1.5rem; line-height: 1.3; margin: 4px 0; overflow-wrap: anywhere; }
+.game-card .sub { margin: 2px 0 8px; }
+.game-card .feedback { min-height: 5.5em; }
+.game-card .options { margin: 8px 0; }
+.game-actions { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
+.game-actions .btn.primary { flex: 1 1 auto; }
+
+/* a right answer is a short flash on the score, and a wrong one a short shake of the card. Two names for each, taken
+   in turn, so the next one starts again without the card (and the keyboard's input in it) being taken off the page */
+@keyframes game-hit-0 { 0% { transform: scale(1); } 40% { transform: scale(1.18); color: var(--ok); } 100% { transform: scale(1); } }
+@keyframes game-hit-1 { 0% { transform: scale(1); } 40% { transform: scale(1.18); color: var(--ok); } 100% { transform: scale(1); } }
+@keyframes game-miss-0 { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+@keyframes game-miss-1 { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+.game-score.hit-0 { animation: game-hit-0 .28s ease-out; }
+.game-score.hit-1 { animation: game-hit-1 .28s ease-out; }
+.game-card.shake-0 { animation: game-miss-0 .24s ease-out; }
+.game-card.shake-1 { animation: game-miss-1 .24s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .game-score.hit-0, .game-score.hit-1, .game-card.shake-0, .game-card.shake-1 { animation: none; }
+}
+
+/* the end of a round */
+.over .big-number { margin: 4px 0; }
+.over .line { margin: 6px 0; }
+.over .slips { list-style: none; padding: 0; margin: 8px 0; }
+.over .slips li { margin: 4px 0; }
