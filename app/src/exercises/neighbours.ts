@@ -3,15 +3,20 @@
  *
  * A choice card tests Spanish only when nothing but the Spanish can pick the
  * right option. So a wrong option is a near neighbour of it: the same kind of
- * sentence (a question beside a question), about the same length, the same
- * names in every option (a name in the prompt must not pick the answer), and
- * never another way of saying what the right option says. Chosen from a pool,
- * closest first with the key breaking ties, so a reload shows the same card.
+ * sentence (a question beside a question, a cry beside a cry), about the same
+ * length, the same names, numbers and words-in-both-languages as the right one
+ * (none of them may pick the answer, or rule a wrong one out), and never
+ * another way of saying what the right option says. Chosen from a pool, closest
+ * first with the key breaking ties, so a reload shows the same card.
  *
  * Read from real screens: "Me llamo Tomás." with I'm thirty-four / Well, I
  * don't know / My name is Tomás (the only option with the name); "Are you
  * Rosa? (polite)" with "(polite)" on the answer alone; "success | communist"
- * for a noun beside a noun and a verb.
+ * for a noun beside a noun and a verb; "Vale es muy cercana a su familia." with
+ * Tomás is happy to work with Vale / Vale's cakes make Mariana jealous (names
+ * the prompt does not hold); "Hernando nació en 1955." with only one 1955;
+ * "Hoy pido el ajiaco." with only one ajiaco; "¡Sé amable, Tomás!" with only
+ * one mark of exclamation.
  * ========================================================================== */
 import { deaccent } from '../engine';
 import { rng } from './rng';
@@ -47,8 +52,8 @@ const propers = new WeakMap<ReadonlySet<string>, Map<string, string[]>>();
 
 /**
  * The names in a text: words written with a capital that are not just starting a sentence (Tomás, Bogotá, Japan), and
- * words the bank treats as names wherever they stand. Without accents, lower case, in order, once each. A name is the
- * same word in both languages, so it is the one thing a learner can match without knowing any Spanish.
+ * words the bank treats as names wherever they stand, and numbers written in figures. Without accents, lower case, in
+ * order, once each. A name or a number is the same in both languages, so a learner can match it without knowing any Spanish.
  */
 export function properWords(text: string, names: ReadonlySet<string>): string[] {
   let memo = propers.get(names);
@@ -56,9 +61,9 @@ export function properWords(text: string, names: ReadonlySet<string>): string[] 
   let out = memo.get(text);
   if (!out) {
     const found = new Set<string>();
-    for (const m of text.matchAll(/\p{Lu}[\p{L}]*/gu)) {
+    for (const m of text.matchAll(/\p{Lu}[\p{L}]*|\p{N}+/gu)) {
       const k = m[0].toLowerCase();
-      if (k === 'i' || (!names.has(k) && startsSentence(text, m.index!))) continue;
+      if (/\p{L}/u.test(k) && (k === 'i' || (!names.has(k) && startsSentence(text, m.index!)))) continue;
       found.add(deaccent(k));
     }
     memo.set(text, out = [...found]);
@@ -66,10 +71,19 @@ export function properWords(text: string, names: ReadonlySet<string>): string[] 
   return out;
 }
 
+/** Is this entry of properWords a name, not a number? */
+const isName = (w: string) => !/^\p{N}/u.test(w);
+
 /** The names a pair shares between its two languages: what the prompt gives away about the right option. */
 export function sharedNames(p: Pair, names: ReadonlySet<string>): string[] {
   const es = properWords(p.es, names);
   return properWords(stripTag(p.en), names).filter((w) => es.includes(w));
+}
+
+/** The words a pair writes alike in both languages (hotel, ajiaco, café): they point at the right option the way a name does. */
+export function sharedWords(p: Pair): string[] {
+  const en = new Set(plain(stripTag(p.en)).split(' '));
+  return [...new Set(plain(p.es).split(' '))].filter((w) => w.length >= 3 && en.has(w) && !EN_LITTLE.has(w) && !ES_LITTLE.has(w));
 }
 
 // ---------------------------------------------------------------- what a sentence says
@@ -90,8 +104,11 @@ const ES_LITTLE = new Set([
 /** A word shortened to what it shares with its plural and its simple forms ("coffees" and "coffee"), for comparing meanings, not for showing. */
 const stem = (w: string) => (w.length > 3 ? w.replace(/ies$/, 'y').replace(/(?<!s)s$/, '') : w).replace(/(?<=.{3,})(ing|ed)$/, '');
 
-/** Greetings and thanks that are one word said two ways: "Hi." and "Hey!" are both right for Hola. */
-const SAME_EN: Readonly<Record<string, string>> = { hi: 'hello', hey: 'hello', goodbye: 'bye', okay: 'ok', alright: 'ok', thanks: 'thank' };
+/** One word said two ways: "Hi." and "Hey!" are both right for Hola, "pretty" and "beautiful" for bello, "nice" and "kind" for amable. */
+const SAME_EN: Readonly<Record<string, string>> = {
+  hi: 'hello', hey: 'hello', goodbye: 'bye', okay: 'ok', alright: 'ok', thanks: 'thank',
+  pretty: 'beautiful', lovely: 'beautiful', gorgeous: 'beautiful', kind: 'nice', friendly: 'nice', likeable: 'nice',
+};
 
 /** The words of a text that carry its meaning: not the little words, not the names. */
 export function contentWords(text: string, lang: 'es' | 'en', names: ReadonlySet<string>): Set<string> {
@@ -136,10 +153,10 @@ export function sameMeaning(a: Pair, b: Pair, names: ReadonlySet<string>, word =
   return overlap(ea, eb, 0.5) || overlap(contentWords(a.es, 'es', names), contentWords(b.es, 'es', names), 0.6);
 }
 
-/** A question, a dialogue (more than one line) or a statement: a wrong option is never another kind. */
-export function shapeOf(text: string): 'q' | 'd' | 's' {
+/** A question, a dialogue (more than one line), a cry ("¡Qué bien!") or a statement: a wrong option is never another kind. */
+export function shapeOf(text: string): 'q' | 'd' | 'e' | 's' {
   if (text.split(/\n|\\n/).filter((l) => l.trim()).length > 1) return 'd';
-  return /[?¿]/.test(text) ? 'q' : 's';
+  return /[?¿]/.test(text) ? 'q' : /[!¡]/.test(text) ? 'e' : 's';
 }
 
 // ---------------------------------------------------------------- the nearest
@@ -157,7 +174,7 @@ export interface Near<T> {
   extra?: (c: T) => number;
   /** a candidate that cannot be a wrong option for a reason of its own (another part of speech) */
   allow?: (c: T) => boolean;
-  /** the pairs are words and their glosses (see sameMeaning) */
+  /** the pairs are words and their glosses (see sameMeaning); a word written alike in both languages (hotel) gives itself away whatever stands beside it */
   word?: boolean;
 }
 
@@ -166,8 +183,8 @@ export const lengthRoom = (len: number) => Math.max(5, Math.round(len * 0.25));
 
 /**
  * Up to n candidates that could stand beside `right` as wrong options, nearest first. Nothing that says what `right` says,
- * nothing of another shape, with a tag when `right` has none or none when it has one, with other names in it, or of another
- * length; among those, the closest in length
+ * nothing of another shape, with a tag when `right` has none or none when it has one, lacking a name or a word the prompt
+ * gives away, with a name the prompt does not hold, or of another length; among those, the closest in length
  * and the least `extra`, with the key breaking ties so the same card is built again.
  */
 export function nearest<T>(right: Pair, pool: Iterable<T>, o: Near<T>): T[] {
@@ -175,9 +192,13 @@ export function nearest<T>(right: Pair, pool: Iterable<T>, o: Near<T>): T[] {
   const want = shown(right);
   const shape = shapeOf(want);
   const give = sharedNames(right, o.names);
-  const named = properWords(want, o.names).length > 0;
+  const mine = properWords(want, o.names);
+  const named = mine.some(isName);
+  // every name of the right option is in the prompt, so an option with another is ruled out by anyone who can read a name
+  const closed = mine.every((w) => give.includes(w));
   const tagged = hasTag(want);
   const room = lengthRoom(want.length);
+  const alike = o.word ? [] : sharedWords(right);
   const r = rng(`${o.key}:near`);
   const found: Array<{ c: T; p: Pair; d: number }> = [];
   for (const c of pool) {
@@ -186,9 +207,13 @@ export function nearest<T>(right: Pair, pool: Iterable<T>, o: Near<T>): T[] {
     const text = shown(p);
     const gap = Math.abs(text.length - want.length);
     if (gap > room || text === want || shapeOf(text) !== shape || hasTag(text) !== tagged) continue;
-    // the names the prompt gives away are in every option, and an option with a name is not the only one
+    // the names the prompt gives away are in every option, an option with a name is not the only one, and none holds one the prompt lacks
     const has = properWords(text, o.names);
-    if (give.some((w) => !has.includes(w)) || (has.length > 0) !== named) continue;
+    if (give.some((w) => !has.includes(w)) || has.some(isName) !== named || (closed && has.some((w) => !give.includes(w)))) continue;
+    if (alike.length) {
+      const said = new Set(plain(text).split(' '));
+      if (alike.some((w) => !said.has(w))) continue;
+    }
     found.push({ c, p, d: gap / Math.max(8, want.length) + (o.extra?.(c) ?? 0) + r() * 0.3 });
   }
   found.sort((a, b) => a.d - b.d);

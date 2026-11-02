@@ -36,6 +36,25 @@ export function nameMatch(c: McqCard, names: ReadonlySet<string>): number | null
   return hit.length ? share(hit, c.answer) : 1 / c.options.length;
 }
 
+/** A reader who can read a name: the options with no name the prompt lacks, tapped when that rules some out. */
+export function noStrangers(c: McqCard, names: ReadonlySet<string>): number | null {
+  const want = namesIn(c.prompt?.text ?? '', names);
+  if (!want.size) return null;
+  const clean = c.options.flatMap((o, i) => ([...namesIn(o.text, names)].every((n) => want.has(n)) ? [i] : []));
+  return clean.length && clean.length < c.options.length ? share(clean, c.answer) : null;
+}
+
+const wordsOf = (t: string) => new Set(letters(t).match(/[\p{L}\p{N}]{3,}|\p{N}+/gu) ?? []);
+
+/** A reader with no Spanish: the options that share the most words or numbers with the prompt (ajiaco, hotel, 1955), when that tells them apart. */
+export function sameWords(c: McqCard): number | null {
+  const want = wordsOf(c.prompt?.text ?? '');
+  const held = c.options.map((o) => [...wordsOf(o.text)].filter((w) => want.has(w)).length);
+  const most = Math.max(...held);
+  const hit = held.flatMap((n, i) => (n === most ? [i] : []));
+  return most > 0 && hit.length < c.options.length ? share(hit, c.answer) : null;
+}
+
 /** The answer is the one option that stands out: the only one with a name, the only one without, or the only one with a "(polite)" tag. */
 export function standsOut(c: McqCard, names: ReadonlySet<string>): 'name' | 'tag' | null {
   const holds: Array<(t: string) => boolean> = [(t) => namesIn(t, names).size > 0, (t) => /\([^)]*\)\s*$/.test(t)];

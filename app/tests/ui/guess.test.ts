@@ -12,8 +12,9 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { beforeAll, describe, expect, it } from 'vitest';
 import { longestShare } from '../../src/exercises/neighbours';
+import { MEANS } from '../../src/ui/session/cards';
 import { choiceCardsAt, type Seen } from './guess-world';
-import { chance, first, longest, mean, nameMatch, shortest, standsOut } from './guess-play';
+import { chance, first, longest, mean, nameMatch, noStrangers, sameWords, shortest, standsOut } from './guess-play';
 
 /** How far above chance a strategy may score. About three standard errors over the cards sampled. */
 const NEAR = 0.08;
@@ -60,6 +61,20 @@ describe('choice cards the app builds', () => {
     const got = mean(named.map((c) => nameMatch(c, names)!));
     const base = mean(named.map(chance));
     expect(got, `name match: ${got.toFixed(3)} against chance ${base.toFixed(3)} on ${named.length} cards`).toBeLessThanOrEqual(base + NEAR);
+  });
+
+  it('rules nothing out for holding a name the prompt lacks', () => {
+    const named = made().filter((c) => noStrangers(c, names) !== null);
+    const got = mean(named.map((c) => noStrangers(c, names)!));
+    const base = mean(named.map(chance));
+    expect(got, `no strangers: ${got.toFixed(3)} against chance ${base.toFixed(3)} on ${named.length} cards`).toBeLessThanOrEqual(base + NEAR);
+  });
+
+  it('solves no sentence by the word or the number it shares with the prompt', () => {
+    // a word written alike in both languages (el hotel, la cumbia) is the same word: no option beside it can make it Spanish. A gap of forms shares a stem by design.
+    const asked = made().filter((c) => (c.ask === MEANS || c.ask === 'Which one says this?') && (c.prompt?.text ?? '').split(/\s+/).length > 2);
+    expect(asked.length).toBeGreaterThan(100);
+    expect(asked.filter((c) => sameWords(c) === 1).map((c) => `${c.prompt?.text} -> ${c.options.map((o) => o.text).join(' | ')}`)).toEqual([]);
   });
 
   it('leaves no option standing out by a name or a tag the others lack', () => {

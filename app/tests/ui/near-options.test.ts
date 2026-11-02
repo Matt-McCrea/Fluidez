@@ -4,12 +4,13 @@
 // option holding the name), and no option stands out.
 import { beforeAll, describe, expect, it } from 'vitest';
 import type { LearnItem, ReviewItem } from '../../src/compiler';
+import { deaccent } from '../../src/engine';
 import { namesOf } from '../../src/exercises/licence';
-import { contentWords, lengthRoom } from '../../src/exercises/neighbours';
+import { contentWords, lengthRoom, properWords, shapeOf, sharedNames, sharedWords } from '../../src/exercises/neighbours';
 import { isMultiTurn } from '../../src/exercises/dialogue';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
-import { learnRetrieval, otherEnglish, reviewCard, type Card } from '../../src/ui/session/cards';
+import { learnRetrieval, otherEnglish, otherSpanish, reviewCard, type Card } from '../../src/ui/session/cards';
 import { namesIn, standsOut } from './guess-play';
 
 let b: Bundle;
@@ -87,6 +88,37 @@ describe('a sentence on a choice card', () => {
     // a sentence with no two neighbours holding its names is typed instead; that is the exception
     console.log(`name-bearing sentences: ${cards} choice cards, ${typed} of ${picks} "which one says this?" typed instead`);
     expect(typed / picks).toBeLessThan(0.2);
+  });
+
+  it('has nothing a reader can match without the Spanish in one option and not the others', { timeout: 300_000 }, () => {
+    const names = namesOf(b.bank);
+    const plainWords = (t: string) => new Set(deaccent(t.toLowerCase()).split(/[^\p{L}\p{N}]+/u));
+    const bad: string[] = [];
+    let cards = 0, typed = 0, rows = 0;
+    for (const s of b.bank.filter((_, i) => i % 40 === 0)) {
+      rows++;
+      const give = sharedNames(s, names), alike = sharedWords(s);
+      for (const side of ['en', 'es'] as const) {
+        if (side === 'es' && isMultiTurn(s)) continue;
+        const right = s[side];
+        const wrong = side === 'en' ? otherEnglish(b, s, `rv:${s.id}`, 2) : otherSpanish(b, s, `rv:${s.id}`, 3);
+        if (wrong.length < 2) { typed++; continue; }
+        cards++;
+        const mine = properWords(right, names);
+        for (const w of wrong) {
+          const has = properWords(w, names);
+          const said = plainWords(w);
+          if (give.some((n) => !has.includes(n))) bad.push(`${s.id}: "${w}" lacks a name of "${right}"`);
+          if (mine.every((n) => give.includes(n)) && has.some((n) => !give.includes(n))) bad.push(`${s.id}: "${w}" has a name "${s[side === 'en' ? 'es' : 'en']}" lacks`);
+          if (alike.some((x) => !said.has(x))) bad.push(`${s.id}: "${w}" lacks a word of "${right}"`);
+          if (shapeOf(w) !== shapeOf(right)) bad.push(`${s.id}: "${w}" is not the kind of sentence "${right}" is`);
+        }
+      }
+    }
+    expect(rows).toBeGreaterThan(1500);
+    expect(bad.slice(0, 15)).toEqual([]);
+    // the exception: under 6 in 100
+    expect(typed / (cards + typed)).toBeLessThan(0.06);
   });
 });
 
