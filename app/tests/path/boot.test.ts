@@ -73,6 +73,21 @@ describe('boot over a learner the live site stored', () => {
     expect((kv.data.get('events') as { events: Array<{ node: string }> }).events.every((e) => e.node !== 'l:a')).toBe(true);
   });
 
+  it('keeps the documents it rewrote as they were, once, and not the ones it only named', async () => {
+    const { kv } = await stored({ path: { owedNew: ['l:a'] } });
+    const was = structuredClone(kv.data.get('state'));
+    const wasEvents = structuredClone(kv.data.get('events'));
+    const history = { migrations: { '/content/_migrations/0001.json': rename(1, 'l:a', 'l:aa') } };
+    await boot({ kv, loader: new ContentLoader(files({ history })), now: () => AT, fixtures: false });
+    expect(kv.data.get('state.pre-content-0')).toEqual(was);
+    expect(kv.data.get('events.pre-content-0')).toEqual(wasEvents);
+    expect(kv.data.has('attempts.pre-content-0')).toBe(false);
+    // a settling that only gave the path its keys leaves no copy
+    const plain = await stored();
+    await boot({ kv: plain.kv, loader: new ContentLoader(files()), now: () => AT, fixtures: false });
+    expect([...plain.kv.data.keys()].filter((k) => k.includes('pre-content'))).toEqual([]);
+  });
+
   it('is quiet the second time: nothing is written', async () => {
     const { kv } = await stored();
     const loader = new ContentLoader(files());
