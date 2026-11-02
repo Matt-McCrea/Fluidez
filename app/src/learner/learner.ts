@@ -7,11 +7,11 @@
 // coalesced save to the LearnerStore; `flush()` awaits the pending save.
 import type { Card, FSRS } from 'ts-fsrs';
 import type { NodeId } from '../content/schema';
-import { compact, emptyLog, type EventLog, type ReviewEvent } from './events';
+import { compact, emptyLog, readEvents, type EventLog, type ReviewEvent } from './events';
 import { Ledger } from './ledger';
 import { fromCard, makeScheduler, newCard, Rating, State, toCard, type Grade } from './scheduler';
 import {
-  dayKey, DIRECTIONS, emptyState, migrate,
+  dayKey, DIRECTIONS, emptyState, migrate, salvage, StoredDocumentError, STATE_VERSION,
   type CardJSON, type Direction, type LearnerState, type NodeRecord, type Settings,
 } from './state';
 import type { LearnerStore } from './store';
@@ -127,7 +127,28 @@ export interface LearnerOptions {
   now?: () => number;
   /** Debounce for saves; 0 = save after every mutation (still coalesced). */
   saveDelayMs?: number;
+  /** The pause after a refused write; doubles with each one in a row, up to thirty times this. */
+  saveRetryMs?: number;
 }
+
+/** What a learner is told when the store keeps refusing writes. */
+export const SAVE_PROBLEM = 'Couldn\'t save just now. Keep this page open and we\'ll keep trying.';
+
+/** `flush()` or `commit()` gave up: the store refused the write every time it was tried. The work is still in memory and is retried. */
+export class SaveFailedError extends Error {
+  constructor(cause?: unknown) { super(SAVE_PROBLEM, { cause }); this.name = 'SaveFailedError'; }
+}
+
+/** The documents a session commit writes beside the learner (the UI store's). */
+export type SaveExtra = { path?: unknown; ui?: unknown };
+
+const SAVE_ATTEMPTS = 3;
+
+/** The version a stored document says it is; a document with none is v0. */
+const versionOf = (raw: unknown): number => {
+  const v = (raw as { version?: unknown } | null)?.version;
+  return typeof v === 'number' ? v : 0;
+};
 
 export class Learner {
   private state: LearnerState;
@@ -135,9 +156,18 @@ export class Learner {
   /** same parameters, maximum interval = the maintenance cap (learned cards) */
   private maintenanceScheduler: FSRS;
   private readonly now: () => number;
+  /** every write runs on this chain, and no job on it rejects, so one refused write cannot end saving */
   private saving: Promise<void> = Promise.resolve();
   private dirty = false;
   private saveQueued = false;
+  private failures = 0;
+  private cause: unknown;
+  private retryTimer: ReturnType<typeof setTimeout> | undefined;
+  private carried: (() => SaveExtra) | undefined;
+  private problem: string | undefined;
+  private readonly watchers = new Set<() => void>();
+  private readonly retryMs: number;
+  private halted = false;
   readonly ledger: Ledger;
   private log: EventLog = emptyLog();
   private eventsDirty = false;
@@ -145,23 +175,84 @@ export class Learner {
   private constructor(state: LearnerState, private readonly store: LearnerStore | null, opts: LearnerOptions) {
     this.state = state;
     this.now = opts.now ?? Date.now;
+    this.retryMs = opts.saveRetryMs ?? 500;
     this.scheduler = makeScheduler(state.settings, state.weights);
     this.maintenanceScheduler = this.makeMaintenance();
     this.ledger = new Ledger(() => this.state, () => this.touch(), this.now);
   }
 
-  /** Load (and migrate) the learner from a store, or start fresh. */
+  /**
+   * Load (and migrate) the learner from a store, or start fresh. A document a
+   * newer build wrote is never worked around or written over: this throws a
+   * StoredDocumentError. A damaged state falls back to the store's one-step
+   * backup, or failing that keeps all it can read (`salvage`), with the damaged
+   * copy kept beside it; a damaged event log is kept aside and the learner opens
+   * with an empty one. Before the first migration of a version, the document is
+   * copied once, as it was.
+   */
   static async open(store: LearnerStore, opts: LearnerOptions = {}): Promise<Learner> {
-    const raw = await store.load();
-    const state = raw === undefined ? emptyState((opts.now ?? Date.now)()) : migrate(raw);
-    const l = new Learner(state, store, opts);
+    const read = await Learner.readState(store);
+    const state = read?.state ?? emptyState((opts.now ?? Date.now)());
     const rawLog = await store.loadEvents?.();
-    if (rawLog && typeof rawLog === 'object' && Array.isArray((rawLog as any).events)) {
-      const lg = rawLog as EventLog;
-      l.log = compact({ events: lg.events, summary: lg.summary ?? { upTo: 0, counts: {} } }, 365, l.now());
+    let log: EventLog | undefined;
+    let logDamaged = false;
+    if (rawLog !== undefined) {
+      try { log = readEvents(rawLog); } catch (e) {
+        if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
+        console.warn(`fluidez: the review log could not be read (${e.detail}); starting an empty one`);
+        await store.quarantine?.('events', rawLog);
+        logDamaged = true;
+      }
     }
-    if (raw === undefined || (raw as any).version !== state.version) { l.touch(); await l.flush(); }
+    if (read && read.version < STATE_VERSION) {
+      try { await store.keepVersion?.('state', read.version, read.raw); } catch (e) { console.warn('fluidez: could not keep a copy of the state before migrating it', e); }
+    }
+    const l = new Learner(state, store, opts);
+    if (log) l.log = compact(log, 365, l.now());
+    // the empty log takes the damaged one's place in the store: a backup is made of what is stored
+    if (logDamaged) l.eventsDirty = true;
+    if (!read || read.healed || logDamaged || read.version !== state.version) {
+      l.touch();
+      // a refused write must not keep a readable learner out: it stays dirty and is retried
+      try { await l.flush(); } catch (e) { if (!(e instanceof SaveFailedError)) throw e; }
+    }
     return l;
+  }
+
+  /**
+   * The stored state, migrated, with the version it was stored at; undefined if
+   * there is none. A newer document throws. A damaged one is kept beside the
+   * store's one-step backup and the backup is read instead (`healed`: the
+   * caller must write it back). With no clean backup, the damage is usually in
+   * both (a bad value stays in every later save), so whatever can be read is
+   * kept; only a document with nothing to salvage is thrown.
+   */
+  private static async readState(store: LearnerStore): Promise<{ raw: unknown; state: LearnerState; version: number; healed: boolean } | undefined> {
+    const raw = await store.load();
+    if (raw === undefined) return undefined;
+    try { return { raw, state: migrate(raw), version: versionOf(raw), healed: false }; } catch (e) {
+      if (!(e instanceof StoredDocumentError) || e.fault === 'newer') throw e;
+      await store.quarantine?.('state', raw);
+      const prev = await store.loadPrevious?.();
+      if (prev !== undefined) {
+        try {
+          const state = migrate(prev);
+          console.warn(`fluidez: the saved state could not be read (${e.detail}); using the copy from before the last save`);
+          return { raw: prev, state, version: versionOf(prev), healed: true };
+        } catch (e2) {
+          if (e2 instanceof StoredDocumentError && e2.fault === 'newer') throw e2;
+        }
+      }
+      for (const doc of [raw, prev]) {
+        if (doc === undefined) continue;
+        try {
+          const state = salvage(doc);
+          console.warn(`fluidez: the saved state could not be read (${e.detail}); keeping everything but the damaged cards`);
+          return { raw: doc, state, version: versionOf(doc), healed: true };
+        } catch { /* nothing to keep in this one */ }
+      }
+      throw e;
+    }
   }
 
   /** A learner with no store (unit tests, simulator). */
@@ -180,35 +271,131 @@ export class Learner {
 
   private touch(): void {
     this.dirty = true;
-    if (!this.store || this.saveQueued) return;
+    // while the store is being given a pause, the retry timer owns the next attempt
+    if (!this.store || this.halted || this.saveQueued || this.retryTimer !== undefined) return;
     this.saveQueued = true;
-    this.saving = this.saving.then(async () => {
+    void this.queue(async () => {
       this.saveQueued = false;
-      if (!this.dirty) return;
-      this.dirty = false;
-      await this.store!.save(structuredClone(this.state));
-      if (this.eventsDirty && this.store!.saveEvents) {
-        this.eventsDirty = false;
-        await this.store!.saveEvents(structuredClone(this.log));
-      }
+      if (this.dirty && this.retryTimer === undefined && !(await this.write())) this.backOff();
     });
   }
 
+  /** Run `job` after every write already queued. A job here must not reject. */
+  private queue<T>(job: () => Promise<T>): Promise<T> {
+    const run = this.saving.then(job);
+    this.saving = run.then(() => {}, () => {});
+    return run;
+  }
+
   /**
-   * Flush, then write the learner state, the event log and `extra` (the path
-   * and ui documents) in one store transaction when the store supports it
-   * (otherwise state first, then the extras through `fallback`).
+   * One attempt to write what is dirty, and `extra` (or what an earlier refused
+   * commit left to carry) beside it in one transaction. Says whether it landed;
+   * a refusal keeps everything dirty so the next attempt writes it again.
    */
-  async commit(extra: { path?: unknown; ui?: unknown }, fallback?: () => Promise<void>): Promise<void> {
-    if (!this.store) { await fallback?.(); return; }
-    await this.saving;
-    if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
+  private async write(extra?: SaveExtra): Promise<boolean> {
+    const store = this.store!;
+    const hadEvents = this.eventsDirty;
+    if (!extra && !this.carried && !this.dirty) return true;
     this.dirty = false;
-    const events = this.eventsDirty ? structuredClone(this.log) : undefined;
     this.eventsDirty = false;
-    const write = this.saving.then(() => this.store!.saveAll!({ state: structuredClone(this.state), events, ...extra }));
-    this.saving = write.catch(() => {});
-    try { await write; } catch (e) { this.dirty = true; if (events) this.eventsDirty = true; throw e; }
+    try {
+      const extras = extra ?? this.carried?.();
+      const state = structuredClone(this.state);
+      const events = hadEvents ? structuredClone(this.log) : undefined;
+      if (extras && store.saveAll) await store.saveAll({ state, events, ...extras });
+      else {
+        await store.save(state);
+        if (events && store.saveEvents) await store.saveEvents(events);
+      }
+      if (extras) this.carried = undefined;
+    } catch (e) {
+      this.dirty = true;
+      if (hadEvents) this.eventsDirty = true;
+      this.failures += 1;
+      this.cause = e;
+      if (this.failures >= 2) this.announce(SAVE_PROBLEM);
+      return false;
+    }
+    this.failures = 0;
+    this.clearTimer();
+    this.announce(undefined);
+    if (this.dirty) this.touch();
+    return true;
+  }
+
+  private backOff(): void {
+    if (this.retryTimer !== undefined) return;
+    const wait = Math.min(30, 2 ** Math.max(0, this.failures - 1)) * this.retryMs;
+    const t: any = setTimeout(() => { this.retryTimer = undefined; if (this.dirty) this.touch(); }, wait);
+    t.unref?.();
+    this.retryTimer = t;
+  }
+
+  private clearTimer(): void {
+    if (this.retryTimer !== undefined) clearTimeout(this.retryTimer);
+    this.retryTimer = undefined;
+  }
+
+  /** Try `attempt` until it lands, pausing between tries; after the last, the work stays queued for the timer and this rejects. */
+  private async insist(attempt: () => Promise<boolean>): Promise<void> {
+    for (let i = 0; ; i++) {
+      this.clearTimer();
+      if (await this.queue(attempt)) return;
+      if (i >= SAVE_ATTEMPTS - 1) break;
+      await new Promise<void>((r) => setTimeout(r, this.retryMs * 2 ** i));
+    }
+    this.announce(SAVE_PROBLEM);
+    this.backOff();
+    throw new SaveFailedError(this.cause);
+  }
+
+  /** Why saving has stopped working, in words for the learner, or undefined while it is fine. Set after two refused writes in a row. */
+  get saveProblem(): string | undefined { return this.problem; }
+
+  /** Called when `saveProblem` appears or clears. Returns the way to stop listening. */
+  onSaveProblem(fn: () => void): () => void {
+    this.watchers.add(fn);
+    return () => this.watchers.delete(fn);
+  }
+
+  private announce(problem: string | undefined): void {
+    if (problem === this.problem) return;
+    this.problem = problem;
+    for (const w of this.watchers) w();
+  }
+
+  /**
+   * Write the learner state, the event log and `extra` (the path and ui
+   * documents) in one store transaction when the store supports it (otherwise
+   * the state first, then the extras through `fallback`). A refused write is
+   * tried again after a pause; if the store still refuses, this rejects with a
+   * SaveFailedError and the learner stays dirty for the next flush.
+   */
+  async commit(extra: SaveExtra, fallback?: () => Promise<void>): Promise<void> {
+    if (!this.store) { await fallback?.(); return; }
+    if (this.halted) return;
+    if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
+    await this.insist(() => this.write(extra));
+  }
+
+  /**
+   * After a commit was refused: the next write carries the documents `extra`
+   * returns, asked for afresh each time so a retry never writes an old copy.
+   */
+  carry(extra: () => SaveExtra): void {
+    this.carried = extra;
+    this.dirty = true;
+    this.touch();
+  }
+
+  /**
+   * Stop writing for good. A restore replaced the stored documents underneath
+   * this learner and the page reloads next: nothing still held in memory may be
+   * saved over them.
+   */
+  halt(): void {
+    this.halted = true;
+    this.clearTimer();
   }
 
   /** The backing store, if any (the UI store checks whether it shares its key-value store). */
@@ -226,11 +413,14 @@ export class Learner {
     this.dirty = true;
   }
 
-  /** Resolves once everything mutated so far has been written. */
+  /**
+   * Resolves once everything mutated so far has been written. A refused write
+   * is tried again after a pause; if the store still refuses, this rejects
+   * with a SaveFailedError, the work stays in memory and the timer keeps trying.
+   */
   async flush(): Promise<void> {
-    if (!this.store) return;
-    if (this.dirty && !this.saveQueued) this.touch();
-    await this.saving;
+    if (!this.store || this.halted) return;
+    await this.insist(() => this.write());
   }
 
   // ---------------------------------------------------------------- settings / session
@@ -385,10 +575,13 @@ export class Learner {
     if (this.state.nodes[id]) return;
     const diff = this.scheduler.next(toCard(newCard(spec.at)), new Date(spec.at), Rating.Good).card.difficulty;
     const make = (c: { stability: number; dueAt: number }): CardJSON => {
-      const days = Math.max(1, Math.round(c.stability));
+      // last reviewed one stability before it falls due, but never after now: a card
+      // spread to fall due later than that was last reviewed at placement, and FSRS
+      // refuses a review at a moment before the last one
+      const last = Math.min(spec.at, c.dueAt - Math.max(1, Math.round(c.stability)) * DAY_MS);
       return {
-        due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: days, learning_steps: 0,
-        reps: 3, lapses: 0, state: State.Review, last_review: c.dueAt - days * DAY_MS, baseStability: c.stability,
+        due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: Math.max(1, Math.round((c.dueAt - last) / DAY_MS)), learning_steps: 0,
+        reps: 3, lapses: 0, state: State.Review, last_review: last, baseStability: c.stability,
       };
     };
     const learned = Math.max(spec.receptive?.stability ?? 0, spec.productiveCard?.stability ?? 0) >= LEARNED_STABILITY_DAYS;

@@ -4,7 +4,8 @@
 // the learner-facing tallies (sessions, words read/written, practice days,
 // saved words, can-do self-checks) live under "ui". Both are plain JSON.
 import { initialPath, type Mode, type PathState, type SessionPlan } from '../../compiler';
-import { idbKV, type KV, type Learner, type Tier } from '../../learner';
+import { idbKV, StoredDocumentError, type KV, type Learner, type Tier } from '../../learner';
+import { LEARNER_READERS, type BackupReaders } from '../../learner/backup';
 import type { LearnQueueJSON } from '../session/order';
 import type { RunnerSnapshot } from '../session/runner';
 
@@ -95,6 +96,7 @@ export class MemoryKV implements KV {
     const staged = entries.map(([k, v]) => [k, structuredClone(v)] as const);
     for (const [k, v] of staged) this.data.set(k, v);
   }
+  async keys() { return [...this.data.keys()]; }
 }
 
 /**
@@ -114,31 +116,89 @@ export const PATH_MIGRATIONS: Record<number, (s: any) => any> = {
   1: (s) => ({ ...s, version: 2 }),
 };
 
+const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x === 'object' && !Array.isArray(x);
+
 function upgrade(raw: unknown, name: string, latest: number, table: Record<number, (s: any) => any>): any {
-  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error(`${name}: not an object`);
+  if (!isObject(raw)) throw new StoredDocumentError('unreadable', name, 'not an object');
   let s: any = structuredClone(raw);
   let v: number = typeof s.version === 'number' ? s.version : 0;
-  if (v > latest) throw new Error(`${name} v${v} is newer than this build (v${latest})`);
-  while (v < latest) {
-    const step = table[v];
-    if (!step) throw new Error(`${name}: no migration from v${v}`);
-    s = step(s);
-    v = s.version;
+  if (v > latest) throw new StoredDocumentError('newer', name, `v${v} is newer than this build (v${latest})`);
+  try {
+    while (v < latest) {
+      const step = table[v];
+      if (!step) throw new Error(`no migration from v${v}`);
+      s = step(s);
+      v = s.version;
+    }
+  } catch (e) {
+    throw new StoredDocumentError('unreadable', name, (e as Error).message);
   }
   return s;
 }
 
+/** The lists and tables the screens walk: if one is not one, the document is damaged. */
+const UI_LISTS = ['saved', 'canDos', 'checkpoints', 'frozenDays'] as const;
+const UI_TABLES = ['readSeconds', 'writing', 'bests', 'weekly'] as const;
+const PATH_LISTS = ['owedNew', 'owedGrammar', 'pendingDrills', 'recentGrammar', 'remediate', 'log'] as const;
+
+const openUi = (s: any, base: UiState): UiState => ({ ...base, ...s, stats: { ...base.stats, ...(isObject(s.stats) ? s.stats : {}) } });
+const idOf = (s: any): string | undefined => (typeof s.learnerId === 'string' && s.learnerId ? s.learnerId : undefined);
+
 /** Upgrade a stored ui document. Keeps the learnerId it has; only a document with none gets a new one. */
 export function migrateUi(raw: unknown): UiState {
-  const s = upgrade(raw, 'ui state', UI_VERSION, UI_MIGRATIONS);
-  const base = emptyUi(typeof s.learnerId === 'string' && s.learnerId ? s.learnerId : undefined);
-  return { ...base, ...s, stats: { ...base.stats, ...(s.stats ?? {}) } };
+  const s = upgrade(raw, 'ui', UI_VERSION, UI_MIGRATIONS);
+  const ui = openUi(s, emptyUi(idOf(s)));
+  const bad = UI_LISTS.find((k) => !Array.isArray(ui[k])) ?? UI_TABLES.find((k) => !isObject(ui[k])) ?? (Array.isArray(ui.stats.days) ? undefined : 'stats.days');
+  if (bad) throw new StoredDocumentError('unreadable', 'ui', `${bad} is the wrong shape`);
+  return ui;
 }
 
-export function migratePath(raw: unknown): PathState {
-  const s = upgrade(raw, 'path state', PATH_VERSION, PATH_MIGRATIONS);
-  return { ...initialPath(), ...s };
+/**
+ * Boot's reader for a ui document `migrateUi` refused. There is no older copy of
+ * this document, and a tally must not keep a learner out of the state beside
+ * it: a list or table that is the wrong shape starts empty and the rest is
+ * kept. What throws here (a newer document, one that is not a document) is
+ * refused for good. The caller keeps the damaged document aside first.
+ */
+export function salvageUi(raw: unknown): UiState {
+  const s = upgrade(raw, 'ui', UI_VERSION, UI_MIGRATIONS);
+  const base = emptyUi(idOf(s));
+  const ui: any = openUi(s, base);
+  for (const k of UI_LISTS) if (!Array.isArray(ui[k])) ui[k] = base[k];
+  for (const k of UI_TABLES) if (!isObject(ui[k])) ui[k] = base[k];
+  if (!Array.isArray(ui.stats.days)) ui.stats.days = base.stats.days;
+  return ui;
 }
+
+const positionOk = (p: PathState) => Number.isFinite(p.unit) && Number.isFinite(p.day) && Number.isFinite(p.coreSessions);
+
+export function migratePath(raw: unknown): PathState {
+  const s = upgrade(raw, 'path', PATH_VERSION, PATH_MIGRATIONS);
+  const path: PathState = { ...initialPath(), ...s };
+  const bad = PATH_LISTS.find((k) => !Array.isArray(path[k])) ?? (positionOk(path) ? undefined : 'position');
+  if (bad) throw new StoredDocumentError('unreadable', 'path', `${bad} is the wrong shape`);
+  return path;
+}
+
+/**
+ * As `salvageUi`, for the path. Its lists can start empty. Its position cannot
+ * be guessed: a learner silently sent back to the start is worse than being told.
+ */
+export function salvagePath(raw: unknown): PathState {
+  const s = upgrade(raw, 'path', PATH_VERSION, PATH_MIGRATIONS);
+  const base = initialPath();
+  const path: any = { ...base, ...s };
+  for (const k of PATH_LISTS) if (!Array.isArray(path[k])) path[k] = base[k];
+  if (!positionOk(path)) throw new StoredDocumentError('unreadable', 'path', 'position is the wrong shape');
+  return path;
+}
+
+/**
+ * The documents a backup carries: the learner's and the UI's, each with the
+ * reader that opens it the way boot does. The allowlist is these keys. A new
+ * document (attempts, writing, games) is one more entry here.
+ */
+export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: migratePath, [UI_KEY]: migrateUi };
 
 /** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
 export interface SavedSession {
@@ -179,23 +239,44 @@ export class UiStore {
   /**
    * Load and migrate. A missing document is a fresh start; a document that
    * cannot be migrated (newer version, malformed) is copied to `<key>.quarantine`
-   * and the load throws, so a learner is never silently replaced by a new one.
+   * first. A list or table in it that is the wrong shape then starts empty; a
+   * document with more wrong than that throws a StoredDocumentError, so a learner
+   * is never silently replaced by a new one and the document itself is never
+   * written over. Before a document is migrated, it is copied once to
+   * `<key>.v<its version>`.
    */
   async load(): Promise<this> {
     const [ui, path, session] = await Promise.all([this.kv.get(UI_KEY), this.kv.get(PATH_KEY), this.kv.get(SESSION_KEY)]);
     this.session = session && typeof session === 'object' && (session as SavedSession).version === 1 ? (session as SavedSession) : undefined;
     if (ui === undefined || ui === null) {
       this.state = emptyUi();
-      await this.kv.set(UI_KEY, this.state);
+      await this.writeBack(UI_KEY, this.state);
     } else {
-      try { this.state = migrateUi(ui); } catch (e) { await this.quarantine(UI_KEY, ui); throw e; }
-      if ((ui as any).version !== UI_VERSION) await this.kv.set(UI_KEY, this.state);
+      let healed = false;
+      try { this.state = migrateUi(ui); } catch {
+        await this.quarantine(UI_KEY, ui);
+        this.state = salvageUi(ui);
+        healed = true;
+      }
+      if (healed) await this.writeBack(UI_KEY, this.state);
+      else if ((ui as any).version !== UI_VERSION) { await this.keepVersion(UI_KEY, ui); await this.writeBack(UI_KEY, this.state); }
     }
     if (path !== undefined && path !== null) {
-      try { this.path = migratePath(path); } catch (e) { await this.quarantine(PATH_KEY, path); throw e; }
-      if ((path as any).version !== PATH_VERSION) await this.kv.set(PATH_KEY, this.path);
+      let healed = false;
+      try { this.path = migratePath(path); } catch {
+        await this.quarantine(PATH_KEY, path);
+        this.path = salvagePath(path);
+        healed = true;
+      }
+      if (healed) await this.writeBack(PATH_KEY, this.path);
+      else if ((path as any).version !== PATH_VERSION) { await this.keepVersion(PATH_KEY, path); await this.writeBack(PATH_KEY, this.path); }
     }
     return this;
+  }
+
+  /** Put a document opened with changes back. A refused write must not keep a readable learner out: the next save writes it. */
+  private async writeBack(key: string, doc: unknown): Promise<void> {
+    try { await this.kv.set(key, doc); } catch (e) { console.warn(`fluidez: could not write ${key} back`, e); }
   }
 
   async saveSession(s: SavedSession): Promise<void> {
@@ -212,6 +293,13 @@ export class UiStore {
 
   private async quarantine(key: string, raw: unknown): Promise<void> {
     try { await this.kv.set(`${key}.quarantine`, raw); } catch { /* best effort */ }
+  }
+
+  /** Copy a document as it was, once per version, before it is migrated. Best effort: a copy that cannot be kept does not stop the migration. */
+  private async keepVersion(key: string, raw: unknown): Promise<void> {
+    const v = (raw as { version?: unknown }).version;
+    const name = `${key}.v${typeof v === 'number' ? v : 0}`;
+    try { if ((await this.kv.get(name)) === undefined) await this.kv.set(name, raw); } catch (e) { console.warn(`fluidez: could not keep a copy of ${key} before migrating it`, e); }
   }
 
   /**
@@ -237,7 +325,7 @@ export class UiStore {
     console.warn(`fluidez: path was ahead of the learner (${dropped.length} session(s) past ${learnerSession}); trimming to the learner`);
     this.path = { ...this.path, log: keep, coreSessions: Math.max(0, this.path.coreSessions - core) };
     this.emit();
-    await this.kv.set(PATH_KEY, this.path);
+    await this.writeBack(PATH_KEY, this.path);
     return true;
   }
 
@@ -259,8 +347,13 @@ export class UiStore {
     this.state = next;
     this.emit();
     const shared = (learner.backing as { kv?: KV } | null)?.kv === this.kv;
-    if (shared) await learner.commit({ path: this.path, ui: this.state });
-    else {
+    if (shared) {
+      try { await learner.commit({ path: this.path, ui: this.state }); } catch (e) {
+        // refused: the learner's retry writes our documents too, as they are by then
+        learner.carry(() => ({ path: this.path, ui: this.state }));
+        throw e;
+      }
+    } else {
       await this.writeBoth();
       await learner.flush();
     }
@@ -304,7 +397,9 @@ export class UiStore {
 
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
-    for (const k of [UI_KEY, PATH_KEY, SESSION_KEY, ...extraKeys]) await this.kv.del(k);
+    // the copies kept beside the documents (quarantine, version snapshots) go too: this promises everything is deleted
+    const copies = ((await this.kv.keys?.()) ?? []).filter((k) => [UI_KEY, PATH_KEY, SESSION_KEY].some((n) => k.startsWith(`${n}.`)));
+    for (const k of [UI_KEY, PATH_KEY, SESSION_KEY, ...extraKeys, ...copies]) await this.kv.del(k);
     this.session = undefined;
     this.state = emptyUi();
     this.path = initialPath();

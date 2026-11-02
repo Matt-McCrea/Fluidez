@@ -4,7 +4,7 @@
 // state document stays small. Pure helpers only; Learner owns recording.
 import type { NodeId } from '../content/schema';
 import type { Grade } from './scheduler';
-import type { Direction } from './state';
+import { DIRECTIONS, StoredDocumentError, type Direction } from './state';
 
 export interface ReviewEvent {
   at: number;                 // epoch ms
@@ -28,10 +28,36 @@ export interface EventSummary {
   counts: Record<NodeId, Record<Direction, number>>;
 }
 
-export interface EventLog { events: ReviewEvent[]; summary: EventSummary }
+/** The log's own version, apart from the state's. A log with no version is v1 (every log written so far). */
+export const EVENTS_VERSION = 1;
+
+export interface EventLog { version?: number; events: ReviewEvent[]; summary: EventSummary }
 
 export const emptySummary = (): EventSummary => ({ upTo: 0, counts: {} });
-export const emptyLog = (): EventLog => ({ events: [], summary: emptySummary() });
+export const emptyLog = (): EventLog => ({ version: EVENTS_VERSION, events: [], summary: emptySummary() });
+
+const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x === 'object' && !Array.isArray(x);
+
+/** What the code that reads an event needs of it. The rest of a damaged event is not worth guessing. */
+function usable(e: unknown): e is ReviewEvent {
+  return isObject(e) && Number.isFinite(e.at) && typeof e.node === 'string' && DIRECTIONS.includes(e.dir as never) && Number.isFinite(e.grade);
+}
+
+/**
+ * Read a stored log. A newer log throws a `newer` StoredDocumentError (the
+ * caller must not write over it); one that is not a log throws `unreadable`.
+ * Damaged events are dropped one by one and the rest kept.
+ */
+export function readEvents(raw: unknown): EventLog {
+  if (!isObject(raw) || !Array.isArray(raw.events)) throw new StoredDocumentError('unreadable', 'events', 'not an event log');
+  const version = typeof raw.version === 'number' ? raw.version : 1;
+  if (version > EVENTS_VERSION) throw new StoredDocumentError('newer', 'events', `v${version} is newer than this build (v${EVENTS_VERSION})`);
+  const events = raw.events.filter(usable);
+  if (events.length < raw.events.length) console.warn(`fluidez: dropped ${raw.events.length - events.length} damaged review event(s)`);
+  const sum = raw.summary;
+  const summary: EventSummary = isObject(sum) && Number.isFinite(sum.upTo) && isObject(sum.counts) ? { upTo: sum.upTo as number, counts: sum.counts as EventSummary['counts'] } : emptySummary();
+  return { version: EVENTS_VERSION, events, summary };
+}
 
 const DAY_MS = 86_400_000;
 const AGAIN = 1;
@@ -83,7 +109,7 @@ export function compact(log: EventLog, keepDays: number, now = Date.now()): Even
     (counts[e.node] ??= { receptive: 0, productive: 0 })[e.dir] += 1;
     upTo = Math.max(upTo, e.at);
   }
-  return { events: keep, summary: { upTo, counts } };
+  return { version: EVENTS_VERSION, events: keep, summary: { upTo, counts } };
 }
 
 /** Like delayedAccuracy but with the count: how many delayed scored reviews, and how many were not Again. */
