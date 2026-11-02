@@ -8,6 +8,7 @@ import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { bringChapter } from '../../src/ui/data/prepare';
 import { StoryCard } from '../../src/ui/screens/home';
+import { sessionLabel } from '../../src/ui/session/labels';
 import { ReadChapter } from '../../src/ui/blocks/read';
 import { Story } from '../../src/ui/screens/story';
 import { CHAPTER_OFFLINE, chaptersRead, storySoFar } from '../../src/ui/session/storyline';
@@ -104,6 +105,14 @@ describe('Home\'s story card', () => {
 
   it('shows nothing for a learner with no chapter read and nothing true to say', () => {
     expect(card(reader([]), { unit: 12 }, undefined)).toBe('');
+  });
+});
+
+describe('a lesson picked up after a fresh open', () => {
+  it('is named for its chapter though the tab has not loaded the chapter', () => {
+    expect(bundle.chapters.has('ch150')).toBe(false);
+    const plan = { type: 'input', unit: 'u47', blocks: [{ kind: 'read', chapter: 'ch150' }] } as any;
+    expect(sessionLabel(plan, bundle)).toBe(`Story time: ${bundle.story.find((c) => c.id === 'ch150')!.title}`);
   });
 });
 

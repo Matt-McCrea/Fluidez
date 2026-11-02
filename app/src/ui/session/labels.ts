@@ -16,7 +16,8 @@ export function sessionLabel(plan: Pick<SessionPlan, 'type' | 'blocks' | 'unit' 
   switch (plan.type) {
     case 'introduce': return teach && 'node' in teach ? `New: ${lc(b.title(teach.node))}` : 'New words and phrases';
     case 'drill': return focus?.focus ? `Practice: ${lc(b.title(focus.focus))}` : 'Practice what you know';
-    case 'input': return read ? `Story time: ${b.chapters.get(read.chapter)?.title ?? 'the next chapter'}` : 'New words, in a story';
+    // the library names a chapter this tab has not loaded (a lesson picked up after a fresh open)
+    case 'input': return read ? `Story time: ${b.story.find((c) => c.id === read.chapter)?.title ?? 'the next chapter'}` : 'New words, in a story';
     case 'patterns': return 'Patterns: more ways to say it';
     case 'output': return scene ? `Real conversation: ${lc(b.scenes.get(scene.scene)?.title ?? 'a chat')}` : plan.blocks.some((x) => x.kind === 'writing') ? 'Practice: writing it down' : 'Practice what you know';
     case 'review': return plan.converted?.reason === 'offline' ? 'Review for today' : 'Catch-up mix';
