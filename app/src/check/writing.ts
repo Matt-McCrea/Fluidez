@@ -66,8 +66,9 @@ export interface CheckContext {
 }
 
 export interface ConstraintResult { label: string; pass: boolean; detail: string }
-/** Whether a text is Spanish sentences at all, before any constraint is read. */
-export interface WritingFloor { ok: boolean; reason?: string }
+/** Whether a text is Spanish sentences at all, before any constraint is read. `reason` is why it is not (the
+ *  ticks are withheld); `note` is something worth saying about a text that stays above the floor. */
+export interface WritingFloor { ok: boolean; reason?: string; note?: string }
 export interface WritingResult {
   results: ConstraintResult[];
   passed: number;
@@ -166,8 +167,9 @@ const sentencesOf = (text: string) => text.split(/[.!?…\n]+/).filter((x) => HA
 const ENGLISH_SHARE_MAX = 0.2;
 const COUNTS = new Set<Constraint['type']>(['minWords', 'maxWords', 'minSentences']);
 
-/** Is this text Spanish sentences? What the app can tell without reading meaning: most words are Spanish,
- *  the same lines do not come round again, and most lines have a verb. A short text is not judged. */
+/** Is this text Spanish sentences? What the app can tell without reading meaning: most words are Spanish
+ *  and the same lines do not come round again. A short text is not judged. Lines with no verb the app can
+ *  find are a note, not a failure: an order, a menu or a list is real Spanish made of fragments. */
 export function writingFloor(text: string, analysis: SentenceAnalysis, lexicon?: ReadonlySet<string>): WritingFloor {
   const toks = analysis.tokens;
   if (toks.length < 5) return { ok: true };
@@ -183,7 +185,7 @@ export function writingFloor(text: string, analysis: SentenceAnalysis, lexicon?:
   // "hay" is the one verb the engine does not read as one
   const verbless = (x: string) => { const a = analyzeSentence(x); return !a.verbs.length && !a.tokens.includes('hay'); };
   if (long.length >= 4 && long.filter(verbless).length > long.length / 2) {
-    return { ok: false, reason: "Most of these lines have no verb the app can find. Each sentence needs one." };
+    return { ok: true, note: 'The app can\'t find a verb in most of these lines. Fragments are fine in a list, but a full sentence needs one.' };
   }
   return { ok: true };
 }

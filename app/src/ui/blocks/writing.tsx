@@ -9,6 +9,7 @@ import { Continue } from '../components/card';
 import { Bar, Es, Heading, Rich, undash } from '../components/text';
 import { blockHeading, lessonTypeWord } from '../session/labels';
 import { MORE_MIN_STREAK, MORE_MINUTES } from '../session/more';
+import { bundleLexicon } from '../session/scene';
 import { lastWeekCameBack } from '../../learner/metrics';
 import type { PracticeSpec } from '../session/practice-spec';
 import type { CanDoMark, RubricAnswer, WritingMark } from '../store/ui';
@@ -43,7 +44,7 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
   const before = useRef(lastWritingMark(ui.state.writing, block.task));
   const h = blockHeading(block, run.bundle);
   const constraints = (task?.constraints ?? []) as unknown as Constraint[];
-  const result = useMemo(() => checkWriting({ constraints }, text), [text]);
+  const result = useMemo(() => checkWriting({ constraints }, text, { lexicon: bundleLexicon(run.bundle) }), [text]);
   if (!task) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
   const n = text.trim().split(/\s+/).filter(Boolean).length;
   const tooShort = n < task.minWords;
@@ -80,7 +81,9 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
         <p class={`count${n > task.maxWords ? ' over' : ''}`} aria-live="polite">{n} words <span class="small">({task.minWords} to {task.maxWords})</span></p>
         {!submitted ? (
           <>
-            {!tooShort && constraints.length > 0 && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
+            {!result.floor.ok ? <p class="hint" data-floor aria-live="polite">{result.floor.reason}</p> : null}
+            {result.floor.note ? <p class="hint" data-floor-note aria-live="polite">{result.floor.note}</p> : null}
+            {!tooShort && result.floor.ok && constraints.length > 0 && missing > 0 ? <p class="hint" aria-live="polite">You can send it, but {missing} of {constraints.length} things on the list {missing === 1 ? 'is' : 'are'} still missing.</p> : null}
             <div class="actions"><button class="btn primary" data-primary disabled={tooShort} onClick={submit}>{tooShort ? `Write at least ${task.minWords} words` : 'Done, compare it'}</button></div>
           </>
         ) : (

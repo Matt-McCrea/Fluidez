@@ -144,15 +144,36 @@ describe('text that is not Spanish sentences earns no tick but the counts', () =
     expect(r.results[1].pass).toBe(false);
   });
 
-  test('a long run of Spanish nouns with no verb is not a pass', () => {
+  // Real Spanish is often fragments: a menu, an order, a list. The app cannot read meaning, so a
+  // text with no verb it can find is told so, and keeps the ticks it earned.
+  test('a run of Spanish fragments with no verb the app can find keeps its ticks, and is told so', () => {
     const nouns = ['gato', 'perro', 'mesa', 'silla', 'casa', 'carro', 'libro', 'puerta', 'ventana', 'camino', 'plato', 'vaso', 'cama', 'techo', 'suelo',
       'pared', 'lámpara', 'espejo', 'cuadro', 'reloj', 'llave', 'mapa', 'cesta', 'banco', 'plaza', 'calle', 'parque', 'tienda', 'cocina', 'jardín'];
     const lines = Array.from({ length: nouns.length / 2 }, (_, i) => `El ${nouns[2 * i]} y la ${nouns[2 * i + 1]}.`);
     const lexicon = buildLexicon([], [...lines, ...nouns]);
     const r = checkWriting({ constraints: [{ type: 'minSentences', n: 4 }, { type: 'avoidsPerson', person: 'tú' }] }, lines.join(' '), { lexicon });
-    expect(r.floor.ok).toBe(false);
-    expect(r.floor.reason).toMatch(/verb/);
-    expect(r.results.map((x) => x.pass)).toEqual([true, false]);
+    expect(r.floor.ok).toBe(true);
+    expect(r.floor.reason).toBeUndefined();
+    expect(r.floor.note).toMatch(/find a verb/);
+    expect(r.results.map((x) => x.pass)).toEqual([true, true]);
+    expect(r.allPass).toBe(true);
+  });
+
+  test('an order at a counter is Spanish, and the note is the only thing said about it', () => {
+    const order = 'Un tinto con leche, por favor. Dos empanadas de pollo. Una botella de agua. La cuenta, por favor. Nada más, gracias.';
+    const r = checkWriting({ constraints: [{ type: 'minSentences', n: 4 }, { type: 'minWords', n: 15 }] }, order);
+    expect(r.floor.ok).toBe(true);
+    expect(r.floor.note).toBeTruthy();
+    expect(r.results.map((x) => x.pass)).toEqual([true, true]);
+  });
+
+  test('a text with verbs has no note', () => {
+    expect(checkWriting({ constraints: [] }, 'Anoche me quedé en casa y cociné algo sencillo. Llamé a mi hermana. Hablamos de nuestros planes.').floor).toEqual({ ok: true });
+  });
+
+  test('the note does not dash, and says what the app could not find', () => {
+    const r = checkWriting({ constraints: [] }, 'Un tinto con leche. Dos empanadas de pollo. Una botella de agua. La cuenta, por favor.');
+    expect(r.floor.note).not.toMatch(/[–—]| - /);
   });
 
   test('the same sentence over and over is not a pass', () => {
