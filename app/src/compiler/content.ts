@@ -20,6 +20,8 @@ export interface ContentSource {
   scripts: (TeachingScript | ScriptRef)[];
   /** every chapter of the story as the library knows it, loaded or not (absent: the story is the chapters above) */
   library?: LibraryChapter[];
+  /** the files the build has that this device could not get (see ContentIndex.lacking) */
+  lacking?: string[];
 }
 
 export function buildCourse(units: Unit[], nodes: GraphNode[]): Course {
@@ -237,6 +239,7 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
   return {
     sentences, byTarget, byRequire, byUnit,
     chapters, chapterById: new Map(chapters.map((c) => [c.id, c])), ...(story ? { story } : {}),
+    ...(src.lacking?.length ? { lacking: new Set(src.lacking) } : {}),
     scenes, scenesByUnit, tasks, tasksByUnit, scripts,
   };
 }

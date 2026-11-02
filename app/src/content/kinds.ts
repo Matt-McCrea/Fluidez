@@ -66,3 +66,10 @@ export function unregistered(dirs: readonly string[]): string[] {
   const known = new Set<string>(contentDirs());
   return dirs.filter((d) => !known.has(d));
 }
+
+/**
+ * Names a file of the course by what it is for, the way the loader says what it could not get and the
+ * compiler asks whether it is there: the unit for a bank, scene or writing file, the node for a script,
+ * the chapter for a chapter.
+ */
+export const lackKey = (dir: ContentDir, id: string): string => `${dir}:${id}`;

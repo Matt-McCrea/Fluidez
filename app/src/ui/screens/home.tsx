@@ -22,6 +22,14 @@ export const COURSE_END = {
   next: 'A check shows what has stuck. The chapters you have read are in Story.',
 } as const;
 
+/** What Home says when the day's lessons are on the server and this device could not get them: the day is review, and the lesson is still ahead. */
+export const OFFLINE_LINE = 'The next lessons need a connection. Today is review.';
+
+/** The line for a plan the compiler held back for want of content this device does not have; nothing for any other plan. */
+export function offlineLine(plan: { converted?: { reason: string } } | undefined): string | undefined {
+  return plan?.converted?.reason === 'offline' ? OFFLINE_LINE : undefined;
+}
+
 /**
  * The first line of a week, when the path has just left a week the learner worked through: which
  * one, and where its goal stands. Not shown for the first week, nor for weeks placement jumped over.
@@ -68,7 +76,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
   const plan = useMemo(() => {
     if (saved) return undefined;
     try { return compilePlan(learner, bundle, ui, { mode, now }); } catch { return undefined; }
-  }, [ui.path, learner.sessionIndex, mode, !!saved]);
+  }, [ui.path, learner.sessionIndex, mode, !!saved, bundle.index]);
   const minutesLeft = saved ? Math.max(1, Math.round(savedMinutesLeft(saved))) : 0;
   const spots = useMemo(() => {
     try {
@@ -103,6 +111,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
         <p class="ask" id="today-title">{doneToday ? 'Up next' : 'Today'}</p>
         {saved ? <p class="big" data-label>{sessionLabel(saved.plan, bundle)}</p>
           : plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
+        {offlineLine(plan) ? <p data-offline>{offlineLine(plan)}</p> : null}
         {short ? <p data-short>A short one today</p> : null}
         {saved ? <p class="small" data-left>About {minutesLeft} {minutesLeft === 1 ? 'minute' : 'minutes'} left</p>
           : plan ? <p class="small">About {Math.max(5, Math.round(plan.estimatedMinutes))} minutes</p> : null}

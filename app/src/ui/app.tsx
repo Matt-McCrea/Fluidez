@@ -155,6 +155,12 @@ export function App({ opts }: { opts?: BootOptions }) {
   };
 
   useEffect(() => { void start(); }, []);
+  // the connection comes back: ask again for whatever a lesson was waiting on, and Home changes its mind
+  useEffect(() => {
+    const back = () => { void ctx?.reloadBundle(); };
+    window.addEventListener('online', back);
+    return () => window.removeEventListener('online', back);
+  }, [ctx]);
   useEffect(() => {
     const on = () => setUpdate(true);
     window.addEventListener('fluidez:update', on);

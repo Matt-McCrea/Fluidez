@@ -81,6 +81,8 @@ export class Bundle {
       if (!('hook' in s) || this.scripts.has(s.node)) continue;
       this.scripts.set(s.node, s); src.scripts.push(s); changed = true;
     }
+    // what the loader still lacks is its whole current list, not a change to the last one
+    if (add.lacking && add.lacking.join('\u0000') !== (src.lacking ?? []).join('\u0000')) { src.lacking = add.lacking; changed = true; }
     if (changed) {
       this.index = buildContentIndex(src, this.course);
       this.byEs = undefined;

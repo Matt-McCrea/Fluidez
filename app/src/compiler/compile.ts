@@ -23,6 +23,7 @@
 //    when supply runs short the block/session converts and a 'shortage' is logged;
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
+import { lackKey } from '../content/kinds';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
 import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
@@ -354,6 +355,13 @@ class Compiler {
       return { type: 'review', advances: false };
     }
     const dt = day.type;
+    // A day whose content this device could not get is not taught as if nobody had written it and then marked done:
+    // it is a review day, the path stays, and prepare asks again for what is lacking.
+    const lacked = this.lackedBy(day);
+    if (lacked.length) {
+      this.diag({ code: 'offline', unit: this.unit?.id, message: `${dt} day needs ${lacked.join(', ')}, which this device could not get: reviews only, the path stays` });
+      return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'offline' } };
+    }
     // Spacing: a pending drill at its last allowed session wins over everything.
     const lastChance = [...this.path.pendingDrills].sort((a, b) => a.at - b.at).find((p) => c - p.at >= DRILL_WITHIN);
     if (lastChance) {
@@ -622,26 +630,53 @@ class Compiler {
    * has not loaded is passed over, since only a loaded one can be gated or read.
    * A learner placed part way through the course starts at their own unit.
    */
-  private chapterFor(day: Unit['days'][number] | undefined): { ch?: ChapterRef; reason?: 'seen' | 'missing' | 'gated'; blocked?: string } {
+  private chapterFor(day: Unit['days'][number] | undefined, probe = false): { ch?: ChapterRef; reason?: 'seen' | 'missing' | 'gated' | 'unavailable'; blocked?: string } {
     let blocked: string | undefined;
     const unread = unreadChapters(this.content.story ?? this.content.chapters, this.course, this.path, this.input.placedAt ?? 0, (id) => this.L.ledger.hasSeen('chapter', id));
     for (const s of unread) {
       const c = this.content.chapterById.get(s.id);
-      if (!c) continue;
+      if (!c) {
+        // the next chapter in line is one this device could not get: the story is not read past it
+        if (!blocked && this.content.lacking?.has(lackKey('story', s.id))) return { reason: 'unavailable', blocked: s.id };
+        continue;
+      }
       if (this.gated(c.requires)) {
         const cov = this.coverage(c.requires);
         if (cov.admitted) {
-          if (cov.unstable) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, within cap ${cov.allowed})` });
+          if (cov.unstable && !probe) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, within cap ${cov.allowed})` });
           return { ch: c };
         }
-        this.slipping.add(c.id);
-        this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id} waits: ${cov.unstable}/${cov.required} required words are slipping (cap ${cov.allowed})` });
+        if (!probe) {
+          this.slipping.add(c.id);
+          this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id} waits: ${cov.unstable}/${cov.required} required words are slipping (cap ${cov.allowed})` });
+        }
       }
       blocked ??= c.id;
     }
     if (blocked) return { reason: 'gated', blocked };
     if (day?.chapter && this.L.ledger.hasSeen('chapter', day.chapter)) return { reason: 'seen' };
     return { reason: day?.chapter && !this.content.chapterById.has(day.chapter) ? 'missing' : 'seen' };
+  }
+
+  /**
+   * What the day needs that the build has and this device could not get (empty when nothing is lacking, and
+   * for anything nobody wrote: a gap in the authoring is a shortage, not a download that failed). The unit's
+   * sentences; the scripts of what it teaches; the chapter it reads, or one before it that is owed; the scene
+   * and the writing of an output day.
+   */
+  private lackedBy(day: Unit['days'][number]): string[] {
+    const lacking = this.content.lacking;
+    if (!lacking?.size || !this.unit) return [];
+    const unit = this.unit.id;
+    const need = [lackKey('bank', unit)];
+    for (const n of day.focus) if (['grammar', 'pattern', 'contrast'].includes(kindOf(n, this.course.nodes))) need.push(lackKey('scripts', n));
+    if (day.type === 'output' || day.type === 'checkpoint') need.push(lackKey('scenes', unit), lackKey('writing', unit));
+    const lacked = need.filter((k) => lacking.has(k));
+    if (day.chapter && (day.type === 'introduce' || day.type === 'input')) {
+      const next = this.chapterFor(day, true);
+      if (next.reason === 'unavailable') lacked.push(lackKey('story', next.blocked!));
+    }
+    return lacked;
   }
 
   private sceneFor(preferred: string | undefined): string | undefined {
@@ -1066,7 +1101,7 @@ class Compiler {
   }
 
   /** Returns true when it was a real shortage (false = deferred or already seen). */
-  private chapterProblem(id: string, reason: 'seen' | 'missing' | 'gated'): boolean {
+  private chapterProblem(id: string, reason: 'seen' | 'missing' | 'gated' | 'unavailable'): boolean {
     if (reason === 'seen') { this.diag({ code: 'alreadySeen', block: 'read', message: `chapter ${id} already read: skipped, not repeated` }); return false; }
     const ch = this.content.chapterById.get(id);
     if (reason === 'gated' && this.slipping.has(id)) {

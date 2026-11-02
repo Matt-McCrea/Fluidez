@@ -109,6 +109,11 @@ export interface ContentIndex {
   chapterById: Map<string, ChapterRef>;
   /** every chapter of the story in order, loaded or not, when the course ships a library (absent: the story is `chapters`) */
   story?: StoryRef[];
+  /**
+   * Files the build has and this device could not get, by lackKey (src/content/kinds.ts). Never says a
+   * file nobody wrote: that is a shortage, and the day goes on. Absent or empty: nothing is missing.
+   */
+  lacking?: ReadonlySet<string>;
   scenes: Map<string, SceneRef>;
   scenesByUnit: Map<string, string[]>;
   tasks: Map<string, TaskRef>;
@@ -448,8 +453,9 @@ export interface Conversion {
    *           would follow an introduce (path does NOT advance)
    * shortage: gated, unseen content ran out (the day is consumed: the path advances)
    * nothingNew: an introduce day with nothing left to introduce becomes a drill
+   * offline:  content the day needs exists but this device could not get it (path does NOT advance)
    */
-  reason: 'throttle' | 'spacing' | 'shortage' | 'nothingNew';
+  reason: 'throttle' | 'spacing' | 'shortage' | 'nothingNew' | 'offline';
   /** only some blocks were converted (e.g. the chapter of an input day) */
   partial?: boolean;
 }
@@ -467,6 +473,7 @@ export type DiagnosticCode =
   | 'coverage'         // a chapter or extra reading was weighed against retained (stable) words
   | 'fallback'         // a drill block was filled from the node's script because the bank ran short
   | 'noReread'         // no chapter eligible for a deliberate re-read
+  | 'offline'          // the day needs content this device could not get: reviews only, the path stays
   | 'pathDone';        // course finished: maintenance review
 
 export interface Diagnostic {

@@ -14,7 +14,7 @@ import {
 } from '../../content/schema';
 import { Library, type LibraryChapter } from '../../content/library';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
-import { isCoreFile, type ContentDir } from '../../content/kinds';
+import { isCoreFile, lackKey, type ContentDir } from '../../content/kinds';
 import { Bundle } from './bundle';
 
 export type FileLoader = () => Promise<unknown>;
@@ -106,12 +106,35 @@ export class ContentLoader {
   private readonly loaded = new Set<string>();
   private readonly src: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
   private readonly missingScripts = new Set<string>();
+  /** the files that exist in the build and failed to arrive, by path: asked for again next time, and what the compiler is told is lacking */
+  private readonly failed = new Map<string, FileKind>();
   readonly problems: string[] = [];
 
   constructor(private readonly files: ContentFiles = CONTENT_FILES) {}
 
   private async read(map: FileMap, path: string): Promise<unknown> {
-    try { return await map[path](); } catch (e) { this.problems.push(`${path}: ${(e as Error).message}`); return undefined; }
+    try { return await map[path](); } catch (e) {
+      // the same file failing again is the same complaint
+      const why = `${path}: ${(e as Error).message}`;
+      if (!this.problems.includes(why)) this.problems.push(why);
+      return undefined;
+    }
+  }
+
+  /**
+   * The files of the course that exist and did not arrive, named by what they are for (lackKey): the
+   * compiler is told, so a day that needs one waits instead of being taught without it. A file that was
+   * never asked for, or that nobody wrote, is not here.
+   */
+  lacking(): string[] {
+    const out = new Set<string>();
+    for (const [path, kind] of this.failed) {
+      const name = baseName(path);
+      if (kind === 'story') out.add(lackKey(kind, name));
+      else if (kind === 'scripts') out.add(lackKey(kind, name.replace('_', ':')));
+      else { const m = name.match(/\b(u\d{2})\b/); if (m) out.add(lackKey(kind, m[1])); }
+    }
+    return [...out].sort();
   }
 
   /** Graph + units: always needed (titles, the course order). */
@@ -150,13 +173,23 @@ export class ContentLoader {
       const paths = Object.keys(this.files[kind]).sort().filter((p) => !this.loaded.has(p) && want(kind, p));
       paths.forEach((p) => this.loaded.add(p));  // claim first: a concurrent call must not load it twice
       const raws = await Promise.all(paths.map((p) => this.read(this.files[kind], p)));
-      paths.forEach((p, i) => { if (raws[i] !== undefined) push(raws[i], p); });
+      paths.forEach((p, i) => {
+        if (raws[i] === undefined) {
+          // not got: let go of the claim so the next ensureWindow asks again, and remember it is lacking
+          this.loaded.delete(p);
+          this.failed.set(p, kind);
+        } else {
+          this.failed.delete(p);
+          push(raws[i], p);
+        }
+      });
     }));
     this.src.sentences.push(...add.sentences);
     this.src.chapters.push(...add.chapters);
     this.src.scenes.push(...add.scenes);
     this.src.writing.push(...add.writing);
     this.src.scripts.push(...add.scripts);
+    add.lacking = this.lacking();
     return add;
   }
 
@@ -217,7 +250,9 @@ export class ContentLoader {
     const name = scriptFile(node);
     if (this.missingScripts.has(name)) return { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
     const add = await this.fetch((kind, p) => kind === 'scripts' && baseName(p) === name);
-    if (!add.scripts.length && !this.src.scripts.some((s) => s.node === node)) this.missingScripts.add(name);
+    // a script that is not there is not written; one that failed to arrive is asked for again
+    const failed = [...this.failed].some(([p, kind]) => kind === 'scripts' && baseName(p) === name);
+    if (!add.scripts.length && !failed && !this.src.scripts.some((s) => s.node === node)) this.missingScripts.add(name);
     return add;
   }
 
@@ -239,6 +274,7 @@ export class ContentLoader {
       sentences: [...this.src.sentences], chapters: [...this.src.chapters], scenes: [...this.src.scenes],
       writing: [...this.src.writing], scripts: [...this.src.scripts],
       ...(library.length ? { library } : {}),
+      lacking: this.lacking(),
     };
   }
 
