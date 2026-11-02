@@ -226,15 +226,16 @@ export interface SavedSession {
   runner: RunnerSnapshot;
 }
 
-/** A saved session is worth picking up on the same day, within a few hours, for this learner, if the learner has not moved on. */
-export const RESUME_WINDOW_MS = 3 * 3_600_000;
-export function isResumable(saved: SavedSession | undefined, learner: Pick<Learner, 'sessionIndex' | 'day'>, now: number, learnerId: string): saved is SavedSession {
+/**
+ * A saved session is worth picking up for this learner while they have not moved on, however long it has sat:
+ * a lesson is parts, and the parts survive midnight. Whether the course moved under it is settled at boot
+ * (learner/reconcile.ts, by contentVersion and dayKey); a lesson dropped there goes through the interrupted-lesson sweep.
+ */
+export function isResumable(saved: SavedSession | undefined, learner: Pick<Learner, 'sessionIndex'>, now: number, learnerId: string): saved is SavedSession {
   if (!saved || (saved.version !== 1 && saved.version !== 2)) return false;
   if (saved.learnerId !== learnerId) return false;
   if (saved.sessionIndex !== learner.sessionIndex) return false;
-  if (learner.day(saved.savedAt) !== learner.day(now)) return false;
-  const age = now - saved.savedAt;
-  return age >= 0 && age < RESUME_WINDOW_MS;
+  return now >= saved.savedAt;
 }
 
 export class UiStore {

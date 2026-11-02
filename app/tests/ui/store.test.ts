@@ -1,5 +1,6 @@
 import { describe, expect, test, vi } from 'vitest';
 import { initialPath } from '../../src/compiler';
+import { sweepIntroductions } from '../../src/ui/session/runner';
 import { IdbStore, Learner } from '../../src/learner';
 import { applyStreak, emptyUi, isResumable, MemoryKV, PATH_KEY, SESSION_KEY, streakStatus, UI_KEY, UiStore, type SavedSession } from '../../src/ui/store/ui';
 
@@ -177,10 +178,27 @@ describe('saved session', () => {
 
   test('a fresh snapshot is resumable; a stale, foreign or moved-on one is not', () => {
     expect(isResumable(saved(), learner, at(19), 'me')).toBe(true);
-    expect(isResumable(saved(), learner, at(22), 'me')).toBe(false);              // 4 h old
     expect(isResumable(saved(), learner, at(19), 'someone-else')).toBe(false);    // another learner
     expect(isResumable(saved({ sessionIndex: 3 }), learner, at(19), 'me')).toBe(false);
-    expect(isResumable(saved({ savedAt: at(23) - 86_400_000 }), learner, at(1) + 86_400_000, 'me')).toBe(false); // another day
     expect(isResumable(undefined, learner, at(19), 'me')).toBe(false);
+    expect(isResumable(saved({ savedAt: at(19) + 1 }), learner, at(19), 'me')).toBe(false);  // from the future
+  });
+
+  test('a lesson survives midnight and a week, and its nodes are neither lost nor counted twice', async () => {
+    const DAY = 86_400_000;
+    const learnerNow = await Learner.open(new IdbStore(new MemoryKV()));
+    learnerNow.introduce('n1' as never, { at: at(23) });
+    learnerNow.introduce('n2' as never, { at: at(23) });
+    const s = saved({ savedAt: at(23) });
+    for (const later of [at(23) + 2 * 3_600_000, at(23) + 7 * DAY]) {
+      expect(isResumable(s, learner, later, 'me')).toBe(true);
+    }
+    // resumable: nothing is swept, both nodes still in their lesson
+    expect(learnerNow.isLearning('n1' as never) && learnerNow.isLearning('n2' as never)).toBe(true);
+    // a course that moved under it discards the lesson: the sweep hands each node over exactly once
+    const swept = sweepIntroductions(learnerNow, at(23) + 7 * DAY);
+    expect(swept.sort()).toEqual(['n1', 'n2']);
+    expect(sweepIntroductions(learnerNow, at(23) + 7 * DAY)).toEqual([]);
+    expect(learnerNow.nodes().filter((id) => !learnerNow.isLearning(id)).sort()).toEqual(['n1', 'n2']);
   });
 });
