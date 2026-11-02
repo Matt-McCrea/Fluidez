@@ -19,7 +19,7 @@ export const GAMES_VERSION = 1;
 export const ROUNDS_CAP = 300;
 export const READINGS_CAP = 300;
 
-export type GameId = 'flash' | 'rescue' | 'reread';
+export type GameId = 'flash' | 'rescue' | 'reread' | 'uno';
 
 /** A best, in the game's own unit. */
 export interface Best { score: number; at: number }
@@ -66,6 +66,8 @@ export const emptyGames = (): GamesDoc => ({ version: GAMES_VERSION, bests: {}, 
 
 /** The key a Relámpago best is kept under: one fixed deck per name ("presente", "palabras"). */
 export const flashKey = (deck: string): string => `flash:${deck}`;
+/** The key an Uno u otro best is kept under: one deck per contrast. */
+export const unoKey = (contrast: string): string => `uno:${contrast}`;
 /** The key a De corrido best is kept under: the stage of the chapter. */
 export const rereadKey = (band: string): string => `reread:${band}`;
 
@@ -73,7 +75,7 @@ const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x =
 const finite = (x: unknown): x is number => typeof x === 'number' && Number.isFinite(x);
 
 const usableRound = (r: unknown): r is RoundRow =>
-  isObject(r) && finite(r.at) && finite(r.score) && typeof r.deck === 'string' && (r.game === 'flash' || r.game === 'rescue' || r.game === 'reread');
+  isObject(r) && finite(r.at) && finite(r.score) && typeof r.deck === 'string' && (r.game === 'flash' || r.game === 'rescue' || r.game === 'reread' || r.game === 'uno');
 const usableReading = (r: unknown): r is ReadingRow =>
   isObject(r) && finite(r.at) && typeof r.chapter === 'string' && typeof r.band === 'string' && finite(r.words) && finite(r.secs) && finite(r.wpm) && typeof r.counted === 'boolean';
 const usableBest = (b: unknown): b is Best => isObject(b) && finite(b.score) && finite(b.at);

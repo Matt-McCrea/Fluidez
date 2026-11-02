@@ -10,6 +10,7 @@
 import type { Learner } from '../learner';
 import type { FlashResult } from './flash';
 import type { RescueResult } from './rescue';
+import type { UnoResult } from './uno';
 import { SKIP_SECONDS, WRONG_SECONDS } from './round';
 import type { BestResult } from './store';
 
@@ -56,6 +57,23 @@ export function flashReaction(r: FlashResult, taught: Cheer | undefined): RoundR
     const kind = r.deck === 'palabras' ? 'choose' : 'type';
     return { ...out, remark: `The ${r.wrong} wrong answers took ${seconds(r.wrong * WRONG_SECONDS[kind])} off the clock. Passing on them would have taken ${seconds(Math.round(r.wrong * SKIP_SECONDS * 10) / 10)}.` };
   }
+  return out;
+}
+
+/**
+ * What an Uno u otro round earned in words, in the same order as Relámpago's: a clean round, a pass chosen over a guess, the word
+ * that kept slipping, a climb over the two rounds before, and on the clock what the wrong answers cost.
+ */
+export function unoReaction(r: UnoResult, taught: Cheer | undefined): RoundReaction {
+  const clean = r.wrong === 0;
+  const earned = r.best.isBest && r.best.was !== undefined ? true : clean && r.score >= 5;
+  const out: RoundReaction = earned && taught ? { cheer: taught } : {};
+  if (clean && r.skipped > 0) return { ...out, remark: `Nothing wrong, and you passed on ${r.skipped} instead of guessing.` };
+  if (clean && r.score >= 5) return { ...out, remark: 'Not one wrong.' };
+  if (r.slipped) return { ...out, remark: `${r.slipped.word} slipped ${times(r.slipped.times)}.` };
+  const [a, b] = r.before.slice(-2);
+  if (a !== undefined && b !== undefined && a < b && b < r.score) return { ...out, remark: 'Three rounds in a row, each better than the last.' };
+  if (r.timed && r.wrong >= 3) return { ...out, remark: `The ${r.wrong} wrong answers took ${seconds(r.wrong * WRONG_SECONDS.choose)} off the clock. Passing on them would have taken ${seconds(Math.round(r.wrong * SKIP_SECONDS * 10) / 10)}.` };
   return out;
 }
 

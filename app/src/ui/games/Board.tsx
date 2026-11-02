@@ -32,6 +32,20 @@ export function Board({ onPlay }: { onPlay: (c: GameChoice) => void }) {
           <div class="actions"><button class="btn quiet" data-reread onClick={() => onPlay({ game: 'reread' })}>Read one again</button></div>
         </div>
       ) : null}
+      {shelf.uno.length ? (
+        <div class="tile" data-game="uno">
+          <p class="tile-name">Uno u otro</p>
+          <p>A choice of two on a contrast you have met. Some run against the clock and some do not. It never changes your review schedule.</p>
+          <div class="decks">
+            {shelf.uno.map((t) => (
+              <button key={t.deck.id} class="btn quiet deck" data-deck={t.deck.id} onClick={() => onPlay({ game: 'uno', deck: t.deck })}>
+                {t.deck.title}
+                <span class="best">{t.best !== undefined ? `Best ${t.best}` : 'No score yet'}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : null}
       {shelf.flash.length ? (
         <div class="tile" data-game="flash">
           <p class="tile-name">Relámpago</p>

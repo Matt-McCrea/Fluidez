@@ -5,6 +5,8 @@
 //   Relámpago (flash)  exposure only. A speed game never moves a card: a slip at
 //                      speed is not the learner forgetting, and one touch at any
 //                      time would hide a shortfall or lapse a stable card.
+//   Uno u otro (uno)   exposure only, the same: a choice of two on a contrast the
+//                      learner has reached, and never the spaced return.
 //   De corrido         exposure on the words of a chapter already read, once, if
 //                      the run counted. Nothing is graded.
 //   Rescate            real reviews, and only of cards that are due: no clock,
@@ -21,6 +23,7 @@ import { reviewSentence, seen, seenAbout } from '../ui/session/attempt';
 /** The ops the games write on the event log. Weak spots read both as form drills (learner/weak.ts). */
 export const FLASH_OP = 'flash';
 export const RESCUE_OP = 'rescue';
+export const UNO_OP = 'uno';
 
 export interface FlashAnswer {
   /** the node the answer is about: the tense of a form, or the word */
@@ -40,6 +43,22 @@ export interface FlashAnswer {
 export function creditFlash(learner: Learner, a: FlashAnswer): void {
   seenAbout(learner, a.target, a.credit, {
     op: FLASH_OP, direction: a.direction ?? 'productive', grade: a.right ? Rating.Good : Rating.Again, tries: 1, novel: false,
+  }, a.at);
+}
+
+export interface UnoAnswer {
+  /** the contrast the item is about */
+  contrast: NodeId;
+  /** the contrast and the side the right option belongs to; these count as seen */
+  credit: readonly NodeId[];
+  right: boolean;
+  at: number;
+}
+
+/** One answer in Uno u otro: an exposure and an event on the contrast alone, never a card moved. Receptive, since a choice is recognised. */
+export function creditUno(learner: Learner, a: UnoAnswer): void {
+  seenAbout(learner, a.contrast, a.credit, {
+    op: UNO_OP, direction: 'receptive', grade: a.right ? Rating.Good : Rating.Again, tries: 1, novel: false,
   }, a.at);
 }
 
