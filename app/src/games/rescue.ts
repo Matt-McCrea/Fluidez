@@ -10,7 +10,7 @@ import { rng } from '../exercises/rng';
 import type { Learner } from '../learner';
 import type { Bundle } from '../ui/data/bundle';
 import type { Card } from '../ui/session/cards';
-import { dueCards, Freeplay } from '../ui/session/freeplay';
+import { Freeplay, rescueCards } from '../ui/session/freeplay';
 import type { Outcome } from '../ui/session/attempt';
 
 const DAY_MS = 86_400_000;
@@ -22,7 +22,7 @@ export const RESCUE_MIN = 3;
 
 /** How many cards could be rescued now: due and askable, one for each node. */
 export function rescueCount(learner: Learner, at: number): number {
-  return new Set(dueCards(learner, at).map((c) => c.node)).size;
+  return new Set(rescueCards(learner, at).map((c) => c.node)).size;
 }
 
 /** Content a rescue needs: the units up to the learner's current one, as a quick review loads them. */

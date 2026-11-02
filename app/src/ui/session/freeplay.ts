@@ -78,6 +78,20 @@ export function dueCards(learner: Learner, at: number): DueCard[] {
   return learner.due(at).filter((c) => c.state !== State.Learning && !learner.isLearning(c.node));
 }
 
+/**
+ * The cards a rescue may ask: the due ones, less any whose other side was reviewed today. A lesson scores a node in one
+ * direction and buries the other card (compiler); a rescue has no session to bury it in, and "Another round" comes seconds
+ * after the answer was on screen. A Good then is stability earned by reading, so the other side waits for another day.
+ */
+export function rescueCards(learner: Learner, at: number): DueCard[] {
+  const today = learner.day(at);
+  const reviewedToday = (node: NodeId, direction: Direction) => {
+    const last = learner.card(node, direction)?.last_review;
+    return last !== undefined && learner.day(last) === today;
+  };
+  return dueCards(learner, at).filter((c) => !reviewedToday(c.node, c.direction === 'productive' ? 'receptive' : 'productive'));
+}
+
 /** Key a personal best is stored under. */
 export function bestKey(spec: PracticeSpec): string {
   if (spec.kind !== 'conjugate') return spec.kind;
@@ -257,7 +271,7 @@ export class Freeplay {
       const c = learner.card(node, dir);
       return !!c && !c.suspended && c.state !== State.Learning && !learner.isLearning(node);
     };
-    for (const c of dueCards(learner, at)) {
+    for (const c of this.d.rescue ? rescueCards(learner, at) : dueCards(learner, at)) {
       const had = picked.get(c.node);
       if (had === undefined) order.push(c.node);
       // one direction per node: the productive one when it is due too

@@ -65,6 +65,20 @@ describe('the ready card', () => {
   });
 });
 
+describe('a rescue that ends with nothing answered', () => {
+  it('does not say nothing is ready while cards are, and does not offer the same empty round again', async () => {
+    const s = await screen();
+    await find(s.draw(), (n) => n.props?.['data-start'] !== undefined)[0].props.onClick();
+    await settle();
+    find(s.draw(), (n) => n.props?.['data-stop'] !== undefined)[0].props.onClick();
+    await settle();
+    const over = text(s.draw());
+    expect(over).toMatch(/Nothing answered, so nothing has changed/);
+    expect(over).not.toMatch(/Nothing is ready/);
+    expect(over).not.toMatch(/Another round/);
+  });
+});
+
 describe('a rescue', () => {
   it('asks each due card once, and ends with what was saved, when the saved ones come back, and a round of its own kept', async () => {
     const s = await screen();

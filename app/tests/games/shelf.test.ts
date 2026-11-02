@@ -7,6 +7,7 @@ import { WORDS_DECK } from '../../src/games/flash';
 import { loadShelf, shelfIsEmpty } from '../../src/games/shelf';
 import { flashKey } from '../../src/games/store';
 import type { Bundle } from '../../src/ui/data/bundle';
+import { compilePlan } from '../../src/ui/session/runner';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
 import { world } from '../ui/driver';
 import { graphBundle, learnerAt, ready, T0 } from './helpers';
@@ -15,6 +16,48 @@ let bundle: Bundle;
 beforeAll(async () => { bundle = await graphBundle(); }, 120_000);
 
 const src = (p: string) => readFileSync(new URL(`../../src/${p}`, import.meta.url), 'utf8');
+const DAY = 86_400_000;
+
+describe('a lesson left part-way', () => {
+  // the warm-up it holds names cards a rescue would review. Picking the lesson up then reviews them again, minutes later, at a
+  // recall of 1: real numbers from this path took a card from 22 days to 30 on an answer the learner had just been shown
+  const due = async () => {
+    const w = await world();
+    for (const n of ['g:ser-identity', 'c:me-llamo', 'c:soy-de', 'l:café']) {
+      w.learner.seedKnown(n, { at: w.clock.t - 7 * DAY, productive: true, receptive: { stability: 6, dueAt: w.clock.t - DAY, suspended: true }, productiveCard: { stability: 6, dueAt: w.clock.t - DAY } });
+    }
+    return w;
+  };
+  const shelfOf = (w: Awaited<ReturnType<typeof due>>) => loadShelf({ learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now });
+  const leave = async (w: Awaited<ReturnType<typeof due>>, at = w.now()) => {
+    const plan = compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
+    await w.ui.saveSession({
+      version: 2, learnerId: w.ui.state.learnerId, sessionIndex: w.learner.sessionIndex, mode: 'next', tier: plan.tier, capMinutes: 20, startedAt: at, elapsedMs: 0, savedAt: at, plan, block: 0, cursor: {},
+      runner: { entered: [], skipped: [], presented: [], notPresented: [], lapses: [], learnSteps: [], learnMisses: [], typedOk: [], cardsDone: [], tally: { scored: 0, correct: 0, firstTry: 0 }, scenes: [], reads: [], marked: [] },
+    } as never);
+  };
+
+  it('offers no rescue until it is finished or has gone', async () => {
+    const w = await due();
+    expect((await shelfOf(w)).rescue).toBeDefined();
+    await leave(w);
+    expect((await shelfOf(w)).rescue).toBeUndefined();
+  });
+
+  it('that can no longer be picked up is no reason to hold one back', async () => {
+    const w = await due();
+    await leave(w, w.now() - 2 * DAY);
+    expect((await shelfOf(w)).rescue).toBeDefined();
+  });
+
+  it('leaves the games that move no card where they were', async () => {
+    const { learner } = await ready(bundle);
+    const ui = await new UiStore(new MemoryKV()).load();
+    const open = (await loadShelf({ learner, bundle, ui, now: () => T0 })).flash;
+    ui.session = { version: 2, learnerId: ui.state.learnerId, sessionIndex: learner.sessionIndex, savedAt: T0 } as never;
+    expect((await loadShelf({ learner, bundle, ui, now: () => T0 })).flash).toEqual(open);
+  });
+});
 
 describe('the shelf', () => {
   it('is empty for a learner who owns nothing yet, and then it is not drawn at all', async () => {

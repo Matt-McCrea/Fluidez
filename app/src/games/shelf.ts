@@ -4,7 +4,7 @@
 // they are in the course.
 import type { Learner } from '../learner';
 import type { Bundle } from '../ui/data/bundle';
-import type { UiStore } from '../ui/store/ui';
+import { isResumable, type UiStore } from '../ui/store/ui';
 import { openDecks, type FlashDeck } from './flash';
 import { rereadCandidates } from './reading';
 import { RESCUE_MAX, RESCUE_MIN, rescueCount } from './rescue';
@@ -25,12 +25,14 @@ export interface Shelf {
   doc: GamesDoc;
 }
 
-export interface ShelfDeps { learner: Learner; bundle: Bundle; ui: Pick<UiStore, 'games'>; now: () => number }
+export interface ShelfDeps { learner: Learner; bundle: Bundle; ui: Pick<UiStore, 'games' | 'session' | 'state'>; now: () => number }
 
 export async function loadShelf(d: ShelfDeps): Promise<Shelf> {
   const doc = await d.ui.games.read();
   const flash = openDecks(d.learner, d.bundle).map((deck) => ({ deck, ...(doc.bests[flashKey(deck.id)] ? { best: doc.bests[flashKey(deck.id)].score } : {}) }));
-  const count = rescueCount(d.learner, d.now());
+  // a lesson left part-way still holds its warm-up: a rescue would review those cards, and picking the lesson up would review them again, minutes later
+  const midLesson = isResumable(d.ui.session, d.learner, d.now(), d.ui.state.learnerId);
+  const count = midLesson ? 0 : rescueCount(d.learner, d.now());
   const chapters = rereadCandidates(d.learner, doc, d.now()).length;
   return { flash, ...(count >= RESCUE_MIN ? { rescue: { count, asks: Math.min(count, RESCUE_MAX) } } : {}), ...(chapters ? { reread: chapters } : {}), doc };
 }

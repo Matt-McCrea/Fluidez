@@ -74,6 +74,70 @@ describe('what a rescue asks', () => {
   });
 });
 
+describe('the other side of a card', () => {
+  // both sides of a node come due in a backlog; the first round answers one, and "Another round" is a tap away
+  async function bothDue() {
+    const w = await world();
+    for (const n of ['g:ser-identity', 'c:me-llamo', 'c:soy-de', 'l:café']) {
+      w.learner.seedKnown(n, { at: w.clock.t - 7 * DAY, productive: true, receptive: { stability: 6, dueAt: w.clock.t - DAY }, productiveCard: { stability: 6, dueAt: w.clock.t - DAY } });
+    }
+    return w;
+  }
+  const play = (w: Awaited<ReturnType<typeof bothDue>>) => {
+    const r = rescue(w);
+    let c, n = 0;
+    while ((c = r.next())) { r.answer(answer(c, 'right')); n++; }
+    return { r, n };
+  };
+
+  it('is not asked in the round after: it has just been on screen, so a Good on it would be stability earned by reading', async () => {
+    const w = await bothDue();
+    const before = w.learner.card('l:café', 'receptive')!;
+    expect(play(w).n).toBe(4);
+    expect(rescueCount(w.learner, w.now())).toBe(0);
+    w.clock.t += 30_000;
+    expect(play(w).n).toBe(0);
+    expect(w.learner.card('l:café', 'receptive')).toEqual(before);
+    expect(w.learner.events().filter((e) => e.op === RESCUE_OP).map((e) => e.dir)).toEqual(['productive', 'productive', 'productive', 'productive']);
+  });
+
+  it('says none is left, so a round ends on Done and not on another round of the same words', async () => {
+    const w = await bothDue();
+    expect(play(w).r.result().stillDue).toBe(0);
+  });
+
+  it('is there again the next day, when the answer has gone', async () => {
+    const w = await bothDue();
+    play(w);
+    w.clock.t += DAY;
+    expect(rescueCount(w.learner, w.now())).toBe(4);
+    expect(play(w).n).toBe(4);
+    expect(w.learner.card('l:café', 'receptive')!.stability).toBeGreaterThan(6);
+  });
+
+  it('a card unlocked by a hit is not due the moment it exists: the Spanish was on screen a second ago', async () => {
+    const w = await world();
+    w.learner.seedKnown('l:café', { at: w.clock.t - 7 * DAY, productive: true, receptive: { stability: 6, dueAt: w.clock.t - DAY }, productiveCard: null });
+    w.learner.seedKnown('c:me-llamo', { at: w.clock.t - 7 * DAY, productive: true, receptive: { stability: 6, dueAt: w.clock.t - DAY }, productiveCard: null });
+    w.learner.seedKnown('c:soy-de', { at: w.clock.t - 7 * DAY, productive: true, receptive: { stability: 6, dueAt: w.clock.t - DAY }, productiveCard: null });
+    play(w);
+    expect(w.learner.hasCard('l:café', 'productive')).toBe(true);
+    expect(rescueCount(w.learner, w.now())).toBe(0);
+  });
+
+  it('a relapse in the same direction still comes round: that is the card asking again, not the other side', async () => {
+    const w = await bothDue();
+    const r = rescue(w);
+    let c;
+    while ((c = r.next())) r.answer(answer(c, 'wrong'));
+    expect(w.learner.card('l:café', 'productive')!.lapses).toBeGreaterThan(0);
+    w.clock.t += 3_600_000;
+    const again = rescue(w);
+    const first = again.next();
+    expect(first!.key).toMatch(/:productive$/);
+  });
+});
+
 describe('what a rescue does to the schedule', () => {
   it('a hit waits longer, a miss lapses, a retry is Hard: real reviews, each one event of op rescue', async () => {
     const w = await dueAfter();

@@ -62,7 +62,7 @@ export function RescueGame({ onExit }: { onExit: () => void }) {
     const say = res ? rescueReaction(res, cheer(learner)) : {};
     return (
       <main class="screen over" id="main">
-        <Heading title="Rescate" lead={res && res.of ? undefined : 'Nothing is ready for review right now.'} />
+        <Heading title="Rescate" lead={res && res.of ? undefined : res && res.stillDue ? 'Nothing answered, so nothing has changed.' : 'Nothing is ready for review right now.'} />
         {res && res.of ? (
           <>
             <p class="big-number" data-score>{res.saved} <span>of {res.of} saved</span></p>
@@ -72,8 +72,8 @@ export function RescueGame({ onExit }: { onExit: () => void }) {
           </>
         ) : null}
         <div class="actions">
-          {res && res.stillDue >= 1 ? <Continue label="Another round" onClick={() => void begin()} /> : <Continue label="Done" onClick={onExit} />}
-          {res && res.stillDue >= 1 ? <button class="btn quiet" onClick={onExit}>Done</button> : null}
+          {res && res.of && res.stillDue >= 1 ? <Continue label="Another round" onClick={() => void begin()} /> : <Continue label="Done" onClick={onExit} />}
+          {res && res.of && res.stillDue >= 1 ? <button class="btn quiet" onClick={onExit}>Done</button> : null}
         </div>
       </main>
     );
