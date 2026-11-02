@@ -2,7 +2,7 @@
 // (item, content, seed): the same item always renders the same card, so a
 // reload mid-session shows the same question. Every card carries its own
 // checker and ONE plain-English reason for when the learner gets it wrong.
-import { reviewTargets, type PracticeItem, type RecallItem, type ReviewItem, type ScriptItem, type LearnItem } from '../../compiler';
+import { reviewTargets, type PracticeItem, type RecallItem, type ReviewItem, type ScriptItem, type SessionPlan, type LearnItem } from '../../compiler';
 import type { BankSentence, NodeId, TeachingScript } from '../../content/schema';
 import { answerForms, checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
@@ -19,7 +19,7 @@ import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
 import { askedOfYou } from '../../exercises/addressee';
 import { namesOf, placesOf } from '../../exercises/licence';
-import { givesAwayByLength, nearest } from '../../exercises/neighbours';
+import { givesAwayByLength, givesAwayByTag, nearest } from '../../exercises/neighbours';
 import { recombineTurn } from '../../exercises/recombine';
 import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
@@ -62,6 +62,11 @@ interface CardBase {
   sub?: Txt;
   /** the reason shown with the right version when the learner misses */
   why: string;
+  /**
+   * Asked from the node's script in place of the plan's sentence (pickFallback). That sentence never reached the screen, so it must not be
+   * ledgered, credited to the words in it, or named as what was missed: `item` is what to score, `served` the script item to ledger.
+   */
+  fromScript?: { item: PracticeItem; served: string };
 }
 export interface McqCard extends CardBase { type: 'mcq'; options: Txt[]; answer: number; /** shown after answering */ after?: Txt; /** the one feature the options differ in (minimal pairs) */ feature?: Feature }
 export interface TypeCard extends CardBase {
@@ -389,10 +394,17 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
   };
 }
 
-/** What a sentence means, asked as a choice among near neighbours. Fewer than two of them and it is typed, since a choice of two with nothing alike to pick from is a free pass; an exchange of several turns cannot be typed, so it keeps its one. */
+/** The meaning of a sentence, typed; of an exchange, its reply, since nobody is asked to type two people talking (the other cards never do). Undefined for an exchange whose turns do not line up. */
+function typedMeaning(key: string, s: BankSentence, why: string): TypeCard | undefined {
+  const turn = productionView(s)?.sentence;
+  return turn && typeMeaning(key, turn.es, turn.en, turn.acceptEn ?? [], why);
+}
+
+/** What a sentence means, asked as a choice among near neighbours. Fewer than two of them and it is typed, since a choice of two with nothing alike to pick from is a free pass. */
 function meaningChoice(key: string, s: BankSentence, b: Bundle, why: string): Card {
   const wrong = otherEnglish(b, s, key, 2);
-  return wrong.length >= 2 || (wrong.length && isMultiTurn(s)) ? mcq(key, MEANS, es(s.es), en(s.en), wrong.map(en), why) : typeMeaning(key, s.es, s.en, s.acceptEn ?? [], why);
+  if (wrong.length >= 2) return mcq(key, MEANS, es(s.es), en(s.en), wrong.map(en), why);
+  return typedMeaning(key, s, why) ?? (wrong.length ? mcq(key, MEANS, es(s.es), en(s.en), wrong.map(en), why) : { type: 'read', key, ask: 'Read it', es: s.es, en: s.en, why: '' });
 }
 
 /** What a word or phrase means, the same way. */
@@ -781,26 +793,49 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   };
 }
 
+/** The script picks a session already asks, in its lessons and its reviews: a block starts its `taken` from these (see pickFallback). */
+export function plannedPicks(plan: Pick<SessionPlan, 'blocks'>): Set<string> {
+  const out = new Set<string>();
+  for (const block of plan.blocks) {
+    if (block.kind === 'teach') for (const it of block.items) if (it.op === 'readAndPick') out.add(it.id);
+    if (block.kind === 'warmup' || block.kind === 'leech') for (const it of block.items) if (it.script?.op === 'readAndPick') out.add(`sc:${it.node}:rp:${it.script.index}`);
+  }
+  return out;
+}
+
 /**
  * Read and pick, for a sentence that cannot carry a minimal pair of its own (no tense or person of it re-inflects safely). A meaning
  * question among other sentences proves nothing about the form, and one known word answers it. So, in order: a read-and-pick the node's
- * script wrote for exactly its point, one that does not give itself away by its length and not always the same one; else the sentence asked
- * for typing, which the form cannot be dodged in.
+ * script wrote for exactly its point, one that does not give itself away by its length or a lone tag, and not one this session has asked
+ * (`taken`: a question met twice is answered from memory, and a block's items can outnumber a script's fair picks), a different one from one
+ * session to the next; else the sentence asked for typing, which the form cannot be dodged in. A sentence that needs a recognition-only point is
+ * one to read and never to say, so its meaning is typed.
  */
-function pickFallback(item: PracticeItem, s: BankSentence, b: Bundle): Card {
+function pickFallback(item: PracticeItem, s: BankSentence, b: Bundle, seed: number, taken?: Set<string>): Card {
   const script = b.scripts.get(item.node);
-  if (script?.readAndPick.length) {
-    const fair = script.readAndPick.flatMap((rp, i) => (givesAwayByLength(rp.options, rp.answer) ? [] : [i]));
-    const pool = fair.length ? fair : script.readAndPick.map((_, i) => i);
-    const index = pool[hash32(item.id) % pool.length];
-    const card = scriptCard({ op: 'readAndPick', id: item.id, node: item.node, index, scoring: item.scoring, credit: item.credit }, script);
-    if (card) return card;
+  const id = (i: number) => `sc:${item.node}:rp:${i}`;
+  const free = (script?.readAndPick ?? []).flatMap((rp, i) => (givesAwayByLength(rp.options, rp.answer) || givesAwayByTag(rp.options, rp.answer) || taken?.has(id(i)) ? [] : [i]));
+  if (script && free.length) {
+    const index = free[hash32(`${seed}:${item.id}`) % free.length];
+    const credit = [item.node];
+    const card = scriptCard({ op: 'readAndPick', id: item.id, node: item.node, index, scoring: item.scoring, credit }, script);
+    if (card) {
+      taken?.add(id(index));
+      return { ...card, fromScript: { item: { ...item, sentence: '', credit }, served: id(index) } };
+    }
+  }
+  if (b.index.sentences.get(s.id)?.readOnly) {
+    const seg = b.segments(item.node)[0];
+    return typedMeaning(item.id, s, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`) ?? { type: 'read', key: item.id, ask: 'Read it', es: s.es, en: s.en, why: '' };
   }
   return typeFormCard(item, s) ?? translateCard(item, s, b);
 }
 
-/** `taught`: the learner's licensed tenses (licensedTenses); distractors and contrast forms stay inside it. Omitted: no limit. */
-export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught?: readonly TenseKey[]): Card {
+/**
+ * `taught`: the learner's licensed tenses (licensedTenses); distractors and contrast forms stay inside it. Omitted: no limit.
+ * `taken`: the script picks already asked around this item, one set for a whole block, so that the block asks none twice (pickFallback).
+ */
+export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught?: readonly TenseKey[], taken?: Set<string>): Card {
   const s = b.sentence(item.sentence);
   if (!s) return { type: 'read', key: item.id, ask: 'Have a look', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
   const r = rng(`${seed}:${item.id}`);
@@ -815,7 +850,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
           };
         }
       }
-      return pickFallback(item, s, b);
+      return pickFallback(item, s, b, seed, taken);
     }
     case 'choose': {
       const it = chooseItem(s, { seed: item.id, taught });

@@ -210,6 +210,13 @@ export function givesAwayByLength(options: readonly string[], answer: number): b
   return options.every((o, i) => i === answer || right > o.length + 2);
 }
 
+/** Is the right option the only one with a tag, or the only one without: "(formal)" on the answer alone picks it. */
+export function givesAwayByTag(options: readonly string[], answer: number): boolean {
+  const tagged = options.map(hasTag);
+  const n = tagged.filter(Boolean).length;
+  return tagged[answer] ? n === 1 : options.length > 2 && n === options.length - 1;
+}
+
 /** What tapping the longest option scores on one question: the share of its longest options that are right (a tie is a coin). */
 export function longestShare(options: readonly string[], answer: number): number {
   const most = Math.max(...options.map((o) => o.length));

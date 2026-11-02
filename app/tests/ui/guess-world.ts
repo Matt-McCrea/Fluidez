@@ -6,7 +6,7 @@ import { boot } from '../../src/ui/app';
 import { ContentLoader } from '../../src/ui/data/loader';
 import type { PracticeItem } from '../../src/compiler';
 import type { Bundle } from '../../src/ui/data/bundle';
-import { practiceCard, type Card, type McqCard } from '../../src/ui/session/cards';
+import { plannedPicks, practiceCard, type Card, type McqCard } from '../../src/ui/session/cards';
 import { licensedTenses } from '../../src/ui/session/tenses';
 import { applyPlacement } from '../../src/ui/session/placement';
 import { MemoryKV, PATH_KEY, UI_KEY, emptyUi } from '../../src/ui/store/ui';
@@ -22,7 +22,7 @@ export interface Seen { unit: number; card: McqCard; source: Source }
 export const sourceOf = (c: McqCard): Source => (c.ask === 'Quick question' ? 'story' : c.ask === 'Read and pick' && !c.feature ? 'script' : 'made');
 
 /** `days` sessions for a learner placed at unit index `unit` (0 = a new learner), answering right: every choice card they met, and the names the bank they met them in writes. */
-export async function choiceCardsAt(unit: number, days: number): Promise<{ seen: Seen[]; names: ReadonlySet<string>; picks: Array<{ item: PracticeItem; card: Card }>; bundle: Bundle }> {
+export async function choiceCardsAt(unit: number, days: number): Promise<{ seen: Seen[]; names: ReadonlySet<string>; picks: Array<{ item: PracticeItem; card: Card; block: number; day: number; taught: ReadonlySet<string> }>; bundle: Bundle; learner: Learner }> {
   const kv = new MemoryKV();
   const clock = { t: AT };
   const now = () => clock.t;
@@ -38,17 +38,19 @@ export async function choiceCardsAt(unit: number, days: number): Promise<{ seen:
   const booted = await boot({ kv, loader: new ContentLoader(), now, fixtures: false });
   const w = { clock, kv, store: undefined as never, ...booted, now };
   const out: Seen[] = [];
-  const picks: Array<{ item: PracticeItem; card: Card }> = [];
+  const picks: Array<{ item: PracticeItem; card: Card; block: number; day: number; taught: ReadonlySet<string> }> = [];
   for (let d = 0; d < days; d++) {
     clock.t = AT + (d + 1) * DAY;
     const r = await session(w, 'right');
     for (const c of r.walk.cards as Card[]) if (c.type === 'mcq') out.push({ unit, card: c, source: sourceOf(c) });
     // the structured input block as the player builds it
-    for (const b of r.plan.blocks) {
+    const taught = plannedPicks(r.plan);
+    for (const [at, b] of r.plan.blocks.entries()) {
       if (b.kind !== 'structuredInput') continue;
-      for (const item of b.items as PracticeItem[]) picks.push({ item, card: practiceCard(item, w.bundle, r.plan.seed, licensedTenses(w.learner.nodes(), (id) => w.bundle.node(id)?.tags)) });
+      const taken = new Set(taught);
+      for (const item of b.items as PracticeItem[]) picks.push({ item, card: practiceCard(item, w.bundle, r.plan.seed, licensedTenses(w.learner.nodes(), (id) => w.bundle.node(id)?.tags), taken), block: at, day: d, taught });
     }
     await w.bundle.ensureWindow(w.ui.path.unit);
   }
-  return { seen: out, names: namesOf(w.bundle.bank), picks, bundle: w.bundle };
+  return { seen: out, names: namesOf(w.bundle.bank), picks, bundle: w.bundle, learner: w.learner };
 }

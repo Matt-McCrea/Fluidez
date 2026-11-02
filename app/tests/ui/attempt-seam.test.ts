@@ -13,6 +13,8 @@
 // Later again: the wrong options of a choice card are near neighbours with the same names in every option (a fixture bank with one
 // unit and one name has none for many sentences, so those are typed, which takes longer, so a few cards fewer fit the minutes), and
 // structured input that cannot make a minimal pair is the node's own read-and-pick or a typed card; the same calls on other cards.
+// Later still: such a read-and-pick is not asked twice in a session and is scored on its node alone, since the sentence it stood in for was
+// not on screen: the words in that sentence are not credited and it is not ledgered. A few cards more or fewer fit the minutes.
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
@@ -20,9 +22,9 @@ import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
 
 const EXPECTED = {
-  sessions: { events: 233, eventDigest: 'c4e46aa0eac6cf539d67b880456af9599094aaf6decfa32f4a710dbcc2e39e40', memoryDigest: '4ebe2863c5d2dc73b289758e393916fbdb0b08e53683fa5d10707e985a76a1fb' },
+  sessions: { events: 235, eventDigest: '7a4cf717388b16ea6cfdb8397de1d41b2ab826ecfc3f1e0901087938b92b95b3', memoryDigest: '2c124f819b8f1a8af4a91aea298e5b7ce14afc162934a33e4233ced281290a31' },
   dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
-  freeplay: { events: 265, eventDigest: '143baae667d9ab0d9a6ac6f641d50896564ca1d70a8ae14ae074ce30038c1b21', memoryDigest: 'eecfa3ac37b3a683ac0b79c538cf73f99aefb977734a776543a01815c9cfaca9' },
+  freeplay: { events: 267, eventDigest: '9e8afa7baca6017f98f7f43d929dfe8a46e4f1e53d28889999bc6455095c4383', memoryDigest: '10e66f3d8a2c35699e7d9ee495574acb49c9ed2bc679ade470b821f558dd26c1' },
   average: { events: 5136, eventDigest: '88f5d23a032aa46c1563d6e3c46147af2576e00a01f0b6524752eb6d51cae4fb', memoryDigest: 'b50dce4ccdf3a3cfe0cc6ea284fe642b8c93f915d62a84593c49bac64f43b3af' },
   irregular: { events: 2942, eventDigest: '42ff7dd74cb3f650c7290ecac9dd2728bc42c064d043cc97d9c6c6ea353c23f9', memoryDigest: 'f93b6353877abd12db535244be9b0dcefa1da32564bdd69239bbf50e415b80f4' },
 };

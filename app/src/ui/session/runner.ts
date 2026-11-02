@@ -305,9 +305,10 @@ export class SessionRunner {
   /** A block whose cards may be cut short is open: its content is ledgered card by card (`itemShown`). */
   enter(block: Block): void { this.current = block; this.entered.add(block); }
 
-  /** One card of an open block was shown: ledger just that item's content. */
-  itemShown(block: Block, i: number): void {
+  /** One card of an open block was shown: ledger just that item's content, or `served`, the script item it asked instead (a re-serve, as a drill day's is). */
+  itemShown(block: Block, i: number, served?: string): void {
     if (!('items' in block)) return;
+    if (served) { this.mark({ kind: 'item', id: served, deliberate: true }); return; }
     const one = { ...block, items: [block.items[i]] } as Block;
     for (const r of servedRefs({ ...this.plan, blocks: [one] })) this.mark(r);
   }

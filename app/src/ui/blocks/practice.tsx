@@ -6,7 +6,7 @@ import type { LeechBlock, PracticeBlock, RecapBlock, TimedRecallBlock, WarmupBlo
 import { withRemediate } from '../../compiler';
 import { CardRun, CardView, Continue } from '../components/card';
 import { Heading } from '../components/text';
-import { practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
+import { plannedPicks, practiceCard, recallCard, reviewCard, type Card } from '../session/cards';
 import { licensedTenses } from '../session/tenses';
 import { breakRuns, formatOf, interleave } from '../session/order';
 import { blockHeading } from '../session/labels';
@@ -41,7 +41,8 @@ export function ReviewRun({ block, run, onDone, resume }: BlockProps<WarmupBlock
 }
 
 export function PracticeRun({ block, run, ui, onDone, resume }: BlockProps<PracticeBlock>) {
-  const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => run.bundle.node(id)?.tags)));
+  const taken = plannedPicks(run.plan);
+  const { cards, order } = useOrdered(block.items, (it) => practiceCard(it, run.bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => run.bundle.node(id)?.tags), taken));
   const h = blockHeading(block, run.bundle);
   const read = block.kind === 'extraReading';
   return (
@@ -49,11 +50,11 @@ export function PracticeRun({ block, run, ui, onDone, resume }: BlockProps<Pract
       <Heading {...h} />
       <CardRun
         cards={cards} start={resume?.card} claim={run.plan.budget.band !== 'A1'}
-        onShow={(k) => { run.setCursor({ card: k }); run.itemShown(block, order[k]); }}
+        onShow={(k) => { run.setCursor({ card: k }); run.itemShown(block, order[k], cards[k].fromScript?.served); }}
         stop={() => run.overBudget()}
         onAnswer={(k, o) => {
           const item = block.items[order[k]];
-          run.score(item, o);
+          run.score(cards[k].fromScript?.item ?? item, o);
           // the checkpoint reading check: a missed node goes on the remediation list
           if (block.kind === 'readingCheck' && !o.correct && ui.path.remediate?.every((e) => e.node !== item.node)) {
             void ui.setPath({ ...ui.path, remediate: withRemediate(ui.path.remediate ?? [], [item.node], 'readingCheck', Date.now()) });

@@ -7,7 +7,7 @@ import { Learner, MemoryStore, type Tier } from '../../src/learner';
 import { fixtureContent } from '../../src/ui/fixtures';
 import { Bundle } from '../../src/ui/data/bundle';
 import {
-  learnRetrieval, practiceCard, questionCard, recallCard, reviewCard, scriptCard, type Card,
+  learnRetrieval, plannedPicks, practiceCard, questionCard, recallCard, reviewCard, scriptCard, type Card,
 } from '../../src/ui/session/cards';
 import { SessionRunner, compilePlan, softBlock, truncatable } from '../../src/ui/session/runner';
 import { LearnQueue, breakRuns, formatOf, interleave, teachOrder } from '../../src/ui/session/order';
@@ -90,8 +90,8 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
     const order = interleave(cards, formatOf);
     if (alt) breakRuns(cards, order, (i) => alt(items[i]));
     for (const k of order) {
-      if (cut) run.itemShown(b, k);
-      play(cards[k], items[k]);
+      if (cut) run.itemShown(b, k, cards[k].fromScript?.served);
+      play(cards[k], cards[k].fromScript?.item ?? items[k]);
       if (cut && run.overBudget()) break;
     }
   };
@@ -140,9 +140,11 @@ export function runBlock(b: Block, run: SessionRunner, mood: Mood, walk: Walk) {
       break;
     }
     case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
-    case 'remix': case 'readingCheck': case 'extraReading':
-      runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => bundle.node(id)?.tags)), true);
+    case 'remix': case 'readingCheck': case 'extraReading': {
+      const taken = plannedPicks(run.plan);
+      runCards(b.items, (it) => practiceCard(it as never, bundle, run.plan.seed, licensedTenses(run.learner.nodes(), (id) => bundle.node(id)?.tags), taken), true);
       break;
+    }
     case 'recap':
       const rc = b.items.map((it) => recapCard(it, bundle));
       interleave(rc, formatOf).forEach((k) => {

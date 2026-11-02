@@ -6,9 +6,10 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import type { LearnItem, ReviewItem } from '../../src/compiler';
 import { namesOf } from '../../src/exercises/licence';
 import { contentWords, lengthRoom } from '../../src/exercises/neighbours';
+import { isMultiTurn } from '../../src/exercises/dialogue';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
-import { learnRetrieval, reviewCard, type Card } from '../../src/ui/session/cards';
+import { learnRetrieval, otherEnglish, reviewCard, type Card } from '../../src/ui/session/cards';
 import { namesIn, standsOut } from './guess-play';
 
 let b: Bundle;
@@ -86,5 +87,21 @@ describe('a sentence on a choice card', () => {
     // a sentence with no two neighbours holding its names is typed instead; that is the exception
     console.log(`name-bearing sentences: ${cards} choice cards, ${typed} of ${picks} "which one says this?" typed instead`);
     expect(typed / picks).toBeLessThan(0.2);
+  });
+});
+
+describe('an exchange with too few neighbours to choose among', () => {
+  it('is never typed whole: its reply is, and nothing is a choice of two', { timeout: 300_000 }, () => {
+    let thin = 0;
+    for (const s of b.bank.filter((x) => isMultiTurn(x)).filter((_, i) => i % 3 === 0)) {
+      if (otherEnglish(b, s, `rv:${s.id}`, 2).length >= 2) continue;
+      thin++;
+      const node = s.targets[0] ?? 'g:none';
+      const item: ReviewItem = { op: 'review', id: `rv:${s.id}`, node, direction: 'receptive', sentence: s.id, novel: false, scoring: 'review', credit: [node] };
+      const c = reviewCard(item, b, 'meaning', 0);
+      if (c.type === 'type') expect(c.prompt?.text, s.id).not.toContain('\n');
+      else if (c.type === 'mcq') expect(s.es.split('\n').length === s.en.split('\n').length, `${s.id}: a choice of ${c.options.length} on an exchange that has turns to type`).toBe(false);
+    }
+    expect(thin).toBeGreaterThan(50);
   });
 });

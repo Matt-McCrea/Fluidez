@@ -37,6 +37,34 @@ function expectTargetOnly(s: Awaited<ReturnType<typeof setup>>, before: Record<s
   }
 }
 
+describe('a pick asked from the script in the place of the plan\'s sentence', () => {
+  // the sentence never reached the screen, so the words in it were neither read nor recalled
+  test('moves the target on and leaves the sentence\'s other words alone', async () => {
+    const s = await setup();
+    const later = s.w.now() + 30 * 86_400_000;
+    for (const n of [TARGET, ...BYSTANDERS]) s.w.learner.review(n, 'receptive', Rating.Good, { at: s.w.now() + 86_400_000 });
+    s.w.clock.t = later;
+    const stability = (n: string) => s.w.learner.toJSON().nodes[n]?.receptive?.stability ?? 0;
+    const before = Object.fromEntries([TARGET, ...BYSTANDERS].map((n) => [n, stability(n)]));
+    const asPlanned: PracticeItem = { op: 'pick', id: 'pick:u01-2', node: TARGET, sentence: 'u01-2', direction: 'receptive', scoring: 'review', credit: s.credit };
+    const right = { correct: true, tries: 1, ms: 4000 };
+    s.run.score({ ...asPlanned, sentence: '', credit: [TARGET] }, right);
+    expect(stability(TARGET)).toBeGreaterThan(before[TARGET]);
+    for (const b of BYSTANDERS) expect(stability(b), `${b} was not on screen`).toBe(before[b]);
+    // as planned, the same answer would have moved them
+    s.run.score({ ...asPlanned, node: BYSTANDERS[0], credit: [BYSTANDERS[0], BYSTANDERS[1]] }, right);
+    expect(stability(BYSTANDERS[1])).toBeGreaterThan(before[BYSTANDERS[1]]);
+  });
+
+  test('comes back when it is missed, and does not name a sentence that was not shown', async () => {
+    const s = await setup();
+    const item: PracticeItem = { op: 'pick', id: 'pick:u01-2', node: TARGET, sentence: '', direction: 'receptive', scoring: 'exposure', credit: [TARGET] };
+    s.run.score(item, miss);
+    expect(s.run.retests.map((r) => r.node)).toEqual([TARGET]);
+    expect(s.run.misses.map((m) => m.sentence)).toEqual([undefined]);
+  });
+});
+
 describe('an answered sentence grades its target and only its target', () => {
   test('practice that is exposure (the form and free-form drills)', async () => {
     const s = await setup();
