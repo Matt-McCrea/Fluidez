@@ -274,6 +274,7 @@ export class UiStore {
       if (healed) await this.writeBack(PATH_KEY, this.path);
       else if ((path as any).version !== PATH_VERSION) { await this.keepVersion(PATH_KEY, path); await this.writeBack(PATH_KEY, this.path); }
     }
+    await this.keep.tidy();
     return this;
   }
 

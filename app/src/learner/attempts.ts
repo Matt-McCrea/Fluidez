@@ -64,9 +64,10 @@ function usable(r: unknown): r is AttemptRow {
  * Damaged rows are dropped one by one and the rest kept.
  */
 export function readAttempts(raw: unknown): AttemptLog {
-  if (!isObject(raw) || !Array.isArray(raw.rows)) throw new StoredDocumentError('unreadable', 'attempts', 'not an attempts log');
-  const version = typeof raw.version === 'number' ? raw.version : 1;
+  // the version first: a newer build may have moved the rows, and that is not damage to clear away
+  const version = isObject(raw) && typeof raw.version === 'number' ? raw.version : 1;
   if (version > ATTEMPTS_VERSION) throw new StoredDocumentError('newer', 'attempts', `v${version} is newer than this build (v${ATTEMPTS_VERSION})`);
+  if (!isObject(raw) || !Array.isArray(raw.rows)) throw new StoredDocumentError('unreadable', 'attempts', 'not an attempts log');
   const rows = raw.rows.filter(usable);
   if (rows.length < raw.rows.length) console.warn(`fluidez: dropped ${raw.rows.length - rows.length} damaged attempt row(s)`);
   return { version: ATTEMPTS_VERSION, rows: rows.slice(-ATTEMPTS_CAP) };

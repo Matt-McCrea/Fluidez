@@ -50,9 +50,10 @@ const usableText = (e: unknown): e is WrittenText =>
 
 /** Open a stored writing document the way boot opens the others: a newer one throws `newer`, one that is not a document throws `unreadable`, a damaged entry is dropped. */
 export function readWriting(raw: unknown): SavedWriting {
-  if (!isObject(raw) || !Array.isArray(raw.entries)) throw new StoredDocumentError('unreadable', WRITING_KEY, 'not a writing document');
-  const version = typeof raw.version === 'number' ? raw.version : 1;
+  // the version first: a newer build may have moved the entries, and that is not damage to clear away
+  const version = isObject(raw) && typeof raw.version === 'number' ? raw.version : 1;
   if (version > WRITING_VERSION) throw new StoredDocumentError('newer', WRITING_KEY, `v${version} is newer than this build (v${WRITING_VERSION})`);
+  if (!isObject(raw) || !Array.isArray(raw.entries)) throw new StoredDocumentError('unreadable', WRITING_KEY, 'not a writing document');
   const entries = raw.entries.filter(usableText);
   if (entries.length < raw.entries.length) console.warn(`fluidez: dropped ${raw.entries.length - entries.length} damaged piece(s) of saved writing`);
   return { version: WRITING_VERSION, entries };
@@ -90,9 +91,9 @@ const usableMonth = (m: unknown): m is MonthRow => isObject(m) && typeof m.month
 
 /** Open a stored history the way boot opens the others (see `readWriting`). */
 export function readHistory(raw: unknown): History {
-  if (!isObject(raw) || !Array.isArray(raw.reads) || !Array.isArray(raw.months)) throw new StoredDocumentError('unreadable', HISTORY_KEY, 'not a history document');
-  const version = typeof raw.version === 'number' ? raw.version : 1;
+  const version = isObject(raw) && typeof raw.version === 'number' ? raw.version : 1;
   if (version > HISTORY_VERSION) throw new StoredDocumentError('newer', HISTORY_KEY, `v${version} is newer than this build (v${HISTORY_VERSION})`);
+  if (!isObject(raw) || !Array.isArray(raw.reads) || !Array.isArray(raw.months)) throw new StoredDocumentError('unreadable', HISTORY_KEY, 'not a history document');
   const reads = raw.reads.filter(usableRead);
   const months = raw.months.filter(usableMonth);
   if (reads.length < raw.reads.length || months.length < raw.months.length) console.warn('fluidez: dropped damaged rows from the history');
@@ -123,6 +124,21 @@ export class Keep {
       try { await this.kv.set(`${key}.quarantine`, raw); } catch { /* best effort */ }
       return empty();
     }
+  }
+
+  /** A damaged document is put aside and started again at boot, as the learner's are: a backup has to open every document, so one left lying refuses them all. */
+  tidy(): Promise<void> {
+    const heal = async <T>(key: string, read: (raw: unknown) => T, empty: () => T) => {
+      const raw = await this.kv.get(key);
+      if (raw === undefined || raw === null) return;
+      try { read(raw); } catch (e) {
+        if (e instanceof StoredDocumentError && e.fault === 'unreadable') await this.kv.set(key, await this.open(key, read, empty));
+      }
+    };
+    return this.run('its documents in order', async () => {
+      await heal(WRITING_KEY, readWriting, emptyWriting);
+      await heal(HISTORY_KEY, readHistory, emptyHistory);
+    });
   }
 
   /** Keep a piece of writing, or bring the one with this id up to date (it keeps the time it was first written). */

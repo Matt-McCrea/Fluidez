@@ -219,6 +219,36 @@ describe('the document', () => {
     expect(await saved(kv)).toEqual([entry()]);
   });
 
+  it('a damaged document does not refuse the backups: boot puts it aside, as it does the learner\'s', async () => {
+    for (const [key, damaged] of [['writing', 'rubbish'], ['history', { reads: 'x' }]] as const) {
+      const kv = new MemoryKV();
+      const store = new IdbStore(kv);
+      const L = await Learner.open(store);
+      L.introduce('l:a', { results: [true, true, true] });
+      await L.flush();
+      await kv.set(key, damaged);
+      await new UiStore(kv).load();
+      const file = await provenBackup(store, BACKUP_READERS, 1);
+      expect(kv.data.get(`${key}.quarantine`), 'what was there is kept').toEqual(damaged);
+      expect(Object.keys(file.documents)).toContain(key);
+    }
+  });
+
+  it('boot leaves a good document and a newer one exactly as they are, and makes none', async () => {
+    const kv = new MemoryKV();
+    const good = { version: 1, entries: [{ id: 'a', at: 1, kind: 'task', ref: 't', prompt: 'p', text: 'x', words: 1, session: 1 }] };
+    const newer = { version: 99, reads: 'whatever', months: [] };
+    await kv.set('writing', good);
+    await kv.set('history', newer);
+    await new UiStore(kv).load();
+    expect(kv.data.get('writing')).toEqual(good);
+    expect(kv.data.get('history')).toEqual(newer);
+    const empty = new MemoryKV();
+    await new UiStore(empty).load();
+    expect(empty.data.has('writing')).toBe(false);
+    expect(empty.data.has('history')).toBe(false);
+  });
+
   it('a store that refuses one write does not stop the next, and two saves at once are both kept', async () => {
     const kv = new MemoryKV();
     const set = kv.set.bind(kv);

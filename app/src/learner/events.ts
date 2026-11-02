@@ -59,9 +59,10 @@ function usable(e: unknown): e is ReviewEvent {
  * Damaged events are dropped one by one and the rest kept.
  */
 export function readEvents(raw: unknown): EventLog {
-  if (!isObject(raw) || !Array.isArray(raw.events)) throw new StoredDocumentError('unreadable', 'events', 'not an event log');
-  const version = typeof raw.version === 'number' ? raw.version : 1;
+  // the version first: a newer build may have moved the events, and that is not damage to clear away
+  const version = isObject(raw) && typeof raw.version === 'number' ? raw.version : 1;
   if (version > EVENTS_VERSION) throw new StoredDocumentError('newer', 'events', `v${version} is newer than this build (v${EVENTS_VERSION})`);
+  if (!isObject(raw) || !Array.isArray(raw.events)) throw new StoredDocumentError('unreadable', 'events', 'not an event log');
   const events = raw.events.filter(usable);
   if (events.length < raw.events.length) console.warn(`fluidez: dropped ${raw.events.length - events.length} damaged review event(s)`);
   const sum = raw.summary;

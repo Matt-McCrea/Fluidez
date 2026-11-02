@@ -10,6 +10,7 @@ import {
   ATTEMPTS_CAP, ATTEMPTS_VERSION, compact, IdbStore, Learner, MemoryStore, migrate, Rating, readAttempts, StoredDocumentError, STATE_VERSION,
   type AttemptRow, type KV, type ReviewEvent,
 } from '../../src/learner';
+import { readEvents } from '../../src/learner/events';
 import { backupText, makeBackup, provenBackup, readBackup, restoreBackup, BACKUP_NEWER, BackupError } from '../../src/learner/backup';
 import { BACKUP_READERS, MemoryKV, UiStore } from '../../src/ui/store/ui';
 import { clock, DAY } from './helpers';
@@ -78,6 +79,17 @@ describe('the attempts log', () => {
     const L = await Learner.open(new IdbStore(kv));
     expect(L.attempts()).toEqual([]);
     expect(kv.map.get('attempts.quarantine')).toBe('rubbish');
+  });
+
+  test('a newer log that moved its rows is newer, not damaged: a later build can change the shape', async () => {
+    expect(() => readAttempts({ version: ATTEMPTS_VERSION + 1, pages: [[]] })).toThrow(expect.objectContaining({ fault: 'newer' }));
+    expect(() => readEvents({ version: 2, pages: [[]] })).toThrow(expect.objectContaining({ fault: 'newer' }));
+    const kv = new MemoryKV();
+    const moved = { version: ATTEMPTS_VERSION + 1, pages: [[]] };
+    await kv.set('attempts', moved);
+    await expect(Learner.open(new IdbStore(kv))).rejects.toMatchObject({ fault: 'newer' });
+    expect(kv.data.get('attempts'), 'left exactly as it was').toEqual(moved);
+    expect(kv.data.has('attempts.quarantine')).toBe(false);
   });
 
   test('a row that is not a row is dropped, the rest are kept', () => {
