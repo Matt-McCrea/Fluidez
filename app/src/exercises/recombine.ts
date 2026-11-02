@@ -17,8 +17,9 @@
  * ========================================================================== */
 import type { BankSentence } from '../content/schema';
 import type { Person, TenseKey } from '../engine';
-import { turnViews } from './dialogue';
+import { turnViews, type TurnView } from './dialogue';
 import { enChangePerson, enNegate, enPronounFor, glossForms } from './english';
+import { fixedInTime, opensClean, refusal, tenseOf } from './licence';
 import { changePerson, changeTense, negate, pronominalise } from './reinflect';
 import { hash32, itemId, rng, shuffle, shuffled } from './rng';
 import {
@@ -33,6 +34,8 @@ export interface RecombineOptions {
   known?: Iterable<string>;
   /** Bank sentences to draw noun-phrase distractors from (object-pronoun items). */
   bank?: readonly BankSentence[];
+  /** The tenses the learner has been taught: no item is in another (default: all). */
+  taught?: readonly TenseKey[];
 }
 
 const WHO: Readonly<Record<string, string>> = { yo: 'me (I)', 'tú': 'you', 'él/ella': 'him or her', nosotros: 'us (we)', ellos: 'them (they)' };
@@ -79,11 +82,19 @@ function nounPhrases(bank: readonly BankSentence[]): Array<{ np: string; clitic:
   return [...out].map(([np, clitic]) => ({ np, clitic }));
 }
 
+/** The turn of a row that is recombined: the first whose clause the engine has understood completely (licence.ts). */
+export function recombineTurn(row: BankSentence): TurnView | undefined {
+  return turnViews(row).find((v) => { const k = parseClause(v.sentence.es, v.sentence.en); return k && !refusal(k, v.sentence.en); });
+}
+
 export function recombinations(row: BankSentence, opts: RecombineOptions = {}): RecombineItem[] {
-  const view = turnViews(row).find((v) => parseClause(v.sentence.es, v.sentence.en));
+  const view = recombineTurn(row);
   if (!view) return [];
   const s = view.sentence;
   const c = parseClause(s.es, s.en)!;
+  const taught = opts.taught;
+  const taughtIn = (t: TenseKey) => !taught || taught.includes(t);
+  if (!taughtIn(tenseOf(c))) return [];
   const known = new Set<string>([sentenceKey(s.es), sentenceKey(row.es)]);
   for (const k of opts.known ?? []) known.add(sentenceKey(k));
   for (const b of opts.bank ?? []) known.add(sentenceKey(b.es));
@@ -129,6 +140,7 @@ export function recombinations(row: BankSentence, opts: RecombineOptions = {}): 
   const tenses: TenseKey[] = (['presente', /^(ser|estar|tener|saber|conocer|querer|poder)$/.test(inf) ? 'imperfecto' : 'preterito', 'futuro'] as TenseKey[]).filter((t) => t !== tense);
   for (const t of tenses) {
     if (tense === 'imperfecto' && t === 'preterito') continue;
+    if (!taughtIn(t) || !opensClean(c) || fixedInTime(s.es)) continue;
     const re = changeTense(c, t, { stripTime: true });
     if (!re || !novel(re.es)) continue;
     const { options, answer } = { options: [...WHEN], answer: whenOf(t) };

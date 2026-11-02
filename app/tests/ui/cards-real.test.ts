@@ -67,10 +67,14 @@ describe('chunk cards ask about aligned pairs only', () => {
         const p = pairOf(card);
         if (!p) continue;
         checked++;
-        const pe = position(p.es, n.es!);
-        const pn = position(p.en, n.en ?? n.title);
-        const same = pe.some(([t, a, s]) => pn.some(([t2, a2, s2]) => t === t2 && (a === a2 || (a === 0 && a2 === 0)) && (s === s2 || (s <= 0 && s2 <= 0))));
-        if (!same) bad.push(`${n.id}: "${p.en}" -> "${p.es}"  (es ${JSON.stringify(pe)} en ${JSON.stringify(pn)})`);
+        // a chunk's forms are its aligned pairs (the schema); one without forms is its es/en
+        const authored = n.forms?.length ? n.forms : [{ es: n.es!, en: n.en ?? n.title }];
+        const same = authored.some((f) => {
+          const pe = position(p.es, f.es);
+          const pn = position(p.en, f.en);
+          return pe.some(([t, a, s]) => pn.some(([t2, a2, s2]) => t === t2 && (a === a2 || (a === 0 && a2 === 0)) && (s === s2 || (s <= 0 && s2 <= 0))));
+        });
+        if (!same) bad.push(`${n.id}: "${p.en}" -> "${p.es}"`);
         // the shown answer passes its own check
         if (card.type === 'type' && !card.check(p.es).pass) bad.push(`${n.id}: its own answer fails: ${p.es}`);
       }

@@ -24,7 +24,8 @@ function useOrdered<T>(items: readonly T[], build: (it: T) => Card, alt?: (it: T
 }
 
 export function ReviewRun({ block, run, onDone, resume }: BlockProps<WarmupBlock | LeechBlock>) {
-  const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle), (it) => reviewCard(it, run.bundle, it.direction === 'productive' ? 'cloze' : 'pickSpanish'));
+  const taught = useMemo(() => licensedTenses(run.learner.nodes(), (id) => run.bundle.node(id)?.tags), [block]);
+  const { cards, order } = useOrdered(block.items, (it) => reviewCard(it, run.bundle, 'meaning', undefined, taught), (it) => reviewCard(it, run.bundle, it.direction === 'productive' ? 'cloze' : 'pickSpanish', undefined, taught));
   const h = blockHeading(block, run.bundle, { known: run.learner.nodes().length });
   // the warm-up is never cut short (reviews left undone stay due); a leech run may be
   const cut = block.kind === 'leech';
@@ -68,7 +69,8 @@ export function PracticeRun({ block, run, ui, onDone, resume }: BlockProps<Pract
 /** "Before you go": today's lapses, then today's new items, once more (filled by the runner when reached). */
 export function Recap({ block, run, onDone, resume }: BlockProps<RecapBlock>) {
   const { cards, order } = useMemo(() => {
-    const all = block.items.map((it) => recapCard(it, run.bundle));
+    const taught = licensedTenses(run.learner.nodes(), (id) => run.bundle.node(id)?.tags);
+    const all = block.items.map((it) => recapCard(it, run.bundle, taught));
     const order = interleave(all, formatOf);
     return { cards: order.map((k) => all[k]), order };
   }, [block, block.items]);

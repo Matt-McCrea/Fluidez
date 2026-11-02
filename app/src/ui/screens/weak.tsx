@@ -1,6 +1,6 @@
 // Weak spots: everything that has tripped you lately, with a workout for each.
 import { useMemo } from 'preact/hooks';
-import { recentMisses, weakSpots } from '../../learner/weak';
+import { recentMisses, weakSpots, type RecentMiss } from '../../learner/weak';
 import { Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { verbsMet } from '../session/freeplay';
@@ -15,6 +15,17 @@ export function ago(at: number, now: number): string {
   return `${d} days ago`;
 }
 
+/** One line per sentence, newest first: the same sentence missed again, or once for each node it credits, is one line. */
+export function distinctMisses(misses: readonly RecentMiss[]): RecentMiss[] {
+  const seen = new Set<string>();
+  return misses.filter((m) => {
+    const key = m.sentence ?? m.node;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export function Weak({ onPractise, onBack }: { onPractise: (spec: PracticeSpec) => void; onBack: () => void }) {
   const app = useApp();
   const { learner, bundle } = app;
@@ -26,7 +37,7 @@ export function Weak({ onPractise, onBack }: { onPractise: (spec: PracticeSpec) 
         spots: weakSpots(learner.events(), look, {
           now, max: 12, metVerbs: verbsMet(learner), sentenceEs: (id) => bundle.sentence(id)?.es,
         }),
-        misses: recentMisses(learner.events(), look, { now, n: 15 }),
+        misses: distinctMisses(recentMisses(learner.events(), look, { now, n: 60 })).slice(0, 15),
       };
     } catch { return { spots: [], misses: [] }; }
   }, [learner.sessionIndex]);

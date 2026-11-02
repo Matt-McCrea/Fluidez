@@ -13,7 +13,7 @@ import {
   PRODUCTION_IMP_PERSONS, PRODUCTION_PERSONS, acceptedForms, conjugate, enPhrase, personsFor, verbByInf,
   type TenseKey, type Verb,
 } from '../../engine';
-import { State, type Direction, type Learner } from '../../learner';
+import { State, type Direction, type ExposureEvent, type Learner } from '../../learner';
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
@@ -178,10 +178,32 @@ export class Freeplay {
   /** Sentences legal right now for a node. */
   private sentencesFor(node: NodeId): string[] { return this.tiersFor(node)[0]; }
 
-  /** Why a node has nothing to practise: the week its examples come up. */
+  /**
+   * Why a node has nothing to practise: the week its examples come up, which
+   * is the week of the last thing its nearest sentence still needs (a week of
+   * the course, 1 to the last unit). A node no sentence is written for says so
+   * and names no week.
+   */
   private laterReason(node: NodeId): string {
-    const week = Math.max(1, this.d.bundle.course.nodes.get(node)?.priority ?? 1);
-    return `The examples for this use things you have not met yet. It comes up in week ${week}.`;
+    const { course, index } = this.d.bundle;
+    const known = this.known();
+    const weekOf = (id: NodeId): number | undefined => {
+      const at = course.teachPos.get(id);
+      if (at === undefined) return undefined;
+      return course.unitStart.filter((start) => start <= at).length;
+    };
+    let soonest = Infinity;
+    const ids = new Set([...(index.byTarget.get(node) ?? []), ...(index.byRequire.get(node) ?? [])]);
+    for (const id of ids) {
+      const weeks = (index.sentences.get(id)?.requires ?? []).filter((r) => !known.has(r)).map(weekOf);
+      if (weeks.length && weeks.every((w): w is number => w !== undefined)) soonest = Math.min(soonest, Math.max(...weeks));
+    }
+    // its unit is not loaded yet, or nothing is written for it: the node's own place in the course tells them apart
+    if (!ids.size && !known.has(node) && weekOf(node) !== undefined) soonest = weekOf(node)!;
+    if (!ids.size && !Number.isFinite(soonest)) return 'There are no practice sentences for this one yet.';
+    return Number.isFinite(soonest)
+      ? `The examples for this use things you have not met yet. It comes up in week ${soonest}.`
+      : 'The examples for this use things you have not met yet.';
   }
 
   /** Unseen ids first (shuffled), then seen ones (shuffled). */
@@ -196,6 +218,19 @@ export class Freeplay {
     const { learner, now } = this.d;
     const seen = learner.ledger.hasSeen('sentence', sentence);
     learner.ledger.markSeen('sentence', sentence, { deliberate: seen, at: now(), ...(seen ? { reason: 'free practice' } : {}) });
+  }
+
+  /**
+   * A sentence drill is about one node. Its outcome is logged for that node
+   * alone; the words and patterns around it are counted as seen, with no
+   * grade of their own. Weak spots reads these events, and a miss logged for
+   * every node a sentence needs charges the preterite for a por/para slip.
+   */
+  private exposeAbout(node: NodeId, credit: readonly NodeId[], event: ExposureEvent): void {
+    const { learner, now } = this.d;
+    const at = now();
+    learner.expose(credit.filter((n) => n !== node && learner.isIntroduced(n)), { at });
+    if (learner.isIntroduced(node)) learner.expose([node], { at, event });
   }
 
   // ------------------------------------------------------------ quick review
@@ -237,7 +272,7 @@ export class Freeplay {
     const novel = !!sentence && !learner.ledger.hasSeen('sentence', sentence);
     const id = `quick:${++this.seq}:${node}:${dir}`;
     const item: ReviewItem = { op: 'review', id, scoring: 'review', credit: [node], node, targets: [node], direction: dir, sentence, novel };
-    const card = reviewCard(item, bundle);
+    const card = reviewCard(item, bundle, 'meaning', undefined, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = 'quick';
     this.cur = {
       grade: (o) => {
@@ -290,9 +325,7 @@ export class Freeplay {
     this.lastOp = op;
     this.cur = {
       grade: (o) => {
-        learner.expose(credit.filter((n) => learner.isIntroduced(n)), {
-          at: this.d.now(), event: { op: 'train', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel },
-        });
+        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
         this.markSeen(sentence);
         learner.stepRung(node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
       },
@@ -350,9 +383,7 @@ export class Freeplay {
         if (first) row.right += 1;
         this.byUnit.set(unit, row);
         if (!first) this.missed.add(node);
-        learner.expose(credit.filter((n) => learner.isIntroduced(n)), {
-          at: this.d.now(), event: { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel },
-        });
+        this.exposeAbout(node, credit, { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
         this.markSeen(sentence);
       },
     };
@@ -388,9 +419,7 @@ export class Freeplay {
       this.lastOp = 'translate';
       this.cur = {
         grade: (o) => {
-          learner.expose(ref.requires, {
-            at: this.d.now(), event: { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel },
-          });
+          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
           this.markSeen(sentence);
         },
       };

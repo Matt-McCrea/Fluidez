@@ -122,7 +122,7 @@ const FUNCTION = new Set([
 
 /** Words whose presence makes negating a sentence change more than "no":
  *  también > tampoco, algo > nada, ya > todavía no. */
-export const POLARITY = new Set(['no', 'nunca', 'nada', 'nadie', 'tampoco', 'ni', 'jamás', 'ya', 'también', 'todavía', 'algo', 'alguien', 'algún', 'alguna', 'alguno', 'algunos', 'algunas', 'siempre', 'todo', 'todos', 'todas', 'aún', 'muy', 'mucho', 'mucha', 'muchos', 'muchas']);
+export const POLARITY = new Set(['no', 'nunca', 'nada', 'nadie', 'ningún', 'ninguno', 'ninguna', 'ningunos', 'ningunas', 'tampoco', 'ni', 'jamás', 'ya', 'también', 'todavía', 'algo', 'alguien', 'algún', 'alguna', 'alguno', 'algunos', 'algunas', 'siempre', 'todo', 'todos', 'todas', 'aún', 'muy', 'mucho', 'mucha', 'muchos', 'muchas']);
 
 /** Time words. A tense swap removes them (structured input: the verb alone
  *  must carry the time) and a tense transform refuses a sentence with one. */
@@ -513,6 +513,8 @@ export function pluralize(w: string): string {
 export function singularize(w: string): string {
   if (INVARIANT_PLURAL.has(w)) return w;
   if (/[^aeiouáéíóú]es$/.test(w) && !/[aeiou]s$/.test(w.slice(0, -1))) {
+    // a word that ends in a consonant has one after a vowel: ciudades is ciudad, but grandes is grande and clientes is cliente
+    if (/ces$/.test(w) ? !/[aeiouáéíóú]ces$/.test(w) : !/[aeiouáéíóú][lnrdsjy]$/.test(w.slice(0, -2))) return w.slice(0, -1);
     const sFromEnd = stressFromEnd(w) - 1;
     let plain = stripStressAccents(w.slice(0, -2));
     if (/c$/.test(plain) && /ces$/.test(w)) plain = plain.slice(0, -1) + 'z';
