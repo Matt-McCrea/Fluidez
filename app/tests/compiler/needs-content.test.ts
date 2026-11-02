@@ -126,6 +126,13 @@ describe('a day whose content is lacking on this device', () => {
     expect(here.advancesPath).toBe(true);
   });
 
+  test('a review day needs nothing of its unit, so it goes on and the path moves', () => {
+    const plan = compile(dayOfType('review'), index({ lacking: [lackKey('bank', unitId), lackKey('scenes', unitId), lackKey('writing', unitId)] }));
+    expect(plan.converted?.reason).not.toBe('offline');
+    expect(plan.diagnostics.some((d) => d.code === 'offline')).toBe(false);
+    expect(plan.advancesPath).toBe(true);
+  });
+
   test('is served again, as itself, once the files are in hand', () => {
     const away = compile(introduceDay, index({ lacking: [lackKey('bank', unitId)] }));
     const back = compile(introduceDay, index());

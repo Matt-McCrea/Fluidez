@@ -666,7 +666,8 @@ class Compiler {
    */
   private lackedBy(day: Unit['days'][number]): string[] {
     const lacking = this.content.lacking;
-    if (!lacking?.size || !this.unit) return [];
+    // a review day teaches nothing of its unit's: it needs only what the learner has already met
+    if (!lacking?.size || !this.unit || day.type === 'review') return [];
     const unit = this.unit.id;
     const need = [lackKey('bank', unit)];
     for (const n of day.focus) if (['grammar', 'pattern', 'contrast'].includes(kindOf(n, this.course.nodes))) need.push(lackKey('scripts', n));
