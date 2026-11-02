@@ -545,7 +545,7 @@ export function lexemeTypeCard(key: string, node: NodeId, b: Bundle, exampleId?:
 export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' | 'cloze' = 'meaning', session?: number, taught?: readonly TenseKey[]): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
-  // a contrast has no sentence of its own: it is asked with one of its own items (content/contrasts), or failing that one of its script's
+  // a contrast has no sentence of its own: it is asked with the item of its own the plan names (content/contrasts), or failing that one of its script's
   if (!s) { const c = contrastReviewCard(item, b); if (c) return c; }
   // a node with no pair to ask about has nothing else once its sentences are used: it is asked with one of its script's items
   if (!s && (item.script || !seg || b.node(item.node)?.kind === 'contrast')) { const c = scriptReviewCard(item, b); if (c) return c; }
@@ -603,15 +603,15 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
 }
 
 /**
- * The review card of a contrast asked with one of its own items: the one the plan names (`item.contrast`), or where nothing names one
- * (the recap, free practice) one picked by the card's key. A plan that named a script item stands: it was made without the contrast's items.
+ * The review card of a contrast asked with one of its own items: the one the plan, the recap or free practice names
+ * (`item.contrast`). Only a named item is ever shown: it was chosen by whoever knows what the learner has been taught,
+ * and an item picked here could use a word they have not met. A review naming none is asked with the script, as before.
  */
 function contrastReviewCard(item: ReviewItem, b: Bundle): Card | undefined {
-  if (item.script && !item.contrast) return undefined;
-  const file = b.contrasts.get(item.node);
-  if (!file) return undefined;
-  const it = item.contrast ? b.contrastItem(item.contrast) : file.items[hash32(item.id) % Math.max(1, file.items.length)];
-  return it ? contrastCard(it, file.decides, { key: item.id, form: contrastForm(file.decides, item.direction) }) : undefined;
+  if (!item.contrast) return undefined;
+  const it = b.contrastItem(item.contrast);
+  const file = it && b.contrasts.get(it.node);
+  return it && file && it.node === item.node ? contrastCard(it, file.decides, { key: item.id, form: contrastForm(file.decides, item.direction) }) : undefined;
 }
 
 /**

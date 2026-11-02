@@ -3,15 +3,16 @@
 // calls `planRecap` when the block is reached. Lapses first (they are the
 // in-session relearning step and are graded for real), then the new items
 // presented today (exposure only), deduplicated, capped by the capacity.
-import type { LearnItem, RecapItem, ReviewItem } from '../../compiler';
+import { hash32, knownSet, type LearnItem, type RecapItem, type ReviewItem } from '../../compiler';
 import type { NodeId } from '../../content/schema';
 import type { Direction, Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import { learnRetrieval, reviewCard, type Card } from './cards';
+import { eligibleContrast } from './contrast-card';
 import type { Retest } from './attempt';
 import type { TenseKey } from '../../engine';
 
-export interface Lapse { node: NodeId; direction: Direction; sentence?: string }
+export interface Lapse { node: NodeId; direction: Direction; sentence?: string; /** the contrast item that was missed */ contrast?: string }
 
 export interface RecapInput {
   learner: Learner;
@@ -43,6 +44,13 @@ function otherSentence(i: RecapInput, node: NodeId, direction: Direction, was?: 
   return was ? { sentence: was, reused: true } : {};
 }
 
+/** Another item of a contrast than the one just missed, one the learner can be shown; none when it has no other. */
+function otherContrast(i: RecapInput, node: NodeId, was?: string): string | undefined {
+  const items = eligibleContrast(i.bundle, node, knownSet(i.learner, i.bundle.course));
+  const rest = items.filter((x) => x.id !== was);
+  return rest.length ? rest[(hash32(node) + i.learner.sessionIndex) % rest.length].id : undefined;
+}
+
 export function planRecap(i: RecapInput): RecapItem[] {
   const out: RecapItem[] = [];
   const seen = new Set<NodeId>();
@@ -50,7 +58,8 @@ export function planRecap(i: RecapInput): RecapItem[] {
     if (out.length >= i.capacity) break;
     if (seen.has(l.node) || !i.learner.hasCard(l.node, l.direction)) continue;
     seen.add(l.node);
-    out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...otherSentence(i, l.node, l.direction, l.sentence), credit: [l.node] });
+    const contrast = i.bundle.node(l.node)?.kind === 'contrast' ? otherContrast(i, l.node, l.contrast) : undefined;
+    out.push({ id: `recap:${l.node}:${l.direction}`, kind: 'lapsed', node: l.node, direction: l.direction, ...(contrast ? { contrast } : otherSentence(i, l.node, l.direction, l.sentence)), credit: [l.node] });
   }
   // a practice item missed today: its target again, in a sentence not seen (none left: not in the one it has just been shown the answer to)
   for (const r of i.retests ?? []) {
@@ -87,7 +96,7 @@ export function recapCard(it: RecapItem, b: Bundle, taught?: readonly TenseKey[]
   if (it.kind === 'new' && it.learn) return { ...learnRetrieval(it.learn, b, it.round ?? 0), key: it.id };
   const r: ReviewItem = {
     op: 'review', id: it.id, scoring: 'review', credit: it.credit, node: it.node, targets: [it.node],
-    direction: it.direction, sentence: it.sentence, novel: !it.reused,
+    direction: it.direction, sentence: it.sentence, novel: !it.reused, ...(it.contrast ? { contrast: it.contrast } : {}),
   };
   return reviewCard(r, b, 'meaning', undefined, taught);
 }

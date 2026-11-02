@@ -76,13 +76,11 @@ describe('the review of a contrast with items of its own (F3)', () => {
     }
   });
 
-  it('asks an item of its own where the plan names none (the recap, free practice), never a script item then', () => {
-    const ids = new Set(some('x:por-para').map((i) => i.id));
+  it('shows only an item somebody who knows what the learner has been taught named: a review that names none is asked with the script', () => {
     const c = reviewCard(review('x:por-para', 'receptive'), b);
+    const script = b.scripts.get('x:por-para')!;
     expect(c.type).toBe('mcq');
-    expect(ids.size).toBeGreaterThan(10);
-    // por and para is decided by what is meant: the English is the question, and the sentences are the answers
-    expect(some('x:por-para').map((i) => i.en)).toContain(c.prompt?.text);
+    expect(script.readAndPick.map((r) => r.es)).toContain(c.prompt?.text);
   });
 
   it('a plan that named a script item stands, and an item the bundle does not have falls back to the script', () => {

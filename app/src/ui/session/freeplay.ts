@@ -17,7 +17,7 @@ import { State, type Direction, type ExposureEvent, type Learner } from '../../l
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, scriptCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
-import { contrastCard, contrastCredit, contrastFormAt } from './contrast-card';
+import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
 import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
@@ -210,12 +210,11 @@ export class Freeplay {
       : 'The examples for this use things you have not met yet.';
   }
 
-  /** Unseen ids first (shuffled), then seen ones (shuffled). */
-  private unseenFirst(ids: string[]): string[] {
+  /** Unseen ids first (shuffled), then seen ones (shuffled). Sentences by default; `item` names the ledger key an id has as an item (a contrast's, `cx:`). */
+  private unseenFirst(ids: string[], item?: string): string[] {
     const { learner, rng } = this.d;
-    const fresh = ids.filter((id) => !learner.ledger.hasSeen('sentence', id));
-    const old = ids.filter((id) => learner.ledger.hasSeen('sentence', id));
-    return [...shuffle(fresh, rng), ...shuffle(old, rng)];
+    const seen = (id: string) => (item ? learner.ledger.hasSeen('item', `${item}${id}`) : learner.ledger.hasSeen('sentence', id));
+    return [...shuffle(ids.filter((id) => !seen(id)), rng), ...shuffle(ids.filter(seen), rng)];
   }
 
   private markSeen(sentence: string) {
@@ -271,7 +270,9 @@ export class Freeplay {
     const sentence = this.unseenFirst(fresh.length ? fresh : pool)[0];
     const novel = !!sentence && !learner.ledger.hasSeen('sentence', sentence);
     const id = `quick:${++this.seq}:${node}:${dir}`;
-    const item: ReviewItem = { op: 'review', id, scoring: 'review', credit: [node], node, targets: [node], direction: dir, sentence, novel };
+    // a contrast has no sentence: one of its own items the learner can be shown, those not seen before first
+    const own = this.isContrast(node) ? this.unseenFirst(eligibleContrast(bundle, node, this.known()).map((it) => it.id), 'cx:')[0] : undefined;
+    const item: ReviewItem = { op: 'review', id, scoring: 'review', credit: [node], node, targets: [node], direction: dir, sentence, novel, ...(own ? { contrast: own } : {}) };
     const card = reviewCard(item, bundle, 'meaning', undefined, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
     this.lastOp = 'quick';
     this.cur = {
@@ -284,6 +285,10 @@ export class Freeplay {
         if (!learner.hasCard(node, dir)) return;
         reviewSentence(learner, [node], dir, grade, opts);
         if (sentence) this.markSeen(sentence);
+        if (own) {
+          const seenBefore = learner.ledger.hasSeen('item', `cx:${own}`);
+          learner.ledger.markSeen('item', `cx:${own}`, { deliberate: seenBefore, at: this.d.now(), ...(seenBefore ? { reason: 'free practice' } : {}) });
+        }
       },
     };
     return card;

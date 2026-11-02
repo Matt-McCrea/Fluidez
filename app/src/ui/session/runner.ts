@@ -487,7 +487,7 @@ export class SessionRunner {
   private noteLapse(item: Item, o: Outcome): void {
     if (o.correct || item.scoring !== 'review' || item.op !== 'review') return;
     const direction = item.direction;
-    for (const node of reviewTargets(item)) this.lapses.push({ node, direction, sentence: item.sentence });
+    for (const node of reviewTargets(item)) this.lapses.push({ node, direction, sentence: item.sentence, ...(item.contrast ? { contrast: item.contrast } : {}) });
   }
 
   // ---------------------------------------------------------------- "Before you go"

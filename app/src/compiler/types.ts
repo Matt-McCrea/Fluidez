@@ -441,6 +441,8 @@ export interface RecapItem {
   direction: Direction;
   /** lapsed: bank sentence for the re-ask (a different one when available); undefined = bare card */
   sentence?: string;
+  /** lapsed contrast: one of its own items the learner can be shown, another than the one missed where there is one (see ReviewItem.contrast) */
+  contrast?: string;
   /** the same sentence as earlier in the session is shown again */
   reused?: boolean;
   /** new: the learn retrieval round to mimic (2 = type it) */
