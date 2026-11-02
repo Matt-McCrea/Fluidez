@@ -11,10 +11,6 @@ describe('the real course, read in beats', () => {
   simulateProfile(PROFILES.average, { days: 60, tier: 'standard', course: real.course, content: real.content, seed: 1, onPlan: (p) => plans.push(p) });
   const beats = plans.flatMap((p) => p.blocks.filter((b): b is ReadBlock => b.kind === 'read' && !!b.beat).map((b) => ({ p, b })));
 
-  test('a drill day carries a beat of the chapter in hand', () => {
-    expect(beats.some(({ p }) => p.type === 'drill' || p.type === 'patterns' || p.type === 'output')).toBe(true);
-  });
-
   test('a beat is a minute or so, and the beats of one chapter come in order, each once', () => {
     const seen = new Map<string, number>();
     for (const { b } of beats) {

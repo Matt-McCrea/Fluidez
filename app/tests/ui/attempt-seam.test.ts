@@ -25,9 +25,9 @@ import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
 
 const EXPECTED = {
-  sessions: { events: 235, eventDigest: '31b713bf4e89df1fce9afa4553ad8623b20ec8d6468ccb862ad4812242555cec', memoryDigest: '5539493be1825b2c05a01899813b002e05363ede4cd82ed4610d14bb72075eed' },
+  sessions: { events: 237, eventDigest: '18ffeb0a0465af4af2f8b4ab61e09611782b74aba0a29314d85930ac69ad9dbe', memoryDigest: '478b151fca3662801f0a3b821758c178b64790610d06f43654be03e688d130fd' },
   dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
-  freeplay: { events: 267, eventDigest: 'a6412d7f21a9d177de6e8287455af3c829b9cb248e1180141cf155c97a887672', memoryDigest: '4e19a15823d2de84c19a902e876ca7bfab02fdddb6380a73636c0fc4c0f22363' },
+  freeplay: { events: 269, eventDigest: 'f7f6747fe5268a2a0ac4d0f021506993ccfcc9b6fe3426310133dfc069bd9ba0', memoryDigest: '2f295eaa22fa7f6922652c6bca5221e9e6c30e1ffbe5ac5495cff2c95d447d5f' },
   average: { events: 5437, eventDigest: '9870d460fbfe96e76f2264eb9bfe2674ed105ff4451a4c8e137f03690d38a8d7', memoryDigest: '5f2eee2830ee322d889e7587288cbcda80539e941b96c22af5f8c3a4f3c59edb' },
   irregular: { events: 3587, eventDigest: 'a1539d77d7158f1cde9d0e9e16aadbe2a4ecbf7f716ed5406ba7dade97bea888', memoryDigest: 'd3dee5ece18d8f3936ac6882a2200d21562f18320a1d6628d050cea384a87587' },
 };

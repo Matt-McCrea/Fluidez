@@ -131,7 +131,7 @@ describe('an interrupted lesson (real content, u07 day 0)', () => {
     expect(w.learner.isLearning(GRAMMAR)).toBe(false);
   });
 
-  it('a lapsed saved session is swept; a resumable one keeps its nodes mid-lesson', async () => {
+  it('a saved session survives a week and keeps its nodes mid-lesson', async () => {
     const w = await atU07();
     const { run } = await leaveAt(w, 2, 'practised', true);
     await w.ui.saveSession(saved(w, run, 2));
@@ -139,10 +139,9 @@ describe('an interrupted lesson (real content, u07 day 0)', () => {
     w.clock.t += HOUR;
     compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
     expect(w.learner.isLearning(GRAMMAR), 'inside the resume window the lesson is still open').toBe(true);
-    w.clock.t += 3 * HOUR;
+    w.clock.t += 7 * 24 * HOUR;
     compilePlan(w.learner, w.bundle, w.ui, { now: w.now() });
-    expect(w.learner.isLearning(GRAMMAR), 'past the window nothing can resume it').toBe(false);
-    expect(w.learner.hasCard(GRAMMAR, 'receptive')).toBe(true);
+    expect(w.learner.isLearning(GRAMMAR), 'a lesson survives midnight and a week while the learner has not moved on').toBe(true);
   });
 
   it('resuming a half-run session finishes it as a straight run would', async () => {

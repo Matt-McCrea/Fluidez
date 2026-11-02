@@ -342,6 +342,7 @@ class Compiler {
       this.blocks.splice(at, 0, remedial.block);
     }
     this.fitToBudget();
+    this.dropBeatOverBudget();
     if (d.type !== 'review') this.storyBeat();
     // a run over misses is an addition, so it goes where the plan cannot hold it (after the new words have been owed to make room); the checkpoint's stays
     if (remedial?.fromMiss && this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards) > this.minutes + 1e-9) {
@@ -1349,11 +1350,23 @@ class Compiler {
     return ix === of - 1;
   }
 
+  /** A beat of a chapter is the one part of the day that can wait: where the day is still over its minutes after the new words were owed, it waits. */
+  private dropBeatOverBudget() {
+    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards);
+    const at = this.blocks.findIndex((b) => b.kind === 'read' && !!b.beat);
+    if (at >= 0 && total() > this.minutes + 1e-9) this.blocks.splice(at, 1);
+  }
+
   /** A day with no story of its own carries the next beat of the chapter in hand, so the story reaches most days. */
   private storyBeat() {
     if (this.throttled || this.blocks.some((b) => b.kind === 'read' || b.kind === 'reread' || b.kind === 'scene')) return;
     const { ch } = this.chapterFor(undefined);
-    if (ch?.beats) this.pushRead(ch);
+    if (!ch?.beats) return;
+    // the beat is an extra: it rides only where the day has the minute to spare, so a short day's bar does not move
+    const total = this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards);
+    const beat = ch.beats[Math.min(ch.beats.length - 1, this.L.ledger.views('reading', ch.id).length)];
+    if (total + beat.minutes > this.minutes + 1e-9) return;
+    this.pushRead(ch);
   }
 
   /**

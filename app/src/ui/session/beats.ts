@@ -17,13 +17,13 @@ const MIN_WORDS = 40;
 export const DAILY_BEAT_WORDS = 55;
 
 /** A paragraph that ends on a question or a trailing off is a place to stop: the learner wants the answer. */
-const isHook = (s: string): boolean => /[?…]["”»')\]]*$/u.test(s);
+const isHook = (s: string): boolean => /[?…][\x22”»\x27)\]]*$/u.test(s);
 
 export const countWords = (s: string): number => (s.match(/\p{L}+/gu) ?? []).length;
 
 /** A paragraph's sentences, each kept whole (closing quotes and brackets stay with it). */
 export function sentencesOf(para: string): string[] {
-  const out = para.match(/(?:[^.!?…]|(?<=\d)\.(?=\d))+(?:(?:[.!?…]+["”»')\]]*)+|$)\s*/gu) ?? [para];
+  const out = para.match(/(?:[^.!?…]|(?<=\d)\.(?=\d))+(?:(?:[.!?…]+[\x22”»\x27)\]]*)+|$)\s*/gu) ?? [para];
   return out.map((s) => s.trim()).filter(Boolean);
 }
 

@@ -73,7 +73,7 @@ describe('daily beats', () => {
       const ch = bundle.chapters.get(id)!;
       const bs = splitBeats(ch.text, ch.questions, { target: DAILY_BEAT_WORDS });
       for (const b of bs) { expect(b.words).toBeGreaterThanOrEqual(40); expect(b.words).toBeLessThanOrEqual(100); }
-      bs.slice(0, -1).forEach((b) => { beats += 1; if (/[?…]["”»')\]]*$/u.test(b.text)) hooks += 1; });
+      bs.slice(0, -1).forEach((b) => { beats += 1; if (/[?…][\x22”»\x27)\]]*$/u.test(b.text)) hooks += 1; });
     }
     expect(beats).toBeGreaterThan(10);
     expect(hooks / beats).toBeGreaterThan(0.3);

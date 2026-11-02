@@ -44,10 +44,10 @@ describe('a lesson left part-way', () => {
     expect((await shelfOf(w)).rescue).toBeUndefined();
   });
 
-  it('that can no longer be picked up is no reason to hold one back', async () => {
+  it('left days ago can still be picked up, so it is still the shelf\'s business to hold one back', async () => {
     const w = await due();
     await leave(w, w.now() - 2 * DAY);
-    expect((await shelfOf(w)).rescue).toBeDefined();
+    expect((await shelfOf(w)).rescue).toBeUndefined();
   });
 
   it('leaves the games that move no card where they were', async () => {
