@@ -1,0 +1,33 @@
+{
+  "node": "x:conformarse-no-remedio",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:conformarse-no-remedio#pf1",
+      "node": "x:conformarse-no-remedio",
+      "side": "p:no-quedar-mas-remedio",
+      "rung": 1,
+      "en": "I had no choice but to leave.",
+      "es": "No me quedó más remedio que irme.",
+      "gap": [
+        0,
+        11
+      ],
+      "options": [
+        "No me quedó",
+        "Yo no quedé"
+      ],
+      "answer": 0,
+      "why": "Almost. The remedy is what is left to me, so the person goes in as me, and the verb stays quedó.",
+      "requires": [
+        "g:comparatives",
+        "g:parecer-quedar",
+        "g:preterite-ar",
+        "l:irse",
+        "l:quedar",
+        "l:remedio",
+        "p:no-quedar-mas-remedio"
+      ]
+    }
+  ]
+}

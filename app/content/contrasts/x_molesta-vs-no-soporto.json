@@ -1,0 +1,269 @@
+{
+  "node": "x:molesta-vs-no-soporto",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:molesta-vs-no-soporto#yt4",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "p:no-soportar-que",
+      "rung": 1,
+      "en": "I can't stand it when they shout at me.",
+      "es": "No soporto que me griten.",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "gritan",
+        "griten"
+      ],
+      "answer": 1,
+      "why": "No soporto que plus the subjunctive: griten.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:gritar",
+        "l:soportar",
+        "p:me-te-nos-objects",
+        "p:no-soportar-que",
+        "p:no-soporto-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#rp0",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me a little that they talk so loudly.",
+      "es": "Me molesta un poco que hablen tan fuerte.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "molesta",
+        "molesto"
+      ],
+      "answer": 0,
+      "why": "The English says \"It bothers me a little that they talk so loudly.\", so the gap is molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:fuerte",
+        "l:hablar",
+        "l:molestar",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#rp2",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me so much that Simón screams.",
+      "es": "Me molesta muchísimo que Simón grite.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "molesta",
+        "molesto"
+      ],
+      "answer": 0,
+      "why": "The English says \"It bothers me so much that Simón screams.\", so the gap is molesta.",
+      "requires": [
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:superlatives",
+        "g:that-clauses",
+        "l:gritar",
+        "l:molestar"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#rp3",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "Do you mind if I open the window?",
+      "es": "¿Te molesta que abra la ventana?",
+      "gap": [
+        4,
+        11
+      ],
+      "options": [
+        "molesto",
+        "molesta"
+      ],
+      "answer": 1,
+      "why": "The English says \"Do you mind if I open the window?\", so the gap is molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:abrir",
+        "l:molestar",
+        "l:ventana",
+        "p:me-encanta-que"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#rp5",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me quite a bit that they don't let us know.",
+      "es": "Me molesta bastante que no avisen.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "molesto",
+        "molesta"
+      ],
+      "answer": 1,
+      "why": "The English says \"It bothers me quite a bit that they don't let us know.\", so the gap is molesta.",
+      "requires": [
+        "g:gustar-full",
+        "g:present-ar",
+        "g:quantifiers",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:avisar",
+        "l:molestar"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#rp7",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me a little that they don't call.",
+      "es": "Me molesta un poco que no llamen.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "molesto",
+        "molesta"
+      ],
+      "answer": 1,
+      "why": "The English says \"It bothers me a little that they don't call.\", so the gap is molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:llamar",
+        "l:molestar",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#g.subj-emotion-intro.rp2",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers me that the customers don't say hello.",
+      "es": "Me molesta que los clientes no saluden.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "molesta",
+        "molesto"
+      ],
+      "answer": 0,
+      "why": "The English says \"It bothers me that the customers don't say hello.\", so the gap is molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cliente",
+        "l:molestar",
+        "l:saludar"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#g.subj-emotion-intro.rp4",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "Do you mind if I open the window? (to a friend)",
+      "es": "¿Te molesta que yo abra la ventana?",
+      "gap": [
+        4,
+        11
+      ],
+      "options": [
+        "molesta",
+        "molesto"
+      ],
+      "answer": 0,
+      "why": "The English says \"Do you mind if I open the window? (to a friend)\", so the gap is molesta.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:abrir",
+        "l:molestar",
+        "l:ventana"
+      ]
+    },
+    {
+      "id": "x:molesta-vs-no-soporto#g.subj-emotion-intro.rp5",
+      "node": "x:molesta-vs-no-soporto",
+      "side": "g:subj-emotion-intro",
+      "rung": 1,
+      "en": "It bothers Vale that Simón eats her bread.",
+      "es": "A Vale le molesta que Simón coma su pan.",
+      "gap": [
+        10,
+        17
+      ],
+      "options": [
+        "molesto",
+        "molesta"
+      ],
+      "answer": 1,
+      "why": "The English says \"It bothers Vale that Simón eats her bread.\", so the gap is molesta.",
+      "requires": [
+        "g:gustar-full",
+        "g:present-ar",
+        "g:subj-emotion-intro",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:comer",
+        "l:molestar",
+        "l:pan",
+        "p:possessives-basic"
+      ]
+    }
+  ]
+}

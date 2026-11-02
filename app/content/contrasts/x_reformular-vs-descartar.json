@@ -1,0 +1,98 @@
+{
+  "node": "x:reformular-vs-descartar",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:reformular-vs-descartar#pf2",
+      "node": "x:reformular-vs-descartar",
+      "side": "g:reformulation",
+      "rung": 1,
+      "en": "There are three, or rather, four.",
+      "es": "Son tres, mejor dicho, cuatro.",
+      "gap": [
+        10,
+        21
+      ],
+      "options": [
+        "de todos modos",
+        "mejor dicho"
+      ],
+      "answer": 1,
+      "why": "To correct a number you just said, use mejor dicho.",
+      "requires": [
+        "g:reformulation",
+        "g:ser-identity",
+        "l:decir",
+        "l:mejor",
+        "l:ser",
+        "p:o-sea-que"
+      ]
+    },
+    {
+      "id": "x:reformular-vs-descartar#yt0",
+      "node": "x:reformular-vs-descartar",
+      "side": "g:reformulation",
+      "rung": 2,
+      "en": "It's tomorrow, that is, Saturday.",
+      "es": "Es mañana, es decir, el sábado.",
+      "gap": [
+        11,
+        19
+      ],
+      "options": [
+        "es decir",
+        "en cualquier caso"
+      ],
+      "answer": 0,
+      "why": "Saturday is the same thing as tomorrow, said exactly, so es decir.",
+      "requires": [
+        "g:gender-articles",
+        "g:reformulation",
+        "g:ser-identity",
+        "l:decir",
+        "l:mañana",
+        "l:ser",
+        "l:sábado",
+        "p:days-el-lunes",
+        "p:hay-varios-tipos"
+      ]
+    },
+    {
+      "id": "x:reformular-vs-descartar#yt1",
+      "node": "x:reformular-vs-descartar",
+      "side": "p:en-cualquier-caso",
+      "rung": 2,
+      "en": "You may be right; in any case, we have to decide today.",
+      "es": "Puede que tengas razón; en cualquier caso, hay que decidir hoy.",
+      "gap": [
+        24,
+        41
+      ],
+      "options": [
+        "es decir",
+        "en cualquier caso"
+      ],
+      "answer": 1,
+      "why": "Being right is one thing, deciding is another, so you move on with en cualquier caso.",
+      "requires": [
+        "c:hay",
+        "c:hay-que",
+        "g:cada-cualquier",
+        "g:present-ar",
+        "g:stem-boot",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:verb-infinitive",
+        "l:casar",
+        "l:decidir",
+        "l:hoy",
+        "l:poder",
+        "l:razón",
+        "l:tener",
+        "p:en-cualquier-caso",
+        "p:tener-razon"
+      ]
+    }
+  ]
+}

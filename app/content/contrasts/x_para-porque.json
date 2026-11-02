@@ -1,0 +1,460 @@
+{
+  "node": "x:para-porque",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:para-porque#rp0",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "We open on Sundays to sell more.",
+      "es": "Abrimos los domingos para vender más.",
+      "gap": [
+        21,
+        32
+      ],
+      "options": [
+        "porque vendemos",
+        "para vender"
+      ],
+      "answer": 1,
+      "why": "The English says \"We open on Sundays to sell more.\", so the gap is para vender.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:domingo",
+        "l:vender",
+        "p:days-el-lunes",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp1",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "We open on Sundays because we sell more.",
+      "es": "Abrimos los domingos porque vendemos más.",
+      "gap": [
+        21,
+        36
+      ],
+      "options": [
+        "porque vendemos",
+        "para vender"
+      ],
+      "answer": 0,
+      "why": "The English says \"We open on Sundays because we sell more.\", so the gap is porque vendemos.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:domingo",
+        "l:vender",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp2",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "I came because I want to talk to you.",
+      "es": "Vine porque quiero hablar contigo.",
+      "gap": [
+        5,
+        18
+      ],
+      "options": [
+        "para",
+        "porque quiero"
+      ],
+      "answer": 1,
+      "why": "The English says \"I came because I want to talk to you.\", so the gap is porque quiero.",
+      "requires": [
+        "c:porque",
+        "c:quiero",
+        "g:cause-result",
+        "g:prep-pronouns",
+        "g:preterite-irregular-strong",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:hablar",
+        "l:querer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp3",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "I came to talk to you.",
+      "es": "Vine para hablar contigo.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "para",
+        "porque quiero"
+      ],
+      "answer": 0,
+      "why": "The English says \"I came to talk to you.\", so the gap is para.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:preterite-irregular-strong",
+        "l:hablar",
+        "l:venir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-porque#pf0",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "I'm staying a year because I think we have a chance.",
+      "es": "Me quedo un año porque creo que tenemos una oportunidad.",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "para",
+        "porque"
+      ],
+      "answer": 1,
+      "why": "Almost. Creo has a person in it, so the reason takes porque.",
+      "requires": [
+        "c:creo-que",
+        "c:porque",
+        "c:tienes",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:año",
+        "l:creer",
+        "l:oportunidad",
+        "l:quedarse",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:para-porque#pf2",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "I left early so I wouldn't miss the bus.",
+      "es": "Salí temprano para no perder el bus.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 1,
+      "why": "Not doing something can be a goal too: para no + the basic verb.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:bus",
+        "l:perder",
+        "l:salir",
+        "l:temprano",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp4",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "Tomás is happy because he found the letter.",
+      "es": "Tomás está contento porque encontró la carta.",
+      "gap": [
+        20,
+        26
+      ],
+      "options": [
+        "para",
+        "porque"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás is happy because he found the letter.\", so the gap is porque.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:carta",
+        "l:contento",
+        "l:encontrar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp6",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "Mariana uses her phone to work.",
+      "es": "Mariana usa el celular para trabajar.",
+      "gap": [
+        23,
+        27
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mariana uses her phone to work.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:celular",
+        "l:trabajar",
+        "l:usar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp7",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "Vale came to Bogotá because she likes the city.",
+      "es": "Vale vino a Bogotá porque le gusta la ciudad.",
+      "gap": [
+        19,
+        25
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale came to Bogotá because she likes the city.\", so the gap is porque.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:gustar-basic",
+        "g:gustar-full",
+        "g:present-ar",
+        "g:preterite-irregular-strong",
+        "l:ciudad",
+        "l:gustar",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:para-porque#rp8",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "What do you need money for? (to a friend)",
+      "es": "¿Para qué necesitas plata?",
+      "gap": [
+        1,
+        5
+      ],
+      "options": [
+        "Porque",
+        "Para"
+      ],
+      "answer": 1,
+      "why": "The English says \"What do you need money for? (to a friend)\", so the gap is Para.",
+      "requires": [
+        "g:present-ar",
+        "l:necesitar",
+        "l:plata",
+        "l:qué",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:prep-questions-basic",
+        "p:question-word-order"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp0",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "Tomás came to the café to talk to Vale.",
+      "es": "Tomás vino al café para hablar con Vale.",
+      "gap": [
+        19,
+        23
+      ],
+      "options": [
+        "para",
+        "porque"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás came to the café to talk to Vale.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "l:café",
+        "l:hablar",
+        "l:venir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp1",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "Tomás came to the café because Vale called him.",
+      "es": "Tomás vino al café porque Vale lo llamó.",
+      "gap": [
+        19,
+        25
+      ],
+      "options": [
+        "para",
+        "porque"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás came to the café because Vale called him.\", so the gap is porque.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:preterite-irregular-strong",
+        "l:café",
+        "l:llamar",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp4",
+      "node": "x:para-porque",
+      "side": "c:porque",
+      "rung": 1,
+      "en": "Vale opens early because she makes the pandebonos.",
+      "es": "Vale abre temprano porque hace los pandebonos.",
+      "gap": [
+        19,
+        25
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale opens early because she makes the pandebonos.\", so the gap is porque.",
+      "requires": [
+        "c:porque",
+        "g:cause-result",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:hacer",
+        "l:pandebono",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp5",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "Mariana uses her phone to send voice messages.",
+      "es": "Mariana usa el celular para mandar audios.",
+      "gap": [
+        23,
+        27
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mariana uses her phone to send voice messages.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:audio",
+        "l:celular",
+        "l:mandar",
+        "l:usar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp6",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "What do you need the internet for?",
+      "es": "¿Para qué necesitas internet?",
+      "gap": [
+        1,
+        5
+      ],
+      "options": [
+        "Para",
+        "Porque"
+      ],
+      "answer": 0,
+      "why": "The English says \"What do you need the internet for?\", so the gap is Para.",
+      "requires": [
+        "g:present-ar",
+        "l:internet",
+        "l:necesitar",
+        "l:qué",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:prep-questions-basic",
+        "p:question-word-order"
+      ]
+    },
+    {
+      "id": "x:para-porque#p.para-inf-purpose.rp7",
+      "node": "x:para-porque",
+      "side": "p:para-inf-purpose",
+      "rung": 1,
+      "en": "I need the computer to answer the messages.",
+      "es": "Necesito la computadora para responder los mensajes.",
+      "gap": [
+        24,
+        28
+      ],
+      "options": [
+        "porque",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"I need the computer to answer the messages.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:computadora",
+        "l:mensaje",
+        "l:necesitar",
+        "l:responder",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    }
+  ]
+}

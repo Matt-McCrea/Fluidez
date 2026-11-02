@@ -1,0 +1,351 @@
+{
+  "node": "x:relative-ind-subj",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:relative-ind-subj#rp4",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Hernando is looking for a particular man, who lives in Santa Marta.",
+      "es": "Hernando busca a un señor que vive en Santa Marta.",
+      "gap": [
+        30,
+        34
+      ],
+      "options": [
+        "viva",
+        "vive"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is looking for a particular man, who lives in Santa Marta.\", so the gap is vive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:buscar",
+        "l:señor",
+        "l:vivir",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#rp6",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Hernando is looking for any man who lives in Santa Marta, if there is one.",
+      "es": "Hernando busca a un señor que viva en Santa Marta.",
+      "gap": [
+        30,
+        34
+      ],
+      "options": [
+        "vive",
+        "viva"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is looking for any man who lives in Santa Marta, if there is one.\", so the gap is viva.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:buscar",
+        "l:señor",
+        "l:vivir",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#pf1",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Hernando knows a man who lives in Santa Marta.",
+      "es": "Hernando conoce a un señor que vive en Santa Marta.",
+      "gap": [
+        31,
+        35
+      ],
+      "options": [
+        "vive",
+        "viva"
+      ],
+      "answer": 0,
+      "why": "Almost. The man exists and Hernando knows him, so the ordinary form: vive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:conocer",
+        "l:señor",
+        "l:vivir",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#pf3",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "There's a café that opens at six.",
+      "es": "Hay un café que abre a las seis.",
+      "gap": [
+        16,
+        20
+      ],
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "answer": 0,
+      "why": "Almost. You're saying it exists, so abre. Save abra for asking if it exists.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:abrir",
+        "l:café",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#yt0",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for the place that has a kitchen, the one I saw yesterday.",
+      "es": "Busco el local que tiene cocina.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 0,
+      "why": "You saw it, so it is real and the verb is ordinary: tiene.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:stem-boot",
+        "l:buscar",
+        "l:cocina",
+        "l:local",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#rp1",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for a place that has a kitchen (any one, if it exists).",
+      "es": "Busco un local que tenga cocina.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "tenga",
+        "tiene"
+      ],
+      "answer": 0,
+      "why": "Any place like that, if one exists.",
+      "requires": [
+        "c:aqui-tiene",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "l:buscar",
+        "l:cocina",
+        "l:local",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#rp3",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Is there a café that opens at four?",
+      "es": "¿Hay un café que abra a las cuatro?",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "abra",
+        "abre"
+      ],
+      "answer": 0,
+      "why": "The English says \"Is there a café that opens at four?\", so the gap is abra.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:abrir",
+        "l:café",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#rp5",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Do you know someone who lives in Santa Marta? (to a friend, I'm not sure anyone does)",
+      "es": "¿Conoces a alguien que viva en Santa Marta?",
+      "gap": [
+        23,
+        27
+      ],
+      "options": [
+        "viva",
+        "vive"
+      ],
+      "answer": 0,
+      "why": "The English says \"Do you know someone who lives in Santa Marta? (to a friend, I'm not sure anyone does)\", so the gap is viva.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:conocer",
+        "l:vivir",
+        "p:indefinites-basic",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#rp7",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I want the apartment that has a balcony (I know the one).",
+      "es": "Quiero el apartamento que tiene balcón.",
+      "gap": [
+        26,
+        31
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 0,
+      "why": "The English says \"I want the apartment that has a balcony (I know the one).\", so the gap is tiene.",
+      "requires": [
+        "c:quiero",
+        "c:tienes",
+        "g:gender-articles",
+        "g:relative-que",
+        "g:stem-boot",
+        "l:apartamento",
+        "l:balcón",
+        "l:querer",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#g.subj-relative.pf0",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for an apartment that has two bedrooms.",
+      "es": "Busco un apartamento que tenga dos cuartos.",
+      "gap": [
+        25,
+        30
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 1,
+      "why": "Almost. If you haven't found it and any one will do, use the subjunctive: tenga. Que tiene would mean you already have one in mind.",
+      "requires": [
+        "c:aqui-tiene",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "l:apartamento",
+        "l:buscar",
+        "l:cuarto",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#g.subj-relative.yt0",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for a house that has a garden, any one, I don't know if one exists.",
+      "es": "Busco una casa que tenga jardín.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "tenga",
+        "tiene"
+      ],
+      "answer": 0,
+      "why": "You don't know that such a house exists, so the verb takes the subjunctive: tenga.",
+      "requires": [
+        "c:aqui-tiene",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:subj-relative",
+        "l:buscar",
+        "l:casa",
+        "l:jardín",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:relative-ind-subj#g.subj-relative.rp1",
+      "node": "x:relative-ind-subj",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I'm looking for the house that has a garden (I know the one).",
+      "es": "Busco la casa que tiene jardín.",
+      "gap": [
+        18,
+        23
+      ],
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm looking for the house that has a garden (I know the one).\", so the gap is tiene.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:stem-boot",
+        "l:buscar",
+        "l:casa",
+        "l:jardín",
+        "l:tener"
+      ]
+    }
+  ]
+}

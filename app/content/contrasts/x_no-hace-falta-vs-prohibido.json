@@ -1,0 +1,151 @@
+{
+  "node": "x:no-hace-falta-vs-prohibido",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:no-hace-falta-vs-prohibido#pf0",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to come. (to a friend)",
+      "es": "No hace falta que vengas.",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "vienes",
+        "vengas"
+      ],
+      "answer": 1,
+      "why": "Almost. After que the verb takes the subjunctive: vengas, not vienes.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:falta",
+        "l:hacer",
+        "l:venir",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#pf2",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to bring anything. (to a friend)",
+      "es": "No hace falta que traigas nada.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Está prohibido",
+        "No hace falta"
+      ],
+      "answer": 1,
+      "why": "Almost. A kind host is not banning anything, so \"you don't need to\" is no hace falta.",
+      "requires": [
+        "g:negation-words",
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:falta",
+        "l:hacer",
+        "l:traer",
+        "p:llevar-traer",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#yt0",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 2,
+      "en": "You don't need to come. (to a friend)",
+      "es": "No hace falta que vengas.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 0,
+      "why": "Nothing is banned, so the door is open: no hace falta.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:falta",
+        "l:hacer",
+        "l:venir",
+        "p:no-hace-falta-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#yt1",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:esta-prohibido-que",
+      "rung": 2,
+      "en": "It is forbidden for you to go in. (to a friend)",
+      "es": "Está prohibido que entres.",
+      "gap": [
+        0,
+        14
+      ],
+      "options": [
+        "No hace falta",
+        "Está prohibido"
+      ],
+      "answer": 1,
+      "why": "It is a ban, so the door is shut: está prohibido.",
+      "requires": [
+        "g:estar-location-states",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:entrar",
+        "l:estar",
+        "l:prohibir",
+        "p:es-obligatorio",
+        "p:esta-prohibido",
+        "p:esta-prohibido-que"
+      ]
+    },
+    {
+      "id": "x:no-hace-falta-vs-prohibido#p.no-hace-falta-que.yt1",
+      "node": "x:no-hace-falta-vs-prohibido",
+      "side": "p:no-hace-falta-que",
+      "rung": 1,
+      "en": "You don't need to come early. (to a friend)",
+      "es": "No hace falta que vengas temprano.",
+      "gap": [
+        18,
+        24
+      ],
+      "options": [
+        "vienes",
+        "vengas"
+      ],
+      "answer": 1,
+      "why": "Venir changes to vengas after no hace falta que.",
+      "requires": [
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:subj-relative",
+        "g:subj-wanting",
+        "l:falta",
+        "l:hacer",
+        "l:temprano",
+        "l:venir",
+        "p:no-hace-falta-que"
+      ]
+    }
+  ]
+}

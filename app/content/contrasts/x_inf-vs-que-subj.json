@@ -1,0 +1,159 @@
+{
+  "node": "x:inf-vs-que-subj",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:inf-vs-que-subj#rp0",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I want you to leave early.",
+      "es": "Quiero que salgas temprano.",
+      "gap": [
+        7,
+        17
+      ],
+      "options": [
+        "que salgas",
+        "salir"
+      ],
+      "answer": 0,
+      "why": "The English says \"I want you to leave early.\", so the gap is que salgas.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:querer",
+        "l:salir",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#rp1",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I want to leave early.",
+      "es": "Quiero salir temprano.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "que salgas",
+        "salir"
+      ],
+      "answer": 1,
+      "why": "The English says \"I want to leave early.\", so the gap is salir.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:querer",
+        "l:salir",
+        "l:temprano"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#rp3",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I need to rest.",
+      "es": "Necesito descansar.",
+      "gap": [
+        9,
+        18
+      ],
+      "options": [
+        "que descanses",
+        "descansar"
+      ],
+      "answer": 1,
+      "why": "The English says \"I need to rest.\", so the gap is descansar.",
+      "requires": [
+        "g:present-ar",
+        "l:descansar",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#rp4",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I need you to rest.",
+      "es": "Necesito que descanses.",
+      "gap": [
+        9,
+        22
+      ],
+      "options": [
+        "que descanses",
+        "descansar"
+      ],
+      "answer": 0,
+      "why": "The English says \"I need you to rest.\", so the gap is que descanses.",
+      "requires": [
+        "c:que-descanses",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:descansar",
+        "l:necesitar"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#yt0",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I want to sleep.",
+      "es": "Quiero dormir.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "que duermas",
+        "dormir"
+      ],
+      "answer": 1,
+      "why": "You want and you sleep: same person, so the dictionary form.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:dormir",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:inf-vs-que-subj#yt1",
+      "node": "x:inf-vs-que-subj",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "I want you to help me.",
+      "es": "Quiero que me ayudes.",
+      "gap": [
+        7,
+        20
+      ],
+      "options": [
+        "que me ayudes",
+        "ayudarme"
+      ],
+      "answer": 0,
+      "why": "You want, your friend helps: two people, so que me ayudes.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ayudar",
+        "l:querer",
+        "p:me-te-nos-objects"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "node": "x:ir-irse",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ir-irse#rp2",
+      "node": "x:ir-irse",
+      "side": "g:se-meaning-change",
+      "rung": 1,
+      "en": "I'm going to Vale's place.",
+      "es": "Voy a casa de Vale.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Me voy de",
+        "Voy a"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'm going to Vale's place.\", so the gap is Voy a.",
+      "requires": [
+        "c:voy-a",
+        "g:ir-a-plans",
+        "l:casa",
+        "l:ir",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:ir-irse#rp3",
+      "node": "x:ir-irse",
+      "side": "g:se-meaning-change",
+      "rung": 1,
+      "en": "I'm leaving Vale's place.",
+      "es": "Me voy de casa de Vale.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me voy de",
+        "Voy a"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm leaving Vale's place.\", so the gap is Me voy de.",
+      "requires": [
+        "c:voy-vas",
+        "g:ir-a-plans",
+        "l:casa",
+        "l:irse"
+      ]
+    },
+    {
+      "id": "x:ir-irse#pf1",
+      "node": "x:ir-irse",
+      "side": "g:se-meaning-change",
+      "rung": 1,
+      "en": "We're leaving the cinema.",
+      "es": "Nos vamos del cine.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Nos",
+        "Me"
+      ],
+      "answer": 0,
+      "why": "The se word has to match the person, so we is nos.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:cine",
+        "l:irse"
+      ]
+    },
+    {
+      "id": "x:ir-irse#rp1",
+      "node": "x:ir-irse",
+      "side": "g:se-meaning-change",
+      "rung": 1,
+      "en": "I'm leaving now.",
+      "es": "Ya me voy.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "me",
+        "nos"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm leaving now.\", so the gap is me.",
+      "requires": [
+        "c:voy-vas",
+        "g:ir-a-plans",
+        "l:irse"
+      ]
+    },
+    {
+      "id": "x:ir-irse#g.se-meaning-change.rp3",
+      "node": "x:ir-irse",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "I fell asleep in the meeting.",
+      "es": "Me dormí en la reunión.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Me",
+        "Nos"
+      ],
+      "answer": 0,
+      "why": "The English says \"I fell asleep in the meeting.\", so the gap is Me.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "g:reflexive-routine",
+        "l:dormirse",
+        "l:reunión"
+      ]
+    },
+    {
+      "id": "x:ir-irse#g.se-meaning-change.rp5",
+      "node": "x:ir-irse",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "We stayed until late.",
+      "es": "Nos quedamos hasta tarde.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Nos",
+        "Me"
+      ],
+      "answer": 0,
+      "why": "The English says \"We stayed until late.\", so the gap is Nos.",
+      "requires": [
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:quedarse",
+        "l:tarde"
+      ]
+    }
+  ]
+}

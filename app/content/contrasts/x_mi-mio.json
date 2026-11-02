@@ -1,0 +1,369 @@
+{
+  "node": "x:mi-mio",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:mi-mio#rp0",
+      "node": "x:mi-mio",
+      "side": "g:possessives",
+      "rung": 1,
+      "en": "He's my friend.",
+      "es": "Es mi amigo.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "mi amigo",
+        "un amigo mío"
+      ],
+      "answer": 0,
+      "why": "The English says \"He's my friend.\", so the gap is mi amigo.",
+      "requires": [
+        "g:ser-identity",
+        "l:amigo",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp1",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "He's a friend of mine.",
+      "es": "Es un amigo mío.",
+      "gap": [
+        3,
+        15
+      ],
+      "options": [
+        "mi amigo",
+        "un amigo mío"
+      ],
+      "answer": 1,
+      "why": "The English says \"He's a friend of mine.\", so the gap is un amigo mío.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:amigo",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp2",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "A cousin of mine works in Medellín.",
+      "es": "Una prima mía trabaja en Medellín.",
+      "gap": [
+        0,
+        13
+      ],
+      "options": [
+        "Una prima mía",
+        "Mi prima"
+      ],
+      "answer": 0,
+      "why": "The English says \"A cousin of mine works in Medellín.\", so the gap is Una prima mía.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:present-ar",
+        "l:prima",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp3",
+      "node": "x:mi-mio",
+      "side": "g:possessives",
+      "rung": 1,
+      "en": "My cousin works in Medellín.",
+      "es": "Mi prima trabaja en Medellín.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Una prima mía",
+        "Mi prima"
+      ],
+      "answer": 1,
+      "why": "The English says \"My cousin works in Medellín.\", so the gap is Mi prima.",
+      "requires": [
+        "g:present-ar",
+        "l:prima",
+        "l:trabajar",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#pf0",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "The black coffee? It's mine.",
+      "es": "¿El tinto? Es mío.",
+      "gap": [
+        14,
+        17
+      ],
+      "options": [
+        "mío",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "Almost. Mi needs a thing after it; alone, it's mío.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:ser",
+        "l:tinto",
+        "p:de-owner"
+      ]
+    },
+    {
+      "id": "x:mi-mio#pf3",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "Your phone is black. Mine is blue. (to a friend)",
+      "es": "Tu celular es negro. El mío es azul.",
+      "gap": [
+        21,
+        27
+      ],
+      "options": [
+        "Mi",
+        "El mío"
+      ],
+      "answer": 1,
+      "why": "Standing in for the phone, mine is el mío.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:azul",
+        "l:celular",
+        "l:negro",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#yt0",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 2,
+      "en": "He's a friend of mine.",
+      "es": "Es un amigo mío.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "mi",
+        "mío"
+      ],
+      "answer": 1,
+      "why": "Nothing comes after, so the long form: mío.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:amigo",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp4",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "That's my suitcase. Yours is the red one.",
+      "es": "Esa es mi maleta. La tuya es la roja.",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "mi",
+        "mío"
+      ],
+      "answer": 0,
+      "why": "The English says \"That's my suitcase. Yours is the red one.\", so the gap is mi.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:demonstratives",
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:maleta",
+        "l:rojo",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp5",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "That's your suitcase. Mine is the red one.",
+      "es": "Esa es tu maleta. La mía es la roja.",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "mi",
+        "mía"
+      ],
+      "answer": 1,
+      "why": "The English says \"That's your suitcase. Mine is the red one.\", so the gap is mía.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:demonstratives",
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:maleta",
+        "l:rojo",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#rp6",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "Mine is blue.",
+      "es": "El mío es azul.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "mío",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mine is blue.\", so the gap is mío.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:azul",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mi-mio#g.possessives.rp8",
+      "node": "x:mi-mio",
+      "side": "g:possessives",
+      "rung": 1,
+      "en": "My aunt has blond hair.",
+      "es": "Mi tía es rubia.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Mi",
+        "Mío"
+      ],
+      "answer": 0,
+      "why": "The English says \"My aunt has blond hair.\", so the gap is Mi.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:rubio",
+        "l:ser",
+        "l:tía",
+        "p:es-tiene-lleva",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mi-mio#g.possessives-stressed.yt3",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "A friend of mine lives in Santa Marta.",
+      "es": "Un amigo mío vive en Santa Marta.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "mío",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "Of mine is just mío after the noun, no de.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:present-er-ir",
+        "l:amigo",
+        "l:vivir"
+      ]
+    },
+    {
+      "id": "x:mi-mio#g.possessives-stressed.rp3",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "Mine is the red one.",
+      "es": "La mía es la roja.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "mi",
+        "mía"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mine is the red one.\", so the gap is mía.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:ser-identity",
+        "l:rojo",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mi-mio#g.possessives-stressed.rp7",
+      "node": "x:mi-mio",
+      "side": "g:possessives-stressed",
+      "rung": 1,
+      "en": "A cousin of mine lives in Cali.",
+      "es": "Una prima mía vive en Cali.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "mi",
+        "mía"
+      ],
+      "answer": 1,
+      "why": "The English says \"A cousin of mine lives in Cali.\", so the gap is mía.",
+      "requires": [
+        "g:gender-articles",
+        "g:possessives-stressed",
+        "g:present-er-ir",
+        "l:prima",
+        "l:vivir"
+      ]
+    }
+  ]
+}

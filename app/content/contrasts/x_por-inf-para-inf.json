@@ -1,0 +1,387 @@
+{
+  "node": "x:por-inf-para-inf",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:por-inf-para-inf#pf0",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "He was fired for arriving late.",
+      "es": "Lo despidieron por llegar tarde.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "Almost. Arriving late is the reason, not the goal, so por.",
+      "requires": [
+        "g:direct-objects",
+        "g:por-para-1",
+        "g:preterite-spelling-stem",
+        "l:despedir",
+        "l:llegar",
+        "l:tarde",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#pf1",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "We left early so as not to arrive late.",
+      "es": "Salimos temprano para no llegar tarde.",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "You are aiming at something, so use para.",
+      "requires": [
+        "g:present-er-ir",
+        "l:llegar",
+        "l:salir",
+        "l:tarde",
+        "l:temprano",
+        "p:llegar-a-tiempo",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#pf2",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "Thank you for coming.",
+      "es": "Gracias por venir.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "After gracias, the reason you are thanking someone takes por.",
+      "requires": [
+        "l:venir",
+        "p:gracias-por"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#pf3",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "Vale went to the market to buy fruit.",
+      "es": "Vale fue al mercado para comprar fruta.",
+      "gap": [
+        20,
+        24
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "Going to buy something is a purpose, so para.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:comprar",
+        "l:fruta",
+        "l:ir",
+        "l:mercado",
+        "p:ir-a-venir-de-place",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#rp3",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "They congratulated him for helping the neighbours.",
+      "es": "Lo felicitaron por ayudar a los vecinos.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"They congratulated him for helping the neighbours.\", so the gap is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:ayudar",
+        "l:felicitar",
+        "l:vecino",
+        "p:felicitaciones-por",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#rp4",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "Tomás got up early to open the café.",
+      "es": "Tomás se levantó temprano para abrir el café.",
+      "gap": [
+        26,
+        30
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás got up early to open the café.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:abrir",
+        "l:café",
+        "l:levantarse",
+        "l:temprano",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#rp5",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "They closed the bakery for not having a permit.",
+      "es": "Cerraron la panadería por no tener permiso.",
+      "gap": [
+        22,
+        25
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"They closed the bakery for not having a permit.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:cerrar",
+        "l:panadería",
+        "l:permiso",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#rp7",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I spoke with the council to ask for help.",
+      "es": "Hablé con la alcaldía para pedir ayuda.",
+      "gap": [
+        22,
+        26
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"I spoke with the council to ask for help.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:alcaldía",
+        "l:ayuda",
+        "l:hablar",
+        "l:pedir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#rp8",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "Mariana called Hernando to ask him a question.",
+      "es": "Mariana llamó a Hernando para hacerle una pregunta.",
+      "gap": [
+        25,
+        29
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana called Hernando to ask him a question.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:object-pronoun-position",
+        "g:preterite-ar",
+        "l:hacer",
+        "l:llamar",
+        "l:pregunta",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#g.causal-advanced.rp3",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "Hernando arrived late because of the traffic.",
+      "es": "Hernando llegó tarde por el tráfico.",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando arrived late because of the traffic.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:llegar",
+        "l:tarde",
+        "l:tráfico",
+        "p:llegar-a-tiempo"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#g.causal-advanced.rp5",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "The council closed the café for not having a permit.",
+      "es": "La alcaldía cerró el café por no tener permiso.",
+      "gap": [
+        26,
+        29
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"The council closed the café for not having a permit.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:alcaldía",
+        "l:café",
+        "l:cerrar",
+        "l:permiso",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#g.causal-advanced.rp7",
+      "node": "x:por-inf-para-inf",
+      "side": "g:causal-advanced",
+      "rung": 1,
+      "en": "Tomás didn't sleep because he kept thinking about the letter.",
+      "es": "Tomás no durmió por pensar en la carta.",
+      "gap": [
+        16,
+        19
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás didn't sleep because he kept thinking about the letter.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-spelling-stem",
+        "l:carta",
+        "l:dormir",
+        "l:pensar",
+        "p:pensar-en"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#p.para-inf.pf2",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I'm studying Spanish to work in Bogotá.",
+      "es": "Estudio español para trabajar en Bogotá.",
+      "gap": [
+        16,
+        20
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "For a goal, Spanish uses para. Por is a different word you'll meet later.",
+      "requires": [
+        "g:present-ar",
+        "l:español",
+        "l:estudiar",
+        "l:trabajar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-inf-para-inf#p.para-inf.rp0",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "This ice cream is for Simón.",
+      "es": "Este helado es para Simón.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"This ice cream is for Simón.\", so the gap is para.",
+      "requires": [
+        "g:ser-identity",
+        "l:helado",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:para-inf"
+      ]
+    }
+  ]
+}

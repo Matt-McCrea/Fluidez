@@ -1,0 +1,156 @@
+{
+  "node": "x:future-guess-present-past",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:future-guess-present-past#rp1",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "He was probably at home.",
+      "es": "Estaría en casa.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Estará",
+        "Estaría"
+      ],
+      "answer": 1,
+      "why": "The English says \"He was probably at home.\", so the gap is Estaría.",
+      "requires": [
+        "g:conditional",
+        "g:estar-location-states",
+        "l:casa",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:future-guess-present-past#pf2",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "He's probably at home.",
+      "es": "Estará en casa.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Estará",
+        "Estara"
+      ],
+      "answer": 0,
+      "why": "Almost. The accent on the final á is what marks the future.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "l:casa",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:future-guess-present-past#yt0",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 2,
+      "en": "Tomás is probably tired now.",
+      "es": "Ahora Tomás estará cansado.",
+      "gap": [
+        12,
+        18
+      ],
+      "options": [
+        "estaría",
+        "estará"
+      ],
+      "answer": 1,
+      "why": "Ahora means now, so the -á ending.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "l:ahora",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:future-guess-present-past#yt1",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 2,
+      "en": "Tomás was probably tired last night.",
+      "es": "Anoche Tomás estaría cansado.",
+      "gap": [
+        13,
+        20
+      ],
+      "options": [
+        "estaría",
+        "estará"
+      ],
+      "answer": 0,
+      "why": "Anoche is in the past, so the -ía ending.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:conditional",
+        "g:estar-location-states",
+        "l:anoche",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:future-guess-present-past#g.future-conjecture.pf3",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Simón is probably nearby.",
+      "es": "Simón estará cerca.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "estará",
+        "estara"
+      ],
+      "answer": 0,
+      "why": "The accent is part of the ending: estará, stressed at the end.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "l:cerca",
+        "l:estar",
+        "p:cerca-de"
+      ]
+    },
+    {
+      "id": "x:future-guess-present-past#g.future-conjecture.rp6",
+      "node": "x:future-guess-present-past",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Where can Simón be?",
+      "es": "¿Dónde estará Simón?",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "estaría",
+        "estará"
+      ],
+      "answer": 1,
+      "why": "The English says \"Where can Simón be?\", so the gap is estará.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "g:questions",
+        "l:dónde",
+        "l:estar",
+        "p:question-word-order"
+      ]
+    }
+  ]
+}

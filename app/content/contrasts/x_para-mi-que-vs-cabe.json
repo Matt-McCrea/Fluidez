@@ -1,0 +1,63 @@
+{
+  "node": "x:para-mi-que-vs-cabe",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:para-mi-que-vs-cabe#yt0",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:para-mi-que",
+      "rung": 2,
+      "en": "If you ask me, he's not coming.",
+      "es": "Para mí que no viene.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "A hunch with para mí que keeps the ordinary form.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:venir",
+        "p:para-inf",
+        "p:para-mi-que"
+      ]
+    },
+    {
+      "id": "x:para-mi-que-vs-cabe#yt1",
+      "node": "x:para-mi-que-vs-cabe",
+      "side": "p:cabe-la-posibilidad",
+      "rung": 2,
+      "en": "There's a possibility that he won't come.",
+      "es": "Cabe la posibilidad de que no venga.",
+      "gap": [
+        30,
+        35
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 1,
+      "why": "After cabe la posibilidad de que, the verb takes the subjunctive.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:caber",
+        "l:posibilidad",
+        "l:venir",
+        "p:cabe-la-posibilidad",
+        "p:caber",
+        "p:medir-pesar-caber"
+      ]
+    }
+  ]
+}

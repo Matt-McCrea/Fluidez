@@ -1,0 +1,161 @@
+{
+  "node": "x:creo-no-creo",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:creo-no-creo#pf0",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I don't think Tomás will sell the café.",
+      "es": "No creo que Tomás venda el café.",
+      "gap": [
+        18,
+        23
+      ],
+      "options": [
+        "vende",
+        "venda"
+      ],
+      "answer": 1,
+      "why": "Almost. A no in front of creo switches the next verb to venda.",
+      "requires": [
+        "c:creo-que",
+        "g:gender-articles",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:café",
+        "l:creer",
+        "l:vender"
+      ]
+    },
+    {
+      "id": "x:creo-no-creo#pf2",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I think he's not coming.",
+      "es": "Creo que no viene.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 1,
+      "why": "Careful. A no after que does not change the verb; only a no in front of creo does.",
+      "requires": [
+        "c:creo-que",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:creer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:creo-no-creo#yt0",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 2,
+      "en": "I don't think Vale is coming today.",
+      "es": "No creo que Vale venga hoy.",
+      "gap": [
+        17,
+        22
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 0,
+      "why": "The no is in front of creo, so venga.",
+      "requires": [
+        "c:creo-que",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:creer",
+        "l:hoy",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:creo-no-creo#rp1",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I don't think he's coming.",
+      "es": "No creo que venga.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 0,
+      "why": "I don't think he's coming.",
+      "requires": [
+        "c:creo-que",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:creer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:creo-no-creo#g.that-clauses.rp1",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She says she's coming tomorrow.",
+      "es": "Dice que viene mañana.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 1,
+      "why": "The English says \"She says she's coming tomorrow.\", so the gap is viene.",
+      "requires": [
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:creo-no-creo#g.that-clauses.rp2",
+      "node": "x:creo-no-creo",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She said she's coming tomorrow.",
+      "es": "Dijo que viene mañana.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "The English says \"She said she's coming tomorrow.\", so the gap is viene.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    }
+  ]
+}

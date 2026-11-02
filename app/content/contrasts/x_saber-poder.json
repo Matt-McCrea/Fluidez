@@ -1,0 +1,131 @@
+{
+  "node": "x:saber-poder",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:saber-poder#rp0",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I don't know how to swim.",
+      "es": "No sé nadar.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "No sé",
+        "Hoy no puedo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I don't know how to swim.\", so the gap is No sé.",
+      "requires": [
+        "c:no-se",
+        "g:yo-irregular",
+        "l:nadar",
+        "l:saber"
+      ]
+    },
+    {
+      "id": "x:saber-poder#rp1",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I can't swim today.",
+      "es": "Hoy no puedo nadar.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "No sé",
+        "Hoy no puedo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I can't swim today.\", so the gap is Hoy no puedo.",
+      "requires": [
+        "c:puedo",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:hoy",
+        "l:nadar",
+        "l:poder"
+      ]
+    },
+    {
+      "id": "x:saber-poder#rp2",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Can you come tomorrow?",
+      "es": "¿Puedes venir mañana?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Puedes",
+        "Sabes"
+      ],
+      "answer": 0,
+      "why": "The English says \"Can you come tomorrow?\", so the gap is Puedes.",
+      "requires": [
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:mañana",
+        "l:poder",
+        "l:venir",
+        "p:request-ladder"
+      ]
+    },
+    {
+      "id": "x:saber-poder#rp3",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Do you know how to dance?",
+      "es": "¿Sabes bailar?",
+      "gap": [
+        1,
+        6
+      ],
+      "options": [
+        "Puedes",
+        "Sabes"
+      ],
+      "answer": 1,
+      "why": "The English says \"Do you know how to dance?\", so the gap is Sabes.",
+      "requires": [
+        "g:present-er-ir",
+        "l:bailar",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-poder#g.verb-infinitive.yt2",
+      "node": "x:saber-poder",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I can't sleep.",
+      "es": "No puedo dormir.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "sé",
+        "puedo"
+      ],
+      "answer": 1,
+      "why": "No goes before the first verb, and dormir stays in the dictionary form.",
+      "requires": [
+        "c:puedo",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:dormir",
+        "l:poder"
+      ]
+    }
+  ]
+}

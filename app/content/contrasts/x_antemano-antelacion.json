@@ -1,0 +1,79 @@
+{
+  "node": "x:antemano-antelacion",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:antemano-antelacion#pf2",
+      "node": "x:antemano-antelacion",
+      "side": "c:gracias-de-antemano",
+      "rung": 1,
+      "en": "I knew it beforehand.",
+      "es": "Lo sabía de antemano.",
+      "gap": [
+        9,
+        20
+      ],
+      "options": [
+        "de antemano",
+        "con antelación"
+      ],
+      "answer": 0,
+      "why": "Almost. Knowing is not leaving time before a deadline, so de antemano.",
+      "requires": [
+        "g:direct-objects",
+        "g:imperfect-habitual",
+        "l:antemano",
+        "l:saber",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:antemano-antelacion#yt0",
+      "node": "x:antemano-antelacion",
+      "side": "c:gracias-de-antemano",
+      "rung": 2,
+      "en": "Thanks in advance.",
+      "es": "Gracias de antemano.",
+      "gap": [
+        8,
+        19
+      ],
+      "options": [
+        "con antelación",
+        "de antemano"
+      ],
+      "answer": 1,
+      "why": "Thanking is a feeling that comes before the event: de antemano.",
+      "requires": [
+        "c:gracias-de-antemano",
+        "l:antemano"
+      ]
+    },
+    {
+      "id": "x:antemano-antelacion#yt1",
+      "node": "x:antemano-antelacion",
+      "side": "p:con-antelacion",
+      "rung": 2,
+      "en": "You have to book in advance.",
+      "es": "Hay que reservar con antelación.",
+      "gap": [
+        17,
+        31
+      ],
+      "options": [
+        "con antelación",
+        "de antemano"
+      ],
+      "answer": 0,
+      "why": "Booking leaves time before a date: con antelación.",
+      "requires": [
+        "c:hay",
+        "c:hay-que",
+        "g:verb-infinitive",
+        "l:antelación",
+        "l:reservar",
+        "p:con-antelacion"
+      ]
+    }
+  ]
+}

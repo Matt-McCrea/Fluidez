@@ -1,0 +1,223 @@
+{
+  "node": "x:seguir-dejar-de",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:seguir-dejar-de#rp0",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "I still go to the gym.",
+      "es": "Sigo yendo al gimnasio.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Sigo yendo",
+        "Dejé de ir"
+      ],
+      "answer": 0,
+      "why": "The English says \"I still go to the gym.\", so the gap is Sigo yendo.",
+      "requires": [
+        "g:gender-articles",
+        "g:gerund-ways",
+        "g:yo-irregular",
+        "l:gimnasio",
+        "l:ir",
+        "l:seguir",
+        "p:ir-a-venir-de-place",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#rp1",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "I stopped going to the gym.",
+      "es": "Dejé de ir al gimnasio.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "Sigo yendo",
+        "Dejé de ir"
+      ],
+      "answer": 1,
+      "why": "The English says \"I stopped going to the gym.\", so the gap is Dejé de ir.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:dejar",
+        "l:gimnasio",
+        "l:ir",
+        "p:dejar-de-inf",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#pf0",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "I stopped going to the gym.",
+      "es": "Dejé de ir al gimnasio.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "ir",
+        "yendo"
+      ],
+      "answer": 0,
+      "why": "Almost. After dejar de, the verb stays in the dictionary form; the -yendo form belongs to seguir.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:dejar",
+        "l:gimnasio",
+        "l:ir",
+        "p:dejar-de-inf",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#pf1",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "I still go to the gym.",
+      "es": "Sigo yendo al gimnasio.",
+      "gap": [
+        5,
+        10
+      ],
+      "options": [
+        "ir",
+        "yendo"
+      ],
+      "answer": 1,
+      "why": "Almost. Seguir needs the -ing form, here yendo.",
+      "requires": [
+        "g:gender-articles",
+        "g:gerund-ways",
+        "g:yo-irregular",
+        "l:gimnasio",
+        "l:ir",
+        "l:seguir",
+        "p:ir-a-venir-de-place",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#yt0",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "I still live in La Candelaria.",
+      "es": "Sigo viviendo en La Candelaria.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Dejé de",
+        "Sigo"
+      ],
+      "answer": 1,
+      "why": "\"Still\" is seguir, and it goes with the -iendo form.",
+      "requires": [
+        "g:gender-articles",
+        "g:gerund-ways",
+        "g:yo-irregular",
+        "l:seguir",
+        "l:vivir",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#p.seguir-gerundio.rp0",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "I'm still working at the café.",
+      "es": "Sigo trabajando en el café.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Seguo",
+        "Sigo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'm still working at the café.\", so the gap is Sigo.",
+      "requires": [
+        "g:gender-articles",
+        "g:gerund-ways",
+        "g:yo-irregular",
+        "l:café",
+        "l:seguir",
+        "l:trabajar",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#p.seguir-gerundio.rp4",
+      "node": "x:seguir-dejar-de",
+      "side": "p:seguir-gerundio",
+      "rung": 1,
+      "en": "I still don't understand the contract.",
+      "es": "Sigo sin entender el contrato.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Seguo",
+        "Sigo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I still don't understand the contract.\", so the gap is Sigo.",
+      "requires": [
+        "g:gender-articles",
+        "g:prep-infinitive",
+        "g:yo-irregular",
+        "l:contrato",
+        "l:entender",
+        "l:seguir",
+        "p:seguir-gerundio"
+      ]
+    },
+    {
+      "id": "x:seguir-dejar-de#p.dejar-de-inf.rp5",
+      "node": "x:seguir-dejar-de",
+      "side": "p:dejar-de-inf",
+      "rung": 1,
+      "en": "We stopped going to the café.",
+      "es": "Dejamos de ir al café.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "yendo",
+        "ir"
+      ],
+      "answer": 1,
+      "why": "The English says \"We stopped going to the café.\", so the gap is ir.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:café",
+        "l:dejar",
+        "l:ir",
+        "p:dejar-de-inf",
+        "p:ir-a-venir-de-place"
+      ]
+    }
+  ]
+}

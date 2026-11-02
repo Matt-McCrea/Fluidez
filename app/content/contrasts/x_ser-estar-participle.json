@@ -1,0 +1,111 @@
+{
+  "node": "x:ser-estar-participle",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ser-estar-participle#pf1",
+      "node": "x:ser-estar-participle",
+      "side": "g:passive-ser",
+      "rung": 1,
+      "en": "The door was opened by Vale.",
+      "es": "La puerta fue abierta por Vale.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "estaba",
+        "fue"
+      ],
+      "answer": 1,
+      "why": "When you name who did it with por, you are telling an event, so fue.",
+      "requires": [
+        "g:gender-articles",
+        "g:passive-ser",
+        "g:por-para-1",
+        "g:preterite-ser-ir-hacer",
+        "l:abrir",
+        "l:puerta",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#rp0",
+      "node": "x:ser-estar-participle",
+      "side": "g:passive-ser",
+      "rung": 1,
+      "en": "Someone closed the café.",
+      "es": "El café fue cerrado.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "fue",
+        "estaba"
+      ],
+      "answer": 0,
+      "why": "Someone closed it.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:café",
+        "l:cerrar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#rp1",
+      "node": "x:ser-estar-participle",
+      "side": "g:passive-ser",
+      "rung": 1,
+      "en": "The café was shut when I got there.",
+      "es": "El café estaba cerrado.",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "fue",
+        "estaba"
+      ],
+      "answer": 1,
+      "why": "It was shut when you got there.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "l:café",
+        "l:cerrar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#rp6",
+      "node": "x:ser-estar-participle",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "Was the bakery open?",
+      "es": "¿Estaba abierta la panadería?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Estaba",
+        "Fue"
+      ],
+      "answer": 0,
+      "why": "The English says \"Was the bakery open?\", so the gap is Estaba.",
+      "requires": [
+        "g:estar-participle",
+        "g:gender-articles",
+        "g:imperfect-states",
+        "l:abrir",
+        "l:estar",
+        "l:panadería"
+      ]
+    }
+  ]
+}

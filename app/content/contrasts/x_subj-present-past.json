@@ -1,0 +1,141 @@
+{
+  "node": "x:subj-present-past",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:subj-present-past#pf0",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "I'm glad you came yesterday.",
+      "es": "Me alegra que vinieras ayer.",
+      "gap": [
+        14,
+        22
+      ],
+      "options": [
+        "vengas",
+        "vinieras"
+      ],
+      "answer": 1,
+      "why": "Almost. The feeling is now, but ayer is over: viniste gives vinieras. Don't copy the time of the first verb.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:present-ar",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:alegrar",
+        "l:ayer",
+        "l:venir",
+        "p:me-encanta-que"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#yt0",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 2,
+      "en": "I want you to come.",
+      "es": "Quiero que vengas.",
+      "gap": [
+        11,
+        17
+      ],
+      "options": [
+        "vengas",
+        "vinieras"
+      ],
+      "answer": 0,
+      "why": "You want it now and the coming is still ahead, so the present subjunctive: vengas.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:querer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#yt1",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 2,
+      "en": "I wanted you to come.",
+      "es": "Quería que vinieras.",
+      "gap": [
+        11,
+        19
+      ],
+      "options": [
+        "vengas",
+        "vinieras"
+      ],
+      "answer": 1,
+      "why": "The wanting is over, and the coming was still ahead of it back then, so the -ra form: vinieras.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:querer",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#rp3",
+      "node": "x:subj-present-past",
+      "side": "g:subj-wanting",
+      "rung": 1,
+      "en": "Hernando wants me to help him.",
+      "es": "Hernando quiere que yo le ayude.",
+      "gap": [
+        26,
+        31
+      ],
+      "options": [
+        "ayude",
+        "ayudara"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando wants me to help him.\", so the gap is ayude.",
+      "requires": [
+        "g:indirect-objects",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:ayudar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:subj-present-past#g.subj-past-triggers.rp3",
+      "node": "x:subj-present-past",
+      "side": "g:subj-past-triggers",
+      "rung": 1,
+      "en": "Did you want me to help you?",
+      "es": "¿Querías que te ayudara?",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "ayudara",
+        "ayude"
+      ],
+      "answer": 0,
+      "why": "The English says \"Did you want me to help you?\", so the gap is ayudara.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:ayudar",
+        "l:querer",
+        "p:me-te-nos-objects"
+      ]
+    }
+  ]
+}

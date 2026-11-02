@@ -1,0 +1,44 @@
+{
+  "node": "x:parcial-vs-total",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:parcial-vs-total#pf1",
+      "node": "x:parcial-vs-total",
+      "side": "p:no-te-falta-razon",
+      "rung": 1,
+      "en": "You've got a point; that said, we have to think about the cost.",
+      "es": "No te falta razón; ahora bien, hay que pensar en el costo.",
+      "gap": [
+        19,
+        29
+      ],
+      "options": [
+        "ahora bien",
+        "y"
+      ],
+      "answer": 0,
+      "why": "Almost. No te falta razón is a partial yes, so the next part should turn the other way, with ahora bien or pero.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:hay",
+        "c:hay-que",
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:present-ar",
+        "g:verb-infinitive",
+        "l:ahora",
+        "l:bien",
+        "l:costo",
+        "l:faltar",
+        "l:pensar",
+        "l:razón",
+        "p:ahora-bien-dicho-esto",
+        "p:no-te-falta-razon",
+        "p:pensar-en",
+        "p:quedar-faltar-sobrar",
+        "p:se-podria-objetar-que"
+      ]
+    }
+  ]
+}

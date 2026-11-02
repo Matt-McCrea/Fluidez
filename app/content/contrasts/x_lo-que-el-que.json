@@ -1,0 +1,120 @@
+{
+  "node": "x:lo-que-el-que",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:lo-que-el-que#pf2",
+      "node": "x:lo-que-el-que",
+      "side": "g:relatives-prepositions",
+      "rung": 1,
+      "en": "The woman I spoke with is a journalist.",
+      "es": "La mujer con la que hablé es periodista.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "el",
+        "la"
+      ],
+      "answer": 1,
+      "why": "Almost. El, la, los, las must match the noun, here mujer.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relatives-prepositions",
+        "g:ser-identity",
+        "l:hablar",
+        "l:mujer",
+        "l:periodista",
+        "l:ser",
+        "p:ser-profession-no-article"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#rp5",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "Altamira wants to buy the block, which I don't like.",
+      "es": "Altamira quiere comprar la cuadra, lo que no me gusta.",
+      "gap": [
+        24,
+        26
+      ],
+      "options": [
+        "la",
+        "el"
+      ],
+      "answer": 0,
+      "why": "The English says \"Altamira wants to buy the block, which I don't like.\", so the gap is la.",
+      "requires": [
+        "c:me-gusta",
+        "g:gender-articles",
+        "g:gustar-basic",
+        "g:relatives-donde-lo-que",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:comprar",
+        "l:cuadra",
+        "l:gustar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#rp8",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "The man you are talking about is Hernando.",
+      "es": "El hombre del que hablas es Hernando.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "La",
+        "El"
+      ],
+      "answer": 1,
+      "why": "The English says \"The man you are talking about is Hernando.\", so the gap is El.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:hablar",
+        "l:hombre",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:lo-que-el-que#p.lo-que-cosa-que.rp6",
+      "node": "x:lo-que-el-que",
+      "side": "p:lo-que-cosa-que",
+      "rung": 1,
+      "en": "Tomás talked to the owner, which helped a lot.",
+      "es": "Tomás habló con el dueño, lo cual ayudó mucho.",
+      "gap": [
+        16,
+        18
+      ],
+      "options": [
+        "la",
+        "el"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás talked to the owner, which helped a lot.\", so the gap is el.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relatives-formal",
+        "l:ayudar",
+        "l:dueño",
+        "l:hablar",
+        "p:lo-que-cosa-que",
+        "p:quantifiers-basic"
+      ]
+    }
+  ]
+}

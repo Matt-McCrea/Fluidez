@@ -1,0 +1,108 @@
+{
+  "node": "x:tu-usted",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:tu-usted#pf2",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Are you all coming tomorrow?",
+      "es": "¿Ustedes vienen mañana?",
+      "gap": [
+        1,
+        15
+      ],
+      "options": [
+        "Vosotros venís",
+        "Ustedes vienen"
+      ],
+      "answer": 1,
+      "why": "Latin America uses ustedes for every group, friends included.",
+      "requires": [
+        "g:stem-boot",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:tu-usted#yt1",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 2,
+      "en": "Madam, do you know where the station is?",
+      "es": "Señora, ¿usted sabe dónde queda la estación?",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "sabes",
+        "sabe"
+      ],
+      "answer": 1,
+      "why": "Usted takes the he/she form: sabe.",
+      "requires": [
+        "c:donde-esta",
+        "g:present-er-ir",
+        "l:dónde",
+        "l:estación",
+        "l:quedar",
+        "l:saber",
+        "l:señora",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:tu-usted#rp2",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Is this your phone? (to a friend)",
+      "es": "¿Este es tu celular?",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "su",
+        "tu"
+      ],
+      "answer": 1,
+      "why": "The English says \"Is this your phone? (to a friend)\", so the gap is tu.",
+      "requires": [
+        "g:ser-identity",
+        "l:celular",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:tu-usted#rp3",
+      "node": "x:tu-usted",
+      "side": "g:commands-tu",
+      "rung": 1,
+      "en": "Is this your phone, sir?",
+      "es": "¿Este es su celular, señor?",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "su",
+        "tu"
+      ],
+      "answer": 0,
+      "why": "The English says \"Is this your phone, sir?\", so the gap is su.",
+      "requires": [
+        "g:ser-identity",
+        "l:celular",
+        "l:ser",
+        "l:señor",
+        "p:demonstratives-basic",
+        "p:possessives-basic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "node": "x:darse-cuenta-enterarse",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:darse-cuenta-enterarse#yt0",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:enterarse-de",
+      "rung": 1,
+      "en": "Someone told me Vale is leaving.",
+      "es": "Me enteré de que Vale se va.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Me di cuenta",
+        "Me enteré"
+      ],
+      "answer": 1,
+      "why": "Someone told you, so the news came from outside: enterarse.",
+      "requires": [
+        "g:ir-a-plans",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:enterarse",
+        "l:irse",
+        "p:enterarse-de"
+      ]
+    },
+    {
+      "id": "x:darse-cuenta-enterarse#yt1",
+      "node": "x:darse-cuenta-enterarse",
+      "side": "p:darse-cuenta-de",
+      "rung": 1,
+      "en": "You worked out you'd lost your keys.",
+      "es": "Me di cuenta de que había perdido las llaves.",
+      "gap": [
+        0,
+        12
+      ],
+      "options": [
+        "Me di cuenta",
+        "Me enteré"
+      ],
+      "answer": 0,
+      "why": "It clicked in your own head: darse cuenta.",
+      "requires": [
+        "g:gender-articles",
+        "g:pluperfect",
+        "g:preterite-irregular-strong",
+        "g:reflexive-routine",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:darse",
+        "l:llave",
+        "l:perder",
+        "p:darse-cuenta-de"
+      ]
+    }
+  ]
+}

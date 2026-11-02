@@ -1,0 +1,62 @@
+{
+  "node": "x:al-tiempo-que-a-medida-que",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:al-tiempo-que-a-medida-que#pf0",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "g:temporal-advanced",
+      "rung": 1,
+      "en": "The higher we climb, the colder it gets.",
+      "es": "A medida que subimos, hace más frío.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Al tiempo",
+        "A medida"
+      ],
+      "answer": 1,
+      "why": "Almost. The cold grows as you climb, and that gradual change needs a medida que.",
+      "requires": [
+        "g:present-er-ir",
+        "g:temporal-advanced",
+        "l:frío",
+        "l:hacer",
+        "l:medida",
+        "l:subir"
+      ]
+    },
+    {
+      "id": "x:al-tiempo-que-a-medida-que#p.al-tiempo-que.pf2",
+      "node": "x:al-tiempo-que-a-medida-que",
+      "side": "p:al-tiempo-que",
+      "rung": 1,
+      "en": "Production is rising while demand is falling.",
+      "es": "La producción aumenta al tiempo que cae la demanda.",
+      "gap": [
+        22,
+        31
+      ],
+      "options": [
+        "a medida",
+        "al tiempo"
+      ],
+      "answer": 1,
+      "why": "A medida que is for two things changing together step by step; for two facts side by side, use al tiempo que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:aumentar",
+        "l:caer",
+        "l:demanda",
+        "l:producción",
+        "l:tiempo",
+        "p:al-tiempo-que"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "node": "x:ser-estar-adj",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ser-estar-adj#rp0",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "He's boring.",
+      "es": "Es aburrido.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 0,
+      "why": "The English says \"He's boring.\", so the gap is Es.",
+      "requires": [
+        "g:ser-identity",
+        "l:aburrido",
+        "l:ser",
+        "p:aburrir-aburrirse"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp1",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "He's bored.",
+      "es": "Está aburrido.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "The English says \"He's bored.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "l:aburrido",
+        "l:estar",
+        "p:aburrir-aburrirse"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp2",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Simón is a happy bird.",
+      "es": "Simón es feliz.",
+      "gap": [
+        6,
+        8
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Simón is a happy bird.\", so the gap is es.",
+      "requires": [
+        "g:ser-identity",
+        "l:feliz",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp3",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Simón is happy at the moment.",
+      "es": "Simón está feliz.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Simón is happy at the moment.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "l:estar",
+        "l:feliz"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#pf1",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "I'm bored in the meeting.",
+      "es": "Estoy aburrido en la reunión.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Soy",
+        "Estoy"
+      ],
+      "answer": 1,
+      "why": "Soy aburrido means you're a boring person. In a dull meeting you're bored right now: estoy.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:aburrido",
+        "l:estar",
+        "l:reunión",
+        "p:aburrir-aburrirse"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp4",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Vale is very clever.",
+      "es": "Vale es muy lista.",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale is very clever.\", so the gap is es.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp5",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Vale is ready now.",
+      "es": "Vale ya está lista.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale is ready now.\", so the gap is está.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:estar",
+        "l:listo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp6",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Tomás is looking serious.",
+      "es": "Tomás está serio.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás is looking serious.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "l:estar",
+        "l:serio"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#rp7",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "The city is a quiet place.",
+      "es": "La ciudad es tranquila.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"The city is a quiet place.\", so the gap is es.",
+      "requires": [
+        "c:tranquilo",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:ciudad",
+        "l:ser",
+        "l:tranquilo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-identity.rp3",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "He's from Bogotá.",
+      "es": "Es de Bogotá.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Está",
+        "Es"
+      ],
+      "answer": 1,
+      "why": "The English says \"He's from Bogotá.\", so the gap is Es.",
+      "requires": [
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-identity.rp4",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "I'm Vale.",
+      "es": "Soy Vale.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Soy",
+        "Estoy"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm Vale.\", so the gap is Soy.",
+      "requires": [
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-identity.rp5",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "You're from Pasto, aren't you?",
+      "es": "Usted es de Pasto, ¿no?",
+      "gap": [
+        6,
+        8
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"You're from Pasto, aren't you?\", so the gap is es.",
+      "requires": [
+        "c:no-cierto",
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-identity.rp8",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "I'm not from Bogotá.",
+      "es": "No soy de Bogotá.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm not from Bogotá.\", so the gap is soy.",
+      "requires": [
+        "c:soy-de",
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-identity.rp9",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "This is Simón.",
+      "es": "Él es Simón.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"This is Simón.\", so the gap is es.",
+      "requires": [
+        "g:ser-identity",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp0",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Hernando is a calm person.",
+      "es": "Hernando es tranquilo.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando is a calm person.\", so the gap is es.",
+      "requires": [
+        "c:tranquilo",
+        "g:ser-identity",
+        "l:ser",
+        "l:tranquilo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp1",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Hernando is calm right now.",
+      "es": "Hernando está tranquilo.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is calm right now.\", so the gap is está.",
+      "requires": [
+        "c:tranquilo",
+        "g:estar-location-states",
+        "l:estar",
+        "l:tranquilo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp2",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Mariana is clever.",
+      "es": "Mariana es lista.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana is clever.\", so the gap is es.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp3",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Mariana is ready.",
+      "es": "Mariana está lista.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mariana is ready.\", so the gap is está.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:estar",
+        "l:listo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.pf2",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "The bread is ready.",
+      "es": "El pan está listo.",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "Es listo means clever. Bread is never clever, only ready: está listo.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:listo",
+        "l:pan"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.yt3",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "The soup is delicious.",
+      "es": "La sopa está rica.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "How food tastes takes está, and rica agrees with la sopa.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:rico",
+        "l:sopa"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.yt4",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Mariana is very clever.",
+      "es": "Mariana es muy lista.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "Clever is what she's like, so es lista.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp4",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "The coffee tastes great.",
+      "es": "El tinto está rico.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"The coffee tastes great.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:rico",
+        "l:tinto"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp5",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Simón is a nervous type.",
+      "es": "Simón es nervioso.",
+      "gap": [
+        6,
+        8
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"Simón is a nervous type.\", so the gap is es.",
+      "requires": [
+        "g:ser-identity",
+        "l:nervioso",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp6",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "The fish has gone off.",
+      "es": "El pescado está malo.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"The fish has gone off.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:malo",
+        "l:pescado"
+      ]
+    },
+    {
+      "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp7",
+      "node": "x:ser-estar-adj",
+      "side": "g:ser-identity",
+      "rung": 1,
+      "en": "Vale is looking serious.",
+      "es": "Vale está seria.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale is looking serious.\", so the gap is está.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:estar",
+        "l:serio"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "node": "x:ser-estar-place",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ser-estar-place#rp0",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The class is in the park.",
+      "es": "Es en el parque.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 0,
+      "why": "The English says \"The class is in the park.\", so the gap is Es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:parque",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp1",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The bank is in the park.",
+      "es": "Está en el parque.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "The English says \"The bank is in the park.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:parque"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp2",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Tomás is at Mariana's office.",
+      "es": "Está en la oficina de Mariana.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Está",
+        "Es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás is at Mariana's office.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:oficina"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp3",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The meeting is at Mariana's office.",
+      "es": "Es en la oficina de Mariana.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Está",
+        "Es"
+      ],
+      "answer": 1,
+      "why": "The English says \"The meeting is at Mariana's office.\", so the gap is Es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:oficina",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp4",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Where's the café?",
+      "es": "¿Dónde está?",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Where's the café?\", so the gap is está.",
+      "requires": [
+        "c:donde-esta",
+        "g:estar-location-states",
+        "l:dónde",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp5",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Where's the party?",
+      "es": "¿Dónde es?",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"Where's the party?\", so the gap is es.",
+      "requires": [
+        "g:questions",
+        "g:ser-identity",
+        "l:dónde",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp6",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando's appointment is at the hospital.",
+      "es": "Es en el hospital.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando's appointment is at the hospital.\", so the gap is Es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:hospital",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#rp7",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando is in hospital.",
+      "es": "Está en el hospital.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is in hospital.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:hospital"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#pf1",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Where's the meeting?",
+      "es": "¿Dónde es la reunión?",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "You're asking where it happens, not where a thing sits: es. You'll hear está in casual speech, but es is always right.",
+      "requires": [
+        "g:gender-articles",
+        "g:questions",
+        "g:ser-identity",
+        "l:dónde",
+        "l:reunión",
+        "l:ser",
+        "p:event-ser-en",
+        "p:question-word-order",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#yt0",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 2,
+      "en": "The party is at the café.",
+      "es": "La fiesta es en el café.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "A party takes place somewhere, so es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:café",
+        "l:fiesta",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#yt1",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 2,
+      "en": "The café is on 11th Street.",
+      "es": "El café está en la 11.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "A café is a place that sits on a street: está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#yt4",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The class is at the university.",
+      "es": "La clase es en la universidad.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "A class is an event: es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:clase",
+        "l:ser",
+        "l:universidad",
+        "p:event-ser-en",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.estar-location-states.pf0",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The café is in La Candelaria.",
+      "es": "El café está en La Candelaria.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "Almost. Es tells you what something is. For where it is, Spanish uses está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.estar-location-states.rp0",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Vale is at the café.",
+      "es": "Vale está en el café.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale is at the café.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.estar-location-states.rp3",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The hospital is downtown.",
+      "es": "El hospital está en el centro.",
+      "gap": [
+        12,
+        16
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"The hospital is downtown.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:centro",
+        "l:estar",
+        "l:hospital"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.rp0",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando is a calm person.",
+      "es": "Hernando es tranquilo.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando is a calm person.\", so the gap is es.",
+      "requires": [
+        "c:tranquilo",
+        "g:ser-identity",
+        "l:ser",
+        "l:tranquilo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.rp1",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando is calm right now.",
+      "es": "Hernando está tranquilo.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is calm right now.\", so the gap is está.",
+      "requires": [
+        "c:tranquilo",
+        "g:estar-location-states",
+        "l:estar",
+        "l:tranquilo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.rp2",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Mariana is clever.",
+      "es": "Mariana es lista.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana is clever.\", so the gap is es.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.rp3",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Mariana is ready.",
+      "es": "Mariana está lista.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mariana is ready.\", so the gap is está.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:estar-location-states",
+        "l:estar",
+        "l:listo"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.pf2",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The bread is ready.",
+      "es": "El pan está listo.",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "Es listo means clever. Bread is never clever, only ready: está listo.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:listo",
+        "l:pan"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.yt4",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Mariana is very clever.",
+      "es": "Mariana es muy lista.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "Clever is what she's like, so es lista.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:listo",
+        "l:ser",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:ser-estar-place#g.ser-estar-adjectives.rp5",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Simón is a nervous type.",
+      "es": "Simón es nervioso.",
+      "gap": [
+        6,
+        8
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"Simón is a nervous type.\", so the gap is es.",
+      "requires": [
+        "g:ser-identity",
+        "l:nervioso",
+        "l:ser"
+      ]
+    }
+  ]
+}

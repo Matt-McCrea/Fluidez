@@ -1,0 +1,157 @@
+{
+  "node": "x:deberias-vs-deberias-haber",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:deberias-vs-deberias-haber#rp4",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "g:deber-modal",
+      "rung": 1,
+      "en": "We should leave earlier.",
+      "es": "Deberíamos salir antes.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "salir",
+        "haber salido"
+      ],
+      "answer": 0,
+      "why": "The English says \"We should leave earlier.\", so the gap is salir.",
+      "requires": [
+        "g:conditional",
+        "g:tener-que-hay-que",
+        "l:antes",
+        "l:deber",
+        "l:salir",
+        "p:podriamos-deberiamos"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#rp5",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "We should have left earlier.",
+      "es": "Deberíamos haber salido antes.",
+      "gap": [
+        11,
+        23
+      ],
+      "options": [
+        "salir",
+        "haber salido"
+      ],
+      "answer": 1,
+      "why": "The English says \"We should have left earlier.\", so the gap is haber salido.",
+      "requires": [
+        "g:conditional",
+        "g:infinitive-perfect",
+        "g:tener-que-hay-que",
+        "l:antes",
+        "l:deber",
+        "l:haber",
+        "l:salir",
+        "p:arrepentirse-de-haber",
+        "p:no-deberias-haberlo-hecho",
+        "p:podriamos-deberiamos",
+        "p:podrias-haber"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#pf1",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You should have called her. (to a friend)",
+      "es": "Deberías haberla llamado.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "llamada",
+        "llamado"
+      ],
+      "answer": 1,
+      "why": "Almost. The participle after haber never changes for gender.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:haber",
+        "l:llamar",
+        "p:arrepentirse-de-haber",
+        "p:me-hubieras-dicho",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#pf2",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You should have called her. (to a friend)",
+      "es": "Deberías haberla llamado.",
+      "gap": [
+        9,
+        24
+      ],
+      "options": [
+        "haberla llamado",
+        "haber llamarla"
+      ],
+      "answer": 0,
+      "why": "Almost. After haber, use the participle llamado, and the pronoun goes on haber.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:haber",
+        "l:llamar",
+        "p:arrepentirse-de-haber",
+        "p:me-hubieras-dicho",
+        "p:no-deberias-haberlo-hecho",
+        "p:podrias-haber",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:deberias-vs-deberias-haber#p.no-deberias-haberlo-hecho.rp3",
+      "node": "x:deberias-vs-deberias-haber",
+      "side": "p:no-deberias-haberlo-hecho",
+      "rung": 1,
+      "en": "You should have called earlier.",
+      "es": "Tendrías que haber llamado antes.",
+      "gap": [
+        19,
+        26
+      ],
+      "options": [
+        "llamado",
+        "llamada"
+      ],
+      "answer": 0,
+      "why": "The English says \"You should have called earlier.\", so the gap is llamado.",
+      "requires": [
+        "g:conditional",
+        "g:infinitive-perfect",
+        "g:verb-infinitive",
+        "l:antes",
+        "l:haber",
+        "l:llamar",
+        "l:tener",
+        "p:arrepentirse-de-haber",
+        "p:no-deberias-haberlo-hecho",
+        "p:tendrias-que"
+      ]
+    }
+  ]
+}

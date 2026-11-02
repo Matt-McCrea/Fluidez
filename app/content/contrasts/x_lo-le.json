@@ -1,0 +1,473 @@
+{
+  "node": "x:lo-le",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:lo-le#rp2",
+      "node": "x:lo-le",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I wrote to him yesterday.",
+      "es": "Le escribí ayer.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Lo",
+        "Le"
+      ],
+      "answer": 1,
+      "why": "The English says \"I wrote to him yesterday.\", so the gap is Le.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:indirect-objects",
+        "g:preterite-er-ir",
+        "l:ayer",
+        "l:escribir"
+      ]
+    },
+    {
+      "id": "x:lo-le#rp3",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I wrote it yesterday.",
+      "es": "Lo escribí ayer.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Lo",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I wrote it yesterday.\", so the gap is Lo.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:direct-objects",
+        "g:preterite-er-ir",
+        "l:ayer",
+        "l:escribir"
+      ]
+    },
+    {
+      "id": "x:lo-le#yt1",
+      "node": "x:lo-le",
+      "side": "g:indirect-objects",
+      "rung": 2,
+      "en": "And Vale? I told her the truth.",
+      "es": "¿Y Vale? Le dije la verdad.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "La",
+        "Le"
+      ],
+      "answer": 1,
+      "why": "The truth went to her, so she gets le, even though she's a woman.",
+      "requires": [
+        "c:la-verdad",
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "l:decir",
+        "l:verdad"
+      ]
+    },
+    {
+      "id": "x:lo-le#yt2",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 2,
+      "en": "Mariana? I don't know her.",
+      "es": "¿A Mariana? No la conozco.",
+      "gap": [
+        15,
+        17
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "Knowing someone lands straight on them, and Mariana is a woman, so la.",
+      "requires": [
+        "g:direct-objects",
+        "g:yo-irregular",
+        "l:conocer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:lo-le#yt7",
+      "node": "x:lo-le",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "What did you tell him?",
+      "es": "¿Qué le dijiste?",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 1,
+      "why": "Telling goes to someone, so le, and the friend form is dijiste.",
+      "requires": [
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "g:questions",
+        "l:decir",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:lo-le#rp0",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I called her last night.",
+      "es": "La llamé anoche.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "La"
+      ],
+      "answer": 1,
+      "why": "The English says \"I called her last night.\", so the gap is La.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:direct-objects",
+        "g:preterite-ar",
+        "l:anoche",
+        "l:llamar"
+      ]
+    },
+    {
+      "id": "x:lo-le#rp5",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I saw them at the stop.",
+      "es": "Los vi en la parada.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I saw them at the stop.\", so the gap is la.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:parada",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:lo-le#rp6",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "The fare? I paid for it.",
+      "es": "¿El pasaje? Lo pagué yo.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "Le",
+        "Lo"
+      ],
+      "answer": 1,
+      "why": "The English says \"The fare? I paid for it.\", so the gap is Lo.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-spelling-stem",
+        "l:pagar",
+        "l:pasaje"
+      ]
+    },
+    {
+      "id": "x:lo-le#rp7",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I waited for them at the stop.",
+      "es": "Las esperé en la parada.",
+      "gap": [
+        14,
+        16
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I waited for them at the stop.\", so the gap is la.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:esperar",
+        "l:parada"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.pf1",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "My phone? I left it on the table.",
+      "es": "¿El celular? Lo dejé en la mesa.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "La",
+        "Lo"
+      ],
+      "answer": 1,
+      "why": "Celular is an el word, so it's lo, whatever English thinks of phones.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:celular",
+        "l:dejar",
+        "l:mesa"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp0",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I met her at the café.",
+      "es": "La conocí en el café.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "La",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I met her at the café.\", so the gap is La.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:café",
+        "l:conocer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp1",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I see him.",
+      "es": "Lo veo.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Lo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I see him.\", so the gap is Lo.",
+      "requires": [
+        "g:direct-objects",
+        "g:yo-irregular",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp3",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "Vale called him.",
+      "es": "Lo llamó Vale.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Lo"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale called him.\", so the gap is Lo.",
+      "requires": [
+        "g:direct-objects",
+        "g:preterite-ar",
+        "l:llamar"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp4",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "Vale called him.",
+      "es": "Vale lo llamó.",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "lo",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale called him.\", so the gap is lo.",
+      "requires": [
+        "g:direct-objects",
+        "g:preterite-ar",
+        "l:llamar"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp6",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "I haven't seen her yet.",
+      "es": "Todavía no la he visto.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I haven't seen her yet.\", so the gap is la.",
+      "requires": [
+        "c:todavia-no",
+        "g:direct-objects",
+        "g:perfecto-experience",
+        "l:ver"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.direct-objects.rp7",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "Hernando is looking for her.",
+      "es": "Hernando la busca.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "le",
+        "la"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is looking for her.\", so the gap is la.",
+      "requires": [
+        "g:direct-objects",
+        "g:present-ar",
+        "l:buscar"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.indirect-objects.rp0",
+      "node": "x:lo-le",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I gave him the map.",
+      "es": "Le di el mapa.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "La",
+        "Le"
+      ],
+      "answer": 1,
+      "why": "The English says \"I gave him the map.\", so the gap is Le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "l:dar",
+        "l:mapa"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.indirect-objects.rp1",
+      "node": "x:lo-le",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I explained the route to them.",
+      "es": "Les expliqué la ruta.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I explained the route to them.\", so the gap is la.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-spelling-stem",
+        "l:explicar",
+        "l:ruta"
+      ]
+    },
+    {
+      "id": "x:lo-le#g.indirect-objects.rp5",
+      "node": "x:lo-le",
+      "side": "g:direct-objects",
+      "rung": 1,
+      "en": "He explained the route to us.",
+      "es": "Nos explicó la ruta.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "la",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"He explained the route to us.\", so the gap is la.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:explicar",
+        "l:ruta",
+        "p:me-te-nos-objects"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "node": "x:body-article-possessive",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:body-article-possessive#pf1",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Vale has long hair.",
+      "es": "Vale tiene el pelo largo.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "su",
+        "el"
+      ],
+      "answer": 1,
+      "why": "Her own hair just takes el.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:largo",
+        "l:pelo",
+        "l:tener",
+        "p:es-tiene-lleva"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#pf2",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Tomás closes his eyes.",
+      "es": "Tomás cierra los ojos.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "los",
+        "sus"
+      ],
+      "answer": 0,
+      "why": "His own eyes need no sus; Tomás already says whose.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:cerrar",
+        "l:ojo"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#yt0",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 2,
+      "en": "I wash my hair.",
+      "es": "Me lavo el pelo.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "mi",
+        "el"
+      ],
+      "answer": 1,
+      "why": "Me already says it's your hair, so just el.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:lavarse",
+        "l:pelo",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#yt1",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "My house is big.",
+      "es": "Mi casa es grande.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Mi",
+        "La"
+      ],
+      "answer": 0,
+      "why": "A house isn't part of you, and nothing else says whose, so keep mi.",
+      "requires": [
+        "g:ser-identity",
+        "l:casa",
+        "l:grande",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#rp2",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "I wash your hair.",
+      "es": "Te lavo el pelo.",
+      "gap": [
+        8,
+        10
+      ],
+      "options": [
+        "el",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "The English says \"I wash your hair.\", so the gap is el.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:lavar",
+        "l:pelo",
+        "p:lavarse-las-manos",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#rp3",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Your hands are cold.",
+      "es": "Tienes las manos frías.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "mis",
+        "las"
+      ],
+      "answer": 1,
+      "why": "The English says \"Your hands are cold.\", so the gap is las.",
+      "requires": [
+        "c:tienes",
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:frío",
+        "l:mano",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#rp5",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Did you wash your face? (to a friend)",
+      "es": "¿Te lavaste la cara?",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "mi",
+        "la"
+      ],
+      "answer": 1,
+      "why": "The English says \"Did you wash your face? (to a friend)\", so the gap is la.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:cara",
+        "l:lavarse",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.yt0",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 2,
+      "en": "I wash my hands.",
+      "es": "Me lavo las manos.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "mis",
+        "las"
+      ],
+      "answer": 1,
+      "why": "Me already says whose hands, so they just take las.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:lavarse",
+        "l:mano",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.yt6",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "I try the jacket on.",
+      "es": "Me pruebo la chaqueta.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "mi",
+        "la"
+      ],
+      "answer": 1,
+      "why": "Clothes you put on work like body parts: me plus la chaqueta.",
+      "requires": [
+        "g:gender-articles",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:chaqueta",
+        "l:probarse"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp0",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "You wash your hair. (to a friend)",
+      "es": "Te lavas el pelo.",
+      "gap": [
+        9,
+        11
+      ],
+      "options": [
+        "el",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "The English says \"You wash your hair. (to a friend)\", so the gap is el.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:lavarse",
+        "l:pelo",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp2",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Vale washes her face.",
+      "es": "Vale se lava la cara.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "la",
+        "mi"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale washes her face.\", so the gap is la.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:cara",
+        "l:lavarse",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp3",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "We wash our hands with soap.",
+      "es": "Nos lavamos las manos con jabón.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "mis",
+        "las"
+      ],
+      "answer": 1,
+      "why": "The English says \"We wash our hands with soap.\", so the gap is las.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:jabón",
+        "l:lavarse",
+        "l:mano",
+        "p:con-sin",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp4",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "I brush my teeth.",
+      "es": "Me lavo los dientes.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "los",
+        "sus"
+      ],
+      "answer": 0,
+      "why": "The English says \"I brush my teeth.\", so the gap is los.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:diente",
+        "l:lavarse",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp5",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "They wash their hands.",
+      "es": "Se lavan las manos.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "mis",
+        "las"
+      ],
+      "answer": 1,
+      "why": "The English says \"They wash their hands.\", so the gap is las.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:lavarse",
+        "l:mano",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#p.lavarse-las-manos.rp6",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Did you brush your teeth? (to a friend)",
+      "es": "¿Te lavaste los dientes?",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "los",
+        "sus"
+      ],
+      "answer": 0,
+      "why": "The English says \"Did you brush your teeth? (to a friend)\", so the gap is los.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:diente",
+        "l:lavarse",
+        "p:lavarse-las-manos"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#g.possessives.yt4",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Is this your coffee?",
+      "es": "¿Es su café?",
+      "gap": [
+        4,
+        6
+      ],
+      "options": [
+        "el",
+        "su"
+      ],
+      "answer": 1,
+      "why": "Formal your is su.",
+      "requires": [
+        "g:ser-identity",
+        "l:café",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#g.possessives.rp2",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "My eyes are dark.",
+      "es": "Mis ojos son negros.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Mis",
+        "Las"
+      ],
+      "answer": 0,
+      "why": "The English says \"My eyes are dark.\", so the gap is Mis.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:negro",
+        "l:ojo",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#g.possessives.rp3",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "Hernando talks about his grandchildren.",
+      "es": "Hernando habla de sus nietos.",
+      "gap": [
+        18,
+        21
+      ],
+      "options": [
+        "los",
+        "sus"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando talks about his grandchildren.\", so the gap is sus.",
+      "requires": [
+        "g:present-ar",
+        "l:hablar",
+        "l:nieto",
+        "p:masculine-plural-mixed",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:body-article-possessive#g.possessives.rp8",
+      "node": "x:body-article-possessive",
+      "side": "p:lavarse-las-manos",
+      "rung": 1,
+      "en": "My aunt has blond hair.",
+      "es": "Mi tía es rubia.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Mi",
+        "El"
+      ],
+      "answer": 0,
+      "why": "The English says \"My aunt has blond hair.\", so the gap is Mi.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:ser-identity",
+        "l:rubio",
+        "l:ser",
+        "l:tía",
+        "p:es-tiene-lleva",
+        "p:possessives-basic"
+      ]
+    }
+  ]
+}

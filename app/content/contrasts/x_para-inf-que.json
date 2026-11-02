@@ -1,0 +1,148 @@
+{
+  "node": "x:para-inf-que",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:para-inf-que#rp0",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "I'm bringing the cake so you all can try it.",
+      "es": "Traigo la torta para que la prueben.",
+      "gap": [
+        21,
+        35
+      ],
+      "options": [
+        "que la prueben",
+        "probarla con ustedes"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm bringing the cake so you all can try it.\", so the gap is que la prueben.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:para-que",
+        "g:subj-wanting",
+        "g:yo-irregular",
+        "l:probar",
+        "l:torta",
+        "l:traer",
+        "p:llevar-traer"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#rp1",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I'm bringing the cake to try it with you all.",
+      "es": "Traigo la torta para probarla con ustedes.",
+      "gap": [
+        21,
+        41
+      ],
+      "options": [
+        "que la prueben",
+        "probarla con ustedes"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'm bringing the cake to try it with you all.\", so the gap is probarla con ustedes.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:object-pronoun-position",
+        "g:prep-pronouns",
+        "g:yo-irregular",
+        "l:probarse",
+        "l:torta",
+        "l:traer",
+        "p:llevar-traer",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#pf0",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I'm studying Spanish to talk with my grandmother.",
+      "es": "Estudio español para hablar con mi abuela.",
+      "gap": [
+        21,
+        27
+      ],
+      "options": [
+        "hablar",
+        "que hablo"
+      ],
+      "answer": 0,
+      "why": "Almost. You study and you talk, so just para hablar.",
+      "requires": [
+        "g:present-ar",
+        "l:abuela",
+        "l:español",
+        "l:estudiar",
+        "l:hablar",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#pf2",
+      "node": "x:para-inf-que",
+      "side": "g:para-que",
+      "rung": 1,
+      "en": "I'm leaving the keys with Vale so she can lock up.",
+      "es": "Le dejo las llaves a Vale para que cierre.",
+      "gap": [
+        35,
+        41
+      ],
+      "options": [
+        "cierre",
+        "cierra"
+      ],
+      "answer": 0,
+      "why": "Para que takes the subjunctive: cierre, not cierra.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:le-doubling",
+        "g:para-que",
+        "g:present-ar",
+        "g:subj-wanting",
+        "l:cerrar",
+        "l:dejar",
+        "l:llave"
+      ]
+    },
+    {
+      "id": "x:para-inf-que#yt0",
+      "node": "x:para-inf-que",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I came to help.",
+      "es": "Vine para ayudar.",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "que me ayudes",
+        "ayudar"
+      ],
+      "answer": 1,
+      "why": "You came and you help: one person, dictionary form.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "l:ayudar",
+        "l:venir",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    }
+  ]
+}

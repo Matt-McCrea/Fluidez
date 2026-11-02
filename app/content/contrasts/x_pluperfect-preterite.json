@@ -1,0 +1,34 @@
+{
+  "node": "x:pluperfect-preterite",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:pluperfect-preterite#pf1",
+      "node": "x:pluperfect-preterite",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "I went to the market yesterday.",
+      "es": "Ayer fui al mercado.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "fui",
+        "había ido"
+      ],
+      "answer": 0,
+      "why": "Había needs another past moment to look back from; on its own it's just the plain past.",
+      "requires": [
+        "c:ayer-anoche",
+        "c:fui",
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:ayer",
+        "l:ir",
+        "l:mercado",
+        "p:ir-a-venir-de-place"
+      ]
+    }
+  ]
+}

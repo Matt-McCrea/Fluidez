@@ -1,0 +1,109 @@
+{
+  "node": "x:present-progressive",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:present-progressive#pf1",
+      "node": "x:present-progressive",
+      "side": "g:present-er-ir",
+      "rung": 1,
+      "en": "What do you do on Saturdays? (to a friend)",
+      "es": "¿Qué haces los sábados?",
+      "gap": [
+        5,
+        10
+      ],
+      "options": [
+        "haces",
+        "estás haciendo"
+      ],
+      "answer": 0,
+      "why": "Saturdays are a habit, so the plain present. Estás haciendo means right this minute.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:questions",
+        "l:hacer",
+        "l:qué",
+        "l:sábado",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:present-progressive#pf2",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Simón is talking again.",
+      "es": "Simón está hablando otra vez.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The -ando form always goes with estar, never ser.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "l:estar",
+        "l:hablar",
+        "l:vez",
+        "p:otro-no-article"
+      ]
+    },
+    {
+      "id": "x:present-progressive#rp3",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Mariana is writing.",
+      "es": "Mariana está escribiendo.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana is writing.\", so the gap is está.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "l:escribir",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:present-progressive#rp7",
+      "node": "x:present-progressive",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Vale is washing the towels.",
+      "es": "Vale está lavando las toallas.",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale is washing the towels.\", so the gap is está.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:lavar",
+        "l:toalla"
+      ]
+    }
+  ]
+}

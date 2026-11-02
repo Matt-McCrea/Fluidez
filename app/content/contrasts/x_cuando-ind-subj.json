@@ -1,0 +1,169 @@
+{
+  "node": "x:cuando-ind-subj",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:cuando-ind-subj#rp2",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Whenever I close up, I clean the tables.",
+      "es": "Cuando cierro, limpio las mesas.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "cierre",
+        "cierro"
+      ],
+      "answer": 1,
+      "why": "The English says \"Whenever I close up, I clean the tables.\", so the gap is cierro.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:stem-boot",
+        "l:cerrar",
+        "l:limpiar",
+        "l:mesa",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#rp3",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "Tonight, when I close up, I'll clean the tables.",
+      "es": "Cuando cierre, limpio las mesas.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "cierre",
+        "cierro"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tonight, when I close up, I'll clean the tables.\", so the gap is cierre.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:cerrar",
+        "l:limpiar",
+        "l:mesa"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#yt1",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Every time I come out of a meeting, I call you.",
+      "es": "Cuando salgo de la reunión, te llamo.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "salga",
+        "salgo"
+      ],
+      "answer": 1,
+      "why": "Every time means a habit, and a habit takes the ordinary verb: salgo.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:yo-irregular",
+        "l:llamar",
+        "l:reunión",
+        "l:salir",
+        "p:cuando-basic",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#rp0",
+      "node": "x:cuando-ind-subj",
+      "side": "g:cuando-indicative",
+      "rung": 1,
+      "en": "Whenever I arrive, Vale is already here.",
+      "es": "Cuando llego, Vale ya está aquí.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "llegue",
+        "llego"
+      ],
+      "answer": 1,
+      "why": "The English says \"Whenever I arrive, Vale is already here.\", so the gap is llego.",
+      "requires": [
+        "g:estar-location-states",
+        "g:present-ar",
+        "l:aquí",
+        "l:estar",
+        "l:llegar",
+        "p:aqui-ahi-alla",
+        "p:cuando-basic"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#rp1",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When I get there, we'll talk.",
+      "es": "Cuando llegue, hablamos.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llegue",
+        "llego"
+      ],
+      "answer": 0,
+      "why": "The English says \"When I get there, we'll talk.\", so the gap is llegue.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:hablar",
+        "l:llegar"
+      ]
+    },
+    {
+      "id": "x:cuando-ind-subj#g.subj-cuando-future.yt5",
+      "node": "x:cuando-ind-subj",
+      "side": "g:subj-cuando-future",
+      "rung": 1,
+      "en": "When I get out of the meeting, I'll call you.",
+      "es": "Cuando salga de la reunión, te llamo.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "salgo",
+        "salga"
+      ],
+      "answer": 1,
+      "why": "Only the verb after cuando changes: salgo becomes salga.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-cuando-future",
+        "g:subj-wanting",
+        "l:llamar",
+        "l:reunión",
+        "l:salir",
+        "p:me-te-nos-objects"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "node": "x:habria-que-vs-deberias",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:habria-que-vs-deberias#pf0",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Someone should call her.",
+      "es": "Habría que llamarla.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habrías",
+        "Habría"
+      ],
+      "answer": 1,
+      "why": "Almost. Habría que never changes for person; it is always habría.",
+      "requires": [
+        "g:direct-objects",
+        "g:imperfect-states",
+        "g:object-pronoun-position",
+        "g:that-clauses",
+        "l:llamar",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#pf2",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "You should call her. (to a friend)",
+      "es": "Deberías llamarla.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Habría que tú",
+        "Deberías"
+      ],
+      "answer": 1,
+      "why": "Almost. Habría que has nobody in it. To name who, use deberías.",
+      "requires": [
+        "g:conditional",
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:llamar",
+        "p:tendrias-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#rp4",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "The menu ought to be changed.",
+      "es": "Habría que cambiar el menú.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habrías",
+        "Habría"
+      ],
+      "answer": 1,
+      "why": "The English says \"The menu ought to be changed.\", so the gap is Habría.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:cambiar",
+        "l:menú",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#rp7",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Someone should pay the bill today.",
+      "es": "Habría que pagar la cuenta hoy.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habría",
+        "Habrías"
+      ],
+      "answer": 0,
+      "why": "The English says \"Someone should pay the bill today.\", so the gap is Habría.",
+      "requires": [
+        "c:la-cuenta",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:cuenta",
+        "l:hoy",
+        "l:pagar",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.yt5",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "We shouldn't sign today.",
+      "es": "No habría que firmar hoy.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "habría",
+        "habrías"
+      ],
+      "answer": 0,
+      "why": "No goes in front of habría.",
+      "requires": [
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:firmar",
+        "l:hoy",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp0",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Someone should talk to the owner before signing.",
+      "es": "Habría que hablar con el dueño antes de firmar.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habría",
+        "Habrías"
+      ],
+      "answer": 0,
+      "why": "The English says \"Someone should talk to the owner before signing.\", so the gap is Habría.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:prep-infinitive",
+        "g:that-clauses",
+        "l:antes",
+        "l:dueño",
+        "l:firmar",
+        "l:hablar",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp2",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Someone ought to call her and tell her.",
+      "es": "Habría que llamarla y contarle.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habría",
+        "Habrías"
+      ],
+      "answer": 0,
+      "why": "The English says \"Someone ought to call her and tell her.\", so the gap is Habría.",
+      "requires": [
+        "g:direct-objects",
+        "g:imperfect-states",
+        "g:indirect-objects",
+        "g:object-pronoun-position",
+        "g:that-clauses",
+        "l:contar",
+        "l:llamar",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp3",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "We shouldn't sign anything yet.",
+      "es": "No habría que firmar nada todavía.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "habrías",
+        "habría"
+      ],
+      "answer": 1,
+      "why": "The English says \"We shouldn't sign anything yet.\", so the gap is habría.",
+      "requires": [
+        "g:imperfect-states",
+        "g:negation-words",
+        "g:that-clauses",
+        "l:firmar",
+        "p:habria-que",
+        "p:ya-todavia-basic"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp4",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Should someone call Mariana?",
+      "es": "¿Habría que llamar a Mariana?",
+      "gap": [
+        1,
+        7
+      ],
+      "options": [
+        "Habría",
+        "Habrías"
+      ],
+      "answer": 0,
+      "why": "The English says \"Should someone call Mariana?\", so the gap is Habría.",
+      "requires": [
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:llamar",
+        "p:habria-que",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp5",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "We'd need to open earlier.",
+      "es": "Habría que abrir más temprano.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habrías",
+        "Habría"
+      ],
+      "answer": 1,
+      "why": "The English says \"We'd need to open earlier.\", so the gap is Habría.",
+      "requires": [
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:abrir",
+        "l:temprano",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp6",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "We should think it over carefully.",
+      "es": "Habría que pensarlo bien.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habría",
+        "Habrías"
+      ],
+      "answer": 0,
+      "why": "The English says \"We should think it over carefully.\", so the gap is Habría.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:direct-objects",
+        "g:imperfect-states",
+        "g:object-pronoun-position",
+        "g:that-clauses",
+        "l:bien",
+        "l:pensar",
+        "p:habria-que"
+      ]
+    },
+    {
+      "id": "x:habria-que-vs-deberias#p.habria-que.rp7",
+      "node": "x:habria-que-vs-deberias",
+      "side": "p:habria-que",
+      "rung": 1,
+      "en": "Someone ought to go to the hearing.",
+      "es": "Habría que ir a la audiencia.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Habrías",
+        "Habría"
+      ],
+      "answer": 1,
+      "why": "The English says \"Someone ought to go to the hearing.\", so the gap is Habría.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-states",
+        "g:that-clauses",
+        "l:audiencia",
+        "l:ir",
+        "p:habria-que",
+        "p:ir-a-venir-de-place"
+      ]
+    }
+  ]
+}

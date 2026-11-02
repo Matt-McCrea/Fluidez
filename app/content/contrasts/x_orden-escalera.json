@@ -1,0 +1,117 @@
+{
+  "node": "x:orden-escalera",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:orden-escalera#yt3",
+      "node": "x:orden-escalera",
+      "side": "p:orden-sin-imperativo",
+      "rung": 1,
+      "en": "Would you do me a favour and turn the volume down? (to a friend)",
+      "es": "¿Me haces el favor de bajar el volumen?",
+      "gap": [
+        4,
+        9
+      ],
+      "options": [
+        "hace",
+        "haces"
+      ],
+      "answer": 1,
+      "why": "A friendly favour uses haces, because the friend is tú.",
+      "requires": [
+        "c:me-haces-un-favor",
+        "g:gender-articles",
+        "l:bajar",
+        "l:favor",
+        "l:hacer",
+        "l:volumen",
+        "p:a-gritos",
+        "p:me-hace-el-favor",
+        "p:me-haces-el-favor-de",
+        "p:request-ladder"
+      ]
+    },
+    {
+      "id": "x:orden-escalera#rp3",
+      "node": "x:orden-escalera",
+      "side": "p:orden-sin-imperativo",
+      "rung": 1,
+      "en": "Would you do me a favour and wait? (to a friend)",
+      "es": "¿Me haces el favor de esperar?",
+      "gap": [
+        4,
+        9
+      ],
+      "options": [
+        "haces",
+        "hace"
+      ],
+      "answer": 0,
+      "why": "The English says \"Would you do me a favour and wait? (to a friend)\", so the gap is haces.",
+      "requires": [
+        "c:me-haces-un-favor",
+        "g:gender-articles",
+        "l:esperar",
+        "l:favor",
+        "l:hacer",
+        "p:me-hace-el-favor",
+        "p:me-haces-el-favor-de",
+        "p:request-ladder"
+      ]
+    },
+    {
+      "id": "x:orden-escalera#rp4",
+      "node": "x:orden-escalera",
+      "side": "p:orden-sin-imperativo",
+      "rung": 1,
+      "en": "Would you turn the volume down, please? (formal)",
+      "es": "¿Me hace el favor y baja el volumen?",
+      "gap": [
+        4,
+        8
+      ],
+      "options": [
+        "haces",
+        "hace"
+      ],
+      "answer": 1,
+      "why": "The English says \"Would you turn the volume down, please? (formal)\", so the gap is hace.",
+      "requires": [
+        "c:me-hace-una-rebajita",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:bajar",
+        "l:favor",
+        "l:hacer",
+        "l:volumen",
+        "p:a-gritos",
+        "p:me-hace-el-favor",
+        "p:me-haces-el-favor-de"
+      ]
+    },
+    {
+      "id": "x:orden-escalera#p.orden-sin-imperativo.rp3",
+      "node": "x:orden-escalera",
+      "side": "p:orden-sin-imperativo",
+      "rung": 1,
+      "en": "You do it now.",
+      "es": "Tú lo haces ya.",
+      "gap": [
+        6,
+        11
+      ],
+      "options": [
+        "haces",
+        "hace"
+      ],
+      "answer": 0,
+      "why": "The English says \"You do it now.\", so the gap is haces.",
+      "requires": [
+        "g:direct-objects",
+        "g:present-er-ir",
+        "l:hacer"
+      ]
+    }
+  ]
+}

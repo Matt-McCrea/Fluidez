@@ -1,0 +1,126 @@
+{
+  "node": "x:imperfecto-tres-usos",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:imperfecto-tres-usos#pf2",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-citativo",
+      "rung": 1,
+      "en": "Mariana was arriving tomorrow, wasn't she?",
+      "es": "Mariana llegaba mañana, ¿no?",
+      "gap": [
+        8,
+        15
+      ],
+      "options": [
+        "llegaba",
+        "llegó"
+      ],
+      "answer": 0,
+      "why": "You cannot arrive tomorrow in the preterite. To check what you were told, use the imperfect.",
+      "requires": [
+        "c:no-cierto",
+        "g:imperfect-habitual",
+        "l:llegar",
+        "l:mañana",
+        "p:imperfecto-citativo"
+      ]
+    },
+    {
+      "id": "x:imperfecto-tres-usos#yt1",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-cortesia-venia",
+      "rung": 2,
+      "en": "I was coming to ask if you had a table for four.",
+      "es": "Venía a preguntar si tenían una mesa para cuatro.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Venía",
+        "Vengo"
+      ],
+      "answer": 0,
+      "why": "Venía a is gentler than vengo a; it does not push.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "g:imperfect-states",
+        "g:indirect-questions",
+        "l:mesa",
+        "l:preguntar",
+        "l:tener",
+        "l:venir",
+        "p:imperfecto-cortesia-venia",
+        "p:para-inf",
+        "p:preguntar-pedir",
+        "p:queria-cortesia"
+      ]
+    },
+    {
+      "id": "x:imperfecto-tres-usos#p.imperfecto-cortesia-venia.rp1",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-sorpresa",
+      "rung": 1,
+      "en": "I'm here to ask you a favor.",
+      "es": "Vengo a pedirle un favor.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Vengo",
+        "Venía"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm here to ask you a favor.\", so the gap is Vengo.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:object-pronoun-position",
+        "g:yo-irregular",
+        "l:favor",
+        "l:pedir",
+        "l:venir",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:imperfecto-tres-usos#p.imperfecto-cortesia-venia.rp5",
+      "node": "x:imperfecto-tres-usos",
+      "side": "p:imperfecto-cortesia-venia",
+      "rung": 1,
+      "en": "I was calling you (formal) to find out whether my package has arrived.",
+      "es": "Le llamaba para saber si ya llegó mi paquete.",
+      "gap": [
+        28,
+        33
+      ],
+      "options": [
+        "llegó",
+        "llegaba"
+      ],
+      "answer": 0,
+      "why": "The English says \"I was calling you (formal) to find out whether my package has arrived.\", so the gap is llegó.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:indirect-objects",
+        "g:indirect-questions",
+        "g:pret-vs-imperfect",
+        "g:preterite-ar",
+        "l:llamar",
+        "l:llegar",
+        "l:paquete",
+        "l:saber",
+        "p:imperfecto-cortesia-venia",
+        "p:para-inf",
+        "p:para-inf-purpose",
+        "p:possessives-basic",
+        "p:saber-conocer"
+      ]
+    }
+  ]
+}

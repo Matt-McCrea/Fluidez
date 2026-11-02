@@ -1,0 +1,256 @@
+{
+  "node": "x:segun-depende",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:segun-depende#pf0",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It depends on the day.",
+      "es": "Depende del día.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "del",
+        "según el"
+      ],
+      "answer": 0,
+      "why": "Pick one. Depende de and según do the same job, so you do not need both.",
+      "requires": [
+        "c:depende",
+        "g:gender-articles",
+        "l:depender",
+        "l:día"
+      ]
+    },
+    {
+      "id": "x:segun-depende#pf2",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It depends on you.",
+      "es": "Depende de ti.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 0,
+      "why": "Según takes no de. For \"it depends on you\", use depende de.",
+      "requires": [
+        "c:depende",
+        "g:prep-pronouns",
+        "l:depender"
+      ]
+    },
+    {
+      "id": "x:segun-depende#rp3",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "Are you coming tomorrow? It depends.",
+      "es": "¿Vienes mañana? Depende.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "Según",
+        "Depende"
+      ],
+      "answer": 1,
+      "why": "The English says \"Are you coming tomorrow? It depends.\", so the gap is Depende.",
+      "requires": [
+        "c:depende",
+        "g:stem-boot",
+        "l:depender",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:segun-depende#rp5",
+      "node": "x:segun-depende",
+      "side": "c:segun",
+      "rung": 1,
+      "en": "According to you, what time do they close?",
+      "es": "Según tú, ¿a qué hora cierran?",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 1,
+      "why": "The English says \"According to you, what time do they close?\", so the gap is Según.",
+      "requires": [
+        "c:a-que-hora",
+        "c:segun",
+        "g:stem-boot",
+        "l:cerrar",
+        "l:hora",
+        "l:qué",
+        "p:que-opinas-de",
+        "p:un-estudio-muestra-que"
+      ]
+    },
+    {
+      "id": "x:segun-depende#rp6",
+      "node": "x:segun-depende",
+      "side": "c:segun",
+      "rung": 1,
+      "en": "According to my watch, it's three o'clock.",
+      "es": "Según mi reloj, son las tres.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Según",
+        "Depende"
+      ],
+      "answer": 0,
+      "why": "The English says \"According to my watch, it's three o'clock.\", so the gap is Según.",
+      "requires": [
+        "c:segun",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:reloj",
+        "l:ser",
+        "p:possessives-basic",
+        "p:telling-time",
+        "p:un-estudio-muestra-que"
+      ]
+    },
+    {
+      "id": "x:segun-depende#p.depender-de.pf0",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It depends on the weather.",
+      "es": "Depende del clima.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "el",
+        "del"
+      ],
+      "answer": 1,
+      "why": "Almost. Depender always needs de, and de plus el becomes del.",
+      "requires": [
+        "c:depende",
+        "g:gender-articles",
+        "l:clima",
+        "l:depender"
+      ]
+    },
+    {
+      "id": "x:segun-depende#p.depender-de.yt3",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It all depends on you.",
+      "es": "Todo depende de ti.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "según",
+        "depende"
+      ],
+      "answer": 1,
+      "why": "De ti is the you that follows de.",
+      "requires": [
+        "c:depende",
+        "g:prep-pronouns",
+        "l:depender"
+      ]
+    },
+    {
+      "id": "x:segun-depende#p.depender-de.rp1",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "It all depends on me.",
+      "es": "Todo depende de mí.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "depende",
+        "según"
+      ],
+      "answer": 0,
+      "why": "The English says \"It all depends on me.\", so the gap is depende.",
+      "requires": [
+        "c:depende",
+        "g:prep-pronouns",
+        "l:depender"
+      ]
+    },
+    {
+      "id": "x:segun-depende#p.depender-de.rp2",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "Prices depend on the size.",
+      "es": "Los precios dependen del tamaño.",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "el",
+        "del"
+      ],
+      "answer": 1,
+      "why": "The English says \"Prices depend on the size.\", so the gap is del.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:depender",
+        "l:precio",
+        "l:tamaño",
+        "p:depende-de",
+        "p:depender-de"
+      ]
+    },
+    {
+      "id": "x:segun-depende#p.depender-de.rp5",
+      "node": "x:segun-depende",
+      "side": "p:depender-de",
+      "rung": 1,
+      "en": "Are you coming tomorrow? It depends.",
+      "es": "¿Vienes mañana?\nDepende.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "Depende",
+        "Según"
+      ],
+      "answer": 0,
+      "why": "The English says \"Are you coming tomorrow? It depends.\", so the gap is Depende.",
+      "requires": [
+        "c:depende",
+        "g:stem-boot",
+        "l:depender",
+        "l:mañana",
+        "l:venir"
+      ]
+    }
+  ]
+}

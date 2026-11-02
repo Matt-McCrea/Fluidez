@@ -1,0 +1,308 @@
+{
+  "node": "x:pena-vs-rabia",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:pena-vs-rabia#pf0",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes me sad that she's leaving.",
+      "es": "Me da pena que se vaya.",
+      "gap": [
+        18,
+        22
+      ],
+      "options": [
+        "vaya",
+        "va"
+      ],
+      "answer": 0,
+      "why": "Almost. After a feeling plus que, the verb takes the subjunctive.",
+      "requires": [
+        "c:me-regala",
+        "g:subj-emotion",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:dar",
+        "l:irse",
+        "l:pena",
+        "p:me-da-miedo",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#pf1",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes me sad that she's leaving.",
+      "es": "Me da pena que se vaya.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "triste",
+        "pena"
+      ],
+      "answer": 1,
+      "why": "Da goes with a noun like pena or rabia, not with an adjective like triste.",
+      "requires": [
+        "c:me-regala",
+        "g:subj-emotion",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:dar",
+        "l:irse",
+        "l:pena",
+        "p:me-da-miedo",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#rp1",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-rabia-que",
+      "rung": 1,
+      "en": "It makes me mad that she's leaving without telling anyone.",
+      "es": "Me da rabia que se vaya sin avisar.",
+      "gap": [
+        19,
+        23
+      ],
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "answer": 1,
+      "why": "The English says \"It makes me mad that she's leaving without telling anyone.\", so the gap is vaya.",
+      "requires": [
+        "c:me-regala",
+        "g:prep-infinitive",
+        "g:subj-emotion",
+        "g:subj-irregulars",
+        "g:that-clauses",
+        "l:avisar",
+        "l:dar",
+        "l:irse",
+        "l:rabia",
+        "p:me-da-miedo",
+        "p:me-da-rabia-me-indigna",
+        "p:me-da-rabia-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#rp2",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes me sad that they're closing the café.",
+      "es": "Me da pena que cierren el café.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "pena",
+        "triste"
+      ],
+      "answer": 0,
+      "why": "The English says \"It makes me sad that they're closing the café.\", so the gap is pena.",
+      "requires": [
+        "c:me-regala",
+        "g:gender-articles",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:café",
+        "l:cerrar",
+        "l:dar",
+        "l:pena",
+        "p:me-da-miedo",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#rp4",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes me sad that Rosa is no longer here.",
+      "es": "Me da pena que Rosa ya no esté.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "pena",
+        "triste"
+      ],
+      "answer": 0,
+      "why": "The English says \"It makes me sad that Rosa is no longer here.\", so the gap is pena.",
+      "requires": [
+        "c:me-regala",
+        "c:ya-no",
+        "g:estar-location-states",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dar",
+        "l:estar",
+        "l:pena",
+        "p:me-da-miedo",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#p.me-da-pena-que.rp0",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes me sad that you're alone. (to a friend)",
+      "es": "Me da pena que estés solo.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "triste",
+        "pena"
+      ],
+      "answer": 1,
+      "why": "The English says \"It makes me sad that you're alone. (to a friend)\", so the gap is pena.",
+      "requires": [
+        "c:me-regala",
+        "g:estar-location-states",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dar",
+        "l:estar",
+        "l:pena",
+        "p:me-da-miedo",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#p.me-da-pena-que.rp1",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "I'm embarrassed to speak in front of everyone.",
+      "es": "Me da pena hablar delante de todos.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "pena",
+        "triste"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm embarrassed to speak in front of everyone.\", so the gap is pena.",
+      "requires": [
+        "c:me-regala",
+        "l:dar",
+        "l:delante",
+        "l:hablar",
+        "l:pena",
+        "p:cerca-de",
+        "p:me-da-miedo",
+        "p:me-da-pena-que",
+        "p:position-de"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#p.me-da-pena-que.rp2",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "What a shame you can't come! (to a friend)",
+      "es": "¡Qué pena que no puedas venir!",
+      "gap": [
+        5,
+        9
+      ],
+      "options": [
+        "triste",
+        "pena"
+      ],
+      "answer": 1,
+      "why": "The English says \"What a shame you can't come! (to a friend)\", so the gap is pena.",
+      "requires": [
+        "c:que-pena",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:verb-infinitive",
+        "l:pena",
+        "l:poder",
+        "l:qué",
+        "l:venir",
+        "p:me-da-pena-que"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#p.me-da-pena-que.rp4",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "It makes us sad that you're not coming. (to a friend)",
+      "es": "Nos da pena que no vengas.",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "triste",
+        "pena"
+      ],
+      "answer": 1,
+      "why": "The English says \"It makes us sad that you're not coming. (to a friend)\", so the gap is pena.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dar",
+        "l:pena",
+        "l:venir",
+        "p:me-da-miedo",
+        "p:me-da-pena-que",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:pena-vs-rabia#p.me-da-pena-que.rp6",
+      "node": "x:pena-vs-rabia",
+      "side": "p:me-da-pena-que",
+      "rung": 1,
+      "en": "Vale is sad that don Hernando isn't coming.",
+      "es": "A Vale le da pena que don Hernando no venga.",
+      "gap": [
+        13,
+        17
+      ],
+      "options": [
+        "triste",
+        "pena"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale is sad that don Hernando isn't coming.\", so the gap is pena.",
+      "requires": [
+        "g:indirect-objects",
+        "g:present-ar",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dar",
+        "l:pena",
+        "l:venir",
+        "p:me-da-miedo",
+        "p:me-da-pena-que",
+        "p:senor-don-article"
+      ]
+    }
+  ]
+}

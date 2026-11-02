@@ -1,0 +1,799 @@
+{
+  "node": "x:que-three-ways",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:que-three-ways#pf0",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I think you're right. (to a friend)",
+      "es": "Creo que tienes razón.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "Almost. Nothing is being asked here, so que has no accent.",
+      "requires": [
+        "c:creo-que",
+        "c:tienes",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:creer",
+        "l:razón",
+        "l:tener",
+        "p:tener-razon"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#yt3",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "Which book do you want?",
+      "es": "¿Qué libro quieres?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Que",
+        "Qué"
+      ],
+      "answer": 1,
+      "why": "Which, in a question, is ¿Qué…? with the accent.",
+      "requires": [
+        "g:questions",
+        "g:stem-boot",
+        "l:libro",
+        "l:querer",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp0",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "Which bread did Tomás buy?",
+      "es": "¿Qué pan compró Tomás?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Que",
+        "Qué"
+      ],
+      "answer": 1,
+      "why": "The English says \"Which bread did Tomás buy?\", so the gap is Qué.",
+      "requires": [
+        "g:preterite-ar",
+        "g:questions",
+        "l:comprar",
+        "l:pan",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp1",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The bread Tomás bought is tasty.",
+      "es": "El pan que compró Tomás está rico.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"The bread Tomás bought is tasty.\", so the gap is que.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relative-que",
+        "l:comprar",
+        "l:estar",
+        "l:pan",
+        "l:rico"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp2",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "Tomás says the bread is tasty.",
+      "es": "Tomás dice que el pan está rico.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás says the bread is tasty.\", so the gap is que.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:estar",
+        "l:pan",
+        "l:rico"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp3",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "Which lady came yesterday?",
+      "es": "¿Qué señora vino ayer?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Qué",
+        "Que"
+      ],
+      "answer": 0,
+      "why": "The English says \"Which lady came yesterday?\", so the gap is Qué.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:preterite-irregular-strong",
+        "g:questions",
+        "l:ayer",
+        "l:qué",
+        "l:señora",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp4",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The lady who came yesterday is from Cali.",
+      "es": "La señora que vino ayer es de Cali.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"The lady who came yesterday is from Cali.\", so the gap is que.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:ayer",
+        "l:ser",
+        "l:señora",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp5",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I think the lady came yesterday.",
+      "es": "Creo que la señora vino ayer.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"I think the lady came yesterday.\", so the gap is que.",
+      "requires": [
+        "c:ayer-anoche",
+        "c:creo-que",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "g:that-clauses",
+        "l:ayer",
+        "l:creer",
+        "l:señora",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp6",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "What did Mariana write?",
+      "es": "¿Qué escribió Mariana?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Que",
+        "Qué"
+      ],
+      "answer": 1,
+      "why": "The English says \"What did Mariana write?\", so the gap is Qué.",
+      "requires": [
+        "g:preterite-er-ir",
+        "g:questions",
+        "l:escribir",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp7",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The book I want is Rosa's.",
+      "es": "El libro que quiero es de Rosa.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"The book I want is Rosa's.\", so the gap is que.",
+      "requires": [
+        "c:quiero",
+        "g:gender-articles",
+        "g:relative-que",
+        "g:ser-identity",
+        "g:stem-boot",
+        "l:libro",
+        "l:querer",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#rp8",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I think the book is Rosa's.",
+      "es": "Creo que el libro es de Rosa.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"I think the book is Rosa's.\", so the gap is que.",
+      "requires": [
+        "c:creo-que",
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:creer",
+        "l:libro",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.questions.rp5",
+      "node": "x:que-three-ways",
+      "side": "g:questions",
+      "rung": 1,
+      "en": "What are you reading?",
+      "es": "¿Qué lees?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Qué",
+        "Que"
+      ],
+      "answer": 0,
+      "why": "The English says \"What are you reading?\", so the gap is Qué.",
+      "requires": [
+        "g:questions",
+        "l:le",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp0",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The man who sells arepas is my neighbour.",
+      "es": "El señor que vende arepas es mi vecino.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"The man who sells arepas is my neighbour.\", so the gap is que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:arepa",
+        "l:ser",
+        "l:señor",
+        "l:vecino",
+        "l:vender",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp1",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The letter I found is from Rosa.",
+      "es": "La carta que encontré es de Rosa.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"The letter I found is from Rosa.\", so the gap is que.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:carta",
+        "l:encontrar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp2",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The letter he found is from Rosa.",
+      "es": "La carta que encontró es de Rosa.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"The letter he found is from Rosa.\", so the gap is que.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:carta",
+        "l:encontrar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp3",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The man who knows Vale lives here.",
+      "es": "El señor que conoce a Vale vive aquí.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"The man who knows Vale lives here.\", so the gap is que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:aquí",
+        "l:conocer",
+        "l:señor",
+        "l:vivir",
+        "p:aqui-ahi-alla",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp4",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I have a friend who lives in Medellín.",
+      "es": "Tengo una amiga que vive en Medellín.",
+      "gap": [
+        16,
+        19
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"I have a friend who lives in Medellín.\", so the gap is que.",
+      "requires": [
+        "c:tengo",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:yo-irregular",
+        "l:amiga",
+        "l:tener",
+        "l:vivir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp5",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The pandebonos Vale makes are delicious.",
+      "es": "Los pandebonos que hace Vale son deliciosos.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"The pandebonos Vale makes are delicious.\", so the gap is que.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:delicioso",
+        "l:hacer",
+        "l:pandebono",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp6",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "Where's the book I gave you?",
+      "es": "¿Dónde está el libro que te di?",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"Where's the book I gave you?\", so the gap is que.",
+      "requires": [
+        "c:donde-esta",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "g:relative-que",
+        "l:dar",
+        "l:dónde",
+        "l:estar",
+        "l:libro",
+        "p:me-te-nos-objects",
+        "p:question-word-order"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp7",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "I don't like the coffee they sell here.",
+      "es": "No me gusta el café que venden aquí.",
+      "gap": [
+        20,
+        23
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't like the coffee they sell here.\", so the gap is que.",
+      "requires": [
+        "c:me-gusta",
+        "g:gustar-basic",
+        "g:present-er-ir",
+        "g:relative-que",
+        "l:aquí",
+        "l:café",
+        "l:gustar",
+        "l:vender",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.relative-que.rp8",
+      "node": "x:que-three-ways",
+      "side": "g:relative-que",
+      "rung": 1,
+      "en": "The taxi Hernando drives is very old.",
+      "es": "El taxi que maneja Hernando es muy viejo.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"The taxi Hernando drives is very old.\", so the gap is que.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:relative-que",
+        "g:ser-identity",
+        "l:manejar",
+        "l:ser",
+        "l:taxi",
+        "l:viejo",
+        "p:quantifiers-basic",
+        "p:viejo-antiguo-mayor"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp1",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She says she's coming tomorrow.",
+      "es": "Dice que viene mañana.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"She says she's coming tomorrow.\", so the gap is que.",
+      "requires": [
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp2",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She said she's coming tomorrow.",
+      "es": "Dijo que viene mañana.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"She said she's coming tomorrow.\", so the gap is que.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp3",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I know it's late.",
+      "es": "Sé que es tarde.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"I know it's late.\", so the gap is que.",
+      "requires": [
+        "g:ser-identity",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:saber",
+        "l:ser",
+        "l:tarde",
+        "p:es-de-noche-tarde",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp4",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I knew you were going to say that.",
+      "es": "Sabía que ibas a decir eso.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"I knew you were going to say that.\", so the gap is que.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:ir-a-plans",
+        "g:that-clauses",
+        "l:decir",
+        "l:ir",
+        "l:saber",
+        "p:demonstratives-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp5",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "Do you think it's going to rain?",
+      "es": "¿Crees que va a llover?",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"Do you think it's going to rain?\", so the gap is que.",
+      "requires": [
+        "c:que-va",
+        "g:ir-a-plans",
+        "g:present-er-ir",
+        "l:creer",
+        "l:ir",
+        "l:llover"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp6",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "I don't think so.",
+      "es": "Creo que no.",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"I don't think so.\", so the gap is que.",
+      "requires": [
+        "c:creo-que",
+        "g:that-clauses",
+        "l:creer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp7",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "We know it was someone from Altamira.",
+      "es": "Sabemos que fue alguien de Altamira.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "qué",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"We know it was someone from Altamira.\", so the gap is que.",
+      "requires": [
+        "g:present-er-ir",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:saber",
+        "l:ser",
+        "p:indefinites-basic",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:que-three-ways#g.that-clauses.rp8",
+      "node": "x:que-three-ways",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "Tomás thinks someone got in.",
+      "es": "Tomás cree que alguien entró.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "que",
+        "qué"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás thinks someone got in.\", so the gap is que.",
+      "requires": [
+        "g:present-er-ir",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:creer",
+        "l:entrar",
+        "p:indefinites-basic"
+      ]
+    }
+  ]
+}

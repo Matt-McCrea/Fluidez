@@ -1,0 +1,421 @@
+{
+  "node": "x:le-se-lo",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:le-se-lo#pf1",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I showed them to them.",
+      "es": "Se las mostré.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Les",
+        "Se"
+      ],
+      "answer": 1,
+      "why": "Les changes too, and this se has no plural: just se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:preterite-ar",
+        "l:mostrar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#yt1",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "The money? I already gave it to him.",
+      "es": "¿La plata? Ya se la di.",
+      "gap": [
+        14,
+        16
+      ],
+      "options": [
+        "se",
+        "le"
+      ],
+      "answer": 0,
+      "why": "Right in front of la, le turns into se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "l:dar",
+        "l:plata"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp0",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I gave him the money.",
+      "es": "Le di la plata.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 0,
+      "why": "The English says \"I gave him the money.\", so the gap is Le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "l:dar",
+        "l:plata"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp1",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I gave it to him.",
+      "es": "Se la di.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 1,
+      "why": "The English says \"I gave it to him.\", so the gap is Se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:preterite-irregular-strong",
+        "l:dar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp2",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I gave it to her, not to him.",
+      "es": "Se lo di a ella, no a él.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I gave it to her, not to him.\", so the gap is Se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:preterite-irregular-strong",
+        "l:dar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp3",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I showed them the chairs.",
+      "es": "Les mostré las sillas.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Se",
+        "Les"
+      ],
+      "answer": 1,
+      "why": "The English says \"I showed them the chairs.\", so the gap is Les.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-ar",
+        "l:mostrar",
+        "l:silla"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp5",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I'll give it to you. (formal)",
+      "es": "Se lo doy a usted.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'll give it to you. (formal)\", so the gap is Se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:yo-irregular",
+        "l:dar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp6",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "Shall I show it to you? (formal)",
+      "es": "¿Se la muestro?",
+      "gap": [
+        1,
+        3
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"Shall I show it to you? (formal)\", so the gap is Se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:stem-boot",
+        "l:mostrar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp7",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "And Mariana? I asked her yesterday.",
+      "es": "¿Y Mariana? Se lo pregunté ayer.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 1,
+      "why": "The English says \"And Mariana? I asked her yesterday.\", so the gap is Se.",
+      "requires": [
+        "c:ayer-anoche",
+        "g:double-pronouns",
+        "g:preterite-ar",
+        "l:ayer",
+        "l:preguntar",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#rp8",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "I already paid it to him.",
+      "es": "Ya se lo pagué.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "se",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"I already paid it to him.\", so the gap is se.",
+      "requires": [
+        "g:double-pronouns",
+        "g:preterite-spelling-stem",
+        "l:pagar"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.yt4",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "What did you say to her?",
+      "es": "¿Qué le dijiste?",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "se",
+        "le"
+      ],
+      "answer": 1,
+      "why": "To her is le, right before dijiste.",
+      "requires": [
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "g:questions",
+        "l:decir",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.rp0",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I gave him the map.",
+      "es": "Le di el mapa.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 0,
+      "why": "The English says \"I gave him the map.\", so the gap is Le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "l:dar",
+        "l:mapa"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.rp1",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I explained the route to them.",
+      "es": "Les expliqué la ruta.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Se",
+        "Les"
+      ],
+      "answer": 1,
+      "why": "The English says \"I explained the route to them.\", so the gap is Les.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:preterite-spelling-stem",
+        "l:explicar",
+        "l:ruta"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.rp4",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "Shall I explain the route to you? (formal)",
+      "es": "¿Le explico la ruta?",
+      "gap": [
+        1,
+        3
+      ],
+      "options": [
+        "Le",
+        "Se"
+      ],
+      "answer": 0,
+      "why": "The English says \"Shall I explain the route to you? (formal)\", so the gap is Le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:present-ar",
+        "l:explicar",
+        "l:ruta"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.rp6",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "What did you say to them?",
+      "es": "¿Qué les dijiste?",
+      "gap": [
+        5,
+        8
+      ],
+      "options": [
+        "les",
+        "se"
+      ],
+      "answer": 0,
+      "why": "The English says \"What did you say to them?\", so the gap is les.",
+      "requires": [
+        "g:indirect-objects",
+        "g:preterite-irregular-strong",
+        "g:questions",
+        "l:decir",
+        "l:qué"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.indirect-objects.rp7",
+      "node": "x:le-se-lo",
+      "side": "g:indirect-objects",
+      "rung": 1,
+      "en": "I'll give her the address.",
+      "es": "Le doy la dirección.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'll give her the address.\", so the gap is Le.",
+      "requires": [
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:yo-irregular",
+        "l:dar",
+        "l:dirección"
+      ]
+    },
+    {
+      "id": "x:le-se-lo#g.double-pronouns.rp5",
+      "node": "x:le-se-lo",
+      "side": "g:double-pronouns",
+      "rung": 1,
+      "en": "The bill? I gave it to don Hernando.",
+      "es": "¿La cuenta? Se la di a don Hernando.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "Se",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"The bill? I gave it to don Hernando.\", so the gap is Se.",
+      "requires": [
+        "c:la-cuenta",
+        "g:double-pronouns",
+        "g:preterite-irregular-strong",
+        "l:cuenta",
+        "l:dar",
+        "p:senor-don-article"
+      ]
+    }
+  ]
+}

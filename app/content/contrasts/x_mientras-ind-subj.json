@@ -1,0 +1,84 @@
+{
+  "node": "x:mientras-ind-subj",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:mientras-ind-subj#pf0",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "As long as there's work, I'm staying.",
+      "es": "Mientras haya trabajo, me quedo.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "haya",
+        "hay"
+      ],
+      "answer": 0,
+      "why": "Almost. \"As long as\" sets a condition, so the verb takes the subjunctive: haya.",
+      "requires": [
+        "g:present-ar",
+        "g:reflexive-routine",
+        "g:subj-cuando-future",
+        "g:subj-irregulars",
+        "l:quedarse",
+        "l:trabajo",
+        "p:mientras-subj"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#pf1",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "While you cook, I set the table. (to a friend)",
+      "es": "Mientras cocinas, pongo la mesa.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "cocine",
+        "cocinas"
+      ],
+      "answer": 1,
+      "why": "Almost. Two things happening together are facts, so the verb stays ordinary: cocinas.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:present-ar",
+        "g:yo-irregular",
+        "l:cocinar",
+        "l:mesa",
+        "l:poner"
+      ]
+    },
+    {
+      "id": "x:mientras-ind-subj#pf2",
+      "node": "x:mientras-ind-subj",
+      "side": "p:mientras-subj",
+      "rung": 1,
+      "en": "While I waited, I read the newspaper.",
+      "es": "Mientras esperaba, leía el periódico.",
+      "gap": [
+        9,
+        17
+      ],
+      "options": [
+        "esperaba",
+        "esperara"
+      ],
+      "answer": 0,
+      "why": "Almost. A past \"while\" never takes the subjunctive: esperaba.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:esperar",
+        "l:leer",
+        "l:periódico"
+      ]
+    }
+  ]
+}

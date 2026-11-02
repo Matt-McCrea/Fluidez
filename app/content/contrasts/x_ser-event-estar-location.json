@@ -1,0 +1,261 @@
+{
+  "node": "x:ser-event-estar-location",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ser-event-estar-location#rp1",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The match is at the stadium.",
+      "es": "Es en el estadio.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 0,
+      "why": "The English says \"The match is at the stadium.\", so the gap is Es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:estadio",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#rp2",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando is at the stadium.",
+      "es": "Está en el estadio.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando is at the stadium.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estadio",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#rp6",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "The party was at Vale's place.",
+      "es": "Fue en la casa de Vale.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Estuvimos",
+        "Fue"
+      ],
+      "answer": 1,
+      "why": "The English says \"The party was at Vale's place.\", so the gap is Fue.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "g:ser-identity",
+        "l:casa",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#rp7",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "We were at Vale's place.",
+      "es": "Estuvimos en la casa de Vale.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Estuvimos",
+        "Fue"
+      ],
+      "answer": 0,
+      "why": "The English says \"We were at Vale's place.\", so the gap is Estuvimos.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:preterite-irregular-strong",
+        "l:casa",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#pf1",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 1,
+      "en": "Where's the party?",
+      "es": "¿Dónde es la fiesta?",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "You're asking where it happens, so es. You'll hear está in casual speech, but es is always right.",
+      "requires": [
+        "g:gender-articles",
+        "g:questions",
+        "g:ser-identity",
+        "l:dónde",
+        "l:fiesta",
+        "l:ser",
+        "p:event-ser-en",
+        "p:question-word-order",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#yt0",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 2,
+      "en": "Tomás is at the party.",
+      "es": "Tomás está en la fiesta.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "Tomás is a person, and people are somewhere: está, even at a party.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:fiesta"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#yt1",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 2,
+      "en": "The party is at my place.",
+      "es": "La fiesta es en mi casa.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The party takes place there, so es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:casa",
+        "l:fiesta",
+        "l:ser",
+        "p:event-ser-en",
+        "p:possessives-basic",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#rp0",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "She's at the concert.",
+      "es": "Está en el concierto.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "answer": 1,
+      "why": "The English says \"She's at the concert.\", so the gap is Está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:concierto",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#p.event-ser-en.yt0",
+      "node": "x:ser-event-estar-location",
+      "side": "p:event-ser-en",
+      "rung": 2,
+      "en": "The concert is on Saturday.",
+      "es": "El concierto es el sábado.",
+      "gap": [
+        13,
+        15
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "A concert is something that happens, so its day goes with es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:concierto",
+        "l:ser",
+        "l:sábado",
+        "p:days-el-lunes",
+        "p:event-ser-en"
+      ]
+    },
+    {
+      "id": "x:ser-event-estar-location#g.estar-location-states.pf0",
+      "node": "x:ser-event-estar-location",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The café is in La Candelaria.",
+      "es": "El café está en La Candelaria.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "Almost. Es tells you what something is. For where it is, Spanish uses está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    }
+  ]
+}

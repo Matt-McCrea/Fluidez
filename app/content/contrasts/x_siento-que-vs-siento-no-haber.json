@@ -1,0 +1,127 @@
+{
+  "node": "x:siento-que-vs-siento-no-haber",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:siento-que-vs-siento-no-haber#rp0",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry you were late.",
+      "es": "Siento que hayas llegado tarde.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "que hayas",
+        "haber"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm sorry you were late.\", so the gap is que hayas.",
+      "requires": [
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-perfect",
+        "g:that-clauses",
+        "l:llegar",
+        "l:sentir",
+        "l:tarde",
+        "p:llegar-a-tiempo",
+        "p:sentir-lo-de",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#pf1",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry you're sad. (to a friend)",
+      "es": "Siento que estés triste.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "tú estás",
+        "estés"
+      ],
+      "answer": 1,
+      "why": "Almost. After siento que, the verb takes the subjunctive: estés.",
+      "requires": [
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:estar",
+        "l:sentir",
+        "l:triste",
+        "p:sentir-lo-de",
+        "p:siento-mucho-que"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#yt0",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-no-haber",
+      "rung": 1,
+      "en": "I'm sorry I was late.",
+      "es": "Siento haber llegado tarde.",
+      "gap": [
+        7,
+        20
+      ],
+      "options": [
+        "que llegué",
+        "haber llegado"
+      ],
+      "answer": 1,
+      "why": "You did it yourself, so haber and no que.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:haber",
+        "l:llegar",
+        "l:sentir",
+        "l:tarde",
+        "p:llegar-a-tiempo",
+        "p:same-subject-haber",
+        "p:sentir-lo-de",
+        "p:siento-llegar-tarde",
+        "p:siento-no-haber"
+      ]
+    },
+    {
+      "id": "x:siento-que-vs-siento-no-haber#yt1",
+      "node": "x:siento-que-vs-siento-no-haber",
+      "side": "p:siento-mucho-que",
+      "rung": 1,
+      "en": "I'm sorry you're sad. To a friend.",
+      "es": "Siento que estés triste.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "que estés",
+        "estar"
+      ],
+      "answer": 0,
+      "why": "It's about the other person, so que and estés.",
+      "requires": [
+        "g:estar-location-states",
+        "g:stem-boot",
+        "g:subj-emotion",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:estar",
+        "l:sentir",
+        "l:triste",
+        "p:sentir-lo-de",
+        "p:siento-mucho-que"
+      ]
+    }
+  ]
+}

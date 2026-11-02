@@ -1,0 +1,149 @@
+{
+  "node": "x:ir-a-future",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:ir-a-future#rp0",
+      "node": "x:ir-a-future",
+      "side": "g:ir-a-plans",
+      "rung": 1,
+      "en": "It's going to rain tomorrow.",
+      "es": "Mañana va a llover.",
+      "gap": [
+        7,
+        18
+      ],
+      "options": [
+        "lloverá",
+        "va a llover"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's going to rain tomorrow.\", so the gap is va a llover.",
+      "requires": [
+        "g:ir-a-plans",
+        "l:ir",
+        "l:llover",
+        "l:mañana"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#rp1",
+      "node": "x:ir-a-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "It will rain tomorrow.",
+      "es": "Mañana lloverá.",
+      "gap": [
+        7,
+        14
+      ],
+      "options": [
+        "lloverá",
+        "va a llover"
+      ],
+      "answer": 0,
+      "why": "The English says \"It will rain tomorrow.\", so the gap is lloverá.",
+      "requires": [
+        "g:future-promises",
+        "l:llover",
+        "l:mañana"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#rp2",
+      "node": "x:ir-a-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "I'll call you.",
+      "es": "Te llamaré.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "voy a llamar",
+        "llamaré"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'll call you.\", so the gap is llamaré.",
+      "requires": [
+        "g:future-promises",
+        "l:llamar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#rp3",
+      "node": "x:ir-a-future",
+      "side": "g:ir-a-plans",
+      "rung": 1,
+      "en": "I'm going to call you.",
+      "es": "Te voy a llamar.",
+      "gap": [
+        3,
+        15
+      ],
+      "options": [
+        "voy a llamar",
+        "llamaré"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm going to call you.\", so the gap is voy a llamar.",
+      "requires": [
+        "c:voy-a",
+        "g:ir-a-plans",
+        "l:ir",
+        "l:llamar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#rp7",
+      "node": "x:ir-a-future",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "I won't say anything.",
+      "es": "No diré nada.",
+      "gap": [
+        3,
+        7
+      ],
+      "options": [
+        "diré",
+        "voy a decir"
+      ],
+      "answer": 0,
+      "why": "The English says \"I won't say anything.\", so the gap is diré.",
+      "requires": [
+        "g:future-promises",
+        "g:negation-words",
+        "l:decir"
+      ]
+    },
+    {
+      "id": "x:ir-a-future#rp8",
+      "node": "x:ir-a-future",
+      "side": "g:ir-a-plans",
+      "rung": 1,
+      "en": "I'm not going to say anything.",
+      "es": "No voy a decir nada.",
+      "gap": [
+        3,
+        14
+      ],
+      "options": [
+        "diré",
+        "voy a decir"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'm not going to say anything.\", so the gap is voy a decir.",
+      "requires": [
+        "c:voy-a",
+        "g:ir-a-plans",
+        "g:negation-words",
+        "l:decir",
+        "l:ir"
+      ]
+    }
+  ]
+}

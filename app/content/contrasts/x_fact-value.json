@@ -1,0 +1,172 @@
+{
+  "node": "x:fact-value",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:fact-value#pf2",
+      "node": "x:fact-value",
+      "side": "g:subj-value",
+      "rung": 1,
+      "en": "It's important that Vale comes today.",
+      "es": "Es importante que Vale venga hoy.",
+      "gap": [
+        23,
+        28
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 0,
+      "why": "Importante is a judgement, so the verb changes to venga.",
+      "requires": [
+        "g:ser-identity",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:hoy",
+        "l:importante",
+        "l:ser",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:fact-value#yt0",
+      "node": "x:fact-value",
+      "side": "g:that-clauses",
+      "rung": 2,
+      "en": "It's true that they closed the park.",
+      "es": "Es verdad que cerraron el parque.",
+      "gap": [
+        14,
+        22
+      ],
+      "options": [
+        "cierren",
+        "cerraron"
+      ],
+      "answer": 1,
+      "why": "Es verdad que reports a fact, so the ordinary verb: cerraron.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:ser-identity",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:parque",
+        "l:ser",
+        "l:verdad",
+        "p:es-verdad-eso-de-que"
+      ]
+    },
+    {
+      "id": "x:fact-value#yt1",
+      "node": "x:fact-value",
+      "side": "g:subj-value",
+      "rung": 2,
+      "en": "It's a shame they're closing the park.",
+      "es": "Es una pena que cierren el parque.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "cierren",
+        "cierran"
+      ],
+      "answer": 0,
+      "why": "Una pena is a judgement, so the subjunctive: cierren.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:subj-value",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:parque",
+        "l:pena",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:fact-value#rp0",
+      "node": "x:fact-value",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "It's true that Vale is coming today.",
+      "es": "Es verdad que Vale viene hoy.",
+      "gap": [
+        19,
+        24
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "The English says \"It's true that Vale is coming today.\", so the gap is viene.",
+      "requires": [
+        "g:ser-identity",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:hoy",
+        "l:ser",
+        "l:venir",
+        "l:verdad",
+        "p:es-verdad-eso-de-que"
+      ]
+    },
+    {
+      "id": "x:fact-value#g.that-clauses.rp1",
+      "node": "x:fact-value",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She says she's coming tomorrow.",
+      "es": "Dice que viene mañana.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "answer": 0,
+      "why": "The English says \"She says she's coming tomorrow.\", so the gap is viene.",
+      "requires": [
+        "g:stem-boot",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:fact-value#g.that-clauses.rp2",
+      "node": "x:fact-value",
+      "side": "g:that-clauses",
+      "rung": 1,
+      "en": "She said she's coming tomorrow.",
+      "es": "Dijo que viene mañana.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "venga",
+        "viene"
+      ],
+      "answer": 1,
+      "why": "The English says \"She said she's coming tomorrow.\", so the gap is viene.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:mañana",
+        "l:venir"
+      ]
+    }
+  ]
+}

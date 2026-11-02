@@ -1,0 +1,341 @@
+{
+  "node": "x:dificil-de-es-dificil",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:dificil-de-es-dificil#rp0",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "This text is hard to understand.",
+      "es": "Este texto es difícil de entender.",
+      "gap": [
+        14,
+        21
+      ],
+      "options": [
+        "difícil",
+        "difíciles"
+      ],
+      "answer": 0,
+      "why": "The English says \"This text is hard to understand.\", so the gap is difícil.",
+      "requires": [
+        "g:ser-identity",
+        "l:difícil",
+        "l:entender",
+        "l:ser",
+        "l:texto",
+        "p:adj-de-inf",
+        "p:demonstratives-basic",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#rp1",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "It's hard to understand this text.",
+      "es": "Es difícil entender este texto.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's hard to understand this text.\", so the gap is difícil.",
+      "requires": [
+        "g:ser-identity",
+        "l:difícil",
+        "l:entender",
+        "l:ser",
+        "l:texto",
+        "p:demonstratives-basic",
+        "p:es-adj-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#rp2",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "The texts are hard to understand.",
+      "es": "Los textos son difíciles de entender.",
+      "gap": [
+        15,
+        24
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 0,
+      "why": "The English says \"The texts are hard to understand.\", so the gap is difíciles.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:difícil",
+        "l:entender",
+        "l:ser",
+        "l:texto",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#rp5",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "It's hard to pronounce that word.",
+      "es": "Es difícil pronunciar esa palabra.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's hard to pronounce that word.\", so the gap is difícil.",
+      "requires": [
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:difícil",
+        "l:palabra",
+        "l:pronunciar",
+        "l:ser",
+        "p:es-adj-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#rp6",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "That word is hard to pronounce.",
+      "es": "Esa palabra es difícil de pronunciar.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "difícil",
+        "difíciles"
+      ],
+      "answer": 0,
+      "why": "The English says \"That word is hard to pronounce.\", so the gap is difícil.",
+      "requires": [
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:difícil",
+        "l:palabra",
+        "l:pronunciar",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.pf1",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "The questions are hard to answer.",
+      "es": "Las preguntas son difíciles de responder.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "difícil",
+        "difíciles"
+      ],
+      "answer": 1,
+      "why": "The adjective describes the questions, so it is plural too.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:difícil",
+        "l:pregunta",
+        "l:responder",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.yt2",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "This essay is hard to write.",
+      "es": "Este ensayo es difícil de escribir.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "The essay is the subject: ensayo is masculine, so este and difícil.",
+      "requires": [
+        "g:ser-identity",
+        "l:difícil",
+        "l:ensayo",
+        "l:escribir",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:demonstratives-basic",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.rp2",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "The question is hard to answer.",
+      "es": "La pregunta es difícil de responder.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "difícil",
+        "difíciles"
+      ],
+      "answer": 0,
+      "why": "The English says \"The question is hard to answer.\", so the gap is difícil.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:difícil",
+        "l:pregunta",
+        "l:responder",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.rp3",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "This word is hard to pronounce.",
+      "es": "Esta palabra es difícil de pronunciar.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "The English says \"This word is hard to pronounce.\", so the gap is difícil.",
+      "requires": [
+        "g:ser-identity",
+        "l:difícil",
+        "l:palabra",
+        "l:pronunciar",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:demonstratives-basic",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.rp4",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "Hernando is hard to convince.",
+      "es": "Hernando es difícil de convencer.",
+      "gap": [
+        12,
+        19
+      ],
+      "options": [
+        "difícil",
+        "difíciles"
+      ],
+      "answer": 0,
+      "why": "The English says \"Hernando is hard to convince.\", so the gap is difícil.",
+      "requires": [
+        "g:ser-identity",
+        "l:convencer",
+        "l:difícil",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.rp5",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "It's a hard story to believe.",
+      "es": "Es una historia difícil de creer.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's a hard story to believe.\", so the gap is difícil.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:creer",
+        "l:difícil",
+        "l:historia",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    },
+    {
+      "id": "x:dificil-de-es-dificil#p.dificil-de-inf.rp6",
+      "node": "x:dificil-de-es-dificil",
+      "side": "p:dificil-de-inf",
+      "rung": 1,
+      "en": "These essays are hard to write.",
+      "es": "Estos ensayos son difíciles de escribir.",
+      "gap": [
+        18,
+        27
+      ],
+      "options": [
+        "difíciles",
+        "difícil"
+      ],
+      "answer": 0,
+      "why": "The English says \"These essays are hard to write.\", so the gap is difíciles.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:demonstratives",
+        "g:ser-identity",
+        "l:difícil",
+        "l:ensayo",
+        "l:escribir",
+        "l:ser",
+        "p:adj-de-inf",
+        "p:dificil-de-inf"
+      ]
+    }
+  ]
+}

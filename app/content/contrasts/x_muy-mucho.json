@@ -1,0 +1,334 @@
+{
+  "node": "x:muy-mucho",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:muy-mucho#rp0",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "Vale cooks very well.",
+      "es": "Vale cocina muy bien.",
+      "gap": [
+        12,
+        20
+      ],
+      "options": [
+        "muy bien",
+        "mucho"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale cooks very well.\", so the gap is muy bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:present-ar",
+        "l:bien",
+        "l:cocinar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:hedge-knowledge"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp1",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "Vale cooks a lot.",
+      "es": "Vale cocina mucho.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "muy bien",
+        "mucho"
+      ],
+      "answer": 1,
+      "why": "The English says \"Vale cooks a lot.\", so the gap is mucho.",
+      "requires": [
+        "g:present-ar",
+        "l:cocinar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#pf0",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "I'm very hungry.",
+      "es": "Tengo mucha hambre.",
+      "gap": [
+        6,
+        11
+      ],
+      "options": [
+        "mucha",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "Almost. Hambre is a thing in Spanish, so very becomes mucha.",
+      "requires": [
+        "c:tengo",
+        "g:yo-irregular",
+        "l:hambre",
+        "l:tener",
+        "p:el-agua-fria",
+        "p:quantifiers-basic",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#pf1",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "It's very expensive.",
+      "es": "Es muy caro.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "Caro is a describing word, and before one of those you use muy.",
+      "requires": [
+        "g:ser-identity",
+        "l:caro",
+        "l:ser",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#yt3",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "It's very cold today.",
+      "es": "Hoy hace mucho frío.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "Cold is a thing in Spanish, hace frío, so very becomes mucho.",
+      "requires": [
+        "g:present-er-ir",
+        "l:frío",
+        "l:hacer",
+        "l:hoy",
+        "p:hace-frio",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#yt4",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "The bakery is very close.",
+      "es": "La panadería queda muy cerca.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "Cerca says where, a how word, so muy.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:cerca",
+        "l:panadería",
+        "l:quedar",
+        "p:cerca-de",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#yt5",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "It costs a lot.",
+      "es": "Cuesta mucho.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "It comes after the verb, so mucho.",
+      "requires": [
+        "g:stem-boot",
+        "l:costar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp2",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "I sleep very little.",
+      "es": "Duermo muy poco.",
+      "gap": [
+        7,
+        10
+      ],
+      "options": [
+        "muy",
+        "mucho"
+      ],
+      "answer": 0,
+      "why": "The English says \"I sleep very little.\", so the gap is muy.",
+      "requires": [
+        "g:stem-boot",
+        "l:dormir",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp4",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "I'm very cold.",
+      "es": "Tengo mucho frío.",
+      "gap": [
+        6,
+        11
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm very cold.\", so the gap is mucho.",
+      "requires": [
+        "c:tengo",
+        "g:yo-irregular",
+        "l:frío",
+        "l:tener",
+        "p:quantifiers-basic",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp5",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "There's very little milk.",
+      "es": "Hay muy poca leche.",
+      "gap": [
+        4,
+        7
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "The English says \"There's very little milk.\", so the gap is muy.",
+      "requires": [
+        "c:hay",
+        "g:hay-vs-esta",
+        "l:leche",
+        "p:poco-un-poco",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp6",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "You talk a lot.",
+      "es": "Hablas mucho.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 0,
+      "why": "The English says \"You talk a lot.\", so the gap is mucho.",
+      "requires": [
+        "g:present-ar",
+        "l:hablar",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#rp7",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "The pharmacy is very far.",
+      "es": "La droguería queda muy lejos.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "The English says \"The pharmacy is very far.\", so the gap is muy.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:droguería",
+        "l:lejos",
+        "l:quedar",
+        "p:cerca-de",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:muy-mucho#g.adjective-agreement.yt3",
+      "node": "x:muy-mucho",
+      "side": "g:quantifiers",
+      "rung": 1,
+      "en": "My boss is very kind.",
+      "es": "Mi jefe es muy amable.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "mucho",
+        "muy"
+      ],
+      "answer": 1,
+      "why": "Amable ends in e, so it's the same for a man or a woman.",
+      "requires": [
+        "c:muy-amable",
+        "g:ser-identity",
+        "l:amable",
+        "l:jefe",
+        "l:ser",
+        "p:possessives-basic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "node": "x:pret-perfecto-latam",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:pret-perfecto-latam#pf0",
+      "node": "x:pret-perfecto-latam",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "I went to the bank today.",
+      "es": "Hoy fui al banco.",
+      "gap": [
+        4,
+        7
+      ],
+      "options": [
+        "fui",
+        "he ido"
+      ],
+      "answer": 0,
+      "why": "Fine in Madrid, but in Colombia something finished takes the plain past, even today.",
+      "requires": [
+        "c:fui",
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:banco",
+        "l:hoy",
+        "l:ir",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:pret-perfecto-latam#pf1",
+      "node": "x:pret-perfecto-latam",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "Have you eaten yet? (to a friend)",
+      "es": "¿Ya comiste?",
+      "gap": [
+        4,
+        11
+      ],
+      "options": [
+        "has comido",
+        "comiste"
+      ],
+      "answer": 1,
+      "why": "People will understand you, but here they ask it with the plain past.",
+      "requires": [
+        "c:ya-comiste",
+        "l:comer"
+      ]
+    }
+  ]
+}

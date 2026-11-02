@@ -1,0 +1,144 @@
+{
+  "node": "x:supongo-vs-dudo",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:supongo-vs-dudo#pf2",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 1,
+      "en": "I suppose Vale is in the kitchen.",
+      "es": "Supongo que Vale está en la cocina.",
+      "gap": [
+        17,
+        21
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 0,
+      "why": "Almost. Do not let que trigger the subjunctive by itself: it is the doubt that does it, and a guess is not a doubt.",
+      "requires": [
+        "c:supongo-que",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:cocina",
+        "l:estar",
+        "l:suponer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#yt0",
+      "node": "x:supongo-vs-dudo",
+      "side": "c:supongo-que",
+      "rung": 2,
+      "en": "I suppose he's arriving today.",
+      "es": "Supongo que llega hoy.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "llegue",
+        "llega"
+      ],
+      "answer": 1,
+      "why": "A guess leans toward yes, so the ordinary form: llega.",
+      "requires": [
+        "c:supongo-que",
+        "g:present-ar",
+        "l:hoy",
+        "l:llegar",
+        "l:suponer"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#yt1",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 2,
+      "en": "I doubt he'll arrive today.",
+      "es": "Dudo que llegue hoy.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "llegue",
+        "llega"
+      ],
+      "answer": 0,
+      "why": "A doubt leans toward no, so the subjunctive: llegue.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:dudar",
+        "l:hoy",
+        "l:llegar"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#rp1",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "I doubt Vale is in the kitchen.",
+      "es": "Dudo que Vale esté en la cocina.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "está",
+        "esté"
+      ],
+      "answer": 1,
+      "why": "The English says \"I doubt Vale is in the kitchen.\", so the gap is esté.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:present-ar",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:cocina",
+        "l:dudar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:supongo-vs-dudo#g.subj-doubt.rp8",
+      "node": "x:supongo-vs-dudo",
+      "side": "g:subj-doubt",
+      "rung": 1,
+      "en": "The café might be open.",
+      "es": "Es posible que el café esté abierto.",
+      "gap": [
+        23,
+        27
+      ],
+      "options": [
+        "esté",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"The café might be open.\", so the gap is esté.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "g:ser-identity",
+        "g:subj-doubt",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:abrir",
+        "l:café",
+        "l:estar",
+        "l:posible",
+        "l:ser"
+      ]
+    }
+  ]
+}

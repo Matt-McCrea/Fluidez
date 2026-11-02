@@ -1,0 +1,121 @@
+{
+  "node": "x:no-recuerdo-que-vs-haber",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:no-recuerdo-que-vs-haber#pf0",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I don't remember saying that.",
+      "es": "No recuerdo haber dicho eso.",
+      "gap": [
+        12,
+        23
+      ],
+      "options": [
+        "haber dicho",
+        "que dije"
+      ],
+      "answer": 0,
+      "why": "Almost. When you are the one who acted, Spanish wants haber plus dicho.",
+      "requires": [
+        "g:infinitive-perfect",
+        "g:stem-boot",
+        "l:decir",
+        "l:haber",
+        "l:recordar",
+        "p:demonstratives-basic",
+        "p:recordar-acordarse",
+        "p:same-subject-haber"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#pf1",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't remember him saying that.",
+      "es": "No recuerdo que él dijera eso.",
+      "gap": [
+        19,
+        25
+      ],
+      "options": [
+        "dijo",
+        "dijera"
+      ],
+      "answer": 1,
+      "why": "Almost. After a negative no recuerdo que, the next verb takes the past -ra form.",
+      "requires": [
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:recordar",
+        "p:demonstratives-basic",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#p.no-recuerdo-que-subj.rp0",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:no-recuerdo-que-subj",
+      "rung": 1,
+      "en": "I don't recall him saying exactly that.",
+      "es": "No recuerdo que dijera eso exactamente.",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "dijera",
+        "dijo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I don't recall him saying exactly that.\", so the gap is dijera.",
+      "requires": [
+        "g:adverbs-mente",
+        "g:imperfect-subj",
+        "g:reported-commands-past",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:exactamente",
+        "l:recordar",
+        "p:demonstratives-basic",
+        "p:no-recuerdo-que-subj",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:no-recuerdo-que-vs-haber#p.no-recuerdo-que-subj.rp1",
+      "node": "x:no-recuerdo-que-vs-haber",
+      "side": "p:same-subject-haber",
+      "rung": 1,
+      "en": "I remember that he said that.",
+      "es": "Recuerdo que dijo eso.",
+      "gap": [
+        13,
+        17
+      ],
+      "options": [
+        "dijera",
+        "dijo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I remember that he said that.\", so the gap is dijo.",
+      "requires": [
+        "g:preterite-irregular-strong",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:decir",
+        "l:recordar",
+        "p:demonstratives-basic",
+        "p:recordar-acordarse"
+      ]
+    }
+  ]
+}

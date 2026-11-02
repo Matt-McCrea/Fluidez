@@ -1,0 +1,355 @@
+{
+  "node": "x:me-suena-vs-recuerdo",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:me-suena-vs-recuerdo#pf0",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "c:me-suena",
+      "rung": 1,
+      "en": "Those names ring a bell.",
+      "es": "Esos nombres me suenan.",
+      "gap": [
+        16,
+        22
+      ],
+      "options": [
+        "suena",
+        "suenan"
+      ],
+      "answer": 1,
+      "why": "Almost. The names are the subject, so the verb is plural.",
+      "requires": [
+        "g:demonstratives",
+        "g:stem-boot",
+        "l:nombre",
+        "l:sonar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#yt2",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "c:me-suena",
+      "rung": 1,
+      "en": "That name rings a bell.",
+      "es": "Ese nombre me suena.",
+      "gap": [
+        14,
+        19
+      ],
+      "options": [
+        "suena",
+        "suenan"
+      ],
+      "answer": 0,
+      "why": "The name is the subject of suena.",
+      "requires": [
+        "c:me-suena",
+        "l:nombre",
+        "l:sonar"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp0",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "c:me-suena",
+      "rung": 1,
+      "en": "Her face rings a bell.",
+      "es": "Su cara me suena.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "suenan",
+        "suena"
+      ],
+      "answer": 1,
+      "why": "The English says \"Her face rings a bell.\", so the gap is suena.",
+      "requires": [
+        "c:me-suena",
+        "l:cara",
+        "l:sonar",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp1",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I remember her face perfectly.",
+      "es": "Me acuerdo perfectamente de su cara.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "acuerdo",
+        "recuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I remember her face perfectly.\", so the gap is acuerdo.",
+      "requires": [
+        "g:adverbs-mente",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:acordarse",
+        "l:cara",
+        "l:perfectamente",
+        "p:possessives-basic",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp2",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "c:me-suena",
+      "rung": 1,
+      "en": "That name rings a bell, but I can't place it.",
+      "es": "Ese nombre me suena, pero no sé de dónde.",
+      "gap": [
+        14,
+        19
+      ],
+      "options": [
+        "suenan",
+        "suena"
+      ],
+      "answer": 1,
+      "why": "The English says \"That name rings a bell, but I can't place it.\", so the gap is suena.",
+      "requires": [
+        "c:me-suena",
+        "c:no-se",
+        "g:indirect-questions",
+        "g:yo-irregular",
+        "l:dónde",
+        "l:nombre",
+        "l:saber",
+        "l:sonar"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp3",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I remember that name: it's the lawyer's.",
+      "es": "Me acuerdo de ese nombre: es el del abogado.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "acuerdo",
+        "recuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I remember that name: it's the lawyer's.\", so the gap is acuerdo.",
+      "requires": [
+        "g:demonstratives",
+        "g:gender-articles",
+        "g:reflexive-routine",
+        "g:ser-identity",
+        "g:stem-boot",
+        "l:abogado",
+        "l:acordarse",
+        "l:nombre",
+        "l:ser",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp4",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "c:me-suena",
+      "rung": 1,
+      "en": "Does the name Altamira ring a bell?",
+      "es": "¿Te suena el nombre Altamira?",
+      "gap": [
+        4,
+        9
+      ],
+      "options": [
+        "suenan",
+        "suena"
+      ],
+      "answer": 1,
+      "why": "The English says \"Does the name Altamira ring a bell?\", so the gap is suena.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-boot",
+        "l:nombre",
+        "l:sonar",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#rp7",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I don't remember anything.",
+      "es": "No me acuerdo de nada.",
+      "gap": [
+        6,
+        13
+      ],
+      "options": [
+        "acuerdo",
+        "recuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I don't remember anything.\", so the gap is acuerdo.",
+      "requires": [
+        "c:gracias-de-nada",
+        "g:negation-words",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:acordarse",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#p.recordar-acordarse.rp0",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I remember his face very well.",
+      "es": "Recuerdo muy bien su cara.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Recuerdo",
+        "Acuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I remember his face very well.\", so the gap is Recuerdo.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:stem-boot",
+        "l:bien",
+        "l:cara",
+        "l:recordar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:possessives-basic",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#p.recordar-acordarse.rp3",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I don't remember his name.",
+      "es": "No me acuerdo de su nombre.",
+      "gap": [
+        6,
+        13
+      ],
+      "options": [
+        "recuerdo",
+        "acuerdo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't remember his name.\", so the gap is acuerdo.",
+      "requires": [
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:acordarse",
+        "l:nombre",
+        "p:possessives-basic",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#p.recordar-acordarse.rp4",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I never remember to close the door.",
+      "es": "Nunca me acuerdo de cerrar la puerta.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "acuerdo",
+        "recuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I never remember to close the door.\", so the gap is acuerdo.",
+      "requires": [
+        "g:gender-articles",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:acordarse",
+        "l:cerrar",
+        "l:puerta",
+        "p:frequency-scale",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#p.recordar-acordarse.rp6",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I remember that Rosa always sang.",
+      "es": "Recuerdo que Rosa siempre cantaba.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Recuerdo",
+        "Acuerdo"
+      ],
+      "answer": 0,
+      "why": "The English says \"I remember that Rosa always sang.\", so the gap is Recuerdo.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:cantar",
+        "l:recordar",
+        "l:siempre",
+        "p:frequency-scale",
+        "p:recordar-acordarse"
+      ]
+    },
+    {
+      "id": "x:me-suena-vs-recuerdo#p.recordar-acordarse.rp7",
+      "node": "x:me-suena-vs-recuerdo",
+      "side": "p:recordar-acordarse",
+      "rung": 1,
+      "en": "I remember that Rosa always sang.",
+      "es": "Me acuerdo de que Rosa siempre cantaba.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "recuerdo",
+        "acuerdo"
+      ],
+      "answer": 1,
+      "why": "The English says \"I remember that Rosa always sang.\", so the gap is acuerdo.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "g:that-clauses",
+        "l:acordarse",
+        "l:cantar",
+        "l:siempre",
+        "p:frequency-scale",
+        "p:recordar-acordarse"
+      ]
+    }
+  ]
+}

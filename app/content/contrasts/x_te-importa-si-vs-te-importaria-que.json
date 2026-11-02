@@ -1,0 +1,128 @@
+{
+  "node": "x:te-importa-si-vs-te-importaria-que",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#pf0",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you mind if I open the window?",
+      "es": "¿Te importa si abro la ventana?",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "abro",
+        "abriera"
+      ],
+      "answer": 0,
+      "why": "After importa si, the verb is an ordinary present, abro.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:importar",
+        "l:ventana",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#pf1",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you mind if I opened the window?",
+      "es": "¿Te importaría que abriera la ventana?",
+      "gap": [
+        19,
+        26
+      ],
+      "options": [
+        "abro",
+        "abriera"
+      ],
+      "answer": 1,
+      "why": "After importaría que, the verb takes the -ra form.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:abrir",
+        "l:importar",
+        "l:ventana",
+        "p:me-encanta-que",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#p.te-importa-si.rp0",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importa-si",
+      "rung": 1,
+      "en": "Do you mind if I open the window? (formal)",
+      "es": "¿Le importa si abro la ventana?",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "abriera",
+        "abro"
+      ],
+      "answer": 1,
+      "why": "The English says \"Do you mind if I open the window? (formal)\", so the gap is abro.",
+      "requires": [
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:indirect-questions",
+        "g:present-ar",
+        "g:present-er-ir",
+        "l:abrir",
+        "l:importar",
+        "l:ventana",
+        "p:te-importa-si"
+      ]
+    },
+    {
+      "id": "x:te-importa-si-vs-te-importaria-que#p.te-importaria-que.rp3",
+      "node": "x:te-importa-si-vs-te-importaria-que",
+      "side": "p:te-importaria-que",
+      "rung": 1,
+      "en": "Would you (formal) mind if I opened the window?",
+      "es": "¿Le importaría que abriera la ventana?",
+      "gap": [
+        19,
+        26
+      ],
+      "options": [
+        "abro",
+        "abriera"
+      ],
+      "answer": 1,
+      "why": "The English says \"Would you (formal) mind if I opened the window?\", so the gap is abriera.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:gustar-full",
+        "g:imperfect-subj",
+        "g:subj-past-triggers",
+        "g:that-clauses",
+        "l:abrir",
+        "l:importar",
+        "l:ventana",
+        "p:me-encanta-que",
+        "p:te-importaria",
+        "p:te-importaria-que"
+      ]
+    }
+  ]
+}

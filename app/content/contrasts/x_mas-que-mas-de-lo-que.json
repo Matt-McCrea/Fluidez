@@ -1,0 +1,314 @@
+{
+  "node": "x:mas-que-mas-de-lo-que",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:mas-que-mas-de-lo-que#pf2",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "It's more expensive than I thought.",
+      "es": "Es más caro de lo que pensaba.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 1,
+      "why": "Before a whole thought, Spanish says de lo que, not que lo que.",
+      "requires": [
+        "g:comparatives",
+        "g:imperfect-habitual",
+        "g:relatives-donde-lo-que",
+        "g:ser-identity",
+        "l:caro",
+        "l:pensar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#rp0",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "He earns more than me.",
+      "es": "Gana más que yo.",
+      "gap": [
+        9,
+        12
+      ],
+      "options": [
+        "de",
+        "que"
+      ],
+      "answer": 1,
+      "why": "Es más caro que el otro.",
+      "requires": [
+        "g:comparatives",
+        "g:present-ar",
+        "l:ganar",
+        "p:mas-de-number"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#rp2",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "It's more expensive than the other one.",
+      "es": "Es más caro que el otro.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "de",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's more expensive than the other one.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:caro",
+        "l:ser",
+        "p:otro-no-article"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#rp5",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "You work more than Vale.",
+      "es": "Trabajas más que Vale.",
+      "gap": [
+        13,
+        16
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "The English says \"You work more than Vale.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:present-ar",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#rp7",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "I have less money than Vale.",
+      "es": "Tengo menos plata que Vale.",
+      "gap": [
+        18,
+        21
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "The English says \"I have less money than Vale.\", so the gap is que.",
+      "requires": [
+        "c:tengo",
+        "g:comparatives",
+        "g:yo-irregular",
+        "l:plata",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.pf0",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "Bogotá is colder than Medellín.",
+      "es": "Bogotá es más fría que Medellín.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "Almost. When you compare two things, than is que.",
+      "requires": [
+        "g:comparatives",
+        "g:ser-identity",
+        "l:frío",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp1",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "My brother is less serious than me.",
+      "es": "Mi hermano es menos serio que yo.",
+      "gap": [
+        26,
+        29
+      ],
+      "options": [
+        "de",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"My brother is less serious than me.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:ser-identity",
+        "l:hermano",
+        "l:ser",
+        "l:serio",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp3",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "This coffee is better than the other one.",
+      "es": "Este café es mejor que el otro.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "de",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"This coffee is better than the other one.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:café",
+        "l:mejor",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:otro-no-article"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp4",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "Tomás is older than Vale.",
+      "es": "Tomás es mayor que Vale.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "The English says \"Tomás is older than Vale.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:ser-identity",
+        "l:mayor",
+        "l:ser",
+        "p:mayor-menor",
+        "p:viejo-antiguo-mayor"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp6",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "You're taller than me.",
+      "es": "Tú eres más alta que yo.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "The English says \"You're taller than me.\", so the gap is que.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:comparatives",
+        "g:ser-identity",
+        "l:alto",
+        "l:ser",
+        "p:es-tiene-lleva"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp7",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "My mum cooks better than me.",
+      "es": "Mi mamá cocina mejor que yo.",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "de",
+        "que"
+      ],
+      "answer": 1,
+      "why": "The English says \"My mum cooks better than me.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:present-ar",
+        "l:cocinar",
+        "l:mamá",
+        "l:mejor",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:mas-que-mas-de-lo-que#g.comparatives.rp8",
+      "node": "x:mas-que-mas-de-lo-que",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "Coffee is less expensive than tea.",
+      "es": "El café es menos caro que el té.",
+      "gap": [
+        22,
+        25
+      ],
+      "options": [
+        "que",
+        "de"
+      ],
+      "answer": 0,
+      "why": "The English says \"Coffee is less expensive than tea.\", so the gap is que.",
+      "requires": [
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:café",
+        "l:caro",
+        "l:ser",
+        "l:té"
+      ]
+    }
+  ]
+}

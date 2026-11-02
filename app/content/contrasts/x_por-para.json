@@ -1,0 +1,416 @@
+{
+  "node": "x:por-para",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:por-para#rp0",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I made it for you to have.",
+      "es": "Lo hice para ti.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "I made it for you. You get it.",
+      "requires": [
+        "g:direct-objects",
+        "g:prep-pronouns",
+        "g:preterite-ser-ir-hacer",
+        "l:hacer",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#rp1",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I did it for your sake.",
+      "es": "Lo hice por ti.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "I did it for you. You're the reason.",
+      "requires": [
+        "g:direct-objects",
+        "g:por-para-1",
+        "g:prep-pronouns",
+        "g:preterite-ser-ir-hacer",
+        "l:hacer"
+      ]
+    },
+    {
+      "id": "x:por-para#rp4",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "The train goes via Pereira.",
+      "es": "El tren va por Pereira.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"The train goes via Pereira.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:por-para-1",
+        "l:ir",
+        "l:tren"
+      ]
+    },
+    {
+      "id": "x:por-para#rp5",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "The train is heading to Pereira.",
+      "es": "El tren va para Pereira.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"The train is heading to Pereira.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:ir",
+        "l:tren",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#pf2",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I need it by Monday.",
+      "es": "Lo necesito para el lunes.",
+      "gap": [
+        12,
+        16
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "By Monday is a deadline, and deadlines take para.",
+      "requires": [
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:lunes",
+        "l:necesitar",
+        "p:days-el-lunes",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#yt0",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 2,
+      "en": "Thanks for the present.",
+      "es": "Gracias por el regalo.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "Thanks looks back at what someone did: gracias por.",
+      "requires": [
+        "g:gender-articles",
+        "l:regalo",
+        "p:gracias-por"
+      ]
+    },
+    {
+      "id": "x:por-para#yt1",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 2,
+      "en": "This present is for you. (to a friend)",
+      "es": "Este regalo es para ti.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The present ends up with you, so para.",
+      "requires": [
+        "g:prep-pronouns",
+        "g:ser-identity",
+        "l:regalo",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#yt2",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I'll do it in the morning.",
+      "es": "Lo hago por la mañana.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "Part of the day is por la mañana; para mañana would be a deadline.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:direct-objects",
+        "g:gender-articles",
+        "g:yo-irregular",
+        "l:hacer",
+        "l:mañana",
+        "p:por-la-manana"
+      ]
+    },
+    {
+      "id": "x:por-para#rp6",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "I stayed in Bogotá because of my grandmother.",
+      "es": "Me quedé en Bogotá por mi abuela.",
+      "gap": [
+        19,
+        22
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"I stayed in Bogotá because of my grandmother.\", so the gap is por.",
+      "requires": [
+        "g:por-para-1",
+        "g:preterite-ar",
+        "g:reflexive-routine",
+        "l:abuela",
+        "l:quedarse",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:por-para#rp7",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I bought flowers for my grandmother.",
+      "es": "Compré flores para mi abuela.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"I bought flowers for my grandmother.\", so the gap is para.",
+      "requires": [
+        "c:compre-trabaje",
+        "g:preterite-ar",
+        "l:abuela",
+        "l:comprar",
+        "l:flor",
+        "p:para-inf",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:por-para#rp8",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "We didn't go out because of the rain.",
+      "es": "No salimos por la lluvia.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"We didn't go out because of the rain.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:present-er-ir",
+        "l:lluvia",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:por-para#p.para-inf.pf2",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I'm studying Spanish to work in Bogotá.",
+      "es": "Estudio español para trabajar en Bogotá.",
+      "gap": [
+        16,
+        20
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "For a goal, Spanish uses para. Por is a different word you'll meet later.",
+      "requires": [
+        "g:present-ar",
+        "l:español",
+        "l:estudiar",
+        "l:trabajar",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:por-para#g.por-para-1.rp1",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "The bus goes via Honda.",
+      "es": "El bus va por Honda.",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "por",
+        "para"
+      ],
+      "answer": 0,
+      "why": "The English says \"The bus goes via Honda.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "g:por-para-1",
+        "l:bus",
+        "l:ir"
+      ]
+    },
+    {
+      "id": "x:por-para#g.por-para-1.rp5",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "The bus is heading to Honda.",
+      "es": "El bus va para Honda.",
+      "gap": [
+        10,
+        14
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"The bus is heading to Honda.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:bus",
+        "l:ir",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#g.por-para-1.yt0",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 2,
+      "en": "We're leaving for Medellín on Friday.",
+      "es": "Salimos para Medellín el viernes.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "Medellín is where you're heading, so para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "l:salir",
+        "l:viernes",
+        "p:days-el-lunes",
+        "p:para-inf"
+      ]
+    },
+    {
+      "id": "x:por-para#g.por-para-1.yt1",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 2,
+      "en": "I paid a hundred thousand pesos for the ticket.",
+      "es": "Pagué cien mil pesos por el tiquete.",
+      "gap": [
+        21,
+        24
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The money is swapped for the ticket: a price takes por.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-spelling-stem",
+        "l:pagar",
+        "l:peso",
+        "l:tiquete",
+        "p:costar-pagar",
+        "p:numbers-un-una"
+      ]
+    }
+  ]
+}

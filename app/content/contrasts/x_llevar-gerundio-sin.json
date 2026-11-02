@@ -1,0 +1,146 @@
+{
+  "node": "x:llevar-gerundio-sin",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:llevar-gerundio-sin#pf0",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "I haven't smoked for three weeks.",
+      "es": "Llevo tres semanas sin fumar.",
+      "gap": [
+        19,
+        28
+      ],
+      "options": [
+        "no fumando",
+        "sin fumar"
+      ],
+      "answer": 1,
+      "why": "Almost. To say you have gone without, Spanish uses sin + infinitive, not no + gerund.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:fumar",
+        "l:llevar",
+        "l:semana",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#pf1",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "I've been studying Spanish for a year.",
+      "es": "Llevo un año estudiando español.",
+      "gap": [
+        13,
+        23
+      ],
+      "options": [
+        "estudiando",
+        "estudiar"
+      ],
+      "answer": 0,
+      "why": "Almost. After llevo + time, the action you have been doing needs the gerund estudiando.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:año",
+        "l:español",
+        "l:estudiar",
+        "l:llevar",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#rp0",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "I haven't studied for a year.",
+      "es": "Llevo un año sin estudiar.",
+      "gap": [
+        17,
+        25
+      ],
+      "options": [
+        "estudiando",
+        "estudiar"
+      ],
+      "answer": 1,
+      "why": "The English says \"I haven't studied for a year.\", so the gap is estudiar.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:año",
+        "l:estudiar",
+        "l:llevar",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#rp1",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-tiempo-gerundio",
+      "rung": 1,
+      "en": "I've been studying for a year.",
+      "es": "Llevo un año estudiando.",
+      "gap": [
+        13,
+        23
+      ],
+      "options": [
+        "estudiando",
+        "estudiar"
+      ],
+      "answer": 0,
+      "why": "The English says \"I've been studying for a year.\", so the gap is estudiando.",
+      "requires": [
+        "g:gender-articles",
+        "g:hace-que-desde",
+        "g:present-ar",
+        "l:año",
+        "l:estudiar",
+        "l:llevar",
+        "p:llevar-tiempo-gerundio"
+      ]
+    },
+    {
+      "id": "x:llevar-gerundio-sin#p.llevar-sin-inf.pf1",
+      "node": "x:llevar-gerundio-sin",
+      "side": "p:llevar-sin-inf",
+      "rung": 1,
+      "en": "I haven't smoked for three weeks.",
+      "es": "Llevo tres semanas sin fumar.",
+      "gap": [
+        23,
+        28
+      ],
+      "options": [
+        "fumando",
+        "fumar"
+      ],
+      "answer": 1,
+      "why": "English says \"without smoking\", but after sin Spanish always uses the infinitive.",
+      "requires": [
+        "g:hace-que-desde",
+        "g:prep-infinitive",
+        "g:present-ar",
+        "l:fumar",
+        "l:llevar",
+        "l:semana",
+        "p:llevar-sin-inf",
+        "p:llevar-tiempo-gerundio"
+      ]
+    }
+  ]
+}

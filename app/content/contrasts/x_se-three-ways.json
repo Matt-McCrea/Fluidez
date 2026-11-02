@@ -1,0 +1,31 @@
+{
+  "node": "x:se-three-ways",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:se-three-ways#yt1",
+      "node": "x:se-three-ways",
+      "side": "g:reflexive-routine",
+      "rung": 2,
+      "en": "Vale gets up at four.",
+      "es": "Vale se levanta a las cuatro.",
+      "gap": [
+        5,
+        15
+      ],
+      "options": [
+        "se levanta",
+        "levanta"
+      ],
+      "answer": 0,
+      "why": "One person getting herself up: the routine se.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:levantarse",
+        "p:telling-time"
+      ]
+    }
+  ]
+}

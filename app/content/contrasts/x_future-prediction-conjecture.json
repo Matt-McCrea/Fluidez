@@ -1,0 +1,109 @@
+{
+  "node": "x:future-prediction-conjecture",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:future-prediction-conjecture#yt0",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Vale isn't answering; you guess she's probably in the kitchen.",
+      "es": "Estará en la cocina.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Está",
+        "Estará"
+      ],
+      "answer": 1,
+      "why": "You don't know, you're guessing about now: estará.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "g:gender-articles",
+        "l:cocina",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#rp8",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Who knows where Simón is? Mariana probably knows something.",
+      "es": "¿Quién sabe dónde está Simón?\nMariana sabrá algo.",
+      "gap": [
+        18,
+        22
+      ],
+      "options": [
+        "está",
+        "estará"
+      ],
+      "answer": 0,
+      "why": "The English says \"Who knows where Simón is? Mariana probably knows something.\", so the gap is está.",
+      "requires": [
+        "c:donde-esta",
+        "c:quien-sabe",
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "l:dónde",
+        "l:estar",
+        "l:quién",
+        "l:saber",
+        "p:indefinites-basic"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#g.future-conjecture.rp0",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "Simón is nearby.",
+      "es": "Simón está cerca.",
+      "gap": [
+        6,
+        10
+      ],
+      "options": [
+        "estará",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Simón is nearby.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "l:cerca",
+        "l:estar",
+        "p:cerca-de"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#g.future-conjecture.rp1",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "Simón is probably nearby.",
+      "es": "Simón estará cerca.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "estará",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Simón is probably nearby.\", so the gap is estará.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "l:cerca",
+        "l:estar",
+        "p:cerca-de"
+      ]
+    }
+  ]
+}

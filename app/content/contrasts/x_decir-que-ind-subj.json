@@ -1,0 +1,95 @@
+{
+  "node": "x:decir-que-ind-subj",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:decir-que-ind-subj#pf0",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-requests",
+      "rung": 1,
+      "en": "My mom says I should work less.",
+      "es": "Mi mamá dice que trabaje menos.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "trabaje",
+        "trabajo"
+      ],
+      "answer": 0,
+      "why": "Almost. An order takes the subjunctive, trabaje, not trabajo.",
+      "requires": [
+        "c:compre-trabaje",
+        "g:reported-requests",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mamá",
+        "l:trabajar",
+        "p:possessives-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#rp4",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "My mom says I work a lot.",
+      "es": "Mi mamá dice que trabajo mucho.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "trabajo",
+        "trabaje"
+      ],
+      "answer": 0,
+      "why": "The English says \"My mom says I work a lot.\", so the gap is trabajo.",
+      "requires": [
+        "g:present-ar",
+        "g:stem-e-i",
+        "g:that-clauses",
+        "l:decir",
+        "l:mamá",
+        "l:trabajar",
+        "p:possessives-basic",
+        "p:quantifiers-basic"
+      ]
+    },
+    {
+      "id": "x:decir-que-ind-subj#g.reported-requests.rp8",
+      "node": "x:decir-que-ind-subj",
+      "side": "g:reported-past-basic",
+      "rung": 1,
+      "en": "My boss asks me to work on Saturday.",
+      "es": "Mi jefe me pide que trabaje el sábado.",
+      "gap": [
+        20,
+        27
+      ],
+      "options": [
+        "trabajo",
+        "trabaje"
+      ],
+      "answer": 1,
+      "why": "The English says \"My boss asks me to work on Saturday.\", so the gap is trabaje.",
+      "requires": [
+        "c:compre-trabaje",
+        "g:gender-articles",
+        "g:stem-e-i",
+        "g:subj-influence",
+        "g:that-clauses",
+        "l:jefe",
+        "l:pedir",
+        "l:sábado",
+        "l:trabajar",
+        "p:days-el-lunes",
+        "p:me-te-nos-objects",
+        "p:possessives-basic",
+        "p:preguntar-pedir"
+      ]
+    }
+  ]
+}

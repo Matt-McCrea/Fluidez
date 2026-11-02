@@ -1,0 +1,220 @@
+{
+  "node": "x:es-en-esta-en",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:es-en-esta-en#yt0",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The party is in the hall.",
+      "es": "La fiesta es en el salón.",
+      "gap": [
+        10,
+        12
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "A party is an event, so it says where it happens with es en.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:fiesta",
+        "l:salón",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#yt1",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The hall is on the second floor.",
+      "es": "El salón está en el segundo piso.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "A room is a place, so it says where it sits with está en.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:piso",
+        "l:salón",
+        "p:ordinal-floor",
+        "p:ordinals-primer-tercer"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#rp2",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "Where is the meeting taking place?",
+      "es": "¿Dónde es la reunión?",
+      "gap": [
+        7,
+        9
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Where is the meeting taking place?\", so the gap is es.",
+      "requires": [
+        "g:gender-articles",
+        "g:questions",
+        "g:ser-identity",
+        "l:dónde",
+        "l:reunión",
+        "l:ser",
+        "p:event-ser-en",
+        "p:question-word-order",
+        "p:ser-event-location"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#rp3",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Where is the café?",
+      "es": "¿Dónde está el café?",
+      "gap": [
+        7,
+        11
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Where is the café?\", so the gap is está.",
+      "requires": [
+        "c:donde-esta",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:dónde",
+        "l:estar",
+        "p:question-word-order"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#rp4",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The protest is tomorrow in the plaza.",
+      "es": "La protesta es mañana en la plaza.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"The protest is tomorrow in the plaza.\", so the gap is es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:mañana",
+        "l:plaza",
+        "l:protesta",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#rp6",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Mariana's office is downtown.",
+      "es": "La oficina de Mariana está en el centro.",
+      "gap": [
+        22,
+        26
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana's office is downtown.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:centro",
+        "l:estar",
+        "l:oficina"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#p.ser-event-location.pf2",
+      "node": "x:es-en-esta-en",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "The café is in La Candelaria.",
+      "es": "El café está en La Candelaria.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "A place or thing takes estar for its location.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:es-en-esta-en#p.ser-event-location.rp0",
+      "node": "x:es-en-esta-en",
+      "side": "p:ser-event-location",
+      "rung": 1,
+      "en": "The meeting is in room 3.",
+      "es": "La reunión es en la sala 3.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "está",
+        "es"
+      ],
+      "answer": 1,
+      "why": "The English says \"The meeting is in room 3.\", so the gap is es.",
+      "requires": [
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:reunión",
+        "l:sala",
+        "l:ser",
+        "p:event-ser-en",
+        "p:ser-event-location",
+        "p:tener-lugar"
+      ]
+    }
+  ]
+}

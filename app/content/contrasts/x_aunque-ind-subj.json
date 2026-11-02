@@ -1,0 +1,112 @@
+{
+  "node": "x:aunque-ind-subj",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:aunque-ind-subj#rp5",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "You might be right, and I won't sign.",
+      "es": "Aunque tengas razón, no firmo.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "tienes",
+        "tengas"
+      ],
+      "answer": 1,
+      "why": "The English says \"You might be right, and I won't sign.\", so the gap is tengas.",
+      "requires": [
+        "g:present-ar",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "l:firmar",
+        "l:razón",
+        "l:tener",
+        "p:tener-razon"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#yt1",
+      "node": "x:aunque-ind-subj",
+      "side": "g:subj-concessive",
+      "rung": 1,
+      "en": "Even if it rains tomorrow, I'll go out.",
+      "es": "Aunque llueva, saldré mañana.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "llueva",
+        "llueve"
+      ],
+      "answer": 0,
+      "why": "Tomorrow's rain is not a fact yet, so llueva.",
+      "requires": [
+        "g:future-promises",
+        "g:subj-concessive",
+        "g:subj-wanting",
+        "l:llover",
+        "l:mañana",
+        "l:salir"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#yt2",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "I admit it, you are right, but I'm still not signing.",
+      "es": "Aunque tienes razón, no firmo.",
+      "gap": [
+        7,
+        13
+      ],
+      "options": [
+        "tengas",
+        "tienes"
+      ],
+      "answer": 1,
+      "why": "You've accepted that she or he is right, so it's a fact: tienes.",
+      "requires": [
+        "c:tienes",
+        "g:aunque-indicative",
+        "g:present-ar",
+        "g:stem-boot",
+        "l:firmar",
+        "l:razón",
+        "l:tener",
+        "p:tener-razon"
+      ]
+    },
+    {
+      "id": "x:aunque-ind-subj#g.aunque-indicative.rp0",
+      "node": "x:aunque-ind-subj",
+      "side": "g:aunque-indicative",
+      "rung": 1,
+      "en": "We go out even though it's raining.",
+      "es": "Salimos aunque llueve.",
+      "gap": [
+        15,
+        21
+      ],
+      "options": [
+        "llueva",
+        "llueve"
+      ],
+      "answer": 1,
+      "why": "The English says \"We go out even though it's raining.\", so the gap is llueve.",
+      "requires": [
+        "g:aunque-indicative",
+        "g:present-er-ir",
+        "g:stem-boot",
+        "l:llover",
+        "l:salir"
+      ]
+    }
+  ]
+}

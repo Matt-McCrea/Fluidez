@@ -1,0 +1,175 @@
+{
+  "node": "x:ing-infinitive-gerund",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:ing-infinitive-gerund#pf0",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I like cooking.",
+      "es": "Me gusta cocinar.",
+      "gap": [
+        9,
+        16
+      ],
+      "options": [
+        "cocinar",
+        "cocinando"
+      ],
+      "answer": 0,
+      "why": "Almost. After gusta, Spanish names the activity with the dictionary form.",
+      "requires": [
+        "c:me-gusta",
+        "g:gustar-basic",
+        "l:cocinar",
+        "l:gustar"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#pf1",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Speaking Spanish is hard.",
+      "es": "Hablar español es difícil.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Hablando",
+        "Hablar"
+      ],
+      "answer": 1,
+      "why": "When -ing is the subject, Spanish uses hablar.",
+      "requires": [
+        "g:ser-identity",
+        "g:verb-infinitive",
+        "l:difícil",
+        "l:español",
+        "l:hablar",
+        "l:ser",
+        "p:es-adj-inf"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#pf2",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Thanks for coming.",
+      "es": "Gracias por venir.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "venir",
+        "viniendo"
+      ],
+      "answer": 0,
+      "why": "After por, de and friends, always the dictionary form.",
+      "requires": [
+        "l:venir",
+        "p:gracias-por"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#pf3",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "I'm cooking.",
+      "es": "Estoy cocinando.",
+      "gap": [
+        6,
+        15
+      ],
+      "options": [
+        "cocinar",
+        "cocinando"
+      ],
+      "answer": 1,
+      "why": "After estoy, the verb takes -ando or -iendo.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "l:cocinar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#yt0",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "I love reading.",
+      "es": "Me encanta leer.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "leyendo",
+        "leer"
+      ],
+      "answer": 1,
+      "why": "After encanta, reading is the name of the activity: the dictionary form.",
+      "requires": [
+        "c:me-encanta",
+        "g:gustar-full",
+        "l:encantar",
+        "l:leer"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#yt1",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:estar-gerund",
+      "rung": 1,
+      "en": "Vale is cooking.",
+      "es": "Vale está cocinando.",
+      "gap": [
+        10,
+        19
+      ],
+      "options": [
+        "cocinando",
+        "cocinar"
+      ],
+      "answer": 0,
+      "why": "Está means she's in the middle of it, so cocinando.",
+      "requires": [
+        "g:estar-gerund",
+        "g:estar-location-states",
+        "l:cocinar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:ing-infinitive-gerund#g.verb-infinitive.rp0",
+      "node": "x:ing-infinitive-gerund",
+      "side": "g:verb-infinitive",
+      "rung": 1,
+      "en": "Vale can cook.",
+      "es": "Vale puede cocinar.",
+      "gap": [
+        11,
+        18
+      ],
+      "options": [
+        "cocinar",
+        "cocinando"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale can cook.\", so the gap is cocinar.",
+      "requires": [
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:cocinar",
+        "l:poder"
+      ]
+    }
+  ]
+}

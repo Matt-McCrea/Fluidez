@@ -1,0 +1,109 @@
+{
+  "node": "x:permitir-inf-que",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:permitir-inf-que#pf0",
+      "node": "x:permitir-inf-que",
+      "side": "g:subj-influence",
+      "rung": 1,
+      "en": "I recommend that you rest. (formal)",
+      "es": "Le recomiendo que descanse.",
+      "gap": [
+        18,
+        26
+      ],
+      "options": [
+        "descanse",
+        "descansar"
+      ],
+      "answer": 0,
+      "why": "Almost. After que the verb changes ending; it does not stay as the infinitive.",
+      "requires": [
+        "g:indirect-objects",
+        "g:stem-boot",
+        "g:subj-influence",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "l:descansar",
+        "l:recomendar"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#pf1",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I want you to rest. (to a friend)",
+      "es": "Quiero que descanses.",
+      "gap": [
+        11,
+        20
+      ],
+      "options": [
+        "descansar",
+        "descanses"
+      ],
+      "answer": 1,
+      "why": "With que, the verb has to show who rests: descanses for \"you\".",
+      "requires": [
+        "c:que-descanses",
+        "c:quiero",
+        "g:stem-boot",
+        "g:subj-wanting",
+        "l:descansar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#pf2",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I want to rest.",
+      "es": "Quiero descansar.",
+      "gap": [
+        7,
+        16
+      ],
+      "options": [
+        "descansar",
+        "que descanso"
+      ],
+      "answer": 0,
+      "why": "If you are the one resting, just use the infinitive: quiero descansar.",
+      "requires": [
+        "c:quiero",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:descansar",
+        "l:querer"
+      ]
+    },
+    {
+      "id": "x:permitir-inf-que#p.permitir-inf.rp0",
+      "node": "x:permitir-inf-que",
+      "side": "p:permitir-inf",
+      "rung": 1,
+      "en": "I recommend that you rest. (formal)",
+      "es": "Le recomiendo descansar.",
+      "gap": [
+        14,
+        23
+      ],
+      "options": [
+        "descansar",
+        "descanse"
+      ],
+      "answer": 0,
+      "why": "The English says \"I recommend that you rest. (formal)\", so the gap is descansar.",
+      "requires": [
+        "g:indirect-objects",
+        "g:stem-boot",
+        "l:descansar",
+        "l:recomendar",
+        "p:permitir-inf"
+      ]
+    }
+  ]
+}

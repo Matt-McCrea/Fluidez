@@ -1,0 +1,58 @@
+{
+  "node": "x:perfecto-preterito",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:perfecto-preterito#pf0",
+      "node": "x:perfecto-preterito",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "I went to Cartagena last year.",
+      "es": "Fui a Cartagena el año pasado.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "He ido",
+        "Fui"
+      ],
+      "answer": 1,
+      "why": "Almost. A finished time like el año pasado takes the plain past, just as English drops I've.",
+      "requires": [
+        "c:fui",
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:año",
+        "l:ir",
+        "l:pasado",
+        "p:time-pasado-que-viene"
+      ]
+    },
+    {
+      "id": "x:perfecto-preterito#pf1",
+      "node": "x:perfecto-preterito",
+      "side": "g:preterite-ser-ir-hacer",
+      "rung": 1,
+      "en": "When did you go? (to a friend)",
+      "es": "¿Cuándo fuiste?",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "fuiste",
+        "has ido"
+      ],
+      "answer": 0,
+      "why": "Asking when is about one trip, so use the plain past.",
+      "requires": [
+        "g:preterite-ser-ir-hacer",
+        "g:questions",
+        "g:ser-identity",
+        "l:cuándo",
+        "l:ser"
+      ]
+    }
+  ]
+}

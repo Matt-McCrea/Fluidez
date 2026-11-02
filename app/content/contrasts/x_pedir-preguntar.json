@@ -1,0 +1,160 @@
+{
+  "node": "x:pedir-preguntar",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:pedir-preguntar#pf1",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I asked where the bathroom is.",
+      "es": "Pregunté dónde está el baño.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Pregunté",
+        "Pedí"
+      ],
+      "answer": 0,
+      "why": "You wanted information, not a thing: preguntar.",
+      "requires": [
+        "c:donde-esta",
+        "g:estar-location-states",
+        "g:preterite-ar",
+        "l:baño",
+        "l:dónde",
+        "l:estar",
+        "l:preguntar",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#yt0",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 2,
+      "en": "I asked for the bill.",
+      "es": "Pedí la cuenta.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Pedí",
+        "Pregunté"
+      ],
+      "answer": 0,
+      "why": "The bill is a thing you want, so pedir.",
+      "requires": [
+        "c:la-cuenta",
+        "g:preterite-er-ir",
+        "l:cuenta",
+        "l:pedir",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#rp0",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I ordered a juice.",
+      "es": "Pedí un jugo.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Pregunté",
+        "Pedí"
+      ],
+      "answer": 1,
+      "why": "The English says \"I ordered a juice.\", so the gap is Pedí.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:jugo",
+        "l:pedir",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#rp1",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I asked the price.",
+      "es": "Pregunté el precio.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Pregunté",
+        "Pedí"
+      ],
+      "answer": 0,
+      "why": "The English says \"I asked the price.\", so the gap is Pregunté.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:precio",
+        "l:preguntar",
+        "p:preguntar-pedir"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#rp7",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I always order the ajiaco.",
+      "es": "Siempre pido el ajiaco.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "pido",
+        "pregunto"
+      ],
+      "answer": 0,
+      "why": "The English says \"I always order the ajiaco.\", so the gap is pido.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "l:ajiaco",
+        "l:pedir",
+        "l:siempre",
+        "p:frequency-scale"
+      ]
+    },
+    {
+      "id": "x:pedir-preguntar#g.stem-e-i.rp0",
+      "node": "x:pedir-preguntar",
+      "side": "g:stem-e-i",
+      "rung": 1,
+      "en": "I order a mango juice.",
+      "es": "Pido un jugo de mango.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Pregunto",
+        "Pido"
+      ],
+      "answer": 1,
+      "why": "The English says \"I order a mango juice.\", so the gap is Pido.",
+      "requires": [
+        "g:gender-articles",
+        "g:stem-e-i",
+        "l:jugo",
+        "l:mango",
+        "l:pedir"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,568 @@
+{
+  "node": "x:tan-tanto",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:tan-tanto#rp0",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "Mariana writes as well as she speaks.",
+      "es": "Mariana escribe tan bien como habla.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "tan bien",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"Mariana writes as well as she speaks.\", so the gap is tan bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:comparatives",
+        "g:present-ar",
+        "g:present-er-ir",
+        "l:bien",
+        "l:escribir",
+        "l:hablar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp1",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Mariana writes as much as she speaks.",
+      "es": "Mariana escribe tanto como habla.",
+      "gap": [
+        16,
+        21
+      ],
+      "options": [
+        "tan bien",
+        "tanto"
+      ],
+      "answer": 1,
+      "why": "The English says \"Mariana writes as much as she speaks.\", so the gap is tanto.",
+      "requires": [
+        "g:present-ar",
+        "g:present-er-ir",
+        "g:tanto-como",
+        "l:escribir",
+        "l:hablar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#pf2",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "He works as much as I do.",
+      "es": "Trabaja tanto como yo.",
+      "gap": [
+        8,
+        13
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "Tan always needs a describing word after it. After a verb, use tanto.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#pf3",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "There isn't as much noise as downtown.",
+      "es": "No hay tanto ruido como en el centro.",
+      "gap": [
+        7,
+        12
+      ],
+      "options": [
+        "tantas",
+        "tanto"
+      ],
+      "answer": 1,
+      "why": "Tanto matches the thing, and ruido is masculine and singular.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "g:tanto-como",
+        "l:centro",
+        "l:ruido"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#yt4",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "The neighbourhood is as quiet as always.",
+      "es": "El barrio está tan tranquilo como siempre.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 1,
+      "why": "Tranquilo is a describing word, so tan, and it doesn't change.",
+      "requires": [
+        "c:tranquilo",
+        "g:comparatives",
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:barrio",
+        "l:estar",
+        "l:siempre",
+        "l:tranquilo",
+        "p:frequency-scale"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp2",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "That neighbourhood isn't as dangerous as you think.",
+      "es": "Ese barrio no es tan peligroso como piensas.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "tan",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"That neighbourhood isn't as dangerous as you think.\", so the gap is tan.",
+      "requires": [
+        "g:comparatives",
+        "g:demonstratives",
+        "g:ser-identity",
+        "g:stem-boot",
+        "l:barrio",
+        "l:peligroso",
+        "l:pensar",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp3",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Tomás doesn't cook as much as Vale.",
+      "es": "Tomás no cocina tanto como Vale.",
+      "gap": [
+        16,
+        21
+      ],
+      "options": [
+        "tan",
+        "tanto"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás doesn't cook as much as Vale.\", so the gap is tanto.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:cocinar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp4",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "There are as many shops as before.",
+      "es": "Hay tantas tiendas como antes.",
+      "gap": [
+        4,
+        10
+      ],
+      "options": [
+        "tantas",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"There are as many shops as before.\", so the gap is tantas.",
+      "requires": [
+        "c:hay",
+        "g:hay-vs-esta",
+        "g:tanto-como",
+        "l:antes",
+        "l:tienda"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp5",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "The living room is as bright as the kitchen.",
+      "es": "La sala es tan luminosa como la cocina.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 1,
+      "why": "The English says \"The living room is as bright as the kitchen.\", so the gap is tan.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:cocina",
+        "l:luminoso",
+        "l:sala",
+        "l:ser",
+        "p:tiene-mucha-luz"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp6",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "I'm not that hungry.",
+      "es": "No tengo tanta hambre.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "tanta",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "The English says \"I'm not that hungry.\", so the gap is tanta.",
+      "requires": [
+        "c:tengo",
+        "g:yo-irregular",
+        "l:hambre",
+        "l:tener",
+        "p:el-agua-fria",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp7",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "I don't sleep as much as you do.",
+      "es": "No duermo tanto como tú.",
+      "gap": [
+        10,
+        15
+      ],
+      "options": [
+        "tan",
+        "tanto"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't sleep as much as you do.\", so the gap is tanto.",
+      "requires": [
+        "g:stem-boot",
+        "g:tanto-como",
+        "l:dormir"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#rp8",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "The view is as pretty as in the photos.",
+      "es": "La vista es tan bonita como en las fotos.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "tan",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"The view is as pretty as in the photos.\", so the gap is tan.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:bonito",
+        "l:foto",
+        "l:ser",
+        "l:vista"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.comparatives.rp2",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "It's not as expensive as they say.",
+      "es": "No es tan caro como dicen.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 1,
+      "why": "The English says \"It's not as expensive as they say.\", so the gap is tan.",
+      "requires": [
+        "g:comparatives",
+        "g:ser-identity",
+        "g:stem-e-i",
+        "l:caro",
+        "l:decir",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.comparatives.rp5",
+      "node": "x:tan-tanto",
+      "side": "g:comparatives",
+      "rung": 1,
+      "en": "The arepas are as good as before.",
+      "es": "Las arepas son tan ricas como antes.",
+      "gap": [
+        15,
+        18
+      ],
+      "options": [
+        "tan",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"The arepas are as good as before.\", so the gap is tan.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:comparatives",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:antes",
+        "l:arepa",
+        "l:rico",
+        "l:ser"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.yt5",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Nobody cooks as much as Vale.",
+      "es": "Nadie cocina tanto como Vale.",
+      "gap": [
+        13,
+        18
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "It comes after the verb cocina, so plain tanto como.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:cocinar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp0",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "I work as much as you do.",
+      "es": "Trabajo tanto como tú.",
+      "gap": [
+        8,
+        13
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "The English says \"I work as much as you do.\", so the gap is tanto.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:trabajar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp2",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Vale doesn't sleep as much as Tomás.",
+      "es": "Vale no duerme tanto como Tomás.",
+      "gap": [
+        15,
+        20
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale doesn't sleep as much as Tomás.\", so the gap is tanto.",
+      "requires": [
+        "g:stem-boot",
+        "g:tanto-como",
+        "l:dormir"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp3",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "There are as many bakeries here as in Medellín.",
+      "es": "Aquí hay tantas panaderías como en Medellín.",
+      "gap": [
+        9,
+        15
+      ],
+      "options": [
+        "tanto",
+        "tantas"
+      ],
+      "answer": 1,
+      "why": "The English says \"There are as many bakeries here as in Medellín.\", so the gap is tantas.",
+      "requires": [
+        "c:hay",
+        "g:hay-vs-esta",
+        "g:tanto-como",
+        "l:aquí",
+        "l:panadería",
+        "p:aqui-ahi-alla"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp4",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "I don't have as much time as before.",
+      "es": "No tengo tanto tiempo como antes.",
+      "gap": [
+        9,
+        14
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "The English says \"I don't have as much time as before.\", so the gap is tanto.",
+      "requires": [
+        "c:tengo",
+        "g:tanto-como",
+        "g:yo-irregular",
+        "l:antes",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp6",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Simón talks as much as Hernando.",
+      "es": "Simón habla tanto como Hernando.",
+      "gap": [
+        12,
+        17
+      ],
+      "options": [
+        "tanto",
+        "tan"
+      ],
+      "answer": 0,
+      "why": "The English says \"Simón talks as much as Hernando.\", so the gap is tanto.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:hablar"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp7",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "We don't earn as much money as before.",
+      "es": "No ganamos tanta plata como antes.",
+      "gap": [
+        11,
+        16
+      ],
+      "options": [
+        "tan",
+        "tanta"
+      ],
+      "answer": 1,
+      "why": "The English says \"We don't earn as much money as before.\", so the gap is tanta.",
+      "requires": [
+        "g:present-ar",
+        "g:tanto-como",
+        "l:antes",
+        "l:ganar",
+        "l:plata"
+      ]
+    },
+    {
+      "id": "x:tan-tanto#g.tanto-como.rp8",
+      "node": "x:tan-tanto",
+      "side": "g:tanto-como",
+      "rung": 1,
+      "en": "Do you have as many things as I do?",
+      "es": "¿Tienes tantas cosas como yo?",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "tantas",
+        "tanto"
+      ],
+      "answer": 0,
+      "why": "The English says \"Do you have as many things as I do?\", so the gap is tantas.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:tanto-como",
+        "l:cosa",
+        "l:tener"
+      ]
+    }
+  ]
+}

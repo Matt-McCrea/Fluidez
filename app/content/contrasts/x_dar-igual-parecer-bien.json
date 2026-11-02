@@ -1,0 +1,498 @@
+{
+  "node": "x:dar-igual-parecer-bien",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:dar-igual-parecer-bien#rp0",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "I don't mind.",
+      "es": "Me da igual.",
+      "gap": [
+        3,
+        11
+      ],
+      "options": [
+        "da igual",
+        "parece bien"
+      ],
+      "answer": 0,
+      "why": "means you have no preference. This one or that one, either is fine. It answers \"this or that?\"",
+      "requires": [
+        "c:me-da-igual",
+        "c:me-regala",
+        "l:dar",
+        "l:igual"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#pf1",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "Saturday is fine by me.",
+      "es": "Me parece bien el sábado.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 1,
+      "why": "Almost. Da goes with igual. To say a plan works for you, the verb is parece: me parece bien.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:me-parece-bien",
+        "g:gender-articles",
+        "l:bien",
+        "l:parecer",
+        "l:sábado",
+        "p:days-el-lunes"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#rp5",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "Is it all the same to you whether I invite Vale?",
+      "es": "¿Te da igual si invito a Vale?",
+      "gap": [
+        4,
+        6
+      ],
+      "options": [
+        "parece",
+        "da"
+      ],
+      "answer": 1,
+      "why": "The English says \"Is it all the same to you whether I invite Vale?\", so the gap is da.",
+      "requires": [
+        "c:igual",
+        "g:present-ar",
+        "g:si-present",
+        "l:dar",
+        "l:igual",
+        "l:invitar",
+        "p:dar-igual",
+        "p:me-te-nos-objects",
+        "p:personal-a"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#rp6",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "We don't mind the plan.",
+      "es": "Nos da igual el plan.",
+      "gap": [
+        4,
+        6
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 0,
+      "why": "The English says \"We don't mind the plan.\", so the gap is da.",
+      "requires": [
+        "c:igual",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:dar",
+        "l:igual",
+        "l:plan",
+        "p:dar-igual",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#rp7",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "The plan seems fine to them.",
+      "es": "Les parece bien el plan.",
+      "gap": [
+        4,
+        10
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 1,
+      "why": "The English says \"The plan seems fine to them.\", so the gap is parece.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:bien",
+        "l:parecer",
+        "l:plan",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:me-parece-bien-que",
+        "p:te-parece-bien-que"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#p.dar-igual.pf2",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "That's fine by me.",
+      "es": "Me parece bien.",
+      "gap": [
+        3,
+        14
+      ],
+      "options": [
+        "parece bien",
+        "da igual"
+      ],
+      "answer": 0,
+      "why": "Almost, if you meant yes to a plan. Me da igual says you have no opinion, and it can sound cold. Me parece bien says you like the idea.",
+      "requires": [
+        "c:bien-y-tu",
+        "c:me-parece-bien",
+        "l:bien",
+        "l:parecer"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#p.dar-igual.yt1",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 2,
+      "en": "Hernando doesn't mind the price.",
+      "es": "A Hernando le da igual el precio.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "le",
+        "me"
+      ],
+      "answer": 0,
+      "why": "A third person (one man) takes le.",
+      "requires": [
+        "c:igual",
+        "g:gender-articles",
+        "g:indirect-objects",
+        "g:present-ar",
+        "l:dar",
+        "l:igual",
+        "l:precio",
+        "p:dar-igual"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#p.dar-igual.rp2",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "Do you mind if we close early? (to a friend)",
+      "es": "¿Te da igual si cerramos temprano?",
+      "gap": [
+        4,
+        6
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 0,
+      "why": "The English says \"Do you mind if we close early? (to a friend)\", so the gap is da.",
+      "requires": [
+        "c:igual",
+        "g:present-ar",
+        "g:si-present",
+        "l:cerrar",
+        "l:dar",
+        "l:igual",
+        "l:temprano",
+        "p:dar-igual",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#p.dar-igual.rp4",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "The price doesn't matter to us.",
+      "es": "Nos da igual el precio.",
+      "gap": [
+        4,
+        6
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 0,
+      "why": "The English says \"The price doesn't matter to us.\", so the gap is da.",
+      "requires": [
+        "c:igual",
+        "g:gender-articles",
+        "g:present-ar",
+        "l:dar",
+        "l:igual",
+        "l:precio",
+        "p:dar-igual",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#p.dar-igual.rp5",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "It doesn't matter to them.",
+      "es": "A ellos les da igual.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "parece",
+        "da"
+      ],
+      "answer": 1,
+      "why": "The English says \"It doesn't matter to them.\", so the gap is da.",
+      "requires": [
+        "c:igual",
+        "g:indirect-objects",
+        "g:present-ar",
+        "l:dar",
+        "l:igual",
+        "p:dar-igual"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.yt2",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "What do you think of the plan?",
+      "es": "¿Qué te parece el plan?",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 1,
+      "why": "A friend takes te, and one plan takes parece.",
+      "requires": [
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "g:questions",
+        "l:parecer",
+        "l:plan",
+        "l:qué",
+        "p:te-parece-bien-que"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp1",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "What do you think? (to a friend)",
+      "es": "¿Qué te parece?",
+      "gap": [
+        8,
+        14
+      ],
+      "options": [
+        "da",
+        "parece"
+      ],
+      "answer": 1,
+      "why": "The English says \"What do you think? (to a friend)\", so the gap is parece.",
+      "requires": [
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "g:questions",
+        "l:parecer",
+        "l:qué",
+        "p:te-parece-bien-que"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp2",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "They seem expensive to me.",
+      "es": "Me parecen caros.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Me",
+        "Le"
+      ],
+      "answer": 0,
+      "why": "The English says \"They seem expensive to me.\", so the gap is Me.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:caro",
+        "l:parecer"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp4",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "The shirts look good on me.",
+      "es": "Las camisas me quedan bien.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "me",
+        "le"
+      ],
+      "answer": 0,
+      "why": "The English says \"The shirts look good on me.\", so the gap is me.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:present-ar",
+        "l:bien",
+        "l:camisa",
+        "l:quedar",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:talla-numero"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp5",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "I like Vale.",
+      "es": "Vale me cae bien.",
+      "gap": [
+        5,
+        7
+      ],
+      "options": [
+        "le",
+        "me"
+      ],
+      "answer": 1,
+      "why": "The English says \"I like Vale.\", so the gap is me.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:bien",
+        "l:caer",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp6",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "Simón doesn't like Don Hernando.",
+      "es": "A Simón no le cae bien don Hernando.",
+      "gap": [
+        11,
+        13
+      ],
+      "options": [
+        "le",
+        "me"
+      ],
+      "answer": 0,
+      "why": "The English says \"Simón doesn't like Don Hernando.\", so the gap is le.",
+      "requires": [
+        "c:bien-y-tu",
+        "g:gustar-full",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:bien",
+        "l:caer",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:senor-don-article"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp7",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "p:dar-igual",
+      "rung": 1,
+      "en": "I need a coffee.",
+      "es": "Me hace falta un café.",
+      "gap": [
+        0,
+        2
+      ],
+      "options": [
+        "Le",
+        "Me"
+      ],
+      "answer": 1,
+      "why": "The English says \"I need a coffee.\", so the gap is Me.",
+      "requires": [
+        "c:me-hace-una-rebajita",
+        "g:gender-articles",
+        "l:café",
+        "l:falta",
+        "l:hacer"
+      ]
+    },
+    {
+      "id": "x:dar-igual-parecer-bien#g.parecer-quedar.rp9",
+      "node": "x:dar-igual-parecer-bien",
+      "side": "g:parecer-quedar",
+      "rung": 1,
+      "en": "I don't like the neighbours.",
+      "es": "Los vecinos me caen mal.",
+      "gap": [
+        12,
+        14
+      ],
+      "options": [
+        "le",
+        "me"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't like the neighbours.\", so the gap is me.",
+      "requires": [
+        "g:gender-articles",
+        "g:parecer-quedar",
+        "g:present-er-ir",
+        "l:caer",
+        "l:mal",
+        "l:vecino",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo"
+      ]
+    }
+  ]
+}

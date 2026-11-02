@@ -1,0 +1,206 @@
+{
+  "node": "x:tener-que-deber",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:tener-que-deber#rp0",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You don't have to come.",
+      "es": "No tienes que venir.",
+      "gap": [
+        3,
+        13
+      ],
+      "options": [
+        "debes",
+        "tienes que"
+      ],
+      "answer": 1,
+      "why": "The English says \"You don't have to come.\", so the gap is tienes que.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:tener",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#rp1",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You must not come.",
+      "es": "No debes venir.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "debes",
+        "tienes que"
+      ],
+      "answer": 0,
+      "why": "The English says \"You must not come.\", so the gap is debes.",
+      "requires": [
+        "g:present-er-ir",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:venir"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#pf1",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You don't have to pay. (to a friend)",
+      "es": "No tienes que pagar.",
+      "gap": [
+        3,
+        13
+      ],
+      "options": [
+        "tienes que",
+        "debes"
+      ],
+      "answer": 0,
+      "why": "If you mean \"you don't have to\", no debes sounds like \"you must not\".",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:pagar",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#rp3",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You have to rest.",
+      "es": "Tienes que descansar.",
+      "gap": [
+        0,
+        6
+      ],
+      "options": [
+        "Tienes",
+        "Debes"
+      ],
+      "answer": 0,
+      "why": "The English says \"You have to rest.\", so the gap is Tienes.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:descansar",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#rp7",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You don't have to eat that.",
+      "es": "No tienes que comer eso.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "tienes",
+        "debes"
+      ],
+      "answer": 0,
+      "why": "The English says \"You don't have to eat that.\", so the gap is tienes.",
+      "requires": [
+        "c:tienes",
+        "g:stem-boot",
+        "g:verb-infinitive",
+        "l:comer",
+        "l:tener",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#g.tener-que-hay-que.rp4",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You mustn't pay.",
+      "es": "No debes pagar.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "tienes que",
+        "debes"
+      ],
+      "answer": 1,
+      "why": "The English says \"You mustn't pay.\", so the gap is debes.",
+      "requires": [
+        "g:present-er-ir",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:pagar"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#g.tener-que-hay-que.yt3",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You should go to the doctor.",
+      "es": "Debes ir al médico.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Tienes",
+        "Debes"
+      ],
+      "answer": 1,
+      "why": "Advice is debes plus the dictionary form.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-er-ir",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:ir",
+        "l:médico",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:tener-que-deber#g.tener-que-hay-que.rp5",
+      "node": "x:tener-que-deber",
+      "side": "g:tener-que-hay-que",
+      "rung": 1,
+      "en": "You should rest more.",
+      "es": "Debes descansar más.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Debes",
+        "Tienes"
+      ],
+      "answer": 0,
+      "why": "The English says \"You should rest more.\", so the gap is Debes.",
+      "requires": [
+        "g:present-er-ir",
+        "g:tener-que-hay-que",
+        "l:deber",
+        "l:descansar"
+      ]
+    }
+  ]
+}

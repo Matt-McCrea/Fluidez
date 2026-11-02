@@ -1,0 +1,521 @@
+{
+  "node": "x:acabar-por-llegar-a",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:acabar-por-llegar-a#pf2",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He never got as far as telling me.",
+      "es": "No llegó a decírmelo.",
+      "gap": [
+        0,
+        10
+      ],
+      "options": [
+        "No llegó a",
+        "Llegó a no"
+      ],
+      "answer": 0,
+      "why": "To say he never got that far, put no before llegó.",
+      "requires": [
+        "g:direct-objects",
+        "g:double-pronouns",
+        "g:object-pronoun-position",
+        "g:preterite-ar",
+        "l:decir",
+        "l:llegar",
+        "p:llegar-a-inf",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp0",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "He ended up accepting it.",
+      "es": "Acabó por aceptarlo.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 0,
+      "why": "The English says \"He ended up accepting it.\", so the gap is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:aceptar",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp1",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He went as far as selling the car to pay the debt.",
+      "es": "Llegó a vender el carro para pagar la deuda.",
+      "gap": [
+        6,
+        7
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 1,
+      "why": "The English says \"He went as far as selling the car to pay the debt.\", so the gap is a.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:carro",
+        "l:deuda",
+        "l:llegar",
+        "l:pagar",
+        "l:vender",
+        "p:llegar-a-inf",
+        "p:para-inf",
+        "p:para-inf-purpose"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp2",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He never got as far as telling me.",
+      "es": "No llegó a decírmelo.",
+      "gap": [
+        9,
+        10
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"He never got as far as telling me.\", so the gap is a.",
+      "requires": [
+        "g:direct-objects",
+        "g:double-pronouns",
+        "g:object-pronoun-position",
+        "g:preterite-ar",
+        "l:decir",
+        "l:llegar",
+        "p:llegar-a-inf",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp4",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "I even started to think you weren't coming back.",
+      "es": "Llegué a pensar que no volvías.",
+      "gap": [
+        7,
+        8
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"I even started to think you weren't coming back.\", so the gap is a.",
+      "requires": [
+        "g:imperfect-habitual",
+        "g:pret-vs-imperfect",
+        "g:preterite-spelling-stem",
+        "g:that-clauses",
+        "l:llegar",
+        "l:pensar",
+        "l:volver",
+        "p:llegar-a-inf",
+        "p:llegar-a-ser",
+        "p:pensar-en"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp5",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "After three years, Rosa finally forgave him.",
+      "es": "Después de tres años, Rosa acabó por perdonarlo.",
+      "gap": [
+        33,
+        36
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"After three years, Rosa finally forgave him.\", so the gap is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:año",
+        "l:después",
+        "l:perdonar",
+        "p:acabar-por-inf",
+        "p:time-sequence-basic"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#rp6",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "He even came to hate him.",
+      "es": "Llegó a odiarlo.",
+      "gap": [
+        6,
+        7
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"He even came to hate him.\", so the gap is a.",
+      "requires": [
+        "g:preterite-ar",
+        "l:llegar"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.acabar-por-inf.rp0",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "He ended up accepting the offer.",
+      "es": "Acabó por aceptar la oferta.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 0,
+      "why": "The English says \"He ended up accepting the offer.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:aceptar",
+        "l:oferta",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.acabar-por-inf.rp3",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "I ended up understanding it.",
+      "es": "Terminé por entenderlo.",
+      "gap": [
+        8,
+        11
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"I ended up understanding it.\", so the gap is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:entender",
+        "l:terminar",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.acabar-por-inf.rp4",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "They ended up selling the premises.",
+      "es": "Terminaron por vender el local.",
+      "gap": [
+        11,
+        14
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 0,
+      "why": "The English says \"They ended up selling the premises.\", so the gap is por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:local",
+        "l:terminar",
+        "l:vender",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.acabar-por-inf.rp5",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "Will you end up forgiving him?",
+      "es": "¿Acabarás por perdonarlo?",
+      "gap": [
+        10,
+        13
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"Will you end up forgiving him?\", so the gap is por.",
+      "requires": [
+        "g:direct-objects",
+        "g:future-promises",
+        "g:object-pronoun-position",
+        "g:por-para-1",
+        "l:acabar",
+        "l:perdonar",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.acabar-por-inf.rp7",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "I ended up believing him.",
+      "es": "Acabé por creerle.",
+      "gap": [
+        6,
+        9
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 1,
+      "why": "The English says \"I ended up believing him.\", so the gap is por.",
+      "requires": [
+        "g:indirect-objects",
+        "g:object-pronoun-position",
+        "g:por-para-1",
+        "g:preterite-ar",
+        "l:acabar",
+        "l:creer",
+        "p:acabar-por-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp0",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "I even went so far as to think you would not come back.",
+      "es": "Llegué a pensar que no volverías.",
+      "gap": [
+        7,
+        8
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 1,
+      "why": "The English says \"I even went so far as to think you would not come back.\", so the gap is a.",
+      "requires": [
+        "g:conditional",
+        "g:preterite-spelling-stem",
+        "g:that-clauses",
+        "l:llegar",
+        "l:pensar",
+        "l:volver",
+        "p:llegar-a-inf",
+        "p:llegar-a-ser",
+        "p:pensar-en"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp1",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He even went as far as selling the car.",
+      "es": "Llegó a vender el carro.",
+      "gap": [
+        6,
+        7
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"He even went as far as selling the car.\", so the gap is a.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:carro",
+        "l:llegar",
+        "l:vender",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp2",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He never became famous.",
+      "es": "No llegó a ser famoso.",
+      "gap": [
+        9,
+        10
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 1,
+      "why": "The English says \"He never became famous.\", so the gap is a.",
+      "requires": [
+        "g:preterite-ar",
+        "g:ser-identity",
+        "l:famoso",
+        "l:llegar",
+        "l:ser",
+        "p:llegar-a-inf",
+        "p:llegar-a-ser"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp3",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "Did you ever get to meet her?",
+      "es": "¿Llegaste a conocerla?",
+      "gap": [
+        10,
+        11
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"Did you ever get to meet her?\", so the gap is a.",
+      "requires": [
+        "g:direct-objects",
+        "g:object-pronoun-position",
+        "g:preterite-ar",
+        "l:conocer",
+        "l:llegar",
+        "p:llegar-a-inf",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp5",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:acabar-por-inf",
+      "rung": 1,
+      "en": "We came to hate each other.",
+      "es": "Llegamos a odiarnos.",
+      "gap": [
+        9,
+        10
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"We came to hate each other.\", so the gap is a.",
+      "requires": [
+        "g:present-ar",
+        "l:llegar"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp6",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "I never got to tell her.",
+      "es": "No llegué a decírselo.",
+      "gap": [
+        10,
+        11
+      ],
+      "options": [
+        "por",
+        "a"
+      ],
+      "answer": 1,
+      "why": "The English says \"I never got to tell her.\", so the gap is a.",
+      "requires": [
+        "g:double-pronouns",
+        "g:object-pronoun-position",
+        "g:preterite-spelling-stem",
+        "l:decir",
+        "l:llegar",
+        "p:llegar-a-inf"
+      ]
+    },
+    {
+      "id": "x:acabar-por-llegar-a#p.llegar-a-inf.rp7",
+      "node": "x:acabar-por-llegar-a",
+      "side": "p:llegar-a-inf",
+      "rung": 1,
+      "en": "He even doubted his own name.",
+      "es": "Llegó a dudar de su propio nombre.",
+      "gap": [
+        6,
+        7
+      ],
+      "options": [
+        "a",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"He even doubted his own name.\", so the gap is a.",
+      "requires": [
+        "g:preterite-ar",
+        "l:dudar",
+        "l:llegar",
+        "l:nombre",
+        "l:propio",
+        "p:llegar-a-inf",
+        "p:llegar-a-ser",
+        "p:possessives-basic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "node": "x:participle-agreement",
+  "decides": "local",
+  "items": [
+    {
+      "id": "x:participle-agreement#rp4",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "I've been tired. (a man speaking)",
+      "es": "He estado cansado.",
+      "gap": [
+        10,
+        17
+      ],
+      "options": [
+        "cansado",
+        "cansada"
+      ],
+      "answer": 0,
+      "why": "The English says \"I've been tired. (a man speaking)\", so the gap is cansado.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#rp5",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "I've been tired. (a woman speaking)",
+      "es": "He estado cansada.",
+      "gap": [
+        10,
+        17
+      ],
+      "options": [
+        "cansado",
+        "cansada"
+      ],
+      "answer": 1,
+      "why": "The English says \"I've been tired. (a woman speaking)\", so the gap is cansada.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:perfecto-experience",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#pf0",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "I haven't washed the cups yet.",
+      "es": "Todavía no he lavado las tazas.",
+      "gap": [
+        14,
+        20
+      ],
+      "options": [
+        "lavado",
+        "lavadas"
+      ],
+      "answer": 0,
+      "why": "Almost. After he, the -ado word never changes, even with las tazas.",
+      "requires": [
+        "c:todavia-no",
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:lavar",
+        "l:taza"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#pf2",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "I've been tired. (a woman speaking)",
+      "es": "He estado cansada.",
+      "gap": [
+        3,
+        9
+      ],
+      "options": [
+        "estado",
+        "estada"
+      ],
+      "answer": 0,
+      "why": "Estado follows he, so it stays -o. Only cansada describes you.",
+      "requires": [
+        "g:adjective-agreement",
+        "g:perfecto-experience",
+        "l:cansado",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#yt0",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 2,
+      "en": "The shops are closed.",
+      "es": "Las tiendas están cerradas.",
+      "gap": [
+        18,
+        26
+      ],
+      "options": [
+        "cerrado",
+        "cerradas"
+      ],
+      "answer": 1,
+      "why": "After están, it agrees with las tiendas: cerradas.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:cerrar",
+        "l:estar",
+        "l:tienda"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#yt1",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 2,
+      "en": "They haven't opened the chemist's yet.",
+      "es": "Todavía no han abierto la droguería.",
+      "gap": [
+        15,
+        22
+      ],
+      "options": [
+        "abierto",
+        "abierta"
+      ],
+      "answer": 0,
+      "why": "After han, it never changes, even with la droguería.",
+      "requires": [
+        "c:todavia-no",
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:abrir",
+        "l:droguería"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#rp0",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The cups are washed.",
+      "es": "Las tazas están lavadas.",
+      "gap": [
+        16,
+        23
+      ],
+      "options": [
+        "lavadas",
+        "lavado"
+      ],
+      "answer": 0,
+      "why": "The English says \"The cups are washed.\", so the gap is lavadas.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:estar",
+        "l:lavar",
+        "l:taza"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#rp3",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The chemist's is open now.",
+      "es": "La droguería ya está abierta.",
+      "gap": [
+        21,
+        28
+      ],
+      "options": [
+        "abierto",
+        "abierta"
+      ],
+      "answer": 1,
+      "why": "The English says \"The chemist's is open now.\", so the gap is abierta.",
+      "requires": [
+        "c:abierto-cerrado",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:abrir",
+        "l:droguería",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#rp6",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Have you been ill this year? (to a man friend)",
+      "es": "¿Has estado enfermo este año?",
+      "gap": [
+        5,
+        11
+      ],
+      "options": [
+        "estado",
+        "estada"
+      ],
+      "answer": 0,
+      "why": "The English says \"Have you been ill this year? (to a man friend)\", so the gap is estado.",
+      "requires": [
+        "c:has-estado",
+        "g:perfecto-experience",
+        "l:año",
+        "l:enfermo",
+        "l:estar",
+        "p:demonstratives-basic"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#rp7",
+      "node": "x:participle-agreement",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The shops (las tiendas) are closed.",
+      "es": "Están cerradas.",
+      "gap": [
+        6,
+        14
+      ],
+      "options": [
+        "cerrado",
+        "cerradas"
+      ],
+      "answer": 1,
+      "why": "The English says \"The shops (las tiendas) are closed.\", so the gap is cerradas.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "l:cerrar",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#g.estar-participle.rp4",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "I've closed the door.",
+      "es": "He cerrado la puerta.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "cerrado",
+        "cerradas"
+      ],
+      "answer": 0,
+      "why": "The English says \"I've closed the door.\", so the gap is cerrado.",
+      "requires": [
+        "g:gender-articles",
+        "g:perfecto-experience",
+        "l:cerrar",
+        "l:puerta"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#g.perfecto-experience.yt5",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Have you been to Cartagena?",
+      "es": "¿Usted ha estado en Cartagena?",
+      "gap": [
+        10,
+        16
+      ],
+      "options": [
+        "estado",
+        "estada"
+      ],
+      "answer": 0,
+      "why": "With usted, the helper is ha, the same as for he or she.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#g.perfecto-experience.rp2",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "We've been to Medellín twice.",
+      "es": "Hemos estado en Medellín dos veces.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "estado",
+        "estada"
+      ],
+      "answer": 0,
+      "why": "The English says \"We've been to Medellín twice.\", so the gap is estado.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:estar",
+        "l:vez"
+      ]
+    },
+    {
+      "id": "x:participle-agreement#g.perfecto-experience.rp6",
+      "node": "x:participle-agreement",
+      "side": "g:perfecto-experience",
+      "rung": 1,
+      "en": "Have you all been to Leticia?",
+      "es": "¿Ustedes han estado en Leticia?",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "estado",
+        "estada"
+      ],
+      "answer": 0,
+      "why": "The English says \"Have you all been to Leticia?\", so the gap is estado.",
+      "requires": [
+        "g:perfecto-experience",
+        "l:estar"
+      ]
+    }
+  ]
+}

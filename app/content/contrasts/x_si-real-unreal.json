@@ -1,0 +1,172 @@
+{
+  "node": "x:si-real-unreal",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:si-real-unreal#pf1",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If I have time, I'll go.",
+      "es": "Si tengo tiempo, voy.",
+      "gap": [
+        17,
+        20
+      ],
+      "options": [
+        "voy",
+        "iría"
+      ],
+      "answer": 0,
+      "why": "A real if gets a real result: don't switch to the would form halfway.",
+      "requires": [
+        "c:tengo",
+        "c:voy-vas",
+        "g:ir-a-plans",
+        "g:si-present",
+        "g:yo-irregular",
+        "l:ir",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#yt0",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If I have time, I'll go.",
+      "es": "Si tengo tiempo, voy.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "tengo",
+        "tuviera"
+      ],
+      "answer": 0,
+      "why": "It might really happen, so the ordinary present.",
+      "requires": [
+        "c:tengo",
+        "c:voy-vas",
+        "g:ir-a-plans",
+        "g:si-present",
+        "g:yo-irregular",
+        "l:ir",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#yt1",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I had time, I'd go.",
+      "es": "Si tuviera tiempo, iría.",
+      "gap": [
+        19,
+        23
+      ],
+      "options": [
+        "voy",
+        "iría"
+      ],
+      "answer": 1,
+      "why": "An imaginary if needs the would form in the result.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:ir",
+        "l:tener",
+        "l:tiempo"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#yt6",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I had time, I'd help you. (to a friend)",
+      "es": "Si tuviera tiempo, te ayudaría.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "tuviera",
+        "tengo"
+      ],
+      "answer": 0,
+      "why": "I don't have time, so it is imaginary: tuviera and ayudaría.",
+      "requires": [
+        "g:conditional",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:ayudar",
+        "l:tener",
+        "l:tiempo",
+        "p:me-te-nos-objects"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#g.si-hypothetical.yt0",
+      "node": "x:si-real-unreal",
+      "side": "g:si-hypothetical",
+      "rung": 1,
+      "en": "If I had money, I'd buy a boat.",
+      "es": "Si tuviera plata, compraría un barco.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "tuviera",
+        "tengo"
+      ],
+      "answer": 0,
+      "why": "The would half is there, so the if half has to be the ra form.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:imperfect-subj",
+        "g:si-hypothetical",
+        "l:barco",
+        "l:comprar",
+        "l:plata",
+        "l:tener"
+      ]
+    },
+    {
+      "id": "x:si-real-unreal#g.si-hypothetical.rp1",
+      "node": "x:si-real-unreal",
+      "side": "g:si-present",
+      "rung": 1,
+      "en": "If I have money, I'll buy a house.",
+      "es": "Si tengo plata, compraré una casa.",
+      "gap": [
+        3,
+        8
+      ],
+      "options": [
+        "tengo",
+        "tuviera"
+      ],
+      "answer": 0,
+      "why": "The English says \"If I have money, I'll buy a house.\", so the gap is tengo.",
+      "requires": [
+        "c:tengo",
+        "g:future-promises",
+        "g:gender-articles",
+        "g:si-present",
+        "g:yo-irregular",
+        "l:casa",
+        "l:comprar",
+        "l:plata",
+        "l:tener"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "node": "x:que-tal-si-vs-te-propongo-que",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:que-tal-si-vs-te-propongo-que#yt0",
+      "node": "x:que-tal-si-vs-te-propongo-que",
+      "side": "p:que-tal-si",
+      "rung": 1,
+      "en": "How about we close early today?",
+      "es": "¿Qué tal si cerramos temprano hoy?",
+      "gap": [
+        12,
+        20
+      ],
+      "options": [
+        "cerramos",
+        "cerremos"
+      ],
+      "answer": 0,
+      "why": "After si, the verb stays in the plain present: cerramos.",
+      "requires": [
+        "g:present-ar",
+        "g:questions",
+        "g:si-present",
+        "l:cerrar",
+        "l:hoy",
+        "l:qué",
+        "l:temprano",
+        "p:que-tal-si"
+      ]
+    },
+    {
+      "id": "x:que-tal-si-vs-te-propongo-que#yt1",
+      "node": "x:que-tal-si-vs-te-propongo-que",
+      "side": "p:te-propongo-que",
+      "rung": 1,
+      "en": "I suggest we close early today. To a friend.",
+      "es": "Te propongo que cerremos temprano hoy.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "cerramos",
+        "cerremos"
+      ],
+      "answer": 1,
+      "why": "After te propongo que, the verb takes the subjunctive: cerremos.",
+      "requires": [
+        "g:subj-influence",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:cerrar",
+        "l:hoy",
+        "l:proponer",
+        "l:temprano",
+        "p:me-te-nos-objects",
+        "p:te-propongo-que"
+      ]
+    },
+    {
+      "id": "x:que-tal-si-vs-te-propongo-que#rp0",
+      "node": "x:que-tal-si-vs-te-propongo-que",
+      "side": "p:que-tal-si",
+      "rung": 1,
+      "en": "How about we close early?",
+      "es": "¿Qué tal si cerramos temprano?",
+      "gap": [
+        12,
+        20
+      ],
+      "options": [
+        "cerremos",
+        "cerramos"
+      ],
+      "answer": 1,
+      "why": "The English says \"How about we close early?\", so the gap is cerramos.",
+      "requires": [
+        "g:present-ar",
+        "g:questions",
+        "g:si-present",
+        "l:cerrar",
+        "l:qué",
+        "l:temprano",
+        "p:que-tal-si"
+      ]
+    },
+    {
+      "id": "x:que-tal-si-vs-te-propongo-que#rp1",
+      "node": "x:que-tal-si-vs-te-propongo-que",
+      "side": "p:te-propongo-que",
+      "rung": 1,
+      "en": "I suggest we close early.",
+      "es": "Te propongo que cerremos temprano.",
+      "gap": [
+        16,
+        24
+      ],
+      "options": [
+        "cerremos",
+        "cerramos"
+      ],
+      "answer": 0,
+      "why": "The English says \"I suggest we close early.\", so the gap is cerremos.",
+      "requires": [
+        "g:subj-influence",
+        "g:subj-wanting",
+        "g:that-clauses",
+        "g:yo-irregular",
+        "l:cerrar",
+        "l:proponer",
+        "l:temprano",
+        "p:me-te-nos-objects",
+        "p:te-propongo-que"
+      ]
+    }
+  ]
+}

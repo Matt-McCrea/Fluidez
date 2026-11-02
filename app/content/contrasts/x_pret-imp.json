@@ -1,0 +1,204 @@
+{
+  "node": "x:pret-imp",
+  "decides": "discourse",
+  "items": [
+    {
+      "id": "x:pret-imp#rp0",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "I used to eat at two.",
+      "es": "Comía a las dos.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Comía",
+        "Comí"
+      ],
+      "answer": 0,
+      "why": "The English says \"I used to eat at two.\", so the gap is Comía.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:comer",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#rp1",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "I ate at two.",
+      "es": "Comí a las dos.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Comía",
+        "Comí"
+      ],
+      "answer": 1,
+      "why": "The English says \"I ate at two.\", so the gap is Comí.",
+      "requires": [
+        "c:comi",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:comer",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#rp2",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "I used to go to the beach.",
+      "es": "Iba a la playa.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Iba",
+        "Fui"
+      ],
+      "answer": 0,
+      "why": "The English says \"I used to go to the beach.\", so the gap is Iba.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:ir",
+        "l:playa",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:pret-imp#rp3",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "I went to the beach.",
+      "es": "Fui a la playa.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Iba",
+        "Fui"
+      ],
+      "answer": 1,
+      "why": "The English says \"I went to the beach.\", so the gap is Fui.",
+      "requires": [
+        "c:fui",
+        "g:gender-articles",
+        "g:preterite-ser-ir-hacer",
+        "l:ir",
+        "l:playa",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:pret-imp#rp6",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "Rosa used to close the café at six.",
+      "es": "Rosa cerraba el café a las seis.",
+      "gap": [
+        5,
+        12
+      ],
+      "options": [
+        "cerraba",
+        "cerró"
+      ],
+      "answer": 0,
+      "why": "The English says \"Rosa used to close the café at six.\", so the gap is cerraba.",
+      "requires": [
+        "g:gender-articles",
+        "g:imperfect-habitual",
+        "l:café",
+        "l:cerrar",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#rp7",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "Rosa closed the café at six that day.",
+      "es": "Rosa cerró el café a las seis.",
+      "gap": [
+        5,
+        10
+      ],
+      "options": [
+        "cerraba",
+        "cerró"
+      ],
+      "answer": 1,
+      "why": "The English says \"Rosa closed the café at six that day.\", so the gap is cerró.",
+      "requires": [
+        "g:gender-articles",
+        "g:preterite-ar",
+        "l:café",
+        "l:cerrar",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:pret-imp#g.imperfect-habitual.rp3",
+      "node": "x:pret-imp",
+      "side": "g:preterite-irregular-strong",
+      "rung": 1,
+      "en": "I ate an arepa.",
+      "es": "Comí una arepa.",
+      "gap": [
+        0,
+        4
+      ],
+      "options": [
+        "Comí",
+        "Comía"
+      ],
+      "answer": 0,
+      "why": "The English says \"I ate an arepa.\", so the gap is Comí.",
+      "requires": [
+        "c:comi",
+        "g:gender-articles",
+        "g:preterite-er-ir",
+        "l:arepa",
+        "l:comer"
+      ]
+    },
+    {
+      "id": "x:pret-imp#g.imperfect-habitual.rp4",
+      "node": "x:pret-imp",
+      "side": "g:imperfect-habitual",
+      "rung": 1,
+      "en": "I used to eat arepas.",
+      "es": "Comía arepas.",
+      "gap": [
+        0,
+        5
+      ],
+      "options": [
+        "Comí",
+        "Comía"
+      ],
+      "answer": 1,
+      "why": "The English says \"I used to eat arepas.\", so the gap is Comía.",
+      "requires": [
+        "g:imperfect-habitual",
+        "l:arepa",
+        "l:comer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "node": "x:juraria-vs-me-consta",
+  "decides": "synonym",
+  "items": [
+    {
+      "id": "x:juraria-vs-me-consta#rp0",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:juraria-que",
+      "rung": 1,
+      "en": "I could swear Vale locked the door.",
+      "es": "Juraría que Vale cerró la puerta.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Juraría",
+        "Me consta"
+      ],
+      "answer": 0,
+      "why": "The English says \"I could swear Vale locked the door.\", so the gap is Juraría.",
+      "requires": [
+        "g:conditional",
+        "g:gender-articles",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:jurar",
+        "l:puerta",
+        "p:juraria-que",
+        "p:pues-claro-que"
+      ]
+    },
+    {
+      "id": "x:juraria-vs-me-consta#rp1",
+      "node": "x:juraria-vs-me-consta",
+      "side": "p:no-me-cabe-duda",
+      "rung": 1,
+      "en": "I know for a fact that Vale locked the door.",
+      "es": "Me consta que Vale cerró la puerta.",
+      "gap": [
+        0,
+        9
+      ],
+      "options": [
+        "Juraría",
+        "Me consta"
+      ],
+      "answer": 1,
+      "why": "The English says \"I know for a fact that Vale locked the door.\", so the gap is Me consta.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "g:preterite-ar",
+        "g:that-clauses",
+        "l:cerrar",
+        "l:constar",
+        "l:puerta",
+        "p:me-te-nos-objects",
+        "p:no-me-cabe-duda"
+      ]
+    }
+  ]
+}

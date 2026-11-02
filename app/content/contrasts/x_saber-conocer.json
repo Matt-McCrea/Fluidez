@@ -1,0 +1,152 @@
+{
+  "node": "x:saber-conocer",
+  "decides": "meaning",
+  "items": [
+    {
+      "id": "x:saber-conocer#pf0",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I know Vale.",
+      "es": "Conozco a Vale.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Sé",
+        "Conozco"
+      ],
+      "answer": 1,
+      "why": "Almost. Vale is a person you've met, so it's conozco; sé is for facts and skills.",
+      "requires": [
+        "g:yo-irregular",
+        "l:conocer",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#pf3",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I don't know how much it costs.",
+      "es": "No sé cuánto cuesta.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "sé",
+        "conozco"
+      ],
+      "answer": 0,
+      "why": "A price is a fact, not a place or a person: no sé.",
+      "requires": [
+        "c:cuanto-cuesta",
+        "c:no-se",
+        "g:yo-irregular",
+        "l:costar",
+        "l:cuánto",
+        "l:saber"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#rp0",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I know Mariana.",
+      "es": "Conozco a Mariana.",
+      "gap": [
+        0,
+        7
+      ],
+      "options": [
+        "Sé",
+        "Conozco"
+      ],
+      "answer": 1,
+      "why": "The English says \"I know Mariana.\", so the gap is Conozco.",
+      "requires": [
+        "g:yo-irregular",
+        "l:conocer",
+        "p:personal-a",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#rp4",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I don't know the neighbourhood.",
+      "es": "No conozco el barrio.",
+      "gap": [
+        3,
+        10
+      ],
+      "options": [
+        "sé",
+        "conozco"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't know the neighbourhood.\", so the gap is conozco.",
+      "requires": [
+        "g:gender-articles",
+        "g:yo-irregular",
+        "l:barrio",
+        "l:conocer",
+        "p:saber-conocer"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#rp6",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I can't swim.",
+      "es": "No sé nadar.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "conozco",
+        "sé"
+      ],
+      "answer": 1,
+      "why": "The English says \"I can't swim.\", so the gap is sé.",
+      "requires": [
+        "c:no-se",
+        "g:yo-irregular",
+        "l:nadar",
+        "l:saber"
+      ]
+    },
+    {
+      "id": "x:saber-conocer#g.yo-irregular.rp5",
+      "node": "x:saber-conocer",
+      "side": "g:yo-irregular",
+      "rung": 1,
+      "en": "I don't know.",
+      "es": "No sé.",
+      "gap": [
+        3,
+        5
+      ],
+      "options": [
+        "conozco",
+        "sé"
+      ],
+      "answer": 1,
+      "why": "The English says \"I don't know.\", so the gap is sé.",
+      "requires": [
+        "c:no-se",
+        "g:yo-irregular",
+        "l:saber"
+      ]
+    }
+  ]
+}
