@@ -132,6 +132,14 @@ describe('a reading', () => {
     expect(s.learner.node('l:café')!.exposures).toBe(seen);
   });
 
+  it('just over the pace, every question right: it says so, not that a question was missed, whatever the seconds round to', async () => {
+    const s = await screen();
+    // 280 words in 41.5 s is 405 a minute; the row keeps 42 s, which would read as 400 and count
+    const over = await s.run(41.5, 3);
+    expect(text(find(over, (n) => n.props?.['data-nocount'] !== undefined)[0])).toBe('That is faster than a text can be read: more than 400 words a minute. It does not count.');
+    expect(((await s.kv.get(GAMES_KEY)) as GamesDoc).reading[0]).toMatchObject({ wpm: 405, secs: 42, right: 3, counted: false });
+  });
+
   it('at a pace nobody reads at: logged, and not counted whatever the answers', async () => {
     const s = await screen();
     const over = await s.run(20, 3);

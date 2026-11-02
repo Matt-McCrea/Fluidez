@@ -10,7 +10,7 @@ import { checkExact } from '../check';
 import type { NodeId } from '../content/schema';
 import { acceptedForms, PRODUCTION_IMP_PERSONS, PRODUCTION_PERSONS, personsFor, verbByInf, type TenseKey, type Verb } from '../engine';
 import type { Rng } from '../exercises/rng';
-import { Rating, State, type Learner, type ReviewEvent } from '../learner';
+import { Rating, State, type Direction, type Learner, type ReviewEvent } from '../learner';
 import type { Bundle } from '../ui/data/bundle';
 import { wordChoice, type Lang, type McqCard, type TypeCard } from '../ui/session/cards';
 import { conjugationCard, taughtTenses, tenseNode, verbsMet } from '../ui/session/freeplay';
@@ -50,14 +50,21 @@ export function calmRecord(events: readonly ReviewEvent[], node: NodeId): { n: n
   const calm: ReviewEvent[] = [];
   for (let i = events.length - 1; i >= 0 && calm.length < CALM_OF; i--) {
     const e = events[i];
-    if (e.node === node && e.scored !== 'intro' && e.op !== FLASH_OP) calm.push(e);
+    // "mine says the same thing" is neither a right nor a wrong: the app could not tell (R9)
+    if (e.node === node && e.scored !== 'intro' && e.op !== FLASH_OP && !e.claimed) calm.push(e);
   }
   return { n: calm.length, right: calm.filter(wentWell).length };
 }
 
-/** The verbs a forms deck may deal: met, and owned. */
+/**
+ * Verbs a person is not the subject of. A cue of "(encantar, yo, now), I love" asks for "encanto", which is not how
+ * "I love" is said (me encanta), and "I rain" is not a thing to say: typed at speed, each drills the wrong sentence.
+ */
+export const NO_PERSON = new Set(['gustar', 'encantar', 'doler', 'fascinar', 'apetecer', 'llover', 'nevar', 'lloviznar', 'granizar', 'tronar']);
+
+/** The verbs a forms deck may deal: met, owned, and said of a person. */
 export function ownedVerbs(learner: Learner): Verb[] {
-  return verbsMet(learner).filter((inf) => owns(learner, `l:${inf}`)).map((inf) => verbByInf(inf)).filter((v): v is Verb => !!v);
+  return verbsMet(learner).filter((inf) => !NO_PERSON.has(inf) && owns(learner, `l:${inf}`)).map((inf) => verbByInf(inf)).filter((v): v is Verb => !!v);
 }
 
 /** The words a words deck may deal: owned lexemes the course gives a pair for. */
@@ -98,6 +105,8 @@ export interface FlashItem {
   /** the node an answer is about, and everything the item showed that the learner owns */
   target: NodeId;
   credit: NodeId[];
+  /** which way it was asked: Spanish given to be understood is receptive, Spanish to find or type is productive */
+  direction: Direction;
   /** the form asked for (tense and person), to keep count of the ones that slip */
   cell?: string;
   card: TypeCard | McqCard;
@@ -133,7 +142,7 @@ export function dealForm(verbs: readonly Verb[], tense: TenseKey, cells: Readonl
     const tenseOf = tenseNode(learner, tense);
     const target = tenseOf ?? `l:${verb.inf}`;
     return {
-      kind: 'type', key, id: cue, target, credit: [...new Set([target, `l:${verb.inf}`])].filter((n) => learner.isIntroduced(n)), cell: `${tense}|${people[p]}`, card,
+      kind: 'type', key, id: cue, target, credit: [...new Set([target, `l:${verb.inf}`])].filter((n) => learner.isIntroduced(n)), direction: 'productive', cell: `${tense}|${people[p]}`, card,
       match: (input) => { const r = checkExact(input, answers); return r.pass ? 'right' : r.near ? 'near' : 'no'; },
       answer: card.check(answers[0]).answer, answerLang: 'es', cue: card.sub?.text ?? card.prompt?.text ?? cue, cueLang: card.sub?.lang ?? 'en',
     };
@@ -147,7 +156,7 @@ export function dealWord(bundle: Bundle, node: NodeId, rng: Rng, key: string): F
   const card = wordChoice(bundle, node, key, side);
   if (!card) return undefined;
   const right = card.options[card.answer];
-  return { kind: 'choose', key, id: node, target: node, credit: [node], card, answer: right.text, answerLang: right.lang, cue: card.prompt?.text ?? right.text, cueLang: card.prompt?.lang ?? 'en' };
+  return { kind: 'choose', key, id: node, target: node, credit: [node], direction: side === 'en' ? 'receptive' : 'productive', card, answer: right.text, answerLang: right.lang, cue: card.prompt?.text ?? right.text, cueLang: card.prompt?.lang ?? 'en' };
 }
 
 // ---------------------------------------------------------------- a round
@@ -286,7 +295,7 @@ export class FlashGame {
     this.state = step(this.state, right ? { t: 'right', at } : correction!.how === 'skip' ? { t: 'skip', at } : { t: 'wrong', at, kind: it.kind });
     // an answer the clock had already run out on is not an answer, and nothing is credited for it
     if (this.state.right === was.right && this.state.wrong === was.wrong && this.state.skipped === was.skipped) return;
-    creditFlash(this.d.learner, { target: it.target, credit: it.credit, right, at });
+    creditFlash(this.d.learner, { target: it.target, credit: it.credit, right, at, direction: it.direction });
     if (it.cell) {
       const c = (this.cells[it.cell] ??= { n: 0, miss: 0 });
       c.n += 1;

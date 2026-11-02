@@ -138,6 +138,6 @@ describe('a better round than the one before', () => {
     await new Promise((r) => setTimeout(r, 20));
     const over = s.draw();
     expect(text(find(over, (n) => n.props?.['data-best'] !== undefined)[0])).toBe('A new best. The one before was 2.');
-    expect(text(find(over, (n) => n.props?.['data-remark'] !== undefined)[0])).toBe('¡Qué bien! Great! Not one wrong in the whole minute.');
+    expect(text(find(over, (n) => n.props?.['data-remark'] !== undefined)[0])).toBe('¡Qué bien! Great! Not one wrong.');
   });
 });

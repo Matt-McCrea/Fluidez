@@ -105,7 +105,7 @@ export function Reread({ pick, best, last, onAnother, onExit }: { pick: ReadingP
     );
   }
   const r = row!;
-  const why = judge({ words: r.words, secs: r.secs, right: r.right, of: r.of }).why;
+  const why = judge({ words: r.words, secs: secs.current, right: r.right, of: r.of }).why;
   const say = rereadReaction(r, kept, cheer(learner), last);
   return (
     <main class="screen over" id="main">

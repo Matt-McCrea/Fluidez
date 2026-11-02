@@ -4,9 +4,12 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import { rng } from '../../src/exercises/rng';
 import { FLASH_OP } from '../../src/games/credit';
 import {
-  armedTenses, calmRecord, FlashGame, MIN_VERBS, MIN_WORDS, openDecks, ownedVerbs, ownedWords, owns, weightOf, WORDS_DECK, type FlashDeck,
+  armedTenses, calmRecord, dealForm, dealWord, FlashGame, MIN_VERBS, MIN_WORDS, NO_PERSON, openDecks, ownedVerbs, ownedWords, owns, weightOf, WORDS_DECK, type FlashDeck,
 } from '../../src/games/flash';
 import { flashKey, GamesStore } from '../../src/games/store';
+import { personsFor, verbByInf, type TenseKey } from '../../src/engine';
+import { Rating, State } from '../../src/learner';
+import { conjugationCard } from '../../src/ui/session/freeplay';
 import { MemoryKV } from '../../src/ui/store/ui';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { calmAttempts, graphBundle, learnerAt, own, ready as readyLearner, T0, TENSE_NODE, VERBS } from './helpers';
@@ -15,6 +18,112 @@ let bundle: Bundle;
 beforeAll(async () => { bundle = await graphBundle(); }, 120_000);
 
 const ready = (over: { words?: number; right?: number } = {}) => readyLearner(bundle, over);
+
+describe('what counts as owned, and as calm', () => {
+  it('a lapsed card is not owned, however stable FSRS still calls it', async () => {
+    const { learner } = await ready();
+    own(learner, 'l:perro', 9000);
+    learner.review('l:perro', 'productive', Rating.Again, { at: T0 });
+    learner.review('l:perro', 'receptive', Rating.Again, { at: T0 });
+    const c = learner.card('l:perro', 'productive')!;
+    expect(c.state).toBe(State.Relearning);
+    expect(c.stability).toBeGreaterThanOrEqual(8);
+    expect(owns(learner, 'l:perro')).toBe(false);
+  });
+
+  it('"mine says the same thing" is no proof of a tense either way', async () => {
+    const { learner } = await ready();
+    const attempt = (i: number, grade: 1 | 2 | 3, claimed: boolean) => learner.expose([TENSE_NODE], { at: T0 + i, event: { op: 'type', grade, tries: 1, ...(claimed ? { claimed } : {}) } });
+    for (let i = 0; i < 2; i++) attempt(i, Rating.Again, false);
+    for (let i = 2; i < 10; i++) attempt(i, Rating.Good, false);
+    expect(calmRecord(learner.events(), TENSE_NODE)).toEqual({ n: 10, right: 8 });
+    // two claims would push the two misses out of the window, and a tense would be dealt on them
+    for (let i = 10; i < 12; i++) attempt(i, Rating.Hard, true);
+    expect(calmRecord(learner.events(), TENSE_NODE)).toEqual({ n: 10, right: 8 });
+  });
+});
+
+describe('what a form asks', () => {
+  const allVerbs = () => [...bundle.course.nodes.values()].filter((n) => n.id.startsWith('l:') && verbByInf(n.id.slice(2))).map((n) => verbByInf(n.id.slice(2))!);
+  const WORD: Record<string, string> = { yo: 'the yo form', 'tú': 'the tú form', 'él/ella': 'the he or she form', nosotros: 'the we form', ellos: 'the they form' };
+  const WHEN: Partial<Record<TenseKey, string>> = { presente: 'in the present', preterito: 'in the past', imperfecto: 'for what "used to" happen', futuro: 'in the future', condicional: 'for what "would" happen' };
+
+  it('a correction names the person and tense that were asked, on every verb: a form that reads two ways (cerramos, comía) is the one asked for', () => {
+    for (const v of allVerbs()) {
+      for (const tense of Object.keys(WHEN) as TenseKey[]) {
+        for (const person of Object.keys(WORD)) {
+          const why = conjugationCard('k', v, tense, personsFor(tense).indexOf(person as never)).why!;
+          expect(why, `${v.inf} ${tense} ${person}`).toContain(WORD[person]);
+          expect(why, `${v.inf} ${tense} ${person}`).toContain(WHEN[tense]);
+        }
+      }
+    }
+  });
+
+  it('the English under a form is English: no gloss with two senses is pasted through it', () => {
+    for (const v of allVerbs()) for (const tense of ['presente', 'preterito', 'perfecto'] as TenseKey[]) expect(conjugationCard('k', v, tense, 0).sub?.text, v.inf).not.toMatch(/[;]/);
+    expect(conjugationCard('k', verbByInf('importar')!, 'preterito', 0).sub?.text).toBe('I imported');
+  });
+
+  it('never asks for a verb a person is not the subject of: "I love" is not "encanto", and "I rain" is not a thing to say', async () => {
+    const { learner } = await ready();
+    for (const v of NO_PERSON) if (bundle.node(`l:${v}`)) own(learner, `l:${v}`);
+    expect(owns(learner, 'l:encantar')).toBe(true);
+    expect(ownedVerbs(learner).filter((v) => NO_PERSON.has(v.inf))).toEqual([]);
+    expect(ownedVerbs(learner).map((v) => v.inf).sort()).toEqual([...VERBS].sort());
+  });
+
+  it('never the same cue twice in a row, on as few cues as a deck can have', async () => {
+    const { learner } = await ready();
+    const r = rng('cues');
+    let last = '';
+    for (let i = 0; i < 300; i++) {
+      const it = dealForm([verbByInf('hablar')!], 'preterito', {}, r, last, `k${i}`, learner)!;
+      expect(it.id).not.toBe(last);
+      last = it.id;
+    }
+  });
+});
+
+describe('the direction of an answer', () => {
+  it('is the way it was asked: a word to understand is receptive, a word to find or a form to type is productive', async () => {
+    const { learner, clock } = await ready();
+    const words = ownedWords(learner, bundle);
+    const r = rng('sides');
+    const sides = new Set<string>();
+    for (const w of words) for (let i = 0; i < 4; i++) {
+      const it = dealWord(bundle, w, r, `k:${i}:${w}`);
+      if (!it) continue;
+      sides.add(it.direction);
+      expect(it.direction, it.cue).toBe(it.cueLang === 'es' ? 'receptive' : 'productive');
+    }
+    expect(sides).toEqual(new Set(['receptive', 'productive']));
+    expect(dealForm(ownedVerbs(learner), 'preterito', {}, r, '', 'k', learner)!.direction).toBe('productive');
+    const game = new FlashGame({ learner, bundle, rng: rng('d'), now: () => clock.t, deck: { id: WORDS_DECK, title: 'Words', kind: 'words' } });
+    const before = learner.events().length;
+    const it = game.item!;
+    game.choose((it.card as { answer: number }).answer);
+    expect(learner.events().slice(before).map((e) => e.dir)).toEqual([it.direction]);
+  });
+});
+
+describe('an answer after the clock has run out', () => {
+  it('is not an answer: nothing is logged and nothing is seen', async () => {
+    const { learner, clock } = await ready();
+    const forms = openDecks(learner, bundle).find((d) => d.kind === 'forms')!;
+    const game = new FlashGame({ learner, bundle, rng: rng('late'), now: () => clock.t, deck: forms });
+    const it = game.item!;
+    const events = learner.events().length;
+    const seen = learner.node(it.target)!.exposures;
+    clock.t += 61_000;
+    expect(game.state.over).toBe(false);
+    game.typed(it.answer);
+    expect(game.state.over).toBe(true);
+    expect(game.state.right).toBe(0);
+    expect(learner.events()).toHaveLength(events);
+    expect(learner.node(it.target)!.exposures).toBe(seen);
+  });
+});
 
 describe('what is open', () => {
   it('nothing, for a learner who has only just been taught things', async () => {

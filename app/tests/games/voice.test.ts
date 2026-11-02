@@ -39,7 +39,7 @@ describe('what a Relámpago round says', () => {
       if (!remark) continue;
       let m: RegExpExecArray | null;
       if ((m = /^Nothing wrong, and you passed on (\d+) instead of guessing\.$/.exec(remark))) { expect(r.wrong).toBe(0); expect(r.skipped).toBe(+m[1]); seen.add('pass'); }
-      else if (remark === 'Not one wrong in the whole minute.') { expect([r.wrong, r.skipped]).toEqual([0, 0]); expect(r.score).toBeGreaterThanOrEqual(5); seen.add('clean'); }
+      else if (remark === 'Not one wrong.') { expect([r.wrong, r.skipped]).toEqual([0, 0]); expect(r.score).toBeGreaterThanOrEqual(5); seen.add('clean'); }
       else if ((m = /^The (\S+) form slipped (twice|three times|\d+ times)\.$/.exec(remark))) {
         expect(r.slipped!.cell.split('|')[1]).toBe(m[1]);
         expect(m[2]).toBe(r.slipped!.times === 2 ? 'twice' : r.slipped!.times === 3 ? 'three times' : `${r.slipped!.times} times`);

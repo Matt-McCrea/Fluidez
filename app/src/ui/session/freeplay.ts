@@ -17,7 +17,7 @@ import {
 import { State, type Direction, type DueCard, type ExposureEvent, type Learner } from '../../learner';
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
-import { practiceCard, reviewCard, scriptCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
+import { formWhy, practiceCard, reviewCard, scriptCard, type Card, type Check, type TypeCard } from './cards';
 import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast, type ContrastForm } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
 import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
@@ -611,10 +611,11 @@ export function conjugationCard(key: string, verb: Verb, tense: TenseKey, idx: n
     const w = wordHint(input, answers);
     return { pass: false, near: false, hint: w?.hint, hintKind: w?.kind, answer: shown };
   };
-  const en = enPhrase(verb, tense, idx).text;
+  // a gloss with two senses ("to import; to matter") is phrased from the first: the engine is held to the old one's English word for word (tests/engine/parity)
+  const en = enPhrase({ en: verb.en.split(';')[0] }, tense, idx).text;
   return {
     type: 'type', key, ask: 'Type the form', prompt: { text: cue, lang: 'en' }, sub: { text: en, lang: 'en' },
     answerLang: 'es', placeholder: 'The form, with accents', check, retry: true,
-    why: verbFormWhy({ cue, answer: shown }) ?? `${shown} is the form.`,
+    why: formWhy(shown, verb.inf, person, tense) ?? `${shown} is the form.`,
   };
 }

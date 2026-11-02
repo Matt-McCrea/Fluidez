@@ -274,6 +274,12 @@ const TENSE_PHRASE: Readonly<Record<string, string>> = {
   presente: 'in the present', preterito: 'in the past', imperfecto: 'for what "used to" happen', futuro: 'in the future', condicional: 'for what "would" happen',
 };
 
+/** "comí is the yo form of comer in the past." when the person and tense asked for are known: a form that reads two ways (hablamos, comía) is the one that was asked. */
+export function formWhy(form: string, inf: string, person: string, tense: string): string | undefined {
+  const p = PERSON_PHRASE[person], t = TENSE_PHRASE[tense];
+  return p && t ? `${form} is ${p} of ${inf} ${t}.` : undefined;
+}
+
 /** "comí is the yo form of comer in the past." from the item's cue and the
  *  analysis of its answer, or undefined when the item does not carry a verb. */
 export function verbFormWhy(item: { cue: string; answer: string }): string | undefined {

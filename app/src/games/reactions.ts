@@ -48,7 +48,7 @@ export function flashReaction(r: FlashResult, taught: Cheer | undefined): RoundR
   const earned = r.best.isBest && r.best.was !== undefined ? true : clean && r.score >= 5;
   const out: RoundReaction = earned && taught ? { cheer: taught } : {};
   if (clean && r.skipped > 0) return { ...out, remark: `Nothing wrong, and you passed on ${r.skipped} instead of guessing.` };
-  if (clean && r.score >= 5) return { ...out, remark: 'Not one wrong in the whole minute.' };
+  if (clean && r.score >= 5) return { ...out, remark: 'Not one wrong.' };
   if (r.slipped) return { ...out, remark: `The ${personOf(r.slipped.cell)} form slipped ${times(r.slipped.times)}.` };
   const [a, b] = r.before.slice(-2);
   if (a !== undefined && b !== undefined && a < b && b < r.score) return { ...out, remark: 'Three rounds in a row, each better than the last.' };
