@@ -31,7 +31,7 @@
       "en": "We got talking about Rosa."
     }
   ],
-  "rule": "*Ponerse a* plus a plain verb means to start doing something, with a push. It kicks in out of nowhere, or you sit down and get to it.\n\n*Se puso a llover.* It started raining.\n*Me puse a estudiar.* I got down to studying.\n\n*Ponerse* changes with the person (*me puse*, *se puso*, *nos pusimos*), and the second verb stays plain. Don't drop the *a*.\n\n*Empezar a* is the neutral version; *ponerse a* is more vivid. Compare *ponerse* plus an adjective: *se puso triste* is how someone feels, with no *a* and no second verb.",
+  "rule": "*Ponerse a* plus a dictionary form means to start doing something, with a push. It kicks in out of nowhere, or you sit down and get to it.\n\n*Se puso a llover.* It started raining.\n*Me puse a estudiar.* I got down to studying.\n\n*Ponerse* changes with the person (*me puse*, *se puso*, *nos pusimos*), and the second verb stays in the dictionary form. Don't drop the *a*.\n\n*Empezar a* is the neutral version; *ponerse a* is more vivid. Compare *ponerse* plus an adjective: *se puso triste* is how someone feels, with no *a* and no second verb.",
   "smallPrint": "Teachers call this an inchoative construction, a verb phrase that marks the start of an action.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Say: Simón started singing.",
       "answer": "Simón se puso a cantar.",
       "accept": [],
-      "why": "*Se puso a* plus the plain verb *cantar*."
+      "why": "*Se puso a* plus the dictionary form *cantar*."
     },
     {
       "prompt": "Say: Suddenly it started raining.",

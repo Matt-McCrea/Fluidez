@@ -31,7 +31,7 @@
       "en": "Don't worry, it's fine."
     }
   ],
-  "rule": "Three ways to say sorry, from small to big:\n*Disculpe* (to a stranger) or *disculpa* (to a friend) + the thing: *Disculpe la demora.* Also *Perdón por la demora.*\n*Siento* + a plain verb, for what you did: *Siento llegar tarde.*\n*Lo siento (mucho)*, for real bad news or real harm.\n\nEnglish says 'sorry I'm late'; Spanish says 'I regret arriving late', with the verb in its plain form.\n\nThe usual reply: *Tranquilo, no pasa nada.* (*Tranquila* to a woman.)",
+  "rule": "Three ways to say sorry, from small to big:\n*Disculpe* (to a stranger) or *disculpa* (to a friend) + the thing: *Disculpe la demora.* Also *Perdón por la demora.*\n*Siento* + a dictionary form, for what you did: *Siento llegar tarde.*\n*Lo siento (mucho)*, for real bad news or real harm.\n\nEnglish says 'sorry I'm late'; Spanish says 'I regret arriving late', with the verb in its dictionary form.\n\nThe usual reply: *Tranquilo, no pasa nada.* (*Tranquila* to a woman.)",
   "smallPrint": "Teachers call this apologising: sentir + infinitive.",
   "readAndPick": [
     {
@@ -108,7 +108,7 @@
       "prompt": "Pick and type the whole sentence: *Siento ___ tarde.* (*llegar* or *llego*)",
       "answer": "Siento llegar tarde.",
       "accept": [],
-      "why": "After *siento*, the next verb stays plain: *llegar*."
+      "why": "After *siento*, the next verb stays in the dictionary form: *llegar*."
     },
     {
       "prompt": "Pick and type the whole sentence, to a stranger: *___ la molestia.* (*Disculpe* or *Disculpa*)",
@@ -151,7 +151,7 @@
     {
       "wrong": "Siento llego tarde.",
       "right": "Siento llegar tarde.",
-      "why": "Almost. After *siento*, use the plain verb: *llegar*, not *llego*."
+      "why": "Almost. After *siento*, use the dictionary form: *llegar*, not *llego*."
     },
     {
       "wrong": "Lo siento llegar tarde.",

@@ -13,7 +13,7 @@
     { "es": "Estamos hartos de Altamira.", "en": "We're fed up with Altamira." },
     { "es": "Estoy cansado de esperar.", "en": "I'm tired of waiting. (a man speaking)" }
   ],
-  "rule": "*Estar harto de* is a state, so it uses *estar*. After *de* put a noun, an infinitive, or *que* plus the wish form.\n\n*Estoy harta del ruido.* *Estoy harto de esperar.*\n\n*Harto* behaves like any adjective: *harto, harta, hartos, hartas*, matching who is speaking. And *de + el* becomes *del*.\n\n*Estar cansado de* works the same and is a little softer. Context tells you whether it means sick of or just tired from.",
+  "rule": "*Estar harto de* is a state, so it uses *estar*. After *de* put a noun, an infinitive, or *que* plus the subjunctive.\n\n*Estoy harta del ruido.* *Estoy harto de esperar.*\n\n*Harto* behaves like any adjective: *harto, harta, hartos, hartas*, matching who is speaking. And *de + el* becomes *del*.\n\n*Estar cansado de* works the same and is a little softer. Context tells you whether it means sick of or just tired from.",
   "smallPrint": "Among friends in Colombia you'll hear *mamado de* too. Good to recognise, not one to start with.",
   "readAndPick": [
     {
@@ -92,7 +92,7 @@
       "prompt": "Type in Spanish: Don Hernando is fed up that nobody listens to him.",
       "answer": "Don Hernando está harto de que nadie lo escuche.",
       "accept": [],
-      "why": "Someone else's action takes *que* plus the wish form: *escuche*."
+      "why": "Someone else's action takes *que* plus the subjunctive: *escuche*."
     },
     {
       "prompt": "Make it negative: *Estoy harto de esperar.*",

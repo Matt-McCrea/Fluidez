@@ -31,7 +31,7 @@
       "en": "I'm sorry I didn't call."
     }
   ],
-  "rule": "Two apologies, and the difference is who did it.\n\nSomeone else, or something that happened to them: *Siento que* + a changed ending. *Siento que hayas llegado tarde.* *Siento que estés triste.*\n\nYou did it yourself: *Siento haber* + the *-ado/-ido* word, with no *que*. *Siento haber llegado tarde.* For *didn't*, add *no*: *Siento no haber llamado.*\n\nThe common slip is using *que* for your own action. If the sorry is about *you*, think *haber*.",
+  "rule": "Two apologies, and the difference is who did it.\n\nSomeone else, or something that happened to them: *Siento que* + the subjunctive. *Siento que hayas llegado tarde.* *Siento que estés triste.*\n\nYou did it yourself: *Siento haber* + the *-ado/-ido* word, with no *que*. *Siento haber llegado tarde.* For *didn't*, add *no*: *Siento no haber llamado.*\n\nThe common slip is using *que* for your own action. If the sorry is about *you*, think *haber*.",
   "smallPrint": "Teachers call this the subjunctive after *siento que* when the subjects differ, and the perfect infinitive when they are the same.",
   "readAndPick": [
     {
@@ -153,12 +153,12 @@
     {
       "wrong": "Siento que tú estás triste.",
       "right": "Siento que estés triste.",
-      "why": "Almost. After *siento que*, the verb takes the changed ending: *estés*."
+      "why": "Almost. After *siento que*, the verb takes the subjunctive: *estés*."
     },
     {
       "wrong": "Siento haberse ido Vale.",
       "right": "Siento que Vale se haya ido.",
-      "why": "Almost. When someone else did it, go back to *que* and the changed ending."
+      "why": "Almost. When someone else did it, go back to *que* and the subjunctive."
     }
   ],
   "personal": "Tell me one thing you're sorry about that you did, and one thing you're sorry about that happened to someone you know. Use *Siento haber...* and *Siento que...*."

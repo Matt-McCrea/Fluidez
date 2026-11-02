@@ -27,7 +27,7 @@
       "en": "Vale doesn't cook because people ask her to, but because she loves it."
     }
   ],
-  "rule": "Use this to deny one reason and give the true one.\n\n*No porque* + the \"maybe\" form (*sea*, *tenga*, *esté*): the reason you reject.\n*Sino porque* + the plain form (*es*, *le interesa*): the real reason.\n\n*No lo digo porque sea mi amigo, sino porque es verdad.*\n\nCareful: *No se va porque está cansado* means he stays, because he is tired. *No se va porque esté cansado* means he does leave, just not for that reason.",
+  "rule": "Use this to deny one reason and give the true one.\n\n*No porque* + the \"maybe\" form (*sea*, *tenga*, *esté*): the reason you reject.\n*Sino porque* + the ordinary form (*es*, *le interesa*): the real reason.\n\n*No lo digo porque sea mi amigo, sino porque es verdad.*\n\nCareful: *No se va porque está cansado* means he stays, because he is tired. *No se va porque esté cansado* means he does leave, just not for that reason.",
   "smallPrint": "Teachers call *sea*, *tenga* and *esté* the present subjunctive. Here it marks a reason you have set aside, not a doubt.",
   "readAndPick": [
     {
@@ -120,7 +120,7 @@
       "prompt": "Choose *es* or *sea* for the real reason: No lo digo porque sea mi amigo, sino porque ___ verdad. Type the whole sentence.",
       "answer": "No lo digo porque sea mi amigo, sino porque es verdad.",
       "accept": [],
-      "why": "The true reason stays plain, so *es*."
+      "why": "The true reason stays ordinary, so *es*."
     },
     {
       "prompt": "I'm not calling you because I'm angry, but because I need your help. (to a friend)",
@@ -160,7 +160,7 @@
     {
       "wrong": "No lo digo porque sea mi amigo, sino porque sea verdad.",
       "right": "No lo digo porque sea mi amigo, sino porque es verdad.",
-      "why": "Almost. The real reason is a fact, so it stays plain: *es*."
+      "why": "Almost. The real reason is a fact, so it stays ordinary: *es*."
     },
     {
       "wrong": "No lo digo porque sea mi amigo, pero porque es verdad.",

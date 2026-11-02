@@ -31,7 +31,7 @@
       "en": "I gather they're coming on Monday."
     }
   ],
-  "rule": "Two meanings hide behind *entiendo que*.\n\nWith the plain verb, you have just taken in a fact: *Entiendo que llegas mañana*. Nothing more.\n\nWith the *-e* style verb (*estés, quieras, esté, tenga, te guste*), you are saying: it makes sense that you feel this. *Entiendo que estés molesta* means \"I get why you're upset\".\n\nSo the verb form carries the kindness. English uses a tone of voice; Spanish changes the ending. *Comprendo que* works the same way.",
+  "rule": "Two meanings hide behind *entiendo que*.\n\nWith the ordinary form, you have just taken in a fact: *Entiendo que llegas mañana*. Nothing more.\n\nWith the subjunctive (*estés, quieras, esté, tenga, te guste*), you are saying: it makes sense that you feel this. *Entiendo que estés molesta* means \"I get why you're upset\".\n\nSo the verb form carries the kindness. English uses a tone of voice; Spanish changes the ending. *Comprendo que* works the same way.",
   "smallPrint": "Teachers call this the subjunctive after a verb of understanding: it presents the feeling as reasonable instead of reporting it as news.",
   "readAndPick": [
     {
@@ -130,7 +130,7 @@
       "accept": [
         "Comprendo que llegas mañana."
       ],
-      "why": "This is only information, so the plain verb *llegas* stays."
+      "why": "This is only information, so the ordinary form *llegas* stays."
     },
     {
       "prompt": "Make it about Vale: Entiendo que estés molesta.",
@@ -168,7 +168,7 @@
     {
       "wrong": "Entiendo que llegues mañana.",
       "right": "Entiendo que llegas mañana.",
-      "why": "Plain news about what someone does stays in the plain form; the *-e* style is for feelings."
+      "why": "Plain news about what someone does stays in the ordinary form; the subjunctive is for feelings."
     },
     {
       "wrong": "Entiendo que no te gusta el cambio.",

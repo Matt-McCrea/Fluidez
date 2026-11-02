@@ -31,7 +31,7 @@
       "en": "I'm fed up with them not listening to me. (a man speaking)"
     }
   ],
-  "rule": "Two frames after *estoy harto de*.\n\nSame person feels and does: an infinitive. *Estoy harto de esperar.*\n\nSomeone else does it: *que* plus the wish form. *Estoy harta de que llegues tarde.*\n\n*Harto* is for a man speaking, *harta* for a woman. English says \"fed up with you being late\"; Spanish needs *que*.\n\nMilder: *Ya me cansé de…*. To cut it off: *¡Ya basta!* or *¡Ya basta de* plus the thing.",
+  "rule": "Two frames after *estoy harto de*.\n\nSame person feels and does: an infinitive. *Estoy harto de esperar.*\n\nSomeone else does it: *que* plus the subjunctive. *Estoy harta de que llegues tarde.*\n\n*Harto* is for a man speaking, *harta* for a woman. English says \"fed up with you being late\"; Spanish needs *que*.\n\nMilder: *Ya me cansé de…*. To cut it off: *¡Ya basta!* or *¡Ya basta de* plus the thing.",
   "smallPrint": "Teachers call this an expression of emotion: the feeling triggers the subjunctive after *que*.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Pick the right form and type the whole sentence: *Estoy harta de que siempre ___ tarde.* (*llegues* or *llegar*)",
       "answer": "Estoy harta de que siempre llegues tarde.",
       "accept": [],
-      "why": "Someone else does it, so after *que* comes the wish form."
+      "why": "Someone else does it, so after *que* comes the subjunctive."
     },
     {
       "prompt": "Type in Spanish (a man speaking): I'm sick of waiting.",
@@ -130,7 +130,7 @@
       "prompt": "Type in Spanish (a woman speaking): I'm fed up with them not listening to me.",
       "answer": "Estoy harta de que no me escuchen.",
       "accept": [],
-      "why": "A woman says *harta*, and *no me escuchen* is the wish form after *que*."
+      "why": "A woman says *harta*, and *no me escuchen* is the subjunctive after *que*."
     },
     {
       "prompt": "Type in Spanish: Enough excuses!",
@@ -153,14 +153,14 @@
       "prompt": "Say it about someone else: *Estoy harto de llegar tarde.* Say (a man speaking): I'm fed up with my brother being late.",
       "answer": "Estoy harto de que mi hermano llegue tarde.",
       "accept": [],
-      "why": "A new doer needs *que* plus the wish form: *llegue*."
+      "why": "A new doer needs *que* plus the subjunctive: *llegue*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Estoy harta de que llegas tarde.",
       "right": "Estoy harta de que llegues tarde.",
-      "why": "Almost. After *de que* the verb takes the wish form: *llegues*."
+      "why": "Almost. After *de que* the verb takes the subjunctive: *llegues*."
     },
     {
       "wrong": "Estoy harto de esperando.",

@@ -31,7 +31,7 @@
       "en": "What do you mean you don't remember? But you were there!"
     }
   ],
-  "rule": "To push back on what someone just said, repeat their words after *cómo que*: *¿Cómo que no vienes?* Then give the reason with *si*: *¡Si lo prometiste!* Here *si* means \"but\", not \"if\".\n\nAfter an order, the echo takes the wish form: *te vayas* becomes *¿Cómo que me vaya?*\n\n*¿Que si…?* echoes a question you were just asked, to launch an emphatic yes: *¿Que si me gusta? ¡Me encanta!*\n\nIt is loud and personal, so keep it for people you know.",
+  "rule": "To push back on what someone just said, repeat their words after *cómo que*: *¿Cómo que no vienes?* Then give the reason with *si*: *¡Si lo prometiste!* Here *si* means \"but\", not \"if\".\n\nAfter an order, the echo takes the subjunctive: *te vayas* becomes *¿Cómo que me vaya?*\n\n*¿Que si…?* echoes a question you were just asked, to launch an emphatic yes: *¿Que si me gusta? ¡Me encanta!*\n\nIt is loud and personal, so keep it for people you know.",
   "smallPrint": "Teachers call this an echo (*eco recapitulativo*): you repeat the other person's words to question or correct them.",
   "readAndPick": [
     {
@@ -134,7 +134,7 @@
       "prompt": "A friend says *Mejor que te vayas.* Echo it: What do you mean, I should leave?",
       "answer": "¿Cómo que me vaya?",
       "accept": [],
-      "why": "After an order the echo takes the wish form, and *te* becomes *me* because the speaker is now you."
+      "why": "After an order the echo takes the subjunctive, and *te* becomes *me* because the speaker is now you."
     },
     {
       "prompt": "Make it about her: *¿Cómo que no vienes?* becomes What do you mean she's not coming?",
@@ -163,7 +163,7 @@
     {
       "wrong": "¿Cómo que no vengas? ¡Si lo prometiste!",
       "right": "¿Cómo que no vienes? ¡Si lo prometiste!",
-      "why": "Almost. They told you a fact, so you echo it as they said it: *vienes*. The wish form is only for echoing an order."
+      "why": "Almost. They told you a fact, so you echo it as they said it: *vienes*. The subjunctive is only for echoing an order."
     }
   ],
   "personal": "Think of something a friend might say that would annoy you. Write it, then answer with *¿Cómo que…?* and a *¡Si…!*"

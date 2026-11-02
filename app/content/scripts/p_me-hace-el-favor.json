@@ -13,7 +13,7 @@
     { "es": "¿Me hacen el favor y se sientan?", "en": "Would you all take a seat, please?" },
     { "es": "Hazme el favor de bajar la voz.", "en": "Do me a favour and keep your voice down. (to a friend, sharp)" }
   ],
-  "rule": "*Hacer el favor* is the Colombian way to say \"please\" to a request. Two frames:\n\n*¿Me hace el favor de* + infinitive\n*¿Me hace el favor y* + a normal verb\n\nThe verb *hacer* matches who you are talking to: *hace* (usted), *haces* (a friend), *hacen* (you all). Keep the rest of the sentence on the same footing: *¿Me hace el favor y me pasa…?*\n\nWatch the tone. With a question mark and a smile it is gentle. As a bare command, *Hazme el favor de…*, it is what a parent says when patience has run out.",
+  "rule": "*Hacer el favor* is the Colombian way to say \"please\" to a request. Two frames:\n\n*¿Me hace el favor de* + infinitive\n*¿Me hace el favor y* + an ordinary verb\n\nThe verb *hacer* matches who you are talking to: *hace* (usted), *haces* (a friend), *hacen* (you all). Keep the rest of the sentence on the same footing: *¿Me hace el favor y me pasa…?*\n\nWatch the tone. With a question mark and a smile it is gentle. As a bare command, *Hazme el favor de…*, it is what a parent says when patience has run out.",
   "smallPrint": "Teachers call this a courtesy formula with *hacer el favor*.",
   "readAndPick": [
     { "es": "¿Me hace el favor y me pasa la sal?", "options": ["Would you pass me the salt, please? (formal)", "Would you pass me the salt, please? (to a friend)", "Would you all pass me the salt, please?"], "answer": 0 },
@@ -42,7 +42,7 @@
       "prompt": "Type it in Spanish: Would you wait a moment, please? (formal, use *y*)",
       "answer": "¿Me hace el favor y espera un momento?",
       "accept": ["¿Me hace el favor de esperar un momento?"],
-      "why": "After *y* comes a normal verb, in the same *usted* form: *espera*."
+      "why": "After *y* comes an ordinary verb, in the same *usted* form: *espera*."
     },
     {
       "prompt": "Type it in Spanish: Would you help me with the tables, please? (to a friend, use *y*)",

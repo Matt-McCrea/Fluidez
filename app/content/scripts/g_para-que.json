@@ -35,7 +35,7 @@
       "en": "I saved a piece of cake so you can try it. (to a friend)"
     }
   ],
-  "rule": "You already say why you do things with *para* plus the plain verb: *Ahorro plata para comprar un carro.* I save, I buy.\n\nWhen the second action belongs to someone else, Spanish says *para que* and uses the wish form, the same one you know from *quiero que*:\n*Te dejo la llave para que abras.* I leave the key, you open.\n*Hablo despacio para que me entiendas.* I speak, you understand.\n\nEnglish hides this in many ways: so you can, so that you'll, for you to. Spanish has one: *para que* plus the wish form. You don't need *puedas* or a future, just *abras*, *entiendas*, *vuelvan*.\n\nTwo things never happen after *para que*: the plain verb (*para que abrir*) and the ordinary present (*para que abres*).",
+  "rule": "You already say why you do things with *para* plus the dictionary form: *Ahorro plata para comprar un carro.* I save, I buy.\n\nWhen the second action belongs to someone else, Spanish says *para que* and uses the subjunctive, the same one you know from *quiero que*:\n*Te dejo la llave para que abras.* I leave the key, you open.\n*Hablo despacio para que me entiendas.* I speak, you understand.\n\nEnglish hides this in many ways: so you can, so that you'll, for you to. Spanish has one: *para que* plus the subjunctive. You don't need *puedas* or a future, just *abras*, *entiendas*, *vuelvan*.\n\nTwo things never happen after *para que*: the dictionary form (*para que abrir*) and the ordinary present (*para que abres*).",
   "smallPrint": "Teachers call this a purpose clause (*oración final*). *Para que* always takes the subjunctive.",
   "readAndPick": [
     {
@@ -119,7 +119,7 @@
       "prompt": "Pick *abres* or *abras* and type the whole sentence, to a friend: *Te dejo la llave para que ___ mañana.*",
       "answer": "Te dejo la llave para que abras mañana.",
       "accept": [],
-      "why": "After *para que*, always the wish form: *abras*."
+      "why": "After *para que*, always the subjunctive: *abras*."
     },
     {
       "prompt": "Pick *llamarme* or *que me llames* and type the whole sentence, to a friend: *Te doy mi número para ___.* (so you can call me)",
@@ -151,7 +151,7 @@
       "prompt": "Change who does it. Now you're saving so your son can buy a car: *Ahorro plata para comprar un carro.*",
       "answer": "Ahorro plata para que mi hijo compre un carro.",
       "accept": [],
-      "why": "A second person buys, so *para que* and the wish form *compre*."
+      "why": "A second person buys, so *para que* and the subjunctive *compre*."
     },
     {
       "prompt": "Say it to you all (*ustedes*): *Te llamo para que no te preocupes.*",
@@ -164,17 +164,17 @@
     {
       "wrong": "Te dejo la llave para que abres mañana.",
       "right": "Te dejo la llave para que abras mañana.",
-      "why": "Almost. *Para que* always takes the wish form: *abras*, not *abres*."
+      "why": "Almost. *Para que* always takes the subjunctive: *abras*, not *abres*."
     },
     {
       "wrong": "Te doy mi número para llamarme.",
       "right": "Te doy mi número para que me llames.",
-      "why": "With the plain verb, the caller is you. Your friend calls, so *para que me llames*."
+      "why": "With the dictionary form, the caller is you. Your friend calls, so *para que me llames*."
     },
     {
       "wrong": "Ahorro plata para que compre un carro.",
       "right": "Ahorro plata para comprar un carro.",
-      "why": "If you're the one buying, drop *que* and use the plain verb."
+      "why": "If you're the one buying, drop *que* and use the dictionary form."
     }
   ],
   "personal": "Write two true lines about something you do for someone else, and why: *Llamo a mi mamá los domingos para que...*, *Cocino los sábados para que...*"

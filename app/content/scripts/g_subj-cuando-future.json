@@ -35,7 +35,7 @@
       "en": "I'm going to rest when the month ends."
     }
   ],
-  "rule": "English hides this one. *When you get here* looks like the present, even though it is about later. Spanish shows it.\n\nWhen *cuando* points to something that hasn't happened yet, the verb after it takes the other vowel: *-ar* verbs take *e*, *-er* and *-ir* verbs take *a*. *Llegar* gives *llegues*, *terminar* gives *termine*, and the irregular ones you know come along: *sepa*, *tengamos*, *sea*, *salga*.\n\nThe same goes for *en cuanto*, *apenas* and *tan pronto como* (as soon as), *después de que* (after) and *hasta que* (until).\n\nThe test: is it still in the future? Then use this form. The other half of the sentence is usually a future, a command or the plain present: *llámame*, *te aviso*, *empezamos*.",
+  "rule": "English hides this one. *When you get here* looks like the present, even though it is about later. Spanish shows it.\n\nWhen *cuando* points to something that hasn't happened yet, the verb after it takes the subjunctive: *-ar* verbs take *e*, *-er* and *-ir* verbs take *a*. *Llegar* gives *llegues*, *terminar* gives *termine*, and the irregular ones you know come along: *sepa*, *tengamos*, *sea*, *salga*.\n\nThe same goes for *en cuanto*, *apenas* and *tan pronto como* (as soon as), *después de que* (after) and *hasta que* (until).\n\nThe test: is it still in the future? Then use this form. The other half of the sentence is usually a future, a command or the plain present: *llámame*, *te aviso*, *empezamos*.",
   "smallPrint": "Teachers call this the subjunctive in time clauses. What matters is not whether you know the date, only whether it has happened yet.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Choose *llegas* or *llegues* and type the whole sentence: Cuando ___, llámame. (When you get here, call me. To a friend.)",
       "answer": "Cuando llegues, llámame.",
       "accept": [],
-      "why": "It hasn't happened yet, so *cuando* takes the other vowel: *llegues*."
+      "why": "It hasn't happened yet, so *cuando* takes the subjunctive: *llegues*."
     },
     {
       "prompt": "Choose *sé* or *sepa* and type the whole sentence: En cuanto ___ algo, te aviso. (As soon as I know anything, I'll let you know.)",
@@ -120,7 +120,7 @@
       "accept": [
         "Te aviso en cuanto sepa algo."
       ],
-      "why": "It is still in the future, so you need the other vowel: *sepa*."
+      "why": "It is still in the future, so you need the subjunctive: *sepa*."
     },
     {
       "prompt": "Say: When Vale gets here, we'll start.",
@@ -176,7 +176,7 @@
     {
       "wrong": "Espera hasta que llega la abogada.",
       "right": "Espera hasta que llegue la abogada.",
-      "why": "The lawyer hasn't arrived yet, so *hasta que* wants the other vowel."
+      "why": "The lawyer hasn't arrived yet, so *hasta que* wants the subjunctive."
     },
     {
       "wrong": "Cuando llegue ayer, Vale ya estaba aquí.",

@@ -1647,7 +1647,7 @@
   },
   {
     "id": "u57-0062",
-    "es": "Cuanto más prisa tengo, peor escribo.",
+    "es": "Cuanta más prisa tengo, peor escribo.",
     "en": "The more of a hurry I'm in, the worse I write.",
     "accept": [],
     "acceptEn": [],
@@ -29825,13 +29825,15 @@
   },
   {
     "id": "u57-1071",
-    "es": "¿Estás por vender?\nEstoy por todo, y por nada.",
-    "en": "Are you thinking of selling?\nI'm thinking of everything, and of nothing.",
+    "es": "¿Estás por vender?\nEstoy por decir que sí.",
+    "en": "Are you thinking of selling?\nI'm tempted to say yes.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
       "g:por-para-1",
+      "g:that-clauses",
+      "l:decir",
       "l:estar",
       "l:vender",
       "p:estar-por"
@@ -41755,7 +41757,6 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:frio-que-cala-los-huesos",
       "g:gender-articles",
       "g:prep-infinitive",
       "g:preterite-ar",
@@ -47337,18 +47338,21 @@
   },
   {
     "id": "u57-1714",
-    "es": "¿Estás por llamar a la editorial?\nEstoy por todo, pero me da miedo.",
-    "en": "Are you thinking of calling the publisher?\nI'm thinking of everything, but I'm scared.",
+    "es": "¿Estás por llamar a la editorial?\nEstoy por hacerlo, pero me da miedo.",
+    "en": "Are you thinking of calling the publisher?\nI'm tempted to, but I'm scared.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "c:me-regala",
+      "g:direct-objects",
       "g:estar-location-states",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:por-para-1",
       "l:dar",
       "l:editorial",
       "l:estar",
+      "l:hacer",
       "l:llamar",
       "l:miedo",
       "p:estar-por",

@@ -122,13 +122,13 @@
       "accept": [
         "Listo, siempre y cuando estés de vuelta antes de medianoche."
       ],
-      "why": "A condition after *siempre que* takes the wish ending: *estés*, not *estás*."
+      "why": "A condition after *siempre que* takes the subjunctive: *estés*, not *estás*."
     },
     {
       "prompt": "Yes, but nobody is to touch Simón's cage.",
       "answer": "Sí, pero que nadie toque la jaula de Simón.",
       "accept": [],
-      "why": "*Toque* is the wish form of *tocar*: the *-ar* verb ends in *-e*."
+      "why": "*Toque* is the subjunctive of *tocar*: the *-ar* verb ends in *-e*."
     },
     {
       "prompt": "Sure, as long as you wash it afterwards. (to a friend)",
@@ -136,13 +136,13 @@
       "accept": [
         "Claro, siempre y cuando lo laves después."
       ],
-      "why": "*Laves* is *lavar* with the *tú* wish ending *-es*."
+      "why": "*Laves* is *lavar* with the *tú* subjunctive ending *-es*."
     },
     {
       "prompt": "OK, as long as you don't take me to the usual place. (to a friend)",
       "answer": "Listo, mientras no me lleves al sitio de siempre.",
       "accept": [],
-      "why": "*Mientras no* also sets a condition, and the verb after it takes the wish ending: *lleves*."
+      "why": "*Mientras no* also sets a condition, and the verb after it takes the subjunctive: *lleves*."
     },
     {
       "prompt": "Make it about us: Fine, as long as we pay.",
@@ -151,20 +151,20 @@
         "Está bien, siempre y cuando paguemos nosotros.",
         "Está bien, siempre que nosotros paguemos."
       ],
-      "why": "For *we* the wish ending is *-emos*: *paguemos*."
+      "why": "For *we* the subjunctive is *-emos*: *paguemos*."
     },
     {
       "prompt": "Yes, but let me know when you arrive. (to a friend)",
       "answer": "Sí, pero que me avises cuando llegues.",
       "accept": [],
-      "why": "Both *avises* and *llegues* take the *tú* wish ending."
+      "why": "Both *avises* and *llegues* take the *tú* subjunctive ending."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Sí, pero que no se entera tu papá.",
       "right": "Sí, pero que no se entere tu papá.",
-      "why": "Almost. After *sí, pero que* Spanish wants the wish ending (*entere*), not the plain *entera*."
+      "why": "Almost. After *sí, pero que* Spanish wants the subjunctive (*entere*), not the plain *entera*."
     },
     {
       "wrong": "Listo, siempre que estás de vuelta antes de medianoche.",

@@ -13,7 +13,7 @@
     { "es": "No suelo cenar tarde.", "en": "I don't usually have dinner late." },
     { "es": "Hernando y Tomás suelen hablar por la tarde.", "en": "Hernando and Tomás usually talk in the afternoon." }
   ],
-  "rule": "English puts usually in front of the verb. Spanish turns usually into the verb itself: *suelo* plus the plain form of the action. *Suelo desayunar* is I usually have breakfast.\n\n*Soler* is a boot verb: o turns to ue.\n*suelo, sueles, suele, solemos, suelen*\nThe second verb never changes: *suelo cenar*, *solemos cenar*.\n\nFor not, put *no* in front: *No suelo cenar tarde*.\n\nIt's only for habits, so you'll use it in the present.",
+  "rule": "English puts usually in front of the verb. Spanish turns usually into the verb itself: *suelo* plus the dictionary form of the action. *Suelo desayunar* is I usually have breakfast.\n\n*Soler* is a boot verb: o turns to ue.\n*suelo, sueles, suele, solemos, suelen*\nThe second verb never changes: *suelo cenar*, *solemos cenar*.\n\nFor not, put *no* in front: *No suelo cenar tarde*.\n\nIt's only for habits, so you'll use it in the present.",
   "smallPrint": "Teachers call *soler* plus an infinitive a verbal periphrasis: two verbs working as one. There's also a past form, *solía* (I used to), for later.",
   "readAndPick": [
     { "es": "Suelo desayunar a las siete.", "options": ["I usually have breakfast at seven.", "We usually have breakfast at seven.", "She usually has breakfast at seven."], "answer": 0 },
@@ -36,7 +36,7 @@
       "prompt": "Pick and type the whole sentence: *Solemos ___ al mercado.* (*ir* or *vamos*) We usually go to the market.",
       "answer": "Solemos ir al mercado.",
       "accept": [],
-      "why": "*Solemos* already says we, so the second verb stays plain: *ir*."
+      "why": "*Solemos* already says we, so the second verb stays in the dictionary form: *ir*."
     },
     {
       "prompt": "Ask a friend: Do you usually have lunch at home?",
@@ -73,7 +73,7 @@
     {
       "wrong": "Suelo desayuno a las siete.",
       "right": "Suelo desayunar a las siete.",
-      "why": "Almost. After *suelo*, the second verb stays in its plain form."
+      "why": "Almost. After *suelo*, the second verb stays in its dictionary form."
     },
     {
       "wrong": "Suelemos ir al mercado.",

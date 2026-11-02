@@ -31,7 +31,7 @@
       "en": "Silence is requested during the meeting."
     }
   ],
-  "rule": "*Se ruega* is a polite request from nobody in particular.\n\n*Se ruega* + infinitive: *Se ruega no fumar.*\n*Se ruega* + noun: *Se ruega puntualidad.*\n*Se ruega a* + who + *que* + a changed verb: *Se ruega a los asistentes que apaguen el celular.*\n\nThe verb after *que* takes the *-en* / *-e* ending (*apaguen*, *lleguen*), not the usual one. English says *please* or *kindly*. Spanish keeps the sentence impersonal. In Colombia you will also see *Favor no fumar* on signs: same job, less ceremony.",
+  "rule": "*Se ruega* is a polite request from nobody in particular.\n\n*Se ruega* + infinitive: *Se ruega no fumar.*\n*Se ruega* + noun: *Se ruega puntualidad.*\n*Se ruega a* + who + *que* + the subjunctive: *Se ruega a los asistentes que apaguen el celular.*\n\nThe verb after *que* takes the *-en* / *-e* ending (*apaguen*, *lleguen*), not the usual one. English says *please* or *kindly*. Spanish keeps the sentence impersonal. In Colombia you will also see *Favor no fumar* on signs: same job, less ceremony.",
   "smallPrint": "Teachers call this an impersonal *se* request, with the subjunctive after *que*.",
   "readAndPick": [
     {
@@ -110,7 +110,7 @@
       "prompt": "Choose *lleguen* or *llegan*, then type the whole sentence: Se ruega a los asistentes que ___ temprano. (arrive early)",
       "answer": "Se ruega a los asistentes que lleguen temprano.",
       "accept": [],
-      "why": "After *se ruega que* the verb takes the changed ending: *lleguen*."
+      "why": "After *se ruega que* the verb takes the subjunctive: *lleguen*."
     },
     {
       "prompt": "Type it in Spanish: Please do not use your phone during the meeting. (a notice)",
@@ -122,7 +122,7 @@
       "prompt": "Type it in Spanish: Customers are asked to pay at the register.",
       "answer": "Se ruega a los clientes que paguen en la caja.",
       "accept": [],
-      "why": "Who is asked goes after *a*, then *que* and the changed verb."
+      "why": "Who is asked goes after *a*, then *que* and the subjunctive."
     },
     {
       "prompt": "Type it in Spanish: Silence is requested during the meeting.",
@@ -157,7 +157,7 @@
     {
       "wrong": "Se ruega a los asistentes que apagan el celular.",
       "right": "Se ruega a los asistentes que apaguen el celular.",
-      "why": "Almost. After *que* in a request, the verb takes the changed ending: *apaguen*."
+      "why": "Almost. After *que* in a request, the verb takes the subjunctive: *apaguen*."
     }
   ],
   "personal": "Imagine a sign for your own home or office, and write it with *Se ruega*."

@@ -98,7 +98,7 @@ const EXCEPTIONS: Record<string, string[]> = {
   'p:te-lo-agradezco': ['Gracias por venir.'],                              // p:gracias-por's
   'p:me-harias-un-favor': ['Este mueble pesa muchísimo.'],                  // the hint, no construction
   'p:turning-it-up': ['Aquí sí sirven café café.'],                         // repetition: no backreference
-  'p:synonym-hypernym': ['Juan llevó a su perro al veterinario: el animal tenía una pata rota.', 'Mario ganó el Nobel en 2010 y le dedicó el premio a su madre.'],
+  'p:synonym-hypernym': ['Juan llevó a su perro al veterinario; el animal tenía una pata rota.', 'Mario ganó el Nobel en 2010 y le dedicó el premio a su madre.'],
   'p:ojo-con-no-confies': ['Si no lo termina mañana, está despedido.'],    // a bare first conditional
   'p:yo-ni-loco': ['¡Descansar tres meses! ¡Qué suerte!'],                  // bare infinitive exclamation
   'p:si-quieres-que': ['Si quieres comprártelo, cómpratelo.'],              // needs the same verb twice

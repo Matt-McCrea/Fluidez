@@ -7496,16 +7496,17 @@
   },
   {
     "id": "u41-0280",
-    "es": "Se portó como si nada hubiera pasado.",
-    "en": "He behaved as if nothing had happened.",
+    "es": "Se portó como si no pasara nada.",
+    "en": "He acted as if nothing were happening.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:como-si",
       "g:imperfect-subj",
+      "g:negation-words",
       "g:preterite-ar",
       "g:reflexive-routine",
-      "l:pasado",
+      "l:pasar",
       "l:portarse"
     ],
     "targets": [
@@ -9479,8 +9480,8 @@
   },
   {
     "id": "u41-0361",
-    "es": "Pórtate como si nada hubiera pasado.",
-    "en": "Act as if nothing had happened. (to a friend)",
+    "es": "Pórtate como si no pasara nada.",
+    "en": "Act as if nothing were happening. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9488,8 +9489,9 @@
       "g:commands-with-pronouns",
       "g:como-si",
       "g:imperfect-subj",
+      "g:negation-words",
       "g:reflexive-routine",
-      "l:pasado",
+      "l:pasar",
       "l:portarse"
     ],
     "targets": [

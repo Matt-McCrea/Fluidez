@@ -1,7 +1,7 @@
 {
   "node": "p:volver-a-inf",
   "hook": {
-    "line": "The man from Altamira called. Then he called again. And again. Spanish has a neat way to say it: *volver a* plus the plain verb.",
+    "line": "The man from Altamira called. Then he called again. And again. Spanish has a neat way to say it: *volver a* plus the dictionary form.",
     "es": "El señor de Altamira volvió a llamar.",
     "en": "The man from Altamira called again."
   },
@@ -13,7 +13,7 @@
     { "es": "Nunca volvió a llamar.", "en": "He never called again." },
     { "es": "¿Vas a volver a llamar?", "en": "Are you going to call again? (to a friend)" }
   ],
-  "rule": "English adds again at the end. Spanish often puts *volver a* in front: *volvió a llamar*, he called again.\n\nOnly *volver* changes: *vuelvo*, *vuelves*, *vuelve*, *volvemos*, *vuelven*; in the past *volví*, *volviste*, *volvió*, *volvimos*, *volvieron*. The second verb stays plain.\n\nKeep the *a*. Without a verb after it, *volver* just means to come back: *Volvió al café*, she came back to the café.\n\n*Nunca volvió a llamar* is never again. *Otra vez* works too; *volver a* is the one you hear in every good story.",
+  "rule": "English adds again at the end. Spanish often puts *volver a* in front: *volvió a llamar*, he called again.\n\nOnly *volver* changes: *vuelvo*, *vuelves*, *vuelve*, *volvemos*, *vuelven*; in the past *volví*, *volviste*, *volvió*, *volvimos*, *volvieron*. The second verb stays in the dictionary form.\n\nKeep the *a*. Without a verb after it, *volver* just means to come back: *Volvió al café*, she came back to the café.\n\n*Nunca volvió a llamar* is never again. *Otra vez* works too; *volver a* is the one you hear in every good story.",
   "smallPrint": "Teachers file *volver a* plus an infinitive with the verbal periphrases, alongside *dejar de* and *empezar a*.",
   "readAndPick": [
     { "es": "Volvió a llamar.", "options": ["He called again.", "He came back."], "answer": 0 },
@@ -36,7 +36,7 @@
       "prompt": "Pick and type the whole sentence: *Volví a ___ la carta.* (*leer* or *leí*) I read the letter again.",
       "answer": "Volví a leer la carta.",
       "accept": [],
-      "why": "*Volví* already says I and past; *leer* stays plain."
+      "why": "*Volví* already says I and past; *leer* stays in the dictionary form."
     },
     {
       "prompt": "It rained again.",
@@ -54,7 +54,7 @@
       "prompt": "Ask a friend: Are you going to call again?",
       "answer": "¿Vas a volver a llamar?",
       "accept": [],
-      "why": "*Vas a* plus *volver a llamar*: after each *a*, the verb stays plain."
+      "why": "*Vas a* plus *volver a llamar*: after each *a*, the verb stays in the dictionary form."
     },
     {
       "prompt": "Say it with *volver a*: *Llamó otra vez.*",
@@ -78,7 +78,7 @@
     {
       "wrong": "Volvió a llamó.",
       "right": "Volvió a llamar.",
-      "why": "Only *volver* changes; the second verb stays plain."
+      "why": "Only *volver* changes; the second verb stays in the dictionary form."
     },
     {
       "wrong": "Te llamo atrás más tarde.",

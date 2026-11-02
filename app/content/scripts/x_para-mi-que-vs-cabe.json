@@ -31,7 +31,7 @@
       "en": "There's a possibility that the mayor knows more than he says."
     }
   ],
-  "rule": "Both frames guess, but they guess differently.\n\n*Para mí que* is a hunch, said over coffee. You lean one way, so the verb is plain: *Para mí que no viene.* It is the mood of \"I'd bet\".\n\n*Cabe la posibilidad de que* is formal. You hold the idea open without leaning, so the verb takes the wish form: *Cabe la posibilidad de que no venga.* It suits a report or a meeting.\n\nSo ask two things: do I lean, and who am I talking to? A friend and a lean: *para mí que*. A room and an open door: *cabe la posibilidad de que*.",
+  "rule": "Both frames guess, but they guess differently.\n\n*Para mí que* is a hunch, said over coffee. You lean one way, so the verb is plain: *Para mí que no viene.* It is the mood of \"I'd bet\".\n\n*Cabe la posibilidad de que* is formal. You hold the idea open without leaning, so the verb takes the subjunctive: *Cabe la posibilidad de que no venga.* It suits a report or a meeting.\n\nSo ask two things: do I lean, and who am I talking to? A friend and a lean: *para mí que*. A room and an open door: *cabe la posibilidad de que*.",
   "smallPrint": "Teachers call this the indicative after an opinion marker versus the subjunctive after an expression of possibility.",
   "readAndPick": [
     {
@@ -112,19 +112,19 @@
       "prompt": "Pick *viene* or *venga* and type the whole sentence, as a hunch: *Para mí que no ___.*",
       "answer": "Para mí que no viene.",
       "accept": [],
-      "why": "A hunch with *para mí que* keeps the plain verb."
+      "why": "A hunch with *para mí que* keeps the ordinary form."
     },
     {
       "prompt": "Pick *viene* or *venga* and type the whole sentence, formally: *Cabe la posibilidad de que no ___.*",
       "answer": "Cabe la posibilidad de que no venga.",
       "accept": [],
-      "why": "After *cabe la posibilidad de que*, the verb takes the wish form."
+      "why": "After *cabe la posibilidad de que*, the verb takes the subjunctive."
     },
     {
       "prompt": "Say: If you ask me, Altamira has already bought the building.",
       "answer": "Para mí que Altamira ya compró el edificio.",
       "accept": [],
-      "why": "It is a hunch, so the verb stays plain."
+      "why": "It is a hunch, so the verb stays ordinary."
     },
     {
       "prompt": "Say formally: There's a possibility that Altamira will buy the building.",
@@ -148,19 +148,19 @@
       "prompt": "Make it a hunch, negative: *Para mí que hay trato.* (If you ask me, there's no deal.)",
       "answer": "Para mí que no hay trato.",
       "accept": [],
-      "why": "*No* goes in front of the verb; the verb stays plain."
+      "why": "*No* goes in front of the verb; the verb stays ordinary."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Para mí que no venga.",
       "right": "Para mí que no viene.",
-      "why": "Almost. A hunch leans one way, so use the plain verb, not the wish form."
+      "why": "Almost. A hunch leans one way, so use the ordinary form, not the subjunctive."
     },
     {
       "wrong": "Cabe la posibilidad de que no viene.",
       "right": "Cabe la posibilidad de que no venga.",
-      "why": "This frame holds the idea open, so the verb takes the wish form."
+      "why": "This frame holds the idea open, so the verb takes the subjunctive."
     },
     {
       "wrong": "Cabe la posibilidad que no venga.",

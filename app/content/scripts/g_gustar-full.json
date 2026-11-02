@@ -35,7 +35,7 @@
       "en": "I like tea."
     }
   ],
-  "rule": "You already know *me gusta* and *te gusta*. For everyone else, only the little word in front changes:\n\n*me*: me\n*te*: you (a friend)\n*le*: him, her, you (formal)\n*nos*: us\n*les*: them, you all\n\nThe verb still follows the thing that's liked: *gusta* for one thing, *gustan* for several. *Nos gusta el café. Les gustan las arepas.*\n\n*Encantar* works exactly the same way and means 'love' for things, food and places: *Me encanta el ajiaco.*\n\nSince *le* could be him, her or you, Spanish often names the person with *a* in front: *A Vale le gusta la torta. ¿A usted le gusta?* The *le* stays even when you name the person. And *a mí me gusta* just puts weight on 'me'.\n\nCareful: in *A Vale le encanta la torta*, Vale isn't doing the verb. The cake is.",
+  "rule": "*Gustar* doesn't mean like. It means please. It works like *bother* in English: the noise bothers me, the noises bother me. The thing does it, and you're on the receiving end.\n\n*Me gusta el tinto.* I like black coffee. Black coffee pleases me.\n*Me gustan los parques.* I like parks. Parks please me.\n*¿Te gusta Bogotá?* Do you like Bogotá? Does Bogotá please you?\n*No nos gusta el horario.* We don't like the schedule.\n*Le gustan las arepas.* She likes arepas. Arepas please her.\n*Me gustas.* I like you. You please me.\n\n**The test.** Say your sentence with *pleases*. I like parks becomes parks please me.\nWhat does the pleasing? The verb follows that: one thing, *gusta*; several, *gustan*.\nWho gets pleased? That's your little word: *me*, *te*, *le*, *nos*, *les*.\n\n**The trap.** English starts with you, so you'll want to start with *yo*. Don't. *Yo gusto el café* says you're the pleasant one.\nThe thing comes after the verb, so it looks like the thing you did something to. It isn't. It's in charge of the verb: *Me gustan los parques*, not *Me gusta los parques*.\nIt also keeps its *el* or *la*: *Me gusta el café*.\n\nTo name the person, add *a* and keep the little word: *A Vale le gusta el tinto. ¿A usted le gusta? A mí me gusta.* Never *Vale gusta*, *A Vale gusta* or *Yo me gusta*.\n\n*Encantar* and *interesar* work the same way.\n\nOne warning: about someone you know, *me gustas* and *me gusta Tomás* usually mean you're attracted to them. For things, places and activities it's always safe.",
   "smallPrint": "Teachers call *me*, *te*, *le*, *nos* and *les* indirect object pronouns. Saying the person twice (*a Vale le…*) is called doubling, and with *gustar* it's normal, not a mistake.",
   "readAndPick": [
     {
@@ -123,6 +123,14 @@
         "He likes black coffee."
       ],
       "answer": 0
+    },
+    {
+      "es": "Me gustas.",
+      "options": [
+        "You like me.",
+        "I like you."
+      ],
+      "answer": 1
     }
   ],
   "yourTurn": [

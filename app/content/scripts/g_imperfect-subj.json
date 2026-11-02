@@ -39,7 +39,7 @@
       "en": "I wish I knew how to speak better."
     }
   ],
-  "rule": "You already use *ojalá* with the wish forms for something that could still happen: *Ojalá no llueva* (I hope it doesn't rain). When you wish for something that isn't true right now, or probably won't happen, you switch to a second set of forms.\n\nTo build it, start from the *ellos* form of the past: *tuvieron*, *pudieron*, *fueron*, *estuvieron*. Drop *ron* and add:\n*ra*, *ras*, *ra*, *ramos*, *ran*\n\n*tuvieron* becomes *tuviera*, *tuvieras*, *tuviera*, *tuviéramos*, *tuvieran*.\n\nThe *nosotros* form gets an accent on the vowel before *ramos*: *pudiéramos*, *estuviéramos*.\n\nSo *Ojalá tengas tiempo* is a hope (maybe you will), and *Ojalá tuvieras tiempo* is a wish (you don't). English only changes the tense; Spanish changes the form, and it works for every verb.",
+  "rule": "You already use *ojalá* with the subjunctive for something that could still happen: *Ojalá no llueva* (I hope it doesn't rain). When you wish for something that isn't true right now, or probably won't happen, you switch to a second set of forms.\n\nTo build it, start from the *ellos* form of the past: *tuvieron*, *pudieron*, *fueron*, *estuvieron*. Drop *ron* and add:\n*ra*, *ras*, *ra*, *ramos*, *ran*\n\n*tuvieron* becomes *tuviera*, *tuvieras*, *tuviera*, *tuviéramos*, *tuvieran*.\n\nThe *nosotros* form gets an accent on the vowel before *ramos*: *pudiéramos*, *estuviéramos*.\n\nSo *Ojalá tengas tiempo* is a hope (maybe you will), and *Ojalá tuvieras tiempo* is a wish (you don't). English only changes the tense; Spanish changes the form, and it works for every verb.",
   "smallPrint": "Teachers call this the imperfect subjunctive (*imperfecto de subjuntivo*). You will also see an *se* version, *tuviese*, *pudiese*, in books. It means the same.",
   "readAndPick": [
     {
@@ -161,7 +161,7 @@
       "prompt": "Turn the hope into a wish. It is a very hot day and there is no hope: *Ojalá haga menos calor.*",
       "answer": "Ojalá hiciera menos calor.",
       "accept": [],
-      "why": "*Hicieron* gives *hiciera*; the wish form changes to the second set."
+      "why": "*Hicieron* gives *hiciera*; the subjunctive changes to the second set."
     },
     {
       "prompt": "Say it to a friend instead: *Ojalá tuviera un carro.* (I wish you had a car.)",
@@ -179,7 +179,7 @@
     {
       "wrong": "Ojalá tenía más tiempo.",
       "right": "Ojalá tuviera más tiempo.",
-      "why": "English copies its past tense here (*I wish I had*), but Spanish needs the special form, not the ordinary past."
+      "why": "English copies its past tense here (*I wish I had*), but Spanish needs the subjunctive, not the ordinary past."
     },
     {
       "wrong": "Ojalá teniera más tiempo.",

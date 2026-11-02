@@ -35,7 +35,7 @@
       "en": "Is it essential that we all go?"
     }
   ],
-  "rule": "*Es imprescindible* means *it's essential*, the top of the ladder: *conveniente*, *necesario*, *imprescindible*. *Es fundamental*, *es esencial* and *es indispensable* work the same way.\n\nTalking in general: *es imprescindible* + infinitive. *Es imprescindible firmar.*\nNaming who must do it: *es imprescindible que* + the *-e* or *-a* form. *Es imprescindible que firmes.*\n\nEnglish says *it's essential for you to sign*. Spanish has no *for you*: it uses *que* and a new verb.",
+  "rule": "*Es imprescindible* means *it's essential*, the top of the ladder: *conveniente*, *necesario*, *imprescindible*. *Es fundamental*, *es esencial* and *es indispensable* work the same way.\n\nTalking in general: *es imprescindible* + infinitive. *Es imprescindible firmar.*\nNaming who must do it: *es imprescindible que* + the subjunctive. *Es imprescindible que firmes.*\n\nEnglish says *it's essential for you to sign*. Spanish has no *for you*: it uses *que* and a new verb.",
   "smallPrint": "Teachers call these impersonal expressions of necessity.",
   "readAndPick": [
     {
@@ -125,7 +125,7 @@
       "accept": [
         "Es imprescindible que firmes hoy."
       ],
-      "why": "After *que* comes a new verb in the *-e* or *-a* form, and *tú* ends in *-s*."
+      "why": "After *que* comes a new verb in the subjunctive, and *tú* ends in *-s*."
     },
     {
       "prompt": "Type it in Spanish: It's essential to check the contract.",
@@ -167,7 +167,7 @@
     {
       "wrong": "Es imprescindible que ella firma.",
       "right": "Es imprescindible que ella firme.",
-      "why": "Almost. After *es imprescindible que*, the verb takes the *-e* or *-a* form, never the plain one."
+      "why": "Almost. After *es imprescindible que*, the verb takes the subjunctive, never the ordinary one."
     },
     {
       "wrong": "Es imprescindible para ti firmar.",

@@ -39,8 +39,8 @@
       "en": "I liked that you wrote to me."
     }
   ],
-  "rule": "English says \"I wanted *you to come*\". Spanish splits it into two verbs joined by *que*: *Quería **que** vinieras*.\n\nThe second verb is in the *-ra* form you already know: *vinieras, llamara, abriera, ayudara*. Past wanting, asking, hoping or feeling pulls the next verb into the past with it.\n\n*Quería que vinieras* (I wanted you to come)\n*Me pidió que la llamara* (she asked me to call her)\n*Esperaba que me dijeras* (I hoped you would tell me)\n*Me gustó que escribieras* (I liked that you wrote)\n\nThe person who does the second verb shows in its ending (*-ras* = you, *-ran* = they) or in a name or *yo* beside it. When the wanter and the doer are the same, no *que*: *Quería venir*.",
-  "smallPrint": "Teachers call this the sequence of tenses (*concordancia de tiempos*): a past verb of wanting, asking or feeling is followed by the past subjunctive.",
+  "rule": "English says \"I wanted *you to come*\". Spanish splits it into two verbs joined by *que*: *Quería **que** vinieras*.\n\nThe second verb is in the *-ra* form you already know: *vinieras, llamara, abriera, ayudara*. What you wanted, asked for or hoped for was still ahead back then, and what you felt was about something at that time. Both take *-ra*.\n\n*Quería que vinieras* (I wanted you to come)\n*Me pidió que la llamara* (she asked me to call her)\n*Esperaba que me dijeras* (I hoped you would tell me)\n*Me gustó que escribieras* (I liked that you wrote)\n\nThe person who does the second verb shows in its ending (*-ras* = you, *-ran* = they) or in a name or *yo* beside it. When the wanter and the doer are the same, no *que*: *Quería venir*.\n\n*Antes de que* always holds it up: at that point in the story, it hadn't happened yet. *Antes de que se fuera, Vale probó el pan.*",
+  "smallPrint": "Teachers call this the sequence of tenses (*concordancia de tiempos*). After a past verb of wanting, asking or feeling, the past subjunctive is the usual choice.",
   "readAndPick": [
     {
       "es": "Quería que vinieras.",
@@ -165,7 +165,7 @@
       "prompt": "Make it past. Start from *Nos piden que cerremos temprano* and say \"They asked us to close early.\"",
       "answer": "Nos pidieron que cerráramos temprano.",
       "accept": [],
-      "why": "Both verbs step back together: *piden* becomes *pidieron* and *cerremos* becomes *cerráramos*."
+      "why": "The asking is over now, so *piden* becomes *pidieron*. Back then the closing was still ahead, so *cerráramos*."
     },
     {
       "prompt": "Make it negative: *Querían que Tomás vendiera.* Say \"They didn't want Tomás to sell.\"",
@@ -187,11 +187,6 @@
       "wrong": "Quería que vienes.",
       "right": "Quería que vinieras.",
       "why": "After a past *quería*, the second verb takes the past *-ra* form, not the plain present."
-    },
-    {
-      "wrong": "Quería que vengas.",
-      "right": "Quería que vinieras.",
-      "why": "Almost. *Vengas* is for *quiero que*; once the wanting is in the past, the next verb steps back too."
     },
     {
       "wrong": "Quería tú venir.",

@@ -13,7 +13,7 @@
     { "es": "Lo siento mucho, Tomás.", "en": "I'm really sorry, Tomás." },
     { "es": "Siento llegar tarde, Hernando.", "en": "Sorry I'm late, Hernando." }
   ],
-  "rule": "Think of sorry as a scale.\n\nLight: *perdón*, *disculpe* (to someone you call *usted*), *disculpa* (to a friend). For bumps, small slips and getting someone's attention. To squeeze past, *con permiso*.\n\nHeavy: *lo siento*, or *lo siento mucho*. For bad news, real harm, or when someone has lost something or someone. It literally means I feel it.\n\nNaming it: *siento* + a plain verb says exactly what you're sorry for: *Siento llegar tarde.*\n\nThe mistakes go both ways. *Lo siento* for a bumped elbow sounds oddly dramatic. *Perdón* to a friend whose grandmother died sounds like you stepped on their foot.",
+  "rule": "Think of sorry as a scale.\n\nLight: *perdón*, *disculpe* (to someone you call *usted*), *disculpa* (to a friend). For bumps, small slips and getting someone's attention. To squeeze past, *con permiso*.\n\nHeavy: *lo siento*, or *lo siento mucho*. For bad news, real harm, or when someone has lost something or someone. It literally means I feel it.\n\nNaming it: *siento* + a dictionary form says exactly what you're sorry for: *Siento llegar tarde.*\n\nThe mistakes go both ways. *Lo siento* for a bumped elbow sounds oddly dramatic. *Perdón* to a friend whose grandmother died sounds like you stepped on their foot.",
   "smallPrint": "Teachers call this matching the apology to the offence: courtesy formulas versus expressing regret.",
   "readAndPick": [
     { "es": "Ay, perdón.", "options": ["What you say after stepping on someone's foot.", "What you say when a friend's grandmother dies."], "answer": 0 },

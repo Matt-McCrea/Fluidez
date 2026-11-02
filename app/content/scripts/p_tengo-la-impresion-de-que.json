@@ -31,7 +31,7 @@
       "en": "Do you have the feeling Mariana knows something? (to a friend)"
     }
   ],
-  "rule": "*Tengo la impresión de que* means *I have the feeling that*. It says you suspect something but can't prove it. *Tengo la sensación de que* is the same, and *me da la impresión de que* is *I get the feeling*.\n\nWhat comes next is a normal sentence with the plain verb, because you believe it: *Tengo la impresión de que va a llover.* No *-e* or *-a* form here.\n\nFor doubts about a thing: *Tengo mis dudas sobre* + the thing.\n\nThis is a hedge. If you plan to argue a point, say it straight instead.",
+  "rule": "*Tengo la impresión de que* means *I have the feeling that*. It says you suspect something but can't prove it. *Tengo la sensación de que* is the same, and *me da la impresión de que* is *I get the feeling*.\n\nWhat comes next is a normal sentence with the ordinary form, because you believe it: *Tengo la impresión de que va a llover.* No *-e* or *-a* form here.\n\nFor doubts about a thing: *Tengo mis dudas sobre* + the thing.\n\nThis is a hedge. If you plan to argue a point, say it straight instead.",
   "smallPrint": "Teachers call this a hedge, followed by the indicative.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Choose *es* or *sea*, then type the whole sentence: Tengo la impresión de que ___ tensa. (I have the feeling it's tense, about the meeting. Use *la reunión*.)",
       "answer": "Tengo la impresión de que la reunión es tensa.",
       "accept": [],
-      "why": "A feeling you believe uses the plain verb, *es*."
+      "why": "A feeling you believe uses the ordinary form, *es*."
     },
     {
       "prompt": "Type it in Spanish: I have the feeling Vale wants to stay.",
@@ -159,7 +159,7 @@
     {
       "wrong": "Tengo la impresión de que sea tensa.",
       "right": "Tengo la impresión de que es tensa.",
-      "why": "Almost. A hunch you believe takes the plain verb, not the *-e* or *-a* form."
+      "why": "Almost. A hunch you believe takes the ordinary form, not the subjunctive."
     },
     {
       "wrong": "Tengo una impresión que miente.",

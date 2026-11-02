@@ -13,7 +13,7 @@
     { "es": "En tu opinión, ¿quién tiene razón?", "en": "In your opinion, who's right? (to a friend)" },
     { "es": "Desde nuestro punto de vista, el precio es alto.", "en": "From our point of view, the price is high." }
   ],
-  "rule": "Three ready-made starters:\n*En mi opinión,* *Desde mi punto de vista,* and *A mí me parece que*.\n\nAfter the first two, put a comma and then a normal sentence. After *me parece que*, no comma.\n\nSwap *mi* for *tu*, *su*, *nuestro*, or swap *a mí me* for *a ti te*, *a Hernando le*, *a nosotros nos*.\n\nWhen you are stating your view positively, the verb after is the normal one: *es caro*, *está seguro*. The wish form shows up only when you say you *don't* think so.\n\n*Me parece que* is everyday speech. *Desde mi punto de vista* sounds more measured.",
+  "rule": "Three ready-made starters:\n*En mi opinión,* *Desde mi punto de vista,* and *A mí me parece que*.\n\nAfter the first two, put a comma and then a normal sentence. After *me parece que*, no comma.\n\nSwap *mi* for *tu*, *su*, *nuestro*, or swap *a mí me* for *a ti te*, *a Hernando le*, *a nosotros nos*.\n\nWhen you are stating your view positively, the verb after is the normal one: *es caro*, *está seguro*. The subjunctive shows up only when you say you *don't* think so.\n\n*Me parece que* is everyday speech. *Desde mi punto de vista* sounds more measured.",
   "smallPrint": "Teachers call these opinion markers (*marcadores de opinión*).",
   "readAndPick": [
     { "es": "A Hernando le parece que la alcaldía no hace nada.", "options": ["I think the council does nothing.", "Hernando thinks the council does nothing.", "Hernando thinks I do nothing."], "answer": 1 },

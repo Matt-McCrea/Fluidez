@@ -59,7 +59,7 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "hace doce años",
+          "pattern": "\\b(hace|lleva|llevan|llevamos|van) (doce|12) años\\b",
           "flags": "i",
           "label": "how long: hace doce años, or desde hace doce años"
         }

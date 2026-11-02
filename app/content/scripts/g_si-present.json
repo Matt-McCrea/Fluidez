@@ -176,11 +176,6 @@
       "why": "Close. If has no accent: *si*. With an accent, *sí* means yes."
     },
     {
-      "wrong": "Si tendrás tiempo, ven al café.",
-      "right": "Si tienes tiempo, ven al café.",
-      "why": "English says if you have, not if you will have. Spanish is the same: the *si* half stays in the present."
-    },
-    {
       "wrong": "Si llover, nos quedamos en casa.",
       "right": "Si llueve, nos quedamos en casa.",
       "why": "*Si* needs a real verb with a person in it, like *llueve* or *quieres*, not the dictionary form."

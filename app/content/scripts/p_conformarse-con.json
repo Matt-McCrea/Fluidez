@@ -31,7 +31,7 @@
       "en": "We'll settle for it not raining on Sunday."
     }
   ],
-  "rule": "*Conformarse con* is \"to settle for\": taking less than you hoped, and making peace with it.\n\n*Con* + noun: *Se conformó con una disculpa.*\n*Con* + infinitive, same person: *Me conformo con aprobar.*\n*Con que* + the wish form, someone else's action: *Me conformo con que llegues a tiempo.*\n\nThe *me / te / se* stays. There is usually a little disappointment underneath, so it is not the same as \"I'm happy with\".",
+  "rule": "*Conformarse con* is \"to settle for\": taking less than you hoped, and making peace with it.\n\n*Con* + noun: *Se conformó con una disculpa.*\n*Con* + infinitive, same person: *Me conformo con aprobar.*\n*Con que* + the subjunctive, someone else's action: *Me conformo con que llegues a tiempo.*\n\nThe *me / te / se* stays. There is usually a little disappointment underneath, so it is not the same as \"I'm happy with\".",
   "smallPrint": "Teachers call verbs like this pronominal: the *se* is built into the verb.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "To a friend. Choose *llegas* or *llegues*: Me conformo con que ___ a tiempo. Type the whole sentence.",
       "answer": "Me conformo con que llegues a tiempo.",
       "accept": [],
-      "why": "After *con que*, the other person's action takes the wish form, *llegues*."
+      "why": "After *con que*, the other person's action takes the subjunctive, *llegues*."
     },
     {
       "prompt": "She settled for an apology.",
@@ -136,7 +136,7 @@
       "prompt": "We'll settle for it not raining on Sunday.",
       "answer": "Nos conformamos con que no llueva el domingo.",
       "accept": [],
-      "why": "*Con que* + *llueva*, the wish form."
+      "why": "*Con que* + *llueva*, the subjunctive."
     },
     {
       "prompt": "Make it about him: *Me conformo con aprobar.*",
@@ -164,7 +164,7 @@
     {
       "wrong": "Me conformo con que llegas a tiempo.",
       "right": "Me conformo con que llegues a tiempo.",
-      "why": "Almost. After *con que*, the other person's action takes the wish form: *llegues*."
+      "why": "Almost. After *con que*, the other person's action takes the subjunctive: *llegues*."
     },
     {
       "wrong": "Conformo con una disculpa.",

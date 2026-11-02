@@ -31,7 +31,7 @@
       "en": "I'm sure of my decision. (a man speaking)"
     }
   ],
-  "rule": "*Estoy convencido de que…* and *Estoy seguro de que…* mean \"I'm convinced / sure that…\". Notice three things.\n\nFirst, the *de* stays before *que*.\nSecond, the ending follows the speaker: *convencido* (a man), *convencida* (a woman), *convencidos* (we).\nThird, certainty keeps the ordinary verb (*dice*, *tiene*), while doubt switches to the wish form: *No estoy seguro de que sea…*\n\nBefore a noun, drop *que*: *seguro de mi decisión*.",
+  "rule": "*Estoy convencido de que…* and *Estoy seguro de que…* mean \"I'm convinced / sure that…\". Notice three things.\n\nFirst, the *de* stays before *que*.\nSecond, the ending follows the speaker: *convencido* (a man), *convencida* (a woman), *convencidos* (we).\nThird, certainty keeps the ordinary verb (*dice*, *tiene*), while doubt switches to the subjunctive: *No estoy seguro de que sea…*\n\nBefore a noun, drop *que*: *seguro de mi decisión*.",
   "smallPrint": "Teachers call the missing-*de* slip (*seguro que*) *queísmo*.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Pick the right verb and type the whole sentence: *No estoy seguro de que ___ buena idea.* (*sea* or *es*)",
       "answer": "No estoy seguro de que sea buena idea.",
       "accept": [],
-      "why": "Doubt switches the verb to the wish form: *sea*."
+      "why": "Doubt switches the verb to the subjunctive: *sea*."
     },
     {
       "prompt": "Type in Spanish (a man speaking): I'm convinced she's telling the truth.",
@@ -150,7 +150,7 @@
       "prompt": "Turn certainty into doubt: *Estoy convencida de que Altamira cumple.* Say (a woman speaking): I'm not convinced Altamira will comply.",
       "answer": "No estoy convencida de que Altamira cumpla.",
       "accept": [],
-      "why": "Add *no* and switch *cumple* to the wish form *cumpla*."
+      "why": "Add *no* and switch *cumple* to the subjunctive *cumpla*."
     },
     {
       "prompt": "Use a noun instead: *Estoy seguro de que mi decisión es buena.* Say (a man speaking): I'm sure of my decision.",
@@ -168,7 +168,7 @@
     {
       "wrong": "No estoy seguro de que es buena idea.",
       "right": "No estoy seguro de que sea buena idea.",
-      "why": "Almost. When you are not sure, the verb after *que* takes the wish form: *sea*."
+      "why": "Almost. When you are not sure, the verb after *que* takes the subjunctive: *sea*."
     },
     {
       "wrong": "Soy convencido de que dice la verdad.",

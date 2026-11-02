@@ -31,7 +31,7 @@
       "en": "Aren't you sure Vale wants to stay? (to a woman)"
     }
   ],
-  "rule": "*Estoy seguro de que* means you're certain, so the verb after it is the plain one: *Estoy seguro de que viene.*\n\nPut *no* in front and you aren't sure, so the verb after *de que* takes the *-e* or *-a* form: *No estoy seguro de que venga.*\n\nSoften with *del todo* (entirely) or swap in *convencido*. Both stay the same: *No estoy del todo seguro de que...*\n\n*Seguro* ends in *-o* for a man and *-a* for a woman. Never drop the *de* before *que*.\n\nFor something already finished, use *haya* plus the *-ado* or *-ido* word: *hayan oído*.",
+  "rule": "*Estoy seguro de que* means you're certain, so the verb after it is the ordinary one: *Estoy seguro de que viene.*\n\nPut *no* in front and you aren't sure, so the verb after *de que* takes the subjunctive: *No estoy seguro de que venga.*\n\nSoften with *del todo* (entirely) or swap in *convencido*. Both stay the same: *No estoy del todo seguro de que...*\n\n*Seguro* ends in *-o* for a man and *-a* for a woman. Never drop the *de* before *que*.\n\nFor something already finished, use *haya* plus the *-ado* or *-ido* word: *hayan oído*.",
   "smallPrint": "Teachers call this the subjunctive after a negated certainty.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Choose *viene* or *venga*, then type the whole sentence: Estoy seguro de que ___. (I'm sure he's coming, a man speaking.)",
       "answer": "Estoy seguro de que viene.",
       "accept": [],
-      "why": "Certain means the plain verb, with no change."
+      "why": "Certain means the ordinary form, with no change."
     },
     {
       "prompt": "Type it in Spanish: I'm not sure he's coming. (a woman speaking)",
@@ -130,7 +130,7 @@
       "prompt": "Type it in Spanish: I'm not convinced it's the best option. (a man speaking)",
       "answer": "No estoy convencido de que sea la mejor opción.",
       "accept": [],
-      "why": "*Convencido* works like *seguro*, with the *-e* or *-a* form after *de que*."
+      "why": "*Convencido* works like *seguro*, with the subjunctive after *de que*."
     },
     {
       "prompt": "Type it in Spanish: I'm not sure the council will listen. (a man speaking)",
@@ -155,7 +155,7 @@
     {
       "wrong": "No estoy seguro de que viene.",
       "right": "No estoy seguro de que venga.",
-      "why": "Almost. When you doubt, the verb after *de que* takes the *-e* or *-a* form."
+      "why": "Almost. When you doubt, the verb after *de que* takes the subjunctive."
     },
     {
       "wrong": "No estoy seguro que venga.",
@@ -165,7 +165,7 @@
     {
       "wrong": "Estoy seguro de que venga.",
       "right": "Estoy seguro de que viene.",
-      "why": "Almost. When you're certain, the verb stays plain."
+      "why": "Almost. When you're certain, the verb stays ordinary."
     }
   ],
   "personal": "Tell me something you're not completely sure about this week, starting with *No estoy del todo seguro de que* or *segura*."

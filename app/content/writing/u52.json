@@ -2152,8 +2152,8 @@
         "label": "habría + participle for the result"
       },
       {
-        "type": "regex",
-        "pattern": "\\b(he|has|ha|hemos) (\\w+(ado|ido)|visto|dicho|hecho|escrito|puesto)\\b",
+        "type": "anyVerbInTense",
+        "tense": "perfecto",
         "label": "the present perfect for what is still true"
       }
     ],

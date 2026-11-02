@@ -33,7 +33,7 @@
     { "prompt": "Type in Spanish: You attach too much importance to what people say. (to a friend)", "answer": "Le das demasiada importancia a lo que dice la gente.", "accept": [], "why": "*Demasiada* agrees with *importancia*, and *le* stays even though the thing is named." },
     { "prompt": "Say it to a stranger, formal: Don't make a big deal of it, ma'am.", "answer": "No le dé importancia, señora.", "accept": [], "why": "With *usted*, the command is *dé*, with an accent, instead of *des*." },
     { "prompt": "Put it in the past: *Vale no le da importancia al comentario.* Say: Vale didn't make a big deal of the comment.", "answer": "Vale no le dio importancia al comentario.", "accept": [], "why": "*Dio* is the past of *da*, and *le* stays in place." },
-    { "prompt": "Type in Spanish: It matters a lot to me that you tell me the truth. (to a friend)", "answer": "Para mí tiene mucha importancia que me digas la verdad.", "accept": [], "why": "*Tiene mucha importancia* says it matters, and *digas* is the wish form after *que*." }
+    { "prompt": "Type in Spanish: It matters a lot to me that you tell me the truth. (to a friend)", "answer": "Para mí tiene mucha importancia que me digas la verdad.", "accept": [], "why": "*Tiene mucha importancia* says it matters, and *digas* is the subjunctive after *que*." }
   ],
   "pitfalls": [
     { "wrong": "No des importancia.", "right": "No le des importancia.", "why": "Almost. Keep the little word *le*: you give importance *to it*." },

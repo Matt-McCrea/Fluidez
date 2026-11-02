@@ -35,7 +35,7 @@
       "en": "Do you doubt they'll come? (to a friend)"
     }
   ],
-  "rule": "Look at the verb after *que*: *cambie*, *llueva*, *tengas*, *venga*. It is the wish form you already know from *quiero que* and *no creo que*.\n\nThree frames lead to it:\n*Dudo que* + wish form\n*Es posible que* + wish form\n*Puede que* + wish form\n\nThe same goes when you deny a fact or rule it out: *No es cierto que el café pierda plata.* *Es imposible que lo sepa.*\n\nThe idea is simple. If you doubt something, or it is only possible, you are not putting it on the table as a fact, so the verb steps back.\n\nThe flip side: *No dudo que* means you are sure, so the plain verb is the natural choice: *No dudo que tienes razón*. You will also meet the wish form here, when someone grants a point before a *pero*: *No dudo que tengas razón, pero…* Both are correct.\n\nEnglish never changes the verb here (I doubt he comes, I doubt he's coming). In Spanish, spot the doubt word and switch.",
+  "rule": "Look at the verb after *que*: *cambie*, *llueva*, *tengas*, *venga*. It is the subjunctive you already know from *quiero que* and *no creo que*.\n\nThree frames lead to it:\n*Dudo que* + subjunctive\n*Es posible que* + subjunctive\n*Puede que* + subjunctive\n\nThe same goes when you deny a fact or rule it out: *No es cierto que el café pierda plata.* *Es imposible que lo sepa.*\n\nThe idea is simple. If you doubt something, or it is only possible, you are not putting it on the table as a fact, so the verb steps back.\n\nThe flip side: *No dudo que* means you are sure, so the ordinary form is the natural choice: *No dudo que tienes razón*. You will also meet the subjunctive here, when someone grants a point before a *pero*: *No dudo que tengas razón, pero…* Both are correct.\n\nEnglish never changes the verb here (I doubt he comes, I doubt he's coming). In Spanish, spot the doubt word and switch.",
   "smallPrint": "Teachers call this the subjunctive after expressions of doubt and possibility. *No dudo que* is certainty, so the indicative is the natural choice, but the subjunctive is also correct, especially when you grant a point before a *pero*.",
   "readAndPick": [
     {
@@ -124,13 +124,13 @@
       "prompt": "Pick *venga* or *viene* and type the whole sentence: *Dudo que Vale ___ hoy.*",
       "answer": "Dudo que Vale venga hoy.",
       "accept": [],
-      "why": "After *dudo que* the verb takes the wish form: *venga*."
+      "why": "After *dudo que* the verb takes the subjunctive: *venga*."
     },
     {
       "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *Puede que ___ razón.*",
       "answer": "Puede que tengas razón.",
       "accept": [],
-      "why": "*Puede que* means it is only possible, so the wish form: *tengas*."
+      "why": "*Puede que* means it is only possible, so the subjunctive: *tengas*."
     },
     {
       "prompt": "Type in Spanish, to a friend: I don't doubt you're right.",
@@ -138,13 +138,13 @@
       "accept": [
         "No dudo que tengas razón."
       ],
-      "why": "*No dudo que* means you are sure, so the plain verb is the natural choice: *tienes*."
+      "why": "*No dudo que* means you are sure, so the ordinary form is the natural choice: *tienes*."
     },
     {
       "prompt": "Type in Spanish: I doubt Altamira will change his mind.",
       "answer": "Dudo que Altamira cambie de idea.",
       "accept": [],
-      "why": "*Dudo que* is followed by the wish form of *cambiar*: *cambie*."
+      "why": "*Dudo que* is followed by the subjunctive of *cambiar*: *cambie*."
     },
     {
       "prompt": "Type in Spanish: It might rain today.",
@@ -160,7 +160,7 @@
       "accept": [
         "Puede que Mariana sepa algo."
       ],
-      "why": "A possibility, so the wish form of *saber*: *sepa*."
+      "why": "A possibility, so the subjunctive of *saber*: *sepa*."
     },
     {
       "prompt": "Make it a doubt: *Mi abuela lo sabe.* Start with *Dudo que*.",
@@ -181,17 +181,17 @@
     {
       "wrong": "Dudo que Vale viene hoy.",
       "right": "Dudo que Vale venga hoy.",
-      "why": "Almost. English keeps the same verb after doubt, but Spanish switches to the wish form after *dudo que*."
+      "why": "Almost. English keeps the same verb after doubt, but Spanish switches to the subjunctive after *dudo que*."
     },
     {
       "wrong": "Dudo que tienes razón.",
       "right": "Dudo que tengas razón.",
-      "why": "Almost. *Dudo que* takes the wish form. It is *no dudo que* that can keep the plain verb."
+      "why": "Almost. *Dudo que* takes the subjunctive. It is *no dudo que* that can keep the ordinary form."
     },
     {
       "wrong": "Es posible que llueve hoy.",
       "right": "Es posible que llueva hoy.",
-      "why": "Almost. *Es posible que* only says it might happen, so the verb takes the wish form."
+      "why": "Almost. *Es posible que* only says it might happen, so the verb takes the subjunctive."
     }
   ],
   "personal": "Say one thing you doubt about this week, starting with *Dudo que*. Then say one thing that might happen, starting with *Es posible que* or *Puede que*."

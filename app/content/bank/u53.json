@@ -772,7 +772,7 @@
   },
   {
     "id": "u53-0028",
-    "es": "Hernando admitió su error y se rió de sí mismo.",
+    "es": "Hernando admitió su error y se rio de sí mismo.",
     "en": "Hernando admitted his mistake and laughed at himself.",
     "accept": [],
     "acceptEn": [],
@@ -9292,7 +9292,7 @@
   {
     "id": "u53-0349",
     "es": "Todo está bien, o sea, nadie tiene que preocuparse.",
-    "en": "Everything is fine, I mean, nobody needs to worry.",
+    "en": "Everything is fine, so nobody needs to worry.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9553,7 +9553,7 @@
   {
     "id": "u53-0358",
     "es": "Es tu decisión, o sea, nadie te va a obligar.",
-    "en": "It's your decision, I mean, nobody is going to force you. (to a friend)",
+    "en": "It's your decision, so nobody is going to force you. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9690,7 +9690,7 @@
   {
     "id": "u53-0363",
     "es": "El plazo termina el viernes, o sea, nos quedan tres días.",
-    "en": "The deadline is Friday, I mean, we have three days left.",
+    "en": "The deadline is Friday, so we have three days left.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9719,7 +9719,7 @@
   {
     "id": "u53-0364",
     "es": "Hoy no hay clientes, o sea, el rumor ya nos está costando plata.",
-    "en": "There are no customers today, I mean, the rumour is already costing us money.",
+    "en": "There are no customers today, so the rumour is already costing us money.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -9813,7 +9813,7 @@
   {
     "id": "u53-0367",
     "es": "Ustedes cuentan con mi voto, o sea, no se preocupen.",
-    "en": "You can count on my vote, I mean, don't worry. (you all)",
+    "en": "You can count on my vote, so don't worry. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18462,7 +18462,7 @@
   {
     "id": "u53-0690",
     "es": "Iría, pero estoy cansado; o sea, no voy.",
-    "en": "I'd go, but I'm tired; I mean, I'm not going.",
+    "en": "I'd go, but I'm tired, so I'm not going.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18515,7 +18515,7 @@
   {
     "id": "u53-0692",
     "es": "Ya no vendemos pan de queso; o sea, hay que ir a la panadería de enfrente.",
-    "en": "We no longer sell cheese bread; I mean, you have to go to the bakery across the street.",
+    "en": "We no longer sell cheese bread, so you have to go to the bakery across the street.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -18716,7 +18716,7 @@
   {
     "id": "u53-0699",
     "es": "Es tarde y llueve, o sea, nadie viene hoy.",
-    "en": "It's late and it's raining, I mean, nobody is coming today.",
+    "en": "It's late and it's raining, so nobody is coming today.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -23042,7 +23042,7 @@
   {
     "id": "u53-0869",
     "es": "¿Y el pan de queso?\nSe acabó; o sea, llegaste tarde.",
-    "en": "And the cheese bread?\nIt's gone; I mean, you were late.",
+    "en": "And the cheese bread?\nIt's gone, so you were late.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -27049,7 +27049,7 @@
   {
     "id": "u53-1015",
     "es": "Entonces, ¿te quedas o te vas?\nPor ahora, me quedo; o sea, mañana abro el café.",
-    "en": "So are you staying or leaving? (to a friend)\nFor now, I'm staying; I mean, tomorrow I open the café.",
+    "en": "So are you staying or leaving? (to a friend)\nFor now, I'm staying, so tomorrow I open the café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -30968,7 +30968,7 @@
   {
     "id": "u53-1162",
     "es": "Es caro; o sea, no lo podemos pagar.",
-    "en": "It's expensive; I mean, we can't afford it.",
+    "en": "It's expensive, so we can't afford it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32484,7 +32484,7 @@
   {
     "id": "u53-1216",
     "es": "Sin papeles no hay trámite, o sea, no hay café.",
-    "en": "Without papers there is no procedure, I mean, no café.",
+    "en": "Without papers there is no procedure, so no café.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32535,7 +32535,7 @@
   {
     "id": "u53-1218",
     "es": "Eso fue un favor; o sea, no esperen nada a cambio.",
-    "en": "That was a favour; I mean, expect nothing in return. (you all)",
+    "en": "That was a favour, so expect nothing in return. (you all)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32639,7 +32639,7 @@
   {
     "id": "u53-1222",
     "es": "Vale hizo cien panes y se vendieron todos; o sea, el rumor no nos afectó.",
-    "en": "Vale made a hundred loaves and they all sold; I mean, the rumour didn't hurt us.",
+    "en": "Vale made a hundred loaves and they all sold, so the rumour didn't hurt us.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32727,7 +32727,7 @@
   {
     "id": "u53-1225",
     "es": "Es tarde; o sea, mejor lo dejamos para mañana.",
-    "en": "It's late, I mean, we'd better leave it for tomorrow.",
+    "en": "It's late, so we'd better leave it for tomorrow.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32755,7 +32755,7 @@
   {
     "id": "u53-1226",
     "es": "Aquí la gente habla mucho; o sea, hay muchos rumores.",
-    "en": "People here talk a lot, I mean, there are a lot of rumours.",
+    "en": "People here talk a lot, so there are a lot of rumours.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32842,7 +32842,7 @@
   {
     "id": "u53-1229",
     "es": "Ese contrato no vale nada; o sea, nadie lo va a cumplir.",
-    "en": "That contract is worth nothing, I mean, nobody is going to honour it.",
+    "en": "That contract is worth nothing, so nobody is going to honour it.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -32978,7 +32978,7 @@
   {
     "id": "u53-1234",
     "es": "Ya no hay pan de queso, o sea, llegaste tarde.",
-    "en": "There is no cheese bread left, I mean, you came late. (to a friend)",
+    "en": "There is no cheese bread left, so you came late. (to a friend)",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -33394,7 +33394,7 @@
   {
     "id": "u53-1248",
     "es": "Es poca gente; o sea, hay lugar para todos.",
-    "en": "There aren't many people, I mean, there's room for everyone.",
+    "en": "There aren't many people, so there's room for everyone.",
     "accept": [],
     "acceptEn": [],
     "requires": [

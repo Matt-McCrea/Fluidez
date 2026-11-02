@@ -31,7 +31,7 @@
       "en": "It isn't obvious that Mariana is right."
     }
   ],
-  "rule": "Start with *está claro que* or *es evidente que* when you present something as a fact. What follows is an ordinary verb: *tiene*, *quiere*, *se equivocó*. English works the same way, so this part is easy.\n\nThe twist is the negative. *No está claro que* means you are not sure, so the verb after it switches to the wish form: *compre*, *tenga*.\n\nFact: *Está claro que tiene razón.*\nDoubt: *No está claro que tenga razón.*\n\nKeep *que* every time, and no *de* in front of it.",
+  "rule": "Start with *está claro que* or *es evidente que* when you present something as a fact. What follows is an ordinary verb: *tiene*, *quiere*, *se equivocó*. English works the same way, so this part is easy.\n\nThe twist is the negative. *No está claro que* means you are not sure, so the verb after it switches to the subjunctive: *compre*, *tenga*.\n\nFact: *Está claro que tiene razón.*\nDoubt: *No está claro que tenga razón.*\n\nKeep *que* every time, and no *de* in front of it.",
   "smallPrint": "Teachers call these expressions of certainty. A fact takes the indicative; once you deny the certainty, the subjunctive takes over.",
   "readAndPick": [
     {
@@ -114,7 +114,7 @@
       "prompt": "Pick *compra* or *compre* and type the whole sentence: *No está claro que Altamira ___ el café.*",
       "answer": "No está claro que Altamira compre el café.",
       "accept": [],
-      "why": "Once it is *no está claro*, the verb takes the wish form: *compre*."
+      "why": "Once it is *no está claro*, the verb takes the subjunctive: *compre*."
     },
     {
       "prompt": "Type in Spanish: It's obvious that she's tired.",
@@ -134,7 +134,7 @@
       "prompt": "Make it negative: *Es evidente que Mariana tiene razón.* Say: It isn't obvious that Mariana is right.",
       "answer": "No es evidente que Mariana tenga razón.",
       "accept": [],
-      "why": "Put *no* in front, and the verb switches to the wish form: *tenga*."
+      "why": "Put *no* in front, and the verb switches to the subjunctive: *tenga*."
     },
     {
       "prompt": "Type in Spanish: It isn't clear that Tomás will sell the café.",
@@ -153,12 +153,12 @@
     {
       "wrong": "Está claro que Tomás tenga razón.",
       "right": "Está claro que Tomás tiene razón.",
-      "why": "Almost. A fact takes the ordinary verb; the wish form is for when you are not sure."
+      "why": "Almost. A fact takes the ordinary verb; the subjunctive is for when you are not sure."
     },
     {
       "wrong": "No está claro que Altamira compra el café.",
       "right": "No está claro que Altamira compre el café.",
-      "why": "Almost. After *no está claro que* you are doubting, so the verb takes the wish form."
+      "why": "Almost. After *no está claro que* you are doubting, so the verb takes the subjunctive."
     },
     {
       "wrong": "Está claro de que Tomás tiene razón.",

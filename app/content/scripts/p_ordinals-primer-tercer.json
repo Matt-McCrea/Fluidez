@@ -6,7 +6,7 @@
     "en": "I live on the third floor."
   },
   "examples": [
-    { "es": "El baño está en el primer piso.", "en": "The bathroom is on the first floor." },
+    { "es": "El baño está en el primer piso.", "en": "The bathroom is on the ground floor." },
     { "es": "Es la primera vez.", "en": "It's the first time." },
     { "es": "Es mi primer día en Bogotá.", "en": "It's my first day in Bogotá." },
     { "es": "La cocina es la segunda puerta.", "en": "The kitchen is the second door." },
@@ -15,10 +15,10 @@
   "rule": "First, second and third are describing words, so they match the noun: *el segundo piso*, *la segunda puerta*.\n\n*Primero* and *tercero* have one quirk. Right before a masculine word for one thing, they drop the final *o*:\n*el primer piso*, *el tercer día*\n*la primera vez*, *la tercera puerta* (feminine: no change)\n\nIt's the same trick as *uno* becoming *un*. *Segundo* never shortens.\n\nOne local fact: in Colombia the *primer piso* is the ground floor, so the *segundo piso* is one flight up.",
   "smallPrint": "Teachers call these ordinal numbers, and the dropped *o* is apocope.",
   "readAndPick": [
-    { "es": "Vivo en el primer piso.", "options": ["I live on the first floor.", "I live on the third floor.", "I live on the second floor."], "answer": 0 },
+    { "es": "Vivo en el primer piso.", "options": ["I live on the ground floor.", "I live on the third floor.", "I live on the second floor."], "answer": 0 },
     { "es": "Es la tercera puerta.", "options": ["It's the third floor.", "It's the third door.", "It's the first door."], "answer": 1 },
     { "es": "Es la segunda vez.", "options": ["It's the first time.", "It's two o'clock.", "It's the second time."], "answer": 2 },
-    { "es": "El sofá está en el tercer piso.", "options": ["The sofa is on the third floor.", "The sofa is on the first floor."], "answer": 0 },
+    { "es": "El sofá está en el tercer piso.", "options": ["The sofa is on the third floor.", "The sofa is on the ground floor."], "answer": 0 },
     { "es": "Es mi primer día.", "options": ["It's my first time.", "It's my first day."], "answer": 1 },
     { "es": "La cocina está en el segundo piso.", "options": ["The kitchen is on the second floor.", "The kitchen is the second door.", "There are two kitchens."], "answer": 0 },
     { "es": "Es la primera ventana.", "options": ["It's the first door.", "It's the first window.", "It's the third window."], "answer": 1 },

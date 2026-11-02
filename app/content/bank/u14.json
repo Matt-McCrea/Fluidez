@@ -5562,7 +5562,7 @@
   {
     "id": "u14-0218",
     "es": "Tengo veinte años, o sea, todavía vivo con mis papás.",
-    "en": "I'm twenty, I mean, I still live with my parents.",
+    "en": "I'm twenty, so I still live with my parents.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5593,7 +5593,7 @@
   {
     "id": "u14-0219",
     "es": "No me gusta el picante, o sea, no puedo comer eso.",
-    "en": "I don't like spicy food, I mean, I can't eat that.",
+    "en": "I don't like spicy food, so I can't eat that.",
     "accept": [],
     "acceptEn": [],
     "requires": [
@@ -5623,7 +5623,7 @@
   {
     "id": "u14-0220",
     "es": "Estoy en la oficina hasta las seis, o sea, no puedo ir.",
-    "en": "I'm at the office until six, I mean, I can't go.",
+    "en": "I'm at the office until six, so I can't go.",
     "accept": [],
     "acceptEn": [],
     "requires": [

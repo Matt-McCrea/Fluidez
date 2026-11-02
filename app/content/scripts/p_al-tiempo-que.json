@@ -160,7 +160,7 @@
         "Mariana escribe el artículo a la vez que revisa los datos.",
         "Mariana escribe el artículo al mismo tiempo que revisa los datos."
       ],
-      "why": "One person, two actions together, so a normal verb after *al tiempo que*."
+      "why": "One person, two actions together, so an ordinary verb after *al tiempo que*."
     },
     {
       "prompt": "Make it a question starting with *¿Por qué…?* Why is the rent going up while quality is going down?",
@@ -181,7 +181,7 @@
     {
       "wrong": "Sonreía al tiempo de negar con la cabeza.",
       "right": "Sonreía al tiempo que negaba con la cabeza.",
-      "why": "The phrase ends in *que*, and a normal verb follows it, not *de* plus an infinitive."
+      "why": "The phrase ends in *que*, and an ordinary verb follows it, not *de* plus an infinitive."
     },
     {
       "wrong": "La producción aumenta a medida que cae la demanda.",

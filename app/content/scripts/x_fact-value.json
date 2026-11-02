@@ -39,7 +39,7 @@
       "en": "It's normal for Simón to yell in the morning."
     }
   ],
-  "rule": "Ask yourself one question: am I saying that something is a fact, or am I judging it?\n\nA fact: *Es verdad que*, *Es cierto que*, *Es un hecho que*. The verb is the normal one you already know.\n*Es verdad que Vale viene hoy.*\n\nA judgement: *Es bueno que*, *Es importante que*, *Es una pena que*, *Es normal que*. The verb takes the wish form.\n*Es importante que Vale venga hoy.*\n\nEnglish uses the same *is* either way. Spanish splits them: the fact is just reported, the judgement is a reaction to it.\n\nQuick test: does the opening say whether it's true, or what you make of it? True or certain: the normal verb. Good, bad, normal, important, a shame: the wish form, even when you know it's really happening.",
+  "rule": "Ask yourself one question: am I saying that something is a fact, or am I judging it?\n\nA fact: *Es verdad que*, *Es cierto que*, *Es un hecho que*. The verb is the normal one you already know.\n*Es verdad que Vale viene hoy.*\n\nA judgement: *Es bueno que*, *Es importante que*, *Es una pena que*, *Es normal que*. The verb takes the subjunctive.\n*Es importante que Vale venga hoy.*\n\nEnglish uses the same *is* either way. Spanish splits them: the fact is just reported, the judgement is a reaction to it.\n\nQuick test: does the opening say whether it's true, or what you make of it? True or certain: the ordinary verb. Good, bad, normal, important, a shame: the subjunctive, even when you know it's really happening.",
   "smallPrint": "Teachers call the first group indicative after expressions of certainty, and the second group subjunctive after expressions of judgement.",
   "readAndPick": [
     {
@@ -120,19 +120,19 @@
       "prompt": "Pick *cerraron* or *cierren* and type the whole sentence: *Es verdad que ___ el parque.*",
       "answer": "Es verdad que cerraron el parque.",
       "accept": [],
-      "why": "*Es verdad que* reports a fact, so the normal verb: *cerraron*."
+      "why": "*Es verdad que* reports a fact, so the ordinary verb: *cerraron*."
     },
     {
       "prompt": "Pick *cierran* or *cierren* and type the whole sentence: *Es una pena que ___ el parque.*",
       "answer": "Es una pena que cierren el parque.",
       "accept": [],
-      "why": "*Una pena* is a judgement, so the wish form: *cierren*."
+      "why": "*Una pena* is a judgement, so the subjunctive: *cierren*."
     },
     {
       "prompt": "Type in Spanish: It's true that Vale is coming today.",
       "answer": "Es verdad que Vale viene hoy.",
       "accept": [],
-      "why": "A fact keeps the normal verb: *viene*."
+      "why": "A fact keeps the ordinary verb: *viene*."
     },
     {
       "prompt": "Type in Spanish: It's important that Vale comes today.",
@@ -156,19 +156,19 @@
       "prompt": "Type in Spanish: It's a fact that Altamira bought the block.",
       "answer": "Es un hecho que Altamira compró la cuadra.",
       "accept": [],
-      "why": "*Un hecho* reports something true, so the normal verb: *compró*."
+      "why": "*Un hecho* reports something true, so the ordinary verb: *compró*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Es verdad que cierren el parque.",
       "right": "Es verdad que cierran el parque.",
-      "why": "Almost. A fact is just reported, so use the normal verb: *cierran*."
+      "why": "Almost. A fact is just reported, so use the ordinary verb: *cierran*."
     },
     {
       "wrong": "Es bueno que cierran el parque.",
       "right": "Es bueno que cierren el parque.",
-      "why": "*Bueno* is a judgement, so the wish form: *cierren*."
+      "why": "*Bueno* is a judgement, so the subjunctive: *cierren*."
     },
     {
       "wrong": "Es importante que Vale viene hoy.",

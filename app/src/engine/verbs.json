@@ -1264,4 +1264,7 @@
   {"inf":"corromper","en":"to corrupt","type":"er","added":true},
   {"inf":"afligir","en":"to afflict, to distress","type":"ir","added":true},
   {"inf":"ceñir","en":"to fit tightly, to stick to","type":"ir","stem":"i","added":true}
+,
+  {"inf":"halar","en":"to pull","type":"ar","added":true},
+  {"inf":"profundizar","en":"to deepen, to go deeper","type":"ar","added":true}
 ]

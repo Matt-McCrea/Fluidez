@@ -13,7 +13,7 @@
     { "es": "Nos da pena que no vengas.", "en": "It makes us sad that you're not coming. (to a friend)" },
     { "es": "Me da pena hablar delante de todos.", "en": "I'm embarrassed to speak in front of everyone." }
   ],
-  "rule": "*Me da pena que* plus the wish form says what someone else's news makes you feel: *Me da pena que estés solo.* Swap *pena* for *lástima* and it means the same.\n\nFor a quick reaction, start with *¡Qué pena que…!* or *¡Qué lástima que…!*\n\nIn Colombia *pena* also means embarrassment, especially with an infinitive: *Me da pena hablar delante de todos.* *Lástima* is always sadness, so use it when you want no confusion.",
+  "rule": "*Me da pena que* plus the subjunctive says what someone else's news makes you feel: *Me da pena que estés solo.* Swap *pena* for *lástima* and it means the same.\n\nFor a quick reaction, start with *¡Qué pena que…!* or *¡Qué lástima que…!*\n\nIn Colombia *pena* also means embarrassment, especially with an infinitive: *Me da pena hablar delante de todos.* *Lástima* is always sadness, so use it when you want no confusion.",
   "smallPrint": "Same \"backwards\" grammar as *gustar*: the sadness is what's given to you, so *me, te, le, nos, les* say who feels it.",
   "readAndPick": [
     {
@@ -62,13 +62,13 @@
       "prompt": "Pick *estás* or *estés* and type the whole sentence, to a friend: *Me da pena que ___ solo.*",
       "answer": "Me da pena que estés solo.",
       "accept": [],
-      "why": "After *me da pena que*, the verb takes the wish form: *estés*."
+      "why": "After *me da pena que*, the verb takes the subjunctive: *estés*."
     },
     {
       "prompt": "Type in Spanish, to a friend: What a shame you can't come!",
       "answer": "¡Qué pena que no puedas venir!",
       "accept": ["¡Qué lástima que no puedas venir!"],
-      "why": "*Qué pena que* plus the wish form of *poder*: *puedas*."
+      "why": "*Qué pena que* plus the subjunctive of *poder*: *puedas*."
     },
     {
       "prompt": "Say it with *lástima* instead: *Me da pena que Rosa no esté aquí.*",
@@ -92,20 +92,20 @@
       "prompt": "Type in Spanish: It makes us sad that you're not coming. (to a friend)",
       "answer": "Nos da pena que no vengas.",
       "accept": ["Nos da lástima que no vengas."],
-      "why": "For *we*, *me* becomes *nos*, and *vengas* is the wish form for *tú*."
+      "why": "For *we*, *me* becomes *nos*, and *vengas* is the subjunctive for *tú*."
     },
     {
       "prompt": "Pick *cierran* or *cierren* and type the whole sentence: *¡Qué lástima que ___ el café!*",
       "answer": "¡Qué lástima que cierren el café!",
       "accept": [],
-      "why": "*Qué lástima que* wants the wish form, so *cierren*."
+      "why": "*Qué lástima que* wants the subjunctive, so *cierren*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Me da pena que estás solo.",
       "right": "Me da pena que estés solo.",
-      "why": "Almost. After a feeling about someone else, use the wish form: *estés*."
+      "why": "Almost. After a feeling about someone else, use the subjunctive: *estés*."
     },
     {
       "wrong": "Tengo pena que no puedas venir.",

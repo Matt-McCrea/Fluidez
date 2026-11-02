@@ -10359,7 +10359,7 @@
   "band": "B2",
   "priority": 425,
   "title": "Unreserved agreement: desde luego",
-  "es": "Desde luego (que sí).",
+  "es": "Desde luego.",
   "en": "Absolutely.",
   "requires": [],
   "contrasts": [],
@@ -10381,6 +10381,16 @@
   "sources": [
    "fn-acuerdo-b2",
    "fn-expresar-acuerdo-rotundo-b2"
+  ],
+  "forms": [
+   {
+    "es": "Desde luego.",
+    "en": "Absolutely."
+   },
+   {
+    "es": "Desde luego que sí.",
+    "en": "Absolutely, yes."
+   }
   ]
  },
  {
@@ -12808,7 +12818,7 @@
   "band": "C1",
   "priority": 564,
   "title": "Bone-chilling cold: un frío que cala los huesos",
-  "es": "Hace un frío que cala (hasta) los huesos.",
+  "es": "Hace un frío que cala los huesos.",
   "en": "It's bone-chillingly cold.",
   "requires": [],
   "contrasts": [],
@@ -12837,6 +12847,16 @@
   "note": "Replaces Peninsular 'un frío que pela' (dropped). Bogotá classic.",
   "sources": [
    "nt-temperatura-c1"
+  ],
+  "forms": [
+   {
+    "es": "Hace un frío que cala los huesos.",
+    "en": "It's bone-chillingly cold."
+   },
+   {
+    "es": "Hace un frío que cala hasta los huesos.",
+    "en": "It's so cold it goes right through to the bone."
+   }
   ]
  },
  {

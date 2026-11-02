@@ -31,7 +31,7 @@
       "en": "It's regrettable that nobody informs the neighbours."
     }
   ],
-  "rule": "This is the language of statements, not of everyday chat.\n\nA group, subject first: *La organización condena rotundamente estos actos.* Also *rechaza* with *rotundamente*, *categóricamente* or *tajantemente*.\n\nA personal reaction: *Me parece lamentable que* or *Nos parece inaceptable que*, then the wish form of the verb: *que no se aumente*.\n\nNo *a* after *condenar* when the thing is not a person. Do not use it for a dish or a joke: for those say *no me gusta*.",
+  "rule": "This is the language of statements, not of everyday chat.\n\nA group, subject first: *La organización condena rotundamente estos actos.* Also *rechaza* with *rotundamente*, *categóricamente* or *tajantemente*.\n\nA personal reaction: *Me parece lamentable que* or *Nos parece inaceptable que*, then the subjunctive of the verb: *que no se aumente*.\n\nNo *a* after *condenar* when the thing is not a person. Do not use it for a dish or a joke: for those say *no me gusta*.",
   "smallPrint": "Teachers call *rotundamente* an adverb of manner. It makes the disapproval sound final.",
   "readAndPick": [
     {
@@ -121,7 +121,7 @@
     {
       "prompt": "Type in Spanish: We find it regrettable that the budget is not being increased.",
       "answer": "Nos parece lamentable que no se aumente el presupuesto.",
-      "why": "After *lamentable que*, the verb takes the wish form: *aumente*."
+      "why": "After *lamentable que*, the verb takes the subjunctive: *aumente*."
     },
     {
       "prompt": "Type in Spanish: The company flatly rejects that proposal.",
@@ -136,7 +136,7 @@
     {
       "prompt": "Type in Spanish: It's regrettable that nobody informs the neighbours.",
       "answer": "Es lamentable que nadie avise a los vecinos.",
-      "why": "*Es lamentable que* is followed by the wish form: *avise*."
+      "why": "*Es lamentable que* is followed by the subjunctive: *avise*."
     }
   ],
   "pitfalls": [
@@ -148,7 +148,7 @@
     {
       "wrong": "Nos parece lamentable que no se aumenta el presupuesto.",
       "right": "Nos parece lamentable que no se aumente el presupuesto.",
-      "why": "Almost. After *lamentable que* the verb takes the wish form, *aumente*."
+      "why": "Almost. After *lamentable que* the verb takes the subjunctive, *aumente*."
     },
     {
       "wrong": "Rechazo rotundamente a la propuesta.",

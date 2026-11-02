@@ -35,7 +35,7 @@
       "en": "I waited for them at the stop."
     }
   ],
-  "rule": "Look at Vale and Hernando above. Seeing, calling, knowing, waiting for: the action lands straight on the person, so you use *lo* (him) or *la* (her), *los* or *las* (them).\n\nTelling, giving, asking: something (the truth, the keys, the time) goes to the person. The person gets *le*, and *les* for them.\n\nTwo things change from English. *Lo* and *la* show if it's a man or a woman; *le* doesn't care: *le dije* is I told him or I told her. And there's a quick test: if something passes to the person (the keys, the truth, a question), or English could add to (I wrote to him), it's *le*.\n\nCareful with wait for: *esperar* already means it, so it's *la esperé*, not *le*.",
+  "rule": "Look at Vale and Hernando above. Seeing, calling, knowing, waiting for: the action lands straight on the person, so you use *lo* (him) or *la* (her), *los* or *las* (them).\n\nTelling, giving, asking: something (the truth, the keys, the time) goes to the person. The person gets *le*, and *les* for them.\n\n*Lo* and *la* show if it's a man or a woman; *le* doesn't care: *le dije* is I told him or I told her.\n\n**The test.** Is there a second thing? Something that moves or gets done: the keys, the truth, a question, money, a letter. Even if you don't say it. If there is, the person gets *le*: *Le di las llaves. Le pregunté la hora. Le escribí.* If the action lands straight on the person with nothing else involved, it's *lo* or *la*: *La vi. La llamé. La esperé.*\n\nOne verb goes both ways: *ayudar*. *Lo ayudamos* and *le ayudo* are both fine.",
   "smallPrint": "Teachers call *lo*, *la*, *los*, *las* direct object pronouns and *le*, *les* indirect object pronouns. In parts of Spain you'll hear *le vi* for I saw him; in Latin America it's *lo vi*.",
   "readAndPick": [
     {
@@ -170,11 +170,6 @@
       "wrong": "¿Y Vale? La dije la verdad.",
       "right": "¿Y Vale? Le dije la verdad.",
       "why": "Almost. The truth goes to her, so it's *le*, for a woman as much as a man."
-    },
-    {
-      "wrong": "¿Y don Hernando? Le vi ayer.",
-      "right": "¿Y don Hernando? Lo vi ayer.",
-      "why": "Seeing lands straight on him, so in Latin America it's *lo*."
     },
     {
       "wrong": "Le esperé en la parada.",

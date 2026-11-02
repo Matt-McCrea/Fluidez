@@ -140,7 +140,7 @@
       "prompt": "If you don't pay the rent, I'll throw you out. (to a friend)",
       "answer": "Si no pagas el arriendo, te saco.",
       "accept": [],
-      "why": "*Si no* plus plain verbs: you are sure of the consequence."
+      "why": "*Si no* plus ordinary verbs: you are sure of the consequence."
     },
     {
       "prompt": "Make it formal: No confíes en él. Say it to someone you call *usted*.",

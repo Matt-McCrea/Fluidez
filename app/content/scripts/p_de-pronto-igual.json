@@ -31,8 +31,8 @@
       "en": "Maybe you're right. (to a friend)"
     }
   ],
-  "rule": "In Colombia, *de pronto* at the start of a sentence means *maybe*, not only \"suddenly\". *Igual* at the start also means *maybe*, in casual talk.\n\nBoth work like *a lo mejor*: they are followed by the plain verb, no wish form. *De pronto llueve*, *Igual no viene*.\n\nWatch out for *igual* as \"the same\" (*Me da igual*, *Es igual*). When it opens a sentence and a verb follows, it is *maybe*.\n\nThey are casual. For a polite or written *maybe*, use *a lo mejor* or *quizás*. In another country, people will understand you but may not say it themselves.",
-  "smallPrint": "Teachers call these colloquial adverbs of possibility. Like *a lo mejor*, they take the indicative.",
+  "rule": "In Colombia, *de pronto* at the start of a sentence means *maybe*, not only \"suddenly\". *Igual* at the start also means *maybe*, in casual talk.\n\nBoth work like *a lo mejor*: the ordinary form is the safe choice. *De pronto llueve*, *Igual no viene*.\n\nWatch out for *igual* as \"the same\" (*Me da igual*, *Es igual*). When it opens a sentence and a verb follows, it is *maybe*.\n\nThey are casual. For a polite or written *maybe*, use *a lo mejor* or *quizás*. In another country, people will understand you but may not say it themselves.",
+  "smallPrint": "Teachers call these colloquial adverbs of possibility. Like *a lo mejor*, they usually take the indicative.",
   "readAndPick": [
     {
       "es": "De pronto llueve más tarde.",
@@ -112,19 +112,19 @@
       "prompt": "Type in Spanish, using *de pronto*: Maybe it'll rain later.",
       "answer": "De pronto llueve más tarde.",
       "accept": [],
-      "why": "*De pronto* opens the sentence, and the plain verb follows."
+      "why": "*De pronto* opens the sentence, and the ordinary form follows."
     },
     {
       "prompt": "Type in Spanish, using *igual*: Maybe Hernando is hungry.",
       "answer": "Igual Hernando tiene hambre.",
       "accept": [],
-      "why": "*Igual* at the start means maybe, and the verb stays plain: *tiene*."
+      "why": "*Igual* at the start means maybe, and the verb stays ordinary: *tiene*."
     },
     {
       "prompt": "Pick *viene* or *venga* and type the whole sentence: *De pronto Vale ___ mañana.*",
       "answer": "De pronto Vale viene mañana.",
       "accept": [],
-      "why": "Like *a lo mejor*, *de pronto* takes the plain verb."
+      "why": "Like *a lo mejor*, *de pronto* takes the ordinary form."
     },
     {
       "prompt": "Type in Spanish, using *igual*: Maybe we won't open tomorrow.",
@@ -136,31 +136,31 @@
       "prompt": "Type in Spanish, to a friend, using *de pronto*: Maybe you're right.",
       "answer": "De pronto tienes razón.",
       "accept": [],
-      "why": "*De pronto* plus the plain verb: *tienes*."
+      "why": "*De pronto* plus the ordinary form: *tienes*."
     },
     {
       "prompt": "Type in Spanish, using *igual*: Maybe it isn't true.",
       "answer": "Igual no es verdad.",
       "accept": [],
-      "why": "*Igual* plus *no* plus the plain verb."
+      "why": "*Igual* plus *no* plus the ordinary form."
     },
     {
       "prompt": "Say the same thing with *a lo mejor*: *De pronto Mariana sabe algo.*",
       "answer": "A lo mejor Mariana sabe algo.",
       "accept": [],
-      "why": "The three work alike: all take the plain verb."
+      "why": "The three work alike: all take the ordinary form."
     }
   ],
   "pitfalls": [
     {
       "wrong": "De pronto Vale venga mañana.",
       "right": "De pronto Vale viene mañana.",
-      "why": "Almost. *De pronto* behaves like *a lo mejor*: no wish form."
+      "why": "Safer as *viene*. *De pronto* behaves like *a lo mejor*: the ordinary form is always right."
     },
     {
       "wrong": "Igual no venga.",
       "right": "Igual no viene.",
-      "why": "Almost. *Igual* works like *a lo mejor*, so no wish form: the plain verb."
+      "why": "Safer as *viene*. *Igual* works like *a lo mejor*: the ordinary form is always right."
     },
     {
       "wrong": "Llueve de pronto.",

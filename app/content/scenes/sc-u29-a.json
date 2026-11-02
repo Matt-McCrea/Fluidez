@@ -30,7 +30,7 @@
       "id": "t2",
       "npc": "¿Tú crees? Yo creo que todavía tenemos una oportunidad.",
       "npcEn": "You think so? I think we still have a chance.",
-      "intent": "Say that perhaps she's right, though you're not sure (use quizás with the wish form), but that you want to hear the offer.",
+      "intent": "Say that perhaps she's right, though you're not sure (use quizás with the subjunctive), but that you want to hear the offer.",
       "accept": [
         "Quizás tengas razón, pero quiero escuchar la oferta.",
         "Pues quizás tengas razón, Vale, pero la oferta me interesa.",

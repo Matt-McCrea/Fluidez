@@ -31,7 +31,7 @@
       "en": "We have no doubt that we will win."
     }
   ],
-  "rule": "*No me cabe la menor duda de que* means \"I have no doubt that\". *Me consta que* means \"I know for a fact that\", because I have seen the proof.\n\nBoth are followed by the plain verb: *tiene*, *pagó*, *vendrá*. You are sure, so there is no wish form.\n\nThey work like *me gusta*: the doubt or the fact is the subject, and you are *me*. For other people, change it: *no nos cabe duda*, *te consta*, *le consta*.\n\nEnglish just says \"I'm sure\". These two are heavier and more formal, the voice of a witness.",
+  "rule": "*No me cabe la menor duda de que* means \"I have no doubt that\". *Me consta que* means \"I know for a fact that\", because I have seen the proof.\n\nBoth are followed by the ordinary form: *tiene*, *pagó*, *vendrá*. You are sure, so there is no subjunctive.\n\nThey work like *me gusta*: the doubt or the fact is the subject, and you are *me*. For other people, change it: *no nos cabe duda*, *te consta*, *le consta*.\n\nEnglish just says \"I'm sure\". These two are heavier and more formal, the voice of a witness.",
   "smallPrint": "Teachers call these expressions of certainty, and *me consta* in particular carries evidence behind it.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Pick and type the whole sentence: *No me cabe duda de que Vale ___ razón.* (*tiene* or *tenga*) I have no doubt that Vale is right.",
       "answer": "No me cabe duda de que Vale tiene razón.",
       "accept": [],
-      "why": "You are sure, so the verb stays plain: *tiene*."
+      "why": "You are sure, so the verb stays ordinary: *tiene*."
     },
     {
       "prompt": "Pick and type the whole sentence: *Me consta que Hernando ___ la cuenta.* (*pagó* or *pagará*) I know for a fact that Hernando paid the bill.",
@@ -161,7 +161,7 @@
     {
       "wrong": "No me cabe duda de que Vale tenga razón.",
       "right": "No me cabe duda de que Vale tiene razón.",
-      "why": "Almost. You have no doubt, so the verb stays plain; the wish form is for when you do doubt."
+      "why": "Almost. You have no doubt, so the verb stays ordinary; the subjunctive is for when you do doubt."
     },
     {
       "wrong": "No me cabe duda que Vale tiene razón.",

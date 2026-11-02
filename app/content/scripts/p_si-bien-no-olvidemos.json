@@ -13,7 +13,7 @@
     { "es": "Si bien es cierto que el barrio cambia, no debemos olvidar que su gente sigue aquí.", "en": "While it is true that the neighbourhood is changing, we must not forget that its people are still here." },
     { "es": "Si bien es cierto que el café pierde dinero, no conviene olvidar que tiene clientes fieles.", "en": "While it is true that the café is losing money, it is unwise to forget that it has loyal customers." }
   ],
-  "rule": "This is a two-step move. First, grant the other side its point: *Si bien es cierto que…* (or *es verdad que*), followed by a plain verb.\n\nThen mark exactly where your own objection begins: *no olvidemos que…*. You can swap it for *no hay que olvidar que*, *no debemos olvidar que*, *no podemos olvidar que* or *no conviene olvidar que*.\n\nThere is no *pero*. The second phrase does that job, and it makes the reader sit up.",
+  "rule": "This is a two-step move. First, grant the other side its point: *Si bien es cierto que…* (or *es verdad que*), followed by the ordinary form.\n\nThen mark exactly where your own objection begins: *no olvidemos que…*. You can swap it for *no hay que olvidar que*, *no debemos olvidar que*, *no podemos olvidar que* or *no conviene olvidar que*.\n\nThere is no *pero*. The second phrase does that job, and it makes the reader sit up.",
   "smallPrint": "Teachers call this a concession followed by a counter-argument. *Olvidemos* here is the \"let us\" form of *olvidar*.",
   "readAndPick": [
     { "es": "Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.", "options": ["While it is true that the project is expensive, let us not forget that it will create jobs.", "Since the project is expensive, let us forget that it will create jobs.", "If the project is expensive, it will create jobs."], "answer": 0 },
@@ -35,7 +35,7 @@
   ],
   "pitfalls": [
     { "wrong": "Si bien es cierto que el proyecto es caro, pero no olvidemos que generará empleo.", "right": "Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.", "why": "Almost. The second phrase already does the job of *pero*." },
-    { "wrong": "Si bien es cierto que el proyecto sea caro, no olvidemos que generará empleo.", "right": "Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.", "why": "Almost. You are granting something true, so *es cierto que* takes the plain verb." },
+    { "wrong": "Si bien es cierto que el proyecto sea caro, no olvidemos que generará empleo.", "right": "Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.", "why": "Almost. You are granting something true, so *es cierto que* takes the ordinary form." },
     { "wrong": "Si bien es cierto el proyecto es caro, no olvidemos generará empleo.", "right": "Si bien es cierto que el proyecto es caro, no olvidemos que generará empleo.", "why": "Almost. Both halves need their *que*, unlike the little \"that\" English likes to drop." }
   ],
   "personal": "Think of a plan you half-like. Write one sentence conceding its weak point with *Si bien es cierto que…* and ending with *no olvidemos que…*."

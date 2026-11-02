@@ -125,9 +125,14 @@
       ],
       "require": [
         {
-          "type": "subjunctiveAfter",
-          "trigger": "pena que",
-          "within": 3,
+          "type": "regex",
+          "pattern": "\\b(me da (mucha )?(pena|tristeza|lástima)|qu[eé] (pena|lástima)|siento( mucho)?|lamento) que\\b",
+          "flags": "i",
+          "label": "me da pena que, siento que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "presubj",
           "label": "after me da pena que, the verb changes: te aburras"
         }
       ],

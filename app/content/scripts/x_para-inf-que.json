@@ -39,7 +39,7 @@
       "en": "I get up early so that Vale finds everything ready."
     }
   ],
-  "rule": "Before you write *para*, ask: who does the second thing?\n\nThe same person: *para* plus the plain verb.\n*Vine para ayudar.* I came, I help.\n*Llamo a Hernando para preguntarle.* I call, I ask.\n\nSomeone else: *para que* plus the wish form.\n*Vine para que me ayudes.* I came, you help.\n*Llamo a Hernando para que me cuente.* I call, he tells.\n\nWatch the second pair. Hernando is in both sentences, but in the first one you do the asking. Mentioning a person doesn't change anything; only who acts does.\n\nEnglish blurs it: to help, for you to help, so you can help. Spanish always makes you pick one of two shapes.",
+  "rule": "Before you write *para*, ask: who does the second thing?\n\nThe same person: *para* plus the dictionary form.\n*Vine para ayudar.* I came, I help.\n*Llamo a Hernando para preguntarle.* I call, I ask.\n\nSomeone else: *para que* plus the subjunctive.\n*Vine para que me ayudes.* I came, you help.\n*Llamo a Hernando para que me cuente.* I call, he tells.\n\nWatch the second pair. Hernando is in both sentences, but in the first one you do the asking. Mentioning a person doesn't change anything; only who acts does.\n\nEnglish blurs it: to help, for you to help, so you can help. Spanish always makes you pick one of two shapes.",
   "smallPrint": "Teachers call this the same subject or different subject rule: *para* plus infinitive versus *para que* plus subjunctive.",
   "readAndPick": [
     {
@@ -122,7 +122,7 @@
       "prompt": "Pick *ayudar* or *que me ayudes* and type the whole sentence: *Vine para ___.* (I came to help.)",
       "answer": "Vine para ayudar.",
       "accept": [],
-      "why": "You came and you help: one person, plain verb."
+      "why": "You came and you help: one person, dictionary form."
     },
     {
       "prompt": "Pick *verla* or *que la veas* and type the whole sentence, to a friend: *Te mando la foto para ___.* (so you can see it)",
@@ -152,7 +152,7 @@
       "prompt": "Change who does it. Now it's so that Vale finds everything ready: *Me levanto temprano para abrir el café.*",
       "answer": "Me levanto temprano para que Vale encuentre todo listo.",
       "accept": [],
-      "why": "Vale is the one finding, so *para que* and the wish form *encuentre*."
+      "why": "Vale is the one finding, so *para que* and the subjunctive *encuentre*."
     },
     {
       "prompt": "Change who does it. Now you want to try the cake with them yourself: *Traigo la torta para que la prueben.* (to try it with you all)",
@@ -170,12 +170,12 @@
     {
       "wrong": "Hablo despacio para mi papá entender.",
       "right": "Hablo despacio para que mi papá me entienda.",
-      "why": "When someone else acts, Spanish needs *para que* and the wish form."
+      "why": "When someone else acts, Spanish needs *para que* and the subjunctive."
     },
     {
       "wrong": "Le dejo las llaves a Vale para que cierra.",
       "right": "Le dejo las llaves a Vale para que cierre.",
-      "why": "*Para que* takes the wish form: *cierre*, not *cierra*."
+      "why": "*Para que* takes the subjunctive: *cierre*, not *cierra*."
     }
   ],
   "personal": "Write two true lines that start the same way: one with *para* plus a verb (why you do something for yourself), one with *para que* (why you do it for someone else). Try *Estudio español para...* and *Estudio español para que...*"

@@ -13,7 +13,7 @@
     { "es": "Nos da rabia que nadie nos diga nada.", "en": "It makes us mad that nobody tells us anything." },
     { "es": "¡Qué rabia!", "en": "How infuriating!" }
   ],
-  "rule": "*Rabia* is a noun, so Spanish doesn't say \"I am mad\" here. It says the thing gives you anger: *me da rabia*.\n\nSomeone else's action: *que* plus the wish form. *Me da rabia que me interrumpan.*\nYour own action: the infinitive. *Me da rabia perder el bus.*\n\nIt's stronger than *me molesta*. Add *mucha* or *muchísima* to turn it up, or just say *¡Qué rabia!* on its own.",
+  "rule": "*Rabia* is a noun, so Spanish doesn't say \"I am mad\" here. It says the thing gives you anger: *me da rabia*.\n\nSomeone else's action: *que* plus the subjunctive. *Me da rabia que me interrumpan.*\nYour own action: the infinitive. *Me da rabia perder el bus.*\n\nIt's stronger than *me molesta*. Add *mucha* or *muchísima* to turn it up, or just say *¡Qué rabia!* on its own.",
   "smallPrint": "Very common in Colombia. *Rabia* is anger at everyday strength, so it fits a missed bus as well as a real injustice.",
   "readAndPick": [
     {
@@ -62,7 +62,7 @@
       "prompt": "Pick *interrumpen* or *interrumpan* and type the whole sentence: *Me da rabia que me ___.*",
       "answer": "Me da rabia que me interrumpan.",
       "accept": [],
-      "why": "After *me da rabia que*, the verb takes the wish form: *interrumpan*."
+      "why": "After *me da rabia que*, the verb takes the subjunctive: *interrumpan*."
     },
     {
       "prompt": "Type in Spanish: Missing the bus makes me mad.",
@@ -74,7 +74,7 @@
       "prompt": "Type in Spanish: It makes me mad that Altamira buys everything.",
       "answer": "Me da rabia que Altamira compre todo.",
       "accept": [],
-      "why": "Altamira acts, so *que* plus the wish form: *compre*."
+      "why": "Altamira acts, so *que* plus the subjunctive: *compre*."
     },
     {
       "prompt": "Make it about all of us: *Me da rabia que nadie me diga nada.*",
@@ -86,7 +86,7 @@
       "prompt": "Type in Spanish, to a friend: Does it make you mad that they don't listen to you?",
       "answer": "¿Te da rabia que no te escuchen?",
       "accept": [],
-      "why": "*Te* is you, and *escuchen* is the wish form for *ellos*."
+      "why": "*Te* is you, and *escuchen* is the subjunctive for *ellos*."
     },
     {
       "prompt": "Turn it up: *Me da rabia perder el bus.* (it makes me really, really mad)",
@@ -105,7 +105,7 @@
     {
       "wrong": "Me da rabia que me interrumpen.",
       "right": "Me da rabia que me interrumpan.",
-      "why": "Almost. After *me da rabia que*, the verb takes the wish form: *interrumpan*."
+      "why": "Almost. After *me da rabia que*, the verb takes the subjunctive: *interrumpan*."
     },
     {
       "wrong": "Me da rabia que perder el bus.",

@@ -35,7 +35,7 @@
       "en": "I want to work with you. (to a friend)"
     }
   ],
-  "rule": "English says I want you to come. Spanish can't build it that way. It says I want that you come: *Quiero que vengas.*\n\nTwo pieces: *que*, then the verb in a new shape. You already know that shape. It's the *usted* command, with the usual ending for the person:\n\n*hable*: *que hables*, *que hable*, *que hablemos*, *que hablen*\n*coma*: *que comas*, *que coma*, *que comamos*, *que coman*\n*venga*: *que vengas*, *que venga*, *que vengamos*, *que vengan*\n\n*-ar* verbs get an *e*, *-er* and *-ir* verbs get an *a*: the opposite vowel. For I, it's the same as for he or she: *¿Quieres que te llame?*\n\nThe test is one question: is it the same person? I want, I work: *Quiero trabajar.* I want, you work: *Quiero que trabajes.* Only when the person changes do you need *que* and the new ending. Today it follows *quiero que* and *necesito que*.",
+  "rule": "English says I want you to come. Spanish can't build it that way. It says I want that you come: *Quiero que vengas.*\n\nTwo pieces: *que*, then the verb in a new shape. You already know that shape. It's the *usted* command, with the usual ending for the person:\n\n*hable*: *que hables*, *que hable*, *que hablemos*, *que hablen*\n*coma*: *que comas*, *que coma*, *que comamos*, *que coman*\n*venga*: *que vengas*, *que venga*, *que vengamos*, *que vengan*\n\n*-ar* verbs get an *e*, *-er* and *-ir* verbs get an *a*: the opposite vowel. For I, it's the same as for he or she: *¿Quieres que te llame?*\n\nThis new form is called the subjunctive. *Vienes* says what is so. *Quiero que vengas* doesn't: you might not come at all. It holds up the idea of you coming, and says I want it. That's the subjunctive's job: holding an idea up without saying it's so. You'll meet it after other openings soon.\n\nDo you need *que*? Ask: is it the same person? I want, I work: *Quiero trabajar.* I want, you work: *Quiero que trabajes.* That only decides *que*. Today the subjunctive follows *quiero que* and *necesito que*.",
   "smallPrint": "Teachers call this new shape the present subjunctive (*presente de subjuntivo*). Wanting is just the first door into it.",
   "readAndPick": [
     {
@@ -120,13 +120,13 @@
       "prompt": "Pick *trabajas* or *trabajes* and type the whole sentence, to a friend: *Quiero que ___ conmigo.* (I want you to work with me.)",
       "answer": "Quiero que trabajes conmigo.",
       "accept": [],
-      "why": "After *quiero que*, the verb takes the opposite vowel: *trabajes*."
+      "why": "What you want is only an idea so far, so the subjunctive: *trabajes*."
     },
     {
       "prompt": "Pick *comer* or *que comas* and type the whole sentence: *Necesito ___ algo.* (I need to eat something.)",
       "answer": "Necesito comer algo.",
       "accept": [],
-      "why": "You need and you eat: same person, so the plain form."
+      "why": "You need and you eat: same person, so the dictionary form."
     },
     {
       "prompt": "Tell a friend: I need you to help me.",
@@ -134,7 +134,7 @@
       "accept": [
         "Necesito que tú me ayudes."
       ],
-      "why": "Two people, so *que* plus the new ending: *ayudes*."
+      "why": "Two people, so *que*. You want it, and it isn't so yet, so the subjunctive: *ayudes*."
     },
     {
       "prompt": "Ask a friend: Do you want me to call you tomorrow?",
@@ -148,7 +148,7 @@
       "prompt": "Say: Vale wants Tomás to stay.",
       "answer": "Vale quiere que Tomás se quede.",
       "accept": [],
-      "why": "Vale wants, Tomás stays: two people, so *que se quede*."
+      "why": "Vale wants, Tomás stays: two people, so *que*, then the subjunctive *se quede*."
     },
     {
       "prompt": "Make it negative: *Quiero que hables con Altamira.*",
@@ -166,7 +166,7 @@
       "prompt": "Now you want a friend to do it, not you: *Quiero leer el contrato.* (I want you to read the contract.)",
       "answer": "Quiero que leas el contrato.",
       "accept": [],
-      "why": "The reader changed, so add *que* and swap the vowel: *leas*."
+      "why": "The reader changed, so add *que*, then the subjunctive: *leas*."
     }
   ],
   "pitfalls": [
@@ -178,7 +178,7 @@
     {
       "wrong": "Quiero que trabajas conmigo.",
       "right": "Quiero que trabajes conmigo.",
-      "why": "*Trabajas* states a fact. What you want someone to do takes the opposite vowel: *trabajes*."
+      "why": "*Trabajas* says it's so. What you want someone to do is only an idea, so the subjunctive: *trabajes*."
     },
     {
       "wrong": "Quiero que yo hable con él.",

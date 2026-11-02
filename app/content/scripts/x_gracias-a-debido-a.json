@@ -35,7 +35,7 @@
       "en": "Thanks to the fact that Mariana wrote the article, everyone knows the truth."
     }
   ],
-  "rule": "The three phrases fit the same slot. What changes is the mood.\n\n*Gracias a*: a good result, someone to thank.\n*Por culpa de*: a bad result, someone to blame.\n*Debido a*: neutral, just the cause. It is formal and very common in news and announcements.\n\nAll three take a noun: *gracias a ti*, *por culpa del trancón*, *debido a la lluvia*. Remember *de* + *el* becomes *del*, and *a* + *el* becomes *al*.\n\nBefore a verb, add *que*: *gracias a que…*, *debido a que…*, *por culpa de que…*\n\nThe verb stays plain, since you are stating a fact. Never *gracias de* or *debido de*.",
+  "rule": "The three phrases fit the same slot. What changes is the mood.\n\n*Gracias a*: a good result, someone to thank.\n*Por culpa de*: a bad result, someone to blame.\n*Debido a*: neutral, just the cause. It is formal and very common in news and announcements.\n\nAll three take a noun: *gracias a ti*, *por culpa del trancón*, *debido a la lluvia*. Remember *de* + *el* becomes *del*, and *a* + *el* becomes *al*.\n\nBefore a verb, add *que*: *gracias a que…*, *debido a que…*, *por culpa de que…*\n\nThe verb stays ordinary, since you are stating a fact. Never *gracias de* or *debido de*.",
   "smallPrint": "Teachers call *debido a* a formal causal preposition. The other two carry a judgement: good or bad.",
   "readAndPick": [
     {

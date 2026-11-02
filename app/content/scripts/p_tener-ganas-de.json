@@ -31,7 +31,7 @@
       "en": "Do you feel like a coffee, Don Hernando? (formal)"
     }
   ],
-  "rule": "English feels like something. Spanish has the urge: *tener ganas de*.\n\n*tengo ganas de* + the plain verb: *Tengo ganas de salir*. English adds -ing (going out); Spanish never does.\nOr + a thing: *Tengo ganas de un tinto*.\n\nOnly *tener* changes: *tienes*, *tiene*, *tenemos*. *Ganas* is always plural and always followed by *de*.\n\nFor really, add *muchas*: *Tenemos muchas ganas de viajar*. And *no tengo ganas* on its own is I'm not in the mood.",
+  "rule": "English feels like something. Spanish has the urge: *tener ganas de*.\n\n*tengo ganas de* + the dictionary form: *Tengo ganas de salir*. English adds -ing (going out); Spanish never does.\nOr + a thing: *Tengo ganas de un tinto*.\n\nOnly *tener* changes: *tienes*, *tiene*, *tenemos*. *Ganas* is always plural and always followed by *de*.\n\nFor really, add *muchas*: *Tenemos muchas ganas de viajar*. And *no tengo ganas* on its own is I'm not in the mood.",
   "smallPrint": "In Spain you'll hear *me apetece* for this. In Colombia, *tener ganas de* is the everyday choice, and *¿te provoca?* is a very local alternative.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Ask a friend: Do you feel like going up Monserrate?",
       "answer": "¿Tienes ganas de subir a Monserrate?",
       "accept": [],
-      "why": "*Tienes* for a friend, then *de* + the plain verb."
+      "why": "*Tienes* for a friend, then *de* + the dictionary form."
     },
     {
       "prompt": "Say: I feel like a black coffee. (use the Colombian word)",
@@ -130,7 +130,7 @@
       "prompt": "Say: Hernando doesn't feel like working.",
       "answer": "Hernando no tiene ganas de trabajar.",
       "accept": [],
-      "why": "*No* before *tiene*; the verb after *de* stays plain."
+      "why": "*No* before *tiene*; the verb after *de* stays in the dictionary form."
     },
     {
       "prompt": "Make it about we, and say you really want to: *Tengo ganas de viajar.*",
@@ -152,7 +152,7 @@
     {
       "wrong": "Tengo ganas de saliendo.",
       "right": "Tengo ganas de salir.",
-      "why": "English says going; after *de*, Spanish uses the plain verb *salir*."
+      "why": "English says going; after *de*, Spanish uses the dictionary form *salir*."
     },
     {
       "wrong": "Tengo gana de salir.",

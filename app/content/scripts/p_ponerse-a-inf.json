@@ -27,7 +27,7 @@
    "en": "Hernando is going to start singing."
   }
  ],
- "rule": "*Ponerse a* + a plain verb means to start doing something, but with a push: you get down to it, or it suddenly kicks off.\n*Voy a ponerme a estudiar.* I'm going to get down to studying.\n\nThe *me*, *te*, *se*, *nos* matches the person and sticks on the end: *ponerme*, *ponerse*, *ponernos*. Don't forget the *a* before the second verb.\n\nIn stories you'll meet it in the past, for something that starts out of nowhere:\n*Se puso a llover.* It started to rain.\n*Simón se puso a cantar.* Simón burst into song.\n\nCompare *ponerme la chaqueta*: no *a*, a thing, and it just means put on.",
+ "rule": "*Ponerse a* + a dictionary form means to start doing something, but with a push: you get down to it, or it suddenly kicks off.\n*Voy a ponerme a estudiar.* I'm going to get down to studying.\n\nThe *me*, *te*, *se*, *nos* matches the person and sticks on the end: *ponerme*, *ponerse*, *ponernos*. Don't forget the *a* before the second verb.\n\nIn stories you'll meet it in the past, for something that starts out of nowhere:\n*Se puso a llover.* It started to rain.\n*Simón se puso a cantar.* Simón burst into song.\n\nCompare *ponerme la chaqueta*: no *a*, a thing, and it just means put on.",
  "readAndPick": [
   {
    "es": "Voy a ponerme a estudiar.",
@@ -108,7 +108,7 @@
    "prompt": "Type in Spanish: I don't want to start crying.",
    "answer": "No quiero ponerme a llorar.",
    "accept": [],
-   "why": "A sudden start is *ponerme a* plus the plain verb, *llorar*."
+   "why": "A sudden start is *ponerme a* plus the dictionary form, *llorar*."
   },
   {
    "prompt": "Type in Spanish: Hernando is going to start singing.",
@@ -144,7 +144,7 @@
   {
    "wrong": "No quiero ponerme a llorando.",
    "right": "No quiero ponerme a llorar.",
-   "why": "English says start crying, but after *a* Spanish wants the plain verb: *llorar*."
+   "why": "English says start crying, but after *a* Spanish wants the dictionary form: *llorar*."
   },
   {
    "wrong": "Hernando va a ponerme a cantar.",

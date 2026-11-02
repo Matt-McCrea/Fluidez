@@ -31,7 +31,7 @@
       "en": "I said turn the music off! (to a friend)"
     }
   ],
-  "rule": "First time, you give a normal order: *Baja.* If it's ignored, you say it again with *que* and the changed ending: *¡Que bajes!* It means \"I said...\".\n\nThe frame is *¡Que* + changed ending + *!*. For no: *¡Que no lo toques!* Add *ya* or *de una vez* to sound angrier.\n\nIt's sharp. Use it with a sibling or a kid, not with your boss.",
+  "rule": "First time, you give a normal order: *Baja.* If it's ignored, you say it again with *que* and the subjunctive: *¡Que bajes!* It means \"I said...\".\n\nThe frame is *¡Que* + changed ending + *!*. For no: *¡Que no lo toques!* Add *ya* or *de una vez* to sound angrier.\n\nIt's sharp. Use it with a sibling or a kid, not with your boss.",
   "smallPrint": "Teachers call this a repeated command: *que* plus the subjunctive for an order already given.",
   "readAndPick": [
     {
@@ -111,7 +111,7 @@
       "prompt": "Type it in Spanish: I said be quiet, once and for all! (to a friend)",
       "answer": "¡Que te calles de una vez!",
       "accept": [],
-      "why": "*Te calles* is the changed ending, and *de una vez* adds the anger."
+      "why": "*Te calles* is the subjunctive, and *de una vez* adds the anger."
     },
     {
       "prompt": "Type it in Spanish: I said don't touch it! (to a friend)",
@@ -123,7 +123,7 @@
       "prompt": "Type it in Spanish: I said turn the music off! (to a friend)",
       "answer": "¡Que apagues la música!",
       "accept": [],
-      "why": "*Apagues* is the *you* form of the changed ending."
+      "why": "*Apagues* is the *you* form of the subjunctive."
     },
     {
       "prompt": "Type it in Spanish: I said leave me alone! (to a friend)",
@@ -135,7 +135,7 @@
       "prompt": "Say it again, harder: *¡Baja ya!* becomes: I said come down now! (to a friend)",
       "answer": "¡Que bajes ya!",
       "accept": [],
-      "why": "Same order, but now with *que* and the changed ending."
+      "why": "Same order, but now with *que* and the subjunctive."
     },
     {
       "prompt": "Make it negative: *¡Que te vayas!* becomes: I said don't go! (to a friend)",
@@ -148,7 +148,7 @@
     {
       "wrong": "¡Que cállate!",
       "right": "¡Que te calles!",
-      "why": "Almost. After *que*, drop the command form and use the changed ending: *te calles*."
+      "why": "Almost. After *que*, drop the command form and use the subjunctive: *te calles*."
     },
     {
       "wrong": "¡Que vienes!",

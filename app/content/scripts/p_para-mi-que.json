@@ -31,8 +31,8 @@
       "en": "If you ask me, Vale is tired."
     }
   ],
-  "rule": "*Para mí que* opens a hunch: something you suspect but can't prove. English says \"If you ask me\" or \"I bet\".\n\nWhat follows is a normal sentence with a normal verb: *no sabe*, *va a quedar*, *está*. No special mood, because you believe it.\n\nIt is casual, friends-at-the-café talk. *Para mí* on its own means \"in my view\"; add *que* when a full sentence follows.",
-  "smallPrint": "Teachers call *para mí que* an opinion marker. It takes the plain verb form (the indicative), since the speaker is fairly sure.",
+  "rule": "*Para mí que* opens a hunch: something you suspect but can't prove. English says \"If you ask me\" or \"I bet\".\n\nWhat follows is a normal sentence with an ordinary verb: *no sabe*, *va a quedar*, *está*. No special mood, because you believe it.\n\nIt is casual, friends-at-the-café talk. *Para mí* on its own means \"in my view\"; add *que* when a full sentence follows.",
+  "smallPrint": "Teachers call *para mí que* an opinion marker. It takes the ordinary form (the indicative), since the speaker is fairly sure.",
   "readAndPick": [
     {
       "es": "Para mí que mañana no abren.",
@@ -121,7 +121,7 @@
       "accept": [
         "Para mí que Tomás va a quedarse."
       ],
-      "why": "Plain verb after *que*, just as in a normal sentence."
+      "why": "Ordinary form after *que*, just as in a normal sentence."
     },
     {
       "prompt": "Type in Spanish: If you ask me, Vale is tired.",
@@ -169,7 +169,7 @@
     {
       "wrong": "Para mí que sea raro.",
       "right": "Para mí que es raro.",
-      "why": "Almost. It is a hunch you believe, so the verb stays plain: *es*."
+      "why": "Almost. It is a hunch you believe, so the verb stays ordinary: *es*."
     }
   ],
   "personal": "Say a hunch of your own about someone or something near you, starting with *Para mí que*."

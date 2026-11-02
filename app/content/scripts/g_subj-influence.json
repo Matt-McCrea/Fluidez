@@ -31,7 +31,7 @@
       "en": "What do you recommend that I order? (to a friend)"
     }
   ],
-  "rule": "To tell someone what you advise or ask of them, use three pieces:\n\n*Te recomiendo* + *que* + the wish form you already know from *quiero que*.\n\nThe person you are advising comes first (*te*, *le*, *les*, *me*). Then the advice verb: *recomiendo*, *pido*, *aconsejo*, *sugiero*. Then *que*. The verb after *que* is for the other person's action, and it takes the wish form.\n\nFor *-ar* verbs the ending switches to *-e*: *hablas* becomes *hables*. For *-er* and *-ir* verbs it switches to *-a*: *comes* becomes *comas*, *escribes* becomes *escribas*.\n\nEnglish says \"I recommend that you talk\" or just \"I'd talk to...\". Spanish uses *que* and the wish form. With *recomendar*, *aconsejar* and *sugerir* you will also meet the infinitive: *Te recomiendo hablar con un abogado.* Both are right.",
+  "rule": "To tell someone what you advise or ask of them, use three pieces:\n\n*Te recomiendo* + *que* + the subjunctive you already know from *quiero que*.\n\nThe person you are advising comes first (*te*, *le*, *les*, *me*). Then the advice verb: *recomiendo*, *pido*, *aconsejo*, *sugiero*. Then *que*. The verb after *que* is for the other person's action, and it takes the subjunctive.\n\nFor *-ar* verbs the ending switches to *-e*: *hablas* becomes *hables*. For *-er* and *-ir* verbs it switches to *-a*: *comes* becomes *comas*, *escribes* becomes *escribas*.\n\nEnglish says \"I recommend that you talk\" or just \"I'd talk to...\". Spanish uses *que* and the subjunctive. With *recomendar*, *aconsejar* and *sugerir* you will also meet the infinitive: *Te recomiendo hablar con un abogado.* Both are right.",
   "smallPrint": "Teachers call this the subjunctive after verbs of influence: you are trying to influence what someone else does.",
   "readAndPick": [
     {
@@ -135,7 +135,7 @@
       "accept": [
         "Yo le pido que me escuche."
       ],
-      "why": "*Le* is the person you ask, and *escuche* is the changed ending for *él*."
+      "why": "*Le* is the person you ask, and *escuche* is the subjunctive for *él*."
     },
     {
       "prompt": "Type in Spanish, to a friend: I ask you to help me.",
@@ -143,7 +143,7 @@
       "accept": [
         "Yo te pido que me ayudes."
       ],
-      "why": "*Te* for the friend, *que*, then *ayudes*, the changed form of *ayudas*."
+      "why": "*Te* for the friend, *que*, then *ayudes*, the subjunctive of *ayudas*."
     },
     {
       "prompt": "Type in Spanish, to a friend: I recommend that you sleep more.",
@@ -168,7 +168,7 @@
       "accept": [
         "Yo les aconsejo que no firmen nada."
       ],
-      "why": "*Les* for a group, and *no* goes right before the changed verb."
+      "why": "*Les* for a group, and *no* goes right before the subjunctive."
     },
     {
       "prompt": "Type in Spanish, to a friend: What do you recommend that I order?",
@@ -176,7 +176,7 @@
       "accept": [
         "¿Qué me recomiendas que yo pida?"
       ],
-      "why": "*Me* is the person getting the advice, and *pida* is the changed form of *pido*."
+      "why": "*Me* is the person getting the advice, and *pida* is the subjunctive of *pido*."
     }
   ],
   "pitfalls": [
@@ -198,7 +198,7 @@
     {
       "wrong": "Te pido ayudarme.",
       "right": "Te pido que me ayudes.",
-      "why": "Almost. English says \"I ask you to help\", but Spanish needs *que* and the changed verb: *que me ayudes*."
+      "why": "Almost. English says \"I ask you to help\", but Spanish needs *que* and the subjunctive: *que me ayudes*."
     }
   ],
   "personal": "Tell a friend one thing you recommend that they do this week, starting with *Te recomiendo que*."

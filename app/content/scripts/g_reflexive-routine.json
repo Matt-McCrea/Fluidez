@@ -7,6 +7,14 @@
   },
   "examples": [
     {
+      "es": "Me llamo Tomás.",
+      "en": "My name is Tomás."
+    },
+    {
+      "es": "Llamo a Vale.",
+      "en": "I'm calling Vale."
+    },
+    {
       "es": "Me voy a la cama a las diez.",
       "en": "I go to bed at ten."
     },
@@ -39,7 +47,7 @@
       "en": "I'm going to leave early."
     }
   ],
-  "rule": "Some Spanish verbs travel with a little word that points back at whoever is doing them. It changes with the person:\n\n*me*: I\n*te*: you (a friend)\n*se*: he, she, you (formal)\n*nos*: we\n*se*: they, you all\n\nSo *me voy* is I'm off, *se va* is she's off, *nos vamos* is we're off. English usually has no \"myself\" here, so don't look for one: *me siento bien* is just I feel well.\n\nThe little word goes right before the verb, and *no* goes before both: *No me siento bien.* After *voy a*, you can glue it to the end instead: *Voy a irme* or *Me voy a ir*, same thing.\n\nThis is how a whole routine gets told: *me levanto* (I get up), *me ducho* (I shower), *me acuesto* (I go to bed). You'll get those verbs later this week; they work exactly like *me voy*.",
+  "rule": "You've said *me llamo* since day one, and now you can see why. *Llamo a Vale*: the calling lands on Vale. *Me llamo Tomás*: it comes back on me, I call myself Tomás. Some Spanish verbs travel with a little word that points back at whoever is doing them. It changes with the person:\n\n*me*: I\n*te*: you (a friend)\n*se*: he, she, you (formal)\n*nos*: we\n*se*: they, you all\n\nSo *me voy* is I'm off, *se va* is she's off, *nos vamos* is we're off. Compare *voy al café*, which only says where you're going. English usually has no \"myself\" here, so don't look for one: *me siento bien* is just I feel well.\n\nThe little word goes right before the verb, and *no* goes before both: *No me siento bien.* After *voy a*, you can glue it to the end instead: *Voy a irme* or *Me voy a ir*, same thing.\n\nThis is how a whole routine gets told: *me levanto* (I get up), *me ducho* (I shower), *me acuesto* (I go to bed). You'll get those verbs later this week; they work exactly like *me voy*.",
   "smallPrint": "Teachers call these reflexive verbs, and *me*, *te*, *se*, *nos* reflexive pronouns. In the dictionary they end in *-se*: *irse*, *sentirse*, *llamarse*.",
   "readAndPick": [
     {

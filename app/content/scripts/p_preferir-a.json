@@ -13,7 +13,7 @@
     { "es": "Prefiero que decidas tú.", "en": "I'd rather you decided." },
     { "es": "¿Prefieres la montaña al mar?", "en": "Do you prefer the mountains to the sea?" }
   ],
-  "rule": "To compare two things with *preferir*, the second one comes after *a*, just like English to: *Prefiero el tinto al café.* Not *que*: that's for *más que*.\n\nRemember *a* + *el* = *al*.\n\nIt works with actions too: *Prefiero caminar a manejar*, where English says rather than.\n\nWhen you'd rather someone else did something, use *que* and the wish form you already know: *Prefiero que decidas tú.*",
+  "rule": "To compare two things with *preferir*, the second one comes after *a*, just like English to: *Prefiero el tinto al café.* Not *que*: that's for *más que*.\n\nRemember *a* + *el* = *al*.\n\nIt works with actions too: *Prefiero caminar a manejar*, where English says rather than.\n\nWhen you'd rather someone else did something, use *que* and the subjunctive you already know: *Prefiero que decidas tú.*",
   "smallPrint": "*Preferir* is a boot verb: *prefiero*, *prefieres*, *prefiere*, *preferimos*, *prefieren*.",
   "readAndPick": [
     { "es": "Prefiero el tinto al jugo.", "options": ["I like black coffee more.", "I like juice more."], "answer": 0 },

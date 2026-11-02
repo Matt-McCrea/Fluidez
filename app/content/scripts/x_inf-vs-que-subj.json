@@ -35,7 +35,7 @@
       "en": "Hernando wants you to bring him a black coffee. (to a friend)"
     }
   ],
-  "rule": "Before you choose, ask one question: who does the second thing?\n\nThe same person who wants it: plain dictionary form, no *que*.\n*Quiero salir.* I want, I leave.\n*¿Quieres cocinar?* You want, you cook.\n\nSomeone else: *que* plus the opposite vowel.\n*Quiero que salgas.* I want, you leave.\n*¿Quieres que cocine?* You want, I cook.\n\nEnglish hides the switch. I want to go and I want you to go look almost the same, with just a you in the middle. Spanish makes you rebuild the sentence: *que*, a new person, a new ending.\n\nThe mistake to avoid runs both ways. Never put *que* when it's the same person (*quiero que yo salga* sounds broken), and never leave the plain form when it's someone else (*quiero tú salir* doesn't exist).",
+  "rule": "Before you choose, ask one question: who does the second thing?\n\nThe same person who wants it: plain dictionary form, no *que*.\n*Quiero salir.* I want, I leave.\n*¿Quieres cocinar?* You want, you cook.\n\nSomeone else: *que* plus the subjunctive.\n*Quiero que salgas.* I want, you leave.\n*¿Quieres que cocine?* You want, I cook.\n\nEnglish hides the switch. I want to go and I want you to go look almost the same, with just a you in the middle. Spanish makes you rebuild the sentence: *que*, a new person, a new ending.\n\nThe mistake to avoid runs both ways. Never put *que* when it's the same person (*quiero que yo salga* sounds broken), and never leave the dictionary form when it's someone else (*quiero tú salir* doesn't exist).",
   "smallPrint": "Teachers call this the same subject or different subject rule: infinitive versus *que* plus subjunctive.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Pick *dormir* or *que duermas* and type the whole sentence: *Quiero ___.* (I want to sleep.)",
       "answer": "Quiero dormir.",
       "accept": [],
-      "why": "You want and you sleep: same person, so the plain form."
+      "why": "You want and you sleep: same person, so the dictionary form."
     },
     {
       "prompt": "Pick *ayudarme* or *que me ayudes* and type the whole sentence, to a friend: *Quiero ___.* (I want you to help me.)",
@@ -151,20 +151,20 @@
       "prompt": "Change who does it. Now you want your friend to sign, not you: *No quiero firmar nada.*",
       "answer": "No quiero que firmes nada.",
       "accept": [],
-      "why": "A second person appears, so *que* and the opposite vowel: *firmes*."
+      "why": "A second person appears, so *que* and the subjunctive: *firmes*."
     },
     {
       "prompt": "Change who does it. Now it's you who wants to learn: *Quiero que Simón aprenda otra frase.* (I want to learn another phrase.)",
       "answer": "Quiero aprender otra frase.",
       "accept": [],
-      "why": "Back to one person, so drop *que* and use the plain form."
+      "why": "Back to one person, so drop *que* and use the dictionary form."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Quiero que yo me quede.",
       "right": "Quiero quedarme.",
-      "why": "Almost. You want and you stay, so Spanish uses the plain form: *quedarme*."
+      "why": "Almost. You want and you stay, so Spanish uses the dictionary form: *quedarme*."
     },
     {
       "wrong": "Quiero tú quedarte.",

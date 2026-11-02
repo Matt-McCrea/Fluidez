@@ -31,7 +31,7 @@
       "en": "Is it enough to send an email?"
     }
   ],
-  "rule": "*Basta con* names the minimum, not an order. It is closer to \"all you need is\" than to \"you must\".\n\nWith the same person throughout, use the infinitive: *Basta con llenar el formulario*.\n\nWhen the doer changes, use *que* plus the wish form of the verb: *Basta con que firmes aquí*.\n\nA plain noun works too: *Basta con una llamada*. With *no*, it means that something is not enough.",
+  "rule": "*Basta con* names the minimum, not an order. It is closer to \"all you need is\" than to \"you must\".\n\nWith the same person throughout, use the infinitive: *Basta con llenar el formulario*.\n\nWhen the doer changes, use *que* plus the subjunctive of the verb: *Basta con que firmes aquí*.\n\nA plain noun works too: *Basta con una llamada*. With *no*, it means that something is not enough.",
   "smallPrint": "Teachers call the verb after *que* the subjunctive. Here it follows *basta con que*, as after other words about what is needed.",
   "readAndPick": [
     {
@@ -121,7 +121,7 @@
     {
       "prompt": "Pick *firmas* or *firmes* and type the whole sentence, to a friend: *Basta con que ___ aquí.*",
       "answer": "Basta con que firmes aquí.",
-      "why": "After *basta con que* we use the wish form: *firmes*, not *firmas*."
+      "why": "After *basta con que* we use the subjunctive: *firmes*, not *firmas*."
     },
     {
       "prompt": "Type in Spanish: Wanting is not enough.",
@@ -134,7 +134,7 @@
       "accept": [
         "Basta con que nos avise un día antes."
       ],
-      "why": "*Usted* takes *avise*, the wish form of *avisar*."
+      "why": "*Usted* takes *avise*, the subjunctive of *avisar*."
     },
     {
       "prompt": "Turn it into a question: *Basta con enviar un correo.* Say: Is it enough to send an email?",
@@ -151,7 +151,7 @@
     {
       "wrong": "Basta con firmas aquí.",
       "right": "Basta con que firmes aquí.",
-      "why": "Almost. A new person doing the thing needs *que* and the wish form, *firmes*."
+      "why": "Almost. A new person doing the thing needs *que* and the subjunctive, *firmes*."
     },
     {
       "wrong": "Basta de llenar este formulario.",

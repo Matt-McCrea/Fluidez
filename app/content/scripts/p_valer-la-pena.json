@@ -31,7 +31,7 @@
       "en": "It's not worth you worrying. (to a friend)"
     }
   ],
-  "rule": "*Vale la pena* means \"it's worth it\". Only *valer* changes: *vale* now, *valió* for something finished, *valía* for how it was. *La pena* stays put.\n\nTo say what is worth doing in general, use an infinitive: *Vale la pena visitar la Candelaria*.\n\nTo say who it is worth for, use *que* and the wish form: *Vale la pena que lo pienses bien*.\n\nOn its own it works too: *Sí, vale la pena.*",
+  "rule": "*Vale la pena* means \"it's worth it\". Only *valer* changes: *vale* now, *valió* for something finished, *valía* for how it was. *La pena* stays put.\n\nTo say what is worth doing in general, use an infinitive: *Vale la pena visitar la Candelaria*.\n\nTo say who it is worth for, use *que* and the subjunctive: *Vale la pena que lo pienses bien*.\n\nOn its own it works too: *Sí, vale la pena.*",
   "smallPrint": "Teachers call this an expression of evaluation. *La pena* here means \"the effort\", not \"sorrow\".",
   "readAndPick": [
     {
@@ -124,7 +124,7 @@
       "prompt": "Type in Spanish, to a friend: It's worth you thinking it over carefully.",
       "answer": "Vale la pena que lo pienses bien.",
       "accept": [],
-      "why": "When it matters who does it, use *que* and the wish form: *pienses*."
+      "why": "When it matters who does it, use *que* and the subjunctive: *pienses*."
     },
     {
       "prompt": "Type in Spanish: Is it worth going to the hearing?",
@@ -165,7 +165,7 @@
     {
       "wrong": "Vale la pena que lo piensas bien.",
       "right": "Vale la pena que lo pienses bien.",
-      "why": "Almost. After *vale la pena que* the verb takes the wish form: *pienses*."
+      "why": "Almost. After *vale la pena que* the verb takes the subjunctive: *pienses*."
     }
   ],
   "personal": "Say one thing that is worth it for you in Bogotá, or one that wasn't, starting with *Vale la pena…* or *No valió la pena…*"

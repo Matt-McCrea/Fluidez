@@ -151,7 +151,7 @@
       "accept": [
         "¿Es cierto que Vale se va a Medellín?"
       ],
-      "why": "The claim after *que* keeps its normal verb."
+      "why": "The claim after *que* keeps its ordinary verb."
     },
     {
       "prompt": "Turn the statement into a check: *Altamira compró la cuadra.* Is it true that Altamira bought the block?",

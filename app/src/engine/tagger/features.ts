@@ -1145,7 +1145,7 @@ function npPass(ctx: FeatureCtx): void {
     if (x === 'nada' && nx?.w === 'más' && words[i + 2]?.pos === 'inf') add(ctx, 'conn.temporal-adv', i, i + 2);
     if (x === 'medida' && p?.w === 'a' && nx?.w === 'que') add(ctx, 'conn.temporal-adv', i - 1, i + 1);
     // cuanto más ... (más/menos)
-    if (x === 'cuanto' && (nx?.w === 'más' || nx?.w === 'menos')) add(ctx, 'comp.cuanto-mas', i, i + 1);
+    if (w.lemma === 'cuanto' && (nx?.w === 'más' || nx?.w === 'menos')) add(ctx, 'comp.cuanto-mas', i, i + 1);
     // general obligation: se debe + inf, uno tiene que, conviene
     if ((x === 'debe' && p?.w === 'se' && words[i + 1]?.pos === 'inf') || (x === 'uno' && nx?.w === 'tiene' && words[i + 2]?.w === 'que') || x === 'conviene') add(ctx, 'peri.impersonal-obligation', i, i);
     // de + haber + participle as a condition: de haberlo sabido
