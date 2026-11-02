@@ -133,6 +133,8 @@ export function runGate(o: GateOptions = {}): GateResult {
     try {
       const shipped = readShippedIds(contentDir);
       if (shipped) findings.push(...checkContinuity({ current: idsOfLoaded(loaded), units: cur.units, shipped: unpackShipped(shipped), legacy: readLegacyPath(contentDir), migrations: readMigrationFiles(contentDir) }));
+      // the table only makes sense against a snapshot: one without the other is the snapshot lost, and every check here silently off
+      else if (readMigrationFiles(contentDir).length) findings.push({ severity: 'error', check: 'continuity', file: 'content/_shipped', problem: 'content/_migrations has entries but content/_shipped/ids.json is missing, so nothing that shipped can be checked', fix: 'restore it from git; it is written by npm run shipped and only ever grows' });
     } catch (e) {
       findings.push({ severity: 'error', check: 'continuity', file: 'content/_shipped', problem: `the shipped snapshot cannot be read: ${(e as Error).message}`, fix: 'restore content/_shipped from git; it is written by npm run shipped and only ever grows' });
     }

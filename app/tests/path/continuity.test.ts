@@ -134,6 +134,13 @@ describe('the gate on a tree', () => {
     const c = runGate({ appDir: fx.app }).findings.filter((f) => f.check === 'continuity' && f.file === 'content/_shipped');
     expect(c.map((f) => f.problem)).toEqual([expect.stringMatching(/the shipped snapshot cannot be read/)]);
   });
+  it('fails a table with no snapshot: the snapshot was lost, and every check here would be off', () => {
+    const fx = makeFixture();
+    fx.write('_migrations/0001.json', { id: 1, note: 'test' });
+    const c = runGate({ appDir: fx.app }).findings.filter((f) => f.check === 'continuity');
+    expect(c.map((f) => f.problem)).toEqual([expect.stringMatching(/ids\.json is missing/)]);
+    expect(c[0].severity).toBe('error');
+  });
   it('says nothing about continuity before a snapshot exists', () => {
     const fx = makeFixture();
     expect(runGate({ appDir: fx.app }).findings.filter((f) => f.check === 'continuity')).toEqual([]);
