@@ -54,33 +54,6 @@
         "l:vez",
         "p:otro-no-article"
       ]
-    },
-    {
-      "id": "x:present-progressive#a-2",
-      "node": "x:present-progressive",
-      "side": "g:estar-gerund",
-      "rung": 1,
-      "en": "What are you doing right now?",
-      "es": "¿Qué estás haciendo ahora mismo?",
-      "gap": [
-        5,
-        19
-      ],
-      "options": [
-        "haces",
-        "estás haciendo"
-      ],
-      "answer": 1,
-      "why": "Right now takes estar and the gerund.",
-      "requires": [
-        "g:estar-gerund",
-        "g:estar-location-states",
-        "g:questions",
-        "l:ahora",
-        "l:estar",
-        "l:hacer",
-        "l:qué"
-      ]
     }
   ]
 }

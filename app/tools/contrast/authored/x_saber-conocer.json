@@ -102,23 +102,6 @@
     "why": "A fact or a skill, so saber."
   },
   {
-    "id": "9",
-    "side": "g:yo-irregular",
-    "rung": 1,
-    "en": "Hernando knows a lot about coffee.",
-    "es": "Hernando sabe mucho de café.",
-    "gap": [
-      9,
-      13
-    ],
-    "options": [
-      "sabe",
-      "conoce"
-    ],
-    "answer": 0,
-    "why": "A fact or a skill, so saber."
-  },
-  {
     "id": "10",
     "side": "g:yo-irregular",
     "rung": 1,

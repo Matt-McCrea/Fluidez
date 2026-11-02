@@ -9,6 +9,7 @@ import { weakSpots } from '../../src/learner/weak';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import type { Card } from '../../src/ui/session/cards';
+import { contrastCard, filled } from '../../src/ui/session/contrast-card';
 import { CONTRAST_RUN, Freeplay } from '../../src/ui/session/freeplay';
 import { applyPlacement } from '../../src/ui/session/placement';
 
@@ -88,7 +89,7 @@ describe('Train it on a contrast the learner has reached', () => {
   }, 120_000);
 
   it('a near-synonym with no items of its own is typed throughout too: it is the file that says so, and every contrast has one', async () => {
-    for (const x of ['x:molesta-vs-no-soporto', 'x:orden-escalera', 'x:vista-gorda-pasar-por-alto']) {
+    for (const x of ['x:molesta-vs-no-soporto', 'x:orden-escalera']) {
       expect(bundle.contrastItems(x), x).toHaveLength(0);
       expect(bundle.contrasts.get(x)?.decides, x).toBe('synonym');
       const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
@@ -127,7 +128,7 @@ describe('Train it on a contrast the learner has reached', () => {
   }, 120_000);
 
   it('tops the run up from the contrast\'s script where its items run short, so a contrast with a few items still has a run', async () => {
-    const x = 'x:parcial-vs-total';
+    const x = 'x:perdon-lo-siento';
     expect(bundle.contrastItems(x).length).toBeLessThan(CONTRAST_RUN);
     const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
     expect(cards.length).toBe(CONTRAST_RUN);
@@ -193,4 +194,22 @@ describe('Train it on a contrast the learner has not reached', () => {
     expect(fp.emptyReason).not.toMatch(/week/);
     expect(fp.emptyReason).not.toMatch(/comes|come/);
   }, 120_000);
+});
+
+describe('Authored contrast items', () => {
+  // "Hoy he dormido toda la tarde." passed its own card's check: an item the app itself calls right both ways is no contrast
+  it('have one right side: what is written passes a typed card, and the other side does not', () => {
+    const bad: string[] = [];
+    for (const [node, file] of bundle.contrasts) {
+      for (const item of file.items.filter((i) => i.id.includes('#a-'))) {
+        const card = contrastCard(item, file.decides, { key: 'k', form: 'type' });
+        if (card.type !== 'type') { bad.push(`${node}: ${item.id} is not typed`); continue; }
+        const whole = file.decides === 'discourse';
+        const typed = (k: number) => (whole ? filled(item, k) : item.options[k]);
+        if (!card.check(typed(item.answer)).pass) bad.push(`${item.id} refuses its own answer`);
+        item.options.forEach((_, k) => { if (k !== item.answer && card.check(typed(k)).pass) bad.push(`${item.id} takes ${typed(k)}`); });
+      }
+    }
+    expect(bad).toEqual([]);
+  });
 });

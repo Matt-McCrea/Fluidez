@@ -307,32 +307,6 @@
       ]
     },
     {
-      "id": "x:saber-conocer#a-9",
-      "node": "x:saber-conocer",
-      "side": "g:yo-irregular",
-      "rung": 1,
-      "en": "Hernando knows a lot about coffee.",
-      "es": "Hernando sabe mucho de café.",
-      "gap": [
-        9,
-        13
-      ],
-      "options": [
-        "sabe",
-        "conoce"
-      ],
-      "answer": 0,
-      "why": "A fact or a skill, so saber.",
-      "requires": [
-        "g:present-er-ir",
-        "l:café",
-        "l:saber",
-        "p:hedge-knowledge",
-        "p:quantifiers-basic",
-        "p:saber-conocer"
-      ]
-    },
-    {
       "id": "x:saber-conocer#a-10",
       "node": "x:saber-conocer",
       "side": "g:yo-irregular",

@@ -50,32 +50,6 @@
         "c:ya-comiste",
         "l:comer"
       ]
-    },
-    {
-      "id": "x:pret-perfecto-latam#a-17",
-      "node": "x:pret-perfecto-latam",
-      "side": "g:preterite-ser-ir-hacer",
-      "rung": 2,
-      "en": "Today I slept all afternoon.",
-      "es": "Hoy dormí toda la tarde.",
-      "gap": [
-        4,
-        9
-      ],
-      "options": [
-        "he dormido",
-        "dormí"
-      ],
-      "answer": 1,
-      "why": "Today with a stretch of time, finished, takes the plain past.",
-      "requires": [
-        "g:gender-articles",
-        "g:preterite-er-ir",
-        "l:dormir",
-        "l:hoy",
-        "l:tarde",
-        "p:todos-los-dias"
-      ]
     }
   ]
 }
