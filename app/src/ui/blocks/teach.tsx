@@ -2,7 +2,7 @@
 // retrievals each, every round a different format, spaced a few cards apart), a new pattern (hook → examples → rule → read and pick →
 // your turn → pitfalls), the drill opener (recall before the reminder) and
 // the personal sentence.
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { LearnBlock, PersonalBlock, RuleRecallBlock, TeachBlock } from '../../compiler';
 import type { TeachingScript } from '../../content/schema';
 import { checkPersonal } from '../../check/personal';
@@ -264,31 +264,45 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
 
 // ---------------------------------------------------------------- personal sentence
 
-export function Personal({ block, run, onDone }: BlockProps<PersonalBlock>) {
+const PERSONAL_ASK = 'Write one true sentence about you, using what you learned today.';
+
+export function Personal({ block, run, ui, onDone }: BlockProps<PersonalBlock>) {
   const script = run.bundle.scripts.get(block.node);
   const [value, setValue] = useState('');
   const [tries, setTries] = useState(0);
   const [tried, setTried] = useState('');
   const [sent, setSent] = useState<null | 'pass' | 'shown'>(null);
   const [hint, setHint] = useState('');
+  /** the id this sentence is kept under, from its first check */
+  const kept = useRef<{ id: string; at: number } | undefined>(undefined);
   const h = blockHeading(block, run.bundle);
   const words = value.trim().split(/\s+/).filter(Boolean).length;
   const ready = words >= 2 && canCheck(value, tries ? tried : undefined);
+  /** Keep what is written as it stands: a sentence the learner leaves after being sent back is still a sentence. */
+  const keep = (patch: { first?: string; result?: 'pass' | 'shown' }) => {
+    kept.current ??= { id: `personal:${block.node}:${Date.now()}`, at: Date.now() };
+    const { id, at } = kept.current;
+    void ui.keep.saveWriting({
+      id, at, kind: 'personal', ref: block.node, prompt: script?.personal ?? PERSONAL_ASK, text: value, words,
+      session: run.learner.sessionIndex, ...patch,
+    });
+  };
   const submit = () => {
     if (!ready || sent) return;
     const r = checkPersonal(value, { node: block.node, script, nodes: run.bundle.course.nodes, lexicon: bundleLexicon(run.bundle) });
-    const done = (how: 'pass' | 'shown') => { setSent(how); void run.addWords(0, words); };
+    const done = (how: 'pass' | 'shown') => { setSent(how); void run.addWords(0, words); keep({ ...(tries && tried !== value ? { first: tried } : {}), result: how }); };
     if (r.pass) return done('pass');
     if (tries >= 1) return done('shown');
     setTries(1);
     setTried(value);
     setHint(r.hint ?? '');
+    keep({});
   };
   return (
     <>
       <Heading {...h} />
       <section class="card">
-        <p class="ask"><Rich text={script?.personal ?? 'Write one true sentence about you, using what you learned today.'} /></p>
+        <p class="ask"><Rich text={script?.personal ?? PERSONAL_ASK} /></p>
         <AnswerField value={value} onChange={setValue} onSubmit={submit} label="Your sentence" placeholder="Your sentence, in Spanish" lang="es" disabled={!!sent} autoFocus />
         <div class="feedback" aria-live="polite">
           {sent === 'pass'

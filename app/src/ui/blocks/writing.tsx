@@ -42,6 +42,8 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
   const [submitted, setSubmitted] = useState(false);
   const [rubric, setRubric] = useState<Record<number, RubricAnswer>>({});
   const before = useRef(lastWritingMark(ui.state.writing, block.task));
+  /** the id this text was kept under, once it is sent */
+  const kept = useRef<string | undefined>(undefined);
   const h = blockHeading(block, run.bundle);
   const constraints = (task?.constraints ?? []) as unknown as Constraint[];
   const result = useMemo(() => checkWriting({ constraints }, text, { lexicon: bundleLexicon(run.bundle) }), [text]);
@@ -55,13 +57,20 @@ export function Writing({ block, run, ui, onDone }: BlockProps<WritingBlock>) {
     run.expose(run.bundle.index.tasks.get(task.id)?.requires ?? []);
     void run.addWords(0, n);
     void remember({});
+    const at = Date.now();
+    kept.current = `task:${task.id}:${at}`;
+    void ui.keep.saveWriting({
+      id: kept.current, at, kind: 'task', ref: task.id, prompt: task.prompt, text, words: n, session: run.learner.sessionIndex,
+      met: result?.passed ?? 0, total: constraints.length,
+    });
   };
-  const remember = (r: Record<number, RubricAnswer>) => ui.update((s) => {
-    s.writing = { ...(s.writing ?? {}), [task!.id]: {
-      at: Date.now(), rubric: RUBRIC.map((_, k) => r[k]).filter((x): x is RubricAnswer => !!x),
-      words: n, met: result?.passed ?? 0, of: constraints.length,
-    } };
-  });
+  const remember = (r: Record<number, RubricAnswer>) => {
+    const rubric = RUBRIC.map((_, k) => r[k]).filter((x): x is RubricAnswer => !!x);
+    if (kept.current && rubric.length) void ui.keep.amendWriting(kept.current, { rubric });
+    return ui.update((s) => {
+      s.writing = { ...(s.writing ?? {}), [task!.id]: { at: Date.now(), rubric, words: n, met: result?.passed ?? 0, of: constraints.length } };
+    });
+  };
   const missing = constraints.length - (result?.passed ?? 0);
 
   return (
