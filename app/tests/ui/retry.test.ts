@@ -7,6 +7,7 @@ import { beforeAll, describe, expect, it, vi } from 'vitest';
 import type { PersonalBlock } from '../../src/compiler';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
+import { Rating } from '../../src/learner';
 import type { Card } from '../../src/ui/session/cards';
 
 let slots: unknown[] = [];
@@ -118,6 +119,39 @@ describe('Try again on a typed card', () => {
     s.type('x'); s = screen(CardView, props); s.click();
     s = screen(CardView, props);
     expect(s.text).toContain("Here's the right version");
+  });
+});
+
+describe('the other side of a contrast, typed', () => {
+  const it0 = { id: 'x:t#1', node: 'x:t', side: 'g:a', rung: 1, en: 'What are you reading?', es: '¿Qué lees?', gap: [1, 4] as [number, number], options: ['Qué', 'Que'], answer: 0, why: 'A question.', requires: [] };
+
+  it('ends the card as a miss with no second try, so the review it is graded as is Again and not Hard', async () => {
+    const { CardView } = await import('../../src/ui/components/card');
+    const { contrastCard } = await import('../../src/ui/session/contrast-card');
+    const { gradeOf } = await import('../../src/ui/session/attempt');
+    const onDone = vi.fn();
+    const props = { card: contrastCard(it0, 'local', { key: 'k', form: 'type' }) as Card, onDone };
+    slots = [];
+    let s = screen(CardView, props);
+    s.type('que'); s = screen(CardView, props); s.click();
+    s = screen(CardView, props);
+    expect(s.text).toContain("Here's the right version");
+    expect(s.text).not.toContain('Check the accents');
+    s.click();
+    const outcome = onDone.mock.calls[0][0];
+    expect(outcome).toMatchObject({ correct: false, tries: 1 });
+    expect(gradeOf(outcome)).toBe(Rating.Again);
+  });
+
+  it('a slip that is neither side still gets its second try', async () => {
+    const { CardView } = await import('../../src/ui/components/card');
+    const { contrastCard } = await import('../../src/ui/session/contrast-card');
+    const props = { card: contrastCard(it0, 'local', { key: 'k', form: 'type' }) as Card, onDone: vi.fn() };
+    slots = [];
+    let s = screen(CardView, props);
+    s.type('qeu'); s = screen(CardView, props); s.click();
+    s = screen(CardView, props);
+    expect(s.text).not.toContain("Here's the right version");
   });
 });
 
