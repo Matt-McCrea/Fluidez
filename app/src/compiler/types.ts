@@ -147,7 +147,8 @@ export interface PathState {
   /**
    * The same place by name, kept beside the integers: the unit's id and the day's stable key (content/days.ts).
    * The integers are what the compiler walks; these are what survive the course being rearranged, and
-   * learner/reconcile.ts sets the integers from them at boot. Absent on a path from before keys, and once the course is finished.
+   * learner/reconcile.ts sets the integers from them at boot. Absent on a path from before keys, once the course is finished,
+   * and after moving on with no course to name the day by (the integers are then the place).
    */
   unitId?: string;
   dayKey?: string;

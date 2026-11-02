@@ -187,6 +187,116 @@ describe('a node retired or lost', () => {
     expect(out.report.problems.join(' ')).toMatch(/not in this course/);
     expect(out.path.owedNew).toEqual([]);
   });
+
+  it('leaves their place alone too, and takes no version from a course that may not be theirs', () => {
+    // a build with a fraction of the course: the day is not in it, and clamping would save a place far behind the real one
+    const wrong = buildCourse(original().slice(0, 1), [node('l:other')]);
+    const i = input({ path: { unit: 30, day: 1, unitId: 'u31', dayKey: 'u31-d1', contentVersion: 1, owedNew: ['l:far'] }, known: ['g:x', 'l:a', 'l:b', 'l:c', 'l:d', 'l:e', 'g:y'], course: wrong, history: history(migration(1, {}), migration(2, { nodes: { rename: { 'l:a': 'l:aa' } } })) });
+    const out = reconcile(i);
+    expect(out.path).toBe(i.path);
+    expect(out.state).toBe(i.state);
+    expect(out.report).toMatchObject({ held: true, noop: true, toVersion: 1, migrations: [] });
+    expect(out.changed).toEqual({ state: false, events: false, attempts: false, path: false, ui: false, session: false });
+  });
+
+  it('brings back a record put aside once the table says where it went', () => {
+    const rec = learnerWith(['l:c']).toJSON().nodes['l:c'];
+    const state = { ...learnerWith(['g:x', 'l:a']).toJSON(), orphans: { 'l:old': { ...rec, id: 'l:old' } } };
+    const out = reconcile(input({ state, path: { unit: 0, day: 3, dayKey: 'u01-d3', unitId: 'u01', contentVersion: 0 }, history: history(migration(1, { nodes: { rename: { 'l:old': 'l:b' } } })) }));
+    expect(out.state.nodes['l:b']).toMatchObject({ id: 'l:b', receptive: rec.receptive });
+    expect(out.state.orphans).toEqual({});
+    expect(out.report.restored).toEqual(['l:b']);
+    expect(out.report.owed).not.toContain('l:b');
+  });
+});
+
+describe('a learner who has finished the course', () => {
+  const done = (units: number): Partial<PathState> => ({ unit: units, day: 0, contentVersion: 0 });
+  const everything = ['g:x', 'g:y', 'c:hi', 'l:a', 'l:b', 'l:c', 'l:d', 'g:z'];
+
+  it('stays finished and owes nothing when nothing moved', () => {
+    const out = reconcile(input({ path: done(2), known: everything }));
+    expect(out.path).toMatchObject({ unit: 2, day: 0 });
+    expect(out.report.place.how).toBe('finished');
+    expect(out.report.owed).toEqual([]);
+  });
+
+  it('is owed what is added behind them', () => {
+    const moved = original();
+    moved[0].days[1].lexemes.push('l:e');
+    const out = reconcile(input({ path: done(2), known: everything, units: moved }));
+    expect(out.report.owed).toEqual(['l:e']);
+    expect(out.path.owedNew).toEqual(['l:e']);
+    expect(out.path).toMatchObject({ unit: 2, day: 0 });
+  });
+
+  it('is not sent back when a unit is folded into another: their integers mean the end, not a day of the shipped course', () => {
+    const [a, b] = original();
+    const legacy = { format: 1 as const, units: { u01: ['u01-d0', 'u01-d1', 'u01-d2', 'u01-d3'], u02: ['u02-d0'], u03: ['u02-d1'] } };
+    const out = reconcile(input({ path: { unit: 2, day: 0, contentVersion: 1 }, known: everything, units: [a, b], history: { migrations: [migration(1, {})], legacy } }));
+    expect(out.path).toMatchObject({ unit: 2, day: 0 });
+    expect(out.report.place.how).toBe('finished');
+  });
+
+  it('stands at the end of a course that lost a unit, as the compiler counts it', () => {
+    const out = reconcile(input({ path: done(5), known: everything }));
+    expect(out.path).toMatchObject({ unit: 2, day: 0 });
+    expect(reconcile({ ...input({ known: everything }), path: out.path }).report.noop).toBe(true);
+  });
+});
+
+describe('a lesson kept across a move', () => {
+  const on = (over: Partial<PathState> = {}): Partial<PathState> => ({ unit: 0, day: 1, unitId: 'u01', dayKey: 'u01-d1', contentVersion: 0, ...over });
+  const lesson = (after: { unit: number; day: number }): SessionDoc => ({ version: 2, contentVersion: 0, dayKey: 'u01-d1', plan: { unit: 'u01', day: 1, pathAfter: after } });
+
+  it('is kept when finishing it still lands on the next day', () => {
+    const out = reconcile(input({ path: on(), session: lesson({ unit: 0, day: 2 }) }));
+    expect(out.report.session).toEqual({ action: 'kept' });
+  });
+
+  it('is kept when it does not advance', () => {
+    expect(reconcile(input({ path: on(), session: lesson({ unit: 0, day: 1 }) })).report.session).toEqual({ action: 'kept' });
+  });
+
+  it('is kept when it is the last day of the unit and leads into the next', () => {
+    const out = reconcile(input({ known: ['g:x', 'l:a', 'l:b', 'g:y', 'c:hi'], path: on({ day: 3, dayKey: 'u01-d3' }), session: { version: 2, contentVersion: 0, dayKey: 'u01-d3', plan: { unit: 'u01', day: 3, pathAfter: { unit: 1, day: 0 } } } }));
+    expect(out.report.session).toEqual({ action: 'kept' });
+  });
+
+  it('is dropped when the days after it moved away, so finishing cannot leave the learner past the end of the unit', () => {
+    const moved = original();
+    // the unit ends at the learner's day now: what followed it went to the next unit, behind which nothing is owed
+    moved[1].days.unshift(...moved[0].days.splice(2));
+    const out = reconcile(input({ known: ['g:x', 'l:a', 'l:b'], path: on(), session: lesson({ unit: 0, day: 2 }), units: moved }));
+    expect(out.report.owed).toEqual([]);
+    expect(out.report.place.how).toBe('same');
+    expect(out.session).toBeNull();
+    expect(out.report.session?.why).toMatch(/would leave the learner/);
+  });
+
+  it('is dropped when a day is added after the last of its unit, so finishing cannot skip that day', () => {
+    const moved = original();
+    moved[0].days.push(...unit('u01', [{ key: 'u01-d9', lexemes: ['l:a'] }]).days);
+    const known = ['g:x', 'l:a', 'l:b', 'g:y', 'c:hi'];
+    const session: SessionDoc = { version: 2, contentVersion: 0, dayKey: 'u01-d3', plan: { unit: 'u01', day: 3, pathAfter: { unit: 1, day: 0 } } };
+    const out = reconcile(input({ known, path: on({ day: 3, dayKey: 'u01-d3' }), session, units: moved }));
+    expect(out.report.owed).toEqual([]);
+    expect(out.session).toBeNull();
+  });
+
+  it('is dropped when the units before it shifted: its integers would send the learner to another unit', () => {
+    const shifted = [unit('u00', [{ key: 'u00-d0', lexemes: ['l:a'] }]), ...original()];
+    const out = reconcile(input({ path: on(), session: lesson({ unit: 0, day: 2 }), units: shifted }));
+    expect(out.path).toMatchObject({ unit: 1, day: 1, dayKey: 'u01-d1' });
+    expect(out.report.owed).toEqual([]);
+    expect(out.session).toBeNull();
+  });
+
+  it('is dropped when a node was put aside, as resuming would review a node the learner no longer holds', () => {
+    const out = reconcile(input({ known: ['g:x', 'l:a', 'l:b', 'l:gone'], path: on(), session: lesson({ unit: 0, day: 2 }) }));
+    expect(out.report.orphaned).toEqual([{ node: 'l:gone', why: 'unknown' }]);
+    expect(out.session).toBeNull();
+  });
 });
 
 describe('a course whose days moved', () => {

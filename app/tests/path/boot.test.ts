@@ -141,4 +141,53 @@ describe('boot over a learner the live site stored', () => {
     expect(w.ui.path.owedNew).toEqual(['l:gone']);
     expect(w.ui.path.dayKey).toBeUndefined();
   });
+
+  it('keeps a learner who moved on while the course could not be read where they got to', async () => {
+    const { kv } = await stored();
+    await boot({ kv, loader: new ContentLoader(files()), now: () => AT, fixtures: false });
+    expect(kv.data.get(PATH_KEY)).toMatchObject({ day: 2, dayKey: 'u01-d2' });
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const broken = files();
+    broken.graph = { '/content/graph/all.json': async () => { throw new Error('offline'); } };
+    const offline = await boot({ kv, loader: new ContentLoader(broken), now: () => AT, fixtures: false });
+    warn.mockRestore();
+    // two lessons finish on this start: nothing can name the day they land on
+    await offline.ui.setPath({ ...offline.ui.path, day: 3 });
+    await offline.ui.setPath({ ...offline.ui.path, day: 4 });
+    const w = await boot({ kv, loader: new ContentLoader(files()), now: () => AT, fixtures: false });
+    expect(w.ui.path).toMatchObject({ unit: 0, day: 4, dayKey: 'u01-d4' });
+  });
+
+  it('keeps a learner it cannot work out, as they were, rather than out of the app', async () => {
+    const { kv } = await stored({ path: { pendingDrills: [null] } });
+    const error = vi.spyOn(console, 'error').mockImplementation(() => {});
+    const w = await boot({ kv, loader: new ContentLoader(files()), now: () => AT, fixtures: false });
+    expect(error).toHaveBeenCalledTimes(1);
+    error.mockRestore();
+    expect(w.ui.path).toMatchObject({ unit: 0, day: 2 });
+    expect(w.ui.path.dayKey).toBeUndefined();
+    expect(w.ui.contentVersion).toBe(0);
+  });
+
+  it('names nothing against a course that does not look like the learner\'s', async () => {
+    const known = Array.from({ length: 30 }, (_, i) => `l:other${i}`);
+    const { kv } = await stored({ known, path: { unit: 0, day: 2, unitId: 'u09', dayKey: 'u09-d2', contentVersion: 3 } });
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const w = await boot({ kv, loader: new ContentLoader(files()), now: () => AT, fixtures: false });
+    warn.mockRestore();
+    expect(kv.data.get(PATH_KEY)).toMatchObject({ dayKey: 'u09-d2', contentVersion: 3, version: 3 });
+    expect(Object.keys((kv.data.get('state') as LearnerState).nodes)).toEqual(known);
+    await w.ui.setPath({ ...w.ui.path, remediate: [] });
+    expect(kv.data.get(PATH_KEY)).toMatchObject({ dayKey: 'u09-d2', contentVersion: 3 });
+  });
+
+  it('keeps the path as it was when settling moves the learner or changes what they are owed', async () => {
+    const moved = u1('l:a');
+    moved.days.unshift({ key: 'u01-d9', type: 'drill', focus: [], chunks: [], lexemes: [] });
+    const legacy = { format: 1, units: { u01: moved.days.slice(1).map((d) => d.key) } };
+    const { kv } = await stored();
+    const w = await boot({ kv, loader: new ContentLoader(files({ units: [moved], history: { migrations: {}, legacy } })), now: () => AT, fixtures: false });
+    expect(w.ui.path).toMatchObject({ day: 3 });
+    expect(kv.data.get('path.pre-content-0')).toMatchObject({ unit: 0, day: 2 });
+  });
 });

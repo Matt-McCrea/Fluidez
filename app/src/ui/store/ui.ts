@@ -259,7 +259,17 @@ export class UiStore {
   /** The content version this build's documents are settled at; 0 before boot settles them. */
   get contentVersion(): number { return this.tracking?.version ?? 0; }
 
-  private placed(path: PathState): PathState { return this.tracking ? stampPosition(path, this.tracking.course, this.tracking.version) : path; }
+  /**
+   * A path as it is written. With no settled course to name its place (the build could not read the course,
+   * or held off from it), a name stands only while the integers do: one left beside integers that have moved
+   * on would take the learner back to it at the next boot, as reconcile reads the name first.
+   */
+  private placed(path: PathState): PathState {
+    if (this.tracking) return stampPosition(path, this.tracking.course, this.tracking.version);
+    if (path.unit === this.path.unit && path.day === this.path.day) return path;
+    const { unitId: _u, dayKey: _d, ...rest } = path;
+    return rest;
+  }
 
   private stampedSession(s: SavedSession): SavedSession {
     const t = this.tracking;

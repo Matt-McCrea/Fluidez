@@ -16,6 +16,9 @@
 //      owed, so it is taught, and not silently skipped;
 //   5. a saved lesson the course has moved under is discarded.
 //
+// Documents that look like another course's are left exactly as they are (`report.held`): most of
+// a learner's nodes missing with no migration to explain it means the wrong course, not a change.
+//
 // It is pure and idempotent: nothing in its input is changed (a document it does not rewrite comes
 // back as the same object), and reconciling its own output changes nothing. The compiler stays
 // integer based: it never sees a key.
@@ -37,7 +40,8 @@ export interface SessionDoc {
   contentVersion?: number;
   /** the key of the day it was planned for */
   dayKey?: string;
-  plan: { unit?: string; day?: number };
+  /** `pathAfter`: where finishing it leaves the learner, as integers counted in the course it was planned on */
+  plan: { unit?: string; day?: number; pathAfter?: { unit: number; day: number } };
 }
 
 export interface ReconcileInput<S extends SessionDoc = SessionDoc> {
@@ -77,6 +81,8 @@ export interface ReconcileReport {
   problems: string[];
   /** nothing was rewritten and nothing is owed */
   noop: boolean;
+  /** these documents do not look like this course's: nothing was changed, and nothing should be named against it */
+  held?: boolean;
 }
 
 export interface Reconciled<S extends SessionDoc = SessionDoc> {
@@ -224,10 +230,15 @@ function place(path: PathState, input: ReconcileInput, pending: readonly Content
   let key: string | null | 'finished';
   let stamped = false;
   if (path.dayKey) key = path.dayKey;
-  else { key = legacyKey(path.unit, path.day, history, course); stamped = true; }
+  else {
+    // only a path never settled was counted in the shipped course; one settled since with no key (finished, or
+    // moved on while the build could not read the course) was counted in the course it was last walked on
+    key = legacyKey(path.unit, path.day, path.contentVersion === undefined ? history : {}, course);
+    stamped = true;
+  }
   if (key === 'finished') {
     // the course was done when the integers were counted; units added since are where the integer now points
-    return path.unit < units.length ? { unit: path.unit, day: path.day, how: stamped ? 'stamped' : 'same' } : { unit: Math.max(path.unit, 0), day: 0, how: 'finished' };
+    return path.unit < units.length ? { unit: path.unit, day: path.day, how: stamped ? 'stamped' : 'same' } : { unit: units.length, day: 0, how: 'finished' };
   }
   if (key === null) { problems.push(`the saved place (unit ${path.unit}, day ${path.day}) is not a day of the course it was counted in`); return clamp(); }
   const now = followDay(key, pending);
@@ -247,6 +258,14 @@ export function stampPosition(path: PathState, course: Pick<Course, 'units'>, co
 const noteOf = (p: PathState): PlaceNote => ({ unit: p.unit, day: p.day, ...(p.unitId ? { unitId: p.unitId } : {}), ...(p.dayKey ? { dayKey: p.dayKey } : {}) });
 
 // ---------------------------------------------------------------- the saved lesson
+
+/** Whether a lesson's `pathAfter` is a place on this course for a learner on `at`: the same day, or the one after it. */
+function lands(after: { unit: number; day: number }, at: { unit: number; day: number }, units: Pick<Course, 'units'>['units']): boolean {
+  if (after.unit === at.unit && after.day === at.day) return true;
+  const days = units[at.unit]?.days.length;
+  if (days === undefined) return false;
+  return at.day + 1 < days ? after.unit === at.unit && after.day === at.day + 1 : after.unit === at.unit + 1 && after.day === 0;
+}
 
 function namesIn(plan: unknown, pending: readonly ContentMigration[]): string | undefined {
   const text = JSON.stringify(plan);
@@ -290,6 +309,20 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
   const restored: NodeId[] = [];
 
   if (r.nodes) {
+    // a record already put aside follows the table too: an entry added later may be what explains it
+    const apart = state.orphans;
+    if (apart) {
+      let moved: Record<NodeId, NodeRecord> | undefined;
+      for (const [id, rec] of Object.entries(apart)) {
+        const to = r.nodes(id);
+        if (to === null || to === id || apart[to]) continue;
+        moved ??= { ...apart };
+        delete moved[id];
+        moved[to] = { ...rec, id: to };
+        rewrote.nodes += 1;
+      }
+      if (moved) state = { ...state, orphans: moved };
+    }
     let nodes: Record<NodeId, NodeRecord> | undefined;
     let orphans: Record<NodeId, NodeRecord> | undefined;
     for (const [id, rec] of Object.entries(state.nodes)) {
@@ -371,9 +404,20 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
   // ---- 2. nodes the course does not have: kept apart, and brought back when it has them again
   const nodeIds = Object.keys(state.nodes);
   const unknown = nodeIds.filter((id) => !course.nodes.has(id));
-  const tooMany = unknown.length > Math.max(5, nodeIds.length * 0.1);
-  if (tooMany) problems.push(`${unknown.length} of the learner's ${nodeIds.length} nodes are not in this course and no migration explains them; they were left alone, as this is more likely the wrong course than that many nodes going`);
-  else if (unknown.length) {
+  if (unknown.length > Math.max(5, nodeIds.length * 0.1)) {
+    // nothing is taken from a course this may not be, the place least of all: on a build with a fraction of the course, a clamped place would be saved over the real one
+    problems.push(`${unknown.length} of the learner's ${nodeIds.length} nodes are not in this course and no migration explains them; they were left alone, as this is more likely the wrong course than that many nodes going`);
+    const left = noteOf(input.path);
+    return {
+      state: input.state, events: input.events, attempts: input.attempts, path: input.path, ui: input.ui,
+      changed: { state: false, events: false, attempts: false, path: false, ui: false, session: false },
+      report: {
+        fromVersion: from, toVersion: from, migrations: [], rewrote: { nodes: 0, ledger: 0, events: 0, attempts: 0, path: 0, ui: 0 }, orphaned: [], restored: [], dropped: [], owed: [],
+        place: { before: left, after: left, how: 'same' }, problems, noop: true, held: true,
+      },
+    };
+  }
+  if (unknown.length) {
     const nodes = { ...state.nodes };
     const orphans = { ...(state.orphans ?? {}) };
     for (const id of unknown) { orphans[id] = nodes[id]; delete nodes[id]; orphaned.push({ node: id, why: 'unknown' }); }
@@ -390,8 +434,7 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
   }
   // ---- 3. the path: its lists, then its place
   let path = input.path;
-  // a course that is more likely the wrong one than a real change is not held against the path either
-  const known = (id: string) => tooMany || course.nodes.has(id);
+  const known = (id: string) => course.nodes.has(id);
   const dropped: NodeId[] = [];
   const lists: Partial<PathState> = {};
   for (const k of ['owedNew', 'owedGrammar', 'recentGrammar'] as const) {
@@ -414,19 +457,18 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
 
   // ---- 4. what the course teaches before the learner's place that they were never given
   const owed: NodeId[] = [];
-  if (where.how !== 'finished' && where.unit < units.length && !tooMany) {
-    const here = (course.unitStart[where.unit] ?? 0) + where.day;
-    const held = new Set<NodeId>([...path.owedNew, ...path.owedGrammar, ...path.pendingDrills.map((d) => d.node)]);
-    const add: Record<'owedNew' | 'owedGrammar', NodeId[]> = { owedNew: [], owedGrammar: [] };
-    for (const [id, pos] of course.teachPos) {
-      if (pos >= here || state.nodes[id] || held.has(id) || !course.nodes.has(id)) continue;
-      const list = OWED_LIST(course, id);
-      if (!list) continue;
-      add[list].push(id);
-      owed.push(id);
-    }
-    if (owed.length) path = { ...path, owedNew: [...path.owedNew, ...add.owedNew], owedGrammar: [...path.owedGrammar, ...add.owedGrammar] };
+  // a learner past the end stands after all of it: what is added behind them is owed like anything else
+  const here = where.unit < units.length ? (course.unitStart[where.unit] ?? 0) + where.day : Infinity;
+  const holding = new Set<NodeId>([...path.owedNew, ...path.owedGrammar, ...path.pendingDrills.map((d) => d.node)]);
+  const add: Record<'owedNew' | 'owedGrammar', NodeId[]> = { owedNew: [], owedGrammar: [] };
+  for (const [id, pos] of course.teachPos) {
+    if (pos >= here || state.nodes[id] || holding.has(id) || !course.nodes.has(id)) continue;
+    const list = OWED_LIST(course, id);
+    if (!list) continue;
+    add[list].push(id);
+    owed.push(id);
   }
+  if (owed.length) path = { ...path, owedNew: [...path.owedNew, ...add.owedNew], owedGrammar: [...path.owedGrammar, ...add.owedGrammar] };
 
   // ---- 5. the place, by name; the version it is settled at
   const settled = Math.max(from, latest);
@@ -451,11 +493,13 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
       const at = now ? dayPlaces(units).get(now) : undefined;
       if (!at || at.unit !== ui0 || at.day !== s.plan.day) moves = `the day it was planned for is no longer unit ${s.plan.unit}, day ${s.plan.day}`;
     }
+    // finishing saves the integers it was planned with: they must still be this day or the next, or they would put the learner somewhere else, or past the end of a unit
+    if (!moves && s.plan.pathAfter && !lands(s.plan.pathAfter, where, units)) moves = `the place it would leave the learner on (unit ${s.plan.pathAfter.unit}, day ${s.plan.pathAfter.day}) is not the day after this one any more`;
     if (sv > latest) { session = null; sessionNote = { action: 'discarded', why: `it was planned by a newer build (content version ${sv})` }; }
     else if (touched) { session = null; sessionNote = { action: 'discarded', why: `it names ${touched}, which a content migration has moved` }; }
     else if (moves) { session = null; sessionNote = { action: 'discarded', why: moves }; }
     // finishing a lesson saves the path it was planned with (plan.pathAfter), which would lose what was just owed or dropped
-    else if (owed.length || dropped.length) { session = null; sessionNote = { action: 'discarded', why: 'the path it was planned with has since changed' }; }
+    else if (owed.length || dropped.length || orphaned.length) { session = null; sessionNote = { action: 'discarded', why: 'the path it was planned with has since changed' }; }
     else {
       // a lesson with no day (a review) has no key to name, and is current without one
       const u = units.find((x) => x.id === s.plan.unit);
@@ -487,7 +531,7 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
 export function describeReport(rep: ReconcileReport): string[] {
   const out: string[] = [];
   const at = (p: PlaceNote) => `unit ${p.unit} day ${p.day}${p.dayKey ? ` (${p.dayKey})` : ''}`;
-  out.push(rep.noop ? 'nothing to do: these documents already fit the course' : `settles these documents at content version ${rep.toVersion} (they are at ${rep.fromVersion})`);
+  out.push(rep.held ? 'left alone: these documents do not look like this course\'s' : rep.noop ? 'nothing to do: these documents already fit the course' : `settles these documents at content version ${rep.toVersion} (they are at ${rep.fromVersion})`);
   if (rep.migrations.length) out.push(`applies content migration${rep.migrations.length > 1 ? 's' : ''} ${rep.migrations.join(', ')}`);
   const rw = Object.entries(rep.rewrote).filter(([, n]) => n > 0).map(([k, n]) => `${n} in ${k}`);
   if (rw.length) out.push(`renames: ${rw.join(', ')}`);

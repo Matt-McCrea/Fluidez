@@ -26,18 +26,28 @@ async function keepCopies(ui: UiStore, from: number, docs: Array<[name: string, 
  * Settle `learner` and `ui` against the course. A lesson the course has moved under is dropped, but
  * only after whatever it had begun has been handed to the scheduler (the same sweep a lesson nobody can
  * pick up gets), so no node is left mid-lesson with no lesson to finish it. With no units or no graph
- * there is no course to settle against and nothing is touched. Returns what it did.
+ * there is no course to settle against and nothing is touched. Nor is anything if working it out fails:
+ * this runs for every learner at every start, and the learner carries on as they were rather than being
+ * kept out of the app. Returns what it did.
  */
 export async function settleContent(learner: Learner, ui: UiStore, units: Unit[], nodes: GraphNode[], history: ContentHistory, now: number): Promise<ReconcileReport | undefined> {
   if (!units.length || !nodes.length) return undefined;
   for (const p of history.problems) console.warn(`fluidez: ${p}`);
   const course = buildCourse(units, nodes);
   const docs = learner.documents();
-  const out = reconcile<SavedSession>({ ...docs, path: ui.path, ui: ui.state, session: ui.session, course, history });
-  ui.track(course, out.report.toVersion);
+  let out: ReturnType<typeof reconcile<SavedSession>>;
+  try { out = reconcile<SavedSession>({ ...docs, path: ui.path, ui: ui.state, session: ui.session, course, history }); } catch (e) {
+    console.error('fluidez: could not settle the learner against the course; they carry on as they were', e);
+    return undefined;
+  }
   for (const p of out.report.problems) console.warn(`fluidez: ${p}`);
+  if (out.report.held) return out.report;
+  ui.track(course, out.report.toVersion);
   if (out.report.noop) return out.report;
-  await keepCopies(ui, out.report.fromVersion, [['state', out.changed.state, docs.state], ['events', out.changed.events, docs.events], ['attempts', out.changed.attempts, docs.attempts]]);
+  // a path that only gained its names is the same place; one that moved or changed what it holds is what a redo needs most
+  const rep = out.report;
+  const pathRewritten = rep.place.how === 'moved' || rep.place.how === 'lost' || rep.owed.length > 0 || rep.dropped.length > 0 || rep.rewrote.path > 0;
+  await keepCopies(ui, rep.fromVersion, [['state', out.changed.state, docs.state], ['events', out.changed.events, docs.events], ['attempts', out.changed.attempts, docs.attempts], ['path', pathRewritten, ui.path]]);
   learner.adopt({ ...(out.changed.state ? { state: out.state } : {}), ...(out.changed.events ? { events: out.events } : {}), ...(out.changed.attempts ? { attempts: out.attempts } : {}) });
   if (out.session === null) sweepIntroductions(learner, now);
   await ui.adopt(learner, { path: out.path, ...(out.changed.ui ? { ui: out.ui } : {}), session: out.session });

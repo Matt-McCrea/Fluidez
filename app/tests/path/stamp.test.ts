@@ -1,7 +1,7 @@
 // The UI store names the place on every path and lesson it writes, once boot has settled the learner,
 // so no writer can forget; and writes what it was given untouched before that.
 import { describe, expect, it } from 'vitest';
-import { buildCourse, initialPath } from '../../src/compiler';
+import { buildCourse, initialPath, type PathState } from '../../src/compiler';
 import type { GraphNode, Unit } from '../../src/content/schema';
 import { Learner, MemoryStore } from '../../src/learner';
 import { MemoryKV, SESSION_KEY, UiStore, type SavedSession } from '../../src/ui/store/ui';
@@ -55,5 +55,18 @@ describe('an untracked UI store (a fixture course, or before boot settles)', () 
     await ui.saveSession(lesson({ unit: 'u01', day: 2 }));
     expect(kv.data.get(SESSION_KEY)).toMatchObject({ version: 1 });
     expect(ui.contentVersion).toBe(0);
+  });
+
+  it('does not leave an old name beside integers that have moved on: reconcile reads the name first', async () => {
+    const kv = new MemoryKV();
+    const ui = await new UiStore(kv).load();
+    ui.path = { ...initialPath(), unit: 0, day: 2, unitId: 'u01', dayKey: 'u01-d2', contentVersion: 1 };
+    await ui.setPath({ ...ui.path, remediate: [] });
+    expect(kv.data.get('path')).toMatchObject({ day: 2, dayKey: 'u01-d2', contentVersion: 1 });
+    await ui.setPath({ ...ui.path, day: 3 });
+    const stored = kv.data.get('path') as PathState;
+    expect(stored).toMatchObject({ unit: 0, day: 3, contentVersion: 1 });
+    expect(stored.dayKey).toBeUndefined();
+    expect(stored.unitId).toBeUndefined();
   });
 });
