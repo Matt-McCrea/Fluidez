@@ -247,7 +247,7 @@ export class Freeplay {
     if (!ids.size && !known.has(node) && weekOf(node) !== undefined) soonest = weekOf(node)!;
     if (!ids.size && !Number.isFinite(soonest)) return 'There are no practice sentences for this one yet.';
     return Number.isFinite(soonest)
-      ? `The examples for this use things you have not met yet. It comes up in week ${soonest}.`
+      ? `The examples for this use things you have not met yet. It comes up in unit ${soonest}.`
       : 'The examples for this use things you have not met yet.';
   }
 
@@ -375,7 +375,7 @@ export class Freeplay {
     if (!this.known().has(node)) {
       const at = course.teachPos.get(node);
       const week = at === undefined ? 0 : course.unitStart.filter((start) => start <= at).length;
-      return week > 0 ? `This one comes in week ${week}, so there is nothing to practise yet.` : 'This one comes later in the course, so there is nothing to practise yet.';
+      return week > 0 ? `This one comes in unit ${week}, so there is nothing to practise yet.` : 'This one comes later in the course, so there is nothing to practise yet.';
     }
     return 'There is nothing to practise on this one yet.';
   }

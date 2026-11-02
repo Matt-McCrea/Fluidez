@@ -199,6 +199,7 @@ export const COUNTS = {
   extraReading: 10,
   timedRecallSeconds: 120,
   recapMinCards: 4,         // room reserved for the recap when the learn pool is trimmed to fit
+  recapBeatCards: 2,        // the same on a day that carries a beat of story: a miss the recap has no room for still comes back next session
   recapCards: 8,            // 6 to 10: capacity of the "Before you go" block
   patternsInput: 6,
   patternsOutput: 8,

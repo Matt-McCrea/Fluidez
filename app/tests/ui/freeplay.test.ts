@@ -247,7 +247,7 @@ describe('Train it with nothing to practise', () => {
     expect(node).toBeTruthy();
     const fp = new Freeplay({ kind: 'nodes', nodes: [node] }, { learner, bundle, now: () => t, rng: rng('x') });
     expect(fp.next()).toBeUndefined();
-    const week = Number(fp.emptyReason?.match(/week (\d+)\.$/)?.[1] ?? 0);
+    const week = Number(fp.emptyReason?.match(/unit (\d+)\.$/)?.[1] ?? 0);
     expect(week, fp.emptyReason).toBeGreaterThan(20);
     expect(week).toBeLessThanOrEqual(bundle.course.units.length);
   }, 60_000);
@@ -265,7 +265,7 @@ describe('Train it with nothing to practise', () => {
     expect(gated.length).toBeGreaterThan(5);
     for (const node of gated.slice(0, 40)) {
       const fp = new Freeplay({ kind: 'nodes', nodes: [node] }, { learner, bundle, now: () => t, rng: rng('x') });
-      const week = Number(fp.emptyReason?.match(/week (\d+)\.$/)?.[1] ?? 0);
+      const week = Number(fp.emptyReason?.match(/unit (\d+)\.$/)?.[1] ?? 0);
       expect(week, `${node}: ${fp.emptyReason}`).toBeGreaterThan(1);
       expect(week, node).toBeLessThanOrEqual(bundle.course.units.length);
     }
@@ -282,7 +282,7 @@ describe('Train it with nothing to practise', () => {
     const fp = new Freeplay({ kind: 'nodes', nodes: [node!.id] }, { learner, bundle, now: () => t, rng: rng('x') });
     expect(fp.next()).toBeUndefined();
     expect(fp.emptyReason).toBeTruthy();
-    expect(fp.emptyReason).not.toMatch(/week/);
+    expect(fp.emptyReason).not.toMatch(/unit/);
   }, 60_000);
 });
 
@@ -336,7 +336,7 @@ describe('practise this, on real content', () => {
     expect(node).toBeTruthy();
     const fp = new Freeplay({ kind: 'nodes', nodes: [node!] }, { learner, bundle, now: () => t, rng: rng('x') });
     expect(fp.next()).toBeUndefined();
-    expect(fp.emptyReason).toMatch(/^The examples for this use things you have not met yet\. It comes up in week \d+\.$/);
+    expect(fp.emptyReason).toMatch(/^The examples for this use things you have not met yet\. It comes up in unit \d+\.$/);
   }, 60_000);
 });
 

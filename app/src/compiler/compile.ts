@@ -166,7 +166,7 @@ export function servedRefs(plan: SessionPlan): ServedRef[] {
       case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
       case 'remix': case 'readingCheck': case 'extraReading':
         // a recombine item re-serves a sentence the learner knows on purpose: that repeat is deliberate
-        for (const it of b.items) { add('sentence', it.sentence, it.op === 'recombine'); add('item', it.id, false); }
+        for (const it of b.items) { if (it.sentence) add('sentence', it.sentence, it.op === 'recombine'); add('item', it.id, false); }
         break;
       case 'read':
         // a chapter read in beats is seen when its last beat is; each beat before that is only counted
@@ -1352,7 +1352,7 @@ class Compiler {
 
   /** A beat of a chapter is the one part of the day that can wait: where the day is still over its minutes after the new words were owed, it waits. */
   private dropBeatOverBudget() {
-    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards);
+    const total = () => this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapBeatCards);
     const at = this.blocks.findIndex((b) => b.kind === 'read' && !!b.beat);
     if (at >= 0 && total() > this.minutes + 1e-9) this.blocks.splice(at, 1);
   }
@@ -1362,8 +1362,8 @@ class Compiler {
     if (this.throttled || this.blocks.some((b) => b.kind === 'read' || b.kind === 'reread' || b.kind === 'scene')) return;
     const { ch } = this.chapterFor(undefined);
     if (!ch?.beats) return;
-    // the beat is an extra: it rides only where the day has the minute to spare, so a short day's bar does not move
-    const total = this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapMinCards);
+    // the beat is an extra: it rides only where the day has the minute to spare, a shorter recap counted in, so a short day's bar does not move
+    const total = this.blocks.reduce((a, b) => a + b.minutes, 0) + SECONDS.close / 60 + recapMinutes(COUNTS.recapBeatCards);
     const beat = ch.beats[Math.min(ch.beats.length - 1, this.L.ledger.views('reading', ch.id).length)];
     if (total + beat.minutes > this.minutes + 1e-9) return;
     this.pushRead(ch);
