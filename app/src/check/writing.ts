@@ -23,6 +23,7 @@ import {
   TENSES, TENSE_LABEL, acceptedForms, analyzeSentence, conjugate, deaccent, personsFor, tokenize, verbByInf,
   type AnyPerson, type SentenceAnalysis, type TenseKey, type VerbClass, type Analysis,
 } from '../engine';
+import { SPANISH_SHARE_MIN, englishShare, spanishShare } from './personal';
 
 type Base = { label?: string };
 export type Constraint = Base & (
@@ -58,15 +59,22 @@ export interface CheckContext {
   connectors?: readonly ConnectorClass[];
   /** Known nouns (deaccented, lower case, with plurals): see nounSet(). */
   nouns?: ReadonlySet<string>;
+  /** Every Spanish word the course holds (personal.ts buildLexicon): sharpens the "is this Spanish" floor. */
+  lexicon?: ReadonlySet<string>;
+  /** false: the caller applies its own floor (a scene turn is a few words, and checks its own). */
+  floor?: boolean;
 }
 
 export interface ConstraintResult { label: string; pass: boolean; detail: string }
+/** Whether a text is Spanish sentences at all, before any constraint is read. */
+export interface WritingFloor { ok: boolean; reason?: string }
 export interface WritingResult {
   results: ConstraintResult[];
   passed: number;
   total: number;
   allPass: boolean;
   analysis: SentenceAnalysis;
+  floor: WritingFloor;
 }
 
 const deacLower = (s: string | null | undefined) => deaccent((s || '').toLowerCase());
@@ -86,6 +94,98 @@ export function nounSet(vocab: ReadonlyArray<{ es: string }>): Set<string> {
     if (/s$/.test(k)) out.add(k.replace(/e?s$/, ''));
   }
   return out;
+}
+
+/* JavaScript's \b and \w are ASCII even with the u flag, so "me entró" never
+ * ends at a word boundary and "dármelo" has no \w{2,} before its clitics. The
+ * constraints were written to mean letters, so \b, \w and \W are rewritten to
+ * Unicode letters, digits and underscore. Nothing else about a pattern changes. */
+const WORD_CHARS = '\\p{L}\\p{N}_';
+const BOUNDARY = `(?:(?<=[${WORD_CHARS}])(?![${WORD_CHARS}])|(?<![${WORD_CHARS}])(?=[${WORD_CHARS}]))`;
+export function unicodeWord(pattern: string): string {
+  let out = '';
+  let inClass = false;
+  for (let i = 0; i < pattern.length; i++) {
+    const ch = pattern[i];
+    if (ch === '\\' && i + 1 < pattern.length) {
+      const next = pattern[++i];
+      if (next === 'w') out += inClass ? WORD_CHARS : `[${WORD_CHARS}]`;
+      else if (next === 'W' && !inClass) out += `[^${WORD_CHARS}]`;
+      else if (next === 'b' && !inClass) out += BOUNDARY;
+      else out += '\\' + next;
+      continue;
+    }
+    if (ch === '[') inClass = true;
+    else if (ch === ']') inClass = false;
+    out += ch;
+  }
+  return out;
+}
+
+const REGEXES = new Map<string, RegExp>();
+/** A constraint pattern as a Unicode-aware RegExp. A pattern the u flag cannot read keeps its ASCII meaning. */
+function constraintRegex(pattern: string, flags: string): RegExp {
+  const key = flags + '/' + pattern;
+  let re = REGEXES.get(key);
+  if (!re) {
+    try { re = new RegExp(unicodeWord(pattern), flags.includes('u') ? flags : flags + 'u'); } catch { re = new RegExp(pattern, flags); }
+    REGEXES.set(key, re);
+  }
+  return re;
+}
+
+/* Words a minimal pair separates by the accent alone: tu is not tú, estas is not
+ * estás, para mi is not para mí. An avoided form is matched on the accent unless
+ * it is neither half of such a pair; only "tu" also catches "tú", the two being
+ * one register marker. */
+const ACCENTED_OF_PAIR = new Set(['tú', 'él', 'mí', 'té', 'sí', 'más', 'estás', 'está', 'sé', 'dé', 'qué', 'cuál', 'cómo', 'dónde', 'cuándo', 'quién', 'aún', 'sólo']);
+const PLAIN_OF_PAIR = new Set(['tu', 'el', 'mi', 'te', 'si', 'mas', 'estas', 'esta', 'se', 'de', 'que', 'cual', 'como', 'donde', 'cuando', 'quien', 'aun', 'solo']);
+
+/** Does the text contain this avoided form as whole words? An entry is one or more words; spaces at its
+ *  edges (the old way to say "starts a word") add nothing. A phrase with no space after it may run on
+ *  into the end of its last word ("le agradecer" is "le agradecería"); a single word never does. */
+export function usesForm(tokens: readonly string[], entry: string): boolean {
+  const words = entry.toLowerCase().replace(/[^\p{L}\s]/gu, ' ').split(/\s+/).filter(Boolean);
+  if (!words.length) return false;
+  const open = words.length > 1 && !/\s$/.test(entry);
+  const same = (have: string, want: string, last: boolean) => {
+    if (have === want || (last && open && have.startsWith(want))) return true;
+    if (ACCENTED_OF_PAIR.has(want)) return false;
+    if (PLAIN_OF_PAIR.has(want)) return want === 'tu' && have === 'tú';
+    return deaccent(have) === deaccent(want) || (last && open && deaccent(have).startsWith(deaccent(want)));
+  };
+  for (let i = 0; i + words.length <= tokens.length; i++) {
+    if (words.every((w, j) => same(tokens[i + j], w, j === words.length - 1))) return true;
+  }
+  return false;
+}
+
+const HAS_LETTER = /\p{L}/u;
+const sentencesOf = (text: string) => text.split(/[.!?…\n]+/).filter((x) => HAS_LETTER.test(x));
+/** Without the course's words, a noun the app has never seen looks like English, so only English itself counts. */
+const ENGLISH_SHARE_MAX = 0.2;
+const COUNTS = new Set<Constraint['type']>(['minWords', 'maxWords', 'minSentences']);
+
+/** Is this text Spanish sentences? What the app can tell without reading meaning: most words are Spanish,
+ *  the same lines do not come round again, and most lines have a verb. A short text is not judged. */
+export function writingFloor(text: string, analysis: SentenceAnalysis, lexicon?: ReadonlySet<string>): WritingFloor {
+  const toks = analysis.tokens;
+  if (toks.length < 5) return { ok: true };
+  if (lexicon ? spanishShare(text, lexicon) < SPANISH_SHARE_MIN : englishShare(text) >= ENGLISH_SHARE_MAX) {
+    return { ok: false, reason: 'Most of this is not Spanish yet. Write it in Spanish.' };
+  }
+  const lines = sentencesOf(text);
+  const key = (x: string) => tokenize(x).join(' ');
+  if ((lines.length >= 4 && new Set(lines.map(key)).size < lines.length / 2) || (toks.length >= 40 && new Set(toks).size < toks.length * 0.3)) {
+    return { ok: false, reason: 'The same lines keep coming back. Give each sentence something new.' };
+  }
+  const long = lines.filter((x) => tokenize(x).length >= 3);
+  // "hay" is the one verb the engine does not read as one
+  const verbless = (x: string) => { const a = analyzeSentence(x); return !a.verbs.length && !a.tokens.includes('hay'); };
+  if (long.length >= 4 && long.filter(verbless).length > long.length / 2) {
+    return { ok: false, reason: "Most of these lines have no verb the app can find. Each sentence needs one." };
+  }
+  return { ok: true };
 }
 
 // Does a subjunctive at `i` have something governing it? `que` or a negation
@@ -238,7 +338,7 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
       break;
     case 'regex':
       label = label || 'matches pattern';
-      pass = new RegExp(c.pattern, c.flags || 'i').test(rawText);
+      pass = constraintRegex(c.pattern, c.flags || 'i').test(rawText);
       break;
 
     /* ---- B2/C1 constraints ------------------------------------------- */
@@ -265,9 +365,9 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
     }
     case 'avoidsAny': {
       label = label || ('avoid: ' + c.words.map((w) => '“' + w + '”').join(', '));
-      const bad = c.words.filter((w) => deacLower(rawText).includes(deacLower(w)));
+      const bad = c.words.filter((w) => usesForm(analysis.tokens, w));
       pass = bad.length === 0;
-      if (!pass) detail = 'found ' + bad.join(', ');
+      if (!pass) detail = 'found ' + bad.map((w) => w.trim()).join(', ');
       break;
     }
     case 'avoidsPerson': {
@@ -309,8 +409,8 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
     }
     case 'cliticCluster':
       label = label || 'use a double object pronoun (se lo, me la, dármelo)';
-      pass = /\b(me|te|se|nos|os)\s+(lo|la|los|las|le|les)\b/i.test(rawText) ||
-             /\w{2,}(me|te|se|nos|os)(lo|la|los|las)\b/i.test(rawText);
+      pass = constraintRegex('\\b(me|te|se|nos|os)\\s+(lo|la|los|las|le|les)\\b', 'i').test(rawText) ||
+             constraintRegex('\\w{2,}(me|te|se|nos|os)(lo|la|los|las)\\b', 'i').test(rawText);
       break;
     case 'sePassive': {
       label = label || 'use a “se” construction (se dice, se construyó)';
@@ -330,7 +430,7 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
       break;
     }
     case 'minSentences': {
-      const n = (rawText.match(/[^.!?…]*[.!?…]+/g) ?? []).filter((x) => /\w/.test(x)).length;
+      const n = (rawText.match(/[^.!?…]*[.!?…]+/g) ?? []).filter((x) => HAS_LETTER.test(x)).length;
       label = label || ('at least <b>' + c.n + '</b> sentences');
       pass = n >= c.n;
       if (!pass) detail = n + ' so far';
@@ -345,10 +445,15 @@ export function evaluate(c: Constraint, analysis: SentenceAnalysis, rawText: str
   return { label: label ?? '', pass, detail };
 }
 
-/** Check a whole written answer against a task's constraint list. */
+/** Check a whole written answer against a task's constraint list. Text that is not Spanish sentences earns
+ *  no tick but the counts (words, sentences): English with the right words in it is not a pass. */
 export function checkWriting(task: { constraints?: readonly Constraint[] }, text: string, ctx: CheckContext = {}): WritingResult {
   const analysis = analyzeSentence(text || '');
-  const results = (task.constraints ?? []).map((c) => evaluate(c, analysis, text || '', ctx));
+  const floor: WritingFloor = ctx.floor === false ? { ok: true } : writingFloor(text || '', analysis, ctx.lexicon);
+  const results = (task.constraints ?? []).map((c) => {
+    const r = evaluate(c, analysis, text || '', ctx);
+    return floor.ok || COUNTS.has(c.type) ? r : { ...r, pass: false, detail: floor.reason ?? '' };
+  });
   const passed = results.filter((r) => r.pass).length;
-  return { results, passed, total: results.length, allPass: results.length > 0 && passed === results.length, analysis };
+  return { results, passed, total: results.length, allPass: floor.ok && results.length > 0 && passed === results.length, analysis, floor };
 }

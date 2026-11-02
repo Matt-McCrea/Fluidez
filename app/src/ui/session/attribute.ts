@@ -107,13 +107,14 @@ function typedMiss(targets: NodeId[], nodes: Nodes, ev: Evidence, grade: Grade):
   switch (dg.kind) {
     case 'ser-estar': miss = byId(targets, nodes, 'ser-estar'); break;
     case 'por-para': miss = byId(targets, nodes, 'por-para'); break;
-    case 'verb-ending': {
+    // the right verb in the wrong form: the hint says how, the node is the tense that was wanted
+    case 'verb-ending': case 'mood': case 'aspect': case 'experiencer-agree': {
       if (!wanted) break;
       const tenses = new Set(analyzeToken(wanted).filter((a) => a.accentExact).map((a) => a.tense));
       miss = byTense(targets, nodes, tenses);
       break;
     }
-    case 'wrong-word': case 'missing-word': case 'spelling':
+    case 'wrong-word': case 'missing-word': case 'spelling': case 'differs': case 'nonfinite': case 'number':
       if (wanted) miss = targets.find((t) => wordIsNode(wanted, t, nodes(t)));
       break;
   }

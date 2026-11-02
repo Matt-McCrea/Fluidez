@@ -1,14 +1,14 @@
 /* ============================================================================
  * HINTS FOR ONE WORD. A gap or a chunk has no sentence to align, so the
  * sentence diagnosis has nothing to say. This looks at the typed word itself:
- * the right verb in the wrong person or tense, a typo, or simply another word.
- * Never gives the answer away.
+ * the right verb in the wrong person or tense, ser for estar, a typo, or
+ * simply another word. Never gives the answer away, and never calls a
+ * different word a typo: the closed pairs the course teaches apart (ser and
+ * estar, por and para, the shapes of one verb) are checked before spelling.
  * ========================================================================== */
-import { deaccent } from '../engine';
-import { verbReadings } from '../exercises/spanish';
-import { levenshtein } from './translate/hints';
+import { isTypo, relationHint, type GapKind } from './translate/hints';
 
-export type WordHintKind = 'person' | 'tense' | 'spelling' | 'other-word';
+export type WordHintKind = GapKind | 'other-word';
 export interface WordHint { kind: WordHintKind; hint: string }
 
 export const WORD_HINT = {
@@ -17,7 +17,7 @@ export const WORD_HINT = {
   spelling: 'Check the spelling.',
 } as const;
 
-const clean = (s: string) => deaccent(s.toLowerCase().replace(/[.,;:!?¡¿"“”]/g, '')).replace(/\s+/g, ' ').trim();
+const clean = (s: string) => s.toLowerCase().replace(/[.,;:!?¡¿"“”]/g, '').replace(/\s+/g, ' ').trim();
 
 /** A hint for a wrong typed word or chunk that is not just an accent slip, or
  *  undefined when nothing specific can be said. `want` is the English of the
@@ -26,22 +26,16 @@ export function wordHint(input: string, answers: readonly string[], want?: strin
   const typed = clean(input);
   if (!typed || !answers.length) return undefined;
   const oneWord = !/\s/.test(typed);
+  const rights = answers.map(clean).filter((a) => a && !/\s/.test(a));
   if (oneWord) {
-    const got = verbReadings(input.trim());
-    if (got.length) {
-      const rights = answers.filter((a) => !/\s/.test(a.trim())).flatMap((a) => verbReadings(a.trim()));
-      const sameVerb = rights.filter((r) => got.some((g) => g.inf.replace(/se$/, '') === r.inf.replace(/se$/, '')));
-      if (sameVerb.length) {
-        const sameTense = sameVerb.some((r) => got.some((g) => g.tense === r.tense));
-        return sameTense ? { kind: 'person', hint: WORD_HINT.person } : { kind: 'tense', hint: WORD_HINT.tense };
-      }
+    for (const right of rights) {
+      const r = relationHint(typed, right, { gap: true });
+      if (r) return r;
     }
   }
-  if (answers.some((a) => { const c = clean(a); return c.length >= 3 && levenshtein(typed, c) <= 2; })) {
-    return { kind: 'spelling', hint: WORD_HINT.spelling };
-  }
-  if (want && oneWord && /^\p{L}+$/u.test(typed)) {
-    return { kind: 'other-word', hint: `That's a different word. The gap wants "${want}".` };
-  }
+  if (rights.some((a) => isTypo(typed, a))) return { kind: 'spelling', hint: WORD_HINT.spelling };
+  if (want && oneWord && /^\p{L}+$/u.test(typed)) return { kind: 'other-word', hint: otherWord(want) };
   return undefined;
 }
+
+const otherWord = (want: string) => `That's a different word. The gap wants "${want}".`;

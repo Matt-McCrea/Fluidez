@@ -12,7 +12,7 @@
  *      difference against the closest form gives one plain-English hint.
  * ========================================================================== */
 import { deaccent } from '../../engine';
-import { enWords, verbReadings } from '../../exercises/spanish';
+import { CLITICS, enSubject, enWords, EXPERIENCER, verbReadings } from '../../exercises/spanish';
 import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
@@ -31,6 +31,8 @@ export interface TranslationResult {
   hintKind?: HintKind;
   /** Matched only through a Peninsular form. */
   variant?: 'peninsular';
+  /** Matched through a swap the card did not teach but Spanish allows: a pass that says so. */
+  note?: string;
   /** The register of "you" the learner used, when the sentence has one. */
   register?: Register;
   /** The accepted form closest to the input: the one to show on reveal. */
@@ -51,6 +53,34 @@ const PERSON_PRON: Readonly<Record<string, string[]>> = {
   yo: ['yo'], 'tú': ['tú'], 'él/ella': ['él', 'ella', 'usted'], nosotros: ['nosotros', 'nosotras'], vosotros: ['vosotros', 'vosotras'], ellos: ['ellos', 'ellas', 'ustedes'],
 };
 
+/** The Spanish pronouns the English subject stands for ("she" is ella). */
+function englishPronouns(en: string): Set<string> {
+  const sub = enSubject(en);
+  const ok = new Set<string>();
+  if (!sub?.pronoun) return ok;
+  if (sub.pronoun === 'you') ['tú', 'usted', 'ustedes'].forEach((p) => ok.add(p));
+  else if (sub.pronoun === 'you all') ok.add('ustedes');
+  else EN_PRON[sub.pronoun]?.forEach((p) => ok.add(p));
+  return ok;
+}
+
+const EN_LIKES = /\b(like|likes|love|loves|enjoy|enjoys|adore|adores|interested|care|cares)\b/;
+
+/** "Yo me gusta", "Ella le gusta el café": a subject pronoun in front of the
+ *  clitic of gustar and its kin that cannot be right. Certain when the person
+ *  cannot be the verb's subject; also when it can be, but is the English
+ *  subject carried over ("She likes coffee" is not ella le gusta). */
+function experiencerSlip(ci: Canon, en: string): boolean {
+  if (!ci.experiencer.length) return false;
+  const carried = englishPronouns(en);
+  return ci.experiencer.some((x) => x.mismatch || (x.like && carried.has(x.pron) && EN_LIKES.test(enWords(en).join(' '))));
+}
+
+/** Where the same tokens hide two spellings of one figure ("doscientos" for "doscientas"), or -1. */
+function figureSlip(ci: Canon, cv: Canon): number {
+  return ci.toks.findIndex((t, i) => !!t.form && !!cv.toks[i]?.form && t.form !== cv.toks[i].form);
+}
+
 /** Subject pronouns the learner may write for this accepted form. */
 function pronounsAllowed(v: Variant, cv: Canon, en: string): Set<string> {
   const ok = new Set(cv.pronouns);
@@ -69,7 +99,17 @@ function pronounsAllowed(v: Variant, cv: Canon, en: string): Set<string> {
           if (a.person === 'él/ella') ok.add('usted');
           if (a.person === 'ellos') ok.add('ustedes');
         }
+        // gustar and kin: the clitic carries the register too (te gusta, le gusta, les gusta)
+        if (cv.toks.some((t) => verbReadings(t.t).some((a) => EXPERIENCER.has(a.inf.replace(/se$/, ''))))) {
+          for (const t of cv.toks) { if (t.t === 'te') ok.add('tú'); if (t.t === 'le') ok.add('usted'); if (t.t === 'les') ok.add('ustedes'); }
+        }
       }
+    }
+  }
+  // "Te gusto", "Me gustas": the person liked is the subject, and the English calls it "me" or "you"
+  for (const t of cv.toks) {
+    for (const a of verbReadings(t.t)) {
+      if (EXPERIENCER.has(a.inf.replace(/se$/, '')) && a.tense !== 'imperativo' && a.person !== 'él/ella' && a.person !== 'ellos') (PERSON_PRON[a.person] ?? []).forEach((p) => ok.add(p));
     }
   }
   if (!fromEnglish && !ok.size) {
@@ -108,11 +148,14 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   const lenient = opts.accents === 'lenient';
   const cvs = variants.map((v) => ({ v, cv: canon(v.es) }));
+  const slip = experiencerSlip(ci, sentence.en);
   let nearHit: { v: Variant } | null = null;
   let subjectHit: { v: Variant } | null = null;
   let orderHit: { v: Variant } | null = null;
+  let figureHit: { v: Variant; at: number } | null = null;
 
   for (const { v, cv } of cvs) {
+    if (slip) break;
     const sameToks = key(ci) === key(cv);
     const sameAccentless = keyDeaccent(ci) === keyDeaccent(cv);
     if (!sameToks && !sameAccentless) continue;
@@ -121,12 +164,14 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     const pronOkLoose = ci.pronouns.every((p) => [...allowed].some((q) => deaccent(q) === deaccent(p)));
     const advOk = advsOk(ci, cv);
     const advLoose = deaccent(advKey(ci)) === deaccent(advKey(cv));
+    const figure = sameToks ? figureSlip(ci, cv) : -1;
+    if (figure >= 0) { figureHit ??= { v, at: figure }; continue; }
     if (sameToks && pronOk && advOk) {
       const slip = ci.accentSlips > 0 || encliticAccentSlip(ci, cv);
       if (slip) { nearHit ??= { v }; continue; }
       return {
         pass: true, closest: v.es,
-        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}),
+        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}), ...(v.note ? { note: v.note } : {}),
       };
     }
     if (sameToks && !pronOk && pronOkLoose && advOk) { nearHit ??= { v }; continue; }
@@ -143,6 +188,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   if (subjectHit) return { pass: false, hint: HINT_TEXT.subject, hintKind: 'subject', closest: subjectHit.v.es };
   if (orderHit) return { pass: false, hint: HINT_TEXT['word-order'], hintKind: 'word-order', closest: orderHit.v.es };
+  if (figureHit) return { pass: false, hint: HINT_TEXT.agreement, hintKind: 'agreement', closest: figureHit.v.es, at: figureHit.at };
 
   // closest accepted form, by token distance with adverbials and pronouns in place
   const flat = (c: Canon) => {
@@ -155,6 +201,9 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   for (const x of cvs) {
     const d = distance(fi, flat(x.cv)) + (x.v.variant ? 0.01 : 0);
     if (d < bestD) { best = x; bestD = d; }
+  }
+  if (slip) {
+    return { pass: false, hint: HINT_TEXT.experiencer, hintKind: 'experiencer', closest: best.v.es, at: Math.max(0, ci.toks.findIndex((t) => CLITICS.has(t.t))) };
   }
   const dg = diagnose(fi, flat(best.cv));
   return { pass: false, hint: dg.hint, hintKind: dg.kind, closest: best.v.es, at: dg.at, ...(dg.kind === 'accents' ? { near: true } : {}) };

@@ -36,7 +36,8 @@ export function checkTurn(turn: SceneTurn, text: string, lexicon?: ReadonlySet<s
   if (!t) return { pass: false, reason: 'Type a reply, even a short one.', model };
   const m = matchTranslation(t, { es: model, en: '', accept: turn.accept.slice(1) });
   const constraints = turn.require as unknown as Constraint[];
-  const w = constraints.length ? checkWriting({ constraints }, t) : null;
+  // a turn is a few words and has its own Spanish test below, so the writing floor stays off
+  const w = constraints.length ? checkWriting({ constraints }, t, { floor: false }) : null;
   if (m.pass) return { pass: true, model };
   // The constraint path alone is substring-level, so it also needs Spanish:
   // an English sentence that happens to contain the words must not pass.
@@ -48,6 +49,23 @@ export function checkTurn(turn: SceneTurn, text: string, lexicon?: ReadonlySet<s
     ? `To do this, ${lowerFirst(strip(failed.label))}.`
     : m.hint ?? "That doesn't quite answer them yet.";
   return { pass: false, reason, model };
+}
+
+/** How one turn went: whether the first reply landed and, if there was a second go, whether that did. */
+export interface TurnOutcome { first: boolean; second?: boolean }
+
+/** What the close of a scene may say about the run, from the checks alone. "They understood you" is for a run
+ *  where every reply landed; a reply that never did is not "fixed". */
+export function sceneVerdict(turns: readonly TurnOutcome[]): string {
+  const n = turns.length;
+  if (!n) return '';
+  const first = turns.filter((t) => t.first).length;
+  const fixed = turns.filter((t) => !t.first && t.second).length;
+  const missed = n - first - fixed;
+  if (first === n) return n === 1 ? 'They understood you. That reply landed first time.' : `They understood you. All ${n} replies landed first time.`;
+  if (!missed) return `They understood you. ${first} of ${n} landed first time, and the other ${fixed} after one fix.`;
+  if (first + fixed === 0) return `None of the ${n} ${n === 1 ? 'reply' : 'replies'} landed this time. Look at how they could go, then try the scene again.`;
+  return `${first + fixed} of ${n} replies landed, ${first} of them first time. The other ${missed} didn't, so this one is worth another go.`;
 }
 
 function lowerFirst(s: string) { return s ? s[0].toLowerCase() + s.slice(1) : s; }
