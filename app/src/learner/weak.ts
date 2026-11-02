@@ -65,7 +65,8 @@ export function weakSpots(events: readonly ReviewEvent[], nodes: Nodes, opts: We
   };
 
   for (const e of events) {
-    if (e.at < since) continue;
+    // "mine says the same thing": the app could not tell, so it is neither a miss nor an attempt (R9)
+    if (e.at < since || e.claimed) continue;
     const free = FREE_FORM.has(e.op);
     if (!free && !FORM.has(e.op)) continue;
     const n = look(e.node);
@@ -139,7 +140,7 @@ export function recentMisses(
   const look = (id: NodeId) => (typeof nodes === 'function' ? nodes(id) : nodes.get(id));
   const out: RecentMiss[] = [];
   for (const e of events) {
-    if (e.at < since) continue;
+    if (e.at < since || e.claimed) continue;
     const free = FREE_FORM.has(e.op);
     if (!free && !FORM.has(e.op)) continue;
     if (!(e.grade === Rating.Again || e.tries === 2)) continue;

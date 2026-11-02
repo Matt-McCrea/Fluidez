@@ -27,6 +27,12 @@ export interface Outcome {
   evidence?: Evidence;
   /** passed through an untaught synonym: grades as Hard */
   lenient?: boolean;
+  /**
+   * The learner was shown the right version and said "mine says the same thing" (R9). It is graded through the lenient path, so Hard
+   * and never Good, and queues a fresh sentence. It is never a novel pass, a rung climb, a right first time or an entry in Weak spots:
+   * the app could not tell, so it does not count it as proof either way.
+   */
+  claimed?: boolean;
   /** the card asked for no answer (a read card): it was shown, so it can be exposure but never a grade */
   exposure?: boolean;
   // What the attempts log keeps (see logAnswer). None of it is read by `gradeOf`, and no clock reading ever is (R17).
@@ -43,7 +49,7 @@ export interface Outcome {
   rule?: string;
 }
 
-/** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
+/** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. A claim is `lenient`, so Hard. */
 export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'> & { lenient?: boolean }): Grade {
   if (!o.correct) return Rating.Again;
   if (o.lenient) return Rating.Hard;
@@ -65,6 +71,9 @@ const FEATURE_SLIP: Record<Feature, GapKind> = {
   tense: 'tense', person: 'person', mood: 'mood', clitic: 'pronoun', copula: 'ser-estar', porpara: 'por-para', number: 'number', gender: 'agreement',
 };
 
+/** A claim marks every event its answer writes (unlike a slip, which names the first only), so what reads the events can leave it out. */
+export const claimOf = (o: Pick<Outcome, 'claimed'>): { claimed?: true } => (o.claimed ? { claimed: true } : {});
+
 /** The kind of slip an answer made, if one was named, and the rule that named it: the fields an event carries them in, on its first event only. */
 export function slipOf(o: Outcome): { err?: string; rule?: string } {
   const picked = o.evidence?.picked, feature = o.evidence?.feature;
@@ -83,9 +92,10 @@ export function logAnswer(learner: Learner, at: number, about: Answered, o: Outc
   if (o.exposure) return;
   const rev = contentRev();
   learner.recordAttempt({
-    at, node: about.node, op: about.op, fmt: o.fmt ?? '', given: o.given ?? '', verdict: o.correct ? 'right' : 'wrong', tries: tries12(o.tries),
+    at, node: about.node, op: about.op, fmt: o.fmt ?? '', given: o.given ?? '', verdict: o.claimed ? 'unconfirmed' : o.correct ? 'right' : 'wrong', tries: tries12(o.tries),
     ...(about.sentence ? { sentence: about.sentence } : {}),
-    ...(!o.correct && o.shown ? { answer: o.shown } : {}),
+    ...((!o.correct || o.claimed) && o.shown ? { answer: o.shown } : {}),
+    ...claimOf(o),
     ...slipOf(o),
     ...(o.firstKeyMs !== undefined ? { firstKeyMs: o.firstKeyMs } : {}),
     ...(rev ? { contentRev: rev } : {}),
@@ -141,13 +151,15 @@ export interface Retest { node: NodeId; direction: Direction; sentence: string }
  * review already comes back as a lapse; a card that asked for no answer, a reading check (the checkpoint marks those itself) and a
  * free-form answer do not: a miss in "Answer for yourself" is signal only, and training goes by form.
  */
-export function missRetest(item: Pick<Item, 'op'> & { node: NodeId; sentence?: string; direction?: Direction }, o: Pick<Outcome, 'correct'> & { exposure?: boolean }): Retest | undefined {
-  if (o.correct || o.exposure || !item.sentence) return undefined;
-  if (!['pick', 'choose', 'type', 'transform', 'recombine', 'translate', 'gap'].includes(item.op)) return undefined;
+export function missRetest(item: Pick<Item, 'op'> & { node: NodeId; sentence?: string; direction?: Direction }, o: Pick<Outcome, 'correct' | 'claimed'> & { exposure?: boolean }): Retest | undefined {
+  // a claim is an answer the app could not check, so it comes back like a miss, and a warm-up review too: it has no lapse to bring it back
+  if ((o.correct && !o.claimed) || o.exposure || !item.sentence) return undefined;
+  if (!['pick', 'choose', 'type', 'transform', 'recombine', 'translate', 'gap'].includes(item.op) && !(o.claimed && item.op === 'review')) return undefined;
   return { node: item.node, direction: item.direction ?? 'productive', sentence: item.sentence };
 }
 
 /** Move a node on the output ladder by how an answer went. */
-export function climb(learner: Learner, node: NodeId, o: Pick<Outcome, 'correct' | 'tries'>): void {
+export function climb(learner: Learner, node: NodeId, o: Pick<Outcome, 'correct' | 'tries' | 'claimed'>): void {
+  if (o.claimed) return;                                  // a claim is neither a pass nor a miss
   learner.stepRung(node, ladderMove(o));
 }

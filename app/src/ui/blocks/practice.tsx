@@ -33,7 +33,7 @@ export function ReviewRun({ block, run, onDone, resume }: BlockProps<WarmupBlock
     <>
       <Heading {...h} />
       <CardRun
-        cards={cards} onAnswer={(k, o) => run.score(block.items[order[k]], o)} onDone={onDone} start={resume?.card}
+        cards={cards} onAnswer={(k, o) => run.score(block.items[order[k]], o)} onDone={onDone} start={resume?.card} claim={run.plan.budget.band !== 'A1'}
         onShow={(k) => { run.setCursor({ card: k }); if (cut) run.itemShown(block, order[k]); }} stop={cut ? () => run.overBudget() : undefined}
       />
     </>
@@ -48,7 +48,7 @@ export function PracticeRun({ block, run, ui, onDone, resume }: BlockProps<Pract
     <>
       <Heading {...h} />
       <CardRun
-        cards={cards} start={resume?.card}
+        cards={cards} start={resume?.card} claim={run.plan.budget.band !== 'A1'}
         onShow={(k) => { run.setCursor({ card: k }); run.itemShown(block, order[k]); }}
         stop={() => run.overBudget()}
         onAnswer={(k, o) => {

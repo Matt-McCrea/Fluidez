@@ -84,6 +84,7 @@ export interface ReviewOptions {
   sentence?: string;    // event log: bank sentence id
   err?: string;         // event log: the kind of slip the checker named on the first try (see ReviewEvent.err)
   rule?: string;        // event log: the trap rule that named it
+  claimed?: boolean;    // "mine says the same thing": on every event of the answer; never a novel pass, never unlocks a card
 }
 
 /** Describes an answered item whose credit is exposure only (see Learner.expose). */
@@ -97,6 +98,7 @@ export interface ExposureEvent {
   novel?: boolean;
   err?: string;
   rule?: string;
+  claimed?: boolean;
 }
 
 const triesOf = (t?: number): 1 | 2 => (t !== undefined && t > 1 ? 2 : 1);
@@ -704,16 +706,16 @@ export class Learner {
     const maint = this.isMaintenanceCard(r, direction);
     const ret = this.retrievability(id, direction, at);
     this.record({
-      at, node: id, dir: direction, grade, op: opts.op ?? 'other', scored: 'review', tries: opts.tries, novel: opts.novel,
+      at, node: id, dir: direction, grade, op: opts.op ?? 'other', scored: 'review', tries: opts.tries, novel: opts.novel && !opts.claimed,
       ...(opts.ms !== undefined ? { ms: opts.ms } : {}), ...(opts.sentence ? { sentence: opts.sentence } : {}),
-      ...(ret !== undefined ? { r: ret } : {}), ...slipOf(opts),
+      ...(ret !== undefined ? { r: ret } : {}), ...slipOf(opts), ...(opts.claimed ? { claimed: true as const } : {}),
     });
     const next = this.capInterval((maint ? this.maintenanceScheduler : this.scheduler).next(toCard(card), new Date(at), grade).card, this.maxInterval(r, direction));
     r[direction] = fromCard(next, { baseStability: next.stability, partials: card.partials, suspended: card.suspended });
     if (opts.ms !== undefined) this.recordTime(direction, opts.ms);
-    if (opts.novel && grade !== Rating.Again) r.novelPasses += 1;
+    if (opts.novel && !opts.claimed && grade !== Rating.Again) r.novelPasses += 1;
     let unlocked = false;
-    if (direction === 'receptive' && grade !== Rating.Again && !r.productive && r.productiveTrack !== false && this.day(at) > r.introDay) {
+    if (direction === 'receptive' && grade !== Rating.Again && !opts.claimed && !r.productive && r.productiveTrack !== false && this.day(at) > r.introDay) {
       r.productive = newCard(at);
       r.productiveUnlockedAt = at;
       unlocked = true;
@@ -790,8 +792,8 @@ export class Learner {
       if (ev) {
         this.record({
           at, node: id, dir: ev.direction ?? 'receptive', grade: ev.grade ?? Rating.Good, op: ev.op, scored: 'exposure',
-          tries: ev.tries, novel: ev.novel, ...(ev.ms !== undefined ? { ms: ev.ms } : {}), ...(ev.sentence ? { sentence: ev.sentence } : {}),
-          ...(named ? {} : slipOf(ev)),
+          tries: ev.tries, novel: ev.novel && !ev.claimed, ...(ev.ms !== undefined ? { ms: ev.ms } : {}), ...(ev.sentence ? { sentence: ev.sentence } : {}),
+          ...(named ? {} : slipOf(ev)), ...(ev.claimed ? { claimed: true as const } : {}),
         });
         named = true;
       }

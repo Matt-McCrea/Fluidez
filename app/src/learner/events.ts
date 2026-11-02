@@ -88,7 +88,7 @@ export function delayedAccuracy(
   for (const e of events) { const f = first.get(e.node); if (f === undefined || e.at < f) first.set(e.node, e.at); }
   let n = 0, ok = 0;
   for (const e of events) {
-    if (e.scored !== 'review') continue;
+    if (e.scored !== 'review' || e.claimed) continue;
     if (opts.since !== undefined && e.at < opts.since) continue;
     const intro = opts.introducedAt?.(e.node) ?? first.get(e.node);
     if (intro === undefined || e.at - intro < minAge) continue;
@@ -139,7 +139,7 @@ export function delayedCounts(
   for (const e of events) { const f = first.get(e.node); if (f === undefined || e.at < f) first.set(e.node, e.at); }
   let n = 0, ok = 0;
   for (const e of events) {
-    if (e.scored !== 'review') continue;
+    if (e.scored !== 'review' || e.claimed) continue;
     if (opts.since !== undefined && e.at < opts.since) continue;
     const intro = opts.introducedAt?.(e.node) ?? first.get(e.node);
     if (intro === undefined || e.at - intro < minAge) continue;

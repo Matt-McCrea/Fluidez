@@ -2,7 +2,7 @@
 // reason. Typed: one self-correction attempt with a hint, then the right
 // version and one plain reason. Read: read, peek at the English, move on.
 import { useEffect, useRef, useState } from 'preact/hooks';
-import type { Card, Check } from '../session/cards';
+import type { Card, Check, TypeCard } from '../session/cards';
 import { formatOf } from '../session/order';
 import type { Outcome } from '../session/attempt';
 import { AnswerField } from './answer';
@@ -15,6 +15,8 @@ export interface CardViewProps {
   next?: string;
   /** 1-based position, for "3 of 9" */
   pos?: { n: number; of: number };
+  /** the learner may say "mine says the same thing" after a whole-sentence card shows its answer: only from A2 up, in a session that can queue the retest (R9) */
+  claim?: boolean;
 }
 
 /** Hint kinds that name one located slip: the learner is close. */
@@ -42,6 +44,15 @@ export function revealLines(hint: string | undefined, why: string): string[] {
 /** The lines under a right answer: why a lenient pass counted, and the swap a pass went through. */
 export function passLines(r: Pick<Check, 'lenient' | 'hint' | 'note'>): string[] {
   return [r.lenient ? r.hint : undefined, r.note].filter((x): x is string => !!x);
+}
+
+/**
+ * Whether "Mine says the same thing" is offered once the right version is on screen (R9): on a card that asked for a whole
+ * sentence, where something was typed that is more than a fragment, and where no named trap fired. A trap that named the
+ * slip has proved an error, so the learner is not asked to judge it.
+ */
+export function claimOffered(p: { card: Pick<TypeCard, 'claim'>; allowed?: boolean; typed: string; result: Pick<Check, 'hintKind' | 'rule'> | null }): boolean {
+  return !!p.allowed && !!p.card.claim && !!p.typed.trim() && !!p.result && !p.result.rule && p.result.hintKind !== 'fragment' && p.result.hintKind !== 'empty';
 }
 
 /** "." unless the text already ends in sentence punctuation. */
@@ -98,10 +109,22 @@ export function mcqResult(card: Extract<Card, { type: 'mcq' }>, picked: number |
  */
 export function typedOutcome(p: {
   passed: boolean; tries: number; ms: number; value: string; first: string; result: Check | null; firstCheck: Check | null; firstKeyMs?: number;
+  /** "mine says the same thing" was said once the answer was shown */
+  claimed?: boolean;
 }): Outcome {
   const slip = p.firstCheck ?? (p.value.trim() ? p.result : null);
   // a clean pass names nothing; a forgiven accent is a pass that does (its `near` may be cleared, for the note says it instead)
   const err = slip ? slip.hintKind ?? (slip.near ? 'accents' : undefined) : undefined;
+  // a claim goes the lenient way, so Hard; the text it is about is the last thing typed, the one set against the right version
+  if (p.claimed && !p.passed) {
+    return {
+      correct: true, lenient: true, claimed: true, tries: Math.max(1, p.tries), ms: p.ms,
+      evidence: { input: p.value, answer: p.result?.answer },
+      given: p.value || p.first, ...(p.result ? { shown: p.result.answer } : {}),
+      ...(p.firstKeyMs !== undefined ? { firstKeyMs: p.firstKeyMs } : {}),
+      ...(err ? { err } : {}), ...(slip?.rule ? { rule: slip.rule } : {}),
+    };
+  }
   return {
     correct: p.passed, tries: Math.max(1, p.tries), ms: p.ms, ...(p.result?.lenient ? { lenient: true } : {}),
     evidence: { input: p.value, answer: p.result?.answer },
@@ -155,7 +178,7 @@ function McqView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extrac
   );
 }
 
-function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extract<Card, { type: 'type' }>; ms: () => number }) {
+function TypeView({ card, onDone, next, pos, ms, ...p }: CardViewProps & { card: Extract<Card, { type: 'type' }>; ms: () => number }) {
   const [value, setValue] = useState('');
   const [tries, setTries] = useState(0);
   const [result, setResult] = useState<Check | null>(null);
@@ -165,10 +188,12 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
   /** ms to the first key: retrieval onset, without the thumbs (logged, never graded) */
   const keyed = useRef<number | undefined>(undefined);
   const [revealed, setRevealed] = useState(false);
+  const [claimed, setClaimed] = useState(false);
   const passed = !!result?.pass;
   const finished = passed || revealed;
   const retrying = !finished && tries === 1 && !!result;
   const ready = canCheck(value, retrying ? first : undefined);
+  const canClaim = revealed && !passed && !claimed && claimOffered({ card, allowed: p.claim, typed: value, result });
 
   const submit = () => {
     if (finished || !ready) return;
@@ -204,6 +229,8 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
             <p class="miss">Here's the right version: <Txt t={{ text: result?.answer ?? '', lang: card.answerLang }} /></p>
             {revealLines(result?.hint, card.why).map((l) => <p class="why" key={l}><Rich text={l} /></p>)}
             {first && first !== value ? <p class="small">You wrote: <span lang={card.answerLang}>{first}</span>, then <span lang={card.answerLang}>{value}</span></p> : null}
+            {claimed ? <p class="why">Okay, noted. This one comes back in a new sentence.</p> : null}
+            {canClaim ? <p><button class="btn link" data-claim onClick={() => setClaimed(true)}>Mine says the same thing</button></p> : null}
           </>
         ) : retrying ? (
           <p class="hint">{retryLead(result!)} <Rich text={result!.hint ?? 'Have another look and try once more.'} /></p>
@@ -211,7 +238,7 @@ function TypeView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
       </div>
       <div class="actions">
         {finished
-          ? <Continue label={next} onClick={() => onDone(typedOutcome({ passed, tries, ms: took, value, first, result, firstCheck, firstKeyMs: keyed.current }), value)} />
+          ? <Continue label={next} onClick={() => onDone(typedOutcome({ passed, tries, ms: took, value, first, result, firstCheck, firstKeyMs: keyed.current, claimed }), value)} />
           : (
             <>
               <button class="btn primary" data-primary disabled={!ready} onClick={submit}>{retrying ? 'Try again' : 'Check'}</button>
@@ -248,9 +275,9 @@ function ReadView({ card, onDone, next, pos, ms }: CardViewProps & { card: Extra
  * each card appears; `stop()` is asked before each next card (out of time:
  * the run ends there).
  */
-export function CardRun({ cards, onAnswer, onDone, onShow, stop, start }: {
+export function CardRun({ cards, onAnswer, onDone, onShow, stop, start, claim }: {
   cards: Card[]; onAnswer: (i: number, o: Outcome, input?: string) => void; onDone: () => void;
-  onShow?: (i: number) => void; stop?: () => boolean; start?: number;
+  onShow?: (i: number) => void; stop?: () => boolean; start?: number; claim?: boolean;
 }) {
   const [i, setI] = useState(() => Math.max(0, Math.min(start ?? 0, Math.max(0, cards.length - 1))));
   useEffect(() => { if (i < cards.length) onShow?.(i); }, [i]);
@@ -258,7 +285,7 @@ export function CardRun({ cards, onAnswer, onDone, onShow, stop, start }: {
   const card = cards[Math.min(i, cards.length - 1)];
   return (
     <CardView
-      key={card.key} card={card} pos={{ n: i + 1, of: cards.length }}
+      key={card.key} card={card} pos={{ n: i + 1, of: cards.length }} claim={claim}
       onDone={(o, input) => { onAnswer(i, o, input); if (i + 1 >= cards.length || stop?.()) onDone(); else setI(i + 1); }}
     />
   );

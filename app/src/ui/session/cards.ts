@@ -68,6 +68,8 @@ export interface TypeCard extends CardBase {
   check(input: string): Check;
   /** typed answers get one self-correction attempt (false: reveal at once) */
   retry: boolean;
+  /** the card asks for a whole sentence, so the learner may say "mine says the same thing" once the answer shows (R9) */
+  claim?: true;
 }
 export interface ReadCard extends CardBase { type: 'read'; es: string; en: string }
 export type Card = McqCard | TypeCard | ReadCard;
@@ -302,7 +304,7 @@ function preferFor(b: Bundle, node: NodeId): ((text: string) => boolean) | undef
  * this turn is checked.
  */
 function sayCard(key: string, v: TurnView, check: (input: string) => Check, why: string): TypeCard {
-  const base = { type: 'type' as const, key, answerLang: 'es' as const, placeholder: 'Type it in Spanish', check, retry: true, why };
+  const base = { type: 'type' as const, key, answerLang: 'es' as const, placeholder: 'Type it in Spanish', check, retry: true, why, claim: true as const };
   if (!v.context) return { ...base, ask: SAY, prompt: en(v.sentence.en) };
   return { ...base, ask: 'They say this. Answer in Spanish', prompt: es(v.context), sub: en(`Say: ${v.sentence.en}`), placeholder: 'Your reply, in Spanish' };
 }
@@ -437,7 +439,7 @@ function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cl
     if (!t) return undefined;
     return {
       type: 'type', key: item.id, ask: 'Change the sentence', prompt: es(t.source), sub: en(t.instruction), answerLang: 'es',
-      placeholder: 'Type it in Spanish', check: itemCheck(t, undefined, item.node), retry: true, why: transformWhy(t),
+      placeholder: 'Type it in Spanish', check: itemCheck(t, undefined, item.node), retry: true, claim: true, why: transformWhy(t),
     };
   }
   const tf = typeFormItem(s);
@@ -752,7 +754,7 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   const { ask, what } = recombineAsk(key);
   return {
     type: 'type', key: item.id, ask, prompt: es(known.es), sub: en(`Now: ${it.en ?? ''}`.replace(/\s+$/, '')), answerLang: 'es', placeholder: 'Say it in Spanish',
-    check: itemCheck(it, undefined, item.node), retry: true, why: `${stopped(it.es)} Same sentence, new ${what}.`,
+    check: itemCheck(it, undefined, item.node), retry: true, claim: true, why: `${stopped(it.es)} Same sentence, new ${what}.`,
   };
 }
 
@@ -791,7 +793,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       if (it) {
         return {
           type: 'type', key: item.id, ask: it.instruction, prompt: es(it.source), answerLang: 'es', placeholder: 'Rewrite it',
-          check: itemCheck(it, undefined, item.node), retry: true, why: transformWhy(it),
+          check: itemCheck(it, undefined, item.node), retry: true, claim: true, why: transformWhy(it),
         };
       }
       return translateCard(item, s, b);

@@ -15,7 +15,7 @@ import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
 import { attributeGrades } from './attribute';
-import { climb, eventOp, gradeOf, lessonStep, logAnswer, missRetest, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome, type Retest } from './attempt';
+import { climb, claimOf, eventOp, gradeOf, lessonStep, logAnswer, missRetest, reviewNode, reviewSentence, seen, seenAbout, slipOf, tries12, type Answered, type Outcome, type Retest } from './attempt';
 import { progressNumbers } from './numbers';
 import { LearnQueue } from './order';
 
@@ -375,6 +375,12 @@ export class SessionRunner {
     this.present(node, productive);
     if (o.exposure) return true; // shown, not asked: not a retrieval to count, nor one to ask again
     this.begin(node, productive);
+    if (o.claimed) {
+      // "mine says the same thing": the app could not tell, so it is not a retrieval that counts and not one that is skipped; the node is asked again
+      this.learnMisses.add(node); this.noteMiss(node, op);
+      this.exposeAbout(node, credit, { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, ...slip, ...claimOf(o) });
+      return false;
+    }
     this.learnSteps.set(node, (this.learnSteps.get(node) ?? 0) + 1);
     if (!o.correct) { this.learnMisses.add(node); this.noteMiss(node, op); }
     else if (typed) this.typedOk.set(node, (this.typedOk.get(node) ?? 0) + 1);
@@ -417,13 +423,15 @@ export class SessionRunner {
     }
     if (!o.exposure) {
       this.tally.scored++;
-      if (o.correct) this.tally.correct++;
-      if (o.correct && o.tries <= 1) this.tally.firstTry++;
+      // a claim is neither right nor right first time: the app could not tell (R9)
+      if (o.correct && !o.claimed) this.tally.correct++;
+      if (o.correct && !o.claimed && o.tries <= 1) this.tally.firstTry++;
     }
     if (item.scoring === 'learning') this.begin(item.node, item.op === 'learn' ? item.productive : undefined);
     this.stepLadder(item, o);
     const at = this.now();
     const slip = slipOf(o);
+    const claim = claimOf(o);
     switch (item.scoring) {
       case 'review': {
         const dir: Direction = 'direction' in item ? item.direction : 'receptive';
@@ -434,17 +442,17 @@ export class SessionRunner {
         const op = eventOp(item);
         const tries = tries12(o.tries);
         if (!targets.length) {
-          this.exposeAbout(item.node, item.credit, { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined, ...slip }, at);
+          this.exposeAbout(item.node, item.credit, { op, direction: dir, grade, tries, ms: o.ms, sentence, novel: item.op === 'review' ? item.novel : undefined, ...slip, ...claim }, at);
           return;
         }
         if (sentence) {
           const novel = item.op === 'review' ? item.novel : true; // a recombine item is novel by construction
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          reviewSentence(this.learner, item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence, ...slip });
+          reviewSentence(this.learner, item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence, ...slip, ...claim });
           if (expose.length) seen(this.learner, expose, at);
         } else {
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          Object.keys(grades).forEach((t, i) => reviewNode(this.learner, t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries, ...(i === 0 ? slip : {}) }));
+          Object.keys(grades).forEach((t, i) => reviewNode(this.learner, t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries, ...claim, ...(i === 0 ? slip : {}) }));
           if (expose.length) seen(this.learner, expose, at);
         }
         return;
@@ -455,7 +463,7 @@ export class SessionRunner {
       case 'exposure':
         this.exposeAbout(item.node, item.credit, {
           op: eventOp(item), direction: 'direction' in item ? item.direction : 'receptive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms,
-          sentence: 'sentence' in item ? item.sentence : undefined, ...slip,
+          sentence: 'sentence' in item ? item.sentence : undefined, ...slip, ...claim,
         }, at);
         return;
       case 'none':
@@ -517,23 +525,24 @@ export class SessionRunner {
     this.answered({ node: item.node, op: 'recap', sentence: item.sentence }, o);
     if (o.exposure) { seen(this.learner, item.credit, this.now()); return; }
     this.tally.scored++;
-    if (o.correct) this.tally.correct++;
-    if (o.correct && o.tries <= 1) this.tally.firstTry++;
+    if (o.correct && !o.claimed) this.tally.correct++;
+    if (o.correct && !o.claimed && o.tries <= 1) this.tally.firstTry++;
     const at = this.now();
     const grade = gradeOf(o);
     const tries = tries12(o.tries);
     const slip = slipOf(o);
+    const claim = claimOf(o);
     if (item.kind === 'new' || item.kind === 'miss') {
-      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms, ...(item.sentence ? { sentence: item.sentence } : {}), ...slip }, at);
+      this.exposeAbout(item.node, item.credit, { op: 'recap', direction: item.direction, grade, tries, ms: o.ms, ...(item.sentence ? { sentence: item.sentence } : {}), ...slip, ...claim }, at);
       return;
     }
     if (!this.learner.hasCard(item.node, item.direction)) return;
     if (item.sentence) {
       reviewSentence(this.learner, item.credit, item.direction, grade, {
-        targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence, ...slip,
+        targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence, ...slip, ...claim,
       });
     } else {
-      reviewNode(this.learner, item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries, ...slip });
+      reviewNode(this.learner, item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries, ...slip, ...claim });
     }
   }
 
