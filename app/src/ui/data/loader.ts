@@ -101,6 +101,14 @@ export const WINDOW_AFTER = 3;
 export interface UnitRange { from?: number; to: number }
 
 const baseName = (p: string) => p.replace(/^.*\//, '').replace(/\.json$/, '');
+/** Add one lot of records to another. */
+function pour(to: ContentSource, from: ContentSource): void {
+  to.sentences.push(...from.sentences);
+  to.chapters.push(...from.chapters);
+  to.scenes.push(...from.scenes);
+  to.writing.push(...from.writing);
+  to.scripts.push(...from.scripts);
+}
 /** `g:ser-identity` is stored as scripts/g_ser-identity.json. */
 const scriptFile = (node: string) => node.replace(':', '_');
 
@@ -112,6 +120,8 @@ export class ContentLoader {
   private readonly missingScripts = new Set<string>();
   /** the files that exist in the build and failed to arrive, by path: asked for again next time, and what the compiler is told is lacking */
   private readonly failed = new Map<string, FileKind>();
+  /** what the fetch that has a file in the air will bring: a second ask for that file waits for it, and does not take it for one nobody wrote */
+  private readonly arriving = new Map<string, Promise<ContentSource>>();
   readonly problems: string[] = [];
 
   constructor(private readonly files: ContentFiles = CONTENT_FILES) {}
@@ -163,7 +173,7 @@ export class ContentLoader {
     return readContentHistory({ migrations: Object.values(this.files.history?.migrations ?? {}), legacy: this.files.history?.legacy });
   }
 
-  /** Read and parse every not-yet-loaded file `want` accepts; return just the new records. */
+  /** Read and parse every not-yet-loaded file `want` accepts; return just the new records, with those of any file `want` accepts that another call had in the air. */
   private async fetch(want: (kind: FileKind, path: string) => boolean): Promise<ContentSource> {
     const add: ContentSource = { sentences: [], chapters: [], scenes: [], writing: [], scripts: [] };
     const kinds: Array<[FileKind, (raw: unknown, p: string) => void]> = [
@@ -173,26 +183,35 @@ export class ContentLoader {
       ['scenes', (raw, p) => add.scenes.push(...parseAll([raw], Scene, this.problems, p, true))],
       ['writing', (raw, p) => add.writing.push(...parseAll([raw], WritingTask, this.problems, p, true))],
     ];
-    await Promise.all(kinds.map(async ([kind, push]) => {
-      const paths = Object.keys(this.files[kind]).sort().filter((p) => !this.loaded.has(p) && want(kind, p));
-      paths.forEach((p) => this.loaded.add(p));  // claim first: a concurrent call must not load it twice
-      const raws = await Promise.all(paths.map((p) => this.read(this.files[kind], p)));
-      paths.forEach((p, i) => {
-        if (raws[i] === undefined) {
-          // not got: let go of the claim so the next ensureWindow asks again, and remember it is lacking
-          this.loaded.delete(p);
-          this.failed.set(p, kind);
-        } else {
-          this.failed.delete(p);
-          push(raws[i], p);
-        }
-      });
-    }));
-    this.src.sentences.push(...add.sentences);
-    this.src.chapters.push(...add.chapters);
-    this.src.scenes.push(...add.scenes);
-    this.src.writing.push(...add.writing);
-    this.src.scripts.push(...add.scripts);
+    let landed!: (records: ContentSource) => void;
+    const landing = new Promise<ContentSource>((resolve) => { landed = resolve; });
+    const others = new Set<Promise<ContentSource>>();
+    const claimed: string[] = [];
+    try {
+      await Promise.all(kinds.map(async ([kind, push]) => {
+        const wanted = Object.keys(this.files[kind]).sort().filter((p) => want(kind, p));
+        for (const p of wanted) { const flying = this.arriving.get(p); if (flying) others.add(flying); }
+        const paths = wanted.filter((p) => !this.loaded.has(p));
+        // claim first: a concurrent call must not load it twice
+        paths.forEach((p) => { this.loaded.add(p); this.arriving.set(p, landing); claimed.push(p); });
+        const raws = await Promise.all(paths.map((p) => this.read(this.files[kind], p)));
+        paths.forEach((p, i) => {
+          if (raws[i] === undefined) {
+            // not got: let go of the claim so the next ensureWindow asks again, and remember it is lacking
+            this.loaded.delete(p);
+            this.failed.set(p, kind);
+          } else {
+            this.failed.delete(p);
+            push(raws[i], p);
+          }
+        });
+      }));
+      pour(this.src, add);
+    } finally {
+      claimed.forEach((p) => this.arriving.delete(p));
+      landed(add);
+    }
+    for (const records of await Promise.all(others)) pour(add, records);
     add.lacking = this.lacking();
     return add;
   }
@@ -229,9 +248,10 @@ export class ContentLoader {
     return sorted.slice(Math.max(0, at - WINDOW_BEFORE), Math.min(sorted.length, at + WINDOW_AFTER + 1));
   }
 
-  /** Load the window of units around `unit`; the records that were not loaded before. */
+  /** Load the window of units around `unit`, and any core file that has not arrived yet; the records that were not loaded before. */
   async loadWindow(unit: string | number): Promise<ContentSource> {
-    return this.fetch(this.unitWanter(await this.window(unit)));
+    const inWindow = this.unitWanter(await this.window(unit));
+    return this.fetch((kind, p) => inWindow(kind, p) || isCoreFile(kind, baseName(p)));
   }
 
   /** Load every content file of the units in `range` (inclusive indexes, clamped). */

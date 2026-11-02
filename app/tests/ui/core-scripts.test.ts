@@ -4,7 +4,7 @@
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { ContentLoader } from '../../src/ui/data/loader';
+import { CONTENT_FILES, ContentLoader } from '../../src/ui/data/loader';
 
 const SCRIPTS = join(__dirname, '../../content/scripts');
 const contrastFiles = readdirSync(SCRIPTS).filter((f) => f.startsWith('x_') && f.endsWith('.json'));
@@ -40,5 +40,17 @@ describe('contrast scripts are core content', () => {
     await b.ensureWindow(0);
     expect(b.scripts.size).toBe(n);
     expect(loader.problems).toEqual([]);
+  }, 120_000);
+
+  it('are asked for again with the next window when they failed to arrive at boot', async () => {
+    const net = { up: false };
+    const scripts = Object.fromEntries(Object.entries(CONTENT_FILES.scripts).map(([p, load]) => [p, async () => { if (!net.up && p.includes('/x_')) throw new Error('net::ERR_FAILED'); return load(); }]));
+    const b = await new ContentLoader({ ...CONTENT_FILES, scripts }).load({ unit: 0 });
+    expect([...b.scripts.keys()].filter((n) => n.startsWith('x:'))).toEqual([]);
+    expect(b.source.lacking?.some((k) => k.startsWith('scripts:x:'))).toBe(true);
+    net.up = true;
+    await b.ensureWindow(0);
+    expect([...b.scripts.keys()].filter((n) => n.startsWith('x:')).length).toBeGreaterThan(0);
+    expect(b.source.lacking).toEqual([]);
   }, 120_000);
 });
