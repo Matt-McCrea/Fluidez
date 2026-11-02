@@ -1,7 +1,7 @@
 {
  "node": "g:reported-requests",
  "hook": {
-  "line": "Messages are flying to the coast, and half of them are \"tell him to call me\". Passing on a request is different from passing on news, and the verb ending is what shows it.",
+  "line": "Messages are flying to the coast, and half of them are \"tell him to call me\". Passing on a request is different from passing on a fact, and the verb ending is what shows it.",
   "es": "Vale dice que la llames.",
   "en": "Vale says for you to call her. (to a friend)"
  },
@@ -31,7 +31,7 @@
    "en": "I'm asking you to write to me today. (to a friend)"
   }
  ],
- "rule": "In English a request is \"tell her *to call*\", with *to* and the dictionary form. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then the form you already know from *quiero que*:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThere is no word for *to*: *que* plus the subjunctive does that job. *Dile que espere* = \"tell him to wait\".",
+ "rule": "In English a request is \"tell her *to call*\", with *to* and the dictionary form. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then the form you already know from *quiero que*:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThere is no word for *to*: *que* plus the subjunctive does that job. *Dile que espere* = \"tell him to wait\".\n\n*Dice que vienes* says you're coming. *Dice que vengas* says to come.",
  "smallPrint": "Teachers call this the subjunctive after a verb of request. It is the same form you use after *quiero que* and *dudo que*.",
  "readAndPick": [
   {

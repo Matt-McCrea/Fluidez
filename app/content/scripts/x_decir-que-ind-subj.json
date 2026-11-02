@@ -31,7 +31,7 @@
    "en": "My mom says I should work less."
   }
  ],
- "rule": "*Decir que* can mean two things, and the verb after it tells you which.\n\nIf you are passing on **news**, the verb stays in its normal form (*vienes*, *está*, *trabajo*). It is a fact.\n\nIf you are passing on an **order or a wish**, the verb takes the \"opposite\" ending (*vengas*, *cierres*, *trabaje*). It is something that should happen.\n\n*Dice que vienes* = he says you are coming.\n*Dice que vengas* = he says to come.\n\nEnglish says \"he says...\" in both cases. In Spanish, listen to the last letter.",
+ "rule": "*Decir que* can mean two things, and the verb after it tells you which.\n\nIf you are passing on **a fact**, the verb stays in the ordinary form (*vienes*, *está*, *trabajo*).\n\nIf you are passing on an **order or a wish**, the verb takes the subjunctive (*vengas*, *cierres*, *trabaje*). It is something that should happen.\n\n*Dice que vienes* = he says you are coming.\n*Dice que vengas* = he says to come.\n\nEnglish says \"he says...\" in both cases. In Spanish, listen to the last letter.",
  "smallPrint": "Teachers call this indicative for information and subjunctive for influence, both after *decir que*.",
  "readAndPick": [
   {
@@ -121,13 +121,13 @@
    "prompt": "Choose the right form and type the whole sentence (He says you're coming tomorrow. To a friend): Dice que ___ mañana. (vienes / vengas)",
    "answer": "Dice que vienes mañana.",
    "accept": [],
-   "why": "You are passing on news, so the verb stays normal: *vienes*."
+   "why": "You are passing on a fact, so the ordinary form: *vienes*."
   },
   {
    "prompt": "Choose the right form and type the whole sentence (He says to come tomorrow. To a friend): Dice que ___ mañana. (vienes / vengas)",
    "answer": "Dice que vengas mañana.",
    "accept": [],
-   "why": "An order uses the \"opposite\" ending: *vengas*."
+   "why": "An order takes the subjunctive: *vengas*."
   },
   {
    "prompt": "Type in Spanish: Vale says the café is closed.",
@@ -145,7 +145,7 @@
    "prompt": "Type in Spanish: My mom says I work a lot.",
    "answer": "Mi mamá dice que trabajo mucho.",
    "accept": [],
-   "why": "News about me: *trabajo*, the normal form."
+   "why": "A fact about me: *trabajo*, the ordinary form."
   },
   {
    "prompt": "Make it an order: Mi mamá dice que trabajo mucho. (My mom says I should work less)",
@@ -154,7 +154,7 @@
    "why": "A wish uses *trabaje*, not *trabajo*."
   },
   {
-   "prompt": "Make it news: Dile que llame mañana. (Tell him I'll call tomorrow)",
+   "prompt": "Make it a fact: Dile que llame mañana. (Tell him I'll call tomorrow)",
    "answer": "Dile que llamo mañana.",
    "accept": [
     "Dile que yo llamo mañana."
@@ -166,12 +166,12 @@
   {
    "wrong": "Mi mamá dice que trabajo menos.",
    "right": "Mi mamá dice que trabaje menos.",
-   "why": "Almost. An order uses the \"opposite\" ending, *trabaje*, not *trabajo*."
+   "why": "Almost. An order takes the subjunctive, *trabaje*, not *trabajo*."
   },
   {
    "wrong": "Dile que viene mañana.",
    "right": "Dile que venga mañana.",
-   "why": "If you mean *tell him to come*, you need the subjunctive *venga*. *Viene* would be news: that he's coming."
+   "why": "If you mean *tell him to come*, you need the subjunctive *venga*. *Viene* would say that he's coming."
   },
   {
    "wrong": "Vale dice que cierre a las seis.",
@@ -179,5 +179,5 @@
    "why": "If you're just passing on a fact about the café, keep the ordinary verb: *cierra*. *Cierre* would be an order."
   }
  ],
- "personal": "Think of a message someone gave you this week. Write it twice: once as news (*dice que...*) and once as an order (*dice que...* with the subjunctive)."
+ "personal": "Think of a message someone gave you this week. Write it twice: once as a fact (*dice que...*) and once as an order (*dice que...* with the subjunctive)."
 }
