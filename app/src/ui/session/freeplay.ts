@@ -5,8 +5,8 @@
 //   conjugate    exposure only (op 'grind'), never a scheduled review
 //   translate    exposure only (op 'grind')
 //   nodes        exposure (op 'train') plus the output ladder step
-import { knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
-import type { NodeId } from '../../content/schema';
+import { admissible, knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
+import type { ContrastItem, NodeId } from '../../content/schema';
 import { checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
 import {
@@ -16,7 +16,8 @@ import {
 import { State, type Direction, type ExposureEvent, type Learner } from '../../learner';
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
-import { practiceCard, reviewCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
+import { practiceCard, reviewCard, scriptCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
+import { contrastCard, contrastCredit, contrastFormAt } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
 import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
@@ -26,6 +27,8 @@ export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickRevi
 export const CHECKPOINT_MAX = 20;;
 /** Items per node in a nodes drill. */
 export const ITEMS_PER_NODE = 3;
+/** Cards in a run on a contrast: a forced choice first and then typed, where the contrast is one a choice can test. */
+export const CONTRAST_RUN = 6;
 /** Most cards a quick review lines up. */
 const QUICK_MAX = 60;
 
@@ -290,13 +293,99 @@ export class Freeplay {
 
   private planNodes(nodes: NodeId[]): Array<() => Card | undefined> {
     const allow = new Set(nodes);
-    if (nodes.length && nodes.every((n) => this.tiersFor(n, allow).every((t) => !t.length))) this.emptyReason = this.laterReason(nodes[0]);
+    const bare = (n: NodeId) => (this.isContrast(n) ? !this.contrastRun(n).length : this.tiersFor(n, allow).every((t) => !t.length));
+    if (nodes.length && nodes.every(bare)) this.emptyReason = this.isContrast(nodes[0]) ? this.contrastReason(nodes[0]) : this.laterReason(nodes[0]);
     const out: Array<() => Card | undefined> = [];
     for (const node of nodes) {
+      if (this.isContrast(node)) { out.push(...this.contrastRun(node)); continue; }
       const used = new Set<string>();
       for (let k = 0; k < ITEMS_PER_NODE; k++) out.push(() => this.nodeCard(node, allow, used));
     }
     return out;
+  }
+
+  // ------------------------------------------------------------ a contrast
+
+  private isContrast(node: NodeId): boolean { return this.d.bundle.node(node)?.kind === 'contrast'; }
+
+  /**
+   * Why a contrast has nothing to practise: it has not been taught yet (the week the course teaches it, a real one), or it
+   * has nothing the learner can be shown yet. Never a week that is not in the course.
+   */
+  private contrastReason(node: NodeId): string {
+    const { course } = this.d.bundle;
+    if (!this.known().has(node)) {
+      const at = course.teachPos.get(node);
+      const week = at === undefined ? 0 : course.unitStart.filter((start) => start <= at).length;
+      return week > 0 ? `This one comes in week ${week}, so there is nothing to practise yet.` : 'This one comes later in the course, so there is nothing to practise yet.';
+    }
+    return 'There is nothing to practise on this one yet.';
+  }
+
+  /**
+   * A run on a contrast: its own items (content/contrasts), the ones the learner can be shown (everything the
+   * sentence needs is known), those not seen before first; and where they run short, its script's own picks and turns,
+   * which are about the same contrast. Never a sentence of the bank, whose gap would be any verb in it.
+   */
+  private contrastRun(node: NodeId): Array<() => Card | undefined> {
+    const { bundle, rng, learner } = this.d;
+    if (!this.known().has(node)) return [];
+    const file = bundle.contrasts.get(node);
+    const known = this.known();
+    const items = (file?.items ?? []).filter((it) => admissible(it.requires, (r) => known.has(r), bundle.course.nodes));
+    const fresh = (id: string) => !learner.ledger.hasSeen('item', id);
+    const order = [...shuffle(items.filter((it) => fresh(`cx:${it.id}`)), rng), ...shuffle(items.filter((it) => !fresh(`cx:${it.id}`)), rng)].slice(0, CONTRAST_RUN);
+    // where the items run short, the script's own: its picks too for a cue or a meaning, but only its typed turns for aspect and near-synonyms,
+    // whose picks turn on a keyword of the English (R10). What was not asked before comes first.
+    const script = bundle.scripts.get(node);
+    const turns: Array<{ op: 'readAndPick' | 'yourTurn'; index: number }> = [];
+    if (script) {
+      const typedOnly = file?.decides === 'discourse' || file?.decides === 'synonym';
+      const ordered = (op: 'readAndPick' | 'yourTurn', n: number) => {
+        const key = (i: number) => `sc:${node}:${op === 'readAndPick' ? 'rp' : 'yt'}:${i}`;
+        const all = Array.from({ length: n }, (_, i) => i);
+        return [...shuffle(all.filter((i) => fresh(key(i))), rng), ...shuffle(all.filter((i) => !fresh(key(i))), rng)].map((index) => ({ op, index }));
+      };
+      const yt = ordered('yourTurn', script.yourTurn.length), rp = typedOnly ? [] : ordered('readAndPick', script.readAndPick.length);
+      for (let k = 0; turns.length < CONTRAST_RUN - order.length && (k < rp.length || k < yt.length); k++) {
+        if (k < yt.length) turns.push(yt[k]);
+        if (k < rp.length && turns.length < CONTRAST_RUN - order.length) turns.push(rp[k]);
+      }
+    }
+    const n = order.length;
+    return [
+      ...order.map((it, k) => () => this.contrastItemCard(node, file!.decides, it, contrastFormAt(file!.decides, k, n))),
+      ...turns.map((t) => () => this.contrastScriptCard(node, t)),
+    ];
+  }
+
+  private contrastItemCard(node: NodeId, decides: Parameters<typeof contrastCard>[1], it: ContrastItem, form: Parameters<typeof contrastCard>[2]['form']): Card {
+    const card = contrastCard(it, decides, { key: `train:${++this.seq}:${it.id}`, form });
+    this.lastOp = 'contrast';
+    this.answering(node, contrastCredit(it), `cx:${it.id}`);
+    return card;
+  }
+
+  private contrastScriptCard(node: NodeId, t: { op: 'readAndPick' | 'yourTurn'; index: number }): Card | undefined {
+    const script = this.d.bundle.scripts.get(node);
+    const card = script && scriptCard({ op: t.op, id: `train:${++this.seq}:${node}`, node, index: t.index, scoring: 'exposure', credit: [node] }, script);
+    if (!card) return undefined;
+    this.lastOp = 'contrast';
+    this.answering(node, [node], `sc:${node}:${t.op === 'readAndPick' ? 'rp' : 'yt'}:${t.index}`);
+    return card;
+  }
+
+  /** What an answer to a contrast card does: the contrast is exposed (a miss is charged to it, and to the side of it the item was about), and the item is in the ledger. */
+  private answering(node: NodeId, credit: readonly NodeId[], ledgerKey: string): void {
+    const { learner } = this.d;
+    const novel = !learner.ledger.hasSeen('item', ledgerKey);
+    this.cur = {
+      about: { node, op: 'train' },
+      grade: (o) => {
+        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, novel, ...slipOf(o) });
+        learner.ledger.markSeen('item', ledgerKey, { deliberate: !novel, at: this.d.now(), ...(novel ? {} : { reason: 'free practice' }) });
+      },
+    };
   }
 
   /** The practice op for a node's current rung. */

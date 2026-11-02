@@ -276,9 +276,10 @@ describe('Train it with nothing to practise', () => {
     const t = new Date(2026, 9, 1, 18).getTime();
     const learner = await Learner.open(new MemoryStore(), { now: () => t });
     applyPlacement(learner, bundle, 30, t);
-    const contrast = [...bundle.course.nodes.values()].find((n) => n.kind === 'contrast' && !bundle.index.byTarget.has(n.id) && !bundle.index.byRequire.has(n.id));
-    expect(contrast).toBeTruthy();
-    const fp = new Freeplay({ kind: 'nodes', nodes: [contrast!.id] }, { learner, bundle, now: () => t, rng: rng('x') });
+    // a can-do is no sentence's to practise: no row requires one, and no unit day teaches it
+    const node = [...bundle.course.nodes.values()].find((n) => n.kind === 'cando' && !bundle.index.byTarget.has(n.id) && !bundle.index.byRequire.has(n.id) && !bundle.course.teachPos.has(n.id));
+    expect(node).toBeTruthy();
+    const fp = new Freeplay({ kind: 'nodes', nodes: [node!.id] }, { learner, bundle, now: () => t, rng: rng('x') });
     expect(fp.next()).toBeUndefined();
     expect(fp.emptyReason).toBeTruthy();
     expect(fp.emptyReason).not.toMatch(/week/);
