@@ -70,8 +70,8 @@ function lexGapTurn(lex: LexemeLike, word: string, s: BankSentence): LexGapItem 
   const nodes = [...new Set([lex.id, ...s.targets])];
   // a verb: the ladder decides whether its gap has one answer
   if (verbByInf(word)) {
-    const g = analyseGap(s);
-    if (!g || g.clause.choice.inf.replace(/se$/, '') !== word.replace(/se$/, '')) return null;
+    const g = analyseGap(s, undefined, lex.id);
+    if (!g?.clause || g.clause.choice.inf.replace(/se$/, '') !== word.replace(/se$/, '')) return null;
     return {
       id: itemId('lexeme', s.id, `gap:${lex.id}`), generator: 'lexeme', sentenceId: s.id, nodes,
       kind: 'lexGap', gapped: render(replaceCore(g.clause.toks, g.clause.verb, '___')), en: s.en, cue: g.cue,

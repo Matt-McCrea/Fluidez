@@ -515,8 +515,8 @@ function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cl
       placeholder: 'Type it in Spanish', check: itemCheck(t, undefined, item.node), retry: true, claim: true, why: transformWhy(t),
     };
   }
-  const tf = typeFormItem(s);
-  if (tf && answerBelongs(b, item.node, tf.answer)) {
+  const tf = typeFormItem(s, item.node);
+  if (tf && ((tf.cue === '' && s.focus && s.targets.includes(item.node)) || answerBelongs(b, item.node, tf.answer))) {
     return {
       type: 'type', key: item.id, ask: 'Fill the gap', prompt: es(tf.gapped), sub: en(`${tf.en}  ${tf.cue}`), answerLang: 'es',
       placeholder: 'The missing word', check: itemCheck(tf), retry: true, why: gapWhy(tf, `The English says "${tf.en}", so the gap is ${tf.answer}.`),
@@ -769,7 +769,7 @@ function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
 }
 
 function typeFormCard(item: PracticeItem, s: BankSentence): TypeCard | undefined {
-  const t = typeFormItem(s);
+  const t = typeFormItem(s, item.node);
   if (!t) return undefined;
   return {
     type: 'type', key: item.id, ask: 'Fill the gap', prompt: es(t.gapped), sub: en(`${t.en}  ${t.cue}`), answerLang: 'es', placeholder: 'The missing word',
@@ -923,7 +923,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       return pickFallback(item, s, b, seed, taken);
     }
     case 'choose': {
-      const it = chooseItem(s, { seed: item.id, taught });
+      const it = chooseItem(s, { seed: item.id, taught, node: item.node });
       if (it) {
         return {
           type: 'mcq', key: item.id, ask: 'Choose the right form', prompt: es(it.gapped), sub: en(`${it.en}  ${it.cue}`),

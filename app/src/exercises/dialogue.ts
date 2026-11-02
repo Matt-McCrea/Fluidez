@@ -50,8 +50,13 @@ export function turnView(s: BankSentence, i: number): TurnView | null {
     .map((ls) => ls[i])
     .filter((x) => x !== es[i]);
   const acceptEn = s.acceptEn.map(turnLines).filter((ls) => ls.length === en.length).map((ls) => ls[i]);
+  // the focus span, moved to the turn it sits in; a turn that does not hold it carries none
+  let at = 0, cut = -1;
+  for (let k = 0; k <= i; k++) { cut = s.es.indexOf(es[k], at); if (cut < 0) break; at = cut + es[k].length; }
+  const f = s.focus;
+  const focus = f && cut >= 0 && f[0] >= cut && f[1] <= cut + es[i].length ? [f[0] - cut, f[1] - cut] as [number, number] : undefined;
   return {
-    sentence: { ...s, es: es[i], en: en[i], accept: [...new Set(pick(s.accept))], acceptEn: [...new Set(acceptEn.filter((x) => x !== en[i]))] },
+    sentence: { ...s, es: es[i], en: en[i], focus, accept: [...new Set(pick(s.accept))], acceptEn: [...new Set(acceptEn.filter((x) => x !== en[i]))] },
     context: es.slice(0, i).join('\n'),
     contextEn: en.slice(0, i).join('\n'),
     turn: i,

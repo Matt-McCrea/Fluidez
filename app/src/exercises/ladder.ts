@@ -31,7 +31,7 @@ import { fixedInTime, opening, opensClean, refusal, tenseOf } from './licence';
 import { itemId, rng, shuffle, shuffled } from './rng';
 import { changePerson, changeTense, form, goingTo, negate, pronominalise } from './reinflect';
 import {
-  SUBJECT_PRONOUNS, enSubject, enWords, low, parseClause, render, replaceCore, sentenceKey,
+  SUBJECT_PRONOUNS, enSubject, enWords, low, parseClause, render, replaceCore, sentenceKey, toToks,
   timeSpans, verbReadings, type Clause, type Tok,
 } from './spanish';
 import type { ChooseItem, TransformItem, TypeFormItem } from './types';
@@ -43,6 +43,8 @@ export interface LadderOptions {
   taught?: readonly TenseKey[];
   /** The names in the bank (licence.ts namesOf): a sentence that opens on a capital word that is neither one of these nor a plain word is not given a time word. */
   names?: ReadonlySet<string>;
+  /** The node practised: the gap falls on the row's focus span only when the row targets it. */
+  node?: string;
 }
 
 const LADDER_TENSES: readonly TenseKey[] = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional'];
@@ -96,7 +98,14 @@ function openPersons(c: Clause, en: string): Person[] {
 const CUE_PERSON: Readonly<Record<Person, string>> = { yo: 'yo', 'tú': 'tú', 'él/ella': 'usted', nosotros: 'nosotros', vosotros: 'vosotros', ellos: 'ustedes' };
 
 export interface GapAnalysis {
-  clause: Clause;
+  /** The parsed clause of a verb gap; absent when the gap is a particle taken from the focus span. */
+  clause?: Clause;
+  /** The sentence with the gap in it. */
+  gapped: string;
+  /** What the item id is keyed on: "inf:tense:person" of a verb, the word of a particle. */
+  key: string;
+  /** Distractors that are the nearest misses, when the gap knows which. */
+  near?: string[];
   /** The cue shown in brackets: "(comer)" or "(comer, tú)". */
   cue: string;
   /** The single form that fits, and every spelling of it that passes. */
@@ -106,11 +115,76 @@ export interface GapAnalysis {
   wrong: string[];
 }
 
-/** Can this sentence's verb be gapped with exactly one right answer? */
-export function analyseGap(s: BankSentence, taught?: readonly TenseKey[]): GapAnalysis | null {
+/* ---- the taught feature: a gap falls where the row's focus span is ------------------------------
+ * The bank row carries the characters the taught feature sits on (focus). A verb gap is only on
+ * target when the verb is inside it; otherwise the span is searched for a word of a small family
+ * table. The verb's distractors come from the engine; these come from the tables. */
+const POR_PARA = ['por', 'para', 'a', 'en', 'de', 'con'];
+const RELATIVES = ['que', 'quien', 'quienes', 'donde', 'cuando', 'como', 'cual'];
+const ARTICLE_SETS: readonly (readonly string[])[] = [['el', 'la', 'los', 'las'], ['un', 'una', 'unos', 'unas']];
+const CLITIC_SETS: readonly (readonly string[])[] = [['me', 'te', 'se', 'nos'], ['lo', 'la', 'los', 'las'], ['le', 'les', 'se']];
+const FAMILIES: ReadonlyArray<{ id: string; words: readonly string[]; options: (w: string) => string[] }> = [
+  { id: 'porpara', words: ['por', 'para'], options: () => POR_PARA },
+  { id: 'relative', words: RELATIVES, options: () => RELATIVES },
+  { id: 'article', words: ARTICLE_SETS.flat(), options: (w) => [...ARTICLE_SETS.find((x) => x.includes(w))!, ...ARTICLE_SETS.flat()] },
+  { id: 'clitic', words: CLITIC_SETS.flat(), options: (w) => [...CLITIC_SETS.filter((x) => x.includes(w)).flat(), ...CLITIC_SETS.flat()] },
+];
+const CLITIC_NODE = /pronoun|object|clitic/;
+
+/** The focus span a gap must fall in, or null when the sentence names none for this node: no span on
+ *  the row, or a node the row does not target (a new-word gap is about the word, not the grammar). */
+function focusOf(s: BankSentence, node?: string): [number, number] | null {
+  if (!s.focus || (node !== undefined && !s.targets.includes(node))) return null;
+  return s.focus[1] <= s.es.length ? s.focus : null;
+}
+
+/** Character offset of each token of `s.es`, found in order. */
+function tokenOffsets(es: string, ts: readonly Tok[]): number[] {
+  const out: number[] = [];
+  let at = 0;
+  for (const t of ts) {
+    const k = es.indexOf(t.core, at);
+    out.push(k);
+    if (k >= 0) at = k + t.core.length;
+  }
+  return out;
+}
+
+/** A gap on the one family word inside the focus span. Null unless exactly one word there belongs to a family. */
+function particleGap(s: BankSentence, span: [number, number], nodes: readonly string[]): GapAnalysis | null {
+  const ts = toToks(s.es);
+  const offs = tokenOffsets(s.es, ts);
+  const hits = ts.map((t, i) => (offs[i] >= span[0] && offs[i] + t.core.length <= span[1] && FAMILIES.some((f) => f.words.includes(low(t))) ? i : -1)).filter((i) => i >= 0);
+  if (hits.length !== 1) return null;
+  const i = hits[0];
+  const w = low(ts[i]);
+  const clitic = nodes.some((n) => CLITIC_NODE.test(n));
+  const fams = FAMILIES.filter((f) => f.words.includes(w));
+  const fam = (clitic && fams.find((f) => f.id === 'clitic')) || fams[0];
+  const wrong = [...new Set(fam.options(w))].filter((x) => x !== w);
+  return {
+    gapped: render(replaceCore(ts, i, '___')), key: w, cue: '', answer: w, accept: [w], wrong, near: wrong.slice(0, 3),
+  };
+}
+
+/** Can this sentence's taught feature be gapped with exactly one right answer? The verb, when the
+ *  row's focus span holds it (or names none); otherwise a word of the focus from the family tables.
+ *  `node`: the node practised; a row that does not target it has no focus for it. */
+export function analyseGap(s: BankSentence, taught?: readonly TenseKey[], node?: string): GapAnalysis | null {
   if (isMultiTurn(s)) return null;                       // one turn at a time: see gapTurn
+  const span = focusOf(s, node);
+  const v = verbGap(s, taught, span);
+  if (v || !span) return v;
+  return particleGap(s, span, node ? [node, ...s.targets] : s.targets);
+}
+
+function verbGap(s: BankSentence, taught: readonly TenseKey[] | undefined, span: [number, number] | null): GapAnalysis | null {
   const c = parseClause(s.es, s.en);
   if (!c || c.participle >= 0) return null;
+  if (span) {                                           // the verb must sit inside the taught feature
+    const at = tokenOffsets(s.es, c.toks)[c.verb];
+    if (at < span[0] || at + c.toks[c.verb].core.length > span[1]) return null;
+  }
   const { inf, tense, person } = c.choice;
   if (!LADDER_TENSES.includes(tense)) return null;
   const dict = inf;
@@ -140,7 +214,7 @@ export function analyseGap(s: BankSentence, taught?: readonly TenseKey[]): GapAn
     const f = form(inf, t, p);
     if (f && !open.has(f) && !verbReadings(f).some((a) => tenses.includes(a.tense) && persons.includes(a.person as Person))) wrong.add(f);
   }
-  return { clause: c, cue, answer: right, accept: bareAccepted(inf, tense, person), wrong: [...wrong] };
+  return { clause: c, gapped: gapped(c), key: `${inf}:${tense}:${person}`, cue, answer: right, accept: bareAccepted(inf, tense, person), wrong: [...wrong] };
 }
 
 function gapped(c: Clause): string {
@@ -149,9 +223,13 @@ function gapped(c: Clause): string {
 
 /** The first turn of a row (the reply first) whose verb gaps fairly, with
  *  the turns before it as context. A one-turn row is its own turn. */
-export function gapTurn(row: BankSentence, taught?: readonly TenseKey[]): { g: GapAnalysis; s: BankSentence; context: string } | null {
-  for (const v of turnViews(row)) {
-    const g = analyseGap(v.sentence, taught);
+export function gapTurn(row: BankSentence, taught?: readonly TenseKey[], node?: string): { g: GapAnalysis; s: BankSentence; context: string } | null {
+  // the turn that holds the taught feature first, then the others
+  const views = turnViews(row);
+  // a dialogue row with a focus span is gapped only in the turn that holds it
+  const held = views.filter((x) => x.sentence.focus !== undefined);
+  for (const v of row.focus && isMultiTurn(row) ? held : views) {
+    const g = analyseGap(v.sentence, taught, node);
     if (g) return { g, s: v.sentence, context: v.context };
   }
   return null;
@@ -159,33 +237,32 @@ export function gapTurn(row: BankSentence, taught?: readonly TenseKey[]): { g: G
 
 /** Ladder step 1: choose the form. */
 export function chooseItem(row: BankSentence, opts: LadderOptions = {}): ChooseItem | null {
-  const t = gapTurn(row, opts.taught);
+  const t = gapTurn(row, opts.taught, opts.node);
   if (!t) return null;
   const { g, s, context } = t;
-  const { inf, tense, person } = g.clause.choice;
   const r = rng(`${opts.seed ?? 0}|${s.id}|choose`);
   // prefer near misses: same tense other person, same person other tense
-  const near = g.wrong.filter((f) => verbReadings(f).some((a) => a.tense === tense || a.person === person));
+  const ch = g.clause?.choice;
+  const near = g.near ?? g.wrong.filter((f) => verbReadings(f).some((a) => a.tense === ch?.tense || a.person === ch?.person));
   const pool = near.length >= (opts.maxDistractors ?? 3) ? near : g.wrong;
   const ds = shuffle(pool, r).slice(0, opts.maxDistractors ?? 3);
   // with a taught list the near misses are person-only until more tenses are licensed: two at least, or no item
   if (ds.length < (opts.taught ? Math.min(2, opts.maxDistractors ?? 3) : 1)) return null;
   const { options, answer } = shuffled(g.answer, ds, r);
   return {
-    id: itemId('ladder', s.id, `choose:${inf}:${tense}:${person}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
-    kind: 'choose', gapped: withContext(context, gapped(g.clause)), en: s.en, cue: g.cue, options, answer,
+    id: itemId('ladder', s.id, `choose:${g.key}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
+    kind: 'choose', gapped: withContext(context, g.gapped), en: s.en, cue: g.cue, options, answer,
   };
 }
 
 /** Ladder step 2: type the form. */
-export function typeFormItem(row: BankSentence): TypeFormItem | null {
-  const t = gapTurn(row);
+export function typeFormItem(row: BankSentence, node?: string): TypeFormItem | null {
+  const t = gapTurn(row, undefined, node);
   if (!t) return null;
   const { g, s, context } = t;
-  const { inf, tense, person } = g.clause.choice;
   return {
-    id: itemId('ladder', s.id, `type:${inf}:${tense}:${person}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
-    kind: 'typeForm', gapped: withContext(context, gapped(g.clause)), en: s.en, cue: g.cue, answer: g.answer, accept: g.accept,
+    id: itemId('ladder', s.id, `type:${g.key}`), generator: 'ladder', sentenceId: s.id, nodes: [...s.targets],
+    kind: 'typeForm', gapped: withContext(context, g.gapped), en: s.en, cue: g.cue, answer: g.answer, accept: g.accept,
   };
 }
 
@@ -278,7 +355,7 @@ export function ladder(s: BankSentence, opts: LadderOptions = {}): Array<ChooseI
   const out: Array<ChooseItem | TypeFormItem | TransformItem> = [];
   const ch = chooseItem(s, opts);
   if (ch) out.push(ch);
-  const ty = typeFormItem(s);
+  const ty = typeFormItem(s, opts.node);
   if (ty) out.push(ty);
   out.push(...transformItems(s, opts));
   return out;

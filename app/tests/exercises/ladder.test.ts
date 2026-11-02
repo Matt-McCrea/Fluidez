@@ -202,3 +202,45 @@ describe('distractors only from taught tenses', () => {
     expect(chooseItem(S('Soy de Toronto.', "I'm from Toronto.", 'x'), { taught: [] })).toBeNull();
   });
 });
+
+describe('the gap falls on the taught feature (the row focus span)', () => {
+  const F = (es: string, en: string, at: string, targets: string[]) => {
+    const i = es.indexOf(at);
+    return BankSentence.parse({ id: 'foc', es, en, targets, focus: [i, i + at.length] });
+  };
+  test('por/para: the gap is the preposition, not the verb', () => {
+    const s = F('Voy a la tienda para comprar pan.', "I'm going to the shop to buy bread.", 'para', ['g:por-para-1']);
+    const c = chooseItem(s, { seed: 1 })!;
+    expect(c.gapped).toBe('Voy a la tienda ___ comprar pan.');
+    expect(c.options[c.answer]).toBe('para');
+    expect(c.options).toContain('por');
+    const t = typeFormItem(s)!;
+    expect(t.gapped).toBe('Voy a la tienda ___ comprar pan.');
+    expect(t.answer).toBe('para');
+  });
+  test('a clause other than the first: the focus still decides', () => {
+    const s = F('Cuando llegué, compré un regalo para mi madre.', 'When I arrived, I bought a gift for my mother.', 'para', ['g:por-para-1']);
+    expect(typeFormItem(s)!.gapped).toBe('Cuando llegué, compré un regalo ___ mi madre.');
+  });
+  test('articles and relatives come from their own tables', () => {
+    const a = F('Compré el libro ayer.', 'I bought the book yesterday.', 'el', ['g:gender-articles']);
+    expect(typeFormItem(a)!.gapped).toBe('Compré ___ libro ayer.');
+    const r = F('El libro que compré es bueno.', 'The book that I bought is good.', 'que', ['g:relative-que']);
+    const c = chooseItem(r, { seed: 2 })!;
+    expect(c.gapped).toBe('El libro ___ compré es bueno.');
+    expect(c.options[c.answer]).toBe('que');
+  });
+  test('a verb in the focus is still gapped as a verb', () => {
+    const s = F('Ayer comí pescado.', 'Yesterday I ate fish.', 'comí', ['g:preterite-regular']);
+    expect(typeFormItem(s)!.answer).toBe('comí');
+  });
+  test('a verb outside the focus with no table word in it: no gap at all', () => {
+    const s = F('Ayer comí pescado.', 'Yesterday I ate fish.', 'Ayer', ['g:time-words']);
+    expect(typeFormItem(s)).toBeNull();
+    expect(chooseItem(s)).toBeNull();
+  });
+  test('a node the row does not target ignores the focus', () => {
+    const s = F('Voy a la tienda para comprar pan.', "I'm going to the shop to buy bread.", 'para', ['g:por-para-1']);
+    expect(analyseGap(s, undefined, 'l:comprar')?.answer).toBe('voy');
+  });
+});
