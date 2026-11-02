@@ -15,7 +15,9 @@ const days = (u: string, lists: Array<{ focus?: string[]; lexemes?: string[] }>)
 const unitDoc = (id: string, lists: Array<{ focus?: string[]; lexemes?: string[] }>) => ({ id, band: 'A1', title: id, theme: 't', canDo: 'c', storyArc: 's', days: days(id, lists) });
 
 const NODES = ['g:x', 'g:y', 'l:a', 'l:b', 'l:c', 'l:aa'].map(nodeDoc);
-const U1 = unitDoc('u01', [{ focus: ['g:x'], lexemes: ['l:aa'] }, { lexemes: ['l:b'] }, { focus: ['g:y'] }, { lexemes: ['l:c'] }, {}, {}, {}]);
+/** the unit, teaching `first` on its first day (the learner has l:a, or l:aa once a migration renames it) */
+const u1 = (first: string) => unitDoc('u01', [{ focus: ['g:x'], lexemes: [first] }, { lexemes: ['l:b'] }, { focus: ['g:y'] }, { lexemes: ['l:c'] }, {}, {}, {}]);
+const U1 = u1('l:a');
 
 function files(over: { history?: ContentFiles['history']; units?: unknown[] } = {}): ContentFiles {
   const one = (d: unknown) => async () => d;
@@ -63,7 +65,7 @@ describe('boot over a learner the live site stored', () => {
   it('renames what a migration renamed, in the stored documents as well as in memory', async () => {
     const { kv } = await stored({ path: { owedNew: ['l:a'] } });
     const history = { migrations: { '/content/_migrations/0001.json': rename(1, 'l:a', 'l:aa') } };
-    const w = await boot({ kv, loader: new ContentLoader(files({ history })), now: () => AT, fixtures: false });
+    const w = await boot({ kv, loader: new ContentLoader(files({ history, units: [u1('l:aa')] })), now: () => AT, fixtures: false });
     expect(w.learner.isIntroduced('l:a')).toBe(false);
     expect(w.learner.isIntroduced('l:aa')).toBe(true);
     expect(w.ui.path).toMatchObject({ owedNew: ['l:aa'], contentVersion: 1 });
@@ -78,7 +80,7 @@ describe('boot over a learner the live site stored', () => {
     const was = structuredClone(kv.data.get('state'));
     const wasEvents = structuredClone(kv.data.get('events'));
     const history = { migrations: { '/content/_migrations/0001.json': rename(1, 'l:a', 'l:aa') } };
-    await boot({ kv, loader: new ContentLoader(files({ history })), now: () => AT, fixtures: false });
+    await boot({ kv, loader: new ContentLoader(files({ history, units: [u1('l:aa')] })), now: () => AT, fixtures: false });
     expect(kv.data.get('state.pre-content-0')).toEqual(was);
     expect(kv.data.get('events.pre-content-0')).toEqual(wasEvents);
     expect(kv.data.has('attempts.pre-content-0')).toBe(false);
@@ -109,7 +111,7 @@ describe('boot over a learner the live site stored', () => {
   it('drops a lesson that names what moved, after handing on the nodes it had begun', async () => {
     const { kv } = await stored({ session: lesson(['l:a', 'l:b']), known: ['g:x', 'l:a'], learning: ['l:b'] });
     const history = { migrations: { '/content/_migrations/0001.json': rename(1, 'l:a', 'l:aa') } };
-    const w = await boot({ kv, loader: new ContentLoader(files({ history })), now: () => AT + 60_000, fixtures: false });
+    const w = await boot({ kv, loader: new ContentLoader(files({ history, units: [u1('l:aa')] })), now: () => AT + 60_000, fixtures: false });
     expect(w.ui.session).toBeUndefined();
     expect(kv.data.has(SESSION_KEY)).toBe(false);
     // l:b was mid-lesson: it now has a card, so it comes back for review instead of vanishing
@@ -119,7 +121,7 @@ describe('boot over a learner the live site stored', () => {
   });
 
   it('drops a lesson planned for a day that is not where it was', async () => {
-    const moved = unitDoc('u01', [{ focus: ['g:x'], lexemes: ['l:aa'] }, { lexemes: ['l:b'] }, { focus: ['g:y'] }, { lexemes: ['l:c'] }, {}, {}, {}]);
+    const moved = u1('l:a');
     moved.days.unshift({ key: 'u01-d9', type: 'drill', focus: [], chunks: [], lexemes: [] });
     const legacy = { format: 1, units: { u01: moved.days.slice(1).map((d) => d.key) } };
     const { kv } = await stored({ session: lesson(['l:b']) });
