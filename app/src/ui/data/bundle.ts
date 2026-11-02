@@ -4,7 +4,7 @@
 import {
   buildContentIndex, buildCourse, type ContentIndex, type ContentSource, type Course,
 } from '../../compiler';
-import type { LibraryChapter } from '../../content/library';
+import { libraryChapter, type LibraryChapter } from '../../content/library';
 import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../../content/schema';
@@ -84,6 +84,7 @@ export class Bundle {
     // what the loader still lacks is its whole current list, not a change to the last one
     if (add.lacking && add.lacking.join('\u0000') !== (src.lacking ?? []).join('\u0000')) { src.lacking = add.lacking; changed = true; }
     if (changed) {
+      this.storyList = undefined;
       this.index = buildContentIndex(src, this.course);
       this.byEs = undefined;
       this.names = undefined;
@@ -119,6 +120,20 @@ export class Bundle {
 
   /** Every chapter of the story as the library lists it (title, hook, length), whichever are loaded; empty without a library. */
   get library(): readonly LibraryChapter[] { return this.source.library ?? []; }
+
+  private storyList?: readonly LibraryChapter[];
+  /**
+   * The story in order, with what a screen shows of each chapter, whether or not its text is loaded: the
+   * library's chapters, and any loaded chapter the library lacks (a course with no library: the loaded ones).
+   */
+  get story(): readonly LibraryChapter[] {
+    if (!this.storyList) {
+      const byId = new Map<string, LibraryChapter>((this.source.library ?? []).map((c) => [c.id, c]));
+      for (const c of this.chapters.values()) if (!byId.has(c.id)) byId.set(c.id, libraryChapter(c));
+      this.storyList = [...byId.values()].sort((a, b) => a.id.localeCompare(b.id));
+    }
+    return this.storyList;
+  }
 
   get empty(): boolean { return this.sentences.size === 0; }
 

@@ -5,15 +5,26 @@ import { Reader, wordCount } from '../blocks/read';
 import { Es, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { savedWordNodes } from './reference/model';
+import { bringChapter } from '../data/prepare';
 import type { PracticeSpec } from '../session/practice-spec';
+import { CHAPTER_OFFLINE, chaptersRead } from '../session/storyline';
 
 export function Story({ onPractise }: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const app = useApp();
   const { learner, bundle, ui } = app;
   const [open, setOpen] = useState<string | null>(null);
+  const [wait, setWait] = useState<'loading' | 'lacking' | null>(null);
   const [, force] = useState(0);
-  const unlocked = bundle.index.chapters.filter((c) => learner.ledger.hasSeen('chapter', c.id));
+  // from the library, whole: the chapters read do not depend on which units this tab has loaded
+  const unlocked = chaptersRead(bundle.story, (id) => learner.ledger.hasSeen('chapter', id));
   const chapter = open ? bundle.chapters.get(open) : undefined;
+  /** Open a chapter, fetching its text first when this tab does not have it. */
+  const show = async (id: string) => {
+    setOpen(id);
+    if (bundle.chapters.has(id)) return;
+    setWait('loading');
+    setWait(await bringChapter(bundle, id) === 'ready' ? null : 'lacking');
+  };
 
   if (chapter) {
     return (
@@ -35,25 +46,35 @@ export function Story({ onPractise }: { onPractise?: (spec: PracticeSpec) => voi
     );
   }
 
+  if (open) {
+    // asked for and not here yet: say which, never a blank page
+    return (
+      <main class="screen" id="main">
+        <button class="btn link" onClick={() => { setOpen(null); setWait(null); }}>← All chapters</button>
+        <Heading title={undash(bundle.story.find((c) => c.id === open)?.title ?? 'Story')} />
+        <p role="status" data-chapter-wait>{wait === 'lacking' ? CHAPTER_OFFLINE : 'Loading'}</p>
+      </main>
+    );
+  }
+
   return (
     <main class="screen" id="main">
       <Heading title="Story" lead="Tomás, Vale and the café in La Candelaria." />
       {unlocked.length ? (
         <ol class="chapters">
           {unlocked.map((c, i) => {
-            const full = bundle.chapters.get(c.id);
             const reads = learner.ledger.views('chapter', c.id).length;
             const secs = ui.state.readSeconds[c.id];
             const facts = [
-              full ? `${wordCount(full.text)} words` : '',
+              `${c.words} words`,
               secs ? `first read ${Math.floor(secs / 60)}:${String(Math.round(secs % 60)).padStart(2, '0')}` : '',
               reads > 1 ? `read ${reads} times` : '',
             ].filter(Boolean).join(' · ');
             return (
               <li key={c.id}>
-                <button class="row" onClick={() => setOpen(c.id)}>
+                <button class="row" onClick={() => void show(c.id)}>
                   <span class="num">{i + 1}</span>
-                  <span>{undash(full?.title ?? c.id)}{facts ? <><br /><span class="small">{facts}</span></> : null}</span>
+                  <span>{undash(c.title)}{facts ? <><br /><span class="small">{facts}</span></> : null}</span>
                   <span class="small">{learner.ledger.views('chapter', c.id).length > 1 ? 'Read again' : 'Read'}</span>
                 </button>
               </li>

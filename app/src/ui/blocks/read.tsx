@@ -14,6 +14,8 @@ import { seenWithEvent, slipOf } from '../session/attempt';
 import { questionCard } from '../session/cards';
 import { sentencesOf, splitBeats } from '../session/beats';
 import { blockHeading } from '../session/labels';
+import { CHAPTER_OFFLINE, storySoFar } from '../session/storyline';
+import { bringChapter } from '../data/prepare';
 import type { UiStore } from '../store/ui';
 import type { BlockProps } from './types';
 
@@ -184,9 +186,27 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   const [stage, setStage] = useState<'read' | 'questions' | 'after'>('read');
   const [took, setTook] = useState(0);
   const [right, setRight] = useState(0);
+  // a chapter this tab does not hold (a lesson picked up after a fresh open) is fetched, never shown blank
+  const [wait, setWait] = useState<'loading' | 'lacking' | null>(chapter ? null : 'loading');
+  useEffect(() => {
+    if (chapter) return undefined;
+    let live = true;
+    void bringChapter(run.bundle, block.chapter).then((r) => { if (live) setWait(r === 'ready' ? null : 'lacking'); });
+    return () => { live = false; };
+  }, []);
   const h = blockHeading(block, run.bundle);
-  if (!chapter) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
+  if (!chapter) {
+    return (
+      <>
+        <Heading {...h} />
+        <p role="status" data-chapter-wait>{wait === 'lacking' ? CHAPTER_OFFLINE : 'Loading'}</p>
+        <div class="actions"><Continue onClick={onDone} /></div>
+      </>
+    );
+  }
   const reread = block.kind === 'reread';
+  // a chapter the learner comes to without having read the one before it (placed part way, or catching up): where the story stands
+  const standing = reread ? undefined : storySoFar(run.bundle.story, chapter.id, (id) => run.learner.ledger.hasSeen('chapter', id));
   const firstTime = reread ? run.reads.get(chapter.id) ?? ui.state.readSeconds[chapter.id] : undefined;
   const questions = !reread ? chapter.questions
     : block.purpose === 'fluency' ? [] : (chapter.rereadQuestions.length ? chapter.rereadQuestions : chapter.questions);
@@ -209,6 +229,7 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
     return (
       <>
         <Heading title={h.title} lead={h.lead} />
+        {standing ? <p class="hook" data-story-so-far>{undash(standing)}</p> : null}
         <BeatReader
           chapter={chapter} questions={questions} bundle={run.bundle} ui={ui} keyPrefix={`${block.kind}:${chapter.id}`}
           onQuestion={(i, o) => { if (o.correct) setRight((n) => n + 1); logComprehension(run, chapter, questions[i], o); }}

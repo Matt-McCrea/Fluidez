@@ -36,6 +36,14 @@ describe('the shipped library', () => {
     expect(Library.safeParse(JSON.parse(serializeLibrary(lib))).success).toBe(true);
   });
 
+  it('counts words the way the reading screens do, so a list and a chapter agree', () => {
+    const lib = readLibrary(CONTENT)!;
+    for (const c of lib.chapters) {
+      const text = (JSON.parse(readFileSync(join(CONTENT, 'story', `${c.id}.json`), 'utf8')) as { text: string }).text;
+      expect(c.words, c.id).toBe((text.match(/\p{L}+/gu) ?? []).length);
+    }
+  });
+
   it('is imported on its own, since no loader glob covers an underscore folder', () => {
     expect(Object.keys(CONTENT_FILES.library ?? {}).length).toBeGreaterThan(0);
   });

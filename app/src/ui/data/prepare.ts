@@ -34,3 +34,11 @@ export async function prepare(bundle: Bundle, learner: Pick<Learner, 'ledger'>, 
 export function prepareFor(app: { bundle: Bundle; learner: Pick<Learner, 'ledger'>; ui: { path: PathState; state: { placedAt?: number } } }): Promise<boolean> {
   return prepare(app.bundle, app.learner, app.ui.path, { placedAt: app.ui.state.placedAt });
 }
+
+/** A chapter in hand, fetched if it is not: 'ready', or 'lacking' when this device could not get it (the loader remembers, and asks again). */
+export async function bringChapter(bundle: Bundle, id: string): Promise<'ready' | 'lacking'> {
+  if (!bundle.chapters.has(id)) {
+    try { await bundle.ensureChapters([id]); } catch { /* lacking, below */ }
+  }
+  return bundle.chapters.has(id) ? 'ready' : 'lacking';
+}

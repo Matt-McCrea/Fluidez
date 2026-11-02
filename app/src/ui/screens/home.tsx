@@ -11,6 +11,9 @@ import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
 import { isResumable, streakStatus, type CanDoMark, type CheckpointResult, type SavedSession } from '../store/ui';
 import { canDoGroups } from './progress';
+import type { Bundle } from '../data/bundle';
+import type { Learner } from '../../learner';
+import { chapterBefore, chaptersRead } from '../session/storyline';
 
 /** "Only five minutes?": the minimum tier under a five minute cap. */
 export interface QuickStart { tier: 'minimum'; cap: number; quick: true }
@@ -59,6 +62,35 @@ export function storyBeforeTheFirstChapter(path: { unit: number }, placedAt: num
   return path.unit === 0 && !placedAt ? 'The story starts in Bogotá, at the door of a café. You\'ll read the first chapter soon.' : undefined;
 }
 
+/**
+ * The story so far, on Home. What the learner has read, from the library, so it does not depend on which
+ * units are loaded. Before any chapter: a learner who started at the beginning is told where the story
+ * starts, a placed one is told where it stands at their unit in the words of the chapter before it, and
+ * anyone else is told nothing, since there is nothing true to say.
+ */
+export function StoryCard({ bundle, learner, path, placedAt, onStory }: { bundle: Bundle; learner: Pick<Learner, 'ledger'>; path: { unit: number }; placedAt: number | undefined; onStory: () => void }) {
+  const seen = (id: string) => learner.ledger.hasSeen('chapter', id);
+  const read = chaptersRead(bundle.story, seen);
+  const last = read[read.length - 1];
+  const start = last ? undefined : storyBeforeTheFirstChapter(path, placedAt);
+  // a placed learner's first chapter is the first one at or after their unit
+  const first = !last && !start && placedAt ? bundle.story.find((c) => (bundle.course.unitIndex.get(c.unit) ?? Infinity) >= placedAt) : undefined;
+  const standing = first ? chapterBefore(bundle.story, first.id, seen) : undefined;
+  if (!last && !start && !standing) return null;
+  return (
+    <section class="card" aria-labelledby="story-title">
+      <p class="ask" id="story-title">The story so far</p>
+      {last ? (
+        <>
+          <p>{read.length} {read.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{undash(last.title)}</em></p>
+          <p class="hook">{undash(last.hook)}</p>
+          <button class="btn quiet" onClick={onStory}>Read again</button>
+        </>
+      ) : start ? <p>{start}</p> : <p class="hook">{undash(standing!.hook)}</p>}
+    </section>
+  );
+}
+
 export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?: () => void; onLook?: (node: string) => void; onStart: (mode: Mode, o?: SavedSession | QuickStart) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, ui, bundle } = app;
@@ -86,9 +118,6 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
     } catch { return []; }
   }, [learner.sessionIndex, ui.path]);
   const unit = bundle.course.units[ui.path.unit];
-  const chaptersRead = bundle.index.chapters.filter((c) => learner.ledger.hasSeen('chapter', c.id));
-  const last = chaptersRead[chaptersRead.length - 1];
-  const lastFull = last ? bundle.chapters.get(last.id) : undefined;
   const short = learner.settings.tier === 'minimum';
   const goalNote = goalLine(ui.state.goal, unit);
   const { days, keptWithDayOff } = streakStatus(ui.state, today);
@@ -100,7 +129,6 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
   const lastDay = !!unit && ui.path.day === unit.days.length - 1;
   const placedAt = ui.state.placedAt ?? 0;
   const justFinished = finishedWeekLine(bundle.course.units, ui.path, placedAt, ui.state.canDos, ui.state.checkpoints);
-  const beforeChapters = storyBeforeTheFirstChapter(ui.path, placedAt);
 
   return (
     <main class="screen" id="main">
@@ -183,18 +211,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
         </section>
       ) : null}
 
-      {lastFull || beforeChapters ? (
-        <section class="card" aria-labelledby="story-title">
-          <p class="ask" id="story-title">The story so far</p>
-          {lastFull ? (
-            <>
-              <p>{chaptersRead.length} {chaptersRead.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{undash(lastFull.title)}</em></p>
-              <p class="hook">{undash(lastFull.hook)}</p>
-              <button class="btn quiet" onClick={onStory}>Read again</button>
-            </>
-          ) : <p>{beforeChapters}</p>}
-        </section>
-      ) : null}
+      <StoryCard bundle={bundle} learner={learner} path={ui.path} placedAt={ui.state.placedAt} onStory={onStory} />
     </main>
   );
 }
