@@ -143,6 +143,18 @@ function stillTu(ts: readonly Tok[]): boolean {
   });
 }
 
+/** "Te veo cansado": the adjective after the verb is about the "you", so its word must agree with it. "La veo cansado" and "Los veo cansado" are nobody. */
+function agreesWithListener(ts: readonly Tok[]): boolean {
+  return ts.every((t, i) => {
+    const w = low(t);
+    if (!/^(lo|la|los|las|le|les)$/.test(w) || !verbReadings(low(ts[i + 1])).some((a) => LISTENER_VERBS.has(a.inf))) return true;
+    const j = pastIntensifiers(ts, i + 2);
+    const adj = ts[j] ? low(ts[j]) : '';
+    if (!adj || !adjectiveAt(ts, j)) return true;
+    return /^(los|las|les)$/.test(w) === /s$/.test(adj) && (/^le/.test(w) || /^la/.test(w) === /as?$/.test(adj));
+  });
+}
+
 function vosotrosFrom(es: string, en: string): string | null {
   const c = parseClause(es, en);
   if (!c || c.choice.person !== 'ellos') return null;
@@ -239,7 +251,7 @@ export function registerVariants(es: string, en: string): Variant[] {
       if (c.subject >= 0) ts = replaceCore(ts, c.subject, to);
       const skip = new Set<number>(c.reflexive ? [c.proclitics[c.proclitics.length - 1]] : []);
       if (to === 'tú') { out.push({ es: render(ts), register: to }); continue; }
-      for (const v of swapNonSubjectYou(ts, to, skip)) if (!stillTu(v)) out.push({ es: render(v), register: to });
+      for (const v of swapNonSubjectYou(ts, to, skip)) if (!stillTu(v) && agreesWithListener(v)) out.push({ es: render(v), register: to });
     }
     if (mode === 'open' || mode === 'plural') {
       const ustedesForm = fromReg === 'ustedes' ? es : out.find((o) => o.register === 'ustedes')?.es;
@@ -258,7 +270,7 @@ export function registerVariants(es: string, en: string): Variant[] {
     for (const to of wants) {
       if (to === 'tú') continue;
       for (const v of swapNonSubjectYou(ts, to, new Set())) {
-        if (stillTu(v) || (dativeOnly && v.some((t, i) => low(ts[i]) === 'te' && !/^les?$/.test(low(t))))) continue;
+        if (stillTu(v) || !agreesWithListener(v) || (dativeOnly && v.some((t, i) => low(ts[i]) === 'te' && !/^les?$/.test(low(t))))) continue;
         out.push({ es: render(v), register: to });
       }
     }

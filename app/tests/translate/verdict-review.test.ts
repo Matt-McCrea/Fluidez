@@ -118,6 +118,11 @@ describe('one "you" all along', () => {
   test('with a clause that cannot follow, no register is made rather than half of one', () => {
     expect(forms('Tú te callas ya.', 'You shut up now.').filter((f) => /^Tú (lo|la|le|los|las|les) /.test(f))).toEqual([]);
   });
+  test.each<Row>([
+    ['Te veo cansado.', 'You look tired to me.', 'La veo cansado.'],
+    ['Te veo cansado.', 'You look tired to me.', 'Los veo cansado.'],
+    ['Nunca te dejaré solo en esto, Tomás.', "I'll never leave you alone in this, Tomás.", 'Nunca la dejaré solo en esto, Tomás.'],
+  ])('the word for you agrees with what is said of you: %s is not "%s"', (es, en, input) => { expect(run([es, en, input]).pass).toBe(false); });
   test('and a whole register is untouched', () => {
     expect(run(['Te dije que no.', 'I told you no.', 'Le dije que no.']).pass).toBe(true);
     expect(run(['Te veo cansado.', 'You look tired to me.', 'Lo veo cansado.']).pass).toBe(true);
