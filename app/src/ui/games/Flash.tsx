@@ -44,7 +44,7 @@ function Ready({ deck, best, onStart, onExit }: { deck: FlashDeck; best: number 
       <section class="card" aria-label="How it works">
         <p>{deck.kind === 'forms' ? 'You see the meaning and type the form. It counts the moment it is right, so there is no Enter to press.' : 'You see a word and tap what it means, or the other way round.'}</p>
         <p>A wrong answer takes {WRONG_SECONDS[KIND_OF(deck)]} seconds off the clock. Passing takes {SKIP_SECONDS} and shows you the answer, so if you don't know it, pass.</p>
-        <p class="small">It only uses what you already know. It is practice: your review schedule and today's plan stay as they are.</p>
+        <p class="small">It only uses what you have remembered after a gap. It is practice: your review schedule and today's plan stay as they are.</p>
         {best !== undefined ? <p class="big-number" data-best>{best} <span>{UNIT(deck)} is your best</span></p> : <p data-best>No score here yet.</p>}
         <div class="actions"><button class="btn primary" data-start onClick={onStart}>Start</button></div>
       </section>

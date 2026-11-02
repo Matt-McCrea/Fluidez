@@ -78,10 +78,11 @@ export function armedTenses(learner: Learner, events: readonly ReviewEvent[]): T
 }
 
 /** The decks that are open now, in the order they are offered. Nothing is listed that is not open. */
-export function openDecks(learner: Learner, bundle: Bundle, events: readonly ReviewEvent[] = learner.events()): FlashDeck[] {
+export function openDecks(learner: Learner, bundle: Bundle, events?: readonly ReviewEvent[]): FlashDeck[] {
   const out: FlashDeck[] = [];
+  // the event log is copied whole to be read, so it is only asked for once there is a deck it could open
   if (ownedVerbs(learner).length >= MIN_VERBS) {
-    for (const t of armedTenses(learner, events)) out.push({ id: t, title: tenseShort(t), kind: 'forms', tense: t });
+    for (const t of armedTenses(learner, events ?? learner.events())) out.push({ id: t, title: tenseShort(t), kind: 'forms', tense: t });
   }
   if (ownedWords(learner, bundle).length >= MIN_WORDS) out.push({ id: WORDS_DECK, title: 'Words', kind: 'words' });
   return out;

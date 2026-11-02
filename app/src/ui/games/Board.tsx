@@ -35,7 +35,7 @@ export function Board({ onPlay }: { onPlay: (c: GameChoice) => void }) {
       {shelf.flash.length ? (
         <div class="tile" data-game="flash">
           <p class="tile-name">Relámpago</p>
-          <p>Sixty seconds, as many as you can. It only uses what you already know.</p>
+          <p>Sixty seconds, as many as you can. It only uses what you have remembered after a gap.</p>
           <div class="decks">
             {shelf.flash.map((t) => (
               <button key={t.deck.id} class="btn quiet deck" data-deck={t.deck.id} onClick={() => onPlay({ game: 'flash', deck: t.deck })}>

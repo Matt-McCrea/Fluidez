@@ -33,7 +33,6 @@ export function Corrido({ onExit }: { onExit: () => void }) {
       <main class="screen" id="main">
         <button class="btn link" onClick={onExit}>Back</button>
         <Heading title="De corrido" lead="No chapter is ready to read again just now." />
-        <p>A chapter comes back to this a week after you first read it, and rests for a month after it has been used here.</p>
       </main>
     );
   }
