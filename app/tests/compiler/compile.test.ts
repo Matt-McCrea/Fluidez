@@ -188,6 +188,8 @@ describe('shortage', () => {
 
   test('when no unseen gated sentence is left, a review is served bare (logged), never in a seen sentence', () => {
     const s = setup();
+    // a node with a pair to ask about: one with none is reviewed with its script instead (contrast.test.ts)
+    Object.assign(s.course.nodes.get('g:g1')!, { es: 'Frase uno.', en: 'Sentence one.' });
     s.L.introduce('g:g1', { results: [true, true, true], at: T0 });
     // mark every sentence containing g:g1 as seen
     for (const id of [...(s.content.byTarget.get('g:g1') ?? []), ...(s.content.byRequire.get('g:g1') ?? [])]) s.L.ledger.markSeen('sentence', id, { at: T0 });

@@ -7,6 +7,7 @@ import {
   type ContentIndex, type Course, type SessionPlan, type TeachBlock,
 } from '../../src/compiler';
 import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
+import { alignedPairs } from '../../src/exercises/pairs';
 import { Learner } from '../../src/learner';
 import { PROFILES } from '../../tools/sim/profiles';
 import { simulateProfile } from '../../tools/sim/run';
@@ -165,5 +166,105 @@ describe('F1: a review day goes back to a contrast it lists', () => {
     });
     expect(walked).toBeGreaterThan(100);
     expect(back.size).toBeGreaterThan(0);
+  });
+});
+
+describe('F2: a due contrast is reviewed with its script, a different item each session', () => {
+  /** A learner who has both cards of a contrast (it has no bank sentence of its own, as in the real course) and lets them fall due. */
+  function dueContrast(cards: 'both' | 'receptive' = 'both') {
+    const { course, content } = corpus({ seed: 2 });
+    const x = [...course.nodes.values()].find((n) => n.kind === 'contrast')!.id;
+    expect(content.byTarget.get(x) ?? []).toEqual([]);
+    expect(content.byRequire.get(x) ?? []).toEqual([]);
+    let t = T0;
+    const L = Learner.fresh({ now: () => t });
+    L.seedKnown(x, {
+      at: T0, productive: cards === 'both',
+      receptive: { stability: 3, dueAt: T0 + DAY },
+      productiveCard: cards === 'both' ? { stability: 3, dueAt: T0 + DAY } : null,
+    });
+    t = T0 + 30 * DAY;
+    const warm = () => {
+      const p = compileSession({ learnerId: 'rev', learner: L, path: initialPath(), course, content, now: t });
+      const w = p.blocks[0];
+      if (w.kind !== 'warmup') throw new Error('no warm-up');
+      return { plan: p, item: w.items.find((i) => i.node === x) };
+    };
+    return { x, L, warm, script: content.scripts.get(x)!, next: () => { L.startSession(t); } };
+  }
+
+  test('the review is an item of its script, not a bare card, and the plan does not call it one', () => {
+    const { x, warm, script } = dueContrast();
+    const { plan, item } = warm();
+    expect(item, 'the due contrast is in the warm-up').toBeDefined();
+    expect(item!.sentence).toBeUndefined();
+    expect(item!.script, 'no script item named').toBeDefined();
+    expect(item!.script!.index).toBeLessThan(item!.script!.op === 'readAndPick' ? script.readAndPick : script.yourTurn);
+    expect(plan.diagnostics.some((d) => d.code === 'bareReview' && d.node === x)).toBe(false);
+    expect(item!.targets).toEqual([x]);
+    expect(item!.scoring).toBe('review');
+  });
+
+  test('a receptive card is asked read-and-pick, a productive one your-turn', () => {
+    const both = dueContrast().warm().item!;
+    expect(both.direction).toBe('productive');
+    expect(both.script?.op).toBe('yourTurn');
+    const recv = dueContrast('receptive').warm().item!;
+    expect(recv.direction).toBe('receptive');
+    expect(recv.script?.op).toBe('readAndPick');
+  });
+
+  test('the item changes from one session to the next, and goes round the whole script', () => {
+    const { warm, next, script } = dueContrast();
+    const seen: number[] = [];
+    for (let k = 0; k < script.yourTurn; k++) {
+      next();
+      seen.push(warm().item!.script!.index);
+    }
+    for (let k = 1; k < seen.length; k++) expect(seen[k], `session ${k} serves the item the one before did`).not.toBe(seen[k - 1]);
+    expect(new Set(seen).size).toBe(script.yourTurn);
+  });
+
+  test('every other rule still holds on a walk where contrasts come due', () => {
+    let reviews = 0;
+    for (const seed of SEEDS.slice(0, 3)) {
+      const { plans } = walk({ seed, profile: PROFILES.average, days: 150, check: (s) => { for (const c of ALL_CHECKS) c(s); } });
+      for (const { plan } of plans) {
+        const w = plan.blocks[0];
+        if (w.kind === 'warmup') reviews += w.items.filter((i) => i.script).length;
+      }
+    }
+    expect(reviews).toBeGreaterThan(5);
+  });
+});
+
+describe('F2: no due card in the real course is left to be shown and never graded', () => {
+  test('every contrast, and every node with no pair to ask about, comes due as a sentence or a script item, never as a bare card', () => {
+    const { course, content } = realCourse(3);
+    const nodes = [...course.nodes.values()].filter((n) => n.kind === 'contrast' || (n.kind !== 'cando' && alignedPairs(n).length === 0));
+    expect(nodes.filter((n) => n.kind === 'contrast')).toHaveLength(94);
+    expect(nodes.length).toBeGreaterThanOrEqual(130);
+    const bare: string[] = [];
+    let scripted = 0;
+    for (let i = 0; i < nodes.length; i += 10) {
+      const batch = nodes.slice(i, i + 10);
+      let t = T0;
+      const L = Learner.fresh({ now: () => t });
+      for (const n of batch) {
+        L.seedKnown(n.id, { at: T0, productive: true, receptive: { stability: 3, dueAt: T0 + DAY }, productiveCard: { stability: 3, dueAt: T0 + DAY } });
+      }
+      t = T0 + 30 * DAY;
+      const plan = compileSession({ learnerId: 'stuck', learner: L, path: initialPath(), course, content, now: t });
+      const w = plan.blocks[0];
+      if (w.kind !== 'warmup') throw new Error('no warm-up');
+      for (const n of batch) {
+        const it = w.items.find((x) => x.targets?.includes(n.id));
+        if (!it) { bare.push(`${n.id} not served`); continue; }
+        if (it.script) scripted++;
+        if (!it.sentence && !it.script) bare.push(n.id);
+      }
+    }
+    expect(bare).toEqual([]);
+    expect(scripted).toBeGreaterThanOrEqual(130);
   });
 });

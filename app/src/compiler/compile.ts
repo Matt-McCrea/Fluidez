@@ -24,6 +24,7 @@
 //    there is no fallback to ungated or seen content
 //  - deterministic: the RNG seed is learner id + session index
 import { lackKey, lacksCourse } from '../content/kinds';
+import { alignedPairs } from '../exercises/pairs';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
 import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
@@ -193,6 +194,8 @@ interface ReviewGroup {
   targets: NodeId[];
   sentence?: SentenceRef;
   reused: boolean;
+  /** a contrast's own script item, when there is no sentence (see ReviewItem.script) */
+  script?: ReviewItem['script'];
 }
 
 interface Decision {
@@ -465,6 +468,10 @@ class Compiler {
         novel: !g.reused, ...(g.reused ? { reused: true } : {}), scoring: 'review', credit: creditOf(node, s),
       };
     }
+    if (g.script) {
+      const { op, index } = g.script;
+      return { op: 'review', id: `rv:${node}:${g.direction}:${op === 'readAndPick' ? 'rp' : 'yt'}${index}`, node, targets: [node], direction: g.direction, script: g.script, novel: false, scoring: 'review', credit: [node] };
+    }
     this.diag({ code: 'bareReview', block: 'warmup', node, what: 'sentence', wanted: 1, got: 0, message: `no usable sentence for ${node}: bare card` });
     return { op: 'review', id: `rv:${node}:${g.direction}:bare`, node, targets: [node], direction: g.direction, novel: false, scoring: 'review', credit: [node] };
   }
@@ -546,12 +553,28 @@ class Compiler {
           if (extras.length >= MULTI_REVIEW_MAX - 1 && fresh === 1) break outer;
         }
       }
-      if (!best) { groups.push({ direction: card.direction, targets: [card.node], reused: false }); continue; }
+      if (!best) { groups.push({ direction: card.direction, targets: [card.node], reused: false, script: this.scriptReview(card.node, card.direction) }); continue; }
       reserved.add(best.s.id);
       for (const x of best.extras) pool.delete(x);
       groups.push({ direction: card.direction, targets: [card.node, ...best.extras], sentence: best.s, reused: best.reused });
     }
     return groups;
+  }
+
+  /**
+   * The script item a due contrast is reviewed with (as is any other node that has no sentence left and no pair to ask about):
+   * read-and-pick for a receptive card, your-turn for a productive one (the other when the script has none of that sort), and the
+   * session number moves it on, so two sessions in a row never serve the same one.
+   */
+  private scriptReview(node: NodeId, direction: Direction): ReviewItem['script'] {
+    const n = this.course.nodes.get(node);
+    // a node with no pair to ask about has nothing else to be reviewed with once its sentences are used: the card would only be shown, and never graded
+    if (kindOf(node, this.course.nodes) !== 'contrast' && (!n || alignedPairs(n).length)) return undefined;
+    const sc = this.content.scripts.get(node);
+    if (!sc) return undefined;
+    const want = direction === 'receptive' ? 'readAndPick' : 'yourTurn';
+    const op = sc[want] ? want : want === 'readAndPick' ? 'yourTurn' : 'readAndPick';
+    return sc[op] ? { op, index: (hash32(node) + this.sessionIndex) % sc[op] } : undefined;
   }
 
   // ---------------------------------------------------------------- content selection

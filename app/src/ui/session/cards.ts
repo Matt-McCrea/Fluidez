@@ -504,6 +504,8 @@ export function lexemeTypeCard(key: string, node: NodeId, b: Bundle, exampleId?:
 export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pickSpanish' | 'cloze' = 'meaning', session?: number, taught?: readonly TenseKey[]): Card {
   const s = b.sentence(item.sentence);
   const seg = b.segments(item.node)[0];
+  // a contrast has no sentence of its own, and a node with no pair to ask about has nothing else once its sentences are used: both are asked with one of their script's items
+  if (!s && (item.script || !seg || b.node(item.node)?.kind === 'contrast')) { const c = scriptReviewCard(item, b); if (c) return c; }
   const title = b.title(item.node);
   const fmt: ReceptiveFormat = item.direction === 'receptive'
     ? (variant === 'pickSpanish' ? 'pickEs' : receptiveFormat(item.node, session ?? item.id))
@@ -556,6 +558,24 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     type: 'type', key: item.id, ask: SAY, prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
     check: chunkCheck([seg.es, ...seg.accept]), retry: true, why: `"${seg.en}" is ${seg.es}`,
   };
+}
+
+/**
+ * The review card of a node asked with its script: the script item the plan names (`item.script`), or, where nothing names one
+ * (the recap, free practice), one picked by the card's key. Never a card that only shows, since that is never graded.
+ */
+function scriptReviewCard(item: ReviewItem, b: Bundle): Card | undefined {
+  const script = b.scripts.get(item.node);
+  if (!script) return undefined;
+  const op = item.script?.op ?? (item.direction === 'receptive' ? 'readAndPick' : 'yourTurn');
+  const count = op === 'readAndPick' ? script.readAndPick.length : script.yourTurn.length;
+  const index = item.script?.index ?? (count ? hash32(item.id) % count : 0);
+  const card = count ? scriptCard({ op, id: item.id, node: item.node, index, scoring: item.scoring, credit: item.credit }, script) : undefined;
+  if (card) return card;
+  // the script has none of that sort: the other sort
+  const other = op === 'readAndPick' ? 'yourTurn' : 'readAndPick';
+  const n = other === 'readAndPick' ? script.readAndPick.length : script.yourTurn.length;
+  return n ? scriptCard({ op: other, id: item.id, node: item.node, index: hash32(item.id) % n, scoring: item.scoring, credit: item.credit }, script) : undefined;
 }
 
 // ---------------------------------------------------------------- new words and phrases

@@ -146,11 +146,12 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
     const unit = unitOf.get(n)!;
     for (let j = 0; j < count; j++) {
       const req = new Set<NodeId>([n]);
-      // 3-6 other nodes known by this point, biased toward recent material
+      // 3-6 other nodes known by this point, biased toward recent material (never a contrast: no real row requires one, R11)
       const others = r.int(3, 6);
       for (let t = 0; t < others && i > 0; t++) {
         const back = Math.floor(Math.pow(r.next(), 2) * i);
-        req.add(order[i - 1 - Math.min(back, i - 1)]);
+        const other = order[i - 1 - Math.min(back, i - 1)];
+        if (kind(other) !== 'contrast') req.add(other);
       }
       if (k === 'contrast') for (const s of byId.get(n)?.contrasts ?? []) req.add(s);
       const q = r.next() < 0.3;

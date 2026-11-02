@@ -280,14 +280,14 @@ function bandCells(r: BandRow): string[] {
 }
 
 const RUN_HEAD = ['profile', 'tier', 'sessions', 'course done', 'unit reached', 'UNINTENDED REPEATS', 'item rep.60d %', '(deliberate)',
-  'fresh sents', 'reused ctx', 'review items', 'multi %', 'targets/item', 'bare', 'shortages', 'recv-only', 'suspended', 'learned', 'owed'];
+  'fresh sents', 'reused ctx', 'review items', 'multi %', 'targets/item', 'bare', 'script', 'shortages', 'recv-only', 'suspended', 'learned', 'owed'];
 function runCells(r: ProfileRun): string[] {
   const unintended = Object.values(r.unintendedRepeats).reduce((a, b) => a + b, 0);
   const ri = r.reviewItems;
   return [r.profile, r.tier, String(r.sessions.length), fmt(r.courseFinishedDay), String(r.finalUnit),
     `${unintended}${unintended ? ' ✗' : ''}`, pct(r.itemRepeats60, r.itemServes).toFixed(2), String(r.itemRepeats60Deliberate),
     String(r.freshSentences), String(r.reusedSentences), String(ri.items), pct(ri.multi, ri.items).toFixed(1),
-    (ri.items ? ri.targets / ri.items : 0).toFixed(2), String(ri.bare),
+    (ri.items ? ri.targets / ri.items : 0).toFixed(2), String(ri.bare), String(ri.script),
     String(sum(Object.values(r.shortages))), String(r.receptiveOnly), String(r.suspendedReceptive), String(r.learned), String(r.owedAtEnd)];
 }
 

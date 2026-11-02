@@ -242,6 +242,11 @@ export interface ReviewItem extends ItemBase {
   direction: Direction;
   /** bank sentence id; undefined = bare card (no fresh context left: a 'bareReview' diagnostic is logged) */
   sentence?: string;
+  /**
+   * A contrast has no bank sentence of its own (no row requires one), so it is reviewed with one of its script's items:
+   * read-and-pick for a receptive card, your-turn for a productive one, a different item each session. Never a bare card.
+   */
+  script?: { op: 'readAndPick' | 'yourTurn'; index: number };
   /** true when the sentence is new to the learner (a recombination) */
   novel: boolean;
   /** a review context re-served after ≥ REVIEW_REUSE_DAYS: ledgered deliberate, reason REVIEW_REUSE_REASON */

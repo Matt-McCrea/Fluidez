@@ -71,6 +71,18 @@ describe('prepare', () => {
     expect(first.chapters.has('ch140')).toBe(true);
   }, 120_000);
 
+  it('brings the script of a due node that has no pair to ask about, whatever the window', async () => {
+    const bundle = await new ContentLoader().load({ unit: 29 });
+    const learner = Learner.fresh({ now: () => AT });
+    // an A2 grammar point whose forms give nothing to ask: once its sentences are used, its script is all its review has
+    const node = 'g:written-register-a2';
+    expect(bundle.segments(node)).toEqual([]);
+    learner.seedKnown(node, { at: AT - 90 * DAY, productive: true, receptive: { stability: 5, dueAt: AT - DAY }, productiveCard: { stability: 5, dueAt: AT - DAY } });
+    expect(bundle.scripts.has(node)).toBe(false);
+    await prepare(bundle, learner, { ...initialPath(), unit: 29 });
+    expect(bundle.scripts.has(node)).toBe(true);
+  }, 120_000);
+
   it('does nothing the second time, and says whether it brought anything', async () => {
     const bundle = await new ContentLoader().load({ unit: 29 });
     const learner = Learner.fresh({ now: () => AT });

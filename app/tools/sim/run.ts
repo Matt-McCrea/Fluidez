@@ -148,8 +148,8 @@ export interface ProfileRun {
   underReviewed: Record<string, { judged: number; under4: number }>;
   underReviewedRecv: Record<string, { judged: number; under3: number }>;
   owedAtEnd: number;
-  /** warm-up review items: total, multi-target, targets covered, reused contexts, bare */
-  reviewItems: { items: number; multi: number; targets: number; reused: number; bare: number };
+  /** warm-up review items: total, multi-target, targets covered, reused contexts, bare, and those that are one of a script's items */
+  reviewItems: { items: number; multi: number; targets: number; reused: number; bare: number; script: number };
   /** nodes introduced receptive-only; receptive cards suspended at the end (recognition-only maintenance) */
   receptiveOnly: number;
   suspendedReceptive: number;
@@ -188,7 +188,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     profile: profile.name, tier: opts.tier, days: opts.days, sessions: [], bandStart: {}, bandFinish: {}, finalUnit: 0,
     demand: {}, shortages: {}, shortageKinds: {}, bareReviews: {}, nodeDemand: {}, unintendedRepeats: {},
     itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, underReviewedRecv: {}, owedAtEnd: 0,
-    reviewItems: { items: 0, multi: 0, targets: 0, reused: 0, bare: 0 }, receptiveOnly: 0, suspendedReceptive: 0, learned: 0,
+    reviewItems: { items: 0, multi: 0, targets: 0, reused: 0, bare: 0, script: 0 }, receptiveOnly: 0, suspendedReceptive: 0, learned: 0,
     freshSentences: 0, reusedSentences: 0,
     contrastsListed: new Set(course.units.flatMap((u) => u.days.flatMap((d) => d.focus)).filter((n) => course.nodes.get(n)?.kind === 'contrast')).size,
     gradeCounts: { again: 0, hard: 0, good: 0, easy: 0 }, opCounts: {}, retention: {},
@@ -380,7 +380,8 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
           run.reviewItems.targets += n;
           if (n > 1) run.reviewItems.multi++;
           if (it.reused) run.reviewItems.reused++;
-          if (!it.sentence) run.reviewItems.bare++;
+          if (it.script) run.reviewItems.script++;
+          else if (!it.sentence) run.reviewItems.bare++;
         }
         break;
       case 'learn':
