@@ -26876,7 +26876,9 @@
     "id": "u59-1020",
     "es": "¿Vos querés tinto o aguapanela?\nTinto, que hace frío.",
     "en": "Do you want black coffee or aguapanela? (vos)\nBlack coffee, it's cold.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres tinto o aguapanela?\nTinto, que hace frío."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -26902,7 +26904,9 @@
     "id": "u59-1021",
     "es": "Vos tenés razón, mi amor.",
     "en": "You're right, my love. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes razón, mi amor."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -26925,7 +26929,9 @@
     "id": "u59-1022",
     "es": "¿Vos sos de Bogotá o de Medellín?",
     "en": "Are you from Bogotá or from Medellín? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú eres de Bogotá o de Medellín?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -26945,7 +26951,9 @@
     "id": "u59-1023",
     "es": "¿Vos podés venir a cenar el sábado?\nClaro, ¿a qué hora?",
     "en": "Can you come to dinner on Saturday? (vos)\nSure, what time?",
-    "accept": [],
+    "accept": [
+      "¿Tú puedes venir a cenar el sábado?\nClaro, ¿a qué hora?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:a-que-hora",
@@ -26975,7 +26983,9 @@
     "id": "u59-1024",
     "es": "Vos no sabés lo que pasó en la plaza.",
     "en": "You won't believe what happened in the square. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú no sabes lo que pasó en la plaza."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27001,7 +27011,9 @@
     "id": "u59-1025",
     "es": "¿Qué hacés por acá tan temprano?\nVine a ayudarle a Vale con el pan.",
     "en": "What are you doing around here so early? (vos)\nI came to help Vale with the bread.",
-    "accept": [],
+    "accept": [
+      "¿Qué haces por acá tan temprano?\nVine a ayudarle a Vale con el pan."
+    ],
     "acceptEn": [],
     "requires": [
       "c:por-aca",
@@ -27034,7 +27046,9 @@
     "id": "u59-1026",
     "es": "Pensá bien lo que decís antes de hablar con Altamira.",
     "en": "Think carefully about what you say before talking to Altamira. (vos)",
-    "accept": [],
+    "accept": [
+      "Piensa bien lo que dices antes de hablar con Altamira."
+    ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
@@ -27064,7 +27078,9 @@
     "id": "u59-1027",
     "es": "Escuchá lo que te digo, esa oferta no sirve.",
     "en": "Listen to what I'm telling you, that offer is no good. (vos)",
-    "accept": [],
+    "accept": [
+      "Escucha lo que te digo, esa oferta no sirve."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-sirve",
@@ -27091,7 +27107,9 @@
     "id": "u59-1028",
     "es": "¿Vos tenés plata para el bus?\nSí, tengo suficiente.",
     "en": "Do you have money for the bus? (vos)\nYes, I have enough.",
-    "accept": [],
+    "accept": [
+      "¿Tú tienes plata para el bus?\nSí, tengo suficiente."
+    ],
     "acceptEn": [],
     "requires": [
       "c:tengo",
@@ -27117,7 +27135,9 @@
     "id": "u59-1029",
     "es": "Hablá más despacio, que no te entiendo.",
     "en": "Speak more slowly, I can't understand you. (vos)",
-    "accept": [],
+    "accept": [
+      "Habla más despacio, que no te entiendo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:mas-despacio",
@@ -27143,7 +27163,9 @@
     "id": "u59-1030",
     "es": "Vos no sabés cuánto te extrañé.",
     "en": "You don't know how much I missed you. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú no sabes cuánto te extrañé."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gustar-full",
@@ -27169,7 +27191,9 @@
     "id": "u59-1031",
     "es": "¿Vos me querés ayudar con las maletas?\nPor supuesto.",
     "en": "Do you want to help me with the suitcases? (vos)\nOf course.",
-    "accept": [],
+    "accept": [
+      "¿Tú me quieres ayudar con las maletas?\nPor supuesto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27194,7 +27218,9 @@
     "id": "u59-1032",
     "es": "Comé algo, vos, que estás muy flaco.",
     "en": "Eat something, will you, you're very thin. (vos)",
-    "accept": [],
+    "accept": [
+      "Come algo, tú, que estás muy flaco."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27219,7 +27245,9 @@
     "id": "u59-1033",
     "es": "Vos sos muy valiente, parce.",
     "en": "You're very brave, buddy. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú eres muy valiente, parce."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -27242,7 +27270,9 @@
     "id": "u59-1034",
     "es": "Tomá un tinto mientras esperás.",
     "en": "Have a black coffee while you wait. (vos)",
-    "accept": [],
+    "accept": [
+      "Toma un tinto mientras esperas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27265,7 +27295,9 @@
     "id": "u59-1035",
     "es": "Vos tenés que probar la bandeja paisa.",
     "en": "You have to try the bandeja paisa. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes que probar la bandeja paisa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27289,7 +27321,9 @@
     "id": "u59-1036",
     "es": "¿Dónde andás vos ahora?\nEn la terminal, esperando el bus.",
     "en": "Where are you at the moment? (vos)\nAt the terminal, waiting for the bus.",
-    "accept": [],
+    "accept": [
+      "¿Dónde andas tú ahora?\nEn la terminal, esperando el bus."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27316,7 +27350,9 @@
     "id": "u59-1037",
     "es": "¿Cómo así que vos querés vender?",
     "en": "What do you mean you want to sell? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Cómo así que tú quieres vender?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:como-asi",
@@ -27340,7 +27376,9 @@
     "id": "u59-1038",
     "es": "Vos no creés en nada, ¿cierto?",
     "en": "You don't believe in anything, do you? (vos)",
-    "accept": [],
+    "accept": [
+      "Tú no crees en nada, ¿cierto?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
@@ -27361,7 +27399,9 @@
     "id": "u59-1039",
     "es": "¿Vos entendés lo que dice mi abuela?\nCasi todo, habla muy despacio.",
     "en": "Do you understand what my grandmother says? (vos)\nAlmost everything, she speaks very slowly.",
-    "accept": [],
+    "accept": [
+      "¿Tú entiendes lo que dice mi abuela?\nCasi todo, habla muy despacio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -27388,7 +27428,9 @@
     "id": "u59-1040",
     "es": "Entrá ya, que la comida está servida.",
     "en": "Come in now, the food is served. (vos)",
-    "accept": [],
+    "accept": [
+      "Entra ya, que la comida está servida."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27414,7 +27456,9 @@
     "id": "u59-1041",
     "es": "Vos sabés que acá siempre hay un plato para vos.",
     "en": "You know there's always a plate for you here. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú sabes que acá siempre hay un plato para ti."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hay",
@@ -27444,7 +27488,9 @@
     "id": "u59-1042",
     "es": "¿Vos conocés a don Jaime?\nSí, es amigo de mi papá.",
     "en": "Do you know Don Jaime? (vos)\nYes, he's a friend of my dad's.",
-    "accept": [],
+    "accept": [
+      "¿Tú conoces a don Jaime?\nSí, es amigo de mi papá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -27471,7 +27517,9 @@
     "id": "u59-1043",
     "es": "¿Vos creés que esto va a funcionar?",
     "en": "Do you think this is going to work? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú crees que esto va a funcionar?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:ir-a-plans",
@@ -27495,7 +27543,9 @@
     "id": "u59-1044",
     "es": "Esperá un momento, ya te atiendo.",
     "en": "Wait a moment, I'll be with you right away. (vos)",
-    "accept": [],
+    "accept": [
+      "Espera un momento, ya te atiendo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27519,7 +27569,9 @@
     "id": "u59-1045",
     "es": "¿Vos trabajás los domingos?\nSolo cuando hay mucha gente.",
     "en": "Do you work on Sundays? (vos)\nOnly when it's busy.",
-    "accept": [],
+    "accept": [
+      "¿Tú trabajas los domingos?\nSolo cuando hay mucha gente."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hay",
@@ -27547,7 +27599,9 @@
     "id": "u59-1046",
     "es": "Cuidá a tu hermano mientras yo salgo.",
     "en": "Look after your brother while I go out. (vos)",
-    "accept": [],
+    "accept": [
+      "Cuida a tu hermano mientras yo salgo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
@@ -27572,7 +27626,9 @@
     "id": "u59-1047",
     "es": "¿Vos querés la playa o la montaña?",
     "en": "Do you want the beach or the mountains? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres la playa o la montaña?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27594,7 +27650,9 @@
     "id": "u59-1048",
     "es": "Contá cómo te fue con el abogado.",
     "en": "Tell me how it went with the lawyer. (vos)",
-    "accept": [],
+    "accept": [
+      "Cuenta cómo te fue con el abogado."
+    ],
     "acceptEn": [],
     "requires": [
       "c:como-te-fue",
@@ -27620,7 +27678,9 @@
     "id": "u59-1049",
     "es": "Vos hacés mejor el pan que yo, y eso que yo soy la pastelera.",
     "en": "You make bread better than I do, and I'm the pastry chef. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú haces mejor el pan que yo, y eso que yo soy la pastelera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
@@ -27648,7 +27708,9 @@
     "id": "u59-1050",
     "es": "¿Vos bailás?\nMás o menos, me enredo con los pasos.",
     "en": "Do you dance? (vos)\nMore or less, I get tangled up in the steps.",
-    "accept": [],
+    "accept": [
+      "¿Tú bailas?\nMás o menos, me enredo con los pasos."
+    ],
     "acceptEn": [],
     "requires": [
       "c:mas-o-menos",
@@ -27674,7 +27736,9 @@
     "id": "u59-1051",
     "es": "Llamá a tu mamá antes de salir, que se preocupa.",
     "en": "Call your mom before you leave, she worries. (vos)",
-    "accept": [],
+    "accept": [
+      "Llama a tu mamá antes de salir, que se preocupa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27703,7 +27767,9 @@
     "id": "u59-1052",
     "es": "Vos no tenés idea de lo bonito que es Medellín de noche.",
     "en": "You have no idea how pretty Medellín is at night. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú no tienes idea de lo bonito que es Medellín de noche."
+    ],
     "acceptEn": [],
     "requires": [
       "g:lo-adjective",
@@ -27730,7 +27796,9 @@
     "id": "u59-1053",
     "es": "¿Qué buscás en este pueblo?\nUn rincón tranquilo para escribir.",
     "en": "What are you looking for in this town? (vos)\nA quiet corner to write.",
-    "accept": [],
+    "accept": [
+      "¿Qué buscas en este pueblo?\nUn rincón tranquilo para escribir."
+    ],
     "acceptEn": [],
     "requires": [
       "c:tranquilo",
@@ -27761,7 +27829,9 @@
     "id": "u59-1054",
     "es": "Vos sos el único que me entiende.",
     "en": "You're the only one who understands me. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú eres el único que me entiende."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27787,7 +27857,9 @@
     "id": "u59-1055",
     "es": "Probá esta empanada y contá qué te parece.",
     "en": "Try this empanada and tell me what you think. (vos)",
-    "accept": [],
+    "accept": [
+      "Prueba esta empanada y cuenta qué te parece."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27816,7 +27888,9 @@
     "id": "u59-1056",
     "es": "¿Cuánto cobrás por el arreglo?\nVeinte mil pesos, es poco.",
     "en": "How much do you charge for the repair? (vos)\nTwenty thousand pesos, it's not much.",
-    "accept": [],
+    "accept": [
+      "¿Cuánto cobras por el arreglo?\nVeinte mil pesos, es poco."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27845,7 +27919,9 @@
     "id": "u59-1057",
     "es": "Vos tenés que descansar, estás pálido.",
     "en": "You have to rest, you look pale. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes que descansar, estás pálido."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -27869,7 +27945,9 @@
     "id": "u59-1058",
     "es": "Dejá eso ahí, que yo lo guardo.",
     "en": "Leave that there, I'll put it away. (vos)",
-    "accept": [],
+    "accept": [
+      "Deja eso ahí, que yo lo guardo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27895,7 +27973,9 @@
     "id": "u59-1059",
     "es": "¿Vos querés que te acompañe al hotel?\nNo, gracias, voy solo.",
     "en": "Do you want me to go with you to the hotel? (vos)\nNo, thanks, I'm going alone.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres que te acompañe al hotel?\nNo, gracias, voy solo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
@@ -27925,7 +28005,9 @@
     "id": "u59-1060",
     "es": "Vos parecés cansado, parce, ¿dormiste algo?",
     "en": "You look tired, buddy, did you sleep at all? (vos)",
-    "accept": [],
+    "accept": [
+      "Tú pareces cansado, parce, ¿dormiste algo?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -27949,7 +28031,9 @@
     "id": "u59-1061",
     "es": "Tené cuidado con el escalón.",
     "en": "Watch out for the step. (vos)",
-    "accept": [],
+    "accept": [
+      "Ten cuidado con el escalón."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -27972,7 +28056,9 @@
     "id": "u59-1062",
     "es": "¿Vos creés que Vale se queda en Bogotá?\nNo sé, ella extraña mucho a su familia.",
     "en": "Do you think Vale will stay in Bogotá? (vos)\nI don't know, she misses her family a lot.",
-    "accept": [],
+    "accept": [
+      "¿Tú crees que Vale se queda en Bogotá?\nNo sé, ella extraña mucho a su familia."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -28002,7 +28088,9 @@
     "id": "u59-1063",
     "es": "Vos sos de los que no se rinden, ¿cierto?",
     "en": "You're one of those who don't give up, right? (vos)",
-    "accept": [],
+    "accept": [
+      "Tú eres de los que no se rinden, ¿cierto?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
@@ -28029,7 +28117,9 @@
     "id": "u59-1064",
     "es": "Caminá más rápido, que perdemos el bus.",
     "en": "Walk faster, we're going to miss the bus. (vos)",
-    "accept": [],
+    "accept": [
+      "Camina más rápido, que perdemos el bus."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -28055,7 +28145,9 @@
     "id": "u59-1065",
     "es": "¿Vos me das la receta del buñuelo?\nSí, pero no se la podés dar a nadie.",
     "en": "Will you give me the buñuelo recipe? (vos)\nYes, but you can't give it to anybody.",
-    "accept": [],
+    "accept": [
+      "¿Tú me das la receta del buñuelo?\nSí, pero no se la puedes dar a nadie."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -28083,7 +28175,9 @@
     "id": "u59-1066",
     "es": "Escribí lo que pensás, aunque no lo mandes.",
     "en": "Write what you think, even if you don't send it. (vos)",
-    "accept": [],
+    "accept": [
+      "Escribe lo que piensas, aunque no lo mandes."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -28109,7 +28203,9 @@
     "id": "u59-1067",
     "es": "¿Vos sabés dónde queda la panadería de mi mamá?",
     "en": "Do you know where my mom's bakery is? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú sabes dónde queda la panadería de mi mamá?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28137,7 +28233,9 @@
     "id": "u59-1068",
     "es": "Vos nunca llegás a tiempo, ni al desfile.",
     "en": "You never arrive on time, not even to the parade. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú nunca llegas a tiempo, ni al desfile."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28161,7 +28259,9 @@
     "id": "u59-1069",
     "es": "¿Vos necesitás algo?\nNo, solo estoy un poco cansado del viaje.",
     "en": "Do you need anything? (vos)\nNo, I'm just a bit tired from the trip.",
-    "accept": [],
+    "accept": [
+      "¿Tú necesitas algo?\nNo, solo estoy un poco cansado del viaje."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -28190,7 +28290,9 @@
     "id": "u59-1070",
     "es": "Cantá otra vez esa canción, que me gustó.",
     "en": "Sing that song again, I liked it. (vos)",
-    "accept": [],
+    "accept": [
+      "Canta otra vez esa canción, que me gustó."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -28217,7 +28319,9 @@
     "id": "u59-1071",
     "es": "Vos podés quedarte en el cuarto de mi hermano.",
     "en": "You can stay in my brother's room. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú puedes quedarte en el cuarto de mi hermano."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28243,7 +28347,9 @@
     "id": "u59-1072",
     "es": "¿Qué querés de comer?\nLo que haya, todo se ve rico.",
     "en": "What do you want to eat? (vos)\nWhatever there is, everything looks good.",
-    "accept": [],
+    "accept": [
+      "¿Qué quieres de comer?\nLo que haya, todo se ve rico."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -28272,7 +28378,9 @@
     "id": "u59-1073",
     "es": "Vos mirás esa montaña y te olvidás de todo.",
     "en": "You look at that mountain and forget everything. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú miras esa montaña y te olvidas de todo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -28295,7 +28403,9 @@
     "id": "u59-1074",
     "es": "No sé si ir a la fiesta.\nVos podés ir un rato, que te vas a divertir.",
     "en": "I don't know if I should go to the party.\nYou can go for a while, you'll have fun. (vos)",
-    "accept": [],
+    "accept": [
+      "No sé si ir a la fiesta.\nTú puedes ir un rato, que te vas a divertir."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -28330,7 +28440,9 @@
     "id": "u59-1075",
     "es": "Vos sos el que tiene que decidir.",
     "en": "You're the one who has to decide. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú eres el que tiene que decidir."
+    ],
     "acceptEn": [],
     "requires": [
       "c:tienes",
@@ -28358,7 +28470,9 @@
     "id": "u59-1076",
     "es": "¿Vos me creés si te digo que lo olvidé?\nNo mucho, la verdad.",
     "en": "Will you believe me if I say I forgot? (vos)\nNot really, to be honest.",
-    "accept": [],
+    "accept": [
+      "¿Tú me crees si te digo que lo olvidé?\nNo mucho, la verdad."
+    ],
     "acceptEn": [],
     "requires": [
       "c:la-verdad",
@@ -28388,7 +28502,9 @@
     "id": "u59-1077",
     "es": "Si vos querés, nos vamos mañana temprano.",
     "en": "If you want, we'll leave early tomorrow. (vos)",
-    "accept": [],
+    "accept": [
+      "Si tú quieres, nos vamos mañana temprano."
+    ],
     "acceptEn": [],
     "requires": [
       "g:ir-a-plans",
@@ -28412,7 +28528,9 @@
     "id": "u59-1078",
     "es": "Vos tenés unas manos de mantequilla impresionantes.",
     "en": "You've got truly impressive butterfingers. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes unas manos de mantequilla impresionantes."
+    ],
     "acceptEn": [],
     "requires": [
       "c:manos-de-mantequilla",
@@ -28439,7 +28557,9 @@
     "id": "u59-1079",
     "es": "¿Vos pensás volver a Toronto?\nNo sé, acá me siento en casa.",
     "en": "Do you plan to go back to Toronto? (vos)\nI don't know, here I feel at home.",
-    "accept": [],
+    "accept": [
+      "¿Tú piensas volver a Toronto?\nNo sé, acá me siento en casa."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -28470,7 +28590,9 @@
     "id": "u59-1080",
     "es": "Vos sabés que mañana hay que madrugar.",
     "en": "You know that tomorrow we have to get up early. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú sabes que mañana hay que madrugar."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hay",
@@ -28497,7 +28619,9 @@
     "id": "u59-1081",
     "es": "¿Vos sos el novio de mi hija?\nNo, señora, soy un amigo.",
     "en": "Are you my daughter's boyfriend? (vos)\nNo, ma'am, I'm a friend.",
-    "accept": [],
+    "accept": [
+      "¿Tú eres el novio de mi hija?\nNo, señora, soy un amigo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28523,7 +28647,9 @@
     "id": "u59-1082",
     "es": "Vos hablás muy bien español para ser canadiense.",
     "en": "You speak very good Spanish for a Canadian. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú hablas muy bien español para ser canadiense."
+    ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
@@ -28554,7 +28680,9 @@
     "id": "u59-1083",
     "es": "¿Vos tomás tinto con panela?\nNunca lo he probado.",
     "en": "Do you take black coffee with panela? (vos)\nI've never tried it.",
-    "accept": [],
+    "accept": [
+      "¿Tú tomás tinto con panela?\nNunca lo he probado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -28580,7 +28708,9 @@
     "id": "u59-1084",
     "es": "Mi mamá dice que vos comés poco.",
     "en": "My mom says you eat little. (vos)",
-    "accept": [],
+    "accept": [
+      "Mi mamá dice que tú comes poco."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -28606,7 +28736,9 @@
     "id": "u59-1085",
     "es": "¿Vos conocés el Pueblito Paisa?",
     "en": "Do you know the Pueblito Paisa? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú conoces el Pueblito Paisa?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:diminutives",
@@ -28628,7 +28760,9 @@
     "id": "u59-1086",
     "es": "¿Vos querés ver mi cuarto de niña?\nClaro, me encantaría.",
     "en": "Do you want to see my childhood bedroom? (vos)\nSure, I'd love to.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres ver mi cuarto de niña?\nClaro, me encantaría."
+    ],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
@@ -28656,7 +28790,9 @@
     "id": "u59-1087",
     "es": "Vos tenés una sonrisa que se contagia.",
     "en": "You have a smile that's contagious. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes una sonrisa que se contagia."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28680,7 +28816,9 @@
     "id": "u59-1088",
     "es": "Hablá con mi papá, que él sabe de estas cosas.",
     "en": "Talk to my dad, he knows about these things. (vos)",
-    "accept": [],
+    "accept": [
+      "Habla con mi papá, que él sabe de estas cosas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -28707,7 +28845,9 @@
     "id": "u59-1089",
     "es": "¿Vos querés más arepa?\nSí, pero solo una mitad.",
     "en": "Do you want more arepa? (vos)\nYes, but only half.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres más arepa?\nSí, pero solo una mitad."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28730,7 +28870,9 @@
     "id": "u59-1090",
     "es": "Vos creés que acá todos son tan amables, ¿cierto?",
     "en": "You think everyone here is that friendly, right? (vos)",
-    "accept": [],
+    "accept": [
+      "Tú crees que acá todos son tan amables, ¿cierto?"
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-cierto",
@@ -28757,7 +28899,9 @@
     "id": "u59-1091",
     "es": "¿Cómo hacés el pan de bono?\nCon queso y almidón de yuca, nada más.",
     "en": "How do you make pan de bono? (vos)\nWith cheese and cassava starch, nothing else.",
-    "accept": [],
+    "accept": [
+      "¿Cómo haces el pan de bono?\nCon queso y almidón de yuca, nada más."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28784,7 +28928,9 @@
     "id": "u59-1092",
     "es": "Escuchá la música que viene de la calle.",
     "en": "Listen to the music coming from the street. (vos)",
-    "accept": [],
+    "accept": [
+      "Escucha la música que viene de la calle."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -28810,7 +28956,9 @@
     "id": "u59-1093",
     "es": "¿Vos entendés mi acento?\nSí, pero hablás muy rápido.",
     "en": "Do you understand my accent? (vos)\nYes, but you talk very fast.",
-    "accept": [],
+    "accept": [
+      "¿Tú entiendes mi acento?\nSí, pero hablas muy rápido."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -28834,7 +28982,9 @@
     "id": "u59-1094",
     "es": "Vos sabés que mi abuela no se despide sin dar un abrazo.",
     "en": "You know my grandmother doesn't say goodbye without a hug. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú sabes que mi abuela no se despide sin dar un abrazo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -28865,7 +29015,9 @@
     "id": "u59-1095",
     "es": "Comprá flores para mi mamá, que le encantan.",
     "en": "Buy flowers for my mom, she loves them. (vos)",
-    "accept": [],
+    "accept": [
+      "Compra flores para mi mamá, que le encantan."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -28892,7 +29044,9 @@
     "id": "u59-1096",
     "es": "¿Vos querés saber todo?\nSí, así aprendo.",
     "en": "Do you want to know everything? (vos)\nYes, that's how I learn.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres saber todo?\nSí, así aprendo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -28916,7 +29070,9 @@
     "id": "u59-1097",
     "es": "¿Vos creés que podemos llegar a la finca antes de la lluvia?",
     "en": "Do you think we can get to the farm before the rain? (vos)",
-    "accept": [],
+    "accept": [
+      "¿Tú crees que podemos llegar a la finca antes de la lluvia?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28944,7 +29100,9 @@
     "id": "u59-1098",
     "es": "Vos tenés que conocer el metro de Medellín.",
     "en": "You have to see the Medellín metro. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes que conocer el metro de Medellín."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28968,7 +29126,9 @@
     "id": "u59-1099",
     "es": "¿Vos necesitás algo del supermercado?\nSolo leche y pan.",
     "en": "Do you need anything from the supermarket? (vos)\nJust milk and bread.",
-    "accept": [],
+    "accept": [
+      "¿Tú necesitas algo del supermercado?\nSolo leche y pan."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28993,7 +29153,9 @@
     "id": "u59-1100",
     "es": "Esperá que traigo el café y seguimos hablando.",
     "en": "Wait while I bring the coffee and we'll carry on talking. (vos)",
-    "accept": [],
+    "accept": [
+      "Espera que traigo el café y seguimos hablando."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29023,7 +29185,9 @@
     "id": "u59-1101",
     "es": "Vos ves una montaña y ya querés subirla.",
     "en": "You see a mountain and already want to climb it. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú ves una montaña y ya quieres subirla."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -29050,7 +29214,9 @@
     "id": "u59-1102",
     "es": "¿Vos trabajás con mi hermana?\nSí, en la panadería de Bogotá.",
     "en": "Do you work with my sister? (vos)\nYes, at the bakery in Bogotá.",
-    "accept": [],
+    "accept": [
+      "¿Tú trabajas con mi hermana?\nSí, en la panadería de Bogotá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29073,7 +29239,9 @@
     "id": "u59-1103",
     "es": "Cantá otra, que acá a todos nos gusta cantar.",
     "en": "Sing another, here we all like singing. (vos)",
-    "accept": [],
+    "accept": [
+      "Canta otra, que acá a todos nos gusta cantar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29100,7 +29268,9 @@
     "id": "u59-1104",
     "es": "Vos debés de estar cansado después de tanto viaje.",
     "en": "You must be tired after such a long trip. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú debes de estar cansado después de tanto viaje."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -29126,7 +29296,9 @@
     "id": "u59-1105",
     "es": "¿Qué pensás de Medellín?\nQue es una ciudad con mucha energía.",
     "en": "What do you think of Medellín? (vos)\nThat it's a city with a lot of energy.",
-    "accept": [],
+    "accept": [
+      "¿Qué piensas de Medellín?\nQue es una ciudad con mucha energía."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29155,7 +29327,9 @@
     "id": "u59-1106",
     "es": "Vos tomás el bus y yo voy en la moto.",
     "en": "You take the bus and I'll go by motorbike. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tomás el bus y yo voy en la moto."
+    ],
     "acceptEn": [],
     "requires": [
       "c:voy-vas",
@@ -29180,7 +29354,9 @@
     "id": "u59-1107",
     "es": "Dejá que yo pago esta ronda.",
     "en": "Let me pay for this round. (vos)",
-    "accept": [],
+    "accept": [
+      "Deja que yo pago esta ronda."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29204,7 +29380,9 @@
     "id": "u59-1108",
     "es": "¿Vos querés dormir un rato?\nUn rato, gracias.",
     "en": "Do you want to sleep for a while? (vos)\nJust a while, thanks.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres dormir un rato?\nUn rato, gracias."
+    ],
     "acceptEn": [],
     "requires": [
       "c:gracias-de-nada",
@@ -29228,7 +29406,9 @@
     "id": "u59-1109",
     "es": "Vos sabés mucho de música para ser tan joven.",
     "en": "You know a lot about music for being so young. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú sabes mucho de música para ser tan joven."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -29257,7 +29437,9 @@
     "id": "u59-1110",
     "es": "¿Vos me enseñás a bailar?\nCon gusto, pero tenés que pisar más suave.",
     "en": "Will you teach me to dance? (vos)\nGladly, but you have to step more softly.",
-    "accept": [],
+    "accept": [
+      "¿Tú me enseñas a bailar?\nCon gusto, pero tienes que pisar más suave."
+    ],
     "acceptEn": [],
     "requires": [
       "c:con-mucho-gusto",
@@ -29284,7 +29466,9 @@
     "id": "u59-1111",
     "es": "Cuidá la bolsa, que acá hay mucha gente.",
     "en": "Watch your bag, there are lots of people here. (vos)",
-    "accept": [],
+    "accept": [
+      "Cuida la bolsa, que acá hay mucha gente."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hay",
@@ -29313,7 +29497,9 @@
     "id": "u59-1112",
     "es": "A mí no me mentís: sé que querés quedarte.",
     "en": "You can't lie to me: I know you want to stay. (vos)",
-    "accept": [],
+    "accept": [
+      "A mí no me mientes: sé que quieres quedarte."
+    ],
     "acceptEn": [],
     "requires": [
       "c:a-mi-tambien",
@@ -29346,7 +29532,9 @@
     "id": "u59-1113",
     "es": "¿Vos qué hacés los domingos?\nNada especial, leo y cocino.",
     "en": "What do you do on Sundays? (vos)\nNothing special, I read and cook.",
-    "accept": [],
+    "accept": [
+      "¿Tú qué haces los domingos?\nNada especial, leo y cocino."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29374,7 +29562,9 @@
     "id": "u59-1114",
     "es": "Contá lo que pasó, que nadie te va a juzgar.",
     "en": "Tell us what happened, nobody is going to judge you. (vos)",
-    "accept": [],
+    "accept": [
+      "Cuenta lo que pasó, que nadie te va a juzgar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29403,7 +29593,9 @@
     "id": "u59-1115",
     "es": "Mi papá dice que vos tenés cara de buena gente.",
     "en": "My dad says you have the face of a good person. (vos)",
-    "accept": [],
+    "accept": [
+      "Mi papá dice que tú tienes cara de buena gente."
+    ],
     "acceptEn": [],
     "requires": [
       "c:buena-gente",
@@ -29432,7 +29624,9 @@
     "id": "u59-1116",
     "es": "¿Vos tenés hambre?\nUn poquito, pero puedo esperar.",
     "en": "Are you hungry? (vos)\nA little, but I can wait.",
-    "accept": [],
+    "accept": [
+      "¿Tú tienes hambre?\nUn poquito, pero puedo esperar."
+    ],
     "acceptEn": [],
     "requires": [
       "c:puedo",
@@ -29462,7 +29656,9 @@
     "id": "u59-1117",
     "es": "Hablá con tu mamá antes de decidir.",
     "en": "Talk to your mom before deciding. (vos)",
-    "accept": [],
+    "accept": [
+      "Habla con tu mamá antes de decidir."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29486,7 +29682,9 @@
     "id": "u59-1118",
     "es": "Vos pedís más de lo que podés pagar.",
     "en": "You ask for more than you can pay. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú pides más de lo que puedes pagar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
@@ -29513,7 +29711,9 @@
     "id": "u59-1119",
     "es": "¿Vos cuidás a Simón cuando nos vamos?\nSí, y le hablo en vallenato.",
     "en": "Do you look after Simón when we go? (vos)\nYes, and I talk to him in vallenato.",
-    "accept": [],
+    "accept": [
+      "¿Tú cuidas a Simón cuando nos vamos?\nSí, y le hablo en vallenato."
+    ],
     "acceptEn": [],
     "requires": [
       "g:indirect-objects",
@@ -29540,7 +29740,9 @@
     "id": "u59-1120",
     "es": "Vos tenés que ver lo que te traje de la finca.",
     "en": "You have to see what I brought you from the farm. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú tienes que ver lo que te traje de la finca."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29568,7 +29770,9 @@
     "id": "u59-1121",
     "es": "Llevá el abrigo, que en la noche baja el frío.",
     "en": "Take your coat, it gets cold at night. (vos)",
-    "accept": [],
+    "accept": [
+      "Lleva el abrigo, que en la noche baja el frío."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29596,7 +29800,9 @@
     "id": "u59-1122",
     "es": "¿Vos encontrás tu camino en esta ciudad?\nSolo con el mapa del celular.",
     "en": "Do you find your way around this city? (vos)\nOnly with the map on my phone.",
-    "accept": [],
+    "accept": [
+      "¿Tú encuentras tu camino en esta ciudad?\nSolo con el mapa del celular."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29623,7 +29829,9 @@
     "id": "u59-1123",
     "es": "Vos hacés que todo parezca fácil.",
     "en": "You make everything look easy. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú haces que todo parezca fácil."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -29647,7 +29855,9 @@
     "id": "u59-1124",
     "es": "Dejá un poco de tinto para tus primos.",
     "en": "Leave a little black coffee for your cousins. (vos)",
-    "accept": [],
+    "accept": [
+      "Deja un poco de tinto para tus primos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29674,7 +29884,9 @@
     "id": "u59-1125",
     "es": "¿Vos trabajás de noche?\nSolo los fines de semana.",
     "en": "Do you work at night? (vos)\nOnly on weekends.",
-    "accept": [],
+    "accept": [
+      "¿Tú trabajas de noche?\nSolo los fines de semana."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29699,7 +29911,9 @@
     "id": "u59-1126",
     "es": "Vos querés tanto a ese loro que parece tu hijo.",
     "en": "You love that parrot so much he seems like your son. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú quieres tanto a ese loro que parece tu hijo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -29725,7 +29939,9 @@
     "id": "u59-1127",
     "es": "Hablá con el comisario antes de que sea tarde.",
     "en": "Talk to the police chief before it's too late. (vos)",
-    "accept": [],
+    "accept": [
+      "Habla con el comisario antes de que sea tarde."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29754,7 +29970,9 @@
     "id": "u59-1128",
     "es": "¿Vos creés en lo que dice el abogado?\nTodavía no sé.",
     "en": "Do you believe what the lawyer says? (vos)\nI don't know yet.",
-    "accept": [],
+    "accept": [
+      "¿Tú crees en lo que dice el abogado?\nTodavía no sé."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -29782,7 +30000,9 @@
     "id": "u59-1129",
     "es": "Vos sos mi mejor consejero, parce.",
     "en": "You're my best adviser, buddy. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú eres mi mejor consejero, parce."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -29807,7 +30027,9 @@
     "id": "u59-1130",
     "es": "Esperá aquí, que enseguida salgo.",
     "en": "Wait here, I'll be right out. (vos)",
-    "accept": [],
+    "accept": [
+      "Espera aquí, que enseguida salgo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hago-salgo-vengo",
@@ -29833,7 +30055,9 @@
     "id": "u59-1131",
     "es": "¿Vos tenés un lápiz?\nSí, tomá.",
     "en": "Do you have a pencil? (vos)\nYes, here.",
-    "accept": [],
+    "accept": [
+      "¿Tú tienes un lápiz?\nSí, toma."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29856,7 +30080,9 @@
     "id": "u59-1132",
     "es": "Vos querés saber mucho, pero eso es bueno.",
     "en": "You want to know a lot, but that's good. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú quieres saber mucho, pero eso es bueno."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -29885,7 +30111,9 @@
     "id": "u59-1133",
     "es": "Pensá en lo que dijo tu abuela.",
     "en": "Think about what your grandmother said. (vos)",
-    "accept": [],
+    "accept": [
+      "Piensa en lo que dijo tu abuela."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -29910,7 +30138,9 @@
     "id": "u59-1134",
     "es": "¿Vos tomás alcohol?\nUn trago, pero no más.",
     "en": "Do you drink alcohol? (vos)\nOne drink, but no more.",
-    "accept": [],
+    "accept": [
+      "¿Tú tomás alcohol?\nUn trago, pero no más."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29932,7 +30162,9 @@
     "id": "u59-1135",
     "es": "Vos nunca podés decir que no, y eso es un problema.",
     "en": "You never manage to say no, and that's a problem. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú nunca puedes decir que no, y eso es un problema."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29960,7 +30192,9 @@
     "id": "u59-1136",
     "es": "Pagá la cuenta y vámonos.",
     "en": "Pay the bill and let's go. (vos)",
-    "accept": [],
+    "accept": [
+      "Paga la cuenta y vámonos."
+    ],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
@@ -29982,7 +30216,9 @@
     "id": "u59-1137",
     "es": "¿Vos tomás fotos de todo?\nDe casi todo, para no olvidar.",
     "en": "Do you take photos of everything? (vos)\nOf almost everything, so I don't forget.",
-    "accept": [],
+    "accept": [
+      "¿Tú tomás fotos de todo?\nDe casi todo, para no olvidar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -30004,7 +30240,9 @@
     "id": "u59-1138",
     "es": "Vos te enredás cuando hablás rápido.",
     "en": "You get muddled when you talk fast. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú te enredas cuando hablas rápido."
+    ],
     "acceptEn": [],
     "requires": [
       "g:present-ar",
@@ -30029,7 +30267,9 @@
     "id": "u59-1139",
     "es": "Contestá el celular, que está sonando.",
     "en": "Answer the phone, it's ringing. (vos)",
-    "accept": [],
+    "accept": [
+      "Contesta el celular, que está sonando."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -30055,7 +30295,9 @@
     "id": "u59-1140",
     "es": "¿Vos llegás hoy o mañana?\nMañana por la tarde, en el último bus.",
     "en": "Are you arriving today or tomorrow? (vos)\nTomorrow afternoon, on the last bus.",
-    "accept": [],
+    "accept": [
+      "¿Tú llegas hoy o mañana?\nMañana por la tarde, en el último bus."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -30080,7 +30322,9 @@
     "id": "u59-1141",
     "es": "Vos creés que no se nota, pero se nota mucho.",
     "en": "You think it doesn't show, but it shows a lot. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú crees que no se nota, pero se nota mucho."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -30104,7 +30348,9 @@
     "id": "u59-1142",
     "es": "Ayudá a tu abuela con las bolsas.",
     "en": "Help your grandmother with the bags. (vos)",
-    "accept": [],
+    "accept": [
+      "Ayuda a tu abuela con las bolsas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -30128,7 +30374,9 @@
     "id": "u59-1143",
     "es": "¿Vos querés ir al cerro o al museo?\nAl cerro, pero con calma.",
     "en": "Do you want to go to the hill or to the museum? (vos)\nThe hill, but without hurry.",
-    "accept": [],
+    "accept": [
+      "¿Tú quieres ir al cerro o al museo?\nAl cerro, pero con calma."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -30155,7 +30403,9 @@
     "id": "u59-1144",
     "es": "Vos entendés más de lo que decís.",
     "en": "You understand more than you say. (vos)",
-    "accept": [],
+    "accept": [
+      "Tú entiendes más de lo que dices."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
@@ -30180,7 +30430,9 @@
     "id": "u59-1145",
     "es": "El que no cumpliere será sancionado.",
     "en": "Whoever fails to comply will be penalised.",
-    "accept": [],
+    "accept": [
+      "El que no cumpla será sancionado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30206,7 +30458,9 @@
     "id": "u59-1146",
     "es": "Adonde fueres, haz lo que vieres.",
     "en": "Wherever you go, do as you see done.",
-    "accept": [],
+    "accept": [
+      "Adonde vayas, haz lo que veas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -30231,7 +30485,9 @@
     "id": "u59-1147",
     "es": "Si el arrendatario no pagare a tiempo, perderá el depósito.",
     "en": "If the tenant fails to pay on time, he will lose the deposit.",
-    "accept": [],
+    "accept": [
+      "Si el arrendatario no paga a tiempo, perderá el depósito."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30256,7 +30512,9 @@
     "id": "u59-1148",
     "es": "Si el comprador no pagare la primera cuota, el contrato quedará sin efecto.",
     "en": "If the buyer fails to pay the first instalment, the contract will be void.",
-    "accept": [],
+    "accept": [
+      "Si el comprador no paga la primera cuota, el contrato quedará sin efecto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30284,7 +30542,9 @@
     "id": "u59-1149",
     "es": "Quien hiciere trampa perderá el premio.",
     "en": "Whoever cheats will lose the prize.",
-    "accept": [],
+    "accept": [
+      "Quien haga trampa perderá el premio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30309,7 +30569,9 @@
     "id": "u59-1150",
     "es": "Los que llegaren tarde esperarán afuera.",
     "en": "Those who arrive late will wait outside.",
-    "accept": [],
+    "accept": [
+      "Los que lleguen tarde esperarán afuera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30336,7 +30598,9 @@
     "id": "u59-1151",
     "es": "Si fuere necesario, avisaremos a los vecinos.",
     "en": "If it should be necessary, we will notify the neighbours.",
-    "accept": [],
+    "accept": [
+      "Si es necesario, avisaremos a los vecinos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30361,7 +30625,9 @@
     "id": "u59-1152",
     "es": "El que dijere mentiras será castigado.",
     "en": "Whoever tells lies will be punished.",
-    "accept": [],
+    "accept": [
+      "El que diga mentiras será castigado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30388,7 +30654,9 @@
     "id": "u59-1153",
     "es": "Si hubiere problemas con el pago, llámeme.",
     "en": "If there should be problems with the payment, call me.",
-    "accept": [],
+    "accept": [
+      "Si hay problemas con el pago, llámeme."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
@@ -30413,7 +30681,9 @@
     "id": "u59-1154",
     "es": "Quienes vivieren en la zona recibirán un aviso.",
     "en": "Those who live in the area will receive a notice.",
-    "accept": [],
+    "accept": [
+      "Quienes vivan en la zona recibirán un aviso."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30438,7 +30708,9 @@
     "id": "u59-1155",
     "es": "Si el dueño quisiere vender, deberá avisar primero a los inquilinos.",
     "en": "If the owner wishes to sell, he must first notify the tenants.",
-    "accept": [],
+    "accept": [
+      "Si el dueño quiere vender, deberá avisar primero a los inquilinos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30467,7 +30739,9 @@
     "id": "u59-1156",
     "es": "Cualquiera que perdiere el sello pagará una multa grande.",
     "en": "Anyone who loses the seal will pay a big fine.",
-    "accept": [],
+    "accept": [
+      "Cualquiera que pierda el sello pagará una multa grande."
+    ],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
@@ -30493,7 +30767,9 @@
     "id": "u59-1157",
     "es": "Si alguna cláusula fuere nula, las demás seguirán vigentes.",
     "en": "If any clause should be void, the others will remain in force.",
-    "accept": [],
+    "accept": [
+      "Si alguna cláusula es nula, las demás seguirán vigentes."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30521,7 +30797,9 @@
     "id": "u59-1158",
     "es": "¿Qué dice el contrato?\nQue quien no pagare en diez días perderá el local.",
     "en": "What does the contract say?\nThat whoever doesn't pay within ten days will lose the premises.",
-    "accept": [],
+    "accept": [
+      "¿Qué dice el contrato?\nQue quien no pague en diez días perderá el local."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30551,7 +30829,9 @@
     "id": "u59-1159",
     "es": "Si el heredero no aceptare la herencia, pasará a su hermana.",
     "en": "If the heir does not accept the inheritance, it will pass to his sister.",
-    "accept": [],
+    "accept": [
+      "Si el heredero no acepta la herencia, pasará a su hermana."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30577,7 +30857,9 @@
     "id": "u59-1160",
     "es": "Quien tuviere dudas puede preguntar en la oficina.",
     "en": "Anyone who has doubts may ask at the office.",
-    "accept": [],
+    "accept": [
+      "Quien tenga dudas puede preguntar en la oficina."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -30606,7 +30888,9 @@
     "id": "u59-1161",
     "es": "El inquilino que se fuere sin avisar pagará un mes más.",
     "en": "A tenant who leaves without notice will pay one more month.",
-    "accept": [],
+    "accept": [
+      "El inquilino que se vaya sin avisar pagará un mes más."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30633,7 +30917,9 @@
     "id": "u59-1162",
     "es": "Si el comprador desistiere de la compra, devolverá las llaves.",
     "en": "If the buyer backs out of the purchase, he will return the keys.",
-    "accept": [],
+    "accept": [
+      "Si el comprador desiste de la compra, devolverá las llaves."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30658,7 +30944,9 @@
     "id": "u59-1163",
     "es": "Los vecinos que no estuvieren de acuerdo podrán firmar aparte.",
     "en": "Neighbours who do not agree may sign separately.",
-    "accept": [],
+    "accept": [
+      "Los vecinos que no estén de acuerdo podrán firmar aparte."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -30688,7 +30976,9 @@
     "id": "u59-1164",
     "es": "Si el edificio se vendiere, el contrato seguirá igual.",
     "en": "If the building is sold, the contract will remain the same.",
-    "accept": [],
+    "accept": [
+      "Si el edificio se vende, el contrato seguirá igual."
+    ],
     "acceptEn": [],
     "requires": [
       "c:igual",
@@ -30715,7 +31005,9 @@
     "id": "u59-1165",
     "es": "Cuando llegare el día de la entrega, el abogado estará presente.",
     "en": "When the day of delivery comes, the lawyer will be present.",
-    "accept": [],
+    "accept": [
+      "Cuando llegue el día de la entrega, el abogado estará presente."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -30743,7 +31035,9 @@
     "id": "u59-1166",
     "es": "Quien pusiere su firma aquí aceptará todas las condiciones.",
     "en": "Whoever puts his signature here will accept all the conditions.",
-    "accept": [],
+    "accept": [
+      "Quien ponga su firma aquí aceptará todas las condiciones."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30771,7 +31065,9 @@
     "id": "u59-1167",
     "es": "Si el cliente no estuviere conforme, devolveremos el dinero.",
     "en": "If the customer isn't satisfied, we will return the money.",
-    "accept": [],
+    "accept": [
+      "Si el cliente no está conforme, devolveremos el dinero."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -30797,7 +31093,9 @@
     "id": "u59-1168",
     "es": "Si alguien supiere algo del caso, que hable ahora.",
     "en": "If anyone knows anything about the case, let him speak now.",
-    "accept": [],
+    "accept": [
+      "Si alguien sabe algo del caso, que hable ahora."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -30827,7 +31125,9 @@
     "id": "u59-1169",
     "es": "El que robare esta caja tendrá que responder ante el comisario.",
     "en": "Whoever steals this box will have to answer to the police chief.",
-    "accept": [],
+    "accept": [
+      "El que robe esta caja tendrá que responder ante el comisario."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30857,7 +31157,9 @@
     "id": "u59-1170",
     "es": "Si Altamira no cumpliere lo pactado, el trato no valdrá.",
     "en": "If Altamira doesn't keep what was agreed, the deal will not stand.",
-    "accept": [],
+    "accept": [
+      "Si Altamira no cumple lo pactado, el trato no valdrá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30882,7 +31184,9 @@
     "id": "u59-1171",
     "es": "¿Y si no podemos pagar?\nSi no pudieren pagar, hablen con el abogado.",
     "en": "And if we can't pay?\nIf you cannot pay, speak to the lawyer.",
-    "accept": [],
+    "accept": [
+      "¿Y si no podemos pagar?\nSi no pueden pagar, hablen con el abogado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -30909,7 +31213,9 @@
     "id": "u59-1172",
     "es": "Quien viniere después de las ocho no podrá entrar.",
     "en": "Whoever comes after eight will not be able to enter.",
-    "accept": [],
+    "accept": [
+      "Quien venga después de las ocho no podrá entrar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30936,7 +31242,9 @@
     "id": "u59-1173",
     "es": "Si alguna parte reclamare, se abrirá una revisión.",
     "en": "If either party makes a claim, a review will be opened.",
-    "accept": [],
+    "accept": [
+      "Si alguna parte reclama, se abrirá una revisión."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30962,7 +31270,9 @@
     "id": "u59-1174",
     "es": "Los que no firmaren hoy tendrán que esperar a diciembre.",
     "en": "Those who don't sign today will have to wait until December.",
-    "accept": [],
+    "accept": [
+      "Los que no firmen hoy tendrán que esperar a diciembre."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -30991,7 +31301,9 @@
     "id": "u59-1175",
     "es": "Si el testigo no se presentare, la audiencia se aplazará.",
     "en": "If the witness does not appear, the hearing will be postponed.",
-    "accept": [],
+    "accept": [
+      "Si el testigo no se presenta, la audiencia se aplazará."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -31019,7 +31331,9 @@
     "id": "u59-1176",
     "es": "Quien encontrare el anillo recibirá una recompensa.",
     "en": "Whoever finds the ring will receive a reward.",
-    "accept": [],
+    "accept": [
+      "Quien encuentre el anillo recibirá una recompensa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31044,7 +31358,9 @@
     "id": "u59-1177",
     "es": "Si la deuda no se pagare en un año, la casa pasará al banco.",
     "en": "If the debt is not paid within a year, the house will go to the bank.",
-    "accept": [],
+    "accept": [
+      "Si la deuda no se paga en un año, la casa pasará al banco."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -31072,7 +31388,9 @@
     "id": "u59-1178",
     "es": "Si algún pariente volviere, encontrará el café abierto.",
     "en": "If any relative should return, he will find the café open.",
-    "accept": [],
+    "accept": [
+      "Si algún pariente vuelve, encontrará el café abierto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31099,7 +31417,9 @@
     "id": "u59-1179",
     "es": "Quienes quisieren hablar tendrán tres minutos.",
     "en": "Those who wish to speak will have three minutes.",
-    "accept": [],
+    "accept": [
+      "Quienes quieran hablar tendrán tres minutos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-conjecture",
@@ -31124,7 +31444,9 @@
     "id": "u59-1180",
     "es": "La persona que tuviere la llave deberá devolverla.",
     "en": "The person who has the key must return it.",
-    "accept": [],
+    "accept": [
+      "La persona que tenga la llave deberá devolverla."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -31153,7 +31475,9 @@
     "id": "u59-1181",
     "es": "Si el techo se cayere, el dueño pagará los daños.",
     "en": "If the roof should fall in, the owner will pay for the damage.",
-    "accept": [],
+    "accept": [
+      "Si el techo se cae, el dueño pagará los daños."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31180,7 +31504,9 @@
     "id": "u59-1182",
     "es": "El que hubiere perdido su boleto pedirá otro en la entrada.",
     "en": "Whoever has lost his ticket will ask for another at the entrance.",
-    "accept": [],
+    "accept": [
+      "El que haya perdido su boleto pedirá otro en la entrada."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31208,7 +31534,9 @@
     "id": "u59-1183",
     "es": "Si el hijo mayor muriere, la casa pasará al menor.",
     "en": "If the eldest son should die, the house will pass to the youngest.",
-    "accept": [],
+    "accept": [
+      "Si el hijo mayor muere, la casa pasará al menor."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31235,7 +31563,9 @@
     "id": "u59-1184",
     "es": "Cuando el testamento se leyere, todos guardarán silencio.",
     "en": "When the will is read, everyone will keep silent.",
-    "accept": [],
+    "accept": [
+      "Cuando el testamento se lea, todos guardarán silencio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31261,7 +31591,9 @@
     "id": "u59-1185",
     "es": "Quien dijere la verdad no tendrá nada que temer.",
     "en": "Whoever tells the truth will have nothing to fear.",
-    "accept": [],
+    "accept": [
+      "Quien diga la verdad no tendrá nada que temer."
+    ],
     "acceptEn": [],
     "requires": [
       "c:la-verdad",
@@ -31288,7 +31620,9 @@
     "id": "u59-1186",
     "es": "Si algún vecino se opusiere, se votará de nuevo.",
     "en": "If any neighbour objects, there will be another vote.",
-    "accept": [],
+    "accept": [
+      "Si algún vecino se opone, se votará de nuevo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31314,7 +31648,9 @@
     "id": "u59-1187",
     "es": "Los dueños que vendieren su parte recibirán un pago único.",
     "en": "Owners who sell their share will receive a single payment.",
-    "accept": [],
+    "accept": [
+      "Los dueños que vendan su parte recibirán un pago único."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31342,7 +31678,9 @@
     "id": "u59-1188",
     "es": "Si a Roma fueres, haz como vieres.",
     "en": "If you go to Rome, do as the Romans do.",
-    "accept": [],
+    "accept": [
+      "Si a Roma vas, haz como veas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -31366,7 +31704,9 @@
     "id": "u59-1189",
     "es": "Quien tuviere un buen amigo, nunca tendrá frío.",
     "en": "Whoever has a good friend will never be cold.",
-    "accept": [],
+    "accept": [
+      "Quien tenga un buen amigo, nunca tendrá frío."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31395,7 +31735,9 @@
     "id": "u59-1190",
     "es": "Lo que Dios quisiere, eso será.",
     "en": "What God wills, that will be.",
-    "accept": [],
+    "accept": [
+      "Lo que Dios quiera, eso será."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31419,7 +31761,9 @@
     "id": "u59-1191",
     "es": "Quien mucho prometiere, poco cumplirá.",
     "en": "Whoever promises a lot will deliver little.",
-    "accept": [],
+    "accept": [
+      "Quien mucho prometa, poco cumplirá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31442,7 +31786,9 @@
     "id": "u59-1192",
     "es": "Donde fueres, haz lo que vieres, decía mi abuela.",
     "en": "Wherever you go, do as you see done, my grandmother used to say.",
-    "accept": [],
+    "accept": [
+      "Donde vayas, haz lo que veas, decía mi abuela."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -31470,7 +31816,9 @@
     "id": "u59-1193",
     "es": "Al que tuviere ganas de trabajar, Dios lo ayudará.",
     "en": "God will help the one who works with enthusiasm.",
-    "accept": [],
+    "accept": [
+      "Al que tenga ganas de trabajar, Dios lo ayudará."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -31494,19 +31842,28 @@
   },
   {
     "id": "u59-1194",
-    "es": "Quien tuviere un amigo, tendrá un tesoro.",
-    "en": "Whoever has a friend will have a treasure.",
-    "accept": [],
+    "es": "Quien encontrare este documento deberá entregarlo a la policía.",
+    "en": "Whoever finds this document must hand it in to the police.",
+    "accept": [
+      "Quien encuentre este documento deberá entregarlo a la policía."
+    ],
     "acceptEn": [],
     "requires": [
-      "g:future-conjecture",
+      "g:direct-objects",
+      "g:future-promises",
       "g:future-subj-recognition",
       "g:gender-articles",
+      "g:object-pronoun-position",
       "g:relatives-donde-lo-que",
       "g:subj-free-relatives",
-      "l:amigo",
-      "l:tener",
-      "l:tesoro"
+      "g:tener-que-hay-que",
+      "l:deber",
+      "l:documento",
+      "l:encontrar",
+      "l:entregar",
+      "l:policía",
+      "p:demonstratives-basic",
+      "p:entregar-recoger"
     ],
     "targets": [
       "g:future-subj-recognition"
@@ -31520,7 +31877,9 @@
     "id": "u59-1195",
     "es": "Sea lo que fuere, mañana lo sabremos.",
     "en": "Whatever it may be, we'll know tomorrow.",
-    "accept": [],
+    "accept": [
+      "Sea lo que sea, mañana lo sabremos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-usted",
@@ -31548,7 +31907,9 @@
     "id": "u59-1196",
     "es": "Quien no arriesgare, no ganará.",
     "en": "Whoever doesn't risk won't win.",
-    "accept": [],
+    "accept": [
+      "Quien no arriesgue, no ganará."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31570,7 +31931,9 @@
     "id": "u59-1197",
     "es": "El que sembrare vientos recogerá tempestades.",
     "en": "Whoever sows winds will reap storms.",
-    "accept": [],
+    "accept": [
+      "El que siembre vientos recogerá tempestades."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31595,31 +31958,28 @@
   },
   {
     "id": "u59-1198",
-    "es": "Quien quisiere celeste, que le cueste, decía mi tío.",
-    "en": "Whoever wants the sky blue, let it cost him, my uncle used to say.",
-    "accept": [],
+    "es": "Sea como fuere, mañana abrimos, decía mi tío.",
+    "en": "Be that as it may, we open tomorrow, my uncle used to say.",
+    "accept": [
+      "Sea como sea, mañana abrimos, decía mi tío."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
-      "g:gustar-full",
       "g:imperfect-habitual",
-      "g:relatives-donde-lo-que",
+      "g:present-er-ir",
+      "g:ser-identity",
       "g:subj-free-relatives",
-      "g:subj-wanting",
-      "g:that-clauses",
-      "l:celeste",
-      "l:costar",
+      "l:abrir",
       "l:decir",
-      "l:querer",
+      "l:mañana",
+      "l:se",
+      "l:ser",
       "l:tío",
-      "p:cuantas-veces-tengo-que",
-      "p:possessives-basic",
-      "p:que-subj-deseo",
-      "p:que-subj-repeated-order"
+      "p:possessives-basic"
     ],
     "targets": [
-      "g:future-subj-recognition",
-      "p:cuantas-veces-tengo-que"
+      "g:future-subj-recognition"
     ],
     "kind": "statement",
     "unit": "u59",
@@ -31628,26 +31988,32 @@
   },
   {
     "id": "u59-1199",
-    "es": "¿Cómo era ese refrán?\nQuien mal anduviere, mal acabará.",
-    "en": "How did that proverb go?\nWhoever goes badly will end badly.",
-    "accept": [],
+    "es": "¿Cómo era ese dicho?\nVenga lo que viniere, aquí nos quedamos.",
+    "en": "How did that saying go?\nCome what may, we're staying here.",
+    "accept": [
+      "¿Cómo era ese dicho?\nVenga lo que venga, aquí nos quedamos."
+    ],
     "acceptEn": [],
     "requires": [
       "c:como-era",
       "c:era",
       "g:demonstratives",
-      "g:future-promises",
       "g:future-subj-recognition",
       "g:imperfect-states",
+      "g:present-ar",
+      "g:reflexive-routine",
       "g:relatives-donde-lo-que",
       "g:ser-identity",
       "g:subj-free-relatives",
-      "l:acabar",
-      "l:andar",
+      "l:aquí",
       "l:cómo",
-      "l:mal",
-      "l:refrán",
+      "l:dicho",
+      "l:quedarse",
       "l:ser",
+      "l:venir",
+      "p:aqui-ahi-alla",
+      "p:digas-lo-que-digas",
+      "p:pase-lo-que-pase",
       "p:question-word-order"
     ],
     "targets": [
@@ -31662,7 +32028,9 @@
     "id": "u59-1200",
     "es": "Si el inquilino no desocupare el local, el dueño podrá llamar a la policía.",
     "en": "If the tenant does not vacate the premises, the owner may call the police.",
-    "accept": [],
+    "accept": [
+      "Si el inquilino no desocupa el local, el dueño podrá llamar a la policía."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31689,20 +32057,26 @@
   },
   {
     "id": "u59-1201",
-    "es": "Quien bien amare, tarde olvidará.",
-    "en": "Whoever loves well will forget late.",
-    "accept": [],
+    "es": "Quien causare daños al edificio deberá pagarlos.",
+    "en": "Whoever causes damage to the building must pay for it.",
+    "accept": [
+      "Quien cause daños al edificio deberá pagarlos."
+    ],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
+      "g:direct-objects",
       "g:future-promises",
       "g:future-subj-recognition",
+      "g:gender-articles",
+      "g:object-pronoun-position",
       "g:relatives-donde-lo-que",
       "g:subj-free-relatives",
-      "l:amar",
-      "l:bien",
-      "l:olvidar",
-      "l:tarde"
+      "g:tener-que-hay-que",
+      "l:causar",
+      "l:daño",
+      "l:deber",
+      "l:edificio",
+      "l:pagar"
     ],
     "targets": [
       "g:future-subj-recognition"
@@ -31716,7 +32090,9 @@
     "id": "u59-1202",
     "es": "El que a hierro matare, a hierro morirá.",
     "en": "Whoever kills by the sword will die by the sword.",
-    "accept": [],
+    "accept": [
+      "El que a hierro mate, a hierro morirá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31741,7 +32117,9 @@
     "id": "u59-1203",
     "es": "Quien pudiere, que ayude; quien no pudiere, que no moleste.",
     "en": "Let whoever can, help; whoever cannot, not bother.",
-    "accept": [],
+    "accept": [
+      "Quien pueda, que ayude; quien no pueda, que no moleste."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -31767,7 +32145,9 @@
     "id": "u59-1204",
     "es": "Cuando el pobre no tuviere, el rico le dará.",
     "en": "When the poor man has nothing, the rich man will give to him.",
-    "accept": [],
+    "accept": [
+      "Cuando el pobre no tenga, el rico le dará."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31792,7 +32172,9 @@
     "id": "u59-1205",
     "es": "Mi abuelo cerraba cada consejo con la misma frase: haz lo que vieres.",
     "en": "My grandfather ended every piece of advice with the same line: do as you see done.",
-    "accept": [],
+    "accept": [
+      "Mi abuelo cerraba cada consejo con la misma frase: haz lo que veas."
+    ],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
@@ -31820,26 +32202,24 @@
   },
   {
     "id": "u59-1206",
-    "es": "El libro de Hernando termina con una frase de su abuelo: Quien bien amare, tarde olvidará.",
-    "en": "Hernando's book ends with a line from his grandfather: Whoever loves well will forget late.",
-    "accept": [],
+    "es": "El libro de Hernando termina con una frase de su abuelo: venga lo que viniere.",
+    "en": "Hernando's book ends with a line from his grandfather: come what may.",
+    "accept": [
+      "El libro de Hernando termina con una frase de su abuelo: venga lo que venga."
+    ],
     "acceptEn": [],
     "requires": [
-      "c:bien-y-tu",
-      "g:future-promises",
       "g:future-subj-recognition",
       "g:gender-articles",
       "g:present-ar",
       "g:relatives-donde-lo-que",
       "g:subj-free-relatives",
       "l:abuelo",
-      "l:amar",
-      "l:bien",
       "l:frase",
       "l:libro",
-      "l:olvidar",
-      "l:tarde",
       "l:terminar",
+      "l:venir",
+      "p:pase-lo-que-pase",
       "p:possessives-basic"
     ],
     "targets": [
@@ -31854,7 +32234,9 @@
     "id": "u59-1207",
     "es": "Tomás leyó en voz alta el letrero: El que rompiere, pagará.",
     "en": "Tomás read the sign aloud: Whoever breaks it, pays for it.",
-    "accept": [],
+    "accept": [
+      "Tomás leyó en voz alta el letrero: El que rompa, pagará."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -31885,7 +32267,9 @@
     "id": "u59-1208",
     "es": "Quien tuviere hambre podrá comer en el café sin pagar hoy.",
     "en": "Whoever is hungry may eat at the café without paying today.",
-    "accept": [],
+    "accept": [
+      "Quien tenga hambre podrá comer en el café sin pagar hoy."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31916,7 +32300,9 @@
     "id": "u59-1209",
     "es": "Si alguien necesitare ayuda, que toque la campana.",
     "en": "If anyone needs help, let him ring the bell.",
-    "accept": [],
+    "accept": [
+      "Si alguien necesita ayuda, que toque la campana."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -31944,7 +32330,9 @@
     "id": "u59-1210",
     "es": "En su testamento, Rosa escribió: Quien cuidare el café heredará la llave.",
     "en": "In her will, Rosa wrote: Whoever looks after the café will inherit the key.",
-    "accept": [],
+    "accept": [
+      "En su testamento, Rosa escribió: Quien cuide el café heredará la llave."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -31973,7 +32361,9 @@
     "id": "u59-1211",
     "es": "El que quisiere entrar al desfile deberá inscribirse hoy.",
     "en": "Whoever wishes to join the parade must register today.",
-    "accept": [],
+    "accept": [
+      "El que quiera entrar al desfile deberá inscribirse hoy."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32004,7 +32394,9 @@
     "id": "u59-1212",
     "es": "Si lloviere durante el carnaval, el desfile será dentro del teatro.",
     "en": "If it should rain during the carnival, the parade will be inside the theatre.",
-    "accept": [],
+    "accept": [
+      "Si llueve durante el carnaval, el desfile será dentro del teatro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32034,7 +32426,9 @@
     "id": "u59-1213",
     "es": "Los asistentes que no trajeren boleto no podrán pasar.",
     "en": "Attendees who do not bring a ticket will not be able to enter.",
-    "accept": [],
+    "accept": [
+      "Los asistentes que no traigan boleto no podrán pasar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32063,7 +32457,9 @@
     "id": "u59-1214",
     "es": "Si el equipo ganare la final, habrá fiesta en la plaza.",
     "en": "If the team wins the final, there will be a party in the square.",
-    "accept": [],
+    "accept": [
+      "Si el equipo gana la final, habrá fiesta en la plaza."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32088,7 +32484,9 @@
     "id": "u59-1215",
     "es": "Quien no estuviere listo a las seis se quedará en tierra.",
     "en": "Whoever isn't ready at six will be left behind.",
-    "accept": [],
+    "accept": [
+      "Quien no esté listo a las seis se quedará en tierra."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -32116,7 +32514,9 @@
     "id": "u59-1216",
     "es": "Si hiciere frío en la noche, pidan otra manta en la recepción.",
     "en": "If it should get cold at night, ask for another blanket at reception.",
-    "accept": [],
+    "accept": [
+      "Si hace frío en la noche, pidan otra manta en la recepción."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32145,7 +32545,9 @@
     "id": "u59-1217",
     "es": "Los pasajeros que perdieren el equipaje deberán avisar al conductor.",
     "en": "Passengers who lose their luggage must tell the driver.",
-    "accept": [],
+    "accept": [
+      "Los pasajeros que pierdan el equipaje deberán avisar al conductor."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32173,7 +32575,9 @@
     "id": "u59-1218",
     "es": "Si la lluvia no cesare, el bus no saldrá.",
     "en": "If the rain doesn't stop, the bus will not leave.",
-    "accept": [],
+    "accept": [
+      "Si la lluvia no cesa, el bus no saldrá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32197,7 +32601,9 @@
     "id": "u59-1219",
     "es": "Quien rompiere un plato lo pagará.",
     "en": "Whoever breaks a plate will pay for it.",
-    "accept": [],
+    "accept": [
+      "Quien rompa un plato lo pagará."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -32222,7 +32628,9 @@
     "id": "u59-1220",
     "es": "¿Qué dice el cartel de la puerta?\nQue quien llegare tarde no entrará al concierto.",
     "en": "What does the sign on the door say?\nThat whoever arrives late will not get into the concert.",
-    "accept": [],
+    "accept": [
+      "¿Qué dice el cartel de la puerta?\nQue quien llegue tarde no entrará al concierto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32254,7 +32662,9 @@
     "id": "u59-1221",
     "es": "Si el niño llorare, la madre podrá salir con él.",
     "en": "If the child cries, the mother may leave with him.",
-    "accept": [],
+    "accept": [
+      "Si el niño llora, la madre podrá salir con él."
+    ],
     "acceptEn": [],
     "requires": [
       "c:con-el-ella",
@@ -32281,7 +32691,9 @@
     "id": "u59-1222",
     "es": "Quien necesitare más información puede escribir al correo del barrio.",
     "en": "Anyone who needs more information may write to the neighbourhood email.",
-    "accept": [],
+    "accept": [
+      "Quien necesite más información puede escribir al correo del barrio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32309,7 +32721,9 @@
     "id": "u59-1223",
     "es": "Todo el que entrare a la finca cerrará la puerta.",
     "en": "Everyone who enters the farm will close the door.",
-    "accept": [],
+    "accept": [
+      "Todo el que entre a la finca cerrará la puerta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32334,7 +32748,9 @@
     "id": "u59-1224",
     "es": "Si algún día volviere Hernando, le guardaremos su mesa.",
     "en": "If Hernando should ever come back, we will keep his table for him.",
-    "accept": [],
+    "accept": [
+      "Si algún día vuelve Hernando, le guardaremos su mesa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32360,7 +32776,9 @@
     "id": "u59-1225",
     "es": "Si me muriere antes que tú, cuida de Simón.",
     "en": "If I should die before you, take care of Simón.",
-    "accept": [],
+    "accept": [
+      "Si me muero antes que tú, cuida de Simón."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32383,7 +32801,9 @@
     "id": "u59-1226",
     "es": "Quien leyere esta carta sabrá cuánto quise a este lugar.",
     "en": "Whoever reads this letter will know how much I loved this place.",
-    "accept": [],
+    "accept": [
+      "Quien lea esta carta sabrá cuánto quise a este lugar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-conjecture",
@@ -32414,7 +32834,9 @@
     "id": "u59-1227",
     "es": "¿Quién abre el sobre?\nEl que quisiere, pero que lo lea en voz alta.",
     "en": "Who opens the envelope?\nWhoever wants to, but let him read it aloud.",
-    "accept": [],
+    "accept": [
+      "¿Quién abre el sobre?\nEl que quiera, pero que lo lea en voz alta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -32451,7 +32873,9 @@
     "id": "u59-1228",
     "es": "Si el señor Altamira llegare antes de las ocho, será atendido en la sala.",
     "en": "If Mr Altamira arrives before eight, he will be received in the meeting room.",
-    "accept": [],
+    "accept": [
+      "Si el señor Altamira llega antes de las ocho, será atendido en la sala."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32479,7 +32903,9 @@
     "id": "u59-1229",
     "es": "Si los invitados fueren muchos, abriremos el patio.",
     "en": "If the guests are many, we will open the patio.",
-    "accept": [],
+    "accept": [
+      "Si los invitados son muchos, abriremos el patio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32505,7 +32931,9 @@
     "id": "u59-1230",
     "es": "Quien se perdiere en el pueblo preguntará por la plaza.",
     "en": "Whoever gets lost in the village will ask for the square.",
-    "accept": [],
+    "accept": [
+      "Quien se pierda en el pueblo preguntará por la plaza."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32533,7 +32961,9 @@
     "id": "u59-1231",
     "es": "Cuando el sol se pusiere, empezará la música.",
     "en": "When the sun sets, the music will begin.",
-    "accept": [],
+    "accept": [
+      "Cuando el sol se ponga, empezará la música."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32558,7 +32988,9 @@
     "id": "u59-1232",
     "es": "Si el abogado tardare, empezaremos sin él.",
     "en": "If the lawyer is late, we will start without him.",
-    "accept": [],
+    "accept": [
+      "Si el abogado tarda, empezaremos sin él."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32582,7 +33014,9 @@
     "id": "u59-1233",
     "es": "El que supiere bailar bambuco pasará al frente.",
     "en": "Whoever knows how to dance bambuco will come to the front.",
-    "accept": [],
+    "accept": [
+      "El que sepa bailar bambuco pasará al frente."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32611,7 +33045,9 @@
     "id": "u59-1234",
     "es": "Si la dueña lo permitiere, se publicará la receta.",
     "en": "If the owner allows it, the recipe will be published.",
-    "accept": [],
+    "accept": [
+      "Si la dueña lo permite, se publicará la receta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -32637,7 +33073,9 @@
     "id": "u59-1235",
     "es": "La persona que viniere de parte de Altamira recibirá un tinto frío.",
     "en": "The person who comes on behalf of Altamira will receive a cold black coffee.",
-    "accept": [],
+    "accept": [
+      "La persona que venga de parte de Altamira recibirá un tinto frío."
+    ],
     "acceptEn": [],
     "requires": [
       "c:de-parte-de-quien",
@@ -32666,7 +33104,9 @@
     "id": "u59-1236",
     "es": "Quienes no creyeren esta historia pueden preguntar a los vecinos.",
     "en": "Those who do not believe this story may ask the neighbours.",
-    "accept": [],
+    "accept": [
+      "Quienes no crean esta historia pueden preguntar a los vecinos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32695,7 +33135,9 @@
     "id": "u59-1237",
     "es": "Si algún día fuere tarde para volver, que no sea por orgullo.",
     "en": "If someday it should be too late to return, let it not be out of pride.",
-    "accept": [],
+    "accept": [
+      "Si algún día es tarde para volver, que no sea por orgullo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32726,7 +33168,9 @@
     "id": "u59-1238",
     "es": "Quien leyere este libro entenderá por qué me quedé.",
     "en": "Whoever reads this book will understand why I stayed.",
-    "accept": [],
+    "accept": [
+      "Quien lea este libro entenderá por qué me quedé."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32755,7 +33199,9 @@
     "id": "u59-1239",
     "es": "Si en algún lugar encontrare yo la paz, allí me quedaré.",
     "en": "If I find peace anywhere, I will stay there.",
-    "accept": [],
+    "accept": [
+      "Si en algún lugar encuentro yo la paz, allí me quedaré."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32783,7 +33229,9 @@
     "id": "u59-1240",
     "es": "¿Esto es de una novela?\nSí, de una muy antigua: Adonde fueres, haz lo que vieres.",
     "en": "Is this from a novel?\nYes, a very old one: Wherever you go, do as you see done.",
-    "accept": [],
+    "accept": [
+      "¿Esto es de una novela?\nSí, de una muy antigua: Adonde vayas, haz lo que veas."
+    ],
     "acceptEn": [],
     "requires": [
       "c:claro-listo",
@@ -32815,7 +33263,9 @@
     "id": "u59-1241",
     "es": "Mi abuela leía novelas donde todos decían: Si Dios quisiere, nos veremos.",
     "en": "My grandmother read novels where everybody said: God willing, we will see each other.",
-    "accept": [],
+    "accept": [
+      "Mi abuela leía novelas donde todos decían: Si Dios quiere, nos veremos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32844,7 +33294,9 @@
     "id": "u59-1242",
     "es": "En la carta decía: Si pudiere, iré a verte en diciembre.",
     "en": "The letter said: If I can, I will come to see you in December.",
-    "accept": [],
+    "accept": [
+      "En la carta decía: Si puedo, iré a verte en diciembre."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -32874,7 +33326,9 @@
     "id": "u59-1243",
     "es": "Si hubiere alguna duda, pregunten en la recepción.",
     "en": "If there should be any doubt, ask at reception.",
-    "accept": [],
+    "accept": [
+      "Si hay alguna duda, pregunten en la recepción."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -32899,7 +33353,9 @@
     "id": "u59-1244",
     "es": "Quien tuviere oídos, que oiga.",
     "en": "Whoever has ears, let him hear.",
-    "accept": [],
+    "accept": [
+      "Quien tenga oídos, que oiga."
+    ],
     "acceptEn": [],
     "requires": [
       "c:oiga-oye",
@@ -32926,7 +33382,9 @@
     "id": "u59-1245",
     "es": "Ay de aquel que olvidare sus raíces.",
     "en": "Woe to the one who forgets his roots.",
-    "accept": [],
+    "accept": [
+      "Ay de aquel que olvide sus raíces."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -32948,7 +33406,9 @@
     "id": "u59-1246",
     "es": "Cualquiera que dudare de mi palabra puede preguntarle a mi madre.",
     "en": "Anyone who doubts my word may ask my mother.",
-    "accept": [],
+    "accept": [
+      "Cualquiera que dude de mi palabra puede preguntarle a mi madre."
+    ],
     "acceptEn": [],
     "requires": [
       "g:cada-cualquier",
@@ -32979,7 +33439,10 @@
     "id": "u59-1247",
     "es": "¿Por qué hablás así, como en un libro viejo?\nPorque estoy leyendo uno: Cuando llegare el invierno, volveré.",
     "en": "Why do you talk like that, as in an old book? (vos)\nBecause I'm reading one: When winter comes, I will return.",
-    "accept": [],
+    "accept": [
+      "¿Por qué hablas así, como en un libro viejo?\nPorque estoy leyendo uno: Cuando llegue el invierno, volveré.",
+      "¿Por qué hablas así, como en un libro viejo?\nPorque estoy leyendo uno: Cuando llegare el invierno, volveré."
+    ],
     "acceptEn": [],
     "requires": [
       "c:porque",
@@ -33017,7 +33480,9 @@
     "id": "u59-1248",
     "es": "Si llegare a faltarme el dinero, pediré ayuda a mis amigos.",
     "en": "If I should run short of money, I will ask my friends for help.",
-    "accept": [],
+    "accept": [
+      "Si llega a faltarme el dinero, pediré ayuda a mis amigos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33048,7 +33513,9 @@
     "id": "u59-1249",
     "es": "Quien estuviere cansado del camino, que descanse en esta casa.",
     "en": "Whoever is tired from the road, let him rest in this house.",
-    "accept": [],
+    "accept": [
+      "Quien esté cansado del camino, que descanse en esta casa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -33080,7 +33547,9 @@
     "id": "u59-1250",
     "es": "Los que llegaren de lejos serán recibidos con un tinto caliente.",
     "en": "Those who come from far away will be welcomed with a hot black coffee.",
-    "accept": [],
+    "accept": [
+      "Los que lleguen de lejos serán recibidos con un tinto caliente."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33109,7 +33578,9 @@
     "id": "u59-1251",
     "es": "Donde quiera que fueres, lleva el nombre de tu pueblo.",
     "en": "Wherever you may go, carry the name of your village.",
-    "accept": [],
+    "accept": [
+      "Donde quiera que vayas, lleva el nombre de tu pueblo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -33139,7 +33610,9 @@
     "id": "u59-1252",
     "es": "Si te vieres en problemas, escríbeme.",
     "en": "If you find yourself in trouble, write to me.",
-    "accept": [],
+    "accept": [
+      "Si te ves en problemas, escríbeme."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -33163,7 +33636,9 @@
     "id": "u59-1253",
     "es": "Cuando fueres mayor, entenderás lo que digo.",
     "en": "When you are older, you will understand what I say.",
-    "accept": [],
+    "accept": [
+      "Cuando seas mayor, entenderás lo que digo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33191,7 +33666,9 @@
     "id": "u59-1254",
     "es": "Haz lo que quisieres, pero no olvides de dónde vienes.",
     "en": "Do whatever you wish, but do not forget where you come from.",
-    "accept": [],
+    "accept": [
+      "Haz lo que quieras, pero no olvides de dónde vienes."
+    ],
     "acceptEn": [],
     "requires": [
       "g:commands-tu",
@@ -33219,7 +33696,9 @@
     "id": "u59-1255",
     "es": "Quien se sintiere perdido encontrará camino en la música.",
     "en": "Whoever feels lost will find a way in music.",
-    "accept": [],
+    "accept": [
+      "Quien se sienta perdido encontrará camino en la música."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33247,7 +33726,9 @@
     "id": "u59-1256",
     "es": "Si estuviere escrito, sucederá.",
     "en": "If it is written, it will happen.",
-    "accept": [],
+    "accept": [
+      "Si está escrito, sucederá."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -33270,7 +33751,9 @@
     "id": "u59-1257",
     "es": "Como quiera que fuere, nos veremos el sábado.",
     "en": "However it may be, we will see each other on Saturday.",
-    "accept": [],
+    "accept": [
+      "Como quiera que sea, nos veremos el sábado."
+    ],
     "acceptEn": [],
     "requires": [
       "g:cause-result",
@@ -33301,7 +33784,9 @@
     "id": "u59-1258",
     "es": "Si algún día tuviere una hija, le pondré Rosa.",
     "en": "If I should ever have a daughter, I'll call her Rosa.",
-    "accept": [],
+    "accept": [
+      "Si algún día tengo una hija, le pondré Rosa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33327,7 +33812,9 @@
     "id": "u59-1259",
     "es": "Quien viere a Simón en la calle, que me avise.",
     "en": "Whoever sees Simón in the street, let him tell me.",
-    "accept": [],
+    "accept": [
+      "Quien vea a Simón en la calle, que me avise."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-subj-recognition",
@@ -33357,7 +33844,9 @@
     "id": "u59-1260",
     "es": "El que anduviere por esta calle de noche llevará una linterna.",
     "en": "Whoever walks along this street at night will carry a flashlight.",
-    "accept": [],
+    "accept": [
+      "El que ande por esta calle de noche llevará una linterna."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33386,7 +33875,9 @@
     "id": "u59-1261",
     "es": "Si al regresar no hallare la casa, buscaré en la plaza.",
     "en": "If on returning I do not find the house, I will look in the square.",
-    "accept": [],
+    "accept": [
+      "Si al regresar no hallo la casa, buscaré en la plaza."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33412,7 +33903,9 @@
     "id": "u59-1262",
     "es": "Cuando el café estuviere listo, avisaré a todos.",
     "en": "When the coffee is ready, I will let everyone know.",
-    "accept": [],
+    "accept": [
+      "Cuando el café esté listo, avisaré a todos."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -33437,7 +33930,9 @@
     "id": "u59-1263",
     "es": "¿Y esa frase tan solemne?\nEs del reglamento del carnaval: Quien bailare, que baile con alegría.",
     "en": "And that solemn phrase?\nIt's from the carnival rules: Whoever dances, let him dance with joy.",
-    "accept": [],
+    "accept": [
+      "¿Y esa frase tan solemne?\nEs del reglamento del carnaval: Quien baile, que baile con alegría."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -33469,7 +33964,9 @@
     "id": "u59-1264",
     "es": "Quien tuviere un secreto, que lo guarde bien.",
     "en": "Whoever has a secret, let him keep it well.",
-    "accept": [],
+    "accept": [
+      "Quien tenga un secreto, que lo guarde bien."
+    ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
@@ -33501,7 +33998,9 @@
     "id": "u59-1265",
     "es": "Si el tiempo lo permitiere, saldremos de noche.",
     "en": "If the weather allows, we will go out at night.",
-    "accept": [],
+    "accept": [
+      "Si el tiempo lo permite, saldremos de noche."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -33526,7 +34025,9 @@
     "id": "u59-1266",
     "es": "Los que no hubieren pagado la cuota no podrán votar.",
     "en": "Those who have not paid the fee will not be able to vote.",
-    "accept": [],
+    "accept": [
+      "Los que no hayan pagado la cuota no podrán votar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33553,7 +34054,9 @@
     "id": "u59-1267",
     "es": "Si alguien me preguntare por Tomás, diré que está de viaje.",
     "en": "If anyone asks me about Tomás, I will say he's away.",
-    "accept": [],
+    "accept": [
+      "Si alguien me pregunta por Tomás, diré que está de viaje."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -33582,7 +34085,9 @@
     "id": "u59-1268",
     "es": "Quien lo viere me lo diga; quien no, que calle.",
     "en": "Whoever sees it, tell me; whoever doesn't, keep quiet.",
-    "accept": [],
+    "accept": [
+      "Quien lo vea me lo diga; quien no, que calle."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -33609,7 +34114,9 @@
     "id": "u59-1269",
     "es": "¿Cómo se firma esto?\nQuien firmare primero lo hará en la línea de arriba.",
     "en": "How do you sign this?\nWhoever signs first will do it on the top line.",
-    "accept": [],
+    "accept": [
+      "¿Cómo se firma esto?\nQuien firme primero lo hará en la línea de arriba."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -33641,7 +34148,9 @@
     "id": "u59-1270",
     "es": "Cuando mi madre volviere de Tunja, haremos una gran cena.",
     "en": "When my mother returns from Tunja, we will make a big dinner.",
-    "accept": [],
+    "accept": [
+      "Cuando mi madre vuelva de Tunja, haremos una gran cena."
+    ],
     "acceptEn": [],
     "requires": [
       "g:future-promises",
@@ -33667,7 +34176,9 @@
     "id": "u59-1271",
     "es": "Si me quisieres, vendrás a ver el carnaval conmigo.",
     "en": "If you love me, you will come and see the carnival with me.",
-    "accept": [],
+    "accept": [
+      "Si me quieres, vendrás a ver el carnaval conmigo."
+    ],
     "acceptEn": [],
     "requires": [
       "c:a-ver",

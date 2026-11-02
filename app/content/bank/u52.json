@@ -5307,7 +5307,9 @@
     "id": "u52-0206",
     "es": "Parecía imposible que acabásemos llevándonos bien, pero pasó.",
     "en": "It seemed impossible that we would end up getting along, but it happened.",
-    "accept": [],
+    "accept": [
+      "Parecía imposible que acabáramos llevándonos bien, pero pasó."
+    ],
     "acceptEn": [],
     "requires": [
       "c:bien-y-tu",
@@ -5391,7 +5393,9 @@
     "id": "u52-0209",
     "es": "Quería que la historia acabase siendo verdad, aunque no lo fuese.",
     "en": "He wanted the story to end up being true, even if it wasn't.",
-    "accept": [],
+    "accept": [
+      "Quería que la historia acabara siendo verdad, aunque no lo fuera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -5911,7 +5915,9 @@
     "id": "u52-0229",
     "es": "Jamás llegué a pensar que me pidiese perdón.",
     "en": "I never once imagined he would ask me for forgiveness.",
-    "accept": [],
+    "accept": [
+      "Jamás llegué a pensar que me pidiera perdón."
+    ],
     "acceptEn": [],
     "requires": [
       "g:preterite-spelling-stem",
@@ -6106,7 +6112,9 @@
     "id": "u52-0236",
     "es": "Si me pidieses que lo contase otra vez, acabaría contándolo distinto.",
     "en": "If you asked me to tell it again, I'd end up telling it differently. (to a friend)",
-    "accept": [],
+    "accept": [
+      "Si me pidieras que lo contara otra vez, acabaría contándolo distinto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -6139,7 +6147,9 @@
     "id": "u52-0237",
     "es": "Hernando pidió que la escena acabase revelando quién tenía la llave.",
     "en": "Hernando asked for the scene to end by revealing who had the key.",
-    "accept": [],
+    "accept": [
+      "Hernando pidió que la escena acabara revelando quién tenía la llave."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -6231,7 +6241,9 @@
     "id": "u52-0240",
     "es": "Aunque se resistiese, la señora acabaría por firmar el papel.",
     "en": "Even if she resisted, the lady would end up signing the paper.",
-    "accept": [],
+    "accept": [
+      "Aunque se resistiera, la señora acabaría por firmar el papel."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -6261,7 +6273,9 @@
     "id": "u52-0241",
     "es": "Esperaba que nadie acabase pagando toda la cuenta.",
     "en": "I hoped nobody would end up paying the whole bill.",
-    "accept": [],
+    "accept": [
+      "Esperaba que nadie acabara pagando toda la cuenta."
+    ],
     "acceptEn": [],
     "requires": [
       "c:la-cuenta",
@@ -6682,7 +6696,9 @@
     "id": "u52-0256",
     "es": "¿Y si Hernando acabase por no publicarlo?",
     "en": "And what if Hernando ended up not publishing it?",
-    "accept": [],
+    "accept": [
+      "¿Y si Hernando acabara por no publicarlo?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -6939,7 +6955,9 @@
     "id": "u52-0266",
     "es": "Por mucho que lo negase, acabó por admitirlo.",
     "en": "However much he denied it, he ended up admitting it.",
-    "accept": [],
+    "accept": [
+      "Por mucho que lo negara, acabó por admitirlo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -6968,7 +6986,9 @@
     "id": "u52-0267",
     "es": "No quiso que su hija supiese lo del préstamo, pero acabó enterándose.",
     "en": "He didn't want his daughter to know about the loan, but she ended up finding out.",
-    "accept": [],
+    "accept": [
+      "No quiso que su hija supiera lo del préstamo, pero acabó enterándose."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -7696,7 +7716,9 @@
     "id": "u52-0294",
     "es": "Si lo supiese, se echaría a reír.",
     "en": "If he knew, he would burst out laughing.",
-    "accept": [],
+    "accept": [
+      "Si lo supiera, se echaría a reír."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -7723,7 +7745,9 @@
     "id": "u52-0295",
     "es": "Me pidió que no me echase a reír durante el discurso.",
     "en": "She asked me not to burst out laughing during the speech.",
-    "accept": [],
+    "accept": [
+      "Me pidió que no me echara a reír durante el discurso."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -7754,7 +7778,9 @@
     "id": "u52-0296",
     "es": "Si me dijesen eso en la cara, rompería a llorar.",
     "en": "If they said that to my face, I'd burst into tears.",
-    "accept": [],
+    "accept": [
+      "Si me dijeran eso en la cara, rompería a llorar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -8352,7 +8378,9 @@
     "id": "u52-0320",
     "es": "Si estallase otra crisis, nos quedaríamos sin plata.",
     "en": "If another crisis broke out, we'd be left without money.",
-    "accept": [],
+    "accept": [
+      "Si estallara otra crisis, nos quedaríamos sin plata."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -8380,7 +8408,9 @@
     "id": "u52-0321",
     "es": "Temía que el escándalo estallase antes de que el libro saliera.",
     "en": "He feared the scandal would break before the book came out.",
-    "accept": [],
+    "accept": [
+      "Temía que el escándalo estallara antes de que el libro saliera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -10375,7 +10405,9 @@
     "id": "u52-0393",
     "es": "Se subió al escenario sin que nadie se lo pidiese.",
     "en": "He went up on stage without anyone asking him to.",
-    "accept": [],
+    "accept": [
+      "Se subió al escenario sin que nadie se lo pidiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:double-pronouns",
@@ -12510,7 +12542,9 @@
     "id": "u52-0478",
     "es": "Venía a pedir una hora con el doctor, si fuese posible.",
     "en": "I was hoping to ask for an appointment with the doctor, if that were possible.",
-    "accept": [],
+    "accept": [
+      "Venía a pedir una hora con el doctor, si fuera posible."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -15930,7 +15964,9 @@
     "id": "u52-0611",
     "es": "Me preocupó el hecho de que no llamase en toda la semana.",
     "en": "The fact that he didn't call all week worried me.",
-    "accept": [],
+    "accept": [
+      "Me preocupó el hecho de que no llamara en toda la semana."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -15986,7 +16022,9 @@
     "id": "u52-0613",
     "es": "El hecho de que Rosa nunca lo supiese le pesaba a Hernando como una piedra.",
     "en": "The fact that Rosa never knew weighed on Hernando like a stone.",
-    "accept": [],
+    "accept": [
+      "El hecho de que Rosa nunca lo supiera le pesaba a Hernando como una piedra."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -16371,7 +16409,9 @@
     "id": "u52-0626",
     "es": "No lo detuvo el hecho de que no hubiese ninguna prueba.",
     "en": "The fact that there was no proof didn't stop him.",
-    "accept": [],
+    "accept": [
+      "No lo detuvo el hecho de que no hubiera ninguna prueba."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -16626,7 +16666,9 @@
     "id": "u52-0635",
     "es": "Nada cambió por el hecho de que la sesión empezase tarde.",
     "en": "Nothing changed just because the session started late.",
-    "accept": [],
+    "accept": [
+      "Nada cambió por el hecho de que la sesión empezara tarde."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -16714,7 +16756,9 @@
     "id": "u52-0638",
     "es": "El hecho de que ella viniese de lejos hizo la reunión más especial.",
     "en": "The fact that she came from afar made the meeting more special.",
-    "accept": [],
+    "accept": [
+      "El hecho de que ella viniera de lejos hizo la reunión más especial."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -16805,7 +16849,9 @@
     "id": "u52-0641",
     "es": "Me molesta el hecho de que lo hicieses sin preguntar.",
     "en": "It bothers me that you did it without asking. (to a friend)",
-    "accept": [],
+    "accept": [
+      "Me molesta el hecho de que lo hicieras sin preguntar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -17142,7 +17188,9 @@
     "id": "u52-0653",
     "es": "Con el tiempo, el hecho de que Hernando fuese taxista se volvió parte de su leyenda.",
     "en": "In time, the fact that Hernando had been a taxi driver became part of his legend.",
-    "accept": [],
+    "accept": [
+      "Con el tiempo, el hecho de que Hernando fuera taxista se volvió parte de su leyenda."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -17176,7 +17224,9 @@
     "id": "u52-0654",
     "es": "El hecho de que la tragedia ocurriese de día la hizo más difícil de olvidar.",
     "en": "The fact that the tragedy happened in daylight made it harder to forget.",
-    "accept": [],
+    "accept": [
+      "El hecho de que la tragedia ocurriera de día la hizo más difícil de olvidar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -17487,7 +17537,9 @@
     "id": "u52-0664",
     "es": "Fue una noche mortal; el hecho de que nadie dijese nada la hizo peor.",
     "en": "It was a deadly night; the fact that nobody said anything made it worse.",
-    "accept": [],
+    "accept": [
+      "Fue una noche mortal; el hecho de que nadie dijera nada la hizo peor."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -17586,7 +17638,9 @@
     "id": "u52-0667",
     "es": "El hecho de que constase en el registro no lo hacía menos falso.",
     "en": "The fact that it was on record didn't make it any less false.",
-    "accept": [],
+    "accept": [
+      "El hecho de que constara en el registro no lo hacía menos falso."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -17853,7 +17907,9 @@
     "id": "u52-0676",
     "es": "El hecho de que estallase la guerra no cambió el horario del café.",
     "en": "The fact that war broke out didn't change the café's hours.",
-    "accept": [],
+    "accept": [
+      "El hecho de que estallara la guerra no cambió el horario del café."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -17910,7 +17966,9 @@
     "id": "u52-0678",
     "es": "Para algunos, el hecho de que Hernando llegase a dudar de su memoria es una señal de que no miente.",
     "en": "For some, the fact that Hernando even came to doubt his memory is a sign that he isn't lying.",
-    "accept": [],
+    "accept": [
+      "Para algunos, el hecho de que Hernando llegara a dudar de su memoria es una señal de que no miente."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -17946,7 +18004,9 @@
     "id": "u52-0679",
     "es": "El hecho de que acabásemos por entendernos fue un milagro.",
     "en": "The fact that we ended up understanding each other was a miracle.",
-    "accept": [],
+    "accept": [
+      "El hecho de que acabáramos por entendernos fue un milagro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18011,7 +18071,9 @@
     "id": "u52-0681",
     "es": "Se dio la casualidad de que el día del estreno llovió sin parar; el hecho de que la sala se llenase fue un milagro.",
     "en": "It so happened that it rained nonstop on opening night; the fact that the hall filled up was a miracle.",
-    "accept": [],
+    "accept": [
+      "Se dio la casualidad de que el día del estreno llovió sin parar; el hecho de que la sala se llenara fue un milagro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18186,7 +18248,9 @@
     "id": "u52-0686",
     "es": "Me comí el postre sin importarme el hecho de que fuese el de Hernando.",
     "en": "I ate the dessert without caring that it was Hernando's.",
-    "accept": [],
+    "accept": [
+      "Me comí el postre sin importarme el hecho de que fuera el de Hernando."
+    ],
     "acceptEn": [],
     "requires": [
       "c:comi",
@@ -18347,7 +18411,9 @@
     "id": "u52-0691",
     "es": "No hay que olvidar el hecho de que fuese un accidente.",
     "en": "We mustn't forget the fact that it was an accident.",
-    "accept": [],
+    "accept": [
+      "No hay que olvidar el hecho de que fuera un accidente."
+    ],
     "acceptEn": [],
     "requires": [
       "c:hay",
@@ -18661,7 +18727,9 @@
     "id": "u52-0702",
     "es": "Cuando el café estaba lleno, nadie notaba el hecho de que la máquina fallase.",
     "en": "When the café was full, nobody noticed that the machine was failing.",
-    "accept": [],
+    "accept": [
+      "Cuando el café estaba lleno, nadie notaba el hecho de que la máquina fallara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -18726,7 +18794,9 @@
     "id": "u52-0704",
     "es": "En tiempos de Rosa, nadie esperaba que una mujer dirigiese un café en la Candelaria.",
     "en": "In Rosa's day, nobody expected a woman to run a café in La Candelaria.",
-    "accept": [],
+    "accept": [
+      "En tiempos de Rosa, nadie esperaba que una mujer dirigiera un café en la Candelaria."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18754,7 +18824,9 @@
     "id": "u52-0705",
     "es": "En la época de los tranvías, la gente quería que el viaje durase para siempre.",
     "en": "In the days of the trams, people wanted the journey to last forever.",
-    "accept": [],
+    "accept": [
+      "En la época de los tranvías, la gente quería que el viaje durara para siempre."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18788,7 +18860,9 @@
     "id": "u52-0706",
     "es": "En tiempos de mi abuela, el que no supiese leer pedía ayuda en la plaza.",
     "en": "In my grandmother's day, whoever couldn't read asked for help in the square.",
-    "accept": [],
+    "accept": [
+      "En tiempos de mi abuela, el que no supiera leer pedía ayuda en la plaza."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18821,7 +18895,9 @@
     "id": "u52-0707",
     "es": "En otros tiempos, un taxista como Hernando habría preferido que nadie lo escuchase.",
     "en": "In other times, a taxi driver like Hernando would have preferred that nobody listen to him.",
-    "accept": [],
+    "accept": [
+      "En otros tiempos, un taxista como Hernando habría preferido que nadie lo escuchara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -18850,7 +18926,9 @@
     "id": "u52-0708",
     "es": "En la época de la Violencia, nadie quería que sus hijos se quedasen en el campo.",
     "en": "In the time of La Violencia, nobody wanted their children to stay in the countryside.",
-    "accept": [],
+    "accept": [
+      "En la época de la Violencia, nadie quería que sus hijos se quedaran en el campo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -18881,7 +18959,9 @@
     "id": "u52-0709",
     "es": "En tiempos de Rosa, los vecinos defendían el barrio sin que hiciesen falta abogados.",
     "en": "In Rosa's day, the neighbours defended the neighbourhood without any need for lawyers.",
-    "accept": [],
+    "accept": [
+      "En tiempos de Rosa, los vecinos defendían el barrio sin que hicieran falta abogados."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19032,7 +19112,9 @@
     "id": "u52-0714",
     "es": "En la época del teatro de barrio, una representación duraba lo que quisiese el público.",
     "en": "In the days of neighbourhood theatre, a performance lasted as long as the audience wanted.",
-    "accept": [],
+    "accept": [
+      "En la época del teatro de barrio, una representación duraba lo que quisiera el público."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19091,7 +19173,9 @@
     "id": "u52-0716",
     "es": "Ese olor a tinto le traía recuerdos a Hernando, aunque no quisiese admitirlo.",
     "en": "That smell of coffee brought back memories for Hernando, though he wouldn't admit it.",
-    "accept": [],
+    "accept": [
+      "Ese olor a tinto le traía recuerdos a Hernando, aunque no quisiera admitirlo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -19157,7 +19241,9 @@
     "id": "u52-0718",
     "es": "Esa melodía en do mayor me trae recuerdos que preferiría que no volviesen.",
     "en": "That melody in C major brings back memories I'd prefer didn't return.",
-    "accept": [],
+    "accept": [
+      "Esa melodía en do mayor me trae recuerdos que preferiría que no volvieran."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
@@ -19225,7 +19311,9 @@
     "id": "u52-0720",
     "es": "Esa frase me trae recuerdos de Rosa, como si ella misma me la dijese al oído.",
     "en": "That sentence brings back memories of Rosa, as if she herself were saying it in my ear.",
-    "accept": [],
+    "accept": [
+      "Esa frase me trae recuerdos de Rosa, como si ella misma me la dijera al oído."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -19315,7 +19403,9 @@
     "id": "u52-0723",
     "es": "Hernando esperó a que le viniese a la memoria el nombre del director.",
     "en": "Hernando waited for the director's name to come to mind.",
-    "accept": [],
+    "accept": [
+      "Hernando esperó a que le viniera a la memoria el nombre del director."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19378,7 +19468,9 @@
     "id": "u52-0725",
     "es": "No te puedes ni imaginar lo que pasó cuando el productor quiso que Hernando cantase.",
     "en": "You can't even imagine what happened when the producer wanted Hernando to sing. (to a friend)",
-    "accept": [],
+    "accept": [
+      "No te puedes ni imaginar lo que pasó cuando el productor quiso que Hernando cantara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19478,7 +19570,9 @@
     "id": "u52-0728",
     "es": "No sabes lo que me costó convencer al crítico de que viniese a la función.",
     "en": "You've no idea how hard it was to convince the critic to come to the show. (to a friend)",
-    "accept": [],
+    "accept": [
+      "No sabes lo que me costó convencer al crítico de que viniera a la función."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19514,7 +19608,9 @@
     "id": "u52-0729",
     "es": "No te puedes ni imaginar lo difícil que fue encontrar una cabaña donde nadie nos molestase.",
     "en": "You can't even imagine how hard it was to find a cabin where nobody would bother us. (to a friend)",
-    "accept": [],
+    "accept": [
+      "No te puedes ni imaginar lo difícil que fue encontrar una cabaña donde nadie nos molestara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -19591,7 +19687,9 @@
     "id": "u52-0731",
     "es": "No sabes lo caro que salía un retrato en esa época, por pequeño que fuese.",
     "en": "You've no idea how expensive a portrait was in that time, however small it was. (to a friend)",
-    "accept": [],
+    "accept": [
+      "No sabes lo caro que salía un retrato en esa época, por pequeño que fuera."
+    ],
     "acceptEn": [],
     "requires": [
       "c:en-esa-epoca",
@@ -19666,7 +19764,9 @@
     "id": "u52-0733",
     "es": "No sabes lo que daría por que Rosa viese la representación de esta noche.",
     "en": "You've no idea what I would give for Rosa to see tonight's show. (to a friend)",
-    "accept": [],
+    "accept": [
+      "No sabes lo que daría por que Rosa viera la representación de esta noche."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -19729,7 +19829,9 @@
     "id": "u52-0735",
     "es": "Cuando el crítico subió al escenario, la sala se echó a reír sin que nadie lo pidiese.",
     "en": "When the critic went up on stage, the hall burst out laughing without anyone asking it to.",
-    "accept": [],
+    "accept": [
+      "Cuando el crítico subió al escenario, la sala se echó a reír sin que nadie lo pidiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -20961,7 +21063,9 @@
     "id": "u52-0778",
     "es": "La interpretación del actor hizo que la escena pareciese verdadera.",
     "en": "The actor's performance made the scene seem real.",
-    "accept": [],
+    "accept": [
+      "La interpretación del actor hizo que la escena pareciera verdadera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -21615,7 +21719,9 @@
     "id": "u52-0803",
     "es": "Hernando contó el secuestro con pelos y señales, aunque nunca quiso que constase en el libro.",
     "en": "Hernando told of the kidnapping in minute detail, though he never wanted it on record in the book.",
-    "accept": [],
+    "accept": [
+      "Hernando contó el secuestro con pelos y señales, aunque nunca quiso que constara en el libro."
+    ],
     "acceptEn": [],
     "requires": [
       "c:con-pelos-y-senales",
@@ -21740,7 +21846,9 @@
     "id": "u52-0807",
     "es": "Hernando acabó por declarar, aunque todos le pedían que no lo hiciese.",
     "en": "Hernando ended up testifying, though everyone asked him not to.",
-    "accept": [],
+    "accept": [
+      "Hernando acabó por declarar, aunque todos le pedían que no lo hiciera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:aunque-indicative",
@@ -21831,7 +21939,9 @@
     "id": "u52-0810",
     "es": "Dejó su protesta por escrito, como si alguien fuese a leerla.",
     "en": "He left his protest in writing, as if anyone were going to read it.",
-    "accept": [],
+    "accept": [
+      "Dejó su protesta por escrito, como si alguien fuera a leerla."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -21915,7 +22025,9 @@
     "id": "u52-0813",
     "es": "Hicieron mal el cálculo: la policía llegó antes de que pudiesen escapar.",
     "en": "They got the calculation wrong: the police arrived before they could get away.",
-    "accept": [],
+    "accept": [
+      "Hicieron mal el cálculo: la policía llegó antes de que pudieran escapar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -21947,7 +22059,9 @@
     "id": "u52-0814",
     "es": "Con un cálculo frío, Hernando decidió quedarse quieto hasta que saliese el sol.",
     "en": "With a cold calculation, Hernando decided to stay still until the sun came up.",
-    "accept": [],
+    "accept": [
+      "Con un cálculo frío, Hernando decidió quedarse quieto hasta que saliera el sol."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22038,7 +22152,9 @@
     "id": "u52-0817",
     "es": "La asistencia a las audiencias era obligatoria, aunque nadie quisiese ir.",
     "en": "Attendance at the hearings was compulsory, even if nobody wanted to go.",
-    "accept": [],
+    "accept": [
+      "La asistencia a las audiencias era obligatoria, aunque nadie quisiera ir."
+    ],
     "acceptEn": [],
     "requires": [
       "c:era",
@@ -22202,7 +22318,9 @@
     "id": "u52-0823",
     "es": "Convinimos en vernos al día siguiente, a menos que lloviese.",
     "en": "We agreed to meet the next day, unless it rained.",
-    "accept": [],
+    "accept": [
+      "Convinimos en vernos al día siguiente, a menos que lloviera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:comparatives",
@@ -22235,7 +22353,9 @@
     "id": "u52-0824",
     "es": "Les convenía a los dos que el contrato se firmase antes del viernes.",
     "en": "It suited both of them for the contract to be signed before Friday.",
-    "accept": [],
+    "accept": [
+      "Les convenía a los dos que el contrato se firmara antes del viernes."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22318,7 +22438,9 @@
     "id": "u52-0827",
     "es": "Ojalá Vale volviese pronto; nos convendría mucho.",
     "en": "If only Vale would come back soon; it would suit us a lot.",
-    "accept": [],
+    "accept": [
+      "Ojalá Vale volviera pronto; nos convendría mucho."
+    ],
     "acceptEn": [],
     "requires": [
       "c:ojala",
@@ -22403,7 +22525,9 @@
     "id": "u52-0830",
     "es": "¿Tú no querías que Hernando contase lo del secuestro?",
     "en": "Didn't you want Hernando to tell about the kidnapping? (to a friend)",
-    "accept": [],
+    "accept": [
+      "¿Tú no querías que Hernando contara lo del secuestro?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22507,7 +22631,9 @@
     "id": "u52-0834",
     "es": "¿Ustedes no iban a pedir que les pagasen el taxi?",
     "en": "Weren't you all going to ask them to pay for the taxi?",
-    "accept": [],
+    "accept": [
+      "¿Ustedes no iban a pedir que les pagaran el taxi?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22536,7 +22662,9 @@
     "id": "u52-0835",
     "es": "¿Tú no estabas esperando que el productor llamase?",
     "en": "Weren't you waiting for the producer to call? (to a friend)",
-    "accept": [],
+    "accept": [
+      "¿Tú no estabas esperando que el productor llamara?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22643,7 +22771,9 @@
     "id": "u52-0839",
     "es": "¿Tú no eras el que quería que nadie supiese?",
     "en": "Weren't you the one who wanted nobody to know? (to a friend)",
-    "accept": [],
+    "accept": [
+      "¿Tú no eras el que quería que nadie supiera?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22697,7 +22827,9 @@
     "id": "u52-0841",
     "es": "Venía a pedir que me atendiesen sin turno, si es posible.",
     "en": "I was hoping to ask to be seen without an appointment, if possible.",
-    "accept": [],
+    "accept": [
+      "Venía a pedir que me atendieran sin turno, si es posible."
+    ],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
@@ -22729,7 +22861,9 @@
     "id": "u52-0842",
     "es": "Venía a pedir que constase mi queja en el registro.",
     "en": "I was hoping to ask for my complaint to be put on record.",
-    "accept": [],
+    "accept": [
+      "Venía a pedir que constara mi queja en el registro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22760,7 +22894,9 @@
     "id": "u52-0843",
     "es": "Veníamos a preguntar si el juez nos recibiría antes de que cerrasen.",
     "en": "We were hoping to ask whether the judge would see us before they closed.",
-    "accept": [],
+    "accept": [
+      "Veníamos a preguntar si el juez nos recibiría antes de que cerraran."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -22882,7 +23018,9 @@
     "id": "u52-0847",
     "es": "Venía a pedir una cita con el director, si fuese posible.",
     "en": "I was hoping to ask for an appointment with the director, if it were possible.",
-    "accept": [],
+    "accept": [
+      "Venía a pedir una cita con el director, si fuera posible."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22912,7 +23050,9 @@
     "id": "u52-0848",
     "es": "Venía a hablar con quien se encargase de las armas del escenario.",
     "en": "I was hoping to talk to whoever was in charge of the stage weapons.",
-    "accept": [],
+    "accept": [
+      "Venía a hablar con quien se encargara de las armas del escenario."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -22973,7 +23113,9 @@
     "id": "u52-0850",
     "es": "Nadie quiso que el arma apareciese en la foto del periódico.",
     "en": "Nobody wanted the weapon to appear in the newspaper photo.",
-    "accept": [],
+    "accept": [
+      "Nadie quiso que el arma apareciera en la foto del periódico."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23001,7 +23143,9 @@
     "id": "u52-0851",
     "es": "El director pidió que las armas de la obra fuesen de madera.",
     "en": "The director asked for the play's weapons to be made of wood.",
-    "accept": [],
+    "accept": [
+      "El director pidió que las armas de la obra fueran de madera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23055,7 +23199,9 @@
     "id": "u52-0853",
     "es": "No quisieron que Hernando usase la palabra arma en el capítulo.",
     "en": "They didn't want Hernando to use the word weapon in the chapter.",
-    "accept": [],
+    "accept": [
+      "No quisieron que Hernando usara la palabra arma en el capítulo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23082,7 +23228,9 @@
     "id": "u52-0854",
     "es": "El secuestro de ese año marcó la ciudad, y nadie quiso que se olvidase.",
     "en": "That year's kidnapping marked the city, and nobody wanted it forgotten.",
-    "accept": [],
+    "accept": [
+      "El secuestro de ese año marcó la ciudad, y nadie quiso que se olvidara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -23113,7 +23261,9 @@
     "id": "u52-0855",
     "es": "Un secuestro no se cuenta como un chiste, aunque Hernando lo intentase.",
     "en": "A kidnapping isn't told like a joke, though Hernando tried.",
-    "accept": [],
+    "accept": [
+      "Un secuestro no se cuenta como un chiste, aunque Hernando lo intentara."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -23141,7 +23291,9 @@
     "id": "u52-0856",
     "es": "Después del secuestro, nadie en la familia quiso que se hablase del tema.",
     "en": "After the kidnapping, nobody in the family wanted the subject spoken of.",
-    "accept": [],
+    "accept": [
+      "Después del secuestro, nadie en la familia quiso que se hablara del tema."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23198,7 +23350,9 @@
     "id": "u52-0858",
     "es": "La cabaña estaba tan arriba en la montaña que uno sentía como si el cielo se acabase allí.",
     "en": "The cabin was so high up the mountain that you felt as if the sky ended there.",
-    "accept": [],
+    "accept": [
+      "La cabaña estaba tan arriba en la montaña que uno sentía como si el cielo se acabara allí."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -23299,7 +23453,9 @@
     "id": "u52-0861",
     "es": "En la cabaña no había luz, y Hernando pidió que dejasen la puerta abierta.",
     "en": "There was no light in the cabin, and Hernando asked them to leave the door open.",
-    "accept": [],
+    "accept": [
+      "En la cabaña no había luz, y Hernando pidió que dejaran la puerta abierta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23329,7 +23485,9 @@
     "id": "u52-0862",
     "es": "Una oveja apareció en el camino, y el conductor frenó sin que nadie se lo pidiese.",
     "en": "A sheep appeared on the road, and the driver braked without anyone asking him to.",
-    "accept": [],
+    "accept": [
+      "Una oveja apareció en el camino, y el conductor frenó sin que nadie se lo pidiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:double-pronouns",
@@ -23387,7 +23545,9 @@
     "id": "u52-0864",
     "es": "Una rata cruzó el suelo y nos echamos a reír, como si nada pudiese salir peor.",
     "en": "A rat ran across the floor and we burst out laughing, as if nothing could go any worse.",
-    "accept": [],
+    "accept": [
+      "Una rata cruzó el suelo y nos echamos a reír, como si nada pudiera salir peor."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -23480,7 +23640,9 @@
     "id": "u52-0867",
     "es": "Ni la rata ni la oveja dejaron que el extraño se les acercase.",
     "en": "Neither the rat nor the sheep let the stranger come near them.",
-    "accept": [],
+    "accept": [
+      "Ni la rata ni la oveja dejaron que el extraño se les acercara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23540,7 +23702,9 @@
     "id": "u52-0869",
     "es": "La noche entera fue mortal: nadie dijo nada, como si hablar costase plata.",
     "en": "The whole night was awful: nobody said a word, as if talking cost money.",
-    "accept": [],
+    "accept": [
+      "La noche entera fue mortal: nadie dijo nada, como si hablar costara plata."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -23734,7 +23898,9 @@
     "id": "u52-0876",
     "es": "El productor quería que la serie fuese exitosa antes de grabar una sola escena.",
     "en": "The producer wanted the series to be successful before shooting a single scene.",
-    "accept": [],
+    "accept": [
+      "El productor quería que la serie fuera exitosa antes de grabar una sola escena."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -23769,7 +23935,9 @@
     "id": "u52-0877",
     "es": "Hernando quiso que su taxi no llevase marca ni número, para que nadie lo reconociese.",
     "en": "Hernando wanted his taxi to carry no brand or number, so that nobody would recognise him.",
-    "accept": [],
+    "accept": [
+      "Hernando quiso que su taxi no llevara marca ni número, para que nadie lo reconociera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -23800,7 +23968,9 @@
     "id": "u52-0878",
     "es": "La marca de ropa que pagó el festival pidió que su nombre fuese enorme.",
     "en": "The clothing brand that paid for the festival asked for its name to be enormous.",
-    "accept": [],
+    "accept": [
+      "La marca de ropa que pagó el festival pidió que su nombre fuera enorme."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23888,7 +24058,9 @@
     "id": "u52-0881",
     "es": "La narración en primera persona exigía que Hernando se acordase de todo.",
     "en": "The first-person narration required that Hernando remember everything.",
-    "accept": [],
+    "accept": [
+      "La narración en primera persona exigía que Hernando se acordara de todo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -23999,7 +24171,9 @@
     "id": "u52-0885",
     "es": "Esa noche estalló una pelea en la cabaña, aunque nadie la buscase.",
     "en": "That night a fight broke out in the cabin, though nobody was looking for one.",
-    "accept": [],
+    "accept": [
+      "Esa noche estalló una pelea en la cabaña, aunque nadie la buscara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -24030,7 +24204,9 @@
     "id": "u52-0886",
     "es": "Cuando estalló el escándalo del secuestro, el barrio no quiso que Hernando hablase.",
     "en": "When the kidnapping scandal broke, the neighbourhood didn't want Hernando to talk.",
-    "accept": [],
+    "accept": [
+      "Cuando estalló el escándalo del secuestro, el barrio no quiso que Hernando hablara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24063,7 +24239,9 @@
     "id": "u52-0887",
     "es": "Se desencadenó una investigación que nadie esperaba, y el juez ordenó que se revisase todo.",
     "en": "An unexpected investigation was set off, and the judge ordered that everything be reviewed.",
-    "accept": [],
+    "accept": [
+      "Se desencadenó una investigación que nadie esperaba, y el juez ordenó que se revisara todo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24096,7 +24274,9 @@
     "id": "u52-0888",
     "es": "Al oír el nombre del secuestrador, la señora se echó a temblar y pidió que cerrasen la puerta.",
     "en": "On hearing the kidnapper's name, the lady began to tremble and asked for the door to be closed.",
-    "accept": [],
+    "accept": [
+      "Al oír el nombre del secuestrador, la señora se echó a temblar y pidió que cerraran la puerta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24131,7 +24311,9 @@
     "id": "u52-0889",
     "es": "Rompió a llover mientras esperábamos, y rezamos para que parase pronto.",
     "en": "It started to pour while we waited, and we prayed for it to stop soon.",
-    "accept": [],
+    "accept": [
+      "Rompió a llover mientras esperábamos, y rezamos para que parara pronto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:imperfect-habitual",
@@ -24161,7 +24343,9 @@
     "id": "u52-0890",
     "es": "Mariana rompió a llorar cuando leyó el capítulo, y quiso que Hernando lo supiese.",
     "en": "Mariana burst into tears when she read the chapter, and she wanted Hernando to know.",
-    "accept": [],
+    "accept": [
+      "Mariana rompió a llorar cuando leyó el capítulo, y quiso que Hernando lo supiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -24195,7 +24379,9 @@
     "id": "u52-0891",
     "es": "Al final todos nos echamos a reír, aunque el hecho de que fuese tan grave nos pesaba.",
     "en": "In the end we all burst out laughing, though the fact that it was so serious weighed on us.",
-    "accept": [],
+    "accept": [
+      "Al final todos nos echamos a reír, aunque el hecho de que fuera tan grave nos pesaba."
+    ],
     "acceptEn": [],
     "requires": [
       "c:al-final",
@@ -24232,7 +24418,9 @@
     "id": "u52-0892",
     "es": "El hecho de que Hernando hubiese callado tantos años explica el libro.",
     "en": "The fact that Hernando had kept quiet for so many years explains the book.",
-    "accept": [],
+    "accept": [
+      "El hecho de que Hernando hubiera callado tantos años explica el libro."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24259,7 +24447,9 @@
     "id": "u52-0893",
     "es": "Lo cambió todo el hecho de que nadie se atreviese a hablar.",
     "en": "The fact that nobody dared to speak changed everything.",
-    "accept": [],
+    "accept": [
+      "Lo cambió todo el hecho de que nadie se atreviera a hablar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -24288,7 +24478,9 @@
     "id": "u52-0894",
     "es": "Me duele el hecho de que Rosa no pudiese saberlo.",
     "en": "It hurts me that Rosa couldn't know.",
-    "accept": [],
+    "accept": [
+      "Me duele el hecho de que Rosa no pudiera saberlo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -24321,7 +24513,9 @@
     "id": "u52-0895",
     "es": "No ayudó el hecho de que el juez fuese amigo de la familia.",
     "en": "The fact that the judge was a friend of the family didn't help.",
-    "accept": [],
+    "accept": [
+      "No ayudó el hecho de que el juez fuera amigo de la familia."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24350,7 +24544,9 @@
     "id": "u52-0896",
     "es": "No me sorprende el hecho de que ellos quisiesen olvidar.",
     "en": "It doesn't surprise me that they wanted to forget.",
-    "accept": [],
+    "accept": [
+      "No me sorprende el hecho de que ellos quisieran olvidar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24379,7 +24575,9 @@
     "id": "u52-0897",
     "es": "Me gustó el hecho de que el vigilante estuviese despierto.",
     "en": "I liked the fact that the guard was awake.",
-    "accept": [],
+    "accept": [
+      "Me gustó el hecho de que el vigilante estuviera despierto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -24408,7 +24606,9 @@
     "id": "u52-0898",
     "es": "Se acabó el dinero, y el hecho de que nadie le prestase un peso obligó a Hernando a vender el taxi.",
     "en": "The money ran out, and the fact that nobody would lend him a peso forced Hernando to sell the taxi.",
-    "accept": [],
+    "accept": [
+      "Se acabó el dinero, y el hecho de que nadie le prestara un peso obligó a Hernando a vender el taxi."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24441,7 +24641,9 @@
     "id": "u52-0899",
     "es": "Me molesta el hecho de que las autoridades prefiriesen no investigar.",
     "en": "It bothers me that the authorities preferred not to investigate.",
-    "accept": [],
+    "accept": [
+      "Me molesta el hecho de que las autoridades prefirieran no investigar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24470,7 +24672,9 @@
     "id": "u52-0900",
     "es": "Por el hecho de que hubiese testigos, el caso volvió a empezar.",
     "en": "Because there were witnesses, the case started again.",
-    "accept": [],
+    "accept": [
+      "Por el hecho de que hubiera testigos, el caso volvió a empezar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24499,7 +24703,9 @@
     "id": "u52-0901",
     "es": "No cuenta el hecho de que Hernando se negase a firmar.",
     "en": "The fact that Hernando refused to sign doesn't count.",
-    "accept": [],
+    "accept": [
+      "No cuenta el hecho de que Hernando se negara a firmar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24526,7 +24732,9 @@
     "id": "u52-0902",
     "es": "Fue cuestión de suerte el hecho de que el libro llegase a un festival.",
     "en": "The fact that the book reached a festival was a matter of luck.",
-    "accept": [],
+    "accept": [
+      "Fue cuestión de suerte el hecho de que el libro llegara a un festival."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24557,7 +24765,9 @@
     "id": "u52-0903",
     "es": "El hecho de que acabase siendo un libro y no una denuncia fue idea de Tomás.",
     "en": "The fact that it ended up being a book and not a complaint was Tomás's idea.",
-    "accept": [],
+    "accept": [
+      "El hecho de que acabara siendo un libro y no una denuncia fue idea de Tomás."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24589,7 +24799,9 @@
     "id": "u52-0904",
     "es": "Aprecio el hecho de que Hernando confiase en mí desde el primer día.",
     "en": "I appreciate the fact that Hernando trusted me from the first day.",
-    "accept": [],
+    "accept": [
+      "Aprecio el hecho de que Hernando confiara en mí desde el primer día."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24619,7 +24831,9 @@
     "id": "u52-0905",
     "es": "Lamento el hecho de que la crítica olvidase el último capítulo.",
     "en": "I regret the fact that the review forgot the last chapter.",
-    "accept": [],
+    "accept": [
+      "Lamento el hecho de que la crítica olvidara el último capítulo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24647,7 +24861,9 @@
     "id": "u52-0906",
     "es": "Sorprende el hecho de que una rata provocase tanta risa.",
     "en": "It's surprising that a rat provoked so much laughter.",
-    "accept": [],
+    "accept": [
+      "Sorprende el hecho de que una rata provocara tanta risa."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24676,7 +24892,9 @@
     "id": "u52-0907",
     "es": "Le salvó la vida el hecho de que se echase a correr sin mirar atrás.",
     "en": "The fact that he broke into a run without looking back saved his life.",
-    "accept": [],
+    "accept": [
+      "Le salvó la vida el hecho de que se echara a correr sin mirar atrás."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24737,7 +24955,9 @@
     "id": "u52-0909",
     "es": "En la época del secuestro, nadie quería que la prensa supiese nada.",
     "en": "At the time of the kidnapping, nobody wanted the press to know anything.",
-    "accept": [],
+    "accept": [
+      "En la época del secuestro, nadie quería que la prensa supiera nada."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24767,7 +24987,9 @@
     "id": "u52-0910",
     "es": "En la época de la cabaña, como la llama Hernando, todo el barrio esperaba que volviese.",
     "en": "In the cabin days, as Hernando calls them, the whole neighbourhood was hoping he would come back.",
-    "accept": [],
+    "accept": [
+      "En la época de la cabaña, como la llama Hernando, todo el barrio esperaba que volviera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:cause-result",
@@ -24800,7 +25022,9 @@
     "id": "u52-0911",
     "es": "En tiempos de miedo, la gente prefería que los taxistas no hablasen tanto.",
     "en": "In times of fear, people preferred taxi drivers not to talk so much.",
-    "accept": [],
+    "accept": [
+      "En tiempos de miedo, la gente prefería que los taxistas no hablaran tanto."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -24860,7 +25084,9 @@
     "id": "u52-0913",
     "es": "En otros tiempos, un hombre como Hernando no habría querido que se supiese.",
     "en": "In other times, a man like Hernando wouldn't have wanted it known.",
-    "accept": [],
+    "accept": [
+      "En otros tiempos, un hombre como Hernando no habría querido que se supiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional-perfect",
@@ -24890,7 +25116,9 @@
     "id": "u52-0914",
     "es": "El olor a madera mojada le traía recuerdos de la cabaña, como si volviese a estar allí.",
     "en": "The smell of wet wood brought back memories of the cabin for him, as if he were there again.",
-    "accept": [],
+    "accept": [
+      "El olor a madera mojada le traía recuerdos de la cabaña, como si volviera a estar allí."
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -24929,7 +25157,9 @@
     "id": "u52-0915",
     "es": "El ruido de la lluvia en el techo me traía recuerdos, como si alguien llamase a la puerta.",
     "en": "The sound of rain on the roof brought back memories, as if someone were knocking at the door.",
-    "accept": [],
+    "accept": [
+      "El ruido de la lluvia en el techo me traía recuerdos, como si alguien llamara a la puerta."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -24962,7 +25192,9 @@
     "id": "u52-0916",
     "es": "Se me vino a la memoria la cara del vigilante, como si la viese ahora.",
     "en": "The guard's face came to my mind, as if I were seeing it now.",
-    "accept": [],
+    "accept": [
+      "Se me vino a la memoria la cara del vigilante, como si la viera ahora."
+    ],
     "acceptEn": [],
     "requires": [
       "g:como-si",
@@ -24993,7 +25225,9 @@
     "id": "u52-0917",
     "es": "Hernando llegó a decir que prefería el miedo a la duda, y pidió que nadie lo repitiese.",
     "en": "Hernando even said he preferred fear to doubt, and asked that nobody repeat it.",
-    "accept": [],
+    "accept": [
+      "Hernando llegó a decir que prefería el miedo a la duda, y pidió que nadie lo repitiera."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -25031,7 +25265,9 @@
     "id": "u52-0918",
     "es": "Llegué a creer que el libro no se terminaría, aunque Hernando insistiese.",
     "en": "I even came to believe the book would never be finished, even if Hernando insisted.",
-    "accept": [],
+    "accept": [
+      "Llegué a creer que el libro no se terminaría, aunque Hernando insistiera."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -25063,7 +25299,9 @@
     "id": "u52-0919",
     "es": "Tomás llegó a pagar el taxi de su bolsillo para que Hernando no cancelase la sesión.",
     "en": "Tomás even paid for the taxi out of his own pocket so Hernando wouldn't cancel the session.",
-    "accept": [],
+    "accept": [
+      "Tomás llegó a pagar el taxi de su bolsillo para que Hernando no cancelara la sesión."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -25093,7 +25331,9 @@
     "id": "u52-0920",
     "es": "Acabé por preguntarle si quería que lo escribiese él mismo.",
     "en": "I ended up asking him if he wanted me to write it myself.",
-    "accept": [],
+    "accept": [
+      "Acabé por preguntarle si quería que lo escribiera él mismo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -25127,7 +25367,9 @@
     "id": "u52-0921",
     "es": "Acabaron por llevarse el caso a otra ciudad, y el juez pidió que se archivase.",
     "en": "They ended up taking the case to another city, and the judge asked for it to be filed away.",
-    "accept": [],
+    "accept": [
+      "Acabaron por llevarse el caso a otra ciudad, y el juez pidió que se archivara."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -25162,7 +25404,9 @@
     "id": "u52-0922",
     "es": "Hernando acabó por perdonar, aunque nunca pidió que lo perdonasen a él.",
     "en": "Hernando ended up forgiving, though he never asked to be forgiven.",
-    "accept": [],
+    "accept": [
+      "Hernando acabó por perdonar, aunque nunca pidió que lo perdonaran a él."
+    ],
     "acceptEn": [],
     "requires": [
       "g:aunque-indicative",
@@ -25223,7 +25467,9 @@
     "id": "u52-0924",
     "es": "Dio la casualidad de que ese día cerraron la carretera, y Hernando no quiso que lo llevasen.",
     "en": "It so happened that they closed the road that day, and Hernando didn't want them to take him.",
-    "accept": [],
+    "accept": [
+      "Dio la casualidad de que ese día cerraron la carretera, y Hernando no quiso que lo llevaran."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -26891,7 +27137,9 @@
     "id": "u52-0981",
     "es": "Nada hacía pensar que aquella reunión fuese a estallar.",
     "en": "Nothing suggested that meeting was going to blow up.",
-    "accept": [],
+    "accept": [
+      "Nada hacía pensar que aquella reunión fuera a estallar."
+    ],
     "acceptEn": [],
     "requires": [
       "g:demonstratives",
@@ -27373,7 +27621,9 @@
     "id": "u52-0998",
     "es": "No sorprende el hecho de que la crítica prefiriese el primer capítulo.",
     "en": "It's no surprise that the review preferred the first chapter.",
-    "accept": [],
+    "accept": [
+      "No sorprende el hecho de que la crítica prefiriera el primer capítulo."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27434,7 +27684,9 @@
     "id": "u52-1000",
     "es": "No afectó la interpretación el hecho de que la sala estuviese casi vacía.",
     "en": "The fact that the hall was almost empty didn't affect the performance.",
-    "accept": [],
+    "accept": [
+      "No afectó la interpretación el hecho de que la sala estuviera casi vacía."
+    ],
     "acceptEn": [],
     "requires": [
       "g:estar-location-states",
@@ -27465,7 +27717,9 @@
     "id": "u52-1001",
     "es": "Mariana valoró el hecho de que Hernando no pidiese nada a cambio.",
     "en": "Mariana valued the fact that Hernando asked for nothing in return.",
-    "accept": [],
+    "accept": [
+      "Mariana valoró el hecho de que Hernando no pidiera nada a cambio."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -27492,7 +27746,9 @@
     "id": "u52-1002",
     "es": "El hecho de que el do sonase mal no lo notó nadie.",
     "en": "Nobody noticed that the C sounded wrong.",
-    "accept": [],
+    "accept": [
+      "El hecho de que el do sonara mal no lo notó nadie."
+    ],
     "acceptEn": [],
     "requires": [
       "g:direct-objects",
@@ -27554,7 +27810,9 @@
     "id": "u52-1004",
     "es": "Pese al hecho de que fuese tarde, la sesión no se suspendió.",
     "en": "Despite the fact that it was late, the session wasn't called off.",
-    "accept": [],
+    "accept": [
+      "Pese al hecho de que fuera tarde, la sesión no se suspendió."
+    ],
     "acceptEn": [],
     "requires": [
       "c:no-se",
@@ -27589,7 +27847,9 @@
     "id": "u52-1005",
     "es": "Con el hecho de que el productor se fuese, la serie quedó en el aire.",
     "en": "With the producer having left, the series was left up in the air.",
-    "accept": [],
+    "accept": [
+      "Con el hecho de que el productor se fuera, la serie quedó en el aire."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -28450,7 +28710,9 @@
     "id": "u52-1038",
     "es": "Quería hablar con ustedes antes de que empezase la sesión.",
     "en": "I wanted to speak with you all before the session began.",
-    "accept": [],
+    "accept": [
+      "Quería hablar con ustedes antes de que empezara la sesión."
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29127,7 +29389,9 @@
     "id": "u52-1065",
     "es": "¿Te molestaría el hecho de que Hernando cambiase la fecha?",
     "en": "Would it bother you if Hernando changed the date? (to a friend)",
-    "accept": [],
+    "accept": [
+      "¿Te molestaría el hecho de que Hernando cambiara la fecha?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
@@ -29202,7 +29466,9 @@
     "id": "u52-1068",
     "es": "¿Habría sido distinto el libro si Rosa estuviese viva?",
     "en": "Would the book have been different if Rosa were alive?",
-    "accept": [],
+    "accept": [
+      "¿Habría sido distinto el libro si Rosa estuviera viva?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:adjective-agreement",
@@ -29889,7 +30155,9 @@
     "id": "u52-1096",
     "es": "¿Y si solo fuese una leyenda?",
     "en": "And what if it were only a legend?",
-    "accept": [],
+    "accept": [
+      "¿Y si solo fuera una leyenda?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
@@ -29914,7 +30182,9 @@
     "id": "u52-1097",
     "es": "¿Qué diría Rosa si pudiese leer esto?",
     "en": "What would Rosa say if she could read this?",
-    "accept": [],
+    "accept": [
+      "¿Qué diría Rosa si pudiera leer esto?"
+    ],
     "acceptEn": [],
     "requires": [
       "g:conditional",
