@@ -5,6 +5,9 @@ import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
 } from '../content/schema';
 import { analyzeToken } from '../engine';
+import { askedOfYou } from '../exercises/addressee';
+import { isMultiTurn, turnView } from '../exercises/dialogue';
+import { namesOf, placesOf } from '../exercises/licence';
 import type { LibraryChapter } from '../content/library';
 import type { ChapterRef, ContentIndex, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
@@ -179,11 +182,16 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
   const byTarget = new Map<NodeId, string[]>();
   const byRequire = new Map<NodeId, string[]>();
   const byUnit = new Map<string, string[]>();
+  // who a question is for is judged against the names in the bank, as the card that asks it will judge it (once per bank)
+  const names = namesOf(src.sentences), places = placesOf(src.sentences);
   for (const s of src.sentences) {
     if (sentences.has(s.id)) continue; // first wins; the gate rejects duplicate ids
     const targets = [...new Set(s.targets ?? [])];
     const requires = [...new Set([...targets, ...(s.requires ?? [])])];
-    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question: isQuestionRow(s) });
+    const question = isQuestionRow(s);
+    // the question a card puts to the learner: a dialogue's first turn, else the row (cards.ts, 'respond')
+    const asked = question ? (isMultiTurn(s) ? turnView(s, 0)?.sentence.es : s.es) : undefined;
+    sentences.set(s.id, { id: s.id, requires, targets, unit: s.unit, question, ...(asked && askedOfYou(asked, names, places) ? { own: true } : {}) });
     for (const t of targets) push(byTarget, t, s.id);
     for (const r of requires) if (!targets.includes(r)) push(byRequire, r, s.id);
     if (s.unit) push(byUnit, s.unit, s.id);

@@ -696,7 +696,7 @@ class Compiler {
           if (total + g.length >= want) break;
           if (this.usedSentences.has(id) || this.L.ledger.hasSeen('sentence', id) !== !!opts.seen) continue;
           const s = this.content.sentences.get(id)!;
-          if (opts.question && !s.question) continue;
+          if (opts.question && !s.own) continue;
           if (!this.gated(s.requires)) continue;
           g.push(s);
         }

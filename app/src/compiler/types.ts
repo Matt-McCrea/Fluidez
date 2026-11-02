@@ -82,6 +82,8 @@ export interface SentenceRef {
   targets: NodeId[];
   unit?: string;
   question: boolean;
+  /** a question put to one person and nobody else named in it (exercises/addressee.ts): one a learner can answer for themselves */
+  own?: boolean;
 }
 
 /**
