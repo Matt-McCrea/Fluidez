@@ -3,9 +3,14 @@
 // again". Components are called without a DOM here (hooks keep their values
 // between renders; effects do not run).
 import { describe, expect, it, vi } from 'vitest';
-import { ErrorBoundary, Trouble, bootTrouble } from '../../src/ui/app';
+import { ErrorBoundary, SaveBackup, Trouble, bootTrouble } from '../../src/ui/app';
+import { IdbStore, StoredDocumentError } from '../../src/learner';
+import { MemoryKV } from '../../src/ui/store/ui';
 
 const h = vi.hoisted(() => ({ slots: [] as unknown[], at: 0 }));
+const download = vi.hoisted(() => vi.fn((_file: unknown) => 'fluidez-backup-test.json'));
+// There is no browser to hand a file to; what is handed over is what matters.
+vi.mock('../../src/learner/backup', async (orig) => ({ ...(await orig<typeof import('../../src/learner/backup')>()), downloadBackup: download }));
 vi.mock('preact/hooks', () => ({
   useState: (init: unknown) => {
     const i = h.at++;
@@ -65,11 +70,17 @@ describe('the boundary around a screen', () => {
 });
 
 describe('the boot failure screen', () => {
-  it('reads a newer document from its fault, and anything else as it is', () => {
-    expect(bootTrouble(Object.assign(new Error('Your progress was saved by a newer version.'), { fault: 'newer' }))).toEqual({ message: 'Your progress was saved by a newer version.', newer: true });
-    expect(bootTrouble(Object.assign(new Error('damaged'), { fault: 'unreadable' }))).toEqual({ message: 'damaged', newer: false });
+  it('reads a newer document from the error itself, and anything else as it is', () => {
+    const newer = new StoredDocumentError('newer', 'state', 'v9 is newer than this build (v3)');
+    expect(bootTrouble(newer)).toEqual({ message: newer.message, newer: true });
+    const damaged = new StoredDocumentError('unreadable', 'state', 'not an object');
+    expect(bootTrouble(damaged)).toEqual({ message: damaged.message, newer: false });
     expect(bootTrouble(new Error('offline'))).toEqual({ message: 'offline', newer: false });
     expect(bootTrouble('plain')).toEqual({ message: 'plain', newer: false });
+  });
+
+  it('does not take any error that happens to carry a fault for a newer document', () => {
+    expect(bootTrouble(Object.assign(new Error('something else'), { fault: 'newer' }))).toEqual({ message: 'something else', newer: false });
   });
 
   it('says what happened and shows the ways out it is given', () => {
@@ -77,5 +88,76 @@ describe('the boot failure screen', () => {
     expect(text(tree)).toContain('Something went wrong');
     expect(text(tree)).toContain('It broke.');
     expect(text(tree)).toContain('out');
+  });
+});
+
+// Both failure screens used to offer only Reload or Try again, so a learner whose
+// state would not open, or whose screen would not draw, had no way to take their
+// progress with them. The backup here is makeBackup's, which does not run the
+// dry run: a damaged state is exactly when it is needed.
+describe('getting progress out when nothing else works', () => {
+  const kvWith = (docs: Record<string, unknown>) => { const kv = new MemoryKV(); for (const [k, v] of Object.entries(docs)) kv.data.set(k, structuredClone(v)); return kv; };
+  const click = async (source: Parameters<typeof SaveBackup>[0]['source']) => {
+    h.slots = []; h.at = 0;
+    await find(SaveBackup({ source }), (n) => n.type === 'button')[0].props.onClick();
+    h.at = 0;   // draw it again, as the framework would, to read what it now says
+    return text(SaveBackup({ source }));
+  };
+
+  it('the boundary and the boot failure screen both carry the way to do it', () => {
+    const source = { store: new IdbStore(new MemoryKV()) };
+    const b = new ErrorBoundary({ onHome: vi.fn(), backup: source, children: 'screen' });
+    b.setState = vi.fn();
+    b.state = ErrorBoundary.getDerivedStateFromError(new Error('boom'));
+    expect((b.render() as any).props.backup).toBe(source);
+    expect(find(Trouble({ message: 'It broke.', backup: source, children: 'out' }), (n) => n.type === SaveBackup)).toHaveLength(1);
+    expect(find(Trouble({ message: 'It broke.', children: 'out' }), (n) => n.type === SaveBackup)).toHaveLength(0);
+  });
+
+  it('the boot failure screen in the shell offers it, built on the store the failed boot used', async () => {
+    const { App } = await import('../../src/ui/app');
+    const store = new IdbStore(new MemoryKV());
+    h.slots = [null, { message: 'Your saved progress can\'t be read.', newer: false, backup: { store } }];
+    h.at = 0;
+    const tree = App({ opts: { learnerStore: store } }) as any;
+    const found = find(tree, (n) => n.type === Trouble);
+    expect(found).toHaveLength(1);
+    expect(found[0].props.backup.store).toBe(store);
+  });
+
+  it('hands over a damaged state as it is, where the proved backup in Settings would refuse', async () => {
+    download.mockClear();
+    const damaged = { version: 3, nodes: 'not a table' };
+    const note = await click({ store: new IdbStore(kvWith({ state: damaged, events: 'rubbish' })), now: () => 1_700_000_000_000 });
+    expect(download).toHaveBeenCalledTimes(1);
+    const file: any = download.mock.calls[0][0];
+    expect(file.documents.state).toEqual(damaged);
+    expect(file.documents.events).toBe('rubbish');
+    expect(note).toContain('fluidez-backup-test.json');
+    expect(note).not.toMatch(/[–—]| - /);
+  });
+
+  it('says so in words when there is nothing to back up, and downloads nothing', async () => {
+    download.mockClear();
+    const note = await click({ store: new IdbStore(new MemoryKV()) });
+    expect(download).not.toHaveBeenCalled();
+    expect(note).toContain('There\'s no progress to back up yet.');
+  });
+
+  it('a store that will not even be read still ends in a sentence, not a thrown error', async () => {
+    const kv = new MemoryKV();
+    kv.get = async () => { throw new Error('IndexedDB is not available'); };
+    const note = await click({ store: new IdbStore(kv) });
+    expect(note).toContain('Couldn\'t make a backup just now.');
+  });
+
+  it('runs the flush first, and says if the latest answers could not be saved', async () => {
+    download.mockClear();
+    const order: string[] = [];
+    const flush = vi.fn(async () => { order.push('flush'); throw new Error('write refused'); });
+    download.mockImplementationOnce(() => { order.push('download'); return 'fluidez-backup-test.json'; });
+    const note = await click({ store: new IdbStore(kvWith({ state: { version: 3 } })), flush });
+    expect(order).toEqual(['flush', 'download']);
+    expect(note).toMatch(/latest answers/);
   });
 });

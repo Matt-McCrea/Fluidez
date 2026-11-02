@@ -4,7 +4,7 @@
 import { Component, type ComponentChildren } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import type { Mode } from '../compiler';
-import { IdbStore, idbKV, Learner, type LearnerStore } from '../learner';
+import { BackupError, downloadBackup, IdbStore, idbKV, Learner, makeBackup, StoredDocumentError, type LearnerStore } from '../learner';
 import type { KV, Tier } from '../learner';
 import { ContentLoader, loadBundle } from './data/loader';
 import { Ctx, type AppCtx } from './context';
@@ -18,7 +18,7 @@ import { Settings } from './screens/settings';
 import { Story } from './screens/story';
 import { Weak } from './screens/weak';
 import type { PracticeSpec } from './session/practice-spec';
-import { UiStore, type SavedSession } from './store/ui';
+import { BACKUP_READERS, UiStore, type SavedSession } from './store/ui';
 import { MORE_MINUTES } from './session/more';
 
 type Tab = 'home' | 'story' | 'reference' | 'progress' | 'settings' | 'weak';
@@ -48,19 +48,50 @@ export async function boot(opts: BootOptions = {}): Promise<Omit<AppCtx, 'refres
   return { learner, learnerStore, ui, bundle, loader, now };
 }
 
-/** Why boot failed, for the screen. A stored document from a newer build says so (`fault`), and an update is the way out. */
+/** Why boot failed, for the screen. A stored document from a newer build says so, and an update is the way out. */
 export function bootTrouble(e: unknown): { message: string; newer: boolean } {
-  return { message: (e as Error)?.message || String(e), newer: (e as { fault?: unknown } | null)?.fault === 'newer' };
+  return { message: (e as Error)?.message || String(e), newer: e instanceof StoredDocumentError && e.fault === 'newer' };
+}
+
+/** Where a failure screen gets a learner's progress from. `flush` is the learner's, when there is one to ask. */
+export interface BackupSource { store: LearnerStore; flush?: () => Promise<unknown>; now?: () => number }
+
+/**
+ * A backup for a screen with nothing else to offer. It uses makeBackup, not the
+ * proved backup Settings makes: that one refuses a document this build cannot
+ * open, and a damaged state is exactly when a learner needs the file.
+ */
+export function SaveBackup({ source }: { source: BackupSource }) {
+  const [note, setNote] = useState<{ text: string; problem?: boolean } | null>(null);
+  const [busy, setBusy] = useState(false);
+  const save = async () => {
+    setBusy(true);
+    setNote(null);
+    let unsaved = false;
+    try { await source.flush?.(); } catch { unsaved = true; }  // the file is still worth making, from what the store holds
+    try {
+      const name = downloadBackup(await makeBackup(source.store, BACKUP_READERS, source.now?.()));
+      setNote({ text: unsaved ? `Made ${name}, but your latest answers couldn't be saved, so it may miss them.` : `Made ${name}. Check your downloads, and keep the file somewhere safe.` });
+    } catch (e) { setNote({ text: e instanceof BackupError ? e.message : 'Couldn\'t make a backup just now.', problem: true }); }
+    setBusy(false);
+  };
+  return (
+    <>
+      <div class="actions"><button class="btn quiet" data-backup disabled={busy} onClick={save}>Save a backup</button></div>
+      {note ? <p class="small" role={note.problem ? 'alert' : 'status'}>{note.text}</p> : null}
+    </>
+  );
 }
 
 /** The screen for something that went wrong: what happened, and the ways out, which the caller supplies. */
-export function Trouble({ message, detail, children }: { message: string; detail?: string; children: ComponentChildren }) {
+export function Trouble({ message, detail, backup, children }: { message: string; detail?: string; backup?: BackupSource; children: ComponentChildren }) {
   return (
     <main class="screen" id="main">
       <h1>Something went wrong</h1>
       <p>{message}</p>
       {detail ? <p class="small">{detail}</p> : null}
       <div class="actions">{children}</div>
+      {backup ? <SaveBackup source={backup} /> : null}
     </main>
   );
 }
@@ -69,7 +100,7 @@ export function Trouble({ message, detail, children }: { message: string; detail
  * A screen that throws while it draws must not leave a blank page. The tabs are
  * part of what it replaces, so Home is offered here, and Reload for the rest.
  */
-export class ErrorBoundary extends Component<{ onHome: () => void; children?: ComponentChildren }, { error?: Error }> {
+export class ErrorBoundary extends Component<{ onHome: () => void; backup?: BackupSource; children?: ComponentChildren }, { error?: Error }> {
   state: { error?: Error } = {};
   static getDerivedStateFromError(error: unknown) { return { error: error instanceof Error ? error : new Error(String(error)) }; }
   componentDidCatch(error: unknown) { console.error('fluidez: a screen failed', error); }
@@ -77,7 +108,7 @@ export class ErrorBoundary extends Component<{ onHome: () => void; children?: Co
     const { error } = this.state;
     if (!error) return this.props.children;
     return (
-      <Trouble message="That screen couldn't be shown." detail={error.message}>
+      <Trouble message="That screen couldn't be shown." detail={error.message} backup={this.props.backup}>
         <button class="btn primary" data-home onClick={() => { this.setState({ error: undefined }); this.props.onHome(); }}>Back to Home</button>
         <button class="btn quiet" data-reload onClick={() => location.reload()}>Reload</button>
       </Trouble>
@@ -87,7 +118,7 @@ export class ErrorBoundary extends Component<{ onHome: () => void; children?: Co
 
 export function App({ opts }: { opts?: BootOptions }) {
   const [ctx, setCtx] = useState<AppCtx | null>(null);
-  const [error, setError] = useState<{ message: string; newer: boolean } | null>(null);
+  const [error, setError] = useState<{ message: string; newer: boolean; backup: BackupSource } | null>(null);
   const [route, setRoute] = useState<Route>({ tab: 'home' });
   const [, setTick] = useState(0);
   const [update, setUpdate] = useState(false);
@@ -116,7 +147,8 @@ export function App({ opts }: { opts?: BootOptions }) {
       c.learner.onSaveProblem(refresh);
       setCtx(c);
     } catch (e) {
-      setError(bootTrouble(e));
+      // the store opens lazily, so a browser with no IndexedDB fails when the file is asked for, in words
+      setError({ ...bootTrouble(e), backup: { store: opts?.learnerStore ?? new IdbStore(opts?.kv), now: opts?.now } });
     }
   };
 
@@ -129,7 +161,7 @@ export function App({ opts }: { opts?: BootOptions }) {
 
   if (error) {
     return (
-      <Trouble message={error.message}>
+      <Trouble message={error.message} backup={error.backup}>
         {error.newer && update ? <button class="btn primary" data-update onClick={() => window.dispatchEvent(new CustomEvent('fluidez:apply-update'))}>Update</button> : null}
         <button class={`btn ${error.newer && update ? 'quiet' : 'primary'}`} onClick={() => location.reload()}>Try again</button>
       </Trouble>
@@ -171,7 +203,7 @@ export function App({ opts }: { opts?: BootOptions }) {
       </>
     );
   }
-  body = <ErrorBoundary onHome={goHome}>{body}</ErrorBoundary>;
+  body = <ErrorBoundary onHome={goHome} backup={{ store: ctx.learnerStore, flush: () => ctx.learner.flush(), now: ctx.now }}>{body}</ErrorBoundary>;
   return (
     <Ctx.Provider value={ctx}>
       <a class="skip" href="#main">Skip to content</a>
