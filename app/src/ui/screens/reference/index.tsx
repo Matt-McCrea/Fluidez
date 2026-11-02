@@ -212,7 +212,7 @@ function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPr
         <div class="actions">
           <button class="btn primary" onClick={() => onPractise(practiceFor(e.id, (id) => bundle.node(id), (id) => learner.isIntroduced(id)))}>Practise this</button>
         </div>
-        {e.week ? <p class="small-print">From week {e.week}</p> : null}
+        {e.week ? <p class="small-print">From unit {e.week}</p> : null}
       </> : null}
     </details>
   );

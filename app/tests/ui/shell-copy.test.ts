@@ -35,29 +35,29 @@ describe('stages, not CEFR letters', () => {
   });
 });
 
-describe('the end of a week', () => {
-  const units = [1, 2, 3, 4].map((n) => ({ id: `u0${n}`, title: `Week ${n} — a title`, canDo: `I can do ${n}.` }));
+describe('the end of a unit', () => {
+  const units = [1, 2, 3, 4].map((n) => ({ id: `u0${n}`, title: `Unit ${n} — a title`, canDo: `I can do ${n}.` }));
   const mark = (unit: string, feel: CanDoMark['feel']): CanDoMark => ({ unit, canDo: '', feel, at: 1 });
   const check = (byUnit: CheckpointResult['byUnit']): CheckpointResult => ({ at: 2, byUnit });
   const line = (unit: number, day: number, placedAt = 0, marks: CanDoMark[] = [], cps: CheckpointResult[] = []) =>
     finishedWeekLine(units, { unit, day }, placedAt, marks, cps);
 
-  it('says nothing in the first week, or part way through a week', () => {
+  it('says nothing in the first unit, or part way through a unit', () => {
     expect(line(0, 0)).toBeUndefined();
     expect(line(2, 3)).toBeUndefined();
   });
-  it('names the week just finished, and says it is not checked when nothing shows it', () => {
-    expect(line(2, 0)).toBe('You finished "Week 2, a title". Not checked yet: a check on Progress shows where you are.');
+  it('names the unit just finished, and says it is not checked when nothing shows it', () => {
+    expect(line(2, 0)).toBe('You finished "Unit 2, a title". Not checked yet: a check on Progress shows where you are.');
   });
   it('says what the learner said or what a check showed, and never more', () => {
-    expect(line(2, 0, 0, [mark('u02', 'yes')])).toBe('You finished "Week 2, a title". You said you can do it.');
-    expect(line(2, 0, 0, [], [check({ u02: { right: 4, total: 5 } })])).toBe('You finished "Week 2, a title". A check went well.');
-    expect(line(2, 0, 0, [mark('u02', 'notyet')])).toBe('You finished "Week 2, a title". You\'re still working on it.');
+    expect(line(2, 0, 0, [mark('u02', 'yes')])).toBe('You finished "Unit 2, a title". You said you can do it.');
+    expect(line(2, 0, 0, [], [check({ u02: { right: 4, total: 5 } })])).toBe('You finished "Unit 2, a title". A check went well.');
+    expect(line(2, 0, 0, [mark('u02', 'notyet')])).toBe('You finished "Unit 2, a title". You\'re still working on it.');
     expect(line(2, 0, 0, [], [check({ u02: { right: 1, total: 5 } })])).toMatch(/still working on it/);
   });
-  it('says nothing of a week that placement jumped over', () => {
+  it('says nothing of a unit that placement jumped over', () => {
     expect(line(3, 0, 3)).toBeUndefined();
-    expect(line(4, 0, 3)).toMatch(/^You finished "Week 4/);
+    expect(line(4, 0, 3)).toMatch(/^You finished "Unit 4/);
   });
 });
 
@@ -87,5 +87,14 @@ describe('the story line before a first chapter', () => {
     expect(storyBeforeTheFirstChapter({ unit: 12 }, 12)).toBeUndefined();
     expect(storyBeforeTheFirstChapter({ unit: 0 }, 5)).toBeUndefined();
     expect(code(src('home.tsx'))).not.toContain('has just landed');
+  });
+});
+
+describe('a unit is not called a week', () => {
+  it('no screen string says week for a unit of lessons', () => {
+    for (const f of ['home.tsx', 'progress.tsx', 'practice.tsx', 'onboarding.tsx', join('reference', 'index.tsx'), join('..', 'blocks', 'writing.tsx')]) {
+      const t = code(src(f));
+      expect(t, f).not.toMatch(/\b(?:Week \{|From week|first week|this week's goal|week \$\{|your starting week|Progress through this week|lessons this week|The weeks before)/);
+    }
   });
 });

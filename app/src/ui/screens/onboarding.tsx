@@ -1,6 +1,6 @@
-// First run: what Fluidez is and what this week gets you, the learner's goal,
+// First run: what Fluidez is and what this unit gets you, the learner's goal,
 // and where to start (the first lesson, or a short adaptive check that picks
-// a starting week). There is no lesson-length choice: every session is the
+// a starting unit). There is no lesson-length choice: every session is the
 // standard one.
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { Continue } from '../components/card';
@@ -70,7 +70,7 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
       return (
         <main class="screen onboarding" id="main">
           <Heading title="Welcome to Fluidez" lead="Spanish for real conversations, about 20 minutes a day." />
-          <p class="promise">By the end of this week you'll be able to introduce yourself, say where you're from and what you do, in Spanish.</p>
+          <p class="promise">By the end of this unit you'll be able to introduce yourself, say where you're from and what you do, in Spanish.</p>
           <ul class="welcome-points">
             <li>Each day starts with a quick look back at what you know.</li>
             <li>Then something new, and right away you use it.</li>
@@ -122,8 +122,8 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
         <main class="screen onboarding" id="main">
           {placed && unit ? (
             <>
-              <Heading title={`You'll start at week ${placed + 1}`} lead={undash(unit.title)} />
-              <p>The weeks before it count as known. Their words and phrases will come back now and then over the next few weeks, to make sure they've stuck.</p>
+              <Heading title={`You'll start at unit ${placed + 1}`} lead={undash(unit.title)} />
+              <p>The units before it count as known. Their words and phrases will come back now and then as you go, to make sure they've stuck.</p>
             </>
           ) : (
             <>

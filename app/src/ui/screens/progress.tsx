@@ -44,7 +44,7 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
     <main class="screen" id="main">
       <Heading title="Progress" />
       <section class="card" data-report>
-        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{stage ? `${stage}, week` : 'Week'} {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
+        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{stage ? `${stage}, unit` : 'Unit'} {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
         <p data-delayed>Things from last week you still have: {delayed.n >= 10 && delayed.value !== undefined ? pct(delayed.value) : 'Not enough yet'}</p>
         <p data-produced>Spanish you produced this week: {made.n >= 10 && made.value !== undefined ? `${pct(made.value)} of practice` : 'Not enough yet'}</p>
         <p data-waiting>Waiting for you: {waitText}{wait >= 1 ? (wait <= budget ? ', under today\'s budget' : ', more than today\'s budget') : ''}</p>
@@ -54,11 +54,11 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
         <p class="ask">Check what has stuck</p>
         <p>{last && lastShare !== undefined
           ? `Last check, ${new Date(last.at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}: ${pct(lastShare)} right first time.`
-          : 'A mixed check on the weeks you have finished, to see what you still have.'}</p>
+          : 'A mixed check on the units you have finished, to see what you still have.'}</p>
         <div class="actions">
           <button class="btn primary" data-take-check disabled={!done.length || !onPractise} onClick={() => onPractise?.({ kind: 'checkpoint' })}>Take a check (about 10 minutes)</button>
         </div>
-        {done.length ? null : <p class="small">Finish your first week first</p>}
+        {done.length ? null : <p class="small">Finish your first unit first</p>}
       </section>
       <section class="card" data-cando>
         <p class="ask">You can now…</p>

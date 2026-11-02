@@ -179,11 +179,11 @@ export function Close({ block, run, more, onMore, onHome, onPractise }: BlockPro
       <section class="card">
         {unit && block.progress ? (
           <>
-            <p class="ask">This week</p>
+            <p class="ask">This unit</p>
             {finished ? <p class="ok" data-unit-end>{finished}</p> : null}
             <p class="big">{undash(unit.canDo)}</p>
-            <Bar value={block.progress.done} of={block.progress.of} label="Progress through this week's goal" />
-            <p class="small">{block.progress.done} of {block.progress.of} lessons this week</p>
+            <Bar value={block.progress.done} of={block.progress.of} label="Progress through this unit's goal" />
+            <p class="small">{block.progress.done} of {block.progress.of} lessons this unit</p>
           </>
         ) : null}
         {back.of > 0 ? <p class="small" data-came-back>From last week, {back.came} of {back.of} came back.</p> : null}

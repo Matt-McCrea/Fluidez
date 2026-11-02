@@ -1,4 +1,4 @@
-// Home: today's session in plain words, this week's goal, the story so far.
+// Home: today's session in plain words, this unit's goal, the story so far.
 import { useEffect, useMemo } from 'preact/hooks';
 import type { Mode, SessionPlan } from '../../compiler';
 import { Bar, Heading, undash } from '../components/text';
@@ -18,7 +18,7 @@ import { chapterBefore, chaptersRead } from '../session/storyline';
 /** "Only five minutes?": the minimum tier under a five minute cap. */
 export interface QuickStart { tier: 'minimum'; cap: number; quick: true }
 
-/** The card that stands in for the week card once the last unit is done. Nothing in it claims what the learner can do. */
+/** The card that stands in for the unit card once the last unit is done. Nothing in it claims what the learner can do. */
 export const COURSE_END = {
   title: "That's the end of the course",
   body: "There are no more new lessons. Each day is now a mix of what's due, so the Spanish you've met keeps coming back.",
@@ -54,8 +54,8 @@ export function returnLine(plan: Pick<SessionPlan, 'converted' | 'blocks'> | und
 }
 
 /**
- * The first line of a week, when the path has just left a week the learner worked through: which
- * one, and where its goal stands. Not shown for the first week, nor for weeks placement jumped over.
+ * The first line of a unit, when the path has just left a unit the learner worked through: which
+ * one, and where its goal stands. Not shown for the first unit, nor for units placement jumped over.
  */
 export function finishedWeekLine(
   units: ReadonlyArray<{ id: string; title: string; canDo: string }>, path: { unit: number; day: number }, placedAt: number,
@@ -212,12 +212,12 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
       {unit && !finished ? (
         <section class="card" aria-labelledby="week-title">
           {justFinished ? <p class="small" data-week-done>{justFinished}</p> : null}
-          <p class="ask" id="week-title">This week: {undash(unit.title)}</p>
+          <p class="ask" id="week-title">This unit: {undash(unit.title)}</p>
           <p>{undash(unit.canDo)}</p>
-          <Bar value={ui.path.day} of={unit.days.length} label="Progress through this week" />
+          <Bar value={ui.path.day} of={unit.days.length} label="Progress through this unit" />
           <p class="small">{ui.path.day} of {unit.days.length} lessons</p>
-          {lastDay && !doneToday ? <p class="small" data-week-last>Today is the last lesson of this week.</p> : null}
-          <ol class="weekmap" aria-label="The days this week">
+          {lastDay && !doneToday ? <p class="small" data-week-last>Today is the last lesson of this unit.</p> : null}
+          <ol class="weekmap" aria-label="The days this unit">
             {map.map((d, i) => (
               <li key={i} data-day={d.state}>
                 {d.state === 'done' ? '\u2713 ' : ''}{d.state === 'today' ? <strong>{d.word} (today)</strong> : d.word}

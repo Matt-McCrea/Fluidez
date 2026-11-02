@@ -139,7 +139,7 @@ function CheckpointResult({ run }: { run: Freeplay }) {
     <>
       <p class="ask" data-verdict>{checkVerdict(run.answered ? run.right / run.answered : 0)}</p>
       <ul class="cando" data-by-unit>
-        {rows.map(({ id, r, at }) => <li key={id}>Week {at + 1}, {undash(units[at]?.title ?? id)}: {r.right} of {r.total}</li>)}
+        {rows.map(({ id, r, at }) => <li key={id}>Unit {at + 1}, {undash(units[at]?.title ?? id)}: {r.right} of {r.total}</li>)}
       </ul>
     </>
   );
