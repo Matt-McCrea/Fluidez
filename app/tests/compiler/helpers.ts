@@ -236,7 +236,35 @@ export function checkNoSiblings({ plan }: Seen) {
   for (const [node, s] of dirs) expect(s.size, `${node} reviewed in both directions`).toBe(1);
 }
 
-export const ALL_CHECKS = [checkNoSiblings, checkFrame, checkMinimum, checkBudgets, checkContrasts, checkGate, checkNoRepeats, checkReviews, checkThrottle, checkMultiReviews, checkReviewReuse, checkProductivePolicy];
+/**
+ * A contrast with a script is taught from it (F1): a new one is never a learn item, its teach block carries the
+ * whole script, and a day that teaches one has no communicative block and no freer writing (R21).
+ */
+export function checkContrastTeaching({ plan, input }: Seen) {
+  for (const b of plan.blocks) if (b.kind === 'learn') for (const it of b.items) {
+    expect(it.nodeKind === 'contrast' && input.content.scripts.has(it.node), `${it.node} is a learn item, not a lesson`).toBe(false);
+  }
+  const taught = plan.blocks.filter((b) => b.kind === 'teach' && b.reason === 'contrast');
+  for (const b of taught) {
+    if (b.kind !== 'teach') continue;
+    const sc = input.content.scripts.get(b.node)!;
+    expect(b.nodeKind).toBe('contrast');
+    expect(b.script).toBe(true);
+    expect(b.deliberate).toBe(false);
+    expect(b.parts).toEqual(['hook', 'examples', 'rule', 'readAndPick', 'yourTurn', 'pitfalls']);
+    expect(b.items.length).toBe(sc.readAndPick + sc.yourTurn);
+  }
+  for (const x of plan.newNodes.contrasts) {
+    if (!input.content.scripts.has(x)) continue;
+    expect(taught.some((b) => b.kind === 'teach' && b.node === x), `${x} is new today and has no lesson`).toBe(true);
+  }
+  if (taught.length && plan.type === 'drill') {
+    expect(plan.blocks.some((b) => b.kind === 'communicative'), 'communicative stays on a contrast day').toBe(false);
+    expect(plan.blocks.some((b) => b.kind === 'writing' && b.purpose === 'freer'), 'freer writing stays on a contrast day').toBe(false);
+  }
+}
+
+export const ALL_CHECKS = [checkNoSiblings, checkFrame, checkMinimum, checkBudgets, checkContrasts, checkContrastTeaching, checkGate, checkNoRepeats, checkReviews, checkThrottle, checkMultiReviews, checkReviewReuse, checkProductivePolicy];
 
 /** Spacing across a walk: grammar intros never in consecutive core sessions; each drilled within 1–3 core sessions. */
 export function checkSpacing(plans: Seen[]) {

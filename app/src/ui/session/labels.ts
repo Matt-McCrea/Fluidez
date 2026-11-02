@@ -72,6 +72,9 @@ export function blockHeading(block: Block, b: Bundle, ctx?: { known?: number }):
     case 'learn': return { title: 'New words and phrases', lead: 'Read each one, then you\'ll use it a few times.' };
     case 'teach':
       if (block.reason === 'drill') return { title: block.parts.includes('readAndPick') ? 'Read and pick' : 'Your turn', lead: 'From the lesson, once more.' };
+      // a contrast's title is already the question (tú or usted?); a return says it is one more look
+      if (block.reason === 'contrast') return { title: b.title(block.node), lead: '' };
+      if (block.reason === 'return') return { title: `One more look: ${lc(b.title(block.node))}`, lead: 'A few more from the lesson.' };
       return { title: `New: ${lc(b.title(block.node))}`, lead: block.script ? '' : 'A few examples first.' };
     case 'ruleRecall': return { title: 'Remember this?', lead: 'Try it before the reminder.' };
     case 'structuredInput': return { title: 'Read and pick', lead: 'Read carefully: the small words matter.' };

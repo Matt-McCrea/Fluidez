@@ -31,9 +31,12 @@ export interface SyntheticCorpus { units: Unit[]; nodes: GraphNode[]; source: Co
 /** Units per band (plan: A1 ~14, A2 ~13, B1 ~14, B2 ~10, C1 ~9). */
 export const BAND_UNITS: [Band, number][] = [['A1', 14], ['A2', 13], ['B1', 14], ['B2', 10], ['C1', 9]];
 
-/** Sentences per node written for it (targets), before the supply multiplier. */
+/**
+ * Sentences per node written for it (targets), before the supply multiplier. A contrast has none, as in the
+ * real course: its sentences belong to the two sides it sets against each other (R11).
+ */
 export const SENTENCES_PER_NODE: Record<GraphNode['kind'], number> = {
-  lexeme: 16, chunk: 16, grammar: 90, pattern: 30, contrast: 20, cando: 0,
+  lexeme: 16, chunk: 16, grammar: 90, pattern: 30, contrast: 0, cando: 0,
 };
 
 const CHAPTER_WORDS: Record<Band, number> = { A1: 150, A2: 250, B1: 350, B2: 500, C1: 650 };
@@ -79,10 +82,11 @@ export function syntheticCourse(_seed = 1, maxUnits?: number): { units: Unit[]; 
       const [gA, gB] = gram;
       const prevB = grammarSoFar[grammarSoFar.length - 1];
       const days: Unit['days'] = [];
+      // a contrast is listed on a drill day, where the real course lists it (its sides are known by then)
       if (gA) days.push(day('introduce', { focus: [gA] }), day('drill', { focus: prevB ? [gA, prevB] : [gA] }));
       days.push(day('input'));
       if (hasPatterns) days.push(day('patterns', { focus: pats }));
-      if (gB) days.push(day('introduce', { focus: contrast ? [gB, contrast] : [gB] }), day('drill', { focus: [gB, gA] }));
+      if (gB) days.push(day('introduce', { focus: [gB] }), day('drill', { focus: contrast ? [gB, gA, contrast] : [gB, gA] }));
       else days.push(day('input', { focus: contrast ? [contrast] : [] }));
       days.push(day('output'), day(ui % 4 === 0 ? 'checkpoint' : 'review'));
       // nominal shares first (input days carry the bulk), then fill to the caps, then an extra input day
@@ -192,6 +196,7 @@ export function syntheticCorpus(opts: SyntheticOptions = {}): SyntheticCorpus {
   for (const n of order) {
     const k = kind(n);
     if (k === 'grammar' || k === 'pattern') scripts.push({ node: n, readAndPick: 8, yourTurn: 6 });
+    else if (k === 'contrast') scripts.push({ node: n, readAndPick: 9, yourTurn: 7 });
   }
   return { units, nodes, source: { sentences, chapters, scenes, writing, scripts }, injectedLexemes };
 }

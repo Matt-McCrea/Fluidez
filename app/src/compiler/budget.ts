@@ -109,6 +109,8 @@ export const PATTERN_CAP = 4;
 export const PATTERNS_DAY_CAP = 8;
 export const PATTERNS_TAUGHT = 3;
 export const CONTRAST_CAP = 1;
+/** A review day's return to a known contrast: this many of its script's read-and-pick and your-turn items (about 2 minutes). */
+export const CONTRAST_RETURN = { readAndPick: 4, yourTurn: 3 } as const;
 /**
  * Owed items (cut by an earlier throttle or over a day's cap) are repaid
  * first, and also on days that teach nothing new themselves (output, review,

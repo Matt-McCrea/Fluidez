@@ -350,8 +350,12 @@ export interface TeachBlock extends BlockBase {
   parts: ('hook' | 'examples' | 'rule' | 'readAndPick' | 'yourTurn' | 'pitfalls')[];
   items: ScriptItem[];
   examples: string[];
-  /** 'drill': the script's items re-served on a drill day because the bank has too few rows for the node */
-  reason?: 'drill';
+  /**
+   * 'drill': the script's items re-served on a drill day because the bank has too few rows for the node.
+   * 'contrast': a contrast's script, taught whole (a new contrast, or one the learner knows and was never taught from it).
+   * 'return': a few of a known contrast's own items, a different few each time, as a deliberate re-serve.
+   */
+  reason?: 'drill' | 'contrast' | 'return';
 }
 
 /** Drill opener: recall the rule before seeing it, then a 20 s reminder. Deliberate. */

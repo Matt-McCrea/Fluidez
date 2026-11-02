@@ -27,13 +27,13 @@ import { lackKey, lacksCourse } from '../content/kinds';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
 import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
-  CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, COUNTS, DONE_BAND, DRILL_WITHIN,
+  CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, CONTRAST_RETURN, COUNTS, DONE_BAND, DRILL_WITHIN,
   EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
   PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
-import { admissible, dayPos, knownSet, unmetRequires, unreadChapters, makeRng, sessionSeed, type Rng } from './content';
+import { admissible, dayPos, hash32, knownSet, unmetRequires, unreadChapters, makeRng, sessionSeed, type Rng } from './content';
 import type {
   Block, ChapterRef, CloseBlock, CompileInput, Conversion, Diagnostic, LearnBlock, LearnItem, LearnerView,
   Mode, PathState, PracticeBlock, PracticeItem, PracticeOp, ReviewItem, ScriptItem, SentenceRef,
@@ -747,7 +747,8 @@ class Compiler {
     cut = Math.max(0, cut - base.lexeme);
     const chunkCap = open ? Math.max(0, base.chunk - cut) : 0;
     const patCap = open && !this.throttled ? base.pattern : 0;
-    const conCap = open && !this.throttled ? base.contrast : 0;
+    // a contrast is taught from its script, and only a drill day makes the room for that (see drill): any other day leaves it owed
+    const conCap = open && !this.throttled && type === 'drill' ? base.contrast : 0;
     const here = dayPos(this.course, this.path.unit, this.path.day);
     const dayItems: NodeId[] = advancing && day
       ? [...(opts.focusNonGrammar ? day.focus.filter((n) => kindOf(n, this.course.nodes) !== 'grammar') : []), ...day.chunks, ...day.lexemes]
@@ -888,8 +889,11 @@ class Compiler {
     if (g && this.content.scripts.has(g)) this.blocks.push({ kind: 'personal', part: 'core', deliberate: false, node: g, minutes: round1(SECONDS.personal / 60) });
   }
 
-  /** Teach one node from its script; falls back to bank examples + practice when the script is missing. */
-  private teach(node: NodeId, depth: 'full' | 'light'): Block[] {
+  /**
+   * Teach one node from its script; falls back to bank examples + practice when the script is missing.
+   * `reason` labels the block; `introduced`: the learner already has the node, so nothing in the script is a learning step.
+   */
+  private teach(node: NodeId, depth: 'full' | 'light', opts: { reason?: TeachBlock['reason']; introduced?: boolean } = {}): Block[] {
     const script = this.content.scripts.get(node);
     const kind = kindOf(node, this.course.nodes);
     const items: ScriptItem[] = [];
@@ -908,10 +912,10 @@ class Compiler {
     const rp = depth === 'full' ? script.readAndPick : Math.min(4, script.readAndPick);
     const yt = depth === 'full' ? script.yourTurn : Math.min(3, script.yourTurn);
     for (let i = 0; i < rp; i++) items.push({ op: 'readAndPick', id: `sc:${node}:rp:${i}`, node, index: i, scoring: 'exposure', credit: [node] });
-    for (let i = 0; i < yt; i++) items.push({ op: 'yourTurn', id: `sc:${node}:yt:${i}`, node, index: i, scoring: i < 5 ? 'learning' : 'exposure', credit: [node] });
+    for (let i = 0; i < yt; i++) items.push({ op: 'yourTurn', id: `sc:${node}:yt:${i}`, node, index: i, scoring: i < 5 && !opts.introduced ? 'learning' : 'exposure', credit: [node] });
     const secs = (depth === 'full' ? SECONDS.hook + SECONDS.rule : 0) + SECONDS.examples + rp * SECONDS.readAndPick + yt * SECONDS.yourTurn;
     const parts: TeachBlock['parts'] = depth === 'full' ? ['hook', 'examples', 'rule', 'readAndPick', 'yourTurn', 'pitfalls'] : ['examples', 'readAndPick', 'yourTurn'];
-    return [{ kind: 'teach', part: 'core', deliberate: false, node, nodeKind: kind, script: true, parts, items, examples: [], minutes: round1(secs / 60) }];
+    return [{ kind: 'teach', part: 'core', deliberate: false, node, nodeKind: kind, script: true, parts, items, examples: [], minutes: round1(secs / 60), ...(opts.reason ? { reason: opts.reason } : {}) }];
   }
 
   /** A practice block on one node; returns undefined (and logs a shortage) when nothing gated and unseen is left. */
@@ -1047,16 +1051,29 @@ class Compiler {
       this.blocks.push({ kind: 'controlledOutput', part: 'core', deliberate: false, focus: node, contrast, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) });
     }
     this.scriptFallback(node, 'yourTurn', total - items.length);
-    this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true, fallbackOp: 'translate' });
+    // the freer practice is built first and kept or dropped once the day's new items are known: a contrast taught whole takes its minutes (R21)
+    const freer = this.diags.length;
+    const comm = this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true, fallbackOp: 'translate', push: false });
     const task = this.taskFor(node);
-    if (task) this.blocks.push({ kind: 'writing', part: 'core', deliberate: false, task, purpose: 'freer', focus: node, minutes: this.content.tasks.get(task)!.minutes });
+    let writing: Block | undefined;
+    if (task) writing = { kind: 'writing', part: 'core', deliberate: false, task, purpose: 'freer', focus: node, minutes: this.content.tasks.get(task)!.minutes };
     else {
       const waiting = [...this.content.tasks.values()].some((t) => t.focus === node && !this.L.ledger.hasSeen('item', `wt:${t.id}`) && this.waitingOnOwed(t.requires));
       if (waiting) this.diag({ code: 'deferred', block: 'writing', node, message: `writing task on ${node} waits for owed items` });
       else this.diag({ code: 'shortage', block: 'writing', node, what: 'task', wanted: 1, got: 0, unit: this.unit?.id, message: `no unseen gated writing task focused on ${node}` });
     }
+    const freerDiags = this.diags.length - freer;
     // optional new words, only if the backlog allows (takeNew returns none when throttled)
-    this.pushLearn(this.takeNew('drill', day, advancing, { focusNonGrammar: true }));
+    const learn = this.takeNew('drill', day, advancing, { focusNonGrammar: true });
+    const lessons = learn.filter((it) => it.nodeKind === 'contrast' && this.content.scripts.has(it.node));
+    if (lessons.length) {
+      this.diags.splice(freer, freerDiags);
+      for (const it of lessons) this.blocks.push(...this.teach(it.node, 'full', { reason: 'contrast' }));
+    } else {
+      if (comm) this.blocks.push(comm);
+      if (writing) this.blocks.push(writing);
+    }
+    this.pushLearn(learn.filter((it) => !lessons.includes(it)));
   }
 
   /**
@@ -1069,14 +1086,47 @@ class Compiler {
     const have = part === 'readAndPick' ? script.readAndPick : script.yourTurn;
     const n = Math.min(have, shortfall);
     if (n <= 0) return;
-    const rp = part === 'readAndPick';
-    const code = rp ? 'rp' : 'yt';
-    const items: ScriptItem[] = Array.from({ length: n }, (_, i) => ({ op: part, id: `sc:${node}:${code}:${i}`, node, index: i, scoring: 'exposure' as const, credit: [node] }));
+    const items: ScriptItem[] = Array.from({ length: n }, (_, i) => this.scriptItem(node, part, i));
     this.diag({ code: 'fallback', block: 'teach', node, unit: this.unit?.id, wanted: shortfall, got: n, message: `${node}: bank too thin for the drill, ${n} ${part} items from the script` });
     this.blocks.push({
       kind: 'teach', part: 'core', deliberate: true, node, nodeKind: kindOf(node, this.course.nodes), script: true, parts: [part], items, examples: [], reason: 'drill',
       minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60),
     });
+  }
+
+  /**
+   * A review day returns to a contrast it lists and the learner knows, one a day. One that was never taught from its
+   * script (the learner met it before scripts were taught; the ledger has no `sc:x:…:rp:0`) is taught now, whole. One that
+   * was gets a few of its own items, a different few each session, as a deliberate re-serve.
+   */
+  private contrastBack(day: Unit['days'][number]): TeachBlock | undefined {
+    const listed = day.focus.filter((n) => kindOf(n, this.course.nodes) === 'contrast' && this.known.has(n) && this.content.scripts.has(n));
+    if (!listed.length) return undefined;
+    const taught = (n: NodeId) => this.L.ledger.hasSeen('item', `sc:${n}:rp:0`);
+    const node = listed.find((n) => !taught(n)) ?? listed[this.sessionIndex % listed.length];
+    if (!taught(node)) return this.teach(node, 'full', { reason: 'contrast', introduced: true })[0] as TeachBlock;
+    const script = this.content.scripts.get(node)!;
+    const items: ScriptItem[] = [
+      ...this.rotation(node, script.readAndPick, CONTRAST_RETURN.readAndPick).map((i) => this.scriptItem(node, 'readAndPick', i)),
+      ...this.rotation(node, script.yourTurn, CONTRAST_RETURN.yourTurn).map((i) => this.scriptItem(node, 'yourTurn', i)),
+    ];
+    if (!items.length) return undefined;
+    this.diag({ code: 'fallback', block: 'teach', node, unit: this.unit?.id, message: `${node}: ${items.length} items from its script, a different few each session` });
+    return {
+      kind: 'teach', part: 'core', deliberate: true, node, nodeKind: 'contrast', script: true, parts: ['readAndPick', 'yourTurn'], items, examples: [], reason: 'return',
+      minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60),
+    };
+  }
+
+  /** `k` of a script's `count` items, from a place that moves on by `k` every session (and starts elsewhere for each node), so no two sessions serve the same ones until the script has gone round. */
+  private rotation(node: NodeId, count: number, k: number): number[] {
+    const n = Math.min(k, count);
+    const start = (hash32(node) + this.sessionIndex * n) % Math.max(1, count);
+    return Array.from({ length: n }, (_, j) => (start + j) % count);
+  }
+
+  private scriptItem(node: NodeId, part: 'readAndPick' | 'yourTurn', index: number): ScriptItem {
+    return { op: part, id: `sc:${node}:${part === 'readAndPick' ? 'rp' : 'yt'}:${index}`, node, index, scoring: 'exposure', credit: [node] };
   }
 
   /** A contrast node whose sides are all known and that involves one of `nodes` (or any, if none involves them). */
@@ -1244,6 +1294,8 @@ class Compiler {
     const cap = this.throttled ? Math.max(budget, this.minutes - 1) : Math.max(budget, this.dueMinutes);
     const w = this.warmup(cap, budget, true);
     let left = this.minutes - w.minutes - SECONDS.close / 60;
+    const back = day ? this.contrastBack(day) : undefined;
+    if (back && left >= back.minutes) { this.blocks.push(back); left -= back.minutes; }
     const catchUp = day ? this.chapterFor(undefined).ch : undefined;
     if (catchUp && left >= catchUp.minutes) { this.pushRead(catchUp); left -= catchUp.minutes; }
     if (left >= 3) left -= this.remix()?.minutes ?? 0;
