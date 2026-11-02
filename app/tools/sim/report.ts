@@ -204,6 +204,8 @@ export interface Measure {
   freshPct: number;
   /** the longest run of those sessions in a row that brought nothing new */
   longestWithoutNew: number;
+  /** of the first 21 of them, the share that were a review (the day the path names, or the throttle's conversion of it) */
+  reviewOnly21: number;
   contrastsTaught: number;
   contrastsListed: number;
   contrastReturns: number;
@@ -227,6 +229,7 @@ export function measures(runs: ProfileRun[]): Measure[] {
     return {
       profile: r.profile, tier: r.tier, core: core.length,
       storyPct: pct(core.filter((s) => s.story).length, core.length), freshPct: pct(core.filter((s) => s.fresh).length, core.length), longestWithoutNew: longest,
+      reviewOnly21: pct(core.slice(0, 21).filter((s) => s.type === 'review').length, Math.min(21, core.length)),
       contrastsTaught: new Set(core.flatMap((s) => s.contrastTaught)).size, contrastsListed: r.contrastsListed,
       contrastReturns: core.reduce((a, s) => a + s.contrastReturned.length, 0),
       contrastDays: days.length, contrastEst: avg(days.map((s) => s.estMinutes)), contrastPlan: avg(days.map((s) => s.planMinutes)),
@@ -236,9 +239,47 @@ export function measures(runs: ProfileRun[]): Measure[] {
   });
 }
 
-const MEASURE_HEAD = ['profile', 'tier', 'core sessions', 'story %', 'new %', 'longest run without new', 'contrasts taught/listed', 'contrast returns', 'contrast days', 'est/plan min on them', 'over', 'est/plan min, all', 'over %'];
+/** A return: the first session after a gap of at least RETURN_DAYS days, and the five after it. */
+export const RETURN_DAYS = 7;
+export interface Return {
+  profile: string;
+  tier: string;
+  day: number;
+  gap: number;
+  due: number;
+  dueMinutes: number;
+  /** the session itself, then the next five: its type, whether the throttle converted it, and what it brought that was new */
+  sessions: { type: string; converted?: string; newItems: number; story: boolean }[];
+  /** sessions (counting the first) until one brought something new; undefined = none of the six did */
+  toNew?: number;
+}
+
+export function returns(runs: ProfileRun[]): Return[] {
+  const out: Return[] = [];
+  for (const r of runs) {
+    const core = r.sessions.filter((s) => s.type !== 'minimum');
+    core.forEach((s, i) => {
+      if (i === 0 || s.gap < RETURN_DAYS) return;
+      const after = core.slice(i, i + 6);
+      const k = after.findIndex((x) => x.fresh);
+      out.push({
+        profile: r.profile, tier: r.tier, day: s.day, gap: s.gap, due: s.due, dueMinutes: s.dueMinutes,
+        sessions: after.map((x) => ({ type: x.type, converted: x.converted, newItems: x.newItems, story: x.story })),
+        toNew: k < 0 ? undefined : k + 1,
+      });
+    });
+  }
+  return out;
+}
+
+function returnLine(x: Return): string {
+  const ss = x.sessions.map((s) => `${s.type}${s.converted ? `/${s.converted}` : ''}[${s.newItems}${s.story ? '+story' : ''}]`).join(' ');
+  return `  ${`${x.profile}/${x.tier}`.padEnd(18)} day ${String(x.day).padEnd(3)} after ${String(x.gap).padEnd(2)} days: ${String(x.due).padStart(4)} due (${x.dueMinutes.toFixed(1)} min)  ${ss}  ${x.toNew === undefined ? 'NO NEW IN SIX' : `new at session ${x.toNew}`}`;
+}
+
+const MEASURE_HEAD = ['profile', 'tier', 'core sessions', 'story %', 'new %', 'longest run without new', 'review-only, first 21 %', 'contrasts taught/listed', 'contrast returns', 'contrast days', 'est/plan min on them', 'over', 'est/plan min, all', 'over %'];
 function measureCells(m: Measure): string[] {
-  return [m.profile, m.tier, String(m.core), m.storyPct.toFixed(1), m.freshPct.toFixed(1), String(m.longestWithoutNew), `${m.contrastsTaught}/${m.contrastsListed}`, String(m.contrastReturns),
+  return [m.profile, m.tier, String(m.core), m.storyPct.toFixed(1), m.freshPct.toFixed(1), String(m.longestWithoutNew), m.reviewOnly21.toFixed(0), `${m.contrastsTaught}/${m.contrastsListed}`, String(m.contrastReturns),
     String(m.contrastDays), m.contrastDays ? `${m.contrastEst.toFixed(1)}/${m.contrastPlan.toFixed(1)}` : '-', String(m.contrastOver), `${m.est.toFixed(1)}/${m.plan.toFixed(1)}`, m.overPct.toFixed(1)];
 }
 
@@ -257,6 +298,8 @@ export function formatReport(runs: ProfileRun[], quotas: Quotas, placed: Profile
   lines.push(`Grades: ${runs.map((r) => `${r.profile}/${r.tier} ${gradeText(r)}`).join('; ')}`);
   lines.push('', 'Compiler measures (core sessions: standard and extended; "new" = a new node, a first chapter or a scene):');
   lines.push(table(MEASURE_HEAD, measures(runs).map(measureCells)));
+  const back = returns(runs);
+  if (back.length) lines.push('', `Returns (a session after ${RETURN_DAYS} or more days away, and the five after it: type/conversion[new nodes]):`, ...back.map(returnLine));
   if (placed.length) { lines.push('', 'Placement backlog (30 days after placement):', table(PLACE_HEAD, placed.map(placementCells))); }
   lines.push('');
   lines.push('Shortages by block:what (per run):');
@@ -280,7 +323,7 @@ function bandCells(r: BandRow): string[] {
 }
 
 const RUN_HEAD = ['profile', 'tier', 'sessions', 'course done', 'unit reached', 'UNINTENDED REPEATS', 'item rep.60d %', '(deliberate)',
-  'fresh sents', 'reused ctx', 'review items', 'multi %', 'targets/item', 'bare', 'script', 'shortages', 'recv-only', 'suspended', 'learned', 'owed'];
+  'fresh sents', 'reused ctx', 'review items', 'multi %', 'targets/item', 'bare', 'script', 'shortages', 'recv-only', 'suspended', 'learned', 'owed', 'due at end', '(a week late)'];
 function runCells(r: ProfileRun): string[] {
   const unintended = Object.values(r.unintendedRepeats).reduce((a, b) => a + b, 0);
   const ri = r.reviewItems;
@@ -288,7 +331,7 @@ function runCells(r: ProfileRun): string[] {
     `${unintended}${unintended ? ' ✗' : ''}`, pct(r.itemRepeats60, r.itemServes).toFixed(2), String(r.itemRepeats60Deliberate),
     String(r.freshSentences), String(r.reusedSentences), String(ri.items), pct(ri.multi, ri.items).toFixed(1),
     (ri.items ? ri.targets / ri.items : 0).toFixed(2), String(ri.bare), String(ri.script),
-    String(sum(Object.values(r.shortages))), String(r.receptiveOnly), String(r.suspendedReceptive), String(r.learned), String(r.owedAtEnd)];
+    String(sum(Object.values(r.shortages))), String(r.receptiveOnly), String(r.suspendedReceptive), String(r.learned), String(r.owedAtEnd), String(r.dueAtEnd), String(r.lateAtEnd)];
 }
 
 const QUOTA_HEAD = ['unit', 'sentences', '(review ctx)', 'chapters', 'scenes', 'tasks', 'p95 demand s/c/sc/t', 'max demand s', 'shortages'];

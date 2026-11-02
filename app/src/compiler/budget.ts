@@ -84,6 +84,30 @@ export const MULTI_REVIEW_SCAN = 80;
 export const REVIEW_REUSE_DAYS = 120;
 export const REVIEW_REUSE_REASON = 'review-context-120d';
 
+// ---------------------------------------------------------------- debt (R18)
+//
+// Due cards are fresh or debt. Debt is a card more than DEBT.minDays day overdue, however long its interval (it came due on a
+// day the learner did not study, and a card eleven days late is not today's work because its interval is sixty), or one that
+// placement seeded and the learner has not reviewed since. Fresh cards are what the schedule asks of today: they are served
+// in full, and they alone throttle new teaching. Debt is paid out of what the warm-up budget has left, at most DEBT.share of
+// it and DEBT.cards cards a session (a review day, whose business is catching up, pays DEBT.reviewFactor times that). No card
+// is changed and no stability scaled: debt stays due until it is reviewed.
+//
+// minDays is the one that matters. In the simulator, with three days a learner who skipped two went on being throttled for three
+// or four sessions in a row; with one, no profile went more than two sessions without something new. The values are in an object
+// so that the simulator can turn the policy off or move it, as it does the warm-up budget (npm run simulate -- --real --debt off).
+export const DEBT = {
+  /** days overdue past which a due card is debt */
+  minDays: 1,
+  /** the share of the warm-up room the fresh cards leave that a session may spend on debt */
+  share: 1,
+  /** cards of debt a session pays at most; a review day pays reviewFactor times as many, and as large a share */
+  cards: 20,
+  reviewFactor: 2,
+};
+/** A session this many days or more after the one before is a return (plan.reentry); its warm-up serves at most `cards` cards, on top of the minutes it is held to. */
+export const REENTRY = { days: 7, cards: 10 };
+
 /** Throttle: due minutes > budget. Severe: > SEVERE_FACTOR × budget (introduce days convert too). */
 export const SEVERE_FACTOR = 2;
 
@@ -186,4 +210,5 @@ export const TUNING_LOG: readonly string[] = [
   '2026-10-29 tried and rejected: MULTI_REVIEW_SCAN 80→250 (targets/item +0.05, calendar change within seed noise, compile cost ×2.5); B2/C1 warm-up 10–12. Forgetful B2 throttle (2 seeds) 31% at 9 min, 25% at 10, 24.5% at 11, 17% at 12; the average profile is already ~5% at 9 and gains nothing. Kept 9: a 10–12 min warm-up turns the 28-min B2 session into a 16–18 min core for every learner to help only the forgetful one.',
   '2026-10-29 simulator: synthetic supply 2× (32 sentences per lexeme) for the quota run, so measured demand is not capped by the synthetic bank (bare reviews 0–4 instead of hundreds for forgetful).',
   '2026-10-29 playtest: SECONDS.learn 35→55 (what the player really takes); first-week ramp: at most 8 new items per session in the first 3 core sessions (day 1 listed 11); a plan over its session minutes drops new items from the end of the learn pool (owed, never lost) until it fits.',
+  '2026-11-02 debt policy (R18): due cards more than a day overdue, or seeded by placement and not reviewed since, are debt: they no longer throttle, and are paid out of the warm-up budget the fresh cards leave, at most 20 cards a session (40 on a review day). A learner away 7 or more days gets a 10-card warm-up and the next chapter, and the day waits. Real A1 and A2, 365 days, seeds 1/2/3, policy off then on. Longest run of sessions without anything new: fast 1/2/1 to 1/1/1, average 2/2/3 to 1/1/1, forgetful 3/3/3 to 1/2/1, irregular 3/2/2 to 2/1/2, returner (away 21 days) 4/4/3 to 2/2/2, lapsed (away 60) 4/3/3 to 1/3/2, placed at u20 1/2/2 to 1/1/2, the same at 30 s a card 7/7/5 to 2/1/3. Two of 24 runs still reach 3: both a throttle on fresh cards (not debt), one with the day under it a scheduled review. Sessions throttled: average 22/25/27% to 6/2/4%, forgetful 40/38/40% to 9/10/6%, slow placed 58/61/54% to 26/33/26%. First-try recall within 1.6 points for every profile but forgetful (to 80.7 to 82.2 from 81.9 to 83.4) and the slow placed one (84.0 to 85.4 from 87.3 to 87.9). Cards due at the end of a year, forgetful seed 3: 214, 101 of them a week late (58 and none with the policy off). With 3 days instead of 1 the longest run stayed at 3 or 4 (seed 1). Tried and kept: 20 cards a session (12 left forgetful at 78.7).',
 ];

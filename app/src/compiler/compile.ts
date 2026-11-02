@@ -26,11 +26,11 @@
 import { lackKey, lacksCourse } from '../content/kinds';
 import { alignedPairs } from '../exercises/pairs';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
-import { productivePolicy, State, type Direction, type DueCard, type Tier } from '../learner';
+import { productivePolicy, SEEDED_REPS, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
-  CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, CONTRAST_RETURN, COUNTS, DONE_BAND, DRILL_WITHIN,
+  CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, CONTRAST_RETURN, COUNTS, DEBT, DONE_BAND, DRILL_WITHIN,
   EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
-  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
+  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
@@ -233,9 +233,19 @@ class Compiler {
   /** minutes the warm-up ran over its budget (throttled sessions) */
   private warmupOverrun = 0;
   private due: DueCard[] = [];
-  /** every due card grouped into review items, most overdue first; the warm-up serves a prefix */
+  /** the fresh due cards grouped into review items, most overdue first; the warm-up serves a prefix */
   private groups: ReviewGroup[] = [];
+  /** the old debt (see budget.ts), grouped the same way; the warm-up pays a capped part of it */
+  private debtGroups: ReviewGroup[] = [];
+  /** debt among the servable due cards, and its minutes */
+  private debtCards = 0;
+  private debtMinutes = 0;
+  /** minutes to review the fresh due cards: what the throttle weighs */
   private dueMinutes = 0;
+  /** the learner is back after REENTRY.days or more away */
+  private reentry?: { days: number };
+  /** debt cards the warm-up pays this session */
+  private paidDebt = 0;
   private band: Band = DONE_BAND;
   private minutes = 0;
   private throttled = false;
@@ -268,10 +278,11 @@ class Compiler {
 
   private get course() { return this.input.course; }
 
-  /** Minutes to review everything due, grouped as the warm-up would serve it. */
+  /** Minutes to review the fresh cards due, grouped as the warm-up would serve them (the old debt does not count: it never throttles). */
   dueReviewMinutes(): number {
     this.due = this.L.due(this.now);
-    return this.planReviews().reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
+    this.planDue();
+    return this.dueMinutes;
   }
   private get content() { return this.input.content; }
 
@@ -283,8 +294,9 @@ class Compiler {
     // session length by band and tier (budget.ts); there is no minutes setting
     this.minutes = sessionMinutes(this.tier, this.band);
     this.due = this.L.due(this.now);
-    this.groups = this.planReviews();
-    this.dueMinutes = this.groups.reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
+    this.planDue();
+    const away = this.L.lastSessionAt === undefined ? 0 : (this.now - this.L.lastSessionAt) / DAY_MS;
+    if (away >= REENTRY.days) this.reentry = { days: Math.floor(away) };
     const reviewBudget = throttleMinutes(this.tier, this.band);
     this.throttled = this.dueMinutes > reviewBudget;
     this.severe = this.dueMinutes > SEVERE_FACTOR * reviewBudget;
@@ -332,6 +344,7 @@ class Compiler {
       unit: this.unit?.id,
       day: day ? this.path.day : undefined,
       converted: d.converted,
+      ...(this.reentry ? { reentry: this.reentry } : {}),
       advancesPath: d.advances,
       blocks: this.blocks,
       newNodes: this.newNodes,
@@ -339,6 +352,7 @@ class Compiler {
       budget: {
         band: this.band, minutes: this.minutes, reviewMinutes: reviewBudget, secondsPerReview: this.spr,
         due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.throttled, severe: this.severe,
+        ...(this.debtCards ? { debt: { cards: this.debtCards, minutes: round1(this.debtMinutes), paid: this.paidDebt } } : {}),
       },
       estimatedMinutes: round1(this.blocks.reduce((a, b) => a + b.minutes, 0)),
       diagnostics: this.diags,
@@ -365,7 +379,9 @@ class Compiler {
       this.diag({ code: 'offline', unit: this.unit?.id, message: `${dt} day needs ${lacked.join(', ')}, which this device could not get: reviews only, the path stays` });
       return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'offline' } };
     }
-    // Spacing: a pending drill at its last allowed session wins over everything.
+    // back after days away: a short warm-up and the next story beat, and the day waits for the next session
+    if (this.reentry && this.mode === 'next') return { type: 'review', advances: false, converted: { from: dt, to: 'review', reason: 'reentry' } };
+    // Spacing: a pending drill at its last allowed session wins over everything but a return.
     const lastChance = [...this.path.pendingDrills].sort((a, b) => a.at - b.at).find((p) => c - p.at >= DRILL_WITHIN);
     if (lastChance) {
       if (dt === 'drill') return { type: 'drill', advances: true, drillNode: lastChance.node };
@@ -427,26 +443,44 @@ class Compiler {
   /**
    * Serve review items (planned groups, most overdue first) while the cost so
    * far is under the cap. A group may overshoot the cap by < MULTI_REVIEW_COST
-   * units; reviews are never trimmed below the cap.
+   * units; fresh reviews are never trimmed below the cap. Then the old debt is
+   * paid out of what the warm-up budget has left: at most DEBT.share of it and
+   * DEBT.cards cards (more on a review day), none when the fresh cards already
+   * fill it. `cards` caps the whole warm-up in cards (a return).
    */
-  private warmup(capMinutes: number, budgetMinutes: number, extended: boolean): WarmupBlock {
+  private warmup(capMinutes: number, budgetMinutes: number, extended: boolean, opts: { cards?: number } = {}): WarmupBlock {
     const capUnits = (capMinutes * 60) / this.spr - 1e-6;
     const items: ReviewItem[] = [];
     let units = 0;
     let covered = 0;
+    const room = () => opts.cards === undefined || items.length < opts.cards;
     for (const g of this.groups) {
-      if (units >= capUnits) break;
+      if (units >= capUnits || !room()) break;
       items.push(this.reviewItem(g));
       units += reviewCost(g.targets.length);
       covered += g.targets.length;
       for (const t of g.targets) this.warmupKeys.add(t);
     }
-    const minutes = units * this.spr / 60;
-    this.warmupOverrun = Math.max(0, minutes - budgetMinutes);
+    const freshMinutes = units * this.spr / 60;
+    this.warmupOverrun = Math.max(0, freshMinutes - budgetMinutes);
+    const factor = extended ? DEBT.reviewFactor : 1;
+    const debtUnits = (Math.min(DEBT.share * factor * budgetMinutes, Math.max(0, budgetMinutes - freshMinutes)) * 60) / this.spr - 1e-6;
+    let paid = 0;
+    let spent = 0;
+    for (const g of this.debtGroups) {
+      if (spent >= debtUnits || paid >= DEBT.cards * factor || !room()) break;
+      items.push(this.reviewItem(g));
+      spent += reviewCost(g.targets.length);
+      covered += g.targets.length;
+      paid += g.targets.length;
+      for (const t of g.targets) this.warmupKeys.add(t);
+    }
+    this.paidDebt = paid;
+    const minutes = (units + spent) * this.spr / 60;
     const b: WarmupBlock = {
       kind: 'warmup', part: 'warmup', deliberate: false, items,
       minutes: round1(minutes), due: this.due.length, covered, carried: this.due.length - covered,
-      budgetMinutes, extended,
+      budgetMinutes, extended, ...(this.debtCards ? { debt: this.debtCards, paid } : {}),
     };
     this.blocks.push(b);
     return b;
@@ -474,6 +508,33 @@ class Compiler {
     }
     this.diag({ code: 'bareReview', block: 'warmup', node, what: 'sentence', wanted: 1, got: 0, message: `no usable sentence for ${node}: bare card` });
     return { op: 'review', id: `rv:${node}:${g.direction}:bare`, node, targets: [node], direction: g.direction, novel: false, scoring: 'review', credit: [node] };
+  }
+
+  /**
+   * Split what is due into fresh and debt and plan both as review items (the sentence a fresh item takes is not offered to
+   * a debt item). Siblings are buried first, over everything due, so a node is still reviewed one way a session.
+   */
+  private planDue() {
+    const servable = this.servableDue();
+    const debt = servable.filter((c) => this.isDebt(c));
+    const reserved = new Set<string>();
+    this.groups = this.planReviews(servable.filter((c) => !debt.includes(c)), reserved);
+    this.debtGroups = this.planReviews(debt, reserved);
+    const cost = (gs: ReviewGroup[]) => gs.reduce((a, g) => a + reviewCost(g.targets.length), 0) * this.spr / 60;
+    this.dueMinutes = cost(this.groups);
+    this.debtMinutes = cost(this.debtGroups);
+    this.debtCards = debt.length;
+  }
+
+  /**
+   * Old debt: more than DEBT.minDays overdue, or seeded by placement (a node of a unit placement skipped, its card still the
+   * one placement made). A reading of the learner's cards; nothing here changes one.
+   */
+  private isDebt(c: DueCard): boolean {
+    if ((this.now - c.due) / DAY_MS > DEBT.minDays) return true;
+    const placed = this.input.placedAt;
+    if (!placed || (this.course.teachPos.get(c.node) ?? Infinity) >= (this.course.unitStart[placed] ?? 0)) return false;
+    return this.L.card(c.node, c.direction)?.reps === SEEDED_REPS;
   }
 
   /**
@@ -509,11 +570,9 @@ class Compiler {
    * recombination pass (novelPasses = 0), else a reused one (saves supply);
    * then scan order. No usable sentence: a bare card.
    */
-  private planReviews(): ReviewGroup[] {
-    const due = this.servableDue();
+  private planReviews(due: readonly DueCard[], reserved: Set<string>): ReviewGroup[] {
     const open: Record<Direction, Set<NodeId>> = { receptive: new Set(), productive: new Set() };
     for (const c of due) open[c.direction].add(c.node);
-    const reserved = new Set<string>();
     const novelMemo = new Map<NodeId, boolean>();
     const needsNovel = (id: NodeId) => {
       let v = novelMemo.get(id);
@@ -652,8 +711,9 @@ class Compiler {
    * is the library's, whole, when the course ships one: a chapter this device
    * has not loaded is passed over, since only a loaded one can be gated or read.
    * A learner placed part way through the course starts at their own unit.
+   * `glossed`: the chapter is admitted whatever the coverage rule says (it still has to pass the gate).
    */
-  private chapterFor(day: Unit['days'][number] | undefined, probe = false): { ch?: ChapterRef; reason?: 'seen' | 'missing' | 'gated' | 'unavailable'; blocked?: string } {
+  private chapterFor(day: Unit['days'][number] | undefined, probe = false, glossed = false): { ch?: ChapterRef; reason?: 'seen' | 'missing' | 'gated' | 'unavailable'; blocked?: string } {
     let blocked: string | undefined;
     const unread = unreadChapters(this.content.story ?? this.content.chapters, this.course, this.path, this.input.placedAt ?? 0, (id) => this.L.ledger.hasSeen('chapter', id));
     for (const s of unread) {
@@ -665,8 +725,9 @@ class Compiler {
       }
       if (this.gated(c.requires)) {
         const cov = this.coverage(c.requires);
-        if (cov.admitted) {
-          if (cov.unstable && !probe) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, within cap ${cov.allowed})` });
+        // `glossed`: the reader glosses every word, so words that are slipping do not hold the chapter back (the learner returning after days away)
+        if (cov.admitted || glossed) {
+          if (cov.unstable && !probe) this.diag({ code: 'coverage', block: 'read', unit: c.unit, coverage: cov, message: `chapter ${c.id}: ${cov.unstable}/${cov.required} required words introduced but slipping (glossed, ${cov.admitted ? 'within' : 'over'} cap ${cov.allowed})` });
           return { ch: c };
         }
         if (!probe) {
@@ -1312,6 +1373,7 @@ class Compiler {
   }
 
   private reviewDay(d: Decision, day: Unit['days'][number] | undefined) {
+    if (d.converted?.reason === 'reentry') return this.returnDay();
     const budget = throttleMinutes(this.tier, this.band) + REVIEW_DAY_EXTRA_MINUTES;
     // With a backlog the whole session goes to reviews; otherwise the extended SRS budget (everything due fits).
     const cap = this.throttled ? Math.max(budget, this.minutes - 1) : Math.max(budget, this.dueMinutes);
@@ -1326,6 +1388,17 @@ class Compiler {
     if (left >= 1.5) this.leech();
     // owed items are repaid when the backlog allows (also after the course is finished)
     this.pushLearn(this.takeNew('review', day, false));
+  }
+
+  /**
+   * The first session back after days away: a short warm-up, at most REENTRY.cards cards, and then the next
+   * beat of the story, which is where the session ends. The day it replaces waits for the next session.
+   */
+  private returnDay() {
+    const budget = throttleMinutes(this.tier, this.band);
+    this.warmup(budget, budget, false, { cards: REENTRY.cards });
+    const { ch } = this.chapterFor(undefined, false, true);
+    if (ch) this.pushRead(ch);
   }
 
   /** Grammar remix across the last units, plus one known contrast. */
@@ -1448,6 +1521,7 @@ class Compiler {
     return {
       sessionIndex: this.sessionIndex, seed: this.seed, tier: 'minimum', mode: this.mode, type: 'minimum',
       dayType: day?.type, unit: this.unit?.id, day: day ? this.path.day : undefined,
+      ...(this.reentry ? { reentry: this.reentry } : {}),
       advancesPath: false, blocks: this.blocks, newNodes: this.newNodes, receptiveOnly: this.receptiveOnly,
       budget: {
         band: this.band, minutes: this.minutes, reviewMinutes: MINIMUM_WARMUP_MINUTES, secondsPerReview: this.spr,

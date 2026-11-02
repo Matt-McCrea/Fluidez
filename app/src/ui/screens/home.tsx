@@ -1,6 +1,6 @@
 // Home: today's session in plain words, this week's goal, the story so far.
 import { useEffect, useMemo } from 'preact/hooks';
-import type { Mode } from '../../compiler';
+import type { Mode, SessionPlan } from '../../compiler';
 import { Bar, Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { sessionLabel, weekMap } from '../session/labels';
@@ -31,6 +31,17 @@ export const OFFLINE_LINE = 'The next lessons need a connection. Today is review
 /** The line for a plan the compiler held back for want of content this device does not have; nothing for any other plan. */
 export function offlineLine(plan: { converted?: { reason: string } } | undefined): string | undefined {
   return plan?.converted?.reason === 'offline' ? OFFLINE_LINE : undefined;
+}
+
+/**
+ * What Home says to a learner who is back after days away, when the compiler has planned them a gentle first session: how it
+ * starts, in plain words. It names no number of days and no number of cards, and says nothing of what was lost.
+ */
+export function returnLine(plan: Pick<SessionPlan, 'converted' | 'blocks'> | undefined): string | undefined {
+  if (plan?.converted?.reason !== 'reentry') return undefined;
+  return plan.blocks.some((b) => b.kind === 'read')
+    ? 'Welcome back. A few things to warm up, then the next part of the story.'
+    : 'Welcome back. Just a few things to warm up today.';
 }
 
 /**
@@ -140,6 +151,7 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
         {saved ? <p class="big" data-label>{sessionLabel(saved.plan, bundle)}</p>
           : plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
         {offlineLine(plan) ? <p data-offline>{offlineLine(plan)}</p> : null}
+        {!saved && returnLine(plan) ? <p data-return>{returnLine(plan)}</p> : null}
         {short ? <p data-short>A short one today</p> : null}
         {saved ? <p class="small" data-left>About {minutesLeft} {minutesLeft === 1 ? 'minute' : 'minutes'} left</p>
           : plan ? <p class="small">About {Math.max(5, Math.round(plan.estimatedMinutes))} minutes</p> : null}

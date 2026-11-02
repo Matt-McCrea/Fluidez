@@ -33,6 +33,10 @@ export interface Profile {
   retryGain: number;
   /** mean seconds per review */
   secs: number;
+  /** a long absence: after `after` days of the run the learner is away for `days` days, then comes back (nothing is skipped or reviewed in between) */
+  absence?: { after: number; days: number };
+  /** placed at the start of this unit (as the onboarding places someone who already has Spanish), instead of starting at unit 1 */
+  placedAt?: string;
 }
 
 export const PROFILES: Record<string, Profile> = {
@@ -40,6 +44,15 @@ export const PROFILES: Record<string, Profile> = {
   average:   { name: 'average',   skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 10 },
   forgetful: { name: 'forgetful', skipP: 0.15, breakP: 0.05, breakDays: [2, 5],  doubleP: 0.05, minimumP: 0.1,  learnP: 0.7,  exponent: 1.6, noise: 0.06, retryGain: 0.1, secs: 12 },
   irregular: { name: 'irregular', skipP: 0.3,  breakP: 0.15, breakDays: [3, 10], doubleP: 0.15, minimumP: 0.25, learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 10 },
+  // Not in the default run (npm run simulate --profiles returner,lapsed,placed): the learners the debt policy is for.
+  // `average` at an honest pace for a real person (15 s a card), who is away for three weeks after two months (the
+  // audit's "1 of 61"), who is away for two months, and who has been placed twenty units in.
+  returner:  { name: 'returner',  skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, absence: { after: 60, days: 21 } },
+  lapsed:    { name: 'lapsed',    skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, absence: { after: 60, days: 60 } },
+  placed:    { name: 'placed',    skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, placedAt: 'u20' },
+  // the same, slower (30 s a card, the pace the audit's placed learner worked at), and one placed in B2 (needs --through B2)
+  slowplaced: { name: 'slowplaced', skipP: 0.12, breakP: 0.05, breakDays: [2, 4], doubleP: 0.1, minimumP: 0.1, learnP: 0.8, exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 30, placedAt: 'u20' },
+  placedb2:  { name: 'placedb2',  skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, placedAt: 'u45' },
 };
 
 export function profileList(names: string[]): Profile[] {

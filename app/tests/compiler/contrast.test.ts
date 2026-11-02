@@ -1,42 +1,14 @@
 // Contrasts are taught from their scripts (F1) and come back as the script's own items (F2).
-import fs from 'node:fs';
-import path from 'node:path';
 import { describe, expect, test } from 'vitest';
-import {
-  buildContentIndex, buildCourse, compileSession, initialPath, servedRefs,
-  type ContentIndex, type Course, type SessionPlan, type TeachBlock,
-} from '../../src/compiler';
-import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask } from '../../src/content/schema';
+import { compileSession, initialPath, servedRefs, type SessionPlan, type TeachBlock } from '../../src/compiler';
 import { alignedPairs } from '../../src/exercises/pairs';
 import { Learner } from '../../src/learner';
 import { PROFILES } from '../../tools/sim/profiles';
 import { simulateProfile } from '../../tools/sim/run';
-import { ALL_CHECKS, corpus, SEEDS, walk } from './helpers';
+import { ALL_CHECKS, corpus, realCourse, SEEDS, walk } from './helpers';
 
 const T0 = new Date(2026, 0, 5, 19).getTime();
 const DAY = 86_400_000;
-
-const root = path.resolve(__dirname, '../../content');
-const json = (rel: string) => JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
-const files = (d: string, keep: (name: string) => boolean) => fs.readdirSync(path.join(root, d)).filter((f) => f.endsWith('.json') && !f.startsWith('_') && keep(f)).sort().map((f) => json(`${d}/${f}`));
-
-/** The shipped content of the first units, as the app's loader would hand it to the compiler. */
-function realCourse(through: number): { course: Course; content: ContentIndex } {
-  const ids = Array.from({ length: through }, (_, i) => `u${String(i + 1).padStart(2, '0')}`);
-  const nodes = ['grammar', 'patterns', 'chunks', 'contrasts', 'candos', 'lexemes'].flatMap((f) => (json(`graph/${f}.json`) as unknown[]).map((n) => GraphNode.parse(n)));
-  const units = ids.map((u) => Unit.parse(json(`units/${u}.json`)));
-  const course = buildCourse(units, nodes);
-  const mine = new Set(ids);
-  const ofUnit = (f: string) => mine.has(f.slice(0, 3));
-  const content = buildContentIndex({
-    sentences: files('bank', ofUnit).flat().map((b) => BankSentence.parse(b)).filter((b) => b.unit && mine.has(b.unit)),
-    chapters: files('story', () => true).map((c) => StoryChapter.parse(c)).filter((c) => mine.has(c.unit)),
-    scenes: files('scenes', (f) => mine.has(f.slice(3, 6))).map((c) => Scene.parse(c)),
-    writing: files('writing', ofUnit).flat().map((w) => WritingTask.parse(w)),
-    scripts: files('scripts', () => true).map((x) => TeachingScript.parse(x)),
-  }, course);
-  return { course, content };
-}
 
 const teaches = (plan: SessionPlan) => plan.blocks.filter((b): b is TeachBlock => b.kind === 'teach');
 

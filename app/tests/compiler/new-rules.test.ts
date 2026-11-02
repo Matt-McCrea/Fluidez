@@ -35,7 +35,9 @@ function tiny(sentences: BankSentence[]) {
   const L = Learner.fresh({ now: () => t });
   for (const w of words) L.introduce(w, { results: [true, true, true], at: T0 });
   const input = (extra: Partial<CompileInput> = {}): CompileInput => ({ learnerId: 'x', learner: L, path: initialPath(), course, content, now: t, ...extra });
-  return { L, input, setT: (x: number) => { t = x; } };
+  /** a few hours after the last of what the learner has falls due: everything due is fresh, none of it debt */
+  const justDue = () => Math.max(...L.due(T0 + 60 * DAY).map((d) => d.due)) + 6 * 3_600_000;
+  return { L, input, setT: (x: number) => { t = x; }, justDue };
 }
 
 describe('budgets by band and tier', () => {
@@ -67,9 +69,9 @@ describe('budgets by band and tier', () => {
   });
 
   test('a backlog that fits the extended tier\'s extra minutes does not throttle it, but throttles standard', () => {
-    const { L, input, setT } = tiny([]);
+    const { L, input, setT, justDue } = tiny([]);
     for (let i = 0; i < 60; i++) L.introduce(`l:n${i}`, { results: [true, true, true], at: T0 });
-    setT(T0 + 20 * DAY);
+    setT(justDue());
     const std = compileSession(input({ tier: 'standard' }));
     const ext = compileSession(input({ tier: 'extended' }));
     expect(std.budget.dueMinutes).toBeGreaterThan(budget.BAND_WARMUP_MINUTES.A1);
@@ -124,14 +126,14 @@ describe('sibling burying', () => {
 
 describe('multi-target review items', () => {
   test('a sentence holding three due nodes is preferred and reviews all three at 1.4× a single', () => {
-    const { input, setT } = tiny([
+    const { input, setT, justDue } = tiny([
       sentence('s-a1', ['l:a'], ['l:a']),
       sentence('s-a2', ['l:a'], ['l:a', 'l:d']),
       sentence('s-abc', ['l:a'], ['l:a', 'l:b', 'l:c']),
       sentence('s-b', ['l:b'], ['l:b']),
       sentence('s-d', ['l:d'], ['l:d']),
     ]);
-    setT(T0 + 10 * DAY);
+    setT(justDue());
     const plan = compileSession(input());
     const w = plan.blocks[0];
     if (w.kind !== 'warmup') throw new Error('warmup first');
@@ -157,9 +159,9 @@ describe('multi-target review items', () => {
   });
 
   test('canDoAnother with the content index uses the grouped cost', () => {
-    const { L, input, setT } = tiny([sentence('s-abc', ['l:a'], ['l:a', 'l:b', 'l:c']), sentence('s-d', ['l:d'], ['l:d'])]);
+    const { L, input, setT, justDue } = tiny([sentence('s-abc', ['l:a'], ['l:a', 'l:b', 'l:c']), sentence('s-d', ['l:d'], ['l:d'])]);
     for (let i = 0; i < 40; i++) L.introduce(`l:n${i}`, { results: [true, true, true], at: T0 });
-    setT(T0 + 10 * DAY);
+    setT(justDue());
     const i = input();
     const grouped = compileSession(i).budget.dueMinutes;
     const single = L.due(i.now).length * L.secondsPerReview() / 60;

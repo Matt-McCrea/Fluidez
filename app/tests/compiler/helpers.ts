@@ -1,8 +1,10 @@
 // Shared harness for compiler property tests: a small synthetic course, the
 // real simulator as the driver, and one function per rule that checks a plan
 // against the learner's state at compile time.
+import fs from 'node:fs';
+import path from 'node:path';
 import { expect } from 'vitest';
-import type { NodeId } from '../../src/content/schema';
+import { BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, type NodeId } from '../../src/content/schema';
 import {
   buildContentIndex, buildCourse, contrastSides, servedRefs, budget, reviewTargets,
   type CompileInput, type ContentIndex, type Course, type SessionPlan,
@@ -19,6 +21,28 @@ export function corpus(opts: SyntheticOptions = {}): { course: Course; content: 
   const c = syntheticCorpus({ maxUnits: 6, ...opts });
   const course = buildCourse(c.units, c.nodes);
   return { course, content: buildContentIndex(c.source, course) };
+}
+
+const root = path.resolve(__dirname, '../../content');
+const json = (rel: string) => JSON.parse(fs.readFileSync(path.join(root, rel), 'utf8'));
+const files = (d: string, keep: (name: string) => boolean) => fs.readdirSync(path.join(root, d)).filter((f) => f.endsWith('.json') && !f.startsWith('_') && keep(f)).sort().map((f) => json(`${d}/${f}`));
+
+/** The shipped content of the first units, as the app's loader would hand it to the compiler. */
+export function realCourse(through: number): { course: Course; content: ContentIndex } {
+  const ids = Array.from({ length: through }, (_, i) => `u${String(i + 1).padStart(2, '0')}`);
+  const nodes = ['grammar', 'patterns', 'chunks', 'contrasts', 'candos', 'lexemes'].flatMap((f) => (json(`graph/${f}.json`) as unknown[]).map((n) => GraphNode.parse(n)));
+  const units = ids.map((u) => Unit.parse(json(`units/${u}.json`)));
+  const course = buildCourse(units, nodes);
+  const mine = new Set(ids);
+  const ofUnit = (f: string) => mine.has(f.slice(0, 3));
+  const content = buildContentIndex({
+    sentences: files('bank', ofUnit).flat().map((b) => BankSentence.parse(b)).filter((b) => b.unit && mine.has(b.unit)),
+    chapters: files('story', () => true).map((c) => StoryChapter.parse(c)).filter((c) => mine.has(c.unit)),
+    scenes: files('scenes', (f) => mine.has(f.slice(3, 6))).map((c) => Scene.parse(c)),
+    writing: files('writing', ofUnit).flat().map((w) => WritingTask.parse(w)),
+    scripts: files('scripts', () => true).map((x) => TeachingScript.parse(x)),
+  }, course);
+  return { course, content };
 }
 
 export interface Seen { plan: SessionPlan; input: CompileInput; known: Set<NodeId> }
@@ -124,9 +148,10 @@ export function checkNoRepeats({ plan, input }: Seen) {
 }
 
 /**
- * Review budget: never trimmed. Unthrottled → everything due is served;
- * throttled → at least the budget's worth (in single-review units; a
- * multi-target item costs MULTI_REVIEW_COST and covers ≥ 2 due cards).
+ * Review budget. Fresh reviews are never trimmed: unthrottled → every fresh due card is served; throttled → at least the
+ * budget's worth (in single-review units; a multi-target item costs MULTI_REVIEW_COST and covers ≥ 2 due cards). The old
+ * debt (more than a day overdue, or seeded by placement) is paid at a capped rate out of what the warm-up has left, never
+ * more than the budget, and it never throttles. A return's warm-up is held to its own card cap instead.
  */
 export function checkReviews({ plan, input }: Seen) {
   const w = plan.blocks[0];
@@ -139,9 +164,20 @@ export function checkReviews({ plan, input }: Seen) {
   // a node with both cards due is reviewed in one direction; the sibling is buried (still due, carried)
   const dueCards = input.learner.due(input.now);
   const buried = dueCards.length - new Set(dueCards.map((d) => d.node)).size;
-  expect(covered).toBeGreaterThanOrEqual(Math.min(plan.budget.due - buried, fit));
-  if (!plan.budget.throttled) expect(w.carried).toBe(buried);
+  const debt = w.debt ?? 0, paid = w.paid ?? 0;
+  const fresh = plan.budget.due - buried - debt;
   expect(w.carried + covered).toBe(plan.budget.due);
+  expect(debt).toBeLessThanOrEqual(plan.budget.due - buried);
+  // a group may take the payment a card or two past its cap
+  expect(paid).toBeLessThanOrEqual(Math.min(debt, budget.DEBT.cards * (w.extended ? budget.DEBT.reviewFactor : 1) + budget.MULTI_REVIEW_MAX - 1));
+  if (plan.converted?.reason === 'reentry') {
+    expect(w.items.length).toBeLessThanOrEqual(budget.REENTRY.cards);
+    return;
+  }
+  expect(covered - paid).toBeGreaterThanOrEqual(Math.min(fresh, fit));
+  if (!plan.budget.throttled) expect(covered - paid).toBe(fresh);
+  // the debt is paid out of the budget, so paying it never makes a warm-up longer than the budget (or than the fresh cards alone)
+  if (paid && !plan.budget.throttled) expect(w.minutes).toBeLessThanOrEqual(Math.max(w.budgetMinutes, plan.budget.dueMinutes) + 0.1 + (budget.MULTI_REVIEW_COST * plan.budget.secondsPerReview) / 60);
 }
 
 /**

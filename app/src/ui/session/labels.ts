@@ -20,7 +20,7 @@ export function sessionLabel(plan: Pick<SessionPlan, 'type' | 'blocks' | 'unit' 
     case 'input': return read ? `Story time: ${b.story.find((c) => c.id === read.chapter)?.title ?? 'the next chapter'}` : 'New words, in a story';
     case 'patterns': return 'Patterns: more ways to say it';
     case 'output': return scene ? `Real conversation: ${lc(b.scenes.get(scene.scene)?.title ?? 'a chat')}` : plan.blocks.some((x) => x.kind === 'writing') ? 'Practice: writing it down' : 'Practice what you know';
-    case 'review': return plan.converted?.reason === 'offline' ? 'Review for today' : 'Catch-up mix';
+    case 'review': return plan.converted?.reason === 'offline' ? 'Review for today' : plan.converted?.reason === 'reentry' ? 'A gentle start' : 'Catch-up mix';
     case 'checkpoint': return 'Check-in: see how far you\'ve come';
     case 'minimum': return 'Quick warm-up';
   }

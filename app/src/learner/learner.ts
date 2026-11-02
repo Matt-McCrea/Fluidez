@@ -130,6 +130,9 @@ export interface StepResult { steps: number; correct: number; done: boolean }
 
 const DAY_MS = 86_400_000;
 
+/** The reps a card placement seeded carries until it is reviewed for real (the compiler reads it as "not yet reviewed since placement"). */
+export const SEEDED_REPS = 3;
+
 export interface LearnerOptions {
   now?: () => number;
   /** Debounce for saves; 0 = save after every mutation (still coalesced). */
@@ -497,6 +500,9 @@ export class Learner {
 
   get sessionIndex(): number { return this.state.session.index; }
 
+  /** When the last session started (epoch ms); undefined before the first. */
+  get lastSessionAt(): number | undefined { return this.state.session.lastStartedAt; }
+
   /** Call when a session starts. Returns the new session index (1-based). */
   startSession(at = this.now()): number {
     const s = this.state.session;
@@ -627,7 +633,7 @@ export class Learner {
       const last = Math.min(spec.at, c.dueAt - Math.max(1, Math.round(c.stability)) * DAY_MS);
       return {
         due: c.dueAt, stability: c.stability, difficulty: diff, scheduled_days: Math.max(1, Math.round((c.dueAt - last) / DAY_MS)), learning_steps: 0,
-        reps: 3, lapses: 0, state: State.Review, last_review: last, baseStability: c.stability,
+        reps: SEEDED_REPS, lapses: 0, state: State.Review, last_review: last, baseStability: c.stability,
       };
     };
     const learned = Math.max(spec.receptive?.stability ?? 0, spec.productiveCard?.stability ?? 0) >= LEARNED_STABILITY_DAYS;

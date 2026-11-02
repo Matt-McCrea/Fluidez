@@ -148,6 +148,9 @@ export interface ProfileRun {
   underReviewed: Record<string, { judged: number; under4: number }>;
   underReviewedRecv: Record<string, { judged: number; under3: number }>;
   owedAtEnd: number;
+  /** cards due when the run ends, and how many of them are more than a week late */
+  dueAtEnd: number;
+  lateAtEnd: number;
   /** warm-up review items: total, multi-target, targets covered, reused contexts, bare, and those that are one of a script's items */
   reviewItems: { items: number; multi: number; targets: number; reused: number; bare: number; script: number };
   /** nodes introduced receptive-only; receptive cards suspended at the end (recognition-only maintenance) */
@@ -187,7 +190,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   const run: ProfileRun = {
     profile: profile.name, tier: opts.tier, days: opts.days, sessions: [], bandStart: {}, bandFinish: {}, finalUnit: 0,
     demand: {}, shortages: {}, shortageKinds: {}, bareReviews: {}, nodeDemand: {}, unintendedRepeats: {},
-    itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, underReviewedRecv: {}, owedAtEnd: 0,
+    itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, underReviewedRecv: {}, owedAtEnd: 0, dueAtEnd: 0, lateAtEnd: 0,
     reviewItems: { items: 0, multi: 0, targets: 0, reused: 0, bare: 0, script: 0 }, receptiveOnly: 0, suspendedReceptive: 0, learned: 0,
     freshSentences: 0, reusedSentences: 0,
     contrastsListed: new Set(course.units.flatMap((u) => u.days.flatMap((d) => d.focus)).filter((n) => course.nodes.get(n)?.kind === 'contrast')).size,
@@ -435,7 +438,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const unitBefore = path.unit;
     const band = bandOf(path);
     if (band !== 'done' && run.bandStart[band] === undefined) run.bandStart[band] = dayIdx;
-    const input: CompileInput = { learnerId, learner: L, path, course, content, now: t, tier, mode };
+    const input: CompileInput = { learnerId, learner: L, path, course, content, now: t, tier, mode, ...(opts.placement ? { placedAt: opts.placement } : {}) };
     const plan = compileSession(input);
     opts.onPlan?.(plan, input);
     receptiveOnly = new Set(plan.receptiveOnly);
@@ -541,6 +544,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   }
   for (let d = startDay; d < opts.days + startDay; d++) {
     if (opts.placement && d === startDay) { /* attend */ }
+    else if (profile.absence && d >= profile.absence.after && d < profile.absence.after + profile.absence.days) continue;
     else if (onBreak > 0) { onBreak--; continue; }
     else if (r.next() < profile.skipP) {
       if (r.next() < profile.breakP) onBreak = r.int(profile.breakDays[0], profile.breakDays[1]);
@@ -591,6 +595,9 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   }
   run.finalUnit = path.unit;
   run.owedAtEnd = path.owedNew.length + path.owedGrammar.length;
+  const dueEnd = L.due(end);
+  run.dueAtEnd = dueEnd.length;
+  run.lateAtEnd = dueEnd.filter((c) => end - c.due > 7 * DAY_MS).length;
 
   // retention, from the learner's event log
   const events = L.events();

@@ -8,6 +8,8 @@
 //                course is about 1 GB in memory: run it on its own.
 //   --synthetic  a synthetic corpus (on the real unit map and graph when they exist).
 //   (neither)    the tolerant file reader over app/content (all bands), the original behaviour.
+//   --debt off | --debt-days N --debt-share X --debt-cards N --reentry-days N
+//                the debt policy (budget.ts DEBT, REENTRY) off, or moved
 //   --placement  also run 30 days (--placement-days) from a learner placed at that unit through the
 //                app's applyPlacement, one run per profile; reports the day-1 backlog in due minutes.
 //
@@ -58,6 +60,12 @@ async function main() {
   const placementOnly = arg('placement-only') === 'true';
   const placementDays = Number(arg('placement-days', '30'));
   // tuning knob (simulator only): scale every band's warm-up review budget
+  // tuning knobs (simulator only): the debt policy off (every due card is fresh, no return plan), or moved
+  if (arg('debt') === 'off') { budget.DEBT.minDays = Infinity; budget.REENTRY.days = Infinity; }
+  if (arg('debt-days')) budget.DEBT.minDays = Number(arg('debt-days'));
+  if (arg('debt-share')) budget.DEBT.share = Number(arg('debt-share'));
+  if (arg('debt-cards')) budget.DEBT.cards = Number(arg('debt-cards'));
+  if (arg('reentry-days')) budget.REENTRY.days = Number(arg('reentry-days'));
   const warmup = arg('warmup-scale');
   if (warmup) for (const b of Object.keys(budget.BAND_WARMUP_MINUTES) as (keyof typeof budget.BAND_WARMUP_MINUTES)[]) budget.BAND_WARMUP_MINUTES[b] *= Number(warmup);
   const contentDir = join(APP, 'content');
@@ -78,9 +86,16 @@ async function main() {
   const content = buildContentIndex(corpus.source, course);
   console.error(`course: ${course.units.length} units, ${course.nodes.size} nodes; content: ${content.sentences.size} sentences, ${content.chapters.length} chapters, ${content.scenes.size} scenes, ${content.tasks.size} tasks`);
 
+  /** the unit index a profile is placed at (profile.placedAt), if it is */
+  const placedIndex = (p: { name: string; placedAt?: string }) => {
+    if (!p.placedAt) return undefined;
+    const i = course.units.findIndex((u) => u.id === p.placedAt);
+    if (i < 0) throw new Error(`profile ${p.name} is placed at ${p.placedAt}, which is not in this course (use --through to load later bands)`);
+    return i;
+  };
   const runs = placementOnly ? [] : tiers.flatMap((tr) => profiles.map((p) => {
     const t0 = Date.now();
-    const r = simulateProfile(p, { days, tier: tr, course, content, seed });
+    const r = simulateProfile(p, { days, tier: tr, course, content, seed, placement: placedIndex(p) });
     console.error(`  ${p.name}/${tr}: ${r.sessions.length} sessions in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
     return r;
   }));

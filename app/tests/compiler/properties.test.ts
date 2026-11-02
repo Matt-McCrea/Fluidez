@@ -9,8 +9,10 @@ describe('compiler rules hold on every compiled plan', () => {
   for (const profile of ['irregular', 'forgetful', 'fast'] as const) {
     test(`${profile}: frame, minimum, budgets, contrasts, gate, no repeats, reviews, throttle, spacing`, () => {
       let plans = 0, intros = 0, minimum = 0, throttled = 0, another = 0;
+      // only the cards a day or less overdue throttle now (the older ones are debt), so the throttle needs a learner who is slow as well as forgetful
+      const who = profile === 'forgetful' ? { ...PROFILES.forgetful, secs: 40 } : PROFILES[profile];
       for (const seed of SEEDS.slice(0, profile === 'irregular' ? 8 : 4)) {
-        const { plans: ps, run } = walk({ seed, profile: PROFILES[profile], days: 70, check: (s) => { for (const c of ALL_CHECKS) c(s); } });
+        const { plans: ps, run } = walk({ seed, profile: who, days: 70, check: (s) => { for (const c of ALL_CHECKS) c(s); } });
         intros += checkSpacing(ps);
         plans += ps.length;
         minimum += ps.filter((p) => p.plan.tier === 'minimum').length;

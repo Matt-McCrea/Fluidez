@@ -131,7 +131,8 @@ describe('backlog throttle', () => {
     }
     expect(s.course.units[0].days[path.day].type).toBe('input');
     for (let i = 0; i < 120; i++) s.L.introduce(`l:backlog${i}`, { results: [true, true, true], at: T0 });
-    s.setT(T0 + 30 * DAY);
+    // a few hours past the day they fall due: fresh. (A month on, the same cards are debt, and debt never throttles: see the next describe.)
+    s.setT(s.L.card('l:backlog0', 'receptive')!.due + 6 * 3_600_000);
     return { s, path };
   }
 

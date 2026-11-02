@@ -27,6 +27,8 @@ import type { CardJSON, Direction, DueCard, LedgerKind, LedgerView, NodeRecord, 
 export interface LearnerView {
   readonly settings: Readonly<Settings>;
   readonly sessionIndex: number;
+  /** When the last session started, epoch ms (absent = no session yet, or a view that does not say). */
+  readonly lastSessionAt?: number;
   readonly ledger: {
     hasSeen(kind: LedgerKind, id: string): boolean;
     firstSeen(kind: LedgerKind, id: string): Date | undefined;
@@ -332,6 +334,9 @@ export interface WarmupBlock extends BlockBase {
   covered: number;
   /** due cards not served in this session (stay due; never dropped) */
   carried: number;
+  /** of the due cards, the old debt (see budget.ts DEBT_*), and how many of those this warm-up pays; absent = none */
+  debt?: number;
+  paid?: number;
   /** minute budget this block was planned to */
   budgetMinutes: number;
   /** review day / converted session: the extended SRS block */
@@ -463,8 +468,9 @@ export interface Conversion {
    * shortage: gated, unseen content ran out (the day is consumed: the path advances)
    * nothingNew: an introduce day with nothing left to introduce becomes a drill
    * offline:  content the day needs exists but this device could not get it (path does NOT advance)
+   * reentry:  the learner is back after days away: a short warm-up and the next story beat, the day kept for the next session (path does NOT advance)
    */
-  reason: 'throttle' | 'spacing' | 'shortage' | 'nothingNew' | 'offline';
+  reason: 'throttle' | 'spacing' | 'shortage' | 'nothingNew' | 'offline' | 'reentry';
   /** only some blocks were converted (e.g. the chapter of an input day) */
   partial?: boolean;
 }
@@ -512,6 +518,8 @@ export interface SessionPlan {
   unit?: string;
   day?: number;
   converted?: Conversion;
+  /** the learner is back after `days` days away (a session after REENTRY_DAYS or more): Home says so, in words, and the plan is a gentle one */
+  reentry?: { days: number };
   /** completing the core moves the path to the next day */
   advancesPath: boolean;
   blocks: Block[];
@@ -527,10 +535,12 @@ export interface SessionPlan {
     reviewMinutes: number;
     secondsPerReview: number;
     due: number;
-    /** minutes to review everything due, with multi-target items costed at MULTI_REVIEW_COST */
+    /** minutes to review the fresh due cards (what the throttle weighs; the old debt is not in it), with multi-target items costed at MULTI_REVIEW_COST */
     dueMinutes: number;
     throttled: boolean;
     severe: boolean;
+    /** the old debt among the due cards (never throttles), its minutes, and how many cards this session pays */
+    debt?: { cards: number; minutes: number; paid: number };
   };
   estimatedMinutes: number;
   diagnostics: Diagnostic[];
