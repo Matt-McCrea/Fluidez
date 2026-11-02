@@ -241,6 +241,20 @@ describe('a file that cannot be restored', () => {
   });
 });
 
+describe('what a failure screen can take', () => {
+  test('a state only its one-step copy still holds comes out, as boot would open it, not "no progress yet"', async () => {
+    const kv = new MemoryKV();
+    const L = await Learner.open(new IdbStore(kv), { now: () => 1_700_000_000_000 });
+    L.introduce('g:ser-identity', { at: 1_700_000_000_000, results: [true, true, true] });
+    await L.flush();
+    kv.data.set('state.prev', kv.data.get('state'));
+    kv.data.delete('state');
+    const file = await makeBackup(new IdbStore(kv), BACKUP_READERS, 1);
+    expect(file.documents.state).toEqual(kv.data.get('state.prev'));
+    expect(readBackup(backupText(file), BACKUP_READERS).file.documents.state).toEqual(kv.data.get('state.prev'));
+  });
+});
+
 describe('the allowlist', () => {
   const g = golden('head-early');
 

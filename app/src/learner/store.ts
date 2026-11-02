@@ -155,7 +155,11 @@ export class IdbStore implements LearnerStore {
   private nameFor(key: string) { return key === 'state' ? this.key : key === 'events' ? this.eventsKey : key; }
   async exportAll(keys: readonly string[]) {
     const out: Record<string, unknown> = {};
-    for (const k of keys) { const v = await this.kv.get(this.nameFor(k)); if (v !== undefined) out[k] = v; }
+    for (const k of keys) {
+      // load() falls back to the one-step copy, so a backup must too: progress that opens is progress that comes out
+      const v = (await this.kv.get(this.nameFor(k))) ?? (k === 'state' ? await this.loadPrevious() : undefined);
+      if (v !== undefined) out[k] = v;
+    }
     return out;
   }
   async replaceAll(keys: readonly string[], docs: Record<string, unknown>, keep: string) {
