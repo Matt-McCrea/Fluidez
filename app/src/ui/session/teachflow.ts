@@ -4,6 +4,7 @@
 
 import { analyzeToken } from '../../engine';
 import { isName } from './names';
+import { tensesOfNode } from './tenses';
 
 export interface Pair { es: string; en: string }
 
@@ -88,9 +89,14 @@ const norm = (w: string) => w.toLowerCase();
  * the node lists forms; else the verb forms the engine reads in the node and
  * its examples (seen twice or more when any are); else, for nodes that are
  * not about a verb (articles, questions), the words shared by two examples.
+ * A node that teaches a tense keeps only the forms of that tense (hables, not
+ * the quiero in front of it), when there are any.
  * Names (capitalised everywhere or mid-sentence) are never work words.
  */
-export function workWords(node: { es?: string; forms?: readonly Pair[] }, examples: readonly Pair[]): string[] {
+export function workWords(node: { id?: string; tags?: readonly string[]; es?: string; forms?: readonly Pair[] }, examples: readonly Pair[]): string[] {
+  const taught = node.id ? tensesOfNode({ id: node.id, tags: node.tags }) : [];
+  const ofTaught = (w: string) => analyzeToken(w).some((a) => a.accentExact && taught.includes(a.tense));
+  const own = (ws: string[]) => (taught.length && ws.some(ofTaught) ? ws.filter(ofTaught) : ws);
   const isProper = (set: Set<string>, tok: string) => set.has(tok) && !STOP.has(tok) && !analyzeToken(tok).some((a) => a.accentExact);
   const texts = [node.es ?? '', ...examples.map((e) => e.es)].filter(Boolean);
   const lowerAll = new Set<string>(); // every occurrence capitalised
@@ -109,10 +115,11 @@ export function workWords(node: { es?: string; forms?: readonly Pair[] }, exampl
   if (node.forms?.length) {
     const seen = new Set<string>();
     for (const f of node.forms) for (const w of words(f.es)) if (!proper(norm(w))) seen.add(norm(w));
-    return [...seen];
+    return own([...seen]);
   }
   const cands = [...count.keys()].filter((w) => !proper(w));
   const verbs = cands.filter((w) => !STOP.has(w) && analyzeToken(w).some((a) => a.accentExact));
+  if (taught.length && verbs.some(ofTaught)) return verbs.filter(ofTaught);
   if (verbs.length) {
     const twice = verbs.filter((w) => (count.get(w) ?? 0) >= 2);
     return twice.length ? twice : verbs;

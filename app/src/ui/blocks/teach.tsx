@@ -135,7 +135,7 @@ function Variants({ segs, fallback, more }: { segs: Seg[]; fallback: string; mor
 }
 
 /** Examples a few at a time, with a one-tap "spot it" between the groups. */
-function Examples({ script, node, onDone }: { script: TeachingScript; node?: { es?: string; forms?: Seg[] }; onDone: () => void }) {
+function Examples({ script, node, onDone }: { script: TeachingScript; node?: { id?: string; tags?: readonly string[]; es?: string; forms?: Seg[] }; onDone: () => void }) {
   const groups = useMemo(() => exampleGroups(script.examples), [script]);
   const nw = useMemo(() => workWords(node ?? {}, script.examples), [node, script]);
   const [g, setG] = useState(0);

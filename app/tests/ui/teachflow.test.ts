@@ -4,7 +4,9 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import type { TeachingScript } from '../../src/content/schema';
 import type { Bundle } from '../../src/ui/data/bundle';
+import { analyzeToken } from '../../src/engine';
 import { isName } from '../../src/ui/session/names';
+import { tensesOfNode } from '../../src/ui/session/tenses';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { exampleGroups, workWords, ruleLayers, spotFeedback, spotIt, TRICK_LIST_MAX, TRICK_MAX } from '../../src/ui/session/teachflow';
 
@@ -89,6 +91,10 @@ describe('spotIt', () => {
         expect(occ.some((x) => !x.name), `${s.node} ${word}`).toBe(true);
         if (s.node === 'g:ser-identity') expect(['soy', 'eres', 'es', 'somos', 'son']).toContain(word);
         expect(nw, s.node).toContain(word);
+        // a lesson on a tense asks for a form of that tense, not the helper or trigger around it
+        const taught = node ? tensesOfNode(node) : [];
+        const isTaught = (w: string) => analyzeToken(w).some((a) => a.accentExact && taught.includes(a.tense));
+        if (taught.length && nw.some(isTaught)) expect(isTaught(word), `${s.node} asks for ${word}`).toBe(true);
         expect(pick.options.filter((o) => nw.includes(o)), s.node).toEqual([word]);
         expect(g.some((e) => e.es.toLowerCase().includes(word)), s.node).toBe(true);
         for (const o of pick.options) expect(g.some((e) => e.es.toLowerCase().includes(o)), `${s.node} ${o}`).toBe(true);
