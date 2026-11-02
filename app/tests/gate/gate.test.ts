@@ -642,4 +642,16 @@ describe('(j) bank focus is computed', () => {
     expect(by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'focus', 'error')).toEqual([]);
     expect('focus' in JSON.parse(readFileSync(p, 'utf8'))[0]).toBe(false);
   });
+  test('a target on a node the graph marks detectable: false only warns', () => {
+    const fx = makeFixture();
+    fx.write('graph/grammar.json', [
+      { id: 'g:ser-identity', kind: 'grammar', band: 'A1', priority: 1, title: 'a' },
+      { id: 'g:present-ar', kind: 'grammar', band: 'A1', priority: 3, title: 'b' },
+      { id: 'g:por-para-2', kind: 'grammar', band: 'A1', priority: 4, title: 'c', detectable: false },
+    ]);
+    const p = fx.write('bank/u01.json', [bank('u01-1', 'Tomás habla español.', 'u01', { targets: ['g:por-para-2'] })]);
+    const r = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(by(r, 'requires', 'error')).toEqual([]);
+    expect(by(r, 'requires', 'warning').some((f) => /target g:por-para-2/.test(f.problem))).toBe(true);
+  });
 });

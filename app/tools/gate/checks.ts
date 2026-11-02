@@ -287,6 +287,8 @@ let PRODUCIBLE: { cur: Curriculum; set: Set<string> } | null = null;
 /** Can the tagger ever put this node in requires? */
 function producible(st: RunState, id: string): boolean {
   if (id.startsWith('l:') || id.startsWith('c:')) return true;
+  // a node about meaning, not words: the graph says no tagger key finds it, whatever a rare frame of it does
+  if (st.cur.nodes.get(id)?.detectable === false) return false;
   if (PRODUCIBLE?.cur !== st.cur) {
     const set = new Set<string>([...Object.values(DEFAULT_NODE_MAP), ...Object.values(st.cur.featureMap ?? {})].filter((x): x is string => !!x));
     for (const p of detectablePatterns(st.cur.tagOpts.patterns ?? [])) set.add(p);
