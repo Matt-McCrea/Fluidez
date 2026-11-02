@@ -6,6 +6,7 @@
  "canDo": "I can use and catch irony, understatement and implied meaning.",
  "days": [
   {
+   "key": "u54-d0",
    "type": "input",
    "focus": [
     "p:ser-un-noun",
@@ -37,6 +38,7 @@
    "chapter": "ch185"
   },
   {
+   "key": "u54-d1",
    "type": "output",
    "focus": [
     "p:el-frio-que-hace",
@@ -52,6 +54,7 @@
    "scene": "sc-u54-a"
   },
   {
+   "key": "u54-d2",
    "type": "introduce",
    "focus": [
     "g:emphatic-structures"
@@ -71,6 +74,7 @@
    "chapter": "ch187"
   },
   {
+   "key": "u54-d3",
    "type": "drill",
    "focus": [
     "g:emphatic-structures",
@@ -88,6 +92,7 @@
    ]
   },
   {
+   "key": "u54-d4",
    "type": "input",
    "focus": [
     "p:que-si-que-si",
@@ -119,6 +124,7 @@
    "chapter": "ch188"
   },
   {
+   "key": "u54-d5",
    "type": "patterns",
    "focus": [
     "p:eso-de-que",
@@ -134,6 +140,7 @@
    "lexemes": []
   },
   {
+   "key": "u54-d6",
    "type": "output",
    "focus": [
     "p:estar-hecho-un-desastre",
@@ -147,6 +154,7 @@
    "scene": "sc-u54-b"
   },
   {
+   "key": "u54-d7",
    "type": "introduce",
    "focus": [
     "g:wish-exclamatives"
@@ -162,6 +170,7 @@
    "chapter": "ch189"
   },
   {
+   "key": "u54-d8",
    "type": "drill",
    "focus": [
     "g:wish-exclamatives",
@@ -174,6 +183,7 @@
    ]
   },
   {
+   "key": "u54-d9",
    "type": "review",
    "focus": [
     "g:emphatic-structures",

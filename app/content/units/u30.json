@@ -6,6 +6,7 @@
  "canDo": "I can say how other people's actions make me feel, and describe how people change.",
  "days": [
   {
+   "key": "u30-d0",
    "type": "introduce",
    "focus": [
     "g:subj-emotion"
@@ -25,6 +26,7 @@
    "chapter": "ch089"
   },
   {
+   "key": "u30-d1",
    "type": "drill",
    "focus": [
     "g:subj-emotion",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u30-d2",
    "type": "input",
    "focus": [
     "p:me-da-pena-que",
@@ -70,6 +73,7 @@
    "chapter": "ch090"
   },
   {
+   "key": "u30-d3",
    "type": "introduce",
    "focus": [
     "p:estar-harto-de",
@@ -86,6 +90,7 @@
    "chapter": "ch091"
   },
   {
+   "key": "u30-d4",
    "type": "drill",
    "focus": [
     "g:verbs-of-change",
@@ -103,6 +108,7 @@
    ]
   },
   {
+   "key": "u30-d5",
    "type": "patterns",
    "focus": [
     "p:alegrarse-de-que",
@@ -118,6 +124,7 @@
    "lexemes": []
   },
   {
+   "key": "u30-d6",
    "type": "introduce",
    "focus": [
     "g:se-meaning-change"
@@ -132,6 +139,7 @@
    ]
   },
   {
+   "key": "u30-d7",
    "type": "drill",
    "focus": [
     "g:se-meaning-change",
@@ -148,6 +156,7 @@
    "scene": "sc-u30-b"
   },
   {
+   "key": "u30-d8",
    "type": "output",
    "focus": [
     "g:subj-emotion",
@@ -159,6 +168,7 @@
    "scene": "sc-u30-a"
   },
   {
+   "key": "u30-d9",
    "type": "review",
    "focus": [
     "g:subj-emotion",

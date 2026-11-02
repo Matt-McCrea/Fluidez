@@ -6,6 +6,7 @@
  "canDo": "I can tell a short story: what happened, what it was like, and what was going on when it happened.",
  "days": [
   {
+   "key": "u12-d0",
    "type": "introduce",
    "focus": [
     "g:pret-vs-imperfect"
@@ -26,6 +27,7 @@
    "chapter": "ch030"
   },
   {
+   "key": "u12-d1",
    "type": "drill",
    "focus": [
     "g:pret-vs-imperfect",
@@ -46,6 +48,7 @@
    ]
   },
   {
+   "key": "u12-d2",
    "type": "introduce",
    "focus": [
     "g:imperfect-progressive"
@@ -61,6 +64,7 @@
    ]
   },
   {
+   "key": "u12-d3",
    "type": "drill",
    "focus": [
     "g:imperfect-progressive",
@@ -75,6 +79,7 @@
    ]
   },
   {
+   "key": "u12-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -99,6 +104,7 @@
    "chapter": "ch031"
   },
   {
+   "key": "u12-d5",
    "type": "patterns",
    "focus": [
     "p:hace-frio",
@@ -108,6 +114,7 @@
    "lexemes": []
   },
   {
+   "key": "u12-d6",
    "type": "introduce",
    "focus": [
     "g:that-clauses"
@@ -124,6 +131,7 @@
    "chapter": "ch032"
   },
   {
+   "key": "u12-d7",
    "type": "drill",
    "focus": [
     "g:that-clauses",
@@ -138,6 +146,7 @@
    ]
   },
   {
+   "key": "u12-d8",
    "type": "output",
    "focus": [
     "g:pret-vs-imperfect",
@@ -149,6 +158,7 @@
    "scene": "sc-u12-g"
   },
   {
+   "key": "u12-d9",
    "type": "checkpoint",
    "focus": [
     "g:pret-vs-imperfect",

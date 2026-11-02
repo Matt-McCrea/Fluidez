@@ -6,6 +6,7 @@
  "canDo": "I can report a whole conversation accurately, and distance myself from what was said.",
  "days": [
   {
+   "key": "u46-d0",
    "type": "introduce",
    "focus": [
     "g:reported-speech-full"
@@ -25,6 +26,7 @@
    "chapter": "ch145"
   },
   {
+   "key": "u46-d1",
    "type": "drill",
    "focus": [
     "g:reported-speech-full",
@@ -40,6 +42,7 @@
    ]
   },
   {
+   "key": "u46-d2",
    "type": "input",
    "focus": [
     "p:recordar-acordarse",
@@ -66,6 +69,7 @@
    "chapter": "ch146"
   },
   {
+   "key": "u46-d3",
    "type": "introduce",
    "focus": [
     "p:perdona-que-te-interrumpa",
@@ -85,6 +89,7 @@
    "chapter": "ch147"
   },
   {
+   "key": "u46-d4",
    "type": "drill",
    "focus": [
     "g:reporting-verbs-mood",
@@ -99,6 +104,7 @@
    ]
   },
   {
+   "key": "u46-d5",
    "type": "patterns",
    "focus": [
     "p:el-capital-la-capital",
@@ -114,6 +120,7 @@
    "lexemes": []
   },
   {
+   "key": "u46-d6",
    "type": "output",
    "focus": [
     "p:segun-dicen",
@@ -127,6 +134,7 @@
    "scene": "sc-u46-a"
   },
   {
+   "key": "u46-d7",
    "type": "introduce",
    "focus": [
     "g:subj-perception-negated"
@@ -142,6 +150,7 @@
    "chapter": "ch149"
   },
   {
+   "key": "u46-d8",
    "type": "drill",
    "focus": [
     "g:subj-perception-negated",
@@ -161,6 +170,7 @@
    "scene": "sc-u46-b"
   },
   {
+   "key": "u46-d9",
    "type": "review",
    "focus": [
     "g:reported-speech-full",

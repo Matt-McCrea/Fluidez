@@ -6,6 +6,7 @@
  "canDo": "I can say how I and others feel, physically and emotionally, and say what I think of things.",
  "days": [
   {
+   "key": "u15-d0",
    "type": "introduce",
    "focus": [
     "g:ser-estar-adjectives"
@@ -26,6 +27,7 @@
    "chapter": "ch039"
   },
   {
+   "key": "u15-d1",
    "type": "drill",
    "focus": [
     "g:ser-estar-adjectives",
@@ -46,6 +48,7 @@
    ]
   },
   {
+   "key": "u15-d2",
    "type": "introduce",
    "focus": [
     "g:estar-participle"
@@ -61,6 +64,7 @@
    ]
   },
   {
+   "key": "u15-d3",
    "type": "drill",
    "focus": [
     "g:estar-participle",
@@ -75,6 +79,7 @@
    ]
   },
   {
+   "key": "u15-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -98,6 +103,7 @@
    "chapter": "ch040"
   },
   {
+   "key": "u15-d5",
    "type": "patterns",
    "focus": [
     "p:doler",
@@ -109,6 +115,7 @@
    "lexemes": []
   },
   {
+   "key": "u15-d6",
    "type": "introduce",
    "focus": [
     "g:parecer-quedar"
@@ -125,6 +132,7 @@
    "chapter": "ch041"
   },
   {
+   "key": "u15-d7",
    "type": "drill",
    "focus": [
     "g:parecer-quedar",
@@ -138,6 +146,7 @@
    ]
   },
   {
+   "key": "u15-d8",
    "type": "output",
    "focus": [
     "g:ser-estar-adjectives",
@@ -149,6 +158,7 @@
    "scene": "sc-u15-a"
   },
   {
+   "key": "u15-d9",
    "type": "review",
    "focus": [
     "g:ser-estar-adjectives",

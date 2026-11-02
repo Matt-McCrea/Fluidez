@@ -6,6 +6,7 @@
  "canDo": "I can read and write institutional and legal Spanish without sounding like a form.",
  "days": [
   {
+   "key": "u55-d0",
    "type": "introduce",
    "focus": [
     "g:cuyo-relatives"
@@ -24,6 +25,7 @@
    "chapter": "ch190"
   },
   {
+   "key": "u55-d1",
    "type": "drill",
    "focus": [
     "g:cuyo-relatives",
@@ -40,6 +42,7 @@
    ]
   },
   {
+   "key": "u55-d2",
    "type": "input",
    "focus": [
     "p:por-orden-de",
@@ -65,6 +68,7 @@
    "chapter": "ch191"
   },
   {
+   "key": "u55-d3",
    "type": "introduce",
    "focus": [
     "p:el-suscrito",
@@ -84,6 +88,7 @@
    "chapter": "ch192"
   },
   {
+   "key": "u55-d4",
    "type": "drill",
    "focus": [
     "g:nominalisation",
@@ -98,6 +103,7 @@
    ]
   },
   {
+   "key": "u55-d5",
    "type": "patterns",
    "focus": [
     "p:yo-ni-loco",
@@ -113,6 +119,7 @@
    "lexemes": []
   },
   {
+   "key": "u55-d6",
    "type": "output",
    "focus": [
     "p:por-consenso",
@@ -126,6 +133,7 @@
    "scene": "sc-u55-a"
   },
   {
+   "key": "u55-d7",
    "type": "introduce",
    "focus": [
     "g:absolute-constructions"
@@ -141,6 +149,7 @@
    "chapter": "ch194"
   },
   {
+   "key": "u55-d8",
    "type": "drill",
    "focus": [
     "g:absolute-constructions",
@@ -155,6 +164,7 @@
    "scene": "sc-u55-b"
   },
   {
+   "key": "u55-d9",
    "type": "review",
    "focus": [
     "g:cuyo-relatives",

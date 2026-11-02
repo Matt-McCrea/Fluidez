@@ -6,6 +6,7 @@
  "canDo": "I can ask for and give directions, use public transport, and tell a friend or a stranger what to do.",
  "days": [
   {
+   "key": "u13-d0",
    "type": "introduce",
    "focus": [
     "g:commands-tu"
@@ -26,6 +27,7 @@
    "chapter": "ch033"
   },
   {
+   "key": "u13-d1",
    "type": "drill",
    "focus": [
     "g:commands-tu",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u13-d2",
    "type": "introduce",
    "focus": [
     "g:commands-usted"
@@ -58,6 +61,7 @@
    ]
   },
   {
+   "key": "u13-d3",
    "type": "drill",
    "focus": [
     "g:commands-usted",
@@ -76,6 +80,7 @@
    ]
   },
   {
+   "key": "u13-d4",
    "type": "input",
    "focus": [
     "p:street-names"
@@ -102,6 +107,7 @@
    "chapter": "ch034"
   },
   {
+   "key": "u13-d5",
    "type": "patterns",
    "focus": [
     "p:ir-venir",
@@ -115,6 +121,7 @@
    "lexemes": []
   },
   {
+   "key": "u13-d6",
    "type": "introduce",
    "focus": [
     "g:indirect-objects"
@@ -133,6 +140,7 @@
    "chapter": "ch035"
   },
   {
+   "key": "u13-d7",
    "type": "drill",
    "focus": [
     "g:indirect-objects",
@@ -149,6 +157,7 @@
    ]
   },
   {
+   "key": "u13-d8",
    "type": "output",
    "focus": [
     "g:commands-tu",
@@ -160,6 +169,7 @@
    "scene": "sc-u13-d"
   },
   {
+   "key": "u13-d9",
    "type": "review",
    "focus": [
     "g:commands-tu",

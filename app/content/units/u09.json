@@ -6,6 +6,7 @@
  "canDo": "I can describe my whole day, say what I'm doing right now and what I have to do.",
  "days": [
   {
+   "key": "u09-d0",
    "type": "introduce",
    "focus": [
     "g:reflexive-routine"
@@ -26,6 +27,7 @@
    "chapter": "ch021"
   },
   {
+   "key": "u09-d1",
    "type": "drill",
    "focus": [
     "g:reflexive-routine",
@@ -41,6 +43,7 @@
    ]
   },
   {
+   "key": "u09-d2",
    "type": "introduce",
    "focus": [
     "g:prep-infinitive"
@@ -56,6 +59,7 @@
    ]
   },
   {
+   "key": "u09-d3",
    "type": "drill",
    "focus": [
     "g:prep-infinitive",
@@ -73,6 +77,7 @@
    ]
   },
   {
+   "key": "u09-d4",
    "type": "input",
    "focus": [
     "p:por-la-manana",
@@ -102,6 +107,7 @@
    "chapter": "ch022"
   },
   {
+   "key": "u09-d5",
    "type": "patterns",
    "focus": [
     "p:cuando-basic",
@@ -118,6 +124,7 @@
    "lexemes": []
   },
   {
+   "key": "u09-d6",
    "type": "introduce",
    "focus": [
     "g:tener-que-hay-que"
@@ -136,6 +143,7 @@
    "chapter": "ch023"
   },
   {
+   "key": "u09-d7",
    "type": "drill",
    "focus": [
     "g:tener-que-hay-que",
@@ -152,6 +160,7 @@
    ]
   },
   {
+   "key": "u09-d8",
    "type": "output",
    "focus": [
     "g:reflexive-routine",
@@ -163,6 +172,7 @@
    "scene": "sc-u09-d"
   },
   {
+   "key": "u09-d9",
    "type": "review",
    "focus": [
     "g:reflexive-routine",

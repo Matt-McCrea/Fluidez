@@ -6,6 +6,7 @@
  "canDo": "I can say what I like, want and can do, and what I'm going to do this weekend.",
  "days": [
   {
+   "key": "u03-d0",
    "type": "introduce",
    "focus": [
     "g:gustar-basic"
@@ -26,6 +27,7 @@
    "chapter": "ch005"
   },
   {
+   "key": "u03-d1",
    "type": "drill",
    "focus": [
     "g:gustar-basic",
@@ -46,6 +48,7 @@
    ]
   },
   {
+   "key": "u03-d2",
    "type": "introduce",
    "focus": [
     "g:stem-boot"
@@ -63,6 +66,7 @@
    ]
   },
   {
+   "key": "u03-d3",
    "type": "drill",
    "focus": [
     "g:stem-boot",
@@ -83,6 +87,7 @@
    ]
   },
   {
+   "key": "u03-d4",
    "type": "introduce",
    "focus": [
     "g:verb-infinitive",
@@ -104,6 +109,7 @@
    "chapter": "ch006"
   },
   {
+   "key": "u03-d5",
    "type": "drill",
    "focus": [
     "g:verb-infinitive",
@@ -123,6 +129,7 @@
    ]
   },
   {
+   "key": "u03-d6",
    "type": "introduce",
    "focus": [
     "g:ir-a-plans"
@@ -138,6 +145,7 @@
    ]
   },
   {
+   "key": "u03-d7",
    "type": "drill",
    "focus": [
     "g:ir-a-plans",
@@ -154,6 +162,7 @@
    ]
   },
   {
+   "key": "u03-d8",
    "type": "output",
    "focus": [
     "g:gustar-basic",

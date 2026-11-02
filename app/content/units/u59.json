@@ -6,6 +6,7 @@
  "canDo": "I can understand regional Colombian voices and adapt my own register to who I'm talking to.",
  "days": [
   {
+   "key": "u59-d0",
    "type": "input",
    "focus": [
     "p:si-pero-que",
@@ -37,6 +38,7 @@
    "chapter": "ch210"
   },
   {
+   "key": "u59-d1",
    "type": "output",
    "focus": [
     "p:lo-de-noun",
@@ -49,6 +51,7 @@
    "scene": "sc-u59-a"
   },
   {
+   "key": "u59-d2",
    "type": "introduce",
    "focus": [
     "g:voseo-recognition"
@@ -68,6 +71,7 @@
    "chapter": "ch212"
   },
   {
+   "key": "u59-d3",
    "type": "drill",
    "focus": [
     "g:voseo-recognition",
@@ -85,6 +89,7 @@
    ]
   },
   {
+   "key": "u59-d4",
    "type": "input",
    "focus": [],
    "chunks": [
@@ -111,6 +116,7 @@
    "chapter": "ch213"
   },
   {
+   "key": "u59-d5",
    "type": "patterns",
    "focus": [
     "p:estar-regalado",
@@ -129,6 +135,7 @@
    "lexemes": []
   },
   {
+   "key": "u59-d6",
    "type": "output",
    "focus": [
     "p:sintiendolo-mucho",
@@ -140,6 +147,7 @@
    "scene": "sc-u59-b"
   },
   {
+   "key": "u59-d7",
    "type": "introduce",
    "focus": [
     "g:future-subj-recognition"
@@ -155,6 +163,7 @@
    "chapter": "ch214"
   },
   {
+   "key": "u59-d8",
    "type": "drill",
    "focus": [
     "g:future-subj-recognition",
@@ -168,6 +177,7 @@
    ]
   },
   {
+   "key": "u59-d9",
    "type": "review",
    "focus": [
     "g:voseo-recognition",

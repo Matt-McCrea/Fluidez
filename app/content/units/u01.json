@@ -6,6 +6,7 @@
  "canDo": "I can greet someone, say who I am, where I'm from and what I do, and ask them the same.",
  "days": [
   {
+   "key": "u01-d0",
    "type": "introduce",
    "focus": [
     "g:ser-identity"
@@ -28,6 +29,7 @@
    "chapter": "ch001"
   },
   {
+   "key": "u01-d1",
    "type": "drill",
    "focus": [
     "g:ser-identity"
@@ -47,6 +49,7 @@
    ]
   },
   {
+   "key": "u01-d2",
    "type": "introduce",
    "focus": [
     "g:sounds-letters"
@@ -68,6 +71,7 @@
    ]
   },
   {
+   "key": "u01-d3",
    "type": "drill",
    "focus": [
     "g:sounds-letters",
@@ -88,6 +92,7 @@
    ]
   },
   {
+   "key": "u01-d4",
    "type": "input",
    "focus": [],
    "chunks": [
@@ -118,6 +123,7 @@
    "chapter": "ch002"
   },
   {
+   "key": "u01-d5",
    "type": "introduce",
    "focus": [
     "g:gender-articles"
@@ -139,6 +145,7 @@
    ]
   },
   {
+   "key": "u01-d6",
    "type": "drill",
    "focus": [
     "g:gender-articles",
@@ -160,6 +167,7 @@
    ]
   },
   {
+   "key": "u01-d7",
    "type": "introduce",
    "focus": [
     "g:present-ar"
@@ -181,6 +189,7 @@
    ]
   },
   {
+   "key": "u01-d8",
    "type": "drill",
    "focus": [
     "g:present-ar",
@@ -201,6 +210,7 @@
    ]
   },
   {
+   "key": "u01-d9",
    "type": "output",
    "focus": [
     "g:ser-identity",

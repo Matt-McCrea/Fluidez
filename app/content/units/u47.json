@@ -6,6 +6,7 @@
  "canDo": "I can move the emphasis in a sentence so my point lands where I want it.",
  "days": [
   {
+   "key": "u47-d0",
    "type": "introduce",
    "focus": [
     "g:cleft-focus"
@@ -25,6 +26,7 @@
    "chapter": "ch150"
   },
   {
+   "key": "u47-d1",
    "type": "drill",
    "focus": [
     "g:cleft-focus",
@@ -41,6 +43,7 @@
    ]
   },
   {
+   "key": "u47-d2",
    "type": "input",
    "focus": [
     "p:me-pone-de-buen-genio",
@@ -67,6 +70,7 @@
    "chapter": "ch151"
   },
   {
+   "key": "u47-d3",
    "type": "introduce",
    "focus": [
     "p:la-cara-que-puso",
@@ -86,6 +90,7 @@
    "chapter": "ch152"
   },
   {
+   "key": "u47-d4",
    "type": "drill",
    "focus": [
     "g:topic-fronting",
@@ -100,6 +105,7 @@
    ]
   },
   {
+   "key": "u47-d5",
    "type": "patterns",
    "focus": [
     "p:presente-narrativo",
@@ -115,6 +121,7 @@
    "lexemes": []
   },
   {
+   "key": "u47-d6",
    "type": "output",
    "focus": [
     "p:prefiero-que-a-que",
@@ -128,6 +135,7 @@
    "scene": "sc-u47-a"
   },
   {
+   "key": "u47-d7",
    "type": "introduce",
    "focus": [
     "g:lo-que-intensity"
@@ -143,6 +151,7 @@
    "chapter": "ch154"
   },
   {
+   "key": "u47-d8",
    "type": "drill",
    "focus": [
     "g:lo-que-intensity",
@@ -158,6 +167,7 @@
    "scene": "sc-u47-b"
   },
   {
+   "key": "u47-d9",
    "type": "review",
    "focus": [
     "g:cleft-focus",

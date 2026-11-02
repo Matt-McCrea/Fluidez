@@ -6,6 +6,7 @@
  "canDo": "I can report claims, rumours and other people's ideas without vouching for them.",
  "days": [
   {
+   "key": "u53-d0",
    "type": "input",
    "focus": [
     "p:rectificar-reparar",
@@ -37,6 +38,7 @@
    "chapter": "ch180"
   },
   {
+   "key": "u53-d1",
    "type": "output",
    "focus": [
     "p:sin-animo-de",
@@ -52,6 +54,7 @@
    "scene": "sc-u53-a"
   },
   {
+   "key": "u53-d2",
    "type": "introduce",
    "focus": [
     "g:hedging-distance"
@@ -71,6 +74,7 @@
    "chapter": "ch182"
   },
   {
+   "key": "u53-d3",
    "type": "drill",
    "focus": [
     "g:hedging-distance",
@@ -84,6 +88,7 @@
    ]
   },
   {
+   "key": "u53-d4",
    "type": "input",
    "focus": [
     "p:imperfecto-citativo",
@@ -109,6 +114,7 @@
    "chapter": "ch183"
   },
   {
+   "key": "u53-d5",
    "type": "patterns",
    "focus": [
     "p:cabe-la-posibilidad",
@@ -124,6 +130,7 @@
    "lexemes": []
   },
   {
+   "key": "u53-d6",
    "type": "output",
    "focus": [
     "p:hasta-la-fecha",
@@ -135,6 +142,7 @@
    "scene": "sc-u53-b"
   },
   {
+   "key": "u53-d7",
    "type": "introduce",
    "focus": [
     "g:reformulation"
@@ -150,6 +158,7 @@
    "chapter": "ch184"
   },
   {
+   "key": "u53-d8",
    "type": "drill",
    "focus": [
     "g:reformulation",
@@ -166,6 +175,7 @@
    ]
   },
   {
+   "key": "u53-d9",
    "type": "review",
    "focus": [
     "g:hedging-distance",

@@ -6,6 +6,7 @@
  "canDo": "I can congratulate, wish someone well, react to good and bad news, and send a warm message.",
  "days": [
   {
+   "key": "u22-d0",
    "type": "introduce",
    "focus": [
     "g:subj-wishes"
@@ -26,6 +27,7 @@
    "chapter": "ch063"
   },
   {
+   "key": "u22-d1",
    "type": "drill",
    "focus": [
     "g:subj-wishes",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u22-d2",
    "type": "introduce",
    "focus": [
     "g:exclamations"
@@ -61,6 +64,7 @@
    ]
   },
   {
+   "key": "u22-d3",
    "type": "drill",
    "focus": [
     "g:exclamations",
@@ -74,6 +78,7 @@
    ]
   },
   {
+   "key": "u22-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -97,6 +102,7 @@
    "chapter": "ch064"
   },
   {
+   "key": "u22-d5",
    "type": "patterns",
    "focus": [
     "p:felicitaciones-por",
@@ -106,6 +112,7 @@
    "lexemes": []
   },
   {
+   "key": "u22-d6",
    "type": "introduce",
    "focus": [
     "g:diminutives"
@@ -122,6 +129,7 @@
    "chapter": "ch065"
   },
   {
+   "key": "u22-d7",
    "type": "drill",
    "focus": [
     "g:diminutives",
@@ -136,6 +144,7 @@
    ]
   },
   {
+   "key": "u22-d8",
    "type": "output",
    "focus": [
     "g:subj-wishes",
@@ -147,6 +156,7 @@
    "scene": "sc-u22-a"
   },
   {
+   "key": "u22-d9",
    "type": "review",
    "focus": [
     "g:subj-wishes",

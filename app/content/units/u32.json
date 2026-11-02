@@ -6,6 +6,7 @@
  "canDo": "I can give advice at different levels of directness and talk about plans that depend on when things happen.",
  "days": [
   {
+   "key": "u32-d0",
    "type": "introduce",
    "focus": [
     "g:subj-influence"
@@ -25,6 +26,7 @@
    "chapter": "ch095"
   },
   {
+   "key": "u32-d1",
    "type": "drill",
    "focus": [
     "g:subj-influence",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u32-d2",
    "type": "input",
    "focus": [
     "p:te-propongo-que",
@@ -70,6 +73,7 @@
    "chapter": "ch096"
   },
   {
+   "key": "u32-d3",
    "type": "introduce",
    "focus": [
     "p:pensar-inf",
@@ -87,6 +91,7 @@
    "chapter": "ch097"
   },
   {
+   "key": "u32-d4",
    "type": "drill",
    "focus": [
     "g:subj-cuando-future",
@@ -103,6 +108,7 @@
    ]
   },
   {
+   "key": "u32-d5",
    "type": "patterns",
    "focus": [
     "p:seguir-gerundio",
@@ -118,6 +124,7 @@
    "lexemes": []
   },
   {
+   "key": "u32-d6",
    "type": "introduce",
    "focus": [
     "g:subj-purpose-full"
@@ -132,6 +139,7 @@
    ]
   },
   {
+   "key": "u32-d7",
    "type": "drill",
    "focus": [
     "g:subj-purpose-full",
@@ -147,6 +155,7 @@
    "scene": "sc-u32-b"
   },
   {
+   "key": "u32-d8",
    "type": "output",
    "focus": [
     "g:subj-influence",
@@ -158,6 +167,7 @@
    "scene": "sc-u32-a"
   },
   {
+   "key": "u32-d9",
    "type": "checkpoint",
    "focus": [
     "g:subj-influence",

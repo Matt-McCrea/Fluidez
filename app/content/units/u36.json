@@ -6,6 +6,7 @@
  "canDo": "I can talk about money, prices and results, compare figures and draw conclusions.",
  "days": [
   {
+   "key": "u36-d0",
    "type": "introduce",
    "focus": [
     "g:passive-se"
@@ -23,6 +24,7 @@
    "chapter": "ch107"
   },
   {
+   "key": "u36-d1",
    "type": "drill",
    "focus": [
     "g:passive-se",
@@ -36,6 +38,7 @@
    ]
   },
   {
+   "key": "u36-d2",
    "type": "input",
    "focus": [
     "p:contar-con",
@@ -61,6 +64,7 @@
    "chapter": "ch108"
   },
   {
+   "key": "u36-d3",
    "type": "introduce",
    "focus": [
     "g:comparatives-advanced"
@@ -76,6 +80,7 @@
    "chapter": "ch109"
   },
   {
+   "key": "u36-d4",
    "type": "drill",
    "focus": [
     "g:comparatives-advanced",
@@ -90,6 +95,7 @@
    ]
   },
   {
+   "key": "u36-d5",
    "type": "patterns",
    "focus": [
     "p:estar-a",
@@ -105,6 +111,7 @@
    "lexemes": []
   },
   {
+   "key": "u36-d6",
    "type": "introduce",
    "focus": [
     "g:consequence-connectors"
@@ -119,6 +126,7 @@
    ]
   },
   {
+   "key": "u36-d7",
    "type": "drill",
    "focus": [
     "g:consequence-connectors",
@@ -133,6 +141,7 @@
    "scene": "sc-u36-b"
   },
   {
+   "key": "u36-d8",
    "type": "output",
    "focus": [
     "g:passive-se",
@@ -144,6 +153,7 @@
    "scene": "sc-u36-a"
   },
   {
+   "key": "u36-d9",
    "type": "checkpoint",
    "focus": [
     "g:passive-se",

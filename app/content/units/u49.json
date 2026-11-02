@@ -6,6 +6,7 @@
  "canDo": "I can write a formal letter: an application, a complaint and a request.",
  "days": [
   {
+   "key": "u49-d0",
    "type": "introduce",
    "focus": [
     "g:formal-letter-grammar"
@@ -21,6 +22,7 @@
    "chapter": "ch160"
   },
   {
+   "key": "u49-d1",
    "type": "drill",
    "focus": [
     "g:formal-letter-grammar",
@@ -35,6 +37,7 @@
    ]
   },
   {
+   "key": "u49-d2",
    "type": "input",
    "focus": [
     "p:entre-las-ventajas-destaca",
@@ -61,6 +64,7 @@
    "chapter": "ch161"
   },
   {
+   "key": "u49-d3",
    "type": "patterns",
    "focus": [
     "p:dirigirse-a",
@@ -76,6 +80,7 @@
    "lexemes": []
   },
   {
+   "key": "u49-d4",
    "type": "output",
    "focus": [
     "p:le-ruego-que",
@@ -88,6 +93,7 @@
    "scene": "sc-u49-a"
   },
   {
+   "key": "u49-d5",
    "type": "introduce",
    "focus": [
     "g:verbs-prepositions"
@@ -103,6 +109,7 @@
    "chapter": "ch163"
   },
   {
+   "key": "u49-d6",
    "type": "drill",
    "focus": [
     "g:verbs-prepositions",
@@ -116,6 +123,7 @@
    ]
   },
   {
+   "key": "u49-d7",
    "type": "input",
    "focus": [
     "p:disponer-de",
@@ -140,6 +148,7 @@
    "chapter": "ch164"
   },
   {
+   "key": "u49-d8",
    "type": "output",
    "focus": [
     "g:formal-letter-grammar",
@@ -150,6 +159,7 @@
    "scene": "sc-u49-b"
   },
   {
+   "key": "u49-d9",
    "type": "review",
    "focus": [
     "g:formal-letter-grammar",

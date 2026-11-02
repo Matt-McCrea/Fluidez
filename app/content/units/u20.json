@@ -6,6 +6,7 @@
  "canDo": "I can guess what's going on, make predictions and promises, and give advice with \"would\" and \"should\".",
  "days": [
   {
+   "key": "u20-d0",
    "type": "introduce",
    "focus": [
     "g:future-conjecture"
@@ -26,6 +27,7 @@
    "chapter": "ch055"
   },
   {
+   "key": "u20-d1",
    "type": "drill",
    "focus": [
     "g:future-conjecture",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u20-d2",
    "type": "introduce",
    "focus": [
     "g:future-promises"
@@ -58,6 +61,7 @@
    ]
   },
   {
+   "key": "u20-d3",
    "type": "drill",
    "focus": [
     "g:future-promises",
@@ -76,6 +80,7 @@
    ]
   },
   {
+   "key": "u20-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -99,6 +104,7 @@
    "chapter": "ch056"
   },
   {
+   "key": "u20-d5",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -122,6 +128,7 @@
    "chapter": "ch057"
   },
   {
+   "key": "u20-d6",
    "type": "introduce",
    "focus": [
     "g:conditional"
@@ -138,6 +145,7 @@
    "chapter": "ch058"
   },
   {
+   "key": "u20-d7",
    "type": "drill",
    "focus": [
     "g:conditional",
@@ -153,6 +161,7 @@
    ]
   },
   {
+   "key": "u20-d8",
    "type": "output",
    "focus": [
     "g:future-conjecture",
@@ -164,6 +173,7 @@
    "scene": "sc-u20-g"
   },
   {
+   "key": "u20-d9",
    "type": "checkpoint",
    "focus": [
     "g:future-conjecture",

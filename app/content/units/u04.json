@@ -6,6 +6,7 @@
  "canDo": "I can say what I did yesterday and last weekend, in order.",
  "days": [
   {
+   "key": "u04-d0",
    "type": "introduce",
    "focus": [
     "g:preterite-ar"
@@ -26,6 +27,7 @@
    "chapter": "ch007"
   },
   {
+   "key": "u04-d1",
    "type": "drill",
    "focus": [
     "g:preterite-ar",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u04-d2",
    "type": "introduce",
    "focus": [
     "g:preterite-er-ir"
@@ -59,6 +62,7 @@
    ]
   },
   {
+   "key": "u04-d3",
    "type": "drill",
    "focus": [
     "g:preterite-er-ir",
@@ -74,6 +78,7 @@
    ]
   },
   {
+   "key": "u04-d4",
    "type": "input",
    "focus": [
     "p:costar-pagar",
@@ -103,6 +108,7 @@
    "chapter": "ch008"
   },
   {
+   "key": "u04-d5",
    "type": "introduce",
    "focus": [
     "g:preterite-ser-ir-hacer"
@@ -118,6 +124,7 @@
    ]
   },
   {
+   "key": "u04-d6",
    "type": "drill",
    "focus": [
     "g:preterite-ser-ir-hacer",
@@ -134,6 +141,7 @@
    ]
   },
   {
+   "key": "u04-d7",
    "type": "output",
    "focus": [
     "g:preterite-ar",
@@ -145,6 +153,7 @@
    "scene": "sc-u04-g"
   },
   {
+   "key": "u04-d8",
    "type": "checkpoint",
    "focus": [
     "g:preterite-ar",

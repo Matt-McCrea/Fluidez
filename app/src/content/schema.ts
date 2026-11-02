@@ -52,7 +52,13 @@ export const LessonType = z.enum([
 ]);
 export type LessonType = z.infer<typeof LessonType>;
 
+// A day's stable key: where it was born (`<unit>-d<its index then>`), frozen. Reordering days
+// or moving one to another unit leaves it alone, so a saved position can still find its day.
+// A new day takes the next number its unit has not used. See days.ts.
+export const DayKey = z.string().regex(/^u\d{2}-d\d+$/);
+
 export const UnitDay = z.object({
+  key: DayKey.optional(),               // required by the gate; absent only in hand-built test courses
   type: LessonType,
   focus: z.array(NodeId).default([]),   // grammar/pattern nodes this day teaches or drills
   chunks: z.array(NodeId).default([]),  // chunks introduced (3-5 budget, outside the grammar cap)

@@ -6,6 +6,7 @@
  "canDo": "I can travel by bus or plane, book a room, and sort out tickets, luggage and directions.",
  "days": [
   {
+   "key": "u18-d0",
    "type": "introduce",
    "focus": [
     "g:por-para-1"
@@ -26,6 +27,7 @@
    "chapter": "ch048"
   },
   {
+   "key": "u18-d1",
    "type": "drill",
    "focus": [
     "g:por-para-1",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u18-d2",
    "type": "introduce",
    "focus": [
     "g:commands-with-pronouns"
@@ -59,6 +62,7 @@
    ]
   },
   {
+   "key": "u18-d3",
    "type": "drill",
    "focus": [
     "g:commands-with-pronouns",
@@ -72,6 +76,7 @@
    ]
   },
   {
+   "key": "u18-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -95,6 +100,7 @@
    "chapter": "ch049"
   },
   {
+   "key": "u18-d5",
    "type": "input",
    "focus": [
     "p:llevar-traer"
@@ -120,6 +126,7 @@
    "chapter": "ch050"
   },
   {
+   "key": "u18-d6",
    "type": "introduce",
    "focus": [
     "g:possessives-stressed"
@@ -136,6 +143,7 @@
    "chapter": "ch051"
   },
   {
+   "key": "u18-d7",
    "type": "drill",
    "focus": [
     "g:possessives-stressed",
@@ -150,6 +158,7 @@
    ]
   },
   {
+   "key": "u18-d8",
    "type": "output",
    "focus": [
     "g:por-para-1",
@@ -161,6 +170,7 @@
    "scene": "sc-u18-d"
   },
   {
+   "key": "u18-d9",
    "type": "review",
    "focus": [
     "g:por-para-1",

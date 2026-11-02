@@ -6,6 +6,7 @@
  "canDo": "I can handle a conversation where we want different things, and keep it civil.",
  "days": [
   {
+   "key": "u50-d0",
    "type": "introduce",
    "focus": [
     "g:subj-free-relatives"
@@ -25,6 +26,7 @@
    "chapter": "ch165"
   },
   {
+   "key": "u50-d1",
    "type": "drill",
    "focus": [
     "g:subj-free-relatives",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u50-d2",
    "type": "input",
    "focus": [
     "p:reproach-questions",
@@ -72,6 +75,7 @@
    "chapter": "ch166"
   },
   {
+   "key": "u50-d3",
    "type": "introduce",
    "focus": [
     "p:capaz-dispuesto-a",
@@ -91,6 +95,7 @@
    "chapter": "ch167"
   },
   {
+   "key": "u50-d4",
    "type": "drill",
    "focus": [
     "g:subj-future-in-past",
@@ -104,6 +109,7 @@
    ]
   },
   {
+   "key": "u50-d5",
    "type": "patterns",
    "focus": [
     "p:tener-la-mania-de",
@@ -119,6 +125,7 @@
    "lexemes": []
   },
   {
+   "key": "u50-d6",
    "type": "output",
    "focus": [
     "p:tengo-miedo-de-que",
@@ -132,6 +139,7 @@
    "scene": "sc-u50-a"
   },
   {
+   "key": "u50-d7",
    "type": "introduce",
    "focus": [
     "g:que-wishes-commands"
@@ -147,6 +155,7 @@
    "chapter": "ch169"
   },
   {
+   "key": "u50-d8",
    "type": "drill",
    "focus": [
     "g:que-wishes-commands",
@@ -164,6 +173,7 @@
    "scene": "sc-u50-b"
   },
   {
+   "key": "u50-d9",
    "type": "review",
    "focus": [
     "g:subj-free-relatives",

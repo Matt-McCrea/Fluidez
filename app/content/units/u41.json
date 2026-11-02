@@ -6,6 +6,7 @@
  "canDo": "I can say what I wish were different and report what people asked me to do.",
  "days": [
   {
+   "key": "u41-d0",
    "type": "introduce",
    "focus": [
     "g:subj-past-triggers"
@@ -24,6 +25,7 @@
    "chapter": "ch122"
   },
   {
+   "key": "u41-d1",
    "type": "drill",
    "focus": [
     "g:subj-past-triggers",
@@ -38,6 +40,7 @@
    ]
   },
   {
+   "key": "u41-d2",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -60,6 +63,7 @@
    "chapter": "ch123"
   },
   {
+   "key": "u41-d3",
    "type": "introduce",
    "focus": [
     "g:ojala-past"
@@ -75,6 +79,7 @@
    "chapter": "ch124"
   },
   {
+   "key": "u41-d4",
    "type": "drill",
    "focus": [
     "g:ojala-past",
@@ -88,6 +93,7 @@
    ]
   },
   {
+   "key": "u41-d5",
    "type": "patterns",
    "focus": [
     "p:te-importaria-que",
@@ -100,6 +106,7 @@
    "lexemes": []
   },
   {
+   "key": "u41-d6",
    "type": "introduce",
    "focus": [
     "g:reported-commands-past"
@@ -114,6 +121,7 @@
    ]
   },
   {
+   "key": "u41-d7",
    "type": "drill",
    "focus": [
     "g:reported-commands-past",
@@ -129,6 +137,7 @@
    "scene": "sc-u41-b"
   },
   {
+   "key": "u41-d8",
    "type": "output",
    "focus": [
     "g:subj-past-triggers",
@@ -140,6 +149,7 @@
    "scene": "sc-u41-a"
   },
   {
+   "key": "u41-d9",
    "type": "review",
    "focus": [
     "g:subj-past-triggers",

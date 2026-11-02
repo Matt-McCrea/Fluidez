@@ -6,6 +6,7 @@
  "canDo": "I can read Spanish from Spain and other countries, and understand vosotros and Spain's use of the past.",
  "days": [
   {
+   "key": "u51-d0",
    "type": "introduce",
    "focus": [
     "g:vosotros-recognition"
@@ -25,6 +26,7 @@
    "chapter": "ch170"
   },
   {
+   "key": "u51-d1",
    "type": "drill",
    "focus": [
     "g:vosotros-recognition",
@@ -40,6 +42,7 @@
    ]
   },
   {
+   "key": "u51-d2",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -61,6 +64,7 @@
    "chapter": "ch171"
   },
   {
+   "key": "u51-d3",
    "type": "introduce",
    "focus": [
     "g:spain-pasts"
@@ -76,6 +80,7 @@
    "chapter": "ch172"
   },
   {
+   "key": "u51-d4",
    "type": "drill",
    "focus": [
     "g:spain-pasts",
@@ -89,6 +94,7 @@
    ]
   },
   {
+   "key": "u51-d5",
    "type": "patterns",
    "focus": [
     "p:adaptarse-a",
@@ -98,6 +104,7 @@
    "lexemes": []
   },
   {
+   "key": "u51-d6",
    "type": "output",
    "focus": [
     "g:vosotros-recognition",
@@ -109,6 +116,7 @@
    "scene": "sc-u51-a"
   },
   {
+   "key": "u51-d7",
    "type": "introduce",
    "focus": [
     "g:se-form-recognition"
@@ -124,6 +132,7 @@
    "chapter": "ch174"
   },
   {
+   "key": "u51-d8",
    "type": "drill",
    "focus": [
     "g:se-form-recognition",
@@ -138,6 +147,7 @@
    "scene": "sc-u51-b"
   },
   {
+   "key": "u51-d9",
    "type": "review",
    "focus": [
     "g:vosotros-recognition",

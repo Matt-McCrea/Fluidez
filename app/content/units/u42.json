@@ -6,6 +6,7 @@
  "canDo": "I can make the same request at five levels of formality and know which one fits.",
  "days": [
   {
+   "key": "u42-d0",
    "type": "introduce",
    "focus": [
     "g:register-ladder"
@@ -25,6 +26,7 @@
    "chapter": "ch125"
   },
   {
+   "key": "u42-d1",
    "type": "drill",
    "focus": [
     "g:register-ladder",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u42-d2",
    "type": "input",
    "focus": [
     "p:no-hace-falta-que",
@@ -74,6 +77,7 @@
    "chapter": "ch126"
   },
   {
+   "key": "u42-d3",
    "type": "patterns",
    "focus": [
     "p:apropiado-para",
@@ -89,6 +93,7 @@
    "lexemes": []
   },
   {
+   "key": "u42-d4",
    "type": "output",
    "focus": [
     "p:saludos-de-mi-parte",
@@ -103,6 +108,7 @@
    "scene": "sc-u42-a"
   },
   {
+   "key": "u42-d5",
    "type": "introduce",
    "focus": [
     "p:seria-posible",
@@ -120,6 +126,7 @@
    "chapter": "ch128"
   },
   {
+   "key": "u42-d6",
    "type": "drill",
    "focus": [
     "g:softening",
@@ -134,6 +141,7 @@
    ]
   },
   {
+   "key": "u42-d7",
    "type": "input",
    "focus": [
     "p:dar-tiempo",
@@ -159,6 +167,7 @@
    "chapter": "ch129"
   },
   {
+   "key": "u42-d8",
    "type": "output",
    "focus": [
     "g:register-ladder",
@@ -169,6 +178,7 @@
    "scene": "sc-u42-b"
   },
   {
+   "key": "u42-d9",
    "type": "review",
    "focus": [
     "g:register-ladder",

@@ -6,6 +6,7 @@
  "canDo": "I can describe my family and friends: who they are, what they look like, what they're like and how old they are.",
  "days": [
   {
+   "key": "u05-d0",
    "type": "introduce",
    "focus": [
     "g:yo-irregular"
@@ -26,6 +27,7 @@
    "chapter": "ch009"
   },
   {
+   "key": "u05-d1",
    "type": "drill",
    "focus": [
     "g:yo-irregular",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u05-d2",
    "type": "introduce",
    "focus": [
     "g:possessives"
@@ -58,6 +61,7 @@
    ]
   },
   {
+   "key": "u05-d3",
    "type": "drill",
    "focus": [
     "g:possessives",
@@ -73,6 +77,7 @@
    ]
   },
   {
+   "key": "u05-d4",
    "type": "input",
    "focus": [
     "p:personal-a",
@@ -100,6 +105,7 @@
    "chapter": "ch010"
   },
   {
+   "key": "u05-d5",
    "type": "patterns",
    "focus": [
     "p:somos-cuatro",
@@ -113,6 +119,7 @@
    "lexemes": []
   },
   {
+   "key": "u05-d6",
    "type": "introduce",
    "focus": [
     "g:negation-words"
@@ -129,6 +136,7 @@
    "chapter": "ch011"
   },
   {
+   "key": "u05-d7",
    "type": "drill",
    "focus": [
     "g:negation-words",
@@ -147,6 +155,7 @@
    ]
   },
   {
+   "key": "u05-d8",
    "type": "output",
    "focus": [
     "g:yo-irregular",
@@ -158,6 +167,7 @@
    "scene": "sc-u05-d"
   },
   {
+   "key": "u05-d9",
    "type": "review",
    "focus": [
     "g:yo-irregular",

@@ -6,6 +6,7 @@
  "canDo": "I can talk about what would have happened if things had gone differently, and hedge about what probably did.",
  "days": [
   {
+   "key": "u43-d0",
    "type": "introduce",
    "focus": [
     "g:pluperfect-subj"
@@ -25,6 +26,7 @@
    "chapter": "ch130"
   },
   {
+   "key": "u43-d1",
    "type": "drill",
    "focus": [
     "g:pluperfect-subj",
@@ -42,6 +44,7 @@
    ]
   },
   {
+   "key": "u43-d2",
    "type": "input",
    "focus": [
     "p:es-una-lastima-que",
@@ -68,6 +71,7 @@
    "chapter": "ch131"
   },
   {
+   "key": "u43-d3",
    "type": "introduce",
    "focus": [
     "p:sonar-con-ganas",
@@ -86,6 +90,7 @@
    "chapter": "ch132"
   },
   {
+   "key": "u43-d4",
    "type": "drill",
    "focus": [
     "g:conditional-perfect",
@@ -99,6 +104,7 @@
    ]
   },
   {
+   "key": "u43-d5",
    "type": "patterns",
    "focus": [
     "p:llevar-sin-inf",
@@ -114,6 +120,7 @@
    "lexemes": []
   },
   {
+   "key": "u43-d6",
    "type": "output",
    "focus": [
     "p:me-parecio-mal-que",
@@ -127,6 +134,7 @@
    "scene": "sc-u43-a"
   },
   {
+   "key": "u43-d7",
    "type": "introduce",
    "focus": [
     "g:si-past-unreal"
@@ -142,6 +150,7 @@
    "chapter": "ch134"
   },
   {
+   "key": "u43-d8",
    "type": "drill",
    "focus": [
     "g:si-past-unreal",
@@ -164,6 +173,7 @@
    "scene": "sc-u43-b"
   },
   {
+   "key": "u43-d9",
    "type": "review",
    "focus": [
     "g:pluperfect-subj",

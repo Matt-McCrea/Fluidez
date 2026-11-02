@@ -6,6 +6,7 @@
  "canDo": "I can give and ask for opinions, judge situations, and say what I don't think.",
  "days": [
   {
+   "key": "u28-d0",
    "type": "introduce",
    "focus": [
     "g:subj-opinion-negated"
@@ -21,6 +22,7 @@
    "chapter": "ch083"
   },
   {
+   "key": "u28-d1",
    "type": "drill",
    "focus": [
     "g:subj-opinion-negated",
@@ -35,6 +37,7 @@
    ]
   },
   {
+   "key": "u28-d2",
    "type": "input",
    "focus": [
     "p:en-general",
@@ -62,6 +65,7 @@
    "chapter": "ch084"
   },
   {
+   "key": "u28-d3",
    "type": "introduce",
    "focus": [
     "g:subj-value"
@@ -77,6 +81,7 @@
    "chapter": "ch085"
   },
   {
+   "key": "u28-d4",
    "type": "drill",
    "focus": [
     "g:subj-value",
@@ -91,6 +96,7 @@
    ]
   },
   {
+   "key": "u28-d5",
    "type": "patterns",
    "focus": [
     "p:en-mi-opinion",
@@ -106,6 +112,7 @@
    "lexemes": []
   },
   {
+   "key": "u28-d6",
    "type": "introduce",
    "focus": [
     "g:lo-adjective"
@@ -120,6 +127,7 @@
    ]
   },
   {
+   "key": "u28-d7",
    "type": "drill",
    "focus": [
     "g:lo-adjective",
@@ -134,6 +142,7 @@
    "scene": "sc-u28-b"
   },
   {
+   "key": "u28-d8",
    "type": "output",
    "focus": [
     "g:subj-opinion-negated",
@@ -145,6 +154,7 @@
    "scene": "sc-u28-a"
   },
   {
+   "key": "u28-d9",
    "type": "checkpoint",
    "focus": [
     "g:subj-opinion-negated",

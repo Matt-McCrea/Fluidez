@@ -6,6 +6,7 @@
  "canDo": "I can describe what a place or a person was like and say what happened there and how long ago.",
  "days": [
   {
+   "key": "u06-d0",
    "type": "introduce",
    "focus": [
     "g:imperfect-states"
@@ -24,6 +25,7 @@
    "chapter": "ch012"
   },
   {
+   "key": "u06-d1",
    "type": "drill",
    "focus": [
     "g:imperfect-states",
@@ -42,6 +44,7 @@
    ]
   },
   {
+   "key": "u06-d2",
    "type": "introduce",
    "focus": [
     "g:preterite-irregular-strong"
@@ -57,6 +60,7 @@
    ]
   },
   {
+   "key": "u06-d3",
    "type": "drill",
    "focus": [
     "g:preterite-irregular-strong",
@@ -71,6 +75,7 @@
    ]
   },
   {
+   "key": "u06-d4",
    "type": "input",
    "focus": [
     "p:los-garcia",
@@ -100,6 +105,7 @@
    "chapter": "ch013"
   },
   {
+   "key": "u06-d5",
    "type": "introduce",
    "focus": [
     "g:hace-ago"
@@ -116,6 +122,7 @@
    "chapter": "ch014"
   },
   {
+   "key": "u06-d6",
    "type": "drill",
    "focus": [
     "g:hace-ago",
@@ -133,6 +140,7 @@
    ]
   },
   {
+   "key": "u06-d7",
    "type": "output",
    "focus": [
     "g:imperfect-states",
@@ -144,6 +152,7 @@
    "scene": "sc-u06-d"
   },
   {
+   "key": "u06-d8",
    "type": "review",
    "focus": [
     "g:imperfect-states",

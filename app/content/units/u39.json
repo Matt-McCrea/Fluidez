@@ -6,6 +6,7 @@
  "canDo": "I can write a connected text with an introduction, a development and a conclusion.",
  "days": [
   {
+   "key": "u39-d0",
    "type": "introduce",
    "focus": [
     "g:infinitive-subject"
@@ -24,6 +25,7 @@
    "chapter": "ch116"
   },
   {
+   "key": "u39-d1",
    "type": "drill",
    "focus": [
     "g:infinitive-subject",
@@ -37,6 +39,7 @@
    ]
   },
   {
+   "key": "u39-d2",
    "type": "input",
    "focus": [
     "p:dificil-de-inf"
@@ -61,6 +64,7 @@
    "chapter": "ch117"
   },
   {
+   "key": "u39-d3",
    "type": "introduce",
    "focus": [
     "g:discourse-structure"
@@ -76,6 +80,7 @@
    "chapter": "ch118"
   },
   {
+   "key": "u39-d4",
    "type": "drill",
    "focus": [
     "g:discourse-structure",
@@ -90,6 +95,7 @@
    ]
   },
   {
+   "key": "u39-d5",
    "type": "patterns",
    "focus": [
     "p:hoy-les-voy-a-hablar",
@@ -105,6 +111,7 @@
    "lexemes": []
   },
   {
+   "key": "u39-d6",
    "type": "introduce",
    "focus": [
     "g:referring-back"
@@ -119,6 +126,7 @@
    ]
   },
   {
+   "key": "u39-d7",
    "type": "drill",
    "focus": [
     "g:referring-back",
@@ -133,6 +141,7 @@
    "scene": "sc-u39-b"
   },
   {
+   "key": "u39-d8",
    "type": "output",
    "focus": [
     "g:infinitive-subject",
@@ -144,6 +153,7 @@
    "scene": "sc-u39-a"
   },
   {
+   "key": "u39-d9",
    "type": "review",
    "focus": [
     "g:infinitive-subject",

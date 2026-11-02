@@ -6,6 +6,7 @@
  "canDo": "I can describe the physical and temporal world with native precision.",
  "days": [
   {
+   "key": "u58-d0",
    "type": "introduce",
    "focus": [
     "g:temporal-advanced"
@@ -25,6 +26,7 @@
    "chapter": "ch205"
   },
   {
+   "key": "u58-d1",
    "type": "drill",
    "focus": [
     "g:temporal-advanced",
@@ -47,6 +49,7 @@
    ]
   },
   {
+   "key": "u58-d2",
    "type": "input",
    "focus": [
     "p:sin-rumbo-fijo",
@@ -74,6 +77,7 @@
    "chapter": "ch206"
   },
   {
+   "key": "u58-d3",
    "type": "introduce",
    "focus": [
     "p:encarecer-abaratar",
@@ -93,6 +97,7 @@
    "chapter": "ch207"
   },
   {
+   "key": "u58-d4",
    "type": "drill",
    "focus": [
     "p:a-reventar",
@@ -106,6 +111,7 @@
    ]
   },
   {
+   "key": "u58-d5",
    "type": "patterns",
    "focus": [
     "p:los-celos-los-restos",
@@ -121,6 +127,7 @@
    "lexemes": []
   },
   {
+   "key": "u58-d6",
    "type": "output",
    "focus": [
     "p:a-la-altura-de",
@@ -134,6 +141,7 @@
    "scene": "sc-u58-a"
   },
   {
+   "key": "u58-d7",
    "type": "introduce",
    "focus": [
     "g:ser-estar-c1"
@@ -149,6 +157,7 @@
    "chapter": "ch209"
   },
   {
+   "key": "u58-d8",
    "type": "drill",
    "focus": [
     "g:ser-estar-c1",
@@ -162,6 +171,7 @@
    "scene": "sc-u58-b"
   },
   {
+   "key": "u58-d9",
    "type": "review",
    "focus": [
     "g:temporal-advanced",

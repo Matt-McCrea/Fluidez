@@ -6,6 +6,7 @@
  "canDo": "I can say where I live and work, what I do on a normal day and how I am, and ask simple questions.",
  "days": [
   {
+   "key": "u02-d0",
    "type": "introduce",
    "focus": [
     "g:present-er-ir"
@@ -28,6 +29,7 @@
    "chapter": "ch003"
   },
   {
+   "key": "u02-d1",
    "type": "drill",
    "focus": [
     "g:present-er-ir",
@@ -49,6 +51,7 @@
    ]
   },
   {
+   "key": "u02-d2",
    "type": "introduce",
    "focus": [
     "g:estar-location-states"
@@ -68,6 +71,7 @@
    ]
   },
   {
+   "key": "u02-d3",
    "type": "drill",
    "focus": [
     "g:estar-location-states",
@@ -88,6 +92,7 @@
    ]
   },
   {
+   "key": "u02-d4",
    "type": "introduce",
    "focus": [
     "g:adjective-agreement"
@@ -108,6 +113,7 @@
    "chapter": "ch004"
   },
   {
+   "key": "u02-d5",
    "type": "drill",
    "focus": [
     "g:adjective-agreement",
@@ -130,6 +136,7 @@
    ]
   },
   {
+   "key": "u02-d6",
    "type": "introduce",
    "focus": [
     "g:questions"
@@ -145,6 +152,7 @@
    ]
   },
   {
+   "key": "u02-d7",
    "type": "drill",
    "focus": [
     "g:questions",
@@ -166,6 +174,7 @@
    ]
   },
   {
+   "key": "u02-d8",
    "type": "output",
    "focus": [
     "g:present-er-ir",

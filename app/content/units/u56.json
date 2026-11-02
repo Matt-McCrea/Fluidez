@@ -6,6 +6,7 @@
  "canDo": "I can write a sustained argumentative essay and defend it.",
  "days": [
   {
+   "key": "u56-d0",
    "type": "input",
    "focus": [
     "p:prever-prevenir",
@@ -34,6 +35,7 @@
    "chapter": "ch195"
   },
   {
+   "key": "u56-d1",
    "type": "output",
    "focus": [
     "p:coincidir-en",
@@ -49,6 +51,7 @@
    "scene": "sc-u56-a"
   },
   {
+   "key": "u56-d2",
    "type": "introduce",
    "focus": [
     "g:concessive-advanced"
@@ -64,6 +67,7 @@
    "chapter": "ch197"
   },
   {
+   "key": "u56-d3",
    "type": "drill",
    "focus": [
     "g:concessive-advanced",
@@ -77,6 +81,7 @@
    ]
   },
   {
+   "key": "u56-d4",
    "type": "input",
    "focus": [
     "p:si-bien-no-olvidemos",
@@ -102,6 +107,7 @@
    "chapter": "ch198"
   },
   {
+   "key": "u56-d5",
    "type": "patterns",
    "focus": [
     "p:la-nombraron-directora",
@@ -117,6 +123,7 @@
    "lexemes": []
   },
   {
+   "key": "u56-d6",
    "type": "output",
    "focus": [
     "p:hacer-frente-a",
@@ -129,6 +136,7 @@
    "scene": "sc-u56-b"
   },
   {
+   "key": "u56-d7",
    "type": "introduce",
    "focus": [
     "g:consecutive-advanced"
@@ -144,6 +152,7 @@
    "chapter": "ch199"
   },
   {
+   "key": "u56-d8",
    "type": "drill",
    "focus": [
     "g:consecutive-advanced",
@@ -158,6 +167,7 @@
    ]
   },
   {
+   "key": "u56-d9",
    "type": "checkpoint",
    "focus": [
     "g:concessive-advanced",

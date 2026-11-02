@@ -6,6 +6,7 @@
  "canDo": "I can make, accept and turn down plans, and talk about conditions and timing.",
  "days": [
   {
+   "key": "u17-d0",
    "type": "introduce",
    "focus": [
     "g:si-present"
@@ -26,6 +27,7 @@
    "chapter": "ch045"
   },
   {
+   "key": "u17-d1",
    "type": "drill",
    "focus": [
     "g:si-present",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u17-d2",
    "type": "patterns",
    "focus": [
     "p:que-tal-si",
@@ -61,6 +64,7 @@
    ]
   },
   {
+   "key": "u17-d3",
    "type": "drill",
    "focus": [
     "g:si-present",
@@ -74,6 +78,7 @@
    ]
   },
   {
+   "key": "u17-d4",
    "type": "input",
    "focus": [
     "p:no-se-que-hacer",
@@ -100,6 +105,7 @@
    "chapter": "ch046"
   },
   {
+   "key": "u17-d5",
    "type": "patterns",
    "focus": [
     "p:refuse-es-que",
@@ -110,6 +116,7 @@
    "lexemes": []
   },
   {
+   "key": "u17-d6",
    "type": "introduce",
    "focus": [
     "g:cuando-indicative"
@@ -126,6 +133,7 @@
    "chapter": "ch047"
   },
   {
+   "key": "u17-d7",
    "type": "drill",
    "focus": [
     "g:cuando-indicative",
@@ -140,6 +148,7 @@
    ]
   },
   {
+   "key": "u17-d8",
    "type": "output",
    "focus": [
     "g:si-present",
@@ -150,6 +159,7 @@
    "scene": "sc-u17-a"
   },
   {
+   "key": "u17-d9",
    "type": "review",
    "focus": [
     "g:si-present",

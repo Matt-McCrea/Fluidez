@@ -6,6 +6,7 @@
  "canDo": "I can choose any tense or mood deliberately and explain why I chose it.",
  "days": [
   {
+   "key": "u52-d0",
    "type": "input",
    "focus": [
     "p:dativo-aspectual",
@@ -36,6 +37,7 @@
    "chapter": "ch175"
   },
   {
+   "key": "u52-d1",
    "type": "output",
    "focus": [
     "g:spain-pasts",
@@ -47,6 +49,7 @@
    "scene": "sc-u52-a"
   },
   {
+   "key": "u52-d2",
    "type": "introduce",
    "focus": [
     "g:tense-modal-uses"
@@ -64,6 +67,7 @@
    "chapter": "ch177"
   },
   {
+   "key": "u52-d3",
    "type": "drill",
    "focus": [
     "g:tense-modal-uses",
@@ -78,6 +82,7 @@
    ]
   },
   {
+   "key": "u52-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -98,6 +103,7 @@
    "chapter": "ch178"
   },
   {
+   "key": "u52-d5",
    "type": "patterns",
    "focus": [
     "p:en-tiempos-de",
@@ -113,6 +119,7 @@
    "lexemes": []
   },
   {
+   "key": "u52-d6",
    "type": "output",
    "focus": [
     "p:imperfecto-cortesia-venia",
@@ -124,6 +131,7 @@
    "scene": "sc-u52-b"
   },
   {
+   "key": "u52-d7",
    "type": "introduce",
    "focus": [
     "g:mood-choice-fine"
@@ -139,6 +147,7 @@
    "chapter": "ch179"
   },
   {
+   "key": "u52-d8",
    "type": "drill",
    "focus": [
     "g:mood-choice-fine",
@@ -152,6 +161,7 @@
    ]
   },
   {
+   "key": "u52-d9",
    "type": "checkpoint",
    "focus": [
     "g:tense-modal-uses",

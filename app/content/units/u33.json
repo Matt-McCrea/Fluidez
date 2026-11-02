@@ -6,6 +6,7 @@
  "canDo": "I can describe exactly what I'm looking for, even when I don't know if it exists.",
  "days": [
   {
+   "key": "u33-d0",
    "type": "introduce",
    "focus": [
     "g:subj-relative"
@@ -21,6 +22,7 @@
    "chapter": "ch098"
   },
   {
+   "key": "u33-d1",
    "type": "drill",
    "focus": [
     "g:subj-relative",
@@ -37,6 +39,7 @@
    ]
   },
   {
+   "key": "u33-d2",
    "type": "input",
    "focus": [
     "p:lleno-libre",
@@ -64,6 +67,7 @@
    "chapter": "ch099"
   },
   {
+   "key": "u33-d3",
    "type": "introduce",
    "focus": [
     "p:caber",
@@ -81,6 +85,7 @@
    "chapter": "ch100"
   },
   {
+   "key": "u33-d4",
    "type": "drill",
    "focus": [
     "g:relatives-prepositions",
@@ -95,6 +100,7 @@
    ]
   },
   {
+   "key": "u33-d5",
    "type": "patterns",
    "focus": [
     "p:ser-bueno-para",
@@ -110,6 +116,7 @@
    "lexemes": []
   },
   {
+   "key": "u33-d6",
    "type": "introduce",
    "focus": [
     "g:cada-cualquier"
@@ -124,6 +131,7 @@
    ]
   },
   {
+   "key": "u33-d7",
    "type": "drill",
    "focus": [
     "g:cada-cualquier",
@@ -138,6 +146,7 @@
    "scene": "sc-u33-b"
   },
   {
+   "key": "u33-d8",
    "type": "output",
    "focus": [
     "g:subj-relative",
@@ -149,6 +158,7 @@
    "scene": "sc-u33-a"
   },
   {
+   "key": "u33-d9",
    "type": "review",
    "focus": [
     "g:subj-relative",

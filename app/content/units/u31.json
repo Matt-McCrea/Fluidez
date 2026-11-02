@@ -6,6 +6,7 @@
  "canDo": "I can tell a story that reaches back before its own beginning, and report what people said.",
  "days": [
   {
+   "key": "u31-d0",
    "type": "introduce",
    "focus": [
     "g:pluperfect"
@@ -23,6 +24,7 @@
    "chapter": "ch092"
   },
   {
+   "key": "u31-d1",
    "type": "drill",
    "focus": [
     "g:pluperfect",
@@ -39,6 +41,7 @@
    ]
   },
   {
+   "key": "u31-d2",
    "type": "input",
    "focus": [
     "p:comerse-todo",
@@ -66,6 +69,7 @@
    "chapter": "ch093"
   },
   {
+   "key": "u31-d3",
    "type": "introduce",
    "focus": [
     "p:ponerse-a",
@@ -83,6 +87,7 @@
    "chapter": "ch094"
   },
   {
+   "key": "u31-d4",
    "type": "drill",
    "focus": [
     "g:narrative-pasts",
@@ -96,6 +101,7 @@
    ]
   },
   {
+   "key": "u31-d5",
    "type": "patterns",
    "focus": [
     "p:me-sorprende-que",
@@ -111,6 +117,7 @@
    "lexemes": []
   },
   {
+   "key": "u31-d6",
    "type": "introduce",
    "focus": [
     "g:reported-backshift"
@@ -125,6 +132,7 @@
    ]
   },
   {
+   "key": "u31-d7",
    "type": "drill",
    "focus": [
     "g:reported-backshift",
@@ -139,6 +147,7 @@
    "scene": "sc-u31-b"
   },
   {
+   "key": "u31-d8",
    "type": "output",
    "focus": [
     "g:pluperfect",
@@ -150,6 +159,7 @@
    "scene": "sc-u31-a"
   },
   {
+   "key": "u31-d9",
    "type": "review",
    "focus": [
     "g:pluperfect",

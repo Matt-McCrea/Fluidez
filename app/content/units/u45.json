@@ -6,6 +6,7 @@
  "canDo": "I can follow and write a news report, including what is only alleged.",
  "days": [
   {
+   "key": "u45-d0",
    "type": "introduce",
    "focus": [
     "g:future-perfect"
@@ -23,6 +24,7 @@
    "chapter": "ch140"
   },
   {
+   "key": "u45-d1",
    "type": "drill",
    "focus": [
     "g:future-perfect",
@@ -36,6 +38,7 @@
    ]
   },
   {
+   "key": "u45-d2",
    "type": "input",
    "focus": [
     "p:no-tener-ni-idea-de",
@@ -62,6 +65,7 @@
    "chapter": "ch141"
   },
   {
+   "key": "u45-d3",
    "type": "introduce",
    "focus": [
     "p:habria-que-ver-si",
@@ -81,6 +85,7 @@
    "chapter": "ch142"
   },
   {
+   "key": "u45-d4",
    "type": "drill",
    "focus": [
     "g:conditional-rumour",
@@ -95,6 +100,7 @@
    ]
   },
   {
+   "key": "u45-d5",
    "type": "patterns",
    "focus": [
     "p:si-solo-si-siempre-y-cuando",
@@ -110,6 +116,7 @@
    "lexemes": []
   },
   {
+   "key": "u45-d6",
    "type": "output",
    "focus": [
     "p:indice-tasa",
@@ -123,6 +130,7 @@
    "scene": "sc-u45-a"
   },
   {
+   "key": "u45-d7",
    "type": "introduce",
    "focus": [
     "g:impersonal-register"
@@ -138,6 +146,7 @@
    "chapter": "ch144"
   },
   {
+   "key": "u45-d8",
    "type": "drill",
    "focus": [
     "g:impersonal-register",
@@ -156,6 +165,7 @@
    "scene": "sc-u45-b"
   },
   {
+   "key": "u45-d9",
    "type": "review",
    "focus": [
     "g:future-perfect",

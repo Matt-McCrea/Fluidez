@@ -6,6 +6,7 @@
  "canDo": "I can describe what my life used to be like and compare it with now.",
  "days": [
   {
+   "key": "u11-d0",
    "type": "introduce",
    "focus": [
     "g:imperfect-habitual"
@@ -25,6 +26,7 @@
    "chapter": "ch027"
   },
   {
+   "key": "u11-d1",
    "type": "drill",
    "focus": [
     "g:imperfect-habitual",
@@ -41,6 +43,7 @@
    ]
   },
   {
+   "key": "u11-d2",
    "type": "introduce",
    "focus": [
     "g:preterite-spelling-stem"
@@ -56,6 +59,7 @@
    ]
   },
   {
+   "key": "u11-d3",
    "type": "drill",
    "focus": [
     "g:preterite-spelling-stem",
@@ -70,6 +74,7 @@
    ]
   },
   {
+   "key": "u11-d4",
    "type": "input",
    "focus": [
     "p:parecerse-a",
@@ -98,6 +103,7 @@
    "chapter": "ch028"
   },
   {
+   "key": "u11-d5",
    "type": "introduce",
    "focus": [
     "g:comparatives"
@@ -114,6 +120,7 @@
    "chapter": "ch029"
   },
   {
+   "key": "u11-d6",
    "type": "drill",
    "focus": [
     "g:comparatives",
@@ -133,6 +140,7 @@
    ]
   },
   {
+   "key": "u11-d7",
    "type": "output",
    "focus": [
     "g:imperfect-habitual",
@@ -144,6 +152,7 @@
    "scene": "sc-u11-d"
   },
   {
+   "key": "u11-d8",
    "type": "review",
    "focus": [
     "g:imperfect-habitual",

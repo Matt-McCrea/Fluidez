@@ -6,6 +6,7 @@
  "canDo": "I can write a connected message with reasons and details instead of short separate sentences.",
  "days": [
   {
+   "key": "u14-d0",
    "type": "introduce",
    "focus": [
     "g:relative-que"
@@ -26,6 +27,7 @@
    "chapter": "ch036"
   },
   {
+   "key": "u14-d1",
    "type": "drill",
    "focus": [
     "g:relative-que",
@@ -46,6 +48,7 @@
    ]
   },
   {
+   "key": "u14-d2",
    "type": "introduce",
    "focus": [
     "g:cause-result"
@@ -61,6 +64,7 @@
    ]
   },
   {
+   "key": "u14-d3",
    "type": "drill",
    "focus": [
     "g:cause-result",
@@ -75,6 +79,7 @@
    ]
   },
   {
+   "key": "u14-d4",
    "type": "input",
    "focus": [
     "p:para-inf-purpose"
@@ -101,6 +106,7 @@
    "chapter": "ch037"
   },
   {
+   "key": "u14-d5",
    "type": "introduce",
    "focus": [
     "g:object-pronoun-position"
@@ -117,6 +123,7 @@
    "chapter": "ch038"
   },
   {
+   "key": "u14-d6",
    "type": "drill",
    "focus": [
     "g:object-pronoun-position",
@@ -133,6 +140,7 @@
    ]
   },
   {
+   "key": "u14-d7",
    "type": "output",
    "focus": [
     "g:relative-que",
@@ -144,6 +152,7 @@
    "scene": "sc-u14-d"
   },
   {
+   "key": "u14-d8",
    "type": "review",
    "focus": [
     "g:relative-que",

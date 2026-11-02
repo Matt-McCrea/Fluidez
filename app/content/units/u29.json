@@ -6,6 +6,7 @@
  "canDo": "I can agree, disagree, doubt and concede without turning it into a fight.",
  "days": [
   {
+   "key": "u29-d0",
    "type": "introduce",
    "focus": [
     "g:subj-doubt"
@@ -25,6 +26,7 @@
    "chapter": "ch086"
   },
   {
+   "key": "u29-d1",
    "type": "drill",
    "focus": [
     "g:subj-doubt",
@@ -39,6 +41,7 @@
    ]
   },
   {
+   "key": "u29-d2",
    "type": "input",
    "focus": [
     "p:dar-igual"
@@ -63,6 +66,7 @@
    "chapter": "ch087"
   },
   {
+   "key": "u29-d3",
    "type": "introduce",
    "focus": [
     "g:quizas-a-lo-mejor"
@@ -78,6 +82,7 @@
    "chapter": "ch088"
   },
   {
+   "key": "u29-d4",
    "type": "drill",
    "focus": [
     "g:quizas-a-lo-mejor",
@@ -94,6 +99,7 @@
    ]
   },
   {
+   "key": "u29-d5",
    "type": "patterns",
    "focus": [
     "p:estar-de-acuerdo-con-en",
@@ -109,6 +115,7 @@
    "lexemes": []
   },
   {
+   "key": "u29-d6",
    "type": "introduce",
    "focus": [
     "g:conditional-past-guess"
@@ -123,6 +130,7 @@
    ]
   },
   {
+   "key": "u29-d7",
    "type": "drill",
    "focus": [
     "g:conditional-past-guess",
@@ -139,6 +147,7 @@
    "scene": "sc-u29-b"
   },
   {
+   "key": "u29-d8",
    "type": "output",
    "focus": [
     "g:subj-doubt",
@@ -150,6 +159,7 @@
    "scene": "sc-u29-a"
   },
   {
+   "key": "u29-d9",
    "type": "review",
    "focus": [
     "g:subj-doubt",

@@ -6,6 +6,7 @@
  "canDo": "I can order food and drink, say what I and other people like, and ask for what's missing.",
  "days": [
   {
+   "key": "u10-d0",
    "type": "introduce",
    "focus": [
     "g:gustar-full"
@@ -26,6 +27,7 @@
    "chapter": "ch024"
   },
   {
+   "key": "u10-d1",
    "type": "drill",
    "focus": [
     "g:gustar-full",
@@ -46,6 +48,7 @@
    ]
   },
   {
+   "key": "u10-d2",
    "type": "introduce",
    "focus": [
     "g:stem-e-i"
@@ -63,6 +66,7 @@
    ]
   },
   {
+   "key": "u10-d3",
    "type": "drill",
    "focus": [
     "g:stem-e-i",
@@ -78,6 +82,7 @@
    ]
   },
   {
+   "key": "u10-d4",
    "type": "input",
    "focus": [
     "p:nos-vemos-a-las"
@@ -104,6 +109,7 @@
    "chapter": "ch025"
   },
   {
+   "key": "u10-d5",
    "type": "patterns",
    "focus": [
     "p:me-trae",
@@ -117,6 +123,7 @@
    "lexemes": []
   },
   {
+   "key": "u10-d6",
    "type": "introduce",
    "focus": [
     "g:prep-pronouns"
@@ -133,6 +140,7 @@
    "chapter": "ch026"
   },
   {
+   "key": "u10-d7",
    "type": "drill",
    "focus": [
     "g:prep-pronouns",
@@ -147,6 +155,7 @@
    ]
   },
   {
+   "key": "u10-d8",
    "type": "output",
    "focus": [
     "g:gustar-full",
@@ -158,6 +167,7 @@
    "scene": "sc-u10-d"
   },
   {
+   "key": "u10-d9",
    "type": "review",
    "focus": [
     "g:gustar-full",

@@ -6,6 +6,7 @@
  "canDo": "I can write a short email, review or message at paragraph length, with a purpose and reactions.",
  "days": [
   {
+   "key": "u27-d0",
    "type": "introduce",
    "focus": [
     "g:written-register-a2"
@@ -26,6 +27,7 @@
    "chapter": "ch080"
   },
   {
+   "key": "u27-d1",
    "type": "drill",
    "focus": [
     "g:written-register-a2",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u27-d2",
    "type": "introduce",
    "focus": [
     "g:para-que"
@@ -63,6 +66,7 @@
    ]
   },
   {
+   "key": "u27-d3",
    "type": "drill",
    "focus": [
     "g:para-que",
@@ -77,6 +81,7 @@
    ]
   },
   {
+   "key": "u27-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -100,6 +105,7 @@
    "chapter": "ch081"
   },
   {
+   "key": "u27-d5",
    "type": "patterns",
    "focus": [
     "p:le-escribo-para",
@@ -110,6 +116,7 @@
    "lexemes": []
   },
   {
+   "key": "u27-d6",
    "type": "introduce",
    "focus": [
     "g:subj-emotion-intro"
@@ -126,6 +133,7 @@
    "chapter": "ch082"
   },
   {
+   "key": "u27-d7",
    "type": "drill",
    "focus": [
     "g:subj-emotion-intro",
@@ -139,6 +147,7 @@
    ]
   },
   {
+   "key": "u27-d8",
    "type": "output",
    "focus": [
     "g:written-register-a2",
@@ -150,6 +159,7 @@
    "scene": "sc-u27-a"
   },
   {
+   "key": "u27-d9",
    "type": "review",
    "focus": [
     "g:written-register-a2",

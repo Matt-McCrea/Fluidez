@@ -6,6 +6,7 @@
  "canDo": "I can talk about my job and studies, read a job ad, and say what a workplace needs.",
  "days": [
   {
+   "key": "u19-d0",
    "type": "introduce",
    "focus": [
     "g:se-impersonal"
@@ -26,6 +27,7 @@
    "chapter": "ch052"
   },
   {
+   "key": "u19-d1",
    "type": "drill",
    "focus": [
     "g:se-impersonal",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u19-d2",
    "type": "introduce",
    "focus": [
     "g:relatives-donde-lo-que"
@@ -59,6 +62,7 @@
    ]
   },
   {
+   "key": "u19-d3",
    "type": "drill",
    "focus": [
     "g:relatives-donde-lo-que",
@@ -72,6 +76,7 @@
    ]
   },
   {
+   "key": "u19-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -95,6 +100,7 @@
    "chapter": "ch053"
   },
   {
+   "key": "u19-d5",
    "type": "patterns",
    "focus": [
     "p:presentation-frame",
@@ -104,6 +110,7 @@
    "lexemes": []
   },
   {
+   "key": "u19-d6",
    "type": "introduce",
    "focus": [
     "g:article-uses"
@@ -120,6 +127,7 @@
    "chapter": "ch054"
   },
   {
+   "key": "u19-d7",
    "type": "drill",
    "focus": [
     "g:article-uses",
@@ -133,6 +141,7 @@
    ]
   },
   {
+   "key": "u19-d8",
    "type": "output",
    "focus": [
     "g:se-impersonal",
@@ -144,6 +153,7 @@
    "scene": "sc-u19-d"
   },
   {
+   "key": "u19-d9",
    "type": "review",
    "focus": [
     "g:se-impersonal",

@@ -6,6 +6,7 @@
  "canDo": "I can argue a position with evidence, conditions and concessions.",
  "days": [
   {
+   "key": "u44-d0",
    "type": "introduce",
    "focus": [
     "g:subj-concessive"
@@ -25,6 +26,7 @@
    "chapter": "ch135"
   },
   {
+   "key": "u44-d1",
    "type": "drill",
    "focus": [
     "g:subj-concessive",
@@ -44,6 +46,7 @@
    ]
   },
   {
+   "key": "u44-d2",
    "type": "input",
    "focus": [
     "p:que-opinas-de-que",
@@ -73,6 +76,7 @@
    "chapter": "ch136"
   },
   {
+   "key": "u44-d3",
    "type": "introduce",
    "focus": [
     "p:estaria-bien-que",
@@ -90,6 +94,7 @@
    "chapter": "ch137"
   },
   {
+   "key": "u44-d4",
    "type": "drill",
    "focus": [
     "g:subj-conditions",
@@ -104,6 +109,7 @@
    ]
   },
   {
+   "key": "u44-d5",
    "type": "patterns",
    "focus": [
     "p:valer-la-pena",
@@ -119,6 +125,7 @@
    "lexemes": []
   },
   {
+   "key": "u44-d6",
    "type": "output",
    "focus": [
     "p:un-estudio-muestra-que",
@@ -132,6 +139,7 @@
    "scene": "sc-u44-a"
   },
   {
+   "key": "u44-d7",
    "type": "introduce",
    "focus": [
     "g:argument-markers"
@@ -147,6 +155,7 @@
    "chapter": "ch139"
   },
   {
+   "key": "u44-d8",
    "type": "drill",
    "focus": [
     "g:argument-markers",
@@ -169,6 +178,7 @@
    "scene": "sc-u44-b"
   },
   {
+   "key": "u44-d9",
    "type": "checkpoint",
    "focus": [
     "g:subj-concessive",

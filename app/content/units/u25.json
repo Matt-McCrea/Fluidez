@@ -6,6 +6,7 @@
  "canDo": "I can describe a place and a person in detail and pass on what someone told me.",
  "days": [
   {
+   "key": "u25-d0",
    "type": "introduce",
    "focus": [
     "g:le-doubling"
@@ -26,6 +27,7 @@
    "chapter": "ch073"
   },
   {
+   "key": "u25-d1",
    "type": "drill",
    "focus": [
     "g:le-doubling",
@@ -42,6 +44,7 @@
    ]
   },
   {
+   "key": "u25-d2",
    "type": "introduce",
    "focus": [
     "g:adverbs-mente"
@@ -57,6 +60,7 @@
    ]
   },
   {
+   "key": "u25-d3",
    "type": "drill",
    "focus": [
     "g:adverbs-mente",
@@ -70,6 +74,7 @@
    ]
   },
   {
+   "key": "u25-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -93,6 +98,7 @@
    "chapter": "ch074"
   },
   {
+   "key": "u25-d5",
    "type": "input",
    "focus": [
     "p:de-los-ojos-azules"
@@ -118,6 +124,7 @@
    "chapter": "ch075"
   },
   {
+   "key": "u25-d6",
    "type": "introduce",
    "focus": [
     "g:reported-past-basic"
@@ -134,6 +141,7 @@
    "chapter": "ch076"
   },
   {
+   "key": "u25-d7",
    "type": "drill",
    "focus": [
     "g:reported-past-basic",
@@ -149,6 +157,7 @@
    ]
   },
   {
+   "key": "u25-d8",
    "type": "output",
    "focus": [
     "g:le-doubling",
@@ -160,6 +169,7 @@
    "scene": "sc-u25-a"
   },
   {
+   "key": "u25-d9",
    "type": "review",
    "focus": [
     "g:le-doubling",

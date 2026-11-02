@@ -6,6 +6,7 @@
  "canDo": "I can write and defend a critical review in my own voice.",
  "days": [
   {
+   "key": "u60-d0",
    "type": "input",
    "focus": [
     "p:haces-bien-en",
@@ -35,6 +36,7 @@
    "chapter": "ch215"
   },
   {
+   "key": "u60-d1",
    "type": "output",
    "focus": [
     "p:un-x-cualquiera",
@@ -47,6 +49,7 @@
    "scene": "sc-u60-a"
   },
   {
+   "key": "u60-d2",
    "type": "introduce",
    "focus": [
     "g:word-order-style"
@@ -62,6 +65,7 @@
    "chapter": "ch217"
   },
   {
+   "key": "u60-d3",
    "type": "drill",
    "focus": [
     "g:word-order-style",
@@ -75,6 +79,7 @@
    ]
   },
   {
+   "key": "u60-d4",
    "type": "input",
    "focus": [
     "p:plata-no-hay"
@@ -97,6 +102,7 @@
    "chapter": "ch218"
   },
   {
+   "key": "u60-d5",
    "type": "patterns",
    "focus": [
     "p:dejar-mucho-que-desear",
@@ -112,6 +118,7 @@
    "lexemes": []
   },
   {
+   "key": "u60-d6",
    "type": "output",
    "focus": [
     "p:no-servir-para-nada",
@@ -123,6 +130,7 @@
    "scene": "sc-u60-b"
   },
   {
+   "key": "u60-d7",
    "type": "introduce",
    "focus": [
     "g:evaluative-adverbs"
@@ -138,6 +146,7 @@
    "chapter": "ch219"
   },
   {
+   "key": "u60-d8",
    "type": "drill",
    "focus": [
     "g:evaluative-adverbs",
@@ -151,6 +160,7 @@
    ]
   },
   {
+   "key": "u60-d9",
    "type": "checkpoint",
    "focus": [
     "g:word-order-style",

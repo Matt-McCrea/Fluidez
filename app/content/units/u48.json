@@ -6,6 +6,7 @@
  "canDo": "I can describe objects, places and processes precisely in writing.",
  "days": [
   {
+   "key": "u48-d0",
    "type": "introduce",
    "focus": [
     "g:relatives-formal"
@@ -21,6 +22,7 @@
    "chapter": "ch155"
   },
   {
+   "key": "u48-d1",
    "type": "drill",
    "focus": [
     "g:relatives-formal",
@@ -35,6 +37,7 @@
    ]
   },
   {
+   "key": "u48-d2",
    "type": "input",
    "focus": [
     "p:synonym-hypernym",
@@ -61,6 +64,7 @@
    "chapter": "ch156"
   },
   {
+   "key": "u48-d3",
    "type": "introduce",
    "focus": [
     "p:presenting-to-audience",
@@ -80,6 +84,7 @@
    "chapter": "ch157"
   },
   {
+   "key": "u48-d4",
    "type": "drill",
    "focus": [
     "g:participle-gerund-clauses",
@@ -94,6 +99,7 @@
    ]
   },
   {
+   "key": "u48-d5",
    "type": "patterns",
    "focus": [
     "p:tener-forma-de",
@@ -109,6 +115,7 @@
    "lexemes": []
   },
   {
+   "key": "u48-d6",
    "type": "output",
    "focus": [
     "p:detenerse-estar-parado",
@@ -122,6 +129,7 @@
    "scene": "sc-u48-a"
   },
   {
+   "key": "u48-d7",
    "type": "introduce",
    "focus": [
     "g:infinitive-perfect"
@@ -137,6 +145,7 @@
    "chapter": "ch159"
   },
   {
+   "key": "u48-d8",
    "type": "drill",
    "focus": [
     "g:infinitive-perfect",
@@ -152,6 +161,7 @@
    "scene": "sc-u48-b"
   },
   {
+   "key": "u48-d9",
    "type": "checkpoint",
    "focus": [
     "g:relatives-formal",

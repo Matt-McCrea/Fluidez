@@ -6,6 +6,7 @@
  "canDo": "I can explain a decision, weigh reasons for and against, and correct what someone assumed.",
  "days": [
   {
+   "key": "u24-d0",
    "type": "introduce",
    "focus": [
     "g:pero-sino"
@@ -26,6 +27,7 @@
    "chapter": "ch070"
   },
   {
+   "key": "u24-d1",
    "type": "drill",
    "focus": [
     "g:pero-sino",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u24-d2",
    "type": "introduce",
    "focus": [
     "g:aunque-indicative"
@@ -58,6 +61,7 @@
    ]
   },
   {
+   "key": "u24-d3",
    "type": "drill",
    "focus": [
     "g:aunque-indicative",
@@ -73,6 +77,7 @@
    ]
   },
   {
+   "key": "u24-d4",
    "type": "input",
    "focus": [],
    "chunks": [],
@@ -96,6 +101,7 @@
    "chapter": "ch071"
   },
   {
+   "key": "u24-d5",
    "type": "patterns",
    "focus": [
     "p:depende-de",
@@ -106,6 +112,7 @@
    "lexemes": []
   },
   {
+   "key": "u24-d6",
    "type": "introduce",
    "focus": [
     "g:tanto-como"
@@ -122,6 +129,7 @@
    "chapter": "ch072"
   },
   {
+   "key": "u24-d7",
    "type": "drill",
    "focus": [
     "g:tanto-como",
@@ -136,6 +144,7 @@
    ]
   },
   {
+   "key": "u24-d8",
    "type": "output",
    "focus": [
     "g:pero-sino",
@@ -147,6 +156,7 @@
    "scene": "sc-u24-a"
   },
   {
+   "key": "u24-d9",
    "type": "checkpoint",
    "focus": [
     "g:pero-sino",

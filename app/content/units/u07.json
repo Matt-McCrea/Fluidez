@@ -6,6 +6,7 @@
  "canDo": "I can say what there is in my home and neighbourhood, where things are, and how much of everything there is.",
  "days": [
   {
+   "key": "u07-d0",
    "type": "introduce",
    "focus": [
     "g:hay-vs-esta"
@@ -26,6 +27,7 @@
    "chapter": "ch015"
   },
   {
+   "key": "u07-d1",
    "type": "drill",
    "focus": [
     "g:hay-vs-esta",
@@ -43,6 +45,7 @@
    ]
   },
   {
+   "key": "u07-d2",
    "type": "introduce",
    "focus": [
     "g:demonstratives"
@@ -58,6 +61,7 @@
    ]
   },
   {
+   "key": "u07-d3",
    "type": "drill",
    "focus": [
     "g:demonstratives",
@@ -72,6 +76,7 @@
    ]
   },
   {
+   "key": "u07-d4",
    "type": "input",
    "focus": [
     "p:ordinals-primer-tercer"
@@ -98,6 +103,7 @@
    "chapter": "ch016"
   },
   {
+   "key": "u07-d5",
    "type": "patterns",
    "focus": [
     "p:position-de",
@@ -111,6 +117,7 @@
    "lexemes": []
   },
   {
+   "key": "u07-d6",
    "type": "introduce",
    "focus": [
     "g:quantifiers"
@@ -129,6 +136,7 @@
    "chapter": "ch017"
   },
   {
+   "key": "u07-d7",
    "type": "drill",
    "focus": [
     "g:quantifiers",
@@ -147,6 +155,7 @@
    ]
   },
   {
+   "key": "u07-d8",
    "type": "output",
    "focus": [
     "g:hay-vs-esta",
@@ -158,6 +167,7 @@
    "scene": "sc-u07-d"
   },
   {
+   "key": "u07-d9",
    "type": "review",
    "focus": [
     "g:hay-vs-esta",
