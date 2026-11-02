@@ -218,3 +218,18 @@ describe('what decides each contrast', () => {
     expect(TARGET_ITEMS('x:hay-esta')).toBe(40);
   });
 });
+
+describe('authored items', () => {
+  it('are merged, get requires, and survive re-derivation', () => {
+    const base = ctx([script('x:por-para', { readAndPick: twins })]);
+    const a = { id: '1', side: 'x:por-para' as const, rung: 1, en: 'I did it for you.', es: 'Lo hice para ti.', gap: [8, 12] as [number, number], options: ['para', 'por'], answer: 0, why: 'For a recipient.' };
+    const withA = { ...base, authored: new Map([['x:por-para' as const, [a]]]) };
+    const r1 = deriveContrast(por, withA, 'meaning').file;
+    const r2 = deriveContrast(por, withA, 'meaning').file;
+    const got = r1.items.find((i) => i.id === 'x:por-para#a-1');
+    expect(got).toMatchObject({ node: 'x:por-para', es: a.es, why: a.why });
+    expect(Array.isArray(got?.requires)).toBe(true);
+    expect(JSON.stringify(r2)).toBe(JSON.stringify(r1));
+    expect(() => deriveContrast(por, { ...base, authored: new Map([['x:por-para' as const, [{ ...a, answer: 1 }]]]) }, 'meaning')).toThrow();
+  });
+});

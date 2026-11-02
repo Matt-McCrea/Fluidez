@@ -20,7 +20,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { ContrastFile, TeachingScript, type ContrastDecides, type GraphNode, type NodeId } from '../../src/content/schema';
+import { ContrastFile, ContrastItem, TeachingScript, type ContrastDecides, type GraphNode, type NodeId } from '../../src/content/schema';
 import { hash32 } from '../../src/exercises/rng';
 import { tagSentence, type TagOptions } from '../../src/engine/tagger';
 import { loadCurriculum } from '../gate/load';
@@ -38,8 +38,13 @@ export interface DeriveCtx {
   scripts: ReadonlyMap<NodeId, TeachingScript>;
   /** the English of a Spanish sentence of the bank, by keyOf(es): the pair a script sentence has no English for */
   bankEn: ReadonlyMap<string, string>;
+  /** hand-authored items by contrast (tools/contrast/authored), merged after the derived ones */
+  authored?: ReadonlyMap<NodeId, readonly Authored[]>;
   tag: (es: string) => { requires: NodeId[]; features: Array<{ node: NodeId | null; span: [number, number] }>; tokens: Array<{ text: string; punct: boolean }> };
 }
+
+/** An item as authored by hand: everything but the node and the computed requires. */
+export type Authored = Omit<ContrastItem, 'node' | 'requires'>;
 
 type Origin = 'twin' | 'gap' | 'pitfall' | 'pick' | 'turn';
 /** Which origin wins when two items are the same sentence with the same gap. */
@@ -387,7 +392,15 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
     if (c.from !== node.id) stats.fromSides++;
     stats.origin[c.origin]++;
   }
-  const items = built.map((b) => b.it);
+  const items: ContrastItem[] = built.map((b) => b.it);
+  // authored items are kept whole; the tagger computes their requires, and one with the id of a derived item replaces it
+  for (const a of ctx.authored?.get(node.id) ?? []) {
+    const id = a.id.includes('#') ? a.id : `${node.id}#a-${a.id}`;
+    if (a.options[a.answer] === undefined || a.es.slice(a.gap[0], a.gap[1]) !== a.options[a.answer]) throw new Error(`authored ${id}: options[answer] is not the gap`);
+    const it = ContrastItem.parse({ ...a, id, node: node.id, requires: ctx.tag(a.es).requires });
+    const at = items.findIndex((x) => x.id === id);
+    if (at >= 0) items[at] = it; else items.push(it);
+  }
   stats.items = items.length;
   return { file: { node: node.id, decides, items }, stats };
 }
@@ -396,6 +409,14 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
 
 function jsonIn(dir: string): string[] {
   return existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json') && !f.startsWith('_')).sort() : [];
+}
+
+/** tools/contrast/authored/x_<id>.json: each a JSON array of authored items for that contrast. */
+export function authoredIn(appDir = APP): Map<NodeId, Authored[]> {
+  const dir = join(appDir, 'tools', 'contrast', 'authored');
+  const out = new Map<NodeId, Authored[]>();
+  for (const f of jsonIn(dir)) out.set(f.replace(/\.json$/, '').replace('_', ':') as NodeId, JSON.parse(readFileSync(join(dir, f), 'utf8')) as Authored[]);
+  return out;
 }
 
 /** The graph, the scripts and a tagger over the course, from the content on disk. The bank is not read here. */
@@ -410,7 +431,7 @@ export function loadContext(appDir = APP, bankEn: ReadonlyMap<string, string> = 
     if (s.success) scripts.set(s.data.node, s.data);
   }
   const opts: TagOptions = cur.tagOpts;
-  return { graph: cur.nodes, scripts, bankEn, tag: (es) => tagSentence(es, opts) };
+  return { graph: cur.nodes, scripts, bankEn, authored: authoredIn(appDir), tag: (es) => tagSentence(es, opts) };
 }
 
 /** The English of the bank rows whose Spanish is one of `wanted` (by keyOf): the bank is read file by file and nothing else is kept. */
