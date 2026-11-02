@@ -32,6 +32,8 @@ export interface SimOptions {
   placement?: number;
   /** called after each compile, before the session runs (the learner is still in its pre-session state) */
   onPlan?: (plan: SessionPlan, input: CompileInput) => void;
+  /** called once the run is over, with the learner it ended on (tests compare its events) */
+  onFinish?: (learner: Learner) => void;
 }
 
 export interface SessionStat {
@@ -614,6 +616,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     for (let i = ss.length - 1; i >= 0; i--) { if (ss[i].dueMinutes > ss[i].budgetMinutes) break; pl.settledDay = ss[i].day; }
     if (pl.settledDay !== undefined && pl.settledDay === ss[0]?.day && ss[0].dueMinutes <= ss[0].budgetMinutes) pl.settledDay = ss[0].day;
   }
+  opts.onFinish?.(L);
   return run;
 }
 
