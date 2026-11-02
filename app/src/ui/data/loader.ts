@@ -14,7 +14,7 @@ import {
 } from '../../content/schema';
 import { Library, type LibraryChapter } from '../../content/library';
 import { readContentHistory, type ContentHistory } from '../../content/migrations';
-import type { ContentDir } from '../../content/kinds';
+import { isCoreFile, type ContentDir } from '../../content/kinds';
 import { Bundle } from './bundle';
 
 export type FileLoader = () => Promise<unknown>;
@@ -236,9 +236,19 @@ export class ContentLoader {
     };
   }
 
+  /**
+   * The files of a window kind that are core all the same (the contrast scripts, src/content/kinds.ts):
+   * a contrast comes due wherever the learner is, so its script is here whatever the window. Read with
+   * the bundle rather than with the course, so a file that fails to arrive is not a course that failed to load.
+   */
+  private async loadCore(): Promise<void> {
+    await this.fetch((kind, p) => isCoreFile(kind, baseName(p)));
+  }
+
   /** Load (once) every content file for the window or bands asked for, and return a fresh bundle. */
   async load(opts: LoadOptions = {}): Promise<Bundle> {
     const { units, nodes } = await this.core();
+    await this.loadCore();
     if (opts.unit !== undefined) {
       await this.loadWindow(opts.unit);
     } else {
