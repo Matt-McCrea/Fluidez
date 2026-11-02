@@ -94,6 +94,17 @@ describe('a rescue', () => {
     expect(s.learner.events().filter((e) => e.op === RESCUE_OP)).toHaveLength(4);
   });
 
+  it('is pleased when every one was remembered, and not before', async () => {
+    const s = await screen();
+    find(s.draw(), (n) => n.props?.['data-start'] !== undefined)[0].props.onClick();
+    await settle();
+    let tree = s.draw();
+    let n = 0;
+    while (cardView(tree) && n++ < 10) { const cv = cardView(tree); cv.props.onDone({ ...answer(cv.props.card, 'right'), ms: 1 }); tree = s.draw(); }
+    await settle();
+    expect(text(find(s.draw(), (x) => x.props?.['data-remark'] !== undefined)[0])).toBe('Not one missed.');
+  });
+
   it('has nothing to say about a best: there is none', async () => {
     const s = await screen();
     const t = text(s.draw());

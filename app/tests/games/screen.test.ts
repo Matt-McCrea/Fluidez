@@ -115,9 +115,29 @@ describe('a round', () => {
     const over = s.draw();
     expect(text(find(over, (n) => n.props?.['data-score'] !== undefined)[0])).toMatch(/^4 forms right/);
     expect(text(find(over, (n) => n.props?.['data-best'] !== undefined)[0])).toBe('That is your first score here.');
+    expect(text(find(over, (n) => n.props?.['data-remark'] !== undefined)[0])).toBe('Nothing wrong, and you passed on 1 instead of guessing.');
     expect(find(over, (n) => n.props?.['data-missed'] !== undefined)).toHaveLength(1);
     expect(find(over, (n) => n.props?.['data-primary'] !== undefined && text(n) === 'Again')).toHaveLength(1);
     expect(find(over, (n) => n.props?.['data-practise'] !== undefined)).toHaveLength(1);
     expect((await new GamesStore(s.kv).read()).bests[flashKey('preterito')].score).toBe(4);
+  });
+});
+
+describe('a better round than the one before', () => {
+  it('gets the word the learner was taught, with what it means, beside the one true thing to say', async () => {
+    const s = await screen();
+    s.learner.introduce('c:que-bien', { at: s.clock.t, results: [true, true, true] });
+    await s.ui.games.finishRound({ at: 1, game: 'flash', deck: 'preterito', score: 2 }, flashKey('preterito'));
+    s.tap(s.draw(), 'data-start');
+    s.draw();
+    const game = (h.slots.find((x) => x && typeof x === 'object' && 'item' in (x as object))) as any;
+    const input = () => find(s.draw(), (n) => n.type === 'input')[0];
+    for (let i = 0; i < 6; i++) { s.clock.t += 2000; input().props.onInput({ currentTarget: { value: game.item.answer } }); }
+    s.clock.t += 61_000;
+    input().props.onInput({ currentTarget: { value: game.item.answer } });
+    await new Promise((r) => setTimeout(r, 20));
+    const over = s.draw();
+    expect(text(find(over, (n) => n.props?.['data-best'] !== undefined)[0])).toBe('A new best. The one before was 2.');
+    expect(text(find(over, (n) => n.props?.['data-remark'] !== undefined)[0])).toBe('¡Qué bien! Great! Not one wrong in the whole minute.');
   });
 });

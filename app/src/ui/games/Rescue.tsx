@@ -3,9 +3,9 @@
 // and "Show me" are there as they always are.
 import { useRef, useState } from 'preact/hooks';
 import { bringRescue, Rescue, rescueCount, RESCUE_MAX, type RescueResult } from '../../games/rescue';
-import { rescueLines } from '../../games/reactions';
+import { cheer, rescueLines, rescueReaction } from '../../games/reactions';
 import { CardView, Continue } from '../components/card';
-import { Heading } from '../components/text';
+import { Heading, Txt } from '../components/text';
 import { useApp } from '../context';
 import type { Card } from '../session/cards';
 
@@ -59,13 +59,15 @@ export function RescueGame({ onExit }: { onExit: () => void }) {
   }
   if (phase === 'over') {
     const res = result;
+    const say = res ? rescueReaction(res, cheer(learner)) : {};
     return (
       <main class="screen over" id="main">
         <Heading title="Rescate" lead={res && res.of ? undefined : 'Nothing is ready for review right now.'} />
         {res && res.of ? (
           <>
             <p class="big-number" data-score>{res.saved} <span>of {res.of} saved</span></p>
-            {rescueLines(res).slice(1).map((l) => <p class="line" key={l}>{l}</p>)}
+            {say.cheer || say.remark ? <p class="line" data-remark>{say.cheer ? <><Txt t={{ text: say.cheer.es, lang: 'es' }} /> <span class="en">{say.cheer.en}</span> </> : null}{say.remark}</p> : null}
+            {rescueLines(res).map((l) => <p class="line" key={l}>{l}</p>)}
             {res.stillDue >= 1 ? <p class="small">{res.stillDue === 1 ? '1 more is' : `${res.stillDue} more are`} ready for review.</p> : null}
           </>
         ) : null}

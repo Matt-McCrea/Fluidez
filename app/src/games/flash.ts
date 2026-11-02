@@ -173,6 +173,8 @@ export interface FlashResult {
   /** the verbs of the forms that slipped, and the words that did, to practise them */
   verbs: string[];
   words: NodeId[];
+  /** the scores of the rounds before this one in this deck, oldest first, the last few */
+  before: number[];
   /** the form missed most this round, when it was missed more than once */
   slipped?: { cell: string; times: number };
 }
@@ -309,6 +311,7 @@ export class FlashGame {
       const answered = this.state.right + this.state.wrong + this.state.skipped;
       if (!answered) return undefined;
       const score = scoreOf(this.state);
+      const before = (await games.read()).rounds.filter((r) => r.game === 'flash' && r.deck === this.d.deck.id).map((r) => r.score).slice(-5);
       const row = { at: this.d.now(), game: 'flash' as const, deck: this.d.deck.id, score, wrong: this.state.wrong, skipped: this.state.skipped };
       const best = (await games.finishRound(row, flashKey(this.d.deck.id), this.cells)) ?? { isBest: false };
       const seen = new Set<string>();
@@ -317,7 +320,7 @@ export class FlashGame {
       const verbs = [...new Set(once.flatMap((m) => (m.verb ? [m.verb] : [])))].slice(0, 6);
       const words = [...new Set(once.flatMap((m) => (m.word ? [m.word] : [])))].slice(0, 6);
       const slipped = this.slipped();
-      return { deck: this.d.deck.id, score, wrong: this.state.wrong, skipped: this.state.skipped, best, missed, verbs, words, ...(slipped ? { slipped } : {}) };
+      return { deck: this.d.deck.id, score, wrong: this.state.wrong, skipped: this.state.skipped, best, missed, verbs, words, before, ...(slipped ? { slipped } : {}) };
     })());
   }
 }

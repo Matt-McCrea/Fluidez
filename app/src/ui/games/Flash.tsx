@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { rng } from '../../exercises/rng';
 import { FlashGame, type FlashDeck, type FlashResult } from '../../games/flash';
-import { bestLine } from '../../games/reactions';
+import { bestLine, cheer, flashReaction } from '../../games/reactions';
 import { SKIP_SECONDS, WRONG_SECONDS } from '../../games/round';
 import { flashKey, type GamesDoc } from '../../games/store';
 import type { McqCard } from '../session/cards';
@@ -27,6 +27,7 @@ export function Flash({ deck, onExit, onPractise }: { deck: FlashDeck; onExit: (
   };
   const over = (r: FlashResult | null) => { setResult(r); void ui.games.read().then(setDoc); };
   const best = doc?.bests[flashKey(deck.id)]?.score;
+
   if (!game) return <Ready deck={deck} best={best} onStart={begin} onExit={onExit} />;
   if (result === undefined) return <Round game={game} deck={deck} onOver={over} onQuit={onExit} />;
   return <Over deck={deck} result={result} onAgain={begin} onExit={onExit} onPractise={onPractise} />;
@@ -142,6 +143,7 @@ function Round({ game, deck, onOver, onQuit }: { game: FlashGame; deck: FlashDec
 function Over({ deck, result, onAgain, onExit, onPractise }: {
   deck: FlashDeck; result: FlashResult | null; onAgain: () => void; onExit: () => void; onPractise: (spec: PracticeSpec) => void;
 }) {
+  const { learner } = useApp();
   if (!result) {
     return (
       <main class="screen over" id="main">
@@ -153,6 +155,7 @@ function Over({ deck, result, onAgain, onExit, onPractise }: {
   }
   const { score, best } = result;
   const line = bestLine(score, best);
+  const say = flashReaction(result, cheer(learner));
   const practise: PracticeSpec | undefined = deck.kind === 'forms' && result.verbs.length && deck.tense
     ? { kind: 'conjugate', verbs: result.verbs, tenses: [deck.tense], title: `${deck.title}: what slipped` }
     : deck.kind === 'words' && result.words.length ? { kind: 'nodes', nodes: result.words, title: 'Words that slipped' } : undefined;
@@ -161,6 +164,7 @@ function Over({ deck, result, onAgain, onExit, onPractise }: {
       <Heading title="Relámpago" lead={deck.title} />
       <p class="big-number" data-score>{score} <span>{UNIT(deck)} right</span></p>
       {line ? <p class="line" data-best>{line}</p> : null}
+      {say.cheer || say.remark ? <p class="line" data-remark>{say.cheer ? <><Txt t={{ text: say.cheer.es, lang: 'es' }} /> <span class="en">{say.cheer.en}</span> </> : null}{say.remark}</p> : null}
       {result.wrong || result.skipped ? <p class="small">{result.wrong} wrong, {result.skipped} passed.</p> : null}
       {result.missed.length ? (
         <>

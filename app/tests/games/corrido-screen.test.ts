@@ -48,7 +48,7 @@ const DAY = 86_400_000;
 const FAIR = (n: number): Question => ({ q: 'What happened?', options: ['Nothing at all happened', 'Vale arrived', 'Simón spoke very quickly all day', 'Hernando left'], answer: n % 2 === 0 ? 1 : 3 });
 const WORDS = Array.from({ length: 280 }, (_, i) => `palabra${i % 9}`).join(' ') + '.';
 
-async function screen(best?: number) {
+async function screen(best?: number, last?: number) {
   const w = await world();
   w.clock.t += 100 * DAY;
   w.learner.introduce('l:café', { at: w.clock.t - 40 * DAY, results: [true, true, true] });
@@ -58,7 +58,7 @@ async function screen(best?: number) {
   const pick = (await pickReading({ learner: w.learner, bundle: w.bundle, doc: { reading: [] }, rng: rng('s'), now: w.now }))!;
   h.app = { learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now, refresh: () => {} };
   h.slots = [];
-  const draw = () => { h.at = 0; return expand(Reread({ pick, best, onAnother: () => {}, onExit: () => {} })); };
+  const draw = () => { h.at = 0; return expand(Reread({ pick, best, last, onAnother: () => {}, onExit: () => {} })); };
   const tap = (tree: any, attr: string) => find(tree, (n) => n.props?.[attr] !== undefined && typeof n.props.onClick === 'function')[0].props.onClick();
   /** read for `secs`, then answer the check with `rights` right */
   const run = async (secs: number, rights: number) => {
@@ -110,6 +110,14 @@ describe('a reading', () => {
     expect(doc.bests[rereadKey('A1')].score).toBe(120);
     expect(s.learner.node('l:café')!.exposures).toBe(seen + 1);
     expect(s.learner.events().filter((e) => e.scored === 'review' && e.at >= s.now())).toEqual([]);
+  });
+
+  it('faster than the last time says by how much, and a slower one says nothing about it', async () => {
+    const fast = await screen(undefined, 100);
+    const over = await fast.run(140, 3);
+    expect(text(find(over, (n) => n.props?.['data-remark'] !== undefined)[0])).toBe('20 words a minute faster than the last time.');
+    const slow = await screen(undefined, 150);
+    expect(find(await slow.run(140, 3), (n) => n.props?.['data-remark'] !== undefined)).toHaveLength(0);
   });
 
   it('with a question missed: the pace is logged, nothing is set and nothing is counted, and it says why', async () => {

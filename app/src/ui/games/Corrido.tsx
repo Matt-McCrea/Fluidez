@@ -4,11 +4,11 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { rng } from '../../exercises/rng';
 import { creditReading } from '../../games/credit';
-import { bestLine } from '../../games/reactions';
+import { bestLine, cheer, rereadReaction } from '../../games/reactions';
 import { judge, MAX_WPM, pickReading, readingRow, type ReadingPick } from '../../games/reading';
 import { rereadKey, type BestResult, type ReadingRow } from '../../games/store';
 import { CardRun, Continue } from '../components/card';
-import { Heading, lines, undash } from '../components/text';
+import { Heading, Txt, lines, undash } from '../components/text';
 import { useApp } from '../context';
 import { questionCard } from '../session/cards';
 
@@ -16,11 +16,14 @@ export function Corrido({ onExit }: { onExit: () => void }) {
   const { learner, bundle, ui, now } = useApp();
   const [pick, setPick] = useState<ReadingPick | null | undefined>(undefined);
   const [best, setBest] = useState<number | undefined>();
+  const [last, setLast] = useState<number | undefined>();
   const choose = async (not: string[] = []) => {
     setPick(undefined);
     const doc = await ui.games.read();
     const p = await pickReading({ learner, bundle, doc, rng: rng(`reread:${now()}`), now }, not);
     setBest(p ? doc.bests[rereadKey(p.band)]?.score : undefined);
+    // the pace of the last reading that counted at a chapter like this, to say when this one is faster
+    setLast(p ? doc.reading.filter((r) => r.counted && r.band === p.band).at(-1)?.wpm : undefined);
     setPick(p ?? null);
   };
   useEffect(() => { void choose(); }, []);
@@ -34,13 +37,13 @@ export function Corrido({ onExit }: { onExit: () => void }) {
       </main>
     );
   }
-  return <Reread key={pick.chapter.id} pick={pick} best={best} onAnother={() => void choose([pick.chapter.id])} onExit={onExit} />;
+  return <Reread key={pick.chapter.id} pick={pick} best={best} last={last} onAnother={() => void choose([pick.chapter.id])} onExit={onExit} />;
 }
 
 type Phase = 'ready' | 'read' | 'check' | 'over';
 
 /** One reading of one chapter, from the ready card to the end. */
-export function Reread({ pick, best, onAnother, onExit }: { pick: ReadingPick; best: number | undefined; onAnother: () => void; onExit: () => void }) {
+export function Reread({ pick, best, last, onAnother, onExit }: { pick: ReadingPick; best: number | undefined; last?: number; onAnother: () => void; onExit: () => void }) {
   const app = useApp();
   const { learner, bundle, ui, now } = app;
   const [phase, setPhase] = useState<Phase>('ready');
@@ -104,11 +107,17 @@ export function Reread({ pick, best, onAnother, onExit }: { pick: ReadingPick; b
   }
   const r = row!;
   const why = judge({ words: r.words, secs: r.secs, right: r.right, of: r.of }).why;
+  const say = rereadReaction(r, kept, cheer(learner), last);
   return (
     <main class="screen over" id="main">
       <Heading title="De corrido" lead={undash(chapter.title)} />
       <p class="big-number" data-score>{r.wpm} <span>words a minute, {r.right} of {r.of} questions right</span></p>
-      {r.counted ? (kept ? <p class="line" data-best>{bestLine(r.wpm, kept)}</p> : null) : (
+      {r.counted ? (
+        <>
+          {kept ? <p class="line" data-best>{bestLine(r.wpm, kept)}</p> : null}
+          {say.cheer || say.remark ? <p class="line" data-remark>{say.cheer ? <><Txt t={{ text: say.cheer.es, lang: 'es' }} /> <span class="en">{say.cheer.en}</span> </> : null}{say.remark}</p> : null}
+        </>
+      ) : (
         <p class="line" data-nocount>
           {why === 'fast' ? `That is faster than a text can be read: more than ${MAX_WPM} words a minute. It does not count.` : `It does not count: a reading counts when every question is right.`}
         </p>
