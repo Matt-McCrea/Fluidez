@@ -376,6 +376,28 @@
       ]
     },
     {
+      "id": "x:ser-estar-place#g.estar-location-states.rp6",
+      "node": "x:ser-estar-place",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Tomás isn't in Toronto.",
+      "es": "Tomás no está en Toronto.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Tomás isn't in Toronto.\", so the gap is está.",
+      "requires": [
+        "g:estar-location-states",
+        "l:estar"
+      ]
+    },
+    {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp0",
       "node": "x:ser-estar-place",
       "side": "g:ser-estar-adjectives",

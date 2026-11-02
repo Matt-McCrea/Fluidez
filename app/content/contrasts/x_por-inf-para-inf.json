@@ -382,6 +382,31 @@
         "p:demonstratives-basic",
         "p:para-inf"
       ]
+    },
+    {
+      "id": "x:por-inf-para-inf#p.para-inf.rp2",
+      "node": "x:por-inf-para-inf",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "Vale cooks for the customers.",
+      "es": "Vale cocina para los clientes.",
+      "gap": [
+        12,
+        16
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"Vale cooks for the customers.\", so the gap is para.",
+      "requires": [
+        "g:gender-articles",
+        "g:present-ar",
+        "l:cliente",
+        "l:cocinar",
+        "p:para-inf"
+      ]
     }
   ]
 }

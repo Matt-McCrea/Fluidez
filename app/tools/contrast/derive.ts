@@ -347,7 +347,7 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
   if ((decides === 'meaning' || decides === 'discourse') && built.length >= 8) {
     for (;;) {
       const s = score(built.map((b) => b.it));
-      if (s.cue <= CUE_LIMIT - 0.05 && s.commoner <= COMMONER_LIMIT - 0.03) break;
+      if (s.cue <= CUE_LIMIT - 0.02 && s.commoner <= COMMONER_LIMIT - 0.01) break;
       const order = built.map((b, i) => ({ b, i, hit: Math.max(s.byItem.cue[i], s.byItem.commoner[i]) })).filter((x) => x.hit > 0.5)
         .sort((x, y) => Number(x.b.c.origin === 'twin') - Number(y.b.c.origin === 'twin') || WINS[y.b.c.origin] - WINS[x.b.c.origin] || y.i - x.i);
       if (!order.length || built.length <= 4) break;

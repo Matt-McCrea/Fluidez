@@ -53,6 +53,32 @@
       ]
     },
     {
+      "id": "x:por-para#rp3",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "I'll do it by tomorrow.",
+      "es": "Lo hago para mañana.",
+      "gap": [
+        8,
+        12
+      ],
+      "options": [
+        "por la",
+        "para"
+      ],
+      "answer": 1,
+      "why": "The English says \"I'll do it by tomorrow.\", so the gap is para.",
+      "requires": [
+        "c:hago-salgo-vengo",
+        "g:direct-objects",
+        "g:yo-irregular",
+        "l:hacer",
+        "l:mañana",
+        "p:para-inf"
+      ]
+    },
+    {
       "id": "x:por-para#rp4",
       "node": "x:por-para",
       "side": "g:por-para-1",
@@ -310,6 +336,31 @@
       ]
     },
     {
+      "id": "x:por-para#p.para-inf.rp0",
+      "node": "x:por-para",
+      "side": "p:para-inf",
+      "rung": 1,
+      "en": "This ice cream is for Simón.",
+      "es": "Este helado es para Simón.",
+      "gap": [
+        15,
+        19
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 0,
+      "why": "The English says \"This ice cream is for Simón.\", so the gap is para.",
+      "requires": [
+        "g:ser-identity",
+        "l:helado",
+        "l:ser",
+        "p:demonstratives-basic",
+        "p:para-inf"
+      ]
+    },
+    {
       "id": "x:por-para#g.por-para-1.rp1",
       "node": "x:por-para",
       "side": "g:por-para-1",
@@ -410,6 +461,31 @@
         "l:tiquete",
         "p:costar-pagar",
         "p:numbers-un-una"
+      ]
+    },
+    {
+      "id": "x:por-para#g.por-para-1.yt5",
+      "node": "x:por-para",
+      "side": "g:por-para-1",
+      "rung": 1,
+      "en": "The bus goes through Honda.",
+      "es": "El bus pasa por Honda.",
+      "gap": [
+        12,
+        15
+      ],
+      "options": [
+        "para",
+        "por"
+      ],
+      "answer": 1,
+      "why": "Honda is on the way, not the end of the trip, so por.",
+      "requires": [
+        "g:gender-articles",
+        "g:por-para-1",
+        "g:present-ar",
+        "l:bus",
+        "l:pasar"
       ]
     }
   ]
