@@ -129,8 +129,14 @@ export function runGate(o: GateOptions = {}): GateResult {
   daySupply(st, loaded, whole ? null : touchedUnits);
 
   // what a learner's saved documents name must still be there, or say where it went (needs a shipped snapshot to compare to)
-  const shipped = whole ? readShippedIds(contentDir) : undefined;
-  if (shipped) findings.push(...checkContinuity({ current: idsOfLoaded(loaded), units: cur.units, shipped: unpackShipped(shipped), legacy: readLegacyPath(contentDir), migrations: readMigrationFiles(contentDir) }));
+  if (whole) {
+    try {
+      const shipped = readShippedIds(contentDir);
+      if (shipped) findings.push(...checkContinuity({ current: idsOfLoaded(loaded), units: cur.units, shipped: unpackShipped(shipped), legacy: readLegacyPath(contentDir), migrations: readMigrationFiles(contentDir) }));
+    } catch (e) {
+      findings.push({ severity: 'error', check: 'continuity', file: 'content/_shipped', problem: `the shipped snapshot cannot be read: ${(e as Error).message}`, fix: 'restore content/_shipped from git; it is written by npm run shipped and only ever grows' });
+    }
+  }
 
   if (st.unmapped.size) {
     const list = [...st.unmapped.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}×${v}`).join(', ');

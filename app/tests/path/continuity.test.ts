@@ -115,6 +115,13 @@ describe('the gate on a tree', () => {
     expect(c.map((f) => f.problem).join('|')).toMatch(/has no key/);
     expect(r.findings.filter((f) => f.check === 'schema' && /_shipped|_migrations/.test(f.file))).toEqual([]);
   });
+  it('names a snapshot it cannot read instead of falling over', () => {
+    const fx = makeFixture();
+    fx.write('_shipped/ids.json', packShipped(ids({ nodes: ['g:ser-identity'] })));
+    fx.write('_shipped/path.json', { format: 2, units: {} });
+    const c = runGate({ appDir: fx.app }).findings.filter((f) => f.check === 'continuity' && f.file === 'content/_shipped');
+    expect(c.map((f) => f.problem)).toEqual([expect.stringMatching(/the shipped snapshot cannot be read/)]);
+  });
   it('says nothing about continuity before a snapshot exists', () => {
     const fx = makeFixture();
     expect(runGate({ appDir: fx.app }).findings.filter((f) => f.check === 'continuity')).toEqual([]);
