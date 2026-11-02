@@ -205,10 +205,10 @@ function lenientSwap(input: string, r: { hintKind?: string; at?: number; closest
 /** A sentence card forgives an accent slip, with a note, unless the accent makes the word (R15). */
 const SENTENCE_ACCENTS = { accents: 'lenient' } as const;
 
-/** A whole Spanish sentence, from English: the translation matcher. */
-export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>) {
+/** A whole Spanish sentence, from English: the translation matcher. `node` is what the card is about: a pass through a swap that touches it says so. */
+export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>, node?: NodeId) {
   return (input: string): Check => {
-    const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept }, SENTENCE_ACCENTS);
+    const r = matchTranslation(input, { es: s.es, en: s.en, accept: s.accept }, node ? { ...SENTENCE_ACCENTS, targets: [node] } : SENTENCE_ACCENTS);
     const len = r.pass ? undefined : lenientSwap(input, r);
     if (len) return { pass: true, lenient: true, hint: `We'd say ${r.closest}; ${len} works too.`, answer: s.es };
     return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? s.es : r.closest, variant: r.variant, note: r.note };
@@ -231,9 +231,9 @@ export function chunkCheck(answers: string[]) {
 /** A typed gap (a verb form or a lexeme): the exercise's own check, plus a
  *  hint about the word itself when the miss is not an accent slip. `want` is
  *  the English the gap asks for (lexeme gaps only). */
-function itemCheck(item: ExItem, want?: string) {
+function itemCheck(item: ExItem, want?: string, node?: NodeId) {
   return (input: string): Check => {
-    const r = checkItem(item, input, SENTENCE_ACCENTS);
+    const r = checkItem(item, input, node ? { ...SENTENCE_ACCENTS, targets: [node] } : SENTENCE_ACCENTS);
     if (!r.pass && !r.near && !r.hint && (item.kind === 'typeForm' || item.kind === 'lexGap')) {
       const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined);
       if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer };
@@ -437,7 +437,7 @@ function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cl
     if (!t) return undefined;
     return {
       type: 'type', key: item.id, ask: 'Change the sentence', prompt: es(t.source), sub: en(t.instruction), answerLang: 'es',
-      placeholder: 'Type it in Spanish', check: itemCheck(t), retry: true, why: transformWhy(t),
+      placeholder: 'Type it in Spanish', check: itemCheck(t, undefined, item.node), retry: true, why: transformWhy(t),
     };
   }
   const tf = typeFormItem(s);
@@ -535,7 +535,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   const v = s ? productionView(s, preferFor(b, item.node)) : null;
   if (s && v) {
-    return sayCard(item.id, v, sentenceCheck(v.sentence), usesWhy(b, item.node, v.sentence.es));
+    return sayCard(item.id, v, sentenceCheck(v.sentence, item.node), usesWhy(b, item.node, v.sentence.es));
   }
   if (s) {
     // turns that do not line up: recognise the exchange instead
@@ -643,7 +643,7 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
     check: (input) => {
       const exact = checkExact(input, answers);
       if (exact.pass) return { pass: true, answer: yt.answer };
-      const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept }, SENTENCE_ACCENTS);
+      const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept }, { ...SENTENCE_ACCENTS, targets: [item.node] });
       if (m.pass) return { pass: true, near: m.note ? undefined : m.near, hintKind: m.hintKind, answer: yt.answer, variant: m.variant, note: m.note };
       return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, hintKind: exact.near ? 'accents' : m.hintKind, answer: yt.answer };
     },
@@ -663,7 +663,7 @@ function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {
   const v = productionView(s, prefer);
   const [t] = translationItems(s, { dirs: ['en-es'], bank: b.bank, prefer });
   if (!v || !t) return meaningCard(item, s, b);
-  return sayCard(item.id, v, itemCheck(t), 'Here is how Spanish says it.');
+  return sayCard(item.id, v, itemCheck(t, undefined, item.node), 'Here is how Spanish says it.');
 }
 
 function typeFormCard(item: PracticeItem, s: BankSentence): TypeCard | undefined {
@@ -752,7 +752,7 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   const { ask, what } = recombineAsk(key);
   return {
     type: 'type', key: item.id, ask, prompt: es(known.es), sub: en(`Now: ${it.en ?? ''}`.replace(/\s+$/, '')), answerLang: 'es', placeholder: 'Say it in Spanish',
-    check: itemCheck(it), retry: true, why: `${stopped(it.es)} Same sentence, new ${what}.`,
+    check: itemCheck(it, undefined, item.node), retry: true, why: `${stopped(it.es)} Same sentence, new ${what}.`,
   };
 }
 
@@ -791,7 +791,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       if (it) {
         return {
           type: 'type', key: item.id, ask: it.instruction, prompt: es(it.source), answerLang: 'es', placeholder: 'Rewrite it',
-          check: itemCheck(it), retry: true, why: transformWhy(it),
+          check: itemCheck(it, undefined, item.node), retry: true, why: transformWhy(it),
         };
       }
       return translateCard(item, s, b);

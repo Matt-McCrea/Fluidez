@@ -17,9 +17,13 @@ import type { Person } from '../../engine';
 import { conjugateBareCells } from '../../engine/conjugate';
 import { changePerson } from '../../exercises/reinflect';
 import {
-  DETERMINERS, EXPERIENCER, TIME_WORDS, compoundParticiple, detGender, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, isInfinitive, low,
+  DETERMINERS, EXPERIENCER, TIME_WORDS, compoundParticiple, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, isInfinitive, low,
   otherGender, parseClause, render, replaceCore, splitEnclitic, toToks, verbReadings, type Clause, type Tok,
 } from '../../exercises/spanish';
+import { clauseOrderVariants, movedPhraseVariants } from './reorder';
+import { changed, type Swap } from './swaps';
+import { agreeWithNoun, synonymVariants } from './synonyms';
+import { futureVariants, perfectoVariants } from './tense-swaps';
 
 export type Register = 'tú' | 'usted' | 'ustedes' | 'vosotros';
 
@@ -31,8 +35,8 @@ export interface Variant {
   register?: Register;
   /** The author's own form (sentence.es), as opposed to a derived one. */
   model?: boolean;
-  /** Set when the variant swaps one form of the card for another that is right too: a pass that says so. */
-  note?: string;
+  /** What this form changed in the card's own sentence. A pass through a swap that touches what the card teaches says so (R13). */
+  swaps?: Swap[];
 }
 
 /** Latin American word → Peninsular word. Nouns carry the Peninsular gender
@@ -58,26 +62,8 @@ export function peninsularVariants(es: string, extra: Readonly<Record<string, st
     const n = PENINSULAR_NOUNS[w] ?? (extraTo ? { es: extraTo } : undefined);
     if (n) {
       swaps.push((t) => {
-        let out = replaceCore(t, i, n.es);
-        if (n.gender) {
-          const det = low(out[i - 1]);
-          const dg = det ? detGender(det) : null;
-          if (det && dg && dg !== det) out = replaceCore(out, i - 1, dg);
-          const adj = low(out[i + 1]);
-          if (adj && /[oa]s?$/.test(adj) && !verbReadings(adj).length) {
-            const og = otherGender(adj);
-            if (og) out = replaceCore(out, i + 1, og);
-          }
-          // a predicate adjective agreeing with this noun as subject: "mi computadora es nueva"
-          const after = out.slice(i + 1).map(low);
-          const cop = after.findIndex((x) => verbReadings(x).some((a) => /^(ser|estar)$/.test(a.inf)));
-          if (cop >= 0) {
-            const k = i + 1 + cop + 1 + (after[cop + 1] === 'muy' ? 1 : 0);
-            const pa = low(out[k]);
-            if (pa && k === out.length - 1) { const og = otherGender(pa); if (og) out = replaceCore(out, k, og); }
-          }
-        }
-        return out;
+        const out = replaceCore(t, i, n.es);
+        return n.gender ? agreeWithNoun(out, i) : out;
       });
       return;
     }
@@ -99,7 +85,8 @@ export function peninsularVariants(es: string, extra: Readonly<Record<string, st
   const n = Math.min(swaps.length, 3);
   for (let mask = 1; mask < 1 << n; mask++) {
     let t: Tok[] | null = ts;
-    for (let k = 0; k < n && t; k++) if (mask & (1 << k)) t = swaps[k](t);
+    // last word first: a swap that joins two words (de la > del) moves only what comes after it
+    for (let k = n - 1; k >= 0 && t; k--) if (mask & (1 << k)) t = swaps[k](t);
     if (t) out.add(render(t));
   }
   return [...out];
@@ -116,7 +103,10 @@ function swapNonSubjectYou(ts: Tok[], to: 'usted' | 'ustedes', skip: Set<number>
     if (skip.has(i)) return;
     const w = low(tok);
     let reps: string[] | null = null;
-    if (w === 'te') reps = OBJ_YOU[to];
+    // "te sientas", "no te mueves": te in front of a tú form is the verb's own little word, and stays
+    if (w === 'te' && verbReadings(low(ts[i + 1])).some((a) => a.person === 'tú' && a.tense !== 'imperativo')) return;
+    // "te lo prometo" is "se lo prometo" to usted, never "le lo"
+    if (w === 'te') reps = /^(lo|la|los|las)$/.test(low(ts[i + 1])) ? ['se'] : OBJ_YOU[to];
     else if (w === 'ti') reps = [to];
     else if (w === 'contigo') reps = [`con ${to}`];
     else if (w === 'tu') reps = ['su'];
@@ -448,8 +438,40 @@ export function resultClauseVariants(es: string, en: string): string[] {
   return swaps.length ? swapSubsets(ts, swaps) : [];
 }
 
-/** habría and hubiera are both right in the result clause; the card teaches one. */
-const RESULT_CLAUSE_NOTE = 'Habría and hubiera both work in the result clause.';
+/** The verbs whose conditional and whose -ra form both soften a request: querría and quisiera, podría and pudiera, debería and debiera. */
+const SOFTENER = /^(querer|poder|deber)$/;
+/** "would", "could", "should": the English of a softened main verb; "would have" is a result clause. */
+const EN_SOFTENED = /\b(would|could|should|might)\b/;
+
+/** In a main clause, the conditional and the -ra form of querer, poder and deber are one softened verb: "Querría un café" and
+ *  "Quisiera un café". "I would like" also makes quiero one of them. A subordinate -ra is a subjunctive and does not swap. */
+export function softenerVariants(es: string, en: string): string[] {
+  const e = enWords(en).join(' ');
+  if (!EN_SOFTENED.test(e) || /\b(would|could|should|might) have\b|\b(if only|wish)\b/.test(e)) return [];
+  const ts = toToks(es);
+  const wouldLike = /\bi would like\b/.test(e);
+  const swaps: Array<readonly [number, string]> = [];
+  ts.forEach((tok, i) => {
+    // "¡Quién pudiera!" is a wish, and a clause that hangs on another is not a main verb
+    if (subordinate(ts, i) || low(ts[i - 1]) === 'quién') return;
+    const forms = new Set<string>();
+    for (const a of verbReadings(low(tok))) {
+      if (!SOFTENER.test(a.inf) || !['impsubj', 'condicional', 'presente'].includes(a.tense)) continue;
+      // quiero is only a softened verb as "I would like"
+      if (a.tense === 'presente' && !(wouldLike && a.inf === 'querer' && a.person === 'yo')) continue;
+      const v = verbByInf(a.inf);
+      if (!v) continue;
+      for (const to of ['impsubj', 'condicional', 'presente'] as const) {
+        if (to === a.tense || (to === 'presente' && !(wouldLike && a.inf === 'querer' && a.person === 'yo'))) continue;
+        const cell = conjugateBareCells(v, to)[PERSONS.indexOf(a.person as Person)];
+        if (cell && cell.form !== low(tok)) forms.add(cell.form);
+      }
+    }
+    for (const f of forms) swaps.push([i, f]);
+  });
+  // one verb changes at a time: a sentence has one softened verb
+  return [...new Set(swaps.map(([i, f]) => render(replaceCore(ts, i, f))))];
+}
 
 export interface ExpandOptions {
   /** Other Spanish the course accepts for this English (other bank sentences
@@ -471,15 +493,25 @@ export function expandAccepted(s: { es: string; en: string; accept?: readonly st
     seen.add(k);
     out.push(v);
   };
+  /** `from` with its sentence changed to `es`, by a swap of this kind. */
+  const grown = (from: Variant, es: string, kind: Swap['kind']): Variant => ({ ...from, es, model: false, swaps: [...(from.swaps ?? []), { kind, ...changed(from.es, es) }] });
   const base = [s.es, ...(s.accept ?? []), ...(opts.also ?? [])];
   base.forEach((es, i) => add({ es, ...(i === 0 ? { model: true } : {}) }));
-  for (const es of base) for (const v of registerVariants(es, s.en)) add(v);
-  for (const v of out.slice()) for (const g of genderVariants(v.es, s.en)) add({ ...v, es: g, model: false });
-  for (const v of out.slice()) for (const r of resultClauseVariants(v.es, s.en)) add({ ...v, es: r, model: false, note: RESULT_CLAUSE_NOTE });
-  for (const v of out.slice()) for (const r of subjunctiveVariants(v.es)) add({ ...v, es: r, model: false });
+  for (const es of base) for (const v of registerVariants(es, s.en)) add({ ...v, swaps: [{ kind: 'register', ...changed(es, v.es) }] });
+  for (const v of out.slice()) for (const g of genderVariants(v.es, s.en)) add(grown(v, g, 'gender'));
+  for (const v of out.slice()) for (const r of resultClauseVariants(v.es, s.en)) add(grown(v, r, 'result-clause'));
+  for (const v of out.slice()) for (const r of subjunctiveVariants(v.es)) add(grown(v, r, 'ra-se'));
+  for (const v of out.slice()) for (const r of softenerVariants(v.es, s.en)) add(grown(v, r, 'cond-ra'));
+  // where a clause or a phrase sits, and the other tense that says the same
+  for (const v of out.slice()) {
+    const ts = toToks(v.es);
+    for (const r of clauseOrderVariants(v.es, ts)) add(grown(v, r, 'clause-order'));
+    for (const r of movedPhraseVariants(v.es, ts)) add(grown(v, r, 'moved-phrase'));
+    for (const x of [...futureVariants(v.es, s.en), ...perfectoVariants(v.es, s.en), ...synonymVariants(v.es, s.en)]) add({ ...v, es: x.es, model: false, swaps: [...(v.swaps ?? []), x.swap] });
+  }
   for (const es of opts.peninsular ?? []) add({ es, variant: 'peninsular' });
   for (const v of out.slice()) {
-    for (const p of peninsularVariants(v.es, opts.peninsularWords)) add({ es: p, variant: 'peninsular', ...(v.register ? { register: v.register } : {}) });
+    for (const p of peninsularVariants(v.es, opts.peninsularWords)) add({ ...grown(v, p, 'peninsular'), variant: 'peninsular' });
   }
   return out;
 }

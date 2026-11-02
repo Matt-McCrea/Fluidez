@@ -112,11 +112,13 @@ describe('a pass through a swap says so', () => {
   test('so do the typed exercise items and the lesson\'s own your-turn card', () => {
     const item = { id: 'i', generator: 'translate', nodes: [], kind: 'translate', dir: 'en-es', prompt: en, answer: es, accept: [], en } as Parameters<typeof checkItem>[0];
     expect(checkItem(item, swapped)).toMatchObject({ pass: true, note: expect.stringMatching(/habría and hubiera/i) });
-    const card = scriptCard(
-      { op: 'yourTurn', index: 0, node: 'g:x', id: 'yt' } as Parameters<typeof scriptCard>[0],
-      { readAndPick: [], yourTurn: [{ prompt: `Translate: ${en}`, answer: es, accept: [], why: 'why' }] } as unknown as Parameters<typeof scriptCard>[1],
-    );
+    const script = { readAndPick: [], yourTurn: [{ prompt: `Translate: ${en}`, answer: es, accept: [], why: 'why' }] } as unknown as Parameters<typeof scriptCard>[1];
+    // the card of the lesson on the past unreal condition is about this very swap; a card about something else lets it pass plainly
+    const card = scriptCard({ op: 'yourTurn', index: 0, node: 'g:si-past-unreal', id: 'yt' } as Parameters<typeof scriptCard>[0], script);
     expect(card?.type === 'type' && card.check(swapped)).toMatchObject({ pass: true, note: expect.stringMatching(/habría and hubiera/i) });
+    const other = scriptCard({ op: 'yourTurn', index: 0, node: 'g:x', id: 'yt' } as Parameters<typeof scriptCard>[0], script);
+    expect(other?.type === 'type' && other.check(swapped)).toMatchObject({ pass: true });
+    expect(other?.type === 'type' && other.check(swapped).note).toBeUndefined();
   });
 
   test('the pass screen shows it, after the reason a lenient pass gives', () => {

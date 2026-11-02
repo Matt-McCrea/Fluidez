@@ -47,7 +47,7 @@ const cap = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
 /** Is a capitalised sentence-initial word capitalised only because it opens
  *  the sentence? Function words and verb forms are; a name is not. */
-function lowerable(core: string): boolean {
+export function lowerable(core: string): boolean {
   const first = core.split(' ')[0];
   const l = first.toLowerCase();
   return FUNCTION.has(l) || analyzeToken(l).length > 0 || /^[a-záéíóúñü]+$/.test(first);

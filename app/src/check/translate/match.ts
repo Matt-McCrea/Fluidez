@@ -16,11 +16,14 @@ import { CLITICS, enSubject, enWords, EXPERIENCER, verbReadings } from '../../ex
 import { advKey, canon, key, keyDeaccent, questionOrders, type Canon } from './canon';
 import { accentSlips, forgiven, mendSlips } from './accents';
 import { diagnose, distance, HINT_TEXT, type HintKind } from './hints';
+import { swapNote, type Swap } from './swaps';
 import { expandAccepted, type ExpandOptions, type Register, type Variant } from './variants';
 
 export interface MatchOptions extends ExpandOptions {
   /** 'lenient': an accents-only slip passes (still reported as near, with a note saying which word), unless the accent changes the word. */
   accents?: 'strict' | 'lenient';
+  /** The nodes the card is about. A pass through a swap that touches one says so; with none given, every swap of a tense or a mood does. */
+  targets?: readonly string[];
 }
 
 export interface TranslationResult {
@@ -34,6 +37,8 @@ export interface TranslationResult {
   variant?: 'peninsular';
   /** Matched through a swap the card did not teach but Spanish allows: a pass that says so. */
   note?: string;
+  /** What the form that matched swapped in the card's own sentence (empty for the sentence itself). */
+  swaps?: Swap[];
   /** The register of "you" the learner used, when the sentence has one. */
   register?: Register;
   /** The accepted form closest to the input: the one to show on reveal. */
@@ -173,9 +178,10 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
     if (sameToks && pronOk && advOk) {
       const slip = ci.accentSlips > 0 || encliticAccentSlip(ci, cv);
       if (slip) { nearHit ??= { v }; continue; }
+      const note = swapNote(v.swaps, opts.targets);
       return {
         pass: true, closest: v.es,
-        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}), ...(v.note ? { note: v.note } : {}),
+        ...(v.variant ? { variant: v.variant } : {}), ...(v.register ? { register: v.register } : {}), ...(note ? { note } : {}), ...(v.swaps?.length ? { swaps: v.swaps } : {}),
       };
     }
     if (sameToks && !pronOk && pronOkLoose && advOk) { nearHit ??= { v }; continue; }

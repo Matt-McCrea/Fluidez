@@ -247,7 +247,7 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
   if (!target) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;
   const card: Card = {
     type: 'type', key: `rr:${block.node}`, ask: SAY, prompt: { text: target.en, lang: 'en' },
-    answerLang: 'es', placeholder: 'Type it in Spanish', retry: false, check: sentenceCheck({ es: target.es, en: target.en, accept: [] }),
+    answerLang: 'es', placeholder: 'Type it in Spanish', retry: false, check: sentenceCheck({ es: target.es, en: target.en, accept: [] }, block.node),
     why: 'Here is the reminder.',
   };
   // it opens a drill and is not graded, but what the learner could still produce is an answer like any other

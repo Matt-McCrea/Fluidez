@@ -15,6 +15,7 @@
  * ========================================================================== */
 import { analyzeToken, deaccent, TENSES } from '../../engine';
 import type { TenseKey } from '../../engine';
+import { isKnownForm } from '../../engine/tagger/lexicon';
 import {
   ARTICLES, CLITICS, DEMONSTRATIVES, EXPERIENCER, gerundOf, isInfinitive, nounGender, participleOf, POSSESSIVES, PREPOSITIONS,
 } from '../../exercises/spanish';
@@ -228,6 +229,8 @@ export function isTypo(typed: string, want: string): boolean {
   if (y.length < 4 || x === y) return false;
   const known = (w: string) => SMALL.has(w) || readings(w).some((a) => a.target !== false);
   if (known(typed) && known(want)) return false;
+  // a word of the language two edits away is another word (momento for momentico), not a slip at it
+  if (isKnownForm(typed.toLowerCase()) && levenshtein(x, y) >= 2) return false;
   return levenshtein(x, y) <= (y.length >= 7 ? 2 : 1);
 }
 
