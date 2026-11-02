@@ -2,10 +2,14 @@
 import { VERBS, analyzeToken, conjugateCells, deaccent, personsFor, verbByInf, type TenseKey, type Verb } from '../../../engine';
 import { TENSE_ORDER } from './tenses';
 
-export interface VerbHit { tense: TenseKey; person: string; form: string }
+/** `se`: the form is the -se one (fuese), which the table shows beside the -ra one (fuera). */
+export interface VerbHit { tense: TenseKey; person: string; form: string; se?: true }
 export interface VerbMatch { verb: Verb; /** how it was found */ via: 'infinitive' | 'form' | 'start'; hits: VerbHit[] }
 
 const norm = (s: string) => s.trim().toLowerCase().replace(/\s+/g, ' ');
+
+/** The -se forms are another way to say the -ra tenses: they are looked up under them. */
+const SE_FORM: Readonly<Partial<Record<string, TenseKey>>> = { impsubjse: 'impsubj', pluscsubjse: 'pluscsubj' };
 
 /** All verbs a query could mean, best first. Never throws. */
 export function findVerbs(query: string, limit = 12): VerbMatch[] {
@@ -23,9 +27,10 @@ export function findVerbs(query: string, limit = 12): VerbMatch[] {
     try { analyses = analyzeToken(q); } catch { analyses = []; }
     const by = new Map<string, VerbHit[]>();
     for (const a of analyses) {
-      if (!(TENSE_ORDER as readonly string[]).includes(a.tense)) continue;
+      const tense = SE_FORM[a.tense] ?? a.tense;
+      if (!(TENSE_ORDER as readonly string[]).includes(tense)) continue;
       const hits = by.get(a.inf) ?? [];
-      hits.push({ tense: a.tense, person: String(a.person), form: a.form });
+      hits.push({ tense, person: String(a.person), form: a.form, ...(tense !== a.tense ? { se: true as const } : {}) });
       by.set(a.inf, hits);
     }
     for (const [inf, hits] of by) {
@@ -60,4 +65,9 @@ export function shownPersons(tense: TenseKey): Array<{ label: string; idx: numbe
 
 export function cellsFor(inf: string, tense: TenseKey): string[] {
   try { return conjugateCells(inf, tense).map((c) => c.form); } catch { return []; }
+}
+
+/** The -se form that goes beside a tense's -ra form, where there is one (fuera / fuese). */
+export function seCellsFor(inf: string, tense: TenseKey): string[] {
+  return tense === 'impsubj' ? cellsFor(inf, 'impsubjse') : tense === 'pluscsubj' ? cellsFor(inf, 'pluscsubjse') : [];
 }

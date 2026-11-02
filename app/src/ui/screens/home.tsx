@@ -9,10 +9,47 @@ import { goalLine } from '../session/goal';
 import type { PracticeSpec } from '../session/practice-spec';
 import { verbsMet } from '../session/freeplay';
 import { weakSpots } from '../../learner/weak';
-import { isResumable, streakStatus, type SavedSession } from '../store/ui';
+import { isResumable, streakStatus, type CanDoMark, type CheckpointResult, type SavedSession } from '../store/ui';
+import { canDoGroups } from './progress';
 
 /** "Only five minutes?": the minimum tier under a five minute cap. */
 export interface QuickStart { tier: 'minimum'; cap: number; quick: true }
+
+/** The card that stands in for the week card once the last unit is done. Nothing in it claims what the learner can do. */
+export const COURSE_END = {
+  title: "That's the end of the course",
+  body: "There are no more new lessons. Each day is now a mix of what's due, so the Spanish you've met keeps coming back.",
+  next: 'A check shows what has stuck. The chapters you have read are in Story.',
+} as const;
+
+/**
+ * The first line of a week, when the path has just left a week the learner worked through: which
+ * one, and where its goal stands. Not shown for the first week, nor for weeks placement jumped over.
+ */
+export function finishedWeekLine(
+  units: ReadonlyArray<{ id: string; title: string; canDo: string }>, path: { unit: number; day: number }, placedAt: number,
+  marks: readonly CanDoMark[], checkpoints: readonly CheckpointResult[],
+): string | undefined {
+  const i = path.unit - 1;
+  const prev = units[i];
+  if (!prev || path.day !== 0 || i < placedAt) return undefined;
+  const g = canDoGroups(units, path.unit, placedAt, marks, checkpoints);
+  const row = [...g.earned, ...g.getting, ...g.unchecked].find((r) => r.id === prev.id);
+  const where = !row ? ''
+    : row.state === 'earned' ? (row.how === 'checked' ? ' A check went well.' : ' You said you can do it.')
+      : row.state === 'unchecked' ? ' Not checked yet: a check on Progress shows where you are.'
+        : " You're still working on it.";
+  return `You finished "${undash(prev.title)}".${where}`;
+}
+
+/**
+ * What The story so far says before any chapter is read. Only a learner who started at the
+ * beginning is told the story begins at the café door; a placed learner is told nothing, since
+ * the first chapter they read is not the first one.
+ */
+export function storyBeforeTheFirstChapter(path: { unit: number }, placedAt: number | undefined): string | undefined {
+  return path.unit === 0 && !placedAt ? 'The story starts in Bogotá, at the door of a café. You\'ll read the first chapter soon.' : undefined;
+}
 
 export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?: () => void; onLook?: (node: string) => void; onStart: (mode: Mode, o?: SavedSession | QuickStart) => void; onStory: () => void; onPractise: (spec?: PracticeSpec) => void }) {
   const app = useApp();
@@ -52,6 +89,10 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
   const yesterdayNode = prev?.type === 'introduce' ? prev.focus.find((f) => f.startsWith('g:')) : undefined;
   const yesterday = yesterdayNode ? { node: yesterdayNode, title: bundle.title(yesterdayNode) } : undefined;
   const finished = ui.path.unit >= bundle.course.units.length;
+  const lastDay = !!unit && ui.path.day === unit.days.length - 1;
+  const placedAt = ui.state.placedAt ?? 0;
+  const justFinished = finishedWeekLine(bundle.course.units, ui.path, placedAt, ui.state.canDos, ui.state.checkpoints);
+  const beforeChapters = storyBeforeTheFirstChapter(ui.path, placedAt);
 
   return (
     <main class="screen" id="main">
@@ -106,10 +147,12 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
 
       {unit && !finished ? (
         <section class="card" aria-labelledby="week-title">
+          {justFinished ? <p class="small" data-week-done>{justFinished}</p> : null}
           <p class="ask" id="week-title">This week: {undash(unit.title)}</p>
           <p>{undash(unit.canDo)}</p>
           <Bar value={ui.path.day} of={unit.days.length} label="Progress through this week" />
           <p class="small">{ui.path.day} of {unit.days.length} lessons</p>
+          {lastDay && !doneToday ? <p class="small" data-week-last>Today is the last lesson of this week.</p> : null}
           <ol class="weekmap" aria-label="The days this week">
             {map.map((d, i) => (
               <li key={i} data-day={d.state}>
@@ -120,18 +163,29 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
           </ol>
           {yesterday && onLook ? <button class="btn link small" data-yesterday onClick={() => onLook(yesterday.node)}>{doneToday ? "Today's lesson" : "Yesterday's lesson"}: {undash(yesterday.title)}</button> : null}
         </section>
-      ) : finished ? <section class="card"><p>You've finished the course. Reviews keep it all fresh.</p></section> : null}
+      ) : finished ? (
+        <section class="card" aria-labelledby="end-title" data-course-end>
+          <p class="ask" id="end-title">{COURSE_END.title}</p>
+          <p>{COURSE_END.body}</p>
+          <p class="small">{COURSE_END.next}</p>
+          <div class="actions">
+            <button class="btn primary" data-end-check onClick={() => onPractise({ kind: 'checkpoint' })}>Take a check (about 10 minutes)</button>
+          </div>
+        </section>
+      ) : null}
 
-      <section class="card" aria-labelledby="story-title">
-        <p class="ask" id="story-title">The story so far</p>
-        {lastFull ? (
-          <>
-            <p>{chaptersRead.length} {chaptersRead.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{undash(lastFull.title)}</em></p>
-            <p class="hook">{undash(lastFull.hook)}</p>
-            <button class="btn quiet" onClick={onStory}>Read again</button>
-          </>
-        ) : <p>Tomás has just landed in Bogotá. You'll read the first chapter soon.</p>}
-      </section>
+      {lastFull || beforeChapters ? (
+        <section class="card" aria-labelledby="story-title">
+          <p class="ask" id="story-title">The story so far</p>
+          {lastFull ? (
+            <>
+              <p>{chaptersRead.length} {chaptersRead.length === 1 ? 'chapter' : 'chapters'} read. Last: <em>{undash(lastFull.title)}</em></p>
+              <p class="hook">{undash(lastFull.hook)}</p>
+              <button class="btn quiet" onClick={onStory}>Read again</button>
+            </>
+          ) : <p>{beforeChapters}</p>}
+        </section>
+      ) : null}
     </main>
   );
 }

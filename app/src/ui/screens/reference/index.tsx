@@ -8,7 +8,7 @@ import type { PracticeSpec } from '../../session/practice-spec';
 import { Es, Heading, Paras, Rich, undash } from '../../components/text';
 import { useApp } from '../../context';
 import { exampleSentences, groupByTopic, grammarEntries, searchEntries, STRENGTH_TEXT, unmetWordEntries, wordEntries, type GrammarEntry, type WordEntry } from './model';
-import { cellsFor, findVerbs, shownPersons, type VerbMatch } from './verbs';
+import { cellsFor, findVerbs, seCellsFor, shownPersons, type VerbMatch } from './verbs';
 import { TENSE_ORDER, TENSE_PLAIN, taughtTenses } from './tenses';
 
 type Section = 'verbs' | 'grammar' | 'words';
@@ -108,7 +108,7 @@ function VerbsView({ q, verbs, tenses, onPractise, onPick }: {
         <h3><Es>{inf}</Es></h3>
         <p>{undash(en)}</p>
         {cur.via === 'form' && cur.hits.length ? (
-          <p class="small"><Es>{q.trim().toLowerCase()}</Es> is {cur.hits.map((h) => `${TENSE_PLAIN[h.tense].toLowerCase()}, ${h.person.replace('él/ella', 'él / ella / usted').replace('ellos', 'ellos / ustedes')}`).join('; or ')}.</p>
+          <p class="small"><Es>{q.trim().toLowerCase()}</Es> is {cur.hits.map((h) => `${TENSE_PLAIN[h.tense].toLowerCase()}${h.se ? ' (the -se form)' : ''}, ${h.person.replace('él/ella', 'él / ella / usted').replace('ellos', 'ellos / ustedes')}`).join('; or ')}.</p>
         ) : null}
         <button class="btn primary" onClick={() => onPractise({ kind: 'conjugate', verbs: [inf], tenses: tenses.length ? tenses : ['presente'] })}>Practise this verb</button>
       </div>
@@ -125,6 +125,7 @@ function VerbsView({ q, verbs, tenses, onPractise, onPick }: {
 
 function TenseTable({ inf, tense, hits }: { inf: string; tense: TenseKey; hits: VerbMatch['hits'] }) {
   const forms = cellsFor(inf, tense);
+  const se = seCellsFor(inf, tense);
   if (!forms.length) return null;
   return (
     <table class="forms">
@@ -135,7 +136,7 @@ function TenseTable({ inf, tense, hits }: { inf: string; tense: TenseKey; hits: 
           return (
             <tr key={p.key} class={hit ? 'hit' : undefined} aria-current={hit ? 'true' : undefined}>
               <th scope="row">{p.label}</th>
-              <td><Es>{forms[p.idx] ?? ''}</Es></td>
+              <td><Es>{forms[p.idx] ?? ''}</Es>{se[p.idx] && se[p.idx] !== forms[p.idx] ? <> or <Es>{se[p.idx]}</Es></> : null}</td>
             </tr>
           );
         })}

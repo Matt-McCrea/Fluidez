@@ -5,14 +5,68 @@ import { Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import { backlogMinutes, delayedAccuracy7d, productionShareWeek, reviewBudgetMinutes, wordsThisWeek } from '../../learner/metrics';
 import { bandAt } from '../../compiler';
-import { streakStatus } from '../store/ui';
+import { streakStatus, type CanDoMark, type CheckpointResult } from '../store/ui';
 import type { PracticeSpec } from '../session/practice-spec';
+
+export type CanDoState = 'earned' | 'mostly' | 'notyet' | 'unchecked' | 'skipped';
+export interface CanDoRow { id: string; canDo: string; state: CanDoState; /** what the state rests on: the learner's word, or a check */ how?: 'said' | 'checked' }
+
+/** A check counts when at least this share of a unit's items came right first time. */
+const CHECK_PASS = 0.7;
+
+/**
+ * Where each goal stands. A goal is ticked on evidence: the learner said yes, or a check of that
+ * unit went well, whichever came last. A unit the path has passed with neither is covered, not
+ * checked; one that placement jumped over is skipped. Only finished units, and units with a
+ * mark or a check, are listed.
+ */
+export function canDoGroups(
+  units: ReadonlyArray<{ id: string; canDo: string }>, finished: number, placedAt: number,
+  marks: readonly CanDoMark[], checkpoints: readonly CheckpointResult[],
+): Record<'earned' | 'getting' | 'unchecked' | 'skipped', CanDoRow[]> {
+  const said = new Map<string, CanDoMark>();
+  for (const m of marks) if (!said.has(m.unit) || m.at >= said.get(m.unit)!.at) said.set(m.unit, m);
+  const checked = new Map<string, { at: number; right: number; total: number }>();
+  for (const c of checkpoints) {
+    for (const [unit, r] of Object.entries(c.byUnit)) {
+      if (r.total > 0 && (!checked.has(unit) || c.at >= checked.get(unit)!.at)) checked.set(unit, { at: c.at, ...r });
+    }
+  }
+  const row = (id: string, canDo: string, index: number): CanDoRow | undefined => {
+    const m = said.get(id), c = checked.get(id);
+    if (m && (!c || m.at > c.at)) return { id, canDo, state: m.feel === 'yes' ? 'earned' : m.feel, how: 'said' };
+    if (c) return { id, canDo, state: c.right / c.total >= CHECK_PASS ? 'earned' : 'notyet', how: 'checked' };
+    if (index >= finished) return undefined;
+    return { id, canDo, state: index < placedAt ? 'skipped' : 'unchecked' };
+  };
+  const rows = units.map((u, i) => row(u.id, u.canDo, i));
+  // a mark for a unit the course no longer has still counts, under the words the learner saw
+  for (const m of said.values()) if (!units.some((u) => u.id === m.unit)) rows.push(row(m.unit, m.canDo, Infinity));
+  const some = rows.filter((r): r is CanDoRow => !!r);
+  return {
+    earned: some.filter((r) => r.state === 'earned'),
+    getting: some.filter((r) => r.state === 'mostly' || r.state === 'notyet'),
+    unchecked: some.filter((r) => r.state === 'unchecked'),
+    skipped: some.filter((r) => r.state === 'skipped'),
+  };
+}
+
+/**
+ * Where the learner is in the course's five stages ("Stage 2 of 5"). The stages are the course's
+ * own; a letter from the CEFR scale would claim a level the app has no evidence the learner has.
+ */
+export function stageLabel(units: ReadonlyArray<{ band?: string }>, band: string): string | undefined {
+  const stages = [...new Set(units.map((u) => u.band).filter((b): b is string => !!b))];
+  const i = stages.indexOf(band);
+  return i < 0 ? undefined : `Stage ${i + 1} of ${stages.length}`;
+}
 
 export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const { learner, ui, bundle, now } = useApp();
   const units = bundle.course.units;
   const done = units.slice(0, Math.min(ui.path.unit, units.length));
-  const marks = new Map(ui.state.canDos.map((m) => [m.unit, m]));
+  const goals = canDoGroups(units, done.length, ui.state.placedAt ?? 0, ui.state.canDos, ui.state.checkpoints);
+  const next = units[ui.path.unit];
   const words = learner.nodes().filter((id: NodeId) => {
     const k = bundle.node(id)?.kind ?? (id.startsWith('l:') ? 'lexeme' : id.startsWith('c:') ? 'chunk' : '');
     return k === 'lexeme' || k === 'chunk';
@@ -25,6 +79,7 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
   const events = learner.events();
   const band = bandAt(bundle.course, ui.path);
   const sameBand = units.filter((u) => u.band === band);
+  const stage = stageLabel(units, band);
   const weekNo = Math.max(1, units.slice(0, ui.path.unit).filter((u) => u.band === band).length + 1);
   const delayed = delayedAccuracy7d(events, learner, at);
   const made = productionShareWeek(events, at);
@@ -45,7 +100,7 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
     <main class="screen" id="main">
       <Heading title="Progress" />
       <section class="card" data-report>
-        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{band}, week {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
+        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{stage ? `${stage}, week` : 'Week'} {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
         <p data-delayed>Things from last week you still have: {delayed.n >= 10 && delayed.value !== undefined ? pct(delayed.value) : 'Not enough yet'}</p>
         <p data-produced>Spanish you produced this week: {made.n >= 10 && made.value !== undefined ? `${pct(made.value)} of practice` : 'Not enough yet'}</p>
         <p data-waiting>Waiting for you: {waitText}{wait >= 1 ? (wait <= budget ? ', under today\'s budget' : ', more than today\'s budget') : ''}</p>
@@ -61,16 +116,34 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
         </div>
         {done.length ? null : <p class="small">Finish your first week first</p>}
       </section>
-      <section class="card">
+      <section class="card" data-cando>
         <p class="ask">You can now…</p>
-        {done.length || marks.size ? (
+        {goals.earned.length ? (
           <ul class="cando">
-            {done.map((u) => <li key={u.id}>✓ {undash(u.canDo)}</li>)}
-            {[...marks.values()].filter((m) => !done.some((u) => u.id === m.unit)).map((m) => (
-              <li key={m.unit}>{m.feel === 'yes' ? '✓' : '…'} {undash(m.canDo)} <span class="small">({m.feel === 'yes' ? 'you said yes' : m.feel === 'mostly' ? 'mostly' : 'getting there'})</span></li>
-            ))}
+            {goals.earned.map((r) => <li key={r.id}>✓ {undash(r.canDo)} <span class="small">({r.how === 'checked' ? 'a check went well' : 'you said yes'})</span></li>)}
           </ul>
-        ) : <p class="small">Finish your first week to tick off your first goal.</p>}
+        ) : <p class="small">Nothing yet. A goal is ticked when you say you can do it, or when a check shows it.</p>}
+        {goals.getting.length ? (
+          <>
+            <p class="ask">Still working on</p>
+            <ul class="cando" data-getting>
+              {goals.getting.map((r) => <li key={r.id}>{undash(r.canDo)} <span class="small">({r.how === 'checked' ? 'the last check was shaky' : r.state === 'mostly' ? 'you said mostly' : 'you said not yet'})</span></li>)}
+            </ul>
+          </>
+        ) : null}
+        {next ? <p class="small" data-next-goal>Next: {undash(next.canDo)}</p> : null}
+        {goals.unchecked.length ? (
+          <details class="later" data-unchecked>
+            <summary>Covered, not yet checked ({goals.unchecked.length})</summary>
+            <ul class="cando">{goals.unchecked.map((r) => <li key={r.id}>{undash(r.canDo)}</li>)}</ul>
+          </details>
+        ) : null}
+        {goals.skipped.length ? (
+          <details class="later" data-skipped>
+            <summary>Skipped at placement ({goals.skipped.length})</summary>
+            <ul class="cando">{goals.skipped.map((r) => <li key={r.id}>{undash(r.canDo)}</li>)}</ul>
+          </details>
+        ) : null}
       </section>
       <dl class="stats">
         <div><dt>Words and phrases that have stuck</dt><dd data-stat="learned">{learned}</dd></div>

@@ -3,6 +3,7 @@ import type { GraphNode, NodeId } from '../../../content/schema';
 import type { Bundle } from '../../data/bundle';
 import { stripArticle } from '../../data/bundle';
 import type { SavedWord } from '../../store/ui';
+import { standardNames } from './names';
 import { searchEntries, type Searchable } from './search';
 import { TOPICS, TOPIC_LABEL, topicOf, type TopicId } from './topics';
 
@@ -57,6 +58,7 @@ export function grammarEntries(bundle: Bundle, met: Set<string>): GrammarEntry[]
       met: met.has(n.id),
       priority: n.priority,
       week: weekOf(bundle, n.id),
+      names: standardNames(n),
       es: [n.es ?? '', ...(n.forms ?? []).map((f) => f.es)].filter(Boolean),
       en: [n.en ?? '', ...(n.forms ?? []).map((f) => f.en)].filter(Boolean),
       extra: [...(label?.words ?? []), TOPIC_LABEL[topic]],
