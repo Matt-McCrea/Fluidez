@@ -253,7 +253,9 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
   }
 
   const contrasts = new Map<NodeId, ContrastRef[]>();
+  const typedContrasts = new Set<NodeId>();
   for (const f of src.contrasts ?? []) {
+    if (f.decides === 'discourse' || f.decides === 'synonym') typedContrasts.add(f.node);
     if (!f.items.length || contrasts.has(f.node)) continue;
     contrasts.set(f.node, f.items.map((i) => ({ id: i.id, node: i.node, side: i.side, rung: i.rung, requires: i.requires })));
   }
@@ -262,7 +264,7 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
     sentences, byTarget, byRequire, byUnit,
     chapters, chapterById: new Map(chapters.map((c) => [c.id, c])), ...(story ? { story } : {}),
     ...(src.lacking?.length ? { lacking: new Set(src.lacking) } : {}),
-    scenes, scenesByUnit, tasks, tasksByUnit, scripts, contrasts,
+    scenes, scenesByUnit, tasks, tasksByUnit, scripts, contrasts, typedContrasts,
   };
 }
 

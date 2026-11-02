@@ -129,6 +129,8 @@ export interface ContentIndex {
   scripts: Map<NodeId, ScriptRef>;
   /** contrast node -> its items in the contrast's file, in file order (absent: the contrast has none, and is reviewed with its script) */
   contrasts: Map<NodeId, ContrastRef[]>;
+  /** the contrasts a choice cannot fairly test (earlier text or usage decides them, audit R10): their reviews are typed, their script's too */
+  typedContrasts: Set<NodeId>;
 }
 
 export type Mode = 'next' | 'another';

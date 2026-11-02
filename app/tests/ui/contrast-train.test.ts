@@ -87,6 +87,16 @@ describe('Train it on a contrast the learner has reached', () => {
     expect(new Set(await shape('x:perdon-lo-siento'))).toEqual(new Set(['type']));
   }, 120_000);
 
+  it('a near-synonym with no items of its own is typed throughout too: it is the file that says so, and every contrast has one', async () => {
+    for (const x of ['x:molesta-vs-no-soporto', 'x:orden-escalera', 'x:vista-gorda-pasar-por-alto']) {
+      expect(bundle.contrastItems(x), x).toHaveLength(0);
+      expect(bundle.contrasts.get(x)?.decides, x).toBe('synonym');
+      const cards = play(run(await learnerAt(unitOf(x) + 1), [x]));
+      expect(cards.length, x).toBe(CONTRAST_RUN);
+      expect(new Set(cards.map((c) => c.type)), x).toEqual(new Set(['type']));
+    }
+  }, 120_000);
+
   it('asks what has not been asked first, and goes round the items over runs', async () => {
     const x = 'x:ser-estar-adj';
     const learner = await learnerAt(unitOf(x) + 1);
@@ -104,6 +114,7 @@ describe('Train it on a contrast the learner has reached', () => {
     const x = 'x:por-para';
     const learner = await learnerAt(unitOf(x) + 1);
     const before = learner.events().length;
+    const due = learner.card(x, 'receptive')?.due;
     const fp = run(learner, [x]);
     const c = fp.next()!;
     expect(c).toBeDefined();
@@ -112,7 +123,7 @@ describe('Train it on a contrast the learner has reached', () => {
     expect(ev.map((e) => [e.node, e.op, e.scored])).toEqual([[x, 'train', 'exposure']]);
     expect(ev[0].tries).toBe(2);
     // it is not a scheduled review: the schedule is as it was
-    expect(learner.card(x, 'receptive')?.due).toBe(learner.card(x, 'receptive')?.due);
+    expect(learner.card(x, 'receptive')?.due).toBe(due);
   }, 120_000);
 
   it('tops the run up from the contrast\'s script where its items run short, so a contrast with a few items still has a run', async () => {

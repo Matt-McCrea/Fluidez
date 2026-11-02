@@ -623,7 +623,8 @@ function contrastReviewCard(item: ReviewItem, b: Bundle): Card | undefined {
 function scriptReviewCard(item: ReviewItem, b: Bundle): Card | undefined {
   const script = b.scripts.get(item.node);
   if (!script) return undefined;
-  const op = item.script?.op ?? (item.direction === 'receptive' ? 'readAndPick' : 'yourTurn');
+  // aspect and near-synonyms are typed whichever way round, here as on their own items
+  const op = item.script?.op ?? (item.direction === 'receptive' && !b.index.typedContrasts.has(item.node) ? 'readAndPick' : 'yourTurn');
   const count = op === 'readAndPick' ? script.readAndPick.length : script.yourTurn.length;
   const index = item.script?.index ?? (count ? hash32(item.id) % count : 0);
   const card = count ? scriptCard({ op, id: item.id, node: item.node, index, scoring: item.scoring, credit: item.credit }, script) : undefined;

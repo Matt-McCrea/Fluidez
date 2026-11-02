@@ -3,7 +3,7 @@
 // items are none the learner can be shown is reviewed with its script, as before.
 import { describe, expect, it } from 'vitest';
 import { admissible, buildContentIndex, buildCourse, compileSession, initialPath, knownSet, type SessionPlan } from '../../src/compiler';
-import type { ContrastFile, ContrastItem } from '../../src/content/schema';
+import type { ContrastDecides, ContrastFile, ContrastItem } from '../../src/content/schema';
 import { Learner } from '../../src/learner';
 import { syntheticCorpus } from '../../tools/sim/synthetic';
 import { lightCourse } from './helpers';
@@ -16,12 +16,12 @@ const mk = (node: string, k: number, requires: string[] = []): ContrastItem => (
 });
 
 /** A synthetic course whose first contrast has the items given, and a learner who has both cards of it and lets them fall due. */
-function dueContrast(items: (node: string) => ContrastItem[], cards: 'both' | 'receptive' = 'both') {
+function dueContrast(items: (node: string) => ContrastItem[], cards: 'both' | 'receptive' = 'both', decides: ContrastDecides = 'local') {
   const c = syntheticCorpus({ seed: 2, maxUnits: 6 });
   const course = buildCourse(c.units, c.nodes);
   const x = [...course.nodes.values()].find((n) => n.kind === 'contrast')!.id;
-  const file: ContrastFile = { node: x, decides: 'local', items: items(x) };
-  const content = buildContentIndex({ ...c.source, contrasts: file.items.length ? [file] : [] }, course);
+  const file: ContrastFile = { node: x, decides, items: items(x) };
+  const content = buildContentIndex({ ...c.source, contrasts: file.items.length || decides !== 'local' ? [file] : [] }, course);
   let t = T0;
   const L = Learner.fresh({ now: () => t });
   L.seedKnown(x, {
@@ -63,6 +63,14 @@ describe('a due contrast is reviewed with one of its own items', () => {
     }
     for (let k = 1; k < seen.length; k++) expect(seen[k], `session ${k} asks the item the one before did`).not.toBe(seen[k - 1]);
     expect(new Set(seen).size).toBe(6);
+  });
+
+  it('a contrast a choice cannot test falls back on its script\'s typed turns, and never on a pick: its file says so even with no items in it', () => {
+    for (const decides of ['discourse', 'synonym'] as const) {
+      expect(dueContrast(() => [], 'receptive', decides).warm().item!.script?.op, decides).toBe('yourTurn');
+      expect(dueContrast((n) => [mk(n, 0, ['g:not-taught-yet'])], 'receptive', decides).warm().item!.script?.op, decides).toBe('yourTurn');
+    }
+    expect(dueContrast((n) => [mk(n, 0, ['g:not-taught-yet'])], 'receptive', 'local').warm().item!.script?.op).toBe('readAndPick');
   });
 
   it('the same session, the same plan: the item is a function of the contrast and the session number', () => {

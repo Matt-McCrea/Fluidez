@@ -665,7 +665,7 @@ class Compiler {
 
   /**
    * The script item a due contrast is reviewed with (as is any other node that has no sentence left and no pair to ask about):
-   * read-and-pick for a receptive card, your-turn for a productive one (the other when the script has none of that sort), and the
+   * read-and-pick for a receptive card, your-turn for a productive one and for a contrast a choice cannot test (the other when the script has none of that sort), and the
    * session number moves it on, so two sessions in a row never serve the same one.
    */
   private scriptReview(node: NodeId, direction: Direction): ReviewItem['script'] {
@@ -674,7 +674,8 @@ class Compiler {
     if (kindOf(node, this.course.nodes) !== 'contrast' && (!n || alignedPairs(n).length)) return undefined;
     const sc = this.content.scripts.get(node);
     if (!sc) return undefined;
-    const want = direction === 'receptive' ? 'readAndPick' : 'yourTurn';
+    // aspect and near-synonyms are typed whichever way round, here as on their own items
+    const want = direction === 'receptive' && !this.content.typedContrasts.has(node) ? 'readAndPick' : 'yourTurn';
     const op = sc[want] ? want : want === 'readAndPick' ? 'yourTurn' : 'readAndPick';
     return sc[op] ? { op, index: (hash32(node) + this.sessionIndex) % sc[op] } : undefined;
   }

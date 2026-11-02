@@ -91,6 +91,13 @@ describe('the review of a contrast with items of its own (F3)', () => {
     expect((gone as { prompt: { text: string } }).prompt.text).toBe(b.scripts.get('x:por-para')!.readAndPick[2].es);
   });
 
+  it('where it names none, a contrast a choice cannot test is still typed: no two buttons for aspect or a near-synonym, whichever way round', () => {
+    const typed = [...b.contrasts.values()].filter((f) => f.decides === 'discourse' || f.decides === 'synonym');
+    expect(typed).toHaveLength(37);
+    for (const f of typed) expect(reviewCard(review(f.node, 'receptive'), b).type, f.node).toBe('type');
+    expect(reviewCard(review('x:por-para', 'receptive'), b).type).toBe('mcq');
+  });
+
   it('is never a read card, for any contrast with items, either way round', () => {
     for (const n of contrasts()) {
       for (const direction of ['receptive', 'productive'] as const) {
