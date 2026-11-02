@@ -154,9 +154,14 @@
       ],
       "require": [
         {
-          "type": "subjunctiveAfter",
-          "trigger": "pena que",
-          "within": 3,
+          "type": "regex",
+          "pattern": "\\b(me da (mucha )?(pena|tristeza|lástima)|qu[eé] (pena|lástima)|siento( mucho)?|lamento) que\\b",
+          "flags": "i",
+          "label": "me da pena que, siento que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "presubj",
           "label": "after me da pena que, the verb changes: estés, duermas, trabajes"
         }
       ],
@@ -197,9 +202,9 @@
       "require": [
         {
           "type": "regex",
-          "pattern": "ya verás que todo sale bien",
+          "pattern": "(ya ver[aá]s.*\\bbien\\b|\\bbien\\b.*ya ver[aá]s)",
           "flags": "i",
-          "label": "use the chunk: ya verás que todo sale bien"
+          "label": "say it will be fine: ya verás que todo sale bien"
         }
       ],
       "focus": "c:ya-veras-que-todo-sale-bien",
@@ -217,10 +222,15 @@
       ],
       "require": [
         {
-          "type": "subjunctiveAfter",
-          "trigger": "alegro de que",
-          "within": 3,
-          "label": "after me alegro de que, the verb changes: estés, hablemos, seas"
+          "type": "regex",
+          "pattern": "\\bme alegr(a|o de) que\\b",
+          "flags": "i",
+          "label": "me alegra que or me alegro de que"
+        },
+        {
+          "type": "anyVerbInTense",
+          "tense": "presubj",
+          "label": "after me alegra que, the verb changes: estés, hablemos, seas"
         }
       ],
       "focus": "p:alegrarse-de-que",

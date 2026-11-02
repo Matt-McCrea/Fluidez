@@ -20375,12 +20375,12 @@
   "band": "B2",
   "priority": 466,
   "title": "Not repeating the noun in writing: el animal, el premio, un hombre tan discreto",
-  "es": "Juan llevó a su perro al veterinario: el animal tenía una pata rota.",
-  "en": "Juan took his dog to the vet: the animal had a broken leg.",
+  "es": "Juan llevó a su perro al veterinario; el animal tenía una pata rota.",
+  "en": "Juan took his dog to the vet; the animal had a broken leg.",
   "forms": [
    {
-    "es": "Juan llevó a su perro al veterinario: el animal tenía una pata rota.",
-    "en": "Juan took his dog to the vet: the animal had a broken leg."
+    "es": "Juan llevó a su perro al veterinario; el animal tenía una pata rota.",
+    "en": "Juan took his dog to the vet; the animal had a broken leg."
    },
    {
     "es": "Isidro nos contó todo; no lo esperábamos de un hombre tan discreto.",

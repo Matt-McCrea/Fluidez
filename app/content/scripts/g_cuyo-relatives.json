@@ -37,18 +37,18 @@
     {
       "es": "Conozco al señor cuyas hijas viven en Cali.",
       "options": [
-        "the man whose daughter lives in Cali",
-        "the man whose daughters live in Cali",
-        "the man who lives with his daughters in Cali"
+        "I know the man whose daughter lives in Cali.",
+        "I know the man whose daughters live in Cali.",
+        "I know the man who lives with his daughters in Cali."
       ],
       "answer": 1
     },
     {
       "es": "Es una empresa cuyo dueño vive en Miami.",
       "options": [
-        "a company whose owner lives in Miami",
-        "a company whose owners live in Miami",
-        "a company that lives in Miami"
+        "It's a company whose owner lives in Miami.",
+        "It's a company whose owners live in Miami.",
+        "It's a company that lives in Miami."
       ],
       "answer": 0
     },
@@ -64,9 +64,9 @@
     {
       "es": "Es un barrio cuyos edificios son muy viejos.",
       "options": [
-        "a neighbourhood whose building is very old",
-        "a neighbourhood whose buildings are very old",
-        "a neighbourhood with a very old owner"
+        "It's a neighbourhood whose building is very old.",
+        "It's a neighbourhood whose buildings are very old.",
+        "It's a neighbourhood with a very old owner."
       ],
       "answer": 1
     },
@@ -82,9 +82,9 @@
     {
       "es": "Es una oficina cuyas reglas son claras.",
       "options": [
-        "an office whose rule is clear",
-        "an office whose rules are clear",
-        "an office that makes clear rules"
+        "It's an office whose rule is clear.",
+        "It's an office whose rules are clear.",
+        "It's an office that makes clear rules."
       ],
       "answer": 1
     },
