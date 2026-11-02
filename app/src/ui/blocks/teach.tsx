@@ -240,7 +240,8 @@ function TeachPhase({ phase, script, block, run, onDone, at, start }: { phase: P
 export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) {
   const script = run.bundle.scripts.get(block.node);
   const node = run.bundle.node(block.node);
-  const [stage, setStage] = useState<'try' | 'remind'>('try');
+  // a point the learner only recognises (voseo, the future subjunctive) is not asked for: it goes straight to the reminder
+  const [stage, setStage] = useState<'try' | 'remind'>(run.learner?.node(block.node)?.productiveTrack === false ? 'remind' : 'try');
   const h = blockHeading(block, run.bundle);
   const target = script ? { es: script.hook.es, en: script.hook.en } : node?.es && node.en ? { es: node.es.split(/\s+\/\s+/)[0], en: node.en.split(/\s+\/\s+/)[0] } : null;
   if (!target) return <><Heading {...h} /><div class="actions"><Continue onClick={onDone} /></div></>;

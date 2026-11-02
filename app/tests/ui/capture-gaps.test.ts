@@ -49,6 +49,8 @@ function player(component: (p: any) => any, props: unknown) {
     type(text: string) { find(tree, (n) => n.type === AnswerField)[0].props.onChange(text); tree = draw(); },
     send() { find(tree, (n) => n.props?.['data-primary'] && n.type !== Continue)[0].props.onClick(); tree = draw(); },
     next() { find(tree, (n) => n.type === Continue)[0].props.onClick(); tree = draw(); },
+    /** how many answer fields are on the screen */
+    fields() { return find(tree, (n) => n.type === AnswerField).length; },
   };
 }
 
@@ -117,5 +119,19 @@ describe('a rule recall is an answer', () => {
     p.next();
     expect(run.answered).toHaveBeenCalledTimes(1);
     expect(run.answered).toHaveBeenCalledWith({ node, op: 'ruleRecall' }, expect.objectContaining({ correct: false, given: 'no me acuerdo', fmt: 'type:en>es' }));
+  });
+});
+
+describe('a rule recall of a point the learner only recognises', () => {
+  it('goes straight to the reminder: nobody is asked to type voseo', () => {
+    const node = [...bundle.scripts.keys()][0];
+    const run = { ...runner(), learner: { node: () => ({ productiveTrack: false }) } };
+    const p = player(RuleRecall, { block: { kind: 'ruleRecall', node }, run, ui: {}, onDone: () => {} });
+    expect(p.fields()).toBe(0);
+    p.next();
+    expect(run.answered).not.toHaveBeenCalled();
+    // one the learner is to say is still asked first
+    const asked = player(RuleRecall, { block: { kind: 'ruleRecall', node }, run: { ...runner(), learner: { node: () => ({ productiveTrack: true }) } }, ui: {}, onDone: () => {} });
+    expect(asked.fields()).toBe(1);
   });
 });

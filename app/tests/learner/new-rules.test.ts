@@ -1,9 +1,12 @@
 // The 29 Oct rules on the learner side: the production-card policy,
 // multi-target sentence reviews, recognition-only maintenance and the
 // ledger's review-context reuse.
+import fs from 'node:fs';
+import path from 'node:path';
 import { describe, expect, test } from 'vitest';
+import type { GraphNode } from '../../src/content/schema';
 import {
-  Learner, Rating, LEARNED_STABILITY_DAYS, MAINTENANCE_MAX_INTERVAL_DAYS, productivePolicy, type Grade,
+  Learner, Rating, LEARNED_STABILITY_DAYS, MAINTENANCE_MAX_INTERVAL_DAYS, productivePolicy, recognitionOnly, type Grade,
 } from '../../src/learner';
 import { clock, day, DAY, rng, SEEDS } from './helpers';
 
@@ -19,6 +22,35 @@ describe('production-card policy', () => {
     for (const band of ['A1', 'A2', 'B1'] as const) expect(productivePolicy({ kind: 'lexeme', band })).toBe(true);
     for (const band of ['B2', 'C1'] as const) expect(productivePolicy({ kind: 'lexeme', band })).toBe(false);
     expect(productivePolicy({ kind: 'cando', band: 'A1' })).toBe(false);
+  });
+
+  test('a node that is recognition only (voseo, vosotros, the future subjunctive, Peninsular chunks) is never productive, whatever its kind', () => {
+    for (const kind of ['grammar', 'pattern', 'chunk', 'lexeme'] as const) {
+      for (const band of ['A1', 'B2', 'C1'] as const) expect(productivePolicy({ kind, band, freqRank: 100, recognition: true }), `${kind} ${band}`).toBe(false);
+    }
+    expect(productivePolicy({ kind: 'grammar', band: 'C1', recognition: false })).toBe(true);
+    // what the graph says makes a node so: a variety that is not neutral, a note, or the id the gate has always read
+    const yes: Array<[string, Partial<GraphNode>]> = [
+      ['g:voseo-recognition', {}], ['g:future-subj-recognition', {}], ['c:vale-spain', {}], ['l:vos', { variety: 'voseo' }], ['l:os', { variety: 'peninsular' }],
+      ['g:x', { note: 'Recognition only (legal texts, proverbs).' }],
+    ];
+    // a pattern whose note says that one variant of it is recognition only is still a pattern to say
+    expect(recognitionOnly({ id: 'p:pasarla-bien', variety: 'neutral', note: 'LatAm uses pasarla (la pasé bien); Peninsular pasarlo, recognition only.' } as GraphNode)).toBe(false);
+    for (const [id, extra] of yes) expect(recognitionOnly({ id, variety: 'neutral', ...extra } as GraphNode), id).toBe(true);
+    for (const id of ['g:ser-identity', 'c:hola', 'l:casa', 'g:recognition-of-faces-is-fine']) expect(recognitionOnly({ id, variety: 'neutral' } as GraphNode), id).toBe(false);
+  });
+
+  test('the real graph: the five recognition points the content gate names are recognition only, and the flag is rare', () => {
+    const root = path.resolve(__dirname, '../../content/graph');
+    const nodes = fs.readdirSync(root).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')) as GraphNode[]);
+    const flagged = nodes.filter((n) => n.kind !== 'cando' && recognitionOnly(n));
+    for (const id of ['g:vosotros-recognition', 'g:voseo-recognition', 'g:spain-pasts', 'g:se-form-recognition', 'g:future-subj-recognition']) {
+      expect(flagged.map((n) => n.id), id).toContain(id);
+    }
+    // the five, the Peninsular and voseo words, and the chunks whose note opens so: a small part of the graph, and no ordinary pattern
+    expect(flagged.length).toBeLessThan(20);
+    expect(flagged.filter((n) => n.kind === 'pattern').map((n) => n.id)).toEqual([]);
+    expect(flagged.length / nodes.length).toBeLessThan(0.01);
   });
 
   test('property: a receptive-only node never gets a production card; a productive one still unlocks as before', () => {

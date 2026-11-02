@@ -50,7 +50,7 @@ import type { BankSentence, Band, NodeId } from '../../content/schema';
 import type { TenseKey } from '../../engine';
 import { deaccent } from '../../engine';
 import { ALL_FEATURES, chooseItem, rng, shuffle, structuredInput } from '../../exercises';
-import { LEARNED_STABILITY_DAYS, productivePolicy, type Direction, type Learner } from '../../learner';
+import { LEARNED_STABILITY_DAYS, productivePolicy, recognitionOnly, type Direction, type Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import type { Txt } from './cards';
 import { isName } from './names';
@@ -401,7 +401,7 @@ export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = 
         if (seen.has(n) || b.node(n)?.kind === 'cando' || learner.isIntroduced(n)) continue;
         seen.add(n);
         const node = b.node(n);
-        const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank });
+        const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank, recognition: !!node && recognitionOnly(node) });
         seeds.push({ id: n, productive, stability, recent: k < SEED_FULL_UNITS });
       }
     }

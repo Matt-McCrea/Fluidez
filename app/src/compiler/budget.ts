@@ -140,6 +140,8 @@ export const EARLY_SESSIONS = 3;
 export const EARLY_NEW_ITEMS_MAX = 8;
 /** Patterns per session: on a Patterns day up to PATTERNS_DAY_CAP (the first PATTERNS_TAUGHT get a light script lesson, the rest join the learn pool). */
 export const PATTERN_CAP = 4;
+/** Picks added to a drill of a recognition-only point, in place of the typed practice it does not have. */
+export const RECOGNITION_EXTRA_PICKS = 6;
 export const PATTERNS_DAY_CAP = 8;
 export const PATTERNS_TAUGHT = 3;
 export const CONTRAST_CAP = 1;

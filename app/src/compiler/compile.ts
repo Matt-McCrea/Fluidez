@@ -29,11 +29,11 @@
 import { lackKey, lacksCourse } from '../content/kinds';
 import { alignedPairs } from '../exercises/pairs';
 import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schema';
-import { productivePolicy, SEEDED_REPS, State, type Direction, type DueCard, type Tier } from '../learner';
+import { productivePolicy, recognitionOnly, SEEDED_REPS, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
   CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, CONTRAST_RETURN, COUNTS, DEBT, DONE_BAND, DRILL_WITHIN,
   EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_MINUTES, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
-  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, RECALL_POOL, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
+  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, RECALL_POOL, RECOGNITION_EXTRA_PICKS, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
   SECONDS, SEVERE_FACTOR, SHORT_NEW_ITEMS, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
@@ -907,10 +907,15 @@ class Compiler {
     return items;
   }
 
+  /** Whether the learner is to produce this node: false for one that is recognition only (and for a lexeme kept receptive-only). */
+  private producible(id: NodeId): boolean {
+    return this.productive(id, kindOf(id, this.course.nodes));
+  }
+
   /** productivePolicy for a node; a lexeme absent from the graph takes the band of the unit teaching it. */
   private productive(id: NodeId, kind: GraphNode['kind']): boolean {
     const n = this.course.nodes.get(id);
-    return productivePolicy({ kind, band: n?.band ?? this.unit?.band, freqRank: n?.freqRank });
+    return productivePolicy({ kind, band: n?.band ?? this.unit?.band, freqRank: n?.freqRank, recognition: !!n && recognitionOnly(n) });
   }
 
   /**
@@ -979,6 +984,7 @@ class Compiler {
     if (g) {
       this.sessionNew.add(g);
       this.newNodes.grammar.push(g);
+      if (!this.productive(g, 'grammar')) this.receptiveOnly.push(g);
       const req = this.course.nodes.get(g)?.requires ?? [];
       const missing = req.filter((r) => !this.known.has(r) && !this.sessionNew.has(r));
       if (missing.length) this.diag({ code: 'prereq', node: g, message: `${g} introduced before ${missing.join(', ')}` });
@@ -1114,7 +1120,7 @@ class Compiler {
   private backToThese(): PracticeBlock | undefined {
     const last = this.path.log[this.path.log.length - 1];
     if (!last || last.dayType !== 'checkpoint') return undefined;
-    const nodes = this.shakyNodes(3);
+    const nodes = this.shakyNodes(3).filter((n) => this.producible(n));
     if (!nodes.length) return undefined;
     const items: PracticeItem[] = [];
     for (let i = 0; items.length < 6 && i < 18; i++) {
@@ -1131,26 +1137,29 @@ class Compiler {
   private drill(node: NodeId, day: Unit['days'][number] | undefined, advancing: boolean) {
     this.drilled = node;
     this.blocks.push({ kind: 'ruleRecall', part: 'core', deliberate: true, node, minutes: round1(SECONDS.ruleRecall / 60) });
-    const si = this.practice('structuredInput', node, COUNTS.structuredInput, ['pick'], 'receptive', { focus: node, firstScoring: this.firstScoring(node, 'receptive') });
-    this.scriptFallback(node, 'readAndPick', COUNTS.structuredInput - (si?.items.length ?? 0));
+    // A recognition-only point (voseo, the future subjunctive) is drilled by reading: more picks, and nothing the learner would have to say
+    const produce = this.producible(node);
+    const nPicks = COUNTS.structuredInput + (produce ? 0 : RECOGNITION_EXTRA_PICKS);
+    const si = this.practice('structuredInput', node, nPicks, ['pick'], 'receptive', { focus: node, firstScoring: this.firstScoring(node, 'receptive') });
+    this.scriptFallback(node, 'readAndPick', nPicks - (si?.items.length ?? 0));
 
     // Controlled output, interleaved: ~60% latest, ~40% older points + a known contrast.
     const total = COUNTS.controlledOutput;
-    const shaky = this.shakyNodes(2).filter((n) => n !== node);
-    const older = [
+    const shaky = this.shakyNodes(2).filter((n) => n !== node && this.producible(n));
+    const older = !produce ? [] : [
       ...shaky,
-      ...(day?.focus ?? []).filter((n) => n !== node && this.known.has(n) && ['grammar', 'pattern'].includes(kindOf(n, this.course.nodes))),
-      ...this.path.recentGrammar.filter((n) => n !== node && this.known.has(n)),
+      ...(day?.focus ?? []).filter((n) => n !== node && this.known.has(n) && ['grammar', 'pattern'].includes(kindOf(n, this.course.nodes)) && this.producible(n)),
+      ...this.path.recentGrammar.filter((n) => n !== node && this.known.has(n) && this.producible(n)),
     ].filter((n, i, a) => a.indexOf(n) === i).slice(0, 3);
     for (const n of older) if (shaky.includes(n)) this.remServed.add(n);
-    const contrast = this.pickContrast([node, ...older]);
+    const contrast = produce ? this.pickContrast([node, ...older]) : undefined;
     const nLatest = older.length || contrast ? Math.round(total * COUNTS.latestShare) : total;
     const ops: PracticeOp[] = ['choose', 'type', 'transform', 'translate'];
-    const latest = this.practice('controlledOutput', node, nLatest, ops, 'productive', { push: false, ladder: true, firstScoring: this.firstScoring(node, 'productive') });
+    const latest = produce ? this.practice('controlledOutput', node, nLatest, ops, 'productive', { push: false, ladder: true, firstScoring: this.firstScoring(node, 'productive') }) : undefined;
     const items: PracticeItem[] = latest ? [...latest.items] : [];
     const oldSources: NodeId[] = [...older, ...(contrast ? [contrast] : [])];
     const olderItems: PracticeItem[] = [];
-    let need = total - nLatest;
+    let need = produce ? total - nLatest : 0;
     for (let i = 0; need > 0 && oldSources.length && i < total * 2; i++) {
       const src = oldSources[i % oldSources.length];
       const [s] = this.pickSentences(src, 1);
@@ -1161,14 +1170,14 @@ class Compiler {
     if (items.length) {
       this.blocks.push({ kind: 'controlledOutput', part: 'core', deliberate: false, focus: node, contrast, items, minutes: round1(items.reduce((a, it) => a + SECONDS[it.op], 0) / 60) });
     }
-    this.scriptFallback(node, 'yourTurn', total - items.length);
+    if (produce) this.scriptFallback(node, 'yourTurn', total - items.length);
     // the freer practice is built first and kept or dropped once the day's new items are known: a contrast taught whole takes its minutes (R21)
     const freer = this.diags.length;
-    const comm = this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true, fallbackOp: 'translate', push: false });
-    const task = this.taskFor(node);
+    const comm = produce ? this.practice('communicative', node, COUNTS.communicative, ['respond'], 'productive', { focus: node, question: true, fallbackOp: 'translate', push: false }) : undefined;
+    const task = produce ? this.taskFor(node) : undefined;
     let writing: Block | undefined;
     if (task) writing = { kind: 'writing', part: 'core', deliberate: false, task, purpose: 'freer', focus: node, minutes: this.content.tasks.get(task)!.minutes };
-    else {
+    else if (produce) {
       const waiting = [...this.content.tasks.values()].some((t) => t.focus === node && !this.L.ledger.hasSeen('item', `wt:${t.id}`) && this.waitingOnOwed(t.requires));
       if (waiting) this.diag({ code: 'deferred', block: 'writing', node, message: `writing task on ${node} waits for owed items` });
       else this.diag({ code: 'shortage', block: 'writing', node, what: 'task', wanted: 1, got: 0, unit: this.unit?.id, message: `no unseen gated writing task focused on ${node}` });
@@ -1441,7 +1450,7 @@ class Compiler {
     const inWindow = recent.filter((n) => (this.L.node(n)?.introducedAt ?? 0) >= this.now - REMIX_WINDOW_DAYS * DAY_MS);
     const shaky = this.shakyNodes(2);
     shaky.forEach((n) => this.remServed.add(n));
-    const nodes = [...shaky, ...(inWindow.length >= 2 ? inWindow : recent.slice(0, 4))].filter((n, i, a) => a.indexOf(n) === i);
+    const nodes = [...shaky, ...(inWindow.length >= 2 ? inWindow : recent.slice(0, 4))].filter((n, i, a) => a.indexOf(n) === i && this.producible(n));
     const contrast = this.pickContrast(nodes);
     const sources = [...nodes, ...(contrast ? [contrast] : [])];
     if (!sources.length) return undefined;
