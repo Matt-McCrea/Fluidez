@@ -6,7 +6,7 @@ import type {
 } from '../content/schema';
 import { analyzeToken } from '../engine';
 import type { LibraryChapter } from '../content/library';
-import type { ChapterRef, ContentIndex, Course, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
+import type { ChapterRef, ContentIndex, Course, PathState, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
 export interface Tagged { requires?: NodeId[] }
@@ -135,6 +135,22 @@ export function isQuestionRow(s: Pick<BankSentence, 'es' | 'kind'>): boolean {
   while (i < toks.length - 1 && LEAD_ADV.has(toks[i])) i++;
   const t = toks[i];
   return ASKING_PRONOUN.has(t) || analyzeToken(t).length > 0;
+}
+
+/**
+ * The chapters of the story the path has reached and the learner has not read, in story order: earlier
+ * units, and this unit up to today, from the unit placement started them at. The compiler walks this to
+ * choose a chapter and prepare walks it to know which to fetch, so the two cannot disagree.
+ */
+export function unreadChapters<S extends { id: string; unit: string; day?: number }>(
+  story: readonly S[], course: Pick<Course, 'unitIndex'>, path: Pick<PathState, 'unit' | 'day'>, from: number, seen: (id: string) => boolean,
+): S[] {
+  return story.filter((s) => {
+    const ui = course.unitIndex.get(s.unit) ?? Infinity;
+    if (ui < from) return false;
+    const reached = ui < path.unit || (ui === path.unit && (s.day === undefined || s.day <= path.day));
+    return reached && !seen(s.id);
+  });
 }
 
 const READ_WPM = 70;        // A1-B1 reading speed in words/min for a graded text (heuristic)

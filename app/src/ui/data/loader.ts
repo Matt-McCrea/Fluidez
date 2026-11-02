@@ -206,6 +206,12 @@ export class ContentLoader {
     return this.fetch(this.unitWanter(sorted.slice(from, to + 1)));
   }
 
+  /** Chapters by id, fetched on demand: the records that are new (the next chapter to read, or one the learner opens from Story). */
+  async loadChapters(ids: readonly string[]): Promise<ContentSource> {
+    const want = new Set(ids);
+    return this.fetch((kind, p) => kind === 'story' && want.has(baseName(p)));
+  }
+
   /** One node's teaching script, fetched on demand (the records that are new; empty when absent). */
   async loadScript(node: string): Promise<ContentSource> {
     const name = scriptFile(node);

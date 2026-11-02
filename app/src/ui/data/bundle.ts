@@ -17,6 +17,7 @@ export interface ContentExtender {
   loadWindow(unit: string | number): Promise<ContentSource>;
   loadUnits(range: { from?: number; to: number }): Promise<ContentSource>;
   loadScript(node: string): Promise<ContentSource>;
+  loadChapters(ids: readonly string[]): Promise<ContentSource>;
 }
 
 export type Segment = AlignedPair;
@@ -96,6 +97,12 @@ export class Bundle {
   /** Load all content of the units in `range` (inclusive indexes): for quick review and the weak-spot trainer. */
   async ensureUnits(range: { from?: number; to: number }): Promise<boolean> {
     return this.more ? this.extend(await this.more.loadUnits(range)) : false;
+  }
+
+  /** Fetch chapters by id (those not loaded already); true when anything new arrived. */
+  async ensureChapters(ids: readonly string[]): Promise<boolean> {
+    const need = ids.filter((id) => !this.chapters.has(id));
+    return this.more && need.length ? this.extend(await this.more.loadChapters(need)) : false;
   }
 
   /** A node's teaching script: the loaded one at once, otherwise fetched (and then cached). */

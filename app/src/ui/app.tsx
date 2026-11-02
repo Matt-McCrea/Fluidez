@@ -7,6 +7,7 @@ import type { Mode } from '../compiler';
 import { BackupError, downloadBackup, IdbStore, idbKV, Learner, makeBackup, StoredDocumentError, type LearnerStore } from '../learner';
 import type { KV, Tier } from '../learner';
 import { ContentLoader, fixturesForced, loadBundle } from './data/loader';
+import { prepareFor } from './data/prepare';
 import { Ctx, type AppCtx } from './context';
 import { Home } from './screens/home';
 import { Onboarding } from './screens/onboarding';
@@ -47,6 +48,8 @@ export async function boot(opts: BootOptions = {}): Promise<Omit<AppCtx, 'refres
   // the learner's documents are brought to this course before anything reads them; a fixture course is nobody's
   if (!(opts.fixtures === undefined && fixturesForced()) && !loader.problems.length) await settleContent(learner, ui, units, nodes, loader.history(), now());
   const bundle = await loadBundle(loader, { unit: Math.min(ui.path.unit, Math.max(0, units.length - 1)), fixtures: opts.fixtures });
+  // the compiler is handed what the session ahead needs, not whatever the window happened to hold
+  await prepareFor({ bundle, learner, ui });
   try { await globalThis.navigator?.storage?.persist?.(); } catch { /* not granted: fine */ }
   return { learner, learnerStore, ui, bundle, loader, now };
 }
@@ -133,11 +136,7 @@ export function App({ opts }: { opts?: BootOptions }) {
       const c: AppCtx = {
         ...base,
         refresh,
-        reloadBundle: async () => {
-          if (c.bundle.fixture || !c.bundle.course.units.length) return;
-          const unit = Math.min(c.ui.path.unit, c.bundle.course.units.length - 1);
-          if (await c.bundle.ensureWindow(unit)) refresh();
-        },
+        reloadBundle: async () => { if (await prepareFor(c)) refresh(); },
         resetAll: async () => {
           await c.learnerStore.clear();
           await c.ui.reset();
@@ -176,7 +175,7 @@ export function App({ opts }: { opts?: BootOptions }) {
   const goHome = () => { setRoute({ tab: 'home' }); void ctx.reloadBundle(); };
   let body;
   if (!ctx.ui.state.onboarded) {
-    body = <Onboarding onDone={() => { setRoute({ tab: 'home' }); ctx.refresh(); }} />;
+    body = <Onboarding onDone={() => { setRoute({ tab: 'home' }); ctx.refresh(); void ctx.reloadBundle(); }} />;
   } else if ('session' in route) {
     body = (
       <Session
