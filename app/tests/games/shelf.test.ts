@@ -71,6 +71,30 @@ describe('the rescue on the shelf', () => {
   });
 });
 
+describe('De corrido on the shelf', () => {
+  const DAY = 86_400_000;
+  it('is offered once a chapter was first read a week ago, and not before', async () => {
+    const w = await world();
+    w.clock.t += 100 * DAY;
+    const shelf = () => loadShelf({ learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now });
+    expect((await shelf()).reread).toBeUndefined();
+    w.learner.ledger.markSeen('chapter', 'ch001', { at: w.now() - 3 * DAY });
+    expect((await shelf()).reread).toBeUndefined();
+    w.learner.ledger.markSeen('chapter', 'ch002', { at: w.now() - 9 * DAY });
+    const open = await shelf();
+    expect(open.reread).toBe(1);
+    expect(shelfIsEmpty(open)).toBe(false);
+  });
+
+  it('rests for a month after a reading, counted or not', async () => {
+    const w = await world();
+    w.clock.t += 100 * DAY;
+    w.learner.ledger.markSeen('chapter', 'ch002', { at: w.now() - 90 * DAY });
+    await w.ui.games.addReading({ at: w.now() - 2 * DAY, chapter: 'ch002', band: 'A1', words: 100, secs: 50, wpm: 120, right: 1, of: 2, counted: false });
+    expect((await loadShelf({ learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now })).reread).toBeUndefined();
+  });
+});
+
 describe('what the screens are', () => {
   it('the practice screen offers the games, and the shelf is the only way in', () => {
     expect(src('ui/screens/practice.tsx')).toMatch(/<Board onPlay=\{onPlay\}/);
@@ -84,7 +108,7 @@ describe('what the screens are', () => {
   });
 
   it('shows nothing locked, nothing to unlock and nothing coming', () => {
-    for (const f of ['ui/games/Board.tsx', 'ui/games/Flash.tsx', 'ui/games/Play.tsx', 'ui/games/Rescue.tsx']) {
+    for (const f of ['ui/games/Board.tsx', 'ui/games/Flash.tsx', 'ui/games/Play.tsx', 'ui/games/Rescue.tsx', 'ui/games/Corrido.tsx']) {
       const code = src(f).replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
       expect(code, f).not.toMatch(/locked|unlock|coming soon|opens when|after your first/i);
     }

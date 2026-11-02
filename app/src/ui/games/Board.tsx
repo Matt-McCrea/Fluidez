@@ -25,6 +25,13 @@ export function Board({ onPlay }: { onPlay: (c: GameChoice) => void }) {
           <div class="actions"><button class="btn quiet" data-rescue onClick={() => onPlay({ game: 'rescue' })}>Start a rescue of {shelf.rescue.asks}</button></div>
         </div>
       ) : null}
+      {shelf.reread ? (
+        <div class="tile" data-game="reread">
+          <p class="tile-name">De corrido</p>
+          <p>Read a chapter you have read before against the clock, then answer a few questions. It counts when they are right.</p>
+          <div class="actions"><button class="btn quiet" data-reread onClick={() => onPlay({ game: 'reread' })}>Read one again</button></div>
+        </div>
+      ) : null}
       {shelf.flash.length ? (
         <div class="tile" data-game="flash">
           <p class="tile-name">Relámpago</p>
