@@ -90,6 +90,8 @@ export interface SentenceRef {
  */
 /** `day`: index of the unit day that lists the chapter (undefined = unlisted: read on the unit's first input day with room). */
 export interface ChapterRef { id: string; unit: string; order: number; day?: number; requires: NodeId[]; questions: number; minutes: number }
+/** A chapter of the story as the library lists it, loaded or not: enough to put it in order and to know when it is reached. */
+export interface StoryRef { id: string; unit: string; order: number; day?: number }
 export interface SceneRef { id: string; unit: string; requires: NodeId[]; focus: NodeId[]; turns: number; minutes: number }
 export interface TaskRef { id: string; unit: string; requires: NodeId[]; focus?: NodeId; minutes: number }
 export interface ScriptRef { node: NodeId; readAndPick: number; yourTurn: number }
@@ -103,8 +105,10 @@ export interface ContentIndex {
   byRequire: Map<NodeId, string[]>;
   /** unit id -> sentence ids tagged with that unit */
   byUnit: Map<string, string[]>;
-  chapters: ChapterRef[];                 // linear story order
+  chapters: ChapterRef[];                 // linear story order, the chapters that are loaded
   chapterById: Map<string, ChapterRef>;
+  /** every chapter of the story in order, loaded or not, when the course ships a library (absent: the story is `chapters`) */
+  story?: StoryRef[];
   scenes: Map<string, SceneRef>;
   scenesByUnit: Map<string, string[]>;
   tasks: Map<string, TaskRef>;
@@ -127,6 +131,11 @@ export interface CompileInput {
   tier?: Tier;
   /** 'next' = the day's session; 'another' = an extra session the same day (compiles the next path day) */
   mode?: Mode;
+  /**
+   * The unit index the learner started at, when placement started them part way through the course
+   * (absent = 0). The story begins at their unit: the chapters before it are not a backlog to read.
+   */
+  placedAt?: number;
 }
 
 // ------------------------------------------------------------------ path state

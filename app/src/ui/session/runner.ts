@@ -59,6 +59,7 @@ export function compilePlan(learner: Learner, bundle: Bundle, ui: UiStore, opts:
   return compileSession({
     learnerId: ui.state.learnerId, learner, path: ui.path, course: bundle.course, content: bundle.index,
     now, tier: opts.tier ?? (fullLessonOnce ? 'standard' : learner.settings.tier), mode: opts.mode ?? 'next',
+    ...(ui.state.placedAt ? { placedAt: ui.state.placedAt } : {}),
   });
 }
 

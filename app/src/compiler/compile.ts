@@ -617,16 +617,23 @@ class Compiler {
    * The chapter to read now: the FIRST unread chapter in story order that the
    * path has reached (earlier units, or this unit up to today) and that passes
    * the gate. A chapter skipped earlier (gated by a throttle cut) is caught up
-   * here, so the story is never silently dropped and never re-served.
+   * here, so the story is never silently dropped and never re-served. The story
+   * is the library's, whole, when the course ships one: a chapter this device
+   * has not loaded is passed over, since only a loaded one can be gated or read.
+   * A learner placed part way through the course starts at their own unit.
    */
   private chapterFor(day: Unit['days'][number] | undefined): { ch?: ChapterRef; reason?: 'seen' | 'missing' | 'gated'; blocked?: string } {
     const cur = this.path.unit;
+    const from = this.input.placedAt ?? 0;
     let blocked: string | undefined;
-    for (const c of this.content.chapters) {
-      const ui = this.course.unitIndex.get(c.unit) ?? Infinity;
-      const reached = ui < cur || (ui === cur && (c.day === undefined || c.day <= this.path.day));
+    for (const s of this.content.story ?? this.content.chapters) {
+      const ui = this.course.unitIndex.get(s.unit) ?? Infinity;
+      if (ui < from) continue;
+      const reached = ui < cur || (ui === cur && (s.day === undefined || s.day <= this.path.day));
       if (!reached) continue;
-      if (this.L.ledger.hasSeen('chapter', c.id)) continue;
+      if (this.L.ledger.hasSeen('chapter', s.id)) continue;
+      const c = this.content.chapterById.get(s.id);
+      if (!c) continue;
       if (this.gated(c.requires)) {
         const cov = this.coverage(c.requires);
         if (cov.admitted) {

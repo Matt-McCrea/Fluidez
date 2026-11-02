@@ -6,7 +6,7 @@ import type {
 } from '../content/schema';
 import { analyzeToken } from '../engine';
 import type { LibraryChapter } from '../content/library';
-import type { ChapterRef, ContentIndex, Course, SceneRef, ScriptRef, SentenceRef, TaskRef } from './types';
+import type { ChapterRef, ContentIndex, Course, SceneRef, ScriptRef, SentenceRef, StoryRef, TaskRef } from './types';
 
 /** Tagger output the schema does not carry yet (see the report's schema proposals). */
 export interface Tagged { requires?: NodeId[] }
@@ -168,10 +168,17 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
     if (s.unit) push(byUnit, s.unit, s.id);
   }
 
+  // the story in order: the library's chapters when the course ships one, with any loaded chapter it lacks; else the loaded ones
+  const listed = new Map<string, string>(src.library?.map((c) => [c.id, c.unit]));
+  for (const c of src.chapters) if (src.library?.length && !listed.has(c.id)) listed.set(c.id, c.unit);
+  const story: StoryRef[] | undefined = src.library?.length
+    ? [...listed].sort((a, b) => a[0].localeCompare(b[0])).map(([id, unit], order) => ({ id, unit, order, day: dayOf(unit, 'chapter', id) }))
+    : undefined;
+  const storyOrder = new Map(story?.map((s) => [s.id, s.order]));
   const chapters: ChapterRef[] = [...src.chapters]
     .sort((a, b) => a.id.localeCompare(b.id))
     .map((c, order) => ({
-      id: c.id, unit: c.unit, order, day: dayOf(c.unit, 'chapter', c.id),
+      id: c.id, unit: c.unit, order: storyOrder.get(c.id) ?? order, day: dayOf(c.unit, 'chapter', c.id),
       requires: c.requires?.length ? c.requires : positionGate(course, unitById.get(c.unit), dayOf(c.unit, 'chapter', c.id)),
       questions: c.questions.length,
       minutes: Math.max(2, Math.round(((c.text.split(/\s+/).length / READ_WPM) + c.questions.length * 0.3) * 2) / 2),
@@ -213,7 +220,7 @@ export function buildContentIndex(src: ContentSource, course: Course): ContentIn
 
   return {
     sentences, byTarget, byRequire, byUnit,
-    chapters, chapterById: new Map(chapters.map((c) => [c.id, c])),
+    chapters, chapterById: new Map(chapters.map((c) => [c.id, c])), ...(story ? { story } : {}),
     scenes, scenesByUnit, tasks, tasksByUnit, scripts,
   };
 }
