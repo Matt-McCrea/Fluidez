@@ -141,7 +141,7 @@ function personItem(s: BankSentence, opts: InputOptions): ReadAndPickItem | null
     if (p === target || PERSON_CLASH[target]?.includes(p)) continue;
     if (verbReadings(formNow).some((a) => a.person === p && a.tense === c.choice.tense)) continue; // comía: yo = él
     // dropped subject: the English pins nothing about the distractor, so no `en`
-    const r = changePerson(c, p, { en: s.en });
+    const r = changePerson(c, p, { en: s.en, distractor: true });
     if (!r) continue;
     const nf = low(r.toks[c.verb]);
     if (verbReadings(nf).some((a) => a.person === target && a.tense === c.choice.tense)) continue;

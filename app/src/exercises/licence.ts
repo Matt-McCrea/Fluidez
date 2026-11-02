@@ -125,28 +125,44 @@ export function opening(c: Clause, names?: ReadonlySet<string>): 'lower' | 'keep
 
 /**
  * The names in a bank: words it writes with a capital in the middle of a
- * sentence, and hardly ever without one. Once per bank array.
+ * sentence, and hardly ever without one. Once per bank array. `placesOf` are
+ * the ones among them that the bank mostly puts after en, desde, hasta or
+ * hacia (Bogotá, Toronto), as opposed to the people.
  */
-export const namesOf = (() => {
-  interface Count { upper: Map<string, number>; lower: Map<string, number>; names?: Set<string> }
-  const ix = bankIndex<Count>(() => ({ upper: new Map(), lower: new Map() }), (n, s) => {
+const nameIndex = (() => {
+  interface Count { upper: Map<string, number>; lower: Map<string, number>; after: Map<string, number>; names?: Set<string>; places?: Set<string> }
+  return bankIndex<Count>(() => ({ upper: new Map(), lower: new Map(), after: new Map() }), (n, s) => {
     n.names = undefined;
+    n.places = undefined;
     for (const line of s.es.split(/\n|\\n/)) {
       const ts = toToks(line);
       for (let i = 1; i < ts.length; i++) {
         if (!ts[i].core || /[.?!…]/.test(ts[i - 1].post)) continue;       // empty, or it opens a sentence
-        const m = isCapital(ts[i].core) ? n.upper : n.lower;
+        const upper = isCapital(ts[i].core);
+        const m = upper ? n.upper : n.lower;
         const w = ts[i].core.toLowerCase();
         m.set(w, (m.get(w) ?? 0) + 1);
+        if (upper && PLACE_PREPOSITIONS.has(low(ts[i - 1])) && !/[,;:]/.test(ts[i - 1].post)) n.after.set(w, (n.after.get(w) ?? 0) + 1);
       }
     }
   });
-  return (bank: readonly BankSentence[]): ReadonlySet<string> => {
-    const n = ix(bank);
-    if (!n.names) {
-      n.names = new Set();
-      for (const [w, up] of n.upper) if (up >= 2 && up >= 4 * (n.lower.get(w) ?? 0)) n.names.add(w);
-    }
-    return n.names;
-  };
 })();
+const PLACE_PREPOSITIONS = new Set(['en', 'desde', 'hasta', 'hacia']);
+
+export const namesOf = (bank: readonly BankSentence[]): ReadonlySet<string> => {
+  const n = nameIndex(bank);
+  if (!n.names) {
+    n.names = new Set();
+    for (const [w, up] of n.upper) if (up >= 2 && up >= 4 * (n.lower.get(w) ?? 0)) n.names.add(w);
+  }
+  return n.names;
+};
+
+export const placesOf = (bank: readonly BankSentence[]): ReadonlySet<string> => {
+  const n = nameIndex(bank);
+  if (!n.places) {
+    n.places = new Set();
+    for (const [w, k] of n.after) if (k >= 3 && k >= 0.2 * (n.upper.get(w) ?? 0)) n.places.add(w);
+  }
+  return n.places;
+};

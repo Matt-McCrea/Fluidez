@@ -147,8 +147,12 @@ function agreePredicate(ts: Tok[], from: number, plural: boolean): Tok[] | null 
 
 export interface Rewritten { es: string; toks: Tok[]; accept: string[] }
 
-/** The same sentence said about another person: como > comemos. */
-export function changePerson(c: Clause, to: Person, opts: { en?: string; pronoun?: 'keep' | 'drop' | 'add' } = {}): Rewritten | null {
+/**
+ * The same sentence said about another person: como > comemos. `distractor`:
+ * the result is a wrong option to pick among others and is never offered as
+ * the right Spanish, so a name or a vocative in the sentence is no obstacle.
+ */
+export function changePerson(c: Clause, to: Person, opts: { en?: string; pronoun?: 'keep' | 'drop' | 'add'; distractor?: boolean } = {}): Rewritten | null {
   const { inf, tense, person: from } = c.choice;
   if (to === from || to === 'vosotros') return null;
   const lexInf = c.participle >= 0 ? (verbReadings(low(c.toks[c.participle])).length ? null : inf) : inf;
@@ -157,7 +161,7 @@ export function changePerson(c: Clause, to: Person, opts: { en?: string; pronoun
   // se on its own is impersonal, passive or reciprocal here (se dice, se puede): it has no person to change
   if (!c.reflexive && c.proclitics.length === 1 && low(c.toks[c.proclitics[0]]) === 'se') return null;
   // a question to someone by name, and names joined by y: "¿Soy yo, Tomás?", "Yo soy Ana y Pedro"
-  if (addressesByName(c) || joinsNames(c)) return null;
+  if (!opts.distractor && (addressesByName(c) || joinsNames(c))) return null;
   const nf = form(inf, tense, to);
   if (!nf) return null;
   let ts = replaceCore(c.toks, c.verb, nf);

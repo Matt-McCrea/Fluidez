@@ -17,12 +17,13 @@ import {
 } from '../../exercises';
 import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
-import { namesOf } from '../../exercises/licence';
+import { askedOfYou } from '../../exercises/addressee';
+import { namesOf, placesOf } from '../../exercises/licence';
 import { recombineTurn } from '../../exercises/recombine';
 import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
 import { hash32 } from '../../exercises/rng';
-import type { Feature, RecombineItem } from '../../exercises/types';
+import type { Feature, RecombineItem, TransformItem } from '../../exercises/types';
 import { looksSpanish, type Bundle } from '../data/bundle';
 import { licensedTenses } from './tenses';
 
@@ -369,6 +370,9 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
 
 const words = (t: string) => deaccent(t.toLowerCase()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 
+/** A sentence with the stop it needs before another sentence follows it: "…del todo." stays, "No es de Cartagena" gets one. */
+const stopped = (s: string) => (/[.?!…]["”»)]?$/.test(s.trim()) ? s.trim() : `${s.trim()}.`);
+
 /** "It uses <node>: <form>." where the form is one of the node's own forms that really occurs in the sentence. */
 function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
   const hay = ` ${words(sentence).join(' ')} `;
@@ -376,7 +380,7 @@ function usesWhy(b: Bundle, node: NodeId, sentence: string): string {
     .sort((a, c) => words(c).length - words(a).length);
   // a title that already carries a colon ('Every noun is "el" or "la": the, a, ...') keeps only its head
   const title = b.title(node).split(':')[0].trim();
-  return forms.length ? `It uses ${title}: ${forms[0]}.` : `It uses ${title}.`;
+  return forms.length ? `It uses ${title}: ${stopped(forms[0])}` : `It uses ${stopped(title)}`;
 }
 
 /** Does a typed-form gap's answer belong to the node being reviewed? */
@@ -406,6 +410,19 @@ function taughtAt(b: Bundle, unit: string | undefined): TenseKey[] {
 /** What a transform may ask of this sentence: the tenses taught (the learner's own list, else the unit's) and the names in the bank. */
 const transformsFor = (s: BankSentence, b: Bundle, taught?: readonly TenseKey[]) => transformItems(s, { taught: taught ?? taughtAt(b, s.unit), names: namesOf(b.bank) });
 
+/** Who a sentence is about, said after "about": the person a transform changed it to. */
+const ABOUT: Readonly<Record<string, string>> = { yo: 'yourself', 'tú': 'the person you are talking to', 'él/ella': 'him or her', nosotros: 'the two of you', ellos: 'them' };
+/** The reason shown with a transform's right version: the sentence, then what was asked of it, worded to read after it. */
+function transformWhy(t: TransformItem): string {
+  const done = stopped(t.answer);
+  switch (t.transform.op) {
+    case 'person': return `${done} Same sentence, said about ${ABOUT[t.transform.to] ?? 'someone else'}.`;
+    case 'tense': return `${done} Same sentence, ${t.transform.to === 'imperfecto' ? 'as how it used to be' : t.transform.to === 'futuro' ? 'as something still to come' : 'as something that happened'}.`;
+    case 'negate': return `${done} Same sentence, saying it is not so.`;
+    case 'pronoun': return `${done} The little word stands in for "${t.transform.np}".`;
+  }
+}
+
 /** The cloze or transform way of asking a productive review, or undefined when the sentence does not support it. */
 function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cloze' | 'transform', taught?: readonly TenseKey[]): Card | undefined {
   if (f === 'transform') {
@@ -413,7 +430,7 @@ function productiveSideCard(item: ReviewItem, s: BankSentence, b: Bundle, f: 'cl
     if (!t) return undefined;
     return {
       type: 'type', key: item.id, ask: 'Change the sentence', prompt: es(t.source), sub: en(t.instruction), answerLang: 'es',
-      placeholder: 'Type it in Spanish', check: itemCheck(t), retry: true, why: `Here is the sentence ${t.instruction.replace(/^Say it/i, 'said').replace(/\.$/, '')}.`,
+      placeholder: 'Type it in Spanish', check: itemCheck(t), retry: true, why: transformWhy(t),
     };
   }
   const tf = typeFormItem(s);
@@ -708,7 +725,7 @@ export function recombineCard(item: PracticeItem, s: BankSentence, b: Bundle, se
   const { ask, what } = recombineAsk(key);
   return {
     type: 'type', key: item.id, ask, prompt: es(known.es), sub: en(`Now: ${it.en ?? ''}`.replace(/\s+$/, '')), answerLang: 'es', placeholder: 'Say it in Spanish',
-    check: itemCheck(it), retry: true, why: `${it.es}. Same sentence, new ${what}.`,
+    check: itemCheck(it), retry: true, why: `${stopped(it.es)} Same sentence, new ${what}.`,
   };
 }
 
@@ -747,7 +764,7 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       if (it) {
         return {
           type: 'type', key: item.id, ask: it.instruction, prompt: es(it.source), answerLang: 'es', placeholder: 'Rewrite it',
-          check: itemCheck(it), retry: true, why: `${it.instruction.replace(/\.$/, '')}: ${it.answer}`,
+          check: itemCheck(it), retry: true, why: transformWhy(it),
         };
       }
       return translateCard(item, s, b);
@@ -771,6 +788,12 @@ export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught
       // a dialogue row: answer its first turn, the question, not the exchange
       const q = isMultiTurn(s) ? turnView(s, 0)?.sentence : s;
       if (!q) return meaningCard(item, s, b);
+      // a question to a character, to a group, or about the story cannot be answered for yourself
+      // practised another way instead, and not always the same way: a block of one look is a run
+      if (!askedOfYou(q.es, namesOf(b.bank), placesOf(b.bank))) {
+        const way = hash32(item.id) % 3;
+        return way === 0 ? meaningCard(item, s, b) : way === 1 ? typeFormCard(item, s) ?? translateCard(item, s, b) : translateCard(item, s, b);
+      }
       return {
         type: 'type', key: item.id, ask: 'Answer for yourself', prompt: es(q.es), sub: en(q.en), answerLang: 'es', placeholder: 'Your answer, in Spanish',
         check: respondCheck(q, bundleLexicon(b)), retry: true, why: 'Any true answer works. Just answer the way the question asks.',

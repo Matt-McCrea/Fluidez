@@ -41,10 +41,10 @@ describe('review "why" names the form in the sentence', () => {
       const head = `It uses ${b.title(node).split(':')[0].trim()}`;
       expect(card.why!.startsWith(head), card.why).toBe(true);
       const form = card.why!.slice(head.length);
-      if (form === '.') continue;
+      if (form === '' || /^[.?!…]+$/.test(form)) continue;   // no form quoted: the title, stopped once
       quoted++;
-      expect(form.startsWith(': ') && form.endsWith('.'), card.why).toBe(true);
-      expect(` ${answer} `, `${node}: ${card.why} / ${answer}`).toContain(` ${words(form.slice(2, -1))} `);
+      expect(form.startsWith(': ') && /[.?!…]$/.test(form) && !/[.?!…]{2}$/.test(form), card.why).toBe(true);
+      expect(` ${answer} `, `${node}: ${card.why} / ${answer}`).toContain(` ${words(form.slice(2))} `);
     }
     expect(checked).toBeGreaterThan(30);
     expect(quoted).toBeGreaterThan(0);
