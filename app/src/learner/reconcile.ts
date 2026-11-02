@@ -309,7 +309,7 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
         orphans[spareId] = spare;
       }
     }
-    if (nodes) state = { ...state, nodes, orphans };
+    if (nodes) state = { ...state, nodes, ...(orphans && (Object.keys(orphans).length || state.orphans) ? { orphans } : {}) };
   }
 
   const ledgerKinds: Array<[LedgerKind, (k: string) => string]> = [
@@ -454,12 +454,15 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
     if (sv > latest) { session = null; sessionNote = { action: 'discarded', why: `it was planned by a newer build (content version ${sv})` }; }
     else if (touched) { session = null; sessionNote = { action: 'discarded', why: `it names ${touched}, which a content migration has moved` }; }
     else if (moves) { session = null; sessionNote = { action: 'discarded', why: moves }; }
-    else if (s.version === 2 && sv === settled && s.dayKey) sessionNote = { action: 'kept' };
     else {
+      // a lesson with no day (a review) has no key to name, and is current without one
       const u = units.find((x) => x.id === s.plan.unit);
       const dayKey = s.dayKey ?? (u && s.plan.day !== undefined && u.days[s.plan.day] ? dayKeyOf(u, s.plan.day) : undefined);
-      session = { ...s, version: 2, contentVersion: settled, ...(dayKey ? { dayKey } : {}) };
-      sessionNote = { action: 'restamped' };
+      if (s.version === 2 && sv === settled && s.dayKey === dayKey) sessionNote = { action: 'kept' };
+      else {
+        session = { ...s, version: 2, contentVersion: settled, ...(dayKey ? { dayKey } : {}) };
+        sessionNote = { action: 'restamped' };
+      }
     }
   }
 

@@ -106,7 +106,7 @@ describe('a node renamed by a content migration', () => {
     expect(Object.keys(out.state.nodes).sort()).toEqual(['g:x', 'l:aa', 'l:b']);
     expect(out.state.nodes['l:aa']).toEqual({ ...i.state.nodes['l:a'], id: 'l:aa' });
     expect(out.state.nodes['l:aa'].receptive!.reps).toBe(i.state.nodes['l:a'].receptive!.reps);
-    expect(out.state.orphans).toEqual({});
+    expect(out.state.orphans).toBeUndefined();
     expect(out.report.rewrote.nodes).toBe(1);
   });
 
@@ -306,9 +306,13 @@ describe('an open lesson', () => {
     expect(out.session).toBeNull();
   });
 
-  it('a lesson with no day (a review) has no place to move', () => {
-    const out = reconcile(input({ path: at, session: session({}, { blocks: [] } as never) }));
+  it('a lesson with no day (a review) has no place to move, and once stamped is current', () => {
+    const review = session({}, { blocks: [] } as never);
+    const out = reconcile(input({ path: at, session: review }));
     expect(out.session).toMatchObject({ version: 2, contentVersion: 0 });
+    const again = reconcile(input({ path: at, session: out.session! }));
+    expect(again.session).toBeUndefined();
+    expect(again.report.session).toEqual({ action: 'kept' });
   });
 });
 
