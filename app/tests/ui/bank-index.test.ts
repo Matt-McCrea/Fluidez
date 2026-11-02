@@ -1,52 +1,36 @@
 // The card builders look sentences up in indexes instead of scanning the whole bank once per card
 // (audit P11: corpusAlternatives, otherEnglish and otherSpanish cost 40 to 140 ms a card on the full
 // bank, and dialogue-cards held the worker for over a minute). An index must change nothing about
-// which card comes out, so it is checked three ways: against verbatim copies of the scans it
-// replaced, on a bank that grows the way Bundle.extend grows it, and as whole cards against a
-// sample written down before the indexes existed (__snapshots__/bank-index-cards.txt).
+// which card comes out, so it is checked three ways: against plain scans of the bank (the pools
+// cut out with filter, then the same neighbours picked from them), on a bank that grows the way
+// Bundle.extend grows it, and as whole cards against a sample written down
+// (__snapshots__/bank-index-cards.txt, written again when the wrong options of a card changed:
+// near neighbours, with the same names in every option, instead of sentences drawn at random).
 import { beforeAll, describe, expect, test } from 'vitest';
 import type { PracticeItem, PracticeOp, ReviewItem } from '../../src/compiler';
 import { BankSentence } from '../../src/content/schema';
-import { deaccent } from '../../src/engine';
 import { normEnglish } from '../../src/check/translate/english';
-import { corpusAlternatives, rng, shuffle } from '../../src/exercises';
+import { corpusAlternatives } from '../../src/exercises';
+import { namesOf } from '../../src/exercises/licence';
+import { nearest } from '../../src/exercises/neighbours';
 import { fixtureContent } from '../../src/ui/fixtures';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import { otherEnglish, otherSpanish, practiceCard, reviewCard, type Card } from '../../src/ui/session/cards';
 import { fixtureBundle } from './driver';
 
-// ---------------------------------------------------------------- the scans, as they were
-
-const norm = (s: string) => deaccent(s.toLowerCase()).replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+// ---------------------------------------------------------------- the scans
 
 const scanAlternatives = (bank: readonly BankSentence[], s: BankSentence): string[] => {
   const k = normEnglish(s.en);
   return bank.filter((b) => b.id !== s.id && !/\n/.test(b.es) && (normEnglish(b.en) === k || b.acceptEn.some((e) => normEnglish(e) === k))).map((b) => b.es);
 };
 
-function scanEnglish(bank: readonly BankSentence[], right: string, key: string, n = 2, unit?: string): string[] {
-  const r = rng(key);
-  const k = norm(right);
-  const pool = bank.filter((s) => norm(s.en) !== k);
-  const near = unit ? pool.filter((s) => s.unit === unit) : [];
-  const picked = shuffle(near.length >= n ? near : pool, r).map((s) => s.en);
-  const out: string[] = [];
-  for (const p of picked) { if (!out.some((o) => norm(o) === norm(p))) out.push(p); if (out.length >= n) break; }
-  return out;
-}
-
-function scanSpanish(bank: readonly BankSentence[], right: string, key: string, n = 2, unit?: string): string[] {
-  const r = rng(`${key}:es`);
-  const k = norm(right);
-  const pool = bank.filter((s) => norm(s.es) !== k);
-  const near = unit ? pool.filter((s) => s.unit === unit) : [];
-  const out: string[] = [];
-  for (const p of shuffle(near.length >= n ? near : pool, r).map((s) => s.es)) {
-    if (!out.some((o) => norm(o) === norm(p))) out.push(p);
-    if (out.length >= n) break;
-  }
-  return out;
+/** The nearest other sentences (exercises/neighbours.ts), from pools cut out of the whole bank by plain filters, not by the index. */
+function scanNear(bank: readonly BankSentence[], s: BankSentence, side: 'en' | 'es', key: string, n: number): string[] {
+  const o = { side, n, key: `${key}:${side}`, names: namesOf(bank), pair: (r: BankSentence) => r };
+  const own = s.unit ? nearest(s, bank.filter((r) => r.unit === s.unit), o) : [];
+  return (own.length >= n ? own : nearest(s, bank, o)).map((r) => r[side]);
 }
 
 // ---------------------------------------------------------------- a bank built to collide
@@ -81,11 +65,9 @@ function expectSameAsScans(bank: readonly BankSentence[]) {
     expect(corpusAlternatives(bank, s), s.id).toEqual(scanAlternatives(bank, s));
     for (const key of KEYS) {
       for (const n of [2, 3]) {
-        for (const unit of [s.unit, undefined, 'u07', 'nowhere']) {
-          const bundle = { bank } as unknown as Bundle;
-          expect(otherEnglish(bundle, s.en, key, n, unit), `${s.id} ${key} en`).toEqual(scanEnglish(bank, s.en, key, n, unit));
-          expect(otherSpanish(bundle, s.es, key, n, unit), `${s.id} ${key} es`).toEqual(scanSpanish(bank, s.es, key, n, unit));
-        }
+        const bundle = { bank } as unknown as Bundle;
+        expect(otherEnglish(bundle, s, key, n), `${s.id} ${key} en`).toEqual(scanNear(bank, s, 'en', key, n));
+        expect(otherSpanish(bundle, s, key, n), `${s.id} ${key} es`).toEqual(scanNear(bank, s, 'es', key, n));
       }
     }
   }
@@ -185,8 +167,8 @@ describe('on the real bank', () => {
     expect(rows.length).toBeGreaterThan(15);
     for (const s of rows) {
       expect(corpusAlternatives(b.bank, s), s.id).toEqual(scanAlternatives(b.bank, s));
-      expect(otherEnglish(b, s.en, `pr:${s.id}`, 2, s.unit), s.id).toEqual(scanEnglish(b.bank, s.en, `pr:${s.id}`, 2, s.unit));
-      expect(otherSpanish(b, s.es, `pr:${s.id}`, 3, s.unit), s.id).toEqual(scanSpanish(b.bank, s.es, `pr:${s.id}`, 3, s.unit));
+      expect(otherEnglish(b, s, `pr:${s.id}`, 2), s.id).toEqual(scanNear(b.bank, s, 'en', `pr:${s.id}`, 2));
+      expect(otherSpanish(b, s, `pr:${s.id}`, 3), s.id).toEqual(scanNear(b.bank, s, 'es', `pr:${s.id}`, 3));
     }
     expect(rows.some((s) => scanAlternatives(b.bank, s).length > 0), 'some of the rows have other Spanish for the same English').toBe(true);
   }, 120_000);

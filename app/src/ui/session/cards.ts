@@ -19,12 +19,13 @@ import { bankIndex } from '../../exercises/bank-index';
 import { INTERCHANGEABLE } from '../../exercises/lexeme';
 import { askedOfYou } from '../../exercises/addressee';
 import { namesOf, placesOf } from '../../exercises/licence';
+import { nearest } from '../../exercises/neighbours';
 import { recombineTurn } from '../../exercises/recombine';
 import { fixBreaks, isMultiTurn, productionView, turnView, type TurnView } from '../../exercises/dialogue';
 import { englishVariants } from './engvariants';
 import { hash32 } from '../../exercises/rng';
 import type { Feature, RecombineItem, TransformItem } from '../../exercises/types';
-import { looksSpanish, type Bundle } from '../data/bundle';
+import { looksSpanish, type Bundle, type Segment } from '../data/bundle';
 import { licensedTenses } from './tenses';
 
 export type Lang = 'es' | 'en';
@@ -96,43 +97,33 @@ const norm = (s: string) => deaccent(s.toLowerCase()).replace(/[^\p{L}\p{N}\s]/g
 
 // ---------------------------------------------------------------- distractors
 
-/** The bank once per bundle, for distractors: every row with the text it is compared by, and the rows of each unit (both in bank order). */
-interface Row { s: BankSentence; en: string; es: string }
-const bankRows = bankIndex(() => ({ all: [] as Row[], unit: new Map<string, Row[]>() }), (pool, s) => {
-  const row = { s, en: norm(s.en), es: norm(s.es) };
-  pool.all.push(row);
+/** The bank once per bundle, for distractors: every row, and the rows of each unit (both in bank order). */
+const bankRows = bankIndex(() => ({ all: [] as BankSentence[], unit: new Map<string, BankSentence[]>() }), (pool, s) => {
+  pool.all.push(s);
   if (!s.unit) return;
   const rows = pool.unit.get(s.unit);
-  if (rows) rows.push(row); else pool.unit.set(s.unit, [row]);
+  if (rows) rows.push(s); else pool.unit.set(s.unit, [s]);
 });
 
-/** The sentences a distractor is drawn from: those of the unit when there are n of them, else the whole bank; never equal to `right` on `side`. */
-function distractorPool(b: Bundle, side: 'en' | 'es', right: string, n: number, unit?: string): BankSentence[] {
+/**
+ * Up to n other sentences of the bank to stand beside `s` as wrong options, shown in `side`: the nearest of its own unit
+ * when the unit has n of them, else of the whole bank (exercises/neighbours.ts says what near is). Stable for the key.
+ */
+function neighbourRows(b: Bundle, s: BankSentence, side: 'en' | 'es', key: string, n: number): BankSentence[] {
   const rows = bankRows(b.bank);
-  const k = norm(right);
-  const differs = (r: Row) => r[side] !== k;
-  const near = unit ? (rows.unit.get(unit) ?? []).filter(differs) : [];
-  return (near.length >= n ? near : rows.all.filter(differs)).map((r) => r.s);
+  const o = { side, n, key: `${key}:${side}`, names: namesOf(b.bank), pair: (r: BankSentence) => r };
+  const own = s.unit ? nearest(s, rows.unit.get(s.unit) ?? [], o) : [];
+  return own.length >= n ? own : nearest(s, rows.all, o);
 }
 
-/** Up to n other English sentences from the bank, stable for (key), never equal to the right one. */
-export function otherEnglish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
-  const r = rng(key);
-  const picked = shuffle(distractorPool(b, 'en', right, n, unit), r).map((s) => s.en);
-  const out: string[] = [];
-  for (const p of picked) { if (!out.some((o) => norm(o) === norm(p))) out.push(p); if (out.length >= n) break; }
-  return out;
+/** Up to n other English sentences to stand beside the English of `s`, stable for (key). */
+export function otherEnglish(b: Bundle, s: BankSentence, key: string, n = 2): string[] {
+  return neighbourRows(b, s, 'en', key, n).map((r) => r.en);
 }
 
-/** Up to n other Spanish sentences from the bank (same unit when it can), never equal to the right one. */
-export function otherSpanish(b: Bundle, right: string, key: string, n = 2, unit?: string): string[] {
-  const r = rng(`${key}:es`);
-  const out: string[] = [];
-  for (const p of shuffle(distractorPool(b, 'es', right, n, unit), r).map((s) => s.es)) {
-    if (!out.some((o) => norm(o) === norm(p))) out.push(p);
-    if (out.length >= n) break;
-  }
-  return out;
+/** Up to n other Spanish sentences to stand beside the Spanish of `s`, stable for (key). */
+export function otherSpanish(b: Bundle, s: BankSentence, key: string, n = 2): string[] {
+  return neighbourRows(b, s, 'es', key, n).map((r) => r.es);
 }
 
 /** Nodes of each kind, once per bundle (distractor pools). */
@@ -152,33 +143,50 @@ function poolOf(b: Bundle, kind: string | undefined): NodeId[] {
   return m.get(kind ?? '') ?? [];
 }
 
-/** Up to n distinct values from random members of a node's kind pool (stable for the key). */
-function otherNodes(b: Bundle, node: NodeId, key: string, pick: (id: NodeId) => string | undefined, right: string, n: number): string[] {
-  const r = rng(key);
-  const pool = poolOf(b, b.node(node)?.kind);
-  const band = b.node(node)?.band;
-  const cands: Array<{ v: string; score: number }> = [];
-  for (let tries = 0; tries < 80 && cands.length < 24 && pool.length > 1; tries++) {
-    const id = pool[Math.floor(r() * pool.length)];
-    if (id === node) continue;
-    const v = pick(id);
-    if (!v || norm(v) === norm(right) || cands.some((o) => norm(o.v) === norm(v))) continue;
-    // look-alikes make a real choice: similar length, same band, same kind of sentence
-    const score = Math.abs(v.length - right.length) / Math.max(4, right.length)
-      + (b.node(id)?.band === band ? 0 : 0.5) + (/[?¿]/.test(v) === /[?¿]/.test(right) ? 0 : 0.3);
-    cands.push({ v, score });
-  }
-  return cands.sort((a, c) => a.score - c.score).slice(0, n).map((c) => c.v);
+/** The parts of speech a word may be mistaken for another of: a noun beside a noun, a verb beside a verb, the little words together. */
+const posGroup = (pos: string | undefined) => (pos === 'noun' || pos === 'verb' || pos === 'adj' || pos === 'adv' || pos === 'num' ? pos : 'little');
+const PLURAL_ARTICLE = /^(los|las|unos|unas)\s/i;
+
+/**
+ * Up to n other nodes' first pair, shown in `side`, to stand beside `seg`, one of the node's own pairs: of its kind (a word beside a word, a phrase beside a phrase),
+ * and for a word of its part of speech, number and variety; about its length; taught around the same time (a field, where the course can tell)
+ * and not after it; and never saying what it says (exercises/neighbours.ts). Stable for the key.
+ */
+function neighbourNodes(b: Bundle, node: NodeId, seg: Segment, key: string, side: 'en' | 'es', n: number): string[] {
+  const me = b.node(node);
+  if (!me) return [];
+  const here = b.course.teachPos.get(node) ?? Infinity;
+  const word = me.kind === 'lexeme';
+  const group = posGroup(me.pos);
+  const plural = PLURAL_ARTICLE.test(seg.es);
+  const synonyms = INTERCHANGEABLE.filter((set) => set.some((x) => seg.es.toLowerCase().includes(x)));
+  const firstPair = (id: NodeId) => { const p = b.segments(id)[0]; return p && id !== node ? p : undefined; };
+  const picked = nearest<NodeId>(seg, poolOf(b, me.kind), {
+    side, n, key: `${key}:${side}`, names: namesOf(b.bank), pair: firstPair, word,
+    allow: (id) => {
+      const x = b.node(id);
+      if (!x || x.variety !== me.variety) return false;
+      if (!word) return true;
+      const p = firstPair(id);
+      return posGroup(x.pos) === group && !!p && PLURAL_ARTICLE.test(p.es) === plural && !synonyms.some((set) => set.some((w) => p.es.toLowerCase().includes(w)));
+    },
+    extra: (id) => {
+      const at = b.course.teachPos.get(id) ?? Infinity;
+      // taught long before or after: further away; taught after: not yet met, further still
+      return Math.min(Math.abs(at - here), 200) / 400 + (at > here ? 0.25 : 0) + (b.node(id)?.band === me.band ? 0 : 0.2);
+    },
+  });
+  return picked.map((id) => b.segments(id)[0][side]);
 }
 
 /** Other nodes' English, for bare recognition cards. */
-function otherNodeEnglish(b: Bundle, node: NodeId, right: string, key: string, n = 2): string[] {
-  return otherNodes(b, node, key, (id) => b.segments(id)[0]?.en, right, n);
+function otherNodeEnglish(b: Bundle, node: NodeId, seg: Segment, key: string, n = 2): string[] {
+  return neighbourNodes(b, node, seg, key, 'en', n);
 }
 
 /** Other nodes' Spanish (same kind), for "pick the Spanish" cards. */
-function otherNodeSpanish(b: Bundle, node: NodeId, right: string, key: string, n = 2): string[] {
-  return otherNodes(b, node, `${key}:es`, (id) => b.segments(id)[0]?.es, right, n);
+function otherNodeSpanish(b: Bundle, node: NodeId, seg: Segment, key: string, n = 2): string[] {
+  return neighbourNodes(b, node, seg, key, 'es', n);
 }
 
 function mcq(key: string, ask: string, prompt: Txt | undefined, right: Txt, wrong: Txt[], why: string, extra: Partial<McqCard> = {}): McqCard {
@@ -381,6 +389,19 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
   };
 }
 
+/** What a sentence means, asked as a choice among near neighbours. Fewer than two of them and it is typed, since a choice of two with nothing alike to pick from is a free pass; an exchange of several turns cannot be typed, so it keeps its one. */
+function meaningChoice(key: string, s: BankSentence, b: Bundle, why: string, ask = MEANS): Card {
+  const wrong = otherEnglish(b, s, key, 2);
+  return wrong.length >= 2 || (wrong.length && isMultiTurn(s)) ? mcq(key, ask, es(s.es), en(s.en), wrong.map(en), why) : typeMeaning(key, s.es, s.en, s.acceptEn ?? [], why);
+}
+
+/** What a word or phrase means, the same way. */
+function nodeMeaningChoice(key: string, node: NodeId, b: Bundle, seg: Segment): Card {
+  const wrong = otherNodeEnglish(b, node, seg, key);
+  const why = `${seg.es} means "${seg.en}".`;
+  return wrong.length >= 2 ? mcq(key, MEANS, es(seg.es), en(seg.en), wrong.map(en), why) : typeMeaning(key, seg.es, seg.en, [], why);
+}
+
 const words = (t: string) => deaccent(t.toLowerCase()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
 
 /** A sentence with the stop it needs before another sentence follows it: "…del todo." stays, "No es de Cartagena" gets one. */
@@ -520,7 +541,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     const why = seg ? `${seg.es} means "${seg.en}". The rest of the sentence gives the context.` : `This is about: ${title.toLowerCase()}.`;
     if (fmt === 'typeEn' && !isMultiTurn(s) && wordCount(s.en) <= 14) return typeMeaning(item.id, s.es, s.en, s.acceptEn ?? [], why);
     if (fmt === 'pickEs' && !isMultiTurn(s)) {
-      const wrong = otherSpanish(b, s.es, item.id, 3, s.unit);
+      const wrong = otherSpanish(b, s, item.id, 3);
       const use = wrong.length >= 3 ? wrong : wrong.length >= 2 ? wrong.slice(0, 2) : [];
       if (use.length) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), use.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
     }
@@ -528,10 +549,10 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
     if (vars) return mcq(item.id, MEANS, es(s.es), en(s.en), vars.map(en), why);
     if (fmt === 'pickFeature' && !isMultiTurn(s)) {
       // nothing re-inflects: ask it the other way round, with four options when there are
-      const alt = otherSpanish(b, s.es, item.id, 3, s.unit);
+      const alt = otherSpanish(b, s, item.id, 3);
       if (alt.length >= 3) return mcq(item.id, 'Which one says this?', en(s.en), es(s.es), alt.map(es), seg ? `${seg.es} means "${seg.en}".` : `It's ${s.es}`);
     }
-    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en), why);
+    return meaningChoice(item.id, s, b, why);
   }
   if (s && item.direction === 'productive' && reviewTargets(item).length === 1) {
     const f = variant === 'cloze' ? 'cloze' : productiveFormat(item.node, session ?? item.id);
@@ -545,8 +566,7 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   }
   if (s) {
     // turns that do not line up: recognise the exchange instead
-    return mcq(item.id, MEANS, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
-      seg ? `${seg.es} means "${seg.en}". The rest gives the context.` : `This is about: ${title.toLowerCase()}.`);
+    return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}". The rest gives the context.` : `This is about: ${title.toLowerCase()}.`);
   }
   // bare card: no fresh sentence left for this node
   if (!seg) return { type: 'read', key: item.id, ask: 'Have another look', es: b.node(item.node)?.es ?? title, en: title, why: '' };
@@ -554,11 +574,11 @@ export function reviewCard(item: ReviewItem, b: Bundle, variant: 'meaning' | 'pi
   if (item.direction === 'receptive') {
     if (fmt === 'typeEn' && wordCount(seg.en) <= 6) return typeMeaning(item.id, seg.es, seg.en, [], `${seg.es} means "${seg.en}".`);
     if (fmt === 'pickEs') {
-      const wrong = otherNodeSpanish(b, item.node, seg.es, item.id, 3);
+      const wrong = otherNodeSpanish(b, item.node, seg, item.id, 3);
       const use = wrong.length >= 3 ? wrong : wrong.slice(0, 2);
       if (use.length >= 2) return mcq(item.id, 'Which one says this?', en(seg.en), es(seg.es), use.map(es), `"${seg.en}" is ${seg.es}`);
     }
-    return mcq(item.id, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, item.id).map(en), `${seg.es} means "${seg.en}".`);
+    return nodeMeaningChoice(item.id, item.node, b, seg);
   }
   return {
     type: 'type', key: item.id, ask: SAY, prompt: en(seg.en), answerLang: 'es', placeholder: 'Type it in Spanish',
@@ -613,9 +633,9 @@ export function learnRetrieval(item: LearnItem, b: Bundle, round: number, n?: nu
   }
   switch (learnFormat(round, item.productive !== false)) {
     case 'recognise':
-      return mcq(key, MEANS, es(seg.es), en(seg.en), otherNodeEnglish(b, item.node, seg.en, key).map(en), `${seg.es} means "${seg.en}".`);
+      return nodeMeaningChoice(key, item.node, b, seg);
     case 'pickSpanish': {
-      const wrong = otherNodeSpanish(b, item.node, seg.es, key);
+      const wrong = otherNodeSpanish(b, item.node, seg, key);
       if (wrong.length >= 2) return mcq(key, SAY, en(seg.en), es(seg.es), wrong.map(es), why);
       break;
     }
@@ -658,10 +678,9 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
 
 // ---------------------------------------------------------------- practice on bank sentences
 
-function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle, ask = 'What does this mean?'): McqCard {
+function meaningCard(item: PracticeItem, s: BankSentence, b: Bundle, ask = 'What does this mean?'): Card {
   const seg = b.segments(item.node)[0];
-  return mcq(item.id, ask, es(s.es), en(s.en), otherEnglish(b, s.en, item.id, 2, s.unit).map(en),
-    seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`);
+  return meaningChoice(item.id, s, b, seg ? `${seg.es} means "${seg.en}".` : `It means "${s.en}".`, ask);
 }
 
 function translateCard(item: PracticeItem, s: BankSentence, b: Bundle): Card {

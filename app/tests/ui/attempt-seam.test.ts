@@ -10,6 +10,9 @@
 // same calls (gradeOf, reviewSentence, seen, climb) are made on different cards, and a miss in practice is now re-asked in the recap as
 // an exposure. Later the same day: a return serves the cards likeliest still to be there and no run over misses, so the irregular learner, the one
 // who goes away, is dealt different cards; the same calls again.
+// Later again: the wrong options of a choice card are near neighbours with the same names in every option (a fixture bank with one
+// unit and one name has none for many sentences, so those are typed, which takes longer, so a few cards fewer fit the minutes); the
+// same calls on other cards.
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
@@ -17,9 +20,9 @@ import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
 
 const EXPECTED = {
-  sessions: { events: 238, eventDigest: '47c6f21a5f252a45b90a15de70dfe6de2fb1ff5f08f1b5d3363bc8a9e459aa02', memoryDigest: '7c5987252f214684c257a328902c5461b5eb8af749a2dc8de6c163caf3a2be04' },
+  sessions: { events: 233, eventDigest: 'a80459131eeba29f4fca374621fa294fc28a818a27bf650e00dfae5ed5d0122e', memoryDigest: 'b44d5ea37606a4c157403d61ffc85349a047e595beee7e4a167ee991c67d8c81' },
   dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
-  freeplay: { events: 270, eventDigest: '722842906e49e87ce41fa78d56e628d47bbe7d357190d62f69e73d0e4aaac697', memoryDigest: '0ee3ad9b3bbe7b99d46d153a6c5436e0934128113173a3642058ac48e9391169' },
+  freeplay: { events: 265, eventDigest: '4c14eadc04772a2c85f7ed76b0419e886a6acf7442187abda221c7a09d2dc2a3', memoryDigest: '298bc63508fe7ec7ec0443fdfcc94c30c950c91032732ee1dc4f059c23a69c5c' },
   average: { events: 5136, eventDigest: '88f5d23a032aa46c1563d6e3c46147af2576e00a01f0b6524752eb6d51cae4fb', memoryDigest: 'b50dce4ccdf3a3cfe0cc6ea284fe642b8c93f915d62a84593c49bac64f43b3af' },
   irregular: { events: 2942, eventDigest: '42ff7dd74cb3f650c7290ecac9dd2728bc42c064d043cc97d9c6c6ea353c23f9', memoryDigest: 'f93b6353877abd12db535244be9b0dcefa1da32564bdd69239bbf50e415b80f4' },
 };
