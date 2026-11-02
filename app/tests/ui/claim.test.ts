@@ -4,13 +4,17 @@
 // climb, a right first time or an entry in Weak spots.
 import { describe, expect, it } from 'vitest';
 import type { Item, PracticeItem } from '../../src/compiler';
+import { rng } from '../../src/exercises/rng';
+import { RESCUE_OP } from '../../src/games/credit';
+import { Rescue } from '../../src/games/rescue';
 import type { GraphNode } from '../../src/content/schema';
 import { Rating, type ReviewEvent } from '../../src/learner';
 import { compact, delayedAccuracy } from '../../src/learner/events';
 import { recentMisses, weakSpots } from '../../src/learner/weak';
 import { claimOffered, typedOutcome } from '../../src/ui/components/card';
-import { gradeOf, missRetest, type Outcome } from '../../src/ui/session/attempt';
+import { gradeOf, missRetest, type Outcome, type Retest } from '../../src/ui/session/attempt';
 import { practiceCard, reviewCard, type Card, type Check, type TypeCard } from '../../src/ui/session/cards';
+import { Freeplay, claimBand } from '../../src/ui/session/freeplay';
 import { SessionRunner, compilePlan } from '../../src/ui/session/runner';
 import { session, world } from './driver';
 
@@ -160,5 +164,93 @@ describe('Weak spots leave a claim out', () => {
     expect(delayedAccuracy([old, plain], { minAgeDays: 0 })).toBe(1);
     expect(delayedAccuracy([old], { minAgeDays: 0 })).toBeUndefined();
     expect(compact({ events: [old], summary: { upTo: 0, counts: {} } }, 90, NOW).events).toHaveLength(1);
+  });
+});
+
+describe('in a quick review and in Rescate', () => {
+  const DAY = 86_400_000;
+  /** Four nodes the learner owns in both directions, all due: a productive one is a sentence to say. */
+  async function due() {
+    const w = await world();
+    const at = w.clock.t - 30 * DAY;
+    for (const n of ['g:ser-identity', 'c:me-llamo', 'c:soy-de', 'l:café']) {
+      w.learner.seedKnown(n, { at, productive: true, receptive: { stability: 5, dueAt: at + 5 * DAY }, productiveCard: { stability: 5, dueAt: at + 5 * DAY } });
+    }
+    return w;
+  }
+  const deps = (w: Awaited<ReturnType<typeof due>>, retest?: (r: Retest) => void) => ({ learner: w.learner, bundle: w.bundle, now: w.now, rng: rng('claim'), ...(retest ? { retest } : {}) });
+  const said = (tries: 1 | 2 = 2): Outcome => ({
+    correct: true, lenient: true, claimed: true, tries, ms: 9000, given: 'Me llamo Ana', shown: 'Me llamo Tomás.', fmt: 'type:en>es',
+  });
+
+  it('a claim is Hard, flagged, never a novel pass, and the sentence comes back through the retest', async () => {
+    const w = await due();
+    const retests: Retest[] = [];
+    const run = new Freeplay({ kind: 'quickReview' }, deps(w, (r) => retests.push(r)));
+    const card = run.next()!;
+    expect(card.type === 'type' && card.claim).toBe(true);
+    const node = run.reviewing!.node;
+    run.answer(said());
+    const ev = w.learner.events().filter((e) => e.node === node && e.op === 'quick');
+    expect(ev).toHaveLength(1);
+    expect(ev[0]).toMatchObject({ grade: Rating.Hard, claimed: true, novel: false, scored: 'review' });
+    expect(retests).toEqual([{ node, direction: 'productive', sentence: expect.any(String) }]);
+    expect(w.learner.attempts().find((r) => r.node === node)).toMatchObject({ claimed: true, verdict: 'unconfirmed', given: 'Me llamo Ana' });
+  });
+
+  it('is not a right answer on the score: not right first time, not right on the second try', async () => {
+    for (const tries of [1, 2] as const) {
+      const w = await due();
+      const run = new Freeplay({ kind: 'quickReview' }, deps(w));
+      run.next();
+      run.answer(said(tries));
+      expect(run.answered).toBe(1);
+      expect(run.right).toBe(0);
+      expect(run.retried).toBe(0);
+    }
+  });
+
+  it('a right answer and a miss queue nothing: a lapse brings a miss back, and a hit needs no retest', async () => {
+    const w = await due();
+    const retests: Retest[] = [];
+    const run = new Freeplay({ kind: 'quickReview' }, deps(w, (r) => retests.push(r)));
+    run.next();
+    run.answer({ correct: true, tries: 1, ms: 5000 });
+    run.next();
+    run.answer({ correct: false, tries: 2, ms: 5000 });
+    expect(retests).toEqual([]);
+  });
+
+  it('Rescate takes the same claim: a real review of a due card, Hard, flagged, and neither saved nor missed', async () => {
+    const w = await due();
+    const retests: Retest[] = [];
+    const r = new Rescue({ ...deps(w, (x) => retests.push(x)), finished: 0 });
+    const first = r.next()!;
+    const node = w.learner.due(w.now())[0].node;
+    expect(first.type === 'type' && first.claim).toBe(true);
+    r.answer(said());
+    const ev = w.learner.events().filter((e) => e.op === RESCUE_OP);
+    expect(ev).toHaveLength(1);
+    expect(ev[0]).toMatchObject({ node, grade: Rating.Hard, claimed: true, novel: false });
+    expect(retests).toHaveLength(1);
+    while (r.next()) r.answer({ correct: true, tries: 1, ms: 1 });
+    const res = r.result();
+    expect(res).toMatchObject({ saved: 3, of: 3, missed: 0, claimed: 1 });
+  });
+
+  it('a round of nothing but claims is not a round of nothing answered', async () => {
+    const w = await due();
+    const r = new Rescue({ ...deps(w), finished: 0 });
+    while (r.next()) r.answer(said());
+    expect(r.result()).toMatchObject({ saved: 0, of: 0, missed: 0, claimed: 4 });
+  });
+});
+
+describe('who is offered it', () => {
+  const course = { units: [{ band: 'A1' }, { band: 'A2' }, { band: 'B1' }] } as Parameters<typeof claimBand>[0];
+  it('from A2 up, by where the learner is on the course', () => {
+    expect(claimBand(course, { unit: 0 })).toBe(false);
+    expect(claimBand(course, { unit: 1 })).toBe(true);
+    expect(claimBand(course, { unit: 2 })).toBe(true);
   });
 });

@@ -8,7 +8,8 @@ import { CardView, Continue } from '../components/card';
 import { Heading, undash } from '../components/text';
 import { useApp } from '../context';
 import type { Card } from '../session/cards';
-import { bestKey, DEFAULT_MINUTES, Freeplay, taughtTenses, tenseName, verbsMet } from '../session/freeplay';
+import { withMiss } from '../../compiler/remediate';
+import { bestKey, claimBand, DEFAULT_MINUTES, Freeplay, taughtTenses, tenseName, verbsMet } from '../session/freeplay';
 import type { PracticeSpec } from '../session/practice-spec';
 import { Board } from '../games/Board';
 import { Play, type GameChoice } from '../games/Play';
@@ -147,7 +148,8 @@ function CheckpointResult({ run }: { run: Freeplay }) {
 function Run({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: () => void; onExit: () => void; onSwitch: (s: PracticeSpec) => void }) {
   const app = useApp();
   const { learner, bundle, ui, now } = app;
-  const run = useMemo(() => new Freeplay(spec, { learner, bundle, now, finished: ui.path.unit, rng: rng(`free:${learner.sessionIndex}:${now()}`) }), []);
+  const run = useMemo(() => new Freeplay(spec, { learner, bundle, now, finished: ui.path.unit, rng: rng(`free:${learner.sessionIndex}:${now()}`),
+    retest: (r) => { void ui.setPath({ ...ui.path, remediate: withMiss(ui.path.remediate ?? [], r.node, now()) }); } }), []);
   const total = run.minutes * 60 || DEFAULT_MINUTES[spec.kind] * 60;
   const startedAt = useRef(now());
   const [left, setLeft] = useState(total);
@@ -216,7 +218,7 @@ function Run({ spec, onDone, onExit, onSwitch }: { spec: PracticeSpec; onDone: (
       {spec.title ? <p class="ask" data-title>{spec.title}</p> : null}
       <div class="timer" role="timer" aria-live="off" data-clock>{clock(left)}</div>
       <CardView
-        key={card.key} card={card} pos={run.total ? { n: shown, of: run.total } : undefined} next="Next"
+        key={card.key} card={card} pos={run.total ? { n: shown, of: run.total } : undefined} next="Next" claim={spec.kind === 'quickReview' && claimBand(bundle.course, ui.path)}
         onDone={(o) => {
           run.answer(o);
           const out = left <= 0 || total - Math.round((now() - startedAt.current) / 1000) <= 0;

@@ -6,7 +6,7 @@
 //   translate    exposure only (op 'grind')
 //   nodes        exposure (op 'train') plus the output ladder step; a contrast has no sentence of
 //                its own, so it is trained on its own items (content/contrasts), never on a bank sentence
-import { knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
+import { bandAt, knownSet, type PracticeItem, type ReviewItem } from '../../compiler';
 import type { ContrastDecides, ContrastItem, NodeId } from '../../content/schema';
 import { checkExact } from '../../check';
 import { wordHint } from '../../check/wordhint';
@@ -20,7 +20,7 @@ import type { Bundle } from '../data/bundle';
 import { formWhy, practiceCard, reviewCard, scriptCard, type Card, type Check, type TypeCard } from './cards';
 import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast, type ContrastForm } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
-import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
+import { claimOf, climb, gradeOf, logAnswer, missRetest, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome, type Retest } from './attempt';
 import { creditRescue, RESCUE_OP } from '../../games/credit';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
@@ -39,7 +39,19 @@ const QUICK_MAX = 60;
  * `rescue`: a quick review played as Rescate (games/rescue.ts): only the cards that are due, at most this many, graded as real
  * reviews through games/credit.ts, and with no time on them (a game's clock never reaches the schedule).
  */
-export interface FreeplayDeps { learner: Learner; bundle: Bundle; rng: Rng; now: () => number; finished?: number; rescue?: { max: number } }
+export interface FreeplayDeps {
+  learner: Learner; bundle: Bundle; rng: Rng; now: () => number; finished?: number; rescue?: { max: number };
+  /**
+   * A review the learner said "mine says the same thing" to comes back in a fresh sentence (R9, attempt.ts missRetest). A lesson has a
+   * "Before you go" for that and a run of free practice has none, so it is handed on to whoever owns the remediation list.
+   */
+  retest?: (r: Retest) => void;
+}
+
+/** Whether "Mine says the same thing" is offered in a run that grades for real: from A2 up, by where the learner is on the course. */
+export function claimBand(course: Parameters<typeof bandAt>[0], path: Parameters<typeof bandAt>[1]): boolean {
+  return bandAt(course, path) !== 'A1';
+}
 
 // ---------------------------------------------------------------- plain names
 
@@ -170,8 +182,9 @@ export class Freeplay {
     // a card that asked for no answer is not an answer: nothing for the score
     if (!o.exposure) {
       this.answered += 1;
-      if (o.correct && o.tries <= 1) this.right += 1;
-      else if (o.correct && o.tries === 2) this.retried += 1;
+      // a claim is not a right answer: the app could not tell (R9)
+      if (o.correct && !o.claimed && o.tries <= 1) this.right += 1;
+      else if (o.correct && !o.claimed && o.tries === 2) this.retried += 1;
     }
     logAnswer(this.d.learner, this.d.now(), this.cur.about, o);
     this.cur.grade(o);
@@ -313,13 +326,17 @@ export class Freeplay {
         if (o.exposure) { seen(learner, [node], this.d.now()); return; }
         const grade = gradeOf(o);
         if (!learner.hasCard(node, dir)) return;
+        // a claim is never a novel pass
+        const fresh = novel && !o.claimed;
         if (this.d.rescue) {
           // through the games' one door: due cards only, and no time on the answer
-          if (!creditRescue(learner, { node, direction: dir, grade, at: this.d.now(), tries: tries12(o.tries), sentence, novel, ...slipOf(o) })) return;
+          if (!creditRescue(learner, { node, direction: dir, grade, at: this.d.now(), tries: tries12(o.tries), sentence, novel: fresh, ...slipOf(o), ...claimOf(o) })) return;
         } else {
-          const opts = { at: this.d.now(), ms: o.ms, op, tries: tries12(o.tries), sentence, novel, ...slipOf(o) };
+          const opts = { at: this.d.now(), ms: o.ms, op, tries: tries12(o.tries), sentence, novel: fresh, ...slipOf(o), ...claimOf(o) };
           reviewSentence(learner, [node], dir, grade, opts);
         }
+        const again = missRetest({ op: 'review', node, sentence, direction: dir }, o);
+        if (again) this.d.retest?.(again);
         if (sentence) this.markSeen(sentence);
         if (own) {
           const seenBefore = learner.ledger.hasSeen('item', `cx:${own}`);

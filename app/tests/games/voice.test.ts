@@ -97,7 +97,7 @@ describe('the score against the best', () => {
 });
 
 describe('what a rescue says', () => {
-  const res = (over: Partial<RescueResult> = {}): RescueResult => ({ saved: 9, of: 12, missed: 3, within: { from: 2, to: 21 }, stillDue: 0, ...over });
+  const res = (over: Partial<RescueResult> = {}): RescueResult => ({ saved: 9, of: 12, claimed: 0, missed: 3, within: { from: 2, to: 21 }, stillDue: 0, ...over });
 
   it('when the saved ones come back and that the missed ones come back sooner, and nothing about how many are left to do', () => {
     expect(rescueLines(res())).toEqual(['The ones you saved are set to come back in 2 to 21 days.', 'The 3 you missed come back sooner.']);

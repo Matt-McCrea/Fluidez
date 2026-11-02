@@ -11,7 +11,7 @@ import type { Learner } from '../learner';
 import type { Bundle } from '../ui/data/bundle';
 import type { Card } from '../ui/session/cards';
 import { Freeplay, rescueCards } from '../ui/session/freeplay';
-import type { Outcome } from '../ui/session/attempt';
+import type { Outcome, Retest } from '../ui/session/attempt';
 
 const DAY_MS = 86_400_000;
 
@@ -30,13 +30,19 @@ export async function bringRescue(bundle: Bundle, unit: number): Promise<void> {
   await bundle.ensureUnits({ to: Math.min(unit, Math.max(0, bundle.course.units.length - 1)) });
 }
 
-export interface RescueDeps { learner: Learner; bundle: Bundle; now: () => number; finished?: number }
+export interface RescueDeps {
+  learner: Learner; bundle: Bundle; now: () => number; finished?: number;
+  /** where a card the learner said "mine says the same thing" to is queued to come back in a new sentence */
+  retest?: (r: Retest) => void;
+}
 
 /** What a rescue came to. */
 export interface RescueResult {
-  /** cards remembered (on either try) and cards asked */
+  /** cards remembered (on either try) and cards asked; a claim of "mine says the same thing" is neither, for the app could not tell */
   saved: number;
   of: number;
+  /** cards the learner said theirs was the same on: reviewed as Hard, and back in a new sentence */
+  claimed: number;
   /** the ones that were not, which come back sooner */
   missed: number;
   /** when the saved ones are set to come round again, in whole days from now: the nearest and the furthest */
@@ -48,12 +54,12 @@ export interface RescueResult {
 export class Rescue {
   private readonly run: Freeplay;
   /** the cards asked, to say when they come round again */
-  private readonly asked: Array<{ node: string; dir: 'receptive' | 'productive'; correct: boolean }> = [];
+  private readonly asked: Array<{ node: string; dir: 'receptive' | 'productive'; correct: boolean; claimed: boolean }> = [];
   private current?: { node: string; dir: 'receptive' | 'productive' };
 
   constructor(private readonly d: RescueDeps) {
     this.run = new Freeplay({ kind: 'quickReview' }, {
-      learner: d.learner, bundle: d.bundle, now: d.now, finished: d.finished, rng: rng(`rescue:${d.learner.sessionIndex}:${d.now()}`), rescue: { max: RESCUE_MAX },
+      learner: d.learner, bundle: d.bundle, now: d.now, finished: d.finished, rng: rng(`rescue:${d.learner.sessionIndex}:${d.now()}`), rescue: { max: RESCUE_MAX }, retest: d.retest,
     });
   }
 
@@ -69,16 +75,17 @@ export class Rescue {
 
   answer(o: Outcome): void {
     this.run.answer(o);
-    if (this.current && !o.exposure) this.asked.push({ ...this.current, correct: o.correct });
+    if (this.current && !o.exposure) this.asked.push({ ...this.current, correct: o.correct, claimed: !!o.claimed });
     this.current = undefined;
   }
 
   result(): RescueResult {
     const at = this.d.now();
-    const saved = this.asked.filter((a) => a.correct);
+    const proved = this.asked.filter((a) => !a.claimed);
+    const saved = proved.filter((a) => a.correct);
     const days = saved.flatMap((a) => { const c = this.d.learner.card(a.node, a.dir); return c ? [Math.max(1, Math.round((c.due - at) / DAY_MS))] : []; });
     return {
-      saved: saved.length, of: this.asked.length, missed: this.asked.length - saved.length,
+      saved: saved.length, of: proved.length, missed: proved.length - saved.length, claimed: this.asked.length - proved.length,
       ...(days.length ? { within: { from: Math.min(...days), to: Math.max(...days) } } : {}),
       stillDue: rescueCount(this.d.learner, at),
     };

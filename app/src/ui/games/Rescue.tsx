@@ -7,6 +7,8 @@ import { cheer, rescueLines, rescueReaction } from '../../games/reactions';
 import { CardView, Continue } from '../components/card';
 import { Heading, Txt } from '../components/text';
 import { useApp } from '../context';
+import { withMiss } from '../../compiler/remediate';
+import { claimBand } from '../session/freeplay';
 import type { Card } from '../session/cards';
 
 export function RescueGame({ onExit }: { onExit: () => void }) {
@@ -35,7 +37,7 @@ export function RescueGame({ onExit }: { onExit: () => void }) {
     setPhase('loading');
     finished.current = false;
     await bringRescue(bundle, ui.path.unit).catch(() => undefined);
-    const r = new Rescue({ learner, bundle, now, finished: ui.path.unit });
+    const r = new Rescue({ learner, bundle, now, finished: ui.path.unit, retest: (x) => { void ui.setPath({ ...ui.path, remediate: withMiss(ui.path.remediate ?? [], x.node, now()) }); } });
     const c = r.next();
     setRun(r);
     setCard(c);
@@ -83,7 +85,7 @@ export function RescueGame({ onExit }: { onExit: () => void }) {
     <main class="screen game rescue" id="main">
       <p class="ask" data-title>Rescate</p>
       <CardView
-        key={card.key} card={card} pos={run.total ? { n: shown, of: run.total } : undefined} next="Next"
+        key={card.key} card={card} pos={run.total ? { n: shown, of: run.total } : undefined} next="Next" claim={claimBand(bundle.course, ui.path)}
         onDone={(o) => {
           run.answer(o);
           const c = run.next();
