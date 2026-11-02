@@ -73,10 +73,12 @@ function irAToFuture(c: Clause): string | null {
   // the little words go in front of the verb, and a ¿ or a capital that opened it opens them
   const clitics = split?.clitics ?? [];
   if (clitics.length) {
-    const pre = ts[c.verb].pre;
-    ts[c.verb] = { ...ts[c.verb], pre: '' };
+    const { pre, core } = ts[c.verb];
+    const capital = /^\p{Lu}/u.test(core);
+    ts[c.verb] = { ...ts[c.verb], pre: '', core: capital ? core[0].toLowerCase() + core.slice(1) : core };
     clitics.forEach((cl, k) => { ts = insertTok(ts, c.verb + k, cl); });
-    ts[c.verb] = { ...ts[c.verb], pre: pre + ts[c.verb].pre };
+    const lead = ts[c.verb];
+    ts[c.verb] = { ...lead, pre: pre + lead.pre, core: capital ? lead.core[0].toUpperCase() + lead.core.slice(1) : lead.core };
   }
   return render(ts);
 }
@@ -110,20 +112,20 @@ export function futureVariants(es: string, en: string): Swapped[] {
 // ---- the preterite and the perfecto ----------------------------------------------------------
 
 /** Time words that put the event in the past and apart from now: with them the perfecto is not what is said. */
-const PAST_APART = /^(ayer|anoche|anteayer|antier|pasado|pasada|pasados|pasadas|hace|cuando|entonces|luego|después|antes|primero|finalmente|mientras|siempre|niño|niña|pequeño|pequeña|lunes|martes|miércoles|jueves|viernes|sábado|domingo|aquel|aquella|aquellos|aquellas)$/;
+const PAST_APART = /^(ayer|anoche|anteayer|antier|pasado|pasada|pasados|pasadas|hace|cuando|entonces|luego|después|antes|primero|finalmente|mientras|siempre|niño|niña|pequeño|pequeña|lunes|martes|miércoles|jueves|viernes|sábado|domingo|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|aquel|aquella|aquellos|aquellas)$/;
 /** "esa noche", "ese día": a time that is over. */
 const THAT_TIME = /^(esa|ese|esos|esas)$/;
 const A_TIME = /^(noche|día|tarde|mañana|vez|semana|mes|año|verano|invierno|época|tiempo|momento|días|noches|años|meses)$/;
 /** Verbs whose perfecto goes on until now ("he vivido aquí"): the preterite says it is over. */
 const CONTINUING = /^(ser|estar|tener|vivir|trabajar|llevar|quedar|quedarse|seguir|estudiar|esperar|durar|permanecer|haber|saber|conocer|querer|crecer|aprender)$/;
 /** Words that bring the event up to now: with them the perfecto and the preterite are both said. */
-const UP_TO_NOW = /^(hoy|ya|todavía|aún|últimamente|recientemente|alguna)$/;
+const UP_TO_NOW = /^(hoy|ya|todavía|aún|últimamente|recientemente)$/;
 /** Words that say it never happened up to now: they let a perfecto become a preterite ("nunca he estado", "nunca estuve"), and are no reason to make a preterite a perfecto ("nunca volvimos a hablar"). */
 const NEVER = /^(nunca|jamás)$/;
 const THIS_PERIOD = /^(esta|este)$/;
 const PARTICIPLE = '(?:been|gone|done|seen|eaten|taken|given|known|written|spoken|made|had|heard|said|told|found|met|bought|brought|thought|left|lost|paid|read|sent|sold|felt|kept|run|come|begun|broken|chosen|driven|fallen|forgotten|shown|thrown|won|put|set|cut|[a-z]+ed)';
 /** "have" or "has" with a participle after it, said of someone: not "would have", and not "have lunch". */
-const EN_PERFECT = new RegExp(`(?<!(?:would|could|should|might|must|to) )\\b(?:have|has)(?: not)?(?: [a-z]+)?(?: (?:already|just|never|ever|yet|finally))? ${PARTICIPLE}\\b`);
+const EN_PERFECT = new RegExp(`(?<!(?:would|could|should|might|must|may|to|not|n't) )\\b(?:have|has)(?: not)?(?: [a-z]+)?(?: (?:already|just|never|ever|yet|finally))? ${PARTICIPLE}\\b`);
 /** A perfect that goes on until now, or an event with an end that the English dates: the other tense would say something else. */
 const EN_CONTINUES = /\b(for|since|lately|recently|so far|these days|always|still|all (day|week|month|year|my life)|used to|while|when)\b/;
 
@@ -134,9 +136,12 @@ function sameEvent(toks: readonly Tok[], en: string, verb: number, toPerfecto: b
   const ws = toks.map((t) => low(t));
   if (ws.some((w, i) => PAST_APART.test(w) || /^(19|20)\d\d$/.test(w) || (w === 'a' && ws[i + 1] === 'las') || (THAT_TIME.test(w) && A_TIME.test(ws[i + 1] ?? '')))) return false;
   // next to the verb, with no comma between: "Ya comí", "Hoy me pesé", "Esta mañana encontró"
+  const verbs = finiteCandidates(toks).map((c) => c.index);
   const near = ws.some((w, i) => {
     if (Math.abs(i - verb) > 3 || (i < verb ? toks.slice(i, verb).some((t) => /[,;:]/.test(t.post)) : toks.slice(verb, i).some((t) => /[,;:]/.test(t.post)))) return false;
-    return UP_TO_NOW.test(w) || (!toPerfecto && NEVER.test(w)) || (THIS_PERIOD.test(w) && /^(mañana|tarde|noche|semana|mes|año|momento)$/.test(ws[i + 1] ?? ''));
+    // "Los que conocieron a Joaquín ya son mayores": a word in front of another verb is that verb's
+    if (i > verb && verbs.some((v) => v > verb && v <= i + 1)) return false;
+    return UP_TO_NOW.test(w) || (w === 'alguna' && ws[i + 1] === 'vez') || (!toPerfecto && NEVER.test(w)) || (THIS_PERIOD.test(w) && /^(mañana|tarde|noche|semana|mes|año|momento)$/.test(ws[i + 1] ?? ''));
   });
   return near || EN_PERFECT.test(e);
 }
@@ -189,8 +194,10 @@ export function perfectoVariants(es: string, en: string): Swapped[] {
 
 // ---- ser and estar with an adjective that takes either ------------------------------------------------------------
 
-/** Adjectives that take both: es feliz is how she is, está feliz how she seems today. Seguro is not here (safe, sure), nor joven. */
-const OPEN_ADJECTIVE = /^(feliz|felices|casad[oa]s?|solter[oa]s?|tranquil[oa]s?)$/;
+/** Adjectives that take both: es feliz is how she is, está feliz how she seems today. Seguro is not here (safe, sure), nor joven, nor tranquilo: "estoy tranquilo" is how I feel, and "soy tranquilo" another sentence. */
+const OPEN_ADJECTIVE = /^(feliz|felices|casad[oa]s?|solter[oa]s?)$/;
+/** A word that ties the sentence to a moment or a place: "hoy está feliz", "estamos felices aquí". There the copula is chosen, and the other one wrong. */
+const NOW_WORD = /^(hoy|ahora|ya|aquí|acá|ahí|allí|allá|mañana|anoche|ayer|cuando|mientras|porque|pero)$/;
 const INTENSIFIER = /^(muy|tan|bastante|demasiado|realmente|súper)$/;
 
 /** "Es feliz" and "Está feliz": the other copula, for an adjective that takes either. Rejecting the one the card did not use is the error. */
@@ -202,6 +209,9 @@ export function copulaVariants(es: string): Swapped[] {
     if (!readings.length) return;
     const k = INTENSIFIER.test(low(ts[i + 1])) ? i + 2 : i + 1;
     if (!OPEN_ADJECTIVE.test(low(ts[k]))) return;
+    // the adjective ends its clause: "estamos felices de verte" and "está casada con Tomás" go with their copula
+    if (k < ts.length - 1 && !ts[k].post) return;
+    if (ts.some((t) => NOW_WORD.test(low(t)))) return;
     const made = new Set<string>();
     for (const r of readings) {
       const f = PERSONS.includes(r.person as Person) ? form(r.inf === 'ser' ? 'estar' : 'ser', r.tense, r.person as Person) : null;

@@ -85,7 +85,8 @@ export function lastWeekCameBack(events: readonly ReviewEvent[], l: MetricsLearn
   const today = l.day(now);
   const per = new Map<NodeId, boolean>();
   for (const e of events) {
-    if (e.scored !== 'review' || l.day(e.at) !== today) continue;
+    // a claim says nothing either way: the app could not tell (R9)
+    if (e.scored !== 'review' || e.claimed || l.day(e.at) !== today) continue;
     const intro = l.node(e.node)?.introducedAt;
     if (intro === undefined) continue;
     const age = (e.at - intro) / DAY_MS;

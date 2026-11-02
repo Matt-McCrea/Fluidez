@@ -16,7 +16,7 @@
  * ========================================================================== */
 import { analyzeToken } from '../../engine';
 import { closedClass, isKnownForm } from '../../engine/tagger/lexicon';
-import { finiteCandidates, low, render, verbReadings, type Tok } from '../../exercises/spanish';
+import { finiteCandidates, gerundOf, isInfinitive, low, participleOf, render, splitEnclitic, verbReadings, type Tok } from '../../exercises/spanish';
 
 const STOP = /[.!?…]+$/;
 /** A stop or a comma that closes a piece of the sentence. */
@@ -66,16 +66,15 @@ const commaIn = (ts: readonly Tok[]) => ts.slice(0, -1).some((t) => t.post.inclu
 
 const CLAUSE = /^(si|cuando|aunque)$/;
 /** What may not stand right before the word that opens the clause: it would be part of something else (como si, por si, aun cuando, desde cuando, y aunque, si bien). */
-const NOT_BEFORE = /^(y|o|e|u|ni|pero|sino|que|como|porque|aun|solo|sólo|apenas|casi|por|de|desde|hasta|para|hace|mucho|cada|todas|todos|tal|incluso|es|fue|era|son|eran|fueron|será|sería|sea|fuera)$/;
+const NOT_BEFORE = /^(y|o|e|u|ni|pero|sino|que|como|porque|aun|solo|sólo|apenas|casi|por|de|desde|hasta|para|hace|mucho|cada|todo|todas|todos|tal|incluso|justo|justamente|precisamente|exactamente|especialmente|menos|excepto|salvo|es|fue|era|son|eran|fueron|será|sería|sea|fuera)$/;
 /** Verbs whose si is "whether": No sé si viene, Pregúntele si viene, a ver si. Moving that clause up would say another thing. */
 const WHETHER = /^(saber|preguntar|decir|dudar|ver|averiguar|depender|importar|avisar|comprobar|confirmar|mirar|fijar|contar|imaginar|recordar|acordar|olvidar|ignorar|entender|parecer|adivinar|asegurar|revisar|chequear|checar|consultar|querer|quedar|resolver|establecer|aclarar|determinar|decidir|discutir|plantear|cuestionar|evaluar|analizar|investigar|examinar|verificar|reconocer|notar|descubrir|explicar|demostrar|enterar|mostrar|indicar|probar|medir|calcular|esperar)$/;
 /** Nouns that hand the question on: la duda de si, no tengo idea si. */
 const WHETHER_NOUN = /^(idea|duda|pregunta|cuestión|incógnita|problema|misterio|razón|señal|prueba|manera)$/;
 
-/** Does a si in this main clause ask something ("¿Sabes si viene?") instead of making a condition? Any form of these verbs counts: the infinitive, a command, a form with its little words on. */
-function whetherVerb(main: readonly Tok[]): boolean {
-  return main.some((t) => {
-    const w = low(t);
+/** Does a si after these words ask something ("¿Sabes si viene?") instead of making a condition? Any form of these verbs counts: the infinitive, a command, a form with its little words on. */
+export function asksWhether(before: readonly string[]): boolean {
+  return before.some((w) => {
     return WHETHER_NOUN.test(w) || WHETHER.test(w.replace(/(se|me|te|lo|la|le|nos|los|las|les)+$/, '')) || analyzeToken(w).some((a) => a.accentExact && WHETHER.test(a.inf.replace(/se$/, '')));
   });
 }
@@ -98,7 +97,11 @@ export function clauseOrderVariants(es: string, toks: readonly Tok[]): string[] 
   if (p < 1) return [];
   const main = toks.slice(0, p), sub = toks.slice(p);
   if (!hasVerb(sub) || commaIn(main) || commaIn(sub) || finiteCandidates(main).length !== 1) return [];
-  if (NOT_BEFORE.test(low(main[main.length - 1])) || (low(sub[0]) !== 'aunque' && whetherVerb(main)) || (low(sub[0]) === 'si' && /^(bien|no|es|acaso)$/.test(low(sub[1])))) return [];
+  // "Fue ayer cuando me enteré": a cleft, the clause is what it is about
+  if (/^(fue|es|era|será|sería)$/.test(low(main[0])) && main.length <= 3 && /^(entonces|ayer|hoy|ahora|ahí|allí|aquí|allá|así|anoche|en)$/.test(low(main[1]))) return [];
+  // "Siento no haberte escuchado cuando me hablaste": the clause belongs to the perfect inside, and in front of siento it says another thing
+  if (main.some((t) => /^haber/.test(low(t)) && (low(t) === 'haber' || splitEnclitic(low(t))?.base === 'haber'))) return [];
+  if (NOT_BEFORE.test(low(main[main.length - 1])) || (low(sub[0]) !== 'aunque' && asksWhether(main.map(low))) || (low(sub[0]) === 'si' && /^(bien|no|es|acaso)$/.test(low(sub[1])))) return [];
   return [joined(sub, main, stop, true)];
 }
 
@@ -122,7 +125,10 @@ const BARE_PLACE = new Set(['casa']);
 const DET = /^(el|la|los|las|mi|tu|su|nuestro|nuestra|este|esta|ese|esa|un|una)$/;
 const isName = (t: Tok | undefined) => !!t && /^\p{Lu}/u.test(t.core);
 /** What may not stand right before a phrase that moves: it would be part of a comparison or a list. */
-const NOT_BEFORE_PHRASE = /^(que|como|y|o|e|u|ni|pero|sino|más|menos|de|desde|hasta|entre|también)$/;
+const NOT_BEFORE_PHRASE = /^(que|como|y|o|e|u|ni|pero|sino|más|menos|de|desde|hasta|entre|también|solo|sólo|solamente|únicamente|incluso|aun|tanto|todo)$/;
+/** Little words that open an inner phrase around a verb form: "se queja de haber esperado en la calle" keeps the phrase in there. */
+const INNER_OPENER = /^(de|en|por|sin|con|para|al)$/;
+const isNonfinite = (w: string) => isInfinitive(w) || !!gerundOf(w) || !!participleOf(w) || !!splitEnclitic(w);
 
 /** How many tokens from `at` are one place phrase (en el café, en Bogotá, en la casa de Vale), or 0. */
 function placeLength(ts: readonly Tok[], at: number): number {
@@ -155,9 +161,18 @@ export function movedPhraseVariants(es: string, toks: readonly Tok[]): string[] 
     && !(at > 0 && /^(desde|por|de|para|hasta|hace)$/.test(low(toks[at - 1])));
   const phraseAt = (at: number): number => (hacePhrase(at) ? 3 : placeLength(toks, at));
   /** The rest is one clause: a single verb of its own, and no comma, so the phrase belongs to it and to nothing else. */
-  const oneClause = (rest: readonly Tok[], place: boolean) =>
-    finiteCandidates(rest).length === 1 && !commaIn(rest) && !rest.some((t) => SUBORDINATING.test(low(t)) || low(t) === 'hay')
-    && !(place && finiteCandidates(rest).some((c) => c.analyses.some((a) => NOT_LOCATIVE.test(a.inf.replace(/se$/, '')))));
+  const oneClause = (rest: readonly Tok[], place: boolean) => {
+    const verb = finiteCandidates(rest);
+    if (verb.length !== 1 || commaIn(rest) || rest.some((t) => SUBORDINATING.test(low(t)) || low(t) === 'hay')) return false;
+    // "En Bogotá, nací" and "Hace una década, eso fue": the phrase was what the verb was saying. An adverb gives the verb something to stand on
+    const bare = verb[0].index === rest.length - 1 && !/mente$/.test(low(rest[verb[0].index - 1]));
+    if (bare && (place || verb[0].analyses.some((a) => a.inf === 'ser' || a.inf === 'estar'))) return false;
+    if (!place) return true;
+    if (verb[0].analyses.some((a) => NOT_LOCATIVE.test(a.inf.replace(/se$/, '')))) return false;
+    // "se queja de haber esperado en la calle": the place goes with the verb inside. "recuerdos de mi niñez en Boyacá": with the noun in front of it
+    if (rest.some((t, i) => i > 0 && INNER_OPENER.test(low(rest[i - 1])) && isNonfinite(low(t)))) return false;
+    return !rest.slice(-4).some((t) => low(t) === 'de');
+  };
   const front = phraseAt(0);
   if (front && front < toks.length - 1) {
     const rest = toks.slice(front);

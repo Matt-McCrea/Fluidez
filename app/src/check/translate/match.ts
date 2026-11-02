@@ -81,10 +81,12 @@ const EN_LIKES = /\b(like|likes|love|loves|enjoy|enjoys|adore|adores|interested|
  *  clitic of gustar and its kin that cannot be right. Certain when the person
  *  cannot be the verb's subject; also when it can be, but is the English
  *  subject carried over ("She likes coffee" is not ella le gusta). */
-function experiencerSlip(ci: Canon, en: string): boolean {
+function experiencerSlip(ci: Canon, en: string, es: string): boolean {
   if (!ci.experiencer.length) return false;
   const carried = englishPronouns(en);
-  return ci.experiencer.some((x) => x.mismatch || (x.like && carried.has(x.pron) && EN_LIKES.test(enWords(en).join(' '))));
+  const model = es.toLowerCase();
+  // "A ella le molesta el ruido": the model says a ella, and without the a the person is doing the bothering
+  return ci.experiencer.some((x) => x.mismatch || model.includes(`a ${x.pron} `) || (x.like && carried.has(x.pron) && EN_LIKES.test(enWords(en).join(' '))));
 }
 
 /** Where the same tokens hide two spellings of one figure ("doscientos" for "doscientas"), or -1. */
@@ -171,7 +173,7 @@ export function matchTranslation(input: string, sentence: SentenceLike, opts: Ma
   }
   const lenient = opts.accents === 'lenient';
   const cvs = variants.map((v) => ({ v, cv: canon(v.es) }));
-  const slip = experiencerSlip(ci, sentence.en);
+  const slip = experiencerSlip(ci, sentence.en, sentence.es);
   let nearHit: { v: Variant } | null = null;
   let subjectHit: { v: Variant } | null = null;
   let orderHit: { v: Variant } | null = null;

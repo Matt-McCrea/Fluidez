@@ -16,7 +16,7 @@
  * with an unrepaired verified claim against it is left out of the file until
  * the content is fixed (R14: trap rules wait for false pitfalls to be fixed).
  * ========================================================================== */
-import { canon, key } from '../translate/canon';
+import { advKey, canon, key } from '../translate/canon';
 
 /** The file: for each node, the canonical key of each wrong sentence and why it is wrong. */
 export interface PitfallFile {
@@ -27,8 +27,15 @@ export interface PitfallFile {
 
 export const PITFALLS_ABOUT = 'The wrong sentences of every lesson script, by node, as canonical keys with the lesson\'s reason. Derived from content/scripts by npm run pitfalls and checked by the gate. Never edited by hand.';
 
-/** The key a sentence is looked up under: its canonical tokens, the way the matcher reads it. */
-export const pitfallKey = (text: string): string => key(canon(text));
+/**
+ * The key a sentence is looked up under: its canonical tokens, the way the matcher reads it, and the words canon sets aside. Without those
+ * "Ustedes trabajas en Bogotá" would be "Trabajas en Bogotá" and "Es también tarde" would be "Es tarde", and the lesson's reason would
+ * speak about a word the learner never wrote.
+ */
+export const pitfallKey = (text: string): string => {
+  const c = canon(text);
+  return key(c) && [key(c), [...c.pronouns].sort().join(' '), advKey(c)].join('|');
+};
 
 let table: ReadonlyMap<string, ReadonlyMap<string, string>> = new Map();
 

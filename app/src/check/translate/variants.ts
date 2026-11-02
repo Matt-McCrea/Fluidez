@@ -17,8 +17,8 @@ import type { Person } from '../../engine';
 import { conjugateBareCells } from '../../engine/conjugate';
 import { changePerson } from '../../exercises/reinflect';
 import {
-  DETERMINERS, EXPERIENCER, TIME_WORDS, compoundParticiple, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, isInfinitive, low,
-  otherGender, parseClause, render, replaceCore, splitEnclitic, toToks, verbReadings, type Clause, type Tok,
+  DETERMINERS, EXPERIENCER, PREPOSITIONS, TIME_WORDS, compoundParticiple, enSubject, enWords, enYou, finiteCandidates, gerundOf, isFunctionWord, isInfinitive, low,
+  otherGender, parseClause, participleOf, render, replaceCore, splitEnclitic, toToks, verbReadings, type Clause, type Tok,
 } from '../../exercises/spanish';
 import { clauseOrderVariants, movedPhraseVariants } from './reorder';
 import { changed, type Swap } from './swaps';
@@ -65,7 +65,7 @@ export function peninsularVariants(es: string, extra: Readonly<Record<string, st
     if (n) {
       swaps.push((t) => {
         const out = replaceCore(t, i, n.es);
-        return n.gender ? agreeWithNoun(out, i) : out;
+        return n.gender ? agreeWithNoun(out, i, n.gender === 'm' ? 'f' : 'm') : out;
       });
       return;
     }
@@ -97,6 +97,15 @@ export function peninsularVariants(es: string, extra: Readonly<Record<string, st
 // ---- "you" registers --------------------------------------------------------------
 
 const OBJ_YOU: Readonly<Record<'usted' | 'ustedes', string[]>> = { usted: ['lo', 'la', 'le'], ustedes: ['los', 'las', 'les'] };
+/** Verbs that say something TO someone: their te is a le, never a lo ("te dije" is "le dije"). */
+const TO_SOMEONE = /^(decir|contar|escribir|dar|mandar|enviar|pedir|preguntar|explicar|prometer|regalar|enseñar|mostrar|recomendar|aconsejar|hablar|responder|contestar|agradecer|prestar|devolver|traer|comprar|vender|pagar|ofrecer|sugerir|deber|cobrar|rogar|advertir)$/;
+/** The verb a te in front of it goes with: the next one, past an auxiliary (te estaba diciendo, te he dicho, te voy a decir). */
+function toSomeone(ts: readonly Tok[], i: number): boolean {
+  return ts.slice(i + 1, i + 4).some((t) => {
+    const w = low(t);
+    return verbReadings(w).some((a) => TO_SOMEONE.test(a.inf)) || TO_SOMEONE.test(gerundOf(w) ?? '') || TO_SOMEONE.test(participleOf(w) ?? '') || TO_SOMEONE.test(w);
+  });
+}
 
 /** "You" forms that are not the subject: te (object), ti, contigo, tu, tuyo. */
 function swapNonSubjectYou(ts: Tok[], to: 'usted' | 'ustedes', skip: Set<number>): Tok[][] {
@@ -108,7 +117,7 @@ function swapNonSubjectYou(ts: Tok[], to: 'usted' | 'ustedes', skip: Set<number>
     // "te sientas", "no te mueves": te in front of a tú form is the verb's own little word, and stays
     if (w === 'te' && verbReadings(low(ts[i + 1])).some((a) => a.person === 'tú' && a.tense !== 'imperativo')) return;
     // "te lo prometo" is "se lo prometo" to usted, never "le lo"
-    if (w === 'te') reps = /^(lo|la|los|las)$/.test(low(ts[i + 1])) ? ['se'] : OBJ_YOU[to];
+    if (w === 'te') reps = /^(lo|la|los|las)$/.test(low(ts[i + 1])) ? ['se'] : toSomeone(ts, i) ? OBJ_YOU[to].filter((r) => /^les?$/.test(r)) : OBJ_YOU[to];
     else if (w === 'ti') reps = [to];
     else if (w === 'contigo') reps = [`con ${to}`];
     else if (w === 'tu') reps = ['su'];
@@ -120,6 +129,18 @@ function swapNonSubjectYou(ts: Tok[], to: 'usted' | 'ustedes', skip: Set<number>
     outs = next;
   });
   return outs;
+}
+
+/** "you" left in tú: te, ti, tu, or a verb that can only be tú. A form that says usted in one clause and tú in the next ("Las extrañé cuando te fuiste") is no register of anything. */
+function stillTu(ts: readonly Tok[]): boolean {
+  return ts.some((t, i) => {
+    const w = low(t);
+    if (/^(te|ti|tú|vos|contigo|tu|tus|tuyos?|tuyas?)$/.test(w) || splitEnclitic(w)?.clitics.includes('te')) return true;
+    // sus cuentas, las cartas, en casas: the noun that is spelled like a tú form
+    if (i > 0 && (DETERMINERS.has(low(ts[i - 1])) || PREPOSITIONS.has(low(ts[i - 1])))) return false;
+    const rs = verbReadings(w).filter((a) => a.tense !== 'imperativo');
+    return rs.length > 0 && rs.every((a) => a.person === 'tú');
+  });
 }
 
 function vosotrosFrom(es: string, en: string): string | null {
@@ -218,7 +239,7 @@ export function registerVariants(es: string, en: string): Variant[] {
       if (c.subject >= 0) ts = replaceCore(ts, c.subject, to);
       const skip = new Set<number>(c.reflexive ? [c.proclitics[c.proclitics.length - 1]] : []);
       if (to === 'tú') { out.push({ es: render(ts), register: to }); continue; }
-      for (const v of swapNonSubjectYou(ts, to, skip)) out.push({ es: render(v), register: to });
+      for (const v of swapNonSubjectYou(ts, to, skip)) if (!stillTu(v)) out.push({ es: render(v), register: to });
     }
     if (mode === 'open' || mode === 'plural') {
       const ustedesForm = fromReg === 'ustedes' ? es : out.find((o) => o.register === 'ustedes')?.es;
@@ -237,7 +258,7 @@ export function registerVariants(es: string, en: string): Variant[] {
     for (const to of wants) {
       if (to === 'tú') continue;
       for (const v of swapNonSubjectYou(ts, to, new Set())) {
-        if (dativeOnly && v.some((t, i) => low(ts[i]) === 'te' && !/^les?$/.test(low(t)))) continue;
+        if (stillTu(v) || (dativeOnly && v.some((t, i) => low(ts[i]) === 'te' && !/^les?$/.test(low(t))))) continue;
         out.push({ es: render(v), register: to });
       }
     }

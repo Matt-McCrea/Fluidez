@@ -18,7 +18,7 @@ import { PERSONS, verbByInf } from '../../engine';
 import type { Person } from '../../engine';
 import { conjugateBareCells } from '../../engine/conjugate';
 import { closedClass } from '../../engine/tagger/lexicon';
-import { detGender, isFunctionWord, isPluralWord, low, otherGender, pluralize, render, replaceCore, toToks, verbReadings, type Tok } from '../../exercises/spanish';
+import { detGender, gerundOf, isFunctionWord, isInfinitive, isPluralWord, low, otherGender, participleOf, pluralize, render, replaceCore, splitEnclitic, toToks, verbReadings, type Tok } from '../../exercises/spanish';
 import { changed } from './swaps';
 import type { Swapped } from './tense-swaps';
 
@@ -52,7 +52,7 @@ interface Group {
 const DET_BEFORE = /(^| )(el|la|los|las|un|una|unos|unas|mi|mis|tu|tus|su|sus|nuestro|nuestra|nuestros|nuestras|este|esta|ese|esa|aquel|aquella|al|del)$/;
 const DRINK = /(?<!\p{L})(café|tinto|jugo|agua|cerveza|leche|té|vino|chocolate|gaseosa|aguardiente|refresco|limonada|bebida|aromática)(?!\p{L})/u;
 /** "de" and an infinitive after the verb: acabar de + infinitive is just, and terminar de is finishing. */
-const DE_INFINITIVE = /^de \p{L}+(ar|er|ir|ír)(se|me|te|lo|la|le|nos|los|las|les)?\b/u;
+const DE_INFINITIVE = /^de \p{L}*(ar|er|ir|ír)(se|me|te|lo|la|le|nos|los|las|les)?\b/u;
 
 export const SYNONYM_GROUPS: readonly Group[] = [
   // people
@@ -74,7 +74,7 @@ export const SYNONYM_GROUPS: readonly Group[] = [
   { pos: 'n', members: [{ es: 'puesto', g: 'm', after: DET_BEFORE }, { es: 'cargo', g: 'm', after: DET_BEFORE }], onlyEn: /\b(position|post|role|job)s?\b/ },
   { pos: 'n', members: [{ es: 'pena', g: 'f' }, { es: 'vergüenza', g: 'f' }], onlyEn: /\b(embarrass\w*|ashamed|shy)\b/ },
   { pos: 'n', members: [{ es: 'café', g: 'm' }, { es: 'cafetería', g: 'f' }], onlyEn: /(?<!\p{L})caf[eé]s?(?!\p{L})/u, notEn: /\bcoffee\b/ },
-  { pos: 'n', oneWay: true, members: [{ es: 'tinto', g: 'm' }, { es: 'café', g: 'm' }], notEn: /\b(black|dark|small)\b/ },
+  { pos: 'n', oneWay: true, members: [{ es: 'tinto', g: 'm' }, { es: 'café', g: 'm' }], notEn: /\b(black|dark|small|red|wine)\b/, notPrev: /^vinos?$/ },
   // adjectives, in the masculine singular; the others follow
   { pos: 'adj', members: [{ es: 'bonito' }, { es: 'lindo' }] },
   // verbs, in the dictionary form; the form that stands in the sentence follows
@@ -86,20 +86,23 @@ export const SYNONYM_GROUPS: readonly Group[] = [
   { pos: 'v', members: [{ es: 'charlar' }, { es: 'conversar' }] },
   { pos: 'v', members: [{ es: 'tomar' }, { es: 'beber' }], followed: DRINK },
   // words that stay as they are, and phrases
-  { pos: 'phr', members: [{ es: 'luego' }, { es: 'después' }], notPrev: /^hasta$/, notFollowed: /^(de|que)\b/ },
+  // "desde luego" is of course, and a stretch of time takes después alone: dos días después, poco después, never dos días luego
+  { pos: 'phr', members: [{ es: 'luego' }, { es: 'después' }], notPrev: /^(hasta|desde|poco|mucho|tiempo|rato|ratos|momento|momentos|instante|instantes|segundos?|minutos?|horas?|días?|noches?|tardes?|semanas?|mes|meses|años?|siglos?|décadas?)$/, notFollowed: /^(de|que)\b/ },
   { pos: 'phr', members: [{ es: 'quizás' }, { es: 'quizá' }, { es: 'tal vez' }] },
   { pos: 'phr', members: [{ es: 'enseguida' }, { es: 'en seguida' }, { es: 'de inmediato' }] },
   { pos: 'phr', members: [{ es: 'de todas formas' }, { es: 'de todos modos' }, { es: 'de cualquier forma' }, { es: 'de cualquier manera' }] },
-  { pos: 'phr', members: [{ es: 'sin duda' }, { es: 'sin lugar a dudas' }, { es: 'sin ninguna duda' }] },
+  { pos: 'phr', members: [{ es: 'sin duda' }, { es: 'sin lugar a dudas' }, { es: 'sin ninguna duda' }], notFollowed: /^(alguna|ninguna)\b/ },
   { pos: 'phr', members: [{ es: 'sin embargo' }, { es: 'no obstante' }] },
 ];
 
 // ---- a noun that changes gender takes its article and its adjective with it -------------------
 
 /** Words before a noun that agree with it in gender, apart from the articles: mucho, tanto, todo, otro, algún, nuestro. */
-const GENDERED_BEFORE = new Set(['quant', 'num', 'poss', 'dem', 'det']);
-/** Quantifiers that look like they agree and do not. */
-const NEVER_AGREE = /^(cada|bastante|cualquier|cualquiera|más|menos|tan|mi|tu|su|mis|tus|sus|medio|sendos|sendas)$/;
+const GENDERED_BEFORE = new Set(['quant', 'poss', 'dem', 'det']);
+/** Words in front of a noun that are the same for both genders, and let the ones before them agree: toda mi plata, los dos cafés, cada computadora. */
+const NEVER_AGREE = /^(cada|bastante|cualquier|cualquiera|más|menos|tan|mi|tu|su|mis|tus|sus|medio|sendos|sendas|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|mil)$/;
+/** A word that closes the noun phrase on its left: only todo stands in front of it (toda la plata), and a mucho or a cierto there belongs to something else (quería mucho este café). */
+const CLOSES_PHRASE = /^(el|la|los|las|mi|tu|su|mis|tus|sus|nuestro|nuestra|nuestros|nuestras|este|esta|estos|estas|ese|esa|esos|esas|aquel|aquella|aquellos|aquellas)$/;
 
 /** The other-gender form of a word standing before a noun, the word itself when it does not agree, or null when it cannot be told. */
 function beforeNoun(w: string): string | null {
@@ -108,63 +111,120 @@ function beforeNoun(w: string): string | null {
   if (swap[w]) return swap[w];
   const dg = detGender(w);
   if (dg) return dg;
+  // doscientas computadoras: the hundreds agree, and no other figure does
+  if (/cient[oa]s$/.test(w)) return otherGender(w);
   return GENDERED_BEFORE.has(closedClass(w) ?? '') && /[oa]s?$/.test(w) ? otherGender(w) : w;
+}
+
+const PREDICATE_VERB = /^(ser|estar|quedar|quedarse|permanecer|seguir|parecer|verse|sentirse|ponerse|resultar|lucir|volverse)$/;
+const DEGREE = /^(muy|tan|más|menos|bien|mal|bastante|demasiado|poco|algo|súper|realmente|totalmente|completamente)$/;
+/** Is this word a form of a verb that links a subject to an adjective, said of a third person or with no person at all (quedado, estar)? */
+function linksThird(w: string): boolean {
+  const third = verbReadings(w).some((a) => PREDICATE_VERB.test(a.inf) && (a.person === 'él/ella' || a.person === 'ellos'));
+  return third || PREDICATE_VERB.test(participleOf(w) ?? '') || (isInfinitive(w) && PREDICATE_VERB.test(w));
+}
+/** A word after a linking verb or a word of degree that takes a gender. Lleno is also a form of llenar, and here it is not one. */
+const adjectiveLike = (w: string | undefined): w is string => !!w && !!otherGender(w) && !closedClass(w) && !isFunctionWord(w) && !gerundOf(w);
+const ofGender = (w: string, g: Gender) => (g === 'm' ? /os?$/ : /as?$/).test(w);
+
+/**
+ * Is there something after position `from` that would still have to agree with a noun of gender `was`? A pronoun that points back
+ * ("no lo gasto", "pedirla prestada", "hay que comprar otra", "como este"), or an adjective tied to it by a linking verb or a word of
+ * degree ("quedó cerrado", "tan pequeño", "bien iluminado"). Nothing here can tell what such a word goes with, so the form is not made.
+ */
+function pointsBack(ts: readonly Tok[], from: number, was: Gender): boolean {
+  const object = was === 'm' ? /^(lo|los)$/ : /^(la|las)$/;
+  const pronoun = was === 'm' ? /^(él|este|ese|aquel|estos|esos|aquellos|otro|otros|mismo|mismos|uno|unos|ninguno|alguno|suyo|suyos)$/ : /^(ella|esta|esa|aquella|estas|esas|aquellas|otra|otras|misma|mismas|una|unas|ninguna|alguna|suya|suyas)$/;
+  for (let j = from; j < ts.length; j++) {
+    const w = low(ts[j]);
+    const next = ts[j + 1] && !ts[j].post ? low(ts[j + 1]) : undefined;
+    // a la cocina, compró la cuenta: an article, whatever the next word might also be
+    const prev = low(ts[j - 1]);
+    const article = /^(en|de|a|con|por|para|sin|sobre|entre|hasta|desde|hacia)$/.test(prev) || verbReadings(prev).length > 0;
+    if (object.test(w) && !article && !!next && verbReadings(next).length > 0) return true;
+    if (splitEnclitic(w)?.clitics.some((c) => object.test(c))) return true;
+    // un computador, la cual: the relative keeps the old noun's gender
+    if (next && /^(cual|cuales)$/.test(next) && (was === 'm' ? /^(el|los)$/ : /^(la|las)$/).test(w)) return true;
+    // a demonstrative or an otro with no noun of its own
+    if (pronoun.test(w) && (!next || isFunctionWord(next))) return true;
+    if (!linksThird(w) && !DEGREE.test(w)) continue;
+    let k = j + 1;
+    while (DEGREE.test(low(ts[k]))) k++;
+    const adj = ts[k] ? low(ts[k]) : undefined;
+    if (adjectiveLike(adj) && ofGender(adj, was)) return true;
+  }
+  return false;
 }
 
 /**
  * The noun at `i` has just been swapped for one of the other gender: the words before it that agree with it, and an
  * adjective right after it, follow. The contractions are two words here: del and al before a feminine, de la and a la
- * before a masculine. A predicate adjective of a copula ("mi computadora es nueva") follows too.
+ * before a masculine. A predicate adjective of a copula right after it ("mi computadora es nueva") follows too.
  *
- * `strict` is for a swap that changes the gender of a word the sentence did not choose: it returns null when
- * something that should agree cannot be found (an adjective before the noun, a predicate that is longer than one
- * adjective, a second adjective after "y"), so the form is not made rather than made wrong.
+ * `was` is the gender the noun had. The result is null when something that should agree cannot be found or cannot be made to
+ * (an adjective before the noun, a predicate that is longer than one adjective, a second adjective after "y", a pronoun further
+ * on that points back): the form is not made rather than made wrong.
  */
-export function agreeWithNoun(ts: readonly Tok[], i: number): Tok[];
-export function agreeWithNoun(ts: readonly Tok[], i: number, strict: true): Tok[] | null;
-export function agreeWithNoun(ts: readonly Tok[], i: number, strict = false): Tok[] | null {
+export function agreeWithNoun(ts: readonly Tok[], i: number, was: Gender): Tok[] | null {
   let out = ts.map((t) => ({ ...t }));
   const det = low(out[i - 1]);
-  if (det === 'del' || det === 'al') out = replaceCore(out, i - 1, det === 'del' ? 'de la' : 'a la');
+  let phrase = i;                                       // where the noun phrase starts, once its determiners are found
+  if (det === 'del' || det === 'al') { out = replaceCore(out, i - 1, det === 'del' ? 'de la' : 'a la'); phrase = -1; }
   else if (det === 'la' && /^(de|a)$/.test(low(out[i - 2]))) {
     out = replaceCore(out, i - 2, low(out[i - 2]) === 'de' ? 'del' : 'al');
     out[i - 2].post = out[i - 1].post;
     out.splice(i - 1, 1);
     i--;
+    phrase = -1;
   } else {
-    // up to three words in front agree: "toda la plata", "tanta plata", "otra computadora"
+    // up to three words in front agree: "toda la plata", "tanta plata", "los otros cafés"
+    let closed = false;
     for (let k = i - 1; k >= Math.max(0, i - 3); k--) {
       const w = low(out[k]);
       if (!w || out[k].post) break;
+      if (closed && !/^tod[oa]s?$/.test(w)) break;
       const flipped = beforeNoun(w);
+      if (flipped === null) return null;
       const known = closedClass(w) || isFunctionWord(w);
-      if (flipped === null) { if (strict) return null; break; }
       // a word before the noun that is not a determiner, a quantifier or a small word: an adjective, whose gender nobody here knows
-      if (!known && flipped === w && /[oa]s?$/.test(w) && !verbReadings(w).length && k === i - 1) { if (strict) return null; break; }
-      if (!known && flipped === w) break;
+      if (!known && flipped === w && /[oa]s?$/.test(w) && !verbReadings(w).length && k === i - 1) return null;
+      // de, que, en, y: the noun phrase started after it
+      if (flipped === w && !NEVER_AGREE.test(w)) break;
       if (flipped !== w) out = replaceCore(out, k, flipped);
+      phrase = k;
+      closed = CLOSES_PHRASE.test(w);
     }
   }
-  const adj = low(out[i + 1]);
-  if (adj && /[oa]s?$/.test(adj) && !verbReadings(adj).length && !closedClass(adj) && !isFunctionWord(adj)) {
+  const raw = out[i + 1];
+  const adj = low(raw);
+  // Hernando and vendiendo end like adjectives, and neither is one
+  if (raw && !/^\p{Lu}/u.test(raw.core) && /[oa]s?$/.test(adj) && !out[i].post && !gerundOf(adj) && !verbReadings(adj).length && !closedClass(adj) && !isFunctionWord(adj)) {
     const og = otherGender(adj);
     if (og) {
       out = replaceCore(out, i + 1, og);
       // "un cuarto grande y bonito": the second adjective would have to follow, and nothing here knows it is one
-      if (strict && /^(y|e|o|u|ni|pero)$/.test(low(out[i + 2]))) return null;
+      if (/^(y|e|o|u|ni|pero)$/.test(low(out[i + 2]))) return null;
     }
   }
-  // a predicate adjective agreeing with this noun as subject: "mi computadora es nueva"
-  const after = out.slice(i + 1).map(low);
-  const cop = after.findIndex((x) => verbReadings(x).some((a) => /^(ser|estar)$/.test(a.inf)));
-  if (cop >= 0) {
-    const k = i + 1 + cop + 1 + (after[cop + 1] === 'muy' ? 1 : 0);
-    const pa = low(out[k]);
-    if (pa && k === out.length - 1) { const og = otherGender(pa); if (og) out = replaceCore(out, k, og); }
-    // the predicate is longer than one adjective ("es igual de pequeño que el tuyo"): what agrees is not found, so the form is not made
-    else if (strict && pa) return null;
+  // a predicate adjective agreeing with this noun as subject: "mi computadora es nueva". In a phrase after a preposition the noun is nobody's subject
+  const before = phrase >= 1 ? low(out[phrase - 1]) : '';
+  const subject = phrase >= 0 && !isFunctionWord(before) && !closedClass(before);
+  let done = i + 1;
+  if (subject) {
+    const after = out.slice(i + 1, i + 4).map(low);
+    const cop = after.findIndex((x) => verbReadings(x).some((a) => /^(ser|estar)$/.test(a.inf) && (a.person === 'él/ella' || a.person === 'ellos')));
+    if (cop >= 0 && after.slice(0, cop).every((x) => /^(no|ya|también|siempre|nunca)$/.test(x))) {
+      const k = i + 1 + cop + 1 + (after[cop + 1] === 'muy' ? 1 : 0);
+      const pa = low(out[k]);
+      if (pa && k === out.length - 1) {
+        if (adjectiveLike(pa)) out = replaceCore(out, k, otherGender(pa)!);
+        done = out.length;
+      }
+      // the predicate is longer than one adjective ("es igual de pequeño que el tuyo"): what agrees is not found, so the form is not made
+      else if (pa && !isFunctionWord(pa)) return null;
+    }
   }
-  return out;
+  return pointsBack(out, done, was) ? null : out;
 }
 
 // ---- finding a member in a sentence -------------------------------------------------------------
@@ -244,7 +304,7 @@ export function synonymVariants(es: string, en: string): Swapped[] {
               t[i + words.length - 1].post = post;
             }
             if (m.g && to.g && m.g !== to.g) {
-              const agreed = agreeWithNoun(t, i, true);
+              const agreed = agreeWithNoun(t, i, m.g);
               if (!agreed) continue;
               t = agreed;
             }

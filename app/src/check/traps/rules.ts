@@ -21,6 +21,7 @@
  * ========================================================================== */
 import { EXPERIENCER, gerundOf, isInfinitive, verbReadings } from '../../exercises/spanish';
 import type { Diagnosis, Op } from '../translate/hints';
+import { asksWhether } from '../translate/reorder';
 
 export type Tier = 'assert' | 'ask' | 'note' | 'silent';
 
@@ -73,16 +74,16 @@ const ESTAR = /^(estoy|estás|está|estamos|están|estaba|estabas|estábamos|est
 
 // ---- 1. mood-hard: an indicative where only the form that holds an idea up can stand -----------------------
 
-/** Verbs that, with que after them, ask for the form that holds an idea up. Closed on purpose: decir, ver, saber and the openers of a fact are not here. */
+/** Verbs that, with que after them, ask for the form that holds an idea up. Closed on purpose: decir, ver, saber and the openers of a fact are not here, and nor is temer: me temo que no puedo is a fact said gently. */
 const WANTING = new Set([
   'querer', 'desear', 'preferir', 'necesitar', 'pedir', 'exigir', 'permitir', 'prohibir', 'sugerir', 'recomendar', 'aconsejar', 'esperar',
-  'dudar', 'temer', 'lamentar', 'ordenar', 'mandar', 'rogar', 'suplicar', 'impedir', 'evitar', 'proponer',
+  'dudar', 'lamentar', 'ordenar', 'mandar', 'rogar', 'suplicar', 'impedir', 'evitar', 'proponer',
 ]);
 /** The openers that react or judge (me alegra que, me molesta que): the idea form even when the rest is true (R1). */
 const REACTING = new Set(['alegrar', 'molestar', 'gustar', 'encantar', 'importar', 'preocupar', 'sorprender', 'extrañar', 'fastidiar', 'enojar', 'asustar']);
 const JUDGING = /^(importante|necesario|mejor|bueno|malo|raro|imposible|increíble|normal|lógico|preferible|conveniente|urgente|fundamental|vital|justo|natural)$/;
 /** Openers made of several words that take it every time. */
-const FRAMES = ['para que', 'antes de que', 'sin que', 'a menos que', 'con tal de que', 'en caso de que', 'a fin de que', 'de modo que no', 'ojalá'];
+const FRAMES = ['para que', 'antes de que', 'sin que', 'a menos que', 'con tal de que', 'en caso de que', 'a fin de que', 'ojalá'];
 /** The openers a negative turns: no creo que, no pienso que, no parece que. */
 const BELIEVING = new Set(['creer', 'pensar', 'parecer']);
 
@@ -98,6 +99,8 @@ export function triggered(b: readonly string[], j: number): boolean {
   if (q < 1) return false;
   const opener = b[q - 1], before = b[q - 2];
   const lemmas = lemmaOf(opener);
+  // no dudo que viene says it is so, and takes either
+  if (lemmas.includes('dudar') && before === 'no') return false;
   if (lemmas.some((l) => WANTING.has(l))) return true;
   if (lemmas.some((l) => REACTING.has(l)) && is(before, /^(me|te|le|nos|les)$/)) return true;
   if (is(opener, JUDGING) && is(before, SER)) return true;
@@ -107,12 +110,20 @@ export function triggered(b: readonly string[], j: number): boolean {
   return false;
 }
 
+/** The form that holds an idea up, and no form that says it is so: esté, and not hablamos. */
+export const ideaForm = (w: string): boolean => {
+  const rs = forms(w);
+  return rs.some((x) => SUBJUNCTIVE.has(x.tense)) && !rs.some((x) => !NOT_INDICATIVE.has(x.tense));
+};
+
 const mood: Detector = (c) => {
   const e = subEdit(c);
   if (c.dg.kind !== 'mood' || !e) return null;
   const mb = forms(e.b), mi = forms(e.a);
   const sameVerb = mb.some((x) => mi.some((y) => y.inf === x.inf));
-  const modelIdea = mb.some((x) => SUBJUNCTIVE.has(x.tense)) && !mb.some((x) => !NOT_INDICATIVE.has(x.tense));
+  const modelIdea = ideaForm(e.b!);
+  // espero que vendrá expects it, and is right
+  if (mi.some((y) => y.tense === 'futuro') && c.b.slice(0, e.j).some((w) => lemmaOf(w).includes('esperar'))) return null;
   const learnerFact = mi.some((y) => !NOT_INDICATIVE.has(y.tense)) && !mi.some((y) => SUBJUNCTIVE.has(y.tense));
   return sameVerb && modelIdea && learnerFact && triggered(c.b, e.j) ? { rule: 'mood-hard', at: e.j } : null;
 };
@@ -122,7 +133,7 @@ const mood: Detector = (c) => {
 /** English that fixes the imperfect: it was going on, it was a habit, it was a state of that time. */
 const EN_IMPERFECT = /\b(was|were) \w+ing\b|\bused to\b|\bwould (always|often|usually|sometimes|every)\b|\bwhile\b|\bevery (day|morning|evening|week|summer|sunday|saturday)\b|\bas a (child|kid|boy|girl)\b|\bwhen i was (a|little|young|small|\d)\b|\bwhen (he|she) was (a|little|young|small)\b|\bin those days\b/;
 /** English that fixes the preterite: it happened, once, and was over. */
-const EN_PRETERITE = /\bsuddenly\b|\bfor (two|three|four|five|six|seven|eight|nine|ten|\d+) (years|months|weeks|days|hours)\b|\b(once|twice|three times|four times|five times)\b|\bfound out\b|\bmet\b|\bat that moment\b|\bthe next (day|morning)\b|\bfinally\b|\bsuddenly\b|\blast (night|week|year|month)\b/;
+const EN_PRETERITE = /\bsuddenly\b|\bfor (two|three|four|five|six|seven|eight|nine|ten|\d+) (years|months|weeks|days|hours)\b|\bonce(?! the\b)\b|\b(twice|three times|four times|five times)\b|\bfound out\b|\bmet\b|\bat that moment\b|\bthe next (day|morning)\b|\bfinally\b|\bsuddenly\b|\blast (night|week|year|month)\b/;
 /** Spanish that fixes it too: a dated event (ayer, anoche) for the preterite, a habit named as one (todos los días, a veces) for the imperfect. */
 const ES_PRETERITE = /^(ayer|anoche|anteayer|repente|la_semana_pasada|el_año_pasado)$/;
 const ES_IMPERFECT = /^(todos_los_días|todas_las_semanas|a_veces|mientras)$/;
@@ -138,24 +149,29 @@ const aspect: Detector = (c) => {
   const mb = forms(e.b);
   const modelTense = mb.find((r) => r.tense === 'preterito' || r.tense === 'imperfecto')?.tense;
   if (!modelTense) return null;
+  // the English says one thing for the whole sentence: with both pasts in the model and another verb of this one, it may be about that one
+  // (it so happened that it was raining and no taxi wanted to stop: ningún taxi quiso parar is right)
+  const others = c.b.flatMap((w, i) => (i === e.j ? [] : forms(w).filter((r) => r.tense === 'preterito' || r.tense === 'imperfecto').map((r) => r.tense)));
+  if (others.includes(modelTense) && others.some((t) => t !== modelTense)) return null;
   const lock = EN_IMPERFECT.test(c.en) ? 'imperfecto' : EN_PRETERITE.test(c.en) ? 'preterito' : null;
   // the English fixes it and the model agrees with the English
   if (lock && lock === modelTense) return { rule: 'aspect-locked', at: e.j };
   if (lock) return null;                                   // the model and the English disagree: not sure which of them is the card
   // no English lock: an action verb, with a marker in the Spanish that fixes the aspect, in plain narrative
   const action = mb.some((r) => !STATIVE.has(r.inf.replace(/se$/, '')));
-  const marked = modelTense === 'preterito' ? c.b.some((w) => ES_PRETERITE.test(w)) : c.b.some((w, i) => ES_IMPERFECT.test(w) || (w === 'antes' && !/^(de|que)$/.test(c.b[i + 1] ?? '')));
+  // antes marks neither: "antes trabajé aquí" is right too
+  const marked = modelTense === 'preterito' ? c.b.some((w) => ES_PRETERITE.test(w)) : c.b.some((w) => ES_IMPERFECT.test(w));
   return action && marked ? { rule: 'aspect-locked', at: e.j } : null;
 };
 
 // ---- 5. ser-estar-locked ----------------------------------------------------------------------------------
 
 /** Adjectives whose meaning changes with the verb, with the English that says which meaning the sentence has. */
-const FLIP: ReadonlyArray<{ stem: RegExp; estar: RegExp; ser: RegExp }> = [
-  { stem: /^aburrid[oa]s?$/, estar: /\bbored\b/, ser: /\bboring\b/ },
+const FLIP: ReadonlyArray<{ stem: RegExp; estar: RegExp; ser: RegExp; thing?: boolean }> = [
+  { stem: /^aburrid[oa]s?$/, estar: /\bbored\b/, ser: /\bboring\b/, thing: true },
   { stem: /^list[oa]s?$/, estar: /\bready\b/, ser: /\b(clever|smart|sharp)\b/ },
-  { stem: /^cansad[oa]s?$/, estar: /\btired\b/, ser: /\b(tiring|tiresome)\b/ },
-  { stem: /^malo?s?$|^mala?s?$/, estar: /\b(sick|ill|bad|off)\b/, ser: /\b(evil|nasty|wicked)\b/ },
+  { stem: /^cansad[oa]s?$/, estar: /\btired\b/, ser: /\b(tiring|tiresome)\b/, thing: true },
+  { stem: /^malo?s?$|^mala?s?$/, estar: /\b(sick|ill|off)\b/, ser: /\b(evil|nasty|wicked)\b/ },
   { stem: /^abiert[oa]s?$|^cerrad[oa]s?$/, estar: /\b(open|closed|shut)\b/, ser: /\b(open|closed)-?minded\b/ },
   { stem: /^orgullos[oa]s?$/, estar: /\bproud of\b/, ser: /\b(proud|arrogant|vain)\b(?! of)/ },
   { stem: /^verde$|^verdes$/, estar: /\b(unripe|green)\b.*\bripe\b/, ser: /\bgreen\b/ },
@@ -174,7 +190,9 @@ const serEstar: Detector = (c) => {
   if (adj) {
     const f = FLIP.find((x) => x.stem.test(adj))!;
     if (modelEstar && f.estar.test(c.en) && !f.ser.test(c.en)) return { rule: 'ser-estar-locked', at: e.j };
-    if (SER.test(b) && f.ser.test(c.en) && !f.estar.test(c.en)) return { rule: 'ser-estar-locked', at: e.j };
+    // a thing can be either: la fiesta fue aburrida, estuvo aburrida. It is a person who is one or the other
+    const person = !f.thing || /^(estoy|estás|estamos|estaba|estuve)$/.test(a);
+    if (SER.test(b) && person && f.ser.test(c.en) && !f.estar.test(c.en)) return { rule: 'ser-estar-locked', at: e.j };
   }
   // es lloviendo: -ando and -iendo go with estar
   if (learnerSer && modelEstar && c.a[e.i + 1] && gerundOf(c.a[e.i + 1])) return { rule: 'ser-estar-locked', at: e.j, text: c.dg.hint };
@@ -203,7 +221,12 @@ const nonfinite: Detector = (c) => {
   return wantsInf ? { rule: 'inf-need', at: e.j } : wantsEnding ? { rule: 'finite-need', at: e.j } : null;
 };
 
-const siTense: Detector = (c) => (c.dg.kind === 'mood' && /^After "si"/.test(c.dg.hint) ? { rule: 'si-tense', at: c.dg.at } : null);
+/** Not after a si that means whether: no sé si vendrá is right, and so is le pregunté si vendría. */
+const siTense: Detector = (c) => {
+  if (c.dg.kind !== 'mood' || !/^After "si"/.test(c.dg.hint)) return null;
+  const si = c.b.lastIndexOf('si', c.dg.at);
+  return si >= 0 && asksWhether(c.b.slice(0, si)) ? null : { rule: 'si-tense', at: c.dg.at };
+};
 
 /** 8. A verb that only exists with its little word, and the word is missing. Not abrir or cerrar: a shop opens, and a door. */
 const REFLEXIVE_ONLY = new Set(['llamarse', 'acostarse', 'ducharse', 'casarse', 'mudarse', 'divertirse', 'preocuparse', 'quejarse', 'arrepentirse', 'atreverse', 'equivocarse', 'enterarse', 'portarse', 'acordarse']);
@@ -222,16 +245,32 @@ const PAIRS: ReadonlyArray<{ id: string; a: RegExp; b: RegExp; text: string }> =
   { id: 'hay-estar', text: 'Hay says that something exists. Está says where something you already know about is.', a: /^hay$/, b: /^(está|están)$/ },
   { id: 'tiempo-vez-hora', text: 'English has one word for time. Spanish has tiempo, vez (one time, another time) and hora (what the clock says).', a: /^(tiempo|tiempos)$/, b: /^(vez|veces|hora|horas)$/ },
 ];
+const CLAUSE_NEXT = /^(que|si|qué|quién|quiénes|cómo|dónde|cuándo|cuánto|cuánta|cuántos|cuántas|cuál|cuáles|por)$/;
+/** Is this swap of the pair one the sentence proves? Both verbs of know take a noun (sé su nombre, conozco su nombre, sé un truco), and both of bring depend on where the speaker stands. */
+function provable(id: string, e: Op, c: Ctx): boolean {
+  const next = c.b[e.j + 1];
+  if (id === 'saber-conocer') {
+    if (PAIRS[0].a.test(e.b!)) return next === undefined || CLAUSE_NEXT.test(next) || isInfinitive(next);      // the model says saber, and what follows is no thing to be acquainted with
+    return next === 'a' || next === 'al';                                                                      // the model says conocer: a person
+  }
+  if (id === 'llevar-traer') {
+    if (PAIRS[2].a.test(e.b!)) return /\b(take|takes|took|taking|taken)\b/.test(c.en);                          // took it away, and traer does not go away
+    return /^(me|nos)$/.test(c.b[e.j - 1] ?? '');                                                              // to me: it comes here
+  }
+  // es hora de irnos, es tiempo de irnos
+  if (id === 'tiempo-vez-hora') return !(is(c.b[e.j - 1], SER) && (next === undefined || next === 'de' || next === 'que'));
+  return true;
+}
 const lexicalPair: Detector = (c) => {
   const e = subEdit(c);
   if (!e || c.edits.length !== 1) return null;
   const hit = PAIRS.find((p) => (p.a.test(e.a!) && p.b.test(e.b!)) || (p.b.test(e.a!) && p.a.test(e.b!)));
-  return hit ? { rule: `lexical-pair:${hit.id}`, at: e.j, text: hit.text } : null;
+  return hit && provable(hit.id, e, c) ? { rule: `lexical-pair:${hit.id}`, at: e.j, text: hit.text } : null;
 };
 
 /** 13. A person after the verb takes a. Names and kin only: Voy Bogotá is another mistake, and this text would be wrong for it. */
 const CAST = /^(vale|rosa|mariana|simón|tomás|hernando|altamira|yesid|joaquín|fredy|gloria|marta|beatriz|lucía|camila|ricardo|ana|jaime|pedro|laura|inés|andrés)$/;
-const KIN = /^(mamá|papá|madre|padre|hermano|hermana|abuelo|abuela|amigo|amiga|tío|tía|primo|prima|hijo|hija|esposo|esposa|novio|novia|vecino|vecina|jefe|jefa|profesor|profesora|doctor|doctora|señor|señora|niño|niña|gato|perro)$/;
+const KIN = /^(mamá|papá|madre|padre|hermano|hermana|abuelo|abuela|amigo|amiga|tío|tía|primo|prima|hijo|hija|esposo|esposa|novio|novia|vecino|vecina|jefe|jefa|profesor|profesora|doctor|doctora|señor|señora|niño|niña)$/;
 const persA: Detector = (c) => {
   const e = firstEdit(c);
   if (e?.op !== 'del' || e.b !== 'a') return null;
@@ -242,11 +281,11 @@ const persA: Detector = (c) => {
 
 /** 15. The article that a job has none of, and the one a thing in general has. */
 const JOB = /^(profesor|profesora|médico|médica|doctor|doctora|ingeniero|ingeniera|abogado|abogada|estudiante|cocinero|cocinera|mesero|mesera|panadero|panadera|taxista|periodista|arquitecto|arquitecta|enfermero|enfermera|músico|música|escritor|escritora|colombiano|colombiana|canadiense|mexicano|mexicana|español|española)$/;
-const LIKING = /^(gusta|gustan|encanta|encantan|fascina|interesa|odio|amo|adoro|prefiero|detesto|encanto)$/;
+const LIKING = /^(gusta|gustan|encanta|encantan|fascina|interesa|odio|amo|adoro|detesto|encanto)$/;
 const article: Detector = (c) => {
   const e = firstEdit(c);
   if (e?.op === 'ins' && is(e.a, /^(un|una)$/) && is(c.a[e.i - 1], SER) && JOB.test(c.a[e.i + 1] ?? '') && !c.a.slice(e.i + 2).length) return { rule: 'article-job', at: e.j, text: 'A job takes no un or una here.' };
-  if (e?.op === 'del' && is(e.b, /^(el|la|los|las)$/) && (LIKING.test(c.b[e.j - 1] ?? '') || LIKING.test(c.b[e.j - 2] ?? ''))) return { rule: 'article-general', at: e.j, text: 'Things in general take el, la, los or las.' };
+  if (e?.op === 'del' && is(e.b, /^(el|la|los|las)$/) && (LIKING.test(c.b[e.j - 1] ?? '') || (LIKING.test(c.b[e.j - 2] ?? '') && is(c.b[e.j - 1], /^(mucho|más|menos|tanto|bastante)$/)))) return { rule: 'article-general', at: e.j, text: 'Things in general take el, la, los or las.' };
   return null;
 };
 
@@ -289,7 +328,7 @@ const negConcord: Detector = (c) => {
   if (!e || NEG_PAIR[e.b!] !== e.a) return null;
   const no = c.b.indexOf('no');
   // the no and the word are in one clause: no que between them (No quiere que firme algo is right)
-  return no >= 0 && no < e.j && !c.b.slice(no, e.j).some((w) => w === 'que' || w === 'si' || w === 'cuando') ? { rule: 'neg-concord', at: e.j } : null;
+  return no >= 0 && no < e.j && !c.b.slice(no, e.j).some((w) => w === 'que' || w === 'si' || w === 'cuando' || w === 'sin') ? { rule: 'neg-concord', at: e.j } : null;
 };
 
 /** 26. Le and lo side by side are se lo. */
@@ -304,7 +343,8 @@ const strand: Detector = (c) => {
   const last = c.a[c.a.length - 1];
   const firstB = c.b[0] ?? '', secondB = c.b[1] ?? '';
   const question = /^(quién|quiénes|qué|cuál|cuáles|dónde|cuándo|cómo|cuánto)$/;
-  if (!PREP_END.test(last ?? '') || !(PREP_END.test(firstB) && question.test(secondB))) return null;
+  // the little word that was sent to the end: sobre is also the last word of "es el sobre"
+  if (last !== firstB || !PREP_END.test(last ?? '') || !question.test(secondB)) return null;
   return c.b.every((w) => w !== 'en' || c.b.indexOf(w) === 0) ? { rule: 'strand', at: 0 } : null;
 };
 
@@ -330,7 +370,7 @@ const gustoYo: Detector = (c) => {
   const theirs = forms(e.b).filter((r) => EXPERIENCER.has(r.inf.replace(/se$/, '')) && (r.person === 'él/ella' || r.person === 'ellos'));
   // a form that is also a third person (faltaba is yo and él) could be the right verb: only a form that is no third person at all is the learner doing the pleasing
   const clitic = is(c.b[e.j - 1], /^(me|te|le|les|nos)$/) || is(c.b[e.j - 2], /^(me|te|le|les|nos)$/);
-  return clitic && mine.length && !forms(e.a).some((r) => r.person === 'él/ella' || r.person === 'ellos') && theirs.length && mine.some((m) => theirs.some((t) => t.inf === m.inf)) ? { rule: 'exp-subject', at: e.j, text: 'With gustar, the thing you like does the pleasing: it is me gusta, not yo gusto.' } : null;
+  return clitic && mine.length && !forms(e.a).some((r) => r.person === 'él/ella' || r.person === 'ellos') && theirs.length && mine.some((m) => theirs.some((t) => t.inf === m.inf && t.tense === m.tense)) ? { rule: 'exp-subject', at: e.j, text: 'With gustar, the thing you like does the pleasing: it is me gusta, not yo gusto.' } : null;
 };
 
 /** 11. A verb that goes with its own little word, and the little word is another, or missing, or there where none goes. A short table of verbs the bank uses one way. */
@@ -348,7 +388,8 @@ const verbPrep: Detector = (c) => {
   const need = (w: string | undefined) => lemmaAny(w).map((l) => VERB_PREP[l.replace(/se$/, '').replace(/^casar$/, 'casar')]).find(Boolean);
   const text = 'This verb goes with its own little word.';
   // al and del hold the little word inside them: the slip there is the article
-  if (e.op === 'del' && SMALL_WORD.test(e.b ?? '') && need(prevB) === e.b && !is(c.a[e.i], /^(al|del)$/)) return { rule: 'verb-prep', at: e.j, text };
+  // pienso viajar and pienso en viajar are both said
+  if (e.op === 'del' && SMALL_WORD.test(e.b ?? '') && need(prevB) === e.b && !is(c.a[e.i], /^(al|del)$/) && !(e.b === 'en' && isInfinitive(c.b[e.j + 1] ?? ''))) return { rule: 'verb-prep', at: e.j, text };
   // voy para el centro is said: para, hacia and hasta are ways to go somewhere, not slips
   if (e.op === 'sub' && SMALL_WORD.test(e.a ?? '') && SMALL_WORD.test(e.b ?? '') && need(prevB) === e.b && e.a !== e.b && !is(e.a, /^(para|hacia|hasta|por)$/)) return { rule: 'verb-prep', at: e.j, text };
   // quiero a ir: no little word between a verb of wanting or being able and the dictionary form
@@ -390,7 +431,8 @@ const couldWould: Detector = (c) => {
   if (mb.some((x) => x.tense === 'imperfecto') && /\b(when i was|as a (child|kid)|every|always|often|used)\b/.test(c.en) && /\bwould\b/.test(c.en)) {
     return { rule: 'would-habit', at: e.j, text: 'A habit in the past is the going-on past, not the would form.' };
   }
-  if (mb.some((x) => x.tense === 'preterito') && /\b(couldn't|could not|could)\b/.test(c.en) && !/\bwould\b/.test(c.en)) {
+  // the could is poder's, in a statement: "podría haber ido" is right for could have, and "¿cómo podrías decirle eso?" is a could too
+  if (mb.some((x) => x.tense === 'preterito' && x.inf === 'poder') && /\b(couldn't|could not|could)\b/.test(c.en) && !/\bwould\b/.test(c.en) && !c.en.includes('?') && !/^haber/.test(c.b[e.j + 1] ?? '')) {
     return { rule: 'could', at: e.j, text: 'A could that happened, or did not, is the past form, not the would form.' };
   }
   return null;

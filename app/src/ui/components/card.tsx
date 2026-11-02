@@ -29,6 +29,8 @@ const LOCATED = new Set(['accents', 'article', 'verb-ending', 'wrong-word', 'agr
  *  Everything else is "Not yet." */
 export function retryLead(check: Pick<Check, 'near' | 'hint' | 'hintKind'> & { ask?: boolean }): string {
   if (check.near) return 'Almost.';
+  // a lesson's own reason may open with "Almost.": it does not get a lead in front of it
+  if (check.hintKind === 'pitfall' && /^Almost\b/.test(check.hint ?? '')) return '';
   // an Ask does not say it is wrong, so it does not say it is close
   if (check.ask) return 'Not sure.';
   const k = check.hintKind;

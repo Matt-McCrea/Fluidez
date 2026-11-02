@@ -42,7 +42,7 @@ const FAMILY: Readonly<Record<SwapKind, RegExp | null>> = {
   'moved-phrase': /(topic-fronting|word-order|discourse-structure|cleft|emphatic|argument-markers)/,
   'future-ir-a': /(^|[:-])(future|ir-a)(-|$)/,
   'pret-perfecto': /(^|[:-])(preterite|perfecto|pret|narrative-pasts|spain-pasts)(-|$)/,
-  'cond-ra': /(^|[:-])(conditional|softening|imperfect-subj|deber-modal|tense-modal-uses)(-|$)/,
+  'cond-ra': /(^|[:-])(conditional|softening|imperfect-subj|deber-modal|tense-modal-uses|si-hypothetical)(-|$)/,
   copula: /(^|[:-])(ser|estar)(-|$)/,
   'result-clause': /(conditional-perfect|si-past-unreal|conditional-advanced|pluperfect-subj)/,
   synonym: null,
@@ -55,12 +55,12 @@ const FAMILY: Readonly<Record<SwapKind, RegExp | null>> = {
 /** The one swap whose note is a rule of the language and not a comparison of two phrases. */
 export const RESULT_CLAUSE_NOTE = 'Habría and hubiera both work in the result clause.';
 
-/** Does this swap touch one of the card's nodes? A card whose nodes are not known is assumed to be touched by any swap that changes a tense or a mood. */
+/** Does this swap touch one of the card's nodes? A card whose nodes are not known is assumed to be touched by any swap that changes a tense or a mood, and by no other: nobody can say what it was practising. */
 export function touches(swap: Swap, targets?: readonly string[]): boolean {
   if (swap.kind === 'synonym') return !!swap.lemma && !!targets?.some((t) => t === `l:${swap.lemma}`);
   const family = FAMILY[swap.kind];
   if (!family) return false;
-  return targets ? targets.some((t) => family.test(t)) : true;
+  return targets ? targets.some((t) => family.test(t)) : swap.kind !== 'clause-order' && swap.kind !== 'moved-phrase' && swap.kind !== 'copula';
 }
 
 /** The line a swap earns when it touches the card. */
