@@ -2,7 +2,8 @@
 // examples in small groups with a one-tap "spot it" between them, the rule in
 // two layers (the trick, then the why), the present card one variant at a time.
 
-import { analyzeToken } from '../../engine';
+import { analyzeToken, COMPOUND_OF_HABER } from '../../engine';
+import { analyzeWords } from '../../engine/tagger/words';
 import { isName } from './names';
 import { tensesOfNode } from './tenses';
 
@@ -89,14 +90,14 @@ const norm = (w: string) => w.toLowerCase();
  * the node lists forms; else the verb forms the engine reads in the node and
  * its examples (seen twice or more when any are); else, for nodes that are
  * not about a verb (articles, questions), the words shared by two examples.
- * A node that teaches a tense keeps only the forms of that tense (hables, not
- * the quiero in front of it), when there are any.
+ * A node that teaches a tense takes the forms of that tense its examples use
+ * as verbs (hables, not the quiero in front of it; vivo, not the centro that
+ * reads like one), and for a compound tense its haber, when there are any.
  * Names (capitalised everywhere or mid-sentence) are never work words.
  */
 export function workWords(node: { id?: string; tags?: readonly string[]; es?: string; forms?: readonly Pair[] }, examples: readonly Pair[]): string[] {
-  const taught = node.id ? tensesOfNode({ id: node.id, tags: node.tags }) : [];
-  const ofTaught = (w: string) => analyzeToken(w).some((a) => a.accentExact && taught.includes(a.tense));
-  const own = (ws: string[]) => (taught.length && ws.some(ofTaught) ? ws.filter(ofTaught) : ws);
+  const taught: readonly string[] = node.id ? tensesOfNode({ id: node.id, tags: node.tags }) : [];
+  const isTaught = (t: string, inf: string) => taught.includes(t) || (inf === 'haber' && taught.includes(COMPOUND_OF_HABER[t as keyof typeof COMPOUND_OF_HABER] ?? ''));
   const isProper = (set: Set<string>, tok: string) => set.has(tok) && !STOP.has(tok) && !analyzeToken(tok).some((a) => a.accentExact);
   const texts = [node.es ?? '', ...examples.map((e) => e.es)].filter(Boolean);
   const lowerAll = new Set<string>(); // every occurrence capitalised
@@ -112,14 +113,21 @@ export function workWords(node: { id?: string; tags?: readonly string[]; es?: st
   }
   for (const w of count.keys()) if (!everLower.has(w)) lowerAll.add(w);
   const proper = (w: string) => midCap.has(w) || isProper(lowerAll, w);
+  const cands = [...count.keys()].filter((w) => !proper(w));
+  const verbs = cands.filter((w) => !STOP.has(w) && analyzeToken(w).some((a) => a.accentExact));
+  if (taught.length) {
+    const asVerb = new Set(texts.flatMap((t) => analyzeWords(t).filter((w) => w.pos === 'verb').map((w) => norm(w.w))));
+    const readings = (w: string) => analyzeToken(w).filter((a) => a.accentExact);
+    // crees is crear's subjunctive on paper, and it is the indicative of creer
+    const indicative = (w: string) => taught.includes('presubj') && readings(w).some((a) => a.tense === 'presente');
+    const forms = verbs.filter((w) => asVerb.has(w) && !indicative(w) && readings(w).some((a) => isTaught(a.tense, a.inf)));
+    if (forms.length) return forms;
+  }
   if (node.forms?.length) {
     const seen = new Set<string>();
     for (const f of node.forms) for (const w of words(f.es)) if (!proper(norm(w))) seen.add(norm(w));
-    return own([...seen]);
+    return [...seen];
   }
-  const cands = [...count.keys()].filter((w) => !proper(w));
-  const verbs = cands.filter((w) => !STOP.has(w) && analyzeToken(w).some((a) => a.accentExact));
-  if (taught.length && verbs.some(ofTaught)) return verbs.filter(ofTaught);
   if (verbs.length) {
     const twice = verbs.filter((w) => (count.get(w) ?? 0) >= 2);
     return twice.length ? twice : verbs;
