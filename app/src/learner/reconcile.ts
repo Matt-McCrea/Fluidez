@@ -454,6 +454,8 @@ export function reconcile<S extends SessionDoc = SessionDoc>(input: ReconcileInp
     if (sv > latest) { session = null; sessionNote = { action: 'discarded', why: `it was planned by a newer build (content version ${sv})` }; }
     else if (touched) { session = null; sessionNote = { action: 'discarded', why: `it names ${touched}, which a content migration has moved` }; }
     else if (moves) { session = null; sessionNote = { action: 'discarded', why: moves }; }
+    // finishing a lesson saves the path it was planned with (plan.pathAfter), which would lose what was just owed or dropped
+    else if (owed.length || dropped.length) { session = null; sessionNote = { action: 'discarded', why: 'the path it was planned with has since changed' }; }
     else {
       // a lesson with no day (a review) has no key to name, and is current without one
       const u = units.find((x) => x.id === s.plan.unit);

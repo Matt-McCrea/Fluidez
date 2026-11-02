@@ -301,6 +301,15 @@ describe('an open lesson', () => {
     expect(out.changed.session).toBe(false);
   });
 
+  it('is discarded when settling changed the path it was planned with: finishing would save that path over what was owed', () => {
+    const moved = original();
+    moved[0].days.unshift(...unit('u01', [{ key: 'u01-d9', lexemes: ['l:e'] }]).days);
+    const out = reconcile(input({ path: at, session: session({ version: 2, contentVersion: 0, dayKey: 'u01-d2' }, plan({ day: 3 })), units: moved }));
+    expect(out.path.owedNew).toEqual(['l:e']);
+    expect(out.session).toBeNull();
+    expect(out.report.session?.why).toMatch(/path it was planned with has since changed/);
+  });
+
   it('is discarded when a newer build planned it', () => {
     const out = reconcile(input({ path: at, session: session({ version: 2, contentVersion: 5, dayKey: 'u01-d2' }) }));
     expect(out.session).toBeNull();
