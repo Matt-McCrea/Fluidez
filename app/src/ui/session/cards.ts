@@ -714,6 +714,20 @@ export function learnRetrieval(item: LearnItem, b: Bundle, round: number, n?: nu
 
 // ---------------------------------------------------------------- teaching scripts
 
+/**
+ * The script items a lesson asks, without the read-and-picks whose right option gives itself away by its length or a lone tag (as
+ * pickFallback screens its own). A script whose every pick does is asked whole: a lesson is never left with nothing to read.
+ */
+export function screenPicks<T extends ScriptItem>(items: readonly T[], script: TeachingScript): T[] {
+  const gives = (it: T) => {
+    const rp = it.op === 'readAndPick' ? script.readAndPick[it.index] : undefined;
+    return !!rp && (givesAwayByLength(rp.options, rp.answer) || givesAwayByTag(rp.options, rp.answer));
+  };
+  const picks = items.filter((it) => it.op === 'readAndPick');
+  const kept = picks.filter((it) => !gives(it));
+  return kept.length ? items.filter((it) => it.op !== 'readAndPick' || kept.includes(it)) : [...items];
+}
+
 export function scriptCard(item: ScriptItem, script: TeachingScript): Card | undefined {
   if (item.op === 'readAndPick') {
     const rp = script.readAndPick[item.index];
@@ -887,6 +901,11 @@ function pickFallback(item: PracticeItem, s: BankSentence, b: Bundle, seed: numb
  * `taken`: the script picks already asked around this item, one set for a whole block, so that the block asks none twice (pickFallback).
  */
 export function practiceCard(item: PracticeItem, b: Bundle, seed: number, taught?: readonly TenseKey[], taken?: Set<string>): Card {
+  if (item.contrast) {
+    const it = b.contrastItem(item.contrast);
+    const file = it && b.contrasts.get(it.node);
+    if (it && file && it.node === item.node) return contrastCard(it, file.decides, { key: item.id, form: contrastForm(file.decides, item.direction) });
+  }
   const s = b.sentence(item.sentence);
   if (!s) return { type: 'read', key: item.id, ask: 'Have a look', es: b.node(item.node)?.es ?? '', en: b.title(item.node), why: '' };
   const r = rng(`${seed}:${item.id}`);

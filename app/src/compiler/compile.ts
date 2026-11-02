@@ -1210,8 +1210,12 @@ class Compiler {
     const oldSources: NodeId[] = [...older, ...(contrast ? [contrast] : [])];
     const olderItems: PracticeItem[] = [];
     let need = produce ? total - nLatest : 0;
+    // the contrast has no bank sentence: its turn in the rotation is one of its own items, where it has one the learner can be shown
+    const own = contrast && need > 0 ? this.contrastPractice(contrast) : undefined;
+    if (own) { olderItems.push(own); need--; }
     for (let i = 0; need > 0 && oldSources.length && i < total * 2; i++) {
       const src = oldSources[i % oldSources.length];
+      if (src === contrast) continue;
       const [s] = this.pickSentences(src, 1, { typed: true });
       if (s) { olderItems.push(this.practiceItem(this.ladderOp(src, olderItems.length), src, s, 'productive', 'exposure')); need--; }
     }
@@ -1304,6 +1308,12 @@ class Compiler {
 
   private scriptItem(node: NodeId, part: 'readAndPick' | 'yourTurn', index: number): ScriptItem {
     return { op: part, id: `sc:${node}:${part === 'readAndPick' ? 'rp' : 'yt'}:${index}`, node, index, scoring: 'exposure', credit: [node] };
+  }
+
+  /** A practice item that is one of a known contrast's own items (see PracticeItem.contrast), the store's pick as in a warm-up review. */
+  private contrastPractice(node: NodeId): PracticeItem | undefined {
+    const contrast = this.contrastReview(node);
+    return contrast ? { op: 'choose', id: `ct:${contrast}:s${this.sessionIndex}`, node, sentence: '', direction: 'productive', scoring: 'exposure', credit: [node], contrast } : undefined;
   }
 
   /** A contrast node whose sides are all known and that involves one of `nodes` (or any, if none involves them). */
@@ -1515,8 +1525,11 @@ class Compiler {
     if (!sources.length) return undefined;
     const items: PracticeItem[] = [];
     const ops: PracticeOp[] = ['choose', 'type', 'transform', 'translate'];
+    const own = contrast ? this.contrastPractice(contrast) : undefined;
+    if (own) items.push(own);
     for (let i = 0; items.length < COUNTS.remix && i < COUNTS.remix * 3; i++) {
       const src = sources[i % sources.length];
+      if (src === contrast) continue;
       const [s] = this.pickSentences(src, 1, { typed: true });
       if (s) items.push(this.practiceItem(this.ladderOp(src, items.length), src, s, 'productive', 'exposure'));
     }

@@ -307,6 +307,8 @@ export interface PracticeItem extends ItemBase {
   node: NodeId;
   sentence: string;
   direction: Direction;
+  /** a known contrast's own item (content/contrasts) served in place of a bank sentence, which a contrast has none of */
+  contrast?: string;
 }
 
 /** An item from the node's TeachingScript (readAndPick[i] or yourTurn[i]). */

@@ -9,7 +9,7 @@ import { checkPersonal } from '../../check/personal';
 import { AnswerField } from '../components/answer';
 import { canCheck, CardRun, CardView, Continue } from '../components/card';
 import { Es, Heading, Paras, Rich, undash } from '../components/text';
-import { learnRetrieval, SAY, scriptCard, sentenceCheck, type Card } from '../session/cards';
+import { learnRetrieval, SAY, screenPicks, scriptCard, sentenceCheck, type Card } from '../session/cards';
 import { LEARN_ASKS_MAX, LearnQueue, teachOrder } from '../session/order';
 import { blockHeading } from '../session/labels';
 import { exampleGroups, workWords, restText, ruleLayers, spotFeedback, spotIt, splitVariants } from '../session/teachflow';
@@ -220,7 +220,7 @@ function TeachPhase({ phase, script, block, run, onDone, at, start }: { phase: P
     case 'yourTurn': {
       // a few to read first, then writing it, with the rest of the reading woven in
       const order = teachOrder(block.items);
-      const items = (phase === 'readAndPick' ? order.first : order.mixed)
+      const items = screenPicks(phase === 'readAndPick' ? order.first : order.mixed, script)
         .filter((it) => !!scriptCard(it, script));
       const cards = items.map((it) => scriptCard(it, script)!);
       return (

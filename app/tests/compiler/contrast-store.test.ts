@@ -6,7 +6,8 @@ import { admissible, buildContentIndex, buildCourse, compileSession, initialPath
 import type { ContrastDecides, ContrastFile, ContrastItem } from '../../src/content/schema';
 import { Learner } from '../../src/learner';
 import { syntheticCorpus } from '../../tools/sim/synthetic';
-import { lightCourse } from './helpers';
+import { PROFILES } from '../../tools/sim/profiles';
+import { lightCourse, walk } from './helpers';
 
 const T0 = new Date(2026, 0, 5, 19).getTime();
 const DAY = 86_400_000;
@@ -136,4 +137,29 @@ describe('the real contrasts\' items are shown to a learner who has what the cou
     const end = shownWhen('the end');
     expect([...end].filter(([, d]) => d.shown < d.of).map(([x, d]) => `${x} ${d.shown}/${d.of}`)).toEqual([]);
   }, 120_000);
+});
+
+describe('interleaving: the known contrast mixed into a drill or remix is served as one of its own items', () => {
+  it('a block that names a contrast carries a contrast item, gated on what the learner knows', () => {
+    let named = 0, served = 0;
+    for (const seed of [1, 2, 3]) {
+      const { plans } = walk({ seed, profile: PROFILES.average, days: 150 });
+      for (const { plan, input, known } of plans) {
+        for (const b of plan.blocks) {
+          if ((b.kind !== 'controlledOutput' && b.kind !== 'remix') || !b.contrast) continue;
+          named++;
+          const own = b.items.filter((i) => i.contrast);
+          served += own.length ? 1 : 0;
+          for (const it of own) {
+            expect(it.node).toBe(b.contrast);
+            const ref = input.content.contrasts.get(it.node)?.find((r) => r.id === it.contrast);
+            expect(ref, `${it.contrast} is the contrast's own`).toBeDefined();
+            expect(ref!.requires.filter((r) => !known.has(r) && !Object.values(plan.newNodes).flat().includes(r))).toEqual([]);
+          }
+        }
+      }
+    }
+    expect(named).toBeGreaterThan(0);
+    expect(served, 'a named contrast with items gets one').toBeGreaterThan(0);
+  });
 });
