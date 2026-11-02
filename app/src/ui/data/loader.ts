@@ -250,7 +250,13 @@ export class ContentLoader {
     return sorted.slice(Math.max(0, at - WINDOW_BEFORE), Math.min(sorted.length, at + WINDOW_AFTER + 1));
   }
 
-  /** Load the window of units around `unit`, and any core file that has not arrived yet; the records that were not loaded before. */
+  /**
+   * Load the window of units around `unit`; the records that were not loaded before. Every window brings
+   * the files of a window kind that are core all the same (the contrast scripts, src/content/kinds.ts): a
+   * contrast comes due wherever the learner is, so its script is here whatever the window, and one that
+   * failed to arrive is asked for again with the next. They come with the bundle rather than with the
+   * course, so a file that fails to arrive is not a course that failed to load.
+   */
   async loadWindow(unit: string | number): Promise<ContentSource> {
     const inWindow = this.unitWanter(await this.window(unit));
     return this.fetch((kind, p) => inWindow(kind, p) || isCoreFile(kind, baseName(p)));
@@ -304,19 +310,9 @@ export class ContentLoader {
     };
   }
 
-  /**
-   * The files of a window kind that are core all the same (the contrast scripts, src/content/kinds.ts):
-   * a contrast comes due wherever the learner is, so its script is here whatever the window. Read with
-   * the bundle rather than with the course, so a file that fails to arrive is not a course that failed to load.
-   */
-  private async loadCore(): Promise<void> {
-    await this.fetch((kind, p) => isCoreFile(kind, baseName(p)));
-  }
-
   /** Load (once) every content file for the window or bands asked for, and return a fresh bundle. */
   async load(opts: LoadOptions = {}): Promise<Bundle> {
     const { units, nodes } = await this.core();
-    await this.loadCore();
     if (opts.unit !== undefined) {
       await this.loadWindow(opts.unit);
     } else {
