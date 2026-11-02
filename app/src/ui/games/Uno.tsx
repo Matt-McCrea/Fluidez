@@ -5,10 +5,13 @@ import { bestLine, cheer, unoReaction } from '../../games/reactions';
 import { SKIP_SECONDS, WRONG_SECONDS } from '../../games/round';
 import { unoKey, type GamesDoc } from '../../games/store';
 import { UnoGame, type UnoDeck, type UnoResult } from '../../games/uno';
-import { Continue } from '../components/card';
+import { Continue, missPunct } from '../components/card';
 import { Heading, Rich, Txt } from '../components/text';
 import { useApp } from '../context';
 import type { PracticeSpec } from '../session/practice-spec';
+
+/** A whole sentence brings its own stop. */
+const stopped = (t: string) => !missPunct(t);
 
 export function Uno({ deck, onExit, onPractise }: { deck: UnoDeck; onExit: () => void; onPractise: (spec: PracticeSpec) => void }) {
   const { learner, bundle, ui, now } = useApp();
@@ -99,7 +102,7 @@ function Round({ game, deck, onOver, onQuit }: { game: UnoGame; deck: UnoDeck; o
         <div class="feedback" aria-live="polite">
           {c ? (
             <>
-              <p class="miss">{c.how === 'skip' ? 'It is ' : 'Not that one. It is '}<Txt t={{ text: it.answer, lang: it.answerLang }} />.</p>
+              <p class="miss">{c.how === 'skip' ? '' : 'Not that one. '}{stopped(it.answer) ? 'This one fits: ' : 'It is '}<Txt t={{ text: it.answer, lang: it.answerLang }} />{stopped(it.answer) ? '' : '.'}</p>
               {card.why ? <p class="why small"><Rich text={card.why} /></p> : null}
             </>
           ) : null}
@@ -140,7 +143,7 @@ function Over({ deck, result, onAgain, onExit }: {
         <>
           <p class="ask">What slipped</p>
           <ul class="slips" data-missed>
-            {result.missed.map((m) => <li key={m.cue}><Txt t={{ text: m.cue, lang: m.cueLang }} />: <Txt t={{ text: m.answer, lang: m.answerLang }} /></li>)}
+            {result.missed.map((m) => <li key={m.cue}><Txt t={{ text: m.cue, lang: m.cueLang }} />{stopped(m.cue) ? ' ' : ': '}<Txt t={{ text: m.answer, lang: m.answerLang }} /></li>)}
           </ul>
         </>
       ) : null}
