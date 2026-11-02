@@ -19,7 +19,7 @@ A retired id is never used again. Rename targets must exist in the content.
 
 ## At a release
 
-1. `npm run gate` passes (it checks the above).
+1. `npm run gate` passes (it checks the above, and that the chapter library the app ships is what `content/story` says: `npm run library` writes it again, and the build does too).
 2. `npm run reconcile -- <your backup.json>` shows what the build will do to a real learner. Read it.
 3. `npm run shipped -- snapshot` adds the course's ids to `content/_shipped/ids.json`, which only grows.
 

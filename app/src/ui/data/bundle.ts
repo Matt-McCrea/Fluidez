@@ -4,6 +4,7 @@
 import {
   buildContentIndex, buildCourse, type ContentIndex, type ContentSource, type Course,
 } from '../../compiler';
+import { lackKey } from '../../content/kinds';
 import { libraryChapter, type LibraryChapter } from '../../content/library';
 import type {
   BankSentence, GraphNode, NodeId, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
@@ -114,7 +115,8 @@ export class Bundle {
     if (have || !this.more || this.noScript.has(node)) return have;
     this.extend(await this.more.loadScript(node));
     const got = this.scripts.get(node);
-    if (!got) this.noScript.add(node);
+    // a script nobody wrote is remembered; one that failed to arrive is asked for again
+    if (!got && !this.source.lacking?.includes(lackKey('scripts', node))) this.noScript.add(node);
     return got;
   }
 

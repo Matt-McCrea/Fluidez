@@ -1,6 +1,6 @@
 // The windowed loader: only the units around the learner, extended on demand.
 import { beforeAll, describe, expect, it } from 'vitest';
-import { ContentLoader, WINDOW_AFTER, WINDOW_BEFORE } from '../../src/ui/data/loader';
+import { CONTENT_FILES, ContentLoader, WINDOW_AFTER, WINDOW_BEFORE } from '../../src/ui/data/loader';
 import type { Bundle } from '../../src/ui/data/bundle';
 
 const unitsOf = (b: Bundle) => [...new Set([...b.sentences.values()].map((s) => s.unit))].sort();
@@ -48,6 +48,18 @@ describe('windowed content loader', () => {
     expect(s?.node).toBe(node);
     expect(fresh.scripts.get(node)).toBe(s);
     expect(await fresh.scriptFor(node)).toBe(s);
+    expect(await fresh.scriptFor('g:no-such-node')).toBeUndefined();
+  });
+
+  it('asks again for a script that failed to arrive, and does not take it for one nobody wrote', async () => {
+    const net = { up: false };
+    const scripts = Object.fromEntries(Object.entries(CONTENT_FILES.scripts).map(([p, load]) => [p, async () => { if (!net.up) throw new Error('net::ERR_FAILED'); return load(); }]));
+    const fresh = await new ContentLoader({ ...CONTENT_FILES, scripts }).load({ unit: 0 });
+    const node = 'g:comparatives';
+    expect(await fresh.scriptFor(node)).toBeUndefined();
+    net.up = true;
+    expect((await fresh.scriptFor(node))?.node).toBe(node);
+    // one nobody wrote is still asked for once
     expect(await fresh.scriptFor('g:no-such-node')).toBeUndefined();
   });
 });

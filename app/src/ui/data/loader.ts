@@ -1,10 +1,14 @@
 // Content loading for the browser. Every JSON file under app/content is a
 // lazy Vite glob import (its own chunk), so the app only fetches what it
-// needs: the graph and units always, and the bank/story/scenes/writing/scripts
-// of a window of units around the learner's current one (2 before, 3 after).
-// Later units are fetched on demand (Bundle.ensureWindow / ensureUnits /
-// scriptFor); the service worker precaches only the first window and caches
-// the rest on first use. Empty directories are
+// needs: the graph and units always (with the contrast scripts), the library of
+// chapter metadata always (an import of its own, content/_library), and the
+// bank/story/scenes/writing/scripts of a window of units around the learner
+// (2 before, 3 after). Later units are fetched on demand (Bundle.ensureWindow /
+// ensureUnits / ensureChapters / scriptFor), and prepare() (prepare.ts) asks for
+// what the next session needs before it is compiled. The service worker installs
+// the first window and caches the rest on first use (tools/build/pwa.ts). A file
+// that fails to arrive is not claimed: it is asked for again next time, and the
+// loader tells the compiler it is lacking (`lacking`). Empty directories are
 // fine. Records that do not parse against the schema are skipped and counted
 // (the gate is the authority on content; the UI never "fixes" content).
 import type { z } from 'zod';
