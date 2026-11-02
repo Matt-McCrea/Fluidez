@@ -195,12 +195,21 @@ describe('session flow on the fixture unit', () => {
   it('minimum and extended tiers render: timed recall, re-read, extra reading', async () => {
     const w = await world();
     for (let d = 0; d < 3; d++) { await session(w, 'right'); w.clock.t += DAY; }
-    const min = await session(w, 'right', 'next', 'minimum');
-    expect(min.plan.type).toBe('minimum');
-    expect(min.plan.blocks.map((b) => b.kind)).toContain('timedRecall');
-    expect(min.plan.blocks.map((b) => b.kind)).toContain('reread');
-    expect([w.ui.path.unit, w.ui.path.day, w.ui.path.coreSessions]).toEqual([min.pathBefore.unit, min.pathBefore.day, min.pathBefore.coreSessions]); // a minimum session never advances
-    w.clock.t += DAY;
+    // a short session gives the next slice of the day (a few new words, or its chapter) while there is one, then a re-read and a timed recall
+    const kinds = new Set<string>();
+    for (let k = 0; k < 10 && !(kinds.has('timedRecall') && kinds.has('reread')); k++) {
+      const min = await session(w, 'right', 'next', 'minimum');
+      expect(min.plan.type).toBe('minimum');
+      expect(min.walk.failures).toEqual([]);
+      min.plan.blocks.forEach((b) => kinds.add(b.kind));
+      // only a slice that finishes an input day moves the path, and it moves it by one day; a minimum session never counts as a core one
+      expect(w.ui.path.coreSessions).toBe(min.pathBefore.coreSessions);
+      if (!min.plan.advancesPath) expect([w.ui.path.unit, w.ui.path.day]).toEqual([min.pathBefore.unit, min.pathBefore.day]);
+      w.clock.t += DAY;
+    }
+    expect(kinds).toContain('learn');
+    expect(kinds).toContain('timedRecall');
+    expect(kinds).toContain('reread');
     const ext = await session(w, 'right', 'next', 'extended');
     expect(ext.walk.failures).toEqual([]);
     expect(ext.plan.blocks.map((b) => b.kind)).toContain('extraReading');
