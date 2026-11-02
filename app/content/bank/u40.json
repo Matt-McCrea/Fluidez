@@ -16714,7 +16714,7 @@
   },
   {
     "id": "u40-0639",
-    "es": "No es muy hondo; hay que profundar el hueco un poco más.",
+    "es": "No es muy hondo; hay que profundizar el hueco un poco más.",
     "en": "It isn't very deep; the hole needs to be deepened a little more.",
     "accept": [],
     "acceptEn": [],
@@ -16722,18 +16722,18 @@
       "c:hay",
       "c:hay-que",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:ser-identity",
+      "g:verb-infinitive",
       "l:hondo",
       "l:hueco",
-      "l:profundar",
+      "l:profundizar",
       "l:ser",
       "p:no-es-nada-adj",
       "p:poco-un-poco",
       "p:quantifiers-basic"
     ],
     "targets": [
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",
@@ -16742,22 +16742,23 @@
   },
   {
     "id": "u40-0640",
-    "es": "Los pescadores quieren profundar el canal del puerto.",
+    "es": "Los pescadores quieren profundizar el canal del puerto.",
     "en": "The fishermen want to deepen the port channel.",
     "accept": [],
     "acceptEn": [],
     "requires": [
       "g:gender-articles",
       "g:stem-boot",
+      "g:verb-infinitive",
       "l:canal",
       "l:pescador",
-      "l:profundar",
+      "l:profundizar",
       "l:puerto",
       "l:querer"
     ],
     "targets": [
       "l:pescador",
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",
@@ -16766,7 +16767,7 @@
   },
   {
     "id": "u40-0641",
-    "es": "Hay que profundar el canal, o el agua va a entrar a la casa.",
+    "es": "Hay que profundizar el canal, o el agua va a entrar a la casa.",
     "en": "The channel has to be deepened, or the water will get into the house.",
     "accept": [],
     "acceptEn": [],
@@ -16774,18 +16775,18 @@
       "c:hay",
       "c:hay-que",
       "g:gender-articles",
-      "g:hay-vs-esta",
       "g:ir-a-plans",
+      "g:verb-infinitive",
       "l:agua",
       "l:canal",
       "l:casa",
       "l:entrar",
       "l:ir",
-      "l:profundar",
+      "l:profundizar",
       "p:el-agua-fria"
     ],
     "targets": [
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",
@@ -16794,7 +16795,7 @@
   },
   {
     "id": "u40-0642",
-    "es": "Vamos a profundar el hueco para llegar al agua.",
+    "es": "Vamos a profundizar el hueco para llegar al agua.",
     "en": "We're going to deepen the hole to reach the water.",
     "accept": [],
     "acceptEn": [],
@@ -16806,14 +16807,13 @@
       "l:hueco",
       "l:ir",
       "l:llegar",
-      "l:profundar",
+      "l:profundizar",
       "p:el-agua-fria",
-      "p:ir-a-venir-de-place",
       "p:para-inf",
       "p:para-inf-purpose"
     ],
     "targets": [
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",
@@ -16822,7 +16822,7 @@
   },
   {
     "id": "u40-0643",
-    "es": "Yesid dice que con una pala y paciencia se puede profundar cualquier hueco.",
+    "es": "Yesid dice que con una pala y paciencia se puede profundizar cualquier hueco.",
     "en": "Yesid says that with a shovel and patience you can deepen any hole.",
     "accept": [],
     "acceptEn": [],
@@ -16832,16 +16832,17 @@
       "g:gender-articles",
       "g:stem-e-i",
       "g:that-clauses",
+      "g:verb-infinitive",
       "l:decir",
       "l:hueco",
       "l:paciencia",
       "l:pala",
       "l:poder",
-      "l:profundar",
+      "l:profundizar",
       "p:se-puede-me-dejas"
     ],
     "targets": [
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",
@@ -16850,7 +16851,7 @@
   },
   {
     "id": "u40-0644",
-    "es": "No es fácil profundar el canal con tanta arena.",
+    "es": "No es fácil profundizar el canal con tanta arena.",
     "en": "It isn't easy to deepen the channel with so much sand.",
     "accept": [],
     "acceptEn": [],
@@ -16860,12 +16861,13 @@
       "l:arena",
       "l:canal",
       "l:fácil",
-      "l:profundar",
-      "l:ser"
+      "l:profundizar",
+      "l:ser",
+      "p:es-adj-inf"
     ],
     "targets": [
       "l:arena",
-      "l:profundar"
+      "l:profundizar"
     ],
     "kind": "statement",
     "unit": "u40",

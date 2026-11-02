@@ -26497,7 +26497,8 @@
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:empuje-hale"
+      "c:empuje-hale",
+      "l:halar"
     ],
     "targets": [
       "c:empuje-hale"
@@ -26565,7 +26566,8 @@
       "c:empuje-hale",
       "g:stem-e-i",
       "l:arriba",
-      "l:decir"
+      "l:decir",
+      "l:halar"
     ],
     "targets": [
       "c:empuje-hale"
@@ -26577,7 +26579,7 @@
   },
   {
     "id": "u42-0978",
-    "es": "EMPUJE, decía el letrero, y aun así Hernando tiraba con todas sus fuerzas.",
+    "es": "EMPUJE, decía el letrero, y aun así Hernando halaba con todas sus fuerzas.",
     "en": "PUSH, said the sign, and even so Hernando tugged with all his strength.",
     "accept": [],
     "acceptEn": [],
@@ -26589,8 +26591,8 @@
       "l:decir",
       "l:empujar",
       "l:fuerza",
+      "l:halar",
       "l:letrero",
-      "l:tirar",
       "p:possessives-basic"
     ],
     "targets": [
@@ -26632,13 +26634,15 @@
     "requires": [
       "c:empuje-hale",
       "g:gender-articles",
+      "g:present-ar",
       "g:stem-e-i",
       "l:decir",
       "l:empujar",
       "l:guardia",
-      "l:hala",
+      "l:halar",
       "l:letrero",
       "l:sonreír",
+      "p:cuando-basic",
       "p:indefinites-basic"
     ],
     "targets": [
@@ -26667,6 +26671,7 @@
       "l:decir",
       "l:empujar",
       "l:guardia",
+      "l:halar",
       "l:puerta",
       "l:reír"
     ],
@@ -35100,7 +35105,7 @@
       "g:present-ar",
       "g:se-impersonal",
       "l:empujar",
-      "l:hala",
+      "l:halar",
       "l:puerta",
       "p:demonstratives-basic"
     ],

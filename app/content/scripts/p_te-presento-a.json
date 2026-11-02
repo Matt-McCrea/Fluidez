@@ -167,6 +167,11 @@
       "wrong": "Este es mi hermana.",
       "right": "Esta es mi hermana.",
       "why": "For a woman it's *esta*; *este* is for a man."
+    },
+    {
+      "wrong": "Te introduzco a Vale.",
+      "right": "Te presento a Vale.",
+      "why": "*Introducir* means to put in or insert. To introduce a person, use *presentar*."
     }
   ],
   "personal": "Introduce two people in your life to a friend. Start with *Te presento a* and say who they are to you, like *mi hermana* or *una amiga del trabajo*."

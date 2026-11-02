@@ -939,6 +939,126 @@
   "variety": "neutral"
  },
  {
+  "id": "l:la",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "the",
+  "es": "la",
+  "en": "the",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:los",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "the",
+  "es": "los",
+  "en": "the",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:las",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "the",
+  "es": "las",
+  "en": "the",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:una",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "a, an",
+  "es": "una",
+  "en": "a, an",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:unos",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "some",
+  "es": "unos",
+  "en": "some",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
+  "id": "l:unas",
+  "kind": "lexeme",
+  "band": "A1",
+  "priority": 1,
+  "title": "some",
+  "es": "unas",
+  "en": "some",
+  "requires": [],
+  "contrasts": [],
+  "serves": [],
+  "pcic": [],
+  "placement": "teaching_choice",
+  "note": "closed: grammar word, placed by frequency",
+  "sources": [
+   "curated"
+  ],
+  "pos": "det",
+  "variety": "neutral"
+ },
+ {
   "id": "l:él",
   "kind": "lexeme",
   "band": "A1",
@@ -12025,7 +12145,7 @@
   "band": "A1",
   "priority": 52,
   "title": "physical",
-  "es": "el físico",
+  "es": "físico",
   "en": "physical",
   "requires": [],
   "contrasts": [],
@@ -12039,8 +12159,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 1642,
   "variety": "neutral"
  },
@@ -19814,9 +19933,9 @@
   "kind": "lexeme",
   "band": "A1",
   "priority": 105,
-  "title": "attack, upsurge",
-  "es": "el repente",
-  "en": "attack, upsurge",
+  "title": "suddenly (with de)",
+  "es": "repente",
+  "en": "suddenly (with de)",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -19826,7 +19945,6 @@
    "freq"
   ],
   "pos": "noun",
-  "gender": "m",
   "freqRank": 2580,
   "variety": "neutral"
  },
@@ -31055,7 +31173,7 @@
   "band": "A2",
   "priority": 76,
   "title": "interview",
-  "es": "el/la entrevista",
+  "es": "la entrevista",
   "en": "interview",
   "requires": [],
   "contrasts": [],
@@ -31072,7 +31190,7 @@
    "seed:u47"
   ],
   "pos": "noun",
-  "gender": "mf",
+  "gender": "f",
   "freqRank": 1178,
   "variety": "neutral"
  },
@@ -45199,7 +45317,7 @@
   "band": "A2",
   "priority": 260,
   "title": "magazine",
-  "es": "el/la revista",
+  "es": "la revista",
   "en": "magazine",
   "requires": [],
   "contrasts": [],
@@ -45213,7 +45331,7 @@
    "vocab.js"
   ],
   "pos": "noun",
-  "gender": "mf",
+  "gender": "f",
   "freqRank": 779,
   "variety": "neutral"
  },
@@ -45354,7 +45472,7 @@
   "band": "A2",
   "priority": 261,
   "title": "track, dance floor",
-  "es": "el/la pista",
+  "es": "la pista",
   "en": "track, dance floor",
   "requires": [],
   "contrasts": [],
@@ -45368,7 +45486,7 @@
    "vocab.js"
   ],
   "pos": "noun",
-  "gender": "mf",
+  "gender": "f",
   "freqRank": 1306,
   "variety": "neutral"
  },
@@ -50517,7 +50635,7 @@
   "band": "B1",
   "priority": 286,
   "title": "selfish",
-  "es": "el egoísta",
+  "es": "egoísta",
   "en": "selfish",
   "requires": [],
   "contrasts": [],
@@ -50530,8 +50648,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 4474,
   "variety": "neutral"
  },
@@ -50741,7 +50858,7 @@
   "band": "B1",
   "priority": 286,
   "title": "optimistic",
-  "es": "el/la optimista",
+  "es": "optimista",
   "en": "optimistic",
   "requires": [],
   "contrasts": [],
@@ -50754,8 +50871,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "mf",
+  "pos": "adj",
   "freqRank": 4014,
   "variety": "neutral"
  },
@@ -55097,9 +55213,9 @@
   "kind": "lexeme",
   "band": "B1",
   "priority": 23,
-  "title": "to attend to, to serve",
+  "title": "to serve, to look after",
   "es": "atender",
-  "en": "to attend to, to serve",
+  "en": "to serve, to look after",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -58963,9 +59079,9 @@
   "kind": "lexeme",
   "band": "B1",
   "priority": 336,
-  "title": "to introduce, to insert",
+  "title": "to put in, to insert",
   "es": "introducir",
-  "en": "to introduce, to insert",
+  "en": "to put in, to insert",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -60272,7 +60388,7 @@
   "band": "B1",
   "priority": 164,
   "title": "view",
-  "es": "el/la vista",
+  "es": "la vista",
   "en": "view",
   "requires": [],
   "contrasts": [],
@@ -60286,7 +60402,7 @@
    "vocab.js"
   ],
   "pos": "noun",
-  "gender": "mf",
+  "gender": "f",
   "freqRank": 1339,
   "variety": "neutral"
  },
@@ -67914,7 +68030,7 @@
   "band": "B1",
   "priority": 386,
   "title": "organic",
-  "es": "el orgánico",
+  "es": "orgánico",
   "en": "organic",
   "requires": [],
   "contrasts": [],
@@ -67928,8 +68044,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 2577,
   "variety": "neutral"
  },
@@ -69089,12 +69204,12 @@
   "variety": "neutral"
  },
  {
-  "id": "l:profundar",
+  "id": "l:profundizar",
   "kind": "lexeme",
   "band": "B1",
   "priority": 390,
   "title": "to deepen",
-  "es": "profundar",
+  "es": "profundizar",
   "en": "to deepen",
   "requires": [],
   "contrasts": [],
@@ -72574,7 +72689,7 @@
   "band": "B2",
   "priority": 416,
   "title": "motorway",
-  "es": "el/la autopista",
+  "es": "la autopista",
   "en": "motorway",
   "requires": [],
   "contrasts": [],
@@ -72588,7 +72703,7 @@
    "vocab.js"
   ],
   "pos": "noun",
-  "gender": "mf",
+  "gender": "f",
   "freqRank": 2721,
   "variety": "neutral"
  },
@@ -73136,9 +73251,9 @@
   "kind": "lexeme",
   "band": "B2",
   "priority": 417,
-  "title": "to not know",
+  "title": "to not know; to ignore",
   "es": "ignorar",
-  "en": "to not know",
+  "en": "to not know; to ignore",
   "requires": [],
   "contrasts": [],
   "serves": [],
@@ -86931,7 +87046,7 @@
   "band": "C1",
   "priority": 514,
   "title": "alleged",
-  "es": "el presunto",
+  "es": "presunto",
   "en": "alleged",
   "requires": [],
   "contrasts": [],
@@ -86945,8 +87060,7 @@
    "vocab.js",
    "seed:u53"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 4046,
   "variety": "neutral"
  },
@@ -87297,7 +87411,7 @@
   "band": "C1",
   "priority": 518,
   "title": "community (adj.)",
-  "es": "el comunitario",
+  "es": "comunitario",
   "en": "community (adj.)",
   "requires": [],
   "contrasts": [],
@@ -87310,8 +87424,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 2441,
   "variety": "neutral"
  },
@@ -89260,7 +89373,7 @@
   "band": "C1",
   "priority": 528,
   "title": "tender, affectionate",
-  "es": "el tierno",
+  "es": "tierno",
   "en": "tender, affectionate",
   "requires": [],
   "contrasts": [],
@@ -89273,8 +89386,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 3781,
   "variety": "neutral"
  },
@@ -89284,7 +89396,7 @@
   "band": "C1",
   "priority": 441,
   "title": "discreet",
-  "es": "el discreto",
+  "es": "discreto",
   "en": "discreet",
   "requires": [],
   "contrasts": [],
@@ -89297,8 +89409,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 3455,
   "variety": "neutral"
  },
@@ -89332,7 +89443,7 @@
   "band": "C1",
   "priority": 528,
   "title": "passionate",
-  "es": "el apasionado",
+  "es": "apasionado",
   "en": "passionate",
   "requires": [],
   "contrasts": [],
@@ -89345,8 +89456,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 3870,
   "variety": "neutral"
  },
@@ -89402,7 +89512,7 @@
   "band": "C1",
   "priority": 531,
   "title": "chemical",
-  "es": "el químico",
+  "es": "químico",
   "en": "chemical",
   "requires": [],
   "contrasts": [],
@@ -89415,8 +89525,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 2121,
   "variety": "neutral"
  },
@@ -92156,7 +92265,7 @@
   "band": "C1",
   "priority": 544,
   "title": "blessed",
-  "es": "el bendito",
+  "es": "bendito",
   "en": "blessed",
   "requires": [],
   "contrasts": [],
@@ -92170,8 +92279,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 4788,
   "variety": "neutral"
  },
@@ -93391,7 +93499,7 @@
   "band": "C1",
   "priority": 548,
   "title": "biological",
-  "es": "el biológico",
+  "es": "biológico",
   "en": "biological",
   "requires": [],
   "contrasts": [],
@@ -93404,8 +93512,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 2359,
   "variety": "neutral"
  },
@@ -96674,7 +96781,7 @@
   "band": "C1",
   "priority": 566,
   "title": "toxic",
-  "es": "el tóxico",
+  "es": "tóxico",
   "en": "toxic",
   "requires": [],
   "contrasts": [],
@@ -96688,8 +96795,7 @@
    "freq",
    "vocab.js"
   ],
-  "pos": "noun",
-  "gender": "m",
+  "pos": "adj",
   "freqRank": 4038,
   "variety": "neutral"
  },
