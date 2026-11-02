@@ -172,7 +172,9 @@ export function alignedPairs(n: PairSource): AlignedPair[] {
   const en = n.en ?? n.title ?? '';
   if (!en) return [];
   if (n.kind === 'lexeme') {
-    const alts = n.es.split(/\s*[/;]\s*/).map((x) => x.trim()).filter(Boolean);
+    // "el/la turista" is one word with either article, not the alternatives "el" and "la turista"
+    const es = n.es.replace(/^(el|la)\/(el|la)\s+(.+)$/i, '$1 $3 / $2 $3');
+    const alts = es.split(/\s*[/;]\s*/).map((x) => x.trim()).filter(Boolean);
     if (!alts.length) return [];
     return [{ es: alts[0], en: lexemeCue(en, alts[0]), accept: alts.slice(1) }];
   }

@@ -98,7 +98,8 @@ describe('lexeme cards: the gloss, and the word with its article', () => {
     for (const n of lexemes) {
       const node = b.node(n.id);
       if (!node?.es || !node.en) continue;
-      const word = node.es.split(/\s*[/;]\s*/)[0].trim();
+      // "el/la turista" is the word with its first article: split on the slash it would read "el"
+      const word = node.es.replace(/^(el|la)\/(?:el|la)\s+/i, '$1 ').split(/\s*[/;]\s*/)[0].trim();
       const bare = word.replace(/^(el|la|los|las|un|una)\s+/i, '').toLowerCase();
       // the gloss, minus a parenthetical that would give the word away ("which (el cual)")
       const has = (x: string) => x.toLowerCase().split(/[^\p{L}]+/u).includes(bare);
