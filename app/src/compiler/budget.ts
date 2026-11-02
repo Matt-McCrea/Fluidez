@@ -26,9 +26,15 @@ export const SESSION_MINUTES: Record<Band, number> = { A1: 20, A2: 22, B1: 25, B
  */
 export const BAND_WARMUP_MINUTES: Record<Band, number> = { A1: 7, A2: 7, B1: 8, B2: 14, C1: 14 };
 
-/** Minimum tier: a 10-minute streak saver (warm-up + re-read + timed recall, nothing new). */
+/**
+ * Minimum tier: a 10-minute session (warm-up, then the next slice of the day on the path: a few of its new words, then its chapter;
+ * or, with nothing of the sort to give, a re-read and a timed recall of items practised lately, a different set each day).
+ */
 export const MINIMUM_MINUTES = 10;
 export const MINIMUM_WARMUP_MINUTES = 5;
+/** New words a short session teaches, and how many recently practised items the timed recall chooses its twelve from. */
+export const SHORT_NEW_ITEMS = 3;
+export const RECALL_POOL = 60;
 
 /**
  * Extended tier: the standard session plus this many CORE minutes. No extra

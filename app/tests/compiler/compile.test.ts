@@ -155,12 +155,13 @@ describe('backlog throttle', () => {
     expect(compileSession(s.input(path, { mode: 'another' })).type).toBe('review');
   });
 
-  test('a minimum session on a backlog: warm-up + re-read + timed recall only, no new items', () => {
+  test('a minimum session on a backlog: warm-up, then the day\'s chapter or a re-read and a timed recall; no new items', () => {
     const { s, path } = backlog();
     const plan = compileSession(s.input(path, { tier: 'minimum' }));
     expect(plan.type).toBe('minimum');
-    expect(plan.blocks.map((b) => b.kind).filter((k) => !['warmup', 'reread', 'timedRecall', 'close'].includes(k))).toEqual([]);
-    expect(plan.blocks.some((b) => b.kind === 'timedRecall')).toBe(true);
+    expect(plan.blocks.map((b) => b.kind).filter((k) => !['warmup', 'read', 'reread', 'timedRecall', 'close'].includes(k))).toEqual([]);
+    // the backlog throttles new words, so there is no word slice: the next slice is the chapter, and without one a recall
+    expect(plan.blocks.some((b) => b.kind === 'timedRecall' || b.kind === 'read')).toBe(true);
     expect(Object.values(plan.newNodes).flat()).toEqual([]);
   });
 });

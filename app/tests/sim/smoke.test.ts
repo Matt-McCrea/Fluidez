@@ -11,7 +11,8 @@ describe('simulator (60 days, synthetic)', () => {
   const c = syntheticCorpus({ seed: 7, maxUnits: 14 });
   const course = buildCourse(c.units, c.nodes);
   const content = buildContentIndex(c.source, course);
-  const runs = Object.values(PROFILES).map((p) => simulateProfile(p, { days: 60, tier: 'standard', course, content, seed: 7 }));
+  // (a profile whose every day is a five-minute session has no progress or recap to find here: tests/compiler/short.test.ts)
+  const runs = Object.values(PROFILES).filter((p) => p.minimumP < 1).map((p) => simulateProfile(p, { days: 60, tier: 'standard', course, content, seed: 7 }));
 
   test('every profile studies, progresses, and never repeats unintentionally', () => {
     for (const r of runs) {
@@ -57,7 +58,7 @@ describe('simulator parity with the app (synthetic, 90 days)', () => {
   const c = syntheticCorpus({ seed: 11, maxUnits: 14 });
   const course = buildCourse(c.units, c.nodes);
   const content = buildContentIndex(c.source, course);
-  const runs = Object.values(PROFILES).map((p) => simulateProfile(p, { days: 90, tier: 'standard', course, content, seed: 11 }));
+  const runs = Object.values(PROFILES).filter((p) => p.minimumP < 1).map((p) => simulateProfile(p, { days: 90, tier: 'standard', course, content, seed: 11 }));
 
   test('grades are Again / Hard / Good, never Easy', () => {
     for (const r of runs) {

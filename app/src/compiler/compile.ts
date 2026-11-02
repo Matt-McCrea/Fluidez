@@ -32,10 +32,10 @@ import type { Band, GraphNode, LessonType, NodeId, Unit } from '../content/schem
 import { productivePolicy, SEEDED_REPS, State, type Direction, type DueCard, type Tier } from '../learner';
 import {
   CHECKPOINT_WARMUP_FACTOR, CHECKPOINT_WINDOW_DAYS, CHUNK_CAP, CONTRAST_CAP, CONTRAST_RETURN, COUNTS, DEBT, DONE_BAND, DRILL_WITHIN,
-  EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
-  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
+  EXTENDED_EXTRA_MINUTES, EXTRA_READING_MAX, LEXEME_CAP, EARLY_NEW_ITEMS_MAX, EARLY_SESSIONS, MINIMUM_MINUTES, MINIMUM_WARMUP_MINUTES, MULTI_REVIEW_COST, MULTI_REVIEW_MAX, MULTI_REVIEW_SCAN,
+  PATTERN_CAP, PATTERNS_DAY_CAP, PATTERNS_TAUGHT, RECALL_POOL, REENTRY, REMIX_WINDOW_DAYS, REPAY_CAP, REREAD_WIDE_DAYS, REREAD_WINDOW_DAYS,
   REVIEW_DAY_EXTRA_MINUTES, REVIEW_REUSE_DAYS, REVIEW_REUSE_REASON,
-  SECONDS, SEVERE_FACTOR, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
+  SECONDS, SEVERE_FACTOR, SHORT_NEW_ITEMS, THROTTLED_WARMUP_FACTOR, sessionMinutes, throttleMinutes, warmupMinutes,
 } from './budget';
 import { admissible, dayPos, hash32, knownSet, unmetRequires, unreadChapters, makeRng, sessionSeed, type Rng } from './content';
 import type {
@@ -837,7 +837,7 @@ class Compiler {
    * Throttled sessions take none. Anything of an advancing day not taken
    * becomes owed, so cutting never loses an item.
    */
-  private takeNew(type: LessonType, day: Unit['days'][number] | undefined, advancing: boolean, opts: { focusNonGrammar?: boolean; force?: readonly NodeId[] } = {}): LearnItem[] {
+  private takeNew(type: LessonType, day: Unit['days'][number] | undefined, advancing: boolean, opts: { focusNonGrammar?: boolean; force?: readonly NodeId[]; max?: number; kinds?: readonly GraphNode['kind'][] } = {}): LearnItem[] {
     // Throttled: the warm-up's overrun comes out of new-item time, lexemes first, then chunks;
     // severe backlog, or a drill day's optional words under a backlog: none at all.
     // Days that teach nothing new of their own (or do not advance) only repay owed items.
@@ -858,7 +858,7 @@ class Compiler {
       ? [...(opts.focusNonGrammar ? day.focus.filter((n) => kindOf(n, this.course.nodes) !== 'grammar') : []), ...day.chunks, ...day.lexemes]
         .filter((n) => (this.course.teachPos.get(n) ?? here) <= here)
       : [];
-    const maxTotal = this.path.coreSessions < EARLY_SESSIONS ? EARLY_NEW_ITEMS_MAX : Infinity;
+    const maxTotal = Math.min(this.path.coreSessions < EARLY_SESSIONS ? EARLY_NEW_ITEMS_MAX : Infinity, opts.max ?? Infinity);
     const taken: NodeId[] = [];
     const owed: NodeId[] = [];
     const counts = { chunk: 0, lexeme: 0, pattern: 0, contrast: 0 };
@@ -870,6 +870,7 @@ class Compiler {
       seen.add(id);
       if (this.known.has(id) || this.sessionNew.has(id)) continue;
       const k = kindOf(id, this.course.nodes);
+      if (opts.kinds && !opts.kinds.includes(k)) { owed.push(id); continue; }
       const bucket = (k === 'chunk' || k === 'pattern' || k === 'contrast') ? k : 'lexeme';
       if (k === 'contrast' && !this.contrastReady(id)) {
         this.diag({ code: 'notReady', node: id, message: `contrast ${id} waits until both sides are known` });
@@ -987,9 +988,9 @@ class Compiler {
     const learn = this.takeNew('introduce', day, true, { focusNonGrammar: true });
     this.pushLearn(learn);
     const { ch, reason, blocked } = this.chapterFor(day);
-    // Day 1: the first chapter comes after the new phrases and before the lesson (L6), so the story is read by about minute 8
+    // Day 1 of the course: the first chapter comes after the new phrases and before the lesson (L6), so the story is read by about minute 8
     // instead of minute 14. It uses the phrases it has just been given; nothing is taken out, the lesson follows it.
-    const early = this.path.coreSessions === 0 && !!ch;
+    const early = this.path.coreSessions === 0 && this.path.unit === 0 && this.path.day === 0 && !!ch;
     if (early) this.pushRead(ch!);
     if (g) this.blocks.push(...this.teach(g, 'full'));
     if (!early) {
@@ -1534,35 +1535,85 @@ class Compiler {
 
   private minimum(day: Unit['days'][number] | undefined): SessionPlan {
     this.warmup(MINIMUM_WARMUP_MINUTES, MINIMUM_WARMUP_MINUTES, false);
-    const ch = this.rereadCandidate([0, 0], 1);
-    if (ch) this.blocks.push({ kind: 'reread', part: 'core', deliberate: true, chapter: ch.id, purpose: 'minimum', timed: false, minutes: Math.min(3, ch.minutes) });
-    else this.diag({ code: 'noReread', block: 'reread', message: 'no known chapter to re-read yet' });
-    // known items, productive ones first, most recently practised first
-    const recall = this.L.nodes()
+    // the next slice of the day on the path, if it has one; otherwise a re-read and a recall
+    const slice = day ? this.shortSlice(day) : undefined;
+    if (!slice) {
+      const ch = this.rereadCandidate([0, 0], 1);
+      if (ch) this.blocks.push({ kind: 'reread', part: 'core', deliberate: true, chapter: ch.id, purpose: 'minimum', timed: false, minutes: Math.min(3, ch.minutes) });
+      else this.diag({ code: 'noReread', block: 'reread', message: 'no known chapter to re-read yet' });
+      const recall = this.recallItems();
+      if (recall.length) this.blocks.push({ kind: 'timedRecall', part: 'core', deliberate: true, items: recall, seconds: COUNTS.timedRecallSeconds, minutes: COUNTS.timedRecallSeconds / 60 });
+    }
+    const d: Decision = { type: 'review', advances: !!slice?.done };
+    this.blocks.push(this.close(d, day, true));
+    const path = structuredClone(this.path);
+    if (slice) {
+      path.owedNew = this.owedNew;
+      if (slice.done && day) this.consumeDay(path, day);
+    }
+    path.log = [...path.log, this.logEntry({ type: 'review', advances: d.advances }, undefined, day, true)].slice(-LOG_MAX);
+    return {
+      sessionIndex: this.sessionIndex, seed: this.seed, tier: 'minimum', mode: this.mode, type: 'minimum',
+      dayType: day?.type, unit: this.unit?.id, day: day ? this.path.day : undefined,
+      ...(this.reentry ? { reentry: this.reentry } : {}),
+      advancesPath: d.advances, blocks: this.blocks, newNodes: this.newNodes, receptiveOnly: this.receptiveOnly,
+      budget: {
+        band: this.band, minutes: this.minutes, reviewMinutes: MINIMUM_WARMUP_MINUTES, secondsPerReview: this.spr,
+        due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.dueMinutes > MINIMUM_WARMUP_MINUTES, severe: false,
+        ...(this.debtCards ? { debt: { cards: this.debtCards, minutes: this.debtMinutes, paid: this.paidDebt } } : {}),
+      },
+      estimatedMinutes: round1(this.blocks.reduce((a, b) => a + b.minutes, 0)),
+      diagnostics: this.diags, pathAfter: path,
+    };
+  }
+
+  /**
+   * The timed recall: twelve known items, productive ones first, chosen from the RECALL_POOL practised most lately and, of those,
+   * the ones recalled least lately. Recalling an item is an exposure, so the next day's twelve are others, and the pool goes round
+   * (before, the twelve most recently practised were the same twelve every day, because recalling them practised nothing).
+   */
+  private recallItems() {
+    const pool = this.L.nodes()
       .filter((id) => !this.warmupKeys.has(id) && (this.L.hasCard(id, 'productive') || this.L.hasCard(id, 'receptive')))
       .map((id) => {
         const p = this.L.card(id, 'productive');
         return { id, prod: p ? 1 : 0, at: (p ?? this.L.card(id, 'receptive'))!.last_review ?? 0 };
       })
       .sort((a, b) => b.prod - a.prod || b.at - a.at || (a.id < b.id ? -1 : 1))
+      .slice(0, RECALL_POOL);
+    return pool
+      .map((x) => ({ ...x, seen: this.L.node(x.id)?.lastExposedAt ?? 0 }))
+      .sort((a, b) => a.seen - b.seen || b.prod - a.prod || b.at - a.at || (a.id < b.id ? -1 : 1))
       .slice(0, Math.floor(COUNTS.timedRecallSeconds / SECONDS.recall))
       .map(({ id }) => ({ op: 'recall' as const, id: `tr:${id}`, node: id, direction: 'productive' as const, scoring: 'exposure' as const, credit: [id] }));
-    if (recall.length) this.blocks.push({ kind: 'timedRecall', part: 'core', deliberate: true, items: recall, seconds: COUNTS.timedRecallSeconds, minutes: COUNTS.timedRecallSeconds / 60 });
-    this.blocks.push(this.close({ type: 'review', advances: false }, day, true));
-    const path = structuredClone(this.path);
-    path.log = [...path.log, this.logEntry({ type: 'review', advances: false }, undefined, day, true)].slice(-LOG_MAX);
-    return {
-      sessionIndex: this.sessionIndex, seed: this.seed, tier: 'minimum', mode: this.mode, type: 'minimum',
-      dayType: day?.type, unit: this.unit?.id, day: day ? this.path.day : undefined,
-      ...(this.reentry ? { reentry: this.reentry } : {}),
-      advancesPath: false, blocks: this.blocks, newNodes: this.newNodes, receptiveOnly: this.receptiveOnly,
-      budget: {
-        band: this.band, minutes: this.minutes, reviewMinutes: MINIMUM_WARMUP_MINUTES, secondsPerReview: this.spr,
-        due: this.due.length, dueMinutes: this.dueMinutes, throttled: this.dueMinutes > MINIMUM_WARMUP_MINUTES, severe: false,
-      },
-      estimatedMinutes: round1(this.blocks.reduce((a, b) => a + b.minutes, 0)),
-      diagnostics: this.diags, pathAfter: path,
-    };
+  }
+
+  /**
+   * What a short session does with the day on the path (C17): the next few of its new words (SHORT_NEW_ITEMS), taught for real;
+   * once they are taught, its chapter. A grammar point, a contrast or a pattern is not sliced, since it needs the lesson whole, so a
+   * day that has one waits for a full session. `done` says the slice leaves the day finished, which is only so for an input day:
+   * its words all taught and its chapter read (or none to read), so short days can add up to that lesson. Undefined: nothing to give.
+   */
+  private shortSlice(day: Unit['days'][number]): { done: boolean } | undefined {
+    if (!['introduce', 'input', 'patterns', 'drill'].includes(day.type) || this.lackedBy(day).length) return undefined;
+    // what the warm-up has left of the session's minutes: no more is taken than fits
+    const left = MINIMUM_MINUTES - this.blocks.reduce((a, b) => a + b.minutes, 0) - SECONDS.close / 60;
+    const room = Math.min(SHORT_NEW_ITEMS, Math.floor((left * 60 + 1e-9) / SECONDS.learn));
+    const owedBefore = [...this.owedNew];
+    const learn = room > 0 ? this.takeNew(day.type, day, true, { focusNonGrammar: true, max: room, kinds: ['chunk', 'lexeme'] }) : [];
+    // the day has not been consumed: what it lists and this session did not take is still on the day, not owed
+    this.owedNew = this.owedNew.filter((n) => owedBefore.includes(n));
+    const here = dayPos(this.course, this.path.unit, this.path.day);
+    const wordsLeft = [...day.chunks, ...day.lexemes].some((n) => !this.known.has(n) && !this.sessionNew.has(n) && (this.course.teachPos.get(n) ?? here) <= here);
+    const reads = day.type === 'input' || day.type === 'introduce';
+    if (learn.length) {
+      this.pushLearn(learn);
+      return { done: day.type === 'input' && !wordsLeft && !(reads && this.chapterFor(day, true).ch) };
+    }
+    const { ch } = reads ? this.chapterFor(day) : {};
+    if (!ch || ch.minutes > left + 1e-9) return undefined;
+    this.pushRead(ch);
+    return { done: day.type === 'input' && !wordsLeft };
   }
 
   // ---------------------------------------------------------------- close & path
@@ -1605,22 +1656,25 @@ class Compiler {
     p.remediate = (p.remediate ?? []).map((e) => (this.remServed.has(e.node) ? { ...e, served: (e.served ?? 0) + 1 } : e));
     p.owedNew = this.owedNew;
     p.owedGrammar = this.owedGrammar;
-    if (d.advances && day && this.unit) {
-      // the day is consumed: anything it teaches that was not introduced is owed, never lost
-      const here = dayPos(this.course, this.path.unit, this.path.day);
-      for (const n of [...day.focus, ...day.chunks, ...day.lexemes]) {
-        if (this.known.has(n) || this.sessionNew.has(n)) continue;
-        if ((this.course.teachPos.get(n) ?? here) > here) continue; // previewed here, taught later
-        const k = kindOf(n, this.course.nodes);
-        if (k === 'cando') continue;
-        if (k === 'grammar') { if (!p.owedGrammar.includes(n)) p.owedGrammar = [...p.owedGrammar, n]; }
-        else if (!p.owedNew.includes(n)) p.owedNew = [...p.owedNew, n];
-      }
-      p.day += 1;
-      if (p.day >= this.unit.days.length) { p.unit += 1; p.day = 0; }
-    }
+    if (d.advances && day) this.consumeDay(p, day);
     p.log = [...p.log, this.logEntry(d, c, day)].slice(-LOG_MAX);
     return p;
+  }
+
+  /** The day is consumed: anything it teaches that was not introduced is owed, never lost; the path moves to the next day. */
+  private consumeDay(p: PathState, day: Unit['days'][number]) {
+    if (!this.unit) return;
+    const here = dayPos(this.course, this.path.unit, this.path.day);
+    for (const n of [...day.focus, ...day.chunks, ...day.lexemes]) {
+      if (this.known.has(n) || this.sessionNew.has(n)) continue;
+      if ((this.course.teachPos.get(n) ?? here) > here) continue; // previewed here, taught later
+      const k = kindOf(n, this.course.nodes);
+      if (k === 'cando') continue;
+      if (k === 'grammar') { if (!p.owedGrammar.includes(n)) p.owedGrammar = [...p.owedGrammar, n]; }
+      else if (!p.owedNew.includes(n)) p.owedNew = [...p.owedNew, n];
+    }
+    p.day += 1;
+    if (p.day >= this.unit.days.length) { p.unit += 1; p.day = 0; }
   }
 
   private diag(d: Diagnostic) { this.diags.push(d); }

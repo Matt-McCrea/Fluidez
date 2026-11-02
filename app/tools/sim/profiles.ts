@@ -53,6 +53,8 @@ export const PROFILES: Record<string, Profile> = {
   // the same, slower (30 s a card, the pace the audit's placed learner worked at), and ones placed in B2 and in C1 (need --through B2 / C1)
   slowplaced: { name: 'slowplaced', skipP: 0.12, breakP: 0.05, breakDays: [2, 4], doubleP: 0.1, minimumP: 0.1, learnP: 0.8, exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 30, placedAt: 'u20' },
   placedc1:  { name: 'placedc1',  skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, placedAt: 'u58' },
+  // every day is a minimum session ("Only five minutes?" every time): the loop C17 is about
+  fiveminute: { name: 'fiveminute', skipP: 0.05, breakP: 0.05, breakDays: [2, 4], doubleP: 0,   minimumP: 1,    learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 10 },
   placedb2:  { name: 'placedb2',  skipP: 0.12, breakP: 0.05, breakDays: [2, 4],  doubleP: 0.1,  minimumP: 0.1,  learnP: 0.8,  exponent: 1.0, noise: 0.05, retryGain: 0.3, secs: 15, placedAt: 'u45' },
 };
 

@@ -23,7 +23,8 @@ export function sessionLabel(plan: Pick<SessionPlan, 'type' | 'blocks' | 'unit' 
     case 'output': return scene ? `Real conversation: ${lc(b.scenes.get(scene.scene)?.title ?? 'a chat')}` : plan.blocks.some((x) => x.kind === 'writing') ? 'Practice: writing it down' : 'Practice what you know';
     case 'review': return plan.converted?.reason === 'offline' ? 'Review for today' : plan.converted?.reason === 'reentry' ? 'A gentle start' : 'Catch-up mix';
     case 'checkpoint': return 'Check-in: see how far you\'ve come';
-    case 'minimum': return 'Quick warm-up';
+    // a short session gives the next slice of the day: a few new words, or the chapter, or (with neither) the warm-up
+    case 'minimum': return plan.blocks.some((x) => x.kind === 'learn') ? 'A few new words' : read ? 'A bit of the story' : 'Quick warm-up';
   }
 }
 

@@ -79,13 +79,20 @@ export function checkFrame({ plan }: Seen) {
 export function checkMinimum({ plan, input }: Seen) {
   if (plan.tier !== 'minimum') return;
   expect(plan.type).toBe('minimum');
-  expect(plan.advancesPath).toBe(false);
-  expect(Object.values(plan.newNodes).flat()).toEqual([]);
-  for (const b of plan.blocks) expect(['warmup', 'reread', 'timedRecall', 'close']).toContain(b.kind);
+  // a short session may teach the next few words of the day and read its chapter (C17); never a grammar point, a pattern or a contrast
+  for (const b of plan.blocks) expect(['warmup', 'learn', 'read', 'reread', 'timedRecall', 'close']).toContain(b.kind);
   for (const b of plan.blocks) if (b.kind === 'reread' || b.kind === 'timedRecall') expect(b.deliberate).toBe(true);
-  expect(plan.pathAfter.unit).toBe(input.path.unit);
-  expect(plan.pathAfter.day).toBe(input.path.day);
+  const fresh = Object.values(plan.newNodes).flat();
+  expect(plan.newNodes.grammar).toEqual([]);
+  expect(plan.newNodes.patterns).toEqual([]);
+  expect(plan.newNodes.contrasts).toEqual([]);
+  expect(fresh.length).toBeLessThanOrEqual(budget.SHORT_NEW_ITEMS);
+  // only a slice of an input day can finish the day; anything else leaves the path where it was
+  expect(plan.advancesPath).toBe(plan.pathAfter.unit !== input.path.unit || plan.pathAfter.day !== input.path.day);
+  if (plan.advancesPath) expect(plan.dayType).toBe('input');
   expect(plan.pathAfter.coreSessions).toBe(input.path.coreSessions);
+  // a slice is only added where it fits what the warm-up leaves of the ten minutes
+  if (plan.blocks.some((b) => b.kind === 'learn' || b.kind === 'read')) expect(plan.estimatedMinutes).toBeLessThanOrEqual(budget.MINIMUM_MINUTES + 0.05);
 }
 
 export function checkBudgets({ plan }: Seen) {
@@ -95,7 +102,7 @@ export function checkBudgets({ plan }: Seen) {
     expect(plan.newNodes.chunks.length).toBeLessThanOrEqual(budget.CHUNK_CAP);
     expect(plan.newNodes.contrasts.length).toBeLessThanOrEqual(budget.CONTRAST_CAP);
     expect(plan.newNodes.patterns.length).toBeLessThanOrEqual(plan.type === 'patterns' ? budget.PATTERNS_DAY_CAP : budget.PATTERN_CAP);
-    const cap = plan.type === 'minimum' ? 0 : Math.max(budget.REPAY_CAP.lexeme, budget.LEXEME_CAP[plan.type]);
+    const cap = plan.type === 'minimum' ? budget.SHORT_NEW_ITEMS : Math.max(budget.REPAY_CAP.lexeme, budget.LEXEME_CAP[plan.type]);
     expect(plan.newNodes.lexemes.length).toBeLessThanOrEqual(cap);
   }
   if (plan.budget.severe) expect(Object.values(plan.newNodes).flat()).toEqual([]);
