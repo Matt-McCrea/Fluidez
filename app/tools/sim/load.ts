@@ -7,7 +7,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import type { z } from 'zod';
 import {
-  BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask,
+  BankSentence, GraphNode, Scene, StoryChapter, TeachingScript, Unit, WritingTask, Band,
 } from '../../src/content/schema';
 import type { ContentSource } from '../../src/compiler';
 import { dirOf } from '../../src/content/kinds';
@@ -69,19 +69,19 @@ export function loadContent(contentDir: string): LoadedContent {
 }
 
 /**
- * The app's own loader (`ContentLoader`, the same Vite glob over app/content) for bands A1 and A2: real
+ * The app's own loader (`ContentLoader`, the same Vite glob over app/content) for the bands asked for: real
  * sentences, scripts, chapters, scenes and writing tasks. Only units of the loaded bands that have bank sentences are kept, so the
  * course ends where the content does (maintenance sessions after). Needs Vite's `import.meta.glob`, so
  * `npm run simulate` runs under vite-node.
  */
-export async function loadRealBundle(bands: Array<'A1' | 'A2'> = ['A1', 'A2'], maxUnits?: number): Promise<{ units: Unit[]; nodes: GraphNode[]; source: ContentSource; problems: string[] }> {
+export async function loadRealBundle(bands: Band[] = ['A1', 'A2'], maxUnits?: number): Promise<{ units: Unit[]; nodes: GraphNode[]; source: ContentSource; problems: string[] }> {
   const { ContentLoader } = await import('../../src/ui/data/loader');
   const loader = new ContentLoader();
-  const top = bands.includes('A2') ? 'A2' : 'A1';
+  const top = Band.options.filter((b) => bands.includes(b)).pop() ?? 'A1';
   const bundle = await loader.load({ band: top, lookahead: false });
   // units with bank content only (a unit the burn has not reached would be all shortage)
   const withBank = new Set(bundle.source.sentences.map((x) => x.unit));
-  let units = bundle.units.filter((u) => (bands as string[]).includes(u.band) && withBank.has(u.id));
+  let units = bundle.units.filter((u) => bands.includes(u.band) && withBank.has(u.id));
   if (maxUnits) units = units.slice(0, maxUnits);
   return { units, nodes: [...bundle.course.nodes.values()], source: bundle.source, problems: loader.problems };
 }

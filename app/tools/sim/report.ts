@@ -193,6 +193,55 @@ function placementCells(r: ProfileRun): string[] {
     p.day1.converted === 'throttle' || p.day1.throttled ? 'yes' : 'no', `${p.peakDueMinutes.toFixed(1)} (${p.peakDay})`, `${p.throttledSessions}/${p.sessions}`, fmt(p.settledDay)];
 }
 
+/** What the compiler lane watches, per run: how much of the story and of the new reaches a learner's sessions, and what a contrast day costs. */
+export interface Measure {
+  profile: string;
+  tier: string;
+  /** standard and extended sessions while the course lasts (minimum ones are streak savers, and the review after the last unit has nothing new to bring) */
+  core: number;
+  /** share of them that read a first chapter or play a scene, and that bring something new */
+  storyPct: number;
+  freshPct: number;
+  /** the longest run of those sessions in a row that brought nothing new */
+  longestWithoutNew: number;
+  contrastsTaught: number;
+  contrastsListed: number;
+  contrastReturns: number;
+  /** sessions that teach a contrast: how many, their mean estimate against their mean minutes, and how many are over */
+  contrastDays: number;
+  contrastEst: number;
+  contrastPlan: number;
+  contrastOver: number;
+  /** every core session: the mean estimate against the mean minutes, and the share over */
+  est: number;
+  plan: number;
+  overPct: number;
+}
+
+export function measures(runs: ProfileRun[]): Measure[] {
+  return runs.map((r) => {
+    const core = r.sessions.filter((s) => s.type !== 'minimum' && s.band !== 'done');
+    let longest = 0, streak = 0;
+    for (const s of core) { streak = s.fresh ? 0 : streak + 1; longest = Math.max(longest, streak); }
+    const days = core.filter((s) => s.contrastTaught.length > 0);
+    return {
+      profile: r.profile, tier: r.tier, core: core.length,
+      storyPct: pct(core.filter((s) => s.story).length, core.length), freshPct: pct(core.filter((s) => s.fresh).length, core.length), longestWithoutNew: longest,
+      contrastsTaught: new Set(core.flatMap((s) => s.contrastTaught)).size, contrastsListed: r.contrastsListed,
+      contrastReturns: core.reduce((a, s) => a + s.contrastReturned.length, 0),
+      contrastDays: days.length, contrastEst: avg(days.map((s) => s.estMinutes)), contrastPlan: avg(days.map((s) => s.planMinutes)),
+      contrastOver: days.filter((s) => s.estMinutes > s.planMinutes + 0.05).length,
+      est: avg(core.map((s) => s.estMinutes)), plan: avg(core.map((s) => s.planMinutes)), overPct: pct(core.filter((s) => s.estMinutes > s.planMinutes + 0.05).length, core.length),
+    };
+  });
+}
+
+const MEASURE_HEAD = ['profile', 'tier', 'core sessions', 'story %', 'new %', 'longest run without new', 'contrasts taught/listed', 'contrast returns', 'contrast days', 'est/plan min on them', 'over', 'est/plan min, all', 'over %'];
+function measureCells(m: Measure): string[] {
+  return [m.profile, m.tier, String(m.core), m.storyPct.toFixed(1), m.freshPct.toFixed(1), String(m.longestWithoutNew), `${m.contrastsTaught}/${m.contrastsListed}`, String(m.contrastReturns),
+    String(m.contrastDays), m.contrastDays ? `${m.contrastEst.toFixed(1)}/${m.contrastPlan.toFixed(1)}` : '-', String(m.contrastOver), `${m.est.toFixed(1)}/${m.plan.toFixed(1)}`, m.overPct.toFixed(1)];
+}
+
 export function formatReport(runs: ProfileRun[], quotas: Quotas, placed: ProfileRun[] = []): string {
   const lines: string[] = [];
   const rows = bandRows(runs);
@@ -206,6 +255,8 @@ export function formatReport(runs: ProfileRun[], quotas: Quotas, placed: Profile
   lines.push(table(RET_HEAD, retentionRows(runs).map(retentionCells)));
   lines.push('');
   lines.push(`Grades: ${runs.map((r) => `${r.profile}/${r.tier} ${gradeText(r)}`).join('; ')}`);
+  lines.push('', 'Compiler measures (core sessions: standard and extended; "new" = a new node, a first chapter or a scene):');
+  lines.push(table(MEASURE_HEAD, measures(runs).map(measureCells)));
   if (placed.length) { lines.push('', 'Placement backlog (30 days after placement):', table(PLACE_HEAD, placed.map(placementCells))); }
   lines.push('');
   lines.push('Shortages by block:what (per run):');

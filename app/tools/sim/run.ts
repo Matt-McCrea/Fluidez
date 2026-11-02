@@ -5,7 +5,7 @@ import type { Band, NodeId } from '../../src/content/schema';
 import {
   advancePath, budget, canDoAnother, compileSession, initialPath, makeRng, reviewCost, reviewTargets, servedRefs,
   type Block, type CompileInput, type ContentIndex, type Course, type Item, type LearnItem, type PathState, type RecapBlock,
-  type RecapItem, type ReviewItem, type ServedRef, type SessionPlan,
+  type RecapItem, type ReviewItem, type ServedRef, type SessionPlan, type TeachBlock,
 } from '../../src/compiler';
 import { delayedAccuracy, Learner, LEDGER_KINDS, productionShare, Rating, type Direction, type Grade, type ReviewEvent, type Tier } from '../../src/learner';
 import type { Bundle } from '../../src/ui/data/bundle';
@@ -45,6 +45,8 @@ export interface SessionStat {
   tier: Tier;
   mode: 'next' | 'another';
   estMinutes: number;
+  /** the session's minutes in force (budget.ts), what estMinutes is held to */
+  planMinutes: number;
   simMinutes: number;
   reviewMinutes: number;
   due: number;
@@ -55,6 +57,15 @@ export interface SessionStat {
   newItems: number;
   /** the session moved the path to the next day */
   advanced: boolean;
+  /** calendar days since the learner's previous session (0 on the first, and on a second session the same day) */
+  gap: number;
+  /** the session reads a chapter for the first time or plays a scene */
+  story: boolean;
+  /** something new for the learner: a new node, a first chapter or a scene */
+  fresh: boolean;
+  /** contrast nodes whose script this session teaches for the first time, and those it returns to on purpose */
+  contrastTaught: string[];
+  contrastReturned: string[];
 }
 
 /**
@@ -158,6 +169,8 @@ export interface ProfileRun {
   /** total fresh sentences consumed (non-deliberate), and deliberate review-context reuses */
   freshSentences: number;
   reusedSentences: number;
+  /** distinct contrast nodes the course's days list (the most a run can teach) */
+  contrastsListed: number;
 }
 
 export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun {
@@ -177,6 +190,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     itemServes: 0, itemRepeats60: 0, itemRepeats60Deliberate: 0, underReviewed: {}, underReviewedRecv: {}, owedAtEnd: 0,
     reviewItems: { items: 0, multi: 0, targets: 0, reused: 0, bare: 0 }, receptiveOnly: 0, suspendedReceptive: 0, learned: 0,
     freshSentences: 0, reusedSentences: 0,
+    contrastsListed: new Set(course.units.flatMap((u) => u.days.flatMap((d) => d.focus)).filter((n) => course.nodes.get(n)?.kind === 'contrast')).size,
     gradeCounts: { again: 0, hard: 0, good: 0, easy: 0 }, opCounts: {}, retention: {},
     recap: { blocks: 0, lapsed: 0, fresh: 0, skipped: 0 }, timeCap: { blocksSkipped: 0, sessionsTruncated: 0 },
   };
@@ -187,6 +201,8 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   const nodeSentences = new Map<NodeId, number>();
   const itemLast = new Map<string, number>();
   const bandOf = (p: PathState): Band | 'done' => course.units[p.unit]?.band ?? 'done';
+  /** the calendar day of the previous session (the gap a session reports is measured from it) */
+  let lastDay = 0;
 
   // ------------------------------------------------------------ response model
   // One answer is pass-first-try (Good), pass-on-retry (Hard) or miss (Again), graded by the app's own
@@ -487,13 +503,18 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       }
     }
     path = advancePath(path, plan, true);
+    const story = plan.blocks.some((b) => b.kind === 'read' || b.kind === 'scene');
+    const contrasts = plan.blocks.filter((b): b is TeachBlock => b.kind === 'teach' && b.nodeKind === 'contrast');
     run.sessions.push({
       day: dayIdx, band, unit: plan.unit, type: plan.type, tier: plan.tier, mode,
-      estMinutes: plan.estimatedMinutes, simMinutes: (t - start) / 60_000, reviewMinutes: reviewMs / 60_000,
+      estMinutes: plan.estimatedMinutes, planMinutes: plan.budget.minutes, simMinutes: (t - start) / 60_000, reviewMinutes: reviewMs / 60_000,
       due: plan.budget.due, dueMinutes: plan.budget.dueMinutes, budgetMinutes: plan.budget.reviewMinutes,
       throttled: plan.budget.throttled, converted: plan.converted?.reason, newItems: newNodes.length,
-      advanced: plan.advancesPath,
+      advanced: plan.advancesPath, gap: dayIdx - lastDay, story,
+      fresh: newNodes.length > 0 || story, contrastTaught: contrasts.filter((b) => !b.deliberate).map((b) => b.node),
+      contrastReturned: contrasts.filter((b) => b.deliberate).map((b) => b.node),
     });
+    lastDay = dayIdx;
     // band finished?
     for (let u = unitBefore; u < path.unit; u++) {
       const b = course.units[u].band;

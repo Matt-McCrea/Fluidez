@@ -4,6 +4,8 @@
 //
 //   --real       the app's own ContentLoader over app/content, bands A1 and A2 (real sentences, scripts,
 //                chapters, scenes, tasks); the course is the A1 and A2 units. Does not write quotas.json.
+//   --through B  with --real: every band up to this one (A1 to C1) is loaded, not only A1 and A2. The whole
+//                course is about 1 GB in memory: run it on its own.
 //   --synthetic  a synthetic corpus (on the real unit map and graph when they exist).
 //   (neither)    the tolerant file reader over app/content (all bands), the original behaviour.
 //   --placement  also run 30 days (--placement-days) from a learner placed at that unit through the
@@ -22,6 +24,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { budget, buildContentIndex, buildCourse } from '../src/compiler';
+import { Band } from '../src/content/schema';
 import type { Tier } from '../src/learner';
 import { loadContent, loadRealBundle } from './sim/load';
 import { profileList } from './sim/profiles';
@@ -48,6 +51,9 @@ async function main() {
   const maxUnits = arg('units') ? Number(arg('units')) : undefined;
   let synthetic = arg('synthetic') === 'true';
   const useReal = arg('real') === 'true';
+  const through = (arg('through', 'A2') ?? 'A2') as Band;
+  if (!Band.options.includes(through)) throw new Error(`--through ${through}: not a band (${Band.options.join(', ')})`);
+  const realBands = Band.options.filter((b) => Band.options.indexOf(b) <= Math.max(1, Band.options.indexOf(through)));
   const placements = (arg('placement') ?? '').split(',').filter(Boolean);
   const placementOnly = arg('placement-only') === 'true';
   const placementDays = Number(arg('placement-days', '30'));
@@ -62,7 +68,7 @@ async function main() {
     console.error('no units in content/units: using the synthetic corpus (--synthetic)');
     synthetic = true;
   }
-  const realBundle = useReal ? await loadRealBundle(['A1', 'A2'], maxUnits) : undefined;
+  const realBundle = useReal ? await loadRealBundle(realBands, maxUnits) : undefined;
   if (realBundle?.problems.length) console.error(`real content: ${realBundle.problems.length} record(s) skipped, e.g. ${realBundle.problems.slice(0, 3).join(' | ')}`);
   const corpus = realBundle ? { units: realBundle.units, nodes: realBundle.nodes, source: realBundle.source } : synthetic
     ? syntheticCorpus({ seed, supply, maxUnits, ...(real.units.length && real.nodes.length ? { units: real.units, nodes: real.nodes } : {}) })
