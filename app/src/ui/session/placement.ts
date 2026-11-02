@@ -46,7 +46,7 @@
 // band's warm-up budget.
 import { initialPath, type PathState } from '../../compiler';
 import { BAND_WARMUP_MINUTES } from '../../compiler/budget';
-import type { BankSentence, Band, NodeId } from '../../content/schema';
+import type { BankSentence, Band, ContrastItem, NodeId } from '../../content/schema';
 import type { TenseKey } from '../../engine';
 import { deaccent } from '../../engine';
 import { ALL_FEATURES, chooseItem, rng, shuffle, structuredInput } from '../../exercises';
@@ -56,7 +56,7 @@ import type { Txt } from './cards';
 import { isName } from './names';
 import { licensedTenses } from './tenses';
 
-export type ProbeKind = 'form' | 'choose' | 'question';
+export type ProbeKind = 'form' | 'choose' | 'question' | 'contrast';
 
 export interface ProbeItem {
   id: string;
@@ -70,6 +70,8 @@ export interface ProbeItem {
   sub?: Txt;
   options: Txt[];
   answer: number;
+  /** the contrast (x:...) a contrast item tests: the skill a miss is held against */
+  skill?: string;
 }
 
 /** One run of the check: ask `next()`, report with `answer()`, read `result()` when `next()` is undefined. */
@@ -80,6 +82,8 @@ export interface Probe {
   answer(correct: boolean): void;
   /** the starting unit (index into course.units) */
   result(): number;
+  /** the skills (contrast nodes) missed in the levels the result skips: left unseeded, so the course owes them */
+  owed?(): string[];
 }
 
 export interface ProbeOptions {
@@ -100,6 +104,11 @@ export const CREDIT_REACH = 2;
 /** which feature a sentence's form item is for, when it offers more than one: the ones the old check rarely reached first */
 export const FEATURE_PRIORITY = ['copula', 'porpara', 'clitic', 'mood', 'gender', 'number', 'tense', 'person'];
 export const MIN_ITEMS = 4;
+/** the most grammar nodes a placement leaves unseeded: one bad result must not flood the queue */
+export const OWED_GRAMMAR_CAP = 6;
+/** contrast items taken per contrast, and per level */
+const CONTRAST_PER_NODE = 3;
+const CONTRAST_PER_LEVEL = 16;
 /** misses in a row at the bottom level that end the check early */
 export const EARLY_STOP_MISSES = 4;
 export const SEED_RECENT_STABILITY = 10;
@@ -190,6 +199,17 @@ function questionItem(s: BankSentence, unit: number, seed: string): ProbeItem | 
   return fairItem(it, s.es, s.en) ? it : null;
 }
 
+/** A contrast item as a multiple choice: the sentence gapped, its English shown, the contrast's options to fill it. */
+export function contrastProbeItem(c: ContrastItem, unit: number): ProbeItem | null {
+  if (c.rung > 1 || c.options.length < 2 || c.options.length > 4 || c.options[c.answer] !== c.es.slice(c.gap[0], c.gap[1])) return null;
+  const it: ProbeItem = {
+    id: `pl:${c.id}`, kind: 'contrast', sentence: c.id, unit, ask: 'Which fits the gap?',
+    prompt: es(`${c.es.slice(0, c.gap[0])}___${c.es.slice(c.gap[1])}`), sub: en(c.en),
+    options: c.options.map(es), answer: c.answer, skill: c.node,
+  };
+  return fairItem(it, c.es, c.en) ? it : null;
+}
+
 /** A second dialogue turn joined on to the first starts a new sentence: give it its capital back. */
 export const capitaliseTurns = (t: string): string => t.replace(/([.?!…])\s+(\p{Ll})/gu, (_, p: string, c: string) => `${p} ${c.toUpperCase()}`);
 
@@ -231,7 +251,19 @@ export function probeLevels(b: Bundle, seed = 'placement'): Level[] {
     const taught = licensedTenses(met, (id) => b.node(id)?.tags);
     const ids = b.index.byUnit.get(u.id) ?? [];
     const r = rng(`${seed}|${u.id}`);
-    const byKind: Record<ProbeKind, ProbeItem[]> = { form: [], choose: [], question: [] };
+    const byKind: Record<ProbeKind, ProbeItem[]> = { form: [], choose: [], question: [], contrast: [] };
+    // the contrasts the unit teaches, one item at a time from each in turn so no one skill fills the level
+    const perNode: ProbeItem[][] = [];
+    for (const d of u.days) for (const n of [...d.focus, ...d.chunks]) {
+      if (!n.startsWith('x:') || perNode.some((l) => l[0]?.skill === n)) continue;
+      const own: ProbeItem[] = [];
+      for (const c of shuffle([...b.contrastItems(n)], rng(`${seed}|${u.id}|${n}`))) {
+        const it = contrastProbeItem(c, i);
+        if (it && own.length < CONTRAST_PER_NODE) own.push(it);
+      }
+      if (own.length) perNode.push(own);
+    }
+    for (let k = 0; k < CONTRAST_PER_NODE; k++) for (const l of perNode) if (l[k] && byKind.contrast.length < CONTRAST_PER_LEVEL) byKind.contrast.push(l[k]);
     /** items taken per sentence: a sentence may give two form items (differing in feature) or one of any other kind */
     const taken = new Map<string, { forms: number; other: boolean }>();
     /** form items per feature: the least used feature a sentence offers wins, ties by FEATURE_PRIORITY */
@@ -260,10 +292,12 @@ export function probeLevels(b: Bundle, seed = 'placement'): Level[] {
       }
       if (byKind.form.length >= 12 && byKind.choose.length >= 12 && byKind.question.length >= 6) break;
     }
-    // round robin: form, choose, question, form, ...
+    // round robin, the contrasts twice as often: contrast, form, contrast, choose, contrast, question, ...
     const items: ProbeItem[] = [];
-    for (let k = 0; items.length < byKind.form.length + byKind.choose.length + byKind.question.length; k++) {
-      for (const kind of ['form', 'choose', 'question'] as ProbeKind[]) if (byKind[kind][k]) items.push(byKind[kind][k]);
+    const used: Record<ProbeKind, number> = { form: 0, choose: 0, question: 0, contrast: 0 };
+    const total = byKind.form.length + byKind.choose.length + byKind.question.length + byKind.contrast.length;
+    while (items.length < total) {
+      for (const kind of ['contrast', 'form', 'contrast', 'choose', 'contrast', 'question'] as ProbeKind[]) if (byKind[kind][used[kind]]) items.push(byKind[kind][used[kind]++]);
     }
     if (items.length >= MIN_ITEMS) levels.push({ unit: i, items, features: [...new Set(byKind.form.map(featureOf))] });
   });
@@ -292,6 +326,7 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
   let missed = false;
   let missesAtBottom = 0;
   let asked = 0;
+  const skills = new Map<string, { right: number; total: number; level: number }>();
   let current: { item: ProbeItem; level: number } | undefined;
   let over = !levels.length;
   const take = (k: number) => (cursor[k] < levels[k].items.length ? levels[k].items[cursor[k]++] : undefined);
@@ -317,6 +352,11 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
     answer(correct: boolean) {
       if (!current) return;
       const k = current.level;
+      if (current.item.skill) {
+        const sk = skills.get(current.item.skill) ?? { right: 0, total: 0, level: k };
+        sk.total++; if (correct) sk.right++;
+        skills.set(current.item.skill, sk);
+      }
       current = undefined;
       const overtime = asked >= max;
       asked++;
@@ -346,6 +386,11 @@ export function ladder(levels: Level[], bands: (unit: number) => string | undefi
       }
       return best < 0 ? 0 : levels[best].unit + 1;
     },
+    owed() {
+      const at = this.result();
+      return [...skills].filter(([, v]) => levels[v.level].unit < at && v.right * 2 < v.total)
+        .sort((a, c) => a[1].right / a[1].total - c[1].right / c[1].total || a[1].level - c[1].level).map(([k]) => k);
+    },
   };
 }
 
@@ -362,12 +407,20 @@ export function contentProbe(b: Bundle, seed = 'placement', defaults: ProbeOptio
         next: () => inner.next(),
         answer: (c: boolean) => inner.answer(c),
         result: () => Math.min(units - 1, inner.result()),
+        owed: () => inner.owed?.() ?? [],
       };
     },
   };
 }
 
 // ---------------------------------------------------------------- seeding the skipped units
+
+/** The grammar nodes of these skills (contrast nodes): the contrast itself and the sides its items turn on. */
+export function owedNodes(b: Bundle, skills: readonly string[]): NodeId[] {
+  const out: NodeId[] = [];
+  for (const x of skills) for (const n of [x as NodeId, ...b.contrastItems(x as NodeId).map((c) => c.side)]) if (!out.includes(n)) out.push(n);
+  return out;
+}
 
 /**
  * Start the learner at `unit`. The skipped units' nodes become known, seeded
@@ -379,19 +432,22 @@ export function contentProbe(b: Bundle, seed = 'placement', defaults: ProbeOptio
  *  - due dates spread evenly over a window of W days, W sized so the first
  *    pass costs at most 60% of the band's warm-up budget per day (W within
  *    14..120), lowest stability first (never before tomorrow);
+ *  - a node of a skill the learner failed (`owed`, at most OWED_GRAMMAR_CAP nodes) is not seeded;
  *  - beyond the most recent two units only the direction the productive
  *    policy would unlock is kept active (a productive node's receptive card is
  *    seeded suspended); a node seeded as learned (stability >= 60) has its
  *    receptive card suspended and one novel pass, as maintenance would do.
  * Deterministic given the learner and the clock. Returns the path to persist.
  */
-export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = Date.now()): PathState {
+export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = Date.now(), owed: readonly NodeId[] = []): PathState {
   const path = initialPath();
   if (unit <= 0) return path;
   path.unit = Math.min(unit, b.course.units.length);
   interface Seed { id: NodeId; productive: boolean; stability: number; recent: boolean }
   const seeds: Seed[] = [];
   const seen = new Set<NodeId>();
+  // grammar the learner failed stays unseeded, at most OWED_GRAMMAR_CAP of it: the course owes the rest as new
+  let held = 0;
   // most recent unit first
   for (let u = path.unit - 1; u >= 0; u--) {
     const k = path.unit - 1 - u;
@@ -400,6 +456,7 @@ export function applyPlacement(learner: Learner, b: Bundle, unit: number, now = 
       for (const n of [...d.focus, ...d.chunks, ...d.lexemes]) {
         if (seen.has(n) || b.node(n)?.kind === 'cando' || learner.isIntroduced(n)) continue;
         seen.add(n);
+        if (held < OWED_GRAMMAR_CAP && owed.includes(n)) { held++; continue; }
         const node = b.node(n);
         const productive = productivePolicy({ kind: node?.kind ?? 'lexeme', band: node?.band, freqRank: node?.freqRank, recognition: !!node && recognitionOnly(node) });
         seeds.push({ id: n, productive, stability, recent: k < SEED_FULL_UNITS });

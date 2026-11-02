@@ -4,10 +4,11 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import { BAND_WARMUP_MINUTES } from '../../src/compiler/budget';
 import { Learner, MemoryStore, Rating } from '../../src/learner';
+import type { Band } from '../../src/content/schema';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
 import {
-  applyPlacement, contentProbe, EARLY_STOP_MISSES, fairItem, isCognate, ladder, MAX_ITEMS, probeLevels,
+  applyPlacement, contentProbe, EARLY_STOP_MISSES, fairItem, isCognate, ladder, MAX_ITEMS, OWED_GRAMMAR_CAP, owedNodes, probeLevels,
   type ProbeItem,
 } from '../../src/ui/session/placement';
 
@@ -31,7 +32,7 @@ describe('placement items (real content)', () => {
   it('every item is decided by grammar: no digits, no names or cognates deciding it, options share their names', () => {
     for (const level of probeLevels(b)) {
       for (const it of level.items) {
-        const s = b.sentences.get(it.sentence);
+        const s = it.kind === 'contrast' ? b.contrastItem(it.sentence) : b.sentences.get(it.sentence);
         expect(s, it.id).toBeTruthy();
         expect(fairItem(it, s!.es, s!.en), `${it.id}: ${it.options.map((o) => o.text).join(' | ')}`).toBe(true);
         const all = it.options.map((o) => o.text).join(' ');
@@ -321,4 +322,83 @@ describe('placement for people who already know some Spanish (real content)', ()
       if (it.kind === 'form') expect(it.id, it.options.map((o) => o.text).join(' | ')).not.toMatch(/\|tense:/);
     }
   });
+});
+
+describe('placement draws on the contrast store, and a failed skill is owed, not seeded', () => {
+  const bandOf = (u: number) => upper.course.units[u]?.band;
+  const order = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  let levels: ReturnType<typeof probeLevels>;
+  beforeAll(() => { levels = probeLevels(upper, 'sim'); }, 120_000);
+
+  it('contrast items are a large share of the upper levels, every one fair, none answerable from a name or a cognate', () => {
+    const upperLevels = levels.filter((l) => order.indexOf(bandOf(l.unit)!) >= 2);
+    // what the ladder asks is the front of each level
+    const all = upperLevels.flatMap((l) => l.items.slice(0, 6));
+    const contrast = all.filter((i) => i.kind === 'contrast');
+    expect(contrast.length / all.length).toBeGreaterThanOrEqual(0.4);
+    expect(all.filter((i) => i.kind === 'form').length / all.length).toBeLessThan(0.4);
+    expect(levels.flatMap((l) => l.items).filter((i) => i.kind === 'contrast').length).toBeGreaterThan(0);
+    for (const it of contrast) {
+      expect(it.skill, it.id).toMatch(/^x:/);
+      const ci = upper.contrastItem(it.id.replace(/^pl:/, ''));
+      expect(ci, it.id).toBeTruthy();
+      expect(it.options[it.answer].text).toBe(ci!.options[ci!.answer]);
+      expect(fairItem(it, ci!.es, ci!.en), it.id).toBe(true);
+    }
+  });
+
+  /** a learner who knows every level up to `known`: right below it, wrong above, a slip now and then */
+  const sim = (known: number, slip: number, seed: string, start?: Band) => {
+    let s = 1; for (const c of seed) s = (s * 31 + c.charCodeAt(0)) % 100003;
+    const rnd = () => { s = (s * 1103515245 + 12345) & 0x7fffffff; return s / 0x7fffffff; };
+    const p = ladder(levels, bandOf, MAX_ITEMS, { start });
+    for (let it = p.next(); it; it = p.next()) p.answer(it.unit <= known ? rnd() >= slip : rnd() < 0.2);
+    return p.result();
+  };
+  const bandIdx = (result: number) => order.indexOf(bandOf(Math.max(0, result - 1))!);
+
+  for (const [band, known] of [['A1', 8], ['A2', 20], ['B1', 34], ['B2', 46]] as const) {
+    it(`a learner at the middle of ${band} lands within one band, slips or not`, () => {
+      for (const slip of [0, 0.1]) for (const seed of ['a', 'b', 'c', 'd']) {
+        const r = sim(known, slip, seed + band, band);
+        expect(Math.abs(bandIdx(r) - order.indexOf(band)), `${band} slip ${slip} ${seed}: placed at ${r}`).toBeLessThanOrEqual(1);
+      }
+    });
+  }
+
+  it('a stronger learner never lands earlier than a weaker one', () => {
+    let before = 0;
+    for (let known = -1; known < 55; known += 2) {
+      const r = sim(known, 0, 'mono');
+      expect(r, `knows up to ${known}`).toBeGreaterThanOrEqual(before);
+      before = r;
+    }
+  });
+
+  it('a skill missed below the result is reported as owed; one answered well is not', () => {
+    const p = ladder(levels, bandOf, MAX_ITEMS, { start: 'B1' });
+    let missed: string | undefined;
+    for (let it = p.next(); it; it = p.next()) {
+      if (it.kind === 'contrast' && it.unit <= 30 && !missed) missed = it.skill;
+      p.answer(it.skill !== undefined && it.skill === missed ? false : it.unit <= 45);
+    }
+    expect(p.result()).toBeGreaterThan(31);
+    expect(p.owed?.()).toContain(missed);
+    expect(p.owed?.().filter((s) => s !== missed).length).toBe(0);
+  });
+
+  it('owed grammar stays unseeded, and no more than the cap is held back', async () => {
+    const T0 = new Date(2026, 9, 1, 18).getTime();
+    const skills = [...upper.contrasts.keys()].filter((n) => upper.course.units.slice(0, 20).some((u) => u.days.some((d) => [...d.focus, ...d.chunks].includes(n))));
+    expect(skills.length).toBeGreaterThan(OWED_GRAMMAR_CAP);
+    const nodes = owedNodes(upper, skills);
+    const none = await Learner.open(new MemoryStore(), { now: () => T0 });
+    applyPlacement(none, upper, 20, T0);
+    const some = await Learner.open(new MemoryStore(), { now: () => T0 });
+    applyPlacement(some, upper, 20, T0, nodes);
+    const held = none.nodes().filter((n) => !some.nodes().includes(n));
+    expect(held.length).toBeGreaterThan(0);
+    expect(held.length).toBeLessThanOrEqual(OWED_GRAMMAR_CAP);
+    for (const n of held) expect(nodes).toContain(n);
+  }, 60_000);
 });

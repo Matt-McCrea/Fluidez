@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import { Continue } from '../components/card';
 import { Heading, Txt, undash } from '../components/text';
 import { useApp } from '../context';
-import { applyPlacement, contentProbe, type ProbeSource } from '../session/placement';
+import { applyPlacement, contentProbe, owedNodes, type ProbeSource } from '../session/placement';
 import type { Band } from '../../content/schema';
 import type { Goal } from '../store/ui';
 
@@ -33,10 +33,11 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
   const [loading, setLoading] = useState(false);
   const [goal, setGoal] = useState<Goal | undefined>();
   const [placed, setPlaced] = useState(0);
+  const [owed, setOwed] = useState<string[]>([]);
 
   const finish = async (unit: number) => {
     app.learner.setSettings({ tier: 'standard' });
-    const path = applyPlacement(app.learner, app.bundle, unit, app.now());
+    const path = applyPlacement(app.learner, app.bundle, unit, app.now(), owedNodes(app.bundle, owed));
     // each write is tried and none is waited on to succeed: a store that refuses them must not keep the learner here (the work stays in memory and saving is retried)
     await Promise.allSettled([
       app.ui.setPath(path),
@@ -115,7 +116,7 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
         </main>
       );
     case 'probe':
-      return <Probe source={probe ?? contentProbe(app.bundle, app.ui.state.learnerId, { start: from })} onResult={(u) => { setPlaced(u); setStep('placed'); }} />;
+      return <Probe source={probe ?? contentProbe(app.bundle, app.ui.state.learnerId, { start: from })} onResult={(u, o) => { setPlaced(u); setOwed(o ?? []); setStep('placed'); }} />;
     case 'placed': {
       const unit = app.bundle.course.units[placed];
       return (
@@ -138,11 +139,11 @@ export function Onboarding({ onDone, probe }: { onDone: () => void; probe?: Prob
   }
 }
 
-function Probe({ source, onResult }: { source: ProbeSource; onResult: (unit: number) => void }) {
+function Probe({ source, onResult }: { source: ProbeSource; onResult: (unit: number, owed?: string[]) => void }) {
   const probe = useMemo(() => source.start(), [source]);
   const [, setTick] = useState(0);
   const it = probe.next();
-  useEffect(() => { if (!it && probe.asked > 0) onResult(probe.result()); });
+  useEffect(() => { if (!it && probe.asked > 0) onResult(probe.result(), probe.owed?.()); });
   if (!it) {
     if (probe.asked === 0) {
       return (
