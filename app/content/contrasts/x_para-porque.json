@@ -18,7 +18,7 @@
         "para vender"
       ],
       "answer": 1,
-      "why": "The English says \"We open on Sundays to sell more.\", so the gap is para vender.",
+      "why": "The English says \"We open on Sundays to sell more.\", so it's para vender.",
       "requires": [
         "g:gender-articles",
         "g:present-er-ir",
@@ -46,7 +46,7 @@
         "para vender"
       ],
       "answer": 0,
-      "why": "The English says \"We open on Sundays because we sell more.\", so the gap is porque vendemos.",
+      "why": "The English says \"We open on Sundays because we sell more.\", so it's porque vendemos.",
       "requires": [
         "c:porque",
         "g:cause-result",
@@ -74,7 +74,7 @@
         "porque quiero"
       ],
       "answer": 1,
-      "why": "The English says \"I came because I want to talk to you.\", so the gap is porque quiero.",
+      "why": "The English says \"I came because I want to talk to you.\", so it's porque quiero.",
       "requires": [
         "c:porque",
         "c:quiero",
@@ -104,7 +104,7 @@
         "porque quiero"
       ],
       "answer": 0,
-      "why": "The English says \"I came to talk to you.\", so the gap is para.",
+      "why": "The English says \"I came to talk to you.\", so it's para.",
       "requires": [
         "g:prep-pronouns",
         "g:preterite-irregular-strong",
@@ -190,7 +190,7 @@
         "porque"
       ],
       "answer": 1,
-      "why": "The English says \"Tomás is happy because he found the letter.\", so the gap is porque.",
+      "why": "The English says \"Tomás is happy because he found the letter.\", so it's porque.",
       "requires": [
         "c:porque",
         "g:cause-result",
@@ -219,7 +219,7 @@
         "para"
       ],
       "answer": 1,
-      "why": "The English says \"Mariana uses her phone to work.\", so the gap is para.",
+      "why": "The English says \"Mariana uses her phone to work.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -246,7 +246,7 @@
         "para"
       ],
       "answer": 0,
-      "why": "The English says \"Vale came to Bogotá because she likes the city.\", so the gap is porque.",
+      "why": "The English says \"Vale came to Bogotá because she likes the city.\", so it's porque.",
       "requires": [
         "c:porque",
         "g:cause-result",
@@ -276,7 +276,7 @@
         "Para"
       ],
       "answer": 1,
-      "why": "The English says \"What do you need money for? (to a friend)\", so the gap is Para.",
+      "why": "The English says \"What do you need money for? (to a friend)\", so it's Para.",
       "requires": [
         "g:present-ar",
         "l:necesitar",
@@ -304,7 +304,7 @@
         "porque"
       ],
       "answer": 0,
-      "why": "The English says \"Tomás came to the café to talk to Vale.\", so the gap is para.",
+      "why": "The English says \"Tomás came to the café to talk to Vale.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:preterite-irregular-strong",
@@ -331,7 +331,7 @@
         "porque"
       ],
       "answer": 1,
-      "why": "The English says \"Tomás came to the café because Vale called him.\", so the gap is porque.",
+      "why": "The English says \"Tomás came to the café because Vale called him.\", so it's porque.",
       "requires": [
         "c:porque",
         "g:cause-result",
@@ -360,7 +360,7 @@
         "para"
       ],
       "answer": 0,
-      "why": "The English says \"Vale opens early because she makes the pandebonos.\", so the gap is porque.",
+      "why": "The English says \"Vale opens early because she makes the pandebonos.\", so it's porque.",
       "requires": [
         "c:porque",
         "g:cause-result",
@@ -388,7 +388,7 @@
         "para"
       ],
       "answer": 1,
-      "why": "The English says \"Mariana uses her phone to send voice messages.\", so the gap is para.",
+      "why": "The English says \"Mariana uses her phone to send voice messages.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -416,7 +416,7 @@
         "Porque"
       ],
       "answer": 0,
-      "why": "The English says \"What do you need the internet for?\", so the gap is Para.",
+      "why": "The English says \"What do you need the internet for?\", so it's Para.",
       "requires": [
         "g:present-ar",
         "l:internet",
@@ -426,34 +426,6 @@
         "p:para-inf-purpose",
         "p:prep-questions-basic",
         "p:question-word-order"
-      ]
-    },
-    {
-      "id": "x:para-porque#p.para-inf-purpose.rp7",
-      "node": "x:para-porque",
-      "side": "p:para-inf-purpose",
-      "rung": 1,
-      "en": "I need the computer to answer the messages.",
-      "es": "Necesito la computadora para responder los mensajes.",
-      "gap": [
-        24,
-        28
-      ],
-      "options": [
-        "porque",
-        "para"
-      ],
-      "answer": 1,
-      "why": "The English says \"I need the computer to answer the messages.\", so the gap is para.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-ar",
-        "l:computadora",
-        "l:mensaje",
-        "l:necesitar",
-        "l:responder",
-        "p:para-inf",
-        "p:para-inf-purpose"
       ]
     }
   ]

@@ -133,7 +133,7 @@
         "tan"
       ],
       "answer": 1,
-      "why": "The English says \"I was so tired I fell asleep.\", so the gap is tan.",
+      "why": "The English says \"I was so tired I fell asleep.\", so it's tan.",
       "requires": [
         "g:estar-location-states",
         "g:imperfect-states",
@@ -162,7 +162,7 @@
         "tanto"
       ],
       "answer": 0,
-      "why": "The English says \"I wasn't tired enough to fall asleep.\", so the gap is tan.",
+      "why": "The English says \"I wasn't tired enough to fall asleep.\", so it's tan.",
       "requires": [
         "g:comparatives",
         "g:estar-location-states",
@@ -193,7 +193,7 @@
         "tanto"
       ],
       "answer": 0,
-      "why": "The English says \"It isn't expensive enough to not buy it.\", so the gap is tan.",
+      "why": "The English says \"It isn't expensive enough to not buy it.\", so it's tan.",
       "requires": [
         "g:comparatives",
         "g:direct-objects",
@@ -221,7 +221,7 @@
         "tanto"
       ],
       "answer": 0,
-      "why": "The English says \"The noise was so loud that we heard nothing.\", so the gap is tan.",
+      "why": "The English says \"The noise was so loud that we heard nothing.\", so it's tan.",
       "requires": [
         "c:era",
         "g:gender-articles",
@@ -253,7 +253,7 @@
         "tan"
       ],
       "answer": 1,
-      "why": "The English says \"It wasn't late enough to close.\", so the gap is tan.",
+      "why": "The English says \"It wasn't late enough to close.\", so it's tan.",
       "requires": [
         "c:era",
         "g:comparatives",
@@ -283,7 +283,7 @@
         "tanto"
       ],
       "answer": 0,
-      "why": "The English says \"Are you tired enough to not go?\", so the gap is tan.",
+      "why": "The English says \"Are you tired enough to not go?\", so it's tan.",
       "requires": [
         "g:comparatives",
         "g:estar-location-states",
@@ -321,34 +321,6 @@
       ]
     },
     {
-      "id": "x:tan-que-como-para#g.consequence-connectors.yt3",
-      "node": "x:tan-que-como-para",
-      "side": "g:consequence-connectors",
-      "rung": 1,
-      "en": "It's so late that there are no buses anymore.",
-      "es": "Es tan tarde que ya no hay buses.",
-      "gap": [
-        3,
-        6
-      ],
-      "options": [
-        "tan",
-        "tanto"
-      ],
-      "answer": 0,
-      "why": "Tarde works like an adjective here, so tan comes before it and que after.",
-      "requires": [
-        "c:hay",
-        "c:ya-no",
-        "g:hay-vs-esta",
-        "g:ser-identity",
-        "g:that-clauses",
-        "l:bus",
-        "l:ser",
-        "l:tarde"
-      ]
-    },
-    {
       "id": "x:tan-que-como-para#g.consequence-connectors.rp0",
       "node": "x:tan-que-como-para",
       "side": "g:consequence-connectors",
@@ -364,7 +336,7 @@
         "tan"
       ],
       "answer": 0,
-      "why": "The English says \"Sales fell, so we close on Mondays.\", so the gap is tanto.",
+      "why": "The English says \"Sales fell, so we close on Mondays.\", so it's tanto.",
       "requires": [
         "g:consequence-connectors",
         "g:gender-articles",
@@ -393,7 +365,7 @@
         "tanto"
       ],
       "answer": 0,
-      "why": "The English says \"He was so tired that he fell asleep.\", so the gap is tan.",
+      "why": "The English says \"He was so tired that he fell asleep.\", so it's tan.",
       "requires": [
         "g:estar-location-states",
         "g:imperfect-states",
@@ -422,7 +394,7 @@
         "tanto"
       ],
       "answer": 1,
-      "why": "The English says \"There was so much noise that I couldn't sleep.\", so the gap is tanto.",
+      "why": "The English says \"There was so much noise that I couldn't sleep.\", so it's tanto.",
       "requires": [
         "g:imperfect-states",
         "g:preterite-irregular-strong",
@@ -449,7 +421,7 @@
         "tanto"
       ],
       "answer": 1,
-      "why": "The English says \"I have no time, so I'm not going.\", so the gap is tanto.",
+      "why": "The English says \"I have no time, so I'm not going.\", so it's tanto.",
       "requires": [
         "c:tengo",
         "c:voy-vas",
@@ -477,7 +449,7 @@
         "tan"
       ],
       "answer": 0,
-      "why": "The English says \"I have so much work that I can't go out.\", so the gap is tanto.",
+      "why": "The English says \"I have so much work that I can't go out.\", so it's tanto.",
       "requires": [
         "c:puedo",
         "c:tengo",
@@ -507,7 +479,7 @@
         "tan"
       ],
       "answer": 1,
-      "why": "The English says \"She's so busy that she doesn't answer the phone.\", so the gap is tan.",
+      "why": "The English says \"She's so busy that she doesn't answer the phone.\", so it's tan.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",
@@ -549,128 +521,6 @@
       ]
     },
     {
-      "id": "x:tan-que-como-para#p.como-para.yt6",
-      "node": "x:tan-que-como-para",
-      "side": "p:como-para",
-      "rung": 1,
-      "en": "Hernando isn't old enough to stop driving.",
-      "es": "Hernando no es tan viejo como para dejar de manejar.",
-      "gap": [
-        15,
-        18
-      ],
-      "options": [
-        "tanto",
-        "tan"
-      ],
-      "answer": 1,
-      "why": "Both actions have the same person, so an infinitive follows.",
-      "requires": [
-        "g:comparatives",
-        "g:ser-identity",
-        "l:dejar",
-        "l:manejar",
-        "l:ser",
-        "l:viejo",
-        "p:como-para",
-        "p:dejar-de-inf",
-        "p:para-inf",
-        "p:para-inf-purpose",
-        "p:viejo-antiguo-mayor"
-      ]
-    },
-    {
-      "id": "x:tan-que-como-para#p.como-para.rp0",
-      "node": "x:tan-que-como-para",
-      "side": "p:como-para",
-      "rung": 1,
-      "en": "It isn't serious enough to cancel.",
-      "es": "No es tan grave como para cancelar.",
-      "gap": [
-        6,
-        9
-      ],
-      "options": [
-        "tan",
-        "tanto"
-      ],
-      "answer": 0,
-      "why": "The English says \"It isn't serious enough to cancel.\", so the gap is tan.",
-      "requires": [
-        "g:comparatives",
-        "g:ser-identity",
-        "l:cancelar",
-        "l:grave",
-        "l:ser",
-        "p:como-para",
-        "p:para-inf",
-        "p:para-inf-purpose"
-      ]
-    },
-    {
-      "id": "x:tan-que-como-para#p.como-para.rp3",
-      "node": "x:tan-que-como-para",
-      "side": "p:como-para",
-      "rung": 1,
-      "en": "He isn't naive enough to believe that.",
-      "es": "No es tan ingenuo como para creerse eso.",
-      "gap": [
-        6,
-        9
-      ],
-      "options": [
-        "tanto",
-        "tan"
-      ],
-      "answer": 1,
-      "why": "The English says \"He isn't naive enough to believe that.\", so the gap is tan.",
-      "requires": [
-        "g:comparatives",
-        "g:object-pronoun-position",
-        "g:se-impersonal",
-        "g:ser-identity",
-        "l:creer",
-        "l:ingenuo",
-        "l:ser",
-        "p:como-para",
-        "p:demonstratives-basic",
-        "p:para-inf",
-        "p:para-inf-purpose"
-      ]
-    },
-    {
-      "id": "x:tan-que-como-para#p.como-para.rp5",
-      "node": "x:tan-que-como-para",
-      "side": "p:como-para",
-      "rung": 1,
-      "en": "Is it important enough to call at eleven at night?",
-      "es": "¿Es tan importante como para llamar a las once de la noche?",
-      "gap": [
-        4,
-        7
-      ],
-      "options": [
-        "tanto",
-        "tan"
-      ],
-      "answer": 1,
-      "why": "The English says \"Is it important enough to call at eleven at night?\", so the gap is tan.",
-      "requires": [
-        "g:comparatives",
-        "g:gender-articles",
-        "g:ser-identity",
-        "l:importante",
-        "l:llamar",
-        "l:noche",
-        "l:ser",
-        "p:como-para",
-        "p:para-inf",
-        "p:para-inf-purpose",
-        "p:por-la-manana",
-        "p:telling-time"
-      ]
-    },
-    {
       "id": "x:tan-que-como-para#p.como-para.rp6",
       "node": "x:tan-que-como-para",
       "side": "p:como-para",
@@ -686,7 +536,7 @@
         "tan"
       ],
       "answer": 0,
-      "why": "The English says \"She works enough for them to raise her pay.\", so the gap is tanto.",
+      "why": "The English says \"She works enough for them to raise her pay.\", so it's tanto.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -716,7 +566,7 @@
         "tanto"
       ],
       "answer": 1,
-      "why": "The English says \"It isn't cold enough to wear a coat.\", so the gap is tanto.",
+      "why": "The English says \"It isn't cold enough to wear a coat.\", so it's tanto.",
       "requires": [
         "c:para-llevar",
         "g:present-er-ir",

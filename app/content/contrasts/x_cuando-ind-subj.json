@@ -18,7 +18,7 @@
         "cierro"
       ],
       "answer": 1,
-      "why": "The English says \"Whenever I close up, I clean the tables.\", so the gap is cierro.",
+      "why": "The English says \"Whenever I close up, I clean the tables.\", so it's cierro.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -45,7 +45,7 @@
         "cierro"
       ],
       "answer": 0,
-      "why": "The English says \"Tonight, when I close up, I'll clean the tables.\", so the gap is cierre.",
+      "why": "The English says \"Tonight, when I close up, I'll clean the tables.\", so it's cierre.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -101,7 +101,7 @@
         "llego"
       ],
       "answer": 1,
-      "why": "The English says \"Whenever I arrive, Vale is already here.\", so the gap is llego.",
+      "why": "The English says \"Whenever I arrive, Vale is already here.\", so it's llego.",
       "requires": [
         "g:estar-location-states",
         "g:present-ar",
@@ -128,7 +128,7 @@
         "llego"
       ],
       "answer": 0,
-      "why": "The English says \"When I get there, we'll talk.\", so the gap is llegue.",
+      "why": "The English says \"When I get there, we'll talk.\", so it's llegue.",
       "requires": [
         "g:present-ar",
         "g:subj-cuando-future",

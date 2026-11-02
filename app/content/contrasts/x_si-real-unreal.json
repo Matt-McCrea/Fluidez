@@ -155,7 +155,7 @@
         "tuviera"
       ],
       "answer": 0,
-      "why": "The English says \"If I have money, I'll buy a house.\", so the gap is tengo.",
+      "why": "The English says \"If I have money, I'll buy a house.\", so it's tengo.",
       "requires": [
         "c:tengo",
         "g:future-promises",

@@ -9,7 +9,7 @@ import { kindOfFile } from '../../src/content/kinds';
 import { checkContrastRequires, checkDashes, checkStrings, checkStructure, type RunState } from '../../tools/gate/checks';
 import type { Finding } from '../../tools/gate/findings';
 import { buildCurriculum, listJson, loadFile, type Loaded } from '../../tools/gate/load';
-import { DECIDES } from '../../tools/contrast/classes';
+import { DECIDES, RULED_OUT } from '../../tools/contrast/classes';
 
 const APP = join(__dirname, '../..');
 const CONTENT = join(APP, 'content');
@@ -34,8 +34,8 @@ describe('the contrasts folder', () => {
     expect(kindOfFile(join(DIR, '_notes.json'))).toBeUndefined();
   });
 
-  it('holds a file for nearly every contrast, each named for its node and parsing against the schema', () => {
-    expect(files.length).toBeGreaterThanOrEqual(90);
+  it('holds a file for every contrast, each named for its node and parsing against the schema: one with no items still says how it is asked', () => {
+    expect(files).toHaveLength(94);
     for (const f of files) {
       expect(f.ok, f.rel).toBe(true);
       const c = f.data as ContrastFile;
@@ -67,12 +67,29 @@ describe('the contrasts folder', () => {
         expect(it.id.startsWith(`${it.node}#`), it.id).toBe(true);
       }
     }
-    expect(items).toBeGreaterThan(600);
+    expect(items).toBeGreaterThan(500);
+  });
+
+  it('takes nothing from a read-and-pick that is not a translation: the sentence it judges may be the wrong one', () => {
+    for (const f of files) {
+      for (const it of (f.data as ContrastFile).items) {
+        expect(it.en, it.id).not.toMatch(/^(sounds right|should be\b)|^the second person\b/i);
+        // an exchange has its English whole
+        if (it.es.includes('\n')) expect((it.en.match(/[.!?]+(\s|$)/g) ?? []).length, it.id).toBeGreaterThan(1);
+      }
+    }
+    // the script calls this one wrong: "Should be: A mí también."
+    const yo = (files.find((f) => f.rel.endsWith('x_yo-vs-a-mi-tambien.json'))!.data as ContrastFile).items;
+    expect(yo.map((i) => i.es)).not.toContain('Me encanta la torta.\nYo también.');
+  });
+
+  it('has none of the items a person ruled out', () => {
+    for (const f of files) for (const it of (f.data as ContrastFile).items) expect(RULED_OUT.has(it.id), it.id).toBe(false);
   });
 
   it('writes no contrast into the requires or targets of any bank row (they would be inadmissible until it is taught)', () => {
     const bank = join(CONTENT, 'bank');
-    for (const name of readdirSync(bank).filter((n) => /^u0[1-3]\.json$/.test(n))) {
+    for (const name of readdirSync(bank).filter((n) => n.endsWith('.json') && !n.startsWith('_'))) {
       for (const row of JSON.parse(readFileSync(join(bank, name), 'utf8')) as Array<{ requires: string[]; targets: string[] }>) {
         expect([...row.requires, ...row.targets].filter((n) => n.startsWith('x:'))).toEqual([]);
       }

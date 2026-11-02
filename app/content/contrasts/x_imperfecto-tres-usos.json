@@ -75,7 +75,7 @@
         "Venía"
       ],
       "answer": 0,
-      "why": "The English says \"I'm here to ask you a favor.\", so the gap is Vengo.",
+      "why": "The English says \"I'm here to ask you a favor.\", so it's Vengo.",
       "requires": [
         "c:hago-salgo-vengo",
         "g:gender-articles",
@@ -104,7 +104,7 @@
         "llegaba"
       ],
       "answer": 0,
-      "why": "The English says \"I was calling you (formal) to find out whether my package has arrived.\", so the gap is llegó.",
+      "why": "The English says \"I was calling you (formal) to find out whether my package has arrived.\", so it's llegó.",
       "requires": [
         "g:imperfect-habitual",
         "g:indirect-objects",

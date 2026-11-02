@@ -18,7 +18,7 @@
         "vive"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is looking for a particular man, who lives in Santa Marta.\", so the gap is vive.",
+      "why": "The English says \"Hernando is looking for a particular man, who lives in Santa Marta.\", so it's vive.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -46,7 +46,7 @@
         "viva"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is looking for any man who lives in Santa Marta, if there is one.\", so the gap is viva.",
+      "why": "The English says \"Hernando is looking for any man who lives in Santa Marta, if there is one.\", so it's viva.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -189,7 +189,7 @@
         "abre"
       ],
       "answer": 0,
-      "why": "The English says \"Is there a café that opens at four?\", so the gap is abra.",
+      "why": "The English says \"Is there a café that opens at four?\", so it's abra.",
       "requires": [
         "c:hay",
         "g:gender-articles",
@@ -218,7 +218,7 @@
         "vive"
       ],
       "answer": 0,
-      "why": "The English says \"Do you know someone who lives in Santa Marta? (to a friend, I'm not sure anyone does)\", so the gap is viva.",
+      "why": "The English says \"Do you know someone who lives in Santa Marta? (to a friend, I'm not sure anyone does)\", so it's viva.",
       "requires": [
         "g:present-er-ir",
         "g:relative-que",
@@ -247,7 +247,7 @@
         "tenga"
       ],
       "answer": 0,
-      "why": "The English says \"I want the apartment that has a balcony (I know the one).\", so the gap is tiene.",
+      "why": "The English says \"I want the apartment that has a balcony (I know the one).\", so it's tiene.",
       "requires": [
         "c:quiero",
         "c:tienes",
@@ -334,7 +334,7 @@
         "tenga"
       ],
       "answer": 0,
-      "why": "The English says \"I'm looking for the house that has a garden (I know the one).\", so the gap is tiene.",
+      "why": "The English says \"I'm looking for the house that has a garden (I know the one).\", so it's tiene.",
       "requires": [
         "c:tienes",
         "g:gender-articles",

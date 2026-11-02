@@ -75,7 +75,7 @@
         "dijo"
       ],
       "answer": 0,
-      "why": "The English says \"I don't recall him saying exactly that.\", so the gap is dijera.",
+      "why": "The English says \"I don't recall him saying exactly that.\", so it's dijera.",
       "requires": [
         "g:adverbs-mente",
         "g:imperfect-subj",
@@ -106,7 +106,7 @@
         "dijo"
       ],
       "answer": 1,
-      "why": "The English says \"I remember that he said that.\", so the gap is dijo.",
+      "why": "The English says \"I remember that he said that.\", so it's dijo.",
       "requires": [
         "g:preterite-irregular-strong",
         "g:stem-boot",

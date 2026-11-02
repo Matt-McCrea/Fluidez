@@ -71,7 +71,7 @@
         "Pedí"
       ],
       "answer": 1,
-      "why": "The English says \"I ordered a juice.\", so the gap is Pedí.",
+      "why": "The English says \"I ordered a juice.\", so it's Pedí.",
       "requires": [
         "g:gender-articles",
         "g:preterite-er-ir",
@@ -96,7 +96,7 @@
         "Pedí"
       ],
       "answer": 0,
-      "why": "The English says \"I asked the price.\", so the gap is Pregunté.",
+      "why": "The English says \"I asked the price.\", so it's Pregunté.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -121,7 +121,7 @@
         "pregunto"
       ],
       "answer": 0,
-      "why": "The English says \"I always order the ajiaco.\", so the gap is pido.",
+      "why": "The English says \"I always order the ajiaco.\", so it's pido.",
       "requires": [
         "g:gender-articles",
         "g:stem-e-i",
@@ -129,31 +129,6 @@
         "l:pedir",
         "l:siempre",
         "p:frequency-scale"
-      ]
-    },
-    {
-      "id": "x:pedir-preguntar#g.stem-e-i.rp0",
-      "node": "x:pedir-preguntar",
-      "side": "g:stem-e-i",
-      "rung": 1,
-      "en": "I order a mango juice.",
-      "es": "Pido un jugo de mango.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Pregunto",
-        "Pido"
-      ],
-      "answer": 1,
-      "why": "The English says \"I order a mango juice.\", so the gap is Pido.",
-      "requires": [
-        "g:gender-articles",
-        "g:stem-e-i",
-        "l:jugo",
-        "l:mango",
-        "l:pedir"
       ]
     }
   ]

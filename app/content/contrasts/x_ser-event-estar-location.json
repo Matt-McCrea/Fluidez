@@ -18,7 +18,7 @@
         "Está"
       ],
       "answer": 0,
-      "why": "The English says \"The match is at the stadium.\", so the gap is Es.",
+      "why": "The English says \"The match is at the stadium.\", so it's Es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
@@ -42,7 +42,7 @@
         "Está"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is at the stadium.\", so the gap is Está.",
+      "why": "The English says \"Hernando is at the stadium.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -66,7 +66,7 @@
         "Fue"
       ],
       "answer": 1,
-      "why": "The English says \"The party was at Vale's place.\", so the gap is Fue.",
+      "why": "The English says \"The party was at Vale's place.\", so it's Fue.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ser-ir-hacer",
@@ -91,7 +91,7 @@
         "Fue"
       ],
       "answer": 0,
-      "why": "The English says \"We were at Vale's place.\", so the gap is Estuvimos.",
+      "why": "The English says \"We were at Vale's place.\", so it's Estuvimos.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -198,7 +198,7 @@
         "Está"
       ],
       "answer": 1,
-      "why": "The English says \"She's at the concert.\", so the gap is Está.",
+      "why": "The English says \"She's at the concert.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",

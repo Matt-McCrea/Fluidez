@@ -18,7 +18,7 @@
         "Está"
       ],
       "answer": 0,
-      "why": "The English says \"He's boring.\", so the gap is Es.",
+      "why": "The English says \"He's boring.\", so it's Es.",
       "requires": [
         "g:ser-identity",
         "l:aburrido",
@@ -42,7 +42,7 @@
         "Está"
       ],
       "answer": 1,
-      "why": "The English says \"He's bored.\", so the gap is Está.",
+      "why": "The English says \"He's bored.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "l:aburrido",
@@ -66,7 +66,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Simón is a happy bird.\", so the gap is es.",
+      "why": "The English says \"Simón is a happy bird.\", so it's es.",
       "requires": [
         "g:ser-identity",
         "l:feliz",
@@ -89,7 +89,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Simón is happy at the moment.\", so the gap is está.",
+      "why": "The English says \"Simón is happy at the moment.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "l:estar",
@@ -138,7 +138,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Vale is very clever.\", so the gap is es.",
+      "why": "The English says \"Vale is very clever.\", so it's es.",
       "requires": [
         "g:adjective-agreement",
         "g:ser-identity",
@@ -163,7 +163,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Vale is ready now.\", so the gap is está.",
+      "why": "The English says \"Vale is ready now.\", so it's está.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",
@@ -187,7 +187,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"Tomás is looking serious.\", so the gap is está.",
+      "why": "The English says \"Tomás is looking serious.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "l:estar",
@@ -210,7 +210,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"The city is a quiet place.\", so the gap is es.",
+      "why": "The English says \"The city is a quiet place.\", so it's es.",
       "requires": [
         "c:tranquilo",
         "g:gender-articles",
@@ -236,7 +236,7 @@
         "Es"
       ],
       "answer": 1,
-      "why": "The English says \"He's from Bogotá.\", so the gap is Es.",
+      "why": "The English says \"He's from Bogotá.\", so it's Es.",
       "requires": [
         "g:ser-identity",
         "l:ser"
@@ -258,7 +258,7 @@
         "Estoy"
       ],
       "answer": 0,
-      "why": "The English says \"I'm Vale.\", so the gap is Soy.",
+      "why": "The English says \"I'm Vale.\", so it's Soy.",
       "requires": [
         "g:ser-identity",
         "l:ser"
@@ -280,7 +280,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"You're from Pasto, aren't you?\", so the gap is es.",
+      "why": "The English says \"You're from Pasto, aren't you?\", so it's es.",
       "requires": [
         "c:no-cierto",
         "g:ser-identity",
@@ -303,7 +303,7 @@
         "estoy"
       ],
       "answer": 0,
-      "why": "The English says \"I'm not from Bogotá.\", so the gap is soy.",
+      "why": "The English says \"I'm not from Bogotá.\", so it's soy.",
       "requires": [
         "c:soy-de",
         "g:ser-identity",
@@ -326,7 +326,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"This is Simón.\", so the gap is es.",
+      "why": "The English says \"This is Simón.\", so it's es.",
       "requires": [
         "g:ser-identity",
         "l:ser"
@@ -348,7 +348,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Hernando is a calm person.\", so the gap is es.",
+      "why": "The English says \"Hernando is a calm person.\", so it's es.",
       "requires": [
         "c:tranquilo",
         "g:ser-identity",
@@ -372,7 +372,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is calm right now.\", so the gap is está.",
+      "why": "The English says \"Hernando is calm right now.\", so it's está.",
       "requires": [
         "c:tranquilo",
         "g:estar-location-states",
@@ -396,7 +396,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Mariana is clever.\", so the gap is es.",
+      "why": "The English says \"Mariana is clever.\", so it's es.",
       "requires": [
         "g:adjective-agreement",
         "g:ser-identity",
@@ -420,7 +420,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Mariana is ready.\", so the gap is está.",
+      "why": "The English says \"Mariana is ready.\", so it's está.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",
@@ -520,7 +520,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"The coffee tastes great.\", so the gap is está.",
+      "why": "The English says \"The coffee tastes great.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -545,7 +545,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"Simón is a nervous type.\", so the gap is es.",
+      "why": "The English says \"Simón is a nervous type.\", so it's es.",
       "requires": [
         "g:ser-identity",
         "l:nervioso",
@@ -568,7 +568,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"The fish has gone off.\", so the gap is está.",
+      "why": "The English says \"The fish has gone off.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -593,7 +593,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Vale is looking serious.\", so the gap is está.",
+      "why": "The English says \"Vale is looking serious.\", so it's está.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",

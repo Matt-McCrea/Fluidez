@@ -18,7 +18,7 @@
         "mucho"
       ],
       "answer": 0,
-      "why": "The English says \"Vale cooks very well.\", so the gap is muy bien.",
+      "why": "The English says \"Vale cooks very well.\", so it's muy bien.",
       "requires": [
         "c:bien-y-tu",
         "g:present-ar",
@@ -45,7 +45,7 @@
         "mucho"
       ],
       "answer": 1,
-      "why": "The English says \"Vale cooks a lot.\", so the gap is mucho.",
+      "why": "The English says \"Vale cooks a lot.\", so it's mucho.",
       "requires": [
         "g:present-ar",
         "l:cocinar",
@@ -130,33 +130,6 @@
       ]
     },
     {
-      "id": "x:muy-mucho#yt4",
-      "node": "x:muy-mucho",
-      "side": "g:quantifiers",
-      "rung": 1,
-      "en": "The bakery is very close.",
-      "es": "La panadería queda muy cerca.",
-      "gap": [
-        19,
-        22
-      ],
-      "options": [
-        "mucho",
-        "muy"
-      ],
-      "answer": 1,
-      "why": "Cerca says where, a how word, so muy.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-ar",
-        "l:cerca",
-        "l:panadería",
-        "l:quedar",
-        "p:cerca-de",
-        "p:quantifiers-basic"
-      ]
-    },
-    {
       "id": "x:muy-mucho#yt5",
       "node": "x:muy-mucho",
       "side": "g:quantifiers",
@@ -195,7 +168,7 @@
         "mucho"
       ],
       "answer": 0,
-      "why": "The English says \"I sleep very little.\", so the gap is muy.",
+      "why": "The English says \"I sleep very little.\", so it's muy.",
       "requires": [
         "g:stem-boot",
         "l:dormir",
@@ -219,7 +192,7 @@
         "muy"
       ],
       "answer": 0,
-      "why": "The English says \"I'm very cold.\", so the gap is mucho.",
+      "why": "The English says \"I'm very cold.\", so it's mucho.",
       "requires": [
         "c:tengo",
         "g:yo-irregular",
@@ -245,7 +218,7 @@
         "muy"
       ],
       "answer": 1,
-      "why": "The English says \"There's very little milk.\", so the gap is muy.",
+      "why": "The English says \"There's very little milk.\", so it's muy.",
       "requires": [
         "c:hay",
         "g:hay-vs-esta",
@@ -270,7 +243,7 @@
         "muy"
       ],
       "answer": 0,
-      "why": "The English says \"You talk a lot.\", so the gap is mucho.",
+      "why": "The English says \"You talk a lot.\", so it's mucho.",
       "requires": [
         "g:present-ar",
         "l:hablar",
@@ -293,7 +266,7 @@
         "muy"
       ],
       "answer": 1,
-      "why": "The English says \"The pharmacy is very far.\", so the gap is muy.",
+      "why": "The English says \"The pharmacy is very far.\", so it's muy.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -302,32 +275,6 @@
         "l:quedar",
         "p:cerca-de",
         "p:quantifiers-basic"
-      ]
-    },
-    {
-      "id": "x:muy-mucho#g.adjective-agreement.yt3",
-      "node": "x:muy-mucho",
-      "side": "g:adjective-agreement",
-      "rung": 1,
-      "en": "My boss is very kind.",
-      "es": "Mi jefe es muy amable.",
-      "gap": [
-        11,
-        14
-      ],
-      "options": [
-        "mucho",
-        "muy"
-      ],
-      "answer": 1,
-      "why": "Amable ends in e, so it's the same for a man or a woman.",
-      "requires": [
-        "c:muy-amable",
-        "g:ser-identity",
-        "l:amable",
-        "l:jefe",
-        "l:ser",
-        "p:possessives-basic"
       ]
     }
   ]

@@ -96,7 +96,7 @@
         "descanse"
       ],
       "answer": 0,
-      "why": "The English says \"I recommend that you rest. (formal)\", so the gap is descansar.",
+      "why": "The English says \"I recommend that you rest. (formal)\", so it's descansar.",
       "requires": [
         "g:indirect-objects",
         "g:stem-boot",

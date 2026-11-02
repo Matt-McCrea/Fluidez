@@ -18,7 +18,7 @@
         "Venga"
       ],
       "answer": 0,
-      "why": "The English says \"Come early tomorrow. (to a friend)\", so the gap is Ven.",
+      "why": "The English says \"Come early tomorrow. (to a friend)\", so it's Ven.",
       "requires": [
         "g:commands-tu",
         "l:mañana",
@@ -42,7 +42,7 @@
         "Venga"
       ],
       "answer": 1,
-      "why": "The English says \"Come early tomorrow. (formal)\", so the gap is Venga.",
+      "why": "The English says \"Come early tomorrow. (formal)\", so it's Venga.",
       "requires": [
         "l:mañana",
         "l:temprano",
@@ -118,99 +118,6 @@
         "l:mañana",
         "l:temprano",
         "l:venir"
-      ]
-    },
-    {
-      "id": "x:commands-tu-usted#g.commands-tu.yt2",
-      "node": "x:commands-tu-usted",
-      "side": "g:commands-tu",
-      "rung": 1,
-      "en": "Look at this.",
-      "es": "Mira esto.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Mira",
-        "Mire"
-      ],
-      "answer": 0,
-      "why": "Mira is \"she looks\", and to a friend it also means \"look\".",
-      "requires": [
-        "c:oye-mira",
-        "l:mirar",
-        "p:demonstratives-basic"
-      ]
-    },
-    {
-      "id": "x:commands-tu-usted#g.commands-tu.rp0",
-      "node": "x:commands-tu-usted",
-      "side": "g:commands-tu",
-      "rung": 1,
-      "en": "Come tomorrow.",
-      "es": "Ven mañana.",
-      "gap": [
-        0,
-        3
-      ],
-      "options": [
-        "Venga",
-        "Ven"
-      ],
-      "answer": 1,
-      "why": "The English says \"Come tomorrow.\", so the gap is Ven.",
-      "requires": [
-        "g:commands-tu",
-        "l:mañana",
-        "l:venir"
-      ]
-    },
-    {
-      "id": "x:commands-tu-usted#g.commands-usted.yt3",
-      "node": "x:commands-tu-usted",
-      "side": "g:commands-usted",
-      "rung": 1,
-      "en": "Look at the map.",
-      "es": "Mire el mapa.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Mira",
-        "Mire"
-      ],
-      "answer": 1,
-      "why": "Mira swaps its vowel: mire.",
-      "requires": [
-        "g:gender-articles",
-        "l:mapa",
-        "l:mirar"
-      ]
-    },
-    {
-      "id": "x:commands-tu-usted#g.commands-usted.rp7",
-      "node": "x:commands-tu-usted",
-      "side": "g:commands-usted",
-      "rung": 1,
-      "en": "Look at the map, madam.",
-      "es": "Mire el mapa, señora.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Mire",
-        "Mira"
-      ],
-      "answer": 0,
-      "why": "The English says \"Look at the map, madam.\", so the gap is Mire.",
-      "requires": [
-        "g:gender-articles",
-        "l:mapa",
-        "l:mirar",
-        "l:señora"
       ]
     }
   ]

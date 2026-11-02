@@ -18,7 +18,7 @@
         "Voy a"
       ],
       "answer": 1,
-      "why": "The English says \"I'm going to Vale's place.\", so the gap is Voy a.",
+      "why": "The English says \"I'm going to Vale's place.\", so it's Voy a.",
       "requires": [
         "c:voy-a",
         "g:ir-a-plans",
@@ -43,7 +43,7 @@
         "Voy a"
       ],
       "answer": 0,
-      "why": "The English says \"I'm leaving Vale's place.\", so the gap is Me voy de.",
+      "why": "The English says \"I'm leaving Vale's place.\", so it's Me voy de.",
       "requires": [
         "c:voy-vas",
         "g:ir-a-plans",
@@ -52,12 +52,37 @@
       ]
     },
     {
-      "id": "x:ir-irse#pf1",
+      "id": "x:ir-irse#rp7",
       "node": "x:ir-irse",
       "side": "g:se-meaning-change",
       "rung": 1,
-      "en": "We're leaving the cinema.",
-      "es": "Nos vamos del cine.",
+      "en": "We're going to the cinema.",
+      "es": "Vamos al cine.",
+      "gap": [
+        0,
+        8
+      ],
+      "options": [
+        "Vamos al",
+        "Nos vamos del"
+      ],
+      "answer": 0,
+      "why": "The English says \"We're going to the cinema.\", so it's Vamos al.",
+      "requires": [
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:cine",
+        "l:ir",
+        "p:ir-a-venir-de-place"
+      ]
+    },
+    {
+      "id": "x:ir-irse#g.se-meaning-change.yt2",
+      "node": "x:ir-irse",
+      "side": "g:se-meaning-change",
+      "rung": 1,
+      "en": "We stayed at home.",
+      "es": "Nos quedamos en casa.",
       "gap": [
         0,
         3
@@ -67,44 +92,75 @@
         "Me"
       ],
       "answer": 0,
-      "why": "The se word has to match the person, so we is nos.",
+      "why": "Staying is quedarse, and nos matches we.",
       "requires": [
-        "g:gender-articles",
-        "g:ir-a-plans",
-        "l:cine",
-        "l:irse"
+        "g:present-ar",
+        "g:reflexive-routine",
+        "l:casa",
+        "l:quedarse"
       ]
     },
     {
-      "id": "x:ir-irse#rp1",
+      "id": "x:ir-irse#g.se-meaning-change.rp7",
       "node": "x:ir-irse",
       "side": "g:se-meaning-change",
       "rung": 1,
-      "en": "I'm leaving now.",
-      "es": "Ya me voy.",
+      "en": "We leave at six.",
+      "es": "Nos vamos a las seis.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Nos",
+        "Me"
+      ],
+      "answer": 0,
+      "why": "The English says \"We leave at six.\", so it's Nos.",
+      "requires": [
+        "c:vamos-a",
+        "g:gender-articles",
+        "g:ir-a-plans",
+        "l:irse",
+        "p:ir-a-venir-de-place",
+        "p:telling-time"
+      ]
+    },
+    {
+      "id": "x:ir-irse#g.reflexive-routine.rp4",
+      "node": "x:ir-irse",
+      "side": "g:reflexive-routine",
+      "rung": 1,
+      "en": "I don't feel well.",
+      "es": "No me siento bien.",
       "gap": [
         3,
         5
       ],
       "options": [
-        "me",
-        "nos"
+        "nos",
+        "me"
       ],
-      "answer": 0,
-      "why": "The English says \"I'm leaving now.\", so the gap is me.",
+      "answer": 1,
+      "why": "The English says \"I don't feel well.\", so it's me.",
       "requires": [
-        "c:voy-vas",
-        "g:ir-a-plans",
-        "l:irse"
+        "c:bien-y-tu",
+        "g:reflexive-routine",
+        "g:stem-boot",
+        "l:bien",
+        "l:sentirse",
+        "p:bien-bueno",
+        "p:bien-mal-vs-bueno-malo",
+        "p:sentirse-mal"
       ]
     },
     {
-      "id": "x:ir-irse#g.se-meaning-change.rp3",
+      "id": "x:ir-irse#g.reflexive-routine.rp9",
       "node": "x:ir-irse",
-      "side": "g:se-meaning-change",
+      "side": "g:reflexive-routine",
       "rung": 1,
-      "en": "I fell asleep in the meeting.",
-      "es": "Me dormí en la reunión.",
+      "en": "I meet Vale in the park.",
+      "es": "Me encuentro con Vale en el parque.",
       "gap": [
         0,
         2
@@ -114,37 +170,13 @@
         "Nos"
       ],
       "answer": 0,
-      "why": "The English says \"I fell asleep in the meeting.\", so the gap is Me.",
+      "why": "The English says \"I meet Vale in the park.\", so it's Me.",
       "requires": [
         "g:gender-articles",
-        "g:preterite-er-ir",
         "g:reflexive-routine",
-        "l:dormirse",
-        "l:reunión"
-      ]
-    },
-    {
-      "id": "x:ir-irse#g.se-meaning-change.rp5",
-      "node": "x:ir-irse",
-      "side": "g:se-meaning-change",
-      "rung": 1,
-      "en": "We stayed until late.",
-      "es": "Nos quedamos hasta tarde.",
-      "gap": [
-        0,
-        3
-      ],
-      "options": [
-        "Nos",
-        "Me"
-      ],
-      "answer": 0,
-      "why": "The English says \"We stayed until late.\", so the gap is Nos.",
-      "requires": [
-        "g:present-ar",
-        "g:reflexive-routine",
-        "l:quedarse",
-        "l:tarde"
+        "g:stem-boot",
+        "l:encontrarse",
+        "l:parque"
       ]
     }
   ]

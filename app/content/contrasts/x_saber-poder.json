@@ -18,7 +18,7 @@
         "Hoy no puedo"
       ],
       "answer": 0,
-      "why": "The English says \"I don't know how to swim.\", so the gap is No sé.",
+      "why": "The English says \"I don't know how to swim.\", so it's No sé.",
       "requires": [
         "c:no-se",
         "g:yo-irregular",
@@ -42,7 +42,7 @@
         "Hoy no puedo"
       ],
       "answer": 1,
-      "why": "The English says \"I can't swim today.\", so the gap is Hoy no puedo.",
+      "why": "The English says \"I can't swim today.\", so it's Hoy no puedo.",
       "requires": [
         "c:puedo",
         "g:stem-boot",
@@ -68,7 +68,7 @@
         "Sabes"
       ],
       "answer": 0,
-      "why": "The English says \"Can you come tomorrow?\", so the gap is Puedes.",
+      "why": "The English says \"Can you come tomorrow?\", so it's Puedes.",
       "requires": [
         "g:stem-boot",
         "g:verb-infinitive",
@@ -94,7 +94,7 @@
         "Sabes"
       ],
       "answer": 1,
-      "why": "The English says \"Do you know how to dance?\", so the gap is Sabes.",
+      "why": "The English says \"Do you know how to dance?\", so it's Sabes.",
       "requires": [
         "g:present-er-ir",
         "l:bailar",

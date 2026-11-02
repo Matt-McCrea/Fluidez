@@ -47,8 +47,8 @@ export function pivotOf(a: string, b: string, max = 3): Pivot | undefined {
 /** A sentence without its markdown stresses and surrounding space. */
 export const plain = (s: string): string => s.replace(/\*/g, '').replace(/\s+/g, ' ').trim();
 
-/** A sentence as a key: lower case, no stresses, no punctuation at its ends. */
-export const keyOf = (s: string): string => plain(s).toLowerCase().replace(/^[\s¿¡"'“”]+|[\s.!?"'“”]+$/g, '');
+/** A sentence as a key: lower case, no stresses, no punctuation at its ends but the question mark: Hay una lámpara. and ¿Hay una lámpara? are two sentences, with two Englishes. */
+export const keyOf = (s: string): string => plain(s).toLowerCase().replace(/^[\s¿¡"'“”]+|[\s.!"'“”]+$/g, '');
 
 /** The first letter of `w` in the case of `like`'s first letter. */
 export const caseLike = (w: string, like: string): string =>

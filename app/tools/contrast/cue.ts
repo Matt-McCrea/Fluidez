@@ -78,6 +78,17 @@ export function score(deck: ContrastItem[]): Scores {
   return { n: deck.length, cue: cue / Math.max(1, deck.length), commoner: commoner / Math.max(1, deck.length), byItem };
 }
 
+/**
+ * Where a deck of choices leans: each pair of options asked more than once, how often it is asked and how often its commoner answer is the
+ * right one. `score` holds a deck to the Cue Test as a whole, and a pair asked once counts there as always right; this is the plain
+ * count, pair by pair, for any deck a learner taps through: a pair whose answer never changes is passed by tapping that word.
+ */
+export function leaning(deck: ContrastItem[]): Array<{ pair: string; n: number; top: number }> {
+  const pairs = new Map<string, Count>();
+  for (const r of deck) bump(pairs, setOf(r), answerOf(r));
+  return [...pairs].map(([pair, c]) => ({ pair, n: [...c.values()].reduce((a, b) => a + b, 0), top: Math.max(...c.values()) })).filter((p) => p.n > 1);
+}
+
 /** Scores pooled over decks, each scored within itself and weighted by its items. */
 export function pooled(decks: ContrastItem[][]): Omit<Scores, 'byItem'> {
   const all = decks.map(score);

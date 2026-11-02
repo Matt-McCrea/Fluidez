@@ -18,7 +18,7 @@
         "Dejé de ir"
       ],
       "answer": 0,
-      "why": "The English says \"I still go to the gym.\", so the gap is Sigo yendo.",
+      "why": "The English says \"I still go to the gym.\", so it's Sigo yendo.",
       "requires": [
         "g:gender-articles",
         "g:gerund-ways",
@@ -46,7 +46,7 @@
         "Dejé de ir"
       ],
       "answer": 1,
-      "why": "The English says \"I stopped going to the gym.\", so the gap is Dejé de ir.",
+      "why": "The English says \"I stopped going to the gym.\", so it's Dejé de ir.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",

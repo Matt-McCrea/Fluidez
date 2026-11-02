@@ -18,7 +18,7 @@
         "Me consta"
       ],
       "answer": 0,
-      "why": "The English says \"I could swear Vale locked the door.\", so the gap is Juraría.",
+      "why": "The English says \"I could swear Vale locked the door.\", so it's Juraría.",
       "requires": [
         "g:conditional",
         "g:gender-articles",
@@ -47,7 +47,7 @@
         "Me consta"
       ],
       "answer": 1,
-      "why": "The English says \"I know for a fact that Vale locked the door.\", so the gap is Me consta.",
+      "why": "The English says \"I know for a fact that Vale locked the door.\", so it's Me consta.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",

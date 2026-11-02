@@ -96,7 +96,7 @@
         "esté"
       ],
       "answer": 1,
-      "why": "The English says \"I doubt Vale is in the kitchen.\", so the gap is esté.",
+      "why": "The English says \"I doubt Vale is in the kitchen.\", so it's esté.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -125,7 +125,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"The café might be open.\", so the gap is esté.",
+      "why": "The English says \"The café might be open.\", so it's esté.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",

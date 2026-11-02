@@ -100,7 +100,7 @@
         "ayudara"
       ],
       "answer": 0,
-      "why": "The English says \"Hernando wants me to help him.\", so the gap is ayude.",
+      "why": "The English says \"Hernando wants me to help him.\", so it's ayude.",
       "requires": [
         "g:indirect-objects",
         "g:stem-boot",
@@ -126,7 +126,7 @@
         "ayude"
       ],
       "answer": 0,
-      "why": "The English says \"Did you want me to help you?\", so the gap is ayudara.",
+      "why": "The English says \"Did you want me to help you?\", so it's ayudara.",
       "requires": [
         "g:imperfect-habitual",
         "g:imperfect-subj",

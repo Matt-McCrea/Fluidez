@@ -18,7 +18,7 @@
         "va a llover"
       ],
       "answer": 1,
-      "why": "The English says \"It's going to rain tomorrow.\", so the gap is va a llover.",
+      "why": "The English says \"It's going to rain tomorrow.\", so it's va a llover.",
       "requires": [
         "g:ir-a-plans",
         "l:ir",
@@ -42,7 +42,7 @@
         "va a llover"
       ],
       "answer": 0,
-      "why": "The English says \"It will rain tomorrow.\", so the gap is lloverá.",
+      "why": "The English says \"It will rain tomorrow.\", so it's lloverá.",
       "requires": [
         "g:future-promises",
         "l:llover",
@@ -65,7 +65,7 @@
         "llamaré"
       ],
       "answer": 1,
-      "why": "The English says \"I'll call you.\", so the gap is llamaré.",
+      "why": "The English says \"I'll call you.\", so it's llamaré.",
       "requires": [
         "g:future-promises",
         "l:llamar",
@@ -88,7 +88,7 @@
         "llamaré"
       ],
       "answer": 0,
-      "why": "The English says \"I'm going to call you.\", so the gap is voy a llamar.",
+      "why": "The English says \"I'm going to call you.\", so it's voy a llamar.",
       "requires": [
         "c:voy-a",
         "g:ir-a-plans",
@@ -113,7 +113,7 @@
         "voy a decir"
       ],
       "answer": 0,
-      "why": "The English says \"I won't say anything.\", so the gap is diré.",
+      "why": "The English says \"I won't say anything.\", so it's diré.",
       "requires": [
         "g:future-promises",
         "g:negation-words",
@@ -136,7 +136,7 @@
         "voy a decir"
       ],
       "answer": 1,
-      "why": "The English says \"I'm not going to say anything.\", so the gap is voy a decir.",
+      "why": "The English says \"I'm not going to say anything.\", so it's voy a decir.",
       "requires": [
         "c:voy-a",
         "g:ir-a-plans",

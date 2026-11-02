@@ -18,7 +18,7 @@
         "Estaría"
       ],
       "answer": 1,
-      "why": "The English says \"He was probably at home.\", so the gap is Estaría.",
+      "why": "The English says \"He was probably at home.\", so it's Estaría.",
       "requires": [
         "g:conditional",
         "g:estar-location-states",
@@ -102,31 +102,6 @@
       ]
     },
     {
-      "id": "x:future-guess-present-past#g.future-conjecture.pf3",
-      "node": "x:future-guess-present-past",
-      "side": "g:future-conjecture",
-      "rung": 1,
-      "en": "Simón is probably nearby.",
-      "es": "Simón estará cerca.",
-      "gap": [
-        6,
-        12
-      ],
-      "options": [
-        "estará",
-        "estara"
-      ],
-      "answer": 0,
-      "why": "The accent is part of the ending: estará, stressed at the end.",
-      "requires": [
-        "g:estar-location-states",
-        "g:future-conjecture",
-        "l:cerca",
-        "l:estar",
-        "p:cerca-de"
-      ]
-    },
-    {
       "id": "x:future-guess-present-past#g.future-conjecture.rp6",
       "node": "x:future-guess-present-past",
       "side": "g:future-conjecture",
@@ -142,7 +117,7 @@
         "estará"
       ],
       "answer": 1,
-      "why": "The English says \"Where can Simón be?\", so the gap is estará.",
+      "why": "The English says \"Where can Simón be?\", so it's estará.",
       "requires": [
         "g:estar-location-states",
         "g:future-conjecture",

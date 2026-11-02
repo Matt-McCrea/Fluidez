@@ -44,6 +44,24 @@ export const DECIDES: ReadonlyMap<string, ContrastDecides> = new Map([
 ]);
 
 /**
+ * What the derive tool finds and a person has read and ruled out, by item id: the place it would gap is not the decision, or the
+ * English is not the sentence's. No test of the shape of a card can see these.
+ */
+export const RULED_OUT: ReadonlySet<string> = new Set([
+  // la the article, in a sentence whose pronoun is another word: "Los vi en ___ parada", with le to choose from
+  'x:lo-le#rp5', 'x:lo-le#rp7', 'x:lo-le#g.indirect-objects.rp1', 'x:lo-le#g.indirect-objects.rp5',
+  // me against nos, in sentences whose verb has already said who: person agreement, and nothing to do with ir and irse
+  'x:ir-irse#pf1', 'x:ir-irse#rp1', 'x:ir-irse#g.se-meaning-change.rp3', 'x:ir-irse#g.se-meaning-change.rp5',
+  // nothing on the card says who is being told, so both commands are right: "Come tomorrow." with ven and venga to choose from
+  'x:commands-tu-usted#g.commands-tu.rp0', 'x:commands-tu-usted#g.commands-tu.yt2', 'x:commands-tu-usted#g.commands-usted.yt3',
+  // the right answer of a question about the sentence, not its English: "No vivo en Chapinero, sino en Usaquén." and "I live in Usaquén."
+  'x:pero-sino#rp3', 'x:pero-sino#rp7', 'x:pero-sino#g.pero-sino.rp3', 'x:pero-sino#g.pero-sino.rp4', 'x:pero-sino#g.pero-sino.rp5',
+  'x:pero-sino#g.pero-sino.rp6', 'x:pero-sino#g.pero-sino.rp7',
+  // the English of one half of it: "Si tuviera plata, viajaría más." and "I'd travel more."
+  'x:si-past-present-unreal#g.si-hypothetical.yt1',
+]);
+
+/**
  * The contrasts the course returns to most: the graph's "Big five" (aspect, ser and estar, por and para, mood after
  * creer) and lo/le, which the unit map re-drills on as many review days as por and para. R11 starts them at 150 items
  * and the rest at 40, then measures.

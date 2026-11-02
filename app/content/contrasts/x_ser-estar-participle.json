@@ -30,6 +30,58 @@
       ]
     },
     {
+      "id": "x:ser-estar-participle#pf2",
+      "node": "x:ser-estar-participle",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The dishes are washed.",
+      "es": "Los platos están lavados.",
+      "gap": [
+        17,
+        24
+      ],
+      "options": [
+        "lavados",
+        "lavado"
+      ],
+      "answer": 0,
+      "why": "The ending still agrees with what it describes, with ser or estar.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:estar",
+        "l:lavar",
+        "l:plato"
+      ]
+    },
+    {
+      "id": "x:ser-estar-participle#pf3",
+      "node": "x:ser-estar-participle",
+      "side": "g:estar-participle",
+      "rung": 1,
+      "en": "The letter is signed.",
+      "es": "La carta está firmada.",
+      "gap": [
+        9,
+        13
+      ],
+      "options": [
+        "es",
+        "está"
+      ],
+      "answer": 1,
+      "why": "For the result as it is now, use está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:estar-participle",
+        "g:gender-articles",
+        "l:carta",
+        "l:estar",
+        "l:firmar"
+      ]
+    },
+    {
       "id": "x:ser-estar-participle#rp0",
       "node": "x:ser-estar-participle",
       "side": "g:passive-ser",
@@ -97,7 +149,7 @@
         "Fue"
       ],
       "answer": 0,
-      "why": "The English says \"Was the bakery open?\", so the gap is Estaba.",
+      "why": "The English says \"Was the bakery open?\", so it's Estaba.",
       "requires": [
         "g:estar-participle",
         "g:gender-articles",

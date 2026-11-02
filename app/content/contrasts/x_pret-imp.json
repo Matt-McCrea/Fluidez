@@ -18,7 +18,7 @@
         "Comí"
       ],
       "answer": 0,
-      "why": "The English says \"I used to eat at two.\", so the gap is Comía.",
+      "why": "The English says \"I used to eat at two.\", so it's Comía.",
       "requires": [
         "g:gender-articles",
         "g:imperfect-habitual",
@@ -42,7 +42,7 @@
         "Comí"
       ],
       "answer": 1,
-      "why": "The English says \"I ate at two.\", so the gap is Comí.",
+      "why": "The English says \"I ate at two.\", so it's Comí.",
       "requires": [
         "c:comi",
         "g:gender-articles",
@@ -67,7 +67,7 @@
         "Fui"
       ],
       "answer": 0,
-      "why": "The English says \"I used to go to the beach.\", so the gap is Iba.",
+      "why": "The English says \"I used to go to the beach.\", so it's Iba.",
       "requires": [
         "g:gender-articles",
         "g:imperfect-habitual",
@@ -92,7 +92,7 @@
         "Fui"
       ],
       "answer": 1,
-      "why": "The English says \"I went to the beach.\", so the gap is Fui.",
+      "why": "The English says \"I went to the beach.\", so it's Fui.",
       "requires": [
         "c:fui",
         "g:gender-articles",
@@ -118,7 +118,7 @@
         "cerró"
       ],
       "answer": 0,
-      "why": "The English says \"Rosa used to close the café at six.\", so the gap is cerraba.",
+      "why": "The English says \"Rosa used to close the café at six.\", so it's cerraba.",
       "requires": [
         "g:gender-articles",
         "g:imperfect-habitual",
@@ -143,7 +143,7 @@
         "cerró"
       ],
       "answer": 1,
-      "why": "The English says \"Rosa closed the café at six that day.\", so the gap is cerró.",
+      "why": "The English says \"Rosa closed the café at six that day.\", so it's cerró.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -168,7 +168,7 @@
         "Comía"
       ],
       "answer": 0,
-      "why": "The English says \"I ate an arepa.\", so the gap is Comí.",
+      "why": "The English says \"I ate an arepa.\", so it's Comí.",
       "requires": [
         "c:comi",
         "g:gender-articles",
@@ -193,7 +193,7 @@
         "Comía"
       ],
       "answer": 1,
-      "why": "The English says \"I used to eat arepas.\", so the gap is Comía.",
+      "why": "The English says \"I used to eat arepas.\", so it's Comía.",
       "requires": [
         "g:imperfect-habitual",
         "l:arepa",

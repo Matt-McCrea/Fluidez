@@ -18,7 +18,7 @@
         "probarla con ustedes"
       ],
       "answer": 0,
-      "why": "The English says \"I'm bringing the cake so you all can try it.\", so the gap is que la prueben.",
+      "why": "The English says \"I'm bringing the cake so you all can try it.\", so it's que la prueben.",
       "requires": [
         "g:direct-objects",
         "g:gender-articles",
@@ -47,7 +47,7 @@
         "probarla con ustedes"
       ],
       "answer": 1,
-      "why": "The English says \"I'm bringing the cake to try it with you all.\", so the gap is probarla con ustedes.",
+      "why": "The English says \"I'm bringing the cake to try it with you all.\", so it's probarla con ustedes.",
       "requires": [
         "g:direct-objects",
         "g:gender-articles",

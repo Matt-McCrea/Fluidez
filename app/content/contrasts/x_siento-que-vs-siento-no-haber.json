@@ -18,7 +18,7 @@
         "haber"
       ],
       "answer": 0,
-      "why": "The English says \"I'm sorry you were late.\", so the gap is que hayas.",
+      "why": "The English says \"I'm sorry you were late.\", so it's que hayas.",
       "requires": [
         "g:stem-boot",
         "g:subj-emotion",

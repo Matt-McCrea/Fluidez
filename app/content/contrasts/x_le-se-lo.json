@@ -66,7 +66,7 @@
         "Se"
       ],
       "answer": 0,
-      "why": "The English says \"I gave him the money.\", so the gap is Le.",
+      "why": "The English says \"I gave him the money.\", so it's Le.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -91,7 +91,7 @@
         "Se"
       ],
       "answer": 1,
-      "why": "The English says \"I gave it to him.\", so the gap is Se.",
+      "why": "The English says \"I gave it to him.\", so it's Se.",
       "requires": [
         "g:double-pronouns",
         "g:preterite-irregular-strong",
@@ -114,7 +114,7 @@
         "Le"
       ],
       "answer": 0,
-      "why": "The English says \"I gave it to her, not to him.\", so the gap is Se.",
+      "why": "The English says \"I gave it to her, not to him.\", so it's Se.",
       "requires": [
         "g:double-pronouns",
         "g:preterite-irregular-strong",
@@ -137,7 +137,7 @@
         "Les"
       ],
       "answer": 1,
-      "why": "The English says \"I showed them the chairs.\", so the gap is Les.",
+      "why": "The English says \"I showed them the chairs.\", so it's Les.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -162,7 +162,7 @@
         "Se"
       ],
       "answer": 1,
-      "why": "The English says \"I'll give it to you. (formal)\", so the gap is Se.",
+      "why": "The English says \"I'll give it to you. (formal)\", so it's Se.",
       "requires": [
         "g:double-pronouns",
         "g:yo-irregular",
@@ -185,7 +185,7 @@
         "Le"
       ],
       "answer": 0,
-      "why": "The English says \"Shall I show it to you? (formal)\", so the gap is Se.",
+      "why": "The English says \"Shall I show it to you? (formal)\", so it's Se.",
       "requires": [
         "g:double-pronouns",
         "g:stem-boot",
@@ -208,7 +208,7 @@
         "Se"
       ],
       "answer": 1,
-      "why": "The English says \"And Mariana? I asked her yesterday.\", so the gap is Se.",
+      "why": "The English says \"And Mariana? I asked her yesterday.\", so it's Se.",
       "requires": [
         "c:ayer-anoche",
         "g:double-pronouns",
@@ -216,29 +216,6 @@
         "l:ayer",
         "l:preguntar",
         "p:preguntar-pedir"
-      ]
-    },
-    {
-      "id": "x:le-se-lo#rp8",
-      "node": "x:le-se-lo",
-      "side": "g:double-pronouns",
-      "rung": 1,
-      "en": "I already paid it to him.",
-      "es": "Ya se lo pagué.",
-      "gap": [
-        3,
-        5
-      ],
-      "options": [
-        "se",
-        "le"
-      ],
-      "answer": 0,
-      "why": "The English says \"I already paid it to him.\", so the gap is se.",
-      "requires": [
-        "g:double-pronouns",
-        "g:preterite-spelling-stem",
-        "l:pagar"
       ]
     },
     {
@@ -282,7 +259,7 @@
         "Se"
       ],
       "answer": 0,
-      "why": "The English says \"I gave him the map.\", so the gap is Le.",
+      "why": "The English says \"I gave him the map.\", so it's Le.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -307,7 +284,7 @@
         "Les"
       ],
       "answer": 1,
-      "why": "The English says \"I explained the route to them.\", so the gap is Les.",
+      "why": "The English says \"I explained the route to them.\", so it's Les.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -332,38 +309,13 @@
         "Se"
       ],
       "answer": 0,
-      "why": "The English says \"Shall I explain the route to you? (formal)\", so the gap is Le.",
+      "why": "The English says \"Shall I explain the route to you? (formal)\", so it's Le.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
         "g:present-ar",
         "l:explicar",
         "l:ruta"
-      ]
-    },
-    {
-      "id": "x:le-se-lo#g.indirect-objects.rp6",
-      "node": "x:le-se-lo",
-      "side": "g:indirect-objects",
-      "rung": 1,
-      "en": "What did you say to them?",
-      "es": "¿Qué les dijiste?",
-      "gap": [
-        5,
-        8
-      ],
-      "options": [
-        "les",
-        "se"
-      ],
-      "answer": 0,
-      "why": "The English says \"What did you say to them?\", so the gap is les.",
-      "requires": [
-        "g:indirect-objects",
-        "g:preterite-irregular-strong",
-        "g:questions",
-        "l:decir",
-        "l:qué"
       ]
     },
     {
@@ -382,39 +334,13 @@
         "Le"
       ],
       "answer": 1,
-      "why": "The English says \"I'll give her the address.\", so the gap is Le.",
+      "why": "The English says \"I'll give her the address.\", so it's Le.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
         "g:yo-irregular",
         "l:dar",
         "l:dirección"
-      ]
-    },
-    {
-      "id": "x:le-se-lo#g.double-pronouns.rp5",
-      "node": "x:le-se-lo",
-      "side": "g:double-pronouns",
-      "rung": 1,
-      "en": "The bill? I gave it to don Hernando.",
-      "es": "¿La cuenta? Se la di a don Hernando.",
-      "gap": [
-        12,
-        14
-      ],
-      "options": [
-        "Se",
-        "Le"
-      ],
-      "answer": 0,
-      "why": "The English says \"The bill? I gave it to don Hernando.\", so the gap is Se.",
-      "requires": [
-        "c:la-cuenta",
-        "g:double-pronouns",
-        "g:preterite-irregular-strong",
-        "l:cuenta",
-        "l:dar",
-        "p:senor-don-article"
       ]
     }
   ]

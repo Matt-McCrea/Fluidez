@@ -18,7 +18,7 @@
         "cansada"
       ],
       "answer": 0,
-      "why": "The English says \"I've been tired. (a man speaking)\", so the gap is cansado.",
+      "why": "The English says \"I've been tired. (a man speaking)\", so it's cansado.",
       "requires": [
         "g:perfecto-experience",
         "l:cansado",
@@ -41,7 +41,7 @@
         "cansada"
       ],
       "answer": 1,
-      "why": "The English says \"I've been tired. (a woman speaking)\", so the gap is cansada.",
+      "why": "The English says \"I've been tired. (a woman speaking)\", so it's cansada.",
       "requires": [
         "g:adjective-agreement",
         "g:perfecto-experience",
@@ -165,7 +165,7 @@
         "lavado"
       ],
       "answer": 0,
-      "why": "The English says \"The cups are washed.\", so the gap is lavadas.",
+      "why": "The English says \"The cups are washed.\", so it's lavadas.",
       "requires": [
         "g:estar-location-states",
         "g:estar-participle",
@@ -191,7 +191,7 @@
         "abierta"
       ],
       "answer": 1,
-      "why": "The English says \"The chemist's is open now.\", so the gap is abierta.",
+      "why": "The English says \"The chemist's is open now.\", so it's abierta.",
       "requires": [
         "c:abierto-cerrado",
         "g:estar-participle",
@@ -199,32 +199,6 @@
         "l:abrir",
         "l:droguería",
         "l:estar"
-      ]
-    },
-    {
-      "id": "x:participle-agreement#rp6",
-      "node": "x:participle-agreement",
-      "side": "g:perfecto-experience",
-      "rung": 1,
-      "en": "Have you been ill this year? (to a man friend)",
-      "es": "¿Has estado enfermo este año?",
-      "gap": [
-        5,
-        11
-      ],
-      "options": [
-        "estado",
-        "estada"
-      ],
-      "answer": 0,
-      "why": "The English says \"Have you been ill this year? (to a man friend)\", so the gap is estado.",
-      "requires": [
-        "c:has-estado",
-        "g:perfecto-experience",
-        "l:año",
-        "l:enfermo",
-        "l:estar",
-        "p:demonstratives-basic"
       ]
     },
     {
@@ -243,7 +217,7 @@
         "cerradas"
       ],
       "answer": 1,
-      "why": "The English says \"The shops (las tiendas) are closed.\", so the gap is cerradas.",
+      "why": "The English says \"The shops (las tiendas) are closed.\", so it's cerradas.",
       "requires": [
         "g:estar-location-states",
         "g:estar-participle",
@@ -267,79 +241,12 @@
         "cerradas"
       ],
       "answer": 0,
-      "why": "The English says \"I've closed the door.\", so the gap is cerrado.",
+      "why": "The English says \"I've closed the door.\", so it's cerrado.",
       "requires": [
         "g:gender-articles",
         "g:perfecto-experience",
         "l:cerrar",
         "l:puerta"
-      ]
-    },
-    {
-      "id": "x:participle-agreement#g.perfecto-experience.yt5",
-      "node": "x:participle-agreement",
-      "side": "g:perfecto-experience",
-      "rung": 1,
-      "en": "Have you been to Cartagena?",
-      "es": "¿Usted ha estado en Cartagena?",
-      "gap": [
-        10,
-        16
-      ],
-      "options": [
-        "estado",
-        "estada"
-      ],
-      "answer": 0,
-      "why": "With usted, the helper is ha, the same as for he or she.",
-      "requires": [
-        "g:perfecto-experience",
-        "l:estar"
-      ]
-    },
-    {
-      "id": "x:participle-agreement#g.perfecto-experience.rp2",
-      "node": "x:participle-agreement",
-      "side": "g:perfecto-experience",
-      "rung": 1,
-      "en": "We've been to Medellín twice.",
-      "es": "Hemos estado en Medellín dos veces.",
-      "gap": [
-        6,
-        12
-      ],
-      "options": [
-        "estado",
-        "estada"
-      ],
-      "answer": 0,
-      "why": "The English says \"We've been to Medellín twice.\", so the gap is estado.",
-      "requires": [
-        "g:perfecto-experience",
-        "l:estar",
-        "l:vez"
-      ]
-    },
-    {
-      "id": "x:participle-agreement#g.perfecto-experience.rp6",
-      "node": "x:participle-agreement",
-      "side": "g:perfecto-experience",
-      "rung": 1,
-      "en": "Have you all been to Leticia?",
-      "es": "¿Ustedes han estado en Leticia?",
-      "gap": [
-        13,
-        19
-      ],
-      "options": [
-        "estado",
-        "estada"
-      ],
-      "answer": 0,
-      "why": "The English says \"Have you all been to Leticia?\", so the gap is estado.",
-      "requires": [
-        "g:perfecto-experience",
-        "l:estar"
       ]
     }
   ]

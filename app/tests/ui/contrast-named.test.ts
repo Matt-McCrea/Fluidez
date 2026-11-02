@@ -31,15 +31,17 @@ describe('a lapse on a contrast, in "Before you go"', () => {
     const known = knownSet(learner, bundle.course);
     const items = eligibleContrast(bundle, x, known);
     expect(items.length).toBeGreaterThan(3);
-    const missed = items[0].id;
-    const [it] = recap(learner, [{ node: x, direction: 'productive', contrast: missed }]);
-    expect(it.kind).toBe('lapsed');
-    expect(it.contrast).toBeDefined();
-    expect(it.contrast).not.toBe(missed);
-    expect(items.map((i) => i.id)).toContain(it.contrast);
-    const card = recapCard(it, bundle);
-    expect(card.type).not.toBe('read');
-    expect(card.key).toBe(it.id);
+    // whichever it was: one missed item could miss the rule by luck
+    for (const { id: missed } of items) {
+      const [it] = recap(learner, [{ node: x, direction: 'productive', contrast: missed }]);
+      expect(it.kind).toBe('lapsed');
+      expect(it.contrast).toBeDefined();
+      expect(it.contrast).not.toBe(missed);
+      expect(items.map((i) => i.id)).toContain(it.contrast);
+      const card = recapCard(it, bundle);
+      expect(card.type).not.toBe('read');
+      expect(card.key).toBe(it.id);
+    }
   });
 
   it('never names an item the learner cannot be shown: one that needs a word not yet taught waits', async () => {

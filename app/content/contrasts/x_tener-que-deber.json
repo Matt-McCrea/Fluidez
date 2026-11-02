@@ -18,7 +18,7 @@
         "tienes que"
       ],
       "answer": 1,
-      "why": "The English says \"You don't have to come.\", so the gap is tienes que.",
+      "why": "The English says \"You don't have to come.\", so it's tienes que.",
       "requires": [
         "c:tienes",
         "g:stem-boot",
@@ -43,7 +43,7 @@
         "tienes que"
       ],
       "answer": 0,
-      "why": "The English says \"You must not come.\", so the gap is debes.",
+      "why": "The English says \"You must not come.\", so it's debes.",
       "requires": [
         "g:present-er-ir",
         "g:tener-que-hay-que",
@@ -92,7 +92,7 @@
         "Debes"
       ],
       "answer": 0,
-      "why": "The English says \"You have to rest.\", so the gap is Tienes.",
+      "why": "The English says \"You have to rest.\", so it's Tienes.",
       "requires": [
         "c:tienes",
         "g:stem-boot",
@@ -117,7 +117,7 @@
         "debes"
       ],
       "answer": 0,
-      "why": "The English says \"You don't have to eat that.\", so the gap is tienes.",
+      "why": "The English says \"You don't have to eat that.\", so it's tienes.",
       "requires": [
         "c:tienes",
         "g:stem-boot",
@@ -143,7 +143,7 @@
         "debes"
       ],
       "answer": 1,
-      "why": "The English says \"You mustn't pay.\", so the gap is debes.",
+      "why": "The English says \"You mustn't pay.\", so it's debes.",
       "requires": [
         "g:present-er-ir",
         "g:tener-que-hay-que",
@@ -194,7 +194,7 @@
         "Tienes"
       ],
       "answer": 0,
-      "why": "The English says \"You should rest more.\", so the gap is Debes.",
+      "why": "The English says \"You should rest more.\", so it's Debes.",
       "requires": [
         "g:present-er-ir",
         "g:tener-que-hay-que",

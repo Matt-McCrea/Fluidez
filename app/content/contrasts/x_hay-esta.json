@@ -18,7 +18,7 @@
         "El parqueadero está"
       ],
       "answer": 0,
-      "why": "The English says \"There's a car park nearby.\", so the gap is Hay un parqueadero.",
+      "why": "The English says \"There's a car park nearby.\", so it's Hay un parqueadero.",
       "requires": [
         "c:hay",
         "g:gender-articles",
@@ -43,7 +43,7 @@
         "El parqueadero está"
       ],
       "answer": 1,
-      "why": "The English says \"The car park is nearby.\", so the gap is El parqueadero está.",
+      "why": "The English says \"The car park is nearby.\", so it's El parqueadero está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -69,7 +69,7 @@
         "Están los"
       ],
       "answer": 0,
-      "why": "The English says \"Are there neighbours in the courtyard?\", so the gap is Hay.",
+      "why": "The English says \"Are there neighbours in the courtyard?\", so it's Hay.",
       "requires": [
         "c:hay",
         "g:gender-articles",
@@ -94,7 +94,7 @@
         "Están los"
       ],
       "answer": 1,
-      "why": "The English says \"Are the neighbours in the courtyard?\", so the gap is Están los.",
+      "why": "The English says \"Are the neighbours in the courtyard?\", so it's Están los.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -144,7 +144,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"There's no shop on this street.\", so the gap is hay.",
+      "why": "The English says \"There's no shop on this street.\", so it's hay.",
       "requires": [
         "c:hay",
         "g:hay-vs-esta",
@@ -169,7 +169,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"The shop isn't on this street.\", so the gap is está.",
+      "why": "The English says \"The shop isn't on this street.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -180,12 +180,12 @@
       ]
     },
     {
-      "id": "x:hay-esta#g.hay-vs-esta.yt0",
+      "id": "x:hay-esta#rp6",
       "node": "x:hay-esta",
       "side": "g:hay-vs-esta",
-      "rung": 2,
-      "en": "Is there a lamp in the room?",
-      "es": "Hay una lámpara en el cuarto.",
+      "rung": 1,
+      "en": "There are three banks downtown.",
+      "es": "Hay tres bancos en el centro.",
       "gap": [
         0,
         3
@@ -195,7 +195,130 @@
         "Está"
       ],
       "answer": 0,
-      "why": "Una lamp is new to the conversation, so hay.",
+      "why": "The English says \"There are three banks downtown.\", so it's Hay.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "l:banco",
+        "l:centro"
+      ]
+    },
+    {
+      "id": "x:hay-esta#rp7",
+      "node": "x:hay-esta",
+      "side": "g:estar-location-states",
+      "rung": 1,
+      "en": "Hernando isn't in the café.",
+      "es": "Hernando no está en el café.",
+      "gap": [
+        12,
+        16
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"Hernando isn't in the café.\", so it's está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:café",
+        "l:estar"
+      ]
+    },
+    {
+      "id": "x:hay-esta#g.hay-vs-esta.rp2",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "There are two beds in the room.",
+      "es": "Hay dos camas en el cuarto.",
+      "gap": [
+        0,
+        3
+      ],
+      "options": [
+        "Está",
+        "Hay"
+      ],
+      "answer": 1,
+      "why": "The English says \"There are two beds in the room.\", so it's Hay.",
+      "requires": [
+        "c:hay",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "l:cama"
+      ]
+    },
+    {
+      "id": "x:hay-esta#g.hay-vs-esta.rp3",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "Is there a chemist's around here?",
+      "es": "¿Hay una droguería por acá?",
+      "gap": [
+        1,
+        4
+      ],
+      "options": [
+        "Hay",
+        "Está"
+      ],
+      "answer": 0,
+      "why": "The English says \"Is there a chemist's around here?\", so it's Hay.",
+      "requires": [
+        "c:hay",
+        "c:por-aca",
+        "g:gender-articles",
+        "g:hay-vs-esta",
+        "l:acá",
+        "l:droguería"
+      ]
+    },
+    {
+      "id": "x:hay-esta#g.hay-vs-esta.rp4",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "The lamp isn't in the room.",
+      "es": "La lámpara no está en el cuarto.",
+      "gap": [
+        14,
+        18
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 1,
+      "why": "The English says \"The lamp isn't in the room.\", so it's está.",
+      "requires": [
+        "g:estar-location-states",
+        "g:gender-articles",
+        "l:estar",
+        "l:lámpara"
+      ]
+    },
+    {
+      "id": "x:hay-esta#g.hay-vs-esta.rp5",
+      "node": "x:hay-esta",
+      "side": "g:hay-vs-esta",
+      "rung": 1,
+      "en": "There's no lamp in the room.",
+      "es": "No hay lámpara en el cuarto.",
+      "gap": [
+        3,
+        6
+      ],
+      "options": [
+        "hay",
+        "está"
+      ],
+      "answer": 0,
+      "why": "The English says \"There's no lamp in the room.\", so it's hay.",
       "requires": [
         "c:hay",
         "g:gender-articles",

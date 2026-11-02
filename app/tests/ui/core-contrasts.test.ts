@@ -10,8 +10,8 @@ const DIR = join(__dirname, '../../content/contrasts');
 const nodes = readdirSync(DIR).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, '').replace('_', ':'));
 
 describe('the contrasts\' own items are core content', () => {
-  it('the course has a file for nearly every contrast', () => {
-    expect(nodes.length).toBeGreaterThanOrEqual(90);
+  it('the course has a file for every contrast', () => {
+    expect(nodes).toHaveLength(94);
   });
 
   for (const unit of [0, 59]) {
@@ -19,9 +19,10 @@ describe('the contrasts\' own items are core content', () => {
       const b = await new ContentLoader().load({ unit });
       for (const node of nodes) {
         expect(b.contrasts.has(node), node).toBe(true);
-        expect(b.index.contrasts.get(node)?.length, node).toBe(b.contrastItems(node).length);
-        expect(b.contrastItems(node).length, node).toBeGreaterThan(0);
+        expect(b.index.contrasts.get(node)?.length ?? 0, node).toBe(b.contrastItems(node).length);
       }
+      // all but a few have items to ask: the rest are reviewed and trained from their script, in the form their file says
+      expect(nodes.filter((n) => !b.contrastItems(n).length).length).toBeLessThanOrEqual(5);
       // each item by its id
       const some = b.contrastItems('x:por-para')[0];
       expect(b.contrastItem(some.id)).toBe(some);

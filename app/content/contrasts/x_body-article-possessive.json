@@ -120,7 +120,7 @@
         "mi"
       ],
       "answer": 0,
-      "why": "The English says \"I wash your hair.\", so the gap is el.",
+      "why": "The English says \"I wash your hair.\", so it's el.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -146,7 +146,7 @@
         "las"
       ],
       "answer": 1,
-      "why": "The English says \"Your hands are cold.\", so the gap is las.",
+      "why": "The English says \"Your hands are cold.\", so it's las.",
       "requires": [
         "c:tienes",
         "g:gender-articles",
@@ -172,7 +172,7 @@
         "la"
       ],
       "answer": 1,
-      "why": "The English says \"Did you wash your face? (to a friend)\", so the gap is la.",
+      "why": "The English says \"Did you wash your face? (to a friend)\", so it's la.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -209,57 +209,6 @@
       ]
     },
     {
-      "id": "x:body-article-possessive#p.lavarse-las-manos.yt6",
-      "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
-      "rung": 1,
-      "en": "I try the jacket on.",
-      "es": "Me pruebo la chaqueta.",
-      "gap": [
-        10,
-        12
-      ],
-      "options": [
-        "mi",
-        "la"
-      ],
-      "answer": 1,
-      "why": "Clothes you put on work like body parts: me plus la chaqueta.",
-      "requires": [
-        "g:gender-articles",
-        "g:reflexive-routine",
-        "g:stem-boot",
-        "l:chaqueta",
-        "l:probarse"
-      ]
-    },
-    {
-      "id": "x:body-article-possessive#p.lavarse-las-manos.rp0",
-      "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
-      "rung": 1,
-      "en": "You wash your hair. (to a friend)",
-      "es": "Te lavas el pelo.",
-      "gap": [
-        9,
-        11
-      ],
-      "options": [
-        "el",
-        "mi"
-      ],
-      "answer": 0,
-      "why": "The English says \"You wash your hair. (to a friend)\", so the gap is el.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-ar",
-        "g:reflexive-routine",
-        "l:lavarse",
-        "l:pelo",
-        "p:lavarse-las-manos"
-      ]
-    },
-    {
       "id": "x:body-article-possessive#p.lavarse-las-manos.rp2",
       "node": "x:body-article-possessive",
       "side": "p:lavarse-las-manos",
@@ -275,41 +224,13 @@
         "mi"
       ],
       "answer": 0,
-      "why": "The English says \"Vale washes her face.\", so the gap is la.",
+      "why": "The English says \"Vale washes her face.\", so it's la.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
         "g:reflexive-routine",
         "l:cara",
         "l:lavarse",
-        "p:lavarse-las-manos"
-      ]
-    },
-    {
-      "id": "x:body-article-possessive#p.lavarse-las-manos.rp3",
-      "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
-      "rung": 1,
-      "en": "We wash our hands with soap.",
-      "es": "Nos lavamos las manos con jabón.",
-      "gap": [
-        12,
-        15
-      ],
-      "options": [
-        "mis",
-        "las"
-      ],
-      "answer": 1,
-      "why": "The English says \"We wash our hands with soap.\", so the gap is las.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-ar",
-        "g:reflexive-routine",
-        "l:jabón",
-        "l:lavarse",
-        "l:mano",
-        "p:con-sin",
         "p:lavarse-las-manos"
       ]
     },
@@ -329,62 +250,10 @@
         "sus"
       ],
       "answer": 0,
-      "why": "The English says \"I brush my teeth.\", so the gap is los.",
+      "why": "The English says \"I brush my teeth.\", so it's los.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
-        "g:reflexive-routine",
-        "l:diente",
-        "l:lavarse",
-        "p:lavarse-las-manos"
-      ]
-    },
-    {
-      "id": "x:body-article-possessive#p.lavarse-las-manos.rp5",
-      "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
-      "rung": 1,
-      "en": "They wash their hands.",
-      "es": "Se lavan las manos.",
-      "gap": [
-        9,
-        12
-      ],
-      "options": [
-        "mis",
-        "las"
-      ],
-      "answer": 1,
-      "why": "The English says \"They wash their hands.\", so the gap is las.",
-      "requires": [
-        "g:gender-articles",
-        "g:present-ar",
-        "g:reflexive-routine",
-        "l:lavarse",
-        "l:mano",
-        "p:lavarse-las-manos"
-      ]
-    },
-    {
-      "id": "x:body-article-possessive#p.lavarse-las-manos.rp6",
-      "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
-      "rung": 1,
-      "en": "Did you brush your teeth? (to a friend)",
-      "es": "¿Te lavaste los dientes?",
-      "gap": [
-        12,
-        15
-      ],
-      "options": [
-        "los",
-        "sus"
-      ],
-      "answer": 0,
-      "why": "The English says \"Did you brush your teeth? (to a friend)\", so the gap is los.",
-      "requires": [
-        "g:gender-articles",
-        "g:preterite-ar",
         "g:reflexive-routine",
         "l:diente",
         "l:lavarse",
@@ -431,7 +300,7 @@
         "Las"
       ],
       "answer": 0,
-      "why": "The English says \"My eyes are dark.\", so the gap is Mis.",
+      "why": "The English says \"My eyes are dark.\", so it's Mis.",
       "requires": [
         "g:adjective-agreement",
         "g:ser-identity",
@@ -457,7 +326,7 @@
         "sus"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando talks about his grandchildren.\", so the gap is sus.",
+      "why": "The English says \"Hernando talks about his grandchildren.\", so it's sus.",
       "requires": [
         "g:present-ar",
         "l:hablar",
@@ -482,7 +351,7 @@
         "El"
       ],
       "answer": 0,
-      "why": "The English says \"My aunt has blond hair.\", so the gap is Mi.",
+      "why": "The English says \"My aunt has blond hair.\", so it's Mi.",
       "requires": [
         "g:adjective-agreement",
         "g:ser-identity",

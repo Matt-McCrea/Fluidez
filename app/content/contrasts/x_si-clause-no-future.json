@@ -80,139 +80,6 @@
       ]
     },
     {
-      "id": "x:si-clause-no-future#rp2",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If Vale comes, we'll make arepas.",
-      "es": "Si Vale viene, haremos arepas.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "The English says \"If Vale comes, we'll make arepas.\", so the gap is Si.",
-      "requires": [
-        "g:future-promises",
-        "g:si-present",
-        "g:stem-boot",
-        "l:arepa",
-        "l:hacer",
-        "l:venir"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#rp3",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "I'll call you if I find Simón.",
-      "es": "Te llamaré si encuentro a Simón.",
-      "gap": [
-        11,
-        13
-      ],
-      "options": [
-        "sí",
-        "si"
-      ],
-      "answer": 1,
-      "why": "The English says \"I'll call you if I find Simón.\", so the gap is si.",
-      "requires": [
-        "g:future-promises",
-        "g:si-present",
-        "g:stem-boot",
-        "l:encontrar",
-        "l:llamar",
-        "p:me-te-nos-objects",
-        "p:personal-a"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#rp4",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If Simón comes back, Tomás will be happy.",
-      "es": "Si Simón vuelve, Tomás estará feliz.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "The English says \"If Simón comes back, Tomás will be happy.\", so the gap is Si.",
-      "requires": [
-        "g:estar-location-states",
-        "g:future-promises",
-        "g:si-present",
-        "g:stem-boot",
-        "l:estar",
-        "l:feliz",
-        "l:volver"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#rp5",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "Will you come if I invite you?",
-      "es": "¿Vendrás si te invito?",
-      "gap": [
-        9,
-        11
-      ],
-      "options": [
-        "sí",
-        "si"
-      ],
-      "answer": 1,
-      "why": "The English says \"Will you come if I invite you?\", so the gap is si.",
-      "requires": [
-        "g:future-promises",
-        "g:present-ar",
-        "g:si-present",
-        "l:invitar",
-        "l:venir",
-        "p:me-te-nos-objects"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#rp7",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you leave now, you'll see Vale.",
-      "es": "Si sales ahora, verás a Vale.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Sí",
-        "Si"
-      ],
-      "answer": 1,
-      "why": "The English says \"If you leave now, you'll see Vale.\", so the gap is Si.",
-      "requires": [
-        "g:future-promises",
-        "g:present-er-ir",
-        "g:si-present",
-        "l:ahora",
-        "l:salir",
-        "l:ver",
-        "p:personal-a"
-      ]
-    },
-    {
       "id": "x:si-clause-no-future#g.si-present.yt0",
       "node": "x:si-clause-no-future",
       "side": "g:si-present",
@@ -241,62 +108,6 @@
       ]
     },
     {
-      "id": "x:si-clause-no-future#g.si-present.yt2",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you want, we'll go dancing on Friday.",
-      "es": "Si quieres, vamos a bailar el viernes.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "Si quieres sets the condition, and the plan stays in the present: vamos.",
-      "requires": [
-        "c:si-quieres",
-        "c:vamos-a",
-        "g:gender-articles",
-        "g:ir-a-plans",
-        "g:si-present",
-        "l:bailar",
-        "l:ir",
-        "l:querer",
-        "l:viernes",
-        "p:days-el-lunes"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#g.si-present.rp0",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you want, we'll go.",
-      "es": "Si quieres, vamos.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Sí",
-        "Si"
-      ],
-      "answer": 1,
-      "why": "The English says \"If you want, we'll go.\", so the gap is Si.",
-      "requires": [
-        "c:si-quieres",
-        "c:vamos-a",
-        "g:ir-a-plans",
-        "g:si-present",
-        "l:ir",
-        "l:querer"
-      ]
-    },
-    {
       "id": "x:si-clause-no-future#g.si-present.rp1",
       "node": "x:si-clause-no-future",
       "side": "g:si-present",
@@ -312,121 +123,11 @@
         "Si"
       ],
       "answer": 0,
-      "why": "The English says \"Yes, let's go.\", so the gap is Sí.",
+      "why": "The English says \"Yes, let's go.\", so it's Sí.",
       "requires": [
         "c:vamos-a",
         "g:ir-a-plans",
         "l:ir"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#g.si-present.rp3",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you're hungry, there are arepas in the kitchen.",
-      "es": "Si tienes hambre, hay arepas en la cocina.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "The English says \"If you're hungry, there are arepas in the kitchen.\", so the gap is Si.",
-      "requires": [
-        "c:hay",
-        "c:tienes",
-        "g:gender-articles",
-        "g:hay-vs-esta",
-        "g:si-present",
-        "g:stem-boot",
-        "l:arepa",
-        "l:cocina",
-        "l:hambre",
-        "l:tener",
-        "p:tener-hambre"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#g.si-present.rp4",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you go, I'll go.",
-      "es": "Si tú vas, yo voy.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Sí",
-        "Si"
-      ],
-      "answer": 1,
-      "why": "The English says \"If you go, I'll go.\", so the gap is Si.",
-      "requires": [
-        "c:voy-vas",
-        "g:ir-a-plans",
-        "g:si-present",
-        "l:ir"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#g.si-present.rp5",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you call me, I'll come.",
-      "es": "Si me llamas, voy.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "The English says \"If you call me, I'll come.\", so the gap is Si.",
-      "requires": [
-        "c:voy-vas",
-        "g:ir-a-plans",
-        "g:present-ar",
-        "g:si-present",
-        "l:ir",
-        "l:llamar",
-        "p:me-te-nos-objects"
-      ]
-    },
-    {
-      "id": "x:si-clause-no-future#g.si-present.rp7",
-      "node": "x:si-clause-no-future",
-      "side": "g:si-present",
-      "rung": 1,
-      "en": "If you can't go, call Mariana.",
-      "es": "Si no puedes ir, llama a Mariana.",
-      "gap": [
-        0,
-        2
-      ],
-      "options": [
-        "Si",
-        "Sí"
-      ],
-      "answer": 0,
-      "why": "The English says \"If you can't go, call Mariana.\", so the gap is Si.",
-      "requires": [
-        "g:present-ar",
-        "g:si-present",
-        "g:stem-boot",
-        "g:verb-infinitive",
-        "l:ir",
-        "l:llamar",
-        "l:poder",
-        "p:personal-a"
       ]
     },
     {
@@ -445,7 +146,7 @@
         "Llueve"
       ],
       "answer": 0,
-      "why": "The English says \"It will rain in the afternoon.\", so the gap is Lloverá.",
+      "why": "The English says \"It will rain in the afternoon.\", so it's Lloverá.",
       "requires": [
         "g:future-promises",
         "g:gender-articles",

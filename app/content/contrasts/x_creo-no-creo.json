@@ -96,7 +96,7 @@
         "viene"
       ],
       "answer": 0,
-      "why": "I don't think he's coming.",
+      "why": "The English says \"I don't think he's coming.\", so it's venga.",
       "requires": [
         "c:creo-que",
         "g:subj-wanting",
@@ -121,36 +121,10 @@
         "viene"
       ],
       "answer": 1,
-      "why": "The English says \"She says she's coming tomorrow.\", so the gap is viene.",
+      "why": "The English says \"She says she's coming tomorrow.\", so it's viene.",
       "requires": [
         "g:stem-boot",
         "g:stem-e-i",
-        "g:that-clauses",
-        "l:decir",
-        "l:mañana",
-        "l:venir"
-      ]
-    },
-    {
-      "id": "x:creo-no-creo#g.that-clauses.rp2",
-      "node": "x:creo-no-creo",
-      "side": "g:that-clauses",
-      "rung": 1,
-      "en": "She said she's coming tomorrow.",
-      "es": "Dijo que viene mañana.",
-      "gap": [
-        9,
-        14
-      ],
-      "options": [
-        "viene",
-        "venga"
-      ],
-      "answer": 0,
-      "why": "The English says \"She said she's coming tomorrow.\", so the gap is viene.",
-      "requires": [
-        "g:preterite-irregular-strong",
-        "g:stem-boot",
         "g:that-clauses",
         "l:decir",
         "l:mañana",

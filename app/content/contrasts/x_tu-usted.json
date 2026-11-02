@@ -69,7 +69,7 @@
         "tu"
       ],
       "answer": 1,
-      "why": "The English says \"Is this your phone? (to a friend)\", so the gap is tu.",
+      "why": "The English says \"Is this your phone? (to a friend)\", so it's tu.",
       "requires": [
         "g:ser-identity",
         "l:celular",
@@ -94,7 +94,7 @@
         "tu"
       ],
       "answer": 0,
-      "why": "The English says \"Is this your phone, sir?\", so the gap is su.",
+      "why": "The English says \"Is this your phone, sir?\", so it's su.",
       "requires": [
         "g:ser-identity",
         "l:celular",

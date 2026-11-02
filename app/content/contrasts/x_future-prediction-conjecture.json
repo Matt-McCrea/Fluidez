@@ -3,6 +3,32 @@
   "decides": "meaning",
   "items": [
     {
+      "id": "x:future-prediction-conjecture#pf0",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "He isn't answering. He's probably at home.",
+      "es": "No contesta. Estará en casa.",
+      "gap": [
+        13,
+        19
+      ],
+      "options": [
+        "Estará",
+        "Va a estar"
+      ],
+      "answer": 0,
+      "why": "Almost. Va a estar points forward in time; for a guess about right now, use estará.",
+      "requires": [
+        "g:estar-location-states",
+        "g:future-conjecture",
+        "g:present-ar",
+        "l:casa",
+        "l:contestar",
+        "l:estar"
+      ]
+    },
+    {
       "id": "x:future-prediction-conjecture#yt0",
       "node": "x:future-prediction-conjecture",
       "side": "g:future-conjecture",
@@ -28,6 +54,57 @@
       ]
     },
     {
+      "id": "x:future-prediction-conjecture#yt1",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-conjecture",
+      "rung": 1,
+      "en": "He didn't eat anything today, so he must be hungry.",
+      "es": "Simón tendrá hambre.",
+      "gap": [
+        6,
+        12
+      ],
+      "options": [
+        "tendrá",
+        "tiene"
+      ],
+      "answer": 0,
+      "why": "Must be is a guess about now: tendrá.",
+      "requires": [
+        "g:future-conjecture",
+        "l:hambre",
+        "l:tener",
+        "p:tener-hambre"
+      ]
+    },
+    {
+      "id": "x:future-prediction-conjecture#rp3",
+      "node": "x:future-prediction-conjecture",
+      "side": "g:future-promises",
+      "rung": 1,
+      "en": "The meeting will be at four.",
+      "es": "La reunión será a las cuatro.",
+      "gap": [
+        11,
+        15
+      ],
+      "options": [
+        "estará",
+        "será"
+      ],
+      "answer": 1,
+      "why": "The English says \"The meeting will be at four.\", so it's será.",
+      "requires": [
+        "g:future-promises",
+        "g:gender-articles",
+        "g:ser-identity",
+        "l:reunión",
+        "l:ser",
+        "p:event-ser-en",
+        "p:telling-time"
+      ]
+    },
+    {
       "id": "x:future-prediction-conjecture#rp8",
       "node": "x:future-prediction-conjecture",
       "side": "g:future-conjecture",
@@ -43,7 +120,7 @@
         "estará"
       ],
       "answer": 0,
-      "why": "The English says \"Who knows where Simón is? Mariana probably knows something.\", so the gap is está.",
+      "why": "The English says \"Who knows where Simón is? Mariana probably knows something.\", so it's está.",
       "requires": [
         "c:donde-esta",
         "c:quien-sabe",
@@ -72,7 +149,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Simón is nearby.\", so the gap is está.",
+      "why": "The English says \"Simón is nearby.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "l:cerca",
@@ -96,7 +173,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Simón is probably nearby.\", so the gap is estará.",
+      "why": "The English says \"Simón is probably nearby.\", so it's estará.",
       "requires": [
         "g:estar-location-states",
         "g:future-conjecture",

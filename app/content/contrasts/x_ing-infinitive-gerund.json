@@ -163,7 +163,7 @@
         "cocinando"
       ],
       "answer": 0,
-      "why": "The English says \"Vale can cook.\", so the gap is cocinar.",
+      "why": "The English says \"Vale can cook.\", so it's cocinar.",
       "requires": [
         "g:stem-boot",
         "g:verb-infinitive",

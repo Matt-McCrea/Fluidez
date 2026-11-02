@@ -10,20 +10,21 @@
  *   - the read-and-pick sentences and your-turn translations that have no twin, where exactly one word in
  *     them is one of the contrast's pivot words.
  * An item is one sentence with one place in it and the options for that place, in the exact pair of Spanish
- * and English it came with (src/content/schema.ts ContrastItem). Nothing is written that a script did not say.
+ * and English it came with (src/content/schema.ts ContrastItem). Nothing is written that a script did not say, or
+ * that one says is wrong, and what a person has read and ruled out stays out (classes.ts RULED_OUT).
  * Without --write it prints the report and changes nothing.
  *
  * The report says, for each contrast, how many items it has, from where, and which are thin against R11 (40
  * items, 150 for the big five): the burn tops those up.
  * ========================================================================== */
-import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ContrastFile, TeachingScript, type ContrastDecides, type GraphNode, type NodeId } from '../../src/content/schema';
 import { hash32 } from '../../src/exercises/rng';
 import { tagSentence, type TagOptions } from '../../src/engine/tagger';
 import { loadCurriculum } from '../gate/load';
-import { BIG, DECIDES, TARGET_ITEMS } from './classes';
+import { BIG, DECIDES, RULED_OUT, TARGET_ITEMS } from './classes';
 import { COMMONER_LIMIT, CUE_LIMIT, score } from './cue';
 import { caseLike, keyOf, pivotOf, plain, wordsOf } from './pivot';
 
@@ -162,10 +163,25 @@ const rulesOf = (rule: string): Map<string, string> => {
   const out = new Map<string, string>();
   for (const line of rule.split(/\n/)) {
     const m = line.match(/^\*([^*]+)\*\s+(.+)$/);
-    if (m && !out.has(keyOf(m[1]))) out.set(keyOf(m[1]), plain(m[2]));
+    // a line that goes on with another example says nothing of why; one that goes on in lower case ("*Me da igual* means...") is one sentence with its example
+    if (!m || m[2].startsWith('*') || out.has(keyOf(m[1]))) continue;
+    out.set(keyOf(m[1]), plain(/^\p{Ll}/u.test(m[2]) ? line : m[2]));
   }
   return out;
 };
+
+type Pick = TeachingScript['readAndPick'][number];
+
+/**
+ * Whether a read-and-pick holds a sentence and its English. One that judges the sentence ("Sounds right", "Should be: Yo tampoco.") does not:
+ * its sentence may be the very one it calls wrong, and neither option is English for it. Nor does a line about an exchange ("The second
+ * person likes tea."), which translates neither turn. Nothing is taken from either.
+ */
+export function aligned(q: Pick): boolean {
+  if (q.options.some((o) => /^(sounds right|should be\b)/i.test(plain(o)))) return false;
+  const turns = q.es.split('\n').filter((t) => t.trim()).length;
+  return turns < 2 || (plain(q.options[q.answer]).match(/[.!?]+(\s|$)/g) ?? []).length >= turns;
+}
 
 interface Source { node: NodeId; script: TeachingScript; own: boolean }
 
@@ -180,6 +196,7 @@ function candidatesOf(src: Source, vocab: Vocab | null, learn: Vocab, lookup: (e
   // twins: the read-and-pick items that share their options and differ in the answer
   const groups = new Map<string, number[]>();
   script.readAndPick.forEach((q, i) => {
+    if (!aligned(q)) return;
     const k = JSON.stringify([...q.options].sort());
     groups.set(k, [...(groups.get(k) ?? []), i]);
   });
@@ -234,7 +251,7 @@ function candidatesOf(src: Source, vocab: Vocab | null, learn: Vocab, lookup: (e
 
   // read-and-pick sentences with no twin: the one pivot word in them
   script.readAndPick.forEach((q, i) => {
-    if (twinned.has(i)) return;
+    if (twinned.has(i) || !aligned(q)) return;
     const v = gapByVocab(q.es, learn);
     if (v) add({ src: `${pre}rp${i}`, origin: 'pick', from: node, es: q.es, gap: v.gap, right: v.right, wrong: [v.wrong], en: plain(q.options[q.answer]), rung: 1 }, v.right, v.wrong);
   });
@@ -257,7 +274,7 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
   const held = new Map<string, string>();
   for (const s of sources) {
     for (const e of s.script.examples) if (!held.has(keyOf(e.es))) held.set(keyOf(e.es), plain(e.en));
-    for (const q of s.script.readAndPick) if (!held.has(keyOf(q.es))) held.set(keyOf(q.es), plain(q.options[q.answer]));
+    for (const q of s.script.readAndPick) if (aligned(q) && !held.has(keyOf(q.es))) held.set(keyOf(q.es), plain(q.options[q.answer]));
     for (const y of s.script.yourTurn) { const c = cueOf(y.prompt); if (c && !held.has(keyOf(y.answer))) held.set(keyOf(y.answer), c); }
   }
   const lookup = (es: string) => held.get(keyOf(es)) ?? ctx.bankEn.get(keyOf(es));
@@ -288,27 +305,34 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
     const e = lookup(c.es);
     if (e) c.en = e; else stats.wantEn.push(c.es);
   }
+  kept = kept.filter((c) => !RULED_OUT.has(`${node.id}#${c.src}`));
   const noEn = kept.filter((c) => !c.en);
   stats.noEnglish = noEn.length;
   kept = kept.filter((c) => c.en);
 
-  // a deck of meaning or discourse choices must not favour one answer (the Cue Test's base rate): where one word of a pair is
-  // the answer in more than the share allowed, the surplus that no twin holds up is left out
-  if (decides === 'meaning' || decides === 'discourse') {
+  // a deck must not favour one answer, or always saying that word would pass it (the Cue Test's base rate, and a forced choice is one whatever
+  // decides the contrast): where one word of a pair is the answer in more than the share allowed, the surplus that no twin holds up is left
+  // out; and a pair whose answer never changes decides nothing however often it is asked, so a deck of choices keeps one of it
+  if (decides !== 'synonym') {
     const byPair = new Map<string, Cand[]>();
     for (const c of kept) byPair.set(pairKey(c.right, c.wrong[0]), [...(byPair.get(pairKey(c.right, c.wrong[0])) ?? []), c]);
     const drop = new Set<Cand>();
     for (const group of byPair.values()) {
       const count = (w: string) => group.filter((c) => !drop.has(c) && c.right.toLowerCase() === w).length;
       const words = [...new Set(group.map((c) => c.right.toLowerCase()))];
+      if (words.length === 1 && decides !== 'discourse') {
+        const [, ...rest] = [...group].sort((a, b) => WINS[a.origin] - WINS[b.origin] || place.get(a)! - place.get(b)!);
+        for (const c of rest) drop.add(c);
+      }
       if (words.length !== 2) continue;
       for (;;) {
         const live = group.filter((c) => !drop.has(c)).length;
         const [big] = words.sort((x, y) => count(y) - count(x));
         if (live < 4 || count(big) / live <= BALANCE) break;
-        const surplus = group.filter((c) => !drop.has(c) && c.right.toLowerCase() === big && c.origin !== 'twin').sort((a, b) => WINS[b.origin] - WINS[a.origin] || place.get(b)! - place.get(a)!);
-        if (!surplus.length) break;
-        drop.add(surplus[0]);
+        const by = (twin: boolean) => group.filter((c) => !drop.has(c) && c.right.toLowerCase() === big && (c.origin === 'twin') === twin).sort((a, b) => WINS[b.origin] - WINS[a.origin] || place.get(b)! - place.get(a)!);
+        const surplus = by(false)[0] ?? by(true)[0];
+        if (!surplus) break;
+        drop.add(surplus);
       }
     }
     stats.balanced = drop.size;
@@ -334,7 +358,9 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
     const bySentence = members.find((m) => tagged.features.some((f) => f.node === m));
     // a sentence written for one of the sides' own lessons is that side's, whatever the tagger can see of it
     const written = c.from !== node.id && members.includes(c.from) ? c.from : undefined;
-    const why = c.why || ownRules.get(keyOf(c.es)) || `The English says "${c.en}", so the gap is ${c.right}.`;
+    // a rule that only says the sentence again in English is no reason; and not every card that asks this has a gap to speak of
+    const rule = ownRules.get(keyOf(c.es));
+    const why = c.why || (rule && rule !== c.en ? rule : undefined) || `The English says "${c.en}", so it's ${c.right}.`;
     const it = {
       id, node: node.id, side: written ?? byGap ?? bySentence ?? members[0], rung: c.rung, en: c.en!, es: c.es, gap: c.gap, options: rotated, answer, why,
       requires: tagged.requires,
@@ -436,10 +462,8 @@ function main(): void {
   if (args.includes('--write')) {
     mkdirSync(out, { recursive: true });
     for (const { file } of results) {
-      const path = join(out, `${file.node.replace(':', '_')}.json`);
-      // a contrast with nothing to derive has no file (its review and Train it use its script), and no file left from an earlier run
-      if (!file.items.length) { if (existsSync(path)) unlinkSync(path); continue; }
-      writeFileSync(path, JSON.stringify(file, null, 2) + '\n');
+      // a contrast with nothing to derive still has its file: it is the file that says how the contrast is asked, and its script is asked that way
+      writeFileSync(join(out, `${file.node.replace(':', '_')}.json`), JSON.stringify(file, null, 2) + '\n');
     }
   }
   if (!args.includes('--quiet')) for (const l of report(results)) console.log(l);

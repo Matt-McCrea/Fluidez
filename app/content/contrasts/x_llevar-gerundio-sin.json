@@ -74,7 +74,7 @@
         "estudiar"
       ],
       "answer": 1,
-      "why": "The English says \"I haven't studied for a year.\", so the gap is estudiar.",
+      "why": "The English says \"I haven't studied for a year.\", so it's estudiar.",
       "requires": [
         "g:gender-articles",
         "g:hace-que-desde",
@@ -103,7 +103,7 @@
         "estudiar"
       ],
       "answer": 0,
-      "why": "The English says \"I've been studying for a year.\", so the gap is estudiando.",
+      "why": "The English says \"I've been studying for a year.\", so it's estudiando.",
       "requires": [
         "g:gender-articles",
         "g:hace-que-desde",

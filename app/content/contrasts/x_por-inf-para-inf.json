@@ -123,7 +123,7 @@
         "por"
       ],
       "answer": 1,
-      "why": "The English says \"They congratulated him for helping the neighbours.\", so the gap is por.",
+      "why": "The English says \"They congratulated him for helping the neighbours.\", so it's por.",
       "requires": [
         "g:direct-objects",
         "g:gender-articles",
@@ -152,7 +152,7 @@
         "por"
       ],
       "answer": 0,
-      "why": "The English says \"Tomás got up early to open the café.\", so the gap is para.",
+      "why": "The English says \"Tomás got up early to open the café.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -181,7 +181,7 @@
         "por"
       ],
       "answer": 1,
-      "why": "The English says \"They closed the bakery for not having a permit.\", so the gap is por.",
+      "why": "The English says \"They closed the bakery for not having a permit.\", so it's por.",
       "requires": [
         "g:gender-articles",
         "g:por-para-1",
@@ -208,7 +208,7 @@
         "para"
       ],
       "answer": 1,
-      "why": "The English says \"I spoke with the council to ask for help.\", so the gap is para.",
+      "why": "The English says \"I spoke with the council to ask for help.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -236,7 +236,7 @@
         "por"
       ],
       "answer": 0,
-      "why": "The English says \"Mariana called Hernando to ask him a question.\", so the gap is para.",
+      "why": "The English says \"Mariana called Hernando to ask him a question.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:indirect-objects",
@@ -266,7 +266,7 @@
         "para"
       ],
       "answer": 0,
-      "why": "The English says \"Hernando arrived late because of the traffic.\", so the gap is por.",
+      "why": "The English says \"Hernando arrived late because of the traffic.\", so it's por.",
       "requires": [
         "g:gender-articles",
         "g:por-para-1",
@@ -293,7 +293,7 @@
         "para"
       ],
       "answer": 0,
-      "why": "The English says \"The council closed the café for not having a permit.\", so the gap is por.",
+      "why": "The English says \"The council closed the café for not having a permit.\", so it's por.",
       "requires": [
         "g:gender-articles",
         "g:por-para-1",
@@ -321,7 +321,7 @@
         "para"
       ],
       "answer": 0,
-      "why": "The English says \"Tomás didn't sleep because he kept thinking about the letter.\", so the gap is por.",
+      "why": "The English says \"Tomás didn't sleep because he kept thinking about the letter.\", so it's por.",
       "requires": [
         "g:gender-articles",
         "g:por-para-1",
@@ -374,7 +374,7 @@
         "por"
       ],
       "answer": 0,
-      "why": "The English says \"This ice cream is for Simón.\", so the gap is para.",
+      "why": "The English says \"This ice cream is for Simón.\", so it's para.",
       "requires": [
         "g:ser-identity",
         "l:helado",
@@ -399,7 +399,7 @@
         "por"
       ],
       "answer": 0,
-      "why": "The English says \"Vale cooks for the customers.\", so the gap is para.",
+      "why": "The English says \"Vale cooks for the customers.\", so it's para.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",

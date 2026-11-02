@@ -18,7 +18,7 @@
         "Está"
       ],
       "answer": 0,
-      "why": "The English says \"The class is in the park.\", so the gap is Es.",
+      "why": "The English says \"The class is in the park.\", so it's Es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
@@ -42,7 +42,7 @@
         "Está"
       ],
       "answer": 1,
-      "why": "The English says \"The bank is in the park.\", so the gap is Está.",
+      "why": "The English says \"The bank is in the park.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -66,7 +66,7 @@
         "Es"
       ],
       "answer": 0,
-      "why": "The English says \"Tomás is at Mariana's office.\", so the gap is Está.",
+      "why": "The English says \"Tomás is at Mariana's office.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -90,7 +90,7 @@
         "Es"
       ],
       "answer": 1,
-      "why": "The English says \"The meeting is at Mariana's office.\", so the gap is Es.",
+      "why": "The English says \"The meeting is at Mariana's office.\", so it's Es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
@@ -114,7 +114,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"Where's the café?\", so the gap is está.",
+      "why": "The English says \"Where's the café?\", so it's está.",
       "requires": [
         "c:donde-esta",
         "g:estar-location-states",
@@ -138,7 +138,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"Where's the party?\", so the gap is es.",
+      "why": "The English says \"Where's the party?\", so it's es.",
       "requires": [
         "g:questions",
         "g:ser-identity",
@@ -162,7 +162,7 @@
         "Está"
       ],
       "answer": 0,
-      "why": "The English says \"Hernando's appointment is at the hospital.\", so the gap is Es.",
+      "why": "The English says \"Hernando's appointment is at the hospital.\", so it's Es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
@@ -186,7 +186,7 @@
         "Está"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is in hospital.\", so the gap is Está.",
+      "why": "The English says \"Hernando is in hospital.\", so it's Está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -342,7 +342,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Vale is at the café.\", so the gap is está.",
+      "why": "The English says \"Vale is at the café.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -366,7 +366,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"The hospital is downtown.\", so the gap is está.",
+      "why": "The English says \"The hospital is downtown.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -391,7 +391,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Tomás isn't in Toronto.\", so the gap is está.",
+      "why": "The English says \"Tomás isn't in Toronto.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "l:estar"
@@ -413,7 +413,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Hernando is a calm person.\", so the gap is es.",
+      "why": "The English says \"Hernando is a calm person.\", so it's es.",
       "requires": [
         "c:tranquilo",
         "g:ser-identity",
@@ -437,7 +437,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Hernando is calm right now.\", so the gap is está.",
+      "why": "The English says \"Hernando is calm right now.\", so it's está.",
       "requires": [
         "c:tranquilo",
         "g:estar-location-states",
@@ -461,7 +461,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Mariana is clever.\", so the gap is es.",
+      "why": "The English says \"Mariana is clever.\", so it's es.",
       "requires": [
         "g:adjective-agreement",
         "g:ser-identity",
@@ -485,7 +485,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Mariana is ready.\", so the gap is está.",
+      "why": "The English says \"Mariana is ready.\", so it's está.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",
@@ -559,7 +559,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"Simón is a nervous type.\", so the gap is es.",
+      "why": "The English says \"Simón is a nervous type.\", so it's es.",
       "requires": [
         "g:ser-identity",
         "l:nervioso",

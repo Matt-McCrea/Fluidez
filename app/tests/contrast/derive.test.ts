@@ -2,9 +2,9 @@
 // items, in the same order, and nothing is written that a script did not say.
 import { describe, expect, it } from 'vitest';
 import type { GraphNode, TeachingScript } from '../../src/content/schema';
-import { deriveContrast, type DeriveCtx } from '../../tools/contrast/derive';
-import { pivotOf, wordsOf } from '../../tools/contrast/pivot';
-import { BIG, DECIDES, TARGET_ITEMS } from '../../tools/contrast/classes';
+import { aligned, deriveContrast, type DeriveCtx } from '../../tools/contrast/derive';
+import { keyOf, pivotOf, wordsOf } from '../../tools/contrast/pivot';
+import { BIG, DECIDES, RULED_OUT, TARGET_ITEMS } from '../../tools/contrast/classes';
 
 const node = (id: string, contrasts: string[]): GraphNode => ({
   id, kind: id.startsWith('x:') ? 'contrast' : 'grammar', band: 'A2', priority: 1, title: id, requires: contrasts, contrasts: id.startsWith('x:') ? contrasts : [],
@@ -53,6 +53,55 @@ describe('the pivot of two sentences', () => {
   });
 });
 
+describe('what is not a contrast\'s item', () => {
+  const pick = (es: string, options: string[], answer = 0) => ({ es, options, answer });
+
+  it('a read-and-pick that judges its sentence gives nothing: the sentence may be the wrong one, and neither option is its English', () => {
+    // the script says this one is wrong: it must not come back as the right sentence, with "Should be: A mí también." for its English
+    const q = pick('Me encanta la torta.\nYo también.', ['Should be: A mí también.', 'Sounds right']);
+    expect(aligned(q)).toBe(false);
+    expect(aligned(pick('Trabajo los sábados.', ['Sounds right', 'Should be: A mí también.'], 1))).toBe(false);
+    const { file } = deriveContrast(por, ctx([script('x:por-para', { readAndPick: [pick('Lo hice para ti.', ['Should be: Lo hice por ti.', 'Sounds right']), pick('Lo hice por ti.', ['Should be: Lo hice por ti.', 'Sounds right'], 1), ...twins] })]), 'meaning');
+    expect(file.items.map((i) => i.id)).not.toContain('x:por-para#rp0');
+    expect(file.items.some((i) => /sounds right|should be/i.test(i.en))).toBe(false);
+  });
+
+  it('nor does a line about an exchange, but an exchange with its English does', () => {
+    expect(aligned(pick('Trabajo en una oficina.\nYo también.', ['The second person works in an office too.', 'x']))).toBe(false);
+    expect(aligned(pick('¿Quién sabe?\nMariana sabrá.', ['Who knows? Mariana probably knows.', 'x']))).toBe(true);
+    expect(aligned(pick('Lo hice para ti.', ['I made it for you.', 'x']))).toBe(true);
+  });
+
+  it('a statement does not take the English of the same words as a question', () => {
+    expect(keyOf('¿Hay una lámpara en el cuarto?')).not.toBe(keyOf('Hay una lámpara en el cuarto.'));
+    expect(keyOf('¡Hay una lámpara!')).toBe(keyOf('Hay una lámpara.'));
+  });
+
+  const gapRows = (n: number, right: string, wrong: string) => Array.from({ length: n }, (_, i) => ({ prompt: `Choose *${right}* or *${wrong}*: Frase ${i} ___ fin.`, answer: `Frase ${i} ${right} fin.`, accept: [], why: 'w' }));
+  const bankOf = (rows: Array<{ answer: string }>): Array<[string, string]> => rows.map((r) => [keyOf(r.answer), `English of ${r.answer}`]);
+
+  it('a deck of choices keeps one of a pair whose answer never changes: tapping that word would pass the rest', () => {
+    const yt = gapRows(6, 'hace', 'hacen');
+    for (const d of ['local', 'meaning'] as const) expect(deriveContrast(por, ctx([script('x:por-para', { yourTurn: yt })], bankOf(yt)), d).file.items, d).toHaveLength(1);
+    // typed from the English, the options are not on the card
+    expect(deriveContrast(por, ctx([script('x:por-para', { yourTurn: yt })], bankOf(yt)), 'synonym').file.items).toHaveLength(6);
+  });
+
+  it('a local deck is balanced as a deck of meaning is: a forced choice is one whatever decides it', () => {
+    const yt = [...gapRows(9, 'que', 'de'), ...gapRows(2, 'de', 'que').map((y, i) => ({ ...y, prompt: y.prompt.replace('Frase', `Otra ${i}`), answer: y.answer.replace('Frase', `Otra ${i}`) }))];
+    const { file } = deriveContrast(por, ctx([script('x:por-para', { yourTurn: yt })], bankOf(yt)), 'local');
+    const right = file.items.map((i) => i.options[i.answer]);
+    expect(right.filter((w) => w === 'que').length).toBe(2);
+    expect(right.filter((w) => w === 'de').length).toBe(2);
+  });
+
+  it('what a person ruled out stays out, and the reason never speaks of a gap the card does not show', () => {
+    expect(RULED_OUT.has('x:lo-le#rp5')).toBe(true);
+    const { file } = deriveContrast(por, ctx([script('x:por-para', { readAndPick: twins, rule: 'none' })]), 'meaning');
+    expect(file.items.some((i) => /\bgap\b/.test(i.why))).toBe(false);
+  });
+});
+
 describe('what a contrast\'s items are made of', () => {
   it('a twin set gives each sentence an item whose other option is the other twin\'s word', () => {
     const { file, stats } = deriveContrast(por, ctx([script('x:por-para', { readAndPick: twins })]), 'meaning');
@@ -69,15 +118,15 @@ describe('what a contrast\'s items are made of', () => {
   });
 
   it('a pitfall gives its right sentence with its wrong word as the other option, and needs an English', () => {
-    const s = script('x:por-para', { pitfalls: [{ wrong: 'Gracias para el regalo.', right: 'Gracias por el regalo.', why: 'Thanks is always gracias por.' }, { wrong: 'Voy para casa.', right: 'Voy por casa.', why: 'w' }] });
+    const s = script('x:por-para', { pitfalls: [{ wrong: 'Gracias para el regalo.', right: 'Gracias por el regalo.', why: 'Thanks is always gracias por.' }, { wrong: 'Voy por casa.', right: 'Voy para casa.', why: 'w' }] });
     const { file, stats } = deriveContrast(por, ctx([s]), 'meaning');
     expect(file.items.map((i) => i.id)).toEqual(['x:por-para#pf0']);
     expect(file.items[0].en).toBe('Thanks for the present.');
     expect(file.items[0].why).toBe('Thanks is always gracias por.');
     expect(stats.noEnglish).toBe(1);
-    expect(stats.wantEn).toEqual(['Voy por casa.']);
+    expect(stats.wantEn).toEqual(['Voy para casa.']);
     // the bank's English is used when the script has none
-    const again = deriveContrast(por, ctx([s], [['voy por casa', 'I go around the house.']]), 'meaning');
+    const again = deriveContrast(por, ctx([s], [['voy para casa', 'I am heading home.']]), 'meaning');
     expect(again.file.items.map((i) => i.id)).toEqual(['x:por-para#pf0', 'x:por-para#pf1']);
   });
 
@@ -85,7 +134,7 @@ describe('what a contrast\'s items are made of', () => {
     const s = script('x:por-para', {
       yourTurn: [
         { prompt: 'Choose *por* or *para* and type the whole sentence: Gracias ___ el regalo.', answer: 'Gracias por el regalo.', accept: [], why: 'Thanks looks back.' },
-        { prompt: 'Choose *por* or *para* and type the whole sentence: Lo hago ___ la mañana. (I\'ll do it in the morning.)', answer: 'Lo hago por la mañana.', accept: [], why: 'Part of the day.' },
+        { prompt: 'Choose *por* or *para* and type the whole sentence: Lo hago ___ mañana. (I\'ll do it by tomorrow.)', answer: 'Lo hago para mañana.', accept: [], why: 'A deadline.' },
         { prompt: 'Say: It is a fine day.', answer: 'Es un buen día.', accept: [], why: 'w' },
       ],
     });
@@ -93,18 +142,18 @@ describe('what a contrast\'s items are made of', () => {
     const [a, b] = file.items;
     expect([a.id, a.es.slice(...a.gap), [...a.options].sort(), a.rung]).toEqual(['x:por-para#yt0', 'por', ['para', 'por'], 2]);
     expect(a.en).toBe('Thanks for the present.');
-    expect([b.id, b.en, b.rung]).toEqual(['x:por-para#yt1', 'I\'ll do it in the morning.', 1]);
+    expect([b.id, b.en, b.rung]).toEqual(['x:por-para#yt1', 'I\'ll do it by tomorrow.', 1]);
     expect(file.items).toHaveLength(2);
   });
 
   it('a sentence with one pivot word of the contrast and no twin gets a gap with the English it came with', () => {
     const s = script('x:por-para', {
-      readAndPick: [...twins, { es: 'Compré flores para mi abuela.', options: ['I bought flowers for my grandmother.', 'I bought flowers because of my grandmother.'], answer: 0 }],
+      readAndPick: [...twins, { es: 'Compré flores para mi abuela.', options: ['I bought flowers for my grandmother.', 'I bought flowers because of my grandmother.'], answer: 0 }, { es: 'Me quedé por mi abuela.', options: ['I stayed because of my grandmother.', 'I stayed to see my grandmother.'], answer: 0 }],
     });
     const { file, stats } = deriveContrast(por, ctx([s]), 'local');
     const pick = file.items.find((i) => i.id === 'x:por-para#rp4')!;
     expect([pick.es.slice(...pick.gap), pick.options.filter((o) => o !== 'para'), pick.en]).toEqual(['para', ['por'], 'I bought flowers for my grandmother.']);
-    expect(stats.origin.pick).toBe(1);
+    expect(stats.origin.pick).toBe(2);
   });
 
   it('a side\'s script gives its items only where the pair is one the contrast\'s own script draws', () => {

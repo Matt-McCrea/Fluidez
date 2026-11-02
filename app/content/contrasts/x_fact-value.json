@@ -104,7 +104,7 @@
         "venga"
       ],
       "answer": 0,
-      "why": "The English says \"It's true that Vale is coming today.\", so the gap is viene.",
+      "why": "The English says \"It's true that Vale is coming today.\", so it's viene.",
       "requires": [
         "g:ser-identity",
         "g:stem-boot",
@@ -132,36 +132,10 @@
         "venga"
       ],
       "answer": 0,
-      "why": "The English says \"She says she's coming tomorrow.\", so the gap is viene.",
+      "why": "The English says \"She says she's coming tomorrow.\", so it's viene.",
       "requires": [
         "g:stem-boot",
         "g:stem-e-i",
-        "g:that-clauses",
-        "l:decir",
-        "l:mañana",
-        "l:venir"
-      ]
-    },
-    {
-      "id": "x:fact-value#g.that-clauses.rp2",
-      "node": "x:fact-value",
-      "side": "g:that-clauses",
-      "rung": 1,
-      "en": "She said she's coming tomorrow.",
-      "es": "Dijo que viene mañana.",
-      "gap": [
-        9,
-        14
-      ],
-      "options": [
-        "venga",
-        "viene"
-      ],
-      "answer": 1,
-      "why": "The English says \"She said she's coming tomorrow.\", so the gap is viene.",
-      "requires": [
-        "g:preterite-irregular-strong",
-        "g:stem-boot",
         "g:that-clauses",
         "l:decir",
         "l:mañana",

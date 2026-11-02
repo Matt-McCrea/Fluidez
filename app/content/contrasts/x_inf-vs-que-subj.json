@@ -18,7 +18,7 @@
         "salir"
       ],
       "answer": 0,
-      "why": "The English says \"I want you to leave early.\", so the gap is que salgas.",
+      "why": "The English says \"I want you to leave early.\", so it's que salgas.",
       "requires": [
         "c:quiero",
         "g:stem-boot",
@@ -45,7 +45,7 @@
         "salir"
       ],
       "answer": 1,
-      "why": "The English says \"I want to leave early.\", so the gap is salir.",
+      "why": "The English says \"I want to leave early.\", so it's salir.",
       "requires": [
         "c:quiero",
         "g:stem-boot",
@@ -71,7 +71,7 @@
         "descansar"
       ],
       "answer": 1,
-      "why": "The English says \"I need to rest.\", so the gap is descansar.",
+      "why": "The English says \"I need to rest.\", so it's descansar.",
       "requires": [
         "g:present-ar",
         "l:descansar",
@@ -94,7 +94,7 @@
         "descansar"
       ],
       "answer": 0,
-      "why": "The English says \"I need you to rest.\", so the gap is que descanses.",
+      "why": "The English says \"I need you to rest.\", so it's que descanses.",
       "requires": [
         "c:que-descanses",
         "g:present-ar",

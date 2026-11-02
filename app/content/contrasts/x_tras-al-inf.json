@@ -83,60 +83,6 @@
       ]
     },
     {
-      "id": "x:tras-al-inf#yt2",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "After leaving the bank, I had a tinto.",
-      "es": "Tras salir del banco, tomé un tinto.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Al",
-        "Tras"
-      ],
-      "answer": 1,
-      "why": "Tras + infinitive gives the step before the next one.",
-      "requires": [
-        "g:gender-articles",
-        "g:preterite-ar",
-        "l:banco",
-        "l:salir",
-        "l:tinto",
-        "l:tomar",
-        "p:tras-inf"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#yt4",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "After the meeting ended, everyone had a tinto.",
-      "es": "Tras terminar la reunión, todos tomaron un tinto.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Al",
-        "Tras"
-      ],
-      "answer": 1,
-      "why": "The meeting is over first, so tras.",
-      "requires": [
-        "g:gender-articles",
-        "g:preterite-ar",
-        "l:reunión",
-        "l:terminar",
-        "l:tinto",
-        "l:tomar",
-        "p:tras-inf"
-      ]
-    },
-    {
       "id": "x:tras-al-inf#rp2",
       "node": "x:tras-al-inf",
       "side": "p:tras-inf",
@@ -152,7 +98,7 @@
         "Al"
       ],
       "answer": 0,
-      "why": "The English says \"After opening the door, I went in.\", so the gap is Tras.",
+      "why": "The English says \"After opening the door, I went in.\", so it's Tras.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -178,7 +124,7 @@
         "Al"
       ],
       "answer": 1,
-      "why": "The English says \"As I left, I saw Hernando.\", so the gap is Al.",
+      "why": "The English says \"As I left, I saw Hernando.\", so it's Al.",
       "requires": [
         "g:gender-articles",
         "g:prep-infinitive",
@@ -204,7 +150,7 @@
         "Al"
       ],
       "answer": 0,
-      "why": "The English says \"After the vote, everyone left.\", so the gap is Tras.",
+      "why": "The English says \"After the vote, everyone left.\", so it's Tras.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ser-ir-hacer",
@@ -229,7 +175,7 @@
         "Al"
       ],
       "answer": 1,
-      "why": "The English says \"On hearing the news, Vale said nothing.\", so the gap is Al.",
+      "why": "The English says \"On hearing the news, Vale said nothing.\", so it's Al.",
       "requires": [
         "g:gender-articles",
         "g:negation-words",
@@ -256,7 +202,7 @@
         "Al"
       ],
       "answer": 0,
-      "why": "The English says \"After hearing the news, Vale called Tomás.\", so the gap is Tras.",
+      "why": "The English says \"After hearing the news, Vale called Tomás.\", so it's Tras.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",
@@ -283,7 +229,7 @@
         "Al"
       ],
       "answer": 1,
-      "why": "The English says \"On arriving, I saw that Vale was already there.\", so the gap is Al.",
+      "why": "The English says \"On arriving, I saw that Vale was already there.\", so it's Al.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -315,7 +261,7 @@
         "Al"
       ],
       "answer": 0,
-      "why": "The English says \"After getting home, I called my mum.\", so the gap is Tras.",
+      "why": "The English says \"After getting home, I called my mum.\", so it's Tras.",
       "requires": [
         "g:preterite-ar",
         "l:casa",
@@ -343,7 +289,7 @@
         "Tras"
       ],
       "answer": 1,
-      "why": "The English says \"The strike was called off after the meeting.\", so the gap is Tras.",
+      "why": "The English says \"The strike was called off after the meeting.\", so it's Tras.",
       "requires": [
         "g:gender-articles",
         "g:passive-se",
@@ -370,7 +316,7 @@
         "al"
       ],
       "answer": 0,
-      "why": "The English says \"Yesid left after hearing the offer.\", so the gap is tras.",
+      "why": "The English says \"Yesid left after hearing the offer.\", so it's tras.",
       "requires": [
         "g:gender-articles",
         "g:preterite-er-ir",
@@ -378,31 +324,6 @@
         "l:oferta",
         "l:salir",
         "p:tras-inf"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#p.tras-inf.rp3",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "Before signing, he read everything.",
-      "es": "Antes de firmar, leyó todo.",
-      "gap": [
-        9,
-        15
-      ],
-      "options": [
-        "firmando",
-        "firmar"
-      ],
-      "answer": 1,
-      "why": "The English says \"Before signing, he read everything.\", so the gap is firmar.",
-      "requires": [
-        "g:prep-infinitive",
-        "g:preterite-spelling-stem",
-        "l:antes",
-        "l:firmar",
-        "l:leer"
       ]
     },
     {
@@ -421,7 +342,7 @@
         "Al"
       ],
       "answer": 0,
-      "why": "The English says \"After eating, Hernando ordered a black coffee.\", so the gap is Tras.",
+      "why": "The English says \"After eating, Hernando ordered a black coffee.\", so it's Tras.",
       "requires": [
         "g:gender-articles",
         "g:preterite-spelling-stem",
@@ -429,86 +350,6 @@
         "l:pedir",
         "l:tinto",
         "p:preguntar-pedir",
-        "p:tras-inf"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#p.tras-inf.rp5",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "After several months of silence, Yesid told the truth.",
-      "es": "Tras varios meses de silencio, Yesid contó la verdad.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Al",
-        "Tras"
-      ],
-      "answer": 1,
-      "why": "The English says \"After several months of silence, Yesid told the truth.\", so the gap is Tras.",
-      "requires": [
-        "c:la-verdad",
-        "g:preterite-ar",
-        "l:contar",
-        "l:mes",
-        "l:silencio",
-        "l:verdad",
-        "p:contar-dos-sentidos",
-        "p:tras-inf"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#p.tras-inf.rp6",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "After talking to her, we left.",
-      "es": "Tras hablar con ella, salimos.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Tras",
-        "Al"
-      ],
-      "answer": 0,
-      "why": "The English says \"After talking to her, we left.\", so the gap is Tras.",
-      "requires": [
-        "c:con-el-ella",
-        "g:present-er-ir",
-        "l:hablar",
-        "l:salir",
-        "p:tras-inf"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#p.tras-inf.rp7",
-      "node": "x:tras-al-inf",
-      "side": "p:tras-inf",
-      "rung": 1,
-      "en": "After the assembly, nobody wanted to comment.",
-      "es": "Tras la asamblea, nadie quiso comentar.",
-      "gap": [
-        0,
-        4
-      ],
-      "options": [
-        "Al",
-        "Tras"
-      ],
-      "answer": 1,
-      "why": "The English says \"After the assembly, nobody wanted to comment.\", so the gap is Tras.",
-      "requires": [
-        "g:gender-articles",
-        "g:preterite-irregular-strong",
-        "g:verb-infinitive",
-        "l:asamblea",
-        "l:comentar",
-        "l:querer",
         "p:tras-inf"
       ]
     },
@@ -528,7 +369,7 @@
         "Tras"
       ],
       "answer": 0,
-      "why": "The English says \"After eating, we have a black coffee.\", so the gap is Después.",
+      "why": "The English says \"After eating, we have a black coffee.\", so it's Después.",
       "requires": [
         "g:gender-articles",
         "g:prep-infinitive",
@@ -556,7 +397,7 @@
         "Tras"
       ],
       "answer": 0,
-      "why": "The English says \"When you arrive, call me.\", so the gap is Al.",
+      "why": "The English says \"When you arrive, call me.\", so it's Al.",
       "requires": [
         "g:gender-articles",
         "g:prep-infinitive",
@@ -582,7 +423,7 @@
         "después"
       ],
       "answer": 1,
-      "why": "The English says \"I go to bed after reading.\", so the gap is después.",
+      "why": "The English says \"I go to bed after reading.\", so it's después.",
       "requires": [
         "c:voy-a",
         "g:gender-articles",
@@ -612,7 +453,7 @@
         "Al"
       ],
       "answer": 1,
-      "why": "The English says \"On opening the door, Tomás sees Simón.\", so the gap is Al.",
+      "why": "The English says \"On opening the door, Tomás sees Simón.\", so it's Al.",
       "requires": [
         "g:gender-articles",
         "g:prep-infinitive",
@@ -621,32 +462,6 @@
         "l:puerta",
         "l:ver",
         "p:personal-a"
-      ]
-    },
-    {
-      "id": "x:tras-al-inf#g.prep-infinitive.rp7",
-      "node": "x:tras-al-inf",
-      "side": "g:prep-infinitive",
-      "rung": 1,
-      "en": "After paying, we leave.",
-      "es": "Después de pagar, nos vamos.",
-      "gap": [
-        0,
-        7
-      ],
-      "options": [
-        "Tras",
-        "Después"
-      ],
-      "answer": 1,
-      "why": "The English says \"After paying, we leave.\", so the gap is Después.",
-      "requires": [
-        "g:ir-a-plans",
-        "g:prep-infinitive",
-        "l:después",
-        "l:irse",
-        "l:pagar",
-        "p:time-sequence-basic"
       ]
     }
   ]

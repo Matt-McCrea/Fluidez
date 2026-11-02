@@ -140,7 +140,7 @@
         "venga"
       ],
       "answer": 1,
-      "why": "The English says \"I'm not sure he's coming. (a woman speaking)\", so the gap is venga.",
+      "why": "The English says \"I'm not sure he's coming. (a woman speaking)\", so it's venga.",
       "requires": [
         "g:adjective-agreement",
         "g:estar-location-states",
@@ -171,7 +171,7 @@
         "viene"
       ],
       "answer": 1,
-      "why": "The English says \"Are you sure he's coming? (to a man)\", so the gap is viene.",
+      "why": "The English says \"Are you sure he's coming? (to a man)\", so it's viene.",
       "requires": [
         "g:estar-location-states",
         "g:stem-boot",

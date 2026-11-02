@@ -18,7 +18,7 @@
         "parece bien"
       ],
       "answer": 0,
-      "why": "means you have no preference. This one or that one, either is fine. It answers \"this or that?\"",
+      "why": "Me da igual means you have no preference. This one or that one, either is fine. It answers \"this or that?\"",
       "requires": [
         "c:me-da-igual",
         "c:me-regala",

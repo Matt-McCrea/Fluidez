@@ -18,33 +18,7 @@
         "viajaría"
       ],
       "answer": 1,
-      "why": "The English says \"If I had money, I'd travel.\", so the gap is viajaría.",
-      "requires": [
-        "g:conditional",
-        "g:imperfect-subj",
-        "g:si-hypothetical",
-        "l:plata",
-        "l:tener",
-        "l:viajar"
-      ]
-    },
-    {
-      "id": "x:si-past-present-unreal#g.si-hypothetical.yt1",
-      "node": "x:si-past-present-unreal",
-      "side": "g:si-hypothetical",
-      "rung": 1,
-      "en": "I'd travel more.",
-      "es": "Si tuviera plata, viajaría más.",
-      "gap": [
-        18,
-        26
-      ],
-      "options": [
-        "viajo",
-        "viajaría"
-      ],
-      "answer": 1,
-      "why": "An imaginary if needs the would form in the other half.",
+      "why": "The English says \"If I had money, I'd travel.\", so it's viajaría.",
       "requires": [
         "g:conditional",
         "g:imperfect-subj",

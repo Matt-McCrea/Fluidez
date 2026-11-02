@@ -68,7 +68,7 @@
         "Conozco"
       ],
       "answer": 1,
-      "why": "The English says \"I know Mariana.\", so the gap is Conozco.",
+      "why": "The English says \"I know Mariana.\", so it's Conozco.",
       "requires": [
         "g:yo-irregular",
         "l:conocer",
@@ -92,7 +92,7 @@
         "conozco"
       ],
       "answer": 1,
-      "why": "The English says \"I don't know the neighbourhood.\", so the gap is conozco.",
+      "why": "The English says \"I don't know the neighbourhood.\", so it's conozco.",
       "requires": [
         "g:gender-articles",
         "g:yo-irregular",
@@ -117,7 +117,7 @@
         "sé"
       ],
       "answer": 1,
-      "why": "The English says \"I can't swim.\", so the gap is sé.",
+      "why": "The English says \"I can't swim.\", so it's sé.",
       "requires": [
         "c:no-se",
         "g:yo-irregular",
@@ -141,7 +141,7 @@
         "sé"
       ],
       "answer": 1,
-      "why": "The English says \"I don't know.\", so the gap is sé.",
+      "why": "The English says \"I don't know.\", so it's sé.",
       "requires": [
         "c:no-se",
         "g:yo-irregular",

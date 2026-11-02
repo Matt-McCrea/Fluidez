@@ -54,56 +54,6 @@
         "l:vez",
         "p:otro-no-article"
       ]
-    },
-    {
-      "id": "x:present-progressive#rp3",
-      "node": "x:present-progressive",
-      "side": "g:estar-gerund",
-      "rung": 1,
-      "en": "Mariana is writing.",
-      "es": "Mariana está escribiendo.",
-      "gap": [
-        8,
-        12
-      ],
-      "options": [
-        "está",
-        "es"
-      ],
-      "answer": 0,
-      "why": "The English says \"Mariana is writing.\", so the gap is está.",
-      "requires": [
-        "g:estar-gerund",
-        "g:estar-location-states",
-        "l:escribir",
-        "l:estar"
-      ]
-    },
-    {
-      "id": "x:present-progressive#rp7",
-      "node": "x:present-progressive",
-      "side": "g:estar-gerund",
-      "rung": 1,
-      "en": "Vale is washing the towels.",
-      "es": "Vale está lavando las toallas.",
-      "gap": [
-        5,
-        9
-      ],
-      "options": [
-        "está",
-        "es"
-      ],
-      "answer": 0,
-      "why": "The English says \"Vale is washing the towels.\", so the gap is está.",
-      "requires": [
-        "g:estar-gerund",
-        "g:estar-location-states",
-        "g:gender-articles",
-        "l:estar",
-        "l:lavar",
-        "l:toalla"
-      ]
     }
   ]
 }

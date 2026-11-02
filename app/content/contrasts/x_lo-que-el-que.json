@@ -47,7 +47,7 @@
         "el"
       ],
       "answer": 0,
-      "why": "The English says \"Altamira wants to buy the block, which I don't like.\", so the gap is la.",
+      "why": "The English says \"Altamira wants to buy the block, which I don't like.\", so it's la.",
       "requires": [
         "c:me-gusta",
         "g:gender-articles",
@@ -77,7 +77,7 @@
         "El"
       ],
       "answer": 1,
-      "why": "The English says \"The man you are talking about is Hernando.\", so the gap is El.",
+      "why": "The English says \"The man you are talking about is Hernando.\", so it's El.",
       "requires": [
         "g:gender-articles",
         "g:present-ar",
@@ -104,7 +104,7 @@
         "el"
       ],
       "answer": 1,
-      "why": "The English says \"Tomás talked to the owner, which helped a lot.\", so the gap is el.",
+      "why": "The English says \"Tomás talked to the owner, which helped a lot.\", so it's el.",
       "requires": [
         "g:gender-articles",
         "g:preterite-ar",

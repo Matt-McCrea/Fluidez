@@ -10,7 +10,7 @@ import { ContrastFile, type ContrastDecides, type ContrastItem } from '../../src
 import { contrastCard, contrastForm } from '../../src/ui/session/contrast-card';
 import type { McqCard } from '../../src/ui/session/cards';
 import { chance, first, longest, mean, sameWords, shortest } from '../ui/guess-play';
-import { COMMONER_LIMIT, CUE_LIMIT, pooled, score } from '../../tools/contrast/cue';
+import { COMMONER_LIMIT, CUE_LIMIT, leaning, pooled, score } from '../../tools/contrast/cue';
 
 const DIR = join(__dirname, '../../content/contrasts');
 const files: ContrastFile[] = readdirSync(DIR).filter((f) => f.endsWith('.json')).sort().map((f) => ContrastFile.parse(JSON.parse(readFileSync(join(DIR, f), 'utf8'))));
@@ -25,7 +25,8 @@ const choices = (): McqCard[] =>
 
 describe('the Guess Test: a choice card the store makes is not passed by reading nothing', () => {
   it('has a good many choice cards to say anything', () => {
-    expect(choices().length).toBeGreaterThan(500);
+    // at 400 cards, NEAR is about three standard errors
+    expect(choices().length).toBeGreaterThan(400);
   });
 
   for (const [label, play] of [['the longest option', longest], ['the shortest option', shortest], ['the first option', first]] as const) {
@@ -58,6 +59,22 @@ describe('the Guess Test: a choice card the store makes is not passed by reading
   });
 });
 
+describe('no deck of choices is passed by always tapping one word, whatever decides the contrast', () => {
+  const leans = (d: ContrastItem[]) => leaning(d).filter((p) => p.top === p.n || (p.n >= 4 && p.top / p.n > COMMONER_LIMIT));
+
+  it('no pair of options is asked again and again with the same answer, and no pair asked often leans past the Cue Test\'s limit', () => {
+    // the audit's case in another form: `hace` against `hacen` 26 times out of 29 in x:hace-desde-hace, always hace
+    const bad = of('local', 'meaning').flatMap((f) => leans(f.items).map((p) => `${f.node} ${p.pair}: ${p.top} of ${p.n}`));
+    expect(bad).toEqual([]);
+  });
+
+  it('the test can fail: a deck that always answers one word of a pair is caught', () => {
+    const row = (i: number, answer: number): ContrastItem => ({ id: `x:t#${i}`, node: 'x:t', side: 'g:a', rung: 1, en: 'e', why: 'w', requires: [], es: `Frase ${i} hace`, gap: [`Frase ${i} `.length, `Frase ${i} hace`.length], options: answer ? ['hacen', 'hace'] : ['hace', 'hacen'], answer });
+    expect(leans([row(0, 0), row(1, 1)])).toHaveLength(1);
+    expect(leans(Array.from({ length: 10 }, (_, i) => row(i, i % 2)))).toHaveLength(1);
+  });
+});
+
 describe('the Cue Test: a deck of meaning or earlier text is not passed by the words beside the gap, or by the commoner answer', () => {
   for (const d of ['meaning', 'discourse'] as const) {
     it(`the ${d} decks together: a cue table scores at most 65%, always the commoner answer at most 55%`, () => {
@@ -68,9 +85,10 @@ describe('the Cue Test: a deck of meaning or earlier text is not passed by the w
       expect(s.commoner, `commoner ${s.commoner.toFixed(3)} over ${s.n} items`).toBeLessThanOrEqual(COMMONER_LIMIT);
     });
 
-    it(`each ${d} deck of 20 or more passes by itself`, () => {
+    // the size the derive tool prunes from: below it one item is too much of the score to say anything
+    it(`each ${d} deck of 8 or more passes by itself`, () => {
       for (const f of of(d)) {
-        if (f.items.length < 20) continue;
+        if (f.items.length < 8) continue;
         const s = score(f.items);
         expect(s.cue, `${f.node} cue ${s.cue.toFixed(3)} over ${s.n}`).toBeLessThanOrEqual(CUE_LIMIT);
         expect(s.commoner, `${f.node} commoner ${s.commoner.toFixed(3)} over ${s.n}`).toBeLessThanOrEqual(COMMONER_LIMIT);

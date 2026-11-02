@@ -73,7 +73,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"Where is the meeting taking place?\", so the gap is es.",
+      "why": "The English says \"Where is the meeting taking place?\", so it's es.",
       "requires": [
         "g:gender-articles",
         "g:questions",
@@ -102,7 +102,7 @@
         "está"
       ],
       "answer": 1,
-      "why": "The English says \"Where is the café?\", so the gap is está.",
+      "why": "The English says \"Where is the café?\", so it's está.",
       "requires": [
         "c:donde-esta",
         "g:estar-location-states",
@@ -129,7 +129,7 @@
         "está"
       ],
       "answer": 0,
-      "why": "The English says \"The protest is tomorrow in the plaza.\", so the gap is es.",
+      "why": "The English says \"The protest is tomorrow in the plaza.\", so it's es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
@@ -155,7 +155,7 @@
         "es"
       ],
       "answer": 0,
-      "why": "The English says \"Mariana's office is downtown.\", so the gap is está.",
+      "why": "The English says \"Mariana's office is downtown.\", so it's está.",
       "requires": [
         "g:estar-location-states",
         "g:gender-articles",
@@ -204,7 +204,7 @@
         "es"
       ],
       "answer": 1,
-      "why": "The English says \"The meeting is in room 3.\", so the gap is es.",
+      "why": "The English says \"The meeting is in room 3.\", so it's es.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",

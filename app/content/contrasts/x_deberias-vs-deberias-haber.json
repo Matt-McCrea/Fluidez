@@ -18,7 +18,7 @@
         "haber salido"
       ],
       "answer": 0,
-      "why": "The English says \"We should leave earlier.\", so the gap is salir.",
+      "why": "The English says \"We should leave earlier.\", so it's salir.",
       "requires": [
         "g:conditional",
         "g:tener-que-hay-que",
@@ -44,7 +44,7 @@
         "haber salido"
       ],
       "answer": 1,
-      "why": "The English says \"We should have left earlier.\", so the gap is haber salido.",
+      "why": "The English says \"We should have left earlier.\", so it's haber salido.",
       "requires": [
         "g:conditional",
         "g:infinitive-perfect",
@@ -120,36 +120,6 @@
         "p:me-hubieras-dicho",
         "p:no-deberias-haberlo-hecho",
         "p:podrias-haber",
-        "p:tendrias-que"
-      ]
-    },
-    {
-      "id": "x:deberias-vs-deberias-haber#p.no-deberias-haberlo-hecho.rp3",
-      "node": "x:deberias-vs-deberias-haber",
-      "side": "p:no-deberias-haberlo-hecho",
-      "rung": 1,
-      "en": "You should have called earlier.",
-      "es": "Tendrías que haber llamado antes.",
-      "gap": [
-        19,
-        26
-      ],
-      "options": [
-        "llamado",
-        "llamada"
-      ],
-      "answer": 0,
-      "why": "The English says \"You should have called earlier.\", so the gap is llamado.",
-      "requires": [
-        "g:conditional",
-        "g:infinitive-perfect",
-        "g:verb-infinitive",
-        "l:antes",
-        "l:haber",
-        "l:llamar",
-        "l:tener",
-        "p:arrepentirse-de-haber",
-        "p:no-deberias-haberlo-hecho",
         "p:tendrias-que"
       ]
     }

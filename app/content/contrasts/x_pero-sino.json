@@ -108,30 +108,6 @@
       ]
     },
     {
-      "id": "x:pero-sino#rp3",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "I live in Usaquén.",
-      "es": "No vivo en Chapinero, sino en Usaquén.",
-      "gap": [
-        22,
-        26
-      ],
-      "options": [
-        "pero",
-        "sino"
-      ],
-      "answer": 1,
-      "why": "The English says \"I live in Usaquén.\", so the gap is sino.",
-      "requires": [
-        "c:vivo-en",
-        "g:pero-sino",
-        "g:present-er-ir",
-        "l:vivir"
-      ]
-    },
-    {
       "id": "x:pero-sino#rp4",
       "node": "x:pero-sino",
       "side": "g:pero-sino",
@@ -147,7 +123,7 @@
         "pero"
       ],
       "answer": 0,
-      "why": "The English says \"I bought arepas instead of bread.\", so the gap is sino.",
+      "why": "The English says \"I bought arepas instead of bread.\", so it's sino.",
       "requires": [
         "c:compre-trabaje",
         "g:pero-sino",
@@ -173,7 +149,7 @@
         "pero"
       ],
       "answer": 1,
-      "why": "The English says \"I bought arepas, but no bread.\", so the gap is pero.",
+      "why": "The English says \"I bought arepas, but no bread.\", so it's pero.",
       "requires": [
         "c:compre-trabaje",
         "g:preterite-ar",
@@ -198,36 +174,10 @@
         "sino"
       ],
       "answer": 0,
-      "why": "The English says \"Vale isn't my sister, but she's like one.\", so the gap is pero.",
+      "why": "The English says \"Vale isn't my sister, but she's like one.\", so it's pero.",
       "requires": [
         "g:gender-articles",
         "g:ser-identity",
-        "l:hermana",
-        "l:ser",
-        "p:possessives-basic"
-      ]
-    },
-    {
-      "id": "x:pero-sino#rp7",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "Vale is my friend.",
-      "es": "Vale no es mi hermana, sino mi amiga.",
-      "gap": [
-        23,
-        27
-      ],
-      "options": [
-        "pero",
-        "sino"
-      ],
-      "answer": 1,
-      "why": "The English says \"Vale is my friend.\", so the gap is sino.",
-      "requires": [
-        "g:pero-sino",
-        "g:ser-identity",
-        "l:amiga",
         "l:hermana",
         "l:ser",
         "p:possessives-basic"
@@ -249,7 +199,7 @@
         "pero"
       ],
       "answer": 0,
-      "why": "The English says \"We want more time, not more money.\", so the gap is sino.",
+      "why": "The English says \"We want more time, not more money.\", so it's sino.",
       "requires": [
         "g:pero-sino",
         "g:present-er-ir",
@@ -360,31 +310,6 @@
       ]
     },
     {
-      "id": "x:pero-sino#g.pero-sino.yt3",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "I don't live in Chapinero, I live in La Candelaria.",
-      "es": "No vivo en Chapinero, sino en La Candelaria.",
-      "gap": [
-        22,
-        26
-      ],
-      "options": [
-        "pero",
-        "sino"
-      ],
-      "answer": 1,
-      "why": "La Candelaria replaces Chapinero, so sino, and no need to repeat vivo.",
-      "requires": [
-        "c:vivo-en",
-        "g:gender-articles",
-        "g:pero-sino",
-        "g:present-er-ir",
-        "l:vivir"
-      ]
-    },
-    {
       "id": "x:pero-sino#g.pero-sino.rp0",
       "node": "x:pero-sino",
       "side": "g:pero-sino",
@@ -400,7 +325,7 @@
         "sino"
       ],
       "answer": 1,
-      "why": "The English says \"I want coffee instead of tea.\", so the gap is sino.",
+      "why": "The English says \"I want coffee instead of tea.\", so it's sino.",
       "requires": [
         "c:quiero",
         "g:pero-sino",
@@ -426,136 +351,13 @@
         "pero"
       ],
       "answer": 1,
-      "why": "The English says \"It isn't expensive, but I don't like it.\", so the gap is pero.",
+      "why": "The English says \"It isn't expensive, but I don't like it.\", so it's pero.",
       "requires": [
         "c:me-gusta",
         "g:gustar-basic",
         "g:ser-identity",
         "l:caro",
         "l:gustar",
-        "l:ser"
-      ]
-    },
-    {
-      "id": "x:pero-sino#g.pero-sino.rp3",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "Tomás is from Toronto.",
-      "es": "Tomás no es de Bogotá, sino de Toronto.",
-      "gap": [
-        23,
-        27
-      ],
-      "options": [
-        "sino",
-        "pero"
-      ],
-      "answer": 0,
-      "why": "The English says \"Tomás is from Toronto.\", so the gap is sino.",
-      "requires": [
-        "g:pero-sino",
-        "g:ser-identity",
-        "l:ser"
-      ]
-    },
-    {
-      "id": "x:pero-sino#g.pero-sino.rp4",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "It's small and nice.",
-      "es": "Es pequeño, pero es bonito.",
-      "gap": [
-        12,
-        16
-      ],
-      "options": [
-        "sino",
-        "pero"
-      ],
-      "answer": 1,
-      "why": "The English says \"It's small and nice.\", so the gap is pero.",
-      "requires": [
-        "g:ser-identity",
-        "l:bonito",
-        "l:pequeño",
-        "l:ser"
-      ]
-    },
-    {
-      "id": "x:pero-sino#g.pero-sino.rp5",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "I work on Tuesdays.",
-      "es": "No trabajo los lunes, sino los martes.",
-      "gap": [
-        22,
-        26
-      ],
-      "options": [
-        "sino",
-        "pero"
-      ],
-      "answer": 0,
-      "why": "The English says \"I work on Tuesdays.\", so the gap is sino.",
-      "requires": [
-        "g:gender-articles",
-        "g:pero-sino",
-        "g:present-ar",
-        "l:lunes",
-        "l:martes",
-        "l:trabajar",
-        "p:days-el-lunes"
-      ]
-    },
-    {
-      "id": "x:pero-sino#g.pero-sino.rp6",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "We're going by bus.",
-      "es": "No vamos en carro, sino en bus.",
-      "gap": [
-        19,
-        23
-      ],
-      "options": [
-        "pero",
-        "sino"
-      ],
-      "answer": 1,
-      "why": "The English says \"We're going by bus.\", so the gap is sino.",
-      "requires": [
-        "g:ir-a-plans",
-        "g:pero-sino",
-        "l:bus",
-        "l:carro",
-        "l:ir",
-        "p:transport-en"
-      ]
-    },
-    {
-      "id": "x:pero-sino#g.pero-sino.rp7",
-      "node": "x:pero-sino",
-      "side": "g:pero-sino",
-      "rung": 1,
-      "en": "Vale is from Medellín.",
-      "es": "Vale no es de Cali, sino de Medellín.",
-      "gap": [
-        20,
-        24
-      ],
-      "options": [
-        "sino",
-        "pero"
-      ],
-      "answer": 0,
-      "why": "The English says \"Vale is from Medellín.\", so the gap is sino.",
-      "requires": [
-        "g:pero-sino",
-        "g:ser-identity",
         "l:ser"
       ]
     },
@@ -575,7 +377,7 @@
         "sino"
       ],
       "answer": 1,
-      "why": "The English says \"We need more time, not more space.\", so the gap is sino.",
+      "why": "The English says \"We need more time, not more space.\", so it's sino.",
       "requires": [
         "g:pero-sino",
         "g:present-ar",

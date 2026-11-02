@@ -18,7 +18,7 @@
         "tengas"
       ],
       "answer": 1,
-      "why": "The English says \"You might be right, and I won't sign.\", so the gap is tengas.",
+      "why": "The English says \"You might be right, and I won't sign.\", so it's tengas.",
       "requires": [
         "g:present-ar",
         "g:subj-concessive",
@@ -99,7 +99,7 @@
         "llueve"
       ],
       "answer": 1,
-      "why": "The English says \"We go out even though it's raining.\", so the gap is llueve.",
+      "why": "The English says \"We go out even though it's raining.\", so it's llueve.",
       "requires": [
         "g:aunque-indicative",
         "g:present-er-ir",
