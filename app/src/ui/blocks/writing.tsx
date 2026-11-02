@@ -152,11 +152,17 @@ export function SelfCheck({ block, run, ui, onDone }: BlockProps<SelfCheckBlock>
   );
 }
 
+/** The line that marks a unit's last lesson on the close screen: the lesson just done was the unit's last. */
+export function unitEndLine(progress: CloseBlock['progress'], unit: { title: string } | undefined): string | undefined {
+  return progress && unit && progress.of > 0 && progress.done >= progress.of ? `You finished "${undash(unit.title)}".` : undefined;
+}
+
 export function Close({ block, run, more, onMore, onHome, onPractise }: BlockProps<CloseBlock> & { more: boolean; onMore: () => void; onHome: () => void; onPractise?: (spec: PracticeSpec) => void }) {
   const unit = run.bundle.unit(block.unit);
   const hook = block.hookChapter ? run.bundle.chapters.get(block.hookChapter)?.hook : undefined;
   const t = run.tally;
   const offer = block.offerAnother && more;
+  const finished = unitEndLine(block.progress, unit);
   const back = useMemo(() => { try { return lastWeekCameBack(run.learner.events(), run.learner, Date.now()); } catch { return { came: 0, of: 0 }; } }, []);
   return (
     <>
@@ -165,6 +171,7 @@ export function Close({ block, run, more, onMore, onHome, onPractise }: BlockPro
         {unit && block.progress ? (
           <>
             <p class="ask">This week</p>
+            {finished ? <p class="ok" data-unit-end>{finished}</p> : null}
             <p class="big">{undash(unit.canDo)}</p>
             <Bar value={block.progress.done} of={block.progress.of} label="Progress through this week's goal" />
             <p class="small">{block.progress.done} of {block.progress.of} lessons this week</p>
