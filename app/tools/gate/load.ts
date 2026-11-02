@@ -33,7 +33,7 @@ export function listJson(dir: string): string[] {
   if (!existsSync(dir)) return [];
   const out: string[] = [];
   for (const e of readdirSync(dir)) {
-    if (e === '_queue' || e === 'node_modules' || e.startsWith('.')) continue;
+    if (e === '_queue' || e === '_shipped' || e === '_migrations' || e === 'node_modules' || e.startsWith('.')) continue;
     const p = join(dir, e);
     const st = statSync(p);
     if (st.isDirectory()) out.push(...listJson(p));

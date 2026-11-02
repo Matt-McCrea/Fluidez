@@ -42,11 +42,15 @@
  *              (9 on an introduce day, 11 and 4 questions on a drill day, 40 per grammar node
  *              by its drill day); rows legal only at the unit end do not count (warning)
  *   tagger     low-confidence bank sentences (warning; error with --strict)
+ *   continuity (whole corpus, once content/_shipped exists) every unit day has a unique key; every
+ *              node, day, bank row, chapter, scene and writing task id that ever shipped is still in
+ *              content/ or has an entry in content/_migrations/; a retired id has not come back
  * ========================================================================== */
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, type RunState } from './gate/checks';
+import { checkContinuity, idsOfLoaded, readLegacyPath, readMigrationFiles, readShippedIds, unpackShipped } from './gate/continuity';
 import { collectItems, frameOveruse, nearDuplicates, loadQuotas, supply } from './gate/corpus';
 import { render, type Finding } from './gate/findings';
 import { buildCurriculum, listJson, loadFile, resolveTargets, type Loaded } from './gate/load';
@@ -123,6 +127,10 @@ export function runGate(o: GateOptions = {}): GateResult {
   const sup = supply(loaded, cur.units, loadQuotas(contentDir), whole ? null : touchedUnits, findings, !!o.strict, cur.completeBands);
 
   daySupply(st, loaded, whole ? null : touchedUnits);
+
+  // what a learner's saved documents name must still be there, or say where it went (needs a shipped snapshot to compare to)
+  const shipped = whole ? readShippedIds(contentDir) : undefined;
+  if (shipped) findings.push(...checkContinuity({ current: idsOfLoaded(loaded), units: cur.units, shipped: unpackShipped(shipped), legacy: readLegacyPath(contentDir), migrations: readMigrationFiles(contentDir) }));
 
   if (st.unmapped.size) {
     const list = [...st.unmapped.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}×${v}`).join(', ');

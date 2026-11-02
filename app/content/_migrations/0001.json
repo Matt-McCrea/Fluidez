@@ -1,0 +1,9 @@
+{
+ "id": 1,
+ "note": "l:profundar was not a verb; the one re-tag (5eb8941) renamed the lexeme l:profundizar. A learner who met it at u40 keeps their card under the new id.",
+ "nodes": {
+  "rename": {
+   "l:profundar": "l:profundizar"
+  }
+ }
+}

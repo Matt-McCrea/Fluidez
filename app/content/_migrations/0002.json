@@ -1,0 +1,15 @@
+{
+ "id": 2,
+ "note": "g:word-order-style, u60 top-up (bb1a54f): seven fronted questions went and five fronted answers came in under new numbers. Nobody can have reached u60 yet; the ids are recorded so the table is the whole story.",
+ "rows": {
+  "remove": [
+   "u60-t-word-order-style-0022",
+   "u60-t-word-order-style-0024",
+   "u60-t-word-order-style-0026",
+   "u60-t-word-order-style-0027",
+   "u60-t-word-order-style-0041",
+   "u60-t-word-order-style-0042",
+   "u60-t-word-order-style-0043"
+  ]
+ }
+}
