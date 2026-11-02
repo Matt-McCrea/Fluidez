@@ -335,6 +335,7 @@ export class UiStore {
    * this KV (the browser), otherwise path and ui in one write and then the learner.
    */
   async commitSession(learner: Learner, path: PathState, day: string, opts: { quick?: boolean } = {}): Promise<void> {
+    const before = { path: this.path, state: this.state };
     this.path = structuredClone(path);
     const next = structuredClone(this.state);
     applyStreak(next, day);
@@ -347,15 +348,21 @@ export class UiStore {
     this.state = next;
     this.emit();
     const shared = (learner.backing as { kv?: KV } | null)?.kv === this.kv;
-    if (shared) {
-      try { await learner.commit({ path: this.path, ui: this.state }); } catch (e) {
-        // refused: the learner's retry writes our documents too, as they are by then
-        learner.carry(() => ({ path: this.path, ui: this.state }));
-        throw e;
+    try {
+      if (shared) await learner.commit({ path: this.path, ui: this.state });
+      else {
+        await this.writeBoth();
+        await learner.flush();
       }
-    } else {
-      await this.writeBoth();
-      await learner.flush();
+    } catch (e) {
+      // refused: the close did not happen, so the documents go back. The resume
+      // point stays, the learner keeps retrying its own document, and trying the
+      // close again counts it once. A closed path must never reach the disk on
+      // its own: beside a live resume point it would advance the course twice.
+      this.path = before.path;
+      this.state = before.state;
+      this.emit();
+      throw e;
     }
   }
 

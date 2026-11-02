@@ -47,7 +47,7 @@ async function world(shared: boolean) {
   const clock = { t: new Date(2026, 9, 1, 18).getTime() };
   const now = () => clock.t;
   const kv = new FlakyKV();
-  const learner = await Learner.open(shared ? new IdbStore(kv) : new MemoryStore(), { now });
+  const learner = await Learner.open(shared ? new IdbStore(kv) : new MemoryStore(), { now, saveRetryMs: 1 });
   const ui = await new UiStore(kv).load();
   await ui.update((s) => { s.onboarded = true; });
   const bundle = fixtureBundle();
@@ -62,14 +62,19 @@ async function world(shared: boolean) {
   return { kv, learner, ui, run, saved, bundle, now };
 }
 
+/** The learner's commit tries three times before it gives up; the other path writes once. */
+const refused = (shared: boolean) => (shared ? 3 : 1);
+/** What the learner reads: the commit says it in words, the other path passes the store's own error. */
+const said = (shared: boolean) => (shared ? "Couldn't save just now" : 'The disk is full');
+
 /** What a fresh boot would read back. */
 const stored = async (kv: MemoryKV) => { const ui = await new UiStore(kv).load(); return { sessions: ui.state.stats.sessions, core: ui.path.coreSessions }; };
 
 describe.each([['one store for everything', true], ['the learner apart', false]])('a refused write at the end of a lesson (%s)', (_, shared) => {
   it('finish() rejects, is not finished, and works when tried again; the session counts once', async () => {
     const w = await world(shared);
-    w.kv.refusing = 1;
-    await expect(w.run.finish()).rejects.toThrow('The disk is full');
+    w.kv.refusing = refused(shared);
+    await expect(w.run.finish()).rejects.toThrow(said(shared));
     expect(w.run.finished).toBe(false);
     expect(w.kv.data.has(SESSION_KEY), 'the resume point stays until the close is saved').toBe(true);
 
@@ -82,7 +87,7 @@ describe.each([['one store for everything', true], ['the learner apart', false]]
 
   it('two refusals in a row still count the session once', async () => {
     const w = await world(shared);
-    w.kv.refusing = 2;
+    w.kv.refusing = 2 * refused(shared);
     await expect(w.run.finish()).rejects.toThrow();
     await expect(w.run.finish()).rejects.toThrow();
     await w.run.finish();
@@ -93,8 +98,8 @@ describe.each([['one store for everything', true], ['the learner apart', false]]
   it('stop() is the same: rejects, can be tried again, counts once and does not advance the course', async () => {
     const w = await world(shared);
     const day = w.ui.path.day, unit = w.ui.path.unit;
-    w.kv.refusing = 1;
-    await expect(w.run.stop()).rejects.toThrow('The disk is full');
+    w.kv.refusing = refused(shared);
+    await expect(w.run.stop()).rejects.toThrow(said(shared));
     expect(w.run.finished).toBe(false);
 
     await w.run.stop();
@@ -104,6 +109,15 @@ describe.each([['one store for everything', true], ['the learner apart', false]]
     expect(w.ui.path).toMatchObject({ day, unit });
     expect((await stored(w.kv)).sessions).toBe(1);
     expect(w.kv.data.has(PATH_KEY)).toBe(true);
+  });
+
+  it('a refused close that is never tried again leaves the course where it was', async () => {
+    const w = await world(shared);
+    w.kv.refusing = refused(shared);
+    await expect(w.run.finish()).rejects.toThrow();
+    await w.learner.flush();
+    expect(await stored(w.kv)).toEqual({ sessions: 0, core: 0 });
+    expect(w.kv.data.has(SESSION_KEY), 'the next open resumes the close and counts it once').toBe(true);
   });
 
   it('a close that was saved the first time is unchanged: a second call is a no-op', async () => {
@@ -153,13 +167,12 @@ describe('the session screen when the close is refused', () => {
 
   it.each([['one store for everything', true], ['the learner apart', false]])('the last block ends in a way to try again, not a screen stuck on Saving (%s)', async (_, shared) => {
     const w = await open(shared);
-    w.kv.refusing = 1;
+    w.kv.refusing = refused(shared);
     w.press((n) => typeof n.props?.onDone === 'function' && n.props.run, 'onDone');
-    await w.settle();
+    await vi.waitFor(() => expect(w.text(w.draw())).not.toContain('Saving'), { timeout: 2000 });
     let tree = w.draw();
-    expect(w.text(tree)).not.toContain('Saving');
     expect(w.find(tree, (n) => n.props?.title === "That didn't save"), 'the screen says it did not save').toHaveLength(1);
-    expect(w.text(tree)).toContain('The disk is full');
+    expect(w.text(tree)).toContain(said(shared));
     expect(w.ui.state.stats.sessions).toBe(0);
 
     w.press((n) => n.props?.label === 'Try again');
@@ -192,8 +205,7 @@ describe('the other screens that wait for a save', () => {
     d.press((n) => n.props?.['data-primary'] !== undefined);
     w.kv.full = true;
     d.press((n) => n.props?.['data-zero'] !== undefined);
-    await d.settle();
-    expect(onDone).toHaveBeenCalledTimes(1);
+    await vi.waitFor(() => expect(onDone).toHaveBeenCalledTimes(1), { timeout: 2000 });
     expect(w.ui.state.onboarded).toBe(true);
   });
 
@@ -207,7 +219,6 @@ describe('the other screens that wait for a save', () => {
     expect(d.find(d.draw(), (n) => n.props?.finishLabel === 'Done'), 'the chapter is open').toHaveLength(1);
     w.kv.full = true;
     d.press((n) => n.props?.finishLabel === 'Done', 'onFinish');
-    await d.settle();
-    expect(d.find(d.draw(), (n) => n.props?.finishLabel === 'Done'), 'back on the list of chapters').toHaveLength(0);
+    await vi.waitFor(() => expect(d.find(d.draw(), (n) => n.props?.finishLabel === 'Done'), 'back on the list of chapters').toHaveLength(0), { timeout: 2000 });
   });
 });

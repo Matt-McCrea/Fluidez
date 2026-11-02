@@ -163,7 +163,6 @@ export class Learner {
   private failures = 0;
   private cause: unknown;
   private retryTimer: ReturnType<typeof setTimeout> | undefined;
-  private carried: (() => SaveExtra) | undefined;
   private problem: string | undefined;
   private readonly watchers = new Set<() => void>();
   private readonly retryMs: number;
@@ -288,26 +287,24 @@ export class Learner {
   }
 
   /**
-   * One attempt to write what is dirty, and `extra` (or what an earlier refused
-   * commit left to carry) beside it in one transaction. Says whether it landed;
-   * a refusal keeps everything dirty so the next attempt writes it again.
+   * One attempt to write what is dirty, and `extra` beside it in one transaction.
+   * Says whether it landed; a refusal keeps everything dirty so the next attempt
+   * writes it again.
    */
   private async write(extra?: SaveExtra): Promise<boolean> {
     const store = this.store!;
     const hadEvents = this.eventsDirty;
-    if (!extra && !this.carried && !this.dirty) return true;
+    if (!extra && !this.dirty) return true;
     this.dirty = false;
     this.eventsDirty = false;
     try {
-      const extras = extra ?? this.carried?.();
       const state = structuredClone(this.state);
       const events = hadEvents ? structuredClone(this.log) : undefined;
-      if (extras && store.saveAll) await store.saveAll({ state, events, ...extras });
+      if (extra && store.saveAll) await store.saveAll({ state, events, ...extra });
       else {
         await store.save(state);
         if (events && store.saveEvents) await store.saveEvents(events);
       }
-      if (extras) this.carried = undefined;
     } catch (e) {
       this.dirty = true;
       if (hadEvents) this.eventsDirty = true;
@@ -376,16 +373,6 @@ export class Learner {
     if (this.halted) return;
     if (!this.store.saveAll) { await this.flush(); await fallback?.(); return; }
     await this.insist(() => this.write(extra));
-  }
-
-  /**
-   * After a commit was refused: the next write carries the documents `extra`
-   * returns, asked for afresh each time so a retry never writes an old copy.
-   */
-  carry(extra: () => SaveExtra): void {
-    this.carried = extra;
-    this.dirty = true;
-    this.touch();
   }
 
   /**

@@ -127,20 +127,21 @@ describe('a session commit the store refused', () => {
     override async setMany(e: [string, unknown][]) { if (this.down) throw new Error('quota'); await super.setMany(e); }
   }
 
-  test('is written by the retry once the store works, with the ui document as it stands then', async () => {
+  test('never reaches the disk by itself: the retry saves the learner, and only a new close writes the path', async () => {
     const kv = new SwitchKV();
     const learner = await Learner.open(new IdbStore(kv), { saveRetryMs: 2 });
     const ui = await new UiStore(kv).load();
     learner.startSession();
     kv.down = true;
     await expect(ui.commitSession(learner, { ...initialPath(), coreSessions: 1 }, '2026-01-01')).rejects.toBeInstanceOf(SaveFailedError);
-    expect(kv.data.has('path')).toBe(false);
+    expect(ui.state.stats.sessions, 'the documents went back').toBe(0);
+    expect(ui.path.coreSessions).toBe(0);
     kv.down = false;
-    await ui.update((s) => { s.goal = 'work'; });
-    await vi.waitFor(() => expect((kv.data.get('path') as any)?.coreSessions).toBe(1), { timeout: 2000 });
     await vi.waitFor(() => expect((kv.data.get('state') as any)?.session.index).toBe(1), { timeout: 2000 });
-    expect(kv.data.get('ui')).toEqual(ui.state);
+    expect((kv.data.get('path') as any)?.coreSessions ?? 0, 'a closed path beside a live resume point would advance the course twice').toBe(0);
+
+    await ui.commitSession(learner, { ...initialPath(), coreSessions: 1 }, '2026-01-01');
+    expect((kv.data.get('path') as any).coreSessions).toBe(1);
     expect((kv.data.get('ui') as any).stats.sessions).toBe(1);
-    expect((kv.data.get('ui') as any).goal).toBe('work');
   });
 });

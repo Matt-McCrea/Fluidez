@@ -571,20 +571,12 @@ export class SessionRunner {
   }
 
   /**
-   * Save the close and only then call the session finished. `commitSession`
-   * changes the UI documents in memory before it writes them, so when the write
-   * is refused they are put back: the call rejects, the resume point stays, and
-   * trying again counts the session once.
+   * Save the close and only then call the session finished. When the write is
+   * refused `commitSession` puts the UI documents back and rejects: the resume
+   * point stays, and trying again counts the session once.
    */
   private async commitClose(path: PathState, stopped = false): Promise<void> {
-    const before = { state: this.ui.state, path: this.ui.path };
-    try {
-      await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
-    } catch (e) {
-      this.ui.state = before.state;
-      this.ui.path = before.path;
-      throw e;
-    }
+    await this.ui.commitSession(this.learner, path, this.learner.day(this.now()), this.quick ? { quick: true } : undefined);
     this.finished = true;
     this.stopped = stopped;
     await this.ui.clearSession();
