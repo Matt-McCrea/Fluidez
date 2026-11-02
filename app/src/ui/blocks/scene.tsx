@@ -8,7 +8,7 @@ import { AnswerField } from '../components/answer';
 import { Continue } from '../components/card';
 import { Es, Heading, Rich, fmtSeconds, undash } from '../components/text';
 import { blockHeading } from '../session/labels';
-import { bundleLexicon, checkTurn, turnOrder, turnSeconds, type SceneTurn, type TurnCheck } from '../session/scene';
+import { bundleLexicon, checkTurn, sceneVerdict, turnOrder, turnSeconds, type SceneTurn, type TurnCheck } from '../session/scene';
 import type { BlockProps } from './types';
 
 interface TurnLog { turn: SceneTurn; first: string; firstCheck: TurnCheck; second?: string; secondCheck?: TurnCheck }
@@ -99,13 +99,14 @@ export function ScenePlay({ block, run, onDone }: BlockProps<SceneBlock | SceneR
   if (stage === 'end') {
     const firstTry = log.filter((l) => l.firstCheck.pass).length;
     const before = run.scenes.get(scene.id);
+    const landed = log.every((l) => l.firstCheck.pass || l.secondCheck?.pass);
     return (
       <>
-        <Heading title={timed ? 'Faster this time' : 'You did it'} />
+        <Heading title={timed ? 'Faster this time' : landed ? 'You did it' : 'Scene done'} />
         <section class="card">
           {timed && before
             ? <p>First run: {before.firstTry} of {before.turns} right first time. Now: {firstTry} of {turns.length}, in {fmtSeconds(total.current)}.</p>
-            : <p>They understood you. {firstTry} of {turns.length} replies landed first time{firstTry < turns.length ? ', and you fixed the rest' : ''}.</p>}
+            : <p>{sceneVerdict(log.map((l) => ({ first: l.firstCheck.pass, second: l.secondCheck?.pass })))}</p>}
           <div class="actions"><Continue onClick={onDone} /></div>
         </section>
       </>
