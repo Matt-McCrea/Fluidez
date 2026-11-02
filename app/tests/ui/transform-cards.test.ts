@@ -6,13 +6,28 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import type { PracticeItem } from '../../src/compiler';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { ContentLoader } from '../../src/ui/data/loader';
-import { practiceCard, type Card } from '../../src/ui/session/cards';
+import { practiceCard, reviewCard, type Card } from '../../src/ui/session/cards';
 
 let b: Bundle;
 beforeAll(async () => { b = await new ContentLoader().load({ band: 'A1' }); }, 60_000);
 
 const item = (op: 'transform' | 'recombine', id: string, node: string) => ({ op, id: `${op}:${id}`, node, sentence: id, direction: 'productive', scoring: 'exposure', credit: [] }) as unknown as PracticeItem;
 const TENSE_ASK = /happened yesterday|like this before|will happen|Say it was/i;
+
+describe('a review card of a sentence from a later unit', () => {
+  it('goes by what the learner was taught, not by the unit the sentence is from', () => {
+    // the warm-up and the recap: a u05 sentence every word of which the learner knows by u03
+    const rows = b.bank.filter((s) => s.id.startsWith('u05-') && s.targets[0]).slice(0, 200);
+    expect(rows.length).toBeGreaterThan(50);
+    for (const s of rows) {
+      for (let session = 0; session < 20; session++) {
+        const item = { op: 'review', id: `rv:${s.id}`, node: s.targets[0], targets: [s.targets[0]], direction: 'productive', novel: false, scoring: 'review', credit: [s.targets[0]], sentence: s.id } as never;
+        const c = reviewCard(item, b, 'meaning', session, ['presente']);
+        expect(`${(c as { sub?: { text: string } }).sub?.text}`, s.es).not.toMatch(TENSE_ASK);
+      }
+    }
+  }, 60_000);
+});
 
 describe('transform cards over real sentences', () => {
   it('never ask for a tense the unit has not taught', () => {

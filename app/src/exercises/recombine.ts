@@ -19,7 +19,7 @@ import type { BankSentence } from '../content/schema';
 import type { Person, TenseKey } from '../engine';
 import { turnViews, type TurnView } from './dialogue';
 import { enChangePerson, enNegate, enPronounFor, glossForms } from './english';
-import { FREQUENCY, opensClean, refusal, tenseOf } from './licence';
+import { fixedInTime, opensClean, refusal, tenseOf } from './licence';
 import { changePerson, changeTense, negate, pronominalise } from './reinflect';
 import { hash32, itemId, rng, shuffle, shuffled } from './rng';
 import {
@@ -140,7 +140,7 @@ export function recombinations(row: BankSentence, opts: RecombineOptions = {}): 
   const tenses: TenseKey[] = (['presente', /^(ser|estar|tener|saber|conocer|querer|poder)$/.test(inf) ? 'imperfecto' : 'preterito', 'futuro'] as TenseKey[]).filter((t) => t !== tense);
   for (const t of tenses) {
     if (tense === 'imperfecto' && t === 'preterito') continue;
-    if (!taughtIn(t) || !opensClean(c) || FREQUENCY.test(s.es)) continue;
+    if (!taughtIn(t) || !opensClean(c) || fixedInTime(s.es)) continue;
     const re = changeTense(c, t, { stripTime: true });
     if (!re || !novel(re.es)) continue;
     const { options, answer } = { options: [...WHEN], answer: whenOf(t) };

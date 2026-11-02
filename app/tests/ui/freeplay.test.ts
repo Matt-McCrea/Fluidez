@@ -220,7 +220,39 @@ describe('a miss belongs to the node being trained', () => {
   }, 60_000);
 });
 
+describe('the translation grind', () => {
+  it('charges the sentence it asked about to one node, and counts the rest as seen', async () => {
+    const bundle = await new ContentLoader().load({ band: 'A1' });
+    const t = new Date(2026, 9, 1, 18).getTime();
+    const learner = await Learner.open(new MemoryStore(), { now: () => t });
+    applyPlacement(learner, bundle, 8, t);
+    const fp = new Freeplay({ kind: 'translate' }, { learner, bundle, now: () => t, rng: rng('grind') });
+    const seen = () => learner.nodes().reduce((n, id) => n + (learner.node(id)?.exposures ?? 0), 0);
+    const before = seen();
+    let cards = 0;
+    while (fp.next() && cards < 12) { fp.answer({ correct: false, tries: 2, ms: 1000 }); cards++; }
+    const ev = learner.events().filter((e) => e.op === 'grind');
+    expect(cards).toBe(12);
+    expect(ev.length).toBeLessThanOrEqual(cards);
+    expect(seen() - before).toBeGreaterThan(cards);
+  }, 60_000);
+});
+
 describe('Train it with nothing to practise', () => {
+  it('names the week of a node whose unit is not loaded, instead of saying it has no sentences', async () => {
+    const bundle = await new ContentLoader().load({ unit: 0 });
+    const t = new Date(2026, 9, 1, 18).getTime();
+    const learner = await Learner.open(new MemoryStore(), { now: () => t });
+    const node = [...bundle.course.teachPos.keys()].find((n) => n.startsWith('g:') && !bundle.index.byTarget.has(n) && !bundle.index.byRequire.has(n) && bundle.course.teachPos.get(n)! > bundle.course.unitStart[20])!;
+    expect(node).toBeTruthy();
+    const fp = new Freeplay({ kind: 'nodes', nodes: [node] }, { learner, bundle, now: () => t, rng: rng('x') });
+    expect(fp.next()).toBeUndefined();
+    const week = Number(fp.emptyReason?.match(/week (\d+)\.$/)?.[1] ?? 0);
+    expect(week, fp.emptyReason).toBeGreaterThan(20);
+    expect(week).toBeLessThanOrEqual(bundle.course.units.length);
+  }, 60_000);
+
+
   it('names a week of the course, never a priority number', async () => {
     const bundle = await new ContentLoader().load({ band: 'A1' });
     const t = new Date(2026, 9, 1, 18).getTime();

@@ -37,6 +37,8 @@ const NOUN_FORMS = new Set(['mamá', 'mamás', 'papá', 'papás', 'sofá', 'sof�
 /** Words that open a clause that has its own verb after it. */
 const SUBORDINATORS = new Set(['cuando', 'si', 'aunque', 'porque', 'que', 'donde', 'mientras', 'como', 'después', 'antes', 'hasta', 'ni', 'pues', 'apenas', 'cuanto', 'según']);
 /** Words that open a sentence with a capital and are not names: a time word in front of them lowers them. */
+/** Words that, in front of the verb, make it the verb of a smaller clause: "Se basa en lo que vi", "A medida que se acaba el año". */
+const INSIDE_A_CLAUSE = new Set(['que', 'cuando', 'si', 'porque', 'aunque', 'donde', 'cual', 'quien', 'quienes', 'mientras']);
 const OPENERS = new Set([
   'poco', 'poca', 'pocos', 'pocas', 'mucho', 'mucha', 'muchos', 'muchas', 'bastante', 'bastantes', 'casi', 'solo', 'sólo', 'tan', 'tanto', 'tanta',
   'medio', 'difícil', 'fácil', 'imposible', 'todo', 'toda', 'todos', 'todas', 'nadie', 'nada', 'alguien', 'algo', 'ambos', 'varios', 'varias',
@@ -47,6 +49,16 @@ const OPENERS = new Set([
 ]);
 /** How often, said in words: "Ayer raras veces" contradicts itself, and "raras veces no" is a double negative. */
 export const FREQUENCY = /(^|[\s¿¡])(rara vez|raras veces|a menudo|de vez en cuando|con frecuencia|frecuentemente|casi siempre|casi nunca|cada vez|mientras tanto)(?=[\s,.!?;:]|$)/i;
+
+/**
+ * A time already said in the sentence that a new time word or tense would
+ * contradict: "Ayer Mariana trabajó en prensa desde hace diez años", "Mañana
+ * cada viernes", "Ayer este mes", "Antes en diciembre". timeSpans knows the
+ * words it can cut out; these are the ones it cannot.
+ */
+const TIME_NOUN = 'días?|semanas?|mes(?:es)?|años?|noches?|mañanas?|tardes?|ratos?|horas?|minutos?|lunes|martes|miércoles|jueves|viernes|sábados?|domingos?|fines|veces|veranos?|inviernos?';
+const SAID_WHEN = new RegExp(`(^|[\\s¿¡,])(desde hace|hace (?:una?|unos|unas|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|veinte|treinta|cuarenta|cincuenta|cien|muchos?|muchas?|poco|tiempo|años|meses|días|semanas)|dentro de|a (?:fines|finales|principios|mediados) de|los fines de semana|cada (?:\\S+ )?(?:${TIME_NOUN})|(?:tod[oa]s l[oa]s|casi tod[oa]s l[oa]s|por l[oa]s|algunos|algunas|muchos|muchas|pocas|est[ea]s?|estos|es[ea]s?|esos|el próximo|la próxima|próximo|próxima|el pasado|la pasada) (?:${TIME_NOUN})|(?:el |la )?(?:${TIME_NOUN}) (?:próxim[oa]|pasad[oa])|en (?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|invierno|verano|primavera|otoño|navidad))(?=[\\s,.!?;:]|$)`, 'i');
+export const fixedInTime = (es: string): boolean => FREQUENCY.test(es) || SAID_WHEN.test(es);
 
 /** The tense a clause is really in: haber + participle is the perfect, not the present of haber. */
 const COMPOUND: Partial<Record<TenseKey, TenseKey>> = {
@@ -72,6 +84,11 @@ export function refusal(c: Clause, en: string): string | null {
   if (NEVER_THE_VERB.has(verb.toLowerCase())) return 'not a verb here';
   if (c.verb > 0 && isCapital(verb)) return 'a name, not a verb';
   if (c.verb > 0 && SUBORDINATORS.has(low(ts[0]))) return 'opens with a clause of its own';
+  if (ts.slice(0, c.verb).some((t) => INSIDE_A_CLAUSE.has(low(t)))) return 'the verb of a smaller clause';
+  // "Qué enredo tan grande armó Altamira": an exclamation, and the word after it is its noun
+  if (c.verb > 0 && /^(qué|cómo|cuánto|cuánta|cuántos|cuántas)$/.test(low(ts[0])) && !ts.some((t) => /\?/.test(t.post))) return 'an exclamation';
+  // "Por lo visto": lo after a preposition is the article of a set phrase, not a pronoun on a verb
+  if (c.proclitics.length && PREPOSITIONS.has(low(ts[c.proclitics[0] - 1]))) return 'not a verb here';
   for (let i = 0; i < ts.length; i++) {
     const core = ts[i].core;
     const l = low(ts[i]);

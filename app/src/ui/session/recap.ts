@@ -8,6 +8,7 @@ import type { NodeId } from '../../content/schema';
 import type { Direction, Learner } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import { learnRetrieval, reviewCard, type Card } from './cards';
+import type { TenseKey } from '../../engine';
 
 export interface Lapse { node: NodeId; direction: Direction; sentence?: string }
 
@@ -70,11 +71,11 @@ export function planRecap(i: RecapInput): RecapItem[] {
 }
 
 /** The card for a recap item, through the same builders as the warm-up and the learn pool. */
-export function recapCard(it: RecapItem, b: Bundle): Card {
+export function recapCard(it: RecapItem, b: Bundle, taught?: readonly TenseKey[]): Card {
   if (it.kind === 'new' && it.learn) return { ...learnRetrieval(it.learn, b, it.round ?? 0), key: it.id };
   const r: ReviewItem = {
     op: 'review', id: it.id, scoring: 'review', credit: it.credit, node: it.node, targets: [it.node],
     direction: it.direction, sentence: it.sentence, novel: !it.reused,
   };
-  return reviewCard(r, b);
+  return reviewCard(r, b, 'meaning', undefined, taught);
 }

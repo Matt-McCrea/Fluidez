@@ -27,9 +27,9 @@ import { PERSONS, PRODUCTION_PERSONS, verbByInf } from '../engine';
 import type { Person, TenseKey } from '../engine';
 import { conjugateBareCells } from '../engine/conjugate';
 import { isMultiTurn, turnViews, withContext } from './dialogue';
-import { FREQUENCY, opening, opensClean, refusal, tenseOf } from './licence';
+import { fixedInTime, opening, opensClean, refusal, tenseOf } from './licence';
 import { itemId, rng, shuffle, shuffled } from './rng';
-import { changePerson, changeTense, form, negate, pronominalise } from './reinflect';
+import { changePerson, changeTense, form, goingTo, negate, pronominalise } from './reinflect';
 import {
   SUBJECT_PRONOUNS, enSubject, enWords, low, parseClause, render, replaceCore, sentenceKey,
   timeSpans, verbReadings, type Clause, type Tok,
@@ -243,7 +243,7 @@ function transformsOf(s: BankSentence, { taught, names }: Pick<LadderOptions, 't
   // how often ("Ayer raras veces…") and, for states (tener, ser, saber…), only
   // to "how it used to be" — "Ayer tuve dos hermanos" is grammatical and
   // nonsense.
-  if (lead && !timeSpans(c.toks).length && c.participle < 0 && !/[?¡]/.test(s.es) && opensClean(c) && !FREQUENCY.test(s.es)) {
+  if (lead && !timeSpans(c.toks).length && c.participle < 0 && !/[?¡]/.test(s.es) && opensClean(c) && !fixedInTime(s.es)) {
     const copula = STATIVE.has(c.choice.inf);
     const lower = lead === 'lower';
     if (c.choice.tense === 'presente') {
@@ -254,11 +254,11 @@ function transformsOf(s: BankSentence, { taught, names }: Pick<LadderOptions, 't
         out.push(transform(s, `tense:${pastTense}`, copula ? 'Say it was like this before: start with "Antes".' : 'Say it happened yesterday: start with "Ayer".', { op: 'tense', to: pastTense }, opened(past.toks, word, lower), []));
       }
       // "voy a ir" has no future of its own
-      const fut = copula || !taughtIn('futuro') || (c.choice.inf === 'ir' && c.complement >= 0) ? null : changeTense(c, 'futuro');
+      const fut = copula || !taughtIn('futuro') || goingTo(c) ? null : changeTense(c, 'futuro');
       if (fut) {
         const accept = [opened(c.toks, 'Mañana', lower)];
         const ir = form('ir', 'presente', c.choice.person);
-        if (ir && !c.reflexive && c.complement < 0) {
+        if (ir && !c.reflexive && !/se$/.test(c.choice.inf) && c.complement < 0) {
           const t2 = replaceCore(c.toks, c.verb, `${ir} a ${c.choice.inf}`);
           accept.push(opened(t2, 'Mañana', lower));
         }

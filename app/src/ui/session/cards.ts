@@ -411,7 +411,7 @@ function taughtAt(b: Bundle, unit: string | undefined): TenseKey[] {
 const transformsFor = (s: BankSentence, b: Bundle, taught?: readonly TenseKey[]) => transformItems(s, { taught: taught ?? taughtAt(b, s.unit), names: namesOf(b.bank) });
 
 /** Who a sentence is about, said after "about": the person a transform changed it to. */
-const ABOUT: Readonly<Record<string, string>> = { yo: 'yourself', 'tú': 'the person you are talking to', 'él/ella': 'him or her', nosotros: 'the two of you', ellos: 'them' };
+const ABOUT: Readonly<Record<string, string>> = { yo: 'yourself', 'tú': 'the person you are talking to', 'él/ella': 'him or her', nosotros: 'us', ellos: 'them' };
 /** The reason shown with a transform's right version: the sentence, then what was asked of it, worded to read after it. */
 function transformWhy(t: TransformItem): string {
   const done = stopped(t.answer);

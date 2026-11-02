@@ -195,7 +195,9 @@ export class Freeplay {
       const weeks = (index.sentences.get(id)?.requires ?? []).filter((r) => !known.has(r)).map(weekOf);
       if (weeks.length && weeks.every((w): w is number => w !== undefined)) soonest = Math.min(soonest, Math.max(...weeks));
     }
-    if (!ids.size) return 'There are no practice sentences for this one yet.';
+    // its unit is not loaded yet, or nothing is written for it: the node's own place in the course tells them apart
+    if (!ids.size && !known.has(node) && weekOf(node) !== undefined) soonest = weekOf(node)!;
+    if (!ids.size && !Number.isFinite(soonest)) return 'There are no practice sentences for this one yet.';
     return Number.isFinite(soonest)
       ? `The examples for this use things you have not met yet. It comes up in week ${soonest}.`
       : 'The examples for this use things you have not met yet.';
@@ -412,9 +414,7 @@ export class Freeplay {
       this.lastOp = 'translate';
       this.cur = {
         grade: (o) => {
-          learner.expose(ref.requires, {
-            at: this.d.now(), event: { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel },
-          });
+          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
           this.markSeen(sentence);
         },
       };
