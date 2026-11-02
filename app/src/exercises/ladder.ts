@@ -119,7 +119,13 @@ export interface GapAnalysis {
  * The bank row carries the characters the taught feature sits on (focus). A verb gap is only on
  * target when the verb is inside it; otherwise the span is searched for a word of a small family
  * table. The verb's distractors come from the engine; these come from the tables. */
-const POR_PARA = ['por', 'para', 'a', 'en', 'de', 'con'];
+// no a or en: "a la semana", "en todas partes" and "en la mañana" are right too
+const POR_PARA = ['por', 'para', 'de', 'con'];
+/** por + this also takes en with the same meaning (en todas partes, en ningún lado, en la tarde). */
+const takesEnToo = (next: string, after: string) => /^(?:tod[oa]s?|ningún|ninguna|algún|alguna|cualquier)$/.test(next) || (next === 'la' && /^(?:mañana|tarde|noche)$/.test(after));
+/** Nouns that do not show their gender: the English cannot tell los clientes from las clientes. */
+const COMMON_GENDER = /^(?:.+ista|cliente|estudiante|joven|jóvenes|colega|gerente|representante|testigo|policía|paciente|cantante|presidente|agente|adolescente|asistente)s?$/;
+const GENDER_TWIN: Readonly<Record<string, string>> = { lo: 'la', la: 'lo', los: 'las', las: 'los' };
 const RELATIVES = ['que', 'quien', 'quienes', 'donde', 'cuando', 'como', 'cual'];
 const ARTICLE_SETS: readonly (readonly string[])[] = [['el', 'la', 'los', 'las'], ['un', 'una', 'unos', 'unas']];
 const CLITIC_SETS: readonly (readonly string[])[] = [['me', 'te', 'se', 'nos'], ['lo', 'la', 'los', 'las'], ['le', 'les', 'se']];
@@ -132,9 +138,10 @@ const FAMILIES: ReadonlyArray<{ id: string; words: readonly string[]; options: (
 const CLITIC_NODE = /pronoun|object|clitic/;
 
 /** The focus span a gap must fall in, or null when the sentence names none for this node: no span on
- *  the row, or a node the row does not target (a new-word gap is about the word, not the grammar). */
+ *  the row, or a node other than the first target, which is the one the span is computed for (a
+ *  new-word gap is about the word, not the grammar). */
 function focusOf(s: BankSentence, node?: string): [number, number] | null {
-  if (!s.focus || (node !== undefined && !s.targets.includes(node))) return null;
+  if (!s.focus || (node !== undefined && s.targets[0] !== node)) return null;
   return s.focus[1] <= s.es.length ? s.focus : null;
 }
 
@@ -158,12 +165,23 @@ function particleGap(s: BankSentence, span: [number, number], nodes: readonly st
   if (hits.length !== 1) return null;
   const i = hits[0];
   const w = low(ts[i]);
+  // the decision there is the verb after it, and "Espero ___ podamos" asks nothing: que beats quien at sight
+  if (/subj/.test(nodes[0] ?? '') || (w === 'que' && !/relative|that-clauses/.test(nodes[0] ?? ''))) return null;
   const clitic = nodes.some((n) => CLITIC_NODE.test(n));
   const fams = FAMILIES.filter((f) => f.words.includes(w));
   const fam = (clitic && fams.find((f) => f.id === 'clitic')) || fams[0];
-  const wrong = [...new Set(fam.options(w))].filter((x) => x !== w);
+  const next = ts[i + 1] ? low(ts[i + 1]) : '';
+  if (fam.id === 'porpara' && takesEnToo(next, ts[i + 2] ? low(ts[i + 2]) : '')) return null;
+  if (fam.id === 'article') {
+    // an article is the decision only when the span is that word: in a wider one it is just there
+    if (ts[i].core.length !== span[1] - span[0] && !nodes[0]?.includes('article')) return null;
+    if (COMMON_GENDER.test(next)) return null;
+  }
+  // "Ya ___ compré" for "I already bought it": lo and la both fit unless the English says him or her
+  const twin = fam.id === 'clitic' && GENDER_TWIN[w] && verbReadings(next).length > 0 && !/\b(?:him|her)\b/i.test(s.en) ? GENDER_TWIN[w] : undefined;
+  const wrong = [...new Set(fam.options(w))].filter((x) => x !== w && x !== twin);
   return {
-    gapped: render(replaceCore(ts, i, '___')), key: w, cue: '', answer: w, accept: [w], wrong, near: wrong.slice(0, 3),
+    gapped: render(replaceCore(ts, i, '___')), key: w, cue: '', answer: w, accept: twin ? [w, twin] : [w], wrong, near: wrong.slice(0, 3),
   };
 }
 
@@ -228,7 +246,7 @@ export function gapTurn(row: BankSentence, taught?: readonly TenseKey[], node?: 
   const views = turnViews(row);
   // a dialogue row with a focus span is gapped only in the turn that holds it
   const held = views.filter((x) => x.sentence.focus !== undefined);
-  for (const v of row.focus && isMultiTurn(row) ? held : views) {
+  for (const v of focusOf(row, node) && isMultiTurn(row) ? held : views) {
     const g = analyseGap(v.sentence, taught, node);
     if (g) return { g, s: v.sentence, context: v.context };
   }

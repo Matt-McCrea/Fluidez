@@ -25,13 +25,14 @@ describe('a word on a choice card', () => {
     const by = new Map<string, typeof lexemes>();
     for (const n of lexemes) for (const t of [b.segments(n.id)[0]?.es, b.segments(n.id)[0]?.en]) if (t) by.set(t, [...(by.get(t) ?? []), n]);
     const names = namesOf(b.bank);
+    const early = (n: { band?: string }) => n.band === 'A1' || n.band === 'A2';
     const bad: string[] = [];
     let cards = 0, typed = 0;
     for (const n of lexemes) {
       const item: LearnItem = { op: 'learn', id: `ln:${n.id}`, node: n.id, nodeKind: n.kind, retrievals: 4, productive: true, scoring: 'learning', credit: [n.id] };
       for (const round of [0, 1]) {
         const c = learnRetrieval(item, b, round);
-        if (c.type !== 'mcq') { if (round === 0) typed++; continue; }
+        if (c.type !== 'mcq') { if (round === 0 && early(n)) typed++; continue; }
         cards++;
         const right = c.options[c.answer].text;
         const gloss = c.options.every((o) => o.lang === 'en');
@@ -48,10 +49,10 @@ describe('a word on a choice card', () => {
         });
       }
     }
-    expect(cards).toBeGreaterThan(5000);
+    expect(cards).toBeGreaterThan(2500);   // from B1 a word's first ask is typed (firstContactFormat), so only round 1 is a choice there
     expect(bad.slice(0, 15)).toEqual([]);
     // a word with no two neighbours is typed instead; that is the exception
-    expect(typed / lexemes.length).toBeLessThan(0.02);
+    expect(typed / lexemes.filter(early).length).toBeLessThan(0.02);
   });
 });
 

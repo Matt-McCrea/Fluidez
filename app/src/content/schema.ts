@@ -89,9 +89,9 @@ export const BankSentence = z.object({
   acceptEn: z.array(z.string()).default([]), // other correct English for the es prompt
   requires: z.array(NodeId).default([]),     // grammar/pattern/chunk/lexeme nodes; computed by the tagger
   targets: z.array(NodeId).default([]),      // nodes this sentence was written to practise
-  // where in es the decision on a target sits: character offsets [start, end) into es, so a dialogue
-  // row keeps its lines. Computed by the tagger from the feature that carries a target; absent when no
-  // feature does (the blind nodes)
+  // where in es the decision on targets[0] sits: character offsets [start, end) into es, so a dialogue
+  // row keeps its lines. Computed by the tagger from the feature that carries that target; absent when
+  // no feature does (the blind nodes). Says nothing about the later targets
   focus: z.tuple([z.number().int().nonnegative(), z.number().int().positive()]).optional(),
   kind: z.enum(['statement', 'question', 'dialogue']).optional(),
   unit: z.string().optional(),

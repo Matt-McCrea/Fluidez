@@ -239,6 +239,42 @@ describe('the gap falls on the taught feature (the row focus span)', () => {
     expect(typeFormItem(s)).toBeNull();
     expect(chooseItem(s)).toBeNull();
   });
+  test('the span is the first target\'s: practising a later target does not gap it', () => {
+    const s = F('Soy la ingeniera.', "I'm the engineer.", 'la', ['g:gender-articles', 'g:ser-identity']);
+    expect(typeFormItem(s, 'g:gender-articles')!.answer).toBe('la');
+    expect(typeFormItem(s, 'g:ser-identity')?.answer).not.toBe('la');
+  });
+  test('a dialogue row: a later target is not held to the turn of the span', () => {
+    const s = F('— Ayer comí pescado.\n— Es para ti.', 'Yesterday I ate fish.\nIt is for you.', 'para', ['g:por-para-1', 'g:preterite-regular']);
+    expect(typeFormItem(s, 'g:por-para-1')!.gapped).toContain('Es ___ ti.');
+    expect(typeFormItem(s, 'g:preterite-regular')?.gapped).not.toContain('Es ___ ti.');
+  });
+  test('por: no gap where en is right too, and a and en are never distractors', () => {
+    expect(typeFormItem(F('Había gente por todas partes.', 'There were people everywhere.', 'por', ['p:x']))).toBeNull();
+    expect(typeFormItem(F('Trabajo por la tarde.', 'I work in the afternoon.', 'por', ['g:por-para-1']))).toBeNull();
+    const c = chooseItem(F('Gracias por venir.', 'Thanks for coming.', 'por', ['p:gracias-por']), { seed: 3 })!;
+    expect(c.options).not.toContain('a');
+    expect(c.options).not.toContain('en');
+  });
+  test('an article is gapped only as the decision, and only where the noun shows its gender', () => {
+    expect(typeFormItem(F('Unos días después, volvió.', 'A few days later, he came back.', 'Unos días después', ['p:despues']))).toBeNull();
+    expect(typeFormItem(F('Los clientes son de Lima.', 'The customers are from Lima.', 'Los', ['g:gender-articles']))).toBeNull();
+    expect(typeFormItem(F('Los periodistas son de Lima.', 'The journalists are from Lima.', 'Los', ['g:gender-articles']))).toBeNull();
+  });
+  test('an object pronoun: without him or her in the English both genders pass and neither is a distractor', () => {
+    const it = F('Ya la compré.', 'I already bought it.', 'la', ['g:direct-objects']);
+    expect(typeFormItem(it)!.accept).toEqual(['la', 'lo']);
+    const c = chooseItem(it, { seed: 4 })!;
+    expect(c.options).toContain('la');
+    expect(c.options).not.toContain('lo');
+    expect(typeFormItem(F('Ya la vi.', 'I already saw her.', 'la', ['g:direct-objects']))!.accept).toEqual(['la']);
+  });
+  test('que is gapped only where que is the decision, never for a mood', () => {
+    expect(typeFormItem(F('Espero que podamos hablar.', 'I hope we can talk.', 'Espero que', ['g:subj-wishes']))).toBeNull();
+    expect(typeFormItem(F('Es que no sé.', "It's just that I don't know.", 'Es que', ['c:es-que']))).toBeNull();
+    expect(typeFormItem(F('Mañana, cuando vuelvas, hablamos.', "Tomorrow, when you're back, we'll talk.", 'cuando', ['g:subj-cuando-future']))).toBeNull();
+    expect(typeFormItem(F('Creo que viene.', 'I think he is coming.', 'que', ['g:that-clauses']))!.answer).toBe('que');
+  });
   test('a node the row does not target ignores the focus', () => {
     const s = F('Voy a la tienda para comprar pan.', "I'm going to the shop to buy bread.", 'para', ['g:por-para-1']);
     expect(analyseGap(s, undefined, 'l:comprar')?.answer).toBe('voy');
