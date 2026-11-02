@@ -52,14 +52,14 @@ const find = (node: any, pred: (n: any) => boolean, out: any[] = []): any[] => {
 describe('every read leaves a row', () => {
   // a chapter of two sentences and no questions, so a first read is one part and a reread is one screen
   const chapter = { id: 'ch-x', title: 'Hola', text: 'Tomás llega a Bogotá. Vale lo espera.', lexemes: [], questions: [], rereadQuestions: [] } as any;
-  const bundle: any = { chapters: new Map([['ch-x', chapter]]), index: { chapterById: new Map() }, englishOf: () => undefined, gloss: () => undefined };
+  const bundle: any = { chapters: new Map([['ch-x', chapter]]), story: [], index: { chapterById: new Map() }, englishOf: () => undefined, gloss: () => undefined };
   const clock = { t: 1000 };
   beforeEach(() => { vi.spyOn(performance, 'now').mockImplementation(() => clock.t); clock.t = 1000; });
 
   async function reading(kind: 'read' | 'reread') {
     const kv = new MemoryKV();
     const ui = await new UiStore(kv).load();
-    const run: any = { bundle, ui, learner: { sessionIndex: 4 }, expose: () => {}, addWords: async () => {}, reads: new Map(), now: () => 0 };
+    const run: any = { bundle, ui, learner: { sessionIndex: 4, ledger: { hasSeen: () => false } }, expose: () => {}, addWords: async () => {}, reads: new Map(), now: () => 0 };
     const block = { kind, chapter: 'ch-x', purpose: 'minimum', timed: false } as any;
     h.slots = [];
     const draw = () => { h.at = 0; return expand(ReadChapter({ block, run, ui, onDone: () => {} })); };
