@@ -11,7 +11,7 @@ import { IdbStore, Learner } from '../../src/learner';
 import { boot } from '../../src/ui/app';
 import { CONTENT_FILES, ContentLoader, type ContentFiles, type FileMap } from '../../src/ui/data/loader';
 import { prepareFor } from '../../src/ui/data/prepare';
-import { OFFLINE_LINE, offlineLine } from '../../src/ui/screens/home';
+import { OFFLINE_LINE, RELOAD_BUTTON, RELOAD_LINE, offlineLine, reloadLine } from '../../src/ui/screens/home';
 import { applyPlacement } from '../../src/ui/session/placement';
 import { sessionLabel } from '../../src/ui/session/labels';
 import { compilePlan } from '../../src/ui/session/runner';
@@ -161,4 +161,22 @@ describe('u22 d0 with the network gone', () => {
     expect(plan.converted?.reason).not.toBe('offline');
     expect(plan.advancesPath).toBe(true);
   }, 180_000);
+});
+
+describe('a connection that is there while Home says the lessons need one', () => {
+  // a module that failed to load may stay cached on Safari: the files are on the server, the browser is online, and only a fresh page asks again
+  const held = { converted: { reason: 'offline' } };
+
+  it('offers a plain reload when the browser says it is online, and only then', () => {
+    expect(reloadLine(held, true)).toBe(RELOAD_LINE);
+    expect(reloadLine(held, false)).toBeUndefined();
+    expect(reloadLine({ converted: { reason: 'reentry' } }, true)).toBeUndefined();
+    expect(reloadLine(undefined, true)).toBeUndefined();
+  });
+
+  it('says it in human words, with no dash and nothing about the learner', () => {
+    expect(RELOAD_LINE).toBe("You seem to be online, so the page may not have finished loading. Reloading usually fixes it.");
+    expect(RELOAD_LINE).not.toMatch(/[–—]|\s-\s/);
+    expect(RELOAD_BUTTON).toBe('Reload the page');
+  });
 });

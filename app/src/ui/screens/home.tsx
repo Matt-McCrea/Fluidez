@@ -33,6 +33,15 @@ export function offlineLine(plan: { converted?: { reason: string } } | undefined
   return plan?.converted?.reason === 'offline' ? OFFLINE_LINE : undefined;
 }
 
+/** What Home adds when it says the lessons need a connection and the browser says there is one: the files are there to fetch, so the page itself stopped, and a fresh page is the way to ask again (a module that failed to load may stay cached on Safari). */
+export const RELOAD_LINE = 'You seem to be online, so the page may not have finished loading. Reloading usually fixes it.';
+export const RELOAD_BUTTON = 'Reload the page';
+
+/** The offer to reload: only for a plan held back for want of content, and only while the browser reports a connection. */
+export function reloadLine(plan: { converted?: { reason: string } } | undefined, online: boolean): string | undefined {
+  return online && offlineLine(plan) ? RELOAD_LINE : undefined;
+}
+
 /**
  * What Home says to a learner who is back after days away, when the compiler has planned them a gentle first session: how it
  * starts, in plain words. It names no number of days and no number of cards, and says nothing of what was lost.
@@ -151,6 +160,12 @@ export function Home({ onStart, onStory, onWeak, onPractise, onLook }: { onWeak?
         {saved ? <p class="big" data-label>{sessionLabel(saved.plan, bundle)}</p>
           : plan ? <p class="big" data-label>{sessionLabel(plan, bundle)}</p> : <p class="big">Nothing to do yet</p>}
         {offlineLine(plan) ? <p data-offline>{offlineLine(plan)}</p> : null}
+        {reloadLine(plan, typeof navigator === 'undefined' || navigator.onLine) ? (
+          <>
+            <p class="small" data-reload-line>{RELOAD_LINE}</p>
+            <button class="btn quiet" data-reload onClick={() => location.reload()}>{RELOAD_BUTTON}</button>
+          </>
+        ) : null}
         {!saved && returnLine(plan) ? <p data-return>{returnLine(plan)}</p> : null}
         {short ? <p data-short>A short one today</p> : null}
         {saved ? <p class="small" data-left>About {minutesLeft} {minutesLeft === 1 ? 'minute' : 'minutes'} left</p>
