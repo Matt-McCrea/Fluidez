@@ -11,16 +11,20 @@ import type { Tier } from '../learner';
 // Every value below is config: the simulator's report says how plans built from
 // them land. Changes made while tuning are listed in TUNING_LOG at the end.
 
-/** Standard-tier session length in minutes, by the band of the unit being studied. */
-export const SESSION_MINUTES: Record<Band, number> = { A1: 20, A2: 22, B1: 25, B2: 28, C1: 30 };
+/**
+ * Standard-tier session length in minutes, by the band of the unit being studied. B2 and C1 are few and long (a standing
+ * decision: the audit found 28 and 30 contradicting it): 45 and 52, the figures at which a placed B2 learner's owed queue empties.
+ */
+export const SESSION_MINUTES: Record<Band, number> = { A1: 20, A2: 22, B1: 25, B2: 45, C1: 52 };
 
 /**
  * Standard-tier SRS warm-up budget in minutes, by band (part of the session
  * minutes above). Coordinator default A1 6 / A2 6 / B1 7 / B2 8 / C1 8; tuned
  * +1 per band (see TUNING_LOG): the core's planned content already ends under
  * the session minutes in A1–B1, so the extra warm-up minute comes out of slack.
+ * B2 and C1 carry 14 beside their longer sessions (TUNING_LOG, 2 Nov).
  */
-export const BAND_WARMUP_MINUTES: Record<Band, number> = { A1: 7, A2: 7, B1: 8, B2: 9, C1: 9 };
+export const BAND_WARMUP_MINUTES: Record<Band, number> = { A1: 7, A2: 7, B1: 8, B2: 14, C1: 14 };
 
 /** Minimum tier: a 10-minute streak saver (warm-up + re-read + timed recall, nothing new). */
 export const MINIMUM_MINUTES = 10;
@@ -211,4 +215,5 @@ export const TUNING_LOG: readonly string[] = [
   '2026-10-29 simulator: synthetic supply 2× (32 sentences per lexeme) for the quota run, so measured demand is not capped by the synthetic bank (bare reviews 0–4 instead of hundreds for forgetful).',
   '2026-10-29 playtest: SECONDS.learn 35→55 (what the player really takes); first-week ramp: at most 8 new items per session in the first 3 core sessions (day 1 listed 11); a plan over its session minutes drops new items from the end of the learn pool (owed, never lost) until it fits.',
   '2026-11-02 debt policy (R18): due cards more than a day overdue, or seeded by placement and not reviewed since, are debt: they no longer throttle, and are paid out of the warm-up budget the fresh cards leave, at most 20 cards a session (40 on a review day). A learner away 7 or more days gets a 10-card warm-up and the next chapter, and the day waits. Real A1 and A2, 365 days, seeds 1/2/3, policy off then on. Longest run of sessions without anything new: fast 1/2/1 to 1/1/1, average 2/2/3 to 1/1/1, forgetful 3/3/3 to 1/2/1, irregular 3/2/2 to 2/1/2, returner (away 21 days) 4/4/3 to 2/2/2, lapsed (away 60) 4/3/3 to 1/3/2, placed at u20 1/2/2 to 1/1/2, the same at 30 s a card 7/7/5 to 2/1/3. Two of 24 runs still reach 3: both a throttle on fresh cards (not debt), one with the day under it a scheduled review. Sessions throttled: average 22/25/27% to 6/2/4%, forgetful 40/38/40% to 9/10/6%, slow placed 58/61/54% to 26/33/26%. First-try recall within 1.6 points for every profile but forgetful (to 80.7 to 82.2 from 81.9 to 83.4) and the slow placed one (84.0 to 85.4 from 87.3 to 87.9). Cards due at the end of a year, forgetful seed 3: 214, 101 of them a week late (58 and none with the policy off). With 3 days instead of 1 the longest run stayed at 3 or 4 (seed 1). Tried and kept: 20 cards a session (12 left forgetful at 78.7).',
+  '2026-11-02 B2 and C1 minutes 28/30 to 45/52 (F16: a standing decision, and 28/30 contradicted it), warm-up 9/9 to 14/14. Real content through C1, placed at u45 (B2) and u58 (C1), 15 s a card, 120 days, seeds 1/2/3 (the u45 runs): 28/30 with warm-up 9: nodes introduced 503/511/494, owed at the end 148/95/118, sessions over their minutes 30%; 45/52 with warm-up 9: 660/610/631 introduced, owed 1/2/2, none over; 45/52 with warm-up 14: 611/570/707 introduced, owed 1/2/6, none over. The minutes buy the new items (+22 to +29%) and empty the owed queue. The larger warm-up lowers the share of B2 sessions the throttle converts (19/14/14% to 8/5/11%) but not the number of items introduced (634 against 629 on average), since the debt policy has already taken the throttle off most of them. Kept, as M8 asked; the plans use 33 of 47 minutes, because their content is capped by items, not minutes, until topic lessons exist (F16, L4).',
 ];

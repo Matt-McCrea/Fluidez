@@ -8,6 +8,8 @@
 //                course is about 1 GB in memory: run it on its own.
 //   --synthetic  a synthetic corpus (on the real unit map and graph when they exist).
 //   (neither)    the tolerant file reader over app/content (all bands), the original behaviour.
+//   --set SESSION_MINUTES.B2=45,BAND_WARMUP_MINUTES.B2=14
+//                a band's session or warm-up minutes, to see a table before it is changed in budget.ts
 //   --debt off | --debt-days N --debt-share X --debt-cards N --reentry-days N
 //                the debt policy (budget.ts DEBT, REENTRY) off, or moved
 //   --placement  also run 30 days (--placement-days) from a learner placed at that unit through the
@@ -66,6 +68,14 @@ async function main() {
   if (arg('debt-share')) budget.DEBT.share = Number(arg('debt-share'));
   if (arg('debt-cards')) budget.DEBT.cards = Number(arg('debt-cards'));
   if (arg('reentry-days')) budget.REENTRY.days = Number(arg('reentry-days'));
+  // --set SESSION_MINUTES.B2=45,BAND_WARMUP_MINUTES.B2=14: any band's minutes, to see a table before it is changed in budget.ts
+  for (const kv of (arg('set') ?? '').split(',').filter(Boolean)) {
+    const [path, value] = kv.split('=');
+    const [table, band] = path.split('.');
+    const t = (budget as unknown as Record<string, Record<string, number>>)[table];
+    if (!t || !(band in t) || !Number.isFinite(Number(value))) throw new Error(`--set ${kv}: expected SESSION_MINUTES.B2=45 or BAND_WARMUP_MINUTES.B2=14`);
+    t[band] = Number(value);
+  }
   const warmup = arg('warmup-scale');
   if (warmup) for (const b of Object.keys(budget.BAND_WARMUP_MINUTES) as (keyof typeof budget.BAND_WARMUP_MINUTES)[]) budget.BAND_WARMUP_MINUTES[b] *= Number(warmup);
   const contentDir = join(APP, 'content');

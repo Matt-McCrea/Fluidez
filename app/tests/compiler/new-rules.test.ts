@@ -63,7 +63,9 @@ describe('budgets by band and tier', () => {
       expect(min.budget.minutes).toBe(budget.MINIMUM_MINUTES);
       expect(min.budget.reviewMinutes).toBe(budget.MINIMUM_WARMUP_MINUTES);
     }
-    expect(budget.SESSION_MINUTES).toEqual({ A1: 20, A2: 22, B1: 25, B2: 28, C1: 30 });
+    // B2 and C1 lessons are few and long (a standing decision), so their minutes are 45 and 52, with a warm-up to carry the reviews that come with them
+    expect(budget.SESSION_MINUTES).toEqual({ A1: 20, A2: 22, B1: 25, B2: 45, C1: 52 });
+    expect(budget.BAND_WARMUP_MINUTES).toEqual({ A1: 7, A2: 7, B1: 8, B2: 14, C1: 14 });
     expect(budget.MINIMUM_MINUTES).toBe(10);
     expect(budget.EXTENDED_EXTRA_MINUTES).toBe(15);
   });
