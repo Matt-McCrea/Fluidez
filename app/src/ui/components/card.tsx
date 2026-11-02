@@ -100,7 +100,8 @@ export function typedOutcome(p: {
   passed: boolean; tries: number; ms: number; value: string; first: string; result: Check | null; firstCheck: Check | null; firstKeyMs?: number;
 }): Outcome {
   const slip = p.firstCheck ?? (p.value.trim() ? p.result : null);
-  const err = slip && (!slip.pass || slip.near) ? slip.hintKind ?? (slip.near ? 'accents' : undefined) : undefined;
+  // a clean pass names nothing; a forgiven accent is a pass that does (its `near` may be cleared, for the note says it instead)
+  const err = slip ? slip.hintKind ?? (slip.near ? 'accents' : undefined) : undefined;
   return {
     correct: p.passed, tries: Math.max(1, p.tries), ms: p.ms, ...(p.result?.lenient ? { lenient: true } : {}),
     evidence: { input: p.value, answer: p.result?.answer },

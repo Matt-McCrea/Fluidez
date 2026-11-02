@@ -8,7 +8,7 @@
 import { expandContractions } from '../../exercises/spanish';
 import { levenshtein } from './hints';
 
-export interface EnglishResult { pass: boolean; near?: boolean; hint?: string; closest: string }
+export interface EnglishResult { pass: boolean; near?: boolean; hint?: string; hintKind?: 'spelling'; closest: string }
 
 const SPELL: ReadonlyArray<[RegExp, string]> = [
   [/our\b/g, 'or'], [/ll(ing|ed|er)\b/g, 'l$1'], [/tre\b/g, 'ter'], [/ise(d|s)?\b/g, 'ize$1'], [/yse(d|s)?\b/g, 'yze$1'],
@@ -33,7 +33,7 @@ export function matchEnglish(input: string, item: { en: string; acceptEn?: reado
     if (aw.length !== iw.length) continue;
     const diffs = aw.map((w, k) => [w, iw[k]] as const).filter(([x, y]) => x !== y);
     if (diffs.length === 1 && diffs[0][0].length >= 4 && levenshtein(diffs[0][0], diffs[0][1]) === 1) {
-      return { pass: false, near: true, hint: 'Check the spelling.', closest: a };
+      return { pass: false, near: true, hint: 'Check the spelling.', hintKind: 'spelling', closest: a };
     }
   }
   return { pass: false, hint: 'Read the Spanish again.', closest: item.en };

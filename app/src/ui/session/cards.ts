@@ -238,7 +238,7 @@ function itemCheck(item: ExItem, want?: string) {
       const w = wordHint(input, [item.answer, ...item.accept], item.kind === 'lexGap' ? want : undefined);
       if (w) return { pass: false, hint: w.hint, hintKind: w.kind, answer: r.answer };
     }
-    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, answer: r.answer, variant: r.variant, note: r.note };
+    return { pass: r.pass, near: r.pass && r.note ? undefined : r.near, hint: r.hint, hintKind: r.hintKind, answer: r.answer, variant: r.variant, note: r.note };
   };
 }
 
@@ -370,7 +370,7 @@ function typeMeaning(key: string, esText: string, enFull: string, acceptEn: read
     type: 'type', key, ask: 'Type the meaning in English', prompt: es(esText), ...(note && en !== enFull ? { sub: en_(`(${note[1]})`) } : {}), answerLang: 'en', placeholder: 'Type it in English', retry: true, why,
     check: (input) => {
       const r = matchEnglish(input, { en, acceptEn: all });
-      return { pass: r.pass, near: r.near, hint: r.hint, answer: r.pass ? en : r.closest };
+      return { pass: r.pass, near: r.near, hint: r.hint, hintKind: r.hintKind, answer: r.pass ? en : r.closest };
     },
   };
 }
@@ -624,7 +624,7 @@ export function scriptCard(item: ScriptItem, script: TeachingScript): Card | und
       const exact = checkExact(input, answers);
       if (exact.pass) return { pass: true, answer: yt.answer };
       const m = matchTranslation(input, { es: yt.answer, en: cue.replace(/^[^:]*:\s*/, ''), accept: yt.accept }, SENTENCE_ACCENTS);
-      if (m.pass) return { pass: true, near: m.note ? undefined : m.near, answer: yt.answer, variant: m.variant, note: m.note };
+      if (m.pass) return { pass: true, near: m.note ? undefined : m.near, hintKind: m.hintKind, answer: yt.answer, variant: m.variant, note: m.note };
       return { pass: false, near: exact.near || m.near, hint: exact.near ? 'Check the accents.' : m.hint, hintKind: exact.near ? 'accents' : m.hintKind, answer: yt.answer };
     },
   };
@@ -841,7 +841,7 @@ export function questionCard(key: string, q: { q: string; options?: string[]; an
   return {
     type: 'type', key, ask: 'Quick question', prompt: auto(q.q), answerLang: lang, placeholder: 'Your answer', retry: true, why: `The story says: ${right}.`,
     check: (input) => {
-      if (lang === 'en') { const r = matchEnglish(input, { en: right }); return { pass: r.pass, near: r.near, hint: r.hint, answer: right }; }
+      if (lang === 'en') { const r = matchEnglish(input, { en: right }); return { pass: r.pass, near: r.near, hint: r.hint, hintKind: r.hintKind, answer: right }; }
       const r = checkExact(input, answerForms(right), { accents: 'lenient', meaning: true });
       return { pass: r.pass, near: r.near, answer: right };
     },
