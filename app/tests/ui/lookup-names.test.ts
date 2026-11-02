@@ -40,6 +40,8 @@ describe('grammar by its standard name', () => {
     ['relative clause', /^g:(relative|relatives|cuyo|subj-relative|subj-free-relatives)/],
     ['reported speech', /^g:(reported|reporting)/],
     ['ser vs estar', /^g:(ser-estar|estar-|ser-)/],
+    ['difference between ser and estar', /^g:(ser-estar|estar-|ser-)/],
+    ['preterito', /^g:(preterite-|pret-vs-imperfect|narrative-pasts)/],
     ['por vs para', /^g:por-para/],
   ];
   for (const [q, family] of battery) {
