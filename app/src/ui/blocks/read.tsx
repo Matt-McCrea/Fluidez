@@ -10,6 +10,7 @@ import type { Outcome, SessionRunner } from '../session/runner';
 import { CardRun, Continue } from '../components/card';
 import { Es, Heading, fmtSeconds, lines, undash } from '../components/text';
 import type { Bundle, TapAt } from '../data/bundle';
+import { seenWithEvent } from '../session/attempt';
 import { questionCard } from '../session/cards';
 import { sentencesOf, splitBeats } from '../session/beats';
 import { blockHeading } from '../session/labels';
@@ -31,7 +32,7 @@ export function questionNodes(chapter: StoryChapter, q: Question, bundle: Bundle
 /** One answered comprehension question: an exposure event on the words it used, never a graded review. */
 export function logComprehension(run: SessionRunner, chapter: StoryChapter, q: Question, o: Pick<Outcome, 'correct' | 'tries' | 'ms'>): NodeId[] {
   const ids = questionNodes(chapter, q, run.bundle);
-  run.learner.expose(ids, { event: { op: 'comprehend', grade: o.correct ? Rating.Good : Rating.Again, tries: o.tries, ms: o.ms, novel: false } });
+  seenWithEvent(run.learner, ids, { op: 'comprehend', grade: o.correct ? Rating.Good : Rating.Again, tries: o.tries, ms: o.ms, novel: false });
   return ids;
 }
 

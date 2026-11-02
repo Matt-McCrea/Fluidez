@@ -9,38 +9,17 @@ import {
   type Block, type Item, type LearnItem, type Mode, type PathState, type RecapBlock, type RecapItem, type ServedRef, type SessionPlan,
 } from '../../compiler';
 import type { NodeId } from '../../content/schema';
-import { Rating, type Direction, type ExposureEvent, type Grade, type Learner, type Tier } from '../../learner';
+import type { Direction, ExposureEvent, Learner, Tier } from '../../learner';
 import type { Bundle } from '../data/bundle';
 import { isResumable, type SavedSession, type UiStore } from '../store/ui';
 import { planRecap, type Lapse } from './recap';
 import { SECONDS } from '../../compiler/budget';
-import { attributeGrades, type Evidence } from './attribute';
+import { attributeGrades } from './attribute';
+import { climb, eventOp, gradeOf, lessonStep, reviewNode, reviewSentence, seen, seenAbout, tries12, type Outcome } from './attempt';
 import { LearnQueue } from './order';
 
-export interface Outcome {
-  correct: boolean;
-  /** attempts used (1 = first try) */
-  tries: number;
-  /** measured time to answer, ms */
-  ms: number;
-  /** what the card saw, for splitting a miss across a multi-target item (see attribute.ts) */
-  evidence?: Evidence;
-  /** passed through an untaught synonym: grades as Hard */
-  lenient?: boolean;
-  /** the card asked for no answer (a read card): it was shown, so it can be exposure but never a grade */
-  exposure?: boolean;
-}
-
-/** First-try pass → Good; pass on the retry → Hard; shown the answer → Again. */
-export function gradeOf(o: Pick<Outcome, 'correct' | 'tries'> & { lenient?: boolean }): Grade {
-  if (!o.correct) return Rating.Again;
-  if (o.lenient) return Rating.Hard;
-  return o.tries <= 1 ? Rating.Good : Rating.Hard;
-}
-
-const tries12 = (t: number): 1 | 2 => (t > 1 ? 2 : 1);
-/** The event-log op for an item: warm-up reviews are 'warmup', everything else its own op. */
-const eventOp = (item: Item): string => (item.op === 'review' ? 'warmup' : item.op);
+// An outcome and its grade are the seam's (attempt.ts); the runner is where everyone already imports them from.
+export { gradeOf, type Outcome };
 
 export interface SceneRun { firstTry: number; turns: number; seconds: number }
 
@@ -366,15 +345,9 @@ export class SessionRunner {
     this.learner.introduce(node, { at: this.now(), productive: p });
   }
 
-  /**
-   * An answered sentence is graded for its target alone. The other nodes it
-   * needs are counted as seen, with no event of their own: Weak spots reads the
-   * events, and a miss logged for every node would charge the preterite for a
-   * por/para slip.
-   */
+  /** An answered sentence is graded for its target alone (see `seenAbout`). */
   private exposeAbout(target: NodeId, credit: readonly NodeId[], event: ExposureEvent, at = this.now()): void {
-    this.learner.expose(credit.filter((n) => n !== target), { at });
-    this.learner.expose(credit.filter((n) => n === target), { at, event });
+    seenAbout(this.learner, target, credit, event, at);
   }
 
   /** One in-lesson retrieval. Returns true when the learner model says to stop asking. */
@@ -390,7 +363,7 @@ export class SessionRunner {
       this.exposeAbout(node, credit, { op, grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms });
       return true;
     }
-    const st = this.learner.learningStep(node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries) });
+    const st = lessonStep(this.learner, node, o.correct, { at: this.now(), ms: o.ms, op, tries: tries12(o.tries) });
     if (st.done) this.learner.completeIntroduction(node, { at: this.now() });
     return st.done;
   }
@@ -398,7 +371,7 @@ export class SessionRunner {
   /** Output ladder: every choose/type/transform item moves its node's rung, whatever its scoring. */
   private stepLadder(item: Item, o: Outcome): void {
     if (item.op !== 'choose' && item.op !== 'type' && item.op !== 'transform' && item.op !== 'recombine') return;
-    this.learner.stepRung(item.node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+    climb(this.learner, item.node, o);
   }
 
   /** Credit one item exactly per its `scoring`. */
@@ -415,7 +388,7 @@ export class SessionRunner {
 
   private scoreItem(item: Item, o: Outcome): void {
     // a card that asked for no answer cannot grade one: where a grade was due, the card stays as it was
-    if (o.exposure && (item.scoring === 'review' || item.scoring === 'learning')) { this.learner.expose(item.credit, { at: this.now() }); return; }
+    if (o.exposure && (item.scoring === 'review' || item.scoring === 'learning')) { seen(this.learner, item.credit, this.now()); return; }
     this.noteLapse(item, o);
     if (!o.correct) {
       const sid = 'sentence' in item ? item.sentence : undefined;
@@ -445,12 +418,12 @@ export class SessionRunner {
         if (sentence) {
           const novel = item.op === 'review' ? item.novel : true; // a recombine item is novel by construction
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          this.learner.creditSentence(item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence });
-          if (expose.length) this.learner.expose(expose, { at });
+          reviewSentence(this.learner, item.credit, dir, grade, { targets: Object.keys(grades), grades, novel, at, ms: o.ms, op, tries, sentence });
+          if (expose.length) seen(this.learner, expose, at);
         } else {
           const { grades, expose } = attributeGrades(targets, o.correct, grade, o.evidence, (id) => this.bundle.node(id));
-          Object.keys(grades).forEach((t, i) => this.learner.review(t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries }));
-          if (expose.length) this.learner.expose(expose, { at });
+          Object.keys(grades).forEach((t, i) => reviewNode(this.learner, t, dir, grades[t], { at, ms: i === 0 ? o.ms : undefined, op, tries }));
+          if (expose.length) seen(this.learner, expose, at);
         }
         return;
       }
@@ -508,7 +481,7 @@ export class SessionRunner {
    */
   scoreRecap(item: RecapItem, o: Outcome): void {
     this.bump();
-    if (o.exposure) { this.learner.expose(item.credit, { at: this.now() }); return; }
+    if (o.exposure) { seen(this.learner, item.credit, this.now()); return; }
     this.tally.scored++;
     if (o.correct) this.tally.correct++;
     if (o.correct && o.tries <= 1) this.tally.firstTry++;
@@ -521,16 +494,16 @@ export class SessionRunner {
     }
     if (!this.learner.hasCard(item.node, item.direction)) return;
     if (item.sentence) {
-      this.learner.creditSentence(item.credit, item.direction, grade, {
+      reviewSentence(this.learner, item.credit, item.direction, grade, {
         targets: [item.node], grades: { [item.node]: grade }, novel: !item.reused, at, ms: o.ms, op: 'recap', tries, sentence: item.sentence,
       });
     } else {
-      this.learner.review(item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries });
+      reviewNode(this.learner, item.node, item.direction, grade, { at, ms: o.ms, op: 'recap', tries });
     }
   }
 
   /** Reading, scenes, writing: implicit exposure, never a scored review. */
-  expose(nodes: Iterable<NodeId>): void { this.learner.expose(nodes, { at: this.now() }); }
+  expose(nodes: Iterable<NodeId>): void { seen(this.learner, nodes, this.now()); }
 
   async addWords(read: number, written: number): Promise<void> {
     if (!read && !written) return;

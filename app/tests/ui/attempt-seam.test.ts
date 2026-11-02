@@ -4,6 +4,8 @@
 // one place, a digest here moves with it. See replay.ts for what the transcript holds.
 //
 // When grading is changed on purpose, take the new digests from the failing run and say why in the commit.
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
@@ -35,4 +37,21 @@ describe('grading is identical through the attempt seam', () => {
     expect(got.average).toEqual(EXPECTED.average);
     expect(got.irregular).toEqual(EXPECTED.irregular);
   }, 60_000);
+});
+
+// The point of a seam is that nothing goes round it. These are the learner's calls that turn an answer
+// into a grade, an exposure or a ladder step; outside the learner itself, only attempt.ts may make them.
+describe('only the seam credits an answer', () => {
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const walk = (dir: string): string[] => readdirSync(dir).flatMap((f) => {
+    const p = `${dir}/${f}`;
+    return statSync(p).isDirectory() ? walk(p) : /\.tsx?$/.test(f) ? [p] : [];
+  });
+  const CREDIT = /\b(?:learner|L)\.(?:review|creditSentence|learningStep|stepRung|expose)\(/;
+
+  it('has no other caller in the app or the simulator', () => {
+    const files = [...walk(`${root}src`), ...walk(`${root}tools`)].filter((f) => !f.includes('/src/learner/') && !f.endsWith('/session/attempt.ts'));
+    const around = files.filter((f) => readFileSync(f, 'utf8').split('\n').some((line) => CREDIT.test(line) && !/^\s*(\/\/|\*)/.test(line)));
+    expect(around.map((f) => f.replace(root, ''))).toEqual([]);
+  });
 });

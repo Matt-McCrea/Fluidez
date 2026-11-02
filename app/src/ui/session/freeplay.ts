@@ -18,7 +18,7 @@ import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
 import type { PracticeSpec } from './practice-spec';
-import { gradeOf, type Outcome } from './runner';
+import { climb, gradeOf, reviewSentence, seen, seenAbout, seenWithEvent, tries12, type Outcome } from './attempt';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
 export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3, checkpoint: 10 }
@@ -146,8 +146,6 @@ export class Freeplay {
     this.cur = undefined;
   }
 
-  private tries(o: Outcome): 1 | 2 { return o.tries > 1 ? 2 : 1; }
-
   // ------------------------------------------------------------ gated sentences
 
   /** Nodes the learner may be shown: introduced ones plus words no unit day teaches, as the compiler counts them. */
@@ -222,15 +220,11 @@ export class Freeplay {
 
   /**
    * A sentence drill is about one node. Its outcome is logged for that node
-   * alone; the words and patterns around it are counted as seen, with no
-   * grade of their own. Weak spots reads these events, and a miss logged for
-   * every node a sentence needs charges the preterite for a por/para slip.
+   * alone (see `seenAbout`); the node is credited whether or not its sentence
+   * needs it.
    */
   private exposeAbout(node: NodeId, credit: readonly NodeId[], event: ExposureEvent): void {
-    const { learner, now } = this.d;
-    const at = now();
-    learner.expose(credit.filter((n) => n !== node && learner.isIntroduced(n)), { at });
-    if (learner.isIntroduced(node)) learner.expose([node], { at, event });
+    seenAbout(this.d.learner, node, [node, ...credit], event, this.d.now());
   }
 
   // ------------------------------------------------------------ quick review
@@ -277,11 +271,11 @@ export class Freeplay {
     this.cur = {
       grade: (o) => {
         // a bare read card: shown, not asked, so the card stays as it was
-        if (o.exposure) { learner.expose([node], { at: this.d.now() }); return; }
+        if (o.exposure) { seen(learner, [node], this.d.now()); return; }
         const grade = gradeOf(o);
-        const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: this.tries(o), sentence, novel };
+        const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: tries12(o.tries), sentence, novel };
         if (!learner.hasCard(node, dir)) return;
-        learner.creditSentence([node], dir, grade, opts);
+        reviewSentence(learner, [node], dir, grade, opts);
         if (sentence) this.markSeen(sentence);
       },
     };
@@ -325,9 +319,9 @@ export class Freeplay {
     this.lastOp = op;
     this.cur = {
       grade: (o) => {
-        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
+        this.exposeAbout(node, credit, { op: 'train', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
         this.markSeen(sentence);
-        learner.stepRung(node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+        climb(learner, node, o);
       },
     };
     return card;
@@ -383,7 +377,7 @@ export class Freeplay {
         if (first) row.right += 1;
         this.byUnit.set(unit, row);
         if (!first) this.missed.add(node);
-        this.exposeAbout(node, credit, { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
+        this.exposeAbout(node, credit, { op: 'checkpoint', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
         this.markSeen(sentence);
       },
     };
@@ -419,7 +413,7 @@ export class Freeplay {
       this.lastOp = 'translate';
       this.cur = {
         grade: (o) => {
-          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms, sentence, novel });
+          this.exposeAbout(node, ref.requires, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, sentence, novel });
           this.markSeen(sentence);
         },
       };
@@ -459,7 +453,7 @@ export class Freeplay {
     this.lastOp = 'conjugate';
     this.cur = {
       grade: (o) => {
-        learner.expose(credit, { at: this.d.now(), event: { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: this.tries(o), ms: o.ms } });
+        seenWithEvent(learner, credit, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms }, this.d.now());
       },
     };
     return card;

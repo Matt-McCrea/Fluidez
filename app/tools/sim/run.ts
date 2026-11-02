@@ -12,7 +12,8 @@ import type { Bundle } from '../../src/ui/data/bundle';
 import { attributeGrades } from '../../src/ui/session/attribute';
 import { applyPlacement } from '../../src/ui/session/placement';
 import { planRecap, type Lapse } from '../../src/ui/session/recap';
-import { gradeOf, softBlock, truncatable } from '../../src/ui/session/runner';
+import { climb, eventOp, gradeOf, reviewNode, reviewSentence, seen, seenWithEvent } from '../../src/ui/session/attempt';
+import { softBlock, truncatable } from '../../src/ui/session/runner';
 import type { Profile } from './profiles';
 
 const DAY_MS = 86_400_000;
@@ -246,9 +247,8 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
   };
   const stepLadder = (it: Item, o: { correct: boolean; tries: 1 | 2 }) => {
     if (it.op !== 'choose' && it.op !== 'type' && it.op !== 'transform' && it.op !== 'recombine') return;
-    L.stepRung(it.node, !o.correct ? 'miss' : o.tries <= 1 ? 'pass' : 'retry');
+    climb(L, it.node, o);
   };
-  const eventOp = (it: Item) => (it.op === 'review' ? 'warmup' : it.op);
   const retryMs = (ms: number, o: { tries: 1 | 2 }) => (o.tries > 1 ? Math.round(ms * 1.5) : ms);
 
   const answer = (it: Item & { node: NodeId }, dir: Direction, credit: NodeId[], sentence: string | undefined, novel: boolean) => {
@@ -258,9 +258,9 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const grade = gradeOf(o);
     const op = eventOp(it);
     stepLadder(it, o);
-    if (!L.hasCard(it.node, dir)) { L.expose(credit, { at: t, event: { op, direction: dir, grade, tries: o.tries, ms, sentence, novel } }); t += ms; return ms; }
-    if (sentence) L.creditSentence(credit, dir, grade, { target: it.node, novel, at: t, ms, op, tries: o.tries, sentence });
-    else L.review(it.node, dir, grade, { at: t, ms, op, tries: o.tries });
+    if (!L.hasCard(it.node, dir)) { seenWithEvent(L, credit, { op, direction: dir, grade, tries: o.tries, ms, sentence, novel }, t); t += ms; return ms; }
+    if (sentence) reviewSentence(L, credit, dir, grade, { target: it.node, novel, at: t, ms, op, tries: o.tries, sentence });
+    else reviewNode(L, it.node, dir, grade, { at: t, ms, op, tries: o.tries });
     noteTime(it.node);
     t += ms;
     return ms;
@@ -281,12 +281,12 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
     const ms = retryMs(base, o);
     const grade = gradeOf(o);
     if (!o.correct) for (const n of all) ctx.lapses.push({ node: n, direction: it.direction, sentence: it.sentence });
-    if (!targets.length) { L.expose(it.credit, { at: t, event: { op: 'warmup', direction: it.direction, grade, tries: o.tries, ms, sentence: it.sentence, novel: it.novel } }); t += ms; return ms; }
+    if (!targets.length) { seenWithEvent(L, it.credit, { op: 'warmup', direction: it.direction, grade, tries: o.tries, ms, sentence: it.sentence, novel: it.novel }, t); t += ms; return ms; }
     const { grades, expose } = attributeGrades(targets, o.correct, grade, undefined, nodeOf);
     for (const n of Object.keys(grades)) noteTime(n);
-    if (it.sentence) L.creditSentence(it.credit, it.direction, grade, { targets: Object.keys(grades), grades, novel: it.novel, at: t, ms, op: 'warmup', tries: o.tries, sentence: it.sentence });
-    else Object.keys(grades).forEach((n, i) => L.review(n, it.direction, grades[n], { at: t, ms: i === 0 ? ms : undefined, op: 'warmup', tries: o.tries }));
-    if (expose.length) L.expose(expose, { at: t });
+    if (it.sentence) reviewSentence(L, it.credit, it.direction, grade, { targets: Object.keys(grades), grades, novel: it.novel, at: t, ms, op: 'warmup', tries: o.tries, sentence: it.sentence });
+    else Object.keys(grades).forEach((n, i) => reviewNode(L, n, it.direction, grades[n], { at: t, ms: i === 0 ? ms : undefined, op: 'warmup', tries: o.tries }));
+    if (expose.length) seen(L, expose, t);
     t += ms;
     return ms;
   };
@@ -309,12 +309,12 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       const grade = gradeOf(o);
       if (it.kind === 'new') {
         run.recap.fresh++;
-        L.expose(it.credit, { at: t, event: { op: 'recap', direction: it.direction, grade, tries: o.tries, ms: dt } });
+        seenWithEvent(L, it.credit, { op: 'recap', direction: it.direction, grade, tries: o.tries, ms: dt }, t);
       } else {
         run.recap.lapsed++;
         if (L.hasCard(it.node, it.direction)) {
-          if (it.sentence) L.creditSentence(it.credit, it.direction, grade, { targets: [it.node], grades: { [it.node]: grade }, novel: !it.reused, at: t, ms: dt, op: 'recap', tries: o.tries, sentence: it.sentence });
-          else L.review(it.node, it.direction, grade, { at: t, ms: dt, op: 'recap', tries: o.tries });
+          if (it.sentence) reviewSentence(L, it.credit, it.direction, grade, { targets: [it.node], grades: { [it.node]: grade }, novel: !it.reused, at: t, ms: dt, op: 'recap', tries: o.tries, sentence: it.sentence });
+          else reviewNode(L, it.node, it.direction, grade, { at: t, ms: dt, op: 'recap', tries: o.tries });
           noteTime(it.node);
         }
       }
@@ -342,7 +342,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       const o = attempt(pCorrect(it.node, dir));
       const ms = retryMs(profile.secs * 1000 * (0.6 + 0.8 * r.next()), o);
       stepLadder(it, o);
-      L.expose(it.credit, { at: t, event: { op: eventOp(it), direction: dir, grade: gradeOf(o), tries: o.tries, ms, sentence } });
+      seenWithEvent(L, it.credit, { op: eventOp(it), direction: dir, grade: gradeOf(o), tries: o.tries, ms, sentence }, t);
       t += ms;
       return ms;
     }
@@ -373,7 +373,7 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
       case 'teach': {
         const learning = b.items.filter((i) => i.scoring === 'learning').length;
         introduce(b.node, learning || 4);
-        for (const it of b.items) if (it.scoring === 'exposure') L.expose(it.credit, { at: t });
+        for (const it of b.items) if (it.scoring === 'exposure') seen(L, it.credit, t);
         break;
       }
       case 'structuredInput': case 'controlledOutput': case 'cuedProduction': case 'communicative':
@@ -392,17 +392,17 @@ export function simulateProfile(profile: Profile, opts: SimOptions): ProfileRun 
         break;
       case 'read': case 'reread': {
         const ch = content.chapterById.get(b.chapter);
-        if (ch) L.expose(ch.requires, { at: t });
+        if (ch) seen(L, ch.requires, t);
         break;
       }
       case 'scene': case 'sceneRerun': {
         const sc = content.scenes.get(b.scene);
-        if (sc) L.expose(sc.requires, { at: t });
+        if (sc) seen(L, sc.requires, t);
         break;
       }
       case 'writing': {
         const tk = content.tasks.get(b.task);
-        if (tk) L.expose(tk.requires, { at: t });
+        if (tk) seen(L, tk.requires, t);
         break;
       }
       default: break;
