@@ -31,7 +31,7 @@
       "en": "Me, sell the café? No way! (a woman speaking)"
     }
   ],
-  "rule": "This is not a real question. You echo the idea back with *yo* and a plain verb, like \"Me, do that?\", and then reject it.\n\nThe echo is *¿Yo, trabajar el domingo?*: just *yo* and the plain *-r* verb, with no \"do I\" or \"would I\". With *-ando* you get a more scornful picture: *¿Yo pagando eso?*\n\nThen comes *¡Ni loco!*, literally \"not even crazy\". It agrees with whoever speaks: *loco* for a man, *loca* for a woman, *locos* or *locas* for a group. *¡Jamás!* (never) is the stronger alternative.\n\nThis is for family, friends and arguments, not for your boss.",
+  "rule": "This is not a real question. You echo the idea back with *yo* and a dictionary form, like \"Me, do that?\", and then reject it.\n\nThe echo is *¿Yo, trabajar el domingo?*: just *yo* and the plain *-r* verb, with no \"do I\" or \"would I\". With *-ando* you get a more scornful picture: *¿Yo pagando eso?*\n\nThen comes *¡Ni loco!*, literally \"not even crazy\". It agrees with whoever speaks: *loco* for a man, *loca* for a woman, *locos* or *locas* for a group. *¡Jamás!* (never) is the stronger alternative.\n\nThis is for family, friends and arguments, not for your boss.",
   "smallPrint": "Teachers call the echo a bare infinitive used for rejection. *Ni loco* is a negative exclamation that agrees with the speaker.",
   "readAndPick": [
     {
@@ -122,7 +122,7 @@
       "accept": [
         "¿Yo trabajar el domingo? ¡Ni loco!"
       ],
-      "why": "*Yo* plus the plain verb echoes the idea; *loco* because a man speaks."
+      "why": "*Yo* plus the dictionary form echoes the idea; *loco* because a man speaks."
     },
     {
       "prompt": "Type in Spanish (a woman speaking): Me, sign that contract? No way!",
@@ -130,7 +130,7 @@
       "accept": [
         "¿Yo firmar ese contrato? ¡Ni loca!"
       ],
-      "why": "*Firmar* stays plain, and *loca* matches the speaker."
+      "why": "*Firmar* stays in the dictionary form, and *loca* matches the speaker."
     },
     {
       "prompt": "Type in Spanish (men or a mixed group speaking): Us, accept that? No way!",

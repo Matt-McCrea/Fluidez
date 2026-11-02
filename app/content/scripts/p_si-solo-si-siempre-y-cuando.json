@@ -32,7 +32,7 @@
     { "prompt": "Say: No, unless they pay me more.", "answer": "No, a menos que me paguen más.", "accept": ["No, salvo que me paguen más."], "why": "*A menos que* means \"unless\" and is followed by the subjunctive." },
     { "prompt": "Say to a friend: You can leave early, as long as you finish the order.", "answer": "Puedes salir temprano, siempre y cuando termines el pedido.", "accept": ["Puedes salir temprano siempre y cuando termines el pedido."], "why": "*Siempre y cuando* is followed by *termines*, the subjunctive of *tú*." },
     { "prompt": "Say: Yes, we're going to the movies, unless it rains.", "answer": "Sí, vamos al cine, salvo que llueva.", "accept": ["Sí, vamos al cine, a menos que llueva."], "why": "*Salvo que llueva* names the one thing that would cancel the plan." },
-    { "prompt": "Add a condition with *solo si* to *Sí, te ayudo.* (but only if you explain to me what happened, to a friend)", "answer": "Sí, te ayudo, pero solo si me explicas qué pasó.", "accept": ["Sí, te ayudo pero solo si me explicas qué pasó."], "why": "*Pero solo si* plus a normal verb turns a plain yes into a conditional yes." }
+    { "prompt": "Add a condition with *solo si* to *Sí, te ayudo.* (but only if you explain to me what happened, to a friend)", "answer": "Sí, te ayudo, pero solo si me explicas qué pasó.", "accept": ["Sí, te ayudo pero solo si me explicas qué pasó."], "why": "*Pero solo si* plus an ordinary verb turns a plain yes into a conditional yes." }
   ],
   "pitfalls": [
     { "wrong": "Puedes llevarte el carro, siempre y cuando lo devuelves con gasolina.", "right": "Puedes llevarte el carro, siempre y cuando lo devuelvas con gasolina.", "why": "Almost. *Siempre y cuando* needs the subjunctive: *devuelvas*." },

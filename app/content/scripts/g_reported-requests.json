@@ -31,7 +31,7 @@
    "en": "I'm asking you to write to me today. (to a friend)"
   }
  ],
- "rule": "In English a request is \"tell her *to call*\", with *to* and the plain verb. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then a verb with the \"opposite\" ending:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThere is no word for *to*: *que* plus the new ending does that job. *Dile que espere* = \"tell him to wait\".",
+ "rule": "In English a request is \"tell her *to call*\", with *to* and the dictionary form. In Spanish the two halves are joined by *que*, and the second verb changes its ending.\n\n*Decir que* or *pedir que*, then the form you already know from *quiero que*:\n*-ar* verbs take *-e*: *llame*, *espere*, *hable*\n*-er/-ir* verbs take *-a*: *vaya*, *venga*, *escriba*\n\nFor *you* (to a friend) add *-s*: *llames*, *vengas*.\n\nThere is no word for *to*: *que* plus the subjunctive does that job. *Dile que espere* = \"tell him to wait\".",
  "smallPrint": "Teachers call this the subjunctive after a verb of request. It is the same form you use after *quiero que* and *dudo que*.",
  "readAndPick": [
   {
@@ -127,19 +127,19 @@
    "prompt": "Choose the right form and type the whole sentence (Tell him to wait. To a friend): Dile que ___. (espera / espere)",
    "answer": "Dile que espere.",
    "accept": [],
-   "why": "A request uses the \"opposite\" ending, so *espere*."
+   "why": "A request takes the subjunctive, so *espere*."
   },
   {
    "prompt": "Type in Spanish: My mom asks me to go on Sunday.",
    "answer": "Mi mamá me pide que vaya el domingo.",
    "accept": [],
-   "why": "*Pedir que* plus *vaya*, the request ending of *ir*."
+   "why": "*Pedir que* plus *vaya*, the subjunctive of *ir*."
   },
   {
    "prompt": "Type in Spanish (to a friend): I'm asking you to write to me today.",
    "answer": "Te pido que me escribas hoy.",
    "accept": [],
-   "why": "*Te* is your friend, and *escribas* is the request ending for *you*."
+   "why": "*Te* is your friend, and *escribas* is the subjunctive for *you*."
   },
   {
    "prompt": "Type in Spanish (to a stranger): Tell Tomás to call him.",
@@ -151,7 +151,7 @@
    "prompt": "Type in Spanish: Hernando wants you to come to the café. (to a friend)",
    "answer": "Hernando quiere que vengas al café.",
    "accept": [],
-   "why": "*Querer que* also takes the request ending: *vengas*."
+   "why": "*Querer que* also takes the subjunctive: *vengas*."
   },
   {
    "prompt": "Make it about *me*: Vale dice que la llames. (Vale says for me to call her)",
@@ -159,19 +159,19 @@
    "accept": [
     "Vale dice que yo la llame."
    ],
-   "why": "For *I* the *-ar* request ending is plain *-e*: *llame*."
+   "why": "For *I* the *-ar* subjunctive ending is plain *-e*: *llame*."
   }
  ],
  "pitfalls": [
   {
    "wrong": "Dile que espera.",
    "right": "Dile que espere.",
-   "why": "Almost. After a request, the second verb takes the \"opposite\" ending: *espere*."
+   "why": "Almost. After a request, the second verb takes the subjunctive: *espere*."
   },
   {
    "wrong": "Vale dice que llamarla.",
    "right": "Vale dice que la llames.",
-   "why": "English uses *to call*, but Spanish joins with *que* and a changed verb."
+   "why": "English uses *to call*, but Spanish joins with *que* and the subjunctive."
   },
   {
    "wrong": "Mi mamá me pide que voy.",

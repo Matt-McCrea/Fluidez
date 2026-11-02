@@ -31,7 +31,7 @@
       "en": "Even if you're right, I'm not signing."
     }
   ],
-  "rule": "Ask yourself one question: do I treat this as a fact?\n\nYes: use the plain verb. *Aunque llueve, salgo.* It is raining, and I'm going out anyway.\n\nNo, it's only possible, or it doesn't matter whether it's true: use the subjunctive. *Aunque llueva, saldré.* Rain may or may not come, and I'm going out regardless.\n\nThe verb tells the listener what you know. *Aunque tienes razón* means I accept you're right. *Aunque tengas razón* means maybe you are, maybe not, my answer is the same.\n\nThe main verb doesn't change either way. Only the verb right after *aunque* does.",
+  "rule": "Ask yourself one question: do I treat this as a fact?\n\nYes: use the ordinary form. *Aunque llueve, salgo.* It is raining, and I'm going out anyway.\n\nNo, it's only possible, or it doesn't matter whether it's true: use the subjunctive. *Aunque llueva, saldré.* Rain may or may not come, and I'm going out regardless.\n\nThe verb tells the listener what you know. *Aunque tienes razón* means I accept you're right. *Aunque tengas razón* means maybe you are, maybe not, my answer is the same.\n\nThe main verb doesn't change either way. Only the verb right after *aunque* does.",
   "smallPrint": "Teachers call this the choice between the indicative and the subjunctive after a concessive conjunction. The indicative states a fact; the subjunctive leaves it open.",
   "readAndPick": [
     {
@@ -122,7 +122,7 @@
       "accept": [
         "Abrimos la ventana aunque hace frío."
       ],
-      "why": "The cold is a fact right now, so the plain verb *hace*."
+      "why": "The cold is a fact right now, so the ordinary form *hace*."
     },
     {
       "prompt": "Choose *llueve* or *llueva* and type the whole sentence: *Aunque ___, saldré mañana.* (Even if it rains tomorrow, I'll go out.)",
@@ -146,7 +146,7 @@
       "accept": [
         "No vendemos aunque Altamira paga bien."
       ],
-      "why": "Altamira does pay well, so the plain verb *paga*."
+      "why": "Altamira does pay well, so the ordinary form *paga*."
     },
     {
       "prompt": "Say: Even if Altamira pays well, we're not selling.",
@@ -163,7 +163,7 @@
       "accept": [
         "Salgo aunque llueve."
       ],
-      "why": "A fact in front of you takes the plain verb."
+      "why": "A fact in front of you takes the ordinary form."
     },
     {
       "prompt": "Rewrite so that it is only a possibility: *Aunque es caro, lo compro.* (Even if it's expensive, I'll buy it.)",
@@ -183,7 +183,7 @@
     {
       "wrong": "Aunque llueva ahora mismo, salgo.",
       "right": "Aunque llueve ahora mismo, salgo.",
-      "why": "Rain you can see right now is a fact, so Spanish keeps the plain verb."
+      "why": "Rain you can see right now is a fact, so Spanish keeps the ordinary form."
     },
     {
       "wrong": "Aunque estudie mucho, no pasé el examen.",
@@ -191,5 +191,5 @@
       "why": "It already happened, so it's a fact: the plain past verb, never the subjunctive."
     }
   ],
-  "personal": "Pick something you do even though it's hard. Write it twice: once as a fact with *Aunque* and the plain verb, and once as a possibility with *Aunque* and the subjunctive."
+  "personal": "Pick something you do even though it's hard. Write it twice: once as a fact with *Aunque* and the ordinary form, and once as a possibility with *Aunque* and the subjunctive."
 }

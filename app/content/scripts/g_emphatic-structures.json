@@ -13,7 +13,7 @@
     { "es": "¡Si Vale cocina mejor que todos!", "en": "But Vale cooks better than anyone!" },
     { "es": "¿Que si quiero más café? ¡Pues claro que quiero!", "en": "Do I want more coffee? Of course I do!" }
   ],
-  "rule": "Three small moves.\n\n1. *¡Si…!* at the start of a sentence is not \"if\". It means \"but, come on\", and you use it to protest or defend: *¡Si ya te lo dije!* The verb stays plain.\n2. *¿Que si…?* repeats the question you were asked, as \"Do I…?\", before you answer it with force: *¿Que si me gusta? ¡Me encanta!*\n3. *¡Pues claro que…!* is \"of course\", and the verb follows as usual: *¡Pues claro que voy!* For \"of course not\", put *no* right after *que*.\n\n*¡Qué va!* rejects what was just said. After *¿Estás cansado?* it means \"not at all\". After *¿No te gustó?* it can open a yes: *¡Qué va, me encantó!*",
+  "rule": "Three small moves.\n\n1. *¡Si…!* at the start of a sentence is not \"if\". It means \"but, come on\", and you use it to protest or defend: *¡Si ya te lo dije!* The verb stays ordinary.\n2. *¿Que si…?* repeats the question you were asked, as \"Do I…?\", before you answer it with force: *¿Que si me gusta? ¡Me encanta!*\n3. *¡Pues claro que…!* is \"of course\", and the verb follows as usual: *¡Pues claro que voy!* For \"of course not\", put *no* right after *que*.\n\n*¡Qué va!* rejects what was just said. After *¿Estás cansado?* it means \"not at all\". After *¿No te gustó?* it can open a yes: *¡Qué va, me encantó!*",
   "smallPrint": "Teachers call these emphatic structures: the *si* is the emphatic *si*, and *que si* is an echo question.",
   "readAndPick": [
     { "es": "¡Si ya te lo dije!", "options": ["But I already told you!", "If I told you already.", "I will tell you if you ask."], "answer": 0 },
@@ -31,7 +31,7 @@
     { "prompt": "Type in Spanish: Do I like it? I love it!", "answer": "¿Que si me gusta? ¡Me encanta!", "accept": [], "why": "*Que si* repeats the question, then you answer." },
     { "prompt": "Type in Spanish, a man speaking: Am I tired? Not at all!", "answer": "¿Que si estoy cansado? ¡Qué va!", "accept": [], "why": "*Qué va* is the \"not at all\" answer." },
     { "prompt": "Make it negative: *¡Pues claro que voy!* Say: Of course I'm not going!", "answer": "¡Pues claro que no voy!", "accept": ["Pues claro que no voy."], "why": "*No* goes right after *que*." },
-    { "prompt": "Type in Spanish: But Vale cooks better than anyone!", "answer": "¡Si Vale cocina mejor que todos!", "accept": ["¡Pero si Vale cocina mejor que todos!"], "why": "Same protest *si*, plain verb *cocina*." },
+    { "prompt": "Type in Spanish: But Vale cooks better than anyone!", "answer": "¡Si Vale cocina mejor que todos!", "accept": ["¡Pero si Vale cocina mejor que todos!"], "why": "Same protest *si*, ordinary form *cocina*." },
     { "prompt": "Type in Spanish, to a friend: Will I help you? Of course I'll help you!", "answer": "¿Que si te ayudo? ¡Pues claro que te ayudo!", "accept": [], "why": "Echo the question with *que si*, then answer with *pues claro que*." }
   ],
   "pitfalls": [

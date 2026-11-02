@@ -31,7 +31,7 @@
       "en": "Mariana told me the minutes were ready."
     }
   ],
-  "rule": "Verbs like *advertir*, *recordar*, *decir* and *insistir en* can do two jobs after *que*.\n\nIf they pass on **news**, the verb after *que* is a normal one: *Me advirtió que era peligroso* (it was dangerous).\n\nIf they push someone to **act**, the verb takes the \"opposite\" ending, the past one: *Me advirtió que no fuera* (not to go), *Insistió en que pagáramos*, *Me recordó que llamara a Vale*.\n\nSo ask: is the second half a fact, or something someone should do? English changes the structure (\"to go\"). Spanish keeps *que* and changes the verb.",
+  "rule": "Verbs like *advertir*, *recordar*, *decir* and *insistir en* can do two jobs after *que*.\n\nIf they pass on **news**, the verb after *que* is a normal one: *Me advirtió que era peligroso* (it was dangerous).\n\nIf they push someone to **act**, the verb takes the *-ra* form: *Me advirtió que no fuera* (not to go), *Insistió en que pagáramos*, *Me recordó que llamara a Vale*.\n\nSo ask: is the second half a fact, or something someone should do? English changes the structure (\"to go\"). Spanish keeps *que* and changes the verb.",
   "smallPrint": "Teachers call this mood selection: reporting verbs take the indicative to inform and the subjunctive to influence. After a past verb, the subjunctive is the imperfect one.",
   "readAndPick": [
     {
@@ -121,7 +121,7 @@
       "prompt": "Pick the right form and type the sentence: *Me advirtió que no ___.* (fue / fuera) Meaning: He warned me not to go.",
       "answer": "Me advirtió que no fuera.",
       "accept": [],
-      "why": "He is telling me what to do, so the verb takes the \"opposite\" ending: *fuera*."
+      "why": "He is telling me what to do, so the verb takes the *-ra* form: *fuera*."
     },
     {
       "prompt": "Type in Spanish: He warned me it was dangerous.",
@@ -153,7 +153,7 @@
       "prompt": "Turn the news into an order: *Mariana me dijo que el acta estaba lista.* Say: Mariana told me to check the minutes.",
       "answer": "Mariana me dijo que revisara el acta.",
       "accept": [],
-      "why": "An order takes the \"opposite\" ending: *revisara*."
+      "why": "An order takes the *-ra* form: *revisara*."
     },
     {
       "prompt": "Type in Spanish: They warned us the tank was empty.",
@@ -166,7 +166,7 @@
     {
       "wrong": "Me recordó que llamo a Vale.",
       "right": "Me recordó que llamara a Vale.",
-      "why": "Almost. A reminder to do something takes the past \"opposite\" form, *llamara*."
+      "why": "Almost. A reminder to do something takes the *-ra* form, *llamara*."
     },
     {
       "wrong": "Me advirtió que no iba.",

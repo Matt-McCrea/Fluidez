@@ -134,7 +134,7 @@
           "words": [
             "venga"
           ],
-          "label": "a guess keeps the plain verb: supongo que viene"
+          "label": "a guess keeps the ordinary form: supongo que viene"
         },
         {
           "type": "avoidsAny",

@@ -31,7 +31,7 @@
       "en": "Will you do me the favour and pass me the salt? (to a friend)"
     }
   ],
-  "rule": "To ask politely, ask for a favour:\n*¿Me haces el favor de cerrar la puerta?* to a friend.\n*¿Me hace el favor de esperar?* to a stranger or an elder.\n*¿Me hacen el favor de…?* to several people.\n*¿Me harías el favor de…?* or *¿Me podrías hacer el favor de…?* softer, like \"would\" and \"could\".\n\nAfter *de*, use the plain verb: *cerrar*, never *cerrando*.\n\nVery Colombian: swap *de* for *y* and keep going. *¿Me hace el favor y me trae la cuenta?*",
+  "rule": "To ask politely, ask for a favour:\n*¿Me haces el favor de cerrar la puerta?* to a friend.\n*¿Me hace el favor de esperar?* to a stranger or an elder.\n*¿Me hacen el favor de…?* to several people.\n*¿Me harías el favor de…?* or *¿Me podrías hacer el favor de…?* softer, like \"would\" and \"could\".\n\nAfter *de*, use the dictionary form: *cerrar*, never *cerrando*.\n\nVery Colombian: swap *de* for *y* and keep going. *¿Me hace el favor y me trae la cuenta?*",
   "smallPrint": "Teachers call *hacer el favor de* a courtesy formula: a request dressed up as a favour.",
   "readAndPick": [
     {
@@ -130,7 +130,7 @@
       "accept": [
         "¿Me podrías hacer el favor de traer más pan?"
       ],
-      "why": "*Harías* is the soft \"would\"; *traer* stays plain after *de*."
+      "why": "*Harías* is the soft \"would\"; *traer* stays in the dictionary form after *de*."
     },
     {
       "prompt": "Type in Spanish, to a stranger (formal): Will you do me the favour of closing the door?",
@@ -138,7 +138,7 @@
       "accept": [
         "¿Me podría hacer el favor de cerrar la puerta?"
       ],
-      "why": "*Usted* means *hace*, then *de* and the plain verb."
+      "why": "*Usted* means *hace*, then *de* and the dictionary form."
     },
     {
       "prompt": "Type in Spanish, to a friend, using *y* instead of *de*: Will you do me the favour and call the lawyer?",
@@ -169,7 +169,7 @@
     {
       "wrong": "¿Me haces el favor de cerrando la puerta?",
       "right": "¿Me haces el favor de cerrar la puerta?",
-      "why": "Almost. English says \"of closing\", but after *de* Spanish wants the plain verb, *cerrar*."
+      "why": "Almost. English says \"of closing\", but after *de* Spanish wants the dictionary form, *cerrar*."
     },
     {
       "wrong": "¿Me haces un favor de cerrar la puerta?",

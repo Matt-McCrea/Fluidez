@@ -12,7 +12,7 @@
     { "es": "Dejamos de ir a la playa.", "en": "We stopped going to the beach." },
     { "es": "Mi abuelo nunca dejó de trabajar.", "en": "My grandfather never stopped working." }
   ],
-  "rule": "English stops *doing* something, with -ing. Spanish says *dejar de* plus the plain verb: *Dejé de comer carne*, I stopped eating meat.\nOnly *dejar* changes: *dejé*, *dejaste*, *dejó*, *dejamos*, *dejaron*. The second verb stays plain.\nThe *de* matters. Without it, *dejar* means to leave something somewhere: *Dejé las llaves en la mesa*.\nIt's the opposite of *empezar a*: *Empezó a llover*, *Dejó de llover*. From today's side you can also say *ya no*: *Ya no como carne*.",
+  "rule": "English stops *doing* something, with -ing. Spanish says *dejar de* plus the dictionary form: *Dejé de comer carne*, I stopped eating meat.\nOnly *dejar* changes: *dejé*, *dejaste*, *dejó*, *dejamos*, *dejaron*. The second verb stays in the dictionary form.\nThe *de* matters. Without it, *dejar* means to leave something somewhere: *Dejé las llaves en la mesa*.\nIt's the opposite of *empezar a*: *Empezó a llover*, *Dejó de llover*. From today's side you can also say *ya no*: *Ya no como carne*.",
   "smallPrint": "Teachers call *dejar de* plus an infinitive a verbal periphrasis: two verbs working as one.",
   "readAndPick": [
     { "es": "Dejé de comer carne.", "options": ["I stopped eating meat.", "I left the meat.", "I started eating meat."], "answer": 0 },
@@ -35,7 +35,7 @@
       "prompt": "Pick and type the whole sentence: *Tomás dejó de ___ español.* (*hablar* or *hablando*) Tomás stopped speaking Spanish.",
       "answer": "Tomás dejó de hablar español.",
       "accept": [],
-      "why": "After *de* the verb stays plain: *hablar*."
+      "why": "After *de* the verb stays in the dictionary form: *hablar*."
     },
     {
       "prompt": "It stopped raining.",
@@ -53,7 +53,7 @@
       "prompt": "We stopped going to the beach.",
       "answer": "Dejamos de ir a la playa.",
       "accept": ["Nosotros dejamos de ir a la playa."],
-      "why": "We stopped is *dejamos*, and *ir* stays plain."
+      "why": "We stopped is *dejamos*, and *ir* stays in the dictionary form."
     },
     {
       "prompt": "Say you stopped doing it: *Tomo café.*",
@@ -72,7 +72,7 @@
     {
       "wrong": "Paré comiendo carne.",
       "right": "Dejé de comer carne.",
-      "why": "Almost. Stopping a habit is *dejar de* with the plain verb, not a word for word *stop eating*."
+      "why": "Almost. Stopping a habit is *dejar de* with the dictionary form, not a word for word *stop eating*."
     },
     {
       "wrong": "Dejé comer carne.",
@@ -82,7 +82,7 @@
     {
       "wrong": "Dejé de comiendo carne.",
       "right": "Dejé de comer carne.",
-      "why": "After *de*, Spanish uses the plain verb where English uses -ing."
+      "why": "After *de*, Spanish uses the dictionary form where English uses -ing."
     }
   ],
   "personal": "Write about one thing you stopped doing and when, with *Dejé de* and *hace*."

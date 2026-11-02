@@ -28,7 +28,7 @@
   "yourTurn": [
     { "prompt": "Pick *Tengo* or *Tenemos* (a whole team is speaking) and type the sentence: *___ el gusto de invitarlos a la reunión del sábado.*", "answer": "Tenemos el gusto de invitarlos a la reunión del sábado.", "accept": ["Tenemos el placer de invitarlos a la reunión del sábado."], "why": "A group speaking uses *tenemos*; the rest of the frame stays the same." },
     { "prompt": "Type in Spanish: It is my pleasure to introduce you (all) to our new director.", "answer": "Tengo el gusto de presentarles a nuestra nueva directora.", "accept": ["Tengo el placer de presentarles a nuestra nueva directora."], "why": "*Tengo el gusto de* + *presentarles*; *gusto* and *placer* are interchangeable here." },
-    { "prompt": "Type in Spanish: We are pleased to invite you (all) to the launch of our new line.", "answer": "Nos complace invitarlos a la presentación de nuestra nueva línea.", "accept": [], "why": "*Nos complace* goes straight into the plain verb, with no *de*." },
+    { "prompt": "Type in Spanish: We are pleased to invite you (all) to the launch of our new line.", "answer": "Nos complace invitarlos a la presentación de nuestra nueva línea.", "accept": [], "why": "*Nos complace* goes straight into the dictionary form, with no *de*." },
     { "prompt": "Type in Spanish: I have the pleasure of announcing to you (all) that the project was approved.", "answer": "Tengo el placer de anunciarles que el proyecto fue aprobado.", "accept": ["Tengo el gusto de anunciarles que el proyecto fue aprobado."], "why": "After *anunciarles*, *que* introduces the news, just like \"that\"." },
     { "prompt": "Make it about one man, formal: *Tenemos el gusto de invitarlos a la reunión del sábado.* Say: We have the pleasure of inviting you (one man, formal) to the meeting on Saturday.", "answer": "Tenemos el gusto de invitarlo a la reunión del sábado.", "accept": ["Tenemos el placer de invitarlo a la reunión del sábado."], "why": "*Los* means \"you all\"; for one man, formal, the ending becomes *lo*." },
     { "prompt": "Type in Spanish: We have the pleasure of presenting to you (all) the new menu.", "answer": "Tenemos el placer de presentarles el nuevo menú.", "accept": ["Tenemos el gusto de presentarles el nuevo menú."], "why": "A group speaks (*tenemos*) to a group (*les*)." },
@@ -37,7 +37,7 @@
   "pitfalls": [
     { "wrong": "Tengo el gusto presentarles a nuestra directora.", "right": "Tengo el gusto de presentarles a nuestra directora.", "why": "Almost. The frame needs *de* before the verb: *tengo el gusto de*." },
     { "wrong": "Tengo el gusto de presento a nuestra directora.", "right": "Tengo el gusto de presentarles a nuestra directora.", "why": "Almost. After *de* the verb stays in its plain *-r* form, as English does with \"to\"." },
-    { "wrong": "Nos complace de invitarlos a la reunión.", "right": "Nos complace invitarlos a la reunión.", "why": "Almost. *Nos complace* takes the plain verb directly, with no *de*." },
+    { "wrong": "Nos complace de invitarlos a la reunión.", "right": "Nos complace invitarlos a la reunión.", "why": "Almost. *Nos complace* takes the dictionary form directly, with no *de*." },
     { "wrong": "Tengo gusto de invitarlos a la reunión.", "right": "Tengo el gusto de invitarlos a la reunión.", "why": "Almost. The fixed phrase includes the little word *el*." }
   ],
   "personal": "Write one formal line announcing something true or imaginary, such as a birthday dinner, using *Tengo el gusto de* or *Nos complace*."

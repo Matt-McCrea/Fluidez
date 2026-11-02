@@ -118,7 +118,7 @@
       "prompt": "Choose *esperes* or *esperas*. To a friend: Lo más prudente es que ___ unos días. Type the whole sentence.",
       "answer": "Lo más prudente es que esperes unos días.",
       "accept": [],
-      "why": "Advice about what to do uses the wish ending, so *esperes*, not *esperas*."
+      "why": "Advice about what to do uses the subjunctive, so *esperes*, not *esperas*."
     },
     {
       "prompt": "The only advice I can give you is to be patient. (to a friend)",
@@ -126,7 +126,7 @@
       "accept": [
         "Lo único que te puedo aconsejar es que tengas paciencia."
       ],
-      "why": "*Tengas* is *tener* in its *tú* wish form: the ending changes to *-as*."
+      "why": "*Tengas* is *tener* in its *tú* subjunctive: the ending changes to *-as*."
     },
     {
       "prompt": "You can always ask for help. (to a friend)",
@@ -146,7 +146,7 @@
       "prompt": "Make it about us: The best thing would be for us to see a lawyer.",
       "answer": "Lo más recomendable es que consultemos a un abogado.",
       "accept": [],
-      "why": "For *we* the wish ending is *-emos*: *consultemos*."
+      "why": "For *we* the subjunctive is *-emos*: *consultemos*."
     },
     {
       "prompt": "The best thing would be for you all to see a specialist.",
@@ -154,14 +154,14 @@
       "accept": [
         "Lo más recomendable es que consulten a un especialista."
       ],
-      "why": "For *ustedes* the wish ending is *-en*: *consulten*."
+      "why": "For *ustedes* the subjunctive is *-en*: *consulten*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Lo más recomendable es que consultas a un especialista.",
       "right": "Lo más recomendable es que consultes a un especialista.",
-      "why": "Almost. After *lo más recomendable es que* the verb needs its wish ending, *consultes*."
+      "why": "Almost. After *lo más recomendable es que* the verb needs its subjunctive, *consultes*."
     },
     {
       "wrong": "Lo más recomendable es consultes a un especialista.",

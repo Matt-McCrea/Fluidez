@@ -32,7 +32,7 @@
     { "prompt": "Type in Spanish, to a friend: You're partly right, but not entirely.", "answer": "Algo de razón tienes, pero no del todo.", "accept": [], "why": "*Algo de razón* is a partial yes, and *pero no del todo* confirms it." },
     { "prompt": "Type in Spanish: I agree on everything except the deadline.", "answer": "Estoy de acuerdo en todo, salvo en el plazo.", "accept": ["Estoy de acuerdo en todo, excepto en el plazo."], "why": "*Salvo en* marks the one thing you do not accept." },
     { "prompt": "Make it formal, to a stranger: *No te falta razón, pero el presupuesto no alcanza.* Say: You're not wrong, but the budget won't stretch to it.", "answer": "No le falta razón, pero el presupuesto no alcanza.", "accept": [], "why": "For *usted*, *te* becomes *le*." },
-    { "prompt": "Make it negative: *Coincido contigo en que sea la única opción.* Say: I don't agree with you that it's the only option.", "answer": "No coincido contigo en que sea la única opción.", "accept": [], "why": "Add *no* in front of *coincido*; the wish-form *sea* follows a negative." }
+    { "prompt": "Make it negative: *Coincido contigo en que sea la única opción.* Say: I don't agree with you that it's the only option.", "answer": "No coincido contigo en que sea la única opción.", "accept": [], "why": "Add *no* in front of *coincido*; the subjunctive *sea* follows a negative." }
   ],
   "pitfalls": [
     { "wrong": "Coincido contigo que hay que cambiar el plan.", "right": "Coincido contigo en que hay que cambiar el plan.", "why": "Almost. *Coincidir* always takes *en* before the thing you share: *en que*." },

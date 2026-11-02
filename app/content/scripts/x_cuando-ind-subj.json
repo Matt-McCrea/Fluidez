@@ -35,7 +35,7 @@
       "en": "What are you going to do when you get there? (to a friend)"
     }
   ],
-  "rule": "One question decides it: is *cuando* about something that always happens or already happened, or about something still to come?\n\nA habit or a fact: the normal verb. *Cuando llego, Vale ya está aquí.* *Cuando llegó la abogada, empezamos.*\n\nSomething still to come: the other vowel. *Cuando llegue, hablamos.*\n\nEnglish doesn't help, because both can be *when I arrive*. Try adding *every time*: if it fits, use the normal verb. Try adding *one day* or *tomorrow*: if that fits, use the other vowel. The rest of the sentence often gives it away too. A future, a command or *voy a* points to the other vowel.",
+  "rule": "One question decides it: is *cuando* about something that always happens or already happened, or about something still to come?\n\nA habit or a fact: the ordinary verb. *Cuando llego, Vale ya está aquí.* *Cuando llegó la abogada, empezamos.*\n\nSomething still to come: the subjunctive. *Cuando llegue, hablamos.*\n\nEnglish doesn't help, because both can be *when I arrive*. Try adding *every time*: if it fits, use the ordinary verb. Try adding *one day* or *tomorrow*: if that fits, use the subjunctive. The rest of the sentence often gives it away too. A future, a command or *voy a* points to the subjunctive.",
   "smallPrint": "Teachers call this indicative versus subjunctive in time clauses. Only the verb after *cuando* changes: the rest of the sentence stays put.",
   "readAndPick": [
     {
@@ -117,13 +117,13 @@
       "prompt": "Choose *tengo* or *tenga* and type the whole sentence: Cuando ___ tiempo, ayudo a Hernando. (This is about a day still to come: When I have time, I'll help Hernando.)",
       "answer": "Cuando tenga tiempo, ayudo a Hernando.",
       "accept": [],
-      "why": "It is still to come, so it takes the other vowel: *tenga*."
+      "why": "It is still to come, so it takes the subjunctive: *tenga*."
     },
     {
       "prompt": "Choose *salgo* or *salga* and type the whole sentence: Cuando ___ de la reunión, te llamo. (Every time I come out of a meeting, I call you.)",
       "answer": "Cuando salgo de la reunión, te llamo.",
       "accept": [],
-      "why": "Every time means a habit, and a habit takes the normal verb: *salgo*."
+      "why": "Every time means a habit, and a habit takes the ordinary verb: *salgo*."
     },
     {
       "prompt": "Say: Whenever Vale cooks, the café smells great.",
@@ -131,7 +131,7 @@
       "accept": [
         "El café huele rico cuando Vale cocina."
       ],
-      "why": "A repeated thing takes the normal verb: *cocina*."
+      "why": "A repeated thing takes the ordinary verb: *cocina*."
     },
     {
       "prompt": "Say: When Vale cooks (later), the café will smell great.",
@@ -139,7 +139,7 @@
       "accept": [
         "El café va a oler rico cuando Vale cocine."
       ],
-      "why": "A single time still to come takes the other vowel: *cocine*."
+      "why": "A single time still to come takes the subjunctive: *cocine*."
     },
     {
       "prompt": "Ask a friend, about a day still to come: What are you going to do when you finish?",
@@ -151,7 +151,7 @@
       "prompt": "Ask a friend, about a habit: What do you do when you get to the café?",
       "answer": "¿Qué haces cuando llegas al café?",
       "accept": [],
-      "why": "A habit takes the normal verb: *llegas*."
+      "why": "A habit takes the ordinary verb: *llegas*."
     },
     {
       "prompt": "Change it from a habit to tonight only: *Cuando cierro, limpio las mesas.*",
@@ -163,7 +163,7 @@
       "prompt": "Say: When I finished, I called Vale.",
       "answer": "Cuando terminé, llamé a Vale.",
       "accept": [],
-      "why": "It already happened, so *cuando* takes the ordinary past, not the other vowel."
+      "why": "It already happened, so *cuando* takes the ordinary past, not the subjunctive."
     }
   ],
   "pitfalls": [
@@ -180,7 +180,7 @@
     {
       "wrong": "Cuando cierre, limpio las mesas todos los días.",
       "right": "Cuando cierro, limpio las mesas todos los días.",
-      "why": "*Todos los días* means a habit, and a habit takes the normal verb: *cierro*."
+      "why": "*Todos los días* means a habit, and a habit takes the ordinary verb: *cierro*."
     }
   ],
   "personal": "Say one thing you do every time something happens, and one thing you will do when something happens soon."

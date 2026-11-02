@@ -31,8 +31,8 @@
       "en": "I won't put up with being spoken to like that."
     }
   ],
-  "rule": "Three steps up. *Me da rabia que…* is personal: it hurts me. *Me indigna que…* is moral: it's unfair. *No aguanto que…* is a limit: I won't take it.\n\nThey work like *me pone nervioso*: the cause comes first, then *que* and the wish form: *que me interrumpan*.\n\nFor something already done, use *hayas* or *hayan* plus the *-ado* form: *que no me hayas avisado*.\n\nAdd *mucha* to *rabia* to push it. Save *indignar* for injustice, not a late bus.",
-  "smallPrint": "Teachers call *hayas avisado* the perfect subjunctive: the wish form of *haber* plus the *-ado* form.",
+  "rule": "Three steps up. *Me da rabia que…* is personal: it hurts me. *Me indigna que…* is moral: it's unfair. *No aguanto que…* is a limit: I won't take it.\n\nThey work like *me pone nervioso*: the cause comes first, then *que* and the subjunctive: *que me interrumpan*.\n\nFor something already done, use *hayas* or *hayan* plus the *-ado* form: *que no me hayas avisado*.\n\nAdd *mucha* to *rabia* to push it. Save *indignar* for injustice, not a late bus.",
+  "smallPrint": "Teachers call *hayas avisado* the perfect subjunctive: the subjunctive of *haber* plus the *-ado* form.",
   "readAndPick": [
     {
       "es": "Me da rabia que no me hayas avisado.",
@@ -112,13 +112,13 @@
       "prompt": "Pick the right form and type the whole sentence: *Me indigna que ___ despedido a tanta gente.* (*hayan* or *han*)",
       "answer": "Me indigna que hayan despedido a tanta gente.",
       "accept": [],
-      "why": "After *me indigna que* the verb takes the wish form, and for something done that is *hayan*."
+      "why": "After *me indigna que* the verb takes the subjunctive, and for something done that is *hayan*."
     },
     {
       "prompt": "Type in Spanish: I can't stand being interrupted.",
       "answer": "No aguanto que me interrumpan.",
       "accept": [],
-      "why": "*No aguanto que* plus the wish form: *interrumpan*."
+      "why": "*No aguanto que* plus the subjunctive: *interrumpan*."
     },
     {
       "prompt": "Type in Spanish: It makes me really angry that Altamira is buying the whole block.",
@@ -132,7 +132,7 @@
       "accept": [
         "Me indigna que le hablen a Hernando así."
       ],
-      "why": "Injustice is *me indigna que*, with *hablen* as the wish form."
+      "why": "Injustice is *me indigna que*, with *hablen* as the subjunctive."
     },
     {
       "prompt": "Type in Spanish, to a friend: It makes me angry that you didn't tell me.",
@@ -162,7 +162,7 @@
     {
       "wrong": "No aguanto que me interrumpen.",
       "right": "No aguanto que me interrumpan.",
-      "why": "Almost. After *no aguanto que* the verb takes the wish form: *interrumpan*."
+      "why": "Almost. After *no aguanto que* the verb takes the subjunctive: *interrumpan*."
     },
     {
       "wrong": "Me da rabia que no me avisaste.",

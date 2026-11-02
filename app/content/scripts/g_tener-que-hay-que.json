@@ -35,7 +35,7 @@
       "en": "You mustn't be late."
     }
   ],
-  "rule": "Three ways to say what has to happen, all followed by a plain verb:\n\n*tener que*: a person has to. *Tener* changes for who: *tengo que*, *tienes que*, *tiene que*, *tenemos que*, *tienen que*.\n\n*hay que*: it has to be done, by anyone. It never changes: *Hay que pagar antes.* There's no person in it, like English 'you have to' meaning people in general.\n\n*deber*: must or should, what's the right thing to do. *Debes ir al médico.*\n\nThe trap is the negative. *No tienes que venir* means you don't need to come: you're free. *No debes venir* means you mustn't come, or you shouldn't.",
+  "rule": "Three ways to say what has to happen, all followed by a dictionary form:\n\n*tener que*: a person has to. *Tener* changes for who: *tengo que*, *tienes que*, *tiene que*, *tenemos que*, *tienen que*.\n\n*hay que*: it has to be done, by anyone. It never changes: *Hay que pagar antes.* There's no person in it, like English 'you have to' meaning people in general.\n\n*deber*: must or should, what's the right thing to do. *Debes ir al médico.*\n\nThe trap is the negative. *No tienes que venir* means you don't need to come: you're free. *No debes venir* means you mustn't come, or you shouldn't.",
   "smallPrint": "Teachers call these verb phrases of obligation: tener que, hay que and deber + infinitive.",
   "readAndPick": [
     {
@@ -132,7 +132,7 @@
       "prompt": "Say: We have to buy bread.",
       "answer": "Tenemos que comprar pan.",
       "accept": [],
-      "why": "'We' is *tenemos que*, then the plain verb."
+      "why": "'We' is *tenemos que*, then the dictionary form."
     },
     {
       "prompt": "Tell a friend: You should go to the doctor.",
@@ -140,7 +140,7 @@
       "accept": [
         "Tienes que ir al médico."
       ],
-      "why": "Advice is *debes* plus the plain verb."
+      "why": "Advice is *debes* plus the dictionary form."
     },
     {
       "prompt": "Tell a friend they're free: You don't have to come tomorrow.",
@@ -198,7 +198,7 @@
     {
       "wrong": "Tengo que trabajo mañana.",
       "right": "Tengo que trabajar mañana.",
-      "why": "After *que*, the verb stays plain: *trabajar*."
+      "why": "After *que*, the verb stays in the dictionary form: *trabajar*."
     }
   ],
   "personal": "What's on your list this week? Write one thing you *tienes que* do, one rule where *hay que* fits, and one thing you *no tienes que* do."

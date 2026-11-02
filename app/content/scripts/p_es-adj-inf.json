@@ -31,7 +31,7 @@
       "en": "It's lovely to see the city from Monserrate."
     }
   ],
-  "rule": "Start with *es*, add a describing word, then the plain verb:\n*Es difícil aprender idiomas.* It's hard to learn languages.\n\nThree English habits disappear.\nNo it: *es* alone already means it's.\nNo to: the verb follows straight on. Not *es difícil de aprender idiomas*.\nNo -ing: when the activity comes first, it's still the plain verb. *Hablar español es útil*, never *hablando*.\n\nThe describing word stays in its basic form (*difícil*, *importante*, *caro*), whatever the activity.",
+  "rule": "Start with *es*, add a describing word, then the dictionary form:\n*Es difícil aprender idiomas.* It's hard to learn languages.\n\nThree English habits disappear.\nNo it: *es* alone already means it's.\nNo to: the verb follows straight on. Not *es difícil de aprender idiomas*.\nNo -ing: when the activity comes first, it's still the dictionary form. *Hablar español es útil*, never *hablando*.\n\nThe describing word stays in its basic form (*difícil*, *importante*, *caro*), whatever the activity.",
   "smallPrint": "Teachers call this the infinitive as subject: *es* + adjective + infinitive for a general truth. For one particular person (it's important that you…) Spanish needs a different form, which comes later.",
   "readAndPick": [
     {
@@ -106,7 +106,7 @@
       "prompt": "Pick and type the whole sentence: *Es difícil ___ ajiaco.* (*hacer* or *haciendo*) It's hard to make ajiaco.",
       "answer": "Es difícil hacer ajiaco.",
       "accept": [],
-      "why": "After the describing word comes the plain verb."
+      "why": "After the describing word comes the dictionary form."
     },
     {
       "prompt": "Pick and type the whole sentence: *Es importante ___ bien.* (*dormir* or *de dormir*) It's important to sleep well.",
@@ -120,7 +120,7 @@
       "accept": [
         "Llegar al café es fácil."
       ],
-      "why": "*Es* + *fácil* + the plain verb; no word for it or to."
+      "why": "*Es* + *fácil* + the dictionary form; no word for it or to."
     },
     {
       "prompt": "Say: It's important to read the contract.",
@@ -136,7 +136,7 @@
       "accept": [
         "Es caro viajar en avión."
       ],
-      "why": "An activity as the subject is the plain verb, not an -ing form."
+      "why": "An activity as the subject is the dictionary form, not an -ing form."
     },
     {
       "prompt": "Make it negative: *Es difícil hacer pan.*",
@@ -148,7 +148,7 @@
       "prompt": "Start with the activity instead: *Es útil hablar español.*",
       "answer": "Hablar español es útil.",
       "accept": [],
-      "why": "The plain verb can open the sentence too."
+      "why": "The dictionary form can open the sentence too."
     }
   ],
   "pitfalls": [
@@ -160,7 +160,7 @@
     {
       "wrong": "Hablando español es útil.",
       "right": "Hablar español es útil.",
-      "why": "An activity as the subject is the plain verb in Spanish, not the -ing form."
+      "why": "An activity as the subject is the dictionary form in Spanish, not the -ing form."
     },
     {
       "wrong": "Está importante dormir bien.",

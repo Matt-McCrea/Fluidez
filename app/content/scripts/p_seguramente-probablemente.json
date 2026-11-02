@@ -112,7 +112,7 @@
       "prompt": "Type in Spanish: He's probably in the office. Use *seguramente*.",
       "answer": "Seguramente está en la oficina.",
       "accept": [],
-      "why": "*Seguramente* plus the plain verb says you are fairly confident."
+      "why": "*Seguramente* plus the ordinary form says you are fairly confident."
     },
     {
       "prompt": "Type in Spanish, to a friend: You're probably right. Use *probablemente*.",
@@ -120,21 +120,21 @@
       "accept": [
         "Seguramente tienes razón."
       ],
-      "why": "A strong guess, so the plain verb: *tienes*."
+      "why": "A strong guess, so the ordinary form: *tienes*."
     },
     {
       "prompt": "Pick *está* or *esté* for a confident guess and type the whole sentence: *Seguramente Vale ___ en la cocina.*",
       "answer": "Seguramente Vale está en la cocina.",
       "accept": [],
-      "why": "The plain verb is the safe default after *seguramente*."
+      "why": "The ordinary form is the safe default after *seguramente*."
     },
     {
-      "prompt": "Type in Spanish: Hernando will probably come today. Use *probablemente* and the wish form.",
+      "prompt": "Type in Spanish: Hernando will probably come today. Use *probablemente* and the subjunctive.",
       "answer": "Probablemente Hernando venga hoy.",
       "accept": [
         "Hernando probablemente venga hoy."
       ],
-      "why": "The wish form of *venir* is *venga*, and it sounds less sure."
+      "why": "The subjunctive of *venir* is *venga*, and it sounds less sure."
     },
     {
       "prompt": "Type in Spanish: It's probably not true. Use *seguramente*.",
@@ -152,7 +152,7 @@
       "prompt": "Type in Spanish: There will probably be customers tomorrow. Use *seguramente*.",
       "answer": "Seguramente hay clientes mañana.",
       "accept": [],
-      "why": "*Hay* is the plain verb for \"there is\" and \"there are\"."
+      "why": "*Hay* is the ordinary form for \"there is\" and \"there are\"."
     }
   ],
   "pitfalls": [
@@ -169,7 +169,7 @@
     {
       "wrong": "A lo mejor Hernando venga hoy.",
       "right": "Probablemente Hernando venga hoy.",
-      "why": "Almost. The wish form is allowed after *probablemente*, but never after *a lo mejor*."
+      "why": "Almost. *Probablemente* takes the subjunctive freely. *A lo mejor* almost never does."
     }
   ],
   "personal": "Think of someone you know and where they probably are right now. Say it with *Seguramente* or *Probablemente*."

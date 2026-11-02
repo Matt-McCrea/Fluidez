@@ -31,7 +31,7 @@
       "en": "It's not that you don't know it, it's that you don't remember it."
     }
   ],
-  "rule": "Start with *no es que* to name the reason you are rejecting. Its verb takes the special form: *sea*, *guste*, *esté*, *queramos*.\n\nThen give the real reason with an ordinary verb, joined by *sino que* or *es que*: *sino que no lo necesito*, *es que no tengo tiempo*.\n\nEnglish says \"it's not that… it's that…\" with ordinary verbs both times. Spanish changes only the first one.\n\nA softer opening when you are not sure what they think: *No, no es eso exactamente; es que…*",
+  "rule": "Start with *no es que* to name the reason you are rejecting. Its verb takes the subjunctive: *sea*, *guste*, *esté*, *queramos*.\n\nThen give the real reason with an ordinary verb, joined by *sino que* or *es que*: *sino que no lo necesito*, *es que no tengo tiempo*.\n\nEnglish says \"it's not that… it's that…\" with ordinary verbs both times. Spanish changes only the first one.\n\nA softer opening when you are not sure what they think: *No, no es eso exactamente; es que…*",
   "smallPrint": "Teachers call this a corrective structure: the subjunctive marks the idea you reject, the indicative marks the fact you offer instead.",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Choose *sea* or *es*: No es que ___ caro, sino que no lo necesito. Type the whole sentence.",
       "answer": "No es que sea caro, sino que no lo necesito.",
       "accept": [],
-      "why": "The idea you reject after *no es que* takes the special form: *sea*."
+      "why": "The idea you reject after *no es que* takes the subjunctive: *sea*."
     },
     {
       "prompt": "Choose *tengo* or *tenga*: No es que no quiera ir; es que ___ que trabajar. Type the whole sentence.",
@@ -137,7 +137,7 @@
         "No es que no me guste; es que no tengo tiempo.",
         "No es que no me guste, sino que no tengo tiempo."
       ],
-      "why": "*Guste* is the special form; *tengo* is the fact."
+      "why": "*Guste* is the subjunctive; *tengo* is the fact."
     },
     {
       "prompt": "Say it about us (we): *No es que no quiera ir; es que tengo que trabajar.*",
@@ -161,14 +161,14 @@
         "No es que no lo sepas, es que no lo recuerdas.",
         "No es que no lo sepas; es que no lo recuerdas."
       ],
-      "why": "*Sepas* is the special form for *tú*; *recuerdas* is the plain fact."
+      "why": "*Sepas* is the subjunctive for *tú*; *recuerdas* is the plain fact."
     }
   ],
   "pitfalls": [
     {
       "wrong": "No es que es caro, sino que no lo necesito.",
       "right": "No es que sea caro, sino que no lo necesito.",
-      "why": "Almost. The idea you are rejecting after *no es que* takes the special form: *sea*."
+      "why": "Almost. The idea you are rejecting after *no es que* takes the subjunctive: *sea*."
     },
     {
       "wrong": "No es que no quiera ir; es que tenga que trabajar.",

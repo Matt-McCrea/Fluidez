@@ -13,7 +13,7 @@
     { "es": "No soporto esperar tanto.", "en": "I can't stand waiting so long." },
     { "es": "Odio que Altamira llame cada día.", "en": "I hate that Altamira calls every day." }
   ],
-  "rule": "Two ways to say it: *no soporto* and *odio*. Both take a noun, an infinitive, or *que* plus the wish form.\n\n*No soporto el ruido.* A noun.\n*Odio hacer fila.* Your own action: infinitive.\n*No soporto que me interrumpan.* Someone else's action: *que* plus the wish form.\n\n*Soportar* always comes with *no*. And it's absolute: you can't stand it or you can. For a milder feeling, use *me molesta*.",
+  "rule": "Two ways to say it: *no soporto* and *odio*. Both take a noun, an infinitive, or *que* plus the subjunctive.\n\n*No soporto el ruido.* A noun.\n*Odio hacer fila.* Your own action: infinitive.\n*No soporto que me interrumpan.* Someone else's action: *que* plus the subjunctive.\n\n*Soportar* always comes with *no*. And it's absolute: you can't stand it or you can. For a milder feeling, use *me molesta*.",
   "smallPrint": "*Soportar* is \"to bear\", so *no soporto* is literally \"I don't bear\". You'll also hear *no aguanto*, which means the same.",
   "readAndPick": [
     {
@@ -62,7 +62,7 @@
       "prompt": "Pick *interrumpen* or *interrumpan* and type the whole sentence: *No soporto que me ___.*",
       "answer": "No soporto que me interrumpan.",
       "accept": [],
-      "why": "After *no soporto que*, the verb takes the wish form: *interrumpan*."
+      "why": "After *no soporto que*, the verb takes the subjunctive: *interrumpan*."
     },
     {
       "prompt": "Type in Spanish: I can't stand the noise.",
@@ -98,14 +98,14 @@
       "prompt": "Type in Spanish: I hate that Altamira calls every day.",
       "answer": "Odio que Altamira llame cada día.",
       "accept": ["No soporto que Altamira llame cada día."],
-      "why": "Altamira acts, so *que* plus the wish form: *llame*."
+      "why": "Altamira acts, so *que* plus the subjunctive: *llame*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "No soporto que me interrumpen.",
       "right": "No soporto que me interrumpan.",
-      "why": "Almost. After *no soporto que*, the verb takes the wish form: *interrumpan*."
+      "why": "Almost. After *no soporto que*, the verb takes the subjunctive: *interrumpan*."
     },
     {
       "wrong": "No puedo estar el ruido.",

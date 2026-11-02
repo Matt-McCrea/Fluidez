@@ -39,7 +39,7 @@
       "en": "It's normal to be afraid."
     }
   ],
-  "rule": "Each of these lines gives a judgement: good, important, normal, fair, a shame. The judgement is the first part (*Es importante*, *Es una pena*, *Es normal*), then *que*, then what happens.\n\nThe verb after *que* takes the wish form, the same one you met with *quiero que* and *me alegra que*: *leas*, *cierren*, *grite*, *estén*.\n\nEnglish says *is*, *are*, *reads*. Spanish switches to the wish form because you are judging the thing, not reporting it.\n\nThe same pattern works for *Es mejor que esperemos* (it's better that we wait), *Es bueno que*, *Es necesario que* and *No es justo que*.\n\nIf you mean people in general, skip *que* and use the infinitive: *Es normal tener miedo.* *Es mejor llamar antes.*",
+  "rule": "Each of these lines gives a judgement: good, important, normal, fair, a shame. The judgement is the first part (*Es importante*, *Es una pena*, *Es normal*), then *que*, then what happens.\n\nThe verb after *que* takes the subjunctive, the same one you met with *quiero que* and *me alegra que*: *leas*, *cierren*, *grite*, *estén*.\n\nEnglish says *is*, *are*, *reads*. Spanish switches to the subjunctive because you are judging the thing, not reporting it.\n\nThe same pattern works for *Es mejor que esperemos* (it's better that we wait), *Es bueno que*, *Es necesario que* and *No es justo que*.\n\nIf you mean people in general, skip *que* and use the infinitive: *Es normal tener miedo.* *Es mejor llamar antes.*",
   "smallPrint": "Teachers call this the subjunctive after expressions of judgement (*subjuntivo con expresiones de valoración*). Facts such as *es verdad que* work differently, and you'll see why in the next drill.",
   "readAndPick": [
     {
@@ -131,7 +131,7 @@
       "accept": [
         "Es necesario que pagues hoy."
       ],
-      "why": "A judgement like *es necesario* is followed by the wish form: *pagues*."
+      "why": "A judgement like *es necesario* is followed by the subjunctive: *pagues*."
     },
     {
       "prompt": "Pick *puede* or *pueda* and type the whole sentence: *Es una pena que Vale no ___ venir.*",
@@ -143,7 +143,7 @@
       "prompt": "Type in Spanish: It's important that Tomás opens early.",
       "answer": "Es importante que Tomás abra temprano.",
       "accept": [],
-      "why": "*Es importante que* takes the wish form of *abrir*, which is *abra*."
+      "why": "*Es importante que* takes the subjunctive of *abrir*, which is *abra*."
     },
     {
       "prompt": "Type in Spanish: It's normal to be afraid.",
@@ -161,7 +161,7 @@
       "prompt": "Make it negative: *Es justo que ellos cobren tanto.*",
       "answer": "No es justo que ellos cobren tanto.",
       "accept": [],
-      "why": "Only *no* is added. The verb stays in the wish form."
+      "why": "Only *no* is added. The verb stays in the subjunctive."
     },
     {
       "prompt": "Say it to you all instead: *Es importante que lo leas.*",
@@ -176,7 +176,7 @@
     {
       "wrong": "Es importante que lo lees.",
       "right": "Es importante que lo leas.",
-      "why": "Almost. After a judgement, use the wish form: *leas*, not *lees*."
+      "why": "Almost. After a judgement, use the subjunctive: *leas*, not *lees*."
     },
     {
       "wrong": "Es normal que Simón grita por la mañana.",

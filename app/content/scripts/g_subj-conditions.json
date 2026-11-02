@@ -43,7 +43,7 @@
       "en": "I'll help you as long as you tell me beforehand. (to a friend)"
     }
   ],
-  "rule": "Some little phrases set a condition:\n*con tal de que*: as long as, provided that\n*en caso de que*: if, in the event that\n*a menos que*, *a no ser que*: unless\n*siempre que*: as long as\n\nThe verb right after them takes the \"wish\" form: *dejen*, *haya*, *cuides*, *llueva*, *sea*. The thing is only a possibility, not a fact yet. English leaves the verb alone (\"as long as it isn't late\"), but Spanish marks it.\n\nCompare plain *si*: *Firmo si me dan una copia* keeps the ordinary verb. With these phrases, use the wish form, and never *-ría*.\n\nEnglish *in case* hides two ideas. If you act only when the thing happens, use *en caso de que*: *En caso de que llueva, la reunión es adentro.* If you act now, just to be safe, use *por si* with the ordinary verb: *Llévate una chaqueta por si hace frío.* Test: would you do it anyway? Then it is *por si*.",
+  "rule": "Some little phrases set a condition:\n*con tal de que*: as long as, provided that\n*en caso de que*: if, in the event that\n*a menos que*, *a no ser que*: unless\n*siempre que*: as long as\n\nThe verb right after them takes the \"wish\" form: *dejen*, *haya*, *cuides*, *llueva*, *sea*. The thing is only a possibility, not a fact yet. English leaves the verb alone (\"as long as it isn't late\"), but Spanish marks it.\n\nCompare plain *si*: *Firmo si me dan una copia* keeps the ordinary verb. With these phrases, use the subjunctive, and never *-ría*.\n\nEnglish *in case* hides two ideas. If you act only when the thing happens, use *en caso de que*: *En caso de que llueva, la reunión es adentro.* If you act now, just to be safe, use *por si* with the ordinary verb: *Llévate una chaqueta por si hace frío.* Test: would you do it anyway? Then it is *por si*.",
   "smallPrint": "Teachers call these connectors conditional conjunctions. As conditions they take the subjunctive. *Siempre que* can also mean whenever, for a habit, and then it keeps the ordinary verb, as you already know: *Siempre que llueve, vendemos más tinto.*",
   "readAndPick": [
     {
@@ -141,7 +141,7 @@
       "prompt": "Pick the right verb and type the whole sentence: *Te presto el carro con tal de que lo ___.* (*cuides* or *cuidas*)",
       "answer": "Te presto el carro con tal de que lo cuides.",
       "accept": [],
-      "why": "After *con tal de que*, the verb takes the wish form: *cuides*."
+      "why": "After *con tal de que*, the verb takes the subjunctive: *cuides*."
     },
     {
       "prompt": "Type in Spanish, to a friend, with *en caso de que*: I'll call you if there's a problem.",
@@ -149,7 +149,7 @@
       "accept": [
         "En caso de que haya algún problema, te llamo."
       ],
-      "why": "*En caso de que* is \"if, in the event that\", and *haya* is the wish form of *hay*."
+      "why": "*En caso de que* is \"if, in the event that\", and *haya* is the subjunctive of *hay*."
     },
     {
       "prompt": "Type in Spanish: I'll sign as long as they let us stay.",
@@ -157,7 +157,7 @@
       "accept": [
         "Con tal de que nos dejen quedarnos, firmo."
       ],
-      "why": "*Con tal de que* means \"as long as\"; *dejen* is the wish form."
+      "why": "*Con tal de que* means \"as long as\"; *dejen* is the subjunctive."
     },
     {
       "prompt": "Type in Spanish: In case it rains, the meeting is inside.",
@@ -165,13 +165,13 @@
       "accept": [
         "La reunión es adentro en caso de que llueva."
       ],
-      "why": "The connector comes first, then the wish form *llueva*."
+      "why": "The connector comes first, then the subjunctive *llueva*."
     },
     {
       "prompt": "Type in Spanish: Vale is coming as long as it isn't too late.",
       "answer": "Vale viene con tal de que no sea muy tarde.",
       "accept": [],
-      "why": "*Sea* is the wish form of *ser*."
+      "why": "*Sea* is the subjunctive of *ser*."
     },
     {
       "prompt": "Change the idea: *Cierro con llave.* Say: I lock up in case someone comes in.",
@@ -187,7 +187,7 @@
       "accept": [
         "Pueden quedarse con tal de que no hagan ruido."
       ],
-      "why": "Switch to *ustedes*: *pueden* and the wish form *hagan*."
+      "why": "Switch to *ustedes*: *pueden* and the subjunctive *hagan*."
     },
     {
       "prompt": "Type in Spanish, with *a menos que*: We won't sell unless Altamira raises its offer.",
@@ -197,7 +197,7 @@
         "No vendemos, a no ser que Altamira suba su oferta.",
         "No vendemos a no ser que Altamira suba su oferta."
       ],
-      "why": "The offer is only a possibility, so the wish form: *suba*."
+      "why": "The offer is only a possibility, so the subjunctive: *suba*."
     },
     {
       "prompt": "Type in Spanish, to a friend, with *siempre que*: I'll help you as long as you tell me beforehand.",
@@ -205,19 +205,19 @@
       "accept": [
         "Siempre que me avises antes, te ayudo."
       ],
-      "why": "As a condition, *siempre que* takes the wish form: *avises*."
+      "why": "As a condition, *siempre que* takes the subjunctive: *avises*."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Firmo con tal de que nos dejan quedarnos.",
       "right": "Firmo con tal de que nos dejen quedarnos.",
-      "why": "Almost. After *con tal de que* the verb takes the wish form: *dejen*, not *dejan*."
+      "why": "Almost. After *con tal de que* the verb takes the subjunctive: *dejen*, not *dejan*."
     },
     {
       "wrong": "En caso de que llovería, la reunión es adentro.",
       "right": "En caso de que llueva, la reunión es adentro.",
-      "why": "Almost. Do not use *-ría* here: after *en caso de que* use the wish form, *llueva*."
+      "why": "Almost. Do not use *-ría* here: after *en caso de que* use the subjunctive, *llueva*."
     },
     {
       "wrong": "Firmo con tal de nos dejen quedarnos.",
@@ -227,7 +227,7 @@
     {
       "wrong": "Te llamo en caso de que hay algún problema.",
       "right": "Te llamo en caso de que haya algún problema.",
-      "why": "Almost. *Hay* is the plain form; after *en caso de que* you need the wish form, *haya*."
+      "why": "Almost. *Hay* is the ordinary form; after *en caso de que* you need the subjunctive, *haya*."
     }
   ],
   "personal": "Set a condition for something you would agree to, starting with *Voy con tal de que…*, or a precaution starting with *Llevo… por si…*"

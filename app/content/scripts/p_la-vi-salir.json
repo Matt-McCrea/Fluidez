@@ -118,7 +118,7 @@
       "prompt": "Type in Spanish: I heard him come in at three.",
       "answer": "Lo oí llegar a las tres.",
       "accept": [],
-      "why": "*Lo* is him, and the verb after *oí* stays plain: *llegar*."
+      "why": "*Lo* is him, and the verb after *oí* stays in the dictionary form: *llegar*."
     },
     {
       "prompt": "Type in Spanish: We saw them (men) argue in the street.",
@@ -130,7 +130,7 @@
       "prompt": "Type in Spanish (to a friend): Did you see her go in?",
       "answer": "¿La viste entrar?",
       "accept": [],
-      "why": "*La* goes before *viste*, and *entrar* stays plain."
+      "why": "*La* goes before *viste*, and *entrar* stays in the dictionary form."
     },
     {
       "prompt": "Make it about a man: *La vi salir del edificio.* Say: I saw him leave the building.",

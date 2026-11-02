@@ -31,7 +31,7 @@
       "en": "If she wants to change the menu, let her change it."
     }
   ],
-  "rule": "To say \"do what you like, I won't stop you\", Spanish repeats the verb.\n\nTo the person: *si quieres* + a plain command. *Si quieres venir, ven.*\nAbout someone else: *si quiere* + *que* + the wish form. *Si quiere ir, que vaya.*\n\nPronouns go before the verb after *que*: *que se lo diga*.\n\nIt hands the decision back, so it can sound cold. Add *a mí me da igual* only if you truly do not mind.",
+  "rule": "To say \"do what you like, I won't stop you\", Spanish repeats the verb.\n\nTo the person: *si quieres* + a plain command. *Si quieres venir, ven.*\nAbout someone else: *si quiere* + *que* + the subjunctive. *Si quiere ir, que vaya.*\n\nPronouns go before the verb after *que*: *que se lo diga*.\n\nIt hands the decision back, so it can sound cold. Add *a mí me da igual* only if you truly do not mind.",
   "smallPrint": "Teachers call *que vaya* an indirect command: a wish aimed at a third person.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "About Hernando. Choose *paga* or *que pague*: Si Hernando quiere pagar, ___. Type the whole sentence.",
       "answer": "Si Hernando quiere pagar, que pague.",
       "accept": [],
-      "why": "About someone else, use *que* + the wish form."
+      "why": "About someone else, use *que* + the subjunctive."
     },
     {
       "prompt": "If you want to come, come. (to a friend)",
@@ -146,7 +146,7 @@
       "prompt": "Make it about Vale: *Si quieres cambiar el menú, cámbialo.*",
       "answer": "Si Vale quiere cambiar el menú, que lo cambie.",
       "accept": [],
-      "why": "About a third person, the command becomes *que* + the wish form."
+      "why": "About a third person, the command becomes *que* + the subjunctive."
     },
     {
       "prompt": "Speak to a friend (*tú*): *Si quiere llamarla, que la llame.*",
@@ -159,7 +159,7 @@
     {
       "wrong": "Si quiere ir, que va.",
       "right": "Si quiere ir, que vaya.",
-      "why": "Almost. After *que* the verb takes its wish form: *vaya*, not *va*."
+      "why": "Almost. After *que* the verb takes its subjunctive: *vaya*, not *va*."
     },
     {
       "wrong": "Si quieres venir, que vengas.",

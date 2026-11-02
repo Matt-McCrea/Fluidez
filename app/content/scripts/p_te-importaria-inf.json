@@ -122,13 +122,13 @@
       "prompt": "Type in Spanish, to a friend: Would you mind helping me with these boxes?",
       "answer": "¿Te importaría ayudarme con estas cajas?",
       "accept": [],
-      "why": "*Te importaría* plus the plain verb; *-me* on the end means \"me\"."
+      "why": "*Te importaría* plus the dictionary form; *-me* on the end means \"me\"."
     },
     {
       "prompt": "Type in Spanish, to a stranger (formal): Would you mind telling me where the police station is?",
       "answer": "¿Le importaría decirme dónde está la comisaría?",
       "accept": [],
-      "why": "Formal means *le importaría*, then the plain verb *decirme*."
+      "why": "Formal means *le importaría*, then the dictionary form *decirme*."
     },
     {
       "prompt": "A friend asks if you would mind calling Vale. You are happy to. Answer in Spanish: Not at all.",
@@ -166,7 +166,7 @@
     {
       "wrong": "¿Te importaría cerrando la ventana?",
       "right": "¿Te importaría cerrar la ventana?",
-      "why": "Almost. English says \"mind closing\", but Spanish uses the plain verb *cerrar*."
+      "why": "Almost. English says \"mind closing\", but Spanish uses the dictionary form *cerrar*."
     }
   ],
   "personal": "Think of a small favour you would ask someone you know, and ask it with *¿Te importaría…?*, then answer it yourself with *No, para nada.*"

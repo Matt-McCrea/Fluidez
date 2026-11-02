@@ -39,7 +39,7 @@
    "en": "Things are gradually changing in the neighbourhood."
   }
  ],
- "rule": "You know *estoy hablando*. The same *-ando* / *-iendo* word can also stand on its own, next to another verb, and then it does three jobs.\n\nHow you did it (English by + -ing):\n*Aprendí español viendo películas.*\nSpanish has no word for by here. The *-ando* form says it alone.\n\nWhat else was going on (English while + -ing, or just -ing):\n*Llegó cantando.* *Vale cocina escuchando música.*\n\nSlowly, bit by bit: *ir* + the *-ando* form.\n*El café va mejorando.* It's getting better, gradually.\nCompare *va a mejorar*: it's going to get better. The little *a* changes everything.\n\nOne thing it never does: be a thing. English says Swimming is good; Spanish uses the plain verb: *Nadar es bueno.* Same after *me gusta*: *Me gusta cocinar.*\n\nOne catch with the *it* test you used for -ing. *By doing* is different: *Aprendí leyendo.* So is *keep doing*: *Siguió hablando.* So is *spend time doing*: *Pasé la tarde cocinando.* These describe how the time went, so they take *-ando*.\n\nA pronoun sticks on the end and the word takes an accent: *riéndose*, *mirándola*.",
+ "rule": "You know *estoy hablando*. The same *-ando* / *-iendo* word can also stand on its own, next to another verb, and then it does three jobs.\n\nHow you did it (English by + -ing):\n*Aprendí español viendo películas.*\nSpanish has no word for by here. The *-ando* form says it alone.\n\nWhat else was going on (English while + -ing, or just -ing):\n*Llegó cantando.* *Vale cocina escuchando música.*\n\nSlowly, bit by bit: *ir* + the *-ando* form.\n*El café va mejorando.* It's getting better, gradually.\nCompare *va a mejorar*: it's going to get better. The little *a* changes everything.\n\nOne thing it never does: be a thing. English says Swimming is good; Spanish uses the dictionary form: *Nadar es bueno.* Same after *me gusta*: *Me gusta cocinar.*\n\nOne catch with the *it* test you used for -ing. *By doing* is different: *Aprendí leyendo.* So is *keep doing*: *Siguió hablando.* So is *spend time doing*: *Pasé la tarde cocinando.* These describe how the time went, so they take *-ando*.\n\nA pronoun sticks on the end and the word takes an accent: *riéndose*, *mirándola*.",
  "smallPrint": "Teachers call the *-ando* / *-iendo* form the gerund (*el gerundio*). Used alone like this, it is an adverbial gerund; *ir* + gerund is a periphrasis of gradual progress.",
  "readAndPick": [
   {
@@ -129,7 +129,7 @@
    "prompt": "Choose *Nadar* or *Nadando* and type the whole sentence (Swimming is good for your health): ___ es bueno para la salud.",
    "answer": "Nadar es bueno para la salud.",
    "accept": [],
-   "why": "When the action is the thing you're talking about, Spanish uses the plain verb, not the *-ando* form."
+   "why": "When the action is the thing you're talking about, Spanish uses the dictionary form, not the *-ando* form."
   },
   {
    "prompt": "Choose *va mejorando* or *va a mejorar* and type the whole sentence (the café is slowly getting better): El café ___ poco a poco.",
@@ -180,7 +180,7 @@
   {
    "wrong": "Nadando es bueno para la salud.",
    "right": "Nadar es bueno para la salud.",
-   "why": "Almost. English uses -ing as a thing; Spanish uses the plain verb, *nadar*."
+   "why": "Almost. English uses -ing as a thing; Spanish uses the dictionary form, *nadar*."
   },
   {
    "wrong": "Aprendí español por ver películas.",
@@ -190,7 +190,7 @@
   {
    "wrong": "Me gusta cocinando.",
    "right": "Me gusta cocinar.",
-   "why": "After *me gusta*, the action is a thing you like, so it's the plain verb."
+   "why": "After *me gusta*, the action is a thing you like, so it's the dictionary form."
   },
   {
    "wrong": "El café va a mejorando.",

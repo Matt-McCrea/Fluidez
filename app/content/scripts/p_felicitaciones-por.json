@@ -13,7 +13,7 @@
     { "es": "¡Felicitaciones a los novios!", "en": "Congratulations to the bride and groom!" },
     { "es": "Lo felicito, don Hernando.", "en": "Congratulations, don Hernando." }
   ],
-  "rule": "*¡Felicitaciones!* or *¡Felicidades!* works for anything: a birthday, a wedding, a new job. Both are always plural.\n\nTo say what for, English uses on. Spanish uses *por*: *por el bebé*, *por tu graduación*. With an action, *por* + the plain verb: *por graduarte*, *por abrir el café*.\n\nTo say who, use *a*: *¡Felicitaciones a los novios!*\n\nTo a person directly, you can also say *Te felicito* (to a friend) or *Lo felicito*, *La felicito* (formal).",
+  "rule": "*¡Felicitaciones!* or *¡Felicidades!* works for anything: a birthday, a wedding, a new job. Both are always plural.\n\nTo say what for, English uses on. Spanish uses *por*: *por el bebé*, *por tu graduación*. With an action, *por* + the dictionary form: *por graduarte*, *por abrir el café*.\n\nTo say who, use *a*: *¡Felicitaciones a los novios!*\n\nTo a person directly, you can also say *Te felicito* (to a friend) or *Lo felicito*, *La felicito* (formal).",
   "smallPrint": "In Spain you'll hear *¡Enhorabuena!* for an achievement. In Colombia and most of Latin America, *felicitaciones* covers it.",
   "readAndPick": [
     {
@@ -80,7 +80,7 @@
       "prompt": "Type in Spanish, to a friend: Congratulations on graduating!",
       "answer": "¡Felicitaciones por graduarte!",
       "accept": ["¡Felicidades por graduarte!"],
-      "why": "After *por*, an action stays in its plain form, with *te* on the end."
+      "why": "After *por*, an action stays in its dictionary form, with *te* on the end."
     },
     {
       "prompt": "Type in Spanish: Congratulations on the new apartment!",
@@ -115,7 +115,7 @@
     {
       "wrong": "¡Felicitaciones por te graduaste!",
       "right": "¡Felicitaciones por graduarte!",
-      "why": "After *por*, use the plain verb, not a past form."
+      "why": "After *por*, use the dictionary form, not a past form."
     }
   ],
   "personal": "Think of someone who had good news lately and congratulate them in Spanish with *por*."

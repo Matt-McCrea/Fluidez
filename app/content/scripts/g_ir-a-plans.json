@@ -31,7 +31,7 @@
       "en": "I'm not going to sing."
     }
   ],
-  "rule": "To talk about plans, use *ir* (to go) + *a* + the plain verb. It's exactly 'going to' in English.\n\n*voy a*, *vas a*, *va a*, *vamos a*, *van a* + *cocinar*, *bailar*, *hacer…*\n\n*Voy a cocinar el domingo. ¿Vas a ver el partido? Vamos a caminar.*\n\nThe second verb never changes: it's always the form ending in *-ar*, *-er* or *-ir*.\n\nTo say no, put *no* before the *ir* part: *No voy a cantar.*\n\nTo ask someone their plans: *¿Qué vas a hacer el sábado?*\n\nIn Latin America this is the everyday way to talk about the future. You'll hear it far more than any other future form.\n\nAnd *vamos a* + verb on its own, with the right tone, is also 'let's': *¡Vamos a bailar!*",
+  "rule": "To talk about plans, use *ir* (to go) + *a* + the dictionary form. It's exactly 'going to' in English.\n\n*voy a*, *vas a*, *va a*, *vamos a*, *van a* + *cocinar*, *bailar*, *hacer…*\n\n*Voy a cocinar el domingo. ¿Vas a ver el partido? Vamos a caminar.*\n\nThe second verb never changes: it's always the form ending in *-ar*, *-er* or *-ir*.\n\nTo say no, put *no* before the *ir* part: *No voy a cantar.*\n\nTo ask someone their plans: *¿Qué vas a hacer el sábado?*\n\nIn Latin America this is the everyday way to talk about the future. You'll hear it far more than any other future form.\n\nAnd *vamos a* + verb on its own, with the right tone, is also 'let's': *¡Vamos a bailar!*",
   "smallPrint": "This is the periphrastic future: *ir a* + infinitive.",
   "soundTip": "In fast speech *voy a* sounds like one word, '*voya*', and *vamos a* like '*vamosa*'.",
   "readAndPick": [
@@ -124,13 +124,13 @@
       "accept": [
         "El domingo voy a cocinar."
       ],
-      "why": "*Voy a* + the plain verb: *cocinar*."
+      "why": "*Voy a* + the dictionary form: *cocinar*."
     },
     {
       "prompt": "Ask a friend: what are you going to do on Saturday?",
       "answer": "¿Qué vas a hacer el sábado?",
       "accept": [],
-      "why": "*Tú* is *vas*; the second verb stays plain: *hacer*."
+      "why": "*Tú* is *vas*; the second verb stays in the dictionary form: *hacer*."
     },
     {
       "prompt": "Say: We're going to dance.",
@@ -174,7 +174,7 @@
     {
       "wrong": "Voy a cocino el domingo.",
       "right": "Voy a cocinar el domingo.",
-      "why": "After *voy a* the verb stays plain, ending in *-ar*, *-er* or *-ir*."
+      "why": "After *voy a* the verb stays in the dictionary form, ending in *-ar*, *-er* or *-ir*."
     },
     {
       "wrong": "Yo va a bailar.",

@@ -31,8 +31,8 @@
       "en": "I'm not sure. (a man speaking)"
     }
   ],
-  "rule": "Two ways to say you're sure.\n\n*Estoy seguro de que* plus a fact is firm: *Estoy seguro de que tiene razón.* Add *totalmente* or *muy* to turn it up. The ending matches the speaker: *segura* for a woman.\n\n*Seguro que* on its own is casual, like \"I bet\": *Seguro que Hernando tiene hambre.* No *estoy*, no *de*. Don't blend the two.\n\nWhen you are sure, the verb after is normal. When you are not, it takes the doubt form you know: *No estoy seguro de que sea posible*, just like *dudo que*.",
-  "smallPrint": "Teachers call this the language of certainty: sure takes the normal verb form, and not sure takes the subjunctive.",
+  "rule": "Two ways to say you're sure.\n\n*Estoy seguro de que* plus a fact is firm: *Estoy seguro de que tiene razón.* Add *totalmente* or *muy* to turn it up. The ending matches the speaker: *segura* for a woman.\n\n*Seguro que* on its own is casual, like \"I bet\": *Seguro que Hernando tiene hambre.* No *estoy*, no *de*. Don't blend the two.\n\nWhen you are sure, the verb after is normal. When you are not, it takes the subjunctive you know: *No estoy seguro de que sea posible*, just like *dudo que*.",
+  "smallPrint": "Teachers call this the language of certainty: sure takes the ordinary form, and not sure takes the subjunctive.",
   "readAndPick": [
     {
       "es": "Estoy seguro de que tiene razón.",
@@ -184,7 +184,7 @@
     {
       "wrong": "Estoy seguro de que tenga razón.",
       "right": "Estoy seguro de que tiene razón.",
-      "why": "When you are sure, state it as a fact with the normal verb form. The doubt form is for when you are not sure."
+      "why": "When you are sure, state it as a fact with the ordinary form. The subjunctive is for when you are not sure."
     }
   ],
   "personal": "Write two lines about something that will happen this week: one you are firmly sure about with *estoy seguro de que* (or *segura*), and one casual guess with *seguro que*."

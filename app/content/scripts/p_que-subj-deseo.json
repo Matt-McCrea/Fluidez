@@ -31,7 +31,7 @@
       "en": "Enjoy yourselves at the party. (you all)"
     }
   ],
-  "rule": "Shape one: *que* plus the wish form, the end of *espero que* with the front cut off. *Que te diviertas.* *Que descanses.* The little word goes before the verb.\n\nShape two: the command form, with the little word stuck on the end. *Diviértete.* *Descansa.* *Mejórate.*\n\nSame meaning, same warmth. Pick whichever comes out first.\n\nFor *usted*: *Que se mejore* or *Mejórese*. For a group: *Que se diviertan* or *Diviértanse*.\n\nDon't mix the two: *que* always comes with the wish form.",
+  "rule": "Shape one: *que* plus the subjunctive, the end of *espero que* with the front cut off. *Que te diviertas.* *Que descanses.* The little word goes before the verb.\n\nShape two: the command form, with the little word stuck on the end. *Diviértete.* *Descansa.* *Mejórate.*\n\nSame meaning, same warmth. Pick whichever comes out first.\n\nFor *usted*: *Que se mejore* or *Mejórese*. For a group: *Que se diviertan* or *Diviértanse*.\n\nDon't mix the two: *que* always comes with the subjunctive.",
   "readAndPick": [
     {
       "es": "Que te diviertas.",
@@ -108,7 +108,7 @@
       "prompt": "Pick *diviertes* or *diviertas* and type the whole wish, to a friend: *Que te ___ en Cartagena.*",
       "answer": "Que te diviertas en Cartagena.",
       "accept": [],
-      "why": "After *que*, the wish form: *diviertas*."
+      "why": "After *que*, the subjunctive: *diviertas*."
     },
     {
       "prompt": "Pick *Descansa* or *Descansas* and type the whole line, to a friend: *___, te lo mereces.*",
@@ -122,7 +122,7 @@
       "accept": [
         "Que te mejores."
       ],
-      "why": "*Que*, then *te*, then the wish form *mejores*."
+      "why": "*Que*, then *te*, then the subjunctive *mejores*."
     },
     {
       "prompt": "Say to don Hernando (formal), with the *que* shape: Get well soon.",
@@ -142,7 +142,7 @@
       "prompt": "Say the same wish in the other shape: *Disfruta el viaje.*",
       "answer": "Que disfrutes el viaje.",
       "accept": [],
-      "why": "With *que*, *disfruta* becomes the wish form *disfrutes*."
+      "why": "With *que*, *disfruta* becomes the subjunctive *disfrutes*."
     },
     {
       "prompt": "Make it for a group (you all): *Que te diviertas en la fiesta.*",
@@ -157,7 +157,7 @@
     {
       "wrong": "Que te diviertes.",
       "right": "Que te diviertas.",
-      "why": "Almost. After *que*, a wish takes the wish form: *diviertas*."
+      "why": "Almost. After *que*, a wish takes the subjunctive: *diviertas*."
     },
     {
       "wrong": "Te diviertas.",

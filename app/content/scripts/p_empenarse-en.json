@@ -123,7 +123,7 @@
       "accept": [
         "¿Por qué te empeñas en discutir con todo el mundo?"
       ],
-      "why": "*Te empeñas en* plus the plain verb *discutir*."
+      "why": "*Te empeñas en* plus the dictionary form *discutir*."
     },
     {
       "prompt": "Type in Spanish: Why does Hernando insist on driving at night?",

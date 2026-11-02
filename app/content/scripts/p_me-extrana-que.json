@@ -1,7 +1,7 @@
 {
   "node": "p:me-extrana-que",
   "hook": {
-    "line": "Tomás has been waiting for Vale all morning and she has not called. In English you would say \"that's odd\". Spanish says it with a frame that always pulls the next verb into the subjunctive.",
+    "line": "Tomás has been waiting for Vale all morning and she has not called. In English you would say \"that's odd\". Spanish says it with a frame that always changes the next verb.",
     "es": "Me extraña que Vale no haya llamado.",
     "en": "It's odd that Vale hasn't called."
   },
@@ -13,7 +13,7 @@
     { "es": "Me extraña que Vale no haya venido.", "en": "It's odd that Vale hasn't come." },
     { "es": "Me extraña que la tienda esté cerrada.", "en": "It's odd that the shop is closed." }
   ],
-  "rule": "To react with surprise, use *me extraña que*, *me sorprende que*, *me llama la atención que* or *¡Qué raro que...!*\n\nThe next verb goes in the subjunctive, even though the fact is true:\n*estás* becomes *estés*, *contesta* becomes *conteste*, *ha llamado* becomes *haya llamado*.\n\nEnglish keeps the plain verb (\"I'm surprised you're here\"). Spanish changes it. The surprise works like *gustar*: the odd thing is what causes it and you are *me*.",
+  "rule": "To react with surprise, use *me extraña que*, *me sorprende que*, *me llama la atención que* or *¡Qué raro que...!*\n\nThe next verb goes in the subjunctive, even though the fact is true:\n*estás* becomes *estés*, *contesta* becomes *conteste*, *ha llamado* becomes *haya llamado*.\n\nEnglish keeps the ordinary form (\"I'm surprised you're here\"). Spanish changes it. The surprise works like *gustar*: the odd thing is what causes it and you are *me*.",
   "smallPrint": "Teachers call this the subjunctive of emotional reaction. It is used even when the fact is not in doubt.",
   "readAndPick": [
     { "es": "Me extraña que no haya llamado.", "options": ["It's odd that he doesn't call.", "It's odd that he hasn't called.", "It's odd that he called."], "answer": 1 },

@@ -86,7 +86,7 @@
       "prompt": "Type it in Spanish: I wish I could cook like Vale!",
       "answer": "¡Quién supiera cocinar como Vale!",
       "accept": [],
-      "why": "\"Know how to\" is *saber*, and its wish form is *supiera*."
+      "why": "\"Know how to\" is *saber*, and its subjunctive is *supiera*."
     },
     {
       "prompt": "Turn the question into a wish: *¿Quién puede dormir así?* becomes: If only I could sleep like that!",

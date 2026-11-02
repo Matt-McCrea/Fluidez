@@ -114,7 +114,7 @@
       "prompt": "Start a formal email: I'm writing to confirm Saturday's reservation.",
       "answer": "Le escribo para confirmar la reserva del sábado.",
       "accept": [],
-      "why": "Formal reader, so *Le escribo*; then *para* plus the plain verb."
+      "why": "Formal reader, so *Le escribo*; then *para* plus the dictionary form."
     },
     {
       "prompt": "Write to a friend: I'm writing to say thank you.",

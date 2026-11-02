@@ -31,7 +31,7 @@
       "en": "Simón has the habit of screaming when someone opens the door."
     }
   ],
-  "rule": "To name a habit, say you have it: *tener la costumbre de* plus a plain verb. Where English says \"in the habit of checking\", Spanish says *de revisar*.\n\nThe noun sets the colour:\n*la costumbre*: neutral, just a habit.\n*la manía*: a quirk, almost an obsession.\n*el vicio*: a bad habit.\n\nIn an argument, *tienes la manía de* sounds like an accusation. *Tengo la costumbre de* is safe for talking about yourself.",
+  "rule": "To name a habit, say you have it: *tener la costumbre de* plus a dictionary form. Where English says \"in the habit of checking\", Spanish says *de revisar*.\n\nThe noun sets the colour:\n*la costumbre*: neutral, just a habit.\n*la manía*: a quirk, almost an obsession.\n*el vicio*: a bad habit.\n\nIn an argument, *tienes la manía de* sounds like an accusation. *Tengo la costumbre de* is safe for talking about yourself.",
   "smallPrint": "Teachers call this a light-verb construction: *tener* plus a noun plus *de* and an infinitive.",
   "readAndPick": [
     {
@@ -127,13 +127,13 @@
       "prompt": "Type in Spanish: I'm in the habit of getting up early.",
       "answer": "Tengo la costumbre de levantarme temprano.",
       "accept": [],
-      "why": "*Tengo la costumbre de*, then a plain verb with no -ing form."
+      "why": "*Tengo la costumbre de*, then a dictionary form with no -ing form."
     },
     {
       "prompt": "Type in Spanish: Don Hernando has the habit of reading the newspaper out loud.",
       "answer": "Don Hernando tiene la costumbre de leer el periódico en voz alta.",
       "accept": [],
-      "why": "*Tiene* goes with Don Hernando, and *leer* stays plain after *de*."
+      "why": "*Tiene* goes with Don Hernando, and *leer* stays in the dictionary form after *de*."
     },
     {
       "prompt": "Type in Spanish: She's in the habit of arriving late.",
@@ -166,7 +166,7 @@
     {
       "wrong": "Tienes la manía de revisando el celular.",
       "right": "Tienes la manía de revisar el celular.",
-      "why": "Almost. English says 'in the habit of checking', but Spanish uses the plain verb after *de*: *revisar*."
+      "why": "Almost. English says 'in the habit of checking', but Spanish uses the dictionary form after *de*: *revisar*."
     },
     {
       "wrong": "Tienes manía de revisar el celular.",

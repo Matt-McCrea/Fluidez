@@ -137,7 +137,7 @@
       "prompt": "Choose *llegar* or *llegando*: Lo despidieron por ___ tarde.",
       "answer": "Lo despidieron por llegar tarde.",
       "accept": [],
-      "why": "After *por*, the plain *-r* verb: *llegar*."
+      "why": "After *por*, the dictionary form: *llegar*."
     },
     {
       "prompt": "Say: Since you're here, help me. (to a friend)",
@@ -190,7 +190,7 @@
     {
       "wrong": "Lo despidieron por que llegó tarde.",
       "right": "Lo despidieron por llegar tarde.",
-      "why": "Almost. *Por* takes the plain *-r* verb: *por llegar*. With a full sentence you need *porque*, written as one word."
+      "why": "Almost. *Por* takes the dictionary form: *por llegar*. With a full sentence you need *porque*, written as one word."
     },
     {
       "wrong": "Lo despidieron por llegando tarde.",

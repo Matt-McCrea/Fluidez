@@ -13,7 +13,7 @@
     { "es": "Hernando sabe hacer ajiaco.", "en": "Hernando knows how to make ajiaco." },
     { "es": "Vale sabe cocinar, pero hoy no puede.", "en": "Vale can cook, but today she can't." }
   ],
-  "rule": "English can does two jobs. Spanish splits them.\n\nA skill you learned, know how to: *saber*. *Sé nadar.* I can swim.\nFree, able or allowed, on a given day: *poder*. *Hoy no puedo.* I can't today.\n\nA quick test: could you say I know how to? Then it's *saber*.\n\n*sé*, *sabes*, *sabe*, *sabemos*, *saben*\n*puedo*, *puedes*, *puede*, *podemos*, *pueden*\n\nBoth go straight into the plain verb ending in *-r*, with nothing between: *sé cocinar*, *puedo venir*.\n\nThey meet when you have the skill but not the chance: *Sé nadar, pero hoy no puedo.*",
+  "rule": "English can does two jobs. Spanish splits them.\n\nA skill you learned, know how to: *saber*. *Sé nadar.* I can swim.\nFree, able or allowed, on a given day: *poder*. *Hoy no puedo.* I can't today.\n\nA quick test: could you say I know how to? Then it's *saber*.\n\n*sé*, *sabes*, *sabe*, *sabemos*, *saben*\n*puedo*, *puedes*, *puede*, *podemos*, *pueden*\n\nBoth go straight into the dictionary form ending in *-r*, with nothing between: *sé cocinar*, *puedo venir*.\n\nThey meet when you have the skill but not the chance: *Sé nadar, pero hoy no puedo.*",
   "smallPrint": "Grammar books describe *saber* plus an infinitive as knowing how (an ability you learned), and *poder* plus an infinitive as possibility or permission.",
   "readAndPick": [
     { "es": "No sé nadar.", "options": ["I don't know how to swim.", "I can't swim today."], "answer": 0 },

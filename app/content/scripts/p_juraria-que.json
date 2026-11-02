@@ -13,7 +13,7 @@
     { "es": "Sospechamos que el senador sabe más.", "en": "We suspect the senator knows more." },
     { "es": "Me da la impresión de que ellos están nerviosos.", "en": "I get the impression that they are nervous." }
   ],
-  "rule": "*Juraría que* is \"I could swear that\": you feel sure, but you cannot prove it, and you may be wrong. *Sospecho que* is \"I suspect that\", usually about something bad. *Me da la impresión de que* is \"I get the impression that\".\n\nAfter all three the verb stays plain: *dejé*, *compró*, *quiere*.\n\nThe *-ía* ending is the \"would\" form. Spanish says \"I would swear\" where English says \"I could swear\". Compare *me consta*: that one has proof, while these three run on gut feeling.",
+  "rule": "*Juraría que* is \"I could swear that\": you feel sure, but you cannot prove it, and you may be wrong. *Sospecho que* is \"I suspect that\", usually about something bad. *Me da la impresión de que* is \"I get the impression that\".\n\nAfter all three the verb stays ordinary: *dejé*, *compró*, *quiere*.\n\nThe *-ía* ending is the \"would\" form. Spanish says \"I would swear\" where English says \"I could swear\". Compare *me consta*: that one has proof, while these three run on gut feeling.",
   "smallPrint": "Teachers call these verbs of subjective certainty, and the verb after them takes the indicative.",
   "readAndPick": [
     { "es": "Juraría que dejé las llaves en la mesa.", "options": ["I could swear I will leave the keys on the table.", "I could swear I left the keys on the table.", "I could swear you left the keys on the table."], "answer": 1 },
@@ -27,15 +27,15 @@
   ],
   "yourTurn": [
     { "prompt": "Pick and type the whole sentence: *Juraría que ___ las llaves en la mesa.* (*dejé* or *dejaría*) I could swear I left the keys on the table.", "answer": "Juraría que dejé las llaves en la mesa.", "accept": [], "why": "*Juraría* already carries the \"would\"; the thing you left is a plain past: *dejé*." },
-    { "prompt": "Pick and type the whole sentence: *Me da la impresión de que Tomás ___ vender.* (*no quiere* or *no quiera*) I get the impression that Tomás doesn't want to sell.", "answer": "Me da la impresión de que Tomás no quiere vender.", "accept": [], "why": "An impression is something you take as true, so the verb stays plain: *no quiere*." },
+    { "prompt": "Pick and type the whole sentence: *Me da la impresión de que Tomás ___ vender.* (*no quiere* or *no quiera*) I get the impression that Tomás doesn't want to sell.", "answer": "Me da la impresión de que Tomás no quiere vender.", "accept": [], "why": "An impression is something you take as true, so the verb stays ordinary: *no quiere*." },
     { "prompt": "Say: I could swear Hernando was here this morning.", "answer": "Juraría que Hernando estuvo aquí esta mañana.", "accept": ["Juraría que Hernando estuvo esta mañana aquí."], "why": "*Estuvo* is a plain past after *juraría que*." },
     { "prompt": "Say: I suspect Altamira has already bought the building.", "answer": "Sospecho que Altamira ya compró el edificio.", "accept": ["Sospecho que Altamira compró ya el edificio."], "why": "*Sospecho que* opens the guess, and the rest is an ordinary statement." },
-    { "prompt": "Say: We suspect the senator knows more.", "answer": "Sospechamos que el senador sabe más.", "accept": [], "why": "*Sospechamos* is the \"we\" form, and *sabe* stays plain." },
+    { "prompt": "Say: We suspect the senator knows more.", "answer": "Sospechamos que el senador sabe más.", "accept": [], "why": "*Sospechamos* is the \"we\" form, and *sabe* stays ordinary." },
     { "prompt": "Make it negative: *Juraría que Vale estaba en la cocina.* (I could swear Vale was not in the kitchen)", "answer": "Juraría que Vale no estaba en la cocina.", "accept": [], "why": "The *no* goes in front of the verb inside the statement, not in front of *juraría*." },
     { "prompt": "Say: I get the impression that they are nervous.", "answer": "Me da la impresión de que ellos están nerviosos.", "accept": ["Me da la impresión de que están nerviosos."], "why": "*Ellos* is optional, because *están* already says \"they\"." }
   ],
   "pitfalls": [
-    { "wrong": "Juraría que haya dejado las llaves en la mesa.", "right": "Juraría que dejé las llaves en la mesa.", "why": "Almost. You feel sure, so the verb after *juraría que* stays plain." },
+    { "wrong": "Juraría que haya dejado las llaves en la mesa.", "right": "Juraría que dejé las llaves en la mesa.", "why": "Almost. You feel sure, so the verb after *juraría que* stays ordinary." },
     { "wrong": "Juro que dejé las llaves en la mesa.", "right": "Juraría que dejé las llaves en la mesa.", "why": "Almost. *Juro* is a flat oath; *juraría* leaves room to be wrong, which is what you want here." },
     { "wrong": "Me da la impresión que Tomás no quiere vender.", "right": "Me da la impresión de que Tomás no quiere vender.", "why": "Almost. After *impresión* Spanish keeps the *de* in front of *que*." }
   ],

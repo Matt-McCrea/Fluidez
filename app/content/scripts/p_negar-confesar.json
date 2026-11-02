@@ -31,7 +31,7 @@
       "en": "Do you admit that it was your fault?"
     }
   ],
-  "rule": "*Negar* means to deny. After *negar que*, the verb takes the special form, because the person refuses to accept it: *niega que sea su culpa*, *negó que fuera suyo*. When people deny something about themselves, use the plain *-r* verb, with no *a* and no *de*: *negó saber la respuesta*.\n\n*Admitir*, *reconocer* and *confesar* do the opposite. They accept the fact, so an ordinary verb follows: *confesó que había sido él*. *Confesar* hints that the person did not want to say it.",
+  "rule": "*Negar* means to deny. After *negar que*, the verb takes the subjunctive, because the person refuses to accept it: *niega que sea su culpa*, *negó que fuera suyo*. When people deny something about themselves, use the plain *-r* verb, with no *a* and no *de*: *negó saber la respuesta*.\n\n*Admitir*, *reconocer* and *confesar* do the opposite. They accept the fact, so an ordinary verb follows: *confesó que había sido él*. *Confesar* hints that the person did not want to say it.",
   "smallPrint": "Teachers say *negar* triggers the subjunctive because it denies a fact, while *admitir* and *reconocer* keep the indicative because they affirm one.",
   "readAndPick": [
     {
@@ -124,7 +124,7 @@
       "prompt": "Type in Spanish: Tomás denies that it's his fault.",
       "answer": "Tomás niega que sea su culpa.",
       "accept": [],
-      "why": "After *niega que*, the verb takes the special form: *sea*."
+      "why": "After *niega que*, the verb takes the subjunctive: *sea*."
     },
     {
       "prompt": "Type in Spanish: Vale confessed that she hadn't slept.",

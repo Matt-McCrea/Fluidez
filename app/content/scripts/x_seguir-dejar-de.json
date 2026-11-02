@@ -35,7 +35,7 @@
       "en": "Simón keeps on talking."
     }
   ],
-  "rule": "Same activity, two ends.\n\n*Seguir* plus the *-ando* or *-iendo* form: it is still going.\n*Sigo yendo al gimnasio.*\n\n*Dejar de* plus the plain verb: it has stopped.\n*Dejé de ir al gimnasio.*\n\nThe glue is different. *Seguir* takes the *-ing* form straight away; *dejar* needs *de* and then *ir*, *fumar*, *manejar*.\n\n*Seguir* changes its stem: *sigo, sigues, sigue, seguimos*. *Dejar* is regular.\n\nWith *no*, *dejar de* flips: *Simón no deja de hablar* means he never stops.",
+  "rule": "Same activity, two ends.\n\n*Seguir* plus the *-ando* or *-iendo* form: it is still going.\n*Sigo yendo al gimnasio.*\n\n*Dejar de* plus the dictionary form: it has stopped.\n*Dejé de ir al gimnasio.*\n\nThe glue is different. *Seguir* takes the *-ing* form straight away; *dejar* needs *de* and then *ir*, *fumar*, *manejar*.\n\n*Seguir* changes its stem: *sigo, sigues, sigue, seguimos*. *Dejar* is regular.\n\nWith *no*, *dejar de* flips: *Simón no deja de hablar* means he never stops.",
   "smallPrint": "Teachers call these aspectual verbs: they say whether an action continues or stops, rather than what the action is.",
   "readAndPick": [
     {
@@ -130,7 +130,7 @@
       "prompt": "Pick *vivir* or *viviendo* and type the whole sentence: *Dejé de ___ en Medellín hace tres años.* (I stopped living in Medellín three years ago.)",
       "answer": "Dejé de vivir en Medellín hace tres años.",
       "accept": [],
-      "why": "After *dejar de*, the verb stays plain."
+      "why": "After *dejar de*, the verb stays in the dictionary form."
     },
     {
       "prompt": "Type in Spanish, to a friend: Are you still studying Spanish?",
@@ -142,7 +142,7 @@
       "prompt": "Type in Spanish: I stopped drinking black coffee at night.",
       "answer": "Dejé de tomar tinto por la noche.",
       "accept": [],
-      "why": "*Dejé de* plus the plain verb *tomar*."
+      "why": "*Dejé de* plus the dictionary form *tomar*."
     },
     {
       "prompt": "Type in Spanish: Hernando stopped driving the taxi.",
@@ -169,7 +169,7 @@
     {
       "wrong": "Dejé de yendo al gimnasio.",
       "right": "Dejé de ir al gimnasio.",
-      "why": "Almost. After *dejar de*, the verb stays plain; the *-yendo* form belongs to *seguir*."
+      "why": "Almost. After *dejar de*, the verb stays in the dictionary form; the *-yendo* form belongs to *seguir*."
     },
     {
       "wrong": "Sigo ir al gimnasio.",

@@ -31,7 +31,7 @@
       "en": "Are you embarrassed to talk to her? (to a friend)"
     }
   ],
-  "rule": "Spanish doesn't say *I am embarrassed*. It says shame *gives* itself to you: *Me da vergüenza*. The person who feels it is *me*, *te*, *le*, *nos*, as with *gusta*.\n\nIf you do the thing yourself, add an infinitive: *Me da vergüenza hablar.*\nIf someone else does it, add *que* and a changed ending: *Me da vergüenza que me vean.*\n\nYou can say *Me da mucha vergüenza*. In Colombia and Mexico, *me da pena* means the same.\n\nNever say *estoy embarazada*: that means pregnant.",
+  "rule": "Spanish doesn't say *I am embarrassed*. It says shame *gives* itself to you: *Me da vergüenza*. The person who feels it is *me*, *te*, *le*, *nos*, as with *gusta*.\n\nIf you do the thing yourself, add an infinitive: *Me da vergüenza hablar.*\nIf someone else does it, add *que* and the subjunctive: *Me da vergüenza que me vean.*\n\nYou can say *Me da mucha vergüenza*. In Colombia and Mexico, *me da pena* means the same.\n\nNever say *estoy embarazada*: that means pregnant.",
   "smallPrint": "Teachers call this a gustar-type verb, followed by an infinitive or by *que* plus the subjunctive.",
   "readAndPick": [
     {
@@ -117,7 +117,7 @@
       "prompt": "Type it in Spanish: I'm embarrassed for Hernando to see me cry.",
       "answer": "Me da vergüenza que Hernando me vea llorar.",
       "accept": [],
-      "why": "Someone else does the seeing, so *que* and the changed ending."
+      "why": "Someone else does the seeing, so *que* and the subjunctive."
     },
     {
       "prompt": "Type it in Spanish: Are you embarrassed to talk to her? (to a friend)",
@@ -141,7 +141,7 @@
       "prompt": "Type it in Spanish: I'm embarrassed that my grandmother knows.",
       "answer": "Me da vergüenza que mi abuela lo sepa.",
       "accept": [],
-      "why": "Someone else knows, so *que* and the changed ending *sepa*."
+      "why": "Someone else knows, so *que* and the subjunctive *sepa*."
     }
   ],
   "pitfalls": [
@@ -158,7 +158,7 @@
     {
       "wrong": "Me da vergüenza que me ven así.",
       "right": "Me da vergüenza que me vean así.",
-      "why": "Almost. After *que*, the verb takes the changed ending: *vean*."
+      "why": "Almost. After *que*, the verb takes the subjunctive: *vean*."
     }
   ],
   "personal": "Tell me one thing that gives you shame, big or small. Start with *Me da vergüenza...*."

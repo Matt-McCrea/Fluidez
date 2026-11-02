@@ -31,7 +31,7 @@
       "en": "Allow me to help you with the door. (to a man, formal)"
     }
   ],
-  "rule": "With a friend, say *déjame* (\"let me\") and then either *que* plus a wish-form verb, or an infinitive: *déjame que te ayude*, *déjame ayudarte*.\n\nTo take over a job, say *deja* and then what you will do: *Deja, yo lo hago*.\n\nWith a stranger or an older person, use *permítame* plus an infinitive. The person you help becomes *la* for a woman and *lo* for a man: *ayudarla*, *ayudarlo*.\n\nIn Colombia, *que* often disappears in speech: *déjame te ayudo*.",
+  "rule": "With a friend, say *déjame* (\"let me\") and then either *que* plus the subjunctive, or an infinitive: *déjame que te ayude*, *déjame ayudarte*.\n\nTo take over a job, say *deja* and then what you will do: *Deja, yo lo hago*.\n\nWith a stranger or an older person, use *permítame* plus an infinitive. The person you help becomes *la* for a woman and *lo* for a man: *ayudarla*, *ayudarlo*.\n\nIn Colombia, *que* often disappears in speech: *déjame te ayudo*.",
   "smallPrint": "Teachers call *deja* and *permítame* commands, and *ayude* the subjunctive. Using *déjame* or *permítame* as a polite offer is a courtesy formula.",
   "readAndPick": [
     {
@@ -170,7 +170,7 @@
     {
       "wrong": "Déjame que te ayudo.",
       "right": "Déjame que te ayude.",
-      "why": "Almost. After *déjame que*, the verb takes its wish form, *ayude*."
+      "why": "Almost. After *déjame que*, the verb takes its subjunctive, *ayude*."
     },
     {
       "wrong": "Permíteme ayudarla, señora.",

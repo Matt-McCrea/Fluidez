@@ -31,7 +31,7 @@
       "en": "While I waited, I read the newspaper."
     }
   ],
-  "rule": "*Mientras* does two jobs, and the verb tells you which one.\n\nTwo things happening at the same time, \"while\": an ordinary verb. *Mientras cocinas, pongo la mesa.* Both are facts.\n\nA condition, \"as long as\": the wish form. *Mientras haya trabajo, me quedo.* It may or may not come true.\n\nTest: does \"as long as\" fit? Wish form. Does \"while\" fit, about now, about every day or about the past? Ordinary verb. A \"while\" about a time still to come works like *cuando*, so it takes the wish form too: *Mientras estés en Bogotá, ven a verme.*\n\nA past \"while\" takes an ordinary verb: *Mientras estudiaba, trabajaba.* A past \"as long as\" takes the *-ra* form: *Me dijo que podía usar el carro mientras lo cuidara.*",
+  "rule": "*Mientras* does two jobs, and the verb tells you which one.\n\nTwo things happening at the same time, \"while\": an ordinary verb. *Mientras cocinas, pongo la mesa.* Both are facts.\n\nA condition, \"as long as\": the subjunctive. *Mientras haya trabajo, me quedo.* It may or may not come true.\n\nTest: does \"as long as\" fit? Subjunctive. Does \"while\" fit, about now, about every day or about the past? Ordinary verb. A \"while\" about a time still to come works like *cuando*, so it takes the subjunctive too: *Mientras estés en Bogotá, ven a verme.*\n\nA past \"while\" takes an ordinary verb: *Mientras estudiaba, trabajaba.* A past \"as long as\" takes the *-ra* form: *Me dijo que podía usar el carro mientras lo cuidara.*",
   "smallPrint": "Teachers call this indicative for simultaneous time and subjunctive for a condition that is not yet real.",
   "readAndPick": [
     {
@@ -112,13 +112,13 @@
       "prompt": "Pick *hay* or *haya* and type the whole sentence: *Mientras ___ trabajo, me quedo.* (\"as long as\")",
       "answer": "Mientras haya trabajo, me quedo.",
       "accept": [],
-      "why": "\"As long as\" is a condition, so the wish form: *haya*."
+      "why": "\"As long as\" is a condition, so the subjunctive: *haya*."
     },
     {
       "prompt": "Type in Spanish: As long as it doesn't rain, we'll play.",
       "answer": "Mientras no llueva, jugamos.",
       "accept": [],
-      "why": "A condition about the future takes the wish form: *llueva*."
+      "why": "A condition about the future takes the subjunctive: *llueva*."
     },
     {
       "prompt": "Type in Spanish: While Vale cooks, Tomás serves the customers.",
@@ -138,7 +138,7 @@
       "prompt": "Make it a condition, \"as long as\": *Mientras Tomás trabaja, Vale se queda.*",
       "answer": "Mientras Tomás trabaje, Vale se queda.",
       "accept": [],
-      "why": "A condition switches the verb after *mientras* to the wish form."
+      "why": "A condition switches the verb after *mientras* to the subjunctive."
     },
     {
       "prompt": "Put it in the past: *Mientras cocinas, pongo la mesa.*",
@@ -151,7 +151,7 @@
     {
       "wrong": "Mientras hay trabajo, me quedo.",
       "right": "Mientras haya trabajo, me quedo.",
-      "why": "Almost. \"As long as\" sets a condition, so the verb takes the wish form: *haya*."
+      "why": "Almost. \"As long as\" sets a condition, so the verb takes the subjunctive: *haya*."
     },
     {
       "wrong": "Mientras cocine, pongo la mesa.",
@@ -161,7 +161,7 @@
     {
       "wrong": "Mientras esperara, leía el periódico.",
       "right": "Mientras esperaba, leía el periódico.",
-      "why": "Almost. A past \"while\" never takes the wish form: *esperaba*."
+      "why": "Almost. A past \"while\" never takes the subjunctive: *esperaba*."
     }
   ],
   "personal": "Make a promise using *mientras*, for example to a friend or your family: *Mientras ... , yo ...*."

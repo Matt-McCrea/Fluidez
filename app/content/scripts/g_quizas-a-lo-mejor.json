@@ -1,7 +1,7 @@
 {
   "node": "g:quizas-a-lo-mejor",
   "hook": {
-    "line": "Nobody at the café knows what Altamira will do next, so half of every conversation is *maybe*. Spanish has three ways to say it, and one of them is a trap: two can take the wish form, one almost never does.",
+    "line": "Nobody at the café knows what Altamira will do next, so half of every conversation is *maybe*. Spanish has three ways to say it, and one of them is a trap: two can change the verb, one almost never does.",
     "es": "A lo mejor Vale viene mañana.",
     "en": "Maybe Vale is coming tomorrow."
   },
@@ -125,16 +125,16 @@
       "why": "*A lo mejor* plus the ordinary form: *tiene*."
     },
     {
-      "prompt": "Type in Spanish, to a friend: Maybe you're right (fairly likely). Use *tal vez* and the plain verb.",
+      "prompt": "Type in Spanish, to a friend: Maybe you're right (fairly likely). Use *tal vez* and the ordinary form.",
       "answer": "Tal vez tienes razón.",
       "accept": [],
-      "why": "The plain verb after *tal vez* says you think it is likely."
+      "why": "The ordinary form after *tal vez* says you think it is likely."
     },
     {
-      "prompt": "Type in Spanish, to a friend: Maybe you're right (not sure). Use *tal vez* and the wish form.",
+      "prompt": "Type in Spanish, to a friend: Maybe you're right (not sure). Use *tal vez* and the subjunctive.",
       "answer": "Tal vez tengas razón.",
       "accept": [],
-      "why": "The wish form after *tal vez* says you are less sure."
+      "why": "The subjunctive after *tal vez* says you are less sure."
     },
     {
       "prompt": "Type in Spanish: Maybe it'll rain later. Use *a lo mejor*.",
@@ -143,13 +143,13 @@
       "why": "The ordinary form after *a lo mejor*: *llueve*."
     },
     {
-      "prompt": "Type in Spanish: Maybe Vale will come tomorrow. Use *quizás* and the wish form.",
+      "prompt": "Type in Spanish: Maybe Vale will come tomorrow. Use *quizás* and the subjunctive.",
       "answer": "Quizás Vale venga mañana.",
       "accept": [
         "Quizás venga Vale mañana.",
         "Quizá Vale venga mañana."
       ],
-      "why": "*Quizás* lets you choose, and the wish form of *venir* is *venga*."
+      "why": "*Quizás* lets you choose, and the subjunctive of *venir* is *venga*."
     },
     {
       "prompt": "Change *Quizás Hernando tenga hambre* so it starts with *A lo mejor*.",
@@ -175,5 +175,5 @@
       "why": "No *que* after *tal vez*. It stands on its own, like *quizás*."
     }
   ],
-  "personal": "Think of one plan you might have this weekend but are not sure about. Say it with *A lo mejor*, then again with *quizás* and the wish form."
+  "personal": "Think of one plan you might have this weekend but are not sure about. Say it with *A lo mejor*, then again with *quizás* and the subjunctive."
 }

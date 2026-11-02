@@ -31,7 +31,7 @@
       "en": "Mariana and Tomás agree that we have to act."
     }
   ],
-  "rule": "English says \"agree that\". Spanish *coincidir* always needs *en*: *coincido en que…*, never *coincido que*. Add the other person with *con*: *coincido contigo*, *coincido con Vale*.\n\nAfter a plain *coincido en que*, use a normal verb: *hace falta*. When you say you do not agree, switch to the subjunctive: *no coincido en que sea…*\n\nTo narrow a disagreement, name the one point: *estoy de acuerdo en todo, salvo en…*",
+  "rule": "English says \"agree that\". Spanish *coincidir* always needs *en*: *coincido en que…*, never *coincido que*. Add the other person with *con*: *coincido contigo*, *coincido con Vale*.\n\nAfter a plain *coincido en que*, use an ordinary verb: *hace falta*. When you say you do not agree, switch to the subjunctive: *no coincido en que sea…*\n\nTo narrow a disagreement, name the one point: *estoy de acuerdo en todo, salvo en…*",
   "smallPrint": "Teachers call this a verb with a fixed preposition: *coincidir* takes *en*, and a negated opinion takes the subjunctive.",
   "readAndPick": [
     {
@@ -134,7 +134,7 @@
       "prompt": "Say: I agree with Vale that the café needs help.",
       "answer": "Coincido con Vale en que el café necesita ayuda.",
       "accept": [],
-      "why": "*Con* plus a name, then *en que* and a normal verb."
+      "why": "*Con* plus a name, then *en que* and an ordinary verb."
     },
     {
       "prompt": "Say you don't agree: *Coincido contigo en que es la única opción.* I don't agree with you that it's the only option.",

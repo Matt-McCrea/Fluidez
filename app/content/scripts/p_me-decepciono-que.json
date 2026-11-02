@@ -31,7 +31,7 @@
       "en": "It hurt you that Vale didn't come, didn't it? (to a friend)"
     }
   ],
-  "rule": "These verbs work like *gustar*: the thing that let you down is the subject, and *me* is you. *Me decepcionó que...* is *it let me down that...*.\n\n*Me dolió* is stronger: it hurt.\n\nAfter *que*, use the wish forms. For something that already happened, use the *-ra* form: *invitaran*, *cancelaran*, *cumpliera*. For something that still bothers you now, use *quiera*.\n\nFor a person or a thing, switch to *estar*: *Estoy decepcionado con...*. A woman says *decepcionada*.",
+  "rule": "These verbs work like *gustar*: the thing that let you down is the subject, and *me* is you. *Me decepcionó que...* is *it let me down that...*.\n\n*Me dolió* is stronger: it hurt.\n\nAfter *que*, use the subjunctive. For something that already happened, use the *-ra* form: *invitaran*, *cancelaran*, *cumpliera*. For something that still bothers you now, use *quiera*.\n\nFor a person or a thing, switch to *estar*: *Estoy decepcionado con...*. A woman says *decepcionada*.",
   "smallPrint": "Teachers call these verbs of emotion: they trigger the subjunctive after *que*.",
   "readAndPick": [
     {
@@ -114,7 +114,7 @@
       "prompt": "Pick *invitaran* or *invitaron* and type the whole sentence: *Me dolió que no me ___.* (It hurt me that they didn't invite me.)",
       "answer": "Me dolió que no me invitaran.",
       "accept": [],
-      "why": "After *me dolió que*, use the wish form: *invitaran*."
+      "why": "After *me dolió que*, use the subjunctive: *invitaran*."
     },
     {
       "prompt": "Pick *decepcionó* or *decepcioné* and type the whole sentence: *Me ___ que no cumpliera su palabra.* (I was disappointed that he didn't keep his word.)",
@@ -157,7 +157,7 @@
     {
       "wrong": "Me dolió que no me invitaron.",
       "right": "Me dolió que no me invitaran.",
-      "why": "Almost. After *que* in a feeling, use the wish form: *invitaran*."
+      "why": "Almost. After *que* in a feeling, use the subjunctive: *invitaran*."
     },
     {
       "wrong": "Me decepcioné que no vinieras.",

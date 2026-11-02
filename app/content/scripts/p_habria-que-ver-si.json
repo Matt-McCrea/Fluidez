@@ -23,7 +23,7 @@
       "en": "They said he arrives at eight; we'd have to see if he arrives on time."
     }
   ],
-  "rule": "*Habría que ver si* is a polite way to doubt something: it remains to be seen whether it is true. It never names who should check, so nobody gets accused.\n\nAfter *si*, use a normal verb, as in English: *habría que ver si es verdad*, *si nos dan el permiso*.\n\nIt often follows a claim you have just heard: *Dijeron que… habría que ver si…*. There is no *que* after *si*, and no subjunctive.",
+  "rule": "*Habría que ver si* is a polite way to doubt something: it remains to be seen whether it is true. It never names who should check, so nobody gets accused.\n\nAfter *si*, use an ordinary verb, as in English: *habría que ver si es verdad*, *si nos dan el permiso*.\n\nIt often follows a claim you have just heard: *Dijeron que… habría que ver si…*. There is no *que* after *si*, and no subjunctive.",
   "smallPrint": "Teachers call this an impersonal conditional used to express scepticism (*escepticismo cortés*).",
   "readAndPick": [
     {
@@ -115,7 +115,7 @@
       "accept": [
         "Habría que ver si es cierto."
       ],
-      "why": "After *si* use the normal verb *es*."
+      "why": "After *si* use the ordinary verb *es*."
     },
     {
       "prompt": "Type in Spanish: It remains to be seen whether they'll give us permission.",
@@ -133,7 +133,7 @@
       "prompt": "Type in Spanish: We'd have to see if he arrives on time.",
       "answer": "Habría que ver si llega a tiempo.",
       "accept": [],
-      "why": "*Habría que ver si* plus a normal verb."
+      "why": "*Habría que ver si* plus an ordinary verb."
     },
     {
       "prompt": "Add the doubt to the claim: *Dijeron que la obra estará lista.* They said the work will be ready; we'd have to see if it's true.",
@@ -147,7 +147,7 @@
       "prompt": "Type in Spanish: We'd have to see whether they believe you.",
       "answer": "Habría que ver si te creen.",
       "accept": [],
-      "why": "*Te creen* is the normal verb after *si*."
+      "why": "*Te creen* is the ordinary verb after *si*."
     },
     {
       "prompt": "Type in Spanish: We'd have to see if he really did it.",

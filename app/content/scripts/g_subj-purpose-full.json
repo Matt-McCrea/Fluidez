@@ -35,8 +35,8 @@
       "en": "Tomás leaves before the lawyer arrives."
     }
   ],
-  "rule": "Three small phrases link what one person does to what another person does:\n*para que* so that\n*sin que* without\n*antes de que* before\n\nThe second action belongs to someone else, so you need *que*. And it isn't a fact: it hasn't happened yet, or it doesn't happen at all. So its verb takes the wish form: *veas*, *note*, *salgas*, *llegue*. You met it with *cuando*. Look at the endings: *-ar* verbs switch to *-e*, the others to *-a*.\n\nWhen the same person does both things, drop *que* and use the infinitive: *Abro temprano para encontrar todo listo.* *Llámame antes de salir.*",
-  "smallPrint": "Teachers call this the subjunctive after purpose and time conjunctions. It is the same wish form, now used for plans that involve someone else.",
+  "rule": "Three small phrases link what one person does to what another person does:\n*para que* so that\n*sin que* without\n*antes de que* before\n\nThe second action belongs to someone else, so you need *que*. And it isn't a fact: it hasn't happened yet, or it doesn't happen at all. So its verb takes the subjunctive: *veas*, *note*, *salgas*, *llegue*. You met it with *cuando*. Look at the endings: *-ar* verbs switch to *-e*, the others to *-a*.\n\nWhen the same person does both things, drop *que* and use the infinitive: *Abro temprano para encontrar todo listo.* *Llámame antes de salir.*",
+  "smallPrint": "Teachers call this the subjunctive after purpose and time conjunctions. It is the same subjunctive, now used for plans that involve someone else.",
   "readAndPick": [
     {
       "es": "Lo dejo aquí para que lo veas.",
@@ -131,7 +131,7 @@
       "prompt": "Pick *para* or *sin* and type the whole sentence: *Hernando entra ___ que nadie lo note.* (Hernando walks in without anyone noticing him.)",
       "answer": "Hernando entra sin que nadie lo note.",
       "accept": [],
-      "why": "\"Without\" is *sin que*, followed by the wish form *note*."
+      "why": "\"Without\" is *sin que*, followed by the subjunctive *note*."
     },
     {
       "prompt": "Type in Spanish, to a friend: Call me before you leave.",
@@ -141,7 +141,7 @@
         "Llámame antes que salgas.",
         "Llámame antes que te vayas."
       ],
-      "why": "*Antes de que* is followed by the wish form: *salgas*."
+      "why": "*Antes de que* is followed by the subjunctive: *salgas*."
     },
     {
       "prompt": "Type in Spanish: I open early so that Vale finds everything ready.",
@@ -173,14 +173,14 @@
       "accept": [
         "Nadie firma nada sin que Tomás lo lea."
       ],
-      "why": "*Sin que* plus the wish form *lea*, because Tomás is the one reading."
+      "why": "*Sin que* plus the subjunctive *lea*, because Tomás is the one reading."
     }
   ],
   "pitfalls": [
     {
       "wrong": "Lo dejo aquí para que lo ves.",
       "right": "Lo dejo aquí para que lo veas.",
-      "why": "Almost. After *para que* the verb takes its wish form: *veas*, not *ves*."
+      "why": "Almost. After *para que* the verb takes its subjunctive: *veas*, not *ves*."
     },
     {
       "wrong": "Llámame antes de salgas.",

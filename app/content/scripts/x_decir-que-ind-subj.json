@@ -133,7 +133,7 @@
    "prompt": "Type in Spanish: Vale says the café is closed.",
    "answer": "Vale dice que el café está cerrado.",
    "accept": [],
-   "why": "A fact keeps its normal verb: *está*."
+   "why": "A fact keeps its ordinary verb: *está*."
   },
   {
    "prompt": "Type in Spanish (to a friend): Vale says for you to close the café.",
@@ -171,13 +171,13 @@
   {
    "wrong": "Dile que viene mañana.",
    "right": "Dile que venga mañana.",
-   "why": "If you mean *tell him to come*, you need the request ending *venga*. *Viene* would be news: that he's coming."
+   "why": "If you mean *tell him to come*, you need the subjunctive *venga*. *Viene* would be news: that he's coming."
   },
   {
    "wrong": "Vale dice que cierre a las seis.",
    "right": "Vale dice que cierra a las seis.",
-   "why": "If you're just passing on a fact about the café, keep the normal verb: *cierra*. *Cierre* would be an order."
+   "why": "If you're just passing on a fact about the café, keep the ordinary verb: *cierra*. *Cierre* would be an order."
   }
  ],
- "personal": "Think of a message someone gave you this week. Write it twice: once as news (*dice que...*) and once as an order (*dice que...* with a changed ending)."
+ "personal": "Think of a message someone gave you this week. Write it twice: once as news (*dice que...*) and once as an order (*dice que...* with the subjunctive)."
 }

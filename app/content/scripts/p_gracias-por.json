@@ -31,7 +31,7 @@
       "en": "Thanks for coming.\nMy pleasure."
     }
   ],
-  "rule": "To say what the thanks are for, add *por* and then the thing: *gracias por la ayuda*, *gracias por todo*.\n\nFor an action, *por* takes the plain form of the verb, the one ending in *-ar*, *-er* or *-ir*: *gracias por venir*, *gracias por esperar*. English uses the -ing form here (coming, waiting); Spanish never does.\n\nTo turn it up, say *muchas gracias por…* or the very Colombian *mil gracias por…* (a thousand thanks). Never *muy gracias*.\n\nThe replies you already know still work: *de nada*, *con mucho gusto*, *a la orden*.",
+  "rule": "To say what the thanks are for, add *por* and then the thing: *gracias por la ayuda*, *gracias por todo*.\n\nFor an action, *por* takes the dictionary form of the verb, the one ending in *-ar*, *-er* or *-ir*: *gracias por venir*, *gracias por esperar*. English uses the -ing form here (coming, waiting); Spanish never does.\n\nTo turn it up, say *muchas gracias por…* or the very Colombian *mil gracias por…* (a thousand thanks). Never *muy gracias*.\n\nThe replies you already know still work: *de nada*, *con mucho gusto*, *a la orden*.",
   "smallPrint": "Here *por* gives the reason behind the thanks. Teachers call this *por* of cause; *por* has other jobs you'll meet later.",
   "readAndPick": [
     {
@@ -116,13 +116,13 @@
       "prompt": "Fill the gap and type the whole sentence: Gracias por ___. (venir / vienes) Thanks for coming.",
       "answer": "Gracias por venir.",
       "accept": [],
-      "why": "After *por* the verb stays in its plain form: *venir*."
+      "why": "After *por* the verb stays in its dictionary form: *venir*."
     },
     {
       "prompt": "Say: Thank you very much for waiting.",
       "answer": "Muchas gracias por esperar.",
       "accept": [],
-      "why": "*Muchas gracias*, then *por* and the plain verb *esperar*."
+      "why": "*Muchas gracias*, then *por* and the dictionary form *esperar*."
     },
     {
       "prompt": "Say it the Colombian way: Thanks a million for everything.",
@@ -137,7 +137,7 @@
         "Muchas gracias por llamar.",
         "Mil gracias por llamar."
       ],
-      "why": "Calling is an action, so it's the plain verb: *llamar*."
+      "why": "Calling is an action, so it's the dictionary form: *llamar*."
     },
     {
       "prompt": "Make it stronger with *muchas*: Gracias por venir.",
@@ -166,7 +166,7 @@
     {
       "wrong": "Gracias por vienes.",
       "right": "Gracias por venir.",
-      "why": "Close. After *por*, the verb stays in its plain form: *venir*, not *vienes*."
+      "why": "Close. After *por*, the verb stays in its dictionary form: *venir*, not *vienes*."
     },
     {
       "wrong": "Gracias para la ayuda.",

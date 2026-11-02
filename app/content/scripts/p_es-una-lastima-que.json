@@ -31,7 +31,7 @@
       "en": "What a shame we hadn't booked in time!"
     }
   ],
-  "rule": "Two frames, same meaning:\n*Es una lástima que...* (calm)\n*¡Qué lástima que...!* (with feeling)\n\nWhat follows *que* takes the wish forms, not the plain ones. For something happening now, use *llueva*, *cierren*. For something that already happened, use *hayas podido*, *se haya quedado*. For something that should have gone differently, use *hubiéramos reservado*.\n\nWith *fue una lástima* the story is in the past, so the verb after it is too: *pudieras*.",
+  "rule": "Two frames, same meaning:\n*Es una lástima que...* (calm)\n*¡Qué lástima que...!* (with feeling)\n\nWhat follows *que* takes the subjunctive, not the ordinary forms. For something happening now, use *llueva*, *cierren*. For something that already happened, use *hayas podido*, *se haya quedado*. For something that should have gone differently, use *hubiéramos reservado*.\n\nWith *fue una lástima* the story is in the past, so the verb after it is too: *pudieras*.",
   "smallPrint": "Teachers call this an expression of feeling that triggers the subjunctive.",
   "readAndPick": [
     {
@@ -115,13 +115,13 @@
       "prompt": "Pick *llueva* or *llueve* and type the whole sentence: *¡Qué lástima que ___ hoy!* (What a shame it's raining today!)",
       "answer": "¡Qué lástima que llueva hoy!",
       "accept": [],
-      "why": "After *qué lástima que*, use the wish form: *llueva*."
+      "why": "After *qué lástima que*, use the subjunctive: *llueva*."
     },
     {
       "prompt": "Pick *cierren* or *cierran* and type the whole sentence: *Es una lástima que ___ el café.* (It's a shame they're closing the café.)",
       "answer": "Es una lástima que cierren el café.",
       "accept": [],
-      "why": "*Es una lástima que* is followed by the *-en* wish form, not *cierran*."
+      "why": "*Es una lástima que* is followed by the *-en* subjunctive, not *cierran*."
     },
     {
       "prompt": "Say: It's a shame you couldn't come. (to a friend)",
@@ -162,7 +162,7 @@
     {
       "wrong": "Es una lástima que cierran el café.",
       "right": "Es una lástima que cierren el café.",
-      "why": "Almost. After *una lástima que*, the verb takes its wish form: *cierren*."
+      "why": "Almost. After *una lástima que*, the verb takes its subjunctive: *cierren*."
     },
     {
       "wrong": "Qué lástima de que llueva.",

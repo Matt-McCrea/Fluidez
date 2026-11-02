@@ -31,8 +31,8 @@
       "en": "Is there a chance it will rain tomorrow?"
     }
   ],
-  "rule": "*Cabe la posibilidad de que* is \"there's a chance that\". Something is possible but not sure, so the verb after it changes form: *renuncie*, *venda*, *esté*.\n\n*No cabe duda de que* is the opposite: \"there's no doubt that\". Now you are certain, so the verb stays plain: *es*, *cocina*.\n\nNews writers also say *no se descarta que* (\"it isn't ruled out that\") with the same changed verb.\n\nThe pair is formal. Friends say *a lo mejor* or *puede ser que*.",
-  "smallPrint": "Teachers call the changed verb the subjunctive. Possibility asks for it; certainty (*no cabe duda*) takes the plain indicative.",
+  "rule": "*Cabe la posibilidad de que* is \"there's a chance that\". Something is possible but not sure, so the verb after it changes form: *renuncie*, *venda*, *esté*.\n\n*No cabe duda de que* is the opposite: \"there's no doubt that\". Now you are certain, so the verb stays ordinary: *es*, *cocina*.\n\nNews writers also say *no se descarta que* (\"it isn't ruled out that\") with the same subjunctive.\n\nThe pair is formal. Friends say *a lo mejor* or *puede ser que*.",
+  "smallPrint": "Possibility asks for the subjunctive; certainty (*no cabe duda*) takes the indicative.",
   "readAndPick": [
     {
       "es": "Cabe la posibilidad de que cierren el café.",
@@ -109,17 +109,17 @@
     {
       "prompt": "Pick *venda* or *vende* and type the whole sentence: *Cabe la posibilidad de que Tomás ___ el café.*",
       "answer": "Cabe la posibilidad de que Tomás venda el café.",
-      "why": "A possibility asks for the changed verb: *venda*."
+      "why": "A possibility asks for the subjunctive: *venda*."
     },
     {
       "prompt": "Pick *es* or *sea* and type the whole sentence: *No cabe duda de que ___ la mejor opción.*",
       "answer": "No cabe duda de que es la mejor opción.",
-      "why": "No doubt means certainty, so the verb stays plain: *es*."
+      "why": "No doubt means certainty, so the verb stays ordinary: *es*."
     },
     {
       "prompt": "Type in Spanish: There is a chance the judge won't agree.",
       "answer": "Cabe la posibilidad de que el juez no esté de acuerdo.",
-      "why": "*No* goes before the changed verb *esté*."
+      "why": "*No* goes before the subjunctive *esté*."
     },
     {
       "prompt": "Type in Spanish: There is no doubt Vale cooks very well.",
@@ -146,12 +146,12 @@
     {
       "wrong": "No cabe duda de que sea la mejor opción.",
       "right": "No cabe duda de que es la mejor opción.",
-      "why": "Almost. When you are sure, the verb stays plain: *es*."
+      "why": "Almost. When you are sure, the verb stays ordinary: *es*."
     },
     {
       "wrong": "Cabe la posibilidad de que Tomás vende el café.",
       "right": "Cabe la posibilidad de que Tomás venda el café.",
-      "why": "Almost. A mere chance needs the changed verb: *venda*."
+      "why": "Almost. A mere chance needs the subjunctive: *venda*."
     },
     {
       "wrong": "Cabe duda de que es la mejor opción.",

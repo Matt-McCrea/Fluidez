@@ -31,7 +31,7 @@
       "en": "That plan doesn't entirely convince me."
     }
   ],
-  "rule": "These phrases let you doubt a claim without calling anyone a liar.\n\nSoftest: *No me convence del todo* and *tengo mis dudas*. In the middle: *no tengo tan claro que*. Strongest: *pongo en duda que* and *cuestiono que*, which openly challenge the claim.\n\nAfter *que* the verb takes the wish form: *sea*, *tenga*, *diga*. You doubt it, so you do not state it.\n\nTake the *no* away and you are sure: *tengo claro que Altamira tiene el permiso*, with the plain verb.",
+  "rule": "These phrases let you doubt a claim without calling anyone a liar.\n\nSoftest: *No me convence del todo* and *tengo mis dudas*. In the middle: *no tengo tan claro que*. Strongest: *pongo en duda que* and *cuestiono que*, which openly challenge the claim.\n\nAfter *que* the verb takes the subjunctive: *sea*, *tenga*, *diga*. You doubt it, so you do not state it.\n\nTake the *no* away and you are sure: *tengo claro que Altamira tiene el permiso*, with the ordinary form.",
   "smallPrint": "Teachers call this the subjunctive after expressions of doubt, which run from mild (*tengo mis dudas*) to strong (*cuestiono que*).",
   "readAndPick": [
     {
@@ -112,7 +112,7 @@
       "prompt": "Pick and type the whole sentence: *No tengo tan claro que ___ la mejor solución.* (*es* or *sea*) I'm not so sure it's the best solution.",
       "answer": "No tengo tan claro que sea la mejor solución.",
       "accept": [],
-      "why": "You doubt it, so the verb takes the wish form: *sea*."
+      "why": "You doubt it, so the verb takes the subjunctive: *sea*."
     },
     {
       "prompt": "Pick and type the whole sentence: *Pongo en duda que el senador ___ la verdad.* (*dice* or *diga*) I question whether the senator is telling the truth.",
@@ -124,19 +124,19 @@
       "prompt": "Say: I question whether that's the cause.",
       "answer": "Cuestiono que esa sea la causa.",
       "accept": [],
-      "why": "*Cuestiono que* is a direct challenge, followed by the wish form *sea*."
+      "why": "*Cuestiono que* is a direct challenge, followed by the subjunctive *sea*."
     },
     {
       "prompt": "Say: I'm not so sure that Altamira has the permit.",
       "answer": "No tengo tan claro que Altamira tenga el permiso.",
       "accept": [],
-      "why": "*No tengo tan claro que* is followed by *tenga*, the wish form of *tener*."
+      "why": "*No tengo tan claro que* is followed by *tenga*, the subjunctive of *tener*."
     },
     {
       "prompt": "Say: We're not so sure that Vale agrees.",
       "answer": "No tenemos tan claro que Vale esté de acuerdo.",
       "accept": [],
-      "why": "*Tenemos* is the \"we\" form and *esté* is the wish form."
+      "why": "*Tenemos* is the \"we\" form and *esté* is the subjunctive."
     },
     {
       "prompt": "Turn *Es verdad* into a doubt, softly: I have my doubts that it's true.",
@@ -150,14 +150,14 @@
       "accept": [
         "Ese plan no me convence del todo."
       ],
-      "why": "*No me convence del todo* needs no *que*, so no wish form is needed."
+      "why": "*No me convence del todo* needs no *que*, so no subjunctive is needed."
     }
   ],
   "pitfalls": [
     {
       "wrong": "No tengo tan claro que es la mejor solución.",
       "right": "No tengo tan claro que sea la mejor solución.",
-      "why": "Almost. You are doubting, so the verb after *que* takes the wish form."
+      "why": "Almost. You are doubting, so the verb after *que* takes the subjunctive."
     },
     {
       "wrong": "Pongo en duda de que el senador diga la verdad.",
@@ -167,7 +167,7 @@
     {
       "wrong": "Tengo claro que Altamira tenga el permiso.",
       "right": "Tengo claro que Altamira tiene el permiso.",
-      "why": "Almost. Without *no* you are sure, so the verb stays plain."
+      "why": "Almost. Without *no* you are sure, so the verb stays ordinary."
     }
   ],
   "personal": "Think of a claim you have heard lately that you are not sure about. Doubt it politely with *no tengo tan claro que*, then say it more firmly with *pongo en duda que*."

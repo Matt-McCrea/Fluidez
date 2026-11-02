@@ -1,7 +1,7 @@
 {
   "node": "g:subj-emotion-intro",
   "hook": {
-    "line": "Mariana has sent round her draft about Altamira, and she wants comments. A good comment starts with how the piece made you feel. Spanish reacts to what other people do with the same wish forms you used for hopes.",
+    "line": "Mariana has sent round her draft about Altamira, and she wants comments. A good comment starts with how the piece made you feel. Spanish reacts to what other people do with the same verb forms you used for hopes.",
     "es": "¡Qué bueno que escribas sobre la cuadra!",
     "en": "It's great that you're writing about the block! (to a friend)"
   },
@@ -39,7 +39,7 @@
       "en": "I'm glad to be here."
     }
   ],
-  "rule": "*Me alegra* and *me molesta* work just like *me gusta*: the thing that happens does the gladdening or the bothering, and *me*, *te*, *le*, *nos*, *les* say who feels it.\n\nWhen the thing is someone else's action, add *que* and use the wish form: *Me alegra que Vale esté aquí.* *Me molesta que Simón grite.*\n\nThis is the surprise. Vale really is here; it's a fact. English just says is. Spanish still uses the subjunctive, because you're reacting to the fact, not reporting it. *Sé que estás aquí* says it. *Me alegra que estés aquí* reacts to it.\n\n*¡Qué bueno que...!* (it's great that...) is the warm, everyday version: *¡Qué bueno que tengas tiempo!*\n\nSame rule as with hopes: if it's your own action, there's no *que*, just the plain verb. *Me alegra estar aquí.*",
+  "rule": "*Me alegra* and *me molesta* work just like *me gusta*: the thing that happens does the gladdening or the bothering, and *me*, *te*, *le*, *nos*, *les* say who feels it.\n\nWhen the thing is someone else's action, add *que* and use the subjunctive: *Me alegra que Vale esté aquí.* *Me molesta que Simón grite.*\n\nThis is the surprise. Vale really is here; it's a fact. English just says is. Spanish still uses the subjunctive, because you're reacting to the fact, not reporting it. *Sé que estás aquí* says it. *Me alegra que estés aquí* reacts to it.\n\n*¡Qué bueno que...!* (it's great that...) is the warm, everyday version: *¡Qué bueno que tengas tiempo!*\n\nSame rule as with hopes: if it's your own action, there's no *que*, just the dictionary form. *Me alegra estar aquí.*",
   "smallPrint": "Teachers call this the subjunctive after emotion (*subjuntivo de emoción*). You'll also hear *Me alegro de que estés bien*, which means the same. And about something already over, you'll often hear the plain past after *qué bueno que*: *¡Qué bueno que viniste!*",
   "readAndPick": [
     {
@@ -127,7 +127,7 @@
       "prompt": "Pick *estás* or *estés* and type the whole sentence, to a friend: *Me alegra que tú ___ aquí.*",
       "answer": "Me alegra que tú estés aquí.",
       "accept": [],
-      "why": "You're reacting to a fact, and a reaction takes the wish form: *estés*."
+      "why": "You're reacting to a fact, and a reaction takes the subjunctive: *estés*."
     },
     {
       "prompt": "Pick *tienes* or *tengas* and type the whole sentence, to a friend: *¡Qué bueno que ___ tiempo hoy!*",
@@ -143,7 +143,7 @@
       "accept": [
         "Me molesta que Simón grite en la mañana."
       ],
-      "why": "*Me molesta* works like *me gusta*, and *grita* becomes the wish form *grite*."
+      "why": "*Me molesta* works like *me gusta*, and *grita* becomes the subjunctive *grite*."
     },
     {
       "prompt": "Type in Spanish: I'm glad to be here.",
@@ -155,7 +155,7 @@
       "prompt": "Type in Spanish, to a customer (formal): I'm glad you're here.",
       "answer": "Me alegra que usted esté aquí.",
       "accept": [],
-      "why": "For *usted*, the wish form of *estar* is *esté*, with the accent."
+      "why": "For *usted*, the subjunctive of *estar* is *esté*, with the accent."
     },
     {
       "prompt": "Make it about us: *Me molesta que Altamira no conteste.*",
@@ -183,7 +183,7 @@
     {
       "wrong": "Me alegra que tú estás aquí.",
       "right": "Me alegra que tú estés aquí.",
-      "why": "Almost. Even when it's a fact, a reaction takes the wish form: *estés*."
+      "why": "Almost. Even when it's a fact, a reaction takes the subjunctive: *estés*."
     },
     {
       "wrong": "Estoy alegre que Vale esté aquí.",
@@ -193,7 +193,7 @@
     {
       "wrong": "Me alegra que yo esté aquí.",
       "right": "Me alegra estar aquí.",
-      "why": "When it's your own action, drop *que* and use the plain verb."
+      "why": "When it's your own action, drop *que* and use the dictionary form."
     },
     {
       "wrong": "Yo molesto que Simón grite.",

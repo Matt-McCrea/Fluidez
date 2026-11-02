@@ -13,7 +13,7 @@
     { "es": "Me consta que Vale cerró la puerta.", "en": "I know for a fact that Vale locked the door." },
     { "es": "No me cabe duda de que Vale cerró la puerta.", "en": "I have no doubt that Vale locked the door." }
   ],
-  "rule": "All three say \"I'm sure\", but each sells something different.\n\n*Juraría que*: a feeling. You could be wrong, and the phrase leaves that door open.\n*Me consta que*: evidence. You saw it, read it or were there.\n*No me cabe duda de que*: a conclusion. You have weighed it up and no room for doubt is left.\n\nA quick test. Could you show someone proof? *Me consta*. Only your gut? *Juraría*. Sure because it all adds up? *No me cabe duda*.\n\nAll three are followed by the plain verb.",
+  "rule": "All three say \"I'm sure\", but each sells something different.\n\n*Juraría que*: a feeling. You could be wrong, and the phrase leaves that door open.\n*Me consta que*: evidence. You saw it, read it or were there.\n*No me cabe duda de que*: a conclusion. You have weighed it up and no room for doubt is left.\n\nA quick test. Could you show someone proof? *Me consta*. Only your gut? *Juraría*. Sure because it all adds up? *No me cabe duda*.\n\nAll three are followed by the ordinary form.",
   "smallPrint": "Teachers call this the difference between subjective certainty (*juraría*), evidential certainty (*me consta*) and reasoned certainty (*no me cabe duda*).",
   "readAndPick": [
     { "es": "Juraría que Vale cerró la puerta.", "options": ["I could swear Vale locked the door.", "I know for a fact that Vale locked the door.", "I have no doubt that Vale locked the door."], "answer": 0 },

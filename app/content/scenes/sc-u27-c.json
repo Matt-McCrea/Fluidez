@@ -20,7 +20,7 @@
           "type": "regex",
           "pattern": "\\b(no|prohibido) fumar\\b",
           "flags": "i",
-          "label": "a sign uses the plain verb: No fumar"
+          "label": "a sign uses the dictionary form: No fumar"
         }
       ],
       "focus": "p:infinitive-instructions",
@@ -41,7 +41,7 @@
           "type": "regex",
           "pattern": "\\bcalentar\\b",
           "flags": "i",
-          "label": "a recipe step uses the plain verb: calentar, not calienta"
+          "label": "a recipe step uses the dictionary form: calentar, not calienta"
         }
       ],
       "focus": "p:infinitive-instructions",

@@ -31,7 +31,7 @@
       "en": "Speaking in public doesn't make me nervous. (a man speaking)"
     }
   ],
-  "rule": "The cause is the subject, and you are the *me* it lands on: *me pone nervioso* is \"it makes me nervous\".\n\nSay *nervioso* or *nerviosa* for who is speaking. Add *muy* to turn it up.\n\nAfter it comes a noun (*la espera*), an infinitive (*hablar en público*) or *que* plus the wish form (*que no contestes*).\n\n*Me desespera* is stronger: it drives me crazy. For the breaking point, *perder la paciencia*: *perdí la paciencia*.",
+  "rule": "The cause is the subject, and you are the *me* it lands on: *me pone nervioso* is \"it makes me nervous\".\n\nSay *nervioso* or *nerviosa* for who is speaking. Add *muy* to turn it up.\n\nAfter it comes a noun (*la espera*), an infinitive (*hablar en público*) or *que* plus the subjunctive (*que no contestes*).\n\n*Me desespera* is stronger: it drives me crazy. For the breaking point, *perder la paciencia*: *perdí la paciencia*.",
   "smallPrint": "Teachers call *poner* plus an adjective a verb of change: it says what state something puts you in.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Type in Spanish (a man speaking): It makes me nervous that Vale says nothing.",
       "answer": "Me pone nervioso que Vale no diga nada.",
       "accept": [],
-      "why": "The cause is the subject, then *que* and the wish form: *diga*."
+      "why": "The cause is the subject, then *que* and the subjunctive: *diga*."
     },
     {
       "prompt": "Type in Spanish: The slowness of this process drives me crazy.",
@@ -140,7 +140,7 @@
       "accept": [
         "Me pone nerviosa que lleguen siempre tarde."
       ],
-      "why": "The late ones are *they*, so the wish form is *lleguen*."
+      "why": "The late ones are *they*, so the subjunctive is *lleguen*."
     },
     {
       "prompt": "Turn it up: *Me pone nervioso que Vale no diga nada.* Say \"very\".",
@@ -159,7 +159,7 @@
     {
       "wrong": "Me pone nerviosa que no contestas los mensajes.",
       "right": "Me pone nerviosa que no contestes los mensajes.",
-      "why": "Almost. After a feeling plus *que*, the verb takes the wish form: *contestes*."
+      "why": "Almost. After a feeling plus *que*, the verb takes the subjunctive: *contestes*."
     },
     {
       "wrong": "Yo desespero la lentitud de este trámite.",

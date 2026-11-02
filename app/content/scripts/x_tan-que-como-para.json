@@ -31,7 +31,7 @@
       "en": "It isn't expensive enough to not buy it."
     }
   ],
-  "rule": "Spanish has two ways to say \"so… that\".\n*Tan… que* + a normal verb reports something that really happened: *Estaba tan cansado que me dormí.* I did fall asleep.\n*Tan… como para* + an infinitive gives a threshold, \"enough to\": *No estaba tan cansado como para dormirme.* It does not say it happened. It is usually negative.\nQuick test: if the result is a fact, use *que*. If it is only a measure of enough, use *como para*.\nBefore a noun like *frío*, use *tanto*.",
+  "rule": "Spanish has two ways to say \"so… that\".\n*Tan… que* + an ordinary verb reports something that really happened: *Estaba tan cansado que me dormí.* I did fall asleep.\n*Tan… como para* + an infinitive gives a threshold, \"enough to\": *No estaba tan cansado como para dormirme.* It does not say it happened. It is usually negative.\nQuick test: if the result is a fact, use *que*. If it is only a measure of enough, use *como para*.\nBefore a noun like *frío*, use *tanto*.",
   "smallPrint": "Teachers call *que* here a result clause and *como para* a clause of degree or purpose.",
   "readAndPick": [
     {
@@ -117,7 +117,7 @@
       "prompt": "Type it in Spanish: It's so cold that I'm not going out.",
       "answer": "Hace tanto frío que no salgo.",
       "accept": [],
-      "why": "A real result, so *que* + a normal verb."
+      "why": "A real result, so *que* + an ordinary verb."
     },
     {
       "prompt": "Type it in Spanish: It isn't cold enough to stay in.",

@@ -31,7 +31,7 @@
       "en": "Do you have the feeling something changed? (to a friend)"
     }
   ],
-  "rule": "These openers all say \"I think so, but I can't prove it\":\n\n*Me da la sensación de que...* (I get the feeling)\n*Tengo la sospecha de que...* (I have a suspicion)\n*Tengo la impresión de que...* (I have the impression)\n*Me temo que...* (I'm afraid that), for unwelcome news\n\nAfter them comes a normal sentence with a plain verb: *está escondiendo*, *no va a llegar*.\n\nWatch *de*: it is *de que* after the nouns, but *me temo que* has none.",
+  "rule": "These openers all say \"I think so, but I can't prove it\":\n\n*Me da la sensación de que...* (I get the feeling)\n*Tengo la sospecha de que...* (I have a suspicion)\n*Tengo la impresión de que...* (I have the impression)\n*Me temo que...* (I'm afraid that), for unwelcome news\n\nAfter them comes a normal sentence with the ordinary form: *está escondiendo*, *no va a llegar*.\n\nWatch *de*: it is *de que* after the nouns, but *me temo que* has none.",
   "smallPrint": "Teachers call these verbs and phrases of opinion and suspicion. They take the plain indicative, because the speaker believes what follows.",
   "readAndPick": [
     {
@@ -119,7 +119,7 @@
       "accept": [
         "Tengo la sensación de que Tomás no quiere hablar."
       ],
-      "why": "Plain verb after *de que*: *quiere*."
+      "why": "Ordinary form after *de que*: *quiere*."
     },
     {
       "prompt": "Type in Spanish: I have a suspicion Altamira is in a hurry.",
@@ -144,7 +144,7 @@
     {
       "prompt": "Type in Spanish: I'm afraid it's late.",
       "answer": "Me temo que es tarde.",
-      "why": "Plain verb *es* after *me temo que*."
+      "why": "Ordinary form *es* after *me temo que*."
     }
   ],
   "pitfalls": [
@@ -156,7 +156,7 @@
     {
       "wrong": "Me da la sensación de que nos esté escondiendo algo.",
       "right": "Me da la sensación de que nos está escondiendo algo.",
-      "why": "Almost. You believe it, so the verb stays plain: *está*."
+      "why": "Almost. You believe it, so the verb stays ordinary: *está*."
     },
     {
       "wrong": "Tengo miedo que no va a llegar.",

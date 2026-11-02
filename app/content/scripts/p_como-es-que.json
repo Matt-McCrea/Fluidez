@@ -31,7 +31,7 @@
       "en": "How can it be that nobody gave a warning in time?"
     }
   ],
-  "rule": "*¿Cómo es que…?* means \"how come…?\": you are surprised and want an explanation. The verb after it is plain, like in a statement. *¿A qué viene…?* with *eso*, *esa cara* or *tanto* is \"what's that about?\", with a little reproach. *¿A qué se debe…?* is the calm, polite \"what is the reason for…?\" For the formal \"how can it be that…\", use *¿Cómo se explica que…?* and the wish form of the verb: *avisara*.",
+  "rule": "*¿Cómo es que…?* means \"how come…?\": you are surprised and want an explanation. The verb after it is plain, like in a statement. *¿A qué viene…?* with *eso*, *esa cara* or *tanto* is \"what's that about?\", with a little reproach. *¿A qué se debe…?* is the calm, polite \"what is the reason for…?\" For the formal \"how can it be that…\", use *¿Cómo se explica que…?* and the subjunctive of the verb: *avisara*.",
   "smallPrint": "Teachers call *avisara* the imperfect subjunctive; here it follows a formal, reproachful *se explica que*.",
   "readAndPick": [
     {
@@ -142,7 +142,7 @@
       "prompt": "Make it formal. Say: How can it be that nobody gave a warning in time?",
       "answer": "¿Cómo se explica que nadie avisara a tiempo?",
       "accept": [],
-      "why": "Formal *se explica que* takes the wish form, *avisara*."
+      "why": "Formal *se explica que* takes the subjunctive, *avisara*."
     },
     {
       "prompt": "Type in Spanish: What's the rush all about?",

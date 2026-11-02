@@ -31,8 +31,8 @@
       "en": "Whether you like it or not, we have to talk. (to a friend)"
     }
   ],
-  "rule": "Say a verb, then *lo que*, then the same verb again, and you get \"whatever\": *pase lo que pase*, *digan lo que digan*.\n\nBoth verbs take the wish form (*pase*, not *pasa*), and they must be the same verb. You can't swap in a synonym for the second one.\n\nIt works with other little words too: *donde* (wherever), *como* (however). Some are set phrases you can learn whole: *cueste lo que cueste*, *sea como sea*, *quieras o no*.\n\nUse it for what will not change: *Pase lo que pase*, I'm here.",
-  "smallPrint": "Teachers call this a concessive clause: the wish form, repeated, says 'no matter what'. The repeated verb is part of the pattern.",
+  "rule": "Say a verb, then *lo que*, then the same verb again, and you get \"whatever\": *pase lo que pase*, *digan lo que digan*.\n\nBoth verbs take the subjunctive (*pase*, not *pasa*), and they must be the same verb. You can't swap in a synonym for the second one.\n\nIt works with other little words too: *donde* (wherever), *como* (however). Some are set phrases you can learn whole: *cueste lo que cueste*, *sea como sea*, *quieras o no*.\n\nUse it for what will not change: *Pase lo que pase*, I'm here.",
+  "smallPrint": "Teachers call this a concessive clause: the subjunctive, repeated, says 'no matter what'. The repeated verb is part of the pattern.",
   "readAndPick": [
     {
       "es": "Pase lo que pase, te apoyo.",
@@ -121,7 +121,7 @@
       "prompt": "Pick *pase* or *pasa* and type the whole sentence: *Pase lo que ___, te apoyo.*",
       "answer": "Pase lo que pase, te apoyo.",
       "accept": [],
-      "why": "The second verb copies the first and also takes the wish form: *pase*."
+      "why": "The second verb copies the first and also takes the subjunctive: *pase*."
     },
     {
       "prompt": "Type in Spanish: Whatever they say, I'm going.",
@@ -135,7 +135,7 @@
       "prompt": "Type in Spanish: Whatever it costs, we're going to defend the café.",
       "answer": "Cueste lo que cueste, vamos a defender el café.",
       "accept": [],
-      "why": "A set phrase: *cueste lo que cueste* repeats *costar* in the wish form."
+      "why": "A set phrase: *cueste lo que cueste* repeats *costar* in the subjunctive."
     },
     {
       "prompt": "Type in Spanish: Whatever happens, I'm not going to give in.",
@@ -168,7 +168,7 @@
     {
       "wrong": "Pasa lo que pasa, te apoyo.",
       "right": "Pase lo que pase, te apoyo.",
-      "why": "Almost. Plain *pasa* describes what actually happens; the 'whatever' feeling needs the wish form, *pase*."
+      "why": "Almost. Plain *pasa* describes what actually happens; the 'whatever' feeling needs the subjunctive, *pase*."
     },
     {
       "wrong": "Pase lo que ocurra, te apoyo.",

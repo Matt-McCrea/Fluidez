@@ -136,7 +136,7 @@
       "accept": [
         "Al parecer Altamira no tiene todos los permisos."
       ],
-      "why": "*Al parecer* is followed by a normal verb."
+      "why": "*Al parecer* is followed by an ordinary verb."
     },
     {
       "prompt": "Say: The owners allegedly hid the documents.",

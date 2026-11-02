@@ -35,7 +35,7 @@
       "en": "You don't say. (to a friend)"
     }
   ],
-  "rule": "To tell someone not to do something, put *no* in front of the wish forms you learned this week.\n\nFor *usted* and for a group, nothing new: *No firme.* *No firmen.* It's the command you know, plus *no*.\n\nThe surprise is *tú*. The positive command has its own shape (*firma*, *ven*, *di*), but the negative switches to the wish form: *no firmes*, *no vengas*, *no digas*. Think of it as *no quiero que firmes* with the first part cut off.\n\nPronouns move, too. In a positive command they stick to the end: *Fírmalo.* *Dímelo.* Add *no* and they jump in front of the verb: *No lo firmes.* *No me lo digas.* The written accent you needed on the long word goes away with them.",
+  "rule": "To tell someone not to do something, put *no* in front of the subjunctive you learned this week.\n\nFor *usted* and for a group, nothing new: *No firme.* *No firmen.* It's the command you know, plus *no*.\n\nThe surprise is *tú*. The positive command has its own shape (*firma*, *ven*, *di*), but the negative switches to the subjunctive: *no firmes*, *no vengas*, *no digas*. Think of it as *no quiero que firmes* with the first part cut off.\n\nPronouns move, too. In a positive command they stick to the end: *Fírmalo.* *Dímelo.* Add *no* and they jump in front of the verb: *No lo firmes.* *No me lo digas.* The written accent you needed on the long word goes away with them.",
   "smallPrint": "Teachers call this the negative imperative (*imperativo negativo*). It's built from the present subjunctive.",
   "readAndPick": [
     {
@@ -118,7 +118,7 @@
       "prompt": "Pick *firmas* or *firmes* and type the whole sentence, to a friend: *No ___ nada de Altamira.* (Don't sign anything from Altamira.)",
       "answer": "No firmes nada de Altamira.",
       "accept": [],
-      "why": "Telling a friend not to uses the wish form: *firmes*."
+      "why": "Telling a friend not to uses the subjunctive: *firmes*."
     },
     {
       "prompt": "Pick *ven* or *vengas* and type the whole sentence, to a friend: *No ___ mañana.* (Don't come tomorrow.)",
@@ -130,7 +130,7 @@
       "prompt": "Tell a friend: Don't worry.",
       "answer": "No te preocupes.",
       "accept": [],
-      "why": "*No*, then *te*, then the wish form *preocupes*."
+      "why": "*No*, then *te*, then the subjunctive *preocupes*."
     },
     {
       "prompt": "Tell a customer (formal): Don't worry.",
@@ -154,7 +154,7 @@
       "prompt": "Make it negative, to a friend: *Ve solo.*",
       "answer": "No vayas solo.",
       "accept": [],
-      "why": "*Ir* has its own wish form, *vaya*, so *no vayas*."
+      "why": "*Ir* has its own subjunctive, *vaya*, so *no vayas*."
     },
     {
       "prompt": "Say it to a group (you all): *No grites delante de los clientes.*",
@@ -167,7 +167,7 @@
     {
       "wrong": "No firma nada.",
       "right": "No firmes nada.",
-      "why": "Almost. *No firma* means he doesn't sign. To tell a friend not to, use the wish form: *no firmes*."
+      "why": "Almost. *No firma* means he doesn't sign. To tell a friend not to, use the subjunctive: *no firmes*."
     },
     {
       "wrong": "No fírmalo.",
