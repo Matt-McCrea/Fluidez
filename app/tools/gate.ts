@@ -42,6 +42,8 @@
  *              (9 on an introduce day, 11 and 4 questions on a drill day, 40 per grammar node
  *              by its drill day); rows legal only at the unit end do not count (warning)
  *   tagger     low-confidence bank sentences (warning; error with --strict)
+ *   options    a chapter or a lesson script whose right option is the longest in most of its choices
+ *              (warning); per band over the whole corpus, tapping the longest option against chance
  *   continuity (whole corpus, once content/_shipped exists) every unit day has a unique key; every
  *              node, day, bank row, chapter, scene and writing task id that ever shipped is still in
  *              content/ or has an entry in content/_migrations/; a retired id has not come back
@@ -49,7 +51,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, type RunState } from './gate/checks';
+import { checkBank, checkComputed, checkDashes, checkStrings, checkStructure, readingCoverage, chapterLength, daySupply, optionBands, optionLengths, type RunState } from './gate/checks';
 import { checkContinuity, idsOfLoaded, readLegacyPath, readMigrationFiles, readShippedIds, unpackShipped } from './gate/continuity';
 import { checkLibrary } from './build/library';
 import { checkPitfalls } from './build/pitfalls';
@@ -115,7 +117,8 @@ export function runGate(o: GateOptions = {}): GateResult {
       const rewrite = checkComputed(st, f, !!o.fix);
       if (rewrite) { writeFileSync(f.abs, JSON.stringify(rewrite, null, 2) + '\n'); fixed.push(f.rel); }
     }
-    if (f.kind === 'story') { readingCoverage(st, f); chapterLength(st, f); touchedUnits.add((f.data as StoryChapter).unit); }
+    if (f.kind === 'story') { readingCoverage(st, f); chapterLength(st, f); optionLengths(st, f); touchedUnits.add((f.data as StoryChapter).unit); }
+    if (f.kind === 'script') optionLengths(st, f);
     if (f.kind === 'scene') touchedUnits.add((f.data as Scene).unit);
     if (f.kind === 'writing') (f.data as WritingTask[]).forEach((w) => touchedUnits.add(w.unit));
     if (f.kind === 'unit') touchedUnits.add((f.data as { id: string }).id);
@@ -129,6 +132,7 @@ export function runGate(o: GateOptions = {}): GateResult {
   const sup = supply(loaded, cur.units, loadQuotas(contentDir), whole ? null : touchedUnits, findings, !!o.strict, cur.completeBands);
 
   daySupply(st, loaded, whole ? null : touchedUnits);
+  if (whole) optionBands(st, loaded);
 
   // what a learner's saved documents name must still be there, or say where it went (needs a shipped snapshot to compare to)
   if (whole) {

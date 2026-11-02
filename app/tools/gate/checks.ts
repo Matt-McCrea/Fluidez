@@ -3,6 +3,7 @@
 import type { BankSentence, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
 import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, type TagResult } from '../../src/engine/tagger';
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
+import { givesAwayByLength, longestShare } from '../../src/exercises/neighbours';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
 import { lateRequires, type Curriculum, type Loaded } from './load';
@@ -388,6 +389,57 @@ export function checkStructure(st: RunState, f: Loaded): void {
       if (ids.has(n.id)) push(`[${i}].id`, `duplicate node id ${n.id}`);
       ids.add(n.id);
       for (const r of [...n.requires, ...n.contrasts]) if (!st.cur.graphIds.has(r)) st.findings.push({ severity: 'warning', check: 'schema', file: f.rel, path: `[${i}]`, problem: `${n.id} references ${r}, which is not in the graph` });
+    });
+  }
+}
+
+/* ---- options that give themselves away by length ---------------------------------
+ * A choice whose right option is the longest is passed by a reader who reads nothing:
+ * the chapter questions have it 68 to 83% of the time by band (chance is 25%), and the
+ * script picks 45 to 52%. The warning is per file, once most of its choices do it, and per
+ * band over the whole corpus. Writing the wrong options as long and as likely as the right
+ * one is a person's work (a rule that shortened or padded them would change what they say). */
+interface Choice { options: readonly string[]; answer: number }
+
+function choicesOf(f: Loaded): Choice[] {
+  const out: Choice[] = [];
+  if (f.kind === 'story') {
+    const c = f.data as StoryChapter;
+    for (const q of [...c.questions, ...(c.rereadQuestions ?? [])]) if (q.options && typeof q.answer === 'number') out.push({ options: q.options, answer: q.answer });
+  }
+  if (f.kind === 'script') for (const q of (f.data as TeachingScript).readAndPick) out.push(q);
+  return out.filter((q) => q.answer >= 0 && q.answer < q.options.length);
+}
+
+export function optionLengths(st: RunState, f: Loaded): void {
+  const rows = choicesOf(f);
+  if (rows.length < 4) return;
+  const given = rows.filter((q) => givesAwayByLength(q.options, q.answer)).length;
+  if (given / rows.length < (f.kind === 'story' ? 0.6 : 0.5)) return;
+  st.findings.push({
+    severity: 'warning', check: 'options', file: f.rel, path: f.kind === 'story' ? 'questions' : 'readAndPick',
+    problem: `the right option is the longest in ${given} of ${rows.length} choices, so a reader who reads nothing passes`,
+    fix: 'write the wrong options as long and as likely as the right one (or shorten the right one)',
+  });
+}
+
+/** Per band, over the whole corpus: how often tapping the longest option is right, against chance. */
+export function optionBands(st: RunState, loaded: Loaded[]): void {
+  const tally = new Map<string, { n: number; got: number; chance: number }>();
+  for (const f of loaded) {
+    if (!f.ok || (f.kind !== 'story' && f.kind !== 'script')) continue;
+    const band = f.kind === 'story' ? st.cur.unitBand.get((f.data as StoryChapter).unit) : st.cur.nodes.get((f.data as TeachingScript).node)?.band;
+    if (!band) continue;
+    const key = `${band} ${f.kind === 'story' ? 'chapter questions' : 'lesson script picks'}`;
+    const t = tally.get(key) ?? { n: 0, got: 0, chance: 0 };
+    for (const q of choicesOf(f)) { t.n++; t.got += longestShare(q.options, q.answer); t.chance += 1 / q.options.length; }
+    tally.set(key, t);
+  }
+  for (const [key, t] of [...tally].sort((a, b) => a[0].localeCompare(b[0]))) {
+    if (t.n < 20 || t.got / t.n <= t.chance / t.n + 0.08) continue;
+    st.findings.push({
+      severity: 'warning', check: 'options', file: '', problem: `${key}: tapping the longest option is right ${Math.round((100 * t.got) / t.n)}% of the time over ${t.n} choices (chance ${Math.round((100 * t.chance) / t.n)}%)`,
+      fix: 'a rewrite of the wrong options, by a person who reads the chapter or the lesson',
     });
   }
 }

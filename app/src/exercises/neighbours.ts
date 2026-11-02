@@ -209,3 +209,10 @@ export function givesAwayByLength(options: readonly string[], answer: number): b
   const right = options[answer]?.length ?? 0;
   return options.every((o, i) => i === answer || right > o.length + 2);
 }
+
+/** What tapping the longest option scores on one question: the share of its longest options that are right (a tie is a coin). */
+export function longestShare(options: readonly string[], answer: number): number {
+  const most = Math.max(...options.map((o) => o.length));
+  const tied = options.flatMap((o, i) => (o.length === most ? [i] : []));
+  return tied.includes(answer) ? 1 / tied.length : 0;
+}

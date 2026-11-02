@@ -528,3 +528,42 @@ describe('(q2) the schedule follows the compiler: chunk cover, phantom lexemes, 
     expect(by(runGate({ appDir: fx.app, paths: [p] }), 'schedule', 'warning').filter((f) => /no writing task/.test(f.problem))).toEqual([]);
   });
 });
+
+describe('(r) options that give themselves away by length', () => {
+  const ch = (opts: Array<{ right: string; wrong: string[] }>) => ({
+    id: 'ch001', unit: 'u01', title: 't', text: Array.from({ length: 120 }, () => 'casa').join(' '), gloss: [], hook: 'h',
+    questions: opts.map((o, i) => ({ q: `q${i}`, options: [o.right, ...o.wrong], answer: 0 })),
+  });
+  const long = { right: 'Rosa, with a pot of soup and a coffee pot', wrong: ['Father Ignacio', 'The mayor', 'The banks'] };
+  const even = { right: 'Rosa with her pot of soup', wrong: ['Father Ignacio and a priest', 'The mayor on his bike', 'The bank next door'] };
+  const run = (opts: Array<{ right: string; wrong: string[] }>) => {
+    const fx = makeFixture();
+    return by(runGate({ appDir: fx.app, paths: [fx.write('story/ch001.json', ch(opts))] }), 'options');
+  };
+  test('a chapter whose right options are nearly always the longest warns, and says how many', () => {
+    const w = run([long, long, long, long, even]);
+    expect(w.map((f) => f.severity)).toEqual(['warning']);
+    expect(w[0].problem).toContain('4 of 5');
+    expect(w[0].problem).toMatch(/longest/);
+  });
+  test('options of about one length, and fewer than four questions, do not', () => {
+    expect(run([even, even, even, even, even])).toEqual([]);
+    expect(run([long, long, long])).toEqual([]);
+  });
+  test('a lesson script whose picks give themselves away warns the same way', () => {
+    const fx = makeFixture();
+    const pick = (right: string, wrong: string[]) => ({ es: 'Hablo.', options: [right, ...wrong], answer: 0 });
+    const script = (picks: unknown[]) => fx.write('scripts/g-present-ar.json', {
+      node: 'g:present-ar', hook: { line: 'l', es: 'Hablo español.', en: 'I speak Spanish.' },
+      examples: [{ es: 'Hablo español.', en: 'a' }, { es: 'Tomás habla inglés.', en: 'b' }, { es: '¿Hablas español?', en: 'c' }],
+      rule: 'r', readAndPick: picks, yourTurn: Array.from({ length: 5 }, () => ({ prompt: 'p', answer: 'Hablo español.', accept: [], why: 'w' })),
+      pitfalls: [{ wrong: 'Yo hablas.', right: 'Yo hablo.', why: 'w' }], personal: 'p',
+    });
+    const give = Array.from({ length: 6 }, () => pick("I'm speaking Spanish with Tomás", ['You speak', 'He speaks']));
+    const w = by(runGate({ appDir: fx.app, paths: [script(give)] }), 'options');
+    expect(w.map((f) => f.severity)).toEqual(['warning']);
+    expect(w[0].problem).toContain('6 of 6');
+    const fair = Array.from({ length: 6 }, () => pick('I speak Spanish', ['You speak Spanish', 'He speaks Spanish']));
+    expect(by(runGate({ appDir: fx.app, paths: [script(fair)] }), 'options')).toEqual([]);
+  });
+});
