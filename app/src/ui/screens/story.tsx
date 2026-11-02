@@ -59,7 +59,7 @@ export function Story({ onPractise }: { onPractise?: (spec: PracticeSpec) => voi
             );
           })}
         </ol>
-      ) : <p>Your first chapter comes with your first lesson.</p>}
+      ) : <p>Chapters you read in your lessons collect here, ready to read again.</p>}
 
       <h3>Saved words</h3>
       {ui.state.saved.length ? (

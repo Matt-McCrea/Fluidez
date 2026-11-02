@@ -51,6 +51,16 @@ export function canDoGroups(
   };
 }
 
+/**
+ * Where the learner is in the course's five stages ("Stage 2 of 5"). The stages are the course's
+ * own; a letter from the CEFR scale would claim a level the app has no evidence the learner has.
+ */
+export function stageLabel(units: ReadonlyArray<{ band?: string }>, band: string): string | undefined {
+  const stages = [...new Set(units.map((u) => u.band).filter((b): b is string => !!b))];
+  const i = stages.indexOf(band);
+  return i < 0 ? undefined : `Stage ${i + 1} of ${stages.length}`;
+}
+
 export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => void } = {}) {
   const { learner, ui, bundle, now } = useApp();
   const units = bundle.course.units;
@@ -69,6 +79,7 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
   const events = learner.events();
   const band = bandAt(bundle.course, ui.path);
   const sameBand = units.filter((u) => u.band === band);
+  const stage = stageLabel(units, band);
   const weekNo = Math.max(1, units.slice(0, ui.path.unit).filter((u) => u.band === band).length + 1);
   const delayed = delayedAccuracy7d(events, learner, at);
   const made = productionShareWeek(events, at);
@@ -89,7 +100,7 @@ export function Progress({ onPractise }: { onPractise?: (spec: PracticeSpec) => 
     <main class="screen" id="main">
       <Heading title="Progress" />
       <section class="card" data-report>
-        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{band}, week {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
+        {sameBand.length && ui.path.unit < units.length ? <p class="ask" data-week>{stage ? `${stage}, week` : 'Week'} {Math.min(weekNo, sameBand.length)} of {sameBand.length}</p> : null}
         <p data-delayed>Things from last week you still have: {delayed.n >= 10 && delayed.value !== undefined ? pct(delayed.value) : 'Not enough yet'}</p>
         <p data-produced>Spanish you produced this week: {made.n >= 10 && made.value !== undefined ? `${pct(made.value)} of practice` : 'Not enough yet'}</p>
         <p data-waiting>Waiting for you: {waitText}{wait >= 1 ? (wait <= budget ? ', under today\'s budget' : ', more than today\'s budget') : ''}</p>
