@@ -13,7 +13,7 @@ describe('UiStore migrations', () => {
     expect(ui.state.learnerId).toBe('learner-abc');
     expect(ui.state.version).toBe(3);
     expect(ui.state.goal).toBe('work');
-    expect(ui.path.version).toBe(2);
+    expect(ui.path.version).toBe(3);
     expect(ui.path.coreSessions).toBe(3);
     expect((await kv.get(UI_KEY) as any).version).toBe(3);
   });

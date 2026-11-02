@@ -47,7 +47,7 @@ const LOG_MAX = 60;
 const REPAY_SCENE_MAX = 14;
 
 export function initialPath(): PathState {
-  return { version: 2, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], remediate: [], log: [] };
+  return { version: 3, unit: 0, day: 0, coreSessions: 0, owedNew: [], owedGrammar: [], pendingDrills: [], recentGrammar: [], remediate: [], log: [] };
 }
 
 export function compileSession(input: CompileInput): SessionPlan {

@@ -139,11 +139,20 @@ export interface CompileInput {
  * shift the week by one day; they never advance or reorder anything).
  */
 export interface PathState {
-  version: 2;
+  version: 3;
   /** index into course.units; === units.length when the course is finished */
   unit: number;
   /** index into units[unit].days */
   day: number;
+  /**
+   * The same place by name, kept beside the integers: the unit's id and the day's stable key (content/days.ts).
+   * The integers are what the compiler walks; these are what survive the course being rearranged, and
+   * learner/reconcile.ts sets the integers from them at boot. Absent on a path from before keys, and once the course is finished.
+   */
+  unitId?: string;
+  dayKey?: string;
+  /** the content migrations this learner's documents have been brought through (the highest number applied); absent = none */
+  contentVersion?: number;
   /** completed non-minimum sessions */
   coreSessions: number;
   /** chunks/lexemes/patterns/contrasts cut (throttle, budget, not-ready) and still owed; introduced first when room */

@@ -103,6 +103,12 @@ export interface LearnerState {
    * it carries it through a save untouched.
    */
   fingerprint?: Fingerprint;
+  /**
+   * Records of nodes the course no longer has (retired by a content migration, or gone with none), kept
+   * whole: reps, cards and all. Nothing reads them, so they are neither due nor listed; if the id comes
+   * back they go back to `nodes` (learner/reconcile.ts). Additive: absent until the first.
+   */
+  orphans?: Record<NodeId, NodeRecord>;
 }
 
 export const DEFAULT_SETTINGS: Settings = {

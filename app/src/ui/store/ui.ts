@@ -3,9 +3,11 @@
 // the same IndexedDB object store as the learner ("state"); the profile and
 // the learner-facing tallies (sessions, words read/written, practice days,
 // saved words, can-do self-checks) live under "ui". Both are plain JSON.
-import { initialPath, type Mode, type PathState, type SessionPlan } from '../../compiler';
+import { initialPath, type Course, type Mode, type PathState, type SessionPlan } from '../../compiler';
+import { dayKeyOf } from '../../content/days';
 import { idbKV, StoredDocumentError, type KV, type Learner, type Tier } from '../../learner';
 import { LEARNER_READERS, type BackupReaders } from '../../learner/backup';
+import { stampPosition, type UiNames } from '../../learner/reconcile';
 import type { LearnQueueJSON } from '../session/order';
 import type { RunnerSnapshot } from '../session/runner';
 import { HISTORY_KEY, Keep, readHistory, readWriting, WRITING_KEY } from './keep';
@@ -14,7 +16,7 @@ export const PATH_KEY = 'path';
 export const UI_KEY = 'ui';
 export const SESSION_KEY = 'session';
 export const UI_VERSION = 3;
-export const PATH_VERSION = 2;
+export const PATH_VERSION = 3;
 
 export type Goal = 'travel' | 'work' | 'people' | 'me';
 
@@ -115,6 +117,8 @@ export const UI_MIGRATIONS: Record<number, (s: any) => any> = {
 export const PATH_MIGRATIONS: Record<number, (s: any) => any> = {
   0: (s) => ({ ...s, version: 1 }),
   1: (s) => ({ ...s, version: 2 }),
+  // 2 -> 3: the place by name (unitId, dayKey) and the content version settled at. Optional, and given at boot by reconcile.
+  2: (s) => ({ ...s, version: 3 }),
 };
 
 const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x === 'object' && !Array.isArray(x);
@@ -203,7 +207,10 @@ export const BACKUP_READERS: BackupReaders = { ...LEARNER_READERS, [PATH_KEY]: m
 
 /** Where a half-finished session stands: enough to open the same plan at the same card. Lives under its own key, outside UiState. */
 export interface SavedSession {
-  version: 1;
+  version: 1 | 2;
+  /** v2: the content version the plan was made at, and the key of the day it was made for. Boot (learner/reconcile.ts) keeps a lesson the course has not moved under and discards the rest. A v1 lesson has neither. */
+  contentVersion?: number;
+  dayKey?: string;
   learnerId: string;
   sessionIndex: number;
   mode: Mode;
@@ -221,7 +228,7 @@ export interface SavedSession {
 /** A saved session is worth picking up on the same day, within a few hours, for this learner, if the learner has not moved on. */
 export const RESUME_WINDOW_MS = 3 * 3_600_000;
 export function isResumable(saved: SavedSession | undefined, learner: Pick<Learner, 'sessionIndex' | 'day'>, now: number, learnerId: string): saved is SavedSession {
-  if (!saved || saved.version !== 1) return false;
+  if (!saved || (saved.version !== 1 && saved.version !== 2)) return false;
   if (saved.learnerId !== learnerId) return false;
   if (saved.sessionIndex !== learner.sessionIndex) return false;
   if (learner.day(saved.savedAt) !== learner.day(now)) return false;
@@ -237,7 +244,30 @@ export class UiStore {
   /** what the learner makes, kept in documents of their own (see keep.ts) */
   readonly keep: Keep;
 
+  /** the course this build carries, and the content version learner documents were settled at, once boot has settled them (see `track`) */
+  private tracking?: { course: Pick<Course, 'units'>; version: number };
+
   constructor(readonly kv: KV = idbKV()) { this.keep = new Keep(kv); }
+
+  /**
+   * Boot has settled the learner's documents against this course (settleContent). From here a path
+   * and a saved lesson are written with their place by name (the unit, the day's key, the content
+   * version) beside the integers, wherever they are written from, so a rearranged course can find them.
+   */
+  track(course: Pick<Course, 'units'>, version: number): void { this.tracking = { course, version }; }
+
+  /** The content version this build's documents are settled at; 0 before boot settles them. */
+  get contentVersion(): number { return this.tracking?.version ?? 0; }
+
+  private placed(path: PathState): PathState { return this.tracking ? stampPosition(path, this.tracking.course, this.tracking.version) : path; }
+
+  private stampedSession(s: SavedSession): SavedSession {
+    const t = this.tracking;
+    if (!t) return s;
+    const u = t.course.units.find((x) => x.id === s.plan.unit);
+    const dayKey = u && s.plan.day !== undefined && u.days[s.plan.day] ? dayKeyOf(u, s.plan.day) : undefined;
+    return { ...s, version: 2, contentVersion: t.version, ...(dayKey ? { dayKey } : {}) };
+  }
 
   /**
    * Load and migrate. A missing document is a fresh start; a document that
@@ -250,7 +280,8 @@ export class UiStore {
    */
   async load(): Promise<this> {
     const [ui, path, session] = await Promise.all([this.kv.get(UI_KEY), this.kv.get(PATH_KEY), this.kv.get(SESSION_KEY)]);
-    this.session = session && typeof session === 'object' && (session as SavedSession).version === 1 ? (session as SavedSession) : undefined;
+    const sv = session && typeof session === 'object' ? (session as SavedSession).version : undefined;
+    this.session = sv === 1 || sv === 2 ? (session as SavedSession) : undefined;
     if (ui === undefined || ui === null) {
       this.state = emptyUi();
       await this.writeBack(UI_KEY, this.state);
@@ -284,8 +315,8 @@ export class UiStore {
   }
 
   async saveSession(s: SavedSession): Promise<void> {
-    this.session = s;
-    await this.kv.set(SESSION_KEY, s);
+    this.session = this.stampedSession(s);
+    await this.kv.set(SESSION_KEY, this.session);
   }
 
   async clearSession(): Promise<void> {
@@ -340,7 +371,7 @@ export class UiStore {
    */
   async commitSession(learner: Learner, path: PathState, day: string, opts: { quick?: boolean } = {}): Promise<void> {
     const before = { path: this.path, state: this.state };
-    this.path = structuredClone(path);
+    this.path = this.placed(structuredClone(path));
     const next = structuredClone(this.state);
     applyStreak(next, day);
     next.stats.sessions += 1;
@@ -370,6 +401,25 @@ export class UiStore {
     }
   }
 
+  /**
+   * Take the path, the names the ui keeps and the saved lesson as `reconcile` settled them (`session`
+   * null: the lesson is dropped), and write them with the learner's documents in one transaction when
+   * the learner store shares this KV. A refused write is reported and left: what is in memory is
+   * settled, and settling again after a restart finds the same answer.
+   */
+  async adopt(learner: Learner, next: { path: PathState; ui?: UiNames; session?: SavedSession | null }): Promise<void> {
+    this.path = structuredClone(next.path);
+    if (next.ui) this.state = { ...this.state, readSeconds: next.ui.readSeconds, writing: next.ui.writing as UiState['writing'] };
+    if (next.session !== undefined) this.session = next.session ?? undefined;
+    this.emit();
+    try {
+      if ((learner.backing as { kv?: KV } | null)?.kv === this.kv) await learner.commit({ path: this.path, ui: this.state });
+      else { await this.writeBoth(); await learner.flush(); }
+      if (next.session === null) await this.kv.del(SESSION_KEY);
+      else if (next.session) await this.kv.set(SESSION_KEY, next.session);
+    } catch (e) { console.warn('fluidez: could not save what was settled against the course; it is settled again at the next start', e); }
+  }
+
   private async writeBoth(): Promise<void> {
     const entries: [string, unknown][] = [[PATH_KEY, this.path], [UI_KEY, this.state]];
     if (this.kv.setMany) await this.kv.setMany(entries);
@@ -391,7 +441,7 @@ export class UiStore {
   }
 
   async setPath(p: PathState): Promise<void> {
-    this.path = structuredClone(p);
+    this.path = this.placed(structuredClone(p));
     this.emit();
     await this.kv.set(PATH_KEY, this.path);
   }
