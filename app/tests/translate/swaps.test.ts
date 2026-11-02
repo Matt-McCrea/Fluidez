@@ -284,6 +284,10 @@ describe('a swap that touches the card says so', () => {
     expect(r.swaps).toEqual([expect.objectContaining({ kind: 'future-ir-a', from: 'pagaré', to: 'voy a pagar' })]);
   });
 
+  test('a card named for the simple future is touched as well, whatever the course calls its node', () => {
+    expect(run(['Pagaré mañana.', "I'll pay tomorrow.", 'Voy a pagar mañana.'], ['g:future-simple']).note).toBe('"voy a pagar" works too. This card was practising "pagaré".');
+  });
+
   test('the same swap passes plainly on a card about something else', () => {
     const r = run(future, ['l:llamar']);
     expect(r.pass).toBe(true);
