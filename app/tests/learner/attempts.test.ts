@@ -3,6 +3,8 @@
 // out afterwards. The attempts log keeps them, apart from the review events (an exposure writes one event
 // per node, so the text would repeat up to nine times) and capped, and the learner's state keeps a small
 // rollup that outlives the cap.
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
 import {
   ATTEMPTS_CAP, ATTEMPTS_VERSION, compact, IdbStore, Learner, MemoryStore, migrate, Rating, readAttempts, StoredDocumentError, STATE_VERSION,
@@ -237,5 +239,27 @@ describe('a backup carries the attempts', () => {
     await L.flush();
     await new UiStore(kv).load();
     expect(Object.keys((await makeBackup(store, BACKUP_READERS, 1)).documents).sort()).toEqual(['events', 'state', 'ui']);
+  });
+});
+
+// Saved learners are sacred. The fingerprint and the attempts document are additive, so a learner saved before
+// them boots as they were, gains only what is new, and a build that has not heard of the new field carries it.
+describe.each(['live-ee6aaec', 'head-early', 'head-mid-session', 'head-placed'])('golden learner %s', (name) => {
+  const g = JSON.parse(readFileSync(fileURLToPath(new URL(`../golden/${name}.json`, import.meta.url)), 'utf8')) as { madeAt: number; kv: Record<string, unknown> };
+  const kvOf = () => { const kv = mapKV(); for (const [k, v] of Object.entries(g.kv)) kv.map.set(k, structuredClone(v)); return kv; };
+
+  test('gains the attempts and the fingerprint and loses nothing', async () => {
+    const was = await Learner.open(new IdbStore(kvOf()), { now: () => g.madeAt });
+    const kv = kvOf();
+    const L = await Learner.open(new IdbStore(kv), { now: () => g.madeAt });
+    L.recordAttempt(row({ at: g.madeAt, err: 'article', verdict: 'wrong' }));
+    await L.flush();
+    const M = await Learner.open(new IdbStore(kv), { now: () => g.madeAt });
+    const { fingerprint, ...rest } = M.toJSON();
+    expect(rest).toEqual(was.toJSON());
+    expect(fingerprint).toEqual({ article: { n: 1, miss: 1, last: g.madeAt } });
+    expect(M.events()).toEqual(was.events());
+    expect(M.attempts()).toHaveLength(1);
+    expect(kv.map.get('events')).toEqual(g.kv.events);
   });
 });

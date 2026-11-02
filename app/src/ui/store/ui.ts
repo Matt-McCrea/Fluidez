@@ -408,6 +408,7 @@ export class UiStore {
   /** Everything, gone: learner, path and UI state. */
   async reset(extraKeys: string[] = []): Promise<void> {
     // the copies kept beside the documents (quarantine, version snapshots) go too: this promises everything is deleted
+    await this.keep.settled(); // a write still queued must not bring a deleted document back
     const own = [UI_KEY, PATH_KEY, SESSION_KEY, WRITING_KEY, HISTORY_KEY];
     const copies = ((await this.kv.keys?.()) ?? []).filter((k) => own.some((n) => k.startsWith(`${n}.`)));
     for (const k of [...own, ...extraKeys, ...copies]) await this.kv.del(k);

@@ -235,7 +235,12 @@ describe('the document', () => {
     const ui = await new UiStore(kv).load();
     await ui.keep.saveWriting(entry());
     await kv.set(`${WRITING_KEY}.quarantine`, 'old');
+    // a slow store: this write is still on its way when the learner starts over
+    const set = kv.set.bind(kv);
+    kv.set = async (k, v) => { await new Promise((r) => setTimeout(r, 10)); return set(k, v); };
+    void ui.keep.saveWriting(entry({ id: 'still on its way' }));
     await ui.reset();
-    expect([...kv.data.keys()]).toEqual([]);
+    await new Promise((r) => setTimeout(r, 40));
+    expect([...kv.data.keys()], 'a write still queued must not bring a deleted document back').toEqual([]);
   });
 });

@@ -8,6 +8,7 @@
 // Nothing here chooses a grade or a time. `gradeOf` turns an outcome into a
 // grade, and no clock reading ever reaches it (R17).
 import type { NodeId } from '../../content/schema';
+import type { GapKind } from '../../check/translate/hints';
 import type { Feature } from '../../exercises/types';
 import {
   Rating, type Direction, type ExposureEvent, type Grade, type Learner, type ReviewOptions, type SentenceCreditOptions, type StepResult,
@@ -59,7 +60,7 @@ export const ladderMove = (o: Pick<Outcome, 'correct' | 'tries'>): 'miss' | 'pas
 // ---------------------------------------------------------------- the attempts log
 
 /** A wrong pick on options that differ in one feature puts the slip on that feature, in the words the checker uses for a typed one. */
-const FEATURE_SLIP: Record<Feature, string> = {
+const FEATURE_SLIP: Record<Feature, GapKind> = {
   tense: 'tense', person: 'person', mood: 'mood', clitic: 'pronoun', copula: 'ser-estar', porpara: 'por-para', number: 'number', gender: 'agreement',
 };
 
