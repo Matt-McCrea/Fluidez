@@ -312,6 +312,27 @@ export function patternFeatures(words: Word[], specs: readonly PatternSpec[]): F
 /** Pattern ids the tagger can look for at all (others are never in requires). */
 export function detectablePatterns(specs: readonly PatternSpec[]): Set<string> { return new Set(compilePatterns(specs).map((p) => p.id)); }
 
+/** Where in `text` the decision on a target sits: character offsets [start, end) of the first
+ *  feature that carries one of `targets` (earliest target first). Null when none does. `r` is the
+ *  tag of exactly `text`. */
+export function focusSpan(text: string, r: TagResult, targets: readonly string[]): [number, number] | null {
+  for (const t of targets) {
+    const f = r.features.find((x) => x.node === t);
+    if (!f) continue;
+    // tokens carry no offsets: find each in order, so a line break or dash between lines still counts
+    let at = 0, start = -1, end = -1;
+    for (const w of r.tokens) {
+      const k = text.indexOf(w.text, at);
+      if (k < 0) return null;
+      if (w.i === f.span[0]) start = k;
+      if (w.i === f.span[1]) { end = k + w.text.length; break; }
+      at = k + w.text.length;
+    }
+    return start >= 0 && end > start ? [start, end] : null;
+  }
+  return null;
+}
+
 /** Tag one sentence (or a short text: sentences are handled independently
  *  by the detectors, which never look across a full stop). */
 export function tagSentence(es: string, opts: TagOptions = {}): TagResult {

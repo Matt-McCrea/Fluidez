@@ -939,6 +939,8 @@ function copulaPass(ctx: FeatureCtx): void {
       continue;
     }
     const lx = lexEntry(n.w) ?? (n.lemma ? lexEntry(n.lemma) : undefined);
+    // the adjectives whose meaning turns on ser or estar (aburrido, listo, rico...): es aburrido / está aburrido
+    if (n.pos !== 'ger' && (L === 'ser' ? SER_ADJ : ESTAR_ADJ).test(n.w)) add(ctx, 'adj.ser-estar', i, j);
     if (L === 'ser') {
       if (n.pos === 'part' && !(lx && (lx.pos === 'adj' || lx.pos === 'x'))) add(ctx, 'ser.passive', i, j, { lemma: n.lemma });
       else if (n.w === 'de') add(ctx, 'ser.origin', i, j);
@@ -969,6 +971,17 @@ const POR_FIXED = [
   'por completo', 'por cierto', 'por ahora', 'por aquí', 'por allá', 'por allí', 'por teléfono', 'por correo',
 ].map((s) => s.split(' '));
 
+// adjectives whose meaning turns on ser or estar (es listo / está atento). The node's headline ones
+// (aburrido, rico, verde, bueno, malo, nervioso, tranquilo) are ordinary early vocabulary used with
+// either verb from u02 on, so a tagger key on them would make those rows illegal: they stay with ser
+// and estar, and this node is found only where the word itself belongs to the contrast.
+const SER_ADJ = /^(?:list|viv|madur|orgullos|atent|callad)[oa]s?$/;
+const ESTAR_ADJ = /^(?:viv|madur|atent|callad)[oa]s?$/;
+// por/para part 2, found by words. The frames the early units already use (por la mañana, por teléfono, por
+// mensaje, por hora, Para mí, ...) stay with part 1: a key on them would make those rows illegal. What is
+// left is a frequency (tres veces por día) and para + ser (Para ser lunes, ...). Exchange (cambiarlo por un
+// sofá, u16), por semana and por completo are used well before u35, so they stay with part 1 too
+const POR_FREQ_NOUN = S('día mes año');
 const POR_PER = S('kilo kilos libra libras persona día hora mes noche unidad');
 const POR_PRICE_VERBS = S('pagar vender cambiar cobrar comprar');
 /** The words of the clause before `i` (back to punctuation or a clause link). */
@@ -996,7 +1009,12 @@ function miscPass(ctx: FeatureCtx): void {
       // pagar / vender / cambiar X por Y and "por kilo": the price frame owns its por (p:costar-pagar)
       else if (POR_PER.has(words[i + 1]?.w ?? '') || clauseBefore(words, i).some((y) => POR_PRICE_VERBS.has(bareOf(y.lemma)))) add(ctx, 'por.price', i, i);
       else add(ctx, 'prep.por', i, i);
-    } else if (x === 'para' && w.pos === 'prep' && words[i + 1]?.w !== 'que') add(ctx, 'prep.para', i, i);
+      if (POR_FREQ_NOUN.has(words[i + 1]?.w ?? '') && ['vez', 'veces'].includes(words[i - 1]?.w ?? '') || POR_FREQ_NOUN.has(words[i + 1]?.w ?? '') && ['vez', 'veces'].includes(words[i - 2]?.w ?? '')) add(ctx, 'por.time', i, i + 1);
+    } else if (x === 'para' && w.pos === 'prep' && words[i + 1]?.w !== 'que') {
+      add(ctx, 'prep.para', i, i);
+      const pv = words[i - 1];
+      if ((!pv || pv.punct || pv.w === 'y' || pv.w === 'pero') && words[i + 1]?.w === 'ser') add(ctx, 'para.comparison', i, i + 1);
+    }
     else if (x === 'más' || x === 'menos') {
       if (words[i + 1]?.w === 'de' && (words[i + 2]?.pos === 'num' || /^\d/.test(words[i + 2]?.w ?? ''))) { add(ctx, 'comp.mas-de', i, i + 1); continue; }
       // superlative: (el|la|los|las) (noun)? más ADJ

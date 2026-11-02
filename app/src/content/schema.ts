@@ -30,6 +30,9 @@ export const GraphNode = z.object({
   pcic: z.array(z.string()).default([]),
   placement: z.enum(['pcic', 'teaching_choice']).default('pcic'),
   note: z.string().optional(),          // for authors, never shown to learners
+  // false: no tagger feature can find this node (it turns on meaning, not words), so a bank row
+  // for it carries no focus span. Absent: the tagger finds it
+  detectable: z.boolean().optional(),
   sources: z.array(z.string()).default([]), // old lesson ids mined for this node
   // lexeme-only
   pos: z.string().optional(),
@@ -86,6 +89,10 @@ export const BankSentence = z.object({
   acceptEn: z.array(z.string()).default([]), // other correct English for the es prompt
   requires: z.array(NodeId).default([]),     // grammar/pattern/chunk/lexeme nodes; computed by the tagger
   targets: z.array(NodeId).default([]),      // nodes this sentence was written to practise
+  // where in es the decision on a target sits: character offsets [start, end) into es, so a dialogue
+  // row keeps its lines. Computed by the tagger from the feature that carries a target; absent when no
+  // feature does (the blind nodes)
+  focus: z.tuple([z.number().int().nonnegative(), z.number().int().positive()]).optional(),
   kind: z.enum(['statement', 'question', 'dialogue']).optional(),
   unit: z.string().optional(),
   theme: z.string().optional(),

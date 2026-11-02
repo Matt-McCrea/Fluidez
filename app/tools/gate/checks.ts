@@ -1,7 +1,7 @@
 // Per-file checks: accent, dialect, verb coverage, legality, typeability,
 // computed requires, reading coverage, structure.
 import type { BankSentence, ContrastFile, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
-import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, type TagResult } from '../../src/engine/tagger';
+import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, focusSpan, type TagResult } from '../../src/engine/tagger';
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
 import { givesAwayByLength, longestShare } from '../../src/exercises/neighbours';
 import { extractSpanish, type EsString } from './extract';
@@ -262,6 +262,12 @@ export function checkBank(st: RunState, f: Loaded, fix: boolean): unknown[] | nu
         st.findings.push({ severity: 'error', check: 'requires', file: f.rel, path: `[${i}].requires`, problem: `requires is computed by the tagger and differs (${[missing.length ? '+' + missing.join(' +') : '', extra.length ? '-' + extra.join(' -') : ''].filter(Boolean).join(' ')})`, fix: `run: npm run gate -- --fix ${f.rel}` });
       }
     }
+    // focus is computed the same way: where the tagger finds the decision on a target, as offsets into es
+    const wantFocus = focusSpan(b.es, r, b.targets);
+    if ((wantFocus ? wantFocus.join(',') : '') !== (b.focus ? b.focus.join(',') : '')) {
+      if (fix) { raw[i] = withFocus(raw[i], wantFocus); changed = true; }
+      else st.findings.push({ severity: 'error', check: 'focus', file: f.rel, path: `[${i}].focus`, problem: `focus is computed by the tagger and differs (${b.focus ? `[${b.focus}]` : 'none'}, want ${wantFocus ? `[${wantFocus}]` : 'none'})`, fix: `run: npm run gate -- --fix ${f.rel}` });
+    }
     for (const t of b.targets) {
       if (!want.includes(t)) {
         // targets are author intent: a pattern or contrast (matched heuristically, or never), or a
@@ -340,6 +346,11 @@ export function checkComputed(st: RunState, f: Loaded, fix: boolean): unknown | 
 function withField(row: Record<string, unknown>, key: string, v: string[]): Record<string, unknown> {
   if (key in row) return Object.fromEntries(Object.entries(row).map(([k, x]) => [k, k === key ? v : x]));
   return { ...row, [key]: v };
+}
+
+function withFocus(row: Record<string, unknown>, span: [number, number] | null): Record<string, unknown> {
+  const { focus: _old, ...rest } = row;
+  return span ? { ...rest, focus: span } : rest;
 }
 
 function withRequires(row: Record<string, unknown>, req: string[]): Record<string, unknown> {

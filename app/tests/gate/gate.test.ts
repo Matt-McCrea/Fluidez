@@ -164,7 +164,7 @@ describe('(i) bank requires is computed', () => {
     expect(r2.fixed).toEqual(['content/bank/u01.json']);
     const written = JSON.parse(readFileSync(p, 'utf8'));
     expect(written[0].requires).toContain('g:present-ar');
-    expect(Object.keys(written[0])).toEqual(['id', 'es', 'en', 'unit', 'requires', 'targets']);   // key order kept
+    expect(Object.keys(written[0])).toEqual(['id', 'es', 'en', 'unit', 'requires', 'targets', 'focus']);   // key order kept
     expect(by(runGate({ appDir: fx.app, paths: [p] }), 'requires')).toEqual([]);
   });
   test('targets must be in what the sentence contains', () => {
@@ -616,5 +616,30 @@ describe('(o) a contrast\'s items', () => {
   test('a sentence that uses what is not taught by the contrast\'s day is a legality error', () => {
     const r = setup([item({ es: 'Prefiero que vengas.', en: 'I prefer that you come.', gap: [0, 8], options: ['Prefiero', 'Prefería'] })]);
     expect(by(r, 'legality', 'error').length).toBeGreaterThan(0);
+  });
+});
+
+describe('(j) bank focus is computed', () => {
+  test('a missing or wrong focus fails, --fix writes character offsets, then it passes', () => {
+    const fx = makeFixture();
+    const p = fx.write('bank/u01.json', [
+      bank('u01-1', 'Tomás es de Bogotá.', 'u01', { targets: ['g:ser-identity'], focus: [0, 1] }),
+      bank('u01-2', 'Tomás habla español.', 'u01', { targets: ['g:present-ar'] }),
+    ]);
+    const r1 = runGate({ appDir: fx.app, paths: [p] });
+    expect(by(r1, 'focus', 'error').map((f) => f.path)).toEqual(['[0].focus', '[1].focus']);
+    const r2 = runGate({ appDir: fx.app, paths: [p], fix: true });
+    expect(r2.fixed).toEqual(['content/bank/u01.json']);
+    const written = JSON.parse(readFileSync(p, 'utf8'));
+    const es0: string = written[0].es;
+    expect(es0.slice(written[0].focus[0], written[0].focus[1])).toMatch(/^es/);
+    expect(Object.keys(written[1])).toEqual(['id', 'es', 'en', 'unit', 'targets', 'requires', 'focus']);
+    expect(by(runGate({ appDir: fx.app, paths: [p] }), 'focus')).toEqual([]);
+  });
+  test('a row whose target no feature carries has no focus, and one is an error', () => {
+    const fx = makeFixture();
+    const p = fx.write('bank/u01.json', [bank('u01-1', 'Tomás habla español.', 'u01', { targets: ['g:subj-wanting'], focus: [0, 5] })]);
+    expect(by(runGate({ appDir: fx.app, paths: [p], fix: true }), 'focus', 'error')).toEqual([]);
+    expect('focus' in JSON.parse(readFileSync(p, 'utf8'))[0]).toBe(false);
   });
 });
