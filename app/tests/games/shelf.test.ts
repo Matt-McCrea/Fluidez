@@ -8,6 +8,7 @@ import { loadShelf, shelfIsEmpty } from '../../src/games/shelf';
 import { flashKey } from '../../src/games/store';
 import type { Bundle } from '../../src/ui/data/bundle';
 import { MemoryKV, UiStore } from '../../src/ui/store/ui';
+import { world } from '../ui/driver';
 import { graphBundle, learnerAt, ready, T0 } from './helpers';
 
 let bundle: Bundle;
@@ -45,6 +46,31 @@ describe('the shelf', () => {
   });
 });
 
+describe('the rescue on the shelf', () => {
+  const DAY = 86_400_000;
+  async function due(days: number, nodes = ['g:ser-identity', 'c:me-llamo', 'c:soy-de', 'l:café']) {
+    const w = await world();
+    for (const n of nodes) w.learner.introduce(n, { at: w.clock.t, results: [true, true, true] });
+    w.clock.t += days * DAY;
+    return w;
+  }
+
+  it('is offered when enough is due for a round, with how many are ready and how many a round takes', async () => {
+    const w = await due(6);
+    const shelf = await loadShelf({ learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now });
+    expect(shelf.rescue).toEqual({ count: 4, asks: 4 });
+    expect(shelfIsEmpty(shelf)).toBe(false);
+  });
+
+  it('is not offered with nothing due, or with fewer than a round', async () => {
+    const none = await due(0);
+    expect((await loadShelf({ learner: none.learner, bundle: none.bundle, ui: none.ui, now: none.now })).rescue).toBeUndefined();
+    const w = await due(6, ['l:café', 'c:soy-de']);
+    const shelf = await loadShelf({ learner: w.learner, bundle: w.bundle, ui: w.ui, now: w.now });
+    expect(shelf.rescue).toBeUndefined();
+  });
+});
+
 describe('what the screens are', () => {
   it('the practice screen offers the games, and the shelf is the only way in', () => {
     expect(src('ui/screens/practice.tsx')).toMatch(/<Board onPlay=\{onPlay\}/);
@@ -58,7 +84,7 @@ describe('what the screens are', () => {
   });
 
   it('shows nothing locked, nothing to unlock and nothing coming', () => {
-    for (const f of ['ui/games/Board.tsx', 'ui/games/Flash.tsx', 'ui/games/Play.tsx']) {
+    for (const f of ['ui/games/Board.tsx', 'ui/games/Flash.tsx', 'ui/games/Play.tsx', 'ui/games/Rescue.tsx']) {
       const code = src(f).replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
       expect(code, f).not.toMatch(/locked|unlock|coming soon|opens when|after your first/i);
     }

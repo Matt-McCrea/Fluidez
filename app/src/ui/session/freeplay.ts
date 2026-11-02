@@ -14,13 +14,14 @@ import {
   PRODUCTION_IMP_PERSONS, PRODUCTION_PERSONS, acceptedForms, conjugate, enPhrase, personsFor, verbByInf,
   type TenseKey, type Verb,
 } from '../../engine';
-import { State, type Direction, type ExposureEvent, type Learner } from '../../learner';
+import { State, type Direction, type DueCard, type ExposureEvent, type Learner } from '../../learner';
 import { shuffle, type Rng } from '../../exercises/rng';
 import type { Bundle } from '../data/bundle';
 import { practiceCard, reviewCard, scriptCard, verbFormWhy, type Card, type Check, type TypeCard } from './cards';
 import { contrastCard, contrastCredit, contrastFormAt, eligibleContrast, type ContrastForm } from './contrast-card';
 import type { PracticeSpec } from './practice-spec';
 import { climb, gradeOf, logAnswer, reviewSentence, seen, seenAbout, seenWithEvent, slipOf, tries12, type Answered, type Outcome } from './attempt';
+import { creditRescue, RESCUE_OP } from '../../games/credit';
 import { licensedTenses, PICKER_TENSES, tenseName, tensesOfNode } from './tenses';
 
 export const DEFAULT_MINUTES: Record<PracticeSpec['kind'], number> = { quickReview: 5, conjugate: 3, translate: 5, nodes: 3, checkpoint: 10 }
@@ -33,8 +34,12 @@ export const CONTRAST_RUN = 6;
 /** Most cards a quick review lines up. */
 const QUICK_MAX = 60;
 
-/** `finished`: how many units the learner has finished (a checkpoint covers those). */
-export interface FreeplayDeps { learner: Learner; bundle: Bundle; rng: Rng; now: () => number; finished?: number }
+/**
+ * `finished`: how many units the learner has finished (a checkpoint covers those).
+ * `rescue`: a quick review played as Rescate (games/rescue.ts): only the cards that are due, at most this many, graded as real
+ * reviews through games/credit.ts, and with no time on them (a game's clock never reaches the schedule).
+ */
+export interface FreeplayDeps { learner: Learner; bundle: Bundle; rng: Rng; now: () => number; finished?: number; rescue?: { max: number } }
 
 // ---------------------------------------------------------------- plain names
 
@@ -68,6 +73,11 @@ export function verbsMet(learner: Learner): string[] {
   return rows.sort((a, b) => b.at - a.at || (a.inf < b.inf ? -1 : 1)).map((r) => r.inf);
 }
 
+/** The cards that are due and can be asked: not in the middle of being learned. Most at risk first. */
+export function dueCards(learner: Learner, at: number): DueCard[] {
+  return learner.due(at).filter((c) => c.state !== State.Learning && !learner.isLearning(c.node));
+}
+
 /** Key a personal best is stored under. */
 export function bestKey(spec: PracticeSpec): string {
   if (spec.kind !== 'conjugate') return spec.kind;
@@ -90,6 +100,8 @@ export class Freeplay {
   emptyReason?: string;
   /** the op of the card just shown (a PracticeOp for sentence modes) */
   lastOp?: string;
+  /** a quick review: the card just shown is a review of this node, in this direction */
+  reviewing?: { node: NodeId; direction: Direction };
   /** checkpoint only: right first time and answered, per unit id */
   readonly byUnit = new Map<string, { right: number; total: number }>();
   /** checkpoint only: nodes answered wrong or only on the second try */
@@ -123,6 +135,7 @@ export class Freeplay {
   /** The next card, or undefined when nothing is left. The caller stops on the clock. */
   next(): Card | undefined {
     this.cur = undefined;
+    this.reviewing = undefined;
     switch (this.spec.kind) {
       case 'quickReview':
       case 'nodes':
@@ -244,15 +257,14 @@ export class Freeplay {
       const c = learner.card(node, dir);
       return !!c && !c.suspended && c.state !== State.Learning && !learner.isLearning(node);
     };
-    const due = learner.due(at).filter((c) => c.state !== State.Learning && !learner.isLearning(c.node));
-    for (const c of due) {
+    for (const c of dueCards(learner, at)) {
       const had = picked.get(c.node);
       if (had === undefined) order.push(c.node);
       // one direction per node: the productive one when it is due too
       if (had === undefined || c.direction === 'productive') picked.set(c.node, c.direction);
     }
     const rest: Array<{ node: NodeId; dir: Direction; r: number }> = [];
-    for (const node of learner.nodes()) {
+    for (const node of this.d.rescue ? [] : learner.nodes()) {
       if (picked.has(node)) continue;
       const dir: Direction | undefined = usable(node, 'productive') ? 'productive' : usable(node, 'receptive') ? 'receptive' : undefined;
       if (!dir) continue;
@@ -260,11 +272,11 @@ export class Freeplay {
       if (r !== undefined) rest.push({ node, dir, r });
     }
     rest.sort((a, b) => a.r - b.r || (a.node < b.node ? -1 : 1));
-    const all = [...order.map((node) => ({ node, dir: picked.get(node)! })), ...rest].slice(0, QUICK_MAX);
+    const all = [...order.map((node) => ({ node, dir: picked.get(node)! })), ...rest].slice(0, this.d.rescue?.max ?? QUICK_MAX);
     return all.map(({ node, dir }) => () => this.quickCard(node, dir));
   }
 
-  private quickCard(node: NodeId, dir: Direction): Card {
+  private quickCard(node: NodeId, dir: Direction): Card | undefined {
     const { learner, bundle } = this.d;
     const pool = this.sentencesFor(node, dir === 'receptive');
     const fresh = pool.filter((id) => !learner.ledger.hasSeen('sentence', id) && !bundle.index.sentences.get(id)?.question);
@@ -275,16 +287,25 @@ export class Freeplay {
     const own = this.isContrast(node) ? this.unseenFirst(eligibleContrast(bundle, node, this.known()).map((it) => it.id), 'cx:')[0] : undefined;
     const item: ReviewItem = { op: 'review', id, scoring: 'review', credit: [node], node, targets: [node], direction: dir, sentence, novel, ...(own ? { contrast: own } : {}) };
     const card = reviewCard(item, bundle, 'meaning', undefined, licensedTenses(learner.nodes(), (id) => bundle.node(id)?.tags));
-    this.lastOp = 'quick';
+    // a rescue grades what can be graded: a card that only shows is not a review, so it is passed over and the card stays due
+    if (this.d.rescue && card.type === 'read') return undefined;
+    const op = this.d.rescue ? RESCUE_OP : 'quick';
+    this.lastOp = op;
+    this.reviewing = { node, direction: dir };
     this.cur = {
-      about: { node, op: 'quick', sentence },
+      about: { node, op, sentence },
       grade: (o) => {
         // a bare read card: shown, not asked, so the card stays as it was
         if (o.exposure) { seen(learner, [node], this.d.now()); return; }
         const grade = gradeOf(o);
-        const opts = { at: this.d.now(), ms: o.ms, op: 'quick', tries: tries12(o.tries), sentence, novel, ...slipOf(o) };
         if (!learner.hasCard(node, dir)) return;
-        reviewSentence(learner, [node], dir, grade, opts);
+        if (this.d.rescue) {
+          // through the games' one door: due cards only, and no time on the answer
+          if (!creditRescue(learner, { node, direction: dir, grade, at: this.d.now(), tries: tries12(o.tries), sentence, novel, ...slipOf(o) })) return;
+        } else {
+          const opts = { at: this.d.now(), ms: o.ms, op, tries: tries12(o.tries), sentence, novel, ...slipOf(o) };
+          reviewSentence(learner, [node], dir, grade, opts);
+        }
         if (sentence) this.markSeen(sentence);
         if (own) {
           const seenBefore = learner.ledger.hasSeen('item', `cx:${own}`);

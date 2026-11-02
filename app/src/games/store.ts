@@ -154,11 +154,15 @@ export class GamesStore {
     }).then(() => out);
   }
 
+  /** Keep a round that has no score to beat (a rescue): the row, and nothing else. */
+  addRound(row: RoundRow): Promise<void> {
+    return this.change('a round', (doc) => { pushRound(doc, row); }).then(() => undefined);
+  }
+
   /** Keep a finished round, and its score as the best of its deck if it beats the one before. A score of 0 is never a best. */
   finishRound(row: RoundRow, key: string, cells: Record<string, CellRow> = {}): Promise<BestResult | undefined> {
     return this.change('a round', (doc) => {
-      doc.rounds.push(row);
-      if (doc.rounds.length > ROUNDS_CAP) doc.rounds.splice(0, doc.rounds.length - ROUNDS_CAP);
+      pushRound(doc, row);
       for (const [k, c] of Object.entries(cells)) {
         const cur = Object.hasOwn(doc.cells, k) ? doc.cells[k] : { n: 0, miss: 0 };
         doc.cells[k] = { n: cur.n + c.n, miss: cur.miss + c.miss };
@@ -175,6 +179,11 @@ export class GamesStore {
       return row.counted ? setBest(doc, rereadKey(row.band), row.wpm, row.at) : { isBest: false };
     });
   }
+}
+
+function pushRound(doc: GamesDoc, row: RoundRow): void {
+  doc.rounds.push(row);
+  if (doc.rounds.length > ROUNDS_CAP) doc.rounds.splice(0, doc.rounds.length - ROUNDS_CAP);
 }
 
 function setBest(doc: GamesDoc, key: string, score: number, at: number): BestResult {

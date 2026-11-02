@@ -18,6 +18,13 @@ export function Board({ onPlay }: { onPlay: (c: GameChoice) => void }) {
   return (
     <section class="card games" aria-labelledby="pg-title" data-games>
       <p class="ask" id="pg-title">Play</p>
+      {shelf.rescue ? (
+        <div class="tile" data-game="rescue">
+          <p class="tile-name">Rescate</p>
+          <p>{shelf.rescue.count === 1 ? '1 card is' : `${shelf.rescue.count} cards are`} ready for review. A short round on the ones most at risk, graded for real, with no clock.</p>
+          <div class="actions"><button class="btn quiet" data-rescue onClick={() => onPlay({ game: 'rescue' })}>Start a rescue of {shelf.rescue.asks}</button></div>
+        </div>
+      ) : null}
       {shelf.flash.length ? (
         <div class="tile" data-game="flash">
           <p class="tile-name">Relámpago</p>
