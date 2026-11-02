@@ -500,27 +500,6 @@
     "source": "gen"
   },
   {
-    "id": "u60-t-word-order-style-0022",
-    "es": "¿Mucho has cambiado tú en estos años?",
-    "en": "Have you changed a lot in these years? (to a friend)",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "g:demonstratives",
-      "g:perfecto-experience",
-      "l:año",
-      "l:cambiar",
-      "p:quantifiers-basic"
-    ],
-    "targets": [
-      "g:word-order-style"
-    ],
-    "kind": "question",
-    "unit": "u60",
-    "theme": "critical voice",
-    "source": "gen"
-  },
-  {
     "id": "u60-t-word-order-style-0023",
     "es": "¿Poco o mucho has aprendido este año?",
     "en": "Have you learned little or a lot this year? (to a friend)",
@@ -532,29 +511,6 @@
       "l:año",
       "p:demonstratives-basic",
       "p:quantifiers-basic"
-    ],
-    "targets": [
-      "g:word-order-style"
-    ],
-    "kind": "question",
-    "unit": "u60",
-    "theme": "critical voice",
-    "source": "gen"
-  },
-  {
-    "id": "u60-t-word-order-style-0024",
-    "es": "¿Difícil es para ti decir que no?",
-    "en": "Is it hard for you to say no? (to a friend)",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "g:prep-pronouns",
-      "g:ser-identity",
-      "g:that-clauses",
-      "l:decir",
-      "l:difícil",
-      "l:ser",
-      "p:para-inf"
     ],
     "targets": [
       "g:word-order-style"
@@ -577,52 +533,6 @@
       "l:cocinar",
       "l:raro",
       "l:vez"
-    ],
-    "targets": [
-      "g:word-order-style"
-    ],
-    "kind": "question",
-    "unit": "u60",
-    "theme": "critical voice",
-    "source": "gen"
-  },
-  {
-    "id": "u60-t-word-order-style-0026",
-    "es": "¿Mucho ha cambiado tu barrio en los últimos años?",
-    "en": "Has your neighbourhood changed a lot in recent years?",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "g:gender-articles",
-      "g:perfecto-experience",
-      "l:año",
-      "l:barrio",
-      "l:cambiar",
-      "p:possessives-basic",
-      "p:quantifiers-basic"
-    ],
-    "targets": [
-      "g:word-order-style"
-    ],
-    "kind": "question",
-    "unit": "u60",
-    "theme": "critical voice",
-    "source": "gen"
-  },
-  {
-    "id": "u60-t-word-order-style-0027",
-    "es": "¿Poco importa el dinero para ti?",
-    "en": "Does money matter little to you? (to a friend)",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "g:gender-articles",
-      "g:prep-pronouns",
-      "g:present-ar",
-      "l:dinero",
-      "l:importar",
-      "p:para-inf",
-      "p:quantifiers-basic"
     ],
     "targets": [
       "g:word-order-style"
@@ -936,72 +846,127 @@
     "source": "gen"
   },
   {
-    "id": "u60-t-word-order-style-0041",
-    "es": "¿Mucho trabajas tú los fines de semana?",
-    "en": "Do you work a lot on weekends? (to a friend)",
+    "id": "u60-t-word-order-style-0044",
+    "es": "¿Cómo va el negocio?\nPoco ha mejorado, la verdad.",
+    "en": "How's the business going?\nIt has improved little, really.",
     "accept": [],
     "acceptEn": [],
     "requires": [
+      "c:la-verdad",
       "g:gender-articles",
-      "g:present-ar",
-      "l:fin",
-      "l:semana",
-      "l:trabajar",
-      "p:days-el-lunes",
-      "p:quantifiers-basic"
+      "g:ir-a-plans",
+      "g:perfecto-experience",
+      "g:questions",
+      "l:cómo",
+      "l:ir",
+      "l:mejorar",
+      "l:negocio",
+      "l:verdad",
+      "p:quantifiers-basic",
+      "p:question-word-order"
     ],
     "targets": [
       "g:word-order-style"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u60",
-    "theme": "reviews and plans",
+    "theme": "critical voice",
     "source": "gen"
   },
   {
-    "id": "u60-t-word-order-style-0042",
-    "es": "¿Poco duermes cuando tienes mucho trabajo?",
-    "en": "Do you sleep little when you have a lot of work? (to a friend)",
+    "id": "u60-t-word-order-style-0045",
+    "es": "¿Hablaste con Hernando?\nMucho le dije, y poco me escuchó.",
+    "en": "Did you talk to Hernando? (to a friend)\nI told him a lot, and he listened little.",
     "accept": [],
     "acceptEn": [],
     "requires": [
-      "c:tienes",
-      "g:stem-boot",
-      "l:dormir",
-      "l:tener",
-      "l:trabajo",
-      "p:cuando-basic",
-      "p:quantifiers-basic"
-    ],
-    "targets": [
-      "g:word-order-style"
-    ],
-    "kind": "question",
-    "unit": "u60",
-    "theme": "reviews and plans",
-    "source": "gen"
-  },
-  {
-    "id": "u60-t-word-order-style-0043",
-    "es": "¿Difícil es para usted hablar en público?",
-    "en": "Is it hard for you to speak in public? (polite)",
-    "accept": [],
-    "acceptEn": [],
-    "requires": [
-      "g:prep-pronouns",
-      "g:ser-identity",
-      "l:difícil",
+      "g:indirect-objects",
+      "g:preterite-ar",
+      "g:preterite-irregular-strong",
+      "l:decir",
+      "l:escuchar",
       "l:hablar",
-      "l:público",
-      "l:ser",
-      "p:para-inf"
+      "p:me-te-nos-objects",
+      "p:quantifiers-basic"
     ],
     "targets": [
       "g:word-order-style"
     ],
-    "kind": "question",
+    "kind": "dialogue",
     "unit": "u60",
-    "theme": "reviews and plans",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0046",
+    "es": "¿Viene Tomás hoy?\nDifícil es saberlo.",
+    "en": "Is Tomás coming today?\nIt is hard to know.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:direct-objects",
+      "g:object-pronoun-position",
+      "g:ser-identity",
+      "g:stem-boot",
+      "l:difícil",
+      "l:hoy",
+      "l:saber",
+      "l:ser",
+      "l:venir",
+      "p:saber-conocer"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0047",
+    "es": "¿Sale mucho Mariana?\nRaras veces sale de noche.",
+    "en": "Does Mariana go out much?\nShe rarely goes out at night.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "g:adjective-agreement",
+      "g:present-er-ir",
+      "l:noche",
+      "l:raro",
+      "l:salir",
+      "l:vez",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
+    "source": "gen"
+  },
+  {
+    "id": "u60-t-word-order-style-0048",
+    "es": "¿Te queda plata?\nPoco me queda, la verdad.",
+    "en": "Do you have any money left? (to a friend)\nI have little left, really.",
+    "accept": [],
+    "acceptEn": [],
+    "requires": [
+      "c:la-verdad",
+      "g:parecer-quedar",
+      "g:present-ar",
+      "l:plata",
+      "l:quedar",
+      "l:verdad",
+      "p:quantifiers-basic"
+    ],
+    "targets": [
+      "g:word-order-style"
+    ],
+    "kind": "dialogue",
+    "unit": "u60",
+    "theme": "critical voice",
     "source": "gen"
   }
 ]
