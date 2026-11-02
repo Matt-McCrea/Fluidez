@@ -12,7 +12,7 @@ export const ATTEMPTS_VERSION = 1;
 /** Newest rows kept. */
 export const ATTEMPTS_CAP = 1000;
 
-/** What the checker made of the first thing submitted. `unconfirmed` is for the verdict that cannot say, which no card gives yet. */
+/** How the card ended: passed on any try, or the answer was shown. `unconfirmed` is for the verdict that cannot say, which no card gives yet. */
 export type Verdict = 'right' | 'wrong' | 'unconfirmed';
 
 export interface AttemptRow {
@@ -31,8 +31,10 @@ export interface AttemptRow {
   err?: string;
   /** the trap rule that named it, when one did */
   rule?: string;
-  /** how the card ended: passed on any try, or the answer was shown */
+  /** how the card ended (see Verdict). `given` is the first try, so it is the right answer only when `tries` is 1 */
   verdict?: Verdict;
+  /** tries used: a 'right' on 2 is a first try that was refused and a second that passed */
+  tries?: 1 | 2;
   /** the learner said "mine says the same thing" */
   claimed?: true;
   /** ms from the card appearing to the first key (typed cards): retrieval onset without thumb speed */

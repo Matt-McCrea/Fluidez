@@ -94,7 +94,7 @@ export class Freeplay {
   private readonly d: FreeplayDeps;
   private seq = 0;
   private queue: Array<() => Card | undefined> = [];
-  private cur?: { grade: (o: Outcome) => void; /** what the answer is about, for the attempts log */ about?: Answered };
+  private cur?: { grade: (o: Outcome) => void; /** what the answer is about, for the attempts log */ about: Answered };
   // translate
   private pool: string[] = [];
   private poolAt = 0;
@@ -142,7 +142,7 @@ export class Freeplay {
       if (o.correct && o.tries <= 1) this.right += 1;
       else if (o.correct && o.tries === 2) this.retried += 1;
     }
-    if (this.cur.about) logAnswer(this.d.learner, this.d.now(), this.cur.about, o);
+    logAnswer(this.d.learner, this.d.now(), this.cur.about, o);
     this.cur.grade(o);
     this.cur = undefined;
   }
@@ -457,8 +457,8 @@ export class Freeplay {
     const credit = [tenseNode(learner, cue.tense), learner.isIntroduced(`l:${cue.verb.inf}`) ? `l:${cue.verb.inf}` : undefined].filter((x): x is NodeId => !!x);
     this.lastOp = 'conjugate';
     this.cur = {
-      // a form drill with no tense node taught and no verb met has no node to key a row on
-      ...(credit[0] ? { about: { node: credit[0], op: 'grind' } } : {}),
+      // a form drill with no tense node taught and no verb met credits nothing, but it is still an answer
+      about: { node: credit[0] ?? `l:${cue.verb.inf}`, op: 'grind' },
       grade: (o) => {
         seenWithEvent(learner, credit, { op: 'grind', direction: 'productive', grade: gradeOf(o), tries: tries12(o.tries), ms: o.ms, ...slipOf(o) }, this.d.now());
       },

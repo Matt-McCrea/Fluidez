@@ -65,13 +65,23 @@ export function ScenePlay({ block, run, onDone }: BlockProps<SceneBlock | SceneR
       setLog([...log, { turn, first: text, firstCheck: c }]);
       setStage(c.pass ? 'passed' : timed ? 'compare' : 'fix');
       setValue('');
+      if (c.pass || timed) logTurn(text, c, 1, c.pass);
     } else {
       const next = [...log];
       next[i] = { ...cur, second: text, secondCheck: c };
       setLog(next);
       setStage('compare');
       setValue('');
+      logTurn(cur.first, cur.firstCheck, 2, c.pass);
     }
+  }
+
+  /** A turn is an answer: one row when it ends, with the first reply and the slip named in it. Scenes credit no card and write no event. */
+  function logTurn(given: string, first: TurnCheck, tries: number, landed: boolean) {
+    run.answered(
+      { node: turn.focus ?? scene!.id, op: 'scene', sentence: `${scene!.id}:${turn.id}` },
+      { correct: landed, tries, ms: 0, fmt: timed ? 'scene:timed' : 'scene', given, shown: first.model, ...(first.hintKind ? { err: first.hintKind } : {}) },
+    );
   }
 
   function nextTurn() {

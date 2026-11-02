@@ -26,6 +26,8 @@ export interface TurnCheck {
   reason?: string;
   /** the model answer to show (the screen holds it back until a retry or a pass) */
   model: string;
+  /** the kind of slip, when the matcher's hint is what was said */
+  hintKind?: string;
 }
 
 const strip = (s: string) => s.replace(/<[^>]+>/g, '');
@@ -48,7 +50,7 @@ export function checkTurn(turn: SceneTurn, text: string, lexicon?: ReadonlySet<s
   const reason = w && w.allPass && !spanish ? 'Mostly English so far. Say it in Spanish.' : failed
     ? `To do this, ${lowerFirst(strip(failed.label))}.`
     : m.hint ?? "That doesn't quite answer them yet.";
-  return { pass: false, reason, model };
+  return { pass: false, reason, model, ...(!failed && !(w?.allPass && !spanish) && m.hintKind ? { hintKind: m.hintKind } : {}) };
 }
 
 /** How one turn went: whether the first reply landed and, if there was a second go, whether that did. */

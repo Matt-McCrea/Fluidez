@@ -42,7 +42,7 @@ describe('the session runner logs each answer once', () => {
     expect(rows).toHaveLength(1);
     expect(rows[0]).toEqual({
       at: expect.any(Number), node: 'g:ser-identity', op: 'warmup', fmt: 'type:en>es', sentence: 'u01-1', given: 'yo es de Cali', answer: 'yo soy de Cali',
-      err: 'ser-estar', rule: 'ser-soy', verdict: 'wrong', firstKeyMs: 2400,
+      err: 'ser-estar', rule: 'ser-soy', verdict: 'wrong', tries: 2, firstKeyMs: 2400,
     });
     expect(learner.events().at(-1)).toMatchObject({ node: 'g:ser-identity', op: 'warmup', err: 'ser-estar', rule: 'ser-soy' });
     expect(learner.toJSON().fingerprint).toEqual({ 'ser-estar': { n: 1, miss: 1, last: rows[0].at } });
@@ -66,7 +66,7 @@ describe('the session runner logs each answer once', () => {
   it('a pass on the retry keeps the first try and the slip, and shows no right version', async () => {
     const { learner, run } = await setup();
     run.score(review(), { correct: true, tries: 2, ms: 7000, fmt: 'type:en>es', given: 'yo es de Cali', err: 'ser-estar' });
-    expect(learner.attempts()[0]).toMatchObject({ given: 'yo es de Cali', err: 'ser-estar', verdict: 'right' });
+    expect(learner.attempts()[0]).toMatchObject({ given: 'yo es de Cali', err: 'ser-estar', verdict: 'right', tries: 2 });
     expect(learner.attempts()[0].answer).toBeUndefined();
     expect(learner.toJSON().fingerprint).toEqual({ 'ser-estar': { n: 1, miss: 0, last: learner.attempts()[0].at } });
   });
@@ -107,20 +107,24 @@ describe('the session runner logs each answer once', () => {
     expect(learner.attempts()[0]).toMatchObject({ op: 'choose', fmt: 'mcq:es>es', given: 'soy', verdict: 'right' });
   });
 
-  it('a comprehension question logs its answer, keyed on the first word of the chapter it used', async () => {
+  it('a comprehension question logs its answer, keyed on the first word of the chapter it used, and says which question', async () => {
     const { learner, run } = await setup();
-    const chapter = { id: 'ch-x', lexemes: ['l:café'] } as any;
     const q = { q: 'Where is the café?', options: ['The café', 'The park'], answer: 0 };
+    const chapter = { id: 'ch-x', lexemes: ['l:café'], questions: [q], rereadQuestions: [] } as any;
     expect(run.bundle.node('l:café')?.es, 'the fixture holds this word').toBeTruthy();
     const ids = logComprehension(run, chapter, q, { correct: false, tries: 1, ms: 4000, fmt: 'mcq:en>en', given: 'The park', shown: 'The café' });
     expect(ids).toEqual(['l:café']);
-    expect(learner.attempts()).toEqual([expect.objectContaining({ node: 'l:café', op: 'comprehend', given: 'The park', answer: 'The café', verdict: 'wrong' })]);
+    expect(learner.attempts()).toEqual([expect.objectContaining({ node: 'l:café', op: 'comprehend', sentence: 'ch-x:q0', given: 'The park', answer: 'The café', verdict: 'wrong' })]);
   });
 
-  it('a question that uses none of the chapter\'s words has no node to key a row on, and says nothing', async () => {
+  // 413 of the course's 977 first-read questions and 384 of its 655 reread questions use none of the chapter's words
+  it('a question that uses none of the chapter\'s words is still an answer: its row goes under the chapter', async () => {
     const { learner, run } = await setup();
-    logComprehension(run, { id: 'ch-x', lexemes: ['l:café'] } as any, { q: 'Who spoke?', options: ['Vale', 'Tomás'], answer: 1 }, { correct: true, tries: 1, ms: 900, given: 'Tomás' });
-    expect(learner.attempts()).toEqual([]);
+    const first = { q: 'Who spoke?', options: ['Vale', 'Tomás'], answer: 1 }, again = { q: 'Who left?', options: ['Vale', 'Rosa'], answer: 1 };
+    const chapter = { id: 'ch-x', lexemes: ['l:café'], questions: [first], rereadQuestions: [again] } as any;
+    expect(logComprehension(run, chapter, first, { correct: true, tries: 1, ms: 900, given: 'Tomás' })).toEqual([]);
+    logComprehension(run, chapter, again, { correct: false, tries: 1, ms: 900, given: 'Vale', shown: 'Rosa' });
+    expect(learner.attempts().map((r) => [r.node, r.sentence, r.given, r.verdict])).toEqual([['ch-x', 'ch-x:q0', 'Tomás', 'right'], ['ch-x', 'ch-x:r0', 'Vale', 'wrong']]);
   });
 });
 
@@ -155,6 +159,15 @@ describe('free practice logs each answer once', () => {
     cj.next();
     cj.answer({ correct: true, tries: 1, ms: 500, exposure: true });
     expect(w.learner.attempts().map((r) => [r.op, r.node, r.given])).toEqual([['grind', expect.any(String), 'me llamo Ana'], ['grind', 'l:ser', 'soy']]);
+  });
+
+  it('a verb drill that credits nothing, the tense untaught and the verb unmet, is still an answer', async () => {
+    const w = await world();
+    const cj = new Freeplay({ kind: 'conjugate', verbs: ['comer'], tenses: ['presente'] }, deps(w));
+    cj.next();
+    cj.answer({ correct: false, tries: 2, ms: 2000, fmt: 'type:en>es', given: 'como', shown: 'comes' });
+    expect(w.learner.attempts().map((r) => [r.op, r.node, r.given, r.answer])).toEqual([['grind', 'l:comer', 'como', 'comes']]);
+    expect(w.learner.events(), 'nothing to credit, nothing written').toEqual([]);
   });
 });
 

@@ -82,7 +82,7 @@ export function logAnswer(learner: Learner, at: number, about: Answered, o: Outc
   if (o.exposure) return;
   const rev = contentRev();
   learner.recordAttempt({
-    at, node: about.node, op: about.op, fmt: o.fmt ?? '', given: o.given ?? '', verdict: o.correct ? 'right' : 'wrong',
+    at, node: about.node, op: about.op, fmt: o.fmt ?? '', given: o.given ?? '', verdict: o.correct ? 'right' : 'wrong', tries: tries12(o.tries),
     ...(about.sentence ? { sentence: about.sentence } : {}),
     ...(!o.correct && o.shown ? { answer: o.shown } : {}),
     ...slipOf(o),

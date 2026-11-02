@@ -29,12 +29,18 @@ export function questionNodes(chapter: StoryChapter, q: Question, bundle: Bundle
   return chapter.lexemes.filter((id) => (bundle.node(id)?.es ?? '').split(/[/;,]/).some((alt) => ix.has(alt)));
 }
 
+/** Which question of a chapter this is, for the attempts log: `ch012:q3` on a first read, `ch012:r1` on a reread. */
+function questionRef(chapter: StoryChapter, q: Question): string {
+  const first = chapter.questions.indexOf(q);
+  return `${chapter.id}:${first >= 0 ? `q${first}` : `r${chapter.rereadQuestions.indexOf(q)}`}`;
+}
+
 /** One answered comprehension question: an exposure event on the words it used, never a graded review. */
 export function logComprehension(run: SessionRunner, chapter: StoryChapter, q: Question, o: Outcome): NodeId[] {
   const ids = questionNodes(chapter, q, run.bundle);
   seenWithEvent(run.learner, ids, { op: 'comprehend', grade: o.correct ? Rating.Good : Rating.Again, tries: o.tries, ms: o.ms, novel: false, ...slipOf(o) });
-  // a question that uses none of the chapter's words has no node to key a row on
-  if (ids.length) run.answered({ node: ids[0], op: 'comprehend' }, o);
+  // near half the questions use none of the chapter's words: those rows go under the chapter, and every row says which question it was
+  run.answered({ node: ids[0] ?? chapter.id, op: 'comprehend', sentence: questionRef(chapter, q) }, o);
   return ids;
 }
 

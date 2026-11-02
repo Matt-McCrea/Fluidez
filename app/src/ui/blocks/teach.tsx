@@ -249,7 +249,8 @@ export function RuleRecall({ block, run, onDone }: BlockProps<RuleRecallBlock>) 
     answerLang: 'es', placeholder: 'Type it in Spanish', retry: false, check: sentenceCheck({ es: target.es, en: target.en, accept: [] }),
     why: 'Here is the reminder.',
   };
-  if (stage === 'try') return <><Heading {...h} /><CardView card={card} next="Show the reminder" onDone={() => setStage('remind')} /></>;
+  // it opens a drill and is not graded, but what the learner could still produce is an answer like any other
+  if (stage === 'try') return <><Heading {...h} /><CardView card={card} next="Show the reminder" onDone={(o) => { run.answered({ node: block.node, op: 'ruleRecall' }, o); setStage('remind'); }} /></>;
   return (
     <>
       <Heading title="Quick reminder" />
