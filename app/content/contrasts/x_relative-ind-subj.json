@@ -263,7 +263,7 @@
     {
       "id": "x:relative-ind-subj#g.subj-relative.pf0",
       "node": "x:relative-ind-subj",
-      "side": "g:relative-que",
+      "side": "g:subj-relative",
       "rung": 1,
       "en": "I'm looking for an apartment that has two bedrooms.",
       "es": "Busco un apartamento que tenga dos cuartos.",
@@ -292,7 +292,7 @@
     {
       "id": "x:relative-ind-subj#g.subj-relative.yt0",
       "node": "x:relative-ind-subj",
-      "side": "g:relative-que",
+      "side": "g:subj-relative",
       "rung": 1,
       "en": "I'm looking for a house that has a garden, any one, I don't know if one exists.",
       "es": "Busco una casa que tenga jardín.",
@@ -321,7 +321,7 @@
     {
       "id": "x:relative-ind-subj#g.subj-relative.rp1",
       "node": "x:relative-ind-subj",
-      "side": "g:relative-que",
+      "side": "g:subj-relative",
       "rung": 1,
       "en": "I'm looking for the house that has a garden (I know the one).",
       "es": "Busco la casa que tiene jardín.",

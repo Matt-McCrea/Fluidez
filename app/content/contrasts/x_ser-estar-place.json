@@ -378,7 +378,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp0",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Hernando is a calm person.",
       "es": "Hernando es tranquilo.",
@@ -402,7 +402,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp1",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Hernando is calm right now.",
       "es": "Hernando está tranquilo.",
@@ -426,7 +426,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp2",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is clever.",
       "es": "Mariana es lista.",
@@ -450,7 +450,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp3",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is ready.",
       "es": "Mariana está lista.",
@@ -474,7 +474,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.pf2",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "The bread is ready.",
       "es": "El pan está listo.",
@@ -499,7 +499,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.yt4",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is very clever.",
       "es": "Mariana es muy lista.",
@@ -524,7 +524,7 @@
     {
       "id": "x:ser-estar-place#g.ser-estar-adjectives.rp5",
       "node": "x:ser-estar-place",
-      "side": "g:estar-location-states",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Simón is a nervous type.",
       "es": "Simón es nervioso.",

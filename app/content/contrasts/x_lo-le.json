@@ -447,7 +447,7 @@
     {
       "id": "x:lo-le#g.indirect-objects.rp5",
       "node": "x:lo-le",
-      "side": "g:direct-objects",
+      "side": "g:indirect-objects",
       "rung": 1,
       "en": "He explained the route to us.",
       "es": "Nos explicó la ruta.",

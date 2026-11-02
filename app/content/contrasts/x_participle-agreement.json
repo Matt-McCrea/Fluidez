@@ -254,7 +254,7 @@
     {
       "id": "x:participle-agreement#g.estar-participle.rp4",
       "node": "x:participle-agreement",
-      "side": "g:perfecto-experience",
+      "side": "g:estar-participle",
       "rung": 1,
       "en": "I've closed the door.",
       "es": "He cerrado la puerta.",

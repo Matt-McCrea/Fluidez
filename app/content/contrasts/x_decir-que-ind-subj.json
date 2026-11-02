@@ -61,7 +61,7 @@
     {
       "id": "x:decir-que-ind-subj#g.reported-requests.rp8",
       "node": "x:decir-que-ind-subj",
-      "side": "g:reported-past-basic",
+      "side": "g:reported-requests",
       "rung": 1,
       "en": "My boss asks me to work on Saturday.",
       "es": "Mi jefe me pide que trabaje el sábado.",

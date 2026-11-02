@@ -62,7 +62,7 @@
     {
       "id": "x:imperfecto-tres-usos#p.imperfecto-cortesia-venia.rp1",
       "node": "x:imperfecto-tres-usos",
-      "side": "p:imperfecto-sorpresa",
+      "side": "p:imperfecto-cortesia-venia",
       "rung": 1,
       "en": "I'm here to ask you a favor.",
       "es": "Vengo a pedirle un favor.",

@@ -307,7 +307,7 @@
     {
       "id": "x:muy-mucho#g.adjective-agreement.yt3",
       "node": "x:muy-mucho",
-      "side": "g:quantifiers",
+      "side": "g:adjective-agreement",
       "rung": 1,
       "en": "My boss is very kind.",
       "es": "Mi jefe es muy amable.",

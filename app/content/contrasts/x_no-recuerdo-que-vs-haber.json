@@ -93,7 +93,7 @@
     {
       "id": "x:no-recuerdo-que-vs-haber#p.no-recuerdo-que-subj.rp1",
       "node": "x:no-recuerdo-que-vs-haber",
-      "side": "p:same-subject-haber",
+      "side": "p:no-recuerdo-que-subj",
       "rung": 1,
       "en": "I remember that he said that.",
       "es": "Recuerdo que dijo eso.",

@@ -142,7 +142,7 @@
     {
       "id": "x:si-real-unreal#g.si-hypothetical.rp1",
       "node": "x:si-real-unreal",
-      "side": "g:si-present",
+      "side": "g:si-hypothetical",
       "rung": 1,
       "en": "If I have money, I'll buy a house.",
       "es": "Si tengo plata, compraré una casa.",

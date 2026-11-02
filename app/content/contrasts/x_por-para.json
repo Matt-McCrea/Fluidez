@@ -337,7 +337,7 @@
     {
       "id": "x:por-para#g.por-para-1.rp5",
       "node": "x:por-para",
-      "side": "p:para-inf",
+      "side": "g:por-para-1",
       "rung": 1,
       "en": "The bus is heading to Honda.",
       "es": "El bus va para Honda.",
@@ -362,7 +362,7 @@
     {
       "id": "x:por-para#g.por-para-1.yt0",
       "node": "x:por-para",
-      "side": "p:para-inf",
+      "side": "g:por-para-1",
       "rung": 2,
       "en": "We're leaving for Medellín on Friday.",
       "es": "Salimos para Medellín el viernes.",
@@ -388,7 +388,7 @@
     {
       "id": "x:por-para#g.por-para-1.yt1",
       "node": "x:por-para",
-      "side": "p:para-inf",
+      "side": "g:por-para-1",
       "rung": 2,
       "en": "I paid a hundred thousand pesos for the ticket.",
       "es": "Pagué cien mil pesos por el tiquete.",

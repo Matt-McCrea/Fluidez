@@ -676,7 +676,7 @@
     {
       "id": "x:hace-desde-hace#g.hace-que-desde.rp3",
       "node": "x:hace-desde-hace",
-      "side": "g:hace-ago",
+      "side": "g:hace-que-desde",
       "rung": 1,
       "en": "How long have you lived here?",
       "es": "¿Cuánto tiempo hace que vives aquí?",

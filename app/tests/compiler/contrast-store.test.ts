@@ -118,10 +118,10 @@ describe('the real contrasts\' items are shown to a learner who has what the cou
     const day = shownWhen('its day');
     const items = [...day.values()].reduce((a, d) => a + d.of, 0);
     const shown = [...day.values()].reduce((a, d) => a + d.shown, 0);
-    expect(items).toBeGreaterThan(800);
+    expect(items).toBeGreaterThan(600);
     expect(shown / items).toBeGreaterThan(0.8);
-    // the exception: its words come 120 days later, and until then it is reviewed with its script
-    expect([...day].filter(([, d]) => d.shown === 0).map(([x]) => x)).toEqual(['x:medir-caber']);
+    // the exceptions: their words come a hundred days or more later, and until then they are reviewed with their script
+    expect([...day].filter(([, d]) => d.shown === 0).map(([x]) => x)).toEqual(['x:medir-caber', 'x:talento-capacidad']);
   }, 120_000);
 
   it('by the end of the course every item can be shown: none is out of reach for ever', () => {

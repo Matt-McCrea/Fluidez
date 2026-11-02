@@ -394,7 +394,7 @@
     {
       "id": "x:body-article-possessive#g.possessives.yt4",
       "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
+      "side": "g:possessives",
       "rung": 1,
       "en": "Is this your coffee?",
       "es": "¿Es su café?",
@@ -418,7 +418,7 @@
     {
       "id": "x:body-article-possessive#g.possessives.rp2",
       "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
+      "side": "g:possessives",
       "rung": 1,
       "en": "My eyes are dark.",
       "es": "Mis ojos son negros.",
@@ -444,7 +444,7 @@
     {
       "id": "x:body-article-possessive#g.possessives.rp3",
       "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
+      "side": "g:possessives",
       "rung": 1,
       "en": "Hernando talks about his grandchildren.",
       "es": "Hernando habla de sus nietos.",
@@ -469,7 +469,7 @@
     {
       "id": "x:body-article-possessive#g.possessives.rp8",
       "node": "x:body-article-possessive",
-      "side": "p:lavarse-las-manos",
+      "side": "g:possessives",
       "rung": 1,
       "en": "My aunt has blond hair.",
       "es": "Mi tía es rubia.",

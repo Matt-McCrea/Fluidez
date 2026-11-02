@@ -335,7 +335,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp0",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Hernando is a calm person.",
       "es": "Hernando es tranquilo.",
@@ -359,7 +359,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp1",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Hernando is calm right now.",
       "es": "Hernando está tranquilo.",
@@ -383,7 +383,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp2",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is clever.",
       "es": "Mariana es lista.",
@@ -407,7 +407,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp3",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is ready.",
       "es": "Mariana está lista.",
@@ -431,7 +431,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.pf2",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "The bread is ready.",
       "es": "El pan está listo.",
@@ -456,7 +456,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.yt3",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "The soup is delicious.",
       "es": "La sopa está rica.",
@@ -482,7 +482,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.yt4",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Mariana is very clever.",
       "es": "Mariana es muy lista.",
@@ -507,7 +507,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp4",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "The coffee tastes great.",
       "es": "El tinto está rico.",
@@ -532,7 +532,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp5",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Simón is a nervous type.",
       "es": "Simón es nervioso.",
@@ -555,7 +555,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp6",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "The fish has gone off.",
       "es": "El pescado está malo.",
@@ -580,7 +580,7 @@
     {
       "id": "x:ser-estar-adj#g.ser-estar-adjectives.rp7",
       "node": "x:ser-estar-adj",
-      "side": "g:ser-identity",
+      "side": "g:ser-estar-adjectives",
       "rung": 1,
       "en": "Vale is looking serious.",
       "es": "Vale está seria.",

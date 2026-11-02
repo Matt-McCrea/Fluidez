@@ -101,7 +101,7 @@
     {
       "id": "x:ir-irse#g.se-meaning-change.rp3",
       "node": "x:ir-irse",
-      "side": "g:reflexive-routine",
+      "side": "g:se-meaning-change",
       "rung": 1,
       "en": "I fell asleep in the meeting.",
       "es": "Me dormí en la reunión.",
@@ -126,7 +126,7 @@
     {
       "id": "x:ir-irse#g.se-meaning-change.rp5",
       "node": "x:ir-irse",
-      "side": "g:reflexive-routine",
+      "side": "g:se-meaning-change",
       "rung": 1,
       "en": "We stayed until late.",
       "es": "Nos quedamos hasta tarde.",

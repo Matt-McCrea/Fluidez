@@ -155,7 +155,7 @@
     {
       "id": "x:pret-imp#g.imperfect-habitual.rp3",
       "node": "x:pret-imp",
-      "side": "g:preterite-irregular-strong",
+      "side": "g:imperfect-habitual",
       "rung": 1,
       "en": "I ate an arepa.",
       "es": "Comí una arepa.",

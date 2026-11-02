@@ -318,7 +318,7 @@
     {
       "id": "x:para-porque#p.para-inf-purpose.rp1",
       "node": "x:para-porque",
-      "side": "c:porque",
+      "side": "p:para-inf-purpose",
       "rung": 1,
       "en": "Tomás came to the café because Vale called him.",
       "es": "Tomás vino al café porque Vale lo llamó.",
@@ -347,7 +347,7 @@
     {
       "id": "x:para-porque#p.para-inf-purpose.rp4",
       "node": "x:para-porque",
-      "side": "c:porque",
+      "side": "p:para-inf-purpose",
       "rung": 1,
       "en": "Vale opens early because she makes the pandebonos.",
       "es": "Vale abre temprano porque hace los pandebonos.",

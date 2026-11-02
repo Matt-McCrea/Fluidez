@@ -99,7 +99,7 @@
     {
       "id": "x:impresion-vs-no-estoy-seguro#p.no-estoy-seguro-de-que.yt1",
       "node": "x:impresion-vs-no-estoy-seguro",
-      "side": "p:tengo-la-impresion-de-que",
+      "side": "p:no-estoy-seguro-de-que",
       "rung": 1,
       "en": "I'm sure he's coming, a man speaking.",
       "es": "Estoy seguro de que viene.",
@@ -158,7 +158,7 @@
     {
       "id": "x:impresion-vs-no-estoy-seguro#p.no-estoy-seguro-de-que.rp8",
       "node": "x:impresion-vs-no-estoy-seguro",
-      "side": "p:tengo-la-impresion-de-que",
+      "side": "p:no-estoy-seguro-de-que",
       "rung": 1,
       "en": "Are you sure he's coming? (to a man)",
       "es": "¿Estás seguro de que viene?",

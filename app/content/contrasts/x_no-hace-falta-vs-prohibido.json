@@ -117,35 +117,6 @@
         "p:esta-prohibido",
         "p:esta-prohibido-que"
       ]
-    },
-    {
-      "id": "x:no-hace-falta-vs-prohibido#p.no-hace-falta-que.yt1",
-      "node": "x:no-hace-falta-vs-prohibido",
-      "side": "p:no-hace-falta-que",
-      "rung": 1,
-      "en": "You don't need to come early. (to a friend)",
-      "es": "No hace falta que vengas temprano.",
-      "gap": [
-        18,
-        24
-      ],
-      "options": [
-        "vienes",
-        "vengas"
-      ],
-      "answer": 1,
-      "why": "Venir changes to vengas after no hace falta que.",
-      "requires": [
-        "g:present-er-ir",
-        "g:relative-que",
-        "g:subj-relative",
-        "g:subj-wanting",
-        "l:falta",
-        "l:hacer",
-        "l:temprano",
-        "l:venir",
-        "p:no-hace-falta-que"
-      ]
     }
   ]
 }

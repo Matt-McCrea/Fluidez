@@ -16,7 +16,7 @@
  * The report says, for each contrast, how many items it has, from where, and which are thin against R11 (40
  * items, 150 for the big five): the burn tops those up.
  * ========================================================================== */
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { ContrastFile, TeachingScript, type ContrastDecides, type GraphNode, type NodeId } from '../../src/content/schema';
@@ -70,8 +70,8 @@ export interface DeriveStats {
   balanced: number;
   /** left out because a cue table of the words beside the gap would have passed them (the Cue Test) */
   pruned: number;
-  /** how the side of each item was found: by the word in the gap, by the sentence, or the contrast's first side */
-  side: { gap: number; sentence: number; first: number };
+  /** how the side of each item was found: the side whose own script it came from, the word in the gap, the sentence, or the contrast's first side */
+  side: { script: number; gap: number; sentence: number; first: number };
   /** Spanish sentences that wanted an English from the bank (the first pass collects them) */
   wantEn: string[];
 }
@@ -245,7 +245,7 @@ function candidatesOf(src: Source, vocab: Vocab | null, learn: Vocab, lookup: (e
 export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: ContrastDecides = DECIDES.get(node.id) ?? 'local'): { file: ContrastFile; stats: DeriveStats } {
   const stats: DeriveStats = {
     contrast: node.id, decides, items: 0, origin: { twin: 0, gap: 0, pitfall: 0, pick: 0, turn: 0 }, fromSides: 0, noEnglish: 0, balanced: 0, pruned: 0,
-    side: { gap: 0, sentence: 0, first: 0 }, wantEn: [],
+    side: { script: 0, gap: 0, sentence: 0, first: 0 }, wantEn: [],
   };
   const sides = node.contrasts.length ? node.contrasts : node.requires;
   const own = ctx.scripts.get(node.id);
@@ -267,6 +267,11 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
   const cands: Cand[] = [];
   for (const s of sources.filter((x) => x.own)) cands.push(...candidatesOf(s, null, learn, lookup));
   for (const s of sources.filter((x) => !x.own)) cands.push(...candidatesOf(s, learn, learn, lookup));
+
+  // a near-synonym is told apart by retrieving the phrase in a situation (R10): a single pivot word found by the vocabulary in some
+  // other sentence (da or dan, de or en) is a decision inside one of the phrases, so a contrast of that class keeps what a person set
+  // against each other: the twins, the pitfalls and the gaps. The rest is the burn's to write as phrase cards.
+  if (decides === 'synonym') for (let k = cands.length - 1; k >= 0; k--) if (cands[k].origin === 'pick' || cands[k].origin === 'turn') cands.splice(k, 1);
 
   // the same sentence with the same gap is one item: the sturdier origin keeps it
   const taken = new Map<string, Cand>();
@@ -327,12 +332,14 @@ export function deriveContrast(node: GraphNode, ctx: DeriveCtx, decides: Contras
     const inGap = (span: [number, number]) => { const a = offsets[span[0]], b = offsets[span[1]]; return !!a && !!b && a[0] < c.gap[1] && b[1] > c.gap[0]; };
     const byGap = members.find((m) => tagged.features.some((f) => f.node === m && inGap(f.span)));
     const bySentence = members.find((m) => tagged.features.some((f) => f.node === m));
+    // a sentence written for one of the sides' own lessons is that side's, whatever the tagger can see of it
+    const written = c.from !== node.id && members.includes(c.from) ? c.from : undefined;
     const why = c.why || ownRules.get(keyOf(c.es)) || `The English says "${c.en}", so the gap is ${c.right}.`;
     const it = {
-      id, node: node.id, side: byGap ?? bySentence ?? members[0], rung: c.rung, en: c.en!, es: c.es, gap: c.gap, options: rotated, answer, why,
+      id, node: node.id, side: written ?? byGap ?? bySentence ?? members[0], rung: c.rung, en: c.en!, es: c.es, gap: c.gap, options: rotated, answer, why,
       requires: tagged.requires,
     };
-    return { c, it, found: byGap ? 'gap' as const : bySentence ? 'sentence' as const : 'first' as const };
+    return { c, it, found: written ? 'script' as const : byGap ? 'gap' as const : bySentence ? 'sentence' as const : 'first' as const };
   });
 
   // a deck of meaning or earlier text must not be passed by the words beside the gap (the Cue Test, with room to spare):
@@ -415,8 +422,8 @@ export function report(results: Array<{ file: ContrastFile; stats: DeriveStats }
   lines.push('', `${results.length} contrasts, ${total} items; ${thin.length} below their R11 start, ${bare.length} with fewer than 6`);
   const by = (d: ContrastDecides) => results.filter((r) => r.stats.decides === d);
   for (const d of ['local', 'meaning', 'discourse', 'synonym'] as const) lines.push(`${d}: ${by(d).length} contrasts, ${by(d).reduce((a, r) => a + r.stats.items, 0)} items`);
-  const sd = results.reduce((a, r) => ({ gap: a.gap + r.stats.side.gap, sentence: a.sentence + r.stats.side.sentence, first: a.first + r.stats.side.first }), { gap: 0, sentence: 0, first: 0 });
-  lines.push(`side found by the word in the gap ${sd.gap}, by the sentence ${sd.sentence}, the first side ${sd.first}`);
+  const sd = results.reduce((a, r) => ({ script: a.script + r.stats.side.script, gap: a.gap + r.stats.side.gap, sentence: a.sentence + r.stats.side.sentence, first: a.first + r.stats.side.first }), { script: 0, gap: 0, sentence: 0, first: 0 });
+  lines.push(`side: from the side's own script ${sd.script}, by the word in the gap ${sd.gap}, by the sentence ${sd.sentence}, the first side ${sd.first}`);
   return lines;
 }
 
@@ -427,9 +434,12 @@ function main(): void {
   if (only.length) results = results.filter((r) => only.includes(r.stats.contrast));
   const out = join(APP, 'content', 'contrasts');
   if (args.includes('--write')) {
+    mkdirSync(out, { recursive: true });
     for (const { file } of results) {
-      if (!file.items.length) continue;
-      writeFileSync(join(out, `${file.node.replace(':', '_')}.json`), JSON.stringify(file, null, 2) + '\n');
+      const path = join(out, `${file.node.replace(':', '_')}.json`);
+      // a contrast with nothing to derive has no file (its review and Train it use its script), and no file left from an earlier run
+      if (!file.items.length) { if (existsSync(path)) unlinkSync(path); continue; }
+      writeFileSync(path, JSON.stringify(file, null, 2) + '\n');
     }
   }
   if (!args.includes('--quiet')) for (const l of report(results)) console.log(l);

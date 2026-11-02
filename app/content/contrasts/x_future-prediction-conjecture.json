@@ -59,7 +59,7 @@
     {
       "id": "x:future-prediction-conjecture#g.future-conjecture.rp0",
       "node": "x:future-prediction-conjecture",
-      "side": "g:future-promises",
+      "side": "g:future-conjecture",
       "rung": 1,
       "en": "Simón is nearby.",
       "es": "Simón está cerca.",

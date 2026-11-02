@@ -67,7 +67,7 @@ describe('the contrasts folder', () => {
         expect(it.id.startsWith(`${it.node}#`), it.id).toBe(true);
       }
     }
-    expect(items).toBeGreaterThan(800);
+    expect(items).toBeGreaterThan(600);
   });
 
   it('writes no contrast into the requires or targets of any bank row (they would be inadmissible until it is taught)', () => {

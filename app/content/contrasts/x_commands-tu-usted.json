@@ -169,7 +169,7 @@
     {
       "id": "x:commands-tu-usted#g.commands-usted.yt3",
       "node": "x:commands-tu-usted",
-      "side": "g:commands-tu",
+      "side": "g:commands-usted",
       "rung": 1,
       "en": "Look at the map.",
       "es": "Mire el mapa.",
@@ -192,7 +192,7 @@
     {
       "id": "x:commands-tu-usted#g.commands-usted.rp7",
       "node": "x:commands-tu-usted",
-      "side": "g:commands-tu",
+      "side": "g:commands-usted",
       "rung": 1,
       "en": "Look at the map, madam.",
       "es": "Mire el mapa, señora.",

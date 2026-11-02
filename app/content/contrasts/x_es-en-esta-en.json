@@ -167,7 +167,7 @@
     {
       "id": "x:es-en-esta-en#p.ser-event-location.pf2",
       "node": "x:es-en-esta-en",
-      "side": "g:estar-location-states",
+      "side": "p:ser-event-location",
       "rung": 1,
       "en": "The café is in La Candelaria.",
       "es": "El café está en La Candelaria.",

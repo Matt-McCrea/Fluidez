@@ -383,7 +383,7 @@
     {
       "id": "x:tras-al-inf#p.tras-inf.rp3",
       "node": "x:tras-al-inf",
-      "side": "g:prep-infinitive",
+      "side": "p:tras-inf",
       "rung": 1,
       "en": "Before signing, he read everything.",
       "es": "Antes de firmar, leyó todo.",

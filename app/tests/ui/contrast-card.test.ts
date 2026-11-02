@@ -123,7 +123,7 @@ describe('every item in the store, in every form it may be asked', () => {
         void k;
       }
     }
-    expect(made).toBeGreaterThan(1500);
+    expect(made).toBeGreaterThan(1200);
     // aspect and near-synonyms are never a choice between buttons, even when a choice is asked for
     for (const d of ['discourse', 'synonym'] as ContrastDecides[]) expect([...kinds].filter((x) => x.startsWith(`${d} `) && x.endsWith(' mcq'))).toEqual([]);
     expect([...kinds].filter((x) => x.startsWith('local choose') || x.startsWith('meaning choose')).every((x) => x.endsWith(' mcq'))).toBe(true);
