@@ -42,6 +42,8 @@ export interface Check {
   hintKind?: string;
   /** the right version to show */
   answer: string;
+  /** a miss with no second try, whatever the card allows: the answer given is a decision, and the wrong one (see contrast-card) */
+  final?: boolean;
   /** matched only through a Peninsular form */
   variant?: 'peninsular';
   /** passed through a synonym the course did not teach: counts, but as Hard */

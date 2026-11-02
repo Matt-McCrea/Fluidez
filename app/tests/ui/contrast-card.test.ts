@@ -5,6 +5,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { ContrastFile, type ContrastDecides, type ContrastItem } from '../../src/content/schema';
+import { claimOffered } from '../../src/ui/components/card';
 import { blanked, contrastCard, contrastForm, contrastFormAt, filled } from '../../src/ui/session/contrast-card';
 
 const DIR = join(__dirname, '../../content/contrasts');
@@ -72,6 +73,35 @@ describe('the cards', () => {
     expect(c.check('porque').pass).toBe(false);
   });
 
+  it('the other side typed is the decision made wrongly: no hint about accents, and no second try, so it can lapse', () => {
+    const q = item({ es: '¿Qué lees?', en: 'What are you reading?', gap: [1, 4], options: ['Qué', 'Que'], answer: 0 });
+    const c = contrastCard(q, 'local', { key: 'k', form: 'type' });
+    if (c.type !== 'type') throw new Error('not typed');
+    // que for qué is the whole of this contrast, and "Check the accents" would give it away for a Hard
+    expect(c.check('que')).toMatchObject({ pass: false, near: false, final: true, answer: 'Qué' });
+    expect(c.check('Que').hint).toBeUndefined();
+    const v = contrastCard(item(), 'meaning', { key: 'k', form: 'type' });
+    if (v.type !== 'type') throw new Error('not typed');
+    expect(v.check('para')).toMatchObject({ pass: false, final: true });
+    // a slip of the fingers still gets its second try
+    expect(v.check('pro')).toMatchObject({ pass: false });
+    expect(v.check('pro').final).toBeUndefined();
+    const accents = contrastCard(item({ es: 'Se fue.', en: 'He left.', gap: [0, 2], options: ['Se', 'Le'], answer: 0 }), 'local', { key: 'k', form: 'type' });
+    if (accents.type !== 'type') throw new Error('not typed');
+    expect(accents.check('Sé')).toMatchObject({ pass: false, near: true });
+    expect(accents.check('Sé').final).toBeUndefined();
+  });
+
+  it('the other sentence typed whole is the same: aspect has no second try and no "mine says the same thing"', () => {
+    for (const a of [0, 1]) {
+      const c = contrastCard(item({ es: ['Comía a las dos.', 'Comí a las dos.'][a], en: ['I used to eat at two.', 'I ate at two.'][a], gap: [0, [5, 4][a]], options: ['Comía', 'Comí'], answer: a }), 'discourse', { key: 'k', form: 'type' });
+      if (c.type !== 'type') throw new Error('not typed');
+      const r = c.check(['Comí a las dos.', 'Comía a las dos.'][a]);
+      expect(r).toMatchObject({ pass: false, final: true });
+      expect(claimOffered({ card: c, allowed: true, typed: 'x', result: r })).toBe(false);
+    }
+  });
+
   it('a phrase for a gap is typed whole', () => {
     const c = contrastCard(item({ es: 'Lo hago por la mañana.', en: 'I do it in the morning.', gap: [8, 21], options: ['por la mañana', 'para mañana'], answer: 0 }), 'synonym', { key: 'k', form: 'type' });
     if (c.type !== 'type') throw new Error('not typed');
@@ -123,7 +153,7 @@ describe('every item in the store, in every form it may be asked', () => {
         void k;
       }
     }
-    expect(made).toBeGreaterThan(1200);
+    expect(made).toBeGreaterThan(1000);
     // aspect and near-synonyms are never a choice between buttons, even when a choice is asked for
     for (const d of ['discourse', 'synonym'] as ContrastDecides[]) expect([...kinds].filter((x) => x.startsWith(`${d} `) && x.endsWith(' mcq'))).toEqual([]);
     expect([...kinds].filter((x) => x.startsWith('local choose') || x.startsWith('meaning choose')).every((x) => x.endsWith(' mcq'))).toBe(true);

@@ -62,8 +62,8 @@ export function DiffText({ pieces }: { pieces: DiffPiece[] }) {
  * sentence, where something was typed that is more than a fragment, and where no named trap fired. A trap that named the
  * slip has proved an error, so the learner is not asked to judge it.
  */
-export function claimOffered(p: { card: Pick<TypeCard, 'claim'>; allowed?: boolean; typed: string; result: Pick<Check, 'hintKind' | 'rule'> | null }): boolean {
-  return !!p.allowed && !!p.card.claim && !!p.typed.trim() && !!p.result && !p.result.rule && p.result.hintKind !== 'fragment' && p.result.hintKind !== 'empty';
+export function claimOffered(p: { card: Pick<TypeCard, 'claim'>; allowed?: boolean; typed: string; result: Pick<Check, 'hintKind' | 'rule' | 'final'> | null }): boolean {
+  return !!p.allowed && !!p.card.claim && !!p.typed.trim() && !!p.result && !p.result.rule && !p.result.final && p.result.hintKind !== 'fragment' && p.result.hintKind !== 'empty';
 }
 
 /** "." unless the text already ends in sentence punctuation. */
@@ -216,7 +216,7 @@ function TypeView({ card, onDone, next, pos, ms, ...p }: CardViewProps & { card:
     setTries(n);
     setResult(r);
     if (n === 1) { setFirst(value); setFirstCheck(r); }
-    if (!r.pass && (!card.retry || n >= 2)) { setRevealed(true); setTook(ms()); }
+    if (!r.pass && (!card.retry || r.final || n >= 2)) { setRevealed(true); setTook(ms()); }
     if (r.pass) setTook(ms());
   };
   const giveUp = () => { setTries(Math.max(1, tries)); setRevealed(true); setTook(ms()); if (!result) { const r = card.check(value || ' '); setResult(value.trim() ? r : { ...r, hint: undefined }); } };

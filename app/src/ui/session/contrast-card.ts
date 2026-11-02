@@ -36,11 +36,16 @@ export function contrastFormAt(decides: ContrastDecides, k: number, n: number): 
   return decides === 'discourse' || decides === 'synonym' || k >= Math.ceil(n / 2) ? 'type' : 'choose';
 }
 
-/** The gap typed: accents count, since a contrast can turn on one (que and qué), and the right version shows when it is missed. */
-function gapCheck(answer: string) {
+/**
+ * The gap typed: accents count, since a contrast can turn on one (que and qué), and the right version shows when it is missed. The other
+ * side of the contrast is the decision made wrongly, and nothing to correct: there is no second go at a choice of two, which would only
+ * turn every wrong answer into a right one (Hard, and never a lapse), and where the sides differ by an accent, it is not an accent slip.
+ */
+function gapCheck(answer: string, others: readonly string[]) {
   return (input: string): Check => {
     const r = checkExact(input, [answer]);
     if (r.pass) return { pass: true, answer };
+    if (checkExact(input, others).pass) return { pass: false, near: false, final: true, answer };
     if (r.near) return { pass: false, near: true, hint: 'Check the accents.', hintKind: 'accents', answer };
     const w = wordHint(input, [answer]);
     return { pass: false, near: false, hint: w?.hint, hintKind: w?.kind, answer };
@@ -50,8 +55,19 @@ function gapCheck(answer: string) {
 /** Whether the English is on the card: it is, unless the item is one the sentence alone decides and the contrast is one a cue decides. */
 const showsEnglish = (it: ContrastItem, decides: ContrastDecides) => !(it.rung === 2 && decides === 'local');
 
+/** The whole sentence typed: the same, with the sentence the other side makes as the decision made wrongly. */
+function wholeCheck(it: ContrastItem) {
+  const check = sentenceCheck({ es: it.es, en: it.en, accept: [] }, it.side);
+  const others = it.options.flatMap((_, k) => (k === it.answer ? [] : [filled(it, k)]));
+  return (input: string): Check => {
+    const r = check(input);
+    return !r.pass && checkExact(input, others).pass ? { ...r, near: false, final: true } : r;
+  };
+}
+
 export function contrastCard(it: ContrastItem, decides: ContrastDecides, o: { key: string; form: ContrastForm }): McqCard | TypeCard {
   const answer = it.es.slice(it.gap[0], it.gap[1]);
+  const others = it.options.filter((_, k) => k !== it.answer);
   const base = { key: o.key, why: it.why };
   // aspect and near-synonyms are never a choice between buttons, whoever asks (R10)
   if (o.form === 'choose' && decides !== 'discourse' && decides !== 'synonym') {
@@ -68,12 +84,12 @@ export function contrastCard(it: ContrastItem, decides: ContrastDecides, o: { ke
   if (decides === 'discourse') {
     return {
       ...base, type: 'type', ask: SAY, prompt: en(it.en), answerLang: 'es', placeholder: 'Type it in Spanish',
-      check: sentenceCheck({ es: it.es, en: it.en, accept: [] }, it.side), retry: true, claim: true,
+      check: wholeCheck(it), retry: true, claim: true,
     };
   }
   return {
     ...base, type: 'type', ask: decides === 'synonym' ? 'Say it, filling the gap' : 'Fill the gap', prompt: es(blanked(it)), ...(showsEnglish(it, decides) ? { sub: en(it.en) } : {}),
-    answerLang: 'es', placeholder: /\s/.test(answer) ? 'The missing words' : 'The missing word', check: gapCheck(answer), retry: true,
+    answerLang: 'es', placeholder: /\s/.test(answer) ? 'The missing words' : 'The missing word', check: gapCheck(answer, others), retry: true,
   };
 }
 
