@@ -19,6 +19,20 @@ describe('gradeOf', () => {
   });
 });
 
+describe('a chapter this device could not get', () => {
+  it('is not recorded as read when its block is shown, so the story still owes it; once it arrives, it is', async () => {
+    const w = await world();
+    const block = { kind: 'read', part: 'core', deliberate: false, chapter: 'ch-not-here', minutes: 3 } as unknown as Block;
+    const plan = { sessionIndex: 1, seed: 1, blocks: [block], newNodes: { grammar: [], patterns: [], chunks: [], lexemes: [], contrasts: [] } } as any;
+    const run = new SessionRunner(w.learner, w.bundle, w.ui, plan, w.now);
+    run.blockShown(block);
+    expect(w.learner.ledger.hasSeen('chapter', 'ch-not-here')).toBe(false);
+    w.bundle.chapters.set('ch-not-here', {} as any);
+    run.blockShown(block);
+    expect(w.learner.ledger.hasSeen('chapter', 'ch-not-here')).toBe(true);
+  });
+});
+
 describe('scoring wiring (item.scoring)', () => {
   async function setup() {
     const w = await world();

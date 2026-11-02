@@ -13,7 +13,7 @@ import { ReadChapter } from '../../src/ui/blocks/read';
 import { Story } from '../../src/ui/screens/story';
 import { CHAPTER_OFFLINE, chaptersRead, storySoFar } from '../../src/ui/session/storyline';
 
-const h = vi.hoisted(() => ({ slots: [] as unknown[], at: 0, app: undefined as unknown }));
+const h = vi.hoisted(() => ({ slots: [] as unknown[], at: 0, app: undefined as unknown, effects: [] as Array<() => void | (() => void)> }));
 vi.mock('preact/hooks', () => ({
   useState: (init: unknown) => {
     const i = h.at++;
@@ -22,7 +22,7 @@ vi.mock('preact/hooks', () => ({
   },
   useMemo: (f: () => unknown) => f(),
   useRef: (init: unknown) => ({ current: init }),
-  useEffect: () => {},
+  useEffect: (f: () => void | (() => void)) => { h.effects.push(f); },
   useContext: () => h.app,
 }));
 
@@ -170,6 +170,38 @@ describe('the chapter on the reading screen', () => {
     const run: any = { bundle: b, learner: reader([]), reads: new Map() };
     const t = text(expand(ReadChapter({ block: { kind: 'read', part: 'core', deliberate: false, chapter: 'ch150', questions: 5, minutes: 4 } as any, run, ui: ui(), onDone: () => {} })));
     expect(t).toContain(CHAPTER_OFFLINE);
+  }, 120_000);
+});
+
+describe('a chapter fetched on the reading screen', () => {
+  const block = { kind: 'read', part: 'core', deliberate: false, chapter: 'ch001', questions: 5, minutes: 4 } as any;
+  /** The block drawn with its effect run, as the session mounts it. Returns what the session's runner was told, and the effect's cleanup. */
+  async function mounted(b: Bundle, leave = false) {
+    h.slots = []; h.at = 0; h.effects = [];
+    const shown: unknown[] = [];
+    const run: any = { bundle: b, learner: reader([]), reads: new Map(), blockShown: (x: unknown) => shown.push(x) };
+    ReadChapter({ block, run, ui: ui(), onDone: () => {} });
+    const cleanup = h.effects.map((f) => f()).find((c) => typeof c === 'function') as (() => void) | undefined;
+    if (leave) cleanup?.();
+    await new Promise((resolve) => { setTimeout(resolve, 20); });
+    return shown;
+  }
+
+  it('is recorded once it has arrived, since the session could not record it before', async () => {
+    const b = await new ContentLoader().load({ unit: 29 });
+    expect(await mounted(b)).toEqual([block]);
+  }, 120_000);
+
+  it('is not recorded when the learner has moved on before it arrived', async () => {
+    const b = await new ContentLoader().load({ unit: 29 });
+    expect(await mounted(b, true)).toEqual([]);
+  }, 120_000);
+
+  it('is not recorded when it cannot be got', async () => {
+    const files = { ...(await import('../../src/ui/data/loader')).CONTENT_FILES };
+    files.story = Object.fromEntries(Object.keys(files.story).map((p) => [p, async () => { throw new Error('net::ERR_FAILED'); }]));
+    const b = await new ContentLoader(files).load({ unit: 29 });
+    expect(await mounted(b)).toEqual([]);
   }, 120_000);
 });
 

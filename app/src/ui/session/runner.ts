@@ -291,6 +291,8 @@ export class SessionRunner {
   blockShown(block: Block): void {
     this.current = block;
     this.entered.add(block);
+    // a chapter this tab does not hold has not been shown: ReadChapter records it when it arrives, and one that never does is still owed
+    if ((block.kind === 'read' || block.kind === 'reread') && !this.bundle.chapters.has(block.chapter)) return;
     for (const r of servedRefs({ ...this.plan, blocks: [block] })) this.mark(r);
   }
 

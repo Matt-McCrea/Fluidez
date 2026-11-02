@@ -191,7 +191,11 @@ export function ReadChapter({ block, run, ui, onDone }: BlockProps<ReadBlock | R
   useEffect(() => {
     if (chapter) return undefined;
     let live = true;
-    void bringChapter(run.bundle, block.chapter).then((r) => { if (live) setWait(r === 'ready' ? null : 'lacking'); });
+    void bringChapter(run.bundle, block.chapter).then((r) => {
+      if (!live) return;
+      setWait(r === 'ready' ? null : 'lacking');
+      if (r === 'ready') run.blockShown(block);  // the session could not record it while it was not here
+    });
     return () => { live = false; };
   }, []);
   const h = blockHeading(block, run.bundle);
