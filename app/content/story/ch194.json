@@ -118,7 +118,7 @@
       "q": "What does Montoya demand from the cooperative?",
       "options": [
         "The house",
-        "Half the cost of maintaining the shared wall: eighteen million pesos",
+        "Half the wall cost",
         "A copy of the statutes",
         "An apology"
       ],
@@ -127,7 +127,7 @@
     {
       "q": "Why does Montoya's demand backfire?",
       "options": [
-        "The wall is protected, and the hotel fixed its screen into the house's adobe without permission",
+        "The wall is legally protected",
         "The cooperative has no money",
         "Gloria throws him out",
         "Clemencia says the wall is fine"
@@ -138,7 +138,7 @@
       "q": "What is the cooperative's first grant for?",
       "options": [
         "Jhon Fredy's tuition",
-        "Repairing Don Libardo's leaking workshop roof",
+        "Repairing a roof",
         "A new screen",
         "The students' rent"
       ],
@@ -161,7 +161,7 @@
       "q": "What happens to someone who doesn't pay their contribution in Bogotá?",
       "options": [
         "They are put off the boat",
-        "They wash the dishes for a week and explain to Simón why",
+        "Wash dishes for a week",
         "They pay a fine",
         "They lose their vote"
       ],
@@ -170,7 +170,7 @@
     {
       "q": "What did Rosa's note say?",
       "options": [
-        "For when there's a patio again",
+        "For a future patio",
         "For Hernando",
         "Don't sell the house",
         "For the cooperative"
@@ -181,7 +181,7 @@
       "q": "What did Jhon Fredy do on the high board?",
       "options": [
         "He dived perfectly",
-        "He looked at the water for a minute and climbed back down",
+        "He climbed down",
         "He fell in",
         "He called for help"
       ],

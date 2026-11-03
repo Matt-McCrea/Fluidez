@@ -78,7 +78,7 @@
       "q": "What was Tomás's plan when he arrived in Bogotá a year ago?",
       "options": [
         "To open a hotel",
-        "To sell the café in thirty days and go back to Toronto",
+        "To sell the café",
         "To find Joaquín",
         "To learn to bake"
       ],
@@ -88,7 +88,7 @@
       "q": "What is the main point of Tomás's speech?",
       "options": [
         "The hotel will bring too many tourists",
-        "It isn't fair for a corner with a hundred years of history to become a hotel lobby",
+        "It isn't fair to make it a lobby",
         "Altamira should pay more",
         "The neighbours should sell quickly"
       ],
@@ -98,7 +98,7 @@
       "q": "Why does Marta lower her hand?",
       "options": [
         "Gloria tells her to",
-        "She decides her grandson can study somewhere else, but she has no other block",
+        "Her grandson can study elsewhere",
         "Altamira looks at her",
         "She didn't understand the question"
       ],
@@ -107,7 +107,7 @@
     {
       "q": "¿Qué anuncia Altamira después de la votación?",
       "options": [
-        "Que la alcaldía ya firmó los permisos del hotel",
+        "Que firmó los permisos",
         "Que no va a construir el hotel",
         "Que compra la panadería",
         "Que Joaquín vive en Bogotá"

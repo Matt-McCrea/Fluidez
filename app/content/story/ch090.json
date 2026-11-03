@@ -113,7 +113,7 @@
     {
       "q": "What does the email to Doctor Rengifo show?",
       "options": [
-        "Altamira arranged his trip to San Andrés and thanked him for the permits",
+        "Altamira arranged his trip",
         "Joaquín sold his half",
         "The hotel has been cancelled",
         "Wilson wants a job at the hotel"
@@ -134,7 +134,7 @@
       "q": "What does Tomás tell Altamira's office?",
       "options": [
         "That he needs more time",
-        "That his answer is no: not today, not tomorrow, not ever",
+        "That the answer is no",
         "That he will sell half",
         "That he wants a meeting"
       ],
@@ -154,7 +154,7 @@
       "q": "Why does Vale feel sad at the end?",
       "options": [
         "Tomás argued with her",
-        "Tomás went home without arguing, which is not like him",
+        "Tomás didn't argue",
         "Hernando left",
         "Mariana took the photos"
       ],

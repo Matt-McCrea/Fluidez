@@ -68,7 +68,7 @@
       "q": "How does Dr Lozano make the essay structure easy for Tomás?",
       "options": [
         "She draws a diagram",
-        "She tells him to write the way he used to test software: one idea per paragraph",
+        "She says one idea per paragraph",
         "She writes it for him",
         "She gives him an old essay to copy"
       ],
@@ -88,7 +88,7 @@
       "q": "What else does the committee ask for, besides the statement?",
       "options": [
         "A video",
-        "A one-page summary and a ten-minute presentation",
+        "A summary and a talk",
         "A visit to the café",
         "Four hundred signatures"
       ],
@@ -98,7 +98,7 @@
       "q": "Why does Dr Lozano want to show Tomás the letter tomorrow instead?",
       "options": [
         "Her battery is low",
-        "It is a letter that is hard to read over the phone",
+        "It's hard to read by phone",
         "She wants Hernando to read it",
         "The archive is closing"
       ],
@@ -109,7 +109,7 @@
     {
       "q": "What was in the photo in Dr Lozano's study?",
       "options": [
-        "A man in a hat in front of a green door",
+        "A hatted man by a green door",
         "Rosa on her first day",
         "The café's first sign",
         "A tailor's shop full of suits"

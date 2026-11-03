@@ -66,7 +66,7 @@
       "q": "Why does Vale leave Rosa's chest of drawers behind?",
       "options": [
         "It is too heavy for the Burra",
-        "It was Rosa's, and now it belongs to the house",
+        "It belongs to the house now",
         "Correa does not want it",
         "Tomás asks her to"
       ],
@@ -77,7 +77,7 @@
       "options": [
         "It belongs to Lucía's friend",
         "It was opened in Madrid",
-        "It was opened on a network shared with an Altamira office",
+        "It is linked to Altamira",
         "It was a joke by Gloria"
       ],
       "answer": 2
@@ -108,7 +108,7 @@
         "Gloria tells him to",
         "The floor is very dirty",
         "Lucía is coming back",
-        "To make some noise in the empty café"
+        "To make some noise"
       ],
       "answer": 3
     }
@@ -119,7 +119,7 @@
       "q": "What does Vale hang next to the oven?",
       "options": [
         "Rosa's photo",
-        "Her first apron from Rosa",
+        "Her apron from Rosa",
         "A list of recipes",
         "Lucía's drawing"
       ],
@@ -130,7 +130,7 @@
       "options": [
         "A jar of honey",
         "A ticket to Madrid",
-        "A page from her notebook with the sick pandebono drawn on it",
+        "A notebook page",
         "Her phone number"
       ],
       "answer": 2
@@ -138,7 +138,7 @@
     {
       "q": "Where is Simón when Vale tries to say goodbye?",
       "options": [
-        "On the highest branch of the tree in the patio",
+        "On the highest branch",
         "In the kitchen",
         "On Hernando's shoulder",
         "In the Burra"

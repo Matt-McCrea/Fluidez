@@ -79,7 +79,7 @@
     {
       "q": "What does Altamira's lawyer argue?",
       "options": [
-        "The house is old but not historic, and knocking it down would be a favour to the neighbourhood",
+        "It is old but not historic",
         "The house should become a museum",
         "Tomás is not Rosa's grandson",
         "The café owes money to the city"
@@ -89,7 +89,7 @@
     {
       "q": "¿Qué dice Tomás al final?",
       "options": [
-        "Que aunque pierdan, habrán dicho la verdad",
+        "Que dirán la verdad igual",
         "Que va a vender la casa",
         "Que se va a Toronto",
         "Que el abogado tiene razón"
@@ -99,7 +99,7 @@
     {
       "q": "What is strange when Yesid speaks?",
       "options": [
-        "Altamira's lawyer looks at him as if he knew him, and Yesid stops short",
+        "The lawyer looks at him",
         "He speaks in English",
         "He says he wants to sell",
         "He forgets his name"

@@ -102,7 +102,7 @@
       "q": "Why didn't Hernando tell Rosa he loved her that night in 2009?",
       "options": [
         "Simón interrupted him",
-        "She started talking about Joaquín, and he kept quiet again",
+        "She brought up Joaquín",
         "He was married to Inés",
         "He had to drive his taxi"
       ],
@@ -122,7 +122,7 @@
       "q": "What else did Rosa find out about the bar on the Séptima?",
       "options": [
         "That Joaquín was hiding there",
-        "That a player had been cheating Joaquín every night",
+        "That Joaquín was cheated",
         "That Joaquín had paid his debt",
         "That Altamira owned it"
       ],
@@ -131,7 +131,7 @@
     {
       "q": "¿Qué dice la última carta de Rosa?",
       "options": [
-        "Que el edificio también es de Joaquín y de su familia",
+        "Que el edificio es de Joaquín",
         "Que Rosa vendió el edificio",
         "Que Joaquín tiene que pagar",
         "Que Tomás tiene que volver a Toronto"
@@ -142,7 +142,7 @@
       "q": "Why is the last letter suddenly important for the café?",
       "options": [
         "It proves Rosa was rich",
-        "If Joaquín's family exists and signs, Altamira cannot buy the building",
+        "Altamira can't buy without his family",
         "It has Altamira's signature",
         "It is worth a lot of money to collectors"
       ],
@@ -175,7 +175,7 @@
       "q": "How often did Tomás call Rosa from Toronto?",
       "options": [
         "Every Sunday",
-        "Once a year, at Christmas",
+        "Once a year",
         "Never",
         "Every month"
       ],

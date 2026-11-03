@@ -98,7 +98,7 @@
       "q": "Why is Vale upset about the ticket?",
       "options": [
         "She thinks Toronto is too cold",
-        "She heard about it from her aunt instead of from Tomás",
+        "She heard it from her aunt",
         "She wanted to go too",
         "She thinks it's too expensive"
       ],
@@ -108,7 +108,7 @@
       "q": "What is wrong with Tomás's first message to the group, according to Mariana?",
       "options": [
         "It is too short",
-        "It repeats all three rumours",
+        "It repeats all rumours",
         "It is in English",
         "It mentions Altamira"
       ],
@@ -118,7 +118,7 @@
       "q": "What happens when Tomás calls the anonymous number?",
       "options": [
         "Nobody answers and nothing happens",
-        "A marimba ringtone sounds on the hotel building site, then stops when the call is cut off",
+        "A ringtone sounds on the site",
         "Doña Teresa answers",
         "Simón imitates a phone"
       ],
@@ -151,7 +151,7 @@
       "q": "What does doña Teresa write in the group after Tomás's message?",
       "options": [
         "That she knew it all along",
-        "Congratulations to his mother, and that she never said anything",
+        "Congratulating his mother",
         "That the café should close",
         "Nothing at all"
       ],

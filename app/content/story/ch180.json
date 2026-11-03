@@ -122,7 +122,7 @@
       "q": "Who did the rumour about the ticket really start with?",
       "options": [
         "Doña Teresa",
-        "Jhon Fredy, who printed Tomás's ticket while testing the printer",
+        "Jhon Fredy",
         "The hotel doorman",
         "Hernando"
       ],
@@ -132,7 +132,7 @@
       "q": "What is true about Tomás's ticket?",
       "options": [
         "It is one way to Toronto",
-        "It is a return trip for his mother's sixtieth birthday",
+        "It's a return trip",
         "It is a ticket to Miami",
         "It does not exist"
       ],
@@ -141,7 +141,7 @@
     {
       "q": "Why does Mariana think someone else is involved?",
       "options": [
-        "Jhon Fredy never said the café was closing on the 30th, so someone invented that part",
+        "Someone invented the 30th",
         "Gloria admits she made it up",
         "The senator said it on the radio",
         "Simón repeated it"
@@ -165,7 +165,7 @@
       "q": "How does Tomás track down the rumour?",
       "options": [
         "He calls the police",
-        "He follows it backwards, the way he used to trace bugs in software",
+        "He traces it back",
         "He asks Simón",
         "He reads the newspaper"
       ],
@@ -175,7 +175,7 @@
       "q": "What does the senator on the radio say about Rengifo?",
       "options": [
         "That he is in prison",
-        "That his whereabouts are still unknown",
+        "Nobody knows where",
         "That he is innocent",
         "That he is back in Bogotá"
       ],

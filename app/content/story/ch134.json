@@ -93,7 +93,7 @@
     {
       "q": "What does the lab report show?",
       "options": [
-        "The fingerprint on the contract belongs to the young intern from the law firm",
+        "The fingerprint is the intern's",
         "The fingerprint belongs to Duarte",
         "The fingerprint is Joaquín's",
         "The report cannot say anything"
@@ -103,7 +103,7 @@
     {
       "q": "Why does Benavides tell Tomás to thank the parrot?",
       "options": [
-        "His daughter, a fan of Simón, would not leave him alone",
+        "His daughter is a Simón fan",
         "Simón found the contract",
         "Simón called the court",
         "The parrot signed the request"
@@ -123,7 +123,7 @@
     {
       "q": "What does Yesid hide at the end?",
       "options": [
-        "A card from Grupo Altamira inviting him to come alone on Saturday",
+        "A card from Altamira",
         "The lab report",
         "Rosa's last letter",
         "His return bus ticket"
@@ -145,7 +145,7 @@
     {
       "q": "What does Vale do after Benavides's call?",
       "options": [
-        "She takes a cake out of the oven",
+        "She takes a cake out",
         "She calls her mother",
         "She goes to the court",
         "She leaves for Medellín"
@@ -155,7 +155,7 @@
     {
       "q": "What does Tomás say he would have done a year ago?",
       "options": [
-        "Laughed if someone had told him he would fight for a building",
+        "Laughed at the idea",
         "Sold the café immediately",
         "Gone to Taganga",
         "Become a taxi driver"

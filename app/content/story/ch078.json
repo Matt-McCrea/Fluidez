@@ -98,7 +98,7 @@
       "q": "What did the senator do when he came back?",
       "options": [
         "He brought the police",
-        "He read out a letter, insisted on paying and left a tip",
+        "He paid and left a tip",
         "He threw water at Rosa",
         "He tried to buy the café"
       ],
@@ -107,7 +107,7 @@
     {
       "q": "Why did Hernando never tell Rosa he loved her?",
       "options": [
-        "Out of embarrassment: he felt he was just a funny taxi driver and she was Rosa",
+        "He was only a funny taxi driver",
         "Because Rosa was angry with him",
         "Because he was leaving Bogotá",
         "Because Simón would tell everyone"
@@ -127,7 +127,7 @@
     {
       "q": "Why does Simón's \"¡Qué risa!\" land so badly?",
       "options": [
-        "It comes right after Hernando's sad confession",
+        "It follows Hernando's sad confession",
         "Simón is laughing at Tomás's glass",
         "Nobody understood the joke",
         "Simón is copying the senator"
@@ -138,7 +138,7 @@
       "q": "What new fact does Hernando give about Joaquín?",
       "options": [
         "He went to Medellín",
-        "He left because of a debt, not just a fight",
+        "A debt and a fight",
         "He died in 1978",
         "He is still in Bogotá"
       ],

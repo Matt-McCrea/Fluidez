@@ -46,7 +46,7 @@
       "q": "What does the first review complain about?",
       "options": [
         "The prices and the slow service",
-        "A dark café, a spicy ajiaco and a parrot that bit someone",
+        "A dark café and a parrot",
         "Cold coffee and dirty tables",
         "The noise from the street"
       ],
@@ -57,7 +57,7 @@
       "options": [
         "They are all Rosa's old customers",
         "They are all from Toronto",
-        "They are new today, with no photos and no followers, and they all say \"dark\"",
+        "They have no photos, say dark",
         "They all left five stars"
       ],
       "answer": 2
@@ -75,7 +75,7 @@
     {
       "q": "¿Qué dice el aviso de Vale en la puerta?",
       "options": [
-        "Que el ajiaco no pica, pero el loro sí",
+        "Que el loro sí pica",
         "Que el café está cerrado",
         "Que el loro no pica",
         "Que el ajiaco pica mucho"

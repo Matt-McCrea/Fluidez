@@ -130,7 +130,7 @@
       "q": "Who was the old man at the hotel lunch?",
       "options": [
         "The judge in the Rengifo case",
-        "Judge Montoya, the lawyer's father, retired for twenty years and celebrating his birthday",
+        "Judge Montoya",
         "A senator",
         "Bermúdez"
       ],
@@ -140,7 +140,7 @@
       "q": "How does Tomás answer the judge rumour?",
       "options": [
         "He repeats it and denies it",
-        "He posts the facts and the photo of the birthday cake, without repeating the rumour",
+        "He posts only the facts",
         "He calls the police",
         "He says nothing"
       ],
@@ -150,7 +150,7 @@
       "q": "What does Osorio's source say?",
       "options": [
         "Rengifo is already in prison",
-        "Rengifo is due to fly from Miami to Panama tomorrow, and there is a request for cooperation with the United States",
+        "Rengifo is flying to Panama",
         "Bermúdez has been arrested",
         "The judge has been bribed"
       ],
@@ -159,7 +159,7 @@
     {
       "q": "¿Qué propone Gloria para la puerta del café?",
       "options": [
-        "Un tablero comunitario con rumores y verdades",
+        "Un tablero comunitario",
         "Un letrero de «cerrado»",
         "Una foto de Rosa",
         "Un timbre de marimba"
@@ -172,7 +172,7 @@
     {
       "q": "Why is Wilson worried?",
       "options": [
-        "He might lose his job if they find out the photo is his",
+        "He may lose his job",
         "He owes Tomás money",
         "His children are ill",
         "He is afraid of Simón"

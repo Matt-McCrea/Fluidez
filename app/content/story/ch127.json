@@ -117,7 +117,7 @@
     {
       "q": "Why does Tomás stand up during the call?",
       "options": [
-        "He feels the clerk deserves it, as if he were in a church",
+        "He feels it's deserved",
         "He wants to see the parrot",
         "The phone has no signal",
         "Vale tells him to"
@@ -127,7 +127,7 @@
     {
       "q": "What does the clerk need, and by when?",
       "options": [
-        "A written request with two copies, before the judge goes on holiday on Friday",
+        "A written request by Friday",
         "A phone call from Yesid on Monday",
         "The original contract by tonight",
         "Nothing, he can order the test himself"
@@ -169,7 +169,7 @@
     {
       "q": "Who first answers when Tomás is put through?",
       "options": [
-        "Someone in the archive, who hangs up",
+        "Someone in archives",
         "The judge",
         "Doña Teresa",
         "Altamira's assistant"
@@ -179,7 +179,7 @@
     {
       "q": "Where is Yesid staying while the road is closed?",
       "options": [
-        "With doña Teresa in Bucaramanga",
+        "With doña Teresa",
         "In a hotel in Bogotá",
         "On the bus",
         "With his uncle Wilson"

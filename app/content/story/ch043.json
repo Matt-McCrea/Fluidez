@@ -87,7 +87,7 @@
     {
       "q": "Why doesn't Vale buy the green dress?",
       "options": [
-        "It's the most expensive dress on the street, and today is for the café",
+        "It's too expensive",
         "It's too small",
         "Tomás doesn't like it",
         "She hates green"
@@ -97,7 +97,7 @@
     {
       "q": "What happens to the armchair at the café?",
       "options": [
-        "It's bigger than the door and has to stay in the street",
+        "It won't fit the door",
         "It goes in the kitchen",
         "Vale sits in it",
         "The men take it back"

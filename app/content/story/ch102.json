@@ -128,7 +128,7 @@
       "q": "Why is Hernando so upset about the motorbike?",
       "options": [
         "The Burra is badly damaged",
-        "He drove a taxi for forty years without a single crash",
+        "No crash in forty years",
         "The rider was rude to him",
         "He has no money for the repair"
       ],
@@ -147,7 +147,7 @@
     {
       "q": "¿Qué encontraron en el café cuando volvieron?",
       "options": [
-        "La puerta abierta y la cartera de Vale en la mesa",
+        "La puerta abierta y su cartera",
         "La máquina arreglada",
         "Una carta de Altamira",
         "A Mariana con la doctora Uribe"
@@ -180,7 +180,7 @@
     {
       "q": "¿Qué tienen que denunciar, según la doctora Uribe?",
       "options": [
-        "El celular y la firma falsa",
+        "El celular y la firma",
         "El choque y la moto",
         "La máquina de café",
         "El dedo de Vale"

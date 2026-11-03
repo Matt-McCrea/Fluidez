@@ -61,7 +61,7 @@
     {
       "q": "Why does Vale take the pink sweater out of Tomás's hands?",
       "options": [
-        "She doesn't want him to wear it to the party",
+        "She won't let him wear it",
         "It belongs to the passenger",
         "It is dirty",
         "She wants to wear it"
@@ -71,7 +71,7 @@
     {
       "q": "How does Tomás cope with the family's Spanish?",
       "options": [
-        "Badly: he understands one word in ten, mostly \"pues\"",
+        "Badly: he understands one word in ten",
         "Perfectly: they speak slowly for him",
         "He speaks English with everyone",
         "Vale translates everything"
@@ -81,7 +81,7 @@
     {
       "q": "What does Beatriz reveal?",
       "options": [
-        "Rosa visited her in 1990 looking for Joaquín, who had gone to the coast",
+        "Rosa looked for Joaquín",
         "Joaquín lives in Medellín",
         "Rosa was her sister",
         "Hernando was in Medellín too"
@@ -91,7 +91,7 @@
     {
       "q": "What has Beatriz never told Vale?",
       "options": [
-        "That she was the one who sent Vale to work at Rosa's café",
+        "That she sent Vale to Rosa's",
         "That the party is cancelled",
         "That she knows Altamira",
         "That she doesn't like almojábanas"
@@ -133,7 +133,7 @@
     {
       "q": "What did Rosa bring Beatriz in 1990?",
       "options": [
-        "Coffee, just like Hernando's packet",
+        "A packet of coffee",
         "A letter for Joaquín",
         "A photo of the café",
         "Almojábanas"

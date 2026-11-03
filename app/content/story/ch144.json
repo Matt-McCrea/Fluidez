@@ -101,7 +101,7 @@
     {
       "q": "What does the English version of the statement suggest that the Spanish one hides?",
       "options": [
-        "That Altamira expects the corner house to be part of the second phase",
+        "The corner house is phase two",
         "That the hotel will be cancelled",
         "That Rengifo works for the café",
         "That the hotel has no money"
@@ -111,7 +111,7 @@
     {
       "q": "What does Dr Uribe say they should do if a roof tile falls?",
       "options": [
-        "Measure it, photograph it and send it to the committee",
+        "Measure and photograph",
         "Fix it before anyone sees",
         "Send the bill to Altamira",
         "Ask Wilson to put it back"
@@ -121,7 +121,7 @@
     {
       "q": "Why does Wilson take a photo of the children's drawing?",
       "options": [
-        "His daughter also draws parrots, and he rarely sees her",
+        "His daughter draws too",
         "He wants to sell it",
         "His boss asked for it",
         "It is evidence for Mariana"
@@ -131,7 +131,7 @@
     {
       "q": "¿Qué dice Wilson del primo antes de irse?",
       "options": [
-        "Que el primo estuvo ayer en la oficina de la obra con el jefe",
+        "Que el primo vio al jefe",
         "Que la obra termina mañana",
         "Que Gloria le cobra mucho",
         "Que no le gusta el tinto"
@@ -163,7 +163,7 @@
     {
       "q": "What does Vale do after Wilson leaves?",
       "options": [
-        "She puts the cup down quietly and goes out into the street",
+        "She exits quietly",
         "She throws the cup",
         "She calls Yesid",
         "She laughs"

@@ -108,7 +108,7 @@
       "q": "How does the family react to Hernando's joke?",
       "options": [
         "They all laugh",
-        "Nobody laughs, and Simón says how embarrassing",
+        "Nobody laughs at it",
         "They ask for another",
         "Beatriz cries"
       ],
@@ -127,7 +127,7 @@
     {
       "q": "¿Quién está en la foto del pasillo?",
       "options": [
-        "El papá de Beatriz y Joaquín",
+        "El papá de los dos",
         "Rosa y Hernando",
         "Vale y su abuela",
         "Efraín y sus nietos"
@@ -138,7 +138,7 @@
       "q": "Why did Joaquín want to go to the coast?",
       "options": [
         "For work at a hotel",
-        "He wanted to see the sea and the desert, and the interior was too cold for him",
+        "To see the sea",
         "To find Rosa",
         "To buy a building"
       ],
@@ -151,7 +151,7 @@
       "q": "Who gives Tomás a kiss during the parade?",
       "options": [
         "Vale",
-        "A lady in a yellow shirt",
+        "Lady in yellow",
         "The grandmother",
         "Beatriz"
       ],

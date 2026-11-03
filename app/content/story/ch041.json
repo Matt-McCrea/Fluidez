@@ -53,7 +53,7 @@
     {
       "q": "Why does Vale put her phone in airplane mode?",
       "options": [
-        "Gloria has just told everyone she called twelve times in three days",
+        "Gloria told everyone about the calls",
         "The battery is low",
         "Altamira keeps calling",
         "She is going on a plane"
@@ -63,7 +63,7 @@
     {
       "q": "What is Mariana's news?",
       "options": [
-        "Altamira is now buying on Gloria's block too, and wants the whole neighbourhood",
+        "Altamira buys on Gloria's block",
         "Altamira has sold the café",
         "Altamira has found the deed",
         "Altamira is leaving La Candelaria"
@@ -73,7 +73,7 @@
     {
       "q": "¿Cómo sabe Vale que Tomás no dice la verdad?",
       "options": [
-        "Porque Tomás habla como el primer día",
+        "Porque habla como el primer día",
         "Porque Tomás está rojo",
         "Porque Hernando se lo dice",
         "Porque Simón lo repite"
@@ -83,7 +83,7 @@
     {
       "q": "Why does Tomás say he's going to San Victorino on Thursday?",
       "options": [
-        "To hide that he's going with Hernando to the doctor",
+        "To hide the checkup",
         "To buy a new suitcase",
         "To meet Mariana",
         "To visit the notary"
@@ -115,7 +115,7 @@
     {
       "q": "What does Hernando not do this morning?",
       "options": [
-        "Talk about his grandchildren or ask for bread",
+        "Chat about family",
         "Drink his tinto",
         "Come to the café",
         "Say hello to Simón"

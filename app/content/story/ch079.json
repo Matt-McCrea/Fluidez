@@ -122,7 +122,7 @@
       "q": "What does Tomás suddenly understand about Rosa's accounts?",
       "options": [
         "She was bad with numbers",
-        "For ten years she was quietly paying off Joaquín's debt, coffee by coffee",
+        "She was paying Joaquín's debt",
         "Altamira had stolen from her",
         "Hernando never paid for his coffee"
       ],
@@ -131,7 +131,7 @@
     {
       "q": "¿Qué acaba de hacer Altamira?",
       "options": [
-        "Acaba de comprar dos edificios más en la cuadra",
+        "Acaba de comprar dos más",
         "Acaba de vender el hotel",
         "Acaba de llamar a Tomás",
         "Acaba de llegar a la cena"
@@ -142,7 +142,7 @@
       "q": "What does Tomás decide to do at the end?",
       "options": [
         "Sell his half to Altamira",
-        "Write to every Herrera in Santa Marta",
+        "Write to every Herrera",
         "Go back to Toronto",
         "Publish Mariana's article"
       ],

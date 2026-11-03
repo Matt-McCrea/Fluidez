@@ -65,7 +65,7 @@
     {
       "q": "Why does Vale leave for the wedding with sad eyes?",
       "options": [
-        "She thinks nobody remembered her birthday",
+        "She thinks they forgot her birthday",
         "She burned the cake",
         "Tomás won't sign the contract",
         "The taxi is late"
@@ -75,7 +75,7 @@
     {
       "q": "How does Jhon Fredy explain Simón's 'Happy birthday'?",
       "options": [
-        "Simón says it to everybody, even an eighty year old man",
+        "Simón says it to everyone",
         "It is Simón's birthday",
         "Simón heard it on the radio",
         "Hernando taught him that morning"
@@ -105,7 +105,7 @@
     {
       "q": "What happens at ten past one?",
       "options": [
-        "Hernando gets a phone call that makes him serious",
+        "A call sobers Hernando",
         "The lights go out again",
         "Altamira arrives",
         "Simón flies away"
@@ -118,7 +118,7 @@
     {
       "q": "Where was the secret party plan hidden?",
       "options": [
-        "In the fridge, under the eggs",
+        "Fridge, beneath eggs",
         "In Simón's cage",
         "Under the counter",
         "In Mariana's notebook"
@@ -128,7 +128,7 @@
     {
       "q": "Why does everybody shout 'No' at Jhon Fredy?",
       "options": [
-        "He starts another long speech about the coffee machine",
+        "He starts another speech",
         "He wants to dance",
         "He eats the last cake",
         "He wants to sign the contract"
@@ -138,7 +138,7 @@
     {
       "q": "Why does the bench by the door matter?",
       "options": [
-        "Rosa used to drink her tinto there",
+        "Rosa sat there",
         "Hernando bought it",
         "Altamira wants it",
         "Vale was born there"

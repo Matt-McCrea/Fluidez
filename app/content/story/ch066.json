@@ -54,7 +54,7 @@
       "q": "What does Vale find in the boxes?",
       "options": [
         "A recipe for almojábanas",
-        "A picture Tomás made when he was six, kept by Rosa",
+        "A picture Tomás made",
         "Altamira's letter",
         "Joaquín's key"
       ],
@@ -65,7 +65,7 @@
       "options": [
         "To buy a new printer",
         "To pay Jhon Fredy",
-        "Because the money Rosa set aside for the rent is there, and they need paperwork to fight the fine",
+        "Rosa's rent money is there",
         "Because Altamira asked for it"
       ],
       "answer": 2
@@ -73,7 +73,7 @@
     {
       "q": "What does the bank want, in the end?",
       "options": [
-        "Three documents, and four more documents for each of them",
+        "Three documents, then more",
         "Only Tomás's passport",
         "A signature from Vale",
         "Nothing, the gerente fixes it"
@@ -94,7 +94,7 @@
       "q": "Why is the last document on the list a problem?",
       "options": [
         "It is in English",
-        "It is a phone bill, and the café has had no phone since 2014",
+        "There is no phone",
         "Altamira has it",
         "Simón ate it"
       ],
@@ -107,7 +107,7 @@
       "q": "Where did Simón learn to shout 'No sirve'?",
       "options": [
         "From the bank manager",
-        "From Jhon Fredy, shouting at the printer",
+        "Jhon Fredy shouting",
         "From Hernando's taxi radio",
         "From Rosa"
       ],

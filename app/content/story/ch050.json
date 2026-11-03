@@ -53,7 +53,7 @@
     {
       "q": "How does Tomás find out where the suitcase went?",
       "options": [
-        "He uses his old work skill and checks the passenger list",
+        "He checks the passenger list",
         "The employee searches for it",
         "Hernando calls the bus company",
         "Vale asks the driver"
@@ -63,7 +63,7 @@
     {
       "q": "What happened to the suitcase?",
       "options": [
-        "A passenger in seat fourteen, with the same suitcase, got off with it at Puerto Triunfo",
+        "A passenger took it",
         "It fell off the bus",
         "It went back to Bogotá",
         "Altamira took it"
@@ -73,7 +73,7 @@
     {
       "q": "Why does Vale call herself a \"very fierce employee\"?",
       "options": [
-        "As a joke, to say Tomás already has a job and won't work at the bus terminal",
+        "A joke, as Tomás has a job",
         "She is angry with Tomás",
         "She wants a higher salary",
         "She works for the bus company"
@@ -83,7 +83,7 @@
     {
       "q": "What makes Tomás worry at the end?",
       "options": [
-        "Vale's mother wants to talk to him alone, before the party",
+        "Vale's mother wants him alone",
         "The suitcase will arrive late",
         "The metro is closed",
         "Altamira has a hotel in Medellín"

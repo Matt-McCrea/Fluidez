@@ -49,7 +49,7 @@
     {
       "q": "What makes Vale climb onto a chair?",
       "options": [
-        "A real mouse runs across the room",
+        "A real mouse runs past her",
         "The sensor starts beeping",
         "The beam cracks open",
         "Simón bites her"
@@ -59,7 +59,7 @@
     {
       "q": "How does Tomás discover that Altamira's report was copied?",
       "options": [
-        "He searches one sentence online and finds it in a 2019 report about another house",
+        "He finds a sentence in a 2019 report",
         "Clemencia tells him",
         "Hernando recognises the engineer's handwriting",
         "Mariana sends him the original"
@@ -69,7 +69,7 @@
     {
       "q": "Why is the description of brick walls and metal windows a giveaway?",
       "options": [
-        "The café has neither brick nor metal: its walls are adobe",
+        "The café's walls are adobe",
         "Brick is illegal in La Candelaria",
         "The café has no windows",
         "Metal windows are too modern for a report"
@@ -101,7 +101,7 @@
     {
       "q": "How strong were the vibrations when the machines started, compared with what is normal?",
       "options": [
-        "Twelve millimetres per second, when under three is normal",
+        "Twelve millimetres a second",
         "Three, when twelve is normal",
         "Exactly the normal level",
         "The sensor did not record anything"

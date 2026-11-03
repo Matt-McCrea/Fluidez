@@ -45,7 +45,7 @@
     {
       "q": "What does Tomás want to say about the fish?",
       "options": [
-        "That he doesn't recommend it",
+        "He doesn't recommend it",
         "That it is delicious",
         "That it is free",
         "That Vale made it"
@@ -55,7 +55,7 @@
     {
       "q": "Why does the blogger think Tomás doesn't like the soup?",
       "options": [
-        "He said la (for a feminine thing, like la sopa) when he meant el pescado",
+        "He said la instead of el",
         "He said the soup was cold",
         "He took the soup away",
         "He gave her fish instead"
@@ -65,7 +65,7 @@
     {
       "q": "What does the blogger do after the misunderstanding?",
       "options": [
-        "She writes in her notebook and eats all the soup without speaking",
+        "She writes and eats all",
         "She leaves without eating",
         "She asks to see Vale",
         "She orders a bandeja"
@@ -106,7 +106,7 @@
     {
       "q": "What is left on the blogger's table?",
       "options": [
-        "An empty plate and a 10,000 peso tip",
+        "An empty plate and a tip",
         "Her notebook",
         "Half the soup",
         "A business card"
@@ -116,7 +116,7 @@
     {
       "q": "What does Hernando want with his bandeja?",
       "options": [
-        "Lots of meat, rice and beans, two plantains and no salad",
+        "Meat and no salad",
         "Only salad",
         "Fish and rice",
         "Two eggs and cheese"

@@ -72,7 +72,7 @@
       "q": "What does the lawyers' letter say?",
       "options": [
         "Altamira wants to buy Tomás's half",
-        "The lease on the café ends in six months, and the owners want the space vacant",
+        "The lease ends in six months",
         "The café owes ten years of rent",
         "Joaquín has died"
       ],
@@ -82,7 +82,7 @@
       "q": "What bothers Mariana most about the letter?",
       "options": [
         "It is written badly",
-        "It never says who the owners are",
+        "It doesn't name the owners",
         "It arrived late",
         "It is addressed to Rosa"
       ],
@@ -124,7 +124,7 @@
       "q": "Who signs the letter?",
       "options": [
         "Ricardo Altamira",
-        "Restrepo y Asociados, lawyers",
+        "The lawyers",
         "Joaquín Herrera",
         "The deeds office"
       ],

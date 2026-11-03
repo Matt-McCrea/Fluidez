@@ -49,7 +49,7 @@
     {
       "q": "Why do Tomás and Vale talk only to Jhon Fredy?",
       "options": [
-        "They are still angry after yesterday's argument",
+        "They are still angry",
         "Jhon Fredy is the new manager",
         "Vale has lost her voice",
         "Tomás is practising his Spanish"
@@ -59,7 +59,7 @@
     {
       "q": "What is the order?",
       "options": [
-        "A cake for a wedding of a hundred and twenty people",
+        "A wedding cake for 120",
         "Bread for a hotel",
         "Coffee for a taxi rank",
         "A birthday cake for Hernando"
@@ -69,7 +69,7 @@
     {
       "q": "What makes Hernando ask them to stop?",
       "options": [
-        "They shout about the price in front of a customer's baby",
+        "They shout in front of a baby",
         "Simón starts to sing",
         "The customer leaves",
         "Vale burns the bread"
@@ -89,7 +89,7 @@
     {
       "q": "Why does Vale ask Tomás to come that night?",
       "options": [
-        "She can't make the cake alone, and he must write the contract too",
+        "She can't bake alone",
         "She wants to go dancing",
         "Hernando is ill",
         "The café needs painting"
@@ -102,7 +102,7 @@
     {
       "q": "Why does Hernando say he is 'married to his taxi'?",
       "options": [
-        "He drove a taxi for forty years",
+        "He drove a taxi for decades",
         "He sleeps in his taxi",
         "His wife drives a taxi",
         "He wants to buy a taxi"

@@ -89,7 +89,7 @@
     {
       "q": "What are the terms of Vale's deal?",
       "options": [
-        "If the café takes two million pesos in 30 days, it stays open a year; if not, Tomás sells",
+        "Earn two million in 30 days or sell",
         "Tomás pays Vale two million pesos",
         "Tomás works 30 days and then goes home",
         "Hernando buys the café"
@@ -99,7 +99,7 @@
     {
       "q": "What is the one thing Tomás admits he likes?",
       "options": [
-        "Vale's buñuelos",
+        "Buñuelos",
         "Simón",
         "Chess",
         "Mr Ruiz"
@@ -109,7 +109,7 @@
     {
       "q": "Does Tomás actually agree to the bet?",
       "options": [
-        "Not really: Hernando and Simón say yes for him",
+        "No, two friends say yes",
         "Yes, immediately",
         "No, and Vale cancels it",
         "Yes, but only for a year"

@@ -4,10 +4,10 @@
 // scores, and no option may stand out by holding a name or a "(polite)" tag that the others lack.
 //
 // What the app builds is held to that. What a person wrote is measured beside it: the picks in a lesson script are
-// held to it too (the app serves the ones that do not give themselves away where it chooses), but the chapter
-// questions are not near chance (the right option is the longest 68 to 83% of the time by band, against 25%;
-// 04-vocabulary-reading R5). That is authored, it needs a person to write the wrong options again, and the gate
-// says where. The ceilings at the bottom only keep it from getting worse until then.
+// held to it too (the app serves the ones that do not give themselves away where it chooses). The chapter
+// questions were not near chance (the right option was the longest 68 to 83% of the time by band, against 25%;
+// 04-vocabulary-reading R5) until the right answers were shortened on 3 Nov 2026 (now 25 to 31%). Their wrong
+// options are still as written, and the gate holds the chapter questions near chance as an error.
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { beforeAll, describe, expect, it } from 'vitest';
@@ -110,8 +110,8 @@ describe('choice cards a person wrote', () => {
       }
       tally.set(band.get(ch.unit) ?? '?', t);
     }
-    // measured on 2 Nov 2026: A1 0.68, A2 0.73, B1 0.79, B2 0.83, C1 0.83; a ceiling only comes down when the questions are rewritten
-    const CEILING: Record<string, number> = { A1: 0.7, A2: 0.75, B1: 0.81, B2: 0.85, C1: 0.85 };
+    // measured on 3 Nov 2026: A1 0.31, A2 0.25, B1 0.28, B2 0.28, C1 0.26 (chance 0.25); shortest 0.12 to 0.17
+    const CEILING: Record<string, number> = { A1: 0.33, A2: 0.33, B1: 0.33, B2: 0.33, C1: 0.33 };
     for (const [b, ceiling] of Object.entries(CEILING)) {
       const t = tally.get(b)!;
       expect(t.n, b).toBeGreaterThan(200);

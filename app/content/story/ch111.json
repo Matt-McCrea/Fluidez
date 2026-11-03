@@ -65,7 +65,7 @@
     {
       "q": "What happened to the café at the committee meeting?",
       "options": [
-        "It was discussed for two minutes and put off until January",
+        "It was put off to January",
         "It was protected",
         "It was sold to Altamira",
         "Mariana was not allowed in"
@@ -75,7 +75,7 @@
     {
       "q": "Why does Tomás's first call go wrong?",
       "options": [
-        "He dials a wrong number and reaches a bakery",
+        "He reaches a bakery",
         "The presenter hangs up",
         "Nobody answers",
         "He forgets his name"
@@ -85,7 +85,7 @@
     {
       "q": "Why is the presenter confused about the number?",
       "options": [
-        "Simón shouts \"wrong number\" in the background",
+        "Simón shouts 'wrong number' nearby",
         "Tomás gives him two numbers",
         "Vale gives the number of a bakery",
         "The line goes dead"
@@ -95,7 +95,7 @@
     {
       "q": "¿Qué pasa mañana a las cinco de la mañana?",
       "options": [
-        "El mensaje sale para todos los barcos",
+        "El mensaje sale a todos los barcos",
         "Tomás viaja a Santa Marta",
         "La doctora visita a Hernando",
         "Mariana publica su artículo"
@@ -105,7 +105,7 @@
     {
       "q": "What does Hernando decide to do at the end?",
       "options": [
-        "Listen to the next episode at the café, not from his bed",
+        "Listen at the café",
         "Stay in bed",
         "Go to Taganga",
         "Buy a new phone battery"
@@ -117,7 +117,7 @@
     {
       "q": "What did someone write in the Taganga forum?",
       "options": [
-        "That Herrera rings a bell, and to ask on the beach",
+        "That Herrera sounds familiar",
         "That Joaquín is dead",
         "That the man has moved",
         "That they should call the radio"

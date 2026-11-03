@@ -168,7 +168,7 @@
       "q": "Why won't Leonor give the fifth cup?",
       "options": [
         "Because the trumpet was bad",
-        "Because she owed it to Rosa, and that debt isn't hers to close",
+        "She owed it to Rosa",
         "Because the coffee was cold",
         "Because Tomás measured his words"
       ],
@@ -188,7 +188,7 @@
       "q": "¿Qué escribe Tomás en el cuaderno de la segunda parte?",
       "options": [
         "«Me voy a Toronto»",
-        "«Domingo. Catorce grados. Cuatro tazas. Me quedo»",
+        "«Domingo. Me quedo»",
         "«Tres tazas»",
         "«Qué pena con usted»"
       ],
@@ -201,7 +201,7 @@
       "q": "Why didn't Altamira put Tomás's reply on the hotel screen?",
       "options": [
         "Leonor told him not to",
-        "His marketing people said it was useless because it didn't sell",
+        "It did not sell",
         "The screen was broken",
         "Camila refused"
       ],
@@ -210,7 +210,7 @@
     {
       "q": "When did Tomás send his answer to Toronto?",
       "options": [
-        "At a quarter past five in the morning, before Vale asked",
+        "At 5:15 in the morning",
         "After Simón spoke",
         "On Thursday night",
         "He never answered"

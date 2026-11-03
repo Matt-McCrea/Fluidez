@@ -113,7 +113,7 @@
     {
       "q": "Why is Yesid so cold when he arrives?",
       "options": [
-        "He packed for the beach and nobody warned him about Bogotá",
+        "He packed for the beach",
         "His bus had no heating",
         "He lost his suitcase",
         "He gave his jacket to Tomás"
@@ -123,7 +123,7 @@
     {
       "q": "Why does Vale call Yesid's coffee a dessert?",
       "options": [
-        "He puts five spoonfuls of sugar in it",
+        "He adds five spoonfuls of sugar",
         "He eats it with a buñuelo",
         "He asks for milk and cream",
         "He drinks it cold"
@@ -133,7 +133,7 @@
     {
       "q": "What does the photo from the blue notebook reveal?",
       "options": [
-        "In 2008 Joaquín bought a ticket to Bogotá and never used it",
+        "Joaquín had an unused ticket",
         "Joaquín wrote to Rosa every year",
         "Joaquín visited Bogotá in 2009",
         "Joaquín sold the café"
@@ -143,7 +143,7 @@
     {
       "q": "¿Qué piensa Hernando de la teoría de Yesid?",
       "options": [
-        "Que Joaquín tal vez habría tenido miedo otra vez",
+        "Que tal vez habría tenido miedo",
         "Que Rosa nunca escribió la carta",
         "Que Joaquín habría vendido el café",
         "Que Yesid tiene toda la razón"
@@ -153,7 +153,7 @@
     {
       "q": "What is the problem at the end?",
       "options": [
-        "Duarte, who has the name they need, has switched off his phone",
+        "Duarte switched off his phone",
         "The judge has cancelled Monday",
         "Mariana has lost the letter",
         "Yesid wants to go home"

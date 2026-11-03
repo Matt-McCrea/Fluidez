@@ -47,7 +47,7 @@
     {
       "q": "What does Vale mean by \"La torta, sí. Tú, todavía no.\"",
       "options": [
-        "She likes his menu, but she hasn't forgiven him yet",
+        "She likes his menu but not him",
         "She doesn't like cake",
         "She wants Tomás to bake the cake",
         "She is going back to Medellín"
@@ -57,7 +57,7 @@
     {
       "q": "Why is Hernando excited about the food blogger?",
       "options": [
-        "Wherever she eats, there is a queue the next day",
+        "A queue the next day",
         "She is his granddaughter",
         "She wants to buy the café",
         "She works for Altamira"
@@ -99,7 +99,7 @@
     {
       "q": "What does Vale recommend to Hernando?",
       "options": [
-        "Tinto, like every day",
+        "A tinto",
         "The ajiaco",
         "Vale's cake",
         "A fruit juice"

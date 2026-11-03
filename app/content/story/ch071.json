@@ -62,7 +62,7 @@
       "q": "Why does Gloria show Tomás the flat?",
       "options": [
         "She wants his room for her cat",
-        "She thinks the owner of a café should move into a proper flat",
+        "She thinks he needs a real flat",
         "Altamira asked her to",
         "The shower in her house is broken"
       ],
@@ -72,7 +72,7 @@
       "q": "What does Vale's mother's postcard say?",
       "options": [
         "That she is coming to Bogotá",
-        "That Vale's room is ready, she'll pay for the move, and Bogotá is dangerous",
+        "That Vale's room is all ready",
         "That Rosa was her best friend",
         "That Vale must sell the café"
       ],
@@ -83,7 +83,7 @@
       "options": [
         "The flat is very noisy",
         "The flat is in estrato two",
-        "Grupo Altamira built the complex, and a modern café will open opposite",
+        "Altamira built the complex",
         "Hernando lives in the same building"
       ],
       "answer": 2
@@ -115,7 +115,7 @@
       "q": "How does Vale describe La Candelaria?",
       "options": [
         "Modern and quiet",
-        "Old, noisy and dangerous, and the only place she wants",
+        "Old, loud and risky",
         "Expensive and far away",
         "Bright and spacious"
       ],

@@ -122,7 +122,7 @@
       "q": "Why was Camila fired?",
       "options": [
         "She stole a folder",
-        "For the joke against the hotel she put on the screen",
+        "For the screen joke",
         "She was late every day",
         "She talked to Mariana"
       ],
@@ -132,7 +132,7 @@
       "q": "What does the folder from the hotel reveal?",
       "options": [
         "The hotel is bankrupt",
-        "Guests pay an extra charge for the view of the café's patio",
+        "Guests pay for the view",
         "Altamira is selling the hotel",
         "The terrace is illegal"
       ],
@@ -142,7 +142,7 @@
       "q": "Where does the money for Jhon Fredy's tuition come from?",
       "options": [
         "Tomás's savings",
-        "Tips that tourists left 'for the joke man' in a tin box",
+        "Tips from tourists",
         "Altamira's cappuccino",
         "A loan from Gloria"
       ],
@@ -165,7 +165,7 @@
       "q": "What did the hotel screen say that morning?",
       "options": [
         "Another joke",
-        "Only 'Bienvenidos', with no joke",
+        "Only 'Bienvenidos'",
         "Camila's apology",
         "Nothing, it was off"
       ],

@@ -104,7 +104,7 @@
       "q": "Why does the whole church laugh?",
       "options": [
         "The priest tells a joke",
-        "Tomás drops the pages and Simón shouts '¡Qué embarrada!'",
+        "Tomás drops the pages",
         "Hernando wanted a clown",
         "Gloria trips"
       ],
@@ -113,7 +113,7 @@
     {
       "q": "What is Hernando's last line to Rosa about?",
       "options": [
-        "Finally telling her what he wrote 112 times without saying it",
+        "Telling her what he wrote",
         "Asking her for a free coffee",
         "Saying goodbye to the café",
         "Apologising for a joke"
@@ -124,7 +124,7 @@
       "q": "¿Qué le ofrece Altamira al café?",
       "options": [
         "Comprar la casa",
-        "El parqueadero del hotel para los taxis",
+        "Un parqueadero",
         "Un trabajo para Tomás",
         "Flores caras"
       ],
@@ -147,7 +147,7 @@
       "q": "What does Simón do when the taxis honk outside the café?",
       "options": [
         "He hides",
-        "He answers with a perfect taxi horn",
+        "A perfect taxi horn",
         "He says 'mijo'",
         "He flies to the hotel"
       ],

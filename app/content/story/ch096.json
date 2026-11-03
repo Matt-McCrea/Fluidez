@@ -81,7 +81,7 @@
     {
       "q": "What problem does Tomás find in Vale's budget?",
       "options": [
-        "The café loses money six months of the year",
+        "The café loses money half the year",
         "The café pays too little tax",
         "Jhon Fredy earns more than Vale",
         "The rent is going up"
@@ -92,7 +92,7 @@
       "q": "Why is Vale against taking out another loan?",
       "options": [
         "The bank already said no",
-        "Rosa spent years paying off Joaquín's debt, and debts in this family last a long time",
+        "Debts last in this family",
         "Hernando works at the bank",
         "Loans are illegal for cafés"
       ],
@@ -102,7 +102,7 @@
       "q": "What does Hernando want in return for his money?",
       "options": [
         "Half of the building",
-        "His share of the profits, paid in coffees",
+        "His share, paid in coffees",
         "A table with his name on it",
         "Nothing at all, it is a gift"
       ],
@@ -111,7 +111,7 @@
     {
       "q": "¿Por qué el plan de Vale puede no valer nada?",
       "options": [
-        "Porque los herederos de Joaquín pueden querer vender",
+        "Quizá los herederos vendan",
         "Porque el horno es nuevo",
         "Porque Hernando no tiene plata",
         "Porque Simón se comió el plan"
@@ -145,7 +145,7 @@
       "q": "What did Hernando do that was 'a record'?",
       "options": [
         "He paid for his coffee",
-        "He said nothing for a whole minute",
+        "He said nothing",
         "He laughed at Simón",
         "He arrived on time"
       ],

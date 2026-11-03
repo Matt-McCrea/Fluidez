@@ -49,7 +49,7 @@
     {
       "q": "Why does Montoya want to record with his own microphone?",
       "options": [
-        "He'd rather do that than have them say later that something was cut",
+        "So no one says it was cut",
         "His microphone is better",
         "He doesn't trust Simón",
         "Mariana's recorder is broken"
@@ -59,7 +59,7 @@
     {
       "q": "What makes Montoya ask them to switch off the recording?",
       "options": [
-        "Simón asks him, in Rosa's voice, if he has eaten",
+        "Simón asks if he has eaten",
         "Hernando insults him",
         "Tomás mentions the Fiscalía",
         "His phone rings"
@@ -79,7 +79,7 @@
     {
       "q": "¿Qué consejo les da Montoya antes de irse?",
       "options": [
-        "Que pidan un arquitecto del Instituto antes del quince",
+        "Que pidan un arquitecto",
         "Que vendan la casa rápido",
         "Que no publiquen el episodio",
         "Que hablen con el concejal"

@@ -73,7 +73,7 @@
     {
       "q": "Why didn't Tomás sleep well?",
       "options": [
-        "He shares a room with eleven men, and one of them snores all night",
+        "One roommate snores all night",
         "He worked all night in the café",
         "He read the letter all night",
         "Simón woke him up"
@@ -115,7 +115,7 @@
     {
       "q": "What can Tomás see from the balcony besides the cathedral?",
       "options": [
-        "Rosa's café on the corner",
+        "Rosa's café",
         "The hostel",
         "Hernando's house",
         "The market"

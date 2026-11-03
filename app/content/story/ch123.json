@@ -65,7 +65,7 @@
     {
       "q": "What does Tomás promise Yesid?",
       "options": [
-        "Only the truth, even if he doesn't like it",
+        "Only the truth, even if unwelcome",
         "Half the money from the building",
         "A job in the café",
         "A new boat"
@@ -75,7 +75,7 @@
     {
       "q": "Why did Yesid's uncle sell the copy of the ID card?",
       "options": [
-        "He was trapped in debt and needed the money",
+        "He was in debt and needed the money",
         "Duarte threatened him",
         "He wanted to hurt Rosa's family",
         "He didn't know what it was for"
@@ -85,7 +85,7 @@
     {
       "q": "What was Joaquín's last wish, according to Yesid?",
       "options": [
-        "To sit at a table with Rosa, have a coffee and say nothing",
+        "To have coffee with Rosa",
         "To own the house in Bogotá",
         "To be buried in Bogotá",
         "To buy his own boat"
@@ -95,7 +95,7 @@
     {
       "q": "¿Qué le impide a Yesid ir a Bogotá?",
       "options": [
-        "Su jefe no concede vacaciones en temporada alta",
+        "Su jefe no da permiso",
         "Su abuela no quiere",
         "No tiene pasaporte",
         "Le tiene miedo al frío"
@@ -107,7 +107,7 @@
     {
       "q": "What went wrong under the water?",
       "options": [
-        "Tomás made the 'out of air' sign by mistake",
+        "Tomás gave a false alarm",
         "Tomás lost his mask",
         "Vale saw a shark",
         "Mariana fell off the boat"
@@ -117,7 +117,7 @@
     {
       "q": "What do Tomás and Yesid exchange?",
       "options": [
-        "An old diving mask and Tomás's Toronto cap",
+        "A mask and a cap",
         "Phone numbers",
         "Two photos of Joaquín",
         "Two beers"
@@ -127,7 +127,7 @@
     {
       "q": "What does Mariana say about Altamira?",
       "options": [
-        "They have a trick for everything, even the dead sign for them",
+        "They always have a trick",
         "They always lose in the end",
         "They are afraid of journalists",
         "They pay their debts on time"

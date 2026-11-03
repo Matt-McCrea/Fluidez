@@ -65,7 +65,7 @@
     {
       "q": "Why are the waves so dangerous today?",
       "options": [
-        "The wind is coming from the north-west, and with that wind every wave is a wall",
+        "Every wave is a wall in this wind",
         "Yesid's boss needs the boat",
         "There is a storm coming from Bogotá",
         "The turtles are laying eggs"
@@ -75,7 +75,7 @@
     {
       "q": "What did Joaquín say a palm tree is like?",
       "options": [
-        "The people of the coast: the wind bends it, but doesn't break it",
+        "The people of the coast",
         "A tourist: it never moves",
         "Bogotá: tall and cold",
         "A boat: it needs the wind"
@@ -85,7 +85,7 @@
     {
       "q": "Why did Joaquín go up to the sierra?",
       "options": [
-        "When he missed Bogotá, he looked for the fog and the cold",
+        "He missed Bogotá's cold",
         "To sell fish",
         "To visit his sister",
         "To look after the turtles"
@@ -95,7 +95,7 @@
     {
       "q": "¿Qué hacía Joaquín con las tortugas?",
       "options": [
-        "Las cuidaba de noche, con una linterna",
+        "Las cuidaba de noche",
         "Las vendía en el mercado",
         "Las llevaba a la sierra",
         "No le gustaban"
@@ -105,7 +105,7 @@
     {
       "q": "What does Yesid reveal at the end?",
       "options": [
-        "Two years ago a man from Bogotá asked for a copy of Joaquín's ID, and his uncle sold it to him",
+        "His uncle sold Joaquín's ID",
         "His grandmother has sold the letter",
         "The boat is broken",
         "He works for Altamira"

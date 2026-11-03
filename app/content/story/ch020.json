@@ -45,7 +45,7 @@
     {
       "q": "What does Tomás do with his suitcase?",
       "options": [
-        "He puts it under the bed: he is not leaving",
+        "It goes under the bed",
         "He packs it for Toronto",
         "He gives it to Altamira",
         "He takes it to the café"
@@ -65,7 +65,7 @@
     {
       "q": "Why is it strange that Tomás is happy?",
       "options": [
-        "He has lost the bet, so now he has to keep the café open for a year",
+        "He lost the bet and must stay",
         "He has sold the café",
         "Vale is leaving",
         "He has won a trip to the coast"

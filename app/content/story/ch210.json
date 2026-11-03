@@ -182,7 +182,7 @@
       "q": "Why does Nelly laugh at the way Tomás greets her?",
       "options": [
         "He calls her by the wrong name",
-        "He sounds so formal that it feels as if he is about to charge her",
+        "So formal he'd charge her",
         "He speaks to her in English",
         "He forgets to bring a present"
       ],
@@ -193,7 +193,7 @@
       "options": [
         "Simón eats it",
         "It melts in the car",
-        "Jhon Fredy drops it and it ends up with only one layer",
+        "Jhon Fredy drops it",
         "Nelly gives it to the neighbours"
       ],
       "answer": 2
@@ -202,7 +202,7 @@
       "q": "What did Joaquín do every Carnaval?",
       "options": [
         "He danced cumbia in the street",
-        "He sat in the patio and sang a bambuco on his own",
+        "He sang a bambuco alone",
         "He went fishing in Taganga",
         "He wrote letters to Rosa"
       ],
@@ -212,7 +212,7 @@
       "q": "¿Qué le pide Eulalia a Tomás?",
       "options": [
         "Que baile cumbia en la comparsa",
-        "Que cante el bambuco de Joaquín delante del barrio",
+        "Que cante el bambuco ante el barrio",
         "Que lea un poema de García Márquez",
         "Que se quite el suéter"
       ],
@@ -225,7 +225,7 @@
       "q": "What is the song Joaquín wrote about?",
       "options": [
         "The sea at Taganga",
-        "A street in La Candelaria, a green door and a sister who made the best coffee in Bogotá",
+        "A street and his sister",
         "Carnaval in Barranquilla",
         "His wife Eulalia"
       ],

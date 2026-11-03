@@ -67,7 +67,7 @@
     {
       "q": "According to the report, what caused the crack in the beam?",
       "options": [
-        "The works on the plot next door, 1.2 metres from the house",
+        "Works on the next plot",
         "The age of the wood",
         "Hernando leaning on the wall",
         "An earthquake in 1923"
@@ -77,7 +77,7 @@
     {
       "q": "Why does Clemencia measure everything so carefully?",
       "options": [
-        "Her grandmother's adobe house was knocked down and nobody measured or recorded it",
+        "Her grandmother's house was knocked down",
         "The Institute pays her by the measurement",
         "She does not trust Tomás",
         "She wants to work for Altamira"
@@ -87,7 +87,7 @@
     {
       "q": "¿Qué tienen que escribir ahora Tomás y sus amigos?",
       "options": [
-        "Una queja formal a la Alcaldía",
+        "Una queja para la Alcaldía",
         "Un cuento sobre un lobo",
         "Un informe técnico",
         "Una carta a Toronto"
@@ -99,7 +99,7 @@
     {
       "q": "What happens to the paper crown Jhon Fredy puts on Simón?",
       "options": [
-        "Simón throws it on the floor in four seconds",
+        "Simón throws it away",
         "Simón wears it all morning",
         "Hernando keeps it",
         "Clemencia measures it"
@@ -109,7 +109,7 @@
     {
       "q": "How does Clemencia answer Hernando's story of the wolf?",
       "options": [
-        "The wolf only blew, but these machines weigh more than a bus",
+        "Machines weigh more than a bus",
         "She laughs for the first time",
         "She agrees that adobe is like brick",
         "She says wolves don't exist"
@@ -119,7 +119,7 @@
     {
       "q": "What does Tomás say snow is like?",
       "options": [
-        "Bogotá's cold, but white and on the ground",
+        "Cold, but white",
         "A cloud that falls",
         "Flour on the floor",
         "Cold rain"

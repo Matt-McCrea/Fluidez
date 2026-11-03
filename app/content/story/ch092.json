@@ -132,7 +132,7 @@
       "q": "Why did Joaquín want to sell the building?",
       "options": [
         "He wanted to move to Medellín",
-        "He had borrowed money from dangerous people and could not pay it back",
+        "He owed dangerous people",
         "Doña Carmen offered him a lot of money",
         "Rosa wanted to open a bigger café"
       ],
@@ -142,7 +142,7 @@
       "q": "Why is Simón's \"¡No te lo vas a creer!\" funny at that moment?",
       "options": [
         "Because nobody had said anything surprising",
-        "Because he says it while standing on the letter they can hardly believe",
+        "Because he says it standing on the letter",
         "Because Vale says it first",
         "Because he says it in English"
       ],
@@ -151,7 +151,7 @@
     {
       "q": "¿Qué trae Vale de la cocina?",
       "options": [
-        "La chaqueta vieja de Joaquín",
+        "La chaqueta de Joaquín",
         "Una foto de Hernando",
         "Otra caja de cartas",
         "Un tinto para Simón"

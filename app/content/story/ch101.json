@@ -120,7 +120,7 @@
       "q": "Why is losing the phone so painful for Tomás, apart from the signatures?",
       "options": [
         "It was a present from Vale",
-        "It had a voice message from Rosa on it",
+        "A voice message from Rosa",
         "It was brand new",
         "Altamira's number was in it"
       ],
@@ -141,7 +141,7 @@
       "options": [
         "Close the café for three weeks",
         "Borrow a machine from doña Gloria",
-        "Sell three hundred mango pastries instead of coffee",
+        "Sell 300 mango pastries",
         "Go to the police station"
       ],
       "answer": 2
@@ -162,7 +162,7 @@
     {
       "q": "What does Hernando wonder about the thief?",
       "options": [
-        "Whether he was an ordinary thief or one of Altamira's",
+        "If he was Altamira's",
         "Whether he was a student",
         "Whether he was from Toronto",
         "Whether he would return the phone"

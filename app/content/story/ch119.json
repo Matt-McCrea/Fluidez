@@ -81,7 +81,7 @@
     {
       "q": "Why does Tomás finally agree to leave the café?",
       "options": [
-        "Hernando promised Rosa he would look after the café if she was ever gone, and he says Tomás can go",
+        "Hernando will look after the café",
         "The committee cancelled the meeting",
         "Vale threatens to go alone",
         "Mariana's boss pays for the trip"
@@ -92,7 +92,7 @@
       "q": "What is the challenge for Mariana in Santa Marta?",
       "options": [
         "The heat",
-        "The taxi driver talks faster than she does",
+        "The driver talks faster",
         "The mosquitoes",
         "The hotel has no hot water"
       ],
@@ -111,7 +111,7 @@
     {
       "q": "Why is the news that Joaquín died in 2010 so important?",
       "options": [
-        "The lease with Altamira was signed two years ago in Joaquín's name, so the signature must be false",
+        "The lease signature must be false",
         "It means Tomás inherits the boat",
         "It means Yesid can sell the café",
         "It means Rosa's letter was never read"
@@ -153,7 +153,7 @@
     {
       "q": "What does the photo Yesid takes out of his pocket show?",
       "options": [
-        "A man on a boat with the same nose as Tomás",
+        "A man on a boat with Tomás's nose",
         "Rosa as a young woman",
         "The café in 1979",
         "Yesid's boat"

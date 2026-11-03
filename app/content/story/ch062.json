@@ -61,7 +61,7 @@
     {
       "q": "What does Vale ask Tomás to write instead of 'three hundred and sixty five days'?",
       "options": [
-        "Not a number, but what is true",
+        "What is true",
         "Two years",
         "Ten years",
         "Until the sale"
@@ -71,7 +71,7 @@
     {
       "q": "What does Altamira hint at on the phone?",
       "options": [
-        "He has friends in the government and the permits office",
+        "He has friends in power",
         "He wants to buy the mixer",
         "He is coming to the wedding",
         "He will give up the block"
@@ -81,7 +81,7 @@
     {
       "q": "Why does Vale stay silent but understand?",
       "options": [
-        "Tomás tears up Altamira's letter in front of her",
+        "He tears up the letter",
         "Tomás signs the contract",
         "Hernando explains everything",
         "Simón tells her"
@@ -101,7 +101,7 @@
     {
       "q": "What does Tomás not know at the end?",
       "options": [
-        "That Saturday is Vale's birthday",
+        "Vale's birthday",
         "Where the café is",
         "How to make coffee",
         "Who Altamira is"
@@ -114,7 +114,7 @@
     {
       "q": "Why does Hernando say he can fix the mixer?",
       "options": [
-        "He was a taxi driver for forty years, and a taxi driver is half a mechanic",
+        "He drove a taxi 40 years",
         "He studied engineering",
         "Rosa taught him",
         "He has a new one at home"
@@ -134,7 +134,7 @@
     {
       "q": "How does Tomás end up with cream on his face?",
       "options": [
-        "The mixer comes back to life",
+        "The mixer starts again",
         "Vale throws it at him",
         "Simón drops it",
         "Hernando slips"

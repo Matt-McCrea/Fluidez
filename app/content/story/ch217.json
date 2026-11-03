@@ -94,7 +94,7 @@
       "q": "Why can't the cooperative expel Leonor?",
       "options": [
         "Because she is a journalist",
-        "Because only members can be expelled, and she is a customer",
+        "She is a customer, not a member",
         "Because nobody voted",
         "Because she has already left Bogotá"
       ],
@@ -114,7 +114,7 @@
       "q": "What does Tomás realise as he looks at the letters behind the glass?",
       "options": [
         "That one of them is missing",
-        "That the café has become a fortress nobody can really enter",
+        "That the café is a fortress",
         "That Leonor wrote one of them",
         "That the glass is broken"
       ],
@@ -124,7 +124,7 @@
       "q": "¿Qué hace Gloria con el sombrero de Hernando?",
       "options": [
         "Lo tira a la basura",
-        "Lo cuelga en la pared, al lado de la puerta",
+        "Lo cuelga junto a la puerta",
         "Se lo da a Leonor",
         "Lo pone otra vez en la silla"
       ],
@@ -137,7 +137,7 @@
       "q": "Why does Tomás put on his grey suit?",
       "options": [
         "For a job interview",
-        "Because he thinks it makes him sound more serious when he writes",
+        "To sound more serious",
         "Because it is cold",
         "For Hernando's anniversary"
       ],
@@ -147,7 +147,7 @@
       "q": "Where does Tomás put the letters after taking them down?",
       "options": [
         "In a box in the cellar",
-        "In a big notebook on the window table, so people can turn the pages",
+        "In a big notebook",
         "In the newspaper",
         "In Gloria's apron"
       ],

@@ -57,7 +57,7 @@
     {
       "q": "What does it mean that Vale doesn't wipe anything off the board?",
       "options": [
-        "She is happy to have dinner with Tomás",
+        "She'll eat with him",
         "She hasn't seen the board",
         "She is angry with Tomás",
         "She doesn't eat dinner"
@@ -67,7 +67,7 @@
     {
       "q": "¿Qué hace Tomás todos los jueves a las ocho?",
       "options": [
-        "Entra al cuarto de la harina y cierra la puerta",
+        "Se encierra en el cuarto",
         "Juega ajedrez con Hernando",
         "Hace las cuentas con Vale"
       ],
@@ -99,7 +99,7 @@
     {
       "q": "Why does Vale never have dinner?",
       "options": [
-        "When she gets home, she goes to bed and falls asleep",
+        "She falls asleep at home",
         "She eats bread all day",
         "She has dinner at the café",
         "She has lunch at nine"

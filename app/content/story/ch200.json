@@ -96,7 +96,7 @@
       "q": "Why does Gloria want to open the café as usual?",
       "options": [
         "She needs the money",
-        "To keep up appearances: in this neighbourhood an old man dying is an everyday thing",
+        "To keep up a front",
         "Hernando asked her to",
         "She does not know yet"
       ],
@@ -106,7 +106,7 @@
       "q": "What makes Gloria laugh through her tears?",
       "options": [
         "Jhon Fredy's hug",
-        "Simón asking for his coffee in Hernando's voice",
+        "Simón copying Hernando",
         "A joke on the chalkboard",
         "Vale's message"
       ],
@@ -127,7 +127,7 @@
       "options": [
         "Burn it",
         "Send it to Begoña unread",
-        "Read the ending aloud at the funeral, before anyone else",
+        "Read the ending aloud",
         "Keep it secret"
       ],
       "answer": 2
@@ -139,7 +139,7 @@
       "q": "What was on top of the last chapter under Hernando's pillow?",
       "options": [
         "A photo of Rosa",
-        "A note saying he knew how it ends",
+        "A note about the end",
         "His taxi licence",
         "A chess piece"
       ],
@@ -148,7 +148,7 @@
     {
       "q": "What does Tomás write on the chalkboard?",
       "options": [
-        "Closed for mourning, the joke man has left us",
+        "Closed in mourning",
         "Back tomorrow",
         "Rest in peace, Rosa",
         "Nothing at all"

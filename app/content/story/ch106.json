@@ -77,7 +77,7 @@
     {
       "q": "Why does everyone in the café give Hernando advice?",
       "options": [
-        "Doña Gloria told the whole neighbourhood",
+        "Doña Gloria told everybody",
         "Vale put a notice in the window",
         "Mariana wrote about it",
         "The doctor called them"
@@ -87,7 +87,7 @@
     {
       "q": "Why does Hernando hear the alarm every ten minutes?",
       "options": [
-        "Simón learnt the sound of Tomás's phone alarm",
+        "Simón imitates it",
         "Vale set ten alarms",
         "The coffee machine is broken",
         "Jhon Fredy is playing a joke"
@@ -97,7 +97,7 @@
     {
       "q": "What does Hernando almost say about Rosa?",
       "options": [
-        "That he never told her something",
+        "That he never told her",
         "That she owed him money",
         "That she sold the café",
         "That she knew about his heart"
@@ -107,7 +107,7 @@
     {
       "q": "What does Tomás discover when he adds up the costs?",
       "options": [
-        "Even though they sell more, they owe more",
+        "They sell more but owe more",
         "The café has made a big profit",
         "The clinic was free",
         "Hernando already paid everything"

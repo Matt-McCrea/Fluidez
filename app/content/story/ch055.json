@@ -55,7 +55,7 @@
     {
       "q": "Why does Mariana suspect Altamira?",
       "options": [
-        "First the inspector came, and now Simón has gone",
+        "First the inspector came, now Simón is gone",
         "Altamira called the café about Simón",
         "Someone saw Altamira with a parrot",
         "Altamira once offered to buy Simón"
@@ -65,7 +65,7 @@
     {
       "q": "What is strange when a customer orders a black coffee?",
       "options": [
-        "Nobody shouts «¡Tinto!», because Simón is not there",
+        "Nobody shouts «¡Tinto!»",
         "The machine breaks",
         "Hernando refuses to make it",
         "Jhon Fredy makes it too slowly"
@@ -98,7 +98,7 @@
     {
       "q": "What is Jhon Fredy's second theory?",
       "options": [
-        "Simón took the bus to Medellín because he liked the trip",
+        "Simón took the bus",
         "Simón is in a tree in the park",
         "Altamira has him",
         "Simón is asleep at Hernando's"

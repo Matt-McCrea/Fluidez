@@ -53,7 +53,7 @@
     {
       "q": "What does the blogger's review say?",
       "options": [
-        "The service is surreal and the food is number one in La Candelaria",
+        "Surreal service and best food",
         "The food is terrible",
         "The café is too small",
         "The waiter is very professional"
@@ -63,7 +63,7 @@
     {
       "q": "Why does Vale give Tomás a buñuelo?",
       "options": [
-        "Without him, and his strange service, there would be no queue",
+        "Without him there's no queue",
         "It's his birthday",
         "It's salty and nobody wants it",
         "He paid for it"
@@ -115,7 +115,7 @@
     {
       "q": "What does the lady in the queue order?",
       "options": [
-        "Six buñuelos to take away",
+        "Buñuelos",
         "A pandebono",
         "An ajiaco",
         "A tinto"

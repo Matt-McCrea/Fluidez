@@ -102,7 +102,7 @@
       "q": "What does Tomás regret?",
       "options": [
         "Selling the chessboard",
-        "Losing every chess game on purpose instead of really playing Hernando",
+        "Losing on purpose",
         "Not going to the library",
         "Writing the essay"
       ],
@@ -122,7 +122,7 @@
       "q": "Why does Gloria have a reputation as a cheat at parcheesi?",
       "options": [
         "She really cheated",
-        "Hernando played so badly that he lost even when she tried to lose",
+        "He played badly",
         "She hid the dice",
         "She never paid"
       ],
@@ -155,7 +155,7 @@
       "q": "Why is Vale late?",
       "options": [
         "She missed the bus",
-        "A landslide held the bus up on the road",
+        "A landslide held up the bus trip",
         "She stopped to buy flour",
         "Correa kept her in a meeting"
       ],
@@ -165,7 +165,7 @@
       "q": "What does Vale put on without asking?",
       "options": [
         "Hernando's hat",
-        "Her old apron with the letters V. O.",
+        "Her old apron",
         "Rosa's ring",
         "Tomás's jacket"
       ],

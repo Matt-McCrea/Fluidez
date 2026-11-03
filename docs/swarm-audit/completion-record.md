@@ -82,7 +82,7 @@ Last verified by the lead on `next`, on the final tree: typecheck clean, 5,340 t
 ## Known problems left open
 
 - 10 native-check verdicts plus 11 more usage questions from the language lane need a Colombian speaker. See `verdicts/final.jsonl` and the language lane's list.
-- Chapter comprehension options: the longest is still right 68 to 83% of the time, 161 of 219 chapters warn.
+- Chapter comprehension options: 960 right answers in 219 chapters were shortened on 3 Nov 2026 (Sonnet trims, two Sonnet review passes, a re-trim of rows the review made long again). The longest is now right 25 to 31% of the time by band (was 68 to 83%, chance 25%) and the shortest 12 to 17%. The gate makes it an error above chance plus 8%. The wrong options are unchanged and some are weak, and a native speaker has not read the shortened answers.
 - Rule text for `x:relative-ind-subj` (472 words) and `g:passive-se` (441 words) carries text waiting for days that do not exist yet.
 - `x:pena-vs-rabia`: "me da pena" reads as embarrassment in Bogotá. Four authored items now say "me da tristeza", but the contrast's own script still sets pena against rabia. A Colombian should rule on it.
 - Placement: a pure guesser who claims C1 and never taps I don't know still lands around unit 40 (was 50). A strong learner can owe a skill on one mis-tap, at the cost of one quick reteach. The self-rating tap still sets where the check starts.

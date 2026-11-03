@@ -49,7 +49,7 @@
     {
       "q": "Why doesn't Tomás send the audio?",
       "options": [
-        "Simón shouts «¡Querida!» in the middle of it",
+        "Simón interrupts it",
         "The internet is down",
         "Hernando takes the phone",
         "Vale doesn't like audios"
@@ -59,7 +59,7 @@
     {
       "q": "What does Tomás say in his message about staying?",
       "options": [
-        "He is staying a year, not because of the bet, and he thinks they have a chance",
+        "He stays a year, not for the bet",
         "He is selling the café to Altamira",
         "He is going back to Toronto",
         "He is moving to Medellín"
@@ -79,7 +79,7 @@
     {
       "q": "What happens at two in the morning?",
       "options": [
-        "The app says Vale is typing, but no reply comes",
+        "Vale types but no reply",
         "Vale calls the café",
         "Hernando reads the message",
         "The lights go out"

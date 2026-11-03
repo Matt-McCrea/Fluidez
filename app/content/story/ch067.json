@@ -50,7 +50,7 @@
       "q": "What did Rosa write on the last phone bill?",
       "options": [
         "That the phone was broken",
-        "That the number had to exist in case Joaquín called",
+        "In case Joaquín called",
         "That Altamira owed her money",
         "That Tomás should cancel the line"
       ],
@@ -59,7 +59,7 @@
     {
       "q": "Why can't Tomás start the paperwork himself?",
       "options": [
-        "He has no Colombian ID card, only a passport",
+        "He has only a passport",
         "He is too late",
         "He doesn't speak Spanish",
         "Hernando has his papers"
@@ -71,7 +71,7 @@
       "options": [
         "It gives him too much money",
         "Vale's card does not work",
-        "Tomás doesn't know his PIN, and the machine keeps his card",
+        "It keeps Tomás's card",
         "The machine is out of order"
       ],
       "answer": 2
@@ -91,7 +91,7 @@
       "options": [
         "He flies away",
         "He sings",
-        "He answers like the phone company menu",
+        "He answers like a phone menu",
         "He says sorry"
       ],
       "answer": 2
@@ -114,7 +114,7 @@
       "options": [
         "Tomás pays by phone",
         "Hernando pays in cash",
-        "Vale takes it out with her card and they queue again at the bank",
+        "Vale takes it out by card",
         "The bank pays it automatically"
       ],
       "answer": 2
@@ -125,7 +125,7 @@
         "A complaint",
         "A claim",
         "Both",
-        "Neither: he wants the line fixed"
+        "Neither"
       ],
       "answer": 3
     }

@@ -65,7 +65,7 @@
     {
       "q": "Why can't Tomás open the café at six?",
       "options": [
-        "He has the flu, with a fever and a cough",
+        "He has the flu, fever and a cough",
         "He has lost the key",
         "Gloria needs him in the bakery",
         "He is waiting for Vale's bus"
@@ -95,7 +95,7 @@
     {
       "q": "What has Gloria found out about Don Hernando?",
       "options": [
-        "He has a doctor's appointment on Thursday and is telling nobody",
+        "He sees a doctor in secret",
         "He has stopped drinking coffee",
         "He wants to sell the café",
         "He is angry with Vale"
@@ -117,7 +117,7 @@
     {
       "q": "What does Hernando shout about the coffee?",
       "options": [
-        "He'll make it, and his is better than Vale's",
+        "His is better than hers",
         "It is the same as Rosa's",
         "It is too strong",
         "It is free today"
@@ -127,7 +127,7 @@
     {
       "q": "How does Gloria know about Hernando's appointment?",
       "options": [
-        "She saw him at the pharmacy with a doctor's referral",
+        "She saw him at the pharmacy",
         "Hernando told her",
         "Vale told her",
         "Rosa wrote it in her notebook"

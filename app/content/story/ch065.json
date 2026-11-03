@@ -95,7 +95,7 @@
     {
       "q": "What did Rosa write on the last card?",
       "options": [
-        "If my grandson comes one day, look after him",
+        "Look after my grandson",
         "Sell the café",
         "Happy birthday, Hernando",
         "Don't trust Altamira"
@@ -105,7 +105,7 @@
     {
       "q": "Why does everyone laugh at the funeral?",
       "options": [
-        "Simón shouts 'Enjoy yourselves', which is what the Mono wanted",
+        "Simón shouts 'Enjoy'",
         "Tomás falls over",
         "The Burra won't start",
         "Jhon Fredy gives a speech"
@@ -115,7 +115,7 @@
     {
       "q": "¿Qué necesitan para hablar con un juez?",
       "options": [
-        "Todos los papeles del café",
+        "Los papeles del café",
         "Un pájaro nuevo",
         "Una torta",
         "Un taxi"

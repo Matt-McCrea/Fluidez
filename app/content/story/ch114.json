@@ -62,7 +62,7 @@
       "q": "Why is Mariana annoyed in the morning?",
       "options": [
         "The TV gets her name wrong",
-        "After six months of work, people care more about the video of Simón than about her article",
+        "People prefer Simón's clip",
         "Altamira has called her",
         "Nobody has read the article"
       ],
@@ -72,7 +72,7 @@
       "q": "How does Tomás make sense of what is happening?",
       "options": [
         "He calls his old boss",
-        "Like a software bug: every error has a cause and a consequence",
+        "Like a software bug",
         "He asks Simón",
         "He reads the editorial"
       ],
@@ -81,7 +81,7 @@
     {
       "q": "¿Qué trae doña Gloria al café?",
       "options": [
-        "Una hoja con cuatrocientas firmas",
+        "Una hoja de firmas",
         "Un pastel para Mariana",
         "Una cámara",
         "Un periódico de 1977"
@@ -92,7 +92,7 @@
       "q": "Why does Hernando put on his cap?",
       "options": [
         "He is leaving for the clinic",
-        "He hopes to be the star of the student's documentary",
+        "To star in the documentary",
         "It is cold",
         "Vale tells him to"
       ],
@@ -102,7 +102,7 @@
       "q": "What does Yesid's voice note say?",
       "options": [
         "He never wants to hear from them again",
-        "His grandmother saw their parrot on TV and is expecting them in Taganga",
+        "His grandmother is expecting them",
         "He is coming to Bogotá",
         "He works for Altamira"
       ],

@@ -45,7 +45,7 @@
     {
       "q": "Why are Hernando's questions strange?",
       "options": [
-        "He asks about pain in the chest and the arm, not the flu",
+        "He asks about chest and arm",
         "He asks about Vale",
         "He asks about the café's money",
         "He asks about Altamira"
@@ -55,7 +55,7 @@
     {
       "q": "How does Vale check on Tomás this time?",
       "options": [
-        "A video call, looking at his face and nose",
+        "A video call to see him",
         "She comes to Gloria's house",
         "She sends Mariana",
         "She calls the doctor"
@@ -75,7 +75,7 @@
     {
       "q": "What does Tomás find out from the card?",
       "options": [
-        "Hernando has an appointment with a heart doctor on Thursday",
+        "A heart doctor visit Thursday",
         "Hernando is selling his taxi",
         "Altamira wants to see Tomás",
         "Vale has a doctor's appointment"

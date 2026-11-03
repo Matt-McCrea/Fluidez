@@ -61,7 +61,7 @@
     {
       "q": "Why does the seller ask Tomás where he's going?",
       "options": [
-        "Tomás says «me quiero devolver», which means he wants to go back somewhere",
+        "He says «me quiero devolver»",
         "Tomás has his suitcase",
         "Tomás says he's going to Toronto",
         "Hernando tells him"
@@ -71,7 +71,7 @@
     {
       "q": "How does Tomás finally win the conversation?",
       "options": [
-        "He exchanges the armchair for a coffee machine and gets money back",
+        "He gets a coffee machine",
         "He gets all his money back",
         "Hernando pays",
         "Vale comes to help"
@@ -91,7 +91,7 @@
     {
       "q": "Why is the last line so worrying?",
       "options": [
-        "Altamira is already furnishing a hotel at the café's own corner",
+        "Altamira is furnishing a hotel",
         "The coffee machine doesn't work",
         "The armchair is coming back",
         "Hernando is ill"
@@ -103,7 +103,7 @@
     {
       "q": "Where did Hernando sleep last night?",
       "options": [
-        "In the armchair, in the street",
+        "In the chair",
         "At Gloria's",
         "In the café",
         "In la Burra"
@@ -123,7 +123,7 @@
     {
       "q": "What does Tomás say his café needs?",
       "options": [
-        "A coffee machine, because theirs doesn't work",
+        "A coffee maker",
         "A bigger door",
         "Twelve armchairs",
         "A new sign"

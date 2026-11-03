@@ -57,7 +57,7 @@
     {
       "q": "What is Jhon Fredy doing at half past five in the morning?",
       "options": [
-        "Giving Vale and Tomás a talk about the coffee machine",
+        "Talking about machines",
         "Repairing his bicycle",
         "Opening the café alone",
         "Teaching Simón new words"
@@ -67,7 +67,7 @@
     {
       "q": "What problem does the inspector find?",
       "options": [
-        "The café's permit is from 2009 and no longer valid, so it can be closed",
+        "The permit is not valid",
         "The kitchen is dirty",
         "Simón has no papers",
         "Jhon Fredy has no contract"
@@ -77,7 +77,7 @@
     {
       "q": "Why does Mariana say it is no coincidence?",
       "options": [
-        "The inspector came on Wednesday, two days after Altamira's visit on Monday",
+        "Two days after Altamira's visit",
         "The inspector is Altamira's brother",
         "The inspector mentioned Altamira by name",
         "Altamira came with the inspector"
@@ -100,7 +100,7 @@
     {
       "q": "What does Simón shout after the inspector says the café can be closed?",
       "options": [
-        "May I come in? May I come in?",
+        "May I enter?",
         "Hello? Hello?",
         "Crazy! Crazy!",
         "Waiter wanted!"
@@ -120,7 +120,7 @@
     {
       "q": "What advice does Mariana give Tomás?",
       "options": [
-        "Not to talk to the inspector without her",
+        "Not to talk to him without her",
         "To sell the café",
         "To call Altamira",
         "To hire a lawyer"

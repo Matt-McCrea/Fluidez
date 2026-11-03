@@ -73,7 +73,7 @@
     {
       "q": "Why is the café full of mangoes?",
       "options": [
-        "Tomás asked for a discount at the market and came back with forty pounds of mango",
+        "He got forty pounds of mango",
         "Vale ordered them for a cake",
         "Hernando brought them from his garden",
         "Simón likes mangoes"
@@ -83,7 +83,7 @@
     {
       "q": "What goes wrong at 7:05?",
       "options": [
-        "The espresso machine stops working",
+        "The machine stops",
         "Simón escapes",
         "Hernando is late",
         "The mangoes go bad"
@@ -112,7 +112,7 @@
     {
       "q": "Why is Simón's «¡Me hace una rebajita!» bad news for Tomás?",
       "options": [
-        "Now all twelve taxi drivers ask for a discount",
+        "All twelve want discounts",
         "It scares the customers away",
         "Vale gets angry with Simón",
         "Nobody understands him"

@@ -97,7 +97,7 @@
     {
       "q": "Why does Vale shout «¡Mamá!»?",
       "options": [
-        "Her mother asks Tomás if he has a girlfriend",
+        "Her mother asks about a girlfriend",
         "Her mother hangs up",
         "Simón bites her",
         "The coffee is burning"
@@ -116,7 +116,7 @@
     {
       "q": "What does Tomás reveal about his father?",
       "options": [
-        "They talk on Sundays but never about Rosa",
+        "They avoid Rosa",
         "He lives in Bogotá",
         "He never phones",
         "He knew Vale's mother"
@@ -129,7 +129,7 @@
     {
       "q": "¿Cómo hace Tomás el tinto?",
       "options": [
-        "En el chocolatero de Rosa",
+        "Chocolatero",
         "En la cafetera",
         "En el celular"
       ],

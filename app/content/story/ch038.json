@@ -47,7 +47,7 @@
     {
       "q": "What does Vale say «listo» means, on the phone?",
       "options": [
-        "I'm with you, and I'll help you look for the deed",
+        "I'm with you, will help look",
         "I understand, now stop writing",
         "I'm leaving the café",
         "I'm tired"
@@ -57,7 +57,7 @@
     {
       "q": "¿Qué piensa Vale del mensaje de Tomás?",
       "options": [
-        "No es perfecto, pero tiene corazón",
+        "Tiene corazón",
         "Es muy aburrido",
         "Es perfecto",
         "No lo leyó"
@@ -67,7 +67,7 @@
     {
       "q": "Why might the last scene be a problem tomorrow?",
       "options": [
-        "Tomás walks home in the rain without his jacket",
+        "He walks home in rain",
         "Tomás forgets the coffee",
         "Vale misses the bus",
         "Simón has gone"
@@ -79,7 +79,7 @@
     {
       "q": "What time did Vale send her answer?",
       "options": [
-        "Half past four in the morning",
+        "Half past four",
         "Six in the morning",
         "Ten o'clock",
         "Midnight"
@@ -89,7 +89,7 @@
     {
       "q": "Which phone does Vale call?",
       "options": [
-        "The café's old phone, Rosa's phone",
+        "The café's old phone",
         "Gloria's phone",
         "Hernando's cell phone",
         "Mariana's cell phone"
@@ -99,7 +99,7 @@
     {
       "q": "What does Gloria ask Tomás?",
       "options": [
-        "What relationship he and Vale have",
+        "What he is to Vale",
         "Where his jacket is",
         "When he pays the rent",
         "Who Joaquín is"

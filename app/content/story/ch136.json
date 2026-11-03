@@ -67,7 +67,7 @@
     {
       "q": "Why is the engineer's report suspicious, according to Mariana?",
       "options": [
-        "He also signed the reports on the six houses that were demolished",
+        "He also signed six reports",
         "He never studied engineering",
         "He is Altamira's brother",
         "He wrote it in English"
@@ -77,7 +77,7 @@
     {
       "q": "¿Qué dice Yesid del hotel?",
       "options": [
-        "Que a lo mejor trae trabajo al barrio",
+        "Que quizá trae trabajo al barrio",
         "Que es muy feo",
         "Que Rosa lo habría querido",
         "Que nunca lo van a construir"
@@ -87,7 +87,7 @@
     {
       "q": "Why does Hernando not want to speak at first?",
       "options": [
-        "Rosa once asked him never to talk about her in front of strangers",
+        "Rosa told him not to talk",
         "He has lost his voice",
         "He is angry with Gloria",
         "He is afraid of the parrot"

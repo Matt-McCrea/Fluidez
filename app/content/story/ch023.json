@@ -45,7 +45,7 @@
     {
       "q": "Why does Vale need to get into the little room?",
       "options": [
-        "All the flour for tomorrow's bread is in there",
+        "The flour is in there",
         "She wants to talk to Toronto",
         "She has left her phone there",
         "Simón is shut in there"
@@ -55,7 +55,7 @@
     {
       "q": "What is Tomás really doing in the room on Thursdays?",
       "options": [
-        "A video job interview with people in Toronto",
+        "A job interview",
         "The café's accounts",
         "Reading Rosa's letter",
         "Talking to Altamira"
@@ -65,7 +65,7 @@
     {
       "q": "Why is Tomás wrong to feel safe?",
       "options": [
-        "Vale doesn't speak English, but she understood the word Toronto",
+        "Vale understood the word Toronto",
         "Vale didn't open the door",
         "Hernando translated everything for her",
         "Vale was at Gloria's bakery the whole time"
@@ -107,7 +107,7 @@
     {
       "q": "Who does Hernando compare Tomás to?",
       "options": [
-        "Rosa, who lost her brother",
+        "Rosa",
         "Altamira",
         "Joaquín",
         "Simón"

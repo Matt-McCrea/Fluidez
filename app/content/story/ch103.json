@@ -116,7 +116,7 @@
       "q": "What is the problem with Tomás's ID card?",
       "options": [
         "It is from Canada",
-        "It is an old one that stopped being valid in 2010",
+        "It expired in 2010",
         "It has the wrong name",
         "Vale has it"
       ],
@@ -125,7 +125,7 @@
     {
       "q": "Why didn't anyone see the note the night before?",
       "options": [
-        "It was stuck underneath the stone, and it was dark",
+        "It was hidden",
         "Simón ate it",
         "Mariana took it home",
         "It was in English"
@@ -135,7 +135,7 @@
     {
       "q": "¿Qué hace Vale cuando ve la palabra?",
       "options": [
-        "Le toma la mano a Tomás y no se la suelta",
+        "Le toma la mano",
         "Llama a Altamira",
         "Se va a la cocina",
         "Se ríe"
@@ -145,7 +145,7 @@
     {
       "q": "What do you think is worrying about Hernando at the end?",
       "options": [
-        "He sits down slowly with his hand on his chest",
+        "He sits down with a hand on his chest",
         "He loses his cap",
         "He gets angry with the policeman",
         "He falls asleep in the queue"

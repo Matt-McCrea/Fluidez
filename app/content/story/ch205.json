@@ -117,7 +117,7 @@
     {
       "q": "Why was the truck with the beam late?",
       "options": [
-        "The GPS kept sending it down streets that were too narrow",
+        "The GPS sent it wrong",
         "The driver stopped for breakfast",
         "The hotel blocked the street",
         "The beam was too long for the truck"
@@ -128,7 +128,7 @@
       "q": "What does Ramiro find under the black paint of the old beam?",
       "options": [
         "Rosa's initials",
-        "Comino, a fine wood nobody can get any more",
+        "Comino wood",
         "A second crack",
         "Cheap pine"
       ],
@@ -138,7 +138,7 @@
       "q": "Why does the old beam end up in the patio instead of the dump?",
       "options": [
         "The dump is closed on Mondays",
-        "Vale wants to turn the healthy end into the bench Hernando always said the street needed",
+        "Vale wants to make a bench of it",
         "Clemencia needs it for her report",
         "Gloria refuses to let it go"
       ],
@@ -180,7 +180,7 @@
     {
       "q": "What did Doctor Uribe add in pencil to the permit?",
       "options": [
-        "That the hotel should see the house was never in ruins",
+        "That it was never in ruins",
         "That the jukebox comes first",
         "That nobody may sit under the beam",
         "That the work must end by Friday"

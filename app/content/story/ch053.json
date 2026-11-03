@@ -45,7 +45,7 @@
     {
       "q": "Why does the pilot want to work in a café?",
       "options": [
-        "He wants a job with his feet on the ground",
+        "He wants to stay on the ground",
         "He loves coffee more than flying",
         "He needs money for a flight",
         "He is Vale's cousin"
@@ -55,7 +55,7 @@
     {
       "q": "What does Jhon Fredy notice as soon as he walks in?",
       "options": [
-        "The coffee machine has a problem with the water",
+        "A problem with the water",
         "Simón needs a bath",
         "The sign in the window is wrong",
         "The tables are dirty"
@@ -65,7 +65,7 @@
     {
       "q": "¿Qué hace Jhon Fredy con la máquina de café?",
       "options": [
-        "La arregla en diez minutos",
+        "La arregla en minutos",
         "La vende",
         "La tira a la calle",
         "La lleva a su casa"
@@ -75,7 +75,7 @@
     {
       "q": "Why is Altamira's question worrying?",
       "options": [
-        "He hints that an old café like this one may not have its city permits in order",
+        "He hints at permit problems",
         "He wants to hire Jhon Fredy for his hotel",
         "He offers to buy the coffee machine",
         "He says the bread is bad"
@@ -108,7 +108,7 @@
     {
       "q": "What does Vale do once Jhon Fredy is hired?",
       "options": [
-        "She gives him two almojábanas, and at last he goes quiet",
+        "She feeds him almojábanas",
         "She shows him the flour room",
         "She tells him to cut his hair",
         "She asks him to sign a second contract"

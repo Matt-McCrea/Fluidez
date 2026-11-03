@@ -81,7 +81,7 @@
     {
       "q": "Why is Mariana praying on the boat?",
       "options": [
-        "She can't swim, and she hadn't told anyone",
+        "She can't swim and hid it",
         "She is thinking about Rosa",
         "Yesid asks her to",
         "There is a storm"
@@ -101,7 +101,7 @@
     {
       "q": "What would Yesid do if he had money?",
       "options": [
-        "Buy his own boat and call it Joaquín y Rosa",
+        "Buy a boat",
         "Move to Bogotá",
         "Buy the café",
         "Open a hotel"
@@ -111,7 +111,7 @@
     {
       "q": "¿Qué pasa cuando Tomás y Vale están solos en la playa?",
       "options": [
-        "Casi se besan, y llega Mariana con tres cervezas",
+        "Casi se besan",
         "Se pelean por la música",
         "Vale se va al hotel",
         "Llama Hernando"
@@ -121,7 +121,7 @@
     {
       "q": "What does Yesid's grandmother want?",
       "options": [
-        "To see Tomás tomorrow at seven, hungry and without a lawyer",
+        "To see Tomás tomorrow at seven",
         "Money for the letter",
         "To come to Bogotá alone",
         "Nothing more to do with the family"
@@ -143,7 +143,7 @@
     {
       "q": "What does Tomás say Rosa would do if she were alive?",
       "options": [
-        "She would already be at Duarte's office with a broom",
+        "At Duarte's with a broom",
         "She would sell the café",
         "She would cry",
         "She would call the police"

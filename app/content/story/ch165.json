@@ -73,7 +73,7 @@
     {
       "q": "How does Tomás find out about the offer from Medellín?",
       "options": [
-        "Simón repeats the message in Vale's voice",
+        "Simón repeats it in Vale's voice",
         "Vale tells him over breakfast",
         "Mariana reads it in a newspaper",
         "Esteban Correa calls the café"
@@ -83,7 +83,7 @@
     {
       "q": "What is wrong with Tomás's first answer to Vale?",
       "options": [
-        "He talks about the café's orders instead of saying what he thinks",
+        "He talks about orders, not views",
         "He says he will move to Medellín too",
         "He laughs at the investor",
         "He refuses to read the offer"
@@ -93,7 +93,7 @@
     {
       "q": "Who took Hernando to the doctor, and what did he think at first?",
       "options": [
-        "His neighbour on the third floor, who thought Hernando was drunk",
+        "A neighbour, who thought him drunk",
         "His daughter, who thought he was ill",
         "Tomás, who thought he had broken his hand",
         "A taxi driver, who thought he was lost"
@@ -113,7 +113,7 @@
     {
       "q": "What does Vale say at the end of the chapter?",
       "options": [
-        "Correa expects her in Medellín on Monday, and she has not said no",
+        "She hasn't said no to Correa",
         "She has already said no to Correa",
         "She is going to open a bakery in Bogotá",
         "She wants Tomás to come to Medellín with her"
@@ -125,7 +125,7 @@
     {
       "q": "Why can Simón repeat the investor's message?",
       "options": [
-        "He sleeps in the kitchen, and Vale reads aloud when she can't sleep",
+        "He hears Vale read aloud",
         "He saw the message on the phone",
         "Tomás taught it to him",
         "Mariana recorded it"

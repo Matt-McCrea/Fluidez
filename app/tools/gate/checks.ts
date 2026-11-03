@@ -3,7 +3,7 @@
 import type { BankSentence, ContrastFile, Scene, StoryChapter, TeachingScript, WritingTask } from '../../src/content/schema';
 import { accentLint, dialectLint, splitSentences, tagSentence, lemmatize, lexEntry, closedClass, DEFAULT_NODE_MAP, detectablePatterns, focusSpan, type TagResult } from '../../src/engine/tagger';
 import { answerForms, checkWriting, type Constraint } from '../../src/check';
-import { givesAwayByLength, longestShare } from '../../src/exercises/neighbours';
+import { givesAwayByLength, longestShare, shortestShare } from '../../src/exercises/neighbours';
 import { extractSpanish, type EsString } from './extract';
 import { clip, type Finding } from './findings';
 import { lateRequires, type Curriculum, type Loaded } from './load';
@@ -473,9 +473,10 @@ export function checkContrastRequires(st: RunState, f: Loaded, fix: boolean): un
 
 /* ---- options that give themselves away by length ---------------------------------
  * A choice whose right option is the longest is passed by a reader who reads nothing:
- * the chapter questions have it 68 to 83% of the time by band (chance is 25%), and the
- * script picks 45 to 52%. The warning is per file, once most of its choices do it, and per
- * band over the whole corpus. Writing the wrong options as long and as likely as the right
+ * the chapter questions had it 68 to 83% of the time by band (chance is 25%) until the right
+ * answers were shortened (2026-11-03: 25 to 31%), and the script picks have it 45 to 52%. The chapter
+ * questions are errors per band over the whole corpus, for the longest option and for the shortest;
+ * the script picks stay warnings, as does each file, once most of its choices do it. Writing the wrong options as long and as likely as the right
  * one is a person's work (a rule that shortened or padded them would change what they say). */
 interface Choice { options: readonly string[]; answer: number }
 
@@ -503,22 +504,27 @@ export function optionLengths(st: RunState, f: Loaded): void {
 
 /** Per band, over the whole corpus: how often tapping the longest option is right, against chance. */
 export function optionBands(st: RunState, loaded: Loaded[]): void {
-  const tally = new Map<string, { n: number; got: number; chance: number }>();
+  const tally = new Map<string, { n: number; got: number; low: number; chance: number }>();
   for (const f of loaded) {
     if (!f.ok || (f.kind !== 'story' && f.kind !== 'script')) continue;
     const band = f.kind === 'story' ? st.cur.unitBand.get((f.data as StoryChapter).unit) : st.cur.nodes.get((f.data as TeachingScript).node)?.band;
     if (!band) continue;
     const key = `${band} ${f.kind === 'story' ? 'chapter questions' : 'lesson script picks'}`;
-    const t = tally.get(key) ?? { n: 0, got: 0, chance: 0 };
-    for (const q of choicesOf(f)) { t.n++; t.got += longestShare(q.options, q.answer); t.chance += 1 / q.options.length; }
+    const t = tally.get(key) ?? { n: 0, got: 0, low: 0, chance: 0 };
+    for (const q of choicesOf(f)) { t.n++; t.got += longestShare(q.options, q.answer); t.low += shortestShare(q.options, q.answer); t.chance += 1 / q.options.length; }
     tally.set(key, t);
   }
   for (const [key, t] of [...tally].sort((a, b) => a[0].localeCompare(b[0]))) {
-    if (t.n < 20 || t.got / t.n <= t.chance / t.n + 0.08) continue;
-    st.findings.push({
-      severity: 'warning', check: 'options', file: '', problem: `${key}: tapping the longest option is right ${Math.round((100 * t.got) / t.n)}% of the time over ${t.n} choices (chance ${Math.round((100 * t.chance) / t.n)}%)`,
-      fix: 'a rewrite of the wrong options, by a person who reads the chapter or the lesson',
-    });
+    if (t.n < 20) continue;
+    const severity = key.endsWith('chapter questions') ? 'error' : 'warning';
+    for (const [which, got] of [['longest', t.got], ['shortest', t.low]] as const) {
+      if (which === 'shortest' && severity === 'warning') continue;
+      if (got / t.n <= t.chance / t.n + 0.08) continue;
+      st.findings.push({
+        severity, check: 'options', file: '', problem: `${key}: tapping the ${which} option is right ${Math.round((100 * got) / t.n)}% of the time over ${t.n} choices (chance ${Math.round((100 * t.chance) / t.n)}%)`,
+        fix: severity === 'error' ? 'shorten or lengthen the right options, or rewrite the wrong ones, so no length gives the answer away' : 'a rewrite of the wrong options, by a person who reads the chapter or the lesson',
+      });
+    }
   }
 }
 

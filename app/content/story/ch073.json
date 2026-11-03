@@ -94,7 +94,7 @@
       "q": "Why does Hernando drive them to Medellín instead of flying?",
       "options": [
         "The plane tickets are too expensive",
-        "He says a plane has no soul, and the Burra does",
+        "A plane has no soul, but the Burra does",
         "Simón can't fly",
         "Vale is afraid of planes"
       ],
@@ -114,7 +114,7 @@
       "q": "What is Mariana's news about the fine?",
       "options": [
         "It has been cancelled",
-        "The hearing is on Monday, and Altamira has the papers the inspector doesn't",
+        "Altamira has the papers",
         "Vale has to pay it today",
         "The inspector has resigned"
       ],
@@ -134,7 +134,7 @@
       "q": "What does Beatriz put on the kitchen table?",
       "options": [
         "Rosa's letter",
-        "Her diary from 1990, where she wrote what Rosa told her",
+        "Her 1990 diary",
         "A photo of Joaquín",
         "A map of the coast"
       ],
@@ -167,7 +167,7 @@
       "q": "What does Hernando do when he sees the diary?",
       "options": [
         "He reads it aloud",
-        "He looks at it and says nothing",
+        "He says nothing",
         "He leaves the house",
         "He laughs"
       ],

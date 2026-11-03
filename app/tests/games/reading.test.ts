@@ -27,10 +27,9 @@ const LONG = q(['He opened the café early', 'He slept', 'He left', 'Nothing'], 
 const FAIR = (n: number) => q(['Nothing at all happened', 'Vale arrived', 'Simón spoke very quickly all day', 'Hernando left'], n % 2 === 0 ? 1 : 3);
 
 describe('the gate as the chapters carry it', () => {
-  it('is passed by always tapping the longest option in nearly every chapter (the audit\'s finding, measured here on all of them)', () => {
+  it('is no longer passed by always tapping the longest option in most chapters (3 Nov 2026: the right answers were shortened; the audit found nearly all)', () => {
     const passes = chapters.filter((c) => c.questions.slice(0, 3).filter(longestIsRight).length >= 2).length;
-    // if this fails the chapters were rewritten, and the game can ask more of them
-    expect(passes / chapters.length, `${passes} of ${chapters.length}`).toBeGreaterThan(0.85);
+    expect(passes / chapters.length, `${passes} of ${chapters.length}`).toBeLessThan(0.3);
   });
 });
 

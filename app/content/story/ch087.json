@@ -86,7 +86,7 @@
       "q": "What is the rumour Gloria passes on?",
       "options": [
         "Altamira is selling the hotel",
-        "The head of the permits office went on a trip to San Andrés paid for by Altamira",
+        "A trip paid for by Altamira",
         "Marta's nephew lost his job",
         "Joaquín is in San Andrés"
       ],
@@ -97,7 +97,7 @@
       "options": [
         "Gloria asked her not to",
         "She has no names",
-        "It is only a rumour, and she needs certainty and papers",
+        "It is only a rumour",
         "Her magazine is closed"
       ],
       "answer": 2
@@ -105,7 +105,7 @@
     {
       "q": "What does Jhon Fredy find?",
       "options": [
-        "A photo with a towel that says Hoteles Altamira",
+        "An Altamira towel",
         "A letter from Joaquín",
         "The permits",
         "A one star review"
@@ -116,7 +116,7 @@
       "q": "¿Qué responde Mariana a la duda de Vale?",
       "options": [
         "Que van a ganar seguro",
-        "Que no sabe: puede que ganen, puede que no",
+        "Que no sabe si ganan",
         "Que es imposible ganar",
         "Que le da igual"
       ],

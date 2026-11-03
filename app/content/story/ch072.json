@@ -70,7 +70,7 @@
       "q": "What goes on the left-hand side of the napkin?",
       "options": [
         "The reasons against Chapinero",
-        "The reasons for Chapinero: light, less noise, two years without rent",
+        "The reasons for Chapinero",
         "The café's accounts",
         "Joaquín's address"
       ],
@@ -110,7 +110,7 @@
       "q": "Why does Vale's mother call?",
       "options": [
         "She is ill",
-        "She wants them both at the Flower Fair, to tell them something about Rosa",
+        "She has news about Rosa",
         "She has sold Vale's room",
         "She wants a cake"
       ],
@@ -124,7 +124,7 @@
       "options": [
         "In the kitchen",
         "On Hernando's shoulder",
-        "Asleep in the plant, with one ear open",
+        "Asleep in the plant",
         "At Gloria's house"
       ],
       "answer": 2

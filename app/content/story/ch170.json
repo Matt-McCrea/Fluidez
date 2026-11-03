@@ -97,7 +97,7 @@
     {
       "q": "Why does Tomás look towards the kitchen when Lucía orders?",
       "options": [
-        "She says \"vale\", and it sounds like Vale's name",
+        "It sounds like Vale's name",
         "He hears the oven burning",
         "Gloria calls him",
         "Simón flies into the kitchen"
@@ -108,7 +108,7 @@
       "q": "Why have Lucía and her friends come to the café?",
       "options": [
         "To buy the house for a hotel",
-        "For the pandebonos they saw in the catalogue",
+        "For the catalogue pandebonos",
         "To visit Hernando's daughter",
         "To record a podcast with Simón"
       ],
@@ -137,7 +137,7 @@
     {
       "q": "What does Vale's message at the end suggest?",
       "options": [
-        "The new bakery is beautiful, but something is missing",
+        "It's beautiful, but something is missing",
         "She has bought a new oven for the café",
         "She is coming back tomorrow",
         "She does not like Medellín at all"
@@ -162,7 +162,7 @@
       "options": [
         "It is very pretty",
         "It has no prices",
-        "It goes down every five minutes",
+        "It goes down",
         "It is only in English"
       ],
       "answer": 2

@@ -63,7 +63,7 @@
     {
       "q": "Why does Hernando say he has twenty-one grandchildren?",
       "options": [
-        "He also counts his grandchildren's cousins: family is family",
+        "He counts his grandchildren's cousins",
         "He can't count",
         "He means photos",
         "Simón told him to"
@@ -73,7 +73,7 @@
     {
       "q": "What surprises Tomás in Rosa's album?",
       "options": [
-        "He has an aunt and an uncle he has never met",
+        "An aunt and an uncle",
         "Rosa was from Toronto",
         "Hernando is his grandfather",
         "Vale is in every photo"
@@ -92,7 +92,7 @@
     {
       "q": "What does Hernando do when Tomás asks about the young man?",
       "options": [
-        "He closes the album and asks Vale for a coffee",
+        "He closes the album",
         "He tells Tomás his name",
         "He laughs",
         "He takes the photo home"
@@ -114,7 +114,7 @@
     {
       "q": "Who are Clara and Jaime?",
       "options": [
-        "Tomás's father's sister and brother",
+        "Tomás's father's siblings",
         "Hernando's grandchildren",
         "Vale's parents",
         "Rosa's parents"
@@ -124,7 +124,7 @@
     {
       "q": "What does the young man share with Tomás?",
       "options": [
-        "His nose and his chin",
+        "His nose and chin",
         "His name",
         "His glasses",
         "His job"

@@ -134,7 +134,7 @@
       "q": "What is wrong with the first space?",
       "options": [
         "It is too far away",
-        "The kitchen is a cupboard with a stove and no gas",
+        "The kitchen's tiny",
         "It has no windows",
         "It is full of boxes"
       ],
@@ -144,7 +144,7 @@
       "q": "Why can't Hernando be the guarantor?",
       "options": [
         "He is too old",
-        "He doesn't own a house, only his taxi",
+        "He has no house",
         "He owes money to the bank",
         "Jenny doesn't like him"
       ],
@@ -155,7 +155,7 @@
       "options": [
         "It is too small",
         "It has no oven",
-        "The owner is Ricardo Altamira's company",
+        "Altamira's firm owns it",
         "It is too far from the café"
       ],
       "answer": 2
@@ -173,7 +173,7 @@
     {
       "q": "What will Mariana's contact in Santa Marta send tomorrow?",
       "options": [
-        "A photo of her father's guest book",
+        "A guest book photo",
         "Joaquín's phone number",
         "A letter from Joaquín",
         "Money for the deposit"
@@ -187,7 +187,7 @@
       "q": "What is good about the second space, according to Hernando?",
       "options": [
         "It is close to the café",
-        "It gets plenty of light, because it has no roof",
+        "It has plenty of light",
         "It has a big kitchen",
         "It is cheap"
       ],
@@ -197,7 +197,7 @@
       "q": "Who taught Simón to welcome people to Hoteles Altamira?",
       "options": [
         "Jenny",
-        "The man from the white truck",
+        "The man from the truck",
         "Jhon Fredy",
         "Mariana"
       ],

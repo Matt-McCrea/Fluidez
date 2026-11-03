@@ -129,7 +129,7 @@
     {
       "q": "Why does nobody get breakfast at first?",
       "options": [
-        "Vale wants Tomás to ask for something properly first",
+        "Vale wants him to ask",
         "The oven is broken",
         "Gloria's bakery is closed",
         "Hernando ate everything"
@@ -149,7 +149,7 @@
     {
       "q": "What does the notary find?",
       "options": [
-        "A signature and a very clear fingerprint in Joaquín's name",
+        "A fingerprint",
         "Rosa's will",
         "A photo of Duarte",
         "Nothing at all"
@@ -159,7 +159,7 @@
     {
       "q": "¿A quién le puede dar la copia el notario?",
       "options": [
-        "Al heredero, o a alguien con su autorización",
+        "Al heredero o a quien autorice",
         "A cualquier persona",
         "Solo a un abogado",
         "Solo a Hernando"
@@ -169,7 +169,7 @@
     {
       "q": "What problem does Tomás have at the end?",
       "options": [
-        "Yesid, the heir, is on a bus with no signal",
+        "Yesid is on a bus with no signal",
         "The Burra has broken down again",
         "He has lost the copy",
         "The notary is closing for good"
@@ -181,7 +181,7 @@
     {
       "q": "What happens at the notary's glass door?",
       "options": [
-        "Tomás pushes a door that says \"pull\"",
+        "Pushes a pull door",
         "Hernando gets stuck",
         "The door is locked",
         "Simón flies in"
@@ -201,7 +201,7 @@
     {
       "q": "What does Hernando say Rosa used to tell him?",
       "options": [
-        "The same thing about his cap",
+        "The same about his cap",
         "To drive more slowly",
         "To pay for his coffee",
         "To stop telling jokes"

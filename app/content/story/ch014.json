@@ -57,7 +57,7 @@
     {
       "q": "How do they know the letter was never sent?",
       "options": [
-        "It has no stamp and it never left the café",
+        "It was never stamped",
         "Joaquín sent it back",
         "It is still in Toronto",
         "Hernando says so"
@@ -78,7 +78,7 @@
       "q": "What does Hernando finally admit?",
       "options": [
         "He wrote the letter",
-        "Joaquín left in 1978 and never came back",
+        "Joaquín left in 1978",
         "Joaquín is Tomás's father",
         "He has never heard the name"
       ],
@@ -109,7 +109,7 @@
     {
       "q": "Why does Tomás first think it is a love letter?",
       "options": [
-        "It is a secret letter with only a man's name on it",
+        "A secret letter to a man",
         "It smells of roses",
         "It has a heart drawn on it",
         "Vale says so"

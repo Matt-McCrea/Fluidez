@@ -63,7 +63,7 @@
     {
       "q": "Why does Vale invite Tomás to Medellín?",
       "options": [
-        "Her sister Camila is getting married, and her mother wants to meet him",
+        "Her sister is getting married",
         "She needs help in her mother's café",
         "Altamira has a hotel there",
         "Hernando wants to go"
@@ -73,7 +73,7 @@
     {
       "q": "Why does Mariana want to call the seller?",
       "options": [
-        "To get the name of the Altamira man who bought the armchairs",
+        "The name of the Altamira buyer",
         "To buy an armchair",
         "To return the coffee machine",
         "To invite him to the salsa night"
@@ -95,7 +95,7 @@
     {
       "q": "Where did Tomás dance in Toronto?",
       "options": [
-        "In the kitchen, with the radio",
+        "In the kitchen",
         "In a club",
         "At work",
         "He never danced"

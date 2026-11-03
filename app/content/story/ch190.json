@@ -110,7 +110,7 @@
       "q": "What does the committee decide?",
       "options": [
         "The house can be sold to the hotel",
-        "The house is protected: its front, patio and original tiles",
+        "Front, patio and tiles are kept",
         "The decision is postponed",
         "Only the patio is protected"
       ],
@@ -120,7 +120,7 @@
       "q": "What new problem comes with the protection?",
       "options": [
         "The family must pay a big fine",
-        "The two families must give the Institute a single body responsible for the house within ninety days",
+        "One body in charge in 90 days",
         "Hernando has to stop writing jokes",
         "The café has to close for repairs"
       ],
@@ -130,7 +130,7 @@
       "q": "Why does the uncle refuse to sign anything called a \"sociedad\"?",
       "options": [
         "He doesn't trust Tomás",
-        "The last company he signed for left him broke and in debt",
+        "His last company ruined him",
         "His mother told him not to",
         "He wants to sell to Altamira"
       ],
@@ -139,7 +139,7 @@
     {
       "q": "¿Qué pone Gloria en la pizarra de los precios?",
       "options": [
-        "Que hoy todo es a precio de costo",
+        "Que todo es a precio de costo",
         "Que el café está cerrado",
         "Un chiste para el hotel",
         "Los nombres de los socios"
@@ -150,7 +150,7 @@
       "q": "Why is Yesid coming to Bogotá for six months?",
       "options": [
         "To work for the hotel",
-        "To help the family and neighbours set up the cooperative and vote without fighting",
+        "To help the families",
         "To study at university",
         "To sell his boat"
       ],
@@ -173,7 +173,7 @@
       "q": "Where did they finally find the uncle?",
       "options": [
         "At the village shop",
-        "In the pasture, milking a cow",
+        "In the pasture",
         "At a petrol station",
         "On a bus to Bogotá"
       ],
@@ -183,7 +183,7 @@
       "q": "What does Hernando say the hotel's congratulations feel like?",
       "options": [
         "Amazing",
-        "Uncomfortable, like the wolf congratulating Grandma on her new house",
+        "Uneasy",
         "Sincere",
         "Funny"
       ],

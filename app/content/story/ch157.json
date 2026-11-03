@@ -53,7 +53,7 @@
     {
       "q": "Why does Hernando put a sign on an empty chair?",
       "options": [
-        "To reserve it, half joking, for Altamira's engineer",
+        "To reserve it, as a joke",
         "To save a seat for Rosa",
         "Because the chair is broken",
         "To keep Simón off it"
@@ -63,7 +63,7 @@
     {
       "q": "What does Gloria reveal about her grandfather?",
       "options": [
-        "He was a farmworker who trod mud to make the adobe for a house on this corner",
+        "He made adobe for a house on this corner",
         "He sold the house to Rosa",
         "He worked for Altamira",
         "He was the first architect of the Institute"
@@ -73,7 +73,7 @@
     {
       "q": "What does Clemencia still need before her report is ready?",
       "options": [
-        "To climb up to the beam and take the last measurements",
+        "To climb to the beam",
         "Altamira's permission",
         "A new sensor",
         "Hernando's signature"
@@ -83,7 +83,7 @@
     {
       "q": "¿Qué dice Clemencia sobre la casa?",
       "options": [
-        "Que se puede rescatar, pero la viga es un problema",
+        "Que es rescatable, pero la viga falla",
         "Que hay que tumbarla",
         "Que no tiene ninguna grieta en la viga",
         "Que la construyeron en 1979"

@@ -109,7 +109,7 @@
     {
       "q": "What has blocked the highway?",
       "options": [
-        "A giant advertising balloon for Altamira's hotel",
+        "An advertising balloon",
         "A broken down bus",
         "A police helicopter",
         "A protest by taxi drivers"
@@ -129,7 +129,7 @@
     {
       "q": "Why is it hard for Duarte to hand over the envelope?",
       "options": [
-        "The law firm did not drop the lawsuit, so he will lose his pension",
+        "He will lose his pension",
         "He is afraid of Yesid",
         "The judge will not accept it",
         "He wants money for it"
@@ -149,7 +149,7 @@
     {
       "q": "Why does Vale invite Duarte to the party?",
       "options": [
-        "Because nobody should drink that awful coffee alone",
+        "Nobody should drink that coffee alone",
         "Because he is Yesid's uncle",
         "Because Mariana wants to interview him",
         "Because he paid for the party"
@@ -171,7 +171,7 @@
     {
       "q": "Who is \"the traffic jam hunter\"?",
       "options": [
-        "Captain Rojas, from the police helicopter",
+        "Rojas",
         "Hernando",
         "Duarte",
         "The judge"

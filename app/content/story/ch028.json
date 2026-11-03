@@ -45,7 +45,7 @@
     {
       "q": "Who is the woman who orders the last almojábana?",
       "options": [
-        "Mariana Cifuentes, the neighbours' daughter, now a journalist",
+        "Mariana Cifuentes",
         "The food blogger",
         "Vale's sister",
         "A woman from Altamira"
@@ -65,7 +65,7 @@
     {
       "q": "What did Mariana do after Tomás went to Toronto?",
       "options": [
-        "She waited at the door on Sundays, then stopped waiting",
+        "She waited, then quit",
         "She wrote him letters",
         "She moved to Toronto too",
         "She worked in the café"
@@ -118,7 +118,7 @@
     {
       "q": "What did Mariana's childhood include besides the café?",
       "options": [
-        "Bike rides out to the countryside",
+        "Countryside rides",
         "Trips to the airport",
         "Tango lessons",
         "Football matches"

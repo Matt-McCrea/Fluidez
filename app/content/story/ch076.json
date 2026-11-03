@@ -82,7 +82,7 @@
       "q": "What did Rosa tell Beatriz in 1990?",
       "options": [
         "That Joaquín had died",
-        "That she and her younger brother had a terrible fight in 1978, and he went to Santa Marta and never came back",
+        "That her brother left after a fight",
         "That she wanted to sell the café",
         "That Joaquín lived in Medellín"
       ],
@@ -92,7 +92,7 @@
       "q": "How did Rosa feel about the fight?",
       "options": [
         "She said it was Joaquín's fault",
-        "She said it was her fault and she never forgave herself",
+        "She never forgave herself",
         "She didn't remember it",
         "She laughed about it"
       ],
@@ -101,7 +101,7 @@
     {
       "q": "Why did Beatriz send Vale to Rosa's café?",
       "options": [
-        "Five years ago Rosa asked her not to leave her grandson alone when he came",
+        "For Rosa's grandson",
         "Vale needed money",
         "Altamira asked her to",
         "Hernando called her"
@@ -122,7 +122,7 @@
       "q": "What does Hernando's last line suggest?",
       "options": [
         "He wants to sell the Burra",
-        "He knows something about the fight that Rosa didn't tell Beatriz",
+        "He knows about the fight",
         "He is angry with Vale",
         "He is moving to Medellín"
       ],

@@ -114,7 +114,7 @@
       "q": "Where do Tomás and Vale find Hernando?",
       "options": [
         "At his flat",
-        "In the Burra, outside Altamira's building",
+        "In the Burra",
         "At the mayor's office",
         "At Gloria's bakery"
       ],
@@ -125,7 +125,7 @@
       "options": [
         "He wants to go back to Toronto",
         "He needs the money",
-        "He is scared Vale could lose everything because of him",
+        "Vale could lose everything",
         "Mariana told him to"
       ],
       "answer": 2
@@ -133,7 +133,7 @@
     {
       "q": "What does Tomás photograph?",
       "options": [
-        "The permits chief going into Altamira's building",
+        "The permits office chief",
         "Altamira's new hotel",
         "Simón on the car roof",
         "A letter from the lawyers"

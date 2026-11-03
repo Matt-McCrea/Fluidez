@@ -45,7 +45,7 @@
     {
       "q": "Who, according to Hernando, kept the corner alive?",
       "options": [
-        "Rosa, with a pot of soup and a coffee pot",
+        "Rosa's soup",
         "Father Ignacio",
         "The mayor",
         "The banks"
@@ -55,7 +55,7 @@
     {
       "q": "What made the hole in the kitchen wall, according to Yesid?",
       "options": [
-        "The constant shaking from the building site next door",
+        "Next door's shaking",
         "Simón pecking at it",
         "An old water pipe",
         "Someone threw a stone"
@@ -65,7 +65,7 @@
     {
       "q": "Why does Tomás recognise the voice that asks if he has eaten?",
       "options": [
-        "Rosa asked him that on the phone every Sunday when he was a boy",
+        "Rosa asked him on Sundays",
         "He heard it on the radio",
         "Vale says it every morning",
         "It is Mariana's voice"
@@ -87,7 +87,7 @@
     {
       "q": "What did Mariana offer Simón to make him talk?",
       "options": [
-        "Mango, cheese and some of Vale's bread",
+        "Mango and cheese",
         "Coffee and arepas",
         "Seeds and water",
         "Nothing at all"

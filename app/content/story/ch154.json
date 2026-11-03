@@ -67,7 +67,7 @@
     {
       "q": "Why is Hernando so moved by the radio station's call?",
       "options": [
-        "It's the station he listened to in his taxi for forty years",
+        "He listened to it in his taxi",
         "They offer him a job",
         "They want to interview Simón",
         "They play his favourite bolero"
@@ -99,7 +99,7 @@
     {
       "q": "Who wrote to Gloria, and what did he say?",
       "options": [
-        "Wilson: his daughter recognised him and is proud of him",
+        "Wilson: his daughter is proud",
         "Montoya: he is sorry",
         "Osorio: the paper wants the story",
         "Chucho: he heard it in his taxi"
@@ -109,7 +109,7 @@
     {
       "q": "What does the gallery want to exhibit?",
       "options": [
-        "The children's paintings of Simón",
+        "Paintings of Simón",
         "Rosa's letters",
         "Photos of the café",
         "Hernando's taxi cap"
@@ -119,7 +119,7 @@
     {
       "q": "How many times does Vale say she heard Tomás record his line?",
       "options": [
-        "All of them, from the kitchen",
+        "All of them",
         "Only the last one",
         "None",
         "Twice"

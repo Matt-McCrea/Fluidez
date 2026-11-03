@@ -109,7 +109,7 @@
     {
       "q": "Where does Tomás find Vale?",
       "options": [
-        "In a square nearby, feeding yesterday's buñuelos to the pigeons",
+        "In a nearby square",
         "At the bus station",
         "At the court",
         "In the café kitchen"
@@ -119,7 +119,7 @@
     {
       "q": "What hurt Vale most?",
       "options": [
-        "That Tomás kept the email from her for a month",
+        "That Tomás hid the email",
         "That Tomás wanted more money",
         "That Tomás told Hernando first",
         "That the job is in Toronto"
@@ -129,7 +129,7 @@
     {
       "q": "Why won't Vale send the email for Tomás?",
       "options": [
-        "She does not want him to think he stayed because of her",
+        "She won't be why he stays",
         "She cannot write in English",
         "She wants him to go",
         "Her phone has no signal"
@@ -149,7 +149,7 @@
     {
       "q": "What news is Mariana waiting with?",
       "options": [
-        "The lab result comes tomorrow, and someone from Altamira asked about Yesid",
+        "The lab result is tomorrow",
         "Duarte has left the country",
         "The hearing is cancelled",
         "Toronto has answered"
@@ -161,7 +161,7 @@
     {
       "q": "When did Tomás feel like going back to Toronto?",
       "options": [
-        "The night of the stone through the window",
+        "The stone night",
         "The day he arrived",
         "The night of the radio",
         "When Hernando got ill"

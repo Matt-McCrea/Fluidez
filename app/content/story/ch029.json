@@ -41,7 +41,7 @@
     {
       "q": "Why is the café so important to Altamira?",
       "options": [
-        "Without the corner there can be no hotel on the block",
+        "No hotel without that corner",
         "It makes the best coffee",
         "It is the cheapest building",
         "Ricardo Altamira grew up there"
@@ -61,7 +61,7 @@
     {
       "q": "What changes Vale's mind about Mariana?",
       "options": [
-        "Mariana says Vale's almojábana is better than Rosa's",
+        "Hers beats Rosa's",
         "Mariana pays the bill",
         "Mariana brings flowers",
         "Mariana leaves early"
@@ -71,7 +71,7 @@
     {
       "q": "¿Quién es el dueño del local del café?",
       "options": [
-        "Nadie sabe: Rosa pagaba arriendo",
+        "Nadie sabe",
         "Rosa",
         "Hernando",
         "Altamira"
@@ -104,7 +104,7 @@
     {
       "q": "Why hasn't Tomás found the owner's name?",
       "options": [
-        "He never finished reading the long, boring contract",
+        "He never read it all",
         "Hernando hid the contract",
         "The contract is in Toronto",
         "Mariana has it"

@@ -77,7 +77,7 @@
     {
       "q": "What does Mariana find out about Esteban Correa?",
       "options": [
-        "He is a serious businessman whose family makes ovens",
+        "His folks make ovens",
         "He works for Altamira",
         "He has huge debts",
         "He is a famous baker"
@@ -97,7 +97,7 @@
     {
       "q": "Why did Lucía come a day early?",
       "options": [
-        "So her father would have no time to prepare jokes",
+        "So he can't plan jokes",
         "Because her bus was early",
         "Because Vale invited her",
         "To see the parrot"
@@ -107,7 +107,7 @@
     {
       "q": "¿Qué propone Hernando al final de la discusión?",
       "options": [
-        "Hablar mañana en su casa, después de subir la escalera",
+        "Hablar mañana en su casa",
         "Irse a vivir a Chía el lunes",
         "Vender el apartamento",
         "No volver a hablar del tema"
@@ -149,7 +149,7 @@
     {
       "q": "Who says «A mí me pasa lo mismo», and about what?",
       "options": [
-        "Vale, about getting jokes when she talks seriously",
+        "Vale, about jokes",
         "Gloria, about the stairs",
         "Mariana, about the investor",
         "Tomás, about his tooth"

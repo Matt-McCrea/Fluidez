@@ -126,7 +126,7 @@
       "q": "Why does Gloria cry when she sees the brochure?",
       "options": [
         "She hates the hotel's design",
-        "She believes the café's patio has been sold",
+        "She believes the patio has been sold",
         "She misses Rosa's handwriting",
         "The brochure is about her bakery"
       ],
@@ -136,7 +136,7 @@
       "q": "What does Mariana show with her three sentences on a napkin?",
       "options": [
         "That the hotel cannot spell",
-        "That the same claim changes with how much the writer stands behind it",
+        "That claims vary in certainty",
         "That Tomás should sell the patio",
         "That rumours are always false"
       ],
@@ -146,7 +146,7 @@
       "q": "What gives the receptionist away on the phone?",
       "options": [
         "She hangs up",
-        "A short pause, and then: it's not that it isn't the hotel's, we're still in talks",
+        "A pause, then a hedge",
         "She laughs",
         "She asks for Tomás's name"
       ],
@@ -155,7 +155,7 @@
     {
       "q": "¿Quién era Ferney Bermúdez?",
       "options": [
-        "El jefe de prensa de Rengifo en la alcaldía",
+        "Jefe de prensa de Rengifo",
         "Un taxista amigo de Hernando",
         "El gerente del hotel",
         "El abogado de Altamira"
@@ -189,7 +189,7 @@
       "q": "What does Simón do at the very end?",
       "options": [
         "He flies away",
-        "He whistles a near perfect marimba",
+        "He whistles a marimba",
         "He says Bermúdez",
         "He bites Hernando's hat"
       ],

@@ -53,7 +53,7 @@
     {
       "q": "Why does the uncle's farm change the plan?",
       "options": [
-        "Its milk, cheese and fruit can replace expensive imported ingredients",
+        "Its produce replaces imports",
         "He wants to sell it to Altamira",
         "It is next to the café",
         "It has a big oven"
@@ -63,7 +63,7 @@
     {
       "q": "Why does Vale say Tomás's text is not advertising?",
       "options": [
-        "It sounds like a formal letter to the mayor",
+        "It is too formal",
         "It is too short",
         "It is in English",
         "It has no prices"
@@ -73,7 +73,7 @@
     {
       "q": "Why does Hernando give Vale an envelope?",
       "options": [
-        "He wants to pay Rosa back, once, for twenty years of meals",
+        "To repay Rosa for the meals",
         "He owes Vale money for coffee",
         "It is his rent for the corner table",
         "It is a letter from the Institute"
@@ -93,7 +93,7 @@
     {
       "q": "What does Vale do after reading the message from Medellín?",
       "options": [
-        "She switches off her phone and tells nobody",
+        "She tells nobody",
         "She shows it to Tomás",
         "She answers yes straight away",
         "She deletes the catalogue"
@@ -115,7 +115,7 @@
     {
       "q": "Whose line ends up on the leaflet?",
       "options": [
-        "Vale's: Rosa's bread, handmade, like it used to be",
+        "Vale's bread line",
         "Tomás's formal sentence",
         "Hernando's joke about bosses",
         "Luz Dary's business plan"

@@ -71,7 +71,7 @@
     {
       "q": "Why is Simón's «¡No sé nada!» funny?",
       "options": [
-        "He repeats Hernando's excuse word for word",
+        "He copies Hernando's line",
         "He really knows the answer",
         "He says it in English",
         "Nobody asked him"
@@ -81,7 +81,7 @@
     {
       "q": "What slip does Hernando make?",
       "options": [
-        "He describes the young man as a shy, hard-working boy",
+        "He calls the young man a shy, hard-working boy",
         "He says the man's name",
         "He says the man is Tomás's grandfather",
         "He says Rosa was his wife"
@@ -113,7 +113,7 @@
     {
       "q": "¿Cómo es Tomás, según Vale?",
       "options": [
-        "Trabajador y un poco tímido",
+        "Trabajador, tímido",
         "Perezoso y generoso",
         "Serio y alto"
       ],
@@ -132,7 +132,7 @@
     {
       "q": "Who does Hernando compare the young man with?",
       "options": [
-        "Simón: the young man wasn't lazy like him",
+        "Simón, who is lazy",
         "Tomás's father",
         "Don Hernando himself",
         "Vale"

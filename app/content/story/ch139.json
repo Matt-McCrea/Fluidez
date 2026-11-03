@@ -77,7 +77,7 @@
     {
       "q": "What does the committee decide?",
       "options": [
-        "To ask for an independent study and decide in three months",
+        "To get an independent study",
         "To protect the house for ever",
         "To let Altamira knock it down",
         "To close the café"
@@ -87,7 +87,7 @@
     {
       "q": "Why does the lawyer's friendly tone feel cold?",
       "options": [
-        "Because he is warning Tomás that a lot can happen in three months",
+        "Because he is warning Tomás",
         "Because he is shouting",
         "Because he speaks in English",
         "Because he is ill"
@@ -107,7 +107,7 @@
     {
       "q": "What news does Mariana's source give?",
       "options": [
-        "Rengifo left the country last night, and he allegedly took money from Altamira",
+        "Rengifo left and allegedly took money",
         "Altamira has sold the hotel",
         "The committee changed its mind",
         "Yesid's grandmother is coming to Bogotá"
@@ -129,7 +129,7 @@
     {
       "q": "What is unusual about the parrot in the children's drawings?",
       "options": [
-        "He is bigger than the building",
+        "He is enormous",
         "He is blue",
         "He is wearing a tie",
         "He is asleep"
@@ -139,7 +139,7 @@
     {
       "q": "What does Yesid do when he hears Mariana's news?",
       "options": [
-        "He puts down his piece of cake without tasting it",
+        "He leaves his cake",
         "He leaves the café",
         "He laughs",
         "He calls his mother"

@@ -75,7 +75,7 @@
       "options": [
         "She has turned down Correa",
         "She is going back to Medellín for good",
-        "She has accepted the trial month and leaves on Sunday",
+        "She has accepted the trial and leaves Sunday",
         "She is opening a bakery in Madrid"
       ],
       "answer": 2
@@ -86,14 +86,14 @@
         "He is angry again",
         "He says nothing at all",
         "He asks her to stay",
-        "He is honestly glad for her and tells her the oven will wait"
+        "He is glad and the oven will wait"
       ],
       "answer": 3
     },
     {
       "q": "¿De dónde procede la receta de pandebono de la casa?",
       "options": [
-        "De doña Rosa, y antes, de su mamá",
+        "De doña Rosa",
         "De Madrid",
         "De un libro de Correa",
         "De Gloria"
@@ -104,7 +104,7 @@
       "q": "When Vale says \"Hablo de la masa\", what is the reader meant to feel?",
       "options": [
         "That she is only talking about cooking",
-        "That she may also be talking about Tomás and herself",
+        "That she may also be talking about them",
         "That she is angry with Gloria",
         "That the dough is ruined"
       ],
@@ -118,7 +118,7 @@
       "options": [
         "Simón",
         "Hernando",
-        "The Canadian, and Gloria a little",
+        "The Canadian",
         "Lucía"
       ],
       "answer": 2
@@ -127,7 +127,7 @@
       "q": "What does Hernando compare Vale's trial month to?",
       "options": [
         "A taxi ride",
-        "A cold that lasted a month",
+        "A monthlong cold",
         "A wedding",
         "A football season"
       ],

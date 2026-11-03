@@ -94,7 +94,7 @@
       "q": "Why did Rosa throw the mop water over the senator?",
       "options": [
         "He insulted her coffee",
-        "He ate and tried to leave without paying",
+        "He ate and wouldn't pay",
         "He slipped on her clean floor",
         "He wanted to buy the café"
       ],
@@ -104,7 +104,7 @@
       "q": "How did the senator answer when Rosa asked him to pay?",
       "options": [
         "He paid at once",
-        "He asked her if she knew who he was",
+        "He asked her if she knew him",
         "He called the police",
         "He asked for more ajiaco"
       ],
@@ -123,7 +123,7 @@
     {
       "q": "What does Mariana's joke about the bucket mean?",
       "options": [
-        "Altamira is getting ready to take the café, but they can fight back the way Rosa did",
+        "They can fight back like Rosa did",
         "Altamira wants to buy a bucket",
         "The café needs cleaning",
         "Mariana wants to throw water at Hernando"
@@ -134,7 +134,7 @@
       "q": "Why does Hernando stop smiling at the end?",
       "options": [
         "The ajiaco is cold",
-        "He has another story about Rosa, one without jokes",
+        "He has a story, no jokes",
         "Simón bit him",
         "Vale insulted his cooking"
       ],
@@ -166,7 +166,7 @@
       "q": "How did the bodyguards leave the café?",
       "options": [
         "Laughing",
-        "Slipping in the water behind the senator",
+        "Slipping in the water",
         "In Hernando's taxi",
         "They paid and walked out"
       ],

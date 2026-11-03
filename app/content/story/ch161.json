@@ -53,7 +53,7 @@
     {
       "q": "Why does Hernando suddenly become a president?",
       "options": [
-        "The form asks for an organization, so he invents a residents' association on the spot",
+        "He invents a residents' association",
         "The neighbours vote for him",
         "Mariana appoints him to the Institute",
         "He wins a radio competition"
@@ -63,7 +63,7 @@
     {
       "q": "Why do they finish the form by hand?",
       "options": [
-        "The works next door broke a cable and the café has no electricity",
+        "The café has no power",
         "Simón ate the computer charger",
         "The Institute does not accept typed forms",
         "Tomás's computer was stolen"
@@ -73,7 +73,7 @@
     {
       "q": "What does clause seven require?",
       "options": [
-        "Every owner must sign and give up the right to demolish the house",
+        "Owners sign and give up demolition",
         "The café must close during the study",
         "Altamira must pay for the study",
         "The parrot must leave the house"
@@ -83,7 +83,7 @@
     {
       "q": "¿Qué propone Tomás para la familia de Joaquín?",
       "options": [
-        "Una sociedad de las dos familias, donde nadie vende",
+        "Una sociedad donde nadie vende",
         "Venderle su parte a Altamira",
         "Pagarle trescientos ochenta mil pesos",
         "Escribirle a la Alcaldía"
@@ -93,7 +93,7 @@
     {
       "q": "What is likely to happen next?",
       "options": [
-        "Tomás writes a formal letter to Yesid's grandmother",
+        "Tomás writes her a letter",
         "Hernando resigns as president",
         "Gloria asks for her money back",
         "The Institute rejects the form"

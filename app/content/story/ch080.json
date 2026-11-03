@@ -57,7 +57,7 @@
     {
       "q": "Why does Vale stop Tomás from starting with \"¡Hola, primo!\"?",
       "options": [
-        "The Herreras in Santa Marta don't know him, so the email should be formal",
+        "They don't know him, so it's formal",
         "Primo is a rude word in Colombia",
         "Joaquín has no cousins",
         "Vale wants to write the email herself"
@@ -89,7 +89,7 @@
       "options": [
         "A reply from Joaquín",
         "A call from Altamira",
-        "A one star comment about the café online",
+        "A one star comment",
         "Mariana's article"
       ],
       "answer": 2

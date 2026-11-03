@@ -70,7 +70,7 @@
       "q": "Who is on the jury?",
       "options": [
         "Three journalists",
-        "A historian, a mathematician and a Jesuit priest",
+        "Historian, math expert, priest",
         "Altamira and two lawyers",
         "Mariana, Hernando and Jhon Fredy"
       ],
@@ -79,7 +79,7 @@
     {
       "q": "Why does Gloria get confused by the word oración?",
       "options": [
-        "She thinks it means a prayer, while Mariana means a sentence",
+        "She thinks it means a prayer",
         "She thinks it is a cake",
         "She has never heard it",
         "She thinks it is a type of coffee"
@@ -90,7 +90,7 @@
       "q": "¿Qué le pasa a Hernando cuando baja del cuarto de Rosa?",
       "options": [
         "Se cae",
-        "Le falta el aire y se sienta",
+        "Le falta el aire",
         "Encuentra una carta",
         "Se duerme"
       ],
@@ -113,7 +113,7 @@
       "q": "Why does Mariana stop Tomás when he starts with \"El presente trabajo se propone\"?",
       "options": [
         "It is too informal",
-        "That's for a thesis; he should answer as Rosa's grandson",
+        "It's for a thesis",
         "He said it wrong",
         "It is too long"
       ],
@@ -122,7 +122,7 @@
     {
       "q": "Why does Jhon Fredy study chemistry?",
       "options": [
-        "Because there are formulas, unlike in biology or cities",
+        "Because of formulas",
         "His mother told him to",
         "For the money",
         "Because of Yesid"

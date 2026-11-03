@@ -71,7 +71,7 @@
     {
       "q": "What does Tomás say caused the cracks in the house?",
       "options": [
-        "The demolition of the house next door in 2023",
+        "The nearby demolition",
         "The earthquake of 1983",
         "Rosa's kitchen",
         "Water from the roof"
@@ -91,7 +91,7 @@
     {
       "q": "Why does Tomás come downstairs with a strange feeling?",
       "options": [
-        "Yesid hung up very quickly and apologised too fast when he saw him",
+        "Yesid hung up too quickly",
         "The box of letters was empty",
         "Vale was crying",
         "Simón had escaped"
@@ -123,7 +123,7 @@
     {
       "q": "What does Yesid say about the phone call?",
       "options": [
-        "That it was his mother, worried about the cold",
+        "That it was his mother",
         "That it was Mariana",
         "That it was a wrong number",
         "That it was his boss in Taganga"

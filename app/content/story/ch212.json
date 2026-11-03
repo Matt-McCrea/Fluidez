@@ -190,7 +190,7 @@
       "q": "Why does Fabiola speak to Tomás with usted?",
       "options": [
         "She is angry with him",
-        "In Antioquia usted can be a sign of affection",
+        "It shows affection",
         "She thinks he is a stranger",
         "She is being sarcastic"
       ],
@@ -200,7 +200,7 @@
       "q": "Why does the police chief let them through without papers for the parrot?",
       "options": [
         "Tomás shows him a document",
-        "Fabiola has known him since he was a little boy",
+        "She knew him as a boy",
         "Gildardo pays him",
         "Simón talks to him"
       ],
@@ -211,7 +211,7 @@
       "options": [
         "A map of the coast",
         "A portrait of Rosa",
-        "The door and window of Rosa's café, dated June 1978",
+        "Rosa's café door",
         "A parrot"
       ],
       "answer": 2
@@ -220,7 +220,7 @@
       "q": "¿Qué quiere Fabiola para su cumpleaños?",
       "options": [
         "Regalos caros de Medellín",
-        "Algo que valga la pena, pero no comprado",
+        "Algo valioso pero no comprado",
         "Una torta de Vale y nada más",
         "Un viaje a Bogotá"
       ],
@@ -233,7 +233,7 @@
       "q": "Why do Tomás's knee and walk worry Fabiola?",
       "options": [
         "He fell off the bus",
-        "He has a carnival injury from dancing cumbia",
+        "He hurt it dancing",
         "He slipped at the airport",
         "He was bitten by a dog"
       ],
@@ -243,7 +243,7 @@
       "q": "Why did Fabiola never tell Vale about the drawing?",
       "options": [
         "She had forgotten it",
-        "Vale only ever asked about the rooster",
+        "Only the rooster came up",
         "Her husband told her not to",
         "She was angry with Joaquín"
       ],
@@ -253,7 +253,7 @@
       "q": "¿Qué hace Tomás con las fotos del dibujo?",
       "options": [
         "Se las manda a Gloria",
-        "Las borra y mira el dibujo sin celular",
+        "Las borra, mira dibujo",
         "Las publica en internet",
         "Las imprime"
       ],

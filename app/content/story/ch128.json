@@ -101,7 +101,7 @@
     {
       "q": "What does Altamira offer through Paola?",
       "options": [
-        "To drop the contract and pay double, if Tomás drops the lab request",
+        "Drop contract, pay double",
         "To build the hotel somewhere else",
         "A job for Tomás in software",
         "To pay Yesid's bus ticket"
@@ -111,7 +111,7 @@
     {
       "q": "Who does Paola blame for any \"irregularity\" with the contract?",
       "options": [
-        "Duarte, who no longer works for them",
+        "Duarte",
         "Yesid's uncle",
         "The notary",
         "Tomás"
@@ -121,7 +121,7 @@
     {
       "q": "How does Paola find out that Tomás is recording?",
       "options": [
-        "His arm sets off the recorder, and it plays Simón's voice",
+        "It plays Simón's voice",
         "Mariana phones during the meeting",
         "She searches his pockets",
         "The guard tells her"

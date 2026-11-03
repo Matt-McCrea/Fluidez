@@ -81,7 +81,7 @@
     {
       "q": "What is the problem with the bank's loan?",
       "options": [
-        "The interest would add seven million pesos",
+        "Interest adds seven million",
         "The bank is owned by Altamira",
         "The bank is closed on Sundays",
         "The bank wants the building"
@@ -91,7 +91,7 @@
     {
       "q": "What finally convinces Tomás to accept the vaca?",
       "options": [
-        "Hernando reminds him that Rosa and Joaquín lost forty-six years to pride",
+        "Pride cost Rosa and Joaquín",
         "Vale threatens to leave",
         "Mariana pays the debt herself",
         "The bank calls"
@@ -124,7 +124,7 @@
     {
       "q": "Where are people now asked for a coin for the vaca?",
       "options": [
-        "In the corner shop, with every purchase",
+        "In the corner shop",
         "At the bank",
         "At the church",
         "At the bus stop"

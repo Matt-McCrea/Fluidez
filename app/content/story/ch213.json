@@ -254,7 +254,7 @@
       "q": "What present does Tomás give Fabiola?",
       "options": [
         "A gold necklace",
-        "Her old radio, repaired with Mateo's help",
+        "Her old radio",
         "A song",
         "A cake"
       ],
@@ -264,7 +264,7 @@
       "q": "Why does Fabiola wear a snake pendant?",
       "options": [
         "She was born in the year of the snake",
-        "Her husband killed a snake in her kitchen and gave it to her when he proposed",
+        "Her husband gave it when he proposed",
         "She found it in the shed",
         "Joaquín made it"
       ],
@@ -274,7 +274,7 @@
       "q": "What secret does Fabiola reveal?",
       "options": [
         "She knew Rosa as a child",
-        "For thirty years she was the radio advice columnist, under a pen name",
+        "She wrote a radio column",
         "She wrote Joaquín's song",
         "She is selling the farm"
       ],
@@ -284,7 +284,7 @@
       "q": "¿Qué le dice Fabiola a Tomás al final?",
       "options": [
         "Que se vuelva a Toronto",
-        "Que le falta madurez, no tiempo, para decir las cosas",
+        "Que es madurez, no tiempo",
         "Que aprenda a hablar de vos",
         "Que arregle más radios"
       ],
@@ -307,7 +307,7 @@
       "q": "How did Fabiola answer her husband's anonymous letter?",
       "options": [
         "She read it out on the radio",
-        "She said the answer was in the pot of beans, and cooked him beans that night",
+        "She cooked him beans that night",
         "She never answered",
         "She wrote back with her real name"
       ],

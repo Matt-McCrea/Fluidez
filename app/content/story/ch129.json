@@ -117,7 +117,7 @@
     {
       "q": "Why does the clerk's assistant help Tomás?",
       "options": [
-        "The clerk left a note telling him to look after \"the man with the parrot\"",
+        "The clerk left him a note",
         "Tomás pays him",
         "Hernando knows him from the taxi union",
         "The strike is over"
@@ -127,7 +127,7 @@
     {
       "q": "What does Duarte insist about leaving Altamira?",
       "options": [
-        "He says he resigned and was not fired",
+        "He says he resigned",
         "He says he was fired by email",
         "He says he still works there",
         "He says Paola fired him"
@@ -137,7 +137,7 @@
     {
       "q": "What is Duarte's condition for giving his evidence?",
       "options": [
-        "That the law firm drops its lawsuit against him",
+        "That the firm drops its lawsuit",
         "That Tomás sells the café",
         "That Mariana does not publish his name",
         "A job at the café"
@@ -147,7 +147,7 @@
     {
       "q": "¿Quién puso la huella en el contrato, según Duarte?",
       "options": [
-        "Un muchacho del bufete",
+        "Un joven del bufete",
         "El tío de Yesid",
         "Paola Rey",
         "El notario"
@@ -157,7 +157,7 @@
     {
       "q": "What was Altamira counting on, according to Duarte?",
       "options": [
-        "That the Herreras never spoke to each other",
+        "That the Herreras never talked",
         "That the court would go on strike",
         "That Tomás would go back to Toronto",
         "That Rosa had no letters"
@@ -179,7 +179,7 @@
     {
       "q": "How did Rosa treat Duarte when he came to the café?",
       "options": [
-        "She served him a coffee and did not let him speak",
+        "She gave him coffee and no chance to speak",
         "She threw him out",
         "She signed his offer",
         "She called the police"

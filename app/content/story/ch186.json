@@ -106,7 +106,7 @@
       "q": "What did the second joke make fun of?",
       "options": [
         "The hotel's prices",
-        "Altamira's report on the house",
+        "Altamira's report",
         "The mayor",
         "Simón"
       ],
@@ -116,7 +116,7 @@
       "q": "How does the manager try to stop the jokes?",
       "options": [
         "She offers money",
-        "She threatens to hand the matter to the hotel's lawyers",
+        "She threatens to sue",
         "She calls the police",
         "She buys the chalkboard"
       ],
@@ -126,7 +126,7 @@
       "q": "Why does Hernando ask Jhon Fredy, very quietly, for help with his phone?",
       "options": [
         "He wants to delete his account",
-        "He wants to save the photo his daughter is proud of",
+        "He wants to save a photo",
         "He wants to call Altamira",
         "He lost his glasses"
       ],
@@ -135,7 +135,7 @@
     {
       "q": "¿Por qué bajó la turista al café?",
       "options": [
-        "Porque arriba el café es horrible y cuesta el triple",
+        "Porque arriba es caro",
         "Porque quería ver a Simón",
         "Porque el hotel estaba cerrado",
         "Porque conocía a Tomás"

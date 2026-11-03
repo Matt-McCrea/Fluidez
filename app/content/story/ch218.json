@@ -129,7 +129,7 @@
       "options": [
         "Yesid",
         "Efraín",
-        "Simón, with a whistle",
+        "Simón",
         "Tomás"
       ],
       "answer": 2
@@ -138,7 +138,7 @@
       "q": "Why did Leonor's review hurt her, according to what she tells everyone?",
       "options": [
         "She hates cafés",
-        "She knew Rosa, who gave her lunch on credit as a student, and it hurt to see her behind glass",
+        "Rosa behind glass hurt her",
         "Altamira paid her",
         "She had a bad cup of coffee"
       ],
@@ -148,7 +148,7 @@
       "q": "¿Qué ve Vale en el celular de Tomás?",
       "options": [
         "Un mensaje de Leonor",
-        "Un correo de Toronto con una oferta de trabajo",
+        "Una oferta de trabajo",
         "Una foto del hotel",
         "Una llamada de Mariana"
       ],
@@ -161,7 +161,7 @@
       "q": "What does Mauricio, the scriptwriter, want?",
       "options": [
         "To buy the café",
-        "To turn Hernando's book into a TV series",
+        "To adapt it for TV",
         "To write a review",
         "To play the trumpet"
       ],
@@ -171,7 +171,7 @@
       "q": "¿Qué le dice Gloria a Leonor cuando se sienta en la silla de la ventana?",
       "options": [
         "Que se vaya",
-        "Que se siente, pero que no le saque punta a nada",
+        "Que se siente, no critique",
         "Que la silla es de Hernando",
         "Que pague primero"
       ],
@@ -181,7 +181,7 @@
       "q": "Why does Tomás read the last line of verse twice?",
       "options": [
         "Because nobody heard",
-        "Because his voice failed the first time",
+        "Because his voice failed",
         "Because Leonor asked him to",
         "Because Simón interrupted"
       ],

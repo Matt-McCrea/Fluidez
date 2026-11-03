@@ -70,7 +70,7 @@
       "q": "Where was Rosa's notebook?",
       "options": [
         "In the photo album",
-        "Inside the counter, behind a loose brick",
+        "In the counter",
         "Under Simón's cage",
         "In Hernando's taxi"
       ],
@@ -79,7 +79,7 @@
     {
       "q": "Why does Tomás suddenly say «¡Claro!»?",
       "options": [
-        "He understands that Rosa hid her notebook in it",
+        "Rosa hid a notebook",
         "He has fixed the counter",
         "He likes cinnamon coffee",
         "He remembers the date"
@@ -89,7 +89,7 @@
     {
       "q": "What is Hernando's joke about being from the last century?",
       "options": [
-        "He is old, but he still works, unlike the modern espresso machine",
+        "He's old but still works",
         "He has never seen a recipe book",
         "He has never used a notebook",
         "He wants a new espresso machine"
@@ -99,7 +99,7 @@
     {
       "q": "¿Qué receta es de diciembre?",
       "options": [
-        "Natilla para los Gómez",
+        "La natilla",
         "Jugo de mango",
         "Pan de mazorca"
       ],
@@ -108,7 +108,7 @@
     {
       "q": "Why is Vale hopeful at the end?",
       "options": [
-        "Rosa's recipes could help them win the bet",
+        "Rosa's recipes could help win the bet",
         "Altamira has called",
         "The espresso machine works again",
         "Tomás has agreed to stay a year"
@@ -131,7 +131,7 @@
     {
       "q": "¿Dónde está Rosa en la foto?",
       "options": [
-        "Detrás de la vitrina del café",
+        "Detrás de la vitrina",
         "En el mercado",
         "En Toronto"
       ],

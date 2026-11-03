@@ -45,7 +45,7 @@
     {
       "q": "What are the two men doing in the street?",
       "options": [
-        "Measuring the café for Grupo Altamira",
+        "Measuring the café",
         "Selling bread",
         "Looking for Tomás's room",
         "Fixing the shower"
@@ -55,7 +55,7 @@
     {
       "q": "Why is Tomás's «¡Siga, siga! Está en su casa» funny here?",
       "options": [
-        "He welcomes the Altamira men as if the block were theirs",
+        "He welcomes them as owners",
         "He says it to Pacho the cat",
         "He says it in English",
         "He says it to Rosa's photo"
@@ -65,7 +65,7 @@
     {
       "q": "What does Hernando reveal about Joaquín?",
       "options": [
-        "They played football together in this street",
+        "They played soccer",
         "Joaquín is his brother",
         "Joaquín works for Altamira",
         "He never met Joaquín"
@@ -75,7 +75,7 @@
     {
       "q": "¿Qué queda cerquita, según Vale?",
       "options": [
-        "La panadería, la droguería y la tienda de la esquina",
+        "La panadería",
         "Muchos hoteles",
         "El aeropuerto"
       ],
@@ -84,7 +84,7 @@
     {
       "q": "What does Hernando do when Tomás asks where Joaquín is now?",
       "options": [
-        "He doesn't answer: he goes into the café alone",
+        "He doesn't answer",
         "He says Joaquín is in Medellín",
         "He calls Joaquín",
         "He shows Tomás a letter"

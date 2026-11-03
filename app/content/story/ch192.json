@@ -142,7 +142,7 @@
       "q": "What does Mariana criticise in Tomás's draft?",
       "options": [
         "It is too short",
-        "Phrases like \"la fijación de los aportes\" hide who decides and how much",
+        "It hides who decides",
         "It has spelling mistakes",
         "It doesn't mention the pastries"
       ],
@@ -152,7 +152,7 @@
       "q": "What do the two students ask for?",
       "options": [
         "A discount on coffee",
-        "That the empty rooms upstairs become housing for students",
+        "Student housing",
         "To vote twice",
         "Free pastries"
       ],
@@ -161,7 +161,7 @@
     {
       "q": "Why is there no consensus?",
       "options": [
-        "The uncle thinks the two families' votes should count for more than the neighbours'",
+        "The uncle wants more say",
         "Nobody wants Gloria in charge",
         "The neighbours want to sell the house",
         "Uribe refuses to help"
@@ -172,7 +172,7 @@
       "q": "¿Qué hace Yesid cuando se revienta el tubo?",
       "options": [
         "Llama a un plomero",
-        "Lo aprieta con una llave inglesa",
+        "Con una llave",
         "Cierra el café",
         "Se va a la piscina"
       ],
@@ -182,7 +182,7 @@
       "q": "What worries Dr Uribe about Montoya's letter?",
       "options": [
         "Its bad grammar",
-        "Altamira already knows about the cooperative, although the notice hasn't left the table",
+        "Altamira knows of it",
         "The price he offers",
         "That he wants to join"
       ],
@@ -205,7 +205,7 @@
       "q": "How did Yesid learn to swim?",
       "options": [
         "In the municipal pool",
-        "The sea taught him, and it doesn't charge either",
+        "The sea taught him",
         "His father paid for classes",
         "He never learned"
       ],

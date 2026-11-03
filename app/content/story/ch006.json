@@ -71,7 +71,7 @@
     {
       "q": "What job does Vale give Tomás for Friday?",
       "options": [
-        "Buying the fruit at Paloquemao, alone",
+        "Buying the fruit",
         "Baking the bread",
         "Painting the café",
         "Calling Mr Ruiz"
@@ -81,7 +81,7 @@
     {
       "q": "What does Hernando want on Sundays?",
       "options": [
-        "Chess and football on TV",
+        "Chess, sport",
         "Tango classes",
         "A film",
         "To sleep"
@@ -132,7 +132,7 @@
     {
       "q": "What is on Tomás's mind on his walk that night?",
       "options": [
-        "Thirty days, two million pesos and a parrot",
+        "2 million, a parrot",
         "His flight home",
         "Mr Ruiz's phone call",
         "Vale's buñuelos"

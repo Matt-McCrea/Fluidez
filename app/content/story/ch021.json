@@ -55,7 +55,7 @@
     {
       "q": "Why is Vale's \"you're early\" funny?",
       "options": [
-        "Tomás arrives at five to six after promising five, and Vale has been there for ages",
+        "Tomás is late, Vale first",
         "Tomás arrives at four in the morning",
         "Vale arrives after Tomás",
         "The café is closed today"
@@ -65,7 +65,7 @@
     {
       "q": "What does Vale give Tomás from the display case, and why does it matter?",
       "options": [
-        "Rosa's old watch: Rosa was never late, not once in forty years",
+        "Her watch: Rosa was never late",
         "Rosa's letter to Joaquín",
         "A towel, because Tomás has none",
         "Altamira's business card"
@@ -84,7 +84,7 @@
     {
       "q": "What has Tomás just agreed to?",
       "options": [
-        "A video job interview with a company in Toronto, on Thursday at eight in the evening",
+        "A video interview with a Toronto company",
         "Selling the café to Altamira",
         "A game of chess with Hernando on Thursday",
         "Arriving at the café at five every day"
@@ -97,7 +97,7 @@
     {
       "q": "Where are the soap and the towel?",
       "options": [
-        "In the bathroom cupboard",
+        "In a cupboard",
         "In the window",
         "In the café",
         "In the kitchen"

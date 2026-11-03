@@ -114,7 +114,7 @@
       "q": "What does Yesid bring in his folder?",
       "options": [
         "Fish recipes",
-        "His father's statutes from the Taganga fishermen's cooperative",
+        "His father's statutes",
         "A letter from Altamira",
         "Hernando's notebooks"
       ],
@@ -124,7 +124,7 @@
       "q": "Why did Yesid's father found a cooperative?",
       "options": [
         "To get rich",
-        "So he would never have a boss again, after working for one who kept everything",
+        "To never have a boss again",
         "To buy a bigger boat",
         "Because the law required it"
       ],
@@ -134,7 +134,7 @@
       "q": "What problem does Uribe find at the end?",
       "options": [
         "The statutes are illegal",
-        "The law requires at least twenty members, and they only have eight or nine",
+        "They have too few members",
         "The house is not protected",
         "Hernando cannot be a member"
       ],
@@ -154,7 +154,7 @@
       "q": "How does Hernando solve the problem of the missing members?",
       "options": [
         "He calls Altamira",
-        "He opens the green door to the neighbours, who were listening outside",
+        "He lets the neighbours in",
         "He counts Simón twice",
         "He asks Vale to find people in Medellín"
       ],
@@ -167,7 +167,7 @@
       "q": "Why does Dr Uribe bring her own flask?",
       "options": [
         "She doesn't drink coffee",
-        "She still doesn't trust other people's coffee",
+        "She trusts only her own",
         "The café was closed",
         "She is cold"
       ],
@@ -177,7 +177,7 @@
       "q": "Where does the second model statute come from?",
       "options": [
         "A fishermen's cooperative in Taganga",
-        "An association of oil workers in Barrancabermeja",
+        "Oil workers' association",
         "A hotel in Cartagena",
         "The mayor's office"
       ],

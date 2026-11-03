@@ -53,7 +53,7 @@
     {
       "q": "Why does Tomás rush out and say «No vendemos el café»?",
       "options": [
-        "He thinks the man in the black suit has come from Altamira, but it is Hernando",
+        "He takes him for Altamira",
         "Altamira has phoned the café",
         "He is talking to Simón",
         "He wants Hernando to leave"
@@ -63,7 +63,7 @@
     {
       "q": "What horrifies Vale and Hernando?",
       "options": [
-        "Tomás has never climbed Monserrate, never eaten ajiaco and never played tejo",
+        "He never tried ajiaco or tejo",
         "Tomás has never been on a plane",
         "Tomás cannot make a tinto",
         "Tomás has sold the café"
@@ -83,7 +83,7 @@
     {
       "q": "¿Dónde está el contrato de arriendo?",
       "options": [
-        "En el armario, con la carta de Rosa",
+        "En el armario",
         "En la vitrina",
         "En el aeropuerto"
       ],
@@ -92,7 +92,7 @@
     {
       "q": "Why is the last line about Simón surprising?",
       "options": [
-        "Simón always talks, and for once he says nothing",
+        "Simón is silent for once",
         "Simón is sleeping",
         "Simón orders a cappuccino",
         "Simón leaves the café"

@@ -53,7 +53,7 @@
     {
       "q": "According to Yesid, what did Altamira's lawyer offer him?",
       "options": [
-        "Twice what his half of the house is worth",
+        "Twice what his share is worth",
         "A job at the new hotel",
         "A flat in Cartagena",
         "Nothing, they only had lunch"
@@ -73,7 +73,7 @@
     {
       "q": "Why didn't Yesid give the lawyer his grandfather's baptism certificate?",
       "options": [
-        "His grandfather never used his ticket to Bogotá, and Yesid won't sell the trip he finally made",
+        "He won't sell his trip",
         "He had lost it",
         "Vale had hidden it",
         "The lawyer offered too little"
@@ -95,7 +95,7 @@
     {
       "q": "Why was Yesid inside the water tank?",
       "options": [
-        "Since the machines next door started, the water had been coming out dirty",
+        "The water came out dirty",
         "He was hiding from Vale",
         "He had lost his phone in it",
         "Hernando dared him to"
@@ -105,7 +105,7 @@
     {
       "q": "Who set up the Saturday lunch?",
       "options": [
-        "Yesid's uncle, who said it was with a friend of his",
+        "Yesid's uncle",
         "Mariana",
         "Wilson",
         "Altamira's press office"

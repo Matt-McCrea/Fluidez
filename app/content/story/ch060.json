@@ -57,7 +57,7 @@
     {
       "q": "What does Altamira offer Tomás in the letter?",
       "options": [
-        "To run the café of a new hotel, and money for his part of La Esquina de Rosa",
+        "Money and a job",
         "A free holiday",
         "To buy Simón",
         "A job in Toronto"
@@ -67,7 +67,7 @@
     {
       "q": "Why does the argument get louder?",
       "options": [
-        "Tomás wants trust, and Vale wants to know clearly who does what",
+        "He wants trust, she wants roles",
         "Vale wants to sign Altamira's letter",
         "Tomás wants to sell the café",
         "Jhon Fredy broke the coffee machine"
@@ -77,7 +77,7 @@
     {
       "q": "What is Jhon Fredy's point about the lion and the fish?",
       "options": [
-        "The fish's worst enemy is another fish, so they shouldn't fight each other",
+        "Fish shouldn't fight fish",
         "Lions are dangerous for cafés",
         "Altamira likes fish",
         "Fish can't swim"
@@ -97,7 +97,7 @@
     {
       "q": "How does the chapter end?",
       "options": [
-        "Vale goes into the kitchen and the letter stays on the table",
+        "Vale goes to the kitchen",
         "Tomás tears up the letter",
         "Vale signs the contract",
         "Hernando leaves the café"
@@ -120,7 +120,7 @@
     {
       "q": "Who opens a door when the shouting starts?",
       "options": [
-        "A woman from the floor above",
+        "A neighbour",
         "Gloria",
         "The inspector",
         "Mariana"

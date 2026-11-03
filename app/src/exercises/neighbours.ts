@@ -243,6 +243,12 @@ export function givesAwayByTag(options: readonly string[], answer: number): bool
 }
 
 /** What tapping the longest option scores on one question: the share of its longest options that are right (a tie is a coin). */
+export function shortestShare(options: readonly string[], answer: number): number {
+  const least = Math.min(...options.map((o) => o.length));
+  const tied = options.flatMap((o, i) => (o.length === least ? [i] : []));
+  return tied.includes(answer) ? 1 / tied.length : 0;
+}
+
 export function longestShare(options: readonly string[], answer: number): number {
   const most = Math.max(...options.map((o) => o.length));
   const tied = options.flatMap((o, i) => (o.length === most ? [i] : []));

@@ -61,7 +61,7 @@
     {
       "q": "Who was Yesid really talking to on the phone the night before the hearing?",
       "options": [
-        "His uncle, who wanted him to sell",
+        "His own uncle",
         "His mother",
         "Altamira's lawyer",
         "Doña Eulalia"
@@ -71,7 +71,7 @@
     {
       "q": "Why did Yesid lie about that call?",
       "options": [
-        "He was ashamed: his uncle had sold his grandfather's ID",
+        "Ashamed of his uncle",
         "He wanted to protect Vale",
         "Uribe told him to",
         "He didn't remember"
@@ -81,7 +81,7 @@
     {
       "q": "What did Hernando see on the Saturday of the lunch?",
       "options": [
-        "Yesid getting into a black car that was waiting for him on the corner",
+        "Yesid getting into a black car",
         "Yesid taking a taxi",
         "The lawyer coming into the café",
         "Wilson following Yesid"
@@ -91,7 +91,7 @@
     {
       "q": "¿Qué le advirtió el abogado a Yesid?",
       "options": [
-        "Que su tío iba a tener problemas con la policía si él hablaba",
+        "Que su tío tendría problemas",
         "Que el café iba a cerrar mañana",
         "Que Vale no lo quería",
         "Que tenía que volver a Taganga"
@@ -113,7 +113,7 @@
     {
       "q": "What is written on Hernando's napkin?",
       "options": [
-        "Three letters and three numbers",
+        "Three letters, numbers",
         "Altamira's phone number",
         "A joke",
         "The lawyer's name"

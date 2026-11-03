@@ -73,7 +73,7 @@
     {
       "q": "What does Altamira offer the café?",
       "options": [
-        "A bigger, modern space in Chapinero, two years without rent, and he pays for the move",
+        "A bigger space, two years rent free",
         "A job as director of a hotel in the west",
         "A loan to pay the inspector's fine",
         "Joaquín's address on the coast"
@@ -85,7 +85,7 @@
       "options": [
         "Simón",
         "Rosa's recipes",
-        "For them to leave the corner and for Tomás to sell him his half",
+        "For them to leave and sell",
         "A coffee every morning for free"
       ],
       "answer": 2
@@ -104,7 +104,7 @@
       "q": "Why can't Vale sleep?",
       "options": [
         "Simón is too noisy",
-        "The offer doesn't convince her, but she loved the kitchen in the photos",
+        "Unsure, but loves the kitchen",
         "She is angry with Tomás",
         "She has to bake a cake at three"
       ],
@@ -117,7 +117,7 @@
       "q": "What does Altamira say about Joaquín?",
       "options": [
         "That Joaquín is dead",
-        "That he is looking for him too, with more lawyers than Tomás",
+        "That he is looking too, with lawyers",
         "That Joaquín already sold him his half",
         "That he has never heard of him"
       ],
@@ -128,7 +128,7 @@
       "options": [
         "He doesn't pay",
         "With a card",
-        "He pays, and he doesn't wait for his change",
+        "He leaves his change",
         "Hernando pays for him"
       ],
       "answer": 2

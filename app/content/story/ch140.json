@@ -85,7 +85,7 @@
     {
       "q": "Why are they at the airport at five in the morning?",
       "options": [
-        "Mariana wants to check what her source said about Rengifo leaving the country",
+        "Mariana wants to check her source",
         "Tomás is flying back to Toronto",
         "They are picking up Yesid's grandmother",
         "Hernando wants to work as a taxi driver again"
@@ -95,7 +95,7 @@
     {
       "q": "What makes the airline clerk laugh?",
       "options": [
-        "Simón shouting through Vale's video call",
+        "Simón shouting on the call",
         "Hernando slipping on the floor",
         "Mariana's question",
         "Tomás's Spanish"
@@ -105,7 +105,7 @@
     {
       "q": "What does Chucho find in his taxi?",
       "options": [
-        "A newspaper with Mariana's name underlined twice in red",
+        "Her name in a newspaper",
         "A plane ticket to Panama",
         "A hundred dollar bill",
         "Rengifo's passport"
@@ -127,7 +127,7 @@
     {
       "q": "How did the nervous passenger pay Chucho?",
       "options": [
-        "With a hundred dollar bill, and he didn't want the change",
+        "With a hundred dollar bill",
         "By card",
         "He didn't pay",
         "With pesos and a big tip in coins"
@@ -137,7 +137,7 @@
     {
       "q": "According to Vale, how many words of Spanish did Tomás know when he arrived?",
       "options": [
-        "Four, because he also knew 'tinto'",
+        "Four",
         "Three",
         "None",
         "Ten"
@@ -147,7 +147,7 @@
     {
       "q": "Where is Yesid when they get back?",
       "options": [
-        "He has gone for a walk and left a note",
+        "He went for a walk",
         "Asleep upstairs",
         "At the airport",
         "In the kitchen with Vale"

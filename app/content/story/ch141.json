@@ -79,7 +79,7 @@
     {
       "q": "What does Duarte reveal?",
       "options": [
-        "A front company created by the law firm paid for an apartment for Rengifo's wife",
+        "A front company paid for a flat",
         "That he works for Altamira again",
         "That Rengifo is in Miami",
         "That Mariana's source is lying"
@@ -89,7 +89,7 @@
     {
       "q": "Why will the paper write 'presuntamente' instead of 'corruption'?",
       "options": [
-        "Because only a judge can call it corruption",
+        "Because only a judge can decide it",
         "Because it is shorter",
         "Because Osorio is afraid of Simón",
         "Because Duarte asked them to"
@@ -111,7 +111,7 @@
     {
       "q": "What does Tomás find when he types the two names into the search engine?",
       "options": [
-        "Old news, two videos of Simón and a recipe for ajiaco",
+        "Old news and videos",
         "Rengifo's address",
         "Nothing at all",
         "Duarte's phone number"
@@ -131,7 +131,7 @@
     {
       "q": "What is Yesid doing at the end?",
       "options": [
-        "Washing cups with his back to everyone, having broken two",
+        "Washing cups with his back turned",
         "Reading the newspaper",
         "Listening to the radio with Hernando",
         "Talking to Osorio"

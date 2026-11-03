@@ -49,7 +49,7 @@
     {
       "q": "Why can't Tomás say no to Gloria?",
       "options": [
-        "She really wants to go, and her husband doesn't go out at night any more",
+        "She really wants to go",
         "She is his landlady",
         "She bought him a ticket for the stadium",
         "She is Rosa's sister"
@@ -59,7 +59,7 @@
     {
       "q": "What is Tomás's plan for Friday?",
       "options": [
-        "Leave the concert at a quarter past eight and get to the salsa by half past",
+        "Leave the concert early",
         "Skip the concert",
         "Skip the salsa",
         "Take Gloria to the salsa"
@@ -79,7 +79,7 @@
     {
       "q": "¿Por qué Simón no va al estadio?",
       "options": [
-        "Porque gritó gol en un gol de Millonarios",
+        "Porque gritó por Millos",
         "Porque está enfermo",
         "Porque no tiene boleta",
         "Porque no le gusta el fútbol"

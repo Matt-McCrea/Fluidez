@@ -66,7 +66,7 @@
       "q": "What does Tomás first think Hernando's notebooks are?",
       "options": [
         "A diary full of secrets",
-        "A database of fares, written down in detail",
+        "A detailed fare database",
         "A book that is already finished",
         "Rosa's old recipes"
       ],
@@ -97,7 +97,7 @@
       "options": [
         "A photo of Rosa",
         "A fare that was never paid",
-        "A line with the café's address that says Hernando still hasn't told her",
+        "A line giving the address",
         "A letter from Joaquín"
       ],
       "answer": 2
@@ -119,7 +119,7 @@
       "q": "What does Vale ask Tomás to tell Hernando?",
       "options": [
         "To write faster",
-        "Not to show the book to anyone before her",
+        "Not to show anyone first",
         "To start with his childhood",
         "To put her in the book"
       ],
@@ -129,7 +129,7 @@
       "q": "What does Hernando compare a new creation to?",
       "options": [
         "A taxi without petrol",
-        "Tomás's bread, because both start badly",
+        "Tomás's bread",
         "A football match",
         "Simón's songs"
       ],

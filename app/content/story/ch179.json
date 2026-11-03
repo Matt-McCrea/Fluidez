@@ -70,7 +70,7 @@
       "q": "Why didn't Hernando tell Rosa that Sunday in 1978?",
       "options": [
         "Rosa was away in Medellín",
-        "Joaquín arrived with his debt, they fought, and afterwards Rosa was alone and crying",
+        "Rosa was alone, in tears",
         "His taxi broke down",
         "He forgot"
       ],
@@ -80,7 +80,7 @@
       "q": "What does Tomás propose for chapter three?",
       "options": [
         "To leave Rosa out",
-        "To write what would have happened if Hernando had told her, choosing each tense on purpose",
+        "To write the other version",
         "To let Mariana write it",
         "To tell it all in the present"
       ],
@@ -90,7 +90,7 @@
       "q": "In Hernando's conditional chapter, what would Rosa have done?",
       "options": [
         "Closed the café",
-        "Said no kindly and poured him another coffee on the house",
+        "Said no kindly",
         "Left with Joaquín",
         "Married him"
       ],
@@ -99,7 +99,7 @@
     {
       "q": "¿Qué le dice Hernando a su hija sobre Chía?",
       "options": [
-        "Que no ha dicho que sí, pero que el baño no está feo",
+        "Que no ha dicho que sí",
         "Que ya se va a vivir allá",
         "Que nunca va a mirar los planos",
         "Que la casa es muy fea"
@@ -110,7 +110,7 @@
       "q": "What does Gloria bring back from the market square?",
       "options": [
         "Fresh bread",
-        "Three rumours: the café is closing, Altamira has a judge, and Tomás has bought a ticket to Toronto",
+        "Three rumours",
         "A letter from Madrid",
         "News from Vale"
       ],
@@ -123,7 +123,7 @@
       "q": "Why did Hernando come on Sundays but order nothing?",
       "options": [
         "He had no money",
-        "So that there would be no record of it",
+        "To leave no record",
         "Rosa told him to",
         "The café was closed"
       ],
@@ -133,7 +133,7 @@
       "q": "Where was Hernando going to invite Rosa?",
       "options": [
         "To the theatre",
-        "To lunch at his cousin's cabin in La Calera",
+        "To a cabin lunch",
         "To Santa Marta",
         "To the cathedral"
       ],

@@ -132,7 +132,7 @@
       "q": "Why does Camila insist on the collaboration?",
       "options": [
         "She admires Altamira",
-        "If the numbers don't rise this week she'll be fired",
+        "She could be fired soon",
         "She wants to buy the café",
         "She is Hernando's niece"
       ],
@@ -142,7 +142,7 @@
       "q": "What is the difference between mocking and 'mamar gallo', according to Hernando?",
       "options": [
         "There is none",
-        "Mocking the weak is cowardly; teasing the powerful is mamar gallo",
+        "Mocking the weak is cowardly",
         "Mamar gallo is only for friends",
         "Mocking is funnier"
       ],
@@ -152,7 +152,7 @@
       "q": "What shows that Camila learned the lesson?",
       "options": [
         "She quits that night",
-        "That night the screen shows a joke at the hotel's own expense",
+        "The screen mocks the hotel",
         "She writes on the chalkboard",
         "She sends Hernando flowers"
       ],
@@ -161,7 +161,7 @@
     {
       "q": "¿Qué escribe Gloria en el tablero de los rumores?",
       "options": [
-        "Que la pantalla cuesta un ojo de la cara y no hace reír",
+        "Que es cara y aburrida",
         "Que el café cierra",
         "Que Camila es su sobrina",
         "Un chiste sobre Simón"
@@ -195,7 +195,7 @@
       "q": "What does Hernando reply to Vale's message?",
       "options": [
         "Nothing",
-        "That it's curious her aunt finds out everything before he does",
+        "That her aunt knows first",
         "That he is not tender",
         "A joke about Medellín"
       ],

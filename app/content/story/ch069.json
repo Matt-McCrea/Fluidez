@@ -109,7 +109,7 @@
       "options": [
         "That Altamira owns the building",
         "That Rosa sold the café in 1978",
-        "That Rosa and Joaquín bought the building half and half, but Joaquín never signed",
+        "Joaquín never signed the papers",
         "That the building has no address"
       ],
       "answer": 2
@@ -127,7 +127,7 @@
     {
       "q": "Why is this news good and bad at the same time?",
       "options": [
-        "Without Joaquín's half nobody can sell, not even to Altamira, but the café can't prove who owns it",
+        "Nobody can sell, but there is no proof",
         "The café gets free rent",
         "Hernando gets his taxi back",
         "Tomás can go home"
@@ -142,7 +142,7 @@
       "options": [
         "By bus",
         "On foot",
-        "In Hernando's first taxi",
+        "By taxi",
         "In the Burra"
       ],
       "answer": 2
@@ -161,7 +161,7 @@
       "q": "How does Hernando describe what he says to the clerk?",
       "options": [
         "As a joke",
-        "As information, not a threat",
+        "As information",
         "As a favour",
         "As an order"
       ],

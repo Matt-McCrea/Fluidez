@@ -78,7 +78,7 @@
       "q": "Why does Hernando close the café?",
       "options": [
         "There are no customers",
-        "He wants Tomás and Vale to eat and stop arguing",
+        "He wants them to eat",
         "Altamira is coming",
         "It is a holiday"
       ],
@@ -88,7 +88,7 @@
       "q": "What do the salt shaker and the sugar bowl stand for?",
       "options": [
         "Tomás and Vale",
-        "Two possible outcomes of the fight",
+        "Two possible outcomes",
         "Rosa and Joaquín",
         "The café and the hotel"
       ],
@@ -98,7 +98,7 @@
       "q": "What compromise does Tomás propose?",
       "options": [
         "Sell now and split the money",
-        "Look for proof until Tuesday, and if there is none, listen to Altamira together",
+        "Look for proof first",
         "Let Hernando decide",
         "Ask Joaquín"
       ],
@@ -108,7 +108,7 @@
       "q": "Why does Hernando leave without finishing his chocolate?",
       "options": [
         "He is tired",
-        "He heard Tomás say that maybe they will sell",
+        "Tomás might sell",
         "Simón ate it",
         "Mariana called him"
       ],
@@ -140,7 +140,7 @@
       "q": "What does Marta's nephew have?",
       "options": [
         "A photo of the towel",
-        "A copy of the email about the trip",
+        "An email about the trip",
         "The signed permits",
         "Joaquín's address"
       ],

@@ -67,7 +67,7 @@
     {
       "q": "Why does Mariana call the chain of people \"el teléfono roto\"?",
       "options": [
-        "Each person in the chain changes the story a little",
+        "Each changes the story",
         "Hernando's phone is broken",
         "Libardo keeps hanging up",
         "Nobody answers the phone"
@@ -77,7 +77,7 @@
     {
       "q": "What commission does Tomás finally offer Libardo?",
       "options": [
-        "Zero pesos and a box of almojábanas",
+        "Almojábanas, no pesos",
         "Ten per cent",
         "A free taxi ride",
         "A free coffee every day"
@@ -87,7 +87,7 @@
     {
       "q": "¿Adónde tiene que ir Mariana mañana?",
       "options": [
-        "A una reunión de la comisión de la alcaldía",
+        "A la reunión de la comisión",
         "A Santa Marta",
         "A la clínica",
         "Al mercado"
@@ -97,7 +97,7 @@
     {
       "q": "What makes the search harder at the end?",
       "options": [
-        "The man with the boat has no mobile phone",
+        "The boatman has no phone",
         "Libardo wants more money",
         "Wilmer has died",
         "The man has moved to Bogotá"
@@ -129,7 +129,7 @@
     {
       "q": "Who does Hernando say Libardo is talking to when Simón shouts?",
       "options": [
-        "A parrot that is part of the family",
+        "A parrot",
         "The radio",
         "Tomás",
         "A customer"

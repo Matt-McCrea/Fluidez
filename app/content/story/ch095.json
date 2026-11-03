@@ -87,7 +87,7 @@
     {
       "q": "Why does Dra. Uribe say no to Mariana at first?",
       "options": [
-        "She works alone, with no assistant, and is not free until January",
+        "She is busy until January",
         "She thinks the case is hopeless",
         "She works for Altamira",
         "She does not like parrots"
@@ -99,7 +99,7 @@
       "options": [
         "Vale offers her a lot of money",
         "Hernando tells her a joke",
-        "She sees Rosa's photo and remembers the free coffees Rosa gave her as a student",
+        "Rosa's photo and her free coffees",
         "Mariana promises to put her in the magazine"
       ],
       "answer": 2
@@ -117,7 +117,7 @@
     {
       "q": "Why does Uribe warn them before she leaves?",
       "options": [
-        "Altamira's lawyers could find Joaquín first and offer him money to sell",
+        "Lawyers could find him first",
         "The parrot could tell the neighbours everything",
         "Mariana's article comes out on Sunday",
         "The café's coffee is too strong"

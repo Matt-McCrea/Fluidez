@@ -94,7 +94,7 @@
       "q": "What sentence on the back cover makes Tomás angry?",
       "options": [
         "That Hernando wrote with sensitivity",
-        "The taxi driver who did not live to see his book",
+        "The taxi driver who did not see his book",
         "That the book is too long",
         "That Rosa was a dancer"
       ],
@@ -104,7 +104,7 @@
       "q": "Who is Tomás angry with, apart from the publisher?",
       "options": [
         "Vale",
-        "Himself, for sending Hernando home alone in a taxi",
+        "Himself",
         "Simón",
         "Lucía"
       ],
@@ -114,7 +114,7 @@
       "q": "Why is the parcel from Lucía such a relief?",
       "options": [
         "It contains money",
-        "It is the advance copy, and Hernando saw it before he died",
+        "It's the advance copy",
         "It is a letter from Rosa",
         "It cancels the book"
       ],

@@ -105,7 +105,7 @@
     {
       "q": "Why does Tomás ask the doctor to repeat herself?",
       "options": [
-        "She speaks fast and uses medical words",
+        "She talks fast with medical words",
         "She speaks English",
         "Hernando keeps interrupting",
         "The room is noisy"
@@ -115,7 +115,7 @@
     {
       "q": "How often must Hernando take his pill?",
       "options": [
-        "Three times a day, with meals",
+        "3 a day, with meals",
         "Once a day, at night",
         "Only when he has pain",
         "Twice a week"
@@ -125,7 +125,7 @@
     {
       "q": "What does Vale mean by «Eso se puede arreglar»?",
       "options": [
-        "She jokes that she could make him rest for good",
+        "She jokes she'd make him rest",
         "She will fix the coffee machine",
         "She will pay for the medicine",
         "She will find another doctor"
@@ -135,7 +135,7 @@
     {
       "q": "Why does Hernando want to get better?",
       "options": [
-        "He wants to be at the city hall meeting in December",
+        "He wants to attend the meeting",
         "He wants to drive the Burra again",
         "He wants to go to the coast",
         "He wants to win at dominoes"

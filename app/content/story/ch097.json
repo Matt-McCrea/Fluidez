@@ -82,7 +82,7 @@
       "q": "Why does the teenager leave without a coffee?",
       "options": [
         "The café is closed",
-        "He orders 'number four' from Tomás's list, and number four is the police station",
+        "Number four is the police",
         "Jhon Fredy is rude to him",
         "He has no money"
       ],
@@ -91,7 +91,7 @@
     {
       "q": "Why does Tomás go red?",
       "options": [
-        "Vale asks him about number seven on the list",
+        "Vale asks about number seven",
         "Hernando tells a joke about him",
         "He spills the coffee",
         "Simón calls him a tourist"
@@ -102,7 +102,7 @@
       "q": "What are the men from the white truck doing?",
       "options": [
         "Delivering a new oven",
-        "Measuring the café for the hotel lobby",
+        "Measuring the café for the lobby",
         "Looking for Joaquín",
         "Bringing Hernando's newspaper"
       ],
@@ -111,7 +111,7 @@
     {
       "q": "¿Qué piensa hacer Hernando hoy mismo?",
       "options": [
-        "Llamar a sus colegas de la costa",
+        "Llamar a sus colegas",
         "Ir a la comisaría",
         "Hablar con Altamira",
         "Escribir en Facebook"
@@ -122,7 +122,7 @@
       "q": "Why does Tomás say no to the TV camera for now?",
       "options": [
         "He is shy",
-        "They are waiting for Dra. Uribe, who agreed to call on Monday",
+        "They wait for Uribe",
         "Mariana's friend is busy",
         "The camera is broken"
       ],

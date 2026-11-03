@@ -71,7 +71,7 @@
     {
       "q": "What does Hernando tell the writer who calls?",
       "options": [
-        "That this story already has a writer: Hernando himself",
+        "That Hernando is the writer",
         "That Tomás will call him back",
         "That the family has no story",
         "That he should write about Altamira"
@@ -81,7 +81,7 @@
     {
       "q": "Why does Mariana tell Tomás to ask for the company's name?",
       "options": [
-        "She suspects the caller is working for Altamira",
+        "She thinks it is Altamira",
         "She wants to sell them a story",
         "She knows the company",
         "She wants to write to them"
@@ -101,7 +101,7 @@
     {
       "q": "Why does the call at three o'clock fail?",
       "options": [
-        "The signal is weak and Simón shouts over it",
+        "The signal is weak",
         "Tomás hangs up",
         "The caller is from Altamira",
         "Nobody speaks"
@@ -113,7 +113,7 @@
     {
       "q": "What was wrong with the call from the woman in Ciénaga?",
       "options": [
-        "Her husband's Herrera was really called Ferrer",
+        "His name was really Ferrer",
         "She wanted money",
         "She had the wrong café",
         "She was calling about bread"
@@ -123,7 +123,7 @@
     {
       "q": "What does Vale promise Tomás after the failed call?",
       "options": [
-        "If the man doesn't call, they will look for him in Taganga, and Tomás won't go alone",
+        "Tomás won't go alone to Taganga",
         "She will buy a new phone",
         "She will call the radio again",
         "She will talk to the man herself"

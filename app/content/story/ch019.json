@@ -53,7 +53,7 @@
     {
       "q": "What does the man show Tomás on his phone?",
       "options": [
-        "Photos of a beach, an island, mountains and a coffee farm",
+        "Photos of a beach",
         "Photos of Rosa",
         "The lease of the café",
         "Photos of Toronto"
@@ -63,7 +63,7 @@
     {
       "q": "Why is Hernando's answer «Está trabajando, mija» funny?",
       "options": [
-        "Tomás is just looking at holiday photos with a customer",
+        "Tomás is just looking at photos",
         "Tomás is really working very hard",
         "Hernando is asleep",
         "Vale is the one working"
@@ -92,7 +92,7 @@
     {
       "q": "What does the card tell them?",
       "options": [
-        "The man is Ricardo Altamira, and he builds hotels",
+        "He is Ricardo Altamira, a hotel builder",
         "The man is a tourist from Cartagena",
         "The man is Joaquín",
         "The man sells coffee farms"
@@ -124,7 +124,7 @@
     {
       "q": "What does Tomás do that night in his room?",
       "options": [
-        "He looks at his suitcase for a long while",
+        "He looks at his suitcase",
         "He reads Rosa's letter",
         "He calls Toronto",
         "He makes another cappuccino"

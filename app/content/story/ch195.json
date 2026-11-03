@@ -58,7 +58,7 @@
       "q": "Why does Mariana say Tomás's first paragraph is not an essay?",
       "options": [
         "It is too short",
-        "It reports what is happening but not what it means",
+        "Facts, but no meaning",
         "It has no statistics",
         "It is written in English"
       ],
@@ -68,7 +68,7 @@
       "q": "What is Hernando's difference between prever and prevenir?",
       "options": [
         "There is no difference",
-        "Prever is seeing the bus coming; prevenir is getting out of its way",
+        "Prever sees it; prevenir avoids it",
         "Prever is for taxis; prevenir is for buses",
         "Prever is the past of prevenir"
       ],
@@ -78,7 +78,7 @@
       "q": "¿Qué objeto le aconseja Vale poner en el centro del ensayo?",
       "options": [
         "La pizarra del patio",
-        "Las cartas que Rosa nunca mandó",
+        "Las cartas que Rosa no mandó",
         "El sombrero de Hernando",
         "Un pandebono"
       ],
@@ -87,7 +87,7 @@
     {
       "q": "What does Tomás realise at the end of the chapter?",
       "options": [
-        "The letters were addressed to Joaquín, so his widow has a say",
+        "His widow has a say",
         "He has missed the deadline",
         "Hernando wrote the letters",
         "Mariana wants to enter the competition"
@@ -110,7 +110,7 @@
     {
       "q": "What does Hernando call his religion?",
       "options": [
-        "The six o'clock tinto",
+        "The tinto",
         "Football",
         "His taxi",
         "The newspaper"
@@ -121,7 +121,7 @@
       "q": "What did Gloria do when Hernando fell asleep at the window table?",
       "options": [
         "She woke him up",
-        "She put a blanket over him and let him sleep",
+        "She gave him a blanket",
         "She called his daughter",
         "She took his notebook"
       ],

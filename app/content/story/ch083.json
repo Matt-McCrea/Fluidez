@@ -70,7 +70,7 @@
       "q": "What does the poster announce?",
       "options": [
         "A street party on Thursday",
-        "A presentation of Altamira's hotel for the neighbours",
+        "Altamira's hotel meeting",
         "A new bakery on the block",
         "A sale at Marta's shop"
       ],
@@ -81,7 +81,7 @@
       "options": [
         "A swimming pool",
         "A car park",
-        "A lobby with plants and a piano",
+        "A hotel lobby",
         "A souvenir shop"
       ],
       "answer": 2
@@ -90,7 +90,7 @@
       "q": "Why does Marta think the hotel might be good?",
       "options": [
         "She wants to sell her shop",
-        "Her grandson has been looking for work for a year",
+        "Her grandson needs work",
         "She likes tourists",
         "Altamira is her friend"
       ],
@@ -109,7 +109,7 @@
     {
       "q": "What has Mariana found out?",
       "options": [
-        "Altamira has visited six neighbours one by one, offering money to some and hinting at rent problems to others",
+        "He offers money or rent hints",
         "Altamira has sold the hotel",
         "Marta works for Altamira",
         "The meeting has been cancelled"

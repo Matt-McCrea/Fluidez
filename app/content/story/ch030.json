@@ -73,7 +73,7 @@
       "options": [
         "He hates coffee",
         "He already paid",
-        "He never pays for his coffee anyway",
+        "He never pays for coffee anyway",
         "Vale makes terrible coffee"
       ],
       "answer": 2
@@ -82,7 +82,7 @@
       "q": "What were Tomás and Vale doing when the power went out?",
       "options": [
         "Tomás was dancing and Vale was singing",
-        "Tomás was closing the door and Vale was counting the money",
+        "Tomás locked up and Vale counted",
         "Both of them were eating cake",
         "Tomás was asleep and Vale was reading"
       ],
@@ -92,7 +92,7 @@
       "q": "¿Cómo pagó la señora del cuento?",
       "options": [
         "Con una tarjeta",
-        "Con un billete de 1950",
+        "Con un billete",
         "Con un tinto",
         "No pagó"
       ],
@@ -101,7 +101,7 @@
     {
       "q": "Why is Tomás worried at the end?",
       "options": [
-        "The noise is coming from the counter where Rosa's notebook was hidden",
+        "It's the counter",
         "Simón has escaped",
         "The cake is gone",
         "Vale has left"

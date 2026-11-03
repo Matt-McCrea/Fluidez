@@ -58,7 +58,7 @@
       "q": "What's wrong with the card Tomás tries at the machine?",
       "options": [
         "It has no money on it",
-        "It's the notary's card, not a fare card",
+        "It's a notary's card",
         "It's Vale's card",
         "It's broken"
       ],
@@ -67,7 +67,7 @@
     {
       "q": "Why does the student laugh at Tomás on the TransMilenio?",
       "options": [
-        "He asks the driver to drop him off at Calle 100, as if it were a taxi",
+        "Asks a taxi stop",
         "He sings a song",
         "He eats a mango",
         "He shouts at Simón"
@@ -87,7 +87,7 @@
     {
       "q": "Why does Vale tell Tomás to get off at once?",
       "options": [
-        "The notary closes at twelve, and he is going the wrong way",
+        "The notary shuts",
         "Simón is sick",
         "The café needs him",
         "It is raining"

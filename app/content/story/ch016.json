@@ -41,7 +41,7 @@
     {
       "q": "What is the shower situation on Tomás's first morning?",
       "options": [
-        "No water today: the day after tomorrow, and only for a little while",
+        "No water today, a bit later",
         "Hot water all day",
         "The shower is in the bakery",
         "Pacho the cat is in the shower"
@@ -51,7 +51,7 @@
     {
       "q": "Who is Pacho?",
       "options": [
-        "Gloria's fat cat, who owns the sofa",
+        "Gloria's cat",
         "Gloria's husband",
         "A man from Altamira",
         "Hernando's grandson"
@@ -80,7 +80,7 @@
     {
       "q": "Where does Tomás have to eat?",
       "options": [
-        "In the dining room, not in his room",
+        "In the dining room",
         "In the bakery",
         "In his room",
         "On the sofa"

@@ -70,7 +70,7 @@
       "q": "Why won't Yesid say on the phone whether his grandfather is alive?",
       "options": [
         "He doesn't care about his grandfather",
-        "Two men from Bogotá with lots of money already called him, and he doesn't trust callers",
+        "He doesn't trust callers",
         "The line is too bad",
         "Tomás doesn't let him finish"
       ],
@@ -79,7 +79,7 @@
     {
       "q": "According to Mariana's article, what do the six permits have in common?",
       "options": [
-        "They were all signed by the same man, Dr Rengifo",
+        "One man signed them",
         "They were all signed in 1890",
         "They were all refused",
         "They were all for the café"
@@ -91,7 +91,7 @@
       "options": [
         "He wants to go there too",
         "The article says so",
-        "The email they found earlier thanked Rengifo for the permits with a trip to San Andrés",
+        "Rengifo got a trip",
         "Gloria told him"
       ],
       "answer": 2
@@ -100,7 +100,7 @@
       "q": "¿Qué hace Vale con el artículo?",
       "options": [
         "Lo tira a la basura",
-        "Lo corta y lo pega en la pared, junto a la foto de Rosa",
+        "Lo pega en la pared",
         "Se lo da a Hernando",
         "Lo lee en la radio"
       ],
@@ -110,7 +110,7 @@
       "q": "Why does Tomás give Mariana a thousand pesos?",
       "options": [
         "To pay for the newspaper",
-        "To pay back, with interest, the newspapers she sold him as a child",
+        "To repay the newspapers",
         "For a tinto",
         "Because he lost a bet"
       ],
@@ -122,7 +122,7 @@
       "q": "Why were the neighbours awake at three in the morning?",
       "options": [
         "Simón was shouting",
-        "The machines knocking down the houses woke them",
+        "Machines woke them",
         "There was a party",
         "Mariana called them"
       ],
@@ -142,7 +142,7 @@
       "q": "Who is on Yesid's boat during the call?",
       "options": [
         "His grandmother",
-        "Six tourists and a crying little boy",
+        "Tourists and a kid",
         "Two men from Bogotá",
         "Nobody"
       ],

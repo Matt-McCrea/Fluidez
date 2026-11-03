@@ -67,7 +67,7 @@
     {
       "q": "Why has Gloria stopped helping at the café?",
       "options": [
-        "Simón shouted \"bye, bye\" at her all morning, so she says the parrot fired her",
+        "Simón shouted bye at her",
         "Hernando burned her hand",
         "She found a better job",
         "Altamira paid her to leave"
@@ -100,7 +100,7 @@
     {
       "q": "Who answers Vale's phone, and why?",
       "options": [
-        "Tomás, because Vale is asleep on his shoulder",
+        "Tomás, because she is asleep",
         "Vale, after five more minutes",
         "Simón, from the café",
         "Beatriz, from Medellín"
@@ -120,7 +120,7 @@
     {
       "q": "What does the eighty-year-old customer ask Tomás?",
       "options": [
-        "How much the job pays, and whether you work sitting down",
+        "The pay and if you sit",
         "Where Vale is",
         "Whether Simón is for sale",
         "For a cappuccino"

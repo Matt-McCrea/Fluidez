@@ -81,7 +81,7 @@
     {
       "q": "Why does the newspaper headline say 'habría recibido' instead of 'recibió'?",
       "options": [
-        "Because the claim comes from documents and no judge has ruled yet",
+        "Because it comes from documents and no judge has ruled",
         "Because Mariana made a spelling mistake",
         "Because Rengifo returned the money",
         "Because Osorio wanted it to sound more dramatic"
@@ -91,7 +91,7 @@
     {
       "q": "What does the gossip account claim about Vale?",
       "options": [
-        "That she is pregnant, and Tomás is the father",
+        "That she is expecting Tomás's baby",
         "That she is leaving for Medellín",
         "That she works for Altamira",
         "That she is Rengifo's niece"
@@ -101,7 +101,7 @@
     {
       "q": "What did Rosa used to say about the dark?",
       "options": [
-        "That in the dark people tell the truth because nobody can see their face",
+        "That the dark brings the truth",
         "That it was good for business",
         "That it scared the parrot",
         "That it was the best time to bake"
@@ -111,7 +111,7 @@
     {
       "q": "¿Qué abre la Fiscalía?",
       "options": [
-        "Una investigación contra Rengifo",
+        "Un caso sobre Rengifo",
         "Un café nuevo",
         "Una cuenta en internet",
         "La puerta verde"
@@ -123,7 +123,7 @@
     {
       "q": "How does Hernando measure the queue?",
       "options": [
-        "With his own steps, eighty four of them",
+        "With his steps",
         "With a tape measure",
         "By counting people",
         "He doesn't, Gloria does"
@@ -143,7 +143,7 @@
     {
       "q": "What does Yesid do when Vale walks past him?",
       "options": [
-        "He quickly puts his phone in his pocket",
+        "He hides his phone",
         "He hugs her",
         "He asks for a coffee",
         "He leaves the café"

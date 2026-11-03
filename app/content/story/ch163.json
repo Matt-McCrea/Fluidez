@@ -53,7 +53,7 @@
     {
       "q": "What is the joke when Hernando says the uncle does not answer letters?",
       "options": [
-        "In Spanish 'cartas' means both letters and playing cards, and he is playing cards",
+        "Cartas also means playing cards",
         "The uncle cannot read",
         "The uncle has no address",
         "Hernando never sent him a letter"
@@ -63,7 +63,7 @@
     {
       "q": "Why does the uncle delete a number from his phone in front of everyone?",
       "options": [
-        "He wants to cut his ties with Altamira's lawyer and start clean",
+        "To cut ties and start clean",
         "He has no space on his phone",
         "Yesid asks him to",
         "It is the number of the bank"
@@ -73,7 +73,7 @@
     {
       "q": "What is the uncle's condition?",
       "options": [
-        "The shared company has to make money, because his mother cannot live on memories",
+        "The shared company must profit",
         "He wants to live in the café",
         "He wants Altamira to pay his debt",
         "He wants to be the president"
@@ -83,7 +83,7 @@
     {
       "q": "¿Qué ve el tío en la foto vieja del salón?",
       "options": [
-        "A su papá de niño, en la puerta verde",
+        "A su papá de niño",
         "A Rosa con el loro",
         "A Hernando en su taxi",
         "A Eulalia de joven"
@@ -95,7 +95,7 @@
     {
       "q": "What was the uncle doing when Hernando arrived?",
       "options": [
-        "Playing solitaire on top of a suitcase on the pavement",
+        "Playing solitaire outside",
         "Sleeping against the green door",
         "Talking on the phone to Montoya",
         "Measuring the wall"
@@ -105,7 +105,7 @@
     {
       "q": "How does the uncle react when Yesid hugs him?",
       "options": [
-        "He does not know what to do with his arms, like Joaquín in the photos",
+        "He is awkward",
         "He cries",
         "He pushes him away",
         "He laughs"
@@ -115,7 +115,7 @@
     {
       "q": "According to Hernando, why is their chemistry real?",
       "options": [
-        "Because the uncle does not lose at cards",
+        "Because the uncle wins at cards",
         "Because they are the same age",
         "Because they both drove taxis",
         "Because they both loved Rosa"

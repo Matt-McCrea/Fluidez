@@ -122,7 +122,7 @@
       "q": "Why does the bench end up slightly crooked?",
       "options": [
         "Ramiro made a mistake",
-        "Gloria wants it to face the door, the way Hernando's chair did",
+        "Gloria wants it that way",
         "The pavement is uneven",
         "The inspector moved it"
       ],
@@ -152,7 +152,7 @@
       "q": "Why does Tomás stop Gloria from throwing Altamira off the bench?",
       "options": [
         "Altamira paid for the plaque",
-        "The plaque says 'sit down, son' and doesn't say who",
+        "It doesn't say who",
         "He wants to sell him the café",
         "The inspector is watching"
       ],
@@ -162,7 +162,7 @@
       "q": "What is the inspector's problem with the bench?",
       "options": [
         "It is too heavy",
-        "It is furniture in public space without a permit",
+        "It has no permit",
         "The plaque is crooked",
         "It blocks a taxi rank"
       ],
@@ -175,7 +175,7 @@
       "q": "Where is the dark scar on the bench?",
       "options": [
         "On one leg",
-        "In the middle of the backrest, where the crack was",
+        "On the backrest",
         "Under the plaque only",
         "On the seat"
       ],
@@ -185,7 +185,7 @@
       "q": "What did Efraín want on the plaque?",
       "options": [
         "A joke",
-        "An address any taxi driver could find",
+        "An address",
         "Rosa's name",
         "A chess move"
       ],
@@ -195,7 +195,7 @@
       "q": "Who are the first people to sit on the bench before the plaque goes on?",
       "options": [
         "Altamira and Camila",
-        "A lady with shopping, two students and a group of tourists",
+        "A lady and tourists",
         "Only the taxi drivers",
         "Nobody"
       ],

@@ -45,7 +45,7 @@
     {
       "q": "What was Vale's theory about Simón?",
       "options": [
-        "He only says Rosa's line in front of someone hungry",
+        "Only near hungry people",
         "He only talks at night",
         "He only talks to Hernando",
         "He needs music to talk"
@@ -55,7 +55,7 @@
     {
       "q": "Why does Mariana want Tomás to be the narrator?",
       "options": [
-        "He arrived knowing almost nothing and learned everything here",
+        "He knew almost nothing",
         "He has the best voice",
         "Nobody else wanted to do it",
         "He paid for the microphone"
@@ -65,7 +65,7 @@
     {
       "q": "What does Mariana say is wrong with Tomás's first reading?",
       "options": [
-        "It has no emphasis: he reads it like a shopping list",
+        "It has no emphasis",
         "It is too fast",
         "His accent is too strong",
         "He read the wrong page"
@@ -87,7 +87,7 @@
     {
       "q": "According to Vale, what are Bogotá's seasons?",
       "options": [
-        "Rain and a bit less rain",
+        "Rain, less rain",
         "Hot and cold",
         "Dry and wet",
         "Autumn and winter"
@@ -107,7 +107,7 @@
     {
       "q": "How does Hernando describe a podcast?",
       "options": [
-        "Radio with no schedule, which in his day was called a mess",
+        "Radio with no schedule",
         "A telephone with pictures",
         "A very long letter",
         "Television without a screen"

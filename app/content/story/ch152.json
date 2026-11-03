@@ -45,7 +45,7 @@
     {
       "q": "What does Wilson reveal about the work next door?",
       "options": [
-        "The plans say three metres from the wall, but the engineer told them to work at one",
+        "They work at one metre, not three",
         "The machine is broken",
         "Altamira has stopped the building work",
         "He made the hole on purpose for fun"
@@ -55,7 +55,7 @@
     {
       "q": "Why won't Wilson say it with his name?",
       "options": [
-        "He isn't brave enough: his wage feeds his daughter",
+        "He needs his wage",
         "He is afraid of Simón",
         "Gloria told him not to",
         "He doesn't want to be famous"
@@ -75,7 +75,7 @@
     {
       "q": "¿Qué miden Yesid y Tomás a medianoche?",
       "options": [
-        "La distancia entre la pared de la cocina y el hueco de la máquina",
+        "La distancia al hueco",
         "El agujero de la pared",
         "La altura del techo",
         "El tamaño del loro"
@@ -87,7 +87,7 @@
     {
       "q": "What was Wilson wearing to hide who he was?",
       "options": [
-        "His site helmet, Gloria's scarf and Hernando's cap",
+        "A helmet and scarf",
         "A mask and a coat",
         "Sunglasses and a wig",
         "Vale's apron"
@@ -97,7 +97,7 @@
     {
       "q": "What did Wilson's daughter ask him after hearing the first episode?",
       "options": [
-        "Whether he worked with the bad guys",
+        "If he worked with the bad guys",
         "Whether he knew the parrot",
         "When he was coming home",
         "Why he was on the radio"
@@ -107,7 +107,7 @@
     {
       "q": "What did the engineer tell one of Wilson's workmates?",
       "options": [
-        "If the house falls down by itself, there's no committee any more",
+        "No house means no committee",
         "The hotel will open in March",
         "Nobody may talk to the café",
         "The parrot must go"

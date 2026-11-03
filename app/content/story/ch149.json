@@ -73,7 +73,7 @@
     {
       "q": "What does the table in Altamira's English report show?",
       "options": [
-        "Two meetings with the heir, and both times he declined",
+        "He declined twice",
         "That Yesid asked for an offer",
         "That the hotel is finished",
         "That the café owes money"
@@ -83,7 +83,7 @@
     {
       "q": "Why does Mariana trust the English report more than the Spanish press release?",
       "options": [
-        "Altamira can lie to the press, but not to the people who put in the money",
+        "Investors get no lies",
         "It was written by Tomás",
         "It has more photos",
         "Wilson wrote it"
@@ -103,7 +103,7 @@
     {
       "q": "¿Qué le escribió el tío a Yesid?",
       "options": [
-        "Que no le gustaba, pero que Yesid hizo bien",
+        "Que no le gustaba, pero hizo bien",
         "Que no le iba a hablar nunca más",
         "Que Altamira tenía razón",
         "Que venía a Bogotá"
@@ -115,7 +115,7 @@
     {
       "q": "What has Vale written in her diary, which she usually uses for cake orders?",
       "options": [
-        "Food for Yesid. No questions.",
+        "Feed Yesid.",
         "Call the lawyer.",
         "Buy a new tank.",
         "Podcast on Monday."
@@ -125,7 +125,7 @@
     {
       "q": "How does Yesid describe the position he was in?",
       "options": [
-        "Between his uncle on one side and the café on the other",
+        "Between uncle and café",
         "Between Vale and Tomás",
         "Between Taganga and Bogotá",
         "Between two lawyers"

@@ -70,7 +70,7 @@
       "q": "On what condition does Doña Eulalia give her permission?",
       "options": [
         "That Tomás pays her",
-        "That the essay also tells what Joaquín did, and that she reads it first",
+        "That Joaquín is included and she reads it first",
         "That Yesid writes it",
         "That her name does not appear"
       ],
@@ -80,7 +80,7 @@
       "q": "Why does Tomás cross out his own sentence about \"la protección del patrimonio\"?",
       "options": [
         "Mariana orders him to",
-        "He sees that it is all abstract nouns and says nothing about real people",
+        "It's all abstract nouns",
         "It has too many words",
         "Eulalia does not like it"
       ],
@@ -89,7 +89,7 @@
     {
       "q": "¿Qué escribió Wilson en la pizarra?",
       "options": [
-        "Que él construyó media calle y no puede pagar un tinto en el hotel",
+        "Que construyó media calle",
         "Que la calle es del hotel",
         "Que la calle es de los turistas",
         "Que no sabe"
@@ -100,7 +100,7 @@
       "q": "What is the problem at the end of the chapter?",
       "options": [
         "The computer breaks",
-        "The essay has 2,400 words and the limit is 1,500",
+        "It is over the limit",
         "Camila steals the essay",
         "Simón eats the notebook"
       ],
@@ -113,7 +113,7 @@
       "q": "Why is Yesid standing in the middle of the patio?",
       "options": [
         "To catch the sun",
-        "It is the only place with signal to call Taganga",
+        "The only signal spot",
         "Simón is in the tree",
         "He is fixing the wall"
       ],
@@ -122,7 +122,7 @@
     {
       "q": "What does Camila's essay look at?",
       "options": [
-        "The patio from the hotel terrace",
+        "The patio",
         "Medellín",
         "The library",
         "Her family"

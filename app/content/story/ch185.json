@@ -118,7 +118,7 @@
       "q": "Who is Hernando's 'invitation' really for?",
       "options": [
         "Mariana",
-        "Rosa, who has died; he goes as her plus one",
+        "Rosa, who has died",
         "Altamira's assistant",
         "Gloria"
       ],
@@ -138,7 +138,7 @@
       "q": "Why does the lady's question hurt Tomás more than mockery would?",
       "options": [
         "She is rude on purpose",
-        "She innocently assumes the café is part of the hotel",
+        "She assumes the café is the hotel's",
         "She insults Rosa",
         "She asks him to leave"
       ],
@@ -148,7 +148,7 @@
       "q": "What does Hernando decide to do at the end?",
       "options": [
         "Sell the patio",
-        "Write a joke a day on a chalkboard facing the terrace",
+        "Write a joke a day",
         "Sue the hotel",
         "Close the café at night"
       ],
@@ -181,7 +181,7 @@
       "q": "Where does Hernando put the rose at the end?",
       "options": [
         "Back in his lapel",
-        "In a glass of water on Rosa's table",
+        "In a water glass",
         "On the chalkboard",
         "He gives it to Mariana"
       ],
@@ -190,7 +190,7 @@
     {
       "q": "How does Mariana tell sarcasm from irony?",
       "options": [
-        "Sarcasm wants to hurt; irony is subtler and expects you to get it",
+        "Irony is subtler than sarcasm",
         "They are the same thing",
         "Irony is always rude",
         "Sarcasm is only used in Bogotá"

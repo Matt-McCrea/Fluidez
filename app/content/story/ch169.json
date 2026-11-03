@@ -73,7 +73,7 @@
     {
       "q": "What does Hernando mean when he says they are going to rescue Tomás, not Vale?",
       "options": [
-        "Tomás needs to put right what he said, even if Vale leaves",
+        "Tomás must fix what he said",
         "Tomás is in danger",
         "Tomás has lost his phone",
         "Tomás wants to go to Medellín"
@@ -83,7 +83,7 @@
     {
       "q": "What message does Tomás send to Lucía for Hernando?",
       "options": [
-        "Send the plans again, he only wants to look, and he loves her",
+        "Resend the plans, he loves her",
         "He is moving to Chía tomorrow",
         "He never wants to see the plans",
         "He is going to Medellín"
@@ -93,7 +93,7 @@
     {
       "q": "What worries Vale about Correa's growth plan?",
       "options": [
-        "It has twenty pages about growth and not one line about bread",
+        "No line about bread",
         "It is too short",
         "It is written in English",
         "It includes a hotel"
@@ -125,7 +125,7 @@
     {
       "q": "Who says that fishing is like love?",
       "options": [
-        "Yesid, as Hernando tells it",
+        "Yesid",
         "Vale",
         "Lucía",
         "The bus driver"

@@ -98,7 +98,7 @@
       "q": "What does Altamira offer Hernando?",
       "options": [
         "To buy the café",
-        "A manager's salary to write a joke a day for a screen on the terrace",
+        "A salary to write jokes",
         "A free room in the hotel",
         "A job as a taxi driver"
       ],
@@ -108,7 +108,7 @@
       "q": "What is the catch in the offer?",
       "options": [
         "The jokes must be in English",
-        "The jokes can be about anything except the hotel",
+        "Anything except the hotel",
         "Hernando must move to Chía",
         "Tomás must sign too"
       ],
@@ -118,7 +118,7 @@
       "q": "Why did Altamira come in person, according to him?",
       "options": [
         "To apologise",
-        "Because the heritage institute decides this month",
+        "The institute decides this month",
         "To meet Simón",
         "To buy pandebonos"
       ],
@@ -137,7 +137,7 @@
     {
       "q": "¿Qué hace Hernando con la propina de Altamira?",
       "options": [
-        "La mete en la caja de los pandebonos para Wilson",
+        "La deja para Wilson",
         "Se la devuelve a Altamira",
         "Se compra un sombrero",
         "La pone en la pizarra"
@@ -151,7 +151,7 @@
       "q": "Where does Altamira sit?",
       "options": [
         "At the counter",
-        "At the window table, in Hernando's chair",
+        "At the window",
         "In the patio",
         "On the terrace"
       ],
@@ -171,7 +171,7 @@
       "q": "What does Altamira do in the café's bathroom?",
       "options": [
         "Takes a phone call",
-        "Washes his hands with lots of soap for a whole minute",
+        "He washes his hands",
         "Looks at the beam",
         "Nothing, he never goes"
       ],

@@ -53,7 +53,7 @@
     {
       "q": "What does Hernando finally tell Tomás about the key?",
       "options": [
-        "It was Joaquín's key to the kitchen, and he left it at the café for Rosa in 1978",
+        "It is Joaquín's kitchen key",
         "It opens the notary's office",
         "Rosa lost it in 1978",
         "It belongs to Altamira"
@@ -63,7 +63,7 @@
     {
       "q": "What is Mariana's terrible news?",
       "options": [
-        "Altamira bought the café's lease, and it ends in a year",
+        "Altamira owns the lease",
         "Altamira bought Gloria's house",
         "The notary's office has closed",
         "Vale is leaving the café"
@@ -73,7 +73,7 @@
     {
       "q": "Why does the last line of Rosa's letter change things?",
       "options": [
-        "It says Rosa and Joaquín bought the building, so the lease is not the whole story",
+        "They bought the building",
         "It says where the deed is",
         "It says Rosa wanted to sell",
         "It says Joaquín is coming back"
@@ -83,7 +83,7 @@
     {
       "q": "¿Por qué Vale no entiende a Tomás?",
       "options": [
-        "Porque está en el bus, en la montaña, y no hay buena señal",
+        "Porque no hay buena señal",
         "Porque Tomás habla en inglés",
         "Porque Simón grita",
         "Porque Vale está en Toronto"
@@ -115,7 +115,7 @@
     {
       "q": "What does Hernando tell Tomás to do?",
       "options": [
-        "Read Rosa's letter again",
+        "Read it again",
         "Call the notary",
         "Sell the café",
         "Ask Mariana"

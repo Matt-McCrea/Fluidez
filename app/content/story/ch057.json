@@ -45,7 +45,7 @@
     {
       "q": "Which way did the black car go?",
       "options": [
-        "North, where Altamira's offices are",
+        "To the north",
         "South",
         "Towards the páramo",
         "To the bus terminal"
@@ -55,7 +55,7 @@
     {
       "q": "Why is Mariana not ready to accuse Altamira?",
       "options": [
-        "A shouting box is not a story: she needs the truth first",
+        "She needs the truth first",
         "She works for Altamira",
         "She thinks Gloria's cat did it",
         "She is afraid of Altamira"
@@ -65,7 +65,7 @@
     {
       "q": "Why is losing Simón so hard for Hernando, according to Tomás?",
       "options": [
-        "Simón was Rosa's, so it is like losing Rosa again",
+        "Simón was Rosa's",
         "Simón was very expensive",
         "Hernando taught him to speak",
         "Hernando promised Vale"

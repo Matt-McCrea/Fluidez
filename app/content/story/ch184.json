@@ -130,7 +130,7 @@
       "q": "Where was Rengifo arrested?",
       "options": [
         "At a hotel in Panama",
-        "At Miami airport, at the departure gate",
+        "At Miami airport",
         "At the café",
         "At the Fiscalía in Bogotá"
       ],
@@ -140,7 +140,7 @@
       "q": "Why does it matter that Rengifo will cooperate, according to Mariana?",
       "options": [
         "It doesn't matter at all",
-        "If he talks, he has to say who paid him, and that leads to Altamira",
+        "He has to say who paid him",
         "The café will have to close",
         "Bermúdez will get a promotion"
       ],
@@ -150,7 +150,7 @@
       "q": "What does the 1977 deed say about the patio?",
       "options": [
         "It belongs to the hotel",
-        "The house was bought with its patio and the tree in it",
+        "It came with the house",
         "There is no patio",
         "It belongs to the city"
       ],
@@ -159,7 +159,7 @@
     {
       "q": "¿Qué hace Hernando con la margarita de Gloria?",
       "options": [
-        "Le quita los pétalos para decidir si se va a Chía",
+        "Le quita los pétalos",
         "Se la toma con tequila",
         "La pone en el tablero",
         "Se la regala a Vale"
@@ -172,7 +172,7 @@
     {
       "q": "What is odd about Hernando's watch?",
       "options": [
-        "It has run five minutes fast since 1974",
+        "Five minutes fast",
         "It stopped in 1978",
         "It was a gift from Rosa",
         "It runs on batteries"
@@ -183,7 +183,7 @@
       "q": "What does Hernando write next to the rumour on the board?",
       "options": [
         "That Rengifo is innocent",
-        "Yes, he's coming back, but not of his own accord",
+        "Yes, he's coming back, but not willingly",
         "That the café is closing",
         "Nothing"
       ],

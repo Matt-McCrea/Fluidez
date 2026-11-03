@@ -91,7 +91,7 @@
     {
       "q": "What does Vale do before Hernando arrives?",
       "options": [
-        "Bakes, buys the milk and makes the coffee",
+        "Makes the coffee",
         "Reads the newspaper",
         "Sleeps in the café",
         "Calls Toronto"
@@ -101,7 +101,7 @@
     {
       "q": "What does Hernando really think of Tomás's coffee?",
       "options": [
-        "It's bad: he tells it to get well soon",
+        "It's bad, but he lies",
         "It's better than Rosa's",
         "It's too strong for him",
         "He doesn't drink it"
@@ -120,7 +120,7 @@
     {
       "q": "Why does Vale look at Tomás at the end?",
       "options": [
-        "He says the hostel is only for a few days",
+        "He says it's temporary",
         "He says he's from Toronto",
         "He makes a bad coffee",
         "Simón talks"
@@ -133,7 +133,7 @@
     {
       "q": "What job does Vale give Tomás?",
       "options": [
-        "Making Don Hernando's tinto",
+        "Making tinto",
         "Baking the bread",
         "Buying the milk",
         "Feeding Simón"

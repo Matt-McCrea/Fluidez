@@ -77,7 +77,7 @@
     {
       "q": "Why does Lucía say \"hemos desayunado\" and not \"desayunamos\"?",
       "options": [
-        "Breakfast was two hours ago, and in Spain that is still the same day",
+        "Breakfast was two hours ago",
         "She made a mistake",
         "She has not had breakfast yet",
         "She is talking about yesterday"
@@ -89,7 +89,7 @@
       "options": [
         "He has to move to Chía",
         "He must not drive the Burra",
-        "He is very well, but no more black coffee",
+        "He is well, but no black coffee",
         "He has to stop climbing stairs"
       ],
       "answer": 2
@@ -98,7 +98,7 @@
       "q": "What does Tomás finally tell Vale on the phone?",
       "options": [
         "That she must stay in Bogotá",
-        "That she should take the trial month for herself, and he will miss her",
+        "That she should take the month",
         "That the café is closing",
         "That Lucía wants to buy her pastries"
       ],
@@ -107,7 +107,7 @@
     {
       "q": "¿Qué es un «man», según Tomás?",
       "options": [
-        "Un señor, pero sin corbata",
+        "Un señor informal",
         "Un amigo de Madrid",
         "Un loro",
         "Un médico"
@@ -119,7 +119,7 @@
       "options": [
         "To fetch her oven",
         "To meet Lucía for the blog",
-        "To tell everyone something in person",
+        "To tell everybody in person",
         "To see Hernando's doctor"
       ],
       "answer": 2

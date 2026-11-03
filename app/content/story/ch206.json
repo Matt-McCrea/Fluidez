@@ -126,7 +126,7 @@
       "q": "Why does Vale want the menu to be a map?",
       "options": [
         "The hotel has a menu like that",
-        "Each of Rosa's recipes comes from a particular place",
+        "Each recipe has a place",
         "Tourists like maps",
         "Yesid asked for it"
       ],
@@ -136,7 +136,7 @@
       "q": "What does Clemencia notice in the tiles at eleven o'clock?",
       "options": [
         "A crack shaped like a river",
-        "A worn path from the door to Hernando's chair",
+        "A worn path to his chair",
         "Rosa's name",
         "Water coming up from below"
       ],
@@ -146,7 +146,7 @@
       "q": "Why does Clemencia back down from her plan?",
       "options": [
         "The new tiles are the wrong colour",
-        "Tomás refuses to replace the tiles of Hernando's path",
+        "Tomás won't replace the tiles",
         "The Institute says no",
         "The tiles are too expensive"
       ],
@@ -155,7 +155,7 @@
     {
       "q": "¿Qué pasó cuando Tomás cortó el volcán?",
       "options": [
-        "El chocolate le saltó a la camisa",
+        "El chocolate le saltó encima",
         "No se abrió",
         "Se cayó al piso",
         "Simón se lo comió"
@@ -169,7 +169,7 @@
       "q": "Why did Hernando's path curve round the middle table?",
       "options": [
         "There was a hole in the floor",
-        "Rosa used to sit there doing the accounts",
+        "Rosa used to do accounts there",
         "The jukebox was in the way",
         "He was avoiding the beam"
       ],

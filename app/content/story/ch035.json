@@ -41,7 +41,7 @@
     {
       "q": "Why is the taxi called la Burra?",
       "options": [
-        "It is old, but it always gets there",
+        "It is old but always gets there",
         "It is grey",
         "It was Rosa's",
         "It is very fast"
@@ -51,7 +51,7 @@
     {
       "q": "Where does Tomás sit in the Burra?",
       "options": [
-        "In front, next to Hernando",
+        "In front, by him",
         "In the back",
         "He doesn't get in",
         "On the roof"
@@ -71,7 +71,7 @@
     {
       "q": "What does the notary's daughter say about yesterday?",
       "options": [
-        "A man from Grupo Altamira came for the same papers, without the deed",
+        "A man from Altamira came",
         "The office closed early",
         "Her father came back to work",
         "Rosa's papers were lost"
@@ -103,7 +103,7 @@
     {
       "q": "What does Hernando do when Tomás asks him about the deed?",
       "options": [
-        "He doesn't answer and looks at Joaquín's key",
+        "He just looks at the key",
         "He laughs",
         "He calls Vale",
         "He says he has it at home"

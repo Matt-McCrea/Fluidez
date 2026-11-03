@@ -65,7 +65,7 @@
     {
       "q": "Why does Hernando say he would also be a visitor in Chía?",
       "options": [
-        "He would live by someone else's rules, with set hours and a borrowed key",
+        "He would live by others' rules",
         "He would only go there on Sundays",
         "He would have to park in the visitors' spaces",
         "Lucía's husband does not want him there"
@@ -75,7 +75,7 @@
     {
       "q": "What does Hernando finally admit about his fall?",
       "options": [
-        "He did not call Lucía because he was ashamed",
+        "He was too ashamed to call",
         "He fell because he was drunk",
         "He never fell at all",
         "Tomás was with him"
@@ -85,7 +85,7 @@
     {
       "q": "What does Lucía wonder about her father's silence?",
       "options": [
-        "Whether it is revenge for her moving to Chía when her mother was ill",
+        "Whether it is revenge",
         "Whether he has a new girlfriend",
         "Whether he is selling the flat",
         "Whether Vale told him not to call"
@@ -137,7 +137,7 @@
     {
       "q": "What does Tomás do while father and daughter argue?",
       "options": [
-        "He washes a cup that is already clean",
+        "Washes clean cup",
         "He feeds Simón",
         "He reads the plans",
         "He calls Vale"

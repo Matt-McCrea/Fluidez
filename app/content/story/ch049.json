@@ -53,7 +53,7 @@
     {
       "q": "Why does Tomás say \"next time, I'm flying\"?",
       "options": [
-        "The road is all bends, he feels sick and the bus is two hours late",
+        "The road makes him sick",
         "Vale prefers to fly",
         "The bus is too expensive",
         "He has lost his ticket"
@@ -63,7 +63,7 @@
     {
       "q": "What is in Tomás's missing suitcase?",
       "options": [
-        "His passport, Rosa's coffee and his return ticket",
+        "Passport and ticket",
         "Vale's almojábanas",
         "A bicycle",
         "Hernando's taxi keys"
@@ -73,7 +73,7 @@
     {
       "q": "How does Vale get them their rooms without a passport?",
       "options": [
-        "She puts three almojábanas on the desk and promises to show it tomorrow",
+        "She offers three almojábanas",
         "She pays double",
         "She calls her mother",
         "She shows her own passport twice"
@@ -83,7 +83,7 @@
     {
       "q": "¿Por qué no duermen en la casa de la mamá de Vale?",
       "options": [
-        "No hay espacio: están todos los primos",
+        "No hay espacio",
         "La mamá de Vale no quiere",
         "La casa está lejos",
         "Tomás prefiere el hostal"
@@ -105,7 +105,7 @@
     {
       "q": "What came out from under the bus instead of Tomás's suitcase?",
       "options": [
-        "Vale's bags, a box of chickens and a bicycle",
+        "Bags and a bike",
         "Two dogs",
         "Hernando's packet",
         "Nothing at all"

@@ -97,7 +97,7 @@
     {
       "q": "What does Mr Ruiz have for Tomás?",
       "options": [
-        "A buyer for the café, a company",
+        "A café's buyer",
         "A job in Toronto",
         "A letter from Rosa",
         "A bill from the bank"
@@ -128,7 +128,7 @@
     {
       "q": "What does Tomás say he does at work in Toronto?",
       "options": [
-        "Reads emails and talks to his boss",
+        "Reads emails",
         "Drives a taxi",
         "Bakes bread",
         "Sells cafés"

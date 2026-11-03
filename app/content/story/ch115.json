@@ -53,7 +53,7 @@
     {
       "q": "Why was Dr Rengifo suspended?",
       "options": [
-        "Because of the questions about the La Candelaria permits",
+        "Because of the questions",
         "Because he went on holiday",
         "Because Altamira asked",
         "Because of Gloria's protest"
@@ -64,7 +64,7 @@
       "q": "How does Altamira explain knocking down the two houses?",
       "options": [
         "He needed space for parking",
-        "They were in such poor condition that they were a danger to the neighbours",
+        "A danger to the neighbours",
         "The mayor ordered it",
         "He didn't know about it"
       ],
@@ -74,7 +74,7 @@
       "q": "How does Tomás turn Altamira's own word against him?",
       "options": [
         "He calls Altamira a writer",
-        "He points out that Altamira never answered Mariana's ten questions, so why answer now?",
+        "He points out Altamira never answered",
         "He reads a novel on TV",
         "He asks Simón to say it"
       ],
@@ -84,7 +84,7 @@
       "q": "¿Por qué no vende Tomás, según él?",
       "options": [
         "Porque Altamira paga poco",
-        "Porque el café no es suyo: es de un barrio",
+        "Porque no es suyo",
         "Porque Vale no quiere",
         "Porque no tiene papeles"
       ],
@@ -94,7 +94,7 @@
       "q": "What does the heritage committee ask for?",
       "options": [
         "A visit to the café",
-        "A written statement about why the café matters, within two weeks",
+        "A written statement",
         "A video of Simón",
         "Rosa's letters"
       ],
@@ -125,7 +125,7 @@
     {
       "q": "Who was selling empanadas outside?",
       "options": [
-        "A man selling them to the reporters",
+        "A vendor",
         "Doña Gloria",
         "Jhon Fredy",
         "Vale"

@@ -73,7 +73,7 @@
     {
       "q": "Why doesn't Hernando's opening line belong in the complaint?",
       "options": [
-        "It is a joke about a tip, and the complaint has to be formal",
+        "A joke in a formal text",
         "It has a spelling mistake",
         "It is in English",
         "Hernando asks him to"
@@ -83,7 +83,7 @@
     {
       "q": "What does Vale mean when she says Tomás's emails sound like her bank?",
       "options": [
-        "They are polite, cold and full of formulas",
+        "They are polite and cold",
         "They ask for money",
         "They are full of mistakes",
         "They are very funny"
@@ -93,7 +93,7 @@
     {
       "q": "Why does Hernando say Tomás looks like a lamb in the letter?",
       "options": [
-        "The letter asks the wolf very politely not to eat him",
+        "It asks politely not to be eaten",
         "Tomás is wearing a white jumper",
         "Vale is cooking lamb",
         "Tomás is afraid of Altamira's lawyer"
@@ -103,7 +103,7 @@
     {
       "q": "¿Qué le dice la señora de la Alcaldía a Tomás?",
       "options": [
-        "Que la respuesta tarda quince días hábiles",
+        "Que la respuesta tarda quince días",
         "Que la carta es demasiado larga",
         "Que la obra ya está suspendida",
         "Que falta la firma de Hernando"
@@ -113,7 +113,7 @@
     {
       "q": "Why does Mariana bring a forty page form?",
       "options": [
-        "An application for protection to the Institute would stop the works while it is studied",
+        "It would stop the works",
         "The Alcaldía lost the letter",
         "Hernando wants to apply for a taxi licence",
         "Altamira sent it"
@@ -125,7 +125,7 @@
     {
       "q": "What does Hernando write under his signature?",
       "options": [
-        "Rosa's neighbour since 1984",
+        "Neighbour since 1984",
         "Retired taxi driver",
         "Customer since 1998",
         "Artistic director"
@@ -145,7 +145,7 @@
     {
       "q": "Why is it strange that Vale serves lamb and potatoes?",
       "options": [
-        "It was Rosa's Sunday dish, and it is Tuesday",
+        "Rosa's Sunday dish, on Tuesday",
         "Vale is a pastry chef, not a cook",
         "Hernando does not eat meat",
         "The water supply is cut"

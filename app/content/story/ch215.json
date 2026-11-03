@@ -112,7 +112,7 @@
       "q": "According to Mariana, what does Leonor care about most?",
       "options": [
         "Low prices",
-        "Harmony between the food, the place and the people",
+        "Overall harmony",
         "Fast service",
         "Famous customers"
       ],
@@ -122,7 +122,7 @@
       "q": "What does Leonor tell Tomás at the door?",
       "options": [
         "That she will give the café five cups",
-        "That he is right to serve coffee in those cups, and the rest he will read on Sunday",
+        "That he is right to use those cups",
         "That she never wants to come back",
         "That she knew his grandmother"
       ],
@@ -165,7 +165,7 @@
       "q": "¿Dónde está Lucía en el mejor momento de la noche?",
       "options": [
         "En la cocina, con Vale",
-        "En el banco de la calle, con Gloria",
+        "En el banco de la calle",
         "En la silla de la ventana",
         "En la terraza del hotel"
       ],

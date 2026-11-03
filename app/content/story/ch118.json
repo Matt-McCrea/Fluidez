@@ -58,7 +58,7 @@
       "q": "What was Samuel Weinstein's one condition when he sold Rosa the house?",
       "options": [
         "That she kept his name on the door",
-        "That the green door would never close to anyone",
+        "That the green door always stays open",
         "That she paid in dollars",
         "That she never sold coffee"
       ],
@@ -68,7 +68,7 @@
       "q": "Why does the bank manager go red during the reading?",
       "options": [
         "He arrived late",
-        "Tomás mentions that one of the letters is his",
+        "One of the letters is his",
         "He is allergic to Simón",
         "He disagrees with the text"
       ],
@@ -78,7 +78,7 @@
       "q": "How does Hernando explain his eyes after the reading?",
       "options": [
         "He says he is tired",
-        "He says he has something in his eye, the dust from the archive",
+        "He says it's the dust",
         "He says it is the onions",
         "He says nothing"
       ],
@@ -98,7 +98,7 @@
       "q": "What does the new message from Taganga say?",
       "options": [
         "Yesid wants money",
-        "Yesid's grandmother has something of Joaquín's that she will only give to Rosa's grandson in person",
+        "She has something for Tomás",
         "Altamira has called Yesid",
         "The radio wants another interview"
       ],
@@ -109,7 +109,7 @@
     {
       "q": "Who did the bank manager use to be?",
       "options": [
-        "A boy who did his homework at the window table",
+        "A boy who did homework",
         "Rosa's lawyer",
         "Hernando's taxi passenger",
         "Jhon Fredy's teacher"
@@ -130,7 +130,7 @@
       "q": "How did the message from Taganga reach the café?",
       "options": [
         "By phone to the café",
-        "On Simón's profile, which has thirty thousand followers",
+        "On Simón's profile",
         "In the newspaper",
         "Through Dr Lozano"
       ],

@@ -69,7 +69,7 @@
     {
       "q": "What detail does Doña Eulalia ask Tomás to add?",
       "options": [
-        "That Joaquín whistled the boleros Rosa played on the jukebox",
+        "That he whistled boleros",
         "That Joaquín hated Bogotá",
         "That Rosa visited Taganga",
         "That Joaquín wrote back"
@@ -80,7 +80,7 @@
       "q": "What does Jhon Fredy mean when he says everyone in the essay is a striker?",
       "options": [
         "The essay is about football",
-        "Every part wants to score and nothing holds the argument together",
+        "Every part wants to score",
         "He wants to be in the essay",
         "The essay is too short"
       ],
@@ -90,7 +90,7 @@
       "q": "Why does Vale cut Tomás's favourite sentence?",
       "options": [
         "It is too short",
-        "It sounds elegant but says nothing clearly, like a bank in a tie",
+        "Elegant but empty",
         "It mentions Altamira",
         "It is about her"
       ],
@@ -100,7 +100,7 @@
       "q": "¿Qué hace Tomás después de leer el último párrafo con Vale?",
       "options": [
         "Lo borra entero",
-        "Quita trece palabras de otro párrafo y no pone nada en su lugar",
+        "Quita trece palabras y no pone nada",
         "Llama a Hernando",
         "Se va a dormir"
       ],
@@ -112,7 +112,7 @@
     {
       "q": "Why did the essay get longer on Wednesday?",
       "options": [
-        "Tomás put back everything he had cut on Tuesday",
+        "He restored his cuts",
         "Mariana added a paragraph",
         "Hernando wrote a joke in it",
         "Eulalia sent a letter"
@@ -122,7 +122,7 @@
     {
       "q": "What did the Swedish ambassador say to Hernando in 1986?",
       "options": [
-        "That Bogotá has no memory, only traffic",
+        "Bogotá has no memory",
         "That he loved the tinto",
         "That he was lost",
         "That Bogotá was paradise"

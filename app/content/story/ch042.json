@@ -57,7 +57,7 @@
     {
       "q": "What does the doctor tell Hernando?",
       "options": [
-        "His heart is fine and he will live many more years",
+        "His heart is fine",
         "He has to stop drinking tinto",
         "He needs an operation",
         "He has the flu"
@@ -67,7 +67,7 @@
     {
       "q": "Why does Vale look at Tomás and Hernando and say nothing?",
       "options": [
-        "They give two different excuses for being late",
+        "Two different excuses",
         "They are wearing the same clothes",
         "They arrive with a new chair",
         "They are laughing"
@@ -87,7 +87,7 @@
     {
       "q": "What is strange about the way Tomás haggles?",
       "options": [
-        "He offers more than the asking price",
+        "He pays above asking",
         "He doesn't say anything",
         "He asks Simón",
         "He pays in dollars"
@@ -109,7 +109,7 @@
     {
       "q": "Where does the seller say the armchair comes from?",
       "options": [
-        "A salsa bar from 1975",
+        "A salsa bar",
         "Rosa's café",
         "A hotel",
         "A theatre"
@@ -119,7 +119,7 @@
     {
       "q": "What does Mariana's message invite Tomás to?",
       "options": [
-        "A salsa night in a bar in La Candelaria",
+        "A salsa night",
         "A football match",
         "A party in Medellín",
         "A concert"

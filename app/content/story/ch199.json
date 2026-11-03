@@ -90,7 +90,7 @@
       "q": "How does Tomás answer the mathematician's complaint that his essay has no data?",
       "options": [
         "He admits it is only sentimental",
-        "Numbers say how many people leave, not what is lost when they go",
+        "Numbers miss what is lost",
         "He reads out statistics",
         "He refuses to answer"
       ],
@@ -100,7 +100,7 @@
       "q": "Why does Tomás say he is different from the hotel?",
       "options": [
         "He is poorer",
-        "The house belongs to a cooperative of twenty people with one vote each",
+        "A cooperative owns it",
         "He was born in Bogotá",
         "He never charges for coffee"
       ],
@@ -120,7 +120,7 @@
       "q": "What is unusual about Hernando's taxi ride home?",
       "options": [
         "He drives it himself",
-        "For the first time in fifty years he sits in the back, like a passenger",
+        "He sits in the back",
         "He refuses to pay",
         "Tomás goes with him"
       ],
@@ -153,7 +153,7 @@
       "q": "What was Hernando's phone ringtone?",
       "options": [
         "A bolero",
-        "Simón's voice, recorded by Jhon Fredy",
+        "Simón's voice",
         "Church bells",
         "A taxi horn"
       ],

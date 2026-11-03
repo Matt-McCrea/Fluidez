@@ -69,7 +69,7 @@
     {
       "q": "Why does Mariana stop Tomás after his first two lines?",
       "options": [
-        "His opening sounds like a sales meeting, not a statement for a committee",
+        "It sounds like a pitch",
         "He is reading too slowly",
         "He wrote it in English",
         "He got the year wrong"
@@ -91,7 +91,7 @@
       "options": [
         "A taxi driver",
         "Altamira's father",
-        "A Jewish tailor who came from Poland in 1938",
+        "A Jewish tailor",
         "Doña Gloria's family"
       ],
       "answer": 2
@@ -110,7 +110,7 @@
       "q": "Why does nobody say a word after Tomás says \"Como yo\"?",
       "options": [
         "They didn't hear him",
-        "He too is someone who came to the house from far away, and they feel it",
+        "He came from far away",
         "He said something rude",
         "Simón interrupted"
       ],
@@ -121,7 +121,7 @@
     {
       "q": "What did Vale and Mariana bring when they arrived at eight?",
       "options": [
-        "Vale brought two tintos and Mariana had a pencil behind her ear",
+        "Vale brought tintos and Mariana a pencil",
         "Vale brought buñuelos and Mariana a laptop",
         "Both brought notebooks",
         "Nothing at all"

@@ -95,7 +95,7 @@
     {
       "q": "How does Hernando get to the clinic?",
       "options": [
-        "In Doña Gloria's bakery van",
+        "In a bread van",
         "In an ambulance",
         "In the Burra",
         "On the bus"
@@ -105,7 +105,7 @@
     {
       "q": "What does Tomás find in Hernando's wallet?",
       "options": [
-        "An old photo of Rosa as a young woman",
+        "A photo of Rosa",
         "Joaquín's letter",
         "A lottery ticket",
         "The key to the café"
@@ -115,7 +115,7 @@
     {
       "q": "Why did Hernando never take the pills from August?",
       "options": [
-        "He was saving the money for the café's oven",
+        "He saved for the oven",
         "He lost them",
         "He is allergic to them",
         "Vale hid them"

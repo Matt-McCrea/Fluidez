@@ -118,7 +118,7 @@
       "q": "How do they know the signature on Altamira's lease is fake?",
       "options": [
         "Dra. Uribe recognises the pen",
-        "The J on the 1978 page is huge, and the J on the lease is small and shaky",
+        "The J is small and shaky",
         "The lease has no date",
         "Ludys says so"
       ],
@@ -127,7 +127,7 @@
     {
       "q": "Why does Vale throw away her list of spaces?",
       "options": [
-        "Rosa's counter, Hernando's table and Rosa's window won't fit anywhere else",
+        "Rosa's things won't fit",
         "The spaces were all sold",
         "Tomás told her to",
         "Altamira owns all of them"
@@ -137,7 +137,7 @@
     {
       "q": "¿Dónde vivía Joaquín en Santa Marta?",
       "options": [
-        "En un hotel que ahora es un parqueadero",
+        "En un hotel",
         "En la casa de Ludys",
         "En un barco",
         "En el bar de la Séptima"
@@ -148,7 +148,7 @@
       "q": "Why does Vale go red and leave for the kitchen?",
       "options": [
         "She burned the bread",
-        "Hernando hints that she knows about love",
+        "Hernando hints at love",
         "Simón insults her",
         "She is angry with Mariana"
       ],
@@ -160,7 +160,7 @@
     {
       "q": "Where did Joaquín sign with that big J, according to Hernando?",
       "options": [
-        "On the bills he never paid at the bar on Séptima",
+        "On his bar bills",
         "On Rosa's letters",
         "On the café's menu",
         "At the bank"
@@ -170,7 +170,7 @@
     {
       "q": "What does Rosa's room cure, according to Hernando?",
       "options": [
-        "Sadness, cold and Mondays",
+        "Sadness and cold",
         "Love",
         "Debts",
         "Hernando's heart"
@@ -180,7 +180,7 @@
     {
       "q": "How long is Rosa's counter?",
       "options": [
-        "Three and a half metres",
+        "3.5 metres",
         "Eighty metres",
         "Seven metres",
         "One metre"

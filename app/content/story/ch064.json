@@ -73,7 +73,7 @@
     {
       "q": "Who was the Mono Ríos?",
       "options": [
-        "Hernando's friend from the taxi rank for fifty years",
+        "His friend of fifty years",
         "Hernando's brother",
         "An inspector from the city",
         "Vale's cousin"
@@ -93,7 +93,7 @@
     {
       "q": "Why does Vale say nothing about the fine?",
       "options": [
-        "It isn't the day for a fight, because Hernando is grieving",
+        "It isn't the day for a fight",
         "She agrees with the inspector",
         "She didn't hear him",
         "She is happy about it"
@@ -103,7 +103,7 @@
     {
       "q": "¿Qué hacía el Mono en diciembre?",
       "options": [
-        "La novena en la parada, con un nacimiento",
+        "Rezaba la novena",
         "Un viaje a Medellín",
         "Una fiesta en el café",
         "Nada, trabajaba"
@@ -116,7 +116,7 @@
     {
       "q": "What did the Mono always say?",
       "options": [
-        "At my funeral I want everyone to enjoy themselves. Time flies.",
+        "I want a happy funeral.",
         "Never drive at night.",
         "Taxis are better than buses.",
         "Don't trust Altamira."
@@ -136,7 +136,7 @@
     {
       "q": "What does Hernando answer when Tomás asks how many guests there are?",
       "options": [
-        "At a burial there are no guests",
+        "It's a burial",
         "About a hundred",
         "Only the family",
         "Just the taxi drivers"

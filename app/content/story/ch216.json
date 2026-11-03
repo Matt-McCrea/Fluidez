@@ -118,7 +118,7 @@
       "q": "What rating does Leonor give the café?",
       "options": [
         "One cup",
-        "Three cups out of five",
+        "Three cups",
         "Four cups",
         "Five cups"
       ],
@@ -138,7 +138,7 @@
       "q": "Why is Vale angry about the review?",
       "options": [
         "Because it criticises her volcano",
-        "Because she doesn't want praise that separates her from the house",
+        "Because the praise sets her apart",
         "Because Leonor didn't pay",
         "Because the newspaper misspelled her name"
       ],
@@ -161,7 +161,7 @@
       "q": "What does the hotel screen say at midday?",
       "options": [
         "Welcome",
-        "Just any café? Come up to our terrace. A five-cup view",
+        "Come up to our terrace",
         "Three cups for the café next door",
         "Closed for repairs"
       ],
@@ -181,7 +181,7 @@
       "q": "What does Gloria propose at the end of the day?",
       "options": [
         "That they close for a week",
-        "That the cooperative ban Leonor from the café for good",
+        "That the cooperative ban Leonor for good",
         "That they take the letters off the wall",
         "That Tomás write the reply in English"
       ],

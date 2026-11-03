@@ -85,7 +85,7 @@
     {
       "q": "What happened to sales after the blogger's review?",
       "options": [
-        "They doubled, from eighty coffees a day to a hundred and sixty",
+        "They doubled to 160 a day",
         "They fell by half",
         "They stayed the same",
         "Only the pastries sold more"
@@ -95,7 +95,7 @@
     {
       "q": "Why does nobody laugh when Simón says \"¡Bien hecho!\" the second time?",
       "options": [
-        "Tomás has just said they have zero pesos left",
+        "They have no pesos left",
         "Hernando is asleep",
         "Vale has burnt the cakes",
         "A customer has complained"
@@ -105,7 +105,7 @@
     {
       "q": "What does Hernando offer to sell when Vale refuses to sell the Burra?",
       "options": [
-        "A gold ring he bought in 2009 and never gave",
+        "A gold ring",
         "His watch",
         "Rosa's letters",
         "His cap"
@@ -115,7 +115,7 @@
     {
       "q": "Why does Tomás give the ring back?",
       "options": [
-        "He thinks it belongs to Rosa, and Rosa's things are not for sale",
+        "It's Rosa's, not for sale",
         "It is not worth anything",
         "Vale wants to wear it",
         "Mariana has a better idea"

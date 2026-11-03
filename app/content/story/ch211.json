@@ -174,7 +174,7 @@
       "q": "Why does Tomás enjoy wearing the marimonda mask?",
       "options": [
         "It keeps the sun off his face",
-        "For the first time nobody knows he is from Toronto",
+        "Nobody knows who he is",
         "It makes Vale laugh",
         "It hides him from Nelly"
       ],
@@ -185,7 +185,7 @@
       "options": [
         "Gloria tells him",
         "Tomás takes off the mask",
-        "Simón shouts the old hotel slogan from Vale's shoulder",
+        "Simón shouts the slogan",
         "Yesid points at him"
       ],
       "answer": 2
@@ -195,7 +195,7 @@
       "options": [
         "Very polite, formal Spanish",
         "Speaking English",
-        "Talking like a costeño: '¿Qué más, primo?' and 'ajá'",
+        "Talking like a costeño",
         "Showing him a map"
       ],
       "answer": 2
@@ -204,7 +204,7 @@
       "q": "¿Qué hace Chepe después del bambuco?",
       "options": [
         "Apaga el parlante",
-        "Toca la misma canción en vallenato",
+        "Toca vallenato",
         "Se va a dormir",
         "Llama a Altamira"
       ],
@@ -217,7 +217,7 @@
       "q": "What news does Mariana give Gloria on the phone?",
       "options": [
         "The bench has been removed",
-        "Dr Uribe signed and the café reopens in two weeks",
+        "Dr Uribe has signed",
         "Altamira has bought the block",
         "Wilson won the chess tournament"
       ],
@@ -227,7 +227,7 @@
       "q": "According to Yesid, why was the marimonda invented?",
       "options": [
         "To scare children",
-        "So the poor of Barrio Abajo could make fun of the rich",
+        "To laugh at the rich",
         "To advertise hotels",
         "To honour the fishermen"
       ],

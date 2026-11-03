@@ -55,7 +55,7 @@
     {
       "q": "Why does Tomás say Vale deserves it?",
       "options": [
-        "Rosa's main rule: the café belongs to the family, and Vale is family",
+        "Vale is part of the family",
         "Vale has more money than him",
         "Hernando asked him to",
         "Vale threatened to leave"
@@ -65,7 +65,7 @@
     {
       "q": "What worries Vale about Tomás's promise?",
       "options": [
-        "It only lasts three hundred and sixty five days",
+        "It only lasts a year",
         "He never says it in Spanish",
         "Hernando made it, not Tomás",
         "It is written on a napkin"
@@ -98,7 +98,7 @@
     {
       "q": "Where was Tomás practising at the start?",
       "options": [
-        "At the back of the café, behind the machine",
+        "Behind the machine",
         "At Gloria's house",
         "In the street",
         "In the kitchen with Vale"
@@ -108,7 +108,7 @@
     {
       "q": "Where did Vale look when Tomás said she was family?",
       "options": [
-        "At the photo of Rosa, above the till",
+        "At Rosa's pic",
         "At the window",
         "At Simón",
         "At the envelope"
@@ -118,7 +118,7 @@
     {
       "q": "What does Tomás do with the envelope?",
       "options": [
-        "He puts it on the table without opening it",
+        "He doesn't open it",
         "He tears it up",
         "He reads it aloud",
         "He gives it to Simón"
