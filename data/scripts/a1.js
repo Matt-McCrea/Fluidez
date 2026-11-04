@@ -1155,6 +1155,62 @@ window.SCRIPTS_A1 = {
   ]
 },
 
+"gr-ir-a-infinitivo-a1": {
+  source: "old",
+  hook: {
+    line: "Friday afternoon, and everyone asks about the weekend. The answer needs one verb you already know, *ir*, plus a small *a* and whatever you plan to do.",
+    es: "Laura: ¿Qué vas a hacer el fin de semana?\nSam: Voy a descansar. Y esta noche voy a ver una película.",
+    en: "Laura: What are you going to do at the weekend?\nSam: I'm going to rest. And tonight I'm going to watch a film."
+  },
+  examples: [
+    { es: "Esta noche vamos a cocinar en casa.", en: "Tonight we're going to cook at home." },
+    { es: "Mañana Laura no va a trabajar.", en: "Laura isn't going to work tomorrow." },
+    { es: "¡Uy, va a llover!", en: "Oh no, it's going to rain!" }
+  ],
+  rule: "A plan is *ir*, then *a*, then the verb as the dictionary gives it:\n*voy a comer*: I'm going to eat\n*vas a comer*: you're going to eat\n*va a comer*: he, she or *usted* is going to eat\n*vamos a comer*: we're going to eat\n*van a comer*: they or *ustedes* are going to eat\nOnly *ir* changes. The verb after *a* keeps its *-ar*, *-er* or *-ir*.\nThe *a* always stays: never *voy comer*.\nFor not, *no* goes first: *No voy a salir.*\nTo ask: *¿Qué vas a hacer?*\nWhen: *mañana, esta noche, más tarde, el fin de semana*.\n*Vamos a comer* can also mean let's eat.",
+  readAndPick: [
+    { q: "Laura tells you about tonight. Who is going to cook?", es: "Esta noche mis papás van a cocinar.",
+      options: ["Laura's parents", "Laura herself", "Laura and her parents"], answer: 0,
+      why: "*Van*: they, here *mis papás*. Laura isn't cooking." },
+    { q: "Diego texts you this. When is he going to call?", es: "Voy a llamar más tarde.",
+      options: ["Later on today", "Right this minute", "Tomorrow"], answer: 0,
+      why: "*Más tarde*: later. The call is still to come." },
+    { q: "Sam says this. Who is watching a film tonight?", es: "Esta noche vamos a ver una película.",
+      options: ["Sam and others", "Only Sam", "Everyone but Sam"], answer: 0,
+      why: "*Vamos*: we, so Sam is in it too." },
+    { q: "When is the trip?", es: "Mis amigos van a viajar el fin de semana.",
+      options: ["This coming weekend", "Last weekend", "Every single weekend"], answer: 0,
+      why: "*Van a viajar* is a plan, so the weekend is still to come." },
+    { q: "Ana says this. Is she going to work tomorrow?", es: "Mañana no voy a trabajar.",
+      options: ["No, she isn't", "Yes, all day", "Yes, but later on"], answer: 0,
+      why: "*No* before *voy*: she is not going to work." },
+    { q: "What is about to happen?", es: "¡Uy, va a llover!",
+      options: ["It's about to rain", "It rained earlier", "It's raining hard now"], answer: 0,
+      why: "*Va a* with no time word: any minute now." }
+  ],
+  yourTurn: [
+    { en: "I'm going to rest.", es: "Voy a descansar.", accept: [] },
+    { en: "What are you going to do at the weekend? (to a friend)", es: "¿Qué vas a hacer el fin de semana?", accept: ["¿Qué vas a hacer este fin de semana?"] },
+    { en: "Tonight we're going to cook at home.", es: "Esta noche vamos a cocinar en casa.", accept: ["Vamos a cocinar en casa esta noche."] },
+    { en: "They're going to travel tomorrow.", es: "Mañana van a viajar.", accept: ["Van a viajar mañana."] },
+    { en: "I'm not going to work tomorrow.", es: "Mañana no voy a trabajar.", accept: ["No voy a trabajar mañana."] }
+  ],
+  personal: {
+    prompt: "What are you really going to do tonight or this weekend? Write one or two true lines with *voy a* or *vamos a*, and say when.",
+    constraints: [
+      { type: "containsAny", words: ["voy a", "vamos a"], label: "your plan, with *voy a* or *vamos a*" },
+      { type: "regex", pattern: "\\b(voy|vamos) a\\s+[a-záéíóúñ]*(ar|er|ir)(me|te|se|nos|lo|la|los|las|le|les)?\\b", label: "the verb after *a*, as the dictionary gives it: *voy a descansar*" },
+      { type: "containsAny", words: ["mañana", "esta noche", "más tarde", "fin de semana", "hoy"], label: "when: *esta noche*, *mañana*, *el fin de semana*" }
+    ],
+    model: "Esta noche voy a cocinar en casa, y el fin de semana vamos a ir a la playa."
+  },
+  pitfalls: [
+    "*Voy comer* drops the little word. Spanish keeps its *a* the way English keeps the to of going to: *voy a comer*.",
+    "*Vamos a ir* is not one go too many: it is how you say a plan to go somewhere. *Mañana vamos a ir al centro.*",
+    "Spanish also has a one-word future, but you will not need it for a long while. For plans, *voy a* plus a verb is what people say every day in Latin America."
+  ]
+},
+
 "nt-referencias-generales-a1": {
   source: "merged",
   hook: {

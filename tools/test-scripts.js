@@ -32,7 +32,7 @@ const lines = (s) => String(s).split('\n').length;
 
 // ---- the lessons on the path, read from the course itself
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 76, 'expected 76 lessons on the path in the A1 band, found ' + want.length);
+ok(want.length === 77, 'expected 77 lessons on the path in the A1 band, found ' + want.length);
 // the band ends where COURSE_BANDS says it does: every unit listed sits inside it, and none is left out
 const bandEnd = window.COURSE_BANDS.A2;
 const inBand = [...new Set(window.COURSE_DAYS.slice(0, bandEnd).map((d) => d.unit))];
@@ -146,6 +146,8 @@ Object.keys(SC).forEach((id) => {
  ['task-cortesia', 1, 'Disculpe, ¿tienes hora, por favor?'], ['fn-establecer-comunicacion-a1', 3, '¡Hasta lunes!'], ['fn-identificar-a1', 0, 'Sí, yo.'],
  // units 4 to 8
  ['nt-cantidad-numerica-a1', 2, 'Hay mucho gente en la calle.'], ['nt-cantidad-numerica-a1', 1, 'Vivo en el cuatro piso.'],
+ ['gr-ir-a-infinitivo-a1', 0, 'Voy descansar.'], ['gr-ir-a-infinitivo-a1', 1, '¿Qué vas hacer el fin de semana?'], ['gr-ir-a-infinitivo-a1', 2, 'Esta noche vamos a cocinamos en casa.'],
+ ['gr-ir-a-infinitivo-a1', 3, 'Mañana van viajar.'], ['gr-ir-a-infinitivo-a1', 4, 'Mañana no voy trabajar.'],
  ['gr-numerales-a1', 0, 'Tengo veintiuno años.'], ['gr-numerales-a1', 2, 'Es mi primero día.'], ['gr-numerales-a1', 3, 'Es la tercer vez.'], ['gr-numerales-a1', 4, 'Cuesta ciento mil pesos.'],
  ['nt-referencias-generales-a1', 0, 'Son la una.'], ['nt-referencias-generales-a1', 3, 'No trabajo en sábado.'], ['nt-referencias-generales-a1', 4, 'Nunca no como pescado.'],
  ['nt-valor-precio-a1', 1, '¿Cuánto cuesta los mangos?'], ['nt-valor-precio-a1', 4, 'La mesa es dos metros.'], ['task-quedar', 3, 'Nos vemos en el viernes a las siete.'],

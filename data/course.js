@@ -221,6 +221,7 @@ window.COURSE = [
   { unit: 'a1-u04', band: 'A1', title: 'Numbers, time and money',
     goal: 'I can say how many, what time, what day and how much.',
     canDo: ['count and use numbers up to a hundred',
+            'say what you are going to do',
             'tell the time and name the days',
             'ask and understand a price',
             'arrange a time to meet'],
@@ -228,6 +229,7 @@ window.COURSE = [
       { lesson: 'nt-cantidad-numerica-a1' },
       { lesson: 'gr-numerales-a1' },
       { verbs: ['hablar', 'trabajar', 'vivir', 'llamar', 'quedar'] },
+      { lesson: 'gr-ir-a-infinitivo-a1' },   // voy a plus a verb: the plans task-quedar arranges, and g:ir-a-plans, which no lesson taught
       { lesson: 'nt-referencias-generales-a1' },
       { practice: true },
       { lesson: 'nt-valor-precio-a1' },

@@ -8,12 +8,6 @@
     ],
     "note": "A first-meeting dialogue for reception; teaches the greeting chunks it is built from. Derived g:reflexive-routine came from me llamo."
   },
-  "gr-sonidos-a1": {
-    "teaches": [
-      "g:sounds-letters"
-    ],
-    "note": "Five vowels and the consonants that surprise."
-  },
   "presente": {
     "teaches": [
       "g:present-ar",
@@ -69,12 +63,6 @@
       "g:questions"
     ],
     "note": "Question words qué, quién, dónde, cuánto, cómo. PCIC had p:tener-anos."
-  },
-  "gr-acentuacion-a1": {
-    "teaches": [
-      "g:sounds-letters"
-    ],
-    "note": "Stress rules and the written accent; g:sounds-letters covers the stress mark."
   },
   "gr-pronombre-sujeto-a1": {
     "teaches": [
@@ -1747,5 +1735,11 @@
       "g:sounds-letters"
     ],
     "note": "Cognate conversion rules; carries the sounds-and-letters node now that the sounds lessons are reference cards."
+  },
+  "gr-ir-a-infinitivo-a1": {
+    "teaches": [
+      "g:ir-a-plans"
+    ],
+    "note": "new lesson 4 Nov 2026 for the untaught node"
   }
 }

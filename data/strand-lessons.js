@@ -38148,6 +38148,66 @@ window.STRAND_LESSONS = [
       q: 'Your friend says "Estoy embarazada." What is her news?',
       options: ['She is embarrassed', 'She is pregnant', 'She is very tired'], answer: 1 }
   ]
+},
+
+/* Gap fix, 4 Nov 2026: ir a plus infinitive. The graph node g:ir-a-plans had no
+ * lesson on the old course, which left a core A1 structure to chance and kept
+ * the scenes that need it from ever being served. Placed in a1-u04, the day
+ * after the verb day. */
+{
+  id: 'gr-ir-a-infinitivo-a1', canDo: 'say what you are going to do', strand: 'grammar', cefr: 'A1', level: 1, theme: 'ocio',
+  pcic: ['gramatica:A1:329'],
+  title: 'Voy a + verbo: plans and what\'s about to happen',
+  summary: 'English talks about plans with going to, and Spanish does exactly the same with the verb ir: voy a comer, I am going to eat. You already know the present of ir from the verb days. Add a, then any verb as the dictionary gives it, and you can say what you are doing tonight, tomorrow and at the weekend. In Latin America this is the everyday way to talk about what comes next, so at A1 it is the only future you need.',
+  keywords: [
+    { es: 'voy a', en: 'I am going to' },
+    { es: 'vas a', en: 'you are going to (tú)' },
+    { es: 'va a', en: 'he or she is going to; you are going to (usted)' },
+    { es: 'vamos a', en: 'we are going to; let\'s' },
+    { es: 'van a', en: 'they are going to; you are going to (ustedes)' },
+    { es: '¿Qué vas a hacer?', en: 'What are you going to do?' },
+    { es: 'el fin de semana', en: 'the weekend, at the weekend' },
+    { es: 'mañana', en: 'tomorrow' },
+    { es: 'esta noche', en: 'tonight' },
+    { es: 'más tarde', en: 'later' }
+  ],
+  sections: [
+    { h: 'Ir, then a, then the verb', html: 'You met <i>ir</i> (to go) on a verb day. Its present is short and irregular, and it is the first half of every plan. The second half is <i>a</i> plus the verb for what you are going to do:<ul>' +
+      '<li><b>voy a</b> <i>comer</i>: I am going to eat</li>' +
+      '<li><b>vas a</b> <i>comer</i>: you are going to eat (<i>tú</i>)</li>' +
+      '<li><b>va a</b> <i>comer</i>: he or she is going to eat, or you are (<i>usted</i>)</li>' +
+      '<li><b>vamos a</b> <i>comer</i>: we are going to eat</li>' +
+      '<li><b>van a</b> <i>comer</i>: they are going to eat, or you all are (<i>ustedes</i>)</li></ul>' +
+      'The <i>a</i> always stays. It does the job of the <i>to</i> in going to.' },
+    { h: 'The second verb never changes', html: 'Only <i>ir</i> changes for the person. The verb after <i>a</i> stays exactly as the dictionary gives it, ending in <i>-ar</i>, <i>-er</i> or <i>-ir</i>: <i>Voy a trabajar. Laura va a trabajar. Mis amigos van a trabajar.</i> To say no, put <i>no</i> in front of <i>ir</i>: <i>No voy a trabajar mañana.</i> And <i>vamos a</i> has a second meaning you will hear every day: <i>¡Vamos a comer!</i> is also "let\'s eat!"' },
+    { h: 'Words that say when', html: 'A plan usually comes with a time word, at the start or at the end of the sentence: <i>mañana</i> (tomorrow), <i>esta noche</i> (tonight), <i>más tarde</i> (later), <i>el fin de semana</i> (at the weekend, with no word for at). <i>Esta noche vamos a cocinar en casa.</i> <i>Voy a estudiar más tarde.</i> With no time word at all, it often means any minute now: <i>¡Uy, va a llover!</i> Oh no, it is going to rain!' },
+    { h: 'Asking about plans', html: 'The question puts <i>qué</i> in front and <i>hacer</i> (to do) at the end: <i>¿Qué vas a hacer el fin de semana?</i> To someone you call <i>usted</i>: <i>¿Qué va a hacer?</i> To a group: <i>¿Qué van a hacer?</i> The answer keeps <i>ir</i> and swaps <i>hacer</i> for your own verb: <i>Voy a descansar.</i>' }
+  ],
+  contrasts: [
+    { es: 'Voy al cine.', en: 'I am going to the cinema.', note: 'a place: <i>a</i> plus <i>el</i> becomes <i>al</i>' },
+    { es: 'Voy a comer.', en: 'I am going to eat.', note: 'a plan: <i>a</i> plus a verb, which never changes' },
+    { es: 'Voy a la playa.', en: 'I am going to the beach.', note: 'a place again: <i>a la</i> before a <i>la</i> word' },
+    { es: 'Voy a ir a la playa.', en: 'I am going to go to the beach.', note: 'both at once: the plan is to go somewhere' }
+  ],
+  pitfalls: [
+    '<i>*Voy comer</i> drops the <i>a</i>. English needs the <i>to</i> of going to, and Spanish needs its <i>a</i> just the same: <i>voy a comer</i>.',
+    '<i>Vamos a ir</i> looks like one go too many, but it is correct and very common: it is the plan to go somewhere. <i>Mañana vamos a ir al centro.</i>',
+    'You do not need a new set of endings for the future yet. Spanish has a one-word future too, and you will meet it much later. For plans, everyday Latin American Spanish uses <i>voy a</i> plus a verb, and it is never the wrong choice.'
+  ],
+  examples: [
+    { es: '¿Qué vas a hacer el fin de semana?', en: 'What are you going to do at the weekend?' },
+    { es: 'Esta noche vamos a ver una película en casa.', en: 'Tonight we are going to watch a film at home.' },
+    { es: 'Mañana Laura no va a trabajar.', en: 'Laura is not going to work tomorrow.' }
+  ],
+  probes: [
+    { id: 'p:irA1:forma', kind: 'mcq', q: '"I am going to eat": which one?',
+      options: ['Voy comer.', 'Voy a comer.', 'Voy a como.'], answer: 1 },
+    { id: 'p:irA1:cloze', kind: 'cloze', text: 'Esta noche ___ a ver una película. (we)', accept: ['vamos'] },
+    { id: 'p:irA1:recall', kind: 'recall', front: '"They are going to travel." (viajar)', back: 'Van a viajar' },
+    { id: 'p:irA1:cuando', kind: 'mcq', q: '"Mañana voy a trabajar." When is the work?',
+      options: ['Yesterday', 'Tomorrow', 'Every day'], answer: 1 }
+  ]
 }
+
 
 ];
