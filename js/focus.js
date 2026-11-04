@@ -64,10 +64,71 @@ window.Focus = (function () {
 
   function remaining() { var o = get(); return o ? o.left : 0; }
 
-  function start(themeId, days) {
+  function bandNow() { return window.Profile && window.Profile.current ? window.Profile.current() : null; }
+
+  function start(themeId, days, band) {
     if (!themeId) return false;
     var n = Math.max(1, Math.min(MAX_DAYS, days || DEFAULT_DAYS));
-    save({ theme: themeId, left: n, of: n, started: today(), lastDay: null });
+    save({ theme: themeId, left: n, of: n, started: today(), lastDay: null, band: band || bandNow() });
+    return true;
+  }
+
+  /* ---- THEMES DONE, BY BAND ------------------------------------------------
+   * `fluidez.themes` = { "<band>:<theme>": { done: day } }. A theme is done at a
+   * band when a focus on it ran its full length and at least MIN_READS of that
+   * theme's passages were read during it. Done at A2 means it is not offered
+   * again at A2; at B1 it comes back, with harder material. */
+  var TKEY = 'fluidez.themes', MIN_READS = 3, MIN_POOL = 3;
+  function loadThemes() { try { return JSON.parse(localStorage.getItem(TKEY)) || {}; } catch (e) { return {}; } }
+  function saveThemes(o) { try { localStorage.setItem(TKEY, JSON.stringify(o)); } catch (e) {} }
+  function themeDone(themeId, band) { return !!loadThemes()[band + ':' + themeId]; }
+
+  function bandLevels(band) {
+    var L = (window.LEVELS || []).filter(function (x) { return x.code === band; })[0];
+    return L ? L.levels : null;
+  }
+  function passagesOf(themeId, band) {
+    var lv = bandLevels(band);
+    return (window.PASSAGES || []).filter(function (p) {
+      return p.theme === themeId && (!lv || lv.indexOf(p.level || 1) !== -1);
+    });
+  }
+  function labelOf(themeId) {
+    var t = window.TAXONOMY ? window.TAXONOMY.theme(themeId) : null;
+    if (!t) return themeId;
+    return window.UI ? window.UI.t(t.short || t.es, t.en) : (t.short || t.en);
+  }
+  /* The themes worth offering at this band: enough passages to carry a week,
+   * and not already finished here. */
+  function themeOptions(band) {
+    band = band || bandNow();
+    return (window.THEMES || []).filter(function (t) {
+      return passagesOf(t.id, band).length >= MIN_POOL && !themeDone(t.id, band);
+    }).map(function (t) { return { id: t.id, label: labelOf(t.id), passages: passagesOf(t.id, band).length }; });
+  }
+  /* Themes finished at this band that the learner has not yet been told about. */
+  function newlyDone(band) {
+    var th = loadThemes(), out = [], changed = false;
+    Object.keys(th).forEach(function (k) {
+      if (k.indexOf(band + ':') !== 0 || th[k].told) return;
+      out.push(k.slice(band.length + 1)); th[k].told = 1; changed = true;
+    });
+    if (changed) saveThemes(th);
+    return out;
+  }
+  function completeIfEarned(o) {
+    if (!o || !o.band) return false;
+    var read = {};
+    try { read = (JSON.parse(localStorage.getItem('fluidez.progress')) || {}).read || {}; } catch (e) {}
+    var byId = {};
+    (window.PASSAGES || []).forEach(function (p) { byId[p.id] = p; });
+    var n = Object.keys(read).filter(function (id) {
+      return byId[id] && byId[id].theme === o.theme && read[id] >= o.started;
+    }).length;
+    if (n < MIN_READS) return false;
+    var th = loadThemes();
+    th[o.band + ':' + o.theme] = { done: today() };
+    saveThemes(th);
     return true;
   }
 
@@ -83,6 +144,7 @@ window.Focus = (function () {
     if (o.lastDay === t) return;              // already counted today
     o.lastDay = t;
     o.left -= 1;
+    if (o.left <= 0) completeIfEarned(o);
     save(o.left > 0 ? o : null);
   }
 
@@ -114,5 +176,7 @@ window.Focus = (function () {
 
   return { get: get, theme: theme, remaining: remaining, start: start, stop: stop,
            tick: tick, label: label, narrow: narrow,
+           themeOptions: themeOptions, themeDone: themeDone, themeLabel: labelOf, newlyDone: newlyDone,
+           MIN_READS: MIN_READS,
            DEFAULT_DAYS: DEFAULT_DAYS, MAX_DAYS: MAX_DAYS };
 })();

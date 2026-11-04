@@ -856,7 +856,7 @@ window.Session = (function () {
     var u = (window.COURSE_UNITS || {})[f.unit];
     if (!u || u.optional || u.from == null) return null;
     var day = (ctx.dayIndex != null ? ctx.dayIndex : -1) - u.from + 1;
-    return { title: u.title, goal: u.goal,
+    return { id: u.id, title: u.title, goal: u.goal,
              day: day > 0 && day <= u.length ? day : null, of: u.length };
   }
 
@@ -894,7 +894,14 @@ window.Session = (function () {
     if (p.read[id]) return;
     p.read[id] = dayNumber();
     // Words read: Spanish words in passages marked read, counted once per passage.
-    p.wordsRead = (p.wordsRead || 0) + String(text || '').split(/\s+/).filter(Boolean).length;
+    var nWords = String(text || '').split(/\s+/).filter(Boolean).length;
+    p.wordsRead = (p.wordsRead || 0) + nWords;
+    var uid = ctx && !ctx.repeat ? unitIdOfCtx(ctx) : null;
+    if (uid) {
+      p.unitStats = p.unitStats || {};
+      var us = p.unitStats[uid] = p.unitStats[uid] || { days: [], words: 0 };
+      us.words = (us.words || 0) + nWords;
+    }
     saveProg(p);
   }
   function readSet() { return loadProg().read || {}; }
@@ -1163,6 +1170,137 @@ window.Session = (function () {
     saveProg(p);
   }
 
+  /* ---- UNITS AS A CHAIN ----------------------------------------------------
+   * The week is a unit; finishing its last day is an event. These are the
+   * lookups the unit-done card and the Progress screen share. */
+  function unitOf(di) {
+    var d = (window.COURSE_DAYS || [])[di];
+    var u = d && d.unit ? (window.COURSE_UNITS || {})[d.unit] : null;
+    return u && !u.optional ? u : null;
+  }
+  function unitIdOfCtx(c) {
+    if (!c) return null;
+    var u = c.focus && c.focus.unit ? (window.COURSE_UNITS || {})[c.focus.unit] : unitOf(c.dayIndex);
+    return u && !u.optional && u.from != null ? u.id : null;
+  }
+  /* Days done of days. A1/A2 walk a counter; above that, a day is done when its
+   * lesson is studied. */
+  function unitProgress(u) {
+    if (!u || u.from == null) return { done: 0, of: 0 };
+    var p = loadProg(), pr = window.Profile ? window.Profile.params() : {};
+    var done = 0;
+    if (pr.usesCurriculum && window.Curriculum && window.Curriculum.startOf) {
+      var at = window.Curriculum.startOf(pr.cefr || window.Profile.current()) + (p.beginnerDay || 0);
+      done = Math.max(0, Math.min(u.length, at - u.from));
+    } else {
+      var st = p.studied || {};
+      (window.COURSE_DAYS || []).slice(u.from, u.from + u.length).forEach(function (d) {
+        if (d.lesson && st[d.lesson]) done++;
+      });
+    }
+    if (p.unitsDone && p.unitsDone[u.id]) done = u.length;
+    return { done: done, of: u.length };
+  }
+  function unitOrdinal(u) {
+    var n = 0, all = window.COURSE_UNITS || {};
+    Object.keys(all).forEach(function (k) {
+      var x = all[k];
+      if (!x.optional && x.from != null && x.band === u.band && x.from <= u.from) n++;
+    });
+    return n;
+  }
+  function unitFollowing(u) {
+    var all = window.COURSE_UNITS || {}, want = u.from + u.length, hit = null;
+    Object.keys(all).forEach(function (k) { if (!all[k].optional && all[k].from === want) hit = all[k]; });
+    return hit;
+  }
+  /* Is the session that just finished the last day of its unit, and the first
+   * time that has been true? Writes the record that makes it once-only. */
+  function detectUnitDone(c) {
+    if (c.repeat || modeDef().keys.indexOf('learn') === -1) return null;
+    var uid = unitIdOfCtx(c);
+    if (!uid) return null;
+    var u = window.COURSE_UNITS[uid], p = loadProg();
+    if (p.unitsDone && p.unitsDone[uid]) return null;
+    var pr = window.Profile ? window.Profile.params() : {}, last;
+    if (pr.usesCurriculum) last = c.dayIndex === u.from + u.length - 1;
+    else last = !!(c.lesson && window.UnitCheck && window.UnitCheck.isDone(u) &&
+                   window.UnitCheck.lessonIds(u).indexOf(c.lesson.id) !== -1);
+    if (!last) return null;
+    p.unitsDone = p.unitsDone || {}; p.unitsDone[uid] = dayNumber();
+    saveProg(p);
+    return u;
+  }
+  /* Today counts as one of the unit's sessions (a repeat does not). */
+  function recordUnitDay(c) {
+    var uid = unitIdOfCtx(c);
+    if (!uid || c.repeat) return;
+    var p = loadProg();
+    p.unitStats = p.unitStats || {};
+    var us = p.unitStats[uid] = p.unitStats[uid] || { days: [], words: 0 };
+    var d = dayNumber();
+    if (us.days.indexOf(d) === -1) us.days.push(d);
+    saveProg(p);
+  }
+  function unitNumbers(u) {
+    var us = (loadProg().unitStats || {})[u.id] || { days: [], words: 0 };
+    var inDays = {}; us.days.forEach(function (d) { inDays[d] = 1; });
+    var log = []; try { log = JSON.parse(localStorage.getItem('fluidez.reviewlog')) || []; } catch (e) {}
+    var n = 0, right = 0;
+    log.forEach(function (e) { if (inDays[e.day]) { n++; if (e.ok) right++; } });
+    return { sessions: us.days.length, words: us.words || 0, reviewed: n, right: right,
+             share: n ? Math.round(100 * right / n) : null };
+  }
+  function plain(t) { return String(t || '').replace(/\s*[—–]\s*/g, ', ').replace(/\s+-\s+/g, ', ').replace(/\.$/, ''); }
+  function unitCanDos(u) {
+    var out = [];
+    window.UnitCheck.lessonIds(u).forEach(function (id) {
+      var l = lessonById(id);
+      if (l && l.canDo && out.length < 5) out.push(plain(l.canDo));
+    });
+    if (!out.length) (u.canDo || []).slice(0, 5).forEach(function (c) { out.push(plain(c)); });
+    if (!out.length && u.goal) out.push(plain(u.goal));
+    return out;
+  }
+  function unitDoneCard(u) {
+    var card = UI.el('div', 'unit-done-card');
+    card.appendChild(UI.el('div', 'eyebrow', T('Unidad terminada', 'Unit done')));
+    card.appendChild(UI.el('h2', null, T('Unidad ', 'Unit ') + unitOrdinal(u) + T(' terminada: ', ' done: ') + u.title));
+    var cds = unitCanDos(u);
+    if (cds.length) {
+      card.appendChild(UI.el('div', 'muted small', T('Ahora puedes...', 'You can now...')));
+      var ul = UI.el('ul', 'summary-list');
+      cds.forEach(function (c) { ul.appendChild(UI.el('li', null, c)); });
+      card.appendChild(ul);
+    }
+    var nm = unitNumbers(u), bits = [];
+    bits.push(nm.sessions + (nm.sessions === 1 ? ' session' : ' sessions'));
+    if (nm.share != null) bits.push(nm.share + '% right');
+    bits.push(nm.words + ' words read');
+    card.appendChild(UI.el('p', 'unit-numbers', bits.join(' · ')));
+    var F = window.Focus, band = bandNow();
+    if (F && F.newlyDone && band) {
+      F.newlyDone(band).forEach(function (t) {
+        card.appendChild(UI.el('p', 'muted small', F.themeLabel(t) + T(' está hecho en ', ' is done at ') + band +
+          T('. Vuelve en el nivel siguiente con material más difícil.', '. It returns one band up with harder material.')));
+      });
+    }
+    if (window.UnitCheck && window.UnitCheck.testable(u)) {
+      var tb = UI.el('button', 'ghost-btn', T('Hacer la prueba de la unidad', 'Take the unit check')); tb.type = 'button';
+      tb.addEventListener('click', function () {
+        window.UnitCheck.run(u, function () { if (ctx && !ctx.repeat) renderComplete(); else window.App.go('home'); });
+      });
+      card.appendChild(tb);
+    }
+    var nxt = unitFollowing(u);
+    if (nxt && window.Hub && window.Hub.themeOffer) {
+      var offer = window.Hub.themeOffer({ unitId: nxt.id, days: nxt.length, band: bandNow(),
+        title: T('La próxima semana: elige un tema, o sigue.', 'Next week: pick a theme, or carry on.') });
+      if (offer) card.appendChild(offer);
+    }
+    return card;
+  }
+
   function renderComplete() {
     setProgress(1, 1);
     if (!ctx.counted) {
@@ -1170,6 +1308,9 @@ window.Session = (function () {
       markDone(ctx);
       if (!ctx.repeat) {
         bumpStreak();
+        recordUnitDay(ctx);
+        var doneUnit = detectUnitDone(ctx);
+        if (doneUnit) ctx.unitDone = doneUnit.id;
         // A session that finished is what a focus is counted in — see js/focus.js.
         if (window.Focus) window.Focus.tick();
         // ...and what the league's «días» column counts — see js/liga.js.
@@ -1185,6 +1326,9 @@ window.Session = (function () {
     var wrap = UI.el('div', 'panel intro complete');
     wrap.appendChild(UI.el('div', 'big-check', '✓'));
     wrap.appendChild(UI.el('h1', null, T('Sesión terminada', 'Session done')));
+    if (ctx.unitDone && window.COURSE_UNITS[ctx.unitDone] && window.UnitCheck) {
+      wrap.appendChild(unitDoneCard(window.COURSE_UNITS[ctx.unitDone]));
+    }
     var rh = rhythm();
     wrap.appendChild(UI.el('div', 'streak-badge',
       '🔥 ' + rh.days30 + T(' de los últimos 30 días', ' of the last 30 days')));
@@ -1315,6 +1459,8 @@ window.Session = (function () {
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
     rhythm: rhythm,
     nextUp: nextUp,
+    unitOf: unitOf,
+    unitProgress: unitProgress,
     mode: function () { var r = !ctx && pending(); return r ? MODES[r.mode] : modeDef(); },
     resume: resume,
     repeatToday: repeatToday,

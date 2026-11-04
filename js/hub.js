@@ -55,5 +55,51 @@ window.Hub = (function () {
     });
   }
 
-  return { renderErrors: renderErrors, reviewPool: reviewPool };
+  /* ---- the weekly theme choice ---------------------------------------------
+   * One card, two homes: the unit-done screen ("Next week: ...") and the hub on
+   * the first day of a unit ("Pick a theme for this unit?"). Choosing starts a
+   * Focus for `days` sessions; "carry on" starts nothing. Either answer is
+   * recorded under progress.themeOffered so the offer is made once per unit.
+   *   opts: { unitId, days, title, band, onDone }  */
+  function offeredMap() {
+    try { return (JSON.parse(localStorage.getItem('fluidez.progress')) || {}).themeOffered || {}; } catch (e) { return {}; }
+  }
+  function markOffered(unitId) {
+    if (!unitId) return;
+    try {
+      var p = JSON.parse(localStorage.getItem('fluidez.progress')) || {};
+      p.themeOffered = p.themeOffered || {}; p.themeOffered[unitId] = 1;
+      localStorage.setItem('fluidez.progress', JSON.stringify(p));
+    } catch (e) {}
+  }
+  function themeOffer(opts) {
+    var F = window.Focus;
+    if (!F || !F.themeOptions || offeredMap()[opts.unitId]) return null;
+    var list = F.themeOptions(opts.band);
+    if (!list.length) return null;
+    var box = UI.el('div', 'theme-offer');
+    box.appendChild(UI.el('div', 'eyebrow', opts.title));
+    var row = UI.el('div', 'theme-chips');
+    function finish(msg) {
+      markOffered(opts.unitId);
+      UI.clear(box);
+      box.appendChild(UI.el('p', 'muted', msg));
+      if (opts.onDone) opts.onDone();
+    }
+    list.forEach(function (t) {
+      var b = UI.el('button', 'ghost-btn small theme-chip', t.label); b.type = 'button';
+      b.addEventListener('click', function () {
+        F.start(t.id, Math.min(F.MAX_DAYS, opts.days || F.DEFAULT_DAYS), opts.band);
+        finish(UI.t('Enfoque: ', 'Focus: ') + t.label + ' · ' + F.remaining() + UI.t(' sesiones', ' sessions'));
+      });
+      row.appendChild(b);
+    });
+    box.appendChild(row);
+    var carry = UI.el('button', 'linkish', UI.t('Seguir con el curso', 'Carry on')); carry.type = 'button';
+    carry.addEventListener('click', function () { finish(UI.t('Seguimos con el curso.', 'Carrying on with the course.')); });
+    box.appendChild(carry);
+    return box;
+  }
+
+  return { renderErrors: renderErrors, reviewPool: reviewPool, themeOffer: themeOffer };
 })();

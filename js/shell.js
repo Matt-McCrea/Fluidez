@@ -205,16 +205,25 @@ window.Shell = (function () {
        * setting you forget you made. The lesson line sits directly above it,
        * which is also the clearest possible statement that the focus did not
        * replace it. */
-      var F = window.Focus, fx = F && F.get();
+      var F = window.Focus, fx = F && F.get(), u0 = t.unit;
       if (fx) {
         var fRow = UI.el('div', 'today-focus theme-focus');
         fRow.appendChild(UI.el('span', 'tf-label', T('Enfoque', 'Focus')));
-        var v = UI.el('span', 'tf-value', F.label());
+        var v = UI.el('span', 'tf-value', T('Esta semana: ', 'This week: ') + F.label());
         v.appendChild(UI.el('span', 'tf-left',
-          ' · ' + fx.left + T(fx.left === 1 ? ' sesión' : ' sesiones',
-                              fx.left === 1 ? ' session' : ' sessions')));
+          ', ' + fx.left + T(fx.left === 1 ? ' sesión que queda' : ' sesiones que quedan',
+                              fx.left === 1 ? ' session left' : ' sessions left')));
         fRow.appendChild(v);
+        var fStop = UI.el('button', 'linkish tf-stop', T('parar', 'stop')); fStop.type = 'button';
+        fStop.addEventListener('click', function () { F.stop(); refresh('inicio'); });
+        fRow.appendChild(fStop);
         card.appendChild(fRow);
+      } else if (u0 && u0.day === 1 && window.Hub && window.Hub.themeOffer) {
+        /* First day of a unit, no focus running: offer the weekly theme once. */
+        var offer = window.Hub.themeOffer({ unitId: u0.id, days: u0.of, band: window.Profile.current(),
+          title: T('¿Elegir un tema para esta unidad?', 'Pick a theme for this unit?'),
+          onDone: function () { setTimeout(function () { refresh('inicio'); }, 900); } });
+        if (offer) card.appendChild(offer);
       }
     }
 
