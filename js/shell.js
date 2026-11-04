@@ -31,7 +31,7 @@ window.Shell = (function () {
      * heatmap — so the one screen that answers "am I getting better?" was
      * filed under a name that answers a different question. */
     progreso:  { icon: '📊', label: 'Progreso' },
-    palabras:  { icon: '➕', label: 'Palabras' },
+    palabras:  { icon: '🔍', label: 'Buscar' },
     mas:       { icon: '⋯', label: 'Más' }
   };
   // Tabs whose stats can go stale while you're elsewhere — re-render on every

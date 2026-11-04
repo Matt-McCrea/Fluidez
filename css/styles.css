@@ -1087,3 +1087,29 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .week-day.ahead { opacity:.7; }
 .week-n { font-size:1.05em; }
 .week-k { font-size:.72em; }
+
+/* ---- Buscar: one search box over words, verbs, grammar and units ---- */
+.bq-search { position:sticky; top:0; z-index:2; background:var(--panel); padding:6px 0; }
+.bq-input { width:100%; font-size:1.05rem; padding:12px 14px; }
+.bq-section { margin:16px 0 8px; }
+.bq-h { margin:0 0 6px; font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+.bq-topic { margin:10px 0 2px; font-size:.85rem; font-weight:650; }
+.bq-row { display:flex; align-items:baseline; gap:12px; width:100%; padding:8px 10px; border-radius:8px; border:1px solid transparent;
+  background:transparent; color:var(--text); text-align:left; font-size:1rem; }
+.bq-row.tappable { cursor:pointer; }
+.bq-row.tappable:hover { background:var(--panel-2); border-color:var(--accent); }
+.bq-banner { margin:10px 0; display:flex; flex-direction:column; gap:6px; }
+.bq-banner-row { text-align:left; padding:12px 14px; border-radius:10px; border:1px solid var(--accent); background:var(--panel-2);
+  color:var(--text); font-size:1.05rem; font-weight:650; cursor:pointer; }
+.bq-text { flex:1; display:flex; flex-direction:column; min-width:0; }
+.bq-sub { font-weight:400; }
+.bq-unit { margin:4px 0; border:1px solid var(--border); border-radius:10px; padding:6px 10px; }
+.bq-unit.current { border-color:var(--accent); background:var(--panel-2); }
+.bq-unit > summary { cursor:pointer; font-weight:600; padding:4px 0; }
+.bq-tenses { display:grid; grid-template-columns:1fr; gap:12px; margin:12px 0; }
+.bq-tense { background:var(--panel-2); border:1px solid var(--border); border-radius:10px; padding:10px 12px; }
+.bq-tense-name { font-weight:700; margin-bottom:6px; }
+.bq-cell { display:flex; justify-content:space-between; gap:12px; padding:2px 0; }
+.bq-form { font-weight:600; text-align:right; }
+@media (min-width: 760px) { .bq-tenses { grid-template-columns:1fr 1fr; } }
+.bq-sub { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
