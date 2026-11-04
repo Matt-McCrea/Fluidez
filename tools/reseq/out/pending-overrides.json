@@ -1,0 +1,21 @@
+{
+  "fn-no-entiendo-a1": { "teaches": ["c:no-entiendo", "c:como-se-dice", "c:mas-despacio"], "note": "SEQ new lesson: survival chunks no entiendo, ¿cómo se dice?, más despacio / ¿puede repetir?" },
+  "gr-presente-yo-irregular-a1": { "teaches": ["g:yo-irregular"], "note": "SEQ split from gr-presente-irregular-a2: tengo, hago, pongo, salgo, vengo, digo, traigo, conozco, sé, doy" },
+  "gr-imperfecto-estados-a1": { "teaches": ["g:imperfect-states"], "note": "SEQ new lesson: era, estaba, tenía, había (and hacía frío) as chunks for setting the scene" },
+  "gr-pronombres-me-te-nos-a1": { "teaches": ["p:me-te-nos-objects"], "note": "SEQ new lesson, Latin American title (no os): me, te, nos before the verb" },
+  "fn-cortesia-condicional-a1": { "teaches": ["c:me-gustaria"], "note": "SEQ new lesson: me gustaría, quería, ¿podría(s)…? as polite chunks" },
+  "nt-dias-fechas-a1": { "teaches": ["p:days-el-lunes", "p:dates-years"], "note": "SEQ split from nt-referencias-generales-a1: el lunes / los lunes, dates day-de-month-de-year, nací en / el" },
+  "gr-tener-que-hay-que-a1": { "teaches": ["g:tener-que-hay-que", "c:tengo-que"], "note": "SEQ new lesson: tener que, hay que, necesitar, deber, no tienes que vs no se puede" },
+  "gr-indefinido-irregular-a2": { "teaches": ["g:preterite-irregular-strong", "g:preterite-spelling-stem"], "note": "SEQ split from preterito: tuve, estuve, pude, puse, quise, vine, hice, dije, traje; busqué, llegué, empecé, leyó; pidió, durmió" },
+  "gr-perfecto-vs-indefinido-a2": { "teaches": ["x:pret-perfecto-latam"], "note": "SEQ new lesson, Latin American split: preterite for anything finished (hoy fui, ¿ya comiste?), perfect for experience, not yet and still true" },
+  "task-a2-hoy-ayer": { "teaches": [], "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need." },
+  "gr-ser-estar-adjetivos-a2": { "teaches": ["g:ser-estar-adjectives", "x:ser-estar-adj"], "note": "SEQ split from ser-estar: es aburrido / está aburrido, listo, rico, malo, verde" },
+  "gr-pronombres-posicion-a2": { "teaches": ["g:object-pronoun-position"], "note": "SEQ split from gr-pronombres-atonos-a2: lo voy a ver = voy a verlo, estoy leyéndolo, llámame, dámelo, hay que hacerlo" },
+  "gr-formulas-subjuntivo-a2": { "teaches": ["c:que-te-mejores", "c:ojala", "c:no-te-preocupes"], "note": "SEQ new lesson: subjunctive formulas as chunks ahead of the paradigm" },
+  "gr-pasados-repaso-b1": { "teaches": [], "note": "SEQ new lesson: a review of the four pasts with the Latin American split; teaches no new node (reviews g:preterite-irregular-strong, g:imperfect-habitual, g:perfecto-experience, g:pluperfect, x:pret-imp, x:pret-perfecto-latam)" },
+  "gr-por-para-b1": { "teaches": ["g:por-para-2"], "note": "SEQ split from por-para: por for exchange, means, rate, time, estar por; para for opinion, deadline, comparison" },
+  "gr-para-que-sin-que-b1": { "teaches": ["g:para-que", "g:subj-purpose-full"], "note": "Added by the proposal: para / sin / antes de + infinitive vs para que / sin que / antes de que + subjunctive" },
+  "gr-se-cambio-significado-b1": { "teaches": ["g:se-meaning-change", "x:ir-irse"], "note": "Added by the proposal: ir/irse, dormir/dormirse, quedar/quedarse, llevar/llevarse, comer/comerse, preocupar/preocuparse" },
+  "gr-vosotros-espana-b2": { "teaches": ["g:vosotros-recognition", "g:spain-pasts"], "note": "Added by the proposal: Latin American correction, vosotros and Spain's 'today' perfect for recognition only" },
+  "nt-frecuencia-a1": { "teaches": ["p:frequency-scale"], "note": "Existing lesson (absorbed into nt-referencias-generales-a1 by MERGES today); the split gives it p:frequency-scale" }
+}

@@ -1782,7 +1782,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'task-a2-ayer', strand: 'task', cefr: 'A2', level: 2, theme: 'ocio',
+  id: 'task-a2-ayer', deeper: ['gr-indefinido-irregular-a2'], strand: 'task', cefr: 'A2', level: 2, theme: 'ocio',
   title: 'Cuenta qué hiciste el fin de semana',
   canDo: 'tell someone what you did, in order, in the past',
   summary: 'The preterite is the tense of "and then". Its whole job is to move a story forward one completed event at a time, which is why a first attempt at it should be a sequence and nothing else.',
@@ -1924,7 +1924,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'task-a2-experiencia', strand: 'task', cefr: 'A2', level: 2, theme: 'viajes',
+  id: 'task-a2-experiencia', deeper: ['task-a2-hoy-ayer'], strand: 'task', cefr: 'A2', level: 2, theme: 'viajes',
   title: '¿Alguna vez has…?',
   canDo: 'ask and answer about experience: what you have and have not done',
   summary: 'The present perfect is not a third past tense to choose between. It answers a different question: not when, but whether it has happened at all, at any point up to now.',
@@ -3895,7 +3895,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-establecer-comunicacion-a1', strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
+  id: 'fn-establecer-comunicacion-a1', deeper: ['fn-no-entiendo-a1'], strand: 'function', cefr: 'A1', level: 1, theme: 'identidad',
   pcic: ['funciones:A1:418', 'funciones:A1:419', 'funciones:A1:420', 'funciones:A1:421', 'funciones:A1:422', 'funciones:A1:423', 'funciones:A1:424'],
   title: 'Establecer la comunicación',
   canDo: "get someone's attention, and close a conversation instead of just stopping",
@@ -5070,7 +5070,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-preguntar-deseos-a2', canDo: 'ask what someone wants, and offer', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-preguntar-deseos-a2', canDo: 'ask what someone wants, and offer', deeper: ['gr-formulas-subjuntivo-a2'], strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:215', 'funciones:A2:216', 'funciones:A2:217', 'funciones:A2:218'],
   title: 'Preguntar por deseos',
   summary: 'Two ways to ask what someone wants sit at different levels of directness: "¿quieres...?" asks plainly, while "¿te gustaría...?" softens the same question into more of an invitation. Learn the -ía forms whole for now: they belong to a tense you will build properly later, and they work perfectly well before you can.',
@@ -7821,7 +7821,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-referencias-generales-a1', canDo: 'tell the time and name the days of the week', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-referencias-generales-a1', canDo: 'tell the time and name the days of the week', deeper: ['nt-dias-fechas-a1'], strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:119', 'nociones_generales:A1:120', 'nociones_generales:A1:121', 'nociones_generales:A1:122', 'nociones_generales:A1:123', 'nociones_generales:A1:124', 'nociones_generales:A1:125', 'nociones_generales:A1:126', 'nociones_generales:A1:127', 'nociones_generales:A1:128'],
   title: 'Referencias temporales: la hora, los días',
   summary: 'Telling the time and naming days both run on a small, fixed set of building blocks, but Spanish counts the last twenty minutes of the hour DOWN toward the next one, a habit English speakers never expect.',
@@ -7983,7 +7983,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-frecuencia-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
+  id: 'nt-frecuencia-a1', canDo: 'say how often you do things: siempre, normalmente, a veces, nunca', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:179', 'nociones_generales:A1:180', 'nociones_generales:A1:181', 'nociones_generales:A1:182'],
   title: 'Frecuencia: siempre, a veces, nunca',
   summary: 'Once you can say when something happens, the next question is how often, and that runs on four words.',
@@ -8014,7 +8014,8 @@ window.STRAND_LESSONS = [
   ],
   pitfalls: [
     'Spanish doubles the negative when <i>nunca</i> follows the verb: this is correct grammar, not an error, unlike in English.',
-    'Do not translate the English scale word for word; <i>normalmente</i> sits closer to "usually" than to "normally" in tone.'
+    'Do not translate the English scale word for word; <i>normalmente</i> sits closer to "usually" than to "normally" in tone.',
+    '<i>Casi nunca</i> (hardly ever) behaves like <i>nunca</i>: before the verb it needs no <i>no</i>. <i>Casi nunca veo televisión.</i>'
   ],
   examples: [
     { es: 'Normalmente me levanto a las siete.', en: 'I usually get up at seven.' },
@@ -8550,7 +8551,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombres-atonos-a2', canDo: 'combine direct and indirect pronouns as se lo, te la', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-pronombres-atonos-a2', canDo: 'combine direct and indirect pronouns as se lo, te la', deeper: ['gr-pronombres-me-te-nos-a1', 'gr-pronombres-posicion-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:231', 'gramatica:A2:232', 'gramatica:A2:233', 'gramatica:A2:240', 'gramatica:A2:241', 'gramatica:A2:244'],
   title: 'Pronombres átonos: OD y OI',
   summary: 'Me, te, nos and os do double duty as both direct and indirect object, but the third person splits (lo/la/los/las for the direct object, le/les for the indirect), which is exactly where confusion, and le doubling as lo, starts.',
@@ -8877,7 +8878,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'nt-necesidad-obligacion-a2', canDo: 'say what is needed and what will do', strand: 'notion', cefr: 'A2', level: 2, theme: null,
+  id: 'nt-necesidad-obligacion-a2', canDo: 'say what is needed and what will do', deeper: ['gr-tener-que-hay-que-a1'], strand: 'notion', cefr: 'A2', level: 2, theme: null,
   pcic: ['nociones_generales:A2:22', 'nociones_generales:A2:23', 'nociones_generales:A2:24'],
   title: 'Necesidad: necesitar, es necesario',
   summary: 'Necesitar makes YOU the subject who needs something; es necesario makes the THING or ACTION itself the subject that is needed: the identical fact, stated from two different grammatical directions.',
@@ -9764,7 +9765,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-temporales-b1', canDo: 'use cuando + subjunctive for a moment that has not come yet', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-temporales-b1', canDo: 'use cuando + subjunctive for a moment that has not come yet', deeper: ['gr-para-que-sin-que-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:725', 'gramatica:B1:727', 'gramatica:B1:728', 'gramatica:B1:730', 'gramatica:B1:731', 'gramatica:B1:732'],
   title: 'Temporales: cuando + subjuntivo para el futuro',
   summary: 'Cuando takes the indicative for a fact that already happened or happens habitually, but switches to the subjunctive the instant the event is still in the future, one of the single most important rules in the entire Spanish subjunctive system.',
@@ -9901,7 +9902,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-causales-b1', canDo: 'give a cause with como and por + infinitive', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-causales-b1', canDo: 'give a cause with como and por + infinitive', deeper: ['gr-por-para-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:750', 'gramatica:B1:751', 'gramatica:B1:752', 'gramatica:B1:753'],
   title: 'Causales: como, por + infinitivo',
   summary: 'Por + infinitive packs an entire cause clause into three words: lo hizo así por no saber otra manera says exactly what porque no sabía otra manera would, only more compactly, and without a conjugated verb of its own.',
@@ -11472,7 +11473,7 @@ window.STRAND_LESSONS = [
  * remaining units.
  * ------------------------------------------------------------------------ */
 {
-  id: 'gr-pluscuamperfecto-b1', canDo: 'refer to something that happened before another past event', strand: 'grammar', cefr: 'B1', level: 3, theme: null,
+  id: 'gr-pluscuamperfecto-b1', canDo: 'refer to something that happened before another past event', deeper: ['gr-pasados-repaso-b1'], strand: 'grammar', cefr: 'B1', level: 3, theme: null,
   pcic: ['gramatica:B1:432', 'gramatica:B1:433', 'gramatica:B1:434', 'gramatica:B1:435'],
   title: 'Pretérito pluscuamperfecto: había hablado',
   summary: 'The pluscuamperfecto marks a past event that had already finished BEFORE another past event (cuando llegamos, ya se había ido), Spanish\'s equivalent of English\'s "had done," and it never stands alone without that second past reference point.',
@@ -12472,7 +12473,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-preterito-perfecto-a2', canDo: 'talk about experience with he, has, ha + participio', strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-preterito-perfecto-a2', canDo: 'talk about experience with he, has, ha + participio', deeper: ['gr-perfecto-vs-indefinido-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:353', 'gramatica:A2:354', 'gramatica:A2:355', 'gramatica:A2:356', 'gramatica:A2:357', 'gramatica:A2:358', 'gramatica:A2:359', 'gramatica:A2:360', 'gramatica:A2:361'],
   title: 'El pretérito perfecto: haber + participio',
   summary: 'He estado en tu casa is not about when the visit happened: it is about the fact still being true of a stretch of time that reaches all the way to now, which is exactly what separates this tense from the indefinido\'s closed, dated past.',
@@ -12801,7 +12802,7 @@ window.STRAND_LESSONS = [
  * gn-instrucciones-a2, gn-presentacion-publica-a2).
  * ========================================================================== */
 {
-  id: 'fn-atenuar-orden-a2', canDo: 'ask for something without sounding blunt', strand: 'function', cefr: 'A2', level: 2, theme: null,
+  id: 'fn-atenuar-orden-a2', canDo: 'ask for something without sounding blunt', deeper: ['fn-cortesia-condicional-a1'], strand: 'function', cefr: 'A2', level: 2, theme: null,
   pcic: ['funciones:A2:261', 'funciones:A2:262', 'funciones:A2:263'],
   title: 'Pedir algo de forma atenuada',
   summary: 'Three ways to soften an instruction without changing what you are actually asking for: tack on por favor, turn it into a question with ¿puedes/podrías?, or remove the person altogether with hay que: each buys a little more distance from a bare command.',
@@ -12886,7 +12887,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-narrar-anecdota-a2', canDo: 'tell an anecdote with a scene and a sequence', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-narrar-anecdota-a2', canDo: 'tell an anecdote with a scene and a sequence', deeper: ['gr-imperfecto-estados-a1'], strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:276', 'generos_discursivos:A2:277', 'generos_discursivos:A2:278', 'generos_discursivos:A2:279',
          'generos_discursivos:A2:280', 'generos_discursivos:A2:281', 'generos_discursivos:A2:283', 'generos_discursivos:A2:285',
          'generos_discursivos:A2:293', 'generos_discursivos:A2:302'],
@@ -14751,7 +14752,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'fn-contento-encantado-b1', canDo: 'say you are pleased, delighted or thrilled', strand: 'function', cefr: 'B1', level: 4, theme: null,
+  id: 'fn-contento-encantado-b1', canDo: 'say you are pleased, delighted or thrilled', deeper: ['gr-se-cambio-significado-b1'], strand: 'function', cefr: 'B1', level: 4, theme: null,
   pcic: ['funciones:B1:675', 'funciones:B1:676', 'funciones:B1:677'],
   title: 'Estoy contento / encantado...',
   summary: 'Contento con names what you are happy WITH, contento de names what you are happy TO (be/do), and only the second can take a que-clause about someone else: three prepositions doing three distinct jobs behind what looks like one simple phrase.',
@@ -19893,7 +19894,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gn-describir-persona-a2', canDo: 'describe a person by comparing them and telling a moment', strand: 'genre', cefr: 'A2', level: 2, theme: null,
+  id: 'gn-describir-persona-a2', canDo: 'describe a person by comparing them and telling a moment', deeper: ['gr-ser-estar-adjetivos-a2'], strand: 'genre', cefr: 'A2', level: 2, theme: null,
   pcic: ['generos_discursivos:A2:188', 'generos_discursivos:A2:189', 'generos_discursivos:A2:190', 'generos_discursivos:A2:191',
          'generos_discursivos:A2:204', 'generos_discursivos:A2:205'],
   title: 'Describir a una persona: comparar y narrar un momento',
@@ -22135,7 +22136,7 @@ window.STRAND_LESSONS = [
 },
 
 {
-  id: 'gr-pronombre-personal-b2', canDo: 'use the accidental se and order clitics correctly', strand: 'grammar', cefr: 'B2', level: 6, theme: null,
+  id: 'gr-pronombre-personal-b2', canDo: 'use the accidental se and order clitics correctly', deeper: ['gr-vosotros-espana-b2'], strand: 'grammar', cefr: 'B2', level: 6, theme: null,
   pcic: ['gramatica:B2:214', 'gramatica:B2:215', 'gramatica:B2:217', 'gramatica:B2:220', 'gramatica:B2:236',
          'gramatica:B2:237', 'gramatica:B2:238'],
   title: 'El pronombre personal: se accidental y la jerarquía de clíticos',
@@ -38027,7 +38028,7 @@ window.STRAND_LESSONS = [
  * practice for the same reason; this is the lesson that opens the gate.
  * ------------------------------------------------------------------------ */
 {
-  id: 'gr-presente-irregular-a2', canDo: 'handle the irregular present: the boot and the odd yo', deeper: ['gr-masculino-a2', 'gr-nucleo-verbal-tipos-a2'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
+  id: 'gr-presente-irregular-a2', canDo: 'handle the irregular present: the boot and the odd yo', deeper: ['gr-masculino-a2', 'gr-nucleo-verbal-tipos-a2', 'gr-presente-yo-irregular-a1'], strand: 'grammar', cefr: 'A2', level: 2, theme: null,
   pcic: ['gramatica:A2:331', 'gramatica:A2:332', 'gramatica:A2:333', 'gramatica:A2:334'],
   title: 'El presente irregular: la bota y el yo raro',
   summary: 'Most "irregular" present-tense verbs are nothing of the kind. They follow two patterns that cover almost all of them. One changes the vowel in four of the six persons and leaves nosotros and vosotros alone; the other changes only the yo form. Learn the two shapes and several hundred verbs stop being exceptions.',
@@ -38206,6 +38207,1060 @@ window.STRAND_LESSONS = [
     { id: 'p:irA1:recall', kind: 'recall', front: '"They are going to travel." (viajar)', back: 'Van a viajar' },
     { id: 'p:irA1:cuando', kind: 'mcq', q: '"Mañana voy a trabajar." When is the work?',
       options: ['Yesterday', 'Tomorrow', 'Every day'], answer: 1 }
+  ]
+},
+
+/* ---- Re-sequence lessons, 4 Nov 2026 ----------------------------------------
+ * The lessons docs/plan-2026-11-04/resequence.md names as stubs: SEQ's new
+ * lessons (docs/research/Fluidez Spanish course sequencing.md) and the three
+ * the proposal adds (vosotros for recognition at B2, the verbs whose meaning
+ * changes with se, and para que / sin que). All are status:'reference' and
+ * reached through a core lesson's `deeper` until the re-sequence puts them on
+ * the path. Two of SEQ's twenty already exist: gr-ir-a-infinitivo-a1 (on the
+ * path in a1-u04) and nt-frecuencia-a1 (absorbed into nt-referencias-generales-a1
+ * by js/lessons.js MERGES).
+ *
+ * Graph nodes each one teaches, for tools/lesson-nodes.overrides.json when it
+ * joins the path (tools/tag-data.ts only accepts overrides for lessons in
+ * course order, so the rulings are recorded here until then):
+ *   fn-no-entiendo-a1            c:no-entiendo, c:como-se-dice, c:mas-despacio
+ *   gr-presente-yo-irregular-a1  g:yo-irregular
+ *   gr-imperfecto-estados-a1     g:imperfect-states
+ *   gr-pronombres-me-te-nos-a1   p:me-te-nos-objects
+ *   fn-cortesia-condicional-a1   c:me-gustaria
+ *   nt-dias-fechas-a1            p:days-el-lunes, p:dates-years
+ *   gr-tener-que-hay-que-a1      g:tener-que-hay-que, c:tengo-que
+ *   gr-indefinido-irregular-a2   g:preterite-irregular-strong, g:preterite-spelling-stem
+ *   gr-perfecto-vs-indefinido-a2 x:pret-perfecto-latam
+ *   task-a2-hoy-ayer             (none: a task)
+ *   gr-ser-estar-adjetivos-a2    g:ser-estar-adjectives, x:ser-estar-adj
+ *   gr-pronombres-posicion-a2    g:object-pronoun-position
+ *   gr-formulas-subjuntivo-a2    c:que-te-mejores, c:ojala, c:no-te-preocupes
+ *   gr-pasados-repaso-b1         (none: a review of the four pasts)
+ *   gr-por-para-b1               g:por-para-2
+ *   gr-para-que-sin-que-b1       g:para-que, g:subj-purpose-full
+ *   gr-se-cambio-significado-b1  g:se-meaning-change, x:ir-irse
+ *   gr-vosotros-espana-b2        g:vosotros-recognition, g:spain-pasts
+ * -------------------------------------------------------------------------- */
+{
+  id: 'fn-no-entiendo-a1', canDo: 'say you have not understood, and get people to slow down, repeat or explain', strand: 'function', cefr: 'A1', level: 1, theme: null, status: 'reference',
+  pcic: ['funciones:A1:255', 'funciones:A1:256', 'nociones_generales:A1:47', 'nociones_generales:A1:173', 'ortografia:A1:209'],
+  title: 'No entiendo: frases para sobrevivir',
+  summary: 'In your first weeks most conversations will move faster than you can follow, and that is normal. What matters is having the words to say so, politely, and to get the other person to help: slow down, say it again, explain a word. Six or seven short phrases do the whole job, and native speakers use every one of them with each other too.',
+  keywords: [
+    { es: 'No entiendo.', en: "I don't understand." },
+    { es: '¿Cómo?', en: 'Sorry? What did you say?' },
+    { es: 'Más despacio, por favor.', en: 'Slower, please.' },
+    { es: '¿Me repites?', en: 'Can you say that again? (tú)' },
+    { es: '¿Puede repetir, por favor?', en: 'Can you repeat that, please? (usted)' },
+    { es: '¿Cómo se dice…?', en: 'How do you say…?' },
+    { es: '¿Qué significa…?', en: 'What does … mean?' },
+    { es: '¿Cómo se escribe?', en: 'How do you spell it?' },
+    { es: 'otra vez', en: 'again' }
+  ],
+  sections: [
+    { h: 'Saying you are lost', html: 'The core phrase is <i>No entiendo</i>: I don\'t understand. Three ways to use it:<ul>' +
+      '<li><b>No entiendo.</b> I don\'t understand.</li>' +
+      '<li><b>Perdón, no entiendo.</b> Sorry, I don\'t understand. With <i>perdón</i> in front it sounds friendly rather than blunt.</li>' +
+      '<li><b>No entiendo la última palabra.</b> I don\'t understand the last word. Say which part you missed and people repeat just that.</li></ul>' +
+      'And a quick <i>¿Cómo?</i> with a rising voice is the everyday way to say "sorry, what?" when you simply did not catch it.' },
+    { h: 'Slower, and once more', html: 'Each request comes in a version for a friend and a version for a stranger:<ul>' +
+      '<li><i>Más despacio, por favor.</i> Slower, please. This one works with anyone.</li>' +
+      '<li><i>¿Me repites?</i> Can you say that again? To a friend, someone you call <i>tú</i>.</li>' +
+      '<li><i>¿Puede repetir, por favor?</i> Can you repeat that, please? To a stranger, someone you call <i>usted</i>.</li>' +
+      '<li><i>¿Podría hablar más despacio?</i> Could you speak more slowly? The politest of all.</li></ul>' +
+      'You do not need to know yet why <i>podría</i> ends in <i>-ía</i>. Learn it as a polite package; the tense behind it has its own lesson much later.' },
+    { h: 'Asking about a word', html: '<i>¿Cómo se dice "receipt" en español?</i> asks for the Spanish word. <i>¿Qué significa "chévere"?</i> asks what a Spanish word means. When you need to write it down, ask <i>¿Cómo se escribe?</i>, how do you spell it? In Colombia you will hear <i>chévere</i> all the time: it means great, really good.' },
+    { h: 'When nothing works', html: '<i>¿Habla inglés?</i> (Do you speak English?) is not a defeat; in any city with visitors it is a normal question. But try one round in Spanish first: <i>Perdón, no entiendo. ¿Más despacio, por favor?</i> Most people slow down and choose simpler words the moment you ask, and that slower Spanish is exactly the Spanish you can learn from.' }
+  ],
+  exponents: [
+    { es: 'Perdón, no entiendo.', en: "Sorry, I don't understand.", register: 'neutral', note: 'the polite core phrase' },
+    { es: '¿Me repites, porfa?', en: 'Can you say that again, please?', register: 'coloquial', note: 'to a friend: porfa is short for por favor' },
+    { es: '¿Podría repetir, por favor?', en: 'Could you repeat that, please?', register: 'formal', note: 'to a stranger, at a counter or on the phone' },
+    { es: '¿Podría hablar más despacio?', en: 'Could you speak more slowly?', register: 'formal', note: 'podría: learn it whole for now' },
+    { es: '¿Cómo se dice "receipt" en español?', en: 'How do you say "receipt" in Spanish?', register: 'neutral', note: 'asking for the Spanish word' },
+    { es: '¿Qué significa "chévere"?', en: 'What does "chévere" mean?', register: 'neutral', note: 'asking what a Spanish word means' }
+  ],
+  contrasts: [
+    { es: 'No entiendo.', en: "I don't understand.", note: 'the language: the words went past you' },
+    { es: 'No sé.', en: "I don't know.", note: 'the facts: you understood the question but have no answer' },
+    { es: '¿Me repites?', en: 'Can you say that again?', note: 'tú: friends, people your age' },
+    { es: '¿Me repite?', en: 'Can you say that again?', note: 'usted: strangers, older people, anyone at a counter' }
+  ],
+  pitfalls: [
+    '<i>¿Qué?</i> on its own can sound abrupt to a stranger. <i>¿Cómo?</i> or <i>Perdón, ¿cómo?</i> is the polite way to say "sorry, what?"',
+    '<i>No entiendo</i> and <i>no sé</i> are different. <i>No sé</i> means you understood the question and do not know the answer; mixing them up makes people repeat a question you understood perfectly well.',
+    '<i>¿Cómo se dice…?</i> asks for the Spanish word; <i>¿Qué significa…?</i> asks what a Spanish word means. Swap them and <i>¿Qué significa "receipt"?</i> asks a Spanish speaker to explain an English word to you.'
+  ],
+  examples: [
+    { es: 'Perdón, no entiendo. ¿Puede hablar más despacio?', en: "Sorry, I don't understand. Can you speak more slowly?" },
+    { es: '¿Cómo se dice "receipt" en español?\nSe dice "recibo".', en: 'How do you say "receipt" in Spanish?\nYou say "recibo".' },
+    { es: '¿Qué significa "chévere"?\nSignifica "muy bueno".', en: 'What does "chévere" mean?\nIt means "very good".' }
+  ],
+  probes: [
+    { id: 'p:noent:nose', kind: 'mcq', q: 'You heard the question clearly but have no idea of the answer. You say:',
+      options: ['No entiendo nada.', 'No sé, la verdad.', '¿Me lo repites?'], answer: 1 },
+    { id: 'p:noent:palabra', kind: 'mcq', q: 'You want the Spanish word for "receipt". You ask:',
+      options: ['¿Qué significa "receipt"?', '¿Cómo se dice "receipt"?', '¿Cómo se escribe "receipt"?'], answer: 1 },
+    { id: 'p:noent:formal', kind: 'mcq', q: 'At a bank counter you missed what the clerk said. The polite way to ask again:',
+      options: ['¿Qué? No entiendo nada de lo que dices.', '¿Podría repetir, por favor?', '¿Me repites?'], answer: 1 },
+    { id: 'p:noent:despacio', kind: 'cloze', text: 'Más ___, por favor. (slowly)', accept: ['despacio'] }
+  ]
+},
+
+{
+  id: 'gr-presente-yo-irregular-a1', canDo: 'say what you do with tengo, hago, pongo, salgo, vengo, digo and conozco', strand: 'grammar', cefr: 'A1', level: 1, theme: null, status: 'reference',
+  pcic: ['gramatica:A1:322', 'gramatica:A2:332', 'gramatica:A2:333'],
+  title: 'Tengo, hago, pongo, salgo: el yo irregular',
+  summary: 'You have been saying tengo since the first day. It looks irregular because the yo form of tener adds a g, and a small group of very common verbs does exactly the same: hago, pongo, salgo, vengo, digo, traigo. Only the yo form is odd. Every other person takes the endings you already know, so this is one short pattern, not a list of exceptions.',
+  keywords: [
+    { es: 'tengo', en: 'I have (tener)' },
+    { es: 'hago', en: 'I do, I make (hacer)' },
+    { es: 'pongo', en: 'I put (poner)' },
+    { es: 'salgo', en: 'I go out, I leave (salir)' },
+    { es: 'vengo', en: 'I come (venir)' },
+    { es: 'digo', en: 'I say (decir)' },
+    { es: 'traigo', en: 'I bring (traer)' },
+    { es: 'conozco', en: 'I know a person or a place (conocer)' },
+    { es: 'sé', en: 'I know a fact (saber)' },
+    { es: 'doy', en: 'I give (dar)' }
+  ],
+  sections: [
+    { h: 'Only yo changes', html: 'Take <i>salir</i> (to go out). Every form is regular except the first:<ul>' +
+      '<li><b>salgo</b>: I go out</li>' +
+      '<li><i>sales</i>: you go out (<i>tú</i>)</li>' +
+      '<li><i>sale</i>: he or she goes out; you go out (<i>usted</i>)</li>' +
+      '<li><i>salimos</i>: we go out</li>' +
+      '<li><i>salen</i>: they go out; you all go out (<i>ustedes</i>)</li></ul>' +
+      'The odd form is the one you use most, which is why the whole verb feels irregular. It is not: once you are past <i>yo</i>, you are back on the normal endings.' },
+    { h: 'The g verbs', html: 'These everyday verbs add a <b>g</b> in the <i>yo</i> form:<ul>' +
+      '<li><i>hacer</i>: <b>hago</b> (I do, I make)</li>' +
+      '<li><i>poner</i>: <b>pongo</b> (I put)</li>' +
+      '<li><i>salir</i>: <b>salgo</b> (I go out)</li>' +
+      '<li><i>traer</i>: <b>traigo</b> (I bring)</li>' +
+      '<li><i>tener</i>: <b>tengo</b>; <i>venir</i>: <b>vengo</b>; <i>decir</i>: <b>digo</b></li></ul>' +
+      'The last three also change their vowel in some other persons, and you can learn those forms as they come: <i>tienes, tiene, tienen</i>; <i>vienes, viene, vienen</i>; <i>dices, dice, dicen</i>. Their <i>nosotros</i> forms stay plain: <i>tenemos, venimos, decimos</i>.' },
+    { h: 'Conozco, sé, doy', html: 'Verbs ending in a vowel plus <i>-cer</i> add a <b>z</b>: <i>conocer</i> gives <b>conozco</b> (I know a person or a place) and <i>parecer</i> gives <b>parezco</b>. Four short verbs end in <b>-oy</b>: <b>soy, estoy, voy, doy</b>. <i>Saber</i> gives <b>sé</b> (I know a fact), with an accent that keeps it apart from the <i>se</i> of <i>se llama</i>. And <i>ver</i> gives <b>veo</b>, which keeps its <i>e</i>.' },
+    { h: 'Talking about your day', html: 'These are the verbs of a routine, so they come up as soon as you describe your day: <i>Salgo de casa a las siete. Hago ejercicio por la mañana. Pongo música en el carro.</i> When someone asks <i>¿Qué haces los sábados?</i>, the answer starts with <i>hago</i>, not <i>haces</i>: the question is about <i>tú</i>, the answer about <i>yo</i>.' }
+  ],
+  contrasts: [
+    { es: 'Hago la cena.', en: 'I make dinner.', note: 'yo: the g form' },
+    { es: 'Mi hermano hace la cena.', en: 'My brother makes dinner.', note: 'every other person: regular' },
+    { es: 'Conozco a Laura.', en: 'I know Laura.', note: 'conocer: people and places' },
+    { es: 'Sé dónde vive.', en: 'I know where she lives.', note: 'saber: facts' }
+  ],
+  pitfalls: [
+    '<i>*Teno</i>, <i>*hazo</i> and <i>*salo</i> are what the regular pattern predicts, and for these verbs the regular pattern is wrong. It is <i>tengo, hago, salgo</i>.',
+    'The g belongs to the <i>yo</i> form only. <i>*Salges</i> and <i>*pongen</i> carry it into other persons; the right forms are <i>sales</i> and <i>ponen</i>.',
+    '<i>Sé</i> (I know) needs its accent. Without it, <i>se</i> is a different word: the one in <i>se llama</i>.'
+  ],
+  examples: [
+    { es: 'Salgo de casa a las siete y llego a la oficina a las ocho.', en: 'I leave home at seven and get to the office at eight.' },
+    { es: 'Los domingos hago arepas para toda la familia.', en: 'On Sundays I make arepas for the whole family.' },
+    { es: 'No conozco a tu hermana, pero sé dónde trabaja.', en: "I don't know your sister, but I know where she works." }
+  ],
+  probes: [
+    { id: 'p:yoirr:salgo', kind: 'mcq', q: '"I go out every night." Which one?',
+      options: ['Salgo todas las noches.', 'Salo todas las noches.', 'Salimos todas las noches.'], answer: 0 },
+    { id: 'p:yoirr:pongo', kind: 'cloze', text: 'Yo ___ la mesa antes de cenar. (poner)', accept: ['pongo'] },
+    { id: 'p:yoirr:hago', kind: 'cloze', text: '¿Qué haces los sábados? Yo ___ ejercicio. (hacer)', accept: ['hago'] },
+    { id: 'p:yoirr:conozco', kind: 'recall', front: '"I know your brother." (conocer)', back: 'Conozco a tu hermano' }
+  ]
+},
+
+{
+  id: 'gr-imperfecto-estados-a1', canDo: 'set the scene in the past: say what it was like, how you were and what there was', strand: 'grammar', cefr: 'A1', level: 1, theme: null, status: 'reference',
+  pcic: ['gramatica:A2:342', 'gramatica:A2:344'],
+  title: 'Era, estaba, tenía, había',
+  summary: 'When you tell someone what happened yesterday, you also need to say what things were like: it was late, the shop was closed, there were a lot of people, I was tired. Spanish uses a different past for that kind of background, and for now you need only four words of it: era, estaba, tenía and había. Learn them as ready-made pieces and put them around the events you already tell with fui, comí and llegué.',
+  keywords: [
+    { es: 'era', en: 'it was, he or she was (ser)' },
+    { es: 'estaba', en: 'it was, he or she was (estar)' },
+    { es: 'tenía', en: 'I had, he or she had (tener)' },
+    { es: 'había', en: 'there was, there were (hay)' },
+    { es: 'hacía frío', en: 'it was cold' },
+    { es: 'hacía calor', en: 'it was hot' },
+    { es: 'mucha gente', en: 'a lot of people' },
+    { es: 'cerrado', en: 'closed' },
+    { es: 'cansado', en: 'tired' }
+  ],
+  sections: [
+    { h: 'Events and background', html: 'A story has two layers. The events are what happened, one after another: <i>Llegué a las ocho. Pedí un café.</i> You know that past already. The background is what things were like while it happened: <i>Era tarde. Había mucha gente.</i> Spanish keeps a separate past for the background, and its four most useful pieces are in this lesson. You do not need the rest of that tense yet.' },
+    { h: 'The four pieces', html: '<ul>' +
+      '<li><b>era</b>: it was, he or she was (from <i>ser</i>). <i>Era tarde.</i> <i>Era muy simpática.</i></li>' +
+      '<li><b>estaba</b>: it was, he or she was (from <i>estar</i>). <i>El banco estaba cerrado.</i> <i>Estaba cansado.</i></li>' +
+      '<li><b>tenía</b>: I had, he or she had (from <i>tener</i>). <i>Tenía hambre.</i> <i>Tenía veinte años.</i></li>' +
+      '<li><b>había</b>: there was, there were (from <i>hay</i>). <i>Había mucha gente.</i> <i>No había taxis.</i></li></ul>' +
+      'The same form serves <i>yo</i> and <i>él</i> or <i>ella</i>, so <i>estaba cansado</i> is I was tired or he was tired; the story makes it clear which.' },
+    { h: 'Había and the weather', html: '<i>Hay</i> is the same for one thing or for many, and so is <i>había</i>: <i>Había un perro en la puerta. Había tres perros en la puerta.</i> The weather in the past uses <i>hacía</i>: <i>hacía frío</i> (it was cold), <i>hacía calor</i> (it was hot), <i>hacía sol</i> (it was sunny).' },
+    { h: 'Putting the layers together', html: 'Start with the background, then tell what happened: <i>Era sábado y hacía calor. Fuimos a la playa.</i> Or put the background in the middle, to explain: <i>Llegué tarde al trabajo porque había mucho tráfico.</i> The events move the story forward; the background stops it for a moment so the listener can see the scene.' }
+  ],
+  contrasts: [
+    { es: 'Fui a la tienda.', en: 'I went to the shop.', note: 'an event: it happened, then the next thing' },
+    { es: 'La tienda estaba cerrada.', en: 'The shop was closed.', note: 'background: how it was when you got there' },
+    { es: 'Comí mucho.', en: 'I ate a lot.', note: 'an event' },
+    { es: 'Tenía mucha hambre.', en: 'I was very hungry.', note: 'background: how you were' }
+  ],
+  pitfalls: [
+    '<i>Había</i> is "there was" or "there were", never "I had". For "I had", use <i>tenía</i>: <i>Tenía un perro.</i>',
+    '<i>Hacía frío</i> is the weather: it was cold. <i>Tenía frío</i> is you: I was cold. English says "was" for both, Spanish does not.',
+    '<i>Estaba</i> and <i>era</i> split like <i>está</i> and <i>es</i> in the present: <i>la tienda estaba cerrada</i> is a state at that moment, <i>la tienda era pequeña</i> is what it was like.'
+  ],
+  examples: [
+    { es: 'Era sábado y hacía mucho calor, así que fuimos a la piscina.', en: 'It was Saturday and it was very hot, so we went to the pool.' },
+    { es: 'Llegué tarde porque había mucho tráfico.', en: 'I arrived late because there was a lot of traffic.' },
+    { es: 'Cuando llegamos, el restaurante estaba cerrado.', en: 'When we arrived, the restaurant was closed.' }
+  ],
+  probes: [
+    { id: 'p:impest:habia', kind: 'mcq', q: '"There were a lot of people." Which one?',
+      options: ['Era mucha gente.', 'Había mucha gente.', 'Estaba mucha gente.'], answer: 1 },
+    { id: 'p:impest:tenia', kind: 'mcq', q: '"Tenía hambre." What does it mean?',
+      options: ['I was hungry.', 'There was food.', 'I ate a lot.'], answer: 0 },
+    { id: 'p:impest:estaba', kind: 'cloze', text: 'Cuando llegué, la tienda ___ cerrada. (estar)', accept: ['estaba'] },
+    { id: 'p:impest:frio', kind: 'recall', front: '"It was cold." (the weather)', back: 'Hacía frío' }
+  ]
+},
+
+{
+  id: 'gr-pronombres-me-te-nos-a1', canDo: 'understand and use me, te and nos: ¿me ayudas?, te llamo, nos vemos', strand: 'grammar', cefr: 'A1', level: 1, theme: 'relaciones', status: 'reference',
+  pcic: ['gramatica:A1:213', 'gramatica:A1:214', 'gramatica:A1:216'],
+  title: 'Me, te, nos: los pronombres que ya usas',
+  summary: 'You already say me llamo, me gusta and nos vemos. The me and nos in them are small words for "me" and "us", and they are everywhere in everyday Spanish: ¿me ayudas?, te llamo mañana, nos vemos el lunes. They go in front of the verb, where English puts them after it, and the same word covers "me", "to me" and "for me". Get these three right first; him, her and them come later.',
+  keywords: [
+    { es: 'me', en: 'me, to me, for me' },
+    { es: 'te', en: 'you, to you, for you (tú)' },
+    { es: 'nos', en: 'us, to us, for us' },
+    { es: '¿Me ayudas?', en: 'Will you help me?' },
+    { es: 'Te llamo mañana.', en: "I'll call you tomorrow." },
+    { es: 'Nos vemos.', en: 'See you.' },
+    { es: '¿Me pasas la sal?', en: 'Can you pass me the salt?' },
+    { es: 'Te quiero.', en: 'I love you.' },
+    { es: '¿Me escuchas?', en: 'Can you hear me?' }
+  ],
+  sections: [
+    { h: 'Three words you already know', html: 'The <i>me</i> of <i>me llamo</i> and <i>me gusta</i> is the same little word you use for "me" with any verb. It has two partners:<ul>' +
+      '<li><b>me</b>: me, to me, for me</li>' +
+      '<li><b>te</b>: you, to you, for you (someone you call <i>tú</i>)</li>' +
+      '<li><b>nos</b>: us, to us, for us</li></ul>' +
+      'Spanish uses one word where English needs "me" or "to me": <i>Ana me ayuda</i> is Ana helps me; <i>Ana me escribe</i> is Ana writes to me.' },
+    { h: 'Before the verb', html: 'English puts "me" after the verb: she calls me. Spanish puts it in front: <i>Ella me llama.</i><ul>' +
+      '<li><i>Te llamo mañana.</i> I will call you tomorrow.</li>' +
+      '<li><i>¿Me ayudas?</i> Will you help me?</li>' +
+      '<li><i>Nos invitan a cenar.</i> They are inviting us to dinner.</li></ul>' +
+      'With <i>no</i>, the order is <i>no</i>, then the little word, then the verb: <i>No te entiendo.</i> <i>No me gusta.</i>' },
+    { h: 'Asking for things', html: 'A question with <i>me</i> is the friendly way to ask for something: <i>¿Me pasas la sal?</i> (Can you pass me the salt?), <i>¿Me prestas tu lápiz?</i> (Can you lend me your pencil?), <i>¿Me ayudas con esto?</i> In a shop in Colombia you will hear <i>¿Me regala un tinto?</i>, literally "will you give me a coffee as a present". It is simply how people ask to buy one, and they pay for it.' },
+    { h: 'Hearing who did what', html: 'Because the little word comes first, listen for it: it tells you who receives the action before you hear the verb. <i>Te llamo</i> is I call you; <i>me llamas</i> is you call me. The verb ending says who acts; <i>me, te</i> and <i>nos</i> say who it happens to. <i>Nos vemos</i>, the everyday goodbye, is literally "we see each other".' }
+  ],
+  contrasts: [
+    { es: 'Te llamo.', en: 'I call you.', note: 'te: you receive it; the ending -o says I do it' },
+    { es: 'Me llamas.', en: 'You call me.', note: 'me: I receive it; the ending -as says you do it' },
+    { es: 'Me llamo Ana.', en: 'My name is Ana.', note: 'the same me: literally "I call myself Ana"' },
+    { es: 'Nos vemos mañana.', en: 'See you tomorrow.', note: 'nos: literally "we see each other"' }
+  ],
+  pitfalls: [
+    '<i>*Llamo te</i> follows English word order. The little word goes before the verb: <i>te llamo</i>.',
+    'With <i>no</i>, nothing comes between the little word and the verb: <i>no te entiendo</i>, never <i>*te no entiendo</i>.',
+    '<i>Te</i> is only for someone you call <i>tú</i>. Someone you call <i>usted</i> takes another word, which comes with <i>lo, la</i> and <i>le</i> in a later lesson. For now, with a stranger, ask with a whole phrase: <i>¿Me puede ayudar?</i>'
+  ],
+  examples: [
+    { es: '¿Me ayudas con las maletas?\nClaro, ya voy.', en: 'Will you help me with the suitcases?\nSure, coming.' },
+    { es: 'Te llamo mañana por la tarde.', en: "I'll call you tomorrow afternoon." },
+    { es: 'Mis amigos nos invitan a cenar el viernes.', en: 'My friends are inviting us to dinner on Friday.' }
+  ],
+  probes: [
+    { id: 'p:metenos:orden', kind: 'mcq', q: '"She helps me." Which one?',
+      options: ['Ella ayuda me.', 'Ella me ayuda.', 'Ella te ayuda.'], answer: 1 },
+    { id: 'p:metenos:quien', kind: 'mcq', q: '"Me llamas mañana." Who calls whom?',
+      options: ['I call you', 'You call me', 'We call each other'], answer: 1 },
+    { id: 'p:metenos:no', kind: 'cloze', text: 'No ___ entiendo. (you, tú)', accept: ['te'] },
+    { id: 'p:metenos:vemos', kind: 'recall', front: '"See you tomorrow." (literally: we see each other)', back: 'Nos vemos mañana' }
+  ]
+},
+
+{
+  id: 'fn-cortesia-condicional-a1', canDo: 'ask for things politely with me gustaría, quería and ¿podría?', strand: 'function', cefr: 'A1', level: 1, theme: 'alimentacion', status: 'reference',
+  pcic: ['funciones:A2:220', 'gramatica:B1:398', 'funciones:A2:262'],
+  title: 'Me gustaría, quería, ¿podría…?',
+  summary: 'Quiero un café is correct, and between friends it is fine. At a counter, on the phone or with someone older, Spanish speakers soften it, and three ready-made phrases do the job: me gustaría (I would like), quería (literally I wanted, used to mean I would like) and ¿podría…? (could you…?). You do not need the tenses behind them yet. Learn them as polite packages, the way English speakers say "I would like" long before anyone explains "would".',
+  keywords: [
+    { es: 'quiero', en: 'I want' },
+    { es: 'me gustaría', en: 'I would like' },
+    { es: 'quería', en: 'I would like (literally: I wanted)' },
+    { es: '¿Podría…?', en: 'Could you…? (usted)' },
+    { es: '¿Podrías…?', en: 'Could you…? (tú)' },
+    { es: 'la cuenta', en: 'the bill' },
+    { es: 'una mesa para dos', en: 'a table for two' },
+    { es: 'con gusto', en: 'with pleasure; you are welcome' }
+  ],
+  sections: [
+    { h: 'Quiero is not rude, but it is direct', html: '<i>Quiero un café</i> says exactly what you want, and with friends or family that is fine. With a stranger it can sound like an order. English softens "I want" into "I would like"; Spanish has three ways to do the same, and you can use them today:<ul>' +
+      '<li><b>Me gustaría</b> + a thing or a verb: <i>Me gustaría un café.</i> <i>Me gustaría reservar una mesa.</i></li>' +
+      '<li><b>Quería</b> + a thing or a verb: <i>Quería un jugo de mango.</i> <i>Quería preguntar una cosa.</i></li>' +
+      '<li><b>¿Podría…?</b> + a verb: <i>¿Podría traerme la cuenta?</i></li></ul>' },
+    { h: 'Me gustaría: me gusta, made polite', html: '<i>Me gusta</i> is what you like; <i>me gustaría</i> is what you would like, now. It works the same way, with <i>me</i> in front: <i>me gustaría ir</i> (I would like to go), <i>¿te gustaría venir?</i> (would you like to come?). The <i>-ía</i> ending is the polite part. The tense it comes from has its own lesson much later, but these two forms are yours from today.' },
+    { h: 'Quería: a past that means now', html: 'At a counter, <i>quería</i> does not mean you wanted something yesterday. <i>Quería dos empanadas</i> means I would like two empanadas, said gently. Spanish uses a past form to step back from the request, the same trick as English "I was wondering if…". The answer is usually <i>¡Claro!</i> or <i>Con gusto</i>, which in Colombia is also the normal reply to <i>gracias</i>.' },
+    { h: 'Podría and podrías', html: '<i>¿Puede…?</i> (can you?) becomes more polite as <i>¿Podría…?</i> (could you?), followed by a verb as the dictionary gives it:<ul>' +
+      '<li><i>¿Podría repetir?</i> Could you repeat that? (<i>usted</i>)</li>' +
+      '<li><i>¿Podría traerme un vaso de agua?</i> Could you bring me a glass of water? (<i>usted</i>)</li>' +
+      '<li><i>¿Podrías ayudarme?</i> Could you help me? (<i>tú</i>)</li></ul>' +
+      'The final <i>-s</i> is the only difference between the <i>usted</i> and the <i>tú</i> version.' }
+  ],
+  exponents: [
+    { es: 'Quiero un tinto, por favor.', en: 'I want a black coffee, please.', register: 'coloquial', note: 'fine with friends; a little direct with a stranger' },
+    { es: 'Me gustaría reservar una mesa para el sábado.', en: "I'd like to book a table for Saturday.", register: 'formal', note: 'on the phone or at a front desk' },
+    { es: 'Quería un jugo de mango, por favor.', en: "I'd like a mango juice, please.", register: 'neutral', note: 'quería: a past in form, a polite present in meaning' },
+    { es: '¿Podría traerme la cuenta, por favor?', en: 'Could you bring me the bill, please?', register: 'formal', note: 'usted: to a waiter, a receptionist, a stranger' },
+    { es: '¿Podrías pasarme la sal?', en: 'Could you pass me the salt?', register: 'coloquial', note: 'tú: to a friend or someone at your table' }
+  ],
+  contrasts: [
+    { es: 'Quería un café.', en: "I'd like a coffee.", note: 'at a counter: polite, about now' },
+    { es: 'Quería ir, pero estaba cansado.', en: 'I wanted to go, but I was tired.', note: 'in a story: a real past' },
+    { es: '¿Puede repetir?', en: 'Can you repeat that?', note: 'polite' },
+    { es: '¿Podría repetir?', en: 'Could you repeat that?', note: 'one step more polite' }
+  ],
+  pitfalls: [
+    '<i>Me gustaría</i> keeps its <i>me</i>. <i>*Gustaría un café</i> has lost the person who would like it, just as <i>*gusta el café</i> would.',
+    '<i>Quería</i> at a counter is not a past: nobody will think you have changed your mind. It is simply the polite way to ask.',
+    'After <i>¿Podría…?</i> the verb stays as the dictionary gives it: <i>¿Podría traer…?</i>, never <i>*¿Podría trae…?</i>'
+  ],
+  examples: [
+    { es: 'Buenas tardes. Me gustaría una mesa para dos, por favor.', en: "Good afternoon. I'd like a table for two, please." },
+    { es: 'Quería dos empanadas y un jugo de lulo.', en: "I'd like two empanadas and a lulo juice." },
+    { es: '¿Podría hablar un poco más despacio, por favor?', en: 'Could you speak a little more slowly, please?' }
+  ],
+  probes: [
+    { id: 'p:cortcond:pan', kind: 'mcq', q: 'At a bakery counter, the gentle way to ask for bread:',
+      options: ['Me gusta mucho el pan blanco.', 'Quería un pan, por favor.', 'Quiero pan.'], answer: 1 },
+    { id: 'p:cortcond:queria', kind: 'mcq', q: '"Quería un café", said at a counter, means:',
+      options: ['I wanted a coffee yesterday', "I'd like a coffee", 'I love coffee'], answer: 1 },
+    { id: 'p:cortcond:gustaria', kind: 'cloze', text: 'Me ___ reservar una mesa para dos. (gustar, the polite form)', accept: ['gustaría'] },
+    { id: 'p:cortcond:podrias', kind: 'recall', front: '"Could you help me?" (to a friend, tú)', back: '¿Podrías ayudarme?' }
+  ]
+},
+
+{
+  id: 'nt-dias-fechas-a1', canDo: 'say what day it is, give a date, and say what you do on which day', strand: 'notion', cefr: 'A1', level: 1, theme: null, status: 'reference',
+  pcic: ['nociones_generales:A1:121', 'nociones_generales:A1:125', 'ortografia:A1:152', 'nociones_especificas:A1:46'],
+  title: 'Los días, los meses y las fechas',
+  summary: 'Spanish days and months are written with a small letter, and the days need no word for "on": el lunes is on Monday, los lunes is on Mondays. Dates run from small to large, day then month then year, with de between them: el 5 de mayo de 2024. Those three habits are the lesson. The names themselves you can look up here and learn a few at a time, as you need them.',
+  keywords: [
+    { es: 'el lunes', en: 'on Monday' },
+    { es: 'los sábados', en: 'on Saturdays' },
+    { es: '¿Qué día es hoy?', en: 'What day is it today?' },
+    { es: '¿Qué fecha es hoy?', en: "What's the date today?" },
+    { es: 'la fecha', en: 'the date' },
+    { es: 'el mes', en: 'the month' },
+    { es: 'en marzo', en: 'in March' },
+    { es: 'el cumpleaños', en: 'the birthday' },
+    { es: 'nací', en: 'I was born' }
+  ],
+  sections: [
+    { h: 'No word for on', html: 'English says "on Monday"; Spanish says "the Monday":<ul>' +
+      '<li><b>el lunes</b>: on Monday, this coming one</li>' +
+      '<li><b>los lunes</b>: on Mondays, every week</li>' +
+      '<li><b>el fin de semana</b>: at the weekend</li></ul>' +
+      '<i>El lunes tengo clase</i> is about next Monday; <i>los lunes tengo clase</i> is a habit. But to say what day it is, there is no article at all: <i>Hoy es martes.</i>' },
+    { h: 'The week and the year', html: 'The days, Monday first, as calendars in Latin America print them: <i>lunes, martes, miércoles, jueves, viernes, sábado, domingo</i>. The months: <i>enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre</i>. All of them take a small letter, and the days that end in <i>-s</i> stay the same in the plural: <i>el martes, los martes</i>. This list is for looking up; learn the two or three you need this week, and the rest will come with use.' },
+    { h: 'Dates: small to large', html: 'A date goes day, month, year, joined by <i>de</i>: <i>el 5 de mayo de 2024</i>. Ask <i>¿Qué fecha es hoy?</i> and answer <i>Hoy es 3 de junio</i>. The first of the month is usually <i>el primero</i> in Latin America: <i>el primero de enero</i>. A year is read as an ordinary number: <i>2024</i> is <i>dos mil veinticuatro</i>.' },
+    { h: 'Birthdays and when you were born', html: '<i>¿Cuándo es tu cumpleaños?</i> When is your birthday? <i>Es el 12 de octubre.</i> To say when you were born, use <i>nací</i> (I was born), a past like <i>comí</i> and <i>salí</i>: <i>Nací el 3 de marzo de 1990.</i> <i>Nací en 1995.</i> With a full date, use <i>el</i>; with a year on its own, use <i>en</i>.' }
+  ],
+  exponents: [
+    { es: 'Hoy es lunes.', en: 'Today is Monday.', register: 'neutral', note: 'no article after es' },
+    { es: 'Los sábados trabajo hasta el mediodía.', en: 'On Saturdays I work until midday.', register: 'neutral', note: 'los + day: every week' },
+    { es: 'Hoy es 3 de marzo.', en: 'Today is the third of March.', register: 'neutral', note: 'day, de, month' },
+    { es: 'Nací el 3 de marzo de 1990.', en: 'I was born on 3 March 1990.', register: 'neutral', note: 'el before a full date' },
+    { es: '¿Cuándo es tu cumpleaños?', en: 'When is your birthday?', register: 'coloquial', note: 'tú' }
+  ],
+  contrasts: [
+    { es: 'El lunes voy al gimnasio.', en: "On Monday I'm going to the gym.", note: 'one Monday: the next one' },
+    { es: 'Los lunes voy al gimnasio.', en: 'On Mondays I go to the gym.', note: 'every Monday: a habit' },
+    { es: 'Nací en 1995.', en: 'I was born in 1995.', note: 'a year on its own: en' },
+    { es: 'Nací el 3 de marzo.', en: 'I was born on 3 March.', note: 'a date: el' }
+  ],
+  pitfalls: [
+    '<i>*En lunes</i> and <i>*en el lunes</i> translate "on Monday" word for word. Spanish uses the article alone: <i>el lunes</i>.',
+    'Days and months take a small letter: <i>el martes</i>, <i>en mayo</i>. The English capitals do not carry over.',
+    'The order is day, month, year, so <i>4/7</i> on a form or a ticket is the fourth of July, not the seventh of April.'
+  ],
+  examples: [
+    { es: '¿Qué día es hoy?\nHoy es lunes, 3 de marzo.', en: 'What day is it today?\nToday is Monday, 3 March.' },
+    { es: 'Los sábados trabajo por la mañana y el domingo descanso.', en: 'On Saturdays I work in the morning, and on Sunday I rest.' },
+    { es: 'Mi hermana nació el 12 de octubre de 2001.', en: 'My sister was born on 12 October 2001.' }
+  ],
+  probes: [
+    { id: 'p:diasfech:los', kind: 'mcq', q: '"On Mondays I have class." Which one?',
+      options: ['Los lunes tengo clase.', 'En los lunes tengo clase.', 'El lunes tengo clase.'], answer: 0 },
+    { id: 'p:diasfech:orden', kind: 'mcq', q: 'On a Colombian form, 4/7/2024 is:',
+      options: ['the seventh of April', 'the fourth of July', 'the 47th day of 2024'], answer: 1 },
+    { id: 'p:diasfech:en', kind: 'cloze', text: 'Nací ___ 1998. (a year on its own)', accept: ['en'] },
+    { id: 'p:diasfech:fecha', kind: 'recall', front: '"What\'s the date today?"', back: '¿Qué fecha es hoy?' }
+  ]
+},
+
+{
+  id: 'gr-tener-que-hay-que-a1', canDo: 'say what you have to do, what needs doing, and what you need', strand: 'grammar', cefr: 'A1', level: 1, theme: 'trabajo', status: 'reference',
+  pcic: ['gramatica:A2:445', 'gramatica:A2:386', 'funciones:A2:147', 'nociones_generales:A2:23'],
+  title: 'Tener que, hay que, necesitar',
+  summary: 'Tengo que trabajar: I have to work. Spanish builds obligation out of tener, which you already know, plus que and a verb. Hay que does the same job with no person in it: hay que pagar antes means it has to be paid first, by whoever is paying. Necesitar covers need, for things and for actions. With these three you can explain your day, your plans and the rules of almost any place.',
+  keywords: [
+    { es: 'tengo que', en: 'I have to' },
+    { es: 'tienes que', en: 'you have to (tú)' },
+    { es: 'tiene que', en: 'he or she has to; you have to (usted)' },
+    { es: 'hay que', en: 'you have to, it has to be done (anyone)' },
+    { es: 'no tienes que', en: "you don't have to" },
+    { es: 'necesito', en: 'I need' },
+    { es: 'debes', en: 'you should (tú)' },
+    { es: 'Tengo que irme.', en: 'I have to go.' },
+    { es: 'no se puede', en: "you can't, it isn't allowed" }
+  ],
+  sections: [
+    { h: 'Tener que + verb', html: 'Take the present of <i>tener</i>, add <i>que</i>, then any verb as the dictionary gives it:<ul>' +
+      '<li><b>tengo que</b> <i>trabajar</i>: I have to work</li>' +
+      '<li><b>tienes que</b> <i>trabajar</i>: you have to work (<i>tú</i>)</li>' +
+      '<li><b>tiene que</b> <i>trabajar</i>: he or she has to work; you have to work (<i>usted</i>)</li>' +
+      '<li><b>tenemos que</b> <i>trabajar</i>: we have to work</li>' +
+      '<li><b>tienen que</b> <i>trabajar</i>: they have to work; you all have to work (<i>ustedes</i>)</li></ul>' +
+      'The <i>que</i> never drops, and the second verb never changes: <i>Mañana tengo que salir temprano.</i>' },
+    { h: 'Hay que: a rule for everyone', html: '<i>Hay que</i> + verb says something must be done without saying who must do it. It is the voice of signs, instructions and general advice:<ul>' +
+      '<li><i>Hay que pagar antes de entrar.</i> You have to pay before going in.</li>' +
+      '<li><i>Hay que llevar el pasaporte.</i> You need to bring your passport.</li>' +
+      '<li><i>Para aprender, hay que practicar.</i> To learn, you have to practise.</li></ul>' +
+      '<i>Hay que</i> never changes. It is the same <i>hay</i> as in <i>hay un banco</i>, and it never takes a person in front of it.' },
+    { h: 'Necesitar, and deber for advice', html: '<i>Necesitar</i> is a regular verb and takes either a thing or a verb: <i>Necesito un taxi.</i> <i>Necesito hablar con usted.</i> Compare <i>tengo que hablar con usted</i>: almost the same, but <i>tengo que</i> sounds like a duty and <i>necesito</i> like a need. When you only want to advise, use <i>deber</i>: <i>Debes descansar</i>, you should rest.' },
+    { h: 'Not having to', html: 'Put <i>no</i> in front of <i>tener</i> and the meaning becomes "there is no need": <i>No tienes que venir mañana.</i> You do not have to come tomorrow. It is never "you must not". For a real ban, Spanish says <i>no se puede</i>: <i>Aquí no se puede fumar.</i> You cannot smoke here.' }
+  ],
+  contrasts: [
+    { es: 'Tienes que pagar antes.', en: 'You have to pay first.', note: 'tú: you, the person I am talking to' },
+    { es: 'Hay que pagar antes.', en: 'You have to pay first.', note: 'hay que: anyone who comes here' },
+    { es: 'No tienes que venir.', en: "You don't have to come.", note: 'no obligation: you can if you like' },
+    { es: 'No se puede entrar.', en: "You can't go in.", note: 'a ban: it is not allowed' }
+  ],
+  pitfalls: [
+    '<i>*Tengo trabajar</i> drops the <i>que</i>. It is always <i>tener que</i> + verb: <i>tengo que trabajar</i>.',
+    '<i>Hay que</i> takes no person: <i>*Yo hay que estudiar</i> mixes two structures. Say <i>tengo que estudiar</i> for yourself and <i>hay que estudiar</i> for everyone.',
+    '<i>No tienes que</i> means you do not have to, never you must not. For "you must not", use <i>no puedes</i> or <i>no se puede</i>.'
+  ],
+  examples: [
+    { es: 'Lo siento, tengo que irme. Mañana tengo que trabajar temprano.', en: 'Sorry, I have to go. Tomorrow I have to work early.' },
+    { es: 'Para entrar al museo hay que comprar la entrada en línea.', en: 'To get into the museum you have to buy the ticket online.' },
+    { es: 'No tienes que traer nada, pero si quieres, trae postre.', en: "You don't have to bring anything, but if you like, bring dessert." }
+  ],
+  probes: [
+    { id: 'p:tenerque:forma', kind: 'mcq', q: '"I have to study." Which one?',
+      options: ['Yo hay que estudiar.', 'Tengo que estudiar.', 'Tengo estudiar.'], answer: 1 },
+    { id: 'p:tenerque:hay', kind: 'mcq', q: 'A sign at a museum door says everyone must pay first. It says:',
+      options: ['Tienes que pagar antes.', 'Hay que pagar antes.', 'Tengo que pagar antes.'], answer: 1 },
+    { id: 'p:tenerque:no', kind: 'cloze', text: 'Mañana no ___ que venir: es festivo. (tener, tú)', accept: ['tienes'] },
+    { id: 'p:tenerque:irme', kind: 'recall', front: '"I have to go." (irse)', back: 'Tengo que irme' }
+  ]
+},
+{
+  id: 'gr-indefinido-irregular-a2', canDo: 'tell what happened with the irregular pasts: tuve, estuve, pude, hice, dije, vine', strand: 'grammar', cefr: 'A2', level: 2, theme: null, status: 'reference',
+  pcic: ['gramatica:A2:348', 'gramatica:A2:350', 'gramatica:B1:401', 'gramatica:B1:402', 'gramatica:B1:403'],
+  title: 'Tuve, estuve, pude, dije: el indefinido irregular',
+  summary: 'A dozen of the commonest verbs have a past with a new stem and no written accent: tuve, estuve, pude, puse, quise, vine, hice, dije, traje. They are irregular, but they are irregular together, because one set of endings fits them all. Add the spelling changes that only keep a sound (busqué, llegué, empecé) and the -ir verbs that change a vowel for él and ellos (pidió, durmió), and you can tell almost any story.',
+  keywords: [
+    { es: 'tuve', en: 'I had (tener)' },
+    { es: 'estuve', en: 'I was, I stayed (estar)' },
+    { es: 'pude', en: 'I could, I managed to (poder)' },
+    { es: 'puse', en: 'I put (poner)' },
+    { es: 'quise', en: 'I wanted, I tried (querer)' },
+    { es: 'vine', en: 'I came (venir)' },
+    { es: 'hice', en: 'I did, I made (hacer)' },
+    { es: 'dije', en: 'I said, I told (decir)' },
+    { es: 'traje', en: 'I brought (traer)' },
+    { es: 'llegué', en: 'I arrived (llegar)' }
+  ],
+  sections: [
+    { h: 'New stems, one set of endings', html: 'These verbs change their stem in the past and then share the same endings, with no accent anywhere: <b>-e, -iste, -o, -imos, -ieron</b>.<ul>' +
+      '<li><i>tener</i>: <b>tuv-</b>: <i>tuve, tuviste, tuvo, tuvimos, tuvieron</i></li>' +
+      '<li><i>estar</i>: <b>estuv-</b>: <i>estuve, estuviste, estuvo, estuvimos, estuvieron</i></li>' +
+      '<li><i>poder</i>: <b>pud-</b>: <i>pude, pudiste, pudo, pudimos, pudieron</i></li>' +
+      '<li><i>poner</i>: <b>pus-</b>: <i>puse</i>; <i>querer</i>: <b>quis-</b>: <i>quise</i>; <i>venir</i>: <b>vin-</b>: <i>vine</i></li>' +
+      '<li><i>hacer</i>: <b>hic-</b>: <i>hice, hiciste</i>, and <i>hizo</i> for <i>él</i>, with a <i>z</i> to keep the sound</li></ul>' +
+      'The stress falls on the stem, not the ending, which is why none of them is written with an accent: compare <i>llegué</i> with <i>tuve</i>.' },
+    { h: 'Dije and traje: a j and no i', html: 'When the new stem ends in <b>j</b>, the <i>ellos</i> form drops its <i>i</i>:<ul>' +
+      '<li><i>decir</i>: <b>dije</b>, <i>dijiste, dijo, dijimos</i>, <b>dijeron</b></li>' +
+      '<li><i>traer</i>: <b>traje</b>, <i>trajiste, trajo, trajimos</i>, <b>trajeron</b></li></ul>' +
+      'And <i>ser</i> and <i>ir</i> still share one past, the first one you learned: <i>fui, fuiste, fue, fuimos, fueron</i>.' },
+    { h: 'Spelling that keeps the sound', html: 'In the <i>yo</i> form of verbs ending in <i>-car</i>, <i>-gar</i> and <i>-zar</i>, the spelling changes so the sound stays the same. The verb itself is regular:<ul>' +
+      '<li><i>buscar</i>: <b>busqué</b>, but <i>buscaste, buscó</i></li>' +
+      '<li><i>llegar</i>: <b>llegué</b>, but <i>llegaste, llegó</i></li>' +
+      '<li><i>empezar</i>: <b>empecé</b>, but <i>empezaste, empezó</i></li></ul>' +
+      'And <i>leer</i> writes a <b>y</b> where an <i>i</i> would fall between two vowels: <i>leyó, leyeron</i>. <i>Creer</i> does the same: <i>creyó</i>.' },
+    { h: 'Pidió, durmió: the vowel change in -ir verbs', html: 'Verbs in <i>-ir</i> that change their vowel in the present (<i>pido, duermo</i>) change it again in the past, but only for <i>él</i> and <i>ellos</i>, and only by one step:<ul>' +
+      '<li><i>pedir</i>: <i>pedí, pediste</i>, <b>pidió</b>, <i>pedimos</i>, <b>pidieron</b></li>' +
+      '<li><i>dormir</i>: <i>dormí, dormiste</i>, <b>durmió</b>, <i>dormimos</i>, <b>durmieron</b></li>' +
+      '<li>the same in <i>repetir</i> (<i>repitió</i>), <i>servir</i> (<i>sirvió</i>), <i>sentir</i> (<i>sintió</i>) and <i>morir</i> (<i>murió</i>)</li></ul>' +
+      'The <i>yo</i> and <i>tú</i> forms stay regular, so you hear the change mostly when telling what someone else did.' }
+  ],
+  contrasts: [
+    { es: 'Ayer tuve una reunión.', en: 'Yesterday I had a meeting.', note: 'tuve: a new stem, no accent' },
+    { es: 'Ayer trabajé mucho.', en: 'Yesterday I worked a lot.', note: 'a regular verb: the accent is on the ending' },
+    { es: 'Pedí un café.', en: 'I ordered a coffee.', note: 'yo: regular' },
+    { es: 'Ella pidió un té.', en: 'She ordered a tea.', note: 'ella: the vowel changes, e to i' }
+  ],
+  pitfalls: [
+    '<i>*Tení</i>, <i>*hací</i> and <i>*poní</i> follow the regular pattern, and for these verbs the regular pattern is wrong. It is <i>tuve, hice, puse</i>.',
+    'No accent on the strong forms: <i>tuve, pudo, hizo</i>, never <i>*tuvé</i> or <i>*pudó</i>. The stress is on the stem.',
+    '<i>Dijeron</i> and <i>trajeron</i> have no <i>i</i> after the <i>j</i>. <i>*Dijieron</i> is the commonest slip in this lesson.'
+  ],
+  examples: [
+    { es: 'El sábado tuve que trabajar, pero el domingo pude descansar.', en: 'On Saturday I had to work, but on Sunday I managed to rest.' },
+    { es: '¿Qué te dijo el médico?\nMe dijo que tengo que dormir más.', en: 'What did the doctor tell you?\nHe told me I have to sleep more.' },
+    { es: 'Llegué tarde porque el bus no vino.', en: "I arrived late because the bus didn't come." }
+  ],
+  probes: [
+    { id: 'p:indirr:tuve', kind: 'mcq', q: '"Yesterday I had a lot of work." Which one?',
+      options: ['Ayer tení mucho trabajo.', 'Ayer tuve mucho trabajo.', 'Ayer tuvé mucho trabajo.'], answer: 1 },
+    { id: 'p:indirr:dijeron', kind: 'cloze', text: 'Mis amigos me ___ la verdad. (decir, pretérito)', accept: ['dijeron'] },
+    { id: 'p:indirr:pidio', kind: 'cloze', text: 'Ella ___ una sopa y yo pedí arroz. (pedir, pretérito)', accept: ['pidió'] },
+    { id: 'p:indirr:llegue', kind: 'recall', front: '"I arrived at eight." (llegar)', back: 'Llegué a las ocho' }
+  ]
+},
+
+{
+  id: 'gr-perfecto-vs-indefinido-a2', canDo: 'choose between fui and he ido the way Latin Americans do', strand: 'grammar', cefr: 'A2', level: 2, theme: null, status: 'reference',
+  pcic: ['gramatica:A2:352', 'gramatica:A2:358', 'gramatica:B1:430', 'gramatica:C1:402'],
+  title: 'Fui o he ido: cuándo usar cada uno',
+  summary: 'In Latin America the preterite is the past for anything that is finished, including things that happened this morning: hoy fui al banco, ¿ya comiste? The perfect, he ido, has a narrower job: experience up to now (¿has ido alguna vez a Cartagena?), things that have not happened yet (todavía no he terminado), and situations that are still going on. When you are not sure, the preterite is the safe choice. Spain uses the perfect far more, and you will learn to recognise that later.',
+  keywords: [
+    { es: 'hoy fui', en: 'today I went' },
+    { es: '¿Ya comiste?', en: 'Have you eaten yet?' },
+    { es: 'alguna vez', en: 'ever' },
+    { es: '¿Has ido alguna vez…?', en: 'Have you ever been…?' },
+    { es: 'nunca he', en: 'I have never' },
+    { es: 'todavía no', en: 'not yet' },
+    { es: 'esta mañana', en: 'this morning' },
+    { es: 'ya', en: 'already' },
+    { es: 'en mi vida', en: 'in my life, ever' }
+  ],
+  sections: [
+    { h: 'Finished is finished', html: 'If the action is over, Latin American Spanish uses the preterite, whatever the time word:<ul>' +
+      '<li><i>Ayer fui al banco.</i> Yesterday I went to the bank.</li>' +
+      '<li><i>Hoy fui al banco.</i> Today I went to the bank.</li>' +
+      '<li><i>Esta mañana desayuné con mi hermana.</i> This morning I had breakfast with my sister.</li>' +
+      '<li><i>¿Ya comiste?</i> Have you eaten yet?</li></ul>' +
+      'English switches to "have" for today and for "yet"; Latin American Spanish does not need to.' },
+    { h: 'Experience: alguna vez and nunca', html: 'The perfect is for your life so far, with no date attached. It goes with <i>alguna vez</i> (ever) and <i>nunca</i> (never):<ul>' +
+      '<li><i>¿Has ido alguna vez a Cartagena?</i> Have you ever been to Cartagena?</li>' +
+      '<li><i>Nunca he probado el ajiaco.</i> I have never tried ajiaco.</li>' +
+      '<li><i>He estado dos veces en México.</i> I have been to Mexico twice.</li></ul>' +
+      'The moment you say when it happened, you are back to the preterite: <i>Fui a Cartagena en 2019.</i>' },
+    { h: 'Not yet, and still true', html: 'The perfect also covers what has not happened yet, and situations that reach up to now:<ul>' +
+      '<li><i>Todavía no he terminado.</i> I have not finished yet.</li>' +
+      '<li><i>Siempre he vivido en Cali.</i> I have always lived in Cali.</li>' +
+      '<li><i>Este año ha llovido mucho.</i> It has rained a lot this year.</li></ul>' +
+      'Even here many speakers use the preterite (<i>todavía no terminé</i>), so do not worry about getting it wrong: for something finished, the preterite is never the strange choice.' },
+    { h: 'How to choose', html: 'Ask one question. Is it a finished event, at a moment you could name? Then the preterite. Is it about ever, never, not yet, or something that is still true? Then the perfect. <i>¿Has visto la película?</i> asks whether you have ever seen it; <i>¿Viste la película anoche?</i> asks about last night. In Spain you will hear <i>hoy he ido</i> for things done today. That is Spain\'s system, not the Latin American one, and you only need to understand it.' }
+  ],
+  contrasts: [
+    { es: 'Hoy fui al médico.', en: 'Today I went to the doctor.', note: 'finished: preterite, even with hoy' },
+    { es: '¿Has ido alguna vez al médico aquí?', en: 'Have you ever been to the doctor here?', note: 'experience: perfect' },
+    { es: '¿Ya almorzaste?', en: 'Have you had lunch yet?', note: 'the everyday question: preterite with ya' },
+    { es: 'Todavía no he almorzado.', en: "I haven't had lunch yet.", note: 'not yet: perfect' }
+  ],
+  pitfalls: [
+    'Do not copy the English "have" into every sentence with today, this week or <i>ya</i>. <i>¿Ya comiste?</i> and <i>hoy fui</i> are the normal Latin American forms.',
+    'A date or a named moment pushes you to the preterite: <i>*He ido a Bogotá en 2020</i> sounds wrong. Say <i>Fui a Bogotá en 2020</i>.',
+    'In the perfect only <i>haber</i> changes for the person, never the participle: <i>he ido, has ido, ha ido, hemos ido, han ido</i>.'
+  ],
+  examples: [
+    { es: 'Esta mañana fui al banco y después almorcé con Carlos.', en: 'This morning I went to the bank and then had lunch with Carlos.' },
+    { es: '¿Has probado alguna vez la bandeja paisa?\nNo, nunca. ¿Es rica?', en: 'Have you ever tried bandeja paisa?\nNo, never. Is it good?' },
+    { es: 'Todavía no he leído el libro, pero vi la película el sábado.', en: "I haven't read the book yet, but I saw the film on Saturday." }
+  ],
+  probes: [
+    { id: 'p:perfind:manana', kind: 'mcq', q: 'In Bogotá, you tell a friend what you did this morning:',
+      options: ['Esta mañana he ido al gimnasio.', 'Esta mañana fui al gimnasio.', 'Esta mañana iba al gimnasio.'], answer: 1 },
+    { id: 'p:perfind:experiencia', kind: 'mcq', q: 'Which question asks about experience, with no date?',
+      options: ['¿Fuiste a Cartagena el año pasado con tu familia?', '¿Has ido alguna vez a Cartagena?', '¿Ibas a Cartagena de niño?'], answer: 1 },
+    { id: 'p:perfind:todavia', kind: 'cloze', text: 'Todavía no ___ terminado el informe. (haber, yo)', accept: ['he'] },
+    { id: 'p:perfind:comiste', kind: 'recall', front: '"Have you eaten yet?" (the everyday Latin American way, tú)', back: '¿Ya comiste?' }
+  ]
+},
+
+{
+  id: 'task-a2-hoy-ayer', strand: 'task', cefr: 'A2', level: 2, theme: 'ocio', status: 'reference',
+  title: 'Cuenta tu semana',
+  canDo: 'tell someone about your week, choosing between fui and he ido by what you mean',
+  summary: 'Telling someone about your week is mostly a run of finished events, so it is mostly preterite: el lunes trabajé, el miércoles fui, hoy terminé. The perfect comes in for what has not happened yet and for experience: todavía no he llamado, nunca he probado. This task asks you to write your week and to choose each verb by what it means, not by whether it happened today or yesterday.',
+  keywords: [
+    { es: 'esta semana', en: 'this week' },
+    { es: 'anoche', en: 'last night' },
+    { es: 'por fin', en: 'at last, finally' },
+    { es: 'por primera vez', en: 'for the first time' },
+    { es: 'todavía no he', en: 'I have not yet' },
+    { es: 'nunca he', en: 'I have never' },
+    { es: 'al final', en: 'in the end' },
+    { es: 'hacer mercado', en: 'to do the grocery shopping' }
+  ],
+  sections: [
+    { h: 'What to do', html: 'Write eight to ten sentences about your week, from Monday to today. Say what you did on most days, one or two things you have not done yet, and one thing you have never done or did for the first time.' },
+    { h: 'Choose by meaning', html: 'For every verb, ask: is it finished, at a moment I could name? Then the preterite, even if it was today: <i>Hoy fui al supermercado.</i> Is it about not yet, ever or never? Then the perfect: <i>Todavía no he llamado a mi mamá.</i> <i>Nunca he ido a un partido de fútbol.</i> The word <i>hoy</i> decides nothing on its own.' },
+    { h: 'Keep it moving', html: 'Open each sentence with a time word, then the event: <i>El lunes trabajé hasta tarde. El miércoles, por fin, fui al gimnasio. Anoche cené con unos amigos.</i> The irregular pasts will come up often: <i>tuve, hice, fui, pude, vine</i>. If a sentence needs background, add it with <i>estaba</i> or <i>había</i>: <i>Estaba cansada, pero fui.</i>' }
+  ],
+  model: { title: 'one way of doing it', text: '<p>Esta semana fue muy larga. El lunes trabajé hasta las ocho de la noche y llegué a casa muy cansada. El martes tuve una reunión importante y salió bien. El miércoles, por fin, fui al gimnasio. El jueves mi hermano vino a cenar y cocinamos juntos. Anoche vi una película con unos amigos. Hoy hice mercado y limpié la casa. Todavía no he terminado el libro que empecé en enero, y todavía no he llamado a mi abuela. Y esta semana probé el ceviche por primera vez: me encantó.</p>' },
+  checklist: [
+    'Eight sentences or more, in time order, from Monday to today.',
+    'Finished events in the preterite, including today\'s: <i>hoy fui</i>, not <i>hoy he ido</i>.',
+    'At least one <i>todavía no he</i> + participle for something not done yet.',
+    'At least one <i>nunca he</i> or <i>alguna vez</i> for experience, or <i>por primera vez</i> with the preterite.',
+    'At least two irregular pasts: <i>tuve, hice, fui, pude, vine</i>.'
+  ],
+  examples: [
+    { es: 'Hoy fui al supermercado y después limpié la casa.', en: 'Today I went to the supermarket and then cleaned the house.' },
+    { es: 'Todavía no he llamado a mi abuela.', en: "I haven't called my grandmother yet." },
+    { es: 'El jueves mi hermano vino a cenar.', en: 'On Thursday my brother came round for dinner.' }
+  ],
+  probes: [
+    { id: 'p:hoyayer:mercado', kind: 'mcq', q: 'You did the grocery shopping this morning. In Medellín you say:',
+      options: ['Esta mañana he hecho mercado.', 'Esta mañana hice mercado.', 'Esta mañana hacía mercado.'], answer: 1 },
+    { id: 'p:hoyayer:todavia', kind: 'mcq', q: 'Which one is about something not done yet?',
+      options: ['Todavía no he comido.', 'Ya comí, gracias.', 'Comí con mi familia anoche.'], answer: 0 },
+    { id: 'p:hoyayer:vi', kind: 'cloze', text: 'Anoche ___ una película con unos amigos. (ver, yo)', accept: ['vi'] },
+    { id: 'p:hoyayer:abuela', kind: 'recall', front: '"I haven\'t called my grandmother yet."', back: 'Todavía no he llamado a mi abuela' }
+  ]
+},
+
+{
+  id: 'gr-ser-estar-adjetivos-a2', canDo: 'say how someone is today, not just what they are like, and use the adjectives that change meaning with ser and estar', strand: 'grammar', cefr: 'A2', level: 2, theme: 'caracter', status: 'reference',
+  pcic: ['gramatica:A2:452', 'gramatica:A2:453', 'gramatica:A2:454', 'gramatica:A2:457'],
+  title: 'Ser y estar con adjetivos',
+  summary: 'With an adjective, ser says what someone or something is like: es tranquilo, he is a calm person. Estar says how they are at the moment, or how they strike you now: está nervioso, he is nervous today. A handful of adjectives change their meaning completely between the two: es aburrido is boring, está aburrido is bored; es listo is clever, está listo is ready. Learn those few as pairs, and the rest follow the one rule.',
+  keywords: [
+    { es: 'es aburrido', en: 'he is boring' },
+    { es: 'está aburrido', en: 'he is bored' },
+    { es: 'es listo', en: 'he is clever' },
+    { es: 'está listo', en: 'he is ready' },
+    { es: 'es rico', en: 'he is rich' },
+    { es: 'está rico', en: 'it tastes good' },
+    { es: 'es tranquila', en: 'she is a calm person' },
+    { es: 'está nerviosa', en: 'she is nervous (right now)' },
+    { es: 'está cansado', en: 'he is tired' }
+  ],
+  sections: [
+    { h: 'What it is like, how it is now', html: '<i>Ser</i> with an adjective describes the person or thing itself; <i>estar</i> describes a state, how they are at this point:<ul>' +
+      '<li><i>Don Hernando es muy tranquilo.</i> He is a very calm man.</li>' +
+      '<li><i>Pero hoy está nervioso.</i> But today he is nervous.</li>' +
+      '<li><i>La clase es aburrida.</i> The class is boring.</li>' +
+      '<li><i>Estoy aburrido.</i> I am bored.</li></ul>' +
+      'A useful test: could it be different tomorrow without the person changing? Then it is probably <i>estar</i>.' },
+    { h: 'Adjectives that change meaning', html: 'A few adjectives mean one thing with <i>ser</i> and another with <i>estar</i>:<ul>' +
+      '<li><b>aburrido</b>: <i>es aburrido</i>, boring; <i>está aburrido</i>, bored</li>' +
+      '<li><b>listo</b>: <i>es listo</i>, clever; <i>está listo</i>, ready</li>' +
+      '<li><b>rico</b>: <i>es rico</i>, rich; <i>está rico</i>, it tastes good</li>' +
+      '<li><b>malo</b>: <i>es malo</i>, bad; <i>está malo</i>, it has gone off (food)</li>' +
+      '<li><b>verde</b>: <i>es verde</i>, green; <i>está verde</i>, not ripe yet</li></ul>' +
+      'In Colombia <i>¿Estás listo?</i> is the everyday "ready?", and <i>listo</i> on its own means OK, fine, done.' },
+    { h: 'How things strike you now', html: '<i>Estar</i> also gives your impression of something at this moment, often as a compliment: <i>¡Qué bonita está la casa!</i> (the house looks lovely), <i>Estás muy elegante hoy</i> (you look very smart today), <i>La sopa está deliciosa.</i> Saying <i>la sopa es deliciosa</i> describes the dish in general, as a menu would; <i>está deliciosa</i> is about the bowl in front of you.' },
+    { h: 'What still holds', html: 'The rest of what you know does not change. <i>Ser</i> for who and what someone is, and where they are from: <i>Es profesora. Es de Pasto.</i> <i>Estar</i> for where someone or something is: <i>Está en la oficina.</i> And events take <i>ser</i> even though they happen in a place: <i>La fiesta es en mi casa.</i>' }
+  ],
+  contrasts: [
+    { es: 'Es aburrido.', en: "He's boring.", note: 'ser: what he is like' },
+    { es: 'Está aburrido.', en: "He's bored.", note: 'estar: how he feels now' },
+    { es: 'Es listo.', en: "He's clever.", note: 'ser: a trait' },
+    { es: 'Está listo.', en: "He's ready.", note: 'estar: a state at this moment' }
+  ],
+  pitfalls: [
+    '<i>Estoy aburrido</i> means you are bored. <i>*Soy aburrido</i> tells people you are a boring person, which is rarely what you mean.',
+    '<i>Está rico</i> is about how food tastes now: <i>la sopa está rica</i>. <i>Es rico</i>, said of a person, means he has money.',
+    'Events take <i>ser</i>, not <i>estar</i>, even with a place: <i>La reunión es en la sala 3</i>, not <i>*la reunión está en la sala 3</i>.'
+  ],
+  examples: [
+    { es: 'Mi hermana es muy tranquila, pero hoy está nerviosa por el examen.', en: 'My sister is very calm, but today she is nervous about the exam.' },
+    { es: 'La película es aburrida y yo estoy cansado, así que me voy a dormir.', en: "The film is boring and I'm tired, so I'm going to bed." },
+    { es: '¿Ya estás lista?\nSí, lista, vamos.', en: "Are you ready yet?\nYes, ready, let's go." }
+  ],
+  probes: [
+    { id: 'p:serestadj:aburrido', kind: 'mcq', q: '"I\'m bored." Which one?',
+      options: ['Soy aburrido.', 'Estoy aburrido.', 'Estoy aburriendo.'], answer: 1 },
+    { id: 'p:serestadj:rica', kind: 'mcq', q: '"La sopa está rica" means:',
+      options: ['The soup is expensive.', 'The soup tastes good.', 'The soup is hot.'], answer: 1 },
+    { id: 'p:serestadj:es', kind: 'cloze', text: 'Mi abuelo ___ muy simpático. (ser)', accept: ['es'] },
+    { id: 'p:serestadj:listo', kind: 'recall', front: '"Are you ready?" (to a man, tú)', back: '¿Estás listo?' }
+  ]
+},
+
+{
+  id: 'gr-pronombres-posicion-a2', canDo: 'put lo, la, me and te in the right place with an infinitive, a gerund and a command', strand: 'grammar', cefr: 'A2', level: 2, theme: null, status: 'reference',
+  pcic: ['gramatica:A2:237', 'gramatica:A2:238', 'gramatica:A2:239', 'gramatica:A2:249', 'gramatica:A2:387'],
+  title: 'Dónde va el pronombre: dámelo, voy a verlo',
+  summary: 'With an ordinary verb, the little pronouns go in front: lo veo, me llama. Three verb forms let them, or make them, go on the end instead: the infinitive (voy a verlo), the gerund (estoy leyéndolo) and the command that says yes (llámame). With the first two you choose: lo voy a ver and voy a verlo mean the same. With a command you do not: it is always llámame, written as one word.',
+  keywords: [
+    { es: 'Voy a comprarlo.', en: "I'm going to buy it." },
+    { es: 'Lo voy a comprar.', en: "I'm going to buy it." },
+    { es: 'Estoy leyéndolo.', en: "I'm reading it." },
+    { es: 'Tengo que hacerlo.', en: 'I have to do it.' },
+    { es: 'Llámame.', en: 'Call me.' },
+    { es: 'Dámelo.', en: 'Give it to me.' },
+    { es: '¿Puedes ayudarme?', en: 'Can you help me?' },
+    { es: 'Hay que hacerlo.', en: 'It has to be done.' }
+  ],
+  sections: [
+    { h: 'In front, as usual', html: 'With a verb in an ordinary tense, the pronoun goes right in front of it, as you already do:<ul>' +
+      '<li><i>Lo veo todos los días.</i> I see him every day.</li>' +
+      '<li><i>Me llamó anoche.</i> She called me last night.</li>' +
+      '<li><i>La compré ayer.</i> I bought it yesterday.</li></ul>' +
+      'Three forms of the verb change that rule.' },
+    { h: 'Infinitive and gerund: either end', html: 'When <i>ir a, tener que, poder, querer</i> or <i>estar</i> is followed by an infinitive or a gerund, the pronoun can go in front of the first verb or on the end of the second, written as one word:<ul>' +
+      '<li><i>Lo voy a ver.</i> = <i>Voy a verlo.</i> I am going to see him.</li>' +
+      '<li><i>Te quiero invitar.</i> = <i>Quiero invitarte.</i> I want to invite you.</li>' +
+      '<li><i>La tengo que llamar.</i> = <i>Tengo que llamarla.</i> I have to call her.</li>' +
+      '<li><i>Lo estoy leyendo.</i> = <i>Estoy leyéndolo.</i> I am reading it.</li></ul>' +
+      'Both are equally correct. The pronoun goes at one end or the other, never in the middle. With <i>hay que</i> only the end works: <i>hay que hacerlo</i>.' },
+    { h: 'Commands that say yes: on the end', html: 'A command that tells someone to do something takes the pronoun on its end, always:<ul>' +
+      '<li><i>Llámame.</i> Call me.</li>' +
+      '<li><i>Ayúdanos, por favor.</i> Help us, please.</li>' +
+      '<li><i>Cómpralo.</i> Buy it.</li>' +
+      '<li><i>Dámelo.</i> Give it to me.</li></ul>' +
+      'The extra syllable would move the stress, so a written accent keeps it where it was: <i>compra</i> becomes <i>cómpralo</i>, and <i>da</i> with two pronouns becomes <i>dámelo</i>. With two pronouns, the person comes first: <i>me</i> before <i>lo</i>.' },
+    { h: 'Commands with no: back in front', html: 'Put <i>no</i> before a command and the pronoun goes back in front of the verb, which also changes its shape: <i>No te preocupes</i>, don\'t worry; <i>no me llames</i>, don\'t call me. That form has its own lesson later. For now, notice that the pronoun goes on the end only of a command that says yes.' }
+  ],
+  contrasts: [
+    { es: 'Lo voy a llamar.', en: "I'm going to call him.", note: 'in front of the first verb' },
+    { es: 'Voy a llamarlo.', en: "I'm going to call him.", note: 'on the end of the infinitive: the same meaning' },
+    { es: 'Llámalo.', en: 'Call him.', note: 'a command: only on the end' },
+    { es: 'Hay que llamarlo.', en: 'Someone has to call him.', note: 'hay que: only on the end' }
+  ],
+  pitfalls: [
+    '<i>*Voy lo a ver</i> puts the pronoun in the middle. It goes at one end or the other: <i>lo voy a ver</i> or <i>voy a verlo</i>.',
+    'On the end, the pronoun is written as part of the verb, with no space: <i>verlo</i>, <i>llámame</i>. Check the accent too: <i>llama</i> plus <i>me</i> is <i>llámame</i>.',
+    '<i>*Lo hay que hacer</i> is wrong even though <i>lo tengo que hacer</i> is fine. With <i>hay que</i>, the pronoun only goes on the end: <i>hay que hacerlo</i>.'
+  ],
+  examples: [
+    { es: 'Tengo que llamar a mi mamá. La voy a llamar esta noche.', en: "I have to call my mother. I'm going to call her tonight." },
+    { es: '¿Dónde está el libro?\nNo sé, estoy buscándolo.', en: "Where's the book?\nI don't know, I'm looking for it." },
+    { es: 'Si necesitas algo, llámame.', en: 'If you need anything, call me.' }
+  ],
+  probes: [
+    { id: 'p:pronpos:mitad', kind: 'mcq', q: 'Which one is NOT correct?',
+      options: ['Lo voy a ver.', 'Voy a verlo.', 'Voy lo a ver.'], answer: 2 },
+    { id: 'p:pronpos:ayudame', kind: 'mcq', q: '"Help me, please." (tú)',
+      options: ['Me ayuda, por favor.', 'Ayúdame, por favor.', 'Ayuda me, por favor.'], answer: 1 },
+    { id: 'p:pronpos:terminarlo', kind: 'cloze', text: 'El informe no está listo. Tengo que ___ hoy. (terminar + lo)', accept: ['terminarlo'] },
+    { id: 'p:pronpos:hayque', kind: 'recall', front: '"It has to be done." (hay que + hacer + lo)', back: 'Hay que hacerlo' }
+  ]
+},
+
+{
+  id: 'gr-formulas-subjuntivo-a2', canDo: 'wish people well and reassure them with ready-made phrases: que te mejores, ojalá, no te preocupes', strand: 'grammar', cefr: 'A2', level: 2, theme: 'relaciones', status: 'reference',
+  pcic: ['gramatica:B1:472', 'funciones:A2:401', 'funciones:B1:1258'],
+  title: 'Que te mejores, ojalá, no te preocupes',
+  summary: "Some of the warmest things you can say in Spanish use a verb form you have not learned yet, and you do not need to learn it to use them. Que te mejores (get well soon), que te vaya bien (all the best), ojalá (let's hope so) and no te preocupes (don't worry) are fixed phrases. Learn them whole, the way you learned me gustaría, and you will have the right words when someone is ill, leaving, worried or hoping.",
+  keywords: [
+    { es: '¡Que te mejores!', en: 'Get well soon!' },
+    { es: '¡Que te vaya bien!', en: 'All the best!' },
+    { es: '¡Que le vaya bien!', en: 'All the best! (usted)' },
+    { es: '¡Que la pases bien!', en: 'Have a good time!' },
+    { es: '¡Que descanses!', en: 'Rest well!' },
+    { es: '¡Que cumplas muchos más!', en: 'Many happy returns!' },
+    { es: 'Ojalá que sí.', en: "Let's hope so." },
+    { es: 'No te preocupes.', en: "Don't worry." },
+    { es: 'No se preocupe.', en: "Don't worry. (usted)" }
+  ],
+  sections: [
+    { h: 'Que, then a wish', html: 'A wish for someone starts with <i>que</i> and ends with a verb in a form you will learn properly later. For now you need these, whole:<ul>' +
+      '<li><i>¡Que te mejores!</i> Get well soon! To someone who is ill.</li>' +
+      '<li><i>¡Que te vaya bien!</i> All the best! To someone leaving or starting something.</li>' +
+      '<li><i>¡Que la pases bien!</i> Have a good time! Before a party or a trip.</li>' +
+      '<li><i>¡Que descanses!</i> Rest well! At night, or to someone tired.</li>' +
+      '<li><i>¡Que cumplas muchos más!</i> Many happy returns! On a birthday.</li></ul>' +
+      'To someone you call <i>usted</i>, <i>te</i> becomes <i>le</i> or <i>se</i>: <i>¡Que le vaya bien!</i> <i>¡Que se mejore!</i>' },
+    { h: 'Ojalá', html: '<i>Ojalá</i> means I hope so, or if only. On its own it answers a hope: <i>¿Crees que va a hacer sol?</i> <i>¡Ojalá!</i> With <i>que sí</i> or <i>que no</i> it makes a short answer: <i>Ojalá que sí</i>, let\'s hope so; <i>Ojalá que no</i>, let\'s hope not. A whole sentence after <i>ojalá</i> needs the new verb form, so for now keep it short, or borrow a phrase you know: <i>Ojalá que te mejores pronto.</i>' },
+    { h: 'No te preocupes', html: 'The standard reassurance, to a friend: <i>No te preocupes.</i> To someone you call <i>usted</i>: <i>No se preocupe.</i> Two more from the same family: <i>No pasa nada</i> (it is fine, no harm done) and <i>Tranquilo</i> or <i>tranquila</i> (relax, it is all right), which you will hear in Colombia many times a day.' },
+    { h: 'Why they look odd', html: 'Compare <i>mejores</i> with <i>mejoras</i>, <i>descanses</i> with <i>descansas</i>, <i>cumplas</i> with <i>cumples</i>: the vowel of the ending has swapped. Verbs in <i>-ar</i> take an <i>e</i>, verbs in <i>-er</i> and <i>-ir</i> take an <i>a</i>. That is the subjunctive, the mood of wishes and doubts, and it gets its own lessons at B1. Saying these phrases now means that when you get there, the forms will already sound right.' }
+  ],
+  contrasts: [
+    { es: '¡Que te mejores!', en: 'Get well soon!', note: 'tú' },
+    { es: '¡Que se mejore!', en: 'Get well soon!', note: 'usted' },
+    { es: 'Ojalá que sí.', en: "Let's hope so.", note: 'a hopeful yes' },
+    { es: 'Ojalá que no.', en: "Let's hope not.", note: 'a hopeful no' }
+  ],
+  pitfalls: [
+    '<i>*¡Que te mejoras!</i> uses the ordinary present. The wish needs the other form: <i>¡Que te mejores!</i>',
+    '<i>No te preocupes</i> is for <i>tú</i>. To your boss or an older stranger, say <i>No se preocupe</i>.',
+    'Write <i>ojalá</i> with an accent on the last <i>a</i>: the stress falls on the final syllable.'
+  ],
+  examples: [
+    { es: 'Me duele mucho la cabeza.\nAy, ¡que te mejores! Descansa un poco.', en: 'My head really hurts.\nOh, get well soon! Get some rest.' },
+    { es: 'Mañana tengo la entrevista.\n¡Que te vaya muy bien! No te preocupes.', en: "I have the interview tomorrow.\nAll the best! Don't worry." },
+    { es: '¿Crees que va a llover el sábado?\nOjalá que no, tenemos un asado.', en: "Do you think it's going to rain on Saturday?\nLet's hope not, we're having a barbecue." }
+  ],
+  probes: [
+    { id: 'p:formsubj:mejores', kind: 'mcq', q: 'A friend is ill in bed. You say:',
+      options: ['¡Buen provecho!', '¡Que te mejores!', '¡Que la pases bien!'], answer: 1 },
+    { id: 'p:formsubj:usted', kind: 'mcq', q: 'Your boss apologises for being late. You reassure her:',
+      options: ['No te preocupes.', 'No se preocupe.', 'No preocuparse.'], answer: 1 },
+    { id: 'p:formsubj:ojala', kind: 'cloze', text: '¿Va a hacer sol mañana? Ojalá que ___. (a hopeful yes)', accept: ['sí'] },
+    { id: 'p:formsubj:vaya', kind: 'recall', front: '"All the best!" (to a friend who is leaving, tú)', back: '¡Que te vaya bien!' }
+  ]
+},
+{
+  id: 'gr-pasados-repaso-b1', canDo: 'choose between the four pasts in one story: fui, iba, he ido and había ido', strand: 'grammar', cefr: 'B1', level: 3, theme: null, status: 'reference',
+  pcic: ['gramatica:B1:405', 'gramatica:B1:395', 'gramatica:B1:397', 'gramatica:B1:430', 'gramatica:B1:433'],
+  title: 'Los cuatro pasados juntos',
+  summary: 'By now you have four past tenses, and each one answers a different question. The preterite moves the story on: what happened next? The imperfect paints it: what was it like, what used to happen? The perfect looks at your life up to now: ever, never, not yet. The pluperfect steps back: what had already happened before that? This lesson puts all four side by side, with the Latin American habit of using the preterite for anything finished.',
+  keywords: [
+    { es: 'fui', en: 'I went (an event)' },
+    { es: 'iba', en: 'I was going, I used to go' },
+    { es: 'he ido', en: 'I have been, I have gone' },
+    { es: 'había ido', en: 'I had gone' },
+    { es: 'de repente', en: 'suddenly' },
+    { es: 'mientras', en: 'while' },
+    { es: 'cuando llegué', en: 'when I arrived' },
+    { es: 'ya había', en: 'had already' },
+    { es: 'antes de eso', en: 'before that' }
+  ],
+  sections: [
+    { h: 'Four questions, four tenses', html: '<ul>' +
+      '<li><b>What happened next?</b> The preterite: <i>Llegué, saludé y me senté.</i></li>' +
+      '<li><b>What was it like? What used to happen?</b> The imperfect: <i>Hacía calor. Los domingos íbamos al río.</i></li>' +
+      '<li><b>Up to now: ever, never, not yet?</b> The perfect: <i>Nunca he estado en Leticia. Todavía no he terminado.</i></li>' +
+      '<li><b>What had already happened before?</b> The pluperfect: <i>Cuando llegué, la película ya había empezado.</i></li></ul>' +
+      'Most stories need only the first two. The other two come in when you step outside the story: to compare it with your life now, or to go back to something earlier.' },
+    { h: 'Preterite and imperfect: the event and the scene', html: 'In a story the two work together. The imperfect sets up what was going on; the preterite drops an event into it: <i>Estaba en la cocina cuando sonó el teléfono.</i> Some verbs change meaning with the tense: <i>conocí a Marta</i> (I met her), <i>conocía a Marta</i> (I knew her); <i>supe la verdad</i> (I found out), <i>sabía la verdad</i> (I knew it); <i>no pude ir</i> (I did not manage to go), <i>no podía ir</i> (I was not able to go, at that time).' },
+    { h: 'The perfect, the Latin American way', html: 'For finished events Latin American Spanish keeps to the preterite, even for today: <i>Hoy hablé con mi jefe.</i> <i>¿Ya almorzaste?</i> The perfect stays for experience and for what has not happened yet: <i>¿Has trabajado alguna vez en un restaurante?</i> <i>Todavía no me han contestado.</i> If you hesitate between the two for something that is over, the preterite is the safe choice.' },
+    { h: 'The pluperfect: one step further back', html: '<i>Había, habías, había, habíamos, habían</i> plus a participle put one past event before another: <i>Cuando llegamos a la estación, el tren ya había salido.</i> Without it the order flips: <i>cuando llegamos, el tren salió</i> means it left as we arrived. Reach for it whenever you need "already" or "by then" in the past.' }
+  ],
+  contrasts: [
+    { es: 'Cuando llegué, Ana salió.', en: 'When I arrived, Ana left.', note: 'preterite: she left after I arrived' },
+    { es: 'Cuando llegué, Ana ya había salido.', en: 'When I arrived, Ana had already left.', note: 'pluperfect: she left before' },
+    { es: 'Cuando llegué, Ana salía.', en: 'When I arrived, Ana was leaving.', note: 'imperfect: it was in progress' },
+    { es: 'Nunca he visto a Ana tan contenta.', en: "I've never seen Ana so happy.", note: 'perfect: my whole experience up to now' }
+  ],
+  pitfalls: [
+    'Do not choose the imperfect just because something lasted a long time. <i>Viví diez años en Cali</i> is a finished period with a length, so it takes the preterite; <i>vivía en Cali</i> sets the scene for something else.',
+    'The pluperfect needs a second past to lean on. <i>Había comido</i> on its own sounds unfinished; with a later moment it is clear: <i>Ya había comido cuando me llamaste.</i>',
+    'Do not copy Spain\'s <i>hoy he ido</i> for things done today. In Latin America it is <i>hoy fui</i>; the perfect is for ever, never and not yet.'
+  ],
+  examples: [
+    { es: 'Cuando era niña, pasaba las vacaciones en la finca de mis abuelos.', en: "When I was a girl, I spent the holidays at my grandparents' farm." },
+    { es: 'Estaba leyendo en el sofá cuando de repente se fue la luz.', en: 'I was reading on the sofa when suddenly the power went off.' },
+    { es: 'Cuando llegamos al cine, la película ya había empezado, y desde entonces nunca he vuelto a llegar tarde.', en: 'When we got to the cinema the film had already started, and since then I have never been late again.' }
+  ],
+  probes: [
+    { id: 'p:pasrep:pluscuam', kind: 'mcq', q: '"When I arrived, the film had already started." Which one?',
+      options: ['Cuando llegué, la película ya empezó.', 'Cuando llegué, la película ya había empezado.', 'Cuando había llegado, la película ya empezaba.'], answer: 1 },
+    { id: 'p:pasrep:escena', kind: 'mcq', q: 'Which one sets the scene: "It was raining and there were a lot of people"?',
+      options: ['Llovió y hubo mucha gente.', 'Llovía y había mucha gente.', 'Ha llovido y ha habido mucha gente.'], answer: 1 },
+    { id: 'p:pasrep:ibamos', kind: 'cloze', text: 'Cuando era pequeño, ___ al río todos los domingos. (ir, nosotros)', accept: ['íbamos'] },
+    { id: 'p:pasrep:conoci', kind: 'recall', front: '"I met Marta at a party." (conocer)', back: 'Conocí a Marta en una fiesta' }
+  ]
+},
+
+{
+  id: 'gr-por-para-b1', canDo: 'use por for exchange, means and rate, and para for opinion, deadlines and comparison', strand: 'grammar', cefr: 'B1', level: 3, theme: null, status: 'reference',
+  pcic: ['gramatica:B1:771', 'funciones:A2:91'],
+  title: 'Por y para, segunda vuelta',
+  summary: 'The first pass at por and para gave you the core: para looks ahead to a goal (para ti, para aprender), por looks back to a cause or goes through a place (por la lluvia, por el parque). This second pass adds the uses that trip people up at B1: por for an exchange, a means and a rate (lo cambié por otro, por teléfono, tres veces por semana), and para for an opinion, a deadline and a surprising comparison (para mí, para el lunes, para ser lunes).',
+  keywords: [
+    { es: 'por teléfono', en: 'by phone, on the phone' },
+    { es: 'dos veces por semana', en: 'twice a week' },
+    { es: 'cambiar por', en: 'to exchange for' },
+    { es: 'gracias por', en: 'thanks for' },
+    { es: 'estar por', en: 'to be about to (Latin America)' },
+    { es: 'por si acaso', en: 'just in case' },
+    { es: 'para mí', en: 'in my opinion' },
+    { es: 'para el lunes', en: 'by Monday' },
+    { es: 'para ser', en: 'for, considering it is' }
+  ],
+  sections: [
+    { h: 'Por: in exchange, by means of, per', html: '<ul>' +
+      '<li><b>Exchange.</b> <i>Lo cambié por otro.</i> I exchanged it for another one. <i>Pagué cincuenta mil pesos por los zapatos.</i> I paid fifty thousand pesos for the shoes. <i>Gracias por todo.</i></li>' +
+      '<li><b>Means.</b> <i>Hablamos por teléfono.</i> We talked on the phone. <i>Te lo mando por correo.</i> I will send it to you by email.</li>' +
+      '<li><b>Rate.</b> <i>tres veces por semana</i>, three times a week; <i>cien kilómetros por hora</i>, a hundred kilometres an hour; <i>dos pastillas por día</i>, two pills a day.</li></ul>' },
+    { h: 'Por for time', html: '<i>Por la mañana</i>, <i>por la tarde</i>, <i>por la noche</i>: in the morning, the afternoon, at night. For a rough length of time, <i>por</i> is possible but often dropped: <i>Estuve en Lima por dos semanas</i>, or just <i>estuve dos semanas en Lima</i>. And in Latin America <i>estar por</i> + verb means to be about to: <i>El bus está por salir.</i> The bus is about to leave.' },
+    { h: 'Para: opinion, deadline, comparison', html: '<ul>' +
+      '<li><b>Opinion.</b> <i>Para mí, es la mejor película del año.</i> <i>Para mi mamá, todo está bien.</i></li>' +
+      '<li><b>Deadline.</b> <i>Necesito el informe para el lunes.</i> I need the report by Monday. <i>¿Para cuándo lo necesitas?</i></li>' +
+      '<li><b>Surprising comparison.</b> <i>Para ser lunes, hay mucha gente.</i> For a Monday, there are a lot of people. <i>Habla muy bien español para llevar solo un año aquí.</i> She speaks very good Spanish for someone who has only been here a year.</li></ul>' },
+    { h: 'One sentence, two meanings', html: 'Sometimes both fit and the meaning changes. <i>Lo hice por ti</i> is because of you, for your sake; <i>lo hice para ti</i> is for you to have, as a present. <i>Trabajo por mi familia</i> gives my reason; <i>trabajo para una empresa grande</i> names my employer. When in doubt, ask whether you are looking back at a cause (<i>por</i>) or ahead to a goal, a person or a date (<i>para</i>).' }
+  ],
+  contrasts: [
+    { es: 'Lo hice por ti.', en: 'I did it for your sake.', note: 'por: the cause or the motive' },
+    { es: 'Lo hice para ti.', en: 'I made it for you.', note: 'para: the person who receives it' },
+    { es: 'Lo necesito para el viernes.', en: 'I need it by Friday.', note: 'para: a deadline' },
+    { es: 'Lo cambié por otro.', en: 'I exchanged it for another one.', note: 'por: an exchange' }
+  ],
+  pitfalls: [
+    '"Twice a week" is <i>dos veces por semana</i> or <i>dos veces a la semana</i>, never <i>*dos veces para semana</i>.',
+    '<i>Para mí</i> gives an opinion. <i>Por mí</i> means as far as I am concerned: <i>Por mí, no hay problema.</i> Do not swap them when you mean "in my opinion".',
+    '"Thank you for" is always <i>gracias por</i>: <i>gracias por venir</i>, never <i>*gracias para venir</i>.'
+  ],
+  examples: [
+    { es: 'Voy al gimnasio tres veces por semana, siempre por la mañana.', en: 'I go to the gym three times a week, always in the morning.' },
+    { es: 'Para ser domingo, hay mucho tráfico.', en: 'For a Sunday, there is a lot of traffic.' },
+    { es: 'Necesito el informe para el lunes. ¿Me lo puedes mandar por correo?', en: 'I need the report by Monday. Can you send it to me by email?' }
+  ],
+  probes: [
+    { id: 'p:porpara2:plazo', kind: 'mcq', q: '"I need it by Friday." Which one?',
+      options: ['Lo necesito para el viernes.', 'Lo necesito por el viernes.', 'Lo necesito hasta el viernes.'], answer: 0 },
+    { id: 'p:porpara2:paraser', kind: 'mcq', q: '"Para ser lunes, hay mucha gente." What does "para ser lunes" mean?',
+      options: ['Because it is Monday', 'For a Monday', 'By Monday'], answer: 1 },
+    { id: 'p:porpara2:telefono', kind: 'cloze', text: 'Hablamos ___ teléfono todos los días. (by, on)', accept: ['por'] },
+    { id: 'p:porpara2:gracias', kind: 'recall', front: '"Thanks for coming."', back: 'Gracias por venir' }
+  ]
+},
+
+{
+  id: 'gr-para-que-sin-que-b1', canDo: 'say what something is for and what happens without or before someone else acts: para que, sin que, antes de que', strand: 'grammar', cefr: 'B1', level: 3, theme: null, status: 'reference',
+  pcic: ['gramatica:B1:479', 'gramatica:B1:767', 'gramatica:B1:768', 'gramatica:B1:769', 'gramatica:B1:727'],
+  title: 'Para que, sin que, antes de que',
+  summary: 'Para plus a verb says what you do something for, when the same person does both: lo hago para aprender. When the purpose involves someone else, Spanish switches to para que and the subjunctive: lo hago para que aprendas. Sin que and antes de que work the same way, and unlike cuando they take the subjunctive every single time.',
+  keywords: [
+    { es: 'para + verbo', en: 'in order to (the same person)' },
+    { es: 'para que', en: 'so that (someone else)' },
+    { es: 'sin + verbo', en: 'without doing' },
+    { es: 'sin que', en: 'without someone doing' },
+    { es: 'antes de + verbo', en: 'before doing' },
+    { es: 'antes de que', en: 'before someone does' },
+    { es: 'Te lo explico para que lo entiendas.', en: "I'll explain it to you so that you understand." },
+    { es: 'Llámame antes de que salgas.', en: 'Call me before you leave.' }
+  ],
+  sections: [
+    { h: 'The same person: para + verb', html: 'If the one who acts and the one the purpose is about are the same person, use <i>para</i> and the verb as the dictionary gives it: <i>Estudio para aprender.</i> <i>Ahorro para viajar.</i> <i>Vine temprano para ayudar.</i> <i>Sin</i> and <i>antes de</i> work the same way: <i>Salió sin desayunar.</i> <i>Llámame antes de salir.</i>' },
+    { h: 'Someone else: que + subjunctive', html: 'When a second person comes in, add <i>que</i> and put their verb in the subjunctive:<ul>' +
+      '<li><i>Te lo explico <b>para que</b> lo entiendas.</i> I will explain it to you so that you understand.</li>' +
+      '<li><i>Habla bajito <b>para que</b> no se despierte el bebé.</i> Speak quietly so the baby does not wake up.</li>' +
+      '<li><i>Siempre sale <b>sin que</b> nadie lo note.</i> He always leaves without anyone noticing.</li>' +
+      '<li><i>Llámame <b>antes de que</b> salgas.</i> Call me before you leave.</li></ul>' +
+      'The test is simple: one person, the infinitive; two people, <i>que</i> and the subjunctive.' },
+    { h: 'Always the subjunctive', html: 'With <i>cuando</i> you choose: the indicative for habits (<i>cuando llego, como</i>), the subjunctive for the future (<i>cuando llegues, comemos</i>). <i>Para que</i>, <i>sin que</i> and <i>antes de que</i> leave you no choice: the subjunctive every time, because what they introduce has not happened, or did not happen, at the moment of the main verb. <i>Después de que</i> is the odd one out and behaves like <i>cuando</i>: <i>después de que comamos</i> for the future, and in the past many speakers say <i>después de que comimos</i>.' },
+    { h: 'Telling it in the past', html: 'In a story about the past, the subjunctive after these words moves into its own past form, which has a lesson of its own: <i>Salió sin que nadie lo viera.</i> <i>Te lo dije para que lo supieras.</i> For now, recognise the shape: the same <i>para que</i> and <i>sin que</i>, with a verb ending in <i>-ra</i>.' }
+  ],
+  contrasts: [
+    { es: 'Vine para ayudar.', en: 'I came to help.', note: 'one person: para + infinitive' },
+    { es: 'Vine para que me ayudes.', en: 'I came so that you can help me.', note: 'two people: para que + subjunctive' },
+    { es: 'Salí sin desayunar.', en: 'I left without having breakfast.', note: 'one person: sin + infinitive' },
+    { es: 'Salí sin que me vieran.', en: 'I left without them seeing me.', note: 'two people, in the past' }
+  ],
+  pitfalls: [
+    '<i>*Antes de que sales</i> uses the indicative. These words take the subjunctive every time: <i>antes de que salgas</i>.',
+    'When you are the one doing both things, use the infinitive: <i>estudio para aprender</i>, not <i>*estudio para que aprenda</i>, which sounds as if someone else will learn.',
+    '<i>¿Para qué?</i>, with an accent, is a question: what for? <i>Para que</i>, with no accent, introduces a purpose. <i>¿Para qué es esto?</i> <i>Para que estés mejor.</i>'
+  ],
+  examples: [
+    { es: 'Te dejo las llaves para que entres cuando quieras.', en: "I'm leaving you the keys so that you can come in whenever you want." },
+    { es: 'Habla bajito para que no se despierte el bebé.', en: "Speak quietly so the baby doesn't wake up." },
+    { es: 'Tenemos que salir antes de que empiece a llover.', en: 'We have to leave before it starts to rain.' }
+  ],
+  probes: [
+    { id: 'p:paraque:mismo', kind: 'mcq', q: '"I am saving money to travel." (you are the one travelling)',
+      options: ['Ahorro para viajar.', 'Ahorro para que viajo.', 'Ahorro para viajo.'], answer: 0 },
+    { id: 'p:paraque:salgas', kind: 'cloze', text: 'Llámame antes de que ___. (salir, tú)', accept: ['salgas'] },
+    { id: 'p:paraque:entiendas', kind: 'cloze', text: 'Te lo explico para que lo ___. (entender, tú)', accept: ['entiendas'] },
+    { id: 'p:paraque:sinque', kind: 'mcq', q: 'Which one is correct?',
+      options: ['Siempre sale sin que nadie lo nota.', 'Siempre sale sin que nadie lo note.', 'Siempre sale sin nadie lo note.'], answer: 1 }
+  ]
+},
+
+{
+  id: 'gr-se-cambio-significado-b1', canDo: 'tell ir from irse, dormir from dormirse, and the other verbs whose meaning changes with se', strand: 'grammar', cefr: 'B1', level: 3, theme: null, status: 'reference',
+  pcic: ['gramatica:B2:236', 'gramatica:B1:203'],
+  title: 'Cuando el se cambia el sentido: ir e irse, dormir y dormirse',
+  summary: 'You know se from verbs where you do something to yourself: me levanto, me ducho. With a handful of everyday verbs, se does something else: it changes the meaning. Voy is I go; me voy is I am leaving. Duermo is I sleep; me dormí is I fell asleep. Quedar, llevar and comer shift in the same way. These pairs are among the most frequent verbs in the language, and mixing them up is one of the clearest signs of a learner, so learn them as pairs.',
+  keywords: [
+    { es: 'irse', en: 'to leave, to go away' },
+    { es: 'Me voy.', en: "I'm leaving. I'm off." },
+    { es: 'dormirse', en: 'to fall asleep' },
+    { es: 'quedarse', en: 'to stay' },
+    { es: 'quedar en', en: 'to agree to, to arrange to' },
+    { es: 'llevarse', en: 'to take away, to take with you' },
+    { es: 'llevarse bien con', en: 'to get on well with' },
+    { es: 'comerse', en: 'to eat up, to eat the whole thing' },
+    { es: 'preocuparse por', en: 'to worry about' }
+  ],
+  sections: [
+    { h: 'Ir and irse, dormir and dormirse', html: 'Without <i>se</i>, the verb names the activity; with it, the verb marks a change: a leaving, a beginning.<ul>' +
+      '<li><b>ir</b>: to go somewhere. <i>Voy al centro.</i> I am going into town.</li>' +
+      '<li><b>irse</b>: to leave, to go away. <i>Me voy.</i> I am off. <i>¿Ya te vas?</i> Are you leaving already?</li>' +
+      '<li><b>dormir</b>: to sleep. <i>Duermo ocho horas.</i> I sleep eight hours.</li>' +
+      '<li><b>dormirse</b>: to fall asleep. <i>Me dormí en la reunión.</i> I fell asleep in the meeting.</li></ul>' +
+      'With <i>ir</i> what matters is where you are going; with <i>irse</i>, the place you leave: <i>Me voy de aquí.</i> And <i>me quedé dormido</i> is the everyday way to say I overslept.' },
+    { h: 'Quedar and quedarse', html: '<ul>' +
+      '<li><b>quedarse</b>: to stay. <i>Me quedo en casa esta noche.</i> I am staying in tonight. In a shop, <i>me quedo con este</i> means I will take this one.</li>' +
+      '<li><b>quedar</b>: to be left, to be located, to fit. <i>Quedan dos boletas.</i> There are two tickets left. <i>¿Dónde queda el banco?</i> Where is the bank? <i>Esa camisa te queda bien.</i> That shirt suits you.</li>' +
+      '<li><b>quedar en</b>: to agree on a plan. <i>Quedamos en vernos a las seis.</i> We agreed to meet at six.</li></ul>' },
+    { h: 'Llevar and llevarse, comer and comerse', html: '<ul>' +
+      '<li><b>llevar</b>: to carry, to take somewhere, to wear. <i>Llevo a los niños al colegio.</i> <i>Lleva una chaqueta azul.</i></li>' +
+      '<li><b>llevarse</b>: to take away with you. In a shop, <i>me llevo los dos</i> is I will take both. With people, it means to get on: <i>Me llevo muy bien con mi hermano.</i> I get on very well with my brother.</li>' +
+      '<li><b>comer</b>: to eat. <i>Comemos a la una.</i> We eat at one.</li>' +
+      '<li><b>comerse</b>: to eat something up, all of it. <i>Me comí toda la pizza.</i> I ate the whole pizza.</li></ul>' },
+    { h: 'Feelings: preocupar and preocuparse', html: 'Many verbs of feeling come in the same kind of pair. Without <i>se</i>, something causes the feeling in someone: <i>Me preocupa el examen.</i> The exam worries me. With <i>se</i>, the person has the feeling: <i>Me preocupo por todo.</i> I worry about everything. <i>Alegrar</i> and <i>alegrarse</i> work the same way (<i>me alegra verte</i>, <i>me alegro de verte</i>), and so do <i>aburrir</i> and <i>aburrirse</i> (<i>la clase me aburre</i>, <i>me aburro en clase</i>). The version with <i>se</i> usually takes a preposition: <i>preocuparse por</i>, <i>alegrarse de</i>.' }
+  ],
+  contrasts: [
+    { es: 'Voy a la oficina.', en: "I'm going to the office.", note: 'ir: where to' },
+    { es: 'Me voy de la oficina.', en: "I'm leaving the office.", note: 'irse: where from' },
+    { es: 'Dormí muy bien.', en: 'I slept very well.', note: 'dormir: the sleep itself' },
+    { es: 'Me dormí a las dos.', en: 'I fell asleep at two.', note: 'dormirse: the moment it starts' },
+    { es: 'Quedamos en vernos a las seis.', en: 'We agreed to meet at six.', note: 'quedar en: an agreement' },
+    { es: 'Me quedo en casa.', en: "I'm staying at home.", note: 'quedarse: not going anywhere' }
+  ],
+  pitfalls: [
+    'At the end of a visit, say <i>me voy</i> or <i>ya me voy</i>. A bare <i>voy</i> with no destination sounds unfinished, as if you were about to say where.',
+    '<i>Me dormí</i> is about falling asleep, often when you did not mean to. If you simply slept well, it is <i>dormí bien</i>, with no <i>se</i>.',
+    '<i>Quedar en</i> is an agreement and <i>quedarse</i> is staying: <i>quedamos en ir al cine</i> is we agreed to go to the cinema, <i>nos quedamos en el cine</i> is we stayed at the cinema. One small word changes the plan.'
+  ],
+  examples: [
+    { es: 'Ya es tarde, me voy. ¡Nos vemos mañana!', en: "It's late, I'm off. See you tomorrow!" },
+    { es: 'Anoche me dormí viendo una serie y me desperté a las tres.', en: 'Last night I fell asleep watching a series and woke up at three.' },
+    { es: 'Quedamos en vernos a las seis, pero al final me quedé en casa.', en: 'We agreed to meet at six, but in the end I stayed at home.' }
+  ],
+  probes: [
+    { id: 'p:secambio:mevoy', kind: 'mcq', q: 'At the end of a visit, you say:',
+      options: ['Voy, hasta luego.', 'Me voy, hasta luego.', 'Me vaya, hasta luego.'], answer: 1 },
+    { id: 'p:secambio:dormi', kind: 'mcq', q: '"Me dormí en la clase." What happened?',
+      options: ['I slept well in class.', 'I fell asleep in class.', 'I went to sleep at home.'], answer: 1 },
+    { id: 'p:secambio:quedo', kind: 'cloze', text: 'Esta noche no salgo: me ___ en casa. (quedarse, yo)', accept: ['quedo'] },
+    { id: 'p:secambio:llevo', kind: 'recall', front: '"I get on very well with my brother." (llevarse)', back: 'Me llevo muy bien con mi hermano' }
+  ]
+},
+
+{
+  id: 'gr-vosotros-espana-b2', canDo: 'understand Spain\'s vosotros forms and its "today" past when you read or hear them', strand: 'grammar', cefr: 'B2', level: 6, theme: 'medios', status: 'reference',
+  pcic: ['gramatica:A1:195', 'gramatica:A1:198', 'gramatica:B2:644', 'gramatica:C1:402'],
+  title: 'El español de España: vosotros y hoy he ido (reconocer)',
+  summary: 'Everything in this course is Latin American Spanish, and that is all you need to speak. But you will read Spanish newspapers, watch series made in Spain and meet Spaniards, and two things there sound different. Spain has a second plural "you", vosotros, with its own verb endings, for friends and family. And Spain uses he ido for anything done today, where Latin America says fui. This lesson is for recognition only: understand both, and keep saying ustedes and fui.',
+  sections: [
+    { h: 'Who says vosotros, and where', html: 'In most of Spain, <b>vosotros</b> (<b>vosotras</b> for a group of women) is the plural of <i>tú</i>: what you say to two or more friends, children or relatives. There, <i>ustedes</i> is only the formal plural, the plural of <i>usted</i>. In Latin America, and in the Canary Islands and parts of Andalusia, <i>ustedes</i> does both jobs, which is why you have never needed the other form. You will hear it in films and series made in Spain, in dubbing done in Spain, on Spanish radio and in the street in Madrid or Barcelona. In Latin America it survives only in solemn old texts: the Argentine national anthem opens with <b>Oíd, mortales</b>, "hear, mortals".' },
+    { h: 'The verb endings', html: 'The Spanish plural "you" has its own ending in every tense:<ul>' +
+      '<li>Present: <b>habláis, coméis, vivís</b>; <b>sois, estáis, tenéis, vais</b> (you all speak, eat, live; are, are, have, go)</li>' +
+      '<li>Preterite: <b>hablasteis, comisteis, fuisteis</b> (you all spoke, ate, went)</li>' +
+      '<li>Perfect: <b>habéis hablado</b> (you all have spoken)</li>' +
+      '<li>Imperfect: <b>hablabais, comíais</b> (you all used to speak, eat)</li>' +
+      '<li>Future and conditional: <b>hablaréis, hablaríais</b></li></ul>' +
+      'The giveaway is <b>-is</b> at the end with a vowel before it: <b>-áis, -éis, -ís</b>. When you see it, read "you all" and carry on.' },
+    { h: 'Os, vuestro and the commands', html: 'Three more pieces travel with it:<ul>' +
+      '<li><b>os</b>: you, to you (plural). <b>Os llamo mañana</b>, I will call you all tomorrow. <b>¿Os gusta?</b> Do you all like it?</li>' +
+      '<li><b>vuestro, vuestra, vuestros, vuestras</b>: your (plural). <b>Vuestra casa</b>, your house.</li>' +
+      '<li>Commands to a group end in <b>-d</b>: <b>hablad, comed, venid, id</b>. Before <b>os</b> the <b>d</b> drops: <b>sentaos</b>, sit down; <b>callaos</b>, be quiet. In speech you will often hear the infinitive instead: <b>¡Venir aquí!</b></li></ul>' +
+      'In Latin America each of these is <i>ustedes</i> with a third person verb: <i>Los llamo mañana. ¿Les gusta? La casa de ustedes. Vengan. Siéntense.</i>' },
+    { h: 'Spain\'s "today" past', html: 'Spain also divides the past differently. For anything done today, this week or this year, most of Spain uses the perfect: <b>Hoy he ido al médico</b>; <b>esta mañana he desayunado fuera</b>; <b>este año hemos viajado mucho</b>. A Colombian or a Mexican would say <i>hoy fui al médico</i>, <i>esta mañana desayuné afuera</i>, <i>este año viajamos mucho</i>. Both are correct Spanish: they are two regional systems. In a Spanish newspaper, read <b>el Gobierno ha aprobado</b> as "the government approved", today or very recently. Keep the preterite in your own Spanish; in Latin America the Spanish system sounds distinctly foreign.' }
+  ],
+  contrasts: [
+    { es: '¿Qué queréis tomar?', en: 'What would you all like to drink? (Spain)', note: 'Latin America: ¿Qué quieren tomar?' },
+    { es: 'Os espero en la puerta.', en: "I'll wait for you all at the door. (Spain)", note: 'Latin America: Los espero en la puerta.' },
+    { es: 'Sentaos, por favor.', en: 'Sit down, please. (to a group, Spain)', note: 'Latin America: Siéntense, por favor.' },
+    { es: 'Hoy he comido con Ana.', en: 'I had lunch with Ana today. (Spain)', note: 'Latin America: Hoy almorcé con Ana.' }
+  ],
+  pitfalls: [
+    'Do not start using vosotros because you have heard it. In Latin America it sounds theatrical or foreign; <i>ustedes</i> is right for any group, friends included.',
+    '<b>Vos</b> is not vosotros. <b>Vos</b> is a singular <i>tú</i>, used in Argentina, Uruguay, much of Central America and in Medellín and the coffee region of Colombia: <b>vos sabés</b>, you know. Vosotros is plural and belongs to Spain.',
+    'When you read <b>habéis</b> or <b>os</b>, translate them as "you all" and move on. Recognising the ending is the whole skill; you never need to produce it.'
+  ],
+  examples: [
+    { es: 'Hoy he ido al médico y me ha dicho que todo está bien.', en: 'I went to the doctor today and he told me everything is fine. (Spain)' },
+    { es: 'Esta semana el Gobierno ha aprobado la nueva ley.', en: 'This week the government approved the new law. (a Spanish newspaper)' },
+    { es: 'En Bogotá dirían: hoy fui al médico y me dijo que todo está bien.', en: 'In Bogotá they would say: I went to the doctor today and he told me everything is fine.' }
+  ],
+  probes: [
+    { id: 'p:vosesp:habeis', kind: 'mcq', q: 'In a series made in Madrid, a mother asks her two sons "¿Habéis comido?". She means:',
+      options: ['Have they eaten yet?', 'Have you all eaten?', 'Have we eaten?'], answer: 1 },
+    { id: 'p:vosesp:os', kind: 'mcq', q: 'A Spanish friend writes "Os espero a las ocho". In Colombia you would write:',
+      options: ['Te espero a las ocho.', 'Los espero a las ocho.', 'Nos esperamos a las ocho.'], answer: 1 },
+    { id: 'p:vosesp:fui', kind: 'cloze', text: 'En Madrid dicen «hoy he ido al banco». En Bogotá: hoy ___ al banco. (ir, yo)', accept: ['fui'] },
+    { id: 'p:vosesp:sentaos', kind: 'recall', front: '"Sentaos, por favor" (Spain, to a group): how do you say it in Latin America?', back: 'Siéntense, por favor' }
   ]
 }
 
