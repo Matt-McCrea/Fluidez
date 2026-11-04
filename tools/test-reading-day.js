@@ -276,5 +276,27 @@ logDay(td - 2, 1, 20);
 pl = SRS.computePlan(5, 'A1', 8, 0);
 ok(pl.steer === null, 'only yesterday counts');
 
+/* ---- placed learner: the serial starts in their own band, with a recap card ------ */
+{
+  (0, eval)(fs.readFileSync(path.join(ROOT, 'data/story/a2.js'), 'utf8'));
+  const firstA2 = window.STORY_INDEX.filter(e => e.band === 'A2')[0];
+  const a2ch = window.STORY_A2.filter(c => c.id === firstA2.id)[0];
+  store = {}; window.Profile.set('A2'); S = reload();
+  KNOWN = coverageSet(a2ch, 1);
+  S._setMode('rapido');
+  const pc = S._build({ seed: 3, over: { di: 0 } });
+  ok(pc.chapter && pc.chapter.id === firstA2.id, 'a placed A2 learner with nothing read starts at the first A2 chapter (' + (pc.chapter && pc.chapter.id) + ', not ch001)');
+  ok(pc.chapter && typeof pc.chapter.recapLine === 'string' && /Tom/.test(pc.chapter.recapLine) && /Bogot/.test(pc.chapter.recapLine), 'a one-line "story so far" recap precedes it, naming the cast and Bogota');
+  ok(S.nextChapterEntry().id === firstA2.id, 'Session.nextChapterEntry answers the same chapter for the library');
+  // once chapters are read the serial simply continues
+  store['fluidez.progress'] = JSON.stringify({ chaptersRead: { [firstA2.id]: dayNow() } });
+  const nx = S.nextChapterEntry();
+  ok(nx && nx.id !== firstA2.id && nx.id !== 'ch001', 'after reading one, the next chapter follows (' + (nx && nx.id) + ')');
+  // an A1 learner is unchanged
+  store = {}; window.Profile.set('A1'); S = reload();
+  ok(S.nextChapterEntry().id === 'ch001', 'an A1 learner still starts at chapter 1');
+  KNOWN = null;
+}
+
 console.log('\n' + (n - fails) + '/' + n + ' passed');
 process.exit(fails ? 1 : 0);

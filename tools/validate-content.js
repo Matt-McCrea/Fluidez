@@ -428,6 +428,30 @@ function checkProbes(l, tag) {
          `${tag}: last day is "${lastId || '(not a lesson)'}", which is not a task lesson`);
     }
   });
+  /* The loader can resolve every course day's lesson for a learner of that day's band. A learner has the bands up to
+   * their own on the page (js/bands-boot.js); a lesson that lives in a higher band's file (ten A1 days carry -a2 ids)
+   * is fetched by Lessons.ensureLesson before the day is built (js/session.js withLesson). So the id must be in the
+   * index map, name a real band, and that band's file must exist; a lesson in a lower or equal band is already there. */
+  (function () {
+    const BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    try { load('data/lessons/index.js'); } catch (e) { ok(false, 'course loader: data/lessons/index.js does not load'); return; }
+    const ids = (window.LESSONS_INDEX && window.LESSONS_INDEX.ids) || {};
+    const coreIds = new Set((window.ALL_LESSONS || lessons).map(l => l.id));
+    const L = window.Lessons;
+    let viaLoader = 0;
+    course.forEach((d, i) => {
+      if (!d.lesson) return;
+      const b = L && L.bandOf ? L.bandOf(d.lesson) : ids[d.lesson];
+      if (!b && coreIds.has(d.lesson)) return;      // a core tense lesson: on the page for every learner, in no band file
+      const dayBand = BANDS.indexOf(d.band);
+      ok(b && BANDS.indexOf(b) !== -1, `course day ${i} (${d.band}): lesson "${d.lesson}" is in no band file, so the loader cannot resolve it`);
+      if (!b || BANDS.indexOf(b) === -1) return;
+      ok(fs.existsSync(path.join(__dirname, '..', 'data', 'lessons', b.toLowerCase() + '.js')),
+         `course day ${i}: lesson "${d.lesson}" lives in data/lessons/${b.toLowerCase()}.js, which does not exist`);
+      if (BANDS.indexOf(b) > dayBand) viaLoader++;
+    });
+    console.log(`  course loader: ${viaLoader} course days reach a lesson in a higher band's file through Lessons.ensureLesson`);
+  })();
   // Every day COURSE_DAYS produced must know which band it is in.
   course.forEach((d, i) => ok(!!d.band, `course day ${i}: no band — is there a band marker before it?`));
   /* Check against every lesson that EXISTS, not against GRAMMAR_LESSONS —

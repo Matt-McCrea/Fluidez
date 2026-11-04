@@ -111,6 +111,30 @@ window.Library = (function () {
     return Math.round(100 * n / lemmas.length);
   }
 
+  /* A chapter's known share the way the session computes it (known lemmas, the
+   * chapter's own gloss words, the small words): Session.chapterCoverage. */
+  function chapterShare(ch, test) {
+    var set = { has: function (k) { return test(String(k).replace(/^l:/, '')); } };
+    if (window.Session && window.Session.chapterCoverage) return Math.round(100 * window.Session.chapterCoverage(ch, set));
+    return share(ch.lemmas, withOwnGloss(ch, test));
+  }
+  /* The first chapter the learner has not read, in the order the serial serves it. */
+  function nextUnreadIndex() {
+    var idx = window.STORY_INDEX || [], e = null;
+    if (window.Session && window.Session.nextChapterEntry) e = window.Session.nextChapterEntry();
+    else { var cr = loadProg().chaptersRead || {}; e = idx.filter(function (c) { return !cr[c.id]; })[0] || null; }
+    if (!e) return -1;
+    for (var i = 0; i < idx.length; i++) if (idx[i].id === e.id) return i;
+    return -1;
+  }
+  /* "u03" in the story index is the third unit of the course: COURSE_UNITS keys it as "a1-u03". */
+  function unitTitle(id) {
+    var U = window.COURSE_UNITS || {}, m = /^u(\d+)$/.exec(String(id));
+    if (!m) return id;
+    var k = Object.keys(U).filter(function (x) { return new RegExp('-u' + m[1] + '$').test(x); })[0];
+    return (k && U[k].title) || ('Unit ' + parseInt(m[1], 10));
+  }
+
   /* ---- the rows ----------------------------------------------------------- */
   function items(kind, test) {
     var band = learnerBand(), prog = loadProg(), out = [];
@@ -122,19 +146,22 @@ window.Library = (function () {
                    theme: p.theme, known: share(passageLemmas(p), withOwnGloss(p, test)), read: !!read[p.id], src: p });
       });
     } else {
-      var cr = prog.chaptersRead || {};
-      (window.STORY_INDEX || []).forEach(function (c) {
-        var ch = chapterCache[c.id];
-        out.push({ kind: 'chapter', id: c.id, title: c.title, band: c.band, words: c.words, unit: c.unit,
-                   known: ch ? share(ch.lemmas, test) : null, read: !!cr[c.id], src: c });
+      var cr = prog.chaptersRead || {}, nx = nextUnreadIndex();
+      (window.STORY_INDEX || []).forEach(function (c, n) {
+        var ch = chapterCache[c.id], isRead = !!cr[c.id];
+        // beyond the next unread chapter: listed, locked, so the plot is not given away
+        var locked = nx >= 0 && n > nx && !isRead;
+        out.push({ kind: 'chapter', id: c.id, title: c.title, band: c.band, words: c.words, unit: c.unit, order: n,
+                   known: ch && !locked ? chapterShare(ch, test) : null, read: isRead, locked: locked, src: c });
       });
     }
     out.forEach(function (it) {
-      it.harder = rank(it.band) > rank(band) || (it.known != null && it.known < HARDER_BELOW);
+      it.harder = !it.locked && (rank(it.band) > rank(band) || (it.known != null && it.known < HARDER_BELOW));
       it.mine = it.band === band;
     });
-    // learner's band first, then the highest known share
+    // learner's band first, then the highest known share; the serial keeps its own order
     out.sort(function (a, b) {
+      if (kind === 'chapters') return (a.locked - b.locked) || (a.order - b.order);
       return (b.mine - a.mine) || ((b.known == null ? -1 : b.known) - (a.known == null ? -1 : a.known));
     });
     return out;
@@ -225,7 +252,7 @@ window.Library = (function () {
     var cur = state.kind === 'passages' ? state.theme : state.unit;
     sel.appendChild(new Option(state.kind === 'passages' ? 'All themes' : 'All units', ''));
     opts.forEach(function (o) {
-      var op = new Option(themeName(o), o); if (o === cur) op.selected = true; sel.appendChild(op);
+      var op = new Option(optName(o), o); if (o === cur) op.selected = true; sel.appendChild(op);
     });
     sel.addEventListener('change', function () {
       if (state.kind === 'passages') state.theme = sel.value; else state.unit = sel.value;
@@ -246,6 +273,7 @@ window.Library = (function () {
       var t = (window.THEMES || []).filter(function (x) { return x.id === id; })[0];
       return t ? t.en : id;
     }
+    function optName(o) { return state.kind === 'passages' ? themeName(o) : unitTitle(o); }
 
     function fill() {
       UI.clear(listHost);
@@ -307,7 +335,13 @@ window.Library = (function () {
   }
 
   function row(it, host) {
-    var b = UI.el('button', 'lib-row' + (it.harder ? ' harder' : '')); b.type = 'button';
+    var b = UI.el('button', 'lib-row' + (it.harder ? ' harder' : '') + (it.locked ? ' locked' : '')); b.type = 'button';
+    if (it.locked) {
+      b.disabled = true; b.setAttribute('aria-disabled', 'true');
+      b.appendChild(UI.el('span', 'lib-title', escapeHtml(it.title)));
+      b.appendChild(UI.el('span', 'lib-meta muted small', it.band + ' · ' + it.words + ' words · Read the earlier chapters first'));
+      return b;
+    }
     var meta = it.band + ' · ' + it.words + ' words · ' + (it.known == null ? 'open to count' : it.known + '% known');
     b.appendChild(UI.el('span', 'lib-title', escapeHtml(it.title) + (it.read ? ' <span class="lib-read">read</span>' : '') +
       (it.harder ? ' <span class="lib-harder">harder</span>' : '')));
@@ -370,5 +404,5 @@ window.Library = (function () {
     C.run(cont, { passage: pseudo, results: {} }, next);
   }
 
-  return { render: render, knownShare: share, passageLemmas: passageLemmas, knownTest: knownTest, bandOfLevel: bandOfLevel };
+  return { render: render, knownShare: share, passageLemmas: passageLemmas, knownTest: knownTest, unitTitle: unitTitle, bandOfLevel: bandOfLevel };
 })();

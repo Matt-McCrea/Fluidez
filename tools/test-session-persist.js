@@ -147,5 +147,44 @@ let worst = 0;
 for (let i = 0; i < 40; i++) { S.start('larga'); worst = Math.max(worst, maxRun(live.ctx.applyItems.map(x => ({ t: x.type }))), maxRun(live.ctx.writeTasks.map(x => ({ t: x.type })))); }
 ok(worst <= 4, 'long sessions: longest run of one shape is ' + worst);
 
+/* ---- 10. a lesson that lives in a band file the learner has not loaded ---------
+ * Ten A1 course days carry lessons from data/lessons/a2.js. With only the A1 file loaded and a stub
+ * loader standing in for Lessons.ensureLesson, the day must be built WITH its lesson; when the loader
+ * fails, the day runs as a practice day and says so in ctx.gaps. */
+{
+  const saved = { SL: window.STRAND_LESSONS, L: window.Lessons, GL: window.GRAMMAR_LESSONS, AL: window.ALL_LESSONS };
+  delete window.STRAND_LESSONS; delete window.STRAND_LESSONS_A1; delete window.STRAND_LESSONS_A2;
+  ['data/lessons/index.js', 'data/lessons/a1.js', 'js/lessons.js'].forEach(f => (0, eval)(fs.readFileSync(path.join(ROOT, f), 'utf8')));
+  let real = window.Lessons;
+  const dayz = window.COURSE_DAYS, ixs = [];
+  dayz.forEach((d, i) => { if (d.band === 'A1' && d.lesson && window.LESSONS_INDEX.ids[d.lesson] === 'A2') ixs.push(i); });
+  ok(ixs.length === 10, 'ten A1 course days carry A2 lessons (' + ixs.length + ')');
+  const probe = ixs[0];
+  ok(!!probe && !real.bandOf || real.bandOf(dayz[probe].lesson) === 'A2', 'bandOf answers from the index map (' + dayz[probe].lesson + ' is A2)');
+  const have = id => (window.GRAMMAR_LESSONS || []).some(l => l.id === id);
+  ok(!have(dayz[probe].lesson), 'with only the A1 file loaded the A2 lesson is absent');
+  window.Profile.set('A1');
+  let loaded = false;
+  const stub = good => Object.assign({}, real, { ensureLesson: (id, cb) => {
+    if (good && !loaded) { loaded = true; (0, eval)(fs.readFileSync(path.join(ROOT, 'data/lessons/a2.js'), 'utf8')); real.rebuild(); }
+    cb(good);
+  } });
+  let allIn = true;
+  ixs.forEach(i => {
+    store = {}; loaded = false; window.Lessons = stub(true);
+    reload(); live = null; window.Session.startAt(i, 'diaria');
+    if (!(live && live.ctx.lesson && live.ctx.lesson.id === dayz[i].lesson)) { allIn = false; console.log('   day ' + i + ' ' + dayz[i].lesson + ' has no lesson'); }
+  });
+  ok(allIn, 'every one of the ten days builds with its lesson once the stub loader has fetched the band');
+  // the loader failing (offline): a practice day with a note, and the miss logged
+  delete window.STRAND_LESSONS_A2; delete window.STRAND_LESSONS;
+  (0, eval)(fs.readFileSync(path.join(ROOT, 'js/lessons.js'), 'utf8')); real = window.Lessons;     // a fresh loader that has only A1
+  store = {}; window.Lessons = stub(false);
+  reload(); live = null; window.Session.startAt(probe, 'diaria');
+  ok(live && !live.ctx.lesson && live.ctx.focus.type === 'practice' && !!live.ctx.focus.note, 'loader failure: the day runs as a practice day with a one-line note');
+  ok(live && live.ctx.gaps.some(g => g.kind === 'lesson-unloaded'), 'loader failure: ctx.gaps carries {kind:"lesson-unloaded"}');
+  window.Lessons = saved.L;
+}
+
 console.log('\n' + (n - fails) + '/' + n + ' passed');
 process.exit(fails ? 1 : 0);

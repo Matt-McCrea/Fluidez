@@ -161,10 +161,14 @@ const last = new Map(); let repeats = 0, recorded = 0, served = 0, ap14 = 0, apS
 const studied = {};
 const BASE = 200000, WALK = Math.min(61, bands['A2'] || 61);
 const lastGaps = [];
+let longestRun = 0, longestAt = '';
+const shapeKey = x => ((x && x.type) || '?') + ((x && x.bankKind) ? ':' + x.bankKind : '');
+function runOf(list, t, stage, gp) { let r = 0, prev = null; list.forEach(x => { const k = shapeKey(x); r = k === prev ? r + 1 : 1; prev = k; if (r > longestRun) { if (process.env.DBG) console.log('RUN', t, stage, list.map(shapeKey).join(' | '), JSON.stringify(gp).slice(0, 400)); longestRun = r; longestAt = 'day ' + t + ' ' + stage + ' ' + k; } }); }
 for (let t = 0; t < WALK; t++) {
   store['fluidez.progress'] = JSON.stringify({ studied, courseSig: null });
   const over = { di: t }; if (lessonIds[t]) over.lessonId = lessonIds[t];
   const ctx = S._build({ seed: t, over, today: BASE + t });
+  runOf(ctx.applyItems, t, 'apply', ctx.gaps); runOf(ctx.writeTasks, t, 'produce', ctx.gaps);
   const covered = new Set();
   ctx.gaps.forEach(g => { if (g.keys) g.keys.forEach(k => covered.add(k)); });
   const keys = ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey), ctx.passage ? [pKey(ctx.passage)] : []);
@@ -181,6 +185,8 @@ console.log('  gaps logged: ' + (lastGaps.length ? lastGaps.slice(0, 25).join(' 
 const rate = 100 * ap14 / Math.max(1, apServed);
 console.log(`  Apply + Produce items served ${apServed}, repeated within 14 days (authored and bank, recorded or not): ${ap14} (${rate.toFixed(1)}%)`);
 ok(!BANK_ON || rate < 5, 'Apply and Produce repeats within 14 days stay under 5% (' + rate.toFixed(1) + '%)');
+console.log('  longest run of one shape: ' + longestRun + ' (' + longestAt + ')');
+ok(longestRun <= 4, 'no run of one shape (type plus bank kind) longer than 4 over the A1 walk (' + longestRun + ')');
 ok(repeats === 0, 'no item key repeats within a 14 day window (A1 days 0-' + (WALK - 1) + ') except recorded gaps');
 
 console.log('\n' + (fails ? fails + ' FAILED' : 'all ok'));

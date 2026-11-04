@@ -272,7 +272,12 @@ window.Session = (function () {
    * forward; everything else keeps its order. If nothing else is left the run
    * stays (a stage of six cloze items has no other shape to rotate to). */
   var MAX_RUN = 4;
-  function shapeOf(x) { return (x && x.type) || '?'; }
+  /* Bank items share a type (read, gap and match are all 'choice'), so the
+   * shape is the type plus the bank kind. */
+  function shapeOf(x) { return ((x && x.type) || '?') + ((x && x.bankKind) ? ':' + x.bankKind : ''); }
+  /* Can breakRuns still keep every run to MAX_RUN? A shape with c of n items can, as long as the other
+   * n - c items can split it: c <= MAX_RUN * (n - c + 1). */
+  function shapeFits(count, n) { return count <= MAX_RUN * (n - count + 1); }
   function breakRuns(items, shape, max) {
     var rest = (items || []).slice(), out = [];
     while (rest.length) {
@@ -283,6 +288,27 @@ window.Session = (function () {
         for (var j = 0; j < rest.length; j++) if (shape(rest[j]) !== last) { at = j; break; }
       }
       out.push(rest.splice(at, 1)[0]);
+    }
+    /* The greedy pass cannot plan ahead: [x, c, c, c, c, c] ends in a run of five. Move an item of another
+     * shape into the long run when that lowers the total excess. */
+    function excess(list) {
+      var tot = 0, run = 0, prev = null;
+      list.forEach(function (x) { var k = shape(x); run = k === prev ? run + 1 : 1; prev = k; if (run > max) tot++; });
+      return tot;
+    }
+    for (var guard = 0; guard < out.length && excess(out) > 0; guard++) {
+      var best = null, bestEx = excess(out);
+      for (var from = 0; from < out.length; from++) {
+        for (var to = 0; to < out.length; to++) {
+          if (to === from) continue;
+          var cand = out.slice(), mv = cand.splice(from, 1)[0];
+          cand.splice(to, 0, mv);
+          var ex = excess(cand);
+          if (ex < bestEx) { bestEx = ex; best = cand; }
+        }
+      }
+      if (!best) break;
+      out = best;
     }
     return out;
   }
@@ -425,10 +451,18 @@ window.Session = (function () {
     var f = pickFocus(over, true);
     var day = f.day, pr = f.pr, studied = f.studied;
     var focus = f.focus, lesson = f.lesson, level = f.level, dayIndex = f.dayIndex;
+    /* A grammar day whose lesson file never loaded (offline on a first run, or
+     * a band the loader could not fetch) used to build a day with no lesson at
+     * all. It runs as a practice day instead, with a one-line note, and the
+     * miss is logged. */
+    var gaps = [];
+    if (focus && focus.type === 'grammar' && !lesson && focus.id) {
+      gaps.push({ kind: 'lesson-unloaded', lesson: focus.id });
+      focus = Object.assign({}, focus, { type: 'practice', note: T('La lección de hoy no se pudo cargar, así que hoy es un día de práctica.', 'Today\'s lesson could not load, so today is a practice day.') });
+    }
 
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
-    var gaps = [];
     var Kn = window.Known;
     var gating = !!(Kn && window.REQUIRES && window.GRAPH && !pr.unlockAll);
     var gi = dayIndex != null ? dayIndex : -1;
@@ -828,7 +862,7 @@ window.Session = (function () {
                         match: function (r) { return BI.matchSentence(r, rng); } };
           for (var slot = 0; slot < need; slot++) {
             /* the preferred kind first (two slots of three on a lesson day), the others as fallbacks */
-            var first = slot % 3 === 2 ? order[1] : order[0], kinds = [first].concat(order.filter(function (k) { return k !== first; }));
+            var first = slot % 3 === 2 ? order[1] : order[slot % 3 === 1 && slot > 3 ? 2 : 0], kinds = [first].concat(order.filter(function (k) { return k !== first; }));
             var item = null;
             for (var ki = 0; ki < kinds.length && !item; ki++) {
               for (var ri = 0, seen2 = 0; ri < pool.length && seen2 < 250 && !item; ri++) {
@@ -841,9 +875,46 @@ window.Session = (function () {
             if (!item) { gaps.push({ kind: 'bank-empty', stage: 'apply' }); break; }
             bankApply.push(item);
           }
+          var uRows = null;
+          var wider = function () {
+            if (uRows === null) {
+              uRows = [];
+              if (focus.unit) {
+                var un = Kn.todayNodes({ type: 'practice', unit: focus.unit }, gi);
+                uRows = BI.forNodes(un, known, { band: band, recent: recent });
+              }
+            }
+            return uRows.filter(function (r) { return !used[r.id]; });
+          };
+          /* A small pool can only make one kind (the sentence match). No shape may exceed MAX_RUN in the half:
+           * the extras are re-made as another kind from the unit's wider rows, else swapped for an authored pick. */
+          if (bankApply.length) {
+            var shapeCount = {}, authoredKeep = applyPicks.filter(isHit), authoredDrop = applyPicks.filter(function (x) { return !isHit(x); });
+            authoredKeep.concat(bankApply).forEach(function (x) { shapeCount[shapeOf(x)] = (shapeCount[shapeOf(x)] || 0) + 1; });
+            for (var bj = bankApply.length - 1; bj >= 0; bj--) {
+              var sh = shapeOf(bankApply[bj]);
+              if (shapeFits(shapeCount[sh], applyN)) continue;
+              var alt = null, others = order.filter(function (k) { return k !== bankApply[bj].bankKind; });
+              for (var oi = 0; oi < others.length && !alt; oi++) {
+                var srcs2 = [pool, wider()];
+                for (var si2 = 0; si2 < srcs2.length && !alt; si2++) {
+                  for (var rj = 0, n3 = 0; rj < srcs2[si2].length && n3 < 250 && !alt; rj++) {
+                    if (used[srcs2[si2][rj].id]) continue;
+                    n3++;
+                    alt = maker[others[oi]](srcs2[si2][rj]);
+                    if (alt) used[srcs2[si2][rj].id] = 1;
+                  }
+                }
+              }
+              if (!alt) {
+                for (var dj = 0; dj < authoredDrop.length && !alt; dj++) if (shapeOf(authoredDrop[dj]) !== sh) alt = authoredDrop.splice(dj, 1)[0];
+              }
+              if (alt) { shapeCount[sh]--; shapeCount[shapeOf(alt)] = (shapeCount[shapeOf(alt)] || 0) + 1; bankApply[bj] = alt; gaps.push({ kind: 'bank-shape-mix', stage: 'apply' }); }
+            }
+          }
           if (bankApply.length) {
             // bank items replace authored picks that do not target today
-            var keep = applyPicks.filter(isHit), drop = applyPicks.filter(function (x) { return !isHit(x); });
+            var keep = applyPicks.filter(isHit), drop = applyPicks.filter(function (x) { return !isHit(x) && bankApply.indexOf(x) < 0; });
             applyPicks = keep.concat(bankApply, drop.slice(0, Math.max(0, applyN - keep.length - bankApply.length)));
           }
 
@@ -852,25 +923,23 @@ window.Session = (function () {
           var reusedA = applyPicks.filter(function (x) { return reused.has(x); });
           var reusedP = produce.filter(function (t) { return reused.has(t); });
           if (reusedA.length || reusedP.length) {
-            var uRows = null, swapped = { apply: 0, produce: 0 };
-            var wider = function () {
-              if (uRows === null) {
-                uRows = [];
-                if (focus.unit) {
-                  var un = Kn.todayNodes({ type: 'practice', unit: focus.unit }, gi);
-                  uRows = BI.forNodes(un, known, { band: band, recent: recent });
-                }
-              }
-              return uRows.filter(function (r) { return !used[r.id]; });
-            };
+            var swapped = { apply: 0, produce: 0 };
+            /* a mix of kinds in rotation, not the preferred kind every time, so the top-up does not build a run of one shape */
+            var rot = bankApply.length;
             reusedA.forEach(function (old) {
               var item = null, srcs = [pool, wider()];
-              for (var si = 0; si < srcs.length && !item; si++) {
-                for (var ki = 0; ki < order.length && !item; ki++) {
+              rot++;
+              /* kinds the half has least of first (ties in rotation), each kind tried on every source before the next */
+              var tally2 = {}; applyPicks.forEach(function (x) { tally2[shapeOf(x)] = (tally2[shapeOf(x)] || 0) + 1; });
+              var ranked = order.map(function (k, n) { return { k: k, n: n, c: tally2[(k === 'cloze' ? 'cloze:cloze' : 'choice:' + k)] || 0 }; })
+                .sort(function (a, b) { return (a.c - b.c) || (((a.n + rot) % order.length) - ((b.n + rot) % order.length)); });
+              for (var ki = 0; ki < ranked.length && !item; ki++) {
+                for (var si = 0; si < srcs.length && !item; si++) {
                   for (var ri = 0, n2 = 0; ri < srcs[si].length && n2 < 250 && !item; ri++) {
                     if (used[srcs[si][ri].id]) continue;
                     n2++;
-                    item = maker[order[ki]](srcs[si][ri]);
+                    item = maker[ranked[ki].k](srcs[si][ri]);
+                    if (item && !shapeFits((tally2[shapeOf(item)] || 0) + 1, applyPicks.length)) item = null;   // would make a run past the cap: keep the reused pick
                     if (item) used[srcs[si][ri].id] = 1;
                   }
                 }
@@ -903,6 +972,25 @@ window.Session = (function () {
         produce = [aw].concat(produce.filter(function (t) { return t.id !== focus.write; }));
       }
     }
+
+    /* An Apply half that is all one shape (an authored pool with only cloze for a day): swap the extras for
+     * unseen items of another shape from the same gated pool. */
+    (function () {
+      var cnt = {};
+      applyPicks.forEach(function (x) { cnt[shapeOf(x)] = (cnt[shapeOf(x)] || 0) + 1; });
+      for (var pi = applyPicks.length - 1; pi >= 0; pi--) {
+        var sh = shapeOf(applyPicks[pi]);
+        if (shapeFits(cnt[sh], applyPicks.length)) continue;
+        var okAlt = function (x) { return applyPicks.indexOf(x) < 0 && shapeOf(x) !== sh && shapeFits((cnt[shapeOf(x)] || 0) + 1, applyPicks.length); };
+        var alt = sample(apply.filter(function (x) { return okAlt(x) && !recent(applyKey(x)); }), 1, rng)[0];
+        if (!alt) {      // nothing unseen of another shape: a repeat is better than six of a kind, and is logged
+          alt = apply.filter(function (x) { return okAlt(x) && recent(applyKey(x)); })
+            .sort(function (a, b) { return seen[applyKey(a)] - seen[applyKey(b)]; })[0];
+          if (alt) { reused.add(alt); gaps.push({ kind: 'reuse', stage: 'apply', keys: [applyKey(alt)] }); }
+        }
+        if (alt) { cnt[sh]--; cnt[shapeOf(alt)] = (cnt[shapeOf(alt)] || 0) + 1; applyPicks[pi] = alt; }
+      }
+    })();
 
     var built = {
       day: day,
@@ -1047,7 +1135,37 @@ window.Session = (function () {
   // The first chapter (in serial order) not yet fully read, and how many parts of it are done.
   function nextChapterEntry(prog) {
     var cr = (prog && prog.chaptersRead) || {};
-    return storyEntries().filter(function (e) { return !cr[e.id]; })[0] || null;
+    var all = storyEntries(), unread = all.filter(function (e) { return !cr[e.id]; });
+    /* A placed learner starts in their own band, not at chapter 1 of the A1
+     * story: when nothing below their band has been read, the serial begins at
+     * the band's first chapter. A learner who walked up from A1 keeps the serial's order. */
+    var b = learnerBand();
+    if (b && b !== 'A1') {
+      var first = -1;
+      for (var q = 0; q < all.length; q++) if (all[q].band === b) { first = q; break; }
+      var readBelow = first > 0 && all.slice(0, first).some(function (e) { return cr[e.id]; });
+      if (first > 0 && !readBelow) {
+        var mine = unread.filter(function (e) { return all.indexOf(e) >= first; })[0];
+        if (mine) return mine;
+      }
+    }
+    return unread[0] || null;
+  }
+  function learnerBand() {
+    var pr = window.Profile && window.Profile.params ? window.Profile.params() : null;
+    return (pr && pr.cefr) || (window.Profile && window.Profile.current && window.Profile.current()) || null;
+  }
+  /* "The story so far" for a reader who joins mid-serial: the chapter's own
+   * recap when it has one, else a fixed line naming the cast. */
+  var STORY_SO_FAR = {
+    es: 'La historia hasta ahora: Tomás ha llegado a Bogotá, al café de su difunta abuela Rosa, donde lo esperan Vale, don Hernando y Simón, el loro.',
+    en: 'The story so far: Tomás has come to Bogotá to his late grandmother Rosa\'s café, where Vale, Don Hernando and Simón the parrot are waiting.'
+  };
+  function recapFor(ch, prog) {
+    var cr = (prog && prog.chaptersRead) || {};
+    if (Object.keys(cr).length || !ch || (ch.n || 1) <= 1 && ch.band === 'A1') return null;
+    var own = ch.recap || (ch.parts && ch.parts[0] && ch.parts[0].recap);
+    return own || T(STORY_SO_FAR.es, STORY_SO_FAR.en);
   }
   // A chapter read 14 to 21 days ago, else a passage read then: the five-minute day's fallback beat.
   function rereadCandidate(prog, day) {
@@ -1148,7 +1266,11 @@ window.Session = (function () {
     var servedToday = prog.chapterDay === c.day;       // one part per reading day
     if (wantChapter && (pin || !servedToday)) {
       var b = chapterBeat(prog, known, pin, c.gaps);
-      if (b) { c.chapter = { id: b.ch.id, ch: b.ch, part: b.part, coverage: b.cov }; }
+      if (b) {
+        c.chapter = { id: b.ch.id, ch: b.ch, part: b.part, coverage: b.cov };
+        var rc = b.part === 0 ? recapFor(b.ch, prog) : null;
+        if (rc) c.chapter.recapLine = rc;      // shown before the chapter's first part
+      }
     }
     if (mode === 'rapido' && !c.chapter && (!snapped || pin)) {
       var rr = pin && over.rereadId ? { kind: over.rereadKind, id: over.rereadId } : rereadCandidate(prog, c.day);
@@ -1246,8 +1368,12 @@ window.Session = (function () {
    * apply · write" every single day — the same words whatever the day held.
    * Everything needed to say something true was already computed one screen
    * later, on an intro card the learner had to commit to a session to see. */
+  var homeAsked = {};
   function today() {
     var f = pickFocus();
+    /* Home asks synchronously; a lesson in a band not loaded yet is fetched in
+     * the background; the card shows the title on its next draw. */
+    if (f.focus && f.focus.type === 'grammar' && f.focus.id && !f.lesson && window.Lessons && window.Lessons.ensureLesson && !homeAsked[f.focus.id]) { homeAsked[f.focus.id] = 1; window.Lessons.ensureLesson(f.focus.id); }
     var c = { focus: f.focus, lesson: f.lesson, dayIndex: f.dayIndex, passage: null };
     return {
       unit: unitLabel(c),
@@ -1737,11 +1863,19 @@ window.Session = (function () {
     if (!BI || !b || BI.ready(b)) { fn(); return; }
     BI.load(b, function () { fn(); });
   }
+  /* The day's lesson may live in a band file this learner has not loaded (ten
+   * A1 course days carry A2 lessons). Fetch it before the day is built; if it
+   * cannot load, buildContext shows a practice day and logs lesson-unloaded. */
+  function withLesson(over, fn) {
+    var f = pickFocus(over, true), L = window.Lessons;
+    if (f.focus && f.focus.type === 'grammar' && f.focus.id && !f.lesson && L && L.ensureLesson) L.ensureLesson(f.focus.id, function () { fn(); });
+    else fn();
+  }
   function begin(m, over, repeat) {
     if (m && MODES[m]) mode = m;
     host = document.getElementById('stage-host');
     bar = document.getElementById('session-progress-fill');
-    withBank(function () { withReading(over, function () {
+    withLesson(over, function () { withBank(function () { withReading(over, function () {
       var seed = Math.floor(Math.random() * 1e9);
       ctx = buildContext({ seed: seed, over: over, repeat: repeat });
       ctx.snap = makeSnap(ctx);
@@ -1750,7 +1884,7 @@ window.Session = (function () {
       idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
       persist();
       runStage();
-    }); });
+    }); }); });
   }
   function start(m) { begin(m, null, false); }
 
@@ -1769,11 +1903,11 @@ window.Session = (function () {
     var rec = pending();
     if (!rec) { dropRec(SKEY); idx = -1; ctx = null; start(); return; }
     mode = rec.mode;
-    withBank(function () { withReading(rec.snap, function () {
+    withLesson(rec.snap, function () { withBank(function () { withReading(rec.snap, function () {
       if (restore(rec)) { runStage(); return; }
       dropRec(SKEY); idx = -1; ctx = null;
       start();
-    }); });
+    }); }); });
   }
 
   pending();   // on load: a record from a previous day is discarded here
@@ -1795,6 +1929,8 @@ window.Session = (function () {
     startAt: startAt,
     pending: pending,
     breakRuns: breakRuns,
+    chapterCoverage: chapterCoverage,
+    nextChapterEntry: function () { return nextChapterEntry(loadProg()); },
     hasSavedSession: function () { return !!pending(); },
     minutesIn: minutesIn,
     isActive: function () { return (!!ctx && idx >= 0 && idx < stages().length) || !!pending(); },
