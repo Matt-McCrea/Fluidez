@@ -686,3 +686,20 @@
 }
 @keyframes liga-in { from { transform: translateY(12px); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .liga-toast { animation: none; } }
+
+/* Relámpago: a type box and a pass link under the four options, and a tile
+   that is shown but cannot be started yet. */
+.g-rl-hint { color: var(--muted); font-size: .9rem; margin: 2px 0 12px; min-height: 1.2em; }
+.g-rl-type {
+  width: 100%; box-sizing: border-box; margin-top: 12px; padding: 11px 13px; font-size: 1rem;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--panel); color: inherit;
+}
+.g-rl-type:focus { outline: none; border-color: var(--game); }
+.g-rl-pass {
+  display: block; margin: 16px auto 0; border: none; background: none; color: var(--muted);
+  font-size: .95rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+}
+.g-rl-pass:disabled { opacity: .5; }
+.g-tile.g-tile-off { opacity: .6; cursor: default; }
+.g-tile.g-tile-off:hover { border-color: var(--border); transform: none; }
+.g-tile-note { margin-top: 8px; font-size: .78rem; color: var(--muted); line-height: 1.3; }

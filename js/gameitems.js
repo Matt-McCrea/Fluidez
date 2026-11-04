@@ -1312,11 +1312,110 @@ window.GameItems = (function () {
     return null;
   }
 
+
+  /* ===========================================================================
+   * RELAMPAGO: things the learner already owns.
+   *
+   * A speed round is exposure only. It reads fluidez.srs and never writes it,
+   * and it never calls SRS.grade or marks anything seen. A card is OWNED when
+   * it has at least one right answer and a stability over seven days, or when
+   * FSRS puts its retrievability above 0.9 right now. Two kinds of card
+   * resolve to something the round can ask: vt:<inf>:<tense> (a verb in a
+   * tense, the person is picked per question) and v:<es>:meaning (a word).
+   * ========================================================================= */
+  var OWN_MIN = 20;
+  function srsStore() {
+    try { return JSON.parse(localStorage.getItem('fluidez.srs')) || {}; } catch (e) { return {}; }
+  }
+  function ownedCard(c, now) {
+    if (!c || typeof c !== 'object' || !(c.reps > 0)) return false;
+    var F = window.LIB && window.LIB.fsrs, fs = c.fs;
+    if (c.passed && fs && fs.stability > 7) return true;
+    if (F && fs && F.retrievability) {
+      try { return F.retrievability(fs, now) > 0.9; } catch (e) {}
+    }
+    return false;
+  }
+  function wordKind(es) {
+    if (/^(el|la|los|las|un|una)\s/i.test(es)) return 'n';
+    if (/^[^\s]+(ar|er|ir)(se)?$/i.test(es)) return 'v';
+    return 'o';
+  }
+  function owned() {
+    var store = srsStore(), now = Date.now(), out = { verbs: [], words: [] };
+    var byEs = null;
+    Object.keys(store).forEach(function (id) {
+      if (!ownedCard(store[id], now)) return;
+      var m = /^vt:([^:]+):([^:]+)$/.exec(id);
+      if (m) {
+        var v = E.verbByInf(m[1]);
+        if (v && E.personsFor(m[2]).length && E.conjugate(v, m[2])) out.verbs.push({ v: v, tense: m[2] });
+        return;
+      }
+      m = /^v:(.+):meaning$/.exec(id);
+      if (!m) return;
+      if (!byEs) {
+        byEs = {};
+        var vb = index().vocab;
+        BANDS.forEach(function (b) { (vb[b] || []).forEach(function (w) { if (w && w.es && w.en && !byEs[w.es]) byEs[w.es] = w; }); });
+      }
+      var wd = byEs[m[1]];
+      if (wd && !/[\[\]*()\/]/.test(wd.es)) out.words.push({ es: wd.es, en: wd.en, kind: wordKind(wd.es) });
+    });
+    out.count = out.verbs.length + out.words.length;
+    return out;
+  }
+  function formOptions(v, tk, pi, right) {
+    var others = [];
+    function add(f) { if (f && f !== right && others.indexOf(f) === -1) others.push(f); }
+    var persons = E.personsFor(tk), forms = E.conjugate(v, tk);
+    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (i !== pi && others.length < 2) add(forms[i]); });
+    var allowed = window.Profile ? window.Profile.tenses() : [];
+    E.shuffle((allowed.length ? allowed : ['presente', 'preterito', 'imperfecto', 'futuro'])).forEach(function (t) {
+      if (t === tk || others.length >= 3) return;
+      var ps = E.personsFor(t), pj = ps.indexOf(persons[pi]);
+      add(pj >= 0 ? (E.conjugate(v, t) || [])[pj] : null);
+    });
+    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (others.length < 3) add(forms[i]); });
+    return others.length >= 3 ? E.shuffle([right].concat(others.slice(0, 3))) : null;
+  }
+  /* One question from an owned() pool; `used` is the round's own list of keys
+   * so nothing repeats. Returns null when nothing more can be dealt. */
+  function relampagoItem(pool, used, rng) {
+    for (var tries = 0; tries < 40; tries++) {
+      var wantVerb = pool.verbs.length && (!pool.words.length || rnd(rng) < 0.5);
+      if (wantVerb) {
+        var o = pick(pool.verbs, rng), persons = E.personsFor(o.tense);
+        var pi = Math.floor(rnd(rng) * persons.length), right = E.conjugate(o.v, o.tense)[pi];
+        var key = 'f:' + o.v.inf + ':' + o.tense + ':' + pi;
+        if (!right || used[key]) continue;
+        var opts = formOptions(o.v, o.tense, pi, right);
+        if (!opts) continue;
+        used[key] = 1;
+        return { kind: 'form', key: key, prompt: conjPrompt(o.v, o.tense, pi), hint: o.v.inf,
+                 answer: right, options: opts, typeable: true };
+      }
+      if (!pool.words.length) continue;
+      var w = pick(pool.words, rng), wkey = 'w:' + w.es;
+      if (used[wkey]) continue;
+      var same = pool.words.filter(function (x) { return x.es !== w.es && x.kind === w.kind; });
+      if (same.length < 3) same = pool.words.filter(function (x) { return x.es !== w.es; });
+      var wrong = [];
+      E.shuffle(same.slice()).forEach(function (x) { if (wrong.length < 3 && wrong.indexOf(x.es) === -1) wrong.push(x.es); });
+      if (wrong.length < 3) continue;
+      used[wkey] = 1;
+      return { kind: 'word', key: wkey, prompt: w.en, hint: null, answer: w.es,
+               options: E.shuffle([w.es].concat(wrong)), typeable: false };
+    }
+    return null;
+  }
+
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
     setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, missDeck: missDeck,
     conjPrompt: conjPrompt,
     listenRate: listenRate, bandForLevel: bandForLevel,
-    enKey: enKey, altsFor: altsFor
+    enKey: enKey, altsFor: altsFor,
+    owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN
   };
 })();

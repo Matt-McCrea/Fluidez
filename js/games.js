@@ -176,7 +176,15 @@ window.Games = (function () {
      * which is the whole distinction being taught. */
     { key: 'unouotro', name: 'Uno u otro', rule: 'ser o estar, por o para', icon: '⚔️',
       hue: '#3f8f7a', secs: 60, kind: 'contrast',
-      blurb: 'Una frase, una palabra fuera, dos candidatas. Las dos son español correcto.' }
+      blurb: 'Una frase, una palabra fuera, dos candidatas. Las dos son español correcto.' },
+
+    /* RELÁMPAGO. Exposure only: it draws from cards the learner already owns,
+     * reads fluidez.srs and never writes it, and records nothing but its own
+     * best under `relampago`. A wrong answer costs more than a pass, so
+     * guessing loses to knowing. */
+    { key: 'relampago', name: 'Relámpago', rule: 'Sixty seconds on things you already know', icon: '⚡',
+      hue: '#d19a1a', secs: 60, custom: true, owned: true,
+      blurb: 'Sixty seconds on things you already know' }
   ];
   function byKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
 
@@ -192,6 +200,7 @@ window.Games = (function () {
   function start(g, extra) {
     var h = roundHost();
     clear(h);
+    if (g.owned) return runRelampago(h, g);
     if (g.custom) return runEmparejar(h, g);
     var cfg = {
       key: g.key, title: g.name, kind: g.kind,
@@ -213,7 +222,7 @@ window.Games = (function () {
    * have never played, then the one you have played least. It says nothing at
    * all when it has nothing true to say. */
   function recommend() {
-    var open = GAMES.filter(playable);
+    var open = GAMES.filter(playable).filter(function (g) { return !g.owned; });
     var close = null, closest = 0;
     open.forEach(function (g) {
       var n = GS.nearMissScore(g.key);
@@ -307,7 +316,21 @@ window.Games = (function () {
     // ---- the shelf ----
     page.appendChild(el('h2', 'g-h', 'Todos los juegos'));
     var grid = el('div', 'g-grid');
-    GAMES.forEach(function (g) { if (playable(g)) grid.appendChild(tile(g)); });
+    var ownedN = null;
+    GAMES.forEach(function (g) {
+      if (!playable(g)) return;
+      var t = tile(g);
+      if (g.owned) {
+        ownedN = GI.owned().count;
+        if (ownedN < GI.OWN_MIN) {
+          t.disabled = true;
+          t.classList.add('g-tile-off');
+          t.title = 'Come back when you own twenty words and forms';
+          t.appendChild(el('div', 'g-tile-note', 'Come back when you own twenty words and forms'));
+        }
+      }
+      grid.appendChild(t);
+    });
     page.appendChild(grid);
 
     // ---- your own weak spot ----
@@ -512,6 +535,7 @@ window.Games = (function () {
 
     t.appendChild(el('div', 'g-tile-name', g.name));
     t.appendChild(el('div', 'g-tile-rule', g.rule));
+    if (g.owned) t.querySelector('.g-tile-rule').textContent = g.blurb;
 
     var foot = el('div', 'g-tile-foot');
     if (st.pb) {
@@ -950,6 +974,181 @@ window.Games = (function () {
     }
 
     deal();
+    tick();
+  }
+
+
+  /* ===========================================================================
+   * RELÁMPAGO. Sixty seconds on cards the learner already owns.
+   *
+   * No FSRS, no SRS, no seen-list: the only thing written is the best score
+   * through GameScore. Right +2, pass 0, wrong -3 with the total floored at 0,
+   * so tapping blind loses to knowing and a pass is the cheap way out.
+   * ========================================================================= */
+  var NUM_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
+    'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
+  function numWord(n) { return n <= 20 ? NUM_WORDS[n] : String(n); }
+
+  function runRelampago(h, g) {
+    var pool = GI.owned();
+    clear(h);
+    if (pool.count < GI.OWN_MIN) {
+      var off = el('div', 'g-over');
+      off.appendChild(el('div', 'g-over-eyebrow', g.name));
+      off.appendChild(el('p', 'g-over-verdict', 'Come back when you own twenty words and forms'));
+      var bk = el('button', 'g-back', 'Back');
+      bk.type = 'button';
+      bk.addEventListener('click', backToList);
+      off.appendChild(bk);
+      h.appendChild(off);
+      return;
+    }
+    var DURATION = g.secs * 1000;
+    var rights = 0, passes = 0, wrongs = 0, score = 0, streak = 0, bestStreak = 0;
+    var used = {}, item = null, locked = false, ended = false, timer = null, advance = null;
+    var endAt = Date.now() + DURATION;
+
+    var shell = el('div', 'g-shell g-rl');
+    shell.dataset.state = 'play';
+    shell.style.setProperty('--game', g.hue);
+    var top = el('div', 'g-top');
+    top.appendChild(el('span', 'g-name', g.name));
+    var secsEl = el('span', 'g-secs', '60');
+    var scoreEl = el('span', 'g-score', '0');
+    var exit = el('button', 'g-exit', '✕');
+    exit.type = 'button';
+    exit.setAttribute('aria-label', 'Exit');
+    exit.addEventListener('click', function () { stop(); backToList(); });
+    top.appendChild(el('span', 'g-spacer'));
+    top.appendChild(exit);
+    shell.appendChild(top);
+
+    var clock = el('div', 'g-clock');
+    var fill = el('div', 'g-clock-fill');
+    clock.appendChild(fill);
+    shell.appendChild(clock);
+    var line = el('div', 'g-scoreline');
+    line.appendChild(scoreEl);
+    line.appendChild(secsEl);
+    shell.appendChild(line);
+
+    var promptEl = el('div', 'g-prompt');
+    var hintEl = el('div', 'g-rl-hint');
+    var optsEl = el('div', 'g-options');
+    var typeEl = el('input', 'g-rl-type');
+    typeEl.type = 'text';
+    typeEl.autocomplete = 'off'; typeEl.autocapitalize = 'off'; typeEl.spellcheck = false;
+    typeEl.placeholder = 'Or type it';
+    var passBtn = el('button', 'g-rl-pass', 'Pass');
+    passBtn.type = 'button';
+    shell.appendChild(promptEl); shell.appendChild(hintEl); shell.appendChild(optsEl);
+    shell.appendChild(typeEl); shell.appendChild(passBtn);
+    h.appendChild(shell);
+
+    function stop() {
+      ended = true;
+      if (timer) clearInterval(timer);
+      if (advance) clearTimeout(advance);
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(e) {
+      if (e.key === 'Enter' && document.activeElement === typeEl && typeEl.value.trim()) {
+        e.preventDefault();
+        resolve(typeEl.value.trim().toLowerCase() === item.answer.toLowerCase() ? 'right' : 'wrong', null);
+      }
+    }
+    document.addEventListener('keydown', onKey);
+
+    function tick() {
+      var left = Math.max(0, endAt - Date.now());
+      secsEl.textContent = String(Math.ceil(left / 1000));
+      fill.style.transform = 'scaleX(' + (left / DURATION) + ')';
+      clock.dataset.urgent = left <= 10000 ? '1' : '';
+      if (left <= 0) finish();
+    }
+
+    function deal() {
+      if (ended) return;
+      item = GI.relampagoItem(pool, used);
+      if (!item) { used = {}; item = GI.relampagoItem(pool, used); }
+      if (!item) return finish();
+      locked = false;
+      promptEl.textContent = item.prompt;
+      hintEl.textContent = item.hint || '';
+      clear(optsEl);
+      item.options.forEach(function (o) {
+        var b = el('button', 'g-opt', o);
+        b.type = 'button';
+        b.addEventListener('click', function () { resolve(o === item.answer ? 'right' : 'wrong', b); });
+        optsEl.appendChild(b);
+      });
+      typeEl.hidden = !item.typeable;
+      typeEl.value = '';
+      passBtn.disabled = false;
+      if (item.typeable && window.matchMedia && !window.matchMedia('(pointer: coarse)').matches) typeEl.focus();
+    }
+
+    function resolve(result, btn) {
+      if (locked || ended) return;
+      locked = true;
+      var kids = optsEl.children, i;
+      for (i = 0; i < kids.length; i++) {
+        kids[i].disabled = true;
+        if (kids[i].textContent === item.answer && result !== 'right') kids[i].classList.add('right');
+      }
+      if (result === 'right') {
+        rights++; score += 2; streak++; bestStreak = Math.max(bestStreak, streak);
+        if (btn) btn.classList.add('right');
+      } else if (result === 'wrong') {
+        wrongs++; score = Math.max(0, score - 3); streak = 0;
+        if (btn) btn.classList.add('wrong');
+      } else {
+        passes++; streak = 0;
+      }
+      scoreEl.textContent = String(score);
+      advance = setTimeout(deal, result === 'right' ? 220 : 800);
+    }
+    passBtn.addEventListener('click', function () { resolve('pass', null); });
+
+    function finish() {
+      if (ended) return;
+      stop();
+      var res = GS.record(g.key, { score: score, combo: bestStreak, run: bestStreak, band: 'A1',
+                                   seen: rights + passes + wrongs, right: rights, ms: DURATION });
+      var best = res.isPb && score > 0;
+      var clean = wrongs === 0 && rights >= 5;
+      var text, cheer = '';
+      if (best) { text = 'New best: ' + score + '.'; cheer = 'Nice.'; }
+      else if (clean) { text = 'A clean round.'; cheer = 'Nice.'; }
+      else if (rights === 0) text = 'No right answers this time.';
+      else text = numWord(rights) + ' right in sixty seconds.';
+      clear(h);
+      var over = el('div', 'g-over');
+      over.dataset.pb = best ? '1' : '';
+      over.appendChild(el('div', 'g-over-eyebrow', g.name));
+      over.appendChild(el('div', 'g-over-score', String(score)));
+      over.appendChild(el('div', 'g-over-verdict' + (best ? ' pb' : ''), text + (cheer ? ' ' + cheer : '')));
+      var again = el('button', 'g-again', 'Again');
+      again.type = 'button';
+      again.addEventListener('click', function () { runRelampago(h, g); });
+      over.appendChild(again);
+      var stats = el('div', 'g-over-stats');
+      function stat(n, l) { var x = el('div', 'g-stat'); x.appendChild(el('b', null, n)); x.appendChild(el('span', null, l)); stats.appendChild(x); }
+      stat(String(rights), 'right');
+      stat(String(passes), 'passed');
+      stat(String(wrongs), 'wrong');
+      stat(g.secs + ' s', 'time');
+      over.appendChild(stats);
+      var back = el('button', 'g-back', 'Back to games');
+      back.type = 'button';
+      back.addEventListener('click', backToList);
+      over.appendChild(back);
+      h.appendChild(over);
+      setTimeout(function () { again.focus(); }, 30);
+    }
+
+    deal();
+    timer = setInterval(tick, 200);
     tick();
   }
 
