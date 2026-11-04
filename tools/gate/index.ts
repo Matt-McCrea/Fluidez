@@ -128,7 +128,21 @@ export function runGate(d: Data, sink: Sink): void {
       }
     });
   }
-  for (const f of opts.findings()) push({ ...f, file: f.path?.startsWith('passages') ? F : f.path?.startsWith('apply') ? AF : SF });
+  // ---- teaching scripts (data/scripts/*.js): read-and-pick options and typed answers
+  for (const sf of d.SCRIPTS ?? []) {
+    for (const [id, s] of Object.entries(sf.scripts as Record<string, any>)) {
+      (s.readAndPick ?? []).forEach((r: any, i: number) => {
+        const path = `${id}.readAndPick[${i}]`;
+        if (!validChoice(r)) { push({ severity: 'error', check: 'options', file: sf.file, path, problem: 'read-and-pick answer index does not resolve to an option' }); return; }
+        opts.add('scripts read-and-pick (all)', r);
+        if (dominantLength(r.options, r.answer)) push({ severity: 'warning', check: 'options', file: sf.file, path, problem: `the correct option "${clip(r.options[r.answer], 40)}" is at least 1.5x as long as every other option` });
+      });
+      (s.yourTurn ?? []).forEach((y: any, i: number) => {
+        if (!isTypeable(y.es)) push({ severity: 'error', check: 'typeable', file: sf.file, path: `${id}.yourTurn[${i}]`, problem: `answer "${clip(String(y.es ?? ''))}" has no form a learner can type` });
+      });
+    }
+  }
+  for (const f of opts.findings()) push({ ...f, file: f.path?.startsWith('passages') ? F : f.path?.startsWith('apply') ? AF : f.path?.startsWith('scripts') ? 'data/scripts' : SF });
 }
 
 /* ---- report ------------------------------------------------------------------- */

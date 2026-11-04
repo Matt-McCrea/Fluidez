@@ -51,8 +51,8 @@ window.StageLearn = (function () {
    * grammatical category ("-o is masculine and -a is feminine…"), which is an
    * answer to a question the learner has not yet been given a reason to ask.
    * The moment gives them the reason. */
-  function fillOpening(wrap, l) {
-    if (l.canDo) {
+  function fillOpening(wrap, l, opts) {
+    if (l.canDo && !(opts && opts.fold)) {
       wrap.appendChild(UI.el('p', 'lesson-cando',
         '<span class="cando-label">After this you can</span> ' + l.canDo));
     }
@@ -68,8 +68,8 @@ window.StageLearn = (function () {
 
   // The closing half of the same idea: restate the can-do as achieved, and
   // offer the optional deep-dives rather than making the learner walk them.
-  function fillClosing(wrap, l) {
-    if (l.canDo) {
+  function fillClosing(wrap, l, opts) {
+    if (l.canDo && !(opts && opts.fold)) {
       wrap.appendChild(UI.el('p', 'lesson-nowyoucan',
         '<span class="cando-label">Now you can</span> ' + l.canDo));
     }
@@ -173,8 +173,8 @@ window.StageLearn = (function () {
   }
 
   function fillLesson(wrap, l, opts) {
-    wrap.appendChild(UI.el('h1', null, l.title));
-    fillOpening(wrap, l);
+    if (!(opts && opts.fold)) wrap.appendChild(UI.el('h1', null, l.title));
+    fillOpening(wrap, l, opts);
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
     if (l.keywords && l.keywords.length) {
       wrap.appendChild(UI.el('h3', null, 'The words you need'));
@@ -252,7 +252,7 @@ window.StageLearn = (function () {
         return { label: inf, html: verbTable(inf, l.conjTabs.tense) };
       })));
     }
-    fillClosing(wrap, l);
+    fillClosing(wrap, l, opts);
     speakify(wrap);
     return wrap;
   }
@@ -347,6 +347,8 @@ window.StageLearn = (function () {
   }
 
   function run(host, ctx, done) {
+    var ft = (ctx.focus && ctx.focus.type) || 'grammar';
+    if (ctx.lesson && ft !== 'vocab' && ft !== 'verbs' && ft !== 'practice') loadScripts(scriptBand(ctx, ctx.lesson));
     var SR = window.StageReview;
     var fresh = (SR && SR.newToday) ? SR.newToday(ctx).filter(function (c) { return !S.isEnrolled(c.id); }) : [];
     if (!fresh.length) { return runLesson(host, ctx, done); }
@@ -360,6 +362,13 @@ window.StageLearn = (function () {
     if (f.type === 'practice') return teachPractice(host, ctx, done);
     var l = ctx.lesson;
     if (!l) { done(); return; }
+    withScript(host, ctx, l, function (sc) {
+      if (sc) runScript(host, ctx, l, sc, done);
+      else runOldLesson(host, ctx, l, done);
+    });
+  }
+
+  function runOldLesson(host, ctx, l, done) {
     var wrap = fillLesson(UI.el('div', 'panel lesson'), l, { interactive: true });
     /* The Spanish this lesson is built out of joins the review deck, the same
      * way a vocab day's words do (teachVocab above). It is the same act: the
@@ -386,14 +395,352 @@ window.StageLearn = (function () {
      * what teachVocab quizzes from a vocab day. The rest of the table is still
      * on the page to read, still in the games pool, and still enrols the
      * moment a game round puts it in play. */
-    if (window.Phrases) {
-      window.Phrases.forLesson(l.id).slice(0, 6).forEach(function (p) { S.enrol(p.id); });
-    }
+    enrolPhrases(l);
     /* Every probe gets asked. `srs:false` marks the ones that must not join the
      * review deck, not ones to skip — filtering here meant a comprehension
      * check written for the end of the lesson was silently dropped instead. */
     wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
     host.appendChild(wrap);
+  }
+
+  /* The Spanish this lesson is built out of joins the review deck (see
+   * runOldLesson). Shared by both ways of teaching a lesson, so a script day
+   * enrols exactly what the old page did. */
+  function enrolPhrases(l) {
+    if (window.Phrases) {
+      window.Phrases.forLesson(l.id).slice(0, 6).forEach(function (p) { S.enrol(p.id); });
+    }
+  }
+
+  /* ---- teaching scripts ---------------------------------------------------
+   * A lesson with a script (data/scripts/<band>.js, window.SCRIPTS_<BAND>) is
+   * taught in the order the evidence asks for: a human reason to care, two or
+   * three examples BEFORE the rule, a rule card short enough to read in under
+   * ninety seconds, read-and-pick items that can only be answered by reading
+   * the form, typed production graded by the matcher with one hint and one
+   * retry (as js/views/produce.js runBankTranslate), and one true sentence
+   * about the learner with a live checklist. The old lesson is not thrown
+   * away: all of it sits behind "Read more" at the end, and the quick check
+   * and phrase enrolment after it are unchanged.
+   *
+   * The band file is injected at stage start, the way js/bankitems.js loads
+   * its band files, so the lesson page costs nothing on a day without one. If
+   * it has not arrived when the lesson is due (offline, a slow link, a 404),
+   * the old lesson is taught exactly as before. */
+  var SCRIPT_BANDS = { A1: 1 };       // band files that exist
+  var scriptWaiters = {}, scriptFailed = {};
+  var SCRIPT_WAIT_MS = 2500;
+
+  function scriptBand(ctx, l) {
+    var days = window.COURSE_DAYS || [];
+    var d = ctx && ctx.di != null ? days[ctx.di] : null;
+    if (d && d.lesson === l.id && d.band) return d.band;
+    for (var i = 0; i < days.length; i++) if (days[i].lesson === l.id) return days[i].band || null;
+    return l.cefr || null;
+  }
+  function loadScripts(band, cb) {
+    cb = cb || function () {};
+    var key = 'SCRIPTS_' + band;
+    if (!band || !SCRIPT_BANDS[band] || scriptFailed[band]) { cb(false); return; }
+    if (window[key]) { cb(true); return; }
+    if (typeof document === 'undefined' || !document.createElement || !document.head) { cb(false); return; }
+    if (!scriptWaiters[band]) {
+      scriptWaiters[band] = [];
+      var s = document.createElement('script');
+      s.src = 'data/scripts/' + band.toLowerCase() + '.js';
+      var finish = function (ok) {
+        if (!ok) scriptFailed[band] = 1;
+        var w = scriptWaiters[band] || []; delete scriptWaiters[band];
+        w.forEach(function (f) { f(ok); });
+      };
+      s.onload = function () { finish(!!window[key]); };
+      s.onerror = function () { finish(false); };
+      document.head.appendChild(s);
+    }
+    scriptWaiters[band].push(cb);
+  }
+  // cb(script or null), once: null when there is none or it did not arrive in time.
+  function withScript(host, ctx, l, cb) {
+    var band = scriptBand(ctx, l), key = 'SCRIPTS_' + band;
+    if (!band || !SCRIPT_BANDS[band] || scriptFailed[band]) { cb(null); return; }
+    if (window[key]) { cb(window[key][l.id] || null); return; }
+    var settled = false, note = UI.el('p', 'muted', UI.t('Cargando la lección…', 'Loading the lesson…'));
+    host.appendChild(note);
+    var settle = function (sc) {
+      if (settled) return;
+      settled = true;
+      if (note.parentNode) note.parentNode.removeChild(note);
+      cb(sc);
+    };
+    var timer = setTimeout(function () { settle(null); }, SCRIPT_WAIT_MS);
+    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? window[key][l.id] || null : null); });
+  }
+
+  // Script text: HTML-escaped, *Spanish* in italics, \n as a line break.
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function fmt(s) { return esc(s).replace(/\*([^*\n]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br>'); }
+  // Spanish over its English, one pair per line, so a dialogue reads line by line.
+  function pairs(es, en) {
+    var a = String(es || '').split('\n'), b = String(en || '').split('\n');
+    var box = UI.el('div', 'ex-pairs');
+    a.forEach(function (line, i) {
+      box.appendChild(UI.el('div', 'ex-pair',
+        '<span class="ex-es">' + esc(line) + '</span><span class="ex-en">' + esc(b[i] || '') + '</span>'));
+    });
+    return box;
+  }
+  function seededOrder(n, seed) {
+    var order = [], rnd = UI.seededRandom ? UI.seededRandom(seed) : Math.random;
+    for (var i = 0; i < n; i++) order.push(i);
+    for (var j = n - 1; j > 0; j--) { var k = Math.floor(rnd() * (j + 1)); var x = order[j]; order[j] = order[k]; order[k] = x; }
+    return order;
+  }
+
+  function runScript(host, ctx, l, sc, done) {
+    var st = ctx.step || null, ex = (st && st.extra) || {};
+    var rp = sc.readAndPick || [], yt = sc.yourTurn || [];
+    /* One step index for the whole script, saved after every item:
+     *   0 the opening page, then each read-and-pick item, then each typed item,
+     *   then the personal sentence, then the closing page. */
+    var P_RP = 1, P_YT = P_RP + rp.length, P_ME = P_YT + yt.length, P_END = P_ME + 1;
+    var resumed = ex.script === l.id;
+    var at = resumed && st ? Math.min(st.at || 0, P_END) : 0;
+    var score = resumed && ex.score ? ex.score : { rp: 0, yt: 0 };
+    var wrap = UI.el('div', 'panel lesson script');
+    host.appendChild(wrap);
+
+    function save() { if (st && st.save) st.save(at, { script: l.id, score: score }); }
+    function go(n) { at = n; save(); show(); if (wrap.scrollIntoView) { try { wrap.scrollIntoView({ block: 'start' }); } catch (e) {} } }
+    function eyebrow(text, i, n) {
+      return UI.el('div', 'script-eyebrow', text + (n ? ' · ' + (i + 1) + ' / ' + n : ''));
+    }
+    function show() {
+      UI.clear(wrap);
+      if (at <= 0) opening();
+      else if (at < P_YT) pick(at - P_RP);
+      else if (at < P_ME) typed(at - P_YT);
+      else if (at === P_ME) personal();
+      else closing();
+      speakify(wrap);
+    }
+
+    // ---- hook, examples, the rule
+    function opening() {
+      wrap.appendChild(UI.el('h1', null, esc(l.title)));
+      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-cando', '<span class="cando-label">After this you can</span> ' + esc(l.canDo)));
+      if (sc.hook) {
+        var h = UI.el('div', 'script-hook');
+        h.appendChild(UI.el('p', 'hook-line', fmt(sc.hook.line)));
+        h.appendChild(pairs(sc.hook.es, sc.hook.en));
+        wrap.appendChild(h);
+      } else {
+        var g = guessBlock(l);                    // no hook: the guess still comes first
+        if (g) wrap.appendChild(g);
+      }
+      if (sc.examples && sc.examples.length) {
+        wrap.appendChild(UI.el('h3', null, UI.t('Primero, en uso', 'See it in use')));
+        var exs = UI.el('div', 'examples');
+        sc.examples.forEach(function (e) { var d = UI.el('div', 'ex'); d.appendChild(pairs(e.es, e.en)); exs.appendChild(d); });
+        wrap.appendChild(exs);
+      }
+      if (sc.rule) {
+        var card = UI.el('div', 'rule-card');
+        card.appendChild(UI.el('div', 'script-eyebrow', UI.t('La regla', 'How it works')));
+        String(sc.rule).split('\n').forEach(function (line) {
+          if (line.trim()) card.appendChild(UI.el('p', 'rule-line', fmt(line)));
+        });
+        wrap.appendChild(card);
+      }
+      wrap.appendChild(UI.nextBtn(rp.length || yt.length ? 'Try it →' : 'Continuar →', function () { go(1); }));
+    }
+
+    // ---- read and pick: one at a time, tap, one line of why
+    function pick(i) {
+      var r = rp[i];
+      wrap.appendChild(eyebrow(UI.t('Lee y elige', 'Read and pick'), i, rp.length));
+      wrap.appendChild(UI.el('p', 'guess-q', fmt(r.q)));
+      var es = UI.el('div', 'cloze-text script-es');
+      String(r.es).split('\n').forEach(function (line) { es.appendChild(UI.el('div', 'ex-es', esc(line))); });
+      wrap.appendChild(es);
+      var opts = UI.el('div', 'mcq-opts'), why = UI.el('p', 'guess-after'), answered = false;
+      var order = seededOrder(r.options.length, l.id + ':rp:' + i);
+      var next = UI.nextBtn('Next →', function () { go(at + 1); });
+      next.classList.add('hidden');
+      order.forEach(function (oi) {
+        var b = UI.el('button', 'mcq-btn', esc(r.options[oi])); b.type = 'button';
+        b.dataset.oi = oi;
+        b.addEventListener('click', function () {
+          if (answered) return;
+          answered = true;
+          var right = oi === r.answer;
+          if (right) score.rp++;
+          Array.prototype.forEach.call(opts.children, function (btn) {
+            var k = +btn.dataset.oi;
+            if (k === r.answer) btn.classList.add('right');
+            else if (btn === b) btn.classList.add('wrong');
+            btn.disabled = true;
+          });
+          why.className = 'guess-after' + (right ? ' good' : '');
+          why.innerHTML = (right ? '¡Eso es! ' : 'Not quite. ') + fmt(r.why || '');
+          next.classList.remove('hidden');
+          save();
+        });
+        opts.appendChild(b);
+      });
+      wrap.appendChild(opts);
+      wrap.appendChild(why);
+      wrap.appendChild(next);
+    }
+
+    // ---- your turn: typed, graded by the matcher, one hint and one retry
+    function typed(j) {
+      var t = yt[j], M = window.LIB && window.LIB.match;
+      wrap.appendChild(eyebrow(UI.t('Te toca', 'Your turn'), j, yt.length));
+      wrap.appendChild(UI.el('h2', 'q-text', 'Say it in Spanish:'));
+      wrap.appendChild(UI.el('p', 'cloze-text', '“' + fmt(t.en) + '”'));
+      var ta = UI.el('textarea', 'answer-area');
+      ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
+      ta.setAttribute('autocapitalize', 'off'); ta.setAttribute('autocomplete', 'off');
+      var fb = UI.el('div', 'feedback');
+      var goB = UI.el('button', 'primary-btn', 'Check'); goB.type = 'button';
+      var skip = UI.el('button', 'ghost-btn', 'Show answer (I\'m stuck)'); skip.type = 'button';
+      var row = UI.el('div', 'row-controls');
+      row.appendChild(goB); row.appendChild(skip);
+      wrap.appendChild(ta);
+      wrap.appendChild(UI.accentBar(function () { return ta; }));
+      wrap.appendChild(fb);
+      wrap.appendChild(row);
+      ta.focus();
+
+      var item = { es: t.es, en: t.en, accept: t.accept || [] };
+      var state = M ? M.startAttempt(item, { accents: 'lenient' }) : null, tries = 0, finished = false;
+      var model = '<div class="model-answer">' + esc(t.es) + '</div>';
+      function finish(ok, html, cls) {
+        finished = true;
+        if (ok) score.yt++;
+        fb.className = 'feedback ' + cls; fb.innerHTML = html;
+        ta.readOnly = true;
+        skip.classList.add('hidden');
+        goB.textContent = 'Next →';
+        goB.onclick = function () { go(at + 1); };
+        save();
+      }
+      function reveal(hint) {
+        if (window.ErrorLog) window.ErrorLog.record({ id: 'err:script:' + l.id + ':' + j, front: t.en, back: t.es,
+          hint: hint || null, kind: 'grammar', source: 'learn-script', reviewable: false });
+        finish(false, model + (hint ? '<div class="muted small">' + fmt(hint) + '</div>' : ''), 'bad');
+      }
+      // The matcher reads words, not marks: a question typed without ¿ still passes, and is told.
+      function marksNote(text) {
+        return /¿/.test(t.es) && !/¿/.test(text) ? 'Spanish opens a question with ¿ as well.' : '';
+      }
+      function submit() {
+        if (finished) return;
+        var text = ta.value.trim();
+        if (!text) return;
+        if (!M) {                                 // no bundle: exact match against the model
+          var r0 = C.checkExact(text, [t.es], { meaning: false });
+          if (r0.pass) finish(true, 'Right', 'good');
+          else if (++tries < 2) { fb.className = 'feedback bad'; fb.textContent = (r0.near ? 'Nearly, check the accents.' : 'Not quite.') + ' Try once more.'; ta.focus(); }
+          else reveal(null);
+          return;
+        }
+        var step = M.submitAttempt(state, text);
+        state = step.state;
+        var res = step.result;
+        if (step.status === 'correct') {
+          var note = [res.note || (res.near ? res.hint : ''), marksNote(text)].filter(Boolean).join(' ');
+          finish(true, 'Right' + (note ? '. ' + fmt(note) + model : ''), 'good');
+        } else if (step.status === 'retry') {
+          fb.className = 'feedback bad';
+          fb.innerHTML = fmt(res.hint || 'Not quite.') + ' Try once more.';
+          ta.focus();
+        } else {
+          reveal(res.hint || null);
+        }
+      }
+      goB.onclick = submit;
+      skip.addEventListener('click', function () { if (!finished) reveal(null); });
+      ta.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (finished) goB.click(); else submit(); }
+      });
+    }
+
+    // ---- one true sentence about the learner, with a live checklist
+    function personal() {
+      var p = sc.personal;
+      if (!p || !p.prompt) { go(at + 1); return; }
+      wrap.appendChild(eyebrow(UI.t('Sobre ti', 'About you')));
+      wrap.appendChild(UI.el('h2', 'q-text', fmt(p.prompt)));
+      var ta = UI.el('textarea', 'answer-area');
+      ta.rows = 3; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
+      var checklist = UI.el('ul', 'constraint-list');
+      var modelBox = UI.el('div');
+      var doneB = UI.el('button', 'primary-btn', p.model ? 'Compare with a model →' : 'Done →'); doneB.type = 'button';
+      var skipB = UI.el('button', 'ghost-btn', p.model ? 'Show the model' : 'Skip'); skipB.type = 'button';
+      wrap.appendChild(ta);
+      wrap.appendChild(UI.accentBar(function () { return ta; }));
+      var task = { constraints: p.constraints || [] };
+      if (task.constraints.length) wrap.appendChild(UI.el('div', 'checklist-title muted', 'Your sentence needs to…'));
+      wrap.appendChild(checklist);
+      wrap.appendChild(modelBox);
+      var row = UI.el('div', 'row-controls');
+      row.appendChild(doneB); row.appendChild(skipB);
+      wrap.appendChild(row);
+      ta.focus();
+      function render() {
+        if (!C || !task.constraints.length) { doneB.disabled = !ta.value.trim(); return; }
+        var res = C.checkWriting(task, ta.value);
+        UI.clear(checklist);
+        res.results.forEach(function (r, k) {
+          var c = task.constraints[k] || {};
+          checklist.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'),
+            (r.pass ? '✓ ' : '○ ') + (c.label ? fmt(c.label) : r.label) + (r.detail ? ' <span class="muted">(' + esc(r.detail) + ')</span>' : '')));
+        });
+        doneB.disabled = !res.allPass;
+      }
+      ta.addEventListener('input', render);
+      render();
+      var shown = false;
+      function showModel() {
+        if (shown || !p.model) { go(at + 1); return; }
+        shown = true;
+        modelBox.appendChild(UI.el('div', null,
+          '<div class="checklist-title muted">One way to say it:</div><div class="model-answer">' + esc(p.model) + '</div>' +
+          '<p class="muted small">Yours is about you, so it will say different things. Compare the verb forms and the little words.</p>'));
+        doneB.textContent = 'Next →'; doneB.disabled = false;
+        skipB.classList.add('hidden');
+        ta.readOnly = true;
+      }
+      doneB.addEventListener('click', showModel);
+      skipB.addEventListener('click', function () { if (p.model) showModel(); else go(at + 1); });
+    }
+
+    // ---- watch out, the whole old lesson behind Read more, then the quick check
+    function closing() {
+      wrap.appendChild(UI.el('h2', null, esc(l.title)));
+      if (rp.length || yt.length) {
+        wrap.appendChild(UI.el('p', 'muted script-score',
+          (rp.length ? 'Read and pick: ' + score.rp + ' of ' + rp.length + ' first time.' : '') +
+          (yt.length ? ' Your turn: ' + score.yt + ' of ' + yt.length + '.' : '')));
+      }
+      if (sc.pitfalls && sc.pitfalls.length) {
+        wrap.appendChild(UI.el('h3', null, 'Watch out'));
+        var ul = UI.el('ul', 'pitfalls');
+        sc.pitfalls.forEach(function (x) { ul.appendChild(UI.el('li', null, fmt(x))); });
+        wrap.appendChild(ul);
+      }
+      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-nowyoucan', '<span class="cando-label">Now you can</span> ' + esc(l.canDo)));
+      var more = UI.el('details', 'read-more');
+      more.appendChild(UI.el('summary', null, UI.t('Leer más: la lección completa', 'Read more: the full lesson')));
+      more.appendChild(fillLesson(UI.el('div', 'read-more-body'), l, { fold: true }));
+      wrap.appendChild(more);
+      enrolPhrases(l);
+      wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
+    }
+
+    save();
+    show();
   }
 
   // ---- vocab day ----
