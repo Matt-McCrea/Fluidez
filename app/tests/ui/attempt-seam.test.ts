@@ -16,6 +16,7 @@
 // Later still: such a read-and-pick is not asked twice in a session and is scored on its node alone, since the sentence it stood in for was
 // not on screen: the words in that sentence are not credited and it is not ledgered. A few cards more or fewer fit the minutes. And a wrong
 // option holds no name or number the prompt lacks, and every word the prompt shares with the right one; the same calls on other cards.
+// 4 Nov 2026: a day's new words are all shown first, then all matched, then all typed (a wave a time), not three at a time; the same grading calls in another order.
 // Later: a known contrast mixed into a drill or remix is one of its own items (shorter than a typed sentence, so more cards fit the minutes);
 // the same grading calls on other cards (1ba8c36).
 import { readdirSync, readFileSync, statSync } from 'node:fs';
@@ -25,9 +26,9 @@ import { fixtureBundle } from './driver';
 import { dealt, freeplay, sessions, simulated, traceOf } from './replay';
 
 const EXPECTED = {
-  sessions: { events: 237, eventDigest: '18ffeb0a0465af4af2f8b4ab61e09611782b74aba0a29314d85930ac69ad9dbe', memoryDigest: '478b151fca3662801f0a3b821758c178b64790610d06f43654be03e688d130fd' },
+  sessions: { events: 237, eventDigest: '27608b9f20f17a1e58f4a6db6e87fc9cdb6c4f8a5fa6b4e6644cb61f6397e7cb', memoryDigest: 'fabf8d93fd231fe5f4d08f8533113ac2c13749b58604955c9a332f8eb3fe5c32' },
   dealt: { events: 181, eventDigest: 'afc58cb780e9652212aedbcd75f5c408cf6fc78a505eb4f7e72667531419c8b5', memoryDigest: '3d00e603453c232c812c53d3b88ef2fff4a45bdedc141f4e4249c7e92ddaa563' },
-  freeplay: { events: 269, eventDigest: 'f7f6747fe5268a2a0ac4d0f021506993ccfcc9b6fe3426310133dfc069bd9ba0', memoryDigest: '2f295eaa22fa7f6922652c6bca5221e9e6c30e1ffbe5ac5495cff2c95d447d5f' },
+  freeplay: { events: 269, eventDigest: '43aaca03f6379ec739e7cb1097714b5427e95b4829ecbf6b5dd9950a2a2ca108', memoryDigest: '5f4240328f4c86b71a206b9bb728e4a9b2b35c57d1dd6c7fdc16d656e953759a' },
   average: { events: 5437, eventDigest: '9870d460fbfe96e76f2264eb9bfe2674ed105ff4451a4c8e137f03690d38a8d7', memoryDigest: '5f2eee2830ee322d889e7587288cbcda80539e941b96c22af5f8c3a4f3c59edb' },
   irregular: { events: 3587, eventDigest: 'a1539d77d7158f1cde9d0e9e16aadbe2a4ecbf7f716ed5406ba7dade97bea888', memoryDigest: 'd3dee5ece18d8f3936ac6882a2200d21562f18320a1d6628d050cea384a87587' },
 };

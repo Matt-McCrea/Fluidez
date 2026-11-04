@@ -33,11 +33,10 @@ export class LearnQueue {
   private readonly askCount = new Map<number, number>();
 
   constructor(readonly n: number) {
-    for (let g = 0; g < n; g += LEARN_GROUP) {
-      const idx = Array.from({ length: Math.min(LEARN_GROUP, n - g) }, (_, k) => g + k);
-      idx.forEach((i) => this.steps.push({ kind: 'present', i }));
-      idx.forEach((i) => this.steps.push({ kind: 'ask', i, round: 0, n: 0 }));
-    }
+    // every new item is shown first, then all of them are matched (round 0), then all typed (round 1): a wave at a time
+    const idx = Array.from({ length: n }, (_, k) => k);
+    idx.forEach((i) => this.steps.push({ kind: 'present', i }));
+    idx.forEach((i) => this.steps.push({ kind: 'ask', i, round: 0, n: 0 }));
   }
 
   toJSON(): LearnQueueJSON {
@@ -73,8 +72,12 @@ export class LearnQueue {
       const asked = Math.max(this.asks(s.i), s.n + 1);
       this.askCount.set(s.i, asked);
       if (again && asked < LEARN_ASKS_MAX) {
-        const at = Math.min(this.steps.length, this.pos + 1 + RETRY_GAP);
-        this.steps.splice(at, 0, { kind: 'ask', i: s.i, round: missed ? (s.round === 0 ? 1 : s.round - 1) : s.round + 1, n: asked });
+        const round = missed ? (s.round === 0 ? 1 : s.round - 1) : s.round + 1;
+        // a round is a wave: this ask joins the end of its own round (after the rounds below it) when that is still ahead, else comes a few cards on
+        let end = -1;
+        this.steps.forEach((x, k) => { if (x.kind === 'ask' && x.round <= round) end = k; });
+        const at = Math.min(this.steps.length, end > this.pos ? end + 1 : this.pos + 1 + RETRY_GAP);
+        this.steps.splice(at, 0, { kind: 'ask', i: s.i, round, n: asked });
       }
     }
     this.pos++;

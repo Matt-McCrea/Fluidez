@@ -289,7 +289,8 @@ mark.diff.accent { text-decoration-style: dotted; text-decoration-color: var(--h
 .reference table.forms tr.hit > * { background: var(--accent-soft); }
 .reference .words { list-style: none; margin: 0; padding: 0; }
 .reference .word { display: flex; align-items: center; gap: 10px; min-height: 48px; border-bottom: 1px solid var(--line); }
-.reference .word-text { flex: 1 1 auto; }
+.reference .word-text { flex: 1 1 auto; min-width: 0; }
+.reference .word .btn { flex: 0 0 auto; white-space: nowrap; }
 .reference .word-gloss { color: var(--muted); } /* not .gloss: that is the reader's sticky pill */
 .reference .dot { flex: 0 0 auto; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--muted); }
 .reference .dot.solid { background: var(--ok, #2e7d32); border-color: var(--ok, #2e7d32); }
@@ -323,3 +324,7 @@ mark.diff.accent { text-decoration-style: dotted; text-decoration-color: var(--h
   .screen { padding-bottom: 48px; }
   .card { max-width: 560px; }
 }
+.reference .unit-head { display: flex; flex-direction: column; gap: 2px; padding: 6px 0; }
+.reference .unit-head .small { font-weight: 400; color: var(--muted); }
+.reference summary .dot { margin-right: 10px; }
+.reference .small-print .btn.link { padding: 0; min-height: 0; font-size: inherit; }

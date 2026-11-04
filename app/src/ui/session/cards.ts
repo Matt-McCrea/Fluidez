@@ -238,7 +238,9 @@ export function sentenceCheck(s: Pick<BankSentence, 'es' | 'en' | 'accept'>, nod
 
 /** A word or chunk: strict on letters, lenient on accents (an English keyboard). `answers[0]` is the one shown. */
 export function chunkCheck(answers: string[]) {
-  const list = [...new Set(answers.flatMap((a) => answerForms(a)))];
+  // a noun can be typed with or without its article: "el día" and "día"
+  const withBare = answers.flatMap((a) => answerForms(a)).flatMap((f) => { const m = /^(el|la|los|las|un|una)\s+(\S+)$/i.exec(f); return m ? [f, m[2]] : [f]; });
+  const list = [...new Set(withBare)];
   return (input: string): Check => {
     const r = checkExact(input, list, { accents: 'lenient' });
     const answer = answers[0] ?? list[0] ?? '';

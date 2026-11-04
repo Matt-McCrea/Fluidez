@@ -127,3 +127,13 @@ describe('a pass through a swap says so', () => {
     expect(passLines({ hint: 'a hint belongs to a retry, not a pass' })).toEqual([]);
   });
 });
+
+describe('a noun typed with or without its article', () => {
+  it('passes el día and día, and still refuses the wrong article', async () => {
+    const { chunkCheck } = await import('../../src/ui/session/cards');
+    const c = chunkCheck(['el día']);
+    expect(c('día').pass).toBe(true);
+    expect(c('el día').pass).toBe(true);
+    expect(c('la día').pass).toBe(false);
+  });
+});

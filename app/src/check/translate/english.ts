@@ -27,6 +27,9 @@ export function matchEnglish(input: string, item: { en: string; acceptEn?: reado
   const ni = normEnglish(input);
   if (!ni) return { pass: false, hint: 'Type your answer in English.', closest: item.en };
   for (const a of list) if (normEnglish(a) === ni) return { pass: true, closest: a };
+  // a lone word, with or without its the / a / an / to: "the day" and "day", "to eat" and "eat"
+  const bareWord = (t: string) => t.replace(/^(the|an|a|to) (?=\S+$)/, '');
+  for (const a of list) if (!ni.includes(' ') || /^(the|an|a|to) \S+$/.test(ni)) if (bareWord(normEnglish(a)) === bareWord(ni) && !bareWord(ni).includes(' ')) return { pass: true, closest: a };
   const iw = ni.split(' ');
   for (const a of list) {
     const aw = normEnglish(a).split(' ');

@@ -128,14 +128,16 @@ describe('a few more minutes, now and then', () => {
 });
 
 describe('card order', () => {
-  it('a missed item comes back a few cards later, not at the end', () => {
+  it('new items are all shown first, then all matched, then all typed: an item right in a round waits for the others', () => {
     const q = new LearnQueue(6);
+    expect(q.steps.slice(0, 6).every((x) => x.kind === 'present')).toBe(true);
     while (q.current?.kind === 'present') q.next();
     const at = q.pos;
     q.next(true);
-    const back = q.steps.findIndex((s, i) => i > at && s.kind === 'ask' && s.i === 0);
-    expect(back - at).toBe(RETRY_GAP + 1);
-    expect(back).toBeLessThan(q.steps.length - 1);
+    const back = q.steps.findIndex((x, i) => i > at && x.kind === 'ask' && x.i === 0);
+    expect(q.steps[back]).toMatchObject({ round: 1 });
+    // every round-0 ask comes before it
+    expect(q.steps.slice(at + 1, back).filter((x) => x.kind === 'ask' && x.round === 0)).toHaveLength(5);
   });
 
   it('a miss steps the format down; keys stay unique across re-asks', () => {
@@ -150,19 +152,16 @@ describe('card order', () => {
     expect(new Set(asks.map((s) => s.n)).size).toBe(asks.length);
   });
 
-  it('a miss at round 2 comes back at round 1, three cards later', () => {
+  it('a miss at round 2 comes back at round 1, a few cards on', () => {
     const q = new LearnQueue(6);
     while (q.current?.kind === 'present') q.next();
-    q.next(true); q.next(true); q.next(true); // item 0 round 1 is not yet back; walk to a round-2 ask of item 0
-    const at = q.steps.findIndex((s, k) => k >= q.pos && s.kind === 'ask' && s.i === 0 && s.round === 1);
-    expect(at).toBeGreaterThanOrEqual(q.pos);
-    while (q.pos < at) q.next();
-    q.next(true); // item 0 round 1 -> queued round 2
-    const at2 = q.steps.findIndex((s, k) => k >= q.pos && s.kind === 'ask' && s.i === 0 && s.round === 2);
+    for (let k = 0; k < 6; k++) q.next(true); // the matching wave, all right: the typing wave is queued
+    for (let k = 0; k < 6; k++) q.next(true); // the typing wave, all right: round 2 is queued
+    const at2 = q.steps.findIndex((x, k) => k >= q.pos && x.kind === 'ask' && x.i === 0 && x.round === 2);
     while (q.pos < at2) q.next();
     const here = q.pos;
     q.next(true, true);
-    const back = q.steps.findIndex((s, k) => k > here && s.kind === 'ask' && s.i === 0);
+    const back = q.steps.findIndex((x, k) => k > here && x.kind === 'ask' && x.i === 0);
     expect(back - here).toBe(RETRY_GAP + 1);
     expect(q.steps[back]).toMatchObject({ round: 1 });
   });
@@ -177,10 +176,10 @@ describe('card order', () => {
 
   it('out of time: nothing new is presented; presented items keep one ask', () => {
     const q = new LearnQueue(6);
-    for (let k = 0; k < 4; k++) q.next(); // three presented, one asked
+    for (let k = 0; k < 4; k++) q.next(); // four presented, none asked yet
     const dropped = q.stopNew();
-    expect(dropped).toEqual([3, 4, 5]);
-    expect(q.steps.slice(q.pos).every((s) => s.kind === 'ask' && s.i < 3)).toBe(true);
+    expect(dropped).toEqual([4, 5]);
+    expect(q.steps.slice(q.pos).every((s) => s.kind === 'ask' && s.i < 4)).toBe(true);
   });
 
   it('interleave caps runs of one format', () => {

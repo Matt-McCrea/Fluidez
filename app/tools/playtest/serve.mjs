@@ -97,8 +97,18 @@ async function tapOnce(policy = 'first', fillText = 'no sé', preferPrimary = fa
       return `fill="${text}"`;
     }
   }
+  // a free-text card that wants a word ("Use estará or serán somewhere in it"): put the first of them in and check again
+  const wants = (await mainText()).match(/Use (\S+?)(?: or \S+?)? somewhere in it/);
+  if (wants && await field.isVisible().catch(() => false)) {
+    await field.fill(`${wants[1]}.`, { timeout: 3000 }).catch(() => {});
+    await page.getByRole('button', { name: /^Check( again)?$/ }).first().click({ timeout: 3000 }).catch(() => {});
+    return `wants="${wants[1]}"`;
+  }
   const primary = page.locator('main [data-primary]:not([data-home]):enabled').first();
   if (await primary.isVisible().catch(() => false)) { const t = await primary.textContent(); await primary.click({ timeout: 3000 }).catch(() => {}); return `primary="${t?.trim()}"`; }
+  // a missed typed answer leaves "Try again" and "Show me" and no primary: reveal the answer so the run can go on (and learn it)
+  const reveal = page.getByRole('button', { name: 'Show me', exact: true }).first();
+  if (await reveal.isVisible().catch(() => false)) { await reveal.click({ timeout: 3000 }).catch(() => {}); return 'reveal="Show me"'; }
   const chip = page.locator('main .chip:not(.on)').first();
   if (await chip.isVisible().catch(() => false)) { const t = await chip.textContent(); await chip.click({ timeout: 3000 }).catch(() => {}); return `chip="${t?.trim()}"`; }
   return null;

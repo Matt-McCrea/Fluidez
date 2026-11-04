@@ -143,3 +143,60 @@ describe('look up: titles, words coming up, grammar examples', () => {
     }
   }, 120_000);
 });
+
+describe('units in the reference', () => {
+  const day = (o: Partial<{ focus: string[]; chunks: string[]; lexemes: string[]; chapter: string }>) => ({ type: 'introduce', focus: [], chunks: [], lexemes: [], ...o });
+  const nodes: Record<string, { es?: string; en?: string }> = {
+    'l:madre': { es: 'la madre', en: 'mother' }, 'l:comida': { es: 'la comida', en: 'food' }, 'l:tren': { es: 'el tren', en: 'train' },
+    'g:ser': {}, 'c:hola': { es: 'Hola', en: 'Hello' },
+  };
+  const bundle = {
+    units: [
+      { id: 'u01', band: 'A1', title: 'People in my life', theme: 'Personal identification: family, friends', canDo: 'I can introduce my family.', days: [day({ focus: ['g:ser'], lexemes: ['l:madre'], chunks: ['c:hola'], chapter: 'ch001' })] },
+      { id: 'u02', band: 'A1', title: 'What we eat', theme: 'Food and drink: meals and restaurants', canDo: 'I can order a meal.', days: [day({ lexemes: ['l:comida'] })] },
+      { id: 'u03', band: 'A1', title: 'Going places', theme: 'Travel: transport', canDo: 'I can ask for a ticket.', days: [day({ lexemes: ['l:tren'] })] },
+    ],
+    story: [{ id: 'ch001', title: 'Mi familia' }],
+    title: (id: string) => (id === 'g:ser' ? 'Ser for identity' : id),
+    node: (id: string) => nodes[id],
+  } as never;
+
+  it('reaches the units the path has got to, whatever placement met elsewhere', async () => {
+    const { unitEntries } = await import('../../src/ui/screens/reference/model');
+    const u = unitEntries(bundle, new Set(['l:comida', 'l:tren']), undefined, 1);
+    expect(u.map((x) => x.reached)).toEqual([true, true, false]);
+    expect(u[1].words).toEqual(['l:comida']);
+    expect(u[0].words).toEqual([]);
+    expect(unitEntries(bundle, new Set(), undefined, -1).some((x) => x.reached)).toBe(false);
+  });
+
+  it('finds units by theme word, canDo, title and the words they teach', async () => {
+    const { unitEntries, searchUnits } = await import('../../src/ui/screens/reference/model');
+    const all = unitEntries(bundle, new Set(['g:ser', 'l:madre', 'c:hola', 'l:comida', 'l:tren']), undefined, 2);
+    const ids = (q: string) => searchUnits(all, q).reached.map((x) => x.id);
+    expect(ids('family')).toEqual(['u01']);
+    expect(ids('food')).toEqual(['u02']);
+    expect(ids('travel')).toEqual(['u03']);
+    expect(ids('order a meal')).toEqual(['u02']);
+    expect(ids('madre')).toEqual(['u01']);
+    expect(ids('identity')).toEqual(['u01']);
+    expect(ids('')).toHaveLength(3);
+    const chapters = unitEntries(bundle, new Set(['g:ser']), () => true, 0)[0].chapters;
+    expect(chapters).toEqual([{ id: 'ch001', title: 'Mi familia' }]);
+  });
+
+  it('keeps unreached units to their title and theme', async () => {
+    const { unitEntries, searchUnits } = await import('../../src/ui/screens/reference/model');
+    const all = unitEntries(bundle, new Set(['l:madre']), undefined, 0);
+    expect(searchUnits(all, 'travel').coming.map((x) => x.id)).toEqual(['u03']);
+    expect(searchUnits(all, 'tren').coming).toEqual([]);
+  });
+
+  it('gives grammar a strength from the learner', async () => {
+    const { grammarEntries } = await import('../../src/ui/screens/reference/model');
+    const b = { course: { nodes: new Map([['g:ser', { id: 'g:ser', kind: 'grammar', priority: 1 }]]), teachPos: new Map(), unitStart: [] }, title: () => 'Ser' } as never;
+    const learner = { retrievability: (_: string, d: string) => (d === 'productive' ? 0.8 : 0.99) };
+    expect(grammarEntries(b, new Set(['g:ser']), learner)[0].strength).toBe('fading');
+    expect(grammarEntries(b, new Set(), learner)[0].strength).toBe('new');
+  });
+});

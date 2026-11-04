@@ -219,6 +219,16 @@ function TypeView({ card, onDone, next, pos, ms, ...p }: CardViewProps & { card:
     if (!r.pass && (!card.retry || r.final || n >= 2)) { setRevealed(true); setTook(ms()); }
     if (r.pass) setTook(ms());
   };
+  // a typed answer that is right and complete goes in by itself, a beat after the last key: no need to press Check.
+  // Complete means as long as the answer shown, so a short answer is never cut off and free text (no fixed answer) is left alone.
+  useEffect(() => {
+    if (finished || !ready || !value.trim()) return;
+    const r = card.check(value);
+    const want = (r.answer ?? '').trim();
+    if (!r.pass || r.near || !want || value.trim().length < want.replace(/[.!?¿¡]/g, '').trim().length) return;
+    const t = setTimeout(submit, 350);
+    return () => clearTimeout(t);
+  }, [value]);
   const giveUp = () => { setTries(Math.max(1, tries)); setRevealed(true); setTook(ms()); if (!result) { const r = card.check(value || ' '); setResult(value.trim() ? r : { ...r, hint: undefined }); } };
 
   return (

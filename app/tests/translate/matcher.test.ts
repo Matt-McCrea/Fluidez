@@ -371,3 +371,16 @@ describe('matchEnglish (es→en)', () => {
     expect(matchEnglish('She does not work', { en: "She doesn't work." }).pass).toBe(true);
   });
 });
+
+describe('a lone word, with or without its article', () => {
+  it('accepts the, a, an and to on either side of a one-word answer, and nowhere else', async () => {
+    const { matchEnglish } = await import('../../src/check/translate/english');
+    const ok = (input: string, en: string) => matchEnglish(input, { en, acceptEn: [] }).pass;
+    expect(ok('the day', 'day')).toBe(true);
+    expect(ok('day', 'the day')).toBe(true);
+    expect(ok('to eat', 'eat')).toBe(true);
+    expect(ok('a house', 'house')).toBe(true);
+    expect(ok('the day off', 'day')).toBe(false);
+    expect(ok('cat sleeps', 'the cat sleeps')).toBe(false);
+  });
+});

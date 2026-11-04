@@ -31,6 +31,7 @@ export interface GrammarEntry extends Searchable {
   met: boolean;
   priority: number;
   week?: number;
+  strength: Strength;
 }
 
 const GRAMMAR_KINDS = new Set(['grammar', 'pattern', 'contrast', 'chunk']);
@@ -45,7 +46,7 @@ export function weekOf(bundle: Pick<Bundle, 'course'>, id: NodeId): number | und
   return w || undefined;
 }
 
-export function grammarEntries(bundle: Bundle, met: Set<string>): GrammarEntry[] {
+export function grammarEntries(bundle: Bundle, met: Set<string>, learner?: Pick<LearnerView, 'retrievability'>): GrammarEntry[] {
   const out: GrammarEntry[] = [];
   for (const n of bundle.course.nodes.values()) {
     if (!GRAMMAR_KINDS.has(n.kind)) continue;
@@ -58,6 +59,7 @@ export function grammarEntries(bundle: Bundle, met: Set<string>): GrammarEntry[]
       met: met.has(n.id),
       priority: n.priority,
       week: weekOf(bundle, n.id),
+      strength: met.has(n.id) && learner ? strengthOf(learner.retrievability(n.id, 'productive') ?? learner.retrievability(n.id, 'receptive')) : 'new',
       names: standardNames(n),
       es: [n.es ?? '', ...(n.forms ?? []).map((f) => f.es)].filter(Boolean),
       en: [n.en ?? '', ...(n.forms ?? []).map((f) => f.en)].filter(Boolean),
@@ -144,6 +146,83 @@ export interface ExampleLearner {
 }
 
 export { searchEntries };
+
+// ---------------------------------------------------------------- units
+
+export interface UnitChapter { id: string; title: string }
+
+export interface UnitEntry extends Searchable {
+  id: string;
+  /** 1 for u01 */
+  num: number;
+  title: string;
+  band: string;
+  canDo: string;
+  reached: boolean;
+  /** grammar and patterns the unit teaches that the learner has met */
+  grammar: NodeId[];
+  chunks: NodeId[];
+  words: NodeId[];
+  chapters: UnitChapter[];
+  /** everything of the unit the learner has met, to practise */
+  met: NodeId[];
+}
+
+/** The English words of a theme ("Personal identification: family, friends"): the part after the colon split, then the area before it. */
+export function themeWords(theme: string): string[] {
+  const i = theme.indexOf(':');
+  const after = i >= 0 ? theme.slice(i + 1) : theme;
+  const parts = after.split(/[,;/]|\band\b/).map((w) => w.trim()).filter(Boolean);
+  return i >= 0 ? [...parts, theme.slice(0, i).trim()] : parts;
+}
+
+const uniq = <T,>(xs: T[]): T[] => [...new Set(xs)];
+
+/**
+ * Every unit, in course order, with what the learner has met of it. A unit is reached when the learner's path
+ * has got to it (placement probes meet nodes all over the course, so a met node alone proves nothing).
+ */
+export function unitEntries(
+  bundle: Pick<Bundle, 'units' | 'story' | 'title' | 'node'>,
+  met: ReadonlySet<string>,
+  chapterSeen: ((id: string) => boolean) | undefined,
+  pathUnit: number,
+): UnitEntry[] {
+  const nodesOf = (u: Bundle['units'][number]): NodeId[] => u.days.flatMap((d) => [...d.focus, ...d.chunks, ...d.lexemes]);
+  const chapterTitle = new Map(bundle.story.map((c) => [c.id, c.title]));
+  return bundle.units.map((u, i) => {
+    const reached = i <= pathUnit;
+    const keep = (ids: NodeId[]) => uniq(ids).filter((id) => met.has(id));
+    const grammar = keep(u.days.flatMap((d) => d.focus));
+    const chunks = keep(u.days.flatMap((d) => d.chunks));
+    const words = keep(u.days.flatMap((d) => d.lexemes));
+    const chapters = uniq(u.days.map((d) => d.chapter).filter((c): c is string => !!c))
+      .filter((id) => !chapterSeen || chapterSeen(id))
+      .map((id) => ({ id, title: chapterTitle.get(id) ?? id }));
+    const lex = words.map((id) => bundle.node(id)).filter((n): n is GraphNode => !!n);
+    const phrases = chunks.map((id) => bundle.node(id)).filter((n): n is GraphNode => !!n);
+    return {
+      id: u.id, num: Number(u.id.slice(1)), title: u.title, band: u.band, canDo: u.canDo, reached,
+      grammar, chunks, words, chapters, met: [...grammar, ...chunks, ...words],
+      // the unit's own name first, then the English words of its theme, then what it says it teaches
+      names: themeWords(u.theme),
+      es: reached ? [...lex.map((n) => n.es ?? ''), ...phrases.map((n) => n.es ?? '')].filter(Boolean) : [],
+      en: [u.canDo, ...(reached ? [...lex.map((n) => n.en ?? ''), ...phrases.map((n) => n.en ?? '')] : [])].filter(Boolean),
+      extra: reached ? grammar.map((id) => bundle.title(id)) : [],
+    };
+  });
+}
+
+/** Units that match the query, best first; unreached ones follow the reached ones. */
+export function searchUnits(entries: readonly UnitEntry[], query: string): { reached: UnitEntry[]; coming: UnitEntry[] } {
+  const hits = searchEntries(entries, query);
+  return { reached: hits.filter((e) => e.reached), coming: hits.filter((e) => !e.reached) };
+}
+
+/** The unit id for a "From unit N" line. */
+export function unitIdOfWeek(bundle: Pick<Bundle, 'units'>, week: number | undefined): string | undefined {
+  return week ? bundle.units[week - 1]?.id : undefined;
+}
 
 /** Lexeme nodes that the saved words map to (article stripped), without repeats. */
 export function savedWordNodes(saved: readonly SavedWord[], bundle: Bundle): NodeId[] {

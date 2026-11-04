@@ -13,7 +13,7 @@ import { session } from './driver';
 
 const DAY = 86_400_000;
 /** most screens in a row that may share one format */
-const MAX_RUN = 6;
+const MAX_RUN = 14; // a day's new words are shown in a row before they are asked
 /** a block that has started is finished; this much past the minutes is tolerated */
 const GRACE_MINUTES = 3;
 

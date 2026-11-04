@@ -1,5 +1,5 @@
 // Reference: find a verb form, a piece of grammar or a word, instantly.
-// One search box; Verbs, Grammar and Words below it. Nothing here asks the
+// One search box; Units, Grammar, Words and Verbs below it. Nothing here asks the
 // learner to do anything; "Practise" hands a spec to the practice screen.
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import type { TeachingScript } from '../../../content/schema';
@@ -8,11 +8,13 @@ import { practiceFor } from '../../../learner/weak';
 import type { PracticeSpec } from '../../session/practice-spec';
 import { Es, Heading, Paras, Rich, undash } from '../../components/text';
 import { useApp } from '../../context';
-import { exampleSentences, groupByTopic, grammarEntries, searchEntries, STRENGTH_TEXT, unmetWordEntries, wordEntries, type GrammarEntry, type WordEntry } from './model';
+import { exampleSentences, groupByTopic, grammarEntries, searchEntries, STRENGTH_TEXT, searchUnits, unitEntries, unitIdOfWeek, unmetWordEntries, wordEntries, type GrammarEntry, type UnitEntry, type WordEntry } from './model';
 import { cellsFor, findVerbs, seCellsFor, shownPersons, type VerbMatch } from './verbs';
 import { TENSE_ORDER, TENSE_PLAIN, taughtTenses } from './tenses';
 
-type Section = 'verbs' | 'grammar' | 'words';
+type Section = 'units' | 'grammar' | 'words' | 'verbs';
+const SECTIONS: Section[] = ['units', 'grammar', 'words', 'verbs'];
+const SECTION_LABEL: Record<Section, string> = { units: 'Units', grammar: 'Grammar', words: 'Words', verbs: 'Verbs' };
 const PAGE = 50;
 
 export function Reference({ onPractise, open }: { onPractise: (spec: PracticeSpec) => void; open?: string }) {
@@ -20,51 +22,144 @@ export function Reference({ onPractise, open }: { onPractise: (spec: PracticeSpe
   const [q, setQ] = useState('');
   const [section, setSection] = useState<Section>('grammar');
   const [shown, setShown] = useState(open ? 100_000 : PAGE);
+  const [unitOpen, setUnitOpen] = useState<string | undefined>();
 
   const met = useMemo(() => new Set<string>(learner.nodes()), [learner.nodes().length]);
-  const grammar = useMemo(() => grammarEntries(bundle, met), [bundle, met]);
+  const grammar = useMemo(() => grammarEntries(bundle, met, learner), [bundle, met]);
   const words = useMemo(() => wordEntries(bundle, learner, ui.state.saved), [bundle, met, ui.state.saved.length]);
   const tenses = useMemo(() => taughtTenses(met, (id) => bundle.node(id)?.tags), [bundle, met]);
 
+  const units = useMemo(() => unitEntries(bundle, met, (id) => learner.ledger.hasSeen('chapter', id), ui.path.unit), [bundle, met, ui.path.unit]);
+  const uHits = useMemo(() => searchUnits(units, q), [units, q]);
   const verbs = useMemo(() => findVerbs(q), [q]);
   const gHits = useMemo(() => searchEntries(grammar, q), [grammar, q]);
   const wHits = useMemo(() => searchEntries(words, q), [words, q]);
   // words the course has not reached: only worked out once there is something to look up
   const unmet = useMemo(() => (q.trim() ? unmetWordEntries(bundle, met) : []), [bundle, met, q.trim() !== '']);
   const comingWords = useMemo(() => searchEntries(unmet, q), [unmet, q]);
-  const counts = { verbs: verbs.length, grammar: gHits.length, words: wHits.length };
+  const counts = { units: uHits.reached.length, verbs: verbs.length, grammar: gHits.length, words: wHits.length };
 
   const change = (v: string) => {
     setQ(v);
     setShown(PAGE);
     // If this section has nothing for the new text, move to one that has.
     if (v.trim()) {
-      const order: Section[] = ['verbs', 'grammar', 'words'];
-      const c = { verbs: findVerbs(v).length, grammar: searchEntries(grammar, v).length, words: searchEntries(words, v).length };
+      const order: Section[] = ['grammar', 'words', 'units', 'verbs'];
+      const c = { units: searchUnits(units, v).reached.length, verbs: findVerbs(v).length, grammar: searchEntries(grammar, v).length, words: searchEntries(words, v).length };
       if (!c[section]) { const next = order.find((s) => c[s]); if (next) setSection(next); }
     }
   };
   const pick = (s: Section) => { setSection(s); setShown(PAGE); };
+  const goUnit = (id: string) => { setQ(''); setUnitOpen(id); setSection('units'); setShown(PAGE); };
 
   return (
     <main class="screen reference" id="main">
-      <Heading title="Reference" lead="Look something up: a verb in any form, a bit of grammar, a word." />
+      <Heading title="Look up" lead="Look something up: a verb in any form, a bit of grammar, a word. Or go back over a unit, or a theme like family or food." />
       <input
-        class="field" type="search" value={q} placeholder="Try pudimos, used to, or casa"
+        class="field" type="search" value={q} placeholder="Try pudimos, used to, casa, or travel"
         aria-label="Search the reference" autoCapitalize="off" autoCorrect="off" spellcheck={false}
         onInput={(e) => change((e.target as HTMLInputElement).value)}
       />
       <div class="chips" role="tablist" aria-label="What to look in">
-        {(['verbs', 'grammar', 'words'] as Section[]).map((s) => (
+        {SECTIONS.map((s) => (
           <button key={s} role="tab" aria-selected={section === s} class={`chip${section === s ? ' on' : ''}`} onClick={() => pick(s)}>
-            {s === 'verbs' ? 'Verbs' : s === 'grammar' ? 'Grammar' : 'Words'}{q.trim() ? ` (${counts[s]})` : ''}
+            {SECTION_LABEL[s]}{q.trim() ? ` (${counts[s]})` : ''}
           </button>
         ))}
       </div>
+      {section === 'units' ? <UnitsView q={q} hits={uHits} words={words} focus={unitOpen} onPractise={onPractise} onUnit={goUnit} /> : null}
       {section === 'verbs' ? <VerbsView q={q} verbs={verbs} tenses={tenses} onPractise={onPractise} onPick={change} /> : null}
-      {section === 'grammar' ? <GrammarView q={q} hits={gHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} open={open} /> : null}
+      {section === 'grammar' ? <GrammarView q={q} hits={gHits} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} open={open} onUnit={goUnit} /> : null}
       {section === 'words' ? <WordsView q={q} hits={wHits} coming={comingWords} shown={shown} more={() => setShown(shown + PAGE)} onPractise={onPractise} /> : null}
     </main>
+  );
+}
+
+
+// ---------------------------------------------------------------- units
+
+function UnitsView({ q, hits, words, focus, onPractise, onUnit }: {
+  q: string; hits: { reached: UnitEntry[]; coming: UnitEntry[] }; words: WordEntry[]; focus?: string;
+  onPractise: (s: PracticeSpec) => void; onUnit: (id: string) => void;
+}) {
+  const { bundle } = useApp();
+  const byId = useMemo(() => new Map(words.filter((w) => w.id).map((w) => [w.id!, w])), [words]);
+  // browsing: newest first, so what you are on now is at the top; searching: best match first
+  const reached = q.trim() ? hits.reached : [...hits.reached].reverse();
+  return (
+    <section>
+      {!reached.length ? <p class="small">{q.trim() ? 'No unit you have reached matches that.' : 'Units you reach will collect here.'}</p> : null}
+      {reached.map((u) => <UnitRow key={u.id} u={u} open={u.id === focus} words={byId} onPractise={onPractise} onUnit={onUnit} />)}
+      {hits.coming.length ? (
+        <details class="later">
+          <summary>Coming up ({hits.coming.length})</summary>
+          <ul class="coming">
+            {hits.coming.slice(0, 20).map((u) => <li key={u.id}>Unit {u.num} {'\u00b7'} {undash(u.title)}</li>)}
+          </ul>
+        </details>
+      ) : null}
+    </section>
+  );
+}
+
+function UnitRow({ u, open, words, onPractise, onUnit }: {
+  u: UnitEntry; open: boolean; words: Map<string, WordEntry>;
+  onPractise: (s: PracticeSpec) => void; onUnit: (id: string) => void;
+}) {
+  const { bundle, learner } = useApp();
+  const [on, setOn] = useState(open);
+  const gram = useMemo(() => (on ? grammarEntries(bundle, new Set(u.grammar), learner).filter((g) => g.met) : []), [on, u.id]);
+  return (
+    <details class="entry unit" open={open || undefined} onToggle={(ev) => setOn((ev.target as HTMLDetailsElement).open)}>
+      <summary>
+        <span class="unit-head">
+          <span>Unit {u.num} {'\u00b7'} {undash(u.title)}</span>
+          <span class="small">{u.band} {'\u00b7'} {undash(u.canDo)}</span>
+        </span>
+      </summary>
+      {on ? <>
+        {gram.length ? <><h3 class="topic-head">Grammar and patterns</h3>{gram.map((g) => <GrammarItem key={g.id} e={g} onPractise={onPractise} />)}</> : null}
+        {u.chunks.length ? (
+          <>
+            <h3 class="topic-head">Phrases</h3>
+            {u.chunks.map((id) => {
+              const s = bundle.segments(id)[0];
+              return s ? <div key={id} class="example"><Es block>{s.es}</Es><p class="en">{undash(s.en)}</p></div> : null;
+            })}
+          </>
+        ) : null}
+        {u.words.length ? (
+          <>
+            <h3 class="topic-head">Words</h3>
+            <ul class="words">
+              {u.words.map((id) => {
+                const w = words.get(id);
+                if (!w) return null;
+                return (
+                  <li key={id} class="word">
+                    <span class={`dot ${w.strength}`} role="img" aria-label={STRENGTH_TEXT[w.strength]} title={STRENGTH_TEXT[w.strength]} />
+                    <span class="word-text"><Es>{w.word}</Es><span class="word-gloss"> {undash(w.gloss)}</span></span>
+                    <button class="btn quiet" onClick={() => onPractise({ kind: 'nodes', nodes: [id] })} aria-label={`Practise ${w.word}`}>Practise</button>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        ) : null}
+        {u.chapters.length ? (
+          <>
+            <h3 class="topic-head">Story</h3>
+            <ul class="coming">{u.chapters.map((c) => <li key={c.id}>{undash(c.title)}</li>)}</ul>
+            <p class="small">Read them again in the Story tab.</p>
+          </>
+        ) : null}
+        {u.met.length ? (
+          <div class="actions">
+            <button class="btn primary" onClick={() => onPractise({ kind: 'translate', unit: u.id, title: `Unit ${u.num}` })}>Practise this unit</button>
+          </div>
+        ) : null}
+      </> : null}
+    </details>
   );
 }
 
@@ -148,8 +243,8 @@ function TenseTable({ inf, tense, hits }: { inf: string; tense: TenseKey; hits: 
 
 // ---------------------------------------------------------------- grammar
 
-function GrammarView({ q, hits, shown, more, onPractise, open }: {
-  open?: string; q: string; hits: GrammarEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
+function GrammarView({ q, hits, shown, more, onPractise, open, onUnit }: {
+  open?: string; onUnit: (id: string) => void; q: string; hits: GrammarEntry[]; shown: number; more: () => void; onPractise: (s: PracticeSpec) => void;
 }) {
   const met = hits.filter((e) => e.met);
   const coming = hits.filter((e) => !e.met);
@@ -163,7 +258,7 @@ function GrammarView({ q, hits, shown, more, onPractise, open }: {
       {groups.map((g) => (
         <div key={g.topic} class="topic">
           <h3 class="topic-head">{g.label}</h3>
-          {g.entries.map((e) => <GrammarItem key={e.id} e={e} onPractise={onPractise} open={e.id === open} />)}
+          {g.entries.map((e) => <GrammarItem key={e.id} e={e} onPractise={onPractise} open={e.id === open} onUnit={onUnit} />)}
         </div>
       ))}
       {met.length > shown ? <button class="btn quiet" onClick={more}>Show more ({met.length - shown})</button> : null}
@@ -180,9 +275,10 @@ function GrammarView({ q, hits, shown, more, onPractise, open }: {
   );
 }
 
-function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void; open?: boolean }) {
+function GrammarItem({ e, onPractise, open: openFirst, onUnit }: { e: GrammarEntry; onPractise: (s: PracticeSpec) => void; open?: boolean; onUnit?: (id: string) => void }) {
   const { bundle, learner } = useApp();
   const [open, setOpen] = useState(!!openFirst);
+  const unitId = unitIdOfWeek(bundle, e.week);
   const examples = useMemo(() => (open ? exampleSentences(bundle, learner, e.id) : []), [open, e.id]);
   const [script, setScript] = useState<TeachingScript | undefined>(() => bundle.scripts.get(e.id));
   const [loading, setLoading] = useState(false);
@@ -197,7 +293,7 @@ function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPr
   }, [open, e.id]);
   return (
     <details class="entry" open={openFirst || undefined} onToggle={(ev) => setOpen((ev.target as HTMLDetailsElement).open)}>
-      <summary>{undash(e.title)}</summary>
+      <summary>{e.met ? <span class={`dot ${e.strength}`} role="img" aria-label={STRENGTH_TEXT[e.strength]} title={STRENGTH_TEXT[e.strength]} /> : null}{undash(e.title)}</summary>
       {open ? <>
         {script ? <ScriptView script={script} /> : loading ? <p class="small" data-loading>Loading</p> : <Short id={e.id} />}
         {examples.length ? (
@@ -212,7 +308,11 @@ function GrammarItem({ e, onPractise, open: openFirst }: { e: GrammarEntry; onPr
         <div class="actions">
           <button class="btn primary" onClick={() => onPractise(practiceFor(e.id, (id) => bundle.node(id), (id) => learner.isIntroduced(id)))}>Practise this</button>
         </div>
-        {e.week ? <p class="small-print">From unit {e.week}</p> : null}
+        {e.week ? (
+          <p class="small-print">
+            {unitId && onUnit ? <button class="btn link" onClick={() => onUnit(unitId)}>From unit {e.week}</button> : <>From unit {e.week}</>}
+          </p>
+        ) : null}
       </> : null}
     </details>
   );
