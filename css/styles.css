@@ -1135,3 +1135,8 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .stage-count .stop-link { margin-left: 10px; font-size: 0.85em; opacity: 0.8; }
 .chapter-recap { font-style: italic; }
 .chapter-hook { margin-top: 12px; font-style: italic; }
+
+/* ---- apply feedback: character diff of the learner's text against the expected ---- */
+.diff-line { font-size:1.1rem; font-weight:600; }
+.diff-del { color:var(--bad); text-decoration:line-through; }
+.diff-ins { color:var(--good); text-decoration:underline; }

@@ -17,9 +17,120 @@ window.StageApply = (function () {
     return v && idx >= 0 ? E.conjugate(v, item.tense)[idx] : null;
   }
 
+
+  /* ---- feedback: the pure parts (no DOM; tools/test-apply-feedback.js drives them) ----
+   * Evidence rule: a matched error gets a one-line hint and one retry before the
+   * answer is shown; the answer and the reason follow; an unmatched error gets a
+   * character diff. The item returns once, at least 3 items later. */
+  var UNNAMED = { 'wrong-word': 1, differs: 1, empty: 1, fragment: 1 };
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function plain(s) { return String(s || '').replace(/ñ/g, '\u0001').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\u0001/g, 'ñ').toLowerCase(); }
+  function libMatch(lib) { return lib || (window.LIB && window.LIB.match) || null; }
+
+  // The sentence an item's blank sits in, with `form` put into the blank.
+  function sentenceOf(it, form) {
+    if (it.type === 'transform') return String(form || '');
+    var t = String(it.text || '').replace(/\s*«[^»]*»\s*$/, '');
+    if (t.indexOf('___') === -1) return String(form || '');
+    return t.replace(/___\s*\([^)]*\)/, form).replace('___', form);
+  }
+  function tokensOf(m, s) { return m.canon(s).toks.map(function (x) { return x.t; }); }
+
+  /* What the trap rules make of a wrong text: { matched, hint, kind } or null
+   * when nothing can be said. A lesson pitfall wins; then the plain diagnosis
+   * (verb ending, ser or estar, por or para, article, ...). Location-only
+   * answers (wrong-word, differs, ...) are not "matched": they get the diff. */
+  function hintFor(it, typed, answer, lib) {
+    var m = libMatch(lib);
+    if (!m || !String(typed || '').trim()) return null;
+    try {
+      if (m.pitfallFor && it.nodes) {
+        var pf = m.pitfallFor(it.nodes, typed);
+        if (pf && pf.why) return { matched: true, hint: pf.why, kind: 'pitfall' };
+      }
+      var ta = tokensOf(m, sentenceOf(it, typed)), tb = tokensOf(m, sentenceOf(it, answer));
+      if (ta.join(' ') === tb.join(' ')) return null;
+      var d = m.diagnose(ta, tb);
+      return { matched: !UNNAMED[d.kind], hint: d.hint, kind: d.kind };
+    } catch (e) { return null; }
+  }
+
+  // An accent slip: only accents differ, and what was typed is not itself another word.
+  function isAccentSlip(typed, answer, isWord) {
+    var a = String(typed || '').trim().toLowerCase().split(/\s+/), b = String(answer || '').trim().toLowerCase().split(/\s+/);
+    if (a.length !== b.length) return false;
+    var slipped = false;
+    for (var k = 0; k < a.length; k++) {
+      if (a[k] === b[k]) continue;
+      if (plain(a[k]) !== plain(b[k])) return false;
+      if (isWord && isWord(a[k])) return false;
+      slipped = true;
+    }
+    return slipped;
+  }
+  function realWord(w) {
+    try { return window.ENGINE.analyzeToken(w).some(function (x) { return x.accentExact; }); } catch (e) { return false; }
+  }
+
+  // Character diff of what the learner wrote against the expected text, as HTML.
+  function diffOps(mine, want) {
+    var n = mine.length, m = want.length, L = [], i, j;
+    for (i = 0; i <= n; i++) { L.push([]); for (j = 0; j <= m; j++) L[i].push(0); }
+    for (i = n - 1; i >= 0; i--) for (j = m - 1; j >= 0; j--)
+      L[i][j] = mine.charAt(i) === want.charAt(j) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    var ops = [];
+    function push(op, c) { var last = ops[ops.length - 1]; if (last && last.op === op) last.s += c; else ops.push({ op: op, s: c }); }
+    i = 0; j = 0;
+    while (i < n && j < m) {
+      if (mine.charAt(i) === want.charAt(j)) { push('eq', mine.charAt(i)); i++; j++; }
+      else if (L[i + 1][j] >= L[i][j + 1]) { push('del', mine.charAt(i)); i++; }
+      else { push('ins', want.charAt(j)); j++; }
+    }
+    while (i < n) { push('del', mine.charAt(i++)); }
+    while (j < m) { push('ins', want.charAt(j++)); }
+    return ops;
+  }
+  function diffHtml(mine, want) {
+    return diffOps(mine, want).map(function (o) {
+      return o.op === 'eq' ? esc(o.s) : o.op === 'del' ? '<del class="diff-del">' + esc(o.s) + '</del>' : '<ins class="diff-ins">' + esc(o.s) + '</ins>';
+    }).join('');
+  }
+
+  // outcome: 'first' (right first time), 'hint' (right after the hint), 'miss' (wrong twice, or shown).
+  function gradeFor(outcome) {
+    if (outcome === 'first') return { ok: true, meta: {} };
+    if (outcome === 'hint') return { ok: true, meta: { usedHint: true } };
+    return { ok: false, meta: {} };
+  }
+  // A missed item goes back once, 3 items after the one on screen (or to the end).
+  function requeue(queue, at, it) {
+    if (it._again) return false;
+    var copy = {}; for (var k in it) if (Object.prototype.hasOwnProperty.call(it, k)) copy[k] = it[k];
+    copy._again = true;
+    queue.splice(Math.min(at + 4, queue.length), 0, copy);
+    return true;
+  }
+  // The prompt line for a choice: bank kinds ask their own question.
+  function choicePrompt(it) {
+    var m = /^(“[^”]*”)\s+(\S[\s\S]*)$/.exec(String(it.text || ''));
+    if (it.bankKind === 'read') return { text: m ? m[1] : it.text, q: m ? m[2] : 'Which one fits?' };
+    if (it.bankKind === 'match') return { text: m ? m[1] : it.text, q: 'Which sentence says this?' };
+    if (it.bankKind === 'gap') return { text: it.text, q: 'Which word goes in the gap?' };
+    return { text: it.text, q: 'Which one does this sentence need?' };
+  }
+  // Why a chosen option was wrong: the item's own reason, else a matched rule, else one neutral line.
+  function whyWrong(it, chosen, answer, lib) {
+    if (it.why) return it.why;
+    if (it.bankKind !== 'read' && it.bankKind !== 'match') {
+      var h = hintFor(it, chosen, answer, lib);
+      if (h && h.matched) return h.hint;
+    }
+    return 'Not this one. The sentence needs ' + answer + '.';
+  }
+
   // Conjugation-in-context, scheduled per (lemma, tense) — see js/srs.js.
   function tenseId(it) { return 'vt:' + it.inf + ':' + it.tense; }
-  function gradeTense(it, good) { if (it.type === 'cloze' && S) { S.enrol(tenseId(it)); S.grade(tenseId(it), good); } }
+  function gradeTense(it, good, meta) { if (it.type === 'cloze' && S) { S.enrol(tenseId(it)); S.grade(tenseId(it), good, meta || {}); } }
 
   // Log a revealed item into the error log so it resurfaces in review.
   function logMiss(it, answer) {
@@ -58,6 +169,7 @@ window.StageApply = (function () {
   function run(host, ctx, done) {
     var items = ctx.applyItems || [];
     if (!items.length) { done(); return; }
+    var queue = items.slice();                     // missed items are pushed back into this, once
     var st = ctx.step || null, ex = (st && st.extra) || {};
     var i = Math.min((st && st.at) || 0, items.length), correct = ex.correct || 0, total = items.length;
 
@@ -67,11 +179,22 @@ window.StageApply = (function () {
     wrap.appendChild(progress); wrap.appendChild(body);
     host.appendChild(wrap);
 
-    function nextAfter(good) { if (good) correct++; i++; show(); }
+    function advance() { i++; show(); }
+    // Score and schedule an item once, when it is settled. A repeat is practice only.
+    function settle(it, outcome, record) {
+      var g = gradeFor(outcome);
+      if (it._again) return g;
+      if (g.ok) correct++;
+      else {
+        if (record) record();
+        requeue(queue, i, it);
+      }
+      return g;
+    }
 
     // word-bank chooser for a cloze (beginner)
     function showWordbank(it, answer) {
-      body.appendChild(UI.el('p', 'muted small', 'Tap the correct form of <b>' + it.inf + '</b>.'));
+      body.appendChild(UI.el('p', 'muted small', 'Tap the correct form of <b>' + it.inf + '</b>. Which form goes here?'));
       var opts = E.shuffle([answer].concat(clozeDistractors(it, answer)));
       var fb = UI.el('div', 'feedback');
       var bank = UI.el('div', 'word-bank');
@@ -82,15 +205,17 @@ window.StageApply = (function () {
           if (answered) return; answered = true;
           var right = opt === answer;
           b.classList.add(right ? 'right' : 'wrong');
-          gradeTense(it, right);
-          if (!right) {
-            Array.prototype.forEach.call(bank.children, function (c) { if (c.textContent === answer) c.classList.add('right'); });
+          var g = settle(it, right ? 'first' : 'miss', function () {
             if (window.ErrorLog) window.ErrorLog.record({ id: 'err:cloze:' + E.normalize(it.text), front: it.text.replace('___', '＿＿＿') + '   [' + it.inf + ']', back: answer, kind: 'error', source: 'apply-cloze', topic: it.tense ? 'tense:' + it.tense : null, reviewable: true });
-          }
-          fb.innerHTML = right ? '¡Correcto! <span class="muted">' + (it.en || '') + '</span>'
-            : '<b>' + answer + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person;
+          });
+          if (!it._again) gradeTense(it, g.ok, g.meta);
+          if (!right) Array.prototype.forEach.call(bank.children, function (c) { if (c.textContent === answer) c.classList.add('right'); });
+          fb.innerHTML = right ? '¡Correcto! <span class="muted">' + esc(it.en || '') + '</span>'
+            : '<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person
+              + '<br><span class="muted">' + esc(whyWrong(it, opt, answer)) + '</span>';
           fb.className = 'feedback ' + (right ? 'good' : 'bad');
-          setTimeout(function () { nextAfter(right); }, right ? 850 : 1500);
+          if (right) setTimeout(advance, 850);
+          else fb.appendChild(UI.nextBtn('Continuar →', advance));
         });
         bank.appendChild(b);
       });
@@ -121,9 +246,9 @@ window.StageApply = (function () {
      * js/views/review.js already runs for verb+tense pairs (`vt:`). */
     function choiceId(it) { return 'ac:' + (it.focus || E.normalize(it.text)); }
     function showChoice(it) {
-      body.appendChild(UI.el('div', 'cloze-text',
-        it.text.replace('___', '<span class="blank">＿＿＿</span>')));
-      body.appendChild(UI.el('p', 'muted small', 'Which one does this sentence need?'
+      var pr = choicePrompt(it);
+      body.appendChild(UI.el('div', 'cloze-text', String(pr.text).replace('___', '<span class="blank">＿＿＿</span>')));
+      body.appendChild(UI.el('p', 'muted small', pr.q
         + (it.options.some(UI.isNothing) ? ' ("(nothing)" means nothing goes here.)' : '')));
       var fb = UI.el('div', 'feedback');
       var row = UI.el('div', 'row-controls');
@@ -133,9 +258,8 @@ window.StageApply = (function () {
         b.addEventListener('click', function () {
           if (locked) return; locked = true;
           var good = oi === it.answer;
-          if (good) correct++;
-          if (S) { S.enrol(choiceId(it)); S.grade(choiceId(it), good); }
-          if (!good && window.ErrorLog) {
+          var g = settle(it, good ? 'first' : 'miss', function () {
+            if (!window.ErrorLog) return;
             window.ErrorLog.record({
               id: 'err:choice:' + E.normalize(it.text),
               front: it.text.replace('___', '＿＿＿'), back: it.options[it.answer],
@@ -149,13 +273,16 @@ window.StageApply = (function () {
                * miss, which is no use for noticing a pattern. */
               topic: 'lesson:' + it.focus, reviewable: true
             });
-          }
+          });
+          if (!it._again && S) { S.enrol(choiceId(it)); S.grade(choiceId(it), g.ok, g.meta); }
+          b.classList.add(good ? 'right' : 'wrong');
           fb.className = 'feedback ' + (good ? 'good' : 'bad');
-          fb.innerHTML = '<b>' + UI.optLabel(it.options[it.answer]) + '</b>'
+          var right = UI.optLabel(it.options[it.answer]);
+          fb.innerHTML = '<b>' + esc(right) + '</b>'
             + (UI.isNothing(it.options[it.answer]) ? ' <span class="muted">' + UI.NOTHING_NOTE + '</span>' : '')
-            + (it.why ? '<br>' + it.why : '')
-            + (it.en ? '<br><span class="muted">' + it.en + '</span>' : '');
-          row.appendChild(UI.nextBtn('Continuar →', function () { i++; show(); }));
+            + (good ? (it.why ? '<br>' + it.why : '') : '<br>' + (it.why ? it.why : esc(whyWrong(it, UI.optLabel(opt), right))))
+            + (it.en ? '<br><span class="muted">' + esc(it.en) + '</span>' : '');
+          row.appendChild(UI.nextBtn('Continuar →', advance));
         });
         row.appendChild(b);
       });
@@ -164,10 +291,11 @@ window.StageApply = (function () {
     }
 
     function show() {
-      if (st) st.save(i, { correct: correct });   // the place survives a reload
-      if (i >= items.length) { finish(); return; }
-      var it = items[i];
-      progress.textContent = 'Frase ' + (i + 1) + ' / ' + items.length;
+      // the place survives a reload: count the distinct items passed, not the repeats
+      if (st) st.save(queue.slice(0, i).filter(function (x) { return !x._again; }).length, { correct: correct });
+      if (i >= queue.length) { finish(); return; }
+      var it = queue[i];
+      progress.textContent = 'Frase ' + (i + 1) + ' / ' + queue.length;
       UI.clear(body);
 
       if (it.type === 'choice') { showChoice(it); return; }
@@ -176,7 +304,7 @@ window.StageApply = (function () {
       if (it.type === 'cloze') {
         answer = clozeAnswer(it);
         prompt = it.text.replace('___', '<span class="blank">＿＿＿</span>');
-        hintNote = 'Fill the blank with the right form of the verb in brackets.';
+        hintNote = it.bankKind === 'cloze' ? 'Which form goes here? Type the right form of the verb in brackets.' : 'Fill the blank with the right form of the verb in brackets.';
       } else {                                     // transform
         answer = it.to;
         prompt = '<span class="muted">' + it.instruction + '</span><br>' + it.from;
@@ -195,7 +323,7 @@ window.StageApply = (function () {
       input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
       var fb = UI.el('div', 'feedback');
       var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
-      var revealed = false, locked = false;
+      var attempts = 0, hinted = false, firstHint = null, settled = false, wrongDone = false;
       body.appendChild(input);
       body.appendChild(UI.accentBar(function () { return input; }));
       body.appendChild(fb);
@@ -204,45 +332,62 @@ window.StageApply = (function () {
 
       function explain() {
         var bits = [];
-        if (it.type === 'cloze') bits.push('<b>' + answer + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person);
-        else bits.push('<b>' + answer + '</b>');
-        if (it.en) bits.push('<span class="muted">' + it.en + '</span>');
+        if (it.type === 'cloze') bits.push('<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person);
+        else bits.push('<b>' + esc(answer) + '</b>');
+        if (it.en) bits.push('<span class="muted">' + esc(it.en) + '</span>');
         return bits.join('<br>');
       }
-      function next(good) {
-        if (good) correct++;
-        i++; show();
+      function logMissNow() { logMiss(it, answer); }
+      // right: first time, or after the hint; an accent slip is right with a note
+      function passed(slip) {
+        settled = true;
+        var g = settle(it, hinted ? 'hint' : 'first');
+        if (!it._again) gradeTense(it, true, g.meta);
+        fb.innerHTML = '¡Correcto!' + (slip ? '<br>Right. Mind the accent: <b>' + esc(answer) + '</b>' : '') + '<br>' + explain();
+        fb.className = 'feedback good';
+        setTimeout(advance, slip ? 1600 : 900);
+      }
+      // wrong twice, no named cause, or shown: the answer, the reason, and the way on
+      function failed(typed, h) {
+        settled = true; wrongDone = true;
+        settle(it, 'miss', logMissNow);
+        if (!it._again) gradeTense(it, false, {});
+        var why = firstHint || (h && h.matched ? h : null);
+        var reason = why ? '<br>' + esc(why.hint)
+          : (typed ? '<br><span class="diff-line">' + diffHtml(typed, answer) + '</span><br><span class="muted small">Struck is yours to remove, underlined is missing.</span>' : '');
+        fb.innerHTML = explain() + reason;
+        fb.className = 'feedback reveal';
+        reveal.style.display = 'none';
+        body.appendChild(UI.nextBtn('Continuar →', advance));
       }
 
       input.addEventListener('keydown', function (e) {
-        if (e.key !== 'Enter' || locked) return;
+        if (e.key !== 'Enter' || settled && !wrongDone) return;
         e.preventDefault();
-        if (revealed) { next(false); return; }
-        var r = C.checkExact(input.value, answer);
-        if (r.pass) {
-          locked = true;
-          gradeTense(it, true);
-          fb.innerHTML = '¡Correcto!<br>' + explain();
-          fb.className = 'feedback good';
-          setTimeout(function () { locked = false; next(true); }, 900);
-        } else {
-          fb.textContent = r.near ? 'Nearly. Check the accents' : 'Not quite. Look at the time words and the subject';
+        if (wrongDone) { advance(); return; }
+        var typed = input.value.trim();
+        if (!typed) return;
+        var r = C.checkExact(typed, answer);
+        if (r.pass) { passed(false); return; }
+        if (r.near && isAccentSlip(typed, answer, realWord)) { passed(true); return; }
+        var h = hintFor(it, typed, answer);
+        if (attempts === 0 && h && h.matched) {
+          attempts = 1; hinted = true; firstHint = h;
+          fb.innerHTML = esc(h.hint) + '<br><span class="muted">Try once more.</span>';
           fb.className = 'feedback bad';
+          input.select();
+          return;
         }
+        failed(typed, h);
       });
       reveal.addEventListener('click', function () {
-        if (locked) return;
-        if (revealed) { next(false); return; }
-        revealed = true;
-        gradeTense(it, false);
-        fb.innerHTML = explain();
-        fb.className = 'feedback reveal';
-        reveal.textContent = 'Next →';
-        logMiss(it, answer);
+        if (settled) return;
+        failed('', null);
       });
     }
     show();
   }
 
-  return { key: 'apply', label: 'Aplicar', icon: '🧩', run: run };
+  return { key: 'apply', label: 'Aplicar', icon: '🧩', run: run,
+    fb: { hintFor: hintFor, isAccentSlip: isAccentSlip, diffOps: diffOps, diffHtml: diffHtml, gradeFor: gradeFor, requeue: requeue, choicePrompt: choicePrompt, whyWrong: whyWrong, sentenceOf: sentenceOf } };
 })();
