@@ -427,6 +427,13 @@ window.StageLearn = (function () {
    * its band files, so the lesson page costs nothing on a day without one. If
    * it has not arrived when the lesson is due (offline, a slow link, a 404),
    * the old lesson is taught exactly as before. */
+  /* A script may also serve the lessons that follow it on the same theme
+   * (`serves: [...]`, used at C1 where a run of notion lessons is one idea). */
+  function scriptIn(table, id) {
+    if (table[id]) return table[id];
+    for (var k in table) { var sc = table[k]; if (sc && sc.serves && sc.serves.indexOf(id) !== -1) return sc; }
+    return null;
+  }
   var SCRIPT_BANDS = { A1: 1, A2: 1, B1: 1, B2: 1, C1: 1 };       // band files that exist
   var scriptWaiters = {}, scriptFailed = {};
   var SCRIPT_WAIT_MS = 2500;
@@ -463,7 +470,7 @@ window.StageLearn = (function () {
   function withScript(host, ctx, l, cb) {
     var band = scriptBand(ctx, l), key = 'SCRIPTS_' + band;
     if (!band || !SCRIPT_BANDS[band] || scriptFailed[band]) { cb(null); return; }
-    if (window[key]) { cb(window[key][l.id] || null); return; }
+    if (window[key]) { cb(scriptIn(window[key], l.id)); return; }
     var settled = false, note = UI.el('p', 'muted', UI.t('Cargando la lección…', 'Loading the lesson…'));
     host.appendChild(note);
     var settle = function (sc) {
@@ -473,7 +480,7 @@ window.StageLearn = (function () {
       cb(sc);
     };
     var timer = setTimeout(function () { settle(null); }, SCRIPT_WAIT_MS);
-    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? window[key][l.id] || null : null); });
+    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? scriptIn(window[key], l.id) : null); });
   }
 
   // Script text: HTML-escaped, *Spanish* in italics, \n as a line break.
