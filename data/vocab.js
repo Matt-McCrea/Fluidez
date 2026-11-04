@@ -609,6 +609,7 @@ window.VOCAB = [
 {es:'la bebida', en:'drink', cat:'alimentacion', cefr:'A2', theme:'alimentacion', gender:'f', pcic:["nociones_especificas:A2:99"], collocations:["bebida con alcohol","bebida con hielo","bebida sin alcohol","bebida sin hielo","bebida refrescante","bebida alcohólica"]},
 {es:'el zumo', en:'juice', cat:'alimentacion', cefr:'A2', theme:'alimentacion', gender:'m', pcic:["nociones_especificas:A2:100"], collocations:["zumo de naranja","zumo de tomate","zumo de frutas"], variety:'es-ES'},
 {es:'el jugo', en:'juice', cat:'alimentacion', cefr:'A1', theme:'alimentacion', gender:'m', collocations:["jugo de naranja","jugo de mango","jugo natural"]},
+{es:'el costo', en:'the cost', cat:'compras', cefr:'B1', theme:'compras', gender:'m', collocations:["el costo de vida","a bajo costo"]},
 {es:'la infusión', en:'herbal tea', cat:'alimentacion', cefr:'A2', theme:'alimentacion', gender:'f', pcic:["nociones_especificas:A2:101"], collocations:["infusión de tila","infusión de manzanilla","infusión de poleo"]},
 {es:'ron', en:'rum', cat:'alimentacion', cefr:'A2', theme:'alimentacion', pcic:["nociones_especificas:A2:102"]},
 {es:'la ginebra', en:'gin', cat:'alimentacion', cefr:'A2', theme:'alimentacion', gender:'f', pcic:["nociones_especificas:A2:102"]},
