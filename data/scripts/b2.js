@@ -1,12 +1,18 @@
 /* ============================================================================
- * TEACHING SCRIPTS, B2 units 1 to 4 (window.SCRIPTS_B2), keyed by lesson id.
+ * TEACHING SCRIPTS, B2 units 1 to 8 (window.SCRIPTS_B2), keyed by lesson id.
  * Units b2-u44 (the ladder of agreeing, opining, softening and certainty),
  * b2-u45 (building an argument and the words that hold it together), b2-u46
  * (what didn't happen and what probably did: the compound subjunctives, the
- * guess inside the verb, need, lasting and causing) and b2-u47 (feelings at
- * the right strength, then degree, interest and verdicts): every lesson on
- * the path from COURSE_BANDS.B2 to the end of b2-u47 (days 353 to 396 when
- * this was written; the test reads the days from data/course.js).
+ * guess inside the verb, need, lasting and causing), b2-u47 (feelings at
+ * the right strength, then degree, interest and verdicts), b2-u48 (reading
+ * the news: figures, rises, shares, rough counts, events, value and time),
+ * b2-u49 (reporting what people said, and knowing, guessing, doing early,
+ * at once and again), b2-u50 (moving the weight in a sentence: fronting,
+ * spotlights, turning it up, no, exclamations and tone) and b2-u51
+ * (describing precisely: material, texture, shape, weight, wet, colour,
+ * dirt, sight, sound, taste, origin and age): every lesson on the path from
+ * COURSE_BANDS.B2 to the end of b2-u51 (days 353 to 449 when this was
+ * written; the test reads the days from data/course.js).
  *
  * Same anatomy and shape as data/scripts/b1.js (tools/test-scripts-b2.js
  * checks every rule), with what the owner asked of the upper bands:
@@ -2748,6 +2754,3321 @@ window.SCRIPTS_B2 = {
     "*No es que me indigna* keeps the ordinary form: *no es que* takes *me indigne*.",
     "Using *me indigna* for everything is shouting; save it for what's unfair.",
     "Repeating *molesto* five times flattens the story: change the word as the feeling changes."
+  ]
+},
+
+/* ---- unit b2-u48 · Reading the news -------------------------------------- */
+
+"nt-cantidad-numerica-b2": {
+  source: "merged",
+  hook: {
+    line: "A news site in Bogotá publishes the monthly jobs figures. Every line measures something different: a rate, a total, a share, a part of a group, a rough crowd.",
+    es: "La tasa de desempleo en Bogotá bajó al 9,8 % en el último trimestre.\nLa cifra de personas sin trabajo sigue por encima de las cuatrocientas mil.\nEl 40 % de los nuevos empleos son informales, según el DANE.\nTres de los cinco sectores con más contratos son de servicios.\nUn millar de jóvenes consiguió su primer empleo con el programa de la alcaldía.",
+    en: "The unemployment rate in Bogotá fell to 9.8% in the last quarter.\nThe number of people out of work is still above four hundred thousand.\n40% of the new jobs are informal, according to DANE.\nThree of the five sectors with the most contracts are in services.\nAbout a thousand young people got their first job through the city's programme."
+  },
+  examples: [
+    { es: "El índice de precios subió un 0,7 % en marzo, por el costo de los alimentos.", en: "The price index rose by 0.7% in March, because of the cost of food." },
+    { es: "Dos de mis hermanos trabajan en el centro, pero el menor sigue buscando empleo desde enero.", en: "Two of my brothers work downtown, but the youngest has been looking for a job since January." },
+    { es: "Centenares de personas hicieron fila desde la madrugada, y decenas se quedaron sin entrar a la feria.", en: "Hundreds of people queued from the small hours, and dozens never got into the fair." }
+  ],
+  rule: "News Spanish measures with a short word, then *de*, then the thing measured, usually with no article.\n*La tasa de desempleo* is a rate. *El índice de precios* is an index. *La cifra de visitantes* is a figure or total. *El porcentaje de* is a share. *Número* is never a rate.\nA percentage takes a small word in front: *subió un 5 %* (by 5%), *subió al 5 %* (to 5%), *el 40 % de los empleos* (40% of).\nColombia writes decimals with a comma: *9,8 %*.\nRough big numbers: *decenas de*, *centenares de*, *un millar de*.\nA number plus *de* picks part of a bigger group: *dos de mis hermanos* means you have more than two.",
+  readAndPick: [
+    { q: "How many brothers does the writer have?", es: "Dos de mis hermanos trabajan en el centro.",
+      options: ["Just the two", "More than two", "Only one of them"], answer: 1,
+      why: "*Dos de mis hermanos* picks two out of a bigger group. Exactly two would be *mis dos hermanos*." },
+    { q: "What does *la tasa de desempleo* measure?", es: "La tasa de desempleo bajó al 9,8 %.",
+      options: ["How many firms shut down", "The share out of work", "The average wage"], answer: 1,
+      why: "*La tasa de* is a rate: the share of people who want work and have none." },
+    { q: "How did prices change?", es: "El índice de precios subió un 0,7 % en marzo.",
+      options: ["They rose by 0.7%", "They reached 0.7%", "They fell by 0.7%"], answer: 0,
+      why: "*Subió un 0,7 %* is the size of the rise. *Subió al 0,7 %* would give the new level." },
+    { q: "How many young people got a first job?", es: "Un millar de jóvenes consiguió su primer empleo.",
+      options: ["Roughly a thousand", "Exactly a million of them", "A few dozen"], answer: 0,
+      why: "*Un millar de* is about a thousand, a round figure. A million is *un millón*." },
+    { q: "What share of the new jobs are informal?", es: "El 40 % de los nuevos empleos son informales.",
+      options: ["Forty jobs", "Four in a hundred", "Four jobs in ten"], answer: 2,
+      why: "*El 40 % de* is a share of the whole: forty in every hundred." }
+  ],
+  yourTurn: [
+    { en: "The unemployment rate fell by 2%.", es: "La tasa de desempleo bajó un 2 %.", accept: ["La tasa de desempleo bajó un dos por ciento.", "La tasa de desempleo cayó un 2 %."] },
+    { en: "Three of the candidates withdrew.", es: "Tres de los candidatos se retiraron.", accept: [] },
+    { en: "Thirty percent of the customers pay by card.", es: "El 30 % de los clientes paga con tarjeta.", accept: ["El 30 % de los clientes [paga|pagan] con tarjeta.", "El treinta por ciento de los clientes [paga|pagan] con tarjeta."] },
+    { en: "Hundreds of people were waiting outside.", es: "Centenares de personas esperaban afuera.", accept: ["[Centenares|Cientos] de personas esperaban [afuera|fuera]."] },
+    { en: "I miscalculated the total.", es: "Calculé mal el total.", accept: [] }
+  ],
+  translate: [
+    { en: "The pass rate went up this year.", es: "El porcentaje de aprobados subió este año.", accept: ["[El porcentaje|La tasa] de aprobados subió este año.", "Este año subió [el porcentaje|la tasa] de aprobados."] },
+    { en: "Two of my cousins live in Medellín, but the rest live here in Bogotá.", es: "Dos de mis primos viven en Medellín, pero los demás viven aquí en Bogotá.", accept: ["Dos de mis primos viven en Medellín, pero [los demás|el resto] [viven|vive] [aquí|acá] en Bogotá."] },
+    { en: "About a thousand people signed the letter.", es: "Un millar de personas firmó la carta.", accept: ["Un millar de personas [firmó|firmaron] la carta.", "[Alrededor de|Unas|Cerca de] mil personas firmaron la carta."] },
+    { en: "Seven is an odd number.", es: "El siete es un número impar.", accept: ["Siete es un número impar."] },
+    { en: "The poverty rate is still high. However, according to the city, the figure fell by 3% last year. Forty percent of the new jobs are informal.", es: "La tasa de pobreza sigue alta. Sin embargo, según la alcaldía, la cifra bajó un 3 % el año pasado. El 40 % de los nuevos empleos son informales.", accept: ["[La tasa|El índice] de pobreza sigue alt[a|o]. Sin embargo, según la alcaldía, la cifra bajó un 3 % el año pasado. El 40 % de los nuevos empleos [son|es] informales."] },
+    { en: "In total, it comes to forty thousand pesos.", es: "En total, son cuarenta mil pesos.", accept: ["En total son cuarenta mil pesos.", "En total, serían cuarenta mil pesos."] }
+  ],
+  register: [
+    { es: "Ya somos como mil.", en: "There are like a thousand of us already.", when: "chatting with friends, a rough number" },
+    { es: "Hay unas cuatrocientas mil personas sin trabajo.", en: "Some four hundred thousand people are out of work.", when: "anywhere, a careful round figure" },
+    { es: "La tasa de desempleo se ubicó en el 9,8 %.", en: "The unemployment rate stood at 9.8%.", when: "in a news report or an official bulletin" },
+    { es: "Un millar de jóvenes se benefició del programa.", en: "About a thousand young people benefited from the programme.", when: "in a press release or a formal summary" }
+  ],
+  personal: {
+    prompt: "Find three figures about your city or your work: a rate, a share and a rough total. Write them as a short news brief.",
+    constraints: [
+      { type: "regex", pattern: "(tasa|índice|indice|cifra|porcentaje) de", label: "a measure: *la tasa de*, *el índice de* or *la cifra de*" },
+      { type: "regex", pattern: "\\d+(,\\d+)? ?%|por ciento", label: "a percentage: *el 40 %* or *un 3 %*" },
+      { type: "containsAny", words: ["centenares de", "decenas de", "millar de", "miles de", "cientos de"], label: "a rough total: *centenares de* or *un millar de*" }
+    ],
+    model: "La tasa de desempleo en Cali bajó un 1,5 % este año. El 60 % de los empleos nuevos están en el comercio. Centenares de jóvenes consiguieron trabajo en diciembre."
+  },
+  pitfalls: [
+    "*Número* is not a rate: in a report, *la tasa de desempleo*, never *el número de desempleo*.",
+    "*Subió un 5 %* is the size of the rise; *subió al 5 %* is the new level. Swapping them changes the news.",
+    "*Dos de mis hermanos* says you have more than two; if you have exactly two, *mis dos hermanos*."
+  ]
+},
+
+"nt-aumento-disminucion-b2": {
+  source: "merged",
+  hook: {
+    line: "A property column reports on rent in Bogotá. It says how much prices moved, names the change as an event, and spots a trend that has no end in sight.",
+    es: "El arriendo en Bogotá subió un 8 % este año, el doble que la inflación.\nEn Chapinero los precios casi se duplicaron en cinco años.\nCada vez más familias se van a vivir a municipios cercanos como Chía o Mosquera.\nHubo una caída en la venta de vivienda nueva, sobre todo en el sur.\nSegún los expertos, mientras más suban las tasas, menos gente va a comprar.",
+    en: "Rent in Bogotá went up 8% this year, twice the rate of inflation.\nIn Chapinero prices almost doubled in five years.\nMore and more families are moving to nearby towns like Chía or Mosquera.\nThere was a fall in sales of new housing, especially in the south.\nAccording to experts, the more interest rates rise, the fewer people will buy."
+  },
+  examples: [
+    { es: "Las ventas de la panadería se triplicaron en diciembre, pero en enero cayeron casi a la mitad.", en: "The bakery's sales tripled in December, but in January they fell by almost half." },
+    { es: "Ahora gano tres veces más que en mi primer trabajo, pero también gasto mucho más en transporte.", en: "I now earn three times more than in my first job, but I also spend much more on transport." },
+    { es: "Hubo un aumento del 12 % en el precio del tinto, y la gente lo notó enseguida.", en: "There was a 12% rise in the price of black coffee, and people noticed straight away." }
+  ],
+  rule: "The same change has two shapes.\nA verb says it happened: *subir*, *bajar*, *crecer*, *caer*, *aumentar*, *disminuir*. *El arriendo subió un 8 %.*\nOr name it as an event, often after *hubo*: *un aumento*, *una subida*, *una caída*, *una disminución*, *un crecimiento*. *Hubo una subida del 8 %.*\nExact multiples: *se duplicó* (doubled), *se triplicó*, or *tres veces más que*.\nA trend with no end point: *cada vez más*, *cada vez menos*. *Cada vez hay más turistas.*\nTwo changes tied together: *mientras más..., más...* Colombia also says *entre más...*; books say *cuanto más...*\n*Una rebaja* is only a price cut.",
+  readAndPick: [
+    { q: "How much did Chapinero prices grow?", es: "En Chapinero los precios casi se duplicaron en cinco años.",
+      options: ["Nearly doubled", "Rose by two percent", "Fell by half"], answer: 0,
+      why: "*Casi se duplicaron*: they almost doubled. A two percent rise would be *subieron un 2 %*." },
+    { q: "What is the trend in families moving out?", es: "Cada vez más familias se van a vivir a municipios cercanos.",
+      options: ["Only one year", "It keeps growing", "It's slowing down now"], answer: 1,
+      why: "*Cada vez más* is a trend that keeps going, with no end point in sight." },
+    { q: "What does *hubo una caída* report?", es: "Hubo una caída en la venta de vivienda nueva.",
+      options: ["A house fell over", "Sales went up", "Sales went down"], answer: 2,
+      why: "*Una caída* is the fall named as an event; *hubo* says it happened." },
+    { q: "How much more does the speaker earn?", es: "Ahora gano tres veces más que en mi primer trabajo.",
+      options: ["Three percent more", "Three times as much", "Three thousand more pesos"], answer: 1,
+      why: "*Tres veces más que* is an exact multiple: three times what he earned." },
+    { q: "What do the experts link?", es: "Mientras más suban las tasas, menos gente va a comprar.",
+      options: ["Rates up, buyers up", "Rates up, buyers down", "Rates down, sellers down too"], answer: 1,
+      why: "*Mientras más..., menos...* ties two changes: as one grows, the other shrinks." },
+    { q: "What is on offer here?", es: "Anunciaron una rebaja del 20 % en electrodomésticos.",
+      options: ["A 20% price cut", "A 20% rise", "Fewer stores open"], answer: 0,
+      why: "*Una rebaja* is always a cut in price. For fewer people, *una disminución*." }
+  ],
+  yourTurn: [
+    { en: "Sales doubled this year.", es: "Las ventas se duplicaron este año.", accept: ["Este año las ventas se duplicaron.", "Las ventas se doblaron este año."] },
+    { en: "There was a 10% rise in prices.", es: "Hubo un aumento del 10 % en los precios.", accept: ["Hubo [un aumento|una subida|un alza] del 10 % [en|de] los precios."] },
+    { en: "There are more and more tourists.", es: "Cada vez hay más turistas.", accept: ["Hay cada vez más turistas."] },
+    { en: "The more I work, the less I sleep.", es: "Mientras más trabajo, menos duermo.", accept: ["[Mientras|Entre|Cuanto] más trabajo, menos duermo."] },
+    { en: "Fewer and fewer people are getting married.", es: "Cada vez se casa menos gente.", accept: ["Cada vez se casan menos personas.", "Cada vez menos gente se casa.", "Cada vez menos personas se casan."] }
+  ],
+  translate: [
+    { en: "The population has decreased over the last decade.", es: "La población ha disminuido en la última década.", accept: ["La población [disminuyó|bajó|se redujo|ha bajado] en la última década."] },
+    { en: "Prices fell by 10%.", es: "Los precios cayeron un 10 %.", accept: ["Los precios [cayeron|bajaron] un 10 %."] },
+    { en: "Customers tripled in a week.", es: "Los clientes se triplicaron en una semana.", accept: [] },
+    { en: "It's more and more expensive.", es: "Cada vez es más caro.", accept: ["Cada vez está más caro.", "[Es|Está] cada vez más caro."] },
+    { en: "Rent went up 8% this year. In some neighbourhoods prices almost doubled. That's why more and more families are leaving the city.", es: "El arriendo subió un 8 % este año. En algunos barrios los precios casi se duplicaron. Por eso, cada vez más familias se van de la ciudad.", accept: ["El arriendo subió un 8 % este año. En algunos barrios los precios casi se duplicaron. Por eso, cada vez más familias se [van de|están yendo de] la ciudad."] },
+    { en: "The more he earns, the more he spends.", es: "Mientras más gana, más gasta.", accept: ["[Mientras|Entre|Cuanto] más gana, más gasta."] }
+  ],
+  register: [
+    { es: "¡Eso subió muchísimo!", en: "That's gone up a ton!", when: "with friends, complaining about a price" },
+    { es: "El arriendo subió bastante este año.", en: "Rent went up quite a bit this year.", when: "anywhere, a plain report of a rise" },
+    { es: "Se registró un incremento del 8 %.", en: "An 8% increase was recorded.", when: "in a news report or a company memo" },
+    { es: "La demanda experimentó un crecimiento notable.", en: "Demand saw notable growth.", when: "in economic writing or an annual report" }
+  ],
+  personal: {
+    prompt: "Pick something whose price or numbers changed where you live: rent, a bus fare, a coffee. Describe the change with a verb, then as an event with *hubo*, and add a trend with *cada vez*.",
+    constraints: [
+      { type: "regex", pattern: "(subi[óo]|baj[óo]|aument[óo]|cay[óo]|creci[óo]|se duplic[óo]|se triplic[óo]|subieron|bajaron|aumentaron|cayeron|crecieron|se duplicaron)", label: "the change as a verb: *subió* or *se duplicó*" },
+      { type: "regex", pattern: "hubo (un|una) (aumento|subida|ca[íi]da|bajada|disminuci[óo]n|crecimiento|alza|rebaja)", label: "the change as an event: *hubo una subida*" },
+      { type: "containsAny", words: ["cada vez más", "cada vez menos"], label: "a trend: *cada vez más* or *cada vez menos*" }
+    ],
+    model: "El pasaje de TransMilenio subió doscientos pesos en enero. Hubo una subida parecida el año pasado. Cada vez más gente prefiere ir en bicicleta."
+  },
+  pitfalls: [
+    "*Cada vez más* is a trend over time; for two fixed points, use *más que*: *gana más que su hermano*.",
+    "*Una rebaja* is a price cut. For fewer people or lower heat, say *una disminución*.",
+    "*Mientras más trabajo, menos duermo* has no word for the: never *el más*."
+  ]
+},
+
+"nt-proporcion-b2": {
+  source: "merged",
+  hook: {
+    line: "Three flatmates in Bogotá sort out the electricity bill in their group chat. One proposes cutting it into parts, another says who should get which part, and the groceries are split as always.",
+    es: "Laura: Llegó el recibo de la luz: 180.000 pesos.\nLaura: Propongo que lo dividamos en tres partes iguales.\nAndrés: Pero Camilo trabajó desde la casa todo el mes, así que gastó casi la mitad.\nAndrés: Entonces repartamos así: la mitad para Camilo y el resto entre Laura y yo.\nCamilo: Bueno, me parece justo. Y el mercado lo pagamos a medias, como siempre.",
+    en: "Laura: The electricity bill came: 180,000 pesos.\nLaura: I suggest we divide it into three equal parts.\nAndrés: But Camilo worked from home all month, so he used almost half.\nAndrés: So let's share it out like this: half for Camilo and the rest between Laura and me.\nCamilo: OK, that seems fair. And we split the groceries half and half, as always."
+  },
+  examples: [
+    { es: "Partimos la torta en ocho pedazos y la repartimos entre los vecinos del edificio.", en: "We cut the cake into eight pieces and shared it out among the neighbours in the building." },
+    { es: "Solo una cuarta parte de los estudiantes respondió la encuesta, y casi la mitad dejó preguntas en blanco.", en: "Only a quarter of the students answered the survey, and almost half left questions blank." },
+    { es: "Dos tercios de los vecinos votaron a favor, y la quinta parte no fue a la asamblea.", en: "Two thirds of the neighbours voted in favour, and a fifth didn't go to the meeting." }
+  ],
+  rule: "English says split for two different jobs. Spanish asks which one.\nCutting into parts: *partir* or *dividir*, with *por la mitad* or *en* and a number: *Dividimos la cuenta en tres.*\nHanding the parts out: *repartir* or *distribuir*, with *entre* and the people: *Repartimos la plata entre los dos.*\nPaying half each: *a medias*.\nA fraction works like *la mayoría de* and takes *de*: *la mitad de*, *un tercio de*, *dos tercios de*, *un cuarto de*. Beyond those, the order word and *parte*: *la quinta parte*, *la décima parte*.\n*Medio* goes straight before the thing: *medio kilo*. *La mitad* needs *de*: *la mitad del pan*.",
+  readAndPick: [
+    { q: "Who gets the parts here?", es: "Repartimos la torta entre los vecinos.",
+      options: ["Nobody, yet", "The neighbours", "Just the cook who made it"], answer: 1,
+      why: "*Repartir... entre* hands the pieces out, and the people come after *entre*." },
+    { q: "How much of the bill does Camilo pay?", es: "La mitad para Camilo y el resto entre Laura y yo.",
+      options: ["The whole bill", "A third", "Half of it"], answer: 2,
+      why: "*La mitad para Camilo*: half is his, and *el resto* goes to the other two." },
+    { q: "How many students answered?", es: "Solo una cuarta parte de los estudiantes respondió.",
+      options: ["One in four", "Four of them", "A tenth"], answer: 0,
+      why: "*Una cuarta parte* is a quarter, one in four. A tenth is *la décima parte*." },
+    { q: "How do they pay for the groceries?", es: "El mercado lo pagamos a medias.",
+      options: ["Each pays half", "One of them pays", "Monthly"], answer: 0,
+      why: "*A medias* is half each. In Colombia *el mercado* is the groceries." },
+    { q: "What does *partir* do here?", es: "Partimos la cuenta por la mitad.",
+      options: ["Leaves it unpaid", "Pays it all", "Cuts it in two"], answer: 2,
+      why: "*Partir por la mitad* cuts it into two halves; nobody is named as getting them." },
+    { q: "What share stayed away?", es: "La quinta parte no fue a la asamblea.",
+      options: ["One in five", "Only five", "Half the building"], answer: 0,
+      why: "*La quinta parte* is a fifth: one in every five neighbours." }
+  ],
+  yourTurn: [
+    { en: "Shall we split the bill in half?", es: "¿Partimos la cuenta por la mitad?", accept: ["¿[Partimos|Dividimos] la cuenta por la mitad?"] },
+    { en: "They shared out the inheritance among the children.", es: "Repartieron la herencia entre los hijos.", accept: ["[Repartieron|Distribuyeron] la herencia entre los hijos."] },
+    { en: "Two thirds of the people support the idea.", es: "Dos tercios de la gente apoya la idea.", accept: ["Dos tercios de la gente [apoya|apoyan] la idea.", "Dos tercios de las personas apoyan la idea."] },
+    { en: "Half of the money is for the rent.", es: "La mitad de la plata es para el arriendo.", accept: ["La mitad [de la plata|del dinero] es para el arriendo."] },
+    { en: "A fifth of the budget goes on transport.", es: "La quinta parte del presupuesto se va en transporte.", accept: ["La quinta parte del presupuesto se [va|gasta] en transporte.", "Un quinto del presupuesto se [va|gasta] en transporte."] }
+  ],
+  translate: [
+    { en: "We divided the group into three teams.", es: "Dividimos el grupo en tres equipos.", accept: [] },
+    { en: "Shall we go halves on the taxi?", es: "¿Pagamos el taxi a medias?", accept: [] },
+    { en: "Only a quarter answered the survey.", es: "Solo una cuarta parte respondió la encuesta.", accept: ["Solo una cuarta parte respondió a la encuesta.", "Solo un cuarto respondió [la|a la] encuesta."] },
+    { en: "I bought half a kilo of cheese.", es: "Compré medio kilo de queso.", accept: [] },
+    { en: "The electricity bill came. Let's divide it into three parts. But Camilo used almost half, so he pays more.", es: "Llegó el recibo de la luz. Dividámoslo en tres partes. Pero Camilo gastó casi la mitad, así que él paga más.", accept: ["Llegó el recibo de la luz. [Dividámoslo|Vamos a dividirlo] en tres partes. Pero Camilo gastó casi la mitad, así que [él paga|paga] más."] },
+    { en: "They handed out the flyers all over the neighbourhood.", es: "Repartieron los volantes por todo el barrio.", accept: ["[Repartieron|Distribuyeron] los [volantes|folletos] por todo el barrio."] }
+  ],
+  register: [
+    { es: "¿Hacemos vaca?", en: "Shall we chip in?", when: "in Colombia, friends pooling money for something" },
+    { es: "Pagamos a medias.", en: "We go halves.", when: "anywhere, splitting a cost between two" },
+    { es: "Lo repartimos entre todos.", en: "We'll share it out among everyone.", when: "in a group, a fair split" },
+    { es: "Dos tercios de los encuestados apoyan la medida.", en: "Two thirds of those surveyed support the measure.", when: "in a news report or a survey summary" }
+  ],
+  personal: {
+    prompt: "Think of something you share: a flat, a bill, a family job. Say how it is cut up, who gets which part, and give one fraction.",
+    constraints: [
+      { type: "regex", pattern: "(partimos|partieron|partió|parten|dividimos|dividieron|dividió|dividen|divide|partir|dividir)", label: "the cutting: *partimos* or *dividimos*" },
+      { type: "regex", pattern: "(reparti|repart[oe]|distribu)", label: "the sharing out: *repartimos... entre*" },
+      { type: "containsAny", words: ["la mitad", "un tercio", "dos tercios", "un cuarto", "cuarta parte", "quinta parte", "a medias"], label: "a fraction: *la mitad de* or *un tercio de*" }
+    ],
+    model: "En mi casa dividimos el arriendo en cuatro partes. Pero repartimos la luz entre los tres que trabajan desde la casa. Mi hermano paga la mitad del internet porque juega en línea toda la noche."
+  },
+  pitfalls: [
+    "*Partimos la herencia entre los hijos* only cuts: for who gets what, *repartimos... entre*.",
+    "*Un medio de la gente* is not Spanish: half of is *la mitad de*.",
+    "*La mitad del pan* takes *de*, but *medio pan* takes none."
+  ]
+},
+
+"nt-cantidad-relativa-b2": {
+  source: "merged",
+  hook: {
+    line: "A march fills the Séptima in Bogotá, and nobody agrees on how many came. The news piece gives every figure without committing to any of them.",
+    es: "Según los organizadores, unas cuarenta mil personas marcharon por la carrera Séptima.\nLa Policía habló de entre quince y veinte mil.\nLa marcha duró alrededor de cuatro horas y hubo al menos tres puntos de concentración.\nUn vendedor de agua contó que vendió como quinientas botellas.\nComo máximo, el tráfico estará cerrado hasta las seis de la tarde.",
+    en: "According to the organizers, some forty thousand people marched along Carrera Séptima.\nThe police spoke of between fifteen and twenty thousand.\nThe march lasted around four hours and there were at least three gathering points.\nA water seller said he sold like five hundred bottles.\nAt the latest, the road will be closed to traffic until six in the evening."
+  },
+  examples: [
+    { es: "Le puse como trescientos gramos de harina a la masa, pero quedó un poco seca.", en: "I put like three hundred grams of flour in the dough, but it came out a bit dry." },
+    { es: "Necesitamos al menos tres días para terminar el informe, y como máximo una semana.", en: "We need at least three days to finish the report, and a week at most." },
+    { es: "El concierto reunió a entre treinta y cuarenta mil personas en el parque Simón Bolívar.", en: "The concert brought together between thirty and forty thousand people in Simón Bolívar park." }
+  ],
+  rule: "Nobody counts a crowd exactly, so Spanish has words for roughly.\nIn front of the number: *unos* or *unas* (*unas cien personas*), *alrededor de*, *aproximadamente*, *cerca de*. In writing, these.\nIn conversation: *como* (*como veinte minutos*), *más o menos*, *un montón de* for a lot.\nA range: *entre... y...*: *entre quince y veinte mil*.\nA floor: *al menos* or *por lo menos*, that many or more. A ceiling: *como máximo*, no more.\nFor a guess about the past, the news uses the conditional: *Habría unas cien personas* means there were probably about a hundred.",
+  readAndPick: [
+    { q: "How exact is the police figure?", es: "La Policía habló de entre quince y veinte mil.",
+      options: ["An exact count", "A range, not exact", "No figure given at all"], answer: 1,
+      why: "*Entre... y...* gives a range: somewhere from fifteen to twenty thousand." },
+    { q: "How many gathering points were there?", es: "Hubo al menos tres puntos de concentración.",
+      options: ["Three or more", "Three at most", "Exactly three"], answer: 0,
+      why: "*Al menos* sets a floor: three, maybe more. A ceiling is *como máximo*." },
+    { q: "What does the seller's *como* mean?", es: "Vendí como quinientas botellas.",
+      options: ["Exactly", "About, roughly", "In the way that"], answer: 1,
+      why: "*Como* before a number is a chatty roughly. In a report, *alrededor de*." },
+    { q: "What is the latest the road reopens?", es: "Como máximo, el tráfico estará cerrado hasta las seis.",
+      options: ["By six at the latest", "At six at the earliest", "Six hours from now"], answer: 0,
+      why: "*Como máximo* is a ceiling: it won't stay closed past six." },
+    { q: "What does the reporter mean?", es: "Habría unas cien personas en la plaza.",
+      options: ["A hundred will come", "Probably about a hundred", "A hundred would come if invited"], answer: 1,
+      why: "*Habría* here is a guess about the past: there were probably about a hundred." }
+  ],
+  yourTurn: [
+    { en: "Around a hundred people attended.", es: "Asistieron alrededor de cien personas.", accept: ["Asistieron [alrededor de|unas|aproximadamente|cerca de] cien personas.", "[Alrededor de|Unas|Aproximadamente|Cerca de] cien personas asistieron."] },
+    { en: "We need at least three days.", es: "Necesitamos al menos tres días.", accept: ["Necesitamos [al menos|por lo menos|mínimo] tres días."] },
+    { en: "I put in like four hundred grams of flour.", es: "Le puse como cuatrocientos gramos de harina.", accept: ["[Le puse|Puse|Le eché|Eché] como cuatrocientos gramos de harina."] },
+    { en: "Fifty came, at most.", es: "Vinieron cincuenta como máximo.", accept: ["Vinieron como máximo cincuenta.", "Como máximo vinieron cincuenta."] }
+  ],
+  translate: [
+    { en: "Between thirty and forty thousand people arrived.", es: "Llegaron entre treinta y cuarenta mil personas.", accept: ["Entre treinta y cuarenta mil personas llegaron."] },
+    { en: "There was a ton of people in the square.", es: "Había un montón de gente en la plaza.", accept: ["Había [un montón de|muchísima] gente en la plaza."] },
+    { en: "We'll take an hour at most.", es: "Nos vamos a demorar una hora como máximo.", accept: ["[Nos vamos a demorar|Nos demoraremos|Vamos a tardar|Tardaremos] una hora como máximo.", "[Nos vamos a demorar|Nos demoraremos|Vamos a tardar|Tardaremos] como máximo una hora.", "Como máximo, [nos vamos a demorar|nos demoraremos|vamos a tardar|tardaremos] una hora."] },
+    { en: "The meeting lasted about four hours.", es: "La reunión duró alrededor de cuatro horas.", accept: ["La reunión duró [alrededor de|unas|más o menos|como|cerca de] cuatro horas."] },
+    { en: "According to the organizers, some forty thousand people marched. The police spoke of between fifteen and twenty thousand. There were probably about thirty thousand.", es: "Según los organizadores, marcharon unas cuarenta mil personas. La Policía habló de entre quince y veinte mil. Habría unas treinta mil.", accept: ["Según los organizadores, [marcharon unas cuarenta mil personas|unas cuarenta mil personas marcharon]. La Policía habló de entre quince y veinte mil. [Habría|Probablemente había] unas treinta mil."] },
+    { en: "The hotel must have had around a hundred rooms.", es: "El hotel tendría alrededor de cien habitaciones.", accept: ["El hotel tendría [alrededor de|unas|como] cien habitaciones.", "El hotel debía de tener [alrededor de|unas] cien habitaciones."] }
+  ],
+  register: [
+    { es: "Éramos como veinte.", en: "There were like twenty of us.", when: "telling friends about a party" },
+    { es: "Había unas veinte personas.", en: "There were some twenty people.", when: "anywhere, a careful round number" },
+    { es: "Asistieron aproximadamente veinte personas.", en: "Approximately twenty people attended.", when: "in minutes, a report or a formal email" },
+    { es: "Habría unas veinte mil personas, según fuentes oficiales.", en: "There were reportedly some twenty thousand people, according to official sources.", when: "in the news, a figure nobody has confirmed" }
+  ],
+  personal: {
+    prompt: "Describe a crowd or a queue you were part of: a concert, a match, a bank on a Monday. Give a rough number, a range, and a floor or a ceiling.",
+    constraints: [
+      { type: "containsAny", words: ["unos ", "unas ", "alrededor de", "aproximadamente", "como ", "más o menos", "cerca de"], label: "a rough number: *unas cien* or *alrededor de*" },
+      { type: "regex", pattern: "entre [a-záéíóúñ0-9.]+ y [a-záéíóúñ0-9.]+", label: "a range: *entre quince y veinte*" },
+      { type: "containsAny", words: ["al menos", "por lo menos", "como máximo", "como mínimo"], label: "a floor or a ceiling: *al menos* or *como máximo*" }
+    ],
+    model: "En el concierto de Shakira había unas sesenta mil personas. La fila para entrar duró entre dos y tres horas. Al menos cuatro amigos míos se quedaron sin boleta."
+  },
+  pitfalls: [
+    "*Como veinte* is chat. In a report, *alrededor de veinte* or *unas veinte*.",
+    "*Al menos* is a floor and *como máximo* a ceiling: swapping them reverses the promise.",
+    "*El hotel tendría cien habitaciones* is a guess about the past, not would have: it probably had."
+  ]
+},
+
+"gn-expositiva-b2": {
+  source: "merged",
+  hook: {
+    line: "A science page explains the páramo to its readers. In six lines it opens with a question, defines the thing, compares it, sorts it into parts, points at what matters and closes on why it all counts.",
+    es: "¿Qué es un páramo?\nSe llama páramo al ecosistema de alta montaña que está entre el bosque y la nieve.\nFunciona como una esponja: guarda el agua de la lluvia y la suelta poco a poco.\nSe divide en tres franjas: el subpáramo, el páramo propiamente dicho y el superpáramo.\nCabe destacar que Colombia tiene casi la mitad de los páramos del mundo.\nEn resumen, sin páramos, Bogotá se quedaría sin la mayor parte de su agua.",
+    en: "What is a páramo?\nA páramo is the name given to the high mountain ecosystem that lies between the forest and the snow.\nIt works like a sponge: it stores rainwater and releases it little by little.\nIt is divided into three bands: the subpáramo, the páramo proper and the superpáramo.\nIt is worth noting that Colombia has almost half of the world's páramos.\nIn short, without páramos, Bogotá would lose most of its water."
+  },
+  examples: [
+    { es: "Se llama tinto al café negro que se toma en Colombia a cualquier hora del día.", en: "Tinto is the name given to the black coffee people drink in Colombia at any time of day." },
+    { es: "El sistema está formado por tres partes, y cada una se explica por separado a continuación.", en: "The system is made up of three parts, and each one is explained separately below." },
+    { es: "Como pueden ver en la gráfica, las ventas bajaron en marzo y se recuperaron en junio.", en: "As you can all see on the chart, sales fell in March and recovered in June." }
+  ],
+  rule: "An explanation has three parts, and each has its Spanish.\nOpen a topic one of four ways: a definition (*Se llama páramo a...*), a general fact, a question you then answer (*¿Qué es un páramo?*) or a comparison (*Funciona como una esponja*).\nDevelop it by sorting: *Está formado por...*, *Se divide en...*, then each part in turn.\nPoint at what matters: *Cabe destacar que...*, *Cabe señalar que...* The fact after it stays ordinary, and it belongs on the page.\nClose by saying why it mattered, with nothing new: *En resumen,...*, *En definitiva,...*\nSpoken to a room, use *ustedes*: *Como pueden ver...*, *A continuación...*, *Para terminar...*",
+  readAndPick: [
+    { q: "How does the article open?", es: "¿Qué es un páramo?",
+      options: ["With a joke", "With a question", "With a list of figures"], answer: 1,
+      why: "A question the text then answers is one of the four ways to open a topic." },
+    { q: "Which opener is this?", es: "Se llama páramo al ecosistema de alta montaña.",
+      options: ["A definition", "A comparison", "A conclusion"], answer: 0,
+      why: "*Se llama X a...* defines: it says what the name refers to." },
+    { q: "What does *funciona como una esponja* do?", es: "Funciona como una esponja: guarda el agua y la suelta.",
+      options: ["Gives a comparison", "Says it really is one", "Ends the article"], answer: 0,
+      why: "*Funciona como* compares it with something every reader knows." },
+    { q: "Where would you read *cabe destacar*?", es: "Cabe destacar que Colombia tiene casi la mitad de los páramos.",
+      options: ["Texting a friend", "In an article", "At a party"], answer: 1,
+      why: "*Cabe destacar* is written Spanish; in a chat it sounds like a press release." },
+    { q: "What should *en resumen* bring?", es: "En resumen, sin páramos, Bogotá se quedaría sin la mayor parte de su agua.",
+      options: ["A question to the reader", "A brand new fact", "Why it all mattered"], answer: 2,
+      why: "The close adds nothing new: it reminds the reader why the topic counts." },
+    { q: "Who is the speaker talking to?", es: "Como pueden ver en la gráfica, las ventas bajaron.",
+      options: ["Her best friend", "A room of people", "Only to herself, quietly"], answer: 1,
+      why: "*Pueden* is the *ustedes* form: she is presenting to a group." }
+  ],
+  yourTurn: [
+    { en: "What is a paragraph?", es: "¿Qué es un párrafo?", accept: [] },
+    { en: "It is worth noting that this is the first time it has happened.", es: "Cabe destacar que es la primera vez que ocurre.", accept: ["Cabe [destacar|señalar|mencionar] que es la primera vez que [ocurre|pasa|sucede]."] },
+    { en: "It is divided into three parts.", es: "Se divide en tres partes.", accept: [] },
+    { en: "As you can see on the screen, sales went down in March. (to a room)", es: "Como pueden ver en la pantalla, las ventas bajaron en marzo.", accept: ["Como ustedes pueden ver en la pantalla, las ventas bajaron en marzo."] },
+    { en: "In short, punctuation is essential for writing.", es: "En resumen, la puntuación es fundamental para la escritura.", accept: ["[En resumen|En definitiva|En conclusión], la puntuación es [fundamental|esencial] para la escritura."] }
+  ],
+  translate: [
+    { en: "Tinto is the name given to black coffee in Colombia.", es: "Se llama tinto al café negro en Colombia.", accept: ["Se le llama tinto al café negro en Colombia.", "En Colombia se [llama|le llama] tinto al café negro."] },
+    { en: "The páramo works like a sponge.", es: "El páramo funciona como una esponja.", accept: [] },
+    { en: "The system is made up of three parts.", es: "El sistema está formado por tres partes.", accept: ["El sistema está [formado|compuesto] por tres partes."] },
+    { en: "Next, I'm going to show you the figures for June. (to a room)", es: "A continuación, les voy a mostrar las cifras de junio.", accept: ["A continuación, [les voy a mostrar|voy a mostrarles|les muestro] las cifras de junio."] },
+    { en: "What is a páramo? It's a high mountain ecosystem. It's worth pointing out that it stores the water the cities drink.", es: "¿Qué es un páramo? Es un ecosistema de alta montaña. Cabe señalar que guarda el agua que toman las ciudades.", accept: ["¿Qué es un páramo? Es un ecosistema de alta montaña. Cabe [señalar|destacar|mencionar] que guarda el agua que [toman|beben] las ciudades."] },
+    { en: "Many of you will probably know this park. (to a room)", es: "Muchos de ustedes seguramente conocerán este parque.", accept: ["Muchos de ustedes [seguramente|probablemente|ya] conocerán este parque.", "Seguramente muchos de ustedes conocen este parque."] }
+  ],
+  register: [
+    { es: "O sea, es como una esponja.", en: "I mean, it's like a sponge.", when: "explaining it to a friend over coffee" },
+    { es: "Funciona como una esponja.", en: "It works like a sponge.", when: "anywhere, a plain comparison" },
+    { es: "Como pueden ver en la diapositiva...", en: "As you can see on the slide...", when: "presenting to a room, as ustedes" },
+    { es: "Cabe destacar que el ecosistema es frágil.", en: "It is worth noting that the ecosystem is fragile.", when: "in an article, a report or an essay" }
+  ],
+  personal: {
+    prompt: "Explain something you know well to a reader who doesn't: a dish, a sport, a place. Open with a definition or a question, sort it into parts, and close with *en resumen*.",
+    constraints: [
+      { type: "regex", pattern: "se (le )?llama [a-záéíóúñ]+ a|¿qu[ée] es|funciona como|es como (un|una)", label: "an opener: *se llama... a* or *¿qué es...?*" },
+      { type: "regex", pattern: "(está|esta) (formad[oa]|compuest[oa]) por|se divide en|tiene (dos|tres|cuatro|cinco) partes", label: "the parts: *está formado por* or *se divide en*" },
+      { type: "containsAny", words: ["en resumen", "en definitiva", "en conclusión", "en pocas palabras"], label: "a close: *en resumen*" }
+    ],
+    model: "¿Qué es el tejo? Es el deporte nacional de Colombia. Se juega en una cancha con dos tableros de barro. Cada tablero tiene mechas con pólvora, y el objetivo es hacerlas explotar con un disco de metal. El partido se divide en rondas, y cada ronda suma puntos. En resumen, es puntería, cerveza y mucho ruido."
+  },
+  pitfalls: [
+    "An *en resumen* that adds a new fact isn't a summary: close on why the topic mattered.",
+    "*Cabe destacar* is for the page; said aloud to friends it sounds like a press release.",
+    "In a talk, *como puedes ver* addresses one person: to a room, *como pueden ver*."
+  ]
+},
+
+"nt-realidad-ficcion-b2": {
+  source: "merged",
+  hook: {
+    line: "A fact-checking site looks at a video everyone shared this week. Its short report sorts the real from the invented, and the truth comes out at the end.",
+    es: "Circula en redes un video de un oso de anteojos dentro de un bus de TransMilenio.\nMuchos lo compartieron como si fuera real, pero el video resultó ser falso.\nEs una simulación hecha con inteligencia artificial, y el bus ni siquiera existe.\nResulta que su autor es un estudiante de diseño que solo quería probar un programa.\nÉl dice que se inventó la historia para una clase y que nunca se imaginó que llegaría tan lejos.",
+    en: "A video of a spectacled bear inside a TransMilenio bus is going round on social media.\nMany people shared it as if it were real, but the video turned out to be fake.\nIt's a simulation made with artificial intelligence, and the bus doesn't even exist.\nIt turns out its author is a design student who only wanted to test a program.\nHe says he made the story up for a class and never imagined it would go so far."
+  },
+  examples: [
+    { es: "Por fin se le cumplió el sueño de conocer el mar, a los setenta años.", en: "Her dream of seeing the sea finally came true, at seventy." },
+    { es: "El personaje es completamente ficticio, aunque muchos lectores creen que la autora se inspiró en su abuela.", en: "The character is entirely fictional, although many readers believe the author based her on her grandmother." },
+    { es: "El problema no es abstracto: es muy concreto, son trescientas familias sin agua desde el lunes.", en: "The problem isn't abstract: it's very concrete, three hundred families without water since Monday." }
+  ],
+  rule: "Words for what isn't real: *ficticio* (invented on purpose, like a character), *irreal* (not real, nobody invented it), *una simulación* (a staged fake), *surrealista* (so strange it feels like a dream, said of real life).\n*Inventarse* and *imaginarse* take *se*: *se inventó la historia*.\nA dream isn't done, it comes true, and it happens to you: *se me cumplió el sueño*, *se le cumplieron los deseos*. A promise is kept by a person, with no *se*: *cumplió su palabra*.\nWhen the truth comes out: *resultó ser falso*, or start with *Resulta que...*\n*Concreto* is touchable and specific; *abstracto* is only an idea.",
+  readAndPick: [
+    { q: "What happened to the video?", es: "El video resultó ser falso.",
+      options: ["It turned out fake", "It went missing", "Someone proved it real"], answer: 0,
+      why: "*Resultó ser* is turned out to be: the truth came out, and it was fake." },
+    { q: "What did the student do with the story?", es: "Se inventó la historia para una clase.",
+      options: ["He found it online", "He made it up", "He lived it"], answer: 1,
+      why: "*Inventarse* is to make something up; the *se* stays with it." },
+    { q: "Who is the character based on?", es: "El personaje es completamente ficticio.",
+      options: ["A real neighbour of hers", "Nobody: he's made up", "The author"], answer: 1,
+      why: "*Ficticio* is invented on purpose: a character who never existed." },
+    { q: "What does *se le cumplió el sueño* say?", es: "Por fin se le cumplió el sueño de conocer el mar.",
+      options: ["She dreamt", "She gave up the dream", "Her dream came true"], answer: 2,
+      why: "The dream is the subject and it happens to her: it came true." },
+    { q: "How real is the problem?", es: "El problema no es abstracto: es muy concreto.",
+      options: ["Only an idea", "Specific and real", "Not worth mentioning"], answer: 1,
+      why: "*Concreto* is specific and touchable; *abstracto* would be only an idea." },
+    { q: "What does *surrealista* say about the scene?", es: "Esto es surrealista, no puedo creer lo que está pasando.",
+      options: ["It's so odd it seems unreal", "It's dull and ordinary", "It's a museum painting from the past"], answer: 0,
+      why: "Said of real life, *surrealista* is so strange it feels like a dream." }
+  ],
+  yourTurn: [
+    { en: "The news turned out to be false.", es: "La noticia resultó ser falsa.", accept: [] },
+    { en: "It turns out nobody knew anything.", es: "Resulta que nadie sabía nada.", accept: [] },
+    { en: "My dream came true.", es: "Se me cumplió el sueño.", accept: ["Mi sueño se cumplió.", "Se cumplió mi sueño."] },
+    { en: "He always makes up stories.", es: "Siempre se inventa historias.", accept: ["Siempre [se inventa|está inventando|está inventándose|inventa] historias."] },
+    { en: "She kept her promise.", es: "Cumplió su promesa.", accept: ["Ella cumplió su promesa."] }
+  ],
+  translate: [
+    { en: "The character is entirely fictional.", es: "El personaje es completamente ficticio.", accept: ["El personaje es [completamente|totalmente] ficticio."] },
+    { en: "It was just a simulation; nobody got hurt.", es: "Fue solo una simulación; nadie salió herido.", accept: ["[Fue solo|Solo fue] una simulación[;|,|.] nadie salió herido."] },
+    { en: "The concept is too abstract to explain like that.", es: "El concepto es demasiado abstracto para explicarlo así.", accept: [] },
+    { en: "She used to daydream about living in another country.", es: "Soñaba despierta con vivir en otro país.", accept: [] },
+    { en: "Many people shared the video as if it were real. But it turned out to be fake. It turns out the author only wanted to test a program.", es: "Mucha gente compartió el video como si fuera real. Pero resultó ser falso. Resulta que el autor solo quería probar un programa.", accept: ["[Mucha gente compartió|Muchos compartieron] el video como si fuera real. Pero resultó ser falso. Resulta que el autor solo quería probar un programa."] },
+    { en: "His dream of travelling the world finally came true.", es: "Por fin se le cumplió el sueño de viajar por el mundo.", accept: ["Por fin se cumplió su sueño de viajar por el mundo.", "Por fin se le cumplió el sueño de recorrer el mundo."] }
+  ],
+  register: [
+    { es: "¡Eso es puro cuento!", en: "That's a load of rubbish!", when: "with friends, about a story you don't believe" },
+    { es: "Esa historia no es real.", en: "That story isn't real.", when: "anywhere, said plainly" },
+    { es: "La información resultó ser falsa.", en: "The information turned out to be false.", when: "in a news report or a fact check" },
+    { es: "Los hechos narrados son ficticios.", en: "The events described are fictional.", when: "in the small print at the start of a film" }
+  ],
+  personal: {
+    prompt: "Write about one rumour you heard that turned out to be false, and one dream that came true for you or someone close.",
+    constraints: [
+      { type: "regex", pattern: "result(ó|o|aron) ser|resulta que", label: "the truth coming out: *resultó ser* or *resulta que*" },
+      { type: "regex", pattern: "se (me |te |le |nos |les )?cumpli(ó|o|eron)", label: "a dream coming true: *se me cumplió*" },
+      { type: "containsAny", words: ["se inventó", "se inventaron", "me inventé", "ficticio", "ficticia", "puro cuento", "simulación", "me imaginé", "se imaginó"], label: "a word for the unreal: *se inventó* or *ficticio*" }
+    ],
+    model: "En mi colegio decían que el rector se iba a vivir a España, pero resultó ser puro cuento. Alguien se inventó la historia en un grupo de chat. En cambio, a mi tía se le cumplió el sueño de abrir su propia panadería en Cali."
+  },
+  pitfalls: [
+    "*Cumplí mi sueño* sounds like a task done; a dream comes true to you: *se me cumplió el sueño*.",
+    "*Ficticio* is invented on purpose; for a vague not real, *irreal*.",
+    "*Resultó ser* is turned out to be, not resulted in: for a consequence, *trajo como resultado*."
+  ]
+},
+
+"nt-acontecimiento-b2": {
+  source: "merged",
+  hook: {
+    line: "A local news brief covers a weekend of changed plans in Bogotá: a concert moved, a strike lifted, and a new date that lands by pure chance on the day of a big match.",
+    es: "El concierto previsto para el sábado en el estadio El Campín se aplazó por la lluvia.\nLa decisión se produjo dos horas antes de abrir las puertas.\nSegún la organización, no ocurrió ningún incidente durante la evacuación.\nEl paro de transportadores, que estaba convocado para el lunes, se levantó anoche.\nY por pura casualidad, la nueva fecha coincide con el partido de la Selección.",
+    en: "The concert planned for Saturday at El Campín stadium was postponed because of the rain.\nThe decision came two hours before the doors opened.\nAccording to the organizers, no incident occurred during the evacuation.\nThe truckers' strike, which had been called for Monday, was called off last night.\nAnd by pure chance, the new date clashes with the national team's match."
+  },
+  examples: [
+    { es: "El accidente se produjo de madrugada en la autopista Norte, por causas que todavía se desconocen.", en: "The accident happened in the small hours on the Autopista Norte, for reasons still unknown." },
+    { es: "Fue una casualidad que nos encontráramos en el aeropuerto: ninguno sabía que el otro viajaba.", en: "It was a coincidence that we met at the airport: neither of us knew the other was travelling." },
+    { es: "Suspendieron el partido en el segundo tiempo por la tormenta, y lo van a terminar el martes.", en: "They stopped the match in the second half because of the storm, and they're going to finish it on Tuesday." }
+  ],
+  rule: "For happened there is a ladder. With friends: *pasar* (*¿Qué pasó?*). Neutral or written: *ocurrir*, *suceder*. In the news: *producirse*, always with *se*: *Se produjo un incendio.* The verb agrees with the event: *se produjeron dos choques*. *Producirse* is for events, never for people.\nBy chance: *por casualidad*, *¡Qué casualidad!*, and *fue una casualidad que* with the subjunctive. *Casualidad* is never a casualty; that's *una víctima*.\nWhen a plan changes: *aplazar* or *posponer* (to a later date), *suspender* (stop or call off), *cancelar* (for good). A strike in Colombia is *un paro*: you *convocar* it and *levantar* it.",
+  readAndPick: [
+    { q: "What happened to the concert?", es: "El concierto se aplazó por la lluvia.",
+      options: ["It's on a later date now", "It went ahead", "It was cancelled for good"], answer: 0,
+      why: "*Aplazar* moves it later. Cancelled for good would be *se canceló*." },
+    { q: "Where would you read *se produjo*?", es: "La decisión se produjo dos horas antes.",
+      options: ["Texting", "In a news report", "On a birthday card"], answer: 1,
+      why: "*Producirse* is the news word for happened; with friends, *pasó*." },
+    { q: "What does *por pura casualidad* say about the clash?", es: "Por pura casualidad, la nueva fecha coincide con el partido.",
+      options: ["Nobody planned it", "People got hurt", "It was done on purpose"], answer: 0,
+      why: "*Casualidad* is chance, never a casualty: nobody planned the clash." },
+    { q: "What happened to the strike?", es: "El paro de transportadores se levantó anoche.",
+      options: ["It started up", "It was called off", "It spread to other cities"], answer: 1,
+      why: "A strike in Colombia is *un paro*, and *levantarlo* is to call it off." },
+    { q: "What will they do with the match?", es: "Suspendieron el partido y lo van a terminar el martes.",
+      options: ["Forget about it", "Replay it from the start", "Finish it Tuesday"], answer: 2,
+      why: "*Suspender* stops it; the rest is played on Tuesday." }
+  ],
+  yourTurn: [
+    { en: "What happened last night?", es: "¿Qué pasó anoche?", accept: [] },
+    { en: "The accident occurred at dawn. (in the news)", es: "El accidente se produjo de madrugada.", accept: ["El accidente [se produjo|ocurrió] de madrugada."] },
+    { en: "What a coincidence running into you here!", es: "¡Qué casualidad encontrarte aquí!", accept: ["¡Qué casualidad [encontrarte|verte] [aquí|acá]!"] },
+    { en: "They postponed the meeting until Monday.", es: "Aplazaron la reunión para el lunes.", accept: ["[Aplazaron|Pospusieron|Corrieron|Pasaron] la reunión [para|hasta] el lunes."] },
+    { en: "It happened when we least expected it.", es: "Ocurrió cuando menos lo esperábamos.", accept: ["[Ocurrió|Pasó|Sucedió] cuando menos lo esperábamos."] }
+  ],
+  translate: [
+    { en: "Several incidents occurred during the demonstration.", es: "Se produjeron varios incidentes durante la manifestación.", accept: ["[Se produjeron|Ocurrieron|Hubo] varios incidentes durante la [manifestación|marcha]."] },
+    { en: "They called off the match because of the bad weather.", es: "Suspendieron el partido por el mal tiempo.", accept: ["Suspendieron el partido [por el|debido al] mal tiempo."] },
+    { en: "It was a coincidence that we met at the airport.", es: "Fue una casualidad que nos encontráramos en el aeropuerto.", accept: ["Fue una casualidad que nos [encontráramos|viéramos] en el aeropuerto.", "Fue (una) casualidad encontrarnos en el aeropuerto."] },
+    { en: "The strike was lifted last night.", es: "El paro se levantó anoche.", accept: ["Anoche se levantó el paro.", "Levantaron el paro anoche."] },
+    { en: "The concert was postponed because of the rain. Luckily, nothing happened during the evacuation. The new date is the 20th.", es: "El concierto se aplazó por la lluvia. Por suerte, no pasó nada durante la evacuación. La nueva fecha es el 20.", accept: ["El concierto se [aplazó|pospuso] por la lluvia. Por suerte, no [pasó|ocurrió] nada durante la evacuación. La nueva fecha es el 20."] },
+    { en: "The fire broke out in a warehouse in the south of the city.", es: "El incendio se produjo en una bodega del sur de la ciudad.", accept: ["El incendio se produjo en una bodega en el sur de la ciudad.", "El incendio [ocurrió|empezó] en una bodega del sur de la ciudad."] }
+  ],
+  register: [
+    { es: "¿Qué pasó, pues?", en: "So what happened?", when: "in Colombia, catching up with a friend" },
+    { es: "¿Qué ocurrió exactamente?", en: "What exactly happened?", when: "asking for a careful account at work" },
+    { es: "Se produjo un fuerte aguacero en la tarde.", en: "There was a heavy downpour in the afternoon.", when: "in a news bulletin or a weather report" },
+    { es: "El evento queda aplazado hasta nuevo aviso.", en: "The event is postponed until further notice.", when: "in an official notice or a ticket email" }
+  ],
+  personal: {
+    prompt: "Write a short news item about something that happened in your area: say what happened, whether it was chance, and what was postponed or called off.",
+    constraints: [
+      { type: "regex", pattern: "se produj(o|eron)|ocurri(ó|o|eron)|sucedi(ó|o|eron)", label: "the event: *se produjo* or *ocurrió*" },
+      { type: "containsAny", words: ["casualidad", "coincidencia", "por suerte", "de pura suerte"], label: "chance: *por casualidad* or *fue una casualidad*" },
+      { type: "regex", pattern: "(aplaz|pospus|pospon|suspend|cancel|levant)", label: "a change of plan: *se aplazó*, *suspendieron* or *se levantó*" }
+    ],
+    model: "El viernes se produjo un apagón en todo el barrio. Según la empresa de energía, fue una casualidad: un árbol cayó sobre los cables. Por eso suspendieron las clases en el colegio y aplazaron la feria hasta el domingo."
+  },
+  pitfalls: [
+    "*Casualidad* is chance, never a casualty: the people hurt are *víctimas* or *heridos*.",
+    "*Producirse* is for events: *se produjo un choque*, never *se produjo el alcalde*.",
+    "*Aplazar* moves a date later; *cancelar* drops it for good. Don't promise a new date with *cancelar*."
+  ]
+},
+
+"nt-exito-logro-b2": {
+  source: "merged",
+  hook: {
+    line: "A newspaper profile of a runner from Cauca tells a long story in five lines: the start, the failures, what she became and how success changed her, or didn't.",
+    es: "Nació en un pueblo del Cauca y empezó a correr descalza a los diez años.\nFracasó en sus dos primeros mundiales, pero nunca se rindió.\nCon los años llegó a ser una de las mejores atletas del continente.\nEn 2024 alcanzó los primeros puestos del ranking mundial.\nHoy dice que el triunfo no la volvió arrogante: se dedicó a entrenar a niñas de su pueblo.",
+    en: "She was born in a village in Cauca and started running barefoot at ten.\nShe failed at her first two world championships, but she never gave up.\nOver the years she became one of the best athletes on the continent.\nIn 2024 she reached the top places in the world rankings.\nToday she says success didn't make her arrogant: she devoted herself to training girls from her village."
+  },
+  examples: [
+    { es: "Mi abuelo empezó vendiendo empanadas en la calle y llegó a ser dueño de tres restaurantes.", en: "My grandfather started out selling empanadas in the street and ended up owning three restaurants." },
+    { es: "El proyecto fracasó por falta de plata, aunque la idea era buena y el equipo trabajó duro.", en: "The project failed for lack of money, although the idea was good and the team worked hard." },
+    { es: "Mi prima se hizo abogada para defender a su comunidad, y con el tiempo se volvió muy conocida.", en: "My cousin became a lawyer to defend her community, and over time she became very well known." }
+  ],
+  rule: "*Triunfar* and *fracasar* are big words for big goals: a career, a project, a team. For an exam, *pasar* or *aprobar*; in Colombia you fail one with *perder el examen*.\nEnglish says became for everything. Spanish chooses:\n*llegar a ser*: you got there in the end, slowly, often with effort. *Llegó a ser directora.* With *no*, someone never made it.\n*hacerse*: a change you chose or worked for, a job or a belief. *Se hizo abogada.*\n*volverse*: a deep, lasting change in character. *Se volvió arrogante.*\n*ponerse*: a passing state. *Se puso nerviosa.*\nTop of a ranking: *alcanzar los primeros puestos*.",
+  readAndPick: [
+    { q: "How did her career start?", es: "Fracasó en sus dos primeros mundiales.",
+      options: ["With two failures", "With a big win", "With an injury that ended it"], answer: 0,
+      why: "*Fracasar* is to fail at something big, like a world championship." },
+    { q: "How fast did she get to the top?", es: "Con los años llegó a ser una de las mejores atletas.",
+      options: ["Overnight, by sheer luck", "Slowly, over years", "Never"], answer: 1,
+      why: "*Llegar a ser* is the long road: she got there in the end, *con los años*." },
+    { q: "What kind of change is *se volvió muy conocida*?", es: "Con el tiempo se volvió muy conocida.",
+      options: ["A job", "A mood that passed quickly", "A lasting change"], answer: 2,
+      why: "*Volverse* marks a deep change that stays. A passing mood takes *ponerse*." },
+    { q: "What happened in the exam?", es: "Perdió el examen de matemáticas y tiene que repetirlo.",
+      options: ["He lost the paper", "He failed it", "He passed"], answer: 1,
+      why: "In Colombia *perder el examen* is to fail it, not to lose the sheet." },
+    { q: "Why did the project fail?", es: "El proyecto fracasó por falta de plata.",
+      options: ["A lack of money", "Too few people on it", "Bad weather"], answer: 0,
+      why: "*Por falta de plata*: there wasn't enough money. *Plata* is money in Colombia." },
+    { q: "What did the grandfather become?", es: "Llegó a ser dueño de tres restaurantes.",
+      options: ["A waiter in three of them", "The owner of three", "A cook"], answer: 1,
+      why: "*Llegó a ser dueño*: after years of selling empanadas, he owned three." }
+  ],
+  yourTurn: [
+    { en: "She became director of the company. (after years)", es: "Llegó a ser directora de la empresa.", accept: [] },
+    { en: "He became a lawyer. (he studied for it)", es: "Se hizo abogado.", accept: [] },
+    { en: "He became very selfish.", es: "Se volvió muy egoísta.", accept: [] },
+    { en: "The team reached the top of the league.", es: "El equipo alcanzó los primeros puestos de la liga.", accept: ["El equipo [alcanzó|llegó a] los primeros puestos de la liga."] },
+    { en: "She failed at first, but she didn't give up.", es: "Fracasó al principio, pero no se rindió.", accept: ["Al principio fracasó, pero no se rindió."] }
+  ],
+  translate: [
+    { en: "He succeeded abroad before coming back to Colombia.", es: "Triunfó en el exterior antes de volver a Colombia.", accept: ["Triunfó en el [exterior|extranjero] antes de [volver|regresar] a Colombia."] },
+    { en: "She never became famous.", es: "No llegó a ser famosa.", accept: ["Nunca llegó a ser famosa."] },
+    { en: "I passed the exam without any trouble.", es: "Pasé el examen sin problemas.", accept: ["[Pasé|Aprobé|Gané] el examen sin problemas.", "[Pasé|Aprobé|Gané] el examen sin ningún problema."] },
+    { en: "Over time, he became a leading figure in his field.", es: "Con el tiempo, llegó a ser un referente en su campo.", accept: ["Con el tiempo, llegó a ser un referente en su área."] },
+    { en: "My grandfather sold empanadas in the street. He failed twice with his own business. In the end he became the owner of three restaurants.", es: "Mi abuelo vendía empanadas en la calle. Fracasó dos veces con su propio negocio. Al final llegó a ser dueño de tres restaurantes.", accept: ["Mi abuelo vendía empanadas en la calle. Fracasó dos veces con su propio negocio. [Al final|Finalmente] llegó a ser (el) dueño de tres restaurantes."] },
+    { en: "She got very nervous before the race.", es: "Se puso muy nerviosa antes de la carrera.", accept: [] }
+  ],
+  register: [
+    { es: "¡Se lució en la final!", en: "She really shone in the final!", when: "with friends, praising a great performance" },
+    { es: "Le fue muy bien en el trabajo nuevo.", en: "She did very well in the new job.", when: "anywhere, a plain report of success" },
+    { es: "Alcanzó los primeros puestos del ranking.", en: "She reached the top places in the rankings.", when: "in sports news or a profile" },
+    { es: "El proyecto no logró los objetivos previstos.", en: "The project did not achieve its planned objectives.", when: "in a report, a polite way to say it failed" }
+  ],
+  personal: {
+    prompt: "Tell the story of someone you admire who got somewhere slowly: where they started, a failure on the way, and what they became.",
+    constraints: [
+      { type: "regex", pattern: "lleg(ó|o|aron|ué) a ser", label: "the long road: *llegó a ser*" },
+      { type: "regex", pattern: "fracas|perdi(ó|o) el|no le fue bien|no logr", label: "a failure on the way: *fracasó* or *no logró*" },
+      { type: "regex", pattern: "se (hizo|volvi[óo]|puso)|me (hice|volví|puse)", label: "another change: *se hizo*, *se volvió* or *se puso*" }
+    ],
+    model: "Mi mamá empezó como secretaria en un hospital de Pereira. Quería ser enfermera, pero fracasó dos veces en el examen de ingreso. Al tercer intento pasó, y se hizo enfermera a los treinta años. Con el tiempo llegó a ser jefa de urgencias."
+  },
+  pitfalls: [
+    "*Fracasé en el examen* is too dramatic: for an exam, *perdí el examen* or *no pasé*.",
+    "*Llegó a ser* needs time; for a quick change of mood, *se puso*: *se puso feliz*.",
+    "*Se hizo rico* is about effort, not speed; a change in who someone is takes *se volvió*."
+  ]
+},
+
+"nt-valor-precio-b2": {
+  source: "merged",
+  hook: {
+    line: "A used car is listed for sale online, and the comments start at once. The seller talks deals and discounts; a reader answers with the difference between spending and investing.",
+    es: "Vendo carro modelo 2019, en perfecto estado, rebajado de 62 a 55 millones.\nEsta semana está en oferta: si lo compra antes del domingo, le doy un descuento del 5 %.\nComentario: Un carro no es una inversión, es un gasto: pierde valor apenas sale del concesionario.\nRespuesta: Puede ser, pero lo barato sale caro. Este carro casi no ha perdido valor.\nComentario: ¿Y el seguro? Eso también sale carísimo.",
+    en: "For sale: 2019 car in perfect condition, reduced from 62 to 55 million.\nIt's on offer this week: if you buy it before Sunday, I'll give you a 5% discount.\nComment: A car isn't an investment, it's an expense: it loses value as soon as it leaves the dealership.\nReply: Maybe, but buy cheap, pay twice. This car has hardly lost any value.\nComment: And the insurance? That costs a fortune too."
+  },
+  examples: [
+    { es: "Consideran la capacitación un gasto y no una inversión, por eso nunca hay presupuesto para cursos.", en: "They see training as an expense and not an investment, which is why there's never a budget for courses." },
+    { es: "Compramos un buen colchón hace cinco años, y aunque fue caro, valió la pena cada peso.", en: "We bought a good mattress five years ago, and although it was expensive, it was worth every peso." },
+    { es: "El apartamento ganó mucho valor cuando abrieron la estación del metro a dos cuadras.", en: "The flat gained a lot of value when they opened the metro station two blocks away." }
+  ],
+  rule: "*Un gasto* is money that goes out. *Una inversión* is money you expect back, so calling a cost an investment is a sales move.\nValue over time moves with *ganar valor* and *perder valor*, with no article: *perdió valor*. A price at one moment is just *el precio*.\nA deal: *estar en oferta* or *en promoción*, *tener un descuento del 20 %*, *estar rebajado*, which agrees: *rebajada*, *rebajados*.\nHow it turned out: *salir caro*, *salir barato*. *Lo barato sale caro.* *Rentable* is profitable.\nWorth it is *valer la pena*: *valió la pena*.",
+  readAndPick: [
+    { q: "Why does the commenter call the car an expense?", es: "Pierde valor apenas sale del concesionario.",
+      options: ["It's worth less at once", "It breaks down every month", "Fuel"], answer: 0,
+      why: "*Pierde valor* is worth less over time, starting the day you buy it." },
+    { q: "What does *lo barato sale caro* mean?", es: "Puede ser, pero lo barato sale caro.",
+      options: ["Always buy cheap", "Cheap ends up costing more", "Cheap things sell out quickly every time"], answer: 1,
+      why: "*Salir caro* is how it turns out: the cheap choice costs more in the end." },
+    { q: "How much is the discount?", es: "Le doy un descuento del 5 %.",
+      options: ["Five percent off", "Five million pesos off", "Half price"], answer: 0,
+      why: "*Un descuento del 5 %* takes five percent off the price." },
+    { q: "What happened to the flat?", es: "El apartamento ganó mucho valor.",
+      options: ["It's worth much more now", "It won a design prize", "It lost a lot of its value"], answer: 0,
+      why: "*Ganar valor* is to be worth more over time; no prize was won." },
+    { q: "Was the mattress worth it?", es: "Aunque fue caro, valió la pena cada peso.",
+      options: ["No, too dear", "They returned it", "Yes, every peso"], answer: 2,
+      why: "*Valió la pena* weighs cost against result: worth every peso." },
+    { q: "How is the car's price described?", es: "Rebajado de 62 a 55 millones.",
+      options: ["Raised to 62 million", "Cut to 55 million", "Fixed"], answer: 1,
+      why: "*Rebajado* means the price has been cut, here from 62 down to 55." }
+  ],
+  yourTurn: [
+    { en: "It's not an expense, it's an investment.", es: "No es un gasto, es una inversión.", accept: [] },
+    { en: "These shoes are on sale this week.", es: "Estos zapatos están en oferta esta semana.", accept: ["Estos zapatos están en [oferta|promoción] esta semana.", "Esta semana estos zapatos están en [oferta|promoción]."] },
+    { en: "The house has gained a lot of value in ten years.", es: "La casa ha ganado mucho valor en diez años.", accept: ["La casa ganó mucho valor en diez años."] },
+    { en: "Buy cheap, pay twice.", es: "Lo barato sale caro.", accept: [] },
+    { en: "There's a 15% discount.", es: "Hay un descuento del 15 %.", accept: ["Tiene un descuento del 15 %.", "Hay un 15 % de descuento."] }
+  ],
+  translate: [
+    { en: "It was an unnecessary expense.", es: "Fue un gasto innecesario.", accept: [] },
+    { en: "The car loses value the moment you leave the dealership.", es: "El carro pierde valor en cuanto sales del concesionario.", accept: ["El carro pierde valor [en cuanto|apenas|tan pronto como] [sales|sale] del concesionario."] },
+    { en: "We invested in a good mattress and it was worth it.", es: "Invertimos en un buen colchón y valió la pena.", accept: [] },
+    { en: "The flight turned out cheaper than the bus.", es: "El vuelo salió más barato que el bus.", accept: ["El vuelo [salió|resultó] más barato que el bus."] },
+    { en: "The price has gone up 15% this year. But the jacket is on sale, so it's reduced. In the end it came out cheaper.", es: "El precio subió un 15 % este año. Pero la chaqueta está en oferta, así que está rebajada. Al final salió más barata.", accept: ["El precio [subió|ha subido] un 15 % este año. Pero la chaqueta está en [oferta|promoción], así que está rebajada. Al final salió más barata."] },
+    { en: "Is this business profitable?", es: "¿Este negocio es rentable?", accept: ["¿Es rentable este negocio?"] }
+  ],
+  register: [
+    { es: "¡Eso está regalado!", en: "That's a steal!", when: "with friends, about a great price" },
+    { es: "Está en oferta esta semana.", en: "It's on sale this week.", when: "in a shop, anywhere" },
+    { es: "Le hago una rebajita si lleva dos.", en: "I'll knock a bit off if you take two.", when: "a market seller in Colombia, bargaining" },
+    { es: "El inmueble se ha valorizado un 20 %.", en: "The property has appreciated by 20%.", when: "in a property listing or a financial report" }
+  ],
+  personal: {
+    prompt: "Think of something you bought that was worth it, or wasn't. Say whether it was an expense or an investment, how its value changed, and how it turned out.",
+    constraints: [
+      { type: "containsAny", words: ["gasto", "inversión", "invertí", "invertimos"], label: "*un gasto* or *una inversión*" },
+      { type: "regex", pattern: "(gan|perd|pierde|gana)[a-záéíóú]* (mucho |poco |algo de )?valor", label: "value over time: *ganó valor* or *perdió valor*" },
+      { type: "regex", pattern: "sali(ó|o|eron) (más |muy )?(car|barat)|val(ió|io|e) la pena", label: "how it turned out: *salió caro* or *valió la pena*" }
+    ],
+    model: "Hace tres años compré un computador muy caro para trabajar desde la casa. Mi papá dijo que era un gasto, pero para mí fue una inversión. Ya perdió mucho valor, pero valió la pena: con él conseguí mis mejores clientes."
+  },
+  pitfalls: [
+    "*Mereció la pena* is Spain; in Colombia, *valió la pena*.",
+    "*Está de oferta* is Spain too: here, *está en oferta* or *en promoción*.",
+    "*Perdió el valor* can mean lost its nerve; for price, *perdió valor*, with no article."
+  ]
+},
+
+"nt-referencias-generales-b2": {
+  source: "merged",
+  hook: {
+    line: "A boss and an employee in Bogotá fix a deadline over chat. Every line places something in time: first thing, the middle of the week, around nine, the last minute.",
+    es: "Jefe: Necesito el informe a primera hora del lunes.\nAna: Uy, no me alcanza el tiempo. A mediados de semana sí puedo.\nJefe: El cliente llega el miércoles hacia las nueve, entonces el martes a última hora.\nAna: Listo. Le voy a dedicar todo el fin de semana.\nJefe: Gracias. Y no pierda tiempo con los gráficos, eso lo hace Camilo.",
+    en: "Boss: I need the report first thing on Monday.\nAna: Oh, I won't have enough time. Midweek I can.\nBoss: The client arrives on Wednesday around nine, so Tuesday, last thing.\nAna: OK. I'll devote the whole weekend to it.\nBoss: Thanks. And don't waste time on the charts, Camilo does those."
+  },
+  examples: [
+    { es: "A finales de mes nos pagan el sueldo, y a principios del siguiente ya no queda nada.", en: "At the end of the month we get our pay, and by the start of the next there's nothing left." },
+    { es: "No me dio tiempo de desayunar, porque el bus pasó a las seis de la mañana.", en: "I didn't have time to have breakfast, because the bus came at six in the morning." },
+    { es: "Me gustaría dedicarle más tiempo a mi familia, pero el trabajo me ocupa hasta los domingos.", en: "I'd like to devote more time to my family, but work takes up even my Sundays." }
+  ],
+  rule: "Time does the acting, like *gustar*, and you receive it. *No me alcanza el tiempo para terminar* is the everyday Latin American way to decline. *¿Te da tiempo de pasar?* asks if there's time. Never *yo doy tiempo*.\n*Dedicar tiempo a* is a choice: *le dedico una hora al día*. *Perder* and *aprovechar el tiempo* judge how it was spent.\nParts of a period: *a principios de*, *a mediados de*, *a finales de* + *mes*, *semana*, *año*.\nEdges, with no article: *a primera hora*, *a última hora*, *de madrugada*, *en el último minuto*.\nAround a time: *hacia las nueve* (written), *a eso de las nueve*, *como a las nueve* (chat).",
+  readAndPick: [
+    { q: "When does the boss want the report?", es: "Necesito el informe a primera hora del lunes.",
+      options: ["Monday, first thing", "Monday, late at night", "Sometime on Monday"], answer: 0,
+      why: "*A primera hora* is first thing, the start of the working day." },
+    { q: "Why does Ana say no?", es: "No me alcanza el tiempo.",
+      options: ["She simply doesn't want to", "There's not enough time", "Her watch broke"], answer: 1,
+      why: "*No me alcanza el tiempo* blames the clock, not her interest." },
+    { q: "When does the client arrive?", es: "El cliente llega el miércoles hacia las nueve.",
+      options: ["At nine sharp", "After nine", "Around nine"], answer: 2,
+      why: "*Hacia las nueve* is a rough time; sharp would be *a las nueve en punto*." },
+    { q: "When do they get paid?", es: "A finales de mes nos pagan el sueldo.",
+      options: ["Right at the start", "At the end of the month", "In the middle of every month"], answer: 1,
+      why: "*A finales de mes* is the last days of the month." },
+    { q: "What happened to breakfast?", es: "No me dio tiempo de desayunar.",
+      options: ["There was no time for it", "It was cold", "She skipped it on purpose"], answer: 0,
+      why: "*No me dio tiempo de* says the time ran out, so it didn't happen." }
+  ],
+  yourTurn: [
+    { en: "I don't have enough time to finish today.", es: "No me alcanza el tiempo para terminar hoy.", accept: ["Hoy no me alcanza el tiempo para terminar.", "No me da tiempo de terminar hoy."] },
+    { en: "We left first thing in the morning.", es: "Salimos a primera hora de la mañana.", accept: [] },
+    { en: "They cancelled at the last minute.", es: "Cancelaron a última hora.", accept: ["Cancelaron [a última hora|en el último minuto]."] },
+    { en: "He arrived midweek.", es: "Llegó a mediados de semana.", accept: ["Llegó a mediados de la semana."] },
+    { en: "Don't waste time on excuses. (to a friend)", es: "No pierdas el tiempo con excusas.", accept: ["No pierdas tiempo con excusas."] }
+  ],
+  translate: [
+    { en: "I'd like to devote more time to my family.", es: "Me gustaría dedicarle más tiempo a mi familia.", accept: ["Me gustaría dedicar más tiempo a mi familia."] },
+    { en: "They reckon they'll be here around nine.", es: "Calculan que van a estar aquí hacia las nueve.", accept: ["Calculan que [van a estar|estarán] [aquí|acá] [hacia|a eso de|como a] las nueve.", "Calculan que [van a llegar|llegarán] [hacia|a eso de|como a] las nueve."] },
+    { en: "As usual, he arrived at the last minute.", es: "Como siempre, llegó en el último minuto.", accept: ["Como siempre, llegó [en el último minuto|a última hora]."] },
+    { en: "Will you have time to drop by? (to a friend)", es: "¿Te da tiempo de pasar?", accept: ["¿Te da tiempo [de|para] pasar?", "¿Te alcanza el tiempo para pasar?"] },
+    { en: "At the beginning of the year I enrolled in a course. By the middle of the year I didn't have enough time. Now I study in the small hours.", es: "A principios de año me inscribí en un curso. A mediados de año ya no me alcanzaba el tiempo. Ahora estudio de madrugada.", accept: ["A principios de año me [inscribí|metí] en un curso. A mediados de año ya no me [alcanzaba|alcanzó] el tiempo. Ahora estudio de madrugada."] },
+    { en: "Let's make the most of the time we have.", es: "Aprovechemos el tiempo que tenemos.", accept: ["Vamos a aprovechar el tiempo que tenemos."] }
+  ],
+  register: [
+    { es: "Nos vemos como a las nueve.", en: "See you around nine.", when: "texting a friend in Colombia" },
+    { es: "Nos vemos a eso de las nueve.", en: "See you at about nine.", when: "anywhere, a relaxed plan" },
+    { es: "La reunión será hacia las nueve.", en: "The meeting will be at around nine.", when: "in a work email or a written notice" },
+    { es: "Lamentablemente, esta semana no tengo disponibilidad.", en: "Unfortunately, I have no availability this week.", when: "declining formally, in a letter or email" }
+  ],
+  personal: {
+    prompt: "Describe your week to a colleague: what you'll do first thing, what you won't have time for, and roughly when something will happen.",
+    constraints: [
+      { type: "containsAny", words: ["a primera hora", "a última hora", "de madrugada", "en el último minuto"], label: "an edge of the day: *a primera hora* or *a última hora*" },
+      { type: "regex", pattern: "(me|te|le|nos|les) (alcanza|alcanzó|alcanzaba|da|dio|daba) (el )?tiempo", label: "time as the subject: *no me alcanza el tiempo*" },
+      { type: "containsAny", words: ["hacia las", "a eso de las", "como a las", "hacia la", "a eso de la", "como a la"], label: "a rough time: *hacia las nueve* or *como a las nueve*" }
+    ],
+    model: "El lunes tengo una reunión a primera hora. No me alcanza el tiempo para preparar todo el domingo, así que voy a madrugar. El cliente llega hacia las diez."
+  },
+  pitfalls: [
+    "*Yo no doy tiempo* says you won't grant time: for not enough time, *no me alcanza el tiempo*.",
+    "*A la última hora* adds an article English has but Spanish doesn't: *a última hora*.",
+    "*Hacia las nueve* is a guess; for an appointment, say *a las nueve*."
+  ]
+},
+
+"nt-localizacion-tiempo-b2": {
+  source: "merged",
+  hook: {
+    line: "A newspaper feature follows a former taxi driver around Bogotá. His life is measured in stretches of time: what he hasn't done for years, what he has done for years, and what he plans.",
+    es: "Don Hernán lleva doce años sin manejar.\nDe joven tenía un taxi, y en los años noventa recorría Bogotá de madrugada.\nAntiguamente, dice, la ciudad se cruzaba en media hora.\nHoy en día prefiere la bicicleta, y lleva cinco años pedaleando hasta su trabajo.\nA corto plazo no piensa comprar carro; a largo plazo, tampoco.",
+    en: "Don Hernán hasn't driven for twelve years.\nAs a young man he had a taxi, and in the nineties he drove around Bogotá in the small hours.\nIn the old days, he says, you could cross the city in half an hour.\nNowadays he prefers the bike, and he's been pedalling to work for five years.\nIn the short term he doesn't plan to buy a car; in the long term, neither."
+  },
+  examples: [
+    { es: "Llevo tres semanas sin tomar café, y todavía me duele la cabeza por las tardes.", en: "I haven't had coffee for three weeks, and I still get headaches in the afternoons." },
+    { es: "Llevamos dos años estudiando juntas, pero llevamos un mes sin vernos por el trabajo.", en: "We've been studying together for two years, but we haven't seen each other for a month because of work." },
+    { es: "A mediano plazo queremos abrir otra tienda en Medellín, y a largo plazo, exportar el café.", en: "In the medium term we want to open another shop in Medellín, and in the long term, export the coffee." }
+  ],
+  rule: "*Llevar* + a stretch of time says how long something has been going on. Add the *-ando* form for what you've been doing: *Llevo un año estudiando.* Add *sin* + the plain verb for what you haven't done: *Llevo un año sin estudiar.* No *no*: *sin* already is the not. For the past, *llevaba*: hadn't, for.\nFar back: *antiguamente*, *en los años noventa*, *de niño*, *de joven*.\nNow: *hoy en día*, *en la actualidad*, *aún no* or *todavía no*.\nAhead: *el año que viene*, *el próximo año*, and how soon, *a corto plazo*, *a mediano plazo*, *a largo plazo*. Spain says *a medio plazo*.",
+  readAndPick: [
+    { q: "Does Don Hernán drive now?", es: "Don Hernán lleva doce años sin manejar.",
+      options: ["Yes, every single day", "No, not for years", "Only at night"], answer: 1,
+      why: "*Lleva doce años sin manejar*: twelve years and counting without driving." },
+    { q: "How long has he cycled to work?", es: "Lleva cinco años pedaleando hasta su trabajo.",
+      options: ["Five years and counting", "Five years once, then he stopped", "Not yet"], answer: 0,
+      why: "*Llevar* + time + *pedaleando* is still going on now." },
+    { q: "When did he have the taxi?", es: "De joven tenía un taxi.",
+      options: ["Never", "When he was young", "Just since last year"], answer: 1,
+      why: "*De joven* places it in his youth: as a young man." },
+    { q: "What does *a corto plazo* tell you?", es: "A corto plazo no piensa comprar carro.",
+      options: ["How much it matters to him", "How soon it would be", "Where"], answer: 1,
+      why: "*A corto plazo* sorts the future by how soon: the near term." },
+    { q: "What has the speaker not done for three weeks?", es: "Llevo tres semanas sin tomar café.",
+      options: ["Work", "Sleep a full night", "Drink coffee"], answer: 2,
+      why: "*Sin tomar café*: the thing not done comes after *sin*." }
+  ],
+  yourTurn: [
+    { en: "I haven't smoked for three weeks.", es: "Llevo tres semanas sin fumar.", accept: [] },
+    { en: "We haven't spoken for a month.", es: "Llevamos un mes sin hablar.", accept: ["Llevamos un mes sin hablarnos."] },
+    { en: "I've been studying Spanish for two years.", es: "Llevo dos años estudiando español.", accept: [] },
+    { en: "Nowadays everything is easier.", es: "Hoy en día todo es más fácil.", accept: ["[Hoy en día|Hoy día|En la actualidad|Actualmente], todo es más fácil."] },
+    { en: "There's no solution in the short term.", es: "A corto plazo no hay solución.", accept: ["No hay solución a corto plazo."] }
+  ],
+  translate: [
+    { en: "In the old days people thought the Earth was flat.", es: "Antiguamente se pensaba que la Tierra era plana.", accept: ["Antiguamente la gente pensaba que la Tierra era plana.", "Antes se pensaba que la Tierra era plana."] },
+    { en: "As a young man he had a beard.", es: "De joven tenía barba.", accept: ["De joven llevaba barba."] },
+    { en: "I still haven't read that novel.", es: "Todavía no he leído esa novela.", accept: ["Aún no he leído esa novela."] },
+    { en: "In the medium term, we hope to open a second shop.", es: "A mediano plazo, esperamos abrir una segunda tienda.", accept: ["A mediano plazo, esperamos abrir [una segunda|otra] tienda."] },
+    { en: "I had gone two years without seeing my grandmother. When I arrived, she was cooking. She had been living alone for ten years.", es: "Llevaba dos años sin ver a mi abuela. Cuando llegué, estaba cocinando. Llevaba diez años viviendo sola.", accept: ["Llevaba dos años sin ver a mi abuela. Cuando llegué, (ella) estaba cocinando. Llevaba diez años viviendo sola."] },
+    { en: "How long have you gone without sleeping well? (to a friend)", es: "¿Cuánto llevas sin dormir bien?", accept: ["¿Cuánto tiempo llevas sin dormir bien?"] }
+  ],
+  register: [
+    { es: "Llevo rato sin verte.", en: "I haven't seen you in ages.", when: "in Colombia, greeting a friend you've missed" },
+    { es: "Hace tiempo que no te veo.", en: "It's been a while since I saw you.", when: "anywhere, a warm hello" },
+    { es: "En la actualidad, la empresa tiene doscientos empleados.", en: "At present, the company has two hundred employees.", when: "in a report or a company profile" },
+    { es: "La medida tendrá efectos a largo plazo.", en: "The measure will have long-term effects.", when: "in the news or a policy document" }
+  ],
+  personal: {
+    prompt: "Write about a habit you gave up or picked up: how long you've gone without it or been doing it, what it was like before, and what you plan in the long term.",
+    constraints: [
+      { type: "regex", pattern: "llev(o|as|a|amos|an|aba|ábamos|aban) [a-záéíóúñ0-9 ]+ sin [a-záéíóúñ]+(r|rlo|rla|rlos|rlas|rme|rte|rse|rnos|rle|rles)\\b", label: "time without: *llevo un año sin fumar*" },
+      { type: "regex", pattern: "llev(o|as|a|amos|an|aba|ábamos|aban) [a-záéíóúñ0-9 ]+ [a-záéíóúñ]+(ando|iendo|yendo)\\b", label: "time doing: *llevo dos años estudiando*" },
+      { type: "containsAny", words: ["antes", "antiguamente", "de niño", "de niña", "de joven", "en los años"], label: "the past: *antes* or *de joven*" },
+      { type: "containsAny", words: ["a corto plazo", "a mediano plazo", "a largo plazo"], label: "the future: *a largo plazo*" }
+    ],
+    model: "Llevo un año sin comer carne. De niña comía carne todos los días, porque en mi casa era normal. Ahora llevo seis meses aprendiendo a cocinar con lentejas y fríjoles. A largo plazo, quiero abrir un restaurante vegetariano."
+  },
+  pitfalls: [
+    "*Llevo un año no fumando* isn't Spanish: *llevo un año sin fumar*.",
+    "*A medio plazo* is Spain; in Colombia and most of Latin America, *a mediano plazo*.",
+    "*Llevo dos años estudiando* is still going on; if you stopped, *estudié dos años*."
+  ]
+},
+
+"task-b2-noticia": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: summarise a real news item in six sentences of your own, then comment on it in eight more. The model starts on a report about cycling in Bogotá.",
+    es: "Según un informe de la alcaldía, los viajes en bicicleta en Bogotá se duplicaron en cinco años.\nHoy, en torno a un millón de personas usan la bici a diario, casi la décima parte de los viajes.\nAl parecer, el aumento se produjo sobre todo después de la pandemia.\nSin embargo, los robos de bicicletas también subieron un 30 %.\nUn funcionario habría recibido dinero para frenar una nueva ciclorruta, según fuentes del concejo.\nPara mí, la noticia muestra un cambio real, pero cabe preguntarse si la ciudad es segura para los ciclistas.",
+    en: "According to a city report, bike trips in Bogotá doubled in five years.\nToday, around a million people use a bike every day, almost a tenth of all trips.\nApparently, the rise came mostly after the pandemic.\nHowever, bike thefts also went up by 30%.\nAn official allegedly took money to block a new bike lane, according to council sources.\nFor me, the news shows a real change, but it's worth asking whether the city is safe for cyclists."
+  },
+  examples: [
+    { es: "El arriendo en Medellín ha subido en torno a un 12 % en el último año.", en: "Rent in Medellín has risen by around 12% in the last year." },
+    { es: "Según fuentes del ministerio, la reforma se presentará al Congreso a mediados de marzo.", en: "According to ministry sources, the reform will be presented to Congress in mid March." },
+    { es: "El exgerente habría cobrado comisiones por adjudicar los contratos, aunque él lo niega.", en: "The former manager allegedly took commissions for awarding the contracts, although he denies it." }
+  ],
+  rule: "Two jobs, in order. First summarise the item in six sentences in your own words; then comment on it in eight more.\nReuse the unit's moves. Figures: *se duplicó*, *un tercio de*, *en torno a*, *un aumento del 30 %*.\nWhere it comes from: *según fuentes de...*, *según un informe de...*, *al parecer*.\nDistance from a claim nobody has proved: *presuntamente*, and the conditional, *habría cobrado*, allegedly took. Colombian news uses it every day.\nIn the comment, say what you make of it: *para mí*, *cabe preguntarse si...*, *lo que me llama la atención es...*\nCopying the article's phrases is not summarising.",
+  readAndPick: [
+    { q: "What does *habría recibido* signal?", es: "Un funcionario habría recibido dinero, según fuentes del concejo.",
+      options: ["Nobody's confirmed it", "He'll get money", "It definitely happened"], answer: 0,
+      why: "In the news the conditional distances the paper from a claim: allegedly." },
+    { q: "Which part names the source?", es: "Según un informe de la alcaldía, los viajes se duplicaron.",
+      options: ["*se duplicaron*", "*según un informe*", "*los viajes en bicicleta*"], answer: 1,
+      why: "*Según un informe de* says where the figure comes from." },
+    { q: "How much did bike trips grow?", es: "Los viajes en bicicleta se duplicaron en cinco años.",
+      options: ["They doubled", "They halved", "They rose a bit"], answer: 0,
+      why: "*Se duplicaron* is doubled: twice as many trips." },
+    { q: "What is the writer doing with *cabe preguntarse*?", es: "Cabe preguntarse si la ciudad es segura para los ciclistas.",
+      options: ["Giving a new figure", "Quoting the mayor directly", "Raising a fair doubt"], answer: 2,
+      why: "*Cabe preguntarse si* opens the comment with a question worth asking." },
+    { q: "What share of trips is by bike?", es: "Casi la décima parte de los viajes.",
+      options: ["Exactly ten", "Nearly one in ten", "A tenth of a million"], answer: 1,
+      why: "*La décima parte* is a tenth, and *casi* says a little less." }
+  ],
+  yourTurn: [
+    { en: "Rent has risen by around 12%.", es: "El arriendo ha subido en torno a un 12 %.", accept: ["El arriendo [ha subido|subió] [en torno a|alrededor de|cerca de] un 12 %."] },
+    { en: "According to ministry sources, the reform will be presented in March.", es: "Según fuentes del ministerio, la reforma se presentará en marzo.", accept: ["Según fuentes del ministerio, la reforma se [presentará|va a presentar] en marzo."] },
+    { en: "The accused allegedly took commissions.", es: "El acusado habría cobrado comisiones.", accept: ["El acusado presuntamente cobró comisiones."] },
+    { en: "Apparently, the rise came after the pandemic.", es: "Al parecer, el aumento se produjo después de la pandemia.", accept: ["[Al parecer|Por lo visto], el aumento [se produjo|ocurrió|llegó] después de la pandemia."] }
+  ],
+  translate: [
+    { en: "A third of the city's buses are electric.", es: "Un tercio de los buses de la ciudad son eléctricos.", accept: ["La tercera parte de los buses de la ciudad son eléctricos."] },
+    { en: "Bike thefts also rose by 30%.", es: "Los robos de bicicletas también subieron un 30 %.", accept: ["Los robos de bicicletas también [subieron|aumentaron] un 30 %."] },
+    { en: "The former manager denies it.", es: "El exgerente lo niega.", accept: [] },
+    { en: "What strikes me is that nobody resigned.", es: "Lo que me llama la atención es que nadie renunció.", accept: ["Lo que me llama la atención es que nadie [renunció|haya renunciado]."] },
+    { en: "According to a city report, bike trips doubled in five years. However, thefts rose too. It's worth asking whether the city is safe for cyclists.", es: "Según un informe de la alcaldía, los viajes en bicicleta se duplicaron en cinco años. Sin embargo, los robos también subieron. Cabe preguntarse si la ciudad es segura para los ciclistas.", accept: ["Según un informe de la alcaldía, los viajes en bicicleta se duplicaron en cinco años. Sin embargo, los robos también [subieron|aumentaron]. Cabe preguntarse si la ciudad es segura para los ciclistas."] },
+    { en: "The mayor allegedly knew about the contracts.", es: "El alcalde habría sabido de los contratos.", accept: ["El alcalde presuntamente sabía de los contratos."] }
+  ],
+  register: [
+    { es: "Dizque el alcalde sabía todo.", en: "Supposedly the mayor knew everything.", when: "in Colombia, passing on gossip you doubt" },
+    { es: "Al parecer, el alcalde lo sabía.", en: "Apparently, the mayor knew.", when: "anywhere, passing on what you've heard" },
+    { es: "El alcalde habría tenido conocimiento de los hechos.", en: "The mayor allegedly had knowledge of the events.", when: "in a news report, a claim not yet proven" },
+    { es: "Según fuentes de la Fiscalía, la investigación sigue abierta.", en: "According to sources in the prosecutor's office, the investigation remains open.", when: "in the news, naming where a claim comes from" }
+  ],
+  personal: {
+    prompt: "Find a real Spanish news item. Summarise it in six sentences of your own, then comment on it in eight more: fourteen sentences or more in all.",
+    constraints: [
+      { type: "minSentences", n: 14, label: "fourteen sentences or more" },
+      { type: "containsAny", words: ["según", "al parecer", "por lo visto", "de acuerdo con"], label: "a source: *según* or *al parecer*" },
+      { type: "regex", pattern: "se duplic|se triplic|un tercio|la mitad|en torno a|alrededor de|un aumento|una subida|una caída|\\d+ ?%|por ciento", label: "a figure: *se duplicó*, *un tercio de* or *en torno a*" },
+      { type: "regex", pattern: "presuntamente|habr(ía|ían) [a-záéíóúñ]+(ado|ido|to|cho)", label: "distance from an unproved claim: *habría cobrado* or *presuntamente*" }
+    ],
+    model: "Según un informe de la alcaldía, los viajes en bicicleta en Bogotá se duplicaron en cinco años. Hoy, en torno a un millón de personas usan la bici todos los días. Al parecer, el cambio empezó durante la pandemia. La ciudad construyó más de cien kilómetros de ciclorrutas nuevas. Sin embargo, los robos de bicicletas subieron un 30 %. Además, un funcionario habría recibido dinero para frenar una ciclorruta en el norte. Para mí, la noticia muestra un cambio real en la ciudad. Yo misma empecé a ir en bici al trabajo hace dos años. Lo que me llama la atención es que el informe casi no habla de seguridad. Cabe preguntarse si la ciudad está preparada para tantos ciclistas. En mi barrio, por ejemplo, no hay parqueaderos para bicicletas. Tampoco hay suficiente luz en las ciclorrutas de noche. Creo que la alcaldía debería invertir en eso antes de celebrar. Si no, mucha gente va a volver al carro."
+  },
+  pitfalls: [
+    "Copying the article's sentences is not a summary: change the words, keep the facts.",
+    "*Habría cobrado* in the news is not would have taken: it is allegedly took.",
+    "A comment with no source for its figures reads as rumour: *según* and a name."
+  ]
+},
+
+/* ---- unit b2-u49 · Reporting what people said ---------------------------- */
+
+"dc-cita-b2": {
+  source: "merged",
+  hook: {
+    line: "Sofía has just spoken to her landlord, and her mother wants the whole conversation. Sofía passes on what he said, what he asked, a message for her mother, and a rumour she can't vouch for.",
+    es: "Mamá: ¿Qué te dijo el dueño del apartamento?\nSofía: Que el arriendo sube en enero.\nSofía: Me dijo que ya había hablado con los otros inquilinos y que al día siguiente me mandaría el contrato.\nSofía: Y me preguntó si pensaba quedarme otro año.\nSofía: Ah, y dice que si le puedes devolver el taladro.\nSofía: Por lo visto, piensa vender el edificio, según dicen los vecinos.",
+    en: "Mom: What did the landlord say to you?\nSofía: That the rent goes up in January.\nSofía: He told me he had already spoken to the other tenants and that he'd send me the contract the next day.\nSofía: And he asked me if I was planning to stay another year.\nSofía: Oh, and he's asking whether you can give him back the drill.\nSofía: Apparently, he's planning to sell the building, or so the neighbours say."
+  },
+  examples: [
+    { es: "Me dijo que vendría el lunes, pero hoy es miércoles y todavía no ha llegado.", en: "He told me he'd come on Monday, but today is Wednesday and he still hasn't arrived." },
+    { es: "Le pregunté cuándo llegaría su papá, y me contestó que no sabía nada del vuelo.", en: "I asked her when her dad would arrive, and she answered that she knew nothing about the flight." },
+    { es: "Según dicen, el precio de la gasolina va a subir otra vez el mes que viene.", en: "They say the price of petrol is going to go up again next month." }
+  ],
+  rule: "Retelling moves three things back at once: the verb, the person and the place or time.\n*Vengo* becomes *venía*, *vendré* becomes *vendría*, *hablé* becomes *había hablado* (or stays if the order is clear).\n*Yo* becomes *él*, *aquí* becomes *allá*, *mañana* becomes *al día siguiente*, *ayer* becomes *el día anterior*.\nIf it's still true now, the verb can stay: *Dijo que el arriendo sube en enero.*\nA yes or no question takes *si*: *Me preguntó si pensaba quedarme.*\nTo relay fast, start with *que*: *¿Qué dijo? Que no.* *Dice que si...* passes on a question.\nNews you don't own: *por lo visto*, *según dicen*, *parece que*.",
+  readAndPick: [
+    { q: "What did the landlord say about January?", es: "Que el arriendo sube en enero.",
+      options: ["The rent stays", "The rent goes up then", "He's selling the whole building"], answer: 1,
+      why: "A reply that starts with *que* passes on what he said: the rent goes up." },
+    { q: "What is the landlord asking Sofía's mom?", es: "Dice que si le puedes devolver el taladro.",
+      options: ["She can keep it", "He's lending her one more", "Whether she'll return it"], answer: 2,
+      why: "*Dice que si* passes on a question: he's asking whether she can give it back." },
+    { q: "When was the contract coming?", es: "Me dijo que al día siguiente me mandaría el contrato.",
+      options: ["The day after he spoke", "Tomorrow from now", "The week before he said it"], answer: 0,
+      why: "*Al día siguiente* is his tomorrow, moved back: the day after the conversation." },
+    { q: "How sure is Sofía about the sale?", es: "Por lo visto, piensa vender el edificio, según dicen los vecinos.",
+      options: ["She read it in the contract", "Heard it second hand", "He told her"], answer: 1,
+      why: "*Por lo visto* and *según dicen* pass it on without owning it." },
+    { q: "What kind of question did he ask?", es: "Me preguntó si pensaba quedarme otro año.",
+      options: ["A yes or no one", "One about the date", "None at all"], answer: 0,
+      why: "*Si* carries a yes or no question into the retelling." },
+    { q: "What does *dice que sí*, with the accent, mean?", es: "Le pregunté y dice que sí.",
+      options: ["She's asking whether", "No", "She says yes"], answer: 2,
+      why: "With the accent, *sí* is yes. Without it, *dice que si...* asks whether." }
+  ],
+  yourTurn: [
+    { en: "He said he would come.", es: "Dijo que vendría.", accept: ["Dijo que iba a venir."] },
+    { en: "She asked me if I had liked the present.", es: "Me preguntó si me había gustado el regalo.", accept: ["Me preguntó si me [había gustado|gustó] el regalo."] },
+    { en: "What did he say? That he can't today.", es: "¿Qué dijo? Que hoy no puede.", accept: ["¿Qué dijo? Que no puede hoy."] },
+    { en: "He told me he had already called three times.", es: "Me dijo que ya había llamado tres veces.", accept: [] },
+    { en: "Apparently, the restaurant closed.", es: "Por lo visto, el restaurante cerró.", accept: ["[Por lo visto|Al parecer], el restaurante cerró.", "Parece que el restaurante cerró."] }
+  ],
+  translate: [
+    { en: "He said that the next day he was going to Medellín.", es: "Dijo que al día siguiente se iba para Medellín.", accept: ["Dijo que al día siguiente se iba [a|para] Medellín."] },
+    { en: "My mom is asking whether you're coming for lunch.", es: "Mi mamá dice que si vienes a almorzar.", accept: ["Mi mamá pregunta si vienes a almorzar."] },
+    { en: "She asked him when his father would arrive.", es: "Le preguntó cuándo llegaría su papá.", accept: ["Le preguntó cuándo llegaría su [papá|padre].", "Le preguntó que cuándo llegaría su [papá|padre]."] },
+    { en: "They say the price is going up next month.", es: "Según dicen, el precio va a subir el mes que viene.", accept: ["Según dicen, el precio va a subir el [mes que viene|próximo mes].", "Dicen que el precio va a subir el [mes que viene|próximo mes]."] },
+    { en: "He told me he had spoken to the tenants. He also said he would send me the contract the next day. Apparently, he wants to sell.", es: "Me dijo que había hablado con los inquilinos. También dijo que me mandaría el contrato al día siguiente. Por lo visto, quiere vender.", accept: ["Me dijo que había hablado con los inquilinos. También dijo que me [mandaría|enviaría|iba a mandar] el contrato al día siguiente. [Por lo visto|Al parecer], quiere vender."] },
+    { en: "It seems they've already finished the project.", es: "Parece que ya terminaron el proyecto.", accept: ["Parece que ya [terminaron|han terminado|acabaron] el proyecto."] }
+  ],
+  register: [
+    { es: "Dizque ya vendió el edificio.", en: "Supposedly he's already sold the building.", when: "in Colombia, passing on talk you half believe" },
+    { es: "Dice que ya viene.", en: "She says she's on her way.", when: "relaying a quick message at home" },
+    { es: "Me comentó que el arriendo subiría en enero.", en: "He mentioned to me that the rent would go up in January.", when: "reporting a conversation at work" },
+    { es: "El propietario manifestó que el contrato se enviaría al día siguiente.", en: "The owner stated that the contract would be sent the following day.", when: "in a written complaint or official minutes" }
+  ],
+  personal: {
+    prompt: "Report a real conversation you had this week: what the other person told you, one question they asked, and something you've only heard second hand.",
+    constraints: [
+      { type: "regex", pattern: "(dijo|contó|comentó|explicó) que", label: "what they said: *me dijo que*" },
+      { type: "regex", pattern: "pregunt(ó|o) (si|qué|cuándo|dónde|cómo|cuánto|por qué|quién)", label: "a question passed on: *me preguntó si*" },
+      { type: "containsAny", words: ["por lo visto", "según dicen", "al parecer", "parece que", "dizque"], label: "second hand: *por lo visto* or *según dicen*" }
+    ],
+    model: "El lunes hablé con mi jefe. Me dijo que el proyecto se había aplazado y que me llamaría al día siguiente. También me preguntó si podía viajar a Cali en diciembre. Por lo visto, la empresa piensa abrir una oficina allá."
+  },
+  pitfalls: [
+    "Moving only the verb leaves the rest behind: *mañana* becomes *al día siguiente*, *aquí* becomes *allá*.",
+    "*Dice que puede ayudarte* is a statement; *dice que si puede ayudarte* passes on a question.",
+    "*Dice que sí*, with the accent, is she says yes; *dice que si...* asks whether."
+  ]
+},
+
+"nt-expresion-verbal-b2": {
+  source: "merged",
+  hook: {
+    line: "The minutes of a residents' meeting in a Bogotá building never say who said what. They say who proposed, who insisted, who suggested, who denied and who finally admitted it.",
+    es: "Acta de la reunión de copropietarios, 12 de marzo.\nLa administradora propuso cambiar la empresa de vigilancia.\nEl señor Rojas insistió en que primero se revisaran los costos.\nLa señora Pardo sugirió que se votara en la próxima asamblea.\nEl celador negó haber dejado la puerta abierta, y la administradora confirmó que la cámara estaba dañada.\nAl final, el señor Gómez reconoció que había perdido las llaves del parqueadero.",
+    en: "Minutes of the owners' meeting, 12 March.\nThe administrator proposed changing the security company.\nMr Rojas insisted that the costs be checked first.\nMrs Pardo suggested that it be put to a vote at the next meeting.\nThe guard denied having left the door open, and the administrator confirmed that the camera was broken.\nIn the end, Mr Gómez admitted that he had lost the car park keys."
+  },
+  examples: [
+    { es: "Me prometió que lo haría antes del viernes, pero todavía no lo ha hecho.", en: "He promised me he'd do it before Friday, but he still hasn't done it." },
+    { es: "El informe destaca tres problemas principales y concluye con una propuesta para el próximo año.", en: "The report highlights three main problems and concludes with a proposal for next year." },
+    { es: "Negó que fuera su culpa, aunque después reconoció que no había revisado los números.", en: "She denied it was her fault, although later she admitted she hadn't checked the numbers." }
+  ],
+  rule: "*Decir* reports; a sharper verb also tells the reader how it was said.\n*Sugerir* (gently) and *proponer* (with a plan): *Sugirió que votáramos.*\n*Insistir en*: again, against resistance: *Insistió en que la acompañáramos.*\n*Prometer*: a commitment. *Confirmar*: removes a doubt.\n*Afirmar*: states as fact. *Negar*: denies. *Reconocer*, *admitir*, *confesar*: accept a fact, and *confesar* hints they didn't want to.\nAfter *negar que*, the subjunctive: *negó que fuera su culpa*. About yourself, the plain verb: *negó haber estado allí*. After *reconocer que*, the ordinary form.\nFor a text: *destacar*, *subrayar*, *resumir*, *concluir*.",
+  readAndPick: [
+    { q: "How did Mr Rojas say it?", es: "El señor Rojas insistió en que primero se revisaran los costos.",
+      options: ["Once, just in passing", "Firmly, more than once", "As a quiet joke to a friend"], answer: 1,
+      why: "*Insistir en* is to press the point, usually against resistance." },
+    { q: "What does *confesó* add to *dijo*?", es: "Al final confesó que había sido él.",
+      options: ["Nothing at all", "He was proud of it and said so loudly", "He was reluctant"], answer: 2,
+      why: "*Confesar* hints he didn't want to say it, and held out for a while." },
+    { q: "What did the guard do?", es: "El celador negó haber dejado la puerta abierta.",
+      options: ["He admitted the whole thing", "He denied it", "He forgot"], answer: 1,
+      why: "*Negó haber dejado*: he denied it, with the plain verb because it's about himself." },
+    { q: "Does she accept the blame?", es: "Negó que fuera su culpa.",
+      options: ["She denies it's hers", "She says so", "She isn't sure either way"], answer: 0,
+      why: "*Negar que* rejects the idea, so the verb after it takes the subjunctive: *fuera*." },
+    { q: "What does *propuso* bring?", es: "La administradora propuso cambiar la empresa de vigilancia.",
+      options: ["A complaint", "A threat to leave the building", "A concrete plan"], answer: 2,
+      why: "*Proponer* puts a concrete plan on the table; *sugerir* is gentler." },
+    { q: "What does the report do with three problems?", es: "El informe destaca tres problemas principales.",
+      options: ["Hides them", "Highlights them", "Solves them all at once"], answer: 1,
+      why: "*Destacar* makes them stand out, the way a text points at what matters." }
+  ],
+  yourTurn: [
+    { en: "She suggested we leave it for another day.", es: "Sugirió que lo dejáramos para otro día.", accept: ["Sugirió dejarlo para otro día."] },
+    { en: "He insisted that we go with her.", es: "Insistió en que la acompañáramos.", accept: [] },
+    { en: "In the end he confessed it had been him.", es: "Al final confesó que había sido él.", accept: ["Al final confesó que fue él."] },
+    { en: "He flatly denied having been there.", es: "Negó rotundamente haber estado allí.", accept: ["Negó rotundamente haber estado [allí|allá|ahí]."] },
+    { en: "He promised he would do it.", es: "Prometió que lo haría.", accept: ["Prometió hacerlo.", "Prometió que lo iba a hacer."] }
+  ],
+  translate: [
+    { en: "The president confirmed the news this morning.", es: "El presidente confirmó la noticia esta mañana.", accept: ["El presidente confirmó la noticia [esta mañana|hoy en la mañana]."] },
+    { en: "She proposed a solution that convinced everyone.", es: "Propuso una solución que convenció a todos.", accept: [] },
+    { en: "He denies that it's his fault.", es: "Niega que sea su culpa.", accept: [] },
+    { en: "She admitted that she hadn't checked the figures.", es: "Reconoció que no había revisado las cifras.", accept: ["[Reconoció|Admitió] que no había revisado las cifras.", "[Reconoció|Admitió] que no revisó las cifras."] },
+    { en: "The administrator proposed changing the company. Mr Rojas insisted that we check the costs first. In the end, everyone agreed.", es: "La administradora propuso cambiar la empresa. El señor Rojas insistió en que primero revisáramos los costos. Al final, todos estuvieron de acuerdo.", accept: ["La administradora propuso cambiar la empresa. El señor Rojas insistió en que primero [revisáramos|se revisaran] los costos. Al final, todos estuvieron de acuerdo."] },
+    { en: "The text concludes with a personal reflection.", es: "El texto concluye con una reflexión personal.", accept: ["El texto [concluye|termina] con una reflexión personal."] }
+  ],
+  register: [
+    { es: "Soltó que se iba de la empresa.", en: "He blurted out that he was leaving the company.", when: "telling a friend about an awkward moment" },
+    { es: "Nos contó que se iba de la empresa.", en: "He told us he was leaving the company.", when: "anywhere, a plain report" },
+    { es: "Comunicó su decisión de retirarse de la empresa.", en: "He announced his decision to leave the company.", when: "in a company email or formal minutes" },
+    { es: "El informe subraya la necesidad de actuar.", en: "The report underlines the need to act.", when: "summarising a document in writing" }
+  ],
+  personal: {
+    prompt: "Write up a meeting you were in, or a family argument, as if for the minutes: who proposed, who insisted, who denied and who admitted something.",
+    constraints: [
+      { type: "containsAny", words: ["propuso", "sugirió", "propusieron", "sugirieron"], label: "a proposal: *propuso* or *sugirió*" },
+      { type: "containsAny", words: ["insistió en", "insistieron en"], label: "insisting: *insistió en que*" },
+      { type: "regex", pattern: "neg(ó|o|aron)|reconoci(ó|o|eron)|admiti(ó|o|eron)|confes(ó|o|aron)", label: "a denial or an admission: *negó* or *reconoció*" },
+      { type: "subjunctiveAfter", trigger: "en que", label: "the subjunctive after *insistió en que*" }
+    ],
+    model: "En la reunión de la familia, mi tía propuso vender la finca. Mi hermano insistió en que primero la arregláramos. Mi abuela negó que la finca valiera tan poco. Al final, mi papá reconoció que nadie tenía tiempo para cuidarla."
+  },
+  pitfalls: [
+    "*Decir* five times flattens a report; each sharper verb tells the reader how it was said.",
+    "*Negó que era su culpa* keeps the ordinary form: after *negar que*, *fuera*.",
+    "*Confesar* says they didn't want to say it; for a neutral statement, *afirmó* or *explicó*."
+  ]
+},
+
+"dc-perspectiva-temporal-b2": {
+  source: "merged",
+  hook: {
+    line: "A friend tells a story over chat about a present nobody thanked her for. She tells the past as if it were happening now, guesses at why, and keeps losing her thread.",
+    es: "Te cuento: el sábado le hago un regalo carísimo a mi cuñado y no me da ni las gracias.\nPensaba decirle algo, pero al final me quedé callada.\nHoy no vino al almuerzo. Estará bravo, o se habrá quedado dormido.\nBueno, ¿en qué íbamos? Ah, sí, te estaba contando lo del regalo.\nIba a llamarlo esta tarde, pero mejor espero a que él me llame.",
+    en: "Listen to this: on Saturday I give my brother-in-law a really expensive present and he doesn't even say thank you.\nI was going to say something, but in the end I kept quiet.\nToday he didn't come to lunch. He's probably angry, or he must have overslept.\nAnyway, where were we? Oh yes, I was telling you about the present.\nI was going to call him this afternoon, but I'd better wait for him to call me."
+  },
+  examples: [
+    { es: "Voy caminando por la calle y de repente me encuentro con mi profesor del colegio.", en: "I'm walking down the street and suddenly I run into my old school teacher." },
+    { es: "No contesta el teléfono; estará todavía en la reunión, o se le habrá descargado el celular.", en: "He's not answering the phone; he's probably still in the meeting, or his phone must have died." },
+    { es: "Pensaba ir al cine con Laura, pero al final me quedé en la casa viendo series.", en: "I was planning to go to the cinema with Laura, but in the end I stayed at home watching series." }
+  ],
+  rule: "A verb can change the angle without changing the time.\nThe present can tell a past story to make it feel close: *El sábado le hago un regalo y no me da ni las gracias.* It still happened on Saturday.\nThe future can guess about now: *Estará en la reunión.* The future perfect guesses about the past: *Se habrá quedado dormido*, he must have overslept. Nothing is predicted.\nThe imperfect leaves a plan hanging: *Pensaba ir, pero...*, *Iba a llamarte, pero...* With it, the plan almost always didn't happen; what did comes in the preterite.\nIt also picks up a thread that was cut: *¿Qué te estaba diciendo?* *¿En qué íbamos?*",
+  readAndPick: [
+    { q: "When did the present happen?", es: "El sábado le hago un regalo carísimo y no me da ni las gracias.",
+      options: ["Next Saturday", "Last Saturday, told as now", "Every single Saturday of the year"], answer: 1,
+      why: "The present tells a past story to bring it close; it's already happened." },
+    { q: "What does *se habrá quedado dormido* do?", es: "Hoy no vino al almuerzo; se habrá quedado dormido.",
+      options: ["Predicts what happens next", "States a fact", "Guesses about earlier"], answer: 2,
+      why: "The future perfect guesses about the past: he must have overslept." },
+    { q: "Did she say something to him?", es: "Pensaba decirle algo, pero al final me quedé callada.",
+      options: ["No, she kept quiet", "Yes, she told him off", "She wrote to him"], answer: 0,
+      why: "*Pensaba* leaves the plan hanging; *me quedé callada* is what happened." },
+    { q: "What is she doing with *¿en qué íbamos?*", es: "Bueno, ¿en qué íbamos? Ah, sí, te estaba contando lo del regalo.",
+      options: ["Ending the chat now", "Picking the story back up", "Asking for directions to the house"], answer: 1,
+      why: "The imperfect picks up a thread that was cut: where were we?" },
+    { q: "Where is he, probably?", es: "No contesta el teléfono; estará todavía en la reunión.",
+      options: ["On his way home", "At the meeting tomorrow", "Still in the meeting"], answer: 2,
+      why: "*Estará* guesses about now: he's probably still there." }
+  ],
+  yourTurn: [
+    { en: "He's not answering; he's probably still in the meeting.", es: "No contesta; estará todavía en la reunión.", accept: ["No contesta[;|,|.] [estará|debe estar] todavía en la reunión.", "No contesta[;|,|.] todavía estará en la reunión."] },
+    { en: "They must have overslept.", es: "Se habrán quedado dormidos.", accept: [] },
+    { en: "I was going to call you, but I forgot.", es: "Iba a llamarte, pero se me olvidó.", accept: ["Iba a llamarte, pero [se me olvidó|me olvidé].", "Te iba a llamar, pero [se me olvidó|me olvidé]."] },
+    { en: "What was I telling you?", es: "¿Qué te estaba diciendo?", accept: ["¿Qué te decía?"] },
+    { en: "I was planning to go to the cinema, but in the end I stayed at home.", es: "Pensaba ir al cine, pero al final me quedé en la casa.", accept: ["Pensaba ir al cine, pero al final me quedé en casa."] }
+  ],
+  translate: [
+    { en: "They didn't come this morning; they must have overslept.", es: "Esta mañana no vinieron; se habrán quedado dormidos.", accept: ["Esta mañana no vinieron[;|,|.] se habrán quedado dormidos."] },
+    { en: "They must have been dancing all night; look how sleepy they are.", es: "Habrán estado bailando toda la noche; mira la cara de sueño que tienen.", accept: ["Habrán estado bailando toda la noche[;|,|.] mira [la cara de sueño que tienen|qué cara de sueño tienen]."] },
+    { en: "Where were we?", es: "¿En qué íbamos?", accept: [] },
+    { en: "I'm walking down the street and suddenly I run into my old teacher.", es: "Voy caminando por la calle y de repente me encuentro con mi antiguo profesor.", accept: ["Voy caminando por la calle y de repente me encuentro [con|a] mi [antiguo|viejo] profesor."] },
+    { en: "On Saturday I give him a present and he doesn't even thank me. I was going to say something, but I kept quiet. He must have been tired.", es: "El sábado le doy un regalo y no me da ni las gracias. Iba a decirle algo, pero me quedé callada. Habrá estado cansado.", accept: ["El sábado le [doy|hago] un regalo y no me da ni las gracias. [Iba a decirle|Le iba a decir|Pensaba decirle] algo, pero me quedé [callada|callado]. [Habrá estado|Estaría] cansado."] },
+    { en: "I was planning to stay, but I left.", es: "Pensaba quedarme, pero salí.", accept: ["Pensaba quedarme, pero [salí|me fui]."] }
+  ],
+  register: [
+    { es: "Se le habrá olvidado, tranquila.", en: "He must have forgotten, don't worry.", when: "calming a friend about a missed call" },
+    { es: "Iba a llamarte, pero no me alcanzó el tiempo.", en: "I was going to call you, but I ran out of time.", when: "a polite excuse to anyone" },
+    { es: "Pensaba asistir, pero me surgió un compromiso.", en: "I was planning to attend, but something came up.", when: "excusing yourself in a work email" },
+    { es: "¿En qué íbamos?", en: "Where were we?", when: "after an interruption, at a table or a meeting" }
+  ],
+  personal: {
+    prompt: "Tell a friend about a small disaster from last week as if it were happening now, then say what you were going to do and didn't, and guess why someone acted as they did.",
+    constraints: [
+      { type: "containsAny", words: ["el sábado", "el viernes", "el domingo", "el lunes", "ayer", "anoche", "la semana pasada"], label: "a past day, told in the present: *el sábado le hago...*" },
+      { type: "regex", pattern: "(iba a|pensaba) [a-záéíóúñ]+.*pero", label: "a plan left hanging: *iba a llamarte, pero...*" },
+      { type: "regex", pattern: "habr(á|án) [a-záéíóúñ]+(ado|ido|to|cho)|estar(á|án|ía|ían) [a-záéíóúñ]+", label: "a guess: *se habrá quedado dormido* or *estaría cansada*" }
+    ],
+    model: "El viernes voy al banco y la cajera me dice que el sistema no funciona. Espero una hora y nada. Iba a quejarme, pero preferí irme. La cajera estaría cansada, o se habrá dañado el sistema otra vez."
+  },
+  pitfalls: [
+    "*Se habrá quedado dormido* is a guess about the past, not a prediction: he must have overslept.",
+    "*Pensaba ir* says you didn't go; if you went, *fui*.",
+    "Spain says *esta mañana no han venido*; in Colombia, *esta mañana no vinieron*."
+  ]
+},
+
+"dc-mantenimiento-referente-b2": {
+  source: "merged",
+  hook: {
+    line: "A short news item about a rescue on the páramo names the same dog three ways and never says dog twice. The volunteers are counted the same way.",
+    es: "Un perro rescató a una niña que se había perdido en el páramo de Sumapaz.\nEl animal, un labrador de nueve años, la encontró después de diez horas de búsqueda.\nNadie lo esperaba de un rescatista tan veterano.\nDe los cuatro voluntarios que lo acompañaban, tres llegaron esa misma noche al pueblo.\nLos de la Defensa Civil llegaron al día siguiente.",
+    en: "A dog rescued a girl who had got lost on the Sumapaz páramo.\nThe animal, a nine-year-old labrador, found her after ten hours of searching.\nNobody expected it of such a veteran rescuer.\nOf the four volunteers who were with him, three reached the village that same night.\nThe ones from Civil Defence arrived the next day."
+  },
+  examples: [
+    { es: "¿Viste mis llaves? Las de la casa, no las del carro, que esas las tengo aquí.", en: "Have you seen my keys? The house ones, not the car ones, I've got those here." },
+    { es: "El gobierno anunció una reforma tributaria. La medida entrará en vigor en enero del próximo año.", en: "The government announced a tax reform. The measure will take effect in January next year." },
+    { es: "Voy a una clase de español a las seis y luego a una de francés a las ocho.", en: "I'm going to a Spanish class at six and then to a French one at eight." }
+  ],
+  rule: "In writing, don't name the same thing twice. Three ways round it.\nDrop the thing and keep the article: *el de*, *la de*, *los del* plus a detail: *las de la casa*, *una de francés*. The article matches what you dropped. With a number: *tres de los cuatro*, or just *tres* once it's clear.\nName it again with another word and *el* or *la*: a synonym (*la copa*, then *el trofeo*) or a broader word (*el perro*, then *el animal*; *la reforma*, then *la medida*).\nSum the person up: *No lo esperábamos de un hombre tan discreto.* This *un* points back only with a describing word like *tan discreto*.\nOnly drop what the reader can recover.",
+  readAndPick: [
+    { q: "Who is *el animal*?", es: "El animal, un labrador de nueve años, la encontró.",
+      options: ["The girl", "The same dog", "A second animal entirely"], answer: 1,
+      why: "*El animal* is a broader word for the dog already named, so it isn't repeated." },
+    { q: "Who does *un rescatista tan veterano* refer to?", es: "Nadie lo esperaba de un rescatista tan veterano.",
+      options: ["A new person in the story", "One", "The dog again"], answer: 2,
+      why: "With *tan veterano*, this *un* points back at the dog instead of bringing in someone new." },
+    { q: "Which keys is she looking for?", es: "Las de la casa, no las del carro.",
+      options: ["The house keys", "The car ones", "Every key she owns"], answer: 0,
+      why: "*Las de la casa* drops *llaves* and keeps the article and the detail." },
+    { q: "What is *la medida*?", es: "El gobierno anunció una reforma tributaria. La medida entrará en vigor en enero.",
+      options: ["The tax reform", "A ruler", "A new law in March"], answer: 0,
+      why: "*La medida* names the reform again with a broader word." },
+    { q: "How many volunteers reached the village?", es: "De los cuatro voluntarios, tres llegaron esa misma noche.",
+      options: ["All four", "Three of the four", "Three others who joined later"], answer: 1,
+      why: "*Tres* alone is clear because *los cuatro voluntarios* came just before." },
+    { q: "What does *una de francés* leave out?", es: "Voy a una clase de español y luego a una de francés.",
+      options: ["*clase*", "*español*", "*voy*"], answer: 0,
+      why: "*Una de francés* is *una clase de francés* with *clase* dropped." }
+  ],
+  yourTurn: [
+    { en: "Which one is your car? The one on the corner.", es: "¿Cuál es tu carro? El de la esquina.", accept: [] },
+    { en: "The house keys? No, the car ones.", es: "¿Las llaves de la casa? No, las del carro.", accept: [] },
+    { en: "Three of the guests already left.", es: "Tres de los invitados ya se fueron.", accept: ["Tres de los invitados ya se [fueron|han ido]."] },
+    { en: "Juan took his dog to the vet. The animal had a broken leg.", es: "Juan llevó a su perro al veterinario. El animal tenía una pata rota.", accept: ["Juan llevó su perro al veterinario. El animal tenía una pata rota."] }
+  ],
+  translate: [
+    { en: "I'm going to a Spanish class and then to a French one.", es: "Voy a una clase de español y luego a una de francés.", accept: ["Voy a una clase de español y [luego|después] a una de francés."] },
+    { en: "The government announced a tax reform. The measure will take effect in January.", es: "El gobierno anunció una reforma tributaria. La medida entrará en vigor en enero.", accept: ["El gobierno anunció una reforma tributaria. La medida [entrará|va a entrar] en vigor en enero."] },
+    { en: "We didn't expect it from such a discreet man.", es: "No lo esperábamos de un hombre tan discreto.", accept: [] },
+    { en: "Some of the boys had already left when we arrived.", es: "Algunos de los muchachos ya se habían ido cuando llegamos.", accept: ["Algunos de los [muchachos|chicos] ya se habían ido cuando llegamos."] },
+    { en: "The president handed the cup to the winners. The trophy was made of silver. The ones from the second team didn't come to the ceremony.", es: "El presidente les entregó la copa a los ganadores. El trofeo era de plata. Los del segundo equipo no fueron a la ceremonia.", accept: ["El presidente [les entregó|entregó] la copa a los ganadores. El trofeo era de plata. Los del segundo equipo no [fueron|vinieron] a la ceremonia."] },
+    { en: "Who are the ones in the red shirt?", es: "¿Quiénes son los de la camiseta roja?", accept: [] }
+  ],
+  register: [
+    { es: "¿Cuál? ¿La de rayas?", en: "Which one? The striped one?", when: "pointing something out in a shop or at home" },
+    { es: "Pásame la de arriba, por fa.", en: "Pass me the top one, please.", when: "with family or friends, asking for something" },
+    { es: "El vehículo fue hallado en el sur de la ciudad.", en: "The vehicle was found in the south of the city.", when: "in a police report or the news, after naming the car" },
+    { es: "Dicha medida entrará en vigor en enero.", en: "The said measure will take effect in January.", when: "in legal or very formal writing" }
+  ],
+  personal: {
+    prompt: "Write a short news item about an animal, a car or a new rule, naming it three times without repeating the word, and use one *el de* or *los de*.",
+    constraints: [
+      { type: "containsAny", words: ["el animal", "el vehículo", "la medida", "el aparato", "el trofeo", "el premio", "la norma", "el felino", "la mascota"], label: "the thing named again: *el animal* or *la medida*" },
+      { type: "regex", pattern: "\\b(el|la|los|las) (de|del) ", label: "the thing dropped: *los de la Defensa Civil*" },
+      { type: "minSentences", n: 3, label: "three sentences or more" }
+    ],
+    model: "Un gato pasó tres días encerrado en una bodega de Chapinero. El animal sobrevivió tomando agua de una gotera. Los del edificio de al lado lo oyeron maullar el domingo. Hoy la mascota está bien y ya volvió a su casa."
+  },
+  pitfalls: [
+    "*Juan llevó a su perro al veterinario. El perro...* repeats itself; the second time, *el animal*.",
+    "*Un hombre* with nothing after it brings in a new person; to point back, *un hombre tan discreto*.",
+    "*Las de la casa* only works when the listener knows you mean keys: drop only what can be recovered."
+  ]
+},
+
+"fn-dar-informacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Julián has heard the office trip is off. Paula puts him right, gently, line by line: what really happened, why a colleague isn't going, who couldn't have cancelled the hotel, and why she's telling him at all.",
+    es: "Julián: Me dijeron que el viaje a Cartagena se canceló.\nPaula: No, no es eso exactamente. Lo que pasa es que lo aplazaron para marzo.\nJulián: ¿Y es verdad que Andrés no va?\nPaula: No es que no quiera ir; es que no le dan permiso en el trabajo.\nPaula: Y él no pudo cancelar el hotel, porque estaba conmigo toda la tarde.\nPaula: Te lo cuento para que no le digas nada a nadie todavía.",
+    en: "Julián: They told me the trip to Cartagena was cancelled.\nPaula: No, that's not quite it. The thing is, they postponed it until March.\nJulián: And is it true that Andrés isn't going?\nPaula: It's not that he doesn't want to go; it's that they won't give him time off at work.\nPaula: And he can't have cancelled the hotel, because he was with me all afternoon.\nPaula: I'm telling you so that you don't say anything to anyone yet."
+  },
+  examples: [
+    { es: "No pudo llegar tarde, porque la vi en la oficina a las ocho en punto.", en: "She can't have arrived late, because I saw her in the office at eight sharp." },
+    { es: "No es que no queramos entregarlo, lo que pasa es que vamos un poco atrasados.", en: "It's not that we don't want to hand it in, it's just that we're running a bit behind." },
+    { es: "Saqué plata del cajero por si queremos salir esta noche, ya que mañana es festivo.", en: "I took out cash from the machine in case we want to go out tonight, since tomorrow is a holiday." }
+  ],
+  rule: "A correction lands better in two steps: reject the premise gently, then give the real story.\n*No, no es eso exactamente; es que...* *Lo que pasa es que...* (the thing is) cushions it.\n*No es que* + the subjunctive names the reason you reject; then *es que* or *sino que* + the ordinary form gives the real one: *No es que no quiera; es que no puedo.*\n*Poder* in the past softens a flat no: *No pudo llegar tarde*, she can't have.\nWhy, with the ordinary form: *ya que*, *debido a que*, *como*. What for: *para que* + the subjunctive: *Te lo cuento para que no digas nada.*\n*Por si* is in case: *por si queremos salir*.",
+  readAndPick: [
+    { q: "What is Paula correcting?", es: "No, no es eso exactamente. Lo que pasa es que lo aplazaron para marzo.",
+      options: ["That it was ever planned at all", "It's postponed, not off", "Nothing, she agrees"], answer: 1,
+      why: "*No es eso exactamente* rejects the premise gently; *lo que pasa es que* gives the real story." },
+    { q: "Why isn't Andrés going?", es: "No es que no quiera ir; es que no le dan permiso en el trabajo.",
+      options: ["He doesn't feel like it", "He's ill", "Work won't let him"], answer: 2,
+      why: "*No es que* rejects one reason; *es que* brings the real one." },
+    { q: "How sure is she that he didn't cancel it?", es: "Él no pudo cancelar el hotel, porque estaba conmigo.",
+      options: ["Sure: he was with her", "She thinks he did it", "She has no idea at all"], answer: 0,
+      why: "*No pudo cancelar* is he can't have: she has proof, and says it softly." },
+    { q: "Why is she telling him?", es: "Te lo cuento para que no le digas nada a nadie todavía.",
+      options: ["So he'll spread it", "So he keeps quiet", "Because he asked"], answer: 1,
+      why: "*Para que* + *digas* gives the purpose: so that he says nothing yet." },
+    { q: "Why did he take out cash?", es: "Saqué plata del cajero por si queremos salir esta noche.",
+      options: ["In case they go out", "Because they're going out", "To pay a debt"], answer: 0,
+      why: "*Por si* is in case: the plan isn't certain." }
+  ],
+  yourTurn: [
+    { en: "It's not that I don't want to; it's that I can't.", es: "No es que no quiera; es que no puedo.", accept: ["No es que no quiera[;|,|.] es que no puedo.", "No es que no quiera, sino que no puedo."] },
+    { en: "No, that's not quite it. The thing is, I arrived late.", es: "No, no es eso exactamente. Lo que pasa es que llegué tarde.", accept: [] },
+    { en: "She can't have arrived late; I saw her at eight.", es: "No pudo llegar tarde; la vi a las ocho.", accept: ["No pudo [llegar|haber llegado] tarde[;|,|.] la vi a las ocho."] },
+    { en: "I'm telling you so that you know.", es: "Te lo cuento para que lo sepas.", accept: ["Te lo digo para que lo sepas."] },
+    { en: "I took out some money in case we want to go out tonight.", es: "Saqué plata por si queremos salir esta noche.", accept: ["Saqué [plata|dinero] por si queremos salir esta noche."] }
+  ],
+  translate: [
+    { en: "It's not that we don't want to hand it in; it's just that we're behind.", es: "No es que no queramos entregarlo; lo que pasa es que vamos atrasados.", accept: ["No es que no queramos entregarlo[;|,|.] [lo que pasa es que|es que] vamos atrasados."] },
+    { en: "I think you're mistaken; she's his cousin, not his sister.", es: "Creo que te equivocas; es su prima, no su hermana.", accept: ["Creo que [te equivocas|estás equivocado|estás equivocada][;|,|.] es su prima, no su hermana."] },
+    { en: "Not only did it not rain, but the weather was wonderful.", es: "No solo no llovió, sino que hizo un tiempo buenísimo.", accept: ["No solo no llovió, sino que hizo un [tiempo|clima] [buenísimo|magnífico|espectacular]."] },
+    { en: "I changed schools because my parents moved to Cali.", es: "Cambié de colegio debido a que mis papás se mudaron a Cali.", accept: ["Cambié de colegio [debido a que|porque|ya que] mis [papás|padres] se [mudaron|trasladaron|fueron] a Cali."] },
+    { en: "No, it isn't in Lima. It's in Quito. I'm telling you so you don't buy the wrong ticket.", es: "No, no está en Lima. Está en Quito. Te lo digo para que no compres el tiquete equivocado.", accept: ["No, no está en Lima. Está en Quito. Te lo [digo|cuento] para que no compres el [tiquete|pasaje] equivocado."] },
+    { en: "Since tomorrow is a holiday, the bank will be closed.", es: "Como mañana es festivo, el banco va a estar cerrado.", accept: ["[Como|Ya que] mañana es festivo, el banco [va a estar|estará] cerrado."] }
+  ],
+  register: [
+    { es: "Nooo, eso no fue así.", en: "Nooo, that's not how it went.", when: "correcting a friend, half laughing" },
+    { es: "Lo que pasa es que llegué tarde.", en: "The thing is, I arrived late.", when: "explaining yourself to anyone" },
+    { es: "No es eso exactamente; es que el plazo cambió.", en: "That's not quite it; the deadline changed.", when: "correcting a colleague gently" },
+    { es: "Me permito aclarar que la reunión no se canceló.", en: "Allow me to clarify that the meeting was not cancelled.", when: "correcting formally, in an email or letter" }
+  ],
+  personal: {
+    prompt: "Someone has the wrong story about you: a missed party, a late report. Correct them in two steps, say why, and say what you'll do so that they forgive you.",
+    constraints: [
+      { type: "containsAny", words: ["no es eso exactamente", "lo que pasa es que", "no es que"], label: "a soft correction: *lo que pasa es que* or *no es que*" },
+      { type: "subjunctiveAfter", trigger: "para que", label: "a purpose: *para que* + the subjunctive" },
+      { type: "containsAny", words: ["ya que", "debido a que", "porque", "como "], label: "a reason: *ya que* or *debido a que*" }
+    ],
+    model: "No, no es eso exactamente. No es que no quisiera ir a tu fiesta; lo que pasa es que tuve que trabajar, ya que mi compañera se enfermó. Te voy a invitar a almorzar para que me perdones."
+  },
+  pitfalls: [
+    "A bare *no, eso es mentira* can sound like an accusation: start with *no es eso exactamente*.",
+    "*No es que no quiero* keeps the ordinary form: after *no es que*, *quiera*.",
+    "*Para que* always takes the subjunctive; *ya que* and *debido a que* never do."
+  ]
+},
+
+"fn-conocimiento-b2": {
+  source: "merged",
+  hook: {
+    line: "Two colleagues swap a rumour about their company. In six lines they ask whether the other heard, say when they found out, check a detail, admit what they don't know and confirm what they do.",
+    es: "Diana: ¿Te enteraste de que van a vender la empresa?\nLuis: Sí, ya me había enterado. Me enteré por el de sistemas.\nDiana: ¿Y es verdad eso de que cierran la sede de Cali?\nLuis: Ni idea. No tenía ni idea de que la querían cerrar.\nDiana: Bueno, sabes que mañana hay reunión con el gerente, imagino.\nLuis: Pues claro que lo sé. Y no hay duda de que nos va a explicar todo.",
+    en: "Diana: Did you hear they're going to sell the company?\nLuis: Yes, I'd already heard. I found out from the IT guy.\nDiana: And is it true, this thing about closing the Cali office?\nLuis: No idea. I had no idea they wanted to close it.\nDiana: Well, you know there's a meeting with the manager tomorrow, I imagine.\nLuis: Of course I know. And there's no doubt he's going to explain everything."
+  },
+  examples: [
+    { es: "Me enteré de la noticia por un amigo, porque en el periódico todavía no habían dicho nada.", en: "I found out about the news from a friend, because the paper still hadn't said anything." },
+    { es: "Tengo nociones de programación, aunque no soy experta y siempre le pido ayuda a mi hermano.", en: "I know the basics of programming, although I'm no expert and I always ask my brother for help." },
+    { es: "¿Podría confirmarme si la reserva sigue en pie para el viernes a las ocho de la noche?", en: "Could you confirm whether the reservation still stands for Friday at eight in the evening?" }
+  ],
+  rule: "*Saber* is the state; *enterarse de* is the moment the news reached you, often through someone: *Me enteré por Luis.* Keep the *de*: *me enteré de que...* Already knew: *Ya me había enterado.* *Estar al tanto de* is up to date; *tener nociones de* is a little.\nAsking: *¿Te enteraste de...?* guesses they don't know; *Sabes que..., imagino* guesses they do.\nNot knowing: *No sé*, *ni idea*, *no tengo ni idea de...*; formally, *desconozco*.\nChecking: *¿Es verdad que...?*, *..., ¿no es cierto?*, *¿Quieres decir que...?*; formally, *¿Podría confirmarme...?*\nConfirming: *Pues claro que sí*, *Por supuesto que no*, *No hay duda de que...*",
+  readAndPick: [
+    { q: "What does Diana assume?", es: "¿Te enteraste de que van a vender la empresa?",
+      options: ["Luis already knows", "Luis may not know", "Luis sold it"], answer: 1,
+      why: "*¿Te enteraste de...?* opens with news the other person may not have heard." },
+    { q: "When did Luis learn the news?", es: "Sí, ya me había enterado.",
+      options: ["Just now, from her", "He still hasn't heard a thing", "Before she told him"], answer: 2,
+      why: "*Ya me había enterado*: the finding out came before her question." },
+    { q: "How much does Luis know about Cali?", es: "Ni idea. No tenía ni idea de que la querían cerrar.",
+      options: ["Everything about it", "Nothing at all", "A little"], answer: 1,
+      why: "*Ni idea* is a strong, chatty don't know: nothing at all." },
+    { q: "What does *imagino* at the end do?", es: "Sabes que mañana hay reunión, imagino.",
+      options: ["Assumes he knows", "Asks him", "Invents a whole meeting"], answer: 0,
+      why: "A trailing *imagino* assumes the listener already knows." },
+    { q: "How does Luis sound here?", es: "Pues claro que lo sé.",
+      options: ["Unsure of himself", "Firm, a bit put out", "Formal and very distant"], answer: 1,
+      why: "*Pues claro que* confirms firmly, as if the question needn't be asked." },
+    { q: "Where would you say this?", es: "¿Podría confirmarme si la reserva sigue en pie?",
+      options: ["Texting your brother at night", "To a dog", "Calling the hotel"], answer: 2,
+      why: "*¿Podría confirmarme...?* is the polite, formal check for a service call." }
+  ],
+  yourTurn: [
+    { en: "I found out about the news from a friend.", es: "Me enteré de la noticia por un amigo.", accept: [] },
+    { en: "Did you hear that Ana is moving? (to a friend)", es: "¿Te enteraste de que Ana se muda?", accept: ["¿Te enteraste de que Ana se va a mudar?", "¿Supiste que Ana se [muda|va a mudar]?"] },
+    { en: "I have no idea what time it is.", es: "No tengo ni idea de qué hora es.", accept: [] },
+    { en: "Is it true that your sister is getting married? (to a friend)", es: "¿Es verdad que tu hermana se casa?", accept: ["¿Es [verdad|cierto] que tu hermana se [casa|va a casar]?"] },
+    { en: "Of course not.", es: "Por supuesto que no.", accept: ["Claro que no."] }
+  ],
+  translate: [
+    { en: "I'd already heard, thanks.", es: "Ya me había enterado, gracias.", accept: [] },
+    { en: "We're aware that the purchase is being negotiated.", es: "Estamos informados de que se está negociando la compra.", accept: ["Estamos [informados|al tanto] de que se está negociando la compra."] },
+    { en: "You saw it, isn't that right? (to a friend)", es: "Lo viste, ¿no es cierto?", accept: ["Lo viste, ¿[no es cierto|no es así|verdad|cierto]?"] },
+    { en: "Do you mean you'd rather go alone? (to a friend)", es: "¿Quieres decir que prefieres ir solo?", accept: ["¿Quieres decir que prefieres ir [solo|sola]?"] },
+    { en: "Did you hear about the meeting? Of course I heard. But I had no idea they were going to close the office.", es: "¿Te enteraste de lo de la reunión? Pues claro que me enteré. Pero no tenía ni idea de que iban a cerrar la oficina.", accept: ["¿Te enteraste de lo de la reunión? [Pues claro que|Claro que] me enteré. Pero no tenía ni idea de que [iban a cerrar|fueran a cerrar] la oficina."] },
+    { en: "I am not aware of the reasons for that decision. (formal)", es: "Desconozco los motivos de esa decisión.", accept: ["Desconozco [los motivos|las razones] de esa decisión."] }
+  ],
+  register: [
+    { es: "¡Ni idea!", en: "No idea!", when: "with friends, a quick shrug" },
+    { es: "No sé, la verdad.", en: "I don't know, honestly.", when: "anywhere, said plainly" },
+    { es: "No estoy al tanto de eso.", en: "I'm not up to date on that.", when: "at work, when it isn't your area" },
+    { es: "Desconozco los detalles del contrato.", en: "I'm not aware of the details of the contract.", when: "in a formal reply or an official email" }
+  ],
+  personal: {
+    prompt: "Write a short exchange with a colleague about some news: one of you asks if the other heard, one doesn't know part of it, one asks for confirmation, and one confirms firmly.",
+    constraints: [
+      { type: "regex", pattern: "enter(é|e|aste|ó|o|amos|aron)|había enterado", label: "finding out: *me enteré* or *¿te enteraste?*" },
+      { type: "containsAny", words: ["ni idea", "no tengo idea", "no tenía idea", "desconozco"], label: "not knowing: *ni idea* or *desconozco*" },
+      { type: "containsAny", words: ["es verdad que", "es cierto que", "no es cierto", "quieres decir que", "podría confirmarme", "verdad?"], label: "a check: *¿es verdad que...?*" },
+      { type: "containsAny", words: ["claro que", "por supuesto", "no hay duda de que"], label: "a firm yes: *claro que* or *por supuesto*" }
+    ],
+    model: "¿Te enteraste de que Marta renunció? Sí, me enteré ayer, pero no tengo ni idea de por qué. ¿Es verdad que se va para España? Por supuesto que sí, ya compró el tiquete."
+  },
+  pitfalls: [
+    "*Me enteré que* drops a *de* that writing keeps: *me enteré de que*.",
+    "*Ni idea* with a client sounds careless; there, *desconozco* or *no tengo esa información*.",
+    "*Pues claro que sí* can sound put out, as if the question was silly: with a stranger, *sí, claro*."
+  ]
+},
+
+"nt-reflexion-conocimiento-b2": {
+  source: "merged",
+  hook: {
+    line: "A small business owner writes in her blog about the week the penny dropped. Every line comes at knowing from a different side: an idea arriving, a long awareness, a click, news from outside.",
+    es: "Anoche, mientras lavaba los platos, se me ocurrió una idea para el negocio.\nHace meses que soy consciente de que vendemos poco por internet.\nPero solo ayer me di cuenta de por qué: la página no funciona en el celular.\nMe enteré por una clienta, que me escribió muy molesta.\nAhora tengo que reflexionar sobre cómo explicárselo a mi socio, que se cree experto en todo.",
+    en: "Last night, while I was washing the dishes, an idea for the business came to me.\nFor months I've been aware that we sell very little online.\nBut only yesterday did I realise why: the website doesn't work on phones.\nI found out from a customer, who wrote to me very upset.\nNow I have to think about how to explain it to my partner, who thinks he's an expert in everything."
+  },
+  examples: [
+    { es: "No se me ocurrió preguntar antes, y ahora el vuelo ya salió sin nosotros.", en: "It didn't occur to me to ask earlier, and now the flight has already left without us." },
+    { es: "Me di cuenta de la hora cuando vi que la cafetería estaba cerrando las puertas.", en: "I realised what time it was when I saw the café was closing its doors." },
+    { es: "Es consciente del problema desde hace tiempo, pero nunca ha planteado una duda en las reuniones.", en: "He's been aware of the problem for a while, but he has never raised a question in the meetings." }
+  ],
+  rule: "With *ocurrírsele*, the idea is the subject and arrives to you: *se* + *me*, *te*, *le*, *nos*, *les* + *ocurrió*. *Se me ocurrió una idea.* Plural ideas, plural verb: *se nos ocurrieron dos*. With a plain verb: *No se me ocurrió llamarte.* *¿Cómo se te ocurre...?* is a reproach.\nWhere did the knowing come from? *Darse cuenta de*: it clicked in your own head. *Enterarse de*: it reached you from outside. Both keep *de*.\n*Ser consciente de* is a lasting state of awareness.\n*Creerse* has an edge: *se cree experto*, he thinks he is one.\nThinking it through: *reflexionar sobre*, *analizar*, *plantear una duda*.",
+  readAndPick: [
+    { q: "Where did the idea come from?", es: "Mientras lavaba los platos, se me ocurrió una idea.",
+      options: ["Someone told it to her", "It just came to her", "Online"], answer: 1,
+      why: "*Se me ocurrió*: the idea is the subject, and it simply arrived." },
+    { q: "How did she learn the site was broken?", es: "Me enteré por una clienta.",
+      options: ["She noticed it on her own", "Her partner", "A customer told her"], answer: 2,
+      why: "*Enterarse* is news from outside, and *por* names who brought it." },
+    { q: "What does *me di cuenta* say?", es: "Solo ayer me di cuenta de por qué.",
+      options: ["It finally clicked", "Someone else told her", "She forgot"], answer: 0,
+      why: "*Darse cuenta* is the click in your own head; nobody had to tell her." },
+    { q: "What does the writer think of her partner?", es: "Mi socio se cree experto en todo.",
+      options: ["He truly is an expert", "He thinks he knows it all", "He's honest about what he doesn't know"], answer: 1,
+      why: "*Creerse* has a critical edge: he thinks he's an expert, and she doubts it." },
+    { q: "How long has she known sales were low?", es: "Hace meses que soy consciente de que vendemos poco.",
+      options: ["Since yesterday", "For months", "Not yet"], answer: 1,
+      why: "*Ser consciente de* is a lasting state, here for months." },
+    { q: "What is the speaker doing?", es: "¿Cómo se te ocurre salir sin chaqueta con este frío?",
+      options: ["Asking him for an idea", "Telling him off", "Weather"], answer: 1,
+      why: "*¿Cómo se te ocurre...?* isn't a real question: it's a reproach." }
+  ],
+  yourTurn: [
+    { en: "A solution came to me while I was sleeping.", es: "Se me ocurrió una solución mientras dormía.", accept: [] },
+    { en: "It didn't occur to him to ask.", es: "No se le ocurrió preguntar.", accept: [] },
+    { en: "I didn't realise what time it was.", es: "No me di cuenta de la hora.", accept: ["No me di cuenta de qué hora era."] },
+    { en: "He's aware that he made a mistake.", es: "Es consciente de que se equivocó.", accept: [] },
+    { en: "We came up with two ideas.", es: "Se nos ocurrieron dos ideas.", accept: [] }
+  ],
+  translate: [
+    { en: "We found out about the meeting too late.", es: "Nos enteramos tarde de la reunión.", accept: ["Nos enteramos de la reunión [demasiado tarde|muy tarde|tarde]."] },
+    { en: "She raised a very interesting question in class.", es: "Planteó una duda muy interesante en clase.", accept: ["Planteó una [duda|pregunta] muy interesante en [clase|la clase]."] },
+    { en: "He reflected on his decision for days.", es: "Reflexionó sobre su decisión durante días.", accept: ["Reflexionó [sobre|acerca de] su decisión durante días."] },
+    { en: "How can you even think of saying that? (to a friend)", es: "¿Cómo se te ocurre decir eso?", accept: [] },
+    { en: "I didn't notice anything. Then I found out from my sister. Now I'm aware that I have to change.", es: "No me di cuenta de nada. Después me enteré por mi hermana. Ahora soy consciente de que tengo que cambiar.", accept: ["No me di cuenta de nada. [Después|Luego] me enteré por mi hermana. Ahora soy consciente de que tengo que cambiar."] },
+    { en: "He thinks he's an expert in everything.", es: "Se cree experto en todo.", accept: ["Se cree un experto en todo."] }
+  ],
+  register: [
+    { es: "¡Se me prendió el bombillo!", en: "A light bulb went on!", when: "in Colombia, with friends, a sudden idea" },
+    { es: "Se me ocurrió una idea.", en: "An idea came to me.", when: "anywhere, offering a suggestion" },
+    { es: "Soy consciente de las dificultades.", en: "I'm aware of the difficulties.", when: "in a meeting or a formal reply" },
+    { es: "Quisiera plantear una duda sobre el presupuesto.", en: "I'd like to raise a question about the budget.", when: "in a meeting, before an objection" }
+  ],
+  personal: {
+    prompt: "Think of a moment when something clicked for you. Say what you'd been aware of for a while, when you realised the rest or found it out, and what idea came to you.",
+    constraints: [
+      { type: "regex", pattern: "se (me|te|le|nos|les) ocurri(ó|o|eron)", label: "an idea arriving: *se me ocurrió*" },
+      { type: "regex", pattern: "(me|te|se|nos) (di|diste|dio|dimos|dieron) cuenta|enter(é|aste|ó|amos|aron)", label: "how you knew: *me di cuenta* or *me enteré*" },
+      { type: "regex", pattern: "(soy|era|es|eres|somos|son|estaba) consciente", label: "awareness: *soy consciente de*" }
+    ],
+    model: "Hace años que soy consciente de que duermo poco. Pero el mes pasado me di cuenta de que el celular era el problema. Entonces se me ocurrió dejarlo en la cocina por la noche."
+  },
+  pitfalls: [
+    "*Yo ocurrí una idea* is not Spanish: the idea is the subject, *se me ocurrió una idea*.",
+    "Your own tiredness clicks inside you, so *me di cuenta de que estaba cansada*, not *me enteré*.",
+    "In writing, *se cree que* is usually it is believed; for he thinks he's, *se cree experto*."
+  ]
+},
+
+"nt-anticipacion-b2": {
+  source: "merged",
+  hook: {
+    line: "A family plans a trip in their group chat. Every message is about doing things early: getting up before dawn, paying ahead, arriving with time to spare, moving a meeting forward.",
+    es: "Papá: El vuelo es a las seis de la mañana, así que nos toca madrugar.\nMamá: Y anoche trasnochamos por la maleta. ¡Qué combinación!\nPapá: El hotel se paga por adelantado; ya lo pagué.\nMamá: Lleguen al aeropuerto con tiempo. Mi reloj está adelantado diez minutos, ojo.\nPapá: Y la reunión del lunes la adelanté para el viernes, para no perder el vuelo de regreso.",
+    en: "Dad: The flight is at six in the morning, so we have to get up really early.\nMom: And last night we stayed up late because of the suitcase. What a combination!\nDad: The hotel is paid in advance; I've already paid it.\nMom: Get to the airport with time to spare. My watch is ten minutes fast, careful.\nDad: And I moved Monday's meeting forward to Friday, so as not to miss the flight back."
+  },
+  examples: [
+    { es: "Tuve que madrugar para tomar el primer vuelo, y llegué a la reunión antes de la hora.", en: "I had to get up very early to catch the first flight, and I got to the meeting ahead of time." },
+    { es: "Adelantamos la cita médica para el martes, porque el doctor se va de vacaciones el miércoles.", en: "We moved the doctor's appointment forward to Tuesday, because the doctor goes on holiday on Wednesday." },
+    { es: "El bebé nació antes de tiempo, pero ya pesa tres kilos y está muy bien.", en: "The baby was born early, but he already weighs three kilos and is doing very well." }
+  ],
+  rule: "*Adelantar* moves something earlier; *aplazar* or *posponer*, later. In Colombia *correr* does either: *corrimos la cita*. The new date goes after *para*: *la adelanté para el viernes*.\nOnce moved, it is ahead: *Mi reloj está adelantado*, my watch is fast.\n*Madrugar* is getting up very early, in the dark; *trasnochar* is staying up late. *Me toca madrugar*: it's my turn, I have to. *Toca* works like *gustar*.\n*Con tiempo* is with time to spare, the good kind of early. *Por adelantado* is paid or done in advance. *Antes de tiempo* is too soon: a birth, a decision. *Antes de la hora* is ahead of schedule.",
+  readAndPick: [
+    { q: "What does *nos toca madrugar* mean?", es: "El vuelo es a las seis, así que nos toca madrugar.",
+      options: ["They must be up before dawn", "Sleep in", "They'll stay up all night again"], answer: 0,
+      why: "*Madrugar* is getting up very early, and *nos toca* says they have to." },
+    { q: "When was the hotel paid?", es: "El hotel se paga por adelantado; ya lo pagué.",
+      options: ["After the stay", "Before the stay", "Half at the door, half later"], answer: 1,
+      why: "*Por adelantado* is paid in advance, before you arrive." },
+    { q: "What's wrong with Mom's watch?", es: "Mi reloj está adelantado diez minutos.",
+      options: ["It's ten minutes behind", "It's stopped", "It's ten minutes fast"], answer: 2,
+      why: "*Está adelantado* is ahead: it shows a later time than the real one." },
+    { q: "Which way did the meeting move?", es: "La reunión del lunes la adelanté para el viernes.",
+      options: ["Earlier, to Friday", "Later, to next Monday", "Nowhere"], answer: 0,
+      why: "*Adelantar* moves it earlier; the new date comes after *para*." },
+    { q: "Is *antes de tiempo* good news here?", es: "El bebé nació antes de tiempo.",
+      options: ["Neutral, just early", "Too soon, a worry", "On the exact day"], answer: 1,
+      why: "*Antes de tiempo* is premature; for good planning, *con tiempo*." },
+    { q: "What does Mom want?", es: "Lleguen al aeropuerto con tiempo.",
+      options: ["Stay home", "Arrive at the very last minute", "Arrive with time spare"], answer: 2,
+      why: "*Con tiempo* is the good kind of early: with time to spare." }
+  ],
+  yourTurn: [
+    { en: "We moved the meeting forward to Monday.", es: "Adelantamos la reunión para el lunes.", accept: ["Adelantamos la reunión [para el|al] lunes."] },
+    { en: "I think your watch is ten minutes fast. (to a friend)", es: "Creo que tu reloj está adelantado diez minutos.", accept: [] },
+    { en: "Leave home with plenty of time. (to a friend)", es: "Sal de la casa con tiempo.", accept: ["Sal de [la casa|casa] con tiempo.", "Sal de la casa con suficiente tiempo."] },
+    { en: "The deposit has to be paid in advance.", es: "Hay que pagar el depósito por adelantado.", accept: ["El depósito se [paga|tiene que pagar] por adelantado."] },
+    { en: "I have to get up early tomorrow.", es: "Mañana me toca madrugar.", accept: ["Me toca madrugar mañana.", "Mañana tengo que madrugar."] }
+  ],
+  translate: [
+    { en: "The flight left ahead of the scheduled time.", es: "El vuelo salió antes de la hora prevista.", accept: ["El vuelo salió antes de la hora [prevista|programada]."] },
+    { en: "Book the hotel in advance to get a better price. (to a friend)", es: "Reserva el hotel por adelantado para conseguir mejor precio.", accept: ["Reserva el hotel [por adelantado|con anticipación] para conseguir [mejor precio|un mejor precio]."] },
+    { en: "We pay the rent in advance.", es: "Pagamos el arriendo por adelantado.", accept: ["Pagamos el arriendo anticipado."] },
+    { en: "We gained time by leaving before the traffic.", es: "Ganamos tiempo saliendo antes del tráfico.", accept: ["Ganamos tiempo saliendo antes del [tráfico|trancón]."] },
+    { en: "Last night I stayed up late, and today I had to get up very early. The meeting was moved forward to eight. I got there on time, but half asleep.", es: "Anoche trasnoché, y hoy me tocó madrugar. La reunión la adelantaron para las ocho. Llegué a tiempo, pero medio dormido.", accept: ["Anoche trasnoché, y hoy me tocó madrugar. [La reunión la adelantaron|Adelantaron la reunión] para las ocho. Llegué a tiempo, pero medio [dormido|dormida]."] },
+    { en: "He arrived early, without warning.", es: "Llegó antes de tiempo, sin avisar.", accept: ["Llegó [antes de tiempo|antes de la hora|temprano], sin avisar."] }
+  ],
+  register: [
+    { es: "¡Uy, me tocó madrugar!", en: "Ugh, I had to get up at the crack of dawn!", when: "complaining to friends about an early start" },
+    { es: "¿Podemos correr la cita para el martes?", en: "Can we move the appointment to Tuesday?", when: "in Colombia, rearranging plans with anyone" },
+    { es: "Le propongo adelantar la reunión para el lunes.", en: "I suggest we bring the meeting forward to Monday.", when: "in a work email, as usted" },
+    { es: "El pago debe realizarse por adelantado.", en: "Payment must be made in advance.", when: "in a contract, a booking or terms and conditions" }
+  ],
+  personal: {
+    prompt: "Write about a week when your plans moved: something brought forward or put off, an early start or a late night, and something paid or done in advance.",
+    constraints: [
+      { type: "regex", pattern: "adelant(é|e|aron|ó|o|amos|ar)\\b|aplaz|pospus|pospon|corr(imos|ieron|ió) (la|el)", label: "a plan moved: *la adelanté* or *la aplazaron*" },
+      { type: "containsAny", words: ["madrug", "trasnoch"], label: "an early start or a late night: *madrugar* or *trasnochar*" },
+      { type: "containsAny", words: ["por adelantado", "con tiempo", "antes de tiempo", "antes de la hora"], label: "ahead of time: *por adelantado* or *con tiempo*" }
+    ],
+    model: "El lunes me tocó madrugar porque adelantaron mi turno en el hospital. El martes trasnoché terminando un informe. El viernes aplazamos la cena con mis amigos, pero yo ya había pagado la reserva por adelantado."
+  },
+  pitfalls: [
+    "*Madrugar* is getting up early, not arriving early: for that, *llegar temprano*.",
+    "*Antes de tiempo* sounds premature; for good planning, *con tiempo*.",
+    "For a plan changed today, Colombia says *adelantamos la reunión*; *hemos adelantado* sounds like Spain."
+  ]
+},
+
+"nt-simultaneidad-b2": {
+  source: "merged",
+  hook: {
+    line: "A parenting blog describes Tuesday mornings in one Bogotá flat. Things happen at once, side by side, by chance, and the two parents agree on one thing.",
+    es: "Los martes nuestros horarios coinciden: los dos salimos a las siete.\nYo preparo el desayuno; mientras tanto, mi esposo viste a los niños.\nMi hija mayor desayuna y repasa para el examen a la vez.\nPor pura coincidencia, el bus del colegio y el mío pasan al mismo tiempo.\nMi esposo y yo coincidimos en que es el día más caótico de la semana.",
+    en: "On Tuesdays our schedules coincide: we both leave at seven.\nI make breakfast; meanwhile, my husband dresses the kids.\nMy eldest daughter eats breakfast and revises for her exam at the same time.\nBy pure coincidence, the school bus and mine come at the same time.\nMy husband and I agree that it's the most chaotic day of the week."
+  },
+  examples: [
+    { es: "Estudia y trabaja a la vez, así que solo tiene libre el domingo por la tarde.", en: "She studies and works at the same time, so she only has Sunday afternoon free." },
+    { es: "Coincido contigo en que el plan es caro, pero no en que debamos cancelarlo.", en: "I agree with you that the plan is expensive, but not that we should cancel it." },
+    { es: "La traducción simultánea permite seguir la conferencia en tiempo real, aunque no hables el idioma.", en: "Simultaneous translation lets you follow the lecture in real time, even if you don't speak the language." }
+  ],
+  rule: "*A la vez* or *al mismo tiempo*: usually one person, two things at once, at the end: *Desayuna y repasa a la vez.*\n*Mientras tanto*, or *entretanto* in writing: the camera moves to someone else during that time. It opens the second half, after a semicolon or a full stop: *Yo cocino; mientras tanto, él pone la mesa.*\n*Simultáneo* and *simultáneamente*: running in parallel, often by design: *traducción simultánea*.\n*Coincidir* is lining up, often by chance: *Nuestros horarios coinciden.* It's also meeting by chance, and agreeing: *coincidir con* + person + *en* + the point. *Coincido contigo en que es caro.* With *nosotros*: *coincidimos en todo*.",
+  readAndPick: [
+    { q: "Who does two things at once?", es: "Mi hija desayuna y repasa para el examen a la vez.",
+      options: ["Her daughter", "Her husband", "Nobody, they take turns"], answer: 0,
+      why: "*A la vez* sits with one person doing two things together." },
+    { q: "Who dresses the kids?", es: "Yo preparo el desayuno; mientras tanto, mi esposo viste a los niños.",
+      options: ["She does it later on", "Her husband, meanwhile", "The kids do it all by themselves"], answer: 1,
+      why: "*Mientras tanto* moves to another person during the same stretch of time." },
+    { q: "Did anyone plan the buses?", es: "Por pura coincidencia, los dos buses pasan al mismo tiempo.",
+      options: ["Yes, the school did", "She planned it", "No, it's chance"], answer: 2,
+      why: "*Por pura coincidencia* says nobody arranged it." },
+    { q: "What do she and her husband do?", es: "Mi esposo y yo coincidimos en que es el día más caótico.",
+      options: ["Argue", "They agree on it", "Meet by chance in town"], answer: 1,
+      why: "*Coincidir en que* is to agree on a point." },
+    { q: "How far does the speaker agree?", es: "Coincido contigo en que es caro, pero no en que debamos cancelarlo.",
+      options: ["In part", "Fully", "Not at all"], answer: 0,
+      why: "She agrees on the cost and not on cancelling: *coincido... pero no en que*." }
+  ],
+  yourTurn: [
+    { en: "She studies and works at the same time.", es: "Estudia y trabaja a la vez.", accept: ["Estudia y trabaja al mismo tiempo."] },
+    { en: "I was making dinner; meanwhile, she was setting the table.", es: "Yo preparaba la comida; mientras tanto, ella ponía la mesa.", accept: ["Yo [preparaba|hacía] la [comida|cena][;|,|.] mientras tanto, ella ponía la mesa."] },
+    { en: "Our schedules coincide on Tuesdays.", es: "Nuestros horarios coinciden los martes.", accept: ["Los martes nuestros horarios coinciden."] },
+    { en: "I agree with you on almost everything. (to a friend)", es: "Coincido contigo en casi todo.", accept: [] },
+    { en: "You can't do everything at once.", es: "No se puede hacer todo a la vez.", accept: ["No se puede hacer todo al mismo tiempo.", "No puedes hacer todo a la vez."] }
+  ],
+  translate: [
+    { en: "Our holidays coincided by chance.", es: "Nuestras vacaciones coincidieron por casualidad.", accept: [] },
+    { en: "They organised both events simultaneously on purpose.", es: "Organizaron los dos eventos simultáneamente a propósito.", accept: ["Organizaron los dos eventos [simultáneamente|al mismo tiempo] a propósito."] },
+    { en: "He cooks and listens to music at the same time.", es: "Cocina y escucha música a la vez.", accept: ["Cocina y escucha música al mismo tiempo."] },
+    { en: "We agree that the problem is transport.", es: "Coincidimos en que el problema es el transporte.", accept: [] },
+    { en: "I was packing; meanwhile, he was calling a taxi. By coincidence, my sister arrived at the same time. In the end she took us to the airport.", es: "Yo hacía las maletas; mientras tanto, él pedía un taxi. Por coincidencia, mi hermana llegó al mismo tiempo. Al final, ella nos llevó al aeropuerto.", accept: ["Yo [hacía|empacaba] las maletas[;|,|.] mientras tanto, él [pedía|llamaba] un taxi. Por [coincidencia|casualidad], mi hermana llegó al mismo tiempo. Al final, ella nos llevó al aeropuerto."] },
+    { en: "I ran into Laura at the bank.", es: "Coincidí con Laura en el banco.", accept: ["Me encontré [con|a] Laura en el banco."] }
+  ],
+  register: [
+    { es: "Hago mil cosas al tiempo.", en: "I'm doing a thousand things at once.", when: "in Colombia, chatting about a busy day" },
+    { es: "Hago dos cosas a la vez.", en: "I'm doing two things at once.", when: "anywhere, said plainly" },
+    { es: "Coincido con usted en lo fundamental.", en: "I agree with you on the essentials.", when: "in a meeting, as usted" },
+    { es: "Ambos eventos se realizarán simultáneamente.", en: "Both events will take place simultaneously.", when: "in an official announcement or programme" }
+  ],
+  personal: {
+    prompt: "Describe a busy moment in your home or office: who does two things at once, what someone else does meanwhile, and something you all agree on.",
+    constraints: [
+      { type: "containsAny", words: ["a la vez", "al mismo tiempo", "al tiempo", "simultáneamente"], label: "two things at once: *a la vez*" },
+      { type: "containsAny", words: ["mientras tanto", "entretanto"], label: "meanwhile: *mientras tanto*" },
+      { type: "regex", pattern: "coincid", label: "lining up or agreeing: *coincidimos en que*" }
+    ],
+    model: "Los lunes en mi oficina todo pasa a la vez. Mi jefa contesta correos y habla por teléfono al mismo tiempo. Yo preparo el informe; mientras tanto, mi compañero organiza la sala. Todos coincidimos en que el lunes debería empezar a las diez."
+  },
+  pitfalls: [
+    "*Mientras tanto* moves to another person or place; for one person doing two things, *a la vez*.",
+    "*Coincido de que* is not Spanish: *coincido contigo en que*.",
+    "*Simultáneo* suggests a plan; for chance, *coincidir*."
+  ]
+},
+
+"nt-repeticion-b2": {
+  source: "merged",
+  hook: {
+    line: "A humorous column lists a boyfriend's habits, from the healthy to the maddening. The writer keeps count of what he does again, and again, and again.",
+    es: "Mi novio tiene la manía de revisar el celular cada cinco minutos.\nLe he dicho una y otra vez que lo deje en la mesa cuando comemos.\nPromete que no lo va a volver a hacer, y al día siguiente vuelve a hacerlo.\nTiene la costumbre de correr todas las mañanas, eso sí, y nunca falla.\nY su único vicio es el tinto: se toma seis al día.",
+    en: "My boyfriend has a habit of checking his phone every five minutes.\nI've told him over and over to leave it on the table when we eat.\nHe promises he won't do it again, and the next day he does it again.\nHe's in the habit of running every morning, I'll give him that, and he never misses.\nAnd his only vice is black coffee: he has six a day."
+  },
+  examples: [
+    { es: "Lo intentamos una y otra vez hasta que la puerta por fin se abrió a las tres.", en: "We tried over and over until the door finally opened at three." },
+    { es: "Perdí todo el documento y tuve que empezar de nuevo, esta vez guardando cada diez minutos.", en: "I lost the whole document and had to start over, saving every ten minutes this time." },
+    { es: "Nunca volvió a llamar después de esa cena, y yo nunca volví a ese restaurante.", en: "He never called again after that dinner, and I never went back to that restaurant." }
+  ],
+  rule: "For again, Spanish often puts *volver a* in front: *volvió a llamar*. Only *volver* changes; the second verb stays plain. *Nunca volvió a llamar* is never again. With no verb after it, *volver* is come back.\nAlso: *otra vez*, *de nuevo* (everyday), *nuevamente* (written), *una vez más*, *una y otra vez* (over and over).\nHabits carry a judgement: *tener la costumbre de* (neutral), *tener la manía de* (a quirk, almost an obsession), *tener el vicio de* (a bad habit). *Tienes la manía de...* sounds like an accusation.\nA *ciclo* closes and starts again; a *ritmo* is the pace. A job can be *rutinario* or *repetitivo*.",
+  readAndPick: [
+    { q: "How does the writer see the phone checking?", es: "Tiene la manía de revisar el celular cada cinco minutos.",
+      options: ["A healthy routine", "An odd, fixed quirk", "Something he did once"], answer: 1,
+      why: "*La manía de* is a quirk close to an obsession, and it sounds like a complaint." },
+    { q: "What happens the next day?", es: "Al día siguiente vuelve a hacerlo.",
+      options: ["He stops for good", "He apologises", "He does it again"], answer: 2,
+      why: "*Vuelve a hacerlo* is he does it again; only *volver* changes." },
+    { q: "How is his running described?", es: "Tiene la costumbre de correr todas las mañanas.",
+      options: ["As a plain habit", "As a vice", "As a quirk to hide"], answer: 0,
+      why: "*La costumbre de* is neutral: just something he always does." },
+    { q: "How many times did they try?", es: "Lo intentamos una y otra vez hasta que funcionó.",
+      options: ["Once", "Over and over", "Exactly twice, then gave up"], answer: 1,
+      why: "*Una y otra vez* is over and over, until it worked." },
+    { q: "Did he ever call again?", es: "Nunca volvió a llamar después de esa cena.",
+      options: ["Yes, the next morning", "No, never again", "Yes"], answer: 1,
+      why: "*Nunca volvió a llamar* is never again." },
+    { q: "What does *empezar de nuevo* mean?", es: "Tuve que empezar de nuevo.",
+      options: ["Start over", "Begin a new job", "Stop"], answer: 0,
+      why: "*De nuevo* is again: she started the document over." }
+  ],
+  yourTurn: [
+    { en: "He called again.", es: "Volvió a llamar.", accept: ["Llamó otra vez.", "Llamó de nuevo."] },
+    { en: "She never wrote again.", es: "Nunca volvió a escribir.", accept: ["No volvió a escribir nunca.", "Nunca más escribió."] },
+    { en: "He has a habit of checking his phone every five minutes.", es: "Tiene la manía de revisar el celular cada cinco minutos.", accept: ["Tiene la [manía|costumbre] de revisar el celular cada cinco minutos."] },
+    { en: "We tried over and over until it worked.", es: "Lo intentamos una y otra vez hasta que funcionó.", accept: [] },
+    { en: "Smoking is a hard vice to give up.", es: "Fumar es un vicio difícil de dejar.", accept: [] }
+  ],
+  translate: [
+    { en: "I lost the whole document and had to start over.", es: "Perdí todo el documento y tuve que empezar de nuevo.", accept: ["Perdí todo el documento y tuve que [empezar de nuevo|volver a empezar|empezar otra vez]."] },
+    { en: "The rhythm of the music made people want to dance.", es: "El ritmo de la música invitaba a bailar.", accept: [] },
+    { en: "It's just a quirk of his; don't make a big deal of it.", es: "Es una manía suya; no le des importancia.", accept: ["Es una manía suya[;|,|.] no le des importancia."] },
+    { en: "A repetitive job can be exhausting.", es: "Un trabajo repetitivo puede ser agotador.", accept: ["Un trabajo repetitivo puede [ser|resultar] agotador."] },
+    { en: "I've told him over and over. He promises he won't do it again. And the next day he does it again.", es: "Se lo he dicho una y otra vez. Promete que no lo va a volver a hacer. Y al día siguiente vuelve a hacerlo.", accept: ["Se lo [he dicho|dije] una y otra vez. Promete que no [lo va a volver a hacer|va a volver a hacerlo|lo volverá a hacer]. Y al día siguiente [vuelve a hacerlo|lo vuelve a hacer]."] },
+    { en: "The museum wanted to recreate the atmosphere of the nineteenth century.", es: "El museo quiso recrear el ambiente del siglo XIX.", accept: ["El museo quiso recrear el ambiente del siglo diecinueve."] }
+  ],
+  register: [
+    { es: "¡Otra vez la misma cantaleta!", en: "The same old nagging again!", when: "in Colombia, fed up with a repeated complaint" },
+    { es: "Lo hizo otra vez.", en: "He did it again.", when: "anywhere, said plainly" },
+    { es: "Le recuerdo nuevamente que el plazo vence el lunes.", en: "I remind you once again that the deadline is Monday.", when: "in a formal reminder email" },
+    { es: "El proceso es cíclico y se repite cada año.", en: "The process is cyclical and repeats every year.", when: "in a report or a textbook" }
+  ],
+  personal: {
+    prompt: "Write about the habits of someone you live or work with: one neutral habit, one quirk or vice, and something they keep doing again.",
+    constraints: [
+      { type: "containsAny", words: ["la costumbre de", "el hábito de"], label: "a neutral habit: *tiene la costumbre de*" },
+      { type: "containsAny", words: ["la manía de", "el vicio de", "un vicio", "una manía", "su único vicio"], label: "a quirk or a vice: *la manía de* or *el vicio de*" },
+      { type: "regex", pattern: "(vuelve|vuelven|volvió|volvieron|vuelvo|volví|volver) a [a-záéíóúñ]+r\\b|una y otra vez", label: "again: *vuelve a hacerlo* or *una y otra vez*" }
+    ],
+    model: "Mi hermana tiene la costumbre de leer antes de dormir. También tiene la manía de ordenar los libros por colores. Su único vicio es el chocolate. Le dije que lo dejara, pero cada noche vuelve a comer una barra entera."
+  },
+  pitfalls: [
+    "*Volvió llamar* drops the *a*: *volvió a llamar*.",
+    "*Hábito*, *manía* and *vicio* are not interchangeable: the word carries the judgement.",
+    "*Nuevamente* reads as written; in conversation, *otra vez* or *de nuevo*."
+  ]
+},
+
+"task-b2-citar": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: an account of a real disagreement, sixteen sentences or more, with *decir* twice at most. The model reports a heated project meeting, and every verb takes a side.",
+    es: "En la reunión del martes, la gerente afirmó que el proyecto iba bien.\nAndrés argumentó que el calendario era inviable y que necesitaban dos semanas más.\nElla sostuvo que no había tiempo, pero él insistió en que se revisaran las fechas.\nEntonces Carolina insinuó que el problema era otro: que el equipo estaba agotado.\nAndrés soltó que nadie le había preguntado nada antes de firmar el contrato.\nLa gerente se limitó a responder que lo revisaría al día siguiente.",
+    en: "At Tuesday's meeting, the manager stated that the project was going well.\nAndrés argued that the schedule was unworkable and that they needed two more weeks.\nShe held that there was no time, but he insisted that the dates be reviewed.\nThen Carolina implied that the problem was something else: that the team was exhausted.\nAndrés blurted out that nobody had asked him anything before the contract was signed.\nThe manager merely replied that she would look into it the next day."
+  },
+  examples: [
+    { es: "Argumentó que el calendario era inviable, aunque reconoció que el cliente tenía prisa.", en: "She argued that the schedule was unworkable, although she admitted the client was in a hurry." },
+    { es: "Insinuó que el problema era otro, pero no quiso decir quién tenía la culpa.", en: "He implied the problem was something else, but he wouldn't say who was to blame." },
+    { es: "Se limitó a responder que lo revisaría, y salió de la sala sin despedirse de nadie.", en: "She merely replied that she would look at it, and left the room without saying goodbye to anyone." }
+  ],
+  rule: "Report a real disagreement in sixteen sentences or more, with *decir* twice at most.\nThe verb carries your judgement, so choose it:\n*afirmó*: stated, neutral and formal. *explicó*: neutral.\n*argumentó*: gave reasons. *sostuvo*: held the line.\n*insinuó*: hinted, wouldn't commit. *soltó*: it came out badly.\n*se limitó a responder que*: merely replied, and no more.\nBackshift as you go: *era*, *había firmado*, *revisaría*. After *insistió en que*, the subjunctive: *se revisaran*.\nKeep track of who said what with names, *ella*, *él*, *la gerente*: never three *dijo* in a row.\nPretending the verb is neutral is naive.",
+  readAndPick: [
+    { q: "Which verb says she wouldn't commit?", es: "Carolina insinuó que el problema era otro.",
+      options: ["*afirmó*", "*insinuó*", "*se limitó a responder*"], answer: 1,
+      why: "*Insinuar* hints at something without saying it straight out." },
+    { q: "How did Andrés's remark come out?", es: "Andrés soltó que nadie le había preguntado nada.",
+      options: ["Calm, and well prepared", "As a question", "Badly, in a burst"], answer: 2,
+      why: "*Soltar* says it came out suddenly, and not in the best way." },
+    { q: "What did the manager do at the end?", es: "Se limitó a responder que lo revisaría.",
+      options: ["Gave a long, careful answer", "Said that and no more", "Refused"], answer: 1,
+      why: "*Se limitó a* is merely: she said that much and nothing else." },
+    { q: "What does *sostuvo* add?", es: "Ella sostuvo que no había tiempo.",
+      options: ["She held her ground", "She changed her mind", "She was joking"], answer: 0,
+      why: "*Sostener* is to keep a position under pressure." },
+    { q: "What did Andrés do with his view?", es: "Andrés argumentó que el calendario era inviable.",
+      options: ["Backed it with reasons", "Agreed with every point", "Left"], answer: 0,
+      why: "*Argumentar* gives reasons, not just an opinion." }
+  ],
+  yourTurn: [
+    { en: "She argued that the schedule was unworkable.", es: "Argumentó que el calendario era inviable.", accept: ["Argumentó que el [calendario|cronograma] era inviable."] },
+    { en: "He implied that the problem was something else.", es: "Insinuó que el problema era otro.", accept: [] },
+    { en: "She merely replied that she would look at it.", es: "Se limitó a responder que lo revisaría.", accept: ["Se limitó a responder que lo iba a revisar."] },
+    { en: "He insisted that the dates be reviewed.", es: "Insistió en que se revisaran las fechas.", accept: ["Insistió en que [revisaran|revisáramos] las fechas."] }
+  ],
+  translate: [
+    { en: "The manager stated that the project was going well.", es: "La gerente afirmó que el proyecto iba bien.", accept: ["La gerente afirmó que el proyecto [iba|estaba yendo|marchaba] bien."] },
+    { en: "He held that there was no time.", es: "Sostuvo que no había tiempo.", accept: [] },
+    { en: "She blurted out that nobody had asked her.", es: "Soltó que nadie le había preguntado.", accept: ["Soltó que nadie le había preguntado nada."] },
+    { en: "He explained that the client was in a hurry.", es: "Explicó que el cliente tenía prisa.", accept: ["Explicó que el cliente tenía afán."] },
+    { en: "Andrés argued that they needed two more weeks. The manager held that there was no time. In the end she merely replied that she would look at it.", es: "Andrés argumentó que necesitaban dos semanas más. La gerente sostuvo que no había tiempo. Al final se limitó a responder que lo revisaría.", accept: ["Andrés argumentó que necesitaban dos semanas más. La gerente sostuvo que no había tiempo. Al final, se limitó a responder que lo [revisaría|iba a revisar]."] },
+    { en: "Nobody had asked him anything before signing.", es: "Nadie le había preguntado nada antes de firmar.", accept: [] }
+  ],
+  register: [
+    { es: "Y él me salió con que no sabía nada.", en: "And he came out with saying he knew nothing.", when: "telling a friend about an argument" },
+    { es: "Me explicó que no sabía nada.", en: "He explained that he knew nothing.", when: "anywhere, a neutral report" },
+    { es: "El funcionario sostuvo que desconocía los hechos.", en: "The official maintained that he was unaware of the events.", when: "in a news report" },
+    { es: "La parte demandada manifestó no tener conocimiento del asunto.", en: "The defendant stated that they had no knowledge of the matter.", when: "in a legal document or court report" }
+  ],
+  personal: {
+    prompt: "Write an account of a real disagreement between two people, reporting what each said: sixteen sentences or more, with *decir* twice at most.",
+    constraints: [
+      { type: "minSentences", n: 16, label: "sixteen sentences or more" },
+      { type: "containsAny", words: ["argumentó", "sostuvo", "insinuó", "soltó", "se limitó a"], label: "a verb that judges: *sostuvo*, *insinuó* or *soltó*" },
+      { type: "regex", pattern: "(afirm|explic|coment|reconoci|neg|insisti|propus|sugir|admiti)[a-záéíóú]*", label: "another speech verb: *afirmó* or *reconoció*" }
+    ],
+    model: "El domingo, en el almuerzo familiar, mi tío Jorge y mi prima Valentina discutieron por la finca. Mi tío afirmó que había que venderla antes de diciembre. Argumentó que nadie la visitaba y que los impuestos eran muy altos. Valentina sostuvo que la finca era de la abuela y que no se podía vender sin ella. Mi tío insinuó que la abuela ya no entendía bien los papeles. Entonces Valentina soltó que él solo quería la plata. Hubo un silencio largo. Mi mamá explicó que la abuela había firmado un documento hace dos años. Mi tío reconoció que no lo conocía. Valentina insistió en que lo leyeran todos juntos. Mi tío se limitó a responder que lo pensaría. Después, mi abuela dijo que estaba cansada de tanta discusión. Nadie se atrevió a contestarle. Al final, mi papá propuso hablar con un abogado en enero. Todos estuvieron de acuerdo, aunque mi tío no parecía convencido. Yo creo que la discusión va a volver en Navidad."
+  },
+  pitfalls: [
+    "Three *dijo* in a row flatten the story; each sharper verb tells the reader what you think.",
+    "*Soltó* and *insinuó* are judgements, not facts: use them only when you mean them.",
+    "*Dijo que el calendario es inviable* keeps it true now; in a story, backshift: *era*."
+  ]
+},
+
+/* ---- unit b2-u50 · Putting the weight where you want it ------------------ */
+
+"dc-rematizacion-tematizacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Camila and Pablo sort out who paid what on their new flat. Every reply moves the weight: the known thing first, the news last, one piece put under a spotlight.",
+    es: "Camila: ¿Quién firmó el contrato del arriendo?\nPablo: El contrato lo firmé yo. La plata la puso tu mamá.\nCamila: ¿Y lo del depósito? No entiendo nada.\nPablo: Fue en marzo cuando lo pagamos, no en abril.\nCamila: Lo que no entiendo es por qué nadie me avisó.\nPablo: A tu mamá le dije que te contara. Fue ella quien se olvidó.",
+    en: "Camila: Who signed the rental contract?\nPablo: The contract, I signed. The money, your mom put in.\nCamila: And the deposit business? I don't understand a thing.\nPablo: It was in March that we paid it, not in April.\nCamila: What I don't understand is why nobody told me.\nPablo: Your mom, I told her to tell you. It was her who forgot."
+  },
+  examples: [
+    { es: "El informe lo terminé yo anoche, pero la presentación todavía la está haciendo Laura.", en: "The report, I finished last night, but the presentation Laura is still doing." },
+    { es: "Fue en el parque de la 93 donde nos conocimos, un sábado de lluvia hace diez años.", en: "It was in the park on 93rd Street that we met, one rainy Saturday ten years ago." },
+    { es: "Lo de la reunión del lunes es un lío, y eso de madrugar tanto tampoco me gusta.", en: "The business with Monday's meeting is a mess, and this getting up so early thing I don't like either." }
+  ],
+  rule: "What comes first is treated as known; what comes last is the news.\nPut the thing first, then repeat it with *lo*, *la*, *los*, *las* before the verb: *El contrato lo firmé yo.* For a person add *a*: *A mi mamá la llamo mañana.* For told or gave, *le*: *A tu mamá le dije.* Without the repeat it isn't Spanish. A bare word with no article takes none: *Plata no tengo.*\nTo spotlight one piece, frame it with *ser*: *Fue ella quien se olvidó.* *Fue en marzo cuando lo pagamos.* *Es aquí donde vivo.* *Lo que no entiendo es por qué.*\n*Lo de* + a known matter: *lo del depósito*. *Eso de* + a verb: *eso de madrugar*.",
+  readAndPick: [
+    { q: "Who signed the contract?", es: "El contrato lo firmé yo.",
+      options: ["Pablo himself", "Camila's own mother", "Nobody"], answer: 0,
+      why: "The contract is known, so it goes first; the news, *yo*, comes last." },
+    { q: "What is Pablo highlighting?", es: "Fue en marzo cuando lo pagamos, no en abril.",
+      options: ["Who paid it", "When they paid it", "How much they paid"], answer: 1,
+      why: "*Fue en marzo cuando* puts the time under the spotlight." },
+    { q: "What does *lo del depósito* point at?", es: "¿Y lo del depósito? No entiendo nada.",
+      options: ["Something brand new to both", "A shop", "The deposit matter"], answer: 2,
+      why: "*Lo de* picks up a matter both people already know about." },
+    { q: "Who forgot?", es: "Fue ella quien se olvidó.",
+      options: ["Pablo, as always", "Camila's mom", "Camila"], answer: 1,
+      why: "*Fue ella quien* spotlights the person: it was her mom, not Pablo." },
+    { q: "What is Camila's main point?", es: "Lo que no entiendo es por qué nadie me avisó.",
+      options: ["Why nobody told her", "What a deposit is for", "When"], answer: 0,
+      why: "*Lo que no entiendo es* saves the real point for the end." },
+    { q: "Why is there no repeated *la* here?", es: "Plata no tengo.",
+      options: ["It's a typo", "*Plata* has no article", "Questions never take one at all"], answer: 1,
+      why: "A bare word with no article goes first without the repeat: *plata no tengo*." }
+  ],
+  yourTurn: [
+    { en: "The contract, I signed it.", es: "El contrato lo firmé yo.", accept: [] },
+    { en: "My sister, I called her last night.", es: "A mi hermana la llamé anoche.", accept: [] },
+    { en: "It was María who found the letter.", es: "Fue María quien encontró la carta.", accept: ["Fue María la que encontró la carta."] },
+    { en: "What I don't understand is why.", es: "Lo que no entiendo es por qué.", accept: [] },
+    { en: "That business with the money is a mess.", es: "Lo de la plata es un lío.", accept: ["Lo [de la plata|del dinero] es un lío."] }
+  ],
+  translate: [
+    { en: "The book, Juan bought it last week.", es: "El libro lo compró Juan la semana pasada.", accept: [] },
+    { en: "It was yesterday that I last saw him.", es: "Fue ayer cuando lo vi por última vez.", accept: [] },
+    { en: "This is where it all began.", es: "Es aquí donde todo empezó.", accept: ["Fue aquí donde todo empezó.", "Aquí fue donde todo empezó."] },
+    { en: "That word, how is it pronounced?", es: "Esa palabra, ¿cómo se pronuncia?", accept: [] },
+    { en: "The report, Laura finished it. The slides, I'm doing them. And the meeting business, nobody understands it.", es: "El informe lo terminó Laura. Las diapositivas las estoy haciendo yo. Y lo de la reunión no lo entiende nadie.", accept: ["El informe lo terminó Laura. Las diapositivas las [estoy haciendo|hago] yo. Y lo de la reunión no lo entiende nadie."] },
+    { en: "As for what you said yesterday, I have my doubts.", es: "En cuanto a lo que dijiste ayer, tengo mis dudas.", accept: ["En cuanto a lo que [dijiste|comentabas] ayer, tengo mis dudas."] }
+  ],
+  register: [
+    { es: "Eso de madrugar no es lo mío.", en: "This getting up early thing isn't for me.", when: "with friends, about a habit you dislike" },
+    { es: "Lo de la reunión ya está resuelto.", en: "The meeting business is sorted now.", when: "anywhere, picking up a shared topic" },
+    { es: "En cuanto al presupuesto, tengo algunas dudas.", en: "As for the budget, I have a few doubts.", when: "in a meeting, opening a new point" },
+    { es: "Fue la junta directiva la que tomó la decisión.", en: "It was the board that took the decision.", when: "in a formal statement, pointing at who decided" }
+  ],
+  personal: {
+    prompt: "Write three sentences about a mix-up at home or work: put an object first and repeat it, spotlight who did it with *fue... quien*, and pick up a shared topic with *lo de*.",
+    constraints: [
+      { type: "regex", pattern: "(^|[.!?] )(el|la|los|las) [a-záéíóúñ]+( [a-záéíóúñ]+)? (lo|la|los|las) [a-záéíóúñ]+", label: "an object first, repeated: *el contrato lo firmé yo*" },
+      { type: "regex", pattern: "(fue|es|fueron|son) [a-záéíóúñ ]+ (quien|quienes|el que|la que|los que|las que|cuando|donde)", label: "a spotlight: *fue ella quien...*" },
+      { type: "containsAny", words: ["lo de ", "lo del ", "eso de "], label: "a shared topic: *lo de* or *eso de*" }
+    ],
+    model: "Las llaves las dejé en la oficina. Fue mi jefe quien cerró la puerta con todo adentro. Y lo de la alarma mejor no te lo cuento."
+  },
+  pitfalls: [
+    "*El contrato firmé yo* is missing the repeat: *el contrato lo firmé yo*.",
+    "Each frame lights up a different piece: *fue ella quien* is who, *fue en marzo cuando* is when.",
+    "*Lo de* needs shared ground; if the listener has no idea, tell the story."
+  ]
+},
+
+"dc-focalizacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Juana announces her wedding in a chat, and Ana can't believe a word of it. Each surprise comes back as an echo, and small words point at exactly what matters.",
+    es: "Juana: Me caso en diciembre.\nAna: ¿Te casas cuándo? ¿Y con quién?\nJuana: Con Simón. Y la fiesta es en Leticia, precisamente porque allá nos conocimos.\nAna: ¿La fiesta es dónde? Eso queda lejísimos, incluso para ti.\nJuana: La invitación se la mandé a tu mamá también, sobre todo para que te convenza.\nAna: La idea es algo loca, pero me encanta.",
+    en: "Juana: I'm getting married in December.\nAna: You're getting married WHEN? And to who?\nJuana: To Simón. And the party is in Leticia, precisely because that's where we met.\nAna: The party is WHERE? That's miles away, even for you.\nJuana: The invitation, I sent it to your mom too, mainly so she'll talk you into it.\nAna: The idea is a bit crazy, but I love it."
+  },
+  examples: [
+    { es: "Precisamente por eso decidimos esperar un poco más antes de firmar el contrato del local.", en: "That's precisely why we decided to wait a bit longer before signing the lease on the shop." },
+    { es: "Es un hotel impresionante; incluso tiene piscina en la terraza y desayuno incluido hasta mediodía.", en: "It's a stunning hotel; it even has a pool on the roof terrace and breakfast included until noon." },
+    { es: "La carta se la di a María en persona, para que nadie más la leyera.", en: "The letter, I gave it to María in person, so that nobody else would read it." }
+  ],
+  rule: "Small words put a spotlight on what comes right after them:\n*incluso*: even, the surprising extreme. *sobre todo*, *especialmente*: above all, without leaving the rest out. *precisamente*, *justamente*: exactly that. *concretamente*: specifically.\n*Algo* before a describing word turns it down to the minimum: *es algo pesado*, a little heavy going.\nPut the thing first and repeat it with the little words before the verb: *La carta se la di a María.*\nSurprised by one piece? Keep the sentence and put the question word where the surprise was, at the end: *¿Te casas cuándo?* *¿La fiesta es dónde?* It's casual and a little dramatic.",
+  readAndPick: [
+    { q: "What surprises Ana?", es: "¿Te casas cuándo?",
+      options: ["Where the wedding is", "When the wedding is", "Who the guests are"], answer: 1,
+      why: "The question word sits where the surprise was: the date." },
+    { q: "Why Leticia, of all places?", es: "La fiesta es en Leticia, precisamente porque allá nos conocimos.",
+      options: ["It's cheap", "Ana's mom lives there now", "That's where they met"], answer: 2,
+      why: "*Precisamente porque* points at the exact reason." },
+    { q: "What does *incluso* do here?", es: "Eso queda lejísimos, incluso para ti.",
+      options: ["Adds a surprising case", "Leaves Juana out of it", "Turns it into a long question"], answer: 0,
+      why: "*Incluso* adds the extreme case: far even for someone who loves travelling." },
+    { q: "How crazy is the idea?", es: "La idea es algo loca, pero me encanta.",
+      options: ["Totally, utterly mad", "A little crazy", "Not crazy"], answer: 1,
+      why: "*Algo* before a describing word turns it down: a little crazy." },
+    { q: "What did Juana send to Ana's mom?", es: "La invitación se la mandé a tu mamá también.",
+      options: ["The invitation", "A cake", "The rings for the wedding"], answer: 0,
+      why: "*La invitación* comes first and is repeated by *la* before the verb." },
+    { q: "Is the hotel just fine?", es: "Es un hotel impresionante; incluso tiene piscina en la terraza.",
+      options: ["Yes, very average", "It has no pool at all, sadly", "Better than expected"], answer: 2,
+      why: "*Incluso* adds a surprising extra: it even has a pool on the roof." }
+  ],
+  yourTurn: [
+    { en: "That's precisely why we decided to wait.", es: "Precisamente por eso decidimos esperar.", accept: ["[Precisamente|Justamente] por eso decidimos esperar."] },
+    { en: "You're getting married WHEN? (to a friend)", es: "¿Te casas cuándo?", accept: [] },
+    { en: "I'm interested in history, especially this century's.", es: "Me interesa la historia, sobre todo la de este siglo.", accept: ["Me interesa la historia, [sobre todo|especialmente] la de este siglo."] },
+    { en: "The letter, I gave it to María in person.", es: "La carta se la di a María en persona.", accept: [] },
+    { en: "This book is a bit heavy going.", es: "Este libro es algo pesado.", accept: ["Este libro es un poco pesado."] }
+  ],
+  translate: [
+    { en: "It's a stunning hotel; it even has a TV in the bathroom.", es: "Es un hotel impresionante; incluso tiene televisor en el baño.", accept: ["Es un hotel impresionante[;|,|.] incluso tiene [televisor|televisión|tele] en el baño."] },
+    { en: "Hernando lives WHERE?", es: "¿Hernando vive dónde?", accept: [] },
+    { en: "Specifically, I need the March figures.", es: "Concretamente, necesito las cifras de marzo.", accept: [] },
+    { en: "The keys, I left them with the doorman.", es: "Las llaves se las dejé al portero.", accept: ["Las llaves se las dejé [al portero|al celador]."] },
+    { en: "I love the city, above all the old town. The food is a bit expensive, but it's worth it. Even the coffee is excellent.", es: "Me encanta la ciudad, sobre todo el centro histórico. La comida es algo cara, pero vale la pena. Incluso el café es excelente.", accept: ["Me encanta la ciudad, [sobre todo|especialmente] el centro histórico. La comida es algo cara, pero vale la pena. Incluso el [café|tinto] es excelente."] },
+    { en: "Juana bought HOW many?", es: "¿Juana compró cuántos?", accept: [] }
+  ],
+  register: [
+    { es: "¿Que te casas?", en: "You're getting married?!", when: "with friends, hearing surprising news" },
+    { es: "¿Perdón? ¿Cuándo dijiste?", en: "Sorry? When did you say?", when: "politely checking what you didn't catch" },
+    { es: "Precisamente por eso lo propongo.", en: "That's exactly why I'm proposing it.", when: "in a meeting, backing your own point" },
+    { es: "Cabe destacar, en particular, el aumento de las ventas.", en: "Particularly worth noting is the rise in sales.", when: "in a written report" }
+  ],
+  personal: {
+    prompt: "A friend gives you surprising news. React to two pieces of it with an echo question, and answer with sentences that use *incluso* or *precisamente*.",
+    constraints: [
+      { type: "regex", pattern: "¿[^?¿]*\\b(cuándo|dónde|quién|quiénes|cuántos|cuántas|cuánto|qué|cómo)\\?", label: "an echo question: *¿te casas cuándo?*" },
+      { type: "containsAny", words: ["incluso", "precisamente", "justamente", "sobre todo", "concretamente"], label: "a spotlight word: *incluso* or *precisamente*" },
+      { type: "minSentences", n: 3, label: "three sentences or more" }
+    ],
+    model: "¿Te vas a vivir dónde? ¿Y te vas con quién? Precisamente ayer te dije que no te fueras sin avisarme. Incluso tu mamá lo sabía antes que yo."
+  },
+  pitfalls: [
+    "An echo question isn't a normal question: keep the sentence and swap only the surprising piece.",
+    "*Algo pesado* is a little heavy; *muy pesado* is very. Don't mix them up when being polite.",
+    "Spain says *¿que has visto a quién?*; in Colombia, *¿viste a quién?*"
+  ]
+},
+
+"dc-intensificacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Andrés can't stop raving about the café on his corner, and Lina isn't buying it. Between them they turn everything up: a glued-on word, a doubled one, a promise, a scolding.",
+    es: "Andrés: El café de la esquina es superbueno. Allá sí sirven café café, no ese tinto aguado de la oficina.\nAndrés: Te juro que el pandebono estaba bueníiisimo.\nLina: Ay, tú siempre exageras.\nAndrés: ¿Exagerar, yo? Te aseguro que es el mejor de Bogotá.\nLina: Bueno, bueno. ¡Y que me devuelvas el paraguas de una vez!",
+    en: "Andrés: The café on the corner is super good. There they serve real coffee, not that watery stuff from the office.\nAndrés: I swear the pandebono was amaaazing.\nLina: Oh, you always exaggerate.\nAndrés: ME, exaggerate? I assure you it's the best in Bogotá.\nLina: OK, OK. And give me back my umbrella, I said, once and for all!"
+  },
+  examples: [
+    { es: "Es un muchacho rebueno para las matemáticas; seguro que pasa el examen sin estudiar.", en: "He's a really good kid at maths; he's sure to pass the exam without studying." },
+    { es: "Le aseguro que le devolvió hasta el último peso, porque yo misma vi la transferencia.", en: "I assure you he paid her back every last peso, because I saw the transfer myself." },
+    { es: "¡Que no lo toques! Te lo dije mil veces, ese cable no se puede tocar.", en: "Don't touch it, I said! I've told you a thousand times, that cable mustn't be touched." }
+  ],
+  rule: "Past *muy* and *-ísimo*, Spanish turns it up several ways.\nGlue on *super-* (*superbueno*) or, more casual and very Colombian, *re-* (*rebueno*). Also *archi-*, *ultra-*, *extra-*.\nSay the word twice for the real thing: *café café*, proper coffee.\nPut your own word behind it: *te juro que*, *te aseguro que*, *está claro que*.\nRepeat an ignored order with *que* + the subjunctive: *¡Que me devuelvas el paraguas!* It means I said. Add *de una vez* or *ya*. It's sharp: family, not your boss.\nThrow a word back in disbelief: *¿Miedo, yo?*\nStretch the letters in chat: *bueníiisimo*, *pueees*. Speech and chat only.",
+  readAndPick: [
+    { q: "What does *café café* mean?", es: "Allá sí sirven café café.",
+      options: ["Two cups of it, always", "Real, proper coffee", "Coffee"], answer: 1,
+      why: "Saying the word twice means the real thing, not the watery kind." },
+    { q: "How good was the pandebono?", es: "Te juro que el pandebono estaba bueníiisimo.",
+      options: ["Amazing, really", "So-so", "Far too dry to eat"], answer: 0,
+      why: "*Te juro* backs it with his word, and the stretched letters turn it up." },
+    { q: "What is Andrés doing with *¿Exagerar, yo?*", es: "¿Exagerar, yo? Te aseguro que es el mejor de Bogotá.",
+      options: ["Admitting it all", "Asking a genuine question about it", "Rejecting it, outraged"], answer: 2,
+      why: "Throwing the word back with *yo* rejects it in disbelief." },
+    { q: "What does the *que* in front tell you?", es: "¡Que me devuelvas el paraguas de una vez!",
+      options: ["The first time she's asked", "She already asked", "Polite"], answer: 1,
+      why: "*Que* + the subjunctive repeats an order that was ignored: I said." },
+    { q: "Where does *superbueno* belong?", es: "El café de la esquina es superbueno.",
+      options: ["A legal contract", "With friends", "News"], answer: 1,
+      why: "*Super-* glued on is warm and casual: with friends, not in a contract." },
+    { q: "How sure is the speaker?", es: "Le aseguro que le devolvió hasta el último peso.",
+      options: ["Completely sure", "Not very sure", "Only half sure of it"], answer: 0,
+      why: "*Le aseguro* puts her own word behind it." }
+  ],
+  yourTurn: [
+    { en: "This place is super good.", es: "Este sitio es superbueno.", accept: ["Este [sitio|lugar] es [superbueno|súper bueno]."] },
+    { en: "I swear it's true.", es: "Te juro que es verdad.", accept: ["Te juro que es [verdad|cierto]."] },
+    { en: "Be quiet, I said! (to a sibling)", es: "¡Que te calles!", accept: ["¡Que te calles ya!", "¡Que te calles de una vez!"] },
+    { en: "Don't touch it, I said!", es: "¡Que no lo toques!", accept: [] },
+    { en: "Here they serve real coffee.", es: "Aquí sirven café café.", accept: ["Acá sirven café café."] }
+  ],
+  translate: [
+    { en: "I assure you he paid back every last peso. (formal)", es: "Le aseguro que devolvió hasta el último peso.", accept: ["Le aseguro que le devolvió hasta el último peso."] },
+    { en: "It's crystal clear that he isn't interested in the job.", es: "Está clarísimo que no le interesa el trabajo.", accept: [] },
+    { en: "Scared, ME?", es: "¿Miedo, yo?", accept: [] },
+    { en: "He's a super clever kid; he's sure to pass.", es: "Es un muchacho superinteligente; seguro que pasa.", accept: ["Es un [muchacho|niño] [superinteligente|súper inteligente|muy inteligente][;|,|.] seguro que pasa."] },
+    { en: "The food was amazing. I swear it's the best restaurant in the city. And give me back my book, I said!", es: "La comida estaba buenísima. Te juro que es el mejor restaurante de la ciudad. ¡Y que me devuelvas el libro!", accept: ["La comida estaba [buenísima|superbuena|deliciosa]. Te juro que es el mejor restaurante de la ciudad. ¡Y que me devuelvas el libro!"] },
+    { en: "It wasn't just good; it was amazing.", es: "No estaba bueno; estaba buenísimo.", accept: ["No estaba bueno[;|,|.] estaba buenísimo."] }
+  ],
+  register: [
+    { es: "¡Está rebueno!", en: "It's really good!", when: "in Colombia, with friends, about food or a plan" },
+    { es: "Está buenísimo.", en: "It's really good.", when: "anywhere, warm praise" },
+    { es: "Le aseguro que no volverá a ocurrir.", en: "I assure you it won't happen again.", when: "to a client or a boss, as usted" },
+    { es: "Resulta evidente que el proyecto no es viable.", en: "It is evident that the project is not viable.", when: "in a report, strong but formal" }
+  ],
+  personal: {
+    prompt: "Write a short rave to a friend about a place you love, then tell someone off for ignoring a request.",
+    constraints: [
+      { type: "containsAny", words: ["super", "súper", "rebueno", "rebuena", "archi", "ultra", "ísimo", "ísima"], label: "turned up: *superbueno*, *rebueno* or *-ísimo*" },
+      { type: "containsAny", words: ["te juro", "te aseguro", "le aseguro", "está claro que", "de verdad"], label: "your word behind it: *te juro que*" },
+      { type: "regex", pattern: "¡que [a-záéíóúñ ]+!", label: "an ignored order: *¡que me devuelvas...!*" }
+    ],
+    model: "Ayer fui a una panadería en Usaquén. ¡Te juro que el pan estaba buenísimo! Sirven café café, y la dueña es superamable. Ah, y Carlos: ¡que me devuelvas el cargador de una vez!"
+  },
+  pitfalls: [
+    "*¡Que te calles!* assumes you already asked once; as a first request it sounds rude.",
+    "Stretched letters like *bueníiisimo* are for speech and chat, never a formal email.",
+    "*Te juro* on every line wears out: save it for what you really need believed."
+  ]
+},
+
+"gr-orden-interrogativos-b2": {
+  source: "merged",
+  hook: {
+    line: "A radio presenter interviews the couple who opened a restaurant in Leticia. Her questions show where the question word goes, what follows it, and what happens when an answer surprises her.",
+    es: "Locutora: ¿Dónde y cuándo se conocieron ustedes dos?\nSimón: En Leticia, hace tres años.\nLocutora: ¿Y quién propuso abrir el restaurante?\nJuana: Lo propuso Simón.\nLocutora: ¿Por qué Simón no quería cocinar al principio?\nJuana: Porque no sabía. Ahora cocina mejor que yo.\nLocutora: ¿Cocina mejor que quién?",
+    en: "Presenter: Where and when did you two meet?\nSimón: In Leticia, three years ago.\nPresenter: And who suggested opening the restaurant?\nJuana: Simón did.\nPresenter: Why didn't Simón want to cook at first?\nJuana: Because he didn't know how. Now he cooks better than me.\nPresenter: He cooks better than WHO?"
+  },
+  examples: [
+    { es: "¿Cuándo llegan los clientes de Japón, y quién los va a recoger en el aeropuerto?", en: "When do the customers from Japan arrive, and who's going to pick them up at the airport?" },
+    { es: "¿Cómo y por qué cambió de opinión el alcalde, si la semana pasada decía lo contrario?", en: "How and why did the mayor change his mind, if last week he was saying the opposite?" },
+    { es: "¿Quién llega primero a la oficina? Normalmente llega don Hernando, a las seis y media.", en: "Who gets to the office first? Usually Don Hernando does, at half past six." }
+  ],
+  rule: "A question with a question word puts it first, then the verb, then the person: *¿Dónde vive Juana?* *¿Cuándo llegan los clientes?* *¿Dónde Juana vive?* sounds foreign. After *por qué*, the person may come first: *¿Por qué Simón no quería?*\nAfter the verb, the rest is loose: put last what reads best.\nTwo question words go up front together: *¿Dónde y cuándo se conocieron?* *¿Cómo y por qué cambió?*\nYes or no questions keep the plain order; the marks and your voice do the work: *¿Juana vive aquí?*\nIn answers, the new piece goes last: *¿Quién llega? Llega don Hernando.*\nSurprised? Put the question word at the end, where the surprise was: *¿Cocina mejor que quién?*",
+  readAndPick: [
+    { q: "What does the presenter want to know?", es: "¿Dónde y cuándo se conocieron ustedes dos?",
+      options: ["Only the place it was", "Where and when", "Why they met"], answer: 1,
+      why: "Two question words up front together ask for both pieces at once." },
+    { q: "What comes right after *dónde*?", es: "¿Dónde vive Juana?",
+      options: ["The verb", "The person", "Nothing"], answer: 0,
+      why: "Question word, then verb, then the person: *¿dónde vive Juana?*" },
+    { q: "What is the presenter doing at the end?", es: "¿Cocina mejor que quién?",
+      options: ["Asking a normal question", "Change", "Showing surprise"], answer: 2,
+      why: "The question word moves to the end, where the surprise was: an echo." },
+    { q: "Where does the new information sit?", es: "¿Quién propuso abrir el restaurante? Lo propuso Simón.",
+      options: ["Right at the very start", "At the end: Simón", "Nowhere"], answer: 1,
+      why: "In an answer, the new piece goes last: *lo propuso Simón*." },
+    { q: "Is this order possible?", es: "¿Por qué Simón no quería cocinar?",
+      options: ["Yes, after *por qué*", "No, never", "Only in old poems and songs"], answer: 0,
+      why: "After *por qué*, the person can come before the verb, and often does." }
+  ],
+  yourTurn: [
+    { en: "Where does Juana live?", es: "¿Dónde vive Juana?", accept: [] },
+    { en: "When do the customers arrive?", es: "¿Cuándo llegan los clientes?", accept: [] },
+    { en: "Where and when did you two meet?", es: "¿Dónde y cuándo se conocieron ustedes dos?", accept: ["¿Dónde y cuándo se conocieron?"] },
+    { en: "Who usually arrives first?", es: "¿Quién llega primero normalmente?", accept: ["¿Quién llega normalmente primero?", "¿Quién suele llegar primero?", "¿Normalmente quién llega primero?"] },
+    { en: "You're going WHERE? (to a friend)", es: "¿Vas adónde?", accept: ["¿Vas para dónde?", "¿Te vas para dónde?", "¿Vas a dónde?"] }
+  ],
+  translate: [
+    { en: "Who often does exercise?", es: "¿Quién hace ejercicio a menudo?", accept: ["¿Quién hace ejercicio [con frecuencia|seguido]?"] },
+    { en: "How and why did he change his mind?", es: "¿Cómo y por qué cambió de opinión?", accept: [] },
+    { en: "Why didn't Luis say anything?", es: "¿Por qué Luis no dijo nada?", accept: ["¿Por qué no dijo nada Luis?"] },
+    { en: "Does Juana live here?", es: "¿Juana vive aquí?", accept: ["¿Vive Juana aquí?", "¿Juana vive acá?"] },
+    { en: "Who opened the café? Rosa opened it. And when did she open it? She opened it in 2010.", es: "¿Quién abrió el café? Lo abrió Rosa. ¿Y cuándo lo abrió? Lo abrió en 2010.", accept: ["¿Quién abrió el café? Lo abrió Rosa. ¿Y cuándo lo abrió? Lo abrió en el 2010."] },
+    { en: "She bought HOW many?", es: "¿Compró cuántos?", accept: ["¿Compró cuántas?"] }
+  ],
+  register: [
+    { es: "¿Pa' dónde vas?", en: "Where are you off to?", when: "in Colombia, very casual, to a friend" },
+    { es: "¿Dónde vive tu hermana?", en: "Where does your sister live?", when: "anywhere, a plain question" },
+    { es: "¿Podría indicarme dónde queda la oficina?", en: "Could you tell me where the office is?", when: "asking a stranger or at a reception desk" },
+    { es: "¿Cuándo y dónde se firmará el acuerdo?", en: "When and where will the agreement be signed?", when: "at a press conference or in an interview" }
+  ],
+  personal: {
+    prompt: "You're interviewing someone about their business for a local paper. Write four questions or more: one with two question words, one with *por qué*, and one echo question when an answer surprises you.",
+    constraints: [
+      { type: "regex", pattern: "¿(dónde|cuándo|cómo|por qué|quién|qué) y (dónde|cuándo|cómo|por qué|quién|qué)", label: "two question words together: *¿dónde y cuándo...?*" },
+      { type: "containsAny", words: ["¿por qué"], label: "a question with *por qué*" },
+      { type: "regex", pattern: "¿[^?¿]*\\b(cuándo|dónde|quién|quiénes|cuántos|cuántas|cuánto|qué|cómo)\\?", label: "an echo question: *¿cocina mejor que quién?*" },
+      { type: "minSentences", n: 4, label: "four questions or more" }
+    ],
+    model: "¿Dónde y cuándo abrió su primera panadería? ¿Por qué decidió vender solo pan de maíz? ¿Cuántos clientes tiene al día? ¿Vende quinientas arepas? ¿Y las hace quién?"
+  },
+  pitfalls: [
+    "*¿Dónde Juana vive?* sounds foreign: question word, verb, then the person.",
+    "With two question words, both go up front: *¿dónde y cuándo...?*",
+    "An echo question puts the question word last; it repeats, it doesn't ask fresh."
+  ]
+},
+
+"dc-negacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Tomás's mother wants to know if he's going to a party on Saturday. He says no every way Spanish allows: flatly, firmly, with a protest, with a hedge, and over and over.",
+    es: "Mamá: ¿Vas a ir a la fiesta de Andrés el sábado?\nTomás: ¡Ni hablar! De ningún modo pienso ir.\nMamá: ¿No te pones bravo si no te invita la próxima vez?\nTomás: No, de ninguna manera. ¡Si ni siquiera me cae bien!\nMamá: ¿Y llegó alguna invitación para tu hermana?\nTomás: No, que yo sepa. ¡Que no, mamá, que no voy!",
+    en: "Mom: Are you going to Andrés's party on Saturday?\nTomás: No way! There's no way I'm going.\nMom: Won't you be upset if he doesn't invite you next time?\nTomás: No, not at all. I don't even like him!\nMom: And did an invitation come for your sister?\nTomás: Not as far as I know. No, Mom, I'm telling you, I'm not going!"
+  },
+  examples: [
+    { es: "No, que yo sepa no hay ningún motivo para cambiar de opinión a estas alturas del proyecto.", en: "No, as far as I know there's no reason to change our minds at this stage of the project." },
+    { es: "No vino turista alguno en todo el fin de semana, a pesar de la publicidad en redes.", en: "Not a single tourist came all weekend, despite the advertising on social media." },
+    { es: "¡Pues claro que no pienso aceptar esas condiciones! Me pagan menos y trabajo más horas.", en: "Of course I'm not going to accept those conditions! They pay me less and I work longer hours." }
+  ],
+  rule: "A plain *no* is one rung. There are more.\nConfirming a negative question: *¿No te pones bravo? No, de ninguna manera.*\nRepeating for someone who won't listen: *¡Que no, que no voy!*\nTurning it up: *¡Ni hablar!*, *de ningún modo*, *¡Claro que no!*, *¡Pues claro que no!*, and the rude-ish *no me da la gana*.\nProtesting with *si* at the start, which isn't if here: *¡Si ni siquiera me cae bien!*\nSoftening, by limiting it to what you know: *No, que yo sepa.* You might be wrong.\nFor the strongest written no, put *alguno* after the thing, with *no* before the verb: *No hay motivo alguno.*",
+  readAndPick: [
+    { q: "How firmly does Tomás refuse?", es: "¡Ni hablar! De ningún modo pienso ir.",
+      options: ["He might still go after all", "As firmly as he can", "Politely"], answer: 1,
+      why: "*¡Ni hablar!* and *de ningún modo* are near the top of the ladder." },
+    { q: "What does *no, de ninguna manera* do here?", es: "¿No te pones bravo? No, de ninguna manera.",
+      options: ["Confirms he won't be", "Says he will be upset", "Changes the subject"], answer: 0,
+      why: "It confirms the negative question: no, he won't be upset at all." },
+    { q: "What is the *si* doing?", es: "¡Si ni siquiera me cae bien!",
+      options: ["Meaning if, as it usually does", "Yes", "Protesting with a reason"], answer: 2,
+      why: "*Si* at the start of an exclamation protests: but I don't even like him!" },
+    { q: "How sure is Tomás about the invitation?", es: "No, que yo sepa.",
+      options: ["Completely, totally sure", "As far as he knows", "He has no idea"], answer: 1,
+      why: "*Que yo sepa* limits the no to what he knows; he might be wrong." },
+    { q: "How many tourists came?", es: "No vino turista alguno en todo el fin de semana.",
+      options: ["Not a single one", "A handful", "Some of them, on Sunday only"], answer: 0,
+      why: "*Alguno* after the thing, with *no* before the verb, is the strongest no." },
+    { q: "Why does Tomás repeat *que no*?", es: "¡Que no, mamá, que no voy!",
+      options: ["He's unsure", "He's making a joke out of it", "She won't take no"], answer: 2,
+      why: "Repeating *que no* insists, for a listener who isn't convinced." }
+  ],
+  yourTurn: [
+    { en: "No way! (to a friend)", es: "¡Ni hablar!", accept: ["¡Ni loco!", "¡Ni loca!"] },
+    { en: "Not as far as I know.", es: "No, que yo sepa.", accept: ["Que yo sepa, no."] },
+    { en: "Of course I'm not going to accept!", es: "¡Claro que no voy a aceptar!", accept: ["¡[Claro que|Pues claro que|Por supuesto que] no voy a aceptar!"] },
+    { en: "I just don't feel like it. (blunt)", es: "No me da la gana.", accept: [] },
+    { en: "There's no reason at all to change.", es: "No hay motivo alguno para cambiar.", accept: ["No hay [motivo alguno|ningún motivo|razón alguna|ninguna razón] para cambiar."] }
+  ],
+  translate: [
+    { en: "Did any letter come for me?", es: "¿Llegó alguna carta para mí?", accept: [] },
+    { en: "No, not at all, it doesn't bother me.", es: "No, de ninguna manera, no me molesta.", accept: ["No, [de ninguna manera|para nada|en absoluto], no me molesta."] },
+    { en: "There's no way I'm apologising.", es: "De ningún modo pienso disculparme.", accept: ["De [ningún modo|ninguna manera] pienso [disculparme|pedir perdón]."] },
+    { en: "But I already told you!", es: "¡Si ya te lo dije!", accept: [] },
+    { en: "Are you going to the party? No way. I don't even like Andrés. And as far as I know, my sister isn't going either.", es: "¿Vas a ir a la fiesta? Ni hablar. Ni siquiera me cae bien Andrés. Y que yo sepa, mi hermana tampoco va.", accept: ["¿Vas a ir a la fiesta? [Ni hablar|Ni loco|Ni loca]. Ni siquiera me cae bien Andrés. Y que yo sepa, mi hermana tampoco va."] },
+    { en: "Not a single tourist came, despite the advertising.", es: "No vino turista alguno, a pesar de la publicidad.", accept: ["No vino [turista alguno|ningún turista|ni un turista], a pesar de la publicidad."] }
+  ],
+  register: [
+    { es: "¡Ni de vainas!", en: "No chance!", when: "in Colombia, among close friends, very casual" },
+    { es: "No, gracias, de verdad.", en: "No, thanks, really.", when: "anywhere, a firm but kind no" },
+    { es: "Lamentablemente, no nos es posible aceptar.", en: "Unfortunately, we are not able to accept.", when: "declining in a formal letter or email" },
+    { es: "No existe prueba alguna de esa afirmación.", en: "There is no evidence whatsoever for that claim.", when: "in a report or a legal reply" }
+  ],
+  personal: {
+    prompt: "Someone keeps pushing you to do something you won't do. Write the exchange: refuse three different ways, from soft to blunt, and soften one answer with *que yo sepa*.",
+    constraints: [
+      { type: "containsAny", words: ["ni hablar", "de ningún modo", "de ninguna manera", "no me da la gana", "claro que no", "ni loco", "ni loca", "ni de vainas"], label: "a strong no: *ni hablar* or *de ningún modo*" },
+      { type: "containsAny", words: ["que yo sepa"], label: "a softened no: *que yo sepa*" },
+      { type: "regex", pattern: "¡que no|que no,|no, no", label: "a repeated no: *¡que no, que no voy!*" }
+    ],
+    model: "¿Vas a prestarle el carro a tu primo? Ni hablar. ¿Y si te lo pide tu tía? No, de ninguna manera. ¿Él ya tiene licencia? No, que yo sepa. ¡Que no, mamá, que no se lo presto!"
+  },
+  pitfalls: [
+    "*No, que yo sepa* is not a flat no: it admits you might be wrong.",
+    "*Hay libro alguno* needs its *no*: *no hay libro alguno*.",
+    "*¿No te enfadas?* is Spain; in Colombia, *¿no te pones bravo?* or *¿no te enojas?*"
+  ]
+},
+
+"gr-exclamativos-b2": {
+  source: "merged",
+  hook: {
+    line: "A grandmother greets her granddaughter at a surprise party. Every line is a reaction: to a fact, to a crowd, to an action, to a year of change, and one wish of her own.",
+    es: "¡Qué bien que hayas venido, mija!\n¡Qué sorpresa tan bonita! ¡Y cuánta gente!\n¡Cómo has crecido! ¡Cuánto sabes ya de música!\n¡Quién lo hubiera dicho! Hace un año no sabías ni tocar una nota.\n¡Ay, quién tuviera tu edad otra vez!",
+    en: "How lovely that you came, sweetheart!\nWhat a lovely surprise! And so many people!\nHow you've grown! You know so much about music already!\nWho would have thought it! A year ago you couldn't even play a note.\nOh, if only I were your age again!"
+  },
+  examples: [
+    { es: "¡Qué bien canta tu hermana! No sabía que había estudiado música en el conservatorio de Tunja.", en: "How well your sister sings! I didn't know she'd studied music at the conservatory in Tunja." },
+    { es: "¡Cuántas cosas trajiste! Con todo eso podemos hacer almuerzo para veinte personas.", en: "So many things you brought! With all that we can make lunch for twenty people." },
+    { es: "¡Si lo hubiera sabido! Habría comprado los tiquetes para el domingo, no para el sábado.", en: "If only I'd known! I would have bought the tickets for Sunday, not for Saturday." }
+  ],
+  rule: "The accent turns a question word into a reaction.\n*¡Qué* + a quality: *¡Qué bonito!* + a thing: *¡Qué sorpresa!* Both: *¡Qué sorpresa tan bonita!* No word for English what a.\nReact to a whole fact with *que* and the subjunctive: *¡Qué bien que hayas venido!*\n*¡Cómo* + a verb is how it's done: *¡Cómo canta!* *¡Qué bien canta!* works too.\n*¡Cuánto* + a verb never changes: *¡Cuánto sabes!* Before a thing it agrees: *¡Cuánta gente!*, *¡Cuántas cosas!*\nNothing goes between the word and the verb: *¡Cómo canta esa mujer!*\nWishes: *¡Quién tuviera tu edad!* *¡Si lo hubiera sabido!* *¡Quién lo hubiera dicho!* is surprise, not regret.",
+  readAndPick: [
+    { q: "What is the grandmother reacting to?", es: "¡Qué bien que hayas venido, mija!",
+      options: ["The good weather outside", "The visit itself", "A gift"], answer: 1,
+      why: "*¡Qué bien que...!* reacts to a whole fact: that she came." },
+    { q: "What amazes her about the music?", es: "¡Cuánto sabes ya de música!",
+      options: ["How much she knows", "How loudly she plays it", "Little"], answer: 0,
+      why: "*¡Cuánto* before a verb is how much, and it never changes." },
+    { q: "What does *¡quién lo hubiera dicho!* express?", es: "¡Quién lo hubiera dicho! Hace un año no sabías ni tocar una nota.",
+      options: ["Bitter regret", "A real question", "Happy surprise"], answer: 2,
+      why: "It's a fixed way to say who'd have thought it: surprise, not regret." },
+    { q: "What does she wish?", es: "¡Ay, quién tuviera tu edad otra vez!",
+      options: ["To be young again", "To know who is that age", "To have a party"], answer: 0,
+      why: "*¡Quién tuviera...!* means I wish I had; *quién* here is the speaker." },
+    { q: "Why *cuánta* and not *cuánto*?", es: "¡Y cuánta gente!",
+      options: ["It sits before a verb", "It matches *gente*", "It's a question"], answer: 1,
+      why: "Before a thing, *cuánto* agrees with it: *gente* takes *cuánta*." },
+    { q: "What does *¡Si lo hubiera sabido!* say?", es: "¡Si lo hubiera sabido! Habría comprado los tiquetes para el domingo.",
+      options: ["She knew all along", "She didn't know, sadly", "She'll find out next week, she says"], answer: 1,
+      why: "*¡Si* + *hubiera sabido* wishes about a past that can't change now." }
+  ],
+  yourTurn: [
+    { en: "What a lovely surprise!", es: "¡Qué sorpresa tan bonita!", accept: ["¡Qué bonita sorpresa!", "¡Qué sorpresa tan linda!", "¡Qué linda sorpresa!"] },
+    { en: "How well your sister sings! (to a friend)", es: "¡Qué bien canta tu hermana!", accept: ["¡Cómo canta tu hermana!"] },
+    { en: "So many people!", es: "¡Cuánta gente!", accept: [] },
+    { en: "How lovely that you're here! (to a friend)", es: "¡Qué bien que estés aquí!", accept: ["¡Qué bien que estés acá!", "¡Qué bueno que estés [aquí|acá]!"] },
+    { en: "If only I had your energy!", es: "¡Quién tuviera tu energía!", accept: [] }
+  ],
+  translate: [
+    { en: "How much he knows about history!", es: "¡Cuánto sabe de historia!", accept: [] },
+    { en: "It's really pouring today!", es: "¡Cómo llueve hoy!", accept: ["¡Cómo está lloviendo hoy!"] },
+    { en: "How wonderful that you've come!", es: "¡Qué maravilla que hayas venido!", accept: ["¡Qué maravilla que vinieras!"] },
+    { en: "Who would have thought it!", es: "¡Quién lo hubiera dicho!", accept: ["¡Quién lo iba a decir!", "¡Quién lo hubiera pensado!"] },
+    { en: "What a long day! So many meetings and so little coffee! If only I had known, I would have stayed at home.", es: "¡Qué día tan largo! ¡Cuántas reuniones y qué poco café! Si lo hubiera sabido, me habría quedado en la casa.", accept: ["¡Qué día tan largo! ¡Cuántas reuniones y qué poco café! Si lo hubiera sabido, me [habría|hubiera] quedado en [la casa|casa]."] },
+    { en: "How you've grown! (to a child)", es: "¡Cómo has crecido!", accept: ["¡Cómo creciste!", "¡Qué grande estás!"] }
+  ],
+  register: [
+    { es: "¡Tan lindo!", en: "How sweet!", when: "in Colombia, about a baby, a gift or a kind gesture" },
+    { es: "¡Qué bonito!", en: "How lovely!", when: "anywhere, warm and simple" },
+    { es: "¡Qué gusto verla, doña Inés!", en: "How nice to see you, Doña Inés!", when: "greeting an older person, as usted" },
+    { es: "¡Cuán equivocados estábamos!", en: "How wrong we were!", when: "in writing or a speech, old-fashioned and literary" }
+  ],
+  personal: {
+    prompt: "Write what you'd exclaim at a family reunion: at a person, at the food, at how much has changed, and one wish.",
+    constraints: [
+      { type: "regex", pattern: "¡qu[ée] [a-záéíóúñ]+", label: "a reaction with *¡qué...!*" },
+      { type: "regex", pattern: "¡(cómo|cuánto|cuánta|cuántos|cuántas) ", label: "a reaction with *¡cómo...!* or *¡cuánto...!*" },
+      { type: "regex", pattern: "¡(ay, )?(quién|si|ojalá) [a-záéíóúñ ]*(tuviera|pudiera|fuera|estuviera|supiera|hubiera)", label: "a wish: *¡quién tuviera...!* or *¡si lo hubiera sabido!*" }
+    ],
+    model: "¡Qué bien que vinieron todos! ¡Cómo han crecido los sobrinos! ¡Y cuánta comida trajo mi tía! ¡Quién tuviera la energía de mi abuela!"
+  },
+  pitfalls: [
+    "*¡Qué maravilla que estás aquí!* isn't standard: after *qué... que*, *estés*.",
+    "*¡Cuántos sabe!* agrees with nothing: before a verb it stays *¡cuánto sabe!*",
+    "*¡Qué una sorpresa!* adds an English a: *¡qué sorpresa!*"
+  ]
+},
+
+"dc-entonacion-b2": {
+  source: "merged",
+  hook: {
+    line: "Two colleagues chat about a presentation and a file. Half of what they mean is in the tone, and in a chat the tone is written down: a stretched letter, a tag at the end, capitals.",
+    es: "Laura: ¿Qué te pareció la presentación de Ana?\nCarlos: Pueees, bien... aunque a veces se perdía.\nLaura: Vienes a la reunión, ¿verdad?\nCarlos: Sí, sí. Y porfaaa, mándame el archivo antes.\nLaura: Ya te lo mandé. Y te dije que NO-LO-TO-QUES sin avisarme.\nCarlos: Bueeeno, está bien.",
+    en: "Laura: What did you think of Ana's presentation?\nCarlos: Weeell, fine... though she lost her way at times.\nLaura: You're coming to the meeting, right?\nCarlos: Yes, yes. And pleeease, send me the file beforehand.\nLaura: I already sent it. And I told you: DON'T. TOUCH. IT. without telling me.\nCarlos: Ooookay, fine."
+  },
+  examples: [
+    { es: "Y caminábamos y caminábamos, y no encontrábamos la salida, y ya era de noche, y entonces...", en: "And we walked and walked, and we couldn't find the way out, and it was already dark, and then..." },
+    { es: "Vienes con nosotros el sábado, ¿verdad? Ya le dije a mi mamá que eras parte del plan.", en: "You're coming with us on Saturday, right? I already told my mom you were part of the plan." },
+    { es: "No se lo preeestes, que después no te lo devuelve y te toca comprar otro.", en: "Don't you dare lend it to him, he never gives it back and you end up buying another." }
+  ],
+  rule: "Tone does work words don't, and chat writes it down.\nA yes or no question can ask for news or for a yes. *¿Vienes a la reunión?*, voice rising, really asks. *Vienes, ¿verdad?* or *¿no?*, voice falling, expects a yes.\nA string of *y... y... y...*, the voice held up, keeps a story moving and builds worry.\nStretched letters change meaning with context: *pueees, bien* is a polite doubt; *bueeeno* is reluctant; *porfaaa* pleads; *no se lo preeestes* scolds.\nCapitals and beats, *NO-LO-TO-QUES*, repeat an order already ignored. So does *¡Que no lo toques!*\nAll of it is for speech and chat, never a formal email.",
+  readAndPick: [
+    { q: "What does Carlos really think of the talk?", es: "Pueees, bien... aunque a veces se perdía.",
+      options: ["It was simply brilliant", "Not so good, politely", "He missed it"], answer: 1,
+      why: "A stretched *pueees* before *bien* signals a polite doubt." },
+    { q: "What does Laura expect?", es: "Vienes a la reunión, ¿verdad?",
+      options: ["A yes", "A no", "Any answer at all"], answer: 0,
+      why: "A statement with *¿verdad?* at the end expects agreement." },
+    { q: "What does *porfaaa* do?", es: "Y porfaaa, mándame el archivo antes.",
+      options: ["Gives a sharp order", "Thanks", "Pleads, softly"], answer: 2,
+      why: "Stretching *porfa* softens the request into a plea." },
+    { q: "Why the capitals and beats?", es: "Te dije que NO-LO-TO-QUES sin avisarme.",
+      options: ["It's the first request", "She already said it", "She's joking"], answer: 1,
+      why: "Beat by beat repeats an order that was already given and ignored." },
+    { q: "How does Carlos agree?", es: "Bueeeno, está bien.",
+      options: ["Reluctantly", "Happily, at once", "He doesn't"], answer: 0,
+      why: "A stretched *bueeeno* agrees without any enthusiasm." },
+    { q: "What does the string of *y* do?", es: "Y caminábamos y caminábamos, y no encontrábamos la salida.",
+      options: ["Ends it", "Builds the tension", "Lists every shop they passed"], answer: 1,
+      why: "*Y... y... y...* with the voice held up keeps the story moving and the worry growing." }
+  ],
+  yourTurn: [
+    { en: "You're coming with us, right? (to a friend)", es: "Vienes con nosotros, ¿verdad?", accept: ["Vienes con nosotros, ¿[verdad|no|cierto]?"] },
+    { en: "Don't lend it to him; he never gives it back.", es: "No se lo prestes; nunca lo devuelve.", accept: ["No se lo prestes[;|,|.] nunca lo devuelve.", "No se lo prestes, que nunca te lo devuelve."] },
+    { en: "Well, fine, though she lost her way at times.", es: "Pues, bien, aunque a veces se perdía.", accept: ["Pues, bien, aunque a veces se enredaba."] },
+    { en: "Please help me with this. (pleading, to a friend)", es: "Por favor, ayúdame con esto.", accept: ["Porfa, ayúdame con esto.", "Ayúdame con esto, por favor."] }
+  ],
+  translate: [
+    { en: "Do you want me to come with you?", es: "¿Quieres que te acompañe?", accept: [] },
+    { en: "Will you come to the wedding? (to a friend)", es: "¿Vienes al matrimonio?", accept: ["¿Vas a venir al matrimonio?", "¿Vienes a la boda?", "¿Vendrás al matrimonio?"] },
+    { en: "And we kept walking and walking without seeing the end.", es: "Y seguíamos caminando y caminando sin ver el final.", accept: [] },
+    { en: "I told you not to touch it.", es: "Te dije que no lo tocaras.", accept: [] },
+    { en: "What did you think of the teacher? Well, fine, although sometimes she gets distracted. But she's very kind.", es: "¿Qué te pareció la profesora? Pues, bien, aunque a veces se distrae. Pero es muy amable.", accept: ["¿Qué te pareció la profesora? Pues, bien, aunque a veces se [distrae|despista]. Pero es muy [amable|querida|buena gente]."] },
+    { en: "She's coming tomorrow, isn't she?", es: "Viene mañana, ¿no?", accept: ["Viene mañana, ¿[no|verdad|cierto]?"] }
+  ],
+  register: [
+    { es: "Bueeeno, listo.", en: "Ooookay, fine.", when: "in a chat, agreeing without enthusiasm" },
+    { es: "Porfa, ¿me ayudas?", en: "Please, will you help me?", when: "asking a friend a favour, warmly" },
+    { es: "¿Vienes, cierto?", en: "You're coming, right?", when: "in Colombia, checking a plan you expect" },
+    { es: "Le agradecería que me enviara el archivo.", en: "I would be grateful if you sent me the file.", when: "in a formal email, where the words carry the tone" }
+  ],
+  personal: {
+    prompt: "Write a short chat with a friend where the tone does the work: a question that expects a yes, a stretched word that shows doubt or pleading, and an order repeated because it was ignored.",
+    constraints: [
+      { type: "regex", pattern: ", ¿(verdad|no|cierto)\\?", label: "a question that expects a yes: *..., ¿verdad?*" },
+      { type: "regex", pattern: "([aeiou])\\1\\1", label: "a stretched word: *pueees* or *porfaaa*" },
+      { type: "regex", pattern: "¡que (no )?[a-záéíóúñ]+|[a-záéíóúñ]{2,}-[a-záéíóúñ]{2,}-[a-záéíóúñ]{2,}", label: "an ignored order: *¡que no lo toques!*" }
+    ],
+    model: "Vienes el sábado, ¿verdad? Porfaaa, no me dejes sola con mis primos. Y ¡que me devuelvas la chaqueta de una vez!"
+  },
+  pitfalls: [
+    "Stretched letters and capitals belong in chat; in a formal email the words must carry the tone.",
+    "*Vienes, ¿verdad?* expects a yes; for a real question, just *¿vienes?*",
+    "In Spain *no se lo dejes* means don't lend it; in Colombia, *no se lo prestes*."
+  ]
+},
+
+"nt-presencia-ausencia-b2": {
+  source: "merged",
+  hook: {
+    line: "The minutes of a school parents' meeting in Bogotá record who was there, who was missing, who joined from far away, and what was left where everyone could see it.",
+    es: "A la reunión de padres asistieron cuarenta y dos personas.\nFaltaron los representantes de tres cursos, sin avisar.\nLa señora Díaz participó a distancia, desde Medellín.\nEl rector habló de los estudiantes que faltan a clase más de tres veces al mes.\nLos documentos se firmaron en presencia de la tesorera y quedaron a la vista de todos en la cartelera.",
+    en: "Forty-two people attended the parents' meeting.\nThe representatives of three classes were missing, without notice.\nMrs Díaz took part remotely, from Medellín.\nThe head teacher spoke about the students who miss class more than three times a month.\nThe documents were signed in the presence of the treasurer and left in plain view of everyone on the noticeboard."
+  },
+  examples: [
+    { es: "Faltó a clase tres veces esta semana, y el profesor ya llamó a sus papás para preguntar.", en: "He missed class three times this week, and the teacher has already called his parents to ask." },
+    { es: "Hizo un curso a distancia mientras trabajaba en Leticia, y lo terminó en solo cuatro meses.", en: "She did a distance course while working in Leticia, and finished it in just four months." },
+    { es: "Tu celular está a la vista, encima de la mesa del comedor, al lado de las llaves.", en: "Your phone is in plain sight, on the dining table, next to the keys." }
+  ],
+  rule: "*Asistir a* is to attend, never to assist; for helping, *ayudar*. *Asistí a la boda.* The people there are *los asistentes*. *Participar en* is taking an active part.\n*Faltar a* is missing something you were expected at: *faltó a la reunión*, *faltó tres veces a clase*. Both keep *a*.\nIn the news, *asistieron* + a number gives the crowd: *Asistieron dos mil personas.*\nWays of being there with no verb: *a distancia* (remotely), *a la vista* (in plain sight), *en presencia de* (formal: *en presencia de un notario*), *en ausencia de*.",
+  readAndPick: [
+    { q: "How many people were at the meeting?", es: "A la reunión de padres asistieron cuarenta y dos personas.",
+      options: ["Forty-two helped", "Forty-two of them came", "Forty-two missed it, sadly"], answer: 1,
+      why: "*Asistir a* is to attend: forty-two were there." },
+    { q: "What did three classes' representatives do?", es: "Faltaron los representantes de tres cursos, sin avisar.",
+      options: ["They came late", "They sent a long note", "They didn't come"], answer: 2,
+      why: "*Faltar* is to be missing from something you were expected at." },
+    { q: "Where was Mrs Díaz?", es: "La señora Díaz participó a distancia, desde Medellín.",
+      options: ["In the room", "In Medellín, online", "Nowhere, she missed it"], answer: 1,
+      why: "*A distancia* is remotely: she took part from Medellín." },
+    { q: "What does *a la vista de todos* mean?", es: "Los documentos quedaron a la vista de todos en la cartelera.",
+      options: ["Where anyone can see", "Hidden in a drawer", "Sent by email to all the parents"], answer: 0,
+      why: "*A la vista* is in plain sight, where anyone can see it." },
+    { q: "What does *asistí* mean here?", es: "Asistí a la boda de mi prima en Cali.",
+      options: ["I helped", "I was a guest", "I organised all of it"], answer: 1,
+      why: "*Asistir a* is to attend, not to assist; helping is *ayudar*." }
+  ],
+  yourTurn: [
+    { en: "He missed class three times this week.", es: "Faltó a clase tres veces esta semana.", accept: ["Faltó tres veces a clase esta semana."] },
+    { en: "I attended the conference in Medellín.", es: "Asistí a la conferencia en Medellín.", accept: ["Asistí al congreso en Medellín."] },
+    { en: "She did a distance course.", es: "Hizo un curso a distancia.", accept: ["Hizo un curso virtual."] },
+    { en: "Your phone is in plain sight, on the table. (to a friend)", es: "Tu celular está a la vista, encima de la mesa.", accept: ["Tu celular está a la vista, [encima de|sobre] la mesa."] }
+  ],
+  translate: [
+    { en: "Attendees at the conference exceeded a thousand.", es: "Los asistentes al congreso superaron las mil personas.", accept: ["Los asistentes al [congreso|evento] [superaron|pasaron] las mil personas."] },
+    { en: "She participated actively in the debate.", es: "Participó activamente en el debate.", accept: [] },
+    { en: "He missed the meeting without notice.", es: "Faltó a la reunión sin avisar.", accept: [] },
+    { en: "The signing took place in the presence of a notary.", es: "La firma se realizó en presencia de un notario.", accept: ["La firma se [realizó|hizo] en presencia de un notario."] },
+    { en: "About two thousand people attended the concert. Some came from other cities. Only the singer was missing: she was ill.", es: "Al concierto asistieron unas dos mil personas. Algunas vinieron de otras ciudades. Solo faltó la cantante: estaba enferma.", accept: ["[Al concierto asistieron unas dos mil personas|Unas dos mil personas asistieron al concierto]. Algunas vinieron de otras ciudades. Solo faltó la cantante[:|;|,|.] estaba enferma."] },
+    { en: "Two students were absent from the exam.", es: "Faltaron dos estudiantes al examen.", accept: ["Dos estudiantes faltaron al examen.", "Faltaron dos alumnos al examen."] }
+  ],
+  register: [
+    { es: "No pude ir, me tocó trabajar.", en: "I couldn't go, I had to work.", when: "in Colombia, telling a friend why you missed it" },
+    { es: "No pude asistir a la reunión.", en: "I couldn't attend the meeting.", when: "anywhere, a polite apology" },
+    { es: "Lamento no haber podido asistir.", en: "I regret not having been able to attend.", when: "in a formal email after you missed something" },
+    { es: "La audiencia se celebró en ausencia del acusado.", en: "The hearing was held in the absence of the accused.", when: "in a court report or the news" }
+  ],
+  personal: {
+    prompt: "Write the minutes of a meeting, class or party you went to: how many attended, who was missing, who took part from far away, and what was left in plain sight.",
+    constraints: [
+      { type: "regex", pattern: "asist(ieron|ió|io|í|imos)|los asistentes", label: "attendance: *asistieron*" },
+      { type: "regex", pattern: "falt(ó|o|aron|é|amos) a", label: "missing it: *faltó a*" },
+      { type: "containsAny", words: ["a distancia", "a la vista", "en presencia de", "en ausencia de"], label: "a way of being there: *a distancia* or *a la vista*" }
+    ],
+    model: "A la clase de yoga asistieron doce personas. Faltó a la clase la profesora titular, y la reemplazó un estudiante. Dos compañeras participaron a distancia desde Cali. Al final, alguien dejó una chaqueta roja a la vista de todos en la entrada."
+  },
+  pitfalls: [
+    "*Asistí al profesor* says you attended him: for helping, *ayudé al profesor*.",
+    "*Faltó a la fiesta* means he was expected; for a party you never planned to go to, *no fue*.",
+    "*Falté la reunión* drops the *a*: *falté a la reunión*."
+  ]
+},
+
+"nt-disponibilidad-b2": {
+  source: "merged",
+  hook: {
+    line: "A hotel in Cartagena answers a booking request by email. It says what's left, what has sold out, what the hotel has, and what the guest can count on.",
+    es: "Gracias por escribirnos. Para esas fechas solo quedan dos habitaciones disponibles.\nLas habitaciones con vista al mar ya se agotaron.\nEl hotel cuenta con piscina, gimnasio y parqueadero gratuito.\nTodas las habitaciones disponen de aire acondicionado, y los huéspedes tienen acceso a la playa privada.\nSi le sobra tiempo, le recomendamos el tour de las islas. Cuente con nosotros para cualquier cosa.",
+    en: "Thank you for writing to us. For those dates there are only two rooms left available.\nThe sea-view rooms have already sold out.\nThe hotel has a pool, a gym and free parking.\nAll the rooms have air conditioning, and guests have access to the private beach.\nIf you have time to spare, we recommend the islands tour. Count on us for anything."
+  },
+  examples: [
+    { es: "Las boletas para el concierto se agotaron en dos horas, y ahora las revenden al triple.", en: "The concert tickets sold out in two hours, and now they're being resold at three times the price." },
+    { es: "Nos faltan diez sillas para la fiesta, pero nos sobran como treinta vasos del año pasado.", en: "We're ten chairs short for the party, but we have about thirty glasses left over from last year." },
+    { es: "El cargo de director quedó vacante en marzo, y todavía no hay nadie dispuesto a aceptarlo.", en: "The director's post fell vacant in March, and there's still nobody willing to take it." }
+  ],
+  rule: "What's left, missing or extra works like *gustar*: *Nos quedan dos cupos.* *Nos faltan diez sillas.* *Nos sobran tres boletas.* *Faltar* and *sobrar* are opposites.\nSold out or run out: *agotarse*: *Se agotaron las boletas.*\nAvailable: *disponible* for things and people, *vacante* for a job, *libre* or *desocupado* for a seat or a room. Ready: *estar listo*. Willing: *estar dispuesto a*.\nIn formal Spanish, *tener* has polished stand-ins, each with its own small word: *contar con* (*cuenta con piscina*), *disponer de* (*dispone de parqueadero*), *tener acceso a*. *Disponer* goes like *poner*: *dispongo*.\n*Cuenta conmigo* is count on me.",
+  readAndPick: [
+    { q: "How many rooms can still be booked?", es: "Para esas fechas solo quedan dos habitaciones disponibles.",
+      options: ["Two, no more", "None at all", "Two hundred or so"], answer: 0,
+      why: "*Solo quedan dos* is what's left: two rooms." },
+    { q: "What happened to the sea-view rooms?", es: "Las habitaciones con vista al mar ya se agotaron.",
+      options: ["They're being cleaned", "They're on offer", "They're all taken"], answer: 2,
+      why: "*Se agotaron* is sold out: none left." },
+    { q: "What does *cuenta con piscina* mean?", es: "El hotel cuenta con piscina, gimnasio y parqueadero gratuito.",
+      options: ["It counts its pools", "It has a pool", "Pool"], answer: 1,
+      why: "*Contar con* is the polished way to say it has; nothing is counted." },
+    { q: "What's the problem with chairs and glasses?", es: "Nos faltan diez sillas, pero nos sobran treinta vasos.",
+      options: ["Short of chairs, spare glasses", "Spare chairs and too few glasses for everyone", "Fine"], answer: 0,
+      why: "*Faltar* is missing and *sobrar* is extra: opposites." },
+    { q: "What can be *vacante*?", es: "El cargo de director quedó vacante en marzo.",
+      options: ["A hotel room", "A job or post", "A seat on the bus"], answer: 1,
+      why: "*Vacante* is for a job; a free room or seat is *libre*." },
+    { q: "What is the hotel offering at the end?", es: "Cuente con nosotros para cualquier cosa.",
+      options: ["Help whenever needed", "A discount", "A count of the guests"], answer: 0,
+      why: "*Contar con* someone is to rely on them: count on us." }
+  ],
+  yourTurn: [
+    { en: "There's nobody available right now.", es: "No hay nadie disponible en este momento.", accept: ["No hay nadie disponible [ahora mismo|ahorita|en este momento]."] },
+    { en: "The tickets sold out in two hours.", es: "Las boletas se agotaron en dos horas.", accept: ["Las [boletas|entradas] se agotaron en dos horas."] },
+    { en: "We're ten chairs short.", es: "Nos faltan diez sillas.", accept: [] },
+    { en: "We have three tickets spare.", es: "Nos sobran tres boletas.", accept: ["Nos sobran tres [boletas|entradas]."] },
+    { en: "Count on me. (to a friend)", es: "Cuenta conmigo.", accept: [] }
+  ],
+  translate: [
+    { en: "It's the last seat left.", es: "Es el último puesto que queda.", accept: ["Es el último [puesto|asiento|cupo] que queda."] },
+    { en: "We have the support of the whole team.", es: "Contamos con el apoyo de todo el equipo.", accept: [] },
+    { en: "We don't have access to that data yet.", es: "Todavía no tenemos acceso a esos datos.", accept: ["No tenemos acceso a esos datos todavía.", "Aún no tenemos acceso a esos datos."] },
+    { en: "He's not willing to change his mind.", es: "No está dispuesto a cambiar de opinión.", accept: [] },
+    { en: "The car is ready; we can leave this afternoon. There are only two places left on the tour. And the flat has parking.", es: "El carro ya está listo; podemos salir esta tarde. Solo quedan dos cupos en el tour. Y el apartamento dispone de parqueadero.", accept: ["El carro ya está listo[;|,|.] podemos salir esta tarde. Solo quedan dos cupos en el tour. Y el apartamento [dispone de|tiene|cuenta con] parqueadero."] },
+    { en: "The director's post has fallen vacant.", es: "El cargo de director quedó vacante.", accept: ["El cargo de director [quedó|ha quedado] vacante."] }
+  ],
+  register: [
+    { es: "Ya no hay, se acabaron.", en: "There aren't any more, they ran out.", when: "anywhere, at a shop or a stall" },
+    { es: "Listo, cuenta conmigo.", en: "Sure, count me in.", when: "in Colombia, saying yes to a plan" },
+    { es: "Por el momento no tenemos disponibilidad.", en: "At the moment we have no availability.", when: "a hotel or a clinic, on the phone" },
+    { es: "El inmueble dispone de dos parqueaderos.", en: "The property has two parking spaces.", when: "in a listing or a formal description" }
+  ],
+  personal: {
+    prompt: "You're organising a party or a trip. Write a message saying what's missing or extra, what sold out, and what the place has.",
+    constraints: [
+      { type: "regex", pattern: "(me|te|le|nos|les) (quedan|queda|faltan|falta|sobran|sobra)", label: "left, missing or extra: *nos faltan* or *nos sobra*" },
+      { type: "regex", pattern: "se agot(ó|o|aron)|agotad[oa]s?", label: "sold out: *se agotaron*" },
+      { type: "regex", pattern: "cuenta con|cuentan con|dispone de|disponen de|tiene acceso|tienen acceso", label: "what the place has: *cuenta con* or *dispone de*" }
+    ],
+    model: "Para el paseo a Villa de Leyva nos faltan dos personas para llenar el bus. Nos sobra comida, así que no traigan nada. Las boletas del museo se agotaron, pero el hotel cuenta con piscina y zona de juegos."
+  },
+  pitfalls: [
+    "*Me falta* and *me sobra* are opposites: mixing them up reverses the whole message.",
+    "*Vacante* is for a job; a free room or seat is *libre* or *desocupado*.",
+    "*Contar con* here means to have, not to count; *cuenta con piscina* is it has a pool."
+  ]
+},
+
+"task-b2-enfasis": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own exercise: take six plain sentences of your own and rewrite each three ways, saying in one line what question each version answers. The model does it for one sentence about a report.",
+    es: "Marta envió el informe el viernes.\nFue Marta quien envió el informe el viernes. (¿Quién lo envió?)\nEl informe lo envió Marta el viernes. (¿Y el informe?)\nFue el viernes cuando Marta envió el informe. (¿Cuándo lo envió?)\nLo que envió Marta el viernes fue el informe. (¿Qué envió?)\nY lo de Marta se resolvió el lunes. (¿Y el asunto de Marta?)",
+    en: "Marta sent the report on Friday.\nIt was Marta who sent the report on Friday. (Who sent it?)\nThe report, Marta sent on Friday. (And the report?)\nIt was on Friday that Marta sent the report. (When did she send it?)\nWhat Marta sent on Friday was the report. (What did she send?)\nAnd the Marta business was settled on Monday. (And the Marta matter?)"
+  },
+  examples: [
+    { es: "Fue Marta quien envió el informe, aunque el jefe cree que lo mandé yo.", en: "It was Marta who sent the report, although the boss thinks I sent it." },
+    { es: "El informe lo envió Marta el viernes, y la presentación la terminé yo el sábado.", en: "The report, Marta sent on Friday, and the presentation, I finished on Saturday." },
+    { es: "Lo de Marta se resolvió el lunes, pero lo de la oficina nueva sigue sin fecha.", en: "The Marta business was settled on Monday, but the new office business still has no date." }
+  ],
+  rule: "Take six plain sentences of your own. Rewrite each three ways, and say in one line what question each version answers.\nWhat comes first is treated as known; what comes last is the news.\nThe devices:\nPut the thing first and repeat it: *El informe lo envió Marta.* (And the report?)\nFrame one piece with *ser*: *Fue Marta quien...* (who), *Fue el viernes cuando...* (when), *Lo que envió fue...* (what).\nPick up a shared matter: *Lo de Marta se resolvió.*\nCushion an explanation: *Lo que pasa es que...*\nEvery version is a choice about what your listener already knows.",
+  readAndPick: [
+    { q: "Which question does this version answer?", es: "Fue Marta quien envió el informe.",
+      options: ["When it happened", "Who did it", "What"], answer: 1,
+      why: "*Fue Marta quien* puts the person under the spotlight: it answers who." },
+    { q: "What is treated as known here?", es: "El informe lo envió Marta el viernes.",
+      options: ["The report", "Marta herself", "Friday"], answer: 0,
+      why: "What comes first, repeated by *lo*, is the known topic: the report." },
+    { q: "What is the news in this version?", es: "Fue el viernes cuando Marta envió el informe.",
+      options: ["The report", "Marta", "The day"], answer: 2,
+      why: "*Fue el viernes cuando* spotlights the day; the rest is already known." },
+    { q: "What does *lo de Marta* point at?", es: "Lo de Marta se resolvió el lunes.",
+      options: ["A matter both know about", "Marta's new house in Chía", "News"], answer: 0,
+      why: "*Lo de* picks up a known matter without retelling it." },
+    { q: "What is missing from *el informe envió Marta*?", es: "El informe lo envió Marta.",
+      options: ["Nothing at all", "The repeated *lo*", "A question mark at the end"], answer: 1,
+      why: "Put the thing first and you must repeat it before the verb: *lo envió*." }
+  ],
+  yourTurn: [
+    { en: "It was Marta who sent the report.", es: "Fue Marta quien envió el informe.", accept: ["Fue Marta la que envió el informe."] },
+    { en: "The report, Marta sent it.", es: "El informe lo envió Marta.", accept: [] },
+    { en: "It was on Friday that she sent it.", es: "Fue el viernes cuando lo envió.", accept: [] },
+    { en: "What she sent was the report.", es: "Lo que envió fue el informe.", accept: [] }
+  ],
+  translate: [
+    { en: "The Marta business was settled on Friday.", es: "Lo de Marta se resolvió el viernes.", accept: [] },
+    { en: "It was my brother who paid the bill.", es: "Fue mi hermano quien pagó la cuenta.", accept: ["Fue mi hermano el que pagó la cuenta."] },
+    { en: "The cake, my grandmother made it.", es: "La torta la hizo mi abuela.", accept: [] },
+    { en: "What I need is a week off.", es: "Lo que necesito es una semana de descanso.", accept: ["Lo que necesito es una semana [de descanso|libre|de vacaciones]."] },
+    { en: "Marta didn't send the report; it was Pablo who sent it. And the slides, I made them. The thing is, nobody asked me.", es: "Marta no envió el informe; fue Pablo quien lo envió. Y las diapositivas las hice yo. Lo que pasa es que nadie me preguntó.", accept: ["Marta no envió el informe[;|,|.] fue Pablo [quien|el que] lo envió. Y las diapositivas las hice yo. Lo que pasa es que nadie me preguntó."] },
+    { en: "It was here that it all started.", es: "Fue aquí donde todo empezó.", accept: ["Fue acá donde todo empezó.", "Aquí fue donde todo empezó."] }
+  ],
+  register: [
+    { es: "Eso lo hice yo, ¿oyó?", en: "I did that, you hear?", when: "in Colombia, claiming credit among friends" },
+    { es: "Fue Marta quien lo envió.", en: "It was Marta who sent it.", when: "anywhere, setting the record straight" },
+    { es: "En cuanto al informe, lo envió Marta.", en: "As for the report, Marta sent it.", when: "in a meeting, taking up a point" },
+    { es: "Fue la gerencia la que tomó la decisión.", en: "It was management that took the decision.", when: "in a formal statement or a letter" }
+  ],
+  personal: {
+    prompt: "Take one plain sentence of your own about something that happened this week. Rewrite it three ways, each answering a different question: who, when, and what about the thing itself.",
+    constraints: [
+      { type: "regex", pattern: "(fue|es|fueron) [a-záéíóúñ ]+ (quien|quienes|el que|la que|los que|las que)", label: "who, spotlighted: *fue Marta quien...*" },
+      { type: "regex", pattern: "(fue|es) [a-záéíóúñ ]+ (cuando|donde)", label: "when or where, spotlighted: *fue el viernes cuando...*" },
+      { type: "regex", pattern: "(^|[.!?] )(el|la|los|las) [a-záéíóúñ]+( [a-záéíóúñ]+)? (lo|la|los|las) [a-záéíóúñ]+", label: "the thing first, repeated: *el informe lo envió Marta*" }
+    ],
+    model: "Mi hermana compró la torta el sábado. Fue mi hermana quien compró la torta. Fue el sábado cuando la compró. La torta la compró mi hermana, no yo."
+  },
+  pitfalls: [
+    "Fronting without the repeat, *el informe envió Marta*, isn't Spanish: *el informe lo envió Marta*.",
+    "*Fue Marta que lo envió* is common in speech; in writing, *fue Marta quien* or *la que*.",
+    "Each version answers a different question; choose the one your listener is actually asking."
+  ]
+},
+
+/* ---- unit b2-u51 · Describing precisely ---------------------------------- */
+
+"nt-consistencia-resistencia-b2": {
+  source: "merged",
+  hook: {
+    line: "An online shop lists a backpack and a thermos. Every line tells you how the thing behaves: what it resists, which parts bend, which part breaks, and a customer who wants to know exactly how waterproof it is.",
+    es: "Morral de viaje, modelo Páramo: tela resistente al agua y al desgaste.\nLa base es rígida, pero los lados son flexibles y se doblan fácilmente.\nTermo de acero: resiste golpes y temperaturas extremas.\nLa tapa es de vidrio, así que es más frágil: no lo deje caer.\nPregunta de un cliente: ¿Es a prueba de agua o solo resistente a la lluvia?",
+    en: "Travel backpack, Páramo model: fabric resistant to water and wear.\nThe base is rigid, but the sides are flexible and fold easily.\nSteel thermos: withstands knocks and extreme temperatures.\nThe lid is glass, so it's more fragile: don't drop it.\nA customer's question: Is it waterproof or just rain-resistant?"
+  },
+  examples: [
+    { es: "La principal ventaja de este reloj es su resistencia al agua: aguanta hasta cincuenta metros.", en: "The main advantage of this watch is its water resistance: it holds up to fifty metres." },
+    { es: "La salsa quedó demasiado espesa, así que le eché un poco de agua para que quedara más fluida.", en: "The sauce turned out too thick, so I added a little water to make it runnier." },
+    { es: "El puente resistió el terremoto sin daños, gracias a la flexibilidad de su estructura de acero.", en: "The bridge withstood the earthquake undamaged, thanks to the flexibility of its steel frame." }
+  ],
+  rule: "Name the quality, or describe the thing: *la dureza*, *duro*; *la fragilidad*, *frágil*; *la flexibilidad*, *flexible*; *la rigidez*, *rígido*; *la elasticidad*, *elástico*.\nResistant always says to what, with *a*: *resistente al agua*, *resistencia al calor*. *A* + *el* becomes *al*. A bare *es resistente* leaves the reader asking: to what?\nThe verb *resistir* takes the threat straight, with no *a*: *resiste el calor*. In Colombia *aguantar* is the everyday twin: *aguanta el agua*.\nProof against: *a prueba de*: *a prueba de agua*, *a prueba de balas*.\nFor liquids and mixtures, a scale: *espeso* or *denso* (thick), *fluido* (runny). For solids, *duro* and *blando*.",
+  readAndPick: [
+    { q: "What is the backpack's fabric good against?", es: "Tela resistente al agua y al desgaste.",
+      options: ["Water and wear", "Heat and nothing else", "Nothing"], answer: 0,
+      why: "*Resistente a* names what it holds out against: water and wear." },
+    { q: "Which part bends?", es: "La base es rígida, pero los lados son flexibles.",
+      options: ["The base", "The sides", "Neither of them"], answer: 1,
+      why: "*Rígida* doesn't bend; *flexibles* do." },
+    { q: "Why be careful with the lid?", es: "La tapa es de vidrio, así que es más frágil.",
+      options: ["It's heavy", "It's hot to touch", "It breaks easily"], answer: 2,
+      why: "*Frágil* breaks easily; glass is the weak point." },
+    { q: "What is the customer asking?", es: "¿Es a prueba de agua o solo resistente a la lluvia?",
+      options: ["Its price, in pesos", "How fully it keeps water out", "What colours it comes in, if several"], answer: 1,
+      why: "*A prueba de agua* is fully proof; *resistente a la lluvia* only holds out against rain." },
+    { q: "How did the sauce turn out?", es: "La salsa quedó demasiado espesa.",
+      options: ["Too thick", "Too runny", "Too salty"], answer: 0,
+      why: "*Espeso* is thick; runny would be *fluido* or *aguado*." },
+    { q: "What did the bridge do?", es: "El puente resistió el terremoto sin daños.",
+      options: ["It collapsed in the end", "It held up fine", "It shook"], answer: 1,
+      why: "*Resistir* takes the threat straight: it withstood the earthquake." }
+  ],
+  yourTurn: [
+    { en: "It's water-resistant.", es: "Es resistente al agua.", accept: [] },
+    { en: "This material withstands extreme temperatures.", es: "Este material resiste temperaturas extremas.", accept: ["Este material [resiste|aguanta] temperaturas extremas."] },
+    { en: "Glass is very fragile.", es: "El vidrio es muy frágil.", accept: [] },
+    { en: "The fabric has good stretch.", es: "La tela tiene buena elasticidad.", accept: [] },
+    { en: "The sauce turned out too thick.", es: "La salsa quedó demasiado espesa.", accept: ["La salsa quedó muy espesa."] }
+  ],
+  translate: [
+    { en: "The main feature of this model is its water resistance.", es: "La principal característica de este modelo es su resistencia al agua.", accept: ["La característica principal de este modelo es su resistencia al agua."] },
+    { en: "The diamond's hardness makes it almost indestructible.", es: "La dureza del diamante lo hace casi indestructible.", accept: [] },
+    { en: "Is it waterproof?", es: "¿Es a prueba de agua?", accept: ["¿Es impermeable?"] },
+    { en: "It's a dense oil; it hardly spills.", es: "Es un aceite denso; casi no se derrama.", accept: ["Es un aceite [denso|espeso][;|,|.] casi no se [derrama|riega]."] },
+    { en: "The base is rigid, but the sides are flexible. The fabric is resistant to rain. It's not waterproof, though.", es: "La base es rígida, pero los lados son flexibles. La tela es resistente a la lluvia. Eso sí, no es a prueba de agua.", accept: ["La base es rígida, pero los lados son flexibles. La tela es resistente a la lluvia. [Eso sí|Pero], no es a prueba de agua."] },
+    { en: "The bridge withstood the earthquake.", es: "El puente resistió el terremoto.", accept: ["El puente [resistió|aguantó] el terremoto."] }
+  ],
+  register: [
+    { es: "Eso aguanta lo que le echen.", en: "That can take anything you throw at it.", when: "in Colombia, praising something tough" },
+    { es: "Es muy resistente.", en: "It's very tough.", when: "anywhere, a quick verdict" },
+    { es: "El producto es resistente al agua y a los golpes.", en: "The product is resistant to water and knocks.", when: "in a product description or a listing" },
+    { es: "El material presenta una alta resistencia a la tracción.", en: "The material shows high tensile strength.", when: "in a technical sheet or engineering report" }
+  ],
+  personal: {
+    prompt: "Describe something you own that has to be tough: a bag, a phone case, a pair of boots. Say what it resists, which part is rigid or flexible, and what it can't take.",
+    constraints: [
+      { type: "regex", pattern: "resistentes? a(l)? |resistencia a(l)? |a prueba de", label: "resistant to what: *resistente al agua*" },
+      { type: "containsAny", words: ["rígido", "rígida", "flexible", "flexibles", "frágil", "duro", "dura", "blando", "blanda", "elástico", "elástica"], label: "a quality: *rígido*, *flexible* or *frágil*" },
+      { type: "regex", pattern: "resist(e|en|ió|io)|aguant(a|an|ó|o)", label: "the verb: *resiste el calor* or *aguanta*" }
+    ],
+    model: "Mis botas de montaña son resistentes al agua y al barro. La suela es rígida, pero la parte de arriba es flexible. Aguantan muy bien el frío del páramo, aunque no resisten el fuego."
+  },
+  pitfalls: [
+    "*Es resistente* alone leaves the reader asking to what: *resistente al agua*.",
+    "*Resiste al calor* adds an *a* the verb doesn't take: *resiste el calor*.",
+    "*Espeso* and *fluido* are for liquids; for solids, *duro* and *blando*."
+  ]
+},
+
+"nt-textura-acabado-b2": {
+  source: "merged",
+  hook: {
+    line: "A furniture restorer posts the before and after of an old table. The post is all about touch and finish: how the wood felt, what it took, and what covers it now.",
+    es: "Así llegó esta mesa: la madera estaba áspera y llena de manchas.\nPrimero la lijamos hasta dejarla lisa y suave al tacto.\nDespués le dimos dos manos de pintura blanca y una capa de barniz mate.\nLas manijas están bañadas en bronce, y no se oxidan.\nToquen la superficie: parece seda, pero es madera de pino.",
+    en: "This is how this table arrived: the wood was rough and full of stains.\nFirst we sanded it until it was smooth and soft to the touch.\nThen we gave it two coats of white paint and a layer of matte varnish.\nThe handles are bronze-plated, and they don't rust.\nTouch the surface: it feels like silk, but it's pine."
+  },
+  examples: [
+    { es: "La camisa salió toda arrugada de la maleta, así que tuve que plancharla en el hotel.", en: "The shirt came out of the suitcase all creased, so I had to iron it at the hotel." },
+    { es: "Le dieron dos manos de pintura a la fachada, pero la humedad ya está saliendo otra vez.", en: "They gave the façade two coats of paint, but the damp is already coming through again." },
+    { es: "Esta tela es suave al tacto, aunque parece áspera cuando la miras de lejos.", en: "This fabric is soft to the touch, although it looks rough when you see it from a distance." }
+  ],
+  rule: "How a surface feels: *áspero* (rough), *rugoso* (bumpy), *liso* (smooth), *suave* (soft), *sedoso* (silky), *pegajoso* (sticky), *peludo* (furry), *arrugado* (creased).\nAdd *al tacto* to say it's about touch, not looks: *suave al tacto*. The describing word agrees; *al tacto* never changes: *la madera es áspera al tacto*.\nA coat of paint is *una mano*, never *un abrigo*: *dos manos de pintura*. Any other layer is *una capa*: *una capa de barniz*.\nFinishes: *mate* or *brillante*, *bañado en oro* (gold-plated), *plastificar* (laminate), *impermeabilizar* (waterproof).",
+  readAndPick: [
+    { q: "How did the wood feel at first?", es: "La madera estaba áspera y llena de manchas.",
+      options: ["Smooth and silky", "Rough to the touch", "Sticky with old glue"], answer: 1,
+      why: "*Áspero* is rough; smooth would be *liso*." },
+    { q: "How many coats of paint did it get?", es: "Le dimos dos manos de pintura blanca.",
+      options: ["Two coats of it", "Two people", "Two different colours"], answer: 0,
+      why: "*Una mano de pintura* is one coat; *dos manos*, two." },
+    { q: "What does *suave al tacto* tell you?", es: "La dejamos lisa y suave al tacto.",
+      options: ["How it looks from afar", "Smell", "How it feels"], answer: 2,
+      why: "*Al tacto* says the judgement comes from touch, not from looking." },
+    { q: "What are the handles?", es: "Las manijas están bañadas en bronce.",
+      options: ["Solid bronze all through", "Coated in bronze", "Painted"], answer: 1,
+      why: "*Bañado en bronce* is plated: a thin metal coat over something else." },
+    { q: "What finish does the varnish give?", es: "Una capa de barniz mate.",
+      options: ["Matte", "Glossy and shiny", "Wet"], answer: 0,
+      why: "*Mate* has no shine; the opposite is *brillante*." },
+    { q: "What does the shirt need?", es: "La camisa salió toda arrugada de la maleta.",
+      options: ["An iron", "A wash in cold water", "Sewing"], answer: 0,
+      why: "*Arrugada* is creased, so it needs ironing." }
+  ],
+  yourTurn: [
+    { en: "The fabric was all creased.", es: "La tela estaba toda arrugada.", accept: [] },
+    { en: "They gave the façade a coat of paint.", es: "Le dieron una mano de pintura a la fachada.", accept: ["Le dieron a la fachada una mano de pintura."] },
+    { en: "It's soft to the touch.", es: "Es suave al tacto.", accept: [] },
+    { en: "The ring is gold-plated.", es: "El anillo está bañado en oro.", accept: [] },
+    { en: "They laminated the ID card so it would last longer.", es: "Plastificaron el carné para que durara más.", accept: ["[Plastificaron|Laminaron] el carné para que durara más."] }
+  ],
+  translate: [
+    { en: "The wood is rough to the touch.", es: "La madera es áspera al tacto.", accept: [] },
+    { en: "He touched the fabric to check the texture.", es: "Tocó la tela para comprobar la textura.", accept: ["Tocó la tela para [comprobar|revisar|sentir] la textura."] },
+    { en: "They waterproofed the roof before the rainy season.", es: "Impermeabilizaron el techo antes de la temporada de lluvias.", accept: [] },
+    { en: "The medal is silver-plated.", es: "La medalla está bañada en plata.", accept: [] },
+    { en: "First we sanded the table until it was smooth. Then we gave it two coats of paint. Finally, a layer of matte varnish.", es: "Primero lijamos la mesa hasta dejarla lisa. Después le dimos dos manos de pintura. Por último, una capa de barniz mate.", accept: ["Primero lijamos la mesa hasta dejarla lisa. [Después|Luego] le dimos dos manos de pintura. [Por último|Al final|Finalmente], una capa de barniz mate."] },
+    { en: "It's a very furry animal.", es: "Es un animal muy peludo.", accept: [] }
+  ],
+  register: [
+    { es: "¡Qué tela tan rica!", en: "What lovely fabric!", when: "in Colombia, about something that feels nice" },
+    { es: "Es suave y no se arruga.", en: "It's soft and doesn't crease.", when: "anywhere, describing clothes" },
+    { es: "Acabado mate, resistente a la humedad.", en: "Matte finish, moisture-resistant.", when: "on a paint tin or a product label" },
+    { es: "La superficie presenta una textura rugosa.", en: "The surface has a rough texture.", when: "in a technical or museum description" }
+  ],
+  personal: {
+    prompt: "Describe a piece of furniture or clothing you've fixed, painted or looked after: how it felt before and after, and what finish it has now.",
+    constraints: [
+      { type: "containsAny", words: ["áspero", "áspera", "liso", "lisa", "suave", "rugoso", "rugosa", "sedoso", "sedosa", "pegajoso", "pegajosa", "arrugado", "arrugada"], label: "a texture: *áspero*, *liso* or *suave*" },
+      { type: "containsAny", words: ["al tacto"], label: "touch, not looks: *al tacto*" },
+      { type: "regex", pattern: "(una|dos|tres) manos? de|una capa de|capas de|bañad[oa]", label: "a finish: *una mano de pintura* or *una capa de*" }
+    ],
+    model: "Mi abuela me regaló una silla vieja de madera. Estaba áspera al tacto y tenía la pintura pelada. La lijé un fin de semana entero hasta dejarla lisa. Después le di dos manos de pintura verde y una capa de barniz brillante."
+  },
+  pitfalls: [
+    "A coat of paint is *una mano*, never *un abrigo*: *dos manos de pintura*.",
+    "*Suave al tacto* is about touch; for how it looks, *se ve suave*.",
+    "*Impermeabilizar* keeps water out; *plastificar* covers paper in plastic. Different jobs."
+  ]
+},
+
+"nt-materia-b2": {
+  source: "merged",
+  hook: {
+    line: "A craft stall at a market in Ráquira labels everything it sells. Each card says what the thing is made of, or what it contains, and the wording changes with the kind of thing.",
+    es: "Olla de barro hecha a mano en Ráquira, Boyacá.\nEstas tazas son de cerámica, no de plástico, y aguantan el microondas.\nEl jabón artesanal contiene miel y avena, sin químicos.\nLa ruana está fabricada con lana virgen de oveja.\nLos aretes son de cobre, y la cadena es de plata.",
+    en: "Clay pot handmade in Ráquira, Boyacá.\nThese mugs are ceramic, not plastic, and they can go in the microwave.\nThe handmade soap contains honey and oats, no chemicals.\nThe ruana is made of pure sheep's wool.\nThe earrings are copper, and the chain is silver."
+  },
+  examples: [
+    { es: "La estatua de la plaza es de bronce, pero la base está hecha de mármol traído de Italia.", en: "The statue in the square is bronze, but the base is made of marble brought from Italy." },
+    { es: "Esta crema contiene manzanilla y avena, así que se puede usar en la piel de los bebés.", en: "This cream contains chamomile and oats, so it can be used on babies' skin." },
+    { es: "La chaqueta está fabricada con una mezcla de algodón y poliéster, y viene rellena de plumas.", en: "The jacket is made from a blend of cotton and polyester, and comes filled with feathers." }
+  ],
+  rule: "What a thing is made of: *ser de*, with no article: *es de cuero*, *son de algodón*. Right after the thing too: *un suéter de lana*, *una olla de barro*. To ask: *¿De qué es?*\nOn a label or in a catalogue: *estar fabricado con* or *hecho de*. *Fabricado* agrees: *fabricada*, *fabricados*.\nWhat a food, cream or soap has inside: *contener*: *contiene miel*. A jacket doesn't *contener* polyester.\nStuffed with: *relleno de*: *rellena de plumas*.\nMaterials: *barro*, *cerámica*, *ladrillo*, *cemento*, *mármol*, *bronce*, *cobre*, *plomo*. *La materia prima* is the raw material before processing.\nIn Colombia *plata* is silver and money.",
+  readAndPick: [
+    { q: "What are the mugs made of?", es: "Estas tazas son de cerámica, no de plástico.",
+      options: ["Hard plastic", "Ceramic", "Glass"], answer: 1,
+      why: "*Ser de* + the material, with no article: *son de cerámica*." },
+    { q: "What is in the soap?", es: "El jabón artesanal contiene miel y avena.",
+      options: ["Honey and oats", "Chemicals", "Wax and nothing else"], answer: 0,
+      why: "*Contener* names what a substance has inside it." },
+    { q: "Why *fabricada* and not *fabricado*?", es: "La ruana está fabricada con lana virgen.",
+      options: ["It matches *lana*", "It's always that way", "It matches *ruana*"], answer: 2,
+      why: "*Fabricado* agrees with the thing made: *la ruana*, so *fabricada*." },
+    { q: "What could *plata* mean on this stall?", es: "La cadena es de plata.",
+      options: ["Silver", "Money", "Plastic"], answer: 0,
+      why: "*De plata* is the metal here; in Colombia *plata* is also money." },
+    { q: "What is the pot made of?", es: "Olla de barro hecha a mano en Ráquira.",
+      options: ["Cast iron", "Clay", "Tin"], answer: 1,
+      why: "*Una olla de barro* is a clay pot: *de* plus the material, straight after the thing." },
+    { q: "What is the statue's base made of?", es: "La estatua es de bronce, pero la base está hecha de mármol.",
+      options: ["Bronze too", "Tin", "Marble"], answer: 2,
+      why: "*Está hecha de mármol*: the base is a different material from the statue." }
+  ],
+  yourTurn: [
+    { en: "The statue is bronze.", es: "La estatua es de bronce.", accept: [] },
+    { en: "This cream contains chamomile and oats.", es: "Esta crema contiene manzanilla y avena.", accept: [] },
+    { en: "What's this bag made of?", es: "¿De qué es este bolso?", accept: ["¿De qué está hecho este bolso?", "¿De qué material es este bolso?"] },
+    { en: "It's made from a blend of cotton and lycra.", es: "Está fabricado con una mezcla de algodón y licra.", accept: ["Está [fabricado|hecho] con una mezcla de algodón y licra.", "Está hecho de una mezcla de algodón y licra."] },
+    { en: "The duvet is filled with feathers.", es: "El edredón está relleno de plumas.", accept: ["El edredón está relleno con plumas."] }
+  ],
+  translate: [
+    { en: "The cables are copper.", es: "Los cables son de cobre.", accept: [] },
+    { en: "This piece is ceramic, not plastic.", es: "Esta pieza es de cerámica, no de plástico.", accept: [] },
+    { en: "The soap contains glycerine.", es: "El jabón contiene glicerina.", accept: [] },
+    { en: "A wool sweater and leather boots.", es: "Un suéter de lana y unas botas de cuero.", accept: ["Un saco de lana y unas botas de cuero."] },
+    { en: "The pot is made of clay. The mugs are ceramic. And the soap contains honey, not chemicals.", es: "La olla es de barro. Las tazas son de cerámica. Y el jabón contiene miel, no químicos.", accept: ["La olla es de barro. Las tazas son de cerámica. Y el jabón contiene miel, no [químicos|productos químicos]."] },
+    { en: "Cotton is the raw material for this fabric.", es: "El algodón es la materia prima de esta tela.", accept: [] }
+  ],
+  register: [
+    { es: "Es de cuero cuero, no sintético.", en: "It's real leather, not synthetic.", when: "a seller in a Colombian market, insisting" },
+    { es: "Es de algodón.", en: "It's cotton.", when: "anywhere, answering what it's made of" },
+    { es: "Fabricado con materiales reciclados.", en: "Made with recycled materials.", when: "on a label or on packaging" },
+    { es: "Composición: 80 % algodón, 20 % poliéster.", en: "Composition: 80% cotton, 20% polyester.", when: "on a clothing label" }
+  ],
+  personal: {
+    prompt: "Describe three things in your home: what each is made of, what one of them contains, and how the label on one of them puts it.",
+    constraints: [
+      { type: "regex", pattern: "(es|son) de [a-záéíóúñ]+", label: "made of: *es de madera*" },
+      { type: "regex", pattern: "contien(e|en)", label: "what's inside: *contiene*" },
+      { type: "regex", pattern: "(fabricad|hech)[oa]s? (con|de)|rellen[oa]s? de", label: "label talk: *fabricado con* or *relleno de*" }
+    ],
+    model: "Mi mesa de comedor es de madera de cedro. El cojín del sofá está relleno de espuma. Mi champú contiene romero, y la etiqueta dice que está fabricado con ingredientes naturales."
+  },
+  pitfalls: [
+    "*La chaqueta contiene poliéster* sounds like a food label: for objects, *es de* or *está fabricada con*.",
+    "*Es de un algodón* adds an article: *es de algodón*.",
+    "*Un suéter lana* drops the *de*: *un suéter de lana*."
+  ]
+},
+
+"nt-formas-figuras-b2": {
+  source: "merged",
+  hook: {
+    line: "A listing for a country house near Bogotá sells it on its shapes: the plot, the pool, the ceiling, the garden and a lake that looks like something from above.",
+    es: "Finca en venta en Anapoima: lote de forma irregular, con un frente de cuarenta metros.\nLa piscina tiene forma de riñón y está rodeada de palmas.\nEl techo de la sala forma un arco de madera.\nEl jardín es rectangular, y el camino de entrada hace una curva suave hasta la casa.\nDesde arriba, el lago del fondo tiene forma de corazón.",
+    en: "Country house for sale in Anapoima: irregularly shaped plot, with a forty-metre frontage.\nThe pool is kidney-shaped and surrounded by palms.\nThe living room ceiling forms a wooden arch.\nThe garden is rectangular, and the drive makes a gentle curve up to the house.\nFrom above, the lake at the back is heart-shaped."
+  },
+  examples: [
+    { es: "La isla tiene forma de media luna, y en el centro hay una playa pequeña de arena blanca.", en: "The island is crescent-shaped, and in the middle there's a small white-sand beach." },
+    { es: "Compramos una mesa de forma rectangular para el comedor, porque la redonda no cabía en la esquina.", en: "We bought a rectangular table for the dining room, because the round one didn't fit in the corner." },
+    { es: "El ruedo de la falda quedó desigual, así que la costurera tuvo que coserlo otra vez.", en: "The hem of the skirt came out uneven, so the dressmaker had to sew it again." }
+  ],
+  rule: "English says heart-shaped. Spanish says a thing has a shape: *tiene forma de corazón*. With a thing you can picture, use *de*: *forma de estrella*, *forma de huevo*, *forma de media luna*.\nWith a describing word, no *de*: *forma rectangular*, *forma redonda*, *forma irregular*. Or say it straight: *es circular*, *es cuadrado*.\nTo ask: *¿Qué forma tiene?*\nFor lines and outlines: *una curva*, *un arco*, *una onda* (a wave), *el perfil* (the outline). *Forma un arco*: it makes an arch.\n*Irregular* and *desigual* have no fixed pattern; *desigual* also means uneven, like a hem: *el ruedo quedó desigual*.",
+  readAndPick: [
+    { q: "What shape is the plot of land?", es: "Lote de forma irregular, con un frente de cuarenta metros.",
+      options: ["A perfect square", "No regular shape", "Round like a coin"], answer: 1,
+      why: "*Forma irregular* has no fixed geometric pattern." },
+    { q: "What does the pool look like?", es: "La piscina tiene forma de riñón.",
+      options: ["A kidney", "A heart", "A rectangle"], answer: 0,
+      why: "*Tener forma de* + a thing you can picture: a kidney." },
+    { q: "What does the ceiling do?", es: "El techo de la sala forma un arco de madera.",
+      options: ["Lies perfectly flat and level", "Waves", "Curves into an arch"], answer: 2,
+      why: "*Forma un arco*: it makes an arch." },
+    { q: "What shape is the garden?", es: "El jardín es rectangular.",
+      options: ["Round, like a big plate", "Four straight sides", "Heart-shaped"], answer: 1,
+      why: "*Rectangular* has four straight sides and right angles." },
+    { q: "What went wrong with the skirt?", es: "El ruedo de la falda quedó desigual.",
+      options: ["The hem is uneven", "The colour faded badly", "Too long"], answer: 0,
+      why: "*Desigual* is uneven; *el ruedo* is the Colombian word for the hem." }
+  ],
+  yourTurn: [
+    { en: "The lake has an irregular shape.", es: "El lago tiene una forma irregular.", accept: ["El lago tiene forma irregular."] },
+    { en: "The pool is kidney-shaped.", es: "La piscina tiene forma de riñón.", accept: [] },
+    { en: "What shape is it?", es: "¿Qué forma tiene?", accept: [] },
+    { en: "The bridge forms a perfect arch.", es: "El puente forma un arco perfecto.", accept: [] },
+    { en: "The island is crescent-shaped.", es: "La isla tiene forma de media luna.", accept: [] }
+  ],
+  translate: [
+    { en: "It's a circular table.", es: "Es una mesa circular.", accept: ["Es una mesa redonda."] },
+    { en: "The ceiling forms a gentle curve.", es: "El techo forma una curva suave.", accept: [] },
+    { en: "The hem of the skirt is uneven.", es: "El ruedo de la falda es desigual.", accept: ["El ruedo de la falda [está|quedó] desigual."] },
+    { en: "The biscuits are star-shaped.", es: "Las galletas tienen forma de estrella.", accept: [] },
+    { en: "The plot has an irregular shape. The pool is kidney-shaped. And from above, the lake looks like a heart.", es: "El lote tiene una forma irregular. La piscina tiene forma de riñón. Y desde arriba, el lago parece un corazón.", accept: ["El lote tiene [una forma irregular|forma irregular]. La piscina tiene forma de riñón. Y desde arriba, el lago [parece un corazón|tiene forma de corazón]."] },
+    { en: "He folded the corner of the paper carefully.", es: "Dobló la esquina del papel con cuidado.", accept: ["Dobló con cuidado la esquina del papel."] }
+  ],
+  register: [
+    { es: "Es como una bolita.", en: "It's like a little ball.", when: "chatting, describing something small and round" },
+    { es: "Tiene forma de corazón.", en: "It's heart-shaped.", when: "anywhere, a clear description" },
+    { es: "Lote de forma irregular, de 1.200 metros cuadrados.", en: "Irregularly shaped plot of 1,200 square metres.", when: "in a property listing" },
+    { es: "La figura presenta un perfil ondulado.", en: "The figure has a wavy outline.", when: "in a technical or art description" }
+  ],
+  personal: {
+    prompt: "Describe the shapes of three things you can see from where you are: one with *tiene forma de*, one with a shape word like *rectangular*, and one curve or arch.",
+    constraints: [
+      { type: "regex", pattern: "forma de [a-záéíóúñ]+", label: "compared to a thing: *tiene forma de corazón*" },
+      { type: "regex", pattern: "(forma |es |son )(rectangular|redond[oa]|circular|cuadrad[oa]|irregular|ovalad[oa]|triangular)", label: "a shape word: *forma rectangular*" },
+      { type: "containsAny", words: ["curva", "arco", "onda", "ondulad", "curvo"], label: "a line: *una curva* or *un arco*" }
+    ],
+    model: "La lámpara de mi cuarto tiene forma de pera. La ventana es rectangular y da a la calle. Encima de la puerta, la pared forma un arco pequeño."
+  },
+  pitfalls: [
+    "*Es una piscina riñón* isn't Spanish: *tiene forma de riñón*.",
+    "*Forma de rectangular* adds a *de*: with a describing word, *forma rectangular*.",
+    "*El bajo de la falda* is Spain; in Colombia, *el ruedo*."
+  ]
+},
+
+"nt-peso-b2": {
+  source: "merged",
+  hook: {
+    line: "A family moves house, and the group chat is all about weight: the truck's load, the fridge, the boxes someone weighed, what to unload first, and a phone that died.",
+    es: "Mamá: El camión de la mudanza llega a las ocho. Lleva una carga de casi dos toneladas.\nPapá: La nevera pesa como ochenta kilos; no la cargues solo.\nHijo: Ya pesé las cajas de libros: cada una pesa unos veinte kilos.\nMamá: Descarguen primero las camas, por favor.\nHijo: Y se me descargó el celular, así que no me llamen.",
+    en: "Mom: The moving truck arrives at eight. It's carrying a load of almost two tonnes.\nDad: The fridge weighs about eighty kilos; don't carry it on your own.\nSon: I've already weighed the boxes of books: each one weighs about twenty kilos.\nMom: Unload the beds first, please.\nSon: And my phone died, so don't call me."
+  },
+  examples: [
+    { es: "Me peso todos los lunes por la mañana, antes de desayunar, en la báscula del baño.", en: "I weigh myself every Monday morning, before breakfast, on the bathroom scale." },
+    { es: "El peso exacto del paquete es 4,3 kilos, pero en la factura pusieron el peso aproximado.", en: "The exact weight of the parcel is 4.3 kilos, but on the invoice they put the approximate weight." },
+    { es: "Se demoraron dos horas descargando el camión, porque la carga venía mal acomodada.", en: "It took them two hours to unload the truck, because the load had been badly packed." }
+  ],
+  rule: "A thing weighs an amount: *pesa 23 kilos*. Never *es 23 kilos*. To ask: *¿Cuánto pesa?*\n*Pesar* is also putting something on the scale: *pesamos el paquete*. Yourself, with *me*, *te*, *se*: *me peso los lunes*.\nBig weights: *una tonelada* (1,000 kilos); *una carga* is a load, what one truck or animal carries.\n*Peso exacto* is for a contract or a scale; *peso aproximado* is a working guess.\n*Cargar* is to load, to carry and to charge; *descargar* is to unload, to download, and a battery dying: *se me descargó el celular*, where the phone is the subject and you're who it happened to.",
+  readAndPick: [
+    { q: "How heavy is the fridge?", es: "La nevera pesa como ochenta kilos.",
+      options: ["Around eighty kilos", "Exactly eight kilos, no more", "Eighty tonnes"], answer: 0,
+      why: "*Pesa como ochenta kilos*: about eighty, with a chatty *como*." },
+    { q: "What did the son do with the boxes?", es: "Ya pesé las cajas de libros.",
+      options: ["He carried them downstairs", "He weighed them", "Packed"], answer: 1,
+      why: "*Pesar* + a thing is putting it on the scale." },
+    { q: "What happened to his phone?", es: "Se me descargó el celular.",
+      options: ["He downloaded an app", "He lost it", "The battery died"], answer: 2,
+      why: "*Se me descargó*: the phone ran flat, and it happened to him." },
+    { q: "What does Mom want first?", es: "Descarguen primero las camas, por favor.",
+      options: ["Load the beds on", "Unload the beds", "Sell"], answer: 1,
+      why: "*Descargar* takes things off the truck; *cargar* puts them on." },
+    { q: "Who does *me peso* weigh?", es: "Me peso todos los lunes por la mañana.",
+      options: ["Her baby boy", "Herself", "Fruit"], answer: 1,
+      why: "*Pesarse* with *me* is weighing yourself." },
+    { q: "Which weight goes in a contract?", es: "El peso exacto del paquete es 4,3 kilos.",
+      options: ["The exact one", "The rough guess", "Neither"], answer: 0,
+      why: "*El peso exacto* is the scale's figure; *el aproximado* is a working guess." }
+  ],
+  yourTurn: [
+    { en: "How much does the suitcase weigh?", es: "¿Cuánto pesa la maleta?", accept: [] },
+    { en: "I weigh myself once a week.", es: "Me peso una vez a la semana.", accept: ["Me peso una vez por semana."] },
+    { en: "My phone died.", es: "Se me descargó el celular.", accept: [] },
+    { en: "It took them two hours to unload the truck.", es: "Se demoraron dos horas en descargar el camión.", accept: ["Se demoraron dos horas descargando el camión.", "Tardaron dos horas en descargar el camión."] },
+    { en: "The box weighs twenty kilos.", es: "La caja pesa veinte kilos.", accept: [] }
+  ],
+  translate: [
+    { en: "The ship carries thousands of tonnes of grain.", es: "El barco transporta miles de toneladas de grano.", accept: ["El barco [transporta|lleva] miles de toneladas de grano."] },
+    { en: "What is the approximate weight of the parcel?", es: "¿Cuál es el peso aproximado del paquete?", accept: [] },
+    { en: "Each truck carries a full load of wood.", es: "Cada camión lleva una carga completa de madera.", accept: [] },
+    { en: "I need to charge my phone.", es: "Necesito cargar el celular.", accept: ["Tengo que cargar el celular.", "Necesito cargar mi celular."] },
+    { en: "The suitcase weighs 26 kilos. The limit is 23. So I took out the shoes and weighed it again.", es: "La maleta pesa 26 kilos. El límite es de 23. Así que saqué los zapatos y la pesé otra vez.", accept: ["La maleta pesa 26 kilos. El límite es [de 23|23]. Así que saqué los zapatos y la [pesé otra vez|volví a pesar|pesé de nuevo]."] },
+    { en: "Download the app before the trip. (to a friend)", es: "Descarga la aplicación antes del viaje.", accept: ["Descárgate la aplicación antes del viaje.", "Descarga la app antes del viaje."] }
+  ],
+  register: [
+    { es: "Eso pesa una tonelada.", en: "That weighs a ton.", when: "anywhere, complaining about something heavy" },
+    { es: "¿Me ayudas a cargar esto?", en: "Can you help me carry this?", when: "in Colombia, asking a friend for a hand" },
+    { es: "El equipaje no debe superar los 23 kilos.", en: "Luggage must not exceed 23 kilos.", when: "on an airline website or ticket" },
+    { es: "Peso neto: 500 gramos.", en: "Net weight: 500 grams.", when: "on a food label" }
+  ],
+  personal: {
+    prompt: "Describe a move, a trip or a delivery: what weighed what, what you weighed, and what you loaded, unloaded or charged.",
+    constraints: [
+      { type: "regex", pattern: "pes(a|an|aba|aban|ó|o) (como |unos |unas |casi |más de |menos de )?[0-9a-záéíóúñ]+ (kilos|gramos|toneladas|libras)", label: "what it weighs: *pesa veinte kilos*" },
+      { type: "regex", pattern: "(me|te|se|nos) pes(o|as|a|amos|an|é|ó)|pes(é|amos|aron|ó) (el|la|los|las)", label: "weighing: *me peso* or *pesé la maleta*" },
+      { type: "regex", pattern: "(des)?carg", label: "loading or charging: *cargar* or *descargar*" }
+    ],
+    model: "Cuando me mudé a Cali, el camión llevaba una carga de casi una tonelada. Mi escritorio pesaba unos cuarenta kilos. Pesé las cajas en la báscula del edificio. Al final, se me descargó el celular y no pude llamar a nadie."
+  },
+  pitfalls: [
+    "*Es veinte kilos* isn't Spanish for weight: *pesa veinte kilos*.",
+    "*Peso cada lunes* weighs something else; for yourself, *me peso*.",
+    "In Colombia *el almacén* is a shop; a warehouse is *la bodega*."
+  ]
+},
+
+"nt-humedad-sequedad-b2": {
+  source: "merged",
+  hook: {
+    line: "A travel blogger compares two Colombias: rainy Bogotá, where she got soaked yesterday, and dry La Guajira, where water vanishes as soon as it falls.",
+    es: "En Bogotá el clima es húmedo casi todo el año, y por la tarde casi siempre llueve.\nAyer salí sin paraguas y llegué a la oficina empapada.\nLos zapatos todavía están mojados, y la chaqueta de cuero la tengo que llevar a lavar en seco.\nEn cambio, en La Guajira hay sequía: no llueve desde hace ocho meses.\nAllá el agua se evapora apenas cae, y hay que tomar mucha para no deshidratarse.",
+    en: "In Bogotá the climate is humid almost all year, and in the afternoon it almost always rains.\nYesterday I went out without an umbrella and got to the office soaked.\nMy shoes are still wet, and I have to take the leather jacket to be dry-cleaned.\nIn La Guajira, on the other hand, there's a drought: it hasn't rained for eight months.\nThere, water evaporates as soon as it falls, and you have to drink a lot so as not to get dehydrated."
+  },
+  examples: [
+    { es: "La toalla de microfibra absorbe muy bien el agua y se seca en menos de una hora.", en: "The microfibre towel absorbs water very well and dries in under an hour." },
+    { es: "El río se desbordó con las lluvias de abril e inundó las casas más cercanas a la orilla.", en: "The river overflowed with the April rains and flooded the houses nearest the bank." },
+    { es: "Humedece un poco la tela antes de plancharla, pero no la empapes, porque se mancha.", en: "Dampen the fabric a little before ironing it, but don't soak it, because it stains." }
+  ],
+  rule: "From least to most water: *húmedo* (damp, humid), *mojado* (wet), *empapado* (soaked through), *inundado* (flooded).\n*Húmedo* is a lasting condition, so *ser* for a climate: *el clima es húmedo*. *Mojado* is wet right now, so *estar*: *los zapatos están mojados*. They agree: *mojada*, *empapados*.\nThe verbs follow the scale: *humedecer* (dampen), *mojar*, *empapar*, *inundar*. *Absorber* takes water in; *evaporarse* makes it vanish; *secarse* dries.\nThe body: *sudar*, more formally *transpirar*; *hidratarse*, *deshidratarse*.\nNo rain for months is *una sequía*.\n*En seco* is a method without water: *lavar en seco*, dry-clean.",
+  readAndPick: [
+    { q: "What is Bogotá's climate like?", es: "En Bogotá el clima es húmedo casi todo el año.",
+      options: ["Humid", "Dry", "Freezing"], answer: 0,
+      why: "*Húmedo* with *ser* is a lasting condition of the climate." },
+    { q: "How wet did she get?", es: "Llegué a la oficina empapada.",
+      options: ["Just a little damp", "Soaked through", "Dry"], answer: 1,
+      why: "*Empapada* is soaked through, the top of the scale before flooded." },
+    { q: "Why *están* with *mojados*?", es: "Los zapatos todavía están mojados.",
+      options: ["It's what shoes are like", "Habit", "Wet for now"], answer: 2,
+      why: "*Mojado* is wet right now, a passing state, so *estar*." },
+    { q: "What does *lavar en seco* mean?", es: "La chaqueta la tengo que llevar a lavar en seco.",
+      options: ["Clean it with no water", "Wash it in very hot water", "Dry"], answer: 0,
+      why: "*En seco* is a method without water: dry-cleaning." },
+    { q: "What's the problem in La Guajira?", es: "En La Guajira hay sequía: no llueve desde hace ocho meses.",
+      options: ["Floods", "A long drought", "Too much humidity in the air"], answer: 1,
+      why: "*Una sequía* is a long stretch with no rain." },
+    { q: "What should you do to the fabric?", es: "Humedece un poco la tela, pero no la empapes.",
+      options: ["Dampen it lightly", "Soak it fully in water", "Burn"], answer: 0,
+      why: "*Humedecer* is a light dampening; *empapar* would soak it." }
+  ],
+  yourTurn: [
+    { en: "The clothes were completely soaked.", es: "La ropa estaba completamente empapada.", accept: [] },
+    { en: "The climate is humid.", es: "El clima es húmedo.", accept: [] },
+    { en: "My shoes are wet.", es: "Tengo los zapatos mojados.", accept: ["Mis zapatos están mojados."] },
+    { en: "This towel absorbs water very well.", es: "Esta toalla absorbe muy bien el agua.", accept: ["Esta toalla absorbe el agua muy bien."] },
+    { en: "It needs to be dry-cleaned.", es: "Hay que lavarlo en seco.", accept: ["Hay que [lavarlo|llevarlo a lavar] en seco."] }
+  ],
+  translate: [
+    { en: "The water evaporated quickly in this heat.", es: "El agua se evaporó rápido con este calor.", accept: ["El agua se evaporó rápidamente con este calor."] },
+    { en: "Skin perspires to regulate body temperature.", es: "La piel transpira para regular la temperatura del cuerpo.", accept: ["La piel transpira para regular la temperatura corporal."] },
+    { en: "Drink water so you don't get dehydrated. (to a friend)", es: "Toma agua para no deshidratarte.", accept: ["Bebe agua para no deshidratarte."] },
+    { en: "Sweat soaked his shirt.", es: "El sudor le empapó la camisa.", accept: ["El sudor le empapaba la camisa."] },
+    { en: "Yesterday I went out without an umbrella. I got home soaked. Today my shoes are still wet.", es: "Ayer salí sin paraguas. Llegué a la casa empapado. Hoy los zapatos todavía están mojados.", accept: ["Ayer salí sin [paraguas|sombrilla]. Llegué a [la casa|casa] [empapado|empapada]. Hoy [los zapatos|mis zapatos] todavía están mojados."] },
+    { en: "The river overflowed and flooded the town.", es: "El río se desbordó e inundó el pueblo.", accept: [] }
+  ],
+  register: [
+    { es: "¡Quedé ensopada!", en: "I got drenched!", when: "in Colombia, telling friends about a downpour" },
+    { es: "Estoy mojada de la lluvia.", en: "I'm wet from the rain.", when: "anywhere, said plainly" },
+    { es: "Lavar en seco. No usar secadora.", en: "Dry-clean only. Do not tumble dry.", when: "on a clothing label" },
+    { es: "La región atraviesa una sequía prolongada.", en: "The region is going through a prolonged drought.", when: "in the news or a weather report" }
+  ],
+  personal: {
+    prompt: "Describe a day when the weather caught you out, too wet or too dry: how wet you got, what stayed damp or wet, and what dried or soaked it up.",
+    constraints: [
+      { type: "containsAny", words: ["empapado", "empapada", "ensopado", "ensopada", "mojado", "mojada", "mojados", "mojadas", "húmedo", "húmeda"], label: "a degree of wet: *mojado* or *empapado*" },
+      { type: "regex", pattern: "(est(oy|aba|á|án|aban)|qued(é|ó|aron|amos)|lleg(ué|ó|amos)( a [a-záéíóúñ ]+)?) (empapad|mojad|ensopad|sec)", label: "how you ended up: *llegué empapada* or *quedaron mojados*" },
+      { type: "containsAny", words: ["se evapor", "absorb", "secar", "se secó", "se secaron", "lavar en seco", "sequía", "hidrat"], label: "what the water did: *se secó* or *absorbe*" }
+    ],
+    model: "El sábado fuimos a caminar en el páramo y nos cayó un aguacero. Llegué al carro empapada. Los zapatos quedaron mojados por dos días, aunque los puse a secar al sol."
+  },
+  pitfalls: [
+    "*Estoy húmedo* sounds like a damp wall: after the rain, *estoy mojado*.",
+    "*El clima está húmedo* is today; for the climate in general, *es húmedo*.",
+    "*Limpieza en seco* is Spain's label; in Colombia, *lavado en seco*."
+  ]
+},
+
+"nt-color-b2": {
+  source: "merged",
+  hook: {
+    line: "An online clothes shop confirms an order, and the customer writes back: the blue isn't the blue she ordered. Every line names a colour exactly.",
+    es: "Pedido 4512: dos camisas azul marino, talla M.\nUn saco verde oliva y unos pantalones gris oscuro.\nNota de la clienta: las camisas que llegaron son azules, pero de un azul claro, no marino.\nRespuesta: Disculpe. Hoy le enviamos las de color azul marino, sin costo.\nY si prefiere un tono más alegre, también las tenemos en rojo vino.",
+    en: "Order 4512: two navy blue shirts, size M.\nAn olive green sweater and a pair of dark grey trousers.\nCustomer's note: the shirts that arrived are blue, but a light blue, not navy.\nReply: We apologise. Today we're sending you the navy blue ones, at no cost.\nAnd if you'd like a brighter shade, we also have them in wine red."
+  },
+  examples: [
+    { es: "Pintaron las paredes de la sala de un tono gris perla, y los marcos de blanco mate.", en: "They painted the living room walls a pearl grey shade, and the frames matte white." },
+    { es: "Mi abuela se tiñó el pelo de rojo a los setenta, y nadie lo podía creer.", en: "My grandmother dyed her hair red at seventy, and nobody could believe it." },
+    { es: "Esa película de los años cuarenta está en blanco y negro, pero la versión nueva es en color.", en: "That film from the forties is in black and white, but the new version is in colour." }
+  ],
+  rule: "A plain colour agrees like any describing word: *cortinas verdes*, *camisas azules*.\nA shade made of two words stays fixed, whatever it describes: *camisas azul marino*, *paredes verde claro*, *pantalones gris oscuro*, *un saco verde oliva*. Never *azules marinas*.\nTo state a colour plainly: *es de color naranja*, *las de color azul*. The same frame gives size and shape: *es de tamaño grande*.\nColour as character: *un color alegre* or *triste*, *cálido* or *frío*, and the finish, *mate* or *brillante*.\n*Teñir* is to dye: *se tiñó el pelo de rojo*. *Colorear* is colouring in a drawing.\nPhotos and films: *en color* or *en blanco y negro*.",
+  readAndPick: [
+    { q: "Why *azul marino* and not *azules marinas*?", es: "Dos camisas azul marino, talla M.",
+      options: ["It's a mistake", "Two-word shades never change", "Shirts never agree with colours at all"], answer: 1,
+      why: "A shade made of two words stays fixed, whatever it describes." },
+    { q: "What went wrong with the order?", es: "Son azules, pero de un azul claro, no marino.",
+      options: ["The wrong shade", "The wrong size", "They didn't come"], answer: 0,
+      why: "*Azul claro* is light blue; she ordered *azul marino*, navy." },
+    { q: "What colour are the trousers?", es: "Unos pantalones gris oscuro.",
+      options: ["Light grey", "Black", "Dark grey"], answer: 2,
+      why: "*Gris oscuro* is dark grey, and it stays fixed with *pantalones*." },
+    { q: "What did the grandmother do?", es: "Mi abuela se tiñó el pelo de rojo a los setenta.",
+      options: ["Dyed her hair red", "Cut her hair", "Painted a picture red"], answer: 0,
+      why: "*Teñirse el pelo* is to dye your hair." },
+    { q: "What's the old film like?", es: "Esa película de los años cuarenta está en blanco y negro.",
+      options: ["In bright colour", "Black and white", "Grey"], answer: 1,
+      why: "*En blanco y negro* is black and white; colour film is *en color*." },
+    { q: "How are the frames painted?", es: "Pintaron los marcos de blanco mate.",
+      options: ["Matte white", "Glossy white", "White"], answer: 0,
+      why: "*Mate* has no shine; *brillante* would be glossy." }
+  ],
+  yourTurn: [
+    { en: "It's orange in colour.", es: "Es de color naranja.", accept: [] },
+    { en: "She was wearing navy blue shoes.", es: "Llevaba unos zapatos azul marino.", accept: ["Tenía puestos unos zapatos azul marino.", "Llevaba puestos unos zapatos azul marino."] },
+    { en: "Olive green curtains.", es: "Unas cortinas verde oliva.", accept: ["Cortinas verde oliva."] },
+    { en: "She dyed her hair blonde.", es: "Se tiñó el pelo de rubio.", accept: ["Se pintó el pelo de [rubio|mono]."] },
+    { en: "I prefer warm colours for the living room.", es: "Prefiero los colores cálidos para la sala.", accept: [] }
+  ],
+  translate: [
+    { en: "The walls are light green.", es: "Las paredes son verde claro.", accept: ["Las paredes son de color verde claro."] },
+    { en: "That old film is in black and white.", es: "Esa película vieja está en blanco y negro.", accept: ["Esa película [vieja|antigua] [está|es] en blanco y negro."] },
+    { en: "It's a matte colour, not a shiny one.", es: "Es un color mate, no brillante.", accept: [] },
+    { en: "These two shades go well together.", es: "Estos dos tonos combinan bien.", accept: ["Estos dos tonos combinan bien entre sí."] },
+    { en: "I ordered two navy blue shirts. The ones that arrived are light blue. I'm sending them back today.", es: "Pedí dos camisas azul marino. Las que llegaron son azul claro. Hoy las devuelvo.", accept: ["Pedí dos camisas azul marino. Las que llegaron son [azul claro|de color azul claro]. [Hoy las devuelvo|Las voy a devolver hoy]."] },
+    { en: "The children coloured in the drawing.", es: "Los niños colorearon el dibujo.", accept: [] }
+  ],
+  register: [
+    { es: "¡Qué color tan bonito!", en: "What a lovely colour!", when: "anywhere, warm praise" },
+    { es: "Es como un verde clarito.", en: "It's sort of a pale green.", when: "chatting, when you can't name the shade" },
+    { es: "Disponible en azul marino y gris perla.", en: "Available in navy blue and pearl grey.", when: "in a catalogue or an online shop" },
+    { es: "Tonalidad: blanco hueso, acabado mate.", en: "Shade: bone white, matte finish.", when: "on a paint tin or a technical sheet" }
+  ],
+  personal: {
+    prompt: "Describe an outfit or a room you like, naming at least one two-word shade, one colour stated with *de color*, and one colour by its character: warm, cold, cheerful or sad.",
+    constraints: [
+      { type: "regex", pattern: "(azul|verde|gris|rojo|rosado|amarillo|morado|café|blanco|negro) (marino|claro|oscuro|oliva|limón|perla|vino|cielo|pastel|hueso|petróleo|militar|turquesa|mate)", label: "a two-word shade: *azul marino* or *verde oliva*" },
+      { type: "regex", pattern: "(cálid|frí|alegre|trist|brillante|mate|vivo|apagad)", label: "colour as character: *cálido*, *alegre* or *mate*" },
+      { type: "containsAny", words: ["de color"], label: "a colour stated plainly: *es de color...*" }
+    ],
+    model: "Mi cuarto tiene las paredes verde claro y una cortina azul marino. La cobija es de color naranja, un color alegre y cálido. El escritorio es blanco mate."
+  },
+  pitfalls: [
+    "*Camisas azules marinas* agrees a shade that never changes: *camisas azul marino*.",
+    "*Teñir* is to dye; for colouring in, *colorear*.",
+    "*El salón* is Spain's living room; in Colombia, *la sala*."
+  ]
+},
+
+"nt-limpieza-b2": {
+  source: "merged",
+  hook: {
+    line: "A note left on the fridge for a flatmate. It names a stain, how dirty the kitchen got, who got dirty, and the cleaning that has to happen this weekend.",
+    es: "Querido Andrés: la cocina estaba asquerosa cuando llegué.\nHabía una mancha de café en el mesón y el piso estaba lleno de barro.\nYa sé que te manchaste la camisa con salsa, pero no la dejes en el lavaplatos.\nEste fin de semana toca limpiar el apartamento a fondo, entre los dos.\nY la chaqueta de cuero no se lava en la lavadora: solo se puede lavar en seco.",
+    en: "Dear Andrés: the kitchen was disgusting when I got home.\nThere was a coffee stain on the counter and the floor was covered in mud.\nI know you got sauce on your shirt, but don't leave it in the sink.\nThis weekend we have to give the flat a thorough clean, the two of us.\nAnd the leather jacket doesn't go in the washing machine: it can only be dry-cleaned."
+  },
+  examples: [
+    { es: "Me manché la camisa de café justo antes de la entrevista, y tuve que comprar otra.", en: "I got coffee on my shirt just before the interview, and had to buy another." },
+    { es: "Los niños se ensuciaron las manos jugando en el parque, así que los mandé derecho al baño.", en: "The kids got their hands dirty playing in the park, so I sent them straight to the bathroom." },
+    { es: "Quitar esa mancha de vino tinto del mantel no va a ser fácil, aunque usemos bicarbonato.", en: "Getting that red wine stain out of the tablecloth won't be easy, even if we use baking soda." }
+  ],
+  rule: "*La suciedad* is dirt in general; *una mancha* is one stain: *una mancha de café*.\nWhen the stain lands on you or your own clothes, use *me*, and no *mi*: *Me manché la camisa de café.* Pattern: *me manché* + the item + *de* or *con* + the stuff. Same with *ensuciarse*: *se ensució las manos*.\nFor something not on you, plain *manchar*: *Manché el mantel con vino.*\nHow dirty: *un poco sucio*, *sucio*, and the strong *asqueroso*, kept for real filth.\nHow thoroughly: *limpiar a fondo* or *en profundidad*, *por completo*. Clothes that can't take water: *lavar en seco*.\nTo remove a stain: *quitar* or *sacar una mancha*.",
+  readAndPick: [
+    { q: "How bad was the kitchen?", es: "La cocina estaba asquerosa cuando llegué.",
+      options: ["A little untidy, no more", "Truly disgusting", "Spotless"], answer: 1,
+      why: "*Asqueroso* is the strong end of the scale: real filth." },
+    { q: "Whose shirt is it?", es: "Te manchaste la camisa con salsa.",
+      options: ["Andrés's own", "A friend's", "The flatmate's"], answer: 0,
+      why: "*Te manchaste la camisa*: the stain landed on his own shirt." },
+    { q: "What kind of clean is planned?", es: "Toca limpiar el apartamento a fondo.",
+      options: ["A quick tidy", "A full repaint of every wall", "A thorough one"], answer: 2,
+      why: "*A fondo* is thoroughly, every corner." },
+    { q: "How should the jacket be cleaned?", es: "Solo se puede lavar en seco.",
+      options: ["Without water", "In the machine", "By hand"], answer: 0,
+      why: "*Lavar en seco* is dry-cleaning, with no water." },
+    { q: "Where was the coffee stain?", es: "Había una mancha de café en el mesón.",
+      options: ["On his white shirt", "On the counter", "Floor"], answer: 1,
+      why: "*El mesón* is the kitchen counter in Colombia." },
+    { q: "Why *me manché* and not *manché mi*?", es: "Me manché la camisa de café.",
+      options: ["It's simply more polite", "It landed on me", "Past"], answer: 1,
+      why: "When the stain lands on you or your clothes, Spanish uses *me* and drops *mi*." }
+  ],
+  yourTurn: [
+    { en: "I got coffee on my shirt.", es: "Me manché la camisa de café.", accept: ["Me manché la camisa con café."] },
+    { en: "He has a coffee stain on his shirt.", es: "Tiene una mancha de café en la camisa.", accept: [] },
+    { en: "We need to give the kitchen a thorough clean this weekend.", es: "Hay que limpiar la cocina a fondo este fin de semana.", accept: ["Hay que limpiar a fondo la cocina este fin de semana.", "Este fin de semana [hay que|toca] limpiar la cocina a fondo."] },
+    { en: "The bathroom was disgusting.", es: "El baño estaba asqueroso.", accept: [] },
+    { en: "I stained the tablecloth with wine.", es: "Manché el mantel con vino.", accept: ["Manché el mantel de vino."] }
+  ],
+  translate: [
+    { en: "He got his trousers dirty playing in the mud.", es: "Se ensució los pantalones jugando en el barro.", accept: ["Se [ensució|manchó] los pantalones jugando en el barro."] },
+    { en: "Getting that red wine stain out won't be easy.", es: "Quitar esa mancha de vino tinto no va a ser fácil.", accept: ["[Quitar|Sacar] esa mancha de vino tinto no va a ser fácil."] },
+    { en: "This coat can only be dry-cleaned.", es: "Este abrigo solo se puede lavar en seco.", accept: [] },
+    { en: "The cleaning staff come by every night.", es: "El personal de aseo pasa todas las noches.", accept: ["El personal de [aseo|limpieza] pasa [todas las noches|cada noche]."] },
+    { en: "The kitchen was dirty. There was a stain on the counter. So we gave the whole flat a thorough clean.", es: "La cocina estaba sucia. Había una mancha en el mesón. Así que limpiamos todo el apartamento a fondo.", accept: ["La cocina estaba sucia. Había una mancha en el mesón. Así que limpiamos [todo el apartamento a fondo|a fondo todo el apartamento]."] },
+    { en: "The kids got their hands dirty.", es: "Los niños se ensuciaron las manos.", accept: [] }
+  ],
+  register: [
+    { es: "¡Qué cochinada!", en: "How gross!", when: "in Colombia, with friends, about real filth" },
+    { es: "Está un poco sucio.", en: "It's a bit dirty.", when: "anywhere, a mild complaint" },
+    { es: "Se ruega mantener limpias las zonas comunes.", en: "Please keep the common areas clean.", when: "on a notice in a building" },
+    { es: "Se requiere una limpieza a fondo de las instalaciones.", en: "A thorough cleaning of the premises is required.", when: "in an inspection report" }
+  ],
+  personal: {
+    prompt: "Write a note to someone you live with about a mess: a stain, how dirty it got, who got dirty, and what cleaning has to happen.",
+    constraints: [
+      { type: "containsAny", words: ["mancha", "manchas"], label: "a stain: *una mancha de café*" },
+      { type: "regex", pattern: "(me|te|se|nos) (manch|ensuci)", label: "it landed on someone: *me manché* or *se ensució*" },
+      { type: "containsAny", words: ["a fondo", "en profundidad", "por completo", "en seco"], label: "how thoroughly: *a fondo* or *en seco*" }
+    ],
+    model: "Mateo: el sofá tiene una mancha de chocolate enorme. Ya sé que te manchaste la camiseta también. El sábado toca limpiar la sala a fondo, y el cojín hay que lavarlo en seco."
+  },
+  pitfalls: [
+    "*Manché mi camisa* sounds as if the shirt were someone else's business: *me manché la camisa*.",
+    "*Asqueroso* is for real filth; for a little mess, *un poco sucio*.",
+    "In Colombia *el piso* is the floor; a flat is *el apartamento*."
+  ]
+},
+
+"gn-descriptiva-objetos-b2": {
+  source: "merged",
+  hook: {
+    line: "An encyclopedia entry describes the sombrero vueltiao in three steps: what it is, what it's made of and how it's built, and how it compares, with its origin added because the text is formal.",
+    es: "El sombrero vueltiao es uno de los símbolos culturales de Colombia.\nEstá hecho de una fibra vegetal, la caña flecha, que se trenza a mano.\nEstá compuesto por la copa, que es alta y redonda, y el ala, ancha y plana.\nSu valor depende del número de vueltas: los hay de quince, diecinueve y hasta veintiuna.\nA diferencia del sombrero de paja común, es flexible y se puede doblar sin que se dañe.\nSu origen está en el pueblo zenú, en la región del Caribe.",
+    en: "The sombrero vueltiao is one of Colombia's cultural symbols.\nIt's made of a plant fibre, caña flecha, which is braided by hand.\nIt's made up of the crown, which is tall and round, and the brim, wide and flat.\nIts value depends on the number of turns: there are ones with fifteen, nineteen and even twenty-one.\nUnlike the ordinary straw hat, it's flexible and can be folded without being damaged.\nIt originated with the Zenú people, in the Caribbean region."
+  },
+  examples: [
+    { es: "El tomate es una fruta originaria de América, y su nombre viene de la palabra náhuatl tomatl.", en: "The tomato is a fruit native to the Americas, and its name comes from the Nahuatl word tomatl." },
+    { es: "Está compuesto por tres partes: la piel, la pulpa y las semillas, que están en el centro.", en: "It's made up of three parts: the skin, the flesh and the seeds, which are in the middle." },
+    { es: "En comparación con el modelo anterior, este celular pesa menos y la batería dura casi el doble.", en: "Compared with the previous model, this phone weighs less and the battery lasts almost twice as long." }
+  ],
+  rule: "Describing an object takes three steps.\nAnchor it: say what it is. *El sombrero vueltiao es un símbolo de Colombia.*\nTake it apart: material and parts. *Está hecho de una fibra vegetal.* *Está compuesto por la copa y el ala.* Then each part, with precise describing words.\nRelate it to others: kinds and comparisons. *Los hay de quince y de veintiuna vueltas.* *A diferencia de* for opposites, *en comparación con* for more or less.\nA formal text can add a pure fact a personal one skips: the origin or the history of the name. *Su origen está en...* *Su nombre viene de...*\nA personal description anchors it in a story instead.",
+  readAndPick: [
+    { q: "Which step is this?", es: "El sombrero vueltiao es uno de los símbolos culturales de Colombia.",
+      options: ["Saying what it is", "Listing every part in detail", "A comparison"], answer: 0,
+      why: "The anchor comes first: it tells the reader what the thing is." },
+    { q: "What is the hat made of?", es: "Está hecho de una fibra vegetal, la caña flecha.",
+      options: ["Plastic and wire", "A plant fibre", "Leather"], answer: 1,
+      why: "*Está hecho de* gives the material: caña flecha, a plant fibre." },
+    { q: "What does *a diferencia de* set up?", es: "A diferencia del sombrero de paja común, es flexible.",
+      options: ["A list of parts", "Its price", "A contrast"], answer: 2,
+      why: "*A diferencia de* sets two things against each other as opposites." },
+    { q: "What decides the hat's value?", es: "Su valor depende del número de vueltas.",
+      options: ["The number of turns", "Its colour", "Who wore it first, long ago"], answer: 0,
+      why: "*Depende del número de vueltas*: more turns, more value." },
+    { q: "Where would you read *su origen está en el pueblo zenú*?", es: "Su origen está en el pueblo zenú, en la región del Caribe.",
+      options: ["A quick text to a friend", "A formal description", "A list"], answer: 1,
+      why: "Origin and history are the facts a formal description adds." },
+    { q: "What does *en comparación con* measure?", es: "En comparación con el modelo anterior, este pesa menos.",
+      options: ["More or less", "Total opposites", "Nothing"], answer: 0,
+      why: "*En comparación con* measures more or less; for opposites, *a diferencia de*." }
+  ],
+  yourTurn: [
+    { en: "It's made up of three parts.", es: "Está compuesto por tres partes.", accept: ["Está formado por tres partes.", "Tiene tres partes."] },
+    { en: "It's made of a plant fibre.", es: "Está hecho de una fibra vegetal.", accept: ["Es de una fibra vegetal."] },
+    { en: "Unlike the old model, this one is flexible.", es: "A diferencia del modelo anterior, este es flexible.", accept: ["A diferencia del modelo [anterior|viejo], este es flexible."] },
+    { en: "Its name comes from the Nahuatl word tomatl.", es: "Su nombre viene de la palabra náhuatl tomatl.", accept: ["Su nombre [viene|proviene] de la palabra náhuatl tomatl."] }
+  ],
+  translate: [
+    { en: "The tomato is a plant native to the Andes.", es: "El tomate es una planta nativa de los Andes.", accept: ["El tomate es una planta [nativa|originaria] de los Andes."] },
+    { en: "It can be eaten with its skin or without it.", es: "Se puede comer con la piel o sin ella.", accept: ["Se puede comer con cáscara o sin ella.", "Se puede comer con su piel o sin ella."] },
+    { en: "Compared with yesterday, today is much colder.", es: "En comparación con ayer, hoy hace mucho más frío.", accept: [] },
+    { en: "There are hats with fifteen, nineteen and twenty-one turns.", es: "Hay sombreros de quince, diecinueve y veintiuna vueltas.", accept: [] },
+    { en: "The sombrero vueltiao is a symbol of Colombia. It's made of a plant fibre. Unlike other hats, it can be folded without damaging it.", es: "El sombrero vueltiao es un símbolo de Colombia. Está hecho de una fibra vegetal. A diferencia de otros sombreros, se puede doblar sin dañarlo.", accept: ["El sombrero vueltiao es un símbolo de Colombia. Está hecho de una fibra vegetal. A diferencia de otros sombreros, se puede doblar sin [dañarlo|que se dañe]."] },
+    { en: "If I had to paint a tomato, I would draw a red heart.", es: "Si tuviera que pintar un tomate, dibujaría un corazón rojo.", accept: [] }
+  ],
+  register: [
+    { es: "Es como un sombrero de playa, pero más bonito.", en: "It's like a beach hat, but nicer.", when: "describing it to a friend" },
+    { es: "Es un sombrero típico de la costa.", en: "It's a typical hat from the coast.", when: "anywhere, a plain description" },
+    { es: "La pieza está elaborada en caña flecha.", en: "The piece is crafted from caña flecha.", when: "on a museum label or a craft certificate" },
+    { es: "El término proviene de la lengua zenú.", en: "The term comes from the Zenú language.", when: "in an encyclopedia or a formal text" }
+  ],
+  personal: {
+    prompt: "Describe a typical object from your country or region for someone who has never seen it: what it is, what it's made of and its parts, how it compares, and where it comes from.",
+    constraints: [
+      { type: "regex", pattern: "(es|son) (un|una|el|la|uno|una de)\\b", label: "the anchor: what it is" },
+      { type: "regex", pattern: "(hech|compuest|formad|fabricad)[oa]s? (de|por|con)|es de [a-záéíóúñ]+|tiene (dos|tres|cuatro) partes", label: "material and parts: *está hecho de* or *está compuesto por*" },
+      { type: "containsAny", words: ["a diferencia de", "en comparación con", "comparado con", "más que", "menos que"], label: "a comparison: *a diferencia de* or *en comparación con*" },
+      { type: "containsAny", words: ["origen", "viene de", "proviene de", "procede de", "nació en"], label: "where it comes from: *su origen está en*" }
+    ],
+    model: "La ruana es una prenda típica de Boyacá. Está hecha de lana de oveja y tiene forma rectangular, con una abertura en el centro para la cabeza. A diferencia de una chaqueta, no tiene mangas. Su origen está en las mantas que usaban los campesinos para protegerse del frío."
+  },
+  pitfalls: [
+    "Listing parts with no anchor leaves the reader lost: say first what it is.",
+    "Origin and the history of the name suit a formal text; in a personal one they sound like a lecture.",
+    "*A diferencia de* is for opposites; to measure more or less, *en comparación con*."
+  ]
+},
+
+"nt-visibilidad-vision-b2": {
+  source: "merged",
+  hook: {
+    line: "A neighbour gives a statement to the police about something she saw from her window at night. She is careful to say what she saw, what she only just made out, and what was only a first impression.",
+    es: "Desde mi ventana se ve la calle de lejos, pero de noche no se distingue mucho.\nA primera vista, pensé que eran dos vecinos discutiendo.\nNo alcancé a ver la cara del hombre, porque llevaba gorra.\nSí alcancé a distinguir el color de la moto: era roja.\nA simple vista no se notaba ningún daño en el carro, pero después vi el vidrio roto.",
+    en: "From my window you can see the street from far off, but at night you can't make out much.\nAt first sight, I thought it was two neighbours arguing.\nI didn't manage to see the man's face, because he was wearing a cap.\nI did manage to make out the colour of the motorbike: it was red.\nTo the naked eye there was no damage to the car, but later I saw the broken glass."
+  },
+  examples: [
+    { es: "Mi mamá no ve bien de cerca, así que siempre me pide que le lea los mensajes.", en: "My mom can't see well close up, so she always asks me to read her messages to her." },
+    { es: "A primera vista parece un apartamento pequeño, pero tiene tres cuartos y un balcón enorme.", en: "At first sight it looks like a small flat, but it has three bedrooms and a huge balcony." },
+    { es: "Desde aquí no distingo si es mi hermano o su amigo, porque los dos están de negro.", en: "From here I can't tell whether it's my brother or his friend, because they're both in black." }
+  ],
+  rule: "*Ver* is just seeing. *Distinguir* claims more: telling one thing from another. *No distingo si es él.*\n*Alcanzar a* + *ver*, *leer* or *distinguir* is just managing to: *alcancé a ver la moto*, *no alcancé a ver la cara*.\n*A primera vista* is a first impression you haven't checked, and it sets up a *pero*: *A primera vista parece pequeño, pero...* Use *parece*, not *es*.\n*A simple vista* is with the naked eye: *a simple vista no se nota*.\nWhat can be seen from a place takes *se*: *La torre se ve de lejos.* *De cerca* is close up.\n*La vista* is eyesight: *tengo buena vista*. *Ciego* is blind.",
+  readAndPick: [
+    { q: "Could the witness see the man's face?", es: "No alcancé a ver la cara del hombre.",
+      options: ["Yes, clearly", "No, not quite", "Only in a photo"], answer: 1,
+      why: "*No alcancé a ver* is she didn't quite manage to see it." },
+    { q: "How sure was her first impression?", es: "A primera vista, pensé que eran dos vecinos discutiendo.",
+      options: ["Checked and fully certain", "Photo", "A quick guess"], answer: 2,
+      why: "*A primera vista* is an impression she hadn't checked yet." },
+    { q: "What does *distinguir* claim?", es: "Sí alcancé a distinguir el color de la moto.",
+      options: ["She told it apart", "A blurry glimpse, no more", "Nothing"], answer: 0,
+      why: "*Distinguir* claims more than *ver*: she could tell the colour." },
+    { q: "Could you see the damage easily?", es: "A simple vista no se notaba ningún daño en el carro.",
+      options: ["Not with the naked eye", "Yes, straight away", "Only from far away, in the dark"], answer: 0,
+      why: "*A simple vista* is with the naked eye, without a close look." },
+    { q: "What is Mom's problem?", es: "Mi mamá no ve bien de cerca.",
+      options: ["Seeing far off", "Seeing close up", "Hearing her phone ring"], answer: 1,
+      why: "*De cerca* is close up; far off would be *de lejos*." }
+  ],
+  yourTurn: [
+    { en: "Fortunately I have good eyesight.", es: "Por suerte tengo buena vista.", accept: ["Afortunadamente tengo buena vista."] },
+    { en: "From here I can't tell if it's him or not.", es: "Desde aquí no distingo si es él o no.", accept: ["Desde [aquí|acá] no distingo si es él o no.", "Desde [aquí|acá] no alcanzo a distinguir si es él o no."] },
+    { en: "The tower can be seen from far away.", es: "La torre se ve de lejos.", accept: ["La torre se ve desde lejos."] },
+    { en: "At first sight it looks new.", es: "A primera vista parece nuevo.", accept: ["A simple vista parece nuevo."] },
+    { en: "I didn't manage to see his face.", es: "No alcancé a verle la cara.", accept: ["No alcancé a ver su cara."] }
+  ],
+  translate: [
+    { en: "The darkness made it impossible to make anything out.", es: "La oscuridad no dejaba distinguir nada.", accept: [] },
+    { en: "He noticed a small detail that everyone else had missed.", es: "Se fijó en un pequeño detalle que a los demás se les había escapado.", accept: [] },
+    { en: "To the naked eye you can't tell the difference.", es: "A simple vista no se nota la diferencia.", accept: [] },
+    { en: "He's been completely blind since birth.", es: "Es completamente ciego de nacimiento.", accept: ["Es ciego de nacimiento."] },
+    { en: "At first sight it looks like a small flat. But up close, it has three bedrooms. And from the balcony you can see the hills.", es: "A primera vista parece un apartamento pequeño. Pero de cerca, tiene tres cuartos. Y desde el balcón se ven los cerros.", accept: ["A primera vista parece un apartamento pequeño. Pero de cerca, tiene tres [cuartos|habitaciones]. Y desde el balcón se ven [los cerros|las montañas]."] },
+    { en: "I just managed to read the sign.", es: "Alcancé a leer el letrero.", accept: ["Alcancé a leer el aviso."] }
+  ],
+  register: [
+    { es: "¡No veo ni papa!", en: "I can't see a thing!", when: "chatting, in the dark or without your glasses" },
+    { es: "No alcanzo a ver desde aquí.", en: "I can't quite see from here.", when: "anywhere, at a show or in a classroom" },
+    { es: "A primera vista, el proyecto parece viable.", en: "At first sight, the project seems viable.", when: "in a meeting, before the details" },
+    { es: "El daño no es apreciable a simple vista.", en: "The damage is not visible to the naked eye.", when: "in an inspection or insurance report" }
+  ],
+  personal: {
+    prompt: "You saw something happen from a distance: a crash, a lost dog, a delivery. Write what you could and couldn't make out, and what your first impression was.",
+    constraints: [
+      { type: "regex", pattern: "alcanc(é|e|ó|o|aron) a (ver|distinguir|leer|oír)|alcanz(o|a|an) a (ver|distinguir|leer)", label: "just managing: *alcancé a ver*" },
+      { type: "containsAny", words: ["a primera vista", "a simple vista"], label: "a first impression: *a primera vista*" },
+      { type: "regex", pattern: "distingu|se ve|se veía|de lejos|de cerca", label: "seeing at a distance: *se veía de lejos* or *no distinguí*" }
+    ],
+    model: "Desde el bus vi un choque en la Séptima. A primera vista parecía grave, pero después vi que nadie estaba herido. Alcancé a ver un taxi con el vidrio roto. No distinguí la placa, porque estaba muy lejos."
+  },
+  pitfalls: [
+    "*A primera vista es nuevo* states a fact you haven't checked: *a primera vista parece nuevo*.",
+    "*Vi* and *distinguí* aren't the same: *distinguir* claims you told them apart.",
+    "*En la primera vista* adds words: *a primera vista*, no article."
+  ]
+},
+
+"nt-audibilidad-audicion-b2": {
+  source: "merged",
+  hook: {
+    line: "A phone call between two friends keeps breaking up. They talk about the line, a noise, the neighbours' music and a song that rings a bell.",
+    es: "Aló, ¿Marta? No te oigo bien, se oye muy mal.\n¿Qué es ese ruido? ¿Sonó la alarma del edificio?\nNo, son los vecinos: ponen la música a todo volumen y hablan a gritos.\nAh, y esa canción me suena. ¿No es la de la novela?\nBueno, háblame más alto, o mejor te escribo, que así no te escucho.",
+    en: "Hello, Marta? I can't hear you well, the line is really bad.\nWhat's that noise? Did the building alarm go off?\nNo, it's the neighbours: they play music at full blast and talk at the top of their voices.\nOh, and that song sounds familiar. Isn't it the one from the soap opera?\nOK, speak louder, or better, I'll text you, because I can't hear you like this."
+  },
+  examples: [
+    { es: "De pronto sonó el timbre, y todos nos quedamos callados porque no esperábamos a nadie.", en: "Suddenly the doorbell rang, and we all went quiet because we weren't expecting anyone." },
+    { es: "¿Le puedes bajar a la música, por favor? Mañana madrugo y no puedo dormir con ese ruido.", en: "Can you turn the music down, please? I'm up early tomorrow and I can't sleep with that noise." },
+    { es: "Grabaron toda la entrevista en video, pero el sonido quedó tan bajo que casi no se oye.", en: "They recorded the whole interview on video, but the sound came out so low you can hardly hear it." }
+  ],
+  rule: "The thing making the noise is the subject of *sonar*: *sonó el timbre*, *suena el celular*. The listener *oye* or *escucha*: *oí el timbre*. *Me suena* is it rings a bell.\nHow well you hear: *no te oigo bien*; on the phone, *escuchar* is just as common. About the line or the place, add *se*: *se oye mal*, *aquí no se oye nada*.\nLoudness: *a gritos* (shouting), *a todo volumen* (full blast), *pegar un grito* (let out a shout). *En voz alta*, *en voz baja*; *más alto* is louder.\nTurning it down or up, the everyday Latin American way: *bajarle a la música*, *subirle al volumen*.\n*Sordo* can't hear; *mudo* can't speak, and *el cine mudo* is silent film.",
+  readAndPick: [
+    { q: "What's wrong with the call?", es: "No te oigo bien, se oye muy mal.",
+      options: ["The line is bad", "She's shouting", "It's switched off"], answer: 0,
+      why: "*Se oye mal* is about the line, not about either person." },
+    { q: "Who or what made the noise?", es: "¿Sonó la alarma del edificio?",
+      options: ["The neighbours", "The alarm", "Marta"], answer: 1,
+      why: "The thing making the noise is the subject of *sonar*: the alarm." },
+    { q: "How loud is the music?", es: "Ponen la música a todo volumen.",
+      options: ["Soft, in the background", "Off", "At full blast"], answer: 2,
+      why: "*A todo volumen* is full blast." },
+    { q: "What does *me suena* mean here?", es: "Esa canción me suena.",
+      options: ["It rings in her ear", "It sounds familiar", "It's too loud"], answer: 1,
+      why: "*Me suena* is it rings a bell: she's heard it before." },
+    { q: "What does the speaker want?", es: "¿Le puedes bajar a la música, por favor?",
+      options: ["Less volume", "A new song", "More volume, please"], answer: 0,
+      why: "*Bajarle a* is turning it down; up is *subirle a*." },
+    { q: "Is there a problem with the video?", es: "El sonido quedó tan bajo que casi no se oye.",
+      options: ["It's too loud", "There's no picture", "It's too quiet"], answer: 2,
+      why: "*Casi no se oye*: the sound is too low to hear." }
+  ],
+  yourTurn: [
+    { en: "Suddenly the doorbell rang.", es: "De pronto sonó el timbre.", accept: ["De repente sonó el timbre."] },
+    { en: "I can't hear you well. (on the phone, to a friend)", es: "No te oigo bien.", accept: ["No te escucho bien."] },
+    { en: "Can you turn the music down? (to a friend)", es: "¿Le puedes bajar a la música?", accept: ["¿Puedes bajarle a la música?", "¿Le bajas a la música?"] },
+    { en: "My neighbours talk at the top of their voices all day.", es: "Mis vecinos hablan a gritos todo el día.", accept: [] },
+    { en: "That name sounds familiar.", es: "Ese nombre me suena.", accept: [] }
+  ],
+  translate: [
+    { en: "The alarm went off at three in the morning.", es: "La alarma sonó a las tres de la mañana.", accept: ["La alarma sonó a las tres de la madrugada."] },
+    { en: "Why do you always play music at full blast? (to a friend)", es: "¿Por qué siempre pones la música a todo volumen?", accept: [] },
+    { en: "He went deaf after the accident.", es: "Se quedó sordo después del accidente.", accept: ["Se quedó sordo tras el accidente."] },
+    { en: "His voice is very deep.", es: "Tiene la voz muy grave.", accept: ["Su voz es muy grave."] },
+    { en: "Hello? I can't hear you. The line is very bad. Speak louder, please.", es: "¿Aló? No te oigo. Se oye muy mal. Habla más alto, por favor.", accept: ["¿Aló? No te [oigo|escucho]. Se oye muy mal. Habla más [alto|duro], por favor."] },
+    { en: "She let out a scream when she saw the mouse.", es: "Pegó un grito cuando vio el ratón.", accept: [] }
+  ],
+  register: [
+    { es: "¡Bájale a eso, que no oigo nada!", en: "Turn that down, I can't hear a thing!", when: "at home, to a sibling with the TV on" },
+    { es: "Perdón, ¿me repite? No le escuché.", en: "Sorry, could you repeat that? I didn't hear you.", when: "politely, to someone you call usted" },
+    { es: "Se ruega guardar silencio.", en: "Please keep quiet.", when: "on a sign in a library or a hospital" },
+    { es: "El nivel de ruido supera los límites permitidos.", en: "The noise level exceeds the permitted limits.", when: "in a formal complaint or an inspection report" }
+  ],
+  personal: {
+    prompt: "Complain about noise twice: first in a quick message to the neighbour, then in a formal note to the building's administration.",
+    constraints: [
+      { type: "containsAny", words: ["a todo volumen", "a gritos", "a voces", "pegó un grito", "pegan gritos"], label: "how loud: *a todo volumen* or *a gritos*" },
+      { type: "regex", pattern: "(bájale|bajarle|bajen|bajar a la|bajar el volumen|le bajas|le baja)", label: "asking to turn it down: *bájale a la música*" },
+      { type: "regex", pattern: "(se oye|se escucha|no oigo|no escucho|son(ó|aron|aba))", label: "what's heard: *se oye* or *sonó*" }
+    ],
+    model: "Vecino, ¿le puede bajar a la música? Se oye hasta mi cuarto. Señora administradora: le informo que el apartamento 502 pone música a todo volumen todas las noches, y anoche sonó hasta las tres de la mañana."
+  },
+  pitfalls: [
+    "*Sonar* belongs to the source: *sonó el celular*; the person hears it, *lo oí*.",
+    "*Mudo* is unable to speak, not to hear: that's *sordo*.",
+    "*En gritos* uses the wrong small word: *a gritos*."
+  ]
+},
+
+"nt-sabor-olor-b2": {
+  source: "merged",
+  hook: {
+    line: "A diner leaves a review of a Colombian restaurant on a food app. It's all taste and smell: what a dish lacked, what was sour, what the place smelled of.",
+    es: "Ajiaco: sabroso, pero al caldo le faltaba sal y un poco de guascas.\nLa posta negra tenía un toque agridulce delicioso, con panela y un poquito de vinagre.\nEl jugo de lulo estaba agrio, y mi esposo le tuvo que echar azúcar.\nDesde la puerta huele a leña, y el tinto tiene un aroma buenísimo.\nLo único malo: el arroz estaba desabrido y un poco pasado.",
+    en: "Ajiaco: tasty, but the broth needed salt and a bit more guascas.\nThe posta negra had a delicious sweet-and-sour touch, with panela and a little vinegar.\nThe lulo juice was sour, and my husband had to add sugar.\nFrom the door it smells of woodsmoke, and the coffee has a wonderful aroma.\nThe only bad thing: the rice was bland and a bit overcooked."
+  },
+  examples: [
+    { es: "La sopa está muy desabrida; le falta sal y un poco de cilantro para que sepa a algo.", en: "The soup is very bland; it needs salt and a bit of coriander so that it tastes of something." },
+    { es: "Huele a quemado. ¿Dejaste algo en la estufa? Ve a mirar antes de que se queme la olla.", en: "It smells burnt. Did you leave something on the stove? Go and look before the pan burns." },
+    { es: "La casa olía a pintura fresca, así que dormimos con todas las ventanas abiertas.", en: "The house smelled of fresh paint, so we slept with all the windows open." }
+  ],
+  rule: "What something smells or tastes of takes *a*: *huele a café*, *sabe a limón*, with no article for a substance: *sabe a ajo*. *Tiene sabor a* says the same.\nWithout *a*, a verdict follows: *huele rico*, *sabe feo*. *Oler* changes its stem: *huelo, hueles, huele, olemos, huelen*.\nWhat a dish lacks works like *gustar*: *A la sopa le falta sal.* Plural, plural verb: *le faltan especias*.\nHow it tastes now, with *estar*: *está salado*, *picante*, *amargo*, *agrio* (sour), *dulce*. *Agridulce* is sweet and sour. Bland is *desabrido* or *simple* in Colombia, *insípido* in writing, *soso* in Spain.\n*Un aroma* is a pleasant smell; *un olor* can go either way.",
+  readAndPick: [
+    { q: "What did the ajiaco need?", es: "Al caldo le faltaba sal y un poco de guascas.",
+      options: ["More salt and herbs", "Less salt in it", "Water, more water and more water"], answer: 0,
+      why: "*Le faltaba sal*: salt was missing from the broth, like *gustar*." },
+    { q: "What kind of flavour is *agridulce*?", es: "La posta negra tenía un toque agridulce delicioso.",
+      options: ["Only bitter", "Sweet and sour", "Hot, spicy and smoky"], answer: 1,
+      why: "*Agridulce* joins *agrio* and *dulce*: sweet and sour." },
+    { q: "Why add sugar to the juice?", es: "El jugo de lulo estaba agrio.",
+      options: ["It was too sweet", "It was cold", "It was too sour"], answer: 2,
+      why: "*Agrio* is sour, so it needed sugar." },
+    { q: "What is the smell at the door?", es: "Desde la puerta huele a leña.",
+      options: ["Fresh bread", "Woodsmoke", "Nothing"], answer: 1,
+      why: "*Huele a* names what it smells of: firewood burning." },
+    { q: "How was the rice?", es: "El arroz estaba desabrido.",
+      options: ["Burnt", "Tasteless", "Far too salty to eat"], answer: 1,
+      why: "*Desabrido* is the Colombian word for bland." },
+    { q: "What does *aroma* suggest that *olor* doesn't?", es: "El tinto tiene un aroma buenísimo.",
+      options: ["It's pleasant", "It's very strong and bitter", "Bad"], answer: 0,
+      why: "*Aroma* is a pleasant smell; *olor* can be good or bad." }
+  ],
+  yourTurn: [
+    { en: "The soup needs salt.", es: "A la sopa le falta sal.", accept: ["Le falta sal a la sopa.", "La sopa necesita sal."] },
+    { en: "It smells burnt.", es: "Huele a quemado.", accept: [] },
+    { en: "This tastes of lemon.", es: "Esto sabe a limón.", accept: ["Esto tiene sabor a limón."] },
+    { en: "The coffee has a wonderful aroma.", es: "El café tiene un aroma buenísimo.", accept: ["El [café|tinto] tiene un aroma [buenísimo|delicioso|riquísimo]."] },
+    { en: "The rice is bland.", es: "El arroz está desabrido.", accept: ["El arroz está [insípido|simple]."] }
+  ],
+  translate: [
+    { en: "Lemon is too sour to eat on its own.", es: "El limón es demasiado agrio para comerlo solo.", accept: [] },
+    { en: "The house smelled of fresh paint.", es: "La casa olía a pintura fresca.", accept: [] },
+    { en: "This dish is tasty but a bit spicy.", es: "Este plato es sabroso, pero un poco picante.", accept: ["Este plato [es|está] [sabroso|rico], pero un poco picante."] },
+    { en: "That strong smell gives me a headache.", es: "Ese olor tan fuerte me da dolor de cabeza.", accept: ["Ese olor tan [fuerte|intenso] me da dolor de cabeza."] },
+    { en: "The broth was tasty, but it needed salt. The juice was sour. And the whole restaurant smelled of woodsmoke.", es: "El caldo estaba sabroso, pero le faltaba sal. El jugo estaba agrio. Y todo el restaurante olía a leña.", accept: [] },
+    { en: "It smells nice in here.", es: "Aquí huele rico.", accept: ["Acá huele rico.", "Huele rico aquí."] }
+  ],
+  register: [
+    { es: "¡Uy, qué rico huele!", en: "Ooh, that smells good!", when: "in Colombia, walking into a kitchen" },
+    { es: "Está un poco simple, ¿no?", en: "It's a bit bland, isn't it?", when: "in Colombia, gently criticising food" },
+    { es: "El plato tiene un sabor equilibrado.", en: "The dish has a balanced flavour.", when: "in a restaurant review" },
+    { es: "Notas de cata: aroma a frutos rojos y final amargo.", en: "Tasting notes: aroma of red berries and a bitter finish.", when: "on a coffee bag or a wine label" }
+  ],
+  personal: {
+    prompt: "Review a meal you ate recently: what it smelled of, how two dishes tasted, and what one of them lacked.",
+    constraints: [
+      { type: "regex", pattern: "(huele|olía|olían|huelen) a ", label: "a smell: *huele a leña*" },
+      { type: "regex", pattern: "(le|les) falta(ba|ban|n)?", label: "something missing: *le faltaba sal*" },
+      { type: "containsAny", words: ["salado", "salada", "picante", "amargo", "amarga", "agrio", "agria", "dulce", "agridulce", "desabrido", "desabrida", "sabroso", "sabrosa", "insípido", "simple"], label: "a taste: *picante*, *agrio* or *desabrido*" }
+    ],
+    model: "El domingo almorzamos en un restaurante en La Candelaria. Desde la entrada olía a pan recién hecho. La sopa estaba sabrosa, pero le faltaba un poco de sal. El jugo de maracuyá estaba muy agrio."
+  },
+  pitfalls: [
+    "*Huele quemado* drops the *a*: what it smells of is *huele a quemado*.",
+    "*Sabe al ajo* adds an article: a substance takes none, *sabe a ajo*.",
+    "*Soso* is Spain; in Colombia, *desabrido* or *simple*."
+  ]
+},
+
+"nt-origen-b2": {
+  source: "merged",
+  hook: {
+    line: "A bag of coffee from Huila tells its own story on the back: where the beans come from, where the money comes from, how far back the tradition goes, and the root of a problem.",
+    es: "Café de origen: Huila, Colombia.\nEste café procede de pequeñas fincas a 1.800 metros de altura.\nLa mayor parte de nuestros ingresos proviene de la exportación a Japón.\nLa tradición cafetera de la región se remonta al siglo XIX.\nSegún los caficultores, la raíz del problema de los precios está en los intermediarios.",
+    en: "Single-origin coffee: Huila, Colombia.\nThis coffee comes from small farms at 1,800 metres of altitude.\nMost of our income comes from exports to Japan.\nThe region's coffee-growing tradition dates back to the nineteenth century.\nAccording to the growers, the root of the price problem lies with the middlemen."
+  },
+  examples: [
+    { es: "Hay que atacar la raíz del problema y no solo los síntomas, o en un año estaremos igual.", en: "You have to tackle the root of the problem and not just the symptoms, or in a year we'll be in the same place." },
+    { es: "Muchas palabras del español provienen del árabe, como almohada, azúcar y aceite.", en: "Many Spanish words come from Arabic, like almohada, azúcar and aceite." },
+    { es: "La noche de las velitas tiene su origen en el siglo XIX, según los historiadores.", en: "The night of the little candles has its origin in the nineteenth century, according to historians." }
+  ],
+  rule: "To say where something comes from in writing, use *proceder de* or *provenir de*: *El café procede del Huila.* *Muchas palabras provienen del árabe.* They agree with what comes: *proviene*, *provienen*. *Provenir* goes like *venir*. In conversation, *venir de* does the job.\nThe word for it is *la procedencia*: *de procedencia italiana*. *De origen* on a label is single origin.\nBack in time: *tener su origen en* and *remontarse a*: *se remonta al siglo XIX*.\n*La raíz del problema* is its root cause, a fixed image; for the plain origin of a product, *el origen* or *la procedencia*.",
+  readAndPick: [
+    { q: "Where does the coffee come from?", es: "Este café procede de pequeñas fincas.",
+      options: ["Small farms", "A big factory", "Japan"], answer: 0,
+      why: "*Proceder de* is the written come from: small farms." },
+    { q: "What brings in most money?", es: "La mayor parte de nuestros ingresos proviene de la exportación a Japón.",
+      options: ["Local shops", "Exports to Japan", "Coffee tours on the farm"], answer: 1,
+      why: "*Proviene de* names where the income comes from." },
+    { q: "How old is the tradition?", es: "La tradición cafetera se remonta al siglo XIX.",
+      options: ["Two years", "It started last decade", "From the 1800s"], answer: 2,
+      why: "*Remontarse a* is to date back to: the nineteenth century." },
+    { q: "What does *la raíz del problema* mean?", es: "La raíz del problema está en los intermediarios.",
+      options: ["The root cause", "How to fix it quickly", "A plant"], answer: 0,
+      why: "*La raíz* here is the root cause, not a plant." },
+    { q: "Where would you say *viene de*?", es: "Este café viene del Huila.",
+      options: ["Only in a formal report", "Anywhere, chatting", "Never"], answer: 1,
+      why: "*Venir de* is the everyday choice; *proceder de* is for writing." }
+  ],
+  yourTurn: [
+    { en: "You have to attack the root of the problem.", es: "Hay que atacar la raíz del problema.", accept: [] },
+    { en: "Most of the income comes from online sales.", es: "La mayor parte de los ingresos procede de las ventas por internet.", accept: ["La mayor parte de los ingresos [procede|proviene|viene] de las ventas [por internet|en línea]."] },
+    { en: "The origin of these objects is unknown.", es: "Se desconoce la procedencia de estos objetos.", accept: ["Se desconoce el origen de estos objetos."] },
+    { en: "The custom dates back to the Middle Ages.", es: "La costumbre se remonta a la Edad Media.", accept: ["La costumbre tiene su origen en la Edad Media."] },
+    { en: "This wine comes from Chile.", es: "Este vino procede de Chile.", accept: ["Este vino [proviene|viene] de Chile."] }
+  ],
+  translate: [
+    { en: "Where does this come from?", es: "¿De dónde viene esto?", accept: ["¿De dónde sale esto?"] },
+    { en: "His family is of Italian origin.", es: "Su familia es de procedencia italiana.", accept: ["Su familia es de origen italiano."] },
+    { en: "The conflict has its roots in an old land dispute.", es: "El conflicto tiene su raíz en una vieja disputa por tierras.", accept: ["El conflicto tiene sus raíces en una vieja disputa por tierras."] },
+    { en: "Many words come from Arabic.", es: "Muchas palabras provienen del árabe.", accept: ["Muchas palabras [vienen|proceden] del árabe."] },
+    { en: "This coffee comes from Huila. The tradition dates back to the nineteenth century. Today most of the income comes from exports.", es: "Este café procede del Huila. La tradición se remonta al siglo XIX. Hoy la mayor parte de los ingresos proviene de las exportaciones.", accept: ["Este café [procede|proviene|viene] del Huila. La tradición se remonta al siglo [XIX|diecinueve]. Hoy la mayor parte de los ingresos [proviene|procede|viene] de las exportaciones."] },
+    { en: "Modern medicine has its origin in ancient times.", es: "La medicina moderna tiene su origen en la Antigüedad.", accept: [] }
+  ],
+  register: [
+    { es: "¿Y eso de dónde salió?", en: "And where did that come from?", when: "chatting, about something unexpected" },
+    { es: "Mi familia viene de Santander.", en: "My family comes from Santander.", when: "anywhere, talking about roots" },
+    { es: "Producto de origen colombiano.", en: "Product of Colombian origin.", when: "on a label or a package" },
+    { es: "Los fondos provienen de la cooperación internacional.", en: "The funds come from international cooperation.", when: "in a report or a press release" }
+  ],
+  personal: {
+    prompt: "Write the story of a food, a word or a tradition from your region: where it comes from, how far back it goes, and the root of a problem around it today.",
+    constraints: [
+      { type: "regex", pattern: "(proced|provien|proven|viene|vienen|procede)", label: "where it comes from: *procede de* or *proviene de*" },
+      { type: "containsAny", words: ["se remonta", "tiene su origen", "tienen su origen", "su origen está"], label: "how far back: *se remonta a* or *tiene su origen en*" },
+      { type: "containsAny", words: ["la raíz", "raíces"], label: "the root: *la raíz del problema*" }
+    ],
+    model: "La arepa proviene de los pueblos indígenas de lo que hoy es Colombia y Venezuela. Su historia se remonta a antes de la llegada de los españoles. Hoy hay un problema: mucha gente compra harina industrial, y la raíz del problema es el precio del maíz local."
+  },
+  pitfalls: [
+    "*Proceder de* sounds written; in conversation, *venir de*.",
+    "*Las palabras proviene del árabe* forgets the plural: *provienen*.",
+    "*La raíz* is a root cause; for the plain origin of a product, *la procedencia* or *el origen*."
+  ]
+},
+
+"nt-edad-vejez-b2": {
+  source: "merged",
+  hook: {
+    line: "A family chat on a birthday in December. The messages are full of time: the age someone is turning, things used for the first time, things just done, and news that only just arrived.",
+    es: "Tía Gloria: ¡Feliz cumpleaños, Juancho! ¿Cuántos cumples?\nJuancho: Cumplo cuarenta. Ya soy un señor de mediana edad.\nTía Gloria: ¡Nada de eso! Y cuéntame, ¿estrenaste el carro?\nJuancho: Sí, lo estrené ayer. Y el apartamento está recién pintado.\nMamá: Y no se les olvide que los recién casados llegan el sábado. Recién me enteré.",
+    en: "Aunt Gloria: Happy birthday, Juancho! How old are you turning?\nJuancho: I'm turning forty. I'm a middle-aged man now.\nAunt Gloria: Nonsense! And tell me, have you taken the car out for the first time?\nJuancho: Yes, I drove it for the first time yesterday. And the flat has just been painted.\nMom: And don't forget the newlyweds arrive on Saturday. I only just found out."
+  },
+  examples: [
+    { es: "El pan está recién hecho; si quieren, llévense unos para el desayuno de mañana.", en: "The bread is freshly baked; if you like, take some for tomorrow's breakfast." },
+    { es: "En diciembre todo el mundo estrena algo, aunque sea una camiseta o unos zapatos baratos.", en: "In December everyone wears something new, even if it's just a T-shirt or cheap shoes." },
+    { es: "Mi abuelo cumplió noventa años en marzo, y todavía camina todas las mañanas por el parque.", en: "My grandfather turned ninety in March, and he still walks in the park every morning." }
+  ],
+  rule: "*Recién* + a participle is a fresh result: *recién pintado*, *recién hecho*, *los recién casados*, *un recién nacido*. The participle agrees: *paredes recién pintadas*. In Latin America *recién* also goes before an ordinary past: *Recién llegué*, I've just arrived. *Recién me enteré.*\n*Tener* + years is how old you are: *tengo cuarenta años*. *Cumplir* + years is reaching that age: *cumplo cuarenta el sábado*. *¿Cuántos cumples?*\n*Estrenar* is using or wearing something for the first time: *estrené el carro*, *estrenó vestido*. A film opening: *se estrena el viernes*.\nFood: *fresco* or *podrido*. People: *joven*, *de mediana edad*, *maduro*, *mayor*; *anciano* sounds blunt.",
+  readAndPick: [
+    { q: "What is Juancho celebrating?", es: "Cumplo cuarenta hoy.",
+      options: ["Turning forty today", "He's been forty a while", "Forty"], answer: 0,
+      why: "*Cumplir* + years is the moment you reach that age." },
+    { q: "What did he do with the car?", es: "Sí, lo estrené ayer.",
+      options: ["Sold it on", "Drove it for the first time", "Crashed it into a wall, sadly"], answer: 1,
+      why: "*Estrenar* is using something for the very first time." },
+    { q: "How new is the paint?", es: "El apartamento está recién pintado.",
+      options: ["Years old", "Not yet started at all", "Painted just now"], answer: 2,
+      why: "*Recién pintado* is freshly painted, a result that has just happened." },
+    { q: "When did Mom find out?", es: "Recién me enteré.",
+      options: ["Only just now", "A long time ago", "Never"], answer: 0,
+      why: "In Latin America *recién* before a past verb is only just." },
+    { q: "Who arrives on Saturday?", es: "Los recién casados llegan el sábado.",
+      options: ["The newborns", "The newlyweds", "The new tenants"], answer: 1,
+      why: "*Los recién casados* are the newlyweds; a newborn is *un recién nacido*." },
+    { q: "Can you eat this apple?", es: "Esa manzana ya está podrida, tírala.",
+      options: ["Yes, it's very fresh", "No, it's rotten", "Cooked"], answer: 1,
+      why: "*Podrida* is rotten, the opposite of *fresca*." }
+  ],
+  yourTurn: [
+    { en: "He's a newborn; he's only two days old.", es: "Es un recién nacido; solo tiene dos días.", accept: ["Es un recién nacido[;|,|.] solo tiene dos días."] },
+    { en: "I've just arrived.", es: "Recién llegué.", accept: ["Acabo de llegar."] },
+    { en: "My grandfather turned ninety in March.", es: "Mi abuelo cumplió noventa años en marzo.", accept: ["Mi abuelo cumplió noventa en marzo."] },
+    { en: "She wore the dress for the first time at her sister's wedding.", es: "Estrenó el vestido en el matrimonio de su hermana.", accept: ["Estrenó el vestido en la boda de su hermana."] },
+    { en: "The fish has to be fresh.", es: "El pescado tiene que estar fresco.", accept: [] }
+  ],
+  translate: [
+    { en: "The newlyweds went on their honeymoon.", es: "Los recién casados se fueron de luna de miel.", accept: [] },
+    { en: "The film premieres on Friday.", es: "La película se estrena el viernes.", accept: [] },
+    { en: "She looks younger than she is.", es: "Aparenta menos edad de la que tiene.", accept: ["Parece más joven de lo que es."] },
+    { en: "How old are you turning? (to a friend)", es: "¿Cuántos años cumples?", accept: ["¿Cuántos cumples?"] },
+    { en: "The bread has just been made. The walls have just been painted. And today we're wearing new clothes for the first time: it's Christmas.", es: "El pan está recién hecho. Las paredes están recién pintadas. Y hoy estrenamos ropa: es Navidad.", accept: ["El pan está recién hecho. Las paredes están recién pintadas. Y hoy estrenamos ropa[:|;|,|.] es Navidad."] },
+    { en: "He's a mature man, about fifty.", es: "Es un hombre maduro, de unos cincuenta años.", accept: [] }
+  ],
+  register: [
+    { es: "¡Uy, estrenando pinta!", en: "Ooh, new outfit!", when: "in Colombia, teasing a friend in new clothes" },
+    { es: "Es una persona mayor.", en: "He's an older person.", when: "anywhere, the polite way to say old" },
+    { es: "Pintura fresca. Recién pintado.", en: "Wet paint. Freshly painted.", when: "on a sign" },
+    { es: "La población de la tercera edad sigue en aumento.", en: "The elderly population continues to grow.", when: "in a report or the news" }
+  ],
+  personal: {
+    prompt: "Write about the last birthday or holiday in your family: who turned how old, what someone wore or used for the first time, and something that had just been done.",
+    constraints: [
+      { type: "regex", pattern: "cumpl(ió|io|e|o|ieron|í|imos|en) [a-záéíóúñ0-9]+", label: "reaching an age: *cumplió noventa*" },
+      { type: "regex", pattern: "estren(ó|o|é|e|amos|aron|ar|ando)", label: "a first use: *estrenó*" },
+      { type: "regex", pattern: "recién [a-záéíóúñ]+", label: "just done: *recién pintado* or *recién llegué*" }
+    ],
+    model: "En diciembre mi abuela cumplió ochenta y cinco años. Toda la familia fue a su casa, que estaba recién pintada. Mi primo estrenó carro ese día y llevó a la abuela a dar una vuelta. Recién llegamos, mi tía sacó la torta."
+  },
+  pitfalls: [
+    "*Tengo cuarenta el sábado* mixes two ideas: reaching the age is *cumplo cuarenta*.",
+    "Spanish has one verb for using something the first time: *estrené el carro*.",
+    "*Anciano* can sound blunt; for an older person, *una persona mayor*."
+  ]
+},
+
+"task-b2-precision": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: a process you know well, in fifteen sentences or more, with no vague words at all. The model is a loaf of bread, described so a reader could check every step.",
+    es: "Mezclo quinientos gramos de harina con agua tibia, sal y levadura.\nAmaso unos diez minutos, hasta que la masa queda elástica y deja de estar pegajosa.\nLa dejo reposar en torno a hora y media, hasta que dobla su volumen.\nLe doy forma de bola y la meto al horno a doscientos grados.\nSé que está lista cuando la corteza está dorada y la base suena hueca al golpearla.\nPor dentro, la miga debe quedar suave al tacto y húmeda, no empapada.",
+    en: "I mix five hundred grams of flour with warm water, salt and yeast.\nI knead for about ten minutes, until the dough is elastic and stops being sticky.\nI leave it to rest for around an hour and a half, until it doubles in size.\nI shape it into a ball and put it in the oven at two hundred degrees.\nI know it's ready when the crust is golden and the base sounds hollow when tapped.\nInside, the crumb should be soft to the touch and moist, not soggy."
+  },
+  examples: [
+    { es: "Amaso la masa unos diez minutos, hasta que queda elástica y deja de estar pegajosa.", en: "I knead the dough for about ten minutes, until it turns elastic and stops being sticky." },
+    { es: "La base suena hueca al golpearla con los dedos, y la corteza tiene un color dorado oscuro.", en: "The base sounds hollow when you tap it with your fingers, and the crust is a dark golden colour." },
+    { es: "La dejo reposar en torno a hora y media, hasta que dobla su volumen bajo un trapo húmedo.", en: "I leave it to rest for around an hour and a half, until it doubles in size under a damp cloth." }
+  ],
+  rule: "Describe a process you know well, cooking, fixing or a routine at work, in fifteen sentences or more, with no vague words at all.\nBanned: *bueno*, *malo*, *bonito*, *feo*, *grande*, *pequeño*, *mucho*, *muy*. Each has a precise stand-in, and finding it is the exercise.\nUse the unit: texture (*elástico*, *pegajoso*, *liso*, *áspero al tacto*), consistency (*espeso*, *fluido*), wet and dry (*húmedo*, *empapado*), colour (*dorado*, *verde oliva*), sound (*suena hueco*), smell and taste (*huele a*, *agridulce*), weight and size in numbers (*pesa*, *unos diez centímetros*), shape (*tiene forma de*).\nOrder the steps with *primero*, *después*, *hasta que*, *cuando*.",
+  readAndPick: [
+    { q: "Which is precise rather than vague?", es: "La masa queda elástica y deja de estar pegajosa.",
+      options: ["*buena*", "*elástica*", "*muy, muy rica*"], answer: 1,
+      why: "*Elástica* says something a reader can check; *buena* says nothing." },
+    { q: "How do you know the bread is ready?", es: "La base suena hueca al golpearla.",
+      options: ["It sounds hollow", "It smells", "It turns black on top"], answer: 0,
+      why: "*Suena hueca* is a test anyone can do: tap it and listen." },
+    { q: "How long does it rest?", es: "La dejo reposar en torno a hora y media.",
+      options: ["Exactly an hour", "Overnight, about twelve hours", "About ninety minutes"], answer: 2,
+      why: "*En torno a* is around: roughly an hour and a half." },
+    { q: "What should the inside be like?", es: "La miga debe quedar suave al tacto y húmeda, no empapada.",
+      options: ["Moist, not soggy", "Dry and very hard", "Soaked"], answer: 0,
+      why: "*Húmeda* is moist; *empapada* would be soaked through." },
+    { q: "What does *dobla su volumen* mean?", es: "Hasta que dobla su volumen.",
+      options: ["It folds in half", "It gets twice as big", "It turns up the sound"], answer: 1,
+      why: "*Doblar su volumen* is to double in size, not to fold." }
+  ],
+  yourTurn: [
+    { en: "I knead until the dough is elastic.", es: "Amaso hasta que la masa queda elástica.", accept: ["Amaso hasta que la masa [queda|está|quede|esté] elástica."] },
+    { en: "The base sounds hollow when you tap it.", es: "La base suena hueca al golpearla.", accept: ["La base suena hueca cuando la golpeas."] },
+    { en: "I leave it to rest for around an hour and a half.", es: "La dejo reposar en torno a hora y media.", accept: ["La dejo reposar [en torno a|alrededor de] una hora y media.", "La dejo reposar alrededor de hora y media."] },
+    { en: "It stops being sticky.", es: "Deja de estar pegajosa.", accept: ["Ya no está pegajosa."] }
+  ],
+  translate: [
+    { en: "The crust is golden and crunchy.", es: "La corteza está dorada y crujiente.", accept: [] },
+    { en: "It doubles in size.", es: "Dobla su volumen.", accept: ["Duplica su volumen."] },
+    { en: "The sauce should be thick, not runny.", es: "La salsa debe quedar espesa, no líquida.", accept: ["La salsa debe [quedar|estar] espesa, no [líquida|fluida|aguada]."] },
+    { en: "It weighs about eight hundred grams.", es: "Pesa unos ochocientos gramos.", accept: ["Pesa [alrededor de|como] ochocientos gramos."] },
+    { en: "First I mix the flour with warm water. Then I knead until the dough is smooth. Finally, I leave it to rest until it doubles in size.", es: "Primero mezclo la harina con agua tibia. Después amaso hasta que la masa queda lisa. Por último, la dejo reposar hasta que dobla su volumen.", accept: ["Primero mezclo la harina con agua tibia. [Después|Luego] amaso hasta que la masa [queda|está|quede] lisa. [Por último|Al final|Finalmente], la dejo reposar hasta que [dobla|doble|duplica|duplique] su volumen."] },
+    { en: "It's ready when it smells of toasted bread.", es: "Está listo cuando huele a pan tostado.", accept: [] }
+  ],
+  register: [
+    { es: "Le echas harina hasta que no se pegue.", en: "You add flour until it stops sticking.", when: "explaining a recipe to a friend in the kitchen" },
+    { es: "Amasar durante diez minutos.", en: "Knead for ten minutes.", when: "in a written recipe" },
+    { es: "Hornear a 200 °C durante 35 minutos.", en: "Bake at 200 °C for 35 minutes.", when: "in a recipe or on packaging" },
+    { es: "La mezcla debe alcanzar una consistencia homogénea.", en: "The mixture must reach an even consistency.", when: "in a technical manual or a lab procedure" }
+  ],
+  personal: {
+    prompt: "Describe a process you know well, cooking, fixing something or a routine at work, in fifteen sentences or more, with none of the vague words.",
+    constraints: [
+      { type: "minSentences", n: 15, label: "fifteen sentences or more" },
+      { type: "avoidsAny", words: ["bueno", "buena", "malo", "mala", "bonito", "bonita", "feo", "fea", "grande", "pequeño", "pequeña", "mucho", "mucha", "muy"], label: "no vague words: no *bueno*, *grande* or *muy*" },
+      { type: "containsAny", words: ["al tacto", "pegajos", "elástic", "espes", "húmed", "crujiente", "dorad", "suena", "huele a", "sabe a", "forma de", "pesa"], label: "precise words from the unit: *pegajoso*, *suena hueco* or *huele a*" },
+      { type: "containsAny", words: ["hasta que", "cuando", "primero", "después", "luego"], label: "the steps in order: *primero* or *hasta que*" }
+    ],
+    model: "Así preparo las arepas de queso en mi casa. Primero pongo en un recipiente dos tazas de harina de maíz precocida. Le agrego una cucharadita de sal y cien gramos de queso campesino rallado. Después echo agua tibia poco a poco, mientras mezclo con la mano. Amaso unos cinco minutos, hasta que la masa queda lisa y deja de estar pegajosa. Si se agrieta en los bordes, le falta agua. Si se pega a los dedos, le sobra. Luego divido la masa en ocho bolas de unos sesenta gramos cada una. Aplasto cada bola entre las palmas hasta que tiene forma de disco de un centímetro de grosor. Caliento una sartén de hierro a fuego medio, sin aceite. Pongo las arepas y las dejo unos seis minutos por cada lado. Sé que están listas cuando la superficie está dorada y suena hueca al golpearla. Por dentro, la masa debe quedar húmeda y suave al tacto. Al final, les pongo un poco de mantequilla encima. Huelen a maíz tostado, y el queso se derrite en el centro."
+  },
+  pitfalls: [
+    "*Muy bueno* says nothing a reader can check: say *crujiente*, *dorado*, *suena hueco*.",
+    "*Grande* is a guess; a number is a description: *unos diez centímetros*, *pesa ochocientos gramos*.",
+    "Steps without *hasta que* or *cuando* leave the reader asking how they'll know it's done."
   ]
 }
 

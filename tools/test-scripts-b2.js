@@ -1,5 +1,5 @@
 /* Node test for the B2 teaching scripts (data/scripts/b2.js). Run: node tools/test-scripts-b2.js
- * Every lesson on the path in the first four B2 units (read from COURSE_BANDS.B2,
+ * Every lesson on the path in the first eight B2 units (read from COURSE_BANDS.B2,
  * not hard-coded) has a script, with the anatomy the B1 test checks
  * (tools/test-scripts-b1.js: 2 to 3 examples before a rule under 120 words,
  * 4 to 6 read-and-pick items whose option lengths and positions give nothing
@@ -46,8 +46,8 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first four units from the start of B2
-const N_UNITS = 4;
+// ---- the lessons on the path: the first eight units from the start of B2
+const N_UNITS = 8;
 const b2 = window.COURSE_BANDS.B2;
 const units = [];
 for (let i = b2; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -57,7 +57,7 @@ for (let i = b2; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) 
 const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B2, found ' + UNITS.length);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 40, 'expected 40 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 88, 'expected 88 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'fn-acuerdo-b2', 'the first B2 day should be agreeing (fn-acuerdo-b2), found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
