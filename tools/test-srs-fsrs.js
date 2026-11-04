@@ -405,5 +405,24 @@ function simulate(band, throttled) {
   ok(W.Checker.checkExact('Vivo en Bogotá', c0.es, {}).pass, 'the right typed answer is graded right');
 }
 
+/* ---- Sound-natural lines come back in the review deck ------------------------ */
+{
+  const NAT = (() => { const c = { window: {} }; c.window.window = c.window; vm.runInContext(fs.readFileSync(path.join(ROOT, 'data/natural.js'), 'utf8'), vm.createContext(c.window)); return c.window.NATURAL; })();
+  const item = NAT.find(x => x.stiff && x.accept && x.accept.length && x.band === 'B1') || NAT.find(x => x.stiff && x.accept && x.accept.length);
+  const store = { 'fluidez.srsSchema': '3' };
+  const { W } = deckWorld(store, 'B1');
+  vm.runInContext(fs.readFileSync(path.join(ROOT, 'js/natural.js'), 'utf8'), vm.createContext(W));
+  W.NATURAL = [item];
+  ok(W.StageReview.pool().filter(c => c.kind === 'natural').length === 0 || !W.SRS.isEnrolled('nat:' + item.id), 'a natural item is not reviewable before it is enrolled');
+  W.SRS.enrol('nat:' + item.id, 1);
+  const c = W.StageReview.pool().find(x => x.id === 'nat:' + item.id);
+  ok(c && c.kind === 'natural' && c.enrolledOnly && c.en === item.en && c.es === item.es, 'an enrolled natural item is in the pool with its English and Spanish');
+  ok(c.stiff === item.stiff && c.why === item.why, 'it carries the stiff line and the why');
+  const M = W.LIB.match, ask = t => W.Natural.isStiff(c, t) ? false : M.matchTranslation(t, { es: c.es, en: c.en, accept: c.accept }, { accents: 'lenient' }).pass;
+  ok(ask(item.es), 'the natural line passes');
+  ok(ask(item.accept[0]), 'an accept variant passes');
+  ok(!ask(item.stiff) && W.Natural.isStiff(c, item.stiff), 'the stiff line fails');
+}
+
 console.log('\n' + (n - fails) + ' of ' + n + ' checks passed');
 process.exit(fails ? 1 : 0);

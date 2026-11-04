@@ -158,6 +158,11 @@ window.StageReview = (function () {
         if (S.isEnrolled(cid)) { var c = window.Contrasts.cardOf(it); c.enrolledOnly = true; items.push(c); }
       });
     }
+    /* Sound-natural lines (js/natural.js) enrolled by the practice mode: typed English to Spanish. */
+    (window.NATURAL || []).forEach(function (n) {
+      if (S.isEnrolled('nat:' + n.id)) items.push({ id: 'nat:' + n.id, en: n.en, es: n.es, accept: n.accept || [], why: n.why || null,
+        stiff: n.stiff || null, kind: 'natural', enrolledOnly: true });
+    });
     if (ErrorLog) ErrorLog.cards().forEach(function (c) {               // {front, back, hint} — fixed
       items.push({ id: c.id, front: c.front, back: c.back, hint: c.hint || null, kind: 'error', fixed: true });
     });
@@ -178,6 +183,10 @@ window.StageReview = (function () {
     if (card.kind === 'contrast') {
       return { front: contrastFront(card), back: card.options[card.answer], mode: 'contrast', toSpanish: true,
                hint: card.why || null, options: card.options };
+    }
+    if (card.kind === 'natural') {
+      return { front: card.en, back: card.es, mode: 'type', toSpanish: true, hint: null,
+               extra: card.stiff ? 'You might say: ' + card.stiff : null };
     }
     if (card.fixed && card.probe && card.probe.kind === 'mcq' && (card.probe.options || []).length > 1) {
       return { front: card.front, back: card.back, mode: 'choice', toSpanish: true,
@@ -535,6 +544,7 @@ window.StageReview = (function () {
       input.placeholder = R.toSpanish ? 'escribe en español…' : 'type in English…';
       var revealB = UI.el('button', 'ghost-btn', 'Reveal'); revealB.type = 'button';
       var hintEl = UI.el('div', 'muted hint', R.hint || '');
+      if (R.extra) body.appendChild(UI.el('div', 'muted', R.extra));
       body.appendChild(input);
       if (R.toSpanish) body.appendChild(UI.accentBar(function () { return input; }));
       body.appendChild(hintEl);
@@ -593,14 +603,37 @@ window.StageReview = (function () {
         if (cur.kind === 'lesson' && C.answerForms) o.also = C.answerForms(R.back);
         return o;
       }
+      /* A sound-natural card: the stiff line is a miss with its own hint, then the matcher with the
+       * accepted variants, then the register hint on a miss. */
+      function natCheck(text) {
+        var N = window.Natural, M = window.LIB && window.LIB.match;
+        if (N && N.isStiff(cur, text)) return { pass: false, hint: 'That is the stiff line.' };
+        var r = M ? M.matchTranslation(text, { es: cur.es, en: cur.en, accept: cur.accept || [] }, { accents: 'lenient' }) : { pass: false };
+        if (r.pass) return { pass: true };
+        return { pass: false, hint: (N && N.registerMiss(cur, text)) || r.hint || null };
+      }
+      function setRich(node, lead, text) {
+        node.textContent = lead;
+        String(text || '').split(/\*([^*]+)\*/).forEach(function (part, i) {
+          if (!part) return;
+          if (i % 2) node.appendChild(UI.el('em', null, part)); else node.appendChild(document.createTextNode(part));
+        });
+      }
       input.addEventListener('input', function () {
-        if (locked || revealed) return;
+        if (locked || revealed || cur.kind === 'natural') return;
         if (C.checkExact(input.value, R.back, mOpts()).pass) good();
       });
       input.addEventListener('keydown', function (e) {
         if (e.key !== 'Enter') return; e.preventDefault();
         if (locked) return;
         if (revealed) { advance(false, { unsure: unsure }); return; }
+        if (cur.kind === 'natural') {
+          var nc = natCheck(input.value);
+          if (nc.pass) { good(); return; }
+          feedback.textContent = 'Not quite.' + (nc.hint ? ' ' + nc.hint : '') + ' Try again, or reveal';
+          feedback.className = 'feedback bad';
+          return;
+        }
         var chk = C.checkExact(input.value, R.back, mOpts());
         if (chk.pass) { good(); return; }
         feedback.textContent = chk.near ? 'Nearly. Check the accents' : 'Not quite. Try again, or reveal';
@@ -609,7 +642,8 @@ window.StageReview = (function () {
       var unsure = false;
       function showAnswer(isUnsure) {
         stamp(); revealed = true; unsure = !!isUnsure; hinted = true;
-        feedback.textContent = R.back; feedback.className = 'feedback reveal';
+        if (cur.kind === 'natural') setRich(feedback, R.back + (cur.why ? ' · ' : ''), cur.why); else feedback.textContent = R.back;
+        feedback.className = 'feedback reveal';
         revealB.textContent = 'Next →'; hintB.disabled = true; dontB.disabled = true; input.focus();
       }
       revealB.addEventListener('click', function () {
