@@ -367,7 +367,7 @@ window.StageProduce = (function () {
     var key = 'buildit:' + ctx.di + ':' + (ctx.seenDay != null ? ctx.seenDay : ctx.day);
     var rng = UI.seededRandom ? UI.seededRandom(key) : Math.random;
     var list;
-    try { list = BI.prompts(known, ctx.nodes, 1, rng, { band: entry.band }); } catch (e) { return null; }
+    try { list = BI.prompts(known, ctx.nodes, 1, rng, { band: entry.band, lessonId: ctx.lesson && ctx.lesson.id, verbs: ctx.focus && ctx.focus.verbs }); } catch (e) { return null; }
     return list && list.length ? list[0] : null;
   }
   function runBuildIt(body, chain, startAt, save, done) {
@@ -401,12 +401,16 @@ window.StageProduce = (function () {
     var entry = sceneDay(ctx), BI = window.BuildIt;
     if (!entry || !BI || !entry.unit || entry.practice) return null;
     if (BI.has(entry.unit, ctx.di)) return null;
-    var spec = BI.constraint(ctx.nodes);
+    var spec = BI.constraint(ctx.nodes, { canDo: ctx.lesson && ctx.lesson.canDo });
     var u = (window.COURSE_UNITS || {})[entry.unit];
     return { unit: entry.unit, title: (u && u.title) || '', spec: spec };
   }
+  function aboutLabel(l) {
+    l = String(l || '').replace(/^use an? verb in the presente\b/i, 'a verb in the present');
+    return l.replace(/\s+[-\u2013\u2014]+\s+/g, ', ').replace(/[\u2013\u2014]/g, ', ').replace(/(\w)-(?=\s)/g, '$1');
+  }
   function runAboutMe(body, ab, ctx, done) {
-    var BI = window.BuildIt, prompt = 'One true line for your script: say something about you ' + ab.spec.text + '.';
+    var BI = window.BuildIt, prompt = ab.spec.prompt || ('One true line for your script: say something about you ' + ab.spec.text + '.');
     if (ab.title) body.appendChild(UI.el('div', 'muted small', 'My script · ' + esc(ab.title)));
     body.appendChild(UI.el('h2', 'q-text', emph(prompt)));
     var ta = UI.el('textarea', 'answer-area');
@@ -422,13 +426,19 @@ window.StageProduce = (function () {
     function check() {
       var res = C.checkWriting({ type: 'scene', constraints: ab.spec.constraints }, ta.value);
       UI.clear(list);
-      res.results.forEach(function (r) { list.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'), (r.pass ? '✓ ' : '○ ') + r.label)); });
+      res.results.forEach(function (r) { list.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'), (r.pass ? '✓ ' : '○ ') + aboutLabel(r.label))); });
       add.disabled = !(ta.value.trim() && res.allPass);
     }
     ta.addEventListener('input', check);
     check();
     add.addEventListener('click', function () {
       if (add.disabled) return;
+      if (BI.isDuplicate && BI.isDuplicate(ta.value)) {
+        var dm = body.querySelector('.about-dup');
+        if (!dm) { dm = UI.el('p', 'muted about-dup'); list.parentNode.insertBefore(dm, list); }
+        dm.textContent = BI.DUP_MSG;
+        return;
+      }
       BI.add({ unit: ab.unit, es: ta.value, en: en.value, p: prompt.replace(/\*/g, ''), day: ctx.di });
       UI.clear(body);
       body.appendChild(UI.el('h2', null, 'Added to your script'));
