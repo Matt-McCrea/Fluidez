@@ -1,6 +1,6 @@
 /* Node test for the B1 teaching scripts (data/scripts/b1.js). Run: node tools/test-scripts-b1.js
- * Every lesson on the path in the first twelve B1 units (read from COURSE_BANDS.B1,
- * not hard-coded) has a script; every script has the anatomy of the A1 scripts
+ * Every lesson on the path in the seventeen B1 units, b1-u27 to b1-u43 (read from
+ * COURSE_BANDS.B1 and COURSE_BANDS.B2, not hard-coded), has a script; every script has the anatomy of the A1 scripts
  * (tools/test-scripts.js: 2 to 3 examples before a rule, 4 to 6 read-and-pick
  * items whose option lengths give nothing away, 3 to 5 typed items whose
  * expected Spanish passes the matcher, a personal sentence whose model passes
@@ -31,7 +31,12 @@
  *     (b1-u36), haya + participle from g:subj-perfect, ponerse a + a verb
  *     from p:ponerse-a-inf, volver a + a verb from p:volver-a-inf, and an
  *     indirect question (sé, sabes, pregunta, dime... before si or a question
- *     word) from g:indirect-questions. */
+ *     word) from g:indirect-questions;
+ *   - four more from b1-u42 on, read the same way: habré + participle from
+ *     g:future-perfect, habría + participle from g:conditional-perfect,
+ *     hubiera + participle from g:pluperfect-subj and para que from
+ *     g:para-que. The last two are taught in B2 (gr-pluscuamsubj-b2,
+ *     fn-dar-informacion-b2), so no B1 script may use them at all. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -58,8 +63,8 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first twelve units from the start of B1
-const N_UNITS = 12;
+// ---- the lessons on the path: every unit from the start of B1 to the start of B2
+const N_UNITS = 17;
 const b1 = window.COURSE_BANDS.B1;
 const units = [];
 for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -68,8 +73,9 @@ for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) 
 }
 const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B1, found ' + UNITS.length);
+ok(window.COURSE_DAYS[window.COURSE_BANDS.B2 - 1].unit === UNITS[N_UNITS - 1] && window.COURSE_DAYS[window.COURSE_BANDS.B2].unit !== UNITS[N_UNITS - 1], 'the last unit scripted should be the last unit before COURSE_BANDS.B2');
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 110, 'expected 110 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 148, 'expected 148 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'gr-presente-subjuntivo-b1', 'the first B1 day should be the present subjunctive, found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
@@ -84,9 +90,14 @@ ok(DAY['impneg'] != null && UNITS.indexOf(window.COURSE_DAYS[DAY['impneg']].unit
 // the day a node is first taught: the first lesson on the path whose LESSON_NODES entry teaches it
 const NODE_DAY = {};
 window.COURSE_DAYS.forEach((d, i) => { const n = d.lesson && window.LESSON_NODES[d.lesson]; if (n) n.teaches.forEach((t) => { if (NODE_DAY[t] == null) NODE_DAY[t] = i; }); });
-const DATED = { pluperfect: 'g:pluperfect', perfsubj: 'g:subj-perfect', ponerseA: 'p:ponerse-a-inf', volverA: 'p:volver-a-inf', indirect: 'g:indirect-questions' };
+const DATED = { pluperfect: 'g:pluperfect', perfsubj: 'g:subj-perfect', ponerseA: 'p:ponerse-a-inf', volverA: 'p:volver-a-inf', indirect: 'g:indirect-questions',
+  futperf: 'g:future-perfect', condperf: 'g:conditional-perfect', pluperfsubj: 'g:pluperfect-subj', paraQue: 'g:para-que' };
 Object.keys(DATED).forEach((k) => ok(NODE_DAY[DATED[k]] != null, 'no lesson on the path teaches ' + DATED[k]));
 ok(NODE_DAY['g:pluperfect'] != null && UNITS.indexOf(window.COURSE_DAYS[NODE_DAY['g:pluperfect']].unit) === 9, 'the pluperfect should open the tenth B1 unit');
+ok(UNITS.indexOf(window.COURSE_DAYS[NODE_DAY['p:volver-a-inf']].unit) === 12, 'volver a should be taught in the thirteenth B1 unit');
+['impsubj', 'futperf', 'condperf', 'perfsubj'].forEach((id) => ok(DAY[id] != null && UNITS.indexOf(window.COURSE_DAYS[DAY[id]].unit) === 15, id + ' should sit in the sixteenth B1 unit'));
+ok(DAY['impsubj'] === NODE_DAY['g:imperfect-subj'] && DAY['perfsubj'] === NODE_DAY['g:subj-perfect'], 'the past and perfect subjunctive should date from their own lessons');
+ok(NODE_DAY['g:pluperfect-subj'] >= window.COURSE_BANDS.B2 && NODE_DAY['g:para-que'] >= window.COURSE_BANDS.B2, 'hubiera + participle and para que are B2 here: if either moves into B1, recheck these scripts');
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -162,6 +173,7 @@ function laterForms(es, day) {
 // compound tenses, two periphrases and indirect questions, each legal only from the day its node is taught
 const PARTICIPLE = /^([a-záéíóúñ]*(ado|ido|ído)|hecho|dicho|visto|escrito|puesto|vuelto|muerto|roto|abierto|cubierto|resuelto|devuelto|descubierto|satisfecho|propuesto|compuesto|supuesto|frito|impreso)$/;
 const HABIA = /^hab(ía|ías|íamos|ían)$/, HAYA = /^haya(s|mos|n)?$/;
+const HABRE = /^habr(é|ás|á|emos|án)$/, HABRIA = /^habr(ía|ías|íamos|ían)$/, HUBIERA = /^hubie(ra|ras|ra|ramos|ran|se|ses|semos|sen)$/;
 const PONERSE_A = /\b(pongo|pones|pone|ponemos|ponen|puse|pusiste|puso|pusimos|pusieron|ponía|ponías|poníamos|ponían|pondré|pondrás|pondrá|pondremos|pondrán|ponga|pongas|pongamos|pongan|poner(me|te|se|nos))\s+a\s+[a-záéíóúñ]+(ar|er|ir)\b/i;
 const VOLVER_A = /\b(vuelvo|vuelves|vuelve|volvemos|vuelven|volví|volviste|volvió|volvimos|volvieron|volvía|volvías|volvíamos|volvían|volveré|volverás|volverá|volveremos|volverán|vuelva|vuelvas|volvamos|vuelvan|volver(me|te|se|nos|lo|la|le)?)\s+a\s+[a-záéíóúñ]+(ar|er|ir)(me|te|se|lo|la|le|nos|los|las|les)?\b/i;
 const ASK_KNOW = /^(sé|sabes|sabe|sabemos|saben|sabía|sabías|sabíamos|sabían|supe|supiste|supo|supimos|supieron|saber|sepa|pregunto|preguntas|pregunta|preguntamos|preguntan|pregunté|preguntaste|preguntó|preguntaron|preguntaba|preguntar|preguntarle|pregúntale|pregúntele|dime|dígame|díganme|decirme|decirle|decirnos|explícame|explicarme|entiendo|entiendes|recuerdo|recuerdas|acuerdo|acuerdas|averiguar|imagino|imaginas|idea)$/;
@@ -178,6 +190,10 @@ function laterShapes(es, day, from) {
   for (let i = 0; i + 1 < t.length; i++) {
     if (HABIA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:pluperfect']) out.push(t[i] + ' ' + t[i + 1] + ' (pluperfect)');
     if (HAYA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:subj-perfect']) out.push(t[i] + ' ' + t[i + 1] + ' (perfect subjunctive)');
+    if (HABRE.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:future-perfect']) out.push(t[i] + ' ' + t[i + 1] + ' (future perfect)');
+    if (HABRIA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:conditional-perfect']) out.push(t[i] + ' ' + t[i + 1] + ' (conditional perfect)');
+    if (HUBIERA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:pluperfect-subj']) out.push(t[i] + ' ' + t[i + 1] + ' (pluperfect subjunctive)');
+    if (t[i] === 'para' && t[i + 1] === 'que' && day < NODE_DAY['g:para-que']) out.push('para que (para que + subjunctive)');
     // an indirect question: a verb of knowing, asking or telling, then si or a question word (prepositions may sit between)
     let j = i + 1; while (j < t.length && /^(a|de|en|con|por|para)$/.test(t[j]) && j < i + 2) j++;
     if (ASK_KNOW.test(t[i]) && j < t.length && WH.test(t[j]) && day < NODE_DAY['g:indirect-questions'] && day >= from) out.push(t.slice(i, j + 1).join(' ') + ' (indirect question)');
