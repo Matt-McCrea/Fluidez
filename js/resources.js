@@ -11,7 +11,7 @@ window.Resources = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Recursos', 'Resources')));
-    wrap.appendChild(UI.el('p', 'muted', 'Fluidez trains output; these give you input. Aim for material you understand ~80% of — interesting first, easy second.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Fluidez trains output; these give you input. Aim for material you understand ~80% of. Interesting first, easy second.'));
 
     (window.RESOURCES || []).forEach(function (group) {
       wrap.appendChild(UI.el('h3', null, group.category));

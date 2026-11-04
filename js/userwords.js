@@ -160,7 +160,7 @@ window.UserWords = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Palabras', 'Words')));
-    wrap.appendChild(UI.el('p', 'muted', 'Your own words — they join your reviews, quizzes and games exactly like the built-in ones.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Your own words. They join your reviews, quizzes and games exactly like the built-in ones.'));
 
     // ---- quick add ----
     var pos = 'other';
@@ -235,7 +235,7 @@ window.UserWords = (function () {
       UI.clear(listWrap);
       var a = load();
       wrap.querySelector('h3').textContent = 'Your words (' + a.length + ')';
-      if (!a.length) { listWrap.appendChild(UI.el('p', 'muted', 'Nothing yet — add your first above.')); return; }
+      if (!a.length) { listWrap.appendChild(UI.el('p', 'muted', 'Nothing yet. Add your first above.')); return; }
       a.slice().reverse().forEach(function (w) {
         var row = UI.el('div', 'capture-row');
         var st = srsState(w.es);

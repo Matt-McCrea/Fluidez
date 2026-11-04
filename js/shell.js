@@ -74,8 +74,8 @@ window.Shell = (function () {
       var wb = UI.el('div', 'welcome-back');
       wb.appendChild(UI.el('b', null, T('Bienvenido de nuevo.', 'Welcome back.')));
       wb.appendChild(UI.el('span', null,
-        T('Tu sitio está guardado — seguimos donde lo dejaste.',
-          'Your place is saved — we pick up exactly where you left off.')));
+        T('Tu sitio está guardado: seguimos donde lo dejaste.',
+          'Your place is saved. We pick up exactly where you left off.')));
       host.appendChild(wb);
     }
 
@@ -232,7 +232,7 @@ window.Shell = (function () {
     /* A rusty ex-speaker often already knows today's lesson cold. This used to
      * sit on the intro screen; it belongs wherever the learner decides. */
     if (t && t.canSkipLesson && !isActive) {
-      var skip = UI.el('button', 'linkish', T('Ya me sé esta lección — pasar a la siguiente', 'I already know this lesson — skip to the next'));
+      var skip = UI.el('button', 'linkish', T('Ya me sé esta lección: pasar a la siguiente', 'I already know this lesson: skip to the next'));
       skip.type = 'button';
       skip.addEventListener('click', function () { window.Session.skipLesson(); refresh('inicio'); });
       card.appendChild(skip);

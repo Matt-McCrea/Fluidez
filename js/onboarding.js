@@ -31,17 +31,20 @@ window.Onboarding = (function () {
     var T = UI.t;
     return [
     { h: T('Una sesión al día', 'One session a day'),
-      p: 'Fluidez is one structured session a day, not a pile of exercises. Open it, work through the five stages, and you are done — about fifteen minutes. Tomorrow it rotates to new material automatically.' },
+      p: 'Fluidez is one short session a day, about fifteen minutes. In your first week you will be able to greet someone, say who you are and where you are from, ask a name, a place or a price, and say when you have not understood. Tomorrow brings new material automatically.' },
     { h: T('Las cinco etapas', 'The five stages'),
-      p: '<b>🔁 ' + T('Repasar', 'Review') + '</b> — spaced review of everything due today.<br>' +
-         '<b>📖 ' + T('Aprender', 'Learn') + '</b> — one lesson, taught properly.<br>' +
-         '<b>👂 ' + T('Comprender', 'Understand') + '</b> — read a passage and answer on it.<br>' +
-         '<b>🧩 ' + T('Aplicar', 'Apply') + '</b> — use the grammar in context, not in a table.<br>' +
-         '<b>✍️ ' + T('Producir', 'Produce') + '</b> — write something, checked as you type.' },
+      p: '<b>🔁 ' + T('Repasar', 'Review') + '</b>: check what you met before.<br>' +
+         '<b>📖 ' + T('Aprender', 'Learn') + '</b>: one lesson, taught properly.<br>' +
+         '<b>👂 ' + T('Comprender', 'Understand') + '</b>: read a passage and answer questions on it.<br>' +
+         '<b>🧩 ' + T('Aplicar', 'Apply') + '</b>: use the grammar in sentences, not in a table.<br>' +
+         '<b>✍️ ' + T('Producir', 'Produce') + '</b>: write something, checked as you type.' },
     { h: T('Dónde está todo', 'Where everything is'),
-      p: '<b>Inicio</b> starts the day\'s session. <b>Practicar</b> has drills and games for when you want more. ' +
-         '<b>Lecciones</b> shows every lesson — all of them are open, you are never locked out. ' +
-         '<b>Palabras</b> is your vocabulary. <b>Más</b> holds the grammar reference, free writing and settings.' }
+      p: '<b>Inicio</b> starts the day\'s session.<br>' +
+         '<b>Jugar</b> has quick games against your own best score.<br>' +
+         '<b>Practicar</b> has drills for when you want more.<br>' +
+         '<b>Progreso</b> shows how you are doing and lists every lesson. All of them are open, so you are never locked out.<br>' +
+         '<b>Palabras</b> is your own vocabulary.<br>' +
+         '<b>Más</b> holds the grammar reference, free writing and settings.' }
     ];
   }
 
@@ -107,7 +110,7 @@ window.Onboarding = (function () {
       wrap.appendChild(UI.el('h1', null, 'Empezamos en ' + band));
       wrap.appendChild(UI.el('p', 'doc-summary',
         'Based on those answers, ' + band + ' looks like the right place to start. ' +
-        'Nothing is locked — you can change level any time from Más, and every lesson ' +
+        'Nothing is locked. You can change level any time from Más, and every lesson ' +
         'at every level stays open in Progreso.'));
       wrap.appendChild(UI.nextBtn('Empezar →', function () {
         if (window.Profile) window.Profile.set(band);

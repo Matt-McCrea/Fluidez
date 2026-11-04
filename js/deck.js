@@ -83,7 +83,7 @@ window.Deck = (function () {
       if (revealed) { advance(false); return; }
       var r = C.checkExact(input.value, cur.back, meaningOpts());
       if (r.pass) { markGood(); return; }
-      feedback.textContent = r.near ? 'Nearly — check the accents' : 'Not quite — try again, or reveal';
+      feedback.textContent = r.near ? 'Nearly. Check the accents' : 'Not quite. Try again, or reveal';
       feedback.className = 'feedback bad';
     });
     revealB.addEventListener('click', function () {

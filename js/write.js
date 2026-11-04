@@ -38,7 +38,7 @@ window.WriteSpace = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Escribir', 'Writing')));
-    wrap.appendChild(UI.el('p', 'muted', 'The part most learners skip. Take a prompt or write freely — the checklist updates as you type, and everything is saved.'));
+    wrap.appendChild(UI.el('p', 'muted', 'The part most learners skip. Take a prompt or write freely. The checklist updates as you type, and everything is saved.'));
 
     /* ---- extended writing (B2/C1) ----------------------------------------
      * Essays are offered here as well as on the session's essay day, because
@@ -115,7 +115,7 @@ window.WriteSpace = (function () {
     function onSelect() {
       var id = sel.value;
       currentTask = tasks.filter(function (t) { return t.id === id; })[0] || null;
-      promptBox.textContent = currentTask && currentTask.hint ? '💡 ' + currentTask.hint : 'Write about anything — aim for a few connected sentences.';
+      promptBox.textContent = currentTask && currentTask.hint ? '💡 ' + currentTask.hint : 'Write about anything. Aim for a few connected sentences.';
       modelB.style.display = currentTask ? '' : 'none';
       UI.clear(modelBox); saveFb.textContent = '';
       renderCheck();
@@ -152,7 +152,7 @@ window.WriteSpace = (function () {
     function renderJournal() {
       UI.clear(journal);
       var a = load();
-      if (!a.length) { journal.appendChild(UI.el('p', 'muted', 'No entries yet — write your first above.')); return; }
+      if (!a.length) { journal.appendChild(UI.el('p', 'muted', 'No entries yet. Write your first above.')); return; }
       a.slice().reverse().forEach(function (e, ri) {
         var entry = UI.el('div', 'journal-entry');
         entry.appendChild(UI.el('div', 'muted small', e.date + (e.prompt ? ' · ' + e.prompt : '') +

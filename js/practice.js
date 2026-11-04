@@ -33,7 +33,7 @@ window.Practice = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Practicar', 'Practice')));
-    wrap.appendChild(UI.el('p', 'muted', 'Quick, targeted practice — pick exactly what you want to work on.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Quick, targeted practice. Pick exactly what you want to work on.'));
 
     // ---- the practice modes come first: this is the useful part ----
     wrap.appendChild(UI.el('h3', null, UI.t('Elige un modo', 'Pick a mode')));
@@ -58,7 +58,7 @@ window.Practice = (function () {
       c.addEventListener('click', function () { startTheme(th); });
       chips.appendChild(c);
     });
-    if (!any) chips.appendChild(UI.el('span', 'muted small', 'Nothing at your level yet — try a higher level in Más.'));
+    if (!any) chips.appendChild(UI.el('span', 'muted small', 'Nothing at your level yet. Try a higher level in Más.'));
     wrap.appendChild(chips);
 
     host.appendChild(wrap);

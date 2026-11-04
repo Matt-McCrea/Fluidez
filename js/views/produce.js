@@ -58,7 +58,7 @@ window.StageProduce = (function () {
         fb.className = 'feedback good';
         setTimeout(next, 900);
       } else {
-        fb.textContent = 'Not quite — click a word to send it back.';
+        fb.textContent = 'Not quite. Click a word to send it back.';
         fb.className = 'feedback bad';
       }
     }
@@ -123,7 +123,7 @@ window.StageProduce = (function () {
       var html = models.map(function (m) { return '<div class="model-answer">' + m + '</div>'; }).join('');
       modelBox.appendChild(UI.el('div', null,
         '<div class="checklist-title muted">Model answer' + (models.length > 1 ? 's' : '') + ':</div>' + html +
-        '<p class="muted small">Compare word by word — did you say it a natural way? Differences in vocabulary are fine; look at the verb forms and little words.</p>'));
+        '<p class="muted small">Compare word by word. Did you say it a natural way? Differences in vocabulary are fine; look at the verb forms and little words.</p>'));
       doneB.textContent = 'Next →';
       doneB.disabled = false;
       skipB.classList.add('hidden');
@@ -151,7 +151,7 @@ window.StageProduce = (function () {
       ctx.results.produce = { done: doneCount, total: tasks.length };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Escrito', 'Written')));
-      body.appendChild(UI.el('p', 'muted', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today — the part most learners skip, and the part that builds fluency.'));
+      body.appendChild(UI.el('p', 'muted', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today. Most learners skip this part, and it is the part that builds fluency.'));
       body.appendChild(UI.nextBtn('Terminar la sesión →', done));
     }
 

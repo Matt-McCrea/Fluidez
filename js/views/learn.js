@@ -87,7 +87,7 @@ window.StageLearn = (function () {
         b.type = 'button';
         b.addEventListener('click', function () { window.Grammar.open(d.id); });
         li.appendChild(b);
-        if (d.summary) li.appendChild(UI.el('span', 'muted', ' — ' + d.summary));
+        if (d.summary) li.appendChild(UI.el('span', 'muted', ': ' + d.summary));
         ul.appendChild(li);
       });
       wrap.appendChild(ul);
@@ -163,8 +163,8 @@ window.StageLearn = (function () {
         box.appendChild(UI.el('p', 'guess-after' + (right ? ' good' : ''),
           right ? UI.t('Eso es. Sigue leyendo para ver por qué.',
                        'That is it. Read on for why.')
-                : UI.t('No pasa nada — para eso es la lección. Sigue leyendo.',
-                       'No matter — that is what the lesson is for. Read on.')));
+                : UI.t('No pasa nada, para eso es la lección. Sigue leyendo.',
+                       'No matter, that is what the lesson is for. Read on.')));
       });
       opts.appendChild(b);
     });
@@ -202,14 +202,14 @@ window.StageLearn = (function () {
       // A function lesson's exponents are grouped BY REGISTER, because the
       // register contrast is the teaching point — an ungrouped list would read
       // as a vocabulary dump and teach the wrong thing.
-      wrap.appendChild(UI.el('h3', null, 'Ways to say it — by register'));
+      wrap.appendChild(UI.el('h3', null, 'Ways to say it: with friends, at work, in writing'));
       var order = (window.REGISTERS || []).map(function (r) { return r.id; });
       var groups = {};
       l.exponents.forEach(function (e) { (groups[e.register] = groups[e.register] || []).push(e); });
       order.filter(function (r) { return groups[r]; }).forEach(function (r) {
         var meta = (window.REGISTERS || []).filter(function (x) { return x.id === r; })[0] || { label: r, note: '' };
         wrap.appendChild(UI.el('h4', 'register-head', meta.label +
-          (meta.note ? ' <span class="muted">— ' + meta.note + '</span>' : '')));
+          (meta.note ? ' <span class="muted">(' + meta.note + ')</span>' : '')));
         wrap.appendChild(UI.el('div', null, contrastTable(groups[r].map(function (e) {
           return { es: e.es, en: e.en, note: e.note || '' };
         }))));
@@ -223,7 +223,7 @@ window.StageLearn = (function () {
       });
     }
     if (l.model && l.model.text) {
-      wrap.appendChild(UI.el('h3', null, 'A model' + (l.model.title ? ' — ' + l.model.title : '')));
+      wrap.appendChild(UI.el('h3', null, 'A model' + (l.model.title ? ': ' + l.model.title : '')));
       wrap.appendChild(UI.el('div', 'lesson-body model-text', l.model.text));
     }
     if (l.checklist && l.checklist.length) {
@@ -417,7 +417,7 @@ window.StageLearn = (function () {
     var verbs = (f.verbs || []).map(function (inf) { return window.ENGINE.verbByInf(inf); }).filter(Boolean);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, 'New verbs'));
-    wrap.appendChild(UI.el('p', 'muted', 'Meet these verbs by meaning. You\'ll conjugate them in the Aplicar and Producir stages as you learn each tense.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Meet these verbs by meaning. You\'ll conjugate them in the ' + UI.t('Aplicar', 'Apply') + ' and ' + UI.t('Producir', 'Produce') + ' stages as you learn each tense.'));
     wrap.appendChild(UI.el('div', null, listTable(verbs.map(function (v) { return [v.inf, v.en]; }))));
     verbs.forEach(function (v) { S.enrol('vm:' + v.inf); });
     var check = verbs.map(function (v) { return qcItem('vm:' + v.inf, v.inf, v.en); });
@@ -429,8 +429,7 @@ window.StageLearn = (function () {
   function teachPractice(host, ctx, done) {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, 'Practice & review day'));
-    wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today — a day to let what you\'ve met settle. Your review deck, the reading, and the exercises below all draw on things you already know.'));
-    wrap.appendChild(UI.el('p', 'muted', 'Nothing new to learn today. See how much comes back on its own.'));
+    wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.'));
     wrap.appendChild(UI.nextBtn('Continuar →', done));
     host.appendChild(wrap);
   }
@@ -451,7 +450,7 @@ window.StageLearn = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, 'Quick check'));
-    wrap.appendChild(UI.el('p', 'muted', 'Answer from memory — these join your review deck.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Answer from memory. These join your review deck.'));
 
     var i = 0, form = UI.el('div');
     wrap.appendChild(form);
@@ -545,7 +544,7 @@ window.StageLearn = (function () {
           also: C.answerForms ? C.answerForms(it.back) : null
         });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }
-        else { fb.textContent = r.near ? 'Nearly — accents' : 'Not quite'; fb.className = 'feedback bad'; }
+        else { fb.textContent = r.near ? 'Nearly, check the accents' : 'Not quite'; fb.className = 'feedback bad'; }
       });
       reveal.addEventListener('click', function () {
         if (revealed) { next(false); return; }

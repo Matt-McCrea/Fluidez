@@ -239,15 +239,36 @@ window.StageReview = (function () {
     var prefer = (px || fTheme) ? function (it) {
       return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
     } : null;
-    var batch = S.batch(all, cap, fresh, !pr.orderedVocab, prefer);
-    batch.forEach(function (it) { S.enrol(it.id); });
+    /* A resume starts from the saved deck, not a fresh draw: the draw is
+     * random, so drawing again would hand back different cards. The step's
+     * extra holds the ordered ids still to ask, plus the running tallies. */
+    var ex = (ctx && ctx.step && ctx.step.extra) || {};
+    var resumed = Array.isArray(ex.queue);
+    var batch;
+    if (resumed) {
+      var byId = {};
+      all.forEach(function (it) { byId[it.id] = it; });
+      batch = ex.queue.map(function (id) { return byId[id]; }).filter(Boolean);
+    } else {
+      batch = S.batch(all, cap, fresh, !pr.orderedVocab, prefer);
+      batch.forEach(function (it) { S.enrol(it.id); });
+    }
 
     // recognition distractors: other English glosses of the same kind
     var enByKind = {};
     all.forEach(function (it) { if (it.en) (enByKind[it.kind] = enByKind[it.kind] || []).push(it.en); });
 
-    var queue = batch.slice(), seen = 0, correct = 0, missed = {};
+    var queue = batch.slice(), seen = resumed ? (ex.seen || 0) : 0,
+        correct = resumed ? (ex.correct || 0) : 0, missed = resumed ? (ex.missed || {}) : {};
 
+    function saveStep() {
+      if (ctx && ctx.step && ctx.step.save) {
+        ctx.step.save(seen, { queue: queue.map(function (c) { return c.id; }),
+                              seen: seen, correct: correct, missed: missed });
+      }
+    }
+
+    if (!queue.length && resumed && seen) { finish(); return; }
     if (!queue.length) {
       var empty = UI.el('div', 'panel');
       var firstDay = S.enrolledCount() === 0;
@@ -285,6 +306,7 @@ window.StageReview = (function () {
     host.appendChild(card);
 
     var cur = null, R = null;    // cur = pool card, R = resolved direction
+    saveStep();
 
     function advance(good) {
       queue.shift(); seen++;
@@ -296,6 +318,7 @@ window.StageReview = (function () {
         }
         missed[cur.id] = 1; queue.push(cur);
       }
+      saveStep();
       show();
     }
 
@@ -366,6 +389,7 @@ window.StageReview = (function () {
           if (window.Vetoed) window.Vetoed.add(gone);
           // drop every copy, including the one advance() re-queued after a miss
           queue = queue.filter(function (c) { return c.id !== gone; });
+          saveStep();
           feedback.textContent = UI.t('Retirada.', 'Retired.');
           feedback.className = 'feedback';
           setTimeout(show, 260);
@@ -413,7 +437,7 @@ window.StageReview = (function () {
         if (revealed) { advance(false); return; }
         var chk = C.checkExact(input.value, R.back, mOpts());
         if (chk.pass) { good(); return; }
-        feedback.textContent = chk.near ? 'Nearly — check the accents' : 'Not quite — try again, or reveal';
+        feedback.textContent = chk.near ? 'Nearly. Check the accents' : 'Not quite. Try again, or reveal';
         feedback.className = 'feedback bad';
       });
       revealB.addEventListener('click', function () {

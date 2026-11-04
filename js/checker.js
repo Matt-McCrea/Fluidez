@@ -156,7 +156,7 @@ window.Checker = (function () {
           var hit = analysis.tokens.some(function (t) { return t === want.toLowerCase(); });
           var near = analysis.tokens.some(function (t) { return deacLower(t) === wantDe; });
           pass = hit;
-          if (!hit && near) detail = 'almost — check the accents on “' + want + '”';
+          if (!hit && near) detail = 'almost, check the accents on “' + want + '”';
         }
         break;
       }

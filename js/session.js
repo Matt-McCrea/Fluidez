@@ -1090,7 +1090,7 @@ window.Session = (function () {
       '🔥 ' + rh.days30 + T(' de los últimos 30 días', ' of the last 30 days')));
     var r = ctx.results;
     var lines = [];
-    if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items — ' + r.review.correct + ' right');
+    if (r.review) lines.push('Reviewed <b>' + r.review.seen + '</b> items, ' + r.review.correct + ' right');
     // Only name a focus if the lesson stage actually ran; a quick review has none.
     if (r.learn || modeDef().keys.indexOf('learn') !== -1) lines.push('Lesson: <b>' + focusLabel(ctx) + '</b>');
     if (r.learn && r.learn.total) lines.push('Quick check: <b>' + r.learn.correct + '/' + r.learn.total + '</b>');
@@ -1147,7 +1147,7 @@ window.Session = (function () {
       wrap.appendChild(reopen);
       window.Report.showAfter(reportData, wrap);
     }
-    wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana — tomorrow rotates to new material.', 'See you tomorrow — it rotates to new material.')));
+    wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana. Mañana hay material nuevo.', 'See you tomorrow. There will be new material.')));
     var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });
     wrap.appendChild(homeB);
     var again = UI.nextBtn(T('Hacerla otra vez', 'Do it again'), function () { repeatToday(mode); });

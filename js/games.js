@@ -343,7 +343,7 @@ window.Games = (function () {
      * Racha — and it says so, rather than quietly changing three screens. */
     if (hasVoice()) {
       var mute = el('button', 'g-mute' + (GS.silent() ? ' on' : ''),
-        GS.silent() ? '🔇 Sin audio — tocar para volver a activarlo'
+        GS.silent() ? '🔇 Sin audio: tocar para volver a activarlo'
                     : '🔇 No puedo escuchar ahora');
       mute.type = 'button';
       mute.addEventListener('click', function () {
@@ -362,7 +362,7 @@ window.Games = (function () {
       b.appendChild(el('span', null, l));
       nums.appendChild(b);
     }
-    n(best ? GS.fmt(best) : '—', 'tu mejor de hoy');
+    n(best ? GS.fmt(best) : '0', 'tu mejor de hoy');
     if (pb) n(GS.fmt(pb), 'récord');
     if (streak > 1) n(String(streak), 'días seguidos');
     card.appendChild(nums);
@@ -425,7 +425,7 @@ window.Games = (function () {
     var key = GS.dailyKey(), todayBest = GS.todayBest(key), best = GS.pb(key);
     if (!todayBest) return '90 segundos · el mismo reto para todos hoy';
     if (best && todayBest < best) return 'Hoy ' + GS.fmt(todayBest) + ' · te faltan ' + GS.fmt(best - todayBest) + ' para tu récord';
-    return 'Hoy ' + GS.fmt(todayBest) + ' — tu mejor marca';
+    return 'Hoy ' + GS.fmt(todayBest) + ' · tu mejor marca';
   }
 
   function homeCard(back) {
@@ -656,7 +656,7 @@ window.Games = (function () {
               : picked.length === 2 ? 'Reto mixto: ' + names[0] + ' + ' + names[1]
               : 'Reto mixto: tres tiempos';
     var sub = picked.length === 1
-      ? 'Dos minutos usando el ' + names[0] + ' — sin teoría.'
+      ? 'Dos minutos usando el ' + names[0] + ', sin teoría.'
       : 'Dos minutos cambiando entre ' + names.slice(0, -1).join(', ') + ' y ' + names[names.length - 1] + '.';
     return { tenses: picked, title: title, sub: sub };
   }
@@ -712,7 +712,7 @@ window.Games = (function () {
   function weakCard(weak) {
     var card = el('div', 'g-weak');
     card.appendChild(el('span', 'g-weak-label', 'Se te resiste'));
-    card.appendChild(el('p', 'g-weak-text', weak.label + ' — ' + weak.n + ' fallos.'));
+    card.appendChild(el('p', 'g-weak-text', weak.label + ': ' + weak.n + ' fallos.'));
     var go = el('button', 'g-weak-go', '60 segundos con eso');
     go.type = 'button';
     go.addEventListener('click', function () { openWeak(weak.topic, weak.label); });

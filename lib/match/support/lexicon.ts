@@ -16,8 +16,8 @@
  *      used ONLY to say "this is a real word" (no POS) and to let the
  *      lemmatiser strip a plural.
  * ========================================================================== */
-import lexJson from './data/lexicon.json';
-import formsJson from './data/forms.json';
+import lexJson from '../../tagger/data/lexicon.json';
+import formsJson from '../../tagger/data/forms.json';
 import { deaccent } from '../../engine/ortho';
 export type Pos =
   | 'verb' | 'inf' | 'ger' | 'part'

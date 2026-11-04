@@ -40,7 +40,7 @@ window.Capture = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, UI.t('Añadir palabras', 'Add words')));
-    wrap.appendChild(UI.el('p', 'muted', 'Heard a word on a podcast or from a friend? Add it here — it joins your review deck and comes back at spaced intervals.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Heard a word on a podcast or from a friend? Add it here. It joins your review deck and comes back when it is due.'));
 
     var form = UI.el('div', 'capture-form');
     var esIn = UI.el('input', 'answer-input wide'); esIn.type = 'text'; esIn.placeholder = 'español (e.g. madrugar)'; esIn.spellcheck = false;

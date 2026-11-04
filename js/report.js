@@ -103,11 +103,11 @@ window.Report = (function () {
   // The one sentence the whole feature exists for. Jovial on the way up,
   // kind on the way down — a learner who gets told off by their own app on a
   // bad day stops opening it, and a bad day is exactly when they should.
-  var LABEL = { review: 'Recall', check: 'The quick check' };
+  var LABEL = { review: 'Right', check: 'The quick check' };
   var NOUN  = { review: 'cards', check: 'questions' };
   function trendLine(t) {
     if (!t) return null;
-    var what = LABEL[t.measure] || 'Recall';
+    var what = LABEL[t.measure] || 'Right';
     var head = what + ': ' + t.correct + ' of ' + t.seen + ' (' + t.today + '%)';
     /* A sample below the floor is reported and not interpreted. One card
      * missed out of two is 50%, which against an 85% baseline would announce

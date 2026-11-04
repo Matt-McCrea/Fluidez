@@ -176,7 +176,7 @@ window.Progress = (function () {
     // ---- TU CURSO: level -> unit -> lesson -------------------------------
     wrap.appendChild(UI.el('h3', null, UI.t('Tu curso', 'Your course')));
     wrap.appendChild(UI.el('p', 'muted small',
-      'Every lesson, in the order the course teaches them. Tap any one to take it — nothing is locked.'));
+      'Every lesson, in the order the course teaches them. Tap any one to take it. Nothing is locked.'));
 
     var BAND_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1'];
     var UNITS = window.COURSE_UNITS || {};
@@ -214,7 +214,7 @@ window.Progress = (function () {
       var bandDet = UI.el('details', 'catalog-more band-det' + (band === here ? ' band-here' : ''));
       if (band === here) bandDet.setAttribute('open', 'open');
       bandDet.appendChild(UI.el('summary', null,
-        band + ' — ' + us.length + UI.t(' unidades · ', ' units · ') + done + '/' + total + UI.t(' lecciones', ' lessons')));
+        band + ': ' + us.length + UI.t(' unidades · ', ' units · ') + done + '/' + total + UI.t(' lecciones', ' lessons')));
 
       /* A whole band at once, but only for bands BELOW the one you are on.
        * "Everything under my level" is the actual request — somebody starting
@@ -284,7 +284,7 @@ window.Progress = (function () {
     // ---- GRAMÁTICA: by tense, then by everything else --------------------
     wrap.appendChild(UI.el('h3', null, UI.t('Gramática', 'Grammar')));
     wrap.appendChild(UI.el('p', 'muted small',
-      'The same lessons reached a different way — by what they are about rather than by when they are taught.'));
+      'The same lessons reached a different way: by what they are about rather than by when they are taught.'));
 
     var E2 = window.ENGINE;
     var TENSE_ORDER = ['presente', 'preterito', 'imperfecto', 'perfecto', 'plusc',
@@ -324,7 +324,7 @@ window.Progress = (function () {
       if (!hits.length) return;
       hits.forEach(function (l) { placed[l.id] = 1; });
       var d = UI.el('details', 'catalog-more');
-      d.appendChild(UI.el('summary', null, name + ' — ' + hits.length));
+      d.appendChild(UI.el('summary', null, name + ': ' + hits.length));
       var s2 = UI.el('div', 'syllabus');
       hits.forEach(function (l) { s2.appendChild(lessonRow(l.id)); });
       d.appendChild(s2); wrap.appendChild(d);
@@ -358,7 +358,7 @@ window.Progress = (function () {
 
 
     // ---- SRS box distribution (single-hue magnitude bars) ----
-    wrap.appendChild(UI.el('h3', null, 'Memory strength'));
+    wrap.appendChild(UI.el('h3', null, 'How well you remember'));
     var boxes = [0, 0, 0, 0, 0, 0, 0, 0];
     ids.forEach(function (k) { var b = srs[k].box || 0; boxes[Math.min(b, 7)]++; });
     var maxBox = Math.max(1, Math.max.apply(null, boxes));
@@ -374,7 +374,7 @@ window.Progress = (function () {
       dist.appendChild(rowb);
     });
     wrap.appendChild(dist);
-    wrap.appendChild(UI.el('p', 'muted small', 'Cards move right as you keep getting them right — “new” are fragile, “64d” are close to permanent.'));
+    wrap.appendChild(UI.el('p', 'muted small', 'Cards move right as you keep getting them right. “new” cards are fragile, “64d” cards are close to permanent.'));
 
     // ---- activity heatmap (10 weeks, single-hue presence) ----
     wrap.appendChild(UI.el('h3', null, 'Activity'));
@@ -400,7 +400,7 @@ window.Progress = (function () {
     // ---- weak spots ----
     var errs = window.ErrorLog ? window.ErrorLog.list() : [];
     wrap.appendChild(UI.el('h3', null, 'Weak spots'));
-    if (!errs.length) wrap.appendChild(UI.el('p', 'muted', 'None logged yet — mistakes you make show up here.'));
+    if (!errs.length) wrap.appendChild(UI.el('p', 'muted', 'None logged yet. Mistakes you make show up here.'));
     else {
       var top = UI.el('div', 'weak-list');
       errs.slice(0, 8).forEach(function (e) {

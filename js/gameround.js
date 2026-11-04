@@ -493,7 +493,7 @@ window.GameRound = (function () {
        * it can be heard again now that they know what it was, then what it
        * means. */
       var headline = item.kind === 'listen' && item.es ? item.es : item.answer;
-      var label = result === 'near' ? 'casi — los acentos'
+      var label = result === 'near' ? 'casi, los acentos'
                 : timedOut ? 'se acabó el tiempo' : 'era';
       var typedIt = lastTyped && lastTyped.trim() && item.play === 'type';
       /* A built answer is the learner's Spanish too. From B2 up, 83% of
@@ -542,7 +542,7 @@ window.GameRound = (function () {
         mine.addEventListener('click', function () {
           window.Accepted.add(item.prompt, lastTyped.trim());
           mine.disabled = true;
-          mine.textContent = cfg.claimText || 'anotado — contará la próxima vez';
+          mine.textContent = cfg.claimText || 'anotado: contará la próxima vez';
           /* Kept, not awarded. Scoring it now would price an answer nobody
            * graded; keeping the combo and the rung means the round stops
            * punishing you for being right. */
@@ -841,13 +841,13 @@ window.GameRound = (function () {
         s2.appendChild(el('span', null, l));
         stats.appendChild(s2);
       }
-      stat(seen ? Math.round(100 * right / seen) + '%' : '—', 'precisión');
+      stat(seen ? Math.round(100 * right / seen) + '%' : '0%', 'precisión');
       if (lives) stat(String(bestRun), 'mejor racha');
       // A round with its own scoring has no multiplier, and one with its own
       // dealer has no ladder to have climbed (js/liga.js has both).
       if (!cfg.award) stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
       if (!cfg.draw) stat(band0, 'llegaste a');
-      stat(String(res.todayBest ? GS.fmt(res.todayBest) : '—'), 'mejor de hoy');
+      stat(String(res.todayBest ? GS.fmt(res.todayBest) : '0'), 'mejor de hoy');
       over.appendChild(stats);
 
       if (misses.length) {
@@ -877,7 +877,7 @@ window.GameRound = (function () {
         var card = el('div', 'g-rematch');
         card.appendChild(el('span', 'g-rematch-label', 'La revancha'));
         card.appendChild(el('p', 'g-rematch-text',
-          rem.label + ' — ' + rem.n + (rem.n === 1 ? ' fallo' : ' fallos') + ' hasta ahora.'));
+          rem.label + ': ' + rem.n + (rem.n === 1 ? ' fallo' : ' fallos') + ' hasta ahora.'));
         var go = el('button', 'g-rematch-go', '60 segundos con eso');
         go.type = 'button';
         go.addEventListener('click', function () { window.Games.openWeak(rem.topic, rem.label); });

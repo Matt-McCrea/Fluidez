@@ -94,8 +94,8 @@ window.Suggest = (function () {
     if (r.unit.goal) box.appendChild(UI.el('div', 'suggest-goal', r.unit.goal));
     box.appendChild(UI.el('div', 'suggest-why',
       'You have missed this ' + r.score + ' times. This deep dive is ' +
-      (r.unit.lessons || []).length + ' lessons and is not part of your daily path — ' +
-      'take it whenever you like.'));
+      (r.unit.lessons || []).length + ' lessons and is not part of your daily path. ' +
+      'Take it whenever you like.'));
     var row = UI.el('div', 'row-controls');
     var go = UI.el('button', 'primary-btn', 'Ver la unidad →'); go.type = 'button';
     go.addEventListener('click', function () { accept(r.unit.id); onOpen(r.unit); });

@@ -79,9 +79,9 @@ window.Settings = (function () {
     wrap.appendChild(UI.el('h3', null, UI.t('Diagnóstico', 'Diagnostics')));
     var diag = UI.el('div', 'diag');
     var build = (window.Perf && window.Perf.BUILD) || '?';
-    diag.appendChild(UI.el('p', 'muted small', 'Build <b>' + build + '</b>. If this is not the newest build, the app is still running cached code — close it fully and reopen, or tap the update banner.'));
+    diag.appendChild(UI.el('p', 'muted small', 'Build <b>' + build + '</b>. If this is not the newest build, the app is still running cached code. Close it fully and reopen, or tap the update banner.'));
     var rows = (window.Perf ? window.Perf.summary() : []);
-    if (!rows.length) diag.appendChild(UI.el('p', 'muted small', 'No timings yet — move between tabs, then come back here.'));
+    if (!rows.length) diag.appendChild(UI.el('p', 'muted small', 'No timings yet. Move between tabs, then come back here.'));
     else {
       var tbl = '<table class="contrast-table"><thead><tr><th>operación</th><th>peor</th><th>media</th><th>n</th></tr></thead><tbody>';
       rows.forEach(function (r) {
@@ -103,7 +103,7 @@ window.Settings = (function () {
 
     wrap.appendChild(UI.el('h3', null, UI.t('Empezar de cero', 'Start over')));
     wrap.appendChild(UI.el('p', 'muted',
-      'Wipes every trace of your progress on THIS device — review history, lessons studied, saved words, your journal, error log, game scores, level and the walkthrough — and starts again at A1 as a brand-new learner. ' +
+      'Wipes every trace of your progress on THIS device: review history, lessons studied, saved words, your journal, error log, game scores, level and the walkthrough, and starts again at A1 as a brand-new learner. ' +
       'It cannot be undone, and nothing is stored anywhere else, so export first if there is any chance you want it back.'));
 
     var armed = false;
@@ -127,8 +127,8 @@ window.Settings = (function () {
 
     wrap.appendChild(UI.el('h3', null, UI.t('Exportar / importar datos', 'Export / import data')));
     wrap.appendChild(UI.el('p', 'muted',
-      'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress — moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +
-      'This file is also your only backup — nothing here is stored anywhere else.'));
+      'Every install (phone, Mac, browser tab) keeps its own separate copy of your progress. Moving it from one to another means exporting here, sending yourself the file (AirDrop, Files, email, whatever\'s easiest), and importing it on the other one. ' +
+      'This file is also your only backup. Nothing here is stored anywhere else.'));
 
     var exportBtn = UI.el('button', 'primary-btn', 'Exportar datos (.json)');
     exportBtn.type = 'button';
@@ -153,7 +153,7 @@ window.Settings = (function () {
       reader.onload = function () {
         importData(String(reader.result), function (err) {
           if (err) { status.textContent = '⚠️ ' + err; status.style.color = 'var(--bad)'; return; }
-          status.textContent = '✓ Importado — recargando…'; status.style.color = 'var(--good)';
+          status.textContent = '✓ Importado, recargando…'; status.style.color = 'var(--good)';
           setTimeout(function () { window.location.reload(); }, 700);
         });
       };
@@ -168,7 +168,7 @@ window.Settings = (function () {
     if (window.Profile) {
       wrap.appendChild(UI.el('h3', null, UI.t('Tope de repaso', 'Review cap')));
       wrap.appendChild(UI.el('p', 'muted',
-        'The most items Repasar will show in one session, per mode. When more are due than this, the highest-priority ones (leeches, then most overdue) are chosen and the rest are pushed a few days out — never a growing backlog.'));
+        'The most items ' + UI.t('Repasar', 'Review') + ' will show in one session, per mode. When more are due than this, the highest-priority ones (the ones you keep missing, then the most overdue) are chosen and the rest are pushed a few days out, never a growing backlog.'));
       var capRow = UI.el('div', 'cap-row');
       window.Profile.all().forEach(function (pf) {
         var field = UI.el('div', 'cap-field');

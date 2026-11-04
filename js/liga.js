@@ -58,7 +58,7 @@ window.Liga = (function () {
     return n;
   }
   function clear(n) { while (n && n.firstChild) n.removeChild(n.firstChild); }
-  function stepName(s) { return STEPS[(s || 1) - 1] || '—'; }
+  function stepName(s) { return STEPS[(s || 1) - 1] || '·'; }
   function newId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 10); }
 
   // ---- the store -----------------------------------------------------------
@@ -308,7 +308,7 @@ window.Liga = (function () {
         t.claims.push({ en: item.prompt, es: typed, words: item.n, is_next: !!item.ligaNext });
         return item.n;
       },
-      claimText: 'anotado — cuenta si los demás están de acuerdo',
+      claimText: 'anotado: cuenta si los demás están de acuerdo',
       pb: mine ? mine.best : 0, pbLabel: 'tu mejor', recordText: '¡MEJOR DE LA SEMANA!',
       ghostAt: foe ? function (ms) { return window.GameScore.curveAt(foe.curve, ms); }
                    : function () { return null; },
@@ -600,7 +600,7 @@ window.Liga = (function () {
     table.appendChild(hdr);
     list.forEach(function (r, i) {
       var row = el('div', 'liga-row' + (r.player_id === myId ? ' me' : ''));
-      row.appendChild(el('span', 'liga-pos', r.best ? String(i + 1) : '–'));
+      row.appendChild(el('span', 'liga-pos', r.best ? String(i + 1) : '·'));
       var who = el('span', 'liga-who');
       who.appendChild(el('b', null, r.player_id === myId ? r.name + ' (tú)' : r.name));
       who.appendChild(el('span', 'liga-step', stepName(r.step)));

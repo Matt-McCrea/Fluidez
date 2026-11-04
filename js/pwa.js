@@ -10,7 +10,7 @@
   function showUpdateBanner(reg) {
     var b = document.createElement('div');
     b.className = 'sw-update-banner';
-    b.textContent = 'Nueva versión — tocar para actualizar';
+    b.textContent = 'Nueva versión: tocar para actualizar';
     b.addEventListener('click', function () {
       if (reg.waiting) reg.waiting.postMessage('skipWaiting');
     });

@@ -116,7 +116,7 @@ window.Selector = (function () {
     host.appendChild(wrap);
     window.Deck.run(deckHost, cards, function (stats) {
       UI.clear(deckHost);
-      deckHost.appendChild(UI.el('h3', null, UI.t('Listo', 'Done') + ' — ' + stats.correct + ' / ' + stats.seen));
+      deckHost.appendChild(UI.el('h3', null, UI.t('Listo', 'Done') + ': ' + stats.correct + ' / ' + stats.seen));
       var again = UI.el('button', 'ghost-btn', '← Practicar'); again.type = 'button'; again.addEventListener('click', backToTab);
       deckHost.appendChild(again);
     });
@@ -126,14 +126,14 @@ window.Selector = (function () {
     var pool = masterPool();
     var total = window.Profile ? window.Profile.reviewCap() : 15;
     var cards = mix(pool, focusPool || [], total).map(toCard);
-    runDeck(host, title, cards, 'Nothing to practise here yet — come back once you\'ve met a few things.');
+    runDeck(host, title, cards, 'Nothing to practise here yet. Come back once you\'ve met a few things.');
   }
 
   // Por tema and Gramática are meant to drill ONLY the chosen theme/tense —
   // no due/stretch vocab mixed in (that's what Repaso inteligente is for).
   function runFocusOnly(host, focusPool, title) {
     var cards = UI.shuffle((focusPool || []).slice()).map(toCard);
-    runDeck(host, title, cards, 'Nothing to practise here yet — come back once you\'ve met a few things.');
+    runDeck(host, title, cards, 'Nothing to practise here yet. Come back once you\'ve met a few things.');
   }
 
   /* ---- Por tema ------------------------------------------------------------
@@ -216,7 +216,7 @@ window.Selector = (function () {
       'Your new words, your reading and what you write all switch to one topic.')));
     var keep = UI.el('p', 'focus-keep', UI.t(
       'Tus lecciones de gramática no cambian: sigues el curso en el mismo orden.',
-      'Your grammar lessons do not change — you stay on the course, in the same order.'));
+      'Your grammar lessons do not change. You stay on the course, in the same order.'));
     wrap.appendChild(keep);
 
     var days = F ? F.DEFAULT_DAYS : 7;
@@ -260,8 +260,8 @@ window.Selector = (function () {
     wrap.appendChild(UI.el('h2', null, UI.t('Por tema', 'By topic')));
     var live = focusBanner(host);
     if (live) wrap.appendChild(live);
-    wrap.appendChild(UI.el('p', 'muted', UI.t('Elige un tema — la ronda será solo de ese tema.',
-                                               'Pick a theme — this round is only that theme\'s words.')));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Elige un tema: la ronda será solo de ese tema.',
+                                               'Pick a theme: this round is only that theme\'s words.')));
     var byTheme = groupByTheme();
     var chips = UI.el('div', 'chip-row');
     themeKeysBySize(byTheme).forEach(function (key) {
@@ -328,7 +328,7 @@ window.Selector = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, UI.t('Gramática', 'Grammar')));
-    wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept — this round is only its conjugations and usage contrasts, no other vocab mixed in.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Pick a tense or concept. This round is only its conjugations and usage contrasts, with no other vocab mixed in.'));
     var pool = masterPool();
     var studied = (loadProg().studied || {});
     // Refresher ("everything unlocked from day one") can drill any tense or
@@ -349,7 +349,7 @@ window.Selector = (function () {
       c.addEventListener('click', function () { runFocusOnly(host, focusPool, 'Gramática · ' + l.title); });
       chips.appendChild(c);
     });
-    if (!any) wrap.appendChild(UI.el('p', 'muted', 'Nothing to drill yet — this fills in as you meet grammar in your daily session.'));
+    if (!any) wrap.appendChild(UI.el('p', 'muted', 'Nothing to drill yet. This fills in as you meet grammar in your daily session.'));
     wrap.appendChild(chips);
     var backB = UI.el('button', 'ghost-btn', '← Practicar'); backB.type = 'button'; backB.addEventListener('click', backToTab);
     wrap.appendChild(backB);
@@ -367,7 +367,7 @@ window.Selector = (function () {
     var seen = {}, cards = [];
     errCards.concat(leechCards).forEach(function (c) { if (!seen[c.id]) { seen[c.id] = 1; cards.push(c); } });
     var cap = window.Profile ? window.Profile.reviewCap() : 15;
-    runDeck(host, 'Puntos débiles', cards.slice(0, cap), 'Nothing flagged yet — mistakes and repeated misses will show up here.');
+    runDeck(host, 'Puntos débiles', cards.slice(0, cap), 'Nothing flagged yet. Mistakes and repeated misses will show up here.');
   }
 
   // ---- Siguiente paso -------------------------------------------------------
@@ -401,11 +401,11 @@ window.Selector = (function () {
 
     var lessons = window.GRAMMAR_LESSONS || [];
     var nextLesson = lessons.filter(function (l) { return !studied[l.id]; })[0];
-    if (nextLesson) out.push({ focus: { type: 'grammar', id: nextLesson.id }, title: nextLesson.title, why: 'You\'ve completed every lesson before this — it\'s next in the syllabus.' });
+    if (nextLesson) out.push({ focus: { type: 'grammar', id: nextLesson.id }, title: nextLesson.title, why: 'You\'ve completed every lesson before this. It\'s next in the syllabus.' });
 
     if (window.Progress) {
       var vl = window.Progress.vocabLessons().filter(function (v) { return !studied['vocab:' + v.cat + ':' + (v.words[0] || '')]; })[0];
-      if (vl) out.push({ focus: { type: 'vocab', cat: vl.cat, words: vl.words }, title: vl.title, why: 'You know the categories before this — these haven\'t been introduced yet.' });
+      if (vl) out.push({ focus: { type: 'vocab', cat: vl.cat, words: vl.words }, title: vl.title, why: 'You know the categories before this. These haven\'t been introduced yet.' });
 
       var vg = window.Progress.verbLessons().filter(function (g) { return !studied['verbs:' + g.join(',')]; })[0];
       if (vg) out.push({ focus: { type: 'verbs', verbs: vg }, title: 'Verbs · ' + vg.slice(0, 3).join(', ') + (vg.length > 3 ? '…' : ''), why: 'The next batch of verbs you haven\'t met yet.' });
@@ -417,10 +417,10 @@ window.Selector = (function () {
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h2', null, UI.t('Siguiente paso', 'What to try next')));
-    wrap.appendChild(UI.el('p', 'muted', 'What to test next to progress — a little beyond where you are, not more of what you already know.'));
+    wrap.appendChild(UI.el('p', 'muted', 'What to test next: a little beyond where you are, not more of what you already know.'));
     var items = frontier();
     if (!items.length) {
-      wrap.appendChild(UI.el('p', 'muted', 'You\'re caught up — nothing new to introduce right now.'));
+      wrap.appendChild(UI.el('p', 'muted', 'You\'re caught up. Nothing new to introduce right now.'));
     } else {
       var list = UI.el('div', 'syllabus');
       items.forEach(function (f) {
@@ -448,7 +448,7 @@ window.Selector = (function () {
       b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
       list.appendChild(b);
     }
-    if (visible('inteligente')) row('🔀', UI.t('Repaso inteligente', 'Mixed review'), 'A mixed round — due items, plus a bit of new material', function (host) { runMixed(host, null, UI.t('Repaso inteligente', 'Mixed review')); });
+    if (visible('inteligente')) row('🔀', UI.t('Repaso inteligente', 'Mixed review'), 'A mixed round: due items, plus a bit of new material', function (host) { runMixed(host, null, UI.t('Repaso inteligente', 'Mixed review')); });
     if (visible('tema')) row('🏷️', UI.t('Por tema', 'By topic'), 'Pick a theme to focus this round on', function (host) { showThemePicker(host); });
     if (visible('gramatica')) row('📖', UI.t('Gramática', 'Grammar'), 'Pick a tense or concept to drill', function (host) { showTensePicker(host); });
     if (visible('debiles')) row('🩹', UI.t('Puntos débiles', 'Weak spots'), 'Your worst items, ordered by miss count', function (host) { runWeakSpots(host); });

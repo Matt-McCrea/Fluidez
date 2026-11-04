@@ -256,7 +256,7 @@ window.LessonRun = (function () {
       var wrap = UI.el('div', 'panel intro');
       wrap.appendChild(UI.el('div', 'big-check', '✓'));
       wrap.appendChild(UI.el('h1', null, UI.t('Lección terminada', 'Lesson done')));
-      wrap.appendChild(UI.el('p', 'muted', 'You worked through ' + title + ' — taught, read, applied and written.'));
+      wrap.appendChild(UI.el('p', 'muted', 'You worked through ' + title + '. Taught, read, applied and written.'));
       /* Same block of paste-able text the daily session offers (js/report.js).
        * A lesson taken on demand has no Repasar stage, so the only recall
        * figure it can report is the quick check at the end of Aprender — which

@@ -37,7 +37,7 @@ window.Hub = (function () {
     wrap.appendChild(UI.el('h1', null, UI.t('Tus errores', 'Your mistakes')));
 
     if (!cards.length) {
-      wrap.appendChild(UI.el('p', 'muted', 'Nothing to review — no logged mistakes right now. Misses from cloze, short answers and review show up here to drill.'));
+      wrap.appendChild(UI.el('p', 'muted', 'Nothing to review. You have no logged mistakes right now. Misses from fill-in-the-blank, short answers and review show up here to practise.'));
       var h = UI.el('button', 'ghost-btn', '← Volver'); h.type = 'button'; h.addEventListener('click', back);
       wrap.appendChild(h); host.appendChild(wrap); return;
     }
@@ -49,7 +49,7 @@ window.Hub = (function () {
 
     window.Deck.run(deckHost, cards, function (stats) {
       UI.clear(deckHost);
-      deckHost.appendChild(UI.el('h2', null, UI.t('Listo', 'Done') + ' — ' + stats.correct + ' / ' + stats.seen));
+      deckHost.appendChild(UI.el('h2', null, UI.t('Listo', 'Done') + ': ' + stats.correct + ' / ' + stats.seen));
       var h = UI.el('button', 'ghost-btn', '← Volver'); h.type = 'button'; h.addEventListener('click', back);
       deckHost.appendChild(h);
     });

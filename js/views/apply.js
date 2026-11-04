@@ -88,7 +88,7 @@ window.StageApply = (function () {
             if (window.ErrorLog) window.ErrorLog.record({ id: 'err:cloze:' + E.normalize(it.text), front: it.text.replace('___', '＿＿＿') + '   [' + it.inf + ']', back: answer, kind: 'error', source: 'apply-cloze', topic: it.tense ? 'tense:' + it.tense : null, reviewable: true });
           }
           fb.innerHTML = right ? '¡Correcto! <span class="muted">' + (it.en || '') + '</span>'
-            : '<b>' + answer + '</b> — ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person;
+            : '<b>' + answer + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person;
           fb.className = 'feedback ' + (right ? 'good' : 'bad');
           setTimeout(function () { nextAfter(right); }, right ? 850 : 1500);
         });
@@ -100,10 +100,10 @@ window.StageApply = (function () {
     function finish() {
       ctx.results.apply = { correct: correct, total: total };
       UI.clear(body);
-      body.appendChild(UI.el('h2', null, 'Aplicar: ' + correct + ' / ' + total));
+      body.appendChild(UI.el('h2', null, UI.t('Aplicar', 'Apply') + ': ' + correct + ' / ' + total));
       body.appendChild(UI.el('p', 'muted', correct === total
         ? 'Every one of those came from reading the sentence, not a table.'
-        : 'The sentence carries the answer — the time words, the subject, the mood.'));
+        : 'The sentence carries the answer: the time words, the subject, the mood.'));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 
@@ -204,7 +204,7 @@ window.StageApply = (function () {
 
       function explain() {
         var bits = [];
-        if (it.type === 'cloze') bits.push('<b>' + answer + '</b> — ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person);
+        if (it.type === 'cloze') bits.push('<b>' + answer + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person);
         else bits.push('<b>' + answer + '</b>');
         if (it.en) bits.push('<span class="muted">' + it.en + '</span>');
         return bits.join('<br>');
@@ -226,7 +226,7 @@ window.StageApply = (function () {
           fb.className = 'feedback good';
           setTimeout(function () { locked = false; next(true); }, 900);
         } else {
-          fb.textContent = r.near ? 'Nearly — check the accents' : 'Not quite — look at the time words and the subject';
+          fb.textContent = r.near ? 'Nearly. Check the accents' : 'Not quite. Look at the time words and the subject';
           fb.className = 'feedback bad';
         }
       });

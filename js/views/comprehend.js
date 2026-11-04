@@ -14,7 +14,7 @@ window.StageComprehend = (function () {
 
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, p.title));
-    wrap.appendChild(UI.el('p', 'muted', 'Read it through twice — once for the gist, once for detail. Then answer below.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Read it through twice: once for the gist, once for detail. Then answer below.'));
     var body = UI.el('div', 'passage', p.text);
     /* Listen to the whole passage. This is the closest the app gets to a
      * listening stage: connected speech at length, with the text there to fall
@@ -22,7 +22,7 @@ window.StageComprehend = (function () {
     if (window.Speak && window.Speak.available()) {
       var bar = UI.el('div', 'passage-audio');
       var b = window.Speak.button(p.text, 'big');
-      if (b) { bar.appendChild(b); bar.appendChild(UI.el('span', 'muted small', 'escucha el texto — shift para ir despacio')); }
+      if (b) { bar.appendChild(b); bar.appendChild(UI.el('span', 'muted small', 'escucha el texto (shift para ir despacio)')); }
       wrap.appendChild(bar);
     }
     wrap.appendChild(body);
@@ -63,7 +63,7 @@ window.StageComprehend = (function () {
       ctx.results.comprehend = { correct: correct, total: total };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Comprensión', 'Reading') + ': ' + correct + ' / ' + total));
-      body.appendChild(UI.el('p', 'muted', correct === total ? 'All of them. The passage stays in the rotation.' : 'Re-read the passage any time — it stays in the rotation.'));
+      if (correct === total) body.appendChild(UI.el('p', 'muted', 'All of them.'));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 
@@ -119,7 +119,7 @@ window.StageComprehend = (function () {
           if (revealed) { i++; show(); return; }
           var r = C.checkExact(input.value, q.accept);
           if (r.pass) { correct++; fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { i++; show(); }, 400); }
-          else { fb.textContent = r.near ? 'Nearly — accents' : 'Not quite'; fb.className = 'feedback bad'; }
+          else { fb.textContent = r.near ? 'Nearly, check the accents' : 'Not quite'; fb.className = 'feedback bad'; }
         });
         reveal.addEventListener('click', function () {
           if (revealed) { i++; show(); return; }

@@ -72,7 +72,7 @@ window.Drills = (function () {
     host.appendChild(wrap);
     window.Deck.run(deckHost, cards, function (stats) {
       UI.clear(deckHost);
-      deckHost.appendChild(UI.el('h3', null, 'Listo — ' + stats.correct + ' / ' + stats.seen));
+      deckHost.appendChild(UI.el('h3', null, 'Listo: ' + stats.correct + ' / ' + stats.seen));
       var again = UI.el('button', 'ghost-btn', '← Practicar'); again.type = 'button'; again.addEventListener('click', backToTab);
       deckHost.appendChild(again);
     }, { logErrors: true });
@@ -87,7 +87,7 @@ window.Drills = (function () {
     exitB.addEventListener('click', backToTab);
     head.appendChild(exitB);
     wrap.appendChild(head);
-    wrap.appendChild(UI.el('p', 'muted', 'Pick one or more tenses, choose the verbs, and type each form. Graded by the engine — the same schedule as your daily practice.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Pick one or more tenses, choose the verbs, and type each form. It follows the same schedule as your daily practice.'));
 
     var chosen = {};
     wrap.appendChild(UI.el('h3', null, 'Tenses'));
@@ -192,7 +192,7 @@ window.Drills = (function () {
     exitB.addEventListener('click', backToTab);
     head.appendChild(exitB);
     wrap.appendChild(head);
-    wrap.appendChild(UI.el('p', 'muted', 'Browse and flip — good for meeting new material or a quick warm-up. No typing.'));
+    wrap.appendChild(UI.el('p', 'muted', 'Browse and flip. Good for meeting new material or a quick warm-up. No typing.'));
 
     var chips = UI.el('div', 'chip-row');
     function contentChip(text, fn) { var c = UI.el('button', 'vocab-chip', text); c.type = 'button'; c.addEventListener('click', fn); chips.appendChild(c); }
@@ -221,7 +221,7 @@ window.Drills = (function () {
       b.addEventListener('click', function () { window.Shell.openOverlay(); onTap(document.getElementById('stage-host')); });
       list.appendChild(b);
     }
-    row('🔡', 'Conjugación', 'Drill any tense — typed, engine-graded', showConjSetup);
+    row('🔡', 'Conjugación', 'Drill any tense, typed', showConjSetup);
     row('🃏', 'Flashcards', 'Browse & flip: vocab, verbs, conjugations', showFlashSetup);
     container.appendChild(list);
   }

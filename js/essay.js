@@ -90,7 +90,7 @@ window.Essay = (function () {
         det.appendChild(UI.el('summary', null,
           UI.t('Con qué vas a evaluarlo después', 'What you will mark it against')));
         rubric.dims.forEach(function (d) {
-          det.appendChild(UI.el('div', 'muted small', '· ' + d.label + ' — ' + d.en));
+          det.appendChild(UI.el('div', 'muted small', '· ' + d.label + ': ' + d.en));
         });
         wrap.appendChild(det);
       }
@@ -193,7 +193,7 @@ window.Essay = (function () {
         rubric.dims.forEach(function (d) {
           var sec = UI.el('div', 'rubric-dim');
           sec.appendChild(UI.el('div', 'rubric-dim-label', d.label +
-            ' <span class="muted">— ' + d.en + '</span>'));
+            ' <span class="muted">' + d.en + '</span>'));
           d.asks.forEach(function (a, i) {
             var key = d.id + ':' + i;
             var li = UI.el('label', 'rubric-ask');
@@ -240,8 +240,8 @@ window.Essay = (function () {
           rubric.dims.forEach(function (d) {
             d.asks.forEach(function (a, i) { total++; if (answers[d.id + ':' + i]) yes++; });
           });
-          score.textContent = yes + ' / ' + total + UI.t(' — lo que queda es tu lista de revisión.',
-            ' — what is left is your revision list.');
+          score.textContent = yes + ' / ' + total + UI.t('. Lo que queda es tu lista de revisión.',
+            '. What is left is your revision list.');
         }
         tally();
         after.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
