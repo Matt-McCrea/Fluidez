@@ -1,5 +1,6 @@
 /* Node test for the teaching scripts (data/scripts/a1.js). Run: node tools/test-scripts.js
- * Every lesson on the path in units a1-u01 to a1-u08 has a script; every script
+ * Every lesson on the path in the A1 band (units a1-u01 to a1-u13, with a2-u14
+ * and a2-u17, which sit inside it) has a script; every script
  * has the anatomy the evidence asks for (2 to 3 examples before a rule of under
  * 130 words, 4 to 6 read-and-pick items whose option lengths give nothing away,
  * 3 to 5 typed items whose expected Spanish passes the matcher, a personal
@@ -19,7 +20,8 @@ const M = window.LIB.match, C = window.Checker, SC = window.SCRIPTS_A1;
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
-const UNITS = ['a1-u01', 'a1-u02', 'a1-u03', 'a1-u04', 'a1-u05', 'a1-u06', 'a1-u07', 'a1-u08'];
+const UNITS = ['a1-u01', 'a1-u02', 'a1-u03', 'a1-u04', 'a1-u05', 'a1-u06', 'a2-u14', 'a1-u07', 'a1-u08', 'a2-u17',
+  'a1-u09', 'a1-u10', 'a1-u11', 'a1-u12', 'a1-u13'];
 const DASH = /[—–]|\s-\s|^-\s|\s-$/m;
 const JARGON = /\b(stress(ed)?|clitics?|register|conjugat\w*|infinitives?|pronouns?|adjectives?|nouns?|intonation|interrogatives?|subjunctive|indicative|imperative|masculine|feminine|morphemes?|syllables?|tenses?)\b/i;
 const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-záéíóúñ])/i;
@@ -30,9 +32,13 @@ const lines = (s) => String(s).split('\n').length;
 
 // ---- the lessons on the path, read from the course itself
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 47, 'expected 47 lessons on the path in units 1 to 8, found ' + want.length);
+ok(want.length === 76, 'expected 76 lessons on the path in the A1 band, found ' + want.length);
+// the band ends where COURSE_BANDS says it does: every unit listed sits inside it, and none is left out
+const bandEnd = window.COURSE_BANDS.A2;
+const inBand = [...new Set(window.COURSE_DAYS.slice(0, bandEnd).map((d) => d.unit))];
+ok(inBand.length === UNITS.length && inBand.every((u) => UNITS.indexOf(u) >= 0), 'the A1 band holds units ' + inBand.join(', '));
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in units 1 to 8'));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the A1 band'));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -161,7 +167,38 @@ Object.keys(SC).forEach((id) => {
  ['dc-deixis-espacial-a1', 2, '¿Vas a mi casa?'], ['dc-deixis-espacial-a1', 3, '¿Dónde tu hermano trabaja?'],
  ['nt-movimiento-estabilidad-a1', 1, '¡Ya vengo!'], ['nt-movimiento-estabilidad-a1', 2, 'Voy al trabajo en pie.'], ['nt-movimiento-estabilidad-a1', 4, 'Es la segunda calle a la derecho.'],
  ['gn-describir-lugar-a1', 1, 'Están dos cuartos y un baño.'], ['gn-describir-lugar-a1', 2, '¿Dónde hay el baño?'],
- ['task-direcciones', 3, 'Es enfrente del parque.'], ['task-direcciones', 2, 'Después volteas a la derecha.']
+ ['task-direcciones', 3, 'Es enfrente del parque.'], ['task-direcciones', 2, 'Después volteas a la derecha.'],
+ // a2-u14 and a2-u17, the two pasts inside the band
+ ['preterito', 0, 'Ayer trabajo hasta las nueve.'], ['preterito', 2, '¿Qué hizo el sábado?'], ['preterito', 3, 'El domingo fue al mercado.'], ['preterito', 4, 'Estuvo en casa todo el día.'],
+ ['dc-deixis-temporal-a2', 1, 'Después de comiendo, fuimos al parque.'], ['dc-deixis-temporal-a2', 2, 'Antes salir, llamo a mi mamá.'],
+ ['nt-expresion-verbal-a2', 0, 'Le pedí la hora.'], ['nt-expresion-verbal-a2', 2, 'Laura dijo viene a las ocho.'], ['nt-expresion-verbal-a2', 4, 'Le dije a Diego si quiere venir.'],
+ ['task-a2-ayer', 1, 'El domingo no hizo nada.'], ['task-a2-ayer', 2, 'Estuvo en casa toda la tarde.'],
+ ['gr-preterito-perfecto-a2', 1, 'Nunca he comí ajiaco.'], ['gr-preterito-perfecto-a2', 1, 'Nunca tengo comido ajiaco.'], ['gr-preterito-perfecto-a2', 3, 'Sí, he ido el año pasado.'], ['gr-preterito-perfecto-a2', 4, 'Hoy he ido al banco.'],
+ ['nt-anterioridad-a2', 0, 'Acabo de llegué.'], ['nt-anterioridad-a2', 0, 'Acabo llegar.'], ['nt-anterioridad-a2', 3, 'Todavía no trabajo allí.'], ['nt-anterioridad-a2', 4, '¿Cuánto es la clase?'],
+ ['nt-existencia-inexistencia-a2', 1, 'Fui nacido en 1990.'], ['nt-existencia-inexistencia-a2', 4, 'Mi abuela ya es antigua.'],
+ ['task-a2-experiencia', 2, '¿Cuándo has ido?'], ['task-a2-experiencia', 3, 'Nunca he veído esa película.'],
+ // units 9 to 13
+ ['gr-pronombre-se-a1', 0, 'Levanto a las siete.'], ['gr-pronombre-se-a1', 2, 'Mi hermano me levanta a las diez.'], ['gr-pronombre-se-a1', 4, 'Me no levanto temprano.'],
+ ['gr-presente-indicativo-valores-a1', 4, 'El viernes no puedemos.'], ['gr-presente-indicativo-valores-a1', 3, 'Quero ir, pero no podo.'],
+ ['gr-adverbios-lugar-tiempo-cantidad-a1', 1, 'Estoy mucho cansado.'], ['gr-adverbios-lugar-tiempo-cantidad-a1', 2, 'Sí, muy.'], ['gr-adverbios-lugar-tiempo-cantidad-a1', 3, 'Tengo muy hambre.'], ['gr-adverbios-lugar-tiempo-cantidad-a1', 4, 'Canta muy bueno.'],
+ ['nt-duracion-transcurso-a1', 0, 'Empiezo de trabajar a las nueve.'], ['nt-duracion-transcurso-a1', 1, 'Termino a trabajar a las cinco.'], ['nt-duracion-transcurso-a1', 4, 'Hoy hace muy frío.'], ['nt-duracion-transcurso-a1', 4, 'Hoy es frío.'],
+ ['task-rutina', 0, 'Levanto a las seis y media.'], ['task-rutina', 3, 'Casi nunca me acosto antes de las doce.'],
+ ['gr-infinitivo-usos-a1', 2, 'Necesitamos compramos pan.'], ['gr-infinitivo-usos-a1', 1, 'No puedo. Tengo trabajar.'], ['gr-infinitivo-usos-a1', 3, 'Aprendiendo un idioma es difícil.'], ['gr-infinitivo-usos-a1', 4, 'Es importante de dormir bien.'],
+ ['gr-oraciones-finales-a1', 0, 'Estudio español por viajar.'], ['gr-oraciones-finales-a1', 0, 'Estudio español viajar.'], ['gr-oraciones-finales-a1', 2, 'Para compro un carro.'],
+ ['fn-corregir-informacion-a1', 3, 'No conozco nadar.'], ['fn-corregir-informacion-a1', 4, 'No conozco tu hermano.'], ['fn-corregir-informacion-a1', 4, 'No sé a tu hermano.'],
+ ['task-pedir', 1, '¿Me puedes ayudar, por favor?'], ['task-pedir', 3, 'Tengo trabajar el domingo.'], ['task-pedir', 4, 'Quiero cambio esta camisa.'],
+ ['dc-conectores-a1', 1, 'Estudio español para quiero vivir aquí.'], ['dc-conectores-a1', 1, 'Estudio español por que quiero vivir aquí.'],
+ ['gr-relativo-que-a1', 1, 'El libro leo es muy bueno.'], ['gr-relativo-que-a1', 3, 'La profesora tengo es de Cali.'], ['gr-relativo-que-a1', 0, 'Tengo una amiga quien vive en Medellín.'],
+ ['gr-objeto-directo-a1', 0, 'Visito mis abuelos los domingos.'], ['gr-objeto-directo-a1', 1, 'Tengo a dos hermanos.'], ['gr-objeto-directo-a1', 2, '¿Conoces mi hermana?'], ['gr-objeto-directo-a1', 3, 'Creo tienes razón.'],
+ ['gr-cuantificadores-no-universales-a1', 0, 'Hablo un poca de español.'], ['gr-cuantificadores-no-universales-a1', 1, 'Hay mucho gente.'], ['gr-cuantificadores-no-universales-a1', 3, 'Estoy un poco de cansado.'], ['gr-cuantificadores-no-universales-a1', 4, 'El arriendo es demasiada cara.'],
+ ['task-contar', 0, 'Tengo una hermana vive en Cali.'],
+ ['gender-articles', 0, 'el casa blanca'], ['gender-articles', 1, 'las casas blanca'], ['gender-articles', 3, 'Los carros nuevos son caro.'], ['gender-articles', 4, 'La cocina es muy pequeño.'],
+ ['gr-genero-sustantivos-a1', 0, 'la problema'], ['gr-genero-sustantivos-a1', 1, 'el mano'], ['gr-genero-sustantivos-a1', 3, 'El agua está frío.'], ['gr-genero-sustantivos-a1', 4, 'El español es una idioma bonita.'],
+ ['gr-numero-sustantivos-a1', 0, 'los hotels'], ['gr-numero-sustantivos-a1', 1, 'dos lápizes'], ['gr-numero-sustantivos-a1', 3, 'Hay tres hoteles nuevo.'],
+ ['gr-articulo-definido-a1', 0, 'Me gusta café.'], ['gr-articulo-definido-a1', 1, 'Voy a el banco.'], ['gr-articulo-definido-a1', 2, 'Vengo de el trabajo.'], ['gr-articulo-definido-a1', 4, 'Mi hermana es una médica.'],
+ ['task-revisar', 0, 'Tengo una casa pequeño.'], ['task-revisar', 3, 'Hay dos gatos negro en el jardín.'],
+ ['gn-generos-escritos-a1', 2, 'Vuelvo en las seis.'], ['gn-generos-escritos-a1', 1, 'Voy al supermercado.'],
+ ['task-escribir', 0, 'En el final no puedo el sábado.'], ['task-escribir', 1, 'Hace muy calor y la comida es muy buena.']
 ].forEach(([id, i, wrong]) => {
   const t = SC[id] && SC[id].yourTurn[i];
   if (!t) { ok(false, id + '.yourTurn[' + i + '] missing'); return; }
