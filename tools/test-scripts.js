@@ -1,5 +1,5 @@
 /* Node test for the teaching scripts (data/scripts/a1.js). Run: node tools/test-scripts.js
- * Every lesson on the path in units a1-u01 to a1-u03 has a script; every script
+ * Every lesson on the path in units a1-u01 to a1-u08 has a script; every script
  * has the anatomy the evidence asks for (2 to 3 examples before a rule of under
  * 130 words, 4 to 6 read-and-pick items whose option lengths give nothing away,
  * 3 to 5 typed items whose expected Spanish passes the matcher, a personal
@@ -19,7 +19,7 @@ const M = window.LIB.match, C = window.Checker, SC = window.SCRIPTS_A1;
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
-const UNITS = ['a1-u01', 'a1-u02', 'a1-u03'];
+const UNITS = ['a1-u01', 'a1-u02', 'a1-u03', 'a1-u04', 'a1-u05', 'a1-u06', 'a1-u07', 'a1-u08'];
 const DASH = /[—–]|\s-\s|^-\s|\s-$/m;
 const JARGON = /\b(stress(ed)?|clitics?|register|conjugat\w*|infinitives?|pronouns?|adjectives?|nouns?|intonation|interrogatives?|subjunctive|indicative|imperative|masculine|feminine|morphemes?|syllables?|tenses?)\b/i;
 const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-záéíóúñ])/i;
@@ -30,9 +30,9 @@ const lines = (s) => String(s).split('\n').length;
 
 // ---- the lessons on the path, read from the course itself
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 20, 'expected 20 lessons on the path in units 1 to 3, found ' + want.length);
+ok(want.length === 47, 'expected 47 lessons on the path in units 1 to 8, found ' + want.length);
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in units 1 to 3'));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in units 1 to 8'));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -137,7 +137,31 @@ Object.keys(SC).forEach((id) => {
  ['gr-interrogativos-a1', 4, '¿Cuántos hermanas tienes?'], ['gr-pronombre-sujeto-a1', 1, '¿Vives aquí?'], ['gr-pronombre-sujeto-a1', 2, '¿Vive aquí?'],
  ['fn-pedir-informacion-a1', 3, 'Estudio español para quiero vivir aquí.'], ['gr-adverbios-afirmacion-negacion-a1', 1, 'Yo también.'],
  ['gr-adverbios-afirmacion-negacion-a1', 0, 'Yo tampoco.'], ['fn-dirigirse-a1', 2, 'Encantado.'], ['task-cortesia', 0, 'Oye, ¿tiene hora?'],
- ['task-cortesia', 1, 'Disculpe, ¿tienes hora, por favor?'], ['fn-establecer-comunicacion-a1', 3, '¡Hasta lunes!'], ['fn-identificar-a1', 0, 'Sí, yo.']
+ ['task-cortesia', 1, 'Disculpe, ¿tienes hora, por favor?'], ['fn-establecer-comunicacion-a1', 3, '¡Hasta lunes!'], ['fn-identificar-a1', 0, 'Sí, yo.'],
+ // units 4 to 8
+ ['nt-cantidad-numerica-a1', 2, 'Hay mucho gente en la calle.'], ['nt-cantidad-numerica-a1', 1, 'Vivo en el cuatro piso.'],
+ ['gr-numerales-a1', 0, 'Tengo veintiuno años.'], ['gr-numerales-a1', 2, 'Es mi primero día.'], ['gr-numerales-a1', 3, 'Es la tercer vez.'], ['gr-numerales-a1', 4, 'Cuesta ciento mil pesos.'],
+ ['nt-referencias-generales-a1', 0, 'Son la una.'], ['nt-referencias-generales-a1', 3, 'No trabajo en sábado.'], ['nt-referencias-generales-a1', 4, 'Nunca no como pescado.'],
+ ['nt-valor-precio-a1', 1, '¿Cuánto cuesta los mangos?'], ['nt-valor-precio-a1', 4, 'La mesa es dos metros.'], ['task-quedar', 3, 'Nos vemos en el viernes a las siete.'],
+ ['gr-verbos-predicativos-tipos-a2', 0, 'Yo gusto el café.'], ['gr-verbos-predicativos-tipos-a2', 1, 'Me gusta los perros.'], ['gr-verbos-predicativos-tipos-a2', 3, 'Me duelen mis pies.'],
+ ['fn-preguntar-gustos-a2', 2, 'Mi hermano gusta el fútbol.'], ['fn-preguntar-gustos-a2', 2, 'A mi hermano gusta el fútbol.'],
+ ['nt-evaluacion-general-a1', 0, 'Es un bueno libro.'], ['nt-evaluacion-general-a1', 1, 'Canta muy buena.'], ['nt-evaluacion-general-a1', 2, 'Estoy bueno, gracias.'],
+ ['fn-valorar-a1', 3, 'Soy en un hospital.'], ['task-gustos', 2, 'A mí tampoco.'], ['gn-conversacion-transaccional-a1', 2, 'Aquí tienes.'],
+ ['gr-articulo-indefinido-a1', 0, 'Hay el banco en la plaza.'], ['gr-articulo-indefinido-a1', 4, 'El este libro es muy bueno.'],
+ ['nt-existencia-a1', 1, 'Mi barrio hay dos parques.'], ['nt-existencia-a1', 1, 'En mi barrio están dos parques.'], ['nt-existencia-a1', 4, 'La tienda es cerrada.'], ['task-cafe', 4, '¿Cuánto te debo?'],
+ ['gr-genero-adjetivo-a1', 1, 'Ana es muy feliza.'], ['gr-genero-adjetivo-a1', 2, 'Es inglés.'], ['gr-genero-adjetivo-a1', 3, 'Mis amigos son muy simpático.'],
+ ['gr-adjetivos-calificativos-a1', 1, 'De los dos suéteres, prefiero la negra.'], ['gr-adjetivos-calificativos-a1', 3, 'La comida está muy riquísima.'],
+ ['gr-posesivos-forma-a1', 0, 'Mi papás viven en Cali.'], ['gr-posesivos-forma-a1', 2, '¿Quién es esto?'], ['gr-posesivos-forma-a1', 3, 'Nuestro casa es pequeña.'],
+ ['gr-demostrativos-distribucion-a1', 0, 'La esta camisa es muy bonita.'], ['gr-demostrativos-distribucion-a1', 1, 'Estas zapatos son nuevos.'], ['gr-demostrativos-distribucion-a1', 4, 'Ese, por favor.'],
+ ['nt-familia-a1', 2, 'Somos cuatro de nosotros.'], ['nt-familia-a1', 3, 'Mi abuelo es ochenta años.'],
+ ['gn-describir-persona-a1', 0, 'Es alto y es el pelo corto.'], ['gn-describir-persona-a1', 1, 'Tiene sus ojos azules.'],
+ ['gn-describir-objeto-a1', 0, 'La mesa es madera.'], ['gn-describir-objeto-a1', 1, 'Sirve para abre botellas.'],
+ ['task-describir', 1, 'Su zapatos son rojos.'], ['task-describir', 2, 'Es al lado de la ventana.'],
+ ['nt-localizacion-a1', 1, 'El banco está al lado de el parque.'], ['nt-localizacion-a1', 2, 'Mi casa está cerca la estación.'], ['nt-localizacion-a1', 2, 'Mi casa es cerca de la estación.'],
+ ['dc-deixis-espacial-a1', 2, '¿Vas a mi casa?'], ['dc-deixis-espacial-a1', 3, '¿Dónde tu hermano trabaja?'],
+ ['nt-movimiento-estabilidad-a1', 1, '¡Ya vengo!'], ['nt-movimiento-estabilidad-a1', 2, 'Voy al trabajo en pie.'], ['nt-movimiento-estabilidad-a1', 4, 'Es la segunda calle a la derecho.'],
+ ['gn-describir-lugar-a1', 1, 'Están dos cuartos y un baño.'], ['gn-describir-lugar-a1', 2, '¿Dónde hay el baño?'],
+ ['task-direcciones', 3, 'Es enfrente del parque.'], ['task-direcciones', 2, 'Después volteas a la derecha.']
 ].forEach(([id, i, wrong]) => {
   const t = SC[id] && SC[id].yourTurn[i];
   if (!t) { ok(false, id + '.yourTurn[' + i + '] missing'); return; }

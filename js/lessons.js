@@ -552,7 +552,7 @@
      * section and both use "la profesora que tengo". */
     { title: 'El relativo que: una palabra, tres trabajos',
       ids: ['gr-relativo-que-a1', 'gr-subordinadas-adjetivas-a1'] },
-    { title: 'Los demostrativos: este, ese, aquel — y dónde van',
+    { title: 'Los demostrativos: este, ese, aquel, y dónde van',
       // A1 taught where a demonstrative sits in the phrase; the forms it sits
       // there in were an A2 lesson. WORKLIST.md files gr-demostrativos-a2
       // against the A1 spec item, which is the tell: it was always the A1 half.
