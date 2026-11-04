@@ -1,5 +1,5 @@
 /* Node test for the B1 teaching scripts (data/scripts/b1.js). Run: node tools/test-scripts-b1.js
- * Every lesson on the path in the first eight B1 units (read from COURSE_BANDS.B1,
+ * Every lesson on the path in the first twelve B1 units (read from COURSE_BANDS.B1,
  * not hard-coded) has a script; every script has the anatomy of the A1 scripts
  * (tools/test-scripts.js: 2 to 3 examples before a rule, 4 to 6 read-and-pick
  * items whose option lengths give nothing away, 3 to 5 typed items whose
@@ -25,13 +25,19 @@
  *     the course has taught since A2: podría-, debería-, gustaría-;
  *   - before the negative-command lesson (impneg, in b1-u32) no sentence
  *     opens with a tú command in its no + subjunctive shape. No te preocupes
- *     is the one exception: the course has taught it as a whole phrase since A2. */
+ *     is the one exception: the course has taught it as a whole phrase since A2;
+ *   - five more dates, each read from the first day whose lesson teaches the
+ *     node (data/lesson-nodes.js): había + participle from g:pluperfect
+ *     (b1-u36), haya + participle from g:subj-perfect, ponerse a + a verb
+ *     from p:ponerse-a-inf, volver a + a verb from p:volver-a-inf, and an
+ *     indirect question (sé, sabes, pregunta, dime... before si or a question
+ *     word) from g:indirect-questions. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
 global.window = {};
 function load(rel) { (0, eval)(fs.readFileSync(path.join(ROOT, rel), 'utf8')); }
-['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js', 'js/engine.js', 'js/checker.js', 'data/course.js'].forEach(load);
+['data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/connectors.js', 'js/engine.js', 'js/checker.js', 'data/course.js', 'data/lesson-nodes.js'].forEach(load);
 (0, eval)(fs.readFileSync(path.join(ROOT, 'js/lib.bundle.js'), 'utf8') + '\n;globalThis.LIB = LIB;');
 window.LIB = globalThis.LIB;
 load('data/scripts/b1.js');
@@ -52,8 +58,8 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first eight units from the start of B1
-const N_UNITS = 8;
+// ---- the lessons on the path: the first twelve units from the start of B1
+const N_UNITS = 12;
 const b1 = window.COURSE_BANDS.B1;
 const units = [];
 for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -63,7 +69,7 @@ for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) 
 const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B1, found ' + UNITS.length);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 67, 'expected 67 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 110, 'expected 110 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'gr-presente-subjuntivo-b1', 'the first B1 day should be the present subjunctive, found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
@@ -75,6 +81,12 @@ ok(UNITS.indexOf(window.COURSE_DAYS[DAY['condicional']].unit) === 3, 'the condit
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
 Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(', ')));
 ok(DAY['impneg'] != null && UNITS.indexOf(window.COURSE_DAYS[DAY['impneg']].unit) === 5, 'the negative commands should sit in the sixth B1 unit');
+// the day a node is first taught: the first lesson on the path whose LESSON_NODES entry teaches it
+const NODE_DAY = {};
+window.COURSE_DAYS.forEach((d, i) => { const n = d.lesson && window.LESSON_NODES[d.lesson]; if (n) n.teaches.forEach((t) => { if (NODE_DAY[t] == null) NODE_DAY[t] = i; }); });
+const DATED = { pluperfect: 'g:pluperfect', perfsubj: 'g:subj-perfect', ponerseA: 'p:ponerse-a-inf', volverA: 'p:volver-a-inf', indirect: 'g:indirect-questions' };
+Object.keys(DATED).forEach((k) => ok(NODE_DAY[DATED[k]] != null, 'no lesson on the path teaches ' + DATED[k]));
+ok(NODE_DAY['g:pluperfect'] != null && UNITS.indexOf(window.COURSE_DAYS[NODE_DAY['g:pluperfect']].unit) === 9, 'the pluperfect should open the tenth B1 unit');
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -144,6 +156,35 @@ function laterForms(es, day) {
     const an = E.analyzeToken(tok) || [];
     if (an.length && an.every(later)) out.push(tok + ' (' + LATER_TENSES[an[0].tense] + ')');
   }
+  return out;
+}
+
+// compound tenses, two periphrases and indirect questions, each legal only from the day its node is taught
+const PARTICIPLE = /^([a-záéíóúñ]*(ado|ido|ído)|hecho|dicho|visto|escrito|puesto|vuelto|muerto|roto|abierto|cubierto|resuelto|devuelto|descubierto|satisfecho|propuesto|compuesto|supuesto|frito|impreso)$/;
+const HABIA = /^hab(ía|ías|íamos|ían)$/, HAYA = /^haya(s|mos|n)?$/;
+const PONERSE_A = /\b(pongo|pones|pone|ponemos|ponen|puse|pusiste|puso|pusimos|pusieron|ponía|ponías|poníamos|ponían|pondré|pondrás|pondrá|pondremos|pondrán|ponga|pongas|pongamos|pongan|poner(me|te|se|nos))\s+a\s+[a-záéíóúñ]+(ar|er|ir)\b/i;
+const VOLVER_A = /\b(vuelvo|vuelves|vuelve|volvemos|vuelven|volví|volviste|volvió|volvimos|volvieron|volvía|volvías|volvíamos|volvían|volveré|volverás|volverá|volveremos|volverán|vuelva|vuelvas|volvamos|vuelvan|volver(me|te|se|nos|lo|la|le)?)\s+a\s+[a-záéíóúñ]+(ar|er|ir)(me|te|se|lo|la|le|nos|los|las|les)?\b/i;
+const ASK_KNOW = /^(sé|sabes|sabe|sabemos|saben|sabía|sabías|sabíamos|sabían|supe|supiste|supo|supimos|supieron|saber|sepa|pregunto|preguntas|pregunta|preguntamos|preguntan|pregunté|preguntaste|preguntó|preguntaron|preguntaba|preguntar|preguntarle|pregúntale|pregúntele|dime|dígame|díganme|decirme|decirle|decirnos|explícame|explicarme|entiendo|entiendes|recuerdo|recuerdas|acuerdo|acuerdas|averiguar|imagino|imaginas|idea)$/;
+const WH = /^(si|qué|dónde|adónde|cuándo|cómo|quién|quiénes|cuál|cuáles|cuánto|cuánta|cuántos|cuántas)$/;
+// The indirect-question date is checked from b1-u35 on. Units b1-u27 to b1-u34 were scripted before the
+// check and hold five, in fourteen strings, each a fixed chunk in context (nt-acontecimiento-b1 Nadie sabe cómo pasó;
+// gr-condicionales-b1 No sé si vendrá; task-b1-consejo No sé qué hacer and preguntar si puedes;
+// task-b1-alegria No sabes cuánto me alegro): left for the owner to rule on, not rewritten here.
+const IQ_FROM = DAY[want.find((id) => window.COURSE_DAYS[DAY[id]].unit === UNITS[8])];
+function laterShapes(es, day, from) {
+  const out = [];
+  for (const clause of plain(es).toLowerCase().split(/[.!?¿¡;:\n]+/)) {
+  const t = clause.split(/[^a-záéíóúñü]+/).filter(Boolean);
+  for (let i = 0; i + 1 < t.length; i++) {
+    if (HABIA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:pluperfect']) out.push(t[i] + ' ' + t[i + 1] + ' (pluperfect)');
+    if (HAYA.test(t[i]) && PARTICIPLE.test(t[i + 1]) && day < NODE_DAY['g:subj-perfect']) out.push(t[i] + ' ' + t[i + 1] + ' (perfect subjunctive)');
+    // an indirect question: a verb of knowing, asking or telling, then si or a question word (prepositions may sit between)
+    let j = i + 1; while (j < t.length && /^(a|de|en|con|por|para)$/.test(t[j]) && j < i + 2) j++;
+    if (ASK_KNOW.test(t[i]) && j < t.length && WH.test(t[j]) && day < NODE_DAY['g:indirect-questions'] && day >= from) out.push(t.slice(i, j + 1).join(' ') + ' (indirect question)');
+  }
+  }
+  if (day < NODE_DAY['p:ponerse-a-inf'] && PONERSE_A.test(plain(es))) out.push(plain(es).match(PONERSE_A)[0] + ' (ponerse a)');
+  if (day < NODE_DAY['p:volver-a-inf'] && VOLVER_A.test(plain(es))) out.push(plain(es).match(VOLVER_A)[0] + ' (volver a)');
   return out;
 }
 
@@ -222,6 +263,8 @@ Object.keys(SC).forEach((id) => {
       ok(!later.length, x.p + ': a form the course builds later: ' + later.join(', '));
       const neg = negCommands(x.v, day);
       ok(!neg.length, x.p + ': a negative command before the impneg lesson: ' + neg.join(', '));
+      const shapes = laterShapes(x.v, day, IQ_FROM);
+      ok(!shapes.length, x.p + ': a shape the course teaches later: ' + shapes.join(', '));
     } else {
       const J = /^hook\./.test(x.p.slice(id.length + 1)) ? JARGON : JARGON_B1;
       ok(!J.test(plain(x.v)), x.p + ': grammar jargon on screen: "' + (plain(x.v).match(J) || [''])[0] + '"');
