@@ -66,6 +66,29 @@ window.BuildIt = (function () {
     }
     return found;
   }
+  /* "Voy a cocinar el domingo": the plan form. The span the bank marks may be only *Voy* or all of *Voy a comer*;
+   * either way the part a person change rewrites is the form of *ir* alone, and the English is "I'm going to". */
+  var IR_FORM = { voy: 1, vas: 1, va: 1, vamos: 1, van: 1 };
+  var GOING = { 0: ["I'm going to", "I'm not going to", ["i'm going to", 'i am going to']],
+    1: ["you're going to", "you're not going to", ["you're going to", 'you are going to']],
+    2: ['he/she is going to', 'he/she is not going to', ["he's going to", "she's going to", 'he is going to', 'she is going to']],
+    3: ["we're going to", "we're not going to", ["we're going to", 'we are going to']],
+    5: ["they're going to", "they're not going to", ["they're going to", 'they are going to']] };
+  function periOf(r) {
+    if (!r.f || r.f.length !== 2 || r.f[0] !== 0) return null;
+    var m = /^([A-Za-zÁÉÍÓÚáéíóú]+) a ([a-záéíóúñ]+)(?=[\s.!]|$)/.exec(r.es);
+    if (!m || !IR_FORM[m[1].toLowerCase()] || !/(ar|er|ir|ír)$/.test(m[2])) return null;
+    var len = m[1].length, span = r.es.slice(0, r.f[1]);
+    if (span.length !== len && span !== m[0]) return null;      // the marked span is the form, or the form and its infinitive
+    return len;
+  }
+  function enStretchPeri(en, idx) {
+    var vs = GOING[idx] && GOING[idx][2], low = en.toLowerCase().replace(/\u2019/g, "'");
+    for (var i = 0; vs && i < vs.length; i++) {
+      if (low.indexOf(vs[i]) === 0) return { at: 0, len: vs[i].length };
+    }
+    return null;
+  }
   var TRIGGER = /\b(que|ojal[aá]|quiz[aá]s?|tal vez)\b/i;
 
   /* The row's English must contain the engine's English for the original verb
@@ -73,6 +96,12 @@ window.BuildIt = (function () {
   function enStretch(en, ph) {
     var variants = [ph];
     if (/^he\/she /.test(ph)) variants.push(ph.replace('he/she', 'he'), ph.replace('he/she', 'she'));
+    /* the sentence may contract be: "We're from Cali" for "we are" */
+    var cm = /^(I|you|he\/she|we|they) (am|are|is)\b/.exec(ph);
+    if (cm) {
+      var subs = cm[1] === 'he/she' ? ['he', 'she'] : [cm[1]], suf = { am: "'m", are: "'re", is: "'s" }[cm[2]], tail = ph.slice(cm[0].length);
+      subs.forEach(function (sj) { variants.push(sj + suf + tail, sj + '\u2019' + suf.slice(1) + tail); });
+    }
     for (var i = 0; i < variants.length; i++) {
       var at = en.toLowerCase().indexOf(variants[i].toLowerCase());
       if (at >= 0 && en.toLowerCase().indexOf(variants[i].toLowerCase(), at + 1) < 0) return { at: at, len: variants[i].length };
@@ -127,8 +156,10 @@ window.BuildIt = (function () {
     var es = pre + (st.neg ? 'no ' : '') + (st.pron ? base.np.clitic + ' ' : '') + form + post;
     if (f0 === 0 && (st.neg || st.pron || st.swap || st.idx !== base.idx0 || st.tense !== base.tense0)) es = cap(es);
     // English
-    var ph = enP(base.v, st.tense, st.idx), enVerb = ph;
-    if (st.neg) {
+    var ph = base.peri ? GOING[st.idx][0] : enP(base.v, st.tense, st.idx), enVerb = ph;
+    if (base.peri) {
+      if (st.neg) enVerb = GOING[st.idx][1];
+    } else if (st.neg) {
       var parts = ph.split(' '), subj = parts[0];
       var b = enP(base.v, 'presente', 0);
       if (/^I (am|have to|can|must|should)\b/.test(b) || /^I am\b/.test(b)) {
@@ -155,6 +186,8 @@ window.BuildIt = (function () {
 
   /* ---- chains ------------------------------------------------------------ */
   function baseOf(r, known) {
+    var peri = periOf(r);
+    if (peri) { var pr = {}; for (var pk in r) pr[pk] = r[pk]; pr.f = [0, peri]; r = pr; }
     if (r.es.indexOf('\n') >= 0 || /[¿?]/.test(r.es) || /[(\n]/.test(r.en)) return null;
     var n = words(r.es).length;
     if (n < 3 || n > 6) return null;
@@ -172,7 +205,7 @@ window.BuildIt = (function () {
     if (!rd) return null;
     /* a second finite verb in the row would be left behind by a person change */
     var others = words(r.es.slice(r.f[1])), En0 = E();
-    for (var o = 0; o < others.length && rd.inf !== 'ser' && rd.inf !== 'estar'; o++) {   // (casa is not casar after estoy en)
+    for (var o = peri ? 2 : 0; o < others.length && rd.inf !== 'ser' && rd.inf !== 'estar'; o++) {   // (the plan form's own *a* and infinitive are skipped)   // (casa is not casar after estoy en)
       var tk = others[o].toLowerCase().replace(/[^a-záéíóúüñ]/g, '');
       var an = tk ? (En0.analyzeToken(tk) || []) : [];
       for (var q = 0; q < an.length; q++) if (an[q].tense === 'presente') return null;
@@ -180,11 +213,12 @@ window.BuildIt = (function () {
     var rest = pre + ' ' + r.es.slice(r.f[1]);
     if (CLITIC.test(rest)) return null;
     var en = r.en.replace(/[.!]$/, ''), enEnd = (r.en.match(/[.!]$/) || ['.'])[0];
-    var ph = enP(rd.v, rd.tense, rd.idx);
-    var st = enStretch(en, ph);
+    if (peri && (rd.inf !== 'ir' || rd.tense !== 'presente')) return null;
+    var ph = peri ? (GOING[rd.idx] || [''])[0] : enP(rd.v, rd.tense, rd.idx);
+    var st = peri ? enStretchPeri(en, rd.idx) : enStretch(en, ph);
     if (!st || (st.at !== 0 && !trig)) return null;               // the verb opens the English too
     var base = { span: span, v: rd.v, inf: rd.inf, idx0: rd.idx, tense0: rd.tense, en: en, enEnd: enEnd, stretch: st, tenses: [], np: null,
-                 form0: span.toLowerCase() };
+                 form0: span.toLowerCase(), peri: !!peri, row: r };
     if (rd.tense === 'presente' && !TIME_WORDS.test(r.es) && known && !(rd.v.forms && rd.v.forms.preterito) && rd.v.type !== 'ir') {
       var lesson = TENSE_LESSON[rd.v.type], ok = false;
       if (lesson) known.forEach(function (id) { if (lesson.test(id)) ok = true; });
@@ -227,6 +261,7 @@ window.BuildIt = (function () {
   }
 
   function chainFor(r, base, known, rng) {
+    if (base.row) r = base.row;
     var En = E(), changes = [], step1 = { en: r.en, es: r.es, accept: (r.a || []).slice(), from: [], change: null };
     var sw = base.swaps;
     var persons = shuffle(PERSON_IDX.filter(function (i) { return i !== base.idx0; }), rng);
@@ -413,11 +448,14 @@ window.BuildIt = (function () {
   function dupMsg() { return tr('Esa ya está en tu guion.', 'That one is already in your script.'); }
   function constraint(nodes, opts) {
     var spec = constraintBase(nodes);
+    /* The day's script knows the point its lesson teaches: its personal-sentence checklist replaces the node guess. */
+    if (opts && opts.constraints && opts.constraints.length) spec = { constraints: opts.constraints.map(function (c) { var o = {}; for (var k in c) o[k] = c[k]; return o; }), text: 'with today\'s point' };
     var cd = (opts && opts.canDo) || (nodes && nodes.forEach ? canDoFor(Array.from(nodes)) : '');
     if (cd) {
-      spec.prompt = 'One true line for your script: ' + cd.charAt(0).toLowerCase() + cd.slice(1) + '.';
+      cd = cd.replace(/[.\s]+$/, '');
+      spec.prompt = 'Write one true line for your script: ' + cd.charAt(0).toLowerCase() + cd.slice(1) + '.';
       if (spec.constraints[0] && spec.constraints[0].type === 'minWords') { spec.constraints[0].n = 3; spec.text = 'in your own words'; }
-    } else spec.prompt = 'One true line for your script: say something about you ' + spec.text + '.';
+    } else spec.prompt = 'Write one true line for your script: say something about you ' + spec.text + '.';
     return spec;
   }
   function constraintBase(nodes) {

@@ -36,6 +36,26 @@ window.StageApply = (function () {
   }
   function tokensOf(m, s) { return m.canon(s).toks.map(function (x) { return x.t; }); }
 
+  /* The same verb and person in the other mood (hables for hablas): the person is right, the form is not. */
+  function moodSlip(ta, tb) {
+    var diff = [], En = window.ENGINE;
+    if (!En || !En.analyzeToken || ta.length !== tb.length) return null;
+    for (var i = 0; i < ta.length; i++) if (ta[i] !== tb[i]) diff.push(i);
+    if (diff.length !== 1) return null;
+    var ra, rb;
+    try { ra = En.analyzeToken(ta[diff[0]]) || []; rb = En.analyzeToken(tb[diff[0]]) || []; } catch (e) { return null; }
+    var subj = function (r) { return /subj$/.test(r.tense); };
+    for (var x = 0; x < ra.length; x++) for (var y = 0; y < rb.length; y++) {
+      var A = ra[x], B = rb[y];
+      if (A.inf === B.inf && A.person === B.person && subj(A) !== subj(B)) {
+        return { matched: true, kind: 'mood', tier: 'assert',
+          hint: T('Persona correcta, forma equivocada: este lleva ' + (subj(B) ? 'el subjuntivo' : 'la forma ordinaria') + '.',
+            'Right person, wrong form: this one takes ' + (subj(B) ? 'the subjunctive' : 'the ordinary form') + '.') };
+      }
+    }
+    return null;
+  }
+
   /* What the trap rules make of a wrong text: { matched, hint, kind } or null
    * when nothing can be said. A lesson pitfall wins; then the plain diagnosis
    * (verb ending, ser or estar, por or para, article, ...). Location-only
@@ -48,6 +68,8 @@ window.StageApply = (function () {
       var en = it.en || ((/«([^»]*)»\s*$/.exec(String(it.text || ''))) || [])[1] || '';
       var ta = tokensOf(m, sentenceOf(it, typed)), tb = tokensOf(m, sentenceOf(it, answer));
       if (ta.join(' ') === tb.join(' ')) return null;
+      var mh = moodSlip(ta, tb);
+      if (mh) return mh;
       var d = m.diagnose(ta, tb), tr;
       if (it.bankKind === 'gap' && m.gapTrap) {
         var pre = String(it.text || '').split('___')[0];
@@ -278,7 +300,7 @@ window.StageApply = (function () {
     function choiceId(it) { return 'ac:' + (it.focus || E.normalize(it.text)); }
     function showChoice(it) {
       var pr = choicePrompt(it);
-      body.appendChild(UI.el('div', 'cloze-text', String(pr.text).replace('___', '<span class="blank">＿＿＿</span>')));
+      body.appendChild(UI.el('div', 'cloze-text', String(pr.text).replace('___', '<span class="blank">＿＿＿</span>').replace(/\*([^*\n]+)\*/g, '<b>$1</b>')));
       body.appendChild(UI.el('p', 'muted small', pr.q
         + (it.options.some(UI.isNothing) ? UI.t(' ("(nada)" significa que aquí no va nada.)', ' ("(nothing)" means nothing goes here.)') : '')));
       var fb = UI.el('div', 'feedback');

@@ -33,6 +33,14 @@ const mood = { type: 'cloze', text: 'Quiero que tú ___ (venir) mañana.  «I wa
 h = F.hintFor(mood, 'vienes', 'vengas');
 ok(h && h.matched && h.kind === 'mood', 'mood swap named'); fired.push('mood (' + h.tier + '): ' + h.hint);
 
+// the same verb and person in the other mood: the person hint is wrong, the form hint is right
+window.ENGINE = { analyzeToken: (w) => ({ hables: [{ inf: 'hablar', tense: 'presubj', person: 'tú' }], hablas: [{ inf: 'hablar', tense: 'presente', person: 'tú' }] })[w] || [] };
+const ind = { type: 'cloze', text: 'Tú ___ (hablar) español.', inf: 'hablar', tense: 'presente', person: 'tú' };
+h = F.hintFor(ind, 'hables', 'hablas');
+ok(h && h.kind === 'mood' && /Right person, wrong form: this one takes the ordinary form/.test(h.hint), 'subjunctive slip where the indicative belongs'); fired.push('mood slip: ' + h.hint);
+h = F.hintFor(ind, 'hablas', 'hables');
+ok(h && /this one takes the subjunctive/.test(h.hint), 'indicative slip where the subjunctive belongs');
+window.ENGINE = {};
 // aspect: preterite for imperfect in a habitual sentence
 const asp = { type: 'cloze', text: 'Cuando era niño, yo siempre ___ (jugar) en el parque.  «When I was a kid, I always used to play in the park.»', inf: 'jugar', tense: 'imperfecto', person: 'yo' };
 h = F.hintFor(asp, 'jugué', 'jugaba');

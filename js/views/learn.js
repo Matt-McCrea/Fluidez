@@ -345,10 +345,14 @@ window.StageLearn = (function () {
       list.appendChild(box);
     });
     wrap.appendChild(list);
-    wrap.appendChild(UI.nextBtn(UI.t('Entendido', 'Got it'), function () {
+    var gotB = UI.nextBtn(UI.t('Entendido', 'Got it'), function () {
+      if (gotB.disabled) return;
+      gotB.disabled = true;                                 // one tap only
       cards.forEach(function (c) { S.enrol(c.id, 1); });   // first review is tomorrow
+      UI.clear(host);                                       // the card leaves with the tap
       done();
-    }));
+    });
+    wrap.appendChild(gotB);
     host.appendChild(wrap);
   }
 
@@ -368,8 +372,14 @@ window.StageLearn = (function () {
     if (f.type === 'practice') return teachPractice(host, ctx, done);
     var l = ctx.lesson;
     if (!l) { done(); return; }
-    withScript(host, ctx, l, function (sc) {
-      if (sc) runScript(host, ctx, l, sc, done);
+    withScript(host, ctx, l, function (sc, served) {
+      if (sc && served) {
+        /* The serving script already taught this idea on its own day. Today plays only what is new:
+         * its register and translate blocks, a fresh personal line, the pitfalls. Without those, the old lesson. */
+        if (!(sc.register && sc.register.length) && !(sc.translate && sc.translate.length)) runOldLesson(host, ctx, l, done);
+        else runScript(host, ctx, l, secondDay(sc), done);
+      }
+      else if (sc) runScript(host, ctx, l, sc, done);
       else runOldLesson(host, ctx, l, done);
     });
   }
@@ -416,7 +426,7 @@ window.StageLearn = (function () {
     if (window.Phrases) {
       var ps = window.Phrases.forLesson(l.id).slice(0, 6);
       if (only) ps = ps.filter(function (p) { return only.indexOf(p.id) !== -1; });
-      ps.forEach(function (p) { S.enrol(p.id); });
+      ps.forEach(function (p) { S.enrol(p.id, 1); });   // first asked tomorrow, never in today's Five minutes
     }
   }
   function plainEs(s) {
@@ -458,9 +468,14 @@ window.StageLearn = (function () {
    * (`serves: [...]`, used at C1 where a run of notion lessons is one idea). */
   function scriptIn(table, id) {
     if (table[id]) return table[id];
+    return servingScript(table, id);
+  }
+  function servingScript(table, id) {
     for (var k in table) { var sc = table[k]; if (sc && sc.serves && sc.serves.indexOf(id) !== -1) return sc; }
     return null;
   }
+  // True when the lesson has no script of its own and is reached through another script's `serves`.
+  function servedBy(table, id) { return !table[id] && !!servingScript(table, id); }
   var SCRIPT_BANDS = { A1: 1, A2: 1, B1: 1, B2: 1, C1: 1 };       // band files that exist
   var scriptWaiters = {}, scriptFailed = {};
   var SCRIPT_WAIT_MS = 2500;
@@ -497,17 +512,17 @@ window.StageLearn = (function () {
   function withScript(host, ctx, l, cb) {
     var band = scriptBand(ctx, l), key = 'SCRIPTS_' + band;
     if (!band || !SCRIPT_BANDS[band] || scriptFailed[band]) { cb(null); return; }
-    if (window[key]) { cb(scriptIn(window[key], l.id)); return; }
+    if (window[key]) { cb(scriptIn(window[key], l.id), servedBy(window[key], l.id)); return; }
     var settled = false, note = UI.el('p', 'muted', UI.t('Cargando la lección…', 'Loading the lesson…'));
     host.appendChild(note);
-    var settle = function (sc) {
+    var settle = function (sc, served) {
       if (settled) return;
       settled = true;
       if (note.parentNode) note.parentNode.removeChild(note);
-      cb(sc);
+      cb(sc, served);
     };
     var timer = setTimeout(function () { settle(null); }, SCRIPT_WAIT_MS);
-    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? scriptIn(window[key], l.id) : null); });
+    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? scriptIn(window[key], l.id) : null, ok && window[key] ? servedBy(window[key], l.id) : false); });
   }
 
   // Script text: HTML-escaped, *Spanish* in italics, \n as a line break.
@@ -530,6 +545,14 @@ window.StageLearn = (function () {
     for (var i = 0; i < n; i++) order.push(i);
     for (var j = n - 1; j > 0; j--) { var k = Math.floor(rnd() * (j + 1)); var x = order[j]; order[j] = order[k]; order[k] = x; }
     return order;
+  }
+
+  function secondDay(sc) {
+    var p = sc.personal;
+    return {
+      second: true, hook: sc.hook, register: sc.register, translate: sc.translate, pitfalls: sc.pitfalls,
+      personal: { prompt: UI.t('Escribe una frase tuya y verdadera con una de las formas de arriba.', 'Write one true line of your own with one of the ways to say it above.'), constraints: p && p.constraints }
+    };
   }
 
   function runScript(host, ctx, l, sc, done) {
@@ -570,7 +593,7 @@ window.StageLearn = (function () {
       if (sc.hook) {
         var h = UI.el('div', 'script-hook');
         h.appendChild(UI.el('p', 'hook-line', fmt(sc.hook.line)));
-        h.appendChild(pairs(sc.hook.es, sc.hook.en));
+        h.appendChild(pairs(sc.hook.es, sc.second ? '' : sc.hook.en));
         wrap.appendChild(h);
       } else {
         var g = guessBlock(l);                    // no hook: the guess still comes first
@@ -635,8 +658,10 @@ window.StageLearn = (function () {
           why.innerHTML = (right ? '¡Eso es! ' : UI.t('Casi. ', 'Not quite. ')) + fmt(r.why || '');
           next.classList.remove('hidden');
           save();
-          var here = at;
-          setTimeout(function () { if (at === here && next.parentNode) go(at + 1); }, 1500);
+          if (right) {                                  // a wrong pick waits for Next; a right one gives the why time to be read
+            var here = at, nWords = String(r.why || '').split(/\s+/).filter(Boolean).length;
+            setTimeout(function () { if (at === here && next.parentNode) go(at + 1); }, Math.min(6000, Math.max(2500, 300 * nWords)));
+          }
         });
         opts.appendChild(b);
       });

@@ -404,16 +404,26 @@ window.StageProduce = (function () {
     var entry = sceneDay(ctx), BI = window.BuildIt;
     if (!entry || !BI || !entry.unit || entry.practice) return null;
     if (BI.has(entry.unit, ctx.di)) return null;
-    var spec = BI.constraint(ctx.nodes, { canDo: ctx.lesson && ctx.lesson.canDo });
+    var spec = BI.constraint(ctx.nodes, { canDo: ctx.lesson && ctx.lesson.canDo, constraints: scriptConstraints(ctx, entry) });
     var u = (window.COURSE_UNITS || {})[entry.unit];
     return { unit: entry.unit, title: (u && u.title) || '', spec: spec };
   }
+  /* The personal-sentence checklist of the day's teaching script, when there is one. */
+  function scriptConstraints(ctx, entry) {
+    var l = ctx.lesson, band = (entry && entry.band) || (l && l.cefr);
+    var T = l && band && window['SCRIPTS_' + band];
+    if (!T) return null;
+    var sc = T[l.id];
+    if (!sc) for (var k in T) { if (T[k] && T[k].serves && T[k].serves.indexOf(l.id) !== -1) { sc = T[k]; break; } }
+    return sc && sc.personal && sc.personal.constraints && sc.personal.constraints.length ? sc.personal.constraints : null;
+  }
   function aboutLabel(l) {
-    l = String(l || '').replace(/^use an? verb in the presente\b/i, 'a verb in the present');
+    l = String(l || '').replace(/<[^>]*>/g, '');
+    l = l.replace(/^use an? verb in the presente\b/i, 'a verb in the present');
     return l.replace(/\s+[-\u2013\u2014]+\s+/g, ', ').replace(/[\u2013\u2014]/g, ', ').replace(/(\w)-(?=\s)/g, '$1');
   }
   function runAboutMe(body, ab, ctx, done) {
-    var BI = window.BuildIt, prompt = ab.spec.prompt || UI.t('Una línea verdadera para tu guion: di algo sobre ti ' + ab.spec.text + '.', 'One true line for your script: say something about you ' + ab.spec.text + '.');
+    var BI = window.BuildIt, prompt = ab.spec.prompt || UI.t('Una línea verdadera para tu guion: di algo sobre ti ' + ab.spec.text + '.', 'Write one true line for your script: say something about you ' + ab.spec.text + '.');
     if (ab.title) body.appendChild(UI.el('div', 'muted small', UI.t('Mi guion', 'My script') + ' · ' + esc(ab.title)));
     body.appendChild(UI.el('h2', 'q-text', emph(prompt)));
     var ta = UI.el('textarea', 'answer-area');
@@ -429,7 +439,7 @@ window.StageProduce = (function () {
     function check() {
       var res = C.checkWriting({ type: 'scene', constraints: ab.spec.constraints }, ta.value);
       UI.clear(list);
-      res.results.forEach(function (r) { list.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'), (r.pass ? '✓ ' : '○ ') + aboutLabel(r.label))); });
+      res.results.forEach(function (r) { list.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'), (r.pass ? '✓ ' : '○ ') + emph(aboutLabel(r.label)))); });
       add.disabled = !(ta.value.trim() && res.allPass);
     }
     ta.addEventListener('input', check);

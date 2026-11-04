@@ -16,4 +16,9 @@ const not = row('Fuimos a la notaría ayer.', 'notaría', 't2');
 ok(B.cloze(not) === null && B.readAndPick(not) === null, 'notaría became an item');
 const verb = row('Ella trabaja en una oficina.', 'trabaja', 't3');
 ok(B.cloze(verb) && B.cloze(verb).inf === 'trabajar', 'a real verb span stopped working');
+// two finite verbs: the target is marked with stars; one verb: no marks
+const two = B.readAndPick(row('Ella habla y yo escucho.', 'habla', 't4'));
+ok(two && /\*habla\*/.test(two.text) && !/\*escucho\*/.test(two.text), 'the target verb is starred when the sentence holds two');
+const one = B.readAndPick(row('Ella habla mucho.', 'habla', 't5'));
+ok(one && one.text.indexOf('*') < 0, 'a single-verb sentence is not marked');
 console.log('bankitems nouns: ' + n + ' checks passed');

@@ -336,9 +336,29 @@ window.BankItems = (function () {
     presente: 'Now, or as a habit', preterito: 'Done and finished in the past', imperfecto: 'Past, ongoing or habitual',
     futuro: 'In the future', condicional: 'Would', perfecto: 'Has or have done'
   };
+  /* A finite verb elsewhere in the sentence (so "who is doing it?" could be about either). */
+  var FINITE = { presente: 1, preterito: 1, imperfecto: 1, futuro: 1, condicional: 1, perfecto: 1, presubj: 1, impsubj: 1 };
+  function otherFinite(r) {
+    var En = E(), rest = (r.es.slice(0, r.f[0]) + ' ' + r.es.slice(r.f[1])).toLowerCase().split(/[^a-záéíóúüñ]+/).filter(Boolean), n = 0;
+    if (!En) return 0;
+    rest.forEach(function (w) {
+      var list;
+      try { list = En.analyzeToken(w) || []; } catch (e) { return; }
+      var hit = list.some(function (a) {
+        if (!FINITE[a.tense] || !a.accentExact) return false;
+        var v = En.verbByInf(a.inf);
+        return !!v && !(window.VOCAB || []).some(function (x) { return !x.v && String(x.es || '').toLowerCase() === w && x.gender; });
+      });
+      if (hit && !/^(que|se|me|te|le|la|lo|las|los|nos|a|y|o|e|u|de|en|no|si|es|un|una)$/.test(w)) n++;
+    });
+    return n;
+  }
   function readAndPick(r, rng) {
     var span = spanOf(r);
     if (!span || !verbSpan(r, span)) return null;
+    /* Two finite verbs: the question is about one of them, so the prompt marks it with *stars* (the Apply renderer bolds them). */
+    var marked = otherFinite(r) > 0 ? r.es.slice(0, r.f[0]) + '*' + r.es.slice(r.f[0], r.f[1]) + '*' + r.es.slice(r.f[1]) : null;
+    if (marked && (!/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+$/.test(span) || r.es.indexOf('*') >= 0)) return null;
     var rd = readings(span).filter(function (x) { return x.tense !== 'imperativo' && x.tense !== 'impneg'; });
     if (!rd.length) return null;
     var persons = distinct(rd, 'person'), tenses = distinct(rd, 'tense');
@@ -354,7 +374,7 @@ window.BankItems = (function () {
       /* él/ella and ellos cover usted and ustedes, so 'you (tú)' stays a fair distractor only for non-tú forms */
     } else return null;
     var opts = shuffle([right].concat(pickN(labels, 3, rng)), rng);
-    return { type: 'choice', level: 1, focus: 'bank-read', text: '“' + flat(r.es) + '”  ' + q, options: opts,
+    return { type: 'choice', level: 1, focus: 'bank-read', text: '“' + flat(marked || r.es) + '”  ' + q, options: opts,
              answer: opts.indexOf(right), why: '', en: flat(r.en),
              key: 'bank:' + r.id, bankId: r.id, bankKind: 'read', nodes: r.t };
   }
