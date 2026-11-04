@@ -497,7 +497,7 @@ window.Games = (function () {
       mid.appendChild(el('b', null, g.name));
       mid.appendChild(el('span', 'hg-chip-pb',
         st.pb ? GS.fmt(st.pb)
-              : (g.lives ? g.lives + ' vidas' : g.secs + ' s')));
+              : (g.lives ? g.lives + (g.lives === 1 ? ' vida' : ' vidas') : g.secs + ' s')));
       c.appendChild(mid);
       c.addEventListener('click', function () { open(g.key, back); });
       chips.appendChild(c);
@@ -531,7 +531,7 @@ window.Games = (function () {
     var head = el('div', 'g-tile-head');
     head.appendChild(el('span', 'g-tile-ico', g.icon));
     head.appendChild(el('span', 'g-tile-len',
-      g.lives ? (g.secs ? Math.round(g.secs / 60) + ' min · ' : '') + g.lives + ' vidas' : (g.secs || 60) + ' s'));
+      g.lives ? (g.secs ? Math.round(g.secs / 60) + ' min · ' : '') + g.lives + (g.lives === 1 ? ' vida' : ' vidas') : (g.secs || 60) + ' s'));
     t.appendChild(head);
 
     t.appendChild(el('div', 'g-tile-name', g.name));
@@ -635,9 +635,9 @@ window.Games = (function () {
       var LS0 = window.LIB && window.LIB.search;
       if (window.Known && LS0 && LS0.taughtTenses) {
         var met = LS0.taughtTenses(Array.from(window.Known.taughtBy(di0)));
-        if (met.indexOf('presente') < 0) met.push('presente');
-        var only = taught.filter(function (t) { return met.indexOf(t) !== -1; });
-        if (only.length) taught = only;
+        /* the present is not offered before the learner has had the first days of it */
+        if (met.indexOf('presente') < 0 && (prog0.beginnerDay || 0) >= 3) met.push('presente');
+        taught = taught.filter(function (t) { return met.indexOf(t) !== -1; });
       }
     } catch (e) {}
     if (!taught.length) return null;
@@ -797,7 +797,7 @@ window.Games = (function () {
     while (out.length < n && guard++ < n * 8) {
       var v = verbs[vi++ % verbs.length];
       if (!v) break;
-      var person = Math.floor(Math.random() * 6);          // fixed for this verb
+      var person = [0, 1, 2, 3, 5][Math.floor(Math.random() * 5)];   // fixed for this verb, never vosotros (index 4)
       E.shuffle(tenses.slice()).slice(0, 3).forEach(function (tk) {
         if (out.length >= n) return;
         if (window.Profile && !window.Profile.verbOkAt(v.inf, tk)) return;

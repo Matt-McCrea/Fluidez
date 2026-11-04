@@ -166,12 +166,13 @@ window.StageApply = (function () {
   function clozeDistractors(it, answer, taught) {
     var v = E.verbByInf(it.inf); if (!v) return [];
     var set = {};
-    E.conjugate(v, it.tense).forEach(function (f) { if (f !== answer) set[f] = 1; });
+    var pers0 = E.personsFor(it.tense);
+    E.conjugate(v, it.tense).forEach(function (f, i) { if (f !== answer && pers0[i] !== 'vosotros') set[f] = 1; });
     taught = taught || ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj'];
     taught.forEach(function (tk) {
       if (tk === it.tense) return;
       var idx = E.personsFor(tk).indexOf(it.person);
-      if (idx < 0) return;
+      if (idx < 0 || it.person === 'vosotros') return;
       try { var f = E.conjugate(v, tk)[idx]; if (f && f !== answer && f.indexOf(' ') === -1) set[f] = 1; } catch (e) {}
     });
     return E.shuffle(Object.keys(set)).slice(0, 3);
@@ -237,7 +238,7 @@ window.StageApply = (function () {
           if (!it._again) gradeTense(it, g.ok, g.meta);
           if (!right) Array.prototype.forEach.call(bank.children, function (c) { if (c.textContent === answer) c.classList.add('right'); });
           fb.innerHTML = right ? '¡Correcto! <span class="muted">' + esc(it.en || '') + '</span>'
-            : '<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person
+            : '<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + (it.personKnown === false ? '' : ' · ' + it.person)
               + '<br><span class="muted">' + esc(whyWrong(it, opt, answer)) + '</span>';
           fb.className = 'feedback ' + (right ? 'good' : 'bad');
           if (right) setTimeout(advance, 850);
@@ -358,7 +359,7 @@ window.StageApply = (function () {
 
       function explain() {
         var bits = [];
-        if (it.type === 'cloze') bits.push('<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + ' · ' + it.person);
+        if (it.type === 'cloze') bits.push('<b>' + esc(answer) + '</b> · ' + it.inf + ' · ' + E.TENSE_LABEL[it.tense] + (it.personKnown === false ? '' : ' · ' + it.person));
         else bits.push('<b>' + esc(answer) + '</b>');
         if (it.en) bits.push('<span class="muted">' + esc(it.en) + '</span>');
         return bits.join('<br>');

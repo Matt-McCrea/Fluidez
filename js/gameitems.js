@@ -577,7 +577,7 @@ window.GameItems = (function () {
     if (!v) return null;
     var alts = [];
     function add(f) { if (f && f.toLowerCase() !== bare.toLowerCase() && alts.indexOf(f) === -1) alts.push(f); }
-    E.conjugate(v, a.tense).forEach(add);
+    E.conjugate(v, a.tense).forEach(function (f, i) { if (notVos(a.tense, i)) add(f); });
     ['presente', 'preterito', 'imperfecto', 'futuro'].forEach(function (tk) {
       if (tk === a.tense) return;
       var pj = E.personsFor(tk).indexOf(a.person);
@@ -586,6 +586,8 @@ window.GameItems = (function () {
     return pick(alts, rng);
   }
 
+  /* The engine's person index 4 is vosotros; it is never dealt as a question or an option. */
+  function notVos(tk, i) { return E.personsFor(tk)[i] !== 'vosotros'; }
   function isWord(w) {
     var lw = w.toLowerCase();
     return !!own(index().words, lw) || E.analyzeToken(lw).length > 0;
@@ -751,6 +753,7 @@ window.GameItems = (function () {
       if (window.Profile && !window.Profile.verbOkAt(v.inf, tk)) continue;
       var persons = E.personsFor(tk);
       var pi = Math.floor(rnd(rng) * persons.length);
+      if (!notVos(tk, pi)) continue;
       var form = E.conjugate(v, tk)[pi];
       if (!form) continue;
       // the ladder should get harder, so lean on irregulars near the top
@@ -778,7 +781,7 @@ window.GameItems = (function () {
     if (!v) return null;
     var persons = E.personsFor(it.tense);
     var pi = persons.indexOf(it.person);
-    if (pi < 0) return null;
+    if (pi < 0 || it.person === 'vosotros') return null;
     var right = E.conjugate(v, it.tense)[pi];
     if (!right) return null;
     var others = [], allowed = window.Profile ? window.Profile.tenses() : [];
@@ -790,7 +793,7 @@ window.GameItems = (function () {
       if (f && f !== right && others.indexOf(f) === -1) others.push(f);
     });
     E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) {
-      if (others.length >= 3) return;
+      if (others.length >= 3 || !notVos(it.tense, i)) return;
       var f = E.conjugate(v, it.tense)[i];
       if (f && f !== right && others.indexOf(f) === -1) others.push(f);
     });
@@ -1369,14 +1372,14 @@ window.GameItems = (function () {
     var others = [];
     function add(f) { if (f && f !== right && others.indexOf(f) === -1) others.push(f); }
     var persons = E.personsFor(tk), forms = E.conjugate(v, tk);
-    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (i !== pi && others.length < 2) add(forms[i]); });
+    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (i !== pi && others.length < 2 && notVos(tk, i)) add(forms[i]); });
     var allowed = window.Profile ? window.Profile.tenses() : [];
     E.shuffle((allowed.length ? allowed : ['presente', 'preterito', 'imperfecto', 'futuro'])).forEach(function (t) {
       if (t === tk || others.length >= 3) return;
       var ps = E.personsFor(t), pj = ps.indexOf(persons[pi]);
       add(pj >= 0 ? (E.conjugate(v, t) || [])[pj] : null);
     });
-    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (others.length < 3) add(forms[i]); });
+    E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) { if (others.length < 3 && notVos(tk, i)) add(forms[i]); });
     return others.length >= 3 ? E.shuffle([right].concat(others.slice(0, 3))) : null;
   }
   /* One question from an owned() pool; `used` is the round's own list of keys
@@ -1387,6 +1390,7 @@ window.GameItems = (function () {
       if (wantVerb) {
         var o = pick(pool.verbs, rng), persons = E.personsFor(o.tense);
         var pi = Math.floor(rnd(rng) * persons.length), right = E.conjugate(o.v, o.tense)[pi];
+        if (persons[pi] === 'vosotros') continue;
         var key = 'f:' + o.v.inf + ':' + o.tense + ':' + pi;
         if (!right || used[key]) continue;
         var opts = formOptions(o.v, o.tense, pi, right);

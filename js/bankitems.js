@@ -216,10 +216,39 @@ window.BankItems = (function () {
     if (!rd.length || distinct(rd, 'inf').length !== 1) return null;
     var pick = rd.filter(function (x) { return x.tense === 'presente'; })[0] || rd[0];
     if (pick.tense === 'imperativo' || pick.tense === 'impneg') return null;
+    /* One form, several persons (vaya is yo and él/ella/usted): the subject in
+     * the row decides, then the English; failing both the person is left unnamed. */
+    var same = rd.filter(function (x) { return x.tense === pick.tense && x.person !== 'vosotros'; });
+    var personKnown = true;
+    if (distinct(same, 'person').length > 1) {
+      var want = subjectPerson(r, span);
+      var hit = want && same.filter(function (x) { return x.person === want; })[0];
+      if (hit) pick = hit; else { personKnown = false; pick = same[0] || pick; }
+    }
     /* No time word to lean on, so the English rides along: it fixes person and tense. */
     return { type: 'cloze', level: 1, text: blanked(r).replace('___', '___ (' + pick.inf + ')') + '  «' + flat(r.en) + '»',
-             inf: pick.inf, tense: pick.tense, person: pick.person, en: flat(r.en),
+             inf: pick.inf, tense: pick.tense, person: pick.person, personKnown: personKnown, en: flat(r.en),
              key: 'bank:' + r.id, bankId: r.id, bankKind: 'cloze', nodes: r.t };
+  }
+  var SUBJ = { yo: 'yo', tú: 'tú', él: 'él/ella', ella: 'él/ella', usted: 'él/ella', nosotros: 'nosotros', nosotras: 'nosotros',
+               ellos: 'ellos', ellas: 'ellos', ustedes: 'ellos' };
+  var SUBJ_SKIP = { no: 1, ya: 1, siempre: 1, nunca: 1, también: 1, solo: 1, sólo: 1 };
+  function subjectPerson(r, span) {
+    var before = String(r.es || '').slice(0, r.f ? r.f[0] : 0).replace(/[¿¡?!.,;:"“”()]/g, ' ').split(/\s+/).filter(Boolean);
+    var k = before.length - 1;
+    while (k >= 0 && SUBJ_SKIP[before[k].toLowerCase()]) k--;
+    if (k >= 0) {
+      var w = before[k], low = w.toLowerCase();
+      if (SUBJ[low]) return SUBJ[low];
+      if (k > 0 && /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+$/.test(w)) return 'él/ella';
+    }
+    var en = String(r.en || '').trim().replace(/^[^A-Za-z]+/, '');
+    if (/^I\b/.test(en)) return 'yo';
+    if (/^(He|She)\b/.test(en)) return 'él/ella';
+    if (/^We\b/.test(en)) return 'nosotros';
+    if (/^They\b/.test(en)) return 'ellos';
+    if (/^You\b/.test(en)) return null;     // tú, usted or ustedes: the English cannot say
+    return null;
   }
 
   /* ---- gap (choice on a small word) ---------------------------------------- */
@@ -229,7 +258,7 @@ window.BankItems = (function () {
     en: ['a', 'de', 'sobre'], con: ['sin', 'de', 'en'], sin: ['con', 'de', 'en'], sobre: ['en', 'de', 'entre'],
     entre: ['en', 'de', 'sobre'], hasta: ['desde', 'a', 'para'], desde: ['hasta', 'de', 'en']
   };
-  var CLITIC_REFL = ['me', 'te', 'se', 'nos', 'os'], CLITIC_DO = ['lo', 'la', 'los', 'las'], CLITIC_IO = ['le', 'les'];
+  var CLITIC_REFL = ['me', 'te', 'se', 'nos'], CLITIC_DO = ['lo', 'la', 'los', 'las'], CLITIC_IO = ['le', 'les'];
   var N_ARTICLE = ['g:gender-articles', 'g:article-uses'];
   var N_OBJECT = ['g:direct-objects', 'g:object-pronoun-position', 'g:double-pronouns', 'g:indirect-objects', 'g:commands-with-pronouns'];
   function hasAny(r, list) { return (r.r || []).some(function (x) { return list.indexOf(x) !== -1; }); }
@@ -284,7 +313,7 @@ window.BankItems = (function () {
       try {
         var of = En.conjugate(ov, rd.tense)[idx];
         if (of) set.push(of.toLowerCase());
-        var same = En.conjugate(rd.v, rd.tense).filter(function (f, i) { return i !== idx && f && f.indexOf(' ') === -1; });
+        var same = En.conjugate(rd.v, rd.tense).filter(function (f, i) { return i !== idx && f && f.indexOf(' ') === -1 && En.personsFor(rd.tense)[i] !== 'vosotros'; });
         if (same.length) set.push(same[Math.min(same.length - 1, (idx + 2) % same.length)].toLowerCase());
       } catch (e) { return null; }
       pool = set.filter(function (x) { return x !== low; }); focus = 'ser-estar';
@@ -301,7 +330,7 @@ window.BankItems = (function () {
   /* ---- structured input: read the form, say who or when ------------------------ */
   var WHO = {
     'yo': 'I', 'tú': 'you (tú)', 'él/ella': 'he, she or you (usted)', 'nosotros': 'we',
-    'vosotros': 'you all (vosotros)', 'ellos': 'they or you all (ustedes)'
+    'ellos': 'they or you all (ustedes)'
   };
   var WHEN = {
     presente: 'Now, or as a habit', preterito: 'Done and finished in the past', imperfecto: 'Past, ongoing or habitual',

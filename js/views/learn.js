@@ -324,26 +324,30 @@ window.StageLearn = (function () {
     return null;
   }
 
+  /* One card for the day's new words: every row tappable for its sentence, one
+   * Got it, each word still enrolled on its own with a first review tomorrow. */
   function teachNew(host, cards, ctx, done) {
-    var i = 0;
-    function show() {
-      UI.clear(host);
-      if (i >= cards.length) { done(); return; }
-      var c = cards[i];
-      var wrap = UI.el('div', 'panel review-card');
-      wrap.appendChild(UI.el('div', 'opener-eyebrow muted', UI.t('Nuevo hoy', 'New today') + ' · ' + (i + 1) + ' / ' + cards.length));
-      wrap.appendChild(UI.el('div', 'card-front', c.es));
-      wrap.appendChild(UI.el('p', null, '<b>' + c.en + '</b>'));
-      if (c.lit) wrap.appendChild(UI.el('p', 'muted', 'literally: ' + c.lit));
+    UI.clear(host);
+    if (!cards.length) { done(); return; }
+    var wrap = UI.el('div', 'panel review-card new-today');
+    wrap.appendChild(UI.el('div', 'opener-eyebrow muted', UI.t('Nuevo hoy', 'New today') + ' · ' + cards.length));
+    var list = UI.el('div', 'new-today-list');
+    cards.forEach(function (c) {
+      var row = UI.el('button', 'new-today-row ghost-btn'); row.type = 'button';
+      row.appendChild(UI.el('span', 'card-front small', esc(c.es)));
+      row.appendChild(UI.el('span', 'new-today-en', ' <b>' + esc(c.en) + '</b>' + (c.lit ? ' <span class="muted">(literally: ' + esc(c.lit) + ')</span>' : '')));
       var sent = sentenceFor(c.es, ctx);
-      if (sent) wrap.appendChild(UI.el('p', 'muted', 'From today: ' + sent));
-      wrap.appendChild(UI.nextBtn('Got it', function () {
-        S.enrol(c.id, 1);                        // first review is tomorrow
-        i++; show();
-      }));
-      host.appendChild(wrap);
-    }
-    show();
+      var box = UI.el('div', 'muted small new-today-sent hidden', sent ? 'From today: ' + esc(sent) : '');
+      if (sent) row.addEventListener('click', function () { box.classList.toggle('hidden'); });
+      list.appendChild(row);
+      list.appendChild(box);
+    });
+    wrap.appendChild(list);
+    wrap.appendChild(UI.nextBtn('Got it', function () {
+      cards.forEach(function (c) { S.enrol(c.id, 1); });   // first review is tomorrow
+      done();
+    }));
+    host.appendChild(wrap);
   }
 
   function run(host, ctx, done) {
@@ -406,10 +410,31 @@ window.StageLearn = (function () {
   /* The Spanish this lesson is built out of joins the review deck (see
    * runOldLesson). Shared by both ways of teaching a lesson, so a script day
    * enrols exactly what the old page did. */
-  function enrolPhrases(l) {
+  function enrolPhrases(l, only) {
     if (window.Phrases) {
-      window.Phrases.forLesson(l.id).slice(0, 6).forEach(function (p) { S.enrol(p.id); });
+      var ps = window.Phrases.forLesson(l.id).slice(0, 6);
+      if (only) ps = ps.filter(function (p) { return only.indexOf(p.id) !== -1; });
+      ps.forEach(function (p) { S.enrol(p.id); });
     }
+  }
+  function plainEs(s) {
+    return ' ' + String(s || '').toLowerCase().replace(/\*/g, '').replace(/[¿?¡!.,;:"“”()]/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
+  }
+  /* The phrases whose Spanish is on the script's visible pages. */
+  function shownPhrases(l, sc) {
+    if (!window.Phrases) return [];
+    var parts = [];
+    function add(x) { if (x != null) parts.push(plainEs(x)); }
+    if (sc.hook) { add(sc.hook.line); add(sc.hook.es); add(sc.hook.en); }
+    (sc.examples || []).forEach(function (e) { add(e.es); });
+    add(sc.rule);
+    (sc.readAndPick || []).forEach(function (r) { add(r.q); add(r.es); (r.options || []).forEach(add); add(r.why); });
+    (sc.yourTurn || []).concat(sc.translate || []).forEach(function (t) { add(t.es); });
+    (sc.register || []).forEach(function (r) { add(r.es); add(r.when); });
+    (sc.pitfalls || []).forEach(add);
+    if (sc.personal) add(sc.personal.prompt);
+    var text = parts.join(' | ');
+    return window.Phrases.forLesson(l.id).slice(0, 6).filter(function (p) { return text.indexOf(plainEs(p.es)) !== -1; });
   }
 
   /* ---- teaching scripts ---------------------------------------------------
@@ -506,6 +531,7 @@ window.StageLearn = (function () {
   function runScript(host, ctx, l, sc, done) {
     var st = ctx.step || null, ex = (st && st.extra) || {};
     var rp = sc.readAndPick || [], yt = sc.yourTurn || [], tr = sc.translate || [], reg = sc.register || [];
+    if (/^(B1|B2|C1)$/.test(scriptBand(ctx, l) || '')) tr = tr.slice(0, 4);   // the rest wait for Practicar
     /* One step index for the whole script, saved after every item:
      *   0 the opening page, then each read-and-pick item, then each typed item,
      *   then the personal sentence, then the closing page. */
@@ -605,6 +631,8 @@ window.StageLearn = (function () {
           why.innerHTML = (right ? '¡Eso es! ' : 'Not quite. ') + fmt(r.why || '');
           next.classList.remove('hidden');
           save();
+          var here = at;
+          setTimeout(function () { if (at === here && next.parentNode) go(at + 1); }, 1500);
         });
         opts.appendChild(b);
       });
@@ -756,9 +784,19 @@ window.StageLearn = (function () {
       var more = UI.el('details', 'read-more');
       more.appendChild(UI.el('summary', null, UI.t('Leer más: la lección completa', 'Read more: the full lesson')));
       more.appendChild(fillLesson(UI.el('div', 'read-more-body'), l, { fold: true }));
+      var met = shownPhrases(l, sc);
+      if (met.length) {
+        wrap.appendChild(UI.el('h3', null, 'Phrases you met'));
+        var pl = UI.el('ul', 'pitfalls');
+        met.forEach(function (p) { pl.appendChild(UI.el('li', null, '<i>' + esc(p.es) + '</i>: ' + esc(p.en))); });
+        wrap.appendChild(pl);
+      }
       wrap.appendChild(more);
-      enrolPhrases(l);
-      wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
+      enrolPhrases(l, met.map(function (p) { return p.id; }));
+      var seenEs = {};
+      yt.concat(tr).forEach(function (t) { seenEs[plainEs(t.es)] = 1; });
+      var recall = (l.recall || []).filter(function (r) { return !seenEs[plainEs(r.back)]; });
+      wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, recall, 'grammar', done, ctx); }));
     }
 
     save();
@@ -811,6 +849,15 @@ window.StageLearn = (function () {
    * stage that measures whether today's teaching landed was the one stage
    * invisible to the completion screen and to js/report.js. Optional, because
    * nothing here needs it to run. */
+  /* A right quick-check answer counts as graded today, so Five minutes skips it. */
+  function stampGraded(id) {
+    try {
+      var key = S.reviewLogKey || 'fluidez.reviewlog', log = JSON.parse(localStorage.getItem(key) || '[]');
+      if (!Array.isArray(log)) log = [];
+      log.push({ id: id, day: S.today(), ok: true, gap: null });
+      localStorage.setItem(key, JSON.stringify(log.slice(-2000)));
+    } catch (e) { /* the log is a nicety */ }
+  }
   function quickCheckItems(host, items, kind, done, ctx) {
     items = (items || []).slice();
     if (!items.length) { done(); return; }
@@ -853,6 +900,7 @@ window.StageLearn = (function () {
        * which is what revealing it means. */
       function next(good) {
         if (it.srs !== false) { S.enrol(it.id); if (!good) S.grade(it.id, false); }
+        if (good && it.srs !== false) stampGraded(it.id);
         asked++; if (good) right++;
         i++; show();
       }

@@ -46,23 +46,28 @@ window.BuildIt = (function () {
     var s = r.es.slice(r.f[0], r.f[1]);
     return /^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+$/.test(s) ? s : null;
   }
-  /* The one verb reading of the span that the engine reproduces exactly. */
-  function reading(span) {
+  /* The one verb reading of the span that the engine reproduces exactly, in
+   * any tense the learner knows: present, preterite, imperfect, and the present
+   * subjunctive when a trigger stands before the verb. */
+  var READ_TENSES = { presente: 1, preterito: 1, imperfecto: 1, presubj: 1 };
+  function reading(span, trigger) {
     var En = E(), low = span.toLowerCase(), found = null, list;
     try { list = En.analyzeToken(low) || []; } catch (e) { return null; }
     for (var i = 0; i < list.length; i++) {
       var a = list[i], v = En.verbByInf(a.inf);
-      if (!v || a.tense !== 'presente') continue;
+      if (!v || !READ_TENSES[a.tense] || (a.tense === 'presubj' && !trigger)) continue;
       var idx = En.personsFor(a.tense).indexOf(a.person);
       if (idx < 0) continue;
       var form;
       try { form = En.conjugate(v, a.tense)[idx]; } catch (e) { continue; }
       if (!form || form.toLowerCase() !== low) continue;
-      if (found && (found.inf !== a.inf || found.idx !== idx)) return null;   // ambiguous
+      if (found && (found.inf !== a.inf || found.idx !== idx || found.tense !== a.tense)) return null;   // ambiguous
       found = { v: v, inf: a.inf, tense: a.tense, idx: idx };
     }
     return found;
   }
+  var TRIGGER = /\b(que|ojal[aá]|quiz[aá]s?|tal vez)\b/i;
+
   /* The row's English must contain the engine's English for the original verb
    * form; that stretch is what each change rewrites. */
   function enStretch(en, ph) {
@@ -109,21 +114,27 @@ window.BuildIt = (function () {
     return null;
   }
 
+  // enPhrase marks ser and estar senses in brackets ("I am (state)"); the sentence does not
+  function enP(v, tense, idx) { return E().enPhrase(v, tense, idx).text.replace(/\s*\([^)]*\)/g, ''); }
+
   /* ---- one change applied to a state ------------------------------------ */
   function render(row, base, st) {
     var En = E(), span = base.span, f0 = row.f[0], f1 = row.f[1];
     var form = En.conjugate(base.v, st.tense)[st.idx];
     var pre = row.es.slice(0, f0), post = row.es.slice(f1);
     if (st.pron) post = base.np.tail;
+    if (st.swap) post = ' ' + st.swap.es + base.swapEnd;
     var es = pre + (st.neg ? 'no ' : '') + (st.pron ? base.np.clitic + ' ' : '') + form + post;
-    if (f0 === 0 && (st.neg || st.pron || st.idx !== base.idx0 || st.tense !== 'presente')) es = cap(es);
+    if (f0 === 0 && (st.neg || st.pron || st.swap || st.idx !== base.idx0 || st.tense !== base.tense0)) es = cap(es);
     // English
-    var ph = En.enPhrase(base.v, st.tense, st.idx).text, enVerb = ph;
+    var ph = enP(base.v, st.tense, st.idx), enVerb = ph;
     if (st.neg) {
       var parts = ph.split(' '), subj = parts[0];
-      var b = En.enPhrase(base.v, 'presente', 0).text;
+      var b = enP(base.v, 'presente', 0);
       if (/^I (am|have to|can|must|should)\b/.test(b) || /^I am\b/.test(b)) {
-        enVerb = ph.replace(/^(\S+ (?:am|are|is|can|must|should))\b/, '$1 not');
+        enVerb = ph.replace(/^(\S+ (?:am|are|is|was|were|can|must|should))\b/, '$1 not');
+      } else if (st.tense === 'preterito') {
+        enVerb = subj + " didn't " + b.replace(/^I /, '');
       } else {
         var baseForm = b.replace(/^I /, '');
         enVerb = subj + (/^(he\/she|he|she)$/.test(subj) ? " doesn't " : " don't ") + baseForm;
@@ -134,6 +145,10 @@ window.BuildIt = (function () {
       var q = base.np, off = enVerb.length - base.stretch.len;
       en = en.slice(0, q.enAt + off) + q.enNew + en.slice(q.enAt + q.enLen + off);
     }
+    if (st.swap) {
+      var offS = enVerb.length - base.stretch.len, sw = base.swapAt;
+      en = en.slice(0, sw.at + offS) + st.swap.en + en.slice(sw.at + sw.len + offS);
+    }
     if (!/[.!?]$/.test(en)) en += base.enEnd;
     return { es: es, en: cap(en), form: form };
   }
@@ -143,29 +158,34 @@ window.BuildIt = (function () {
     if (r.es.indexOf('\n') >= 0 || /[¿?]/.test(r.es) || /[(\n]/.test(r.en)) return null;
     var n = words(r.es).length;
     if (n < 3 || n > 6) return null;
-    /* one clause, verb first (the subject is dropped, so a person change cannot clash
-     * with a stated subject), no negation yet, no clitic glued to an infinitive */
-    if (r.f && r.f[0] !== 0) return null;
-    if (/[,;:]/.test(r.es) || /(^|\s)no\s/i.test(r.es) || /\w(r|rse)(me|te|lo|la|los|las|nos|se|le|les)(\s|[.!]|$)/i.test(r.es)) return null;
+    if (!r.f) return null;
     var span = spanOf(r);
     if (!span) return null;
-    var rd = reading(span);
+    var pre = r.es.slice(0, r.f[0]);
+    var trig = r.f[0] > 0 && TRIGGER.test(pre) && words(pre).length <= 3;
+    /* one clause, verb first (the subject is dropped, so a person change cannot clash
+     * with a stated subject), except after a subjunctive trigger; no negation yet,
+     * no clitic glued to an infinitive */
+    if (r.f[0] !== 0 && !trig) return null;
+    if (/[,;:]/.test(r.es) || /(^|\s)no\s/i.test(r.es) || /\w(r|rse)(me|te|lo|la|los|las|nos|se|le|les)(\s|[.!]|$)/i.test(r.es)) return null;
+    var rd = reading(span, trig);
     if (!rd) return null;
     /* a second finite verb in the row would be left behind by a person change */
     var others = words(r.es.slice(r.f[1])), En0 = E();
-    for (var o = 0; o < others.length; o++) {
+    for (var o = 0; o < others.length && rd.inf !== 'ser' && rd.inf !== 'estar'; o++) {   // (casa is not casar after estoy en)
       var tk = others[o].toLowerCase().replace(/[^a-záéíóúüñ]/g, '');
       var an = tk ? (En0.analyzeToken(tk) || []) : [];
       for (var q = 0; q < an.length; q++) if (an[q].tense === 'presente') return null;
     }
-    var rest = r.es.slice(0, r.f[0]) + ' ' + r.es.slice(r.f[1]);
+    var rest = pre + ' ' + r.es.slice(r.f[1]);
     if (CLITIC.test(rest)) return null;
     var en = r.en.replace(/[.!]$/, ''), enEnd = (r.en.match(/[.!]$/) || ['.'])[0];
-    var ph = E().enPhrase(rd.v, rd.tense, rd.idx).text;
+    var ph = enP(rd.v, rd.tense, rd.idx);
     var st = enStretch(en, ph);
-    if (!st || st.at !== 0) return null;               // the verb opens the English too
-    var base = { span: span, v: rd.v, inf: rd.inf, idx0: rd.idx, en: en, enEnd: enEnd, stretch: st, tenses: [], np: null };
-    if (!TIME_WORDS.test(r.es) && known && !(rd.v.forms && rd.v.forms.preterito) && rd.v.type !== 'ir') {
+    if (!st || (st.at !== 0 && !trig)) return null;               // the verb opens the English too
+    var base = { span: span, v: rd.v, inf: rd.inf, idx0: rd.idx, tense0: rd.tense, en: en, enEnd: enEnd, stretch: st, tenses: [], np: null,
+                 form0: span.toLowerCase() };
+    if (rd.tense === 'presente' && !TIME_WORDS.test(r.es) && known && !(rd.v.forms && rd.v.forms.preterito) && rd.v.type !== 'ir') {
       var lesson = TENSE_LESSON[rd.v.type], ok = false;
       if (lesson) known.forEach(function (id) { if (lesson.test(id)) ok = true; });
       if (ok) base.tenses.push('preterito');
@@ -174,36 +194,116 @@ window.BuildIt = (function () {
     return base;
   }
 
+  /* ---- ser and estar: swap the adjective or the place ---------------------- */
+  var PLACES = [['en casa', ['at home']], ['en el trabajo', ['at work']], ['en la oficina', ['at the office', 'in the office']],
+    ['en la escuela', ['at school']], ['en el parque', ['at the park', 'in the park']], ['aquí', ['here']], ['en el café', ['at the café', 'in the café']]];
+  var ADJ_O = [['cansad', 'tired'], ['ocupad', 'busy'], ['list', 'ready'], ['enferm', 'sick'], ['aburrid', 'bored']];
+  var ADJ_E = [['content', 'happy'], ['trist', 'sad']];
+  function swapsOf(r, base) {
+    if (base.inf !== 'ser' && base.inf !== 'estar') return null;
+    if (base.tense0 !== 'presente' && base.tense0 !== 'preterito' && base.tense0 !== 'imperfecto') return null;
+    var tail = r.es.slice(r.f[1]).replace(/[.!]$/, '').trim(), end = (r.es.match(/[.!]$/) || [''])[0];
+    var enl = base.en.toLowerCase(), i, k;
+    for (i = 0; i < PLACES.length; i++) {
+      if (PLACES[i][0] !== tail.toLowerCase()) continue;
+      for (k = 0; k < PLACES[i][1].length; k++) {
+        var v = PLACES[i][1][k];
+        if (enl.slice(-v.length) === v && enl.length > v.length) {
+          var others = PLACES.filter(function (x, j) { return j !== i; }).map(function (x) { return { es: x[0], en: x[1][0] }; });
+          return { at: base.en.length - v.length, len: v.length, end: end, others: others, person: true };
+        }
+      }
+      return null;
+    }
+    var m = /^(.+?)(os|as|o|a|e)$/.exec(tail.toLowerCase());
+    if (!m) return null;
+    var table = m[2] === 'e' ? ADJ_E : ADJ_O, self = -1;
+    for (i = 0; i < table.length; i++) if (table[i][0] === m[1]) self = i;
+    if (self < 0) return null;
+    var enAdj = table[self][1];
+    if (enl.slice(-enAdj.length) !== enAdj || enl.length === enAdj.length) return null;
+    var list = table.filter(function (x, j) { return j !== self; }).map(function (x) { return { es: x[0] + m[2], en: x[1] }; });
+    return { at: base.en.length - enAdj.length, len: enAdj.length, end: end, others: list, person: false };
+  }
+
   function chainFor(r, base, known, rng) {
     var En = E(), changes = [], step1 = { en: r.en, es: r.es, accept: (r.a || []).slice(), from: [], change: null };
+    var sw = base.swaps;
     var persons = shuffle(PERSON_IDX.filter(function (i) { return i !== base.idx0; }), rng);
-    changes.push('person');
-    if (base.tenses.length) changes.push('tense');
-    changes.push('neg');
-    if (base.np) changes.push('pronoun');
-    changes = shuffle(changes, rng);
+    if (sw) {
+      var cand = shuffle(sw.others, rng);
+      if (cand.length < 2 && !sw.person) return null;
+      changes = sw.person && cand.length ? shuffle(['person', 'swap', 'swap'], rng).slice(0, 2) : ['swap', 'swap'];
+      if (cand.length < 2) changes = ['swap', 'person'];
+      if (!sw.person) changes = ['swap', 'swap'];
+    } else {
+      changes.push('person');
+      if (base.tenses.length) changes.push('tense');
+      if (base.tense0 === 'presente' || base.tense0 === 'preterito') changes.push('neg');
+      if (base.np) changes.push('pronoun');
+      changes = shuffle(changes, rng);
+    }
     // person (or tense) first reads most naturally when neg/pronoun come last
     var order = changes.slice(0, 2);
-    /* negation is built for the present only, so it never pairs with a tense change */
-    if (order.indexOf('tense') >= 0 && order.indexOf('neg') >= 0) order[order.indexOf('tense')] = changes[2] || 'person';
-    if (order[0] === order[1]) return null;
-    var st = { idx: base.idx0, tense: 'presente', neg: false, pron: false };
-    var keep = words(r.es).filter(function (w) { return w.length > 0; }).slice(0, 4).map(function (w) { return w.replace(/[.,!]/g, ''); });
-    step1.from = keep;
-    var steps = [step1], prev = r.es;
+    /* negation is built for the present and preterite only, so it never pairs with a tense change */
+    if (!sw && order.indexOf('tense') >= 0 && order.indexOf('neg') >= 0) order[order.indexOf('tense')] = changes[2] || 'person';
+    if (!sw && order[0] === order[1]) return null;
+    if (order.length < 2) return null;
+    var st = { idx: base.idx0, tense: base.tense0, neg: false, pron: false, swap: null };
+    if (sw) { base.swapAt = { at: sw.at, len: sw.len }; base.swapEnd = sw.end; }
+    step1.from = reused(r.es, r.es, [base.form0]);
+    var steps = [step1], prev = r.es, swapAt = 0;
     for (var k = 0; k < 2; k++) {
       var ch = order[k], extra = [];
-      if (ch === 'person') { st.idx = persons[0]; extra = [PRONOUN_ES[st.idx]]; }
-      else if (ch === 'tense') { st.tense = base.tenses[0]; extra = [En.conjugate(base.v, 'presente')[st.idx]]; }
-      else if (ch === 'neg') { if (st.tense !== 'presente') { st.tense = 'presente'; } st.neg = true; extra = ['no']; }
+      if (ch === 'person') { st.idx = persons[0]; }
+      else if (ch === 'tense') { st.tense = base.tenses[0]; }
+      else if (ch === 'neg') { if (st.tense !== 'presente' && st.tense !== 'preterito') st.tense = base.tense0; st.neg = true; extra = ['no']; }
+      else if (ch === 'swap') { st.swap = shuffle(sw.others, rng)[swapAt++ % sw.others.length]; if (k === 1 && steps[1].swapEs === st.swap.es) st.swap = sw.others.filter(function (x) { return x.es !== steps[1].swapEs; })[0] || st.swap; }
       if (ch === 'pronoun') { st.pron = true; extra = [base.np.clitic]; }
       var out = render(r, base, st);
-      steps.push({ en: out.en, es: out.es, accept: [], from: [prev].concat(extra), change: ch, form: out.form });
+      if (ch === 'person' || ch === 'tense') extra = [out.form];
+      if (ch === 'swap') extra = [out.form];
+      var stp = { en: out.en, es: out.es, accept: [], from: reused(prev, out.es, extra), change: ch, form: out.form };
+      if (ch === 'swap') stp.swapEs = st.swap.es;
+      steps.push(stp);
       prev = out.es;
     }
     var seen = {};
     for (var i = 0; i < steps.length; i++) { if (seen[steps[i].es]) return null; seen[steps[i].es] = 1; }
     return { steps: steps, rowId: r.id };
+  }
+
+  /* The words a step really reuses: the new form or little word it turns on, then
+   * at most one content word that survives from the sentence before. Never a whole
+   * sentence, never a conjunction, article or preposition. */
+  var STOP = /^(y|e|o|u|pero|que|si|ni|pues|el|la|los|las|un|una|unos|unas|de|del|a|al|en|con|por|para|sin|me|te|se|nos|lo|le|les|no|mi|tu|su)$/;
+  function bareWord(w) { return String(w || '').toLowerCase().replace(/[^a-záéíóúüñ]/g, ''); }
+  function reused(prevEs, newEs, extra) {
+    var out = [];
+    (extra || []).forEach(function (x) { if (x && words(x).length === 1 && out.indexOf(x) < 0) out.push(x); });
+    var inNew = {};
+    words(newEs).forEach(function (w) { inNew[bareWord(w)] = 1; });
+    var cand = words(prevEs).map(bareWord).filter(function (w) { return w && inNew[w] && !STOP.test(w) && w.length > 2 && out.indexOf(w) < 0; });
+    if (cand.length) out.push(cand[cand.length - 1]);
+    if (!out.length) { var any = words(newEs).map(bareWord).filter(function (w) { return w && !STOP.test(w); }); if (any.length) out.push(any[0]); }
+    return out.slice(0, 2);
+  }
+
+  function dayVerbs(todayNodes, opts) {
+    var En = E(), out = {};
+    (opts.verbs || []).forEach(function (v) { out[v] = 1; });
+    todayNodes.forEach(function (id) {
+      if (id.charAt(0) !== 'l') return;
+      var inf = id.slice(2);
+      try { if (/(ar|er|ir|ír)$/.test(inf) && En.verbByInf(inf)) out[inf] = 1; } catch (e) {}
+    });
+    var lid = opts.lessonId, L = lid && (window.ALL_LESSONS || []).filter(function (x) { return x.id === lid; })[0];
+    if (L) (L.keywords || []).forEach(function (k) {
+      var w = bareWord(String(k && k.es || '').split(/\s+/)[0]);
+      if (!w) return;
+      try { (En.analyzeToken(w) || []).forEach(function (a) { out[a.inf] = 1; }); } catch (e) {}
+    });
+    return out;
   }
 
   function prompts(known, todayNodes, n, rng, opts) {
@@ -216,19 +316,37 @@ window.BuildIt = (function () {
     var out = [], used = {};
     var primary = shuffle(rows.slice(0, rows.primary != null ? rows.primary : rows.length), rng);
     var second = shuffle(rows.slice(rows.primary != null ? rows.primary : rows.length), rng);
-    var pool = primary.concat(second), tries = 0;
+    var dv = {}, serEstar = false;
+    try { dv = dayVerbs(todayNodes, opts); } catch (e) { dv = {}; }
+    todayNodes.forEach(function (id) { if (/^g:(.*[-:])?(ser|estar)([-:]|$)/.test(id)) serEstar = true; });
+    function verbOf(r) { var sp = spanOf(r); if (!sp) return ''; try { return ((En.analyzeToken(sp.toLowerCase()) || [])[0] || {}).inf || ''; } catch (e) { return ''; } }
+    function prefer(list) {
+      var mine = list.filter(function (r) { return dv[verbOf(r)]; });
+      return mine.concat(list.filter(function (r) { return !dv[verbOf(r)]; }));
+    }
+    var pool = prefer(primary).concat(prefer(second)), tries = 0;
     for (var i = 0; i < pool.length && out.length < n && tries < 4000; i++, tries++) {
       var r = pool[i], base = baseOf(r, known);
       if (!base || used[base.inf]) continue;
+      if (serEstar) { base.swaps = swapsOf(r, base); if (!base.swaps) continue; }
       var ch = chainFor(r, base, known, rng);
       if (ch) { out.push(ch); used[base.inf] = 1; }
+    }
+    if (serEstar && !out.length) {                   // no swappable row today: build the ordinary chain
+      for (var i2 = 0; i2 < pool.length && out.length < n; i2++) {
+        var r2 = pool[i2], b2 = baseOf(r2, known);
+        if (!b2 || used[b2.inf]) continue;
+        var c2 = chainFor(r2, b2, known, rng);
+        if (c2) { out.push(c2); used[b2.inf] = 1; }
+      }
     }
     return out;
   }
 
-  /* "You know quiero and comer. Say: I want to eat now." */
+  /* "You know *necesitamos* and *pan*." Only single words the step reuses. */
   function lead(step) {
-    var f = (step.from || []).filter(Boolean).map(function (x) { return '*' + x + '*'; });
+    var f = (step.from || []).filter(function (x) { return x && words(x).length === 1 && !STOP.test(bareWord(x)) || x === 'no' || (x && /^(lo|la|los|las)$/.test(x)); })
+      .map(function (x) { return '*' + x + '*'; });
     var txt = f.length === 0 ? '' : 'You know ' + (f.length === 1 ? f[0] : f.slice(0, -1).join(', ') + ' and ' + f[f.length - 1]) + '.';
     return txt;
   }
@@ -243,6 +361,7 @@ window.BuildIt = (function () {
   function add(line) {
     var a = load();
     for (var i = 0; i < a.length; i++) if (a[i].unit === line.unit && a[i].day === line.day) return i;
+    if (isDuplicate(line.es)) return -1;               // the same line is not added twice
     a.push({ unit: line.unit || '', es: String(line.es || '').trim(), en: String(line.en || '').trim(), p: String(line.p || ''), day: line.day == null ? 0 : line.day });
     save(a);
     var n = a.length - 1;
@@ -273,7 +392,34 @@ window.BuildIt = (function () {
    * lesson -> a verb in that tense; otherwise six words or more. */
   var TENSE_OF = [[/preterite/, 'preterito', 'the preterite'], [/imperfect/, 'imperfecto', 'the imperfect'],
     [/future/, 'futuro', 'the future'], [/conditional/, 'condicional', 'the conditional'], [/present/, 'presente', 'the present']];
-  function constraint(nodes) {
+  /* The can-do of the lesson that teaches most of these nodes, "say where you are from". */
+  function canDoFor(ids) {
+    var LN = window.LESSON_NODES || {}, best = null, bestN = 0, set = {};
+    ids.forEach(function (id) { set[id] = 1; });
+    for (var k in LN) {
+      var n = 0; ((LN[k] && LN[k].teaches) || []).forEach(function (id) { if (set[id]) n++; });
+      if (n > bestN) { bestN = n; best = k; }
+    }
+    var L = best && (window.ALL_LESSONS || []).filter(function (x) { return x.id === best; })[0];
+    return L && L.canDo ? String(L.canDo).replace(/[.\s]+$/, '') : '';
+  }
+  function norm(s) { return String(s || '').toLowerCase().replace(/[¿?¡!.,;:]/g, '').replace(/\s+/g, ' ').trim(); }
+  /* A line already in the script (same words, ignoring marks and case). */
+  function isDuplicate(es) {
+    var t = norm(es);
+    return !!t && load().some(function (l) { return norm(l.es) === t; });
+  }
+  var DUP_MSG = 'That one is already in your script.';
+  function constraint(nodes, opts) {
+    var spec = constraintBase(nodes);
+    var cd = (opts && opts.canDo) || (nodes && nodes.forEach ? canDoFor(Array.from(nodes)) : '');
+    if (cd) {
+      spec.prompt = 'One true line for your script: ' + cd.charAt(0).toLowerCase() + cd.slice(1) + '.';
+      if (spec.constraints[0] && spec.constraints[0].type === 'minWords') { spec.constraints[0].n = 3; spec.text = 'in your own words'; }
+    } else spec.prompt = 'One true line for your script: say something about you ' + spec.text + '.';
+    return spec;
+  }
+  function constraintBase(nodes) {
     var ids = [], graph = (window.GRAPH && window.GRAPH.nodes) || [];
     if (nodes && nodes.forEach) nodes.forEach(function (id) { ids.push(id); });
     var by = {};
@@ -298,5 +444,5 @@ window.BuildIt = (function () {
   }
 
   return { prompts: prompts, lead: lead, load: load, add: add, edit: edit, has: has, cards: cards, count: count,
-    constraint: constraint, cardId: cardId, KEY: KEY };
+    constraint: constraint, isDuplicate: isDuplicate, DUP_MSG: DUP_MSG, cardId: cardId, KEY: KEY };
 })();
