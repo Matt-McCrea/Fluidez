@@ -8,12 +8,55 @@
 window.StageComprehend = (function () {
   var UI = window.UI, C = window.Checker;
 
+  /* A chapter part dressed as a passage, so the reader and the question loop
+   * below serve both. Options are shuffled here, at display time, and the
+   * stored `answer` index is remapped to where the right option landed. */
+  function chapterAsPassage(ctx) {
+    var c = ctx.chapter, ch = c.ch, part = ch.parts[c.part], last = c.part === ch.parts.length - 1;
+    var many = ch.parts.length > 1;
+    var qs = (part.questions || []).map(function (q) {
+      var order = (q.options || []).map(function (o, i) { return i; });
+      for (var i = order.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = order[i]; order[i] = order[j]; order[j] = t; }
+      return { type: 'mcq', q: q.q, options: order.map(function (k) { return q.options[k]; }), answer: order.indexOf(q.answer) };
+    });
+    return { id: ch.id, title: ch.title, text: part.text, gloss: ch.gloss || [], questions: qs,
+             chapterNo: ch.n, part: c.part + 1, parts: ch.parts.length, many: many,
+             recap: c.part > 0 ? part.recap : null, hook: last ? part.hook : null };
+  }
+
+  function rereadBeat(host, ctx, done) {
+    var r = ctx.reread, t0 = Date.now();
+    var wrap = UI.el('div', 'panel');
+    wrap.appendChild(UI.el('h1', null, r.title));
+    wrap.appendChild(UI.el('p', 'muted', 'Read it again, a little faster.'));
+    var body = UI.el('div', 'passage');
+    if (window.Gloss) window.Gloss.render(body, r.text, { gloss: r.gloss }); else body.textContent = r.text;
+    wrap.appendChild(body);
+    wrap.appendChild(UI.nextBtn('Finished reading', function () {
+      var s = Math.round((Date.now() - t0) / 1000);
+      var time = Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60);
+      ctx.results.reread = { seconds: s, time: time };
+      UI.clear(host);
+      var end = UI.el('div', 'panel');
+      end.appendChild(UI.el('h2', null, 'Read in ' + time));
+      end.appendChild(UI.el('p', 'muted', 'No questions this time. A text you have met before should go quicker.'));
+      end.appendChild(UI.nextBtn('Continuar →', done));
+      host.appendChild(end);
+    }));
+    host.appendChild(wrap);
+  }
+
   function run(host, ctx, done) {
-    var p = ctx.passage;
+    if (ctx.reread && !ctx.chapter) { rereadBeat(host, ctx, done); return; }
+    var p = ctx.chapter ? (ctx.chapterPassage = ctx.chapterPassage || chapterAsPassage(ctx)) : ctx.passage;
     if (!p) { done(); return; }
 
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, p.title));
+    if (p.chapterNo != null) {
+      wrap.appendChild(UI.el('div', 'muted small', 'Chapter ' + p.chapterNo + (p.many ? ', part ' + p.part + ' of ' + p.parts : '')));
+      if (p.recap) wrap.appendChild(UI.el('p', 'muted chapter-recap', p.recap));
+    }
     wrap.appendChild(UI.el('p', 'muted', 'Read it through twice: once for the gist, once for detail. Then answer below.'));
     var body = UI.el('div', 'passage');
     // every word is tappable; falls back to plain text if Gloss is not loaded
@@ -51,7 +94,7 @@ window.StageComprehend = (function () {
   }
 
   function questions(host, ctx, done) {
-    var p = ctx.passage;
+    var p = ctx.chapter ? ctx.chapterPassage : ctx.passage;
     var qs = p.questions || [];
     var st = ctx.step || null, ex = (st && st.extra) || {};
     var i = Math.min((st && st.at) || 0, qs.length), correct = ex.correct || 0, total = ex.total || 0;
@@ -70,6 +113,7 @@ window.StageComprehend = (function () {
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Comprensión', 'Reading') + ': ' + correct + ' / ' + total));
       if (correct === total) body.appendChild(UI.el('p', 'muted', 'All of them.'));
+      if (p.hook) body.appendChild(UI.el('p', 'chapter-hook', p.hook));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 

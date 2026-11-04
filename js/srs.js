@@ -343,8 +343,24 @@ window.SRS = (function () {
    * grow; past twice the budget only 1.5 times the budget is served and still
    * 3 new. `manualCap` (the Settings number, when the learner set one) is a
    * ceiling on the due cards only. The plan is fixed for the day once made. */
-  function computePlan(dueN, b, spc, manualCap) {
-    var budget = BUDGET_MIN[b] || BUDGET_MIN.A1, target = NEW_TARGET[b] || NEW_TARGET.A1;
+  /* SUCCESS STEERS DIFFICULTY. Yesterday's right share, read off the review
+   * log (needs at least 10 reviews that day): under 0.80 the day's new-card
+   * target drops to the floor; over 0.95 it rises by 2, never past target + 4.
+   * `steer` in the plan names the rule that fired. */
+  function yesterdayShare() {
+    try {
+      var log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]'), y = today() - 1, n = 0, r = 0;
+      if (!Array.isArray(log)) return null;
+      log.forEach(function (e) { if (e && e.day === y) { n++; if (e.ok) r++; } });
+      return n >= 10 ? r / n : null;
+    } catch (e) { return null; }
+  }
+  function computePlan(dueN, b, spc, manualCap, share) {
+    var budget = BUDGET_MIN[b] || BUDGET_MIN.A1, base = NEW_TARGET[b] || NEW_TARGET.A1, target = base;
+    if (share === undefined) share = yesterdayShare();
+    var steer = null;
+    if (share != null && share < 0.80) steer = 'low';
+    else if (share != null && share > 0.95) { steer = 'high'; target = Math.min(base + 2, base + 4); }
     var dueMin = dueN * spc / 60;
     var dueCap, newCount;
     if (dueMin <= budget) { dueCap = dueN; newCount = target; }
@@ -355,9 +371,11 @@ window.SRS = (function () {
       dueCap = Math.max(1, Math.floor(1.5 * budget * 60 / spc));
       newCount = NEW_FLOOR;
     }
+    if (steer === 'low') newCount = NEW_FLOOR;
     if (manualCap > 0) dueCap = Math.min(dueCap, manualCap);
     return { band: b, budgetMin: budget, spc: spc, dueN: dueN, dueMin: Math.round(dueMin * 10) / 10,
-             dueCap: dueCap, newCount: newCount, throttled: newCount < target };
+             dueCap: dueCap, newCount: newCount, throttled: newCount < base, steer: steer,
+             yesterdayShare: share == null ? null : Math.round(share * 100) / 100 };
   }
   function dueIn(pool) {
     var s = load(), td = today(), n = 0;

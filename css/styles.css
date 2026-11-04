@@ -1130,3 +1130,8 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
   color:var(--text); font-size:1rem; font-family:inherit;
 }
 .onb-input:focus { outline:none; border-color:var(--accent); }
+
+/* serial reading, five-minute day, stop link */
+.stage-count .stop-link { margin-left: 10px; font-size: 0.85em; opacity: 0.8; }
+.chapter-recap { font-style: italic; }
+.chapter-hook { margin-top: 12px; font-style: italic; }

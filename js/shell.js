@@ -229,7 +229,9 @@ window.Shell = (function () {
 
     var go = UI.el('button', 'primary-btn today-go');
     go.type = 'button';
-    go.textContent = isActive ? T('Seguir la sesión de hoy', 'Continue today\'s session') + ' →' : 'Empezar →';
+    var minIn = (isActive && window.Session && window.Session.minutesIn) ? window.Session.minutesIn() : 0;
+    go.textContent = isActive ? T('Seguir la sesión de hoy', 'Continue today\'s session') +
+      (minIn >= 1 ? T(' (' + minIn + ' min)', ' (' + minIn + ' minute' + (minIn === 1 ? '' : 's') + ' in)') : '') + ' →' : 'Empezar →';
     // no mode when continuing: App.go resumes whatever is saved, whichever length it was
     go.addEventListener('click', function () { if (isActive) window.App.go('session'); else window.App.go('session', 'diaria'); });
     var goRow = UI.el('div', 'today-go-row');

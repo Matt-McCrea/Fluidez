@@ -18,9 +18,9 @@ window.Session = (function () {
    * (see buildContext), rather than bolting on a sixth stage that would have
    * to invent content of its own. */
   var MODES = {
-    rapido: { key: 'rapido', icon: '⚡', label: 'Repaso rápido', labelEn: 'Quick review',       mins: 'unos 4 min', minsEn: 'about 4 min',
-              blurb: 'Only what is due today',
-              keys: ['review'] },
+    rapido: { key: 'rapido', icon: '⚡', label: 'Cinco minutos', labelEn: 'Five minutes',       mins: 'unos 5 min', minsEn: 'about 5 min',
+              blurb: 'Due reviews and a page of the story',
+              keys: ['review', 'comprehend'] },
     corto:  { key: 'corto', icon: '🎯',  label: 'Repaso y práctica', labelEn: 'Review and practice', mins: 'unos 10 min', minsEn: 'about 10 min',
               blurb: 'Review, then grammar in context',
               keys: ['review', 'apply'] },
@@ -212,7 +212,7 @@ window.Session = (function () {
   function markSeen(c) {
     if (!c || c.repeat) return;
     var seen = loadSeen(), d = c.seenDay != null ? c.seenDay : c.day;
-    if (c.passage) seen[passageKey(c.passage)] = d;
+    if (c.passage && !c.chapter) seen[passageKey(c.passage)] = d;   // a chapter day does not read it
     (c.applyItems || []).forEach(function (x) { seen[applyKey(x)] = d; });
     (c.writeTasks || []).forEach(function (t) { seen[writeKey(t)] = d; });
     Object.keys(seen).forEach(function (k) { if (d - seen[k] > 60) delete seen[k]; });
@@ -811,7 +811,7 @@ window.Session = (function () {
       }
     }
 
-    return {
+    var built = {
       day: day,
       di: f.di,
       seed: opts.seed != null ? opts.seed : null,
@@ -834,6 +834,9 @@ window.Session = (function () {
       nodes: tNodes,
       results: {}
     };
+    var Kn2 = window.Known, known2 = null;
+    if (Kn2 && Kn2.forLearner && window.STORY_INDEX) { try { known2 = Kn2.forLearner(f.prog, gi); } catch (e) { known2 = null; } }
+    return window.STORY_INDEX ? applyReading(built, f.prog, known2, over) : built;
   }
 
   // Short label for a day's teaching focus (used on the intro + complete cards).
@@ -887,12 +890,22 @@ window.Session = (function () {
    * The day is stored rather than a bare flag — it costs the same and leaves
    * the door open to "offer this again after N days", which is a different
    * decision from "never again" and should not be foreclosed here. */
-  function markRead(id, text) {
+  function markRead(id, text, chapter) {
     if (!id) return;
     var p = loadProg();
-    p.read = p.read || {};
-    if (p.read[id]) return;
-    p.read[id] = dayNumber();
+    if (chapter) {
+      /* A chapter part: `chapterParts[id]` counts the parts done, `chaptersRead[id]`
+       * is set (to the day) only with the last. One part a reading day. */
+      p.chapterParts = p.chapterParts || {};
+      if ((p.chapterParts[id] || 0) > chapter.part) return;
+      p.chapterParts[id] = chapter.part + 1;
+      p.chapterDay = dayNumber();
+      if (chapter.part + 1 >= chapter.parts) { p.chaptersRead = p.chaptersRead || {}; p.chaptersRead[id] = dayNumber(); }
+    } else {
+      p.read = p.read || {};
+      if (p.read[id]) return;
+      p.read[id] = dayNumber();
+    }
     // Words read: Spanish words in passages marked read, counted once per passage.
     var nWords = String(text || '').split(/\s+/).filter(Boolean).length;
     p.wordsRead = (p.wordsRead || 0) + nWords;
@@ -904,6 +917,146 @@ window.Session = (function () {
     }
     saveProg(p);
   }
+  /* ---- THE SERIAL --------------------------------------------------------
+   * One reading day a unit serves the next unread chapter of the story
+   * (data/story) instead of a passage. Chapters load on demand, as the
+   * library loads them; buildContext is synchronous, so begin()/resume()
+   * preload the band file first (withReading) and the pick reads the cache.
+   *
+   * Coverage is the share of the chapter's lemmas the learner already knows
+   * (Known's `l:` ids, the chapter's own glosses, and the function words
+   * LIB.gloss treats as free). Below the band's target by no more than 0.10
+   * the chapter is served anyway and ctx.gaps says so; further below, the
+   * day reads a passage and ctx.gaps says the chapter is waiting. */
+  var COVERAGE_TARGET = { A1: 0.85, A2: 0.90, B1: 0.93, B2: 0.95, C1: 0.95 };
+  var COVERAGE_SLACK = 0.10;
+  var storyLoads = {};
+  function storyEntries() { return window.STORY_INDEX || []; }
+  function storyEntry(id) { return storyEntries().filter(function (e) { return e.id === id; })[0] || null; }
+  function chapterCached(id) {
+    var e = storyEntry(id), list = e && window['STORY_' + e.band];
+    return list ? (list.filter(function (c) { return c.id === id; })[0] || null) : null;
+  }
+  function loadStoryBand(entry, cb) {
+    var key = 'STORY_' + entry.band;
+    if (window[key]) { cb(); return; }
+    if (typeof document === 'undefined' || !document.head || !document.head.appendChild) { cb(); return; }
+    if (!storyLoads[entry.file]) {
+      storyLoads[entry.file] = [];
+      var s = document.createElement('script');
+      s.src = entry.file;
+      var fin = function () { var w = storyLoads[entry.file]; delete storyLoads[entry.file]; w.forEach(function (f) { f(); }); };
+      s.onload = fin; s.onerror = fin;     // offline: the day falls back to a passage
+      document.head.appendChild(s);
+    }
+    storyLoads[entry.file].push(cb);
+  }
+  // The first chapter (in serial order) not yet fully read, and how many parts of it are done.
+  function nextChapterEntry(prog) {
+    var cr = (prog && prog.chaptersRead) || {};
+    return storyEntries().filter(function (e) { return !cr[e.id]; })[0] || null;
+  }
+  // A chapter read 14 to 21 days ago, else a passage read then: the five-minute day's fallback beat.
+  function rereadCandidate(prog, day) {
+    var best = null;
+    function consider(kind, id, d) {
+      var age = day - d;
+      if (age >= 14 && age <= 21 && (!best || age > best.age)) best = { kind: kind, id: id, age: age };
+    }
+    var cr = prog.chaptersRead || {}, pr = prog.read || {};
+    Object.keys(cr).forEach(function (id) { if (storyEntry(id)) consider('chapter', id, cr[id]); });
+    Object.keys(pr).forEach(function (id) { consider('passage', id, pr[id]); });
+    return best;
+  }
+  // The unit's one reading day: first lesson day at or after its third day; short units use their last day.
+  function isReadingDay(dayIndex) {
+    if (dayIndex == null) return false;
+    var d = (window.COURSE_DAYS || [])[dayIndex];
+    var u = d && d.unit ? (window.COURSE_UNITS || {})[d.unit] : null;
+    if (!u || u.optional || u.from == null || !u.length) return false;
+    var last = u.from + u.length - 1;
+    if (u.length < 3) return dayIndex === last;
+    for (var i = u.from + 2; i <= last; i++) {
+      var di = (window.COURSE_DAYS || [])[i];
+      if (di && di.lesson) return i === dayIndex;
+    }
+    return dayIndex === last;
+  }
+  function chapterCoverage(ch, known) {
+    if (!known) return 1;      // no node graph loaded: nothing to measure against
+    var lem = ch.lemmas || [];
+    if (!lem.length) return 1;
+    var gl = {};
+    (ch.gloss || []).forEach(function (g) {
+      (String(g.es || '').toLowerCase().match(/\p{L}+/gu) || []).forEach(function (w) { gl[w] = 1; });
+    });
+    var small = (window.LIB && window.LIB.gloss && window.LIB.gloss.SMALL_WORDS) || {};
+    var n = 0;
+    lem.forEach(function (l) {
+      l = String(l).toLowerCase();
+      if ((known && known.has('l:' + l)) || gl[l] || Object.prototype.hasOwnProperty.call(small, l)) n++;
+    });
+    return n / lem.length;
+  }
+  /* The next chapter part this learner can read, or null: {ch, part, cov, gap}.
+   * `pin` is a snapshot's {chapterId, part}: a resume or repeat gets exactly that. */
+  function chapterBeat(prog, known, pin, gaps) {
+    if (pin && pin.chapterId) {
+      var pc = chapterCached(pin.chapterId);
+      return pc ? { ch: pc, part: pin.part || 0, cov: chapterCoverage(pc, known) } : null;
+    }
+    var e = nextChapterEntry(prog);
+    if (!e) return null;
+    var ch = chapterCached(e.id);
+    if (!ch) { gaps.push({ kind: 'chapter-waiting', chapter: e.id, why: 'not loaded' }); return null; }
+    var target = COVERAGE_TARGET[ch.band] || COVERAGE_TARGET[e.band] || 0.9;
+    var cov = chapterCoverage(ch, known);
+    if (cov + 1e-9 < target - COVERAGE_SLACK) { gaps.push({ kind: 'chapter-waiting', chapter: ch.id, coverage: Math.round(cov * 100) / 100, target: target }); return null; }
+    var part = Math.min((prog.chapterParts || {})[ch.id] || 0, (ch.parts || []).length - 1);
+    var beat = { ch: ch, part: part, cov: cov };
+    if (cov + 1e-9 < target) { beat.gap = true; gaps.push({ kind: 'chapter-under-coverage', chapter: ch.id, coverage: Math.round(cov * 100) / 100, target: target }); }
+    return beat;
+  }
+  // Decide today's reading beat on a built context: sets ctx.chapter / ctx.reread, and drops the passage a chapter replaces.
+  function applyReading(c, prog, known, over) {
+    var pin = over && (over.chapterId || over.rereadId) ? over : null;
+    var snapped = !!(over && 'passageId' in over);      // a rebuilt session keeps the beat it started with
+    var wantChapter = pin ? !!over.chapterId : (!snapped && (mode === 'rapido' || isReadingDay(c.dayIndex)));
+    var servedToday = prog.chapterDay === c.day;       // one part per reading day
+    if (wantChapter && (pin || !servedToday)) {
+      var b = chapterBeat(prog, known, pin, c.gaps);
+      if (b) { c.chapter = { id: b.ch.id, ch: b.ch, part: b.part, coverage: b.cov }; }
+    }
+    if (mode === 'rapido' && !c.chapter && (!snapped || pin)) {
+      var rr = pin && over.rereadId ? { kind: over.rereadKind, id: over.rereadId } : rereadCandidate(prog, c.day);
+      if (rr) {
+        var item = rr.kind === 'chapter' ? chapterCached(rr.id) : (window.PASSAGES || []).filter(function (x) { return x.id === rr.id; })[0];
+        if (item) {
+          var text = rr.kind === 'chapter' ? (item.parts || []).map(function (p) { return p.text; }).join('\n\n') : item.text;
+          c.reread = { kind: rr.kind, id: rr.id, title: item.title, text: text, gloss: item.gloss || [] };
+        }
+      }
+    }
+    if (mode === 'rapido') c.passage = null;           // the beat is the chapter part or the re-read, never a fresh passage
+    return c;
+  }
+  // Preload whatever band file(s) the day's beat will need, then run fn.
+  function withReading(over, fn) {
+    var need = [], prog = loadProg();
+    if (over && over.chapterId) { var pe = storyEntry(over.chapterId); if (pe) need.push(pe); }
+    else if (over && over.rereadId) { if (over.rereadKind === 'chapter') { var re = storyEntry(over.rereadId); if (re) need.push(re); } }
+    else {
+      var f = pickFocus(over);
+      if (mode === 'rapido' || isReadingDay(f.dayIndex)) {
+        var ne = nextChapterEntry(prog); if (ne) need.push(ne);
+        if (mode === 'rapido') { var rc = rereadCandidate(prog, dayNumber()); if (rc && rc.kind === 'chapter' && storyEntry(rc.id)) need.push(storyEntry(rc.id)); }
+      }
+    }
+    var left = need.length;
+    if (!left) { fn(); return; }
+    need.forEach(function (e) { loadStoryBand(e, function () { if (--left === 0) fn(); }); });
+  }
+
   function readSet() { return loadProg().read || {}; }
   function bumpStreak() {
     var p = loadProg(), day = dayNumber();
@@ -1033,7 +1186,22 @@ window.Session = (function () {
     discardSession();
   }
 
+  /* TIME IN THE SESSION. Active time only: it stops at a pause and starts again
+   * on resume, so "N minutes in" on the hub is what was spent, not how long ago
+   * the session was opened. */
+  var STOP_AFTER_MS = 10 * 60000;
+  function activeMs() {
+    if (!ctx) return 0;
+    return (ctx.activeMs || 0) + (ctx.segStart ? Date.now() - ctx.segStart : 0);
+  }
+  function minutesIn() {
+    var ms = 0;
+    if (ctx && idx >= 0) ms = activeMs();
+    else { var r = pending(); ms = r ? (r.activeMs || 0) : 0; }
+    return Math.floor(ms / 60000);
+  }
   function pauseToShell() {
+    if (ctx) { ctx.activeMs = activeMs(); ctx.segStart = null; persist(); }
     if (window.Shell) { window.Shell.closeOverlay(); window.Shell.go('inicio'); }
   }
 
@@ -1068,6 +1236,10 @@ window.Session = (function () {
       di: c.di != null ? c.di : null,
       lessonId: c.lesson ? c.lesson.id : null,
       passageId: c.passage ? c.passage.id : null,
+      chapterId: c.chapter ? c.chapter.id : null,
+      part: c.chapter ? c.chapter.part : null,
+      rereadId: c.reread ? c.reread.id : null,
+      rereadKind: c.reread ? c.reread.kind : null,
       applyIx: (c.applyItems || []).map(function (x) { return ai.indexOf(x); }),
       // bank items are not in APPLY_ITEMS: kept by row id and kind, rebuilt on restore
       applyBank: (c.applyItems || []).map(function (x) { return x.bankId ? { id: x.bankId, kind: x.bankKind } : null; }),
@@ -1079,7 +1251,8 @@ window.Session = (function () {
     if (!ctx || idx < 0 || idx >= stages().length) return;
     writeRec(SKEY, { v: 1, mode: mode, stageIdx: idx, stepIdx: stepIdx, ctxSeed: ctx.seed,
                      startedDay: ctx.startedDay, band: bandNow(), answers: answers,
-                     results: ctx.results, snap: ctx.snap, repeat: !!ctx.repeat });
+                     results: ctx.results, snap: ctx.snap, repeat: !!ctx.repeat,
+                     startedAt: ctx.startedAt || null, activeMs: activeMs() });
   }
   function discardSession() { dropRec(SKEY); idx = -1; ctx = null; stepIdx = 0; answers = {}; resumeAt = null; }
 
@@ -1102,6 +1275,8 @@ window.Session = (function () {
     if (apply.some(function (x) { return !x; }) || writes.some(function (x) { return !x; })) return false;
     c.applyItems = apply; c.writeTasks = writes;
     c.snap = snap; c.results = rec.results || {};
+    if (snap.chapterId && !c.chapter) return false;
+    c.startedAt = rec.startedAt || Date.now(); c.activeMs = rec.activeMs || 0; c.segStart = Date.now();
     if (rec.stageIdx >= stages().length) return false;
     ctx = c; idx = rec.stageIdx; stepIdx = rec.stepIdx || 0; answers = rec.answers || {};
     resumeAt = idx;
@@ -1121,6 +1296,19 @@ window.Session = (function () {
     var exitB = UI.el('button', 'ghost-btn small', '✕ ' + T('pausar', 'pause')); exitB.type = 'button'; exitB.style.marginTop = '0';
     exitB.addEventListener('click', pauseToShell);
     right.appendChild(exitB);
+    /* After ten minutes in a full session, a quiet way out that keeps the place. */
+    if (mode === 'diaria' || mode === 'larga') {
+      var stopB = UI.el('button', 'linkish stop-link', T('Necesito parar', 'I need to stop'));
+      stopB.type = 'button'; stopB.style.display = 'none';
+      stopB.addEventListener('click', pauseToShell);
+      right.appendChild(stopB);
+      var left = STOP_AFTER_MS - activeMs();
+      if (left <= 0) stopB.style.display = '';
+      else {
+        var stopT = setTimeout(function () { if (ctx) { var rest = STOP_AFTER_MS - activeMs(); if (rest <= 0) stopB.style.display = ''; } }, left + 50);
+        if (stopT && stopT.unref) stopT.unref();
+      }
+    }
     head.appendChild(right);
     host.appendChild(head);
     var body = UI.el('div', 'stage-body');
@@ -1142,7 +1330,10 @@ window.Session = (function () {
     persist();
     stage.run(body, ctx, function () {
       // A passage counts as read once the reading stage is done with it.
-      if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id, ctx.passage.text);
+      if (stage.key === 'comprehend' && ctx.chapter) {
+        var cp = ctx.chapter.ch.parts[ctx.chapter.part];
+        markRead(ctx.chapter.id, cp.text, { part: ctx.chapter.part, parts: ctx.chapter.ch.parts.length });
+      } else if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id, ctx.passage.text);
       /* Learn finishing no longer marks the lesson studied or moves the day:
        * the day is done when the SESSION is (see markDone). Learn's own recall
        * items were enrolled inside the stage and stay enrolled. */
@@ -1338,6 +1529,7 @@ window.Session = (function () {
     // Only name a focus if the lesson stage actually ran; a quick review has none.
     if (r.learn || modeDef().keys.indexOf('learn') !== -1) lines.push('Lesson: <b>' + focusLabel(ctx) + '</b>');
     if (r.learn && r.learn.total) lines.push('Quick check: <b>' + r.learn.correct + '/' + r.learn.total + '</b>');
+    if (r.reread) lines.push('Read it again in <b>' + r.reread.time + '</b>');
     if (r.comprehend) lines.push('Reading: <b>' + r.comprehend.correct + '/' + r.comprehend.total + '</b>');
     if (r.apply) lines.push('Grammar in context: <b>' + r.apply.correct + '/' + r.apply.total + '</b>');
     if (r.produce) lines.push('Wrote <b>' + r.produce.done + '</b> ' + (r.produce.done === 1 ? 'thing' : 'things') + ' of your own');
@@ -1415,15 +1607,16 @@ window.Session = (function () {
     if (m && MODES[m]) mode = m;
     host = document.getElementById('stage-host');
     bar = document.getElementById('session-progress-fill');
-    withBank(function () {
+    withBank(function () { withReading(over, function () {
       var seed = Math.floor(Math.random() * 1e9);
       ctx = buildContext({ seed: seed, over: over, repeat: repeat });
       ctx.snap = makeSnap(ctx);
+      ctx.startedAt = Date.now(); ctx.activeMs = 0; ctx.segStart = Date.now();
       markSeen(ctx);
       idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
       persist();
       runStage();
-    });
+    }); });
   }
   function start(m) { begin(m, null, false); }
 
@@ -1438,14 +1631,15 @@ window.Session = (function () {
 
   function resume() {
     host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill');
-    if (ctx && idx >= 0 && idx < stages().length) { runStage(); return; }
+    if (ctx && idx >= 0 && idx < stages().length) { if (!ctx.segStart) ctx.segStart = Date.now(); runStage(); return; }
     var rec = pending();
     if (!rec) { dropRec(SKEY); idx = -1; ctx = null; start(); return; }
-    withBank(function () {
+    mode = rec.mode;
+    withBank(function () { withReading(rec.snap, function () {
       if (restore(rec)) { runStage(); return; }
       dropRec(SKEY); idx = -1; ctx = null;
       start();
-    });
+    }); });
   }
 
   pending();   // on load: a record from a previous day is discarded here
@@ -1453,7 +1647,7 @@ window.Session = (function () {
   return {
     start: start,
     // test hooks: build a context without starting a session; record what it served
-    _build: buildContext, _markSeen: markSeen,
+    _build: buildContext, _markSeen: markSeen, _isReadingDay: isReadingDay, _markRead: markRead, _setMode: function (m) { mode = m; },
     today: today,
     skipLesson: skipLesson,
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
@@ -1468,6 +1662,7 @@ window.Session = (function () {
     pending: pending,
     breakRuns: breakRuns,
     hasSavedSession: function () { return !!pending(); },
+    minutesIn: minutesIn,
     isActive: function () { return (!!ctx && idx >= 0 && idx < stages().length) || !!pending(); },
     currentStageIndex: function () { return idx; },
     stageCount: function () { return stages().length; }

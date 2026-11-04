@@ -40,7 +40,7 @@ window.Known = (function () {
     at.forEach(function (pos, id) { firstDay.set(id, dayOf[pos]); });
     return true;
   }
-  function reset() { graph = null; firstDay = null; memo = new Map(); stats.missing = 0; }
+  function reset() { graph = null; firstDay = null; memo = new Map(); stats.missing = 0; cognates = null; dayMemo = new Map(); }
 
   function taughtBy(di) {
     if (!init()) return new Set();
@@ -73,9 +73,95 @@ window.Known = (function () {
     return out;
   }
 
+  /* ---- WORDS THE LEARNER KNOWS, as `l:<lemma>` ids ---------------------------
+   * The graph's lexeme nodes were never in taughtBy (no lesson `teaches` them),
+   * so reading coverage came out near zero. A word counts as known when:
+   *   - it is a keyword or exponent of a lesson the course has reached by day
+   *     `di` or the learner has studied, or the infinitive of a verb day;
+   *   - it is in the new-word drip so far: VOCAB entries at or below the band
+   *     of day `di`, in VOCAB order, at SRS.NEW_TARGET a day for the days spent
+   *     in each band (VOCAB carries no first course day, so pace stands in for
+   *     it), plus any word the learner has enrolled in review;
+   *   - it is a transparent cognate of its English gloss (same first four
+   *     letters once accents are stripped, or -ción/-tion, -dad/-ty, -mente/-ly,
+   *     -oso/-ous, -ico/-ic), because the plan counts cognates as known. */
+  var RANKS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  var cognates = null, vocabByBand = null, lessonById = null, lexIds = null, dayMemo = new Map();
+  function bareEs(es) { return String(es || '').trim().toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, ''); }
+  function plain(w) { return String(w).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  var SUFFIX = [['cion', 'tion'], ['dad', 'ty'], ['mente', 'ly'], ['oso', 'ous'], ['osa', 'ous'], ['ico', 'ic'], ['ica', 'ic']];
+  function isCognate(es, en) {
+    var a = plain(bareEs(es)), b = plain(String(en || '').toLowerCase().replace(/^(to|the|a|an)\s+/, '').split(/[,;(\/]/)[0].trim());
+    if (!a || !b || a.indexOf(' ') !== -1 || b.indexOf(' ') !== -1) return false;
+    if (a.length >= 4 && b.length >= 4 && a.slice(0, 4) === b.slice(0, 4)) return true;
+    for (var i = 0; i < SUFFIX.length; i++) {
+      var x = SUFFIX[i][0], y = SUFFIX[i][1];
+      if (a.length > x.length && b.length > y.length && a.slice(-x.length) === x && b.slice(-y.length) === y) return true;
+    }
+    return false;
+  }
+  function prepLex() {
+    if (cognates) return;
+    cognates = new Set(); lexIds = new Set();
+    (window.GRAPH && window.GRAPH.nodes || []).forEach(function (n) {
+      if (n.kind !== 'lexeme') return;
+      lexIds.add(n.id);
+      if (isCognate(n.es, n.en)) cognates.add(n.id);
+    });
+    vocabByBand = {}; RANKS.forEach(function (b) { vocabByBand[b] = []; });
+    (window.VOCAB || []).forEach(function (w) { if (w.es && vocabByBand[w.cefr || 'A1']) vocabByBand[w.cefr || 'A1'].push(bareEs(w.es)); });
+    lessonById = {};
+    (window.GRAMMAR_LESSONS || []).forEach(function (l) { if (l) lessonById[l.id] = l; });
+  }
+  function bandOfDay(di) {
+    var starts = window.COURSE_BANDS || {}, b = 'A1';
+    RANKS.forEach(function (r) { if (starts[r] != null && starts[r] <= di) b = r; });
+    return b;
+  }
+  function addLex(set, lemma) { if (lemma) set.add('l:' + lemma); }
+  function addPhrase(set, es) {
+    var b = bareEs(es);
+    addLex(set, b);
+    (b.match(/[\p{L}]{4,}/gu) || []).forEach(function (w) { if (lexIds.has('l:' + w)) set.add('l:' + w); });
+  }
+  function taughtWords(di) {
+    if (dayMemo.has(di)) return dayMemo.get(di);
+    var out = new Set(), days = window.COURSE_DAYS || [];
+    for (var i = 0; i <= di && i < days.length; i++) {
+      var d = days[i];
+      if (d.verbs) d.verbs.forEach(function (v) { addLex(out, bareEs(v).replace(/se$/, '')); addLex(out, bareEs(v)); });
+      var l = d.lesson && lessonById[d.lesson];
+      if (l) [].concat(l.keywords || [], l.exponents || []).forEach(function (k) { if (k && k.es) addPhrase(out, k.es); });
+    }
+    var starts = window.COURSE_BANDS || {}, here = RANKS.indexOf(bandOfDay(di)), target = (window.SRS && window.SRS.NEW_TARGET) || {};
+    RANKS.forEach(function (b, bi) {
+      if (bi > here) return;
+      var from = starts[b] || 0, to = bi < here ? (starts[RANKS[bi + 1]] != null ? starts[RANKS[bi + 1]] : di + 1) : di + 1;
+      var n = Math.max(0, to - from) * (target[b] || 10);
+      vocabByBand[b].slice(0, n).forEach(function (w) { addLex(out, w); });
+    });
+    if (dayMemo.size >= MEMO_MAX) dayMemo.delete(dayMemo.keys().next().value);
+    dayMemo.set(di, out);
+    return out;
+  }
+  function enrolledWords() {
+    var out = [], srs = {};
+    try { srs = JSON.parse(localStorage.getItem('fluidez.srs')) || {}; } catch (e) { srs = {}; }
+    Object.keys(srs).forEach(function (id) { var m = /^v:(.+):meaning$/.exec(id); if (m) out.push('l:' + bareEs(m[1])); });
+    return out;
+  }
+
   function forLearner(prog, di) {
     if (!init()) return new Set();
+    prepLex();
     var s = new Set(taughtBy(di));
+    cognates.forEach(function (id) { s.add(id); });
+    taughtWords(di).forEach(function (id) { s.add(id); });
+    enrolledWords().forEach(function (id) { s.add(id); });
+    ((prog && prog.studied) ? Object.keys(prog.studied) : []).forEach(function (lid) {
+      var l = lessonById[lid];
+      if (l) [].concat(l.keywords || [], l.exponents || []).forEach(function (k) { if (k && k.es) addPhrase(s, k.es); });
+    });
     var studied = (prog && prog.studied) || {};
     Object.keys(studied).forEach(function (id) { teachesOf(id).forEach(function (n) { s.add(n); }); });
     passedInReview().forEach(function (n) { s.add(n); });
