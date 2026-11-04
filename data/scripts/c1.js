@@ -1,8 +1,10 @@
 /* ============================================================================
- * TEACHING SCRIPTS, C1 units 1 to 4 (window.SCRIPTS_C1), keyed by lesson id.
+ * TEACHING SCRIPTS, C1 units 1 to 6 (window.SCRIPTS_C1), keyed by lesson id.
  * Units c1-u55 "Idiom and the body", c1-u56 "Irony and implicature",
- * c1-u57 "Saying it without owning it" and c1-u58 "Institutional Spanish":
- * every lesson on the path from COURSE_BANDS.C1 (day 492 to day 550).
+ * c1-u57 "Saying it without owning it", c1-u58 "Institutional Spanish",
+ * c1-u59 "The whole verb system at once" and c1-u60 "Emotion at native
+ * pitch": every lesson on the path in the first six units from
+ * COURSE_BANDS.C1 (course days 493 to 584).
  *
  * Same anatomy and shape as data/scripts/b1.js and b2.js (tools/test-scripts-c1.js
  * checks every rule), with what the owner asked of C1:
@@ -16,7 +18,12 @@
  *     Units c1-u57 and c1-u58 have one run of notion lessons,
  *     nt-certeza-incertidumbre-c1 and nt-realidad-ficcion-c1, and they teach
  *     different things (how sure you are; what is real and what only seems
- *     so), so each keeps its own script;
+ *     so), so each keeps its own script. Units c1-u59 and c1-u60 have two
+ *     neighbouring pairs, fn-obligacion-necesidad-c1 with
+ *     nt-necesidad-obligacion-c1 (where a duty comes from and the least you
+ *     must do; how much you need something and having no way out) and
+ *     nt-reflexion-conocimiento-c1 with nt-expresion-verbal-c1 (thinking it
+ *     through; the verbs of saying), and each lesson keeps its own script;
  *   - the words taught inside real use, not as lists: a review, a complaint,
  *     a message to a neighbour, a story, an argument (evidence rule 13: group
  *     by scenario, not by category). The old notion lessons were word lists;
@@ -37,7 +44,16 @@
  * que pela, hecho un asco, ponerse como una sopa, de un humor de perros,
  * hasta las narices, menudo lío, crío, chaval, bocadillo, enhorabuena; and in
  * units 3 and 4 ¡y tanto!, ¿a que sí?, seguimos tirando, faltaría más, vale,
- * les invitamos, anejo, muy señor mío). No dashes anywhere.
+ * les invitamos, anejo, muy señor mío; and in units 5 and 6 confirmarais
+ * vuestra, tendríais, ándale, ¡dale! read as irritation (a yes in Colombia),
+ * echar un cable, móvil, coche,
+ * le escribía para, ¡vaya, hombre!, estar como un flan, partirse de risa, lo
+ * pasamos bien, no te cortes, me importa un pimiento, hacer ilusión, echar de
+ * menos, estar de buenas for a good mood, which is being lucky in Colombia,
+ * and the perfect for today taught as the default: the old
+ * dc-indefinido-perfecto-c1 lesson took Spain's hoy he comido as the norm,
+ * and the script teaches the Latin American preterite with the perfect for
+ * what is still open). No dashes anywhere.
  * ========================================================================== */
 window.SCRIPTS_C1 = {
 
@@ -3366,6 +3382,2079 @@ window.SCRIPTS_C1 = {
     "*Revisar el calendario es inaplazable* is correct but flat: *la revisión del calendario resulta inaplazable* is the institutional voice.",
     "Every sentence nominalised reads like a machine: one or two per paragraph is the dose.",
     "*Aunque* is not wrong, but the task asks for *si bien* or *pese a que* to carry the concession."
+  ]
+},
+
+/* ---- unit c1-u59 · The whole verb system at once -------------------------- */
+
+"gr-tiempos-indicativo-c1": {
+  source: "merged",
+  hook: {
+    line: "Sunday lunch at your aunt Gloria's in Bogotá. She tells the story of the year she nearly moved to New York, guesses why her brother never wrote, and on the way out pats her pockets. Every verb she uses sits somewhere other than its own time.",
+    es: "En el 85 me llega una carta de Nueva York.\nYo había pensado irme, pero al final me quedé.\n¿No me habré dejado las llaves?",
+    en: "In '85 a letter arrives for me from New York.\nI had been thinking of going, but in the end I stayed.\nI haven't left my keys behind, have I?"
+  },
+  examples: [
+    { es: "En el 85 me llega una carta de mi hermano, que ya vivía en Nueva York.", en: "In '85 a letter arrives from my brother, who was already living in New York." },
+    { es: "Había pensado irme con él, pero mi mamá se enfermó y al final me quedé en Bogotá.", en: "I had been thinking of going with him, but my mum fell ill and in the end I stayed in Bogotá." },
+    { es: "Mi hermano habrá tenido sus motivos, pero en diez años no nos escribió ni una carta.", en: "My brother must have had his reasons, but in ten years he didn't write us a single letter." }
+  ],
+  rule: "A Spanish verb can step outside its own time, and each step does a job.\nThe present for the past brings a story close: *En el 85 me llega una carta.* Choose it for the scene and stay in it.\nThe future perfect guesses about the past: *Habrá tenido sus motivos*, he must have had his reasons. With *no*, as a question, it is a worry: *¿No me habré dejado las llaves?*\nThe conditional grants a point about the past before a *pero*: *Sería muy listo, pero nunca trabajó.*\nThe pluperfect for what almost happened: *Había pensado irme, pero me quedé.* The plan existed; the trip never did.",
+  readAndPick: [
+    { q: "Did Gloria go to New York?", es: "Había pensado irme, pero al final me quedé.",
+      options: ["Yes, for many years", "No, it never happened at all", "Yes, but she came back"], answer: 1,
+      why: "*Había pensado* is a plan that existed and never happened." },
+    { q: "What is she saying about her brother?", es: "Habrá tenido sus motivos, pero nunca escribió.",
+      options: ["He probably had reasons", "He wrote to her every week", "He will have reasons soon"], answer: 0,
+      why: "*Habrá tenido* is a guess about the past: he must have had his reasons." },
+    { q: "What is she afraid of?", es: "¿No me habré dejado las llaves en la mesa?",
+      options: ["Losing them on the bus later", "Someone stealing them", "Having left them behind"], answer: 2,
+      why: "With *no*, as a question, the future perfect worries about something already done." },
+    { q: "Is she praising her cousin?", es: "Sería muy listo, pero nunca trabajó un solo día.",
+      options: ["Yes, warmly and without reserve", "She grants it, then objects", "No, she calls him slow-witted"], answer: 1,
+      why: "*Sería*, before *pero*, grants the point about the past and then answers it." },
+    { q: "When did the letter arrive?", es: "En el 85 me llega una carta de Nueva York.",
+      options: ["Decades ago, in 1985", "Only this morning", "It's still on its way"], answer: 0,
+      why: "The present tells a past story as if it were happening now; *en el 85* says when." }
+  ],
+  yourTurn: [
+    { en: "He must have had his reasons.", es: "Habrá tenido sus motivos.", accept: ["Habrá tenido sus [motivos|razones]."] },
+    { en: "I had been thinking of leaving, but in the end I stayed.", es: "Había pensado irme, pero al final me quedé.", accept: ["Había pensado [irme|marcharme], pero [al final|finalmente] me quedé."] },
+    { en: "I haven't left the keys inside, have I?", es: "¿No me habré dejado las llaves adentro?", accept: ["¿No [me habré dejado|habré dejado] las llaves [adentro|dentro]?"] },
+    { en: "He may well have been clever, but he never worked.", es: "Sería muy listo, pero nunca trabajó.", accept: ["Sería muy [listo|inteligente], pero nunca trabajó."] },
+    { en: "In '85 a letter arrives for me from New York.", es: "En el 85 me llega una carta de Nueva York.", accept: ["En el [85|ochenta y cinco] me llega una carta de Nueva York."] }
+  ],
+  translate: [
+    { en: "In 1985 my uncle sells the shop and leaves for New York without telling anyone.", es: "En 1985 mi tío vende la tienda y se va para Nueva York sin avisarle a nadie.", accept: ["En 1985 mi tío vende la tienda y se va [para|a] Nueva York sin [avisarle|decirle] a nadie."] },
+    { en: "She must have had her reasons, but she could at least have called us.", es: "Habrá tenido sus motivos, pero por lo menos nos habría podido llamar.", accept: ["Habrá tenido sus [motivos|razones], pero [por lo menos|al menos] [nos habría podido llamar|habría podido llamarnos|podría habernos llamado|nos podría haber llamado]."] },
+    { en: "I haven't left the stove on, have I? We've been out of the house for three hours.", es: "¿No habré dejado la estufa prendida? Llevamos tres horas fuera de la casa.", accept: ["¿No [habré|me habré] dejado la estufa prendida? Llevamos tres horas [fuera de la casa|fuera de casa|afuera]."] },
+    { en: "Your cousin may well have been charming, but he never paid anyone back a single peso.", es: "Tu primo sería muy encantador, pero nunca le devolvió ni un peso a nadie.", accept: ["Tu primo sería muy [encantador|simpático|querido], pero nunca le devolvió ni un peso a nadie.", "Tu primo sería muy [encantador|simpático|querido], pero nunca le devolvió a nadie ni un peso."] },
+    { en: "I had come close to selling the apartment when the bank called me with a better offer.", es: "Había estado a punto de vender el apartamento cuando el banco me llamó con una oferta mejor.", accept: ["Había estado a punto de vender el apartamento cuando el banco me llamó con una [oferta mejor|mejor oferta]."] },
+    { en: "So I get to the airport and the flight is cancelled. I call my brother and he doesn't answer.", es: "Llego al aeropuerto y el vuelo está cancelado. Llamo a mi hermano y no me contesta.", accept: ["Llego al aeropuerto y el vuelo [está cancelado|lo cancelaron]. Llamo a mi hermano y no me [contesta|responde]."] }
+  ],
+  register: [
+    { es: "Habrá tenido sus motivos.", en: "He must have had his reasons.", when: "a guess you would not swear to" },
+    { es: "Seguro que tuvo sus motivos.", en: "I'm sure he had his reasons.", when: "in conversation, when you feel confident" },
+    { es: "Es probable que haya tenido sus motivos.", en: "He probably had his reasons.", when: "in writing, or when you want to sound careful" },
+    { es: "En 1948 matan a Gaitán y Bogotá arde.", en: "In 1948 Gaitán is killed and Bogotá burns.", when: "telling history or a story, to bring it close" }
+  ],
+  personal: {
+    prompt: "Tell a family story in three lines: one scene in the present, one plan that never happened, and one guess about why someone did what they did.",
+    constraints: [
+      { type: "regex", pattern: "\\b(había|habías|habíamos|habían) (pensado|estado a punto)", label: "a plan that never happened: *había pensado*" },
+      { type: "regex", pattern: "\\bhabr(á|é|ás|án|emos)\\s+[a-z]+(ado|ido|isto|ito|echo|icho|uesto|uelto)\\b", label: "a guess about the past: *habrá tenido*" },
+      { type: "minSentences", n: 3, label: "three sentences or more" }
+    ],
+    model: "En el 2010 mi papá recibe una oferta en Panamá. Había pensado aceptarla, pero mi abuela se enfermó y al final se quedó. Mi tío nunca vino a visitarla; habrá tenido sus motivos."
+  },
+  pitfalls: [
+    "*Habrá tenido sus motivos* is not about the future: it is a guess about the past, like English *must have*.",
+    "Once a story is in the present, stay there: *llego y me encuentro*, not *llego y me encontré*.",
+    "*Había pensado irme* does not say you went: it says you didn't. If you went, say *me fui*."
+  ]
+},
+
+"gr-tiempos-subjuntivo-c1": {
+  source: "merged",
+  hook: {
+    line: "You are leaving your job at a design studio in Medellín, and your boss wants to know why. Every answer starts with a *no*, and what follows it decides what you are admitting and what you are not.",
+    es: "No me voy porque me paguen poco, sino porque aquí no puedo crecer.\nNo niego que he cometido errores.\nPero nunca dije que el equipo fuera malo.",
+    en: "I'm not leaving because the pay is low, but because I can't grow here.\nI don't deny I've made mistakes.\nBut I never said the team was bad."
+  },
+  examples: [
+    { es: "No me voy porque me paguen poco, sino porque en este estudio ya no puedo crecer.", en: "I'm not leaving because they pay me little, but because I can't grow in this studio any more." },
+    { es: "No niego que llegué tarde varias veces, pero nunca dejé un proyecto sin terminar.", en: "I don't deny I was late several times, but I never left a project unfinished." },
+    { es: "Yo no dije que el cliente fuera difícil; dije que pedía cambios todos los días.", en: "I didn't say the client was difficult; I said he asked for changes every day." }
+  ],
+  rule: "After a *no*, the mood is a choice, and the choice says what you vouch for.\n*No niego que llegué tarde*: the indicative, so you admit it happened. *No dije que fuera difícil*: the subjunctive, so nobody claims it, not even you.\nWith *porque*, the subjunctive denies the reason, not the act: *No me voy porque me paguen poco* means I am leaving, for another reason, and *sino porque* gives it. *No me voy porque me pagan bien* means I'm staying.\nA guess moves too: *se habrá enterado* becomes *no creo que se haya enterado*.\nAnd *¡Quién tuviera tus años!* wishes for what cannot be.",
+  readAndPick: [
+    { q: "Is the speaker leaving?", es: "No me voy porque me paguen poco.",
+      options: ["Yes, but not for the pay", "No, he is staying where he is", "Yes, because of the money"], answer: 0,
+      why: "*Paguen* denies the reason, not the leaving: he goes, and the real reason comes next." },
+    { q: "And this time?", es: "No me voy porque me pagan bien.",
+      options: ["He's leaving, pay aside", "He stays, the pay is good", "He leaves for a new job"], answer: 1,
+      why: "With the plain *pagan*, the *no* falls on leaving: he stays, and the pay is why." },
+    { q: "Does she admit she was late?", es: "No niego que llegué tarde varias veces.",
+      options: ["No, she denies it firmly", "She isn't sure herself", "Yes, it really happened"], answer: 2,
+      why: "*Llegué*, the plain past, means she vouches for it." },
+    { q: "Did he say the client was difficult?", es: "Yo no dije que el cliente fuera difícil.",
+      options: ["No, he never claimed that", "Yes, and he still thinks so", "Yes, but only the one time"], answer: 0,
+      why: "*Fuera* says nobody vouches for it: he never made that claim." },
+    { q: "What does the speaker think about Carlos?", es: "No creo que Carlos se haya enterado todavía.",
+      options: ["He knew all along", "He probably hasn't heard", "He'll hear tomorrow"], answer: 1,
+      why: "*Se haya enterado* is the guess *se habrá enterado*, moved under *no creo*." },
+    { q: "What is the speaker wishing for?", es: "¡Quién tuviera tus años y tu energía!",
+      options: ["To meet someone like you", "To earn what you do", "To be your age again"], answer: 2,
+      why: "*Quién* plus the *-ra* form wishes for something that cannot happen." }
+  ],
+  yourTurn: [
+    { en: "I'm not leaving because they pay me badly, but because I can't grow here.", es: "No me voy porque me paguen mal, sino porque aquí no puedo crecer.", accept: ["No me voy porque me paguen [mal|poco], sino porque aquí no puedo crecer.", "No me voy porque me paguen [mal|poco], sino porque no puedo crecer aquí."] },
+    { en: "I don't deny I made mistakes.", es: "No niego que cometí errores.", accept: ["No niego que [cometí|he cometido] errores."] },
+    { en: "I never said the team was bad.", es: "Nunca dije que el equipo fuera malo.", accept: ["(Yo) nunca dije que el equipo fuera malo.", "(Yo) no dije nunca que el equipo fuera malo."] },
+    { en: "I don't think he's found out yet.", es: "No creo que se haya enterado todavía.", accept: ["No creo que [se haya enterado todavía|todavía se haya enterado|se haya enterado aún|aún se haya enterado]."] },
+    { en: "If only I were your age!", es: "¡Quién tuviera tus años!", accept: ["¡Quién tuviera tu edad!"] }
+  ],
+  translate: [
+    { en: "She isn't studying law because her parents make her, but because she likes it.", es: "No estudia derecho porque sus papás la obliguen, sino porque le gusta.", accept: ["No estudia derecho porque sus [papás|padres] la obliguen, sino porque le gusta."] },
+    { en: "I saw no sign that there was any problem with the contract when I signed it.", es: "No vi que hubiera ningún problema con el contrato cuando lo firmé.", accept: ["No vi que hubiera ningún problema [con el|en el] contrato cuando lo firmé."] },
+    { en: "My boss doesn't deny that the project is behind; she denies that it's our fault.", es: "Mi jefa no niega que el proyecto está atrasado; niega que sea culpa nuestra.", accept: ["Mi jefa no niega que el proyecto está [atrasado|retrasado]; niega que sea [culpa nuestra|nuestra culpa]."] },
+    { en: "I don't think Andrés has read the email yet, so don't say anything to him.", es: "No creo que Andrés haya leído el correo todavía, así que no le digas nada.", accept: ["No creo que Andrés haya leído el correo [todavía|aún], así que no le digas nada.", "No creo que Andrés [todavía|aún] haya leído el correo, así que no le digas nada."] },
+    { en: "I'm not saying it because you're my friend. I'm saying it because it's true: your design was the best. (to a woman)", es: "No lo digo porque seas mi amiga. Lo digo porque es verdad: tu diseño era el mejor.", accept: ["No lo digo porque seas mi amiga. Lo digo porque es verdad: tu diseño [era|fue] el mejor."] },
+    { en: "If only I had your patience! In your place I would have quit a year ago.", es: "¡Quién tuviera tu paciencia! Yo en tu lugar habría renunciado hace un año.", accept: ["¡Quién tuviera tu paciencia! (Yo) en tu lugar [habría|hubiera] renunciado hace un año."] }
+  ],
+  register: [
+    { es: "No digo que sea malo.", en: "I'm not saying it's bad.", when: "softening a criticism you still mean" },
+    { es: "No es que sea malo, es que no me convence.", en: "It's not that it's bad, it just doesn't convince me.", when: "with friends, giving the real reason" },
+    { es: "No se trata de que sea malo, sino de que no cumple el plazo.", en: "The point is not that it's bad, but that it misses the deadline.", when: "in a meeting or in writing" }
+  ],
+  personal: {
+    prompt: "You are turning something down: a job, a trip, a plan. In two or three lines, deny the obvious reason, give the real one, and admit one thing you do not deny.",
+    constraints: [
+      { type: "subjunctiveAfter", trigger: "porque", label: "the reason you deny, in the subjunctive: *porque me dé miedo*" },
+      { type: "containsWord", word: "sino porque", label: "the real reason: *sino porque*" },
+      { type: "containsAny", words: ["no niego que", "no voy a negar que", "reconozco que"], label: "something you admit: *no niego que*" }
+    ],
+    model: "No voy a ir a Cartagena porque me dé miedo volar, sino porque estoy sin plata. No niego que me encantaría ir."
+  },
+  pitfalls: [
+    "*No me voy porque me pagan poco* says the opposite of what you mean: with the plain verb, you are staying.",
+    "*Sino porque*, not *pero porque*: after a denied reason, Spanish corrects with *sino*.",
+    "*No niego que* keeps the plain verb when you are admitting it: *no niego que llegué tarde*."
+  ]
+},
+
+"dc-imperfecto-modal-c1": {
+  source: "old",
+  hook: {
+    line: "Saturday at your sister's flat in Cali. Your nephew is glued to the television, the neighbour knocks to borrow something, and your grandmother, who you thought had gone home, walks out of the kitchen. Three past forms, and none of them is about the past.",
+    es: "¿Tú no tenías examen el lunes?\nBuenas, venía a ver si me podían prestar una escalera.\n¡Uy, abuela! ¿Usted estaba aquí?",
+    en: "Don't you have an exam on Monday?\nHello, I was wondering if you could lend me a ladder.\nOh, Grandma! You're here?"
+  },
+  examples: [
+    { es: "¿Tú no tenías examen de química el lunes? Llevas toda la tarde viendo televisión.", en: "Don't you have a chemistry exam on Monday? You've been watching TV all afternoon." },
+    { es: "Buenas tardes, venía a ver si me podían prestar una escalera para cambiar un bombillo.", en: "Good afternoon, I was wondering if you could lend me a ladder to change a light bulb." },
+    { es: "¡Y yo qué sabía que el examen era el lunes! Nadie me dijo nada, mamá.", en: "How was I supposed to know the exam was on Monday! Nobody told me anything, Mum." }
+  ],
+  rule: "These *-aba* and *-ía* forms are not about the past. Each one does a job in the conversation.\nTo soften: *Quería preguntarle una cosa.* *Venía a ver si...* The wish is now; the past form makes it easy to say no. *Quiero* sounds blunt.\nTo excuse yourself: *¡Y yo qué sabía!* You go back to when not knowing was reasonable.\nTo show surprise: *¿Usted estaba aquí?* It shows what you had assumed.\nTo reproach, as a question: *¿Tú no tenías examen?* It means go and study, and *sí, lo tenía* misses the point.\nFor a firm statement, use the present: the soft form makes you sound unsure.",
+  readAndPick: [
+    { q: "What does the mother mean?", es: "¿Tú no tenías examen el lunes?",
+      options: ["Turn that off and study", "How did last week's go?", "I'd forgotten your exam"], answer: 0,
+      why: "A reproach shaped as a question: she knows about the exam and wants him studying." },
+    { q: "Why does the neighbour say *venía*?", es: "Venía a ver si me podían prestar una escalera.",
+      options: ["He had already come round before", "To make his request gentle", "He changed his mind about it"], answer: 1,
+      why: "The past form puts distance between him and his request, so it is easy to refuse." },
+    { q: "What is the boy doing?", es: "¡Y yo qué sabía que era el lunes!",
+      options: ["Asking which day the exam falls on", "Admitting that he knew", "Defending himself from blame"], answer: 2,
+      why: "*Y yo qué sabía* is a defence: back then, not knowing was reasonable." },
+    { q: "What had she assumed?", es: "¡Uy, abuela! ¿Usted estaba aquí?",
+      options: ["That her grandmother had gone", "That her grandmother was ill", "That she was on her way"], answer: 0,
+      why: "The *-aba* form shows the assumption that has just been overturned." },
+    { q: "Which opener fits a bank counter?", es: "En la ventanilla del banco.",
+      options: ["Quise preguntarle por un cobro.", "Quería preguntarle por un cobro.", "Quiero preguntarle sobre un cobro."], answer: 1,
+      why: "*Quería* is the standard polite opener; *quiero* is blunt, and *quise* reports a failed attempt." }
+  ],
+  yourTurn: [
+    { en: "I wanted to ask you something. (to someone you call usted)", es: "Quería preguntarle una cosa.", accept: ["Quería preguntarle [una cosa|algo]."] },
+    { en: "How was I supposed to know!", es: "¡Y yo qué sabía!", accept: ["¡(Y) yo qué iba a saber!"] },
+    { en: "Hello, I was wondering if you could lend me a ladder. (to a neighbour you call usted)", es: "Buenas, venía a ver si me podía prestar una escalera.", accept: ["[Buenas|Buenos días|Buenas tardes], venía a ver si me podía prestar una escalera.", "[Buenas|Buenos días|Buenas tardes], venía a ver si podía prestarme una escalera."] },
+    { en: "Don't you have an exam tomorrow? (to your son)", es: "¿Tú no tenías examen mañana?", accept: ["¿(Tú) no tenías (un) examen mañana?"] },
+    { en: "Grandma! You're here? I thought you had left.", es: "¡Abuela! ¿Usted estaba aquí? Pensé que se había ido.", accept: ["¡Abuela! ¿Usted estaba aquí? [Pensé|Creí|Pensaba] que se había ido."] }
+  ],
+  translate: [
+    { en: "Good morning, I wanted to ask you about a charge that appeared on my card.", es: "Buenos días, quería preguntarle por un cobro que me apareció en la tarjeta.", accept: ["Buenos días, quería preguntarle [por|sobre] un cobro que me apareció en la tarjeta.", "Buenos días, quería preguntarle [por|sobre] un cobro que apareció en mi tarjeta."] },
+    { en: "How was I supposed to know the meeting was at eight! Nobody sent me the invitation.", es: "¡Y yo qué sabía que la reunión era a las ocho! Nadie me mandó la invitación.", accept: ["¡(Y) yo qué sabía que la reunión era a las ocho! Nadie me [mandó|envió] la invitación."] },
+    { en: "Weren't you on a diet? That's the third piece of cake you've eaten this afternoon.", es: "¿Tú no estabas a dieta? Es el tercer pedazo de torta que te comes esta tarde.", accept: ["¿(Tú) no estabas a dieta? (Ya) es el tercer [pedazo|pedacito] de torta que te comes esta tarde."] },
+    { en: "I was wondering if the doctor could see me today, even for five minutes.", es: "Venía a ver si el médico me podía atender hoy, aunque fuera cinco minutos.", accept: ["Venía a ver si el [médico|doctor] me podía atender hoy, aunque [fuera|sea] (por) cinco minutos.", "Venía a ver si el [médico|doctor] podía atenderme hoy, aunque [fuera|sea] (por) cinco minutos."] },
+    { en: "Oh, you were here! I thought you'd already left for the airport.", es: "¡Uy, estabas aquí! Pensé que ya te habías ido para el aeropuerto.", accept: ["¡Uy, (tú) estabas aquí! [Pensé|Creí|Pensaba] que ya te habías ido [para el|al] aeropuerto."] },
+    { en: "Weren't you the one who was going to buy the tickets? Now there are none left for Saturday.", es: "¿No eras tú el que iba a comprar las boletas? Ahora no quedan para el sábado.", accept: ["¿No eras tú [el que|quien] iba a comprar las boletas? Ahora (ya) no quedan para el sábado."] }
+  ],
+  register: [
+    { es: "Quiero hablar con el gerente.", en: "I want to speak to the manager.", when: "when you mean to complain, and want it heard" },
+    { es: "Quería hablar con el gerente, por favor.", en: "I'd like to speak to the manager, please.", when: "the ordinary polite request" },
+    { es: "Venía a ver si podía hablar con el gerente.", en: "I was wondering if I might speak to the manager.", when: "very gently, when you are asking a lot" },
+    { es: "Le escribo para preguntar por el estado de mi solicitud.", en: "I am writing to ask about the status of my application.", when: "in a formal email in Latin America" }
+  ],
+  personal: {
+    prompt: "You knock on a neighbour's door to ask for something, and then find out you missed something you were told about. Write both: the soft request and the excuse.",
+    constraints: [
+      { type: "containsAny", words: ["quería", "venía a ver", "venía a preguntar"], label: "a soft request: *quería* or *venía a ver si*" },
+      { type: "containsAny", words: ["yo qué sabía", "yo qué iba a saber"], label: "an excuse: *¡y yo qué sabía!*" }
+    ],
+    model: "Buenas, venía a ver si me podía prestar un taladro. ¿La reunión de vecinos era hoy? ¡Y yo qué sabía! Nadie me avisó."
+  },
+  pitfalls: [
+    "*Quería preguntarle* is not *I wanted to ask*: the wish is present, and the past form is politeness.",
+    "*¿Tú no tenías examen?* is rarely a real question: it tells you to go and study.",
+    "In an email, Latin America writes *le escribo para*; *le escribía para* sounds like Spain."
+  ]
+},
+
+"dc-indefinido-perfecto-c1": {
+  source: "old",
+  hook: {
+    line: "Your Bogotá team has its Monday call with a client in Madrid. She says what she did this morning one way and you say it another, and you are both right. Where you agree is on what is still open.",
+    es: "Esta mañana he hablado con el proveedor.\nYo también hablé con él esta mañana.\nEl material todavía no ha llegado.",
+    en: "I spoke to the supplier this morning.\nI spoke to him this morning too.\nThe material still hasn't arrived."
+  },
+  examples: [
+    { es: "Esta mañana hablé con el proveedor y me confirmó que el envío ya había salido de Cartagena.", en: "This morning I spoke to the supplier and he confirmed the shipment had already left Cartagena." },
+    { es: "Este mes hemos tenido tres retrasos, y el cliente ya empieza a perder la paciencia.", en: "This month we've had three delays, and the client is starting to lose patience." },
+    { es: "Nunca hemos trabajado con este proveedor, pero la empresa de Medellín lo recomendó mucho.", en: "We have never worked with this supplier, but the company in Medellín recommended them highly." }
+  ],
+  rule: "In Colombia and most of Latin America, a finished event takes the preterite, even this morning: *Hoy me levanté a las cinco.* *Esta mañana hablé con él.*\nThe perfect is for what is still open, up to now: *Este mes hemos tenido tres retrasos*, and the month goes on. *Nunca he ido a San Andrés.* *Todavía no ha llegado.* *Siempre he pensado que...*\nSo the choice is a message. *¿Ya llegó?* asks about one event; *¿Ha llegado algo?* asks what there is so far.\nIn Spain, *hoy he comido fuera* is the norm for today. Hear it as Madrid Spanish, not a mistake, and don't copy it.",
+  readAndPick: [
+    { q: "Is this Spanish from Bogotá a mistake?", es: "Hoy me levanté a las cinco.",
+      options: ["Yes, today needs the other form", "No, it's the normal form there", "Only in very formal writing"], answer: 1,
+      why: "In most of Latin America the preterite covers anything finished, even this morning." },
+    { q: "Why *hemos tenido*?", es: "Este mes hemos tenido tres retrasos.",
+      options: ["The month is not over yet", "The delays were long ago", "It's more polite"], answer: 0,
+      why: "The perfect reaches up to now: the month, and the problem, are still open." },
+    { q: "Has the speaker been to San Andrés?", es: "Nunca he ido a San Andrés.",
+      options: ["Yes, once, as a little girl", "Not once, up to this day", "Only once, on a work trip"], answer: 1,
+      why: "*Nunca he ido* counts experience up to now: not once so far." },
+    { q: "Where is the speaker probably from?", es: "Esta mañana he hablado con el proveedor.",
+      options: ["Bogotá, Colombia", "Lima, Peru", "Madrid, Spain"], answer: 2,
+      why: "The perfect for this morning is the norm in Spain; in Bogotá you would hear *hablé*." },
+    { q: "What is the client asking?", es: "¿Ha llegado algo del proveedor?",
+      options: ["What has come in up to now", "When the parcel came in", "Who the supplier wrote to first"], answer: 0,
+      why: "The perfect asks what there is up to now, not about one event." }
+  ],
+  yourTurn: [
+    { en: "This morning I spoke to the supplier.", es: "Esta mañana hablé con el proveedor.", accept: ["Esta mañana hablé con el proveedor.", "Hablé con el proveedor esta mañana."] },
+    { en: "This month we've had three delays.", es: "Este mes hemos tenido tres retrasos.", accept: ["Este mes hemos tenido tres [retrasos|demoras]."] },
+    { en: "The material still hasn't arrived.", es: "El material todavía no ha llegado.", accept: ["El material [todavía|aún] no ha llegado.", "[Todavía|Aún] no ha llegado el material."] },
+    { en: "I've never worked with them.", es: "Nunca he trabajado con ellos.", accept: ["Nunca he trabajado con ellos.", "No he trabajado nunca con ellos."] },
+    { en: "Today I got up at five.", es: "Hoy me levanté a las cinco.", accept: ["Hoy me levanté a las cinco (de la mañana)."] }
+  ],
+  translate: [
+    { en: "I have always thought that the decision to close the Cali office was a mistake.", es: "Siempre he pensado que la decisión de cerrar la oficina de Cali fue un error.", accept: ["Siempre he [pensado|creído] que la decisión de cerrar la oficina de Cali fue un error."] },
+    { en: "Have you been to Leticia? I went last year and the flight cost me a fortune.", es: "¿Has ido a Leticia? Yo fui el año pasado y el vuelo me salió carísimo.", accept: ["¿Has ido (alguna vez) a Leticia? (Yo) fui el año pasado y el vuelo me salió [carísimo|muy caro].", "¿Has estado (alguna vez) en Leticia? (Yo) fui el año pasado y el vuelo me salió [carísimo|muy caro]."] },
+    { en: "This year it has rained more than ever, and the road to the farm is still closed.", es: "Este año ha llovido más que nunca, y la carretera a la finca sigue cerrada.", accept: ["Este año ha llovido más que nunca, y la [carretera|vía] [a|hacia|de] la finca sigue cerrada."] },
+    { en: "Did you speak to Laura? I called her an hour ago, but she still hasn't answered.", es: "¿Hablaste con Laura? La llamé hace una hora, pero todavía no me ha contestado.", accept: ["¿Hablaste con Laura? La llamé hace una hora, pero [todavía|aún] no me ha [contestado|respondido].", "¿Hablaste con Laura? La llamé hace una hora, pero no me ha [contestado|respondido] [todavía|aún]."] },
+    { en: "We have had a difficult month. The supplier let us down twice, and the client still hasn't signed the new contract.", es: "Hemos tenido un mes difícil. El proveedor nos falló dos veces, y el cliente todavía no ha firmado el contrato nuevo.", accept: ["Hemos tenido un mes difícil. El proveedor nos falló dos veces, y el cliente [todavía|aún] no ha firmado el [contrato nuevo|nuevo contrato]."] },
+    { en: "I've been in Bogotá for six years and I've never got used to the cold.", es: "Llevo seis años en Bogotá y nunca me he acostumbrado al frío.", accept: ["Llevo seis años [en Bogotá|viviendo en Bogotá] y nunca me he acostumbrado al frío.", "Hace seis años que vivo en Bogotá y nunca me he acostumbrado al frío."] }
+  ],
+  register: [
+    { es: "Esta mañana hablé con él.", en: "I spoke to him this morning.", when: "in Colombia and most of Latin America, always" },
+    { es: "Esta mañana he hablado con él.", en: "I spoke to him this morning.", when: "what you will hear in Spain, so recognise it" },
+    { es: "Todavía no me ha llamado.", en: "He still hasn't called me.", when: "anywhere, for something you are still waiting for" },
+    { es: "La comisión resolvió el caso el pasado martes.", en: "The committee resolved the case last Tuesday.", when: "in a formal report, keeping events closed" }
+  ],
+  personal: {
+    prompt: "Write three lines for a work update: something you did today, something still pending, and something your team has never done before.",
+    constraints: [
+      { type: "regex", pattern: "(hoy|esta mañana|esta tarde)[^.]*[a-zñ](é|í|ó)(\\s|[.,;!?]|$)", label: "something finished today: *esta mañana hablé*" },
+      { type: "regex", pattern: "(todavía|aún) no (ha|han|hemos|he|has)\\s", label: "something still pending: *todavía no ha llegado*" },
+      { type: "regex", pattern: "nunca (he|ha|hemos|han|has)\\s", label: "something never done so far: *nunca hemos...*" }
+    ],
+    model: "Esta mañana hablé con el proveedor y le mandé las fotos. Todavía no ha llegado el material. Nunca hemos trabajado con un plazo tan corto."
+  },
+  pitfalls: [
+    "*Hoy he comido fuera* is not wrong; it is Spain. In Bogotá, *hoy almorcé afuera*.",
+    "*Este mes tuvimos tres retrasos* closes the month as if it were over; *hemos tenido* keeps it open.",
+    "*¿Ya llegó?* is everyday Colombian Spanish: *ya* does not need the perfect."
+  ]
+},
+
+"gr-nucleo-verbal-c1": {
+  source: "merged",
+  hook: {
+    line: "You are restoring an old house in Barichara with a builder called don Abel. Talking about the house, the work and the bill uses the verb at full stretch: who built it and what it is built of, how far along you are, and the moment your father saw the invoice.",
+    es: "La casa fue construida en 1890 por un maestro de Zapatoca.\nEstá construida en tapia pisada.\nLlevamos pintadas tres habitaciones; la cocina está por terminar.",
+    en: "The house was built in 1890 by a master builder from Zapatoca.\nIt is built of rammed earth.\nWe've painted three rooms so far; the kitchen is still to be finished."
+  },
+  examples: [
+    { es: "La casa fue construida en 1890 por un maestro de obra que vino de Zapatoca.", en: "The house was built in 1890 by a master builder who came from Zapatoca." },
+    { es: "Llevamos pintadas tres habitaciones, pero la cocina y el patio todavía están por terminar.", en: "We've painted three rooms so far, but the kitchen and the courtyard are still to be finished." },
+    { es: "Cuando mi papá vio la factura, rompió a reír y acabó por pagarla sin decir nada.", en: "When my dad saw the invoice, he burst out laughing and ended up paying it without a word." }
+  ],
+  rule: "The verb carries more than an action here.\n*Fue construida* is the event, and can say who did it with *por*. *Está construida en tapia* is the result, with no *por*.\n*Ser* plus a quality, then *al* and the dictionary form: the quality is that act. *Fue muy amable al quedarse.* *Estuvo muy amable* is how he was that day.\n*Llevar* or *tener* plus a participle counts what is done so far, and the participle agrees: *llevamos pintadas tres paredes*.\n*Romper a* or *echarse a*: a sudden start. *Acabar por*: in the end, after resisting.\n*Estar por*: still to be done. *Venir a costar*: roughly.",
+  readAndPick: [
+    { q: "Who does *por un maestro* name?", es: "La casa fue construida en 1890 por un maestro de Zapatoca.",
+      options: ["The person who built it", "The town the stone came from", "The man who owns it today"], answer: 0,
+      why: "With *fue construida*, *por* names who did it: it reports the event." },
+    { q: "What does *está construida en tapia* tell you?", es: "La casa está construida en tapia pisada.",
+      options: ["Who built it", "What it is made of", "When it was finished"], answer: 1,
+      why: "*Estar* plus the participle gives the result, what the house is now, with no doer." },
+    { q: "How much painting is done?", es: "Llevamos pintadas tres habitaciones.",
+      options: ["None yet, it starts soon", "Three rooms, and counting", "Every room in the house"], answer: 1,
+      why: "*Llevar* plus a participle counts what is done so far; *pintadas* agrees with *habitaciones*." },
+    { q: "Is the kitchen finished?", es: "La cocina está por terminar.",
+      options: ["It was never started", "Yes, they finished it today", "No, it is still to be done"], answer: 2,
+      why: "*Estar por* plus the dictionary form: something still waiting to be done." },
+    { q: "How did don Abel's kindness show?", es: "Fue muy amable al quedarse hasta las nueve.",
+      options: ["In staying until nine", "He is kind by nature", "He was cheerful that day"], answer: 0,
+      why: "*Ser* plus *al* and the dictionary form: the kindness was that act, staying late." },
+    { q: "What did his father do?", es: "Vio la factura y rompió a reír.",
+      options: ["He tore the invoice in two", "He burst out laughing", "He broke a window in anger"], answer: 1,
+      why: "*Romper a* plus the dictionary form is a sudden start: nothing was broken." }
+  ],
+  yourTurn: [
+    { en: "The house was built in 1890.", es: "La casa fue construida en 1890.", accept: ["La casa fue construida en 1890.", "La casa se construyó en 1890."] },
+    { en: "We've painted three rooms so far.", es: "Llevamos pintadas tres habitaciones.", accept: ["Llevamos pintadas tres [habitaciones|piezas|alcobas].", "Llevamos tres [habitaciones|piezas|alcobas] pintadas."] },
+    { en: "The kitchen is still to be finished.", es: "La cocina está por terminar.", accept: ["La cocina [todavía|aún] está por terminar.", "La cocina está [todavía|aún] por terminar."] },
+    { en: "He was very kind to stay until nine. (about the builder)", es: "Fue muy amable al quedarse hasta las nueve.", accept: ["Fue muy amable [al quedarse|en quedarse|quedándose] hasta las nueve."] },
+    { en: "In the end he ended up paying it. (the invoice)", es: "Al final acabó por pagarla.", accept: ["Al final [acabó|terminó] por pagarla.", "Al final [acabó|terminó] pagándola."] }
+  ],
+  translate: [
+    { en: "The bridge was built by the Spaniards, but today it is closed to lorries.", es: "El puente fue construido por los españoles, pero hoy está cerrado a los camiones.", accept: ["El puente fue construido por los españoles, pero hoy está cerrado [a los|para los] camiones."] },
+    { en: "My grandmother was very generous in lending us the house for the whole month.", es: "Mi abuela fue muy generosa al prestarnos la casa todo el mes.", accept: ["Mi abuela fue muy generosa [al prestarnos|prestándonos] la casa (durante) todo el mes."] },
+    { en: "I've written three letters to the mayor's office so far, and nobody has answered me.", es: "Llevo escritas tres cartas a la alcaldía y nadie me ha contestado.", accept: ["Llevo escritas tres cartas a la alcaldía y nadie me ha [contestado|respondido].", "Llevo tres cartas escritas a la alcaldía y nadie me ha [contestado|respondido]."] },
+    { en: "When she heard the news, she burst into tears and couldn't stop for an hour.", es: "Cuando oyó la noticia, rompió a llorar y no pudo parar en una hora.", accept: ["Cuando [oyó|escuchó] la noticia, [rompió|se echó] a llorar y no pudo parar [en|durante] una hora."] },
+    { en: "The work comes to roughly forty million pesos. The roof is already done; the floors are still to be done.", es: "La obra viene a costar unos cuarenta millones de pesos. El techo ya está hecho; los pisos están por hacer.", accept: ["La obra viene a costar unos cuarenta millones (de pesos). El techo ya está [hecho|listo]; los pisos están por hacer.", "La obra [cuesta más o menos|sale en unos] cuarenta millones (de pesos). El techo ya está [hecho|listo]; los pisos están por hacer."] },
+    { en: "After months of saying no, my father ended up selling the farm to his cousin.", es: "Después de meses diciendo que no, mi papá acabó por venderle la finca a su primo.", accept: ["Después de meses diciendo que no, mi [papá|padre] [acabó|terminó] por venderle la finca a su primo.", "Después de meses diciendo que no, mi [papá|padre] [acabó|terminó] vendiéndole la finca a su primo."] }
+  ],
+  register: [
+    { es: "Vendieron la casa.", en: "They sold the house.", when: "everyday speech, when who sold it does not matter" },
+    { es: "Se vendió la casa.", en: "The house was sold.", when: "neutral, in speech or writing" },
+    { es: "La casa fue vendida en 1990.", en: "The house was sold in 1990.", when: "the news, history books and official reports" }
+  ],
+  personal: {
+    prompt: "Describe a building you know well, or a job in progress, in three lines: who built it, what it is made of or what state it is in, and how far along something is.",
+    constraints: [
+      { type: "regex", pattern: "\\b(fue|fueron) [a-z]+(ado|ada|ados|adas|ido|ida|idos|idas|cho|cha|to|ta)\\b", label: "the event: *fue construida por*" },
+      { type: "regex", pattern: "\\b(está|están|estaba|estaban) ([a-z]+(ado|ada|ados|adas|ido|ida|idos|idas|cho|cha|to|ta)\\b|por [a-z]+r\\b)", label: "the result or what is left: *está hecha*, *está por terminar*" },
+      { type: "regex", pattern: "\\b(llevo|llevamos|lleva|llevan|tengo|tenemos|tiene) [a-z]+(ados|adas|idos|idas|ado|ada|ido|ida|tos|tas|chas|chos)\\b", label: "what is done so far: *llevamos pintadas tres*" }
+    ],
+    model: "El edificio de mi abuela fue construido en 1960 por un arquitecto alemán. Está hecho de ladrillo y por dentro está muy deteriorado. Llevamos arregladas dos ventanas, pero el techo está por cambiar."
+  },
+  pitfalls: [
+    "*La casa está construida por don Abel* mixes the two: the result takes no *por*. Say *fue construida por*.",
+    "*Llevamos pintado tres habitaciones*: the participle agrees with what you count, *pintadas*.",
+    "*Estar por* is still to be done; *estar para* is about to, or in the mood: *no estoy para bromas*."
+  ]
+},
+
+"gr-formas-no-personales-c1": {
+  source: "merged",
+  hook: {
+    line: "The residents' meeting in your building in Bogotá has just ended. The minutes are written in the shortest, most official Spanish there is, and the talk in the lift afterwards is just as short, and nothing like official.",
+    es: "Aprobado el presupuesto, se pasó a votar la pintura de la fachada.\n¿Yo, pagar otra cuota extraordinaria? ¡Ni loco!\n¡Siempre quejándose, don Julio!",
+    en: "With the budget approved, the meeting moved on to vote on painting the front.\nMe, pay another special levy? No way!\nAlways complaining, don Julio!"
+  },
+  examples: [
+    { es: "Aprobado el presupuesto, la asamblea pasó a votar la pintura de la fachada del edificio.", en: "With the budget approved, the meeting moved on to vote on painting the front of the building." },
+    { es: "De haber sabido que la cuota era tan alta, no habría votado a favor en marzo.", en: "Had I known the levy was so high, I wouldn't have voted for it in March." },
+    { es: "Siendo así, lo mejor es pagar en dos partes y dejar el ascensor para el próximo año.", en: "That being so, the best thing is to pay in two parts and leave the lift for next year." }
+  ],
+  rule: "Three verb forms with no person can stand in for a whole sentence.\nA participle first means once that was done: *Aprobado el presupuesto, se votó la pintura.* It agrees with what follows, *aprobada la cuota*, and needs no *cuando*.\nA gerund first gives a reason or a condition: *Siendo así, votemos.* *Pagando a tiempo, no hay multa.*\n*De* plus the dictionary form is an if: *De ser así...* *De haber sabido, no voto.*\nIn a reaction, no full verb at all: *¿Yo, pagar otra cuota? ¡Ni loco!* *¡Siempre quejándose!*\n*Que* plus the dictionary form needs *mucho*, *algo* or *nada* before it: *Tenemos mucho que hacer.*",
+  readAndPick: [
+    { q: "When did they vote on the painting?", es: "Aprobado el presupuesto, se votó la pintura.",
+      options: ["Before the budget", "Once the budget was passed", "Instead of the budget"], answer: 1,
+      why: "A participle at the start means once that was done: the budget came first." },
+    { q: "What does *de haber sabido* mean here?", es: "De haber sabido, no habría votado a favor.",
+      options: ["Had I only known", "After finding out", "Because I knew"], answer: 0,
+      why: "*De* plus the dictionary form works as an if; with *haber*, it is about the past." },
+    { q: "Is don Julio asking a real question?", es: "¿Yo, pagar otra cuota extraordinaria? ¡Ni loco!",
+      options: ["Yes, he wants to know the amount", "Yes, he's offering to pay it all", "No, he's rejecting the idea"], answer: 2,
+      why: "*Yo* plus the dictionary form echoes the idea back, and *¡ni loco!* rejects it." },
+    { q: "Which sentence is right?", es: "Hay que terminar antes de diciembre.",
+      options: ["Tenemos el trabajo que hacer.", "Tenemos mucho trabajo que hacer.", "Tenemos mucho trabajo que hacemos."], answer: 1,
+      why: "*Que* plus the dictionary form needs a vague amount before it: *mucho*, *algo*, *nada*." },
+    { q: "What does *siendo así* do?", es: "Siendo así, lo mejor es pagar en dos partes.",
+      options: ["It gives the reason", "It describes a person", "It sets a firm deadline"], answer: 0,
+      why: "A gerund at the start gives the reason: since that is how things are." }
+  ],
+  yourTurn: [
+    { en: "With the budget approved, they voted on the painting.", es: "Aprobado el presupuesto, se votó la pintura.", accept: ["[Aprobado|Una vez aprobado] el presupuesto, se votó la pintura.", "[Aprobado|Una vez aprobado] el presupuesto, votaron la pintura."] },
+    { en: "Me, pay another levy? No way! (a man speaking)", es: "¿Yo, pagar otra cuota? ¡Ni loco!", accept: ["¿Yo, pagar otra cuota? ¡[Ni loco|Ni de riesgos|Jamás]!"] },
+    { en: "Had I known, I wouldn't have come.", es: "De haberlo sabido, no habría venido.", accept: ["De haberlo sabido, no [habría|hubiera] venido.", "Si lo hubiera sabido, no [habría|hubiera] venido."] },
+    { en: "We have a lot to do.", es: "Tenemos mucho que hacer.", accept: ["Tenemos mucho que hacer.", "Tenemos muchas cosas que hacer."] },
+    { en: "That being so, let's vote.", es: "Siendo así, votemos.", accept: ["[Siendo así|Si es así], votemos.", "[Siendo así|Si es así], vamos a votar."] }
+  ],
+  translate: [
+    { en: "Once the meeting was over, the neighbours stayed at the entrance arguing about the lift.", es: "Terminada la reunión, los vecinos se quedaron en la entrada discutiendo por el ascensor.", accept: ["[Terminada|Una vez terminada|Acabada] la reunión, los vecinos se quedaron en la entrada discutiendo [por el|sobre el|del] ascensor."] },
+    { en: "Paying on time, nobody gets a fine; paying late, the levy goes up ten percent.", es: "Pagando a tiempo, nadie tiene multa; pagando tarde, la cuota sube un diez por ciento.", accept: ["Pagando a tiempo, nadie tiene multa; pagando tarde, la cuota sube (un) diez por ciento.", "Si se paga a tiempo, nadie tiene multa; si se paga tarde, la cuota sube (un) diez por ciento."] },
+    { en: "Me, apologise to the administrator? Not a chance. He's the one who owes us an explanation. (a woman speaking)", es: "¿Yo, pedirle disculpas al administrador? Ni loca. Él es el que nos debe una explicación.", accept: ["¿Yo, pedirle [disculpas|perdón] al administrador? [Ni loca|Ni de riesgos|Jamás]. Él es [el que|quien] nos debe una explicación."] },
+    { en: "Had we known about the leak, we would have fixed it before the rainy season.", es: "De haber sabido lo de la gotera, la habríamos arreglado antes del invierno.", accept: ["De haber sabido lo de la gotera, la [habríamos|hubiéramos] arreglado antes del invierno.", "Si hubiéramos sabido lo de la gotera, la [habríamos|hubiéramos] arreglado antes del invierno."] },
+    { en: "Always complaining about the noise, and then he throws parties himself every Friday!", es: "¡Siempre quejándose del ruido, y después él mismo hace fiestas todos los viernes!", accept: ["¡Siempre quejándose del ruido, y [después|luego] él mismo hace fiestas todos los viernes!"] },
+    { en: "We have nothing more to discuss; the administrator is sending the minutes on Monday.", es: "No tenemos nada más que discutir; el administrador manda el acta el lunes.", accept: ["No tenemos nada más que discutir; el administrador [manda|va a mandar|enviará|envía] el acta el lunes."] }
+  ],
+  register: [
+    { es: "Aprobado el presupuesto, se levantó la sesión.", en: "With the budget approved, the session was closed.", when: "minutes, reports and official letters" },
+    { es: "Cuando aprobaron el presupuesto, se acabó la reunión.", en: "When they approved the budget, the meeting ended.", when: "telling a neighbour what happened" },
+    { es: "¿Yo, pagar eso? ¡Ni loco!", en: "Me, pay that? No way!", when: "with friends and family, never with the administrator" }
+  ],
+  personal: {
+    prompt: "Write two lines of minutes for a meeting you went to, then the line you said to a friend afterwards.",
+    constraints: [
+      { type: "regex", pattern: "(^|[.!?:]\\s*)(una vez )?[a-záéíóúñ]+(ado|ada|ados|adas|ido|ida|idos|idas|cho|cha|to|ta)\\s+(el|la|los|las)\\s", label: "open with a participle: *Aprobado el presupuesto*" },
+      { type: "regex", pattern: "¿\\s*(yo|nosotros|nosotras|tú)\\s*,?\\s*[a-záéíóúñ]+(ar|er|ir)(le|la|lo|les|los|las|se|me|te)?\\b", label: "a reaction with no full verb: *¿Yo, pagar eso?*" }
+    ],
+    model: "Aprobada la cuota extraordinaria, se pasó al punto de la portería. Terminada la votación, se levantó la sesión. Después le dije a mi vecina: ¿Yo, pagar otra cuota? ¡Ni loca!"
+  },
+  pitfalls: [
+    "*Una vez que aprobado el plan* is wrong: with a participle, no *que*. *Una vez aprobado el plan*.",
+    "*Tengo el problema que resolver* fails: with *que* plus the dictionary form, say *un problema* or *mucho*.",
+    "Never a gerund for what comes after: *llegó y se sentó*, not *llegó, sentándose*."
+  ]
+},
+
+"gr-imperativo-c1": {
+  source: "merged",
+  hook: {
+    line: "A Sunday at a friend's finca near Villeta. The river is cold, your friend Camilo is standing on the rock, and everyone is shouting orders at him. Not one of them is really an order.",
+    es: "¡Tírate y verás que no está tan fría!\n¡Mira que eres miedoso, Camilo!\n¡Dale, hágale!",
+    en: "Jump in and you'll see it isn't that cold!\nYou really are a scaredy-cat, Camilo!\nGo on, go for it!"
+  },
+  examples: [
+    { es: "Tírate al río y verás que el agua no está tan fría como parece desde la piedra.", en: "Jump into the river and you'll see the water isn't as cold as it looks from the rock." },
+    { es: "¡Mira que te lo dije! Te dije que trajeras otra muda de ropa para el regreso.", en: "I did tell you! I told you to bring a change of clothes for the trip back." },
+    { es: "Dile a mi mamá que nos tiramos del puente y te mata, así que mejor no digas nada.", en: "Tell my mum we jumped off the bridge and she'll kill you, so better not say anything." }
+  ],
+  rule: "Some commands give no order at all.\nA command, *y*, then a result is an if: *Tírate y verás* means if you jump, you'll see. *Dile eso a mi mamá y te mata* is a warning: nobody wants you to say it.\n*Mira que* plus an ordinary sentence means you really are, or I did: *¡Mira que eres miedoso!* *¡Mira que te lo dije!* Nobody is asked to look. To someone you call usted, *mire que*.\nIn Colombia *¡dale!* says yes, go on: *¿Vamos? Dale.* *¡Hágale!* pushes someone to do it.\nTo close a discussion, an order plus *te dije*: *Sal del agua, te dije.*",
+  readAndPick: [
+    { q: "What is Camilo being told?", es: "Tírate y verás que no está tan fría.",
+      options: ["If you jump in, you'll find out", "Jump, then look all around you", "Don't jump, the water's freezing"], answer: 0,
+      why: "A command plus *y* and a result works as an if: jump and you'll see." },
+    { q: "Should he tell her mum?", es: "Dile eso a mi mamá y te mata.",
+      options: ["Yes, she'd like to know", "No, it's a warning", "Yes, but only later on"], answer: 1,
+      why: "The command is only the if: say that, and she'll kill you." },
+    { q: "Is anyone being asked to look?", es: "¡Mira que eres miedoso, Camilo!",
+      options: ["Yes, at the cold river", "Yes, at the rock", "No, it's teasing him"], answer: 2,
+      why: "*Mira que* plus a plain sentence means you really are: it teases, it doesn't point." },
+    { q: "Your friend asks if you're leaving now and you say *¡dale!* What did you say?", es: "¿Nos vamos ya? ¡Dale!",
+      options: ["Sure, let's go", "Give it to me", "Stop asking me that"], answer: 0,
+      why: "In Colombia *dale* is a cheerful yes; in Spain *¡y dale!* can complain about insistence." },
+    { q: "What does *te dije* add?", es: "Sal del agua, te dije.",
+      options: ["It closes the discussion", "It reports what he said", "It softens the order"], answer: 0,
+      why: "*Te dije* after an order adds no news: it shuts the discussion down." }
+  ],
+  yourTurn: [
+    { en: "Try it and you'll see. (to a friend)", es: "Pruébalo y verás.", accept: ["Pruébalo y [verás|vas a ver]."] },
+    { en: "You really are stubborn! (to a friend)", es: "¡Mira que eres terco!", accept: ["¡Mira que eres [terco|terca|testarudo|testaruda]!"] },
+    { en: "I did tell you! (to a friend)", es: "¡Mira que te lo dije!", accept: ["¡Mira que (yo) te lo dije!"] },
+    { en: "You tell her that and she'll kill you.", es: "Dile eso y te mata.", accept: ["Dile eso y te [mata|va a matar]."] },
+    { en: "Get out of the water, I said. (to a friend)", es: "Sal del agua, te dije.", accept: ["Sal del agua, te dije.", "¡Que salgas del agua, te dije!"] }
+  ],
+  translate: [
+    { en: "Call your sister and you'll see that she isn't angry with you any more.", es: "Llama a tu hermana y vas a ver que ya no está brava contigo.", accept: ["Llama a tu hermana y [vas a ver|verás] que ya no está [brava|enojada] contigo."] },
+    { en: "Leave the car on the road and they'll give you a fine, so park it at the farm.", es: "Deja el carro en la vía y te ponen un comparendo, así que parquéalo en la finca.", accept: ["Deja el carro en la [vía|carretera] y te ponen [un comparendo|una multa], así que [parquéalo|déjalo] en la finca."] },
+    { en: "You really are lucky! It's the second time this year you've won the raffle.", es: "¡Mira que tienes suerte! Es la segunda vez este año que te ganas la rifa.", accept: ["¡Mira que tienes suerte! Es la segunda vez este año que te ganas la rifa.", "¡Mira que tienes suerte! Es la segunda vez que te ganas la rifa este año."] },
+    { en: "Shall we go to the river now? Sure, but take a towel, it gets cold later.", es: "¿Vamos al río ya? Dale, pero lleva una toalla, que más tarde hace frío.", accept: ["¿Vamos [al río ya|ya al río]? [Dale|Listo], pero lleva una toalla, que más tarde hace frío."] },
+    { en: "Go on, go for it! You've been standing on that rock looking at the water for half an hour.", es: "¡Hágale, pues! Ya llevas media hora parado en esa piedra mirando el agua.", accept: ["¡[Hágale, pues|Hágale|Dale]! (Ya) llevas media hora parado en esa piedra mirando el agua."] },
+    { en: "Turn off that phone and go to sleep, I said. Tomorrow we're leaving at five.", es: "Apaga ese celular y vete a dormir, te dije. Mañana salimos a las cinco.", accept: ["Apaga ese celular y [vete|ve] a dormir, te dije. Mañana salimos a las cinco.", "¡Que apagues ese celular y te vayas a dormir, te dije! Mañana salimos a las cinco."] }
+  ],
+  register: [
+    { es: "¡Dale!", en: "Sure, go on!", when: "in Colombia, a quick yes among friends" },
+    { es: "¡Listo!", en: "OK, done!", when: "in Colombia, with anyone, to agree" },
+    { es: "Con mucho gusto.", en: "My pleasure.", when: "to a client or to someone you call usted" },
+    { es: "¡Y dale con lo mismo!", en: "Not that again!", when: "when someone keeps insisting and you are fed up" }
+  ],
+  personal: {
+    prompt: "A friend won't try something new: a dish, a dance, a ride. Write three lines to push them, with one command that works as an if and one *mira que*.",
+    constraints: [
+      { type: "regex", pattern: "[a-záéíóúñ]+\\s+y\\s+(verás|vas a ver)", label: "a command that works as an if: *pruébalo y verás*" },
+      { type: "containsAny", words: ["mira que", "mire que"], label: "*mira que* plus a plain sentence" }
+    ],
+    model: "¡Mira que eres desconfiado! Prueba la lechona y verás que no está grasosa. ¡Dale, hágale, que se acaba!"
+  },
+  pitfalls: [
+    "*Mira que eres terco* is not *look that you are*: nobody looks, it means *you really are*.",
+    "In Spain *¡dale!* or *¡y dale!* can complain about insistence; in Colombia *dale* says yes.",
+    "*Pruébalo y verás* needs *y*: with *si*, say it in full, *si lo pruebas, verás*."
+  ]
+},
+
+"fn-hipotesis-posibilidad-c1": {
+  source: "old",
+  hook: {
+    line: "You and your partner have spent years in Bogotá traffic. One Sunday, on the drive back from a weekend on the coast, one of you says it out loud: what if we moved to Santa Marta? The whole drive home is made of maybes.",
+    es: "¿Y si nos fuéramos a vivir a Santa Marta?\nSi tuvieras que decidir hoy, ¿qué harías?\nPara mí que tu jefe ya sabe que te quieres ir.",
+    en: "What if we moved to Santa Marta?\nIf you had to decide today, what would you do?\nIf you ask me, your boss already knows you want to leave."
+  },
+  examples: [
+    { es: "¿Y si nos fuéramos a vivir a Santa Marta y yo trabajara desde la casa?", en: "What if we moved to Santa Marta and I worked from home?" },
+    { es: "En el caso de que no consiguiéramos trabajo allá, ¿cuánto tiempo aguantaríamos con lo ahorrado?", en: "If we didn't find work there, how long would we last on our savings?" },
+    { es: "Para mí que tu jefe ya sabe que te quieres ir, porque últimamente te trata distinto.", en: "If you ask me, your boss already knows you want to leave, because he's been treating you differently lately." }
+  ],
+  rule: "To open a scenario, *¿Y si* plus the *-ra* form: *¿Y si nos fuéramos a Santa Marta?* About the past: *¿Y si hubiéramos comprado allá hace diez años?*\nTo ask someone to imagine it: *Si tuvieras que decidir hoy, ¿qué harías?*\nMore carefully, in a meeting or in writing: *En el caso de que* plus the subjunctive: *en el caso de que no consiguiéramos trabajo*.\nFor a hunch you cannot prove: *Para mí que* plus the indicative: *Para mí que ya sabe.*\nFor a plain maybe, Colombia says *de pronto*: *De pronto nos aburrimos allá.* *A lo mejor* works too. Both take the indicative.",
+  readAndPick: [
+    { q: "What is she doing?", es: "¿Y si nos fuéramos a vivir a Santa Marta?",
+      options: ["Putting an idea on the table", "Remembering an old move together", "Asking how to get there by car"], answer: 0,
+      why: "*¿Y si* plus the *-ra* form opens a scenario for both of them to imagine." },
+    { q: "How sure is he about the boss?", es: "Para mí que tu jefe ya sabe.",
+      options: ["He has proof of it", "It's a hunch of his", "The boss told him"], answer: 1,
+      why: "*Para mí que* gives a personal hunch, something he can't prove." },
+    { q: "What does *de pronto* mean here?", es: "De pronto nos aburrimos allá.",
+      options: ["Suddenly", "Soon", "Maybe"], answer: 2,
+      why: "In Colombia *de pronto* is a common maybe; elsewhere it often means suddenly." },
+    { q: "Is this about the future or the past?", es: "¿Y si hubiéramos comprado allá hace diez años?",
+      options: ["The future, some years ahead", "A past that didn't happen", "The present moment"], answer: 1,
+      why: "*Hubiéramos comprado* imagines a past that did not happen." },
+    { q: "Where would you most likely hear this?", es: "En el caso de que no se aprobara el crédito, ¿qué alternativas tendríamos?",
+      options: ["A meeting at the bank", "A chat over beer", "A story for a child"], answer: 0,
+      why: "*En el caso de que* is the careful frame, for meetings and writing." }
+  ],
+  yourTurn: [
+    { en: "What if we moved to Santa Marta?", es: "¿Y si nos fuéramos a vivir a Santa Marta?", accept: ["¿Y si nos [fuéramos|mudáramos|pasáramos] a (vivir a) Santa Marta?"] },
+    { en: "If you had to decide today, what would you do?", es: "Si tuvieras que decidir hoy, ¿qué harías?", accept: ["Si tuvieras que [decidir|elegir|escoger] hoy, ¿qué harías?", "Si hoy tuvieras que [decidir|elegir|escoger], ¿qué harías?"] },
+    { en: "If you ask me, he already knows.", es: "Para mí que ya sabe.", accept: ["Para mí que (él) ya (lo) sabe."] },
+    { en: "Maybe we'll get bored there.", es: "De pronto nos aburrimos allá.", accept: ["[De pronto|A lo mejor] nos aburrimos [allá|allí]."] },
+    { en: "What if we had bought there ten years ago?", es: "¿Y si hubiéramos comprado allá hace diez años?", accept: ["¿Y si hubiéramos comprado [allá|allí] hace diez años?"] }
+  ],
+  translate: [
+    { en: "If you could live anywhere in Colombia, which city would you choose and why?", es: "Si pudieras vivir en cualquier parte de Colombia, ¿qué ciudad escogerías y por qué?", accept: ["Si pudieras vivir en cualquier [parte|lugar] de Colombia, ¿qué ciudad [escogerías|elegirías] y por qué?"] },
+    { en: "What if we sold the car and used the money for the first months of rent?", es: "¿Y si vendiéramos el carro y usáramos la plata para los primeros meses de arriendo?", accept: ["¿Y si vendiéramos el carro y [usáramos|utilizáramos] la plata para los primeros meses de arriendo?"] },
+    { en: "In the event that the flight were cancelled, the airline would cover the hotel.", es: "En el caso de que se cancelara el vuelo, la aerolínea cubriría el hotel.", accept: ["En [el caso de|caso de] que se cancelara el vuelo, la aerolínea cubriría el hotel.", "En [el caso de|caso de] que cancelaran el vuelo, la aerolínea cubriría el hotel."] },
+    { en: "If you ask me, it's going to rain. Maybe it's better to leave the beach for tomorrow.", es: "Para mí que va a llover. De pronto es mejor dejar la playa para mañana.", accept: ["Para mí que va a llover. [De pronto|A lo mejor] es mejor dejar la playa para mañana."] },
+    { en: "What if we had stayed in Bogotá? We would never have met these neighbours.", es: "¿Y si nos hubiéramos quedado en Bogotá? Nunca habríamos conocido a estos vecinos.", accept: ["¿Y si nos hubiéramos quedado en Bogotá? Nunca [habríamos|hubiéramos] conocido a estos vecinos.", "¿Y si nos hubiéramos quedado en Bogotá? No [habríamos|hubiéramos] conocido nunca a estos vecinos."] },
+    { en: "If you had to choose between the sea and the mountains, which would you go for?", es: "Si tuvieras que elegir entre el mar y la montaña, ¿con cuál te quedarías?", accept: ["Si tuvieras que [elegir|escoger] entre el mar y la montaña, ¿con cuál te quedarías?"] }
+  ],
+  register: [
+    { es: "De pronto llueve.", en: "Maybe it'll rain.", when: "in Colombia, in everyday speech" },
+    { es: "A lo mejor llueve.", en: "Maybe it'll rain.", when: "anywhere in Latin America, in everyday speech" },
+    { es: "Es posible que llueva.", en: "It may rain.", when: "neutral, in speech or writing" },
+    { es: "Cabe la posibilidad de que llueva.", en: "There is a possibility of rain.", when: "formal: a report, a forecast, a meeting" }
+  ],
+  personal: {
+    prompt: "Put a big change on the table for someone you live or work with. Write three lines: the proposal, a question that asks them to imagine it, and your hunch about how it would go.",
+    constraints: [
+      { type: "regex", pattern: "¿\\s*y si\\s", label: "open the scenario: *¿Y si...?*" },
+      { type: "regex", pattern: "\\bsi [a-záéíóúñ ]*[a-z]+(ras|ra|ramos|ran|ieras|iera|iéramos|ieran)\\b", label: "ask them to imagine it: *si tuvieras que...*" },
+      { type: "containsAny", words: ["para mí que", "de pronto", "a lo mejor"], label: "your hunch: *para mí que*, *de pronto*" }
+    ],
+    model: "¿Y si montáramos una panadería en Villa de Leyva? Si tuvieras que dejar tu trabajo mañana, ¿lo harías? Para mí que nos iría muy bien."
+  },
+  pitfalls: [
+    "*De pronto* in Colombia usually means maybe, not suddenly: *de pronto llego tarde* is a warning, not a story.",
+    "*¿Y si nos vamos?* with the present is a real suggestion for now; *¿y si nos fuéramos?* imagines it.",
+    "*Para mí que* is a hunch, not a reasoned view: for that, *en mi opinión*."
+  ]
+},
+
+"fn-obligacion-necesidad-c1": {
+  source: "merged",
+  hook: {
+    line: "You are renting your first apartment in Medellín, and the agent walks you through the contract. Every line of it says where a duty comes from: you, the contract, or nowhere at all, and some say only the least you have to do.",
+    es: "El contrato lo obliga a avisar con tres meses.\nNo tiene obligación de pintar al salir.\nBasta con que nos mande la carta laboral.",
+    en: "The contract requires you to give three months' notice.\nYou are under no obligation to paint when you leave.\nAll you need to do is send us the letter from your employer."
+  },
+  examples: [
+    { es: "El contrato lo obliga a avisar con tres meses de anticipación si decide no renovar.", en: "The contract requires you to give three months' notice if you decide not to renew." },
+    { es: "Es obligación del arrendatario pagar la administración, pero los arreglos grandes le tocan al dueño.", en: "Paying the building fees is the tenant's duty, but the big repairs fall to the owner." },
+    { es: "Para el estudio basta con que nos mande la carta laboral y los datos de un codeudor.", en: "For the background check, all you need to send us is your employment letter and a guarantor's details." }
+  ],
+  rule: "Spanish says where a duty comes from.\nIt is yours: *Es mi obligación* plus the dictionary form, or *estoy obligado a*. *Es obligación del arrendatario pagar la administración.*\nSomething outside imposes it: *El contrato me obliga a avisar.* *Las circunstancias nos obligaron a irnos.* *Obligar* always takes *a*.\nThere is none: *No tiene obligación de pintar.* *Nada lo obliga a renovar.* That means you don't have to, not that you can't.\nOnly the minimum: *Basta con* plus the dictionary form, or *basta con que* plus the subjunctive when someone else acts: *Basta con que nos mande la carta.* *No basta con* means it is not enough.",
+  readAndPick: [
+    { q: "Where does this duty come from?", es: "El contrato lo obliga a avisar con tres meses.",
+      options: ["From his conscience", "From the contract he signed", "From the owner's good will"], answer: 1,
+      why: "*Me obliga a* puts the source outside you: here, the contract." },
+    { q: "Does he have to paint the flat when he leaves?", es: "No tiene obligación de pintar al salir.",
+      options: ["No, it isn't required", "Yes, it's in the contract", "He is not allowed to"], answer: 0,
+      why: "*No tiene obligación de* says you don't have to; it does not forbid it." },
+    { q: "How much does she need to send?", es: "Basta con que nos mande la carta laboral.",
+      options: ["Lots of papers", "Nothing at all", "Only that one letter"], answer: 2,
+      why: "*Basta con que* names the minimum: that letter is all it takes." },
+    { q: "What is the speaker saying?", es: "No basta con pagar a tiempo; también hay que cuidar el apartamento.",
+      options: ["Paying on time is all it takes", "Paying on time is not enough", "Paying late is perfectly fine"], answer: 1,
+      why: "*No basta con* says the minimum is not enough: more is needed." },
+    { q: "Who chose to take on this duty?", es: "Es mi obligación avisarles a los vecinos.",
+      options: ["The speaker, as his own", "The building's strict rules", "Nobody in particular"], answer: 0,
+      why: "*Es mi obligación* presents the duty as your own, taken on by you." }
+  ],
+  yourTurn: [
+    { en: "The contract requires me to give three months' notice.", es: "El contrato me obliga a avisar con tres meses.", accept: ["El contrato me obliga a avisar con tres meses (de anticipación)."] },
+    { en: "You don't have to paint when you leave. (to a man you call usted)", es: "No tiene obligación de pintar al salir.", accept: ["No tiene (la) obligación de pintar al [salir|irse].", "No está obligado a pintar al [salir|irse]."] },
+    { en: "All you need to do is send us the letter. (to someone you call usted)", es: "Basta con que nos mande la carta.", accept: ["Basta con que nos [mande|envíe] la carta."] },
+    { en: "Nothing forces you to renew. (to a man you call usted)", es: "Nada lo obliga a renovar.", accept: ["Nada lo obliga a renovar."] },
+    { en: "It's my duty to tell the neighbours.", es: "Es mi obligación avisarles a los vecinos.", accept: ["Es mi obligación [avisarles|decirles|contarles] a los vecinos."] }
+  ],
+  translate: [
+    { en: "Circumstances forced us to leave the apartment two months before the contract ended.", es: "Las circunstancias nos obligaron a dejar el apartamento dos meses antes de que terminara el contrato.", accept: ["Las circunstancias nos obligaron a [dejar|entregar] el apartamento dos meses antes de que [terminara|se acabara|venciera] el contrato."] },
+    { en: "You are not obliged to answer the survey, but it helps us improve the service. (to a man you call usted)", es: "No está obligado a responder la encuesta, pero nos ayuda a mejorar el servicio.", accept: ["No [está obligado a|tiene obligación de|tiene la obligación de] [responder|contestar] la encuesta, pero nos ayuda a mejorar el servicio."] },
+    { en: "To open the account, all you need is your ID card and a utility bill.", es: "Para abrir la cuenta basta con la cédula y un recibo de servicios públicos.", accept: ["Para abrir la cuenta basta con la cédula y un recibo de servicios (públicos)."] },
+    { en: "Wanting to change isn't enough. You have to sign up, go to class and do the work.", es: "No basta con querer cambiar. Hay que inscribirse, ir a clase y hacer el trabajo.", accept: ["No basta con querer cambiar. Hay que [inscribirse|matricularse], ir a clase y hacer el trabajo.", "No es suficiente con querer cambiar. Hay que [inscribirse|matricularse], ir a clase y hacer el trabajo."] },
+    { en: "It wasn't her duty to look after her younger brothers, but nobody else was going to do it.", es: "No era su obligación cuidar a sus hermanos menores, pero nadie más lo iba a hacer.", accept: ["No era su obligación cuidar a sus hermanos [menores|pequeños|chiquitos], pero nadie más [lo iba a hacer|iba a hacerlo]."] },
+    { en: "All you have to do is sign here and here, and the keys are yours. (to someone you call usted)", es: "Basta con que firme aquí y aquí, y las llaves son suyas.", accept: ["Basta con que firme aquí y aquí, y las llaves son suyas.", "Solo tiene que firmar aquí y aquí, y las llaves son suyas."] }
+  ],
+  register: [
+    { es: "Me toca pagar la administración.", en: "I have to pay the building fees.", when: "in Colombia, in everyday speech" },
+    { es: "Tengo que pagar la administración.", en: "I have to pay the building fees.", when: "anywhere, neutral" },
+    { es: "Estoy obligado a pagar la administración.", en: "I am obliged to pay the building fees.", when: "when the rule matters more than your choice" },
+    { es: "Corresponde al arrendatario el pago de la administración.", en: "Payment of the building fees falls to the tenant.", when: "in a contract or an official letter" }
+  ],
+  personal: {
+    prompt: "Explain the rules of a place you know, a job, a flat or a club, to someone new: one duty that is theirs, one imposed from outside, and the least they have to do.",
+    constraints: [
+      { type: "containsAny", words: ["es tu obligación", "es su obligación", "es mi obligación", "es obligación", "estás obligado", "está obligado", "estás obligada", "está obligada"], label: "a duty that is theirs: *es su obligación*" },
+      { type: "regex", pattern: "\\bobliga(n|ron|ba)?\\s+a\\s", label: "a duty imposed from outside: *el reglamento lo obliga a*" },
+      { type: "containsAny", words: ["basta con"], label: "the minimum: *basta con que*" }
+    ],
+    model: "En el club es tu obligación dejar la cancha limpia. El reglamento nos obliga a reservar con un día de anticipación. Para entrar, basta con que muestres el carné."
+  },
+  pitfalls: [
+    "*Obligar* always takes *a*: *me obliga a avisar*. After *tener*, *obligación* takes *de*: *no tengo obligación de*.",
+    "*Basta con que* is the least you need, not an order: *tienes que* asks for more.",
+    "*Nada lo obliga a renovar* means you are free to leave, not that you may not renew."
+  ]
+},
+
+"nt-necesidad-obligacion-c1": {
+  source: "merged",
+  hook: {
+    line: "The family bakery in Pasto has had a terrible year: flour up, gas up, customers down. Around the kitchen table your mother and your uncle go through the costs, from what they can do without to what they cannot, and land on the one decision nobody wanted.",
+    es: "El letrero nuevo es un gasto prescindible.\nEl horno, en cambio, es imprescindible.\nNo nos quedó más remedio que subir los precios.",
+    en: "The new sign is an expense we can do without.\nThe oven, on the other hand, is essential.\nWe had no choice but to put prices up."
+  },
+  examples: [
+    { es: "El letrero nuevo es un gasto prescindible, pero sin el horno no hay panadería.", en: "The new sign is an expense we can do without, but without the oven there's no bakery." },
+    { es: "Dadas las circunstancias, no nos quedó más remedio que subir el pan a mil pesos.", en: "Given the circumstances, we had no choice but to put the bread up to a thousand pesos." },
+    { es: "Cerramos los lunes por necesidad, no por gusto: el gas nos estaba comiendo las ganancias.", en: "We close on Mondays out of necessity, not by choice: the gas was eating up our profits." }
+  ],
+  rule: "Grade how much you need something: *prescindible*, you can do without it; *conveniente*, it would help; *necesario*; *imprescindible*, you cannot do without it; *vital*, everything depends on it.\n*De primera necesidad* is for basics: food, water, medicine. Not for a phone.\nWhen there is only one door: *No nos quedó más remedio que* plus the dictionary form. In Colombia, *no queda de otra* and *nos tocó*: *Nos tocó subir los precios.*\nTo say it was forced, not chosen: *por necesidad, no por gusto*. To justify it in advance: *dadas las circunstancias*.",
+  readAndPick: [
+    { q: "Can they manage without the new sign?", es: "El letrero nuevo es un gasto prescindible.",
+      options: ["Yes, easily", "No, never", "Only for a while"], answer: 0,
+      why: "*Prescindible* is what you can do without; *imprescindible* is the opposite." },
+    { q: "Did they want to put prices up?", es: "No nos quedó más remedio que subir los precios.",
+      options: ["Yes, they had planned it for ages", "No, there was no way out", "They are still deciding it"], answer: 1,
+      why: "*No quedar más remedio que* says every other option was gone." },
+    { q: "Why do they close on Mondays?", es: "Cerramos los lunes por necesidad, no por gusto.",
+      options: ["Because they like it", "Because the law says so", "Because they're forced to"], answer: 2,
+      why: "*Por necesidad, no por gusto*: forced by the situation, not chosen." },
+    { q: "What does *nos tocó* mean here?", es: "Nos tocó vender la camioneta.",
+      options: ["It touched all of us deeply", "We were forced to do it", "It was our turn to buy one"], answer: 1,
+      why: "In Colombia *me toca*, *nos tocó* is the everyday way to say you have to." },
+    { q: "Which of these is *de primera necesidad*?", es: "En la tienda del barrio.",
+      options: ["El arroz y el agua", "Un celular nuevo", "Una torta de cumpleaños"], answer: 0,
+      why: "*De primera necesidad* is for basics: food, water, medicine." }
+  ],
+  yourTurn: [
+    { en: "We had no choice but to raise the prices.", es: "No nos quedó más remedio que subir los precios.", accept: ["No nos quedó [más remedio|otra opción|otro remedio] que subir los precios.", "No nos quedó de otra que subir los precios."] },
+    { en: "The new sign is an expense we can do without.", es: "El letrero nuevo es un gasto prescindible.", accept: ["El [letrero|aviso] nuevo es un gasto prescindible.", "El nuevo [letrero|aviso] es un gasto prescindible."] },
+    { en: "The oven is essential.", es: "El horno es imprescindible.", accept: ["El horno es [imprescindible|indispensable]."] },
+    { en: "We had to close on Mondays. (Colombia)", es: "Nos tocó cerrar los lunes.", accept: [] },
+    { en: "We did it out of necessity, not by choice.", es: "Lo hicimos por necesidad, no por gusto.", accept: [] }
+  ],
+  translate: [
+    { en: "Given the circumstances, the board decided to postpone the opening of the new branch until March.", es: "Dadas las circunstancias, la junta decidió aplazar la inauguración de la nueva sede hasta marzo.", accept: ["Dadas las circunstancias, la junta decidió [aplazar|posponer] la inauguración de la nueva sede hasta marzo."] },
+    { en: "Rice, water and medicine are basic necessities; a new phone isn't.", es: "El arroz, el agua y los medicamentos son de primera necesidad; un celular nuevo no.", accept: ["El arroz, el agua y los [medicamentos|remedios] son de primera necesidad; un celular nuevo no."] },
+    { en: "We didn't want to sell the van. But the bank didn't give us the loan, and there was no other way.", es: "No queríamos vender la camioneta. Pero el banco no nos dio el crédito, y no quedó de otra.", accept: ["No queríamos vender la camioneta. Pero el banco no nos dio el [crédito|préstamo], y no [quedó|nos quedó] [de otra|otro remedio|más remedio]."] },
+    { en: "For the trip, a good pair of boots is essential; the second jacket you can do without.", es: "Para el viaje, unas buenas botas son imprescindibles; la segunda chaqueta es prescindible.", accept: ["Para el viaje, unas buenas botas son [imprescindibles|indispensables]; la segunda chaqueta es prescindible."] },
+    { en: "We had to work the whole of December, so we couldn't go to my grandmother's farm. (Colombia)", es: "Nos tocó trabajar todo diciembre, así que no pudimos ir a la finca de mi abuela.", accept: ["[Nos tocó|Tuvimos que] trabajar todo (el mes de) diciembre, así que no pudimos ir a la finca de mi abuela."] },
+    { en: "His help was decisive: without him we would have had to close the bakery.", es: "Su ayuda fue decisiva: sin él habríamos tenido que cerrar la panadería.", accept: ["Su ayuda fue [decisiva|fundamental|vital]: sin él [habríamos|hubiéramos] tenido que cerrar la panadería."] }
+  ],
+  register: [
+    { es: "No queda de otra.", en: "There's nothing else for it.", when: "in Colombia, with family and friends" },
+    { es: "Nos tocó.", en: "We had to.", when: "in Colombia, in everyday speech, at any age" },
+    { es: "No tuvimos más remedio.", en: "We had no choice.", when: "anywhere, in speech or writing" },
+    { es: "Nos vimos obligados a ajustar los precios.", en: "We were obliged to adjust our prices.", when: "a notice to customers or a formal letter" }
+  ],
+  personal: {
+    prompt: "Something forced a change in your life or work. Write three lines: what you could do without, what you could not, and the decision that was left.",
+    constraints: [
+      { type: "containsAny", words: ["prescindible", "imprescindible", "indispensable", "de primera necesidad"], label: "how much you needed it: *prescindible*, *imprescindible*" },
+      { type: "containsAny", words: ["más remedio", "otro remedio", "de otra", "me tocó", "nos tocó", "otra opción"], label: "no way out: *no me quedó más remedio que*, *me tocó*" }
+    ],
+    model: "Cuando perdí el trabajo, el gimnasio era prescindible, pero el internet era imprescindible para buscar otro. No me quedó más remedio que mudarme a la casa de mis papás."
+  },
+  pitfalls: [
+    "*No nos quedó más remedios*: *remedio* stays singular, and the person goes before *quedó*: *nos*, *me*, *les*.",
+    "*De primera necesidad* is for basic goods; for an important meeting, say *imprescindible*.",
+    "*Me toca* is also *it's my turn*: *me toca a mí* in a game. The context tells which."
+  ]
+},
+
+"fn-orden-instruccion-c1": {
+  source: "old",
+  hook: {
+    line: "Your first week as coordinator of a small team in Bogotá. You need a report out of three people, a printout out of the intern and a window closed by someone who outranks you, and every request sits on a different rung.",
+    es: "Les pido el favor de que me manden el informe antes del viernes.\nMe hace el favor y me imprime esto.\nUy, qué frío está haciendo aquí, ¿no?",
+    en: "Please would you all send me the report before Friday.\nWould you print this for me, please.\nGosh, it's cold in here, isn't it?"
+  },
+  examples: [
+    { es: "Les pido el favor de que me manden el informe antes del viernes al mediodía.", en: "Please would you all send me the report before Friday at noon." },
+    { es: "Necesitaría que me confirmaran la asistencia hoy mismo, porque mañana cierro la lista.", en: "I'd need you to confirm your attendance today, because I'm closing the list tomorrow." },
+    { es: "Convendría revisar el contrato con el abogado antes de firmarlo, por si acaso.", en: "It would be wise to go over the contract with the lawyer before signing it, just in case." }
+  ],
+  rule: "An order has a ladder, and you choose the rung.\nBlunt, with no room to answer: the present, *Tú te quedas aquí*, or the future, *Harás lo que te diga.*\nSoftened, the Colombian way: *Me hace el favor y* plus the present: *Me hace el favor y me imprime esto.* *Le pido el favor de que* plus the subjunctive.\nDisguised as your need: *Necesitaría que* plus the *-ra* form. As advice: *Convendría revisarlo.*\nCeremonious: *¿Sería tan amable de...?*\nHidden: a remark that is an order. *Uy, qué frío está haciendo* means close the window.\nGo up a rung for rank, distance and a big ask.",
+  readAndPick: [
+    { q: "Is the intern being asked or told?", es: "Me hace el favor y me imprime esto.",
+      options: ["Told, in a polite way", "Asked whether he has time", "Neither, it is only a joke"], answer: 0,
+      why: "*Me hace el favor y* plus the present is a polite order, and very Colombian." },
+    { q: "What does the boss want?", es: "Uy, qué frío está haciendo aquí, ¿no?",
+      options: ["The window shut, please", "A chat about the weather", "A hot cup of coffee"], answer: 0,
+      why: "A remark can be an order: everyone knows she wants the window closed." },
+    { q: "How much room is there to argue?", es: "Harás lo que te diga.",
+      options: ["Plenty, it is a suggestion", "None at all, it's settled", "Some, it is only a guess"], answer: 1,
+      why: "The future used as an order presents it as already decided." },
+    { q: "Why *necesitaría*?", es: "Necesitaría que me confirmaran hoy.",
+      options: ["It refers to next week", "It shows she's unsure of herself", "It frames the order as a need"], answer: 2,
+      why: "*Necesitaría que* turns an order into the speaker's own need, which softens it." },
+    { q: "Which fits a request to the general manager?", es: "Le pide que revise el informe.",
+      options: ["Revíseme esto ya, ¿oyó?", "¿Sería tan amable de revisarlo?", "¿Me lo revisas, porfa?"], answer: 1,
+      why: "*¿Sería tan amable de...?* is the ceremonious rung, for rank and distance." }
+  ],
+  yourTurn: [
+    { en: "Would you print this for me, please. (to a colleague you call usted)", es: "Me hace el favor y me imprime esto.", accept: ["Me hace el favor y me imprime esto.", "¿Me hace el favor de imprimirme esto?"] },
+    { en: "I'd need you all to confirm today.", es: "Necesitaría que me confirmaran hoy.", accept: ["Necesitaría que me confirmaran hoy (mismo)."] },
+    { en: "It would be wise to check the contract.", es: "Convendría revisar el contrato.", accept: [] },
+    { en: "Please would you all send me the report. (Colombia, to your team)", es: "Les pido el favor de que me manden el informe.", accept: ["Les pido (el) favor (de) que me [manden|envíen] el informe."] },
+    { en: "Would you be so kind as to close the door? (to someone you call usted)", es: "¿Sería tan amable de cerrar la puerta?", accept: ["¿Sería tan amable de cerrar la puerta?", "¿Tendría la amabilidad de cerrar la puerta?"] }
+  ],
+  translate: [
+    { en: "Please would you all hand in the timesheets before five, because payroll closes today.", es: "Les pido el favor de que entreguen las planillas antes de las cinco, porque hoy cierra nómina.", accept: ["Les pido (el) favor (de) que entreguen las planillas antes de las cinco, porque hoy cierra (la) nómina."] },
+    { en: "If it's not too much trouble, send me the photos from the event when you can. (to a friend)", es: "Si no es mucha molestia, me mandas las fotos del evento cuando puedas.", accept: ["Si no es (mucha) molestia, me [mandas|envías] las fotos del evento cuando puedas."] },
+    { en: "You're staying here until you finish, and you'll do as I say.", es: "Tú te quedas aquí hasta que termines, y harás lo que yo te diga.", accept: ["Tú te quedas aquí hasta que termines, y harás lo que (yo) te diga."] },
+    { en: "It would be wise to make the summary shorter. The board won't read twenty pages.", es: "Convendría hacer el resumen más corto. La junta no va a leer veinte páginas.", accept: ["Convendría hacer el resumen más [corto|breve]. La junta no va a leer veinte páginas.", "Convendría acortar el resumen. La junta no va a leer veinte páginas."] },
+    { en: "I'd need you to send me the signed contract today, because the bank closes at four. (formal)", es: "Necesitaría que me enviara hoy el contrato firmado, porque el banco cierra a las cuatro.", accept: ["Necesitaría que me [enviara|mandara] hoy el contrato firmado, porque el banco cierra a las cuatro.", "Necesitaría que me [enviara|mandara] el contrato firmado hoy, porque el banco cierra a las cuatro."] },
+    { en: "Gosh, it's hot in here, isn't it? Nobody has opened a window all morning.", es: "Uy, qué calor está haciendo aquí, ¿no? Nadie ha abierto una ventana en toda la mañana.", accept: ["Uy, qué calor [está haciendo|hace] aquí, ¿no? Nadie [ha abierto|abrió] una ventana en toda la mañana."] }
+  ],
+  register: [
+    { es: "Ciérrame la puerta.", en: "Close the door for me.", when: "to family, or to someone much younger" },
+    { es: "Me hace el favor y cierra la puerta.", en: "Would you close the door, please.", when: "in Colombia, at work or with a stranger" },
+    { es: "¿Será que me cierras la puerta?", en: "Could you possibly close the door?", when: "in Colombia, a soft ask among equals" },
+    { es: "¿Sería tan amable de cerrar la puerta?", en: "Would you be so kind as to close the door?", when: "very formal, or ironic among friends" }
+  ],
+  personal: {
+    prompt: "You are organising a family lunch for twenty. Give three instructions on three different rungs: one to your brother, one to an aunt you call usted, and one hidden in a remark.",
+    constraints: [
+      { type: "containsAny", words: ["me hace el favor", "le pido el favor", "necesitaría que", "convendría", "sería tan amable", "será que"], label: "a softened order: *me hace el favor y*, *necesitaría que*" },
+      { type: "minSentences", n: 3, label: "three instructions or more" }
+    ],
+    model: "Juan, tú traes el hielo y las sillas. Tía Rosa, me hace el favor y me ayuda con el arroz. Uy, ya son las doce y la mesa sigue sin poner, ¿no?"
+  },
+  pitfalls: [
+    "*Me hace el favor y me imprime esto* takes the present after *y*, not the subjunctive.",
+    "*¿Sería tan amable de...?* to a friend sounds ironic: keep it for rank and distance.",
+    "*Harás lo que te diga* is not a prediction: it is an order that admits no reply."
+  ]
+},
+
+"fn-repetir-orden-c1": {
+  source: "merged",
+  hook: {
+    line: "Sunday night in Bucaramanga. Your nephews should be in bed, the console is still on, and your sister has said it three times already. The fourth time, Spanish has ready-made words, and nobody expects an answer.",
+    es: "¿Cuántas veces te tengo que decir que apagues eso?\nQue te vayas a bañar, te dije.\nPor última vez: a la cama.",
+    en: "How many times do I have to tell you to turn that off?\nGo and have a shower, I said.\nFor the last time: bed."
+  },
+  examples: [
+    { es: "¿Cuántas veces te tengo que decir que apagues la consola a las nueve, Santiago?", en: "How many times do I have to tell you to turn the console off at nine, Santiago?" },
+    { es: "Que te vayas a bañar, te dije, que mañana hay colegio y no te levantas.", en: "Go and have a shower, I said, because there's school tomorrow and you won't get up." },
+    { es: "Por última vez: o recoges los juguetes, o mañana no hay consola en todo el día.", en: "For the last time: either you pick up the toys, or there's no console all day tomorrow." }
+  ],
+  rule: "When an order has been ignored, it comes back in a fixed frame.\nA question nobody answers: *¿Cuántas veces te tengo que decir que* plus the subjunctive: *que apagues eso*. *¿Cómo te lo tengo que decir?*\nThe order again, with *que* and the subjunctive, then *te dije*: *Que te vayas a bañar, te dije.* The *que* says I am repeating myself.\nThe final warning: *Por última vez:* plus the order.\nTo pass the order on to someone else, *que* and the subjunctive: *Que lo recoja tu hermano.* *Que no entre nadie.*\nFor a group, *les*: *¿Cuántas veces les tengo que decir...?*",
+  readAndPick: [
+    { q: "What answer does his mother expect?", es: "¿Cuántas veces te tengo que decir que apagues eso?",
+      options: ["A number of times", "Nothing, just obedience", "A good excuse"], answer: 1,
+      why: "A complaint shaped as a question: the only answer wanted is the console off." },
+    { q: "Why does she start with *que*?", es: "Que te vayas a bañar, te dije.",
+      options: ["She's repeating an order", "She's wishing him luck", "She's asking very politely"], answer: 0,
+      why: "*Que* plus the subjunctive, then *te dije*, repeats an order that was ignored." },
+    { q: "Who is to pick up the toys?", es: "Que los recoja tu hermano.",
+      options: ["You, this minute", "Your brother, not you", "Nobody, leave them"], answer: 1,
+      why: "*Que* plus the subjunctive passes the order on to a third person." },
+    { q: "What does *por última vez* announce?", es: "Por última vez: a la cama.",
+      options: ["The very last game of the night", "A later bedtime for once", "After this, no more warnings"], answer: 2,
+      why: "*Por última vez* says this is the final warning, whether or not it really is." },
+    { q: "Who is being told off here?", es: "¿Cuántas veces les tengo que decir que no griten?",
+      options: ["Just the one child, Santiago", "More than one child", "The neighbour next door"], answer: 1,
+      why: "*Les* addresses a group; to one child, *te*." }
+  ],
+  yourTurn: [
+    { en: "How many times do I have to tell you to turn that off? (to a child)", es: "¿Cuántas veces te tengo que decir que apagues eso?", accept: ["¿Cuántas veces te tengo que decir que apagues eso?", "¿Cuántas veces tengo que decirte que apagues eso?"] },
+    { en: "Go and have a shower, I said. (to a child)", es: "Que te vayas a bañar, te dije.", accept: ["Que te vayas a bañar, te dije.", "Que te bañes, te dije."] },
+    { en: "For the last time: bed.", es: "Por última vez: a la cama.", accept: ["Por última vez: (a la|para la) cama."] },
+    { en: "Let your brother pick them up.", es: "Que los recoja tu hermano.", accept: ["Que los recoja tu hermano.", "Que tu hermano los recoja."] },
+    { en: "How many times do I have to tell you all not to shout? (to a group of children)", es: "¿Cuántas veces les tengo que decir que no griten?", accept: ["¿Cuántas veces les tengo que decir que no griten?", "¿Cuántas veces tengo que decirles que no griten?"] }
+  ],
+  translate: [
+    { en: "How many times do I have to tell you not to leave wet towels on the bed?", es: "¿Cuántas veces te tengo que decir que no dejes las toallas mojadas en la cama?", accept: ["¿Cuántas veces te tengo que decir que no dejes las toallas mojadas [en|sobre] la cama?", "¿Cuántas veces tengo que decirte que no dejes las toallas mojadas [en|sobre] la cama?"] },
+    { en: "Sit down and eat, I said. The soup is getting cold and your grandmother is waiting.", es: "Que te sientes a comer, te dije. La sopa se enfría y tu abuela está esperando.", accept: ["Que te sientes a comer, te dije. La sopa se [enfría|está enfriando] y tu abuela [está esperando|te está esperando|te espera]."] },
+    { en: "For the last time: either you turn off the television, or I take it away until Friday.", es: "Por última vez: o apagas el televisor, o te lo quito hasta el viernes.", accept: ["Por última vez: o apagas el televisor, o te lo quito hasta el viernes.", "Por última vez: o apagas la televisión, o te la quito hasta el viernes."] },
+    { en: "The plumber's here. Let him in, and don't let the dog get out.", es: "Llegó el plomero. Que entre, y que no se salga el perro.", accept: ["(Ya) llegó el plomero. Que [entre|siga|pase], y que no se salga el perro."] },
+    { en: "How else do I have to say it? The car keys stay in the kitchen, not in your room.", es: "¿Cómo te lo tengo que decir? Las llaves del carro se quedan en la cocina, no en tu cuarto.", accept: ["¿Cómo te lo tengo que decir? Las llaves del carro se quedan en la cocina, no en tu [cuarto|habitación|pieza].", "¿Cómo tengo que decírtelo? Las llaves del carro se quedan en la cocina, no en tu [cuarto|habitación|pieza]."] },
+    { en: "Your sister is to come down right now, the bus leaves in five minutes.", es: "Que baje tu hermana ya mismo, que el bus sale en cinco minutos.", accept: ["Que baje tu hermana ya mismo, que el bus sale en cinco minutos.", "Que tu hermana baje ya mismo, que el bus sale en cinco minutos."] }
+  ],
+  register: [
+    { es: "Apaga eso, por favor.", en: "Turn that off, please.", when: "the first time you ask" },
+    { es: "Que apagues eso, te dije.", en: "Turn that off, I said.", when: "the second or third time" },
+    { es: "¿Cuántas veces te lo tengo que decir?", en: "How many times do I have to tell you?", when: "when your patience has run out" },
+    { es: "Se les recuerda que está prohibido fumar.", en: "You are reminded that smoking is not allowed.", when: "a written notice repeating a rule" }
+  ],
+  personal: {
+    prompt: "Someone you live with keeps ignoring the same request. Write the second, the third and the last time you say it.",
+    constraints: [
+      { type: "regex", pattern: "\\bque [a-záéíóúñ ]*,\\s*te (dije|he dicho|estoy diciendo)", label: "the order again: *que* plus the subjunctive, then *te dije*" },
+      { type: "containsAny", words: ["cuántas veces", "cómo te lo tengo que decir", "cómo tengo que decírtelo"], label: "the question nobody answers: *¿cuántas veces...?*" },
+      { type: "containsAny", words: ["por última vez"], label: "the final warning: *por última vez*" }
+    ],
+    model: "Que laves los platos, te dije. ¿Cuántas veces te tengo que decir que no dejes la olla en el lavaplatos? Por última vez: o lavas, o mañana cocinas tú."
+  },
+  pitfalls: [
+    "*Que apagas eso* is wrong: the repeated order takes the subjunctive, *que apagues*.",
+    "*¿Cuántas veces...?* wants no number: answering *tres* is cheek.",
+    "*Por última vez* is rarely the last time, and everyone knows it."
+  ]
+},
+
+"fn-responder-orden-peticion-c1": {
+  source: "old",
+  hook: {
+    line: "Your best friend Daniela is getting married in Cartagena in a month, and the requests have started arriving: a lift to the airport, the speech and, again, money. You answer each one on a different step, from a glad yes to a flat no.",
+    es: "¿Me llevas al aeropuerto? ¡De una!\n¿Y si das tú el discurso? Bueno, siempre y cuando sea corto.\n¿Cómo así que te preste plata otra vez? Ni lo sueñes.",
+    en: "Will you take me to the airport? Sure thing!\nAnd what if you gave the speech? Well, as long as it's short.\nWhat do you mean, lend you money again? Don't even dream of it."
+  },
+  examples: [
+    { es: "¿Que si te llevo al aeropuerto el viernes? ¡De una! Paso por ti a las seis.", en: "Will I take you to the airport on Friday? Sure thing! I'll pick you up at six." },
+    { es: "Listo, yo doy el discurso, siempre y cuando no tenga que hablar más de cinco minutos.", en: "OK, I'll give the speech, as long as I don't have to talk for more than five minutes." },
+    { es: "Qué pena contigo, Dani, pero ese fin de semana me resulta imposible cuidarte el perro.", en: "I'm so sorry, Dani, but that weekend it's impossible for me to look after your dog." }
+  ],
+  rule: "Answering a request has steps too.\nA glad yes: *Con mucho gusto.* *¡Claro que sí!* *Eso está hecho.* With friends in Colombia, *¡de una!*\nYes, with a condition: *siempre y cuando* plus the subjunctive. Later: *cuando tenga un rato.* Nothing promised: *Veré qué puedo hacer.*\nA soft no: *Qué pena contigo, pero no puedo.* *Me temo que no va a ser posible.* *Sintiéndolo mucho, me resulta imposible.*\nA flat no: *Ni lo sueñes.* *Por nada del mundo.* *No tengo la menor intención de...*\nBefore answering, an echo: *¿Cómo así que te preste plata?* It can lead to a yes or a no.",
+  readAndPick: [
+    { q: "Will she drive her friend?", es: "¿Al aeropuerto? ¡De una!",
+      options: ["Maybe, if she can find the time", "No, she has to work that day", "Yes, gladly, right away"], answer: 2,
+      why: "*¡De una!* is a Colombian yes with no hesitation at all." },
+    { q: "Has he promised anything?", es: "Veré qué puedo hacer.",
+      options: ["Yes, this week", "Not really, nothing firm", "No, he refused outright"], answer: 1,
+      why: "*Veré qué puedo hacer* sounds helpful and promises nothing." },
+    { q: "What does *qué pena contigo* do here?", es: "Qué pena contigo, pero no puedo ir.",
+      options: ["Apologises before a no", "Says she feels sad for him", "Says she is ashamed"], answer: 0,
+      why: "In Colombia *qué pena contigo* is a soft sorry, here before a refusal." },
+    { q: "Will she lend the money?", es: "¿Cómo así que te preste plata otra vez? Ni lo sueñes.",
+      options: ["Yes, once she has grumbled a bit", "Only half, and next month", "No, not in his wildest dreams"], answer: 2,
+      why: "*¿Cómo así que...?* echoes the request in disbelief, and *ni lo sueñes* is a flat no." },
+    { q: "What is the condition?", es: "Doy el discurso siempre y cuando sea corto.",
+      options: ["That the speech is short", "That someone else writes it", "That she is paid for it"], answer: 0,
+      why: "*Siempre y cuando* plus the subjunctive sets the condition for a yes." }
+  ],
+  yourTurn: [
+    { en: "Consider it done.", es: "Eso está hecho.", accept: ["Eso está hecho.", "¡Eso está hecho!"] },
+    { en: "I'll see what I can do.", es: "Veré qué puedo hacer.", accept: ["[Veré|Voy a ver] [qué|lo que] puedo hacer."] },
+    { en: "OK, as long as it's short.", es: "Listo, siempre y cuando sea corto.", accept: ["[Listo|Bueno|Está bien], siempre y cuando sea corto."] },
+    { en: "I'm so sorry, but I can't. (Colombia, to a friend)", es: "Qué pena contigo, pero no puedo.", accept: ["(Ay,) qué pena contigo, pero no puedo."] },
+    { en: "What do you mean, lend you money again? (to a friend)", es: "¿Cómo así que te preste plata otra vez?", accept: ["¿Cómo así que te preste plata [otra vez|de nuevo]?", "¿Cómo que te preste plata otra vez?"] }
+  ],
+  translate: [
+    { en: "Will you help me with the move on Saturday? Sure thing! I'll be at your place at eight.", es: "¿Me ayudas con el trasteo el sábado? ¡De una! A las ocho estoy en tu casa.", accept: ["¿Me ayudas con el trasteo el sábado? ¡[De una|Claro que sí|Claro]! A las ocho estoy en tu casa.", "¿Me ayudas con el trasteo el sábado? ¡[De una|Claro que sí|Claro]! Estoy en tu casa a las ocho."] },
+    { en: "I'm afraid it won't be possible to deliver the order before the fifteenth. (formal)", es: "Me temo que no va a ser posible entregar el pedido antes del quince.", accept: ["Me temo que no [va a ser|será] posible entregar el pedido antes del quince."] },
+    { en: "I'll lend you the car as long as you bring it back with a full tank.", es: "Te presto el carro siempre y cuando me lo devuelvas con el tanque lleno.", accept: ["Te presto el carro [siempre y cuando|siempre que] me lo devuelvas con el tanque lleno."] },
+    { en: "Me, sing at the wedding? Not for anything in the world. But I'll gladly give the speech.", es: "¿Yo, cantar en el matrimonio? Por nada del mundo. Pero el discurso lo doy con mucho gusto.", accept: ["¿Yo, cantar en el matrimonio? [Por nada del mundo|Ni lo sueñes|Ni de riesgos]. Pero el discurso lo doy con mucho gusto."] },
+    { en: "I have no intention whatsoever of apologising for something I didn't do.", es: "No tengo la menor intención de pedir perdón por algo que no hice.", accept: ["No tengo la [menor|más mínima] intención de pedir [perdón|disculpas] por algo que no hice."] },
+    { en: "Much as I regret it, I can't go with you that day: I have my brother's graduation.", es: "Sintiéndolo mucho, ese día no puedo acompañarte: tengo el grado de mi hermano.", accept: ["Sintiéndolo mucho, ese día [no puedo acompañarte|me resulta imposible acompañarte]: tengo el grado de mi hermano."] }
+  ],
+  register: [
+    { es: "¡De una!", en: "Sure thing!", when: "in Colombia, with friends" },
+    { es: "Con mucho gusto.", en: "With pleasure.", when: "in Colombia, with anyone, all day long" },
+    { es: "Por mi parte no hay inconveniente.", en: "There's no problem on my side.", when: "at work, agreeing formally" },
+    { es: "Lamentablemente, no nos será posible atender su solicitud.", en: "Unfortunately, we will not be able to meet your request.", when: "a formal letter or email that refuses" }
+  ],
+  personal: {
+    prompt: "A friend asks you three favours for her wedding. Answer each on a different step: a glad yes, a yes with a condition, and a no.",
+    constraints: [
+      { type: "containsAny", words: ["de una", "con mucho gusto", "claro que sí", "eso está hecho"], label: "a glad yes: *¡de una!*, *con mucho gusto*" },
+      { type: "containsAny", words: ["siempre y cuando", "siempre que", "cuando tenga"], label: "a yes with a condition: *siempre y cuando*" },
+      { type: "containsAny", words: ["ni lo sueñes", "por nada del mundo", "qué pena contigo", "me temo que", "no tengo la menor intención", "ni de riesgos"], label: "a no: *qué pena contigo*, *ni lo sueñes*" }
+    ],
+    model: "¿Llevarte al aeropuerto? ¡De una! ¿Hacer el pastel? Bueno, siempre y cuando me ayudes con la decoración. ¿Bailar en la hora loca? Qué pena contigo, pero ni lo sueñes."
+  },
+  pitfalls: [
+    "*Veré qué puedo hacer* is not a yes: in an office it often means no, politely.",
+    "*Siempre y cuando* takes the subjunctive: *siempre y cuando sea corto*, not *es corto*.",
+    "*Faltaría más* is heard in Spain; in Colombia the glad yes is *con mucho gusto* or *¡claro que sí!*"
+  ]
+},
+
+"fn-permiso-prohibicion-c1": {
+  source: "merged",
+  hook: {
+    line: "You are seventeen, it is February in Barranquilla, and Carnival starts on Saturday. You need permission from your parents and a signed note for school, and you have already decided you are going.",
+    es: "¿Habría algún problema en que faltara el viernes de Carnaval?\nSí, pero que estés en la casa antes de la una.\nDigas lo que digas, voy a ir a la Batalla de Flores.",
+    en: "Would there be any problem with my missing school on the Friday of Carnival?\nYes, but be home before one.\nWhatever you say, I'm going to the Battle of Flowers."
+  },
+  examples: [
+    { es: "Mamá, ¿te importa que me quede donde Valentina el sábado después del desfile?", en: "Mum, do you mind if I stay at Valentina's on Saturday after the parade?" },
+    { es: "Sí, puedes ir, pero que tu hermano vaya contigo y que me escribas cuando lleguen.", en: "Yes, you can go, but your brother is to go with you and you're to text me when you get there." },
+    { es: "Digas lo que digas, este año voy a ir a la Batalla de Flores con mis amigos.", en: "Whatever you say, this year I'm going to the Battle of Flowers with my friends." }
+  ],
+  rule: "To ask, name the bother, not your wish: *¿Te molesta si abro?* with the indicative; *¿Te importa que* plus the subjunctive; *¿Habría algún problema en que* plus the *-ra* form. In writing: *Solicito autorización para...*\nTo say yes so plainly the question was not needed: *Eso ni se pregunta.* *Con toda confianza.*\nYes, with a condition: *Sí, pero que* plus the subjunctive: *pero que estés aquí a la una.*\nNo: *De ninguna manera.* In a notice: *Queda prohibido...*\nTo defy a no, the same verb twice: *Digas lo que digas, voy a ir.* *Pase lo que pase.* *Quieras o no.*",
+  readAndPick: [
+    { q: "What is the question about?", es: "¿Te importa que me quede donde Valentina?",
+      options: ["Whether her mum would mind", "Where Valentina lives", "What Valentina thinks"], answer: 0,
+      why: "*¿Te importa que* asks about the bother to the other person, not about your wish." },
+    { q: "Has she got permission?", es: "Sí, pero que estés en la casa antes de la una.",
+      options: ["No, not this year either", "Yes, but with a curfew", "Yes, with no limits at all"], answer: 1,
+      why: "*Sí, pero que* plus the subjunctive gives permission and sets the condition." },
+    { q: "Is her father asking for an answer?", es: "Eso ni se pregunta, claro que puedes quedarte.",
+      options: ["Yes, he needs time to think", "No, his answer is no", "No, the yes is obvious"], answer: 2,
+      why: "*Eso ni se pregunta* is a yes so plain that asking was unnecessary." },
+    { q: "Can anything change her mind?", es: "Digas lo que digas, voy a ir.",
+      options: ["Yes, one good argument", "No, nothing you could say", "Only what her father says"], answer: 1,
+      why: "The verb said twice, *digas lo que digas*, closes off every objection in advance." },
+    { q: "Where would you read this?", es: "Queda prohibido el ingreso de bebidas al estadio.",
+      options: ["On a notice by the gate", "In a text from your mother", "In a note to a friend"], answer: 0,
+      why: "*Queda prohibido* belongs to signs and regulations." }
+  ],
+  yourTurn: [
+    { en: "Mum, do you mind if I stay at Valentina's?", es: "Mamá, ¿te importa que me quede donde Valentina?", accept: ["Mamá, ¿te importa que me quede [donde Valentina|en la casa de Valentina|en casa de Valentina]?", "Mamá, ¿te molesta si me quedo [donde Valentina|en la casa de Valentina|en casa de Valentina]?"] },
+    { en: "Yes, but be home before one. (to your daughter)", es: "Sí, pero que estés en la casa antes de la una.", accept: ["Sí, pero que estés [en la casa|en casa] antes de la una."] },
+    { en: "That goes without saying.", es: "Eso ni se pregunta.", accept: [] },
+    { en: "Whatever you say, I'm going. (to your father)", es: "Digas lo que digas, voy a ir.", accept: ["Digas lo que digas, (yo) [voy a ir|voy]."] },
+    { en: "Would there be any problem with my leaving early?", es: "¿Habría algún problema en que saliera temprano?", accept: ["¿Habría algún [problema|inconveniente] en que [saliera|me fuera] [temprano|antes]?"] }
+  ],
+  translate: [
+    { en: "Do you mind if I open the window for a moment? It's very hot in here. (to someone you call usted)", es: "¿Le molesta si abro la ventana un momento? Hace mucho calor aquí.", accept: ["¿Le molesta si abro la ventana un momento? [Hace|Está haciendo] mucho calor aquí.", "¿Le importa que abra la ventana un momento? [Hace|Está haciendo] mucho calor aquí."] },
+    { en: "I request your permission to leave early on Friday for a medical appointment.", es: "Solicito su autorización para retirarme temprano el viernes por una cita médica.", accept: ["Solicito su [autorización|permiso] para [retirarme|salir] temprano el viernes por una cita médica."] },
+    { en: "Of course you can bring your cousin to the farm; that doesn't even need asking.", es: "Claro que puedes traer a tu primo a la finca; eso ni se pregunta.", accept: ["Claro que puedes traer a tu [primo|prima] a la finca; eso ni se pregunta."] },
+    { en: "Yes, you can use the car. But don't let your father find out, and bring it back washed.", es: "Sí, puedes usar el carro. Pero que no se entere tu papá, y que lo traigas lavado.", accept: ["Sí, puedes usar el carro. Pero que no se entere tu [papá|padre], y que lo traigas lavado.", "Sí, puedes usar el carro. Pero que tu [papá|padre] no se entere, y que lo traigas lavado."] },
+    { en: "Whatever happens on Saturday, we'll meet on the corner by the bakery at noon.", es: "Pase lo que pase el sábado, nos vemos en la esquina de la panadería al mediodía.", accept: [] },
+    { en: "Whether you like it or not, the costume has to be ready by Friday.", es: "Quieras o no, el disfraz tiene que estar listo para el viernes.", accept: ["Quieras o no, el disfraz tiene que estar listo [para el|el|antes del] viernes."] }
+  ],
+  register: [
+    { es: "¿Puedo salir?", en: "Can I go out?", when: "at home, to parents who know you" },
+    { es: "¿Te importa que salga un rato?", en: "Do you mind if I go out for a bit?", when: "with family or friends, more gently" },
+    { es: "¿Habría algún problema en que saliera temprano?", en: "Would there be any problem with my leaving early?", when: "at work, to your boss" },
+    { es: "Solicito autorización para ausentarme el viernes.", en: "I request permission to be absent on Friday.", when: "a written request to an institution" }
+  ],
+  personal: {
+    prompt: "Ask for permission for something you really want to do, get a yes with a condition, and then say you would have done it anyway.",
+    constraints: [
+      { type: "containsAny", words: ["te importa que", "le importa que", "te molesta si", "le molesta si", "habría algún problema", "solicito autorización"], label: "ask by naming the bother: *¿te importa que...?*" },
+      { type: "regex", pattern: "\\bpero que\\s", label: "a yes with a condition: *sí, pero que...*" },
+      { type: "regex", pattern: "\\b(digas|diga|digan|pase|quieras|quiera|quieran|hagas|haga) (lo que|o no)", label: "defy it in advance: *digas lo que digas*, *quieras o no*" }
+    ],
+    model: "Papá, ¿te importa que vaya al concierto de Carlos Vives? Sí, pero que vayas con tu prima y que me llames al salir. Igual iba a ir: digas lo que digas, es Carlos Vives."
+  },
+  pitfalls: [
+    "*¿Te importa que salgo?* is wrong: *te importa que* takes the subjunctive, *salga*; *te molesta si* takes *salgo*.",
+    "*Digas lo que digas* repeats the same verb in the same person: not *digas lo que dices*.",
+    "*Eso ni se pregunta* is a yes, not a refusal to answer."
+  ]
+},
+
+"fn-favor-objetos-ayuda-c1": {
+  source: "old",
+  hook: {
+    line: "The morning of your thesis presentation at the Universidad Nacional. Your laptop is dead, your slides are in English and your shift at the café starts in an hour, so you go down the corridor asking, each time a little more carefully.",
+    es: "¿Será que me prestas tu cargador un momentico?\n¿Tú no sabrás algo de inglés? Es que tengo las diapositivas en inglés.\nTe agradecería muchísimo que me cubrieras el turno.",
+    en: "Could you possibly lend me your charger for a moment?\nYou wouldn't know any English, would you? It's just that my slides are in English.\nI'd be really grateful if you covered my shift."
+  },
+  examples: [
+    { es: "¿Será que me prestas tu cargador un momentico? Se me descargó el computador y presento en una hora.", en: "Could you possibly lend me your charger for a moment? My laptop died and I present in an hour." },
+    { es: "Te agradecería muchísimo que me cubrieras el turno de la tarde; te lo devuelvo el sábado.", en: "I'd be really grateful if you covered my afternoon shift; I'll do yours on Saturday." },
+    { es: "¿Tú no sabrás algo de inglés? Es que tengo que corregir diez diapositivas antes de las once.", en: "You wouldn't know any English, would you? It's just that I have to fix ten slides before eleven." }
+  ],
+  rule: "A favour, a thing or help all climb the same ladder; only the verb changes.\n*¿Me prestas tu cargador?* Then, softer and very Colombian: *¿Será que me prestas...?* Then *¿Me harías el favor de...?* and, ceremonious, *¿Serías tan amable de...?*\n*¿Me regalas* plus a small thing asks for something you won't give back: *¿Me regalas un vaso de agua?*\nThanks in advance: *Te agradecería que* plus the *-ra* form.\n*¿Sería mucho pedir que...?* often carries a reproach.\nHidden: name the problem and let them offer. *¿Tú no sabrás inglés? Es que...*",
+  readAndPick: [
+    { q: "What is she really asking?", es: "¿Tú no sabrás algo de inglés? Es que tengo las diapositivas en inglés.",
+      options: ["How good his English really is", "For help with her slides", "Whether he has studied abroad"], answer: 1,
+      why: "Naming the problem, *es que...*, is the request: she wants help without asking for it." },
+    { q: "Will she give the water back?", es: "¿Me regalas un vaso de agua?",
+      options: ["Yes, she means to pay him back", "No, it is just a small favour", "Yes, she will bring another one"], answer: 1,
+      why: "In Colombia *¿me regalas...?* asks for something small you won't return; nobody expects payment." },
+    { q: "How does *¿será que...?* change the request?", es: "¿Será que me prestas tu cargador?",
+      options: ["It turns it into a guess", "It makes it far more urgent", "It makes it sound gentler"], answer: 2,
+      why: "*¿Será que...?* is a very Colombian softener: it leaves room to say no." },
+    { q: "What is behind this request?", es: "¿Sería mucho pedir que, por una vez, llegaras a tiempo?",
+      options: ["A complaint about the past", "A real doubt about the time", "Thanks for coming"], answer: 0,
+      why: "*¿Sería mucho pedir que...?* with *por una vez* is a reproach: it has happened before." },
+    { q: "When is the friend being thanked?", es: "Te agradecería muchísimo que me cubrieras el turno.",
+      options: ["Now, before she even agrees", "Never, it's really an order", "Only once the shift is over"], answer: 0,
+      why: "*Te agradecería que* thanks her in advance, which makes the request hard to refuse." }
+  ],
+  yourTurn: [
+    { en: "Could you possibly lend me your charger? (Colombia, to a friend)", es: "¿Será que me prestas tu cargador?", accept: ["¿Será que me [prestas|puedes prestar] tu cargador?"] },
+    { en: "Can I have a glass of water? (Colombia)", es: "¿Me regalas un vaso de agua?", accept: ["¿Me [regalas|regala] un vaso de agua?", "¿Me [regalas|regala] un vaso de agua, por favor?"] },
+    { en: "I'd be very grateful if you covered my shift. (to a friend)", es: "Te agradecería mucho que me cubrieras el turno.", accept: ["Te agradecería [mucho|muchísimo] que me cubrieras el turno."] },
+    { en: "You wouldn't know any English, would you? (to a friend)", es: "¿Tú no sabrás algo de inglés?", accept: ["¿(Tú) no sabrás (algo de) inglés?"] },
+    { en: "Would you do me the favour of going with me to the doctor? (to a friend)", es: "¿Me harías el favor de acompañarme al médico?", accept: ["¿Me [harías|haces] el favor de acompañarme al [médico|doctor]?"] }
+  ],
+  translate: [
+    { en: "You wouldn't happen to have a charger, would you? My phone died in the middle of the call.", es: "¿No tendrás por ahí un cargador? Se me descargó el celular en plena llamada.", accept: ["¿No tendrás por ahí un cargador? Se me descargó el celular en [plena llamada|la mitad de la llamada|medio de la llamada]."] },
+    { en: "Would it be too much to ask that, for once, you washed your plates after eating?", es: "¿Sería mucho pedir que, por una vez, lavaras tus platos después de comer?", accept: ["¿Sería mucho pedir que, [por una vez|para variar], lavaras tus platos después de comer?", "¿Sería mucho pedir que lavaras tus platos después de comer, por una vez?"] },
+    { en: "Could you possibly lend me your notes from Tuesday's class? I'll give them back tomorrow.", es: "¿Será que me prestas los apuntes de la clase del martes? Te los devuelvo mañana.", accept: ["¿Será que me [prestas|puedes prestar] los apuntes de la clase del martes? Te los devuelvo mañana.", "¿Me [prestas|puedes prestar] los apuntes de la clase del martes? Te los devuelvo mañana."] },
+    { en: "I'd be enormously grateful if you spoke to your cousin about the job at the bank.", es: "Te agradecería enormemente que hablaras con tu primo sobre lo del trabajo en el banco.", accept: ["Te agradecería [enormemente|muchísimo] que hablaras con tu primo sobre lo del trabajo en el banco.", "Te agradecería [enormemente|muchísimo] que hablaras con tu primo del trabajo en el banco."] },
+    { en: "Can you give me a hand with these boxes? They're heavy and the lift isn't working.", es: "¿Me echas una mano con estas cajas? Pesan mucho y el ascensor no sirve.", accept: ["¿Me [echas|das] una mano con estas cajas? Pesan mucho y el ascensor no [sirve|funciona].", "¿Me ayudas con estas cajas? Pesan mucho y el ascensor no [sirve|funciona]."] },
+    { en: "Would you be so kind as to pass me the salt and the sauce next to you? (formal)", es: "¿Sería tan amable de pasarme la sal y la salsa que tiene a su lado?", accept: ["¿Sería tan amable de pasarme la sal y la salsa que tiene a su lado?", "¿Me haría el favor de pasarme la sal y la salsa que tiene a su lado?"] }
+  ],
+  register: [
+    { es: "¿Me pasas la sal?", en: "Can you pass the salt?", when: "at the family table" },
+    { es: "¿Será que me pasas la sal?", en: "Could you possibly pass the salt?", when: "in Colombia, to someone you don't know well" },
+    { es: "¿Me regala la sal, por favor?", en: "Could I have the salt, please?", when: "in Colombia, to a waiter or a stranger" },
+    { es: "¿Sería tan amable de pasarme la sal?", en: "Would you be so kind as to pass the salt?", when: "a formal lunch, or teasing a friend" }
+  ],
+  personal: {
+    prompt: "Something has gone wrong on an important day. Ask three people for three things, a thing to borrow, some help and a favour, each more carefully than the last.",
+    constraints: [
+      { type: "containsAny", words: ["será que", "me prestas", "me regalas", "me harías el favor", "serías tan amable", "sería tan amable"], label: "a request on the ladder: *¿será que me prestas...?*" },
+      { type: "regex", pattern: "agradecería (mucho |muchísimo |enormemente )?que\\s", label: "thanks in advance: *te agradecería que*" },
+      { type: "minSentences", n: 3, label: "three requests or more" }
+    ],
+    model: "Juli, ¿será que me prestas tu cargador? Andrés, ¿me harías el favor de revisarme las diapositivas? Profe, le agradecería mucho que me diera cinco minutos más."
+  },
+  pitfalls: [
+    "*¿Me regalas un tinto?* in a café is a polite order, not a request for charity.",
+    "*Te agradecería que* takes the *-ra* form: *que me cubrieras*.",
+    "*Echar un cable* is Spain; in Colombia, *echar una mano* or *una ayudita*."
+  ]
+},
+
+"task-c1-verbos": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: about 250 words on something that got complicated, a dispute, a process or a change of mind, then one line for every verb saying why that form and not its neighbour. The model is about a meeting that started without you.",
+    es: "Cuando llegué, ya habían decidido.\nNadie me dijo que la reunión se hubiera adelantado.\nSi me lo hubieran dicho, habría cambiado el vuelo.",
+    en: "When I arrived, they had already decided.\nNobody told me the meeting had been brought forward.\nIf they had told me, I would have changed my flight."
+  },
+  examples: [
+    { es: "Cuando llegué a la oficina de Cali, ya habían decidido quién se quedaba con el proyecto.", en: "When I got to the Cali office, they had already decided who would keep the project." },
+    { es: "Nadie me dijo que la reunión se hubiera adelantado, aunque supongo que alguien lo habría intentado.", en: "Nobody told me the meeting had been brought forward, though I suppose someone must have tried." },
+    { es: "Si me lo hubieran dicho a tiempo, habría cambiado el vuelo y habría llegado a las ocho.", en: "If they had told me in time, I would have changed my flight and arrived at eight." }
+  ],
+  rule: "The task: about 250 words on something that got complicated, then one line per verb: why this form and not the nearest other.\n*It is the past* is not a reason; the preterite and the imperfect are both past. A reason says what you are doing with the event:\nclosing it off, *llegué*;\ndescribing around it, *se quedaba*;\nplacing it before another, *habían decidido*;\ndeclining to assert it, *que se hubiera adelantado*, after a *no*;\nguessing about it, *lo habría intentado*;\nimagining it otherwise, *si me lo hubieran dicho, habría cambiado*.\nThen read it aloud: every verb should be a choice you could defend.",
+  readAndPick: [
+    { q: "Why *hubiera adelantado* and not *había adelantado*?", es: "Nadie me dijo que la reunión se hubiera adelantado.",
+      options: ["It happened long ago", "Nobody vouches for it", "It is a polite form"], answer: 1,
+      why: "After a denied verb of saying, the subjunctive declines to assert it." },
+    { q: "What does *habían decidido* do?", es: "Cuando llegué, ya habían decidido.",
+      options: ["It puts the decision first", "It shows it is still open", "It is only a guess"], answer: 0,
+      why: "The pluperfect places the decision before the arrival." },
+    { q: "Is the speaker sure someone tried?", es: "Supongo que alguien lo habría intentado.",
+      options: ["Yes, she watched them try it", "Yes, somebody told her", "No, it is just her guess"], answer: 2,
+      why: "The conditional perfect guesses about the past: someone must have tried." },
+    { q: "Why *llegué* and not *llegaba*?", es: "Cuando llegué, ya habían decidido.",
+      options: ["One arrival, closed off", "A habit of arriving", "An arrival still to come"], answer: 0,
+      why: "The preterite closes off a single arrival; *llegaba* would describe a habit or a scene." },
+    { q: "Which form completes the pair?", es: "Si me lo hubieran dicho, ___ el vuelo.",
+      options: ["lo cambiaría", "habría cambiado", "había cambiado ya"], answer: 1,
+      why: "A past that didn't happen pairs *hubieran dicho* with *habría cambiado*." }
+  ],
+  yourTurn: [
+    { en: "When I arrived, they had already decided.", es: "Cuando llegué, ya habían decidido.", accept: ["Cuando llegué, ya (lo) habían decidido."] },
+    { en: "Nobody told me the meeting had been brought forward.", es: "Nadie me dijo que la reunión se hubiera adelantado.", accept: ["Nadie me dijo que la reunión se hubiera adelantado.", "Nadie me dijo que [habían|hubieran] adelantado la reunión."] },
+    { en: "I suppose someone must have tried.", es: "Supongo que alguien lo habría intentado.", accept: [] },
+    { en: "If they had told me, I would have changed the flight.", es: "Si me lo hubieran dicho, habría cambiado el vuelo.", accept: ["Si me lo hubieran dicho, [habría|hubiera] cambiado el vuelo."] }
+  ],
+  translate: [
+    { en: "When the lawyer arrived, the two brothers had already signed the agreement.", es: "Cuando llegó el abogado, los dos hermanos ya habían firmado el acuerdo.", accept: ["Cuando [llegó el abogado|el abogado llegó], los dos hermanos ya habían firmado el acuerdo."] },
+    { en: "My sister never said she didn't like the house; she said it was too far away.", es: "Mi hermana nunca dijo que la casa no le gustara; dijo que quedaba muy lejos.", accept: ["Mi hermana nunca dijo que [la casa no le gustara|no le gustara la casa]; dijo que quedaba muy lejos."] },
+    { en: "While we were discussing the price, the owner got a call and left the room.", es: "Mientras discutíamos el precio, el dueño recibió una llamada y salió de la sala.", accept: ["Mientras [discutíamos|negociábamos] el precio, el dueño recibió una llamada y salió de la sala.", "Mientras hablábamos del precio, el dueño recibió una llamada y salió de la sala."] },
+    { en: "I don't think they had bad intentions. They must have thought I already knew.", es: "No creo que tuvieran malas intenciones. Habrán pensado que yo ya lo sabía.", accept: ["No creo que [tuvieran|hayan tenido] malas intenciones. [Habrán pensado|Seguramente pensaron] que (yo) ya lo sabía."] },
+    { en: "If I had read the email in time, I wouldn't have gone all the way to Cali for nothing.", es: "Si hubiera leído el correo a tiempo, no habría ido hasta Cali para nada.", accept: ["Si hubiera leído el correo a tiempo, no [habría|hubiera] ido hasta Cali [para nada|en vano]."] },
+    { en: "In the end we settled it like this: he keeps the project and I keep the Bogotá clients.", es: "Al final quedamos así: él se queda con el proyecto y yo con los clientes de Bogotá.", accept: ["Al final [quedamos así|llegamos a un acuerdo]: él se queda con el proyecto y yo con los clientes de Bogotá."] }
+  ],
+  register: [
+    { es: "Cuando llegué, ya lo habían decidido.", en: "When I got there, they'd already decided.", when: "telling it to a friend" },
+    { es: "A mi llegada, la decisión ya había sido tomada.", en: "On my arrival, the decision had already been taken.", when: "a formal report or a written complaint" },
+    { es: "Llego, y ya lo habían decidido todo.", en: "So I get there, and they'd already decided everything.", when: "a story told for effect, among friends" }
+  ],
+  personal: {
+    prompt: "Write the opening of your account: three or four sentences with at least four different verb forms, including one *si* with *hubiera* and one denied *dijo que*.",
+    constraints: [
+      { type: "distinctTenses", n: 4, label: "four different verb forms or more" },
+      { type: "regex", pattern: "\\bsi [a-záéíóúñ ]*hubi(era|eras|éramos|eran)\\s", label: "a past that didn't happen: *si me lo hubieran dicho*" },
+      { type: "regex", pattern: "\\b(nadie|no|nunca) [a-záéíóúñ ]*dij(o|eron|e) que\\s", label: "a denied report: *nadie me dijo que*" }
+    ],
+    model: "Cuando llegué a la finca, mis tíos ya habían vendido el ganado. Nadie me dijo que estuvieran pensando en venderlo. Si me lo hubieran contado, habría hablado con ellos antes."
+  },
+  pitfalls: [
+    "*Es pasado* is never the reason: say what the form does, closing, describing, placing before, doubting, imagining.",
+    "*Si me lo habrían dicho* is wrong: after *si*, *hubieran*; *habría* goes on the other side of the comma.",
+    "Change the form only when the meaning changes: a story in one past is not a failure."
+  ]
+},
+
+/* ---- unit c1-u60 · Emotion at native pitch -------------------------------- */
+
+"fn-arrepentimiento-verguenza-c1": {
+  source: "old",
+  hook: {
+    line: "Last Saturday you gave the toast at your best friend's wedding in Cartagena, and in front of two hundred guests you called the bride by the name of the groom's ex. On Monday you tell your sister all about it, and about what you would do differently.",
+    es: "Me dio una pena horrible: la llamé Carolina delante de todos.\nNo debí tomarme ese tercer aguardiente.\nSi pudiera devolver el tiempo, habría escrito el discurso.",
+    en: "I was horribly embarrassed: I called her Carolina in front of everyone.\nI shouldn't have had that third aguardiente.\nIf I could turn back time, I'd have written the speech down."
+  },
+  examples: [
+    { es: "Me dio una pena horrible con los novios: llamé a Laura por el nombre de la ex.", en: "I felt horribly embarrassed in front of the couple: I called Laura by the ex's name." },
+    { es: "Me arrepiento de no haber escrito el discurso; improvisar con tres aguardientes fue un error.", en: "I regret not writing the speech down; improvising after three aguardientes was a mistake." },
+    { es: "Mi hermana dice que sintió pena ajena, y que quería que se la tragara la tierra.", en: "My sister says she cringed for me, and wanted the ground to swallow her up." }
+  ],
+  rule: "Regret what you did: *Me arrepiento de haber...* *No debí* plus the dictionary form: *No debí tomarme ese aguardiente.*\nRegret what you didn't do: *Me arrepiento de no haber...* *Debí haber escrito el discurso.* *Tenía que haberlo pensado.*\nImagine a second chance: *Si pudiera devolver el tiempo...* for one moment; *si volviera a nacer...* for a whole life.\nEmbarrassment, in Colombia: *me dio pena*, which is not sadness. *¡Qué oso!* among friends. *Quería que me tragara la tierra.* *Me puse rojo.*\nFor someone else's blunder: *pena ajena*, or *vergüenza ajena*.",
+  readAndPick: [
+    { q: "How did she feel?", es: "Me dio una pena horrible con los novios.",
+      options: ["Sad for the happy couple", "Mortified in front of them", "Sorry about bad news"], answer: 1,
+      why: "In Colombia *me dio pena* means embarrassment, not sadness." },
+    { q: "What does he regret?", es: "Me arrepiento de no haber escrito el discurso.",
+      options: ["Writing the whole speech out", "Giving a speech at all", "Not having written it down"], answer: 2,
+      why: "*De no haber* plus a participle regrets something you didn't do." },
+    { q: "Whose blunder made the sister cringe?", es: "Sentí pena ajena cuando la llamó Carolina.",
+      options: ["Her own, at the wedding", "Her brother's, not hers", "Nobody's, it was a joke"], answer: 1,
+      why: "*Pena ajena* is embarrassment you feel for someone else's blunder." },
+    { q: "How much does she want to change?", es: "Si volviera a nacer, estudiaría música.",
+      options: ["One evening", "Next week's plans", "Her whole life"], answer: 2,
+      why: "*Si volviera a nacer* imagines a whole life over; *devolver el tiempo* is for one moment." },
+    { q: "Is this a good thing to have done?", es: "No debí tomarme ese tercer aguardiente.",
+      options: ["No, she regrets it", "Yes, it was fun", "She doesn't remember"], answer: 0,
+      why: "*No debí* plus the dictionary form judges something you did as a mistake." }
+  ],
+  yourTurn: [
+    { en: "I shouldn't have had that third drink.", es: "No debí tomarme ese tercer trago.", accept: ["No debí tomarme ese tercer trago.", "No [debí|debería] haberme tomado ese tercer trago."] },
+    { en: "I regret not writing the speech.", es: "Me arrepiento de no haber escrito el discurso.", accept: [] },
+    { en: "I was so embarrassed! (Colombia)", es: "¡Me dio mucha pena!", accept: ["¡Me dio [mucha|tanta|muchísima] pena!"] },
+    { en: "If I could turn back time, I'd do it differently.", es: "Si pudiera devolver el tiempo, lo haría distinto.", accept: ["Si pudiera devolver el tiempo, lo haría [distinto|diferente|de otra manera]."] },
+    { en: "I felt embarrassed on his behalf.", es: "Sentí pena ajena.", accept: ["[Sentí|Me dio] [pena|vergüenza] ajena."] }
+  ],
+  translate: [
+    { en: "I regret having told her the truth like that, in front of her whole family.", es: "Me arrepiento de haberle dicho la verdad así, delante de toda su familia.", accept: ["Me arrepiento de haberle dicho la verdad así, [delante de|enfrente de|frente a] toda su familia."] },
+    { en: "I should have called my grandfather more often while he was still alive.", es: "Debí haber llamado a mi abuelo más seguido cuando todavía estaba vivo.", accept: ["[Debí haber llamado|Debí llamar|Tenía que haber llamado|Debería haber llamado] a mi abuelo más [seguido|a menudo] [cuando|mientras] todavía estaba vivo."] },
+    { en: "How embarrassing! I sent the message to the family group instead of to my sister. (Colombia, to a friend)", es: "¡Qué oso! Le mandé el mensaje al grupo de la familia en vez de a mi hermana.", accept: ["¡Qué [oso|pena]! (Le) mandé el mensaje al grupo de la familia en vez de a mi hermana."] },
+    { en: "When the teacher read my essay aloud, I went as red as a tomato. (a man speaking)", es: "Cuando la profesora leyó mi ensayo en voz alta, me puse rojo como un tomate.", accept: ["Cuando la profesora leyó mi ensayo en voz alta, me puse [rojo|colorado] como un tomate."] },
+    { en: "If I were born again, I would study music instead of law and live near the sea.", es: "Si volviera a nacer, estudiaría música en vez de derecho y viviría cerca del mar.", accept: ["Si volviera a nacer, estudiaría música en [vez|lugar] de derecho y viviría cerca del mar."] },
+    { en: "I'm not ashamed of having failed; I'm ashamed of not having tried.", es: "No me da vergüenza haber fracasado; me da vergüenza no haberlo intentado.", accept: ["No me da [vergüenza|pena] haber fracasado; me da [vergüenza|pena] no haberlo intentado."] }
+  ],
+  register: [
+    { es: "¡Qué oso!", en: "How embarrassing!", when: "in Colombia, with friends, for small blunders" },
+    { es: "Me dio mucha pena.", en: "I was so embarrassed.", when: "in Colombia, with anyone" },
+    { es: "Me dio mucha vergüenza.", en: "I was very embarrassed.", when: "anywhere in the Spanish-speaking world" },
+    { es: "Lamento profundamente lo ocurrido.", en: "I deeply regret what happened.", when: "a formal apology or a public statement" }
+  ],
+  personal: {
+    prompt: "Tell a friend about a moment you would like to undo. Write three lines: how embarrassing it was, what you should or shouldn't have done, and what you'd do with a second chance.",
+    constraints: [
+      { type: "containsAny", words: ["me dio pena", "me dio mucha pena", "qué oso", "qué pena", "vergüenza", "me puse rojo", "me puse roja", "tragara la tierra"], label: "how embarrassing it was: *me dio pena*, *¡qué oso!*" },
+      { type: "regex", pattern: "\\b(debí|debería|tenía que)\\s+(haber|[a-z]+r)|arrepiento de", label: "a regret: *no debí*, *me arrepiento de no haber*" },
+      { type: "regex", pattern: "\\bsi (pudiera|volviera|tuviera)\\s", label: "a second chance: *si pudiera devolver el tiempo*" }
+    ],
+    model: "¡Qué oso! En la entrevista llamé a la gerente por el nombre de la competencia. No debí ir sin preparar nada. Si pudiera devolver el tiempo, habría leído sobre la empresa la noche antes."
+  },
+  pitfalls: [
+    "In Colombia *me dio pena* means I was embarrassed; for sad, *me dio tristeza* or *me dio pesar*.",
+    "*Me arrepiento de no haber escrito*, with *de*: *me arrepiento no haber* drops a word.",
+    "*Si volviera a nacer* is a whole life; for one evening, *si pudiera devolver el tiempo*."
+  ]
+},
+
+"fn-tristeza-placer-c1": {
+  source: "old",
+  hook: {
+    line: "Your oldest friend Laura is moving to Canada, and tonight is her farewell in Medellín. You laugh until it hurts remembering school, and then the taxi comes. Two feelings in one night, and Spanish puts both of them in the body.",
+    es: "Nos morimos de la risa recordando al profe de química.\nLa pasamos delicioso hasta las tres.\nCuando se subió al taxi, se me arrugó el corazón.",
+    en: "We were dying of laughter remembering the chemistry teacher.\nWe had a wonderful time until three.\nWhen she got into the taxi, my heart sank."
+  },
+  examples: [
+    { es: "Nos morimos de la risa recordando la vez que el profe de química se quedó encerrado.", en: "We died laughing remembering the time the chemistry teacher got locked in." },
+    { es: "La pasamos delicioso toda la noche, bailando y comiendo empanadas hasta las tres de la mañana.", en: "We had a wonderful time all night, dancing and eating empanadas until three in the morning." },
+    { es: "Cuando se subió al taxi y me dijo adiós con la mano, se me arrugó el corazón.", en: "When she got into the taxi and waved goodbye, my heart sank." }
+  ],
+  rule: "Sadness goes to the chest: *se me arrugó el corazón*, very Colombian; *se me partió el alma*; *se me rompe el corazón*. The *se me* frame again: it happens to you.\n*Me da pesar* is Colombian for it makes me sad, or I feel for them: *¡Qué pesar con ella!* More formal: *me entristece que* plus the subjunctive.\nCrushed: *estoy destrozada*, *estoy deshecho*. Bleak: *la cosa está color de hormiga*.\nFun goes to the body too: *me morí de la risa*, *¡cómo nos reímos!* For a good time, Latin America says *la pasamos*: *de maravilla*, and in Colombia, *delicioso*.",
+  readAndPick: [
+    { q: "How did the evening go?", es: "La pasamos delicioso hasta las tres.",
+      options: ["The food was excellent", "They ate until three", "They had a great time"], answer: 2,
+      why: "*La pasamos delicioso* is Colombian for a wonderful time; it is not about the food." },
+    { q: "What happened to her heart?", es: "Cuando se subió al taxi, se me arrugó el corazón.",
+      options: ["It raced with fright", "It burned with anger", "It sank with sadness"], answer: 2,
+      why: "*Se me arrugó el corazón* is a Colombian way to say your heart sank." },
+    { q: "What does *¡qué pesar!* mean here?", es: "Se le murió el perro. ¡Qué pesar con ella!",
+      options: ["How heavy it must have been", "That was her fault", "She has my deep sympathy"], answer: 2,
+      why: "In Colombia *qué pesar* expresses sorrow or sympathy, not weight." },
+    { q: "How do things look?", es: "Con el cierre de la fábrica, la cosa está color de hormiga.",
+      options: ["Bright and full of hope", "Grim and rather bleak", "Neither good nor bad, just so-so"], answer: 1,
+      why: "*Color de hormiga* says the situation looks grim." },
+    { q: "How formal is this?", es: "Nos entristece profundamente que la sede de Cali cierre.",
+      options: ["Casual, between friends", "Formal, like a statement", "Street slang, from Medellín"], answer: 1,
+      why: "*Nos entristece que* plus the subjunctive is the formal way to say it saddens us." }
+  ],
+  yourTurn: [
+    { en: "My heart sank. (Colombia)", es: "Se me arrugó el corazón.", accept: [] },
+    { en: "We had a wonderful time. (Colombia)", es: "La pasamos delicioso.", accept: ["La pasamos [delicioso|de maravilla|muy bueno|súper bien]."] },
+    { en: "We died laughing.", es: "Nos morimos de la risa.", accept: ["Nos morimos de (la) risa."] },
+    { en: "I feel so sorry for her! (Colombia)", es: "¡Qué pesar con ella!", accept: ["¡Qué pesar con ella!", "¡Me da mucho pesar por ella!"] },
+    { en: "I'm devastated. (a woman speaking)", es: "Estoy destrozada.", accept: ["Estoy [destrozada|deshecha]."] }
+  ],
+  translate: [
+    { en: "It breaks my heart to see my grandfather so alone since my grandmother died.", es: "Se me rompe el corazón ver a mi abuelo tan solo desde que murió mi abuela.", accept: ["Se me [rompe|parte|arruga] el corazón ver a mi abuelo tan solo desde que [murió mi abuela|mi abuela murió|se murió mi abuela]."] },
+    { en: "How we laughed at your uncle's stories! I hadn't laughed like that in years.", es: "¡Cómo nos reímos con las historias de tu tío! Hacía años que no me reía así.", accept: ["¡Cómo nos reímos con las [historias|anécdotas] de tu tío! Hacía años que no me reía así."] },
+    { en: "It saddens us deeply that the theatre is closing its doors after fifty years. (formal)", es: "Nos entristece profundamente que el teatro cierre sus puertas después de cincuenta años.", accept: ["Nos entristece profundamente que el teatro cierre sus puertas [después de|tras] cincuenta años."] },
+    { en: "We had a wonderful time at the farm. The bad part was the goodbye: my heart sank when I saw my mother cry.", es: "La pasamos delicioso en la finca. Lo malo fue la despedida: se me arrugó el corazón al ver llorar a mi mamá.", accept: ["La pasamos [delicioso|de maravilla] en la finca. Lo malo fue la despedida: se me arrugó el corazón [al ver|cuando vi] llorar a mi mamá."] },
+    { en: "Since the factory closed, things in town have looked grim. (Colombia)", es: "Desde que cerró la fábrica, la cosa en el pueblo está color de hormiga.", accept: ["Desde que cerró la fábrica, [la cosa en el pueblo|en el pueblo la cosa] está color de hormiga."] },
+    { en: "I've been devastated since she left, and I can't even listen to our song. (a man speaking)", es: "Estoy destrozado desde que se fue, y ni siquiera puedo oír nuestra canción.", accept: ["Estoy [destrozado|deshecho] desde que se fue, y ni siquiera puedo [oír|escuchar] nuestra canción."] }
+  ],
+  register: [
+    { es: "Me morí de la risa.", en: "I died laughing.", when: "with friends, about anything funny" },
+    { es: "Me dio mucha risa.", en: "It made me laugh a lot.", when: "anywhere, warm but not slangy" },
+    { es: "Me pareció muy divertido.", en: "I found it very amusing.", when: "at work, or in writing" },
+    { es: "Nos entristece profundamente su partida.", en: "We are deeply saddened by her departure.", when: "a formal message or a speech" }
+  ],
+  personal: {
+    prompt: "Describe a night or a day that was both happy and sad: one line for the fun, one for the moment it hurt.",
+    constraints: [
+      { type: "containsAny", words: ["la pasamos", "morimos de la risa", "morí de la risa", "nos reímos", "de maravilla", "delicioso"], label: "the fun: *la pasamos delicioso*, *nos morimos de la risa*" },
+      { type: "regex", pattern: "se me (arrugó|partió|rompió|arruga|parte|rompe|encogió)\\s|pesar|destrozad|deshech", label: "the sad moment: *se me arrugó el corazón*, *qué pesar*" }
+    ],
+    model: "En el grado de mi hermano la pasamos delicioso: nos morimos de la risa con el discurso de mi papá. Pero cuando vi la silla vacía de mi abuela, se me arrugó el corazón."
+  },
+  pitfalls: [
+    "*Lo pasamos bien* is Spain; in Colombia, *la pasamos bien*, with *la*.",
+    "*Me da pesar* is sadness or sympathy, not regret: for regret, *me arrepiento*.",
+    "*Me morí de la risa* is for friends; in a report, *me pareció muy divertido*."
+  ]
+},
+
+"fn-miedo-nerviosismo-c1": {
+  source: "old",
+  hook: {
+    line: "You are flying from Bogotá to Leticia, in the Amazon, on a small plane. You were nervous before you boarded, and over the jungle a storm makes it worse. That night you tell your brother all about it.",
+    es: "Antes de subir tenía los nervios de punta.\nCon la tormenta se me pusieron los pelos de punta.\n¡Qué susto tan tenaz! Tenía el corazón en la boca.",
+    en: "Before boarding my nerves were on edge.\nIn the storm my hair stood on end.\nWhat a terrible fright! My heart was in my mouth."
+  },
+  examples: [
+    { es: "Antes de subir a la avioneta tenía los nervios de punta y me sudaban las manos.", en: "Before getting on the small plane my nerves were on edge and my hands were sweating." },
+    { es: "Cuando el avión cayó de golpe sobre la selva, se me pusieron los pelos de punta.", en: "When the plane suddenly dropped over the jungle, my hair stood on end." },
+    { es: "Me pegué un susto tenaz, pero el piloto aterrizó como si nada en medio del aguacero.", en: "I got a terrible fright, but the pilot landed as if nothing were happening in the middle of the downpour." }
+  ],
+  rule: "Fear has a scale: *me inquieta*, it worries me a little; *me da miedo*; *me aterra*, it terrifies me. When the fear is of something that could happen, *que* plus the subjunctive: *Me da miedo que se mueva tanto.*\nA sudden fright: *¡Qué susto!* *Me pegué un susto tenaz*, very Colombian.\nFear in the body, with *se me*: *se me pusieron los pelos de punta*, *se me puso la piel de gallina*. In the chest: *tenía el corazón en la boca*.\nNerves before something: *tengo los nervios de punta*, *me sudaban las manos*, *me temblaban las piernas*, *se me hizo un nudo en la garganta*.\nAt the limit: *¡Me va a dar algo!*",
+  readAndPick: [
+    { q: "How scared is she?", es: "Me inquieta un poco que el piloto no diga nada.",
+      options: ["Uneasy, but only slightly", "Utterly and totally terrified", "Not worried in the very least"], answer: 0,
+      why: "*Me inquieta* is the low end of the scale: a little uneasy." },
+    { q: "Did she decide to react this way?", es: "Se me pusieron los pelos de punta.",
+      options: ["Yes, on purpose", "Yes, to scare her brother", "No, her body just did it"], answer: 2,
+      why: "*Se me* frames it as something the body did on its own." },
+    { q: "What does *tenaz* add here?", es: "Me pegué un susto tenaz.",
+      options: ["That it was only a tiny scare", "That it was a huge one", "That it lasted for days on end"], answer: 1,
+      why: "In Colombia *tenaz* intensifies: a terrible fright, a tough day." },
+    { q: "When were her nerves on edge?", es: "Antes de subir tenía los nervios de punta.",
+      options: ["Before she boarded", "Once they had landed", "During the storm"], answer: 0,
+      why: "*Antes de subir* places the nerves before boarding." },
+    { q: "What is she afraid of?", es: "Me da miedo que el vuelo se cancele otra vez.",
+      options: ["Small planes", "The pilot turning up late", "The flight being cancelled"], answer: 2,
+      why: "*Me da miedo que* plus the subjunctive: the fear is of something that could happen." }
+  ],
+  yourTurn: [
+    { en: "My hair stood on end.", es: "Se me pusieron los pelos de punta.", accept: [] },
+    { en: "I got a terrible fright! (Colombia)", es: "¡Me pegué un susto tenaz!", accept: ["¡Me pegué [un susto tenaz|tremendo susto|un susto horrible]!"] },
+    { en: "My nerves are on edge.", es: "Tengo los nervios de punta.", accept: ["[Tengo|Estoy con] los nervios de punta."] },
+    { en: "I'm afraid the flight will be cancelled.", es: "Me da miedo que se cancele el vuelo.", accept: ["Me da miedo que [se cancele el vuelo|el vuelo se cancele|cancelen el vuelo]."] },
+    { en: "My heart was in my mouth.", es: "Tenía el corazón en la boca.", accept: [] }
+  ],
+  translate: [
+    { en: "Speaking in public terrifies me: my legs shake and I get a lump in my throat.", es: "Me aterra hablar en público: me tiemblan las piernas y se me hace un nudo en la garganta.", accept: ["[Me aterra|Me da pánico] hablar en público: me tiemblan las piernas y se me hace un nudo en la garganta."] },
+    { en: "What a fright you gave me! I thought there was nobody in the house.", es: "¡Qué susto me diste! Pensé que no había nadie en la casa.", accept: ["¡Qué susto me diste! [Pensé|Creí|Pensaba] que no había nadie en la casa."] },
+    { en: "I'm afraid my son will get lost in the city, because he doesn't know Bogotá.", es: "Me da miedo que mi hijo se pierda en la ciudad, porque no conoce Bogotá.", accept: ["[Me da miedo|Me preocupa] que mi hijo se pierda en la ciudad, porque no conoce Bogotá."] },
+    { en: "The day before the interview I was a bundle of nerves. My hands were sweating and I couldn't sleep. (a woman speaking)", es: "El día antes de la entrevista estaba muerta de los nervios. Me sudaban las manos y no podía dormir.", accept: ["[El día antes de|La víspera de] la entrevista estaba muerta de (los) nervios. Me sudaban las manos y no podía dormir."] },
+    { en: "When I heard footsteps in the empty house, I got goosebumps.", es: "Cuando oí pasos en la casa vacía, se me puso la piel de gallina.", accept: ["Cuando [oí|escuché] pasos en la casa vacía, se me puso la piel de gallina."] },
+    { en: "With so much work and the move on top of it, I feel like I'm going to have a fit.", es: "Con tanto trabajo y el trasteo encima, siento que me va a dar algo.", accept: ["Con tanto trabajo y (con) el trasteo encima, (siento que) me va a dar algo."] }
+  ],
+  register: [
+    { es: "¡Qué susto tan tenaz!", en: "What a terrible fright!", when: "in Colombia, with friends" },
+    { es: "Estoy muerta de los nervios.", en: "I'm a bundle of nerves.", when: "with friends and family" },
+    { es: "Estoy muy nerviosa.", en: "I'm very nervous.", when: "with anyone, plain and neutral" },
+    { es: "Me siento muy ansioso.", en: "I feel very anxious.", when: "to a doctor, or in writing" }
+  ],
+  personal: {
+    prompt: "Describe something that frightened you or made you nervous: how your body reacted before, and the moment of the fright itself.",
+    constraints: [
+      { type: "regex", pattern: "se me (puso|pusieron|hizo|pone|ponen|hace)\\s|me (sudaban|temblaban|sudan|tiemblan)\\s|nervios de punta|corazón en la boca", label: "the body reacting: *me sudaban las manos*, *se me pusieron los pelos de punta*" },
+      { type: "containsAny", words: ["susto", "me da miedo", "me dio miedo", "me aterra", "me aterró", "pánico"], label: "the fright: *¡qué susto!*, *me aterra*" }
+    ],
+    model: "Antes del examen de manejo me sudaban las manos y me temblaban las piernas. Cuando un perro se atravesó en la calle, me pegué un susto tenaz."
+  },
+  pitfalls: [
+    "*Estoy como un flan* is Spain; in Colombia, *estoy muerta de los nervios* or *tengo los nervios de punta*.",
+    "*Me da miedo que* takes the subjunctive: *que se cancele*, not *que se cancela*.",
+    "*Tenaz* in Colombia intensifies anything hard: *un susto tenaz*, *un trancón tenaz*."
+  ]
+},
+
+"fn-estado-animo-alegria-c1": {
+  source: "merged",
+  hook: {
+    line: "For weeks your friend Mariana has been quiet and tired, waiting to hear about a master's place in Barcelona. Today she walks into the café looking different, and before she can sit down you ask what is going on.",
+    es: "¿Y esa cara? ¿Pasó algo?\n¡Me aceptaron! No quepo de la felicidad.\nAy, Mari, me alegra muchísimo que te haya salido.",
+    en: "What's with that face? Did something happen?\nThey accepted me! I'm over the moon.\nOh, Mari, I'm so glad it worked out for you."
+  },
+  examples: [
+    { es: "¿Qué tal ese ánimo? Te noto rara desde hace días, y no me has contado nada.", en: "How are your spirits? You've seemed off for days, and you haven't told me anything." },
+    { es: "¡Me aceptaron en la maestría! No quepo de la felicidad, todavía no me lo creo.", en: "They accepted me for the master's! I'm over the moon, I still can't believe it." },
+    { es: "Me alegra muchísimo que te haya salido, y tus papás deben de estar orgullosísimos de ti.", en: "I'm so glad it worked out for you, and your parents must be terribly proud of you." }
+  ],
+  rule: "Asking about someone's mood climbs from casual to pressing: *¿Qué tal ese ánimo?* *¿Cómo vas con lo de la beca?* *¿Te pasa algo? Te noto rara.* *¿Y esa cara?* asks from what you can see. *¿Se puede saber qué te pasa?* insists, and sounds impatient.\nJoy, from calm to bursting: *estoy de muy buen genio*; *estoy feliz de la vida*; *no quepo de la felicidad*; *salté de la alegría*.\nFor someone else's news, the subjunctive: *Me alegra muchísimo que te haya salido.* *Estamos orgullosos de que* plus the subjunctive.\nFormal: *Tengo el gusto de presentarles a...*",
+  readAndPick: [
+    { q: "What prompts the question?", es: "¿Y esa cara? ¿Pasó algo?",
+      options: ["Something written on her face", "Her weeks away", "A question she asked first"], answer: 0,
+      why: "*¿Y esa cara?* asks from what you can see on someone's face." },
+    { q: "How does this question sound?", es: "¿Se puede saber qué te pasa?",
+      options: ["Light and very casual", "Formal and extremely polite", "Pressing, a bit impatient"], answer: 2,
+      why: "*¿Se puede saber...?* insists: the speaker's patience is wearing thin." },
+    { q: "How happy is she?", es: "No quepo de la felicidad.",
+      options: ["Fairly content with it", "Bursting with joy", "Calm and relaxed"], answer: 1,
+      why: "*No caber de la felicidad*: so happy she doesn't fit inside herself." },
+    { q: "Why *haya salido*?", es: "Me alegra muchísimo que te haya salido.",
+      options: ["She doubts it happened", "She's reacting to the news", "It is still in the future"], answer: 1,
+      why: "*Me alegra que* reacts to a fact, so the subjunctive follows." },
+    { q: "Where would you hear this?", es: "Tengo el gusto de presentarles a la nueva directora.",
+      options: ["At an official event", "At a cousin's barbecue", "In a quick text"], answer: 0,
+      why: "*Tengo el gusto de* belongs to formal introductions and speeches." }
+  ],
+  yourTurn: [
+    { en: "What's with that face? Did something happen?", es: "¿Y esa cara? ¿Pasó algo?", accept: ["¿[Y esa cara|Por qué esa cara]? ¿[Pasó|Te pasó] algo?"] },
+    { en: "I'm over the moon.", es: "No quepo de la felicidad.", accept: ["No quepo de la [felicidad|alegría].", "Estoy feliz de la vida."] },
+    { en: "I'm so glad it worked out for you. (to a friend)", es: "Me alegra muchísimo que te haya salido.", accept: ["Me alegra [muchísimo|mucho] que te haya salido (bien).", "Me alegro [muchísimo|mucho] de que te haya salido (bien)."] },
+    { en: "Is something wrong? You seem off. (to a woman)", es: "¿Te pasa algo? Te noto rara.", accept: ["¿Te pasa algo? Te noto [rara|extraña]."] },
+    { en: "We're proud that you work here. (to a friend)", es: "Estamos orgullosos de que trabajes aquí.", accept: ["Estamos [orgullosos|orgullosas] de que trabajes aquí."] }
+  ],
+  translate: [
+    { en: "How's it going with the scholarship? Have you heard anything from the university yet?", es: "¿Cómo vas con lo de la beca? ¿Ya te dijeron algo de la universidad?", accept: ["¿Cómo vas con lo de la beca? ¿Ya te dijeron algo [de la|desde la] universidad?", "¿Cómo vas con lo de la beca? ¿Ya te dijo algo la universidad?"] },
+    { en: "When they gave her the news, she jumped for joy in the middle of the office.", es: "Cuando le dieron la noticia, saltó de la alegría en plena oficina.", accept: ["Cuando le dieron la noticia, [saltó|se puso a saltar|brincó] de (la) alegría en [plena oficina|la mitad de la oficina|medio de la oficina]."] },
+    { en: "Would you mind telling me what's wrong with you? You haven't said a word all morning.", es: "¿Se puede saber qué te pasa? No has dicho ni una palabra en toda la mañana.", accept: ["¿Se puede saber qué te pasa? No [has dicho|dijiste] ni una palabra en toda la mañana."] },
+    { en: "I'm in a really good mood today: I got paid, it's Friday and it isn't raining. (Colombia)", es: "Hoy estoy de muy buen genio: me pagaron, es viernes y no llueve.", accept: ["Hoy estoy de muy buen [genio|humor]: me pagaron, es viernes y no llueve."] },
+    { en: "I have the pleasure of introducing the new director of the museum, Doctor Elena Ruiz.", es: "Tengo el gusto de presentarles a la nueva directora del museo, la doctora Elena Ruiz.", accept: ["Tengo el [gusto|placer] de presentarles a la nueva directora del museo, la doctora Elena Ruiz."] },
+    { en: "My grandmother is over the moon: all her grandchildren came to celebrate her ninetieth.", es: "Mi abuela está feliz de la vida: todos sus nietos vinieron a celebrarle los noventa.", accept: ["Mi abuela [está feliz de la vida|no cabe de la felicidad]: todos sus nietos vinieron a celebrarle los noventa (años)."] }
+  ],
+  register: [
+    { es: "¡Estoy feliz de la vida!", en: "I'm on top of the world!", when: "with friends and family" },
+    { es: "Estoy muy contenta.", en: "I'm very happy.", when: "with anyone, plain and warm" },
+    { es: "Me siento muy satisfecho con el resultado.", en: "I am very pleased with the result.", when: "at work, or in an interview" },
+    { es: "Tengo el gusto de presentarles a...", en: "It is my pleasure to introduce...", when: "opening a talk or an official event" }
+  ],
+  personal: {
+    prompt: "A friend has been down for weeks and today looks happy. Write the exchange: how you ask, how they tell you the news, and how you react to it.",
+    constraints: [
+      { type: "containsAny", words: ["esa cara", "qué tal ese ánimo", "te pasa algo", "te noto", "cómo vas con", "se puede saber"], label: "how you ask: *¿y esa cara?*, *te noto rara*" },
+      { type: "containsAny", words: ["no quepo", "feliz de la vida", "salté de la alegría", "saltar de la alegría", "buen genio"], label: "their joy: *no quepo de la felicidad*" },
+      { type: "subjunctiveAfter", trigger: "alegra", label: "your reaction: *me alegra mucho que* plus the subjunctive" }
+    ],
+    model: "¿Y esa cara? ¿Te pasó algo? ¡Me dieron el trabajo en Cali! No quepo de la felicidad. ¡Me alegra muchísimo que te lo hayan dado!"
+  },
+  pitfalls: [
+    "In Colombia *estar de buenas* means to be lucky; for a good mood, *estar de buen genio*.",
+    "*Me alegra que te ha salido* is wrong: reacting to news takes the subjunctive, *te haya salido*.",
+    "*Ser orgulloso* is to be arrogant; proud of someone is *estar orgulloso de*."
+  ]
+},
+
+"fn-decepcion-resignacion-c1": {
+  source: "old",
+  hook: {
+    line: "You have had tickets for six months to see your favourite band at the Movistar Arena in Bogotá, and the hotel is paid. The day before, the concert is cancelled. On the group chat, everyone goes through the disappointment and out the other side.",
+    es: "¡Qué embarrada! Llevaba seis meses esperando.\nEsto no es lo que nos prometieron.\nYa qué, toca esperar a que lo reprogramen.",
+    en: "What a letdown! I'd been waiting six months.\nThis isn't what they promised us.\nOh well, we'll have to wait for them to reschedule it."
+  },
+  examples: [
+    { es: "¡Qué embarrada! Llevaba seis meses esperando ese concierto y lo cancelan un día antes.", en: "What a letdown! I'd been waiting six months for that concert and they cancel it the day before." },
+    { es: "Esto no es para nada lo que nos prometieron cuando compramos las boletas en mayo.", en: "This is nothing like what they promised us when we bought the tickets in May." },
+    { es: "Ya qué, toca esperar a que lo reprogramen, y que sea lo que Dios quiera.", en: "Oh well, we'll have to wait for them to reschedule it, and whatever will be, will be." }
+  ],
+  rule: "Disappointment, from mild to sharp: *¡qué pesar!*; *¡qué embarrada!*, very Colombian; *¡qué decepción!* Measured against what you expected: *Esto no es lo que me esperaba.* *Esperaba mucho más.*\nResignation, once nothing can be done: *Ya qué*, Colombian for oh well. *Ni modo.* *Qué le vamos a hacer.* *Toca esperar*, with Colombian *tocar*.\nHanding it over: *Que sea lo que Dios quiera.* It is a fixed phrase, not a statement of faith.\nThe process of accepting: *Me resigné a perder la plata del hotel.*\nIn writing: *Lamentamos informarles que...*",
+  readAndPick: [
+    { q: "How does she feel about the news?", es: "¡Qué embarrada! Llevaba seis meses esperando.",
+      options: ["Relieved that it's over", "Badly let down by it", "Mildly curious"], answer: 1,
+      why: "*¡Qué embarrada!* is a Colombian cry of disappointment: what a letdown." },
+    { q: "What is she comparing?", es: "Esto no es lo que nos prometieron.",
+      options: ["Two shows she went to", "Two different hotel prices", "The facts and the promise"], answer: 2,
+      why: "*Esto no es lo que...* measures what happened against what was expected." },
+    { q: "What does *ya qué* express?", es: "Ya qué, toca esperar.",
+      options: ["Anger at the band and the venue", "Acceptance, oh well", "A question about time"], answer: 1,
+      why: "In Colombia *ya qué* is an oh well: nothing more can be done." },
+    { q: "Is the speaker making a religious claim?", es: "Que sea lo que Dios quiera.",
+      options: ["No, it's a set phrase", "Yes, she is praying", "Yes, she's thanking God"], answer: 0,
+      why: "*Que sea lo que Dios quiera* is a fixed phrase of resignation, said by believers and others." },
+    { q: "What has she accepted?", es: "Me resigné a perder la plata del hotel.",
+      options: ["Losing the hotel money", "Getting a full refund", "A cheaper hotel"], answer: 0,
+      why: "*Resignarse a* plus the dictionary form: accepting something it took time to accept." }
+  ],
+  yourTurn: [
+    { en: "What a letdown! (Colombia)", es: "¡Qué embarrada!", accept: ["¡Qué embarrada!", "¡Qué decepción!"] },
+    { en: "This isn't what I expected.", es: "Esto no es lo que me esperaba.", accept: ["Esto no es lo que (me) esperaba."] },
+    { en: "Oh well, we'll have to wait. (Colombia)", es: "Ya qué, toca esperar.", accept: ["[Ya qué|Ni modo], (nos) toca esperar."] },
+    { en: "Whatever will be, will be.", es: "Que sea lo que Dios quiera.", accept: [] },
+    { en: "I've resigned myself to losing the money.", es: "Me resigné a perder la plata.", accept: ["Me [resigné|he resignado] a perder [la plata|el dinero]."] }
+  ],
+  translate: [
+    { en: "What a disappointing match! We expected much more from the national team against such a weak side.", es: "¡Qué decepción de partido! Esperábamos mucho más de la Selección contra un equipo tan débil.", accept: ["¡[Qué decepción de partido|Qué partido tan decepcionante]! Esperábamos mucho más de la Selección contra un equipo tan débil."] },
+    { en: "There's nothing more to be done; we'll have to accept the conditions and start again. (Colombia)", es: "Ya no hay nada que hacer; toca aceptar las condiciones y empezar de nuevo.", accept: ["(Ya) no hay nada que hacer; [toca|hay que|nos toca] aceptar las condiciones y empezar de [nuevo|cero]."] },
+    { en: "They cancelled the flight because of the strike. Oh well: we'll have to spend another night in Cartagena.", es: "Cancelaron el vuelo por el paro. Ni modo: nos toca pasar otra noche en Cartagena.", accept: ["[Cancelaron el vuelo|El vuelo se canceló] por el paro. [Ni modo|Ya qué]: nos toca pasar otra noche en Cartagena."] },
+    { en: "It took me years to resign myself to not having children, but today I'm at peace.", es: "Me costó años resignarme a no tener hijos, pero hoy estoy en paz.", accept: ["Me [costó|tomó] años resignarme a no tener hijos, pero hoy estoy en paz."] },
+    { en: "We have done everything we could; now, whatever will be, will be.", es: "Hemos hecho todo lo posible; ahora, que sea lo que Dios quiera.", accept: ["[Hemos hecho|Hicimos] todo lo posible; ahora, que sea lo que [Dios quiera|tenga que ser]."] },
+    { en: "We regret to inform you that the event has been cancelled for reasons beyond our control. (formal)", es: "Lamentamos informarles que el evento ha sido cancelado por motivos ajenos a nuestra voluntad.", accept: ["Lamentamos informarles que el evento [ha sido cancelado|fue cancelado|se canceló] por motivos ajenos a nuestra voluntad."] }
+  ],
+  register: [
+    { es: "¡Qué embarrada!", en: "What a letdown!", when: "in Colombia, among friends" },
+    { es: "¡Qué decepción!", en: "What a disappointment!", when: "anywhere, in speech" },
+    { es: "Ni modo.", en: "Oh well.", when: "everyday speech, across much of Latin America" },
+    { es: "Lamentamos informarles que...", en: "We regret to inform you that...", when: "a formal notice or email" }
+  ],
+  personal: {
+    prompt: "Something you were looking forward to fell through. Write three lines: the disappointment, what you had expected, and how you came to accept it.",
+    constraints: [
+      { type: "containsAny", words: ["qué embarrada", "qué decepción", "qué pesar", "qué desilusión"], label: "the disappointment: *¡qué embarrada!*" },
+      { type: "containsAny", words: ["lo que me esperaba", "lo que esperaba", "esperaba mucho más", "lo que nos prometieron"], label: "what you expected: *no es lo que me esperaba*" },
+      { type: "containsAny", words: ["ya qué", "ni modo", "qué le vamos a hacer", "toca", "lo que dios quiera", "me resigné", "resignarme"], label: "acceptance: *ya qué*, *ni modo*, *toca*" }
+    ],
+    model: "¡Qué embarrada! Nos cancelaron el paseo a San Gil por la lluvia. Esperaba mucho más de ese fin de semana. Ya qué, toca dejarlo para enero."
+  },
+  pitfalls: [
+    "*¡Vaya, hombre!* is Spain; in Colombia the letdown is *¡qué embarrada!* or *¡qué pesar!*",
+    "*Toca* here is not touching: *toca esperar* means we'll have to wait.",
+    "*Me resigné a* takes *a* and the dictionary form: *me resigné a perderla*."
+  ]
+},
+
+"fn-empatia-alivio-esperanza-c1": {
+  source: "merged",
+  hook: {
+    line: "Your friend Juliana's father has had heart surgery at a hospital in Cali, and she has been in the waiting room since seven. You keep her company by phone all day: first you listen, then the news comes, then you hope with her.",
+    es: "Me imagino lo que estás pasando. No me extraña que estés agotada.\n¡Ya salió de cirugía! ¡Qué alivio!\nCruzo los dedos para que se recupere pronto.",
+    en: "I can imagine what you're going through. No wonder you're exhausted.\nHe's out of surgery! What a relief!\nI've got my fingers crossed that he recovers soon."
+  },
+  examples: [
+    { es: "Me imagino lo que estás pasando; a mí me pasó algo muy parecido con mi mamá.", en: "I can imagine what you're going through; something very similar happened to me with my mum." },
+    { es: "¡Menos mal que salió bien de la cirugía! Me quitaste un peso de encima con esa noticia.", en: "Thank goodness he came through the surgery well! You took a weight off my mind with that news." },
+    { es: "¡Ya era hora de que te dieran noticias! Llevabas siete horas en esa sala de espera.", en: "About time they gave you some news! You'd been in that waiting room for seven hours." }
+  ],
+  rule: "Empathy first, advice later. *Me imagino lo que estás pasando.* *No me extraña que estés agotada*, with the subjunctive, says her reaction makes sense. *A mí me pasó algo parecido.* *Me pongo en tus zapatos.*\nRelief: *¡Qué alivio!* *¡Menos mal!* *Me quitaste un peso de encima.* When it took too long: *¡Ya era hora de que te dieran noticias!*, with the *-ra* form.\nHope: *Ojalá* or *Dios quiera que* plus the subjunctive. *Cruzo los dedos para que se recupere.* *Toco madera.* Formal: *Confiamos en que se recupere pronto.*\n*Te compadezco* can sound distant: friends prefer the others.",
+  readAndPick: [
+    { q: "What is she telling her friend?", es: "No me extraña que estés agotada.",
+      options: ["You shouldn't be so tired", "It's a surprise you're tired", "It makes sense you're tired"], answer: 2,
+      why: "*No me extraña que* plus the subjunctive tells someone their reaction makes sense." },
+    { q: "How long did the wait feel?", es: "¡Ya era hora de que te dieran noticias!",
+      options: ["Far too long", "Surprisingly short", "About right"], answer: 0,
+      why: "*Ya era hora* adds impatience to relief: it took too long." },
+    { q: "What does *cruzo los dedos* express?", es: "Cruzo los dedos para que se recupere pronto.",
+      options: ["A promise to pray", "Hope that it goes well", "Doubts about it"], answer: 1,
+      why: "*Cruzo los dedos para que* plus the subjunctive is hope, half superstition." },
+    { q: "What did the news do for her?", es: "Me quitaste un peso de encima.",
+      options: ["It made her much more worried", "It made her a bit cross", "It took a weight off her"], answer: 2,
+      why: "*Quitarse un peso de encima* is relief: a worry lifted." },
+    { q: "Which answer sounds most distant?", es: "Mi papá está en el hospital.",
+      options: ["Te compadezco mucho.", "Me imagino lo que sientes.", "Ay, lo siento."], answer: 0,
+      why: "*Te compadezco* is correct but can sound distant, even condescending, between friends." }
+  ],
+  yourTurn: [
+    { en: "I can imagine what you're going through. (to a friend)", es: "Me imagino lo que estás pasando.", accept: ["Me imagino lo que estás [pasando|viviendo]."] },
+    { en: "No wonder you're exhausted. (to a woman)", es: "No me extraña que estés agotada.", accept: ["No me extraña (nada) que estés [agotada|cansadísima|rendida]."] },
+    { en: "Thank goodness he came through the surgery well!", es: "¡Menos mal que salió bien de la cirugía!", accept: ["¡Menos mal que salió bien de la [cirugía|operación]!"] },
+    { en: "About time they gave you some news!", es: "¡Ya era hora de que te dieran noticias!", accept: ["¡Ya era hora de que te dieran noticias!", "¡Ya era hora de que te dieran alguna noticia!"] },
+    { en: "I've got my fingers crossed that he recovers soon.", es: "Cruzo los dedos para que se recupere pronto.", accept: ["Cruzo los dedos para que se recupere pronto.", "Tengo los dedos cruzados para que se recupere pronto."] }
+  ],
+  translate: [
+    { en: "I hope your dad recovers soon; we're all thinking of you here.", es: "Ojalá tu papá se recupere pronto; aquí todos estamos pensando en ustedes.", accept: ["Ojalá tu [papá|padre] se recupere pronto; aquí todos estamos pensando en [ustedes|ti]."] },
+    { en: "No wonder you're so upset: in your place I'd be furious. (two women)", es: "No me extraña que estés tan disgustada: yo en tu lugar estaría furiosa.", accept: ["No me extraña (nada) que estés tan [disgustada|molesta|brava]: yo en tu lugar estaría furiosa."] },
+    { en: "Thank goodness you called! I've been worried since this morning. What did the doctors say? (a woman speaking)", es: "¡Menos mal que llamaste! Estoy preocupada desde esta mañana. ¿Qué dijeron los médicos?", accept: ["¡Menos mal que [llamaste|me llamaste]! [Estoy|He estado] preocupada desde esta mañana. ¿Qué dijeron los [médicos|doctores]?"] },
+    { en: "Something very similar happened to me, so I can put myself in your shoes.", es: "A mí me pasó algo muy parecido, así que me pongo en tus zapatos.", accept: ["A mí me pasó algo muy parecido, así que me pongo en [tus zapatos|tu lugar]."] },
+    { en: "We trust that the situation at the hospital will improve in the coming weeks. (formal)", es: "Confiamos en que la situación del hospital mejore en las próximas semanas.", accept: ["Confiamos en que la situación del hospital mejore en las [próximas|siguientes] semanas."] },
+    { en: "About time they fixed the road! For two years we had to go the long way round.", es: "¡Ya era hora de que arreglaran la carretera! Durante dos años nos tocó dar la vuelta larga.", accept: ["¡Ya era hora de que arreglaran la [carretera|vía]! (Durante) dos años [nos tocó|tuvimos que] dar la vuelta larga."] }
+  ],
+  register: [
+    { es: "Ánimo, aquí estoy.", en: "Hang in there, I'm here.", when: "a message to a close friend" },
+    { es: "Me imagino lo que estás pasando.", en: "I can imagine what you're going through.", when: "with anyone you call tú" },
+    { es: "Lo acompaño en este momento tan difícil.", en: "I'm with you at this very hard time.", when: "to a man you call usted, at a hospital" },
+    { es: "Confiamos en que se recupere pronto.", en: "We trust he will recover soon.", when: "a card or message from a company" }
+  ],
+  personal: {
+    prompt: "A friend is waiting for important news: an exam, a diagnosis, a visa. Write three lines: show you understand, react when the news is good, and wish them well for what comes next.",
+    constraints: [
+      { type: "containsAny", words: ["me imagino lo que", "no me extraña que", "me pongo en tus zapatos", "me pongo en tu lugar", "a mí me pasó"], label: "empathy: *me imagino lo que...*, *no me extraña que*" },
+      { type: "containsAny", words: ["qué alivio", "menos mal", "ya era hora", "peso de encima"], label: "relief: *¡qué alivio!*, *¡ya era hora!*" },
+      { type: "containsAny", words: ["ojalá", "cruzo los dedos", "dedos cruzados", "toco madera", "dios quiera"], label: "hope: *ojalá*, *cruzo los dedos*" }
+    ],
+    model: "Me imagino lo que estás pasando con lo de la visa. ¿Te la dieron? ¡Qué alivio! Ojalá el viaje te salga perfecto."
+  },
+  pitfalls: [
+    "*Simpatizo contigo* means I like you, not I sympathise: say *me imagino lo que sientes*.",
+    "*No me extraña que estás cansada* is wrong: after *no me extraña que*, the subjunctive, *estés*.",
+    "*Ya era hora* adds a reproach that *¡por fin!* doesn't carry."
+  ]
+},
+
+"fn-gustos-aversion-c1": {
+  source: "merged",
+  hook: {
+    line: "A radio reporter is out on the Séptima in Bogotá with a microphone, asking people what they love about the city and what they cannot stand. Everyone has an answer, and nobody stops at *me gusta*.",
+    es: "Adoro el centro un domingo por la mañana.\nNo soporto que me empujen en TransMilenio.\nCuanto más vivo aquí, más me gusta.",
+    en: "I adore the centre on a Sunday morning.\nI can't stand people shoving me on TransMilenio.\nThe longer I live here, the more I like it."
+  },
+  examples: [
+    { es: "Adoro caminar por el centro un domingo por la mañana, cuando cierran la Séptima a los carros.", en: "I adore walking through the centre on a Sunday morning, when they close the Séptima to cars." },
+    { es: "No soporto que me empujen en TransMilenio, y menos cuando voy con el bebé.", en: "I can't stand people shoving me on TransMilenio, especially when I've got the baby with me." },
+    { es: "Cuanto más tiempo llevo en Bogotá, más me gusta, aunque el frío todavía me cuesta.", en: "The longer I've been in Bogotá, the more I like it, though the cold is still hard for me." }
+  ],
+  rule: "Liking has a scale: *me agrada*, mild and formal; *me gusta*; *me encanta*; *me fascina*; *adoro*. So does dislike: *no me gusta mucho*; *me molesta*; *no soporto*; *detesto*; *me da asco*, which is physical.\nWhen someone else's habit is the problem, *que* plus the subjunctive: *No soporto que me empujen.* If it is your own action, no *que*: *Odio madrugar.*\nA taste that grows: *Cuanto más..., más...*: *Cuanto más la conozco, más me gusta.*\n*Me llama la atención* is interest, not liking. For people: *me cae bien*, *me cae mal*, *me cae pesado*.",
+  readAndPick: [
+    { q: "How strong is this dislike?", es: "Me da asco cómo dejan la basura en la calle.",
+      options: ["Mild, just slightly annoying", "None at all, she doesn't care", "Physical: it disgusts her"], answer: 2,
+      why: "*Me da asco* is the top of the scale: a physical disgust." },
+    { q: "Why *empujen* and not *empujan*?", es: "No soporto que me empujen.",
+      options: ["It only happened once", "She reacts to others doing it", "She is the one who pushes"], answer: 1,
+      why: "*No soporto que* reacts to someone else's habit, so the subjunctive follows." },
+    { q: "How does her liking change over time?", es: "Cuanto más la conozco, más me gusta.",
+      options: ["It keeps growing", "It fades slowly", "It stays the same"], answer: 0,
+      why: "*Cuanto más..., más...* links two things that grow together." },
+    { q: "Does she like modern art?", es: "El arte moderno me llama la atención.",
+      options: ["It catches her interest", "It's her one great passion", "She can't stand it"], answer: 0,
+      why: "*Me llama la atención* is interest or curiosity; it doesn't promise liking." },
+    { q: "What is she talking about?", es: "Ese señor me cae pesado.",
+      options: ["How heavy that man is", "What she thinks of him", "How he fell over"], answer: 1,
+      why: "*Caer bien* or *caer pesado* is how a person strikes you, built like *gustar*." }
+  ],
+  yourTurn: [
+    { en: "I can't stand people interrupting me.", es: "No soporto que me interrumpan.", accept: [] },
+    { en: "The more I know her, the more I like her.", es: "Cuanto más la conozco, más me gusta.", accept: ["Cuanto más la conozco, más me [gusta|cae bien]."] },
+    { en: "I adore walking through the centre.", es: "Adoro caminar por el centro.", accept: ["Adoro [caminar|pasear] por el centro."] },
+    { en: "Rubbish in the street disgusts me.", es: "Me da asco la basura en la calle.", accept: ["Me da asco la basura en [la calle|las calles]."] },
+    { en: "I hate getting up early.", es: "Odio madrugar.", accept: ["Odio madrugar.", "Odio levantarme temprano."] }
+  ],
+  translate: [
+    { en: "I can't stand it when people play music at full volume on the bus.", es: "No soporto que la gente ponga música a todo volumen en el bus.", accept: ["No soporto que la gente ponga música a todo volumen en el bus.", "No soporto que pongan música a todo volumen en el bus."] },
+    { en: "The more coffee I drink in the afternoon, the worse I sleep at night.", es: "Cuanto más café tomo por la tarde, peor duermo por la noche.", accept: ["Cuanto más café tomo [por la|en la] tarde, peor duermo [por la|en la] noche."] },
+    { en: "I love Bogotá, but I hate it raining every afternoon. And I'm sick of the traffic. (a woman speaking)", es: "Me encanta Bogotá, pero odio que llueva todas las tardes. Y el trancón me tiene harta.", accept: ["Me encanta Bogotá, pero [odio|no soporto] que llueva todas las tardes. Y el trancón me tiene harta."] },
+    { en: "That politician really rubs me up the wrong way; the more he talks on television, the less I believe him.", es: "Ese político me cae pesadísimo; cuanto más habla en televisión, menos le creo.", accept: ["Ese político me cae [pesadísimo|muy mal|pésimo]; cuanto más habla en [televisión|la televisión], menos le creo."] },
+    { en: "Classical music has always caught my attention, though I don't know much about it.", es: "La música clásica siempre me ha llamado la atención, aunque no sé mucho del tema.", accept: ["La música clásica siempre me ha llamado la atención, aunque no sé mucho [del tema|de eso|sobre eso]."] },
+    { en: "The way he treats the waiters when he thinks nobody is watching disgusts me.", es: "Me da asco la forma en que trata a los meseros cuando cree que nadie lo ve.", accept: ["Me da asco la [forma|manera] en que trata a los meseros cuando cree que nadie lo ve.", "Me da asco cómo trata a los meseros cuando cree que nadie lo ve."] }
+  ],
+  register: [
+    { es: "Me encanta.", en: "I love it.", when: "anywhere, in speech" },
+    { es: "Me fascina.", en: "I'm crazy about it.", when: "with friends, when you really mean it" },
+    { es: "Me agrada mucho la propuesta.", en: "I'm very pleased with the proposal.", when: "at work, or in a formal email" },
+    { es: "Me da asco.", en: "It disgusts me.", when: "for real disgust, never for a late bus" }
+  ],
+  personal: {
+    prompt: "A reporter stops you in the street: what do you love about your city, and what can't you stand? Three lines, from the top of the scale to the bottom.",
+    constraints: [
+      { type: "containsAny", words: ["adoro", "me fascina", "me encanta", "me agrada"], label: "something high on the scale: *adoro*, *me fascina*" },
+      { type: "subjunctiveAfter", trigger: "soporto", label: "someone else's habit: *no soporto que* plus the subjunctive" },
+      { type: "regex", pattern: "\\bcuanto(s|a|as)? m(á|a)s\\s", label: "a taste that grows: *cuanto más..., más...*" }
+    ],
+    model: "Adoro las montañas que se ven desde mi ventana. No soporto que la gente tire basura en los parques. Cuanto más camino por el centro, más me gusta."
+  },
+  pitfalls: [
+    "*No soporto que me empujan* is wrong: reacting to others takes the subjunctive, *empujen*.",
+    "*Odio que madrugar* adds a word: when the action is yours, no *que*: *odio madrugar*.",
+    "*Me da asco* is strong and physical: for a dull film, *no me gustó nada*."
+  ]
+},
+
+"fn-tranquilizar-animar-c1": {
+  source: "old",
+  hook: {
+    line: "Your friend Sebastián didn't get the scholarship to study in Germany, and he says he won't apply again. You spend the evening calming him down, and then pushing him to try once more.",
+    es: "Tranquilo, no es el fin del mundo.\nEl no ya lo tienes, así que inténtalo otra vez.\nNo te dé pena escribirle al profesor. ¡Hágale!",
+    en: "Easy, it's not the end of the world.\nYou've already got the no, so try again.\nDon't be shy about writing to the professor. Go for it!"
+  },
+  examples: [
+    { es: "Tranquilo, no es el fin del mundo: el año pasado aplicaron tres mil personas para diez becas.", en: "Easy, it's not the end of the world: last year three thousand people applied for ten scholarships." },
+    { es: "El no ya lo tienes; si no vuelves a aplicar, seguro que no te la dan.", en: "You've already got the no; if you don't apply again, it's certain they won't give it to you." },
+    { es: "No te dé pena escribirle al profesor; lo peor que puede pasar es que no conteste.", en: "Don't be shy about writing to the professor; the worst that can happen is that he doesn't answer." }
+  ],
+  rule: "To calm someone, take the weight off: *Tranquilo, no pasa nada.* *No es el fin del mundo.* *No te lo tomes tan a pecho.* *Tómatelo con calma.* Find the good part: *Por lo menos lo intentaste.* Look ahead: *Vas a ver que todo sale bien.*\nTo push someone, the logic of nothing to lose: *El no ya lo tienes.* *¿Qué es lo peor que puede pasar?*\nAgainst shyness, in Colombia: *No te dé pena* plus the dictionary form.\nAgainst delay: *¿Qué estás esperando?* *¿Vas a aplicar o qué?* And the shove itself: *¡Ánimo!* *¡Tú puedes!* *¡Hágale!*",
+  readAndPick: [
+    { q: "What is *el no ya lo tienes* for?", es: "El no ya lo tienes, así que inténtalo.",
+      options: ["Comforting him after a loss", "Telling him to give up", "Pushing him to try anyway"], answer: 2,
+      why: "*El no ya lo tienes* argues that trying cannot make things worse." },
+    { q: "Is she saying his problem doesn't matter?", es: "No es el fin del mundo.",
+      options: ["Yes, it means nothing at all", "No, she puts it in proportion", "Yes, she's bored of hearing it"], answer: 1,
+      why: "*No es el fin del mundo* puts a problem in perspective without denying it." },
+    { q: "What is stopping him, according to her?", es: "No te dé pena escribirle al profesor.",
+      options: ["Feeling too shy", "Being very sad", "Not caring at all"], answer: 0,
+      why: "In Colombia *no te dé pena* means don't be shy or embarrassed, not don't be sad." },
+    { q: "How does she sound?", es: "¿Vas a aplicar o qué?",
+      options: ["Very patient and calm", "Pushing, a bit impatient", "Bored by it all"], answer: 1,
+      why: "*¿...o qué?* presses someone who keeps putting off a decision." },
+    { q: "What good does she find in the failure?", es: "Por lo menos lo intentaste.",
+      options: ["That he tried", "That he won", "That it's over"], answer: 0,
+      why: "*Por lo menos* rescues something good from something bad." }
+  ],
+  yourTurn: [
+    { en: "Easy, it's not the end of the world. (to a man)", es: "Tranquilo, no es el fin del mundo.", accept: [] },
+    { en: "Don't take it so much to heart.", es: "No te lo tomes tan a pecho.", accept: [] },
+    { en: "You've already got the no.", es: "El no ya lo tienes.", accept: ["El no ya lo tienes.", "Ya tienes el no."] },
+    { en: "Don't be shy about asking. (Colombia, to a friend)", es: "No te dé pena preguntar.", accept: [] },
+    { en: "What's the worst that can happen?", es: "¿Qué es lo peor que puede pasar?", accept: ["¿Qué es lo peor que [puede|podría] pasar?"] }
+  ],
+  translate: [
+    { en: "At least you tried; most people don't even send the application.", es: "Por lo menos lo intentaste; la mayoría ni siquiera manda la solicitud.", accept: ["[Por lo menos|Al menos] lo intentaste; la mayoría (de la gente) ni siquiera [manda|envía] la solicitud."] },
+    { en: "Take it easy, you'll see that next year everything turns out well.", es: "Tómatelo con calma, vas a ver que el año que viene todo sale bien.", accept: ["Tómatelo con calma, [vas a ver|verás] que el año que viene todo [sale|va a salir|saldrá] bien.", "Tómatelo con calma, [vas a ver|verás] que el próximo año todo [sale|va a salir|saldrá] bien."] },
+    { en: "What are you waiting for? Write to her today. The worst that can happen is that she says no.", es: "¿Qué estás esperando? Escríbele hoy mismo. Lo peor que puede pasar es que te diga que no.", accept: ["¿Qué [estás esperando|esperas]? Escríbele hoy (mismo). Lo peor que [puede|podría] pasar es que te diga que no."] },
+    { en: "Cheer up! You've already done the hardest part, and now there's only the interview left.", es: "¡Ánimo! Ya hiciste lo más difícil, y ahora solo queda la entrevista.", accept: ["¡Ánimo! Ya [hiciste|has hecho] lo más difícil, y ahora solo [queda|falta] la entrevista."] },
+    { en: "Don't be shy about asking the teacher what you don't understand; that's what she's there for.", es: "No te dé pena preguntarle a la profesora lo que no entiendas; para eso está.", accept: ["No te dé pena preguntarle a la profesora lo que no [entiendas|entiendes]; para eso está."] },
+    { en: "You can do it! I'm sure this time they'll pick you. (a woman speaking)", es: "¡Tú puedes! Estoy segura de que esta vez te van a escoger.", accept: ["¡Tú puedes! Estoy segura de que esta vez te van a [escoger|elegir|seleccionar].", "¡Tú puedes! Estoy segura de que esta vez te [escogen|eligen|seleccionan]."] }
+  ],
+  register: [
+    { es: "Tranqui, no pasa nada.", en: "Chill, it's fine.", when: "with friends, casually" },
+    { es: "Tranquilo, todo va a salir bien.", en: "Don't worry, it will all be fine.", when: "with anyone you call tú" },
+    { es: "No se preocupe, eso tiene solución.", en: "Don't worry, there's a way to fix it.", when: "to someone you call usted" },
+    { es: "Lo animamos a presentarse de nuevo.", en: "We encourage you to apply again.", when: "a formal letter after a rejection" }
+  ],
+  personal: {
+    prompt: "A friend failed at something and wants to give up. Write three lines: calm them down, give them a reason to try again, and push them to do it.",
+    constraints: [
+      { type: "containsAny", words: ["no es el fin del mundo", "no pasa nada", "tranquilo", "tranquila", "no te lo tomes", "tómatelo con calma", "por lo menos", "al menos"], label: "calm them: *no es el fin del mundo*" },
+      { type: "containsAny", words: ["el no ya lo tienes", "lo peor que puede pasar", "lo peor que podría pasar", "nada que perder"], label: "a reason to try: *el no ya lo tienes*" },
+      { type: "containsAny", words: ["hágale", "ánimo", "tú puedes", "qué estás esperando", "qué esperas", "o qué", "no te dé pena"], label: "the push: *¡hágale!*, *¿qué estás esperando?*" }
+    ],
+    model: "Tranquila, no es el fin del mundo: el examen del pase se puede repetir. El no ya lo tienes, así que pide otra cita. ¡Hágale, que tú manejas muy bien!"
+  },
+  pitfalls: [
+    "*No te cortes* is Spain; in Colombia, *no te dé pena* or *no te dé miedo*.",
+    "*El no ya lo tienes* is not comfort after a loss: it is an argument for trying.",
+    "*No es el fin del mundo* puts it in proportion; *no es nada* can sound dismissive."
+  ]
+},
+
+"fn-preferencia-indiferencia-c1": {
+  source: "old",
+  hook: {
+    line: "Four siblings are planning December on a video call: Santa Marta or the coffee region? One has a firm favourite, one couldn't care less, and one would go anywhere as long as everyone is there.",
+    es: "Si me toca escoger, me quedo con Salento.\nA mí me da igual; si Juan quiere playa, que vaya.\nNo cambio un diciembre con ustedes por nada del mundo.",
+    en: "If I have to choose, I'll go for Salento.\nIt's all the same to me; if Juan wants the beach, let him go.\nI wouldn't trade a December with you lot for anything in the world."
+  },
+  examples: [
+    { es: "Si me toca escoger, me quedo con Salento: prefiero mil veces el frío a la playa.", en: "If I have to choose, I'll go for Salento: I much prefer the cold to the beach." },
+    { es: "A mí me da igual el destino; si Juan quiere playa, que se vaya para Santa Marta.", en: "The destination is all the same to me; if Juan wants the beach, let him go to Santa Marta." },
+    { es: "¡Qué más da dónde vayamos, si lo importante es que estemos todos juntos en diciembre!", en: "What does it matter where we go, when what counts is that we're all together in December!" }
+  ],
+  rule: "To ask for a choice: *¿Con cuál te quedas?* *¿Por cuál te decides?*\nTo give one: *Me quedo con...* *Me inclino por...* *Prefiero mil veces...* If you are made to choose, in Colombia: *Si me toca escoger...* The firmest of all: *No lo cambio por nada del mundo.*\nNot caring, politely: *Me da igual.* *Me da lo mismo.* *Por mí, como quieran.* Leaving the decision to them: *si* plus the indicative, then *que* plus the subjunctive: *Si quiere ir, que vaya.*\nDismissive: *¡Qué más da!* *Me importa un comino.*\nFormal: *No tengo ninguna preferencia.*",
+  readAndPick: [
+    { q: "How firm is her choice?", es: "No cambio Salento por nada del mundo.",
+      options: ["Nothing could change it", "She could be talked round", "She hasn't chosen yet"], answer: 0,
+      why: "*No lo cambio por nada del mundo* is the firmest preference there is." },
+    { q: "Is she giving Juan an order?", es: "Si Juan quiere playa, que vaya.",
+      options: ["Yes, he must go", "Yes, she wants him gone", "No, she doesn't mind"], answer: 2,
+      why: "*Si quiere..., que vaya* leaves the decision to him: it says she doesn't mind." },
+    { q: "What does *si me toca escoger* mean?", es: "Si me toca escoger, me quedo con Salento.",
+      options: ["If it's my turn to pay", "If I have to choose", "If I touch the map first"], answer: 1,
+      why: "In Colombia *me toca* means I have to: if the choice falls to me." },
+    { q: "How polite is this?", es: "Me importa un comino adónde vayan.",
+      options: ["Rather dismissive", "Warm and polite", "Formal and neutral"], answer: 0,
+      why: "*Me importa un comino* is dismissive: fine with family, rude anywhere else." },
+    { q: "What is she saying?", es: "¡Qué más da dónde vayamos!",
+      options: ["She needs to know where", "She'd rather go alone", "The place doesn't matter"], answer: 2,
+      why: "*¡Qué más da!* takes the importance out of the choice." }
+  ],
+  yourTurn: [
+    { en: "If I have to choose, I'll go for the mountains. (Colombia)", es: "Si me toca escoger, me quedo con la montaña.", accept: ["Si me toca [escoger|elegir], me quedo con la montaña."] },
+    { en: "It's all the same to me.", es: "Me da igual.", accept: ["(A mí) me da [igual|lo mismo]."] },
+    { en: "If he wants to go, let him go.", es: "Si quiere ir, que vaya.", accept: ["Si (él) quiere ir, que vaya."] },
+    { en: "I wouldn't trade it for anything in the world.", es: "No lo cambio por nada del mundo.", accept: ["No lo [cambio|cambiaría] por nada del mundo."] },
+    { en: "Which one do you go for? (to a friend)", es: "¿Con cuál te quedas?", accept: ["¿Con cuál te [quedas|quedarías]?"] }
+  ],
+  translate: [
+    { en: "Between the apartment in Chapinero and the house in Chía, I much prefer the apartment.", es: "Entre el apartamento de Chapinero y la casa de Chía, prefiero mil veces el apartamento.", accept: ["Entre el apartamento [de|en] Chapinero y la casa [de|en] Chía, [prefiero mil veces|me quedo con] el apartamento."] },
+    { en: "If your sister wants to tell him, let her tell him; I'm not getting involved.", es: "Si tu hermana se lo quiere decir, que se lo diga; yo no me meto.", accept: ["Si tu hermana [se lo quiere decir|quiere decírselo], que se lo diga; yo no me meto."] },
+    { en: "Chicken or fish? It's all the same to me, you choose. I'll eat whatever you order.", es: "¿Pollo o pescado? Me da lo mismo, escoge tú. Yo como lo que pidas.", accept: ["¿Pollo o pescado? Me da [lo mismo|igual], [escoge|elige] tú. Yo como lo que pidas."] },
+    { en: "In the end I went for the red dress, although the blue one was cheaper.", es: "Al final me decidí por el vestido rojo, aunque el azul era más barato.", accept: ["Al final me [decidí por|quedé con] el vestido rojo, aunque el azul era más barato."] },
+    { en: "I couldn't care less what the neighbours say about the colour of the house.", es: "Me importa un comino lo que digan los vecinos del color de la casa.", accept: ["Me importa un comino lo que digan los vecinos [del|sobre el] color de la casa."] },
+    { en: "I have no preference regarding the date; whichever suits the rest of the team. (formal)", es: "No tengo ninguna preferencia en cuanto a la fecha; la que le convenga al resto del equipo.", accept: ["No tengo ninguna preferencia [en cuanto a|con respecto a|respecto a|sobre] la fecha; la que le convenga al resto del equipo."] }
+  ],
+  register: [
+    { es: "Me importa un comino.", en: "I couldn't care less.", when: "with family, a little rudely" },
+    { es: "Me da igual.", en: "I don't mind.", when: "with anyone, neutral" },
+    { es: "Por mí, como quieran.", en: "Whatever you all like.", when: "in a group, leaving them to decide" },
+    { es: "No tengo ninguna preferencia.", en: "I have no preference.", when: "at work, or in a formal email" }
+  ],
+  personal: {
+    prompt: "Your family or friends can't agree on a plan. Write three lines: your firm choice for one thing, your shrug about another, and one *si quiere, que...*",
+    constraints: [
+      { type: "containsAny", words: ["me quedo con", "prefiero mil veces", "me inclino por", "me decido por", "por nada del mundo"], label: "a firm choice: *me quedo con*, *prefiero mil veces*" },
+      { type: "containsAny", words: ["me da igual", "me da lo mismo", "qué más da", "como quieran", "me importa un comino"], label: "a shrug: *me da igual*, *¡qué más da!*" },
+      { type: "regex", pattern: "\\bsi [a-záéíóúñ ]+, que [a-záéíóúñ]+", label: "leave it to them: *si quiere ir, que vaya*" }
+    ],
+    model: "Para el almuerzo me quedo con el sancocho, eso no se discute. La hora me da igual. Si mi primo quiere llevar a la novia, que la lleve."
+  },
+  pitfalls: [
+    "*Me importa un pimiento* is Spain; across Latin America, *me importa un comino* or *me da igual*.",
+    "*Si quiere ir, que va* is wrong: the second half takes the subjunctive, *que vaya*.",
+    "*Me quedo con* is the choice; *me quedo en* is staying somewhere."
+  ]
+},
+
+"fn-deseos-planes-c1": {
+  source: "old",
+  hook: {
+    line: "New Year's Eve at your aunt's house in Cali. At midnight everyone eats twelve grapes, one wish each, and your cousin runs round the block with a suitcase so the year brings travel. Then, at the table, come the resolutions.",
+    es: "¡Qué ganas tengo de que llegue el viaje a Cartagena!\nOjalá este año me den el ascenso.\nMe propuse ahorrar, y la idea es irnos en marzo.",
+    en: "I can't wait for the trip to Cartagena!\nI hope they give me the promotion this year.\nI've resolved to save, and the plan is to go in March."
+  },
+  examples: [
+    { es: "Con cada uva pedí un deseo, y el primero fue que mi abuela se mejore pronto.", en: "With each grape I made a wish, and the first was that my grandmother gets better soon." },
+    { es: "Me propuse ahorrar todo el año, y la idea es irnos a Cartagena en marzo.", en: "I've resolved to save all year, and the plan is for us to go to Cartagena in March." },
+    { es: "El año pasado tenía pensado aprender a bailar salsa, pero al final no me inscribí.", en: "Last year I was planning to learn to dance salsa, but in the end I didn't sign up." }
+  ],
+  rule: "Wishes, from urgent to impossible: *Me muero de ganas de...* *¡Qué ganas tengo de que llegue el viaje!*, with *que* and the subjunctive. *Ojalá* plus the subjunctive. *Lo ideal sería que* plus the *-ra* form. *¡Si pudiera dejarlo todo!*, left unfinished, knows it won't happen.\nFor someone else: *Que te vaya muy bien.*\nPlans, from firm to barely formed: *Me propuse* plus the dictionary form, a resolution; *tengo pensado*; *la idea es*, very Latin American; *estoy pensando en*; *estoy por renunciar*, almost decided.\nA plan that failed: *Tenía pensado..., pero...*",
+  readAndPick: [
+    { q: "How likely does she think this is?", es: "¡Si pudiera dejarlo todo y vivir en la playa!",
+      options: ["Very likely, it's planned", "Unlikely: a daydream", "Certain, next week"], answer: 1,
+      why: "*Si* plus the *-ra* form, left unfinished, is a wish she knows won't come true." },
+    { q: "How firm is this plan?", es: "Estoy por renunciar al trabajo.",
+      options: ["Done: she has resigned", "Not even an idea yet", "Very nearly decided"], answer: 2,
+      why: "*Estar por* plus the dictionary form: an intention that is almost a decision." },
+    { q: "Did she learn salsa?", es: "Tenía pensado aprender salsa, pero no me inscribí.",
+      options: ["Yes, she took some classes", "No, it stayed a plan", "Yes, a little"], answer: 1,
+      why: "*Tenía pensado..., pero...* is a plan that never happened." },
+    { q: "What does *la idea es* introduce?", es: "La idea es irnos en marzo.",
+      options: ["The actual plan", "A daydream", "An opinion about March"], answer: 0,
+      why: "*La idea es* plus the dictionary form is the everyday Latin American way to say the plan is." },
+    { q: "Why *llegue* and not *llega*?", es: "¡Qué ganas tengo de que llegue el viaje!",
+      options: ["It was last year", "It's the polite form", "It is still to come"], answer: 2,
+      why: "*Ganas de que* plus the subjunctive: the wish is for something still to come." }
+  ],
+  yourTurn: [
+    { en: "I hope they give me the promotion this year.", es: "Ojalá este año me den el ascenso.", accept: ["Ojalá (que) este año me den el ascenso.", "Ojalá (que) me den el ascenso este año."] },
+    { en: "I can't wait for the trip!", es: "¡Qué ganas tengo de que llegue el viaje!", accept: ["¡Qué ganas (tengo) de que llegue el viaje!", "¡Me muero de ganas de que llegue el viaje!"] },
+    { en: "The plan is to leave in March.", es: "La idea es irnos en marzo.", accept: ["La idea es [irnos|salir|viajar] en marzo."] },
+    { en: "I'm on the point of quitting. (about your job)", es: "Estoy por renunciar.", accept: ["Estoy [por|a punto de] renunciar."] },
+    { en: "I hope everything goes really well for you. (to a friend)", es: "Que te vaya muy bien.", accept: ["[Que|Ojalá] te vaya muy bien."] }
+  ],
+  translate: [
+    { en: "Ideally, they would let us work from home on Fridays.", es: "Lo ideal sería que nos dejaran trabajar desde la casa los viernes.", accept: ["Lo ideal sería que nos dejaran trabajar desde (la) casa los viernes."] },
+    { en: "If only I could take a whole month off to travel round the Amazon!", es: "¡Si pudiera tomarme un mes entero de vacaciones para recorrer el Amazonas!", accept: ["¡[Si|Ojalá] pudiera tomarme un mes entero de vacaciones para recorrer el Amazonas!"] },
+    { en: "This year I've resolved to read more. The plan is one book a month, starting in January.", es: "Este año me propuse leer más. La idea es un libro al mes, empezando en enero.", accept: ["Este año me [propuse|he propuesto] leer más. La idea es (leer) un libro al mes, empezando en enero.", "Este año me hice el propósito de leer más. La idea es (leer) un libro al mes, empezando en enero."] },
+    { en: "I was planning to change jobs, but with the baby on the way I'd rather wait.", es: "Tenía pensado cambiar de trabajo, pero con el bebé en camino prefiero esperar.", accept: ["Tenía [pensado|planeado] cambiar de trabajo, pero con el bebé en camino prefiero esperar."] },
+    { en: "I'm dying to see my nephews; I haven't seen them since they moved to Pereira.", es: "Me muero de ganas de ver a mis sobrinos; no los veo desde que se mudaron a Pereira.", accept: ["Me muero de ganas de ver a mis sobrinos; no los veo desde que se [mudaron|fueron] a Pereira."] },
+    { en: "Despite having promised myself I'd go to the gym, I haven't been once this month.", es: "Pese a haberme propuesto ir al gimnasio, este mes no he ido ni una vez.", accept: ["[Pese a|A pesar de] haberme propuesto ir al gimnasio, este mes no he ido ni una (sola) vez."] }
+  ],
+  register: [
+    { es: "¡Qué ganas de verte!", en: "I can't wait to see you!", when: "to a friend or family, warmly" },
+    { es: "La idea es salir el viernes.", en: "The plan is to leave on Friday.", when: "everyday Latin American speech" },
+    { es: "Tengo previsto viajar el viernes.", en: "I plan to travel on Friday.", when: "at work, or in an email" },
+    { es: "Les deseamos un feliz año nuevo.", en: "We wish you a happy new year.", when: "a card or message from a company" }
+  ],
+  personal: {
+    prompt: "It is New Year's Eve. Write three lines: a wish for yourself, one for someone else, and a plan you are making, with one plan from last year that never happened.",
+    constraints: [
+      { type: "subjunctiveAfter", trigger: "ojalá", label: "a wish: *ojalá* plus the subjunctive" },
+      { type: "containsAny", words: ["me propuse", "me he propuesto", "la idea es", "tengo pensado", "me hice el propósito"], label: "a plan: *me propuse*, *la idea es*" },
+      { type: "regex", pattern: "\\btenía (pensado|planeado)[^.]*, pero", label: "a plan that failed: *tenía pensado..., pero*" }
+    ],
+    model: "Ojalá este año consiga un trabajo cerca de la casa. Que a mi mamá le vaya muy bien con la operación. Me propuse aprender a nadar; el año pasado tenía pensado hacerlo, pero nunca encontré tiempo."
+  },
+  pitfalls: [
+    "*Ojalá que llega* is wrong: *ojalá* always takes the subjunctive, *llegue*.",
+    "*Estoy por* is almost decided; *tengo pensado* is the plan; *me propuse* is a resolution.",
+    "*Hacer ilusión* is Spain; in Colombia, *¡qué ganas!* or *me emociona*."
+  ]
+},
+
+"fn-recordar-olvidar-c1": {
+  source: "merged",
+  hook: {
+    line: "Twenty years after leaving school, your class meets again at a restaurant in Bucaramanga. Half the evening is spent remembering and the other half failing to: names on the tip of the tongue, faces that ring no bell, a song that takes everyone back.",
+    es: "¿Cómo se llamaba la profe de química? Lo tengo en la punta de la lengua.\nEse nombre no me suena para nada.\nEsta canción me trae recuerdos de la excursión a San Gil.",
+    en: "What was the chemistry teacher called? It's on the tip of my tongue.\nThat name doesn't ring a bell at all.\nThis song brings back memories of the school trip to San Gil."
+  },
+  examples: [
+    { es: "¿Cómo se llamaba la profesora de química? Lo tengo en la punta de la lengua.", en: "What was the chemistry teacher called? It's on the tip of my tongue." },
+    { es: "Que yo me acuerde, la excursión a San Gil fue en once, no en décimo.", en: "As far as I remember, the trip to San Gil was in eleventh grade, not tenth." },
+    { es: "Esta canción me trae recuerdos de los buses del colegio y de las izadas de bandera.", en: "This song brings back memories of the school buses and the flag ceremonies." }
+  ],
+  rule: "Remembering with a margin of doubt: *Que yo me acuerde...* *Si mal no recuerdo...* After *que yo*, the subjunctive.\nA name that won't come: *Lo tengo en la punta de la lengua.* A blank: *Me quedé en blanco.* A lost thread: *Se me fue la idea.*\nRecognising, or not: *Me suena* rings a bell; *no me suena para nada* and *no me dice nada*, nothing at all.\nA near miss: *Por poco se me olvida.*\nThings that remind you do the work: *Esta canción me trae recuerdos de...* *Me vino a la memoria su cara.*\nTo make the effort: *hacer memoria*.",
+  readAndPick: [
+    { q: "Has he forgotten the name for good?", es: "Lo tengo en la punta de la lengua.",
+      options: ["Yes, it's completely gone", "No, it just won't come", "He never knew it at all"], answer: 1,
+      why: "On the tip of the tongue: he knows it, but it won't come out right now." },
+    { q: "Does she know who that is?", es: "Ese nombre no me suena para nada.",
+      options: ["Yes, she knows him well", "Only vaguely", "No, not in the slightest"], answer: 2,
+      why: "*No me suena para nada*: it rings no bell at all." },
+    { q: "How sure is he about the year?", es: "Que yo me acuerde, la excursión fue en once.",
+      options: ["Fairly sure, not certain", "Certain beyond all doubt", "He has no idea at all"], answer: 0,
+      why: "*Que yo me acuerde* leaves room for a faulty memory." },
+    { q: "What does the song do?", es: "Esta canción me trae recuerdos de la excursión.",
+      options: ["It takes her right back", "It bores her a little", "It makes her sing along"], answer: 0,
+      why: "*Me trae recuerdos de*: the song does the remembering, built like *gustar*." },
+    { q: "Did she forget the birthday?", es: "Por poco se me olvida el cumpleaños de Andrea.",
+      options: ["Yes, completely", "Almost, but not quite", "She never knew the date"], answer: 1,
+      why: "*Por poco se me olvida* is a near miss: she nearly forgot, and didn't." }
+  ],
+  yourTurn: [
+    { en: "It's on the tip of my tongue.", es: "Lo tengo en la punta de la lengua.", accept: [] },
+    { en: "That name doesn't ring a bell at all.", es: "Ese nombre no me suena para nada.", accept: ["Ese nombre no me suena para nada.", "Ese nombre no me dice nada."] },
+    { en: "As far as I remember, it was in March.", es: "Que yo me acuerde, fue en marzo.", accept: ["Que yo [me acuerde|recuerde], fue en marzo.", "Si mal no recuerdo, fue en marzo."] },
+    { en: "I nearly forgot!", es: "¡Por poco se me olvida!", accept: ["¡[Por poco|Casi] se me olvida!"] },
+    { en: "This song brings back memories of school.", es: "Esta canción me trae recuerdos del colegio.", accept: [] }
+  ],
+  translate: [
+    { en: "In the middle of the presentation my mind went blank and I didn't know how to go on.", es: "En plena presentación me quedé en blanco y no supe cómo seguir.", accept: ["En [plena presentación|medio de la presentación|la mitad de la presentación] me quedé en blanco y no supe cómo seguir."] },
+    { en: "What was I telling you all? I've completely lost my train of thought with all this noise.", es: "¿Qué les estaba diciendo? Se me fue la idea por completo con tanto ruido.", accept: ["¿Qué les estaba diciendo? Se me fue la idea [por completo|completamente] con tanto ruido."] },
+    { en: "That smell of coffee brings back memories of my grandmother's kitchen in Manizales.", es: "Ese olor a café me trae recuerdos de la cocina de mi abuela en Manizales.", accept: ["Ese olor a [café|tinto] me trae recuerdos de la cocina de mi abuela en Manizales."] },
+    { en: "Do you remember Camilo, the one who sat at the back? No, that name doesn't ring a bell.", es: "¿Te acuerdas de Camilo, el que se sentaba atrás? No, ese nombre no me suena.", accept: ["¿Te acuerdas de Camilo, el que se sentaba [atrás|al fondo]? No, ese nombre no me [suena|dice nada]."] },
+    { en: "Suddenly her face came back to me: we had danced at the graduation party.", es: "De repente me vino a la memoria su cara: habíamos bailado en la fiesta de grado.", accept: ["De [repente|pronto] me vino a la memoria su cara: habíamos bailado en la fiesta de grado.", "De [repente|pronto] me acordé de su cara: habíamos bailado en la fiesta de grado."] },
+    { en: "Think hard: where did you last see the car keys before going out?", es: "Haz memoria: ¿dónde viste las llaves del carro por última vez antes de salir?", accept: ["Haz memoria: ¿dónde viste [las llaves del carro por última vez|por última vez las llaves del carro] antes de salir?"] }
+  ],
+  register: [
+    { es: "¡Ni idea!", en: "No idea!", when: "with friends, when nothing comes" },
+    { es: "No me acuerdo.", en: "I don't remember.", when: "with anyone, plain" },
+    { es: "Que yo recuerde, no.", en: "Not as far as I recall.", when: "carefully, when you might be wrong" },
+    { es: "No tengo constancia de esa reunión.", en: "I have no record of that meeting.", when: "at work, or in a formal statement" }
+  ],
+  personal: {
+    prompt: "Write about a reunion, a trip back home or an old photo: something you remember with doubt, something that won't come back, and something that brings a memory back.",
+    constraints: [
+      { type: "containsAny", words: ["que yo me acuerde", "que yo recuerde", "si mal no recuerdo"], label: "a memory with doubt: *que yo me acuerde*" },
+      { type: "containsAny", words: ["punta de la lengua", "en blanco", "no me suena", "no me dice nada", "se me fue", "se me olvidó"], label: "one that won't come: *lo tengo en la punta de la lengua*" },
+      { type: "regex", pattern: "\\bme (trae|traen|trajo|trajeron) recuerdos|me vino a la memoria|me viene a la memoria", label: "something that brings it back: *me trae recuerdos de*" }
+    ],
+    model: "Que yo me acuerde, esa foto es de la finca de mi tío en Fusa. El nombre del perro lo tengo en la punta de la lengua. El olor a guayaba me trae recuerdos de esas vacaciones."
+  },
+  pitfalls: [
+    "*Me recuerdo de* is wrong: *me acuerdo de*, or *recuerdo* without *me*.",
+    "*No me suena* is recognition; *se me olvidó* is a memory you had and lost.",
+    "*Que yo me acuerde* takes the subjunctive: not *que yo me acuerdo*."
+  ]
+},
+
+"fn-reprochar-ofrecerse-c1": {
+  source: "old",
+  hook: {
+    line: "Your brother lost his job three months ago and told nobody. You find out from your mother. You call him angry and worried at once, so the reproach and the offer of help come in the same breath.",
+    es: "Si me hubieras contado, te habría ayudado desde el principio.\n¿Se puede saber por qué no dijiste nada?\nCuenta conmigo para lo que necesites.",
+    en: "If you had told me, I'd have helped you from the start.\nWould you mind telling me why you didn't say anything?\nCount on me for whatever you need."
+  },
+  examples: [
+    { es: "Si me hubieras contado lo del trabajo, te habría ayudado a buscar otro desde el principio.", en: "If you had told me about the job, I'd have helped you look for another from the start." },
+    { es: "¿Se puede saber por qué no le dijiste nada a nadie en tres meses?", en: "Would you mind telling me why you didn't tell anyone anything for three months?" },
+    { es: "No te voy a regañar más: cuenta conmigo, y ya sabes dónde estoy si necesitas algo.", en: "I won't tell you off any more: count on me, and you know where I am if you need anything." }
+  ],
+  rule: "A reproach about the past is often a condition: *Si me hubieras contado, te habría ayudado.* The structure itself is the complaint. Shorter: *Podrías haberme dicho.*\nPressing questions: *¿Se puede saber por qué...?* *¿Qué haces que todavía no estás listo?*\nBlame and shame, said straight: *La culpa es tuya.* *¿No te da vergüenza?*\nThen the offer, from warm to formal: *Cuenta conmigo.* *Ya sabes dónde estoy.* *¿En qué te puedo colaborar?*, very Colombian. *Estoy a la orden.* In writing: *Quedo a su disposición.* *No dude en contactarnos.*",
+  readAndPick: [
+    { q: "What is the sentence really doing?", es: "Si me hubieras contado, te habría ayudado.",
+      options: ["Making plans", "Reproaching him for the past", "Asking him for a hand"], answer: 1,
+      why: "The *si* sentence about the past works as a reproach for what already happened." },
+    { q: "Is this a neutral question?", es: "¿Se puede saber por qué no dijiste nada?",
+      options: ["Yes, she is merely curious", "Yes, she is being formal", "No, it carries a reproach"], answer: 2,
+      why: "*¿Se puede saber...?* is a question with a reproach built in." },
+    { q: "What is being offered?", es: "¿En qué te puedo colaborar?",
+      options: ["Help with anything he needs", "A job at her own firm, at once", "Money to pay the rent, in cash"], answer: 0,
+      why: "In Colombia *colaborar* is everyday for help: *¿en qué te puedo colaborar?*" },
+    { q: "Where would you read this?", es: "Quedo a su disposición para cualquier consulta.",
+      options: ["Closing a formal email", "In a quick text to her brother", "On a birthday card"], answer: 0,
+      why: "*Quedo a su disposición* is the formal offer that closes letters and emails." },
+    { q: "Who is to blame, according to her?", es: "La culpa es tuya por no haber avisado.",
+      options: ["Nobody in particular", "He is, for not warning", "The company that fired him"], answer: 1,
+      why: "*La culpa es tuya* puts the blame on him directly, with no softening." }
+  ],
+  yourTurn: [
+    { en: "If you had told me, I'd have helped you.", es: "Si me hubieras contado, te habría ayudado.", accept: ["Si me hubieras [contado|dicho], te [habría|hubiera] ayudado."] },
+    { en: "You could have told me. (to a friend)", es: "Podrías haberme dicho.", accept: ["Podrías haberme [dicho|contado].", "Me podrías haber [dicho|contado]."] },
+    { en: "Count on me for whatever you need.", es: "Cuenta conmigo para lo que necesites.", accept: [] },
+    { en: "How can I help you? (Colombia, to a friend)", es: "¿En qué te puedo colaborar?", accept: ["¿En qué te puedo [colaborar|ayudar]?"] },
+    { en: "Aren't you ashamed?", es: "¿No te da vergüenza?", accept: ["¿No te da [vergüenza|pena]?"] }
+  ],
+  translate: [
+    { en: "If you had left on time, we wouldn't have missed the start of the film.", es: "Si hubieras salido a tiempo, no nos habríamos perdido el comienzo de la película.", accept: ["Si hubieras salido a tiempo, no nos [habríamos|hubiéramos] perdido el [comienzo|principio] de la película."] },
+    { en: "What are you up to that you're still not ready? The taxi has been waiting ten minutes. (to a man)", es: "¿Qué haces que todavía no estás listo? El taxi lleva diez minutos esperando.", accept: ["¿Qué haces que [todavía|aún] no estás listo? El taxi lleva diez minutos esperando.", "¿Qué haces que [todavía|aún] no estás listo? El taxi está esperando hace diez minutos."] },
+    { en: "Aren't you ashamed of speaking to your grandmother like that in front of everyone?", es: "¿No te da vergüenza haberle hablado así a tu abuela delante de todos?", accept: ["¿No te da [vergüenza|pena] haberle hablado así a tu abuela [delante de|enfrente de|frente a] todos?"] },
+    { en: "You know where I am. If you need anything, all you have to do is call me.", es: "Ya sabes dónde estoy. Si necesitas algo, no tienes más que llamarme.", accept: ["Ya sabes dónde estoy. Si necesitas algo, [no tienes más que|solo tienes que] llamarme."] },
+    { en: "Thank you for your purchase. Do not hesitate to contact us if any problem arises. (formal)", es: "Gracias por su compra. No dude en contactarnos si se presenta cualquier inconveniente.", accept: ["Gracias por su compra. No dude en [contactarnos|comunicarse con nosotros] si se presenta cualquier [inconveniente|problema]."] },
+    { en: "It's your fault for not checking the address before leaving.", es: "La culpa es tuya por no revisar la dirección antes de salir.", accept: ["La culpa es tuya por no [revisar|haber revisado|mirar] la dirección antes de salir."] }
+  ],
+  register: [
+    { es: "Cuenta conmigo.", en: "Count on me.", when: "to family and friends" },
+    { es: "Estoy a la orden.", en: "I'm at your service.", when: "in Colombia, to a client or a neighbour" },
+    { es: "¿En qué le puedo colaborar?", en: "How can I help you?", when: "in Colombia, in a shop or an office" },
+    { es: "Quedo a su disposición.", en: "I remain at your disposal.", when: "closing a formal email or letter" }
+  ],
+  personal: {
+    prompt: "Someone close to you hid a problem from you. Write three lines: the reproach, a pressing question, and the offer of help.",
+    constraints: [
+      { type: "regex", pattern: "\\bsi [a-záéíóúñ ]*hubi(eras|era|eran|éramos)\\s", label: "the reproach: *si me hubieras contado...*" },
+      { type: "containsAny", words: ["se puede saber", "por qué no me", "qué haces que", "no te da vergüenza", "la culpa es tuya"], label: "a pressing question: *¿se puede saber por qué...?*" },
+      { type: "containsAny", words: ["cuenta conmigo", "ya sabes dónde estoy", "en qué te puedo", "a la orden", "puedes contar conmigo"], label: "the offer: *cuenta conmigo*" }
+    ],
+    model: "Si me hubieras dicho que estabas enferma, habría ido a cuidarte. ¿Se puede saber por qué no me llamaste? Cuenta conmigo para lo que necesites."
+  },
+  pitfalls: [
+    "*Si me hubieras dicho* is already a reproach: adding *¡qué mal!* makes it heavy.",
+    "*Estoy a la orden* is warm and Colombian; *quedo a su disposición* belongs on paper.",
+    "*Colaborar* in Colombia is everyday help: *¿me colabora con esto?* is a request, not a project."
+  ]
+},
+
+"nt-reflexion-conocimiento-c1": {
+  source: "merged",
+  hook: {
+    line: "You have been offered a job in Panama City, and your mother lives alone in Tunja. For a week you can think about nothing else, and the Spanish of thinking things through is the Spanish of your head, your pillow and your conscience.",
+    es: "Le he dado mil vueltas y todavía no sé.\nAnoche caí en cuenta de que tendría que vender el carro.\nVoy a consultarlo con la almohada.",
+    en: "I've turned it over a thousand times and I still don't know.\nLast night it dawned on me that I'd have to sell the car.\nI'm going to sleep on it."
+  },
+  examples: [
+    { es: "Le he dado mil vueltas a la oferta de Panamá y todavía no me decido.", en: "I've turned the Panama offer over a thousand times and I still can't make up my mind." },
+    { es: "Anoche caí en cuenta de que, si me voy, mi mamá se queda sola en Tunja.", en: "Last night it dawned on me that, if I go, my mum will be left alone in Tunja." },
+    { es: "Tengo cargo de conciencia, pero se me ocurrió que podría traérmela a vivir conmigo.", en: "I feel guilty, but it occurred to me that I could bring her to live with me." }
+  ],
+  rule: "Thinking has its own verbs, and its own body parts.\nHard thinking: *Le di mil vueltas.* *Me estoy quebrando la cabeza.* Putting it off: *Voy a consultarlo con la almohada.*\nThe idea comes to you, with *se me*: *Se me ocurrió una idea.* The idea is the subject.\nThe moment it clicks: *Caí en cuenta de que...* Plain realising: *Me di cuenta de que...*\nA feeling you can't prove: *Me da la impresión de que...* *Sospecho que...*\nKeeping it in mind: *Tenlo presente.* Getting informed: *ponerse al tanto de*.\nGuilt: *tener cargo de conciencia*. Someone absent-minded is *despistado*.",
+  readAndPick: [
+    { q: "Who is the subject of *ocurrió*?", es: "Se me ocurrió una idea.",
+      options: ["The speaker herself", "The idea she had", "Someone else"], answer: 1,
+      why: "With *ocurrírsele*, the idea is the subject: it comes to you." },
+    { q: "When will he decide?", es: "Voy a consultarlo con la almohada.",
+      options: ["Right now", "When his pillow arrives", "After sleeping on it"], answer: 2,
+      why: "*Consultarlo con la almohada* is to sleep on a decision." },
+    { q: "What kind of realising is this?", es: "Anoche caí en cuenta de que tendría que vender el carro.",
+      options: ["A sudden click", "A slow, gradual one", "A mistaken one"], answer: 0,
+      why: "*Caer en cuenta* is the moment it clicks; *darse cuenta* is plain realising." },
+    { q: "How does she feel?", es: "Tengo cargo de conciencia por dejarla sola.",
+      options: ["Guilty about it all", "In charge of her care", "Fully aware of the facts"], answer: 0,
+      why: "*Tener cargo de conciencia* is to feel guilty: a moral weight." },
+    { q: "How sure is she?", es: "Me da la impresión de que mi jefe ya lo sabe.",
+      options: ["Completely certain", "She has a feeling", "She doesn't care"], answer: 1,
+      why: "*Me da la impresión de que* is a feeling she can't prove." }
+  ],
+  yourTurn: [
+    { en: "I'm going to sleep on it.", es: "Voy a consultarlo con la almohada.", accept: ["[Voy a consultarlo|Lo voy a consultar] con la almohada."] },
+    { en: "An idea occurred to me.", es: "Se me ocurrió una idea.", accept: [] },
+    { en: "It dawned on me that it was late.", es: "Caí en cuenta de que era tarde.", accept: ["Caí en (la) cuenta de que era tarde."] },
+    { en: "I've turned it over a thousand times.", es: "Le he dado mil vueltas.", accept: ["Le [he dado|di] mil vueltas."] },
+    { en: "I have a guilty conscience.", es: "Tengo cargo de conciencia.", accept: [] }
+  ],
+  translate: [
+    { en: "Bear in mind that the bank closes at noon on Saturdays, so go early.", es: "Ten presente que el banco cierra al mediodía los sábados, así que ve temprano.", accept: ["Ten [presente|en cuenta] que el banco cierra al mediodía los sábados, así que ve temprano."] },
+    { en: "I racked my brains all afternoon, and in the end the solution occurred to me in the shower.", es: "Me quebré la cabeza toda la tarde, y al final la solución se me ocurrió en la ducha.", accept: ["Me [quebré|rompí] la cabeza toda la tarde, y al final [la solución se me ocurrió|se me ocurrió la solución] en la ducha."] },
+    { en: "I was away for two weeks. Can you bring me up to date on how the project is going?", es: "Estuve dos semanas por fuera. ¿Me pones al tanto de cómo va el proyecto?", accept: ["Estuve dos semanas [por fuera|afuera|de viaje]. ¿Me pones al [tanto|día] de cómo va el proyecto?"] },
+    { en: "I get the impression my neighbour suspects something, because she doesn't say hello to me any more.", es: "Me da la impresión de que mi vecina sospecha algo, porque ya no me saluda.", accept: ["Me da la [impresión|sensación] de que mi vecina sospecha algo, porque ya no me saluda."] },
+    { en: "My brother is so absent-minded that he left his ID card at the notary's office again.", es: "Mi hermano es tan despistado que dejó la cédula en la notaría otra vez.", accept: ["Mi hermano es tan despistado que [dejó la cédula en la notaría otra vez|otra vez dejó la cédula en la notaría]."] },
+    { en: "Before signing, think it over twice; a twenty-year loan is no small thing.", es: "Antes de firmar, piénsalo dos veces; un crédito a veinte años no es poca cosa.", accept: ["Antes de firmar, piénsalo [dos veces|bien]; un crédito a veinte años no es poca cosa."] }
+  ],
+  register: [
+    { es: "Déjame pensarlo.", en: "Let me think about it.", when: "with anyone, plain" },
+    { es: "Lo voy a consultar con la almohada.", en: "I'll sleep on it.", when: "with friends and family, warmly" },
+    { es: "Me estoy quebrando la cabeza.", en: "I'm racking my brains.", when: "informal, when it's hard going" },
+    { es: "Lo estudiaremos con detenimiento.", en: "We will study it carefully.", when: "at work, answering a formal proposal" }
+  ],
+  personal: {
+    prompt: "Think of a decision you had to make. Write three lines: how you turned it over, the moment something clicked, and what you did in the end.",
+    constraints: [
+      { type: "containsAny", words: ["mil vueltas", "quebrando la cabeza", "quebré la cabeza", "rompí la cabeza", "con la almohada", "pensarlo dos veces", "lo pensé"], label: "turning it over: *le di mil vueltas*, *con la almohada*" },
+      { type: "containsAny", words: ["caí en cuenta", "caí en la cuenta", "se me ocurrió", "me di cuenta"], label: "the click: *caí en cuenta de que*, *se me ocurrió*" }
+    ],
+    model: "Le di mil vueltas a lo de estudiar en Medellín. Una noche caí en cuenta de que mi miedo era dejar a mis amigos, no la ciudad. Lo consulté con la almohada y al final me fui."
+  },
+  pitfalls: [
+    "*Me ocurrí una idea* is wrong: the idea is the subject, *se me ocurrió una idea*.",
+    "*Caer en cuenta* is the click; *darse cuenta* is plain realising: both take *de que*.",
+    "*Consultarlo con la almohada* is sleeping on it, not losing sleep over it."
+  ]
+},
+
+"nt-expresion-verbal-c1": {
+  source: "old",
+  hook: {
+    line: "Monday's all-staff meeting at an insurance company in Bogotá. The manager hints at cuts without saying so, your boss says exactly what she thinks, and afterwards in the corridor everyone tells the meeting their own way.",
+    es: "El gerente dejó caer que habría recortes.\nLa jefa, que no tiene pelos en la lengua, le soltó que eso era injusto.\nAl final él tuvo que aclarar que nadie se quedaba sin trabajo.",
+    en: "The manager hinted that there would be cuts.\nThe boss, who never minces her words, came straight out and told him it was unfair.\nIn the end he had to make clear that nobody was losing their job."
+  },
+  examples: [
+    { es: "El gerente dejó caer que habría recortes, pero cuando le preguntaron, dijo que no era seguro.", en: "The manager hinted that there would be cuts, but when they asked him, he said it wasn't certain." },
+    { es: "Mi jefa no tiene pelos en la lengua: le soltó delante de todos que eso era injusto.", en: "My boss never minces her words: she came straight out and told him in front of everyone that it was unfair." },
+    { es: "Durante la reunión sostuvo que las cifras eran buenas, pero luego tuvo que reconocer el error.", en: "During the meeting he maintained that the figures were good, but later he had to admit the mistake." }
+  ],
+  rule: "Spanish has a verb for each way of saying something, and choosing it is how you report fairly.\nHinting: *dejar caer que*, *dar a entender que*: said without quite saying it.\nBlurting: *soltar*: *Le soltó que era injusto.*\nHolding a position against opposition: *sostener que*, *mantener que*.\nGiving ground: *reconocer*, *admitir*. Correcting yourself: *rectificar*. Going against someone else: *contradecir*.\nMaking it clear: *aclarar*, *puntualizar*, *poner las cosas en claro*.\nTelling off: *regañar*; in Colombia, a long nagging lecture is *echar cantaleta*.\nAnd people: *no tiene pelos en la lengua*, *habla hasta por los codos*.",
+  readAndPick: [
+    { q: "Did the manager announce the cuts?", es: "El gerente dejó caer que habría recortes.",
+      options: ["Yes, officially", "No, he denied them", "He hinted at them, no more"], answer: 2,
+      why: "*Dejar caer* is to hint: he can deny later that he said it." },
+    { q: "What kind of person is the boss?", es: "La jefa no tiene pelos en la lengua.",
+      options: ["She speaks her mind", "She is shy and quiet", "She is often vague"], answer: 0,
+      why: "*No tener pelos en la lengua* is to say what you think, bluntly." },
+    { q: "Who did he correct?", es: "En la siguiente reunión, el gerente rectificó.",
+      options: ["Himself, his own words", "His boss, in public", "A colleague's sums, again"], answer: 0,
+      why: "*Rectificar* corrects what you said yourself; *contradecir* goes against someone else." },
+    { q: "What did his mother do?", es: "Mi mamá me echó la cantaleta por llegar tarde.",
+      options: ["Sang him a lullaby", "Gave him a long lecture", "Cooked him dinner"], answer: 1,
+      why: "In Colombia *echar cantaleta* is a long, nagging telling-off." },
+    { q: "How did the colleague behave in the meeting?", es: "Andrés habla hasta por los codos.",
+      options: ["He barely spoke", "He spoke with his hands", "He talked nonstop"], answer: 2,
+      why: "*Hablar hasta por los codos* is to talk without stopping." }
+  ],
+  yourTurn: [
+    { en: "He hinted that there would be cuts.", es: "Dejó caer que habría recortes.", accept: ["[Dejó caer|Dio a entender] que [habría|iba a haber] recortes."] },
+    { en: "She never minces her words.", es: "No tiene pelos en la lengua.", accept: ["(Ella) no tiene pelos en la lengua."] },
+    { en: "In the end he had to admit the mistake.", es: "Al final tuvo que reconocer el error.", accept: ["Al final tuvo que [reconocer|admitir] [el|su] error."] },
+    { en: "My mother gave me a long telling-off. (Colombia)", es: "Mi mamá me echó la cantaleta.", accept: ["Mi [mamá|madre] me echó (la) cantaleta."] },
+    { en: "The meeting served to clear things up.", es: "La reunión sirvió para poner las cosas en claro.", accept: ["La reunión sirvió para [poner las cosas en claro|aclarar las cosas]."] }
+  ],
+  translate: [
+    { en: "She maintained her position despite the criticism, and in the end the board agreed with her.", es: "Sostuvo su posición pese a las críticas, y al final la junta le dio la razón.", accept: ["[Sostuvo|Mantuvo] su [posición|postura] [pese a|a pesar de] las críticas, y al final la junta le dio la razón."] },
+    { en: "My uncle talks nonstop; at lunch nobody else could say a thing.", es: "Mi tío habla hasta por los codos; en el almuerzo nadie más pudo decir nada.", accept: ["Mi tío habla (hasta) por los codos; en el almuerzo nadie más pudo decir nada."] },
+    { en: "The minister didn't say it directly. But she let us understand that the project wouldn't continue.", es: "La ministra no lo dijo directamente. Pero nos dio a entender que el proyecto no seguiría.", accept: ["La ministra no lo dijo directamente. Pero nos [dio a entender|dejó caer] que el proyecto no [seguiría|iba a seguir|continuaría]."] },
+    { en: "In the middle of dinner he came out with the news that he was moving to Spain in January.", es: "En plena comida nos soltó que se iba a vivir a España en enero.", accept: ["En [plena comida|medio de la comida|la mitad de la comida] nos soltó que se iba a vivir a España en enero."] },
+    { en: "I want to clarify one detail: the meeting is on Thursday, not Friday.", es: "Quiero puntualizar un detalle: la reunión es el jueves, no el viernes.", accept: ["Quiero [puntualizar|aclarar|precisar] un detalle: la reunión es el jueves, no el viernes."] },
+    { en: "The company issued an official statement and admitted that the data had been leaked.", es: "La empresa emitió un comunicado oficial y reconoció que los datos se habían filtrado.", accept: ["La empresa [emitió|publicó|sacó] un comunicado oficial y [reconoció|admitió] que los datos se habían filtrado."] }
+  ],
+  register: [
+    { es: "Me echó la cantaleta.", en: "She nagged me no end.", when: "in Colombia, telling it to a friend" },
+    { es: "Me regañó.", en: "She told me off.", when: "anywhere, plain" },
+    { es: "Me llamó la atención.", en: "She gave me a warning.", when: "at work, about a formal reprimand" },
+    { es: "La empresa emitió un comunicado.", en: "The company issued a statement.", when: "the news, or a formal report" }
+  ],
+  personal: {
+    prompt: "Report a meeting, a family lunch or an argument you were part of. Use three different verbs of saying, so the reader knows exactly how each thing was said.",
+    constraints: [
+      { type: "containsAny", words: ["dejó caer", "dio a entender", "soltó", "sostuvo", "mantuvo", "reconoció", "admitió", "rectificó", "aclaró", "puntualizó", "contradijo", "echó la cantaleta"], label: "a precise verb of saying: *dejó caer*, *soltó*, *reconoció*" },
+      { type: "regex", pattern: "(dejó caer|dio a entender|soltó|sostuvo|mantuvo|reconoció|admitió|rectificó|aclaró|puntualizó|contradijo|regañó)[\\s\\S]*(dejó caer|dio a entender|soltó|sostuvo|mantuvo|reconoció|admitió|rectificó|aclaró|puntualizó|contradijo|regañó)[\\s\\S]*(dejó caer|dio a entender|soltó|sostuvo|mantuvo|reconoció|admitió|rectificó|aclaró|puntualizó|contradijo|regañó)", label: "three of them in the report" }
+    ],
+    model: "En el almuerzo mi tía dejó caer que la finca estaba en venta. Mi primo, que no tiene pelos en la lengua, le soltó que eso era una locura. Al final ella aclaró que solo era una idea."
+  },
+  pitfalls: [
+    "*Dejar caer* is not dropping: *dejó caer que* means he hinted it.",
+    "*Rectificar* corrects yourself; *contradecir* contradicts someone else.",
+    "*Echar cantaleta* is Colombian; elsewhere you may hear *echar un sermón*."
+  ]
+},
+
+"task-c1-emocion": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: twenty sentences or more about a relationship or a decision where what you felt was mixed and hard to name. The model is about selling a family house, and it never once says *sad*.",
+    es: "Cuando por fin vendimos la casa, no sentí lo que esperaba sentir.\nAl salir de la notaría se me encogió el estómago.\nSi pudiera devolver el tiempo, le tomaría una foto al jardín.",
+    en: "When we finally sold the house, I didn't feel what I expected to feel.\nAs we left the notary's office, my stomach turned over.\nIf I could turn back time, I'd take a photo of the garden."
+  },
+  examples: [
+    { es: "Durante meses dije que vender la casa me quitaría un peso de encima, y en parte fue así.", en: "For months I said selling the house would take a weight off my mind, and in part it did." },
+    { es: "No es que la extrañara: era el último lugar donde mi papá había estado bien.", en: "It's not that I missed it: it was the last place where my dad had been well." },
+    { es: "Me arrepiento de no haberle tomado una foto al jardín; es una bobada, ya lo sé.", en: "I regret not taking a photo of the garden; it's a silly thing, I know." }
+  ],
+  rule: "The task: twenty sentences or more about a feeling that was mixed and hard to name. At this level emotion is not louder; it is more exact. Four moves from this unit:\nUnderstatement: *no me emocionó mucho que digamos*, which means it didn't at all.\nThe body: *se me encogió el estómago*, *se me arrugó el corazón*.\nDenying the easy reading: *No es que la extrañara: era...*, with the subjunctive.\nRegret, in its fixed frames: *me arrepiento de no haber...*, *si pudiera devolver el tiempo...*\nShow the feeling rather than name it: *triste* once is plenty.",
+  readAndPick: [
+    { q: "How excited was he?", es: "No me emocionó mucho que digamos.",
+      options: ["Very, he was thrilled", "A little, at first", "Not at all, really"], answer: 2,
+      why: "*Que digamos* turns the phrase into understatement: it didn't excite him at all." },
+    { q: "Does she miss the house?", es: "No es que la extrañara: era el último lugar donde mi papá estuvo bien.",
+      options: ["Yes, very much indeed", "Not the house itself", "She never lived there"], answer: 1,
+      why: "*No es que* plus the subjunctive denies the easy reading and gives the real one." },
+    { q: "What happened in her body?", es: "Al salir de la notaría se me encogió el estómago.",
+      options: ["She felt a sudden pang", "She was very hungry", "She felt sick from lunch"], answer: 0,
+      why: "*Se me encogió el estómago*: the feeling arrives in the body before it has a name." },
+    { q: "Why not just write *estaba triste*?", es: "Se me arrugó el corazón al cerrar la puerta.",
+      options: ["Showing is more exact", "It's grammatically wrong", "It sounds too formal"], answer: 0,
+      why: "Naming the feeling tells; the body and the moment show it, more exactly." },
+    { q: "What does she regret?", es: "Me arrepiento de no haberle tomado una foto al jardín.",
+      options: ["Taking too many photos", "Not taking one photo", "Selling the garden"], answer: 1,
+      why: "*De no haber* plus a participle regrets something not done." }
+  ],
+  yourTurn: [
+    { en: "It didn't exactly thrill me.", es: "No me emocionó mucho que digamos.", accept: [] },
+    { en: "My stomach turned over.", es: "Se me encogió el estómago.", accept: [] },
+    { en: "It's not that I missed it. (the house)", es: "No es que la extrañara.", accept: [] },
+    { en: "I regret not taking a photo.", es: "Me arrepiento de no haber tomado una foto.", accept: ["Me arrepiento de no haber [tomado|sacado] una foto."] }
+  ],
+  translate: [
+    { en: "When we finally sold the house, I didn't feel what I expected to feel.", es: "Cuando por fin vendimos la casa, no sentí lo que esperaba sentir.", accept: ["Cuando por fin vendimos la casa, no sentí lo que [esperaba|creía que iba a] sentir."] },
+    { en: "The day we signed I slept eight hours straight, for the first time in a year.", es: "El día que firmamos dormí ocho horas seguidas, por primera vez en un año.", accept: ["El día (en) que firmamos dormí ocho horas seguidas, por primera vez en un año."] },
+    { en: "It's a silly thing, I know. But if I could turn back time, I'd take that photo.", es: "Es una bobada, ya lo sé. Pero si pudiera devolver el tiempo, tomaría esa foto.", accept: ["Es una [bobada|tontería], ya lo sé. Pero si pudiera devolver el tiempo, [tomaría|sacaría] esa foto."] },
+    { en: "The new owners were very kind, and somehow that made it harder.", es: "Los nuevos dueños fueron muy amables, y de alguna manera eso lo hizo más difícil.", accept: ["Los nuevos dueños fueron muy amables, y de alguna [manera|forma] eso lo hizo más difícil."] },
+    { en: "It's not that I was sad: it was that, without the house, the family had no excuse to meet.", es: "No es que estuviera triste: es que, sin la casa, la familia ya no tenía excusa para reunirse.", accept: ["No es que estuviera triste: es que, sin la casa, la familia ya no tenía [excusa|pretexto] para reunirse.", "No es que estuviera triste, sino que, sin la casa, la familia ya no tenía [excusa|pretexto] para reunirse."] },
+    { en: "My brother laughed at everything, but on the way home he didn't say a word.", es: "Mi hermano se reía de todo, pero en el camino de vuelta no dijo ni una palabra.", accept: ["Mi hermano se [reía|rió] de todo, pero en el camino de [vuelta|regreso] no dijo ni una palabra."] }
+  ],
+  register: [
+    { es: "Estaba triste.", en: "I was sad.", when: "a plain fact, once, when nothing else will do" },
+    { es: "Se me encogió el estómago.", en: "My stomach turned over.", when: "in a story, to show the moment" },
+    { es: "No me emocionó mucho que digamos.", en: "It didn't exactly thrill me.", when: "with friends, as a dry understatement" },
+    { es: "Fue un momento de sentimientos encontrados.", en: "It was a moment of mixed feelings.", when: "in a formal text or a speech" }
+  ],
+  personal: {
+    prompt: "Write the opening of your piece: four or five sentences about a moment when what you felt was mixed. Show it in the body, deny the easy reading, and add one regret.",
+    constraints: [
+      { type: "regex", pattern: "se me (encogió|arrugó|hizo|partió|puso|pusieron)\\s", label: "the body: *se me encogió el estómago*" },
+      { type: "subjunctiveAfter", trigger: "no es que", label: "deny the easy reading: *no es que* plus the subjunctive" },
+      { type: "containsAny", words: ["me arrepiento de", "si pudiera devolver", "si volviera a nacer", "debí haber", "no debí"], label: "one regret: *me arrepiento de no haber...*" },
+      { type: "minSentences", n: 4, label: "four sentences or more" }
+    ],
+    model: "Cuando mi hermana se fue a vivir a Madrid, la llevé al aeropuerto sin decir casi nada. En la puerta de embarque se me encogió el estómago. No es que no me alegrara por ella: es que la casa iba a quedar en silencio. Me arrepiento de no haberle dicho cuánto la iba a extrañar."
+  },
+  pitfalls: [
+    "*No me hizo especial ilusión* is Spain; in Colombia, *no me emocionó mucho que digamos*.",
+    "*No es que la extrañaba* is wrong: *no es que* takes the subjunctive, *extrañara*.",
+    "Twenty sentences of *estaba triste* is a list, not a feeling: show it in the body at least once."
   ]
 }
 

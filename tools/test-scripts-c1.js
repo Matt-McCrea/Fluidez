@@ -1,6 +1,6 @@
 /* Node test for the C1 teaching scripts (data/scripts/c1.js). Run: node tools/test-scripts-c1.js
- * Every lesson on the path in the first four C1 units (read from COURSE_BANDS.C1,
- * not hard-coded: c1-u55 to c1-u58) is taught by a script, either its own or one that lists it in
+ * Every lesson on the path in the first six C1 units (read from COURSE_BANDS.C1,
+ * not hard-coded: c1-u55 to c1-u60) is taught by a script, either its own or one that lists it in
  * `serves`; every script has the anatomy the B1 test checks
  * (tools/test-scripts-b1.js: 2 to 3 examples before a rule under 120 words,
  * 4 to 6 read-and-pick items whose option lengths and positions give nothing
@@ -52,8 +52,8 @@ const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 const sentences = (s) => (plain(s).match(/[^.!?]+[.!?]+/g) || []).filter((x) => /[a-záéíóúñ]/i.test(x));
 
-// ---- the lessons on the path: the first four units from the start of C1
-const N_UNITS = 4;
+// ---- the lessons on the path: the first six units from the start of C1
+const N_UNITS = 6;
 const c1 = window.COURSE_BANDS.C1;
 const units = [];
 for (let i = c1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -64,7 +64,7 @@ const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.C1, found ' + UNITS.length);
 const pathDays = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0);
 const want = pathDays.filter((d) => d.lesson).map((d) => d.lesson);
-ok(want.length === 55, 'expected 55 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 86, 'expected 86 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'fn-afecto-sensaciones-c1', 'the first C1 day should be fn-afecto-sensaciones-c1, found ' + want[0]);
 
 // the day each lesson sits on; every tense is built before C1 starts
