@@ -1201,3 +1201,6 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .nat-summary { font-size:1.15rem; font-weight:600; margin:14px 0 18px; }
 .nat-locked { margin:10px 4px 0; }
 .nat-groups { margin-top:12px; }
+
+/* dialogue in lesson fields is one turn per line (the dash pass): keep the breaks */
+.ex-es, .ex-en, .moment-line, .guess-q, .contrast-es, .contrast-en, .exp-es, .exp-en { white-space:pre-line; }

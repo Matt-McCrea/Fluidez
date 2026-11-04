@@ -14,7 +14,7 @@ window.CONCEPT_LESSONS = [
 {
   id: 'ser-estar', title: 'Ser vs. Estar', level: 1,
   deeper: ['gr-atributo-a1'],
-  canDo: 'say what something IS and what state it is IN — and hear the difference',
+  canDo: 'say what something IS and what state it is IN, and hear the difference',
   summary: 'Spanish splits "to be" into two verbs. Ser is for identity and essence; estar is for states, locations and conditions. Getting this right changes your meaning, not just your accuracy.',
   keywords: [
     { es: 'ser', en: 'to be (identity, origin, what something IS)' },
@@ -31,8 +31,8 @@ window.CONCEPT_LESSONS = [
   ],
   sections: [
     { h: 'The core idea', html: '<b>Ser</b> = what something fundamentally <i>is</i> (identity, origin, defining traits, time). <b>Estar</b> = what condition or place it is <i>in</i> right now (states, feelings, location).' },
-    { h: 'Use SER for', html: '<ul><li>Identity: <i>Soy profesor.</i> — I\'m a teacher.</li><li>Origin: <i>Es de México.</i> — He/She is from Mexico.</li><li>Defining traits: <i>Ella es alta.</i> — She is tall.</li><li>Time/dates: <i>Son las tres.</i> — It\'s three o\'clock.</li></ul>' },
-    { h: 'Use ESTAR for', html: '<ul><li>Location: <i>Estoy en casa.</i> — I\'m at home.</li><li>Feelings/conditions: <i>Estás cansado.</i> — You\'re tired.</li><li>Ongoing actions: <i>Está lloviendo.</i> — It\'s raining.</li></ul>' }
+    { h: 'Use SER for', html: '<ul><li>Identity: <i>Soy profesor.</i> (I\'m a teacher.)</li><li>Origin: <i>Es de México.</i> (He/She is from Mexico.)</li><li>Defining traits: <i>Ella es alta.</i> (She is tall.)</li><li>Time/dates: <i>Son las tres.</i> (It\'s three o\'clock.)</li></ul>' },
+    { h: 'Use ESTAR for', html: '<ul><li>Location: <i>Estoy en casa.</i> (I\'m at home.)</li><li>Feelings/conditions: <i>Estás cansado.</i> (You\'re tired.)</li><li>Ongoing actions: <i>Está lloviendo.</i> (It\'s raining.)</li></ul>' }
   ],
   contrasts: [
     { es: 'Es aburrido.', en: 'He is boring.', note: 'ser = character' },
@@ -41,8 +41,8 @@ window.CONCEPT_LESSONS = [
     { es: 'Está rico.', en: 'It (food) is delicious.', note: 'estar = condition' }
   ],
   pitfalls: [
-    'Feelings are almost always <b>estar</b>: <i>estoy feliz</i> (I\'m happy), <i>estoy triste</i> (I\'m sad) — not <i>soy</i>.',
-    'Location of a thing/person uses <b>estar</b>, but location of an <i>event</i> uses <b>ser</b>: <i>La fiesta es en mi casa.</i> — The party is at my house.'
+    'Feelings are almost always <b>estar</b>: <i>estoy feliz</i> (I\'m happy), <i>estoy triste</i> (I\'m sad), not <i>soy</i>.',
+    'Location of a thing/person uses <b>estar</b>, but location of an <i>event</i> uses <b>ser</b>: <i>La fiesta es en mi casa.</i> (The party is at my house.)'
   ],
   examples: [
     { es: 'Soy de Escocia, pero estoy en España.', en: 'I am from Scotland, but I am in Spain.' },
@@ -71,7 +71,7 @@ window.CONCEPT_LESSONS = [
     { es: 'verde', en: 'green' }
   ],
   sections: [
-    { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>, the book); most ending in <b>-a</b> are feminine (<i>la casa</i>, the house). Learn each noun <i>with</i> its article — that\'s why our vocab shows <i>el / la</i>.' },
+    { h: 'The patterns', html: 'Most nouns ending in <b>-o</b> are masculine (<i>el libro</i>, the book); most ending in <b>-a</b> are feminine (<i>la casa</i>, the house). Learn each noun <i>with</i> its article: that\'s why our vocab shows <i>el / la</i>.' },
     { h: 'The four articles', html: '“the” = <b>el, la, los, las</b>. “a/an” = <b>un, una</b>; “some” = <b>unos, unas</b>. They agree in gender <i>and</i> number with the noun.' },
     { h: 'Agreement chain', html: 'Article + noun + adjective all agree: <i>l<b>a</b>s cas<b>a</b>s blanc<b>a</b>s</i> (the white houses). Change one, change all.' }
   ],
@@ -120,7 +120,7 @@ window.CONCEPT_LESSONS = [
   ],
   pitfalls: [
     'Time markers hint at the choice: <i>ayer, anoche, el lunes</i> → preterite; <i>siempre, todos los días, mientras</i> → imperfect.',
-    'Age, time, weather and feelings in the past are usually <b>imperfect</b>: <i>Tenía diez años. Eran las tres. Hacía frío.</i> — I was ten. It was three o\'clock. It was cold.'
+    'Age, time, weather and feelings in the past are usually <b>imperfect</b>: <i>Tenía diez años. Eran las tres. Hacía frío.</i> (I was ten. It was three o\'clock. It was cold.)'
   ],
   examples: [
     { es: 'Mientras estudiaba, sonó el teléfono.', en: 'While I was studying, the phone rang.' },
@@ -131,9 +131,9 @@ window.CONCEPT_LESSONS = [
     { id: 'g:pretimp:event', front: 'Past tense for a finished event ("ayer…")', back: 'preterito' }
   ],
   probes: [
-    { id: 'p:pretimp:ayer', kind: 'cloze', text: 'Ayer ___ paella en un restaurante. (comer — yo, one finished meal)', accept: ['comí'] },
-    { id: 'p:pretimp:antes', kind: 'cloze', text: 'De niño ___ mucho chocolate. (comer — yo, a repeated habit)', accept: ['comía'] },
-    { id: 'p:pretimp:sentido', kind: 'mcq', q: '"Every summer we went to the beach" — which past is that?',
+    { id: 'p:pretimp:ayer', kind: 'cloze', text: 'Ayer ___ paella en un restaurante. (comer: yo, one finished meal)', accept: ['comí'] },
+    { id: 'p:pretimp:antes', kind: 'cloze', text: 'De niño ___ mucho chocolate. (comer: yo, a repeated habit)', accept: ['comía'] },
+    { id: 'p:pretimp:sentido', kind: 'mcq', q: '"Every summer we went to the beach": which past is that?',
       options: ['Fuimos a la playa.', 'Íbamos a la playa.'], answer: 1 }
   ]
 },
@@ -152,8 +152,8 @@ window.CONCEPT_LESSONS = [
     { es: 'el parque', en: 'the park' }
   ],
   sections: [
-    { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i> — I study in order to learn.</li><li>Recipient: <i>Es para ti.</i> — It\'s for you.</li><li>Destination: <i>Salgo para Madrid.</i> — I\'m leaving for Madrid.</li><li>Deadline: <i>Para el lunes.</i> — By Monday.</li></ul>' },
-    { h: 'POR = cause / exchange / through', html: '<ul><li>Reason: <i>Lo hago por amor.</i> — I do it out of love.</li><li>Exchange: <i>Pagué diez euros por el libro.</i> — I paid ten euros for the book.</li><li>Duration: <i>Estudié por dos horas.</i> — I studied for two hours.</li><li>Movement through: <i>Camino por el parque.</i> — I walk through the park.</li></ul>' }
+    { h: 'PARA = destination / purpose', html: '<ul><li>Goal: <i>Estudio para aprender.</i> (I study in order to learn.)</li><li>Recipient: <i>Es para ti.</i> (It\'s for you.)</li><li>Destination: <i>Salgo para Madrid.</i> (I\'m leaving for Madrid.)</li><li>Deadline: <i>Para el lunes.</i> (By Monday.)</li></ul>' },
+    { h: 'POR = cause / exchange / through', html: '<ul><li>Reason: <i>Lo hago por amor.</i> (I do it out of love.)</li><li>Exchange: <i>Pagué diez euros por el libro.</i> (I paid ten euros for the book.)</li><li>Duration: <i>Estudié por dos horas.</i> (I studied for two hours.)</li><li>Movement through: <i>Camino por el parque.</i> (I walk through the park.)</li></ul>' }
   ],
   contrasts: [
     { es: 'Trabajo para mi jefe.', en: 'I work for my boss.', note: 'para = the goal/recipient' },
@@ -175,7 +175,7 @@ window.CONCEPT_LESSONS = [
 
 {
   id: 'impneg', canDo: 'tell someone NOT to do something', title: 'Imperativo negativo', level: 4,
-  summary: 'Negative commands ("don\'t speak!") are built entirely from the present subjunctive — including tú, which has its own special form in the affirmative but switches to the subjunctive here.',
+  summary: 'Negative commands ("don\'t speak!") are built entirely from the present subjunctive, including tú, which has its own special form in the affirmative but switches to the subjunctive here.',
   keywords: [
     { es: 'No hables.', en: 'Don\'t speak.' },
     { es: 'No comas.', en: 'Don\'t eat.' },
@@ -192,13 +192,13 @@ window.CONCEPT_LESSONS = [
     { h: 'When to use it', html: '<ul><li>Telling someone not to do something: <i>No corras.</i></li><li>Group instructions: <i>No lleguéis tarde.</i></li></ul>' }
   ],
   contrasts: [
-    { es: 'Habla más despacio.', en: 'Speak more slowly.', note: 'affirmative tú — its own irregular form' },
-    { es: 'No hables tan rápido.', en: 'Don\'t speak so fast.', note: 'negative tú — subjunctive form instead' },
+    { es: 'Habla más despacio.', en: 'Speak more slowly.', note: 'affirmative tú: its own irregular form' },
+    { es: 'No hables tan rápido.', en: 'Don\'t speak so fast.', note: 'negative tú: subjunctive form instead' },
     { es: 'Ven aquí.', en: 'Come here.', note: 'affirmative tú, irregular' },
     { es: 'No vengas tarde.', en: 'Don\'t come late.', note: 'negative tú, subjunctive' }
   ],
   pitfalls: [
-    'Negative tú is NOT the same shape as affirmative tú: <i>¡Habla!</i> but <i>¡No hables!</i> — saying <i>no habla</i> is a very common mistake.',
+    'Negative tú is NOT the same shape as affirmative tú: <i>¡Habla!</i> but <i>¡No hables!</i> Saying <i>no habla</i> is a very common mistake.',
     'Object pronouns attach to the END in the affirmative (<i>¡Dímelo!</i>) but come BEFORE the verb in the negative (<i>¡No me lo digas!</i>).'
   ],
   examples: [
@@ -208,8 +208,8 @@ window.CONCEPT_LESSONS = [
   ],
   recall: [
     { id: 'g:impneg:mood', front: 'Negative commands (no hables, no coma, no vayamos) are built from which mood?', back: 'subjuntivo' },
-    { id: 'g:impneg:tu', front: 'Negative tú command of "hablar" — no ___', back: 'hables' },
-    { id: 'g:impneg:nosotros', front: 'Negative nosotros command of "comer" ("let\'s not eat") — no ___', back: 'comamos' }
+    { id: 'g:impneg:tu', front: 'Negative tú command of "hablar": no ___', back: 'hables' },
+    { id: 'g:impneg:nosotros', front: 'Negative nosotros command of "comer" ("let\'s not eat"): no ___', back: 'comamos' }
   ]
 }
 
