@@ -5640,9 +5640,11 @@ var LIB = (() => {
     expandAccept: () => expandAccept,
     expandAcceptList: () => expandAcceptList,
     expandAccepted: () => expandAccepted,
+    gapTrap: () => gapTrap,
     matchEnglish: () => matchEnglish,
     matchTranslation: () => matchTranslation,
     normEnglish: () => normEnglish,
+    noteVariants: () => noteVariants,
     peninsularVariants: () => peninsularVariants,
     pitfallFor: () => pitfallFor,
     registerVariants: () => registerVariants,
@@ -5653,7 +5655,8 @@ var LIB = (() => {
     subjunctiveVariants: () => subjunctiveVariants,
     submitAttempt: () => submitAttempt,
     swapNote: () => swapNote,
-    touches: () => touches
+    touches: () => touches,
+    trapDiagnose: () => diagnose2
   });
 
   // lib/match/support/spanish.ts
@@ -8291,6 +8294,10 @@ var LIB = (() => {
     var _a2;
     return (_a2 = byId.get(id)) != null ? _a2 : byId.get(id.split(":")[0]);
   }
+  function englishAspect(en) {
+    const e = en.toLowerCase();
+    return EN_IMPERFECT.test(e) ? "imperfecto" : EN_PRETERITE.test(e) ? "preterito" : null;
+  }
 
   // lib/match/traps/pitfalls.ts
   var pitfallKey = (text) => {
@@ -8337,6 +8344,24 @@ var LIB = (() => {
     const ask = ASK_TEXT[dg.kind];
     if (ask) return { tier: "ask", kind: dg.kind, hint: ask, at: dg.at };
     return { tier: "silent", kind: dg.kind, hint: dg.hint, at: dg.at };
+  }
+  function gapTrap(hint, ctx) {
+    var _a2, _b, _c;
+    if (!hint) return void 0;
+    const { kind } = hint;
+    if (kind === "mood") {
+      const before = (_a2 = ctx.before) != null ? _a2 : [];
+      const answer = ctx.answer.toLowerCase();
+      return ideaForm(answer) && triggered([...before, answer], before.length) ? { tier: "assert", rule: "mood-hard", kind, hint: textOf("mood-hard") } : { tier: "ask", kind, hint: ASK_TEXT.mood };
+    }
+    if (kind === "aspect") {
+      const lock = englishAspect((_b = ctx.en) != null ? _b : "");
+      const rs = verbReadings(ctx.answer.toLowerCase());
+      const ans = rs.some((r) => r.tense === "presente") ? void 0 : (_c = rs.find((r) => r.tense === "preterito" || r.tense === "imperfecto")) == null ? void 0 : _c.tense;
+      return lock && ans === lock ? { tier: "assert", rule: "aspect-locked", kind, hint: textOf("aspect-locked") } : { tier: "ask", kind, hint: ASK_TEXT.aspect };
+    }
+    if (kind === "ser-estar" || kind === "por-para") return { tier: "ask", kind, hint: ASK_TEXT[kind] };
+    return { tier: "silent", kind, hint: hint.hint };
   }
   var PASSIVE_VERBS = /* @__PURE__ */ new Set(["vender", "construir", "publicar", "firmar", "escribir", "aprobar", "fundar", "descubrir", "celebrar", "resolver", "arreglar", "enviar", "pagar", "cobrar", "prohibir", "permitir"]);
   var SER_FORM = { presente: ["es", "son"], preterito: ["fue", "fueron"], imperfecto: ["era", "eran"], futuro: ["ser\xE1", "ser\xE1n"] };

@@ -14,4 +14,4 @@ export { swapNote, touches } from './swaps';
 export type { Swap, SwapKind } from './swaps';
 export type { ExpandOptions, Register, Variant } from './variants';
 export { expandAccept, expandAcceptList, MAX_EXPANSION } from './accept';
-export { RULES, ruleOf, pitfallFor } from './traps';
+export { RULES, ruleOf, pitfallFor, diagnose as trapDiagnose, gapTrap, noteVariants } from './traps';
