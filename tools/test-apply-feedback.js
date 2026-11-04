@@ -28,6 +28,16 @@ const gap = { type: 'choice', bankKind: 'gap', text: 'Este regalo es ___ ti.  «
 h = F.hintFor(gap, 'por', 'para');
 ok(h && h.matched && h.kind === 'por-para', 'por/para named'); fired.push('por-para: ' + h.hint);
 
+// mood: indicative for subjunctive after quiero que
+const mood = { type: 'cloze', text: 'Quiero que tú ___ (venir) mañana.  «I want you to come tomorrow.»', inf: 'venir', tense: 'subjuntivo', person: 'tú' };
+h = F.hintFor(mood, 'vienes', 'vengas');
+ok(h && h.matched && h.kind === 'mood', 'mood swap named'); fired.push('mood (' + h.tier + '): ' + h.hint);
+
+// aspect: preterite for imperfect in a habitual sentence
+const asp = { type: 'cloze', text: 'Cuando era niño, yo siempre ___ (jugar) en el parque.  «When I was a kid, I always used to play in the park.»', inf: 'jugar', tense: 'imperfecto', person: 'yo' };
+h = F.hintFor(asp, 'jugué', 'jugaba');
+ok(h && h.matched && h.kind === 'aspect', 'aspect swap named'); fired.push('aspect (' + h.tier + '): ' + h.hint);
+
 // an unmatched error is not named (it gets the diff)
 h = F.hintFor(cloze, 'xyzzy', 'hablo');
 ok(h && !h.matched, 'unnamed error is not matched');
@@ -61,7 +71,7 @@ ok(F.choicePrompt({ bankKind: 'read', text: '“Hablábamos mucho.”  Who is do
 ok(F.choicePrompt({ bankKind: 'match', text: '“I eat.”  Which sentence says this?' }).q === 'Which sentence says this?', 'match prompt');
 ok(F.choicePrompt(gap).q === 'Which word goes in the gap?', 'gap prompt');
 ok(F.whyWrong({ why: 'Because.' }, 'por', 'para') === 'Because.', 'own why wins');
-ok(/Por or para/.test(F.whyWrong(gap, 'por', 'para')), 'trap hint when no why');
+ok(/por or para/i.test(F.whyWrong(gap, 'por', 'para')), 'trap hint when no why');
 ok(F.whyWrong({ bankKind: 'read', text: 'x' }, 'a', 'b') === 'Not this one. The sentence needs b.', 'neutral line');
 ok(!/[—–]| - /.test(F.whyWrong({ bankKind: 'read' }, 'a', 'b')), 'no dashes');
 

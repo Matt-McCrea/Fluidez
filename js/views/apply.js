@@ -44,13 +44,23 @@ window.StageApply = (function () {
     var m = libMatch(lib);
     if (!m || !String(typed || '').trim()) return null;
     try {
-      if (m.pitfallFor && it.nodes) {
-        var pf = m.pitfallFor(it.nodes, typed);
-        if (pf && pf.why) return { matched: true, hint: pf.why, kind: 'pitfall' };
-      }
+      var nodes = it.nodes || it.t; if (typeof nodes === 'string') nodes = [nodes];
+      var en = it.en || ((/«([^»]*)»\s*$/.exec(String(it.text || ''))) || [])[1] || '';
       var ta = tokensOf(m, sentenceOf(it, typed)), tb = tokensOf(m, sentenceOf(it, answer));
       if (ta.join(' ') === tb.join(' ')) return null;
-      var d = m.diagnose(ta, tb);
+      var d = m.diagnose(ta, tb), tr;
+      if (it.bankKind === 'gap' && m.gapTrap) {
+        var pre = String(it.text || '').split('___')[0];
+        var before = pre.toLowerCase().split(/[^a-záéíóúüñ]+/).filter(Boolean);
+        tr = m.gapTrap(d, { before: before, en: en, answer: String(answer) });
+      } else if (m.trapDiagnose) {
+        tr = m.trapDiagnose({ a: ta, b: tb, input: String(typed), en: en, dg: d, nodes: nodes });
+      }
+      if (tr) return { matched: tr.tier === 'assert' || tr.tier === 'ask' || !UNNAMED[tr.kind], hint: tr.hint, kind: tr.kind, tier: tr.tier, rule: tr.rule };
+      if (m.pitfallFor && nodes) {
+        var pf = m.pitfallFor(nodes, typed);
+        if (pf && pf.why) return { matched: true, hint: pf.why, kind: 'pitfall' };
+      }
       return { matched: !UNNAMED[d.kind], hint: d.hint, kind: d.kind };
     } catch (e) { return null; }
   }
