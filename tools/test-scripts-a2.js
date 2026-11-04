@@ -1,6 +1,6 @@
 /* Node test for the A2 teaching scripts (data/scripts/a2.js). Run: node tools/test-scripts-a2.js
- * A copy of tools/test-scripts.js pointed at SCRIPTS_A2 and the first four A2 units
- * (a2-u15, a2-u16, a2-u18, a2-u19; a2-u14 and a2-u17 sit in the A1 band).
+ * A copy of tools/test-scripts.js pointed at SCRIPTS_A2 and the first eight A2 units
+ * (a2-u15, a2-u16, a2-u18 to a2-u23; a2-u14 and a2-u17 sit in the A1 band).
  * Every lesson on the path in those units has a script; every script
  * has the anatomy the evidence asks for (2 to 3 examples before a rule of under
  * 130 words, 4 to 6 read-and-pick items whose option lengths give nothing away,
@@ -23,7 +23,7 @@ const M = window.LIB.match, C = window.Checker, SC = window.SCRIPTS_A2;
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
-const UNITS = ['a2-u15', 'a2-u16', 'a2-u18', 'a2-u19'];
+const UNITS = ['a2-u15', 'a2-u16', 'a2-u18', 'a2-u19', 'a2-u20', 'a2-u21', 'a2-u22', 'a2-u23'];
 const DASH = /[—–]|\s-\s|^-\s|\s-$/m;
 const JARGON = /\b(stress(ed)?|clitics?|register|conjugat\w*|infinitives?|pronouns?|adjectives?|nouns?|intonation|interrogatives?|subjunctive|indicative|imperative|masculine|feminine|morphemes?|syllables?|tenses?)\b/i;
 const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-záéíóúñ])/i;
@@ -38,9 +38,9 @@ const lines = (s) => String(s).split('\n').length;
 
 // ---- the lessons on the path, read from the course itself
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 19, 'expected 19 lessons on the path in the first four A2 units, found ' + want.length);
+ok(want.length === 42, 'expected 42 lessons on the path in the first eight A2 units, found ' + want.length);
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the first four A2 units'));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the first eight A2 units'));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -161,7 +161,32 @@ Object.keys(SC).forEach((id) => {
  ['fn-acceder-peticion-a2', 1, 'Qué pena, pero no quiero.'], ['fn-acceder-peticion-a2', 4, 'Vale, ya voy.'],
  ['dc-atenuacion-1apersona-a2', 1, '¿Se puede pago con tarjeta?'], ['dc-atenuacion-1apersona-a2', 3, 'Hay llegar a las ocho.'], ['dc-atenuacion-1apersona-a2', 0, '¿Yo puedo pasar?'],
  ['gn-instrucciones-a2', 0, 'Primero, abra la aplicación.'], ['gn-instrucciones-a2', 1, 'Luego, pone el café en el filtro.'], ['gn-instrucciones-a2', 2, 'Por último, aprieta el botón rojo.'],
- ['task-a2-pedir', 0, 'Abra la ventana, por favor.'], ['task-a2-pedir', 1, '¿Puede abrir la ventana?'], ['task-a2-pedir', 2, '¿Me hace el favor abrir la ventana?'], ['task-a2-pedir', 3, '¿Será que me pueda abrir la ventana?']
+ ['task-a2-pedir', 0, 'Abra la ventana, por favor.'], ['task-a2-pedir', 1, '¿Puede abrir la ventana?'], ['task-a2-pedir', 2, '¿Me hace el favor abrir la ventana?'], ['task-a2-pedir', 3, '¿Será que me pueda abrir la ventana?'],
+ ['fn-preguntar-estado-animo-a2', 2, 'Me duele muy la cabeza.'], ['fn-preguntar-estado-animo-a2', 3, 'Estoy frío y sueño.'], ['fn-preguntar-estado-animo-a2', 4, 'Estoy dolor de estómago.'], ['fn-preguntar-estado-animo-a2', 4, 'Tengo duele el estómago.'],
+ ['fn-felicitar-a2', 0, '¡Felicitaciones en el trabajo nuevo!'], ['fn-felicitar-a2', 0, '¡Felicitación por el trabajo nuevo!'], ['fn-felicitar-a2', 4, '¡Qué una suerte!'], ['fn-felicitar-a2', 3, '¡Felicitaciones por pasaste el examen!'],
+ ['fn-preguntar-deseos-a2', 0, '¿Te gusta venir a la fiesta?'], ['fn-preguntar-deseos-a2', 2, '¡Bueno viaje!'], ['fn-preguntar-deseos-a2', 3, '¡Mucho suerte en la entrevista!'], ['fn-preguntar-deseos-a2', 4, '¿Qué te gustarías hacer el sábado?'],
+ ['fn-acuerdo-a2', 1, 'Estoy de acuerdo con ti.'], ['fn-acuerdo-a2', 3, 'El examen no fue fácil nada.'],
+ ['task-a2-animo', 1, 'Lo siento mucho. ¿Cómo es?'], ['task-a2-animo', 2, '¡Felicitaciones! ¿Cuándo empezas?'], ['task-a2-animo', 0, '¡No me dices! ¡Qué alegría!'],
+ ['gr-comparativos-a2', 0, 'Bogotá es más fría de Medellín.'], ['gr-comparativos-a2', 1, 'Este café es más bueno que el otro.'], ['gr-comparativos-a2', 2, 'Mi hermana es tan alta que yo.'], ['gr-comparativos-a2', 2, 'Mi hermana es tan alta como mí.'],
+ ['gr-comparativos-a2', 3, 'No hay tan carros como antes.'], ['gr-comparativos-a2', 3, 'No hay tanto carros como antes.'],
+ ['nt-cualidad-material-a2', 0, 'La camisa es algodón.'], ['nt-cualidad-material-a2', 0, 'La camisa es de un algodón.'], ['nt-cualidad-material-a2', 1, 'Quiero una madera mesa.'], ['nt-cualidad-material-a2', 2, 'Cambié mi trabajo el año pasado.'],
+ ['nt-cualidad-material-a2', 3, '¿Dónde puedo cambiar dólares para pesos?'], ['nt-cualidad-material-a2', 4, '¿La puedo cambiar de una más grande?'],
+ ['gn-describir-persona-a2', 0, 'Me parezco mucho mi mamá.'], ['gn-describir-persona-a2', 0, 'Miro mucho como mi mamá.'], ['gn-describir-persona-a2', 2, 'Cuando la conocí, tuvo el pelo corto.'], ['gn-describir-persona-a2', 2, 'Cuando la conocía, tenía el pelo corto.'], ['gn-describir-persona-a2', 4, '¿A quién pareces?'],
+ ['gn-describir-objeto-a2', 0, '¿Qué sirve esto para?'], ['gn-describir-objeto-a2', 1, 'Sirve para abre botellas.'], ['gn-describir-objeto-a2', 3, 'Este celular no trabaja.'],
+ ['task-a2-comparar', 0, 'Es más caro que el otro, pero es más bueno.'], ['task-a2-comparar', 1, 'El nuevo es igual de rápido como el viejo.'], ['task-a2-comparar', 2, 'Es el más barato que todos.'], ['task-a2-comparar', 3, 'Me quedo con el de Chapinero porque es cerca.'],
+ ['gn-conversacion-transaccional-a2', 1, '¿Me puedo lo medir?'], ['gn-conversacion-transaccional-a2', 2, 'Soy un poco grande.'], ['gn-conversacion-transaccional-a2', 2, 'Me es un poco grande.'],
+ ['fn-responder-telefono-a2', 1, 'Sí, con él.'], ['fn-responder-telefono-a2', 1, 'Sí, yo.'], ['fn-responder-telefono-a2', 3, 'Un momento, ya le la paso.'], ['fn-responder-telefono-a2', 2, '¿Quién eres?'],
+ ['fn-pedir-informacion-a2', 0, '¿Qué tipo de la música te gusta?'], ['fn-pedir-informacion-a2', 1, '¿Qué tipo de películas te gusta?'], ['fn-pedir-informacion-a2', 2, '¿Qué es tu color favorito?'], ['fn-pedir-informacion-a2', 3, '¿Quién vives con?'], ['fn-pedir-informacion-a2', 4, 'Por bus.'],
+ ['fn-preguntar-preferencias-a2', 0, '¿Preferes tinto o jugo?'], ['fn-preguntar-preferencias-a2', 2, 'Me gusta más el campo más que la ciudad.'], ['fn-preguntar-preferencias-a2', 3, 'Me gusta más leer que la televisión.'], ['fn-preguntar-preferencias-a2', 4, 'Nos gusta más los perros que los gatos.'],
+ ['nt-necesidad-obligacion-a2', 0, 'Me hacen falta una chaqueta.'], ['nt-necesidad-obligacion-a2', 2, 'Es necesario a reservar antes.'], ['nt-necesidad-obligacion-a2', 3, 'Me da igualmente.'],
+ ['fn-preguntar-conocimiento-a2', 0, 'Sé cómo nadar.'], ['fn-preguntar-conocimiento-a2', 1, '¿Sabes Cartagena?'], ['fn-preguntar-conocimiento-a2', 2, 'No conozco tu hermano.'], ['fn-preguntar-conocimiento-a2', 3, 'Hablo un poco francés.'], ['fn-preguntar-conocimiento-a2', 4, '¿Conoce a qué hora pasa el bus?'],
+ ['task-a2-gestion', 0, 'Buenos días, habla Sam. Llamo para el apartamento.'], ['task-a2-gestion', 1, 'Quería cambiar esta camisa. Es que me queda pequeño.'], ['task-a2-gestion', 2, 'Disculpe, ¿conoce si hay un bus al aeropuerto?'],
+ ['gr-causales-a2', 0, 'No fui como estaba enfermo.'], ['gr-causales-a2', 0, 'No fui por qué estaba enfermo.'], ['gr-causales-a2', 2, 'No fui para la lluvia.'], ['gr-causales-a2', 3, 'Estoy cansado, así me voy a la casa.'],
+ ['por-para', 0, 'Gracias para el regalo.'], ['por-para', 1, 'Este regalo es por ti.'], ['por-para', 2, 'Salgo por Medellín el viernes.'], ['por-para', 3, 'Pagué cincuenta mil pesos para el tiquete.'], ['por-para', 4, 'Lo necesito por el lunes.'],
+ ['gr-condicionales-a2', 1, 'Si llover, nos quedamos en la casa.'], ['gr-condicionales-a2', 3, 'Te llamo si llegar tarde.'],
+ ['fn-aconsejar-a2', 0, 'Tienes descansar.'], ['fn-aconsejar-a2', 0, 'Tienes que descansas.'], ['fn-aconsejar-a2', 2, 'Hay reservar antes.'], ['fn-aconsejar-a2', 4, 'No debes venir.'], ['fn-aconsejar-a2', 3, '¿Te ayude?'],
+ ['fn-proponer-sugerir-a2', 0, '¿Qué tal si ir a cine?'], ['fn-proponer-sugerir-a2', 0, '¿Qué tal yendo a cine?'], ['fn-proponer-sugerir-a2', 1, '¿Porque no tomamos un tinto?'], ['fn-proponer-sugerir-a2', 2, '¿Y si pedir una pizza?'], ['fn-proponer-sugerir-a2', 3, '¿Nos vemos en el viernes?'],
+ ['task-a2-razones', 0, 'Lo dejé para estaba cansado.'], ['task-a2-razones', 1, 'Vine a Bogotá por estudiar español.'], ['task-a2-razones', 2, 'Si me ofrecerán un buen trabajo aquí, me quedo.'], ['task-a2-razones', 3, 'Lo mejor es ahorro primero.']
 ].forEach(([id, i, wrong]) => {
   const t = SC[id] && SC[id].yourTurn[i];
   if (!t) { ok(false, id + '.yourTurn[' + i + '] missing'); return; }
@@ -169,7 +194,7 @@ Object.keys(SC).forEach((id) => {
 });
 
 // option length across the file: the gate's rule, a third at most
-ok(rpTotal >= 20, 'expected at least 20 read-and-pick items, found ' + rpTotal);
+ok(rpTotal >= 160, 'expected at least 160 read-and-pick items, found ' + rpTotal);
 ok(rpLongest / rpTotal <= 1 / 3, 'the right option is the longest ' + Math.round(100 * rpLongest / rpTotal) + '% of the time (a third at most)');
 ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the shortest ' + Math.round(100 * rpShortest / rpTotal) + '% of the time (chance ' + Math.round(100 * rpChance / rpTotal) + '%)');
 
