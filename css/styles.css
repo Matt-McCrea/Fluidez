@@ -1019,3 +1019,22 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
   .fz-report-text { min-height:220px; font-size:.8rem; }
   .fz-modal-actions .primary-btn, .fz-modal-actions .ghost-btn { flex:1 1 auto; }
 }
+
+/* ---- desktop: the tab bar becomes a left rail (ported from the rebuild) ---- */
+@media (min-width:900px) {
+  body:has(.bottom-nav) .app-header,
+  body:has(.bottom-nav) .app-main { margin-left:180px; }
+  body:has(.bottom-nav) .app-main { max-width:760px; margin-right:auto; }
+  .bottom-nav {
+    top:0; bottom:0; right:auto; width:180px;
+    flex-direction:column; justify-content:flex-start;
+    border-top:0; border-right:1px solid var(--border);
+    padding:calc(14px + env(safe-area-inset-top)) 0 0;
+  }
+  .bottom-nav-btn {
+    flex:0 0 auto; flex-direction:row; justify-content:flex-start; gap:12px;
+    min-height:52px; padding:0 20px; font-size:1rem; font-weight:600; text-align:left;
+  }
+  .bottom-nav-btn .bn-ico { font-size:1.2rem; }
+  .bottom-nav-btn.active { box-shadow:inset 3px 0 0 var(--accent); }
+}
