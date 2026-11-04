@@ -1,0 +1,16 @@
+{
+  "name": "fluidez",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build:lib": "esbuild lib/index.ts --bundle --format=iife --global-name=LIB --target=es2019 --sourcemap=external --outfile=js/lib.bundle.js",
+    "test": "vitest run --pool=threads --poolOptions.threads.maxThreads=2",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.7"
+  }
+}

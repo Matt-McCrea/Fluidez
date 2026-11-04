@@ -4,3 +4,4 @@ node_modules/
 # harvested third-party specs (regenerate with tools/harvest/pcic.js)
 spec/
 tools/harvest/cache/
+js/lib.bundle.js.map
