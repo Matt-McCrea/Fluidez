@@ -1190,3 +1190,12 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .register-item { margin:10px 0; }
 .register-item .ex-es { font-weight:650; }
 .register-when { margin-top:2px; }
+
+/* ---- Sound natural (Practicar, js/natural.js) ---- */
+.nat-stiff { margin:10px 0 6px; padding:8px 14px; background:var(--panel-2); border-left:3px solid var(--warn); border-radius:10px; }
+.nat-stiff-es { font-style:italic; color:var(--muted); font-size:1.05rem; margin-top:2px; }
+.nat-why { margin-top:8px; font-weight:450; color:var(--text); font-size:.95rem; line-height:1.5; }
+.nat-why em { font-style:italic; font-weight:600; color:var(--accent-2); }
+.nat-summary { font-size:1.15rem; font-weight:600; margin:14px 0 18px; }
+.nat-locked { margin:10px 4px 0; }
+.nat-groups { margin-top:12px; }

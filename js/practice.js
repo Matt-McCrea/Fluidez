@@ -48,6 +48,8 @@ window.Practice = (function () {
       });
       wrap.appendChild(lib);
     }
+    // Sound natural (js/natural.js): a row from B1, a note below it
+    if (window.Natural) window.Natural.renderEntry(wrap, backToMenu);
 
     // ---- fast drills (conjugation + flashcards) ----
     wrap.appendChild(UI.el('h3', null, UI.t('Ejercicios rápidos', 'Quick exercises')));
