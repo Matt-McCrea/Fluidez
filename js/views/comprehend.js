@@ -15,7 +15,10 @@ window.StageComprehend = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, p.title));
     wrap.appendChild(UI.el('p', 'muted', 'Read it through twice: once for the gist, once for detail. Then answer below.'));
-    var body = UI.el('div', 'passage', p.text);
+    var body = UI.el('div', 'passage');
+    // every word is tappable; falls back to plain text if Gloss is not loaded
+    if (window.Gloss) window.Gloss.render(body, p.text, { gloss: p.gloss });
+    else body.textContent = p.text;
     /* Listen to the whole passage. This is the closest the app gets to a
      * listening stage: connected speech at length, with the text there to fall
      * back on. Shift-click reads it slowly. */
@@ -28,14 +31,17 @@ window.StageComprehend = (function () {
     wrap.appendChild(body);
 
     if (p.gloss && p.gloss.length) {
+      var gdet = UI.el('details', 'gloss-all');
+      gdet.appendChild(UI.el('summary', null, 'All glosses'));
       var g = UI.el('div', 'gloss');
+      gdet.appendChild(g);
       p.gloss.forEach(function (w) {
         var item = UI.el('span', 'gloss-item', '<b>' + w.es + '</b> ' + w.en + ' ');
         // add-from-anywhere: drop a glossed word straight into your Palabras
         if (window.UserWords) item.appendChild(window.UserWords.addChip(w.es, w.en, 'mios'));
         g.appendChild(item);
       });
-      wrap.appendChild(g);
+      wrap.appendChild(gdet);
     }
 
     wrap.appendChild(UI.nextBtn('Preguntas →', function () { questions(host, ctx, done); }));
@@ -77,7 +83,9 @@ window.StageComprehend = (function () {
       // keep the passage available (collapsed) so it's comprehension, not memory
       var det = UI.el('details', 'passage-peek');
       det.appendChild(UI.el('summary', null, 'Ver el texto'));
-      det.appendChild(UI.el('div', 'passage small', p.text));
+      var peek = UI.el('div', 'passage small');
+      if (window.Gloss) window.Gloss.render(peek, p.text, { gloss: p.gloss }); else peek.textContent = p.text;
+      det.appendChild(peek);
       body.appendChild(det);
 
       if (q.type === 'mcq') {

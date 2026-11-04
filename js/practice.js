@@ -38,6 +38,16 @@ window.Practice = (function () {
     // ---- the practice modes come first: this is the useful part ----
     wrap.appendChild(UI.el('h3', null, UI.t('Elige un modo', 'Pick a mode')));
     if (window.Selector) window.Selector.renderChooser(wrap);
+    if (window.Library) {
+      var lib = UI.el('button', 'mas-row'); lib.type = 'button';
+      lib.innerHTML = '<span class="mas-ico">📚</span><span class="mas-text"><b>' + UI.t('Biblioteca de lectura', 'Reading library') +
+        '</b><br><span class="muted small">Every passage and chapter, with how much of each you already know</span></span><span class="mas-chev">›</span>';
+      lib.addEventListener('click', function () {
+        window.Shell.openOverlay();
+        window.Library.render(document.getElementById('stage-host'), backToMenu);
+      });
+      wrap.appendChild(lib);
+    }
 
     // ---- fast drills (conjugation + flashcards) ----
     wrap.appendChild(UI.el('h3', null, UI.t('Ejercicios rápidos', 'Quick exercises')));
