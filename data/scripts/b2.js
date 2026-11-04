@@ -1,8 +1,12 @@
 /* ============================================================================
- * TEACHING SCRIPTS, B2 units 1 and 2 (window.SCRIPTS_B2), keyed by lesson id.
- * Units b2-u44 (the ladder of agreeing, opining, softening and certainty) and
- * b2-u45 (building an argument and the words that hold it together): every
- * lesson on the path from COURSE_BANDS.B2, day 353 to day 373.
+ * TEACHING SCRIPTS, B2 units 1 to 4 (window.SCRIPTS_B2), keyed by lesson id.
+ * Units b2-u44 (the ladder of agreeing, opining, softening and certainty),
+ * b2-u45 (building an argument and the words that hold it together), b2-u46
+ * (what didn't happen and what probably did: the compound subjunctives, the
+ * guess inside the verb, need, lasting and causing) and b2-u47 (feelings at
+ * the right strength, then degree, interest and verdicts): every lesson on
+ * the path from COURSE_BANDS.B2 to the end of b2-u47 (days 353 to 396 when
+ * this was written; the test reads the days from data/course.js).
  *
  * Same anatomy and shape as data/scripts/b1.js (tools/test-scripts-b2.js
  * checks every rule), with what the owner asked of the upper bands:
@@ -18,8 +22,11 @@
  * indicative is still "the ordinary form". By day 353 the course has built
  * the future, the conditional, the past (-ra) subjunctive, the perfect
  * subjunctive, the future perfect and the conditional perfect, so all of them
- * are used here; the pluperfect subjunctive (hubiera hecho) comes on day 374
- * and is not. No dashes, no vosotros, Latin American Spanish (Colombia), the
+ * are used here. The pluperfect subjunctive (hubiera hecho) and the -se twin
+ * of the past subjunctive come with gr-pluscuamsubj-b2, the first day of
+ * b2-u46: they are absent before it and used from it on, the -se forms
+ * for reading only (accepted when typed, never asked for), since Colombia
+ * says -ra. No dashes, no vosotros, Latin American Spanish (Colombia), the
  * preterite as the everyday past.
  * ========================================================================== */
 window.SCRIPTS_B2 = {
@@ -1293,6 +1300,1454 @@ window.SCRIPTS_B2 = {
     "*Todo el mundo sabe que* is not evidence: name the source with *según*.",
     "An objection stated weakly is easy to answer and convinces nobody; state it at its strongest.",
     "Ending with no limit reads like a leaflet, not an argument."
+  ]
+},
+
+/* ---- unit b2-u46 · What didn't happen, and what probably did -------------- */
+
+"gr-pluscuamsubj-b2": {
+  source: "merged",
+  hook: {
+    line: "Your friend Paula slept through the concert you had both waited months for, and the next morning she messages you. Every line looks back at a past that went the wrong way, and one small form carries all of it.",
+    es: "Paula: ¡Qué rabia! Ojalá me hubieras llamado más temprano.\nTú: Te llamé tres veces. Pensé que ya habías salido.\nPaula: Si hubiera oído el celular, habría llegado a tiempo.\nTú: Nadie creía que te hubieras quedado dormida.\nPaula: La próxima vez pongo dos alarmas.",
+    en: "Paula: How annoying! I wish you had called me earlier.\nYou: I called you three times. I thought you had already left.\nPaula: If I had heard my phone, I would have got there in time.\nYou: Nobody could believe you had overslept.\nPaula: Next time I'm setting two alarms."
+  },
+  examples: [
+    { es: "Si me hubieras avisado con tiempo, te habría guardado una boleta en la primera fila.", en: "If you had let me know in time, I would have saved you a ticket in the front row." },
+    { es: "Me sorprendió que los organizadores no hubieran avisado del cambio de horario hasta el último momento.", en: "I was surprised the organisers hadn't announced the change of time until the last minute." },
+    { es: "Ojalá hubiéramos salido de la casa media hora antes; con el trancón no llegamos al principio.", en: "I wish we had left the house half an hour earlier; with the traffic jam we missed the start." }
+  ],
+  rule: "*Hubiera* plus a participle looks back at a past that is already closed.\nAfter a past feeling or doubt, it stands where *había* would: *Pensé que habías salido*, but *No creí que hubieras salido.* *Me sorprendió que no hubieran avisado.*\nAfter *si*, it imagines a past that never happened, and the other half takes *habría*: *Si hubiera oído el celular, habría llegado.* Never *habría* after *si*.\nAfter *ojalá*, it wishes too late: *Ojalá me hubieras llamado.*\nThe forms: *hubiera*, *hubieras*, *hubiera*, *hubiéramos*, *hubieran*, then the participle, which never changes.\nBooks and the news use a twin, *hubiese*, with the same meaning. Read it; say *hubiera*.",
+  readAndPick: [
+    { q: "Did Paula hear her phone?", es: "Si hubiera oído el celular, habría llegado a tiempo.",
+      options: ["Yes, but too late", "No, she never did", "Yes, all three times"], answer: 1,
+      why: "*Si hubiera oído* imagines what did not happen: she didn't hear it, so she didn't arrive." },
+    { q: "What did the speaker believe at the time?", es: "No creí que hubieran vendido todas las boletas.",
+      options: ["That some were left", "That all had gone", "That none were printed"], answer: 0,
+      why: "*No creí que hubieran vendido* reports a past doubt: she thought tickets were still left." },
+    { q: "Can this wish still come true?", es: "Ojalá me hubieras llamado más temprano.",
+      options: ["Yes, if she calls tomorrow", "Only in theory", "No, it's too late"], answer: 2,
+      why: "*Ojalá* with *hubiera* wishes about a closed past. *Ojalá me llames* would still be possible." },
+    { q: "What does *hubiese* mean in this news line?", es: "Si el puente se hubiese cerrado antes, no habría habido heridos.",
+      options: ["It will close very soon", "The same as hubiera", "It is closed today"], answer: 1,
+      why: "*Hubiese* is the written twin of *hubiera*: if the bridge had been closed earlier." },
+    { q: "Who hadn't given notice?", es: "Me sorprendió que no hubieran avisado.",
+      options: ["I hadn't", "They hadn't", "None of us had"], answer: 1,
+      why: "*Hubieran* ends in *-n*: they. Their silence came first, the surprise after it." },
+    { q: "Is this wish about now or about then?", es: "Ojalá hubiera tenido más tiempo para prepararlo.",
+      options: ["About right now", "About next week", "About back then"], answer: 2,
+      why: "*Hubiera tenido* looks back. A wish about now would be *ojalá tuviera más tiempo*." }
+  ],
+  yourTurn: [
+    { en: "I wish you had called me earlier. (to a friend)", es: "Ojalá me hubieras llamado más temprano.", accept: ["Ojalá (que) me hubieras llamado [más temprano|antes]."] },
+    { en: "If I had heard my phone, I would have arrived on time.", es: "Si hubiera oído el celular, habría llegado a tiempo.", accept: ["Si [hubiera|hubiese] oído el [celular|teléfono], [habría|hubiera] llegado a tiempo.", "[Habría|Hubiera] llegado a tiempo si hubiera oído el [celular|teléfono]."] },
+    { en: "I didn't think they had sold all the tickets.", es: "No creí que hubieran vendido todas las boletas.", accept: ["No [creí|pensé] que [hubieran|hubiesen] vendido todas las boletas."] },
+    { en: "I was surprised that they hadn't let us know.", es: "Me sorprendió que no nos hubieran avisado.", accept: ["Me sorprendió que no nos [hubieran|hubiesen] avisado."] },
+    { en: "I wish we hadn't sold the car.", es: "Ojalá no hubiéramos vendido el carro.", accept: ["Ojalá (que) no [hubiéramos|hubiésemos] vendido el carro."] }
+  ],
+  translate: [
+    { en: "If you had told me, I would have gone with you. (to a friend)", es: "Si me hubieras dicho, habría ido contigo.", accept: ["Si me (lo) hubieras dicho, [habría|hubiera] ido contigo."] },
+    { en: "Nobody thought she had left so early.", es: "Nadie pensó que se hubiera ido tan temprano.", accept: ["Nadie [pensó|creyó] que se [hubiera|hubiese] ido tan temprano."] },
+    { en: "It bothered him that we hadn't invited him.", es: "Le molestó que no lo hubiéramos invitado.", accept: ["Le molestó que no lo [hubiéramos|hubiésemos] invitado."] },
+    { en: "I wish I had studied more for the exam.", es: "Ojalá hubiera estudiado más para el examen.", accept: ["Ojalá (que) hubiera estudiado más para el examen."] },
+    { en: "We arrived late to the concert. If we had left the house earlier, we would have seen the beginning. I wish we hadn't stopped to eat.", es: "Llegamos tarde al concierto. Si hubiéramos salido de la casa más temprano, habríamos visto el principio. Ojalá no hubiéramos parado a comer.", accept: ["Llegamos tarde al concierto. Si hubiéramos salido de (la) casa [más temprano|antes], [habríamos|hubiéramos] visto el principio. Ojalá no hubiéramos parado a comer."] },
+    { en: "If it had rained, we would have stayed at home.", es: "Si hubiera llovido, nos habríamos quedado en la casa.", accept: ["Si hubiera llovido, nos [habríamos|hubiéramos] quedado en (la) casa."] }
+  ],
+  register: [
+    { es: "Si hubiera sabido, hubiera venido.", en: "If I'd known, I'd have come.", when: "in everyday speech, with hubiera in both halves" },
+    { es: "Si hubiera sabido, habría venido.", en: "If I had known, I would have come.", when: "anywhere, and the safe choice in writing" },
+    { es: "Si lo hubiese sabido, habría venido.", en: "Had I known it, I would have come.", when: "in books, the news and formal letters" },
+    { es: "De haberlo sabido, habría venido.", en: "Had I known, I would have come.", when: "in writing, a compact and formal version" }
+  ],
+  personal: {
+    prompt: "Think of a plan from last year that went wrong. Write what would have happened if you had done one thing differently, and one wish about it.",
+    constraints: [
+      { type: "regex", pattern: "si (no )?(me |te |le |lo |la |nos |les |se )*(hubiera|hubieras|hubi[eé]ramos|hubieran|hubiese) [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "an if: *si hubiera* and a participle" },
+      { type: "containsAny", words: ["habría", "habríamos", "habrías", "habrían"], label: "the result with *habría*" },
+      { type: "regex", pattern: "ojal[aá] (que )?(no )?(me |te |le |lo |la |nos |les |se )*(hubiera|hubieras|hubi[eé]ramos|hubieran)", label: "a wish too late: *ojalá hubiera*" }
+    ],
+    model: "Si hubiera reservado el hotel en enero, habría pagado la mitad. Ojalá no hubiera esperado tanto."
+  },
+  pitfalls: [
+    "*Si habría sabido* is English *if I would have known*: after *si*, always *hubiera*.",
+    "*Ojalá tuviera tiempo* wishes about now; for yesterday, *ojalá hubiera tenido tiempo*.",
+    "*Ojalá hubiera vino* uses the wrong piece: after *hubiera* comes the participle, *venido*."
+  ]
+},
+
+"gr-condicional-compuesto-b2": {
+  source: "merged",
+  hook: {
+    line: "A guest reviews a hotel in Cartagena, and the manager answers. Both of them talk about what would have happened, what someone promised would be done, and what they themselves would have done.",
+    es: "Reseña: Habría sido más fácil avisar antes de cerrar la piscina.\nReseña: En la recepción nos dijeron que para las tres la habrían arreglado.\nReseña: Yo en su lugar habría ofrecido un descuento.\nRespuesta: Tiene razón. Nos habría gustado resolverlo ese mismo día.\nRespuesta: Con más personal, lo habríamos hecho.",
+    en: "Review: It would have been easier to tell us before closing the pool.\nReview: At reception they told us they would have fixed it by three.\nReview: In your place I would have offered a discount.\nReply: You're right. We would have liked to solve it that same day.\nReply: With more staff, we would have done it."
+  },
+  examples: [
+    { es: "Con un poco más de tiempo, habría revisado el informe otra vez antes de mandarlo al cliente.", en: "With a little more time, I would have checked the report again before sending it to the client." },
+    { es: "Me dijo que para el viernes ya habría hablado con el jefe, pero todavía no lo ha hecho.", en: "She told me that by Friday she would have spoken to the boss, but she still hasn't done it." },
+    { es: "Cuando llegamos a la finca ya se habrían ido, porque la casa estaba cerrada y oscura.", en: "When we got to the farm they must have already left, because the house was shut and dark." }
+  ],
+  rule: "*Habría* plus a participle is *would have*: *habría ido*, *habrías dicho*, *habríamos hecho*, *habrían visto*.\nIt does four jobs.\nWhat would have happened, with or without *si*: *Con más tiempo, lo habría revisado.* *Si hubiera podido, habría ido.*\nAdvice after the fact, and soft regret: *Yo en tu lugar habría llamado.* *Me habría gustado ir.*\nA promise reported from the past: *Dijo que para el viernes habría terminado.*\nA guess about a past before a past moment: *Cuando llegamos, ya se habrían ido.*\n*No*, *lo* and *me* go before *habría*: *No lo habría dicho.*\nAfter *si* it is *hubiera*; *habría* is the other half.",
+  readAndPick: [
+    { q: "Did the hotel offer a discount?", es: "Yo en su lugar habría ofrecido un descuento.",
+      options: ["Yes, a big one", "No, it didn't", "Only to regulars"], answer: 1,
+      why: "*Yo en su lugar habría* says what the guest would have done; the hotel didn't." },
+    { q: "How does the speaker know they had left?", es: "Cuando llegamos, ya se habrían ido.",
+      options: ["She's guessing", "She saw them leave", "They phoned her"], answer: 0,
+      why: "*Se habrían ido* guesses from a past moment: the house was dark, so probably." },
+    { q: "What did reception promise?", es: "Nos dijeron que para las tres la habrían arreglado.",
+      options: ["Closed until three", "Fixed by three", "Fixed the next day"], answer: 1,
+      why: "*Habrían arreglado* reports a promise: by three, the job would be done." },
+    { q: "Did the manager solve it that day?", es: "Nos habría gustado resolverlo ese mismo día.",
+      options: ["Yes, at once", "Yes, by noon the next day", "No, they didn't"], answer: 2,
+      why: "*Nos habría gustado* is a soft regret: they would have liked to, and didn't." },
+    { q: "Which word belongs after *si* here?", es: "Si ___ podido, habría ido.",
+      options: ["habríamos", "había", "hubiera"], answer: 2,
+      why: "After *si*, *hubiera*; *habría* belongs to the other half." }
+  ],
+  yourTurn: [
+    { en: "I would have said no.", es: "Yo habría dicho que no.", accept: ["(Yo) [habría|hubiera] dicho que no."] },
+    { en: "In your place I would have called the doctor. (to a friend)", es: "Yo en tu lugar habría llamado al médico.", accept: ["(Yo) en tu lugar habría llamado [al médico|a la médica|al doctor|a la doctora].", "Yo que tú habría llamado [al médico|al doctor]."] },
+    { en: "We would have liked to go.", es: "Nos habría gustado ir.", accept: ["Nos hubiera gustado ir."] },
+    { en: "He said he would have finished by Friday.", es: "Dijo que para el viernes habría terminado.", accept: ["Dijo que habría terminado para el viernes."] },
+    { en: "I wouldn't have done it.", es: "No lo habría hecho.", accept: ["Yo no lo habría hecho.", "(Yo) no lo hubiera hecho."] }
+  ],
+  translate: [
+    { en: "It would have been easier to let us know beforehand.", es: "Habría sido más fácil avisar antes.", accept: ["[Habría|Hubiera] sido más fácil avisar(nos) antes."] },
+    { en: "What would you have done? (to a friend)", es: "¿Qué habrías hecho tú?", accept: ["¿Qué habrías hecho?", "¿Tú qué habrías hecho?", "¿Qué hubieras hecho (tú)?"] },
+    { en: "With more staff, we would have solved it that same day.", es: "Con más personal, lo habríamos resuelto ese mismo día.", accept: ["Con más personal, lo [habríamos|hubiéramos] [resuelto|solucionado] ese mismo día."] },
+    { en: "When I called, they must have already gone to bed.", es: "Cuando llamé, ya se habrían acostado.", accept: ["Cuando llamé, ya se habrían [acostado|ido a dormir]."] },
+    { en: "I didn't go to the meeting. I would have liked to go, but I was sick. In my place, you would have stayed home too. (to a friend)", es: "No fui a la reunión. Me habría gustado ir, pero estaba enfermo. En mi lugar, tú también te habrías quedado en la casa.", accept: ["No fui a la reunión. Me [habría|hubiera] gustado ir, pero estaba [enfermo|enferma]. En mi lugar, tú también te [habrías|hubieras] quedado en (la) casa."] },
+    { en: "If you had asked me, I would have helped you. (to a friend)", es: "Si me hubieras preguntado, te habría ayudado.", accept: ["Si me hubieras preguntado, te hubiera ayudado.", "Si me lo hubieras pedido, te [habría|hubiera] ayudado."] }
+  ],
+  register: [
+    { es: "Yo habría llamado.", en: "I would have called.", when: "giving your view plainly, after the fact" },
+    { es: "Yo en tu lugar habría llamado.", en: "In your place I would have called.", when: "advice to a friend, gently, once it's too late" },
+    { es: "Me habría gustado que me llamaras.", en: "I would have liked you to call me.", when: "a soft complaint, at home or at work" },
+    { es: "Habría sido conveniente informar con antelación.", en: "It would have been advisable to give notice in advance.", when: "in a formal email or a written complaint" }
+  ],
+  personal: {
+    prompt: "Think of something a friend or colleague did recently that you would have done differently. Write what you would have done, and one thing you would have liked.",
+    constraints: [
+      { type: "regex", pattern: "(habr[ií]a|habr[ií]as|habr[ií]amos|habr[ií]an) [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "would have: *habría* and a participle" },
+      { type: "containsAny", words: ["en tu lugar", "en su lugar", "yo que tú", "yo que usted"], label: "advice: *yo en tu lugar*" },
+      { type: "containsAny", words: ["me habría gustado", "nos habría gustado", "me hubiera gustado", "nos hubiera gustado"], label: "a soft regret: *me habría gustado*" }
+    ],
+    model: "Yo en tu lugar habría hablado con la jefa antes de renunciar. Me habría gustado que me lo contaras."
+  },
+  pitfalls: [
+    "*Si habría podido* is English *if I would have*: after *si*, *hubiera*.",
+    "*Habría lo dicho* splits the pair: *lo* goes first, *lo habría dicho*.",
+    "*Había ido* is had gone, a fact; *habría ido* is would have gone, and it never happened."
+  ]
+},
+
+"gr-futuro-perfecto-b2": {
+  source: "merged",
+  hook: {
+    line: "Your cousins are flying into Bogotá tonight and the family chat is waiting. Half the messages guess at what has probably happened by now; the other half look ahead to what will be done by a certain time.",
+    es: "Mamá: Son las nueve. Ya habrán aterrizado, ¿no?\nPapá: No contestan. Se les habrá descargado el celular.\nMamá: O estarán haciendo la fila de migración.\nLaura: Tranquilos, para cuando lleguen a la casa, ya habremos hecho la comida.\nPapá: ¿Y dónde habré dejado las llaves del carro?",
+    en: "Mom: It's nine. They'll have landed by now, won't they?\nDad: They're not answering. Their phone must have died.\nMom: Or they'll be standing in line at immigration.\nLaura: Relax, by the time they get to the house, we'll have made dinner.\nDad: And where could I have left the car keys?"
+  },
+  examples: [
+    { es: "Para diciembre ya habremos terminado la obra del baño y podremos recibir a la familia.", en: "By December we'll have finished the work on the bathroom and we'll be able to have the family over." },
+    { es: "No contesta el celular; se habrá quedado dormido después del turno de noche en el hospital.", en: "He's not answering his phone; he must have fallen asleep after the night shift at the hospital." },
+    { es: "¿Quién habrá dejado la puerta abierta? Esta mañana yo la cerré con llave antes de salir.", en: "Who could have left the door open? This morning I locked it before going out." }
+  ],
+  rule: "*Habré* plus a participle does two jobs.\nA deadline ahead: done before a point still to come. *Para diciembre habremos terminado.* *Para cuando llegues, ya habré salido.*\nA guess about now: what has probably already happened. *Ya habrán aterrizado.* *Se habrá quedado dormido.* English says *must have*; the form alone carries the guess, with no *quizás*.\nThe forms: *habré*, *habrás*, *habrá*, *habremos*, *habrán*, then the participle, which never changes.\nIn a question it wonders: *¿Dónde habré dejado las llaves?*\n*Se quedó dormido* states it; *se habrá quedado dormido* guesses it.\nLooking back from a past moment, the guess moves to *habría*: *Cuando llamé, ya se habrían ido.*",
+  readAndPick: [
+    { q: "Does Mom know they've landed?", es: "Ya habrán aterrizado, ¿no?",
+      options: ["Yes, they told her", "No, she's guessing", "They land tomorrow"], answer: 1,
+      why: "*Habrán aterrizado* guesses about now. If she knew, she'd say *ya aterrizaron*." },
+    { q: "When will dinner be made?", es: "Para cuando lleguen a la casa, ya habremos hecho la comida.",
+      options: ["Before they arrive", "After they've arrived", "While they all eat"], answer: 0,
+      why: "*Para cuando lleguen* sets the point ahead; *habremos hecho* is done before it." },
+    { q: "What is Dad doing?", es: "¿Dónde habré dejado las llaves del carro?",
+      options: ["Saying where they are", "Asking Laura to drive him", "Wondering where they are"], answer: 2,
+      why: "*¿Dónde habré dejado?* wonders aloud: where could I have left them?" },
+    { q: "Is it a fact or a guess?", es: "Se habrá quedado dormido.",
+      options: ["A fact", "A guess", "A promise"], answer: 1,
+      why: "*Habrá* turns the fact into a guess; the fact would be *se quedó dormido*." },
+    { q: "When will the work be done?", es: "Para diciembre ya habremos terminado la obra.",
+      options: ["By December", "After December", "Every December"], answer: 0,
+      why: "*Para diciembre* with *habremos terminado*: finished before December comes." }
+  ],
+  yourTurn: [
+    { en: "They'll have landed by now.", es: "Ya habrán aterrizado.", accept: ["Habrán aterrizado ya."] },
+    { en: "By the time you arrive, I'll have already left. (to a friend)", es: "Para cuando llegues, ya habré salido.", accept: ["Para cuando llegues, ya me habré ido.", "Cuando llegues, ya [habré salido|me habré ido]."] },
+    { en: "He must have fallen asleep.", es: "Se habrá quedado dormido.", accept: ["Se habrá dormido."] },
+    { en: "Where could I have left my keys?", es: "¿Dónde habré dejado las llaves?", accept: ["¿Dónde habré dejado mis llaves?"] },
+    { en: "By December we'll have finished the work.", es: "Para diciembre habremos terminado la obra.", accept: ["Para diciembre ya habremos terminado la obra."] }
+  ],
+  translate: [
+    { en: "She's not answering; she must have lost her phone again.", es: "No contesta; habrá perdido el celular otra vez.", accept: ["No contesta[;|,|.] [habrá perdido|se le habrá perdido] el celular [otra vez|de nuevo]."] },
+    { en: "By eight we'll have had dinner.", es: "Para las ocho ya habremos comido.", accept: ["Para las ocho habremos comido."] },
+    { en: "Who could have called at this hour?", es: "¿Quién habrá llamado a esta hora?", accept: [] },
+    { en: "You'll have read the message by now. (to a friend)", es: "Ya habrás leído el mensaje.", accept: [] },
+    { en: "The bus is two hours late. There must have been an accident on the road. By the time it arrives, the meeting will have finished.", es: "El bus lleva dos horas de retraso. Habrá habido un accidente en la carretera. Para cuando llegue, la reunión ya habrá terminado.", accept: ["El bus [lleva|tiene|va con] dos horas de [retraso|demora]. Habrá habido un accidente en la carretera. Para cuando llegue, [la reunión ya habrá terminado|ya habrá terminado la reunión]."] },
+    { en: "They must have gone out; the lights are off.", es: "Habrán salido; las luces están apagadas.", accept: ["Habrán salido[;|,|.] las luces están apagadas."] }
+  ],
+  register: [
+    { es: "Ya aterrizaron.", en: "They've landed.", when: "when you know it for a fact" },
+    { es: "Ya habrán aterrizado.", en: "They'll have landed by now.", when: "a confident guess about now" },
+    { es: "Seguramente ya aterrizaron.", en: "They've probably landed already.", when: "in conversation, the everyday way to guess" },
+    { es: "Para el viernes habremos concluido el proyecto.", en: "By Friday we will have concluded the project.", when: "in a work email, promising a deadline" }
+  ],
+  personal: {
+    prompt: "Someone you know hasn't answered you today. Guess two things that have probably happened, and say what you will have done by tonight.",
+    constraints: [
+      { type: "regex", pattern: "(habr[aá]|habr[aá]n) [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "a guess: *habrá* and a participle" },
+      { type: "regex", pattern: "(habr[eé]|habremos) [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "your deadline: *habré* and a participle" },
+      { type: "containsAny", words: ["para esta noche", "para las", "para cuando", "para mañana", "para el"], label: "the point ahead: *para esta noche* or *para cuando*" }
+    ],
+    model: "Mi hermana no contesta. Habrá salido a correr o se habrá quedado sin batería. Para esta noche ya habré terminado el informe."
+  },
+  pitfalls: [
+    "*Habrá perdido el celular* is a guess about now, not a future: she must have lost it.",
+    "*Habrá ya llegado* splits the pair: *ya habrá llegado*.",
+    "*Ayer habré visto a Ana* is not a memory: for what you know happened, *ayer vi a Ana*."
+  ]
+},
+
+"gr-perfsubj-valores-b2": {
+  source: "merged",
+  hook: {
+    line: "Before she leaves on holiday, your team lead sends one last email. She hopes, doubts and asks about things that are already done or will be done by a certain point, and the same small form carries every one of them.",
+    es: "Asunto: Antes de irme\nEspero que hayan recibido el informe del lunes.\nNo creo que el cliente lo haya leído todavía.\nCuando lo haya revisado, nos llamará para la reunión.\nEn cuanto hayan terminado el presupuesto, mándenmelo, por favor.\nMe alegra que hayamos cerrado el año sin retrasos.",
+    en: "Subject: Before I go\nI hope you have all received Monday's report.\nI don't think the client has read it yet.\nOnce he has gone over it, he'll call us for the meeting.\nAs soon as you've finished the budget, send it to me, please.\nI'm glad we've closed the year without delays."
+  },
+  examples: [
+    { es: "Espero que hayas llegado bien a Medellín y que el vuelo no se haya retrasado mucho.", en: "I hope you got to Medellín safely and that the flight wasn't delayed much." },
+    { es: "Dudo que el técnico haya arreglado la nevera, porque sigue haciendo el mismo ruido de ayer.", en: "I doubt the technician has fixed the fridge, because it's still making the same noise as yesterday." },
+    { es: "Cuando hayas terminado la tarea, puedes salir a jugar un rato con tus primos al parque.", en: "Once you've finished your homework, you can go out and play in the park with your cousins for a while." }
+  ],
+  rule: "*Haya* plus a participle is the subjunctive of *ha hecho*: something already done, seen from now.\nAfter hope, doubt or a feeling, it replaces *ha* and *han*: *Ha llegado*, but *Espero que haya llegado.* *No creo que lo hayan leído.* *Me alegra que hayas venido.*\nAfter *cuando*, *en cuanto* or *hasta que*, it marks a job finished before a point ahead: *Cuando hayas terminado, avísame.* Plain *cuando termines* is just when you finish.\nThe forms: *haya*, *hayas*, *haya*, *hayamos*, *hayan*.\nSeen from a past moment, the same idea moves to *hubiera*: *Esperaba que hubiera llegado.*",
+  readAndPick: [
+    { q: "Has the client read the report?", es: "No creo que el cliente lo haya leído todavía.",
+      options: ["She thinks not yet", "She's quite sure he has", "He read it twice"], answer: 0,
+      why: "*No creo que... haya leído* doubts something done up to now: she thinks he hasn't." },
+    { q: "When will he call?", es: "Cuando lo haya revisado, nos llamará.",
+      options: ["Before he reads it", "Once he's read it", "While he reads it"], answer: 1,
+      why: "*Cuando lo haya revisado*: the reading is finished first, then the call." },
+    { q: "What is she glad about?", es: "Me alegra que hayamos cerrado el año sin retrasos.",
+      options: ["A plan for next year", "A year that went badly", "A year closed on time"], answer: 2,
+      why: "*Hayamos cerrado* looks at something already done: the year closed without delays." },
+    { q: "What is the speaker hoping?", es: "Espero que hayas dormido bien.",
+      options: ["You'll sleep well tonight", "You slept well last night", "You sleep well every night"], answer: 1,
+      why: "*Hayas dormido* hopes about something already over: last night's sleep." },
+    { q: "Did the technician fix the fridge?", es: "Dudo que haya arreglado la nevera.",
+      options: ["Probably not", "He fixed it today", "He'll fix it soon"], answer: 0,
+      why: "*Dudo que haya arreglado*: a doubt about something that should be done by now." }
+  ],
+  yourTurn: [
+    { en: "I hope you got there safely. (to a friend)", es: "Espero que hayas llegado bien.", accept: [] },
+    { en: "I don't think they've read it yet.", es: "No creo que lo hayan leído todavía.", accept: ["No creo que lo hayan leído aún.", "No creo que todavía lo hayan leído."] },
+    { en: "Once you've finished, let me know. (to a friend)", es: "Cuando hayas terminado, avísame.", accept: ["En cuanto hayas terminado, avísame.", "Avísame cuando hayas terminado."] },
+    { en: "I'm glad you came. (to a friend)", es: "Me alegra que hayas venido.", accept: ["Me alegro de que hayas venido.", "Qué bueno que hayas venido."] },
+    { en: "I doubt he has noticed.", es: "Dudo que se haya dado cuenta.", accept: [] }
+  ],
+  translate: [
+    { en: "I hope nothing has happened to them.", es: "Espero que no les haya pasado nada.", accept: ["Ojalá no les haya pasado nada."] },
+    { en: "It's strange that she hasn't called yet.", es: "Es raro que no haya llamado todavía.", accept: ["Es raro que todavía no haya llamado.", "Qué raro que no haya llamado todavía.", "Es raro que no haya llamado aún."] },
+    { en: "As soon as you've finished the budget, send it to me, please. (to a group)", es: "En cuanto hayan terminado el presupuesto, mándenmelo, por favor.", accept: ["En cuanto hayan terminado el presupuesto, [mándenmelo|envíenmelo], por favor."] },
+    { en: "We won't sign until the lawyer has read the contract.", es: "No vamos a firmar hasta que el abogado haya leído el contrato.", accept: ["No firmaremos hasta que el abogado haya leído el contrato.", "No vamos a firmar hasta que la abogada haya leído el contrato."] },
+    { en: "I don't think the package has arrived. It's possible that they sent it to the wrong address. Let me know when you've checked. (to a friend)", es: "No creo que el paquete haya llegado. Es posible que lo hayan mandado a la dirección equivocada. Avísame cuando hayas revisado.", accept: ["No creo que el paquete haya llegado. Es posible que lo hayan [mandado|enviado] a [la dirección equivocada|otra dirección]. Avísame cuando (lo) hayas revisado."] },
+    { en: "I'm sorry you've had to wait so long.", es: "Siento que hayas tenido que esperar tanto.", accept: ["Siento mucho que hayas tenido que esperar tanto.", "Lamento que hayas tenido que esperar tanto."] }
+  ],
+  register: [
+    { es: "Espero que hayas llegado bien.", en: "I hope you got there safely.", when: "to a friend, after a trip" },
+    { es: "¿Ya llegaste?", en: "Are you there yet?", when: "a quick text to someone close" },
+    { es: "Ojalá ya hayas llegado.", en: "I hope you've arrived by now.", when: "when you're a bit worried and want to know" },
+    { es: "Esperamos que haya disfrutado su estadía.", en: "We hope you enjoyed your stay.", when: "a hotel or a company writing to a customer" }
+  ],
+  personal: {
+    prompt: "Someone close to you has just done something big: a trip, an exam, a first day at work. Write one hope and one feeling about it, then ask them to tell you once something is done.",
+    constraints: [
+      { type: "regex", pattern: "(espero|ojal[aá]) que (no )?(me |te |le |se |nos |les |lo |la )*(haya|hayas|hayamos|hayan) ", label: "a hope: *espero que* with *haya*" },
+      { type: "regex", pattern: "(me alegra|me alegro de|qu[eé] bueno|me encanta|siento|qu[eé] pena|qu[eé] l[aá]stima) que (no )?(me |te |le |se |nos |les |lo |la )*(haya|hayas|hayamos|hayan) ", label: "a feeling: *me alegra que* with *haya*" },
+      { type: "regex", pattern: "(cuando|en cuanto|apenas) (me |te |lo |la |se )*(haya|hayas|hayan) ", label: "a job done first: *cuando hayas* and a participle" }
+    ],
+    model: "Espero que te haya ido bien en el examen. Me alegra que hayas estudiado tanto. Cuando hayas visto la nota, avísame."
+  },
+  pitfalls: [
+    "*Espero que has llegado* keeps the ordinary helper: after *espero que*, *hayas llegado*.",
+    "*Cuando hayas terminado* and *cuando termines* are both right; the first insists the job is done first.",
+    "Looking back from a past moment, use *hubiera*: *esperaba que hubiera llegado*."
+  ]
+},
+
+"gr-impsubj-valores-b2": {
+  source: "merged",
+  hook: {
+    line: "A colleague passes on what the manager said in a meeting you missed, then copies in the email she sent to a supplier. Instructions passed on, a polite request and a maybe all lean on the same *-ra* form.",
+    es: "Carolina: La gerente nos pidió que llegáramos a las siete mañana.\nCarolina: Quería que alguien llamara al proveedor antes del mediodía.\nCarolina: Habló como si fuera culpa nuestra, la verdad.\nCarolina: Quizá tuviera razón, no sé.\nCorreo: Quisiera confirmar el pedido del jueves, si fuera posible.",
+    en: "Carolina: The manager asked us to get in at seven tomorrow.\nCarolina: She wanted someone to call the supplier before noon.\nCarolina: She talked as if it were our fault, honestly.\nCarolina: Maybe she was right, I don't know.\nEmail: I would like to confirm Thursday's order, if possible."
+  },
+  examples: [
+    { es: "El médico me pidió que dejara el café una semana y que caminara media hora al día.", en: "The doctor asked me to give up coffee for a week and to walk half an hour a day." },
+    { es: "Buenas tardes, quisiera reservar una mesa para cuatro personas el sábado a las ocho, por favor.", en: "Good afternoon, I'd like to book a table for four people on Saturday at eight, please." },
+    { es: "Mi abuelo maneja como si las calles de Bogotá fueran suyas y nadie más tuviera prisa.", en: "My grandfather drives as if the streets of Bogotá were his and nobody else were in a hurry." }
+  ],
+  rule: "The *-ra* form you know from *si tuviera* has four more jobs.\nA request passed on from the past: *Me pide que llegue*, but *Me pidió que llegara.* *Quería que lo llamáramos.*\nPoliteness: *quisiera* softens *quiero*. *Quisiera reservar una mesa.*\n*Como si*, always with *-ra*: *Habla como si fuera el jefe.*\nA maybe about the past: *Quizá tuviera razón.* After *quizá* or *tal vez* either form works; *a lo mejor* keeps the ordinary one: *A lo mejor tenía razón.*\nIn books and formal letters you'll meet a twin in *-se*: *tuviese*, *fuese*, *hablase*. Same meaning. Read it; say *-ra*.",
+  readAndPick: [
+    { q: "Who has to call the supplier?", es: "Quería que alguien llamara al proveedor.",
+      options: ["The manager herself", "Someone on the team", "The supplier, calling back"], answer: 1,
+      why: "*Quería que alguien llamara*: she wanted someone else to make the call." },
+    { q: "Was it really their fault?", es: "Habló como si fuera culpa nuestra.",
+      options: ["Not necessarily", "Yes, she proved it", "Yes, they admitted it"], answer: 0,
+      why: "*Como si fuera* is as if: she talked that way, whether or not it was." },
+    { q: "How does this request sound?", es: "Quisiera confirmar el pedido del jueves.",
+      options: ["Rude and abrupt", "Unsure of the right date", "Polite and careful"], answer: 2,
+      why: "*Quisiera* softens *quiero*: the polite way to ask in an email or a shop." },
+    { q: "What does *fuese* mean in this newspaper line?", es: "El alcalde pidió que la obra fuese revisada.",
+      options: ["It was checked first", "The same as fuera", "It will be checked"], answer: 1,
+      why: "*Fuese* is the written twin of *fuera*: he asked for the work to be checked." },
+    { q: "What did the doctor ask?", es: "Me pidió que dejara el café.",
+      options: ["That she quit coffee", "That I give up coffee", "That I drink more of it"], answer: 1,
+      why: "*Me pidió que dejara*: a request passed on from the past, for me to act." },
+    { q: "Which form follows *a lo mejor*?", es: "A lo mejor ___ razón.",
+      options: ["tuviera", "tenía", "tenga"], answer: 1,
+      why: "*A lo mejor* always takes the ordinary form: *a lo mejor tenía razón*." }
+  ],
+  yourTurn: [
+    { en: "She asked us to arrive at seven.", es: "Nos pidió que llegáramos a las siete.", accept: ["Nos pidió que [llegáramos|llegásemos] a las siete."] },
+    { en: "I'd like to book a table for two, please.", es: "Quisiera reservar una mesa para dos, por favor.", accept: ["Quisiera reservar una mesa para dos (personas), por favor."] },
+    { en: "He talks as if he were the boss.", es: "Habla como si fuera el jefe.", accept: ["(Él) habla como si [fuera|fuese] el jefe."] },
+    { en: "Maybe she was right.", es: "Quizá tuviera razón.", accept: ["[Quizá|Quizás|Tal vez] [tuviera|tenía|tuviese] razón.", "A lo mejor tenía razón."] },
+    { en: "They wanted me to call them.", es: "Querían que los llamara.", accept: ["Querían que (yo) [los|las] llamara."] }
+  ],
+  translate: [
+    { en: "My mother told me to take an umbrella.", es: "Mi mamá me dijo que llevara una sombrilla.", accept: ["Mi mamá me dijo que [llevara|sacara] [una sombrilla|un paraguas]."] },
+    { en: "I'd like to speak with the manager, if possible.", es: "Quisiera hablar con el gerente, si fuera posible.", accept: ["Quisiera hablar con [el gerente|la gerente], si [fuera|es] posible."] },
+    { en: "It was normal for him to be tired after the trip.", es: "Era normal que estuviera cansado después del viaje.", accept: [] },
+    { en: "She walked in as if nothing had happened.", es: "Entró como si no hubiera pasado nada.", accept: ["Entró como si nada hubiera pasado.", "Entró como si no hubiese pasado nada."] },
+    { en: "The teacher asked us to read the first chapter. She also wanted us to write a summary. Maybe she forgot that we had an exam on Monday.", es: "La profesora nos pidió que leyéramos el primer capítulo. También quería que escribiéramos un resumen. A lo mejor se le olvidó que teníamos examen el lunes.", accept: ["La profesora nos pidió que leyéramos el primer capítulo. También quería que escribiéramos un resumen. [A lo mejor se le olvidó|Quizá se le olvidó|Tal vez se le olvidó|Quizá se le olvidara] que teníamos (un) examen el lunes."] },
+    { en: "I asked him to let me know if anything happened.", es: "Le pedí que me avisara si pasaba algo.", accept: [] }
+  ],
+  register: [
+    { es: "Quiero un café.", en: "I want a coffee.", when: "blunt, fine with family but abrupt with strangers" },
+    { es: "¿Me regala un café, por favor?", en: "Could I have a coffee, please?", when: "in a Colombian café or shop, everyday and polite" },
+    { es: "Quisiera un café, por favor.", en: "I'd like a coffee, please.", when: "polite anywhere, a little more careful" },
+    { es: "Quisiera solicitar información sobre el curso.", en: "I would like to request information about the course.", when: "in a formal email or letter" }
+  ],
+  personal: {
+    prompt: "Think of the last time someone asked you to do something: a boss, a parent or a doctor. Pass on what they asked, then write one polite request of your own.",
+    constraints: [
+      { type: "regex", pattern: "(pidi[oó]|dijo|quer[ií]a|recomend[oó]|aconsej[oó]) que (no )?(me |te |le |nos |les |lo |la )?[a-záéíóúñ]+(ara|iera|aras|ieras|aran|ieran|áramos|iéramos)\\b", label: "a request passed on: *me pidió que* and the *-ra* form" },
+      { type: "containsWord", word: "quisiera", label: "a polite request with *quisiera*" }
+    ],
+    model: "Mi jefe me pidió que terminara el informe antes del viernes. Quisiera pedirle un día más."
+  },
+  pitfalls: [
+    "*Me pidió que llego temprano* keeps the ordinary form; a request passed on takes *llegara*.",
+    "*A lo mejor tuviera razón* is not Spanish: after *a lo mejor*, *tenía*.",
+    "*Hablase* and *hablara* mean the same; in Colombia people say *hablara*, so keep *-se* for reading."
+  ]
+},
+
+"fn-posibilidad-b2": {
+  source: "merged",
+  hook: {
+    line: "Two friends spot Lucía at the mall with her leg in a cast and start guessing in the chat. Each guess carries its own degree of confidence, and some of them are built into the verb itself.",
+    es: "Diana: Vi a Lucía en el centro comercial con la pierna enyesada.\nAndrés: Se habrá caído de la moto; siempre maneja muy rápido.\nDiana: Y no me saludó.\nAndrés: No te vería. Es un poco miope.\nDiana: Debe de estar aburrida en la casa. A lo mejor la llamo esta noche.",
+    en: "Diana: I saw Lucía at the mall with her leg in a cast.\nAndrés: She must have come off her motorbike; she always rides really fast.\nDiana: And she didn't say hi to me.\nAndrés: She probably didn't see you. She's a bit short-sighted.\nDiana: She must be bored at home. Maybe I'll call her tonight."
+  },
+  examples: [
+    { es: "Seguramente estaría hablando por teléfono cuando la llamaste, porque a esa hora siempre llama a su mamá.", en: "She was probably on the phone when you called her, because at that time she always calls her mom." },
+    { es: "Lo más probable es que el vuelo salga con retraso, porque está lloviendo muy fuerte en Bogotá.", en: "Most likely the flight will leave late, because it's raining very hard in Bogotá." },
+    { es: "¿Las llaves? Deben de estar en el carro, porque anoche las dejé en el asiento de atrás.", en: "The keys? They must be in the car, because last night I left them on the back seat." }
+  ],
+  rule: "Spanish can put the guess inside the verb, with no *quizás*.\nAbout now, the future: *Estará en la casa.* She's probably home.\nAbout something just done, *habrá* and a participle: *Se habrá caído.* She must have fallen.\nAbout a past moment, the *-ría* form: *No te vería.* She probably didn't see you. *Serían las diez.*\n*Deber de* guesses too: *Debe de estar cerca.* *Debe* alone can guess or oblige; with *de* it only guesses, so never add *de* to an order.\nAs a frame, with the subjunctive: *Lo más probable es que llueva.* *Hay muchas probabilidades de que gane.*\nWhen you have no idea: *¿Quién sabe?* *A saber.*",
+  readAndPick: [
+    { q: "Does Andrés know what happened?", es: "Se habrá caído de la moto.",
+      options: ["No, he's guessing", "Yes, she told him", "Yes, he was there with her"], answer: 0,
+      why: "*Se habrá caído* guesses about something already done; the fact would be *se cayó*." },
+    { q: "Why didn't Lucía say hi, according to Andrés?", es: "No te vería. Es un poco miope.",
+      options: ["She was very angry with Diana", "She was in a hurry", "She probably didn't see her"], answer: 2,
+      why: "The *-ría* form guesses about a past moment: she probably didn't see you." },
+    { q: "Is this a guess or an order?", es: "Deben de estar en el carro.",
+      options: ["An order to fetch them", "A guess", "A promise"], answer: 1,
+      why: "*Deber de* only guesses: they must be in the car." },
+    { q: "How likely is rain, going by this frame?", es: "Lo más probable es que llueva esta tarde.",
+      options: ["Very unlikely indeed", "Quite likely", "Already raining"], answer: 1,
+      why: "*Lo más probable es que* puts it as the likeliest outcome, with the subjunctive *llueva*." },
+    { q: "What time was it, roughly?", es: "Cuando llegó, serían las diez.",
+      options: ["Ten, more or less", "Ten o'clock sharp", "Ten o'clock tomorrow"], answer: 0,
+      why: "*Serían las diez* guesses the time at a past moment: around ten." }
+  ],
+  yourTurn: [
+    { en: "She must have fallen off her motorbike.", es: "Se habrá caído de la moto.", accept: [] },
+    { en: "They must be in the car.", es: "Deben de estar en el carro.", accept: ["Deben estar en el carro.", "Estarán en el carro."] },
+    { en: "Most likely it will rain this afternoon.", es: "Lo más probable es que llueva esta tarde.", accept: ["Lo más [probable|seguro] es que llueva esta tarde."] },
+    { en: "She probably didn't see you. (to a friend)", es: "No te vería.", accept: ["Seguramente no te vio.", "No te habrá visto.", "A lo mejor no te vio."] },
+    { en: "Who knows?", es: "¿Quién sabe?", accept: ["¡A saber!"] }
+  ],
+  translate: [
+    { en: "There's a good chance that will happen.", es: "Hay muchas probabilidades de que eso pase.", accept: ["Hay muchas probabilidades de que eso [pase|suceda|ocurra]."] },
+    { en: "It must have been about ten when she arrived.", es: "Serían las diez cuando llegó.", accept: ["Serían como las diez cuando llegó.", "Cuando llegó serían (como) las diez."] },
+    { en: "He's not answering; he'll be in a meeting.", es: "No contesta; estará en una reunión.", accept: ["No contesta[;|,|.] [estará|debe de estar|debe estar] en una reunión."] },
+    { en: "It's unlikely that there will be any progress this year.", es: "Es poco probable que haya avances este año.", accept: ["Es [poco probable|improbable] que haya (algún) avance este año.", "Es [poco probable|improbable] que haya avances este año."] },
+    { en: "Carlos didn't come to class. He must have got sick, because yesterday he was coughing a lot. Most likely he'll come back on Monday.", es: "Carlos no vino a clase. Se habrá enfermado, porque ayer tosía mucho. Lo más probable es que vuelva el lunes.", accept: ["Carlos no vino a clase. [Se habrá enfermado|Debe de estar enfermo|Estará enfermo], porque ayer tosía mucho. Lo más [probable|seguro] es que vuelva el lunes."] },
+    { en: "Maybe she's at home.", es: "A lo mejor está en la casa.", accept: ["[A lo mejor|Quizás|Quizá|Tal vez] está en (la) casa.", "[Quizás|Quizá|Tal vez] esté en (la) casa."] }
+  ],
+  register: [
+    { es: "A lo mejor está en la casa.", en: "Maybe she's at home.", when: "in everyday talk, the most common maybe" },
+    { es: "Estará en la casa.", en: "She'll be at home, probably.", when: "a confident guess, no extra word needed" },
+    { es: "Debe de estar en la casa.", en: "She must be at home.", when: "when the clues all point one way" },
+    { es: "Es probable que se encuentre en su domicilio.", en: "She is probably at her residence.", when: "in a formal report or an official note" }
+  ],
+  personal: {
+    prompt: "A friend has gone quiet today: no messages, no calls. Write three guesses with different confidence: one about now, one about something already done, and the likeliest explanation.",
+    constraints: [
+      { type: "containsAny", words: ["estará", "estarán", "tendrá", "andará", "debe de estar"], label: "a guess about now: *estará* or *debe de estar*" },
+      { type: "regex", pattern: "habr[aá]n? [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "a guess about something done: *se habrá* and a participle" },
+      { type: "containsAny", words: ["lo más probable es que", "lo más seguro es que", "es probable que", "hay muchas probabilidades de que"], label: "the likeliest: *lo más probable es que*" }
+    ],
+    model: "Estará en una reunión larga. O se le habrá descargado el celular. Lo más probable es que me escriba esta noche."
+  },
+  pitfalls: [
+    "*Quizás se habrá caído* says it twice: the form alone already makes it a guess.",
+    "*Debe de* only guesses; for an order, *debe* alone: *debes pagar*, not *debes de pagar*.",
+    "*A lo mejor esté* is the slip: *a lo mejor* takes the ordinary form, *a lo mejor está*."
+  ]
+},
+
+"nt-necesidad-contingencia-b2": {
+  source: "merged",
+  hook: {
+    line: "An apartment for rent in Chapinero, posted online, and the first message it gets. The listing ranks what you need from essential to optional, and the message asks its question by chance.",
+    es: "Se arrienda apartamento de dos habitaciones, cerca de la Javeriana.\nRequisitos: es imprescindible presentar un codeudor con finca raíz.\nEs fundamental que el inquilino tenga contrato laboral.\nNo es necesario dejar depósito.\nMensaje: Buenas tardes, ¿de casualidad el apartamento todavía está disponible?",
+    en: "Two-bedroom apartment for rent, near the Javeriana university.\nRequirements: a co-signer who owns property is essential.\nIt is key that the tenant has an employment contract.\nThere is no need to leave a deposit.\nMessage: Good afternoon, is the apartment by any chance still available?"
+  },
+  examples: [
+    { es: "Para firmar el contrato es imprescindible que traigas la cédula original y dos referencias personales.", en: "To sign the contract it's essential that you bring your original ID card and two personal references." },
+    { es: "Con tanta lluvia era inevitable que se inundara la calle, como pasa todos los años en abril.", en: "With so much rain it was inevitable that the street would flood, as happens every year in April." },
+    { es: "Nos encontramos por casualidad en el aeropuerto de Cali, después de diez años sin vernos.", en: "We ran into each other by chance at the Cali airport, after ten years without seeing each other." }
+  ],
+  rule: "Need comes in steps: *conviene* (it's a good idea), *es necesario*, then *es imprescindible*, *es fundamental*, *es esencial*: nothing works without it.\nIn general, with the plain verb: *Es imprescindible firmar.* Naming who, with *que* and the subjunctive: *Es imprescindible que firmes.*\nWhat you can do without: *prescindir de*. *No podemos prescindir de ella.*\nWhat could not be avoided: *inevitablemente*, or *era inevitable que* with the *-ra* form: *Era inevitable que se inundara.*\nNo plan at all: *por casualidad*. The reaction: *¡Qué casualidad!*\nIn a question, *por casualidad* or *de casualidad* softens it: *¿De casualidad tienes un cargador?*",
+  readAndPick: [
+    { q: "Can you rent it without a co-signer?", es: "Es imprescindible presentar un codeudor.",
+      options: ["No, not at all", "Yes, easily", "Only if you pay more"], answer: 0,
+      why: "*Imprescindible* is the top of the ladder: without a co-signer, no apartment." },
+    { q: "Do you have to leave a deposit?", es: "No es necesario dejar depósito.",
+      options: ["Yes, a big one up front", "No, you don't", "Only in cash"], answer: 1,
+      why: "*No es necesario* says it isn't required. It doesn't forbid it." },
+    { q: "Why does the writer add *de casualidad*?", es: "¿De casualidad el apartamento todavía está disponible?",
+      options: ["To doubt the landlord's word", "To sound rude", "To soften the question"], answer: 2,
+      why: "*De casualidad* in a question means by any chance: it makes a no easy to give." },
+    { q: "Did they plan to meet?", es: "Nos encontramos por casualidad en el aeropuerto.",
+      options: ["No, by chance", "Yes, for weeks", "Yes, at the gate, at noon"], answer: 0,
+      why: "*Por casualidad* says nobody planned it." },
+    { q: "Could the flood have been avoided?", es: "Era inevitable que se inundara la calle.",
+      options: ["Yes, quite easily", "Only by luck", "No, it was bound to"], answer: 2,
+      why: "*Era inevitable que* says it was bound to happen, with *inundara* after a past frame." },
+    { q: "What can't the team do?", es: "No podemos prescindir de Marta.",
+      options: ["Hire a second Marta", "Work without Marta", "Talk to Marta"], answer: 1,
+      why: "*Prescindir de* is to do without: Marta is essential." }
+  ],
+  yourTurn: [
+    { en: "It's essential that you bring your ID. (to a friend)", es: "Es imprescindible que traigas la cédula.", accept: ["Es [imprescindible|fundamental|esencial] que traigas [la|tu] cédula."] },
+    { en: "Do you happen to have a charger? (to a friend)", es: "¿De casualidad tienes un cargador?", accept: ["¿Por casualidad tienes un cargador?", "¿Tienes (un) cargador, [por|de] casualidad?"] },
+    { en: "We can't do without her.", es: "No podemos prescindir de ella.", accept: [] },
+    { en: "Inevitably, the price will go up.", es: "Inevitablemente, el precio va a subir.", accept: ["Inevitablemente, el precio [va a subir|subirá]."] },
+    { en: "What a coincidence!", es: "¡Qué casualidad!", accept: [] }
+  ],
+  translate: [
+    { en: "It's not necessary to leave a deposit.", es: "No es necesario dejar depósito.", accept: ["No es necesario dejar (un) depósito.", "No hace falta dejar (un) depósito."] },
+    { en: "Trust is essential in any relationship.", es: "La confianza es fundamental en cualquier relación.", accept: ["La confianza es [fundamental|esencial|imprescindible] en cualquier relación."] },
+    { en: "It was inevitable that someone would tell him.", es: "Era inevitable que alguien se lo dijera.", accept: ["Era inevitable que alguien se lo [dijera|contara]."] },
+    { en: "I found the photo by chance in an old book.", es: "Encontré la foto por casualidad en un libro viejo.", accept: ["Encontré la foto [por|de] casualidad en un libro viejo.", "Por casualidad encontré la foto en un libro viejo."] },
+    { en: "To travel, it's essential to have a valid passport. A visa isn't necessary. Do you happen to know where the consulate is? (to a friend)", es: "Para viajar, es imprescindible tener el pasaporte vigente. No es necesaria la visa. ¿De casualidad sabes dónde queda el consulado?", accept: ["Para viajar, es [imprescindible|fundamental|esencial] tener (el) pasaporte vigente. [No es necesaria la visa|La visa no es necesaria|No hace falta la visa]. ¿[De|Por] casualidad sabes dónde [queda|está] el consulado?"] },
+    { en: "The company can't do without his experience.", es: "La empresa no puede prescindir de su experiencia.", accept: [] }
+  ],
+  register: [
+    { es: "Hace falta una firma.", en: "A signature is needed.", when: "in everyday talk, plainly" },
+    { es: "Es necesario firmar aquí.", en: "It's necessary to sign here.", when: "at an office counter or in instructions" },
+    { es: "Es imprescindible presentar la cédula.", en: "Presenting your ID is essential.", when: "in a listing, a notice or a formal requirement" },
+    { es: "¿De casualidad tienes un esfero?", en: "Do you happen to have a pen?", when: "asking a small favour, leaving room for a no" }
+  ],
+  personal: {
+    prompt: "You're writing the requirements for something you organise: a trip, a class or a room to rent. Rank what is essential and what isn't, then ask someone a favour by chance.",
+    constraints: [
+      { type: "containsAny", words: ["imprescindible", "fundamental", "esencial"], label: "the top step: *imprescindible* or *fundamental*" },
+      { type: "containsAny", words: ["no es necesario", "no es necesaria", "no hace falta"], label: "something optional: *no es necesario*" },
+      { type: "containsAny", words: ["de casualidad", "por casualidad"], label: "a soft question with *de casualidad*" }
+    ],
+    model: "Para el paseo es imprescindible llevar impermeable. No es necesario llevar comida. ¿De casualidad tienes una carpa?"
+  },
+  pitfalls: [
+    "*Es imprescindible para ti firmar* follows English: Spanish says *es imprescindible que firmes*.",
+    "*Imprescindible* for a routine detail overstates it; *conviene* or *es necesario* fit everyday needs.",
+    "*Por casualidad* in a question is politeness, not doubt about the person."
+  ]
+},
+
+"nt-permanencia-b2": {
+  source: "merged",
+  hook: {
+    line: "Natalia gets a job offer by email and talks it over with her brother. The words for what lasts and what doesn't decide whether she takes it, and one of them means the opposite of what an English speaker expects.",
+    es: "Oferta: Cargo de analista con contrato a término indefinido.\nOferta: Horario fijo de lunes a viernes, de ocho a cinco.\nNatalia: ¿Indefinido? ¡Por fin un trabajo estable!\nHermano: El mío es a término fijo, o sea, solo por un año.\nNatalia: La empresa sobrevivió a la pandemia, así que parece sólida.",
+    en: "Offer: Analyst position with a permanent contract.\nOffer: Fixed hours Monday to Friday, from eight to five.\nNatalia: Permanent? A stable job at last!\nBrother: Mine is fixed term, I mean, only for one year.\nNatalia: The company survived the pandemic, so it looks solid."
+  },
+  examples: [
+    { es: "Después de cinco años de contratos temporales, por fin consiguió un trabajo estable en un hospital.", en: "After five years of temporary contracts, she finally got a stable job at a hospital." },
+    { es: "El puente resistió el terremoto sin daños, pero las casas viejas del centro no aguantaron.", en: "The bridge withstood the earthquake without damage, but the old houses in the centre didn't hold up." },
+    { es: "La panadería de mi abuela sobrevivió a dos crisis y sigue abierta en el mismo barrio.", en: "My grandmother's bakery survived two crises and is still open in the same neighbourhood." }
+  ],
+  rule: "What lasts:\n*estable* for a situation: *un trabajo estable*, *una relación estable*.\n*fijo* for what doesn't move: *un horario fijo*, *una dirección fija*.\n*permanente* and *duradero* for what stays; *temporal* for what doesn't.\nIn a Colombian contract, *a término indefinido* is permanent and *a término fijo* has an end date: fixed means temporary here.\nComing through:\n*sobrevivir a*, keeping the *a*, when it could have ended you: *sobrevivió a la crisis*.\n*resistir* when something holds up under pressure: *resistió el terremoto*.\n*aguantar* in everyday talk: *No aguanto el frío.*\nStaying: *mantenerse*, *seguir*, and in writing, *permanecer*.",
+  readAndPick: [
+    { q: "How long is the brother's contract?", es: "El mío es a término fijo.",
+      options: ["Until a set date", "For life", "Until he retires at sixty"], answer: 0,
+      why: "*A término fijo* has an end date. Permanent would be *a término indefinido*." },
+    { q: "What kind of hours does the job have?", es: "Horario fijo de lunes a viernes.",
+      options: ["A new rota every week", "Weekends only", "The same every week"], answer: 2,
+      why: "*Fijo* for a schedule means it doesn't move." },
+    { q: "Could the company have closed?", es: "La empresa sobrevivió a la pandemia.",
+      options: ["No, it was never at any risk", "It closed for good", "Yes, but it came through"], answer: 2,
+      why: "*Sobrevivir a* means it came through something that could have ended it." },
+    { q: "What did the bridge do?", es: "El puente resistió el terremoto.",
+      options: ["It fell down", "It held up", "It was rebuilt later"], answer: 1,
+      why: "*Resistir* is to hold up under pressure, with no *a*." },
+    { q: "What is the speaker saying?", es: "Ya no aguanto este frío.",
+      options: ["She can't stand the cold", "She survived the cold", "She'll stay out in the cold"], answer: 0,
+      why: "*No aguanto* is the everyday I can't stand it any more." }
+  ],
+  yourTurn: [
+    { en: "She finally has a stable job.", es: "Por fin tiene un trabajo estable.", accept: ["Por fin tiene un [trabajo|empleo] estable.", "Ya tiene un trabajo estable por fin."] },
+    { en: "The company survived the crisis.", es: "La empresa sobrevivió a la crisis.", accept: [] },
+    { en: "The bridge withstood the earthquake.", es: "El puente resistió el terremoto.", accept: [] },
+    { en: "I have a permanent contract.", es: "Tengo un contrato a término indefinido.", accept: ["Tengo (un) contrato a término indefinido.", "Tengo un contrato indefinido."] },
+    { en: "I can't stand the heat anymore.", es: "Ya no aguanto el calor.", accept: ["No aguanto más el calor.", "Ya no soporto el calor."] }
+  ],
+  translate: [
+    { en: "We need a fixed address to apply for the permit.", es: "Necesitamos una dirección fija para solicitar el permiso.", accept: ["Necesitamos [una dirección fija|un domicilio fijo] para [solicitar|pedir|tramitar] el permiso."] },
+    { en: "His fame seems immortal, decades later.", es: "Su fama parece inmortal, décadas después.", accept: ["Su fama parece inmortal décadas después."] },
+    { en: "The species has managed to survive thanks to its ability to adapt.", es: "La especie ha logrado sobrevivir gracias a su capacidad de adaptación.", accept: ["La especie [ha logrado|logró] sobrevivir gracias a su capacidad de adaptación."] },
+    { en: "It's a temporary job, only for three months.", es: "Es un trabajo temporal, solo por tres meses.", accept: ["Es un trabajo temporal, solo [por|de|para] tres meses."] },
+    { en: "My sister has had a fixed-term contract for two years. She wants something more stable. The company is solid: it survived two crises.", es: "Mi hermana lleva dos años con un contrato a término fijo. Quiere algo más estable. La empresa es sólida: sobrevivió a dos crisis.", accept: ["Mi hermana lleva dos años con (un) contrato a término fijo. Quiere algo más estable. La empresa es sólida[:|,|;|.] [sobrevivió|ha sobrevivido] a dos crisis."] },
+    { en: "The material withstands high temperatures.", es: "El material resiste altas temperaturas.", accept: ["El material resiste temperaturas altas."] }
+  ],
+  register: [
+    { es: "Ya no aguanto más.", en: "I can't take any more.", when: "in conversation, when you've reached your limit" },
+    { es: "Resistió la presión.", en: "He withstood the pressure.", when: "anywhere, for holding up under strain" },
+    { es: "Sobrevivió a la crisis.", en: "It survived the crisis.", when: "when something could have ended it" },
+    { es: "La situación permanece estable.", en: "The situation remains stable.", when: "in a news report or a medical update" }
+  ],
+  personal: {
+    prompt: "Think of something in your life that has lasted: a job, a friendship, a place, a habit. Say what makes it stable, and what it has survived or put up with.",
+    constraints: [
+      { type: "containsAny", words: ["estable", "fijo", "fija", "permanente", "duradero", "duradera"], label: "what lasts: *estable* or *fijo*" },
+      { type: "regex", pattern: "sobreviv[a-záéíóúñ]* a |resist[a-záéíóúñ]+|aguant[a-záéíóúñ]+", label: "coming through: *sobrevivir a*, *resistir* or *aguantar*" }
+    ],
+    model: "Mi amistad con Camila es muy estable. Sobrevivió a dos mudanzas y a mil kilómetros de distancia."
+  },
+  pitfalls: [
+    "*Sobrevivió la crisis* drops the *a*: *sobrevivió a la crisis*.",
+    "In Colombia a *contrato a término fijo* ends on a set date; permanent is *a término indefinido*.",
+    "*Sobrevivir* for a bridge sounds as if it were alive: buildings and materials *resisten*."
+  ]
+},
+
+"nt-existencia-b2": {
+  source: "merged",
+  hook: {
+    line: "A short news item from Cali after a night of heavy rain. Read it for the verbs: what caused what, what was set up, and what was done away with.",
+    es: "Las fuertes lluvias de anoche ocasionaron inundaciones en el sur de Cali.\nUn árbol caído provocó un trancón de tres horas en la autopista.\nLa alcaldía estableció un punto de atención en el coliseo.\nVarios vecinos montaron una cocina comunitaria para las familias afectadas.\nEl gobierno eliminó el cobro del peaje para los vecinos de la zona.",
+    en: "Last night's heavy rain caused flooding in the south of Cali.\nA fallen tree caused a three-hour traffic jam on the highway.\nThe city government set up an assistance point at the sports arena.\nSeveral neighbours set up a community kitchen for the families affected.\nThe government dropped the toll charge for local residents."
+  },
+  examples: [
+    { es: "El terremoto ocasionó graves daños en la zona, aunque por fortuna no hubo víctimas.", en: "The earthquake caused serious damage in the area, although fortunately there were no casualties." },
+    { es: "Sus declaraciones en la radio provocaron una gran polémica y al día siguiente tuvo que disculparse.", en: "His statements on the radio provoked a big controversy, and the next day he had to apologise." },
+    { es: "Hace dos años mi prima montó un negocio de domicilios y ya tiene cuatro empleados.", en: "Two years ago my cousin set up a delivery business and she already has four employees." }
+  ],
+  rule: "To say one thing made another happen, the cause is the subject: *La lluvia causó inundaciones.*\n*causar* is neutral; *ocasionar* a little more formal; *provocar* suggests something stirred up, like a controversy; *generar* is everywhere in the news.\nThe verb agrees with the cause: *Sus declaraciones provocaron una polémica.* Effect first: *fue provocado por un cigarrillo.*\nMaking something exist: *crear*, *fundar* (a company, a town), *establecer* (a rule), *montar* (a business), *dar a luz* (a baby).\nMaking it stop: *eliminar* (a charge, a rule), *borrar* (a file, a trace), and on its own, *desaparecer*.\nWhat isn't there at all: *inexistente*.",
+  readAndPick: [
+    { q: "What caused the traffic jam?", es: "Un árbol caído provocó un trancón de tres horas.",
+      options: ["The rain on its own", "A fallen tree", "A bridge"], answer: 1,
+      why: "The cause is the subject of *provocó*: the fallen tree." },
+    { q: "What did the neighbours do?", es: "Varios vecinos montaron una cocina comunitaria.",
+      options: ["Set up a kitchen", "Closed a kitchen", "Ate in a big restaurant"], answer: 0,
+      why: "*Montar* is to set something up: a business, a kitchen, a stall." },
+    { q: "Why does the reporter choose *provocaron*?", es: "Sus declaraciones provocaron una gran polémica.",
+      options: ["It's the only verb that works", "It sounds more neutral", "It hints they stirred it up"], answer: 2,
+      why: "*Provocar* hints at something stirred up; *ocasionar* would stay neutral." },
+    { q: "What happened to the toll?", es: "El gobierno eliminó el cobro del peaje.",
+      options: ["It went up a lot", "It was dropped", "It doubled"], answer: 1,
+      why: "*Eliminar* removes a charge or a rule. *Borrar* is for files and traces." },
+    { q: "What started the fire?", es: "El incendio fue provocado por un cigarrillo.",
+      options: ["A neighbour's stove", "The heat wave", "A cigarette"], answer: 2,
+      why: "With the effect first, *por* names the cause: a cigarette." }
+  ],
+  yourTurn: [
+    { en: "The delay caused a lot of complaints.", es: "El retraso ocasionó muchas quejas.", accept: ["El retraso [ocasionó|causó|provocó|generó] muchas quejas."] },
+    { en: "His statements provoked a controversy.", es: "Sus declaraciones provocaron una polémica.", accept: ["Sus declaraciones [provocaron|generaron|causaron] una polémica."] },
+    { en: "They set up a delivery business.", es: "Montaron un negocio de domicilios.", accept: ["Montaron un negocio de [domicilios|entregas a domicilio]."] },
+    { en: "The law establishes new safety rules.", es: "La ley establece nuevas normas de seguridad.", accept: ["La ley establece [nuevas normas|normas nuevas] de seguridad."] },
+    { en: "The fire was caused by a cigarette.", es: "El incendio fue provocado por un cigarrillo.", accept: ["El incendio fue [provocado|causado|ocasionado] por un cigarrillo."] }
+  ],
+  translate: [
+    { en: "The rain caused floods in the south of the city.", es: "La lluvia ocasionó inundaciones en el sur de la ciudad.", accept: ["La lluvia [ocasionó|causó|provocó] inundaciones en el sur de la ciudad.", "Las lluvias [ocasionaron|causaron|provocaron] inundaciones en el sur de la ciudad."] },
+    { en: "She gave birth to twins at the central hospital.", es: "Dio a luz a mellizos en el hospital central.", accept: ["Dio a luz [a mellizos|a gemelos] en el hospital central."] },
+    { en: "I deleted the file by mistake.", es: "Borré el archivo por error.", accept: ["Borré el archivo [por error|sin querer]."] },
+    { en: "In this region the rains are almost nonexistent.", es: "En esta región las lluvias son casi inexistentes.", accept: [] },
+    { en: "My grandfather founded the company fifty years ago. Years later, the crisis caused many problems. My mother eliminated two departments and created a new one.", es: "Mi abuelo fundó la empresa hace cincuenta años. Años después, la crisis ocasionó muchos problemas. Mi mamá eliminó dos departamentos y creó uno nuevo.", accept: ["Mi abuelo fundó la empresa hace cincuenta años. Años después, la crisis [ocasionó|causó|generó|provocó] muchos problemas. Mi mamá eliminó dos departamentos y creó uno nuevo."] },
+    { en: "The new rule generated a lot of debate.", es: "La nueva norma generó mucho debate.", accept: ["La nueva norma [generó|provocó|causó] mucho debate."] }
+  ],
+  register: [
+    { es: "La lluvia causó inundaciones.", en: "The rain caused floods.", when: "anywhere, the neutral way to say it" },
+    { es: "La lluvia ocasionó inundaciones.", en: "The rain brought about floods.", when: "in a report or on the news" },
+    { es: "Sus palabras provocaron una polémica.", en: "His words provoked a controversy.", when: "when someone stirred things up" },
+    { es: "La medida generó malestar entre los vecinos.", en: "The measure generated unease among residents.", when: "in a news item or an official statement" }
+  ],
+  personal: {
+    prompt: "Write a short news item about something that happened in your town or at your work: what caused it, and what someone set up or got rid of because of it.",
+    constraints: [
+      { type: "containsAny", words: ["ocasionó", "provocó", "causó", "generó", "ocasionaron", "provocaron", "causaron", "generaron"], label: "a cause: *ocasionó*, *provocó* or *generó*" },
+      { type: "containsAny", words: ["estableció", "establecieron", "montó", "montaron", "creó", "crearon", "fundó", "eliminó", "eliminaron"], label: "something set up or removed: *estableció*, *montó* or *eliminó*" }
+    ],
+    model: "La protesta de los transportadores ocasionó un trancón enorme. La empresa estableció el trabajo desde la casa por dos días."
+  },
+  pitfalls: [
+    "*Sus declaraciones provocó* forgets the cause is plural: *provocaron*.",
+    "*Borrar* a law sounds like rubbing it off a board: laws and charges are *eliminados*.",
+    "*Fue provocado de un cigarrillo* takes the wrong word: after the effect, the cause goes with *por*."
+  ]
+},
+
+"task-b2-hipotesis": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: twelve sentences or more about a decision that went wrong, or nearly did. What happened, what would have happened otherwise, and what you suspect was going on that you didn't know. The model is about a contract.",
+    es: "Firmamos el contrato en marzo sin leer la cláusula doce.\nSi la hubiéramos leído, no habríamos firmado, o al menos habríamos pedido una revisión.\nEl abogado la habría visto; es imposible que se le pasara.\nPuede que pensara que era estándar, o que no quisiera retrasar el negocio.\nHabrá tenido sus razones.\nEn septiembre nos cobraron una plata que no esperábamos, y para entonces ya no había nada que hacer.",
+    en: "We signed the contract in March without reading section twelve.\nIf we had read it, we wouldn't have signed, or at least we would have asked for a review.\nThe lawyer must have seen it; there's no way he missed it.\nMaybe he thought it was standard, or didn't want to hold up the deal.\nHe must have had his reasons.\nIn September they charged us money we weren't expecting, and by then there was nothing to be done."
+  },
+  examples: [
+    { es: "Si la hubiéramos leído con calma, no habríamos firmado, o al menos habríamos pedido una revisión.", en: "If we had read it calmly, we wouldn't have signed, or at least we would have asked for a review." },
+    { es: "Puede que el abogado pensara que era una cláusula estándar y por eso no dijo nada.", en: "Maybe the lawyer thought it was a standard section, and that's why he didn't say anything." },
+    { es: "Habrá tenido sus razones, pero ojalá nos hubiera avisado antes de la reunión con el banco.", en: "He must have had his reasons, but I wish he had warned us before the meeting with the bank." }
+  ],
+  rule: "Four moves, each with its forms.\nWhat happened, in the preterite and the imperfect: *Firmamos sin leer.*\nWhat would have happened: *si hubiera* plus a participle, then *habría*: *Si la hubiéramos leído, no habríamos firmado.* Use it at least twice.\nWhat you suspect, with the guess inside the verb: *Habrá tenido sus razones* guesses from now; *la habría visto* guesses from then. *Puede que pensara* is a maybe about the past.\nA wish or a verdict: *Ojalá nos hubiera avisado.* *Habría sido mejor esperar.*\nSpanish puts how sure you are into the verb, where English adds probably or must have.",
+  readAndPick: [
+    { q: "Did they read section twelve?", es: "Si la hubiéramos leído, no habríamos firmado.",
+      options: ["No, they didn't", "Yes, before signing it", "Yes, but too late"], answer: 0,
+      why: "*Si la hubiéramos leído* imagines what didn't happen: they never read it." },
+    { q: "How sure is the writer about the lawyer's reasons?", es: "Habrá tenido sus razones.",
+      options: ["He knows them for sure", "It's his guess", "He has no idea at all"], answer: 1,
+      why: "*Habrá tenido* guesses about the past from now: he must have had them." },
+    { q: "What is *puede que pensara* doing?", es: "Puede que pensara que era estándar.",
+      options: ["Stating a fact", "Giving him an order", "Offering a maybe"], answer: 2,
+      why: "*Puede que* with *pensara* is a maybe about the past." },
+    { q: "Did the lawyer warn them?", es: "Ojalá nos hubiera avisado antes.",
+      options: ["Yes, in March", "No, he didn't", "Yes, twice, by email"], answer: 1,
+      why: "*Ojalá* with *hubiera* wishes about a closed past: he didn't warn them." },
+    { q: "Which form belongs after *si* here?", es: "Si ___ esperado, habríamos pagado menos.",
+      options: ["hubiéramos", "habríamos", "habremos"], answer: 0,
+      why: "After *si*, *hubiéramos*; *habríamos* goes in the other half." }
+  ],
+  yourTurn: [
+    { en: "If we had read it, we wouldn't have signed.", es: "Si la hubiéramos leído, no habríamos firmado.", accept: ["Si [la|lo] hubiéramos leído, no [habríamos|hubiéramos] firmado.", "No habríamos firmado si [la|lo] hubiéramos leído."] },
+    { en: "He must have had his reasons.", es: "Habrá tenido sus razones.", accept: [] },
+    { en: "Maybe he thought it was standard.", es: "Puede que pensara que era estándar.", accept: ["Puede que [pensara|creyera] que era (algo) estándar.", "A lo mejor pensó que era estándar."] },
+    { en: "It would have been better to wait.", es: "Habría sido mejor esperar.", accept: ["Hubiera sido mejor esperar."] }
+  ],
+  translate: [
+    { en: "I wish he had warned us.", es: "Ojalá nos hubiera avisado.", accept: ["Ojalá nos hubiera [avisado|advertido]."] },
+    { en: "If I had known, I would have asked for a review.", es: "Si lo hubiera sabido, habría pedido una revisión.", accept: ["Si lo hubiera sabido, [habría|hubiera] pedido una revisión."] },
+    { en: "There's no way he missed it.", es: "Es imposible que se le pasara.", accept: ["Es imposible que se le [pasara|haya pasado|hubiera pasado]."] },
+    { en: "By then there was nothing to be done.", es: "Para entonces ya no había nada que hacer.", accept: ["Para entonces no había nada que hacer."] },
+    { en: "We bought the house in a rush. If we had waited a month, we would have paid less. The seller must have known that the price was going to drop.", es: "Compramos la casa a las carreras. Si hubiéramos esperado un mes, habríamos pagado menos. El vendedor sabría que el precio iba a bajar.", accept: ["Compramos la casa [a las carreras|con afán|muy rápido]. Si hubiéramos esperado un mes, [habríamos|hubiéramos] pagado menos. El vendedor [sabría|habrá sabido|seguramente sabía|debía de saber] que el precio iba a bajar."] },
+    { en: "If it had been up to me, I would have taken it to court.", es: "Si hubiera sido por mí, lo habría llevado a juicio.", accept: ["Si hubiera sido por mí, lo hubiera llevado a juicio.", "Si hubiera dependido de mí, lo [habría|hubiera] llevado a juicio."] }
+  ],
+  register: [
+    { es: "Me equivoqué, la verdad.", en: "I got it wrong, honestly.", when: "owning a mistake with friends" },
+    { es: "Habría sido mejor esperar.", en: "It would have been better to wait.", when: "a calm verdict, at home or at work" },
+    { es: "Si me hubieran avisado, no habría pasado esto.", en: "If they had warned me, this wouldn't have happened.", when: "complaining firmly but politely" },
+    { es: "De haberlo sabido, no habríamos firmado.", en: "Had we known, we would not have signed.", when: "in a formal letter or a report" }
+  ],
+  personal: {
+    prompt: "Write the story of a decision of your own that went wrong, or nearly did: twelve sentences or more. Say what happened, what would have happened otherwise, what you suspect, and one wish.",
+    constraints: [
+      { type: "minSentences", n: 12, label: "twelve sentences or more" },
+      { type: "regex", pattern: "si (no )?(me |te |le |lo |la |nos |les |se )*(hubiera|hubieras|hubi[eé]ramos|hubieran|hubiese) [a-záéíóúñ]+(ado|ido|to|cho|so)\\b", label: "what would have happened: *si hubiera* and a participle" },
+      { type: "containsAny", words: ["habría", "habríamos", "habrías", "habrían"], label: "the result with *habría*" },
+      { type: "containsAny", words: ["habrá ", "puede que", "lo más probable"], label: "a guess: *habrá tenido* or *puede que*" },
+      { type: "regex", pattern: "ojal[aá] (que )?(no )?(me |te |le |lo |la |nos |les |se )*(hubiera|hubieras|hubi[eé]ramos|hubieran)", label: "a wish: *ojalá hubiera*" }
+    ],
+    model: "El año pasado acepté un trabajo en otra ciudad sin visitarla antes. Me pareció una gran oportunidad. El sueldo era bueno y el cargo también. Pero el primer mes fue muy duro. No conocía a nadie y el apartamento era carísimo. Si hubiera visitado la ciudad antes, habría buscado un barrio más barato. Si hubiera hablado con otros empleados, habría sabido que el jefe era difícil. El analista anterior habrá tenido sus razones para irse. Puede que tampoco aguantara el ambiente. Lo más probable es que nadie le dijera nada. Al final me quedé seis meses y volví a Bogotá. Ojalá hubiera esperado un poco más antes de decir que sí."
+  },
+  pitfalls: [
+    "*Si habría* never: after *si*, *hubiera*.",
+    "*Habrá tenido sus razones* is a guess; *tuvo sus razones* is a fact. Choose by how sure you are.",
+    "Twelve sentences of *hubiera* tire the reader: tell what happened plainly first."
+  ]
+},
+
+/* ---- unit b2-u47 · Feelings, at the right strength ----------------------- */
+
+"fn-enfado-indignacion-b2": {
+  source: "merged",
+  hook: {
+    line: "The neighbours in a building in Medellín have had enough of the parties in flat 502. Watch the anger climb in the group chat, from mild to furious, and then watch it go calm in the letter to the management.",
+    es: "Sofía: Me molesta un poco el ruido, pero bueno.\nIván: A mí me da rabia que pongan música a las tres de la mañana.\nMarta: Estoy harta de que nadie haga nada. ¡No aguanto más!\nIván: Y me indigna que la administración no conteste.\nCarta: Les escribimos porque la situación resulta ya insostenible para los residentes.",
+    en: "Sofía: The noise bothers me a little, but oh well.\nIván: It makes me furious that they play music at three in the morning.\nMarta: I'm sick of nobody doing anything. I can't take any more!\nIván: And it outrages me that the management doesn't answer.\nLetter: We are writing to you because the situation has now become unsustainable for the residents."
+  },
+  examples: [
+    { es: "Me da rabia que el bus pase lleno y no pare, sobre todo cuando está lloviendo.", en: "It makes me furious when the bus goes by full and doesn't stop, especially when it's raining." },
+    { es: "Mi papá está bravo conmigo porque llegué tarde y no le avisé que me iba a demorar.", en: "My dad is angry with me because I got home late and didn't tell him I'd be late." },
+    { es: "Me indigna que hayan despedido a tanta gente sin explicación mientras los directivos se suben el sueldo.", en: "It outrages me that they've laid off so many people without explanation while the executives raise their own pay." }
+  ],
+  rule: "Anger climbs a ladder; pick the rung that fits.\n*Me molesta que*, *me fastidia que*: it bothers me.\n*Me da rabia que*, *¡qué rabia!*: it makes me furious, personally.\n*Me indigna que*: something unjust, not a late bus.\n*Estoy harto de que*, *no aguanto que*, *no soporto que*: my patience has run out. Same person? The plain verb: *Estoy harta de esperar.*\nAfter *que*, the subjunctive: *Me da rabia que no pare.*\nIn Colombia, angry is *bravo*: *Está brava conmigo.* *Se puso bravo.*\nTo cut it off: *¡Ya basta!* *¡No puedo más!*\nDisgust is physical: *me da asco*. Boredom: *¡qué pereza!*\nIn writing, calm: *resulta inaceptable*.",
+  readAndPick: [
+    { q: "How angry is Sofía?", es: "Me molesta un poco el ruido, pero bueno.",
+      options: ["Furious about it", "Mildly bothered", "Truly outraged"], answer: 1,
+      why: "*Me molesta un poco* is the bottom rung, and *pero bueno* lets it go." },
+    { q: "What has Marta reached?", es: "Estoy harta de que nadie haga nada. ¡No aguanto más!",
+      options: ["The end of her patience", "A deal with the neighbours", "A mild annoyance"], answer: 0,
+      why: "*Harta de que* and *no aguanto más*: her patience has run out." },
+    { q: "Why *me indigna* here, not *me molesta*?", es: "Me indigna que la administración no conteste.",
+      options: ["It is meant as a joke", "It is only about noise", "It feels unjust"], answer: 2,
+      why: "*Indignar* is for something unfair: the people paid to answer don't." },
+    { q: "What does the Colombian speaker mean?", es: "Mi papá está bravo conmigo.",
+      options: ["My father is very brave", "My father is angry with me", "My father is proud of me now"], answer: 1,
+      why: "In Colombia *estar bravo* means to be angry. Brave is *valiente*." },
+    { q: "Where does this sentence belong?", es: "La situación resulta ya insostenible para los residentes.",
+      options: ["A text to a close friend", "A formal letter", "A shout in the hall"], answer: 1,
+      why: "*Resulta insostenible* is calm, written anger: no exclamation, no *rabia*." },
+    { q: "What is she saying about the meeting?", es: "¡Qué pereza ir a esa reunión!",
+      options: ["She can't be bothered", "She's angry at the boss for it", "She's excited"], answer: 0,
+      why: "*¡Qué pereza!* is Colombia's everyday ugh, what a drag." }
+  ],
+  yourTurn: [
+    { en: "It makes me furious that they don't answer.", es: "Me da rabia que no contesten.", accept: ["Me da rabia que no [contesten|respondan]."] },
+    { en: "I'm sick of you always arriving late. (to a friend)", es: "Estoy harto de que siempre llegues tarde.", accept: ["Estoy [harto|harta] de que siempre llegues tarde.", "Estoy [harto|harta] de que llegues siempre tarde."] },
+    { en: "I can't stand being interrupted.", es: "No soporto que me interrumpan.", accept: ["No [soporto|aguanto] que me interrumpan."] },
+    { en: "My mom is angry with me.", es: "Mi mamá está brava conmigo.", accept: ["Mi mamá está [brava|enojada] conmigo."] },
+    { en: "That's enough!", es: "¡Ya basta!", accept: ["¡Basta ya!", "¡Basta!"] }
+  ],
+  translate: [
+    { en: "It outrages me that they fired so many people without a reason.", es: "Me indigna que hayan despedido a tanta gente sin motivo.", accept: ["Me indigna que [hayan despedido|despidieran] a tanta gente sin [motivo|razón|explicación]."] },
+    { en: "It bothered me that they judged me without knowing the facts.", es: "Me molestó que me juzgaran sin conocer los hechos.", accept: ["Me [molestó|fastidió] que me juzgaran sin conocer los hechos."] },
+    { en: "That smell disgusts me.", es: "Me da asco ese olor.", accept: ["Ese olor me da asco."] },
+    { en: "How boring, always the same people!", es: "¡Qué aburrimiento, siempre la misma gente!", accept: ["¡Qué [aburrimiento|aburrición|pereza], siempre la misma gente!"] },
+    { en: "I'm sick of the noise. Last night they played music until four. It outrages me that the management doesn't do anything.", es: "Estoy harto del ruido. Anoche pusieron música hasta las cuatro. Me indigna que la administración no haga nada.", accept: ["Estoy [harto|harta] del ruido. Anoche pusieron música hasta las cuatro (de la mañana). Me indigna que la administración no haga nada."] },
+    { en: "He got angry when he saw the bill.", es: "Se puso bravo cuando vio la cuenta.", accept: ["Se puso [bravo|furioso] cuando vio la cuenta.", "Se enojó cuando vio la cuenta."] }
+  ],
+  register: [
+    { es: "Me molesta un poco, la verdad.", en: "It bothers me a bit, honestly.", when: "a gentle first complaint, to keep the peace" },
+    { es: "¡Qué rabia!", en: "How infuriating!", when: "with friends, letting off steam" },
+    { es: "Estoy harta de este trancón.", en: "I'm sick of this traffic jam.", when: "in everyday talk, when it keeps happening" },
+    { es: "Me indigna que nadie responda.", en: "It outrages me that nobody answers.", when: "when something feels unfair, at work or in public" },
+    { es: "Esta situación resulta inaceptable.", en: "This situation is unacceptable.", when: "in a formal complaint or a letter" }
+  ],
+  personal: {
+    prompt: "Think of something that really gets to you: in traffic, at work, at home. Write one line to a friend about it, then the same complaint calmly, as you would write it to someone in charge.",
+    constraints: [
+      { type: "containsAny", words: ["me da rabia que", "me molesta que", "me fastidia que", "me indigna que", "no soporto que", "no aguanto que", "estoy harto de que", "estoy harta de que"], label: "a frame with *que*: *me da rabia que* or *no soporto que*" },
+      { type: "containsAny", words: ["inaceptable", "insostenible", "les escribo", "le escribo", "quisiera"], label: "the calm version: *resulta inaceptable* or *quisiera*" }
+    ],
+    model: "Me da rabia que los vecinos parqueen en mi puesto. Les escribo porque esta situación resulta inaceptable."
+  },
+  pitfalls: [
+    "*Me indigna* for a late bus overstates it: what's unjust *indigna*, small things *molestan*.",
+    "*Estoy harto de que llegas* keeps the ordinary form: after *de que*, *llegues*.",
+    "In Colombia *estar bravo* is to be angry, not brave: brave is *valiente*."
+  ]
+},
+
+"fn-alegria-satisfaccion-b2": {
+  source: "merged",
+  hook: {
+    line: "Your cousin Camila has just graduated, and the family chat fills up. Joy, pleasure, pride and affection each have their own words, and her grandmother uses nearly all of them.",
+    es: "Abuela: ¡Qué orgullo, mi niña! Estoy tan orgullosa de ti.\nRaúl: ¡Qué bueno que te hayan dado la mención de honor!\nCamila: Me alegra mucho que hayan venido todos. La pasé súper bien.\nAbuela: Te extraño, mi amor. Ven a almorzar el domingo.\nMamá: ¡Qué foto tan bonita! Me pone de buen genio verlos juntos.",
+    en: "Grandma: So proud, my girl! I'm so proud of you.\nRaúl: How great that they gave you the honours mention!\nCamila: I'm so glad you all came. I had a great time.\nGrandma: I miss you, my love. Come for lunch on Sunday.\nMom: What a lovely photo! It puts me in a good mood to see you all together."
+  },
+  examples: [
+    { es: "Me alegra muchísimo que hayas conseguido el trabajo, porque llevabas meses mandando hojas de vida.", en: "I'm so glad you got the job, because you'd been sending out CVs for months." },
+    { es: "Los domingos de sol me ponen de buen genio, sobre todo si salimos a montar en bicicleta.", en: "Sunny Sundays put me in a good mood, especially if we go out cycling." },
+    { es: "Disfrutamos mucho el concierto, aunque estuvimos de pie tres horas y terminamos muertos de cansancio.", en: "We really enjoyed the concert, although we were on our feet for three hours and ended up dead tired." }
+  ],
+  rule: "Four feelings, each with its frame.\nJoy at news: *me alegra que*, *qué bueno que*, *estoy feliz de que*, then the subjunctive: *Me alegra que hayas venido.*\nWhat reliably lifts you: *me pone de buen genio* (or *de buen humor*): *El sol me pone de buen genio.*\nPleasure: *disfrutar*, often with no *de* in Colombia (*disfruté el concierto*), *la pasé muy bien*, *estar a gusto*.\nPride: *estoy orgulloso de ti*, *¡qué orgullo!*, *estoy orgullosa de que lo hayas logrado*.\nAdmiration: *¡Qué foto tan bonita!* with no *una* after *qué*.\nAffection, from calm to strong: *me importas*, *te quiero*, *te adoro*, and *te extraño* for missing someone.",
+  readAndPick: [
+    { q: "What is Raúl reacting to?", es: "¡Qué bueno que te hayan dado la mención de honor!",
+      options: ["A gift he bought for her", "A piece of good news", "A plan for next year"], answer: 1,
+      why: "*Qué bueno que* reacts to news, with *hayan dado* for something already done." },
+    { q: "What does her grandmother feel?", es: "Te extraño, mi amor.",
+      options: ["She misses her", "She's angry", "She's worried about her"], answer: 0,
+      why: "*Extrañar* is to miss someone. *Mi amor* is warm address, not a declaration." },
+    { q: "How often does the sun lift her mood?", es: "El sol me pone de buen genio.",
+      options: ["Only on Sundays", "Most of the time", "Never, these days"], answer: 1,
+      why: "*Me pone de buen genio* names a trigger that works again and again." },
+    { q: "Whose achievement is it?", es: "Estoy orgullosa de que lo hayas logrado.",
+      options: ["Mine", "Theirs, all of them", "Yours"], answer: 2,
+      why: "*Hayas* ends in *-s*: you. Pride in someone else's success takes *de que*." },
+    { q: "How does Mom react to the photo?", es: "¡Qué foto tan bonita!",
+      options: ["She admires it", "She dislikes it a lot", "She asks for it"], answer: 0,
+      why: "*Qué* plus the thing plus *tan* plus the quality: full admiration." },
+    { q: "Which is the quieter, deeper feeling?", es: "Me importas mucho.",
+      options: ["A passing crush", "A burst of anger", "A lasting care"], answer: 2,
+      why: "*Me importas* is calm and lasting; *me vuelves loco* is intensity." }
+  ],
+  yourTurn: [
+    { en: "I'm so glad you came. (to a friend)", es: "Me alegra mucho que hayas venido.", accept: ["Me alegro mucho de que hayas venido.", "Qué bueno que hayas venido.", "Me alegra mucho que vinieras."] },
+    { en: "I'm proud of you. (to a friend)", es: "Estoy orgulloso de ti.", accept: ["Estoy [orgulloso|orgullosa] de ti.", "Me siento [orgulloso|orgullosa] de ti."] },
+    { en: "I miss you a lot. (to a friend)", es: "Te extraño mucho.", accept: [] },
+    { en: "What a spectacular view!", es: "¡Qué vista tan espectacular!", accept: ["¡Qué vista más espectacular!"] },
+    { en: "Rain puts me in a bad mood.", es: "La lluvia me pone de mal genio.", accept: ["La lluvia me pone de mal [genio|humor]."] }
+  ],
+  translate: [
+    { en: "We had a great time at the party.", es: "La pasamos súper bien en la fiesta.", accept: ["La pasamos [súper bien|genial|muy bien|delicioso] en la fiesta.", "Nos divertimos mucho en la fiesta."] },
+    { en: "I feel very comfortable in my new job.", es: "Me siento muy a gusto en mi nuevo trabajo.", accept: ["Estoy muy a gusto en mi nuevo trabajo.", "Me siento muy a gusto en mi trabajo nuevo."] },
+    { en: "It meant a lot to me that you remembered my birthday. (to a friend)", es: "Me emocionó mucho que te acordaras de mi cumpleaños.", accept: ["Me [emocionó|alegró] mucho que te acordaras de mi cumpleaños.", "Me emocionó mucho que te hayas acordado de mi cumpleaños."] },
+    { en: "It's admirable, the passion she puts into everything.", es: "Es admirable la pasión que pone en todo.", accept: ["Es admirable la pasión que le pone a todo."] },
+    { en: "We were all very proud that she had come so far. Her grandmother cried with joy. What a beautiful day!", es: "Todos estábamos muy orgullosos de que hubiera llegado tan lejos. Su abuela lloró de alegría. ¡Qué día tan bonito!", accept: ["Todos estábamos muy orgullosos de que hubiera llegado tan lejos. Su abuela lloró de alegría. ¡Qué día tan [bonito|lindo|hermoso]!"] },
+    { en: "I enjoyed the concert a lot.", es: "Disfruté mucho el concierto.", accept: ["Disfruté mucho del concierto.", "Disfruté muchísimo el concierto."] }
+  ],
+  register: [
+    { es: "¡Qué chévere!", en: "How cool!", when: "with friends in Colombia, quick and warm" },
+    { es: "¡Qué bueno que viniste!", en: "So glad you came!", when: "in Colombian speech, greeting someone who just arrived" },
+    { es: "Me alegra mucho que hayas venido.", en: "I'm very glad you came.", when: "anywhere, warmly and with care" },
+    { es: "La pasamos delicioso.", en: "We had a lovely time.", when: "in Colombia, a warm and very local way to say it" },
+    { es: "Nos complace informarle que su solicitud fue aprobada.", en: "We are pleased to inform you that your application was approved.", when: "in a formal letter from an office or company" }
+  ],
+  personal: {
+    prompt: "Think of someone close who achieved something recently. Write them a short message: your joy at the news, your pride, and one line of affection.",
+    constraints: [
+      { type: "regex", pattern: "(me alegra|me alegro de|qu[eé] bueno|estoy feliz de|me encanta) que", label: "joy at the news: *me alegra que* or *qué bueno que*" },
+      { type: "containsAny", words: ["orgulloso", "orgullosa", "orgullosos", "qué orgullo"], label: "pride: *estoy orgullosa de ti* or *qué orgullo*" },
+      { type: "containsAny", words: ["te quiero", "te extraño", "me importas", "te adoro", "mi amor", "mi vida"], label: "affection: *te quiero* or *te extraño*" }
+    ],
+    model: "¡Qué bueno que te hayan aceptado en la universidad! Estoy muy orgullosa de ti. Te extraño, ven pronto."
+  },
+  pitfalls: [
+    "After *me alegra que*, the subjunctive: *hayas venido*. Only the quick *¡qué bueno que viniste!* bends it in speech.",
+    "*¡Qué una vista!* adds the *una* English needs: *¡Qué vista tan bonita!*",
+    "*Me importas* is not you're important: it says I care about you."
+  ]
+},
+
+"fn-tristeza-afliccion-b2": {
+  source: "merged",
+  hook: {
+    line: "Andrés moved to Toronto a month ago and writes to an old friend in Bogotá. In one short email he is sad, disappointed and sorry, and each feeling has its own frame.",
+    es: "Me da tristeza que ya no nos veamos los viernes.\nEs una pena que no hayas podido venir a la despedida.\nLa pasé muy mal las primeras semanas, la verdad.\nMe decepcionó un poco que el trabajo no fuera como me lo pintaron.\nMe arrepiento de no haber aprendido inglés antes. Ojalá te hubiera hecho caso.",
+    en: "It makes me sad that we don't see each other on Fridays anymore.\nIt's a shame you couldn't come to the farewell party.\nI had a really hard time the first few weeks, honestly.\nI was a bit disappointed that the job wasn't what they made it out to be.\nI regret not learning English sooner. I wish I had listened to you."
+  },
+  examples: [
+    { es: "Me dolió mucho que no me invitaran al matrimonio, porque fuimos amigas desde el colegio.", en: "It really hurt that they didn't invite me to the wedding, because we'd been friends since school." },
+    { es: "¡Qué decepción! Esperaba mucho más de la película, después de todo lo que dijeron las críticas.", en: "What a letdown! I expected much more from the film, after everything the reviews said." },
+    { es: "Siento no haberte llamado el día de tu cumpleaños; se me pasó por completo con el trasteo.", en: "I'm sorry I didn't call you on your birthday; it completely slipped my mind with the move." }
+  ],
+  rule: "Sadness at a fact: *me da tristeza que*, *es una pena que*, *qué lástima que*, then the subjunctive: *Es una pena que no hayas podido venir.*\nHurt, which claims real pain: *me dolió que*.\nA hard stretch, not one fact: *la pasé muy mal*, *fue muy duro*.\nDisappointment: *me decepcionó que*, *¡qué decepción!*, *estoy decepcionado con el resultado*.\nRegret about yourself: *me arrepiento de*, or *siento no haber* plus a participle: *Siento no haberte llamado.* Too late: *ojalá hubiera*.\nIn Colombia *me da pena* means I'm embarrassed, and *qué pena* is sorry. For sadness, say *me da tristeza*.",
+  readAndPick: [
+    { q: "Did the friend come to the farewell?", es: "Es una pena que no hayas podido venir.",
+      options: ["Yes, for a while at least", "No, he couldn't", "Yes, but late"], answer: 1,
+      why: "*Que no hayas podido* states the fact he regrets: the friend couldn't come." },
+    { q: "Is Andrés talking about one moment or a period?", es: "La pasé muy mal las primeras semanas.",
+      options: ["A whole period", "One phone call", "A single bad day"], answer: 0,
+      why: "*La pasé mal* covers a stretch of time, not one piece of news." },
+    { q: "What is he sorry about?", es: "Siento no haberte llamado.",
+      options: ["Calling too often", "That you never called", "Not calling you"], answer: 2,
+      why: "*Siento no haber* with the same person: he is sorry about his own silence." },
+    { q: "In Bogotá, what does this mean?", es: "Qué pena, ¿me repite la dirección?",
+      options: ["How sad about the address", "Sorry, could you repeat it?", "What a shame, the address is lost"], answer: 1,
+      why: "In Colombia *qué pena* opens an apology or a request: sorry, excuse me." },
+    { q: "How strong is the feeling?", es: "Me dolió mucho que no me invitaran.",
+      options: ["Real hurt", "A slight letdown", "Mild surprise"], answer: 0,
+      why: "*Me dolió* claims real pain; a slight letdown would be *me decepcionó un poco*." },
+    { q: "Can his wish still come true?", es: "Ojalá te hubiera hecho caso.",
+      options: ["Yes, next week", "Maybe, if he tries hard", "No, it's too late"], answer: 2,
+      why: "*Ojalá* with *hubiera* wishes about a closed past." }
+  ],
+  yourTurn: [
+    { en: "It makes me sad that you're leaving. (to a friend)", es: "Me da tristeza que te vayas.", accept: ["Me pone triste que te vayas.", "Qué tristeza que te vayas."] },
+    { en: "It's a shame they didn't invite us.", es: "Es una pena que no nos hayan invitado.", accept: ["Es una [pena|lástima] que no nos [hayan invitado|invitaran]."] },
+    { en: "I'm sorry I didn't call you. (to a friend)", es: "Siento no haberte llamado.", accept: ["Siento mucho no haberte llamado.", "Lamento no haberte llamado.", "Perdón por no haberte llamado."] },
+    { en: "I regret not studying more.", es: "Me arrepiento de no haber estudiado más.", accept: [] },
+    { en: "I'm quite disappointed with the result.", es: "Estoy bastante decepcionado con el resultado.", accept: ["Estoy bastante [decepcionado|decepcionada] con el resultado."] }
+  ],
+  translate: [
+    { en: "It hurt me that he treated me that way.", es: "Me dolió que me tratara de esa forma.", accept: ["Me dolió que me tratara [de esa forma|así|de esa manera]."] },
+    { en: "What a letdown, we didn't win!", es: "¡Qué desilusión, no ganamos!", accept: ["¡Qué [desilusión|decepción], no ganamos!"] },
+    { en: "It disappoints me that they didn't keep their word.", es: "Me decepciona que no hayan cumplido su palabra.", accept: ["Me decepciona que no [hayan cumplido|cumplieran] su palabra."] },
+    { en: "We deeply regret what happened.", es: "Lamentamos profundamente lo ocurrido.", accept: ["Lamentamos profundamente lo que pasó.", "Lamentamos mucho lo ocurrido."] },
+    { en: "I had a terrible time when we broke up. It was very hard. I wish I had talked to you sooner. (to a friend)", es: "La pasé fatal cuando terminamos. Fue muy duro. Ojalá hubiera hablado contigo antes.", accept: ["La pasé [fatal|muy mal|horrible] cuando [terminamos|nos separamos]. Fue muy duro. Ojalá hubiera hablado contigo antes."] },
+    { en: "Listening to this kind of music makes me sad.", es: "Escuchar este tipo de música me pone triste.", accept: ["Oír este tipo de música me pone triste.", "Escuchar este tipo de música me da tristeza."] }
+  ],
+  register: [
+    { es: "Qué tristeza.", en: "How sad.", when: "reacting to bad news, with feeling" },
+    { es: "Es una pena que no puedas venir.", en: "It's a shame you can't come.", when: "anywhere, a calm regret" },
+    { es: "Me arrepiento de no haber ido.", en: "I regret not going.", when: "owning your own mistake honestly" },
+    { es: "Lamentamos las molestias ocasionadas.", en: "We regret the inconvenience caused.", when: "a company's formal apology in writing" }
+  ],
+  personal: {
+    prompt: "Think of something that went worse than you hoped this year: a trip, a job, a goodbye. Write one sad line, one about a disappointment, and one regret about yourself.",
+    constraints: [
+      { type: "containsAny", words: ["me da tristeza que", "es una pena que", "qué lástima que", "es una lástima que", "qué tristeza que", "me pone triste que"], label: "sadness at a fact: *es una pena que*" },
+      { type: "containsAny", words: ["me decepcionó", "me decepciona", "qué decepción", "decepcionado", "decepcionada", "qué desilusión"], label: "disappointment: *me decepcionó que*" },
+      { type: "containsAny", words: ["me arrepiento de", "siento no haber", "ojalá hubiera", "ojalá no hubiera", "lamento no haber"], label: "your own regret: *me arrepiento de* or *ojalá hubiera*" }
+    ],
+    model: "Es una pena que mi hermano no haya podido venir en diciembre. Me decepcionó que el hotel estuviera tan sucio. Me arrepiento de no haber reservado otro."
+  },
+  pitfalls: [
+    "In Colombia *me da pena* means I'm embarrassed; for sadness say *me da tristeza*.",
+    "*Siento que no fui* is the slip: same person, so *siento no haber ido*.",
+    "*Lo pasé fatal* is how Spain says it; Latin America says *la pasé fatal*."
+  ]
+},
+
+"fn-miedo-ansiedad-b2": {
+  source: "merged",
+  hook: {
+    line: "It's the night before Laura's first job interview in Spanish, and she messages her friend Felipe. Fear, worry, nerves and embarrassment all come out, each with its own words.",
+    es: "Laura: Me da miedo que me hagan preguntas técnicas.\nFelipe: Tranquila. ¿Qué es lo que más te preocupa?\nLaura: Me preocupa que no entiendan mi acento.\nLaura: Y cuando me pongo nerviosa, me pongo roja como un tomate. ¡Qué oso!\nFelipe: Me pasa igual. Me daba pena hablar en las reuniones, y ya ves.",
+    en: "Laura: I'm scared they'll ask me technical questions.\nFelipe: Relax. What worries you most?\nLaura: I'm worried they won't understand my accent.\nLaura: And when I get nervous, I go as red as a tomato. How embarrassing!\nFelipe: Same here. I used to be embarrassed to speak in meetings, and look at me now."
+  },
+  examples: [
+    { es: "Tengo miedo de que el avión se retrase y pierda la conexión en Panamá esta noche.", en: "I'm afraid the plane will be delayed and I'll miss the connection in Panama tonight." },
+    { es: "Me pone nerviosa que no contestes los mensajes cuando sales de noche en moto.", en: "It makes me nervous when you don't answer messages when you go out on the motorbike at night." },
+    { es: "Me dio mucha pena llegar tarde a la reunión con el cliente y encima sin el computador.", en: "I was really embarrassed to arrive late to the meeting with the client, and without the computer on top of that." }
+  ],
+  rule: "Fear and worry: *me da miedo que*, *tengo miedo de que*, *me preocupa que*, then the subjunctive: *Me preocupa que no entiendan.* Same person? The plain verb: *Me da miedo manejar.*\nClimbing: *miedo*, *pánico*, *terror*. A sudden fright: *¡Qué susto!*\nNerves: *estoy nerviosa*, *¡qué nervios!*, *me pone nervioso que*. When it breaks: *perdí la paciencia*.\nEmbarrassment works like *gustar*: *me da vergüenza*. In Colombia *me da pena* says the same, and *¡qué oso!* is how embarrassing.\nShame about yourself: *me avergüenzo de*, with *de*.\nBlushing: *se puso rojo como un tomate*.",
+  readAndPick: [
+    { q: "What is Laura worried about?", es: "Me preocupa que no entiendan mi acento.",
+      options: ["Not understanding their questions", "Them not getting her accent", "Getting there late"], answer: 1,
+      why: "*Entiendan* ends in *-n*: they. The worry is about the interviewers." },
+    { q: "What does Laura mean, in Colombia?", es: "¡Qué oso!",
+      options: ["That's terrifying!", "How embarrassing!", "What a big bear!"], answer: 1,
+      why: "*¡Qué oso!* is Colombian for how embarrassing; *hacer el oso* is to make a fool of yourself." },
+    { q: "What did Felipe use to feel in meetings?", es: "Me daba pena hablar en las reuniones.",
+      options: ["Shy about speaking up", "Sorry for his colleagues", "Bored by the speeches"], answer: 0,
+      why: "In Colombia *me da pena* is embarrassment, and *daba* says it used to happen." },
+    { q: "How strong is this fear?", es: "Me da terror que le pase algo.",
+      options: ["Mild", "Over now", "Extreme"], answer: 2,
+      why: "*Terror* is the top of the ladder: *miedo*, *pánico*, *terror*." },
+    { q: "Who feels the shame here?", es: "Me avergüenzo de mi comportamiento.",
+      options: ["The speaker", "The neighbours, mostly", "Nobody at all"], answer: 0,
+      why: "*Me avergüenzo de* makes the speaker the one ashamed of his own behaviour." },
+    { q: "What happened to him?", es: "Perdió la paciencia después de una hora esperando.",
+      options: ["He kept very calm", "He fell asleep", "He snapped"], answer: 2,
+      why: "*Perder la paciencia* names the moment composure breaks." }
+  ],
+  yourTurn: [
+    { en: "I'm afraid they'll ask me technical questions.", es: "Tengo miedo de que me hagan preguntas técnicas.", accept: ["[Tengo miedo de que|Me da miedo que] me hagan preguntas técnicas."] },
+    { en: "It worries me that he doesn't answer.", es: "Me preocupa que no conteste.", accept: ["Me preocupa que no [conteste|responda]."] },
+    { en: "I'm embarrassed to speak in public.", es: "Me da vergüenza hablar en público.", accept: ["Me da [vergüenza|pena] hablar en público."] },
+    { en: "What a fright you gave me! (to a friend)", es: "¡Qué susto me diste!", accept: ["¡Qué susto me pegaste!"] },
+    { en: "I'm so nervous before the exam!", es: "¡Qué nervios antes del examen!", accept: ["¡Qué nervios tengo antes del examen!", "¡Estoy muy [nervioso|nerviosa] antes del examen!"] }
+  ],
+  translate: [
+    { en: "It would terrify me if something like that happened again.", es: "Me daría terror que volviera a pasar algo así.", accept: ["Me daría [terror|pánico] que volviera a [pasar|ocurrir] algo así."] },
+    { en: "Job interviews make me nervous.", es: "Las entrevistas de trabajo me ponen nerviosa.", accept: ["Las entrevistas de trabajo me ponen [nervioso|nerviosa]."] },
+    { en: "He turned as red as a tomato when we found out.", es: "Se puso rojo como un tomate cuando nos enteramos.", accept: ["Se puso rojo como un tomate cuando [nos enteramos|lo descubrimos]."] },
+    { en: "I'm not ashamed of being who I am.", es: "No me avergüenzo de ser quien soy.", accept: [] },
+    { en: "I was very much on edge during exam season. I was afraid of failing maths. Now I laugh, but at the time I was scared to death.", es: "Estuve muy nerviosa durante la época de exámenes. Tenía miedo de perder matemáticas. Ahora me río, pero en ese momento estaba muerta de miedo.", accept: ["Estuve muy [nerviosa|nervioso|estresada|estresado|tensa|tenso] durante la época de exámenes. Tenía miedo de [perder|reprobar] matemáticas. Ahora me río, pero en ese momento estaba [muerta|muerto] de miedo."] },
+    { en: "It scares them to think about what might happen.", es: "Les da miedo pensar en lo que podría pasar.", accept: ["Les asusta pensar en lo que podría pasar.", "Les da miedo pensar en lo que puede pasar."] }
+  ],
+  register: [
+    { es: "¡Qué oso!", en: "How embarrassing!", when: "with friends in Colombia, laughing at yourself" },
+    { es: "Me da pena con usted.", en: "I'm so sorry, how embarrassing.", when: "in Colombia, apologising politely to someone you call usted" },
+    { es: "Me da vergüenza.", en: "I'm embarrassed.", when: "anywhere in the Spanish-speaking world" },
+    { es: "Estoy muerta de miedo.", en: "I'm scared to death.", when: "with friends, exaggerating for effect" },
+    { es: "Nos preocupa que no se haya tomado ninguna medida.", en: "We are concerned that no measures have been taken.", when: "in a formal letter or a public statement" }
+  ],
+  personal: {
+    prompt: "Think of something coming up that makes you nervous: an exam, a trip, a conversation. Write what scares you about it, what worries you, and an embarrassing moment you'd like to avoid.",
+    constraints: [
+      { type: "containsAny", words: ["me da miedo", "tengo miedo de", "me da pánico", "me asusta"], label: "fear: *me da miedo que* or *tengo miedo de*" },
+      { type: "containsAny", words: ["me preocupa", "estoy preocupado", "estoy preocupada"], label: "worry: *me preocupa que*" },
+      { type: "containsAny", words: ["me da vergüenza", "me da pena", "qué oso", "hacer el oso", "me avergüenza"], label: "embarrassment: *me da pena* or *qué oso*" }
+    ],
+    model: "Me da miedo que el examen sea muy largo. Me preocupa no terminar a tiempo. Y me da pena quedarme en blanco delante de todos."
+  },
+  pitfalls: [
+    "In Colombia *me da pena* is embarrassment, not sadness: *me da pena pedirle plata*.",
+    "*Estoy embarazada* means pregnant: embarrassed is *me da vergüenza*.",
+    "*Me avergüenzo que* drops a word: *me avergüenzo de que*, or *me avergüenza que*."
+  ]
+},
+
+"fn-expresar-alivio-b2": {
+  source: "merged",
+  hook: {
+    line: "Julián has been waiting all week for the results of his medical tests, and his sister checks in. Relief, hope and acceptance follow one another in a handful of messages.",
+    es: "Hermana: ¿Ya te dieron los resultados?\nJulián: Sí, ¡todo salió bien! ¡Qué alivio!\nHermana: ¡Gracias a Dios! ¿Y el viaje a Cartagena?\nJulián: Toca aplazarlo. El médico quiere que descanse un mes.\nHermana: Ni modo, otra vez será. Ojalá puedan ir en diciembre.",
+    en: "Sister: Did they give you the results yet?\nJulián: Yes, everything came out fine! What a relief!\nSister: Thank God! And the trip to Cartagena?\nJulián: We'll have to put it off. The doctor wants me to rest for a month.\nSister: Oh well, maybe next time. I hope you can go in December."
+  },
+  examples: [
+    { es: "¡Menos mal que llevé la sombrilla! Empezó a llover justo cuando salimos del cine.", en: "Thank goodness I took the umbrella! It started raining just as we came out of the cinema." },
+    { es: "Ojalá que no llueva el sábado, porque tenemos el asado en la finca de mis suegros.", en: "I hope it doesn't rain on Saturday, because we have the barbecue at my in-laws' farm." },
+    { es: "No hay nada que hacer: el vuelo ya salió, así que toca esperar el de mañana.", en: "There's nothing to be done: the flight has already left, so we have to wait for tomorrow's." }
+  ],
+  rule: "Relief: *¡Menos mal!* (everyday), *¡Qué alivio!*, *¡Gracias a Dios!* (said whatever you believe). With a fact: *Menos mal que llegaste.* Calmly: *me siento más tranquila*. When it's over: *ya pasó*.\nHope: *espero que*, *ojalá (que)*, then the subjunctive. *Ojalá llueva*: it could happen. *Ojalá lloviera*: unlikely. *Ojalá hubiera llovido*: too late.\nAs a reply: *Eso espero.* *Ojalá que sí.* *Si Dios quiere.*\nAcceptance: *Ni modo.* *¡Qué le vamos a hacer!* *Otra vez será.* *No hay nada que hacer.*\nIn Colombia, *toca* is the shrug of what has to be done: *Toca esperar.*",
+  readAndPick: [
+    { q: "How does Julián feel about the results?", es: "Sí, ¡todo salió bien! ¡Qué alivio!",
+      options: ["Worried", "Relieved", "Resigned to it"], answer: 1,
+      why: "*¡Qué alivio!* names the feeling once the worry is over." },
+    { q: "What does *toca aplazarlo* tell you?", es: "Toca aplazarlo. El médico quiere que descanse.",
+      options: ["They want to go now", "They have to put it off", "The trip is cancelled forever"], answer: 1,
+      why: "*Toca* is Colombian for it has to be done: the trip waits." },
+    { q: "How does his sister take the change?", es: "Ni modo, otra vez será.",
+      options: ["She's furious about it all", "She's thrilled", "She shrugs it off"], answer: 2,
+      why: "*Ni modo* and *otra vez será* accept it lightly: maybe next time." },
+    { q: "How likely does the speaker think rain is?", es: "Ojalá lloviera esta semana.",
+      options: ["Quite likely", "Not very likely", "It already rained"], answer: 1,
+      why: "*Ojalá* with the *-ra* form wishes for something unlikely. *Ojalá llueva* would be a real hope." },
+    { q: "What is she replying to?", es: "¿Crees que vamos a llegar a tiempo? Eso espero.",
+      options: ["A hope he just raised", "A plan she made herself", "A promise"], answer: 0,
+      why: "*Eso espero* answers a hope someone else raised, without repeating it." },
+    { q: "Can this wish still come true?", es: "Ojalá hubiéramos salido más temprano.",
+      options: ["No, it's too late", "Yes, tomorrow", "Yes, if we really hurry"], answer: 0,
+      why: "*Hubiéramos salido* looks back at a past that is closed." }
+  ],
+  yourTurn: [
+    { en: "Thank goodness you arrived on time! (to a friend)", es: "¡Menos mal que llegaste a tiempo!", accept: [] },
+    { en: "What a relief, we're done!", es: "¡Qué alivio, ya terminamos!", accept: ["¡Qué alivio, por fin terminamos!"] },
+    { en: "I hope so.", es: "Eso espero.", accept: ["Ojalá que sí.", "Ojalá."] },
+    { en: "There's nothing to be done.", es: "No hay nada que hacer.", accept: [] },
+    { en: "We'll have to wait.", es: "Toca esperar.", accept: ["Nos toca esperar.", "Hay que esperar.", "Tenemos que esperar."] }
+  ],
+  translate: [
+    { en: "I hope everything turns out well.", es: "Espero que todo salga bien.", accept: ["Ojalá (que) todo salga bien."] },
+    { en: "Oh well, maybe next time.", es: "Ni modo, otra vez será.", accept: ["[Ni modo|En fin|Qué le vamos a hacer], otra vez será."] },
+    { en: "I feel much calmer after talking to the doctor.", es: "Me siento mucho más tranquila después de hablar con el médico.", accept: ["Me siento mucho más [tranquila|tranquilo|aliviada|aliviado] después de hablar con [el médico|la médica|el doctor|la doctora]."] },
+    { en: "I wish I had had more time to prepare it.", es: "Ojalá hubiera tenido más tiempo para prepararlo.", accept: [] },
+    { en: "They cancelled the flight. What can you do! At least they gave us a hotel. I hope we can leave tomorrow.", es: "Cancelaron el vuelo. ¡Qué le vamos a hacer! Por lo menos nos dieron hotel. Espero que podamos salir mañana.", accept: ["Cancelaron el vuelo. ¡Qué le vamos a hacer! [Por lo menos|Al menos] nos dieron (un) hotel. [Espero que|Ojalá] podamos salir mañana."] },
+    { en: "He's resigned to not getting the promotion this year.", es: "Está resignado a no conseguir el ascenso este año.", accept: ["Está resignado a no [conseguir|recibir|tener] el ascenso este año."] }
+  ],
+  register: [
+    { es: "¡Uf, menos mal!", en: "Phew, thank goodness!", when: "in conversation, the everyday relief" },
+    { es: "¡Gracias a Dios!", en: "Thank God!", when: "anywhere in Colombia, whatever you believe" },
+    { es: "Si Dios quiere.", en: "God willing.", when: "about plans, a very common Colombian hope" },
+    { es: "Ni modo.", en: "Oh well.", when: "accepting something small you can't change" },
+    { es: "Lamentablemente, no es posible modificar la fecha.", en: "Unfortunately, it is not possible to change the date.", when: "in a formal reply, closing the matter politely" }
+  ],
+  personal: {
+    prompt: "Think of something that worried you and turned out fine, and something you had to accept. Write your relief, one hope for what comes next, and how you shrug off the rest.",
+    constraints: [
+      { type: "containsAny", words: ["menos mal", "qué alivio", "gracias a dios", "ya pasó"], label: "relief: *menos mal* or *qué alivio*" },
+      { type: "containsAny", words: ["espero que", "ojalá", "eso espero", "si dios quiere"], label: "a hope: *ojalá* or *espero que*" },
+      { type: "containsAny", words: ["ni modo", "qué le vamos a hacer", "otra vez será", "no hay nada que hacer", "toca", "en fin"], label: "acceptance: *ni modo* or *otra vez será*" }
+    ],
+    model: "¡Menos mal que el examen de manejo salió bien! Ojalá me den la licencia pronto. El carro de mi papá no está disponible este mes, pero ni modo."
+  },
+  pitfalls: [
+    "*Ojalá llueva* and *ojalá lloviera* are different hopes: possible, then unlikely.",
+    "*Eso espero* only answers a hope someone else raised; it can't open a conversation.",
+    "*Ni modo* and *otra vez será* are light; for a real loss, *lo siento mucho*."
+  ]
+},
+
+"fn-empatia-b2": {
+  source: "merged",
+  hook: {
+    line: "Valentina tells her friend Sergio that she has just lost her job. His replies move through three things a good friend does: understand, comfort and encourage.",
+    es: "Valentina: Me quedé sin trabajo. Cerraron toda la oficina.\nSergio: ¡Ay, qué pesar! Lo siento mucho, Valen.\nSergio: Te entiendo perfectamente; a mí me pasó lo mismo hace dos años.\nSergio: Tranquila, todo tiene solución. Ya verás que vas a encontrar algo mejor.\nSergio: No tengas miedo de buscar en otra ciudad. Cuenta conmigo.",
+    en: "Valentina: I lost my job. They closed the whole office.\nSergio: Oh, what a shame! I'm so sorry, Valen.\nSergio: I understand completely; the same thing happened to me two years ago.\nSergio: Don't worry, there's a way out of everything. You'll see, you'll find something better.\nSergio: Don't be afraid to look in another city. Count on me."
+  },
+  examples: [
+    { es: "Siento mucho que hayas tenido que pasar por todo esto sola, sin tu familia cerca.", en: "I'm so sorry you've had to go through all this alone, without your family nearby." },
+    { es: "A mí me pasa lo mismo con las presentaciones: la noche antes casi no duermo.", en: "The same happens to me with presentations: the night before I hardly sleep." },
+    { es: "No te rindas ahora, que ya casi terminas la tesis y todos estamos muy orgullosos.", en: "Don't give up now, you've almost finished your thesis and we're all very proud." }
+  ],
+  rule: "Three moves, in this order.\nShow you understand: *Te entiendo.* *Sé cómo te sientes.* Share it only if it's true: *A mí me pasó lo mismo.* Sympathy: *¡Ay, pobrecita!* *¡Qué pesar!* (Colombia). *Siento mucho que*, with the subjunctive: *Siento que hayas tenido que pasar por esto.*\nComfort: *Tranquilo.* *Ya pasó.* *Todo va a salir bien.* *Todo tiene solución.* Match the time: *ya pasó* for what's over, *va a salir bien* for what's ahead.\nEncourage: name the fear, then push. *No tengas miedo de equivocarte.* *¡Atrévete a intentarlo!* *No te rindas.* *Tú puedes.* *¡Ánimo!* *¡Hágale!*\nWith *usted*: *No se preocupe.* *No se rinda.*",
+  readAndPick: [
+    { q: "What is Sergio claiming?", es: "Te entiendo perfectamente; a mí me pasó lo mismo.",
+      options: ["That he pities her a lot", "He lived it too", "She caused it"], answer: 1,
+      why: "*A mí me pasó lo mismo* claims a shared experience, a stronger move than *te entiendo*." },
+    { q: "What does *qué pesar* express here?", es: "¡Ay, qué pesar! Lo siento mucho.",
+      options: ["Sympathy", "Heavy work ahead", "Impatience"], answer: 0,
+      why: "*¡Qué pesar!* is Colombian sympathy for bad news: what a shame." },
+    { q: "Is Sergio's comfort about the past or the future?", es: "Ya verás que vas a encontrar algo mejor.",
+      options: ["The past, mostly", "Right now", "The future"], answer: 2,
+      why: "*Vas a encontrar* looks ahead; *ya pasó* would close something already over." },
+    { q: "Why does he name the fear?", es: "No tengas miedo de buscar en otra ciudad.",
+      options: ["To scare her a little more", "To make the push land", "To blame her"], answer: 1,
+      why: "Naming the fear, *miedo de buscar*, lands better than a bare *tú puedes*." },
+    { q: "Who is this said to?", es: "No se preocupe, todo se va a arreglar.",
+      options: ["A close friend of yours", "Someone you call usted", "Your little brother"], answer: 1,
+      why: "*No se preocupe* is the *usted* form; to a friend, *no te preocupes*." },
+    { q: "When is *ya pasó* the right thing to say?", es: "Ya pasó, ya pasó. Estás bien.",
+      options: ["When it's over", "Before it even starts", "While it goes on"], answer: 0,
+      why: "*Ya pasó* closes a trouble that has ended. For one still going on, *todo va a salir bien*." }
+  ],
+  yourTurn: [
+    { en: "I know exactly how you feel. (to a friend)", es: "Sé exactamente cómo te sientes.", accept: [] },
+    { en: "The same thing happened to me.", es: "A mí me pasó lo mismo.", accept: ["Me pasó lo mismo."] },
+    { en: "Don't be afraid of making mistakes. (to a friend)", es: "No tengas miedo de equivocarte.", accept: [] },
+    { en: "Don't give up, you're almost there. (to a friend)", es: "No te rindas, ya casi lo logras.", accept: ["No te rindas, ya casi lo [logras|tienes|consigues]."] },
+    { en: "I'm so sorry you've had to go through this. (to a friend)", es: "Siento mucho que hayas tenido que pasar por esto.", accept: ["Lamento mucho que hayas tenido que pasar por esto."] }
+  ],
+  translate: [
+    { en: "Don't worry, everything will work out. (to someone you call usted)", es: "No se preocupe, todo se va a arreglar.", accept: ["No se preocupe, todo se [va a arreglar|arreglará|va a solucionar]."] },
+    { en: "Dare to try it! (to a friend)", es: "¡Atrévete a intentarlo!", accept: [] },
+    { en: "Come on, you can do it, I believe in you. (to a friend)", es: "Vamos, tú puedes, confío en ti.", accept: ["[Vamos|Dale|Ánimo], tú puedes, [confío|creo] en ti."] },
+    { en: "Oh, poor thing, what bad luck!", es: "¡Ay, pobrecito, qué mala suerte!", accept: ["¡Ay, [pobrecito|pobrecita|pobre], qué mala suerte!"] },
+    { en: "Relax, it's over now. Everything has a solution. Tomorrow we'll go to the clinic together. (to a friend)", es: "Tranquila, ya pasó. Todo tiene solución. Mañana vamos juntas a la clínica.", accept: ["[Tranquila|Tranquilo], ya pasó. Todo tiene solución. Mañana vamos [juntas|juntos] a la clínica.", "[Tranquila|Tranquilo], ya pasó. Todo tiene solución. Mañana [iremos|vamos a ir] [juntas|juntos] a la clínica."] },
+    { en: "There's nothing to fear, everything will turn out fine.", es: "No hay nada que temer, todo va a salir bien.", accept: ["No hay nada que temer, todo [va a salir|saldrá] bien."] }
+  ],
+  register: [
+    { es: "Tranqui, no pasa nada.", en: "Chill, it's nothing.", when: "with friends, for a small upset" },
+    { es: "¡Qué pesar!", en: "What a shame!", when: "in Colombia, sympathy for someone's bad news" },
+    { es: "¡Hágale, que usted puede!", en: "Go for it, you can do it!", when: "in Colombia, a warm push, even between friends" },
+    { es: "Te acompaño en tu dolor.", en: "I'm with you in your grief.", when: "spoken condolences, to someone who lost a loved one" },
+    { es: "Mi más sentido pésame.", en: "My deepest condolences.", when: "in writing or formally, after a death" }
+  ],
+  personal: {
+    prompt: "A friend has just had bad news: a failed exam, a breakup or a lost job. Write three lines to them: show you understand, comfort them, and push them to take a step.",
+    constraints: [
+      { type: "containsAny", words: ["te entiendo", "sé cómo te sientes", "me pasó lo mismo", "me pasa lo mismo", "qué pesar", "lo siento", "siento mucho"], label: "understanding: *te entiendo* or *qué pesar*" },
+      { type: "containsAny", words: ["tranquilo", "tranquila", "ya pasó", "todo va a salir bien", "todo tiene solución", "no te preocupes"], label: "comfort: *tranquila* or *todo tiene solución*" },
+      { type: "containsAny", words: ["no tengas miedo de", "atrévete", "no te rindas", "tú puedes", "ánimo", "hágale"], label: "a push: *no te rindas* or *atrévete*" }
+    ],
+    model: "Qué pesar, te entiendo. Tranquila, todo tiene solución. No tengas miedo de presentarte otra vez en junio."
+  },
+  pitfalls: [
+    "*A mí me pasó lo mismo* only helps if it's true; if not, *te entiendo* is safer.",
+    "*Ya pasó* for a problem that's still going on sounds dismissive.",
+    "*No tienes miedo* states a fact; the push is *no tengas miedo de*."
+  ]
+},
+
+"fn-sorpresa-extraneza-b2": {
+  source: "merged",
+  hook: {
+    line: "Simón texts his flatmate a piece of neighbourhood news that nobody saw coming. The replies run from a quick gasp to a slow, puzzled *that's odd*, and after the puzzled ones the verb changes shape.",
+    es: "Simón: ¿Supiste? Don Carlos vendió la tienda de la esquina.\nMateo: ¡No me digas! ¿En serio?\nSimón: Sí, y se va a vivir a Santa Marta.\nMateo: ¡No puede ser! Me extraña que no nos haya dicho nada.\nSimón: Qué raro que la vendiera tan rápido, ¿no?",
+    en: "Simón: Did you hear? Don Carlos sold the corner shop.\nMateo: You're kidding! Seriously?\nSimón: Yes, and he's moving to Santa Marta.\nMateo: That can't be! It's strange that he hasn't said anything to us.\nSimón: Odd that he sold it so fast, isn't it?"
+  },
+  examples: [
+    { es: "Me sorprendió muchísimo que hubiera llegado tan temprano, porque siempre es el último en llegar.", en: "I was really surprised that he had arrived so early, because he's always the last to arrive." },
+    { es: "Me llama la atención que nadie haya dicho nada sobre el cambio de horario del colegio.", en: "It strikes me that nobody has said anything about the school's change of schedule." },
+    { es: "¡Qué casualidad encontrarte aquí! Justo ayer le pregunté a tu hermana cómo estabas.", en: "What a coincidence running into you here! Just yesterday I asked your sister how you were." }
+  ],
+  rule: "A quick gasp: *¡No me digas!* *¿En serio?* *¡No puede ser!* *¡No te creo!* *¡Qué casualidad!* None of them means its words; each one just reacts.\nA slower, puzzled reaction: *me extraña que*, *me sorprende que*, *me llama la atención que*, *¡qué raro que!*, *es increíble que*. The next verb goes into the subjunctive, even when the fact is true: *Me extraña que no haya llamado.*\nMatch the time: *que no conteste* (now), *que no haya llamado* (done by now), *que la vendiera* (back then).\nAbout a thing or a person: *estoy sorprendida de*, with *de*.\nFor what nobody expected: *¿Quién iba a pensar que...?*",
+  readAndPick: [
+    { q: "Does Mateo think Simón is lying?", es: "¡No me digas! ¿En serio?",
+      options: ["Yes, he thinks so", "No, it's just a gasp", "Yes, and he's very angry"], answer: 1,
+      why: "*¡No me digas!* and *¿en serio?* react with surprise; they don't doubt the speaker." },
+    { q: "Is it true that Don Carlos said nothing?", es: "Me extraña que no nos haya dicho nada.",
+      options: ["Yes, he said nothing", "No, he told them all", "Nobody knows"], answer: 0,
+      why: "The fact is true; the subjunctive *haya dicho* comes from *me extraña*, not from doubt." },
+    { q: "When did he sell the shop?", es: "Qué raro que la vendiera tan rápido.",
+      options: ["Next month, maybe", "He's selling it now", "It's already done"], answer: 2,
+      why: "*Vendiera* is the *-ra* form after a reaction: the sale is already done." },
+    { q: "What does she find striking?", es: "Me llama la atención que nadie haya dicho nada.",
+      options: ["That nobody said a word", "That everybody complained loudly", "That she was told"], answer: 0,
+      why: "*Me llama la atención que* points at something odd: here, the silence." },
+    { q: "How did he react to the website?", es: "Estoy sorprendido de la calidad de la página.",
+      options: ["Deeply bored by it", "Surprised by it", "Offended by it"], answer: 1,
+      why: "*Estar sorprendido de* describes the reaction to a thing, here its quality." },
+    { q: "What does the speaker mean?", es: "¿Quién iba a pensar que ganarían?",
+      options: ["Everyone knew it", "They'll win next year", "Nobody expected it"], answer: 2,
+      why: "*¿Quién iba a pensar que...?* is not a real question: nobody saw it coming." }
+  ],
+  yourTurn: [
+    { en: "You're kidding! (to a friend)", es: "¡No me digas!", accept: ["¡No te creo!", "¿En serio?"] },
+    { en: "It's strange that he hasn't called.", es: "Me extraña que no haya llamado.", accept: ["Es raro que no haya llamado.", "Qué raro que no haya llamado.", "Me parece raro que no haya llamado."] },
+    { en: "How odd that she isn't answering!", es: "¡Qué raro que no conteste!", accept: ["¡Qué raro que no [conteste|responda]!"] },
+    { en: "What a coincidence running into you here! (to a friend)", es: "¡Qué casualidad encontrarte aquí!", accept: [] },
+    { en: "It surprises me that you're here. (to a friend)", es: "Me sorprende que estés aquí.", accept: [] }
+  ],
+  translate: [
+    { en: "I was surprised he arrived so soon.", es: "Me sorprendió que llegara tan pronto.", accept: ["Me sorprendió que [llegara|hubiera llegado] tan [pronto|rápido|temprano]."] },
+    { en: "It's incredible that he had time to do it all.", es: "Es increíble que tuviera tiempo de hacerlo todo.", accept: ["Es increíble que tuviera tiempo [de|para] hacerlo todo.", "Es increíble que haya tenido tiempo de hacerlo todo."] },
+    { en: "It's surprising how well he plays the piano.", es: "Es sorprendente lo bien que toca el piano.", accept: [] },
+    { en: "That can't be!", es: "¡No puede ser!", accept: [] },
+    { en: "Did you hear? Ana got married in Cartagena. It strikes me that she didn't invite anyone from the office. Who would have thought it?", es: "¿Supiste? Ana se casó en Cartagena. Me llama la atención que no invitara a nadie de la oficina. ¿Quién lo iba a pensar?", accept: ["¿Supiste? Ana se casó en Cartagena. Me llama la atención que no [invitara|haya invitado|hubiera invitado] a nadie de la oficina. ¿Quién lo iba a pensar?", "¿Supiste? Ana se casó en Cartagena. Me llama la atención que no [invitara|haya invitado|hubiera invitado] a nadie de la oficina. ¿Quién iba a pensarlo?"] },
+    { en: "I'm surprised at the quality of their website.", es: "Estoy sorprendido de la calidad de su página web.", accept: ["Estoy [sorprendido|sorprendida] [de|con|por] la calidad de su página web."] }
+  ],
+  register: [
+    { es: "¿En serio?", en: "Seriously?", when: "with anyone, a quick check you heard right" },
+    { es: "¡No me digas!", en: "You don't say!", when: "in conversation, to keep the story coming" },
+    { es: "Me extraña que no haya llamado.", en: "It's strange he hasn't called.", when: "when something odd worries you a little" },
+    { es: "Llama la atención que no se haya informado a los vecinos.", en: "It is striking that residents were not informed.", when: "in a formal letter or a newspaper column" }
+  ],
+  personal: {
+    prompt: "Think of a piece of news that surprised you lately. Write your first quick reaction, then a slower line about what seems odd to you.",
+    constraints: [
+      { type: "containsAny", words: ["no me digas", "en serio", "no puede ser", "no te creo", "qué casualidad"], label: "a quick reaction: *¡no me digas!* or *¿en serio?*" },
+      { type: "containsAny", words: ["me extraña que", "me sorprende que", "me sorprendió que", "qué raro que", "me llama la atención que", "es increíble que", "es raro que"], label: "a puzzled frame: *me extraña que* or *qué raro que*" }
+    ],
+    model: "¿En serio? Mi jefe renunció ayer. Me extraña que no nos haya dicho nada."
+  },
+  pitfalls: [
+    "*Me extraña que no ha llamado* keeps the ordinary form: after *me extraña que*, *haya llamado*.",
+    "*¡No me digas!* isn't an order to stop talking: it means go on, I'm amazed.",
+    "*Estoy sorprendido que* drops a word: *estoy sorprendido de que*."
+  ]
+},
+
+"nt-grado-b2": {
+  source: "merged",
+  hook: {
+    line: "A review of a small hotel in Villa de Leyva, posted online. The writer never says *muy* twice: every word of degree is chosen for its strength.",
+    es: "El hotel es realmente bonito y el desayuno, buenísimo.\nLa habitación era un poco pequeña, pero súper limpia.\nEl wifi, en cambio, es totalmente inútil.\nPara ser tan caro, el servicio fue bastante lento.\nEn general, es una experiencia sumamente recomendable.",
+    en: "The hotel is really pretty and the breakfast is excellent.\nThe room was a bit small, but super clean.\nThe wifi, on the other hand, is completely useless.\nFor somewhere so expensive, the service was rather slow.\nOn the whole, it's a highly recommendable experience."
+  },
+  examples: [
+    { es: "La película fue realmente divertida; no me lo esperaba, porque las críticas eran malísimas.", en: "The film was genuinely funny; I wasn't expecting it, because the reviews were terrible." },
+    { es: "Mi sobrino está muy alto para su edad y ya usa los zapatos de su papá.", en: "My nephew is very tall for his age, and he already wears his dad's shoes." },
+    { es: "Esa arepa de la esquina está demasiado buena; la próxima vez pido dos de una vez.", en: "That arepa from the corner is so good; next time I'm ordering two straight away." }
+  ],
+  rule: "Instead of *muy*, choose by strength.\nReal emphasis: *realmente*, *increíblemente*, or *-ísimo*: *buenísimo*, *carísimo*.\nWords with no middle, like *falso*, *imposible*, *inútil*, *seguro*: *totalmente*, *completamente*, *absolutamente*, never *muy*.\nCasual: *súper*, as in *súper limpio*. Formal: *sumamente*, *extremadamente*.\nLess: *bastante* (quite), *un poco* (a bit, often a complaint), *algo*, *ligeramente*; none at all: *no es nada caro*.\nToo much: *demasiado*. In Colombia it also praises: *está demasiado bueno*, it's really good.\n*Muy... para* is high for what you'd expect: *muy alto para su edad*.",
+  readAndPick: [
+    { q: "How bad is the wifi?", es: "El wifi es totalmente inútil.",
+      options: ["Slow at times", "Useless, full stop", "Fine after midnight"], answer: 1,
+      why: "*Totalmente* goes with words that have no middle: useless is useless." },
+    { q: "What is the writer complaining about?", es: "La habitación era un poco pequeña.",
+      options: ["The size, a little", "The view, a lot", "The price, above all else"], answer: 0,
+      why: "*Un poco* with a quality is often a soft complaint: a bit small." },
+    { q: "In Colombia, what does this mean?", es: "Esa arepa está demasiado buena.",
+      options: ["It's too greasy to eat", "It's not worth it", "It's really, really good"], answer: 2,
+      why: "In Colombia *demasiado* can praise: *demasiado buena* is delicious, not too good to eat." },
+    { q: "Which word fits a formal report?", es: "Es una propuesta ___ interesante.",
+      options: ["sumamente", "súper", "demasiado"], answer: 0,
+      why: "*Sumamente* is formal. *Súper* belongs to speech, and *demasiado* is too much, or friendly Colombian praise." },
+    { q: "How expensive is it?", es: "No es nada caro.",
+      options: ["A bit", "Very much so", "Not at all"], answer: 2,
+      why: "*No... nada* with a quality means not at all." },
+    { q: "Is he tall in general?", es: "Está muy alto para su edad.",
+      options: ["No, he's short", "Yes, for anyone", "For his age, yes"], answer: 2,
+      why: "*Muy... para* measures against what you'd expect: tall for a child his age." }
+  ],
+  yourTurn: [
+    { en: "It was really fun.", es: "Fue realmente divertido.", accept: ["Fue [realmente|súper|muy] divertido.", "Fue divertidísimo."] },
+    { en: "What they're saying is completely false.", es: "Es totalmente falso lo que dicen.", accept: ["Lo que dicen es [totalmente|completamente] falso.", "Es completamente falso lo que dicen."] },
+    { en: "It's too late to call.", es: "Es demasiado tarde para llamar.", accept: ["Ya es demasiado tarde para llamar."] },
+    { en: "It's not expensive at all.", es: "No es nada caro.", accept: ["No es caro para nada."] },
+    { en: "This exam is super hard.", es: "Este examen es súper difícil.", accept: ["Este examen es [súper difícil|superdifícil|dificilísimo]."] }
+  ],
+  translate: [
+    { en: "The breakfast was delicious and incredibly cheap.", es: "El desayuno estuvo delicioso e increíblemente barato.", accept: ["El desayuno [estuvo|fue|era] delicioso e increíblemente barato."] },
+    { en: "I trust him completely.", es: "Confío en él por completo.", accept: ["Confío [completamente|totalmente] en él.", "Confío en él [completamente|totalmente]."] },
+    { en: "He's very tall for his age.", es: "Está muy alto para su edad.", accept: ["Es muy alto para su edad."] },
+    { en: "It's a highly recommendable experience.", es: "Es una experiencia sumamente recomendable.", accept: ["Es una experiencia [sumamente|altamente|muy] recomendable."] },
+    { en: "The room was a bit small but super clean. The service, on the other hand, was rather slow. Overall, it's really worth it.", es: "La habitación era un poco pequeña, pero súper limpia. El servicio, en cambio, fue bastante lento. En general, vale mucho la pena.", accept: ["La habitación era un poco pequeña, pero súper limpia. El servicio, en cambio, fue bastante lento. En general, vale [mucho|muchísimo|realmente] la pena."] },
+    { en: "That's completely impossible.", es: "Eso es completamente imposible.", accept: ["Eso es [completamente|totalmente|absolutamente] imposible."] }
+  ],
+  register: [
+    { es: "¡Está buenísimo!", en: "It's so good!", when: "with anyone, about food or a plan" },
+    { es: "Está demasiado bueno.", en: "It's really, really good.", when: "in Colombia, praising something among friends" },
+    { es: "Es súper fácil.", en: "It's super easy.", when: "in chat and speech, never in a report" },
+    { es: "Es sumamente importante.", en: "It is extremely important.", when: "in formal writing or a speech" }
+  ],
+  personal: {
+    prompt: "Write a short review of a place you know: a café, a hotel or a shop. Use words of degree other than *muy*, and soften one complaint with *un poco*.",
+    constraints: [
+      { type: "containsAny", words: ["realmente", "increíblemente", "totalmente", "completamente", "absolutamente", "súper", "sumamente", "bastante", "demasiado", "ísimo", "ísima"], label: "a strong word of degree: *realmente* or *-ísimo*" },
+      { type: "containsWord", word: "un poco", label: "a soft complaint with *un poco*" },
+      { type: "minSentences", n: 3, label: "three sentences or more" }
+    ],
+    model: "El café de la esquina es realmente acogedor. Los postres están buenísimos. La música es un poco fuerte, pero vale la pena."
+  },
+  pitfalls: [
+    "*Muy imposible* doesn't work: words with no middle take *totalmente* or *completamente*.",
+    "*Demasiado* is too much; only in friendly Colombian talk does it praise.",
+    "*Súper* in a formal email sounds like a chat: write *sumamente*."
+  ]
+},
+
+"nt-interes-b2": {
+  source: "merged",
+  hook: {
+    line: "At the end of a cooking course in Bogotá, the students fill in an evaluation form. Their comments say what caught their interest, what bored them, and what kept them going.",
+    es: "Me interesó mucho la parte de cocina del Pacífico.\nMe llamó la atención lo fácil que es hacer pan en casa.\nLas clases teóricas me aburrían un poco; eran demasiado largas.\nLa profesora es muy entretenida y nos motiva a probar cosas nuevas.\nNoté cierta falta de interés en el grupo de los sábados.",
+    en: "I was very interested in the Pacific cooking section.\nIt struck me how easy it is to make bread at home.\nThe theory classes bored me a bit; they were too long.\nThe teacher is very entertaining and motivates us to try new things.\nI noticed a certain lack of interest in the Saturday group."
+  },
+  examples: [
+    { es: "Me aburren las reuniones de los lunes, porque siempre hablamos de lo mismo durante dos horas.", en: "Monday meetings bore me, because we always talk about the same thing for two hours." },
+    { es: "Mi hija está aburrida en vacaciones, pero no es una niña aburrida: le encanta leer.", en: "My daughter is bored on holiday, but she isn't a boring girl: she loves reading." },
+    { es: "La exposición despertó mucho interés entre los estudiantes, sobre todo la sala de fotografía antigua.", en: "The exhibition aroused a lot of interest among the students, especially the old photography room." }
+  ],
+  rule: "*Interesar*, *aburrir*, *motivar*, *cansar* and *llamar la atención* work like *gustar*: the thing is the subject, and you are *me*.\n*Me aburre la clase.* *Me aburren las reuniones.* *Me motiva el proyecto.* *Me llama la atención que nadie lo diga.*\nSay *yo aburro* and you're the boring one.\n*Ser* or *estar* changes the meaning: *estoy aburrido*, I'm bored; *soy aburrido*, I'm boring.\nWhat holds attention: *interesante*, *entretenido* (fun to follow), *sorprendente*.\nFor the person: *interesarse por*, *estar motivado*.\nIn writing: *despertar interés*, *falta de interés*, *el centro de interés*.",
+  readAndPick: [
+    { q: "Did the theory classes bore the student?", es: "Las clases teóricas me aburrían un poco.",
+      options: ["Yes, a bit", "No, never", "Only the very first"], answer: 0,
+      why: "*Me aburrían un poco*: the classes bored her a little, more than once." },
+    { q: "Who is boring here?", es: "Mi hija está aburrida, pero no es aburrida.",
+      options: ["The daughter, all the time", "No one; she's bored now", "The long school holidays"], answer: 1,
+      why: "*Está aburrida* is a state, bored now; *no es aburrida* says she isn't a boring person." },
+    { q: "What caught this student's attention?", es: "Me llamó la atención lo fácil que es hacer pan.",
+      options: ["How hard bread is", "How cheap bread is", "How easy bread is"], answer: 2,
+      why: "*Lo fácil que es* is how easy it is; *me llamó la atención* says it struck her." },
+    { q: "What does the teacher do for the group?", es: "Nos motiva a probar cosas nuevas.",
+      options: ["She drives them on", "She bores them stiff", "She tires them out"], answer: 0,
+      why: "*Nos motiva a* works like *gustar*: she is what pushes them to try things." },
+    { q: "How strong is the lack of interest?", es: "Noté cierta falta de interés en el grupo.",
+      options: ["Total", "Huge interest", "Quite mild"], answer: 2,
+      why: "*Falta de interés* is milder than *aburrimiento*: some of them weren't engaged." }
+  ],
+  yourTurn: [
+    { en: "Meetings bore me.", es: "Me aburren las reuniones.", accept: ["Las reuniones me aburren."] },
+    { en: "I'm bored. (a woman speaking)", es: "Estoy aburrida.", accept: [] },
+    { en: "It struck me that nobody said anything.", es: "Me llamó la atención que nadie dijera nada.", accept: ["Me llamó la atención que nadie [dijera|hubiera dicho|haya dicho] nada."] },
+    { en: "The project motivates her a lot.", es: "Le motiva mucho el proyecto.", accept: ["El proyecto la motiva mucho.", "El proyecto le motiva mucho.", "La motiva mucho el proyecto."] },
+    { en: "I'm very interested in Colombian history.", es: "Me interesa mucho la historia de Colombia.", accept: ["Me interesa mucho la historia colombiana."] }
+  ],
+  translate: [
+    { en: "Overly long films bore him.", es: "Le aburren las películas demasiado largas.", accept: ["Las películas demasiado largas lo aburren.", "Las películas demasiado largas le aburren.", "Lo aburren las películas demasiado largas."] },
+    { en: "Her lack of interest in the project was obvious.", es: "Su falta de interés en el proyecto era evidente.", accept: ["Su falta de interés [en|por] el proyecto era [evidente|obvia]."] },
+    { en: "This novel is very entertaining.", es: "Esta novela es muy entretenida.", accept: [] },
+    { en: "He's not boring, he's just tired.", es: "No es aburrido, solo está cansado.", accept: ["No es aburrido, [solo|simplemente] está cansado.", "No es aburrido, está cansado."] },
+    { en: "Driving at night tires me. But the trip interests me a lot, so I'm going to go by bus. It's slower, but more relaxing.", es: "Me cansa manejar de noche. Pero el viaje me interesa mucho, así que voy a ir en bus. Es más lento, pero más tranquilo.", accept: ["Me cansa manejar de noche. Pero el viaje me interesa mucho, así que [voy a ir|iré] en bus. Es más lento, pero más [tranquilo|relajante]."] },
+    { en: "The talk aroused a lot of interest.", es: "La charla despertó mucho interés.", accept: ["La charla [despertó|generó] mucho interés."] }
+  ],
+  register: [
+    { es: "¡Qué aburrición!", en: "How boring!", when: "in Colombia, among friends, about a dull plan" },
+    { es: "Me aburre un poco.", en: "It bores me a bit.", when: "a gentle way to say it to anyone" },
+    { es: "Me llama mucho la atención.", en: "It really catches my interest.", when: "showing interest politely, at work or with strangers" },
+    { es: "El tema despertó un gran interés entre los asistentes.", en: "The topic aroused great interest among those attending.", when: "in a report or an official summary" }
+  ],
+  personal: {
+    prompt: "Fill in your own course evaluation for something you've studied: a class, an app, a workshop. Say what interested you, what bored you, and what kept you motivated.",
+    constraints: [
+      { type: "regex", pattern: "me (interes[oóa]|interesaron|interesaba|llam[oóa] la atenci[oó]n)", label: "interest: *me interesó* or *me llamó la atención*" },
+      { type: "regex", pattern: "me aburr(e|en|ía|ían|ió|ieron)|estaba aburrid[oa]|qu[eé] aburrici[oó]n", label: "boredom: *me aburría* or *me aburrieron*" },
+      { type: "regex", pattern: "motiv", label: "motivation: *me motivaba* or *estaba motivado*" }
+    ],
+    model: "Me interesó mucho la parte de gramática. Me aburrían un poco los videos largos. Me motivaba ver que cada semana entendía más."
+  },
+  pitfalls: [
+    "*Yo aburro las reuniones* says you bore the meetings: *me aburren las reuniones*.",
+    "*Soy aburrido* is I'm boring; for I'm bored, *estoy aburrido*.",
+    "*Me aburre las reuniones* forgets the plural: the verb follows the thing, *me aburren*."
+  ]
+},
+
+"nt-evaluacion-general-b2": {
+  source: "merged",
+  hook: {
+    line: "Daniel had a job interview this morning, and his mother wants to hear everything. Their messages judge how it went, whether it was worth it, and what was absurd.",
+    es: "Mamá: ¿Cómo te fue en la entrevista?\nDaniel: Me fue bien, creo. La prueba técnica me salió regular.\nMamá: ¿Y valió la pena ir hasta Chía?\nDaniel: Sí, la oficina no está nada mal y el equipo es excelente.\nDaniel: Lo absurdo fue esperar una hora en la recepción.",
+    en: "Mom: How did the interview go?\nDaniel: It went well, I think. The technical test went so-so.\nMom: And was it worth going all the way to Chía?\nDaniel: Yes, the office isn't bad at all and the team is excellent.\nDaniel: The absurd part was waiting an hour at reception."
+  },
+  examples: [
+    { es: "Al final le fue muy bien en la entrevista y la llamaron para empezar el lunes.", en: "In the end her interview went really well and they called her to start on Monday." },
+    { es: "No vale la pena discutir por algo tan pequeño, sobre todo a estas horas de la noche.", en: "It's not worth arguing over something so small, especially at this time of night." },
+    { es: "La torta no me salió tan bonita como en la foto, pero quedó deliciosa.", en: "The cake didn't come out as pretty as in the photo, but it turned out delicious." }
+  ],
+  rule: "How something went for someone works like *gustar*: the thing is the subject, and the person is *me*, *te*, *le*.\n*¿Cómo te fue?* *Me fue bien.* For a whole event, *ir*: *¿Cómo les fue en el viaje?*\nFor something you made or did, *salir*: *La prueba me salió mal.* Plural things, plural verb: *Me salieron bien las fotos.*\nWhether it was worth it: *valer la pena*. *Valió la pena.* *No vale la pena discutir.* It weighs the effort, not just the quality.\nThe scale: *excelente*, *muy bien*, *no está nada mal* (better than it sounds), *regular* (so-so), *mal*, *absurdo*.",
+  readAndPick: [
+    { q: "How did the technical test go?", es: "La prueba técnica me salió regular.",
+      options: ["Brilliantly", "Very badly indeed", "So-so"], answer: 2,
+      why: "*Regular* answers how it went with a shrug: not good, not bad." },
+    { q: "What does Daniel think of the office?", es: "La oficina no está nada mal.",
+      options: ["It's quite good", "It's awful", "It's too far away"], answer: 0,
+      why: "*No está nada mal* is an understated yes: better than fine." },
+    { q: "What is Mom asking?", es: "¿Y valió la pena ir hasta Chía?",
+      options: ["How long the bus ride took", "If he paid for the bus", "If the trip was worth it"], answer: 2,
+      why: "*Valer la pena* weighs the effort against the result: was the trip worth it?" },
+    { q: "Who is the interview about?", es: "Al final le fue muy bien en la entrevista.",
+      options: ["Someone else", "The speaker", "The listener"], answer: 0,
+      why: "*Le fue* puts the person as *le*: it went well for her or him." },
+    { q: "What does the speaker mean?", es: "No vale la pena discutir por esto.",
+      options: ["It's not worth the fight", "It's a great argument to have", "It costs too much"], answer: 0,
+      why: "*No vale la pena* says the effort isn't justified: let it go." },
+    { q: "Did the photos come out well?", es: "Me salieron muy bien las fotos.",
+      options: ["No, badly", "Only one of them", "Yes, very well"], answer: 2,
+      why: "*Me salieron bien* agrees with the photos, the things that turned out." }
+  ],
+  yourTurn: [
+    { en: "How did the exam go? (to a friend)", es: "¿Cómo te fue en el examen?", accept: [] },
+    { en: "It went really well for them.", es: "Les fue muy bien.", accept: ["Les fue súper bien."] },
+    { en: "It's not worth getting angry over this.", es: "No vale la pena ponerse bravo por esto.", accept: ["No vale la pena [ponerse bravo|ponerse brava|enojarse] por esto."] },
+    { en: "It's not bad at all for a first try.", es: "No está nada mal para ser la primera vez.", accept: ["No está nada mal para la primera vez."] },
+    { en: "The cake didn't come out well for me.", es: "La torta no me salió bien.", accept: ["No me salió bien la torta."] }
+  ],
+  translate: [
+    { en: "It was an absurd proposal from the start.", es: "Fue una propuesta absurda desde el principio.", accept: [] },
+    { en: "Is it really worth paying so much for this?", es: "¿De verdad vale la pena pagar tanto por esto?", accept: ["¿Sí vale la pena pagar tanto por esto?", "¿Realmente vale la pena pagar tanto por esto?", "¿Vale la pena pagar tanto por esto?"] },
+    { en: "My photos came out really well.", es: "Me salieron muy bien las fotos.", accept: ["Las fotos me salieron muy bien.", "Me salieron súper bien las fotos."] },
+    { en: "It's silly to argue over something so small.", es: "Es una tontería discutir por algo tan pequeño.", accept: ["Es una bobada discutir por algo tan pequeño."] },
+    { en: "How did the trip go for you all? It went great for us. The hotel wasn't bad at all, and the beach was worth it.", es: "¿Cómo les fue en el viaje? Nos fue súper bien. El hotel no estaba nada mal y la playa valió la pena.", accept: ["¿Cómo les fue en el viaje? Nos fue [súper bien|genial|muy bien]. El hotel no estaba nada mal y la playa valió la pena."] },
+    { en: "In the end the interview went great for him.", es: "Al final le fue genial en la entrevista.", accept: ["Al final le fue [genial|muy bien|súper bien] en la entrevista."] }
+  ],
+  register: [
+    { es: "¿Qué tal?", en: "How was it?", when: "anywhere, the quickest way to ask" },
+    { es: "Regular.", en: "So-so.", when: "a short, honest answer to how it went" },
+    { es: "No estuvo nada mal.", en: "It wasn't bad at all.", when: "praise that sounds modest" },
+    { es: "El balance general es positivo.", en: "The overall assessment is positive.", when: "in a report or a meeting summary" }
+  ],
+  personal: {
+    prompt: "Think of something you did recently: an exam, a trip, a recipe, an interview. Say how it went for you, what came out well or badly, and whether it was worth it.",
+    constraints: [
+      { type: "regex", pattern: "(me|nos|le|les|te) fue", label: "how it went: *me fue bien*" },
+      { type: "regex", pattern: "(me|nos|le|les|te) sali(ó|o|eron)", label: "what came out: *me salió*" },
+      { type: "containsAny", words: ["vale la pena", "valió la pena"], label: "worth it: *valió la pena*" }
+    ],
+    model: "Me fue bien en el examen de inglés. El ensayo me salió regular, pero la parte oral me salió muy bien. Valió la pena estudiar el fin de semana."
+  },
+  pitfalls: [
+    "*¿Cómo fuiste en el examen?* makes you the subject: *¿cómo te fue en el examen?*",
+    "*Me salió bien las fotos* forgets the plural: *me salieron bien*.",
+    "*No está nada mal* is praise, not a complaint."
+  ]
+},
+
+"task-b2-emocion": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: fourteen sentences or more about something that left you with a mixed reaction, relief and anger, or pride and embarrassment, with no feeling word used twice. The model is about a place on a course.",
+    es: "Cuando por fin me llamaron para decirme que había cupo, sentí sobre todo alivio.\nLlevaba cinco meses esperando y ya daba el asunto por perdido.\nPero mientras colgaba, me fue subiendo una especie de fastidio.\nEl cupo estaba disponible desde julio, y a mí en julio me dijeron que no había nada.\nNo es que me indigne, tampoco es para tanto, pero sí me deja un mal sabor.\nMe da rabia sobre todo por la gente que se rindió antes que yo.",
+    en: "When they finally called to tell me there was a place, I felt relief above all.\nI'd been waiting five months and had already given it up for lost.\nBut as I hung up, a sort of irritation crept up on me.\nThe place had been there since July, and in July they told me there was nothing.\nIt's not that it outrages me, it's not that big a deal, but it does leave a bad taste.\nIt makes me angry mostly for the people who gave up before I did."
+  },
+  examples: [
+    { es: "Llevaba cinco meses esperando la respuesta y ya daba el asunto por perdido cuando me llamaron.", en: "I'd been waiting five months for the answer and had already given it up for lost when they called me." },
+    { es: "Estaba orgullosa de mi hijo, aunque me dio un poco de pena que llorara delante de todos.", en: "I was proud of my son, although I was a little embarrassed that he cried in front of everyone." },
+    { es: "Al principio me hizo gracia, después me molestó, y al final ya estaba harta de la broma.", en: "At first I found it funny, then it bothered me, and in the end I was fed up with the joke." }
+  ],
+  rule: "At B1 you could say you were angry. At B2 the skill is the right word.\nChoose by strength and by cause: *me molesta* (mild), *me fastidia* (irritated), *estoy harto de* (it keeps happening), *me indigna* (it's unfair).\nMix two feelings and let them pull: *sentí alivio, pero...*\nWalk one back: *No es que me indigne, pero...*, with the subjunctive after *no es que*. *Tampoco es para tanto.*\nShow it change over time: *me fue subiendo una especie de fastidio*.\nNever the same feeling word twice.\nReaching straight for the strongest word is the B1 habit.",
+  readAndPick: [
+    { q: "What did the writer feel first?", es: "Sentí sobre todo alivio.",
+      options: ["Mostly relief", "Mostly anger", "Mostly shame"], answer: 0,
+      why: "*Sobre todo alivio*: relief came first, before the irritation." },
+    { q: "How did the irritation arrive?", es: "Me fue subiendo una especie de fastidio.",
+      options: ["Suddenly, all at once", "Little by little", "It never came"], answer: 1,
+      why: "*Me fue subiendo* is a feeling that grows bit by bit." },
+    { q: "What does *no es que me indigne* do?", es: "No es que me indigne, pero me deja un mal sabor.",
+      options: ["Makes it much stronger", "Changes the subject", "Walks the feeling back"], answer: 2,
+      why: "*No es que* with the subjunctive denies the strong word before giving a milder one." },
+    { q: "Who is the writer angry for?", es: "Me da rabia sobre todo por la gente que se rindió.",
+      options: ["For the others", "For himself only", "For the caller on the phone"], answer: 0,
+      why: "*Sobre todo por la gente que se rindió*: the anger is on behalf of others." },
+    { q: "How strong is this?", es: "Me molesta un poco que no avisen.",
+      options: ["Outraged", "Fed up for good", "Mildly bothered"], answer: 2,
+      why: "*Me molesta un poco* is the bottom of the ladder: mild and fixable." }
+  ],
+  yourTurn: [
+    { en: "It's not that it outrages me, but it leaves a bad taste.", es: "No es que me indigne, pero me deja un mal sabor.", accept: ["No es que me indigne, pero me deja (un) mal sabor (de boca)."] },
+    { en: "It's not that big a deal.", es: "Tampoco es para tanto.", accept: ["No es para tanto."] },
+    { en: "I felt relief above all.", es: "Sentí sobre todo alivio.", accept: ["Sentí alivio sobre todo.", "Sobre todo sentí alivio."] },
+    { en: "A sort of irritation crept up on me.", es: "Me fue subiendo una especie de fastidio.", accept: [] }
+  ],
+  translate: [
+    { en: "It makes me angry mostly for the others.", es: "Me da rabia sobre todo por los demás.", accept: [] },
+    { en: "I had been waiting five months.", es: "Llevaba cinco meses esperando.", accept: ["Había esperado cinco meses."] },
+    { en: "At first it was funny, then it bothered me.", es: "Al principio me hizo gracia, después me molestó.", accept: ["Al principio me hizo gracia, [después|luego] me molestó.", "Al principio me pareció chistoso, [después|luego] me molestó."] },
+    { en: "I was proud, but also a bit embarrassed.", es: "Estaba orgullosa, pero también me daba un poco de pena.", accept: ["Estaba [orgulloso|orgullosa], pero también me daba un poco de [pena|vergüenza].", "Me sentía [orgulloso|orgullosa], pero también me daba un poco de [pena|vergüenza]."] },
+    { en: "When they called me, I felt relief. But it bothered me that they hadn't told me the truth in July. In the end, it's not worth dwelling on it.", es: "Cuando me llamaron, sentí alivio. Pero me molestó que no me hubieran dicho la verdad en julio. Al final, no vale la pena darle más vueltas.", accept: ["Cuando me llamaron, sentí alivio. Pero me molestó que no me [hubieran dicho|dijeran] la verdad en julio. [Al final|En fin], no vale la pena darle más vueltas."] },
+    { en: "It made me happy and sad at the same time.", es: "Me dio alegría y tristeza al mismo tiempo.", accept: ["Me dio alegría y tristeza a la vez.", "Me puso feliz y triste al mismo tiempo."] }
+  ],
+  register: [
+    { es: "Me dio mucha rabia.", en: "It made me really angry.", when: "telling a friend the story afterwards" },
+    { es: "No es que me moleste, pero...", en: "It's not that it bothers me, but...", when: "softening a complaint before you make it" },
+    { es: "Tampoco es para tanto.", en: "It's not that big a deal.", when: "calming someone down, or yourself" },
+    { es: "Debo manifestar mi inconformidad con la decisión.", en: "I must state my disagreement with the decision.", when: "putting strong feeling into a formal letter" }
+  ],
+  personal: {
+    prompt: "Write about something that left you with a mixed reaction: fourteen sentences or more. Use at least four different feeling words, two strengths of the same feeling, and walk one back with *no es que*.",
+    constraints: [
+      { type: "minSentences", n: 14, label: "fourteen sentences or more" },
+      { type: "regex", pattern: "no es que (me |te |le |nos )?[a-záéíóúñ]+", label: "a feeling walked back: *no es que me indigne*" },
+      { type: "containsAny", words: ["alivio", "rabia", "fastidio", "orgullo", "orgulloso", "orgullosa", "pena", "vergüenza", "tristeza", "alegría", "indigna", "molesta", "harto", "harta"], label: "feeling words like *alivio*, *rabia* or *orgullo*" },
+      { type: "containsAny", words: ["pero", "aunque", "sin embargo"], label: "a turn between feelings: *pero* or *aunque*" }
+    ],
+    model: "El sábado mi hermana se graduó de la universidad. Sentí un orgullo enorme cuando dijeron su nombre. Ella fue la primera de la familia en terminar una carrera. Mi mamá lloró de alegría durante toda la ceremonia. Pero al final pasó algo que me dejó un mal sabor. El rector se equivocó y la llamó con otro apellido. Al principio me hizo gracia. Después me empezó a molestar. Mi hermana se puso roja y me dio pena por ella. No es que me indigne, tampoco es para tanto. Pero sí me fastidia que nadie le pidiera perdón. Mi papá, en cambio, estaba furioso. Yo preferí no darle más vueltas. Al fin y al cabo, fue un día feliz."
+  },
+  pitfalls: [
+    "*No es que me indigna* keeps the ordinary form: *no es que* takes *me indigne*.",
+    "Using *me indigna* for everything is shouting; save it for what's unfair.",
+    "Repeating *molesto* five times flattens the story: change the word as the feeling changes."
   ]
 }
 

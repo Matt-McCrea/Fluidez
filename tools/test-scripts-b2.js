@@ -1,5 +1,5 @@
 /* Node test for the B2 teaching scripts (data/scripts/b2.js). Run: node tools/test-scripts-b2.js
- * Every lesson on the path in the first two B2 units (read from COURSE_BANDS.B2,
+ * Every lesson on the path in the first four B2 units (read from COURSE_BANDS.B2,
  * not hard-coded) has a script, with the anatomy the B1 test checks
  * (tools/test-scripts-b1.js: 2 to 3 examples before a rule under 120 words,
  * 4 to 6 read-and-pick items whose option lengths and positions give nothing
@@ -17,7 +17,9 @@
  *   - forms are dated by the course as in B1. By day 353 every simple tense
  *     and the perfect compounds are built; the pluperfect subjunctive
  *     (hubiera hecho) and the -se past subjunctive arrive with
- *     gr-pluscuamsubj-b2 and are refused before that day. */
+ *     gr-pluscuamsubj-b2, the first day of the third unit (b2-u46), and are
+ *     refused before that day; from it on they are allowed, and that lesson
+ *     must show the form it builds. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -44,8 +46,8 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first two units from the start of B2
-const N_UNITS = 2;
+// ---- the lessons on the path: the first four units from the start of B2
+const N_UNITS = 4;
 const b2 = window.COURSE_BANDS.B2;
 const units = [];
 for (let i = b2; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -55,7 +57,7 @@ for (let i = b2; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) 
 const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B2, found ' + UNITS.length);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 19, 'expected 19 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 40, 'expected 40 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'fn-acuerdo-b2', 'the first B2 day should be agreeing (fn-acuerdo-b2), found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
@@ -63,11 +65,18 @@ window.COURSE_DAYS.forEach((d, i) => { if (d.lesson && DAY[d.lesson] == null) DA
 const BUILT = {};
 Object.keys(LATER_TENSES).forEach((tk) => { BUILT[tk] = DAY[tk]; ok(BUILT[tk] != null, 'the course has no ' + tk + ' lesson to date the tense by'); });
 Object.keys(LATER_TENSES).forEach((tk) => ok(BUILT[tk] < DAY[want[0]], 'the ' + LATER_TENSES[tk] + ' should be built before B2 starts'));
-// the pluperfect subjunctive and the -se past subjunctive are built by their own lesson, after these units
+// the pluperfect subjunctive and the -se past subjunctive are built by their own lesson, which opens the third unit
 const PLUSC_DAY = DAY['gr-pluscuamsubj-b2'];
-ok(PLUSC_DAY != null && PLUSC_DAY > DAY[want[want.length - 1]], 'gr-pluscuamsubj-b2 should come after the last lesson in ' + UNITS.join(' and '));
+const firstTwo = window.COURSE_DAYS.filter((d) => UNITS.slice(0, 2).indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
+ok(PLUSC_DAY != null && PLUSC_DAY > DAY[firstTwo[firstTwo.length - 1]], 'gr-pluscuamsubj-b2 should come after the last lesson in ' + UNITS.slice(0, 2).join(' and '));
+ok(PLUSC_DAY != null && window.COURSE_DAYS[PLUSC_DAY].unit === UNITS[2], 'gr-pluscuamsubj-b2 should open ' + UNITS[2]);
+const PLUSC_FORM = /\bhubi(era|eras|éramos|eran|ese|eses|ésemos|esen)\s+[a-záéíóúñ]+(ado|ido|to|cho|so)\b/i;
+if (SC['gr-pluscuamsubj-b2']) {
+  const p = SC['gr-pluscuamsubj-b2'];
+  ok([p.hook && p.hook.es].concat((p.examples || []).map((e) => e.es)).some((x) => PLUSC_FORM.test(plain(x))), 'gr-pluscuamsubj-b2: the hook or an example should show the form it builds (hubiera and a participle)');
+}
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(' and ')));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(', ')));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
