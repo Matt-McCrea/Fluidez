@@ -138,6 +138,19 @@ window.Progress = (function () {
     tiles.appendChild(tile(due, 'due today'));
     wrap.appendChild(tiles);
 
+    /* Two honest numbers. Delayed retention: of the reviews of an item last
+     * seen a week or more earlier, the share answered right (js/srs.js logs
+     * each answer as {id, day, ok, gap}). Words read: Spanish words in the
+     * passages marked read. */
+    var log = []; try { log = JSON.parse(localStorage.getItem('fluidez.reviewlog')) || []; } catch (e) {}
+    var late = log.filter(function (r) { return r && r.gap != null && r.gap >= 7; });
+    var kept = late.filter(function (r) { return r.ok; }).length;
+    var nums = UI.el('div', 'muted');
+    nums.appendChild(UI.el('div', null, 'Remembered after a week: ' +
+      (late.length ? Math.round(100 * kept / late.length) + '%' : 'not enough reviews yet')));
+    nums.appendChild(UI.el('div', null, 'Words read: ' + (p.wordsRead || 0)));
+    wrap.appendChild(nums);
+
     // ---- what you can now do ----
     wrap.appendChild(canDoPanel(p));
 

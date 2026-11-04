@@ -35,10 +35,14 @@ window.LexMatch = (function () {
     return String(s).replace(/[áàäéèëíìïóòöúùü]/g, function (c) { return ACC[c] || c; });
   }
 
-  // ñ is kept: it is a letter, not an accent, and `año` is not `ano`.
+  /* Accents are KEPT. They separate words: `carné` (ID card) is not `carne`
+   * (meat), `sé` is not `se`. Folding them taught "la carne" on the strength
+   * of a passage that only said "carné". Both sides of every comparison go
+   * through this same function, so the passage and the word list stay in step.
+   * `deaccent` stays exported for callers that really want the fold. */
   function clean(s) {
-    return deaccent(String(s || '').toLowerCase())
-      .replace(/[^a-z0-9ñ]+/g, ' ').replace(/\s+/g, ' ').trim();
+    return String(s || '').toLowerCase().normalize('NFC')
+      .replace(/[^a-z0-9ñáàäéèëíìïóòöúùü]+/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
   function norm(text) { return ' ' + clean(text) + ' '; }
@@ -76,5 +80,14 @@ window.LexMatch = (function () {
     return n;
   }
 
-  return { index: index, countIn: countIn, base: base, norm: norm, deaccent: deaccent };
+  /* The Spanish as a CARD should show it: an adjective listed in
+   * VOCAB_ADJECTIVES (data/vocab.js) loses the article it was stored with.
+   * Stored text and ids are untouched. */
+  var _adj = null;
+  function shown(es) {
+    if (!_adj) { _adj = Object.create(null); (window.VOCAB_ADJECTIVES || []).forEach(function (a) { _adj[a] = 1; }); }
+    return _adj[es] ? String(es).replace(ARTICLE, '') : es;
+  }
+
+  return { shown: shown, index: index, countIn: countIn, base: base, norm: norm, deaccent: deaccent };
 })();

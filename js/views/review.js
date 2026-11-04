@@ -34,7 +34,7 @@ window.StageReview = (function () {
     var items = [];
     (window.VOCAB || []).forEach(function (w, idx) {
       if (!P.wordAllowed(w)) return;                     // your own words are never gated out
-      items.push({ id: 'v:' + w.es + ':meaning', es: w.es, en: w.en, kind: 'vocab',
+      items.push({ id: 'v:' + w.es + ':meaning', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
                    cat: w.cat, theme: w.theme || null, rank: P.catRank(w.cat), idx: idx });
     });
     (window.IDIOMS || []).forEach(function (x) {
@@ -149,7 +149,8 @@ window.StageReview = (function () {
     // a question written as a choice is asked as a choice, with ITS options
     if (card.fixed && card.probe && card.probe.kind === 'mcq' && (card.probe.options || []).length > 1) {
       return { front: card.front, back: card.back, mode: 'choice', toSpanish: true,
-               options: card.probe.options, hint: card.hint || null };
+               options: card.probe.options,
+               hint: card.probe.options.some(UI.isNothing) ? (card.hint ? card.hint + ' (' : '(') + '"(nothing)" means ' + UI.NOTHING_NOTE + (card.hint ? ')' : ')') : (card.hint || null) };
     }
     if (card.fixed) return { front: card.front, back: card.back, mode: 'type', toSpanish: true, hint: card.hint || null };
     var d = pr.reviewDirection;
@@ -159,9 +160,50 @@ window.StageReview = (function () {
       hint: card.kind === 'idiom' && card.lit ? 'lit: ' + card.lit : (card.hint || null) };
   }
 
+  /* The day's NEW vocabulary and idioms, for the Learn stage to teach.
+   *
+   * This is the draw that used to sit inside run() below: same count
+   * (`newPerDay`), same passage preference, same shuffle. The shuffle takes
+   * ctx.rng, which session.js seeds from the lesson id the first time a lesson
+   * is seen, so that first-time draw is reproducible. Nothing is enrolled
+   * here; Learn enrols each card, due tomorrow, when it is taught. Computed
+   * once per session and cached on ctx, so the stage can be re-entered. */
+  function newToday(ctx) {
+    if (ctx && ctx._newToday) return ctx._newToday;
+    var pr = P.params();
+    var out = [];
+    if (!(ctx && ctx.mode === 'rapido')) {
+      var skip = {};
+      if (ctx && ctx.focus && ctx.focus.type === 'vocab') (ctx.focus.words || []).forEach(function (w) { skip['v:' + w + ':meaning'] = 1; });
+      var cands = pool().filter(function (it) {
+        return (it.kind === 'vocab' || it.kind === 'idiom') && !S.isEnrolled(it.id) && !skip[it.id];
+      });
+      if (pr.orderedVocab) {
+        cands.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
+      }
+      var fTheme = window.Focus ? window.Focus.theme() : null;
+      var px = (ctx && ctx.passage && ctx.passage.text && window.LexMatch)
+        ? window.LexMatch.index(ctx.passage.text) : null;
+      var prefer = (px || fTheme) ? function (it) {
+        return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
+      } : null;
+      out = S.batch(cands, 0, pr.newPerDay, !pr.orderedVocab, prefer, ctx && ctx.rng);
+    }
+    if (ctx) ctx._newToday = out;
+    return out;
+  }
+
   function run(host, ctx, done) {
     var pr = P.params();
-    var all = pool().filter(function (it) { return !it.enrolledOnly || S.isEnrolled(it.id); });
+    /* Teach before test. A vocabulary or idiom card that has never been shown
+     * is NOT drawn here: the Learn stage teaches it (see newToday, below) and
+     * it joins this deck the next day. Only cards the learner has already met
+     * can be asked, so nothing here is ever "new". */
+    var all = pool().filter(function (it) {
+      if (it.enrolledOnly) return S.isEnrolled(it.id);
+      if (it.kind === 'vocab' || it.kind === 'idiom') return S.isEnrolled(it.id);
+      return true;
+    });
     if (pr.orderedVocab) {
       all.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
     }
@@ -208,10 +250,14 @@ window.StageReview = (function () {
 
     if (!queue.length) {
       var empty = UI.el('div', 'panel');
-      empty.appendChild(UI.el('h2', null, UI.t('Nada que repasar hoy', 'Nothing to check today')));
-      empty.appendChild(UI.el('p', 'muted', ctx && ctx.mode === 'rapido'
-        ? 'Your review queue is clear. New items are added as you learn.'
-        : 'Your review queue is clear — new items are added as you learn. On to today\'s lesson.'));
+      var firstDay = S.enrolledCount() === 0;
+      empty.appendChild(UI.el('h2', null, firstDay ? UI.t('Nada que repasar todavía', 'Nothing to review yet')
+                                                   : UI.t('Nada que repasar hoy', 'Nothing to check today')));
+      empty.appendChild(UI.el('p', 'muted', firstDay
+        ? 'Nothing to review yet. New words come back tomorrow.'
+        : (ctx && ctx.mode === 'rapido'
+          ? 'Your review queue is clear. New items are added as you learn.'
+          : 'Your review queue is clear. New items are added as you learn. On to today\'s lesson.')));
       empty.appendChild(UI.nextBtn('Continuar →', function () { ctx.results.review = { seen: 0, correct: 0 }; done(); }));
       host.appendChild(empty); return;
     }
@@ -281,13 +327,14 @@ window.StageReview = (function () {
       var answered = false;
       var grid = UI.el('div', 'mcq-opts');
       opts.forEach(function (opt) {
-        var b = UI.el('button', 'mcq-btn', opt); b.type = 'button';
+        var b = UI.el('button', 'mcq-btn', UI.optLabel(opt)); b.type = 'button'; b.dataset.opt = opt;
         b.addEventListener('click', function () {
           if (answered) return; answered = true;
           var right = opt === R.back;
           b.classList.add(right ? 'right' : 'wrong');
-          if (!right) Array.prototype.forEach.call(grid.children, function (c) { if (c.textContent === R.back) c.classList.add('right'); });
-          feedback.textContent = right ? '¡Correcto!' : R.front + ' → ' + R.back;
+          if (!right) Array.prototype.forEach.call(grid.children, function (c) { if (c.dataset.opt === R.back) c.classList.add('right'); });
+          feedback.textContent = right ? '¡Correcto!' : R.front + ' → ' + UI.optLabel(R.back);
+          if (UI.isNothing(R.back)) feedback.textContent += ' (' + UI.NOTHING_NOTE + ')';
           feedback.className = 'feedback ' + (right ? 'good' : 'bad');
           setTimeout(function () { advance(right); }, right ? 450 : 1200);
         });
@@ -395,5 +442,5 @@ window.StageReview = (function () {
     show();
   }
 
-  return { key: 'review', label: 'Repasar', icon: '🔁', run: run, pool: pool };
+  return { key: 'review', label: 'Repasar', icon: '🔁', run: run, pool: pool, newToday: newToday };
 })();

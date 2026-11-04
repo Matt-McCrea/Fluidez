@@ -697,6 +697,7 @@ window.Session = (function () {
       passageTier: storyTier,
       applyItems: sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng),
       writeTasks: produce,
+      rng: rng,
       results: {}
     };
   }
@@ -752,12 +753,14 @@ window.Session = (function () {
    * The day is stored rather than a bare flag — it costs the same and leaves
    * the door open to "offer this again after N days", which is a different
    * decision from "never again" and should not be foreclosed here. */
-  function markRead(id) {
+  function markRead(id, text) {
     if (!id) return;
     var p = loadProg();
     p.read = p.read || {};
     if (p.read[id]) return;
     p.read[id] = dayNumber();
+    // Words read: Spanish words in passages marked read, counted once per passage.
+    p.wordsRead = (p.wordsRead || 0) + String(text || '').split(/\s+/).filter(Boolean).length;
     saveProg(p);
   }
   function readSet() { return loadProg().read || {}; }
@@ -907,7 +910,7 @@ window.Session = (function () {
     host.appendChild(body);
     stage.run(body, ctx, function () {
       // A passage counts as read once the reading stage is done with it.
-      if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id);
+      if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id, ctx.passage.text);
       if (stage.key === 'learn') {
         var p = loadProg();
         var pr = window.Profile ? window.Profile.params() : { name: 'standard' };

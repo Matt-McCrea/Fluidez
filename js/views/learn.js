@@ -304,7 +304,56 @@ window.StageLearn = (function () {
 
   // Dispatch on the day's focus (beginners get vocab/verb/practice days too;
   // standard/refresher always get a grammar lesson).
+  /* ---- teach before test ------------------------------------------------
+   * The day's new vocabulary and idioms (StageReview.newToday) are shown here
+   * first, one card at a time: the Spanish, the English, and the sentence it
+   * came from when today's passage or lesson has one. "Got it" enrols the card
+   * due TOMORROW, so it is first asked a day after it was taught and never in
+   * the review stage that came before this one. */
+  function sentenceFor(es, ctx) {
+    if (!window.LexMatch || !es) return null;
+    var srcs = [];
+    if (ctx.passage && ctx.passage.text) srcs.push(String(ctx.passage.text));
+    if (ctx.lesson && ctx.lesson.examples) srcs.push(ctx.lesson.examples.map(function (e) { return e.es; }).join('\n'));
+    for (var i = 0; i < srcs.length; i++) {
+      var parts = srcs[i].replace(/([.!?])\s+/g, '$1\n').split(/\n+/);
+      for (var j = 0; j < parts.length; j++) {
+        if (parts[j].trim() && window.LexMatch.index(parts[j]).has(es)) return parts[j].trim();
+      }
+    }
+    return null;
+  }
+
+  function teachNew(host, cards, ctx, done) {
+    var i = 0;
+    function show() {
+      UI.clear(host);
+      if (i >= cards.length) { done(); return; }
+      var c = cards[i];
+      var wrap = UI.el('div', 'panel review-card');
+      wrap.appendChild(UI.el('div', 'opener-eyebrow muted', UI.t('Nuevo hoy', 'New today') + ' · ' + (i + 1) + ' / ' + cards.length));
+      wrap.appendChild(UI.el('div', 'card-front', c.es));
+      wrap.appendChild(UI.el('p', null, '<b>' + c.en + '</b>'));
+      if (c.lit) wrap.appendChild(UI.el('p', 'muted', 'literally: ' + c.lit));
+      var sent = sentenceFor(c.es, ctx);
+      if (sent) wrap.appendChild(UI.el('p', 'muted', 'From today: ' + sent));
+      wrap.appendChild(UI.nextBtn('Got it', function () {
+        S.enrol(c.id, 1);                        // first review is tomorrow
+        i++; show();
+      }));
+      host.appendChild(wrap);
+    }
+    show();
+  }
+
   function run(host, ctx, done) {
+    var SR = window.StageReview;
+    var fresh = (SR && SR.newToday) ? SR.newToday(ctx).filter(function (c) { return !S.isEnrolled(c.id); }) : [];
+    if (!fresh.length) { return runLesson(host, ctx, done); }
+    teachNew(host, fresh, ctx, function () { runLesson(host, ctx, done); });
+  }
+
+  function runLesson(host, ctx, done) {
     var f = ctx.focus || { type: 'grammar' };
     if (f.type === 'vocab') return teachVocab(host, ctx, f, done);
     if (f.type === 'verbs') return teachVerbs(host, ctx, f, done);

@@ -125,14 +125,38 @@ window.SRS = (function () {
   function state(id) { return load()[id] || null; }
   function isEnrolled(id) { return !!state(id); }
 
-  function enrol(id) {
+  /* `delayDays` (optional) enrols the item as due that many days from now
+   * instead of today: a card taught today first comes up for review
+   * tomorrow, never in the same day's review stage. */
+  function enrol(id, delayDays) {
     var s = load();
-    if (!s[id]) { s[id] = fillDefaults(); save(s); }
+    if (!s[id]) {
+      s[id] = fillDefaults();
+      if (delayDays > 0) s[id].due = today() + delayDays;
+      save(s);
+    }
+  }
+
+  /* Every answer, as {id, day, ok, gap}: gap is the days since the previous
+   * review of that item (null when there was none). Capped, oldest dropped.
+   * Progress reads "remembered after a week" off it. */
+  var LOG_KEY = 'fluidez.reviewlog', LOG_CAP = 2000;
+  function logReview(id, ok, prevLast) {
+    try {
+      var log = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
+      if (!Array.isArray(log)) log = [];
+      var d = today();
+      log.push({ id: id, day: d, ok: !!ok, gap: prevLast == null ? null : d - prevLast });
+      if (log.length > LOG_CAP) log = log.slice(log.length - LOG_CAP);
+      localStorage.setItem(LOG_KEY, JSON.stringify(log));
+    } catch (e) { /* storage full or blocked: the log is a nicety */ }
   }
 
   function grade(id, good) {
     var s = load();
     var it = s[id] || fillDefaults();
+    // Only an item that had been reviewed before has a gap; a first answer has none.
+    var prevLast = it.reps > 0 ? it.last : null;
     it.reps++;
     if (good) {
       it.consecCorrect++; it.consecMiss = 0;
@@ -146,7 +170,9 @@ window.SRS = (function () {
       if (it.lapses >= LEECH_LIFETIME || it.consecMiss >= LEECH_STREAK) it.leech = true;
     }
     it.due = today() + INTERVALS[it.box];
+    it.last = today();
     s[id] = it; save(s);
+    logReview(id, good, prevLast);
   }
 
   // Due for normal review — never true for a graduated (spot-checked
@@ -183,7 +209,7 @@ window.SRS = (function () {
    * maxNew instead of quietly shrinking the day's intake. The sort carries an
    * explicit index tiebreak so it is stable on any engine, which is what keeps
    * the paced beginner's rank order intact inside each score tier. */
-  function batch(pool, maxDue, maxNew, shuffleFresh, freshPrefer) {
+  function batch(pool, maxDue, maxNew, shuffleFresh, freshPrefer, rng) {
     var s = load();
     var due = [], fresh = [], grad = [];
     pool.forEach(function (it) {
@@ -209,7 +235,7 @@ window.SRS = (function () {
     }
     shuffle(grad);
     var spotChecks = grad.slice(0, Math.max(0, Math.round(cap * SPOT_CHECK_RATE)));
-    if (shuffleFresh !== false) shuffle(fresh);
+    if (shuffleFresh !== false) shuffle(fresh, rng);
     if (freshPrefer) {
       fresh = fresh.map(function (it, i) { return { it: it, s: Number(freshPrefer(it)) || 0, i: i }; })
                    .sort(function (a, b) { return b.s - a.s || a.i - b.i; })
@@ -249,13 +275,14 @@ window.SRS = (function () {
   }
   function enrolledCount() { return Object.keys(load()).length; }
 
-  function shuffle(a) {
-    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+  function shuffle(a, rng) {
+    rng = rng || Math.random;
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(rng() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
     return a;
   }
 
   return {
-    enrol: enrol, grade: grade, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
+    enrol: enrol, grade: grade, reviewLogKey: LOG_KEY, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
     isDominado: isDominado, isLeech: isLeech,
     batch: batch, duePriority: duePriority, freshItems: freshItems,
     dueCount: dueCount, enrolledCount: enrolledCount, today: today

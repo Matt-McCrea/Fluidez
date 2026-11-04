@@ -73,6 +73,15 @@ window.UI = (function () {
     return (window.Profile && window.Profile.term) ? window.Profile.term(es, en) : es;
   }
 
+  /* A choice whose right answer is "no word here" is stored as a bare dash.
+   * Shown raw it reads as a broken button, so every place that DISPLAYS an
+   * option runs it through optLabel; comparisons keep using the raw value. */
+  var NOTHING = /^[\u2014\u2013-]$/;
+  function isNothing(s) { return NOTHING.test(String(s == null ? '' : s).trim()); }
+  function optLabel(s) { return isNothing(s) ? '(nothing)' : s; }
+  var NOTHING_NOTE = 'nothing goes here';
+
   return { el: el, clear: clear, accentBar: accentBar, nextBtn: nextBtn, t: t,
+    isNothing: isNothing, optLabel: optLabel, NOTHING_NOTE: NOTHING_NOTE,
     seededRandom: seededRandom, shuffle: shuffle, sample: sample, pick: pick };
 })();

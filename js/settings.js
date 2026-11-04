@@ -16,7 +16,7 @@ window.Settings = (function () {
    * the keys actually written in js/, so a new one cannot be forgotten by
    * either. fluidez.theme is exported but deliberately NOT reset: wiping your
    * Spanish should not turn off dark mode. */
-  var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.errors', 'fluidez.captured',
+  var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.reviewlog', 'fluidez.errors', 'fluidez.captured',
     'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
     /* 'fluidez.gameBest' is the RETIRED games store — the old per-submode counts
      * of correct answers. It is no longer read (js/gamescore.js owns

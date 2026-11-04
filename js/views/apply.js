@@ -122,12 +122,13 @@ window.StageApply = (function () {
     function showChoice(it) {
       body.appendChild(UI.el('div', 'cloze-text',
         it.text.replace('___', '<span class="blank">＿＿＿</span>')));
-      body.appendChild(UI.el('p', 'muted small', 'Which one does this sentence need?'));
+      body.appendChild(UI.el('p', 'muted small', 'Which one does this sentence need?'
+        + (it.options.some(UI.isNothing) ? ' ("(nothing)" means nothing goes here.)' : '')));
       var fb = UI.el('div', 'feedback');
       var row = UI.el('div', 'row-controls');
       var locked = false;
       it.options.forEach(function (opt, oi) {
-        var b = UI.el('button', 'ghost-btn', opt); b.type = 'button';
+        var b = UI.el('button', 'ghost-btn', UI.optLabel(opt)); b.type = 'button';
         b.addEventListener('click', function () {
           if (locked) return; locked = true;
           var good = oi === it.answer;
@@ -149,7 +150,8 @@ window.StageApply = (function () {
             });
           }
           fb.className = 'feedback ' + (good ? 'good' : 'bad');
-          fb.innerHTML = '<b>' + it.options[it.answer] + '</b>'
+          fb.innerHTML = '<b>' + UI.optLabel(it.options[it.answer]) + '</b>'
+            + (UI.isNothing(it.options[it.answer]) ? ' <span class="muted">' + UI.NOTHING_NOTE + '</span>' : '')
             + (it.why ? '<br>' + it.why : '')
             + (it.en ? '<br><span class="muted">' + it.en + '</span>' : '');
           row.appendChild(UI.nextBtn('Continuar →', function () { i++; show(); }));

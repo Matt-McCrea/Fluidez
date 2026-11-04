@@ -5932,3 +5932,22 @@ window.VOCAB = [
 {es:'afrontar una situación', en:'to face up to a situation', cat:'caracter', cefr:'C1', theme:'caracter', pcic:["nociones_especificas:C1:235"]},
 {es:'hacer frente a una situación', en:'to confront a situation', cat:'caracter', cefr:'C1', theme:'caracter', pcic:["nociones_especificas:C1:235"]}
 ];
+
+/* Entries that are ADJECTIVES (or ordinals) but carry an article in `es`, a
+ * leftover of the generated strands that gave every gendered entry one. The ids
+ * (`v:<es>:meaning`) and the course's day lists are keyed on `es` as written,
+ * so the text is not edited; cards show it through LexMatch.shown(), which
+ * drops the article for the words listed here. Keep to words with no noun
+ * sense ("el liberal", "el familiar" are left alone on purpose). */
+window.VOCAB_ADJECTIVES = [
+  'el simpático', 'el antipático', 'el trabajador', 'el serio', 'el tímido', 'la optimista',
+  'el abierto', 'el egoísta', 'la agradable', 'el sincero', 'el vago', 'el travieso',
+  'el inseguro', 'el conservador', 'el hablador', 'el callado', 'el discreto', 'el tacaño',
+  'el tierno', 'el apasionado', 'el solidario', 'el animado', 'el contento', 'el satisfecho',
+  'el disgustado', 'el dolido', 'el justo', 'el hospitalario', 'el austero', 'el frívolo',
+  'el íntegro', 'la altruista', 'el primer', 'el segundo', 'el soltero', 'el viudo',
+  'el rico', 'el liso', 'el educado', 'el inexperto', 'el ecológico', 'el electrónico',
+  'el orgánico', 'el inorgánico', 'el artístico', 'el universal', 'el nacional',
+  'el geográfico', 'el céntrico', 'el tóxico', 'el didáctico', 'el terapéutico',
+  'el genético', 'el biológico', 'el parlamentario'
+];
