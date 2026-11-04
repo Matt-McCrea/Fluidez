@@ -1,5 +1,5 @@
 /* Node test for the B1 teaching scripts (data/scripts/b1.js). Run: node tools/test-scripts-b1.js
- * Every lesson on the path in the first two B1 units (read from COURSE_BANDS.B1,
+ * Every lesson on the path in the first four B1 units (read from COURSE_BANDS.B1,
  * not hard-coded) has a script; every script has the anatomy of the A1 scripts
  * (tools/test-scripts.js: 2 to 3 examples before a rule, 4 to 6 read-and-pick
  * items whose option lengths give nothing away, 3 to 5 typed items whose
@@ -17,8 +17,12 @@
  *   - yourTurn and translate English must be the exact English of the Spanish:
  *     no slashes, no instructions ("Say", "Tell"), and a question in one
  *     language is a question in the other;
- *   - no Spanish string uses a verb form the course has not built by these
- *     days: no future, conditional or past subjunctive. */
+ *   - no Spanish string uses a verb form the course has not built by that
+ *     lesson's day. The day each tense arrives is read from the course (the
+ *     day of its ladder lesson: futuro, condicional, impsubj), so the future
+ *     is legal from b1-u29's first day and the conditional from b1-u30's.
+ *     Before its own lesson the conditional is allowed only as the chunks
+ *     the course has taught since A2: podría-, debería-, gustaría-. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -40,22 +44,31 @@ const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-
 const VOSOTROS_VERB = /[a-záéíóúñ]+(áis|éis|ís)(?![a-záéíóúñ])/i;
 const INSTRUCTION = /^(say|tell|ask|type|write|answer|make|pick|give|now|reply|use|translate)\b/i;
 const LATER_TENSES = { futuro: 'future', condicional: 'conditional', impsubj: 'past subjunctive' };
+const CHUNK_BEFORE = { condicional: ['poder', 'deber', 'gustar'] };   // politeness chunks taught as wholes since A2
 const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first two units from the start of B1
+// ---- the lessons on the path: the first four units from the start of B1
+const N_UNITS = 4;
 const b1 = window.COURSE_BANDS.B1;
 const units = [];
-for (let i = b1; i < window.COURSE_DAYS.length && units.length < 3; i++) {
+for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
   const u = window.COURSE_DAYS[i].unit;
   if (u && units.indexOf(u) < 0) units.push(u);
 }
-const UNITS = units.slice(0, 2);
-ok(UNITS.length === 2, 'expected two units after COURSE_BANDS.B1, found ' + UNITS.length);
+const UNITS = units.slice(0, N_UNITS);
+ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B1, found ' + UNITS.length);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 15, 'expected 15 lessons on the path in ' + UNITS.join(' and ') + ', found ' + want.length);
+ok(want.length === 33, 'expected 33 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'gr-presente-subjuntivo-b1', 'the first B1 day should be the present subjunctive, found ' + want[0]);
+// the day each later tense is built: the day of its ladder lesson in the course
+const DAY = {};
+window.COURSE_DAYS.forEach((d, i) => { if (d.lesson && DAY[d.lesson] == null) DAY[d.lesson] = i; });
+const BUILT = {};
+Object.keys(LATER_TENSES).forEach((tk) => { BUILT[tk] = DAY[tk]; ok(BUILT[tk] != null, 'the course has no ' + tk + ' lesson to date the tense by'); });
+ok(DAY['futuro'] >= DAY[want[0]] && UNITS.indexOf(window.COURSE_DAYS[DAY['futuro']].unit) === 2, 'the future should open the third B1 unit');
+ok(UNITS.indexOf(window.COURSE_DAYS[DAY['condicional']].unit) === 3, 'the conditional should open the fourth B1 unit');
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
 Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(' and ')));
 
@@ -105,12 +118,13 @@ function typed(at, t) {
   ok(a1.status === 'retry' && a2.status === 'revealed', at + ': one retry, then the answer');
 }
 
-// forms the course has not built by these days
-function laterForms(es) {
+// forms the course has not built by this lesson's day
+function laterForms(es, day) {
+  const later = (a) => LATER_TENSES[a.tense] && BUILT[a.tense] > day && !(CHUNK_BEFORE[a.tense] || []).includes(a.inf);
   const out = [];
   for (const tok of E.tokenize(plain(es))) {
     const an = E.analyzeToken(tok) || [];
-    if (an.length && an.every((a) => LATER_TENSES[a.tense])) out.push(tok + ' (' + LATER_TENSES[an[0].tense] + ')');
+    if (an.length && an.every(later)) out.push(tok + ' (' + LATER_TENSES[an[0].tense] + ')');
   }
   return out;
 }
@@ -180,12 +194,13 @@ Object.keys(SC).forEach((id) => {
   }
   ok(!s.pitfalls || (Array.isArray(s.pitfalls) && s.pitfalls.length <= 3), id + ': 0 to 3 pitfalls');
 
+  const day = DAY[id];
   for (const x of strs(id, s)) {
     ok(!DASH.test(x.v), x.p + ': dash: "' + x.v.slice(0, 60) + '"');
     if (x.es) {
       ok(!VOSOTROS_WORD.test(plain(x.v)), x.p + ': vosotros: "' + x.v.slice(0, 60) + '"');
       ok(!VOSOTROS_VERB.test(plain(x.v).replace(/\b(país|maíz|raíz|oís)\b/gi, '')), x.p + ': a vosotros verb form: "' + x.v.slice(0, 60) + '"');
-      const later = laterForms(x.v);
+      const later = laterForms(x.v, day);
       ok(!later.length, x.p + ': a form the course builds later: ' + later.join(', '));
     } else {
       const J = /^hook\./.test(x.p.slice(id.length + 1)) ? JARGON : JARGON_B1;
@@ -196,7 +211,7 @@ Object.keys(SC).forEach((id) => {
 });
 
 // option length and position across the file
-ok(rpTotal >= 60, 'expected at least 60 read-and-pick items, found ' + rpTotal);
+ok(rpTotal >= 4 * want.length, 'expected at least ' + 4 * want.length + ' read-and-pick items, found ' + rpTotal);
 ok(rpLongest / rpTotal <= 1 / 3, 'the right option is the longest ' + Math.round(100 * rpLongest / rpTotal) + '% of the time (a third at most)');
 ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the shortest ' + Math.round(100 * rpShortest / rpTotal) + '% of the time (chance ' + Math.round(100 * rpChance / rpTotal) + '%)');
 const topSlot = Math.max(...at0) / rpTotal;
