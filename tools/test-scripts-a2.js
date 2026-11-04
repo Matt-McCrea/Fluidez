@@ -1,6 +1,6 @@
 /* Node test for the A2 teaching scripts (data/scripts/a2.js). Run: node tools/test-scripts-a2.js
- * A copy of tools/test-scripts.js pointed at SCRIPTS_A2 and the first eight A2 units
- * (a2-u15, a2-u16, a2-u18 to a2-u23; a2-u14 and a2-u17 sit in the A1 band).
+ * A copy of tools/test-scripts.js pointed at SCRIPTS_A2 and every A2 unit on the path
+ * (a2-u15, a2-u16, a2-u18 to a2-u26; a2-u14 and a2-u17 sit in the A1 band).
  * Every lesson on the path in those units has a script; every script
  * has the anatomy the evidence asks for (2 to 3 examples before a rule of under
  * 130 words, 4 to 6 read-and-pick items whose option lengths give nothing away,
@@ -23,7 +23,7 @@ const M = window.LIB.match, C = window.Checker, SC = window.SCRIPTS_A2;
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
-const UNITS = ['a2-u15', 'a2-u16', 'a2-u18', 'a2-u19', 'a2-u20', 'a2-u21', 'a2-u22', 'a2-u23'];
+const UNITS = ['a2-u15', 'a2-u16', 'a2-u18', 'a2-u19', 'a2-u20', 'a2-u21', 'a2-u22', 'a2-u23', 'a2-u24', 'a2-u25', 'a2-u26'];
 const DASH = /[—–]|\s-\s|^-\s|\s-$/m;
 const JARGON = /\b(stress(ed)?|clitics?|register|conjugat\w*|infinitives?|pronouns?|adjectives?|nouns?|intonation|interrogatives?|subjunctive|indicative|imperative|masculine|feminine|morphemes?|syllables?|tenses?)\b/i;
 const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-záéíóúñ])/i;
@@ -38,9 +38,9 @@ const lines = (s) => String(s).split('\n').length;
 
 // ---- the lessons on the path, read from the course itself
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 42, 'expected 42 lessons on the path in the first eight A2 units, found ' + want.length);
+ok(want.length === 58, 'expected 58 lessons on the path in the eleven A2 units, found ' + want.length);
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the first eight A2 units'));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the A2 units'));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -186,7 +186,23 @@ Object.keys(SC).forEach((id) => {
  ['gr-condicionales-a2', 1, 'Si llover, nos quedamos en la casa.'], ['gr-condicionales-a2', 3, 'Te llamo si llegar tarde.'],
  ['fn-aconsejar-a2', 0, 'Tienes descansar.'], ['fn-aconsejar-a2', 0, 'Tienes que descansas.'], ['fn-aconsejar-a2', 2, 'Hay reservar antes.'], ['fn-aconsejar-a2', 4, 'No debes venir.'], ['fn-aconsejar-a2', 3, '¿Te ayude?'],
  ['fn-proponer-sugerir-a2', 0, '¿Qué tal si ir a cine?'], ['fn-proponer-sugerir-a2', 0, '¿Qué tal yendo a cine?'], ['fn-proponer-sugerir-a2', 1, '¿Porque no tomamos un tinto?'], ['fn-proponer-sugerir-a2', 2, '¿Y si pedir una pizza?'], ['fn-proponer-sugerir-a2', 3, '¿Nos vemos en el viernes?'],
- ['task-a2-razones', 0, 'Lo dejé para estaba cansado.'], ['task-a2-razones', 1, 'Vine a Bogotá por estudiar español.'], ['task-a2-razones', 2, 'Si me ofrecerán un buen trabajo aquí, me quedo.'], ['task-a2-razones', 3, 'Lo mejor es ahorro primero.']
+ ['task-a2-razones', 0, 'Lo dejé para estaba cansado.'], ['task-a2-razones', 1, 'Vine a Bogotá por estudiar español.'], ['task-a2-razones', 2, 'Si me ofrecerán un buen trabajo aquí, me quedo.'], ['task-a2-razones', 3, 'Lo mejor es ahorro primero.'],
+ ['nt-posicion-relativa-distancia-a2', 0, 'Las llaves están dentro el cajón.'], ['nt-posicion-relativa-distancia-a2', 2, 'El banco queda dos cuadras.'], ['nt-posicion-relativa-distancia-a2', 4, 'El apartamento tiene muchas luces.'], ['nt-posicion-relativa-distancia-a2', 4, 'El apartamento es mucha luz.'],
+ ['nt-movimiento-estabilidad-a2', 0, 'Me bajo de la próxima, por favor.'], ['nt-movimiento-estabilidad-a2', 1, 'Llévame un tinto, por favor.'], ['nt-movimiento-estabilidad-a2', 2, '¿Me traes al aeropuerto?'], ['nt-movimiento-estabilidad-a2', 3, 'Subí en el bus en la 72.'], ['nt-movimiento-estabilidad-a2', 4, 'Hoy quedo en la casa.'],
+ ['gn-describir-lugar-a2', 1, 'Al fondo está un balcón pequeño.'], ['gn-describir-lugar-a2', 2, 'Cuando lo veía por primera vez, no me gustaba.'], ['gn-describir-lugar-a2', 3, 'Fue muy oscuro.'], ['gn-describir-lugar-a2', 4, 'Medellín tiene muy bueno clima.'],
+ ['fn-dirigirse-a2', 0, 'Disculpe, ¿sabes dónde queda el banco?'], ['fn-dirigirse-a2', 2, 'Te presento Ana, una amiga del trabajo.'], ['fn-dirigirse-a2', 3, 'Señor Gómez, te presento a Laura.'], ['fn-dirigirse-a2', 3, 'Señor Gómez, le presento Laura.'],
+ ['task-a2-sitio', 1, 'Desde ahí seguimos a dos cuadras.'], ['task-a2-sitio', 2, 'El mercado queda diez minutos a pie.'], ['task-a2-sitio', 3, 'Un poco más allá está una panadería.'],
+ ['gr-gerundio-a2', 0, '¿Qué eres haciendo?'], ['gr-gerundio-a2', 1, 'Soy trabajando, te llamo luego.'], ['gr-gerundio-a2', 2, 'Estuve leyendo cuando llamaste.'], ['gr-gerundio-a2', 3, 'Mañana estoy yendo a Medellín.'], ['gr-gerundio-a2', 4, '¿El contrato? Estoy lo leyendo.'], ['gr-gerundio-a2', 4, '¿El contrato? Lo estoy leiendo.'],
+ ['gr-adverbios-circunstanciales-a2', 0, 'Vivo cerca la universidad.'], ['gr-adverbios-circunstanciales-a2', 2, 'Después comer, fuimos a un bar.'], ['gr-adverbios-circunstanciales-a2', 2, 'Después de comimos, fuimos a un bar.'], ['gr-adverbios-circunstanciales-a2', 3, 'Me gustó nada.'], ['gr-adverbios-circunstanciales-a2', 4, 'No nunca voy al gimnasio.'], ['gr-adverbios-circunstanciales-a2', 4, 'Voy nunca al gimnasio.'],
+ ['gn-generos-escritos-a2', 1, 'Te escribo por el apartamento.'], ['gn-generos-escritos-a2', 3, 'Quedo atento a tu respuesta. Un cordial saludo.'], ['gn-generos-escritos-a2', 3, 'Quedo atento a su respuesta. Un abrazo.'],
+ ['gn-presentacion-publica-a2', 0, 'Buenos días a todos. Hoy les voy hablar de Bogotá.'], ['gn-presentacion-publica-a2', 1, 'En primero lugar, es una ciudad muy grande.'], ['gn-presentacion-publica-a2', 1, 'Primero lugar, es una ciudad muy grande.'], ['gn-presentacion-publica-a2', 2, 'Para terminar, te voy a mostrar unas fotos.'],
+ ['task-a2-escribir', 0, 'El viernes íbamos a un restaurante nuevo.'], ['task-a2-escribir', 2, 'Mientras estábamos comiendo, empezaba a llover.'], ['task-a2-escribir', 3, 'Te escribo para cambiar mi cita.'],
+ ['gr-presente-irregular-a2', 0, 'Quieremos un jugo.'], ['gr-presente-irregular-a2', 1, 'Los sábados dormo hasta las diez.'], ['gr-presente-irregular-a2', 2, 'Siempre pedo lo mismo.'], ['gr-presente-irregular-a2', 3, 'No conoco a tu hermano.'], ['gr-presente-irregular-a2', 4, 'Salo a las ocho y volvo a las seis.'],
+ ['gr-articulo-definido-distribucion-a2', 0, 'El agua está muy frío.'], ['gr-articulo-definido-distribucion-a2', 0, 'La agua está muy fría.'], ['gr-articulo-definido-distribucion-a2', 1, 'Tengo mucho hambre.'], ['gr-articulo-definido-distribucion-a2', 2, '¿Jugas fútbol?'], ['gr-articulo-definido-distribucion-a2', 3, 'Trabajo todos días.'], ['gr-articulo-definido-distribucion-a2', 3, 'Trabajo los todos días.'], ['gr-articulo-definido-distribucion-a2', 4, 'Dormimos todos los días.'],
+ ['gr-cuantificadores-a2', 0, '¿Me regala un otro tinto, por favor?'], ['gr-cuantificadores-a2', 1, 'Otra mesa está libre.'], ['gr-cuantificadores-a2', 2, 'Todo el mundo conocen a Diego.'], ['gr-cuantificadores-a2', 3, 'No quiero algo, gracias.'], ['gr-cuantificadores-a2', 4, 'Hay demasiado gente.'],
+ ['gr-interrogativos-exclamativos-a2', 0, '¿Qué es tu número de celular?'], ['gr-interrogativos-exclamativos-a2', 1, '¿Cuál documentos necesito?'], ['gr-interrogativos-exclamativos-a2', 3, '¡Qué una casa bonita!'], ['gr-interrogativos-exclamativos-a2', 4, '¡Cuánto gente!'],
+ ['gr-demostrativos-valores-a2', 0, 'Esta mañana he ido al médico.'], ['gr-demostrativos-valores-a2', 1, 'Este día llovía mucho.'], ['gr-demostrativos-valores-a2', 2, 'En esa época no habían celulares.'], ['gr-demostrativos-valores-a2', 3, 'Ese es verdad.'], ['gr-demostrativos-valores-a2', 4, 'No, ese no.'],
+ ['task-a2-repaso', 0, 'Fue sábado y llovió.'], ['task-a2-repaso', 1, 'Compré un libro y leí el libro.'], ['task-a2-repaso', 2, 'Mi hermana lo quería, así que le lo di.'], ['task-a2-repaso', 3, 'Las casas eran pequeño y blanco.']
 ].forEach(([id, i, wrong]) => {
   const t = SC[id] && SC[id].yourTurn[i];
   if (!t) { ok(false, id + '.yourTurn[' + i + '] missing'); return; }
@@ -194,7 +210,7 @@ Object.keys(SC).forEach((id) => {
 });
 
 // option length across the file: the gate's rule, a third at most
-ok(rpTotal >= 160, 'expected at least 160 read-and-pick items, found ' + rpTotal);
+ok(rpTotal >= 240, 'expected at least 240 read-and-pick items, found ' + rpTotal);
 ok(rpLongest / rpTotal <= 1 / 3, 'the right option is the longest ' + Math.round(100 * rpLongest / rpTotal) + '% of the time (a third at most)');
 ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the shortest ' + Math.round(100 * rpShortest / rpTotal) + '% of the time (chance ' + Math.round(100 * rpChance / rpTotal) + '%)');
 
