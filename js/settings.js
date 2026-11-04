@@ -16,7 +16,7 @@ window.Settings = (function () {
    * the keys actually written in js/, so a new one cannot be forgotten by
    * either. fluidez.theme is exported but deliberately NOT reset: wiping your
    * Spanish should not turn off dark mode. */
-  var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.session', 'fluidez.lastsession', 'fluidez.reviewlog', 'fluidez.errors', 'fluidez.captured',
+  var KEYS = ['fluidez.srs', 'fluidez.srsSchema', 'fluidez.progress', 'fluidez.session', 'fluidez.seen', 'fluidez.lastsession', 'fluidez.reviewlog', 'fluidez.errors', 'fluidez.captured',
     'fluidez.userWords', 'fluidez.journal', 'fluidez.profile', 'fluidez.theme', 'fluidez.topicLevel', 'fluidez.caps',
     /* 'fluidez.gameBest' is the RETIRED games store — the old per-submode counts
      * of correct answers. It is no longer read (js/gamescore.js owns
@@ -164,6 +164,23 @@ window.Settings = (function () {
     importWrap.appendChild(fileInput);
     importWrap.appendChild(status);
     wrap.appendChild(importWrap);
+
+    if (window.SRS && window.SRS.setRetentionPct) {
+      wrap.appendChild(UI.el('h3', null, UI.t('Cuánto recordar', 'How much to remember')));
+      wrap.appendChild(UI.el('p', 'muted',
+        '90% brings a word back just before you would forget it, nine times in ten: fewer slips, more reviews. 85% spaces words further apart for fewer reviews and a few more misses.'));
+      var retRow = UI.el('div', 'cap-row');
+      [85, 90].forEach(function (pct) {
+        var b = UI.el('button', window.SRS.retentionPct() === pct ? 'primary-btn' : 'ghost-btn', pct + '%');
+        b.type = 'button';
+        b.addEventListener('click', function () {
+          window.SRS.setRetentionPct(pct);
+          Array.prototype.forEach.call(retRow.children, function (c) { c.className = c.textContent === pct + '%' ? 'primary-btn' : 'ghost-btn'; });
+        });
+        retRow.appendChild(b);
+      });
+      wrap.appendChild(retRow);
+    }
 
     if (window.Profile) {
       wrap.appendChild(UI.el('h3', null, UI.t('Tope de repaso', 'Review cap')));

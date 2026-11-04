@@ -35,8 +35,12 @@ global.UI = {
 const FILES = ['data/taxonomy.js', 'data/connectors.js', 'data/verbs.js', 'data/vocab.js', 'data/idioms.js',
   'data/grammar-docs.js', 'data/grammar.js', 'data/passages.js', 'data/apply.js', 'data/writing.js', 'data/topics.js',
   'data/strand-lessons.js', 'data/course.js', 'data/resources.js', 'js/engine.js', 'js/lessons.js', 'js/checker.js',
-  'js/srs.js', 'js/profile.js', 'js/curriculum.js', 'js/lexmatch.js', 'js/focus.js', 'js/unitcheck.js'];
+  'js/srs.js', 'js/profile.js', 'js/curriculum.js', 'js/lexmatch.js', 'js/focus.js', 'js/unitcheck.js',
+  'data/graph.js', 'data/requires.js', 'data/lesson-nodes.js'];
 FILES.forEach(f => (0, eval)(fs.readFileSync(path.join(ROOT, f), 'utf8')));
+// node gating (js/known.js) needs the library bundle's graph functions
+(0, eval)(fs.readFileSync(path.join(ROOT, 'js/lib.bundle.js'), 'utf8') + '\n;globalThis.LIB = LIB;');
+(0, eval)(fs.readFileSync(path.join(ROOT, 'js/known.js'), 'utf8'));
 const SESSION_SRC = fs.readFileSync(path.join(ROOT, 'js/session.js'), 'utf8');
 window.Profile.set('A1');
 

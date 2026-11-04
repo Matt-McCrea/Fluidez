@@ -152,10 +152,6 @@ window.Session = (function () {
     if (out.length < n) out = out.concat(sample(no, n - out.length, rng));
     return out;
   }
-  function preferAligned(arr, focus, fn) {
-    var a = arr.filter(function (t) { return fn(t, focus); });
-    return a.length ? a : arr;
-  }
 
   /* Keep verbs a beginner has not been taught out of the answers they are
    * asked to produce. A translation task on "I sleep eight hours a night"
@@ -175,90 +171,51 @@ window.Session = (function () {
     return out.length ? out : items;
   }
 
-  /* ---- gate reading by TAUGHT TENSE, not by level ------------------------
+  /* ---- gate by NODE, not by tense ---------------------------------------
    *
-   * `level` has always been a proxy for "which tenses may appear in this
-   * text" — that is the only thing the number ever decided about a passage.
-   * Standing for something is not being it, and the gap opened the moment the
-   * preterite moved into A1: A1 is a single level (LEVELS gives it
-   * `levels:[1]`, so maxGate is 1), which means making a preterite legal at
-   * level 1 makes it legal in the passage handed to a learner on day 3, with
-   * nothing left to tell the two apart. There is no "late A1" to put it in.
+   * Every passage, Apply item and writing task knows what it requires
+   * (data/requires.js, keyed passage:<id>, apply:<index>, writing:<id>) and
+   * js/known.js knows what the learner has met. An item is served only when
+   * everything it requires has been taught by today, passed in review, or is
+   * what today teaches (Known.allows). Replaces the old tense gate, and with
+   * it the present-tense "floor": the present is just a node now, taught on
+   * the day that teaches it.
    *
-   * So the proxy is dropped and the thing itself is read. Each passage carries
-   * a precomputed `tenses` array (tools/tense-index.js, generated from the
-   * same scanner the content gate levels verbs with, so the two cannot drift),
-   * and a passage is only offered once the learner has REACHED every tense in
-   * it — studied the lesson, or walked past the day that teaches it.
+   * Among the allowed items, those that exercise today's lesson nodes are
+   * preferred (Known.targets): at least two thirds of the Apply and Produce
+   * picks, when enough exist.
    *
-   * This also removes a latent version of the same bug at every other band: a
-   * B1 learner on day 190 was being handed texts built on the
-   * pluscuamperfecto, which B1 does not teach until day 279.
+   * NEVER EMPTY, as a last resort only. If gating leaves a stage nothing, the
+   * ungated set is used and the miss is written to ctx.gaps ({kind:'ungated'})
+   * so the playtest can count how often supply ran out.
    *
-   * Two deliberate softnesses:
-   *
-   *   THE FLOOR. The present indicative is not gated. It is the first tense
-   *   the course teaches (day 4) and the one every beginner text is written
-   *   in, so gating it would blank the reading stage for the three days before
-   *   its lesson — a rule that fires on correct content is worse than no rule.
-   *   Taken as "the earliest tense on the course" rather than spelled
-   *   `presente`, so it follows the course if the course moves.
-   *
-   *   NEVER EMPTY. If the filter leaves nothing, the unfiltered set is used —
-   *   the same bargain safeVerbs and Focus.narrow already make. A text with an
-   *   untaught tense in it beats a blank stage, and it is also what makes a
-   *   theme focus on a thin theme degrade instead of starving.
-   *
-   * ALL THREE STAGES, not just reading. Cloze items and writing tasks carry
-   * their tense explicitly — `tense` on an apply item, `anyVerbInTense` and
-   * friends on a writing task's constraints — so they need no scanner, but
-   * they were leaning on exactly the same proxy: `level` was the only thing
-   * keeping a preterite drill away from a beginner. Gating a passage and not
-   * the drill would have taught the preterite on day 72 and then spent the
-   * afternoon conjugating the present, which is the failure this whole piece
-   * of work is about, one stage over. */
-  var _tenseSched = null;
-  function tenseSchedule() {
-    if (_tenseSched) return _tenseSched;
-    var byId = {};
-    (window.ALL_LESSONS || window.GRAMMAR_LESSONS || []).forEach(function (l) { byId[l.id] = l; });
-    // the ladder's own tenses — the set `level` was ever a proxy for
-    var onLadder = {};
-    (window.SEED_SYLLABUS || []).forEach(function (s) { onLadder[s.id] = 1; });
-    var day = {}, lesson = {}, floor = null;
-    (window.COURSE_DAYS || []).forEach(function (d, i) {
-      var l = d.lesson && byId[d.lesson];
-      if (!l) return;
-      /* A merged lesson keeps the id of its hand-written half while still
-       * teaching the tense — `gr-preterito-perfecto-a2` IS the present
-       * perfect — so `tense` is the thing to read, not the id. */
-      var tk = l.tense || (onLadder[l.id] ? l.id : null);
-      if (!tk || day[tk] != null) return;
-      day[tk] = i; lesson[tk] = l.id;
-      if (floor === null || i < day[floor]) floor = tk;
-    });
-    _tenseSched = { day: day, lesson: lesson, floor: floor };
-    return _tenseSched;
+   * EXPOSURE LEDGER. fluidez.seen maps an item key to the day it was last
+   * served. Within SEEN_DAYS days it is not served again for Apply, Produce or
+   * the passage, unless that would leave nothing: then the oldest is reused and
+   * ctx.gaps says so ({kind:'reuse'}). A day's authored re-read (data/course.js
+   * `passage`) is allowed and recorded as {kind:'authored-repeat'}. */
+  var SEEN_KEY = 'fluidez.seen', SEEN_DAYS = 14;
+  function loadSeen() { try { return JSON.parse(localStorage.getItem(SEEN_KEY)) || {}; } catch (e) { return {}; } }
+  function saveSeen(o) { try { localStorage.setItem(SEEN_KEY, JSON.stringify(o)); } catch (e) {} }
+  var _applyIx = null, _applyIxSrc = null;
+  function applyKey(it) {
+    var src = window.APPLY_ITEMS || [];
+    if (_applyIxSrc !== src) { _applyIx = new Map(); src.forEach(function (x, i) { _applyIx.set(x, i); }); _applyIxSrc = src; }
+    return 'apply:' + _applyIx.get(it);
   }
-
-  function tenseReached(tk, dayIndex, studied) {
-    var sc = tenseSchedule();
-    if (tk === sc.floor) return true;
-    if (sc.lesson[tk] && studied[sc.lesson[tk]]) return true;
-    return sc.day[tk] != null && dayIndex != null && sc.day[tk] <= dayIndex;
-  }
-  // the tenses an item requires — a passage carries them precomputed, a cloze
-  // item and a writing task say so outright
-  function tensesOfPassage(p) { return p.tenses || []; }
-  function tensesOfApply(it) { return it.tense ? [it.tense] : []; }
-  function tensesOfWrite(t) {
-    return (t.constraints || []).map(function (c) { return c.tense; }).filter(Boolean);
-  }
-  function taughtTenses(items, tensesOf, dayIndex, studied) {
-    var out = items.filter(function (x) {
-      return tensesOf(x).every(function (tk) { return tenseReached(tk, dayIndex, studied); });
-    });
-    return out.length ? out : items;
+  function writeKey(t) { return 'writing:' + t.id; }
+  function passageKey(p) { return 'passage:' + p.id; }
+  /* Record what a session served. Called once when a fresh (non-repeat) session
+   * starts, not from buildContext: the home screen and a resume build contexts
+   * too and must not count as serving. */
+  function markSeen(c) {
+    if (!c || c.repeat) return;
+    var seen = loadSeen(), d = c.seenDay != null ? c.seenDay : c.day;
+    if (c.passage) seen[passageKey(c.passage)] = d;
+    (c.applyItems || []).forEach(function (x) { seen[applyKey(x)] = d; });
+    (c.writeTasks || []).forEach(function (t) { seen[writeKey(t)] = d; });
+    Object.keys(seen).forEach(function (k) { if (d - seen[k] > 60) delete seen[k]; });
+    saveSeen(seen);
   }
 
   /* A fingerprint of the band's day sequence, so a course edit that renumbers
@@ -462,15 +419,59 @@ window.Session = (function () {
 
     function atLevel(arr) { return arr.filter(function (x) { return (x.level || 1) <= level; }); }
 
-    /* Level first, then taught tense — the two are different questions ("is
-     * this written too hard for me?" and "have I met what is in it?") and the
-     * second only makes sense over things that already passed the first. */
-    function taught(arr, tensesOf) {
-      return pr.unlockAll ? arr : taughtTenses(arr, tensesOf, dayIndex, studied);
+    var gaps = [];
+    var Kn = window.Known;
+    var gating = !!(Kn && window.REQUIRES && window.GRAPH && !pr.unlockAll);
+    var gi = dayIndex != null ? dayIndex : -1;
+    var tNodes = gating ? Kn.todayNodes(focus, gi) : new Set();
+    var known = gating ? Kn.forLearner(f.prog, gi) : null;
+    var band = pr.cefr || null;
+    var seenDay = opts.today != null ? opts.today : day;
+    var seen = loadSeen();
+    function recent(key) {
+      var s = seen[key];
+      return s != null && s !== seenDay && seenDay - s >= 0 && seenDay - s < SEEN_DAYS;
     }
-    var passages = taught(atLevel(window.PASSAGES || []), tensesOfPassage);
-    var apply = safeVerbs(taught(atLevel(window.APPLY_ITEMS || []), tensesOfApply));
-    var writes = safeWriting(taught(atLevel(window.WRITING_TASKS || []), tensesOfWrite));
+    // node gate; the ungated set only as a last resort, and logged
+    function gated(arr, keyOf, stage) {
+      if (!gating) return arr;
+      var ok = arr.filter(function (x) { return Kn.allows(keyOf(x), known, tNodes, band); });
+      if (ok.length) return ok;
+      if (arr.length) gaps.push({ kind: 'ungated', stage: stage, lesson: lesson ? lesson.id : null });
+      return arr;
+    }
+    var NONE = function () { return false; };
+    /* n items: up to two thirds from those that target today's nodes (when that
+     * many exist), the rest from the other unseen ones, then leftovers, then
+     * (logged) the oldest seen. Focus alignment (tense/concept) ranks within
+     * each tier, as before. */
+    function choose(pool, n, keyOf, matchFn, stage) {
+      if (!pool.length || n <= 0) return [];
+      var fresh = pool.filter(function (x) { return !recent(keyOf(x)); });
+      var stale = pool.filter(function (x) { return recent(keyOf(x)); })
+        .sort(function (a, b) { return seen[keyOf(a)] - seen[keyOf(b)]; });
+      var pref = gating ? fresh.filter(function (x) { return Kn.targets(keyOf(x), tNodes); }) : [];
+      var rest = fresh.filter(function (x) { return pref.indexOf(x) < 0; });
+      var fn = matchFn || NONE;
+      var out = sampleAligned(pref, focus, Math.min(pref.length, Math.ceil(n * 2 / 3)), fn, rng);
+      if (out.length < n) out = out.concat(sampleAligned(rest, focus, n - out.length, fn, rng));
+      if (out.length < n) out = out.concat(sample(pref.filter(function (x) { return out.indexOf(x) < 0; }), n - out.length, rng));
+      if (out.length < n && stale.length) {
+        var more = stale.slice(0, n - out.length);
+        out = out.concat(more);
+        gaps.push({ kind: 'reuse', stage: stage, keys: more.map(keyOf) });
+      }
+      return out;
+    }
+
+    var passAll = gated(atLevel(window.PASSAGES || []), passageKey, 'comprehend');
+    var passages = passAll.filter(function (x) { return !recent(passageKey(x)); });
+    if (!passages.length && passAll.length) {
+      passages = [passAll.slice().sort(function (a, b) { return seen[passageKey(a)] - seen[passageKey(b)]; })[0]];
+      gaps.push({ kind: 'reuse', stage: 'comprehend', keys: [passageKey(passages[0])] });
+    }
+    var apply = safeVerbs(gated(atLevel(window.APPLY_ITEMS || []), applyKey, 'apply'));
+    var writes = safeWriting(gated(atLevel(window.WRITING_TASKS || []), writeKey, 'produce'));
 
     // The FIRST time a grammar lesson is seen (not yet in `studied`), its
     // content is picked with a seed derived from the lesson id — reproducible
@@ -559,22 +560,22 @@ window.Session = (function () {
     var produce;
     if (pr.produceStyle === 'guided') {
       produce = []
-        .concat(sample(builds, 1, rng))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng))
-        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), big ? 2 : 1, rng))
-        .concat(sample(preferAligned(paras, focus, writeMatchesFocus), 1, rng));
+        .concat(choose(builds, 1, writeKey, null, 'produce'))
+        .concat(choose(trans, big ? 2 : 1, writeKey, writeMatchesFocus, 'produce'))
+        .concat(choose(frees, big ? 2 : 1, writeKey, writeMatchesFocus, 'produce'))
+        .concat(choose(paras, 1, writeKey, writeMatchesFocus, 'produce'));
     } else if (essayDay) {
       produce = []
-        .concat(sample(builds, 1, rng))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), 1, rng))
-        .concat(sample(preferAligned(essays, focus, writeMatchesFocus), 1, rng));
+        .concat(choose(builds, 1, writeKey, null, 'produce'))
+        .concat(choose(trans, 1, writeKey, writeMatchesFocus, 'produce'))
+        .concat(choose(essays, 1, writeKey, writeMatchesFocus, 'produce'));
     } else {
       // 'build' (A1), 'full' (B1/B2), 'extended' → 'full' (C1).
       produce = []
-        .concat(sample(builds, 1, rng))
-        .concat(sample(preferAligned(trans, focus, writeMatchesFocus), big ? 2 : 1, rng))
-        .concat(sample(preferAligned(frees, focus, writeMatchesFocus), big ? 3 : 2, rng))
-        .concat(level >= 2 ? sample(preferAligned(paras, focus, writeMatchesFocus), 1, rng) : []);
+        .concat(choose(builds, 1, writeKey, null, 'produce'))
+        .concat(choose(trans, big ? 2 : 1, writeKey, writeMatchesFocus, 'produce'))
+        .concat(choose(frees, big ? 3 : 2, writeKey, writeMatchesFocus, 'produce'))
+        .concat(level >= 2 ? choose(paras, 1, writeKey, writeMatchesFocus, 'produce') : []);
     }
 
     /* Which passage to read. Three tiers, because the fallback used to be "any
@@ -587,12 +588,16 @@ window.Session = (function () {
      * 3. failing that, anything at this level — and the stage says so, rather
      *    than presenting it as though it followed on. */
     var aligned = passages.filter(function (x) { return passageUsesFocus(x, focus, lesson); });
+    /* Between "uses today's words" and "same theme": a passage that requires
+     * today's lesson nodes (Known.targets). */
+    var targeted = (!aligned.length && gating)
+      ? passages.filter(function (x) { return Kn.targets(passageKey(x), tNodes); }) : [];
     var themed = [];
-    if (!aligned.length && lesson && lesson.theme) {
+    if (!aligned.length && !targeted.length && lesson && lesson.theme) {
       themed = passages.filter(function (x) { return x.theme === lesson.theme; });
     }
-    var storyPool = aligned.length ? aligned : (themed.length ? themed : passages);
-    var storyTier = aligned.length ? 'focus' : (themed.length ? 'theme' : 'level');
+    var storyPool = aligned.length ? aligned : (targeted.length ? targeted : (themed.length ? themed : passages));
+    var storyTier = (aligned.length || targeted.length) ? 'focus' : (themed.length ? 'theme' : 'level');
 
     /* A chosen focus outranks all three tiers — the learner asked for this
      * theme out loud, which is a better reason than any the scheduler has. It
@@ -635,8 +640,11 @@ window.Session = (function () {
      * tools/validate-content.js checks these ids resolve and are legal on
      * their day, so a fallback here means the gate would have caught it. */
     if (focus.passage) {
-      var named = passages.filter(function (x) { return x.id === focus.passage; });
-      if (named.length) { storyPool = named; storyTier = 'focus'; }
+      var named = passAll.filter(function (x) { return x.id === focus.passage; });
+      if (named.length) {
+        storyPool = named; storyTier = 'focus';
+        if (recent(passageKey(named[0]))) gaps.push({ kind: 'authored-repeat', stage: 'comprehend', keys: [passageKey(named[0])] });
+      }
     }
 
     /* Among passages that are equally right on grammar and theme, prefer the
@@ -737,9 +745,12 @@ window.Session = (function () {
       mode: mode,
       passage: chosenPassage,
       passageTier: storyTier,
-      applyItems: breakRuns(sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng), shapeOf, MAX_RUN),
+      applyItems: breakRuns(choose(apply, big ? 12 : (mode === 'corto' ? 4 : 6), applyKey, clozeMatchesFocus, 'apply'), shapeOf, MAX_RUN),
       writeTasks: breakRuns(produce, shapeOf, MAX_RUN),
       rng: rng,
+      gaps: gaps,
+      seenDay: seenDay,
+      nodes: tNodes,
       results: {}
     };
   }
@@ -1166,6 +1177,7 @@ window.Session = (function () {
     var seed = Math.floor(Math.random() * 1e9);
     ctx = buildContext({ seed: seed, over: over, repeat: repeat });
     ctx.snap = makeSnap(ctx);
+    markSeen(ctx);
     idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
     persist();
     runStage();
@@ -1194,6 +1206,8 @@ window.Session = (function () {
 
   return {
     start: start,
+    // test hooks: build a context without starting a session; record what it served
+    _build: buildContext, _markSeen: markSeen,
     today: today,
     skipLesson: skipLesson,
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
