@@ -28,15 +28,13 @@ window.GRAMMAR = [
     { es: '¿Dónde vives?', en: 'Where do you live?' }
   ],
   when:[
-    'Something happening right now: <i>Como una manzana.</i> — I am eating an apple.',
-    'Habitual / repeated actions: <i>Trabajo todos los días.</i> — I work every day.',
-    'General facts and truths: <i>El agua hierve a 100 grados.</i> — Water boils at 100 degrees.',
-    'Near-future plans (with a time marker): <i>Mañana viajo a México.</i> — Tomorrow I fly to Mexico.'
+    'Something happening right now: <i>Como una manzana.</i> I am eating an apple.',
+    'Habitual or repeated actions: <i>Trabajo todos los días.</i> I work every day.',
+    'General facts and truths: <i>El agua hierve a 100 grados.</i> Water boils at 100 degrees.',
+    'Near-future plans (with a time marker): <i>Mañana viajo a México.</i> Tomorrow I fly to Mexico.'
   ],
   irregulars:[
-    'Stem changers (e→ie, o→ue, e→i) change in all forms except nosotros/vosotros: <i>pensar → pienso</i>, <i>dormir → duermo</i>, <i>pedir → pido</i>.',
-    'Irregular "yo": <i>tener → tengo</i>, <i>hacer → hago</i>, <i>conocer → conozco</i>, <i>salir → salgo</i>.',
-    'Fully irregular — learn these as whole words: <i>ser</i> (to be), <i>estar</i> (to be), <i>ir</i> (to go), <i>haber</i> (there is/are).'
+    'Fully irregular. Learn these as whole words: <i>ser</i> (to be), <i>estar</i> (to be), <i>ir</i> (to go), <i>haber</i> (there is/are).'
   ],
   examples:[
     {es:'Hablo español todos los días.', en:'I speak Spanish every day.'},

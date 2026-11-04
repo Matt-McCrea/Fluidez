@@ -997,62 +997,65 @@ window.STRAND_LESSONS = [
 /* ---- pronunciation: the hole in the course ---------------------------------
  * Nothing in 730 days taught Spanish sounds, stress, or why the written accent
  * goes where it goes. Seventeen lessons mentioned accents in passing; none
- * taught the system. These two are core A1, not reference: a beginner who does
- * not know that Spanish vowels never reduce will mispronounce every word they
- * ever read, and one who does not know the stress rule cannot tell "hablo"
- * from "habló" — which is the present from the preterite.
- * Both pair with js/speak.js; the examples are meant to be listened to.
+ * taught the system. These two used to be path days (A1 days 2 and 13), and a
+ * beginner met vowels and stress rules before meeting anybody. They are now
+ * reference: gr-sonidos-a1 is the one short card (vowels, the consonants that
+ * surprise, where the stress falls and when it is written), linked from the
+ * day-2 cognate lesson, and gr-acentuacion-a1 is the longer stress lesson
+ * behind it. Both pair with js/speak.js; the examples are meant to be heard.
  * ------------------------------------------------------------------------- */
 {
-  id: 'gr-sonidos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
-  title: 'Los sonidos: cinco vocales y nada más',
-  canDo: 'pronounce any written Spanish word correctly on sight',
-  summary: 'Spanish spelling is almost perfectly regular: five vowels, each with exactly one sound, always. English has around twenty vowel sounds and spells them chaotically, which is why an English speaker\'s instinct is the single biggest source of Spanish mispronunciation.',
+  id: 'gr-sonidos-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null, status: 'reference',
+  deeper: ['gr-acentuacion-a1'],
+  title: 'Sounds and stress, on one card',
+  canDo: 'read any written Spanish word aloud, with the stress in the right place',
+  summary: 'Spanish spelling is close to perfectly regular, so the whole system fits on one card: five vowels that never change, twelve consonants that behave differently from English, and two rules for where the stress falls. The written accent appears only on words that break those two rules.',
   keywords: [
     { es: 'hola', en: 'hello (the h is silent)' },
-    { es: 'hombre', en: 'man' },
-    { es: 'hay', en: 'there is, there are' },
-    { es: 'jamón', en: 'ham' },
-    { es: 'gente', en: 'people' },
-    { es: 'me llamo', en: 'my name is' },
-    { es: 'español', en: 'Spanish' },
-    { es: 'pero', en: 'but' },
-    { es: 'perro', en: 'dog' },
-    { es: 'rojo', en: 'red' },
-    { es: 'gracias', en: 'thank you' },
-    { es: 'cinco', en: 'five' },
-    { es: 'vivir', en: 'to live' },
-    { es: 'bien', en: 'well, good' }
+    { es: 'gente', en: 'people (g before e sounds like j)' },
+    { es: 'español', en: 'Spanish (ñ sounds like ny)' },
+    { es: 'pero', en: 'but (one tap of the r)' },
+    { es: 'perro', en: 'dog (a rolled rr)' },
+    { es: 'gracias', en: 'thank you (c before i sounds like s)' },
+    { es: 'quiero', en: 'I want (qu sounds like k)' },
+    { es: 'la papa', en: 'the potato (stress on the first syllable)' },
+    { es: 'el papá', en: 'the dad (stress on the last, so it is written)' },
+    { es: 'tú', en: 'you' },
+    { es: 'tu', en: 'your' }
   ],
   sections: [
-    { h: 'Five vowels, five sounds, no exceptions', html: '<b>a</b> as in "father", <b>e</b> as in "bed", <b>i</b> as in "machine", <b>o</b> as in "or", <b>u</b> as in "rule". Each is short, crisp and identical every time it appears. They never blur into the "uh" that English unstressed vowels collapse into — <i>banana</i> in English is three different vowel sounds; <i>banana</i> in Spanish is the same <b>a</b> three times.' },
-    { h: 'The consonants that surprise', html: '<ul><li><b>h</b> is always silent: <i>hola</i>, <i>hombre</i>, <i>hay</i>.</li><li><b>j</b> and <b>g</b> (before e/i) are a throaty h: <i>jamón</i>, <i>gente</i>.</li><li><b>ll</b> and <b>y</b> sound alike, roughly English "y": <i>llamo</i>, <i>yo</i>.</li><li><b>ñ</b> is the "ny" of "canyon": <i>español</i>.</li><li><b>v</b> and <b>b</b> are the SAME sound: <i>vivir</i> begins like <i>bien</i>.</li><li><b>r</b> between vowels is a single tap (<i>pero</i>); <b>rr</b> and initial <b>r</b> are rolled (<i>perro</i>, <i>rojo</i>).</li></ul>' },
-    { h: 'The one that splits the Spanish-speaking world', html: 'In most of Spain, <b>c</b> (before e/i) and <b>z</b> are a "th" sound — <i>gracias</i> ends "thias", <i>cinco</i> starts "thinco". In all of Latin America and southern Spain they are a plain "s". Both are entirely correct; the app\'s voice is peninsular, so you will hear the "th".' },
-    { h: 'Why this pays off immediately', html: 'Because the spelling is regular, you never have to learn how a Spanish word sounds separately from how it is written. Once these rules are in place you can read any word aloud correctly the first time you meet it — which is not true in English and is one of the genuinely easy things about Spanish.' }
+    { h: 'Five vowels, one sound each', html: '<b>a</b> as in "father", <b>e</b> as in "bed", <b>i</b> as in "machine", <b>o</b> as in "or", <b>u</b> as in "rule". Each one is short and sounds the same every time it appears. None of them fades into the "uh" of unstressed English: <i>banana</i> in English has three different vowel sounds, and <i>banana</i> in Spanish is the same <b>a</b> three times.' },
+    { h: 'Twelve consonants that surprise', html: '<ul><li><b>h</b> is silent: <i>hola</i>, <i>hombre</i>.</li><li><b>j</b> is a breathy h from the throat: <i>joven</i>, <i>José</i>.</li><li><b>g</b> before <b>e</b> or <b>i</b> is that same sound: <i>gente</i>, <i>Argentina</i>.</li><li><b>gu</b> before <b>e</b> or <b>i</b> is a hard g with a silent u: <i>guitarra</i>.</li><li><b>qu</b> is a k with a silent u: <i>queso</i>, <i>quiero</i>.</li><li><b>c</b> before <b>e</b> or <b>i</b> sounds like s: <i>gracias</i>, <i>cinco</i>.</li><li><b>z</b> also sounds like s: <i>zapato</i>, <i>azúcar</i>.</li><li><b>ll</b> sounds like the y in "yes": <i>llamo</i>, <i>calle</i>.</li><li><b>y</b> is the same sound, and on its own, meaning and, it is the vowel i.</li><li><b>ñ</b> is the ny in "canyon": <i>español</i>, <i>mañana</i>.</li><li><b>b</b> and <b>v</b> are one sound: <i>vivir</i> begins like <i>bien</i>.</li><li><b>r</b> between vowels is one quick tap, as in <i>pero</i>; <b>rr</b>, and an <b>r</b> at the start of a word, is rolled, as in <i>perro</i> and <i>rojo</i>.</li></ul>' },
+    { h: 'Spain and Latin America', html: 'In most of Spain, <b>c</b> before e or i and <b>z</b> are a "th" sound. In Latin America, and in this course, they are a plain s. Both are correct, and the app\'s voice may use either.' },
+    { h: 'Where the stress falls', html: 'Two rules cover most words, and those words carry no written accent. A word that ends in a <b>vowel</b>, <b>-n</b> or <b>-s</b> is stressed on the next to last syllable: <i>hola</i> (HO-la), <i>hablan</i> (HA-blan), <i>gracias</i> (GRA-cias). A word that ends in any other consonant is stressed on the last syllable: <i>hablar</i> (ha-BLAR), <i>ciudad</i> (ciu-DAD), <i>español</i> (es-pa-ÑOL).' },
+    { h: 'When the accent is written', html: 'The written accent marks a word that breaks those two rules, and shows where the stress really is: <i>café</i> (ca-FÉ), <i>teléfono</i> (te-LÉ-fo-no), <i>difícil</i> (di-FÍ-cil). Because stress can change the word, the mark matters: <i>papa</i> is a potato and <i>papá</i> is dad; <i>esta</i> means this and <i>está</i> means is. The accent has one more job, unrelated to stress: it tells apart short words spelled alike. <i>Tú</i> is you and <i>tu</i> is your, <i>él</i> is he and <i>el</i> is the, <i>sí</i> is yes and <i>si</i> is if, and <i>qué</i> has its accent whenever it asks.' }
   ],
   examples: [
-    { es: 'Hola, ¿hablas español?', en: 'Hello, do you speak Spanish? — the h is silent, the ñ is "ny"' },
-    { es: 'Gracias, Jorge.', en: 'Thank you, Jorge. — peninsular "grathias", and a throaty J' },
-    { es: 'Pero el perro es rojo.', en: 'But the dog is red. — one tap, then two rolls' },
-    { es: 'Vivimos en Bilbao.', en: 'We live in Bilbao. — the v and the b are the same sound' },
-    { es: 'Me llamo Yolanda.', en: 'My name is Yolanda. — ll and y sound alike' }
+    { es: 'Hola, ¿hablas español?', en: 'Hello, do you speak Spanish? (a silent h, and ñ as ny)' },
+    { es: 'Gracias, José.', en: 'Thank you, José. (c as s, and j from the throat)' },
+    { es: 'Pero el perro es rojo.', en: 'But the dog is red. (one tap, then two rolls)' },
+    { es: 'Mi papá quiere una papa.', en: 'My dad wants a potato. (the accent moves the stress, and changes the word)' },
+    { es: 'Tú tienes tu café.', en: 'You have your coffee. (the same sound, two different words)' }
   ],
   probes: [
     { id: 'p:gr-sonidos-a1-1', kind: 'mcq', q: 'How many vowel sounds does Spanish have?',
-      options: ['Five — one per written vowel', 'Twelve', 'About twenty, like English'], answer: 0 },
+      options: ['Five, one for each vowel', 'Twelve', 'About twenty, like English'], answer: 0 },
     { id: 'p:gr-sonidos-a1-2', kind: 'mcq', q: 'Which letter is always silent?',
-      options: ['h', 'j', 'll'], answer: 0 },
+      options: ['j', 'h', 'll'], answer: 1 },
     { id: 'p:gr-sonidos-a1-3', kind: 'mcq', q: 'In "pero" and "perro", what is the difference?',
-      options: ['One tap of the r versus a rolled r', 'The stress moves', 'The vowels change'], answer: 0 },
-    { id: 'p:gr-sonidos-a1-4', kind: 'recall', front: 'Two letters that sound identical in Spanish', back: 'v and b' }
+      options: ['The stress moves to the end', 'One quick tap against a roll', 'The two vowels sound different'], answer: 1 },
+    { id: 'p:gr-sonidos-a1-4', kind: 'recall', front: 'Two letters that sound identical in Spanish', back: 'v and b' },
+    { id: 'p:gr-sonidos-a1-5', kind: 'mcq', q: 'Why does "café" carry a written accent?',
+      options: ['Its stress is on the last syllable', 'It is a word that comes from French', 'The final e is said longer than usual'], answer: 0 },
+    { id: 'p:gr-sonidos-a1-6', kind: 'cloze', text: 'Mi ___ quiere una papa. (the word for father, with its accent)', accept: ['papá'] }
   ]
 },
 
 {
-  id: 'gr-acentuacion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  id: 'gr-acentuacion-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null, status: 'reference',
   title: 'El acento: dónde cae la fuerza y cuándo se escribe',
   canDo: 'know which syllable to stress, and why the written accent is there',
-  summary: 'The written accent is not decoration and it is not optional. Spanish has two default stress rules, and the accent appears on exactly the words that break them — so an accent is a signal that the stress is somewhere you would not have guessed.',
+  summary: 'The written accent is not decoration and it is not optional. Spanish has two default stress rules, and the accent appears on exactly the words that break them, so an accent is a signal that the stress is somewhere you would not have guessed.',
   keywords: [
     { es: 'el acento', en: 'the accent, the stress' },
     { es: 'hablo', en: 'I speak' },
@@ -1068,23 +1071,23 @@ window.STRAND_LESSONS = [
   ],
   sections: [
     { h: 'The two defaults', html: 'A word ending in a <b>vowel, -n or -s</b> is stressed on the <b>second-to-last</b> syllable: <i>ha-<b>bla</b>-mos</i>, <i>na-<b>ran</b>-ja</i>, <i><b>jo</b>-ven</i>. A word ending in <b>any other consonant</b> is stressed on the <b>last</b>: <i>ha-<b>blar</b></i>, <i>ciu-<b>dad</b></i>, <i>es-pa-<b>ñol</b></i>. Between them these two rules cover the large majority of Spanish words, and those words carry no accent at all.' },
-    { h: 'The accent marks the exceptions', html: 'When a word does not follow its rule, the accent shows where the stress actually falls: <i>ha-<b>bló</b></i> ends in a vowel but is stressed on the last syllable, so it needs the mark. <i><b>Á</b>-ra-be</i>, <i>di-<b>fí</b>-cil</i>, <i><b>lá</b>-piz</i> — all breaking a default, all marked.' },
-    { h: 'Why it changes meaning', html: 'Stress alone distinguishes real words, and three of these you will meet in the first fortnight: <i><b>ha</b>blo</i> (I speak) versus <i>ha<b>bló</b></i> (he spoke); <i><b>ter</b>mino</i> (I finish) versus <i>ter<b>mi</b>no</i> (term) versus <i>termi<b>nó</b></i> (he finished). Dropping the accent does not make a small spelling slip — it changes the tense.' },
-    { h: 'The other accent: telling twins apart', html: 'A second job, unrelated to stress: the mark separates pairs of one-syllable words that would otherwise be identical. <i>él</i> (he) / <i>el</i> (the); <i>tú</i> (you) / <i>tu</i> (your); <i>sí</i> (yes) / <i>si</i> (if); <i>qué</i> (what, asking) / <i>que</i> (that). Same sound, different word, and the accent is the only thing distinguishing them in writing.' }
+    { h: 'The accent marks the exceptions', html: 'When a word does not follow its rule, the accent shows where the stress actually falls: <i>ha-<b>bló</b></i> ends in a vowel but is stressed on the last syllable, so it needs the mark. The same goes for <i><b>á</b>-ra-be</i>, <i>di-<b>fí</b>-cil</i> and <i><b>lá</b>-piz</i>: each one breaks a default, so each one is marked.' },
+    { h: 'Why it changes meaning', html: 'Stress alone distinguishes real words: <i><b>ha</b>blo</i> (I speak) against <i>ha<b>bló</b></i> (he spoke); <i><b>ter</b>mino</i> (I finish) against <i>ter<b>mi</b>no</i> (term) against <i>termi<b>nó</b></i> (he finished). Dropping the accent is not a small spelling slip: it changes the tense.' },
+    { h: 'The other accent: telling twins apart', html: 'A second job, unrelated to stress: the mark separates pairs of one-syllable words that would otherwise be identical. <i>él</i> (he) and <i>el</i> (the); <i>tú</i> (you) and <i>tu</i> (your); <i>sí</i> (yes) and <i>si</i> (if); <i>qué</i> (what, asking) and <i>que</i> (that). Same sound, different word, and in writing the accent is the only thing telling them apart.' }
   ],
   examples: [
-    { es: 'Hablo español todos los días.', en: 'I speak Spanish every day. — HA-blo, no accent, follows the rule' },
-    { es: 'Ayer habló con su madre.', en: 'Yesterday he spoke to his mother. — ha-BLÓ, breaks the rule, so it is marked' },
-    { es: 'Es difícil, pero no imposible.', en: 'It is difficult, but not impossible. — di-FÍ-cil is marked, im-po-SI-ble is not' },
-    { es: 'Tú tienes tu libro.', en: 'You have your book. — same sound, two different words' }
+    { es: 'Hablo español todos los días.', en: 'I speak Spanish every day. (HA-blo: no accent, it follows the rule)' },
+    { es: 'Ayer habló con su madre.', en: 'Yesterday he spoke to his mother. (ha-BLÓ: it breaks the rule, so it is marked)' },
+    { es: 'Es difícil, pero no imposible.', en: 'It is difficult, but not impossible. (di-FÍ-cil is marked, im-po-SI-ble is not)' },
+    { es: 'Tú tienes tu libro.', en: 'You have your book. (the same sound, two different words)' }
   ],
   probes: [
     { id: 'p:gr-acentuacion-a1-1', kind: 'mcq', q: 'A word ending in a vowel, -n or -s is normally stressed on which syllable?',
-      options: ['the second-to-last', 'the last', 'the first'], answer: 0 },
+      options: ['the second-to-last', 'the very last one', 'the first one of all'], answer: 0 },
     { id: 'p:gr-acentuacion-a1-2', kind: 'mcq', q: 'What does the written accent tell you?',
-      options: ['The stress is NOT where the rule would put it', 'The vowel is longer', 'The word is formal'], answer: 0 },
+      options: ['The stress breaks the usual rule', 'The vowel is held a little longer', 'The word belongs to formal speech'], answer: 0 },
     { id: 'p:gr-acentuacion-a1-3', kind: 'mcq', q: '"Hablo" and "habló" differ in what?',
-      options: ['Who did it, and when', 'Nothing — just spelling', 'Only formality'], answer: 0 },
+      options: ['Who did it, and when', 'Nothing but the spelling', 'How formal it sounds'], answer: 0 },
     { id: 'p:gr-acentuacion-a1-4', kind: 'cloze', text: '___ tienes ___ libro. (you have your book)', accept: ['Tú tu', 'tú tu'] },
     { id: 'p:gr-acentuacion-a1-5', kind: 'recall', front: 'Why does "habló" carry an accent?', back: 'it ends in a vowel but is stressed on the last syllable' }
   ]
@@ -2954,56 +2957,75 @@ window.STRAND_LESSONS = [
  * ------------------------------------------------------------------------ */
 {
   id: 'dlg-presentarse', strand: 'dialogue', cefr: 'A1', level: 1, theme: 'identidad',
-  title: 'Dos personas se conocen',
-  canDo: 'follow a first conversation between two people, and know what each line is doing',
-  summary: 'Before any grammar: a whole first meeting, start to finish. You are not expected to produce any of it yet — read it, hear the shape, and notice that almost every line is four words or fewer. Everything this unit teaches is somewhere in here.',
+  title: 'Hola, soy…',
+  canDo: 'say hello, give your name and where you are from, and ask someone the same',
+  moment: [
+    { es: 'Sam: Hola, buenos días.', en: 'Sam: Hello, good morning.' },
+    { es: 'Laura: Buenos días.', en: 'Laura: Good morning.' },
+    { es: 'Sam: ¿Tienes el azúcar, por favor?', en: 'Sam: Do you have the sugar, please?' },
+    { es: 'Laura: Sí, aquí tienes.', en: 'Laura: Yes, here you go.' },
+    { es: 'Sam: Gracias. Soy Sam. ¿Cómo te llamas?', en: "Sam: Thanks. I'm Sam. What's your name?" },
+    { es: 'Laura: Me llamo Laura. Mucho gusto.', en: 'Laura: My name is Laura. Nice to meet you.' },
+    { es: 'Sam: Mucho gusto. ¿De dónde eres?', en: 'Sam: Nice to meet you. Where are you from?' },
+    { es: 'Laura: Soy de aquí, de Bogotá. ¿Y tú?', en: "Laura: I'm from here, from Bogotá. And you?" },
+    { es: 'Sam: Soy de Canadá. Quiero aprender español.', en: "Sam: I'm from Canada. I want to learn Spanish." },
+    { es: 'Laura: ¡Qué bien! ¿Tienes WhatsApp?', en: 'Laura: Great! Do you have WhatsApp?' },
+    { es: 'Sam: Sí, claro.', en: 'Sam: Yes, of course.' },
+    { es: 'Laura: Perfecto. Yo quiero practicar inglés.', en: 'Laura: Perfect. I want to practise English.' }
+  ],
+  summary: 'Sam and Laura are waiting at the counter of a café in Bogotá. Twelve short lines take them from hello to swapping numbers, and every line is built from the same eleven chunks. Learn the chunks as whole pieces, the way you learnt "nice to meet you" in English. How soy, tienes and quiero work inside comes over the next few days.',
   keywords: [
     { es: 'hola', en: 'hello' },
     { es: 'buenos días', en: 'good morning' },
-    { es: '¿Cómo te llamas?', en: 'What\'s your name?' },
+    { es: 'Soy…', en: "I'm… (with your name)" },
     { es: 'Me llamo…', en: 'My name is…' },
-    { es: '¿Y tú?', en: 'And you?' },
+    { es: '¿Cómo te llamas?', en: "What's your name?" },
+    { es: 'Mucho gusto.', en: 'Nice to meet you.' },
+    { es: 'Soy de…', en: "I'm from…" },
     { es: '¿De dónde eres?', en: 'Where are you from?' },
-    { es: 'Soy de…', en: 'I\'m from…' },
-    { es: 'encantado / encantada', en: 'pleased to meet you (said by a man / by a woman)' },
-    { es: 'hasta luego', en: 'see you later' },
-    { es: 'adiós', en: 'goodbye' }
+    { es: '¿Y tú?', en: 'And you?' },
+    { es: 'Quiero…', en: 'I want…' },
+    { es: '¿Tienes…?', en: 'Do you have…?' },
+    { es: 'Aquí tienes.', en: 'Here you go.' }
   ],
   sections: [
-    { h: 'Read it first', html: 'Do not study this. Read it twice and move on. The point is to see what a real first conversation costs in Spanish — which is very little. You will come back to every line of it over the rest of this unit.' },
-    { h: 'What each speaker is doing', html: '<ul><li><i>Hola, buenos días</i> — opens the channel. Either word alone works.</li><li><i>¿Cómo te llamas?</i> — asks the name. Literally "what do you call yourself?"</li><li><i>Me llamo Ana</i> — gives it. Same verb, bounced back.</li><li><i>¿Y tú?</i> — two words that return any question. You will use this constantly.</li><li><i>¿De dónde eres?</i> — asks origin.</li><li><i>Encantado / encantada</i> — "pleased to meet you", and it changes ending depending on who is speaking.</li></ul>' },
-    { h: 'The one thing to notice', html: 'Nobody says <i>yo</i>. Spanish puts the person into the verb ending — <i>soy</i> already means "I am" — so the pronoun only appears for contrast. <i>Me llamo Ana</i>, not <i>Yo me llamo Ana</i>.' }
+    { h: 'The conversation, in Spanish only', html: 'You have read it once with the English beside it. Read it again here without the English, out loud if you can. Every line should now make sense on its own.<br><br><b>Sam:</b> <i>Hola, buenos días.</i><br><b>Laura:</b> <i>Buenos días.</i><br><b>Sam:</b> <i>¿Tienes el azúcar, por favor?</i><br><b>Laura:</b> <i>Sí, aquí tienes.</i><br><b>Sam:</b> <i>Gracias. Soy Sam. ¿Cómo te llamas?</i><br><b>Laura:</b> <i>Me llamo Laura. Mucho gusto.</i><br><b>Sam:</b> <i>Mucho gusto. ¿De dónde eres?</i><br><b>Laura:</b> <i>Soy de aquí, de Bogotá. ¿Y tú?</i><br><b>Sam:</b> <i>Soy de Canadá. Quiero aprender español.</i><br><b>Laura:</b> <i>¡Qué bien! ¿Tienes WhatsApp?</i><br><b>Sam:</b> <i>Sí, claro.</i><br><b>Laura:</b> <i>Perfecto. Yo quiero practicar inglés.</i>' },
+    { h: 'What each line does', html: '<ul><li><i>Hola, buenos días.</i> Opens the conversation. <i>Buenos días</i> works until about midday; <i>hola</i> works at any hour.</li><li><i>¿Tienes el azúcar, por favor?</i> Asks for something. <i>¿Tienes…?</i> plus the thing works for almost anything you need.</li><li><i>Sí, aquí tienes.</i> Hands it over: here you go.</li><li><i>Soy Sam.</i> Gives your name. <i>Me llamo Sam</i> does the same job, and both are always right.</li><li><i>¿Cómo te llamas?</i> Asks the other person for their name.</li><li><i>Mucho gusto.</i> Nice to meet you. Men and women say it the same way.</li><li><i>¿De dónde eres?</i> Asks where someone is from.</li><li><i>Soy de aquí, de Bogotá.</i> Says where you are from: <i>soy de</i> plus a city or a country.</li><li><i>¿Y tú?</i> Sends the same question back. Two words, and you will use them every day.</li><li><i>Quiero aprender español.</i> Says what you want: <i>quiero</i> plus a thing (<i>quiero un café</i>) or plus an action (<i>quiero aprender</i>).</li><li><i>¿Tienes WhatsApp?</i> The same <i>¿tienes…?</i> again, this time for a number.</li><li><i>¡Qué bien!</i>, <i>Sí, claro.</i>, <i>Perfecto.</i> Small reactions that keep a conversation warm: great, of course, perfect.</li><li><i>Yo quiero practicar inglés.</i> Laura says <i>yo</i> because she is setting herself against Sam: he wants Spanish, she wants English. With nothing to contrast, Spanish leaves <i>yo</i> out.</li></ul>' },
+    { h: 'Say it about yourself', html: 'Now your own three lines. Write them down with your own name and your own city or country, then say them out loud until they come without looking.<br><br><i>Hola, soy ___.</i><br><i>Soy de ___.</i><br><i>Quiero aprender español. ¿Y tú?</i><br><br>That is a complete introduction. Anyone you say it to will answer with the same chunks, and you now know all of them.' }
   ],
   exponents: [
-    { es: 'Hola, buenos días.', en: 'Hello, good morning.', register: 'neutral', note: 'safe at any hour before lunch' },
-    { es: '¿Cómo te llamas?', en: "What's your name?", register: 'coloquial', note: 'tú form — someone your age, informal' },
-    { es: 'Me llamo Ana. ¿Y tú?', en: "I'm Ana. And you?", register: 'neutral', note: 'the bounce-back is expected, not optional' },
-    { es: 'Soy de Irlanda. ¿De dónde eres?', en: "I'm from Ireland. Where are you from?", register: 'neutral', note: null },
-    { es: 'Encantado. / Encantada.', en: 'Pleased to meet you.', register: 'neutral', note: 'ends -o if you are male, -a if female' },
-    { es: 'Mucho gusto, Ana.', en: 'Nice to meet you, Ana.', register: 'formal', note: 'a shade more formal than encantado' }
+    { es: 'Hola, buenos días.', en: 'Hello, good morning.', register: 'neutral', note: 'with anyone, until about midday' },
+    { es: '¿Cómo te llamas?', en: "What's your name?", register: 'coloquial', note: 'with friends, or anyone your own age' },
+    { es: 'Me llamo Laura.', en: 'My name is Laura.', register: 'neutral', note: 'with anyone' },
+    { es: '¿De dónde eres?', en: 'Where are you from?', register: 'neutral', note: 'with anyone you call tú' },
+    { es: 'Soy de Bogotá.', en: "I'm from Bogotá.", register: 'neutral', note: 'with anyone' },
+    { es: 'Mucho gusto.', en: 'Nice to meet you.', register: 'neutral', note: 'with anyone, man or woman' },
+    { es: '¿Cómo se llama usted?', en: "What's your name?", register: 'formal', note: 'with someone older, or a stranger' },
+    { es: '¿De dónde es usted?', en: 'Where are you from?', register: 'formal', note: 'with someone older, or a stranger' },
+    { es: '¿Y usted?', en: 'And you?', register: 'formal', note: 'with someone older, or a stranger' }
   ],
   examples: [
-    { es: '—Hola, buenos días. —Buenos días.', en: '—Hello, good morning. —Good morning.' },
-    { es: '—¿Cómo te llamas? —Me llamo Ana. ¿Y tú?', en: "—What's your name? —I'm Ana. And you?" },
-    { es: '—Me llamo Tom. —Encantada, Tom.', en: "—I'm Tom. —Pleased to meet you, Tom." },
-    { es: '—¿De dónde eres, Tom? —Soy de Irlanda. ¿Y tú?', en: '—Where are you from, Tom? —I\'m from Ireland. And you?' },
-    { es: '—Soy de aquí, de Madrid. —¡Qué bien!', en: "—I'm from here, from Madrid. —How nice!" },
-    { es: '—Bueno, hasta luego. —Adiós, Tom.', en: '—Right, see you later. —Bye, Tom.' }
+    { es: 'Hola, buenas tardes. Me llamo Diego.', en: 'Hello, good afternoon. My name is Diego.' },
+    { es: 'Soy de Lima. ¿Y tú?', en: "I'm from Lima. And you?" },
+    { es: '¿Tienes una servilleta?', en: 'Do you have a napkin?' },
+    { es: 'Quiero un café con leche, por favor.', en: 'I want a coffee with milk, please.' },
+    { es: 'Mucho gusto, Diego. Soy Ana.', en: "Nice to meet you, Diego. I'm Ana." }
   ],
   probes: [
-    { id: 'p:dlg-presentarse-1', kind: 'mcq',
-      q: 'Which one means "my name is Ana"?',
-      options: ['Me llamo Ana.', 'Te llamas Ana.', 'Se llama Ana.'], answer: 0 },
-    { id: 'p:dlg-presentarse-2', kind: 'mcq',
-      q: 'Spanish usually leaves out "yo". Why?',
-      options: ['The verb ending already says who it is',
-                '"yo" is only used in writing',
-                '"yo" cannot go with a reflexive verb'], answer: 0 },
-    { id: 'p:dlg-presentarse-3', kind: 'cloze',
-      text: '—Me llamo Ana. ¿___ tú?', accept: ['y', 'Y'] },
-    { id: 'p:dlg-presentarse-4', kind: 'recall',
-      front: 'Two words that bounce any question back to the other person',
-      back: '¿Y tú?' }
+    { id: 'p:dlg-presentarse-nombre', kind: 'cloze',
+      text: '¿Cómo te ___? (What is your name?)', accept: ['llamas'] },
+    { id: 'p:dlg-presentarse-origen', kind: 'cloze',
+      text: 'Soy ___ Toronto. (I am from Toronto.)', accept: ['de'] },
+    { id: 'p:dlg-presentarse-tienes', kind: 'mcq',
+      q: 'You need the sugar from the person next to you. What do you say?',
+      options: ['¿Quieres el azúcar?', '¿Tienes el azúcar?', '¿Eres el azúcar?'], answer: 1 },
+    { id: 'p:dlg-presentarse-gusto', kind: 'cloze',
+      text: 'Me llamo Laura. Mucho ___. (Nice to meet you.)', accept: ['gusto'] },
+    { id: 'p:dlg-presentarse-ytu', kind: 'mcq',
+      q: 'You have just said where you are from. Which two words ask the other person the same?',
+      options: ['¿Y yo?', '¿Y él?', '¿Y tú?'], answer: 2 },
+    { id: 'p:dlg-presentarse-quiero', kind: 'cloze',
+      text: '___ aprender español. (I want to learn Spanish.)', accept: ['Quiero', 'quiero'] }
   ]
 },
 
@@ -3061,42 +3083,44 @@ window.STRAND_LESSONS = [
 {
   id: 'task-presentarse', strand: 'task', cefr: 'A1', level: 1, theme: 'identidad',
   title: 'Preséntate',
-  canDo: 'hold a whole first conversation on your own — greet, name, origin, thanks, goodbye',
-  summary: 'No new material. Everything you need is in the nine days behind you. Write both halves of a first meeting between you and someone you have just met, then say your half out loud.',
+  canDo: 'hold a whole first conversation on your own: greet, give names, say where you are from, thank, and say goodbye',
+  summary: 'No new material. Everything you need is in the days behind you. Write both halves of a first meeting between you and someone you have just met, one line per turn, then say your half out loud.',
   keywords: [
     { es: 'hola', en: 'hello' },
     { es: 'buenas tardes', en: 'good afternoon' },
+    { es: '¿Cómo te llamas?', en: "What's your name?" },
     { es: 'Me llamo…', en: 'My name is…' },
     { es: '¿Y tú?', en: 'And you?' },
-    { es: 'Encantado / Encantada.', en: 'Pleased to meet you.' },
+    { es: 'Mucho gusto.', en: 'Nice to meet you.' },
     { es: '¿De dónde eres?', en: 'Where are you from?' },
-    { es: 'Soy de…', en: 'I\'m from…' },
+    { es: 'Soy de…', en: "I'm from…" },
     { es: 'muchas gracias', en: 'thank you very much' },
-    { es: 'De nada.', en: 'You\'re welcome.' },
+    { es: 'De nada.', en: "You're welcome." },
     { es: 'Hasta luego.', en: 'See you later.' }
   ],
   sections: [
-    { h: 'What to write', html: 'Eight to twelve lines, both speakers. It must contain: a greeting, both names asked and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short — the model below says all of it in eleven lines and 46 words.' },
-    { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not memorisation — it is finding out which lines come out on their own and which ones you still have to look up.' },
-    { h: 'If you get stuck', html: 'Go back to <i>Dos personas se conocen</i> from day one. It contains every move this task asks for, and rereading it is not cheating.' }
+    { h: 'What to write', html: 'Eight to twelve lines, both speakers, one line per turn, each written as <b>Name:</b> line. It must contain a greeting, both names asked for and given, where each of you is from, one <i>gracias</i> with its reply, and a goodbye. Keep every line short: the model below says all of it in twelve lines.' },
+    { h: 'Then say it', html: 'Read your half aloud twice. The second time, cover the text. The aim is not to memorise it but to find out which lines come out on their own and which ones you still have to look up.' },
+    { h: 'If you get stuck', html: 'Go back to <i>Hola, soy…</i> from day one. Most of the moves this task asks for are in that conversation, and rereading it is not cheating.' }
   ],
   model: {
     title: 'one way of doing it',
-    text: '<p>—Hola, buenas tardes. <span class="muted">Hello, good afternoon.</span><br>—Buenas tardes. <span class="muted">Good afternoon.</span><br>—Me llamo Clara. ¿Y tú? <span class="muted">I\'m Clara. And you?</span><br>—Me llamo Yusuf. Encantado. <span class="muted">I\'m Yusuf. Pleased to meet you.</span><br>—Encantada, Yusuf. ¿De dónde eres? <span class="muted">Pleased to meet you, Yusuf. Where are you from?</span><br>—Soy de Turquía, de Esmirna. ¿Y tú? <span class="muted">I\'m from Turkey, from Izmir. And you?</span><br>—Soy de aquí, de Valencia. <span class="muted">I\'m from here, from Valencia.</span><br>—¡Qué bien! Toma, tu café. <span class="muted">How nice! Here you go, your coffee.</span><br>—Ah, muchas gracias. <span class="muted">Oh, thank you very much.</span><br>—De nada. Hasta luego, Yusuf. <span class="muted">You\'re welcome. See you later, Yusuf.</span><br>—Adiós, Clara. <span class="muted">Goodbye, Clara.</span></p>'
+    text: '<p>Clara: Hola, buenas tardes. <span class="muted">Hello, good afternoon.</span><br>Yusuf: Buenas tardes. <span class="muted">Good afternoon.</span><br>Clara: Me llamo Clara. ¿Y tú? <span class="muted">My name is Clara. And you?</span><br>Yusuf: Me llamo Yusuf. Mucho gusto. <span class="muted">My name is Yusuf. Nice to meet you.</span><br>Clara: Mucho gusto, Yusuf. ¿De dónde eres? <span class="muted">Nice to meet you, Yusuf. Where are you from?</span><br>Yusuf: Soy de Turquía, de Esmirna. ¿Y tú? <span class="muted">I\'m from Turkey, from Izmir. And you?</span><br>Clara: Soy de aquí, de Medellín. <span class="muted">I\'m from here, from Medellín.</span><br>Yusuf: ¡Qué bien! <span class="muted">How nice!</span><br>Clara: Aquí tienes tu café. <span class="muted">Here you go, your coffee.</span><br>Yusuf: Ah, muchas gracias. <span class="muted">Oh, thank you very much.</span><br>Clara: De nada. Hasta luego, Yusuf. <span class="muted">You\'re welcome. See you later, Yusuf.</span><br>Yusuf: Adiós, Clara. <span class="muted">Goodbye, Clara.</span></p>'
   },
   checklist: [
-    'Both people are greeted — not just one.',
+    'Both people are greeted, not just one.',
     'Both names are asked for AND given.',
-    'Both origins appear, with <i>ser de</i> or a nationality.',
+    'Both origins appear, with <i>soy de</i> or a nationality.',
     'There is one <i>gracias</i> and a reply to it.',
-    'It ends — somebody says goodbye.',
+    'It ends: somebody says goodbye.',
     'No line is longer than eight words.',
     'You wrote <i>me llamo</i>, not <i>yo me llamo</i>.'
   ],
   examples: [
-    { es: '—¿Cómo te llamas? —Me llamo Yusuf. Encantado.', en: "—What's your name? —I'm Yusuf. Pleased to meet you." },
-    { es: '—¿De dónde eres? —Soy de Turquía. ¿Y tú?', en: "—Where are you from? —I'm from Turkey. And you?" },
-    { es: '—Muchas gracias. —De nada. Hasta luego.', en: '—Thank you very much. —You\'re welcome. See you later.' }
+    { es: 'Yusuf: Me llamo Yusuf. Mucho gusto.', en: 'Yusuf: My name is Yusuf. Nice to meet you.' },
+    { es: 'Clara: ¿De dónde eres?', en: 'Clara: Where are you from?' },
+    { es: 'Yusuf: Soy de Turquía. ¿Y tú?', en: "Yusuf: I'm from Turkey. And you?" },
+    { es: 'Clara: De nada. Hasta luego.', en: "Clara: You're welcome. See you later." }
   ],
   probes: [
     { id: 'p:task-presentarse-1', kind: 'mcq',
@@ -3104,9 +3128,9 @@ window.STRAND_LESSONS = [
       options: ['Encantada.', 'Encantado.', 'Encantas.'], answer: 0 },
     { id: 'p:task-presentarse-2', kind: 'mcq',
       q: 'Which of these would NOT come up when two people first meet?',
-      options: ['¿Cómo te llamas?', '¿De dónde eres?', '¿Cuánto cuesta tu casa?'], answer: 2 },
+      options: ['¿Cómo te llamas, perdón?', '¿De dónde eres?', '¿Cuánto cuesta tu casa?'], answer: 2 },
     { id: 'p:task-presentarse-3', kind: 'cloze',
-      text: '—Muchas gracias. —De ___.', accept: ['nada'] },
+      text: 'De ___. (the reply to muchas gracias)', accept: ['nada'] },
     { id: 'p:task-presentarse-4', kind: 'recall',
       front: 'How a woman says "pleased to meet you"',
       back: 'Encantada' }
@@ -7748,38 +7772,38 @@ window.STRAND_LESSONS = [
   pcic: ['nociones_generales:A1:115', 'nociones_generales:A1:116', 'nociones_generales:A1:117'],
   title: 'Origen: ser + nacionalidad, ser de',
   canDo: 'say where you are from, and ask someone else',
-  moment: [{ es: '—¿De dónde eres?', en: '—Where are you from?' },
-           { es: '—Soy de Irlanda. ¿Y tú?', en: "—I'm from Ireland. And you?" }],
-  summary: 'Two constructions cover where someone is from — ser + a nationality adjective states it as a quality, ser de + place states it as a source — and only the second one works for a city with no adjective of its own.',
+  moment: [{ es: 'Ana: ¿De dónde eres?', en: 'Ana: Where are you from?' },
+           { es: 'Tom: Soy de Irlanda. ¿Y tú?', en: "Tom: I'm from Ireland. And you?" }],
+  summary: 'Two constructions cover where someone is from. Ser + a nationality adjective states it as a quality; ser de + a place names the place itself, and that one works for any city or country, even when you do not know the adjective.',
   keywords: [
     { es: '¿De dónde eres?', en: 'Where are you from?' },
     { es: 'Soy de…', en: 'I\'m from…' },
     { es: 'ser de', en: 'to be from (a place)' },
     { es: 'cubano / cubana', en: 'Cuban (man / woman)' },
     { es: 'mexicano / mexicana', en: 'Mexican' },
-    { es: 'español / española', en: 'Spanish' },
     { es: 'el país', en: 'the country' },
     { es: 'la ciudad', en: 'the city' },
     { es: 'el pueblo', en: 'the town, village' }
   ],
   sections: [
-    { h: 'Ser + nationality adjective', html: '<i>Es cubano</i> — He is Cuban. The nationality behaves like any other describing word, so it changes with the person: <i>es cubana</i> (she is Cuban), <i>son cubanos</i> (they are Cuban). And it is written in lower case, unlike English.' },
-    { h: 'Ser de + place', html: '<i>Soy de Sevilla</i> — I\'m from Seville. This states the source directly. This is the only option for places with no adjective form — nobody says <i>*es sevillano</i> as reliably as they say <i>es de Sevilla</i>, and it always works, city or country alike.' },
-    { h: 'Asking', html: '<i>¿De dónde eres?</i> — Where are you from? It is the standard question, and the answer is either of the two shapes above. <i>Dónde</i> carries an accent whenever it is doing the asking.' }
+    { h: 'Ser + nationality adjective', html: '<i>Es cubano</i>: he is Cuban. The nationality behaves like any other describing word, so it changes with the person: <i>es cubana</i> (she is Cuban), <i>son cubanos</i> (they are Cuban). And it is written in lower case, unlike English.' },
+    { h: 'Ser de + place', html: '<i>Soy de Cali</i>: I\'m from Cali. This names the place directly, and it always works, city or country, including every place whose adjective you do not know. <i>Es de Cali</i> is as good as <i>es caleño</i>, and easier.' },
+    { h: 'Asking', html: '<i>¿De dónde eres?</i>: where are you from? It is the standard question, and the answer is either of the two shapes above. <i>Dónde</i> carries an accent whenever it is doing the asking.' }
   ],
   exponents: [
     { es: 'Luis Alberto es cubano.', en: 'Luis Alberto is Cuban.', register: 'neutral', note: 'nationality as an adjective' },
-    { es: 'Soy de Sevilla.', en: "I'm from Seville.", register: 'neutral', note: 'ser de + place — works for any place, adjective or not' },
-    { es: '—¿De dónde eres? —Soy de Perú.', en: "—Where are you from? —I'm from Peru.", register: 'neutral' }
+    { es: 'Soy de Cali.', en: "I'm from Cali.", register: 'neutral', note: 'ser de + place, which works for any place' },
+    { es: '¿De dónde eres?', en: 'Where are you from?', register: 'neutral', note: 'the standard question, to anyone you call tú' },
+    { es: 'Soy de Perú.', en: "I'm from Peru.", register: 'neutral' }
   ],
   contrasts: [
-    { es: 'Es cubano.', en: 'He is Cuban.', note: 'nationality adjective — agrees like any other adjective' },
-    { es: 'Es de La Habana.', en: "He's from Havana.", note: 'ser de — the only option for a city, which has no adjective form in ordinary speech' }
+    { es: 'Es cubano.', en: 'He is Cuban.', note: 'nationality adjective, which agrees like any other adjective' },
+    { es: 'Es de La Habana.', en: "He's from Havana.", note: 'ser de, which works for any city with or without an adjective' }
   ],
   pitfalls: [
     'Nationality adjectives are NOT capitalized in Spanish, unlike English: <i>es cubano</i>, not <i>*es Cubano</i>.',
     'A nationality adjective must agree in gender with the person: <i>es cubana</i> for a woman.',
-    '<i>Ser de</i> + place always works, even where no adjective exists — reach for it whenever you are unsure.'
+    '<i>Ser de</i> + place always works, even where no adjective exists, so reach for it whenever you are unsure.'
   ],
   examples: [
     { es: 'Mi profesora es mexicana.', en: 'My teacher (f) is Mexican.' },
@@ -7788,7 +7812,7 @@ window.STRAND_LESSONS = [
   ],
   probes: [
     { id: 'p:origen:mayuscula', kind: 'mcq', q: 'How are nationality words written in Spanish?',
-      options: ['lowercase — es cubano', 'with a capital — es Cubano', 'either way is fine'], answer: 0 },
+      options: ['lowercase: es cubano', 'with a capital: es Cubano', 'either way is fine'], answer: 0 },
     { id: 'p:origen:agree', kind: 'mcq', q: '"Mi profesora es ___." (Mexican, feminine)',
       options: ['mexicano', 'mexicana', 'mexicanos'], answer: 1 },
     { id: 'p:origen:cloze', kind: 'cloze', text: '¿De ___ eres?', accept: ['dónde'] },
@@ -8065,32 +8089,31 @@ window.STRAND_LESSONS = [
   id: 'nt-edad-vejez-a1', strand: 'notion', cefr: 'A1', level: 1, theme: null,
   pcic: ['nociones_generales:A1:236', 'nociones_generales:A1:237', 'nociones_generales:A1:238', 'nociones_generales:A1:239'],
   title: 'Edad: tener + años',
-  summary: 'The other half of an introduction is how old you are — and Spanish says you HAVE your years rather than being them.',
+  summary: 'The other half of an introduction is how old you are, and Spanish says you HAVE your years rather than being them.',
   keywords: [
     { es: '¿Cuántos años tienes?', en: 'How old are you?' },
     { es: 'Tengo veinte años.', en: 'I\'m twenty.' },
     { es: 'tener', en: 'to have' },
     { es: 'el año', en: 'the year' },
     { es: 'viejo', en: 'old (of a thing)' },
-    { es: 'nuevo', en: 'new' },
     { es: 'mayor', en: 'older, elderly (the polite word for a person)' },
-    { es: 'el niño', en: 'the child' },
     { es: 'el chico', en: 'the boy, young person' },
     { es: 'el señor', en: 'the gentleman, sir' }
   ],
   sections: [
-    { h: 'Tener, not ser', html: '<i>—¿Cuántos años tienes? —Tengo veinte años.</i> — How old are you? — I\'m twenty. Age uses <i>tener</i> (to have), so the English "I am twenty" does not carry over: <i>*Soy veinte años</i> is not something a Spanish speaker says. It is worth getting right early, because it comes up in every introduction.' },
-    { h: 'Nuevo and viejo', html: '<i>Nuevo/viejo</i> (new/old) apply to things straightforwardly; used of people they can sound blunt, so <i>mayor</i> ("older," softer) is often preferred in polite reference to age.' },
-    { h: 'Age-linked words for a person', html: '<i>Niño</i> (child), <i>chico</i> (young person/boy), <i>señor</i> (an older man, or simply a polite "sir/gentleman") sketch roughly where someone sits on the age scale without a number.' }
+    { h: 'Tener, not ser', html: '<i>¿Cuántos años tienes?</i> How old are you? <i>Tengo veinte años.</i> I\'m twenty. Age uses <i>tener</i> (to have), so the English "I am twenty" does not carry over: <i>*Soy veinte años</i> is not something a Spanish speaker says. It is worth getting right early, because it comes up in every introduction.' },
+    { h: 'Viejo and mayor', html: '<i>Viejo</i> (old) is fine for things: <i>un carro viejo</i>. Said of a person it can sound blunt, so <i>mayor</i> (older, elderly) is the softer word when you are talking about someone\'s age.' },
+    { h: 'Age without a number', html: '<i>Chico</i> (a young person, a boy) and <i>señor</i> (an older man, or simply a polite "sir") place someone roughly on the age scale without giving a number.' }
   ],
   exponents: [
-    { es: '—¿Cuántos años tienes? —Tengo veinte años.', en: "—How old are you? —I'm twenty.", register: 'neutral', note: 'tener, not ser' },
-    { es: 'Es un edificio muy viejo.', en: "It's a very old building.", register: 'neutral', note: 'viejo applied to a thing, no issue' },
-    { es: 'Mi abuelo ya es mayor.', en: "My grandfather is elderly now.", register: 'neutral', note: 'mayor — softer than viejo when talking about a person' },
+    { es: '¿Cuántos años tienes?', en: 'How old are you?', register: 'coloquial', note: 'to anyone you call tú; tener, not ser' },
+    { es: 'Tengo veinte años.', en: "I'm twenty.", register: 'neutral', note: 'the years are something you have' },
+    { es: 'Es un edificio muy viejo.', en: "It's a very old building.", register: 'neutral', note: 'viejo for a thing, no problem' },
+    { es: 'Mi abuelo ya es mayor.', en: 'My grandfather is elderly now.', register: 'neutral', note: 'mayor, softer than viejo when you mean a person' },
     { es: 'Es un señor muy amable.', en: "He's a very kind gentleman.", register: 'neutral' }
   ],
   contrasts: [
-    { es: 'Tengo veinte años.', en: "I'm twenty.", note: 'correct — tener' },
+    { es: 'Tengo veinte años.', en: "I'm twenty.", note: 'correct: tener' },
     { es: '*Soy veinte años.', en: '(impossible)', note: 'ser is never used for age' }
   ],
   pitfalls: [
@@ -8098,16 +8121,16 @@ window.STRAND_LESSONS = [
   ],
   examples: [
     { es: 'Mi hija tiene cinco años.', en: 'My daughter is five.' },
-    { es: 'Este coche es muy viejo, tiene veinte años.', en: "This car is very old, it's twenty years old." },
-    { es: 'Los niños de esa clase tienen siete u ocho años.', en: 'The children in that class are seven or eight.' }
+    { es: 'Este carro es muy viejo: tiene veinte años.', en: "This car is very old: it's twenty years old." },
+    { es: 'El señor de la tienda ya es mayor.', en: 'The gentleman at the shop is elderly now.' }
   ],
   probes: [
-    { id: 'p:edad:verbo', kind: 'mcq', q: '"I am twenty" — Spanish says you HAVE the years. Which one?',
+    { id: 'p:edad:verbo', kind: 'mcq', q: '"I am twenty": Spanish says you HAVE the years. Which one?',
       options: ['Soy veinte años.', 'Tengo veinte años.', 'Estoy veinte años.'], answer: 1 },
     { id: 'p:edad:mayor', kind: 'mcq', q: 'The polite word for someone advanced in years:',
       options: ['viejo', 'mayor', 'antiguo'], answer: 1 },
     { id: 'p:edad:cloze', kind: 'cloze', text: 'Mi hija ___ cinco años.', accept: ['tiene'] },
-    { id: 'p:edad:recall', kind: 'recall', front: 'Which verb does Spanish use for age — ser or tener?', back: 'tener' }
+    { id: 'p:edad:recall', kind: 'recall', front: 'Which verb does Spanish use for age, ser or tener?', back: 'tener' }
   ]
 },
 
@@ -12085,40 +12108,38 @@ window.STRAND_LESSONS = [
     { es: '¿Qué es esto?', en: 'What\'s this? (near me)' },
     { es: '¿Qué es eso?', en: 'What\'s that? (near you)' },
     { es: 'Es…', en: 'It\'s…' },
-    { es: 'el móvil', en: 'the mobile phone' },
+    { es: 'el celular', en: 'the mobile phone' },
     { es: 'el diccionario', en: 'the dictionary' },
-    { es: 'el bolígrafo', en: 'the pen' },
-    { es: 'el mapa', en: 'the map' },
-    { es: 'el pasaporte', en: 'the passport' },
     { es: 'Perdone', en: 'Excuse me (to someone you address as usted)' },
     { es: '¿Sabe usted…?', en: 'Do you know…?' }
   ],
   sections: [
-    { h: 'Ask it, answer it', html: '<i>¿Qué es esto?</i> — What\'s this? (near you)<br><i>¿Qué es eso?</i> — What\'s that? (near the person you are talking to)<br><i>Es mi móvil.</i> — It\'s my phone.<br><i>Es un diccionario de español.</i> — It\'s a Spanish dictionary.<br>The question uses <i>esto/eso</i> because a thing you cannot name has no gender to agree with yet. Once it is named, the pointing word takes the gender of the noun: <i>este diccionario</i> (this dictionary), not <i>*esto diccionario</i>.' },
-    { h: 'Asking a stranger', html: 'Among friends you point and ask. With someone you do not know, soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> — Excuse me, do you know what this is? <i>Perdone</i> and <i>usted</i> (the polite "you") do the work; a later unit covers choosing between <i>tú</i> and <i>usted</i>.' }
+    { h: 'Ask it, answer it', html: '<i>¿Qué es esto?</i> What\'s this? (near you)<br><i>¿Qué es eso?</i> What\'s that? (near the person you are talking to)<br><i>Es mi celular.</i> It\'s my phone.<br><i>Es un diccionario de español.</i> It\'s a Spanish dictionary.<br>The question uses <i>esto/eso</i> because a thing you cannot name has no gender to agree with yet. Once it is named, the pointing word takes the gender of the noun: <i>este diccionario</i> (this dictionary), not <i>*esto diccionario</i>.' },
+    { h: 'Asking a stranger', html: 'Among friends you point and ask. With someone you do not know, soften it first: <i>Perdone, ¿sabe usted qué es esto?</i> Excuse me, do you know what this is? <i>Perdone</i> and <i>usted</i> (the polite "you") do the work; a later unit covers choosing between <i>tú</i> and <i>usted</i>.' }
   ],
   exponents: [
     { es: '¿Qué es esto?', en: "What's this?", register: 'coloquial', note: 'casual, said while pointing, among friends or family' },
-    { es: 'Perdone, ¿sabe usted qué es esto?', en: 'Excuse me, do you know what this is?', register: 'formal', note: 'usted — asking a stranger politely' },
-    { es: 'Es mi móvil.', en: "It's my phone.", register: 'neutral' },
+    { es: 'Perdone, ¿sabe usted qué es esto?', en: 'Excuse me, do you know what this is?', register: 'formal', note: 'usted, for asking a stranger politely' },
+    { es: 'Es mi celular.', en: "It's my phone.", register: 'neutral' },
     { es: 'Es un diccionario de español.', en: "It's a Spanish dictionary.", register: 'neutral' }
   ],
   pitfalls: [
-    'Use the neuter <i>esto/eso</i>, never <i>este/esta</i>, while you still do not know what the thing is — once it is named, agree the gender normally: <i>esto</i> → <i>este diccionario</i>.',
+    'Use the neuter <i>esto/eso</i>, never <i>este/esta</i>, while you still do not know what the thing is. Once it is named, the gender agrees as usual: <i>esto</i>, then <i>este diccionario</i>.',
     'The answer names the thing with its article, like any other noun: <i>Es un diccionario</i>, not <i>*Es diccionario</i>.'
   ],
   examples: [
-    { es: '—¿Qué es esto? —Es un bolígrafo.', en: "—What's this? —It's a pen." },
-    { es: '—Perdone, ¿sabe usted qué es eso? —Es un mapa de la ciudad.', en: '—Excuse me, do you know what that is? —It\'s a map of the city.' },
-    { es: '—¿Qué es eso que tienes ahí? —Es mi pasaporte.', en: "—What's that you've got there? —It's my passport." }
+    { es: 'Ana: ¿Qué es esto?', en: "Ana: What's this?" },
+    { es: 'Luis: Es un diccionario de español.', en: "Luis: It's a Spanish dictionary." },
+    { es: 'Perdone, ¿sabe usted qué es eso?', en: 'Excuse me, do you know what that is?' },
+    { es: 'Es mi celular nuevo.', en: "It's my new phone." }
   ],
   probes: [
     { id: 'p:cosa:neutro', kind: 'mcq', q: 'You point at something without naming it. What do you ask?',
       options: ['¿Qué es este?', '¿Qué es esto?', '¿Qué es esta?'], answer: 1 },
     { id: 'p:cosa:registro', kind: 'mcq', q: 'Asking a stranger politely what something is:',
-      options: ['¿Qué es esto?', 'Perdone, ¿sabe usted qué es esto?', 'Oye, ¿qué es esto?'], answer: 1 },
-    { id: 'p:cosa:cloze', kind: 'cloze', text: '—¿Qué es esto? —___ mi móvil.', accept: ['Es', 'es'] },
-    { id: 'p:cosa:recall', kind: 'recall', front: 'Why esto/eso and not este/ese when asking what something is?', back: 'the thing has no name yet, so it has no gender to agree with — the neuter is used until it is identified' }
+      options: ['Oye, ¿y esto qué es, eh?', 'Perdone, ¿qué es esto?', '¿Qué es esto, amigo?'], answer: 1 },
+    { id: 'p:cosa:cloze', kind: 'cloze', text: '___ mi celular. (It is my phone.)', accept: ['Es', 'es'] },
+    { id: 'p:cosa:recall', kind: 'recall', front: 'Why esto/eso and not este/ese when asking what something is?', back: 'the thing has no name yet, so it has no gender to agree with; the neuter is used until it is identified' }
   ]
 },
 
@@ -38054,6 +38075,78 @@ window.STRAND_LESSONS = [
     { id: 'p:presirr:contraste', kind: 'mcq', q: 'In quiero/quieres/queremos, which two forms keep the vowel unchanged?',
       options: ['yo and tú', 'nosotros and vosotros', 'él and ellos'], answer: 1 },
     { id: 'p:presirr:jugar', kind: 'cloze', text: 'Los domingos yo ___ al tenis. (jugar)', accept: ['juego'] }
+  ]
+},
+
+/* ---- Week 1 · the head start an English speaker already has ----------------
+ * Day 2 of the course, straight after the first conversation and before any
+ * verb. Evidence base principle 18: about a third of everyday English and three
+ * quarters of academic English have Spanish cognates, and nine in ten of the
+ * Latin-based ones are true. Seven endings, thirty words to read at sight, the
+ * stress and spelling shifts, and ten false friends. The keyword rows are all
+ * cognates, so the six that enrol into review are words, not a semantic set.
+ * ------------------------------------------------------------------------- */
+{
+  id: 'gr-cognados-a1', strand: 'grammar', cefr: 'A1', level: 1, theme: null,
+  deeper: ['gr-sonidos-a1'],
+  title: 'You already know thousands of words',
+  canDo: 'read thousands of Spanish words at sight, and turn an English word into Spanish by its ending',
+  moment: [
+    { es: 'Laura: El restaurante es fantástico, y el café es delicioso.', en: 'Laura: The restaurant is fantastic, and the coffee is delicious.' },
+    { es: 'Sam: Es verdad. Y es muy popular.', en: "Sam: That's true. And it's very popular." }
+  ],
+  summary: 'Most long English words came into English from Latin, and Spanish kept the same words. Seven endings convert by rule, so a Spanish word you have never seen is often one you already know: information is información, university is universidad, normally is normalmente. Learn the seven and a page of Spanish stops being a wall.',
+  keywords: [
+    { es: 'la información', en: 'the information' },
+    { es: 'la universidad', en: 'the university' },
+    { es: 'normalmente', en: 'normally, usually' },
+    { es: 'famoso', en: 'famous' },
+    { es: 'público', en: 'public' },
+    { es: 'importante', en: 'important' },
+    { es: 'la conversación', en: 'the conversation' },
+    { es: 'la ciudad', en: 'the city' },
+    { es: 'realmente', en: 'really' },
+    { es: 'delicioso', en: 'delicious' },
+    { es: 'natural', en: 'natural' },
+    { es: 'diferente', en: 'different' }
+  ],
+  sections: [
+    { h: 'Seven endings, thirty words you can already read', html: 'Each line is one rule. Read the Spanish first and let the English arrive on its own.<ul><li><b>-tion</b> becomes <b>-ción</b>: <i>nación</i>, <i>información</i>, <i>conversación</i>, <i>situación</i>, <i>educación</i></li><li><b>-ty</b> becomes <b>-dad</b>: <i>universidad</i>, <i>ciudad</i>, <i>realidad</i>, <i>posibilidad</i>, <i>actividad</i></li><li><b>-ly</b> becomes <b>-mente</b>: <i>normalmente</i>, <i>realmente</i>, <i>exactamente</i>, <i>finalmente</i></li><li><b>-ous</b> becomes <b>-oso</b>: <i>famoso</i>, <i>delicioso</i>, <i>nervioso</i>, <i>curioso</i></li><li><b>-ic</b> becomes <b>-ico</b>: <i>público</i>, <i>fantástico</i>, <i>eléctrico</i>, <i>romántico</i></li><li><b>-al</b> stays <b>-al</b>: <i>normal</i>, <i>natural</i>, <i>personal</i>, <i>hospital</i></li><li><b>-ant</b> and <b>-ent</b> become <b>-ante</b> and <b>-ente</b>: <i>importante</i>, <i>restaurante</i>, <i>diferente</i>, <i>inteligente</i></li></ul>That is thirty, and there are thousands more built the same way.' },
+    { h: 'The stress and the spelling move', html: 'The ending converts; the English sound does not come with it. Spanish puts the stress where its own rules say, so <i>universidad</i> is stressed at the very end, u-ni-ver-si-DAD, and <i>nación</i> is na-CIÓN. Every <b>-ción</b> word carries that written accent, and every <b>-dad</b> word is stressed on its last syllable. The spelling follows Spanish sounds too: <b>ph</b> is written <b>f</b> (<i>fotografía</i>), <b>th</b> is written <b>t</b> (<i>teatro</i>), double letters mostly go single (<i>posible</i>, <i>comunicación</i>), and a word that starts with <b>s</b> plus a consonant gets an <b>e</b> in front (<i>estudiante</i>, <i>especial</i>, <i>estación</i>).' },
+    { h: 'Ten false friends', html: 'A few words look like English and mean something else. These ten catch almost everybody, so the table below gives each one with what it really means. Read it once now; you will meet most of them within a few months.' }
+  ],
+  contrasts: [
+    { es: 'embarazada', en: 'pregnant', note: 'not embarrassed, which is <i>me da vergüenza</i>' },
+    { es: 'el éxito', en: 'success', note: 'not exit, which is <i>la salida</i>' },
+    { es: 'actual', en: 'current, of today', note: 'not actual; for that say <i>real</i>' },
+    { es: 'realizar', en: 'to carry out, to do', note: 'not to realise; for that say <i>darse cuenta</i>' },
+    { es: 'asistir', en: 'to attend', note: 'not to assist; for that say <i>ayudar</i>' },
+    { es: 'la librería', en: 'the bookshop', note: 'not the library, which is <i>la biblioteca</i>' },
+    { es: 'la carpeta', en: 'the folder', note: 'not the carpet, which is <i>la alfombra</i>' },
+    { es: 'constipado', en: 'with a cold, blocked up', note: 'not constipated, which is <i>estreñido</i>; for a cold most people say <i>resfriado</i>' },
+    { es: 'sensible', en: 'sensitive', note: 'not sensible, which is <i>sensato</i>' },
+    { es: 'molestar', en: 'to bother, to annoy', note: 'nothing stronger than that: <i>¿Te molesta?</i> is "does it bother you?"' }
+  ],
+  pitfalls: [
+    'The rule gives you the word, not its gender. Words ending in <i>-ción</i> and <i>-dad</i> are feminine: <i>la nación</i>, <i>la ciudad</i>. Learn the <i>la</i> with them.',
+    'A cognate still sounds Spanish: <i>hospital</i> has a silent <b>h</b> and its stress on the last syllable, os-pi-TAL.'
+  ],
+  examples: [
+    { es: 'La información es importante.', en: 'The information is important.' },
+    { es: 'Es una situación normal.', en: 'It is a normal situation.' },
+    { es: 'El restaurante es fantástico y el café es delicioso.', en: 'The restaurant is fantastic and the coffee is delicious.' },
+    { es: 'Normalmente la universidad es muy tranquila.', en: 'The university is normally very quiet.' },
+    { es: 'Realmente es diferente.', en: 'It really is different.' }
+  ],
+  probes: [
+    { id: 'p:cognados-cion', kind: 'cloze', text: 'la ___ (the conversation)', accept: ['conversación'] },
+    { id: 'p:cognados-dad', kind: 'cloze', text: 'la ___ (the university)', accept: ['universidad'] },
+    { id: 'p:cognados-mente', kind: 'cloze', text: 'Es ___ diferente. (It is really different.)', accept: ['realmente'] },
+    { id: 'p:cognados-oso', kind: 'cloze', text: 'un actor ___ (a famous actor)', accept: ['famoso'] },
+    { id: 'p:cognados-ico', kind: 'cloze', text: 'un lugar ___ (a public place)', accept: ['público'] },
+    { id: 'p:cognados-falso', kind: 'mcq',
+      q: 'Your friend says "Estoy embarazada." What is her news?',
+      options: ['She is embarrassed', 'She is pregnant', 'She is very tired'], answer: 1 }
   ]
 }
 

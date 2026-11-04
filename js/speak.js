@@ -40,8 +40,9 @@ window.Speak = (function () {
       var exact = list.filter(function (v) { return v.name === want; })[0];
       if (exact) return exact;
     }
-    // es-ES first: the course's own content (vosotros, distinción) is peninsular
-    return list.filter(function (v) { return /^es-ES/i.test(v.lang); })[0] || list[0];
+    // Latin American voices first: the course is neutral Latin American Spanish
+    return list.filter(function (v) { return /^es-(CO|MX|US|419)/i.test(v.lang); })[0] ||
+           list.filter(function (v) { return /^es-/i.test(v.lang) && !/^es-ES/i.test(v.lang); })[0] || list[0];
   }
 
   /* Strip what should not be read aloud. Lesson strings carry markup and

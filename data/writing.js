@@ -4854,9 +4854,20 @@ window.WRITING_TASKS = [
       { type: 'minSentences', n: 8 },
       { type: 'minWords', n: 180 }
     ],
-    models: ['De entrada, el callejero no es un archivo. Un archivo conserva y una calle nombra, y nombrar es una decisión que se toma en presente, aunque el nombre venga de hace ochenta años. Quien defiende mantenerlo todo suele apoyarse en que borrar nombres es borrar historia, y el argumento sería sólido si las placas fueran documentos. Ahora bien, ningún historiador ha perdido nunca una fuente porque una calle cambiara de rótulo, y las que se cambiaron en la Transición no han dejado hueco en ningún libro. Si bien el riesgo de convertir el callejero en un plebiscito permanente es real, y conviene decirlo, se resuelve con un procedimiento y no con una prohibición. Por lo que respecta al criterio, el que menos conflicto ha generado no es el ideológico sino el biográfico, porque se revisa el nombre cuando la persona participó en hechos que hoy son delito y no cuando sostuvo ideas que hoy desagradan. A ello hay que sumar un detalle práctico que rara vez se menciona, y es que el coste del cambio recae sobre los vecinos, en documentación y en tiempo, lo que obliga a cambiar poco y a explicarlo bien. Habida cuenta de que ninguna lista contentará a todos, el procedimiento importa más que el resultado. En suma, la pregunta no es a quién se retira, sino quién decide y con qué regla escrita de antemano.'] }
-
-
-
-
+    models: ['De entrada, el callejero no es un archivo. Un archivo conserva y una calle nombra, y nombrar es una decisión que se toma en presente, aunque el nombre venga de hace ochenta años. Quien defiende mantenerlo todo suele apoyarse en que borrar nombres es borrar historia, y el argumento sería sólido si las placas fueran documentos. Ahora bien, ningún historiador ha perdido nunca una fuente porque una calle cambiara de rótulo, y las que se cambiaron en la Transición no han dejado hueco en ningún libro. Si bien el riesgo de convertir el callejero en un plebiscito permanente es real, y conviene decirlo, se resuelve con un procedimiento y no con una prohibición. Por lo que respecta al criterio, el que menos conflicto ha generado no es el ideológico sino el biográfico, porque se revisa el nombre cuando la persona participó en hechos que hoy son delito y no cuando sostuvo ideas que hoy desagradan. A ello hay que sumar un detalle práctico que rara vez se menciona, y es que el coste del cambio recae sobre los vecinos, en documentación y en tiempo, lo que obliga a cambiar poco y a explicarlo bien. Habida cuenta de que ninguna lista contentará a todos, el procedimiento importa más que el resultado. En suma, la pregunta no es a quién se retira, sino quién decide y con qué regla escrita de antemano.'] },
+  { id: 'w-iden-primer-encuentro', type: 'write', level: 1, theme: 'identidad',
+    prompt: 'Write a first meeting at a café counter between you and one other person, one line per turn as Name: line. Greet, ask for and give both names, say where you are both from, thank, and say goodbye.',
+    hint: 'Eight to twelve short lines. Everything you need is in Hola, soy… from day one.',
+    constraints: [
+      { type: 'containsAny', words: ['hola', 'buenos días', 'buenas tardes', 'buenas noches'], label: 'a greeting' },
+      { type: 'containsAny', words: ['cómo te llamas', 'cómo se llama'], label: 'ask a name: ¿cómo te llamas?' },
+      { type: 'containsAny', words: ['me llamo', 'soy'], label: 'give a name: me llamo… or soy…' },
+      { type: 'containsWord', word: 'soy de', label: 'say where someone is from: soy de…' },
+      { type: 'containsAny', words: ['y tú', 'y usted'], label: 'send a question back: ¿y tú?' },
+      { type: 'containsWord', word: 'gracias', label: 'thank someone: gracias' },
+      { type: 'containsAny', words: ['de nada', 'con gusto', 'a ti'], label: 'answer the thanks: de nada' },
+      { type: 'containsAny', words: ['hasta luego', 'adiós', 'chao', 'nos vemos', 'hasta pronto'], label: 'say goodbye' },
+      { type: 'minWords', n: 30 }
+    ],
+    models: ['Ana: Hola, buenas tardes.<br>Tomás: Hola. ¿Cómo te llamas?<br>Ana: Me llamo Ana. ¿Y tú?<br>Tomás: Soy Tomás. Mucho gusto.<br>Ana: Mucho gusto. ¿De dónde eres?<br>Tomás: Soy de Quito. ¿Y tú?<br>Ana: Soy de aquí, de Bogotá.<br>Tomás: Aquí tienes el azúcar.<br>Ana: Gracias.<br>Tomás: De nada. Hasta luego, Ana.<br>Ana: Chao, Tomás.'] },
 ];

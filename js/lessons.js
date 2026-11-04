@@ -136,7 +136,10 @@
     return E.conjugate(v, tk).join('|') !== E.conjugate(twin, tk).join('|');
   }
   function irregularsFor(tk) {
-    return IRR_CANDIDATES.filter(function (inf) { return isIrregularInTense(inf, tk); }).slice(0, 8);
+    // The present-tense day sits in week one: it shows only the irregular verbs
+    // the verb day before it taught; the rest wait for gr-presente-irregular-a2.
+    var cands = tk === 'presente' ? ['ser', 'estar', 'tener', 'haber'] : IRR_CANDIDATES;
+    return cands.filter(function (inf) { return isIrregularInTense(inf, tk); }).slice(0, 8);
   }
 
   // ---- doc → lesson ---------------------------------------------------------

@@ -25,9 +25,9 @@ window.Curriculum = (function () {
     // `passage` likewise: the opening two units name their own reading
     // (data/course.js), and dropping it here is what would make that authored
     // choice silently do nothing.
-    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null, passage: e.passage || null };
-    if (e.practice) return { type: 'practice', unit: e.unit || null, passage: e.passage || null };
-    return { type: 'grammar', id: e.lesson, unit: e.unit || null, passage: e.passage || null };
+    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    if (e.practice) return { type: 'practice', unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    return { type: 'grammar', id: e.lesson, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
   }
 
   var CACHE = {};

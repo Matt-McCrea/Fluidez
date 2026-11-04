@@ -811,6 +811,13 @@ window.Session = (function () {
       }
     }
 
+    // A day's authored writing task (data/course.js `write`, the unit task's own
+    // box) comes first in Produce, ahead of whatever the pools chose.
+    if (focus && focus.write && window.WRITING_TASKS) {
+      var authoredWrite = window.WRITING_TASKS.filter(function (t) { return t.id === focus.write; })[0];
+      if (authoredWrite) produce = [authoredWrite].concat(produce.filter(function (t) { return t.id !== focus.write; }));
+    }
+
     var built = {
       day: day,
       di: f.di,

@@ -102,11 +102,25 @@ window.COURSE = [
 
   /* ---- A1 · 94 days · starts at index 0 ------------------------------- */
 
-  /* Unit 1 · Meet someone — 10 days ------------------------------------
+  /* Unit 1 · Meet someone · 12 days -------------------------------------
    * "I can greet someone, say who I am and where I am from, and ask them
-   * the same." Four of these lessons were already written and sat at days
-   * 87, 90, 100 and 234; the dialogue, the thanks and the task are new.
-   * The dialogue comes FIRST, before any grammar, on purpose. */
+   * the same."
+   *
+   * THE FIRST WEEK IS BUILT SO THAT NOTHING IS DRILLED BEFORE IT IS TAUGHT.
+   * Day 1 is chunks only: a real twelve-line meeting at a café counter in
+   * Bogotá, read twice, and the eleven fixed pieces it is made of (hola, soy,
+   * me llamo, soy de, ¿y tú?, mucho gusto, ¿cómo te llamas?, ¿de dónde eres?,
+   * quiero, ¿tienes…?). Day 2 is the head start every English speaker already
+   * has: seven endings that turn thousands of English words into Spanish ones,
+   * and ten false friends. Only on day 3 are the verbs inside those chunks
+   * opened up, and on day 4 the present tense that builds them. Day 7 adds
+   * nothing: six days of new material end with one that consolidates them.
+   *
+   * Sounds and stress are no longer path days. They sat at days 2 and 13, so
+   * a beginner met vowel rules before meeting anybody; they are now one
+   * reference card (gr-sonidos-a1), linked from day 2, with the longer accent
+   * lesson (gr-acentuacion-a1) behind it. Unit 2 gave up that day, unit 1
+   * gained the practice day, so every day after day 19 is where it was. */
   { unit: 'a1-u01', band: 'A1', title: 'Meet someone',
     goal: 'I can greet someone, say who I am and where I am from, and ask them the same.',
     canDo: ['greet someone and answer a greeting',
@@ -121,57 +135,71 @@ window.COURSE = [
      * grammar, falls back to the day's theme, and chooses between equals by
      * how much new vocabulary the text would teach per word read.
      *
-     * The opening is the one stretch where that is not good enough, for a
-     * reason particular to it. Those preferences all need something to bite
-     * on, and on day 2 the lesson is the five vowels, on day 13 it is where
-     * the written accent falls. A pronunciation lesson has no content partner,
-     * so the scheduler was free to hand a beginner a text about a tourist
-     * guide on day 2 and about a king and a president on day 13 — technically
-     * at level, and nothing to do with the fortnight they were living in.
+     * The opening is the one stretch where that is not good enough. A chunk
+     * lesson, a cognate lesson and a verb day give those preferences nothing
+     * to bite on, so the scheduler was free to hand a beginner a list of
+     * character adjectives on the first verb day and a list of body parts on
+     * the second: technically at level, and nothing to do with the week they
+     * were living.
      *
-     * So these fourteen days say what to read. The rule applied: keep the
-     * learner inside the world of the unit. Unit 1 is people meeting each
-     * other, so every day of it reads somebody meeting somebody. Unit 2 is
-     * asking questions, so its days read dialogues built out of question
-     * words. Where a lesson DOES have a natural partner it gets it —
-     * ser-estar reads the passage written to contrast ser and estar.
+     * So these days say what to read, under two rules. Keep the learner inside
+     * the world of the unit: unit 1 is people meeting each other, so most of
+     * its days read somebody meeting somebody, and where a lesson has a natural
+     * partner it gets it (day 2 a learner's own class, dense with cognates;
+     * day 6 the passage written to contrast ser and estar). And never put more
+     * than two words of one tight set (numbers in a run, family members,
+     * nationalities, a list of objects or of adjectives) in front of a beginner
+     * on one day: the texts that did (the family ages, the floors and their
+     * nationalities, the contents of a bag, ten character traits) were taken
+     * off these days. The two practice days re-read a text from earlier in
+     * their unit, because a practice day adds no new content and a fresh text
+     * would add a day of new words.
      *
      * Every one is presente-only on purpose: the preterite is not taught until
      * day 47, and js/session.js withholds a text whose tenses the learner has
      * not reached. A named passage that gets withheld is worse than none. */
     days: [
     { lesson: 'dlg-presentarse', passage: 'u1-cafeteria' },            // two students meet: names, origin
-    { lesson: 'gr-sonidos-a1', passage: 'a1-serv-policia' },           // no content partner — picked for the lightest load
-    { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'] },
-    { lesson: 'presente', passage: 'a1-ident-bolso' },                 // llevo, tengo, es — the present in the first person
+    { lesson: 'gr-cognados-a1', passage: 'clase-espanol-verbos2' },    // estudiante, universidad, texto, progreso: read at sight
+    { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'], passage: 'a1-serv-policia' },   // es de, está, tengo, hay: four of the five
+    { lesson: 'presente', passage: 'cena-vecinos-verbos22' },          // invitamos, preparo, traen, hablamos: the present across persons
     { lesson: 'fn-responder-saludo-a2', passage: 'u1-recepcion' },     // buenas tardes, at a desk
-    { lesson: 'ser-estar', passage: 'a1-car-javier' },                 // the contrast SHOWN, not stated
-    { lesson: 'nt-origen-a1', passage: 'a1-ident-edad' },              // where from, and how old
-    { lesson: 'fn-identificar-a1', passage: 'a1-ident-vecinos' },      // quién es quién, floor by floor
-    { lesson: 'fn-agradecer-a1', passage: 'u1-vecina' },               // gracias, encantado, hasta luego
+    { lesson: 'ser-estar', passage: 'ser-estar-contraste' },           // es alta / está cansada, es médico / está ocupado
+    { practice: true, passage: 'cena-vecinos-verbos22' },         // day 4 again: the present, and no new words
+    /* The day-1 text again, a week on, read this time for its origin
+     * exchange (¿Eres de Madrid? No, soy de Valencia. Soy de Irlanda.). The
+     * other clean texts about origin are already on days 3 and 5. */
+    { lesson: 'nt-origen-a1', passage: 'u1-cafeteria' },               // where from, and how old
+    { lesson: 'fn-identificar-a1', passage: 'u1-vecina' },             // ¿Eres la vecina nueva? Sí, soy Nadia.
+    { lesson: 'fn-agradecer-a1', passage: 'primer-dia-vecindario-vocab1' },   // muchas gracias, de nada, buenas noches
     { lesson: 'fn-establecer-comunicacion-a1', passage: 'a1-rel-vecino-nuevo' },   // an opening and a closing, performed
     /* Deliberately the same text as day 1. The unit opened with two strangers
      * meeting; it closes by asking the learner to introduce themselves, and
-     * reading that first passage again with ten days behind them is the point,
-     * not an oversight. */
-    { lesson: 'task-presentarse', passage: 'u1-cafeteria' },
+     * reading that first passage once more with the unit behind them is the
+     * point, not an oversight.
+     *
+     * `write` names the writing task this day must give a box for: the task
+     * lesson asks for a written first meeting, and until the day carried an id
+     * the produce stage could hand out anything at level. js/curriculum.js
+     * asFocus and js/session.js have to pass it through and serve it first;
+     * the task itself is w-iden-primer-encuentro in data/writing.js. */
+    { lesson: 'task-presentarse', passage: 'u1-cafeteria', write: 'w-iden-primer-encuentro' },
     ] },
 
   { unit: 'a1-u02', band: 'A1', title: 'Ask a question',
-    goal: 'I can ask for a name, a place, a price and a repeat — and say when I have not understood.',
+    goal: 'I can ask for a name, a place, a price and a repeat, and say when I have not understood.',
     canDo: ['ask with qué, dónde, cuánto, quién',
             'turn a statement into a question with my voice',
             'say I do not understand and ask for a repeat',
             'ask a stranger for information'],
     days: [
       { lesson: 'gr-interrogativos-a1', passage: 'a1-serv-cuenta' },     // the most question-dense text in A1
-      { lesson: 'gr-acentuacion-a1', passage: 'a1-serv-tarjeta' },       // ¿Cuál…? — the accent falls on the question word
-      { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'] },
+      { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'], passage: 'conversacion-amigas-verbos4' },   // quiere, da, puede: the scheduler served a body-parts list here
       { lesson: 'dc-entonacion-a1' },   // left to the scheduler: alignment serves this one well enough
       { lesson: 'gr-pronombre-sujeto-a1' },
-      { practice: true },
-      { lesson: 'fn-pedir-informacion-a1' },
-      { lesson: 'task-preguntar' },
+      { practice: true, passage: 'a1-serv-cuenta' },              // day 13 again: six questions, and no new words
+      { lesson: 'fn-pedir-informacion-a1', passage: 'a1-serv-tarjeta' },   // ¿Cuál es el problema? ¿Dónde hay un cajero?; left alone it drew a list of rooms and furniture
+      { lesson: 'task-preguntar', passage: 'a1-rel-vecino-nuevo' },   // day 11 again, read for its four questions to a stranger
     ] },
 
   { unit: 'a1-u03', band: 'A1', title: 'Be polite',

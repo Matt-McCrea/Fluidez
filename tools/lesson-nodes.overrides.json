@@ -1741,5 +1741,11 @@
   "task-c1-final": {
     "teaches": [],
     "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-cognados-a1": {
+    "teaches": [
+      "g:sounds-letters"
+    ],
+    "note": "Cognate conversion rules; carries the sounds-and-letters node now that the sounds lessons are reference cards."
   }
 }
