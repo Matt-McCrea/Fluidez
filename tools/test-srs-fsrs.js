@@ -442,5 +442,37 @@ function simulate(band, throttled) {
   ok(!/perro|gato/.test(txt), 'neither graded card appears in the rapido deck');
 }
 
+/* ---- yesterday's due count shrinks the new target ---- */
+{
+  const W = world({}, 'A1');
+  const cards = W.SRS.BUDGET_MIN.A1 * 60 / 10;
+  const calm = W.SRS.computePlan(10, 'A1', 10, 0, null, 10), over = W.SRS.computePlan(10, 'A1', 10, 0, null, cards * 1.5), swamped = W.SRS.computePlan(10, 'A1', 10, 0, null, cards * 2);
+  ok(calm.newCount === W.SRS.NEW_TARGET.A1, 'yesterday within the budget leaves the new target alone');
+  ok(over.newCount < calm.newCount && over.newCount > W.SRS.NEW_FLOOR, 'yesterday at 1.5 times the budget shrinks the target (' + over.newCount + ')');
+  ok(swamped.newCount === W.SRS.NEW_FLOOR, 'yesterday at twice the budget drops it to the floor');
+}
+
+/* ---- 30-day walk: A1, 10 new a day, 90% right; due stays within 1.5 times the budget's cards after day 10 ---- */
+{
+  const store = {};
+  const W = world(store, 'A1');
+  const budgetCards = W.SRS.BUDGET_MIN.A1 * 60 / W.SRS.secondsPerCard();
+  const t0 = clock.t; let maxDue = 0, worstDay = 0, graded = 0, seq = 0, wid = 0, planNew = [];
+  for (let d = 0; d < 30; d++) {
+    clock.t = t0 + d * DAY;
+    const W2 = world(store, 'A1');          // each day is a reload over the same store
+    const pool = Object.keys(rawStore(store)).filter(k => k !== W2.SRS._metaKey && !/^__/.test(k)).map(id => ({ id }));
+    const due = W2.SRS.dueCount(pool.map(x => ({ id: x.id })));
+    if (d >= 10 && due > maxDue) { maxDue = due; worstDay = d + 1; }
+    const plan = W2.SRS.plan(pool, { band: 'A1', fresh: true });
+    planNew.push(plan.newCount);
+    const batch = W2.SRS.batch(pool, plan.dueCap, 0, false);
+    batch.forEach(it => { graded++; W2.SRS.grade(it.id, ++seq % 10 !== 0); });
+    for (let k = 0; k < plan.newCount; k++) W2.SRS.enrol('v:w' + (++wid) + ':meaning', 1);
+  }
+  console.log(`  30 day walk: new per day ${planNew.join(' ')}; worst due after day 10: ${maxDue} on day ${worstDay} (budget ${budgetCards.toFixed(0)} cards)`);
+  ok(maxDue <= 1.5 * budgetCards, 'over 30 days at 10 new a day and 90% right, due never exceeds 1.5 times the budget\'s cards after day 10 (' + maxDue + ' <= ' + (1.5 * budgetCards).toFixed(0) + ')');
+}
+
 console.log('\n' + (n - fails) + ' of ' + n + ' checks passed');
 process.exit(fails ? 1 : 0);

@@ -78,7 +78,7 @@ window.Hub = (function () {
     var list = F.themeOptions(opts.band);
     if (!list.length) return null;
     var box = UI.el('div', 'theme-offer');
-    box.appendChild(UI.el('div', 'eyebrow', opts.title));
+    box.appendChild(UI.el('div', 'eyebrow', opts.title || UI.t('Elige un tema para la próxima semana, o sigue.', 'Pick a theme for next week, or carry on.')));
     var row = UI.el('div', 'theme-chips');
     function finish(msg) {
       markOffered(opts.unitId);

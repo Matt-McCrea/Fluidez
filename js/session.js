@@ -469,6 +469,19 @@ window.Session = (function () {
     var tNodes = gating ? Kn.todayNodes(focus, gi) : new Set();
     var known = gating ? Kn.forLearner(f.prog, gi) : null;
     var band = pr.cefr || null;
+    /* A placed learner (position in band X, every earlier lesson studied) knows the band's vocabulary for coverage:
+     * the new-word drip estimate runs far below what a placement test shows. */
+    if (known && band && RANK.indexOf(band) >= 2 && window.COURSE_BANDS && window.COURSE_BANDS[band] != null) {
+      var bStart = window.COURSE_BANDS[band], allPrior = true, cd = window.COURSE_DAYS || [], stu = studied || {};
+      for (var bi = 0; bi < bStart && bi < cd.length; bi++) if (cd[bi] && cd[bi].lesson && !stu[cd[bi].lesson]) { allPrior = false; break; }
+      if (allPrior) {
+        var bRank = RANK.indexOf(band);
+        (window.VOCAB || []).forEach(function (w) {
+          if (!w.es || RANK.indexOf(w.cefr || 'A1') > bRank) return;
+          known.add('l:' + String(w.es).trim().toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, ''));
+        });
+      }
+    }
     var seenDay = opts.today != null ? opts.today : day;
     var seen = loadSeen();
     function recent(key) {
@@ -515,7 +528,11 @@ window.Session = (function () {
       var pref = gating ? fresh.filter(function (x) { return Kn.targets(keyOf(x), tNodes); }) : [];
       var rest = fresh.filter(function (x) { return pref.indexOf(x) < 0; });
       var fn = matchFn || NONE;
-      var out = sampleAligned(pref, focus, Math.min(pref.length, Math.ceil(n * 2 / 3)), fn, rng);
+      /* A theme focus keeps at least half of the picks on today's nodes (the lesson) and narrows only the rest. */
+      var themed = !!(window.Focus && window.Focus.theme());
+      var share = themed ? Math.ceil(n / 2) : Math.ceil(n * 2 / 3);
+      if (themed) rest = window.Focus.narrow(rest);
+      var out = sampleAligned(pref, focus, Math.min(pref.length, share), fn, rng);
       if (out.length < n) out = out.concat(sampleAligned(rest, focus, n - out.length, fn, rng));
       if (out.length < n) out = out.concat(sample(pref.filter(function (x) { return out.indexOf(x) < 0; }), n - out.length, rng));
       if (out.length < n && stale.length) {
@@ -532,17 +549,42 @@ window.Session = (function () {
      * same 0.10 slack (a passage under target but within the slack is served and logged). */
     var passAll = passageGate(atLevel(window.PASSAGES || []));
     var passages = passAll.filter(function (x) { return !recent(passageKey(x)); });
-    /* From B1 up, a passage at the band's own levels beats a lower level; falling lower is logged. */
+    /* From B1 up, a passage at the band's own levels beats a lower level. When none meets the coverage target the
+     * best-covered band-level passage is served anyway (within 0.20 of the target, logged passage-under-coverage)
+     * before falling to lower levels, which is logged passage-below-band. A passage seen inside the 14 day window is
+     * served only when nothing else is readable (the reuse below). */
     var bandLv = null;
     (window.LEVELS || []).forEach(function (L) { if (L.code === band) bandLv = L.levels; });
-    if (band && RANK.indexOf(band) >= 2 && bandLv && passages.length) {
+    function bestUnder(pool) {
+      if (!gating || !known || !pool.length) return [];
+      var target = COVERAGE_TARGET[band] || 0.9, sc = [];
+      pool.forEach(function (x) { var cv = passageCoverage(x, known); if (cv + 1e-9 >= target - 0.20) sc.push({ x: x, cv: cv }); });
+      sc.sort(function (a, b) { return b.cv - a.cv; });
+      if (sc.length) { passCov = {}; sc.forEach(function (e) { passCov[e.x.id] = e.cv; }); }
+      return sc.slice(0, 12).map(function (e) { return e.x; });
+    }
+    if (band && RANK.indexOf(band) >= 2 && bandLv) {
       var inBand = passages.filter(function (x) { return bandLv.indexOf(x.level || 1) >= 0; });
       if (inBand.length) passages = inBand;
-      else gaps.push({ kind: 'passage-below-band', band: band, levels: Array.from(new Set(passages.map(function (x) { return x.level || 1; }))).sort() });
+      else {
+        var under = bestUnder(atLevel(window.PASSAGES || []).filter(function (x) { return bandLv.indexOf(x.level || 1) >= 0 && !recent(passageKey(x)); }));
+        if (under.length) {
+          passages = under;
+          gaps.push({ kind: 'passage-under-coverage', band: band, coverage: Math.round(passCov[under[0].id] * 100) / 100 });
+        } else if (passages.length) {
+          gaps.push({ kind: 'passage-below-band', band: band, levels: Array.from(new Set(passages.map(function (x) { return x.level || 1; }))).sort() });
+        }
+      }
     }
     if (!passages.length && passAll.length) {
-      passages = [passAll.slice().sort(function (a, b) { return seen[passageKey(a)] - seen[passageKey(b)]; })[0]];
-      gaps.push({ kind: 'reuse', stage: 'comprehend', keys: [passageKey(passages[0])] });
+      var under2 = bestUnder(atLevel(window.PASSAGES || []).filter(function (x) { return !recent(passageKey(x)); }));
+      if (under2.length) {
+        passages = under2;
+        gaps.push({ kind: 'passage-under-coverage', band: band, coverage: Math.round(passCov[under2[0].id] * 100) / 100 });
+      } else {
+        passages = [passAll.slice().sort(function (a, b) { return seen[passageKey(a)] - seen[passageKey(b)]; })[0]];
+        gaps.push({ kind: 'reuse', stage: 'comprehend', keys: [passageKey(passages[0])] });
+      }
     }
     var apply = safeVerbs(gated(atLevel(window.APPLY_ITEMS || []), applyKey, 'apply'));
     var writes = safeWriting(gated(atLevel(window.WRITING_TASKS || []), writeKey, 'produce'));
@@ -558,12 +600,10 @@ window.Session = (function () {
 
     // Produce: 'guided' (beginner) = a build + a translation, with scaffolding.
     // 'full' = also open free-writing and, from level 2+, a connected paragraph.
-    /* A theme focus narrows the pool BEFORE the grammar preference runs, so
-     * the day's grammar still decides which of the themed tasks you get. Order
-     * matters: narrowing second would hand back a task on the right tense and
-     * the wrong subject, which is the half that was already working. */
+    /* A theme focus narrows only the picks left after the lesson's share
+     * (at least half) is taken: see choose(). */
     var FO = window.Focus;
-    function inTheme(arr) { return FO ? FO.narrow(arr) : arr; }
+    function inTheme(arr) { return arr; }       // the theme narrows inside choose(), after the lesson's share is taken
     var builds = inTheme(writes.filter(function (t) { return t.type === 'build'; }));
     var trans = inTheme(writes.filter(function (t) { return t.type === 'translate'; }));
     var frees = inTheme(writes.filter(function (t) { return t.type === 'write'; }));
@@ -1209,6 +1249,21 @@ window.Session = (function () {
     });
     return (_passLem[p.id] = out);
   }
+  /* A form counts as known when the lemma, or the form it inflects from, is: plural, feminine, participle, and the
+   * closed-class words the gloss table leaves out (articles, demonstratives, a few adverbs). */
+  var CLOSED = 'el la los las un una unos unas lo le les se me te nos os eso esto esa ese esos esas tan muy mas más todo todos toda todas poco poca pocos pocas otro otra otros otras cierto cierta ciertos ciertas'.split(' ');
+  function knownForm(known, l) {
+    if (known.has('l:' + l) || CLOSED.indexOf(l) >= 0) return true;
+    var c = [];
+    if (/es$/.test(l)) c.push(l.slice(0, -2));
+    if (/s$/.test(l)) c.push(l.slice(0, -1));
+    if (/[ao]s?$/.test(l)) { var b = l.replace(/[ao]s?$/, ''); c.push(b + 'o', b + 'a', b + 'ar', b + 'er', b + 'ir'); }
+    if (/(ado|ido|ada|ida|ados|idos|adas|idas)$/.test(l)) { var st = l.replace(/(ad|id)[oa]s?$/, ''); c.push(st + 'ar', st + 'er', st + 'ir'); }
+    if (/ción$/.test(l)) c.push(l.slice(0, -5) + 'ar');
+    if (/ones$/.test(l)) c.push(l.slice(0, -2));
+    for (var i = 0; i < c.length; i++) if (known.has('l:' + c[i])) return true;
+    return false;
+  }
   function passageCoverage(p, known) {
     var lem = passageLemmaList(p);
     if (!lem.length) return 1;
@@ -1219,7 +1274,7 @@ window.Session = (function () {
     var small = (window.LIB && window.LIB.gloss && window.LIB.gloss.SMALL_WORDS) || {};
     var n = 0;
     lem.forEach(function (l) {
-      if (known.has('l:' + l) || gl[l] || Object.prototype.hasOwnProperty.call(small, l)) n++;
+      if (knownForm(known, l) || gl[l] || Object.prototype.hasOwnProperty.call(small, l)) n++;
     });
     return n / lem.length;
   }
@@ -1267,7 +1322,17 @@ window.Session = (function () {
     if (wantChapter && (pin || !servedToday)) {
       var b = chapterBeat(prog, known, pin, c.gaps);
       if (b) {
-        c.chapter = { id: b.ch.id, ch: b.ch, part: b.part, coverage: b.cov };
+        /* A placed learner reads "Chapter 3" of their band's story, not "Chapter 83" of the whole serial. */
+        var shown = b.ch, pBand = learnerBand(), allE = storyEntries();
+        if (pBand && pBand !== 'A1' && b.ch.band === pBand) {
+          var fi = -1; for (var q = 0; q < allE.length; q++) if (allE[q].band === pBand) { fi = q; break; }
+          var cr0 = prog.chaptersRead || {}, readBelow = fi > 0 && allE.slice(0, fi).some(function (e) { return cr0[e.id]; });
+          if (fi > 0 && !readBelow) {
+            var inBandN = allE.filter(function (e) { return e.band === pBand; }).map(function (e) { return e.id; }).indexOf(b.ch.id) + 1;
+            if (inBandN > 0) shown = Object.assign({}, b.ch, { n: inBandN });
+          }
+        }
+        c.chapter = { id: b.ch.id, ch: shown, part: b.part, coverage: b.cov };
         var rc = b.part === 0 ? recapFor(b.ch, prog) : null;
         if (rc) c.chapter.recapLine = rc;      // shown before the chapter's first part
       }
@@ -1698,7 +1763,11 @@ window.Session = (function () {
     var inDays = {}; us.days.forEach(function (d) { inDays[d] = 1; });
     var log = []; try { log = JSON.parse(localStorage.getItem('fluidez.reviewlog')) || []; } catch (e) {}
     var n = 0, right = 0;
-    log.forEach(function (e) { if (inDays[e.day]) { n++; if (e.ok) right++; } });
+    /* quick-check stamps (learn.js writes {id:'p:..', ok:true, gap:null}) are not reviews */
+    log.forEach(function (e) {
+      if (!inDays[e.day] || (e.gap === null && e.ok === true && /^p:/.test(String(e.id || '')))) return;
+      n++; if (e.ok) right++;
+    });
     return { sessions: us.days.length, words: us.words || 0, reviewed: n, right: right,
              share: n ? Math.round(100 * right / n) : null };
   }
@@ -1746,7 +1815,7 @@ window.Session = (function () {
     var nxt = unitFollowing(u);
     if (nxt && window.Hub && window.Hub.themeOffer) {
       var offer = window.Hub.themeOffer({ unitId: nxt.id, days: nxt.length, band: bandNow(),
-        title: T('La próxima semana: elige un tema, o sigue.', 'Next week: pick a theme, or carry on.') });
+        title: T('Elige un tema para la próxima semana, o sigue.', 'Pick a theme for next week, or carry on.') });
       if (offer) card.appendChild(offer);
     }
     return card;

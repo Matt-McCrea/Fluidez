@@ -127,6 +127,23 @@ window.Library = (function () {
     for (var i = 0; i < idx.length; i++) if (idx[i].id === e.id) return i;
     return -1;
   }
+  /* A placed learner joined the serial at their own band: position in a band above A1 and nothing read below it. */
+  function placedBand() {
+    var band = learnerBand();
+    if (band === 'A1') return null;
+    var idx = window.STORY_INDEX || [], first = -1;
+    for (var i = 0; i < idx.length; i++) if (idx[i].band === band) { first = i; break; }
+    if (first <= 0) return null;
+    var cr = loadProg().chaptersRead || {};
+    for (var j = 0; j < first; j++) if (cr[idx[j].id]) return null;
+    return band;
+  }
+  /* The chapter's number inside its own band (1 for the band's first chapter). */
+  function numberInBand(entry) {
+    var n = 0;
+    (window.STORY_INDEX || []).some(function (c) { if (c.band === entry.band) n++; return c.id === entry.id; });
+    return n;
+  }
   /* "u03" in the story index is the third unit of the course: COURSE_UNITS keys it as "a1-u03". */
   function unitTitle(id) {
     var U = window.COURSE_UNITS || {}, m = /^u(\d+)$/.exec(String(id));
@@ -151,7 +168,7 @@ window.Library = (function () {
         var ch = chapterCache[c.id], isRead = !!cr[c.id];
         // beyond the next unread chapter: listed, locked, so the plot is not given away
         var locked = nx >= 0 && n > nx && !isRead;
-        out.push({ kind: 'chapter', id: c.id, title: c.title, band: c.band, words: c.words, unit: c.unit, order: n,
+        out.push({ kind: 'chapter', id: c.id, title: c.title, band: c.band, words: c.words, unit: c.unit, order: n, bandNo: numberInBand(c),
                    known: ch && !locked ? chapterShare(ch, test) : null, read: isRead, locked: locked, src: c });
       });
     }
@@ -284,6 +301,12 @@ window.Library = (function () {
           if (state.kind === 'passages') return !state.theme || it.theme === state.theme;
           return !state.unit || it.unit === state.unit;
         });
+        /* A placed learner sees their own band's chapters first; the earlier bands fold under "Earlier in the story". */
+        var earlier = [], pb = state.kind === 'chapters' ? placedBand() : null;
+        if (pb) {
+          earlier = all.filter(function (it) { return rank(it.band) < rank(pb); });
+          all = all.filter(function (it) { return rank(it.band) >= rank(pb); });
+        }
         var easy = all.filter(function (it) { return !it.harder; });
         var hard = all.filter(function (it) { return it.harder; });
         var rows = easy.slice(0, state.shown);
@@ -307,6 +330,13 @@ window.Library = (function () {
             mh.addEventListener('click', function () { state.harder = true; cb.checked = true; fill(); });
             listHost.appendChild(mh);
           }
+        }
+        if (earlier.length) {
+          var det = document.createElement('details'); det.className = 'lib-earlier';
+          var sm = document.createElement('summary'); sm.textContent = 'Earlier in the story (' + earlier.length + ')';
+          det.appendChild(sm);
+          earlier.forEach(function (it) { det.appendChild(row(it, host)); });
+          listHost.appendChild(det);
         }
         if (state.kind === 'chapters') warmChapters(all);
       }, 0);
@@ -342,7 +372,8 @@ window.Library = (function () {
       b.appendChild(UI.el('span', 'lib-meta muted small', it.band + ' · ' + it.words + ' words · Read the earlier chapters first'));
       return b;
     }
-    var meta = it.band + ' · ' + it.words + ' words · ' + (it.known == null ? 'open to count' : it.known + '% known');
+    var chNo = (it.kind === 'chapter' && placedBand() && it.band === placedBand()) ? 'Chapter ' + it.bandNo + ' of the ' + it.band + ' story · ' : '';
+    var meta = chNo + it.band + ' · ' + it.words + ' words · ' + (it.known == null ? 'open to count' : it.known + '% known');
     b.appendChild(UI.el('span', 'lib-title', escapeHtml(it.title) + (it.read ? ' <span class="lib-read">read</span>' : '') +
       (it.harder ? ' <span class="lib-harder">harder</span>' : '')));
     b.appendChild(UI.el('span', 'lib-meta muted small', meta));

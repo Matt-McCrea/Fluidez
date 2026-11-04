@@ -161,6 +161,7 @@ const last = new Map(); let repeats = 0, recorded = 0, served = 0, ap14 = 0, apS
 const studied = {};
 const BASE = 200000, WALK = Math.min(61, bands['A2'] || 61);
 const lastGaps = [];
+let passRepeats = 0; const passLast = new Map();
 let longestRun = 0, longestAt = '';
 const shapeKey = x => ((x && x.type) || '?') + ((x && x.bankKind) ? ':' + x.bankKind : '');
 function runOf(list, t, stage, gp) { let r = 0, prev = null; list.forEach(x => { const k = shapeKey(x); r = k === prev ? r + 1 : 1; prev = k; if (r > longestRun) { if (process.env.DBG) console.log('RUN', t, stage, list.map(shapeKey).join(' | '), JSON.stringify(gp).slice(0, 400)); longestRun = r; longestAt = 'day ' + t + ' ' + stage + ' ' + k; } }); }
@@ -177,6 +178,11 @@ for (let t = 0; t < WALK; t++) {
     if (last.has(k) && t - last.get(k) < 14) { if (covered.has(k)) recorded++; else { repeats++; if (repeats <= 10) console.log('   repeat ' + k + ' day ' + t + ' (last ' + last.get(k) + ')'); } }
     last.set(k, t); });
   ctx.gaps.forEach(g => lastGaps.push(t + ':' + g.kind + ':' + g.stage));
+  if (ctx.passage) {
+    const pk = pKey(ctx.passage), auth = ctx.gaps.some(g => g.kind === 'authored-repeat' && g.keys && g.keys.indexOf(pk) >= 0);
+    if (passLast.has(pk) && t - passLast.get(pk) < 14 && !auth) { passRepeats++; console.log('   passage repeat ' + pk + ' day ' + t + ' (last ' + passLast.get(pk) + ') ' + JSON.stringify(ctx.gaps.filter(g => g.kind !== 'bank-replaced-reuse').map(g => g.kind + ':' + g.stage))); }
+    passLast.set(pk, t);
+  }
   S._markSeen(ctx);
   if (lessonIds[t]) studied[lessonIds[t]] = 1;
 }
@@ -188,6 +194,32 @@ ok(!BANK_ON || rate < 5, 'Apply and Produce repeats within 14 days stay under 5%
 console.log('  longest run of one shape: ' + longestRun + ' (' + longestAt + ')');
 ok(longestRun <= 4, 'no run of one shape (type plus bank kind) longer than 4 over the A1 walk (' + longestRun + ')');
 ok(repeats === 0, 'no item key repeats within a 14 day window (A1 days 0-' + (WALK - 1) + ') except recorded gaps');
+ok(passRepeats === 0, 'no non-authored passage repeats within 14 days over the A1 walk (' + passRepeats + ')');
+
+/* ---- 5. a live theme focus keeps the lesson's share of Apply and Produce ---- */
+{
+  console.log('\nTHEME FOCUS: A1 lesson days, with and without a live focus');
+  window.Profile.set('A1');
+  const th = (window.THEMES || []).map(t => t.id).filter(id => window.PASSAGES.filter(p => p.theme === id).length >= 3)[0];
+  function share(withFocus) {
+    let items = 0, onNode = 0, dayCount = 0;
+    for (let i = 8; i < 50; i++) {
+      if (!lessonIds[i]) continue;
+      setLearner(i); window.Focus.stop();
+      if (withFocus) window.Focus.start(th, 7, 'A1');
+      const ctx = S._build({ seed: 3, over: { di: i, lessonId: lessonIds[i] }, today: 300000 + i });
+      if (!ctx.nodes || !ctx.nodes.size) continue;
+      const all = ctx.applyItems.concat(ctx.writeTasks);
+      onNode += all.filter(x => x.bankId ? bankHit(x, ctx.nodes) : K.targets(ctx.writeTasks.indexOf(x) >= 0 ? wKey(x) : aKey(x), ctx.nodes)).length;
+      items += all.length; dayCount++;
+    }
+    window.Focus.stop();
+    return { items, onNode, dayCount, r: onNode / Math.max(1, items) };
+  }
+  const base = share(false), live = share(true);
+  console.log(`  no focus: ${base.onNode}/${base.items} on today's nodes; live focus on "${th}": ${live.onNode}/${live.items} over ${live.dayCount} days`);
+  ok(live.dayCount > 5 && live.r >= base.r * 0.9, 'with a live Focus the share of Apply and Produce on today\'s nodes holds (' + (100 * live.r).toFixed(0) + '% against ' + (100 * base.r).toFixed(0) + '% without)');
+}
 
 console.log('\n' + (fails ? fails + ' FAILED' : 'all ok'));
 process.exit(fails ? 1 : 0);

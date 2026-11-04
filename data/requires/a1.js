@@ -213,6 +213,8 @@ window.REQUIRES_A1 = {
 "apply:71":{"r":["c:vivo-en","g:present-er-ir","l:vivir"],"f":[3,8],"c":"high"},
 "apply:710":{"r":["g:adjective-agreement","g:estar-location-states","l:cansado","l:estar","l:hoy","p:quantifiers-basic"],"f":[10,17],"c":"high"},
 "apply:711":{"r":["g:gender-articles","g:present-ar","l:lunes","l:trabajar","p:days-el-lunes","p:quantifiers-basic"],"f":[14,17],"c":"high"},
+"apply:718":{"r":["c:tienes","g:questions","g:stem-boot","l:año","l:cuánto","l:hermano","l:tener","p:possessives-basic","p:tener-anos"],"f":[14,30],"c":"high"},
+"apply:719":{"r":["c:tienes","g:stem-boot","l:año","l:primo","l:tener","p:masculine-plural-mixed","p:possessives-basic","p:tener-anos"],"f":[11,22],"c":"high"},
 "apply:72":{"r":["c:tienes","g:stem-boot","l:hambre","l:tener","p:tener-hambre"],"f":[5,10],"c":"high"},
 "apply:73":{"r":["g:present-ar","l:trabajar","p:quantifiers-basic"],"f":[9,19],"c":"high"},
 "apply:83":{"r":["g:gender-articles","g:present-ar","l:desayunar","l:escuchar","l:mañana","l:música","p:todos-los-dias","p:veces-al"],"f":[6,9],"c":"high"},

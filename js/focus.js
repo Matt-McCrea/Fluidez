@@ -100,11 +100,19 @@ window.Focus = (function () {
   }
   /* The themes worth offering at this band: enough passages to carry a week,
    * and not already finished here. */
+  /* At A1 and A2 a handful of concrete, everyday themes (food, family, shopping, travel, home, health, work, free
+   * time); the full list from B1. At most six, most passages at the band first. */
+  var EVERYDAY = ['alimentacion', 'relaciones', 'compras', 'viajes', 'vivienda', 'salud', 'trabajo', 'ocio'];
   function themeOptions(band) {
     band = band || bandNow();
-    return (window.THEMES || []).filter(function (t) {
+    var list = (window.THEMES || []).filter(function (t) {
       return passagesOf(t.id, band).length >= MIN_POOL && !themeDone(t.id, band);
     }).map(function (t) { return { id: t.id, label: labelOf(t.id), passages: passagesOf(t.id, band).length }; });
+    if (band === 'A1' || band === 'A2') {
+      list = list.filter(function (t) { return EVERYDAY.indexOf(t.id) !== -1; })
+        .sort(function (a, b) { return b.passages - a.passages; }).slice(0, 6);
+    }
+    return list;
   }
   /* Themes finished at this band that the learner has not yet been told about. */
   function newlyDone(band) {

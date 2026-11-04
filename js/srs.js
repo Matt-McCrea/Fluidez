@@ -355,7 +355,7 @@ window.SRS = (function () {
       return n >= 10 ? r / n : null;
     } catch (e) { return null; }
   }
-  function computePlan(dueN, b, spc, manualCap, share) {
+  function computePlan(dueN, b, spc, manualCap, share, yDue) {
     var budget = BUDGET_MIN[b] || BUDGET_MIN.A1, base = NEW_TARGET[b] || NEW_TARGET.A1, target = base;
     if (share === undefined) share = yesterdayShare();
     var steer = null;
@@ -370,6 +370,13 @@ window.SRS = (function () {
     } else {
       dueCap = Math.max(1, Math.floor(1.5 * budget * 60 / spc));
       newCount = NEW_FLOOR;
+    }
+    /* Yesterday's backlog counts too: when yesterday's due count went past the budget's cards, today's new target
+     * shrinks toward the floor (to the floor at twice the budget), so the backlog does not climb day on day. */
+    var budgetCards = budget * 60 / spc;
+    if (yDue != null && yDue > budgetCards) {
+      var f = Math.max(0, (2 * budgetCards - yDue) / budgetCards);
+      newCount = Math.min(newCount, Math.max(NEW_FLOOR, Math.round(target * f)));
     }
     if (steer === 'low') newCount = NEW_FLOOR;
     if (manualCap > 0) dueCap = Math.min(dueCap, manualCap);
@@ -386,9 +393,12 @@ window.SRS = (function () {
     opts = opts || {};
     var m = meta(), td = today();
     if (!opts.fresh && m.plan && m.plan.day === td && m.plan.band === (opts.band || band())) return m.plan;
-    var p = computePlan(dueIn(pool), opts.band || band(), secondsPerCard(), opts.manualCap);
+    var hist = meta().dueHist || {}, yDue = hist[td - 1] != null ? hist[td - 1] : null;
+    var p = computePlan(dueIn(pool), opts.band || band(), secondsPerCard(), opts.manualCap, undefined, yDue);
     p.day = td;
-    setMeta({ plan: p });
+    hist[td] = p.dueN;
+    Object.keys(hist).forEach(function (k) { if (td - Number(k) > 3) delete hist[k]; });
+    setMeta({ plan: p, dueHist: hist });
     return p;
   }
   // Called once per session with how many new cards it taught: counts the run of zero-new sessions.

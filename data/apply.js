@@ -16,7 +16,7 @@ window.APPLY_ITEMS = [
 
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (comer) paella con mis amigos.', inf: 'comer', tense: 'preterito', person: 'yo', en: 'Yesterday I ate paella with my friends.' },
   { type: 'cloze', level: 1, text: 'Normalmente nosotros ___ (hablar) español en casa.', inf: 'hablar', tense: 'presente', person: 'nosotros', en: 'We normally speak Spanish at home.' },
-  { type: 'cloze', level: 2, text: 'Cuando era niña, ella ___ (vivir) en Madrid.', inf: 'vivir', tense: 'imperfecto', person: 'él/ella', en: 'When she was a girl, she lived in Madrid.' },
+  { type: 'cloze', level: 2, text: 'Cuando era niña, ella ___ (vivir) en Medellín.', inf: 'vivir', tense: 'imperfecto', person: 'él/ella', en: 'When she was a girl, she lived in Medellín.' },
   { type: 'cloze', level: 3, text: 'Mañana ellos ___ (viajar) a Francia.', inf: 'viajar', tense: 'futuro', person: 'ellos', en: 'Tomorrow they will travel to France.' },
   { type: 'cloze', level: 4, text: 'Espero que tú ___ (venir) a la fiesta.', inf: 'venir', tense: 'presubj', person: 'tú', en: 'I hope (that) you come to the party.' },
   { type: 'cloze', level: 1, text: 'Anoche nosotros ___ (ir) al cine.', inf: 'ir', tense: 'preterito', person: 'nosotros', en: 'Last night we went to the cinema.' },
@@ -32,18 +32,18 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Si yo ___ (tener) más tiempo, viajaría más.', inf: 'tener', tense: 'impsubj', person: 'yo', en: 'If I had more time, I would travel more.' },
 
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Yo como paella.', to: 'Yo comí paella.', en: 'I ate paella.' },
-  { type: 'transform', level: 1, instruction: 'Change the subject to nosotros:', from: 'Yo vivo en España.', to: 'Nosotros vivimos en España.', en: 'We live in Spain.' },
+  { type: 'transform', level: 1, instruction: 'Change the subject to nosotros:', from: 'Yo vivo en Colombia.', to: 'Nosotros vivimos en Colombia.', en: 'We live in Colombia.' },
   { type: 'transform', level: 1, instruction: 'Make it negative:', from: 'Quiero café.', to: 'No quiero café.', en: 'I don\'t want coffee.' },
-  { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Ella vive en Madrid.', to: 'Ella vivía en Madrid.', en: 'She used to live in Madrid.' },
+  { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Ella vive en Cali.', to: 'Ella vivía en Cali.', en: 'She used to live in Cali.' },
   { type: 'transform', level: 3, instruction: 'Rewrite in the future:', from: 'Nosotros hablamos con el jefe.', to: 'Nosotros hablaremos con el jefe.', en: 'We will speak with the boss.' },
 
   // ---- level 1: presente ----
   { type: 'cloze', level: 1, text: 'Tú ___ (trabajar) en un hospital, ¿verdad?', inf: 'trabajar', tense: 'presente', person: 'tú', en: 'You work in a hospital, right?' },
-  { type: 'cloze', level: 1, text: 'Mi hermano ___ (vivir) en Barcelona ahora mismo.', inf: 'vivir', tense: 'presente', person: 'él/ella', en: 'My brother lives in Barcelona right now.' },
+  { type: 'cloze', level: 1, text: 'Mi hermano ___ (vivir) en Lima ahora mismo.', inf: 'vivir', tense: 'presente', person: 'él/ella', en: 'My brother lives in Lima right now.' },
   { type: 'cloze', level: 1, text: 'Todos los días nosotros ___ (comer) verduras frescas.', inf: 'comer', tense: 'presente', person: 'nosotros', en: 'Every day we eat fresh vegetables.' },
   { type: 'cloze', level: 1, text: 'Ustedes siempre ___ (estudiar) por la noche.', inf: 'estudiar', tense: 'presente', person: 'ellos', en: 'You all always study at night.' },
   { type: 'cloze', level: 1, text: 'Los niños ___ (jugar) en el parque todos los sábados.', inf: 'jugar', tense: 'presente', person: 'ellos', en: 'The children play in the park every Saturday.' },
-  { type: 'cloze', level: 1, text: 'Yo ___ (ser) ingeniera y trabajo en Madrid.', inf: 'ser', tense: 'presente', person: 'yo', en: 'I am an engineer and I work in Madrid.' },
+  { type: 'cloze', level: 1, text: 'Yo ___ (ser) ingeniera y trabajo en Bogotá.', inf: 'ser', tense: 'presente', person: 'yo', en: 'I am an engineer and I work in Bogotá.' },
   { type: 'cloze', level: 1, text: 'Ahora mismo, mi madre ___ (estar) en el mercado.', inf: 'estar', tense: 'presente', person: 'él/ella', en: 'Right now, my mother is at the market.' },
   { type: 'cloze', level: 1, text: '¿Cuántos años ___ (tener) tú?', inf: 'tener', tense: 'presente', person: 'tú', en: 'How old are you?' },
   { type: 'cloze', level: 1, text: 'Nosotros ___ (querer) viajar a Italia este año.', inf: 'querer', tense: 'presente', person: 'nosotros', en: 'We want to travel to Italy this year.' },
@@ -108,7 +108,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Cuando llamamos, ellos ya ___ (salir) de casa.', inf: 'salir', tense: 'plusc', person: 'ellos', en: 'When we called, they had already left home.' },
 
   // ---- transforms ----
-  { type: 'transform', level: 1, instruction: 'Change the subject to yo:', from: 'Tú vives en Sevilla.', to: 'Yo vivo en Sevilla.', en: 'I live in Seville.' },
+  { type: 'transform', level: 1, instruction: 'Change the subject to yo:', from: 'Tú vives en Quito.', to: 'Yo vivo en Quito.', en: 'I live in Quito.' },
   { type: 'transform', level: 1, instruction: 'Make it negative:', from: 'Ella tiene hambre.', to: 'Ella no tiene hambre.', en: "She isn't hungry." },
   { type: 'transform', level: 1, instruction: 'Change the subject to ellos:', from: 'Nosotros trabajamos mucho.', to: 'Ellos trabajan mucho.', en: 'They work a lot.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Yo hago la tarea.', to: 'Yo hice la tarea.', en: 'I did the homework.' },
@@ -200,7 +200,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Cuando empiece la reunión, tú ya ___ (llegar).', inf: 'llegar', tense: 'futperf', person: 'tú', en: 'When the meeting starts, you will have already arrived.' },
   { type: 'cloze', level: 5, text: 'Para mañana, mi hermana ___ (escribir) toda la tesis.', inf: 'escribir', tense: 'futperf', person: 'él/ella', en: 'By tomorrow, my sister will have written the whole thesis.' },
   { type: 'cloze', level: 5, text: 'Para el próximo año, nosotros ___ (ahorrar) lo suficiente para el viaje.', inf: 'ahorrar', tense: 'futperf', person: 'nosotros', en: 'By next year, we will have saved enough for the trip.' },
-  { type: 'cloze', level: 5, text: 'Para el verano, ustedes ___ (vivir) un año entero en Madrid.', inf: 'vivir', tense: 'futperf', person: 'ellos', en: 'By summer, you all will have lived a whole year in Madrid.' },
+  { type: 'cloze', level: 5, text: 'Para el verano, ustedes ___ (vivir) un año entero en Bogotá.', inf: 'vivir', tense: 'futperf', person: 'ellos', en: 'By summer, you all will have lived a whole year in Bogotá.' },
   { type: 'cloze', level: 5, text: 'Para el sábado, mis amigos ___ (organizar) toda la fiesta.', inf: 'organizar', tense: 'futperf', person: 'ellos', en: 'By Saturday, my friends will have organized the whole party.' },
   { type: 'cloze', level: 5, text: 'Para las cinco, yo ya ___ (hacer) toda la compra.', inf: 'hacer', tense: 'futperf', person: 'yo', en: "By five o'clock, I will have already done all the shopping." },
   { type: 'cloze', level: 5, text: 'Con más información, yo ___ (invertir) en esa empresa.', inf: 'invertir', tense: 'condperf', person: 'yo', en: 'With more information, I would have invested in that company.' },
@@ -224,7 +224,7 @@ window.APPLY_ITEMS = [
   { type: 'transform', level: 1, instruction: 'Change the subject to nosotros:', from: 'Tú manejas rápido.', to: 'Nosotros manejamos rápido.', en: 'We drive fast.' },
   { type: 'transform', level: 1, instruction: 'Make it negative:', from: 'Ella entiende el problema.', to: 'Ella no entiende el problema.', en: "She doesn't understand the problem." },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Yo envío el correo.', to: 'Yo envié el correo.', en: 'I sent the email.' },
-  { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Nosotros vivimos en Madrid.', to: 'Nosotros vivíamos en Madrid.', en: 'We used to live in Madrid.' },
+  { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Nosotros vivimos en Medellín.', to: 'Nosotros vivíamos en Medellín.', en: 'We used to live in Medellín.' },
   { type: 'transform', level: 2, instruction: 'Change the subject to ustedes:', from: 'Yo gasté mucho dinero.', to: 'Ustedes gastaron mucho dinero.', en: 'You all spent a lot of money.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Tú eliges la universidad.', to: 'Tú elegiste la universidad.', en: 'You chose the university.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Yo trabajo en una tienda.', to: 'Yo trabajaba en una tienda.', en: 'I used to work in a store.' },
@@ -329,7 +329,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (terminar) el informe a tiempo.', inf: 'terminar', tense: 'preterito', person: 'yo', en: 'Yesterday I finished the report on time.' },
   { type: 'cloze', level: 1, text: 'Ella ___ (ganar) un buen sueldo en su trabajo.', inf: 'ganar', tense: 'presente', person: 'él/ella', en: 'She earns a good salary at her job.' },
 
-  { type: 'cloze', level: 1, text: 'El verano pasado nosotros ___ (viajar) por el sur de España.', inf: 'viajar', tense: 'preterito', person: 'nosotros', en: 'Last summer we traveled around the south of Spain.' },
+  { type: 'cloze', level: 1, text: 'El verano pasado nosotros ___ (viajar) por el sur de México.', inf: 'viajar', tense: 'preterito', person: 'nosotros', en: 'Last summer we traveled around the south of Mexico.' },
   { type: 'cloze', level: 1, text: 'Mi madre ___ (cocinar) muy bien los fines de semana.', inf: 'cocinar', tense: 'presente', person: 'él/ella', en: 'My mother cooks very well on weekends.' },
   { type: 'cloze', level: 1, text: 'Anoche yo ___ (bailar) toda la noche en la fiesta.', inf: 'bailar', tense: 'preterito', person: 'yo', en: 'Last night I danced all night at the party.' },
   { type: 'cloze', level: 1, text: 'Nosotros ___ (caminar) al trabajo todos los días.', inf: 'caminar', tense: 'presente', person: 'nosotros', en: 'We walk to work every day.' },
@@ -889,8 +889,8 @@ window.APPLY_ITEMS = [
     why: 'Location always takes estar.', en: 'Where is the train station?' },
   { type: 'choice', level: 1, focus: 'ser-estar', text: 'Hoy ___ martes.', options: ['es', 'está'], answer: 0,
     why: 'Days and dates take ser, even though they change.', en: 'Today is Tuesday.' },
-  { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mis padres ___ de Sevilla.', options: ['son', 'están'], answer: 0,
-    why: 'Origin is ser: where you are FROM, not where you are.', en: 'My parents are from Seville.' },
+  { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mis padres ___ de Cali.', options: ['son', 'están'], answer: 0,
+    why: 'Origin is ser: where you are FROM, not where you are.', en: 'My parents are from Cali.' },
   { type: 'choice', level: 2, focus: 'ser-estar', text: 'Carlos ___ muy callado hoy, ¿le pasa algo?', options: ['es', 'está'], answer: 1,
     why: 'Estar makes it a change from normal; ser would mean he is a quiet person.', en: 'Carlos is very quiet today, is something wrong?' },
   { type: 'choice', level: 2, focus: 'ser-estar', text: 'El examen ___ en el aula 12.', options: ['es', 'está'], answer: 0,
@@ -990,6 +990,8 @@ window.APPLY_ITEMS = [
   { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: '___ idiomas es muy útil.', options: ['Aprender', 'Aprendiendo'], answer: 0,
     why: 'English uses -ing as a noun; Spanish uses the infinitive.', en: 'Learning languages is very useful.' },
   { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: 'Estoy ___ la cena ahora mismo.', options: ['preparando', 'preparar'], answer: 0,
-    why: 'After estar, the gerund: something in progress right now.', en: 'I am making dinner right now.' }
+    why: 'After estar, the gerund: something in progress right now.', en: 'I am making dinner right now.' },
+  { type: 'cloze', level: 1, text: '¿Cuántos años ___ (tener) tu hermano?', inf: 'tener', tense: 'presente', person: 'él/ella', en: 'How old is your brother?' },
+  { type: 'cloze', level: 1, text: 'Mis primos ___ (tener) diez y doce años.', inf: 'tener', tense: 'presente', person: 'ellos', en: 'My cousins are ten and twelve years old.' }
 
 ];

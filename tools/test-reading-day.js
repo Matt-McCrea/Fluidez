@@ -298,5 +298,20 @@ ok(pl.steer === null, 'only yesterday counts');
   KNOWN = null;
 }
 
+/* ---- placed C1 learner on day 1 reads a C1 passage, not a beginner text -------- */
+{
+  KNOWN = null;
+  const studied = {}, c1 = window.COURSE_BANDS['C1'];
+  window.COURSE_DAYS.forEach((d, i) => { if (i < c1 && d.lesson) studied[d.lesson] = 1; });
+  store = { 'fluidez.progress': JSON.stringify({ studied }) };
+  window.Profile.set('C1'); S = reload();
+  const cc = S._build({ seed: 5, over: { di: 0 } });
+  if (process.env.DBG) { const k = window.Known.forLearner({studied}, c1); const ps = window.PASSAGES.filter(x => (x.level||1) >= 8); console.log('lvl', cc.level, cc.lesson && cc.lesson.id, cc.lesson && cc.lesson.level, 'C1 pass', ps.length, 'known', k.size, 'band', window.Profile.params().cefr, 'bandstart', c1, JSON.stringify(window.LEVELS.map(l=>l.code))); }
+  const lv = cc.passage && (cc.passage.level || 1);
+  ok(cc.passage && lv >= 8 && lv <= 10, 'a placed C1 learner on day 1 gets a level 8 to 10 passage (level ' + lv + ', gaps ' + cc.gaps.map(g => g.kind).join(',') + ')');
+  ok(!cc.gaps.some(g => g.kind === 'passage-below-band'), 'no passage-below-band is logged for the placed C1 learner');
+  window.Profile.set('A1'); S = reload();
+}
+
 console.log('\n' + (n - fails) + '/' + n + ' passed');
 process.exit(fails ? 1 : 0);

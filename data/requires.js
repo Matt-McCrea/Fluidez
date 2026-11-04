@@ -688,6 +688,8 @@ window.REQUIRES = {
 "apply:715":{"r":["g:present-ar","g:reflexive-routine","g:si-present","g:stem-boot","l:casa","l:llover","l:quedarse"],"f":[15,23],"c":"high"},
 "apply:716":{"r":["g:ser-identity","g:verb-infinitive","l:aprender","l:idioma","l:ser","l:útil","p:es-adj-inf","p:quantifiers-basic"],"f":[17,19],"c":"high"},
 "apply:717":{"r":["g:estar-gerund","g:estar-location-states","g:gender-articles","l:ahora","l:cena","l:estar","l:preparar"],"f":[0,16],"c":"high"},
+"apply:718":{"r":["c:tienes","g:questions","g:stem-boot","l:año","l:cuánto","l:hermano","l:tener","p:possessives-basic","p:tener-anos"],"f":[14,30],"c":"high"},
+"apply:719":{"r":["c:tienes","g:stem-boot","l:año","l:primo","l:tener","p:masculine-plural-mixed","p:possessives-basic","p:tener-anos"],"f":[11,22],"c":"high"},
 "apply:72":{"r":["c:tienes","g:stem-boot","l:hambre","l:tener","p:tener-hambre"],"f":[5,10],"c":"high"},
 "apply:73":{"r":["g:present-ar","l:trabajar","p:quantifiers-basic"],"f":[9,19],"c":"high"},
 "apply:74":{"r":["c:hago-salgo-vengo","g:gender-articles","g:preterite-ser-ir-hacer","g:yo-irregular","l:hacer","l:tarea"],"f":[3,16],"c":"high"},

@@ -48,6 +48,15 @@ ok(window.VOCAB_ADJECTIVES.every(a => window.VOCAB.some(w => w.es === a)), 'list
     ok(m <= 2, 'day ' + d + ' draws at most two words from one category (max ' + m + ')');
   }
   ok(days > 0, 'the draw produced words on at least one day');
+
+  // the lesson's keyword table comes first, whatever the vocabulary order says
+  for (const k of Object.keys(store)) delete store[k];
+  sb.SRS._reset();
+  const late = [], cats = new Set();
+  sb.VOCAB.filter(w => (w.cefr || 'A1') === 'A1' && w.es && !/\s/.test(w.es) && order.indexOf(w.cat) < 0).forEach(w => { if (late.length < 3 && !cats.has(w.cat)) { cats.add(w.cat); late.push(w); } });
+  const out = SR.newToday({ mode: 'diaria', rng: Math.random, lesson: { keywords: late.map(w => ({ es: w.es, en: w.en })) } });
+  const names = out.slice(0, late.length).map(c => c.es).sort().join('|');
+  ok(late.length === 3 && names === late.map(w => w.es).sort().join('|'), 'New today draws the lesson keywords first (' + names + ')');
 }
 
 // UI dash helper (pure parts, loaded with a stub document)

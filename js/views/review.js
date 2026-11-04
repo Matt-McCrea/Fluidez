@@ -257,8 +257,14 @@ window.StageReview = (function () {
       var fTheme = window.Focus ? window.Focus.theme() : null;
       var px = (ctx && ctx.passage && ctx.passage.text && window.LexMatch)
         ? window.LexMatch.index(ctx.passage.text) : null;
-      var prefer = (px || fTheme) ? function (it) {
-        return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
+      /* The lesson's own keyword table comes first (words not yet enrolled: cands already drops those), then the
+       * reading, then the theme, then the ordered vocabulary. */
+      var bare = function (w) { return String(w || '').trim().toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, ''); };
+      var kw = {};
+      ((ctx && ctx.lesson && ctx.lesson.keywords) || []).forEach(function (k) { if (k && k.es) kw[bare(k.es)] = 1; });
+      var hasKw = Object.keys(kw).length > 0;
+      var prefer = (px || fTheme || hasKw) ? function (it) {
+        return (hasKw && it.es && kw[bare(it.es)] ? 4 : 0) + (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
       } : null;
       /* At most two new words per category (theme when there is no category)
        * a day, so a whole set such as family members never arrives at once.
