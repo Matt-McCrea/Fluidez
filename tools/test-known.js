@@ -41,6 +41,18 @@ const FILES = ['data/taxonomy.js', 'data/connectors.js', 'data/verbs.js', 'data/
 FILES.forEach(f => (0, eval)(fs.readFileSync(path.join(ROOT, f), 'utf8')));
 (0, eval)(fs.readFileSync(path.join(ROOT, 'js/lib.bundle.js'), 'utf8') + '\n;globalThis.LIB = LIB;');
 (0, eval)(fs.readFileSync(path.join(ROOT, 'js/known.js'), 'utf8'));
+/* The sentence bank (js/bankitems.js). BANK_BANDS=A1,A2 by default; NOBANK=1 measures the authored pools alone
+ * (the "before" numbers); BANK_BANDS=A1,A2,B1,B2,C1 loads everything (about 27 MB, a few seconds). */
+(0, eval)(fs.readFileSync(path.join(ROOT, 'js/bankitems.js'), 'utf8'));
+const BANK_ON = !process.env.NOBANK;
+const BANK_BANDS = (process.env.BANK_BANDS || 'A1,A2').split(',');
+if (BANK_ON) BANK_BANDS.forEach(b => {
+  const t0 = Date.now();
+  (0, eval)(fs.readFileSync(path.join(ROOT, 'data/bank/' + b + '.js'), 'utf8'));
+  window.BankItems.install(b);
+  console.log('bank ' + b + ' loaded and indexed in ' + (Date.now() - t0) + ' ms (' + window['BANK_' + b].length + ' rows)');
+});
+const BI = window.BankItems;
 ['Review', 'Learn', 'Comprehend', 'Apply', 'Produce'].forEach(k => { window['Stage' + k] = { key: k.toLowerCase(), run() {} }; });
 (0, eval)(fs.readFileSync(path.join(ROOT, 'js/session.js'), 'utf8'));
 const S = window.Session, K = window.Known;
@@ -51,7 +63,7 @@ const median = a => { if (!a.length) return 0; const s = a.slice().sort((x, y) =
 const days = window.COURSE_DAYS, bands = window.COURSE_BANDS;
 const BAND_ORDER = Object.keys(bands).sort((a, b) => bands[a] - bands[b]);
 const aIx = new Map(); window.APPLY_ITEMS.forEach((x, i) => aIx.set(x, i));
-const aKey = x => 'apply:' + aIx.get(x), wKey = t => 'writing:' + t.id, pKey = p => 'passage:' + p.id;
+const aKey = x => x.key || ('apply:' + aIx.get(x)), wKey = t => t.key || ('writing:' + t.id), pKey = p => 'passage:' + p.id;
 const lessonIds = days.map(d => d.lesson || null);
 
 function setLearner(i) {
@@ -60,6 +72,12 @@ function setLearner(i) {
   store = {}; K.reset();
   store['fluidez.progress'] = JSON.stringify({ studied, courseSig: null });
   return studied;
+}
+/* a bank item targets today when its row practises or needs one of today's non-lexeme nodes (the same test as Known.targets) */
+function bankHit(x, today) {
+  if (!x.bankId) return false;
+  const r = BI.row(x.bankId);
+  return !!r && (r.t.concat(r.r)).some(n => today.has(n) && n.charAt(0) !== 'l');
 }
 function bandOf(i) { return days[i].band; }
 
@@ -83,18 +101,22 @@ for (let i = 0; i < days.length; i++) {
   const known = K.forLearner({ studied }, i), today = ctx.nodes;
   const ungated = st => ctx.gaps.some(g => g.kind === 'ungated' && g.stage === st);
   const P = per[b] || (per[b] = { days: 0, apply: [], write: [], pass: [], unA: [], unW: [], unP: [], totA: [], totW: [], totP: [],
-    weak: 0, items: 0, hit: 0, gaps: { ungated: 0, reuse: 0, 'authored-repeat': 0 }, bad: 0, noToday: 0 });
+    weak: 0, items: 0, hit: 0, gaps: { ungated: 0, reuse: 0, 'authored-repeat': 0, 'bank-empty': 0, 'bank-unit-fallback': 0, 'bank-unloaded': 0 }, bad: 0, noToday: 0, weakNodes: 0, bank: [], bankItems: 0, bankApply: 0, bankWrite: 0, kinds: {} });
   P.days++;
-  ctx.gaps.forEach(g => { P.gaps[g.kind]++; });
+  ctx.gaps.forEach(g => { P.gaps[g.kind] = (P.gaps[g.kind] || 0) + 1; });
   // violations
-  const chk = (list, kf, st) => list.forEach(x => { if (!K.allows(kf(x), known, today, b) && !ungated(st)) { P.bad++; bad.push(b + ' day ' + i + ' ' + kf(x)); } });
+  const chk = (list, kf, st) => list.forEach(x => { const okx = x.bankId ? BI.allowed(BI.row(x.bankId), known, today, b) : K.allows(kf(x), known, today, b); if (!okx && !ungated(st)) { P.bad++; bad.push(b + ' day ' + i + ' ' + kf(x)); } });
   chk(ctx.applyItems, aKey, 'apply'); chk(ctx.writeTasks, wKey, 'produce'); if (ctx.passage) chk([ctx.passage], pKey, 'comprehend');
   // alignment
   const items = ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey));
-  const hit = items.filter(k => K.targets(k, today)).length;
+  const bankItems = ctx.applyItems.concat(ctx.writeTasks).filter(x => x.bankId);
+  const hit = ctx.applyItems.filter(x => bankHit(x, today) || (!x.bankId && K.targets(aKey(x), today))).length + ctx.writeTasks.filter(x => bankHit(x, today) || (!x.bankId && K.targets(wKey(x), today))).length;
+  P.bankItems += bankItems.length; P.bankApply += ctx.applyItems.filter(x => x.bankId).length; P.bankWrite += ctx.writeTasks.filter(x => x.bankId).length;
+  bankItems.forEach(x => { P.kinds[x.bankKind] = (P.kinds[x.bankKind] || 0) + 1; });
+  if (BANK_ON && BI.ready(b)) P.bank.push(BI.forNodes(today, known, { band: b }).length);
   P.items += items.length; P.hit += hit;
   if (!today.size) P.noToday++;
-  if (items.length && hit * 2 < items.length) { P.weak++; weak.push({ i, b, lesson: ctx.lesson ? ctx.lesson.id : (ctx.focus.type + ':' + (ctx.focus.verbs || []).join('+')), hit, n: items.length, today: today.size }); }
+  if (items.length && hit * 2 < items.length) { P.weak++; if (today.size) P.weakNodes++; weak.push({ i, b, lesson: ctx.lesson ? ctx.lesson.id : (ctx.focus.type + ':' + (ctx.focus.verbs || []).join('+')), hit, n: items.length, today: today.size }); }
   // supply: items at this level, allowed vs not
   const lv = x => (x.level || 1) <= ctx.level;
   const A = window.APPLY_ITEMS.filter(lv), W = window.WRITING_TASKS.filter(lv), Ps = window.PASSAGES.filter(lv);
@@ -112,11 +134,19 @@ bad.slice(0, 10).forEach(x => console.log('   ' + x));
 console.log('\nALIGNMENT: days where fewer than half the Apply + writing items target today\'s nodes');
 BAND_ORDER.forEach(b => { const P = per[b]; if (!P) return;
   console.log(`  ${b}: ${P.weak}/${P.days} days weak; ${P.hit}/${P.items} items target today (${(100 * P.hit / Math.max(1, P.items)).toFixed(0)}%); days with no today nodes ${P.noToday}`); });
+BAND_ORDER.forEach(b => { const P = per[b]; if (!P) return;
+  const share = 100 * (P.days - P.weak) / Math.max(1, P.days);
+  const withNodes = P.days - P.noToday, shareN = 100 * (withNodes - P.weakNodes) / Math.max(1, withNodes);
+  console.log(`  ${b}: ${share.toFixed(0)}% of days (${shareN.toFixed(0)}% of the ${withNodes} days that teach a node; a day with no node of its own cannot target one) have at least half their items on today's nodes; bank items served ${P.bankItems} (apply ${P.bankApply}, translate ${P.bankWrite}) ${JSON.stringify(P.kinds)}`);
+  if (BANK_ON && BI.ready(b) && (b === 'A1' || b === 'A2')) ok(shareN >= 80, b + ': at least half the items target today on at least 80% of days that teach a node (' + shareN.toFixed(0) + '%)');
+});
+console.log('BANK SUPPLY per day: rows for today\'s nodes, allowed and deduped (min / median)');
+BAND_ORDER.forEach(b => { const P = per[b]; if (!P || !P.bank.length) return; console.log(`  ${b}: ${Math.min(...P.bank)} / ${median(P.bank)}  over ${P.bank.length} days; days with none: ${P.bank.filter(n => !n).length}`); });
 console.log('first 20 weak days:');
 weak.slice(0, 20).forEach(w => console.log(`  day ${w.i} ${w.b} ${w.lesson}: ${w.hit}/${w.n} target, ${w.today} today nodes`));
 
-console.log('\nGAPS per band (days with at least one entry counted by entry): ungated / reuse / authored-repeat');
-BAND_ORDER.forEach(b => { const P = per[b]; if (P) console.log(`  ${b}: ${P.gaps.ungated} / ${P.gaps.reuse} / ${P.gaps['authored-repeat']}  over ${P.days} days`); });
+console.log('\nGAPS per band (days with at least one entry counted by entry): ungated / reuse / authored-repeat / bank-empty / bank-unit-fallback / bank-unloaded');
+BAND_ORDER.forEach(b => { const P = per[b]; if (P) console.log(`  ${b}: ${P.gaps.ungated} / ${P.gaps.reuse} / ${P.gaps['authored-repeat']} / ${P.gaps['bank-empty']} / ${P.gaps['bank-unit-fallback']} / ${P.gaps['bank-unloaded']}  over ${P.days} days`); });
 
 console.log('\nSUPPLY per day, allowed at the learner\'s level (min / median)  [unavailable on average out of the level pool]');
 BAND_ORDER.forEach(b => { const P = per[b]; if (!P) return;

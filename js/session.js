@@ -199,11 +199,12 @@ window.Session = (function () {
   function saveSeen(o) { try { localStorage.setItem(SEEN_KEY, JSON.stringify(o)); } catch (e) {} }
   var _applyIx = null, _applyIxSrc = null;
   function applyKey(it) {
+    if (it && it.key) return it.key;                  // a bank item: bank:<id>
     var src = window.APPLY_ITEMS || [];
     if (_applyIxSrc !== src) { _applyIx = new Map(); src.forEach(function (x, i) { _applyIx.set(x, i); }); _applyIxSrc = src; }
     return 'apply:' + _applyIx.get(it);
   }
-  function writeKey(t) { return 'writing:' + t.id; }
+  function writeKey(t) { return t.key || ('writing:' + t.id); }
   function passageKey(p) { return 'passage:' + p.id; }
   /* Record what a session served. Called once when a fresh (non-repeat) session
    * starts, not from buildContext: the home screen and a resume build contexts
@@ -730,6 +731,86 @@ window.Session = (function () {
     }
     var chosenPassage = named0 || richest(storyPool.length ? storyPool : passages);
 
+    /* ---- THE SENTENCE BANK AS THE PRACTICE SUPPLY (js/bankitems.js) ----------
+     * The authored pools are small, so on most days few of their items exercise
+     * what today teaches. After they are gated and chosen, the bank tops up:
+     *   Apply: at least half the day's items target today's nodes. Structured
+     *     input first on a lesson day with a grammar node, then cloze, then gap.
+     *   Produce: the translate slot(s) come from the bank for today's nodes.
+     * Rows come from forNodes (allowed by Known, unseen for 14 days, deduped).
+     * Nothing for today is logged in ctx.gaps ({kind:'bank-empty'}); a band
+     * that is not loaded yet is logged too ({kind:'bank-unloaded'}).
+     * Bank items carry key 'bank:<id>', so the ledger records them. */
+    var applyN = big ? 12 : (mode === 'corto' ? 4 : 6);
+    var applyPicks = choose(apply, applyN, applyKey, clozeMatchesFocus, 'apply');
+    var BI = window.BankItems;
+    if (gating && BI && band) {
+      if (!BI.ready(band)) {
+        gaps.push({ kind: 'bank-unloaded', stage: 'apply' });
+      } else {
+        var rows = tNodes.size ? BI.forNodes(tNodes, known, { band: band, recent: recent }) : [];
+        /* A day that teaches no node of its own (a can-do day) practises the unit so far. */
+        if (!rows.length && focus.unit) {
+          var uNodes = Kn.todayNodes({ type: 'practice', unit: focus.unit }, gi);
+          rows = BI.forNodes(uNodes, known, { band: band, recent: recent });
+          if (rows.length) gaps.push({ kind: 'bank-unit-fallback', stage: 'apply' });
+        }
+        if (!rows.length) gaps.push({ kind: 'bank-empty', stage: 'apply' });
+        else {
+          var pool = sample(rows.slice(0, rows.primary), 600, rng).concat(sample(rows.slice(rows.primary), 300, rng)), used = {}, bankApply = [];
+          var isHit = function (x) { return x.bankId ? true : Kn.targets(applyKey(x), tNodes); };
+          // Produce first: the translate slot(s) and the build come from the bank, then Apply fills the rest of the half
+          var len = level >= 3 ? 16 : 10, free = function () { return rows.filter(function (r) { return !used[r.id]; }); };
+          var tCount = produce.filter(function (t) { return t.type === 'translate'; }).length;
+          if (tCount) {
+            var shortRows = free().filter(function (r) { return BI.words(r.es) >= 3 && BI.words(r.es) <= len; });
+            var tp = sample(shortRows.length >= tCount ? shortRows : free(), tCount, rng);
+            tp.forEach(function (r) { used[r.id] = 1; });
+            if (tp.length) {
+              var ti = 0;
+              produce = produce.map(function (t) { return t.type === 'translate' && ti < tp.length ? BI.translate(tp[ti++]) : t; });
+            } else gaps.push({ kind: 'bank-empty', stage: 'produce' });
+          }
+          var bi = -1;
+          produce.forEach(function (t, i) { if (t.type === 'build' && bi < 0) bi = i; });
+          if (bi >= 0) {
+            var bs = sample(free().filter(function (r) { return BI.build(r); }), 1, rng)[0];
+            if (bs) { used[bs.id] = 1; produce[bi] = BI.build(bs); }
+          }
+          var pHit = produce.filter(function (t) { return t.bankId; }).length;
+          var total = applyN + produce.length;
+          var need = Math.max(Math.ceil(applyN / 2) - applyPicks.filter(isHit).length,
+                              Math.ceil(total / 2) - pHit - applyPicks.filter(isHit).length);
+          need = Math.min(need, applyN - applyPicks.filter(isHit).length);
+          var hasGrammar = false;
+          tNodes.forEach(function (n) { if (n.charAt(0) === 'g') hasGrammar = true; });
+          var order = (focus.type === 'grammar' && hasGrammar) ? ['read', 'cloze', 'gap', 'match'] : ['cloze', 'gap', 'read', 'match'];
+          var maker = { read: function (r) { return BI.readAndPick(r, rng); }, cloze: BI.cloze, gap: function (r) { return BI.gap(r, rng); },
+                        match: function (r) { return BI.matchSentence(r, rng); } };
+          for (var slot = 0; slot < need; slot++) {
+            /* the preferred kind first (two slots of three on a lesson day), the others as fallbacks */
+            var first = slot % 3 === 2 ? order[1] : order[0], kinds = [first].concat(order.filter(function (k) { return k !== first; }));
+            var item = null;
+            for (var ki = 0; ki < kinds.length && !item; ki++) {
+              for (var ri = 0, seen2 = 0; ri < pool.length && seen2 < 250 && !item; ri++) {
+                if (used[pool[ri].id]) continue;
+                seen2++;
+                item = maker[kinds[ki]](pool[ri]);
+                if (item) used[pool[ri].id] = 1;
+              }
+            }
+            if (!item) { gaps.push({ kind: 'bank-empty', stage: 'apply' }); break; }
+            bankApply.push(item);
+          }
+          if (bankApply.length) {
+            // bank items replace authored picks that do not target today
+            var keep = applyPicks.filter(isHit), drop = applyPicks.filter(function (x) { return !isHit(x); });
+            applyPicks = keep.concat(bankApply, drop.slice(0, Math.max(0, applyN - keep.length - bankApply.length)));
+          }
+        }
+      }
+    }
+
     return {
       day: day,
       di: f.di,
@@ -745,7 +826,7 @@ window.Session = (function () {
       mode: mode,
       passage: chosenPassage,
       passageTier: storyTier,
-      applyItems: breakRuns(choose(apply, big ? 12 : (mode === 'corto' ? 4 : 6), applyKey, clozeMatchesFocus, 'apply'), shapeOf, MAX_RUN),
+      applyItems: breakRuns(applyPicks, shapeOf, MAX_RUN),
       writeTasks: breakRuns(produce, shapeOf, MAX_RUN),
       rng: rng,
       gaps: gaps,
@@ -981,7 +1062,10 @@ window.Session = (function () {
       lessonId: c.lesson ? c.lesson.id : null,
       passageId: c.passage ? c.passage.id : null,
       applyIx: (c.applyItems || []).map(function (x) { return ai.indexOf(x); }),
-      writeIds: (c.writeTasks || []).map(function (t) { return t.id; })
+      // bank items are not in APPLY_ITEMS: kept by row id and kind, rebuilt on restore
+      applyBank: (c.applyItems || []).map(function (x) { return x.bankId ? { id: x.bankId, kind: x.bankKind } : null; }),
+      writeIds: (c.writeTasks || []).map(function (t) { return t.id; }),
+      writeBank: (c.writeTasks || []).map(function (t) { return t.bankId ? t.bankKind : null; })
     };
   }
   function persist() {
@@ -999,8 +1083,13 @@ window.Session = (function () {
     var c = buildContext({ seed: rec.ctxSeed, over: snap, repeat: rec.repeat });
     if (snap.lessonId && (!c.lesson || c.lesson.id !== snap.lessonId)) return false;
     var ai = window.APPLY_ITEMS || [], wt = window.WRITING_TASKS || [];
-    var apply = (snap.applyIx || []).map(function (n) { return ai[n]; });
-    var writes = (snap.writeIds || []).map(function (id) {
+    var BI = window.BankItems, rs = UI.seededRandom('r:' + rec.ctxSeed);
+    var apply = (snap.applyIx || []).map(function (n, i) {
+      var b = snap.applyBank && snap.applyBank[i];
+      return b ? (BI ? BI.make(b.kind, BI.row(b.id), rs) : null) : ai[n];
+    });
+    var writes = (snap.writeIds || []).map(function (id, i) {
+      if (/^bank:/.test(id)) return BI ? BI.make((snap.writeBank && snap.writeBank[i]) || 'translate', BI.row(id.slice(5)), rs) : null;
       return wt.filter(function (t) { return t.id === id; })[0];
     });
     if (apply.some(function (x) { return !x; }) || writes.some(function (x) { return !x; })) return false;
@@ -1170,17 +1259,27 @@ window.Session = (function () {
   /* Straight into the first stage. There used to be an intro screen here
    * naming the unit, the goal and today's lesson; all of that now lives on
    * the home card, which is where the learner decides whether to start. */
+  /* The sentence bank is a few megabytes per band and loaded on demand; a
+   * session waits for it (and for the band below) before it is built. Offline
+   * with nothing cached, it goes ahead without: the authored pools carry it. */
+  function withBank(fn) {
+    var BI = window.BankItems, b = bandNow();
+    if (!BI || !b || BI.ready(b)) { fn(); return; }
+    BI.load(b, function () { fn(); });
+  }
   function begin(m, over, repeat) {
     if (m && MODES[m]) mode = m;
     host = document.getElementById('stage-host');
     bar = document.getElementById('session-progress-fill');
-    var seed = Math.floor(Math.random() * 1e9);
-    ctx = buildContext({ seed: seed, over: over, repeat: repeat });
-    ctx.snap = makeSnap(ctx);
-    markSeen(ctx);
-    idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
-    persist();
-    runStage();
+    withBank(function () {
+      var seed = Math.floor(Math.random() * 1e9);
+      ctx = buildContext({ seed: seed, over: over, repeat: repeat });
+      ctx.snap = makeSnap(ctx);
+      markSeen(ctx);
+      idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
+      persist();
+      runStage();
+    });
   }
   function start(m) { begin(m, null, false); }
 
@@ -1197,9 +1296,12 @@ window.Session = (function () {
     host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill');
     if (ctx && idx >= 0 && idx < stages().length) { runStage(); return; }
     var rec = pending();
-    if (rec && restore(rec)) { runStage(); return; }
-    dropRec(SKEY); idx = -1; ctx = null;
-    start();
+    if (!rec) { dropRec(SKEY); idx = -1; ctx = null; start(); return; }
+    withBank(function () {
+      if (restore(rec)) { runStage(); return; }
+      dropRec(SKEY); idx = -1; ctx = null;
+      start();
+    });
   }
 
   pending();   // on load: a record from a previous day is discarded here

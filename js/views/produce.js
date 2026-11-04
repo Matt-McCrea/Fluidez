@@ -135,6 +135,75 @@ window.StageProduce = (function () {
     skipB.addEventListener('click', function () { showModel(false); });
   }
 
+  /* ---- translate from the sentence bank -------------------------------------
+   * A bank task carries the model (`es`) and the accepted alternatives
+   * (`accept`), so it is graded by LIB.match.matchTranslation instead of the
+   * constraint checklist: right is right whatever words the learner chose. One
+   * self-correction (lib/match/attempt.ts): a miss shows the matcher's one line
+   * hint and lets the learner try again; a second miss shows the model. Both
+   * attempts count once. A right answer says "Right" and shows the model only
+   * when the matcher noted something (a kept pronoun, an accent slip). */
+  function lines(s) { return String(s || '').replace(/\n/g, '<br>'); }
+  function runBankTranslate(body, task, next) {
+    var M = window.LIB && window.LIB.match;
+    body.appendChild(UI.el('h2', 'q-text', 'Say it in Spanish:'));
+    body.appendChild(UI.el('p', 'cloze-text', '“' + lines(task.prompt) + '”'));
+    var ta = UI.el('textarea', 'answer-area');
+    ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
+    var fb = UI.el('div', 'feedback');
+    var go = UI.el('button', 'primary-btn', 'Check'); go.type = 'button';
+    var skip = UI.el('button', 'ghost-btn', 'Show answer (I\'m stuck)'); skip.type = 'button';
+    var row = UI.el('div', 'row-controls');
+    row.appendChild(go); row.appendChild(skip);
+    body.appendChild(ta);
+    body.appendChild(UI.accentBar(function () { return ta; }));
+    body.appendChild(fb);
+    body.appendChild(row);
+    ta.focus();
+
+    var state = M ? M.startAttempt({ es: task.es, en: task.prompt, accept: task.accept || [] }, { accents: 'lenient' }) : null;
+    var finished = false;
+
+    function finish(ok, html, cls) {
+      finished = true;
+      fb.className = 'feedback ' + cls;
+      fb.innerHTML = html;
+      ta.readOnly = true;
+      skip.classList.add('hidden');
+      go.textContent = 'Next →'; go.disabled = false;
+      go.onclick = function () { next(ok); };
+    }
+    function reveal(hint) {
+      if (window.ErrorLog) window.ErrorLog.record({ id: 'err:translate:' + E.normalize(task.es), front: task.prompt,
+        back: task.es, hint: hint || null, kind: 'error', source: 'produce-translate', reviewable: true });
+      finish(false, '<div class="model-answer">' + lines(task.es) + '</div>' + (hint ? '<div class="muted small">' + hint + '</div>' : ''), 'bad');
+    }
+    function submit() {
+      if (finished) return;
+      var text = ta.value.trim();
+      if (!text) return;
+      if (!M) { reveal(null); return; }
+      var step = M.submitAttempt(state, text);
+      state = step.state;
+      var res = step.result;
+      if (step.status === 'correct') {
+        var note = res.note || (res.near ? res.hint : '');
+        finish(true, 'Right' + (note ? '. ' + note + '<div class="model-answer">' + lines(task.es) + '</div>' : ''), 'good');
+      } else if (step.status === 'retry') {
+        fb.className = 'feedback bad';
+        fb.textContent = (res.hint || 'Not quite.') + ' Try once more.';
+        ta.focus();
+      } else {
+        reveal(res.hint || null);
+      }
+    }
+    go.onclick = submit;
+    skip.addEventListener('click', function () { if (!finished) reveal(null); });
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (finished) go.click(); else submit(); }
+    });
+  }
+
   function run(host, ctx, done) {
     var tasks = ctx.writeTasks || [];
     if (!tasks.length) { done(); return; }
@@ -164,6 +233,7 @@ window.StageProduce = (function () {
       var next = function (completed) { if (completed !== false) doneCount++; i++; show(); };
       if (t.type === 'build') runBuild(body, t, next);
       else if (t.type === 'essay' && window.Essay) window.Essay.mount(body, t, { onDone: next });
+      else if (t.type === 'translate' && t.es && window.LIB && window.LIB.match) runBankTranslate(body, t, next);
       else runWrite(body, t, next);
     }
     show();
