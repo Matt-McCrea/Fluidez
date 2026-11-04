@@ -1,0 +1,1745 @@
+{
+  "dlg-presentarse": {
+    "teaches": [
+      "c:hola-buenos-dias",
+      "c:me-llamo",
+      "c:soy-de",
+      "c:mucho-gusto"
+    ],
+    "note": "A first-meeting dialogue for reception; teaches the greeting chunks it is built from. Derived g:reflexive-routine came from me llamo."
+  },
+  "gr-sonidos-a1": {
+    "teaches": [
+      "g:sounds-letters"
+    ],
+    "note": "Five vowels and the consonants that surprise."
+  },
+  "presente": {
+    "teaches": [
+      "g:present-ar",
+      "g:present-er-ir",
+      "g:stem-boot",
+      "g:stem-e-i",
+      "g:yo-irregular",
+      "g:vosotros-recognition"
+    ],
+    "note": "Tense lesson: every present-tense node in the graph (pcic 9.1.1 form nodes). The endings table and pitfalls cover all three conjugations, the stem changers (e-ie, o-ue, e-i), the odd yo, and the vosotros forms (-áis, -éis, -ís)."
+  },
+  "fn-responder-saludo-a2": {
+    "teaches": [
+      "d:answer-greeting",
+      "c:bien-y-tu",
+      "c:querido-querida",
+      "g:written-register-a2",
+      "c:cuanto-tiempo"
+    ],
+    "note": "Answering a greeting, and greeting in writing (Querido/a, Estimada señora López: Le escribo para…), which is g:written-register-a2's own example."
+  },
+  "ser-estar": {
+    "teaches": [
+      "g:ser-identity",
+      "g:estar-location-states",
+      "g:ser-estar-adjectives",
+      "x:ser-estar-adj"
+    ],
+    "note": "Concept contrast: ser for identity, origin, traits, time; estar for location, states, ongoing action; the contrasts are es aburrido / esta aburrido and es rico / esta rico, which is g:ser-estar-adjectives and x:ser-estar-adj."
+  },
+  "nt-origen-a1": {
+    "teaches": [
+      "g:ser-identity",
+      "c:soy-de",
+      "p:tener-anos"
+    ],
+    "note": "Where you are from (ser + nationality, ser de + place) and age with tener años."
+  },
+  "fn-agradecer-a1": {
+    "teaches": [
+      "c:gracias-de-nada",
+      "p:gracias-por",
+      "d:thank-and-reply"
+    ],
+    "note": "Thanking and the replies to thanks."
+  },
+  "task-presentarse": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-interrogativos-a1": {
+    "teaches": [
+      "g:questions"
+    ],
+    "note": "Question words qué, quién, dónde, cuánto, cómo. PCIC had p:tener-anos."
+  },
+  "gr-acentuacion-a1": {
+    "teaches": [
+      "g:sounds-letters"
+    ],
+    "note": "Stress rules and the written accent; g:sounds-letters covers the stress mark."
+  },
+  "gr-pronombre-sujeto-a1": {
+    "teaches": [
+      "x:tu-usted",
+      "g:vosotros-recognition"
+    ],
+    "note": "Subject pronouns, including vosotros, and pro-drop. The graph has no subject-pronoun or pro-drop node; x:tu-usted is the closest (usted takes the él endings). g:vosotros-recognition because the forms table teaches vosotros as a pronoun of the learner's own Spanish."
+  },
+  "task-preguntar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-adverbios-afirmacion-negacion-a1": {
+    "teaches": [
+      "p:tambien-tampoco"
+    ],
+    "note": "Confirmed: sí, no, también, tampoco."
+  },
+  "task-cortesia": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-numerales-a1": {
+    "teaches": [
+      "p:numbers-un-una",
+      "p:ordinals-primer-tercer"
+    ],
+    "note": "Confirmed: cardinals and ordinals, primer and tercer."
+  },
+  "nt-referencias-generales-a1": {
+    "teaches": [
+      "p:telling-time",
+      "c:que-hora-es",
+      "p:days-el-lunes",
+      "p:frequency-scale"
+    ],
+    "note": "Time, days, parts of the day, frequency."
+  },
+  "nt-valor-precio-a1": {
+    "teaches": [
+      "d:buy-at-market",
+      "p:costar-pagar",
+      "p:medir-pesar"
+    ],
+    "note": "Confirmed: costar vs pagar, size and measurements."
+  },
+  "task-quedar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-verbos-predicativos-tipos-a2": {
+    "teaches": [
+      "g:gustar-full",
+      "p:me-duele"
+    ],
+    "note": "Backwards verbs encantar and doler with every indirect object pronoun."
+  },
+  "fn-preguntar-gustos-a2": {
+    "teaches": [
+      "d:likes-and-react",
+      "g:gustar-basic",
+      "g:gustar-full",
+      "c:que-te-gusta-hacer"
+    ],
+    "note": "¿Te gusta…? / me gusta, gusta vs gustan, every indirect object pronoun, encantar and interesar."
+  },
+  "fn-valorar-a1": {
+    "teaches": [
+      "d:give-quick-verdict",
+      "d:say-job",
+      "c:a-que-te-dedicas"
+    ],
+    "note": "Confirmed: quick verdicts and what you do."
+  },
+  "task-gustos": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-articulo-indefinido-a1": {
+    "teaches": [
+      "g:gender-articles"
+    ],
+    "note": "un, una, unos, unas and when not to use them."
+  },
+  "task-cafe": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "preterito": {
+    "teaches": [
+      "g:preterite-ar",
+      "g:preterite-er-ir",
+      "g:preterite-ser-ir-hacer",
+      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem"
+    ],
+    "note": "Tense lesson: every preterite node (pcic 9.1.3 form nodes). The pitfalls cover the strong stems, ser/ir, -ir stem changers and the -qué/-gué/-cé spellings."
+  },
+  "dc-deixis-temporal-a2": {
+    "teaches": [
+      "g:time-sequence",
+      "g:prep-infinitive",
+      "d:join-sentences",
+      "d:tell-anecdote-well"
+    ],
+    "note": "Keeping a story's time-line: antes, después, entonces, luego, and antes de / después de + infinitive."
+  },
+  "nt-expresion-verbal-a2": {
+    "teaches": [
+      "p:preguntar-pedir",
+      "g:reported-past-basic",
+      "c:me-conto-que"
+    ],
+    "note": "preguntar, contestar, decir; decir reports statements (dijo que venía), preguntar reports questions (nos preguntó de dónde éramos), which is g:reported-past-basic."
+  },
+  "task-a2-ayer": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-genero-adjetivo-a1": {
+    "teaches": [
+      "g:adjective-agreement"
+    ],
+    "note": "Adjective gender, including nationality adjectives."
+  },
+  "gr-adjetivos-calificativos-a1": {
+    "teaches": [
+      "g:adjective-agreement",
+      "p:el-rojo-la-grande",
+      "g:superlatives"
+    ],
+    "note": "Adjective position, the article standing alone (el rojo), and the -ísimo superlative section."
+  },
+  "gr-posesivos-forma-a1": {
+    "teaches": [
+      "g:possessives",
+      "p:possessives-basic",
+      "p:de-owner"
+    ],
+    "note": "mi, tu, su, nuestro, vuestro, their position, and resolving su with de + owner (los de ella)."
+  },
+  "gr-demostrativos-distribucion-a1": {
+    "teaches": [
+      "g:demonstratives",
+      "p:demonstratives-basic"
+    ],
+    "note": "este, ese, aquel, the neuter forms, and position."
+  },
+  "nt-familia-a1": {
+    "teaches": [
+      "d:describe-family",
+      "p:masculine-plural-mixed",
+      "c:tienes-hermanos",
+      "p:mayor-menor"
+    ],
+    "note": "Family vocabulary, the mixed masculine plural, older and younger."
+  },
+  "gn-describir-objeto-a1": {
+    "teaches": [
+      "d:describe-object"
+    ],
+    "note": "Confirmed."
+  },
+  "task-describir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-describir-lugar-a1": {
+    "teaches": [
+      "d:describe-place-inventory",
+      "g:hay-vs-esta"
+    ],
+    "note": "Describing a place: ser for quality, hay for what is in it."
+  },
+  "task-direcciones": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-preterito-perfecto-a2": {
+    "teaches": [
+      "g:perfecto-experience",
+      "g:spain-pasts",
+      "x:perfecto-preterito"
+    ],
+    "note": "Tense lesson (perfecto): experience and not-yet, plus the open time frame (hoy, este año + perfecto), which is Spain's usage and the graph's g:spain-pasts; contrasts he comido vs comí, x:perfecto-preterito."
+  },
+  "nt-anterioridad-a2": {
+    "teaches": [
+      "g:acabar-de-ya-todavia",
+      "p:durar-durante",
+      "d:say-how-long-things-last"
+    ],
+    "note": "acabar de, ya vs todavía no, seguir + gerund, and the start, length and end of an action."
+  },
+  "nt-existencia-inexistencia-a2": {
+    "teaches": [
+      "d:say-dates-of-life",
+      "g:indefinites",
+      "p:naci-en",
+      "p:viejo-antiguo-mayor"
+    ],
+    "note": "Denying existence with no hay ningún, nadie, nada; nacer and morir; age words."
+  },
+  "task-a2-experiencia": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-pronombre-se-a1": {
+    "teaches": [
+      "g:reflexive-routine"
+    ],
+    "note": "Reflexive se in daily routines."
+  },
+  "gr-presente-indicativo-valores-a1": {
+    "teaches": [
+      "g:present-ar",
+      "g:present-er-ir"
+    ],
+    "note": "Regular present forms and its two values (now and generally true)."
+  },
+  "gr-adverbios-lugar-tiempo-cantidad-a1": {
+    "teaches": [
+      "p:aqui-ahi-alla",
+      "p:bien-mal-vs-bueno-malo",
+      "x:muy-mucho",
+      "p:quantifiers-basic"
+    ],
+    "note": "Place, time, quantity and manner adverbs; adds the muy vs mucho contrast the lesson teaches."
+  },
+  "task-rutina": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-infinitivo-usos-a1": {
+    "teaches": [
+      "g:verb-infinitive",
+      "g:infinitive-subject",
+      "p:es-adj-inf"
+    ],
+    "note": "Infinitive alone, as subject (es difícil aprender), and as object of another verb."
+  },
+  "gr-oraciones-finales-a1": {
+    "teaches": [
+      "p:para-inf",
+      "p:para-inf-purpose"
+    ],
+    "note": "Confirmed: para + infinitive purpose."
+  },
+  "task-pedir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-relativo-que-a1": {
+    "teaches": [
+      "g:relative-que"
+    ],
+    "note": "Relative que as subject or object."
+  },
+  "gr-objeto-directo-a1": {
+    "teaches": [
+      "p:personal-a",
+      "g:that-clauses"
+    ],
+    "note": "Personal a, and keeping que after creo."
+  },
+  "gr-cuantificadores-no-universales-a1": {
+    "teaches": [
+      "g:quantifiers",
+      "p:quantifiers-basic",
+      "x:muy-mucho",
+      "p:poco-un-poco"
+    ],
+    "note": "poco, mucho, bastante agreement, and muy vs mucho."
+  },
+  "task-contar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gender-articles": {
+    "teaches": [
+      "g:gender-articles",
+      "g:adjective-agreement"
+    ],
+    "note": "Concept lesson: gender, the four articles, and the article-noun-adjective agreement chain. The graph has no gender contrast node."
+  },
+  "gr-genero-sustantivos-a1": {
+    "teaches": [
+      "g:gender-articles"
+    ],
+    "note": "Noun gender and its exceptions."
+  },
+  "gr-numero-sustantivos-a1": {
+    "teaches": [
+      "g:gender-articles"
+    ],
+    "note": "Noun plurals (-s, -es, spelling). The graph has no noun-plural node; g:gender-articles (el, la, los, las) is the closest."
+  },
+  "gr-articulo-definido-a1": {
+    "teaches": [
+      "g:gender-articles",
+      "g:article-uses",
+      "p:ir-a-venir-de-place"
+    ],
+    "note": "Definite article position, the al and del contractions, and the article before gustar-type nouns (g:article-uses)."
+  },
+  "task-revisar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "task-escribir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "imperfecto": {
+    "teaches": [
+      "g:imperfect-states",
+      "g:imperfect-habitual"
+    ],
+    "note": "Tense lesson: every imperfect node (pcic 9.1.2): description and habit. g:imperfect-progressive (estaba + gerund) is not in it; g:pret-vs-imperfect goes to the preterite-imperfect lesson."
+  },
+  "nt-localizacion-tiempo-a2": {
+    "teaches": [
+      "p:desde-hasta",
+      "g:hace-ago",
+      "g:hace-que-desde",
+      "x:hace-desde-hace",
+      "c:hace-rato",
+      "c:ahorita"
+    ],
+    "note": "Placing things in time: hace (a point back) vs desde hace (a stretch still open), desde, hasta, durante."
+  },
+  "task-a2-antes": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "preterite-imperfect": {
+    "teaches": [
+      "x:pret-imp",
+      "g:pret-vs-imperfect"
+    ],
+    "note": "Concept contrast: the event (preterite) dropped into the backdrop (imperfect)."
+  },
+  "task-a2-anecdota": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-objeto-indirecto-a2": {
+    "teaches": [
+      "g:indirect-objects",
+      "g:le-doubling",
+      "g:possessive-dative"
+    ],
+    "note": "le and les, doubling, and the possessive and separation datives (robaron la cartera a muchas personas)."
+  },
+  "gr-pronombres-atonos-a2": {
+    "teaches": [
+      "g:direct-objects",
+      "g:indirect-objects",
+      "g:double-pronouns",
+      "x:lo-le",
+      "x:le-se-lo"
+    ],
+    "note": "Object pronouns: lo/la vs le/les, and le turning into se before lo."
+  },
+  "gr-pronombres-tonicos-a2": {
+    "teaches": [
+      "g:prep-pronouns"
+    ],
+    "note": "mí, ti, conmigo, contigo."
+  },
+  "gr-posesivos-tonicos-a2": {
+    "teaches": [
+      "g:possessives-stressed",
+      "x:mi-mio"
+    ],
+    "note": "mío, tuyo, suyo, alone and with the article."
+  },
+  "task-a2-pronombres": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-imperativo-forma-a2": {
+    "teaches": [
+      "g:commands-tu",
+      "g:commands-usted",
+      "g:commands-with-pronouns",
+      "x:commands-tu-usted"
+    ],
+    "note": "Tense lesson (imperativo): affirmative tú, usted, ustedes, vosotros, irregular tú forms, enclitic pronouns. g:negative-commands is left to impneg, which teaches it in full; this lesson is affirmative only."
+  },
+  "dc-atenuacion-1apersona-a2": {
+    "teaches": [
+      "d:polite-requests",
+      "g:se-impersonal",
+      "g:impersonal-obligation",
+      "c:se-puede"
+    ],
+    "note": "se hides the speaker (¿se puede fumar?), hay que hides the target; indirect requests."
+  },
+  "task-a2-pedir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-felicitar-a2": {
+    "teaches": [
+      "p:felicitaciones-por",
+      "c:feliz-cumpleanos",
+      "d:congratulate-wish",
+      "c:que-bien",
+      "c:feliz-navidad"
+    ],
+    "note": "felicidades vs enhorabuena, and ¡qué bien! for good news."
+  },
+  "fn-preguntar-deseos-a2": {
+    "teaches": [
+      "c:me-gustaria",
+      "c:buen-viaje",
+      "c:buen-provecho",
+      "c:mucha-suerte"
+    ],
+    "note": "Asking what someone wants (¿te gustaría?) and good wishes."
+  },
+  "task-a2-animo": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-comparativos-a2": {
+    "teaches": [
+      "g:comparatives",
+      "g:tanto-como",
+      "x:tan-tanto",
+      "p:mayor-menor"
+    ],
+    "note": "más/menos que, tan/tanto como, and the irregular comparatives."
+  },
+  "task-a2-comparar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-preguntar-preferencias-a2": {
+    "teaches": [
+      "d:ask-preferences",
+      "p:prefieres-x-o-y",
+      "p:gustar-mas-que",
+      "d:compare-and-choose"
+    ],
+    "note": "Preferences and me gusta más… que."
+  },
+  "fn-preguntar-conocimiento-a2": {
+    "teaches": [
+      "d:say-what-i-know",
+      "p:saber-conocer",
+      "p:hedge-knowledge",
+      "c:ni-idea"
+    ],
+    "note": "Saber vs conocer, and hedging how much you know."
+  },
+  "task-a2-gestion": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-causales-a2": {
+    "teaches": [
+      "g:cause-result"
+    ],
+    "note": "porque, como, por + noun."
+  },
+  "por-para": {
+    "teaches": [
+      "x:por-para",
+      "g:por-para-1",
+      "g:por-para-2"
+    ],
+    "note": "Concept contrast: para for goal, recipient, destination, deadline; por for cause, exchange, duration, movement through. Exchange and duration are half of g:por-para-2 (means, and para for opinion and comparison, are not taught); no other lesson teaches g:por-para-2, so it is set here as partial."
+  },
+  "gr-condicionales-a2": {
+    "teaches": [
+      "g:si-present"
+    ],
+    "note": "si + present."
+  },
+  "fn-aconsejar-a2": {
+    "teaches": [
+      "d:give-advice",
+      "d:offer-help",
+      "g:tener-que-hay-que",
+      "c:le-ayudo",
+      "c:quieres-que-te-ayude"
+    ],
+    "note": "The advice scale puedes, tienes que, hay que (g:tener-que-hay-que), and offering help. The earliest lesson in the course that teaches tener que vs hay que; the graph has the node at A1."
+  },
+  "task-a2-razones": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-movimiento-estabilidad-a2": {
+    "teaches": [
+      "p:subirse-bajarse",
+      "p:llevar-traer",
+      "d:give-directions"
+    ],
+    "note": "subir, bajar, quedarse, llevar vs traer, directions."
+  },
+  "task-a2-sitio": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-gerundio-a2": {
+    "teaches": [
+      "g:estar-gerund",
+      "g:object-pronoun-position"
+    ],
+    "note": "Gerund form, estar + gerund, and the pronoun before or attached (le está escribiendo / está escribiéndole)."
+  },
+  "gr-adverbios-circunstanciales-a2": {
+    "teaches": [
+      "p:cerca-de",
+      "p:time-sequence-basic",
+      "g:negation-words"
+    ],
+    "note": "Place adverbs with de, time sequence, and nunca and nada as negative polarity words."
+  },
+  "task-a2-escribir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-presente-irregular-a2": {
+    "teaches": [
+      "g:stem-boot",
+      "g:stem-e-i",
+      "g:yo-irregular"
+    ],
+    "note": "The boot verbs (all three vowel changes) and the odd yo."
+  },
+  "gr-articulo-definido-distribucion-a2": {
+    "teaches": [
+      "g:article-uses",
+      "p:el-agua-fria",
+      "p:jugar-a",
+      "p:todos-los-dias"
+    ],
+    "note": "el agua, jugar al tenis, todos los libros."
+  },
+  "gr-cuantificadores-a2": {
+    "teaches": [
+      "p:todos-los-dias",
+      "p:otro-no-article",
+      "g:quantifiers"
+    ],
+    "note": "todo with a determiner, otro without one, demasiado."
+  },
+  "gr-interrogativos-exclamativos-a2": {
+    "teaches": [
+      "g:que-vs-cual",
+      "g:exclamations",
+      "p:exclamations-basic"
+    ],
+    "note": "qué vs cuál, and the same words as exclamatives."
+  },
+  "gr-demostrativos-valores-a2": {
+    "teaches": [
+      "g:demonstratives",
+      "g:referring-back"
+    ],
+    "note": "Anaphoric and temporal demonstratives (Ana llamó a Marta, pero esta no contestó)."
+  },
+  "task-a2-repaso": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-presente-subjuntivo-b1": {
+    "teaches": [
+      "g:subj-irregulars",
+      "g:subj-wanting",
+      "g:subj-wishes",
+      "g:subj-emotion-intro",
+      "g:subj-doubt",
+      "g:subj-opinion-negated",
+      "g:subj-value",
+      "x:creo-no-creo",
+      "x:inf-vs-que-subj"
+    ],
+    "note": "Tense lesson (presente de subjuntivo): the form and irregulars, and the triggers the lesson teaches: wanting, wishing, emotion, doubt, negated opinion, value judgments; contrasts creo que viene / no creo que venga and quiero venir / quiero que vengas. The graph splits this tense by trigger; the later triggers (influence, conjunctions, relatives, concession, B2 perception) belong to their own lessons."
+  },
+  "fn-estoy-de-acuerdo-b1": {
+    "teaches": [
+      "d:agree-disagree-b1",
+      "p:estar-de-acuerdo-con-en",
+      "c:para-nada"
+    ],
+    "note": "Confirmed."
+  },
+  "nt-conformidad-correccion-precision-b1": {
+    "teaches": [
+      "c:asi-esta-bien",
+      "p:equivocarse-de",
+      "p:adj-de-inf"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b1-opinion": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-respuesta-afirmativa-b1": {
+    "teaches": [
+      "g:pero-sino",
+      "x:pero-sino",
+      "p:repeticion-claro-claro"
+    ],
+    "note": "Correcting with no… sino, and repetition for force. PCIC had only p:repeticion-claro-claro."
+  },
+  "task-b1-debate": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "futuro": {
+    "teaches": [
+      "g:future-promises",
+      "g:future-conjecture",
+      "x:future-prediction-conjecture"
+    ],
+    "note": "Tense lesson: every future node (pcic 9.1.4) except the C1 modal uses: prediction and the futuro de probabilidad (serán las once)."
+  },
+  "gr-temporales-b1": {
+    "teaches": [
+      "g:subj-cuando-future",
+      "g:cuando-indicative",
+      "x:cuando-ind-subj"
+    ],
+    "note": "cuando + indicative for past and habit, + subjunctive for the future."
+  },
+  "gr-modalidad-b1": {
+    "teaches": [
+      "p:seguramente-probablemente",
+      "g:quizas-a-lo-mejor"
+    ],
+    "note": "posiblemente, seguramente, probablemente, and the section on mood following confidence (like a lo mejor), which is g:quizas-a-lo-mejor."
+  },
+  "task-b1-planes": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "condicional": {
+    "teaches": [
+      "g:conditional",
+      "g:conditional-past-guess"
+    ],
+    "note": "Tense lesson: courtesy, modesty and advice, plus probability in the past (serían las cinco cuando llegó). g:conditional-rumour (B2 news use) is not in it."
+  },
+  "gr-condicionales-b1": {
+    "teaches": [
+      "g:si-present",
+      "x:si-clause-no-future"
+    ],
+    "note": "si + present with a future or imperative main clause; never a future after si."
+  },
+  "task-b1-consejo": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-subordinadas-sustantivas-b1": {
+    "teaches": [
+      "x:inf-vs-que-subj",
+      "g:subj-emotion"
+    ],
+    "note": "Infinitive vs que + subjunctive, generalised to emotion verbs (nos preocupa que)."
+  },
+  "fn-expresar-deseos-b1": {
+    "teaches": [
+      "d:hope-wish-b1",
+      "p:que-subj-deseo",
+      "p:sonar-con",
+      "c:ojala"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b1-deseos": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "impneg": {
+    "teaches": [
+      "g:negative-commands"
+    ],
+    "note": "Negative commands from the present subjunctive for every person. The graph has no affirmative-vs-negative command contrast node."
+  },
+  "fn-obligacion-necesidad-b1": {
+    "teaches": [
+      "d:forbid-warn-order",
+      "p:es-obligatorio",
+      "g:deber-modal"
+    ],
+    "note": "es obligatorio/necesario, debes + infinitive, no puedes + infinitive."
+  },
+  "task-b1-pedir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "task-b1-alegria": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "task-b1-enfado": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-responder-estado-b1": {
+    "teaches": [
+      "d:answer-greeting",
+      "c:ahi-vamos",
+      "c:bien-y-tu"
+    ],
+    "note": "Answering how things are going; c:ahi-vamos is the Colombian así así."
+  },
+  "nt-evaluacion-valor-b1": {
+    "teaches": [
+      "g:parecer-quedar",
+      "p:a-cuanto-esta",
+      "p:en-oferta"
+    ],
+    "note": "parecerle, estar a, de oferta."
+  },
+  "task-b1-gustos": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-pluscuamperfecto-b1": {
+    "teaches": [
+      "g:pluperfect",
+      "x:pluperfect-preterite"
+    ],
+    "note": "Tense lesson: había + participle, always relative to a second past point; contrasts ya se había ido vs se fue."
+  },
+  "gn-narrar-estructura-b1": {
+    "teaches": [
+      "d:tell-structured-story",
+      "p:entonces-de-repente",
+      "g:narrative-pasts",
+      "g:reported-backshift"
+    ],
+    "note": "The five-part story using every past (estaba … hasta que sonó … había sido) and reported speech dropped into it (me contó que había perdido el vuelo y que tendría que esperar)."
+  },
+  "fn-concluir-relato-b1": {
+    "teaches": [
+      "d:open-close-story",
+      "p:al-final-en-resumen",
+      "c:total-que"
+    ],
+    "note": "Confirmed."
+  },
+  "dc-marcadores-discurso-b1": {
+    "teaches": [
+      "d:join-ideas",
+      "g:discourse-structure",
+      "g:consequence-connectors",
+      "c:o-sea"
+    ],
+    "note": "The five B1 marker families: connectors (además, así que, por lo tanto, aunque, sin embargo), ordering words (en primer lugar, en conclusión), reformulators (o sea, es decir). Derived c:por-cierto is the B2 lesson's."
+  },
+  "task-b1-relato": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-has-oido-b1": {
+    "teaches": [
+      "d:share-news-heard",
+      "p:oir-hablar-de",
+      "p:enterarse-de"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-conocimiento-desconocimiento-b1": {
+    "teaches": [
+      "d:share-news-heard",
+      "p:oir-hablar-de",
+      "c:ni-idea",
+      "c:que-yo-sepa"
+    ],
+    "note": "oír que + indicative or subjunctive, and having no idea."
+  },
+  "fn-pedir-informacion-b1": {
+    "teaches": [
+      "d:ask-info-indirectly",
+      "g:indirect-questions"
+    ],
+    "note": "Indirect questions: ¿sabes si…?, ¿podría decirme a qué hora…? The derived map had only the can-do; g:indirect-questions was otherwise first taught at C1."
+  },
+  "task-b1-conversar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-relativas-b1": {
+    "teaches": [
+      "g:relative-que",
+      "g:relatives-donde-lo-que"
+    ],
+    "note": "que, quien, donde; restrictive vs non-restrictive. The graph has no node for the comma distinction."
+  },
+  "gr-adverbios-relativos-b1": {
+    "teaches": [
+      "g:relatives-donde-lo-que"
+    ],
+    "note": "Relative como, cuando, donde vs the accented question words. The graph has no node for the relative-vs-interrogative accent; PCIC had p:ir-a-venir-de-place."
+  },
+  "gn-describir-persona-b1": {
+    "teaches": [
+      "d:describe-person-b1",
+      "p:parecerse-a",
+      "p:ponerse-a"
+    ],
+    "note": "Confirmed."
+  },
+  "gr-pronombres-combinados-b1": {
+    "teaches": [
+      "g:double-pronouns",
+      "x:le-se-lo",
+      "g:object-pronoun-position"
+    ],
+    "note": "te lo, se lo, and the pair moving as one unit before the verb or attached to an infinitive or gerund."
+  },
+  "task-b1-describir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-causales-b1": {
+    "teaches": [
+      "g:causal-advanced"
+    ],
+    "note": "como and por + infinitive. g:causal-advanced carries por + verb; ya que, puesto que are not in this lesson."
+  },
+  "gr-consecutivas-b1": {
+    "teaches": [
+      "p:entonces-quedamos",
+      "g:cause-result"
+    ],
+    "note": "entonces, así que, o sea que."
+  },
+  "gr-concesivas-b1": {
+    "teaches": [
+      "g:aunque-indicative"
+    ],
+    "note": "aunque + indicative."
+  },
+  "gr-comparativas-b1": {
+    "teaches": [
+      "p:mas-de-number",
+      "g:tanto-como"
+    ],
+    "note": "más de + number, más que, igual de … que."
+  },
+  "gr-perifrasis-verbales-b1": {
+    "teaches": [
+      "p:soler-inf",
+      "p:volver-a-inf",
+      "p:dejar-de-inf"
+    ],
+    "note": "soler, volver a, dejar de. PCIC had p:ponerse-a-inf, which the lesson does not teach, and missed p:volver-a-inf."
+  },
+  "task-b1-unir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-responder-felicitaciones-b1": {
+    "teaches": [
+      "d:celebrate-occasions"
+    ],
+    "note": "Replying to good wishes. The graph has no igualmente node (it appears only inside c:buen-provecho and c:mucho-gusto)."
+  },
+  "fn-brindis-b1": {
+    "teaches": [
+      "d:celebrate-occasions",
+      "p:brindo-por"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b1-cortesia": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-composicion-escrita-b1": {
+    "teaches": [
+      "d:write-composition",
+      "d:tell-structured-story",
+      "p:al-final-en-resumen"
+    ],
+    "note": "Confirmed."
+  },
+  "gn-generos-escritos-b1": {
+    "teaches": [
+      "d:genre-register"
+    ],
+    "note": "Recognising written genres and their register."
+  },
+  "task-b1-escribir": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "impsubj": {
+    "teaches": [
+      "g:imperfect-subj",
+      "g:subj-past-triggers",
+      "g:si-hypothetical",
+      "g:ojala-past"
+    ],
+    "note": "Tense lesson: the -ra form, past triggers (quería que vinieras, me pidió que la ayudara), si tuviera, ojalá pudiera. The -se form (g:se-form-recognition) is taught later by gr-impsubj-valores-b2."
+  },
+  "futperf": {
+    "teaches": [
+      "g:future-perfect"
+    ],
+    "note": "Tense lesson: habré + participle, deadline and recent-past guess."
+  },
+  "condperf": {
+    "teaches": [
+      "g:conditional-perfect"
+    ],
+    "note": "Tense lesson: habría + participle."
+  },
+  "perfsubj": {
+    "teaches": [
+      "g:subj-perfect"
+    ],
+    "note": "Tense lesson: haya + participle."
+  },
+  "gr-imperativo-valores-b1": {
+    "teaches": [
+      "g:commands-tu"
+    ],
+    "note": "The imperative as plea, advice and invitation. The graph has no node for the pragmatic values of the imperative; g:commands-tu is the closest."
+  },
+  "task-b1-hipotesis": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-acabado-b1": {
+    "teaches": [
+      "g:estar-participle",
+      "p:quedar-participio"
+    ],
+    "note": "The state an action leaves: estar + participle, and quedar as the alternative."
+  },
+  "task-b1-fisico": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "dc-atenuacion-b2": {
+    "teaches": [
+      "d:soften-hard-things",
+      "g:softening",
+      "g:impersonal-register",
+      "p:generic-tu-uno",
+      "c:puede-que-me-equivoque"
+    ],
+    "note": "Softening by shifting the person (tú genérico, uno, se, nosotros) and by shifting the tense (condicional, imperfecto, futuro)."
+  },
+  "task-b2-registro": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-argumentativa-b2": {
+    "teaches": [
+      "d:argue-in-writing",
+      "g:argument-markers",
+      "p:se-podria-objetar-que",
+      "p:ahora-bien-dicho-esto"
+    ],
+    "note": "Thesis, cited source, counter-argument turned with sin embargo, and the reserva."
+  },
+  "gn-composicion-argumentativa-b2": {
+    "teaches": [
+      "d:argue-in-writing",
+      "p:voy-a-defender-que",
+      "p:se-podria-objetar-que"
+    ],
+    "note": "Confirmed."
+  },
+  "dc-marcadores-discurso-b2": {
+    "teaches": [
+      "d:counter-argue",
+      "g:concession-despite",
+      "p:por-cierto-hablando-de",
+      "p:focus-adverbs"
+    ],
+    "note": "Counter-argument markers (a pesar de, mientras que, de todos modos), ordering, the five reformulators, focus operators."
+  },
+  "gr-adverbios-evaluativos-b2": {
+    "teaches": [
+      "g:evaluative-adverbs",
+      "g:adverbs-mente"
+    ],
+    "note": "Sentence adverbs in -mente (afortunadamente, lamentablemente) and how-the-subject-acted adverbs (generosamente)."
+  },
+  "gr-adverbios-enunciacion-b2": {
+    "teaches": [
+      "p:precisamente-concretamente",
+      "p:al-final-en-resumen"
+    ],
+    "note": "concretamente, precisamente, en resumen."
+  },
+  "gr-subordinadas-sustantivas-b2": {
+    "teaches": [
+      "g:subj-perception-negated",
+      "g:reporting-verbs-mood",
+      "g:subj-influence",
+      "c:resulta-que"
+    ],
+    "note": "Main verb class decides mood: negated saying and perception verbs, and influence verbs (aconsejar, sugerir, pedir que), which is g:subj-influence."
+  },
+  "task-b2-argumento": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-pluscuamsubj-b2": {
+    "teaches": [
+      "g:pluperfect-subj",
+      "g:si-past-unreal",
+      "g:se-form-recognition",
+      "p:ojala-hubiera"
+    ],
+    "note": "hubiera/hubiese + participle, past unreal conditions, ojalá hubiera."
+  },
+  "gr-condicional-compuesto-b2": {
+    "teaches": [
+      "g:conditional-perfect"
+    ],
+    "note": "habría + participle: guesses, reported plans, unreal past."
+  },
+  "gr-futuro-perfecto-b2": {
+    "teaches": [
+      "g:future-perfect"
+    ],
+    "note": "habré + participle: finished before a future point, and a guess about the recent past."
+  },
+  "gr-perfsubj-valores-b2": {
+    "teaches": [
+      "g:subj-perfect"
+    ],
+    "note": "haya + participle."
+  },
+  "gr-impsubj-valores-b2": {
+    "teaches": [
+      "g:imperfect-subj",
+      "g:se-form-recognition",
+      "g:reported-commands-past"
+    ],
+    "note": "-ra vs -se, quisiera, doubt adverbs, reported requests (le pedí que me avisara). The graph has no quisiera-courtesy node."
+  },
+  "task-b2-hipotesis": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-alegria-satisfaccion-b2": {
+    "teaches": [
+      "d:positive-feelings",
+      "p:me-pone-de-buen-genio",
+      "p:orgulloso-admiracion",
+      "c:echar-de-menos-spain"
+    ],
+    "note": "Joy, pleasure, affection and pride."
+  },
+  "fn-sorpresa-extraneza-b2": {
+    "teaches": [
+      "p:me-extrana-que",
+      "c:anda-spain"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b2-emocion": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-aumento-disminucion-b2": {
+    "teaches": [
+      "p:duplicarse",
+      "p:subir-subida",
+      "g:comparatives-advanced"
+    ],
+    "note": "Rises and falls, X veces más, cada vez más."
+  },
+  "nt-referencias-generales-b2": {
+    "teaches": [
+      "p:dar-tiempo",
+      "p:a-ultima-hora",
+      "p:hacia-las-nueve"
+    ],
+    "note": "Time idioms, a última hora, hacia for approximate time."
+  },
+  "nt-localizacion-tiempo-b2": {
+    "teaches": [
+      "p:llevar-sin-inf",
+      "x:llevar-gerundio-sin",
+      "c:a-largo-plazo"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b2-noticia": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "dc-cita-b2": {
+    "teaches": [
+      "d:report-speech",
+      "g:reported-speech-full",
+      "g:reported-backshift",
+      "p:segun-dicen",
+      "p:que-no-dice-que-si"
+    ],
+    "note": "Reported speech shifting tense, person and place/time markers, reported questions, and covert quotes."
+  },
+  "fn-dar-informacion-b2": {
+    "teaches": [
+      "p:lo-que-pasa-es-que",
+      "p:no-es-que-sino-que",
+      "g:para-que"
+    ],
+    "note": "Correcting with nuance, plus manner, purpose (para que hablaras) and cause clauses. sin que and antes de que (g:subj-purpose-full) are not taught here."
+  },
+  "task-b2-citar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "dc-rematizacion-tematizacion-b2": {
+    "teaches": [
+      "d:move-emphasis",
+      "g:cleft-focus",
+      "g:topic-fronting",
+      "p:lo-de-topic"
+    ],
+    "note": "Equational clefts, fronting with the doubled pronoun, lo de / eso de."
+  },
+  "gr-orden-interrogativos-b2": {
+    "teaches": [
+      "p:echo-question",
+      "p:question-word-order"
+    ],
+    "note": "Question word order and echo questions."
+  },
+  "dc-negacion-b2": {
+    "teaches": [
+      "c:ni-hablar",
+      "c:no-me-da-la-gana",
+      "c:que-yo-sepa",
+      "g:emphatic-structures"
+    ],
+    "note": "Reiterated, emphatic and softened negation (¡que no, hombre, que no!, ¡claro que no!, que yo sepa)."
+  },
+  "gr-exclamativos-b2": {
+    "teaches": [
+      "p:como-cuanto-verbo",
+      "g:exclamations",
+      "p:quien-tuviera",
+      "g:wish-exclamatives"
+    ],
+    "note": "qué … que, cómo + verb, cuánto, and ¡quién pudiera…! as a wish exclamative."
+  },
+  "task-b2-enfasis": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-textura-acabado-b2": {
+    "teaches": [
+      "p:al-tacto",
+      "d:c1-describe-physical-precisely"
+    ],
+    "note": "Texture adjectives and finishes (una mano de pintura); mostly lexis. Derived g:para-que was noise."
+  },
+  "nt-edad-vejez-b2": {
+    "teaches": [
+      "p:recien-participio",
+      "p:estrenar",
+      "p:cumplir-anos"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b2-precision": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-carta-solicitud-trabajo-b2": {
+    "teaches": [
+      "d:formal-letters",
+      "g:formal-letter-grammar",
+      "p:estimado-colon",
+      "p:adjunto-envio"
+    ],
+    "note": "Job application letter: header, Estimado/a:, the four moves, closing and attachment note."
+  },
+  "gr-pronombre-personal-b2": {
+    "teaches": [
+      "g:se-accidental"
+    ],
+    "note": "Accidental se and clitic order. The graph has no node for neuter lo as an attribute (lo estoy) or for clitic order."
+  },
+  "nt-utilidad-uso-b2": {
+    "teaches": [
+      "p:fuera-de-servicio",
+      "p:servir-para",
+      "p:imprescindible"
+    ],
+    "note": "Useful and useless, utilizar/emplear para, fuera de servicio."
+  },
+  "gr-complemento-preposicional-regido-b2": {
+    "teaches": [
+      "g:verbs-prepositions",
+      "p:contar-con",
+      "p:decidirse-atreverse-a"
+    ],
+    "note": "Verbs with a fixed preposition. PCIC had p:arrepentirse-de and p:consistir-en, which the lesson lists among the PCIC items but does not teach."
+  },
+  "task-b2-formal": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-solicitar-comienzo-relato-b2": {
+    "teaches": [
+      "d:tell-story",
+      "c:tienes-un-minutico",
+      "c:ya-me-imagino",
+      "c:total-que"
+    ],
+    "note": "Opening, following and closing a story."
+  },
+  "nt-orden-b2": {
+    "teaches": [
+      "p:por-orden-de"
+    ],
+    "note": "Ranking (puesto, posición) and arranging (colocado, descolocado, por orden). The graph has no node for colocado/descolocado or puesto as a rank; p:por-orden-de is the closest."
+  },
+  "task-b2-conversar": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-distancia-b2": {
+    "teaches": [
+      "p:acercarse-alejarse"
+    ],
+    "note": "Confirmed."
+  },
+  "task-b2-repaso": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-afecto-sensaciones-c1": {
+    "teaches": [
+      "p:morirse-de",
+      "d:physical-feelings"
+    ],
+    "note": "Affection and vivid physical sensations (hecho polvo, no puedo con mi alma). The graph has no node for these C1 idioms beyond morirse de."
+  },
+  "nt-olor-c1": {
+    "teaches": [
+      "p:oler-a-saber-a",
+      "d:c1-describe-physical-precisely"
+    ],
+    "note": "Mostly C1 smell vocabulary (fragancia, peste, olfatear, apestar a). The graph has no C1 smell node beyond oler a; the lexis is in l: nodes."
+  },
+  "nt-color-c1": {
+    "teaches": [
+      "p:colores-compuestos",
+      "p:encarecer-abaratar",
+      "d:c1-describe-physical-precisely"
+    ],
+    "note": "Colour nuance and the en-…-ecer colour-change verbs (enrojecer, oscurecer), which is the encarecer pattern."
+  },
+  "nt-humedad-sequedad-c1": {
+    "teaches": [
+      "c:quedar-ensopado"
+    ],
+    "note": "Confirmed; mostly lexis."
+  },
+  "task-c1-idiom": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "dc-valores-ilocutivos-c1": {
+    "teaches": [
+      "p:como-que-echo",
+      "c:es-que"
+    ],
+    "note": "Questions that greet, criticise or echo (¿Que si voy?)."
+  },
+  "dc-metaforas-c1": {
+    "teaches": [
+      "d:say-it-with-force",
+      "g:como-si",
+      "p:ser-un-noun"
+    ],
+    "note": "es un lince, como si + imperfect subjunctive, frozen metaphors, ¡menudo lío!"
+  },
+  "dc-intensificacion-c1": {
+    "teaches": [
+      "p:que-si-que-si",
+      "d:intensify-negate"
+    ],
+    "note": "Suspended comparatives, cut-off consequences and insisting que (¡Que sí, que puedo!). The graph has no node for suspended intonation."
+  },
+  "fn-escepticismo-contraargumento-c1": {
+    "teaches": [
+      "d:agree-disagree-nuanced"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-estado-general-cosas-c1": {
+    "teaches": [
+      "d:social-rituals-register",
+      "p:lo-de-noun"
+    ],
+    "note": "Asking how things are and bouncing it back: y lo tuyo, ¿qué tal?"
+  },
+  "task-c1-ironia": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "dc-citas-encubiertas-c1": {
+    "teaches": [
+      "d:report-without-vouching",
+      "g:hedging-distance",
+      "p:imperfecto-citativo"
+    ],
+    "note": "The hearsay imperfect (Ernesto llegaba mañana), por lo visto, al parecer, and the conceding future."
+  },
+  "dc-atenuacion-c1": {
+    "teaches": [
+      "d:criticise-without-pointing"
+    ],
+    "note": "Confirmed."
+  },
+  "dc-atenuacion-dialogica-c1": {
+    "teaches": [
+      "p:no-digo-que-pero",
+      "p:concede-pero",
+      "c:puede-que-me-equivoque"
+    ],
+    "note": "Prefacing a disagreement. Derived g:reported-requests was noise."
+  },
+  "dc-reformuladores-c1": {
+    "teaches": [
+      "d:rephrase",
+      "g:reformulation"
+    ],
+    "note": "Reformulators: explaining, summing up, correcting, distancing."
+  },
+  "fn-pedir-confirmacion-c1": {
+    "teaches": [
+      "d:check-what-i-heard"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-conocimiento-desconocimiento-c1": {
+    "teaches": [
+      "p:conocimiento-formal",
+      "p:la-menor-idea",
+      "p:enterarse-de"
+    ],
+    "note": "Knowing and not knowing, from ¿te has enterado? to lo ignoro."
+  },
+  "task-c1-decirlo": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-trabajo-academico-c1": {
+    "teaches": [
+      "d:write-academic"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-felicitar-despedirse-c1": {
+    "teaches": [
+      "d:social-rituals-register",
+      "c:sin-otro-particular",
+      "c:atentamente"
+    ],
+    "note": "C1 congratulations and leave-taking, including the written formal close."
+  },
+  "fn-responder-saludo-dirigirse-c1": {
+    "teaches": [
+      "d:social-rituals-register",
+      "p:recordar-acordarse"
+    ],
+    "note": "Answering ¿qué tal? (seguimos tirando) and addressing people (¿te acuerdas de mí?). The graph has no node for seguimos tirando or for terms of endearment."
+  },
+  "fn-pedir-informacion-c1": {
+    "teaches": [
+      "p:como-es-que",
+      "p:puedo-hacerte-una-pregunta",
+      "g:indirect-questions"
+    ],
+    "note": "¿cómo es que…?, ¿tienes idea de…?, ¿me permites…?"
+  },
+  "fn-dar-informacion-c1": {
+    "teaches": [
+      "p:como-que-echo",
+      "g:subj-free-relatives"
+    ],
+    "note": "Subordinate clauses of place, time and manner with the subjunctive (a donde indique la señal, lo que yo haga con mi dinero), and the incredulous echo ¡¿Cómo que…?!"
+  },
+  "gn-presentacion-publica-c2": {
+    "teaches": [
+      "p:presenting-to-audience",
+      "p:a-lo-largo-de-esta-charla",
+      "p:para-terminar"
+    ],
+    "note": "Polished public presentation: assuming the audience knows, mapping the talk, closing."
+  },
+  "task-c1-formal": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-tiempos-indicativo-c1": {
+    "teaches": [
+      "g:tense-modal-uses",
+      "p:presente-narrativo"
+    ],
+    "note": "Modal uses of the indicative tenses. The graph has no node for the pluscuamperfecto de conato (había estado a punto de)."
+  },
+  "gr-tiempos-subjuntivo-c1": {
+    "teaches": [
+      "g:mood-choice-fine",
+      "g:subj-perception-negated",
+      "p:no-porque-sino-porque"
+    ],
+    "note": "Mood choice under negation."
+  },
+  "gr-nucleo-verbal-c1": {
+    "teaches": [
+      "g:ser-estar-c1",
+      "g:passive-ser",
+      "g:verbs-of-change",
+      "p:acabar-por-inf"
+    ],
+    "note": "Result passives, aspectual periphrasis, episodic ser/estar, and the pseudo-copulative verbs (g:verbs-of-change)."
+  },
+  "gr-formas-no-personales-c1": {
+    "teaches": [
+      "g:absolute-constructions",
+      "g:participle-gerund-clauses",
+      "g:gerund-ways",
+      "c:de-ser-asi",
+      "p:yo-ni-loco"
+    ],
+    "note": "Independent infinitive, gerund and participle uses, including the gerund as an adjunct (g:gerund-ways); PCIC caught the chunks but not the grammar nodes."
+  },
+  "gr-imperativo-c1": {
+    "teaches": [
+      "c:dale",
+      "p:mira-que",
+      "p:imperativo-y-veras"
+    ],
+    "note": "Confirmed: lexicalised and conditional imperatives."
+  },
+  "fn-obligacion-necesidad-c1": {
+    "teaches": [
+      "p:obligacion-origen",
+      "p:basta-con"
+    ],
+    "note": "Where the duty comes from, and basta con (que). Derived g:cada-cualquier was noise."
+  },
+  "nt-necesidad-obligacion-c1": {
+    "teaches": [
+      "p:no-quedar-mas-remedio",
+      "d:c1-resignation-coping"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-repetir-orden-c1": {
+    "teaches": [
+      "p:cuantas-veces-tengo-que",
+      "g:que-wishes-commands",
+      "d:order-and-request-ladder"
+    ],
+    "note": "Repeating an order: ¿cuántas veces…?, que recojas tu cuarto (que + subjunctive order)."
+  },
+  "fn-permiso-prohibicion-c1": {
+    "teaches": [
+      "p:digas-lo-que-digas",
+      "p:pase-lo-que-pase",
+      "d:permission-rules"
+    ],
+    "note": "Permission disguised as ¿molesto si…?, granting it, and overriding a ban with digas lo que digas, esté o no prohibido."
+  },
+  "task-c1-verbos": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "fn-estado-animo-alegria-c1": {
+    "teaches": [
+      "d:positive-feelings",
+      "c:te-pasa-algo",
+      "p:estar-orgulloso-de"
+    ],
+    "note": "Asking about someone's mood and expressing joy. The graph has no node for dar saltos de alegría or estar como loco de contento."
+  },
+  "fn-decepcion-resignacion-c1": {
+    "teaches": [
+      "d:regret-and-resignation"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-empatia-alivio-esperanza-c1": {
+    "teaches": [
+      "c:cruzo-los-dedos",
+      "p:ya-era-hora-de-que",
+      "p:no-me-extrana-que"
+    ],
+    "note": "Confirmed: empathy, relief and hope."
+  },
+  "fn-gustos-aversion-c1": {
+    "teaches": [
+      "d:tastes-preferences",
+      "p:no-soporto-que",
+      "g:comparative-advanced-c1"
+    ],
+    "note": "The scale from me agrada to adoro and on to me da asco and me da náuseas; cuanta más gente, menos me gusta."
+  },
+  "fn-recordar-olvidar-c1": {
+    "teaches": [
+      "c:punta-de-la-lengua",
+      "p:traer-recuerdos",
+      "d:remember"
+    ],
+    "note": "Memory idioms: en la punta de la lengua, quedarse en blanco, se me fue."
+  },
+  "fn-reprochar-ofrecerse-c1": {
+    "teaches": [
+      "d:advise-warn-reproach"
+    ],
+    "note": "Confirmed."
+  },
+  "task-c1-emocion": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-argumentativa-conectores-c1": {
+    "teaches": [
+      "d:argue-essay",
+      "g:concessive-advanced"
+    ],
+    "note": "Asserting, conceding, retracting; si bien es cierto que…, no olvidemos que…; a no ser que as a reserva."
+  },
+  "fn-proponer-ofrecer-confirmar-c1": {
+    "teaches": [
+      "d:propose-accept-refuse"
+    ],
+    "note": "Confirmed."
+  },
+  "nt-adecuacion-c1": {
+    "teaches": [
+      "c:guardar-las-formas",
+      "c:fuera-de-lugar",
+      "p:ajustarse-a"
+    ],
+    "note": "Appropriateness: guardar las formas, fuera de lugar, ajustarse a."
+  },
+  "task-c1-ensayo": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "nt-formas-figuras-c1": {
+    "teaches": [
+      "p:tener-forma-de",
+      "d:c1-describe-physical-precisely"
+    ],
+    "note": "Mostly C1 shape vocabulary; the graph's only shape pattern is tener forma de."
+  },
+  "nt-materia-c1": {
+    "teaches": [
+      "p:estar-hecho-de",
+      "p:fabricado-con-contener"
+    ],
+    "note": "Mostly C1 material vocabulary (terciopelo, corcho, escayola); the graph's material patterns are the closest."
+  },
+  "nt-cantidad-relativa-c1": {
+    "teaches": [
+      "c:costar-un-platal",
+      "p:a-ojo"
+    ],
+    "note": "Confirmed; collective and portion nouns are lexis."
+  },
+  "nt-referencias-generales-c1": {
+    "teaches": [
+      "p:a-eso-de",
+      "c:nunca-en-mi-vida"
+    ],
+    "note": "Confirmed."
+  },
+  "nt-simultaneidad-c1": {
+    "teaches": [
+      "p:al-tiempo-que",
+      "g:temporal-advanced",
+      "x:al-tiempo-que-a-medida-que"
+    ],
+    "note": "Simultaneity: a medida que, al tiempo que, en el mismo instante en que."
+  },
+  "nt-anterioridad-c1": {
+    "teaches": [
+      "c:sin-precedentes",
+      "p:con-antelacion",
+      "x:antemano-antelacion"
+    ],
+    "note": "Precedents, and de antemano vs con antelación."
+  },
+  "nt-duracion-transcurso-c1": {
+    "teaches": [
+      "p:durar-durante",
+      "d:say-how-long-things-last"
+    ],
+    "note": "C1 duration adjectives (fugaz, perpetuo) and verbs (alargar, prolongar); mostly lexis. The graph has no C1 duration node, so this teaches the A2 ones."
+  },
+  "task-c1-precision": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gn-resena-c1": {
+    "teaches": [
+      "d:write-review"
+    ],
+    "note": "Confirmed."
+  },
+  "gn-descriptiva-lugares-c1": {
+    "teaches": [
+      "d:describe-precisely"
+    ],
+    "note": "Confirmed."
+  },
+  "gn-descriptiva-objetos-c1": {
+    "teaches": [
+      "d:describe-precisely",
+      "p:formar-parte-de",
+      "p:encontrarse-hallarse"
+    ],
+    "note": "Describing an object in a general-fact register vs a personal one. The graph has no C1 genre node for object description; d:describe-precisely (B2) is the closest."
+  },
+  "nt-evaluacion-general-c1": {
+    "teaches": [
+      "d:c1-critical-judgement",
+      "p:calidad-dudosa",
+      "p:dejar-mucho-que-desear"
+    ],
+    "note": "Confirmed."
+  },
+  "nt-exito-logro-c1": {
+    "teaches": [
+      "c:en-pleno-auge",
+      "c:por-un-pelo",
+      "c:pasar-raspando"
+    ],
+    "note": "Confirmed."
+  },
+  "fn-habilidad-c1": {
+    "teaches": [
+      "p:ser-un-noun",
+      "p:darsele-bien-mal",
+      "d:abilities"
+    ],
+    "note": "Ability from soy competente to soy un hacha, and soy patoso para."
+  },
+  "fn-introducir-relato-atencion-c1": {
+    "teaches": [
+      "d:hold-the-floor"
+    ],
+    "note": "Confirmed."
+  },
+  "task-c1-final": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  }
+}

@@ -33,74 +33,253 @@ Lessons mapped: 573.
 - frequency fallback: 16
 - nothing found: 0
 
+Overrides from tools/lesson-nodes.overrides.json applied after derivation: 258 (how "override", confidence 1). The counts above are what derivation chose before them.
+
 Tense key mapping used: presente -> g:present-ar, preterito -> g:preterite-ar, perfecto -> g:perfecto-experience, imperfecto -> g:imperfect-states, imperativo -> g:commands-tu, presubj -> g:subj-wanting, futuro -> g:future-promises, condicional -> g:conditional, plusc -> g:pluperfect, impsubj -> g:imperfect-subj, futperf -> g:future-perfect, condperf -> g:conditional-perfect, perfsubj -> g:subj-perfect
 
 ## 40 lowest-confidence lesson mappings
 
 | lesson | title | how | conf | summary (first sentence) | proposed nodes |
 |---|---|---|---|---|---|
-| gender-articles | Gender & articles | frequency | 0.2 | Every Spanish noun has a gender, and the words around it must agree. | g:gender-articles, g:adjective-agreement, c:tienes |
-| gn-descriptiva-objetos-c1 | Describir un objeto: del hecho general a la vivencia propia | frequency | 0.2 | The same object supports two entirely different descriptions depending on whether "anchoring" means a verifiable general fact (a tomato is a widely consumed vegetable) or a personal memory (a tomato is the thing that ruined a childhood snack) — mixing the two registers inside one description is what makes readers lose track of what kind of text they are reading. | g:gender-articles, g:present-ar, g:adjective-agreement |
-| gr-futuro-perfecto-b2 | El futuro perfecto: habré + participio | frequency | 0.2 | Two unrelated-looking jobs share one form: marking that something will be finished before a future point, and guessing about something that has probably already happened. | g:future-perfect, g:gender-articles, g:subj-cuando-future |
-| gr-numero-sustantivos-a1 | El plural de los sustantivos | frequency | 0.2 | Spanish pluralizes by ending: a vowel just takes -s, a consonant needs the fuller -es, and a word already stressed on its last syllable needs both -es and a spelling adjustment. | g:gender-articles, c:compre-trabaje, c:hay |
-| gr-pronombres-combinados-b1 | Combinación de pronombres átonos: te lo, se lo | frequency | 0.2 | When an indirect and a direct object pronoun stack, the indirect always comes first — te lo doy, never lo te doy — and once combined, the pair moves as a single inseparable unit, whether attached to an infinitive or standing before a conjugated verb. | g:double-pronouns, g:direct-objects, c:voy-a |
-| nt-formas-figuras-c1 | Formas y figuras en C1: de la "silueta" al "zigzag" | frequency | 0.2 | Describir formas en C1 combina geometría técnica (rombo, elipse, diámetro) con adjetivos de contorno (redondeado, alargado, ondulado) y los verbos que activamente cambian una forma — dar forma no es lo mismo que deformar, aunque ambos impliquen moldear algo. | g:gender-articles, g:present-ar, g:adverbs-mente |
-| nt-olor-c1 | Olor en C1: de "fragancia" a "peste" | frequency | 0.2 | Los olores se gradúan en C1 desde lo agradable (fragancia) hasta lo insoportable (peste), con verbos que distinguen entre percibir activamente un olor (olfatear) y simplemente desprenderlo (apestar). | g:gender-articles, g:object-pronoun-position, g:prep-infinitive |
-| por-para | Por vs. Para | frequency | 0.2 | Both often translate as "for", but they point in different directions. | p:possessives-basic, g:present-ar, p:para-inf |
-| task-a2-repaso | Revisa lo que has escrito en A2 | frequency | 0.2 | You have written a weekend, a childhood, an anecdote, an interview, a comparison, a decision and a review. | g:imperfect-habitual, c:era, g:direct-objects |
-| task-b1-conversar | Mantén una conversación larga | frequency | 0.2 | Fluency at B1 is less about words than about turn-taking. | c:no-me-digas, g:present-ar, g:estar-location-states |
-| task-b1-pedir | Pide, niégate y prohíbe | frequency | 0.2 | B1 is where requests stop being formulas and start being choices. | g:conditional, g:gender-articles, g:gustar-full |
-| task-b1-planes | Cuenta tus planes y predice algo | frequency | 0.2 | Spanish has two futures doing different jobs. | g:future-promises, g:subj-cuando-future, g:subj-wanting |
-| task-c1-ironia | Di lo contrario de lo que quieres decir | frequency | 0.2 | Irony is the last thing a learner acquires and the first thing that marks fluency, because it requires knowing exactly what the neutral version would have been. | c:bien-y-tu, c:pues, g:estar-location-states |
-| task-c1-precision | Describe algo con precisión nativa | frequency | 0.2 | Precision at this level is not more nouns. | g:estar-location-states, c:para-chuparse-los-dedos, c:cuatro-gatos |
-| task-revisar | Corrige tu propio español | frequency | 0.2 | You have written a lot by now. | g:adjective-agreement, g:gender-articles, g:present-er-ir |
-| task-rutina | Cuenta un día entero | frequency | 0.2 | Reflexive verbs are the spine of a daily routine and the thing that makes it sound Spanish rather than translated. | g:reflexive-routine, g:gender-articles, g:present-ar |
-| dc-intensificacion-c1 | Intensificar en C1: sufijos, entonación suspendida, el "que" que insiste | new-in-order | 0.28 | C1 intensification is mostly a matter of what is left UNSAID: a comparative left hanging with a rising tone reverses its own meaning, a consequence clause can be cut off entirely and still land, and a repeated "que" can insist on a claim that was never actually challenged. | c:me-gustaria, c:vale-spain, g:conditional-advanced |
-| fn-afecto-sensaciones-c1 | Afecto y sensaciones físicas en C1: "estoy hecho polvo" y "no puedo con mi alma" | new-in-order | 0.28 | El afecto se gradúa de la simpatía al amor, mientras que las sensaciones físicas en C1 se somatizan en imágenes muy vivas — "un agujero en el estómago" para el hambre, "se me cierran los ojos" para el sueño, "hecho polvo" para el agotamiento total. | c:de-repente, g:se-accidental, p:morirse-de |
-| fn-dar-informacion-c1 | Dar información en C1: de las subordinadas de lugar a "¡¿Cómo que no?!" | new-in-order | 0.28 | Dar información en C1 no es solo describir dónde, cuándo o por qué — incluye todo un repertorio para reaccionar con incredulidad ante lo que otro acaba de decir, repitiendo su enunciado con "¡¿Cómo que...?!" antes de corregirlo con fuerza. | c:sera-otro-dia, g:causal-advanced, g:subj-free-relatives |
-| fn-estado-animo-alegria-c1 | Preguntar por el ánimo y expresar alegría en C1: "estoy como loco de contento" | new-in-order | 0.28 | Preguntar por el estado de ánimo en C1 va de lo casual ("¿cómo va eso?") a lo directamente insistente ("¿se puede saber lo que te pasa?"), mientras que la alegría se expresa con imágenes muy físicas: "dar saltos de alegría", "estar como loco de contento". | p:de-ninguna-manera, p:tener-el-gusto-de |
-| fn-responder-saludo-dirigirse-c1 | Responder a un saludo y dirigirse a alguien en C1: "seguimos tirando" y "¿te acuerdas de mí?" | new-in-order | 0.28 | Responder a "¿qué tal?" en C1 tiene toda una escala de resignación conformista — "seguimos tirando", "no me puedo quejar" — y dirigirse a alguien va de los apelativos afectuosos entre íntimos a la fórmula insegura de reconocer a alguien de vista: "¿te acuerdas de mí?" | c:como-estas, p:se-reciproco |
-| nt-duracion-transcurso-c1 | Duración en C1: de lo "fugaz" a lo "perpetuo" | new-in-order | 0.28 | La duración de algo se gradúa en C1 con una escala completa de adjetivos — momentáneo, pasajero, fugaz en un extremo; prolongado, duradero, crónico, perpetuo, eterno en el otro — y verbos que activamente alargan o acortan esa duración. | p:sobre-todo-solo |
-| nt-materia-c1 | Materia en C1: de la seda al cartón piedra | new-in-order | 0.28 | Nombrar materiales concretos en C1 requiere un vocabulario muy amplio de sustancias específicas — terciopelo, corcho, caucho, granito, escayola — cada una con connotaciones y usos propios que "material" o "sustancia" no transmiten. | g:diminutives, g:tanto-como |
-| nt-textura-acabado-b2 | Textura y acabado: áspero, arrugado, una mano de pintura | new-in-order | 0.28 | Two related surface vocabularies: adjectives for how something feels to the touch (áspero, peludo, arrugado), and nouns/verbs for a protective or decorative layer applied to a surface — "una mano" or "una capa" of something, never just "a coat" translated literally. | g:para-que |
-| gr-condicional-compuesto-b2 | El condicional compuesto: habría + participio | new-in-order | 0.29 | The compound conditional does for the past what the simple conditional does for the present: guesses, unreal conditions and reported plans, but all placed one step further back — something that WOULD HAVE happened, not would happen. | g:hace-ago |
-| gr-genero-sustantivos-a1 | El género de los sustantivos | new-in-order | 0.29 | -o is masculine and -a is feminine most of the time. | g:preterite-irregular-strong, p:transport-en |
-| gr-demostrativos-valores-a2 | Los demostrativos: uso anafórico y temporal | new-in-order | 0.3 | Beyond pointing at something in the room, a demonstrative can point BACK at something already named in the conversation, or mark a stretch of time as the one you are in right now. | c:voy-vas |
-| gr-perfsubj-valores-b2 | El pretérito perfecto de subjuntivo: haya + participio | new-in-order | 0.3 | The subjunctive mirror of "he hablado": an action finished but still relevant now, whenever the sentence needs the subjunctive mood. | g:subj-doubt, p:indefinites-basic |
-| gr-presente-indicativo-valores-a1 | El presente: de qué habla realmente | new-in-order | 0.3 | The Spanish present does two jobs English splits into two tenses: it reports what is true right now (estamos en clase) and what is generally true (vivo en Madrid) — with no "-ing" form to separate them, so context alone tells you which. | g:hace-que-desde |
-| fn-empatia-alivio-esperanza-c1 | Empatía, alivio y esperanza en C1: "me pongo en tu lugar" y "cruzo los dedos" | new-in-order | 0.31 | Empatizar en C1 va de compartir una experiencia parecida ("a mí me pasó algo muy parecido") a ponerse literalmente en el lugar del otro; el alivio estalla en exclamaciones ("¡ya era hora!"); y la esperanza se protege con gestos supersticiosos: "cruzo los dedos", "toco madera". | p:no-me-extrana-que, p:ya-era-hora-de-que, c:cruzo-los-dedos |
-| fn-estado-general-cosas-c1 | Preguntar por el estado general de las cosas: la pregunta que se devuelve | new-in-order | 0.31 | Este ritual conversacional tiene una estructura casi fija: preguntar por otra persona o por cómo fue algo, responder situando la respuesta en una escala de "mucho mejor" a "no demasiado bien", y cerrar el turno devolviendo la pregunta: "y lo tuyo, ¿qué tal?" | c:entonces-bueno, p:lo-mio-lo-tuyo, c:pues |
-| fn-felicitar-despedirse-c1 | Felicitar y despedirse en C1: "estás de enhorabuena" y "sin otro particular" | new-in-order | 0.31 | Felicitar en C1 va del gesto físico coloquial ("¡choca esos cinco!") a la fórmula ritual de cumpleaños que casi desea seguir vivo para el próximo, y despedirse tiene un registro escrito muy formal que no existe en la lengua oral: "sin otro particular...". | c:atentamente, c:chao-nos-vemos, c:sin-otro-particular |
-| fn-habilidad-c1 | Expresar habilidad en C1: de "soy un hacha" a "soy patoso para..." | new-in-order | 0.31 | La habilidad se expresa en C1 desde el registro neutro ("soy competente") hasta las comparaciones coloquiales muy vivas — "no hay quien me gane", "soy un hacha" — con su reverso exacto para la torpeza: "soy patoso para..." | p:ser-un-noun |
-| fn-permiso-prohibicion-c1 | Permiso y prohibición en C1: "eso ni se pregunta" y "digas lo que digas..." | new-in-order | 0.31 | Pedir permiso en C1 se disfraza a menudo de pregunta sobre la molestia causada ("¿molesto si...?"), darlo va de la formalidad institucional a "eso ni se pregunta", y rechazar una prohibición usa estructuras concesivas que anulan cualquier objeción de antemano: "digas lo que digas...". | p:digas-lo-que-digas, p:pase-lo-que-pase, p:pues-claro-que |
-| fn-recordar-olvidar-c1 | Recordar y olvidar en C1: "lo tengo en la punta de la lengua" | new-in-order | 0.31 | La memoria en C1 tiene su propio catálogo de imágenes físicas: "quedarse en blanco", tener algo "en la punta de la lengua", o que "se te vaya" lo que estabas diciendo — cada expresión describe un modo distinto de fallar (o de acertar) al recordar. | c:punta-de-la-lengua, p:intentar-conseguir, p:traer-recuerdos |
-| gr-causales-b1 | Causales: como, por + infinitivo | new-in-order | 0.31 | Por + infinitive packs an entire cause clause into three words — lo hizo así por no saber otra manera says exactly what porque no sabía otra manera would, only more compactly, and without a conjugated verb of its own. | p:empezar-terminar |
-| gr-interrogativos-exclamativos-a2 | Interrogativos y exclamativos: qué, cuál, cómo | new-in-order | 0.31 | ¿Qué? | c:que-bien, p:gustar-mas-que |
-| gr-pronombres-tonicos-a2 | Pronombres tónicos: mí, ti, conmigo | new-in-order | 0.31 | After a preposition, yo and tú switch to the special forms mí and ti — and con fuses with them into two irregular words, conmigo and contigo, that no ordinary rule for combining a preposition with a pronoun would predict. | g:indefinites |
-| gr-relativas-b1 | Oraciones de relativo: que, quien, donde | new-in-order | 0.31 | A relative clause with que either PINS DOWN which thing you mean, with no comma, or simply ADDS extra information about something already identified, set off by commas — the same word que, two structurally different jobs. | g:negation-words, g:relatives-donde-lo-que, g:subj-relative |
-| gr-sonidos-a1 | Los sonidos: cinco vocales y nada más | new-in-order | 0.32 | Spanish spelling is almost perfectly regular: five vowels, each with exactly one sound, always. | c:gracias-de-nada, c:hola-buenos-dias, g:gender-articles |
+| dc-intensificacion-b2 | Intensificar en B2: prefijos, verbos performativos, alargamientos | pcic | 0.66 | Beyond -ísimo, B2 adds a real toolkit: superlative prefixes (super-, archi-), repeating the SAME word for maximum degree (café café), performative verbs that intensify by asserting the speaker's own word as a guarantee (te aseguro, te juro), and — uniquely oral — stretching a stressed vowel or spelling a word out syllable by syllable to intensify a recrimination already made. | d:intensify-negate, p:que-subj-repeated-order, p:turning-it-up |
+| fn-proponer-sugerir-b2 | Proponer, aceptar, rechazar y suponer | pcic | 0.66 | "Habría que + infinitivo" proposes an action with the responsible party left conspicuously unnamed — nobody is assigned the task, which is exactly what makes it a gentle suggestion rather than a demand. | c:si-no-hay-mas-remedio, d:answer-requests, d:propose |
+| gn-conversacion-transaccional-a2 | La conversación transaccional en la tienda de ropa | pcic | 0.66 | The A1 transaction was a straight line: ask, pay, leave. | c:a-cuantas-cuotas, c:a-nombre-de, c:en-que-le-puedo-servir |
+| dc-entonacion-a1 | La entonación y la cortesía | pcic | 0.67 | The same three words can be a statement or a question depending on nothing but pitch — Spanish has no “do you” to signal it. | d:address-politely |
+| fn-deseos-b2 | Deseos, gustos, preferencias y planes | pcic | 0.68 | "Ojalá" needs no verb of wishing at all — it IS the wish, grammatically fused with the subjunctive that follows — while "soñar con" and "me hace ilusión" each add a distinct emotional flavor plain "querer" cannot carry. | d:wishes-plans, p:entusiasmar-fascinar, p:tener-pensado-previsto |
+| gn-llamada-transaccional-b2 | La llamada telefónica transaccional (B2): una cadena más larga | pcic | 0.68 | A B2 booking call chains several rounds of new-information-then-question in a row — not just one comparison, but a whole sequence where each answer opens the next question — and keeps a consistently formal "usted" register throughout, from the very first "dígame" to the final "que tenga un buen día". | c:permitame-un-momento, d:phone-call, p:me-comunica-con |
+| fn-acuerdo-b2 | Acuerdo y desacuerdo: de "sin ninguna duda" a "en absoluto" | pcic | 0.69 | Agreeing is not one phrase but a scale. | p:tienes-toda-la-razon, c:desde-luego, d:agree-disagree |
+| fn-conocimiento-b2 | Saber, no saber y confirmar | pcic | 0.69 | "Enterarse" marks the specific MOMENT knowledge arrived — often by chance or through a particular channel — which is why it dominates this function, distinct from "saber", which is the resulting state with no story attached to how you got there. | d:what-i-know, p:enterarse-de, p:estar-al-tanto-de |
+| fn-pedir-informacion-a2 | Pedir y dar información (A2) | pcic | 0.69 | A2 sharpens the A1 question-word set with more precise tools: distinguishing qué from cuál, asking for a category rather than a name, and offering a straight choice with "o". | p:que-tipo-de, d:ask-basic-questions |
+| fn-pedir-permiso-b2 | Permiso y prohibición: pedirlo, darlo, negarlo | pcic | 0.69 | Asking "¿te molesta/importa si...?" frames permission as a matter of the OTHER person's comfort, not authority — a distinctly polite move that "¿puedo...?" alone does not carry. | d:permission-rules, c:cuando-quieras, c:no-me-da-la-gana |
+| gn-conversacion-transaccional-a1 | La conversación transaccional: comprar algo | pcic | 0.69 | Buying something face to face — a ticket, a coffee, a souvenir — follows a shape almost as fixed as a letter: greet, state what you want, examine it, agree the price, pay, say thanks, close. | c:a-como-esta, c:aqui-tiene, c:ida-y-vuelta |
+| gn-generos-orales-b2 | Géneros orales en B2: qué debes entender, qué debes producir | pcic | 0.69 | B2 adds a genuinely high-stakes production genre B1 never asked for — the job interview as interviewee — while dense, specialized genres like documentaries, lectures and press interviews stay reception-only: the Plan Curricular still expects you to follow them, never to match their density yourself. | d:job-interview |
+| gn-presentacion-publica-b2 | Una presentación pública (B2) | pcic | 0.69 | A B2 talk adds a whole move a B1 one does not need — argumentación — and checks in with the audience mid-flow with a rhetorical question (¿Podríamos añadir algo más?), treating the presentation less like a monologue and more like a conversation the audience is simply not interrupting. | d:present-topic, p:presenting-to-audience |
+| nt-humedad-sequedad-b2 | Humedad y sequedad: empapado, transpirar, en seco | pcic | 0.69 | A vocabulary that runs from a drought (sequía) to being soaked through (empapado), with a precise verb for each stage of water appearing, being absorbed, or disappearing — and the fixed phrase "en seco" for a process done without water at all. | d:climate, p:humedo-mojado |
+| nt-movimiento-estabilidad-b2 | Movimiento y estabilidad: un verbo por cada fase | pcic | 0.69 | Where A2 had one verb for "to move", B2 breaks motion into its phases — starting (arrancar), speeding up or down (acelerar/frenar), overtaking (adelantar), stopping (detenerse) and staying still (quedarse quieto) — each a distinct, non-interchangeable moment in the same journey. | p:detenerse-estar-parado |
+| fn-dar-opinion-b2 | Opinar y valorar: darla, pedirla, matizarla | pcic | 0.7 | B2 grades the confidence of an opinion through its verb — "veo que" reports something you observe as near-fact, "yo diría que" hedges toward a guess — six frames on a spectrum from assertive to tentative, all before the actual content of the opinion. | d:opinions, p:lo-veo-dificil, p:que-opinas-de-que |
+| fn-enfado-indignacion-b2 | Enfado, hartazgo y aversión | pcic | 0.7 | "Me indigna" reacts to a moral outrage — an injustice, an abuse of power — while "me da rabia" is more personal, everyday frustration; "no aguanto que" adds that you have reached your limit, not just that something bothers you. | p:no-soporto-que, c:no-puedo-mas, c:que-rollo-spain |
+| fn-introducir-nuevo-tema-b2 | Manejar el tema: introducirlo, interrumpir, cerrarlo | pcic | 0.7 | "Por cierto" introduces a topic that has NO logical connection to what came before — a pure conversational pivot — while "hablando de..." explicitly links the new topic to something just mentioned, the opposite move. | d:steer-conversation, p:como-decia, c:antes-de-que-se-me-olvide |
+| fn-pedir-ayuda-b2 | Pedir: ayuda, favores y cosas — y responder | pcic | 0.7 | "Solicito su colaboración" is the formal, institutional register for the same request "échame una mano" makes casually — the choice between them is entirely about setting, not meaning. | p:me-harias-un-favor, d:ask-offer-help, p:le-agradeceria-que |
+| nt-disponibilidad-b2 | Disponibilidad: agotarse, contar con, estar listo | pcic | 0.7 | A whole family of ways to say something is or is not available or ready — a job vacancy, a sold-out product, having enough of something, or being willing to act — each with its own fixed verb, not a single all-purpose "hay". | c:cuenta-conmigo, d:formal-services, p:disponer-de |
+| nt-repeticion-b2 | Repetición: rutina, ciclo, una y otra vez | pcic | 0.7 | Beyond otra vez, Spanish has a rich family for talking about things that repeat: cycles that renew themselves, rhythms, habits that shade into vices, and phrases for insisting or starting over. | c:una-y-otra-vez, p:tener-la-mania-de, p:volver-a-inf |
+| dc-entonacion-b2 | Entonación y alargamientos: lo que dice el tono | pcic | 0.71 | A falling intonation on a yes/no question asks for confirmation of something already suspected, while a rising one genuinely asks for new information — the same words, two different requests, decided entirely by tone; vowel-lengthening and syllable-by-syllable pronunciation do equally specific jobs, from softening a request to reinforcing a recrimination. | p:que-subj-repeated-order, p:turning-it-up |
+| fn-responder-telefono-a2 | Al teléfono y escuchando un relato | pcic | 0.71 | Answering the phone in Spanish runs through a small, fixed set of moves — confirm identity, ask who's calling if unclear, ask them to wait, or redirect if it's a wrong number or the person is unavailable — and each has its own set phrase. | c:alo, c:con-el-ella, c:de-parte-de-quien |
+| fn-saludar-responder-b2 | Saludar, despedirse y dar la bienvenida | pcic | 0.71 | Elongating a name's vowel — "¡Caaarmen!" — is itself a warmth marker with no equivalent single word, while "¡Cuánto tiempo!" specifically marks a reunion after a real gap, not a routine daily greeting. | d:greet-address, c:ahi-vamos, p:don-dona-nombre |
+| nt-certeza-b2 | Certeza e incertidumbre: el vocabulario, más allá del modo | pcic | 0.71 | B1 taught which possibility words trigger the subjunctive; B2 adds the surrounding VOCABULARY of confidence and doubt — nouns like certeza and duda, being convinced, and the colloquial "igual" as one more indicative-taking way to hedge. | d:certainty-necessity, p:de-pronto-igual, p:estar-convencido-de |
+| nt-ciclo-accion-b1 | El ciclo de una acción: empezar, seguir, dejar de | pcic | 0.71 | Seguir + gerundio says an action is STILL going; dejar de + infinitive says it has STOPPED — the same event's continuation and interruption, described from opposite ends of one single scale running from start to finish. | p:dejar-de-inf, p:ponerse-a-inf, p:seguir-gerundio |
+| nt-consistencia-resistencia-b2 | Consistencia y resistencia: denso, frágil, resistente a | pcic | 0.71 | Describing a material's physical behavior needs a precise vocabulary — "resistencia AL agua/AL calor" always takes a preposition naming what is being withstood, and a family of near-synonyms (denso, espeso, fluido) sits on a scale from solid to liquid, not a simple yes/no. | p:resistente-a |
+| nt-correccion-precision-b2 | Corrección y precisión: fallo, exacto, verlo claro | pcic | 0.71 | Two closely related evaluative clusters: whether something is right or has an error (corrección), and whether it is stated with enough detail to be useful (precisión) — "exacto" makes a stronger claim than "correcto", promising no margin of error at all. | c:lo-tengo-clarisimo, p:equivocarse-de |
+| nt-expresion-verbal-b2 | Expresión verbal: variar el verbo de habla más allá de "decir" | pcic | 0.71 | Reported speech gets far more precise once "decir" gives way to a specific reporting verb — "sugerir" implies a soft recommendation, "insistir en" implies repetition against resistance, "confesar" implies reluctant admission — each verb carrying information "decir" leaves flat. | p:negar-confesar, d:meeting-report |
+| nt-generalidad-especificidad-b2 | Generalidad y especificidad: concretar, particular, en general | pcic | 0.71 | Moving between a broad claim and a specific instance needs its own vocabulary — verbs for narrowing down (concretar) or widening out (generalizar), and a family of adjectives (particular, universal, individual) that mark exactly how wide the claim is meant to be. | p:concretar |
+| nt-localizacion-presente-c1 | Localizar en el tiempo en C1: presente, pasado y futuro | pcic | 0.71 | Situar algo en el presente en C1 exige distinguir "actualidad" de "modernidad", una "tendencia" de una "novedad", y disponer de locuciones para hasta cuándo llega la información que se tiene: "hasta el momento", "hasta la fecha". | d:c1-tell-a-life-story, p:en-tiempos-de, p:traer-recuerdos |
+| nt-posicion-relativa-b2 | Posición relativa: delantero/trasero, a lo largo de, al otro lado | pcic | 0.71 | A rich set of prepositional phrases positions one thing against another with real precision — "a lo largo de" traces a whole extent, "al otro lado de" crosses a boundary, and "en medio de" plants something squarely in the middle, none of them interchangeable with a plain "cerca" or "lejos". | p:a-lo-largo-de, p:posicion-precisa, p:seguir-por |
+| nt-presencia-ausencia-b2 | Presencia y ausencia: asistir, faltar, a la vista | pcic | 0.71 | Beyond "estar" or "no estar", B2 supplies the vocabulary for the SOCIAL fact of presence — who counts as an attendee, what it means to be missing from an event, and a set of fixed prepositional phrases (a distancia, a la vista) that describe presence without a verb at all. | d:meeting-report, p:asistir-faltar |
+| nt-realidad-ficcion-b2 | Realidad y ficción: inventar, simular, cumplirse | pcic | 0.71 | The vocabulary for what is real vs invented, plus the specific verb for a dream or wish actually coming true — "cumplirse" — which names the moment fiction crosses over into fact. | p:cumplirse-un-sueno, p:resultar-ser |
+| nt-tiempo-referencias-futuro-pasado-presente-b1 | El tiempo: siglos, décadas y el presente que dura | pcic | 0.71 | Llevar + gerundio states how long a situation has continued right up to now — llevo un año trabajando aquí — a construction with no direct English equivalent, built from a verb that everywhere else just means "to carry." | d:duration-change, p:actualmente, p:decadas-siglos |
+| nt-visibilidad-vision-b2 | Visibilidad y visión: a simple vista, distinguir, de lejos | pcic | 0.71 | Seeing well needs its own precision adverbs and fixed phrases — "a simple vista" flags an unaided, quick look that might be wrong, while "distinguir" claims you told two things apart, a stronger claim than merely "ver". | p:a-primera-vista, p:alcanzar-a-distinguir |
+| dc-mantenimiento-referente-b2 | Mantener el referente: elipsis, sinónimos, hiperónimos | pcic | 0.72 | Beyond pronouns, B2 tracks a referent by deleting the noun entirely when a prepositional complement makes it recoverable, by licensing an indefinite article to point anaphorically at someone already named, and by swapping in a synonym or a broader hyperonym instead of repeating the same word. | p:los-de-la-camiseta, p:synonym-hypernym |
+| fn-pedir-informacion-a1 | Pedir y dar información | pcic | 0.72 | The question-word survey: who, what, where, where from, how many, what time, why — plus the two-choice question with o. | p:para-inf-purpose, x:para-porque, c:como-se-escribe |
+| fn-posibilidad-b2 | Expresar posibilidad: el futuro y condicional de conjetura | pcic | 0.72 | B2 extends B1's possibility system with the compound future and the conditional both used for CONJECTURE about the past — "se habrá caído de la moto" guesses at a past event with the same confidence a plain statement would carry, no possibility word needed at all. | c:quien-sabe, d:guess-past, p:lo-mas-probable-es-que |
+| gn-descriptiva-lugares-b2 | Describir lugares en B2: de la planta a la anécdota | pcic | 0.72 | Describing a place at B2 moves from a general impression, through a room-by-room tour, to a comparison with somewhere else entirely — and, told subjectively from childhood memory, that same tour can slide straight into a small narrative, the way a real memory does. | p:en-comparacion-con, p:se-divide-en |
 
 ## Nodes no old lesson teaches
 
-Non-lexeme, non-cando nodes with no teaching lesson: 512. Grammar nodes only: 64 of 172. First 20 grammar nodes by priority:
+Non-lexeme, non-cando nodes with no teaching lesson: 570. Grammar nodes only: 28 of 172. First 20 grammar nodes by priority:
 
-- g:sounds-letters (A1, p3) Reading Spanish aloud: five vowels, the letters that surprise you, and the stress mark
-- g:tener-que-hay-que (A1, p82) Have to, must, no need: tener que vs hay que vs deber, and no tienes que
-- g:ser-estar-adjectives (A2, p134) "Is" for what it's like vs "is" for how it is: es aburrido / está aburrido
-- g:cuando-indicative (A2, p160) When, while, every time: cuando, mientras, siempre que + present or past
-- g:article-uses (A2, p180) When Spanish says "the" and English doesn't (and the reverse)
-- g:future-conjecture (A2, p184) Guessing out loud: ¿Dónde estará? Serán las tres. Tendrá unos sesenta años.
-- g:exclamations (A2, p206) Reacting: ¡Qué bueno!, ¡Qué pena!, ¡Tan lindo!, ¡Cuánta gente!
-- g:que-vs-cual (A2, p214) What or which: ¿qué? vs ¿cuál?
-- g:pero-sino (A2, p224) But and but rather: pero vs sino (no es caro, sino barato)
-- g:reported-past-basic (A2, p240) Telling what someone said: me dijo que estaba cansado, me preguntó si…
-- g:time-sequence (A2, p246) Keeping a story in order: primero, luego, al final, ese día, al día siguiente
-- g:acabar-de-ya-todavia (A2, p250) Just, already, still, not yet: acabo de, ya, todavía, ya no
-- g:written-register-a2 (A2, p254) Messages, emails and reviews: openings, closings and usted in writing
-- g:subj-opinion-negated (B1, p264) I think so / I don't think so: creo que es… vs no creo que sea…
-- g:conditional-past-guess (B1, p280) Guessing about the past: serían las diez, tendría veinte años
+- g:ir-a-plans (A1, p26) Talking about plans: voy a + verb
+- g:imperfect-progressive (A1, p107) Was doing it when…: estaba cocinando cuando sonó el teléfono
+- g:diminutives (A2, p210) Making it small and friendly: un tintico, ahorita, un momentico
+- g:lo-adjective (B1, p270) The good thing, the worst part: lo bueno, lo malo, lo mejor es que
 - g:se-meaning-change (B1, p290) When "se" changes the meaning: ir and irse, dormir and dormirse, parecer and parecerse
-- g:narrative-pasts (B1, p297) Telling a story with all your pasts: what happened, what it was like, what had happened before
-- g:reported-backshift (B1, p300) Reporting further back: dijo que había llamado, que vendría
-- g:subj-influence (B1, p304) Advising and asking: te recomiendo que, te pido que, le aconsejo que
 - g:subj-purpose-full (B1, p310) Purpose and plans for others: para que, sin que, antes de que
+- g:subj-relative (B1, p314) Looking for one that…: busco un local que tenga ventanas
+- g:relatives-prepositions (B1, p317) Relatives after a preposition: el local en el que, la gente con la que, a quien
+- g:cada-cualquier (B1, p320) Each, any at all: cada, cualquier, cualquiera, todo, toda
+- g:passive-se (B1, p344) Things done (who did it doesn't matter): se vendieron, se construyó, se firmarán
+- g:questions-prepositions (B1, p354) Questions with a preposition first: ¿con quién?, ¿de qué?, ¿para qué?, ¿a qué hora?
+- g:reported-requests (B1, p357) Passing on requests: dice que vengas, me pide que lo llame
+- g:register-ladder (B2, p404) Saying the same thing five ways: from "pásame eso" to "le agradecería que…"
+- g:subj-concessive (B2, p424) Even if: aunque llueva, por más que insista
+- g:subj-conditions (B2, p427) Only if, unless, in case: a menos que, con tal de que, siempre que, en caso de que
+- g:conditional-rumour (B2, p437) Reporting without vouching: según fuentes, el alcalde habría firmado
+- g:lo-que-intensity (B2, p461) How very…!: lo difícil que es, lo bien que cocina, con lo cansado que estoy
+- g:relatives-formal (B2, p464) Formal relatives: el cual, la cual, lo cual, quien(es)
+- g:infinitive-perfect (B2, p471) Having done: después de haber firmado, por no haber llamado
+- g:subj-future-in-past (B2, p487) When it would happen: dijo que me llamaría cuando llegara
+
+## Review of the map
+
+Reviewed on 2026-11-04 by reading each lesson (title, summary, sections, examples, contrasts, probes) against the titles and forms of the candidate nodes. The rulings live in `tools/lesson-nodes.overrides.json`; `tools/tag-data.ts` applies them after derivation with `how: "override"` and confidence 1, and `uses` becomes the lesson's row nodes minus what it teaches. Derivation itself is unchanged, so the method counts above are still what derivation chose. This section is kept when the tool regenerates the report.
+
+### What was ruled on
+
+Overrides: 258 lessons. 38 of them keep exactly the derived teaches (confirmed); the rest change it.
+
+| group | lessons |
+|---|---|
+| task lessons: `teaches: []`, `uses` carries their nodes | 63 |
+| tense lessons | 13 |
+| concept lessons from data/grammar.js (ser-estar, gender-articles, preterite-imperfect, por-para, impneg) | 5 |
+| other frequency-fallback lessons (the rest of the 16 are tasks or concepts) | 6 |
+| other new-in-order lessons below 0.5 (the rest of the 102 are tasks or concepts) | 52 |
+| random sample of the PCIC-mapped lessons | 60 |
+| the rest of the grammar strand (all 71 grammar-strand lessons are now ruled) | 33 |
+| other lessons: homes for untaught grammar nodes (25) and one new-in-order lesson at 0.5 | 26 |
+
+### How often PCIC matching is right
+
+Sample: 60 of the 427 PCIC-mapped lessons, drawn by a seeded shuffle (mulberry32, seed 20261104). Right means every derived node is something the lesson teaches and they cover its main point; partly means at least one derived node is right but another is not taught or the main point is missing; wrong means none of the derived nodes is what the lesson teaches.
+
+**Result: 45 of 60 right (75%), 13 partly right (22%), 2 wrong (3%).** Function, notion, genre and discourse lessons: 43 of 56 right. Grammar lessons: 2 of 4.
+
+PCIC matching cannot reach a grammar node at all. Every g: node carries section-level PCIC codes (`gramatica:9.1.1`), while lessons carry item-level codes (`gramatica:A1:458`), so 0 of the 427 PCIC-mapped lessons got a g: node. The d:, p: and c: nodes carry item codes, which is why the non-grammar strands match well. Across all 31 PCIC-mapped grammar-strand lessons (every one was reviewed, not just the 4 in the sample) the derived map was right for 15, partly right for 11 and wrong for 5 (48%). The other common miss is the top-3 cut with an alphabetical tie-break, which drops the node that matters when several tie (nt-expresion-verbal-a2 kept c:dizque and c:segun over p:preguntar-pedir at the same count).
+
+Misses in the sample:
+
+| lesson | verdict | why | derived | override |
+|---|---|---|---|---|
+| nt-origen-a1 | partly | has the age half (p:tener-anos), misses the origin half | p:tener-anos | g:ser-identity, c:soy-de, p:tener-anos |
+| gr-interrogativos-a1 | wrong | p:tener-anos; the lesson is the question words | p:tener-anos | g:questions |
+| nt-expresion-verbal-a2 | partly | c:me-conto-que fits; c:dizque and c:segun are not taught; p:preguntar-pedir lost an alphabetical tie | c:dizque, c:me-conto-que, c:segun | p:preguntar-pedir, g:reported-past-basic, c:me-conto-que |
+| gn-describir-lugar-a1 | partly | c:esta-en-su-casa (make yourself at home) is not taught | c:esta-en-su-casa, d:describe-place-inventory | d:describe-place-inventory, g:hay-vs-esta |
+| fn-preguntar-deseos-a2 | partly | covers the good-wishes half only; misses ¿quieres? vs ¿te gustaría? | c:buen-provecho, c:buen-viaje, c:mucha-suerte | c:me-gustaria, c:buen-viaje, c:buen-provecho, c:mucha-suerte |
+| nt-movimiento-estabilidad-a2 | partly | c:me-deja-en (taxi drop-off) is not taught | c:me-deja-en, p:llevar-traer, p:subirse-bajarse | p:subirse-bajarse, p:llevar-traer, d:give-directions |
+| nt-evaluacion-valor-b1 | partly | misses its main point, parecerle on the gustar pattern | p:a-cuanto-esta, p:en-oferta, p:encontrar-ver-adj | g:parecer-quedar, p:a-cuanto-esta, p:en-oferta |
+| fn-responder-felicitaciones-b1 | partly | c:que-te-diviertas is not taught; the lesson is igualmente and tú también | c:que-te-diviertas, d:celebrate-occasions | d:celebrate-occasions |
+| gn-generos-escritos-b1 | partly | c:quedo-atento is a letter closing, not taught here | c:quedo-atento, d:genre-register | d:genre-register |
+| nt-acabado-b1 | partly | misses its main point, estar + participle | p:quedar-participio, p:recien-participio | g:estar-participle, p:quedar-participio |
+| nt-utilidad-uso-b2 | partly | p:dedicarse-a is not taught; p:servir-para lost to it | p:fuera-de-servicio, d:formal-services, p:dedicarse-a | p:fuera-de-servicio, p:servir-para, p:imprescindible |
+| fn-solicitar-comienzo-relato-b2 | partly | c:que-le-vamos-a-hacer is not taught | d:tell-story, c:que-le-vamos-a-hacer, c:tienes-un-minutico | d:tell-story, c:tienes-un-minutico, c:ya-me-imagino, c:total-que |
+| nt-orden-b2 | wrong | c:hacer-fila, c:la-raiz-del-problema and p:proceder-de are all unrelated | c:hacer-fila, c:la-raiz-del-problema, p:proceder-de | p:por-orden-de |
+| gr-formas-no-personales-c1 | partly | the three chunks are in the lesson, but its grammar (absolute participles, gerund clauses) is missing | c:de-ser-asi, c:hablando-se-entiende-la-gente, p:yo-ni-loco | g:absolute-constructions, g:participle-gerund-clauses, g:gerund-ways, c:de-ser-asi, p:yo-ni-loco |
+| nt-adecuacion-c1 | partly | d:c1-resignation-coping is not taught | c:fuera-de-lugar, c:guardar-las-formas, d:c1-resignation-coping | c:guardar-las-formas, c:fuera-de-lugar, p:ajustarse-a |
+
+Right in the sample: nt-referencias-generales-a1, nt-valor-precio-a1, fn-preguntar-gustos-a2, fn-valorar-a1, gn-describir-objeto-a1, gr-objeto-directo-a1, fn-felicitar-a2, fn-preguntar-preferencias-a2, fn-preguntar-conocimiento-a2, gr-cuantificadores-a2, fn-estoy-de-acuerdo-b1, nt-conformidad-correccion-precision-b1, fn-expresar-deseos-b1, fn-responder-estado-b1, fn-concluir-relato-b1, fn-has-oido-b1, fn-conocimiento-desconocimiento-b1, gn-describir-persona-b1, fn-brindis-b1, gn-composicion-escrita-b1, gn-composicion-argumentativa-b2, fn-alegria-satisfaccion-b2, fn-sorpresa-extraneza-b2, nt-aumento-disminucion-b2, nt-referencias-generales-b2, nt-localizacion-tiempo-b2, nt-edad-vejez-b2, nt-distancia-b2, nt-humedad-sequedad-c1, fn-escepticismo-contraargumento-c1, dc-atenuacion-c1, fn-pedir-confirmacion-c1, gn-trabajo-academico-c1, nt-necesidad-obligacion-c1, fn-decepcion-resignacion-c1, fn-reprochar-ofrecerse-c1, fn-proponer-ofrecer-confirmar-c1, nt-cantidad-relativa-c1, nt-referencias-generales-c1, nt-anterioridad-c1, gn-resena-c1, gn-descriptiva-lugares-c1, nt-evaluacion-general-c1, nt-exito-logro-c1, fn-introducir-relato-atencion-c1.
+
+### Tense lessons
+
+The graph's g: nodes carry no tags, so they were grouped by the PCIC tense section in their codes:
+
+- 9.1.1 present: present-ar, present-er-ir, estar-location-states, stem-boot, ir-a-plans, yo-irregular, stem-e-i, hace-que-desde, vosotros-recognition
+- 9.1.2 imperfect: imperfect-states, imperfect-habitual, pret-vs-imperfect, narrative-pasts, tense-modal-uses
+- 9.1.3 preterite: preterite-ar, preterite-er-ir, preterite-ser-ir-hacer, preterite-irregular-strong, hace-ago, preterite-spelling-stem, pret-vs-imperfect, narrative-pasts
+- 9.1.4 future: future-conjecture, future-promises, tense-modal-uses
+- 9.1.5 conditional: conditional, conditional-past-guess, conditional-rumour
+- 9.1.6 perfecto: perfecto-experience, spain-pasts
+- 9.1.8 pluperfect: pluperfect, narrative-pasts
+- 9.1.9 future perfect: future-perfect
+- 9.1.10 conditional perfect: conditional-perfect
+- 9.2.1 present subjunctive: subj-wanting, subj-irregulars, subj-wishes, subj-emotion-intro, subj-opinion-negated, subj-value, subj-doubt, quizas-a-lo-mejor, subj-emotion, subj-influence, reported-requests, subj-perception-negated, que-wishes-commands
+- 9.2.2 imperfect subjunctive: imperfect-subj, subj-past-triggers, ojala-past, reporting-verbs-mood, subj-perception-negated, formal-letter-grammar, subj-future-in-past, se-form-recognition
+- 9.2.3 perfect subjunctive: subj-perfect
+- 9.2.4 pluperfect subjunctive: pluperfect-subj, wish-exclamatives
+- 9.3 imperative: commands-tu, commands-usted, commands-with-pronouns, negative-commands, que-wishes-commands
+
+Each tense lesson now teaches the form nodes of its tense and the uses it actually teaches. Nodes that carry the tense code but are a use rather than a form (estar-location-states, ir-a-plans and hace-que-desde under 9.1.1, hace-ago under 9.1.3, and the story and modal nodes) stay with their own lessons; ir-a-plans has none, see below. The present subjunctive is split by trigger in the graph, so its lesson takes the triggers it teaches and leaves the later ones (influence, conjunctions, relatives, concession, the B2 perception and que + order nodes) to their own lessons. The affirmative imperative lesson leaves g:negative-commands to impneg, which teaches it in full. None of the 13 is a pluperfect subjunctive lesson; gr-pluscuamsubj-b2 teaches g:pluperfect-subj.
+
+| tense key | lesson | was | now teaches |
+|---|---|---|---|
+| presente | presente | g:present-ar | g:present-ar, g:present-er-ir, g:stem-boot, g:stem-e-i, g:yo-irregular, g:vosotros-recognition |
+| preterito | preterito | g:preterite-ar | g:preterite-ar, g:preterite-er-ir, g:preterite-ser-ir-hacer, g:preterite-irregular-strong, g:preterite-spelling-stem |
+| perfecto | gr-preterito-perfecto-a2 | g:perfecto-experience | g:perfecto-experience, g:spain-pasts, x:perfecto-preterito |
+| imperfecto | imperfecto | g:imperfect-states | g:imperfect-states, g:imperfect-habitual |
+| imperativo | gr-imperativo-forma-a2 | g:commands-tu | g:commands-tu, g:commands-usted, g:commands-with-pronouns, x:commands-tu-usted |
+| presubj | gr-presente-subjuntivo-b1 | g:subj-wanting | g:subj-irregulars, g:subj-wanting, g:subj-wishes, g:subj-emotion-intro, g:subj-doubt, g:subj-opinion-negated, g:subj-value, x:creo-no-creo, x:inf-vs-que-subj |
+| futuro | futuro | g:future-promises | g:future-promises, g:future-conjecture, x:future-prediction-conjecture |
+| condicional | condicional | g:conditional | g:conditional, g:conditional-past-guess |
+| plusc | gr-pluscuamperfecto-b1 | g:pluperfect | g:pluperfect, x:pluperfect-preterite |
+| impsubj | impsubj | g:imperfect-subj | g:imperfect-subj, g:subj-past-triggers, g:si-hypothetical, g:ojala-past |
+| futperf | futperf | g:future-perfect | g:future-perfect |
+| condperf | condperf | g:conditional-perfect | g:conditional-perfect |
+| perfsubj | perfsubj | g:subj-perfect | g:subj-perfect |
+
+### The 20 grammar nodes the derived map left untaught
+
+| node | decision |
+|---|---|
+| g:sounds-letters | gr-sonidos-a1, gr-acentuacion-a1 |
+| g:tener-que-hay-que | fn-aconsejar-a2 (tienes que vs hay que on the advice scale); fn-obligacion-necesidad-b1 takes g:deber-modal. No A1 lesson teaches it. |
+| g:ser-estar-adjectives | ser-estar (es aburrido / está aburrido), with x:ser-estar-adj |
+| g:cuando-indicative | gr-temporales-b1, with x:cuando-ind-subj |
+| g:article-uses | gr-articulo-definido-a1, gr-articulo-definido-distribucion-a2 |
+| g:future-conjecture | futuro, with x:future-prediction-conjecture |
+| g:exclamations | gr-interrogativos-exclamativos-a2, gr-exclamativos-b2 |
+| g:que-vs-cual | gr-interrogativos-exclamativos-a2 |
+| g:pero-sino | fn-respuesta-afirmativa-b1 (no… sino), with x:pero-sino |
+| g:reported-past-basic | nt-expresion-verbal-a2 (dijo que venía, nos preguntó de dónde éramos) |
+| g:time-sequence | dc-deixis-temporal-a2 |
+| g:acabar-de-ya-todavia | nt-anterioridad-a2 |
+| g:written-register-a2 | fn-responder-saludo-a2 (Estimada señora López: Le escribo para…, the node's own example) |
+| g:subj-opinion-negated | gr-presente-subjuntivo-b1, with x:creo-no-creo |
+| g:conditional-past-guess | condicional (probability in the past: serían las cinco) |
+| g:se-meaning-change | **no lesson.** Only passing mentions: dormirse and quedarse in gr-pronombre-se-a1, parecer vs parecerse in nt-cualidad-generalidad-b1. Stage 6. |
+| g:narrative-pasts | gn-narrar-estructura-b1 |
+| g:reported-backshift | gn-narrar-estructura-b1 (me contó que había perdido el vuelo y que tendría que esperar), dc-cita-b2 |
+| g:subj-influence | gr-subordinadas-sustantivas-b2 (aconsejar, sugerir, pedir que) |
+| g:subj-purpose-full | **no lesson.** para que is one bullet in gr-presente-subjuntivo-b1 and one section in fn-dar-informacion-b2 (which now teaches g:para-que); sin que and antes de que are never taught. Stage 6. |
+
+### Grammar nodes no old lesson teaches (28 of 172), for Stage 6
+
+The derived map left 64 grammar nodes untaught. After the review 28 are, and for these I found no lesson that teaches them (searched titles, section headings and section text; examples alone do not count). 13 of them were "taught" in the derived map only by a task lesson or by a node picked out of a lesson's examples, marked *.
+
+- g:ir-a-plans * (A1, p26) Talking about plans: voy a + verb
+- g:imperfect-progressive * (A1, p107) Was doing it when…: estaba cocinando cuando sonó el teléfono
+- g:diminutives * (A2, p210) Making it small and friendly: un tintico, ahorita, un momentico
+- g:lo-adjective * (B1, p270) The good thing, the worst part: lo bueno, lo malo, lo mejor es que
+- g:se-meaning-change (B1, p290) When "se" changes the meaning: ir and irse, dormir and dormirse, parecer and parecerse
+- g:subj-purpose-full (B1, p310) Purpose and plans for others: para que, sin que, antes de que
+- g:subj-relative * (B1, p314) Looking for one that…: busco un local que tenga ventanas
+- g:relatives-prepositions * (B1, p317) Relatives after a preposition: el local en el que, la gente con la que, a quien
+- g:cada-cualquier * (B1, p320) Each, any at all: cada, cualquier, cualquiera, todo, toda
+- g:passive-se * (B1, p344) Things done (who did it doesn't matter): se vendieron, se construyó, se firmarán
+- g:questions-prepositions (B1, p354) Questions with a preposition first: ¿con quién?, ¿de qué?, ¿para qué?, ¿a qué hora?
+- g:reported-requests * (B1, p357) Passing on requests: dice que vengas, me pide que lo llame
+- g:register-ladder (B2, p404) Saying the same thing five ways: from "pásame eso" to "le agradecería que…"
+- g:subj-concessive (B2, p424) Even if: aunque llueva, por más que insista
+- g:subj-conditions (B2, p427) Only if, unless, in case: a menos que, con tal de que, siempre que, en caso de que
+- g:conditional-rumour (B2, p437) Reporting without vouching: según fuentes, el alcalde habría firmado
+- g:lo-que-intensity * (B2, p461) How very…!: lo difícil que es, lo bien que cocina, con lo cansado que estoy
+- g:relatives-formal (B2, p464) Formal relatives: el cual, la cual, lo cual, quien(es)
+- g:infinitive-perfect * (B2, p471) Having done: después de haber firmado, por no haber llamado
+- g:subj-future-in-past (B2, p487) When it would happen: dijo que me llamaría cuando llegara
+- g:cuyo-relatives (C1, p534) Whose: cuyo, cuya (and how people avoid it)
+- g:nominalisation (C1, p537) Turning actions into nouns: la firma del contrato, el cierre, la toma de decisiones
+- g:consecutive-advanced * (C1, p551) Results in writing: de ahí que, de manera que, así pues, por consiguiente
+- g:conditional-advanced * (C1, p556) Conditions with style: de haberlo sabido, como no llegues, a no ser que, con tal de que
+- g:agreement-tricky (C1, p567) Agreement when sense beats grammar: la mayoría piensa(n), el resto, la gente
+- g:voseo-recognition (C1, p576) Hearing paisas (and Argentines): vos tenés, vos sabés, vení
+- g:future-subj-recognition (C1, p581) Old and legal Spanish: quien hiciere, si así fuere
+- g:word-order-style (C1, p586) Word order for effect: Mucho ha cambiado el barrio; poco importa ya
+
+The one that matters most is g:ir-a-plans (A1, p26): the old course has no lesson on voy a + infinitive. It appears only in examples, and the presente lesson teaches the present with a time marker for plans instead. g:imperfect-progressive (A1) and g:diminutives (A2) are the other early gaps.
+
+### Pattern and chunk nodes that lost their only teacher
+
+Zeroing the 63 task lessons and dropping nodes that derivation picked out of examples leaves 56 p: and 69 c: nodes (and 0 d:) with no teaching lesson that had one before; 57 of those had only a task lesson. Many are core A1 chunks that the old course uses everywhere and never teaches as a point: c:hay, c:tengo, c:tienes, c:quiero, c:voy-a, c:era, c:compre-trabaje, c:no-entiendo. Restoring them as noise would be wrong; the gate needs a rule instead, for example that a c: node counts as taught once the grammar node it unpacks is taught. Undecided, so listed here.
+
+### What the graph lacks that the old course teaches
+
+- Subject pronouns and pro-drop (gr-pronombre-sujeto-a1); x:tu-usted stands in.
+- Noun plurals (gr-numero-sustantivos-a1); g:gender-articles stands in.
+- Restrictive vs non-restrictive relative clauses (gr-relativas-b1), and the relative vs interrogative accent on como, cuando, donde (gr-adverbios-relativos-b1).
+- The pragmatic values of the imperative (plea, advice, invitation: gr-imperativo-valores-b1).
+- Neuter lo as an attribute (lo estoy) and the clitic order hierarchy (gr-pronombre-personal-b2).
+- The pluscuamperfecto de conato (había estado a punto de: gr-tiempos-indicativo-c1).
+- quisiera as a courtesy form (gr-impsubj-valores-b2).
+- igualmente and tú también as replies to good wishes (fn-responder-felicitaciones-b1).
+- Suspended intonation as an intensifier (dc-intensificacion-c1).
+- puesto as a rank and colocado / descolocado (nt-orden-b2).
+- Several C1 idioms: seguimos tirando, hecho polvo, no puedo con mi alma, dar saltos de alegría (fn-responder-saludo-dirigirse-c1, fn-afecto-sensaciones-c1, fn-estado-animo-alegria-c1).
+- A contrast node for gender, and one for affirmative vs negative commands.
+- The C1 vocabulary-only notion lessons (smell, shape, material, duration, texture, humidity) teach lexis the graph holds only as l: nodes; their teaches point at the nearest pattern or can-do.
+
+### Spain's Spanish in the old course
+
+The old course teaches Spain's Spanish as the learner's own: vosotros is in every paradigm from day 2 and in the subject pronoun lesson, and the perfecto lesson teaches hoy and este año + perfecto as the norm. The graph files both as B2 recognition (g:vosotros-recognition, g:spain-pasts). The overrides put them where the old course teaches them (presente, gr-pronombre-sujeto-a1, gr-preterito-perfecto-a2) so that old content using them is not gated out until B2. Whether that is wanted is a decision for Stage 6.
+
+### Partial or late assignments
+
+- g:por-para-2 is set on por-para, which teaches its time and exchange uses but not means, or para for opinion and comparison; no other lesson teaches it.
+- g:causal-advanced is set on gr-causales-b1, which teaches only por + infinitive (not ya que, puesto que).
+- Nodes first taught two or more levels after their band: g:negative-commands (A2) at impneg (level 4), g:adverbs-mente (A2) and g:para-que (A2) at B2 lessons, g:gerund-ways (A2), g:verbs-of-change, g:passive-ser and g:como-si (B1) at C1 lessons. These are where the old course first teaches them, which is input for the re-sequence.
+
