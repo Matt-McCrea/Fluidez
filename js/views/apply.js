@@ -58,7 +58,8 @@ window.StageApply = (function () {
   function run(host, ctx, done) {
     var items = ctx.applyItems || [];
     if (!items.length) { done(); return; }
-    var i = 0, correct = 0, total = items.length;
+    var st = ctx.step || null, ex = (st && st.extra) || {};
+    var i = Math.min((st && st.at) || 0, items.length), correct = ex.correct || 0, total = items.length;
 
     var wrap = UI.el('div', 'panel');
     var progress = UI.el('div', 'muted review-stats');
@@ -163,6 +164,7 @@ window.StageApply = (function () {
     }
 
     function show() {
+      if (st) st.save(i, { correct: correct });   // the place survives a reload
       if (i >= items.length) { finish(); return; }
       var it = items[i];
       progress.textContent = 'Frase ' + (i + 1) + ' / ' + items.length;

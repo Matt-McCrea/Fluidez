@@ -307,9 +307,29 @@ window.Session = (function () {
     return null;
   }
 
-  function buildContext() {
-    if (window.Perf) return window.Perf.mark('session build', buildContextInner);
-    return buildContextInner();
+  /* NO MONOTONY RUNS. Never more than MAX_RUN cards of one shape in a row. When
+   * a run would grow past that, the next card of a different shape is pulled
+   * forward; everything else keeps its order. If nothing else is left the run
+   * stays (a stage of six cloze items has no other shape to rotate to). */
+  var MAX_RUN = 4;
+  function shapeOf(x) { return (x && x.type) || '?'; }
+  function breakRuns(items, shape, max) {
+    var rest = (items || []).slice(), out = [];
+    while (rest.length) {
+      var n = out.length, run = 0, last = null;
+      if (n) { last = shape(out[n - 1]); for (var k = n - 1; k >= 0 && shape(out[k]) === last; k--) run++; }
+      var at = 0;
+      if (run >= max) {
+        for (var j = 0; j < rest.length; j++) if (shape(rest[j]) !== last) { at = j; break; }
+      }
+      out.push(rest.splice(at, 1)[0]);
+    }
+    return out;
+  }
+
+  function buildContext(opts) {
+    if (window.Perf) return window.Perf.mark('session build', function () { return buildContextInner(opts); });
+    return buildContextInner(opts);
   }
 
   /* Which lesson today is, and where it sits in the course.
@@ -317,7 +337,7 @@ window.Session = (function () {
    * Split out of buildContext so the home screen can name today's work without
    * also sampling a passage, six cloze items and five writing tasks — Inicio
    * re-renders on every tab switch, and that sampling is the expensive half. */
-  function pickFocus() {
+  function pickFocus(over) {
     var day = dayNumber();
     var pr = window.Profile ? window.Profile.params() : { name: 'standard', unlockAll: false, produceStyle: 'full' };
     var prog = loadProg();
@@ -330,6 +350,10 @@ window.Session = (function () {
       // paced path: grammar/vocab/verb/practice days, grammar spaced out
       var seq = window.Curriculum.seq();
       var di = prog.beginnerDay || 0;
+      /* `over.di` pins the day: a resumed or repeated session must rebuild the
+       * day it STARTED on, not whatever the counter says now. */
+      var pinned = !!(over && over.di != null);
+      if (pinned) di = over.di;
       /* WHEN THE COURSE ITSELF MOVES.
        *
        * `beginnerDay` is a plain index into the band's slice, so inserting a
@@ -357,7 +381,7 @@ window.Session = (function () {
        * A learner who has studied nothing loses nothing — their counter was 0
        * and stays 0. */
       var sig = courseSig(seq), remapped = false;
-      if (prog.courseSig !== sig) { di = 0; prog.courseSig = sig; remapped = true; }
+      if (!pinned && prog.courseSig !== sig) { di = 0; prog.courseSig = sig; remapped = true; }
       /* The paced path walks a DAY COUNTER, not the studied set — so a lesson
        * marked done from Lecciones (js/unitcheck.js), by a unit check or by
        * hand, left the counter where it was and the session kept serving
@@ -374,7 +398,7 @@ window.Session = (function () {
          * marks A1 done still walks thirty verb days to get out of it. */
         return !!(f.unit && UNITS[f.unit] && window.UnitCheck && window.UnitCheck.isDone(UNITS[f.unit]));
       }
-      while (di < seq.length && doneAlready(seq[di])) { di++; moved = true; }
+      while (!pinned && di < seq.length && doneAlready(seq[di])) { di++; moved = true; }
       if (moved || remapped) { prog.beginnerDay = di; saveProg(prog); }
       focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
       /* `di` indexes the BAND's slice; COURSE_UNITS.from indexes the whole
@@ -402,6 +426,7 @@ window.Session = (function () {
       if (!pool.length) pool = lessons.filter(function (l) { return (l.level || 1) <= (pr.maxGate || 99); });
       if (!pool.length) pool = lessons;
       for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }
+      if (over && over.lessonId) { var ol = lessonById(over.lessonId); if (ol) lesson = ol; }
       if (!lesson) lesson = pool[day % Math.max(1, pool.length)] || null;
       level = lesson ? (lesson.level || 1) : (pr.maxGate || 1);
       focus = lesson ? { type: 'grammar', id: lesson.id, tense: lesson.tense || lesson.id }
@@ -424,11 +449,14 @@ window.Session = (function () {
     if (pr.maxGate) level = Math.min(level, pr.maxGate);
 
     return { day: day, pr: pr, prog: prog, studied: studied,
-             focus: focus, lesson: lesson, level: level, dayIndex: dayIndex };
+             focus: focus, lesson: lesson, level: level, dayIndex: dayIndex,
+             di: (pr.usesCurriculum && window.Curriculum) ? di : null };
   }
 
-  function buildContextInner() {
-    var f = pickFocus();
+  function buildContextInner(opts) {
+    opts = opts || {};
+    var over = opts.over || null;
+    var f = pickFocus(over);
     var day = f.day, pr = f.pr, studied = f.studied;
     var focus = f.focus, lesson = f.lesson, level = f.level, dayIndex = f.dayIndex;
 
@@ -450,7 +478,8 @@ window.Session = (function () {
     // studied it and come back around to it again (review rotation), selection
     // is plain Math.random so repeats don't feel identical every time.
     var firstTime = (focus.type === 'grammar' && lesson) ? !studied[lesson.id] : false;
-    var rng = firstTime ? UI.seededRandom(lesson.id) : Math.random;
+    var rng = firstTime ? UI.seededRandom(lesson.id)
+      : (opts.seed != null ? UI.seededRandom('s:' + opts.seed) : Math.random);
 
     // Produce: 'guided' (beginner) = a build + a translation, with scaffolding.
     // 'full' = also open free-writing and, from level 2+, a connected paragraph.
@@ -684,8 +713,21 @@ window.Session = (function () {
       return pick(top, rng);
     }
 
+    /* A repeat or a resume names its passage; everything else is the scheduler's
+     * choice. Looked up in the whole table, not the gated one: the learner has
+     * already been shown this text today. */
+    var named0 = null;
+    if (over && over.passageId) {
+      named0 = (window.PASSAGES || []).filter(function (x) { return x.id === over.passageId; })[0] || null;
+    }
+    var chosenPassage = named0 || richest(storyPool.length ? storyPool : passages);
+
     return {
       day: day,
+      di: f.di,
+      seed: opts.seed != null ? opts.seed : null,
+      repeat: !!opts.repeat,
+      startedDay: day,
       dayIndex: dayIndex,
       level: level,
       profile: pr.name,
@@ -693,10 +735,10 @@ window.Session = (function () {
       dateLabel: new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }),
       lesson: lesson,
       mode: mode,
-      passage: richest(storyPool.length ? storyPool : passages),
+      passage: chosenPassage,
       passageTier: storyTier,
-      applyItems: sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng),
-      writeTasks: produce,
+      applyItems: breakRuns(sampleAligned(apply, focus, big ? 12 : (mode === 'corto' ? 4 : 6), clozeMatchesFocus, rng), shapeOf, MAX_RUN),
+      writeTasks: breakRuns(produce, shapeOf, MAX_RUN),
       rng: rng,
       results: {}
     };
@@ -843,7 +885,11 @@ window.Session = (function () {
     if (!pr || !pr.usesCurriculum) return null;
     var seq = window.Curriculum.seq(), prog = loadProg();
     var studied = prog.studied || {};
-    var di = (prog.beginnerDay || 0) + 1;          // the day after the one just done
+    /* The counter moves when a session COMPLETES (see markDone), so it already
+     * points at the day the next session will serve. It used to be read as
+     * "the day just done" and bumped by one, which named a lesson the Start
+     * button then did not open. */
+    var di = prog.beginnerDay || 0;
     for (var i = di; i < seq.length && i < di + 40; i++) {
       var f = seq[i];
       if (!f) continue;
@@ -851,11 +897,11 @@ window.Session = (function () {
         if (studied[f.id]) continue;
         var l = lessonById(f.id);
         if (!l) continue;
-        return { title: l.title, kind: 'grammar', focus: f, lessonId: l.id,
+        return { title: l.title, kind: 'grammar', focus: f, lessonId: l.id, di: i,
                  canDo: l.canDo || null };
       }
-      if (f.type === 'verbs') return { title: T('Verbos nuevos', 'New verbs'), kind: 'verbs', focus: f, canDo: null };
-      if (f.type === 'vocab') return { title: T('Palabras nuevas', 'New words'), kind: 'vocab', focus: f, canDo: null };
+      if (f.type === 'verbs') return { title: T('Verbos nuevos', 'New verbs'), kind: 'verbs', focus: f, di: i, canDo: null };
+      if (f.type === 'vocab') return { title: T('Palabras nuevas', 'New words'), kind: 'vocab', focus: f, di: i, canDo: null };
     }
     return null;
   }
@@ -885,10 +931,74 @@ window.Session = (function () {
     var pp = loadProg();
     pp.studied = pp.studied || {}; pp.studied[f.lesson.id] = 1;
     saveProg(pp);
+    discardSession();
   }
 
   function pauseToShell() {
     if (window.Shell) { window.Shell.closeOverlay(); window.Shell.go('inicio'); }
+  }
+
+  /* ---- the session survives a reload --------------------------------------
+   *
+   * Position used to live only in `idx` and `ctx`, so closing the tab sent the
+   * learner back to Review. The record below is what is needed to rebuild the
+   * same session: the mode, the stage and step, the RNG seed, and the ids of
+   * what was chosen (lesson, passage, apply items by index, writing tasks by
+   * id). A record from another day is dropped. */
+  var SKEY = 'fluidez.session', LKEY = 'fluidez.lastsession';
+  var stepIdx = 0, answers = {}, resumeAt = null;
+
+  function readRec(key) {
+    try { return JSON.parse(localStorage.getItem(key)); } catch (e) { return null; }
+  }
+  function writeRec(key, o) { try { localStorage.setItem(key, JSON.stringify(o)); } catch (e) {} }
+  function dropRec(key) { try { localStorage.removeItem(key); } catch (e) {} }
+  function bandNow() { return window.Profile && window.Profile.current ? window.Profile.current() : null; }
+
+  // The saved session if it is today's and still makes sense, else null (and gone).
+  function pending() {
+    var rec = readRec(SKEY);
+    if (!rec) return null;
+    if (rec.startedDay !== dayNumber() || !MODES[rec.mode] || !rec.snap ||
+        (rec.band && bandNow() && rec.band !== bandNow())) { dropRec(SKEY); return null; }
+    return rec;
+  }
+  function makeSnap(c) {
+    var ai = window.APPLY_ITEMS || [];
+    return {
+      di: c.di != null ? c.di : null,
+      lessonId: c.lesson ? c.lesson.id : null,
+      passageId: c.passage ? c.passage.id : null,
+      applyIx: (c.applyItems || []).map(function (x) { return ai.indexOf(x); }),
+      writeIds: (c.writeTasks || []).map(function (t) { return t.id; })
+    };
+  }
+  function persist() {
+    if (!ctx || idx < 0 || idx >= stages().length) return;
+    writeRec(SKEY, { v: 1, mode: mode, stageIdx: idx, stepIdx: stepIdx, ctxSeed: ctx.seed,
+                     startedDay: ctx.startedDay, band: bandNow(), answers: answers,
+                     results: ctx.results, snap: ctx.snap, repeat: !!ctx.repeat });
+  }
+  function discardSession() { dropRec(SKEY); idx = -1; ctx = null; stepIdx = 0; answers = {}; resumeAt = null; }
+
+  // Rebuild ctx from a saved record. False when it cannot be rebuilt faithfully.
+  function restore(rec) {
+    var snap = rec.snap;
+    mode = rec.mode;
+    var c = buildContext({ seed: rec.ctxSeed, over: snap, repeat: rec.repeat });
+    if (snap.lessonId && (!c.lesson || c.lesson.id !== snap.lessonId)) return false;
+    var ai = window.APPLY_ITEMS || [], wt = window.WRITING_TASKS || [];
+    var apply = (snap.applyIx || []).map(function (n) { return ai[n]; });
+    var writes = (snap.writeIds || []).map(function (id) {
+      return wt.filter(function (t) { return t.id === id; })[0];
+    });
+    if (apply.some(function (x) { return !x; }) || writes.some(function (x) { return !x; })) return false;
+    c.applyItems = apply; c.writeTasks = writes;
+    c.snap = snap; c.results = rec.results || {};
+    if (rec.stageIdx >= stages().length) return false;
+    ctx = c; idx = rec.stageIdx; stepIdx = rec.stepIdx || 0; answers = rec.answers || {};
+    resumeAt = idx;
+    return true;
   }
 
   function runStage() {
@@ -908,32 +1018,68 @@ window.Session = (function () {
     host.appendChild(head);
     var body = UI.el('div', 'stage-body');
     host.appendChild(body);
+    /* The stage's seam to the saved position: where to start (only on the stage
+     * a resume landed in) and a save() to call after each card. */
+    var fromHere = resumeAt === idx;
+    if (!fromHere) { stepIdx = 0; answers = {}; }
+    resumeAt = null;
+    var myIdx = idx;
+    ctx.step = {
+      at: fromHere ? stepIdx : 0,
+      extra: fromHere ? (answers[stage.key] || {}) : {},
+      save: function (n, extra) {
+        if (idx !== myIdx) return;
+        stepIdx = n; answers[stage.key] = extra || {}; persist();
+      }
+    };
+    persist();
     stage.run(body, ctx, function () {
       // A passage counts as read once the reading stage is done with it.
       if (stage.key === 'comprehend' && ctx.passage) markRead(ctx.passage.id, ctx.passage.text);
-      if (stage.key === 'learn') {
-        var p = loadProg();
-        var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
-        if (pr.usesCurriculum) {               // paced path: step through the curriculum
-          p.beginnerDay = (p.beginnerDay || 0) + 1;
-          if (ctx.focus && ctx.focus.type === 'grammar' && ctx.lesson) { p.studied = p.studied || {}; p.studied[ctx.lesson.id] = 1; }
-        } else if (ctx.lesson) {               // standard/refresher: a grammar lesson each day
-          p.studied = p.studied || {}; p.studied[ctx.lesson.id] = 1;
-        }
-        saveProg(p);
-      }
-      idx++; runStage();
+      /* Learn finishing no longer marks the lesson studied or moves the day:
+       * the day is done when the SESSION is (see markDone). Learn's own recall
+       * items were enrolled inside the stage and stay enrolled. */
+      idx++; stepIdx = 0; answers = {};
+      if (idx < stages().length) persist();
+      runStage();
     });
+  }
+
+  /* The day's progress, written once, when the whole session completes. Quick
+   * and short modes never ran Learn, so they never mark a lesson studied. A
+   * repeat is practice, not progress. */
+  function markDone(c) {
+    if (c.repeat) return;
+    if (modeDef().keys.indexOf('learn') === -1) return;
+    var p = loadProg();
+    var pr = window.Profile ? window.Profile.params() : { name: 'standard' };
+    if (pr.usesCurriculum) {               // paced path: step through the curriculum
+      var base = c.di != null ? c.di : (p.beginnerDay || 0);
+      p.beginnerDay = Math.max(p.beginnerDay || 0, base + 1);
+      if (c.focus && c.focus.type === 'grammar' && c.lesson) { p.studied = p.studied || {}; p.studied[c.lesson.id] = 1; }
+    } else if (c.lesson) {                 // standard/refresher: a grammar lesson each day
+      p.studied = p.studied || {}; p.studied[c.lesson.id] = 1;
+    }
+    saveProg(p);
   }
 
   function renderComplete() {
     setProgress(1, 1);
-    var p = bumpStreak();
-    // A session that finished is what a focus is counted in — see js/focus.js.
-    if (window.Focus) window.Focus.tick();
-    // ...and what the league's «días» column counts — see js/liga.js.
-    if (window.Liga && ctx.results) {
-      window.Liga.sessionDone(ctx.results.review ? ctx.results.review.correct : 0);
+    if (!ctx.counted) {
+      ctx.counted = true;
+      markDone(ctx);
+      if (!ctx.repeat) {
+        bumpStreak();
+        // A session that finished is what a focus is counted in — see js/focus.js.
+        if (window.Focus) window.Focus.tick();
+        // ...and what the league's «días» column counts — see js/liga.js.
+        if (window.Liga && ctx.results) {
+          window.Liga.sessionDone(ctx.results.review ? ctx.results.review.correct : 0);
+        }
+        // What "do it again" repeats: today's session as it was started.
+        writeRec(LKEY, { startedDay: ctx.startedDay, mode: mode, snap: ctx.snap });
+      }
+      dropRec(SKEY);
     }
     UI.clear(host);
     var wrap = UI.el('div', 'panel intro complete');
@@ -1004,7 +1150,7 @@ window.Session = (function () {
     wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana — tomorrow rotates to new material.', 'See you tomorrow — it rotates to new material.')));
     var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });
     wrap.appendChild(homeB);
-    var again = UI.nextBtn(T('Hacerla otra vez', 'Do it again'), function () { start(mode); });
+    var again = UI.nextBtn(T('Hacerla otra vez', 'Do it again'), function () { repeatToday(mode); });
     again.className = 'ghost-btn';
     wrap.appendChild(again);
     host.appendChild(wrap);
@@ -1013,14 +1159,38 @@ window.Session = (function () {
   /* Straight into the first stage. There used to be an intro screen here
    * naming the unit, the goal and today's lesson; all of that now lives on
    * the home card, which is where the learner decides whether to start. */
-  function start(m) {
+  function begin(m, over, repeat) {
     if (m && MODES[m]) mode = m;
     host = document.getElementById('stage-host');
     bar = document.getElementById('session-progress-fill');
-    ctx = buildContext();
-    idx = 0;
+    var seed = Math.floor(Math.random() * 1e9);
+    ctx = buildContext({ seed: seed, over: over, repeat: repeat });
+    ctx.snap = makeSnap(ctx);
+    idx = 0; stepIdx = 0; answers = {}; resumeAt = null;
+    persist();
     runStage();
   }
+  function start(m) { begin(m, null, false); }
+
+  /* "Do it again": today's lesson and passage, not tomorrow's. Counted nowhere. */
+  function repeatToday(m) {
+    var last = readRec(LKEY);
+    var same = last && last.startedDay === dayNumber() && last.snap;
+    begin(m || (same && last.mode) || mode, same ? last.snap : null, true);
+  }
+  /* Start a specific day of the paced course (the "Next up" box). */
+  function startAt(di, m) { begin(m || 'diaria', { di: di }, false); }
+
+  function resume() {
+    host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill');
+    if (ctx && idx >= 0 && idx < stages().length) { runStage(); return; }
+    var rec = pending();
+    if (rec && restore(rec)) { runStage(); return; }
+    dropRec(SKEY); idx = -1; ctx = null;
+    start();
+  }
+
+  pending();   // on load: a record from a previous day is discarded here
 
   return {
     start: start,
@@ -1029,9 +1199,14 @@ window.Session = (function () {
     modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
     rhythm: rhythm,
     nextUp: nextUp,
-    mode: function () { return modeDef(); },
-    resume: function () { host = document.getElementById('stage-host'); bar = document.getElementById('session-progress-fill'); if (idx >= 0 && ctx) runStage(); else start(); },
-    isActive: function () { return idx >= 0 && idx < stages().length; },
+    mode: function () { var r = !ctx && pending(); return r ? MODES[r.mode] : modeDef(); },
+    resume: resume,
+    repeatToday: repeatToday,
+    startAt: startAt,
+    pending: pending,
+    breakRuns: breakRuns,
+    hasSavedSession: function () { return !!pending(); },
+    isActive: function () { return (!!ctx && idx >= 0 && idx < stages().length) || !!pending(); },
     currentStageIndex: function () { return idx; },
     stageCount: function () { return stages().length; }
   };

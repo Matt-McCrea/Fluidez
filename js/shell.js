@@ -131,7 +131,11 @@ window.Shell = (function () {
           if (up.kind === 'grammar' && window.LessonRun) {
             window.Shell.openOverlay();
             window.LessonRun.run(up.focus, function () { window.Shell.closeOverlay(); refresh('inicio'); });
-          } else { window.App.go('session', 'diaria'); }
+          } else {
+            // start exactly the day the box names, not whatever the counter says
+            window.Shell.openOverlay(true);
+            window.Session.startAt(up.di, 'diaria');
+          }
         });
         pair.appendChild(nb);
       }
@@ -165,7 +169,7 @@ window.Shell = (function () {
 
       var redo = UI.el('button', 'linkish', T('Repetir la sesión de hoy', 'Do today\'s session again'));
       redo.type = 'button';
-      redo.addEventListener('click', function () { window.App.go('session', 'diaria'); });
+      redo.addEventListener('click', function () { window.App.go('repeat'); });
       dc.appendChild(redo);
       host.appendChild(dc);
     } else {
@@ -216,8 +220,9 @@ window.Shell = (function () {
 
     var go = UI.el('button', 'primary-btn today-go');
     go.type = 'button';
-    go.textContent = isActive ? 'Seguir →' : 'Empezar →';   // buttons stay Spanish at every level
-    go.addEventListener('click', function () { window.App.go('session', 'diaria'); });
+    go.textContent = isActive ? T('Seguir la sesión de hoy', 'Continue today\'s session') + ' →' : 'Empezar →';
+    // no mode when continuing: App.go resumes whatever is saved, whichever length it was
+    go.addEventListener('click', function () { if (isActive) window.App.go('session'); else window.App.go('session', 'diaria'); });
     var goRow = UI.el('div', 'today-go-row');
     goRow.appendChild(go);
     var dm = window.Session ? window.Session.modes()[2] : null;

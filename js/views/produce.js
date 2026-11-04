@@ -138,7 +138,8 @@ window.StageProduce = (function () {
   function run(host, ctx, done) {
     var tasks = ctx.writeTasks || [];
     if (!tasks.length) { done(); return; }
-    var i = 0, doneCount = 0;
+    var st = ctx.step || null, ex = (st && st.extra) || {};
+    var i = Math.min((st && st.at) || 0, tasks.length), doneCount = ex.done || 0;
 
     var wrap = UI.el('div', 'panel');
     var progress = UI.el('div', 'muted review-stats');
@@ -155,6 +156,7 @@ window.StageProduce = (function () {
     }
 
     function show() {
+      if (st) st.save(i, { done: doneCount });   // the place survives a reload
       if (i >= tasks.length) { finish(); return; }
       var t = tasks[i];
       progress.textContent = 'Tarea ' + (i + 1) + ' / ' + tasks.length;

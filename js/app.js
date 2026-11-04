@@ -27,6 +27,10 @@ window.App = (function () {
         if (window.Session.isActive() && (!arg || arg === window.Session.mode().key)) window.Session.resume();
         else window.Session.start(arg);
         break;
+      case 'repeat':
+        window.Shell.openOverlay(true);
+        window.Session.repeatToday();
+        break;
       case 'errors':
         window.Shell.openOverlay(false);
         window.Hub.renderErrors(host, backToShell);

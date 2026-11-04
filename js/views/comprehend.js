@@ -40,12 +40,16 @@ window.StageComprehend = (function () {
 
     wrap.appendChild(UI.nextBtn('Preguntas →', function () { questions(host, ctx, done); }));
     host.appendChild(wrap);
+    // resumed part-way through the questions: go straight back to them
+    if (ctx.step && ctx.step.at > 0) questions(host, ctx, done);
   }
 
   function questions(host, ctx, done) {
     var p = ctx.passage;
     var qs = p.questions || [];
-    var i = 0, correct = 0, total = 0;
+    var st = ctx.step || null, ex = (st && st.extra) || {};
+    var i = Math.min((st && st.at) || 0, qs.length), correct = ex.correct || 0, total = ex.total || 0;
+    if (st) st.at = 0;   // only the first entry resumes
 
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
@@ -64,6 +68,7 @@ window.StageComprehend = (function () {
     }
 
     function show() {
+      if (st) st.save(i, { correct: correct, total: total });   // the place survives a reload
       if (i >= qs.length) { finish(); return; }
       var q = qs[i];
       progress.textContent = 'Pregunta ' + (i + 1) + ' / ' + qs.length;
