@@ -1185,3 +1185,8 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .script-line { margin: 0 0 1rem; }
 .script-line p { margin: 0 0 0.25rem; }
 .script-link { margin-right: 0.5rem; }
+
+.register-card { margin-top:0; }
+.register-item { margin:10px 0; }
+.register-item .ex-es { font-weight:650; }
+.register-when { margin-top:2px; }

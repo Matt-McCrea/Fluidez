@@ -498,14 +498,15 @@ window.StageLearn = (function () {
 
   function runScript(host, ctx, l, sc, done) {
     var st = ctx.step || null, ex = (st && st.extra) || {};
-    var rp = sc.readAndPick || [], yt = sc.yourTurn || [];
+    var rp = sc.readAndPick || [], yt = sc.yourTurn || [], tr = sc.translate || [], reg = sc.register || [];
     /* One step index for the whole script, saved after every item:
      *   0 the opening page, then each read-and-pick item, then each typed item,
      *   then the personal sentence, then the closing page. */
-    var P_RP = 1, P_YT = P_RP + rp.length, P_ME = P_YT + yt.length, P_END = P_ME + 1;
+    var P_RP = 1, P_YT = P_RP + rp.length, P_TR = P_YT + yt.length, P_ME = P_TR + tr.length, P_END = P_ME + 1;
     var resumed = ex.script === l.id;
     var at = resumed && st ? Math.min(st.at || 0, P_END) : 0;
     var score = resumed && ex.score ? ex.score : { rp: 0, yt: 0 };
+    if (score.tr == null) score.tr = 0;
     var wrap = UI.el('div', 'panel lesson script');
     host.appendChild(wrap);
 
@@ -518,7 +519,8 @@ window.StageLearn = (function () {
       UI.clear(wrap);
       if (at <= 0) opening();
       else if (at < P_YT) pick(at - P_RP);
-      else if (at < P_ME) typed(at - P_YT);
+      else if (at < P_TR) typed(yt, at - P_YT, UI.t('Te toca', 'Your turn'), 'yt');
+      else if (at < P_ME) typed(tr, at - P_TR, UI.t('Ahora traduce', 'Now translate'), 'tr');
       else if (at === P_ME) personal();
       else closing();
       speakify(wrap);
@@ -551,7 +553,19 @@ window.StageLearn = (function () {
         });
         wrap.appendChild(card);
       }
-      wrap.appendChild(UI.nextBtn(rp.length || yt.length ? 'Try it →' : 'Continuar →', function () { go(1); }));
+      if (reg.length) {
+        var rc = UI.el('div', 'rule-card register-card');
+        rc.appendChild(UI.el('div', 'script-eyebrow', UI.t('Formas de decirlo', 'Ways to say it')));
+        reg.forEach(function (r) {
+          var d = UI.el('div', 'register-item');
+          d.appendChild(UI.el('div', 'ex-es', esc(r.es)));
+          d.appendChild(UI.el('div', 'ex-en', esc(r.en)));
+          if (r.when) d.appendChild(UI.el('div', 'register-when muted small', fmt(r.when)));
+          rc.appendChild(d);
+        });
+        wrap.appendChild(rc);
+      }
+      wrap.appendChild(UI.nextBtn(rp.length || yt.length || tr.length ? 'Try it →' : 'Continuar →', function () { go(1); }));
     }
 
     // ---- read and pick: one at a time, tap, one line of why
@@ -593,9 +607,9 @@ window.StageLearn = (function () {
     }
 
     // ---- your turn: typed, graded by the matcher, one hint and one retry
-    function typed(j) {
-      var t = yt[j], M = window.LIB && window.LIB.match;
-      wrap.appendChild(eyebrow(UI.t('Te toca', 'Your turn'), j, yt.length));
+    function typed(list, j, label, key) {
+      var t = list[j], M = window.LIB && window.LIB.match;
+      wrap.appendChild(eyebrow(label, j, list.length));
       wrap.appendChild(UI.el('h2', 'q-text', 'Say it in Spanish:'));
       wrap.appendChild(UI.el('p', 'cloze-text', '“' + fmt(t.en) + '”'));
       var ta = UI.el('textarea', 'answer-area');
@@ -617,7 +631,7 @@ window.StageLearn = (function () {
       var model = '<div class="model-answer">' + esc(t.es) + '</div>';
       function finish(ok, html, cls) {
         finished = true;
-        if (ok) score.yt++;
+        if (ok) score[key]++;
         fb.className = 'feedback ' + cls; fb.innerHTML = html;
         ta.readOnly = true;
         skip.classList.add('hidden');
@@ -626,7 +640,7 @@ window.StageLearn = (function () {
         save();
       }
       function reveal(hint) {
-        if (window.ErrorLog) window.ErrorLog.record({ id: 'err:script:' + l.id + ':' + j, front: t.en, back: t.es,
+        if (window.ErrorLog) window.ErrorLog.record({ id: 'err:script:' + l.id + ':' + (key === 'tr' ? 't' : '') + j, front: t.en, back: t.es,
           hint: hint || null, kind: 'grammar', source: 'learn-script', reviewable: false });
         finish(false, model + (hint ? '<div class="muted small">' + fmt(hint) + '</div>' : ''), 'bad');
       }
@@ -719,10 +733,11 @@ window.StageLearn = (function () {
     // ---- watch out, the whole old lesson behind Read more, then the quick check
     function closing() {
       wrap.appendChild(UI.el('h2', null, esc(l.title)));
-      if (rp.length || yt.length) {
+      if (rp.length || yt.length || tr.length) {
         wrap.appendChild(UI.el('p', 'muted script-score',
           (rp.length ? 'Read and pick: ' + score.rp + ' of ' + rp.length + ' first time.' : '') +
-          (yt.length ? ' Your turn: ' + score.yt + ' of ' + yt.length + '.' : '')));
+          (yt.length ? ' Your turn: ' + score.yt + ' of ' + yt.length + '.' : '') +
+          (tr.length ? ' Now translate: ' + score.tr + ' of ' + tr.length + '.' : '')));
       }
       if (sc.pitfalls && sc.pitfalls.length) {
         wrap.appendChild(UI.el('h3', null, 'Watch out'));
