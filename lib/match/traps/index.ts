@@ -19,7 +19,7 @@ import { form } from '../support/reinflect';
 import { low, nounGender, otherGender, pluralize, render, toToks, verbReadings, type Tok } from '../support/spanish';
 import { align, type Diagnosis, type HintKind } from '../hints';
 import { participleFor } from '../tense-swaps';
-import { englishAspect, DETECTORS, EVENT_NOUN, RULES, ideaForm, namedKind, ruleOf, triggered, type Ctx, type Tier } from './rules';
+import { englishAspect, DETECTORS, EVENT_NOUN, RULES, ideaForm, moodSlot, namedKind, ruleOf, triggered, type Ctx, type Tier } from './rules';
 import { pitfallFor } from './pitfalls';
 
 export { RULES, ruleOf, type Rule, type Tier } from './rules';
@@ -75,6 +75,11 @@ export function diagnose(t: TrapInput): Trap {
   }
   const named = edits.length > 2 ? undefined : namedKind(dg.kind, t);
   if (named) return { tier: 'assert', rule: named, kind: dg.kind, hint: dg.hint, at: dg.at };
+  // a mood slip with no opener before the verb is a slip in the ending, said as a fact about the word and counted under no rule
+  if (dg.kind === 'mood') {
+    const e = edits[0];
+    if (e?.op === 'sub' && !moodSlot(t.b, e.j)) return { tier: 'silent', kind: 'verb-ending', hint: 'Check the verb ending: who is doing it?', at: dg.at };
+  }
   const ask = ASK_TEXT[dg.kind];
   if (ask) return { tier: 'ask', kind: dg.kind, hint: ask, at: dg.at };
   return { tier: 'silent', kind: dg.kind, hint: dg.hint, at: dg.at };

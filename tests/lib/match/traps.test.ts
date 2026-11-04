@@ -107,6 +107,19 @@ describe('an Assert names the cause, and says it only where it is certain', () =
   });
 });
 
+describe('the mood question needs an opener', () => {
+  test('a formula with a wrong ending gets the ending hint, not the mood question', () => {
+    const r = run(['Disculpe, ¿me podría decir dónde queda el baño?', 'Excuse me, could you tell me where the bathroom is?', 'Disculpo, ¿me podría decir dónde queda el baño?']);
+    expect(r.hint).not.toBe(ruleOf('mood-open')!.text);
+    expect(r.hint).not.toBe(ruleOf('mood-hard')!.text);
+    expect(r.ask).toBeUndefined();
+    expect(r.hint).toMatch(/verb ending/i);
+  });
+  test('an indicative after quiero que is still the mood hint', () => {
+    expect(run(['Quiero que vengas.', 'I want you to come.', 'Quiero que vienes.']).hint).toBe(ruleOf('mood-hard')!.text);
+  });
+});
+
 describe('an Ask does not claim an error', () => {
   test.each<Row>([
     ['Cuando llegues, llámame.', 'When you arrive, call me.', 'Cuando llegas, llámame.'],

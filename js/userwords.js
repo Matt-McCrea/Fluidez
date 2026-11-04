@@ -290,6 +290,23 @@ window.UserWords = (function () {
     try { return (JSON.parse(localStorage.getItem('fluidez.progress')) || {}).studied || {}; } catch (e) { return {}; }
   }
   function lessons() { return window.GRAMMAR_LESSONS || window.ALL_LESSONS || []; }
+  // Buscar looks through every band's lessons: the first grammar search loads the bands that are not in memory yet.
+  var moreState = 0, moreWaiting = [];   // 0 not started, 1 loading, 2 done
+  function needMoreLessons(done) {
+    if (moreState === 2) return false;
+    var L = window.Lessons;
+    if (!L || !L.ensureUpTo) { moreState = 2; return false; }
+    moreWaiting.push(done);
+    if (moreState === 0) {
+      moreState = 1;
+      L.ensureUpTo('C1', function () {
+        moreState = 2; cache.grammar = null;
+        var w = moreWaiting; moreWaiting = [];
+        w.forEach(function (f) { try { f(); } catch (e) {} });
+      });
+    }
+    return true;
+  }
   function lessonById(id) { var ls = lessons(); for (var i = 0; i < ls.length; i++) if (ls[i].id === id) return ls[i]; return null; }
 
   function wordEntryList() {
@@ -348,12 +365,15 @@ window.UserWords = (function () {
     window.LessonRun.run({ type: 'grammar', id: id }, again);
   }
 
+  // a summary reads without dashes, whatever the data holds
+  function noDash(s) { return String(s).replace(/\s*[\u2014\u2013]\s*/g, ', '); }
+
   function lessonRow(l, studied, again) {
     var row = UI.el('button', 'syl-row ' + (studied[l.id] ? 'done' : 'open')); row.type = 'button';
     row.appendChild(UI.el('span', 'syl-mark', studied[l.id] ? '✓' : '·'));
     var tx = UI.el('span', 'bq-text');
     tx.appendChild(UI.el('span', 'syl-title', l.title));
-    if (l.summary) tx.appendChild(UI.el('span', 'bq-sub muted small', l.summary));
+    if (l.summary) tx.appendChild(txt('span', 'bq-sub muted small', noDash(l.summary)));
     row.appendChild(tx);
     row.appendChild(UI.el('span', 'syl-level muted', (l.cefr || '') + ' ›'));
     row.addEventListener('click', function () { openLesson(l.id, again); });
@@ -590,7 +610,11 @@ window.UserWords = (function () {
     function show() {
       UI.clear(body);
       var q = input.value;
-      body.appendChild(S_norm(q) ? searchResults(q, ctx) : browse(ctx));
+      if (S_norm(q)) {
+        var loading = needMoreLessons(function () { if (document.body.contains(body)) show(); });
+        body.appendChild(searchResults(q, ctx));
+        if (loading) body.appendChild(UI.el('p', 'muted small bq-loading', 'Loading more lessons…'));
+      } else body.appendChild(browse(ctx));
     }
     function S_norm(q) { return LS().norm(q); }
     input.addEventListener('input', function () {

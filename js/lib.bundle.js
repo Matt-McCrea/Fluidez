@@ -7919,8 +7919,13 @@ var LIB = (() => {
     const modelIdea = ideaForm(e.b);
     if (mi.some((y) => y.tense === "futuro") && c.b.slice(0, e.j).some((w) => lemmaOf(w).includes("esperar"))) return null;
     const learnerFact = mi.some((y) => !NOT_INDICATIVE.has(y.tense)) && !mi.some((y) => SUBJUNCTIVE.has(y.tense));
-    return sameVerb && modelIdea && learnerFact && triggered(c.b, e.j) ? { rule: "mood-hard", at: e.j } : null;
+    if (sameVerb && modelIdea && learnerFact && triggered(c.b, e.j)) return { rule: "mood-hard", at: e.j };
+    return null;
   };
+  var MOOD_SLOT = /^(que|cuando|ojalá|aunque|si|apenas|mientras|hasta|donde|quien|como|tal|sino)$/;
+  function moodSlot(b, j) {
+    return triggered(b, j) || b.slice(Math.max(0, j - 5), j).some((w) => MOOD_SLOT.test(w));
+  }
   var EN_IMPERFECT = /\b(was|were) \w+ing\b|\bused to\b|\bwould (always|often|usually|sometimes|every)\b|\bwhile\b|\bevery (day|morning|evening|week|summer|sunday|saturday)\b|\bas a (child|kid|boy|girl)\b|\bwhen i was (a|little|young|small|\d)\b|\bwhen (he|she) was (a|little|young|small)\b|\bin those days\b/;
   var EN_PRETERITE = /\bsuddenly\b|\bfor (two|three|four|five|six|seven|eight|nine|ten|\d+) (years|months|weeks|days|hours)\b|\bonce(?! the\b)\b|\b(twice|three times|four times|five times)\b|\bfound out\b|\bmet\b|\bat that moment\b|\bthe next (day|morning)\b|\bfinally\b|\bsuddenly\b|\blast (night|week|year|month)\b/;
   var ES_PRETERITE = /^(ayer|anoche|anteayer|repente|la_semana_pasada|el_año_pasado)$/;
@@ -8341,6 +8346,10 @@ var LIB = (() => {
     }
     const named = edits.length > 2 ? void 0 : namedKind(dg.kind, t);
     if (named) return { tier: "assert", rule: named, kind: dg.kind, hint: dg.hint, at: dg.at };
+    if (dg.kind === "mood") {
+      const e = edits[0];
+      if ((e == null ? void 0 : e.op) === "sub" && !moodSlot(t.b, e.j)) return { tier: "silent", kind: "verb-ending", hint: "Check the verb ending: who is doing it?", at: dg.at };
+    }
     const ask = ASK_TEXT[dg.kind];
     if (ask) return { tier: "ask", kind: dg.kind, hint: ask, at: dg.at };
     return { tier: "silent", kind: dg.kind, hint: dg.hint, at: dg.at };

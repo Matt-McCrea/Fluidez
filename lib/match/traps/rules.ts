@@ -125,8 +125,16 @@ const mood: Detector = (c) => {
   // espero que vendrá expects it, and is right
   if (mi.some((y) => y.tense === 'futuro') && c.b.slice(0, e.j).some((w) => lemmaOf(w).includes('esperar'))) return null;
   const learnerFact = mi.some((y) => !NOT_INDICATIVE.has(y.tense)) && !mi.some((y) => SUBJUNCTIVE.has(y.tense));
-  return sameVerb && modelIdea && learnerFact && triggered(c.b, e.j) ? { rule: 'mood-hard', at: e.j } : null;
+  if (sameVerb && modelIdea && learnerFact && triggered(c.b, e.j)) return { rule: 'mood-hard', at: e.j };
+  return null;
 };
+
+/** The mood question is for a verb after an opener of the idea form; a formula or a command (Disculpo for Disculpe) has no opener, so the slip is in the ending.
+ *  Does the verb at b[j] stand in a clause an opener could govern: after que, cuando, ojalá, si, aunque or another frame within a few words? */
+const MOOD_SLOT = /^(que|cuando|ojalá|aunque|si|apenas|mientras|hasta|donde|quien|como|tal|sino)$/;
+export function moodSlot(b: readonly string[], j: number): boolean {
+  return triggered(b, j) || b.slice(Math.max(0, j - 5), j).some((w) => MOOD_SLOT.test(w));
+}
 
 // ---- 2. aspect-locked: the other past, where the English or the Spanish fixes which one -----------------------
 

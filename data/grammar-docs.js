@@ -1,5 +1,5 @@
 /* ============================================================================
- * GRAMMAR DOCS — one entry per tense.  `key` matches ENGINE.TENSES so the
+ * GRAMMAR DOCS, one entry per tense.  `key` matches ENGINE.TENSES so the
  * grammar view can auto-render a model conjugation (hablar / comer / vivir)
  * beneath the authored notes.
  *   summary    : one-line gloss
@@ -22,7 +22,7 @@ window.GRAMMAR = [
     { es: 'hablas', en: 'you speak' },
     { es: 'habla', en: 'he/she speaks, you (usted) speak' },
     { es: 'hablamos', en: 'we speak' },
-    { es: 'habláis', en: 'you (vosotros) speak' },
+    { es: 'habláis', en: 'you (vosotros) speak', spain: true },
     { es: 'hablan', en: 'they speak, you (ustedes) speak' },
     { es: 'todos los días', en: 'every day' },
     { es: '¿Dónde vives?', en: 'Where do you live?' }
@@ -44,7 +44,7 @@ window.GRAMMAR = [
   probes:[
     { id:'p:presente:persona', kind:'mcq', q:'Which one says "I work every day"?',
       options:['Trabajas todos los días.','Trabajo todos los días.','Trabajamos todos los días.'], answer:1 },
-    /* srs:false — the answer is an English word. Fine as a check at the end of
+    /* srs:false: the answer is an English word. Fine as a check at the end of
      * the lesson, useless as a card that asks you to type it back in a month. */
     { id:'p:presente:futuro', kind:'mcq', q:'"Mañana viajo a México." When is the trip?',
       options:['Tomorrow','Right now','Every week'], answer:0, srs:false },
@@ -70,9 +70,9 @@ window.GRAMMAR = [
     { es: 'vi', en: 'I saw' }
   ],
   when:[
-    'A single completed action: <i>Ayer comí paella.</i> — Yesterday I ate paella.',
-    'A sequence of completed events: <i>Llegué, comí y me fui.</i> — I arrived, ate and left.',
-    'An action with a clear time boundary: <i>Viví dos años en Madrid.</i> — I lived in Madrid for two years.'
+    'A single completed action: <i>Ayer comí paella.</i> Yesterday I ate paella.',
+    'A sequence of completed events: <i>Llegué, comí y me fui.</i> I arrived, ate and left.',
+    'An action with a clear time boundary: <i>Viví dos años en Madrid.</i> I lived in Madrid for two years.'
   ],
   irregulars:[
     'Strong preterites (irregular stem + special endings, no accents): <i>tener → tuve</i>, <i>hacer → hice/hizo</i>, <i>poder → pude</i>, <i>decir → dije</i>, <i>estar → estuve</i>.',
@@ -89,7 +89,7 @@ window.GRAMMAR = [
 {
   key:'imperfecto',
   canDo:'describe how things were and what you used to do', title:'Imperfecto (Imperfect)',
-  summary:'Ongoing, habitual, or descriptive past — the "was/used to" past.',
+  summary:'Ongoing, habitual, or descriptive past, the "was/used to" past.',
   formation:'Add the imperfect endings to the stem. -er and -ir share endings. Only three verbs are irregular.',
   keywords: [
     { es: 'antes', en: 'before, back then' },
@@ -104,9 +104,9 @@ window.GRAMMAR = [
     { es: 'hacía frío', en: 'it was cold' }
   ],
   when:[
-    'Habitual past actions: <i>De niño jugaba al fútbol.</i> — As a child I used to play soccer.',
-    'Ongoing background action: <i>Llovía cuando salí.</i> — It was raining when I left.',
-    'Descriptions, age, time, feelings in the past: <i>Eran las tres.</i> — It was three o\'clock. / <i>Ella tenía frío.</i> — She was cold.'
+    'Habitual past actions: <i>De niño jugaba al fútbol.</i> As a child I used to play soccer.',
+    'Ongoing background action: <i>Llovía cuando salí.</i> It was raining when I left.',
+    'Descriptions, age, time, feelings in the past: <i>Eran las tres.</i> It was three o\'clock. / <i>Ella tenía frío.</i> She was cold.'
   ],
   irregulars:[
     'Only three irregular verbs: <i>ser → era</i>, <i>ir → iba</i>, <i>ver → veía</i>.'
@@ -135,9 +135,9 @@ window.GRAMMAR = [
     { es: 'el año que viene', en: 'next year' }
   ],
   when:[
-    'Future actions: <i>Mañana viajaré a Perú.</i> — Tomorrow I will travel to Peru.',
-    'Promises and predictions: <i>Te ayudaré.</i> — I will help you.',
-    'Probability / conjecture about the present: <i>¿Qué hora será?</i> — I wonder what time it is.'
+    'Future actions: <i>Mañana viajaré a Perú.</i> Tomorrow I will travel to Peru.',
+    'Promises and predictions: <i>Te ayudaré.</i> I will help you.',
+    'Probability / conjecture about the present: <i>¿Qué hora será?</i> I wonder what time it is.'
   ],
   irregulars:[
     'A dozen verbs use an irregular stem but the same endings: <i>tener → tendré</i>, <i>poder → podré</i>, <i>hacer → haré</i>, <i>decir → diré</i>, <i>poner → pondré</i>, <i>salir → saldré</i>, <i>saber → sabré</i>, <i>querer → querré</i>.'
@@ -164,10 +164,10 @@ window.GRAMMAR = [
     { es: 'sería', en: 'it would be' }
   ],
   when:[
-    'Polite requests: <i>¿Podrías ayudarme?</i> — Could you help me? This is what the conditional does most often in speech.',
-    'Softening an opinion: <i>Yo diría que no.</i> — I\'d say no. Less blunt than <i>digo que no</i>.',
-    'Probability in the past: <i>Serían las cinco cuando llegó.</i> — It must have been five when he arrived.',
-    'Hypothetical outcomes: <i>Yo viajaría más si tuviera dinero.</i> — I\'d travel more if I had money. The <i>si</i> half needs the imperfect subjunctive, which has its own lesson; until then, the conditional half stands on its own.'
+    'Polite requests: <i>¿Podrías ayudarme?</i> Could you help me? This is what the conditional does most often in speech.',
+    'Softening an opinion: <i>Yo diría que no.</i> I\'d say no. Less blunt than <i>digo que no</i>.',
+    'Probability in the past: <i>Serían las cinco cuando llegó.</i> It must have been five when he arrived.',
+    'Hypothetical outcomes: <i>Yo viajaría más si tuviera dinero.</i> I\'d travel more if I had money. The <i>si</i> half needs the imperfect subjunctive, which has its own lesson; until then, the conditional half stands on its own.'
   ],
   irregulars:[
     'Same irregular stems as the future: <i>tener → tendría</i>, <i>hacer → haría</i>, <i>decir → diría</i>, <i>poder → podría</i>.'
@@ -197,8 +197,8 @@ window.GRAMMAR = [
     { es: 'escrito', en: 'written' }
   ],
   when:[
-    'Recent past with present relevance: <i>He terminado el trabajo.</i> — I have finished the work.',
-    'Life experience (up to now): <i>¿Has estado en España?</i> — Have you been to Spain?',
+    'Recent past with present relevance: <i>He terminado el trabajo.</i> I have finished the work.',
+    'Life experience (up to now): <i>¿Has estado en España?</i> Have you been to Spain?',
     'With "today / this week / ever / never": <i>Hoy he comido mucho.</i>'
   ],
   irregulars:[
@@ -225,7 +225,7 @@ window.GRAMMAR = [
     { es: 'todavía no', en: 'not yet' }
   ],
   when:[
-    'A past action prior to another past moment: <i>Cuando llegué, ya habían salido.</i> — When I arrived, they had already left.',
+    'A past action prior to another past moment: <i>Cuando llegué, ya habían salido.</i> When I arrived, they had already left.',
     'Reported/background context in narration.'
   ],
   irregulars:['Same irregular participles as the present perfect.'],
@@ -250,8 +250,8 @@ window.GRAMMAR = [
     { es: 'Habrá llegado.', en: 'He\'s probably arrived.' }
   ],
   when:[
-    'Completed before a future deadline: <i>Para mañana habré terminado.</i> — By tomorrow I will have finished.',
-    'Probability about the recent past: <i>Habrá salido ya.</i> — He has probably already left.'
+    'Completed before a future deadline: <i>Para mañana habré terminado.</i> By tomorrow I will have finished.',
+    'Probability about the recent past: <i>Habrá salido ya.</i> He has probably already left.'
   ],
   irregulars:['Same irregular participles as the other perfect tenses.'],
   examples:[
@@ -273,7 +273,7 @@ window.GRAMMAR = [
     { es: 'en tu lugar', en: 'in your place' }
   ],
   when:[
-    'Unrealized past hypotheticals: <i>Yo habría ido, pero estaba enfermo.</i> — I would have gone, but I was sick.',
+    'Unrealized past hypotheticals: <i>Yo habría ido, pero estaba enfermo.</i> I would have gone, but I was sick.',
     'Often paired with the past perfect subjunctive: <i>Si hubiera sabido, te habría llamado.</i>'
   ],
   irregulars:['Same irregular participles as the other perfect tenses.'],
@@ -299,7 +299,7 @@ window.GRAMMAR = [
     { es: 'pueda', en: '(that) he, she can (poder)' }
   ],
   when:[
-    'Wishes & requests: <i>Quiero que vengas.</i> — I want you to come.',
+    'Wishes & requests: <i>Quiero que vengas.</i> I want you to come.',
     'Emotion & value judgments: <i>Me alegra que estés aquí.</i>',
     'Doubt & denial: <i>No creo que sea verdad.</i>',
     'After certain conjunctions: <i>para que, antes de que, aunque, cuando</i> (future sense).'
@@ -330,12 +330,12 @@ window.GRAMMAR = [
     { es: 'Si fuera tú…', en: 'If I were you…' }
   ],
   when:[
-    'Past-tense triggers: <i>Quería que vinieras.</i> — I wanted you to come.',
-    'Hypothetical / contrary-to-fact "if" clauses: <i>Si tuviera tiempo, viajaría.</i> — If I had time, I would travel.',
-    'Polite softening: <i>Quisiera un café.</i> — I would like a coffee.'
+    'Past-tense triggers: <i>Quería que vinieras.</i> I wanted you to come.',
+    'Hypothetical / contrary-to-fact "if" clauses: <i>Si tuviera tiempo, viajaría.</i> If I had time, I would travel.',
+    'Polite softening: <i>Quisiera un café.</i> I would like a coffee.'
   ],
   irregulars:[
-    'No separate irregulars — because it is built from the preterite, any preterite irregularity carries over: <i>tener → tuviera</i>, <i>decir → dijera</i>, <i>ir/ser → fuera</i>.'
+    'No separate irregulars: because it is built from the preterite, any preterite irregularity carries over: <i>tener → tuviera</i>, <i>decir → dijera</i>, <i>ir/ser → fuera</i>.'
   ],
   examples:[
     {es:'Si fuera rico, no trabajaría.', en:"If I were rich, I wouldn't work."},
@@ -358,7 +358,7 @@ window.GRAMMAR = [
     { es: 'todavía', en: 'still, yet' }
   ],
   when:[
-    'Subjunctive triggers about a completed action: <i>Espero que hayas llegado bien.</i> — I hope you have arrived safely.',
+    'Subjunctive triggers about a completed action: <i>Espero que hayas llegado bien.</i> I hope you have arrived safely.',
     'Emotion/doubt about the recent past: <i>No creo que lo haya hecho.</i>'
   ],
   irregulars:['Same irregular participles as the other perfect tenses.'],
@@ -369,7 +369,7 @@ window.GRAMMAR = [
 },
 {
   key:'imperativo', title:'Imperativo (Commands)',
-  summary:'Direct commands — telling someone to do (or not do) something.',
+  summary:'Direct commands: telling someone to do (or not do) something.',
   formation:'Affirmative tú = 3rd-person present (habla). Usted/nosotros/ustedes = present subjunctive. Vosotros = infinitive with -r → -d (hablad). Negative commands use the present subjunctive for every person.',
   keywords: [
     { es: 'habla / hable', en: 'speak (tú / usted)' },
@@ -384,8 +384,8 @@ window.GRAMMAR = [
     { es: 've', en: 'go' }
   ],
   when:[
-    'Giving instructions or orders: <i>¡Habla más despacio!</i> — Speak more slowly!',
-    'Negative commands use the subjunctive: <i>No hables.</i> — Don\'t speak.'
+    'Giving instructions or orders: <i>¡Habla más despacio!</i> Speak more slowly!',
+    'Negative commands use the subjunctive: <i>No hables.</i> Don\'t speak.'
   ],
   irregulars:[
     'Irregular affirmative tú commands: <i>decir → di</i>, <i>hacer → haz</i>, <i>ir → ve</i>, <i>poner → pon</i>, <i>salir → sal</i>, <i>ser → sé</i>, <i>tener → ten</i>, <i>venir → ven</i>.'
