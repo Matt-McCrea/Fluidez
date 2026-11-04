@@ -10,6 +10,11 @@
  *                                           is first in the data and the view
  *                                           shuffles it
  *   yourTurn    [{ en, es, accept }]        3 to 5, graded by the matcher
+ *   translate   [{ en, es, accept }]        4 more typed translations, English
+ *                                           to Spanish, each the exact English
+ *                                           of its Spanish, graded the same way
+ *   register    [{ es, en, when }]          3, function lessons (fn-) only: with
+ *                                           a friend, to usted, at work
  *   personal    { prompt, constraints (js/checker.js), model }
  *   pitfalls    [string]                    0 to 3
  *   source      'old' | 'merged' | 'rebuild'
@@ -64,6 +69,12 @@ window.SCRIPTS_A2 = {
     { en: "There weren't many cars.", es: "No había muchos carros.", accept: [] },
     { en: "Where did you use to work? (to a friend)", es: "¿Dónde trabajabas?", accept: ["¿Dónde trabajabas antes?"] }
   ],
+  translate: [
+    { en: "As a boy I lived in Cali and played football in the street.", es: "De niño vivía en Cali y jugaba fútbol en la calle.", accept: ["De niño vivía en Cali y jugaba (al) fútbol en la calle.", "Cuando era niño, vivía en Cali y jugaba (al) fútbol en la calle."] },
+    { en: "My dad used to cook on Saturdays.", es: "Mi papá cocinaba los sábados.", accept: ["Mi [papá|padre] cocinaba los sábados.", "Los sábados mi [papá|padre] cocinaba."] },
+    { en: "Did you use to go to school by bus? (to a friend)", es: "¿Ibas al colegio en bus?", accept: [] },
+    { en: "There was no internet in the village.", es: "En el pueblo no había internet.", accept: ["No había internet en el pueblo."] }
+  ],
   personal: {
     prompt: "Think of when you were about ten. Write two true things: where you lived or what your home was like, and something you used to do every week.",
     constraints: [
@@ -115,6 +126,12 @@ window.SCRIPTS_A2 = {
     { en: "I have been living in Bogotá for two years.", es: "Vivo en Bogotá desde hace dos años.", accept: ["Hace dos años que vivo en Bogotá."] },
     { en: "I work from eight until five.", es: "Trabajo desde las ocho hasta las cinco.", accept: ["Trabajo de ocho a cinco."] },
     { en: "We were in Cartagena for a week.", es: "Estuvimos en Cartagena durante una semana.", accept: ["Estuvimos una semana en Cartagena.", "Estuvimos en Cartagena una semana."] }
+  ],
+  translate: [
+    { en: "Laura got here a while ago.", es: "Laura llegó hace rato.", accept: ["Laura llegó hace (un) rato."] },
+    { en: "I've been studying Spanish for two months.", es: "Estudio español desde hace dos meses.", accept: ["Hace dos meses que estudio español."] },
+    { en: "The café opens Monday to Saturday.", es: "El café abre de lunes a sábado.", accept: [] },
+    { en: "She left ten minutes ago.", es: "Se fue hace diez minutos.", accept: [] }
   ],
   personal: {
     prompt: "Write two true lines about where you live: when you arrived, with a past verb and *hace*, and how long you have been there, with *desde hace*.",
@@ -168,6 +185,12 @@ window.SCRIPTS_A2 = {
     { en: "A bottle of water, please.", es: "Una botella de agua, por favor.", accept: [] },
     { en: "I used to eat out once a month.", es: "Comía afuera una vez al mes.", accept: ["Comía fuera una vez al mes.", "Antes comía afuera una vez al mes."] }
   ],
+  translate: [
+    { en: "I have a black coffee twice a day.", es: "Tomo tinto dos veces al día.", accept: ["Tomo (un) tinto dos veces al día."] },
+    { en: "I buy a pound of coffee every week.", es: "Compro una libra de café cada semana.", accept: ["Compro una libra de café [cada semana|todas las semanas]."] },
+    { en: "Ana goes to the pool twice a week.", es: "Ana va a la piscina dos veces a la semana.", accept: [] },
+    { en: "I used to go to the gym three times a week. Now I go once a month.", es: "Antes iba al gimnasio tres veces a la semana. Ahora voy una vez al mes.", accept: ["(Antes) iba al gimnasio tres veces a la semana. Ahora voy una vez al mes."] }
+  ],
   personal: {
     prompt: "Write two true lines about how often you do things: one with *vez* or *veces*, and one with *todos los días* or *cada*.",
     constraints: [
@@ -219,6 +242,12 @@ window.SCRIPTS_A2 = {
     { en: "On Saturdays I used to play football.", es: "Los sábados jugaba fútbol.", accept: ["Los sábados jugaba al fútbol."] },
     { en: "I was twenty.", es: "Tenía veinte años.", accept: [] },
     { en: "I don't live there any more.", es: "Ya no vivo allí.", accept: ["Ya no vivo ahí.", "Ya no vivo allá."] }
+  ],
+  translate: [
+    { en: "The house was old and had a big yard.", es: "La casa era vieja y tenía un patio grande.", accept: [] },
+    { en: "I had a dog called Toco.", es: "Tenía un perro que se llamaba Toco.", accept: [] },
+    { en: "I didn't use to like coffee. Now I drink it every day.", es: "Antes no me gustaba el café. Ahora lo tomo todos los días.", accept: ["(Antes) no me gustaba el café. Ahora lo tomo todos los días."] },
+    { en: "On Saturdays we used to go to the river.", es: "Los sábados íbamos al río.", accept: ["Íbamos al río los sábados."] }
   ],
   personal: {
     prompt: "Describe your life ten years ago in three or four short lines: where you lived, what it was like, what you used to do. Nothing happens, only how things were.",
@@ -278,6 +307,12 @@ window.SCRIPTS_A2 = {
     { en: "As a child I played football every day.", es: "De niño jugaba fútbol todos los días.", accept: ["De niño jugaba al fútbol todos los días.", "Cuando era niño jugaba fútbol todos los días.", "De niña jugaba fútbol todos los días."] },
     { en: "Yesterday I played football with Diego.", es: "Ayer jugué fútbol con Diego.", accept: ["Ayer jugué al fútbol con Diego."] }
   ],
+  translate: [
+    { en: "Suddenly the power went out.", es: "De repente se fue la luz.", accept: [] },
+    { en: "It rained all night.", es: "Llovió toda la noche.", accept: [] },
+    { en: "Ana was talking on the phone when Diego came in.", es: "Ana hablaba por teléfono cuando entró Diego.", accept: ["Ana hablaba por teléfono cuando Diego entró."] },
+    { en: "It was eleven o'clock and there was nobody in the street.", es: "Eran las once y no había nadie en la calle.", accept: [] }
+  ],
   personal: {
     prompt: "Think of a night something surprising happened to you. Write the scene in a line or two (*era*, *estaba*, *había*, *llovía*), then the event, starting with *De repente*.",
     constraints: [
@@ -330,6 +365,12 @@ window.SCRIPTS_A2 = {
     { en: "So we called my dad.", es: "Entonces llamamos a mi papá.", accept: ["Entonces llamamos a mi padre."] },
     { en: "In the end we laughed a lot.", es: "Al final nos reímos mucho.", accept: [] },
     { en: "It started to rain.", es: "Empezó a llover.", accept: [] }
+  ],
+  translate: [
+    { en: "Once I missed the last bus.", es: "Una vez perdí el último bus.", accept: [] },
+    { en: "It was Sunday and we were in the park.", es: "Era domingo y estábamos en el parque.", accept: [] },
+    { en: "Suddenly someone shouted my name.", es: "De repente, alguien gritó mi nombre.", accept: [] },
+    { en: "Anyway, we didn't go to the party.", es: "Total, que no fuimos a la fiesta.", accept: [] }
   ],
   personal: {
     prompt: "Tell the start and the turn of a real story in two or three lines: the scene first, then *de repente* and what happened.",
@@ -387,6 +428,12 @@ window.SCRIPTS_A2 = {
     { en: "First we ate, then we went downtown.", es: "Primero comimos, luego fuimos al centro.", accept: ["Primero comimos y luego fuimos al centro.", "Primero comimos, después fuimos al centro.", "Primero comimos y después fuimos al centro."] },
     { en: "I haven't finished yet.", es: "Todavía no he terminado.", accept: ["No he terminado todavía."] }
   ],
+  translate: [
+    { en: "I didn't have any money. That's why I didn't go.", es: "No tenía plata. Por eso no fui.", accept: ["No tenía [plata|dinero]. Por eso no fui."] },
+    { en: "What's more, the hotel was really cheap.", es: "Además, el hotel era muy barato.", accept: [] },
+    { en: "Diego never cooks.", es: "Diego no cocina nunca.", accept: ["Diego nunca cocina."] },
+    { en: "Finally, we put everything away in the car.", es: "Por último, guardamos todo en el carro.", accept: ["[Por último|Al final], guardamos todo en el carro."] }
+  ],
   personal: {
     prompt: "Write two true lines about somewhere you have never been or something you never do, with a strong no. Add a reason with *por eso* if you like.",
     constraints: [
@@ -437,6 +484,12 @@ window.SCRIPTS_A2 = {
     { en: "I was in the kitchen when the doorbell rang.", es: "Estaba en la cocina cuando sonó el timbre.", accept: ["Estaba en la cocina cuando el timbre sonó."] },
     { en: "I opened the door and there was nobody there.", es: "Abrí la puerta y no había nadie.", accept: [] },
     { en: "While we waited, we talked for two hours.", es: "Mientras esperábamos, hablamos dos horas.", accept: ["Mientras esperábamos, hablamos durante dos horas."] }
+  ],
+  translate: [
+    { en: "In the end it was a really lovely day.", es: "Al final fue un día muy bonito.", accept: ["Al final fue un día muy [bonito|lindo]."] },
+    { en: "It was late, it was raining and we went out.", es: "Era tarde, llovía y salimos.", accept: [] },
+    { en: "It was Sunday and it was very hot.", es: "Era domingo y hacía mucho calor.", accept: [] },
+    { en: "I was in the park with my sister when it started to rain.", es: "Estaba en el parque con mi hermana cuando empezó a llover.", accept: [] }
   ],
   personal: {
     prompt: "Start your own story: a line or two of scene, then one event that cuts across it with *cuando*.",
@@ -492,6 +545,12 @@ window.SCRIPTS_A2 = {
     { en: "They stole my wallet.", es: "Me robaron la billetera.", accept: [] },
     { en: "Can you lend me your pen? (to a friend)", es: "¿Me prestas tu lapicero?", accept: ["¿Me puedes prestar tu lapicero?", "¿Me prestas tu esfero?"] },
     { en: "My head hurts.", es: "Me duele la cabeza.", accept: [] }
+  ],
+  translate: [
+    { en: "Did you write to your mom? (to a friend)", es: "¿Le escribiste a tu mamá?", accept: ["¿Le escribiste a tu [mamá|madre]?"] },
+    { en: "Yes, I sent her a message last night.", es: "Sí, le mandé un mensaje anoche.", accept: ["Sí, le [mandé|envié] un mensaje anoche."] },
+    { en: "I gave the neighbours my number.", es: "Les di mi número a los vecinos.", accept: ["Les di a los vecinos mi número."] },
+    { en: "They stole Diego's wallet.", es: "Le robaron la billetera a Diego.", accept: ["A Diego le robaron la billetera."] }
   ],
   personal: {
     prompt: "Who did you last give something to, or write to? Say it with the person's name and *le* or *les*.",
@@ -549,6 +608,12 @@ window.SCRIPTS_A2 = {
     { en: "I'll leave them for you on the table. (the keys)", es: "Te las dejo en la mesa.", accept: [] },
     { en: "I told him the truth.", es: "Le dije la verdad.", accept: [] }
   ],
+  translate: [
+    { en: "The key? I already gave it to your mom.", es: "¿La llave? Ya se la di a tu mamá.", accept: ["¿La llave? Ya se la di a tu [mamá|madre]."] },
+    { en: "I saw him on the corner and told him the truth.", es: "Lo vi en la esquina y le dije la verdad.", accept: [] },
+    { en: "I explained it to him twice.", es: "Se lo expliqué dos veces.", accept: [] },
+    { en: "The photos? She sent them to me yesterday.", es: "¿Las fotos? Me las mandó ayer.", accept: ["¿Las fotos? Me las [mandó|envió] ayer."] }
+  ],
   personal: {
     prompt: "Think of something you lent or gave someone. Say it twice: once with the thing named, *Le di…*, then with the two small words, *Se lo di* or *Se la di*.",
     constraints: [
@@ -600,6 +665,12 @@ window.SCRIPTS_A2 = {
     { en: "Yes, I'm going with you.", es: "Sí, voy contigo.", accept: [] },
     { en: "She always talks about me.", es: "Siempre habla de mí.", accept: ["Ella siempre habla de mí."] },
     { en: "I like coffee, but she doesn't.", es: "A mí me gusta el café, pero a ella no.", accept: ["Me gusta el café, pero a ella no."] }
+  ],
+  translate: [
+    { en: "I can't live without you. (to your partner)", es: "No puedo vivir sin ti.", accept: [] },
+    { en: "She loves jazz; I love rock.", es: "A ella le encanta el jazz; a mí, el rock.", accept: ["A ella le encanta el jazz y a mí me encanta el rock."] },
+    { en: "Is there a message for me?", es: "¿Hay un mensaje para mí?", accept: ["¿Hay [un|algún] mensaje para mí?"] },
+    { en: "Diego is going with me.", es: "Diego va conmigo.", accept: [] }
   ],
   personal: {
     prompt: "Write two true lines: who you like going out with, with *con*, and something you would buy for a friend, with *para*. Try *conmigo* or *contigo* if it fits.",
@@ -653,6 +724,12 @@ window.SCRIPTS_A2 = {
     { en: "My car is blue; yours is red. (to a friend)", es: "Mi carro es azul; el tuyo es rojo.", accept: ["Mi carro es azul y el tuyo es rojo."] },
     { en: "Sir, is this suitcase yours?", es: "Señor, ¿esta maleta es suya?", accept: ["¿Esta maleta es suya, señor?"] }
   ],
+  translate: [
+    { en: "No, mine is the red one. (the suitcase)", es: "No, la mía es la roja.", accept: [] },
+    { en: "Our house is small, but theirs is huge.", es: "Nuestra casa es pequeña, pero la suya es enorme.", accept: ["Nuestra casa es pequeña, pero la de ellos es enorme."] },
+    { en: "The suitcase? It's mine.", es: "¿La maleta? Es mía.", accept: [] },
+    { en: "Whose is it? Mine. (the book)", es: "¿De quién es? Mío.", accept: ["¿De quién es? Es mío."] }
+  ],
   personal: {
     prompt: "Compare something of yours with a friend's, *Mi celular es… y el tuyo es…*, or name a friend of yours who lives far away: *Un amigo mío vive en…*",
     constraints: [
@@ -703,6 +780,12 @@ window.SCRIPTS_A2 = {
     { en: "I gave it to my sister. (the book)", es: "Se lo di a mi hermana.", accept: [] },
     { en: "I'm going to buy it tomorrow. (the shirt)", es: "Voy a comprarla mañana.", accept: ["La voy a comprar mañana."] },
     { en: "The photos? I sent them to Laura.", es: "¿Las fotos? Se las mandé a Laura.", accept: ["Se las mandé a Laura."] }
+  ],
+  translate: [
+    { en: "The cake? I made it.", es: "¿La torta? La hice yo.", accept: [] },
+    { en: "I'm going to call her tomorrow.", es: "Voy a llamarla mañana.", accept: ["La voy a llamar mañana."] },
+    { en: "I bought a shirt on Saturday and I wear it a lot.", es: "Compré una camisa el sábado y la uso mucho.", accept: ["El sábado compré una camisa y la uso mucho."] },
+    { en: "I gave the book to Ana. I gave it to her on Monday.", es: "Le di el libro a Ana. Se lo di el lunes.", accept: ["Le di el libro a Ana. El lunes se lo di."] }
   ],
   personal: {
     prompt: "Write two lines about something you bought or made recently: name it once, then use *lo* or *la* for it.",
@@ -758,6 +841,12 @@ window.SCRIPTS_A2 = {
     { en: "Tell me the truth. (to a friend)", es: "Dime la verdad.", accept: [] },
     { en: "Come in and sit down, madam.", es: "Pase y siéntese, señora.", accept: ["Siga y siéntese, señora."] }
   ],
+  translate: [
+    { en: "Leave early and catch the bus at the corner. (to a friend)", es: "Sal temprano y toma el bus en la esquina.", accept: [] },
+    { en: "Wait here, please. (polite)", es: "Espere aquí, por favor.", accept: ["Espere [aquí|acá], por favor."] },
+    { en: "Come early, please. (to a group)", es: "Vengan temprano, por favor.", accept: [] },
+    { en: "Go on two blocks and catch the bus at the corner. (polite)", es: "Siga dos cuadras y tome el bus en la esquina.", accept: [] }
+  ],
   personal: {
     prompt: "Give a friend two instructions to get from your door to the nearest café or bus stop. Try *sal*, *camina* or *cruza*.",
     constraints: [
@@ -810,6 +899,17 @@ window.SCRIPTS_A2 = {
     { en: "Order a black coffee the Colombian way.", es: "¿Me regala un tinto, por favor?", accept: ["¿Me regala un tinto?"] },
     { en: "Would you mind waiting a moment? (polite)", es: "¿Me hace el favor de esperar un momento?", accept: [] }
   ],
+  translate: [
+    { en: "Can you bring me a glass of water? (to a friend)", es: "¿Me traes un vaso de agua?", accept: [] },
+    { en: "You have to pay at the till. (nobody named)", es: "Hay que pagar en la caja.", accept: [] },
+    { en: "Could you turn the volume down a little? (polite)", es: "¿Podría bajar un poco el volumen?", accept: ["¿Podría bajar el volumen un poco?", "¿Me podría bajar un poco el volumen?"] },
+    { en: "Oh, I haven't got a pen.", es: "Uy, no tengo lapicero.", accept: ["Uy, no tengo [lapicero|esfero]."] }
+  ],
+  register: [
+    { es: "¿Me prestas un lapicero?", en: "Can you lend me a pen?", when: "with a friend" },
+    { es: "¿Me hace el favor de prestarme un lapicero?", en: "Would you mind lending me a pen?", when: "to someone you call usted" },
+    { es: "¿Me podría enviar el documento, por favor?", en: "Could you send me the document, please?", when: "in a message or at work" }
+  ],
   personal: {
     prompt: "Picture your favourite café. Ask the waiter for one thing you always want, as a question.",
     constraints: [
@@ -861,6 +961,17 @@ window.SCRIPTS_A2 = {
     { en: "I'm sorry, but I can't. The thing is, I have to work.", es: "Lo siento, pero no puedo. Es que tengo que trabajar.", accept: ["Qué pena, pero no puedo. Es que tengo que trabajar."] },
     { en: "Well, I don't know. I have to think about it.", es: "Bueno, no sé. Tengo que pensarlo.", accept: ["Bueno, no sé. Lo tengo que pensar."] },
     { en: "OK, I'm coming. (to a friend)", es: "Listo, ya voy.", accept: ["Dale, ya voy."] }
+  ],
+  translate: [
+    { en: "Fine, all right, but I'll be late.", es: "Bueno, está bien, pero llego tarde.", accept: ["Bueno, está bien, pero voy a llegar tarde."] },
+    { en: "I'm so sorry, but I can't. The thing is, I have an appointment.", es: "Qué pena, pero no puedo. Es que tengo una cita.", accept: ["[Qué pena|Lo siento], pero no puedo. Es que tengo una cita."] },
+    { en: "Will you help me with the suitcases? (to a friend)", es: "¿Me ayudas con las maletas?", accept: [] },
+    { en: "Yes, of course, no problem.", es: "Sí, claro, sin problema.", accept: ["Sí, claro, no hay problema."] }
+  ],
+  register: [
+    { es: "Listo, dale.", en: "OK, sure.", when: "with a friend" },
+    { es: "Claro que sí, con mucho gusto.", en: "Of course, happy to.", when: "to someone you call usted" },
+    { es: "Con gusto, se lo envío hoy.", en: "Happy to, I'll send it to you today.", when: "in a message or at work" }
   ],
   personal: {
     prompt: "A friend asks you a favour you can't do this weekend. Say no the kind way: sorry, the no, and a real reason with *es que*.",
@@ -915,6 +1026,12 @@ window.SCRIPTS_A2 = {
     { en: "We need to be there by eight. (nobody named)", es: "Hay que llegar a las ocho.", accept: [] },
     { en: "This soup needs salt. (a fact that asks)", es: "A esta sopa le falta sal.", accept: ["Le falta sal a esta sopa."] }
   ],
+  translate: [
+    { en: "Wow, it's really cold in here.", es: "Uy, aquí hace mucho frío.", accept: [] },
+    { en: "We need to study more. (nobody named)", es: "Hay que estudiar más.", accept: [] },
+    { en: "You have to wear a tie. (nobody named)", es: "Hay que llevar corbata.", accept: ["Hay que [llevar|usar] corbata."] },
+    { en: "You can't park here.", es: "Aquí no se puede parquear.", accept: ["Aquí no se puede [parquear|estacionar]."] }
+  ],
   personal: {
     prompt: "Write two signs for a place you know well, your home, your office or your street: one thing people can do there and one thing they can't.",
     constraints: [
@@ -965,6 +1082,12 @@ window.SCRIPTS_A2 = {
     { en: "Then put the coffee in the filter. (to a friend)", es: "Luego, pon el café en el filtro.", accept: ["Después, pon el café en el filtro."] },
     { en: "Finally, press the red button. (polite)", es: "Por último, apriete el botón rojo.", accept: [] },
     { en: "Careful! The water is very hot.", es: "¡Ojo! El agua está muy caliente.", accept: [] }
+  ],
+  translate: [
+    { en: "First, fill the tank with water. (to a friend)", es: "Primero, llena el tanque de agua.", accept: [] },
+    { en: "Then type your number and wait for the message. (polite)", es: "Después, escriba su número y espere el mensaje.", accept: ["[Después|Luego], escriba su número y espere el mensaje."] },
+    { en: "Press the button for three seconds. (to a friend)", es: "Aprieta el botón durante tres segundos.", accept: ["Aprieta el botón (durante) tres segundos."] },
+    { en: "Finally, save the changes. (to a friend)", es: "Por último, guarda los cambios.", accept: [] }
   ],
   personal: {
     prompt: "Write the first three steps of something you know how to make or do, for a friend: *primero…*, *luego…*, *por último…*",
@@ -1018,6 +1141,12 @@ window.SCRIPTS_A2 = {
     { en: "Would you mind opening the window? (polite)", es: "¿Me hace el favor de abrir la ventana?", accept: [] },
     { en: "Could you possibly open the window? (the Colombian top step)", es: "¿Será que me puede abrir la ventana?", accept: ["¿Será que puede abrir la ventana?"] },
     { en: "Sorry, it's just that it's very noisy outside.", es: "Lo siento, es que hace mucho ruido afuera.", accept: ["Lo siento, es que hay mucho ruido afuera.", "Lo siento, es que hace mucho ruido fuera."] }
+  ],
+  translate: [
+    { en: "Could you help me for a moment? (polite)", es: "¿Podría ayudarme un momento?", accept: ["¿Me podría ayudar un momento?"] },
+    { en: "Could you possibly explain this form to me? (the Colombian top step)", es: "¿Será que me puede explicar este formulario?", accept: [] },
+    { en: "Pass me the salt. (to your brother)", es: "Pásame la sal.", accept: [] },
+    { en: "Will you lend me your car on Saturday? (to a friend)", es: "¿Me prestas tu carro el sábado?", accept: [] }
   ],
   personal: {
     prompt: "Pick one real request you need to make this week. Write it twice: once for a friend, and once for a stranger or your boss.",
@@ -1077,6 +1206,17 @@ window.SCRIPTS_A2 = {
     { en: "I'm cold and sleepy.", es: "Tengo frío y sueño.", accept: ["Tengo frío y tengo sueño."] },
     { en: "I've got a stomach ache.", es: "Tengo dolor de estómago.", accept: ["Me duele el estómago."] }
   ],
+  translate: [
+    { en: "You look pale. Are you OK? (to a friend)", es: "Te veo pálido. ¿Estás bien?", accept: ["Te veo [pálido|pálida]. ¿Estás bien?"] },
+    { en: "I'm sleepy and my feet hurt.", es: "Tengo sueño y me duelen los pies.", accept: [] },
+    { en: "It doesn't hurt any more.", es: "Ya no me duele.", accept: [] },
+    { en: "Oh, poor you! Get well soon! (to a friend)", es: "¡Qué pesar! ¡Que te mejores!", accept: ["¡Qué pesar! ¡Que te mejores (pronto)!"] }
+  ],
+  register: [
+    { es: "¿Qué más? ¿Todo bien?", en: "How's it going? All good?", when: "with a friend" },
+    { es: "¿Cómo está, señora? ¿Se siente mejor?", en: "How are you, madam? Are you feeling better?", when: "to someone you call usted" },
+    { es: "Hola, ¿cómo sigues? ¿Ya te sientes mejor?", en: "Hi, how are you doing? Are you feeling better now?", when: "in a message to a workmate who was ill" }
+  ],
   personal: {
     prompt: "How are you today, really? Write two honest lines: how you feel, and one thing your body wants or one thing that hurts.",
     constraints: [
@@ -1128,6 +1268,17 @@ window.SCRIPTS_A2 = {
     { en: "Happy birthday, Laura!", es: "¡Feliz cumpleaños, Laura!", accept: [] },
     { en: "Congratulations on passing the exam! (to a friend)", es: "¡Felicitaciones por pasar el examen!", accept: ["¡Felicidades por pasar el examen!", "Te felicito por pasar el examen."] },
     { en: "How lucky!", es: "¡Qué suerte!", accept: [] }
+  ],
+  translate: [
+    { en: "Congratulations on the baby!", es: "¡Felicitaciones por el bebé!", accept: ["¡[Felicitaciones|Felicidades] por el bebé!"] },
+    { en: "Merry Christmas and happy New Year!", es: "¡Feliz Navidad y feliz año!", accept: ["¡Feliz Navidad y feliz año (nuevo)!"] },
+    { en: "Mrs Pérez, congratulations.", es: "Señora Pérez, la felicito.", accept: ["Señora Pérez, [felicitaciones|felicidades]."] },
+    { en: "I got the job!", es: "¡Me dieron el trabajo!", accept: [] }
+  ],
+  register: [
+    { es: "¡Qué chévere! ¡Felicitaciones!", en: "How great! Congratulations!", when: "with a friend" },
+    { es: "Lo felicito por el trabajo nuevo, señor Gómez.", en: "Congratulations on the new job, Mr Gómez.", when: "to someone you call usted" },
+    { es: "¡Felicitaciones a todo el equipo por el proyecto!", en: "Congratulations to the whole team on the project!", when: "in a message or at work" }
   ],
   personal: {
     prompt: "Someone you know had good news lately: a job, a baby, a trip, an exam. Write what you would say to them: a reaction, then congratulations for the thing itself.",
@@ -1183,6 +1334,17 @@ window.SCRIPTS_A2 = {
     { en: "Have a good trip!", es: "¡Buen viaje!", accept: [] },
     { en: "Good luck in the interview!", es: "¡Mucha suerte en la entrevista!", accept: ["¡Suerte en la entrevista!"] },
     { en: "What would you like to do on Saturday? (to a friend)", es: "¿Qué te gustaría hacer el sábado?", accept: [] }
+  ],
+  translate: [
+    { en: "Do you feel like something to drink? (to a friend)", es: "¿Te provoca algo de tomar?", accept: ["¿Te provoca algo [de|para] tomar?"] },
+    { en: "Enjoy your meal. Thanks, you too.", es: "Buen provecho. Gracias, igualmente.", accept: [] },
+    { en: "Would you like to come to the farm on Saturday? (polite)", es: "¿Le gustaría venir a la finca el sábado?", accept: [] },
+    { en: "Do you want a black coffee? (to a friend)", es: "¿Quieres un tinto?", accept: [] }
+  ],
+  register: [
+    { es: "¿Te provoca un tinto?", en: "Fancy a coffee?", when: "with a friend" },
+    { es: "¿Le gustaría tomar algo?", en: "Would you like something to drink?", when: "to someone you call usted" },
+    { es: "¿Les gustaría almorzar con el equipo el viernes?", en: "Would you all like to have lunch with the team on Friday?", when: "in a message to the people you work with" }
   ],
   personal: {
     prompt: "Invite a friend to something real this week, the soft way, and add a wish for the moment: a trip, an exam, a meal.",
@@ -1240,6 +1402,17 @@ window.SCRIPTS_A2 = {
     { en: "The exam wasn't easy at all.", es: "El examen no fue nada fácil.", accept: [] },
     { en: "I think it's a good idea too.", es: "Yo también creo que es una buena idea.", accept: ["También creo que es una buena idea."] }
   ],
+  translate: [
+    { en: "This ajiaco is delicious!", es: "¡Qué rico este ajiaco!", accept: ["¡Qué rico (está) este ajiaco!"] },
+    { en: "It depends. The food isn't bad at all.", es: "Depende. La comida no es nada mala.", accept: [] },
+    { en: "Yes, that's true.", es: "Sí, es verdad.", accept: ["Sí, es [verdad|cierto]."] },
+    { en: "The shoes are too expensive.", es: "Los zapatos son demasiado caros.", accept: ["Los zapatos están demasiado caros."] }
+  ],
+  register: [
+    { es: "Sí, tienes razón.", en: "Yes, you're right.", when: "with a friend" },
+    { es: "Sí, señor, tiene toda la razón.", en: "Yes, sir, you're absolutely right.", when: "to someone you call usted" },
+    { es: "Estoy de acuerdo con la propuesta.", en: "I agree with the proposal.", when: "in a message or at a meeting" }
+  ],
   personal: {
     prompt: "Someone says *El centro es demasiado caro.* Answer them: agree or half agree, then give your view of a place you know, graded with *muy*, *demasiado* or *nada*.",
     constraints: [
@@ -1291,6 +1464,12 @@ window.SCRIPTS_A2 = {
     { en: "Congratulations! When do you start? (to a friend)", es: "¡Felicitaciones! ¿Cuándo empiezas?", accept: ["¡Felicidades! ¿Cuándo empiezas?"] },
     { en: "Don't worry, it's fine. (to a man)", es: "Tranquilo, no pasa nada.", accept: [] },
     { en: "Well, it's better than nothing.", es: "Bueno, algo es algo.", accept: [] }
+  ],
+  translate: [
+    { en: "I'm getting married in June!", es: "¡Me caso en junio!", accept: [] },
+    { en: "My dad is in hospital.", es: "Mi papá está en el hospital.", accept: ["Mi [papá|padre] está en el hospital."] },
+    { en: "I failed the exam.", es: "Perdí el examen.", accept: ["[Perdí|Reprobé] el examen."] },
+    { en: "They raised my pay, but my hours too.", es: "Me subieron el sueldo, pero también las horas.", accept: ["Me subieron el [sueldo|salario], pero también las horas."] }
   ],
   personal: {
     prompt: "Write two of your five exchanges: one piece of good news and one bad, each with a reaction and a question.",
@@ -1350,6 +1529,12 @@ window.SCRIPTS_A2 = {
     { en: "There aren't as many cars as before.", es: "No hay tantos carros como antes.", accept: [] },
     { en: "My younger brother lives in Cali.", es: "Mi hermano menor vive en Cali.", accept: [] }
   ],
+  translate: [
+    { en: "It's warmer in Medellín than in Bogotá.", es: "En Medellín hace más calor que en Bogotá.", accept: [] },
+    { en: "My brother is less serious than me.", es: "Mi hermano es menos serio que yo.", accept: [] },
+    { en: "I don't have as much time as before.", es: "No tengo tanto tiempo como antes.", accept: [] },
+    { en: "Ana works as much as her boss.", es: "Ana trabaja tanto como su jefe.", accept: ["Ana trabaja tanto como su [jefe|jefa]."] }
+  ],
   personal: {
     prompt: "Compare yourself with someone in your family: one way you are more or less, and one way you are just the same.",
     constraints: [
@@ -1402,6 +1587,12 @@ window.SCRIPTS_A2 = {
     { en: "Where can I change dollars into pesos?", es: "¿Dónde puedo cambiar dólares por pesos?", accept: [] },
     { en: "Can I exchange it for a bigger one? (the jacket)", es: "¿La puedo cambiar por una más grande?", accept: ["¿Puedo cambiarla por una más grande?"] }
   ],
+  translate: [
+    { en: "The table is wooden and the chairs are plastic.", es: "La mesa es de madera y las sillas son de plástico.", accept: [] },
+    { en: "What's this ring made of? It's silver.", es: "¿De qué es este anillo? Es de plata.", accept: [] },
+    { en: "Laura changed jobs in January.", es: "Laura cambió de trabajo en enero.", accept: [] },
+    { en: "Ana changed her mind.", es: "Ana cambió de opinión.", accept: [] }
+  ],
   personal: {
     prompt: "Describe one thing you own and love: what it is made of. Then say one thing you changed in the last few years, with *cambiar de*.",
     constraints: [
@@ -1453,6 +1644,12 @@ window.SCRIPTS_A2 = {
     { en: "When I met her, she had short hair.", es: "Cuando la conocí, tenía el pelo corto.", accept: [] },
     { en: "She's more serious than my mom.", es: "Es más seria que mi mamá.", accept: ["Ella es más seria que mi mamá.", "Es más seria que mi madre."] },
     { en: "Who do you look like? (to a friend)", es: "¿A quién te pareces?", accept: [] }
+  ],
+  translate: [
+    { en: "I look like my dad, but I have my mom's eyes.", es: "Me parezco a mi papá, pero tengo los ojos de mi mamá.", accept: ["Me parezco a mi [papá|padre], pero tengo los ojos de mi [mamá|madre]."] },
+    { en: "Diego looks a lot like his dad.", es: "Diego se parece mucho a su papá.", accept: ["Diego se parece mucho a su [papá|padre]."] },
+    { en: "The two sisters aren't alike at all.", es: "Las dos hermanas no se parecen nada.", accept: [] },
+    { en: "Once, when I was eight, she took me to see the sea.", es: "Una vez, cuando yo tenía ocho años, me llevó a ver el mar.", accept: ["Una vez, cuando (yo) tenía ocho años, me llevó a ver el mar."] }
   ],
   personal: {
     prompt: "Describe someone you love in three or four lines: what they are like now, who they look like or how they compare, and one moment you remember.",
@@ -1507,6 +1704,12 @@ window.SCRIPTS_A2 = {
     { en: "This phone doesn't work.", es: "Este celular no sirve.", accept: ["Este celular no funciona."] },
     { en: "It's smaller than the others, but stronger. (the lamp)", es: "Es más pequeña que las otras, pero más fuerte.", accept: ["Es más pequeña que las otras, pero es más fuerte."] }
   ],
+  translate: [
+    { en: "It's made of wood and it has a long handle.", es: "Es de madera y tiene un palo largo.", accept: [] },
+    { en: "What's this button for?", es: "¿Para qué sirve este botón?", accept: [] },
+    { en: "The big mug is for hot chocolate.", es: "La taza grande sirve para el chocolate.", accept: ["La taza grande [sirve|es] para el chocolate."] },
+    { en: "It's for heating up food.", es: "Sirve para calentar la comida.", accept: [] }
+  ],
   personal: {
     prompt: "Describe something in your home without naming it, so a friend could guess: what it's made of, its parts, and what it's for.",
     constraints: [
@@ -1558,6 +1761,12 @@ window.SCRIPTS_A2 = {
     { en: "The new one is just as fast as the old one.", es: "El nuevo es igual de rápido que el viejo.", accept: ["El nuevo es tan rápido como el viejo."] },
     { en: "It's the cheapest of all.", es: "Es el más barato de todos.", accept: [] },
     { en: "I'll take the one in Chapinero because it's close.", es: "Me quedo con el de Chapinero porque está cerca.", accept: [] }
+  ],
+  translate: [
+    { en: "This neighbourhood is less noisy, but it's further away.", es: "Este barrio es menos ruidoso, pero queda más lejos.", accept: ["Este barrio es menos ruidoso, pero [queda|está] más lejos."] },
+    { en: "The one on the outskirts has more light.", es: "El de las afueras tiene más luz.", accept: [] },
+    { en: "The Chapinero one is more expensive than the one downtown.", es: "El de Chapinero es más caro que el del centro.", accept: [] },
+    { en: "The new job is more interesting than the old one, but it pays worse.", es: "El trabajo nuevo es más interesante que el viejo, pero paga peor.", accept: ["El [trabajo nuevo|nuevo trabajo] es más interesante que el [viejo|anterior], pero paga peor."] }
   ],
   personal: {
     prompt: "Compare two real options you have: two places, two phones, two jobs. Give at least two points, then choose one with *porque*.",
@@ -1614,6 +1823,12 @@ window.SCRIPTS_A2 = {
     { en: "Just one instalment, please.", es: "A una cuota, por favor.", accept: ["A una, por favor."] },
     { en: "How can I help you? (to a customer)", es: "¿En qué le puedo servir?", accept: ["¿En qué puedo servirle?", "¿En qué le puedo ayudar?"] }
   ],
+  translate: [
+    { en: "We have these two. Would you like to try them on? (to a customer)", es: "Tenemos estos dos. ¿Se los quiere medir?", accept: ["Tenemos estos dos. ¿Se los quiere [medir|probar]?", "Tenemos estos dos. ¿Quiere [medírselos|probárselos]?"] },
+    { en: "Where's the fitting room?", es: "¿Dónde está el probador?", accept: [] },
+    { en: "It's too small for me. (the jacket)", es: "Me queda pequeña.", accept: [] },
+    { en: "This one is nicer, but the other one is wool.", es: "Este es más bonito, pero el otro es de lana.", accept: [] }
+  ],
   personal: {
     prompt: "You're in a clothes shop in Bogotá. Write your side: ask for something with *quería*, ask to try it on, and say how it fits.",
     constraints: [
@@ -1667,6 +1882,17 @@ window.SCRIPTS_A2 = {
     { en: "One moment, I'll put her on.", es: "Un momento, ya se la paso.", accept: ["Un momento, se la paso."] },
     { en: "Sure, tell me. (to a friend)", es: "Sí, claro, cuéntame.", accept: ["Claro, cuéntame."] }
   ],
+  translate: [
+    { en: "Hi, is that Laura?", es: "Buenas, ¿hablo con Laura?", accept: ["[Buenas|Hola], ¿hablo con Laura?"] },
+    { en: "She's not in. Would you like to leave her a message? (polite)", es: "No está. ¿Quiere dejarle un mensaje?", accept: ["No está. ¿Le quiere dejar un mensaje?"] },
+    { en: "Is Mrs Gómez there?", es: "¿Está la señora Gómez?", accept: [] },
+    { en: "Who am I speaking to?", es: "¿Con quién hablo?", accept: [] }
+  ],
+  register: [
+    { es: "Hola, ¿qué más? Cuéntame.", en: "Hi, what's up? Tell me.", when: "with a friend" },
+    { es: "Buenas tardes, ¿con quién tengo el gusto?", en: "Good afternoon, who am I speaking to?", when: "to someone you call usted" },
+    { es: "Buenos días, oficina de la doctora Ruiz, ¿en qué le puedo servir?", en: "Good morning, Dr Ruiz's office, how can I help you?", when: "answering the phone at work" }
+  ],
   personal: {
     prompt: "Someone calls for a housemate who is out. Write your side of the call: pick up, ask who is calling, and offer to take a message.",
     constraints: [
@@ -1719,6 +1945,17 @@ window.SCRIPTS_A2 = {
     { en: "What's your favourite colour? (to a friend)", es: "¿Cuál es tu color favorito?", accept: [] },
     { en: "Who do you live with? (to a friend)", es: "¿Con quién vives?", accept: [] },
     { en: "By bus.", es: "En bus.", accept: [] }
+  ],
+  translate: [
+    { en: "How do you get to work? (to a friend)", es: "¿Cómo vienes al trabajo?", accept: ["¿Cómo [vienes|vas] al trabajo?"] },
+    { en: "Whose keys are these?", es: "¿De quién son estas llaves?", accept: [] },
+    { en: "What do you need Spanish for? (to a friend)", es: "¿Para qué necesitas el español?", accept: [] },
+    { en: "When is your birthday? (to a friend)", es: "¿Cuándo es tu cumpleaños?", accept: [] }
+  ],
+  register: [
+    { es: "¿Qué música te gusta?", en: "What music do you like?", when: "with a friend" },
+    { es: "Disculpe, ¿qué documentos necesito?", en: "Excuse me, what documents do I need?", when: "to someone you call usted" },
+    { es: "Buenos días. Quería saber el horario de la oficina, por favor.", en: "Good morning. I'd like to know the office hours, please.", when: "in an email or a message" }
   ],
   personal: {
     prompt: "Write three questions you would ask someone new at a party: one with *¿Qué tipo de…?*, one with *¿Cuál…?*, and one with the small word first, like *¿Con quién…?*",
@@ -1776,6 +2013,17 @@ window.SCRIPTS_A2 = {
     { en: "I like reading more than watching TV.", es: "Me gusta más leer que ver televisión.", accept: ["Me gusta más leer que ver tele."] },
     { en: "We like dogs more than cats.", es: "Nos gustan más los perros que los gatos.", accept: [] }
   ],
+  translate: [
+    { en: "Which one do you prefer, the red or the blue? (to a friend)", es: "¿Cuál prefieres, el rojo o el azul?", accept: [] },
+    { en: "I like walking more than going by car.", es: "Me gusta más caminar que ir en carro.", accept: [] },
+    { en: "We prefer Saturday.", es: "Preferimos el sábado.", accept: [] },
+    { en: "Saturday or Sunday? I don't mind.", es: "¿El sábado o el domingo? Me da igual.", accept: [] }
+  ],
+  register: [
+    { es: "¿Tinto o jugo?", en: "Coffee or juice?", when: "with a friend" },
+    { es: "¿Qué prefiere, tinto o aromática?", en: "Which do you prefer, coffee or herbal tea?", when: "to someone you call usted" },
+    { es: "¿Qué día prefieren para la reunión?", en: "Which day do you all prefer for the meeting?", when: "in a message to a group at work" }
+  ],
   personal: {
     prompt: "Write two true lines: a choice you would offer a guest, with *o*, and something you like more than something else, with *me gusta más… que*.",
     constraints: [
@@ -1830,6 +2078,12 @@ window.SCRIPTS_A2 = {
     { en: "You have to book in advance. (nobody named)", es: "Es necesario reservar antes.", accept: ["Hay que reservar antes."] },
     { en: "I don't mind. (it's all the same to me)", es: "Me da igual.", accept: [] },
     { en: "OK, agreed.", es: "Listo, de acuerdo.", accept: ["Está bien, de acuerdo."] }
+  ],
+  translate: [
+    { en: "There's no need to book.", es: "No hace falta reservar.", accept: [] },
+    { en: "To get in you have to show your passport. (nobody named)", es: "Para entrar es necesario mostrar el pasaporte.", accept: ["Para entrar [es necesario|hay que] mostrar el pasaporte."] },
+    { en: "We need two chairs.", es: "Nos hacen falta dos sillas.", accept: ["Necesitamos dos sillas."] },
+    { en: "I need to rest a little.", es: "Necesito descansar un poco.", accept: [] }
   ],
   personal: {
     prompt: "You're going away for a weekend. Write what you need, with *necesito* or *me hace falta*, and one thing there's no need to take.",
@@ -1886,6 +2140,17 @@ window.SCRIPTS_A2 = {
     { en: "I speak a little French.", es: "Hablo un poco de francés.", accept: [] },
     { en: "Do you know what time the bus comes? (polite)", es: "¿Sabe a qué hora pasa el bus?", accept: ["¿Sabe a qué hora viene el bus?", "¿Usted sabe a qué hora pasa el bus?"] }
   ],
+  translate: [
+    { en: "I can swim, but I can't dance salsa.", es: "Sé nadar, pero no sé bailar salsa.", accept: [] },
+    { en: "I know nothing about football.", es: "No sé nada de fútbol.", accept: [] },
+    { en: "I know Medellín quite well.", es: "Conozco bastante bien Medellín.", accept: ["Conozco Medellín bastante bien."] },
+    { en: "Do you know where it is? (to a friend)", es: "¿Sabes dónde queda?", accept: ["¿Sabes dónde [queda|está]?"] }
+  ],
+  register: [
+    { es: "Ni idea.", en: "No idea.", when: "with a friend" },
+    { es: "Qué pena, señora, no sé.", en: "I'm sorry, madam, I don't know.", when: "to someone you call usted" },
+    { es: "No estoy seguro, pero lo averiguo y le cuento.", en: "I'm not sure, but I'll find out and let you know.", when: "at work, when you need time to check" }
+  ],
   personal: {
     prompt: "Write two true lines about what you know: one skill with *sé* or *no sé*, and one place or person with *conozco*, softened with *un poco* or *bastante bien*.",
     constraints: [
@@ -1937,6 +2202,12 @@ window.SCRIPTS_A2 = {
     { en: "I'd like to exchange this shirt. The thing is, it's too small.", es: "Quería cambiar esta camisa. Es que me queda pequeña.", accept: [] },
     { en: "Excuse me, do you know if there's a bus to the airport?", es: "Disculpe, ¿sabe si hay un bus al aeropuerto?", accept: ["Perdone, ¿sabe si hay un bus al aeropuerto?"] },
     { en: "Thank you very much, that's very kind.", es: "Muchas gracias, muy amable.", accept: [] }
+  ],
+  translate: [
+    { en: "Can I see it this week? (the apartment)", es: "¿Lo puedo ver esta semana?", accept: ["¿Puedo verlo esta semana?"] },
+    { en: "Does Thursday at six work for you? (polite)", es: "¿Le sirve el jueves a las seis?", accept: [] },
+    { en: "Do you have the receipt? Yes, here it is. (polite)", es: "¿Tiene la factura? Sí, aquí está.", accept: ["¿Tiene la factura? Sí, [aquí|acá] está."] },
+    { en: "I'd like to exchange these shoes. The thing is, they're too big.", es: "Quería cambiar estos zapatos. Es que me quedan grandes.", accept: [] }
   ],
   personal: {
     prompt: "Write the shop exchange: you want to return or change something, and *es que* gives the problem. Add the assistant's reply, and close politely.",
@@ -1993,6 +2264,12 @@ window.SCRIPTS_A2 = {
     { en: "I'm tired, so I'm going home.", es: "Estoy cansado, así que me voy a la casa.", accept: ["Estoy cansada, así que me voy a la casa.", "Estoy cansado, así que me voy a casa.", "Estoy cansada, así que me voy a casa."] },
     { en: "I didn't have any money, that's why I didn't go.", es: "No tenía plata, por eso no fui.", accept: ["No tenía dinero, por eso no fui."] }
   ],
+  translate: [
+    { en: "We were late because there was a lot of traffic.", es: "Llegamos tarde porque había mucho trancón.", accept: ["Llegamos tarde porque había mucho [trancón|tráfico]."] },
+    { en: "Since I didn't have your number, I couldn't call you. (to a friend)", es: "Como no tenía tu número, no te pude llamar.", accept: ["Como no tenía tu número, no pude llamarte."] },
+    { en: "Why are you so tired? (to a friend)", es: "¿Por qué estás tan cansado?", accept: ["¿Por qué estás tan [cansado|cansada]?"] },
+    { en: "Diego didn't come because he had to work.", es: "Diego no vino porque tenía que trabajar.", accept: [] }
+  ],
   personal: {
     prompt: "Explain why you missed something lately: once with *porque*, and once starting with *como*.",
     constraints: [
@@ -2048,6 +2325,12 @@ window.SCRIPTS_A2 = {
     { en: "I paid fifty thousand pesos for the ticket.", es: "Pagué cincuenta mil pesos por el tiquete.", accept: [] },
     { en: "I need it by Monday.", es: "Lo necesito para el lunes.", accept: [] }
   ],
+  translate: [
+    { en: "Thanks for everything, Diego!", es: "¡Gracias por todo, Diego!", accept: [] },
+    { en: "The bus goes through Honda.", es: "El bus pasa por Honda.", accept: [] },
+    { en: "It's thirty thousand per person.", es: "Son treinta mil por persona.", accept: ["Son treinta mil (pesos) por persona."] },
+    { en: "I'm studying Spanish to work in Bogotá.", es: "Estudio español para trabajar en Bogotá.", accept: [] }
+  ],
   personal: {
     prompt: "Think of something you bought for someone. Say who it was for, and what you paid for it.",
     constraints: [
@@ -2100,6 +2383,12 @@ window.SCRIPTS_A2 = {
     { en: "I'll call you if I'm late. (to a friend)", es: "Te llamo si llego tarde.", accept: [] },
     { en: "If you have time, come to the café. (to a friend)", es: "Si tienes tiempo, ven al café.", accept: [] }
   ],
+  translate: [
+    { en: "If it rains, we're not going to the farm.", es: "Si llueve, no vamos a la finca.", accept: [] },
+    { en: "If it's sunny, we're going to go to the beach.", es: "Si hace sol, vamos a ir a la playa.", accept: [] },
+    { en: "If you have time this afternoon, call me. (to a friend)", es: "Si tienes tiempo esta tarde, llámame.", accept: [] },
+    { en: "If it rains, I stay at home and read.", es: "Si llueve, me quedo en la casa y leo.", accept: ["Si llueve, me quedo en (la) casa y leo."] }
+  ],
   personal: {
     prompt: "Write two plans for this weekend that depend on something: the weather, money, time.",
     constraints: [
@@ -2151,6 +2440,17 @@ window.SCRIPTS_A2 = {
     { en: "You need to book in advance. (anyone)", es: "Hay que reservar antes.", accept: ["Hay que reservar con tiempo."] },
     { en: "Shall I help you? (to a friend)", es: "¿Te ayudo?", accept: ["¿Quieres que te ayude?"] },
     { en: "You don't need to come. (to a friend)", es: "No tienes que venir.", accept: [] }
+  ],
+  translate: [
+    { en: "You could take a few days off. (to a friend)", es: "Puedes tomar unos días libres.", accept: [] },
+    { en: "Madam, shall I help you with the bags?", es: "Señora, ¿le ayudo con las bolsas?", accept: [] },
+    { en: "Eat something. You're very pale. (to a friend)", es: "Come algo. Estás muy pálido.", accept: ["Come algo. Estás muy [pálido|pálida]."] },
+    { en: "The best thing is to wait.", es: "Lo mejor es esperar.", accept: [] }
+  ],
+  register: [
+    { es: "Tienes que descansar, en serio.", en: "You have to rest, seriously.", when: "with a friend" },
+    { es: "Lo mejor es ir al médico, señor.", en: "The best thing is to go to the doctor, sir.", when: "to someone you call usted" },
+    { es: "Hay que revisar el informe antes del lunes.", en: "The report has to be checked before Monday.", when: "at work, pointing at nobody" }
   ],
   personal: {
     prompt: "A friend says *Estoy muy cansado y tengo mucho trabajo.* Give two pieces of advice at different strengths, and offer to help.",
@@ -2205,6 +2505,17 @@ window.SCRIPTS_A2 = {
     { en: "Shall we meet on Friday?", es: "¿Nos vemos el viernes?", accept: [] },
     { en: "Yes, but later.", es: "Sí, pero más tarde.", accept: [] }
   ],
+  translate: [
+    { en: "And why don't we eat something first?", es: "¿Y por qué no comemos algo primero?", accept: [] },
+    { en: "Shall we meet at your place at eight? (to a friend)", es: "¿Nos vemos en tu casa a las ocho?", accept: [] },
+    { en: "Shall we go dancing on Saturday?", es: "¿Vamos a bailar el sábado?", accept: [] },
+    { en: "Why didn't you come to the party? (to a friend)", es: "¿Por qué no viniste a la fiesta?", accept: [] }
+  ],
+  register: [
+    { es: "¿Y si vamos a cine?", en: "What if we go to the cinema?", when: "with a friend" },
+    { es: "¿Qué tal si nos reunimos el lunes, señora Pérez?", en: "How about we meet on Monday, Mrs Pérez?", when: "to someone you call usted" },
+    { es: "¿Por qué no hacemos la reunión el jueves?", en: "Why don't we have the meeting on Thursday?", when: "in a message or at work" }
+  ],
   personal: {
     prompt: "Propose a plan for this weekend to a friend, gently, with *¿Qué tal si…?* or *¿Por qué no…?*, and write their answer.",
     constraints: [
@@ -2256,6 +2567,12 @@ window.SCRIPTS_A2 = {
     { en: "I came to Bogotá to study Spanish.", es: "Vine a Bogotá para estudiar español.", accept: ["Vine a Bogotá a estudiar español."] },
     { en: "If they offer me a good job here, I'll stay.", es: "Si me ofrecen un buen trabajo aquí, me quedo.", accept: ["Si me ofrecen un buen trabajo acá, me quedo."] },
     { en: "The best thing is to save first.", es: "Lo mejor es ahorrar primero.", accept: [] }
+  ],
+  translate: [
+    { en: "Last year I left my job in Toronto.", es: "El año pasado dejé mi trabajo en Toronto.", accept: [] },
+    { en: "I wasn't learning anything new.", es: "No aprendía nada nuevo.", accept: [] },
+    { en: "Since the apartment was very expensive, we looked for another one.", es: "Como el apartamento era muy caro, buscamos otro.", accept: [] },
+    { en: "I study because I like it.", es: "Estudio porque me gusta.", accept: [] }
   ],
   personal: {
     prompt: "Explain one real decision in a few lines: what you decided, one reason with *porque*, one goal with *para*, and one piece of advice for someone else.",
@@ -2315,6 +2632,12 @@ window.SCRIPTS_A2 = {
     { en: "How far is the station?", es: "¿Qué tan lejos queda la estación?", accept: ["¿Qué tan lejos está la estación?", "¿A qué distancia [queda|está] la estación?"] },
     { en: "The flat gets lots of light.", es: "El apartamento tiene mucha luz.", accept: [] }
   ],
+  translate: [
+    { en: "The kitchen is at the back, and it gets lots of light.", es: "La cocina está al fondo, y tiene mucha luz.", accept: [] },
+    { en: "Around the building there are shops and a bakery.", es: "Alrededor del edificio hay tiendas y una panadería.", accept: ["Hay tiendas y una panadería alrededor del edificio."] },
+    { en: "From my house to the office it's twenty minutes by bus.", es: "Desde mi casa hasta la oficina hay veinte minutos en bus.", accept: ["[Desde mi casa hasta|De mi casa a] la oficina hay veinte minutos en bus."] },
+    { en: "It has a view of the hills.", es: "Tiene vista a los cerros.", accept: [] }
+  ],
   personal: {
     prompt: "Describe where you live for a friend who is coming to visit: one thing inside it or around it, and how far it is from something useful.",
     constraints: [
@@ -2367,6 +2690,12 @@ window.SCRIPTS_A2 = {
     { en: "I got on the bus at 72nd Street.", es: "Me subí al bus en la 72.", accept: ["Me subí al bus en la calle 72."] },
     { en: "Today I'm staying at home.", es: "Hoy me quedo en la casa.", accept: ["Hoy me quedo en casa."] }
   ],
+  translate: [
+    { en: "You get on the bus at 72nd Street and get off at 45th. (to a friend)", es: "Te subes al bus en la 72 y te bajas en la 45.", accept: ["Te subes al bus en la (calle) 72 y te bajas en la (calle) 45."] },
+    { en: "Shall I bring anything?", es: "¿Llevo algo?", accept: [] },
+    { en: "On Sunday I stayed at home.", es: "El domingo me quedé en la casa.", accept: ["El domingo me quedé en (la) casa."] },
+    { en: "Diego brought arepas from Medellín.", es: "Diego trajo arepas de Medellín.", accept: [] }
+  ],
   personal: {
     prompt: "Give a friend the route to your place from the nearest bus or train: where to get on or off, and what to bring.",
     constraints: [
@@ -2418,6 +2747,12 @@ window.SCRIPTS_A2 = {
     { en: "When I first saw it, I didn't like it. (the flat)", es: "Cuando lo vi por primera vez, no me gustó.", accept: ["La primera vez que lo vi, no me gustó."] },
     { en: "It was very dark. (the flat)", es: "Era muy oscuro.", accept: ["Estaba muy oscuro."] },
     { en: "Medellín has very good weather.", es: "Medellín tiene muy buen clima.", accept: ["Medellín tiene un clima muy bueno."] }
+  ],
+  translate: [
+    { en: "At the end of the hall, on the left, is the bathroom.", es: "Al fondo del pasillo, a la izquierda, está el baño.", accept: [] },
+    { en: "When I arrived, the neighbourhood was very quiet.", es: "Cuando llegué, el barrio era muy tranquilo.", accept: [] },
+    { en: "It was dark and there was no furniture.", es: "Era oscuro y no había muebles.", accept: ["[Era|Estaba] oscuro y no había muebles."] },
+    { en: "It's smaller than the other one, but it's in a better spot.", es: "Es más pequeño que el otro, pero está mejor ubicado.", accept: [] }
   ],
   personal: {
     prompt: "Describe a place you know well for someone who has never been: walk them through it, say how it was the first time, and compare it with another place.",
@@ -2475,6 +2810,17 @@ window.SCRIPTS_A2 = {
     { en: "Mr Gómez, may I introduce Laura.", es: "Señor Gómez, le presento a Laura.", accept: [] },
     { en: "The pleasure is mine.", es: "El gusto es mío.", accept: [] }
   ],
+  translate: [
+    { en: "Sir, excuse me! Is this umbrella yours?", es: "¡Señor, disculpe! ¿Esta sombrilla es suya?", accept: [] },
+    { en: "Dr Ruiz, this is Sam, a friend from Canada.", es: "Doctora Ruiz, le presento a Sam, un amigo de Canadá.", accept: ["[Doctora|Doctor] Ruiz, le presento a Sam, un amigo de Canadá."] },
+    { en: "Hey, excuse me, do you know what time it is? (to a stranger)", es: "Oiga, disculpe, ¿sabe qué hora es?", accept: [] },
+    { en: "Hey, can you pass me the salt? (to a friend)", es: "Oye, ¿me pasas la sal?", accept: [] }
+  ],
+  register: [
+    { es: "Oye, Laura, ¿me ayudas un momento?", en: "Hey, Laura, can you help me for a moment?", when: "with a friend" },
+    { es: "Disculpe, señora, ¿me puede ayudar?", en: "Excuse me, madam, can you help me?", when: "to someone you call usted" },
+    { es: "Estimada doctora Ruiz:", en: "Dear Dr Ruiz,", when: "to open an email at work" }
+  ],
   personal: {
     prompt: "Introduce someone in your life to a friend: their name and who they are to you. Then write what your friend says back.",
     constraints: [
@@ -2525,6 +2871,12 @@ window.SCRIPTS_A2 = {
     { en: "From there we go straight on for two blocks.", es: "Desde ahí seguimos derecho dos cuadras.", accept: ["[Desde allí|De ahí] seguimos derecho dos cuadras."] },
     { en: "The market is ten minutes' walk away.", es: "El mercado queda a diez minutos a pie.", accept: ["El mercado está a diez minutos a pie."] },
     { en: "A bit further on, there's a bakery.", es: "Un poco más allá hay una panadería.", accept: ["Un poco más allá, hay una panadería."] }
+  ],
+  translate: [
+    { en: "Right next to the bakery there's a pharmacy.", es: "Justo al lado de la panadería hay una droguería.", accept: [] },
+    { en: "A bit further on, on the left, is the market.", es: "Un poco más allá, a la izquierda, está el mercado.", accept: [] },
+    { en: "You have to go on a Sunday, because there's live music. (nobody named)", es: "Hay que ir el domingo, porque hay música en vivo.", accept: [] },
+    { en: "Around the park there are three cafés; the one at the far end is the best.", es: "Alrededor del parque hay tres cafés; el del fondo es el mejor.", accept: [] }
   ],
   personal: {
     prompt: "Guide a friend from your door to one place worth a visit near you: the route, how far it is, and why it's worth going.",
@@ -2584,6 +2936,12 @@ window.SCRIPTS_A2 = {
     { en: "I'm going to Medellín tomorrow.", es: "Mañana voy a Medellín.", accept: ["Voy a Medellín mañana.", "Mañana voy a ir a Medellín.", "Voy a ir a Medellín mañana.", "Mañana me voy para Medellín."] },
     { en: "The contract? I'm reading it.", es: "¿El contrato? Lo estoy leyendo.", accept: ["¿El contrato? Estoy leyéndolo."] }
   ],
+  translate: [
+    { en: "Diego is sleeping.", es: "Diego está durmiendo.", accept: [] },
+    { en: "I'm learning Spanish.", es: "Estoy aprendiendo español.", accept: [] },
+    { en: "I'm cooking. I'll call you later. (to a friend)", es: "Estoy cocinando. Te llamo luego.", accept: ["Estoy cocinando. Te llamo [luego|más tarde]."] },
+    { en: "She's writing a letter to her grandmother.", es: "Le está escribiendo una carta a su abuela.", accept: ["Está escribiéndole una carta a su abuela."] }
+  ],
   personal: {
     prompt: "What are you doing right now, and what is someone you know probably doing at this moment? Two lines, each with *estar* and an *-ando* or *-iendo* word.",
     constraints: [
@@ -2638,6 +2996,12 @@ window.SCRIPTS_A2 = {
     { en: "After eating, we went to a bar.", es: "Después de comer, fuimos a un bar.", accept: ["Después de comer fuimos a un bar."] },
     { en: "I didn't like it at all.", es: "No me gustó nada.", accept: [] },
     { en: "I never go to the gym.", es: "No voy nunca al gimnasio.", accept: ["Nunca voy al gimnasio.", "No voy al gimnasio nunca."] }
+  ],
+  translate: [
+    { en: "Ana lives far from the university.", es: "Ana vive lejos de la universidad.", accept: [] },
+    { en: "Before you go out, close the window. (to a friend)", es: "Antes de salir, cierra la ventana.", accept: [] },
+    { en: "First we had dinner and then we watched a film.", es: "Primero cenamos y luego vimos una película.", accept: ["Primero cenamos y [luego|después] vimos una película."] },
+    { en: "The cat is under the bed.", es: "El gato está debajo de la cama.", accept: [] }
   ],
   personal: {
     prompt: "Tell a friend what you did last night, in three steps and in order.",
@@ -2694,6 +3058,12 @@ window.SCRIPTS_A2 = {
     { en: "Please find my CV attached. (to usted)", es: "Adjunto le envío mi hoja de vida.", accept: ["Le envío adjunta mi hoja de vida."] },
     { en: "I look forward to your reply. Kind regards. (to usted)", es: "Quedo atento a su respuesta. Un cordial saludo.", accept: ["Quedo atenta a su respuesta. Un cordial saludo.", "Quedo [atento|atenta] a su respuesta. Cordial saludo."] }
   ],
+  translate: [
+    { en: "Flat for rent in Chapinero.", es: "Se arrienda apartamento en Chapinero.", accept: [] },
+    { en: "Tomorrow, rain in the afternoon in Bogotá.", es: "Mañana, lluvias por la tarde en Bogotá.", accept: ["Mañana, [lluvias|lluvia] por la tarde en Bogotá."] },
+    { en: "Is it still available? (the flat)", es: "¿Todavía está disponible?", accept: ["¿Está disponible todavía?"] },
+    { en: "Car for sale, in very good condition.", es: "Se vende carro en muy buen estado.", accept: [] }
+  ],
   personal: {
     prompt: "Write the start of a short email to the owner of a flat you saw advertised: the greeting, why you're writing, and one question.",
     constraints: [
@@ -2746,6 +3116,12 @@ window.SCRIPTS_A2 = {
     { en: "First of all, it's a very big city.", es: "En primer lugar, es una ciudad muy grande.", accept: [] },
     { en: "To finish, I'm going to show you some photos.", es: "Para terminar, les voy a mostrar unas fotos.", accept: ["Para terminar, voy a mostrarles unas fotos.", "Para terminar, les voy a mostrar algunas fotos."] },
     { en: "Thank you very much. Any questions?", es: "Muchas gracias. ¿Alguna pregunta?", accept: ["Muchas gracias. ¿[Tienen|Hay] alguna pregunta?"] }
+  ],
+  translate: [
+    { en: "Today I'm going to talk to you about my family. (to an audience)", es: "Hoy les voy a hablar de mi familia.", accept: ["Hoy voy a hablarles de mi familia."] },
+    { en: "In this photo you can see downtown. (to an audience)", es: "En esta foto pueden ver el centro.", accept: [] },
+    { en: "Also, the food is very good.", es: "Además, la comida es muy buena.", accept: [] },
+    { en: "Finally, here's a photo of the lake. (to an audience)", es: "Por último, aquí tienen una foto del lago.", accept: [] }
   ],
   personal: {
     prompt: "Plan a one minute talk about your city or your job: the opening line, two points, and the close.",
@@ -2803,6 +3179,12 @@ window.SCRIPTS_A2 = {
     { en: "I'm writing to change my appointment. (to usted)", es: "Le escribo para cambiar mi cita.", accept: [] },
     { en: "The thing is, I have to work on Monday.", es: "Es que el lunes tengo que trabajar.", accept: ["Es que tengo que trabajar el lunes."] }
   ],
+  translate: [
+    { en: "Is Tuesday at the same time possible?", es: "¿Es posible el martes a la misma hora?", accept: [] },
+    { en: "In short: good food, but you need patience. (nobody named)", es: "En resumen: buena comida, pero hay que tener paciencia.", accept: [] },
+    { en: "On Saturday I went to a café in Chapinero.", es: "El sábado fui a un café en Chapinero.", accept: [] },
+    { en: "Can you confirm the time, please? (polite)", es: "¿Me puede confirmar la hora, por favor?", accept: ["¿Puede confirmarme la hora, por favor?"] }
+  ],
   personal: {
     prompt: "Write a short review of somewhere you went recently: when you went, one good thing, one bad thing, and your verdict.",
     constraints: [
@@ -2858,6 +3240,12 @@ window.SCRIPTS_A2 = {
     { en: "I don't know your brother. (to a friend)", es: "No conozco a tu hermano.", accept: [] },
     { en: "I go out at eight and come back at six.", es: "Salgo a las ocho y vuelvo a las seis.", accept: [] }
   ],
+  translate: [
+    { en: "Laura wants a black coffee.", es: "Laura quiere un tinto.", accept: [] },
+    { en: "Then I do the food shopping and go out with Diego.", es: "Después hago mercado y salgo con Diego.", accept: ["[Después|Luego] hago mercado y salgo con Diego."] },
+    { en: "I know Cali, but I don't know the coast.", es: "Conozco Cali, pero no conozco la costa.", accept: [] },
+    { en: "They're coming at eight.", es: "Vienen a las ocho.", accept: [] }
+  ],
   personal: {
     prompt: "Describe your weekend in two lines, with at least two verbs that bend: *duermo, juego, salgo, hago, quiero…*",
     constraints: [
@@ -2909,6 +3297,12 @@ window.SCRIPTS_A2 = {
     { en: "Do you play football? (to a friend)", es: "¿Juegas fútbol?", accept: ["¿Juegas al fútbol?"] },
     { en: "I work every day.", es: "Trabajo todos los días.", accept: [] },
     { en: "We slept all day.", es: "Dormimos todo el día.", accept: [] }
+  ],
+  translate: [
+    { en: "The cold water is in the fridge, at the back.", es: "El agua fría está en la nevera, al fondo.", accept: [] },
+    { en: "Do you play tennis? (to a friend)", es: "¿Juegas al tenis?", accept: ["¿Juegas (al) tenis?"] },
+    { en: "I work every day, but on Sunday I sleep all day.", es: "Trabajo todos los días, pero el domingo duermo todo el día.", accept: ["Trabajo todos los días, pero [el domingo|los domingos] duermo todo el día."] },
+    { en: "My three sisters live in Cali.", es: "Mis tres hermanas viven en Cali.", accept: [] }
   ],
   personal: {
     prompt: "Write two true lines: something you do every day, and a day you spent doing one thing the whole day.",
@@ -2964,6 +3358,12 @@ window.SCRIPTS_A2 = {
     { en: "Everybody knows Diego.", es: "Todo el mundo conoce a Diego.", accept: ["Todos conocen a Diego."] },
     { en: "I don't want anything, thanks.", es: "No quiero nada, gracias.", accept: [] },
     { en: "There are too many people.", es: "Hay demasiada gente.", accept: [] }
+  ],
+  translate: [
+    { en: "Every day I learn something new.", es: "Cada día aprendo algo nuevo.", accept: ["[Cada día|Todos los días] aprendo algo nuevo."] },
+    { en: "No, nothing else. Well, another arepa too.", es: "No, nada más. Bueno, otra arepa también.", accept: [] },
+    { en: "Diego, you eat too much!", es: "¡Diego, comes demasiado!", accept: [] },
+    { en: "This exam is too difficult.", es: "Este examen es demasiado difícil.", accept: [] }
   ],
   personal: {
     prompt: "You're at a café with a friend. Order one more of something, and say that one thing is too much.",
@@ -3021,6 +3421,12 @@ window.SCRIPTS_A2 = {
     { en: "What a lovely house!", es: "¡Qué casa tan bonita!", accept: ["¡Qué casa [tan|más] [bonita|linda]!", "¡Qué bonita casa!"] },
     { en: "So many people!", es: "¡Cuánta gente!", accept: ["¡Cuánta gente hay!"] }
   ],
+  translate: [
+    { en: "What's your address? (polite)", es: "¿Cuál es su dirección?", accept: [] },
+    { en: "What is a cédula?", es: "¿Qué es una cédula?", accept: [] },
+    { en: "You cook so well! (to a friend)", es: "¡Qué bien cocinas!", accept: [] },
+    { en: "Which ones do you prefer? (to a friend)", es: "¿Cuáles prefieres?", accept: [] }
+  ],
   personal: {
     prompt: "Ask a new friend two questions, one with *¿Cuál es…?* and one with *¿Qué…?* before a thing. Then react to an answer with *¡Qué…!*",
     constraints: [
@@ -3077,6 +3483,12 @@ window.SCRIPTS_A2 = {
     { en: "That's true.", es: "Eso es verdad.", accept: ["Eso es cierto."] },
     { en: "No, not that one. (a shirt)", es: "No, esa no.", accept: [] }
   ],
+  translate: [
+    { en: "This week is our fiftieth wedding anniversary.", es: "Esta semana cumplimos cincuenta años de casados.", accept: [] },
+    { en: "That day I didn't go to work.", es: "Ese día no fui a trabajar.", accept: ["[Ese|Aquel] día no fui a trabajar."] },
+    { en: "Is this your book? No, not that one. Mine is the blue one. (to a friend)", es: "¿Este es tu libro? No, ese no. El mío es el azul.", accept: ["¿Es este tu libro? No, ese no. El mío es el azul."] },
+    { en: "This year we're not going to go to the beach.", es: "Este año no vamos a ir a la playa.", accept: [] }
+  ],
   personal: {
     prompt: "Write two lines: something you did this week, and something about a time long ago, with *ese día* or *en esa época*.",
     constraints: [
@@ -3130,6 +3542,12 @@ window.SCRIPTS_A2 = {
     { en: "I bought a book and read it.", es: "Compré un libro y lo leí.", accept: [] },
     { en: "My sister wanted it, so I gave it to her. (the book)", es: "Mi hermana lo quería, así que se lo di.", accept: ["Mi hermana lo quería, [entonces|por eso] se lo di."] },
     { en: "The houses were small and white.", es: "Las casas eran pequeñas y blancas.", accept: [] }
+  ],
+  translate: [
+    { en: "When I arrived, Laura was in the kitchen.", es: "Cuando llegué, Laura estaba en la cocina.", accept: [] },
+    { en: "The keys? I left them on the table.", es: "¿Las llaves? Las dejé en la mesa.", accept: [] },
+    { en: "I went to a bookshop, bought a book and read it in two days.", es: "Fui a una librería, compré un libro y lo leí en dos días.", accept: [] },
+    { en: "Then I saw Laura and invited her for a coffee.", es: "Después vi a Laura y la invité a un café.", accept: ["[Después|Luego] vi a Laura y la invité a (tomar) un café."] }
   ],
   personal: {
     prompt: "Write three lines about a day out: set the scene, say what happened, and use *lo* or *la* so a thing isn't named twice. Then read it back three times, once for each pass.",

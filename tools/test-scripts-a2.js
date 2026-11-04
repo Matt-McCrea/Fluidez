@@ -8,7 +8,17 @@
  * sentence whose model passes its own checklist); no dashes, no vosotros, no
  * grammar jargon on screen. Two A2 additions: no Peninsular words in the Spanish,
  * and no Spain-style recent past (*ha llegado hace…*, *hoy he…*) where Latin America
- * uses the event past. */
+ * uses the event past.
+ * The translation blocks the upper bands carry, at A2 too: every script has
+ * translate, exactly 4 more typed items, each the exact English of its Spanish
+ * (no slash, no instruction, a question in both languages or neither), its
+ * Spanish and every form its accept patterns expand to passing the matcher,
+ * none repeating a your-turn item; every function lesson (fn-) has register,
+ * 3 lines of es, en and a plain one-line when. And no Spanish string uses a
+ * form the course has not built by that lesson's day: no future, conditional
+ * or subjunctive, except the set phrases the scripts teach whole (dated from
+ * the lesson that teaches each); no command before gr-imperativo-forma-a2; no
+ * estar plus -ando before gr-gerundio-a2; no había plus a participle at all. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -19,7 +29,7 @@ function load(rel) { (0, eval)(fs.readFileSync(path.join(ROOT, rel), 'utf8')); }
 window.LIB = globalThis.LIB;
 load('data/scripts/a2.js');
 
-const M = window.LIB.match, C = window.Checker, SC = window.SCRIPTS_A2;
+const M = window.LIB.match, C = window.Checker, E = window.ENGINE, SC = window.SCRIPTS_A2;
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
@@ -52,9 +62,12 @@ function* strs(id, s) {
     yield S(`readAndPick[${i}].q`, r.q, false); yield S(`readAndPick[${i}].es`, r.es, true); yield S(`readAndPick[${i}].why`, r.why, false);
     for (const [k, o] of (r.options || []).entries()) yield S(`readAndPick[${i}].options[${k}]`, o, false);
   }
-  for (const [i, t] of (s.yourTurn || []).entries()) {
-    yield S(`yourTurn[${i}].en`, t.en, false); yield S(`yourTurn[${i}].es`, t.es, true);
-    for (const [k, a] of (t.accept || []).entries()) yield S(`yourTurn[${i}].accept[${k}]`, a, true);
+  for (const blk of ['yourTurn', 'translate']) for (const [i, t] of (s[blk] || []).entries()) {
+    yield S(`${blk}[${i}].en`, t.en, false); yield S(`${blk}[${i}].es`, t.es, true);
+    for (const [k, a] of (t.accept || []).entries()) yield S(`${blk}[${i}].accept[${k}]`, a, true);
+  }
+  for (const [i, r] of (s.register || []).entries()) {
+    yield S(`register[${i}].es`, r.es, true); yield S(`register[${i}].en`, r.en, false); yield S(`register[${i}].when`, r.when, false);
   }
   if (s.personal) {
     yield S('personal.prompt', s.personal.prompt, false); yield S('personal.model', s.personal.model, true);
@@ -63,7 +76,72 @@ function* strs(id, s) {
   for (const [i, p] of (s.pitfalls || []).entries()) yield S(`pitfalls[${i}]`, p, false);
 }
 
-let rpTotal = 0, rpLongest = 0, rpShortest = 0, rpChance = 0, ruleMax = 0;
+// one typed item: the matcher must take the expected Spanish and every form its accept patterns expand to
+const INSTRUCTION = /^(say|tell|ask|type|write|answer|make|pick|give|now|reply|use|translate|order)\b/i;
+function typed(at, t, exact) {
+  ok(t.en && t.es && Array.isArray(t.accept), at + ': needs en, es and accept[]');
+  if (!t.en || !t.es) return;
+  if (exact) {
+    // translate items are the exact English of their Spanish: one translation, not a menu or an instruction
+    ok(!/\//.test(t.en), at + ': a slash in the English (one translation, not a menu)');
+    ok(!INSTRUCTION.test(t.en.trim()), at + ': the English is an instruction, not the translation: "' + t.en.slice(0, 40) + '"');
+    ok(/\?/.test(t.es) === /\?/.test(t.en.replace(/\([^)]*\)/g, '')), at + ': a question in one language and not the other');
+    ok(!/[()[\]|/]/.test(t.es), at + ': brackets or a slash in the expected Spanish (patterns belong in accept)');
+  }
+  const item = { es: t.es, en: t.en, accept: t.accept || [] };
+  const r = M.matchTranslation(t.es, item, { accents: 'lenient' });
+  ok(r.pass, at + ': the expected Spanish fails the matcher: "' + t.es + '" (' + (r.hint || '') + ')');
+  (t.accept || []).forEach((a) => {
+    let xs = [];
+    try { xs = M.expandAccept(a); } catch (e) { ok(false, at + ': accept pattern does not parse: ' + a); }
+    if (exact) ok(xs.length < 64, at + ': accept pattern expands past the 64 cap: ' + a);
+    xs.forEach((x) => { const rx = M.matchTranslation(x, item, { accents: 'lenient' }); ok(rx.pass, at + ': accepted form fails the matcher: "' + x + '"'); });
+  });
+  ok(!M.matchTranslation('', item).pass, at + ': an empty answer passes');
+  ok(!M.matchTranslation('zzz qqq', item).pass, at + ': nonsense passes');
+  // the attempt machine gives one retry, then reveals
+  const st = M.startAttempt(item, { accents: 'lenient' });
+  const a1 = M.submitAttempt(st, 'zzz'); const a2 = M.submitAttempt(a1.state, 'zzz');
+  ok(a1.status === 'retry' && a2.status === 'revealed', at + ': one retry, then the answer');
+}
+
+// forms the course has not built by a lesson's day (read from the course order, as tools/test-scripts-b1.js does)
+const DAY = {};
+window.COURSE_DAYS.forEach((d, i) => { if (d.lesson && DAY[d.lesson] == null) DAY[d.lesson] = i; });
+const LATER = { futuro: 'future', condicional: 'conditional', presubj: 'subjunctive', impsubj: 'past subjunctive' };
+// set phrases the scripts teach whole, each legal from the lesson that teaches it (A1 teaches No te preocupes)
+const CHUNKS = [
+  { re: /\bno te preocupes\b/gi, from: want[0] },
+  { re: /\bpodr[ií]as?\b/gi, from: 'fn-atenuar-orden-a2' },
+  { re: /\bser[aá] que\b/gi, from: 'task-a2-pedir' },
+  { re: /\bque te mejores\b/gi, from: 'fn-preguntar-estado-animo-a2' },
+  { re: /\b(gustar[ií]a|encantar[ií]a)\b/gi, from: 'fn-preguntar-deseos-a2' },
+  { re: /\bno me digas\b/gi, from: 'task-a2-animo' },
+  { re: /\bquieres que te ayude\b/gi, from: 'fn-aconsejar-a2' }
+];
+// words spelled like a later form that are something else here: fuera (outside), seria (serious), mejores (better), este, vista, caliente
+const NOT_A_VERB = /^(fuera|seria|serias|mejores|este|vista|caliente)$/i;
+const PROGRESSIVE = /\b(estoy|estás|está|estamos|están|estaba|estabas|estábamos|estaban|estuve|estuvo|estuvimos|estuvieron)\s+(?!cuando\b)([a-záéíóúñ]+(ando|iendo|yendo)|[a-záéíóúñ]+(ándo|iéndo)[a-záéíóúñ]+)\b/i;
+const PLUPERFECT = /\bhab(ía|ías|íamos|ían)\s+([a-záéíóúñ]*(ado|ido|ído)|hecho|dicho|visto|escrito|puesto|vuelto|roto|abierto)\b/i;
+function laterForms(es, day) {
+  let txt = plain(es);
+  CHUNKS.forEach((c) => { if (day >= DAY[c.from]) txt = txt.replace(c.re, ' '); });
+  const out = [];
+  for (const tok of E.tokenize(txt)) {
+    if (NOT_A_VERB.test(tok)) continue;
+    const an = E.analyzeToken(tok) || [];
+    if (!an.length) continue;
+    if (an.every((a) => LATER[a.tense])) out.push(tok + ' (' + LATER[an[0].tense] + ')');
+    else if (day < DAY['gr-imperativo-forma-a2'] && an.some((a) => a.tense === 'imperativo') && an.every((a) => a.tense === 'imperativo' || a.tense === 'presubj')) out.push(tok + ' (a command)');
+  }
+  if (day < DAY['gr-gerundio-a2'] && PROGRESSIVE.test(txt)) out.push(txt.match(PROGRESSIVE)[0] + ' (estar plus -ando)');
+  if (PLUPERFECT.test(txt)) out.push(txt.match(PLUPERFECT)[0] + ' (había plus a participle, a B1 form)');
+  return out;
+}
+ok(DAY['gr-imperativo-forma-a2'] != null && DAY['gr-gerundio-a2'] != null, 'the course has no imperative or gerund lesson to date the forms by');
+CHUNKS.forEach((c) => ok(DAY[c.from] != null, 'the set phrase ' + c.re + ' is dated from ' + c.from + ', which is not on the path'));
+
+let rpTotal = 0, rpLongest = 0, rpShortest = 0, rpChance = 0, ruleMax = 0, trTotal = 0, regTotal = 0;
 const share = (opts, ans, pick) => { const m = pick(...opts.map((o) => o.length)); const tied = opts.filter((o) => o.length === m).length; return opts[ans].length === m ? 1 / tied : 0; };
 
 Object.keys(SC).forEach((id) => {
@@ -93,23 +171,26 @@ Object.keys(SC).forEach((id) => {
 
   const yt = s.yourTurn || [];
   ok(yt.length >= 3 && yt.length <= 5, id + ': 3 to 5 your-turn items, has ' + yt.length);
-  yt.forEach((t, i) => {
-    const at = id + '.yourTurn[' + i + ']';
-    ok(t.en && t.es && Array.isArray(t.accept), at + ': needs en, es and accept[]');
-    const item = { es: t.es, en: t.en, accept: t.accept || [] };
-    const r = M.matchTranslation(t.es, item, { accents: 'lenient' });
-    ok(r.pass, at + ': the expected Spanish fails the matcher: "' + t.es + '" (' + (r.hint || '') + ')');
-    (t.accept || []).forEach((a) => {
-      let xs = [];
-      try { xs = M.expandAccept(a); } catch (e) { ok(false, at + ': accept pattern does not parse: ' + a); }
-      xs.forEach((x) => { const rx = M.matchTranslation(x, item, { accents: 'lenient' }); ok(rx.pass, at + ': accepted form fails the matcher: "' + x + '"'); });
-    });
-    ok(!M.matchTranslation('', item).pass, at + ': an empty answer passes');
-    ok(!M.matchTranslation('zzz qqq', item).pass, at + ': nonsense passes');
-    // the attempt machine gives one retry, then reveals
-    let st = M.startAttempt(item, { accents: 'lenient' });
-    const a1 = M.submitAttempt(st, 'zzz'); const a2 = M.submitAttempt(a1.state, 'zzz');
-    ok(a1.status === 'retry' && a2.status === 'revealed', at + ': one retry, then the answer');
+  yt.forEach((t, i) => typed(id + '.yourTurn[' + i + ']', t, false));
+
+  const tr = s.translate || [];
+  ok(tr.length === 4, id + ': 4 translate items, has ' + tr.length);
+  tr.forEach((t, i) => { typed(id + '.translate[' + i + ']', t, true); trTotal++; });
+  const ytEs = new Set(yt.map((t) => t.es));
+  tr.forEach((t, i) => ok(!ytEs.has(t.es), id + '.translate[' + i + ']: repeats a your-turn item'));
+  ok(new Set(tr.map((t) => t.es)).size === tr.length, id + ': translate items repeat');
+
+  const rg = s.register || [];
+  if (/^fn-/.test(id)) ok(rg.length === 3, id + ': a function lesson needs 3 register lines, has ' + rg.length);
+  else ok(rg.length === 0 || (rg.length >= 3 && rg.length <= 5), id + ': 3 to 5 register lines, or none, has ' + rg.length);
+  ok(new Set(rg.map((r) => r.es)).size === rg.length, id + ': register lines repeat');
+  rg.forEach((r, i) => {
+    const at = id + '.register[' + i + ']';
+    ok(r.es && r.en && r.when, at + ': needs es, en and when');
+    ok(r.when && words(r.when) <= 12 && !/[.;]\s*\S/.test(r.when.trim()), at + ': when is one plain line (12 words at most)');
+    ok(!/\*/.test((r.es || '') + (r.en || '')), at + ': the view prints es and en as they are, so no *stars*');
+    ok(lines(r.es || '') === 1 && lines(r.en || '') === 1, at + ': one line of es and one of en');
+    regTotal++;
   });
 
   const p = s.personal || {};
@@ -133,6 +214,8 @@ Object.keys(SC).forEach((id) => {
       ok(!VOSOTROS_VERB.test(plain(x.v).replace(/\b(país|maíz|raíz|oís)\b/gi, '')), x.p + ': a vosotros verb form: "' + x.v.slice(0, 60) + '"');
       ok(!SPAIN_WORD.test(plain(x.v)), x.p + ': a Peninsular word: "' + (plain(x.v).match(SPAIN_WORD) || ['', ''])[2] + '"');
       ok(!SPAIN_PERFECTO.test(plain(x.v)), x.p + ': Spain-style recent past, use the event past: "' + x.v.slice(0, 60) + '"');
+      const later = laterForms(x.v, DAY[id]);
+      ok(!later.length, x.p + ': a form the course builds later: ' + later.join(', '));
     } else {
       ok(!JARGON.test(plain(x.v)), x.p + ': grammar jargon on screen: "' + (plain(x.v).match(JARGON) || [''])[0] + '"');
       ok(!/vosotr|vuestr/i.test(x.v), x.p + ': names vosotros');
@@ -209,12 +292,30 @@ Object.keys(SC).forEach((id) => {
   ok(!M.matchTranslation(wrong, { es: t.es, en: t.en, accept: t.accept }, { accents: 'lenient' }).pass, id + '.yourTurn[' + i + ']: the slip "' + wrong + '" is accepted');
 });
 
+// the translate accepts take the real alternatives and not the slip each lesson warns about
+[['imperfecto', 1, 'Mi papá cocinó los sábados.'], ['nt-localizacion-tiempo-a2', 1, 'Estudio español hace dos meses.'], ['nt-frecuencia-a2', 2, 'Ana va a la piscina dos vez a la semana.'], ['task-a2-antes', 1, 'Tuve un perro que se llamó Toco.'],
+ ['preterite-imperfect', 1, 'Llovía toda la noche.'], ['preterite-imperfect', 2, 'Ana habló por teléfono cuando entraba Diego.'], ['gn-narrar-anecdota-a2', 1, 'Fue domingo y estuvimos en el parque.'], ['dc-estructuradores-a2', 2, 'Diego cocina nunca.'], ['task-a2-anecdota', 1, 'Era tarde, llovía y salíamos.'],
+ ['gr-objeto-indirecto-a2', 2, 'Di mi número a los vecinos.'], ['gr-pronombres-atonos-a2', 2, 'Le lo expliqué dos veces.'], ['gr-pronombres-tonicos-a2', 3, 'Diego va con mí.'], ['gr-posesivos-tonicos-a2', 0, 'No, mía es la roja.'], ['task-a2-pronombres', 3, 'Le di el libro a Ana. Le lo di el lunes.'],
+ ['gr-imperativo-forma-a2', 1, 'Espera aquí, por favor.'], ['fn-atenuar-orden-a2', 0, '¿Me trae un vaso de agua?'], ['dc-atenuacion-1apersona-a2', 3, 'Aquí no se puede aparcar.'], ['gn-instrucciones-a2', 1, 'Después, escribe su número y espere el mensaje.'], ['task-a2-pedir', 0, '¿Podrías ayudarme un momento?'],
+ ['fn-preguntar-estado-animo-a2', 1, 'Tengo sueño y me duele los pies.'], ['fn-felicitar-a2', 0, '¡Felicitación por el bebé!'], ['fn-preguntar-deseos-a2', 2, '¿Te gustaría venir a la finca el sábado?'], ['fn-acuerdo-a2', 3, 'Los zapatos son demasiados caros.'], ['task-a2-animo', 1, 'Mi papá es en el hospital.'],
+ ['gr-comparativos-a2', 1, 'Mi hermano es menos serio que mí.'], ['gr-comparativos-a2', 2, 'No tengo tan tiempo como antes.'], ['nt-cualidad-material-a2', 2, 'Laura cambió su trabajo en enero.'], ['gn-describir-persona-a2', 1, 'Diego se parece mucho su papá.'], ['gn-describir-objeto-a2', 3, 'Sirve para calienta la comida.'], ['task-a2-comparar', 2, 'El de Chapinero es más caro de el del centro.'],
+ ['gn-conversacion-transaccional-a2', 2, 'Me queda pequeño.'], ['fn-responder-telefono-a2', 1, 'No está. ¿Quieres dejarle un mensaje?'], ['fn-pedir-informacion-a2', 1, '¿De quién es estas llaves?'], ['fn-preguntar-preferencias-a2', 1, 'Me gusta más caminar más que ir en carro.'], ['nt-necesidad-obligacion-a2', 2, 'Nos hace falta dos sillas.'], ['fn-preguntar-conocimiento-a2', 2, 'Sé bastante bien Medellín.'], ['task-a2-gestion', 3, 'Quería cambiar estos zapatos. Es que me queda grandes.'],
+ ['gr-causales-a2', 0, 'Llegamos tarde por había mucho trancón.'], ['por-para', 2, 'Son treinta mil para persona.'], ['por-para', 3, 'Estudio español por trabajar en Bogotá.'], ['gr-condicionales-a2', 0, 'Si llover, no vamos a la finca.'], ['fn-aconsejar-a2', 1, 'Señora, ¿te ayudo con las bolsas?'], ['fn-proponer-sugerir-a2', 2, '¿Vamos bailar el sábado?'], ['task-a2-razones', 3, 'Estudio para me gusta.'],
+ ['nt-posicion-relativa-distancia-a2', 1, 'Alrededor el edificio hay tiendas y una panadería.'], ['nt-movimiento-estabilidad-a2', 1, '¿Traigo algo?'], ['gn-describir-lugar-a2', 1, 'Cuando llegué, el barrio fue muy tranquilo.'], ['fn-dirigirse-a2', 3, 'Oiga, ¿me pasa la sal?'], ['task-a2-sitio', 0, 'Justo al lado de la panadería está una droguería.'],
+ ['gr-gerundio-a2', 0, 'Diego es durmiendo.'], ['gr-adverbios-circunstanciales-a2', 1, 'Antes salir, cierra la ventana.'], ['gn-generos-escritos-a2', 0, 'Se arrienda un piso en Chapinero.'], ['gn-presentacion-publica-a2', 1, 'En esta foto puedes ver el centro.'], ['task-a2-escribir', 3, '¿Me puedes confirmar la hora, por favor?'],
+ ['gr-presente-irregular-a2', 2, 'Conoco Cali, pero no conoco la costa.'], ['gr-articulo-definido-distribucion-a2', 0, 'La agua fría está en la nevera, al fondo.'], ['gr-cuantificadores-a2', 1, 'No, nada más. Bueno, una otra arepa también.'], ['gr-interrogativos-exclamativos-a2', 0, '¿Qué es su dirección?'], ['gr-demostrativos-valores-a2', 1, 'Este día no fui a trabajar.'], ['task-a2-repaso', 1, '¿Las llaves? Les dejé en la mesa.']
+].forEach(([id, i, wrong]) => {
+  const t = SC[id] && (SC[id].translate || [])[i];
+  if (!t) { ok(false, id + '.translate[' + i + '] missing'); return; }
+  ok(!M.matchTranslation(wrong, { es: t.es, en: t.en, accept: t.accept }, { accents: 'lenient' }).pass, id + '.translate[' + i + ']: the slip "' + wrong + '" is accepted');
+});
+
 // option length across the file: the gate's rule, a third at most
 ok(rpTotal >= 240, 'expected at least 240 read-and-pick items, found ' + rpTotal);
 ok(rpLongest / rpTotal <= 1 / 3, 'the right option is the longest ' + Math.round(100 * rpLongest / rpTotal) + '% of the time (a third at most)');
 ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the shortest ' + Math.round(100 * rpShortest / rpTotal) + '% of the time (chance ' + Math.round(100 * rpChance / rpTotal) + '%)');
 
-console.log('scripts: ' + Object.keys(SC).length + ', read-and-pick ' + rpTotal + ' (right is longest ' + Math.round(100 * rpLongest / rpTotal) + '%, shortest ' + Math.round(100 * rpShortest / rpTotal) + '%), longest rule ' + ruleMax + ' words');
+console.log('scripts: ' + Object.keys(SC).length + ', read-and-pick ' + rpTotal + ' (right is longest ' + Math.round(100 * rpLongest / rpTotal) + '%, shortest ' + Math.round(100 * rpShortest / rpTotal) + '%), translate ' + trTotal + ', register ' + regTotal + ' on ' + Object.keys(SC).filter((k) => /^fn-/.test(k)).length + ' function lessons, longest rule ' + ruleMax + ' words');
 console.log('Checks run: ' + checks);
 if (errors) { console.error(errors + ' problem(s).'); process.exit(1); }
 console.log('Scripts OK.');
