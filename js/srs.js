@@ -1,58 +1,64 @@
 /* ============================================================================
- * SRS — a small spaced-repetition scheduler (Leitner-with-easing), extended
- * with graduation, leech handling, a hard session cap and per-(item,aspect)
- * ids so review stays useful as the corpus grows instead of being swallowed
- * by "everything due".
+ * SRS — the spaced-repetition scheduler. Every item keeps an FSRS card
+ * (window.LIB.fsrs, stored as `fs`), graded from how the learner actually
+ * answered: right or wrong, hint used, speed against that item's own typical
+ * speed, "I don't know". Nothing graduates out of retrieval: a card whose
+ * stability passes 180 days is simply rarely due.
  *
  * Generic and content-agnostic: it schedules any item by a stable string id.
- * Views decide what an item *is* (a vocab card, a conjugation, a grammar recall
- * prompt) and enrol it the first time it's taught/seen. Review then surfaces
- * exactly the items that are due, protecting prior learning first — the
- * highest-leverage daily activity.
+ * Views decide what an item *is* and enrol it the first time it is taught.
  *
- * Schedule per item: { box, due(dayNumber), reps, lapses, consecCorrect,
- * consecMiss, dominado, leech }
- *   grade good  → advance a box; interval = INTERVALS[box]; due = today+interval
- *   grade again → drop to box 0 (or a reduced box if it had graduated)
- * Day numbers are integer days since epoch (local), so "due" is date-based.
+ * Record per item: { fs (FSRS card JSON, due and last_review in epoch ms),
+ * due (day number, derived from fs.due, never earlier than tomorrow after a
+ * review), box (0..9, DERIVED from stability by the old interval table, for
+ * the progress chart only), reps, lapses, consecCorrect, consecMiss, leech,
+ * passed, lat (moving average of this item's right-answer latency, ms),
+ * last (day) }. Day numbers are integer local days since the epoch.
  *
- * ---- graduation ----
- * An item that reaches box 8 (120-day interval) with 4 consecutive correct
- * grades becomes `dominado` and leaves the normal due pool entirely — it's
- * the single biggest lever against basics crowding the queue as the corpus
- * grows. Graduated items are still sampled, at ~5% of a session's review
- * slots, as spot-checks (same card, same grading); a miss demotes the item
- * back to active life with a reduced interval rather than a full reset.
+ * Meta (retention choice, seconds per card, today's plan, the zero-new
+ * streak) lives in the same store under the reserved key "__meta".
  *
  * ---- leeches ----
- * An item missed 6 times lifetime or 3 times in a row is a leech: repeated
- * failure means the teaching didn't land, not that it needs more testing.
- * Leeches are pulled out of the normal due pool (never auto-surfaced in
- * Repasar) and are only reachable through Puntos débiles / Tus errores,
- * where the existing error log already routes misses. Two grades in a row
- * clears the flag.
+ * Missed 6 times lifetime or 3 times in a row. A leech is not removed: it is
+ * due again 3 days after the miss. Two right answers in a row clear the flag.
+ * "I don't know" is an Again for the schedule but never counts toward either.
  *
  * ---- ids ----
- * Vocab used to be scheduled as a single `v:<es>` id (meaning only). It now
- * tracks meaning and gender-article as separate aspects: `v:<es>:meaning`
- * and (once that aspect is introduced) `v:<es>:gender`. A one-time migration
- * below renames existing `v:<es>` records to `v:<es>:meaning` so no history
- * is lost. Verbs get a new, separate aspect — `vt:<inf>:<tense>` — scheduling
- * conjugation-in-context (previously not scheduled at all); verb *meaning*
- * keeps its existing `vm:<inf>` id. Grammar stays concept-level, unchanged.
+ * Vocab: `v:<es>:meaning` (recognition) and, from A2, `v:<es>:form` (type the
+ * Spanish), enrolled when the meaning card is first passed. Verbs:
+ * `vm:<inf>` meaning and `vt:<inf>:<tense>`. Grammar stays concept-level.
+ *
+ * ---- schema ----
+ * '3' to '4': each record gets fs = fromLeitner(box, last || today), keeping
+ * its stored due day. Records that used to sit outside the due pool
+ * (dominado, leech) are spread over the next weeks instead of all falling due
+ * at once. Without the library bundle the old Leitner rules still run.
  * ========================================================================== */
 window.SRS = (function () {
   var KEY = 'fluidez.srs';
   var SCHEMA_KEY = 'fluidez.srsSchema';
-  var INTERVALS = [0, 1, 2, 4, 8, 16, 32, 64, 120, 180];   // days by box
-  var GRAD_BOX = 8;          // index where the interval first reaches 120 days
-  var GRAD_STREAK = 4;       // consecutive correct required, alongside GRAD_BOX
+  var META = '__meta';
+  var DAY = 86400000;
+  var INTERVALS = [0, 1, 2, 4, 8, 16, 32, 64, 120, 180];   // old box table, now only a display scale
   var LEECH_LIFETIME = 6;
   var LEECH_STREAK = 3;
   var LEECH_RECOVER = 2;     // consecutive correct that clears a leech flag
-  var SPOT_CHECK_RATE = 0.05;
+  var LEECH_DAYS = 3;        // a leech comes back this many days after the miss
+  var DEFAULT_SPC = 10;      // seconds per card until measured
+  var DEFAULT_LATENCY = 6000;
 
-  function today() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000); }
+  // minutes of review per session, and new cards per day, by band
+  var BUDGET_MIN = { A1: 6, A2: 7, B1: 8, B2: 10, C1: 10 };
+  var NEW_TARGET = { A1: 10, A2: 9, B1: 8, B2: 7, C1: 6 };
+  var NEW_FLOOR = 3;
+
+  function fsrs() { return (window.LIB && window.LIB.fsrs) || null; }
+  function nowMs() { return Date.now(); }
+  function today() { return Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / DAY); }
+  function dayOfMs(ms) { return Math.floor((ms - new Date(ms).getTimezoneOffset() * 60000) / DAY); }
+  function midnightMs(day) { return day * DAY + new Date(day * DAY).getTimezoneOffset() * 60000; }
+  function hash(str) { var h = 0; for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0; return Math.abs(h); }
+  function band() { try { return (window.Profile && window.Profile.current && window.Profile.current()) || 'A1'; } catch (e) { return 'A1'; } }
 
   function fillDefaults(it) {
     it = it || {};
@@ -60,44 +66,76 @@ window.SRS = (function () {
       box: it.box || 0, due: it.due != null ? it.due : today(),
       reps: it.reps || 0, lapses: it.lapses || 0,
       consecCorrect: it.consecCorrect || 0, consecMiss: it.consecMiss || 0,
-      dominado: !!it.dominado, leech: !!it.leech
+      leech: !!it.leech, passed: !!it.passed || (it.box || 0) > 0,
+      last: it.last, lat: it.lat, fs: it.fs
     };
   }
 
+  // stability in days to the old ten boxes: the largest box whose interval fits
+  function boxFromCard(c) {
+    if (!c || c.state === 0 || c.last_review === undefined) return 0;
+    var b = 0;
+    for (var i = 0; i < INTERVALS.length; i++) if (INTERVALS[i] <= c.stability) b = i;
+    return b;
+  }
+  function ensureFs(it) {
+    var F = fsrs();
+    if (!F || it.fs) return;
+    it.fs = F.fromLeitner(it.box || 0, it.last != null ? it.last : (it.due != null ? Math.min(it.due, today()) : today()));
+    it.fs.due = midnightMs(it.due != null ? it.due : today());
+  }
+
   // One-time, additive migration, run until the stored schema marker is current:
-  //   v2 — rename the old single vocab id (`v:<es>`) to the meaning-aspect id
-  //        (`v:<es>:meaning`), and backfill the new streak/graduation fields.
-  //   v3 — rename legacy captured-word ids (`cap:<es>`) to the same unified
-  //        vocab id (`v:<es>:meaning`) now that user words merge into VOCAB,
-  //        so a captured word's review history carries over intact.
+  //   v2 — rename the old single vocab id (`v:<es>`) to `v:<es>:meaning`.
+  //   v3 — rename legacy captured-word ids (`cap:<es>`) to the same id.
+  //   v4 — give every record an FSRS card seeded from its Leitner box and last
+  //        review day, keeping the stored due day, and drop `dominado`.
   // If both an old and a renamed id exist, the more-progressed (higher box)
   // record wins so no streak is lost. Every other id shape is untouched.
-  var SCHEMA_CURRENT = '3';
+  var SCHEMA_CURRENT = '4';
   function migrate(s) {
     var done = null;
     try { done = localStorage.getItem(SCHEMA_KEY); } catch (e) {}
     if (done === SCHEMA_CURRENT) return s;
+    var F = fsrs();
+    var t = today();
     var out = {};
     function place(id, rec) {
+      if (id === META) { out[id] = rec; return; }
+      var wasOut = !!(rec && (rec.dominado || rec.leech));
       rec = fillDefaults(rec);
+      if (wasOut && rec.due <= t) {            // used to be outside the due pool: do not release them all at once
+        rec.due = t + (rec.leech ? LEECH_DAYS : 1) + hash(id) % 28;
+      }
       if (!out[id] || (rec.box || 0) > (out[id].box || 0)) out[id] = rec;
     }
     Object.keys(s).forEach(function (id) {
       var newId = id;
       if (/^cap:/.test(id)) newId = 'v:' + id.slice(4) + ':meaning';
-      else if (/^v:/.test(id) && !/:(meaning|gender)$/.test(id)) newId = id + ':meaning';
+      else if (/^v:/.test(id) && !/:(meaning|gender|form)$/.test(id)) newId = id + ':meaning';
       place(newId, s[id]);
     });
+    if (F) {
+      Object.keys(out).forEach(function (id) {
+        if (id === META) return;
+        var it = out[id];
+        if (it.fs) return;
+        var last = it.last != null ? it.last : t;
+        it.fs = F.fromLeitner(it.box || 0, last);
+        it.fs.due = midnightMs(it.due);
+        it.box = boxFromCard(it.fs);
+      });
+    }
+    // without the bundle the records stay Leitner and are upgraded lazily
     save(out);
-    try { localStorage.setItem(SCHEMA_KEY, SCHEMA_CURRENT); } catch (e) {}
+    if (F) { try { localStorage.setItem(SCHEMA_KEY, SCHEMA_CURRENT); } catch (e) {} }
     return out;
   }
 
   /* The parsed state is held in memory. load() used to hit localStorage and
    * JSON.parse on EVERY call, and state()/isEnrolled() call load() — so
    * Hub.reviewPool(), which asks isEnrolled once per recall item across every
-   * lesson, made ~3,000 parses and ~6,000 storage reads per render. That was
-   * fine at 18 lessons and is a ten-second freeze at 690.
+   * lesson, made ~3,000 parses and ~6,000 storage reads per render.
    *
    * The cache is written through by save(), and dropped if another tab changes
    * the store, so it cannot go stale. */
@@ -122,17 +160,32 @@ window.SRS = (function () {
     });
   }
 
-  function state(id) { return load()[id] || null; }
+  function state(id) { return id === META ? null : (load()[id] || null); }
   function isEnrolled(id) { return !!state(id); }
+
+  /* ---- meta: retention, pace, today's plan ------------------------------- */
+  function meta() { var s = load(); return s[META] || {}; }
+  function setMeta(patch) {
+    var s = load(); var m = s[META] || {};
+    Object.keys(patch).forEach(function (k) { m[k] = patch[k]; });
+    s[META] = m; save(s);
+  }
+  function retentionPct() { var r = meta().retention; return r === 85 ? 85 : 90; }
+  function applyRetention() { var F = fsrs(); if (F) F.setRetention(retentionPct() / 100); }
+  function setRetentionPct(p) { setMeta({ retention: p === 85 ? 85 : 90 }); applyRetention(); }
+  function secondsPerCard() { var v = meta().spc; return v > 0 ? v : DEFAULT_SPC; }
 
   /* `delayDays` (optional) enrols the item as due that many days from now
    * instead of today: a card taught today first comes up for review
    * tomorrow, never in the same day's review stage. */
   function enrol(id, delayDays) {
     var s = load();
-    if (!s[id]) {
-      s[id] = fillDefaults();
-      if (delayDays > 0) s[id].due = today() + delayDays;
+    if (id !== META && !s[id]) {
+      var it = fillDefaults();
+      if (delayDays > 0) it.due = today() + delayDays;
+      var F = fsrs();
+      if (F) { it.fs = F.createCard(nowMs()); it.fs.due = midnightMs(it.due); }
+      s[id] = it;
       save(s);
     }
   }
@@ -152,53 +205,105 @@ window.SRS = (function () {
     } catch (e) { /* storage full or blocked: the log is a nicety */ }
   }
 
-  function grade(id, good) {
+  function formId(id) { return /^v:.+:meaning$/.test(id) ? id.replace(/:meaning$/, ':form') : null; }
+
+  /* grade(id, ok, meta): meta = { usedHint, latencyMs, unsure, cardMs }.
+   * The FSRS grade comes from gradeFromAnswer against the item's own typical
+   * latency. Callers that pass no meta get a plain Good or Again. */
+  function grade(id, ok, m) {
+    if (id === META) return;
+    m = m || {};
     var s = load();
     var it = s[id] || fillDefaults();
+    ok = !!ok;
+    var unsure = !!m.unsure;
+    var t = nowMs(), td = today();
     // Only an item that had been reviewed before has a gap; a first answer has none.
     var prevLast = it.reps > 0 ? it.last : null;
     it.reps++;
-    if (good) {
+    var F = fsrs();
+    var right = ok && !unsure;
+    if (right) {
       it.consecCorrect++; it.consecMiss = 0;
-      it.box = Math.min(it.box + 1, INTERVALS.length - 1);
-      if (!it.dominado && it.box >= GRAD_BOX && it.consecCorrect >= GRAD_STREAK) it.dominado = true;
       if (it.leech && it.consecCorrect >= LEECH_RECOVER) it.leech = false;
-    } else {
+    } else if (!unsure) {
       it.lapses++; it.consecMiss++; it.consecCorrect = 0;
-      if (it.dominado) { it.dominado = false; it.box = Math.max(0, it.box - 4); }
-      else { it.box = 0; }
       if (it.lapses >= LEECH_LIFETIME || it.consecMiss >= LEECH_STREAK) it.leech = true;
+    } else {
+      it.consecCorrect = 0;                       // not remembered, but no penalty streak
     }
-    it.due = today() + INTERVALS[it.box];
-    it.last = today();
-    s[id] = it; save(s);
-    logReview(id, good, prevLast);
+    var firstPass = right && !it.passed;
+    if (right) it.passed = true;
+    if (F) {
+      ensureFs(it);
+      var g = F.gradeFromAnswer({ correct: ok, usedHint: !!m.usedHint, latencyMs: m.latencyMs, unsure: unsure,
+                                  typicalLatencyMs: it.lat || DEFAULT_LATENCY });
+      var res = F.review(it.fs, g, t);
+      it.fs = res.card;
+      var dueDay = Math.max(dayOfMs(it.fs.due), td + 1);     // a review always moves a card to tomorrow at the earliest
+      if (it.leech && !right) {
+        dueDay = Math.max(dueDay, td + LEECH_DAYS);
+        it.fs.due = Math.max(it.fs.due, midnightMs(dueDay));
+      }
+      it.due = dueDay;
+      it.box = boxFromCard(it.fs);
+      if (right && isFinite(m.latencyMs) && m.latencyMs > 0) {
+        var lat = Math.min(60000, Math.max(300, m.latencyMs));
+        it.lat = it.lat ? Math.round(it.lat * 0.7 + lat * 0.3) : Math.round(lat);
+      }
+    } else {
+      it.box = right ? Math.min(it.box + 1, INTERVALS.length - 1) : 0;
+      it.due = td + INTERVALS[it.box];
+    }
+    it.last = td;
+    s[id] = it;
+    var cm = m.cardMs != null ? m.cardMs : m.latencyMs;
+    if (isFinite(cm) && cm > 0) {
+      var mm = s[META] || {};
+      var sec = Math.min(60, Math.max(2, cm / 1000));
+      mm.spc = Math.round(((mm.spc > 0 ? mm.spc : DEFAULT_SPC) * 0.9 + sec * 0.1) * 100) / 100;
+      s[META] = mm;
+    }
+    save(s);
+    logReview(id, right, prevLast);
+    // the production card of a word joins once its meaning card has been passed
+    var fid = formId(id);
+    if (firstPass && fid && band() !== 'A1') enrol(fid, 1);
   }
 
-  // Due for normal review — never true for a graduated (spot-checked
-  // separately) or leeched (routed to Puntos débiles) item.
-  function isDue(id) { var it = state(id); return !!it && !it.dominado && !it.leech && it.due <= today(); }
-  function boxOf(id) { var it = state(id); return it ? it.box : 0; }   // 0 = new / fragile
-  function isDominado(id) { var it = state(id); return !!it && it.dominado; }
+  // Due for normal review. A leech is simply due again later, like anything else.
+  function isDue(id) { var it = state(id); return !!it && it.due <= today(); }
+  function boxOf(id) { var it = state(id); return it ? it.box : 0; }   // 0 = new / fragile; derived from stability
+  function isDominado() { return false; }                              // retired: nothing leaves retrieval
   function isLeech(id) { var it = state(id); return !!it && it.leech; }
+  function lapsesOf(id) { var it = state(id); return it ? it.lapses : 0; }
+  function passed(id) { var it = state(id); return !!it && it.passed; }
+  function stabilityOf(id) { var it = state(id); return it && it.fs ? it.fs.stability : 0; }
 
-  function rescheduleJitter(id, s) {
-    var it = s[id]; if (!it) return;
-    it.due = today() + 1 + Math.floor(Math.random() * 3);   // +1..+3 days
-    s[id] = it;
+  // lowest chance of recalling first, then the most overdue
+  function orderDue(list, s) {
+    var F = fsrs(), t = nowMs(), td = today();
+    var keyed = list.map(function (it) {
+      var st = s[it.id];
+      return { it: it, r: F && st.fs ? F.retrievability(st.fs, t) : 0, o: td - st.due, b: st.box };
+    });
+    keyed.sort(function (a, b) {
+      if (a.r !== b.r) return a.r - b.r;
+      if (a.o !== b.o) return b.o - a.o;
+      return a.b - b.b;
+    });
+    return keyed.map(function (k) { return k.it; });
   }
 
   // Build a review batch from a candidate pool.
   //   pool        : [{ id, ... }]   (any objects carrying a stable `id`)
-  //   maxDue      : cap on already-enrolled due items — the hard session cap.
-  //                 When more are due than fit, the highest-priority ones
-  //                 (most overdue, then weakest box) are chosen and the
-  //                 overflow is rescheduled a few days out with jitter,
-  //                 rather than piling into tomorrow's backlog.
+  //   maxDue      : cap on already-enrolled due items for the session. The
+  //                 ones with the lowest retrievability are served first; the
+  //                 rest simply stay due (they are only more overdue tomorrow).
   //   maxNew      : cap on brand-new items to introduce this session
   //   shuffleFresh: shuffle new items (default true). Pass false to introduce
   //                 them in the pool's given order (beginners: easiest-first).
-  // Returns the chosen items (due + graduated spot-checks, then new).
+  // Returns the chosen due items in priority order, then the new ones.
   /* `freshPrefer` (optional) orders the NEW items so ones it likes come first.
    * It cannot be done at the call site: fresh is shuffled here for everyone
    * but the paced beginner, so any order imposed beforehand is thrown away.
@@ -211,30 +316,15 @@ window.SRS = (function () {
    * the paced beginner's rank order intact inside each score tier. */
   function batch(pool, maxDue, maxNew, shuffleFresh, freshPrefer, rng) {
     var s = load();
-    var due = [], fresh = [], grad = [];
+    var due = [], fresh = [];
     pool.forEach(function (it) {
       var st = s[it.id];
-      if (st) {
-        if (st.leech) return;                    // pulled from automatic rotation
-        if (st.dominado) grad.push(it);
-        else if (st.due <= today()) due.push(it);
-      } else fresh.push(it);
+      if (st) { if (st.due <= today()) due.push(it); }
+      else fresh.push(it);
     });
-    due.sort(function (a, b) {
-      var sa = s[a.id], sb = s[b.id];
-      var oa = today() - sa.due, ob = today() - sb.due;
-      if (oa !== ob) return ob - oa;              // most overdue first
-      return sa.box - sb.box;                     // then weakest ease
-    });
+    due = orderDue(due, s);
     var cap = maxDue == null ? due.length : maxDue;
     var chosen = due.slice(0, cap);
-    var overflow = due.slice(cap);
-    if (overflow.length) {
-      overflow.forEach(function (it) { rescheduleJitter(it.id, s); });
-      save(s);
-    }
-    shuffle(grad);
-    var spotChecks = grad.slice(0, Math.max(0, Math.round(cap * SPOT_CHECK_RATE)));
     if (shuffleFresh !== false) shuffle(fresh, rng);
     if (freshPrefer) {
       fresh = fresh.map(function (it, i) { return { it: it, s: Number(freshPrefer(it)) || 0, i: i }; })
@@ -242,23 +332,59 @@ window.SRS = (function () {
                    .map(function (x) { return x.it; });
     }
     var freshChosen = fresh.slice(0, maxNew == null ? 0 : maxNew);
-    return shuffle(chosen.concat(spotChecks)).concat(freshChosen);
+    return chosen.concat(freshChosen);
   }
 
-  // Read-only priority ordering (most overdue, then weakest ease) over a pool,
-  // with no side effects — no jitter reschedule, no state change. Used by the
+  /* ---- the daily plan: budget and throttle --------------------------------
+   * Review is budgeted in minutes, not cards. The learner's own seconds per
+   * card (a moving average of how long cards actually took) turns the due
+   * count into minutes. Within budget, the full new-card target is taught.
+   * Over budget, new cards shrink toward a floor of 3 so the backlog cannot
+   * grow; past twice the budget only 1.5 times the budget is served and still
+   * 3 new. `manualCap` (the Settings number, when the learner set one) is a
+   * ceiling on the due cards only. The plan is fixed for the day once made. */
+  function computePlan(dueN, b, spc, manualCap) {
+    var budget = BUDGET_MIN[b] || BUDGET_MIN.A1, target = NEW_TARGET[b] || NEW_TARGET.A1;
+    var dueMin = dueN * spc / 60;
+    var dueCap, newCount;
+    if (dueMin <= budget) { dueCap = dueN; newCount = target; }
+    else if (dueMin <= 2 * budget) {
+      dueCap = dueN;
+      newCount = Math.max(NEW_FLOOR, Math.min(target, Math.round(target * (2 * budget - dueMin) / budget)));
+    } else {
+      dueCap = Math.max(1, Math.floor(1.5 * budget * 60 / spc));
+      newCount = NEW_FLOOR;
+    }
+    if (manualCap > 0) dueCap = Math.min(dueCap, manualCap);
+    return { band: b, budgetMin: budget, spc: spc, dueN: dueN, dueMin: Math.round(dueMin * 10) / 10,
+             dueCap: dueCap, newCount: newCount, throttled: newCount < target };
+  }
+  function dueIn(pool) {
+    var s = load(), td = today(), n = 0;
+    pool.forEach(function (it) { var st = s[it.id]; if (st && st.due <= td) n++; });
+    return n;
+  }
+  function plan(pool, opts) {
+    opts = opts || {};
+    var m = meta(), td = today();
+    if (!opts.fresh && m.plan && m.plan.day === td && m.plan.band === (opts.band || band())) return m.plan;
+    var p = computePlan(dueIn(pool), opts.band || band(), secondsPerCard(), opts.manualCap);
+    p.day = td;
+    setMeta({ plan: p });
+    return p;
+  }
+  // Called once per session with how many new cards it taught: counts the run of zero-new sessions.
+  function noteNew(n) { setMeta({ zeroStreak: n > 0 ? 0 : (meta().zeroStreak || 0) + 1 }); }
+  function zeroStreak() { return meta().zeroStreak || 0; }
+
+  // Read-only priority ordering over a pool, with no side effects. Used by the
   // on-demand content selectors (Practicar) to pull a SUBSET of due items into
-  // a mixed round without disturbing the real due schedule that the once-daily
-  // Repasar stage (batch(), above) relies on.
+  // a mixed round without disturbing the schedule. Leeches are left to the
+  // weak-spot buckets.
   function duePriority(pool, n) {
     var s = load();
-    var due = pool.filter(function (it) { var st = s[it.id]; return st && !st.leech && !st.dominado && st.due <= today(); });
-    due.sort(function (a, b) {
-      var sa = s[a.id], sb = s[b.id];
-      var oa = today() - sa.due, ob = today() - sb.due;
-      if (oa !== ob) return ob - oa;
-      return sa.box - sb.box;
-    });
+    var due = pool.filter(function (it) { var st = s[it.id]; return st && !st.leech && st.due <= today(); });
+    due = orderDue(due, s);
     return n == null ? due : due.slice(0, n);
   }
 
@@ -270,10 +396,15 @@ window.SRS = (function () {
     return n == null ? fresh : fresh.slice(0, n);
   }
 
+  // A word counts once for each of its two cards, so the hub's pool of meaning
+  // ids reads the production card too.
   function dueCount(pool) {
-    return pool.reduce(function (n, it) { return n + (isDue(it.id) ? 1 : 0); }, 0);
+    return pool.reduce(function (n, it) {
+      var f = formId(it.id);
+      return n + (isDue(it.id) ? 1 : 0) + (f && isDue(f) ? 1 : 0);
+    }, 0);
   }
-  function enrolledCount() { return Object.keys(load()).length; }
+  function enrolledCount() { return Object.keys(load()).filter(function (k) { return k !== META; }).length; }
 
   function shuffle(a, rng) {
     rng = rng || Math.random;
@@ -281,10 +412,17 @@ window.SRS = (function () {
     return a;
   }
 
+  // retention is applied as soon as the store is readable
+  try { load(); applyRetention(); } catch (e) {}
+
   return {
     enrol: enrol, grade: grade, reviewLogKey: LOG_KEY, isDue: isDue, isEnrolled: isEnrolled, boxOf: boxOf,
-    isDominado: isDominado, isLeech: isLeech,
+    isDominado: isDominado, isLeech: isLeech, lapsesOf: lapsesOf, passed: passed, stabilityOf: stabilityOf,
     batch: batch, duePriority: duePriority, freshItems: freshItems,
-    dueCount: dueCount, enrolledCount: enrolledCount, today: today
+    dueCount: dueCount, enrolledCount: enrolledCount, today: today,
+    plan: plan, computePlan: computePlan, noteNew: noteNew, zeroStreak: zeroStreak, secondsPerCard: secondsPerCard,
+    retentionPct: retentionPct, setRetentionPct: setRetentionPct, formId: formId,
+    BUDGET_MIN: BUDGET_MIN, NEW_TARGET: NEW_TARGET, NEW_FLOOR: NEW_FLOOR,
+    _reset: function () { _cache = null; applyRetention(); }
   };
 })();

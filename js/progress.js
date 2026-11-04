@@ -10,7 +10,7 @@ window.Progress = (function () {
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
   function loadSrs() { try { return JSON.parse(localStorage.getItem('fluidez.srs')) || {}; } catch (e) { return {}; } }
-  var INTERVAL_LABELS = ['new', '1d', '2d', '4d', '8d', '16d', '32d', '64d'];
+  var INTERVAL_LABELS = ['new', '1d', '2d', '4d', '8d', '16d', '32d', '64d+'];
 
   function dayNumOf(d) { return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000); }
 
@@ -125,8 +125,8 @@ window.Progress = (function () {
     wrap.appendChild(UI.el('h1', null, UI.t('Progreso', 'Progress')));
 
     // ---- stat tiles ----
-    var ids = Object.keys(srs);
-    var wordsKnown = ids.filter(function (k) { return /^(v:|cap:)/.test(k); }).length;
+    var ids = Object.keys(srs).filter(function (k) { return k.indexOf('__') !== 0; });   // '__meta' holds settings, not a card
+    var wordsKnown = ids.filter(function (k) { return /^(v:|cap:)/.test(k) && !/:form$/.test(k); }).length;
     var due = window.Hub ? S.dueCount(window.Hub.reviewPool()) : 0;
     var tiles = UI.el('div', 'stat-row');
     /* Days practised in the last 30, not a consecutive streak — see
@@ -357,7 +357,8 @@ window.Progress = (function () {
     rd.appendChild(rlist); wrap.appendChild(rd);
 
 
-    // ---- SRS box distribution (single-hue magnitude bars) ----
+    // ---- SRS box distribution (single-hue magnitude bars). A card's box is
+    // read off its FSRS stability by the old interval table; 64 days and up share the last bar. ----
     wrap.appendChild(UI.el('h3', null, 'How well you remember'));
     var boxes = [0, 0, 0, 0, 0, 0, 0, 0];
     ids.forEach(function (k) { var b = srs[k].box || 0; boxes[Math.min(b, 7)]++; });

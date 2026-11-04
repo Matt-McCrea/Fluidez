@@ -36,6 +36,13 @@ window.StageReview = (function () {
       if (!P.wordAllowed(w)) return;                     // your own words are never gated out
       items.push({ id: 'v:' + w.es + ':meaning', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
                    cat: w.cat, theme: w.theme || null, rank: P.catRank(w.cat), idx: idx });
+      /* From A2 a word is two cards: the meaning (recognition) and the form
+       * (type the Spanish). The form card exists once the meaning has been
+       * passed; it is never drawn as a new word. */
+      if (P.current() !== 'A1') {
+        items.push({ id: 'v:' + w.es + ':form', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
+                     form: true, enrolledOnly: true });
+      }
     });
     (window.IDIOMS || []).forEach(function (x) {
       items.push({ id: 'i:' + x.es, es: x.es, en: x.en, lit: x.lit || null, kind: 'idiom' });
@@ -154,10 +161,38 @@ window.StageReview = (function () {
     }
     if (card.fixed) return { front: card.front, back: card.back, mode: 'type', toSpanish: true, hint: card.hint || null };
     var d = pr.reviewDirection;
+    if (card.form) d = 'en2es';
+    // from B1 typed recall is the default: the meaning card is "type the English" (graded with the
+    // meaning alternatives), and the form card types the Spanish. A1 and A2 keep their own direction.
+    else if (card.kind === 'vocab' && /^B[12]$|^C/.test(P.current())) d = 'es2en-type';
     if (d === 'graduated') d = (S.boxOf(card.id) <= 1) ? 'es2en' : 'en2es';
+    if (d === 'es2en-type') return { front: card.es, back: card.en, mode: 'type', toSpanish: false, hint: card.hint || null };
     if (d === 'es2en') return { front: card.es, back: card.en, mode: 'choice', toSpanish: false, hint: card.hint || null };
     return { front: card.en, back: card.es, mode: 'type', toSpanish: true,
       hint: card.kind === 'idiom' && card.lit ? 'lit: ' + card.lit : (card.hint || null) };
+  }
+
+  // what Repasar may ask: cards the learner has already met
+  function reviewable(items) {
+    return items.filter(function (it) {
+      if (it.enrolledOnly) return S.isEnrolled(it.id);
+      if (it.kind === 'vocab' || it.kind === 'idiom') return S.isEnrolled(it.id);
+      return true;
+    });
+  }
+  // the Settings number is a ceiling on due cards, and only when the learner set one
+  function manualCap() {
+    try { var o = JSON.parse(localStorage.getItem('fluidez.caps')) || {}; var v = o[P.current()]; return v > 0 ? v : 0; }
+    catch (e) { return 0; }
+  }
+  /* Today's budget: how many due cards to serve and how many new to teach,
+   * from the learner's own seconds per card (see SRS.plan). Cached on ctx and,
+   * per day, in the SRS meta, so Repasar and Aprender agree. */
+  function planFor(ctx) {
+    if (ctx && ctx._plan) return ctx._plan;
+    var pl = S.plan(reviewable(pool()), { manualCap: manualCap() });
+    if (ctx) ctx._plan = pl;
+    return pl;
   }
 
   /* The day's NEW vocabulary and idioms, for the Learn stage to teach.
@@ -172,11 +207,15 @@ window.StageReview = (function () {
     if (ctx && ctx._newToday) return ctx._newToday;
     var pr = P.params();
     var out = [];
-    if (!(ctx && ctx.mode === 'rapido')) {
+    var count = planFor(ctx).newCount;
+    /* A quick review teaches nothing new, but never two sessions in a row
+     * without any new word: the third gets the floor. */
+    if (ctx && ctx.mode === 'rapido' && S.zeroStreak() < 2) count = 0;
+    if (count > 0) {
       var skip = {};
       if (ctx && ctx.focus && ctx.focus.type === 'vocab') (ctx.focus.words || []).forEach(function (w) { skip['v:' + w + ':meaning'] = 1; });
       var cands = pool().filter(function (it) {
-        return (it.kind === 'vocab' || it.kind === 'idiom') && !S.isEnrolled(it.id) && !skip[it.id];
+        return (it.kind === 'vocab' || it.kind === 'idiom') && !it.form && !S.isEnrolled(it.id) && !skip[it.id];
       });
       if (pr.orderedVocab) {
         cands.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
@@ -187,8 +226,9 @@ window.StageReview = (function () {
       var prefer = (px || fTheme) ? function (it) {
         return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
       } : null;
-      out = S.batch(cands, 0, pr.newPerDay, !pr.orderedVocab, prefer, ctx && ctx.rng);
+      out = S.batch(cands, 0, count, !pr.orderedVocab, prefer, ctx && ctx.rng);
     }
+    S.noteNew(out.length);
     if (ctx) ctx._newToday = out;
     return out;
   }
@@ -199,19 +239,24 @@ window.StageReview = (function () {
      * is NOT drawn here: the Learn stage teaches it (see newToday, below) and
      * it joins this deck the next day. Only cards the learner has already met
      * can be asked, so nothing here is ever "new". */
-    var all = pool().filter(function (it) {
-      if (it.enrolledOnly) return S.isEnrolled(it.id);
-      if (it.kind === 'vocab' || it.kind === 'idiom') return S.isEnrolled(it.id);
-      return true;
-    });
+    if (P.current() !== 'A1') {                       // words passed before the production card existed
+      var made = 0;
+      (window.VOCAB || []).forEach(function (w) {
+        if (made >= 5) return;
+        var m = 'v:' + w.es + ':meaning', f = S.formId(m);
+        if (S.passed(m) && !S.isEnrolled(f)) { S.enrol(f, 1); made++; }
+      });
+    }
+    var all = reviewable(pool());
     if (pr.orderedVocab) {
       all.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
     }
     /* A "4 min" quick review has to actually be four minutes, so it takes the
      * most-overdue slice rather than the whole daily cap. SRS.batch reschedules
      * whatever it leaves behind, so nothing is lost — it comes round again. */
-    var cap = P.reviewCap();
-    var fresh = pr.newPerDay;
+    var plan = planFor(ctx);
+    var cap = plan.dueCap;
+    var fresh = plan.newCount;
     if (ctx && ctx.mode === 'rapido') { cap = Math.min(cap, 10); fresh = 0; }
     else if (ctx && ctx.mode === 'corto') { cap = Math.min(cap, 15); }
     /* WHICH new words today teaches.
@@ -256,7 +301,7 @@ window.StageReview = (function () {
 
     // recognition distractors: other English glosses of the same kind
     var enByKind = {};
-    all.forEach(function (it) { if (it.en) (enByKind[it.kind] = enByKind[it.kind] || []).push(it.en); });
+    all.forEach(function (it) { if (it.en && !it.form) (enByKind[it.kind] = enByKind[it.kind] || []).push(it.en); });
 
     var queue = batch.slice(), seen = resumed ? (ex.seen || 0) : 0,
         correct = resumed ? (ex.correct || 0) : 0, missed = resumed ? (ex.missed || {}) : {};
@@ -308,15 +353,37 @@ window.StageReview = (function () {
     var cur = null, R = null;    // cur = pool card, R = resolved direction
     saveStep();
 
-    function advance(good) {
+    /* Timing, for the grade and for the budget. `shownAt` is when the card
+     * appeared; `answeredAt` is the moment the learner committed to an answer
+     * (set once). A hint is only counted when the learner asked for one. */
+    var shownAt = 0, answeredAt = 0, hinted = false;
+    function stamp() { if (!answeredAt) answeredAt = Date.now(); }
+
+    /* Learning step inside the session: a card missed for the first time is
+     * not graded yet. It is logged, pushed back at least three cards, and
+     * asked once more; the one FSRS review it gets today is graded when that
+     * second ask is answered. A second miss does not requeue it again.
+     * missed[id] is 1 for a wrong answer and 2 for "I don't know". */
+    function advance(good, opts) {
+      opts = opts || {};
+      stamp();
+      var meta = { usedHint: hinted, latencyMs: Math.max(0, answeredAt - shownAt),
+                   cardMs: Math.max(0, Date.now() - shownAt), unsure: !!opts.unsure };
+      var id = cur.id, prior = missed[id];
       queue.shift(); seen++;
-      if (good) { correct++; S.grade(cur.id, !missed[cur.id]); }
-      else {
-        S.grade(cur.id, false);
-        if (!missed[cur.id] && ErrorLog && cur.kind !== 'error') {
-          ErrorLog.record({ id: cur.id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, topic: topicOf(cur), reviewable: false, es: cur.es || null, en: cur.en || null });
+      if (good) {
+        correct++;
+        if (prior) { meta.unsure = prior === 2; S.grade(id, false, meta); }
+        else S.grade(id, true, meta);
+      } else if (!prior) {
+        if (!opts.unsure && ErrorLog && cur.kind !== 'error') {
+          ErrorLog.record({ id: id, front: R.front, back: R.back, kind: cur.kind, source: 'review', hint: R.hint, topic: topicOf(cur), reviewable: false, es: cur.es || null, en: cur.en || null });
         }
-        missed[cur.id] = 1; queue.push(cur);
+        missed[id] = opts.unsure ? 2 : 1;
+        queue.splice(Math.min(3, queue.length), 0, cur);
+      } else {
+        meta.unsure = prior === 2;
+        S.grade(id, false, meta);
       }
       saveStep();
       show();
@@ -325,6 +392,7 @@ window.StageReview = (function () {
     function show() {
       if (!queue.length) { finish(); return; }
       cur = queue[0]; R = resolve(cur, pr);
+      shownAt = Date.now(); answeredAt = 0; hinted = false;
       kind.textContent = cur.kind; kind.dataset.kind = cur.kind;
       front.textContent = R.front;
       feedback.textContent = ''; feedback.className = 'feedback';
@@ -352,7 +420,7 @@ window.StageReview = (function () {
       opts.forEach(function (opt) {
         var b = UI.el('button', 'mcq-btn', UI.optLabel(opt)); b.type = 'button'; b.dataset.opt = opt;
         b.addEventListener('click', function () {
-          if (answered) return; answered = true;
+          if (answered) return; answered = true; stamp();
           var right = opt === R.back;
           b.classList.add(right ? 'right' : 'wrong');
           if (!right) Array.prototype.forEach.call(grid.children, function (c) { if (c.dataset.opt === R.back) c.classList.add('right'); });
@@ -375,7 +443,9 @@ window.StageReview = (function () {
       body.appendChild(input);
       if (R.toSpanish) body.appendChild(UI.accentBar(function () { return input; }));
       body.appendChild(hintEl);
-      var controls = UI.el('div', 'row-controls'); controls.appendChild(revealB);
+      var hintB = UI.el('button', 'ghost-btn', UI.t('Pista', 'Hint')); hintB.type = 'button';
+      var dontB = UI.el('button', 'ghost-btn', UI.t('No lo sé', 'I don\'t know')); dontB.type = 'button';
+      var controls = UI.el('div', 'row-controls'); controls.appendChild(hintB); controls.appendChild(dontB); controls.appendChild(revealB);
       /* The escape hatch for a question no rule caught. A bad card is bad
        * every time it comes round, so this retires it for good rather than
        * pushing it a few days out — and it costs the learner nothing: the
@@ -398,7 +468,7 @@ window.StageReview = (function () {
       }
       body.appendChild(controls);
       var locked = false, revealed = false;
-      function good() { if (locked) return; locked = true; feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
+      function good() { if (locked) return; locked = true; stamp(); feedback.textContent = '¡Correcto! ' + R.back; feedback.className = 'feedback good'; setTimeout(function () { advance(true); }, 350); }
       /* A two-meaning gloss or a gender bracket accepts any one of its parts.
        *
        * Read off `cur`, the pool card, NOT off `R`: resolve() returns only
@@ -434,17 +504,35 @@ window.StageReview = (function () {
       input.addEventListener('keydown', function (e) {
         if (e.key !== 'Enter') return; e.preventDefault();
         if (locked) return;
-        if (revealed) { advance(false); return; }
+        if (revealed) { advance(false, { unsure: unsure }); return; }
         var chk = C.checkExact(input.value, R.back, mOpts());
         if (chk.pass) { good(); return; }
         feedback.textContent = chk.near ? 'Nearly. Check the accents' : 'Not quite. Try again, or reveal';
         feedback.className = 'feedback bad';
       });
+      var unsure = false;
+      function showAnswer(isUnsure) {
+        stamp(); revealed = true; unsure = !!isUnsure; hinted = true;
+        feedback.textContent = R.back; feedback.className = 'feedback reveal';
+        revealB.textContent = 'Next →'; hintB.disabled = true; dontB.disabled = true; input.focus();
+      }
       revealB.addEventListener('click', function () {
         if (locked) return;
-        if (revealed) { advance(false); return; }
-        revealed = true; feedback.textContent = R.back; feedback.className = 'feedback reveal';
-        revealB.textContent = 'Next →'; input.focus();
+        if (revealed) { advance(false, { unsure: unsure }); return; }
+        showAnswer(false);
+      });
+      // no penalty: the answer is shown, the card is asked again and counts as not yet known
+      dontB.addEventListener('click', function () {
+        if (locked || revealed) return;
+        showAnswer(true);
+      });
+      // the first letters of the answer; right after this the grade is Hard at best
+      hintB.addEventListener('click', function () {
+        if (locked || revealed) return;
+        hinted = true;
+        var a = String(R.back), n = Math.min(2, Math.max(1, Math.floor(a.length / 3)));
+        hintEl.textContent = (R.hint ? R.hint + ' · ' : '') + a.slice(0, n) + a.slice(n).replace(/[^\s]/g, '_');
+        hintB.disabled = true; input.focus();
       });
       input.focus();
     }
