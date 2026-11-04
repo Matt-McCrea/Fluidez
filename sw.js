@@ -19,7 +19,7 @@
  * when offline. The hash in CACHE_VERSION covers those files too (see
  * tools/bump-cache.js), so changing one retires the cached copy.
  * ========================================================================== */
-var CACHE_VERSION = 'cded76fed';
+var CACHE_VERSION = 'c8e27ecd8';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
@@ -103,6 +103,7 @@ var ASSETS = [
   './js/known.js',
   './js/bankitems.js',
   './js/scenes.js',
+  './js/buildit.js',
   './js/contrasts.js',
   './js/session.js',
   './js/onboarding.js',

@@ -1140,3 +1140,48 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .diff-line { font-size:1.1rem; font-weight:600; }
 .diff-del { color:var(--bad); text-decoration:line-through; }
 .diff-ins { color:var(--good); text-decoration:underline; }
+
+/* ---- lesson: teaching scripts (js/views/learn.js runScript) ----------------
+ * Hook, examples, a rule card, then one item at a time. Spanish sits over its
+ * English, line by line, so a dialogue reads as aligned pairs. */
+.script-eyebrow {
+  font-size:.68rem; letter-spacing:.11em; text-transform:uppercase;
+  font-weight:750; color:var(--accent-2); margin:4px 0 8px;
+}
+.script-hook {
+  margin:14px 0 18px; padding:14px 16px;
+  background:var(--panel-2); border:1px solid var(--border); border-radius:12px;
+}
+.hook-line { margin:0 0 12px; font-size:1.04rem; }
+.ex-pairs { display:flex; flex-direction:column; gap:8px; }
+.ex-pair .ex-en { margin-top:1px; }
+.rule-card {
+  margin:20px 0 18px; padding:14px 18px;
+  background:var(--panel); border:1px solid var(--border);
+  border-left:3px solid var(--accent); border-radius:12px;
+  max-width:62ch;
+}
+.rule-line { margin:4px 0; }
+.rule-line i, .hook-line i, .script .pitfalls i, .script .guess-after i, .script .guess-q i,
+.script .constraint i, .script .feedback i { font-style:italic; font-weight:600; }
+.script-es { margin:6px 0 4px; }
+.script-es .ex-es { font-weight:650; }
+.script-score { margin-top:0; }
+.read-more {
+  margin:18px 0; padding:10px 14px;
+  border:1px solid var(--border); border-radius:12px; background:var(--panel-2);
+}
+.read-more > summary { cursor:pointer; font-weight:650; color:var(--accent); padding:4px 0; }
+.read-more[open] > summary { margin-bottom:8px; }
+.read-more-body h3:first-child { margin-top:6px; }
+@media (max-width: 520px) {
+  .script-hook, .rule-card, .read-more { padding:12px 12px; }
+}
+
+/* ---- Build it chain and My script (Produce) ---- */
+.buildit-step { margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border, rgba(127, 127, 127, 0.25)); }
+.buildit-step.settled { opacity: 0.75; }
+.buildit-step.settled:last-child { border-bottom: 0; }
+.script-line { margin: 0 0 1rem; }
+.script-line p { margin: 0 0 0.25rem; }
+.script-link { margin-right: 0.5rem; }

@@ -166,7 +166,8 @@ window.StageProduce = (function () {
   function lines(s) { return String(s || '').replace(/\n/g, '<br>'); }
   function runBankTranslate(body, task, next) {
     var M = window.LIB && window.LIB.match;
-    body.appendChild(UI.el('h2', 'q-text', 'Say it in Spanish:'));
+    body.appendChild(UI.el('h2', 'q-text', task.lead ? 'Say it:' : 'Say it in Spanish:'));
+    if (task.lead) body.appendChild(UI.el('p', 'muted', emph(task.lead)));
     body.appendChild(UI.el('p', 'cloze-text', '“' + lines(task.prompt) + '”'));
     var ta = UI.el('textarea', 'answer-area');
     ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
@@ -323,11 +324,144 @@ window.StageProduce = (function () {
     turn();
   }
 
+
+  /* ---- Build it ----------------------------------------------------------------
+   * On an Introduce day (the day's nodes hold a g: node), one chain of three
+   * steps before the writing tasks (js/buildit.js): a short row the learner can
+   * read, then the same sentence with one change at a time. Each step is typed
+   * and graded like a bank translation (one hint, one retry, then the model).
+   * The next step appears under the settled one. */
+  function emph(s) { return esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>'); }
+  function hasGrammar(nodes) {
+    var yes = false;
+    if (nodes && nodes.forEach) nodes.forEach(function (id) { if (id.charAt(0) === 'g') yes = true; });
+    return yes;
+  }
+  function buildChain(ctx) {
+    var BI = window.BuildIt, Kn = window.Known;
+    if (!BI || !Kn || !window.REQUIRES || !window.GRAPH || ctx.repeat || ctx.di == null || !ctx.nodes || !hasGrammar(ctx.nodes)) return null;
+    var days = window.COURSE_DAYS, entry = days && days[ctx.di];
+    if (!entry || !entry.lesson) return null;
+    var known;
+    try { known = Kn.forLearner(readProg(), ctx.di); } catch (e) { return null; }
+    var key = 'buildit:' + ctx.di + ':' + (ctx.seenDay != null ? ctx.seenDay : ctx.day);
+    var rng = UI.seededRandom ? UI.seededRandom(key) : Math.random;
+    var list;
+    try { list = BI.prompts(known, ctx.nodes, 1, rng, { band: entry.band }); } catch (e) { return null; }
+    return list && list.length ? list[0] : null;
+  }
+  function runBuildIt(body, chain, startAt, save, done) {
+    var at = Math.min(startAt || 0, chain.steps.length), BI = window.BuildIt;
+    function nextStep() {
+      if (at >= chain.steps.length) { done(); return; }
+      var step = chain.steps[at], first = at === 0;
+      var sec = UI.el('div', 'buildit-step');
+      body.appendChild(sec);
+      sec.appendChild(UI.el('div', 'muted small', 'Build it · ' + (at + 1) + ' / ' + chain.steps.length));
+      var lead = BI.lead(step);
+      var cue = { person: 'Now change who does it.', tense: 'Now say it in the past.', neg: 'Now make it negative.', pronoun: 'Now say it without repeating the thing.' }[step.change] || '';
+      var task = { prompt: step.en, es: step.es, accept: step.accept || [], lead: (cue ? cue + ' ' : '') + lead };
+      save(at);
+      runBankTranslate(sec, task, function () {
+        // settle the finished step: keep it on screen, read only
+        sec.classList.add('settled');
+        at++;
+        nextStep();
+      });
+    }
+    nextStep();
+  }
+
+  /* ---- About me --------------------------------------------------------------
+   * At a unit's output day: ONE true sentence about the learner, using the unit's
+   * point. The checker holds it to a constraint built from the unit's node; the
+   * learner may add the English. It joins the script (js/buildit.js) and becomes
+   * a review card. */
+  function aboutDay(ctx) {
+    var entry = sceneDay(ctx), BI = window.BuildIt;
+    if (!entry || !BI || !entry.unit || entry.practice) return null;
+    if (BI.has(entry.unit, ctx.di)) return null;
+    var spec = BI.constraint(ctx.nodes);
+    var u = (window.COURSE_UNITS || {})[entry.unit];
+    return { unit: entry.unit, title: (u && u.title) || '', spec: spec };
+  }
+  function runAboutMe(body, ab, ctx, done) {
+    var BI = window.BuildIt, prompt = 'One true line for your script: say something about you ' + ab.spec.text + '.';
+    if (ab.title) body.appendChild(UI.el('div', 'muted small', 'My script · ' + esc(ab.title)));
+    body.appendChild(UI.el('h2', 'q-text', emph(prompt)));
+    var ta = UI.el('textarea', 'answer-area');
+    ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
+    var en = UI.el('input', 'answer-input wide'); en.type = 'text'; en.placeholder = 'In English (optional)';
+    var list = UI.el('ul', 'constraint-list');
+    var add = UI.el('button', 'primary-btn', 'Add to my script'); add.type = 'button'; add.disabled = true;
+    var skip = UI.el('button', 'ghost-btn', 'Skip'); skip.type = 'button';
+    var row = UI.el('div', 'row-controls'); row.appendChild(add); row.appendChild(skip);
+    body.appendChild(ta); body.appendChild(UI.accentBar(function () { return ta; }));
+    body.appendChild(en); body.appendChild(list); body.appendChild(row);
+    ta.focus();
+    function check() {
+      var res = C.checkWriting({ type: 'scene', constraints: ab.spec.constraints }, ta.value);
+      UI.clear(list);
+      res.results.forEach(function (r) { list.appendChild(UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'), (r.pass ? '✓ ' : '○ ') + r.label)); });
+      add.disabled = !(ta.value.trim() && res.allPass);
+    }
+    ta.addEventListener('input', check);
+    check();
+    add.addEventListener('click', function () {
+      if (add.disabled) return;
+      BI.add({ unit: ab.unit, es: ta.value, en: en.value, p: prompt.replace(/\*/g, ''), day: ctx.di });
+      UI.clear(body);
+      body.appendChild(UI.el('h2', null, 'Added to your script'));
+      body.appendChild(UI.el('p', 'model-answer', esc(ta.value.trim())));
+      body.appendChild(UI.el('p', 'muted', 'It comes back in your reviews.'));
+      body.appendChild(UI.nextBtn('Continue →', done));
+    });
+    skip.addEventListener('click', done);
+  }
+
+  /* My script: every line, by unit, each editable. */
+  function runScript(body, back) {
+    var BI = window.BuildIt, units = (window.COURSE_UNITS || {});
+    function paint() {
+      UI.clear(body);
+      var all = BI.load();
+      body.appendChild(UI.el('h2', null, 'My script (' + all.length + ' line' + (all.length === 1 ? '' : 's') + ')'));
+      if (!all.length) body.appendChild(UI.el('p', 'muted', 'Your true lines about you collect here, one for each unit.'));
+      var last = null;
+      all.forEach(function (l, n) {
+        if (l.unit !== last) { last = l.unit; body.appendChild(UI.el('h3', null, esc((units[l.unit] && units[l.unit].title) || l.unit))); }
+        var d = UI.el('div', 'script-line');
+        d.appendChild(UI.el('p', 'model-answer', esc(l.es)));
+        if (l.en) d.appendChild(UI.el('p', 'muted small', esc(l.en)));
+        var ed = UI.el('button', 'ghost-btn', 'Edit'); ed.type = 'button';
+        ed.addEventListener('click', function () {
+          UI.clear(d);
+          var t = UI.el('textarea', 'answer-area'); t.rows = 2; t.value = l.es; t.spellcheck = false;
+          var e = UI.el('input', 'answer-input wide'); e.type = 'text'; e.value = l.en || ''; e.placeholder = 'In English (optional)';
+          var sv = UI.el('button', 'primary-btn', 'Save'); sv.type = 'button';
+          var cx = UI.el('button', 'ghost-btn', 'Cancel'); cx.type = 'button';
+          sv.addEventListener('click', function () { if (BI.edit(n, t.value, e.value)) paint(); });
+          cx.addEventListener('click', paint);
+          d.appendChild(t); d.appendChild(UI.accentBar(function () { return t; })); d.appendChild(e); d.appendChild(sv); d.appendChild(cx);
+          t.focus();
+        });
+        d.appendChild(ed);
+        body.appendChild(d);
+      });
+      body.appendChild(UI.nextBtn('Back', back));
+    }
+    paint();
+  }
+
   function run(host, ctx, done) {
     var tasks = ctx.writeTasks || [];
-    if (!tasks.length) { done(); return; }
     var st = ctx.step || null, ex = (st && st.extra) || {};
+    var chain = buildChain(ctx);
+    if (!tasks.length && !chain) { done(); return; }
     var i = Math.min((st && st.at) || 0, tasks.length), doneCount = ex.done || 0;
+    /* the chain is over once any later place has been saved */
+    var chainDone = !chain || !!ex.bd || (st && st.at > 0) || !!ex.sc || !!ex.ab;
+    var about = aboutDay(ctx), aboutDone = false;
 
     var wrap = UI.el('div', 'panel');
     var progress = UI.el('div', 'muted review-stats');
@@ -336,6 +470,7 @@ window.StageProduce = (function () {
     host.appendChild(wrap);
 
     var sceneEntry = sceneDay(ctx), sceneState = null;
+    if (ex.ab) sceneEntry = null;
     function playScene() {
       UI.clear(body);
       progress.textContent = 'Escena';
@@ -345,7 +480,7 @@ window.StageProduce = (function () {
         sceneState = { sc: sc };
         if (!at) recordScene(sc, ctx);
         UI.clear(body);
-        runScene(body, sc, at, lines, function (n, l) { if (st) st.save(tasks.length, { done: doneCount, sc: sc.id, turn: n, lines: l }); },
+        runScene(body, sc, at, lines, function (n, l) { if (st) st.save(tasks.length, { done: doneCount, bd: 1, sc: sc.id, turn: n, lines: l }); },
           function () { sceneEntry = null; finish(); });
       };
       if (ex.sc && window.Scenes) {
@@ -358,17 +493,39 @@ window.StageProduce = (function () {
       } else pickScene(ctx, sceneEntry, function (sc) { begin(sc, 0, []); });
     }
 
+    function playAbout() {
+      aboutDone = true;
+      UI.clear(body);
+      progress.textContent = 'Mi guion';
+      if (st) st.save(tasks.length, { done: doneCount, bd: 1, ab: 1 });
+      runAboutMe(body, about, ctx, finish);
+    }
+    function playChain() {
+      UI.clear(body);
+      progress.textContent = 'Build it';
+      runBuildIt(body, chain, ex.bi || 0, function (n) { if (st) st.save(0, { done: doneCount, bi: n }); },
+        function () { chainDone = true; ex = {}; show(); });
+    }
+
     function finish() {
       if (sceneEntry) { playScene(); return; }
+      if (about && !aboutDone) { playAbout(); return; }
       ctx.results.produce = { done: doneCount, total: tasks.length };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Escrito', 'Written')));
       body.appendChild(UI.el('p', 'muted', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today. Most learners skip this part, and it is the part that builds fluency.'));
+      var nLines = window.BuildIt ? window.BuildIt.count() : 0;
+      if (nLines) {
+        var sb = UI.el('button', 'ghost-btn script-link', 'My script (' + nLines + ' line' + (nLines === 1 ? '' : 's') + ')'); sb.type = 'button';
+        sb.addEventListener('click', function () { runScript(body, finish); });
+        body.appendChild(sb);
+      }
       body.appendChild(UI.nextBtn('Terminar la sesión →', done));
     }
 
     function show() {
-      if (st) st.save(i, { done: doneCount });   // the place survives a reload
+      if (!chainDone) { playChain(); return; }
+      if (st) st.save(i, { done: doneCount, bd: 1 });   // the place survives a reload
       if (i >= tasks.length) { finish(); return; }
       var t = tasks[i];
       progress.textContent = 'Tarea ' + (i + 1) + ' / ' + tasks.length;
@@ -379,6 +536,7 @@ window.StageProduce = (function () {
       else if (t.type === 'translate' && t.es && window.LIB && window.LIB.match) runBankTranslate(body, t, next);
       else runWrite(body, t, next);
     }
+    if (ex.ab && about) { playAbout(); return; }
     show();
   }
 

@@ -23,9 +23,9 @@ window.Settings = (function () {
      * 'fluidez.games' now), but it stays on this list so an export taken
      * before the rewrite still round-trips and a reset still clears it. */
     'fluidez.gameBest', 'fluidez.games', 'fluidez.gamePrefs', 'fluidez.vetoed',
-    'fluidez.accepted', 'fluidez.focus', 'fluidez.themes',
+    'fluidez.accepted', 'fluidez.focus', 'fluidez.themes', 'fluidez.aboutme',
     /* The arcade build's own settings (juegos/). Deliberately NOT
-     * 'fluidez.focus', 'fluidez.themes', which belongs to js/focus.js and holds the themed
+     * 'fluidez.focus', 'fluidez.themes', 'fluidez.aboutme', which belongs to js/focus.js and holds the themed
      * track — writing a games focus there would silently cancel a track the
      * learner had started. */
     'fluidez.arcade',
