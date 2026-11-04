@@ -30,7 +30,9 @@
     <div id="stage-host" class="hidden"></div>
   </main>
 
-  <!-- data -->
+  <!-- data. The index and the boot script are not deferred: js/bands-boot.js writes the tags for the learner's own bands. -->
+  <script src="data/lessons/index.js"></script>
+  <script src="js/bands-boot.js"></script>
   <script defer src="js/perf.js"></script>
   <script defer src="data/taxonomy.js"></script>
   <script defer src="data/connectors.js"></script>
@@ -44,10 +46,10 @@
   <script defer src="data/apply.js"></script>
   <script defer src="data/writing.js"></script>
   <script defer src="data/topics.js"></script>
-  <script defer src="data/strand-lessons.js"></script>
+  <script defer src="data/lessons/a1.js"></script>
   <script defer src="data/course.js"></script>
   <script defer src="data/graph.js"></script>
-  <script defer src="data/requires.js"></script>
+  <script defer src="data/requires/a1.js"></script>
   <script defer src="data/lesson-nodes.js"></script>
   <script defer src="data/resources.js"></script>
   <!-- engine + core (stores must precede the stages/views that read them) -->

@@ -64,10 +64,23 @@ function target(swRel) {
   return TARGETS.filter(t => t.sw === (swRel || 'sw.js'))[0] || TARGETS[0];
 }
 
+/* Files the root worker caches at runtime rather than precaches. They are
+ * hashed with the rest, or a changed band file would sit behind an unchanged
+ * version and installed copies would keep serving the old one. */
+function runtimeFiles(swRel) {
+  if (target(swRel).sw !== 'sw.js') return [];
+  const out = [];
+  ['data/lessons', 'data/requires'].forEach(d => {
+    try { fs.readdirSync(path.join(ROOT, d)).filter(n => n.endsWith('.js')).forEach(n => out.push(d + '/' + n)); } catch (e) {}
+  });
+  return out;
+}
+
 function hash(swRel) {
   const t = target(swRel);
   const h = crypto.createHash('sha1');
-  for (const rel of assets(t.sw).sort()) {
+  const files = assets(t.sw).concat(runtimeFiles(t.sw)).filter((f, i, a) => a.indexOf(f) === i);
+  for (const rel of files.sort()) {
     const abs = path.join(ROOT, rel);
     if (!fs.existsSync(abs)) continue;          // reported separately by the validator
     h.update(rel + '\0');
@@ -93,6 +106,8 @@ function write(swRel, v) {
 module.exports = { hash, current, assets, TARGETS };
 
 if (require.main === module) {
+  /* The precache list is derived from index.html; write it before hashing it. */
+  require('./gen-assets.js').run(false);
   let changed = 0;
   TARGETS.forEach(t => {
     if (!fs.existsSync(path.join(ROOT, t.sw))) return;

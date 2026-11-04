@@ -11,23 +11,29 @@
  * on activate. js/pwa.js listens for a waiting worker and shows the update
  * banner; the user's tap calls skipWaiting via postMessage.
  *
- * ASSETS must mirror every <script>/<link> in index.html. No bundler here —
- * keep this list in sync by hand when a new data/js file is added there.
+ * ASSETS is GENERATED from index.html by tools/gen-assets.js (bump-cache.js
+ * runs it first); never edit the list by hand. Data the page loads on demand
+ * (data/lessons/<band>.js, data/requires/<band>.js, data/bank, story, scenes,
+ * contrasts) is not precached: the data/ branch of the fetch handler below
+ * caches each file the first time it is used and serves it from the cache
+ * when offline. The hash in CACHE_VERSION covers those files too (see
+ * tools/bump-cache.js), so changing one retires the cached copy.
  * ========================================================================== */
-var CACHE_VERSION = 'ce9ad52f7';
+var CACHE_VERSION = 'c4131a4b8';
 var CACHE_NAME = 'fluidez-' + CACHE_VERSION;
 
 var ASSETS = [
   './',
   './index.html',
   './manifest.json',
+  './apple-touch-icon.png',
   './css/styles.css',
   './css/games.css',
-  './apple-touch-icon.png',
   './icons/icon-192.png',
-  './icons/icon-512.png',
   './icons/icon-512-maskable.png',
-
+  './icons/icon-512.png',
+  './data/lessons/index.js',
+  './js/bands-boot.js',
   './js/perf.js',
   './data/taxonomy.js',
   './data/connectors.js',
@@ -41,13 +47,12 @@ var ASSETS = [
   './data/apply.js',
   './data/writing.js',
   './data/topics.js',
-  './data/strand-lessons.js',
+  './data/lessons/a1.js',
   './data/course.js',
   './data/graph.js',
-  './data/requires.js',
+  './data/requires/a1.js',
   './data/lesson-nodes.js',
   './data/resources.js',
-
   './js/lib.bundle.js',
   './js/engine.js',
   './js/lessons.js',
@@ -68,13 +73,11 @@ var ASSETS = [
   './js/phrases.js',
   './js/deck.js',
   './js/essay.js',
-
   './js/views/review.js',
   './js/views/learn.js',
   './js/views/comprehend.js',
   './js/views/apply.js',
   './js/views/produce.js',
-
   './js/hub.js',
   './js/progress.js',
   './js/resources.js',
@@ -97,7 +100,6 @@ var ASSETS = [
   './js/games.js',
   './js/liga.js',
   './js/quickplay.js',
-
   './js/known.js',
   './js/bankitems.js',
   './js/scenes.js',
@@ -152,6 +154,27 @@ self.addEventListener('fetch', function (event) {
    * Supabase, and a cache-first worker would answer every later read with
    * the first one — a leaderboard frozen at the moment you joined. */
   if (new URL(event.request.url).origin !== self.location.origin) return;
+
+  /* ON-DEMAND DATA. Band files and the sentence bank are big and not
+   * precached. Cache-first like everything else: the first use fetches and
+   * stores the file under this version's cache, every later use (and every
+   * offline use) comes from the cache. A failed or partial response is never
+   * stored, and with no network and no copy the request simply fails, which
+   * the loaders treat as "band unavailable". */
+  if (new URL(event.request.url).pathname.indexOf('/data/') !== -1) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function (cache) {
+        return cache.match(event.request).then(function (hit) {
+          if (hit) return hit;
+          return fetch(event.request).then(function (res) {
+            if (res && res.status === 200) cache.put(event.request, res.clone());
+            return res;
+          });
+        });
+      })
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then(function (cached) {

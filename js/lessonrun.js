@@ -196,7 +196,16 @@ window.LessonRun = (function () {
   }
 
   // ---- mini-session runner -------------------------------------------------
+  /* A lesson from a band that is not loaded yet (data/lessons/<band>.js) is
+   * fetched first, then the run proceeds as if it had been there all along. */
   function run(focus, back) {
+    if (focus && focus.type === 'grammar' && !lessonById(focus.id) && window.Lessons && window.Lessons.bandOf(focus.id)) {
+      window.Lessons.ensureLesson(focus.id, function () { runNow(focus, back); });
+      return;
+    }
+    runNow(focus, back);
+  }
+  function runNow(focus, back) {
     var host = document.getElementById('stage-host');
     var lesson = focus.type === 'grammar' ? lessonById(focus.id) : null;
     var key = keyForFocus(focus, lesson);

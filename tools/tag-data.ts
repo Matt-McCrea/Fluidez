@@ -2,11 +2,14 @@
 //   data/graph.js, data/requires.js, data/lesson-nodes.js, docs/plan-2026-11-04/tagging-report.md
 // Hand rulings in tools/lesson-nodes.overrides.json replace the derived teaches of a lesson (how "override", confidence 1).
 // Run:  nice npx tsx tools/tag-data.ts
+// data/requires.js stays the whole-corpus file node tools read; at the end the splitter (tools/split-data.ts) writes the
+// per-band files the browser loads (data/requires/<band>.js), so the two never drift.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 import vm from 'node:vm';
 import { castNames, loadGraph, nodesByKind, tagOptions, type GraphNode } from '../lib/graph';
+import { writeSplit } from './split-data';
 import { tagRow, type TagRow, type TaggedRow } from '../lib/tagger/tagAll';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
@@ -231,3 +234,6 @@ writeFileSync(REPORT, md.join('\n') + '\n' + (keep >= 0 ? prev.slice(keep) : '')
 
 const mem = process.memoryUsage();
 console.log(JSON.stringify({ secs: (Date.now() - t0) / 1000, rssMB: Math.round(mem.rss / 1e6), groups: groups.length, rows: nRows, low: nLow, reqKeys: sortedKeys.length, lessons: detail.length, method, overrides: nOverride, graphBytes: gjs.length, notes: notes.length }));
+
+writeSplit();
+console.log('split data/lessons and data/requires by band');

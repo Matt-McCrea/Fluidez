@@ -482,7 +482,7 @@
     });
     // Strand lessons (function / discourse / genre — data/strand-lessons.js)
     // carry their own level and PCIC provenance, so they need no SYLLABUS entry.
-    (window.STRAND_LESSONS || []).forEach(function (l) { lessons.push(withRecall(l)); });
+    strandPool().forEach(function (l) { lessons.push(withRecall(l)); });
     return lessons;
   }
 
@@ -895,18 +895,157 @@
    * ARRAY has to be in teaching order — deriving a separate SYLLABUS list and
    * leaving the array in build order would teach a B2 function lesson as
    * lesson 18, ahead of every A1 one. Order the array itself. */
-  var built = applyMerges(build()).map(gradeAuthoredRecall);
-  var syllabus = buildSyllabus(built);
-  var byId = {};
-  built.forEach(function (l) { byId[l.id] = l; });
-  window.GRAMMAR_LESSONS = syllabus.map(function (s) { return byId[s.id]; })
-    .filter(function (l) { return !!l; });
-  window.SYLLABUS = syllabus;
-  window.SEED_SYLLABUS = SEED;
-  /* Every lesson that EXISTS, ordered or not. GRAMMAR_LESSONS is the course,
-   * so a lesson left out of data/course.js is simply absent from it — which
-   * means the content gate cannot notice the omission by looking there. It
-   * checks this against COURSE instead, and that is the whole safety net for
-   * writing the order down by hand. */
-  window.ALL_LESSONS = built;
+  /* ---- bands, loaded on demand ---------------------------------------------
+   * The 799 strand lessons and the REQUIRES rows that gate their items are the
+   * two biggest files the page used to load (3.4 MB and 2.6 MB). The browser
+   * now gets them split by CEFR band (data/lessons/<band>.js defines
+   * STRAND_LESSONS_<BAND>; data/requires/<band>.js defines REQUIRES_<BAND>;
+   * tools/split-data.ts writes both), A1 in index.html and the learner's band
+   * and everything below it from js/bands-boot.js, the rest through
+   * Lessons.ensureBand when a lesson from another band is opened.
+   *
+   * Node tools and the content gate still load the whole of data/strand-lessons.js
+   * and data/requires.js, which are the source of truth the split is made from.
+   * The pool below takes both: whatever whole-corpus array was there at load,
+   * plus every band that has arrived, de-duplicated by id. rebuild() starts
+   * from the raw lessons each time (withRecall copies, applyMerges copies), so
+   * running it again never doubles anything. */
+  var BANDS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  var WHOLE = window.STRAND_LESSONS || [];        // the whole corpus, in node; empty in the browser
+  var absorbed = {};                              // band -> the array already taken from its global
+  var bandRows = {};                              // band -> its lessons
+  var seenReq = {};
+
+  function strandPool() {
+    var seen = {}, out = [];
+    function take(l) { if (l && !seen[l.id]) { seen[l.id] = 1; out.push(l); } }
+    WHOLE.forEach(take);
+    BANDS.forEach(function (b) { (bandRows[b] || []).forEach(take); });
+    return out;
+  }
+  function absorbBands() {
+    var any = false;
+    BANDS.forEach(function (b) {
+      var arr = window['STRAND_LESSONS_' + b];
+      if (arr && absorbed[b] !== arr) { absorbed[b] = arr; bandRows[b] = arr; any = true; }
+      var req = window['REQUIRES_' + b];
+      if (req && seenReq[b] !== req) {
+        seenReq[b] = req;
+        var R = window.REQUIRES = window.REQUIRES || {};
+        Object.keys(req).forEach(function (k) { R[k] = req[k]; });
+      }
+    });
+    return any;
+  }
+
+  function rebuild() {
+    absorbBands();
+    /* window.STRAND_LESSONS stays the list of every strand lesson that is
+     * loaded: js/gameitems.js builds its question index from it. */
+    window.STRAND_LESSONS = strandPool();
+    var built = applyMerges(build()).map(gradeAuthoredRecall);
+    var syllabus = buildSyllabus(built);
+    var byId = {};
+    built.forEach(function (l) { byId[l.id] = l; });
+    window.GRAMMAR_LESSONS = syllabus.map(function (s) { return byId[s.id]; })
+      .filter(function (l) { return !!l; });
+    window.SYLLABUS = syllabus;
+    window.SEED_SYLLABUS = SEED;
+    /* Every lesson that EXISTS, ordered or not. GRAMMAR_LESSONS is the course,
+     * so a lesson left out of data/course.js is simply absent from it — which
+     * means the content gate cannot notice the omission by looking there. It
+     * checks this against COURSE instead, and that is the whole safety net for
+     * writing the order down by hand. */
+    window.ALL_LESSONS = built;
+  }
+  window.LESSON_MERGE_GROUPS = MERGES.map(function (m) { return m.ids.slice(); });
+  rebuild();
+
+  /* ---- the loader ------------------------------------------------------------ */
+  var waiters = {}, failed = {};
+  function idx() { return window.LESSONS_INDEX || { bands: {}, ids: {} }; }
+  function haveBand(b) {
+    if (window['STRAND_LESSONS_' + b]) return true;
+    /* No document means node, where the whole corpus is already loaded. */
+    return typeof document === 'undefined' || !document.createElement || !document.head;
+  }
+  function inject(src, done) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.onload = function () { done(true); };
+    s.onerror = function () { done(false); };
+    document.head.appendChild(s);
+  }
+  function loadBand(b, cb) {
+    if (haveBand(b) && (window['REQUIRES_' + b] || typeof document === 'undefined' || !document.head)) {
+      if (absorbBands()) rebuild();
+      cb(true); return;
+    }
+    if (failed[b]) { cb(false); return; }
+    if (waiters[b]) { waiters[b].push(cb); return; }
+    waiters[b] = [cb];
+    var lc = b.toLowerCase(), left = 2, ok = true;
+    function one(good) {
+      if (!good) ok = false;
+      if (--left) return;
+      if (!ok) failed[b] = 1;
+      else rebuild();
+      var w = waiters[b]; delete waiters[b];
+      w.forEach(function (f) { f(ok); });
+      if (ok) { try { window.dispatchEvent(new Event('lessons:changed')); } catch (e) {} }
+    }
+    if (window['STRAND_LESSONS_' + b]) one(true); else inject('data/lessons/' + lc + '.js', one);
+    if (window['REQUIRES_' + b]) one(true); else inject('data/requires/' + lc + '.js', one);
+  }
+  /* Load one band and rebuild ALL_LESSONS / GRAMMAR_LESSONS; cb(ok). */
+  function ensureBand(band, cb) {
+    cb = cb || function () {};
+    if (BANDS.indexOf(band) === -1) { cb(false); return; }
+    loadBand(band, cb);
+  }
+  /* Load every band up to and including `band`: the course is cumulative, and
+   * Known and the session read lessons and requires from the bands below. */
+  function ensureUpTo(band, cb) {
+    cb = cb || function () {};
+    var n = BANDS.indexOf(band);
+    if (n === -1) { cb(false); return; }
+    var left = n + 1, ok = true;
+    BANDS.slice(0, n + 1).forEach(function (b) {
+      loadBand(b, function (g) { if (!g) ok = false; if (--left === 0) cb(ok); });
+    });
+  }
+  /* The band a lesson lives in, from the small index; null when unknown. */
+  function bandOf(id) { return idx().ids[id] || null; }
+  function ensureLesson(id, cb) {
+    cb = cb || function () {};
+    var b = bandOf(id);
+    if (!b) { cb(true); return; }
+    ensureBand(b, cb);
+  }
+  function loadedBands() { return BANDS.filter(function (b) { return !!window['STRAND_LESSONS_' + b]; }); }
+
+  /* Quietly bring in the next band once the learner is close to the end of the
+   * top one they have, so the last lessons of a band do not run out of course.
+   * Idle time only, and only on a real page. */
+  function prefetchNext() {
+    if (typeof document === 'undefined' || !document.head) return;
+    var have = loadedBands();
+    if (!have.length) return;
+    var top = have[have.length - 1], next = BANDS[BANDS.indexOf(top) + 1];
+    if (!next || window['STRAND_LESSONS_' + next]) return;
+    var studied = {};
+    try { studied = (JSON.parse(localStorage.getItem('fluidez.progress')) || {}).studied || {}; } catch (e) {}
+    var ids = idx().ids, total = 0, done = 0;
+    Object.keys(ids).forEach(function (id) { if (ids[id] === top) { total++; if (studied[id]) done++; } });
+    if (total && done / total >= 0.8) ensureBand(next);
+  }
+  if (typeof window.addEventListener === 'function' && typeof document !== 'undefined') {
+    window.addEventListener('load', function () {
+      var go = window.requestIdleCallback || function (f) { return setTimeout(f, 1500); };
+      go(prefetchNext);
+    });
+  }
+
+  window.Lessons = { ensureBand: ensureBand, ensureUpTo: ensureUpTo, ensureLesson: ensureLesson,
+                     bandOf: bandOf, loadedBands: loadedBands, rebuild: rebuild, BANDS: BANDS };
 })();

@@ -173,6 +173,8 @@ window.Profile = (function () {
       var c = canon(name); if (!c) return;
       current = c; applyTheme(c);
       try { localStorage.setItem(KEY, c); } catch (e) {}
+      /* the band's lessons and requires load on demand (js/lessons.js) */
+      if (window.Lessons) window.Lessons.ensureUpTo(c);
     },
     applyTheme: function () { applyTheme(current); },
     catAllowed: function (cat) { var c = PROFILES[current].vocabCats; return !c || c.indexOf(cat) !== -1; },

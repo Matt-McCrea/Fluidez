@@ -906,7 +906,50 @@ function checkProbes(l, tag) {
    * checked below against the arcade's own page and worker instead. */
   const ARCADE_ONLY = new Set(['data/game-index.js', 'js/arcade.js', 'js/study.js']);
 
-  onDisk.filter(f => !ARCADE_ONLY.has(f)).forEach(f => {
+  /* The two whole-corpus files are SOURCES, not page scripts: node tools and
+   * the content gate read them, tools/split-data.ts cuts them into
+   * data/lessons/<band>.js and data/requires/<band>.js, and the browser loads
+   * those. Loading the sources too would put 6 MB back on the boot path. */
+  const SOURCE_ONLY = new Set(['data/strand-lessons.js', 'data/requires.js']);
+  SOURCE_ONLY.forEach(f => {
+    ok(scripts.indexOf(f) === -1, `index.html loads ${f}, which is a source file for the band split`);
+    ok(sw.indexOf("'./" + f + "'") === -1, `sw.js caches ${f}, which is a source file for the band split`);
+  });
+
+  /* The band split: A1 on the page, every band file present, the boot script
+   * ahead of lessons.js, nothing on-demand in the precache list, and the
+   * precache list equal to what tools/gen-assets.js derives from index.html. */
+  ['a1', 'a2', 'b1', 'b2', 'c1'].forEach(b => {
+    ['data/lessons/', 'data/requires/'].forEach(d => {
+      ok(fs.existsSync(path.join(__dirname, '..', d + b + '.js')), `${d}${b}.js is missing — run: npx tsx tools/split-data.ts`);
+      if (b !== 'a1') ok(scripts.indexOf(d + b + '.js') === -1 && sw.indexOf("'./" + d + b + ".js'") === -1,
+        `${d}${b}.js is loaded on demand; it must not be in index.html or the precache list`);
+    });
+  });
+  ok(fs.existsSync(path.join(__dirname, '..', 'data/lessons/index.js')), 'data/lessons/index.js is missing — run: npx tsx tools/split-data.ts');
+  ['data/lessons/index.js', 'js/bands-boot.js', 'data/lessons/a1.js', 'data/requires/a1.js'].forEach(f =>
+    ok(scripts.indexOf(f) !== -1, `index.html does not load ${f}`));
+  ok(scripts.indexOf('data/lessons/index.js') < scripts.indexOf('js/bands-boot.js') &&
+     scripts.indexOf('js/bands-boot.js') < scripts.indexOf('js/lessons.js'),
+     'index.html must load data/lessons/index.js, then js/bands-boot.js, then js/lessons.js');
+  ok(/<script src="js\/bands-boot\.js">/.test(html) && /<script src="data\/lessons\/index\.js">/.test(html),
+     'data/lessons/index.js and js/bands-boot.js must be classic scripts (no defer) so the band tags land ahead of js/lessons.js');
+  try {
+    const gen = require('./gen-assets.js').list();
+    const have = [...sw.slice(sw.indexOf('var ASSETS = ['), sw.indexOf('];', sw.indexOf('var ASSETS = [')))
+      .matchAll(/'([^']+)'/g)].map(m => m[1]);
+    ok(JSON.stringify(gen) === JSON.stringify(have), 'sw.js ASSETS is out of date with index.html. Run: node tools/gen-assets.js (or node tools/bump-cache.js)');
+  } catch (e) { ok(false, 'could not check the precache list: ' + e.message); }
+  /* the split must be what a split would write now */
+  try {
+    const tsx = path.join(__dirname, '..', 'node_modules', '.bin', 'tsx');
+    if (fs.existsSync(tsx)) {
+      const r = require('child_process').spawnSync(tsx, [path.join(__dirname, 'split-data.ts'), '--check'], { encoding: 'utf8' });
+      ok(r.status === 0, 'data/lessons or data/requires is stale — the source changed since the split. Run: npx tsx tools/split-data.ts ' + (r.stderr || '').trim().slice(0, 200));
+    } else console.log('  (tsx not installed: skipped the band split freshness check)');
+  } catch (e) { ok(false, 'could not check the band split: ' + e.message); }
+
+  onDisk.filter(f => !ARCADE_ONLY.has(f) && !SOURCE_ONLY.has(f)).forEach(f => {
     ok(scripts.indexOf(f) !== -1, `index.html does not load ${f} — it will not exist in the browser`);
     ok(sw.indexOf("'./" + f + "'") !== -1, `sw.js does not cache ${f} — offline installs will miss it`);
   });
@@ -1034,7 +1077,7 @@ function checkProbes(l, tag) {
   // load order: a data file must come before the js that reads its global
   const order = f => scripts.indexOf(f);
   [['data/taxonomy.js', 'js/profile.js'], ['data/taxonomy.js', 'js/lessons.js'],
-   ['data/connectors.js', 'js/checker.js'], ['data/strand-lessons.js', 'js/lessons.js'],
+   ['data/connectors.js', 'js/checker.js'], ['data/lessons/a1.js', 'js/lessons.js'], ['data/requires/a1.js', 'js/known.js'],
    ['data/verbs.js', 'js/engine.js']].forEach(([first, then]) => {
     if (order(first) === -1 || order(then) === -1) return;
     ok(order(first) < order(then), `index.html loads ${then} before ${first} — the global will be undefined`);
