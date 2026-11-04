@@ -836,6 +836,7 @@ window.StageLearn = (function () {
   function teachPractice(host, ctx, done) {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, 'Practice & review day'));
+    if (ctx.focus && ctx.focus.note) wrap.appendChild(UI.el('p', 'muted', ctx.focus.note));
     wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.'));
     wrap.appendChild(UI.nextBtn('Continuar →', done));
     host.appendChild(wrap);

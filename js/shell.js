@@ -198,6 +198,7 @@ window.Shell = (function () {
       todayRow.appendChild(UI.el('span', 'tf-label', T('Hoy', 'Today')));
       todayRow.appendChild(UI.el('span', 'tf-value', t.lessonTitle));
       card.appendChild(todayRow);
+      if (t.focus && t.focus.note) card.appendChild(UI.el('p', 'muted small', t.focus.note));
 
       /* A running theme focus belongs here and not only in Practicar. It is a
        * standing choice that changes what the next fortnight is made of, and a
@@ -434,6 +435,8 @@ window.Shell = (function () {
     document.body.appendChild(tabBar);
 
     mountTab('inicio');
+    /* A lesson band that finishes loading in the background changes what Home can say. */
+    try { window.addEventListener('lessons:changed', function () { if (active === 'inicio') refresh('inicio'); }); } catch (e) { /* no window */ }
   }
 
   return { init: init, go: go, refresh: refresh, openOverlay: openOverlay, closeOverlay: closeOverlay };

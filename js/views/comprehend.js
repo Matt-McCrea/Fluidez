@@ -56,6 +56,7 @@ window.StageComprehend = (function () {
     if (p.chapterNo != null) {
       wrap.appendChild(UI.el('div', 'muted small', 'Chapter ' + p.chapterNo + (p.many ? ', part ' + p.part + ' of ' + p.parts : '')));
       if (p.recap) wrap.appendChild(UI.el('p', 'muted chapter-recap', p.recap));
+      if (ctx.chapter && ctx.chapter.recapLine) wrap.appendChild(UI.el('p', 'muted chapter-recap', ctx.chapter.recapLine));
     }
     wrap.appendChild(UI.el('p', 'muted', 'Read it through twice: once for the gist, once for detail. Then answer below.'));
     var body = UI.el('div', 'passage');
