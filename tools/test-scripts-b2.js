@@ -20,10 +20,10 @@
  *     gr-pluscuamsubj-b2, the first day of the third unit (b2-u46), and are
  *     refused before that day; from it on they are allowed, and that lesson
  *     must show the form it builds;
- *   - units 9 to 11 (b2-u52 to b2-u54) were written to make the right
- *     read-and-pick option the longest about a third of the time, since in
- *     units 1 to 8 it is almost never the longest, which is itself a tell:
- *     their share must sit between 20 and 45%. */
+ *   - in every unit (b2-u44 to b2-u54) the right read-and-pick option is the
+ *     longest about a third of the time (20 to 45%) and the shortest at most
+ *     40% of the time: units 1 to 8 had it almost never the longest, which is
+ *     itself a tell (a learner who always avoids the longest option wins). */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -64,8 +64,8 @@ ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units from COURSE_BANDS.B
 ok(UNITS[UNITS.length - 1] === 'b2-u54', 'the last B2 unit should be b2-u54, found ' + UNITS[UNITS.length - 1]);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
 ok(want.length === 128, 'expected 128 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
-// the batch written to the one-third rule: units 9 to 11
-const LATE = window.COURSE_DAYS.filter((d) => UNITS.slice(8).indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
+const UNIT_OF = {};
+window.COURSE_DAYS.forEach((d) => { if (d.lesson && d.unit && UNIT_OF[d.lesson] == null) UNIT_OF[d.lesson] = d.unit; });
 ok(want[0] === 'fn-acuerdo-b2', 'the first B2 day should be agreeing (fn-acuerdo-b2), found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
@@ -148,7 +148,8 @@ function laterForms(es, day) {
   return out;
 }
 
-let rpTotal = 0, rpLongest = 0, rpShortest = 0, rpChance = 0, ruleMax = 0, typedTotal = 0, lateTotal = 0, lateLongest = 0;
+let rpTotal = 0, rpLongest = 0, rpShortest = 0, rpChance = 0, ruleMax = 0, typedTotal = 0;
+const perUnit = {};
 const at0 = [0, 0, 0, 0, 0, 0];
 const share = (opts, ans, pick) => { const m = pick(...opts.map((o) => o.length)); const tied = opts.filter((o) => o.length === m).length; return opts[ans].length === m ? 1 / tied : 0; };
 
@@ -177,7 +178,8 @@ Object.keys(SC).forEach((id) => {
     ok(!r.options.every((o, k) => k === r.answer || right >= 1.5 * o.length), at + ': the right option is 1.5 times as long as every other');
     rpTotal++; rpChance += 1 / r.options.length; at0[r.answer]++;
     rpLongest += share(r.options, r.answer, Math.max); rpShortest += share(r.options, r.answer, Math.min);
-    if (LATE.indexOf(id) >= 0) { lateTotal++; lateLongest += share(r.options, r.answer, Math.max); }
+    const pu = perUnit[UNIT_OF[id]] = perUnit[UNIT_OF[id]] || { n: 0, longest: 0, shortest: 0 };
+    pu.n++; pu.longest += share(r.options, r.answer, Math.max); pu.shortest += share(r.options, r.answer, Math.min);
     ok(words(r.why) <= 25, at + ': why should be one line (25 words at most)');
   });
 
@@ -237,13 +239,20 @@ Object.keys(SC).forEach((id) => {
 ok(rpTotal >= 4 * want.length, 'expected at least ' + 4 * want.length + ' read-and-pick items, found ' + rpTotal);
 ok(rpLongest / rpTotal <= 1 / 3, 'the right option is the longest ' + Math.round(100 * rpLongest / rpTotal) + '% of the time (a third at most)');
 ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the shortest ' + Math.round(100 * rpShortest / rpTotal) + '% of the time (chance ' + Math.round(100 * rpChance / rpTotal) + '%)');
-ok(lateTotal >= 4 * LATE.length, 'expected at least ' + 4 * LATE.length + ' read-and-pick items in ' + UNITS.slice(8).join(', ') + ', found ' + lateTotal);
-const lateShare = lateTotal ? lateLongest / lateTotal : 0;
-ok(lateShare >= 0.2 && lateShare <= 0.45, 'in ' + UNITS.slice(8).join(', ') + ' the right option is the longest ' + Math.round(100 * lateShare) + '% of the time (20 to 45%)');
+// per unit: the right option is the longest 20 to 45% of the time and the shortest at most 40%
+const unitShares = UNITS.map((u) => {
+  const pu = perUnit[u] || { n: 0, longest: 0, shortest: 0 };
+  const nLessons = window.COURSE_DAYS.filter((d) => d.unit === u && d.lesson).length;
+  ok(pu.n >= 4 * nLessons, 'expected at least ' + 4 * nLessons + ' read-and-pick items in ' + u + ', found ' + pu.n);
+  const lo = pu.n ? pu.longest / pu.n : 0, sh = pu.n ? pu.shortest / pu.n : 0;
+  ok(lo >= 0.2 && lo <= 0.45, 'in ' + u + ' the right option is the longest ' + Math.round(100 * lo) + '% of the time (20 to 45%)');
+  ok(sh <= 0.4, 'in ' + u + ' the right option is the shortest ' + Math.round(100 * sh) + '% of the time (40% at most)');
+  return u.replace('b2-', '') + ' ' + Math.round(100 * lo) + '/' + Math.round(100 * sh);
+});
 const topSlot = Math.max(...at0) / rpTotal;
 ok(topSlot <= 0.5, 'the right option sits in one position ' + Math.round(100 * topSlot) + '% of the time (half at most)');
 
-console.log('scripts: ' + Object.keys(SC).length + ' (' + UNITS.join(', ') + '), read-and-pick ' + rpTotal + ' (right is longest ' + Math.round(100 * rpLongest / rpTotal) + '%, shortest ' + Math.round(100 * rpShortest / rpTotal) + '%, positions ' + at0.slice(0, 3).join('/') + '; in ' + UNITS.slice(8).join(', ') + ' longest ' + Math.round(100 * lateShare) + '% of ' + lateTotal + '), typed ' + typedTotal + ', longest rule ' + ruleMax + ' words');
+console.log('scripts: ' + Object.keys(SC).length + ' (' + UNITS.join(', ') + '), read-and-pick ' + rpTotal + ' (right is longest ' + Math.round(100 * rpLongest / rpTotal) + '%, shortest ' + Math.round(100 * rpShortest / rpTotal) + '%, positions ' + at0.slice(0, 3).join('/') + '; longest/shortest % by unit: ' + unitShares.join(', ') + '), typed ' + typedTotal + ', longest rule ' + ruleMax + ' words');
 console.log('Checks run: ' + checks);
 if (errors) { console.error(errors + ' problem(s).'); process.exit(1); }
 console.log('Scripts OK.');
