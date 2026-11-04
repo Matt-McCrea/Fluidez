@@ -28,18 +28,18 @@ window.StageComprehend = (function () {
     var r = ctx.reread, t0 = Date.now();
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, r.title));
-    wrap.appendChild(UI.el('p', 'muted', 'Read it again, a little faster.'));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Léelo otra vez, un poco más rápido.', 'Read it again, a little faster.')));
     var body = UI.el('div', 'passage');
     if (window.Gloss) window.Gloss.render(body, r.text, { gloss: r.gloss }); else body.textContent = r.text;
     wrap.appendChild(body);
-    wrap.appendChild(UI.nextBtn('Finished reading', function () {
+    wrap.appendChild(UI.nextBtn(UI.t('Terminé de leer', 'Finished reading'), function () {
       var s = Math.round((Date.now() - t0) / 1000);
       var time = Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60);
       ctx.results.reread = { seconds: s, time: time };
       UI.clear(host);
       var end = UI.el('div', 'panel');
-      end.appendChild(UI.el('h2', null, 'Read in ' + time));
-      end.appendChild(UI.el('p', 'muted', 'No questions this time. A text you have met before should go quicker.'));
+      end.appendChild(UI.el('h2', null, UI.t('Lo leíste en ', 'Read in ') + time));
+      end.appendChild(UI.el('p', 'muted', UI.t('Esta vez no hay preguntas. Un texto que ya viste debería ir más rápido.', 'No questions this time. A text you have met before should go quicker.')));
       end.appendChild(UI.nextBtn('Continuar →', done));
       host.appendChild(end);
     }));
@@ -54,11 +54,11 @@ window.StageComprehend = (function () {
     var wrap = UI.el('div', 'panel');
     wrap.appendChild(UI.el('h1', null, p.title));
     if (p.chapterNo != null) {
-      wrap.appendChild(UI.el('div', 'muted small', 'Chapter ' + p.chapterNo + (p.many ? ', part ' + p.part + ' of ' + p.parts : '')));
+      wrap.appendChild(UI.el('div', 'muted small', UI.t('Capítulo ', 'Chapter ') + p.chapterNo + (p.many ? UI.t(', parte ' + p.part + ' de ' + p.parts, ', part ' + p.part + ' of ' + p.parts) : '')));
       if (p.recap) wrap.appendChild(UI.el('p', 'muted chapter-recap', p.recap));
       if (ctx.chapter && ctx.chapter.recapLine) wrap.appendChild(UI.el('p', 'muted chapter-recap', ctx.chapter.recapLine));
     }
-    wrap.appendChild(UI.el('p', 'muted', 'Read it through twice: once for the gist, once for detail. Then answer below.'));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Léelo dos veces: una para la idea general y otra para los detalles. Luego responde abajo.', 'Read it through twice: once for the gist, once for detail. Then answer below.')));
     var body = UI.el('div', 'passage');
     // every word is tappable; falls back to plain text if Gloss is not loaded
     if (window.Gloss) window.Gloss.render(body, p.text, { gloss: p.gloss });
@@ -76,7 +76,7 @@ window.StageComprehend = (function () {
 
     if (p.gloss && p.gloss.length) {
       var gdet = UI.el('details', 'gloss-all');
-      gdet.appendChild(UI.el('summary', null, 'All glosses'));
+      gdet.appendChild(UI.el('summary', null, UI.t('Todas las glosas', 'All glosses')));
       var g = UI.el('div', 'gloss');
       gdet.appendChild(g);
       p.gloss.forEach(function (w) {
@@ -113,7 +113,7 @@ window.StageComprehend = (function () {
       ctx.results.comprehend = { correct: correct, total: total };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Comprensión', 'Reading') + ': ' + correct + ' / ' + total));
-      if (correct === total) body.appendChild(UI.el('p', 'muted', 'All of them.'));
+      if (correct === total) body.appendChild(UI.el('p', 'muted', UI.t('Todas.', 'All of them.')));
       if (p.hook) body.appendChild(UI.el('p', 'chapter-hook', p.hook));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
@@ -159,7 +159,7 @@ window.StageComprehend = (function () {
         var input = UI.el('input', 'answer-input');
         input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
         var fb = UI.el('div', 'feedback');
-        var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
+        var reveal = UI.el('button', 'ghost-btn', UI.t('Mostrar', 'Reveal')); reveal.type = 'button';
         var revealed = false;
         body.appendChild(input);
         body.appendChild(UI.accentBar(function () { return input; }));
@@ -172,7 +172,7 @@ window.StageComprehend = (function () {
           if (revealed) { i++; show(); return; }
           var r = C.checkExact(input.value, q.accept);
           if (r.pass) { correct++; fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { i++; show(); }, 400); }
-          else { fb.textContent = r.near ? 'Nearly, check the accents' : 'Not quite'; fb.className = 'feedback bad'; }
+          else { fb.textContent = r.near ? UI.t('Casi, revisa las tildes', 'Nearly, check the accents') : UI.t('Casi', 'Not quite'); fb.className = 'feedback bad'; }
         });
         reveal.addEventListener('click', function () {
           if (revealed) { i++; show(); return; }
@@ -180,25 +180,25 @@ window.StageComprehend = (function () {
           var ans = Array.isArray(q.accept) ? q.accept[0] : q.accept;
           fb.textContent = ans;
           fb.className = 'feedback reveal';
-          reveal.textContent = 'Next →';
+          reveal.textContent = UI.t('Siguiente →', 'Next →');
           // comprehension answers are context-dependent — not logged as errors
         });
 
       } else if (q.type === 'translate') {
         // self-checked: write your translation, then compare to the model
-        body.appendChild(UI.el('h2', 'q-text', 'Translate to English:'));
+        body.appendChild(UI.el('h2', 'q-text', UI.t('Traduce al inglés:', 'Translate to English:')));
         body.appendChild(UI.el('div', 'passage small quote', q.line));
         var ta = UI.el('textarea', 'answer-area');
-        ta.rows = 2; ta.placeholder = 'your English…';
+        ta.rows = 2; ta.placeholder = UI.t('tu inglés…', 'your English…');
         var cmp = UI.el('div');
-        var showB = UI.el('button', 'primary-btn', 'Compare with model →'); showB.type = 'button';
+        var showB = UI.el('button', 'primary-btn', UI.t('Compara con el modelo →', 'Compare with model →')); showB.type = 'button';
         body.appendChild(ta); body.appendChild(cmp); body.appendChild(showB);
         ta.focus();
         showB.addEventListener('click', function () {
           if (cmp.childNodes.length) { i++; show(); return; }
-          cmp.appendChild(UI.el('div', 'model-answer', '<span class="muted">Model:</span> ' + q.model));
-          cmp.appendChild(UI.el('p', 'muted', 'Did you capture the same meaning? Small wording differences are fine.'));
-          showB.textContent = 'Next →';
+          cmp.appendChild(UI.el('div', 'model-answer', '<span class="muted">' + UI.t('Modelo:', 'Model:') + '</span> ' + q.model));
+          cmp.appendChild(UI.el('p', 'muted', UI.t('¿Captaste el mismo sentido? Las pequeñas diferencias de redacción están bien.', 'Did you capture the same meaning? Small wording differences are fine.')));
+          showB.textContent = UI.t('Siguiente →', 'Next →');
         });
       } else { i++; show(); }
     }

@@ -186,7 +186,7 @@ window.StageReview = (function () {
     }
     if (card.kind === 'natural') {
       return { front: card.en, back: card.es, mode: 'type', toSpanish: true, hint: null,
-               extra: card.stiff ? 'You might say: ' + card.stiff : null };
+               extra: card.stiff ? UI.t('Podrías decir: ', 'You might say: ') + card.stiff : null };
     }
     if (card.fixed && card.probe && card.probe.kind === 'mcq' && (card.probe.options || []).length > 1) {
       return { front: card.front, back: card.back, mode: 'choice', toSpanish: true,
@@ -413,10 +413,10 @@ window.StageReview = (function () {
       empty.appendChild(UI.el('h2', null, firstDay ? UI.t('Nada que repasar todavía', 'Nothing to review yet')
                                                    : UI.t('Nada que repasar hoy', 'Nothing to check today')));
       empty.appendChild(UI.el('p', 'muted', firstDay
-        ? 'Nothing to review yet. New words come back tomorrow.'
+        ? UI.t('Nada que repasar todavía. Las palabras nuevas vuelven mañana.', 'Nothing to review yet. New words come back tomorrow.')
         : (ctx && ctx.mode === 'rapido'
-          ? 'Nothing more to review today.'
-          : 'Your review queue is clear. New items are added as you learn. On to today\'s lesson.')));
+          ? UI.t('No queda nada más por repasar hoy.', 'Nothing more to review today.')
+          : UI.t('Tu cola de repaso está vacía. Las cosas nuevas se agregan a medida que aprendes. Vamos a la lección de hoy.', 'Your review queue is clear. New items are added as you learn. On to today\'s lesson.'))));
       empty.appendChild(UI.nextBtn('Continuar →', function () { ctx.results.review = { seen: 0, correct: 0 }; done(); }));
       host.appendChild(empty); return;
     }
@@ -484,9 +484,13 @@ window.StageReview = (function () {
       show();
     }
 
+    /* Matcher and register hints come from the library in English; from B1 they sit under a Spanish label. */
+    function hintText(h) { return (UI.t('y', 'n') === 'y' ? 'Pista: ' : '') + h; }
     var KIND_NAMES = { vocab: 'word', 'verb-tense': 'verb form', verb: 'verb', phrase: 'phrase', contrast: 'contrast',
       aboutme: 'your line', natural: 'sound natural', idiom: 'expression', grammar: 'grammar', error: 'to fix', capture: 'saved word' };
-    function kindName(k) { return UI.t(KIND_NAMES[k] || String(k).replace(/-/g, ' '), KIND_NAMES[k] || String(k).replace(/-/g, ' ')); }
+    var KIND_NAMES_ES = { vocab: 'palabra', 'verb-tense': 'forma verbal', verb: 'verbo', phrase: 'frase', contrast: 'contraste',
+      aboutme: 'tu línea', natural: 'suena natural', idiom: 'expresión', grammar: 'gramática', error: 'por corregir', capture: 'palabra guardada' };
+    function kindName(k) { var en = KIND_NAMES[k] || String(k).replace(/-/g, ' '); return UI.t(KIND_NAMES_ES[k] || en, en); }
     /* "I don't know" for a choice card: show the answer, count it as unsure. */
     function addDont(grid, isAnswered, setAnswered, delay) {
       var d = UI.el('button', 'ghost-btn', UI.t('No lo sé', 'I don\'t know')); d.type = 'button';
@@ -573,8 +577,8 @@ window.StageReview = (function () {
     // ---- typed answer ----
     function showType() {
       var input = UI.el('input', 'answer-input'); input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
-      input.placeholder = R.toSpanish ? 'escribe en español…' : 'type in English…';
-      var revealB = UI.el('button', 'ghost-btn', 'Reveal'); revealB.type = 'button';
+      input.placeholder = R.toSpanish ? 'escribe en español…' : UI.t('escribe en inglés…', 'type in English…');
+      var revealB = UI.el('button', 'ghost-btn', UI.t('Mostrar', 'Reveal')); revealB.type = 'button';
       var hintEl = UI.el('div', 'muted hint', R.hint || '');
       if (R.extra) body.appendChild(UI.el('div', 'muted', R.extra));
       body.appendChild(input);
@@ -639,7 +643,7 @@ window.StageReview = (function () {
        * accepted variants, then the register hint on a miss. */
       function natCheck(text) {
         var N = window.Natural, M = window.LIB && window.LIB.match;
-        if (N && N.isStiff(cur, text)) return { pass: false, hint: 'That is the stiff line.' };
+        if (N && N.isStiff(cur, text)) return { pass: false, hint: UI.t('Esa es la versión acartonada.', 'That is the stiff line.') };
         var r = M ? M.matchTranslation(text, { es: cur.es, en: cur.en, accept: cur.accept || [] }, { accents: 'lenient' }) : { pass: false };
         if (r.pass) return { pass: true };
         return { pass: false, hint: (N && N.registerMiss(cur, text)) || r.hint || null };
@@ -662,13 +666,13 @@ window.StageReview = (function () {
         if (cur.kind === 'natural') {
           var nc = natCheck(input.value);
           if (nc.pass) { good(); return; }
-          feedback.textContent = 'Not quite.' + (nc.hint ? ' ' + nc.hint : '') + ' Try again, or reveal';
+          feedback.textContent = UI.t('Casi.', 'Not quite.') + (nc.hint ? ' ' + hintText(nc.hint) : '') + ' ' + UI.t('Inténtalo otra vez, o muestra la respuesta', 'Try again, or reveal');
           feedback.className = 'feedback bad';
           return;
         }
         var chk = C.checkExact(input.value, R.back, mOpts());
         if (chk.pass) { good(); return; }
-        feedback.textContent = chk.near ? 'Nearly. Check the accents' : 'Not quite. Try again, or reveal';
+        feedback.textContent = chk.near ? UI.t('Casi. Revisa las tildes', 'Nearly. Check the accents') : UI.t('Casi. Inténtalo otra vez, o muestra la respuesta', 'Not quite. Try again, or reveal');
         feedback.className = 'feedback bad';
       });
       var unsure = false;
@@ -676,7 +680,7 @@ window.StageReview = (function () {
         stamp(); revealed = true; unsure = !!isUnsure; hinted = true;
         if (cur.kind === 'natural') setRich(feedback, R.back + (cur.why ? ' · ' : ''), cur.why); else feedback.textContent = R.back;
         feedback.className = 'feedback reveal';
-        revealB.textContent = 'Next →'; hintB.disabled = true; dontB.disabled = true; input.focus();
+        revealB.textContent = UI.t('Siguiente →', 'Next →'); hintB.disabled = true; dontB.disabled = true; input.focus();
       }
       revealB.addEventListener('click', function () {
         if (locked) return;

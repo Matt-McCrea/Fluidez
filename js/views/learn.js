@@ -33,7 +33,7 @@ window.StageLearn = (function () {
   }
 
   function contrastTable(rows) {
-    var html = '<table class="contrast-table"><thead><tr><th>Español</th><th>English</th><th></th></tr></thead><tbody>';
+    var html = '<table class="contrast-table"><thead><tr><th>Español</th><th>' + UI.t('Inglés', 'English') + '</th><th></th></tr></thead><tbody>';
     rows.forEach(function (r) {
       html += '<tr><td class="es">' + r.es + '</td><td>' + r.en + '</td><td class="note">' + (r.note || '') + '</td></tr>';
     });
@@ -54,7 +54,7 @@ window.StageLearn = (function () {
   function fillOpening(wrap, l, opts) {
     if (l.canDo && !(opts && opts.fold)) {
       wrap.appendChild(UI.el('p', 'lesson-cando',
-        '<span class="cando-label">After this you can</span> ' + l.canDo));
+        '<span class="cando-label">' + UI.t('Después de esto puedes', 'After this you can') + '</span> ' + l.canDo));
     }
     if (l.moment && l.moment.length) {
       var d = UI.el('div', 'lesson-moment');
@@ -71,11 +71,11 @@ window.StageLearn = (function () {
   function fillClosing(wrap, l, opts) {
     if (l.canDo && !(opts && opts.fold)) {
       wrap.appendChild(UI.el('p', 'lesson-nowyoucan',
-        '<span class="cando-label">Now you can</span> ' + l.canDo));
+        '<span class="cando-label">' + UI.t('Ahora puedes', 'Now you can') + '</span> ' + l.canDo));
     }
     var deeper = (l.deeper || []).map(lessonTitle).filter(Boolean);
     if (deeper.length) {
-      wrap.appendChild(UI.el('h3', null, 'Understand this better'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Entiende mejor esto', 'Understand this better')));
       var ul = UI.el('ul', 'deeper-list');
       deeper.forEach(function (d) {
         var li = UI.el('li', null);
@@ -177,7 +177,7 @@ window.StageLearn = (function () {
     fillOpening(wrap, l, opts);
     wrap.appendChild(UI.el('p', 'doc-summary', l.summary));
     if (l.keywords && l.keywords.length) {
-      wrap.appendChild(UI.el('h3', null, 'The words you need'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Las palabras que necesitas', 'The words you need')));
       wrap.appendChild(UI.el('div', null, keywordTable(l.keywords)));
     }
     /* After the first section: the learner has met the words and seen one
@@ -195,14 +195,14 @@ window.StageLearn = (function () {
       }
     });
     if (l.contrasts && l.contrasts.length) {
-      wrap.appendChild(UI.el('h3', null, 'Same words, different meaning'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Mismas palabras, otro sentido', 'Same words, different meaning')));
       wrap.appendChild(UI.el('div', null, contrastTable(l.contrasts)));
     }
     if (l.exponents && l.exponents.length) {
       // A function lesson's exponents are grouped BY REGISTER, because the
       // register contrast is the teaching point — an ungrouped list would read
       // as a vocabulary dump and teach the wrong thing.
-      wrap.appendChild(UI.el('h3', null, 'Ways to say it: with friends, at work, in writing'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Formas de decirlo: con amigos, en el trabajo, por escrito', 'Ways to say it: with friends, at work, in writing')));
       var order = (window.REGISTERS || []).map(function (r) { return r.id; });
       var groups = {};
       l.exponents.forEach(function (e) { (groups[e.register] = groups[e.register] || []).push(e); });
@@ -216,30 +216,30 @@ window.StageLearn = (function () {
       });
     }
     if (l.moves && l.moves.length) {
-      wrap.appendChild(UI.el('h3', null, 'How the text is built'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Cómo se construye el texto', 'How the text is built')));
       l.moves.forEach(function (m, i) {
         wrap.appendChild(UI.el('h4', 'register-head', (i + 1) + '. ' + m.h));
         wrap.appendChild(UI.el('div', 'lesson-body', m.html));
       });
     }
     if (l.model && l.model.text) {
-      wrap.appendChild(UI.el('h3', null, 'A model' + (l.model.title ? ': ' + l.model.title : '')));
+      wrap.appendChild(UI.el('h3', null, UI.t('Un modelo', 'A model') + (l.model.title ? ': ' + l.model.title : '')));
       wrap.appendChild(UI.el('div', 'lesson-body model-text', l.model.text));
     }
     if (l.checklist && l.checklist.length) {
-      wrap.appendChild(UI.el('h3', null, 'Before you send it'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Antes de enviarlo', 'Before you send it')));
       var cl = UI.el('ul', 'pitfalls');
       l.checklist.forEach(function (c) { cl.appendChild(UI.el('li', null, c)); });
       wrap.appendChild(cl);
     }
     if (l.pitfalls && l.pitfalls.length) {
-      wrap.appendChild(UI.el('h3', null, 'Watch out'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Ojo', 'Watch out')));
       var ul = UI.el('ul', 'pitfalls');
       l.pitfalls.forEach(function (p) { ul.appendChild(UI.el('li', null, p)); });
       wrap.appendChild(ul);
     }
     if (l.examples && l.examples.length) {
-      wrap.appendChild(UI.el('h3', null, 'In use'));
+      wrap.appendChild(UI.el('h3', null, UI.t('En uso', 'In use')));
       var ex = UI.el('div', 'examples');
       l.examples.forEach(function (e) {
         ex.appendChild(UI.el('div', 'ex', '<span class="ex-es">' + e.es + '</span><span class="ex-en">' + e.en + '</span>'));
@@ -247,7 +247,7 @@ window.StageLearn = (function () {
       wrap.appendChild(ex);
     }
     if (l.conjTabs && l.conjTabs.verbs.length) {   // irregular conjugations under tabs
-      wrap.appendChild(UI.el('h3', null, 'Irregular verbs in this tense (tap each)'));
+      wrap.appendChild(UI.el('h3', null, UI.t('Verbos irregulares en este tiempo (toca cada uno)', 'Irregular verbs in this tense (tap each)')));
       wrap.appendChild(tabsWidget(l.conjTabs.verbs.map(function (inf) {
         return { label: inf, html: verbTable(inf, l.conjTabs.tense) };
       })));
@@ -335,15 +335,15 @@ window.StageLearn = (function () {
     cards.forEach(function (c) {
       var row = UI.el('button', 'new-today-row ghost-btn'); row.type = 'button';
       row.appendChild(UI.el('span', 'card-front small', esc(c.es)));
-      row.appendChild(UI.el('span', 'new-today-en', ' <b>' + esc(c.en) + '</b>' + (c.lit ? ' <span class="muted">(literally: ' + esc(c.lit) + ')</span>' : '')));
+      row.appendChild(UI.el('span', 'new-today-en', ' <b>' + esc(c.en) + '</b>' + (c.lit ? ' <span class="muted">(' + UI.t('literal', 'literally') + ': ' + esc(c.lit) + ')</span>' : '')));
       var sent = sentenceFor(c.es, ctx);
-      var box = UI.el('div', 'muted small new-today-sent hidden', sent ? 'From today: ' + esc(sent) : '');
+      var box = UI.el('div', 'muted small new-today-sent hidden', sent ? UI.t('De hoy: ', 'From today: ') + esc(sent) : '');
       if (sent) row.addEventListener('click', function () { box.classList.toggle('hidden'); });
       list.appendChild(row);
       list.appendChild(box);
     });
     wrap.appendChild(list);
-    wrap.appendChild(UI.nextBtn('Got it', function () {
+    wrap.appendChild(UI.nextBtn(UI.t('Entendido', 'Got it'), function () {
       cards.forEach(function (c) { S.enrol(c.id, 1); });   // first review is tomorrow
       done();
     }));
@@ -403,7 +403,7 @@ window.StageLearn = (function () {
     /* Every probe gets asked. `srs:false` marks the ones that must not join the
      * review deck, not ones to skip — filtering here meant a comprehension
      * check written for the end of the lesson was silently dropped instead. */
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
+    wrap.appendChild(UI.nextBtn(UI.t('Comprobación rápida →', 'Quick check →'), function () { quickCheckItems(host, l.recall || [], 'grammar', done, ctx); }));
     host.appendChild(wrap);
   }
 
@@ -510,6 +510,8 @@ window.StageLearn = (function () {
 
   // Script text: HTML-escaped, *Spanish* in italics, \n as a line break.
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  /* The matcher's hints come from the library in English; from B1 they sit under a Spanish label. */
+  function hintHtml(h) { return (UI.t('y', 'n') === 'y' ? '<b>Pista:</b> ' : '') + fmt(h); }
   function fmt(s) { return esc(s).replace(/\*([^*\n]+)\*/g, '<i>$1</i>').replace(/\n/g, '<br>'); }
   // Spanish over its English, one pair per line, so a dialogue reads line by line.
   function pairs(es, en) {
@@ -562,7 +564,7 @@ window.StageLearn = (function () {
     // ---- hook, examples, the rule
     function opening() {
       wrap.appendChild(UI.el('h1', null, esc(l.title)));
-      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-cando', '<span class="cando-label">After this you can</span> ' + esc(l.canDo)));
+      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-cando', '<span class="cando-label">' + UI.t('Después de esto puedes', 'After this you can') + '</span> ' + esc(l.canDo)));
       if (sc.hook) {
         var h = UI.el('div', 'script-hook');
         h.appendChild(UI.el('p', 'hook-line', fmt(sc.hook.line)));
@@ -598,7 +600,7 @@ window.StageLearn = (function () {
         });
         wrap.appendChild(rc);
       }
-      wrap.appendChild(UI.nextBtn(rp.length || yt.length || tr.length ? 'Try it →' : 'Continuar →', function () { go(1); }));
+      wrap.appendChild(UI.nextBtn(rp.length || yt.length || tr.length ? UI.t('Practícalo →', 'Try it →') : 'Continuar →', function () { go(1); }));
     }
 
     // ---- read and pick: one at a time, tap, one line of why
@@ -611,7 +613,7 @@ window.StageLearn = (function () {
       wrap.appendChild(es);
       var opts = UI.el('div', 'mcq-opts'), why = UI.el('p', 'guess-after'), answered = false;
       var order = seededOrder(r.options.length, l.id + ':rp:' + i);
-      var next = UI.nextBtn('Next →', function () { go(at + 1); });
+      var next = UI.nextBtn(UI.t('Siguiente →', 'Next →'), function () { go(at + 1); });
       next.classList.add('hidden');
       order.forEach(function (oi) {
         var b = UI.el('button', 'mcq-btn', esc(r.options[oi])); b.type = 'button';
@@ -628,7 +630,7 @@ window.StageLearn = (function () {
             btn.disabled = true;
           });
           why.className = 'guess-after' + (right ? ' good' : '');
-          why.innerHTML = (right ? '¡Eso es! ' : 'Not quite. ') + fmt(r.why || '');
+          why.innerHTML = (right ? '¡Eso es! ' : UI.t('Casi. ', 'Not quite. ')) + fmt(r.why || '');
           next.classList.remove('hidden');
           save();
           var here = at;
@@ -645,14 +647,14 @@ window.StageLearn = (function () {
     function typed(list, j, label, key) {
       var t = list[j], M = window.LIB && window.LIB.match;
       wrap.appendChild(eyebrow(label, j, list.length));
-      wrap.appendChild(UI.el('h2', 'q-text', 'Say it in Spanish:'));
+      wrap.appendChild(UI.el('h2', 'q-text', UI.t('Dilo en español:', 'Say it in Spanish:')));
       wrap.appendChild(UI.el('p', 'cloze-text', '“' + fmt(t.en) + '”'));
       var ta = UI.el('textarea', 'answer-area');
       ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
       ta.setAttribute('autocapitalize', 'off'); ta.setAttribute('autocomplete', 'off');
       var fb = UI.el('div', 'feedback');
-      var goB = UI.el('button', 'primary-btn', 'Check'); goB.type = 'button';
-      var skip = UI.el('button', 'ghost-btn', 'Show answer (I\'m stuck)'); skip.type = 'button';
+      var goB = UI.el('button', 'primary-btn', UI.t('Revisa', 'Check')); goB.type = 'button';
+      var skip = UI.el('button', 'ghost-btn', UI.t('Ver la respuesta (no me sale)', 'Show answer (I\'m stuck)')); skip.type = 'button';
       var row = UI.el('div', 'row-controls');
       row.appendChild(goB); row.appendChild(skip);
       wrap.appendChild(ta);
@@ -670,18 +672,18 @@ window.StageLearn = (function () {
         fb.className = 'feedback ' + cls; fb.innerHTML = html;
         ta.readOnly = true;
         skip.classList.add('hidden');
-        goB.textContent = 'Next →';
+        goB.textContent = UI.t('Siguiente →', 'Next →');
         goB.onclick = function () { go(at + 1); };
         save();
       }
       function reveal(hint) {
         if (window.ErrorLog) window.ErrorLog.record({ id: 'err:script:' + l.id + ':' + (key === 'tr' ? 't' : '') + j, front: t.en, back: t.es,
           hint: hint || null, kind: 'grammar', source: 'learn-script', reviewable: false });
-        finish(false, model + (hint ? '<div class="muted small">' + fmt(hint) + '</div>' : ''), 'bad');
+        finish(false, model + (hint ? '<div class="muted small">' + hintHtml(hint) + '</div>' : ''), 'bad');
       }
       // The matcher reads words, not marks: a question typed without ¿ still passes, and is told.
       function marksNote(text) {
-        return /¿/.test(t.es) && !/¿/.test(text) ? 'Spanish opens a question with ¿ as well.' : '';
+        return /¿/.test(t.es) && !/¿/.test(text) ? UI.t('En español la pregunta también abre con ¿.', 'Spanish opens a question with ¿ as well.') : '';
       }
       function submit() {
         if (finished) return;
@@ -689,8 +691,8 @@ window.StageLearn = (function () {
         if (!text) return;
         if (!M) {                                 // no bundle: exact match against the model
           var r0 = C.checkExact(text, [t.es], { meaning: false });
-          if (r0.pass) finish(true, 'Right', 'good');
-          else if (++tries < 2) { fb.className = 'feedback bad'; fb.textContent = (r0.near ? 'Nearly, check the accents.' : 'Not quite.') + ' Try once more.'; ta.focus(); }
+          if (r0.pass) finish(true, UI.t('Bien', 'Right'), 'good');
+          else if (++tries < 2) { fb.className = 'feedback bad'; fb.textContent = (r0.near ? UI.t('Casi, revisa las tildes.', 'Nearly, check the accents.') : UI.t('Casi.', 'Not quite.')) + ' ' + UI.t('Inténtalo otra vez.', 'Try once more.'); ta.focus(); }
           else reveal(null);
           return;
         }
@@ -699,10 +701,10 @@ window.StageLearn = (function () {
         var res = step.result;
         if (step.status === 'correct') {
           var note = [res.note || (res.near ? res.hint : ''), marksNote(text)].filter(Boolean).join(' ');
-          finish(true, 'Right' + (note ? '. ' + fmt(note) + model : ''), 'good');
+          finish(true, UI.t('Bien', 'Right') + (note ? '. ' + hintHtml(note) + model : ''), 'good');
         } else if (step.status === 'retry') {
           fb.className = 'feedback bad';
-          fb.innerHTML = fmt(res.hint || 'Not quite.') + ' Try once more.';
+          fb.innerHTML = (res.hint ? hintHtml(res.hint) : UI.t('Casi.', 'Not quite.')) + ' ' + UI.t('Inténtalo otra vez.', 'Try once more.');
           ta.focus();
         } else {
           reveal(res.hint || null);
@@ -725,12 +727,12 @@ window.StageLearn = (function () {
       ta.rows = 3; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
       var checklist = UI.el('ul', 'constraint-list');
       var modelBox = UI.el('div');
-      var doneB = UI.el('button', 'primary-btn', p.model ? 'Compare with a model →' : 'Done →'); doneB.type = 'button';
-      var skipB = UI.el('button', 'ghost-btn', p.model ? 'Show the model' : 'Skip'); skipB.type = 'button';
+      var doneB = UI.el('button', 'primary-btn', p.model ? UI.t('Compara con el modelo →', 'Compare with a model →') : UI.t('Listo →', 'Done →')); doneB.type = 'button';
+      var skipB = UI.el('button', 'ghost-btn', p.model ? UI.t('Ver el modelo', 'Show the model') : UI.t('Saltar', 'Skip')); skipB.type = 'button';
       wrap.appendChild(ta);
       wrap.appendChild(UI.accentBar(function () { return ta; }));
       var task = { constraints: p.constraints || [] };
-      if (task.constraints.length) wrap.appendChild(UI.el('div', 'checklist-title muted', 'Your sentence needs to…'));
+      if (task.constraints.length) wrap.appendChild(UI.el('div', 'checklist-title muted', UI.t('Tu frase debe…', 'Your sentence needs to…')));
       wrap.appendChild(checklist);
       wrap.appendChild(modelBox);
       var row = UI.el('div', 'row-controls');
@@ -755,9 +757,9 @@ window.StageLearn = (function () {
         if (shown || !p.model) { go(at + 1); return; }
         shown = true;
         modelBox.appendChild(UI.el('div', null,
-          '<div class="checklist-title muted">One way to say it:</div><div class="model-answer">' + esc(p.model) + '</div>' +
-          '<p class="muted small">Yours is about you, so it will say different things. Compare the verb forms and the little words.</p>'));
-        doneB.textContent = 'Next →'; doneB.disabled = false;
+          '<div class="checklist-title muted">' + UI.t('Una forma de decirlo:', 'One way to say it:') + '</div><div class="model-answer">' + esc(p.model) + '</div>' +
+          '<p class="muted small">' + UI.t('La tuya es sobre ti, así que dirá cosas distintas. Compara las formas del verbo y las palabras pequeñas.', 'Yours is about you, so it will say different things. Compare the verb forms and the little words.') + '</p>'));
+        doneB.textContent = UI.t('Siguiente →', 'Next →'); doneB.disabled = false;
         skipB.classList.add('hidden');
         ta.readOnly = true;
       }
@@ -770,23 +772,23 @@ window.StageLearn = (function () {
       wrap.appendChild(UI.el('h2', null, esc(l.title)));
       if (rp.length || yt.length || tr.length) {
         wrap.appendChild(UI.el('p', 'muted script-score',
-          (rp.length ? 'Read and pick: ' + score.rp + ' of ' + rp.length + ' first time.' : '') +
-          (yt.length ? ' Your turn: ' + score.yt + ' of ' + yt.length + '.' : '') +
-          (tr.length ? ' Now translate: ' + score.tr + ' of ' + tr.length + '.' : '')));
+          (rp.length ? UI.t('Lee y elige: ' + score.rp + ' de ' + rp.length + ' a la primera.', 'Read and pick: ' + score.rp + ' of ' + rp.length + ' first time.') : '') +
+          (yt.length ? UI.t(' Te toca: ' + score.yt + ' de ' + yt.length + '.', ' Your turn: ' + score.yt + ' of ' + yt.length + '.') : '') +
+          (tr.length ? UI.t(' Ahora traduce: ' + score.tr + ' de ' + tr.length + '.', ' Now translate: ' + score.tr + ' of ' + tr.length + '.') : '')));
       }
       if (sc.pitfalls && sc.pitfalls.length) {
-        wrap.appendChild(UI.el('h3', null, 'Watch out'));
+        wrap.appendChild(UI.el('h3', null, UI.t('Ojo', 'Watch out')));
         var ul = UI.el('ul', 'pitfalls');
         sc.pitfalls.forEach(function (x) { ul.appendChild(UI.el('li', null, fmt(x))); });
         wrap.appendChild(ul);
       }
-      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-nowyoucan', '<span class="cando-label">Now you can</span> ' + esc(l.canDo)));
+      if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-nowyoucan', '<span class="cando-label">' + UI.t('Ahora puedes', 'Now you can') + '</span> ' + esc(l.canDo)));
       var more = UI.el('details', 'read-more');
       more.appendChild(UI.el('summary', null, UI.t('Leer más: la lección completa', 'Read more: the full lesson')));
       more.appendChild(fillLesson(UI.el('div', 'read-more-body'), l, { fold: true }));
       var met = shownPhrases(l, sc);
       if (met.length) {
-        wrap.appendChild(UI.el('h3', null, 'Phrases you met'));
+        wrap.appendChild(UI.el('h3', null, UI.t('Frases que viste', 'Phrases you met')));
         var pl = UI.el('ul', 'pitfalls');
         met.forEach(function (p) { pl.appendChild(UI.el('li', null, '<i>' + esc(p.es) + '</i>: ' + esc(p.en))); });
         wrap.appendChild(pl);
@@ -796,7 +798,7 @@ window.StageLearn = (function () {
       var seenEs = {};
       yt.concat(tr).forEach(function (t) { seenEs[plainEs(t.es)] = 1; });
       var recall = (l.recall || []).filter(function (r) { return !seenEs[plainEs(r.back)]; });
-      wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, recall, 'grammar', done, ctx); }));
+      wrap.appendChild(UI.nextBtn(UI.t('Comprobación rápida →', 'Quick check →'), function () { quickCheckItems(host, recall, 'grammar', done, ctx); }));
     }
 
     save();
@@ -810,12 +812,12 @@ window.StageLearn = (function () {
       return w || { es: es, en: '' };
     });
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'New words · ' + (CAT_LABEL[f.cat] || f.cat)));
-    wrap.appendChild(UI.el('p', 'muted', 'Learn these by meaning first. They join your review deck straight away.'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Palabras nuevas', 'New words') + ' · ' + (CAT_LABEL[f.cat] || f.cat)));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Aprende primero el significado. Entran a tu repaso de una vez.', 'Learn these by meaning first. They join your review deck straight away.')));
     wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
     words.forEach(function (w) { S.enrol('v:' + w.es + ':meaning'); });
     var check = words.slice(0, 6).map(function (w) { return qcItem('v:' + w.es + ':meaning', w.es, w.en); });
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'vocab', done, ctx); }));
+    wrap.appendChild(UI.nextBtn(UI.t('Comprobación rápida →', 'Quick check →'), function () { quickCheckItems(host, check, 'vocab', done, ctx); }));
     host.appendChild(wrap);
   }
 
@@ -823,21 +825,21 @@ window.StageLearn = (function () {
   function teachVerbs(host, ctx, f, done) {
     var verbs = (f.verbs || []).map(function (inf) { return window.ENGINE.verbByInf(inf); }).filter(Boolean);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'New verbs'));
-    wrap.appendChild(UI.el('p', 'muted', 'Meet these verbs by meaning. You\'ll conjugate them in the ' + UI.t('Aplicar', 'Apply') + ' and ' + UI.t('Producir', 'Produce') + ' stages as you learn each tense.'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Verbos nuevos', 'New verbs')));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Conoce estos verbos por su significado. Los conjugarás en las etapas ' + UI.t('Aplicar', 'Apply') + ' y ' + UI.t('Producir', 'Produce') + ' a medida que aprendas cada tiempo.', 'Meet these verbs by meaning. You\'ll conjugate them in the ' + UI.t('Aplicar', 'Apply') + ' and ' + UI.t('Producir', 'Produce') + ' stages as you learn each tense.')));
     wrap.appendChild(UI.el('div', null, listTable(verbs.map(function (v) { return [v.inf, v.en]; }))));
     verbs.forEach(function (v) { S.enrol('vm:' + v.inf); });
     var check = verbs.map(function (v) { return qcItem('vm:' + v.inf, v.inf, v.en); });
-    wrap.appendChild(UI.nextBtn('Quick check →', function () { quickCheckItems(host, check, 'verb', done, ctx); }));
+    wrap.appendChild(UI.nextBtn(UI.t('Comprobación rápida →', 'Quick check →'), function () { quickCheckItems(host, check, 'verb', done, ctx); }));
     host.appendChild(wrap);
   }
 
   // ---- practice day (no new content) ----
   function teachPractice(host, ctx, done) {
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, 'Practice & review day'));
+    wrap.appendChild(UI.el('h1', null, UI.t('Día de práctica y repaso', 'Practice & review day')));
     if (ctx.focus && ctx.focus.note) wrap.appendChild(UI.el('p', 'muted', ctx.focus.note));
-    wrap.appendChild(UI.el('p', 'doc-summary', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.'));
+    wrap.appendChild(UI.el('p', 'doc-summary', UI.t('Hoy no hay gramática nueva: un día para que se asiente lo que ya viste. El repaso, la lectura y los ejercicios usan cosas que ya conoces.', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.')));
     wrap.appendChild(UI.nextBtn('Continuar →', done));
     host.appendChild(wrap);
   }
@@ -866,8 +868,8 @@ window.StageLearn = (function () {
 
     UI.clear(host);
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h2', null, 'Quick check'));
-    wrap.appendChild(UI.el('p', 'muted', 'Answer from memory. These join your review deck.'));
+    wrap.appendChild(UI.el('h2', null, UI.t('Comprobación rápida', 'Quick check')));
+    wrap.appendChild(UI.el('p', 'muted', UI.t('Responde de memoria. Estas entran a tu repaso.', 'Answer from memory. These join your review deck.')));
 
     var i = 0, form = UI.el('div');
     wrap.appendChild(form);
@@ -885,7 +887,7 @@ window.StageLearn = (function () {
         kept.forEach(function (r) { S.enrol(r.id); });
         UI.clear(form);
         form.appendChild(UI.el('p', 'feedback good', kept.length
-          ? '¡Hecho! ' + kept.length + (kept.length === 1 ? ' of these joins' : ' of these join') + ' your reviews.'
+          ? '¡Hecho! ' + UI.t(kept.length === 1 ? 'Esta entra a tus repasos.' : kept.length + ' de estas entran a tus repasos.', kept.length + (kept.length === 1 ? ' of these joins' : ' of these join') + ' your reviews.')
           : '¡Hecho!'));
         form.appendChild(UI.nextBtn('Continuar →', done));
         return;
@@ -925,8 +927,8 @@ window.StageLearn = (function () {
             if (!right) {
               logMiss();
               [].forEach.call(opts.children, function (c, ci) { if (ci === it.probe.answer) c.classList.add('right'); });
-              fb.textContent = 'Not quite'; fb.className = 'feedback bad';
-              form.appendChild(UI.nextBtn('Next →', function () { next(false); }));
+              fb.textContent = UI.t('Casi', 'Not quite'); fb.className = 'feedback bad';
+              form.appendChild(UI.nextBtn(UI.t('Siguiente →', 'Next →'), function () { next(false); }));
             } else {
               fb.textContent = '¡Correcto!'; fb.className = 'feedback good';
               setTimeout(function () { next(true); }, 450);
@@ -943,9 +945,9 @@ window.StageLearn = (function () {
        * about and checked by looking, not typed: not graded, not enrolled. */
       var LS = window.Lessons;
       if ((!it.probe || it.probe.kind === 'recall') && LS && LS.englishSentence && LS.englishSentence(it.back)) {
-        form.appendChild(UI.el('p', 'muted small', 'Think, then tap to see.'));
+        form.appendChild(UI.el('p', 'muted small', UI.t('Piensa y toca para ver.', 'Think, then tap to see.')));
         var ans = UI.el('div', 'feedback reveal hidden', esc(it.back));
-        var seeB = UI.el('button', 'ghost-btn', 'Tap to see'); seeB.type = 'button';
+        var seeB = UI.el('button', 'ghost-btn', UI.t('Toca para ver', 'Tap to see')); seeB.type = 'button';
         var shown = false;
         seeB.addEventListener('click', function () {
           if (shown) { i++; show(); return; }
@@ -956,7 +958,7 @@ window.StageLearn = (function () {
       }
       var input = UI.el('input', 'answer-input');
       input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
-      var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
+      var reveal = UI.el('button', 'ghost-btn', UI.t('Mostrar', 'Reveal')); reveal.type = 'button';
       var revealed = false;
       form.appendChild(input);
       form.appendChild(UI.accentBar(function () { return input; }));
@@ -980,12 +982,12 @@ window.StageLearn = (function () {
           also: C.answerForms ? C.answerForms(it.back) : null
         });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }
-        else { fb.textContent = r.near ? 'Nearly, check the accents' : 'Not quite'; fb.className = 'feedback bad'; }
+        else { fb.textContent = r.near ? UI.t('Casi, revisa las tildes', 'Nearly, check the accents') : UI.t('Casi', 'Not quite'); fb.className = 'feedback bad'; }
       });
       reveal.addEventListener('click', function () {
         if (revealed) { next(false); return; }
         revealed = true; fb.textContent = it.back; fb.className = 'feedback reveal';
-        reveal.textContent = 'Next →';
+        reveal.textContent = UI.t('Siguiente →', 'Next →');
         logMiss();
       });
     }

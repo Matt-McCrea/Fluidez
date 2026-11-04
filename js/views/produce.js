@@ -19,9 +19,12 @@
 window.StageProduce = (function () {
   var UI = window.UI, E = window.ENGINE, C = window.Checker;
 
+  /* The matcher's hints come from the library in English; from B1 they sit under a Spanish label. */
+  function hintText(h) { return (UI.t('y', 'n') === 'y' ? 'Pista: ' : '') + h; }
+
   // ---- scrambled sentence builder ----------------------------------------
   function runBuild(body, task, next) {
-    body.appendChild(UI.el('h2', 'q-text', 'Build the sentence:'));
+    body.appendChild(UI.el('h2', 'q-text', UI.t('Arma la frase:', 'Build the sentence:')));
     body.appendChild(UI.el('p', 'muted', '“' + task.en + '”'));
 
     var words = task.answer.replace(/[.!?]$/, '').split(' ');
@@ -41,7 +44,7 @@ window.StageProduce = (function () {
         b.addEventListener('click', function () { chosen.splice(ci, 1); render(); });
         line.appendChild(b);
       });
-      if (!chosen.length) line.appendChild(UI.el('span', 'muted', 'click the words below in order…'));
+      if (!chosen.length) line.appendChild(UI.el('span', 'muted', UI.t('toca las palabras de abajo en orden…', 'click the words below in order…')));
       scrambled.forEach(function (w, si) {
         var used = chosen.indexOf(si) !== -1;
         var b = UI.el('button', 'word-chip' + (used ? ' used' : ''), w); b.type = 'button';
@@ -58,7 +61,7 @@ window.StageProduce = (function () {
         fb.className = 'feedback good';
         setTimeout(next, 900);
       } else {
-        fb.textContent = 'Not quite. Click a word to send it back.';
+        fb.textContent = UI.t('Casi. Toca una palabra para devolverla.', 'Not quite. Click a word to send it back.');
         fb.className = 'feedback bad';
       }
     }
@@ -102,14 +105,14 @@ window.StageProduce = (function () {
     var counter = isPara ? UI.el('div', 'muted small write-counter') : null;
     var checklist = UI.el('ul', 'constraint-list');
     var modelBox = UI.el('div');
-    var doneB = UI.el('button', 'primary-btn', 'Compare with model →'); doneB.type = 'button';
+    var doneB = UI.el('button', 'primary-btn', UI.t('Compara con el modelo →', 'Compare with model →')); doneB.type = 'button';
     doneB.disabled = true;
-    var skipB = UI.el('button', 'ghost-btn', 'Show model (I\'m stuck)'); skipB.type = 'button';
+    var skipB = UI.el('button', 'ghost-btn', UI.t('Ver el modelo (no me sale)', 'Show model (I\'m stuck)')); skipB.type = 'button';
 
     body.appendChild(ta);
     body.appendChild(UI.accentBar(function () { return ta; }));
     if (counter) body.appendChild(counter);
-    body.appendChild(UI.el('div', 'checklist-title muted', (isPara ? 'Your paragraph' : 'Your sentence') + ' needs to…'));
+    body.appendChild(UI.el('div', 'checklist-title muted', (isPara ? UI.t('Tu párrafo debe…', 'Your paragraph needs to…') : UI.t('Tu frase debe…', 'Your sentence needs to…'))));
     body.appendChild(checklist);
     body.appendChild(modelBox);
     var row = UI.el('div', 'row-controls');
@@ -118,7 +121,7 @@ window.StageProduce = (function () {
     ta.focus();
 
     var lastRes = null, warned = false;
-    var telegramNote = UI.el('p', 'muted small hidden', 'That reads like a telegram: add the small words (el, la, un, mi, me, te) and try again.');
+    var telegramNote = UI.el('p', 'muted small hidden', UI.t('Suena a telegrama: agrega las palabras pequeñas (el, la, un, mi, me, te) e inténtalo otra vez.', 'That reads like a telegram: add the small words (el, la, un, mi, me, te) and try again.'));
     body.insertBefore(telegramNote, modelBox);
     function renderCheck() {
       var res = C.checkWriting(task, ta.value);
@@ -157,9 +160,9 @@ window.StageProduce = (function () {
       var models = task.models || [];
       var html = models.map(function (m) { return '<div class="model-answer">' + m + '</div>'; }).join('');
       modelBox.appendChild(UI.el('div', null,
-        '<div class="checklist-title muted">Model answer' + (models.length > 1 ? 's' : '') + ':</div>' + html +
-        '<p class="muted small">Compare word by word. Did you say it a natural way? Differences in vocabulary are fine; look at the verb forms and little words.</p>'));
-      doneB.textContent = 'Next →';
+        '<div class="checklist-title muted">' + (models.length > 1 ? UI.t('Respuestas modelo', 'Model answers') : UI.t('Respuesta modelo', 'Model answer')) + ':</div>' + html +
+        '<p class="muted small">' + UI.t('Compara palabra por palabra. ¿Lo dijiste de forma natural? Las diferencias de vocabulario están bien; fíjate en las formas del verbo y las palabras pequeñas.', 'Compare word by word. Did you say it a natural way? Differences in vocabulary are fine; look at the verb forms and little words.') + '</p>'));
+      doneB.textContent = UI.t('Siguiente →', 'Next →');
       doneB.disabled = false;
       skipB.classList.add('hidden');
     }
@@ -186,14 +189,14 @@ window.StageProduce = (function () {
   function lines(s) { return String(s || '').replace(/\n/g, '<br>'); }
   function runBankTranslate(body, task, next) {
     var M = window.LIB && window.LIB.match;
-    body.appendChild(UI.el('h2', 'q-text', task.lead ? 'Say it:' : 'Say it in Spanish:'));
+    body.appendChild(UI.el('h2', 'q-text', task.lead ? UI.t('Dilo:', 'Say it:') : UI.t('Dilo en español:', 'Say it in Spanish:')));
     if (task.lead) body.appendChild(UI.el('p', 'muted', emph(task.lead)));
     body.appendChild(UI.el('p', 'cloze-text', '“' + lines(task.prompt) + '”'));
     var ta = UI.el('textarea', 'answer-area');
     ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
     var fb = UI.el('div', 'feedback');
-    var go = UI.el('button', 'primary-btn', 'Check'); go.type = 'button';
-    var skip = UI.el('button', 'ghost-btn', 'Show answer (I\'m stuck)'); skip.type = 'button';
+    var go = UI.el('button', 'primary-btn', UI.t('Revisa', 'Check')); go.type = 'button';
+    var skip = UI.el('button', 'ghost-btn', UI.t('Ver la respuesta (no me sale)', 'Show answer (I\'m stuck)')); skip.type = 'button';
     var row = UI.el('div', 'row-controls');
     row.appendChild(go); row.appendChild(skip);
     body.appendChild(ta);
@@ -211,13 +214,13 @@ window.StageProduce = (function () {
       fb.innerHTML = html;
       ta.readOnly = true;
       skip.classList.add('hidden');
-      go.textContent = 'Next →'; go.disabled = false;
+      go.textContent = UI.t('Siguiente →', 'Next →'); go.disabled = false;
       go.onclick = function () { next(ok); };
     }
     function reveal(hint) {
       if (window.ErrorLog) window.ErrorLog.record({ id: 'err:translate:' + E.normalize(task.es), front: task.prompt,
         back: task.es, hint: hint || null, kind: 'error', source: 'produce-translate', reviewable: true });
-      finish(false, '<div class="model-answer">' + lines(task.es) + '</div>' + (hint ? '<div class="muted small">' + hint + '</div>' : ''), 'bad');
+      finish(false, '<div class="model-answer">' + lines(task.es) + '</div>' + (hint ? '<div class="muted small">' + hintText(hint) + '</div>' : ''), 'bad');
     }
     function submit() {
       if (finished) return;
@@ -229,10 +232,10 @@ window.StageProduce = (function () {
       var res = step.result;
       if (step.status === 'correct') {
         var note = res.note || (res.near ? res.hint : '');
-        finish(true, 'Right' + (note ? '. ' + note + '<div class="model-answer">' + lines(task.es) + '</div>' : ''), 'good');
+        finish(true, UI.t('Bien', 'Right') + (note ? '. ' + hintText(note) + '<div class="model-answer">' + lines(task.es) + '</div>' : ''), 'good');
       } else if (step.status === 'retry') {
         fb.className = 'feedback bad';
-        fb.textContent = (res.hint || 'Not quite.') + ' Try once more.';
+        fb.textContent = (res.hint ? hintText(res.hint) : UI.t('Casi.', 'Not quite.')) + ' ' + UI.t('Inténtalo otra vez.', 'Try once more.');
         ta.focus();
       } else {
         reveal(res.hint || null);
@@ -295,7 +298,7 @@ window.StageProduce = (function () {
       var ta = UI.el('textarea', 'answer-area');
       ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
       var fb = UI.el('div', 'feedback');
-      var go = UI.el('button', 'primary-btn', 'Check'); go.type = 'button';
+      var go = UI.el('button', 'primary-btn', UI.t('Revisa', 'Check')); go.type = 'button';
       var row = UI.el('div', 'row-controls'); row.appendChild(go);
       body.appendChild(ta); body.appendChild(UI.accentBar(function () { return ta; }));
       body.appendChild(fb); body.appendChild(row);
@@ -306,7 +309,7 @@ window.StageProduce = (function () {
       function finish(rec, html, cls) {
         finished = true; ta.readOnly = true;
         fb.className = 'feedback ' + cls; fb.innerHTML = html;
-        go.textContent = 'Next →';
+        go.textContent = UI.t('Siguiente →', 'Next →');
         go.onclick = function () { advance(rec); };
       }
       function submit() {
@@ -315,15 +318,15 @@ window.StageProduce = (function () {
         if (!text) return;
         var g = S.grade(t, text);
         tries++;
-        if (g.pass) { finish({ npc: t.npc, text: text, ok: true }, 'Right' + (g.hint ? '. ' + esc(g.hint) : ''), 'good'); return; }
+        if (g.pass) { finish({ npc: t.npc, text: text, ok: true }, UI.t('Bien', 'Right') + (g.hint ? '. ' + esc(hintText(g.hint)) : ''), 'good'); return; }
         if (tries < 2) {
           fb.className = 'feedback bad';
-          fb.textContent = (g.hint || 'Not quite.') + ' Try once more.';
+          fb.textContent = (g.hint ? hintText(g.hint) : UI.t('Casi.', 'Not quite.')) + ' ' + UI.t('Inténtalo otra vez.', 'Try once more.');
           ta.focus(); return;
         }
         var model = (t.accept || [])[0] || '';
         finish({ npc: t.npc, text: text, ok: false, model: model },
-          '<div class="model-answer">' + esc(model) + '</div>' + (g.hint ? '<div class="muted small">' + esc(g.hint) + '</div>' : ''), 'bad');
+          '<div class="model-answer">' + esc(model) + '</div>' + (g.hint ? '<div class="muted small">' + esc(hintText(g.hint)) + '</div>' : ''), 'bad');
       }
       go.onclick = submit;
       ta.addEventListener('keydown', function (e) {
@@ -338,8 +341,8 @@ window.StageProduce = (function () {
         d.appendChild(UI.el('p', l.ok ? 'model-answer' : 'feedback bad', esc(l.text) + (l.ok ? '' : ' → ' + esc(l.model))));
         body.appendChild(d);
       });
-      body.appendChild(UI.el('p', 'muted', 'Scene done'));
-      body.appendChild(UI.nextBtn('Continue →', done));
+      body.appendChild(UI.el('p', 'muted', UI.t('Escena terminada', 'Scene done')));
+      body.appendChild(UI.nextBtn(UI.t('Continuar →', 'Continue →'), done));
     }
     turn();
   }
@@ -377,9 +380,9 @@ window.StageProduce = (function () {
       var step = chain.steps[at], first = at === 0;
       var sec = UI.el('div', 'buildit-step');
       body.appendChild(sec);
-      sec.appendChild(UI.el('div', 'muted small', 'Build it · ' + (at + 1) + ' / ' + chain.steps.length));
+      sec.appendChild(UI.el('div', 'muted small', UI.t('Constrúyelo', 'Build it') + ' · ' + (at + 1) + ' / ' + chain.steps.length));
       var lead = BI.lead(step);
-      var cue = { person: 'Now change who does it.', tense: 'Now say it in the past.', neg: 'Now make it negative.', pronoun: 'Now say it without repeating the thing.' }[step.change] || '';
+      var cue = { person: UI.t('Ahora cambia quién lo hace.', 'Now change who does it.'), tense: UI.t('Ahora dilo en pasado.', 'Now say it in the past.'), neg: UI.t('Ahora hazlo negativo.', 'Now make it negative.'), pronoun: UI.t('Ahora dilo sin repetir la cosa.', 'Now say it without repeating the thing.') }[step.change] || '';
       var task = { prompt: step.en, es: step.es, accept: step.accept || [], lead: (cue ? cue + ' ' : '') + lead };
       save(at);
       runBankTranslate(sec, task, function () {
@@ -410,15 +413,15 @@ window.StageProduce = (function () {
     return l.replace(/\s+[-\u2013\u2014]+\s+/g, ', ').replace(/[\u2013\u2014]/g, ', ').replace(/(\w)-(?=\s)/g, '$1');
   }
   function runAboutMe(body, ab, ctx, done) {
-    var BI = window.BuildIt, prompt = ab.spec.prompt || ('One true line for your script: say something about you ' + ab.spec.text + '.');
-    if (ab.title) body.appendChild(UI.el('div', 'muted small', 'My script · ' + esc(ab.title)));
+    var BI = window.BuildIt, prompt = ab.spec.prompt || UI.t('Una línea verdadera para tu guion: di algo sobre ti ' + ab.spec.text + '.', 'One true line for your script: say something about you ' + ab.spec.text + '.');
+    if (ab.title) body.appendChild(UI.el('div', 'muted small', UI.t('Mi guion', 'My script') + ' · ' + esc(ab.title)));
     body.appendChild(UI.el('h2', 'q-text', emph(prompt)));
     var ta = UI.el('textarea', 'answer-area');
     ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
-    var en = UI.el('input', 'answer-input wide'); en.type = 'text'; en.placeholder = 'In English (optional)';
+    var en = UI.el('input', 'answer-input wide'); en.type = 'text'; en.placeholder = UI.t('En inglés (opcional)', 'In English (optional)');
     var list = UI.el('ul', 'constraint-list');
-    var add = UI.el('button', 'primary-btn', 'Add to my script'); add.type = 'button'; add.disabled = true;
-    var skip = UI.el('button', 'ghost-btn', 'Skip'); skip.type = 'button';
+    var add = UI.el('button', 'primary-btn', UI.t('Agregar a mi guion', 'Add to my script')); add.type = 'button'; add.disabled = true;
+    var skip = UI.el('button', 'ghost-btn', UI.t('Saltar', 'Skip')); skip.type = 'button';
     var row = UI.el('div', 'row-controls'); row.appendChild(add); row.appendChild(skip);
     body.appendChild(ta); body.appendChild(UI.accentBar(function () { return ta; }));
     body.appendChild(en); body.appendChild(list); body.appendChild(row);
@@ -441,10 +444,10 @@ window.StageProduce = (function () {
       }
       BI.add({ unit: ab.unit, es: ta.value, en: en.value, p: prompt.replace(/\*/g, ''), day: ctx.di });
       UI.clear(body);
-      body.appendChild(UI.el('h2', null, 'Added to your script'));
+      body.appendChild(UI.el('h2', null, UI.t('Agregada a tu guion', 'Added to your script')));
       body.appendChild(UI.el('p', 'model-answer', esc(ta.value.trim())));
-      body.appendChild(UI.el('p', 'muted', 'It comes back in your reviews.'));
-      body.appendChild(UI.nextBtn('Continue →', done));
+      body.appendChild(UI.el('p', 'muted', UI.t('Vuelve en tus repasos.', 'It comes back in your reviews.')));
+      body.appendChild(UI.nextBtn(UI.t('Continuar →', 'Continue →'), done));
     });
     skip.addEventListener('click', done);
   }
@@ -455,21 +458,21 @@ window.StageProduce = (function () {
     function paint() {
       UI.clear(body);
       var all = BI.load();
-      body.appendChild(UI.el('h2', null, 'My script (' + all.length + ' line' + (all.length === 1 ? '' : 's') + ')'));
-      if (!all.length) body.appendChild(UI.el('p', 'muted', 'Your true lines about you collect here, one for each unit.'));
+      body.appendChild(UI.el('h2', null, UI.t('Mi guion (' + all.length + (all.length === 1 ? ' línea' : ' líneas') + ')', 'My script (' + all.length + ' line' + (all.length === 1 ? '' : 's') + ')')));
+      if (!all.length) body.appendChild(UI.el('p', 'muted', UI.t('Aquí se juntan tus líneas verdaderas sobre ti, una por unidad.', 'Your true lines about you collect here, one for each unit.')));
       var last = null;
       all.forEach(function (l, n) {
         if (l.unit !== last) { last = l.unit; body.appendChild(UI.el('h3', null, esc((units[l.unit] && units[l.unit].title) || l.unit))); }
         var d = UI.el('div', 'script-line');
         d.appendChild(UI.el('p', 'model-answer', esc(l.es)));
         if (l.en) d.appendChild(UI.el('p', 'muted small', esc(l.en)));
-        var ed = UI.el('button', 'ghost-btn', 'Edit'); ed.type = 'button';
+        var ed = UI.el('button', 'ghost-btn', UI.t('Editar', 'Edit')); ed.type = 'button';
         ed.addEventListener('click', function () {
           UI.clear(d);
           var t = UI.el('textarea', 'answer-area'); t.rows = 2; t.value = l.es; t.spellcheck = false;
-          var e = UI.el('input', 'answer-input wide'); e.type = 'text'; e.value = l.en || ''; e.placeholder = 'In English (optional)';
-          var sv = UI.el('button', 'primary-btn', 'Save'); sv.type = 'button';
-          var cx = UI.el('button', 'ghost-btn', 'Cancel'); cx.type = 'button';
+          var e = UI.el('input', 'answer-input wide'); e.type = 'text'; e.value = l.en || ''; e.placeholder = UI.t('En inglés (opcional)', 'In English (optional)');
+          var sv = UI.el('button', 'primary-btn', UI.t('Guardar', 'Save')); sv.type = 'button';
+          var cx = UI.el('button', 'ghost-btn', UI.t('Cancelar', 'Cancel')); cx.type = 'button';
           sv.addEventListener('click', function () { if (BI.edit(n, t.value, e.value)) paint(); });
           cx.addEventListener('click', paint);
           d.appendChild(t); d.appendChild(UI.accentBar(function () { return t; })); d.appendChild(e); d.appendChild(sv); d.appendChild(cx);
@@ -478,7 +481,7 @@ window.StageProduce = (function () {
         d.appendChild(ed);
         body.appendChild(d);
       });
-      body.appendChild(UI.nextBtn('Back', back));
+      body.appendChild(UI.nextBtn(UI.t('Volver', 'Back'), back));
     }
     paint();
   }
@@ -531,7 +534,7 @@ window.StageProduce = (function () {
     }
     function playChain() {
       UI.clear(body);
-      progress.textContent = 'Build it';
+      progress.textContent = UI.t('Constrúyelo', 'Build it');
       runBuildIt(body, chain, ex.bi || 0, function (n) { if (st) st.save(0, { done: doneCount, bi: n }); },
         function () { chainDone = true; ex = {}; show(); });
     }
@@ -542,10 +545,10 @@ window.StageProduce = (function () {
       ctx.results.produce = { done: doneCount, total: tasks.length };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Escrito', 'Written')));
-      body.appendChild(UI.el('p', 'muted', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today. Most learners skip this part, and it is the part that builds fluency.'));
+      body.appendChild(UI.el('p', 'muted', UI.t('Hoy produjiste ' + doneCount + (doneCount === 1 ? ' texto' : ' textos') + ' en tu propio español. Muchos estudiantes se saltan esta parte, y es la que construye la fluidez.', 'You produced ' + doneCount + ' piece' + (doneCount === 1 ? '' : 's') + ' of your own Spanish today. Most learners skip this part, and it is the part that builds fluency.')));
       var nLines = window.BuildIt ? window.BuildIt.count() : 0;
       if (nLines) {
-        var sb = UI.el('button', 'ghost-btn script-link', 'My script (' + nLines + ' line' + (nLines === 1 ? '' : 's') + ')'); sb.type = 'button';
+        var sb = UI.el('button', 'ghost-btn script-link', UI.t('Mi guion (' + nLines + (nLines === 1 ? ' línea' : ' líneas') + ')', 'My script (' + nLines + ' line' + (nLines === 1 ? '' : 's') + ')')); sb.type = 'button';
         sb.addEventListener('click', function () { runScript(body, finish); });
         body.appendChild(sb);
       }

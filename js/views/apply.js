@@ -120,13 +120,17 @@ window.StageApply = (function () {
     queue.splice(Math.min(at + 4, queue.length), 0, copy);
     return true;
   }
+  /* Pure parts are tested without a Profile, so they fall back to English there. */
+  function T(es, en) { return (window.Profile && window.Profile.term) ? UI.t(es, en) : en; }
+  /* The library's hints are English; from B1 they sit under a Spanish label. */
+  function hintLine(h) { return (UI.t('y', 'n') === 'y' ? '<b>Pista:</b> ' : '') + esc(h); }
   // The prompt line for a choice: bank kinds ask their own question.
   function choicePrompt(it) {
     var m = /^(“[^”]*”)\s+(\S[\s\S]*)$/.exec(String(it.text || ''));
-    if (it.bankKind === 'read') return { text: m ? m[1] : it.text, q: m ? m[2] : 'Which one fits?' };
-    if (it.bankKind === 'match') return { text: m ? m[1] : it.text, q: 'Which sentence says this?' };
-    if (it.bankKind === 'gap') return { text: it.text, q: 'Which word goes in the gap?' };
-    return { text: it.text, q: 'Which one does this sentence need?' };
+    if (it.bankKind === 'read') return { text: m ? m[1] : it.text, q: m ? m[2] : T('¿Cuál encaja?', 'Which one fits?') };
+    if (it.bankKind === 'match') return { text: m ? m[1] : it.text, q: T('¿Cuál frase dice esto?', 'Which sentence says this?') };
+    if (it.bankKind === 'gap') return { text: it.text, q: T('¿Qué palabra va en el espacio?', 'Which word goes in the gap?') };
+    return { text: it.text, q: T('¿Cuál necesita esta frase?', 'Which one does this sentence need?') };
   }
   // Why a chosen option was wrong: the item's own reason, else a matched rule, else one neutral line.
   function whyWrong(it, chosen, answer, lib) {
@@ -135,7 +139,7 @@ window.StageApply = (function () {
       var h = hintFor(it, chosen, answer, lib);
       if (h && h.matched) return h.hint;
     }
-    return 'Not this one. The sentence needs ' + answer + '.';
+    return T('Esa no. La frase necesita ' + answer + '.', 'Not this one. The sentence needs ' + answer + '.');
   }
 
   // Conjugation-in-context, scheduled per (lemma, tense) — see js/srs.js.
@@ -221,7 +225,7 @@ window.StageApply = (function () {
 
     // word-bank chooser for a cloze (beginner)
     function showWordbank(it, answer) {
-      body.appendChild(UI.el('p', 'muted small', 'Tap the correct form of <b>' + it.inf + '</b>. Which form goes here?'));
+      body.appendChild(UI.el('p', 'muted small', UI.t('Toca la forma correcta de <b>' + it.inf + '</b>. ¿Qué forma va aquí?', 'Tap the correct form of <b>' + it.inf + '</b>. Which form goes here?')));
       var opts = E.shuffle([answer].concat(clozeDistractors(it, answer, taughtT)));
       var fb = UI.el('div', 'feedback');
       var bank = UI.el('div', 'word-bank');
@@ -254,8 +258,8 @@ window.StageApply = (function () {
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Aplicar', 'Apply') + ': ' + correct + ' / ' + total));
       body.appendChild(UI.el('p', 'muted', correct === total
-        ? 'Every one of those came from reading the sentence, not a table.'
-        : 'The sentence carries the answer: the time words, the subject, the mood.'));
+        ? UI.t('Todas salieron de leer la frase, no de una tabla.', 'Every one of those came from reading the sentence, not a table.')
+        : UI.t('La frase trae la respuesta: las palabras de tiempo, el sujeto, el modo.', 'The sentence carries the answer: the time words, the subject, the mood.')));
       body.appendChild(UI.nextBtn('Continuar →', done));
     }
 
@@ -276,7 +280,7 @@ window.StageApply = (function () {
       var pr = choicePrompt(it);
       body.appendChild(UI.el('div', 'cloze-text', String(pr.text).replace('___', '<span class="blank">＿＿＿</span>')));
       body.appendChild(UI.el('p', 'muted small', pr.q
-        + (it.options.some(UI.isNothing) ? ' ("(nothing)" means nothing goes here.)' : '')));
+        + (it.options.some(UI.isNothing) ? UI.t(' ("(nada)" significa que aquí no va nada.)', ' ("(nothing)" means nothing goes here.)') : '')));
       var fb = UI.el('div', 'feedback');
       var row = UI.el('div', 'mcq-opts');
       var locked = false;
@@ -331,11 +335,11 @@ window.StageApply = (function () {
       if (it.type === 'cloze') {
         answer = clozeAnswer(it);
         prompt = it.text.replace('___', '<span class="blank">＿＿＿</span>');
-        hintNote = it.bankKind === 'cloze' ? 'Which form goes here? Type the right form of the verb in brackets.' : 'Fill the blank with the right form of the verb in brackets.';
+        hintNote = it.bankKind === 'cloze' ? UI.t('¿Qué forma va aquí? Escribe la forma correcta del verbo entre paréntesis.', 'Which form goes here? Type the right form of the verb in brackets.') : UI.t('Llena el espacio con la forma correcta del verbo entre paréntesis.', 'Fill the blank with the right form of the verb in brackets.');
       } else {                                     // transform
         answer = it.to;
         prompt = '<span class="muted">' + it.instruction + '</span><br>' + it.from;
-        hintNote = 'Type the full rewritten sentence.';
+        hintNote = UI.t('Escribe la frase completa, reescrita.', 'Type the full rewritten sentence.');
       }
 
       body.appendChild(UI.el('div', 'cloze-text', prompt));
@@ -349,7 +353,7 @@ window.StageApply = (function () {
       var input = UI.el('input', 'answer-input wide');
       input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
       var fb = UI.el('div', 'feedback');
-      var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';
+      var reveal = UI.el('button', 'ghost-btn', UI.t('Mostrar', 'Reveal')); reveal.type = 'button';
       var attempts = 0, hinted = false, firstHint = null, settled = false, wrongDone = false;
       body.appendChild(input);
       body.appendChild(UI.accentBar(function () { return input; }));
@@ -370,7 +374,7 @@ window.StageApply = (function () {
         settled = true;
         var g = settle(it, hinted ? 'hint' : 'first');
         if (!it._again) gradeTense(it, true, g.meta);
-        fb.innerHTML = '¡Correcto!' + (slip ? '<br>Right. Mind the accent: <b>' + esc(answer) + '</b>' : '') + '<br>' + explain();
+        fb.innerHTML = '¡Correcto!' + (slip ? '<br>' + UI.t('Bien. Ojo con la tilde: ', 'Right. Mind the accent: ') + '<b>' + esc(answer) + '</b>' : '') + '<br>' + explain();
         fb.className = 'feedback good';
         setTimeout(advance, slip ? 1600 : 900);
       }
@@ -380,8 +384,8 @@ window.StageApply = (function () {
         settle(it, 'miss', logMissNow);
         if (!it._again) gradeTense(it, false, {});
         var why = firstHint || (h && h.matched ? h : null);
-        var reason = why ? '<br>' + esc(why.hint)
-          : (typed ? '<br><span class="diff-line">' + diffHtml(typed, answer) + '</span><br><span class="muted small">Struck is yours to remove, underlined is missing.</span>' : '');
+        var reason = why ? '<br>' + hintLine(why.hint)
+          : (typed ? '<br><span class="diff-line">' + diffHtml(typed, answer) + '</span><br><span class="muted small">' + UI.t('Lo tachado sobra, lo subrayado falta.', 'Struck is yours to remove, underlined is missing.') + '</span>' : '');
         fb.innerHTML = explain() + reason;
         fb.className = 'feedback reveal';
         reveal.style.display = 'none';
@@ -400,7 +404,7 @@ window.StageApply = (function () {
         var h = hintFor(it, typed, answer);
         if (attempts === 0 && h && h.matched) {
           attempts = 1; hinted = true; firstHint = h;
-          fb.innerHTML = esc(h.hint) + '<br><span class="muted">Try once more.</span>';
+          fb.innerHTML = hintLine(h.hint) + '<br><span class="muted">' + UI.t('Inténtalo otra vez.', 'Try once more.') + '</span>';
           fb.className = 'feedback bad';
           input.select();
           return;

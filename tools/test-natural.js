@@ -169,6 +169,8 @@ ok(new Set(NAT.map((it) => it.en)).size === NAT.length, 'every English prompt is
 let band = 'B1';
 const enrolled = [];
 window.Profile = { current: () => band, term: (es, en) => (['B1', 'B2', 'C1'].indexOf(band) >= 0 ? es : en) };
+// The screen's labels follow the band (Spanish from B1); this test reads the English ones, so pin the language.
+if (window.UI) { window.UI.t = (es, en) => en; }
 window.SRS = { enrol: (id, d) => enrolled.push([id, d]) };
 const text = (n) => n.textContent;
 const btn = (root, s) => root.all((n) => n.tagName === 'BUTTON' && text(n).indexOf(s) >= 0)[0] || null;
@@ -230,7 +232,7 @@ ok(text(box).indexOf('opens at B1') >= 0 && !box.all((n) => n.tagName === 'BUTTO
 band = 'C1';
 const box2 = new Node('div');
 window.Natural.renderEntry(box2, back);
-ok(!!btn(box2, 'Suena natural'), 'from B1: the mode row');
+ok(!!(btn(box2, 'Suena natural') || btn(box2, 'Sound natural')), 'from B1: the mode row');
 
 console.log('Sound natural: ' + NAT.length + ' items, ' + forms + ' accepted forms through the matcher, ' + stiffs + ' stiff lines');
 console.log('  by group: ' + GROUPS.map((g) => g + ' ' + (byGroup[g] || 0)).join(', '));
