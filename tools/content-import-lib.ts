@@ -24,3 +24,14 @@ export function servingLegalDay(g: Graph, taught: ReadonlyMap<string, number>, r
   }
   return d;
 }
+
+/** A scene's requirement set: its focus nodes, plus tagger g:/x: nodes found in at least two npc lines.
+ *  Accepted learner lines add nothing (the matcher takes any one of them). */
+export function sceneRequires(focus: ReadonlyArray<string | undefined>, npcNodes: ReadonlyArray<ReadonlySet<string>>, known: (id: string) => boolean): string[] {
+  const out = new Set<string>();
+  for (const f of focus) if (f && known(f)) out.add(f);
+  const count = new Map<string, number>();
+  for (const set of npcNodes) for (const n of set) count.set(n, (count.get(n) ?? 0) + 1);
+  for (const [n, c] of count) if (c >= 2) out.add(n);
+  return [...out].sort();
+}

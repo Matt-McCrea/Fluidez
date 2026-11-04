@@ -42,6 +42,19 @@ ok(S.pick(known, 10, 'T', seen, { day: 120 }) === null, 'nothing within 30 days 
 ok(S.pick(known, 10, 'T', seen, { day: 131 }) !== null, 'served again after 30 days');
 ok(S.pick(new Set(['g:x1', 'g:x2']), 10, 'T', {}, { day: 1 }) !== null && S.pick(new Set(['g:x1']), 0, 'T', {}, { day: 1 }) === null, 'legal day gates');
 
+// band below fallback: A2 empty -> an A1 scene; nothing in either -> null
+window.SCENES_A2 = [mk('a2only', { d: 99 })];
+window.SCENES_A1.push(mk('fallback', { band: 'A1', d: 5, r: [] }));
+ok(S.pick(new Set(), 10, 'A2', {}, { day: 1 }) !== null && S.pick(new Set(), 10, 'A2', {}, { day: 1 }).id !== 'a2only', 'falls back to the band below');
+window.SCENES_C1 = [];
+ok(S.pick(new Set(), 10, 'C1', {}, { day: 1 }) === null, 'nothing in C1 or B2 -> null');
+window.SCENES_A1.pop();
+
+// real data: no scene requires a late node only through an accepted learner line
+const rl = window.SCENES_A1.filter(s => !s.review && s.d != null);
+ok(rl.length >= 30, 'at least 30 A1 scenes playable on the old spine: ' + rl.length);
+ok(rl.filter(s => s.d < 312).length === rl.length, 'every playable A1 scene is legal before day 312');
+
 // turns follow next
 const sc = { turns: [{ id: 'a', next: 'c' }, { id: 'b', next: null }, { id: 'c', next: 'b' }] };
 ok(S.turns(sc).map(t => t.id).join('') === 'acb', 'walk follows next');

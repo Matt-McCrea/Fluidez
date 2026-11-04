@@ -12,6 +12,7 @@
  *   grade(turn, text)                        {pass, via, hint} for one learner line
  *   shouldPlay(entry, di, unit)              is today a scene day?
  *
+ * pick falls back to the band below when the band has nothing playable (if that file is loaded).
  * Playable: not marked review, d set and at or before today, every g: and x:
  * in r known (Known.allows on a scratch key), not served in 30 days (the
  * fluidez.seen key 'scene:<id>'). Scenes that use today's nodes come first.
@@ -53,8 +54,7 @@ window.Scenes = (function () {
   }
 
   /* opts: { today: Set of today's nodes, day: day number for the ledger } */
-  function pick(known, di, band, seen, opts) {
-    opts = opts || {};
+  function pickIn(known, di, band, seen, opts) {
     var all = window['SCENES_' + band] || [];
     var day = opts.day != null ? opts.day : Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
     seen = seen || {};
@@ -69,6 +69,15 @@ window.Scenes = (function () {
     });
     out.sort(function (a, b) { return (b.o - a.o) || (b.sc.d - a.sc.d) || (a.i - b.i); });
     return out.length ? out[0].sc : null;
+  }
+  /* The learner's band first; when it has nothing playable, the band below (only if its file is already
+   * loaded: pick stays synchronous). Returns null at once when neither has a scene. */
+  function pick(known, di, band, seen, opts) {
+    opts = opts || {};
+    var sc = pickIn(known, di, band, seen, opts);
+    if (sc) return sc;
+    var k = BANDS.indexOf(band);
+    return k > 0 ? pickIn(known, di, BANDS[k - 1], seen, opts) : null;
   }
 
   function find(id) {

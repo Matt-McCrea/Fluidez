@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { loadGraph, type GraphNode } from '../../../lib/graph';
-import { gapOptionOk, hasDash, servingLegalDay } from '../../../tools/content-import-lib';
+import { gapOptionOk, hasDash, sceneRequires, servingLegalDay } from '../../../tools/content-import-lib';
 
 const n = (id: string, kind: GraphNode['kind']): GraphNode => ({ id, kind, requires: [] });
 const g = loadGraph([n('g:a', 'grammar'), n('g:never', 'grammar'), n('x:never', 'contrast'), n('p:never', 'pattern'), n('c:never', 'chunk'), n('c:late', 'chunk'), n('l:casa', 'lexeme')]);
@@ -29,3 +29,14 @@ describe('gapOptionOk', () => {
 });
 
 test('hasDash', () => { expect(hasDash('a — b')).toBe(true); expect(hasDash('a - b')).toBe(true); expect(hasDash('co-op')).toBe(false); });
+
+describe('sceneRequires', () => {
+  const all = () => true;
+  const S = (...a: string[]) => new Set(a);
+  test('focus nodes always count', () => { expect(sceneRequires(['g:a', undefined], [S()], all)).toEqual(['g:a']); });
+  test('a node in one npc line is exposure, in two it is required', () => {
+    expect(sceneRequires([], [S('g:x', 'g:y'), S('g:x')], all)).toEqual(['g:x']);
+  });
+  test('unknown focus ids are dropped', () => { expect(sceneRequires(['g:zz'], [], (id) => id !== 'g:zz')).toEqual([]); });
+  test('output is sorted and de-duplicated', () => { expect(sceneRequires(['g:b', 'g:b'], [S('g:a'), S('g:a')], all)).toEqual(['g:a', 'g:b']); });
+});

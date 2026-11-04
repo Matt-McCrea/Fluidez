@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import vm from 'node:vm';
 import { castNames, loadGraph, tagOptions, taughtAt, type Graph } from '../lib/graph';
 import { tagRow } from '../lib/tagger/tagAll';
-import { gapOptionOk, hasDash, servingLegalDay } from './content-import-lib';
+import { gapOptionOk, hasDash, sceneRequires, servingLegalDay } from './content-import-lib';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const t0 = Date.now();
@@ -77,7 +77,9 @@ writeFileSync(join(ROOT, 'data/contrasts/items.js'), wrapJs('Contrast items: x c
 const sdir = join(ROOT, 'app/content/scenes');
 const sfiles = readdirSync(sdir).filter((f) => f.endsWith('.json')).sort();
 const byBand = new Map<string, any[]>(); const sidx: any[] = [];
+const oldBlock: Array<{ id: string; node: string; day: number }> = [];
 const blockers = new Map<string, number>();
+const dayList: Array<{ band: string; d: number; review: boolean }> = [];
 const sceneStats = new Map<string, { n: number; legal: number; never: number }>();
 for (const f of sfiles) {
   const s = rd(`app/content/scenes/${f}`);
@@ -90,21 +92,24 @@ for (const f of sfiles) {
     t.accept.forEach((a: string, n: number) => dashCheck(`${s.id}/${t.id}.accept[${n}]`, a));
     strings.push(t.npc, ...t.accept);
   }
-  const reqs = new Set<string>();
-  strings.forEach((es, i) => { for (const r of tagRow({ id: `${s.id}#${i}`, es }, opts).requires) { const n = graph.nodes.get(r); if (n && n.kind !== 'lexeme') reqs.add(r); } });
-  const r = [...reqs].sort();
+  const tagNodes = (es: string, k: string) => { const o = new Set<string>(); for (const r of tagRow({ id: k, es }, opts).requires) { if (/^[gx]:/.test(r) && graph.nodes.get(r)) o.add(r); } return o; };
+  const oldReqs = new Set<string>();
+  strings.forEach((es, i) => { for (const r of tagRow({ id: `${s.id}#${i}`, es }, opts).requires) { const n = graph.nodes.get(r); if (n && n.kind !== 'lexeme') oldReqs.add(r); } });
+  const r = sceneRequires(s.turns.map((t: any) => t.focus), s.turns.map((t: any, i: number) => tagNodes(t.npc, `${s.id}#n${i}`)), (x) => !!graph.nodes.get(x));
+  if (band === 'A1') { const od = ld([...oldReqs]); if (od === null || od >= 312) { let worst = '', wd = -1; for (const x of oldReqs) { const t = taught.get(x); if (t === undefined) { if (/^[gx]:/.test(x)) { worst = x; wd = 99999; } } else if (t > wd) { wd = t; worst = x; } } oldBlock.push({ id: s.id, node: worst, day: wd }); } }
   const d = ld(r);
   const st = sceneStats.get(band) ?? { n: 0, legal: 0, never: 0 };
   st.n++; if (d === null) { st.never++; for (const x of r) if ((x.startsWith('g:') || x.startsWith('x:')) && !taught.has(x)) blockers.set(x, (blockers.get(x) ?? 0) + 1); } else st.legal++;
   sceneStats.set(band, st);
   const out: any = { id: s.id, unit: s.unit, band, title: s.title, brief: s.brief, turns: s.turns, r, d };
+  if (d !== null) dayList.push({ band, d, review: ['u01', 'u02', 'u03'].includes(s.unit) });
   if (s.spare) out.spare = true;
   if (['u01', 'u02', 'u03'].includes(s.unit)) out.review = true;
   const arr = byBand.get(band) ?? []; arr.push(out); byBand.set(band, arr);
   sidx.push({ id: s.id, band, title: s.title, legalDay: d, file: `data/scenes/${band.toLowerCase()}.js` });
 }
 for (const [band, arr] of byBand) writeFileSync(join(ROOT, `data/scenes/${band.toLowerCase()}.js`),
-  wrapJs(`Scripted scenes, band ${band}. r = non-lexeme requires over npc lines and accepts, d = legal day (null = never served), review = needs rewriting.`, `SCENES_${band}`, arr).replace('window.SCENES_' + band + ' = [', `window.SCENES_${band} = [`));
+  wrapJs(`Scripted scenes, band ${band}. r = scene requirements (focus nodes plus g:/x: nodes in two or more npc lines; nothing from accepts), d = legal day (null = never served), review = needs rewriting.`, `SCENES_${band}`, arr).replace('window.SCENES_' + band + ' = [', `window.SCENES_${band} = [`));
 writeFileSync(join(ROOT, 'data/scenes/index.js'), wrapJs('Scene index, ids in rebuild order.', 'SCENE_INDEX', sidx).replace('window.SCENE_INDEX = [', 'window.SCENE_INDEX = ['));
 
 /* ---------- report ---------- */
@@ -119,9 +124,13 @@ md.push('| contrast | decides | items | usable | legalDay | sides taught |', '|-
 for (const c of perContrast) md.push(`| ${c.id} | ${c.decides} | ${c.n} | ${c.usable} | ${c.legalDay ?? 'never'} | ${c.nTaught}/${c.sides}${c.mix ? ' mix' : ''} |`);
 md.push('', '## Scenes', '', '| band | scenes | with legal day | never |', '|---|---|---|---|');
 for (const [b, s] of sceneStats) md.push(`| ${b} | ${s.n} | ${s.legal} | ${s.never} |`);
-md.push('', 'Scenes of u01 to u03 are marked `review: true`.', '', 'Top blocking nodes (never-taught g:/x: nodes, scenes blocked):', '');
+md.push('', 'Scenes of u01 to u03 are marked `review: true`. Scene requirements: focus nodes plus g:/x: nodes the tagger finds in at least two npc lines; accepted learner lines add nothing.', '', 'Top blocking nodes (never-taught g:/x: nodes, scenes blocked):', '');
 [...blockers].sort((a, b) => b[1] - a[1]).slice(0, 15).forEach(([n, c]) => md.push(`- ${n}: ${c}`));
 md.push('', '## Dash findings', '', dashFindings.length ? `${dashFindings.length} learner strings contain a dash:` : 'None.', '', ...dashFindings.slice(0, 60).map((d) => `- ${d}`));
 if (notes.length) md.push('', '## Did not import cleanly', '', ...notes.map((n) => `- ${n}`));
 writeFileSync(join(ROOT, 'docs/plan-2026-11-04/content-import.md'), md.join('\n') + '\n');
+const cnt = (b: string, f: (x: number) => boolean) => dayList.filter((x) => x.band === b && !x.review && f(x.d)).length;
+const dist = { A1: [30, 60, 107, 311].map((n) => cnt('A1', (d) => d <= n)), A1total: sceneStats.get('A1')?.n, A2first: cnt('A2', () => true), B1first: cnt('B1', () => true), byBand: Object.fromEntries([...sceneStats.keys()].map((b) => [b, { playable: cnt(b, () => true), minD: Math.min(...dayList.filter((x) => x.band === b && !x.review).map((x) => x.d)) }])) };
+if (process.env.DIAG) { const tally = new Map<string, number>(); for (const o of oldBlock) tally.set(`${o.node}@${o.day}`, (tally.get(`${o.node}@${o.day}`) ?? 0) + 1); console.log('OLDBLOCK', oldBlock.length, JSON.stringify([...tally].sort((a, b) => b[1] - a[1]).slice(0, 25))); console.log(oldBlock.map((o) => `${o.id} ${o.node} ${o.day}`).join('\n')); }
+console.log('DIST', JSON.stringify(dist));
 console.log(JSON.stringify({ secs: (Date.now() - t0) / 1000, contrasts: cfiles.length, items: tot, usable, badGap, mix: both.length, one: one.length, none: none.length, scenes: sidx.length, sceneStats: [...sceneStats], dashes: dashFindings.length, notes: notes.length, topBlockers: [...blockers].sort((a, b) => b[1] - a[1]).slice(0, 5) }));
