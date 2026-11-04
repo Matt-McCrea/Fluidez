@@ -823,7 +823,10 @@ window.StageLearn = (function () {
         if (ctx && ctx.results) ctx.results.learn = { correct: right, total: asked };
         // srs:false items are comprehension checks, not review cards — asked
         // once, never enrolled, so they cannot come back weeks later as a miss
-        var kept = items.filter(function (r) { return r.srs !== false; });
+        var LS0 = window.Lessons;
+        var kept = items.filter(function (r) {
+          return r.srs !== false && !((!r.probe || r.probe.kind === 'recall') && LS0 && LS0.englishSentence && LS0.englishSentence(r.back));
+        });
         kept.forEach(function (r) { S.enrol(r.id); });
         UI.clear(form);
         form.appendChild(UI.el('p', 'feedback good', kept.length
@@ -880,6 +883,21 @@ window.StageLearn = (function () {
         return;
       }
 
+      /* A metalinguistic point (the answer is an English sentence) is thought
+       * about and checked by looking, not typed: not graded, not enrolled. */
+      var LS = window.Lessons;
+      if ((!it.probe || it.probe.kind === 'recall') && LS && LS.englishSentence && LS.englishSentence(it.back)) {
+        form.appendChild(UI.el('p', 'muted small', 'Think, then tap to see.'));
+        var ans = UI.el('div', 'feedback reveal hidden', esc(it.back));
+        var seeB = UI.el('button', 'ghost-btn', 'Tap to see'); seeB.type = 'button';
+        var shown = false;
+        seeB.addEventListener('click', function () {
+          if (shown) { i++; show(); return; }
+          shown = true; ans.classList.remove('hidden'); seeB.textContent = 'Continuar →';
+        });
+        form.appendChild(ans); form.appendChild(seeB);
+        return;
+      }
       var input = UI.el('input', 'answer-input');
       input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false;
       var reveal = UI.el('button', 'ghost-btn', 'Reveal'); reveal.type = 'button';

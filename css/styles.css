@@ -92,7 +92,9 @@ h3 { margin:26px 0 8px; font-size:.95rem; color:var(--muted); text-transform:upp
   padding:10px 18px; border-radius:9px; cursor:pointer; font-weight:600; font-size:.92rem; margin-top:20px;
 }
 .ghost-btn:hover { border-color:var(--accent); }
-.row-controls { display:flex; gap:12px; align-items:center; }
+.row-controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; max-width:100%; }
+.mcq-opts > .ghost-btn { margin-top:0; text-align:left; white-space:normal; overflow-wrap:anywhere; line-height:1.35; width:100%; }
+.panel > .primary-btn, .panel > div > .primary-btn { max-width:100%; }
 
 /* ---- session intro / complete ---- */
 .intro { text-align:center; padding:44px 40px; }

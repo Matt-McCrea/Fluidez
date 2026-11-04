@@ -179,10 +179,39 @@ window.BankItems = (function () {
     var s = {}; list.forEach(function (x) { s[x[key]] = 1; }); return Object.keys(s);
   }
 
+  /* ---- is the focus span really a verb? ------------------------------------
+   * A noun slot ("el ___ (desarrollar) urbano", "la notaría") must never become a
+   * verb item. Reject a span after a determiner, possessive or demonstrative, a
+   * span that is a VOCAB noun headword, and a reading whose infinitive is itself
+   * a VOCAB noun (the engine reads "notaría" as the conditional of notar). */
+  var DET_BEFORE = /(^|\s)(el|la|los|las|un|una|unos|unas|mi|mis|tu|tus|su|sus|nuestro|nuestra|nuestros|nuestras|este|esta|estos|estas|ese|esa|esos|esas|aquel|aquella|aquellos|aquellas|del|al)\s*$/i;
+  var nounSet = null;
+  function nouns() {
+    if (nounSet && nounSet.n === (window.VOCAB || []).length) return nounSet.set;
+    var set = Object.create(null);
+    (window.VOCAB || []).forEach(function (w) {
+      var es = String(w.es || '').toLowerCase().trim();
+      var m = /^(el|la|los|las|un|una)\s+([^\s,\/(]+)$/.exec(es);
+      if (m) set[m[2]] = 1;
+      else if (w.gender && /^[^\s]+$/.test(es)) set[es] = 1;
+    });
+    nounSet = { n: (window.VOCAB || []).length, set: set };
+    return set;
+  }
+  function verbSpan(r, span) {
+    if (DET_BEFORE.test(r.es.slice(0, r.f[0]))) return false;
+    var low = span.toLowerCase(), N = nouns();
+    if (N[low]) return false;
+    var En = E(), list;
+    try { list = En.analyzeToken(low) || []; } catch (e) { return false; }
+    if (!list.length) return false;
+    return list.some(function (a) { return !N[String(a.inf).toLowerCase()]; });
+  }
+
   /* ---- cloze -------------------------------------------------------------- */
   function cloze(r) {
     var span = spanOf(r);
-    if (!span) return null;
+    if (!span || !verbSpan(r, span)) return null;
     var rd = readings(span);
     if (!rd.length || distinct(rd, 'inf').length !== 1) return null;
     var pick = rd.filter(function (x) { return x.tense === 'presente'; })[0] || rd[0];
@@ -280,7 +309,7 @@ window.BankItems = (function () {
   };
   function readAndPick(r, rng) {
     var span = spanOf(r);
-    if (!span) return null;
+    if (!span || !verbSpan(r, span)) return null;
     var rd = readings(span).filter(function (x) { return x.tense !== 'imperativo' && x.tense !== 'impneg'; });
     if (!rd.length) return null;
     var persons = distinct(rd, 'person'), tenses = distinct(rd, 'tense');

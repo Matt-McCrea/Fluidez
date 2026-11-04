@@ -163,11 +163,12 @@ window.StageApply = (function () {
   // Plausible wrong forms for a cloze: the same verb in other persons of the
   // same tense, and the same person in neighbouring tenses (the engine makes
   // them, so distractors are always real conjugations).
-  function clozeDistractors(it, answer) {
+  function clozeDistractors(it, answer, taught) {
     var v = E.verbByInf(it.inf); if (!v) return [];
     var set = {};
     E.conjugate(v, it.tense).forEach(function (f) { if (f !== answer) set[f] = 1; });
-    ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj'].forEach(function (tk) {
+    taught = taught || ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj'];
+    taught.forEach(function (tk) {
       if (tk === it.tense) return;
       var idx = E.personsFor(tk).indexOf(it.person);
       if (idx < 0) return;
@@ -176,7 +177,22 @@ window.StageApply = (function () {
     return E.shuffle(Object.keys(set)).slice(0, 3);
   }
 
+  /* Tenses the learner has met by this day (plus today's nodes); presente is
+   * always allowed. null when the graph is not loaded, which keeps the old set. */
+  function taughtTenseList(ctx) {
+    var Kn = window.Known, LS = window.LIB && window.LIB.search;
+    if (!Kn || !LS || !LS.taughtTenses || ctx.di == null) return null;
+    try {
+      var ids = Array.from(Kn.taughtBy(ctx.di));
+      if (ctx.nodes) ctx.nodes.forEach(function (n) { ids.push(n); });
+      var t = LS.taughtTenses(ids);
+      if (t.indexOf('presente') < 0) t.push('presente');
+      return t.filter(function (k) { return ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'perfecto'].indexOf(k) >= 0; });
+    } catch (e) { return null; }
+  }
+
   function run(host, ctx, done) {
+    var taughtT = taughtTenseList(ctx);
     var items = ctx.applyItems || [];
     if (!items.length) { done(); return; }
     var queue = items.slice();                     // missed items are pushed back into this, once
@@ -205,7 +221,7 @@ window.StageApply = (function () {
     // word-bank chooser for a cloze (beginner)
     function showWordbank(it, answer) {
       body.appendChild(UI.el('p', 'muted small', 'Tap the correct form of <b>' + it.inf + '</b>. Which form goes here?'));
-      var opts = E.shuffle([answer].concat(clozeDistractors(it, answer)));
+      var opts = E.shuffle([answer].concat(clozeDistractors(it, answer, taughtT)));
       var fb = UI.el('div', 'feedback');
       var bank = UI.el('div', 'word-bank');
       var answered = false;
@@ -261,7 +277,7 @@ window.StageApply = (function () {
       body.appendChild(UI.el('p', 'muted small', pr.q
         + (it.options.some(UI.isNothing) ? ' ("(nothing)" means nothing goes here.)' : '')));
       var fb = UI.el('div', 'feedback');
-      var row = UI.el('div', 'row-controls');
+      var row = UI.el('div', 'mcq-opts');
       var locked = false;
       it.options.forEach(function (opt, oi) {
         var b = UI.el('button', 'ghost-btn', UI.optLabel(opt)); b.type = 'button';
@@ -292,7 +308,7 @@ window.StageApply = (function () {
             + (UI.isNothing(it.options[it.answer]) ? ' <span class="muted">' + UI.NOTHING_NOTE + '</span>' : '')
             + (good ? (it.why ? '<br>' + it.why : '') : '<br>' + (it.why ? it.why : esc(whyWrong(it, UI.optLabel(opt), right))))
             + (it.en ? '<br><span class="muted">' + esc(it.en) + '</span>' : '');
-          row.appendChild(UI.nextBtn('Continuar →', advance));
+          body.appendChild(UI.nextBtn('Continuar →', advance));
         });
         row.appendChild(b);
       });

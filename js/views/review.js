@@ -418,8 +418,10 @@ window.StageReview = (function () {
     var opener = UI.el('div', 'review-opener');
     opener.appendChild(UI.el('b', null, UI.t('¿Te acuerdas?', 'Still remember these?')));
     opener.appendChild(UI.el('span', null,
-      queue.length + UI.t(queue.length === 1 ? ' cosa que ya has visto.' : ' cosas que ya has visto.',
-                          queue.length === 1 ? ' thing you have met before.' : ' things you have met before.')));
+      queue.length + (resumed && seen
+        ? UI.t(queue.length === 1 ? ' que queda.' : ' que quedan.', queue.length === 1 ? ' left to go.' : ' left to go.')
+        : UI.t(queue.length === 1 ? ' cosa que ya has visto.' : ' cosas que ya has visto.',
+               queue.length === 1 ? ' thing you have met before.' : ' things you have met before.'))));
     host.appendChild(opener);
 
     var card = UI.el('div', 'panel review-card');
@@ -471,11 +473,28 @@ window.StageReview = (function () {
       show();
     }
 
+    var KIND_NAMES = { vocab: 'word', 'verb-tense': 'verb form', verb: 'verb', phrase: 'phrase', contrast: 'contrast',
+      aboutme: 'your line', natural: 'sound natural', idiom: 'expression', grammar: 'grammar', error: 'to fix', capture: 'saved word' };
+    function kindName(k) { return UI.t(KIND_NAMES[k] || String(k).replace(/-/g, ' '), KIND_NAMES[k] || String(k).replace(/-/g, ' ')); }
+    /* "I don't know" for a choice card: show the answer, count it as unsure. */
+    function addDont(grid, isAnswered, setAnswered, delay) {
+      var d = UI.el('button', 'ghost-btn', UI.t('No lo sé', 'I don\'t know')); d.type = 'button';
+      d.addEventListener('click', function () {
+        if (isAnswered()) return; setAnswered(); stamp();
+        Array.prototype.forEach.call(grid.children, function (c) { if (c.dataset && c.dataset.opt === R.back) c.classList.add('right'); });
+        feedback.textContent = (cur.kind === 'contrast' ? '' : R.front + ' → ') + UI.optLabel(R.back) + (cur.why && R.mode === 'contrast' ? '. ' + cur.why : '');
+        feedback.className = 'feedback reveal';
+        d.disabled = true;
+        setTimeout(function () { advance(false, { unsure: true }); }, delay);
+      });
+      body.appendChild(d);
+    }
+
     function show() {
       if (!queue.length) { finish(); return; }
       cur = queue[0]; R = resolve(cur, pr);
       shownAt = Date.now(); answeredAt = 0; hinted = false;
-      kind.textContent = cur.kind; kind.dataset.kind = cur.kind;
+      kind.textContent = kindName(cur.kind); kind.dataset.kind = cur.kind;
       front.textContent = R.front;
       feedback.textContent = ''; feedback.className = 'feedback';
       stats.textContent = seen + ' done · ' + queue.length + ' to go';
@@ -515,11 +534,12 @@ window.StageReview = (function () {
         grid.appendChild(b);
       });
       body.appendChild(grid);
+      addDont(grid, function () { return answered; }, function () { answered = true; }, 1500);
     }
 
     // ---- a contrast item: the sentence with a gap, the forms as buttons, English under it ----
     function showContrast() {
-      kind.textContent = UI.t('contraste', 'contrast');
+      kind.textContent = kindName('contrast');
       body.appendChild(UI.el('div', 'muted', cur.en));
       var answered = false, grid = UI.el('div', 'mcq-opts');
       E.shuffle(R.options.slice()).forEach(function (opt) {
@@ -536,6 +556,7 @@ window.StageReview = (function () {
         grid.appendChild(b);
       });
       body.appendChild(grid);
+      addDont(grid, function () { return answered; }, function () { answered = true; }, 2600);
     }
 
     // ---- typed answer ----

@@ -531,7 +531,7 @@ window.Games = (function () {
     var head = el('div', 'g-tile-head');
     head.appendChild(el('span', 'g-tile-ico', g.icon));
     head.appendChild(el('span', 'g-tile-len',
-      g.lives ? Math.round(g.secs / 60) + ' min · ' + g.lives + ' vidas' : g.secs + ' s'));
+      g.lives ? (g.secs ? Math.round(g.secs / 60) + ' min · ' : '') + g.lives + ' vidas' : (g.secs || 60) + ' s'));
     t.appendChild(head);
 
     t.appendChild(el('div', 'g-tile-name', g.name));
@@ -627,6 +627,19 @@ window.Games = (function () {
     if (!E2) return null;
     var taught = (window.Profile ? window.Profile.tenses() : ['presente'])
       .filter(function (t) { return t !== 'impneg' && E2.TENSE_LABEL[t]; });
+    /* only tenses the learner's course days have taught */
+    try {
+      var prog0 = JSON.parse(localStorage.getItem('fluidez.progress')) || {};
+      var band0 = (window.Profile && window.Profile.current && window.Profile.current()) || 'A1';
+      var di0 = ((window.Curriculum && window.Curriculum.startOf) ? window.Curriculum.startOf(band0) : 0) + (prog0.beginnerDay || 0);
+      var LS0 = window.LIB && window.LIB.search;
+      if (window.Known && LS0 && LS0.taughtTenses) {
+        var met = LS0.taughtTenses(Array.from(window.Known.taughtBy(di0)));
+        if (met.indexOf('presente') < 0) met.push('presente');
+        var only = taught.filter(function (t) { return met.indexOf(t) !== -1; });
+        if (only.length) taught = only;
+      }
+    } catch (e) {}
     if (!taught.length) return null;
     var day = GS.today(), last = GS.lastTenseCheck();
     if (last != null && day - last < TENSE_EVERY) return null;

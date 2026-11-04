@@ -69,15 +69,25 @@ window.StageProduce = (function () {
     render();
   }
 
-  /* Enough Spanish to count as a sentence: a verb the engine recognises plus an
-   * article or pronoun, or simply six words or more. */
-  var SMALL = /^(el|la|los|las|un|una|unos|unas|yo|tu|vos|usted|el|ella|nosotros|nosotras|ustedes|ellos|ellas|me|te|se|nos|lo|le|les|mi|mis|su|sus)$/;
-  function substantial(analysis, text) {
+  /* A telegram is a bare string of nouns ("Necesito cita lunes"). Correct Spanish
+   * must never be held back, so the check stays out of the way whenever the text
+   * passes the task, matches a model, or has a conjugated verb in three or more
+   * words. */
+  function substantial(analysis, text, task, res) {
     var toks = String(text || '').trim().split(/\s+/).filter(Boolean);
     if (toks.length >= 6) return true;
+    var specs = (task && task.constraints) || [];
+    var core = specs.filter(function (c) { return c.type !== 'containsAny' && c.type !== 'containsWord'; });
+    if (core.length && res && res.allPass) return true;
+    var M = window.LIB && window.LIB.match;
+    if (M && task && task.models) {
+      for (var i = 0; i < task.models.length; i++) {
+        var m = String(task.models[i]).replace(/<[^>]*>/g, '');
+        try { if (M.matchTranslation(text, { es: m, en: '', accept: [] }, { accents: 'lenient' }).pass) return true; } catch (e) {}
+      }
+    }
     var hasVerb = !!(analysis && (analysis.verbs.length || analysis.compounds.length));
-    var hasSmall = toks.some(function (w) { return SMALL.test(E.deaccent(w.toLowerCase()).replace(/[^a-zñ]/g, '')); });
-    return hasVerb && hasSmall;
+    return hasVerb && toks.length >= 3;
   }
 
   // ---- constrained writing (translate / free write / paragraph) -----------
@@ -108,12 +118,22 @@ window.StageProduce = (function () {
     ta.focus();
 
     var lastRes = null, warned = false;
-    var telegramNote = UI.el('p', 'muted small hidden', 'That reads like a telegram: add the small words (el, la, un, mi, yo, me) and try again.');
+    var telegramNote = UI.el('p', 'muted small hidden', 'That reads like a telegram: add the small words (el, la, un, mi, me, te) and try again.');
     body.insertBefore(telegramNote, modelBox);
     function renderCheck() {
       var res = C.checkWriting(task, ta.value);
       UI.clear(checklist);
-      res.results.forEach(function (r) {
+      var seenAdv = {}, rows = [];
+      res.results.forEach(function (r, ri) {
+        var spec = (task.constraints || [])[ri] || {};
+        if (r.advisory) {
+          var lab = spec.label || r.label;
+          if (seenAdv[lab] != null) { if (r.pass) rows[seenAdv[lab]].pass = true; return; }
+          seenAdv[lab] = rows.length;
+          rows.push({ pass: r.pass, advisory: true, label: lab, detail: r.detail });
+        } else rows.push(r);
+      });
+      rows.forEach(function (r) {
         var li = UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo') + (r.advisory ? ' advisory' : ''),
           (r.pass ? '✓ ' : '○ ') + r.label + (r.detail ? ' <span class="muted">(' + r.detail + ')</span>' : ''));
         checklist.appendChild(li);
@@ -147,7 +167,7 @@ window.StageProduce = (function () {
       if (shown) { next(true); return; }
       /* A telegram ("Necesito cita lunes") is held back once, with a note, and
        * let through on the second try. */
-      if (!warned && lastRes && !substantial(lastRes.analysis, ta.value)) {
+      if (!warned && lastRes && !substantial(lastRes.analysis, ta.value, task, lastRes)) {
         warned = true; telegramNote.classList.remove('hidden'); return;
       }
       showModel(true);
@@ -474,7 +494,6 @@ window.StageProduce = (function () {
     function playScene() {
       UI.clear(body);
       progress.textContent = 'Escena';
-      body.appendChild(UI.el('p', 'muted', 'Loading the scene…'));
       var begin = function (sc, at, lines) {
         if (!sc) { sceneEntry = null; finish(); return; }
         sceneState = { sc: sc };

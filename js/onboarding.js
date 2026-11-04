@@ -45,7 +45,7 @@ window.Onboarding = (function () {
          '<b>Jugar</b> has quick games against your own best score.<br>' +
          '<b>Practicar</b> has drills for when you want more.<br>' +
          '<b>Progreso</b> shows how you are doing and lists every lesson. All of them are open, so you are never locked out.<br>' +
-         '<b>Palabras</b> is your own vocabulary.<br>' +
+         '<b>Buscar</b> is where you look up words, verbs and grammar.<br>' +
          '<b>Más</b> holds the grammar reference, free writing and settings.' }
     ];
   }

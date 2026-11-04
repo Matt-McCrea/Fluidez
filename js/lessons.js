@@ -375,9 +375,17 @@
    * card. Review always types a lesson card (js/views/review.js resolves
    * `fixed` to mode 'type'), so a five-word answer is an automatic miss —
    * 1,015 of them, running up to 27 words. */
+  /* An answer that is an English sentence of four words or more is a point
+   * about the language, not something to type back: the quick check shows it as
+   * a reveal card, never graded and never enrolled. */
+  function englishSentence(back) {
+    var b = String(back || '').trim();
+    return b.split(/\s+/).length >= 4 && !spanishUtterance(b);
+  }
   function reproducible(back, kind, front) {
     var b = String(back || '').trim();
     var words = b.split(/\s+/).length;
+    if ((kind === 'recall' || !kind) && englishSentence(b)) return false;
     /* A yes/no answer is not a recall card. Review types the answer, so the
      * learner is being asked to type "no" — half of them get it right by
      * writing the first thing that occurs to them, and nothing is recalled.
@@ -1047,5 +1055,5 @@
   }
 
   window.Lessons = { ensureBand: ensureBand, ensureUpTo: ensureUpTo, ensureLesson: ensureLesson,
-                     bandOf: bandOf, loadedBands: loadedBands, rebuild: rebuild, BANDS: BANDS };
+                     bandOf: bandOf, loadedBands: loadedBands, rebuild: rebuild, BANDS: BANDS, englishSentence: englishSentence };
 })();
