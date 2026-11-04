@@ -390,5 +390,20 @@ function simulate(band, throttled) {
   ok(thr.slice(100).reduce((a, r) => a + r.due, 0) / 20 < fix.slice(100).reduce((a, r) => a + r.due, 0) / 20, 'the throttled curve ends lower than the unthrottled one');
 }
 
+/* ---- About me lines come back in the review deck ------------------------------ */
+{
+  const store = { 'fluidez.srsSchema': '3', 'fluidez.srs': JSON.stringify({ 'k:aboutme:0': { box: 1, due: 1, reps: 1, last: 0 } }) };
+  const { W } = deckWorld(store, 'B1');
+  W.BuildIt = { cards: () => [{ id: 'k:aboutme:0', es: 'Vivo en Bogotá', en: 'I live in Bogota', prompt: 'Where do you live?' },
+                              { id: 'k:aboutme:1', es: 'Me gusta el café', en: '', prompt: 'What do you like?' }] };
+  const pool = W.StageReview.pool().filter(c => c.kind === 'aboutme');
+  ok(pool.length === 2 && pool.every(c => c.enrolledOnly), 'about-me lines are in the pool, enrolledOnly');
+  const c0 = pool.find(c => c.id === 'k:aboutme:0'), c1 = pool.find(c => c.id === 'k:aboutme:1');
+  ok(c0.en === 'I live in Bogota' && c0.es === 'Vivo en Bogotá', 'a line carries the English front and the learner Spanish back');
+  ok(c1.en === 'What do you like?', 'a blank English falls back to the prompt');
+  ok(W.StageReview.pool().filter(c => c.kind === 'aboutme' && W.SRS.isEnrolled(c.id)).length === 1, 'only the enrolled line is reviewable');
+  ok(W.Checker.checkExact('Vivo en Bogotá', c0.es, {}).pass, 'the right typed answer is graded right');
+}
+
 console.log('\n' + (n - fails) + ' of ' + n + ' checks passed');
 process.exit(fails ? 1 : 0);

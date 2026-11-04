@@ -143,6 +143,13 @@ window.StageReview = (function () {
       items.push({ id: ph.id, es: ph.es, en: ph.en, kind: 'phrase',
                    hint: ph.note || null, enrolledOnly: true });
     });
+    /* The learner's own About me lines (js/buildit.js): front the English, or the prompt when it
+     * was left blank; back their own Spanish, the only answer accepted. enrolledOnly: enrolled
+     * when the line is written, never drawn as new. */
+    if (window.BuildIt && window.BuildIt.cards) window.BuildIt.cards().forEach(function (c) {
+      var en = c.en || c.prompt || c.front, es = c.es || c.back;
+      if (es) items.push({ id: c.id, es: es, en: en, kind: 'aboutme', enrolledOnly: true });
+    });
     /* Contrast items already served (js/contrasts.js): FSRS schedules each one by
      * its own id, so once enrolled it comes back here like any other card. */
     if (window.Contrasts && window.Contrasts.ready()) {
@@ -582,6 +589,7 @@ window.StageReview = (function () {
          * revealed. C.answerForms derives the forms a person would actually
          * type, from that card's OWN answer and nothing else — see the
          * comment there for why each rule is as narrow as it is. */
+        if (cur.kind === 'aboutme' && R.toSpanish) o.accents = 'lenient';
         if (cur.kind === 'lesson' && C.answerForms) o.also = C.answerForms(R.back);
         return o;
       }
