@@ -106,7 +106,7 @@ for (let i = 0; i < days.length; i++) {
   ctx.gaps.forEach(g => { P.gaps[g.kind] = (P.gaps[g.kind] || 0) + 1; });
   // violations
   const chk = (list, kf, st) => list.forEach(x => { if (x.authored) return; const okx = x.bankId ? BI.allowed(BI.row(x.bankId), known, today, b) : K.allows(kf(x), known, today, b); if (!okx && !ungated(st)) { P.bad++; bad.push(b + ' day ' + i + ' ' + kf(x)); } });
-  chk(ctx.applyItems, aKey, 'apply'); chk(ctx.writeTasks, wKey, 'produce'); if (ctx.passage) chk([ctx.passage], pKey, 'comprehend');
+  chk(ctx.applyItems, aKey, 'apply'); chk(ctx.writeTasks, wKey, 'produce');   // passages are input: gated by coverage (tools/test-reading-day.js), not by node
   // alignment
   const items = ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey));
   const bankItems = ctx.applyItems.concat(ctx.writeTasks).filter(x => x.bankId);
@@ -157,7 +157,7 @@ console.log('REQUIRES entries missing while measuring: ' + K.stats.missing);
 /* ---- 3. A1 walk with the ledger on -------------------------------------------- */
 console.log('\nLEDGER: A1 days 0 to 60, every day served');
 window.Profile.set('A1'); store = {}; K.reset();
-const last = new Map(); let repeats = 0, recorded = 0, served = 0;
+const last = new Map(); let repeats = 0, recorded = 0, served = 0, ap14 = 0, apServed = 0;
 const studied = {};
 const BASE = 200000, WALK = Math.min(61, bands['A2'] || 61);
 const lastGaps = [];
@@ -168,6 +168,7 @@ for (let t = 0; t < WALK; t++) {
   const covered = new Set();
   ctx.gaps.forEach(g => { if (g.keys) g.keys.forEach(k => covered.add(k)); });
   const keys = ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey), ctx.passage ? [pKey(ctx.passage)] : []);
+  ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey)).forEach(k => { apServed++; if (last.has(k) && t - last.get(k) < 14) ap14++; });
   keys.forEach(k => { served++;
     if (last.has(k) && t - last.get(k) < 14) { if (covered.has(k)) recorded++; else { repeats++; if (repeats <= 10) console.log('   repeat ' + k + ' day ' + t + ' (last ' + last.get(k) + ')'); } }
     last.set(k, t); });
@@ -177,6 +178,9 @@ for (let t = 0; t < WALK; t++) {
 }
 console.log(`  served ${served} keys over ${WALK} days; unrecorded repeats within 14 days: ${repeats}; recorded gap reuses/authored repeats: ${recorded}`);
 console.log('  gaps logged: ' + (lastGaps.length ? lastGaps.slice(0, 25).join(' ') + (lastGaps.length > 25 ? ' ... (' + lastGaps.length + ')' : '') : 'none'));
+const rate = 100 * ap14 / Math.max(1, apServed);
+console.log(`  Apply + Produce items served ${apServed}, repeated within 14 days (authored and bank, recorded or not): ${ap14} (${rate.toFixed(1)}%)`);
+ok(!BANK_ON || rate < 5, 'Apply and Produce repeats within 14 days stay under 5% (' + rate.toFixed(1) + '%)');
 ok(repeats === 0, 'no item key repeats within a 14 day window (A1 days 0-' + (WALK - 1) + ') except recorded gaps');
 
 console.log('\n' + (fails ? fails + ' FAILED' : 'all ok'));

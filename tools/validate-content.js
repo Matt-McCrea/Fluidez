@@ -1084,6 +1084,41 @@ function checkProbes(l, tag) {
   });
 }
 
+// ---------- every global the app reads is loaded or injected -----------------------
+/* A feature can ship dead: data/story/index.js existed and js/session.js and js/library.js read STORY_INDEX, but
+ * index.html never loaded it, so the serial reached no learner while every other gate stayed green. For each
+ * window.NAME (upper case) that js/**\/*.js reads, some file must define it, and that file must be one index.html
+ * loads or one a js/ file injects by name (a "data/....js" string literal). */
+{
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e =>
+    e.isDirectory() ? walk(path.join(d, e.name)) : (/\.js$/.test(e.name) ? [path.join(d, e.name)] : []));
+  const root = path.join(__dirname, '..');
+  const jsFiles = walk(path.join(root, 'js')).filter(f => !/lib\.bundle\.js$/.test(f));
+  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const loaded = new Set((html.match(/src="([^"]+\.js)"/g) || []).map(m => m.slice(5, -1)));
+  const injected = new Set();
+  jsFiles.forEach(f => (fs.readFileSync(f, 'utf8').match(/['"](data\/[A-Za-z0-9_\/.-]+\.js)['"]/g) || [])
+    .forEach(m => injected.add(m.slice(1, -1))));
+  const reachable = [...new Set([...loaded, ...injected])].filter(f => fs.existsSync(path.join(root, f)));
+  const texts = reachable.map(f => fs.readFileSync(path.join(root, f), 'utf8'));
+  jsFiles.forEach(f => { const rel = path.relative(root, f); if (!reachable.includes(rel)) { /* a js file nothing loads defines nothing */ } });
+  const reads = new Map();
+  jsFiles.forEach(f => {
+    const t = fs.readFileSync(f, 'utf8');
+    for (const m of t.matchAll(/window\.([A-Z][A-Z0-9_]+)\b/g)) if (!reads.has(m[1])) reads.set(m[1], path.relative(root, f));
+  });
+  /* Computed names (window.BANK_ + band) end in an underscore and are injected by band; GAME_INDEX belongs to the
+   * arcade page (juegos/), which loads data/game-index.js itself, and gameitems.js falls back without it. */
+  const OPTIONAL = new Set(['GAME_INDEX']);
+  for (const [name, from] of reads) {
+    if (/_$/.test(name) || OPTIONAL.has(name)) continue;
+    const def = new RegExp('(?:window\\.|^|[\\s;,(])' + name + '\\s*=(?!=)|window\\[[^\\]]*\\]\\s*=', 'm');
+    const direct = new RegExp('(?:window\\.|[\\s;(])' + name + '\\s*=(?!=)');
+    ok(texts.some(t => direct.test(t)),
+      `window.${name} is read (first in ${from}) but no file index.html loads or a js/ file injects defines it`);
+  }
+}
+
 // ---------- resources -------------------------------------------------------
 {
   (window.RESOURCES || []).forEach((g, i) => {

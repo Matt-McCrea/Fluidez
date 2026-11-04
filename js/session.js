@@ -212,9 +212,11 @@ window.Session = (function () {
   function markSeen(c) {
     if (!c || c.repeat) return;
     var seen = loadSeen(), d = c.seenDay != null ? c.seenDay : c.day;
-    if (c.passage && !c.chapter) seen[passageKey(c.passage)] = d;   // a chapter day does not read it
-    (c.applyItems || []).forEach(function (x) { seen[applyKey(x)] = d; });
-    (c.writeTasks || []).forEach(function (t) { seen[writeKey(t)] = d; });
+    /* Only what the mode's stages actually serve: Five minutes shows no Apply or Produce, Review and practice no Produce. */
+    var keys = (MODES[c.mode] || MODES.diaria).keys;
+    if (c.passage && !c.chapter && keys.indexOf('comprehend') >= 0) seen[passageKey(c.passage)] = d;   // a chapter day does not read it
+    if (keys.indexOf('apply') >= 0) (c.applyItems || []).forEach(function (x) { seen[applyKey(x)] = d; });
+    if (keys.indexOf('produce') >= 0) (c.writeTasks || []).forEach(function (t) { seen[writeKey(t)] = d; });
     Object.keys(seen).forEach(function (k) { if (d - seen[k] > 60) delete seen[k]; });
     saveSeen(seen);
   }
@@ -295,7 +297,7 @@ window.Session = (function () {
    * Split out of buildContext so the home screen can name today's work without
    * also sampling a passage, six cloze items and five writing tasks — Inicio
    * re-renders on every tab switch, and that sampling is the expensive half. */
-  function pickFocus(over) {
+  function pickFocus(over, forSession) {
     var day = dayNumber();
     var pr = window.Profile ? window.Profile.params() : { name: 'standard', unlockAll: false, produceStyle: 'full' };
     var prog = loadProg();
@@ -312,6 +314,9 @@ window.Session = (function () {
        * day it STARTED on, not whatever the counter says now. */
       var pinned = !!(over && over.di != null);
       if (pinned) di = over.di;
+      /* Five minutes after today's full session: the counter already points at tomorrow, so work from the day just done. */
+      var ld = prog.lastDone;
+      if (!pinned && forSession && mode === 'rapido' && ld && ld.day === day && ld.di != null) { di = ld.di; pinned = true; }
       /* WHEN THE COURSE ITSELF MOVES.
        *
        * `beginnerDay` is a plain index into the band's slice, so inserting a
@@ -385,6 +390,9 @@ window.Session = (function () {
       if (!pool.length) pool = lessons;
       for (var i = 0; i < pool.length; i++) { if (!studied[pool[i].id]) { lesson = pool[i]; break; } }
       if (over && over.lessonId) { var ol = lessonById(over.lessonId); if (ol) lesson = ol; }
+      else if (forSession && mode === 'rapido' && prog.lastDone && prog.lastDone.day === day && prog.lastDone.lessonId) {
+        var dl = lessonById(prog.lastDone.lessonId); if (dl) lesson = dl;     // the lesson just done, not tomorrow's
+      }
       if (!lesson) lesson = pool[day % Math.max(1, pool.length)] || null;
       level = lesson ? (lesson.level || 1) : (pr.maxGate || 1);
       focus = lesson ? { type: 'grammar', id: lesson.id, tense: lesson.tense || lesson.id }
@@ -414,7 +422,7 @@ window.Session = (function () {
   function buildContextInner(opts) {
     opts = opts || {};
     var over = opts.over || null;
-    var f = pickFocus(over);
+    var f = pickFocus(over, true);
     var day = f.day, pr = f.pr, studied = f.studied;
     var focus = f.focus, lesson = f.lesson, level = f.level, dayIndex = f.dayIndex;
 
@@ -441,7 +449,26 @@ window.Session = (function () {
       if (arr.length) gaps.push({ kind: 'ungated', stage: stage, lesson: lesson ? lesson.id : null });
       return arr;
     }
+    function passageGate(arr) {
+      if (!gating || !known) return arr;
+      var target = COVERAGE_TARGET[band] || 0.9, ok = [], scored = [];
+      arr.forEach(function (x) {
+        var cv = passageCoverage(x, known);
+        scored.push({ x: x, cv: cv });
+        if (cv + 1e-9 >= target - COVERAGE_SLACK) ok.push(x);
+      });
+      if (!ok.length) {
+        /* nothing is readable yet: the most readable few, and the miss is logged */
+        scored.sort(function (a, b) { return b.cv - a.cv; });
+        if (scored.length) gaps.push({ kind: 'passage-waiting', coverage: Math.round(scored[0].cv * 100) / 100, target: target });
+        return scored.slice(0, 12).map(function (e) { return e.x; });
+      }
+      passCov = {}; scored.forEach(function (e) { passCov[e.x.id] = e.cv; });
+      return ok;
+    }
+    var passCov = {};
     var NONE = function () { return false; };
+    var reused = new Set();     // picks that came back from the 14 day window; the bank replaces them where it can
     /* n items: up to two thirds from those that target today's nodes (when that
      * many exist), the rest from the other unseen ones, then leftovers, then
      * (logged) the oldest seen. Focus alignment (tense/concept) ranks within
@@ -460,13 +487,25 @@ window.Session = (function () {
       if (out.length < n && stale.length) {
         var more = stale.slice(0, n - out.length);
         out = out.concat(more);
+        more.forEach(function (m) { reused.add(m); });
         gaps.push({ kind: 'reuse', stage: stage, keys: more.map(keyOf) });
       }
       return out;
     }
 
-    var passAll = gated(atLevel(window.PASSAGES || []), passageKey, 'comprehend');
+    /* A passage is input and glossed, so grammar nodes do not gate it. The chapter rule does: coverage of the
+     * learner's known lemmas, the passage's own gloss words and the small words, against the band's target, with the
+     * same 0.10 slack (a passage under target but within the slack is served and logged). */
+    var passAll = passageGate(atLevel(window.PASSAGES || []));
     var passages = passAll.filter(function (x) { return !recent(passageKey(x)); });
+    /* From B1 up, a passage at the band's own levels beats a lower level; falling lower is logged. */
+    var bandLv = null;
+    (window.LEVELS || []).forEach(function (L) { if (L.code === band) bandLv = L.levels; });
+    if (band && RANK.indexOf(band) >= 2 && bandLv && passages.length) {
+      var inBand = passages.filter(function (x) { return bandLv.indexOf(x.level || 1) >= 0; });
+      if (inBand.length) passages = inBand;
+      else gaps.push({ kind: 'passage-below-band', band: band, levels: Array.from(new Set(passages.map(function (x) { return x.level || 1; }))).sort() });
+    }
     if (!passages.length && passAll.length) {
       passages = [passAll.slice().sort(function (a, b) { return seen[passageKey(a)] - seen[passageKey(b)]; })[0]];
       gaps.push({ kind: 'reuse', stage: 'comprehend', keys: [passageKey(passages[0])] });
@@ -807,6 +846,47 @@ window.Session = (function () {
             var keep = applyPicks.filter(isHit), drop = applyPicks.filter(function (x) { return !isHit(x); });
             applyPicks = keep.concat(bankApply, drop.slice(0, Math.max(0, applyN - keep.length - bankApply.length)));
           }
+
+          /* A pick the 14 day window had already served is replaced from the bank when a row fits: Apply from
+           * today's rows, then the unit's, Produce by a bank translate or build. Reuse stays the last resort. */
+          var reusedA = applyPicks.filter(function (x) { return reused.has(x); });
+          var reusedP = produce.filter(function (t) { return reused.has(t); });
+          if (reusedA.length || reusedP.length) {
+            var uRows = null, swapped = { apply: 0, produce: 0 };
+            var wider = function () {
+              if (uRows === null) {
+                uRows = [];
+                if (focus.unit) {
+                  var un = Kn.todayNodes({ type: 'practice', unit: focus.unit }, gi);
+                  uRows = BI.forNodes(un, known, { band: band, recent: recent });
+                }
+              }
+              return uRows.filter(function (r) { return !used[r.id]; });
+            };
+            reusedA.forEach(function (old) {
+              var item = null, srcs = [pool, wider()];
+              for (var si = 0; si < srcs.length && !item; si++) {
+                for (var ki = 0; ki < order.length && !item; ki++) {
+                  for (var ri = 0, n2 = 0; ri < srcs[si].length && n2 < 250 && !item; ri++) {
+                    if (used[srcs[si][ri].id]) continue;
+                    n2++;
+                    item = maker[order[ki]](srcs[si][ri]);
+                    if (item) used[srcs[si][ri].id] = 1;
+                  }
+                }
+              }
+              if (item) { applyPicks[applyPicks.indexOf(old)] = item; swapped.apply++; }
+            });
+            reusedP.forEach(function (old) {
+              var cands = free().filter(function (r) { return BI.words(r.es) >= 3 && BI.words(r.es) <= len; });
+              if (!cands.length) cands = wider();
+              var row = sample(cands, 1, rng)[0], item = null;
+              if (row) item = old.type === 'translate' ? BI.translate(row) : (BI.build(row) || BI.translate(row));
+              if (!item) { row = sample(free().filter(function (r) { return BI.build(r); }), 1, rng)[0]; item = row ? BI.build(row) : null; }
+              if (item && row) { used[row.id] = 1; produce[produce.indexOf(old)] = item; swapped.produce++; }
+            });
+            if (swapped.apply || swapped.produce) gaps.push({ kind: 'bank-replaced-reuse', apply: swapped.apply, produce: swapped.produce });
+          }
         }
       }
     }
@@ -995,6 +1075,36 @@ window.Session = (function () {
     }
     return dayIndex === last;
   }
+  var RANK = ['A1', 'A2', 'B1', 'B2', 'C1'];
+  var _passLem = {};
+  function lemmaOfWord(t) {
+    var a = null;
+    if (window.ENGINE && window.ENGINE.analyzeToken) { try { a = window.ENGINE.analyzeToken(t); } catch (e) { a = null; } }
+    return (a && a.length && a[0].inf) || t;
+  }
+  function passageLemmaList(p) {
+    if (_passLem[p.id]) return _passLem[p.id];
+    var seen = {}, out = [];
+    (String(p.text || '').match(/\p{L}+/gu) || []).forEach(function (tok) {
+      var l = lemmaOfWord(tok.toLowerCase());
+      if (!seen[l]) { seen[l] = 1; out.push(l); }
+    });
+    return (_passLem[p.id] = out);
+  }
+  function passageCoverage(p, known) {
+    var lem = passageLemmaList(p);
+    if (!lem.length) return 1;
+    var gl = {};
+    (p.gloss || []).forEach(function (g) {
+      (String(g.es || '').toLowerCase().match(/\p{L}+/gu) || []).forEach(function (w) { gl[w] = 1; gl[lemmaOfWord(w)] = 1; });
+    });
+    var small = (window.LIB && window.LIB.gloss && window.LIB.gloss.SMALL_WORDS) || {};
+    var n = 0;
+    lem.forEach(function (l) {
+      if (known.has('l:' + l) || gl[l] || Object.prototype.hasOwnProperty.call(small, l)) n++;
+    });
+    return n / lem.length;
+  }
   function chapterCoverage(ch, known) {
     if (!known) return 1;      // no node graph loaded: nothing to measure against
     var lem = ch.lemmas || [];
@@ -1059,7 +1169,7 @@ window.Session = (function () {
     if (over && over.chapterId) { var pe = storyEntry(over.chapterId); if (pe) need.push(pe); }
     else if (over && over.rereadId) { if (over.rereadKind === 'chapter') { var re = storyEntry(over.rereadId); if (re) need.push(re); } }
     else {
-      var f = pickFocus(over);
+      var f = pickFocus(over, true);
       if (mode === 'rapido' || isReadingDay(f.dayIndex)) {
         var ne = nextChapterEntry(prog); if (ne) need.push(ne);
         if (mode === 'rapido') { var rc = rereadCandidate(prog, dayNumber()); if (rc && rc.kind === 'chapter' && storyEntry(rc.id)) need.push(storyEntry(rc.id)); }
@@ -1070,6 +1180,15 @@ window.Session = (function () {
     need.forEach(function (e) { loadStoryBand(e, function () { if (--left === 0) fn(); }); });
   }
 
+  /* Home's Five minutes card promises "a page of the story" only when there is one: a chapter part not yet served
+   * today, or a re-read candidate. Otherwise it says Due reviews and nothing more. */
+  function rapidoDef() {
+    var prog = loadProg(), day = dayNumber(), has = false;
+    try {
+      has = (!!nextChapterEntry(prog) && prog.chapterDay !== day) || !!rereadCandidate(prog, day);
+    } catch (e) { has = false; }
+    return has ? MODES.rapido : Object.assign({}, MODES.rapido, { blurb: 'Due reviews' });
+  }
   function readSet() { return loadProg().read || {}; }
   function bumpStreak() {
     var p = loadProg(), day = dayNumber();
@@ -1371,6 +1490,8 @@ window.Session = (function () {
     } else if (c.lesson) {                 // standard/refresher: a grammar lesson each day
       p.studied = p.studied || {}; p.studied[c.lesson.id] = 1;
     }
+    /* Five minutes after a full session works from this day, not tomorrow's (see pickFocus). */
+    p.lastDone = { day: dayNumber(), di: c.di != null ? c.di : null, lessonId: c.lesson ? c.lesson.id : null };
     saveProg(p);
   }
 
@@ -1663,7 +1784,7 @@ window.Session = (function () {
     _build: buildContext, _markSeen: markSeen, _isReadingDay: isReadingDay, _markRead: markRead, _setMode: function (m) { mode = m; },
     today: today,
     skipLesson: skipLesson,
-    modes: function () { return [MODES.rapido, MODES.corto, MODES.diaria, MODES.larga]; },
+    modes: function () { return [rapidoDef(), MODES.corto, MODES.diaria, MODES.larga]; },
     rhythm: rhythm,
     nextUp: nextUp,
     unitOf: unitOf,

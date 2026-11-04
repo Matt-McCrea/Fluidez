@@ -78,19 +78,31 @@ window.Library = (function () {
   function bare(es) { return String(es).trim().toLowerCase().replace(/^(el|la|los|las|un|una)\s+/, ''); }
 
   /* ---- lemmas ------------------------------------------------------------- */
+  function lemmaOf(tok) {
+    var t = tok.toLowerCase(), a = null;
+    if (window.ENGINE && window.ENGINE.analyzeToken) {
+      try { a = window.ENGINE.analyzeToken(t); } catch (e) { a = null; }
+    }
+    return (a && a.length && a[0].inf) || t;
+  }
   function passageLemmas(p) {
     if (lemmaCache[p.id]) return lemmaCache[p.id];
     var seen = {}, out = [];
     (String(p.text || '').match(/\p{L}+/gu) || []).forEach(function (tok) {
-      var t = tok.toLowerCase(), lemma = t, a = null;
-      if (window.ENGINE && window.ENGINE.analyzeToken) {
-        try { a = window.ENGINE.analyzeToken(t); } catch (e) { a = null; }
-      }
-      if (a && a.length) lemma = a[0].inf || t;
+      var lemma = lemmaOf(tok);
       if (!seen[lemma]) { seen[lemma] = 1; out.push(lemma); }
     });
     lemmaCache[p.id] = out;
     return out;
+  }
+  /* The words the passage glosses for the reader (surface forms and their lemmas) count as known for that passage:
+   * a text that explains its own hard words is easier than the bare share says. */
+  function withOwnGloss(p, test) {
+    var gl = {};
+    (p.gloss || []).forEach(function (g) {
+      (String(g.es || '').match(/\p{L}+/gu) || []).forEach(function (w) { w = w.toLowerCase(); gl[w] = 1; gl[lemmaOf(w)] = 1; });
+    });
+    return function (lemma) { return test(lemma) || !!gl[String(lemma).toLowerCase()]; };
   }
   function share(lemmas, test) {
     if (!lemmas || !lemmas.length) return 0;
@@ -107,7 +119,7 @@ window.Library = (function () {
       (window.PASSAGES || []).forEach(function (p) {
         var b = bandOfLevel(p.level);
         out.push({ kind: 'passage', id: p.id, title: p.title, band: b, words: wordCount(p.text),
-                   theme: p.theme, known: share(passageLemmas(p), test), read: !!read[p.id], src: p });
+                   theme: p.theme, known: share(passageLemmas(p), withOwnGloss(p, test)), read: !!read[p.id], src: p });
       });
     } else {
       var cr = prog.chaptersRead || {};

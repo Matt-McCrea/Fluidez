@@ -158,6 +158,48 @@ ok(c.chapter && c.chapter.coverage >= 0.85 && !c.gaps.some(g => /^chapter/.test(
 const cov0 = (function () { const k = window.Known.forLearner({ studied: {} }, 0); return k.has('l:día') || k.size > 0; })();
 ok(cov0, 'Known.forLearner counts lexemes (cognates and taught words) for a day-0 learner');
 
+/* ---- 4c. a passage is gated by coverage, not by grammar nodes -------------- */
+function lemmaSet(text) {
+  const out = new Set();
+  (String(text).match(/\p{L}+/gu) || []).forEach(t => { const a = window.ENGINE.analyzeToken(t.toLowerCase()); out.add('l:' + ((a && a[0] && a[0].inf) || t.toLowerCase())); });
+  return out;
+}
+function covOf(p, known) {
+  const lem = [...lemmaSet(p.text)].map(x => x.slice(2)), gl = new Set();
+  (p.gloss || []).forEach(g => (String(g.es).toLowerCase().match(/\p{L}+/gu) || []).forEach(w => gl.add(w)));
+  const small = (window.LIB && window.LIB.gloss && window.LIB.gloss.SMALL_WORDS) || {};
+  return lem.filter(l => known.has('l:' + l) || gl.has(l) || small[l]).length / lem.length;
+}
+{
+  const realPass = window.PASSAGES;
+  window.Profile.set('A1'); store = {}; S = reload();
+  // a level-1 passage whose grammar nodes are not taught on day 0, but whose words are all known
+  const probe = realPass.filter(p => (p.level || 1) === 1 && !window.Known.allows('passage:' + p.id, realFor({ studied: {} }, 0), window.Known.todayNodes({ type: 'practice' }, 0), 'A1'))[0];
+  ok(!!probe, 'there is an A1 passage the node gate would refuse on day 0 (' + (probe && probe.id) + ')');
+  window.PASSAGES = [probe, Object.assign({}, probe, { id: 'zz-unknown', text: 'Zzxq wwkj ppqr vvlm nnrt kkpz.', gloss: [] })];
+  KNOWN = lemmaSet(probe.text);
+  c = S._build({ seed: 1, over: { di: 0 } });
+  ok(c.passage && c.passage.id === probe.id, 'A1: the fully covered passage is served although its nodes are untaught');
+  ok(!c.gaps.some(g => g.kind === 'ungated' && g.stage === 'comprehend'), 'A1: no node-gate fallback is logged for the passage');
+  window.PASSAGES = [Object.assign({}, probe, { id: 'zz-unknown', text: 'Zzxq wwkj ppqr vvlm nnrt kkpz.', gloss: [] })];
+  KNOWN = new Set();
+  c = S._build({ seed: 1, over: { di: 0 } });
+  ok(c.passage && c.gaps.some(g => g.kind === 'passage-waiting'), 'A1: nothing readable yet: the day still has a passage and a passage-waiting gap is logged');
+  // the band's own level is preferred from B1; falling lower is logged
+  window.Profile.set('B1'); store = {}; S = reload();
+  const low = { id: 'zz-low', title: 'Low', level: 1, theme: 'x', tenses: ['presente'], text: 'Hola amigo. Hola mi casa.', gloss: [] };
+  const mid = { id: 'zz-mid', title: 'Mid', level: 3, theme: 'x', tenses: ['presente'], text: 'Mi amigo vive en una casa grande.', gloss: [] };
+  window.PASSAGES = [low, mid];
+  KNOWN = new Set([...lemmaSet(low.text), ...lemmaSet(mid.text)]);
+  c = S._build({ seed: 1, over: { di: 0 } });
+  ok(c.passage && c.passage.id === 'zz-mid' && !c.gaps.some(g => g.kind === 'passage-below-band'), 'B1: the level-3 passage is served over the level-1 one, nothing logged');
+  window.PASSAGES = [low, Object.assign({}, mid, { text: 'Zzxq wwkj ppqr vvlm nnrt kkpz.' })];
+  KNOWN = lemmaSet(low.text);
+  c = S._build({ seed: 1, over: { di: 0 } });
+  ok(c.passage && c.passage.id === 'zz-low' && c.gaps.some(g => g.kind === 'passage-below-band'), 'B1: only a level-1 passage is readable: it is served and passage-below-band is logged');
+  window.PASSAGES = realPass; window.Profile.set('A1'); KNOWN = null;
+}
+
 /* ---- 5. rapido: reviews plus one beat, counts toward the rhythm only -------- */
 store = {}; KNOWN = coverageSet(ch1, 0.95); S = reload();
 S.start('rapido');
@@ -183,6 +225,33 @@ ok(live.key === 'comprehend' && live.ctx.reread && live.ctx.reread.id === 'ch001
 finishStage();
 ok(rec() === null && !((prog().history || []).indexOf(dayNow()) === -1), 'the re-read still counts toward the rhythm');
 ok(prog().wordsRead === undefined || prog().wordsRead === 0, 're-reading adds no words read');
+
+/* ---- 5b. Five minutes after a full session: the day just done, nothing unseen marked ---- */
+{
+  window.Profile.set('A1'); store = {}; KNOWN = coverageSet(ch1, 0.95); S = reload();
+  const d0 = dayNow();
+  store['fluidez.progress'] = JSON.stringify({ beginnerDay: 4, studied: {}, lastDone: { day: d0, di: 3, lessonId: null }, chapterDay: d0 });
+  S._setMode('rapido');
+  c = S._build({ seed: 1 });
+  ok(c.dayIndex === bandStart + 3, 'rapido after a full session works from the day just done (day ' + (c.dayIndex - bandStart) + ', not 4)');
+  store['fluidez.progress'] = JSON.stringify({ beginnerDay: 4, studied: {} });
+  S._build({ seed: 1 });                       // writes the course signature
+  store['fluidez.progress'] = JSON.stringify(Object.assign(prog(), { beginnerDay: 4 }));
+  c = S._build({ seed: 1 });
+  ok(c.dayIndex === bandStart + 4, 'rapido with nothing done today builds the counter\'s day');
+  S._setMode('rapido');
+  const before = Object.assign({}, JSON.parse(store['fluidez.seen'] || '{}'));
+  c = S._build({ seed: 1 });
+  S._markSeen(c);
+  const after = JSON.parse(store['fluidez.seen'] || '{}');
+  ok(!Object.keys(after).some(k => /^(apply|writing|bank):/.test(k)), 'rapido marks no Apply or Produce item seen');
+  S._setMode('diaria');
+  const m0 = S.modes()[0];
+  store = {}; S = reload();
+  ok(/story/.test(S.modes()[0].blurb), 'Five minutes names the story while a chapter is waiting');
+  store['fluidez.progress'] = JSON.stringify({ chaptersRead: Object.fromEntries(window.STORY_INDEX.map(e => [e.id, dayNow()])) });
+  ok(S.modes()[0].blurb === 'Due reviews', 'with no chapter part and no re-read the card says Due reviews only');
+}
 
 /* ---- 6. success steers difficulty ------------------------------------------- */
 const SRS = window.SRS, td = SRS.today();

@@ -156,7 +156,9 @@ window.Gloss = (function () {
       var lk = UI.el('button', 'mini-btn gw-lookup', 'Look up'); lk.type = 'button';
       lk.addEventListener('click', function (ev) {
         ev.stopPropagation(); closePop();
-        window.Lookup.open((g.lemma || g.es || token).toString());
+        /* the lemma when the word is a form of something, else the one tapped word; never the phrase it sits in */
+        var q = g.form ? g.es : String(token || '').replace(/[^\p{L}\p{N}'-]+/gu, '');
+        window.Lookup.open(String(q || g.es || token || ''));
       });
       pop.appendChild(lk);
     }
