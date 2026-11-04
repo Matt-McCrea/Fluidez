@@ -255,7 +255,7 @@ function prog() { return JSON.parse(store['fluidez.progress'] || '{}'); }
     'Personal identity', '3 of 4 questions right', 'Grammar in context: 5 of 6',
     'Wrote 2 things', '22 of the last 30 days', 'Fluidez'];
   must.forEach(m => ok(txt.indexOf(m) !== -1, `the summary must mention "${m}"`));
-  ok(/Recall: 17 of 20 \(85%\)/.test(txt), 'the summary must give the recall figure in full');
+  ok(/Right: 17 of 20 \(85%\)/.test(txt), 'the summary must give the recall figure in full');
   /* One trend claim per message. The quick check is asked about material met
    * minutes ago and moves with today's difficulty; printed as a second verdict
    * beside the recall line it contradicts it about half the time. */
@@ -282,7 +282,7 @@ function prog() { return JSON.parse(store['fluidez.progress'] || '{}'); }
   // Every section opens with a blank line, so a session missing most of them
   // used to start with a hole three lines deep.
   ok(!/\n\n\n/.test(thin), 'a session with no lesson or passage must not leave a gap:\n' + thin);
-  ok(/Recall: 6 of 8/.test(thin), 'a review-only session must still report its recall');
+  ok(/Right: 6 of 8/.test(thin), 'a review-only session must still report its recall');
 
   /* The whole point of this block of text is that a person reads it. An em
    * dash is the tell that a machine wrote it, and none of the copy uses one. */

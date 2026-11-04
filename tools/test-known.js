@@ -105,7 +105,7 @@ for (let i = 0; i < days.length; i++) {
   P.days++;
   ctx.gaps.forEach(g => { P.gaps[g.kind] = (P.gaps[g.kind] || 0) + 1; });
   // violations
-  const chk = (list, kf, st) => list.forEach(x => { const okx = x.bankId ? BI.allowed(BI.row(x.bankId), known, today, b) : K.allows(kf(x), known, today, b); if (!okx && !ungated(st)) { P.bad++; bad.push(b + ' day ' + i + ' ' + kf(x)); } });
+  const chk = (list, kf, st) => list.forEach(x => { if (x.authored) return; const okx = x.bankId ? BI.allowed(BI.row(x.bankId), known, today, b) : K.allows(kf(x), known, today, b); if (!okx && !ungated(st)) { P.bad++; bad.push(b + ' day ' + i + ' ' + kf(x)); } });
   chk(ctx.applyItems, aKey, 'apply'); chk(ctx.writeTasks, wKey, 'produce'); if (ctx.passage) chk([ctx.passage], pKey, 'comprehend');
   // alignment
   const items = ctx.applyItems.map(aKey).concat(ctx.writeTasks.map(wKey));

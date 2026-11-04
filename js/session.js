@@ -815,7 +815,13 @@ window.Session = (function () {
     // box) comes first in Produce, ahead of whatever the pools chose.
     if (focus && focus.write && window.WRITING_TASKS) {
       var authoredWrite = window.WRITING_TASKS.filter(function (t) { return t.id === focus.write; })[0];
-      if (authoredWrite) produce = [authoredWrite].concat(produce.filter(function (t) { return t.id !== focus.write; }));
+      if (authoredWrite) {
+        // The unit's own task is served whatever the gate says; the playtest
+        // counts it as an authored choice, not a gap in supply.
+        var aw = Object.assign({}, authoredWrite, { authored: true });
+        if (recent(writeKey(aw))) gaps.push({ kind: 'authored-repeat', stage: 'produce', keys: [writeKey(aw)] });
+        produce = [aw].concat(produce.filter(function (t) { return t.id !== focus.write; }));
+      }
     }
 
     var built = {
