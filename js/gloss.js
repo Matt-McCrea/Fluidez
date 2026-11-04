@@ -152,6 +152,14 @@ window.Gloss = (function () {
       });
       pop.appendChild(b);
     }
+    if (!g.name && window.Lookup) {
+      var lk = UI.el('button', 'mini-btn gw-lookup', 'Look up'); lk.type = 'button';
+      lk.addEventListener('click', function (ev) {
+        ev.stopPropagation(); closePop();
+        window.Lookup.open((g.lemma || g.es || token).toString());
+      });
+      pop.appendChild(lk);
+    }
     document.body.appendChild(pop);
     popFor = span; span.classList.add('gw-open');
     // under the word, kept inside the viewport
