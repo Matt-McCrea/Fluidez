@@ -424,5 +424,23 @@ function simulate(band, throttled) {
   ok(!ask(item.stiff) && W.Natural.isStiff(c, item.stiff), 'the stiff line fails');
 }
 
+/* ---- Five minutes skips cards already graded today ---------------------------- */
+{
+  const store = {};
+  const W0 = world({}, 'B1'); const td = W0.SRS.today();
+  const seed = {};
+  ['perro', 'gato', 'casa', 'mesa'].forEach((es, i) => { seed['v:' + es + ':form'] = { box: 3, due: td, reps: 3, last: td - 4 - i, consecCorrect: 3 }; });
+  store['fluidez.srsSchema'] = '3'; store['fluidez.srs'] = JSON.stringify(seed);
+  const { W, made } = deckWorld(store, 'B1');
+  W.SRS.grade('v:perro:form', true); W.SRS.grade('v:gato:form', true);
+  const host = { children: [], appendChild(c) { this.children.push(c); return c; } };
+  W.StageReview.run(host, { results: {}, mode: 'rapido', step: { save() {} }, rng: Math.random }, () => {});
+  const st = latest(made, 'muted review-stats');
+  const asked = []; for (let i = 0; i < 20 && shown(made); i++) break;
+  ok(st && /2 to go/.test(st.textContent), 'rapido deck holds only the two cards not graded today: ' + (st && st.textContent));
+  const txt = made.filter(x => x.className === 'card-front').map(x => x.textContent).join('|');
+  ok(!/perro|gato/.test(txt), 'neither graded card appears in the rapido deck');
+}
+
 console.log('\n' + (n - fails) + ' of ' + n + ' checks passed');
 process.exit(fails ? 1 : 0);

@@ -314,6 +314,17 @@ window.StageReview = (function () {
       });
     }
     var all = reviewable(pool());
+    /* Five minutes after a full session: never re-ask a card already graded today. */
+    if (ctx && ctx.mode === 'rapido') {
+      var td = S.today(), doneToday = {};
+      try {
+        var rl = JSON.parse(localStorage.getItem('fluidez.reviewlog') || '[]');
+        (Array.isArray(rl) ? rl : []).forEach(function (e) { if (e && e.day === td) doneToday[e.id] = 1; });
+        var sr = JSON.parse(localStorage.getItem('fluidez.srs') || '{}') || {};
+        Object.keys(sr).forEach(function (k) { if (sr[k] && sr[k].last === td) doneToday[k] = 1; });
+      } catch (e) { /* unreadable storage: nothing to exclude */ }
+      all = all.filter(function (it) { return !doneToday[it.id]; });
+    }
     if (pr.orderedVocab) {
       all.sort(function (a, b) { return (a.rank == null ? 500 : a.rank) - (b.rank == null ? 500 : b.rank) || (a.idx || 0) - (b.idx || 0); });
     }
@@ -404,7 +415,7 @@ window.StageReview = (function () {
       empty.appendChild(UI.el('p', 'muted', firstDay
         ? 'Nothing to review yet. New words come back tomorrow.'
         : (ctx && ctx.mode === 'rapido'
-          ? 'Your review queue is clear. New items are added as you learn.'
+          ? 'Nothing more to review today.'
           : 'Your review queue is clear. New items are added as you learn. On to today\'s lesson.')));
       empty.appendChild(UI.nextBtn('Continuar →', function () { ctx.results.review = { seen: 0, correct: 0 }; done(); }));
       host.appendChild(empty); return;
