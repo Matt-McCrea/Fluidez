@@ -1,8 +1,10 @@
 /* ============================================================================
- * TEACHING SCRIPTS, B1 units 1 to 4 (window.SCRIPTS_B1), keyed by lesson id.
+ * TEACHING SCRIPTS, B1 units 1 to 8 (window.SCRIPTS_B1), keyed by lesson id.
  * Units b1-u27 "What I think", b1-u28 "Agreeing and arguing", b1-u29 "Plans
- * and predictions" and b1-u30 "Advice and what I would do": every lesson on
- * the path from COURSE_BANDS.B1, the present subjunctive first.
+ * and predictions", b1-u30 "Advice and what I would do", b1-u31 "What I want
+ * from you", b1-u32 "Asking, refusing, forbidding", b1-u33 "Good feelings"
+ * and b1-u34 "When it goes wrong": every lesson on the path from
+ * COURSE_BANDS.B1, the present subjunctive first.
  *
  * Same anatomy as data/scripts/a1.js (a human reason, two or three examples
  * BEFORE the rule, a rule card with the forms on it, read-and-pick that needs
@@ -37,8 +39,17 @@
  * arrives on the first day of b1-u29 ("futuro") and is called "the -ré form";
  * the conditional arrives on the first day of b1-u30 ("condicional") and is
  * called "the -ría form". Before that day only the A2 politeness chunks
- * (podríamos, deberías, me gustaría) appear. No past subjunctive, no
- * pluperfect, no perfect subjunctive anywhere in these four units.
+ * (podríamos, deberías, me gustaría) appear.
+ *
+ * Units 5 to 8 add two more dates. Ojalá is taught on fn-expresar-deseos-b1,
+ * and the scripts of b1-u31 to b1-u34 use it only from that day. Negative tú
+ * commands (no toques, no vayas) wait for impneg in b1-u32; before it the only
+ * one is No te preocupes, a whole phrase since A2. Peninsular forms the old
+ * lessons used (vosotros, apetecer, enfadarse, lo pasé bien, hacer cola, coche,
+ * aparcar, piso, ya he quedado) are replaced by the Colombian ones and named
+ * only in pitfalls. No past subjunctive, no pluperfect, no perfect subjunctive
+ * anywhere in these eight units: the old lessons' que hayas venido, que
+ * abriera and que todo saliera bien are rewritten in the present.
  * ========================================================================== */
 window.SCRIPTS_B1 = {
 
@@ -78,11 +89,11 @@ window.SCRIPTS_B1 = {
     { en: "I want you to call me tonight. (to a friend)", es: "Quiero que me llames esta noche.", accept: ["Quiero que (tú) me llames esta noche."] },
     { en: "I don't think it's that hard.", es: "No creo que sea tan difícil.", accept: ["No [creo|me parece] que sea tan [difícil|duro]."] },
     { en: "It's normal for you to be nervous. (to a friend)", es: "Es normal que estés nervioso.", accept: ["Es normal que estés [nervioso|nerviosa]."] },
-    { en: "I hope you have a good day. (to a friend)", es: "Espero que tengas un buen día.", accept: ["[Espero que|Ojalá] tengas un buen día."] },
+    { en: "I hope you have a good day. (to a friend)", es: "Espero que tengas un buen día.", accept: ["Espero que tengas un buen día."] },
     { en: "I doubt there is time.", es: "Dudo que haya tiempo.", accept: [] }
   ],
   translate: [
-    { en: "I hope you get better soon. (to a friend)", es: "Espero que te mejores pronto.", accept: ["[Espero que|Ojalá] te mejores pronto."] },
+    { en: "I hope you get better soon. (to a friend)", es: "Espero que te mejores pronto.", accept: ["Espero que te mejores pronto."] },
     { en: "I doubt he'll arrive on time with this traffic.", es: "Dudo que llegue a tiempo con este tráfico.", accept: ["Dudo que llegue a tiempo con este [tráfico|trancón]."] },
     { en: "It's important for you to know. (to a friend)", es: "Es importante que lo sepas.", accept: ["Es importante que (lo) sepas."] },
     { en: "I think she's coming.", es: "Creo que viene.", accept: ["Creo que [viene|va a venir]."] },
@@ -93,7 +104,7 @@ window.SCRIPTS_B1 = {
     { es: "¡Que te vaya bien!", en: "Hope it goes well!", when: "with a friend, as you say goodbye" },
     { es: "Espero que te vaya bien.", en: "I hope it goes well for you.", when: "with anyone you call tú, in person or by message" },
     { es: "Espero que le vaya muy bien.", en: "I hope it goes very well for you.", when: "to someone you call usted, like a client" },
-    { es: "Ojalá te vaya bien.", en: "I really hope it goes well for you.", when: "when you care a lot and are not sure it will" },
+    { es: "Espero que todo te salga bien.", en: "I hope it all works out for you.", when: "when you care a lot and are not sure it will" },
     { es: "Le deseamos mucho éxito en su nuevo cargo.", en: "We wish you every success in your new position.", when: "in writing, from a team or a company" }
   ],
   personal: {
@@ -458,7 +469,7 @@ window.SCRIPTS_B1 = {
       options: ["Near the start", "In the middle part", "At the very end"], answer: 2,
       why: "*En conclusión* closes the piece." },
     { q: "How many sides does she give?", es: "Por un lado ahorra tiempo; por otro, es difícil conocer a la gente.",
-      options: ["Two: one good, one bad", "Only the good side", "Three separate reasons"], answer: 0,
+      options: ["Two: one good, one bad", "Only the good side", "Three different reasons"], answer: 0,
       why: "*Por un lado, por otro* sets two sides against each other." }
   ],
   yourTurn: [
@@ -2195,6 +2206,2251 @@ window.SCRIPTS_B1 = {
   pitfalls: [
     "Three *deberías* in a row sound like a telling off: mix *podrías*, *yo que tú* and *lo mejor sería*.",
     "A reply that ends with one more instruction leaves them with homework: end with reassurance."
+  ]
+},
+
+/* ---- unit b1-u31 · What I want from you ---------------------------------- */
+
+"gr-subordinadas-sustantivas-b1": {
+  source: "merged",
+  hook: {
+    line: "Your sister is moving back to Bogotá after two years away. Some of what you feel is about you, and some is about what she does, and Spanish builds those two differently.",
+    es: "Me encanta estar contigo.\nY me encanta que vuelvas a Bogotá.",
+    en: "I love being with you.\nAnd I love that you're coming back to Bogotá."
+  },
+  examples: [
+    { es: "Me preocupa que no tengas trabajo todavía.", en: "It worries me that you don't have a job yet." },
+    { es: "Me da miedo hablar en público.", en: "I'm scared of speaking in public." },
+    { es: "Es probable que llueva esta tarde.", en: "It's likely to rain this afternoon." }
+  ],
+  rule: "After any wanting, feeling or judging, ask one question: who does the second thing?\nThe same person, or nobody in particular: the dictionary form. *Me encanta ir al cine.* *Leer ayuda mucho.*\nSomeone else: *que* and the subjunctive. *Me encanta que me llames.* *Me preocupa que no duermas.*\nIt is the rule you know from *quiero que*, and it reaches every feeling: *me gusta que*, *me molesta que*, *me da miedo que*. Feelings work like *gustar*: *me*, *te*, *le* say who feels it.\nJudgements split the same way: *es posible que llueva*. But a claim keeps the ordinary form: *es verdad que llueve*.",
+  readAndPick: [
+    { q: "Who is coming back?", es: "Me encanta que vuelvas.",
+      options: ["The speaker is", "You are", "Her parents are"], answer: 1,
+      why: "*Que vuelvas*: the coming back is yours. For her own return she would say *me encanta volver*." },
+    { q: "Who is scared, and of what?", es: "Me da miedo manejar de noche.",
+      options: ["I'm scared of driving at night", "I'm scared you drive at night", "You're scared of driving at night"], answer: 0,
+      why: "No *que*, just *manejar*: the one who is scared is the one who would drive." },
+    { q: "Is the speaker saying it will rain?", es: "Es posible que llueva esta tarde.",
+      options: ["Yes, she's quite certain", "Yes, but not this afternoon", "No, only that it might"], answer: 2,
+      why: "Cover *es posible que*: *llueva esta tarde* is held up, not claimed." },
+    { q: "Why does *llueve* stay ordinary here?", es: "Es verdad que llueve mucho en Bogotá.",
+      options: ["It's a wish", "It's a claim of fact", "It's about the past"], answer: 1,
+      why: "*Es verdad que* says it is so, so the ordinary form stays." },
+    { q: "What bothers him?", es: "Le molesta que los vecinos pongan la música tan alta.",
+      options: ["Playing loud music himself", "Hearing no music in the building", "The neighbours' loud music"], answer: 2,
+      why: "*Que los vecinos pongan*: someone else's action, so *que* and the subjunctive." }
+  ],
+  yourTurn: [
+    { en: "I love that you call me every Sunday. (to a friend)", es: "Me encanta que me llames todos los domingos.", accept: ["Me encanta que me llames cada domingo."] },
+    { en: "It worries me that you don't sleep. (to a friend)", es: "Me preocupa que no duermas.", accept: [] },
+    { en: "I'm scared of speaking in public.", es: "Me da miedo hablar en público.", accept: [] },
+    { en: "It's possible that they'll close early.", es: "Es posible que cierren temprano.", accept: ["Puede que cierren temprano."] },
+    { en: "It's true that it rains a lot here.", es: "Es verdad que aquí llueve mucho.", accept: ["Es [verdad|cierto] que llueve mucho [aquí|acá].", "Es cierto que aquí llueve mucho."] }
+  ],
+  translate: [
+    { en: "Reading helps you learn words.", es: "Leer ayuda a aprender palabras.", accept: ["Leer te ayuda a aprender palabras."] },
+    { en: "I like cooking for my family.", es: "Me gusta cocinar para mi familia.", accept: [] },
+    { en: "I like it when my family cooks for me.", es: "Me gusta que mi familia cocine para mí.", accept: ["Me gusta que mi familia me cocine."] },
+    { en: "It bothers him that the neighbours play such loud music.", es: "Le molesta que los vecinos pongan la música tan alta.", accept: ["Le molesta que los vecinos pongan (la) música tan [alta|duro|fuerte]."] },
+    { en: "It's better to rest today.", es: "Es mejor descansar hoy.", accept: ["Hoy es mejor descansar."] },
+    { en: "It's better for you to rest today. (to a friend)", es: "Es mejor que descanses hoy.", accept: ["Es mejor que hoy descanses."] }
+  ],
+  register: [
+    { es: "¡Me encanta que vengas!", en: "I love that you're coming!", when: "warm, with family and friends" },
+    { es: "Me alegra que vengas.", en: "I'm glad you're coming.", when: "anywhere, a little calmer" },
+    { es: "¡Qué bueno que vengas!", en: "How great that you're coming!", when: "the everyday reaction in Colombia" },
+    { es: "Me hace muy feliz que estés aquí.", en: "It makes me very happy that you're here.", when: "when you want to say it openly" },
+    { es: "Nos complace que nos acompañe.", en: "We're pleased that you're joining us.", when: "formal, to someone you call usted" }
+  ],
+  personal: {
+    prompt: "Write two sentences about someone close to you: one about something you love doing yourself, and one about something they do that you love or that worries you.",
+    constraints: [
+      { type: "regex", pattern: "\\b(encanta|gusta|preocupa|molesta|da miedo) [a-záéíóúñ]+(ar|er|ir)(me|te|se|lo|la|le)?\\b", label: "your own action: *me encanta* and the dictionary form" },
+      { type: "regex", pattern: "\\b(encanta|gusta|preocupa|molesta|da miedo) que\\b", label: "their action: *me encanta que* or *me preocupa que*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive after *que*" }
+    ],
+    model: "Me encanta cocinar con mi hermana. Me preocupa que trabaje tanto."
+  },
+  pitfalls: [
+    "*Me encanta que me llamas* is the slip: after a feeling about someone else, the subjunctive, *llames*.",
+    "*Me da miedo que hable en público* means someone else will speak. For your own fear: *me da miedo hablar*.",
+    "*Es verdad que* and *es seguro que* claim it, so the ordinary form stays: *es verdad que llueve*."
+  ]
+},
+
+"fn-expresar-deseos-b1": {
+  source: "merged",
+  hook: {
+    line: "Your best friend from Cali is flying to Madrid for a year. At the airport everything you say is a wish: some for her, some for you, and some about things nobody controls.",
+    es: "Ojalá que te vaya muy bien.\nQue tengas un buen viaje.\nY yo sueño con visitarte.",
+    en: "I really hope it goes very well for you.\nHave a good trip.\nAnd I dream of visiting you."
+  },
+  examples: [
+    { es: "Ojalá no llueva el sábado.", en: "I hope it doesn't rain on Saturday." },
+    { es: "Me encantaría vivir un tiempo en otro país.", en: "I'd love to live in another country for a while." },
+    { es: "Que te mejores pronto.", en: "Get well soon." }
+  ],
+  rule: "Wishes come in sizes.\nFor what you want someone to do: *Quiero que vengas.*\nSofter, for yourself: *Me encantaría* or *me gustaría* and the dictionary form: *Me encantaría conocer Cartagena.*\nA big dream: *Sueño con* and the dictionary form, always with *con*: *Sueño con tener una finca.*\nFor what nobody controls: *Ojalá*, with or without *que*, and always the subjunctive: *Ojalá no llueva.* It needs no other verb.\nFixed wishes keep only the *que*: *Que te vaya bien.* *Que descanses.* *Que te mejores.* *Que tengas buen viaje.*\nTo someone you call *usted*: *Que le vaya bien.* *Que se mejore.*",
+  readAndPick: [
+    { q: "What is she hoping for?", es: "Ojalá no llueva mañana.",
+      options: ["Rain tomorrow", "No rain tomorrow", "Rain today"], answer: 1,
+      why: "*Ojalá* and *no llueva*: a wish against the rain, which nobody controls." },
+    { q: "When would you say this?", es: "Que te mejores pronto.",
+      options: ["To someone who is ill", "To someone going on a trip", "To someone going to bed"], answer: 0,
+      why: "*Que te mejores*: get well soon. A fixed wish with only the *que* left." },
+    { q: "How big is this wish?", es: "Sueño con vivir junto al mar.",
+      options: ["A small favour", "A plan for Monday", "A big dream"], answer: 2,
+      why: "*Sueño con* is for the big things you dream of, not for Monday." },
+    { q: "Who would do the coming?", es: "Quiero que vengas a mi cumpleaños.",
+      options: ["I would", "You would", "Everyone but you"], answer: 1,
+      why: "*Que vengas*: the coming is yours, so *que* and the subjunctive." },
+    { q: "How does this sound next to *quiero ir*?", es: "Me encantaría ir con ustedes.",
+      options: ["Softer, more like a wish", "Ruder, like an order", "The same, only longer"], answer: 0,
+      why: "The *-ría* form turns a want into a wish, so it lands softer." }
+  ],
+  yourTurn: [
+    { en: "I hope it doesn't rain on Saturday.", es: "Ojalá no llueva el sábado.", accept: ["Ojalá (que) no llueva el sábado."] },
+    { en: "Have a good trip. (to a friend)", es: "Que tengas un buen viaje.", accept: ["Que tengas (un) buen viaje."] },
+    { en: "I'd love to get to know Cartagena.", es: "Me encantaría conocer Cartagena.", accept: [] },
+    { en: "I dream of having a farm.", es: "Sueño con tener una finca.", accept: [] },
+    { en: "I want you to come to my party. (to a friend)", es: "Quiero que vengas a mi fiesta.", accept: [] }
+  ],
+  translate: [
+    { en: "Get well soon. (polite)", es: "Que se mejore pronto.", accept: [] },
+    { en: "I hope we see each other soon.", es: "Ojalá nos veamos pronto.", accept: ["Ojalá (que) nos veamos pronto."] },
+    { en: "My dream is to open a café.", es: "Mi sueño es abrir un café.", accept: [] },
+    { en: "Rest well, tomorrow is a long day. (to a friend)", es: "Que descanses, mañana es un día largo.", accept: [] },
+    { en: "Hope it goes well for you. (polite)", es: "Que le vaya bien.", accept: ["Que le vaya (muy) bien."] },
+    { en: "We'd love to live by the sea.", es: "Nos encantaría vivir junto al mar.", accept: ["Nos encantaría vivir [junto al|cerca del|al lado del] mar."] }
+  ],
+  register: [
+    { es: "¡Que te vaya bien!", en: "Hope it goes well!", when: "as a friend leaves, quick and warm" },
+    { es: "Ojalá te vaya muy bien.", en: "I really hope it goes very well for you.", when: "when you care and can't control it" },
+    { es: "Te deseo lo mejor.", en: "I wish you the best.", when: "a little more serious, in a goodbye or a card" },
+    { es: "Que le vaya muy bien.", en: "Hope it goes very well for you.", when: "to someone you call usted" },
+    { es: "Le deseamos muchos éxitos.", en: "We wish you every success.", when: "in writing, from a team or a company" }
+  ],
+  personal: {
+    prompt: "Write to someone who has something big coming up: one wish with *Ojalá*, one fixed wish with *Que*, and one dream of your own with *Sueño con*.",
+    constraints: [
+      { type: "subjunctiveAfter", trigger: "ojalá", label: "a wish with *ojalá* and the subjunctive" },
+      { type: "containsAny", words: ["que te vaya", "que le vaya", "que descanses", "que te mejores", "que se mejore", "que tengas", "que te diviertas"], label: "a fixed wish, like *Que te vaya bien*" },
+      { type: "containsWord", word: "sueño con", label: "a dream of your own with *sueño con*" }
+    ],
+    model: "Ojalá te vaya muy bien en Madrid. Que tengas un buen viaje. Yo sueño con visitarte allá."
+  },
+  pitfalls: [
+    "*Ojalá va a llover* is the slip: *ojalá* always takes the subjunctive, *ojalá llueva*.",
+    "*Sueño de viajar* borrows the English of: Spanish dreams *con*, *sueño con viajar*.",
+    "*Te mejores* alone is not a wish: keep the *que*, *Que te mejores*."
+  ]
+},
+
+"fn-espero-esperanza-b1": {
+  source: "merged",
+  hook: {
+    line: "Your brother has his last exam at the university tomorrow, and you're both nervous. Some hopes are about what you'll do, some are about him, and the shape changes with who acts.",
+    es: "Espero llegar a tiempo para verte.\nY espero que te vaya muy bien.",
+    en: "I hope I get there in time to see you.\nAnd I hope it goes really well for you."
+  },
+  examples: [
+    { es: "Espero terminar el proyecto esta semana.", en: "I hope to finish the project this week." },
+    { es: "Espero que estés bien.", en: "I hope you're well." },
+    { es: "¿Va a salir bien?\nEspero que sí.", en: "Is it going to work out?\nI hope so." }
+  ],
+  rule: "*Espero* splits on one question: who does the hoped-for thing?\nYou do: the dictionary form. *Espero llegar a tiempo.*\nSomeone else does: *que* and the subjunctive. *Espero que llegues a tiempo.*\nFor a short answer, no verb at all: *Espero que sí.* *Espero que no.*\nTurn it up with *ojalá*: more feeling, the same subjunctive. *Ojalá que todo salga bien.*\nFirmer, and a little more formal: *confío en que* and the subjunctive. Keep the *en*: *Confío en que todo salga bien.*\nAdd luck with *Con un poco de suerte*, then a plain sentence: *Con un poco de suerte, llegamos a tiempo.*",
+  readAndPick: [
+    { q: "Who is hoping to arrive?", es: "Espero llegar antes de las ocho.",
+      options: ["Someone else", "The speaker", "The whole family"], answer: 1,
+      why: "No *que*, just *llegar*: the one hoping is the one arriving." },
+    { q: "Who needs to get better?", es: "Espero que te mejores pronto.",
+      options: ["You do", "I do", "We both do"], answer: 0,
+      why: "*Que te mejores*: someone else's recovery, so *que* and the subjunctive." },
+    { q: "What does she answer?", es: "¿Va a llover? Espero que no.",
+      options: ["She hopes it will rain", "She's sure it won't rain", "She hopes it won't rain"], answer: 2,
+      why: "*Espero que no*: I hope not. No verb is needed after it." },
+    { q: "How does he feel about the doctor?", es: "Confío en que el médico tenga razón.",
+      options: ["He trusts it's so", "He knows it is so", "He doubts it is so"], answer: 0,
+      why: "*Confío en que* is a firm hope, so the verb is still the subjunctive, *tenga*." },
+    { q: "How does *ojalá* compare with *espero que*?", es: "Ojalá que todo salga bien.",
+      options: ["Colder and more formal", "Stronger, more heartfelt", "The same, but past"], answer: 1,
+      why: "*Ojalá* carries more feeling than *espero que*, with the same subjunctive." }
+  ],
+  yourTurn: [
+    { en: "I hope to finish this week.", es: "Espero terminar esta semana.", accept: [] },
+    { en: "I hope you get there on time. (to a friend)", es: "Espero que llegues a tiempo.", accept: [] },
+    { en: "I hope so.", es: "Espero que sí.", accept: [] },
+    { en: "I'm confident everything will turn out fine.", es: "Confío en que todo salga bien.", accept: ["Confío en que todo [salga|va a salir|saldrá] bien."] },
+    { en: "With a bit of luck, we'll arrive on time.", es: "Con un poco de suerte, llegamos a tiempo.", accept: ["Con un poco de suerte, [llegamos|vamos a llegar|llegaremos] a tiempo."] }
+  ],
+  translate: [
+    { en: "I hope you're well. (to a friend)", es: "Espero que estés bien.", accept: [] },
+    { en: "I hope not.", es: "Espero que no.", accept: [] },
+    { en: "I really hope everything goes well.", es: "Ojalá que todo salga bien.", accept: ["Ojalá (que) todo salga bien."] },
+    { en: "We're confident the situation will improve soon.", es: "Confiamos en que la situación mejore pronto.", accept: [] },
+    { en: "I hope to see you on Saturday. (to a friend)", es: "Espero verte el sábado.", accept: [] },
+    { en: "I hope you can come on Saturday. (to a friend)", es: "Espero que puedas venir el sábado.", accept: [] }
+  ],
+  register: [
+    { es: "Espero que sí.", en: "I hope so.", when: "a quick answer, with anyone" },
+    { es: "¡Ojalá!", en: "I really hope so!", when: "on its own, when you care a lot" },
+    { es: "Con un poco de suerte, sí.", en: "With a bit of luck, yes.", when: "hopeful, but not counting on it" },
+    { es: "Confío en que todo salga bien.", en: "I'm confident it will all go well.", when: "firmer, at work or to reassure someone" },
+    { es: "Esperamos que disfrute su estadía.", en: "We hope you enjoy your stay.", when: "formal, from a hotel or a business" }
+  ],
+  personal: {
+    prompt: "Something uncertain is coming up for you and for someone you know. Write one hope about yourself and one about them.",
+    constraints: [
+      { type: "regex", pattern: "\\bespero [a-záéíóúñ]+(ar|er|ir)(me|te|se|lo|la|le|nos)?\\b", label: "a hope for yourself: *espero* and the dictionary form" },
+      { type: "subjunctiveAfter", trigger: "espero que", label: "a hope for them: *espero que* and the subjunctive" }
+    ],
+    model: "Espero terminar el curso en diciembre. Espero que mi hermano consiga el trabajo."
+  },
+  pitfalls: [
+    "*Espero que llego a tiempo* is the slip: for your own arrival, *espero llegar*.",
+    "*Espero que llegas* keeps the ordinary form: someone else's action takes *llegues*.",
+    "*Confío que* drops a word: *confío en que*."
+  ]
+},
+
+"fn-preguntar-deseos-b1": {
+  source: "merged",
+  hook: {
+    line: "It's Friday night, and your flatmate in Medellín looks bored. Before you suggest anything, you ask what she feels like doing, and whether she wants you to do something for her.",
+    es: "¿Qué tienes ganas de hacer esta noche?\n¿Quieres que pida una pizza?",
+    en: "What do you feel like doing tonight?\nDo you want me to order a pizza?"
+  },
+  examples: [
+    { es: "¿Te provoca un tinto?", en: "Do you feel like a coffee?" },
+    { es: "¿Qué te gustaría hacer el domingo?", en: "What would you like to do on Sunday?" },
+    { es: "¿Tienes ganas de que vuelva Andrés?", en: "Are you looking forward to Andrés coming back?" }
+  ],
+  rule: "To ask what someone feels like, Colombians say:\n*¿Tienes ganas de* plus a thing or the dictionary form: *¿Tienes ganas de salir?*\n*¿Te provoca* plus the same: *¿Te provoca un tinto?* It works like *gustar*: the thing is the subject.\n*¿Qué te gustaría hacer?* is softer and more open.\nTo offer to do it yourself: *¿Quieres que* and the subjunctive. *¿Quieres que te ayude?* means I would do the helping.\nWhen the wanted thing is someone else's action, the same switch: *¿Tienes ganas de que vuelva Andrés?*\nFor the big question: *¿Cuál es tu sueño?*",
+  readAndPick: [
+    { q: "Who would do the ordering?", es: "¿Quieres que pida una pizza?",
+      options: ["The speaker would", "You would", "The pizza place"], answer: 0,
+      why: "*Pida* is the I form after *quieres que*: she is offering to order." },
+    { q: "What is being offered?", es: "¿Te provoca algo de tomar?",
+      options: ["Something to eat", "A ride home later on", "Something to drink"], answer: 2,
+      why: "*Algo de tomar* is something to drink, and *¿te provoca?* asks if you feel like it." },
+    { q: "Who is coming back?", es: "¿Tienes ganas de que vuelva Andrés?",
+      options: ["You are", "Andrés is", "We both are"], answer: 1,
+      why: "*Que vuelva Andrés*: the coming back is his, so *que* and the subjunctive." },
+    { q: "How open is this question?", es: "¿Qué te gustaría hacer el fin de semana?",
+      options: ["Very open: anything goes", "Closed: yes or no", "Rude: far too direct"], answer: 0,
+      why: "*¿Qué te gustaría?* leaves the whole choice to them." },
+    { q: "What does she want to know?", es: "¿Cuál es tu sueño?",
+      options: ["What you dreamt last night", "What you most want in life", "When you usually go to sleep"], answer: 1,
+      why: "*Tu sueño* here is your dream in life, the big wish." }
+  ],
+  yourTurn: [
+    { en: "Do you feel like going out tonight? (to a friend)", es: "¿Tienes ganas de salir esta noche?", accept: ["¿[Tienes ganas de|Te provoca] salir esta noche?"] },
+    { en: "Do you want me to help you? (to a friend)", es: "¿Quieres que te ayude?", accept: [] },
+    { en: "What would you like to do on Sunday? (to a friend)", es: "¿Qué te gustaría hacer el domingo?", accept: [] },
+    { en: "Do you feel like a coffee? (to a friend)", es: "¿Te provoca un tinto?", accept: ["¿Te provoca un [tinto|café]?", "¿Tienes ganas de un [tinto|café]?"] }
+  ],
+  translate: [
+    { en: "Would you like a coffee? (polite)", es: "¿Le provoca un tinto?", accept: ["¿Le provoca un [tinto|café]?"] },
+    { en: "Do you want me to introduce you to my friends? (to a friend)", es: "¿Quieres que te presente a mis amigos?", accept: [] },
+    { en: "Are you looking forward to your sister coming? (to a friend)", es: "¿Tienes ganas de que venga tu hermana?", accept: [] },
+    { en: "What's your dream? (to a friend)", es: "¿Cuál es tu sueño?", accept: [] },
+    { en: "Which movie do you feel like watching? (to a friend)", es: "¿Qué película tienes ganas de ver?", accept: ["¿Qué película te provoca ver?"] },
+    { en: "Where would you like to study Spanish? (to a friend)", es: "¿Dónde te gustaría estudiar español?", accept: [] }
+  ],
+  register: [
+    { es: "¿Te provoca algo?", en: "Do you feel like anything?", when: "in Colombia, a warm everyday offer" },
+    { es: "¿Tienes ganas de salir?", en: "Do you feel like going out?", when: "with friends, anywhere in Latin America" },
+    { es: "¿Qué te gustaría hacer?", en: "What would you like to do?", when: "softer, leaving the choice to them" },
+    { es: "¿Le provoca algo de tomar?", en: "Would you like something to drink?", when: "to a guest you call usted" },
+    { es: "¿Qué desea tomar?", en: "What would you like to drink?", when: "a waiter to a customer" }
+  ],
+  personal: {
+    prompt: "Write two questions for a friend about this weekend: one about what they feel like doing, and one offering to do something for them.",
+    constraints: [
+      { type: "question", label: "write questions, with *¿...?*" },
+      { type: "containsAny", words: ["tienes ganas de", "te provoca", "te gustaría"], label: "what they feel like: *¿tienes ganas de...?* or *¿te provoca...?*" },
+      { type: "subjunctiveAfter", trigger: "quieres que", label: "an offer: *¿quieres que...?* and the subjunctive" }
+    ],
+    model: "¿Tienes ganas de ir a cine el sábado? ¿Quieres que compre las boletas?"
+  },
+  pitfalls: [
+    "*Yo provoco un tinto* turns it around: like *gustar*, the thing is the subject, *me provoca un tinto*.",
+    "*¿Quieres que te ayudo?* keeps the ordinary form: after *quieres que*, *te ayude*.",
+    "In Spain you will hear *¿te apetece?* for this; in Colombia it's *¿te provoca?* or *¿tienes ganas de?*"
+  ]
+},
+
+"fn-posibilidad-b1": {
+  source: "merged",
+  hook: {
+    line: "A friend asks whether there will still be a bus back to Bogotá when the concert ends. You honestly don't know, and Spanish lets you say exactly how likely it is.",
+    es: "Puede que haya un bus a las once.\nPero es imposible que lleguemos antes.",
+    en: "There might be a bus at eleven.\nBut it's impossible for us to get there sooner."
+  },
+  examples: [
+    { es: "A lo mejor no funciona el teléfono.", en: "Maybe the phone isn't working." },
+    { es: "Seguro que todavía está en la casa de su mamá.", en: "I bet he's still at his mom's." },
+    { es: "¿Qué hora es?\nNo sé, serán las cinco.", en: "What time is it?\nI don't know, it must be about five." }
+  ],
+  rule: "Say how possible something is, from top to bottom:\n*Seguro que* is I bet, with the ordinary form: *Seguro que llega tarde.*\n*A lo mejor* and *de pronto* are maybe, with the ordinary form: *A lo mejor llueve.*\n*Puede que*, *es posible que* and *es probable que* take the subjunctive: *Puede que llueva.*\nSo do *no estoy seguro de que* and *es imposible que*: *Es imposible que lleguemos.*\nThe test you know: cover the opening. If nobody claims what is left, it is the subjunctive.\nA guess about now needs no word at all: *Serán las cinco.* *Estará en la ducha.*\nOn their own, as answers: *Puede ser.* *Lo dudo.* *Imposible.*",
+  readAndPick: [
+    { q: "Does the speaker think it will rain?", es: "Puede que llueva más tarde.",
+      options: ["She's sure it will", "She thinks it might", "She's quite sure it won't"], answer: 1,
+      why: "*Puede que* holds the rain up as a maybe, so *llueva*." },
+    { q: "Why does *funciona* keep the ordinary form?", es: "A lo mejor no funciona el teléfono.",
+      options: ["*A lo mejor* takes it", "It's about the past", "It's a command"], answer: 0,
+      why: "*A lo mejor* means maybe, but it keeps the ordinary form. It is one to learn." },
+    { q: "What is he saying about Javier?", es: "¿Y Javier? Estará en la ducha.",
+      options: ["He knows it for sure", "He'll shower later", "It's his best guess"], answer: 2,
+      why: "*Estará* guesses about right now, with no maybe word at all." },
+    { q: "How likely is it?", es: "Es imposible que terminemos hoy.",
+      options: ["Not at all likely", "Fairly likely", "It's already been done"], answer: 0,
+      why: "*Es imposible que*: no chance, and the subjunctive, *terminemos*." },
+    { q: "Which answer leaves the most doubt?", es: "¿Vienes mañana? Puede ser.",
+      options: ["Yes, for certain", "No, not a chance", "Maybe, maybe not"], answer: 2,
+      why: "*Puede ser* on its own is could be: neither yes nor no." }
+  ],
+  yourTurn: [
+    { en: "It might rain later.", es: "Puede que llueva más tarde.", accept: ["[Puede que|Es posible que] llueva más tarde."] },
+    { en: "Maybe the phone isn't working.", es: "A lo mejor no funciona el teléfono.", accept: ["[A lo mejor|De pronto] el teléfono no funciona.", "De pronto no funciona el teléfono."] },
+    { en: "It's impossible for us to finish today.", es: "Es imposible que terminemos hoy.", accept: ["Es imposible que hoy terminemos."] },
+    { en: "It must be about five.", es: "Serán las cinco.", accept: ["Serán como las cinco."] }
+  ],
+  translate: [
+    { en: "I bet he's still at home.", es: "Seguro que todavía está en la casa.", accept: ["Seguro que [todavía|aún] está en (la) casa.", "Seguro que sigue en (la) casa."] },
+    { en: "It's likely that he won't come.", es: "Es probable que no venga.", accept: [] },
+    { en: "I'm not sure that it's possible.", es: "No estoy seguro de que sea posible.", accept: ["No estoy [seguro|segura] de que sea posible."] },
+    { en: "She's probably still at work.", es: "Estará todavía en el trabajo.", accept: ["[Estará|Seguramente está] todavía en el trabajo.", "Todavía estará en el trabajo."] },
+    { en: "Maybe we'll have to change the plan.", es: "A lo mejor tenemos que cambiar el plan.", accept: ["[A lo mejor|De pronto] tenemos que cambiar el plan."] },
+    { en: "I doubt it.", es: "Lo dudo.", accept: [] }
+  ],
+  register: [
+    { es: "Seguro que sí.", en: "I'm sure it will.", when: "confident, among friends" },
+    { es: "De pronto.", en: "Maybe.", when: "the everyday maybe in Colombia" },
+    { es: "Puede ser.", en: "Could be.", when: "neutral, when you really don't know" },
+    { es: "Lo dudo.", en: "I doubt it.", when: "polite, but clearly sceptical" },
+    { es: "Es poco probable.", en: "It's unlikely.", when: "careful, at work or in writing" }
+  ],
+  personal: {
+    prompt: "Something is uncertain this week: the weather, a delivery, a friend's plans. Write one line with *puede que* or *es posible que*, and one with *a lo mejor*.",
+    constraints: [
+      { type: "containsAny", words: ["puede que", "es posible que", "es probable que"], label: "*puede que* or *es posible que*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive after it" },
+      { type: "containsAny", words: ["a lo mejor", "de pronto"], label: "*a lo mejor* or *de pronto*, with the ordinary form" }
+    ],
+    model: "Puede que llueva el sábado. A lo mejor vamos a cine en vez de ir al parque."
+  },
+  pitfalls: [
+    "*A lo mejor llueva* is the slip: *a lo mejor* keeps the ordinary form, *a lo mejor llueve*.",
+    "*Puede que llueve* is the opposite slip: *puede que* takes the subjunctive, *llueva*.",
+    "*Seguro que* is a casual I bet; *estoy seguro de que* is firm. Both keep the ordinary form."
+  ]
+},
+
+"nt-necesidad-obligacion-b1": {
+  source: "merged",
+  hook: {
+    line: "You're renewing a document at an office in Bogotá, and the woman at the window speaks in the language of rules. Half of it is what you must do, and half is what depends on something else.",
+    es: "Es obligatorio traer la cédula.\nEl tiempo de espera depende del día.",
+    en: "Bringing your ID card is compulsory.\nThe waiting time depends on the day."
+  },
+  examples: [
+    { es: "¿Vienes el sábado?\nDepende del clima.", en: "Are you coming on Saturday?\nIt depends on the weather." },
+    { es: "No es obligatorio, pero se recomienda.", en: "It isn't compulsory, but it's recommended." },
+    { es: "Por suerte, no llovió el día del matrimonio.", en: "Luckily, it didn't rain on the day of the wedding." }
+  ],
+  rule: "*Depender* always takes *de*: *Depende del clima.* Before a whether, *depende de si*: *Depende de si me dan la visa.* *Depende* alone is a full answer.\n*Es obligatorio* and the dictionary form is a rule, often official: *Es obligatorio llevar casco.* No *de*, no *que*.\n*No es obligatorio* only means you don't have to. For a ban: *está prohibido*.\n*Es necesario* is softer, good advice more than law: *Es necesario reservar.*\n*Es inevitable* means it can't be avoided: *Es inevitable que haya trancón.*\nAnd when it all works out: *Por suerte, no hizo falta.*",
+  readAndPick: [
+    { q: "What decides whether she comes?", es: "Depende de si me dan permiso en el trabajo.",
+      options: ["The weather", "Getting time off", "Her family"], answer: 1,
+      why: "*Depende de si*: it hinges on whether work gives her permission." },
+    { q: "Does she have to bring a photo?", es: "La foto no es obligatoria, pero ayuda.",
+      options: ["No, but it helps", "Yes, it's required", "No, it's banned"], answer: 0,
+      why: "*No es obligatoria* only means she doesn't have to. It isn't a ban." },
+    { q: "Where would you expect to read this?", es: "Es obligatorio usar el cinturón de seguridad.",
+      options: ["In a text from a friend", "On an official notice", "On a birthday card"], answer: 1,
+      why: "*Es obligatorio* has the sound of a rule or a law." },
+    { q: "What is she saying?", es: "Por suerte, encontramos dónde parquear.",
+      options: ["They had bad luck", "They had to walk", "They were lucky"], answer: 2,
+      why: "*Por suerte* is luckily: they found somewhere to park." },
+    { q: "How strong is *es necesario* here?", es: "Es necesario reservar con anticipación.",
+      options: ["A ban", "A rule set by law", "Strong advice"], answer: 2,
+      why: "*Es necesario* is softer than *es obligatorio*: sound advice, not law." }
+  ],
+  yourTurn: [
+    { en: "It depends on the weather.", es: "Depende del clima.", accept: ["Depende del [clima|tiempo]."] },
+    { en: "It all depends on whether I get the visa in time.", es: "Todo depende de si me dan la visa a tiempo.", accept: ["Todo depende de si [me dan|consigo|recibo] la visa a tiempo."] },
+    { en: "Wearing a helmet is compulsory.", es: "Es obligatorio llevar casco.", accept: ["Es obligatorio [llevar|usar] (el) casco."] },
+    { en: "Luckily, it didn't rain.", es: "Por suerte, no llovió.", accept: [] }
+  ],
+  translate: [
+    { en: "In this country, voting isn't compulsory.", es: "En este país, votar no es obligatorio.", accept: ["En este país no es obligatorio votar."] },
+    { en: "It's necessary to book in advance.", es: "Es necesario reservar con anticipación.", accept: ["Es necesario reservar con [anticipación|tiempo|antelación]."] },
+    { en: "The price depends on the size.", es: "El precio depende del tamaño.", accept: [] },
+    { en: "It's inevitable that there'll be traffic on Friday.", es: "Es inevitable que haya trancón el viernes.", accept: ["Es inevitable que haya [trancón|tráfico] el viernes."] },
+    { en: "It isn't compulsory, but it's recommended.", es: "No es obligatorio, pero se recomienda.", accept: ["No es obligatorio, pero es recomendable."] },
+    { en: "Luckily, we found somewhere to park right away.", es: "Por suerte, encontramos dónde parquear enseguida.", accept: ["Por suerte, encontramos dónde parquear [enseguida|rápido|de una]."] }
+  ],
+  register: [
+    { es: "Depende.", en: "It depends.", when: "a full answer, when you won't commit" },
+    { es: "Hay que traer la cédula.", en: "You have to bring your ID.", when: "everyday, a rule for everyone" },
+    { es: "Tienes que traer la cédula.", en: "You've got to bring your ID.", when: "to one friend, direct and personal" },
+    { es: "Es necesario traer la cédula.", en: "It's necessary to bring your ID.", when: "a careful explanation or a notice" },
+    { es: "Es obligatorio presentar la cédula.", en: "Showing your ID is compulsory.", when: "the official rule, on forms and signs" }
+  ],
+  personal: {
+    prompt: "Think of a plan you have that isn't fixed yet. Say what it depends on, and one rule you have to follow for it.",
+    constraints: [
+      { type: "containsWord", word: "depende de", label: "what it depends on: *depende de*" },
+      { type: "containsAny", words: ["es obligatorio", "es necesario", "hay que"], label: "a rule: *es obligatorio*, *es necesario* or *hay que*" }
+    ],
+    model: "El viaje a Cartagena depende de si me dan vacaciones. Es obligatorio llevar la cédula en el avión."
+  },
+  pitfalls: [
+    "*Depende el clima* drops the *de*: *depende del clima*, and *depende de si* before a whether.",
+    "*No es obligatorio* only means you don't have to. A ban is *está prohibido*.",
+    "*Es obligatorio de llevar* adds a word: go straight to the dictionary form, *es obligatorio llevar*."
+  ]
+},
+
+"task-b1-deseos": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: a message to a friend asking for real help, and saying what you hope for. Every request is about what someone else does, and that changes the verb.",
+    es: "Te escribo porque necesito que me eches una mano con el trasteo del sábado.",
+    en: "I'm writing because I need you to give me a hand with the move on Saturday."
+  },
+  examples: [
+    { es: "Quiero que veas el apartamento antes de subir los muebles.", en: "I want you to see the apartment before we carry the furniture up." },
+    { es: "Ojalá no llueva, porque si llueve va a ser un desastre.", en: "I hope it doesn't rain, because if it rains it'll be a disaster." }
+  ],
+  rule: "A message that asks well makes five moves.\nSay why you're writing: *Te escribo porque...*\nAsk for what they do, with *que* and the subjunctive: *Necesito que me eches una mano.* *Quiero que veas el apartamento.*\nKeep your own part plain: *Quiero terminar antes del almuerzo.*\nHope out loud: *Espero que no llueva.* *Ojalá podamos terminar temprano.*\nMake it easy to say no: *Si no puedes, no pasa nada.*\nEnd warm: *Mil gracias, te debo una.*",
+  readAndPick: [
+    { q: "Who will give the hand?", es: "Necesito que me eches una mano.",
+      options: ["The writer will", "The friend will", "Nobody has said yet"], answer: 1,
+      why: "*Que me eches*: the friend does it, so *que* and the subjunctive." },
+    { q: "Why does *terminar* stay in the dictionary form?", es: "Quiero terminar antes del almuerzo.",
+      options: ["It's a wish for the friend", "The writer will finish", "It's in the past"], answer: 1,
+      why: "The one who wants is the one who finishes, so no *que*." },
+    { q: "What does this line do?", es: "Si no puedes, no pasa nada.",
+      options: ["It makes saying no easy", "It sets a deadline", "It asks a second favour"], answer: 0,
+      why: "*No pasa nada* tells the friend a no is fine, which makes a yes easier." },
+    { q: "What does she hope?", es: "Ojalá no llueva el sábado.",
+      options: ["That the move is off", "That it rains", "That it stays dry"], answer: 2,
+      why: "*Ojalá no llueva*: a wish against the rain." },
+    { q: "What does *te debo una* mean?", es: "Mil gracias, te debo una.",
+      options: ["I owe you one", "You owe me one", "I need one more"], answer: 0,
+      why: "*Te debo una*: I owe you one, a warm way to close." }
+  ],
+  yourTurn: [
+    { en: "I need you to give me a hand on Saturday. (to a friend)", es: "Necesito que me eches una mano el sábado.", accept: ["Necesito que me [eches una mano|ayudes] el sábado."] },
+    { en: "I want you to see the apartment. (to a friend)", es: "Quiero que veas el apartamento.", accept: [] },
+    { en: "I hope it doesn't rain.", es: "Espero que no llueva.", accept: ["[Espero que|Ojalá (que)] no llueva."] },
+    { en: "If you can't, it's no big deal. (to a friend)", es: "Si no puedes, no pasa nada.", accept: [] }
+  ],
+  translate: [
+    { en: "I'm writing because I need you to help me with the move. (to a friend)", es: "Te escribo porque necesito que me ayudes con el trasteo.", accept: ["Te escribo porque necesito que me ayudes con [el trasteo|la mudanza]."] },
+    { en: "I want to finish before lunch.", es: "Quiero terminar antes del almuerzo.", accept: [] },
+    { en: "I hope we can finish early.", es: "Ojalá podamos terminar temprano.", accept: ["[Ojalá (que)|Espero que] podamos terminar temprano."] },
+    { en: "Thanks a million, I owe you one. (to a friend)", es: "Mil gracias, te debo una.", accept: [] },
+    { en: "Can you bring your brother's van? (to a friend)", es: "¿Puedes traer la camioneta de tu hermano?", accept: ["¿[Puedes|Podrías] traer la camioneta de tu hermano?"] }
+  ],
+  register: [
+    { es: "¿Me echas una mano?", en: "Will you give me a hand?", when: "with a close friend, by message" },
+    { es: "Necesito que me ayudes.", en: "I need you to help me.", when: "direct, when it really matters" },
+    { es: "¿Podrías ayudarme el sábado?", en: "Could you help me on Saturday?", when: "softer, for a bigger favour" },
+    { es: "Quería pedirle un favor.", en: "I wanted to ask you a favour.", when: "to someone you call usted" }
+  ],
+  personal: {
+    prompt: "Write the message: ask a friend for real help with something, say what you hope for, and make it easy for them to say no.",
+    constraints: [
+      { type: "minSentences", n: 5, label: "five sentences or more" },
+      { type: "containsAny", words: ["necesito que", "quiero que"], label: "a request: *necesito que* or *quiero que*" },
+      { type: "containsAny", words: ["espero que", "ojalá"], label: "a hope with *espero que* or *ojalá*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive for what they do" }
+    ],
+    model: "Hola, Juli. Te escribo porque necesito que me eches una mano con el trasteo del sábado. Quiero terminar antes del almuerzo. Ojalá no llueva. Si no puedes, no pasa nada. Mil gracias, te debo una."
+  },
+  pitfalls: [
+    "*Necesito que me echas una mano* keeps the ordinary form: their action takes *eches*.",
+    "*Quiero que yo termine* puts *que* on your own action: *quiero terminar*."
+  ]
+},
+
+/* ---- unit b1-u32 · Asking, refusing, forbidding -------------------------- */
+
+"fn-pedir-ayuda-b1": {
+  source: "merged",
+  hook: {
+    line: "You've just moved into an apartment in Bogotá with a sofa you can't lift alone. You'll need help from your flatmate, a neighbour you've never met and the man at the hardware store, and each one gets a different way of asking.",
+    es: "¿Me ayudas con el sofá?\nQué pena con usted, ¿me podría ayudar un momento?",
+    en: "Will you help me with the sofa?\nSorry to bother you, could you help me for a moment?"
+  },
+  examples: [
+    { es: "¿Te importaría prestarme el taladro?", en: "Would you mind lending me the drill?" },
+    { es: "¿Me dejas usar tu computador un momento?", en: "Will you let me use your computer for a moment?" },
+    { es: "Tengo que subir este sofá y no puedo solo.", en: "I have to get this sofa upstairs and I can't do it alone." }
+  ],
+  rule: "Asking comes in levels, from close to careful.\nA command and *por favor*: *Pásame el martillo, por favor.*\nA plain question: *¿Me ayudas?* *¿Me prestas el carro?*\nSofter: *¿Puedes...?*, then *¿Podrías...?*, then *¿Te importaría* and the dictionary form: *¿Te importaría ayudarme?* Careful: to that one, *No, para nada* means happy to.\nFor permission: *¿Puedo...?* or *¿Me dejas...?* To ask about the rule: *¿Se puede parquear aquí?*\nWith a stranger, open with *Qué pena con usted* or *Quería pedirle un favor.* In a shop: *¿Me regala una bolsa?*\nOr just say the problem and let them offer: *Esto pesa mucho y no puedo solo.*",
+  readAndPick: [
+    { q: "Who is she asking?", es: "¿Se puede parquear aquí?",
+      options: ["Nobody in particular", "One person in particular", "The parking attendant"], answer: 0,
+      why: "*Se puede* asks about the rule. To ask one person: *¿me dejas parquear aquí?*" },
+    { q: "What does he want?", es: "Esto pesa muchísimo y no puedo solo.",
+      options: ["Help, without asking", "To be left alone", "Nothing at all"], answer: 0,
+      why: "He names the problem and leaves room for you to offer." },
+    { q: "Your friend asks this and you're happy to. What do you say?", es: "¿Te importaría cerrar la ventana?",
+      options: ["Sí, me importa.", "Me importaría.", "No, para nada."], answer: 2,
+      why: "The question is would you mind, so *No, para nada* is the happy yes." },
+    { q: "Where would you hear this?", es: "¿Me regala una bolsa, por favor?",
+      options: ["A gift between friends", "Asking in a shop", "Selling something"], answer: 1,
+      why: "In Colombia, *¿me regala...?* is how you ask for something in a shop. Nothing is free." },
+    { q: "How careful is this opening?", es: "Qué pena con usted, ¿me podría ayudar?",
+      options: ["Very careful, to a stranger", "Casual, to a sister", "Rude and far too direct"], answer: 0,
+      why: "*Qué pena con usted* says sorry to bother you, and *podría* softens the rest." }
+  ],
+  yourTurn: [
+    { en: "Will you help me with the sofa? (to a friend)", es: "¿Me ayudas con el sofá?", accept: [] },
+    { en: "Would you mind lending me the drill? (to a friend)", es: "¿Te importaría prestarme el taladro?", accept: ["¿Te importaría prestarme tu taladro?"] },
+    { en: "Can I park here?", es: "¿Se puede parquear aquí?", accept: ["¿Se puede parquear acá?", "¿Puedo parquear [aquí|acá]?"] },
+    { en: "Will you pass me the salt? (to a friend)", es: "¿Me pasas la sal?", accept: ["¿Me puedes pasar la sal?", "¿Puedes pasarme la sal?"] },
+    { en: "Sorry to bother you, could you help me? (polite)", es: "Qué pena con usted, ¿me podría ayudar?", accept: ["Qué pena con usted, ¿podría ayudarme?"] }
+  ],
+  translate: [
+    { en: "Will you let me use your computer for a moment? (to a friend)", es: "¿Me dejas usar tu computador un momento?", accept: ["¿Me dejas usar tu [computador|computadora] un momento?"] },
+    { en: "I wanted to ask you a favour. (polite)", es: "Quería pedirle un favor.", accept: [] },
+    { en: "Could I have a bag, please?", es: "¿Me regala una bolsa, por favor?", accept: ["¿Me [regala|da] una bolsa, por favor?"] },
+    { en: "Do you mind if I open the window? (to a friend)", es: "¿Te molesta si abro la ventana?", accept: ["¿Te [molesta|importa] si abro la ventana?"] },
+    { en: "I need you to help me understand this contract. (to a friend)", es: "Necesito que me ayudes a entender este contrato.", accept: [] },
+    { en: "Could you do me a favour? (to a friend)", es: "¿Me podrías hacer un favor?", accept: ["¿Podrías hacerme un favor?", "¿Me haces un favor?"] }
+  ],
+  register: [
+    { es: "Pásame el martillo.", en: "Pass me the hammer.", when: "family and close friends, in the middle of a job" },
+    { es: "¿Me pasas el martillo?", en: "Will you pass me the hammer?", when: "everyday, with anyone you call tú" },
+    { es: "¿Me podrías pasar el martillo?", en: "Could you pass me the hammer?", when: "softer, when they're busy" },
+    { es: "¿Le importaría pasarme el martillo?", en: "Would you mind passing me the hammer?", when: "to someone you call usted" },
+    { es: "¿Me regala un martillo?", en: "Can I get a hammer?", when: "at a shop counter in Colombia" }
+  ],
+  personal: {
+    prompt: "You need help with something real this week. Ask a friend in one line, and a neighbour you don't know well in another.",
+    constraints: [
+      { type: "question", label: "ask, with *¿...?*" },
+      { type: "containsAny", words: ["me ayudas", "me prestas", "me pasas", "puedes", "podrías", "te importaría"], label: "the friend: *¿me ayudas?*, *¿podrías...?* or *¿te importaría...?*" },
+      { type: "regex", pattern: "\\b(podría|le importaría|qué pena con usted|quería pedirle)\\b", label: "the neighbour: *¿podría...?* or *Qué pena con usted*" }
+    ],
+    model: "Oye, ¿me ayudas a subir el sofá esta noche? Qué pena con usted, ¿me podría prestar un taladro?"
+  },
+  pitfalls: [
+    "*¿Te importaría ayudando?* borrows the English -ing: *¿te importaría ayudarme?*",
+    "*Sí* to *¿te importaría?* means you do mind. Happy to is *No, para nada*.",
+    "*¿Se puede?* asks about the rule; one person's permission is *¿me dejas?*"
+  ]
+},
+
+"fn-responder-orden-b1": {
+  source: "merged",
+  hook: {
+    line: "Your cousin asks to borrow your car for the weekend. You don't have to say yes or no straight away: Spanish gives you a yes, a yes with conditions, a maybe and a polite no.",
+    es: "Sí, si me lo devuelves el domingo.\nPero cuídalo mucho, ¿sí?",
+    en: "Yes, if you give it back to me on Sunday.\nBut take good care of it, okay?"
+  },
+  examples: [
+    { es: "Lo siento, no puedo. Es que lo necesito para el trabajo.", en: "I'm sorry, I can't. It's just that I need it for work." },
+    { es: "Lo voy a intentar, pero no te lo puedo prometer.", en: "I'll try, but I can't promise you." },
+    { es: "No pienso prestarle el carro a nadie.", en: "I have no intention of lending the car to anyone." }
+  ],
+  rule: "Four answers to a request.\nYes, no strings: *Claro.* *Listo.* *Con mucho gusto.*\nYes, with a condition: *Sí, si me lo devuelves pronto.* *Bueno, pero cuídalo.*\nNot yet: *No sé, déjame pensarlo.* *Lo voy a intentar, pero no te lo puedo prometer.*\nNo, kindly: sorry first, then a reason with *es que*: *Lo siento, no puedo. Es que lo necesito.* Without the reason, *no puedo* sounds cold.\n*No pienso* and the dictionary form is a flat refusal, not a soft one: *No pienso prestarlo.* Use it only when you mean the fight.\nWithout *no* it is a firm plan, *Pienso ir*. Still deciding is *Estoy pensando en ir*.",
+  readAndPick: [
+    { q: "Is this a yes?", es: "Sí, si me lo devuelves antes del domingo.",
+      options: ["Yes, with no strings", "Yes, with a condition", "No, but kindly"], answer: 1,
+      why: "*Sí, si...*: a yes that only holds if the condition is met." },
+    { q: "How does this land?", es: "No pienso prestarle el carro.",
+      options: ["As a flat refusal", "As a polite maybe", "As a firm plan to lend it"], answer: 0,
+      why: "*No pienso* refuses even to consider it. It is not a soft no." },
+    { q: "What is *es que* doing here?", es: "Lo siento, no puedo. Es que tengo que trabajar.",
+      options: ["Changing the subject", "Asking a question back", "Giving the reason"], answer: 2,
+      why: "*Es que* brings in the reason, which keeps the no from sounding personal." },
+    { q: "Has he said yes?", es: "Lo voy a intentar, pero no te lo puedo prometer.",
+      options: ["Not yet: maybe", "Yes, for sure, today", "No, never ever"], answer: 0,
+      why: "He will try, but he won't promise: a maybe that buys time." },
+    { q: "Has she made up her mind?", es: "Estoy pensando en vender el carro.",
+      options: ["Yes, she has decided", "No, she refuses to", "No, she's still deciding"], answer: 2,
+      why: "*Estoy pensando en*: still weighing it up. *Pienso vender* would be decided." }
+  ],
+  yourTurn: [
+    { en: "Yes, if you give it back to me soon. (to a friend)", es: "Sí, si me lo devuelves pronto.", accept: ["Sí, si me la devuelves pronto."] },
+    { en: "I'm sorry, I can't. It's just that I have to work.", es: "Lo siento, no puedo. Es que tengo que trabajar.", accept: [] },
+    { en: "I'll try, but I can't promise you. (to a friend)", es: "Lo voy a intentar, pero no te lo puedo prometer.", accept: ["Voy a intentarlo, pero no te lo puedo prometer.", "Lo voy a intentar, pero no puedo prometértelo.", "Voy a intentarlo, pero no puedo prometértelo."] },
+    { en: "Of course, with pleasure.", es: "Claro, con mucho gusto.", accept: ["Claro, con gusto."] }
+  ],
+  translate: [
+    { en: "I have no intention of signing that.", es: "No pienso firmar eso.", accept: [] },
+    { en: "I'm thinking about selling the car.", es: "Estoy pensando en vender el carro.", accept: [] },
+    { en: "I plan to go to the meeting.", es: "Pienso ir a la reunión.", accept: [] },
+    { en: "Okay, but take good care of it, all right? (to a friend)", es: "Bueno, pero cuídalo mucho, ¿sí?", accept: ["Listo, pero cuídalo mucho, ¿sí?", "Bueno, pero cuídalo, ¿sí?"] },
+    { en: "I don't know, let me think about it. (to a friend)", es: "No sé, déjame pensarlo.", accept: [] }
+  ],
+  register: [
+    { es: "¡De una!", en: "Sure, right away!", when: "with friends in Colombia, an instant yes" },
+    { es: "Listo.", en: "Okay, done.", when: "the everyday Colombian yes, with anyone" },
+    { es: "Claro, con mucho gusto.", en: "Of course, with pleasure.", when: "warm and polite, to anyone" },
+    { es: "Qué pena, pero no va a ser posible.", en: "Sorry, but it isn't going to be possible.", when: "a gentle no to someone you call usted" },
+    { es: "No pienso hacerlo.", en: "I have no intention of doing it.", when: "only when you mean the fight" }
+  ],
+  personal: {
+    prompt: "Someone asks you to work this Saturday. Write two answers: a yes with a condition, and a kind no with a reason.",
+    constraints: [
+      { type: "regex", pattern: "\\bs[ií],? si\\b", label: "a yes with a condition: *Sí, si...*" },
+      { type: "containsAny", words: ["lo siento", "qué pena", "me encantaría"], label: "an apology first: *lo siento* or *qué pena*" },
+      { type: "containsWord", word: "es que", label: "a reason with *es que*" }
+    ],
+    model: "Sí, si me pagan las horas extra. Lo siento, no puedo. Es que tengo un matrimonio ese día."
+  },
+  pitfalls: [
+    "A bare *no puedo* sounds cold: add a reason with *es que*.",
+    "*No pienso ir* is not a soft no: it says you won't even consider it.",
+    "*Pienso de vender* adds a word: *pienso vender*, or *estoy pensando en vender*."
+  ]
+},
+
+"fn-rechazar-b1": {
+  source: "old",
+  hook: {
+    line: "A colleague invites you to her birthday dinner on Friday, the same night as your mother's. You want to say no without her feeling you just don't want to go.",
+    es: "¡Qué pena! Me encantaría, pero no puedo.\nEs que ese día es el cumpleaños de mi mamá.",
+    en: "What a shame! I'd love to, but I can't.\nIt's just that it's my mom's birthday that day."
+  },
+  examples: [
+    { es: "No, muchas gracias, ya comí.", en: "No, thanks a lot, I've already eaten." },
+    { es: "Gracias, pero prefiero quedarme en la casa hoy.", en: "Thanks, but I'd rather stay home today." },
+    { es: "Bueno, otra vez será.", en: "Oh well, another time." }
+  ],
+  rule: "A no that keeps the friendship has three parts.\nThanks or regret first: *Muchas gracias*, *¡Qué pena!*, *Me encantaría, pero...*\nThe no itself: *no puedo*.\nThe reason, with *es que*: *Es que ya tengo planes.* The reason is not decoration: without it, the no sounds personal.\nOr turn it into a preference: *Prefiero quedarme en la casa, gracias.*\nClose the door gently: *Otra vez será.* *La próxima, sin falta.*\nIn writing, more formal: *Lamento no poder aceptar la invitación.*\n*¡Ni hablar!* is a strong no way, only among friends.",
+  readAndPick: [
+    { q: "Why add *es que*?", es: "No puedo, es que ya tengo planes.",
+      options: ["So the no isn't personal", "To change the subject fast", "To say yes after all"], answer: 0,
+      why: "The reason makes it about the plans, not about the person who asked." },
+    { q: "Is he leaving the door open?", es: "Bueno, otra vez será.",
+      options: ["No, never again", "Yes, another time", "He wants to go right now"], answer: 1,
+      why: "*Otra vez será*: another time, so no hard feelings." },
+    { q: "How does this sound?", es: "¡Ni hablar!",
+      options: ["A polite maybe", "A warm yes", "A firm no way"], answer: 2,
+      why: "*¡Ni hablar!* is no way: strong, and for friends only." },
+    { q: "What does she say instead of a plain no?", es: "Gracias, pero prefiero quedarme en la casa.",
+      options: ["She'd rather stay home", "She's coming a bit later", "She's already at home"], answer: 0,
+      why: "*Prefiero quedarme* turns the no into a preference, and the thanks softens it." },
+    { q: "Where would you read this?", es: "Lamento no poder aceptar la invitación.",
+      options: ["A text to a close friend", "A formal written reply", "A shout across the street"], answer: 1,
+      why: "*Lamento no poder* is careful and formal, a letter or an email." }
+  ],
+  yourTurn: [
+    { en: "No, thanks a lot, but I can't.", es: "No, muchas gracias, pero no puedo.", accept: ["No, [muchas|mil] gracias, pero no puedo."] },
+    { en: "It's just that I already have plans.", es: "Es que ya tengo planes.", accept: ["Es que ya tengo [planes|otro plan|un compromiso]."] },
+    { en: "I'd rather stay home today, thanks.", es: "Prefiero quedarme en la casa hoy, gracias.", accept: ["Prefiero quedarme en (la) casa hoy, gracias.", "Hoy prefiero quedarme en (la) casa, gracias."] },
+    { en: "Oh well, another time.", es: "Bueno, otra vez será.", accept: [] }
+  ],
+  translate: [
+    { en: "What a shame! I'd love to, but I can't.", es: "¡Qué pena! Me encantaría, pero no puedo.", accept: ["¡Qué [pena|lástima]! Me encantaría, pero no puedo."] },
+    { en: "I regret that I'm unable to accept the invitation.", es: "Lamento no poder aceptar la invitación.", accept: [] },
+    { en: "No thanks, I'd rather not drink tonight.", es: "No, gracias, prefiero no tomar esta noche.", accept: ["No, gracias, prefiero no [tomar|beber] esta noche."] },
+    { en: "I can't go, I'm really sorry.", es: "No puedo ir, lo siento mucho.", accept: ["No puedo ir, lo siento [mucho|muchísimo]."] },
+    { en: "Next time, for sure.", es: "La próxima, sin falta.", accept: ["La próxima vez, sin falta.", "La próxima, seguro."] }
+  ],
+  register: [
+    { es: "No, gracias.", en: "No, thanks.", when: "fine for small offers, like food" },
+    { es: "¡Qué pena! Ya tengo planes.", en: "What a shame! I already have plans.", when: "with friends, warm and quick" },
+    { es: "Me encantaría, pero no puedo.", en: "I'd love to, but I can't.", when: "anywhere, when you really would like to" },
+    { es: "Muy amable, pero no voy a poder.", en: "That's very kind, but I won't be able to.", when: "to someone you call usted" },
+    { es: "Lamento no poder asistir.", en: "I regret that I'm unable to attend.", when: "a formal written reply" }
+  ],
+  personal: {
+    prompt: "A friend invites you to something you can't go to. Say no warmly: regret first, a reason with *es que*, and a door left open.",
+    constraints: [
+      { type: "containsAny", words: ["qué pena", "lo siento", "me encantaría", "gracias"], label: "regret or thanks first" },
+      { type: "containsWord", word: "es que", label: "the reason with *es que*" },
+      { type: "containsAny", words: ["otra vez será", "la próxima", "otro día"], label: "a door left open: *otra vez será* or *la próxima*" }
+    ],
+    model: "¡Qué pena! Me encantaría ir, pero no puedo. Es que el viernes viaja mi hermano. La próxima, sin falta."
+  },
+  pitfalls: [
+    "A no with no reason sounds personal in Spanish: *es que* and a reason is almost always expected.",
+    "*Ya he quedado* is how Spain says it. In Colombia: *ya tengo planes* or *ya tengo un compromiso*."
+  ]
+},
+
+"fn-ordenar-directo-b1": {
+  source: "merged",
+  hook: {
+    line: "You're leaving your teenage nephew alone in the apartment for the weekend, and there's no time for politeness. He needs clear instructions, in order.",
+    es: "Cuando llegues del colegio, llámame.\nApaga la estufa y cierra bien la puerta.",
+    en: "When you get back from school, call me.\nTurn off the stove and close the door properly."
+  },
+  examples: [
+    { es: "¡Corre, corre, que perdemos el bus!", en: "Run, run, or we'll miss the bus!" },
+    { es: "Pele las papas, córtelas y fríalas.", en: "Peel the potatoes, cut them and fry them." },
+    { es: "Tienes que estar en la casa antes de las diez.", en: "You have to be home before ten." }
+  ],
+  rule: "When an order is what's wanted, give it plainly. The command you know does it: *Llámame.* *Cierra la puerta.* For *usted*: *Siéntese.*\nChain the steps with commas and *y*: *Apaga la estufa, cierra la puerta y llámame.*\nSay it twice for urgency, with a comma: *¡Corre, corre!* *¡Ven, ven!*\nPut the moment first with *cuando* and the subjunctive: *Cuando llegues, avísame.*\nRecipes and instructions use *usted*, even between friends: *Pele las papas y córtelas.*\n*Tienes que* and *debes* with the dictionary form are direct too, a duty more than an order: *Debes estar aquí a las diez.*",
+  readAndPick: [
+    { q: "What does saying it twice add?", es: "¡Corre, corre, que perdemos el bus!",
+      options: ["Politeness", "Urgency", "A question"], answer: 1,
+      why: "The same word twice turns up the volume: hurry." },
+    { q: "When should he call?", es: "Cuando llegues a la casa, llámame.",
+      options: ["Once he gets home", "Right now, at once", "Before he leaves"], answer: 0,
+      why: "*Cuando llegues*: at a moment still to come, so the subjunctive." },
+    { q: "Who is the recipe talking to?", es: "Pele las papas y córtelas en cuadritos.",
+      options: ["Any reader, as *usted*", "A group of chefs", "A close friend only"], answer: 0,
+      why: "Written instructions use *usted*: *pele*, *córtelas*." },
+    { q: "What does he do last?", es: "Apaga la estufa, cierra la puerta y llámame.",
+      options: ["Turn off the stove", "Close the door", "Call her"], answer: 2,
+      why: "Three commands in a row, in order: *apaga*, *cierra*, and last *llámame*." },
+    { q: "How direct is this?", es: "Debes estar aquí a las diez.",
+      options: ["A duty, said directly", "A gentle hint", "A wish for later on"], answer: 0,
+      why: "*Debes* plus the dictionary form is a duty, close to an order." }
+  ],
+  yourTurn: [
+    { en: "When you get home, call me. (to a friend)", es: "Cuando llegues a la casa, llámame.", accept: ["Cuando llegues a (la) casa, llámame.", "Llámame cuando llegues a (la) casa."] },
+    { en: "Run, run! (to a friend)", es: "¡Corre, corre!", accept: [] },
+    { en: "Sit down, please. (polite)", es: "Siéntese, por favor.", accept: [] },
+    { en: "Turn off the stove and close the door. (to a friend)", es: "Apaga la estufa y cierra la puerta.", accept: [] }
+  ],
+  translate: [
+    { en: "Come, come, you have to see this! (to a friend)", es: "¡Ven, ven, tienes que ver esto!", accept: [] },
+    { en: "Peel the potatoes and cut them into cubes. (polite)", es: "Pele las papas y córtelas en cuadritos.", accept: ["Pele las papas y córtelas en [cuadritos|cubos|cuadros]."] },
+    { en: "You have to be home before ten. (to a friend)", es: "Tienes que estar en la casa antes de las diez.", accept: ["[Tienes que|Debes] estar en (la) casa antes de las diez."] },
+    { en: "When you get to the station, let me know. (to a friend)", es: "Cuando llegues a la estación, avísame.", accept: ["Avísame cuando llegues a la estación."] },
+    { en: "Add the salt and stir well. (polite)", es: "Agregue la sal y revuelva bien.", accept: ["[Agregue|Añada|Eche] la sal y revuelva bien."] },
+    { en: "Come in, come in. (to a friend)", es: "Pasa, pasa.", accept: ["Sigue, sigue."] }
+  ],
+  register: [
+    { es: "¡Ven acá ya!", en: "Come here now!", when: "urgent, with family" },
+    { es: "Ven, ven.", en: "Come on, come on.", when: "a warm hurry, with friends" },
+    { es: "Ven un momento, por favor.", en: "Come here a moment, please.", when: "an order softened, to anyone you call tú" },
+    { es: "Siga, por favor.", en: "Come in, please.", when: "inviting someone you call usted to come in" },
+    { es: "Hágale, que se hace tarde.", en: "Go on, it's getting late.", when: "a Colombian push, to someone you call usted" }
+  ],
+  personal: {
+    prompt: "Write three instructions for someone looking after your home or your pet while you're away, in order, and one of them with *cuando*.",
+    constraints: [
+      { type: "anyVerbInTense", tense: "imperativo", label: "commands, like *cierra* or *llámame*" },
+      { type: "subjunctiveAfter", trigger: "cuando", label: "one with *cuando* and the subjunctive" },
+      { type: "minWords", n: 15, label: "fifteen words or more" }
+    ],
+    model: "Riega las matas los martes. Saca la basura por la noche. Cuando salgas, cierra bien la puerta."
+  },
+  pitfalls: [
+    "*Cuando llegas, llámame* keeps the ordinary form: a moment still to come is *cuando llegues*.",
+    "Repeat the very same word: *corre, corre*, never *corre, corra*.",
+    "A recipe in *usted* is not cold: that is simply how instructions are written."
+  ]
+},
+
+"impneg": {
+  source: "merged",
+  hook: {
+    line: "Your little brother is about to cook for the first time while you watch. Half of what you want to say is what not to do, and the tú command you know changes shape for it.",
+    es: "No toques eso, que está caliente.\nY no le eches tanta sal.",
+    en: "Don't touch that, it's hot.\nAnd don't put so much salt in it."
+  },
+  examples: [
+    { es: "No te preocupes, yo te ayudo.", en: "Don't worry, I'll help you." },
+    { es: "No lo firmes todavía.", en: "Don't sign it yet." },
+    { es: "No se preocupe, don Jorge.", en: "Don't worry, Don Jorge." }
+  ],
+  rule: "To tell someone not to do something, put *no* in front of the subjunctive.\nFor *usted* and *ustedes* nothing is new: *Firme.* *No firme.* *No firmen.*\nThe change is *tú*. The yes command has its own shape (*firma*, *ven*, *di*, *haz*), but the no switches: *no firmes*, *no vengas*, *no digas*, *no hagas*. Think of *no quiero que firmes* with the front cut off.\n*Me*, *te*, *lo* and *la* move too. With a yes they stick on the end: *Fírmalo.* *Dímelo.* With a no they go in front: *No lo firmes.* *No me lo digas.* The written accent goes with them.",
+  readAndPick: [
+    { q: "Is this an order?", es: "No firma nada sin leerlo.",
+      options: ["Yes: don't sign", "No: he doesn't sign", "Yes: sign it all"], answer: 1,
+      why: "*No firma* is the ordinary form: he doesn't sign. The order would be *no firmes*." },
+    { q: "Which verb is behind *no vayas*?", es: "No vayas sola de noche.",
+      options: ["ir, to go", "venir, to come", "ver, to see"], answer: 0,
+      why: "*Ir* becomes *vaya*, so the tú no command is *no vayas*." },
+    { q: "What is she telling him?", es: "No lo hagas todavía.",
+      options: ["Do it right now", "He did it already", "Don't do it yet"], answer: 2,
+      why: "*No lo hagas*: don't do it. *Lo* moves in front of the verb." },
+    { q: "Who is being told?", es: "No se preocupen, ya vamos para allá.",
+      options: ["One friend", "A group of people", "Someone you call usted"], answer: 1,
+      why: "*Preocupen* ends in *-n*: a group, *ustedes*." },
+    { q: "What does this mean?", es: "¡No me digas!",
+      options: ["Don't tell anyone", "You don't say!", "Tell me now"], answer: 1,
+      why: "*¡No me digas!* is also a set reaction to news: really? You don't say!" }
+  ],
+  yourTurn: [
+    { en: "Don't touch that. (to a friend)", es: "No toques eso.", accept: [] },
+    { en: "Don't sign it yet. (to a friend)", es: "No lo firmes todavía.", accept: ["Todavía no lo firmes."] },
+    { en: "Don't worry. (polite)", es: "No se preocupe.", accept: [] },
+    { en: "Don't go alone. (to a friend)", es: "No vayas solo.", accept: ["No vayas sola."] },
+    { en: "Don't tell me that. (to a friend)", es: "No me digas eso.", accept: [] }
+  ],
+  translate: [
+    { en: "Don't talk with your mouth full. (to a friend)", es: "No hables con la boca llena.", accept: [] },
+    { en: "Don't eat so much sugar. (to a friend)", es: "No comas tanta azúcar.", accept: ["No comas tanto azúcar."] },
+    { en: "Don't be late, all of you.", es: "No lleguen tarde.", accept: [] },
+    { en: "Do it, but don't do it today. (to a friend)", es: "Hazlo, pero no lo hagas hoy.", accept: [] },
+    { en: "Don't come home so late. (to a friend)", es: "No vengas tan tarde.", accept: ["No llegues tan tarde."] },
+    { en: "Don't tell her, tell me. (to a friend)", es: "No se lo digas a ella, dímelo a mí.", accept: [] }
+  ],
+  register: [
+    { es: "No lo hagas.", en: "Don't do it.", when: "direct, to someone you call tú" },
+    { es: "Mejor no lo hagas.", en: "Better not do it.", when: "softer, more like advice" },
+    { es: "Por favor, no lo haga.", en: "Please don't do it.", when: "to someone you call usted" },
+    { es: "Yo que tú, no lo haría.", en: "If I were you, I wouldn't do it.", when: "advice that leaves the choice to them" },
+    { es: "No lo hagan.", en: "Don't do it, any of you.", when: "to a group" }
+  ],
+  personal: {
+    prompt: "Write three things a friend should not do on the first day at a new job, as *no* commands.",
+    constraints: [
+      { type: "regex", pattern: "(^|[.!¡,]\\s*)no (me |te |se |lo |la |le |les )?[a-záéíóúñ]+(es|as)\\b", label: "a *no* command for a friend, like *no llegues*" },
+      { type: "minSentences", n: 3, label: "three of them" }
+    ],
+    model: "No llegues tarde. No hables mal del jefe. No te vayas antes de las cinco."
+  },
+  pitfalls: [
+    "*No firma* is a statement, he doesn't sign. The order is *no firmes*.",
+    "*No ve solo* borrows the yes shape: the short commands (*ve*, *ven*, *di*) only work without *no*.",
+    "*No fírmalo* keeps the *lo* stuck on: with *no*, it moves in front, *no lo firmes*."
+  ]
+},
+
+"fn-prohibir-b1": {
+  source: "merged",
+  hook: {
+    line: "You're showing a new flatmate around your building in Cali, and the walls are full of rules. Some you read on signs, some you'll say yourself, and one you'll shout if he tries it.",
+    es: "Aquí no se puede fumar.\nY ni se te ocurra parquear en la entrada.",
+    en: "You can't smoke here.\nAnd don't even think about parking at the entrance."
+  },
+  examples: [
+    { es: "Prohibido parquear.", en: "No parking." },
+    { es: "Está prohibido dar de comer a los animales.", en: "Feeding the animals is forbidden." },
+    { es: "No fumes aquí, por favor.", en: "Please don't smoke here." }
+  ],
+  rule: "Forbidding comes at four levels.\nSigns, with no person at all: *No fumar.* *Prohibido parquear.* *Prohibido el paso.*\nNotices: *Está prohibido*, *No está permitido* or *No se permite*, then the dictionary form: *No se permite entrar con perros.* Nothing goes between: no *de*.\nEveryday speech: *Aquí no se puede fumar.* *No puedes entrar sin boleta.*\nTo one person, a *no* command: *No fumes aquí, por favor.*\nThe strongest, between friends: *¡Ni se te ocurra!*, don't even think about it. Add what with the dictionary form: *Ni se te ocurra tocarlo.*",
+  readAndPick: [
+    { q: "Who is this aimed at?", es: "No fumar.",
+      options: ["One person you know", "Nobody in particular", "The building manager"], answer: 1,
+      why: "A bare dictionary form on a sign names nobody: it is the rule for all." },
+    { q: "How strong is this?", es: "¡Ni se te ocurra tocar mi carro!",
+      options: ["As strong as it gets", "A gentle request", "A question"], answer: 0,
+      why: "*Ni se te ocurra* is don't even think about it: the top of the scale." },
+    { q: "Where would you see this?", es: "No se permite el ingreso con mascotas.",
+      options: ["In a text to a friend", "On the menu at a restaurant", "On a notice at a door"], answer: 2,
+      why: "*No se permite* and *el ingreso* have the sound of an official notice." },
+    { q: "Is this a ban?", es: "No es obligatorio llevar corbata.",
+      options: ["Yes, ties are banned", "No, ties are optional", "Yes, ties are required"], answer: 1,
+      why: "*No es obligatorio* only means you don't have to. A ban is *está prohibido*." },
+    { q: "Who is being told?", es: "No fumes aquí, por favor.",
+      options: ["Everyone in the building", "A person you call *usted*", "One person, as *tú*"], answer: 2,
+      why: "*No fumes* is the tú no command. For *usted* it would be *no fume*." }
+  ],
+  yourTurn: [
+    { en: "You can't smoke here.", es: "Aquí no se puede fumar.", accept: ["No se puede fumar [aquí|acá].", "Acá no se puede fumar."] },
+    { en: "Feeding the animals is forbidden.", es: "Está prohibido dar de comer a los animales.", accept: ["Está prohibido darles comida a los animales."] },
+    { en: "Don't even think about it! (to a friend)", es: "¡Ni se te ocurra!", accept: [] },
+    { en: "Please don't smoke here. (to a friend)", es: "No fumes aquí, por favor.", accept: ["Por favor, no fumes [aquí|acá].", "No fumes acá, por favor."] }
+  ],
+  translate: [
+    { en: "No parking.", es: "Prohibido parquear.", accept: ["No parquear."] },
+    { en: "Taking photos is not allowed.", es: "No está permitido tomar fotos.", accept: ["No [está permitido|se permite|se puede] tomar fotos."] },
+    { en: "You can't come in without a ticket. (to a friend)", es: "No puedes entrar sin boleta.", accept: ["No puedes entrar sin (la) boleta."] },
+    { en: "Don't even think about touching my car! (to a friend)", es: "¡Ni se te ocurra tocar mi carro!", accept: [] },
+    { en: "Dogs aren't allowed in.", es: "No se permite entrar con perros.", accept: ["No se permiten perros.", "No está permitido entrar con perros."] }
+  ],
+  register: [
+    { es: "No tocar.", en: "Do not touch.", when: "on a sign, to nobody in particular" },
+    { es: "Está prohibido tocar las obras.", en: "Touching the artworks is forbidden.", when: "an official notice in a museum" },
+    { es: "Por favor, no toque las obras.", en: "Please don't touch the artworks.", when: "a guard to a visitor, as usted" },
+    { es: "Mejor no toques eso.", en: "Better not touch that.", when: "a soft warning to a friend" },
+    { es: "¡Ni se te ocurra tocarlo!", en: "Don't you dare touch it!", when: "with a friend, as strong as it gets" }
+  ],
+  personal: {
+    prompt: "Write two rules for your home: one as a notice for visitors, and one as you would say it to a friend who is about to break it.",
+    constraints: [
+      { type: "containsAny", words: ["está prohibido", "no está permitido", "no se permite", "prohibido", "no se puede"], label: "a notice: *está prohibido* or *no se permite*" },
+      { type: "regex", pattern: "ni se te ocurra|\\bno (lo |la |los |las |me |te |le |les |se )?[a-záéíóúñ]+(es|as)\\b", label: "to the friend: a *no* command or *¡ni se te ocurra!*" }
+    ],
+    model: "Está prohibido fumar dentro del apartamento. ¡Oye, ni se te ocurra fumar en el balcón!"
+  },
+  pitfalls: [
+    "*Está prohibido de entrar* adds a word: *está prohibido entrar*.",
+    "*Es prohibido* is the slip: a ban on a notice is *está prohibido*.",
+    "*Aparcar* is how Spain says it. In Colombia you *parquear*."
+  ]
+},
+
+"fn-obligacion-necesidad-b1": {
+  source: "merged",
+  hook: {
+    line: "Your friend starts at a hospital in Medellín on Monday and asks what the rules are. Some things she must do, some she mustn't, and some she simply doesn't have to, and English mixes those up.",
+    es: "Tienes que llegar a las siete.\nNo debes usar el celular con los pacientes.\nY no tienes que llevar uniforme el primer día.",
+    en: "You have to arrive at seven.\nYou mustn't use your phone with the patients.\nAnd you don't have to wear a uniform on the first day."
+  },
+  examples: [
+    { es: "Es necesario que todos los empleados firmen el contrato.", en: "It's necessary for all the employees to sign the contract." },
+    { es: "Hay cosas que debes saber antes de empezar.", en: "There are things you need to know before you start." },
+    { es: "En los hospitales no puedes hablar duro.", en: "In hospitals you can't talk loudly." }
+  ],
+  rule: "From strongest to weakest:\n*Es obligatorio* and the dictionary form: the rule, with nobody named.\n*Tienes que* and *hay que*: you have to, everyone has to. *Hay que firmar aquí.*\n*Debes*: a duty, close to an order. *Debes avisar si no vienes.*\n*Es necesario que* and the subjunctive names who: *Es necesario que todos firmen.*\nNow the trap. *No debes* and *no puedes* mean you mustn't. *No tienes que* means you don't have to: there is no need.\n*No debes usar el celular.* Don't.\n*No tienes que venir.* You can, but you needn't.",
+  readAndPick: [
+    { q: "Can she use her phone?", es: "No debes usar el celular con los pacientes.",
+      options: ["Yes, if she wants to", "No, she mustn't", "Only on Mondays"], answer: 1,
+      why: "*No debes* is you mustn't: a rule, not a choice." },
+    { q: "Does he have to come?", es: "No tienes que venir mañana.",
+      options: ["Yes, he must come", "No, he mustn't come", "No, there's no need"], answer: 2,
+      why: "*No tienes que* is no need. He can come if he likes." },
+    { q: "Who has to sign?", es: "Es necesario que todos firmen el contrato.",
+      options: ["Only the boss", "Everyone", "Nobody yet"], answer: 1,
+      why: "*Que todos firmen*: naming who brings *que* and the subjunctive." },
+    { q: "What does this rule mean?", es: "En la biblioteca no puedes hablar duro.",
+      options: ["You must keep quiet", "You may shout once", "Talking is required"], answer: 0,
+      why: "*No puedes hablar duro* forbids the noise, so the rule is: keep quiet." },
+    { q: "Who has to do it?", es: "Hay que pagar antes de entrar.",
+      options: ["Just the speaker", "Only you", "Everyone"], answer: 2,
+      why: "*Hay que* names nobody, so it means everyone." }
+  ],
+  yourTurn: [
+    { en: "You have to arrive at seven. (to a friend)", es: "Tienes que llegar a las siete.", accept: [] },
+    { en: "You don't have to come tomorrow. (to a friend)", es: "No tienes que venir mañana.", accept: ["Mañana no tienes que venir."] },
+    { en: "You mustn't use your phone here. (to a friend)", es: "No debes usar el celular aquí.", accept: ["No [debes|puedes] usar el celular [aquí|acá]."] },
+    { en: "You have to pay before going in.", es: "Hay que pagar antes de entrar.", accept: [] }
+  ],
+  translate: [
+    { en: "It's necessary for everyone to vote.", es: "Es necesario que todos voten.", accept: [] },
+    { en: "Wearing a seatbelt is compulsory.", es: "Es obligatorio usar el cinturón de seguridad.", accept: ["Es obligatorio [usar|llevar|ponerse] el cinturón (de seguridad)."] },
+    { en: "There are things you need to know before signing. (to a friend)", es: "Hay cosas que debes saber antes de firmar.", accept: ["Hay cosas que [debes|tienes que] saber antes de firmar."] },
+    { en: "In hospitals you can't talk loudly.", es: "En los hospitales no puedes hablar duro.", accept: ["En los hospitales no [puedes|se puede] hablar [duro|alto|fuerte]."] },
+    { en: "You shouldn't leave the door open at night. (to a friend)", es: "No debes dejar la puerta abierta por la noche.", accept: ["No [debes|deberías] dejar la puerta abierta [por la noche|de noche]."] },
+    { en: "You don't have to bring anything. (to a friend)", es: "No tienes que traer nada.", accept: [] }
+  ],
+  register: [
+    { es: "Hay que firmar aquí.", en: "You have to sign here.", when: "everyday, a rule for everyone" },
+    { es: "Tiene que firmar aquí.", en: "You need to sign here.", when: "to one person you call usted" },
+    { es: "Es obligatorio firmar el formulario.", en: "Signing the form is compulsory.", when: "official, on forms and notices" },
+    { es: "Debe firmar las tres copias.", en: "You must sign all three copies.", when: "formal instructions, often written" },
+    { es: "Fírmame aquí, porfa.", en: "Sign here for me, please.", when: "with a friend, casual" }
+  ],
+  personal: {
+    prompt: "Explain the rules of your workplace, school or home to someone new: one thing they have to do, one they mustn't, and one they don't have to.",
+    constraints: [
+      { type: "containsAny", words: ["tienes que", "hay que", "debes", "es obligatorio"], label: "something they have to do" },
+      { type: "containsAny", words: ["no debes", "no puedes", "no se puede"], label: "something they mustn't: *no debes* or *no puedes*" },
+      { type: "containsWord", word: "no tienes que", label: "something they needn't: *no tienes que*" }
+    ],
+    model: "Tienes que llegar a las ocho. No puedes almorzar en el escritorio. Y no tienes que trabajar los sábados."
+  },
+  pitfalls: [
+    "*No tienes que venir* is not a ban: it means no need. A ban is *no debes venir* or *no puedes venir*.",
+    "*Debes de ir* is a guess, you're probably going: for a duty, *debes ir*.",
+    "*Es necesario que todos firman* keeps the ordinary form: naming who takes the subjunctive, *firmen*."
+  ]
+},
+
+"fn-habilidad-b1": {
+  source: "merged",
+  hook: {
+    line: "At a job interview in Bogotá they ask what you're good at. Say too little and you undersell yourself; say too much and it sounds like bragging. Spanish has a whole ladder in between.",
+    es: "Soy bastante buena para los idiomas.\nPero para los números soy un desastre.",
+    en: "I'm pretty good at languages.\nBut with numbers I'm hopeless."
+  },
+  examples: [
+    { es: "Sé un poco de electricidad, pero no mucho.", en: "I know a bit about electricity, but not much." },
+    { es: "Me gusta cocinar y no lo hago nada mal.", en: "I like cooking and I'm not bad at it at all." },
+    { es: "Sonia es un genio para los computadores.", en: "Sonia is a genius with computers." }
+  ],
+  rule: "Claim a skill at the right size.\nA little: *Sé un poco de cocina.* *Sé algo de electricidad.*\nKnowing how: *Sé nadar.* *Sé manejar.* Not *puedo*, which is about whether you can right now.\nThe middle: *ser bueno para* or *malo para*, plus a thing or the dictionary form: *Soy bueno para cocinar.* For a school subject, *en* works too: *buena en matemáticas.* The word matches the person: *buena*, *malos*.\nA plain verdict: *Lo hago bien.* *No lo hago nada mal* means pretty well.\nThe two ends, said for effect: *Soy un genio para...* *Soy un desastre para...*\nFormal, on a CV: *Domina el inglés.*",
+  readAndPick: [
+    { q: "How big is the claim?", es: "Sé un poco de electricidad.",
+      options: ["Modest: a little", "Huge: an expert", "None at all"], answer: 0,
+      why: "*Sé un poco de* is a small, honest claim." },
+    { q: "What is she saying?", es: "Sé nadar, pero hoy no puedo: estoy enferma.",
+      options: ["She never learned how", "She can, but not today", "She's learning to swim"], answer: 1,
+      why: "*Sé nadar* is knowing how; *no puedo* is about today." },
+    { q: "Is he bragging?", es: "Soy un genio para los computadores.",
+      options: ["No, he's being modest", "No, it's a complaint", "Yes, for effect"], answer: 2,
+      why: "*Un genio para* is the top of the ladder, said for effect." },
+    { q: "How good is she?", es: "No lo hago nada mal, la verdad.",
+      options: ["Fairly good", "Really bad at it", "Not at all good"], answer: 0,
+      why: "*No lo hago nada mal* sounds negative, but it means pretty well." },
+    { q: "Why *buena* and not *bueno*?", es: "Mi hermana es muy buena para los idiomas.",
+      options: ["It matches *idiomas*", "It matches the sister", "It's always *buena*"], answer: 1,
+      why: "*Bueno* matches the person it describes: a sister is *buena*." }
+  ],
+  yourTurn: [
+    { en: "I'm good at cooking.", es: "Soy bueno para cocinar.", accept: ["Soy [bueno|buena] para cocinar.", "Soy [bueno|buena] para la cocina."] },
+    { en: "I'm hopeless with names.", es: "Soy un desastre para los nombres.", accept: [] },
+    { en: "I know how to drive, but I don't have a car.", es: "Sé manejar, pero no tengo carro.", accept: [] },
+    { en: "I know a bit about electricity.", es: "Sé un poco de electricidad.", accept: ["Sé algo de electricidad."] }
+  ],
+  translate: [
+    { en: "She's very good at languages.", es: "Es muy buena para los idiomas.", accept: ["Ella es muy buena para los idiomas.", "Es muy buena [en|con] los idiomas."] },
+    { en: "I'm not bad at it at all, honestly.", es: "No lo hago nada mal, la verdad.", accept: [] },
+    { en: "He's a genius with computers.", es: "Es un genio para los computadores.", accept: ["Es un genio para [los computadores|las computadoras]."] },
+    { en: "Tomás is good at maths.", es: "Tomás es bueno en matemáticas.", accept: ["Tomás es bueno para las matemáticas."] },
+    { en: "We're bad at dancing.", es: "Somos malos para bailar.", accept: [] },
+    { en: "He is fluent in several languages.", es: "Domina varios idiomas.", accept: ["Habla varios idiomas con fluidez."] }
+  ],
+  register: [
+    { es: "Me defiendo en inglés.", en: "I get by in English.", when: "modest but useful, and very common" },
+    { es: "Soy bueno para el inglés.", en: "I'm good at English.", when: "everyday, a plain claim" },
+    { es: "Tengo un buen nivel de inglés.", en: "I have a good level of English.", when: "in an interview, measured" },
+    { es: "Domino el inglés.", en: "I'm fluent in English.", when: "on a CV or in a formal interview" },
+    { es: "Es un duro para el inglés.", en: "He's great at English.", when: "Colombian slang, praising someone else" }
+  ],
+  personal: {
+    prompt: "Tell a new friend about your skills: one you're good at, one you only know a little about, and one you're hopeless at.",
+    constraints: [
+      { type: "regex", pattern: "\\b(bueno|buena|buenos|buenas) (para|en)\\b", label: "something you're good at: *soy bueno para*" },
+      { type: "containsAny", words: ["sé un poco de", "sé algo de", "me defiendo"], label: "something you know a little: *sé un poco de*" },
+      { type: "containsAny", words: ["un desastre para", "malo para", "mala para"], label: "something you're hopeless at" }
+    ],
+    model: "Soy bastante buena para cocinar. Sé un poco de jardinería. Y soy un desastre para los números."
+  },
+  pitfalls: [
+    "*Soy bueno a cocinar* borrows the English at: *bueno para cocinar*.",
+    "*Puedo nadar* is about right now; knowing how is *sé nadar*.",
+    "*Soy bien para bailar* uses the wrong word: describing a person takes *bueno*."
+  ]
+},
+
+"task-b1-pedir": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: four short exchanges with four different people. Someone asks a favour, someone asks permission, someone refuses and someone forbids, and nobody is rude by accident.",
+    es: "¿Te importaría echarme una mano el sábado?\nUf, el sábado lo tengo complicado, es que viene mi hermana.",
+    en: "Would you mind giving me a hand on Saturday?\nOof, Saturday's tricky for me, it's just that my sister's coming."
+  },
+  examples: [
+    { es: "¿Puedo dejar la bici aquí un momento?\nSí, claro, pero no la dejes en la puerta.", en: "Can I leave the bike here for a moment?\nSure, but don't leave it by the door." },
+    { es: "¿Me prestas el carro este fin de semana?\nMira, prefiero que no.", en: "Will you lend me the car this weekend?\nLook, I'd rather not." }
+  ],
+  rule: "Four exchanges, four relationships. Each one makes its move and gets an answer.\nA favour, softened: *¿Te importaría echarme una mano?* *¿Me podrías prestar...?*\nPermission: *¿Puedo...?* *¿Me dejas...?* *¿Se puede...?*\nA refusal with a reason: *Uf, el sábado lo tengo complicado, es que...* *Prefiero que no.* A bare *no* costs more than a clumsy request.\nA ban, at the right level: *Aquí no se puede fumar.* *No la dejes en la puerta.*\nAnd the answer to a ban: *Ah, perdón, no sabía.*\nMatch each one to the person: *tú* with a friend, *usted* with a neighbour you barely know.",
+  readAndPick: [
+    { q: "What is she asking for?", es: "¿Puedo dejar la bici aquí un momento?",
+      options: ["Permission", "A favour from her", "An object to borrow"], answer: 0,
+      why: "*¿Puedo...?* asks if she is allowed, not for anyone's help." },
+    { q: "Is this a yes?", es: "Uf, el sábado lo tengo complicado.",
+      options: ["Yes, gladly", "A firm yes, now", "A soft no, coming"], answer: 2,
+      why: "*Lo tengo complicado* is how a polite no begins, before the reason." },
+    { q: "How does he refuse?", es: "Mira, prefiero que no. El seguro no cubre a nadie más.",
+      options: ["With a reason", "With an insult", "With a joke"], answer: 0,
+      why: "The insurance is the reason, so the no isn't personal." },
+    { q: "What does the answer do?", es: "Ah, perdón, no sabía.",
+      options: ["Argues back", "Apologises", "Asks a favour"], answer: 1,
+      why: "*Perdón, no sabía* accepts the rule and closes it kindly." },
+    { q: "Why *usted* here?", es: "Qué pena, señora, aquí no se puede parquear.",
+      options: ["She's a close friend", "She's a stranger", "She's a little girl"], answer: 1,
+      why: "A stranger gets *usted* and *qué pena*, even for a ban." }
+  ],
+  yourTurn: [
+    { en: "Would you mind giving me a hand on Saturday? (to a friend)", es: "¿Te importaría echarme una mano el sábado?", accept: ["¿Te importaría ayudarme el sábado?"] },
+    { en: "Can I leave the bike here for a moment?", es: "¿Puedo dejar la bici aquí un momento?", accept: ["¿Puedo dejar la [bici|bicicleta] [aquí|acá] un momento?"] },
+    { en: "Look, I'd rather not. (to a friend)", es: "Mira, prefiero que no.", accept: [] },
+    { en: "Oh, sorry, I didn't know.", es: "Ah, perdón, no sabía.", accept: ["Ah, perdón, no lo sabía."] }
+  ],
+  translate: [
+    { en: "Saturday's tricky for me, it's just that my sister is coming.", es: "El sábado lo tengo complicado, es que viene mi hermana.", accept: [] },
+    { en: "Sure, but don't leave it by the door. (to a friend)", es: "Sí, claro, pero no la dejes en la puerta.", accept: [] },
+    { en: "Will you lend me the car this weekend? (to a friend)", es: "¿Me prestas el carro este fin de semana?", accept: [] },
+    { en: "The insurance doesn't cover anyone else.", es: "El seguro no cubre a nadie más.", accept: [] },
+    { en: "You can't smoke here. It's just that there are children.", es: "Aquí no se puede fumar. Es que hay niños.", accept: ["No se puede fumar [aquí|acá]. Es que hay niños."] }
+  ],
+  register: [
+    { es: "¿Me das una mano?", en: "Will you give me a hand?", when: "with a close friend" },
+    { es: "¿Te importaría ayudarme?", en: "Would you mind helping me?", when: "a bigger favour, to anyone you call tú" },
+    { es: "¿Me haría el favor de ayudarme?", en: "Would you do me the favour of helping me?", when: "to someone you call usted" },
+    { es: "Prefiero que no.", en: "I'd rather not.", when: "a refusal that needs no fight" }
+  ],
+  personal: {
+    prompt: "Write two of the four exchanges, one line for each person: a favour with *¿te importaría...?* and a refusal with a reason.",
+    constraints: [
+      { type: "containsAny", words: ["te importaría", "le importaría"], label: "a favour with *¿te importaría...?*" },
+      { type: "containsWord", word: "es que", label: "a refusal with a reason: *es que*" },
+      { type: "minSentences", n: 4, label: "four lines or more" }
+    ],
+    model: "¿Te importaría prestarme tu taladro el domingo?\nClaro, pero devuélvemelo el lunes.\n¿Me acompañas al médico mañana?\nQué pena, no puedo. Es que tengo una reunión."
+  },
+  pitfalls: [
+    "A bare *no* sounds rude in Spanish: every refusal needs its reason.",
+    "*¿Te vale el domingo?* is how Spain says it. In Colombia: *¿Te sirve el domingo?*"
+  ]
+},
+
+/* ---- unit b1-u33 · Good feelings ----------------------------------------- */
+
+"fn-contento-encantado-b1": {
+  source: "merged",
+  hook: {
+    line: "Six months into your new life in Medellín, a friend from home calls and asks if you're happy. A yes isn't enough: happy with what, happy to do what, happy that someone else did what?",
+    es: "Estoy muy contenta con el apartamento.\nY estoy feliz de vivir aquí.",
+    en: "I'm really happy with the apartment.\nAnd I'm happy to be living here."
+  },
+  examples: [
+    { es: "Mis papás están encantados con el colegio de los niños.", en: "My parents are delighted with the kids' school." },
+    { es: "Estoy encantado de estar aquí con ustedes.", en: "I'm delighted to be here with you all." },
+    { es: "Estoy contento de que vengas en diciembre.", en: "I'm happy you're coming in December." }
+  ],
+  rule: "English says happy with and happy to. Spanish splits the same way.\n*Contento con*, *encantado con*: what you're happy with, a thing or a person. *Estoy contenta con el apartamento.*\n*Contento de*, *encantado de*: what you're happy to do yourself, with the dictionary form. *Estoy encantado de estar aquí.*\n*Contento de que* and the subjunctive: what someone else does. *Estoy contento de que vengas.*\nThey go with *estar*, and they match the person: *contenta*, *encantados*.\n*Feliz* works the same way: *feliz con*, *feliz de*.\n*Encantado* is a step up from *contento*. *Satisfecho con* sounds like business.",
+  readAndPick: [
+    { q: "What is she happy with?", es: "Está muy contenta con su trabajo nuevo.",
+      options: ["Her new job", "Leaving her old job", "Her boss leaving"], answer: 0,
+      why: "*Contenta con* names the thing she's happy with: the new job." },
+    { q: "Who is coming?", es: "Estoy contento de que vengas en diciembre.",
+      options: ["The speaker is", "You are", "Nobody yet"], answer: 1,
+      why: "*Que vengas*: the coming is yours, so *de que* and the subjunctive." },
+    { q: "Why *de* and not *con* here?", es: "Estoy encantada de estar aquí.",
+      options: ["A person follows", "An action of hers follows", "It's about the past"], answer: 1,
+      why: "Before an action you do yourself, *de* and the dictionary form." },
+    { q: "How happy are they?", es: "Estamos encantados con el colegio.",
+      options: ["Only a little", "Not at all", "Very: delighted"], answer: 2,
+      why: "*Encantados* is a step up from *contentos*." },
+    { q: "Where would you hear this?", es: "Estamos muy satisfechos con los resultados.",
+      options: ["A report at work", "A text to your mom", "A kid's birthday party"], answer: 0,
+      why: "*Satisfechos con* has the sound of business: results, reports, clients." }
+  ],
+  yourTurn: [
+    { en: "I'm really happy with the apartment.", es: "Estoy muy contento con el apartamento.", accept: ["Estoy muy contenta con el apartamento."] },
+    { en: "I'm delighted to be here.", es: "Estoy encantado de estar aquí.", accept: ["Estoy [encantado|encantada] de estar [aquí|acá]."] },
+    { en: "I'm happy you're coming in December. (to a friend)", es: "Estoy contento de que vengas en diciembre.", accept: ["Estoy [contento|contenta|feliz] de que vengas en diciembre."] },
+    { en: "We're delighted with the new school.", es: "Estamos encantados con el colegio nuevo.", accept: ["Estamos [encantados|encantadas] con el [colegio nuevo|nuevo colegio]."] }
+  ],
+  translate: [
+    { en: "She's happy to work here.", es: "Está contenta de trabajar aquí.", accept: ["Está [contenta|feliz] de trabajar [aquí|acá]."] },
+    { en: "Are you happy with your job? (to a friend)", es: "¿Estás contento con tu trabajo?", accept: ["¿Estás contenta con tu trabajo?"] },
+    { en: "We're very satisfied with the results.", es: "Estamos muy satisfechos con los resultados.", accept: [] },
+    { en: "I'm happy that you're well. (to a friend)", es: "Estoy contento de que estés bien.", accept: ["Estoy [contento|contenta|feliz] de que estés bien."] },
+    { en: "We're not happy with the offer.", es: "No estamos contentos con la oferta.", accept: [] }
+  ],
+  register: [
+    { es: "¡Estoy feliz de la vida!", en: "I'm as happy as can be!", when: "with friends, when you're really pleased" },
+    { es: "Estoy muy contento.", en: "I'm very happy.", when: "anywhere, plain and warm" },
+    { es: "Estoy encantada con el cambio.", en: "I'm delighted with the change.", when: "a step up, when you really mean it" },
+    { es: "Mucho gusto.", en: "Nice to meet you.", when: "meeting someone, the everyday Colombian way" },
+    { es: "Estamos muy satisfechos con el servicio.", en: "We're very satisfied with the service.", when: "formal, in a review or a report" }
+  ],
+  personal: {
+    prompt: "Tell a friend about your life right now: something you're happy with, something you're happy to do, and something someone else does that makes you glad.",
+    constraints: [
+      { type: "regex", pattern: "(contento|contenta|contentos|encantado|encantada|encantados|feliz) con\\b", label: "happy with: *contento con*" },
+      { type: "regex", pattern: "(contento|contenta|contentos|encantado|encantada|encantados|feliz) de [a-záéíóúñ]+(ar|er|ir)\\b", label: "happy to: *contento de* and the dictionary form" },
+      { type: "subjunctiveAfter", trigger: "de que", label: "happy that: *de que* and the subjunctive" }
+    ],
+    model: "Estoy muy contenta con mi trabajo nuevo. Estoy feliz de vivir cerca del mar. Y estoy encantada de que mi hermana venga en julio."
+  },
+  pitfalls: [
+    "*Contento con estar aquí* uses the wrong word: before an action, *de*.",
+    "*Soy contento* is the slip: a feeling right now is *estoy contento*.",
+    "*Contento de que vienes* keeps the ordinary form: someone else's action takes *vengas*."
+  ]
+},
+
+"fn-me-alegro-b1": {
+  source: "merged",
+  hook: {
+    line: "Your friend Laura texts that she got the scholarship she's been chasing for a year. *Qué bien* feels too small. You want to say how glad you are, and that you're glad for her.",
+    es: "¡Me alegro muchísimo por ti, Laura!\nMe alegro de que te den la beca.",
+    en: "I'm so happy for you, Laura!\nI'm glad they're giving you the scholarship."
+  },
+  examples: [
+    { es: "Me alegro de verte.", en: "I'm glad to see you." },
+    { es: "Me alegro mucho de que estés bien.", en: "I'm really glad you're OK." },
+    { es: "Me alegro cuando vienes a visitarme.", en: "I'm happy when you come to visit me." }
+  ],
+  rule: "*Me alegro* is I'm glad. What follows depends on what you're glad about.\nYour own action: *de* and the dictionary form. *Me alegro de verte.*\nSomeone else's: *de que* and the subjunctive, always, even for news you're sure of. *Me alegro de que estés bien.*\nA person: *por*. *Me alegro por ti.*\nEach time something happens: *cuando* and the ordinary form. *Me alegro cuando vienes.*\nTurn it up with *mucho*, *muchísimo* or *un montón*.\n*Me alegra que* says the same with no *de*, and you'll hear it all the time in Colombia: *Me alegra que estés bien.*",
+  readAndPick: [
+    { q: "Who is OK?", es: "Me alegro mucho de que estés bien.",
+      options: ["You are", "I am", "They are"], answer: 0,
+      why: "*Que estés bien*: you're the one who is OK." },
+    { q: "Why *verte*, with no *que*?", es: "Me alegro de verte.",
+      options: ["It's about the past", "The speaker sees you", "It's really a question"], answer: 1,
+      why: "The one who is glad is the one who sees, so *de* and the dictionary form." },
+    { q: "Who is she happy for?", es: "Me alegro por ti.",
+      options: ["Herself", "Your whole family", "You"], answer: 2,
+      why: "*Por ti*: on your behalf, for your news." },
+    { q: "How often is he glad?", es: "Me alegro cuando vienes a visitarme.",
+      options: ["Once, last week", "Each time you come", "Never, sadly"], answer: 1,
+      why: "*Cuando vienes*: each time it happens, so the ordinary form." },
+    { q: "Which sounds the most formal?", es: "Nos complace que acepte nuestra propuesta.",
+      options: ["A text between friends", "A chat at a party", "A letter from a company"], answer: 2,
+      why: "*Nos complace* and *usted* are the voice of a company letter." }
+  ],
+  yourTurn: [
+    { en: "I'm so happy for you! (to a friend)", es: "¡Me alegro muchísimo por ti!", accept: ["¡Me alegro [mucho|un montón] por ti!"] },
+    { en: "I'm glad to see you. (to a friend)", es: "Me alegro de verte.", accept: ["Qué bueno verte."] },
+    { en: "I'm really glad you're OK. (to a friend)", es: "Me alegro mucho de que estés bien.", accept: ["Me alegra mucho que estés bien."] },
+    { en: "I'm glad they're giving you the scholarship. (to a friend)", es: "Me alegro de que te den la beca.", accept: ["Me alegra que te den la beca."] }
+  ],
+  translate: [
+    { en: "I'm always happy when you come to visit me. (to a friend)", es: "Siempre me alegro cuando vienes a visitarme.", accept: ["Me alegro siempre que vienes a visitarme.", "Siempre me alegro cuando me vienes a visitar."] },
+    { en: "We're glad you're still here. (to a friend)", es: "Nos alegramos de que sigas aquí.", accept: ["Nos alegra que sigas [aquí|acá].", "Nos alegramos de que sigas acá."] },
+    { en: "We're pleased that you accept our proposal. (polite)", es: "Nos complace que acepte nuestra propuesta.", accept: [] },
+    { en: "I'm glad I can help.", es: "Me alegro de poder ayudar.", accept: [] },
+    { en: "Are you glad your sister is coming? (to a friend)", es: "¿Te alegras de que venga tu hermana?", accept: ["¿Te alegra que venga tu hermana?"] }
+  ],
+  register: [
+    { es: "¡Qué bien!", en: "Great!", when: "a quick reaction to small good news" },
+    { es: "¡Qué alegría!", en: "How wonderful!", when: "warm, for news that really matters" },
+    { es: "Me alegro un montón.", en: "I'm so glad.", when: "with friends, turned all the way up" },
+    { es: "Me alegra mucho saberlo.", en: "I'm very glad to hear it.", when: "calm and kind, to anyone" },
+    { es: "Nos complace darle la bienvenida.", en: "We're pleased to welcome you.", when: "formal letters and emails" }
+  ],
+  personal: {
+    prompt: "A friend has just told you some good news. Write back: how glad you are, and what exactly you're glad about.",
+    constraints: [
+      { type: "containsAny", words: ["me alegro", "me alegra", "qué alegría"], label: "*me alegro* or *me alegra*" },
+      { type: "containsAny", words: ["alegro de que", "alegra que", "alegra mucho que"], label: "what you're glad about: *me alegro de que*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive for their news" }
+    ],
+    model: "¡Me alegro muchísimo por ti! Me alegro de que por fin te den el trabajo."
+  },
+  pitfalls: [
+    "*Me alegro que estés bien* drops the *de*: *me alegro de que*, or *me alegra que* with no *de*.",
+    "*Me alegro de que estás bien* keeps the ordinary form: good news you're sure of still takes *estés*.",
+    "*Me alegro de ti* uses the wrong word: for a person, *me alegro por ti*."
+  ]
+},
+
+"fn-placer-diversion-b1": {
+  source: "merged",
+  hook: {
+    line: "On Monday at work everyone asks about your weekend in Santa Marta. In Colombia the answer comes with a tiny *la* that stands for nothing, and you'll need it every week.",
+    es: "¡La pasamos buenísimo!\nNos reímos todo el fin de semana.",
+    en: "We had a fantastic time!\nWe laughed the whole weekend."
+  },
+  examples: [
+    { es: "¿La pasaste bien en la fiesta?", en: "Did you have a good time at the party?" },
+    { es: "Me divertí mucho en el matrimonio de mi prima.", en: "I had a lot of fun at my cousin's wedding." },
+    { es: "Me reí mucho, pero la pasé fatal.", en: "I laughed a lot, but I had an awful time." }
+  ],
+  rule: "For how a whole experience went: *la*, then *pasar*, then how. *La pasé bien.* *La pasamos genial.* *La pasaron fatal.* The *la* stands for nothing and never changes; only *pasar* changes.\nIt judges the whole thing: you can laugh and still *pasarla fatal*.\nFor one reaction: *Me divertí mucho.* *Nos reímos muchísimo.*\nFor something fun: *Es divertido* and the dictionary form, or *que* and the subjunctive for what someone else does: *Es divertido que cuentes las cosas así.*\n*Disfrutar* is a bit more careful: *Disfrutamos mucho la cena.*\nNever *tuve un buen tiempo*: that is English in Spanish clothes.",
+  readAndPick: [
+    { q: "How was the party?", es: "¿Qué tal la fiesta? La pasé genial.",
+      options: ["Great", "Awful", "Boring"], answer: 0,
+      why: "*La pasé genial*: a great time, from start to finish." },
+    { q: "Is this a contradiction?", es: "Me reí mucho, pero la pasé fatal.",
+      options: ["Yes, it makes no sense", "No, the night was bad", "Yes, she is joking"], answer: 1,
+      why: "She laughed at moments, but *la pasé fatal* judges the whole night." },
+    { q: "Who had a good time?", es: "¿La pasaron bien en Cartagena?",
+      options: ["You, one friend", "Only the speaker", "You all, as a group"], answer: 2,
+      why: "*Pasaron* ends in *-n*: the question is for a group." },
+    { q: "What does the *la* stand for?", es: "La pasamos buenísimo.",
+      options: ["Nothing at all", "The party itself", "The night out"], answer: 0,
+      why: "The *la* is just part of the phrase. It never points to anything." },
+    { q: "Who tells the stories?", es: "Es divertido que cuentes las cosas así.",
+      options: ["The speaker", "You do", "Everyone at once"], answer: 1,
+      why: "*Que cuentes*: you tell them, so *que* and the subjunctive." }
+  ],
+  yourTurn: [
+    { en: "We had a great time.", es: "La pasamos genial.", accept: ["La pasamos [buenísimo|muy bien|delicioso]."] },
+    { en: "Did you have a good time at the party? (to a friend)", es: "¿La pasaste bien en la fiesta?", accept: [] },
+    { en: "I had a lot of fun.", es: "Me divertí mucho.", accept: ["Me divertí muchísimo."] },
+    { en: "We laughed a lot.", es: "Nos reímos mucho.", accept: ["Nos reímos muchísimo."] }
+  ],
+  translate: [
+    { en: "I had an awful time at the concert.", es: "La pasé fatal en el concierto.", accept: ["La pasé [horrible|muy mal] en el concierto."] },
+    { en: "We really enjoyed the dinner.", es: "Disfrutamos mucho la cena.", accept: ["Disfrutamos mucho de la cena."] },
+    { en: "How was the trip for you all?", es: "¿Cómo la pasaron en el viaje?", accept: [] },
+    { en: "It's fun to dance with you. (to a friend)", es: "Es divertido bailar contigo.", accept: [] },
+    { en: "It's funny how you tell things. (to a friend)", es: "Es divertido que cuentes las cosas así.", accept: ["Es chistoso que cuentes las cosas así."] },
+    { en: "Have a good time! (to a friend)", es: "¡Que la pases bien!", accept: ["¡Que la pases [rico|delicioso]!"] }
+  ],
+  register: [
+    { es: "¡La pasamos delicioso!", en: "We had a wonderful time!", when: "very Colombian, and not only about food" },
+    { es: "Estuvo muy chévere.", en: "It was really cool.", when: "everyday, about any plan" },
+    { es: "La pasé muy bien.", en: "I had a very good time.", when: "anywhere, with anyone" },
+    { es: "Disfrutamos mucho la velada.", en: "We thoroughly enjoyed the evening.", when: "formal, thanking a host in writing" }
+  ],
+  personal: {
+    prompt: "Tell a friend about the last good weekend you had: how it went as a whole, and one moment you enjoyed.",
+    constraints: [
+      { type: "regex", pattern: "\\bla (pasé|pasamos|pasaste|pasaron|pasó)", label: "the whole thing: *la pasé* or *la pasamos*" },
+      { type: "containsAny", words: ["me divertí", "nos divertimos", "me reí", "nos reímos", "disfruté", "disfrutamos"], label: "one moment: *me divertí*, *nos reímos* or *disfruté*" }
+    ],
+    model: "El fin de semana fuimos a Guatapé y la pasamos genial. Nos reímos muchísimo en el bote."
+  },
+  pitfalls: [
+    "*Tuve un buen tiempo* is English in Spanish clothes: *la pasé bien*.",
+    "*Pasé genial* drops the *la*: *la pasé genial*.",
+    "*Lo pasé bien* is how Spain says it; in Colombia it's *la*."
+  ]
+},
+
+"fn-admiracion-orgullo-b1": {
+  source: "merged",
+  hook: {
+    line: "Your niece plays her first piano recital in Bogotá, and afterwards you want to say more than *qué bien*. You admire how she played, and you're proud of her.",
+    es: "¡Es increíble cómo tocas!\nEstoy muy orgullosa de ti.",
+    en: "It's amazing how you play!\nI'm so proud of you."
+  },
+  examples: [
+    { es: "¡Qué bien cocinas!", en: "You cook so well!" },
+    { es: "Es impresionante lo rápido que aprende.", en: "It's amazing how fast she learns." },
+    { es: "Estamos orgullosos de que trabajes aquí.", en: "We're proud that you work here." }
+  ],
+  rule: "To admire how someone does it: *¡Es increíble cómo* and the ordinary form: *¡Es increíble cómo toca!* Keep the accent on *cómo*. Shorter: *¡Qué bien* and the verb: *¡Qué bien cocinas!*\nHow much: *¡Es impresionante cuánto sabe!* How fast or how well: *lo rápido que aprende*.\n*Estar orgulloso de* is proud of. Then a person (*de ti*), your own action (*de ser colombiano*), or *que* and the subjunctive for someone else's (*de que trabajes aquí*). It matches the person: *orgullosa*.\nCareful: *ser orgulloso* is proud in the bad sense, stuck-up.",
+  readAndPick: [
+    { q: "What is she admiring?", es: "¡Es increíble cómo baila Mariana!",
+      options: ["That Mariana dances", "How Mariana dances", "Where Mariana dances"], answer: 1,
+      why: "*Cómo* admires the way she dances, not just the fact." },
+    { q: "Who works here?", es: "Estamos orgullosos de que trabajes aquí.",
+      options: ["We do", "Everybody does", "You do"], answer: 2,
+      why: "*Que trabajes*: your work, so *de que* and the subjunctive." },
+    { q: "What does *es muy orgulloso* say about him?", es: "Mi tío es muy orgulloso.",
+      options: ["He's stuck-up", "He's proud of us all", "He's very happy today"], answer: 0,
+      why: "*Ser orgulloso* describes a proud, stuck-up person. Pride in someone is *estar*." },
+    { q: "What is impressive?", es: "Es impresionante lo rápido que aprende.",
+      options: ["That she learns at all", "How fast she learns", "How much she sleeps"], answer: 1,
+      why: "*Lo rápido que* admires the speed itself." },
+    { q: "How does this sound?", es: "¡Qué maravilla de casa!",
+      options: ["A complaint", "Plain admiration", "Sarcasm"], answer: 1,
+      why: "*¡Qué maravilla de...!* is open admiration, no verb needed." }
+  ],
+  yourTurn: [
+    { en: "It's amazing how you play! (to a friend)", es: "¡Es increíble cómo tocas!", accept: [] },
+    { en: "I'm so proud of you. (to a friend)", es: "Estoy muy orgulloso de ti.", accept: ["Estoy muy orgullosa de ti."] },
+    { en: "You cook so well! (to a friend)", es: "¡Qué bien cocinas!", accept: [] },
+    { en: "It's amazing how much he knows!", es: "¡Es impresionante cuánto sabe!", accept: ["¡Es increíble cuánto sabe!"] }
+  ],
+  translate: [
+    { en: "I'm proud to be Colombian.", es: "Estoy orgulloso de ser colombiano.", accept: ["Estoy orgullosa de ser colombiana."] },
+    { en: "We're proud that you work here. (to a friend)", es: "Estamos orgullosos de que trabajes aquí.", accept: ["Estamos orgullosos de que trabajes acá."] },
+    { en: "It's amazing how fast she learns.", es: "Es impresionante lo rápido que aprende.", accept: ["Es increíble lo rápido que aprende."] },
+    { en: "I'm very impressed with your work. (to a friend)", es: "Estoy muy impresionado con tu trabajo.", accept: ["Estoy muy impresionada con tu trabajo."] },
+    { en: "What a wonderful house!", es: "¡Qué maravilla de casa!", accept: [] },
+    { en: "I'm not proud of that.", es: "No estoy orgulloso de eso.", accept: ["No estoy orgullosa de eso."] }
+  ],
+  register: [
+    { es: "¡Qué lindo!", en: "How lovely!", when: "warm and everyday, very common in Colombia" },
+    { es: "¡Qué bien lo haces!", en: "You do it so well!", when: "direct praise, to a friend" },
+    { es: "¡Es increíble cómo lo hace!", en: "It's amazing how she does it!", when: "admiring the way, not just the result" },
+    { es: "Te felicito, de verdad.", en: "Well done, really.", when: "sincere praise, to anyone you call tú" },
+    { es: "Su trabajo es digno de admiración.", en: "Your work is admirable.", when: "formal, in a speech or a letter" }
+  ],
+  personal: {
+    prompt: "Think of someone you admire: a friend, a relative, a colleague. Write one line admiring how they do something, and one saying you're proud of them.",
+    constraints: [
+      { type: "regex", pattern: "(incre[ií]ble|impresionante) (c[oó]mo|cu[aá]nto|lo )|qu[eé] bien [a-záéíóúñ]+", label: "admire how: *es increíble cómo* or *¡qué bien...!*" },
+      { type: "regex", pattern: "orgullos[oa]s? de", label: "proud of: *orgulloso de*" }
+    ],
+    model: "Es increíble cómo mi abuela cuida a toda la familia. Estoy muy orgullosa de ella."
+  },
+  pitfalls: [
+    "*Es increíble como toca* loses the accent: it is still the how word, *cómo*.",
+    "*Soy orgulloso de ti* says the wrong thing: pride in someone is *estoy orgulloso de ti*.",
+    "*Orgulloso que trabajes* drops the *de*: *orgulloso de que trabajes*."
+  ]
+},
+
+"fn-afecto-b1": {
+  source: "merged",
+  hook: {
+    line: "Your partner's family in Barranquilla has adopted you, and you want to say what you feel without sounding translated: who you like, who you love, and who you miss when you're away.",
+    es: "Tu familia me cae muy bien.\nY a ti te extraño cuando no estás.",
+    en: "I really like your family.\nAnd I miss you when you're not here."
+  },
+  examples: [
+    { es: "Me caen súper bien tus primos.", en: "I really like your cousins." },
+    { es: "Me enamoré de ella apenas la vi.", en: "I fell in love with her as soon as I saw her." },
+    { es: "Mi amor, ¿ya estás lista?", en: "Honey, are you ready yet?" }
+  ],
+  rule: "*Me cae bien* is how you like a person, and it works like *gustar*: the person is the subject. *Tu hermano me cae bien.* *Me caen bien tus amigos.* *Me cae mal* is the opposite.\n*Te quiero* is love for family, friends and partners. *Te amo* is stronger, and mostly romantic.\n*Me enamoré de* is the moment; *estoy enamorado de* is the state. Both take *de*.\n*Extrañar* is to miss: *Te extraño.* *Extraño a mi abuela*, with *a* for a person.\nTo call someone you love: *mi amor*, *mi vida*, *corazón*. In Colombia you'll hear them from shopkeepers too.",
+  readAndPick: [
+    { q: "Why *caen* and not *cae*?", es: "Me caen muy bien tus amigos.",
+      options: ["It agrees with *me*", "It agrees with *amigos*", "It's in the past"], answer: 1,
+      why: "Like *gustar*, the people liked are the subject, and *amigos* is plural." },
+    { q: "Is this the moment or the state?", es: "Estoy enamorado de ella desde hace años.",
+      options: ["The moment he fell", "A wish for later", "The state he's in"], answer: 2,
+      why: "*Estoy enamorado*: the state, which has lasted years." },
+    { q: "Who does the missing?", es: "Mis papás me extrañan mucho.",
+      options: ["My parents do", "I do", "We all do"], answer: 0,
+      why: "*Extrañan* goes with *mis papás*; *me* is the one they miss." },
+    { q: "Who is she talking to?", es: "Mi amor, ¿ya estás lista?",
+      options: ["Her boss", "Someone she loves", "A stranger on the bus"], answer: 1,
+      why: "*Mi amor* is how you call someone you love." },
+    { q: "How strong is it?", es: "Te amo.",
+      options: ["Deep, romantic love", "Polite liking", "Friendly thanks"], answer: 0,
+      why: "*Te amo* is stronger than *te quiero*, and mostly romantic." }
+  ],
+  yourTurn: [
+    { en: "I really like your brother. (to a friend)", es: "Tu hermano me cae muy bien.", accept: ["Me cae muy bien tu hermano."] },
+    { en: "I miss you a lot. (to a friend)", es: "Te extraño mucho.", accept: [] },
+    { en: "I fell in love with her as soon as I saw her.", es: "Me enamoré de ella apenas la vi.", accept: ["Me enamoré de ella [en cuanto|cuando] la vi."] },
+    { en: "I don't like the neighbours.", es: "Los vecinos me caen mal.", accept: ["Me caen mal los vecinos."] }
+  ],
+  translate: [
+    { en: "He's deeply in love with her.", es: "Está profundamente enamorado de ella.", accept: [] },
+    { en: "I miss my grandmother.", es: "Extraño a mi abuela.", accept: [] },
+    { en: "We fell in love at university.", es: "Nos enamoramos en la universidad.", accept: [] },
+    { en: "I love you so much. (to a friend)", es: "Te quiero muchísimo.", accept: [] },
+    { en: "Honey, are you ready yet?", es: "Mi amor, ¿ya estás lista?", accept: ["Mi amor, ¿ya estás listo?"] },
+    { en: "I miss living there.", es: "Extraño vivir allá.", accept: [] }
+  ],
+  register: [
+    { es: "Me cae bien.", en: "I like him.", when: "how a person strikes you, anywhere" },
+    { es: "Te quiero mucho.", en: "I love you a lot.", when: "family and close friends" },
+    { es: "Te amo.", en: "I love you.", when: "a partner, or very deep love" },
+    { es: "Te extraño, mi amor.", en: "I miss you, honey.", when: "a partner who is far away" },
+    { es: "Le tengo mucho cariño.", en: "I'm very fond of her.", when: "calm affection, for an older relative or friend" }
+  ],
+  personal: {
+    prompt: "Write two lines to someone you love who is far away: one saying you miss them, one about someone you've met there that you like.",
+    constraints: [
+      { type: "regex", pattern: "\\b(te|lo|la|los|las) extraño\\b|extraño a ", label: "you miss them: *te extraño*" },
+      { type: "regex", pattern: "\\b(me|nos) caen? (muy |súper )?bien", label: "someone you like: *me cae bien*" }
+    ],
+    model: "Te extraño mucho, mi amor. Mis compañeros de trabajo me caen muy bien."
+  },
+  pitfalls: [
+    "*Me cae bien tus amigos* agrees with the wrong thing: the friends are the subject, *me caen bien*.",
+    "*Me enamoré con ella* borrows the English with: *me enamoré de ella*.",
+    "*Echar de menos* is how Spain says I miss you. In Colombia it's *extrañar*."
+  ]
+},
+
+"fn-tristeza-afliccion-b1": {
+  source: "merged",
+  hook: {
+    line: "Your best friend from your Spanish class is moving back to Lima next month. You're happy for her and sad for you, and Spanish has a word for each kind of sad.",
+    es: "Me da mucha pena que te vayas.\nMe pongo triste cada vez que lo pienso.",
+    en: "It makes me so sad that you're leaving.\nI get sad every time I think about it."
+  },
+  examples: [
+    { es: "Últimamente estoy un poco deprimido.", en: "I've been feeling a bit down lately." },
+    { es: "¡Qué lástima que no puedas venir!", en: "What a shame you can't come!" },
+    { es: "Lamento mucho su pérdida.", en: "I'm very sorry for your loss." }
+  ],
+  rule: "A state right now: *Estoy triste.* *Estoy un poco deprimida.* *Me siento mal.*\nA reaction each time something happens: *Me pongo triste cuando* and the ordinary form: *Me pongo triste cuando escucho esa canción.*\nSad about someone else's news: *Me da pena que* and the subjunctive: *Me da pena que te vayas.* *Lástima* means the same.\nA quick reaction: *¡Qué pena que...!* *¡Qué lástima que...!* *Es una lástima que...*\nCareful: in Colombia, *me da pena* with the dictionary form often means I'm embarrassed: *Me da pena hablar en público.* *Lástima* is always sadness.\nFor a death, formally: *Lamento mucho su pérdida.*",
+  readAndPick: [
+    { q: "Does this happen once or every time?", es: "Me pongo triste cuando escucho esa canción.",
+      options: ["Once, last night", "Every time she hears it", "Never again"], answer: 1,
+      why: "*Me pongo triste cuando*: a reaction that comes back each time." },
+    { q: "What does she feel?", es: "Me da pena hablar delante de todos.",
+      options: ["Sad for somebody", "Angry at everyone", "Embarrassed to speak"], answer: 2,
+      why: "In Colombia, *me da pena* and the dictionary form is usually embarrassment." },
+    { q: "Who can't come?", es: "¡Qué lástima que no puedas venir!",
+      options: ["You", "The speaker", "Nobody at all"], answer: 0,
+      why: "*Que no puedas*: you can't, so *que* and the subjunctive." },
+    { q: "Where would you say this?", es: "Lamento mucho su pérdida.",
+      options: ["At a birthday", "At a funeral", "At a job interview"], answer: 1,
+      why: "*Lamento su pérdida* is for a death: formal and kind." },
+    { q: "What is the speaker's state?", es: "Últimamente estoy un poco deprimida.",
+      options: ["Angry since today", "Happy again now", "A bit down lately"], answer: 2,
+      why: "*Estoy deprimida*: a state, and *últimamente* says it has lasted a while." }
+  ],
+  yourTurn: [
+    { en: "It makes me so sad that you're leaving. (to a friend)", es: "Me da mucha pena que te vayas.", accept: ["Me da mucha [tristeza|lástima] que te vayas."] },
+    { en: "What a shame you can't come! (to a friend)", es: "¡Qué lástima que no puedas venir!", accept: ["¡Qué pena que no puedas venir!"] },
+    { en: "I get sad when I think about it.", es: "Me pongo triste cuando lo pienso.", accept: ["Me pongo triste cuando pienso en eso."] },
+    { en: "I've been feeling a bit down lately.", es: "Últimamente estoy un poco deprimido.", accept: ["Últimamente estoy un poco deprimida."] }
+  ],
+  translate: [
+    { en: "I'm very sorry for your loss. (polite)", es: "Lamento mucho su pérdida.", accept: [] },
+    { en: "It's a shame they're closing the café.", es: "Es una lástima que cierren el café.", accept: ["Es una pena que cierren el café."] },
+    { en: "It makes me very sad to see her like that.", es: "Me da mucha tristeza verla así.", accept: ["Me da mucha pena verla así."] },
+    { en: "I'm embarrassed to speak in public.", es: "Me da pena hablar en público.", accept: ["Me da vergüenza hablar en público."] },
+    { en: "I haven't been feeling well since yesterday.", es: "Me siento mal desde ayer.", accept: ["Desde ayer me siento mal."] }
+  ],
+  register: [
+    { es: "¡Qué pesar!", en: "How sad!", when: "Colombian, warm sympathy for bad news" },
+    { es: "¡Qué pena!", en: "What a shame!", when: "a quick reaction, with anyone" },
+    { es: "Me da mucha tristeza.", en: "It makes me very sad.", when: "plain, when it really hurts" },
+    { es: "Lo siento mucho.", en: "I'm so sorry.", when: "for someone's bad news, anywhere" },
+    { es: "Mi más sentido pésame.", en: "My deepest condolences.", when: "for a death, formal or written" }
+  ],
+  personal: {
+    prompt: "Someone you know has bad news, or is leaving. Write one line about how you feel, and one reaction to their news.",
+    constraints: [
+      { type: "containsAny", words: ["me pongo triste", "estoy triste", "me siento", "me da tristeza", "me da pena"], label: "how you feel: *me pongo triste* or *me da pena*" },
+      { type: "containsAny", words: ["qué pena que", "qué lástima que", "me da pena que", "es una lástima que", "me da tristeza que", "me da mucha pena que"], label: "their news: *qué lástima que* and the subjunctive" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive for their news" }
+    ],
+    model: "Me pongo triste cuando pienso en el viaje. ¡Qué lástima que te vayas tan pronto!"
+  },
+  pitfalls: [
+    "*Me da pena que estás sola* keeps the ordinary form: someone else's news takes *estés*.",
+    "*Tengo pena* is not how sadness works here: it is given to you, *me da pena*.",
+    "In Colombia *me da pena hablar* is embarrassment. For pure sadness, *tristeza* or *lástima*."
+  ]
+},
+
+"fn-me-duele-b1": {
+  source: "merged",
+  hook: {
+    line: "Your oldest friend forgot your birthday, and then said it was no big deal. It isn't your head that hurts, and Spanish uses the same verb anyway.",
+    es: "Me duele que digas eso.\nPara mí sí es importante.",
+    en: "It hurts that you say that.\nTo me it really matters."
+  },
+  examples: [
+    { es: "Me duele mucho su actitud.", en: "Her attitude really hurts me." },
+    { es: "Me duele no poder ayudarte más.", en: "It hurts that I can't help you more." },
+    { es: "Me dolió mucho lo que pasó.", en: "What happened hurt me a lot." }
+  ],
+  rule: "It is the grammar of *me duele la cabeza*: what hurts is the subject, and *me*, *te*, *le* say who feels it.\nA thing that hurts: *Me duele su actitud.* With several things, *duelen*: *Me duelen sus palabras.*\nYour own inability: the dictionary form. *Me duele no poder ayudarte.*\nSomeone else's action: *que* and the subjunctive, and the verb stays *duele*. *Me duele que no me llames.*\nFor something that is over: *Me dolió mucho lo que dijo.*\nIt is heavier than *me da pena*: it is about hurt, not only sadness.",
+  readAndPick: [
+    { q: "Whose attitude hurts?", es: "Me duele mucho tu actitud.",
+      options: ["Mine", "Nobody's", "Yours"], answer: 2,
+      why: "*Tu actitud*: your attitude is what hurts." },
+    { q: "Why *duelen* here?", es: "Me duelen sus palabras.",
+      options: ["It agrees with *palabras*", "It agrees with *me*", "It's in the past"], answer: 0,
+      why: "What hurts is the subject, and *palabras* is plural." },
+    { q: "What hurts her?", es: "Me duele no poder ayudarte.",
+      options: ["That you won't help", "That she can't help", "Her back"], answer: 1,
+      why: "No *que*, just *no poder*: her own inability." },
+    { q: "Is this about the body?", es: "Me duele que no confíes en mí.",
+      options: ["Yes, a pain somewhere", "No, hurt feelings", "Yes, a headache"], answer: 1,
+      why: "Same verb as a headache, but here it's about trust." },
+    { q: "When did it hurt?", es: "Me dolió mucho lo que dijiste.",
+      options: ["When it was said", "It hurts every day", "It will hurt later"], answer: 0,
+      why: "*Dolió* is the plain past: it hurt when you said it." }
+  ],
+  yourTurn: [
+    { en: "It hurts that you say that. (to a friend)", es: "Me duele que digas eso.", accept: [] },
+    { en: "It hurts that I can't help you. (to a friend)", es: "Me duele no poder ayudarte.", accept: [] },
+    { en: "Her attitude really hurts me.", es: "Me duele mucho su actitud.", accept: [] },
+    { en: "What he said hurt me a lot.", es: "Me dolió mucho lo que dijo.", accept: [] }
+  ],
+  translate: [
+    { en: "It hurts that you don't trust me. (to a friend)", es: "Me duele que no confíes en mí.", accept: [] },
+    { en: "Their silence hurts us.", es: "Nos duele su silencio.", accept: [] },
+    { en: "It really hurts me to see you like this. (to a friend)", es: "Me duele mucho verte así.", accept: [] },
+    { en: "My head hurts.", es: "Me duele la cabeza.", accept: [] },
+    { en: "Does it hurt you that they don't call? (to a friend)", es: "¿Te duele que no llamen?", accept: ["¿Te duele que no te llamen?"] }
+  ],
+  register: [
+    { es: "Eso me dolió.", en: "That hurt.", when: "direct, to the person who said it" },
+    { es: "Me duele que pienses así.", en: "It hurts that you think that way.", when: "honest but calm, with someone close" },
+    { es: "Me sentí muy mal con lo que pasó.", en: "I felt really bad about what happened.", when: "softer, without blaming anyone" },
+    { es: "Nos duele profundamente esta decisión.", en: "This decision pains us deeply.", when: "formal, in a statement or a letter" }
+  ],
+  personal: {
+    prompt: "Write calmly to someone who hurt you: say what hurts, and one thing you can't do that hurts you too.",
+    constraints: [
+      { type: "subjunctiveAfter", trigger: "me duele que", label: "what they do: *me duele que* and the subjunctive" },
+      { type: "regex", pattern: "duele no [a-záéíóúñ]+(ar|er|ir)\\b", label: "your own: *me duele no poder* and the dictionary form" }
+    ],
+    model: "Me duele que no me escuches. Y me duele no poder hablar contigo como antes."
+  },
+  pitfalls: [
+    "*Me duele que no puedo ayudarte* adds a *que*: for your own inability, *me duele no poder ayudarte*.",
+    "*Yo duelo* turns it around: what hurts is the subject, *me duele*.",
+    "*Me duele que dices eso* keeps the ordinary form: *que digas*."
+  ]
+},
+
+"task-b1-alegria": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: something good that really happened, told so the size of your reaction fits the size of the news. Too big for small news sounds sarcastic.",
+    es: "Cuando me llamó, no sabes la emoción que me dio.",
+    en: "When she called me, you have no idea how excited I was."
+  },
+  examples: [
+    { es: "Estoy orgullosísima de ella.", en: "I'm so proud of her." },
+    { es: "Me encantó ver a toda la familia otra vez.", en: "I loved seeing the whole family again." }
+  ],
+  rule: "The skill is the size of the reaction.\nSmall news: *¡Qué bien!* *Me alegro.*\nBigger: *Me alegro muchísimo.* *¡Qué alegría!*\nHuge: *No sabes cuánto me alegro.* *No sabes la emoción que me dio.*\nTurn a word up with *-ísimo*: *orgullosísima*, *contentísimo*.\nTell it in order: what happened, how you heard, how you reacted, how the others reacted.\nUse the pasts you know: *Me llamó*, *lloré*, *lo celebramos* for events; *estaba nerviosa*, *hacía años que no...* for how things were.\nThe biggest phrase for small news reads as sarcasm, so match it to the news.",
+  readAndPick: [
+    { q: "How big is this reaction?", es: "No sabes cuánto me alegro.",
+      options: ["Small, polite", "Huge", "Sarcastic"], answer: 1,
+      why: "*No sabes cuánto* is the top of the scale, for big news." },
+    { q: "What does *-ísima* add?", es: "Estoy orgullosísima de ella.",
+      options: ["It makes it formal", "It means very", "It makes it past"], answer: 1,
+      why: "*-ísima* turns *orgullosa* all the way up: so proud." },
+    { q: "What happens if you say this about a free coffee?", es: "¡No sabes la emoción que me dio!",
+      options: ["It sounds formal", "It sounds shy", "It sounds sarcastic"], answer: 2,
+      why: "A huge reaction to small news reads as a joke at its expense." },
+    { q: "What is she describing?", es: "Hacía años que no nos reuníamos todos.",
+      options: ["How things were", "A plan for later", "A single moment"], answer: 0,
+      why: "*Hacía* and *nos reuníamos* set the scene: how things had been." },
+    { q: "What happened?", es: "Lloré de la emoción, la verdad.",
+      options: ["She stopped crying", "She cried every day", "She cried from joy"], answer: 2,
+      why: "*Lloré de la emoción*: she cried because she was so moved." }
+  ],
+  yourTurn: [
+    { en: "You have no idea how glad I am. (to a friend)", es: "No sabes cuánto me alegro.", accept: [] },
+    { en: "I'm so proud of her.", es: "Estoy orgullosísimo de ella.", accept: ["Estoy orgullosísima de ella.", "Estoy muy [orgulloso|orgullosa] de ella."] },
+    { en: "I loved seeing them again.", es: "Me encantó verlos otra vez.", accept: ["Me encantó verlos de nuevo."] },
+    { en: "We celebrated it with the whole family.", es: "Lo celebramos con toda la familia.", accept: [] }
+  ],
+  translate: [
+    { en: "Last month my sister passed the exam for the public university.", es: "El mes pasado mi hermana pasó el examen de la universidad pública.", accept: ["El mes pasado mi hermana pasó el examen [de|para] la universidad pública."] },
+    { en: "When she called me, I cried from the excitement.", es: "Cuando me llamó, lloré de la emoción.", accept: [] },
+    { en: "It had been years since we'd all got together.", es: "Hacía años que no nos reuníamos todos.", accept: ["Hacía años que no nos juntábamos todos."] },
+    { en: "My mom was even more excited than me.", es: "Mi mamá estaba todavía más emocionada que yo.", accept: ["Mi mamá estaba aún más emocionada que yo."] },
+    { en: "What great news!", es: "¡Qué buena noticia!", accept: ["¡Qué noticia tan buena!"] }
+  ],
+  register: [
+    { es: "¡Qué bueno!", en: "Great!", when: "small good news, every day" },
+    { es: "¡Me alegro un montón!", en: "I'm so glad!", when: "real news, with friends" },
+    { es: "¡No sabes cuánto me alegro!", en: "You have no idea how glad I am!", when: "big news, said with feeling" },
+    { es: "¡Felicitaciones!", en: "Congratulations!", when: "anyone's success, the Colombian word" }
+  ],
+  personal: {
+    prompt: "Write about something good that happened to you or someone close: what happened, how you heard, and how you and the others reacted. Eight sentences or more.",
+    constraints: [
+      { type: "minSentences", n: 8, label: "eight sentences or more" },
+      { type: "containsAny", words: ["me alegr", "qué alegría", "orgullos", "contento", "contenta", "encant", "emoción", "feliz"], label: "a feeling: *me alegro*, *orgulloso*, *feliz*..." },
+      { type: "regex", pattern: "ísim[oa]s?\\b|no sabes cu[aá]nto", label: "one turned up: *-ísimo* or *no sabes cuánto*" },
+      { type: "anyVerbInTense", tense: "preterito", label: "what happened, in the past" }
+    ],
+    model: "El mes pasado mi hermana pasó el examen de la universidad pública. Estudió dos años para ese examen. Cuando me llamó, no sabes la emoción que me dio. Lloré de la emoción, la verdad. Mi mamá estaba todavía más emocionada que yo. Le dije a mi hermana que estaba orgullosísima de ella. Lo celebramos el sábado con toda la familia. Hacía años que no nos reuníamos todos."
+  },
+  pitfalls: [
+    "The biggest phrase for small news reads as sarcasm: match the size of the reaction to the news.",
+    "*Me hizo mucha ilusión* is how Spain says it. In Colombia: *no sabes la emoción que me dio*, or *me puse feliz*."
+  ]
+},
+
+/* ---- unit b1-u34 · When it goes wrong ------------------------------------ */
+
+"fn-enfado-indignacion-b1": {
+  source: "merged",
+  hook: {
+    line: "Your landlord in Bogotá kept your deposit for a scratch that was already there. You're angry, and Colombians will want to know two things: angry with whom, and about what.",
+    es: "Estoy brava con el dueño por lo del depósito.\n¡Qué rabia!",
+    en: "I'm angry with the landlord about the deposit.\nHow infuriating!"
+  },
+  examples: [
+    { es: "Me da rabia que no me contesten.", en: "It makes me mad that they don't answer me." },
+    { es: "Se enojó con su hermano por el carro.", en: "He got angry with his brother about the car." },
+    { es: "Hoy estoy de mal genio.", en: "I'm in a bad mood today." }
+  ],
+  rule: "Anger has two parts, who and why: *con* for the person, *por* for the reason. *Estoy brava con el dueño por el depósito.*\nThe state: *estar bravo*, everyday in Colombia, or *estar enojado*. The moment it starts: *me puse bravo*, *me enojé*.\nA mood aimed at nobody: *estoy de mal genio*.\nSomeone else's action: *Me da rabia que* and the subjunctive. On its own: *¡Qué rabia!*\nStrongest: *furioso*, or *furiosísimo*. The *-ísimo* is already the top, so never *muy furiosísimo*.\nFormal outrage: *Nos indigna que* and the subjunctive.",
+  readAndPick: [
+    { q: "Who is she angry with?", es: "Está brava conmigo por la torta.",
+      options: ["With the cake", "With me", "With herself"], answer: 1,
+      why: "*Con* names the person, *conmigo*. *Por la torta* is the reason." },
+    { q: "Is this the state or the moment?", es: "Me puse bravo cuando lo vi.",
+      options: ["The moment it began", "How he always is with people", "A plan for later"], answer: 0,
+      why: "*Me puse bravo*: the moment the anger started." },
+    { q: "What does *mal genio* describe?", es: "Hoy estoy de mal genio.",
+      options: ["A clever idea", "Anger at one person", "A bad mood"], answer: 2,
+      why: "*De mal genio* is a mood, aimed at nobody in particular." },
+    { q: "Why no *muy* here?", es: "Estoy furiosísima con esta situación.",
+      options: ["*-ísima* is already the top", "It's too informal for *muy*", "It's in the past"], answer: 0,
+      why: "*-ísima* already means as far as it goes, so *muy* has nowhere to go." },
+    { q: "Where would you read this?", es: "Nos indigna que no se respeten los derechos de los vecinos.",
+      options: ["A text to your sister", "A love letter to her husband", "A neighbours' statement"], answer: 2,
+      why: "*Nos indigna que* is formal outrage, for a public statement." }
+  ],
+  yourTurn: [
+    { en: "I'm angry with the landlord.", es: "Estoy bravo con el dueño.", accept: ["Estoy [bravo|brava|enojado|enojada] con el dueño."] },
+    { en: "It makes me mad that they don't answer me.", es: "Me da rabia que no me contesten.", accept: ["Me da rabia que no me respondan."] },
+    { en: "He got angry with his brother.", es: "Se enojó con su hermano.", accept: ["Se puso bravo con su hermano."] },
+    { en: "I'm in a bad mood today.", es: "Hoy estoy de mal genio.", accept: ["Estoy de mal genio hoy.", "Hoy estoy de mal humor."] }
+  ],
+  translate: [
+    { en: "How infuriating!", es: "¡Qué rabia!", accept: [] },
+    { en: "She's angry with me about the cake.", es: "Está brava conmigo por la torta.", accept: ["Está enojada conmigo por la torta."] },
+    { en: "I got furious when I found out it was all a lie.", es: "Me puse furioso cuando supe que todo era mentira.", accept: ["Me puse [furioso|furiosa] cuando [supe|descubrí] que todo era mentira."] },
+    { en: "Are you angry with me? (to a friend)", es: "¿Estás bravo conmigo?", accept: ["¿Estás [brava|enojado|enojada] conmigo?"] },
+    { en: "We're outraged that they don't respect the neighbours.", es: "Nos indigna que no respeten a los vecinos.", accept: [] }
+  ],
+  register: [
+    { es: "¡Qué rabia!", en: "How infuriating!", when: "a quick burst, with friends" },
+    { es: "Estoy muy brava.", en: "I'm really angry.", when: "everyday Colombian, with anyone close" },
+    { es: "Estoy molesto por la situación.", en: "I'm annoyed about the situation.", when: "calmer, at work or with strangers" },
+    { es: "Me parece inaceptable.", en: "I find it unacceptable.", when: "a formal complaint, written or to a manager" },
+    { es: "Nos indigna esta decisión.", en: "This decision outrages us.", when: "a public statement, formal" }
+  ],
+  personal: {
+    prompt: "Something made you angry recently. Say who you were angry with and why, and one thing someone does that makes you mad.",
+    constraints: [
+      { type: "regex", pattern: "(brav[oa]s?|enojad[oa]s?|furios[oa]s?) con\\b", label: "who: *bravo con* or *enojado con*" },
+      { type: "regex", pattern: "\\bpor (el|la|los|las|lo|que|eso)\\b", label: "why: *por* and the reason" },
+      { type: "subjunctiveAfter", trigger: "me da rabia que", label: "*me da rabia que* and the subjunctive" }
+    ],
+    model: "Ayer me puse brava con mi vecino por el ruido. Me da rabia que ponga música a las dos de la mañana."
+  },
+  pitfalls: [
+    "*Estoy bravo a Tomás* borrows the English at: the person takes *con*.",
+    "*Estoy bravo con el ruido* uses *con* for a reason: *por el ruido*.",
+    "*Enfadado* is how Spain says it. In Colombia: *bravo* or *enojado*."
+  ]
+},
+
+"fn-miedo-ansiedad-preocupacion-b1": {
+  source: "merged",
+  hook: {
+    line: "Your younger brother just got his driving licence and wants to take the car to the coast at night. You're scared, and you need to say what scares you without sounding dramatic.",
+    es: "Me da miedo que manejes de noche.\nY me preocupa que vayas solo.",
+    en: "It scares me that you'll drive at night.\nAnd it worries me that you're going alone."
+  },
+  examples: [
+    { es: "Me dan miedo las alturas.", en: "Heights scare me." },
+    { es: "Estoy preocupada por el examen.", en: "I'm worried about the exam." },
+    { es: "Me pone nervioso hablar en público.", en: "Speaking in public makes me nervous." }
+  ],
+  rule: "Fear comes two ways.\nYou have it: *Tengo miedo de* plus a thing or the dictionary form. *Tengo miedo de perder el trabajo.*\nIt is given to you, like *gustar*: *Me da miedo manejar.* With a plural thing, *dan*: *Me dan miedo las alturas.*\nWorry works the second way: *Me preocupa el examen.* Or with *estar*: *Estoy preocupado por el examen.*\nSomeone else's action takes *que* and the subjunctive after any of them: *Me da miedo que manejes.* *Tengo miedo de que no vuelvas.*\nNerves: *Me pone nervioso* plus the cause. *Me pone nerviosa la entrevista.*\nAfter a scare: *¡Qué susto!*",
+  readAndPick: [
+    { q: "Why *dan*?", es: "Me dan miedo las arañas.",
+      options: ["It agrees with *me*", "It agrees with *arañas*", "It's a command"], answer: 1,
+      why: "What scares you is the subject, and *arañas* is plural." },
+    { q: "Who is driving?", es: "Me da miedo que manejes tan rápido.",
+      options: ["You are", "The speaker is", "Nobody yet"], answer: 0,
+      why: "*Que manejes*: your driving, so *que* and the subjunctive." },
+    { q: "What is she worried about?", es: "Estoy preocupada por mi mamá.",
+      options: ["Her job", "Herself", "Her mom"], answer: 2,
+      why: "*Preocupada por*: worried about, and the worry is her mom." },
+    { q: "What makes him nervous?", es: "Me ponen nervioso las reuniones con el jefe.",
+      options: ["One meeting", "Meetings with the boss", "The boss's whole family at home"], answer: 1,
+      why: "*Ponen* agrees with *las reuniones*: meetings, plural." },
+    { q: "When would you say this?", es: "¡Qué susto!",
+      options: ["After a fright", "After good news", "Before a meal"], answer: 0,
+      why: "*¡Qué susto!* is what a scare leaves behind: what a fright!" }
+  ],
+  yourTurn: [
+    { en: "Heights scare me.", es: "Me dan miedo las alturas.", accept: [] },
+    { en: "It scares me that you drive so fast. (to a friend)", es: "Me da miedo que manejes tan rápido.", accept: [] },
+    { en: "I'm worried about the exam.", es: "Estoy preocupado por el examen.", accept: ["Estoy preocupada por el examen.", "Me preocupa el examen."] },
+    { en: "I'm afraid of losing my job.", es: "Tengo miedo de perder el trabajo.", accept: ["Tengo miedo de perder [el|mi] trabajo.", "Me da miedo perder [el|mi] trabajo."] }
+  ],
+  translate: [
+    { en: "It worries me that he doesn't call.", es: "Me preocupa que no llame.", accept: [] },
+    { en: "I'm afraid you won't come back. (to a friend)", es: "Tengo miedo de que no vuelvas.", accept: ["Me da miedo que no vuelvas."] },
+    { en: "The interview makes me nervous.", es: "Me pone nervioso la entrevista.", accept: ["Me pone nerviosa la entrevista.", "La entrevista me pone [nervioso|nerviosa]."] },
+    { en: "What a fright! I thought it was a thief.", es: "¡Qué susto! Pensé que era un ladrón.", accept: ["¡Qué susto! Creí que era un ladrón."] },
+    { en: "Does driving at night scare you? (to a friend)", es: "¿Te da miedo manejar de noche?", accept: [] },
+    { en: "We are deeply concerned about the situation.", es: "Nos preocupa profundamente la situación.", accept: ["Nos preocupa mucho la situación."] }
+  ],
+  register: [
+    { es: "¡Qué susto!", en: "What a fright!", when: "right after a scare" },
+    { es: "Me da miedo.", en: "It scares me.", when: "plain and honest, with anyone" },
+    { es: "Estoy un poco preocupado.", en: "I'm a bit worried.", when: "calm, so nobody gets alarmed" },
+    { es: "Estoy muerta de miedo.", en: "I'm scared to death.", when: "with friends, exaggerating for effect" },
+    { es: "Nos preocupa la situación.", en: "We're concerned about the situation.", when: "formal, in a statement or an email" }
+  ],
+  personal: {
+    prompt: "Write about one fear you have, and one worry about someone close to you.",
+    constraints: [
+      { type: "containsAny", words: ["tengo miedo", "me da miedo", "me dan miedo"], label: "a fear: *tengo miedo de* or *me da miedo*" },
+      { type: "subjunctiveAfter", trigger: "me preocupa que", label: "a worry: *me preocupa que* and the subjunctive" }
+    ],
+    model: "Me dan miedo los aviones. Me preocupa que mi papá trabaje tanto."
+  },
+  pitfalls: [
+    "*Me da miedo las alturas* agrees with the wrong thing: heights are plural, *me dan miedo*.",
+    "*Tengo miedo que no vuelvas* drops the *de*: *tengo miedo de que*.",
+    "*Me hace nervioso* uses the wrong verb: a mood is put on you, *me pone nervioso*."
+  ]
+},
+
+"fn-aversion-b1": {
+  source: "merged",
+  hook: {
+    line: "Your new flatmate in Bogotá asks what bothers you, so you can live together in peace. Some things bother you a little and some you can't stand, and Spanish has a dial for one and a wall for the other.",
+    es: "Me molesta un poco que dejes los platos sucios.\nPero no soporto que fumes adentro.",
+    en: "It bothers me a bit when you leave the dishes dirty.\nBut I can't stand you smoking indoors."
+  },
+  examples: [
+    { es: "Odio hacer fila.", en: "I hate standing in line." },
+    { es: "No soporto el ruido de la construcción.", en: "I can't stand the construction noise." },
+    { es: "¡Qué asco! Hay una cucaracha.", en: "Gross! There's a cockroach." }
+  ],
+  rule: "Two ways to complain, and only one has a volume knob.\n*Me molesta* comes in sizes: *un poco*, *bastante*, *muchísimo*. It works like *gustar*: *Me molestan los ruidos.*\n*Odio* and *no soporto* are already the top. No *un poco*: you can stand it, or you can't.\nAll three take a thing (*el ruido*), your own action with the dictionary form (*odio madrugar*), or someone else's with *que* and the subjunctive (*no soporto que me interrumpan*).\nFor a quick reaction: *¡Qué horror!* And for something gross: *¡Qué asco!*\nFormal: *Me resulta muy desagradable.*",
+  readAndPick: [
+    { q: "How much does it bother her?", es: "Me molesta un poco que hablen tan duro.",
+      options: ["Not at all", "A little", "More than anything"], answer: 1,
+      why: "*Un poco* sets the dial low: a small complaint." },
+    { q: "Can you add *un poco* to this?", es: "No soporto que me griten.",
+      options: ["Yes, to make it sound softer", "Only when writing", "No, it's already the top"], answer: 2,
+      why: "*No soporto* has no sizes. For a little, use *me molesta un poco*." },
+    { q: "Who does the interrupting?", es: "No soporto que me interrumpan.",
+      options: ["Other people", "The speaker", "Nobody yet"], answer: 0,
+      why: "*Que me interrumpan*: they interrupt, so *que* and the subjunctive." },
+    { q: "When would you say this?", es: "¡Qué asco!",
+      options: ["At good news", "At something gross", "At a nice view from a window"], answer: 1,
+      why: "*¡Qué asco!* is disgust: something dirty, smelly or gross." },
+    { q: "What does she hate?", es: "Odio madrugar los lunes.",
+      options: ["Staying up late", "Mondays off work", "Getting up early"], answer: 2,
+      why: "*Madrugar* is getting up early, and she hates it." }
+  ],
+  yourTurn: [
+    { en: "I hate standing in line.", es: "Odio hacer fila.", accept: [] },
+    { en: "I can't stand being interrupted.", es: "No soporto que me interrumpan.", accept: [] },
+    { en: "It bothers me a bit that they talk so loudly.", es: "Me molesta un poco que hablen tan duro.", accept: ["Me molesta un poco que hablen tan [fuerte|alto]."] },
+    { en: "Gross!", es: "¡Qué asco!", accept: [] }
+  ],
+  translate: [
+    { en: "I can't stand the construction noise.", es: "No soporto el ruido de la construcción.", accept: ["No soporto el ruido de la obra."] },
+    { en: "It really bothers me when you're late without warning. (to a friend)", es: "Me molesta mucho que llegues tarde sin avisar.", accept: ["Me molesta muchísimo que llegues tarde sin avisar."] },
+    { en: "I hate getting up early on Mondays.", es: "Odio madrugar los lunes.", accept: [] },
+    { en: "How awful, what a bad time you had! (to a friend)", es: "¡Qué horror, qué mal la pasaste!", accept: [] },
+    { en: "I find that attitude very unpleasant.", es: "Me resulta muy desagradable esa actitud.", accept: ["Esa actitud me resulta muy desagradable."] }
+  ],
+  register: [
+    { es: "¡Qué asco!", en: "Gross!", when: "something disgusting, among friends" },
+    { es: "Me choca que me hablen así.", en: "I hate it when people talk to me like that.", when: "Colombian, casual and strong" },
+    { es: "Me molesta un poco.", en: "It bothers me a bit.", when: "a mild complaint that leaves room to joke" },
+    { es: "No soporto eso.", en: "I can't stand that.", when: "the limit, said firmly" },
+    { es: "Me resulta bastante desagradable.", en: "I find it rather unpleasant.", when: "careful, at work or in writing" }
+  ],
+  personal: {
+    prompt: "Write two lines for a new flatmate: one thing that bothers you a little, and one you can't stand.",
+    constraints: [
+      { type: "regex", pattern: "molestan? (un poco|bastante|mucho|much[ií]simo)", label: "something with a size: *me molesta un poco*" },
+      { type: "containsAny", words: ["no soporto", "odio"], label: "the limit: *no soporto* or *odio*" }
+    ],
+    model: "Me molesta un poco que dejes la luz prendida. Pero no soporto que pongas música a las seis de la mañana."
+  },
+  pitfalls: [
+    "*No soporto un poco* puts a size on a wall: for a little, *me molesta un poco*.",
+    "*No soporto que me interrumpen* keeps the ordinary form: *que me interrumpan*.",
+    "*Hacer cola* is how Spain says it. In Colombia you *hacer fila*."
+  ]
+},
+
+"fn-aburrimiento-b1": {
+  source: "merged",
+  hook: {
+    line: "It's a rainy Sunday in Bogotá and there's nothing to do. English says bored and boring with nearly the same word, and mixing them up in Spanish tells people you're a dull person.",
+    es: "Me aburro muchísimo los domingos.\n¡Y qué pereza salir con esta lluvia!",
+    en: "I get so bored on Sundays.\nAnd what a drag, going out in this rain!"
+  },
+  examples: [
+    { es: "Esta serie me aburre.", en: "This series bores me." },
+    { es: "Estoy aburrida, ¿hacemos algo?", en: "I'm bored, shall we do something?" },
+    { es: "Me da pereza cocinar hoy.", en: "I can't be bothered to cook today." }
+  ],
+  rule: "Bored and boring are different words in Spanish.\n*Me aburro*: I get bored. *Me aburro en las reuniones largas.*\n*Estoy aburrido*: I'm bored right now. *Aburrida* for a woman.\n*Es aburrido*: it is boring, a quality. *La película es aburrida.* So *soy aburrido* would mean you're a dull person.\nThe cause can come first, like *gustar*: *Me aburre esta serie.* *Me aburren las reuniones.*\nFor something you can't be bothered to do, Colombians say *¡Qué pereza!*, or *me da pereza* and the dictionary form: *Me da pereza salir.*",
+  readAndPick: [
+    { q: "Is she bored or boring?", es: "Estoy aburrida.",
+      options: ["A boring person", "Bored right now", "Bored of you"], answer: 1,
+      why: "*Estoy* tells how she feels now. *Soy aburrida* would make her dull." },
+    { q: "What is boring?", es: "Me aburren las reuniones tan largas.",
+      options: ["Long meetings", "The speaker", "Short meetings"], answer: 0,
+      why: "The cause comes first, like *gustar*: the long meetings bore her." },
+    { q: "What does he mean?", es: "Me da pereza salir con esta lluvia.",
+      options: ["He's afraid of the rain", "He'd love to go out", "He can't be bothered"], answer: 2,
+      why: "*Me da pereza* is can't be bothered, the Colombian way." },
+    { q: "What is she saying about herself?", es: "Me aburro los domingos por la tarde.",
+      options: ["She gets bored then", "She bores people then", "She's boring on Sundays"], answer: 0,
+      why: "*Me aburro*: it happens to her. Without *me*, she'd bore other people." },
+    { q: "What does this say about Hernán?", es: "Hernán es muy aburrido.",
+      options: ["He's bored today", "He's tired today", "He's a dull person"], answer: 2,
+      why: "*Es aburrido* is a quality: he's dull, not just bored." }
+  ],
+  yourTurn: [
+    { en: "I'm bored, shall we do something? (to a friend)", es: "Estoy aburrido, ¿hacemos algo?", accept: ["Estoy aburrida, ¿hacemos algo?"] },
+    { en: "I get so bored on Sundays.", es: "Me aburro muchísimo los domingos.", accept: ["Los domingos me aburro muchísimo."] },
+    { en: "This series bores me.", es: "Esta serie me aburre.", accept: ["Me aburre esta serie."] },
+    { en: "I can't be bothered to cook today.", es: "Me da pereza cocinar hoy.", accept: ["Hoy me da pereza cocinar."] }
+  ],
+  translate: [
+    { en: "The movie is boring.", es: "La película es aburrida.", accept: [] },
+    { en: "What a drag!", es: "¡Qué pereza!", accept: [] },
+    { en: "They get bored in history class.", es: "Se aburren en la clase de historia.", accept: ["Se aburren en clase de historia."] },
+    { en: "Long meetings bore me.", es: "Me aburren las reuniones largas.", accept: [] },
+    { en: "Do you get bored at home? (to a friend)", es: "¿Te aburres en la casa?", accept: ["¿Te aburres en casa?"] }
+  ],
+  register: [
+    { es: "¡Qué pereza!", en: "What a drag!", when: "very Colombian, for anything you dread doing" },
+    { es: "¡Qué jartera!", en: "How tedious!", when: "Colombian slang, among friends only" },
+    { es: "Estoy aburrido.", en: "I'm bored.", when: "plain, anywhere" },
+    { es: "La charla fue algo pesada.", en: "The talk was rather heavy going.", when: "polite, in a review or a report" }
+  ],
+  personal: {
+    prompt: "Write about a moment that bores you every week, and one thing you can't be bothered to do.",
+    constraints: [
+      { type: "containsAny", words: ["me aburro", "me aburre", "me aburren", "estoy aburrid"], label: "boredom: *me aburro* or *me aburre*" },
+      { type: "containsAny", words: ["qué pereza", "me da pereza"], label: "*¡qué pereza!* or *me da pereza*" }
+    ],
+    model: "Me aburro mucho en las reuniones de los lunes. Y me da pereza hacer mercado los domingos."
+  },
+  pitfalls: [
+    "*Soy aburrido* says you're a dull person: for how you feel, *estoy aburrido*.",
+    "*Aburro los domingos* drops the *me*: without it, you bore other people.",
+    "*¡Qué rollo!* is how Spain says it. In Colombia: *¡qué pereza!*"
+  ]
+},
+
+"fn-no-me-importa-b1": {
+  source: "old",
+  hook: {
+    line: "Your friends are planning Saturday night and keep asking what you prefer: pizza or arepas, nine or ten. Honestly, you don't mind, and Spanish has a scale for that too.",
+    es: "¿Pizza o arepas? Me da igual.\nY no me importa la hora.",
+    en: "Pizza or arepas? I don't mind.\nAnd I don't care about the time."
+  },
+  examples: [
+    { es: "No me importa esperar un rato más.", en: "I don't mind waiting a bit longer." },
+    { es: "Me da igual si llueve o no.", en: "I don't mind whether it rains or not." },
+    { es: "No me importa que lleguen tarde.", en: "I don't mind if they arrive late." }
+  ],
+  rule: "*No me importa* and *me da igual* both say you don't mind. They work like *gustar*.\nA thing: *Me da igual el sitio.* A choice: *¿Té o café? Me da igual.*\nYour own action, the dictionary form: *No me importa esperar.*\nSomeone else's action, *que* and the subjunctive: *No me importa que lleguen tarde.*\nWhether or not: *si* and the ordinary form. *Me da igual si llueve.*\nTo hand them the choice, kindly: *Como quieras.*\nWatch the volume: *No me importa nada* and *me importa un comino* say you don't care at all, and can sound cold.",
+  readAndPick: [
+    { q: "Is she annoyed?", es: "¿Té o café? Me da igual.",
+      options: ["Yes, very", "No, either is fine", "Yes, a little annoyed by it"], answer: 1,
+      why: "*Me da igual*: either one is fine with her." },
+    { q: "Who might be late?", es: "No me importa que lleguen tarde.",
+      options: ["They might", "The speaker", "Nobody"], answer: 0,
+      why: "*Que lleguen*: their arrival, so *que* and the subjunctive." },
+    { q: "Why *llueve* and not *llueva*?", es: "Me da igual si llueve o no.",
+      options: ["It's about the past", "*Si* takes the ordinary form", "It's a command, not a statement"], answer: 1,
+      why: "After *si*, whether, the verb stays ordinary." },
+    { q: "How does this sound?", es: "Me importa un comino lo que dice.",
+      options: ["Kind and patient", "Worried about it", "Cold: not at all"], answer: 2,
+      why: "*Un comino* is a tiny seed: I couldn't care less." },
+    { q: "What is he doing?", es: "Como quieras, tú decides.",
+      options: ["Handing you the choice", "Refusing to go", "Choosing for you"], answer: 0,
+      why: "*Como quieras* gives the choice away, kindly." }
+  ],
+  yourTurn: [
+    { en: "Tea or coffee, I don't mind.", es: "Té o café, me da igual.", accept: ["Té o café, no me importa."] },
+    { en: "I don't mind waiting a bit longer.", es: "No me importa esperar un rato más.", accept: ["No me importa esperar un poco más."] },
+    { en: "I don't mind whether it rains or not.", es: "Me da igual si llueve o no.", accept: ["No me importa si llueve o no."] },
+    { en: "Whatever you like. (to a friend)", es: "Como quieras.", accept: [] }
+  ],
+  translate: [
+    { en: "I don't mind if they arrive late.", es: "No me importa que lleguen tarde.", accept: ["Me da igual que lleguen tarde."] },
+    { en: "I don't care about the result, just taking part.", es: "No me importa el resultado, solo participar.", accept: ["Me da igual el resultado, solo participar."] },
+    { en: "Whatever you like, you decide. (to a friend)", es: "Como quieras, tú decides.", accept: [] },
+    { en: "The place doesn't matter to me.", es: "Me da igual el sitio.", accept: ["[Me da igual|No me importa] el [sitio|lugar]."] },
+    { en: "It's all the same to me.", es: "Me da lo mismo.", accept: [] }
+  ],
+  register: [
+    { es: "Me da igual.", en: "I don't mind.", when: "relaxed, with no preference" },
+    { es: "Como quieras.", en: "Whatever you like.", when: "kind, handing over the choice" },
+    { es: "Me da lo mismo.", en: "It's all the same to me.", when: "neutral, anywhere" },
+    { es: "Me importa un comino.", en: "I couldn't care less.", when: "strong and cold, so use it with care" },
+    { es: "Para mí es indiferente.", en: "It makes no difference to me.", when: "careful, at work or in a meeting" }
+  ],
+  personal: {
+    prompt: "Your friends are choosing where to eat tonight. Say you don't mind about two things, and hand them the choice.",
+    constraints: [
+      { type: "containsAny", words: ["me da igual", "no me importa", "me da lo mismo"], label: "*me da igual* or *no me importa*" },
+      { type: "containsAny", words: ["como quieras", "como quieran", "ustedes deciden", "tú decides"], label: "the choice handed over: *como quieras*" }
+    ],
+    model: "Me da igual el sitio y no me importa la hora. Como quieran, ustedes deciden."
+  },
+  pitfalls: [
+    "*No me importa que vienen* keeps the ordinary form: someone else's action takes *vengan*.",
+    "*Me importa un comino* is not a relaxed I don't mind: it says you don't care at all.",
+    "*Yo no importo* turns it around: like *gustar*, *no me importa*."
+  ]
+},
+
+"fn-sorpresa-extraneza-b1": {
+  source: "old",
+  hook: {
+    line: "A coworker tells you that Andrés from accounting quit yesterday to open a bakery in Salento. You did not see that coming, and Spanish has a reaction for every size of surprise.",
+    es: "¿En serio? ¡No me digas!\nMe sorprende que se vaya así, tan de repente.",
+    en: "Seriously? You don't say!\nI'm surprised he's leaving like that, so suddenly."
+  },
+  examples: [
+    { es: "¡Qué sorpresa verte por aquí!", en: "What a surprise to see you here!" },
+    { es: "Es raro que no conteste.", en: "It's strange that he isn't answering." },
+    { es: "Renunció al trabajo.\n¿De verdad?", en: "He quit his job.\nReally?" }
+  ],
+  rule: "Quick reactions need no verb: *¡Qué sorpresa!* *¡Qué raro!* *¡No me digas!* *¡No me lo puedo creer!*\nTo ask if it's true: *¿En serio?* or *¿De verdad?* *¿Ah, sí?* is milder, and said flat it can sound doubtful.\nFor the surprising fact, *me sorprende que*, *me extraña que* or *es raro que*, and the subjunctive: *Me sorprende que se vaya.* *Es raro que no conteste.* Even when it's true, it is held up as surprising.\nYour own experience takes the dictionary form: *¡Qué sorpresa verte!*\n*Me extraña* is surprise with a hint that something is off.",
+  readAndPick: [
+    { q: "What does she want?", es: "¿En serio?",
+      options: ["Confirmation", "To end the chat", "To hear it again"], answer: 0,
+      why: "*¿En serio?* asks if it's really true, the way seriously? does." },
+    { q: "Is he really not answering?", es: "Es raro que no conteste.",
+      options: ["No, he just did", "Yes, oddly", "Nobody has called"], answer: 1,
+      why: "It's true, but *es raro que* holds it up as strange: *conteste*." },
+    { q: "What does *me extraña* add?", es: "Me extraña que no haya nadie.",
+      options: ["She's delighted", "She's bored with the party", "Something seems wrong"], answer: 2,
+      why: "*Me extraña* is surprise with a hint that something is off." },
+    { q: "Who is she surprised to see?", es: "¡Qué sorpresa verte por aquí!",
+      options: ["You", "Herself", "Your brother"], answer: 0,
+      why: "*Verte*: seeing you. Her own experience, so the dictionary form." },
+    { q: "How strong is it?", es: "¡No me lo puedo creer!",
+      options: ["Mild interest", "Huge surprise", "Boredom"], answer: 1,
+      why: "*No me lo puedo creer* is the big one: I can't believe it!" }
+  ],
+  yourTurn: [
+    { en: "Seriously?", es: "¿En serio?", accept: ["¿De verdad?"] },
+    { en: "What a surprise to see you here! (to a friend)", es: "¡Qué sorpresa verte por aquí!", accept: ["¡Qué sorpresa verte por acá!"] },
+    { en: "It's strange that he isn't answering.", es: "Es raro que no conteste.", accept: ["Es raro que no responda."] },
+    { en: "I can't believe it!", es: "¡No me lo puedo creer!", accept: ["¡No lo puedo creer!", "¡No puedo creerlo!"] }
+  ],
+  translate: [
+    { en: "I'm surprised he's leaving so suddenly.", es: "Me sorprende que se vaya tan de repente.", accept: [] },
+    { en: "He quit his job. Really?", es: "Renunció al trabajo. ¿De verdad?", accept: ["Renunció al trabajo. ¿En serio?", "Dejó el trabajo. ¿[De verdad|En serio]?"] },
+    { en: "How strange!", es: "¡Qué raro!", accept: ["¡Qué extraño!"] },
+    { en: "It seems odd to me that there's nobody here.", es: "Me extraña que no haya nadie.", accept: ["Me extraña que no haya nadie [aquí|acá]."] },
+    { en: "She's getting married next month. You don't say!", es: "Se casa el mes que viene. ¡No me digas!", accept: ["Se casa el próximo mes. ¡No me digas!"] }
+  ],
+  register: [
+    { es: "¡No me digas!", en: "You don't say!", when: "news from a friend, warm surprise" },
+    { es: "¿En serio?", en: "Seriously?", when: "everyday, with anyone" },
+    { es: "¡Uy, qué sorpresa!", en: "Oh, what a surprise!", when: "a happy surprise, with a very Colombian uy" },
+    { es: "¡No puede ser!", en: "No way!", when: "big news, good or bad" },
+    { es: "Me sorprende mucho la noticia.", en: "The news really surprises me.", when: "calm, at work or in writing" }
+  ],
+  personal: {
+    prompt: "A friend tells you surprising news about someone you both know. React in two lines: a quick reaction, then what surprises you.",
+    constraints: [
+      { type: "containsAny", words: ["en serio", "de verdad", "no me digas", "qué sorpresa", "qué raro", "no puede ser", "no me lo puedo creer"], label: "a quick reaction, like *¿en serio?*" },
+      { type: "containsAny", words: ["me sorprende que", "me extraña que", "es raro que"], label: "what surprises you: *me sorprende que*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive after it" }
+    ],
+    model: "¿En serio? ¡No me digas! Me sorprende que Laura se case tan pronto."
+  },
+  pitfalls: [
+    "*Me sorprende que se va* keeps the ordinary form: a surprising fact is held up, *se vaya*.",
+    "News from yesterday takes the plain past in Colombia: *Renunció ayer*, not *ha renunciado*.",
+    "*¿Ah, sí?* said flat can sound doubtful: for warm surprise, *¡No me digas!*"
+  ]
+},
+
+"fn-empatia-b1": {
+  source: "merged",
+  hook: {
+    line: "Your friend calls, upset: her boss gave her project to someone else. She doesn't want advice yet. She wants to feel heard, and Spanish shows that in one ending.",
+    es: "Ay, me imagino. Entiendo que estés molesta.\nYo también estaría muy brava.",
+    en: "Oh, I can imagine. I understand that you're upset.\nI'd be really angry too."
+  },
+  examples: [
+    { es: "Siento mucho lo que te pasó.", en: "I'm so sorry about what happened to you." },
+    { es: "Entiendo perfectamente que necesites tiempo.", en: "I completely understand that you need time." },
+    { es: "Perdí el vuelo.\n¡Qué horror!", en: "I missed my flight.\nHow awful!" }
+  ],
+  rule: "Showing you're with someone, from small to full.\nSmall signals while they talk: *Claro, claro.* *Sí, te entiendo.* *Me imagino.*\nShare the feeling in two words: *¡Qué pena!* *¡Qué horror!* *¡Qué rabia!* Or the good kind: *¡Qué bien!*\nSay it makes sense, with *entiendo que* and the subjunctive: *Entiendo que estés molesta.* The ending says the feeling is reasonable.\nWith the ordinary form it is only news: *Entiendo que llegas mañana*, I gather you arrive tomorrow.\n*Comprendo que* works the same way. Formal: *Comprendo perfectamente su preocupación.*\nThen, and only then: *¿Qué necesitas?*",
+  readAndPick: [
+    { q: "What is she saying?", es: "Entiendo que estés molesta.",
+      options: ["She just heard the news", "Your upset makes sense", "She is upset with you"], answer: 1,
+      why: "*Estés*, the subjunctive, says the feeling is reasonable." },
+    { q: "And here?", es: "Entiendo que llegas el lunes.",
+      options: ["She's taken in a fact", "Arriving makes sense", "She hopes you arrive"], answer: 0,
+      why: "With the ordinary *llegas*, *entiendo que* only reports news: I gather." },
+    { q: "What is *me imagino* doing?", es: "Ay, me imagino.",
+      options: ["Changing the subject", "Asking a question", "Showing she's with you"], answer: 2,
+      why: "*Me imagino*: I can imagine. A small signal that she's listening." },
+    { q: "When would you say this?", es: "¡Qué horror, lo siento muchísimo!",
+      options: ["After good news", "After bad news", "Before a meal"], answer: 1,
+      why: "*¡Qué horror!* shares the shock of bad news." },
+    { q: "Where would you hear this?", es: "Comprendo perfectamente su preocupación.",
+      options: ["Between close friends", "A child's game in the park", "A customer service call"], answer: 2,
+      why: "*Comprendo* and *su* are the careful voice of someone at work." }
+  ],
+  yourTurn: [
+    { en: "I understand that you're upset. (to a friend)", es: "Entiendo que estés molesto.", accept: ["Entiendo que estés molesta."] },
+    { en: "I can imagine.", es: "Me imagino.", accept: [] },
+    { en: "I'm so sorry about what happened to you. (to a friend)", es: "Siento mucho lo que te pasó.", accept: ["Lamento mucho lo que te pasó."] },
+    { en: "I completely understand that you need time. (to a friend)", es: "Entiendo perfectamente que necesites tiempo.", accept: ["Entiendo perfectamente que necesites un poco de tiempo."] }
+  ],
+  translate: [
+    { en: "I gather you're arriving on Monday. (to a friend)", es: "Entiendo que llegas el lunes.", accept: [] },
+    { en: "I completely understand your concern. (polite)", es: "Comprendo perfectamente su preocupación.", accept: ["Entiendo perfectamente su preocupación."] },
+    { en: "I missed my flight. How awful!", es: "Perdí el vuelo. ¡Qué horror!", accept: [] },
+    { en: "I understand that you don't want to talk now. (to a friend)", es: "Entiendo que no quieras hablar ahora.", accept: ["Comprendo que no quieras hablar ahora."] },
+    { en: "Of course, of course. I'd be angry too.", es: "Claro, claro. Yo también estaría bravo.", accept: ["Claro, claro. Yo también estaría [brava|molesto|molesta]."] }
+  ],
+  register: [
+    { es: "Claro, claro.", en: "Of course, of course.", when: "while they talk, to show you follow" },
+    { es: "Me imagino.", en: "I can imagine.", when: "warm and short, with anyone" },
+    { es: "Te entiendo perfectamente.", en: "I completely understand you.", when: "a full sentence of support, to a friend" },
+    { es: "Comprendo su situación.", en: "I understand your situation.", when: "to someone you call usted, or a client" },
+    { es: "Lamento mucho lo sucedido.", en: "I'm very sorry for what happened.", when: "formal, in writing" }
+  ],
+  personal: {
+    prompt: "A friend tells you something went badly for them today. Write a reply that shows you understand, before any advice.",
+    constraints: [
+      { type: "containsAny", words: ["me imagino", "te entiendo", "claro", "qué pena", "qué horror", "qué rabia"], label: "a small signal: *me imagino* or *qué pena*" },
+      { type: "subjunctiveAfter", trigger: "entiendo que", label: "*entiendo que* and the subjunctive" }
+    ],
+    model: "Ay, qué rabia, me imagino. Entiendo que estés brava con tu jefe."
+  },
+  pitfalls: [
+    "*Entiendo que estás molesta* only reports a fact: to say the feeling makes sense, *estés*.",
+    "Jump to advice too soon and they feel unheard: the feeling first, then *¿qué necesitas?*",
+    "Something that happened today takes the plain past: *lo que te pasó*, not *lo que te ha pasado*."
+  ]
+},
+
+"fn-tranquilizar-consolar-b1": {
+  source: "old",
+  hook: {
+    line: "Your friend dropped her phone in the river on your trip to San Gil, and she's about to cry. You can't fix the phone, but you can calm her down, and Spanish has a whole set of phrases for it.",
+    es: "Tranquila, no llores.\nSon cosas que pasan. Ya verás que todo sale bien.",
+    en: "Easy, don't cry.\nThese things happen. You'll see, it'll all work out."
+  },
+  examples: [
+    { es: "No te preocupes, no es para tanto.", en: "Don't worry, it's not that big a deal." },
+    { es: "No te pongas así, seguro que se soluciona.", en: "Don't get like that, I'm sure it'll get sorted." },
+    { es: "No se preocupe, nosotros nos encargamos de todo.", en: "Don't worry, we'll take care of everything." }
+  ],
+  rule: "Calming someone has three moves.\nSpeak to the feeling, often with a *no* command: *No te preocupes.* *No llores.* *No te pongas así.* Or just *Tranquilo*, *tranquila*.\nShrink the problem: *No pasa nada.* *No es para tanto.* *Son cosas que pasan.*\nPoint to later: *Ya verás que todo sale bien.* *Todo va a salir bien.* *Ya pasó.*\nTo someone you call *usted*: *No se preocupe.* *Tranquilo, señor.*\nDon't shrink something big. For a death or a breakup, *No es para tanto* is cruel. There, say *Estoy contigo*, I'm here for you.",
+  readAndPick: [
+    { q: "What does this do?", es: "Son cosas que pasan.",
+      options: ["Makes it normal", "Makes it bigger", "Blames someone"], answer: 0,
+      why: "*Son cosas que pasan*: these things happen to everyone." },
+    { q: "Who is being told?", es: "No se preocupe, nosotros nos encargamos.",
+      options: ["A close friend", "A group of kids at school", "Someone you call usted"], answer: 2,
+      why: "*No se preocupe* is the *usted* shape. A friend gets *no te preocupes*." },
+    { q: "When should you not say this?", es: "Tranquila, no es para tanto.",
+      options: ["After a funeral", "A spilled coffee", "A lost umbrella"], answer: 0,
+      why: "*No es para tanto* shrinks the problem. For a death, that is cruel." },
+    { q: "What is she promising?", es: "Ya verás que todo sale bien.",
+      options: ["It already went badly", "It will turn out fine", "You'll see it tomorrow"], answer: 1,
+      why: "*Ya verás*: you'll see, it'll all work out." },
+    { q: "What is *tranquila* doing here?", es: "Tranquila, ya pasó.",
+      options: ["Describing her", "Saying goodbye", "Calming her down"], answer: 2,
+      why: "*Tranquila* on its own is easy, relax: it calms." }
+  ],
+  yourTurn: [
+    { en: "Don't worry, it's not that big a deal. (to a friend)", es: "No te preocupes, no es para tanto.", accept: [] },
+    { en: "These things happen.", es: "Son cosas que pasan.", accept: [] },
+    { en: "You'll see, everything will work out. (to a friend)", es: "Ya verás que todo sale bien.", accept: ["Ya verás que todo [va a salir|saldrá] bien."] },
+    { en: "Don't worry, we'll take care of everything. (polite)", es: "No se preocupe, nosotros nos encargamos de todo.", accept: ["No se preocupe, nosotros nos ocupamos de todo."] }
+  ],
+  translate: [
+    { en: "Easy, don't cry. (to a friend)", es: "Tranquila, no llores.", accept: ["Tranquilo, no llores."] },
+    { en: "It's okay, it's over now.", es: "No pasa nada, ya pasó.", accept: ["[Tranquilo|Tranquila], ya pasó."] },
+    { en: "Don't get like that, I'm sure it'll get sorted. (to a friend)", es: "No te pongas así, seguro que se soluciona.", accept: ["No te pongas así, seguro que se arregla."] },
+    { en: "Don't get angry, it wasn't my intention. (to a friend)", es: "No te pongas bravo, no fue mi intención.", accept: ["No te pongas brava, no fue mi intención.", "No te enojes, no fue mi intención."] },
+    { en: "I'm here for you. (to a friend)", es: "Estoy contigo.", accept: ["Aquí estoy contigo."] }
+  ],
+  register: [
+    { es: "Tranquilo, no pasa nada.", en: "Relax, it's fine.", when: "small problems, with anyone" },
+    { es: "No te preocupes.", en: "Don't worry.", when: "everyday, to anyone you call tú" },
+    { es: "Ya verás que todo sale bien.", en: "You'll see, it'll all work out.", when: "a hopeful push, for bigger worries" },
+    { es: "Estoy contigo.", en: "I'm here for you.", when: "big pain, when nothing can be fixed" },
+    { es: "No se preocupe, señora.", en: "Don't worry, ma'am.", when: "to someone you call usted" }
+  ],
+  personal: {
+    prompt: "A friend has just failed their driving test. Write three short lines to calm them down: one to the feeling, one to shrink the problem, one about later.",
+    constraints: [
+      { type: "containsAny", words: ["no te preocupes", "tranquilo", "tranquila", "no llores", "no te pongas así"], label: "to the feeling: *no te preocupes* or *tranquilo*" },
+      { type: "containsAny", words: ["no pasa nada", "no es para tanto", "son cosas que pasan"], label: "shrink it: *no es para tanto*" },
+      { type: "containsAny", words: ["ya verás", "va a salir bien", "la próxima"], label: "about later: *ya verás* or *la próxima*" }
+    ],
+    model: "Tranquilo, no te preocupes. Son cosas que pasan. Ya verás que la próxima vez lo pasas."
+  },
+  pitfalls: [
+    "*No te preocupas* is a statement, you don't worry: the comfort is *no te preocupes*.",
+    "*No es para tanto* about something big sounds cruel: there, *Estoy contigo*.",
+    "*No te enfades* is how Spain says it. In Colombia: *no te pongas bravo* or *no te enojes*."
+  ]
+},
+
+"fn-animar-b1": {
+  source: "old",
+  hook: {
+    line: "Your friend has wanted to sing at the open mic in a bar in Cali for months, and tonight she's frozen at the bottom of the stage steps. You need to push her gently, without pushing too hard.",
+    es: "¡Dale, tú puedes!\nNo tengas miedo, nadie te va a juzgar.",
+    en: "Go on, you can do it!\nDon't be scared, nobody's going to judge you."
+  },
+  examples: [
+    { es: "¡Ánimo, ya casi terminas!", en: "Keep going, you're almost done!" },
+    { es: "Inténtalo, no pasa nada si te sale mal.", en: "Try it, it's fine if it goes wrong." },
+    { es: "¡Hágale, que usted puede!", en: "Go for it, you can do it!" }
+  ],
+  rule: "Encouragement comes three ways.\nA push, short and loud: *¡Dale!* *¡Ánimo!* *¡Anímate!* *¡Tú puedes!* To someone you call *usted*, very Colombian: *¡Hágale!* *¡Usted puede!*\nA command with a reason: *Inténtalo, te va a encantar.* *Prueba, hombre*: the *hombre* softens the push, whoever you're talking to.\nOr remove the fear instead of pushing: *No tengas miedo.* *No pasa nada si sale mal.* *Yo ya lo hice y no pasó nada.*\n*¡Ánimo!* also keeps someone going in the middle of something hard.\nIn writing, formal: *Lo animamos a participar.*",
+  readAndPick: [
+    { q: "What is *¡Dale!* doing here?", es: "¡Dale, tú puedes!",
+      options: ["Telling her to stop", "Pushing her to go", "Asking for a hit"], answer: 1,
+      why: "*¡Dale!* is go on, go for it: a push." },
+    { q: "Is he only talking to men?", es: "¡Prueba, hombre, está delicioso!",
+      options: ["No, it softens the push", "Yes, it's only said to men", "No, it's an insult"], answer: 0,
+      why: "This *hombre* works on anyone, the way come on does in English." },
+    { q: "Who is being encouraged?", es: "¡Hágale, que usted puede!",
+      options: ["A close friend, as tú", "A group of children", "Someone called usted"], answer: 2,
+      why: "*Hágale* and *usted puede* are the *usted* shapes." },
+    { q: "How does this encourage?", es: "No pasa nada si te sale mal.",
+      options: ["By pushing harder", "By removing the fear", "By changing the plan"], answer: 1,
+      why: "It takes away the risk instead of pushing." },
+    { q: "When would you say this?", es: "¡Ánimo, ya casi llegamos!",
+      options: ["Halfway up a hard climb", "At the end of a party", "Before breakfast on a Sunday"], answer: 0,
+      why: "*¡Ánimo!* keeps someone going in the middle of something hard." }
+  ],
+  yourTurn: [
+    { en: "Go on, you can do it! (to a friend)", es: "¡Dale, tú puedes!", accept: ["¡[Ánimo|Vamos], tú puedes!"] },
+    { en: "Don't be scared. (to a friend)", es: "No tengas miedo.", accept: [] },
+    { en: "Try it, it's fine if it goes wrong. (to a friend)", es: "Inténtalo, no pasa nada si te sale mal.", accept: ["Inténtalo, no pasa nada si sale mal."] },
+    { en: "Keep going, you're almost done! (to a friend)", es: "¡Ánimo, ya casi terminas!", accept: [] }
+  ],
+  translate: [
+    { en: "Go for it, you can do it! (polite)", es: "¡Hágale, que usted puede!", accept: ["¡Hágale, usted puede!", "¡Ánimo, usted puede!"] },
+    { en: "Go for it, I'm sure you'll love it! (to a friend)", es: "¡Anímate, seguro que te va a encantar!", accept: ["¡Anímate, seguro que te encantará!"] },
+    { en: "There's no danger, I've done it before.", es: "No hay peligro, yo ya lo hice antes.", accept: ["No hay peligro, yo ya lo he hecho antes.", "No hay peligro, ya lo hice antes."] },
+    { en: "Jump, I've got you! (to a friend)", es: "¡Salta, que yo te agarro!", accept: ["¡Salta, yo te agarro!"] },
+    { en: "We encourage you to take part. (polite)", es: "Lo animamos a participar.", accept: ["La animamos a participar.", "Le animamos a participar."] }
+  ],
+  register: [
+    { es: "¡Dale!", en: "Go on!", when: "with friends, a quick push" },
+    { es: "¡Ánimo!", en: "Keep it up!", when: "in the middle of something hard" },
+    { es: "¡Tú puedes!", en: "You can do it!", when: "before a big moment" },
+    { es: "¡Hágale!", en: "Go for it!", when: "very Colombian, often with usted" },
+    { es: "Lo animamos a postularse.", en: "We encourage you to apply.", when: "formal, in a job notice or an email" }
+  ],
+  personal: {
+    prompt: "A friend is nervous about something new: a job interview, a dance class, a trip alone. Write three lines: a push, one fear removed, and a reason.",
+    constraints: [
+      { type: "containsAny", words: ["dale", "ánimo", "anímate", "tú puedes", "hágale"], label: "a push: *¡dale!* or *¡ánimo!*" },
+      { type: "containsAny", words: ["no tengas miedo", "no pasa nada", "no hay peligro"], label: "a fear removed: *no tengas miedo*" },
+      { type: "minSentences", n: 3, label: "three lines or more" }
+    ],
+    model: "¡Dale, tú puedes! No tengas miedo de la entrevista. Te preparaste muchísimo y te va a ir muy bien."
+  },
+  pitfalls: [
+    "*No tienes miedo* is a statement, you're not scared: the push is *no tengas miedo*.",
+    "*¡Venga!* is how Spain says it. In Colombia: *¡dale!*"
+  ]
+},
+
+"task-b1-enfado": {
+  source: "old",
+  hook: {
+    line: "This is the unit's own piece of writing: something that went badly, told honestly, and ending with someone trying to calm you down. Under-reacting in Spanish can read as cold, so let the feeling show.",
+    es: "Me indigna que te traten así.\nTranquila, que esto se arregla.",
+    en: "It infuriates me that they treat you like that.\nEasy, this'll get sorted."
+  },
+  examples: [
+    { es: "Ya estoy harta de llamar.", en: "I'm fed up with calling." },
+    { es: "Me llegó una factura de trescientos mil pesos.", en: "I got a bill for three hundred thousand pesos." }
+  ],
+  rule: "Tell it in order, and let the feeling grow with the story.\nWhat happened, in the past: *Me llegó una factura enorme.* *Llamé cinco veces.*\nHow things kept going: *Cada vez me decían otra cosa.*\nThe feeling, at the right size: *Me dio mucha rabia.* *Me indigna que* and the subjunctive: *Me indigna que te traten así.* *Ya estoy harto.*\nWhat you did about it: *Puse una queja por escrito.*\nThen someone calms you down: *Tranquilo, que esto se arregla.* *A mí me pasó lo mismo.*\nIndifference is a feeling too: *me da igual* is mild, *me importa un comino* is cold.",
+  readAndPick: [
+    { q: "What is this sentence for?", es: "Cada vez me decían otra cosa.",
+      options: ["A single moment", "How things kept going", "A plan for later in the week"], answer: 1,
+      why: "*Decían* and *cada vez*: what kept happening, again and again." },
+    { q: "How big is the feeling?", es: "Ya estoy harta.",
+      options: ["Fed up", "Mild interest", "Slightly bored"], answer: 0,
+      why: "*Harta* is fed up: she has had enough." },
+    { q: "Who treats who badly?", es: "Me indigna que te traten así.",
+      options: ["You treat them badly", "I treat you badly", "They treat you badly"], answer: 2,
+      why: "*Que te traten*: they treat you, so *que* and the subjunctive." },
+    { q: "What is the neighbour doing?", es: "Tranquilo, que esto se arregla.",
+      options: ["Calming him", "Blaming him for it", "Saying goodbye"], answer: 0,
+      why: "*Tranquilo* and *esto se arregla*: it'll get sorted, relax." },
+    { q: "Why does she say this?", es: "A mí me pasó lo mismo el año pasado.",
+      options: ["To change the subject", "To show it can be fixed", "To complain about herself"], answer: 1,
+      why: "Her own story shows it can work out, which calms him down." }
+  ],
+  yourTurn: [
+    { en: "It infuriates me that they treat you like that. (to a friend)", es: "Me indigna que te traten así.", accept: ["Me da rabia que te traten así."] },
+    { en: "I'm fed up.", es: "Ya estoy harto.", accept: ["Ya estoy harta.", "Estoy [harto|harta]."] },
+    { en: "Easy, this'll get sorted. (to a friend)", es: "Tranquilo, que esto se arregla.", accept: ["[Tranquilo|Tranquila], esto se arregla.", "Tranquila, que esto se arregla."] },
+    { en: "I called five times.", es: "Llamé cinco veces.", accept: [] }
+  ],
+  translate: [
+    { en: "I got a bill for three hundred thousand pesos.", es: "Me llegó una factura de trescientos mil pesos.", accept: [] },
+    { en: "Every time they told me something different.", es: "Cada vez me decían otra cosa.", accept: ["Cada vez me decían algo [distinto|diferente]."] },
+    { en: "In the end I made a complaint in writing.", es: "Al final puse una queja por escrito.", accept: [] },
+    { en: "The same thing happened to me last year.", es: "A mí me pasó lo mismo el año pasado.", accept: ["Me pasó lo mismo el año pasado."] },
+    { en: "And in the end they gave it all back to me.", es: "Y al final me lo devolvieron todo.", accept: ["Y al final me devolvieron todo."] }
+  ],
+  register: [
+    { es: "Me molestó bastante.", en: "It bothered me quite a lot.", when: "a measured complaint" },
+    { es: "Me dio mucha rabia.", en: "It made me really mad.", when: "honest anger, with friends" },
+    { es: "Estoy hasta la coronilla.", en: "I've had it up to here.", when: "fed up, colloquial and strong" },
+    { es: "Me parece una falta de respeto.", en: "I think it's a lack of respect.", when: "a firm complaint to a company or a manager" }
+  ],
+  personal: {
+    prompt: "Write about something that went badly, eight sentences or more, ending with someone calming you down.",
+    constraints: [
+      { type: "minSentences", n: 8, label: "eight sentences or more" },
+      { type: "containsAny", words: ["me indigna que", "me da rabia que", "no soporto que", "me molesta que"], label: "*me indigna que* or *no soporto que*" },
+      { type: "anyVerbInTense", tense: "presubj", label: "the subjunctive after it" },
+      { type: "containsAny", words: ["tranquilo", "tranquila", "no te preocupes", "no pasa nada", "se arregla"], label: "someone calms you down at the end" }
+    ],
+    model: "Hace dos meses que peleo con la empresa del gas. Me llegó una factura de trescientos mil pesos por un apartamento donde vivo solo. Llamé cinco veces. Cada vez me decían otra cosa. La última vez me colgaron. Me indigna que te traten así. Al final puse una queja por escrito. Mi vecina me dijo: \"Tranquilo, que esto se arregla. A mí me pasó lo mismo el año pasado.\""
+  },
+  pitfalls: [
+    "Under-reacting can sound cold in Spanish: let the feeling show, at the size the story deserves.",
+    "*Me indigna que te tratan así* keeps the ordinary form: *que te traten*."
   ]
 }
 

@@ -1,5 +1,5 @@
 /* Node test for the B1 teaching scripts (data/scripts/b1.js). Run: node tools/test-scripts-b1.js
- * Every lesson on the path in the first four B1 units (read from COURSE_BANDS.B1,
+ * Every lesson on the path in the first eight B1 units (read from COURSE_BANDS.B1,
  * not hard-coded) has a script; every script has the anatomy of the A1 scripts
  * (tools/test-scripts.js: 2 to 3 examples before a rule, 4 to 6 read-and-pick
  * items whose option lengths give nothing away, 3 to 5 typed items whose
@@ -22,7 +22,10 @@
  *     day of its ladder lesson: futuro, condicional, impsubj), so the future
  *     is legal from b1-u29's first day and the conditional from b1-u30's.
  *     Before its own lesson the conditional is allowed only as the chunks
- *     the course has taught since A2: podría-, debería-, gustaría-. */
+ *     the course has taught since A2: podría-, debería-, gustaría-;
+ *   - before the negative-command lesson (impneg, in b1-u32) no sentence
+ *     opens with a tú command in its no + subjunctive shape. No te preocupes
+ *     is the one exception: the course has taught it as a whole phrase since A2. */
 'use strict';
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
@@ -49,8 +52,8 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: the first four units from the start of B1
-const N_UNITS = 4;
+// ---- the lessons on the path: the first eight units from the start of B1
+const N_UNITS = 8;
 const b1 = window.COURSE_BANDS.B1;
 const units = [];
 for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
@@ -60,7 +63,7 @@ for (let i = b1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) 
 const UNITS = units.slice(0, N_UNITS);
 ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.B1, found ' + UNITS.length);
 const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 33, 'expected 33 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+ok(want.length === 67, 'expected 67 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
 ok(want[0] === 'gr-presente-subjuntivo-b1', 'the first B1 day should be the present subjunctive, found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
@@ -70,7 +73,8 @@ Object.keys(LATER_TENSES).forEach((tk) => { BUILT[tk] = DAY[tk]; ok(BUILT[tk] !=
 ok(DAY['futuro'] >= DAY[want[0]] && UNITS.indexOf(window.COURSE_DAYS[DAY['futuro']].unit) === 2, 'the future should open the third B1 unit');
 ok(UNITS.indexOf(window.COURSE_DAYS[DAY['condicional']].unit) === 3, 'the conditional should open the fourth B1 unit');
 want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(' and ')));
+Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(', ')));
+ok(DAY['impneg'] != null && UNITS.indexOf(window.COURSE_DAYS[DAY['impneg']].unit) === 5, 'the negative commands should sit in the sixth B1 unit');
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -116,6 +120,20 @@ function typed(at, t) {
   const st = M.startAttempt(item, { accents: 'lenient' });
   const a1 = M.submitAttempt(st, 'zzz'); const a2 = M.submitAttempt(a1.state, 'zzz');
   ok(a1.status === 'retry' && a2.status === 'revealed', at + ': one retry, then the answer');
+}
+
+// a sentence that opens with no + a tú subjunctive is a negative command: legal from the impneg day
+const NEG_CMD = /(^|[.!?¡¿,:]\s*)no ((?:me|te|se|lo|la|le|los|las|les|nos) )*([a-záéíóúñ]+)/gi;
+function negCommands(es, day) {
+  if (day >= DAY['impneg']) return [];
+  const out = [];
+  for (const m of plain(es).matchAll(NEG_CMD)) {
+    const phrase = m[0].replace(/^[^a-záéíóúñ]+/i, '').toLowerCase();
+    if (phrase === 'no te preocupes') continue;           // a whole phrase since A2
+    const an = E.analyzeToken(m[3].toLowerCase()) || [];
+    if (an.length && an.every((a) => a.tense === 'presubj' && a.person === 'tú')) out.push(phrase);
+  }
+  return out;
 }
 
 // forms the course has not built by this lesson's day
@@ -202,6 +220,8 @@ Object.keys(SC).forEach((id) => {
       ok(!VOSOTROS_VERB.test(plain(x.v).replace(/\b(país|maíz|raíz|oís)\b/gi, '')), x.p + ': a vosotros verb form: "' + x.v.slice(0, 60) + '"');
       const later = laterForms(x.v, day);
       ok(!later.length, x.p + ': a form the course builds later: ' + later.join(', '));
+      const neg = negCommands(x.v, day);
+      ok(!neg.length, x.p + ': a negative command before the impneg lesson: ' + neg.join(', '));
     } else {
       const J = /^hook\./.test(x.p.slice(id.length + 1)) ? JARGON : JARGON_B1;
       ok(!J.test(plain(x.v)), x.p + ': grammar jargon on screen: "' + (plain(x.v).match(J) || [''])[0] + '"');
