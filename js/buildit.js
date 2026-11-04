@@ -344,10 +344,11 @@ window.BuildIt = (function () {
   }
 
   /* "You know *necesitamos* and *pan*." Only single words the step reuses. */
+  function tr(es, en) { return (window.UI && window.UI.t) ? window.UI.t(es, en) : en; }
   function lead(step) {
     var f = (step.from || []).filter(function (x) { return x && words(x).length === 1 && !STOP.test(bareWord(x)) || x === 'no' || (x && /^(lo|la|los|las)$/.test(x)); })
       .map(function (x) { return '*' + x + '*'; });
-    var txt = f.length === 0 ? '' : 'You know ' + (f.length === 1 ? f[0] : f.slice(0, -1).join(', ') + ' and ' + f[f.length - 1]) + '.';
+    var txt = f.length === 0 ? '' : tr('Ya sabes ', 'You know ') + (f.length === 1 ? f[0] : f.slice(0, -1).join(', ') + tr(' y ', ' and ') + f[f.length - 1]) + '.';
     return txt;
   }
 
@@ -409,7 +410,7 @@ window.BuildIt = (function () {
     var t = norm(es);
     return !!t && load().some(function (l) { return norm(l.es) === t; });
   }
-  var DUP_MSG = 'That one is already in your script.';
+  function dupMsg() { return tr('Esa ya está en tu guion.', 'That one is already in your script.'); }
   function constraint(nodes, opts) {
     var spec = constraintBase(nodes);
     var cd = (opts && opts.canDo) || (nodes && nodes.forEach ? canDoFor(Array.from(nodes)) : '');
@@ -444,5 +445,5 @@ window.BuildIt = (function () {
   }
 
   return { prompts: prompts, lead: lead, load: load, add: add, edit: edit, has: has, cards: cards, count: count,
-    constraint: constraint, isDuplicate: isDuplicate, DUP_MSG: DUP_MSG, cardId: cardId, KEY: KEY };
+    constraint: constraint, isDuplicate: isDuplicate, get DUP_MSG() { return dupMsg(); }, cardId: cardId, KEY: KEY };
 })();

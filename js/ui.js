@@ -78,10 +78,11 @@ window.UI = (function () {
    * option runs it through optLabel; comparisons keep using the raw value. */
   var NOTHING = /^[\u2014\u2013-]$/;
   function isNothing(s) { return NOTHING.test(String(s == null ? '' : s).trim()); }
-  function optLabel(s) { return isNothing(s) ? '(nothing)' : s; }
-  var NOTHING_NOTE = 'nothing goes here';
+  function optLabel(s) { return isNothing(s) ? t('(nada)', '(nothing)') : s; }
+  function nothingNote() { return t('aquí no va nada', 'nothing goes here'); }
 
   return { el: el, clear: clear, accentBar: accentBar, nextBtn: nextBtn, t: t,
-    isNothing: isNothing, optLabel: optLabel, NOTHING_NOTE: NOTHING_NOTE,
+    isNothing: isNothing, optLabel: optLabel, 
+    get NOTHING_NOTE() { return nothingNote(); },
     seededRandom: seededRandom, shuffle: shuffle, sample: sample, pick: pick };
 })();

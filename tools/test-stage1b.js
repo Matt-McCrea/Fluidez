@@ -21,7 +21,37 @@ ok(LM.shown('el primer') === 'primer', 'primer');
 ok(LM.shown('la carne') === 'la carne', 'noun kept');
 ok(window.VOCAB_ADJECTIVES.every(a => window.VOCAB.some(w => w.es === a)), 'listed adjective missing from VOCAB');
 
+// the day's new-word draw never has more than two from one category
+{
+  const vm = require('vm'), R = path.join(__dirname, '..');
+  const store = {};
+  const sb = { console, Math, JSON, Object, Array, String, Number, isFinite, parseInt, Promise, setTimeout: f => { f(); return 0; },
+    location: { search: '', hash: '' },
+    localStorage: { getItem: k => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: k => { delete store[k]; } } };
+  sb.window = sb;
+  const order = ['greetings', 'people', 'food', 'numbers', 'time', 'colours'];
+  sb.Profile = { current: () => 'A1', params: () => ({ orderedVocab: true, newPerDay: 9, maxGate: 99 }), wordAllowed: () => true,
+    catRank: c => { const i = order.indexOf(c); return i < 0 ? 500 : i; }, tenses: () => ['presente'] };
+  sb.UI = {}; sb.ENGINE = { shuffle: a => a }; sb.Checker = {}; sb.ErrorLog = { cards: () => [] };
+  const ctx = vm.createContext(sb);
+  for (const f of ['js/lib.bundle.js', 'js/srs.js', 'data/vocab.js']) vm.runInContext(fs.readFileSync(path.join(R, f), 'utf8'), ctx);
+  vm.runInContext(fs.readFileSync(path.join(R, 'js/views/review.js'), 'utf8'), ctx);
+  const SR = sb.StageReview;
+  let days = 0, maxSeen = 0;
+  for (let d = 0; d < 12; d++) {
+    const fresh = SR.newToday({ mode: 'diaria', rng: Math.random });
+    fresh.forEach(c => sb.SRS.enrol(c.id));
+    const per = {};
+    fresh.forEach(c => { const k = c.cat || c.theme; if (k) per[k] = (per[k] || 0) + 1; });
+    const m = Math.max(0, ...Object.values(per));
+    maxSeen = Math.max(maxSeen, m); days += fresh.length ? 1 : 0;
+    ok(m <= 2, 'day ' + d + ' draws at most two words from one category (max ' + m + ')');
+  }
+  ok(days > 0, 'the draw produced words on at least one day');
+}
+
 // UI dash helper (pure parts, loaded with a stub document)
+window.Profile = { current: () => 'A1', term: (es, en) => en };
 global.document = { createElement: () => ({ style: {}, appendChild() {}, addEventListener() {} }) };
 new Function(fs.readFileSync(path.join(__dirname, '..', 'js/ui.js'), 'utf8')).call(global);
 const UI = window.UI;
@@ -29,4 +59,5 @@ ok(UI.optLabel('—') === '(nothing)' && UI.optLabel('-') === '(nothing)' && UI.
 ok(UI.isNothing('—') && !UI.isNothing('a'), 'isNothing');
 const dashItems = window.APPLY_ITEMS.filter(i => i.type === 'choice' && i.options.some(UI.isNothing));
 ok(dashItems.length >= 2, 'expected dash choice items');
+
 console.log('stage1b: ' + n + ' checks passed');

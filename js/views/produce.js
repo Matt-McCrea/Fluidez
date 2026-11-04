@@ -97,7 +97,7 @@ window.StageProduce = (function () {
   function runWrite(body, task, next) {
     var isPara = task.type === 'paragraph';
     body.appendChild(UI.el('h2', 'q-text', task.prompt));
-    if (task.hint) body.appendChild(UI.el('p', 'muted small', '💡 ' + task.hint));
+    if (task.hint) body.appendChild(UI.el('p', 'muted small', '💡 ' + UI.t('Pista', 'Hint') + ': ' + task.hint));
 
     var ta = UI.el('textarea', 'answer-area');
     ta.rows = isPara ? 7 : 3; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;

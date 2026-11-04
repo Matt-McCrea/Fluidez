@@ -249,9 +249,9 @@ window.LessonRun = (function () {
       var head = UI.el('div', 'stage-head');
       head.appendChild(UI.el('span', 'eyebrow', stage.icon + '  ' + stage.label));
       var right = UI.el('span', 'stage-count');
-      var b = UI.el('button', 'ghost-btn small', '✕ salir'); b.type = 'button'; b.style.marginTop = '0';
+      var b = UI.el('button', 'ghost-btn small', UI.t('✕ salir', '✕ leave')); b.type = 'button'; b.style.marginTop = '0';
       b.addEventListener('click', back);
-      right.appendChild(UI.el('span', null, 'Paso ' + (i + 1) + ' / ' + seq.length + '  '));
+      right.appendChild(UI.el('span', null, UI.t('Paso', 'Step') + ' ' + (i + 1) + ' / ' + seq.length + '  '));
       right.appendChild(b);
       head.appendChild(right);
       host.appendChild(head);

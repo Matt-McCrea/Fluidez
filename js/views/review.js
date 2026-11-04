@@ -260,7 +260,19 @@ window.StageReview = (function () {
       var prefer = (px || fTheme) ? function (it) {
         return (px && it.es && px.has(it.es) ? 2 : 0) + (fTheme && it.theme === fTheme ? 1 : 0);
       } : null;
-      out = S.batch(cands, 0, count, !pr.orderedVocab, prefer, ctx && ctx.rng);
+      /* At most two new words per category (theme when there is no category)
+       * a day, so a whole set such as family members never arrives at once.
+       * Order is unchanged (batch ranks the whole pool, same seeded shuffle);
+       * words over the cap are skipped and the day fills from the next
+       * categories in the same order. */
+      var ranked = S.batch(cands, 0, cands.length, !pr.orderedVocab, prefer, ctx && ctx.rng);
+      var perSet = {};
+      ranked.forEach(function (it) {
+        if (out.length >= count) return;
+        var k = it.cat || it.theme;
+        if (k) { if ((perSet[k] || 0) >= 2) return; perSet[k] = (perSet[k] || 0) + 1; }
+        out.push(it);
+      });
     }
     S.noteNew(out.length);
     if (ctx) ctx._newToday = out;

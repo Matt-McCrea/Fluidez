@@ -278,13 +278,15 @@ window.StageLearn = (function () {
   }
 
   var CAT_LABEL = {
-    greetings: 'Greetings & courtesy', people: 'People & family', food: 'Food & drink',
-    numbers: 'Numbers', time: 'Time & days', colors: 'Colours', places: 'Places',
-    home: 'Home & objects', body: 'The body', nature: 'Nature & weather', adjectives: 'Describing things',
-    travel: 'Travel & transport', weather: 'Weather', clothing: 'Clothing', animals: 'Animals',
-    questions: 'Question words', connectors: 'Linking words', common: 'Everyday words',
-    school: 'School', health: 'Health', shopping: 'Shopping', sports: 'Sports', kitchen: 'Kitchen', work: 'Work'
+    greetings: ['saludos y cortesía', 'Greetings & courtesy'], people: ['gente y familia', 'People & family'], food: ['comida y bebida', 'Food & drink'],
+    numbers: ['números', 'Numbers'], time: ['tiempo y días', 'Time & days'], colors: ['colores', 'Colours'], places: ['lugares', 'Places'],
+    home: ['casa y objetos', 'Home & objects'], body: ['el cuerpo', 'The body'], nature: ['naturaleza y clima', 'Nature & weather'], adjectives: ['describir cosas', 'Describing things'],
+    travel: ['viajes y transporte', 'Travel & transport'], weather: ['el clima', 'Weather'], clothing: ['ropa', 'Clothing'], animals: ['animales', 'Animals'],
+    questions: ['palabras para preguntar', 'Question words'], connectors: ['conectores', 'Linking words'], common: ['palabras de todos los días', 'Everyday words'],
+    school: ['escuela', 'School'], health: ['salud', 'Health'], shopping: ['compras', 'Shopping'], sports: ['deportes', 'Sports'], kitchen: ['cocina', 'Kitchen'], work: ['trabajo', 'Work']
   };
+  function catLabel(c) { var p = CAT_LABEL[c]; return p ? UI.t(p[0], p[1]) : c; }
+
   function listTable(rows) {
     return '<table class="contrast-table"><tbody>' + rows.map(function (r) {
       return '<tr><td class="es">' + r[0] + '</td><td>' + r[1] + '</td></tr>';
@@ -812,7 +814,7 @@ window.StageLearn = (function () {
       return w || { es: es, en: '' };
     });
     var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, UI.t('Palabras nuevas', 'New words') + ' · ' + (CAT_LABEL[f.cat] || f.cat)));
+    wrap.appendChild(UI.el('h1', null, UI.t('Palabras nuevas', 'New words') + ' · ' + catLabel(f.cat)));
     wrap.appendChild(UI.el('p', 'muted', UI.t('Aprende primero el significado. Entran a tu repaso de una vez.', 'Learn these by meaning first. They join your review deck straight away.')));
     wrap.appendChild(UI.el('div', null, listTable(words.map(function (w) { return [w.es, w.en]; }))));
     words.forEach(function (w) { S.enrol('v:' + w.es + ':meaning'); });
