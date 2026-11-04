@@ -175,7 +175,7 @@ window.Games = (function () {
      * wrong answer is wrong in THAT sentence rather than wrong in general —
      * which is the whole distinction being taught. */
     { key: 'unouotro', name: 'Uno u otro', rule: 'ser o estar, por o para', icon: '⚔️',
-      hue: '#3f8f7a', secs: 60, kind: 'contrast',
+      hue: '#3f8f7a', secs: 60, kind: 'contrast', deck: true,
       blurb: 'Una frase, una palabra fuera, dos candidatas. Las dos son español correcto.' },
 
     /* RELÁMPAGO. Exposure only: it draws from cards the learner already owns,
@@ -197,9 +197,10 @@ window.Games = (function () {
   // point offering to turn audio back on where there was never any.
   function hasVoice() { return !!(window.Speak && window.Speak.available()); }
 
-  function start(g, extra) {
+  function start(g, extra, classic) {
     var h = roundHost();
     clear(h);
+    if (g.deck && !classic) return runUno(h, g);
     if (g.owned) return runRelampago(h, g);
     if (g.custom) return runEmparejar(h, g);
     var cfg = {
@@ -222,7 +223,7 @@ window.Games = (function () {
    * have never played, then the one you have played least. It says nothing at
    * all when it has nothing true to say. */
   function recommend() {
-    var open = GAMES.filter(playable).filter(function (g) { return !g.owned; });
+    var open = GAMES.filter(playable).filter(function (g) { return !g.owned && !g.deck; });
     var close = null, closest = 0;
     open.forEach(function (g) {
       var n = GS.nearMissScore(g.key);
@@ -1150,6 +1151,196 @@ window.Games = (function () {
     deal();
     timer = setInterval(tick, 200);
     tick();
+  }
+
+  /* =========================================================================
+   * UNO U OTRO. One contrast per deck, chosen by the learner from those whose
+   * every side they have met. Ten items balanced across the sides; an 8 second
+   * clock only where the answer is decided by a local cue (decides local or
+   * synonym), none where it turns on discourse or meaning. A wrong answer shows
+   * its reason in one line and waits for a tap. Score is rights, the best is
+   * kept per deck under uno:<contrastId>. Nothing is graded into the review
+   * schedule: this game never calls SRS.grade. If the contrast store cannot be
+   * loaded the old authored ser/estar and por/para round plays instead.
+   * ========================================================================= */
+  var UNO_N = 10, UNO_MS = 8000;
+
+  function unoKnown() {
+    try {
+      var prog = JSON.parse(localStorage.getItem('fluidez.progress')) || {};
+      var band = (window.Profile && window.Profile.current && window.Profile.current()) || 'A1';
+      var di = ((window.Curriculum && window.Curriculum.startOf) ? window.Curriculum.startOf(band) : 0) + (prog.beginnerDay || 0);
+      return window.Known && window.Known.forLearner ? window.Known.forLearner(prog, di) : new Set();
+    } catch (e) { return new Set(); }
+  }
+
+  function runUno(h, g) {
+    var C = window.Contrasts;
+    if (!C || !C.load) return start(g, null, true);
+    clear(h);
+    var wait = el('div', 'g-over');
+    wait.appendChild(el('p', 'g-over-verdict', 'Un momento'));
+    h.appendChild(wait);
+    C.load(function (ok) {
+      if (!ok) return start(g, null, true);
+      unoChooser(h, g, unoKnown());
+    });
+  }
+
+  function unoChooser(h, g, known) {
+    clear(h);
+    var decks = GI.contrastDecks(known);
+    var page = el('div', 'g-over g-uno-pick');
+    page.style.setProperty('--game', g.hue);
+    page.appendChild(el('div', 'g-over-eyebrow', g.name));
+    if (decks.length < 1) {
+      page.appendChild(el('p', 'g-over-verdict', 'Come back when you have met both sides of a contrast'));
+    } else {
+      page.appendChild(el('p', 'g-over-verdict', 'Pick a contrast'));
+      var list = el('div', 'g-uno-decks');
+      decks.forEach(function (d) {
+        var b = el('button', 'g-uno-deck');
+        b.type = 'button';
+        b.appendChild(el('span', 'g-uno-deck-name', d.short));
+        var best = GS.pb('uno:' + d.id);
+        b.appendChild(el('span', 'g-uno-deck-meta',
+          d.count + ' items' + (d.timed ? ', timed' : '') + (best ? ', best ' + best : '')));
+        b.addEventListener('click', function () { unoRound(h, g, known, d); });
+        list.appendChild(b);
+      });
+      page.appendChild(list);
+    }
+    var bk = el('button', 'g-back', 'Back');
+    bk.type = 'button';
+    bk.addEventListener('click', backToList);
+    page.appendChild(bk);
+    h.appendChild(page);
+  }
+
+  function unoRound(h, g, known, deck) {
+    clear(h);
+    var items = GI.contrastRound(deck.id, UNO_N, Math.random, {}, known);
+    if (!items.length) return unoChooser(h, g, known);
+    var idx = -1, rights = 0, locked = false, ended = false, timer = null, endAt = 0, item = null;
+
+    var shell = el('div', 'g-shell g-uno');
+    shell.dataset.state = 'play';
+    shell.style.setProperty('--game', g.hue);
+    var top = el('div', 'g-top');
+    top.appendChild(el('span', 'g-name', deck.short));
+    var scoreEl = el('span', 'g-score', '0');
+    var exit = el('button', 'g-exit', '✕');
+    exit.type = 'button';
+    exit.setAttribute('aria-label', 'Exit');
+    exit.addEventListener('click', function () { stop(); unoChooser(h, g, known); });
+    top.appendChild(el('span', 'g-spacer'));
+    top.appendChild(scoreEl);
+    top.appendChild(exit);
+    shell.appendChild(top);
+
+    var clock = null, fill = null;
+    if (deck.timed) {
+      clock = el('div', 'g-clock');
+      fill = el('div', 'g-clock-fill');
+      clock.appendChild(fill);
+      shell.appendChild(clock);
+    }
+    var countEl = el('div', 'g-rl-hint');
+    var promptEl = el('div', 'g-prompt');
+    var hintEl = el('div', 'g-rl-hint');
+    var optsEl = el('div', 'g-options');
+    var whyEl = el('div', 'g-uno-why');
+    var nextBtn = el('button', 'g-again g-uno-next', 'Next');
+    nextBtn.type = 'button';
+    nextBtn.hidden = true;
+    [countEl, promptEl, hintEl, optsEl, whyEl, nextBtn].forEach(function (n) { shell.appendChild(n); });
+    h.appendChild(shell);
+
+    function stop() {
+      ended = true;
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+    function tick() {
+      if (!deck.timed || locked || ended) return;
+      var left = Math.max(0, endAt - Date.now());
+      fill.style.transform = 'scaleX(' + (left / UNO_MS) + ')';
+      clock.dataset.urgent = left <= 3000 ? '1' : '';
+      if (left <= 0) resolve(-1, null);
+    }
+    function deal() {
+      idx++;
+      if (idx >= items.length) return finish();
+      item = items[idx];
+      locked = false;
+      countEl.textContent = (idx + 1) + ' of ' + items.length;
+      promptEl.textContent = item.es;
+      hintEl.textContent = item.en || '';
+      whyEl.textContent = '';
+      nextBtn.hidden = true;
+      clear(optsEl);
+      item.options.forEach(function (o, i) {
+        var b = el('button', 'g-opt', o);
+        b.type = 'button';
+        b.addEventListener('click', function () { resolve(i, b); });
+        optsEl.appendChild(b);
+      });
+      if (deck.timed) { endAt = Date.now() + UNO_MS; tick(); }
+    }
+    function resolve(i, btn) {
+      if (locked || ended) return;
+      locked = true;
+      var good = i >= 0 && (i === item.answer || item.both);
+      var kids = optsEl.children, k;
+      for (k = 0; k < kids.length; k++) {
+        kids[k].disabled = true;
+        if ((k === item.answer || item.both) && !(good && k === i)) kids[k].classList.add('right');
+      }
+      if (btn) btn.classList.add(good ? 'right' : 'wrong');
+      if (good) rights++;
+      scoreEl.textContent = String(rights);
+      if (good && !item.both) {
+        setTimeout(function () { if (!ended) deal(); }, 450);
+        return;
+      }
+      whyEl.textContent = (item.both ? 'Either works here. ' : (i < 0 ? 'Time. ' : '')) + item.why;
+      nextBtn.hidden = false;
+      nextBtn.textContent = idx + 1 >= items.length ? 'Finish' : 'Next';
+      nextBtn.focus();
+    }
+    nextBtn.addEventListener('click', function () { if (locked && !ended) deal(); });
+
+    function finish() {
+      if (ended) return;
+      stop();
+      var res = GS.record('uno:' + deck.id, { score: rights, combo: 0, run: 0, band: 'A1',
+                                              seen: items.length, right: rights, ms: 0 });
+      var best = res.isPb && rights > 0 && res.prevPb > 0;
+      var text;
+      if (best) text = 'New best on ' + deck.short + ': ' + rights + '.';
+      else if (rights === items.length) text = 'A clean deck.';
+      else text = numWord(rights) + ' of ' + numWord(items.length).toLowerCase() + ' on ' + deck.short + '.';
+      clear(h);
+      var over = el('div', 'g-over');
+      over.style.setProperty('--game', g.hue);
+      over.dataset.pb = best ? '1' : '';
+      over.appendChild(el('div', 'g-over-eyebrow', g.name));
+      over.appendChild(el('div', 'g-over-score', String(rights)));
+      over.appendChild(el('div', 'g-over-verdict' + (best ? ' pb' : ''), text));
+      var again = el('button', 'g-again', 'Again');
+      again.type = 'button';
+      again.addEventListener('click', function () { unoRound(h, g, known, deck); });
+      over.appendChild(again);
+      var back = el('button', 'g-back', 'Back');
+      back.type = 'button';
+      back.addEventListener('click', function () { unoChooser(h, g, known); });
+      over.appendChild(back);
+      h.appendChild(over);
+      setTimeout(function () { again.focus(); }, 30);
+    }
+
+    deal();
+    if (deck.timed) timer = setInterval(tick, 200);
   }
 
   return { render: render, renderTab: renderTab, open: open, openRound: openRound,

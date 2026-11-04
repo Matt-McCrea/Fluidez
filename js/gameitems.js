@@ -1410,12 +1410,97 @@ window.GameItems = (function () {
     return null;
   }
 
+  /* ---- UNO U OTRO, from the contrast store --------------------------------
+   * One contrast per deck: the learner picks which, from those whose every
+   * side they have met (Contrasts.mixable). Items come from window.CONTRAST_ITEMS
+   * and are dealt balanced across the sides, lowest rung first, never twice in
+   * a round. Nothing here touches the review schedule.
+   *
+   * BOTH-RIGHT. The data has no field for an item where either option is fine,
+   * so the `why` is read: it must say, in so many words, that both options (or
+   * either one) work. The looser reading ("both" anywhere) caught eight items
+   * and seven of them were false positives ("Both halves stay true"), so the
+   * pattern asks for the verb of acceptance. Today it catches none: the one near miss ("either is
+   * fine", on da igual) is about the speaker's preference, not the options. */
+  var BOTH_RE = /\b(both|ambas|ambos) (of them |options |forms |versions |ways )?(work|works|are fine|are correct|are right|are possible|are acceptable|fit|fits|sound|sounds|are good|son correctas?|son v[aá]lidas?|sirven|valen)\b|\beither (option|form|word|choice|answer) (works|is fine|is right|is correct)\b|\b(also|too) works\b/i;
+  function bothRight(it) {
+    return !!(it && it.options && it.options.length === 2 && BOTH_RE.test(String(it.why || '')));
+  }
+  function unoClean(s) { return String(s || '').replace(/\s*[–—]\s*/g, ', ').replace(/\s+-\s+/g, ', '); }
+  function unoShort(title) {
+    var t = String(title || '').replace(/\?+\s*$/, '');
+    var i = t.indexOf(':');
+    if (i !== -1 && t.length - i - 1 <= 40 && t.length - i - 1 > 3) t = t.slice(i + 1).trim();
+    return t.replace(/\s+vs\.?\s+/gi, ' or ');
+  }
+  function unoItems(c) {
+    var all = window.CONTRAST_ITEMS || [], out = [];
+    for (var i = 0; i < all.length; i++) {
+      var it = all[i];
+      if ((it.x === c.id || it.x === c.node) && it.d != null && it.options && it.options.length >= 2) out.push(it);
+    }
+    return out;
+  }
+  function contrastDecks(known) {
+    var C = window.Contrasts;
+    if (!C || !C.ready || !C.ready() || !known) return [];
+    return C.mixable(known).map(function (c) {
+      var n = unoItems(c).length;
+      return { id: c.id, label: c.title, short: unoShort(c.title), count: n, decides: c.decides,
+               timed: c.decides === 'local' || c.decides === 'synonym' };
+    }).filter(function (d) { return d.count > 0; });
+  }
+  function gapped(it) {
+    var g = it.gap;
+    if (!g || g.length < 2) return it.es;
+    return it.es.slice(0, g[0]) + '___' + it.es.slice(g[1]);
+  }
+  /* known is optional: given, it also drops items whose g: and x: requires the
+   * learner has not met. `used` maps item ids and sentences already dealt. */
+  function contrastRound(contrastId, n, rng, used, known) {
+    var C = (window.CONTRASTS || []).filter(function (c) { return c.id === contrastId; })[0];
+    if (!C) return [];
+    used = used || {};
+    var pool = unoItems(C).filter(function (it) {
+      if (known && !(it.r || []).every(function (id) { return !/^[gx]:/.test(id) || known.has(id); })) return false;
+      return !used[it.id] && !used['es:' + it.es];
+    });
+    var queues = {}, order = [];
+    E.shuffle(pool.slice()).forEach(function (it) {
+      if (!queues[it.side]) { queues[it.side] = []; order.push(it.side); }
+      queues[it.side].push(it);
+    });
+    order.forEach(function (s) { queues[s].sort(function (a, b) { return a.rung - b.rung; }); });   // stable: ties stay shuffled
+    order = E.shuffle(order.slice());
+    var out = [], guard = 0;
+    while (out.length < n && guard++ < 4000) {
+      var progressed = false;
+      for (var k = 0; k < order.length && out.length < n; k++) {
+        var q = queues[order[k]], it = null;
+        while (q.length && !it) { var c = q.shift(); if (!used[c.id] && !used['es:' + c.es]) it = c; }
+        if (!it) continue;
+        used[it.id] = 1; used['es:' + it.es] = 1;
+        var right = it.options[it.answer], opts = E.shuffle(it.options.slice());
+        out.push({ id: it.id, es: gapped(it), full: it.es, en: it.en, options: opts,
+                   answer: opts.indexOf(right), answerText: right, why: unoClean(it.why),
+                   both: bothRight(it), decides: C.decides, side: it.side, rung: it.rung });
+        progressed = true;
+      }
+      if (!progressed) break;
+    }
+    return out;
+  }
+  function bothRightCount() {
+    return (window.CONTRAST_ITEMS || []).filter(bothRight).length;
+  }
+
   return {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
     setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, missDeck: missDeck,
     conjPrompt: conjPrompt,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
-    owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN
+    owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,
+    contrastDecks: contrastDecks, contrastRound: contrastRound, bothRight: bothRight, bothRightCount: bothRightCount
   };
 })();
