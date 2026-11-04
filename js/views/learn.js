@@ -427,7 +427,7 @@ window.StageLearn = (function () {
    * its band files, so the lesson page costs nothing on a day without one. If
    * it has not arrived when the lesson is due (offline, a slow link, a 404),
    * the old lesson is taught exactly as before. */
-  var SCRIPT_BANDS = { A1: 1 };       // band files that exist
+  var SCRIPT_BANDS = { A1: 1, A2: 1, B1: 1, B2: 1, C1: 1 };       // band files that exist
   var scriptWaiters = {}, scriptFailed = {};
   var SCRIPT_WAIT_MS = 2500;
 
