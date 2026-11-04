@@ -1075,3 +1075,15 @@ h1, h2, .unit-title, .tf-value { text-wrap:balance; }
 .lib-harder { color:var(--warn); }
 .lib-hook { font-style:italic; font-size:1.05rem; }
 .topic-chip.on { background:var(--accent); color:#fff; }
+
+/* Progreso: headline numbers and the week map */
+.headlines { margin:8px 0 12px; }
+.headline { padding:2px 0; }
+.week-map { margin:8px 0 14px; }
+.week-row { display:flex; gap:6px; margin:6px 0; overflow-x:auto; }
+.week-day { flex:1 0 54px; padding:6px 4px; text-align:center; border-radius:10px; background:var(--panel-2); border:1px solid transparent; }
+.week-day.done { background:var(--accent); color:#fff; }
+.week-day.today { border-color:var(--accent); font-weight:600; }
+.week-day.ahead { opacity:.7; }
+.week-n { font-size:1.05em; }
+.week-k { font-size:.72em; }

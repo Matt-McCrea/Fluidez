@@ -212,6 +212,54 @@ window.Drills = (function () {
     host.appendChild(wrap);
   }
 
+  // ---- weak spots by form ----------------------------------------------------
+  // Items missed twice or more in the last 30 days (counted off the review
+  // log SRS.grade writes), grouped by the FORM they exercise rather than by
+  // item: a verb tense, a contrast, or plain words. The log has no person, and
+  // a vt: id names verb and tense only, so verb groups are per tense.
+  var WEAK_DAYS = 30, WEAK_MIN = 2, WEAK_MAX = 10;
+  var TENSE_PLAIN = { presente: 'present', preterito: 'preterite', imperfecto: 'imperfect', perfecto: 'present perfect',
+    plusc: 'past perfect', futuro: 'future', futperf: 'future perfect', condicional: 'conditional', condperf: 'conditional perfect',
+    presubj: 'present subjunctive', perfsubj: 'perfect subjunctive', impsubj: 'imperfect subjunctive',
+    imperativo: 'commands', impneg: 'negative commands' };
+  function missCounts() {
+    var log = []; try { log = JSON.parse(localStorage.getItem(S.reviewLogKey)) || []; } catch (e) {}
+    var from = S.today() - WEAK_DAYS, out = {};
+    log.forEach(function (r) { if (r && r.day >= from && !r.ok) out[r.id] = (out[r.id] || 0) + 1; });
+    return out;
+  }
+  function formOf(id) {
+    var m = /^vt:[^:]+:(.+)$/.exec(id);
+    if (m) return { key: 'vt:' + m[1], label: 'verbs: ' + (TENSE_PLAIN[m[1]] || m[1]) };
+    m = /^(?:ac|x):(?:x:)?(.+)$/.exec(id);
+    if (m) {
+      var slug = m[1];
+      var named = [[/ser-estar|ser-event/, 'ser or estar'], [/por-para/, 'por or para'], [/pret.*imp|imp.*pret/, 'preterite or imperfect'],
+                   [/subj|indic/, 'subjunctive or indicative']].filter(function (n) { return n[0].test(slug); })[0];
+      var lbl = named ? named[1] : slug.replace(/-/g, ' ');
+      return { key: 'x:' + lbl, label: lbl };
+    }
+    return { key: 'words', label: 'words' };
+  }
+  // pool: master-pool items (with .id); returns [{key, label, items, n}] biggest first.
+  function weakGroups(pool) {
+    var miss = missCounts(), groups = {}, order = [];
+    (pool || []).forEach(function (it) {
+      var strong = (miss[it.id] || 0) >= WEAK_MIN;
+      if (!strong) return;
+      var f = formOf(it.id);
+      if (!groups[f.key]) { groups[f.key] = { key: f.key, label: f.label, items: [], n: 0 }; order.push(f.key); }
+      groups[f.key].items.push(it);
+    });
+    return order.map(function (k) {
+      var g = groups[k];
+      g.items.sort(function (a, b) { return miss[b.id] - miss[a.id]; });
+      g.n = g.items.length;
+      g.items = g.items.slice(0, WEAK_MAX);
+      return g;
+    }).sort(function (a, b) { return b.n - a.n; });
+  }
+
   // ---- entry points injected into Practicar --------------------------------
   function renderSection(container) {
     var list = UI.el('div', 'mas-list');
@@ -226,5 +274,5 @@ window.Drills = (function () {
     container.appendChild(list);
   }
 
-  return { renderSection: renderSection };
+  return { renderSection: renderSection, weakGroups: weakGroups };
 })();

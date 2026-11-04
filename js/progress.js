@@ -10,7 +10,6 @@ window.Progress = (function () {
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
   function loadSrs() { try { return JSON.parse(localStorage.getItem('fluidez.srs')) || {}; } catch (e) { return {}; } }
-  var INTERVAL_LABELS = ['new', '1d', '2d', '4d', '8d', '16d', '32d', '64d+'];
 
   function dayNumOf(d) { return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000); }
 
@@ -75,6 +74,83 @@ window.Progress = (function () {
    * syllabus entries. Nothing displayed them anywhere except at the top of
    * the lesson they belong to. Studied lessons, newest first, in the band's
    * own colour, is the same data saying something true. */
+  /* ---- headline numbers ---------------------------------------------------
+   * The review log has {id, day, ok, gap} and no "typed" flag, and review.js
+   * is not ours to change, so typed Spanish is derived from the id pattern:
+   * word production cards (:form), conjugation cards (vt:) and k: cards. */
+  var TYPED_RE = /(:form$|^vt:|^k:)/;
+  function loadLog() { try { var l = JSON.parse(localStorage.getItem('fluidez.reviewlog')); return Array.isArray(l) ? l : []; } catch (e) { return []; } }
+  function headlines(p, log) {
+    var td = S.today(), out = [];
+    var late = log.filter(function (r) { return r && r.gap != null && r.gap >= 7; });
+    var kept = late.filter(function (r) { return r.ok; }).length;
+    out.push('Remembered after a week: ' + (late.length >= 20 ? Math.round(100 * kept / late.length) + '%' : 'not enough yet'));
+    out.push('Words read: ' + (p.wordsRead || 0));
+    var todays = log.filter(function (r) { return r && r.day === td; });
+    out.push('Right today: ' + todays.filter(function (r) { return r.ok; }).length + ' of ' + todays.length);
+    var days = {}; (p.history || []).forEach(function (d) { if (d > td - 30 && d <= td) days[d] = 1; });
+    out.push('Days this month: ' + Object.keys(days).length + ' of 30');
+    var wk = log.filter(function (r) { return r && r.day > td - 7; });
+    var typed = wk.filter(function (r) { return TYPED_RE.test(String(r.id)); }).length;
+    out.push('Production share this week: ' + (wk.length ? Math.round(100 * typed / wk.length) + '%' : 'no reviews yet'));
+    return out;
+  }
+
+  /* ---- the week map -------------------------------------------------------
+   * One unit's days in a row. A1 and A2 walk the course by beginnerDay (an
+   * index into the band's slice); from B1 the path is the studied lessons, so
+   * the unit shown is the one holding the next lesson not yet studied. */
+  function dayKind(d) {
+    if (d.lesson) return /^task-/.test(d.lesson) ? 'task' : 'lesson';
+    if (d.verbs) return 'verbs';
+    return 'practice';
+  }
+  var KIND_LABEL = { lesson: 'Lesson', verbs: 'Verbs', practice: 'Practice', task: 'Task' };
+  function weekMap(p, here) {
+    var UNITS = window.COURSE_UNITS || {}, DAYS = window.COURSE_DAYS || [], studied = p.studied || {};
+    var all = Object.keys(UNITS).map(function (k) { return UNITS[k]; })
+      .filter(function (u) { return !u.optional && u.from != null; }).sort(function (a, b) { return a.from - b.from; });
+    if (!all.length) return null;
+    var beginner = here === 'A1' || here === 'A2';
+    var abs = (window.COURSE_BANDS && window.COURSE_BANDS[here] || 0) + (p.beginnerDay || 0);
+    var u = null;
+    if (beginner) {
+      u = all.filter(function (x) { return abs >= x.from && abs < x.from + x.length; })[0];
+    } else {
+      var start = window.COURSE_BANDS && window.COURSE_BANDS[here] || 0;
+      u = all.filter(function (x) {
+        return x.from >= start && DAYS.slice(x.from, x.from + x.length).some(function (d) { return d.lesson && !studied[d.lesson]; });
+      })[0];
+    }
+    if (!u) u = all[all.length - 1];
+    var days = DAYS.slice(u.from, u.from + u.length);
+    var states = days.map(function (d, i) {
+      if (beginner) return u.from + i < abs ? 'done' : (u.from + i === abs ? 'today' : 'ahead');
+      if (d.lesson) return studied[d.lesson] ? 'done' : 'ahead';
+      return days.slice(i + 1).some(function (e) { return e.lesson && studied[e.lesson]; }) ? 'done' : 'ahead';
+    });
+    if (!beginner) { var f = states.indexOf('ahead'); if (f !== -1) states[f] = 'today'; }
+    var inBand = all.filter(function (x) { return x.band === u.band; });
+    var box = UI.el('div', 'week-map');
+    box.appendChild(UI.el('div', 'week-unit muted small',
+      'Unit ' + (inBand.indexOf(u) + 1) + ' of ' + inBand.length + ' in ' + u.band + ': ' + u.title));
+    var row = UI.el('div', 'week-row');
+    days.forEach(function (d, i) {
+      var k = dayKind(d);
+      var c = UI.el('div', 'week-day ' + states[i]);
+      c.title = KIND_LABEL[k] + ', ' + (states[i] === 'done' ? 'done' : states[i] === 'today' ? 'today' : 'ahead');
+      c.appendChild(UI.el('div', 'week-n', String(i + 1)));
+      c.appendChild(UI.el('div', 'week-k', KIND_LABEL[k]));
+      row.appendChild(c);
+    });
+    box.appendChild(row);
+    if (u.goal) box.appendChild(UI.el('div', 'week-goal muted small', u.goal));
+    return box;
+  }
+
+  // FSRS stability buckets, in days: under a week, 1 to 4 weeks, 1 to 3 months, over 3 months.
+  var MEM_BUCKETS = [['Under 1 week', 0, 7], ['1 to 4 weeks', 7, 28], ['1 to 3 months', 28, 90], ['Over 3 months', 90, Infinity]];
+
   function canDoPanel(p) {
     var studied = p.studied || {};
     var lessons = (window.ALL_LESSONS || window.GRAMMAR_LESSONS || [])
@@ -138,18 +214,13 @@ window.Progress = (function () {
     tiles.appendChild(tile(due, 'due today'));
     wrap.appendChild(tiles);
 
-    /* Two honest numbers. Delayed retention: of the reviews of an item last
-     * seen a week or more earlier, the share answered right (js/srs.js logs
-     * each answer as {id, day, ok, gap}). Words read: Spanish words in the
-     * passages marked read. */
-    var log = []; try { log = JSON.parse(localStorage.getItem('fluidez.reviewlog')) || []; } catch (e) {}
-    var late = log.filter(function (r) { return r && r.gap != null && r.gap >= 7; });
-    var kept = late.filter(function (r) { return r.ok; }).length;
-    var nums = UI.el('div', 'muted');
-    nums.appendChild(UI.el('div', null, 'Remembered after a week: ' +
-      (late.length ? Math.round(100 * kept / late.length) + '%' : 'not enough reviews yet')));
-    nums.appendChild(UI.el('div', null, 'Words read: ' + (p.wordsRead || 0)));
+    var nums = UI.el('div', 'headlines');
+    headlines(p, loadLog()).forEach(function (t) { nums.appendChild(UI.el('div', 'headline', t)); });
     wrap.appendChild(nums);
+
+    var hereBand = (window.Profile && window.Profile.params().cefr) || 'A1';
+    var wm = weekMap(p, hereBand);
+    if (wm) wrap.appendChild(wm);
 
     // ---- what you can now do ----
     wrap.appendChild(canDoPanel(p));
@@ -243,7 +314,8 @@ window.Progress = (function () {
         var uDet = UI.el('details', 'unit-det');
         uDet.appendChild(UI.el('summary', null,
           '<span class="unit-det-title">' + u.title + '</span>' +
-          '<span class="unit-det-n muted">' + uDone + '/' + ids.length + '</span>'));
+          '<span class="unit-det-n muted">' + (window.UnitCheck && window.UnitCheck.isDone(u) ? '✓ ' : '') +
+          uDone + ' of ' + ids.length + ' lessons</span>'));
         if (u.goal) uDet.appendChild(UI.el('div', 'unit-det-goal muted', u.goal));
 
         // ---- prove it, or just say you know it ----
@@ -357,25 +429,30 @@ window.Progress = (function () {
     rd.appendChild(rlist); wrap.appendChild(rd);
 
 
-    // ---- SRS box distribution (single-hue magnitude bars). A card's box is
-    // read off its FSRS stability by the old interval table; 64 days and up share the last bar. ----
+    // ---- memory: FSRS stability in four buckets ----
     wrap.appendChild(UI.el('h3', null, 'How well you remember'));
-    var boxes = [0, 0, 0, 0, 0, 0, 0, 0];
-    ids.forEach(function (k) { var b = srs[k].box || 0; boxes[Math.min(b, 7)]++; });
-    var maxBox = Math.max(1, Math.max.apply(null, boxes));
+    var counts = [0, 0, 0, 0], inReview = 0, tomorrow = S.today() + 1, dueTom = 0;
+    ids.forEach(function (k) {
+      var it = srs[k]; if (!it || !it.fs || !(it.reps > 0)) return;
+      inReview++;
+      if (it.due === tomorrow) dueTom++;
+      var st = it.fs.stability || 0;
+      for (var i = 0; i < MEM_BUCKETS.length; i++) if (st >= MEM_BUCKETS[i][1] && st < MEM_BUCKETS[i][2]) { counts[i]++; break; }
+    });
+    var maxB = Math.max(1, Math.max.apply(null, counts));
     var dist = UI.el('div', 'box-dist');
-    boxes.forEach(function (n, b) {
+    counts.forEach(function (n, b) {
       var rowb = UI.el('div', 'box-row');
-      rowb.appendChild(UI.el('span', 'box-lbl muted', INTERVAL_LABELS[b]));
+      rowb.appendChild(UI.el('span', 'box-lbl muted', MEM_BUCKETS[b][0]));
       var track = UI.el('div', 'box-track');
-      var fill = UI.el('div', 'box-fill'); fill.style.width = Math.round(100 * n / maxBox) + '%';
+      var fill = UI.el('div', 'box-fill'); fill.style.width = Math.round(100 * n / maxB) + '%';
       track.appendChild(fill);
       rowb.appendChild(track);
       rowb.appendChild(UI.el('span', 'box-n muted', String(n)));
       dist.appendChild(rowb);
     });
     wrap.appendChild(dist);
-    wrap.appendChild(UI.el('p', 'muted small', 'Cards move right as you keep getting them right. “new” cards are fragile, “64d” cards are close to permanent.'));
+    wrap.appendChild(UI.el('p', 'muted small', inReview + ' items in review, ' + dueTom + ' due tomorrow.'));
 
     // ---- activity heatmap (10 weeks, single-hue presence) ----
     wrap.appendChild(UI.el('h3', null, 'Activity'));

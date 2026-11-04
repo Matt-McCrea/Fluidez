@@ -367,7 +367,37 @@ window.Selector = (function () {
     var seen = {}, cards = [];
     errCards.concat(leechCards).forEach(function (c) { if (!seen[c.id]) { seen[c.id] = 1; cards.push(c); } });
     var cap = window.Profile ? window.Profile.reviewCap() : 15;
-    runDeck(host, 'Puntos débiles', cards.slice(0, cap), 'Nothing flagged yet. Mistakes and repeated misses will show up here.');
+    var groups = (window.Drills && window.Drills.weakGroups) ? window.Drills.weakGroups(pool) : [];
+    if (!groups.length) {
+      runDeck(host, 'Puntos débiles', cards.slice(0, cap), 'Nothing flagged yet. Mistakes and repeated misses will show up here.');
+      return;
+    }
+    /* By form: items missed twice or more in the last 30 days, one drill per
+     * form. "Everything" keeps the older path (error log plus leeches). */
+    UI.clear(host);
+    var wrap = UI.el('div', 'panel');
+    var head = UI.el('div', 'stage-head');
+    head.appendChild(UI.el('span', 'eyebrow', 'Puntos débiles'));
+    var exitB = UI.el('button', 'ghost-btn small', '✕ salir'); exitB.type = 'button'; exitB.style.marginTop = '0';
+    exitB.addEventListener('click', backToTab);
+    head.appendChild(exitB);
+    wrap.appendChild(head);
+    wrap.appendChild(UI.el('p', 'muted small', 'Missed twice or more in the last 30 days, grouped by what they practise.'));
+    var chips = UI.el('div', 'chip-row');
+    groups.forEach(function (g) {
+      var c = UI.el('button', 'topic-chip', g.label + ' · ' + Math.min(g.n, g.items.length)); c.type = 'button';
+      c.addEventListener('click', function () {
+        runDeck(host, 'Puntos débiles · ' + g.label, g.items.map(toCard), 'Nothing flagged yet.');
+      });
+      chips.appendChild(c);
+    });
+    if (cards.length) {
+      var all = UI.el('button', 'topic-chip', 'Mistakes and repeated misses · ' + Math.min(cards.length, cap)); all.type = 'button';
+      all.addEventListener('click', function () { runDeck(host, 'Puntos débiles', cards.slice(0, cap), 'Nothing flagged yet.'); });
+      chips.appendChild(all);
+    }
+    wrap.appendChild(chips);
+    host.appendChild(wrap);
   }
 
   // ---- Siguiente paso -------------------------------------------------------

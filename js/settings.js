@@ -185,7 +185,7 @@ window.Settings = (function () {
     if (window.Profile) {
       wrap.appendChild(UI.el('h3', null, UI.t('Tope de repaso', 'Review cap')));
       wrap.appendChild(UI.el('p', 'muted',
-        'The most items ' + UI.t('Repasar', 'Review') + ' will show in one session, per mode. When more are due than this, the highest-priority ones (the ones you keep missing, then the most overdue) are chosen and the rest are pushed a few days out, never a growing backlog.'));
+        'The most items ' + UI.t('Repasar', 'Review') + ' will show in one session, per mode. The cap only lowers how many due cards one session takes: when more are due, the ones you keep missing and the most overdue come first, and the rest wait for the next session.'));
       var capRow = UI.el('div', 'cap-row');
       window.Profile.all().forEach(function (pf) {
         var field = UI.el('div', 'cap-field');
