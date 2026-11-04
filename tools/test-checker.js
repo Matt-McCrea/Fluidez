@@ -163,6 +163,27 @@ try {
   console.log(`\nWriting tasks checked: ${W.length}`);
 } catch (e) { console.log('\n(no data/writing.js yet — skipping model self-check)'); }
 
+
+// --- keyword constraints are advisory on write/paragraph tasks ---------------
+{
+  const kw = [{ type: 'containsAny', words: ['universidad', 'colegio'], hint: 'a place of study' },
+              { type: 'minWords', n: 3 }];
+  for (const type of ['write', 'paragraph']) {
+    const r = C.checkWriting({ type, constraints: kw }, 'Estudio en la oficina');
+    ok(r.allPass === true, type + ': a good sentence without the keyword is not blocked');
+    ok(r.advisory.length === 1 && r.advisory[0].pass === false, type + ': keyword reported as advisory');
+    ok(/try to use: a place of study/.test(r.advisory[0].label) && !/universidad/.test(r.advisory[0].label), type + ': hint names the theme, not the word');
+  }
+  const g = C.checkWriting({ type: 'write', constraints: [{ type: 'containsAny', words: ['cita'] }] }, 'Necesito una cita');
+  ok(g.allPass && g.advisory[0].pass && g.advisory[0].label.indexOf('cita') === -1, 'all-keyword task passes once something is written');
+  ok(C.checkWriting({ type: 'write', constraints: [{ type: 'containsAny', words: ['cita'] }] }, '').allPass === false, 'all-keyword task blocks empty text');
+  ok(/one of the key words/.test(C.checkWriting({ type: 'write', constraints: [{ type: 'containsWord', word: 'cita' }] }, 'x').advisory[0].label), 'default hint');
+  const t = C.checkWriting({ type: 'translate', constraints: [{ type: 'containsWord', word: 'cita' }] }, 'Hola');
+  ok(t.allPass === false && t.advisory.length === 0, 'translate tasks keep keyword constraints as gates');
+  const m = C.checkWriting({ type: 'write', constraints: [{ type: 'minWords', n: 5 }, { type: 'containsAny', words: ['cita'] }] }, 'Hola');
+  ok(m.allPass === false, 'non-keyword constraints still gate');
+}
+
 console.log(`Checks run: ${checks}`);
 if (errors) { console.error(`\n❌ ${errors} problem(s).`); process.exit(1); }
 console.log('\n✅ Checker OK.');

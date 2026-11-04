@@ -69,6 +69,17 @@ window.StageProduce = (function () {
     render();
   }
 
+  /* Enough Spanish to count as a sentence: a verb the engine recognises plus an
+   * article or pronoun, or simply six words or more. */
+  var SMALL = /^(el|la|los|las|un|una|unos|unas|yo|tu|vos|usted|el|ella|nosotros|nosotras|ustedes|ellos|ellas|me|te|se|nos|lo|le|les|mi|mis|su|sus)$/;
+  function substantial(analysis, text) {
+    var toks = String(text || '').trim().split(/\s+/).filter(Boolean);
+    if (toks.length >= 6) return true;
+    var hasVerb = !!(analysis && (analysis.verbs.length || analysis.compounds.length));
+    var hasSmall = toks.some(function (w) { return SMALL.test(E.deaccent(w.toLowerCase()).replace(/[^a-zñ]/g, '')); });
+    return hasVerb && hasSmall;
+  }
+
   // ---- constrained writing (translate / free write / paragraph) -----------
   function runWrite(body, task, next) {
     var isPara = task.type === 'paragraph';
@@ -96,11 +107,14 @@ window.StageProduce = (function () {
     body.appendChild(row);
     ta.focus();
 
+    var lastRes = null, warned = false;
+    var telegramNote = UI.el('p', 'muted small hidden', 'That reads like a telegram: add the small words (el, la, un, mi, yo, me) and try again.');
+    body.insertBefore(telegramNote, modelBox);
     function renderCheck() {
       var res = C.checkWriting(task, ta.value);
       UI.clear(checklist);
       res.results.forEach(function (r) {
-        var li = UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo'),
+        var li = UI.el('li', 'constraint ' + (r.pass ? 'pass' : 'todo') + (r.advisory ? ' advisory' : ''),
           (r.pass ? '✓ ' : '○ ') + r.label + (r.detail ? ' <span class="muted">(' + r.detail + ')</span>' : ''));
         checklist.appendChild(li);
       });
@@ -110,6 +124,7 @@ window.StageProduce = (function () {
         counter.textContent = words + ' words · ' + sentences + ' sentence' + (sentences === 1 ? '' : 's');
       }
       doneB.disabled = !res.allPass;
+      lastRes = res;
       return res;
     }
     ta.addEventListener('input', renderCheck);
@@ -130,6 +145,11 @@ window.StageProduce = (function () {
     }
     doneB.addEventListener('click', function () {
       if (shown) { next(true); return; }
+      /* A telegram ("Necesito cita lunes") is held back once, with a note, and
+       * let through on the second try. */
+      if (!warned && lastRes && !substantial(lastRes.analysis, ta.value)) {
+        warned = true; telegramNote.classList.remove('hidden'); return;
+      }
       showModel(true);
     });
     skipB.addEventListener('click', function () { showModel(false); });
@@ -204,6 +224,105 @@ window.StageProduce = (function () {
     });
   }
 
+
+  /* ---- scripted scene --------------------------------------------------------
+   * One dialogue at the end of Produce on a task day, a practice day and every
+   * fourth lesson day. Each turn: the NPC line (Spanish, English muted), the
+   * intent in English, a text box. Graded by Scenes.grade (matcher or the
+   * turn's own constraints), one retry with the matcher's hint, then the model
+   * line. Untimed. The position is saved through ctx.step after every turn. */
+  function readProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
+  function sceneDay(ctx) {
+    var S = window.Scenes, days = window.COURSE_DAYS;
+    if (!S || !days || ctx.di == null || ctx.repeat) return null;
+    var entry = days[ctx.di];
+    if (!entry || !S.shouldPlay(entry, ctx.di, (window.COURSE_UNITS || {})[entry.unit])) return null;
+    return entry;
+  }
+  function pickScene(ctx, entry, cb) {
+    var S = window.Scenes, Kn = window.Known;
+    S.load(entry.band, function (ok) {
+      if (!ok) { cb(null); return; }
+      var known = null;
+      try { known = Kn && window.REQUIRES && window.GRAPH ? Kn.forLearner(readProg(), ctx.di) : null; } catch (e) { known = null; }
+      var seen = {};
+      try { seen = JSON.parse(localStorage.getItem('fluidez.seen')) || {}; } catch (e) {}
+      cb(S.pick(known, ctx.di, entry.band, seen, { today: ctx.nodes, day: ctx.seenDay != null ? ctx.seenDay : ctx.day }));
+    });
+  }
+  function recordScene(sc, ctx) {
+    try {
+      var seen = JSON.parse(localStorage.getItem('fluidez.seen')) || {};
+      seen['scene:' + sc.id] = ctx.seenDay != null ? ctx.seenDay : ctx.day;
+      localStorage.setItem('fluidez.seen', JSON.stringify(seen));
+    } catch (e) {}
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+
+  function runScene(body, sc, startAt, lines, save, done) {
+    var S = window.Scenes, list = S.turns(sc), at = Math.min(startAt || 0, list.length);
+    lines = lines || [];
+    function turn() {
+      UI.clear(body);
+      if (at >= list.length) { summary(); return; }
+      var t = list[at], tries = 0, finished = false;
+      body.appendChild(UI.el('div', 'muted small', esc(sc.title) + ' · ' + (at + 1) + ' / ' + list.length));
+      if (at === 0 && sc.brief) body.appendChild(UI.el('p', 'muted small', esc(sc.brief)));
+      body.appendChild(UI.el('h2', 'q-text', esc(t.npc)));
+      body.appendChild(UI.el('p', 'muted small', esc(t.npcEn)));
+      body.appendChild(UI.el('p', 'cloze-text', esc(t.intent)));
+      var ta = UI.el('textarea', 'answer-area');
+      ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
+      var fb = UI.el('div', 'feedback');
+      var go = UI.el('button', 'primary-btn', 'Check'); go.type = 'button';
+      var row = UI.el('div', 'row-controls'); row.appendChild(go);
+      body.appendChild(ta); body.appendChild(UI.accentBar(function () { return ta; }));
+      body.appendChild(fb); body.appendChild(row);
+      ta.focus();
+      function advance(rec) {
+        lines.push(rec); at++; save(at, lines); turn();
+      }
+      function finish(rec, html, cls) {
+        finished = true; ta.readOnly = true;
+        fb.className = 'feedback ' + cls; fb.innerHTML = html;
+        go.textContent = 'Next →';
+        go.onclick = function () { advance(rec); };
+      }
+      function submit() {
+        if (finished) return;
+        var text = ta.value.trim();
+        if (!text) return;
+        var g = S.grade(t, text);
+        tries++;
+        if (g.pass) { finish({ npc: t.npc, text: text, ok: true }, 'Right' + (g.hint ? '. ' + esc(g.hint) : ''), 'good'); return; }
+        if (tries < 2) {
+          fb.className = 'feedback bad';
+          fb.textContent = (g.hint || 'Not quite.') + ' Try once more.';
+          ta.focus(); return;
+        }
+        var model = (t.accept || [])[0] || '';
+        finish({ npc: t.npc, text: text, ok: false, model: model },
+          '<div class="model-answer">' + esc(model) + '</div>' + (g.hint ? '<div class="muted small">' + esc(g.hint) + '</div>' : ''), 'bad');
+      }
+      go.onclick = submit;
+      ta.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); if (finished) go.click(); else submit(); }
+      });
+    }
+    function summary() {
+      body.appendChild(UI.el('h2', null, esc(sc.title)));
+      lines.forEach(function (l) {
+        var d = UI.el('div', 'scene-line');
+        d.appendChild(UI.el('p', 'muted', esc(l.npc)));
+        d.appendChild(UI.el('p', l.ok ? 'model-answer' : 'feedback bad', esc(l.text) + (l.ok ? '' : ' → ' + esc(l.model))));
+        body.appendChild(d);
+      });
+      body.appendChild(UI.el('p', 'muted', 'Scene done'));
+      body.appendChild(UI.nextBtn('Continue →', done));
+    }
+    turn();
+  }
+
   function run(host, ctx, done) {
     var tasks = ctx.writeTasks || [];
     if (!tasks.length) { done(); return; }
@@ -216,7 +335,31 @@ window.StageProduce = (function () {
     wrap.appendChild(progress); wrap.appendChild(body);
     host.appendChild(wrap);
 
+    var sceneEntry = sceneDay(ctx), sceneState = null;
+    function playScene() {
+      UI.clear(body);
+      progress.textContent = 'Escena';
+      body.appendChild(UI.el('p', 'muted', 'Loading the scene…'));
+      var begin = function (sc, at, lines) {
+        if (!sc) { sceneEntry = null; finish(); return; }
+        sceneState = { sc: sc };
+        if (!at) recordScene(sc, ctx);
+        UI.clear(body);
+        runScene(body, sc, at, lines, function (n, l) { if (st) st.save(tasks.length, { done: doneCount, sc: sc.id, turn: n, lines: l }); },
+          function () { sceneEntry = null; finish(); });
+      };
+      if (ex.sc && window.Scenes) {
+        window.Scenes.load(sceneEntry.band, function () {
+          var sc = window.Scenes.find(ex.sc);
+          var at = ex.turn || 0, lines = ex.lines || [];
+          ex = {};
+          begin(sc, at, lines);
+        });
+      } else pickScene(ctx, sceneEntry, function (sc) { begin(sc, 0, []); });
+    }
+
     function finish() {
+      if (sceneEntry) { playScene(); return; }
       ctx.results.produce = { done: doneCount, total: tasks.length };
       UI.clear(body);
       body.appendChild(UI.el('h2', null, UI.t('Escrito', 'Written')));

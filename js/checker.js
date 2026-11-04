@@ -395,15 +395,40 @@ window.Checker = (function () {
   // Check a whole written answer against a task's constraint list.
   //   task.constraints : [spec, …]
   // Returns { results:[{label,pass,detail}], passed, total, allPass }.
+  /* ON-TOPIC RULE. A containsAny / containsWord constraint on a write or
+   * paragraph task is a suggestion, not a gate: "Estudio en la universidad" is a
+   * good sentence about education whether or not it used the one word the task
+   * author had in mind. They stay in the checklist ("try to use: ...", themed
+   * by the constraint's `hint`, never the word itself) and come back in
+   * res.advisory; allPass is decided by the other constraints only. When a
+   * task has nothing but keyword constraints, allPass means "wrote something". */
+  var KEYWORD_TYPES = { containsAny: 1, containsWord: 1 };
+  function isAdvisory(task, c) {
+    return !!(task && (task.type === 'write' || task.type === 'paragraph') && KEYWORD_TYPES[c.type]);
+  }
   function checkWriting(task, text) {
     var analysis = E.analyzeSentence(text || '');
-    var results = (task.constraints || []).map(function (c) { return evaluate(c, analysis, text || ''); });
+    var specs = task.constraints || [];
+    var advisory = [];
+    var results = specs.map(function (c) {
+      var r = evaluate(c, analysis, text || '');
+      if (isAdvisory(task, c)) {
+        r.advisory = true;
+        r.label = r.pass ? 'used a key word for the theme' : 'try to use: ' + (c.hint || 'one of the key words');
+        advisory.push(r);
+      }
+      return r;
+    });
+    var core = results.filter(function (r) { return !r.advisory; });
     var passed = results.filter(function (r) { return r.pass; }).length;
+    var corePassed = core.filter(function (r) { return r.pass; }).length;
     return {
       results: results,
       passed: passed,
       total: results.length,
-      allPass: results.length > 0 && passed === results.length,
+      allPass: core.length ? corePassed === core.length
+                           : (results.length > 0 && String(text || '').trim().length > 0),
+      advisory: advisory,
       analysis: analysis
     };
   }
