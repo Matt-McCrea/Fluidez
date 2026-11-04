@@ -9,11 +9,11 @@
 window.TOPICS = [
 
   { id: 'topic-familia', topic: 'Tu familia', prompts: [
-    { level: 1, prompt: 'Talk about your family — who they are and what they do.',
+    { level: 1, prompt: 'Talk about your family: who they are and what they do.',
       hint: 'Present tense: ser, tener, trabajar. A few connected sentences.',
       constraints: [{ type: 'anyVerbInTense', tense: 'presente' }, { type: 'person', person: 'yo' }, { type: 'minWords', n: 12 }],
       models: ['Tengo dos hermanos y una hermana. Mi padre es profesor y mi madre trabaja en un hospital. Somos una familia grande y feliz.'] },
-    { level: 2, prompt: 'Now describe your family when you were a child — what life was like.',
+    { level: 2, prompt: 'Now describe your family when you were a child: what life was like.',
       hint: 'Imperfect for how things used to be (era, vivía, jugábamos).',
       constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 15 }],
       models: ['Cuando era niño, mi familia vivía en un pueblo pequeño. Mis padres trabajaban mucho y mis hermanos y yo jugábamos en la calle todos los días. Éramos muy felices.'] },
@@ -47,7 +47,7 @@ window.TOPICS = [
   ] },
 
   { id: 'topic-gustos', topic: 'Tus gustos', prompts: [
-    { level: 1, prompt: 'Talk about the things you like and prefer — food, music, hobbies.',
+    { level: 1, prompt: 'Talk about the things you like and prefer: food, music, hobbies.',
       hint: 'Use me gusta / me gustan / prefiero / me encanta.',
       constraints: [{ type: 'containsAny', words: ['me gusta', 'me gustan', 'prefiero', 'me encanta'] }, { type: 'minWords', n: 12 }],
       models: ['Me gusta mucho la música y me gustan las películas de acción. Prefiero el café al té y me encanta viajar por el mundo.'] },
@@ -73,18 +73,18 @@ window.TOPICS = [
     { level: 2, prompt: 'How has your city changed? Compare how it was before with how it is now.',
       hint: 'Imperfect (era, había) for the past, present for now.',
       constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'anyVerbInTense', tense: 'presente' }, { type: 'minWords', n: 18 }],
-      models: ['Antes mi ciudad era muy tranquila y había pocos coches. Ahora hay mucho tráfico y más gente, pero todavía tiene parques bonitos y la gente es amable.'] },
+      models: ['Antes mi ciudad era muy tranquila y había pocos carros. Ahora hay mucho tráfico y más gente, pero todavía tiene parques bonitos y la gente es amable.'] },
     { level: 3, prompt: 'Say how you think your city will change in the future.',
       hint: 'Future tense.',
       constraints: [{ type: 'anyVerbInTense', tense: 'futuro' }, { type: 'minWords', n: 12 }],
-      models: ['En el futuro, mi ciudad tendrá más parques y menos coches. La gente usará más la bicicleta y habrá más zonas verdes.'] }
+      models: ['En el futuro, mi ciudad tendrá más parques y menos carros. La gente usará más la bicicleta y habrá más zonas verdes.'] }
   ] },
 
   { id: 'topic-trabajo', topic: 'Tu trabajo o estudios', prompts: [
     { level: 1, prompt: 'Talk about your job or what you study.',
       hint: 'Present tense, first person.',
       constraints: [{ type: 'anyVerbInTense', tense: 'presente' }, { type: 'person', person: 'yo' }, { type: 'minWords', n: 12 }],
-      models: ['Trabajo en una oficina en el centro. Uso el ordenador todo el día y hablo con muchos clientes. Me gusta mi trabajo porque aprendo mucho.'] },
+      models: ['Trabajo en una oficina en el centro. Uso el computador todo el día y hablo con muchos clientes. Me gusta mi trabajo porque aprendo mucho.'] },
     { level: 2, prompt: 'Tell me what you did at work or in your studies yesterday.',
       hint: 'Preterite, first person (trabajé, escribí, hablé).',
       constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'person', person: 'yo' }, { type: 'minWords', n: 15 }],
@@ -100,7 +100,7 @@ window.TOPICS = [
   ] },
 
   { id: 'topic-finde', topic: 'El fin de semana', prompts: [
-    { level: 2, prompt: 'Tell the story of last weekend — what you did and how it was.',
+    { level: 2, prompt: 'Tell the story of last weekend: what you did and how it was.',
       hint: 'Preterite for events, imperfect for the background (weather, feelings).',
       constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 15 }],
       models: ['El fin de semana pasado fui a la playa con mis amigos. Hacía mucho calor y el agua estaba fría, pero lo pasamos muy bien y comimos en un restaurante.'] },
@@ -119,7 +119,7 @@ window.TOPICS = [
       hint: 'Preterite, first person.',
       constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'person', person: 'yo' }, { type: 'minWords', n: 12 }],
       models: ['El verano pasado viajé a Italia con mi familia. Comí comida deliciosa y saqué muchas fotos. Fue un viaje inolvidable.'] },
-    { level: 2, prompt: 'Now describe the place — what it was like there.',
+    { level: 2, prompt: 'Now describe the place: what it was like there.',
       hint: 'Imperfect to set the scene (era, estaba, hacía).',
       constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 15 }],
       models: ['El hotel era precioso y estaba cerca de la playa. Hacía sol todos los días y la comida estaba deliciosa. La gente era muy simpática y todo estaba muy limpio.'] },
@@ -182,7 +182,7 @@ window.TOPICS = [
     { level: 2, prompt: 'Tell the story of a problem you solved recently.',
       hint: 'Preterite + imperfect; connect ideas.',
       constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 15 }],
-      models: ['El mes pasado tenía un problema serio con mi ordenador. Llamé a un técnico y él encontró el problema rápido. Al final, todo salió bien.'] },
+      models: ['El mes pasado tenía un problema serio con mi computador. Llamé a un técnico y él encontró el problema rápido. Al final, todo salió bien.'] },
     { level: 3, prompt: 'Say how you would solve a problem if you had the resources.',
       hint: 'Conditional.',
       constraints: [{ type: 'anyVerbInTense', tense: 'condicional' }, { type: 'minWords', n: 10 }],

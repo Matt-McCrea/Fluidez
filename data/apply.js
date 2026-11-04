@@ -27,7 +27,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 3, text: 'Mañana yo ___ (hacer) la cena para todos.', inf: 'hacer', tense: 'futuro', person: 'yo', en: 'Tomorrow I will make dinner for everyone.' },
   { type: 'cloze', level: 1, text: 'Ellos ___ (escribir) muchas cartas el mes pasado.', inf: 'escribir', tense: 'preterito', person: 'ellos', en: 'They wrote many letters last month.' },
   { type: 'cloze', level: 4, text: 'Quiero que él ___ (decir) la verdad.', inf: 'decir', tense: 'presubj', person: 'él/ella', en: 'I want him to tell the truth.' },
-  { type: 'cloze', level: 1, text: 'Vosotros ___ (beber) demasiado café por la mañana.', inf: 'beber', tense: 'presente', person: 'vosotros', en: 'You all drink too much coffee in the morning.' },
+  { type: 'cloze', level: 1, text: 'Ustedes ___ (beber) demasiado café por la mañana.', inf: 'beber', tense: 'presente', person: 'ellos', en: 'You all drink too much coffee in the morning.' },
   { type: 'cloze', level: 1, text: 'Ella ya ___ (terminar) el trabajo.', inf: 'terminar', tense: 'perfecto', person: 'él/ella', en: 'She has already finished the work.' },
   { type: 'cloze', level: 4, text: 'Si yo ___ (tener) más tiempo, viajaría más.', inf: 'tener', tense: 'impsubj', person: 'yo', en: 'If I had more time, I would travel more.' },
 
@@ -41,7 +41,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Tú ___ (trabajar) en un hospital, ¿verdad?', inf: 'trabajar', tense: 'presente', person: 'tú', en: 'You work in a hospital, right?' },
   { type: 'cloze', level: 1, text: 'Mi hermano ___ (vivir) en Barcelona ahora mismo.', inf: 'vivir', tense: 'presente', person: 'él/ella', en: 'My brother lives in Barcelona right now.' },
   { type: 'cloze', level: 1, text: 'Todos los días nosotros ___ (comer) verduras frescas.', inf: 'comer', tense: 'presente', person: 'nosotros', en: 'Every day we eat fresh vegetables.' },
-  { type: 'cloze', level: 1, text: 'Vosotros siempre ___ (estudiar) por la noche.', inf: 'estudiar', tense: 'presente', person: 'vosotros', en: 'You all always study at night.' },
+  { type: 'cloze', level: 1, text: 'Ustedes siempre ___ (estudiar) por la noche.', inf: 'estudiar', tense: 'presente', person: 'ellos', en: 'You all always study at night.' },
   { type: 'cloze', level: 1, text: 'Los niños ___ (jugar) en el parque todos los sábados.', inf: 'jugar', tense: 'presente', person: 'ellos', en: 'The children play in the park every Saturday.' },
   { type: 'cloze', level: 1, text: 'Yo ___ (ser) ingeniera y trabajo en Madrid.', inf: 'ser', tense: 'presente', person: 'yo', en: 'I am an engineer and I work in Madrid.' },
   { type: 'cloze', level: 1, text: 'Ahora mismo, mi madre ___ (estar) en el mercado.', inf: 'estar', tense: 'presente', person: 'él/ella', en: 'Right now, my mother is at the market.' },
@@ -49,14 +49,14 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Nosotros ___ (querer) viajar a Italia este año.', inf: 'querer', tense: 'presente', person: 'nosotros', en: 'We want to travel to Italy this year.' },
   { type: 'cloze', level: 1, text: 'Mis abuelos ___ (vivir) cerca de la playa.', inf: 'vivir', tense: 'presente', person: 'ellos', en: 'My grandparents live near the beach.' },
   { type: 'cloze', level: 1, text: 'Normalmente yo ___ (necesitar) ocho horas de sueño.', inf: 'necesitar', tense: 'presente', person: 'yo', en: 'I normally need eight hours of sleep.' },
-  { type: 'cloze', level: 1, text: '¿Qué ___ (hacer) vosotros los domingos?', inf: 'hacer', tense: 'presente', person: 'vosotros', en: 'What do you all do on Sundays?' },
+  { type: 'cloze', level: 1, text: '¿Qué ___ (hacer) ustedes los domingos?', inf: 'hacer', tense: 'presente', person: 'ellos', en: 'What do you all do on Sundays?' },
 
   // ---- level 2: preterito ----
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (comprar) un regalo para mi hermana.', inf: 'comprar', tense: 'preterito', person: 'yo', en: 'Yesterday I bought a gift for my sister.' },
   { type: 'cloze', level: 1, text: '¿A qué hora ___ (llegar) tú anoche?', inf: 'llegar', tense: 'preterito', person: 'tú', en: 'What time did you arrive last night?' },
   { type: 'cloze', level: 1, text: 'El mes pasado, mi jefe ___ (hacer) un viaje a Japón.', inf: 'hacer', tense: 'preterito', person: 'él/ella', en: 'Last month, my boss took a trip to Japan.' },
   { type: 'cloze', level: 1, text: 'La semana pasada nosotros ___ (ver) una película muy buena.', inf: 'ver', tense: 'preterito', person: 'nosotros', en: 'Last week we saw a very good movie.' },
-  { type: 'cloze', level: 1, text: '¿A qué hora ___ (salir) vosotros de la fiesta?', inf: 'salir', tense: 'preterito', person: 'vosotros', en: 'What time did you all leave the party?' },
+  { type: 'cloze', level: 1, text: '¿A qué hora ___ (salir) ustedes de la fiesta?', inf: 'salir', tense: 'preterito', person: 'ellos', en: 'What time did you all leave the party?' },
   { type: 'cloze', level: 1, text: 'Mis padres ___ (decir) la verdad ayer por la noche.', inf: 'decir', tense: 'preterito', person: 'ellos', en: 'My parents told the truth yesterday at night.' },
   { type: 'cloze', level: 1, text: 'El lunes pasado yo ___ (empezar) un curso de cocina.', inf: 'empezar', tense: 'preterito', person: 'yo', en: 'Last Monday I started a cooking class.' },
 
@@ -65,7 +65,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 2, text: 'Cuando eras pequeño, ¿dónde ___ (vivir) tú?', inf: 'vivir', tense: 'imperfecto', person: 'tú', en: 'When you were little, where did you live?' },
   { type: 'cloze', level: 2, text: 'Mi abuelo ___ (trabajar) en el campo todos los veranos.', inf: 'trabajar', tense: 'imperfecto', person: 'él/ella', en: 'My grandfather used to work in the fields every summer.' },
   { type: 'cloze', level: 2, text: 'De niños, nosotros ___ (jugar) en la calle todas las tardes.', inf: 'jugar', tense: 'imperfecto', person: 'nosotros', en: 'As children, we used to play in the street every afternoon.' },
-  { type: 'cloze', level: 2, text: 'Antes, vosotros ___ (estudiar) juntos los fines de semana.', inf: 'estudiar', tense: 'imperfecto', person: 'vosotros', en: 'Before, you all used to study together on weekends.' },
+  { type: 'cloze', level: 2, text: 'Antes, ustedes ___ (estudiar) juntos los fines de semana.', inf: 'estudiar', tense: 'imperfecto', person: 'ellos', en: 'Before, you all used to study together on weekends.' },
   { type: 'cloze', level: 2, text: 'Mis tíos ___ (tener) una tienda pequeña hace muchos años.', inf: 'tener', tense: 'imperfecto', person: 'ellos', en: 'My aunt and uncle had a small shop many years ago.' },
   { type: 'cloze', level: 2, text: 'Cuando era joven, yo siempre ___ (querer) ser médico.', inf: 'querer', tense: 'imperfecto', person: 'yo', en: 'When I was young, I always wanted to be a doctor.' },
 
@@ -97,11 +97,11 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Si yo ___ (tener) más tiempo libre, aprendería a pintar.', inf: 'tener', tense: 'impsubj', person: 'yo', en: 'If I had more free time, I would learn to paint.' },
   { type: 'cloze', level: 4, text: 'Si tú ___ (ser) el jefe, ¿qué cambiarías?', inf: 'ser', tense: 'impsubj', person: 'tú', en: 'If you were the boss, what would you change?' },
   { type: 'cloze', level: 4, text: 'Si nosotros ___ (poder) volar, viajaríamos todos los días.', inf: 'poder', tense: 'impsubj', person: 'nosotros', en: 'If we could fly, we would travel every day.' },
-  { type: 'cloze', level: 4, text: 'Si ellos ___ (saber) la verdad, se enfadarían mucho.', inf: 'saber', tense: 'impsubj', person: 'ellos', en: 'If they knew the truth, they would get very angry.' },
+  { type: 'cloze', level: 4, text: 'Si ellos ___ (saber) la verdad, se enojarían mucho.', inf: 'saber', tense: 'impsubj', person: 'ellos', en: 'If they knew the truth, they would get very angry.' },
 
   // ---- level 4: imperativo ----
   { type: 'cloze', level: 4, text: 'Hijo, ___ (comer) tus verduras antes del postre.', inf: 'comer', tense: 'imperativo', person: 'tú', en: 'Son, eat your vegetables before dessert.' },
-  { type: 'cloze', level: 4, text: 'Niños, ___ (hablar) más bajo, por favor.', inf: 'hablar', tense: 'imperativo', person: 'vosotros', en: 'Children, speak more quietly, please.' },
+  { type: 'cloze', level: 4, text: 'Niños, ___ (hablar) más bajo, por favor.', inf: 'hablar', tense: 'imperativo', person: 'ustedes', en: 'Children, speak more quietly, please.' },
 
   // ---- level 4: pluscuamperfecto ----
   { type: 'cloze', level: 4, text: 'Cuando ella llegó, yo ya ___ (terminar) la cena.', inf: 'terminar', tense: 'plusc', person: 'yo', en: 'When she arrived, I had already finished dinner.' },
@@ -113,7 +113,7 @@ window.APPLY_ITEMS = [
   { type: 'transform', level: 1, instruction: 'Change the subject to ellos:', from: 'Nosotros trabajamos mucho.', to: 'Ellos trabajan mucho.', en: 'They work a lot.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Yo hago la tarea.', to: 'Yo hice la tarea.', en: 'I did the homework.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Nosotros vamos a la playa todos los veranos.', to: 'Nosotros íbamos a la playa todos los veranos.', en: 'We used to go to the beach every summer.' },
-  { type: 'transform', level: 2, instruction: 'Change the subject to vosotros:', from: 'Ellos comieron paella.', to: 'Vosotros comisteis paella.', en: 'You all ate paella.' },
+  { type: 'transform', level: 2, instruction: 'Change the subject to ustedes:', from: 'Tú comiste paella.', to: 'Ustedes comieron paella.', en: 'You all ate paella.' },
   { type: 'transform', level: 3, instruction: 'Rewrite in the future:', from: 'Ella termina el proyecto.', to: 'Ella terminará el proyecto.', en: 'She will finish the project.' },
   { type: 'transform', level: 3, instruction: 'Rewrite in the conditional:', from: 'Yo hago un pastel.', to: 'Yo haría un pastel.', en: 'I would make a cake.' },
   { type: 'transform', level: 3, instruction: 'Rewrite in the present perfect:', from: 'Nosotros comemos en ese restaurante.', to: 'Nosotros hemos comido en ese restaurante.', en: 'We have eaten at that restaurant.' },
@@ -128,7 +128,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Tú siempre ___ (enviar) mensajes muy tarde por la noche.', inf: 'enviar', tense: 'presente', person: 'tú', en: 'You always send messages very late at night.' },
   { type: 'cloze', level: 1, text: 'Mi jefa ___ (dirigir) un equipo de diez personas.', inf: 'dirigir', tense: 'presente', person: 'él/ella', en: 'My boss manages a team of ten people.' },
   { type: 'cloze', level: 1, text: 'Cada mes nosotros ___ (ahorrar) un poco de dinero.', inf: 'ahorrar', tense: 'presente', person: 'nosotros', en: 'Every month we save a bit of money.' },
-  { type: 'cloze', level: 1, text: 'Vosotros siempre ___ (exigir) demasiado a los estudiantes.', inf: 'exigir', tense: 'presente', person: 'vosotros', en: 'You all always demand too much of the students.' },
+  { type: 'cloze', level: 1, text: 'Ustedes siempre ___ (exigir) demasiado a los estudiantes.', inf: 'exigir', tense: 'presente', person: 'ellos', en: 'You all always demand too much of the students.' },
   { type: 'cloze', level: 1, text: 'Esa empresa ___ (contratar) muchos empleados nuevos cada año.', inf: 'contratar', tense: 'presente', person: 'ellos', en: 'That company hires many new employees every year.' },
   { type: 'cloze', level: 1, text: 'Ese reloj no ___ (valer) mucho dinero.', inf: 'valer', tense: 'presente', person: 'él/ella', en: "That watch isn't worth much money." },
   { type: 'cloze', level: 1, text: 'Yo ___ (gestionar) las redes sociales de la empresa.', inf: 'gestionar', tense: 'presente', person: 'yo', en: "I manage the company's social media." },
@@ -139,7 +139,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Tú ___ (conducir) muy rápido por la autopista.', inf: 'conducir', tense: 'presente', person: 'tú', en: 'You drive very fast on the highway.' },
   { type: 'cloze', level: 1, text: 'Mi hijo ya ___ (entender) las tareas difíciles.', inf: 'entender', tense: 'presente', person: 'él/ella', en: 'My son already understands the difficult homework.' },
   { type: 'cloze', level: 1, text: 'Nosotros ___ (preferir) el té al café por la mañana.', inf: 'preferir', tense: 'presente', person: 'nosotros', en: 'We prefer tea to coffee in the morning.' },
-  { type: 'cloze', level: 1, text: 'Vosotros ___ (repetir) los mismos errores siempre.', inf: 'repetir', tense: 'presente', person: 'vosotros', en: 'You all always repeat the same mistakes.' },
+  { type: 'cloze', level: 1, text: 'Ustedes ___ (repetir) los mismos errores siempre.', inf: 'repetir', tense: 'presente', person: 'ellos', en: 'You all always repeat the same mistakes.' },
   { type: 'cloze', level: 1, text: 'Mis vecinos ___ (conocer) a todo el mundo en el barrio.', inf: 'conocer', tense: 'presente', person: 'ellos', en: 'My neighbors know everyone in the neighborhood.' },
   { type: 'cloze', level: 1, text: 'Yo ___ (administrar) el presupuesto familiar cada mes.', inf: 'administrar', tense: 'presente', person: 'yo', en: 'I manage the family budget every month.' },
   { type: 'cloze', level: 1, text: 'Tú ___ (andar) cinco kilómetros cada mañana.', inf: 'andar', tense: 'presente', person: 'tú', en: 'You walk five kilometers every morning.' },
@@ -149,16 +149,16 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'El año pasado tú ___ (elegir) estudiar medicina.', inf: 'elegir', tense: 'preterito', person: 'tú', en: 'Last year you chose to study medicine.' },
   { type: 'cloze', level: 1, text: 'La empresa ___ (despedir) a varios empleados el mes pasado.', inf: 'despedir', tense: 'preterito', person: 'él/ella', en: 'The company laid off several employees last month.' },
   { type: 'cloze', level: 1, text: 'El año pasado nosotros ___ (invertir) en un negocio nuevo.', inf: 'invertir', tense: 'preterito', person: 'nosotros', en: 'Last year we invested in a new business.' },
-  { type: 'cloze', level: 1, text: 'Vosotros ___ (andar) por la playa toda la tarde ayer.', inf: 'andar', tense: 'preterito', person: 'vosotros', en: 'You all walked along the beach all afternoon yesterday.' },
+  { type: 'cloze', level: 1, text: 'Ustedes ___ (andar) por la playa toda la tarde ayer.', inf: 'andar', tense: 'preterito', person: 'ellos', en: 'You all walked along the beach all afternoon yesterday.' },
   { type: 'cloze', level: 1, text: 'Los profesores ___ (corregir) los exámenes anoche.', inf: 'corregir', tense: 'preterito', person: 'ellos', en: 'The teachers corrected the exams last night.' },
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (gastar) demasiado dinero en ropa.', inf: 'gastar', tense: 'preterito', person: 'yo', en: 'Yesterday I spent too much money on clothes.' },
   { type: 'cloze', level: 1, text: 'Tú ___ (llorar) mucho en la boda de tu hermana.', inf: 'llorar', tense: 'preterito', person: 'tú', en: "You cried a lot at your sister's wedding." },
   { type: 'cloze', level: 1, text: 'Cuando vio el regalo, ella ___ (sonreír) de felicidad.', inf: 'sonreír', tense: 'preterito', person: 'él/ella', en: 'When she saw the gift, she smiled with happiness.' },
   { type: 'cloze', level: 2, text: 'De joven, yo ___ (trabajar) en una tienda de ropa.', inf: 'trabajar', tense: 'imperfecto', person: 'yo', en: 'As a young person, I used to work in a clothing store.' },
   { type: 'cloze', level: 2, text: 'Cuando eras niño, ¿qué música ___ (escuchar) tú?', inf: 'escuchar', tense: 'imperfecto', person: 'tú', en: 'When you were a child, what music did you use to listen to?' },
-  { type: 'cloze', level: 2, text: 'Mi abuelo ___ (conducir) un coche muy viejo hace años.', inf: 'conducir', tense: 'imperfecto', person: 'él/ella', en: 'My grandfather used to drive a very old car years ago.' },
+  { type: 'cloze', level: 2, text: 'Mi abuelo ___ (manejar) un carro muy viejo hace años.', inf: 'manejar', tense: 'imperfecto', person: 'él/ella', en: 'My grandfather used to drive a very old car years ago.' },
   { type: 'cloze', level: 2, text: 'Antes, nosotros ___ (descansar) los domingos por la tarde.', inf: 'descansar', tense: 'imperfecto', person: 'nosotros', en: 'Before, we used to rest on Sunday afternoons.' },
-  { type: 'cloze', level: 2, text: 'De niños, vosotros ___ (preferir) el chocolate a la fruta.', inf: 'preferir', tense: 'imperfecto', person: 'vosotros', en: 'As children, you all used to prefer chocolate to fruit.' },
+  { type: 'cloze', level: 2, text: 'De niños, ustedes ___ (preferir) el chocolate a la fruta.', inf: 'preferir', tense: 'imperfecto', person: 'ellos', en: 'As children, you all used to prefer chocolate to fruit.' },
   { type: 'cloze', level: 2, text: 'Mis abuelos ___ (conocer) a mucha gente en el pueblo antiguamente.', inf: 'conocer', tense: 'imperfecto', person: 'ellos', en: 'My grandparents used to know a lot of people in the village in the old days.' },
 
   // ---- level 3: futuro / condicional / perfecto ----
@@ -166,10 +166,10 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 3, text: 'Si trabajas más, tú ___ (ahorrar) más dinero este año.', inf: 'ahorrar', tense: 'futuro', person: 'tú', en: 'If you work more, you will save more money this year.' },
   { type: 'cloze', level: 3, text: 'El próximo año, mi hermano ___ (invertir) en bolsa.', inf: 'invertir', tense: 'futuro', person: 'él/ella', en: 'Next year, my brother will invest in the stock market.' },
   { type: 'cloze', level: 3, text: 'El mes que viene nosotros ___ (organizar) una fiesta grande.', inf: 'organizar', tense: 'futuro', person: 'nosotros', en: 'Next month we will organize a big party.' },
-  { type: 'cloze', level: 3, text: 'Después del examen, vosotros ___ (descansar) por fin.', inf: 'descansar', tense: 'futuro', person: 'vosotros', en: 'After the exam, you all will finally rest.' },
+  { type: 'cloze', level: 3, text: 'Después del examen, ustedes ___ (descansar) por fin.', inf: 'descansar', tense: 'futuro', person: 'ellos', en: 'After the exam, you all will finally rest.' },
   { type: 'cloze', level: 3, text: 'La empresa ___ (contratar) a más personal el próximo trimestre.', inf: 'contratar', tense: 'futuro', person: 'ellos', en: 'The company will hire more staff next quarter.' },
   { type: 'cloze', level: 3, text: 'Con más dinero, yo ___ (gastar) menos en tonterías.', inf: 'gastar', tense: 'condicional', person: 'yo', en: 'With more money, I would spend less on nonsense.' },
-  { type: 'cloze', level: 3, text: 'Ese coche ___ (valer) mucho más si estuviera nuevo.', inf: 'valer', tense: 'condicional', person: 'él/ella', en: 'That car would be worth much more if it were new.' },
+  { type: 'cloze', level: 3, text: 'Ese carro ___ (valer) mucho más si estuviera nuevo.', inf: 'valer', tense: 'condicional', person: 'él/ella', en: 'That car would be worth much more if it were new.' },
   { type: 'cloze', level: 3, text: 'Si tuviéramos ahorros, nosotros ___ (invertir) en una casa.', inf: 'invertir', tense: 'condicional', person: 'nosotros', en: 'If we had savings, we would invest in a house.' },
   { type: 'cloze', level: 3, text: 'Mis amigos ___ (organizar) mejor la fiesta si tuvieran tiempo.', inf: 'organizar', tense: 'condicional', person: 'ellos', en: 'My friends would organize the party better if they had time.' },
   { type: 'cloze', level: 1, text: 'Yo ya ___ (enviar) el correo esta mañana.', inf: 'enviar', tense: 'perfecto', person: 'yo', en: 'I have already sent the email this morning.' },
@@ -188,7 +188,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Si nosotros ___ (invertir) más, ganaríamos más dinero.', inf: 'invertir', tense: 'impsubj', person: 'nosotros', en: 'If we invested more, we would earn more money.' },
   { type: 'cloze', level: 4, text: 'Si ellos ___ (exigir) menos, todos estarían más felices.', inf: 'exigir', tense: 'impsubj', person: 'ellos', en: 'If they demanded less, everyone would be happier.' },
   { type: 'cloze', level: 4, text: 'Hijo, ___ (escuchar) a tu madre, por favor.', inf: 'escuchar', tense: 'imperativo', person: 'tú', en: 'Son, listen to your mother, please.' },
-  { type: 'cloze', level: 4, text: 'Niños, ___ (organizar) vuestros juguetes antes de cenar.', inf: 'organizar', tense: 'imperativo', person: 'vosotros', en: 'Children, organize your toys before dinner.' },
+  { type: 'cloze', level: 4, text: 'Niños, ___ (organizar) sus juguetes antes de cenar.', inf: 'organizar', tense: 'imperativo', person: 'ustedes', en: 'Children, organize your toys before dinner.' },
   { type: 'cloze', level: 4, text: 'Señor Pérez, ___ (enviar) el informe antes del viernes.', inf: 'enviar', tense: 'imperativo', person: 'usted', en: 'Mr. Pérez, send the report before Friday.' },
   { type: 'cloze', level: 4, text: 'Cuando llegó el jefe, yo ya ___ (enviar) el informe.', inf: 'enviar', tense: 'plusc', person: 'yo', en: 'When the boss arrived, I had already sent the report.' },
   { type: 'cloze', level: 4, text: 'Cuando llegué, mi jefe ya ___ (despedir) a dos personas.', inf: 'despedir', tense: 'plusc', person: 'él/ella', en: 'When I arrived, my boss had already fired two people.' },
@@ -200,32 +200,32 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Cuando empiece la reunión, tú ya ___ (llegar).', inf: 'llegar', tense: 'futperf', person: 'tú', en: 'When the meeting starts, you will have already arrived.' },
   { type: 'cloze', level: 5, text: 'Para mañana, mi hermana ___ (escribir) toda la tesis.', inf: 'escribir', tense: 'futperf', person: 'él/ella', en: 'By tomorrow, my sister will have written the whole thesis.' },
   { type: 'cloze', level: 5, text: 'Para el próximo año, nosotros ___ (ahorrar) lo suficiente para el viaje.', inf: 'ahorrar', tense: 'futperf', person: 'nosotros', en: 'By next year, we will have saved enough for the trip.' },
-  { type: 'cloze', level: 5, text: 'Para el verano, vosotros ___ (vivir) un año entero en Madrid.', inf: 'vivir', tense: 'futperf', person: 'vosotros', en: 'By summer, you all will have lived a whole year in Madrid.' },
+  { type: 'cloze', level: 5, text: 'Para el verano, ustedes ___ (vivir) un año entero en Madrid.', inf: 'vivir', tense: 'futperf', person: 'ellos', en: 'By summer, you all will have lived a whole year in Madrid.' },
   { type: 'cloze', level: 5, text: 'Para el sábado, mis amigos ___ (organizar) toda la fiesta.', inf: 'organizar', tense: 'futperf', person: 'ellos', en: 'By Saturday, my friends will have organized the whole party.' },
   { type: 'cloze', level: 5, text: 'Para las cinco, yo ya ___ (hacer) toda la compra.', inf: 'hacer', tense: 'futperf', person: 'yo', en: "By five o'clock, I will have already done all the shopping." },
   { type: 'cloze', level: 5, text: 'Con más información, yo ___ (invertir) en esa empresa.', inf: 'invertir', tense: 'condperf', person: 'yo', en: 'With more information, I would have invested in that company.' },
   { type: 'cloze', level: 5, text: 'En mi lugar, tú ___ (elegir) la misma universidad.', inf: 'elegir', tense: 'condperf', person: 'tú', en: 'In my place, you would have chosen the same university.' },
   { type: 'cloze', level: 5, text: 'Con un poco más de suerte, él ___ (ganar) el premio.', inf: 'ganar', tense: 'condperf', person: 'él/ella', en: 'With a little more luck, he would have won the prize.' },
   { type: 'cloze', level: 5, text: 'Sin esos gastos, nosotros ___ (ahorrar) mucho más dinero.', inf: 'ahorrar', tense: 'condperf', person: 'nosotros', en: 'Without those expenses, we would have saved much more money.' },
-  { type: 'cloze', level: 5, text: 'Con más tiempo, vosotros ___ (terminar) el trabajo mejor.', inf: 'terminar', tense: 'condperf', person: 'vosotros', en: 'With more time, you all would have finished the job better.' },
+  { type: 'cloze', level: 5, text: 'Con más tiempo, ustedes ___ (terminar) el trabajo mejor.', inf: 'terminar', tense: 'condperf', person: 'ellos', en: 'With more time, you all would have finished the job better.' },
   { type: 'cloze', level: 5, text: 'Sin el nuevo presupuesto, ellos no ___ (contratar) a nadie.', inf: 'contratar', tense: 'condperf', person: 'ellos', en: "Without the new budget, they wouldn't have hired anyone." },
   { type: 'cloze', level: 5, text: 'En esa situación, yo no ___ (decir) nada.', inf: 'decir', tense: 'condperf', person: 'yo', en: "In that situation, I wouldn't have said anything." },
   { type: 'cloze', level: 5, text: 'Espero que para entonces yo ya ___ (terminar) el informe.', inf: 'terminar', tense: 'perfsubj', person: 'yo', en: 'I hope that by then I will have already finished the report.' },
   { type: 'cloze', level: 5, text: 'Ojalá que tú ya ___ (llegar) cuando empiece la película.', inf: 'llegar', tense: 'perfsubj', person: 'tú', en: 'I hope you will have already arrived when the movie starts.' },
   { type: 'cloze', level: 5, text: 'Dudo que mi hermano ___ (aprender) tanto en un mes.', inf: 'aprender', tense: 'perfsubj', person: 'él/ella', en: "I doubt my brother will have learned so much in a month." },
   { type: 'cloze', level: 5, text: 'Espero que para diciembre nosotros ___ (ahorrar) bastante dinero.', inf: 'ahorrar', tense: 'perfsubj', person: 'nosotros', en: 'I hope that by December we will have saved enough money.' },
-  { type: 'cloze', level: 5, text: 'Ojalá que vosotros ___ (terminar) los estudios para entonces.', inf: 'terminar', tense: 'perfsubj', person: 'vosotros', en: 'I hope you all will have finished your studies by then.' },
+  { type: 'cloze', level: 5, text: 'Ojalá que ustedes ___ (terminar) los estudios para entonces.', inf: 'terminar', tense: 'perfsubj', person: 'ellos', en: 'I hope you all will have finished your studies by then.' },
   { type: 'cloze', level: 5, text: 'Espero que ellos ya ___ (decidir) algo cuando lleguemos.', inf: 'decidir', tense: 'perfsubj', person: 'ellos', en: 'I hope they will have already decided something by the time we arrive.' },
 
   // ---- more transforms across levels ----
   { type: 'transform', level: 1, instruction: 'Change the subject to tú:', from: 'Yo escucho música.', to: 'Tú escuchas música.', en: 'You listen to music.' },
   { type: 'transform', level: 1, instruction: 'Make it negative:', from: 'Nosotros ahorramos dinero.', to: 'Nosotros no ahorramos dinero.', en: "We don't save money." },
   { type: 'transform', level: 1, instruction: 'Change the subject to ellos:', from: 'Yo organizo mi trabajo.', to: 'Ellos organizan su trabajo.', en: 'They organize their work.' },
-  { type: 'transform', level: 1, instruction: 'Change the subject to nosotros:', from: 'Tú conduces rápido.', to: 'Nosotros conducimos rápido.', en: 'We drive fast.' },
+  { type: 'transform', level: 1, instruction: 'Change the subject to nosotros:', from: 'Tú manejas rápido.', to: 'Nosotros manejamos rápido.', en: 'We drive fast.' },
   { type: 'transform', level: 1, instruction: 'Make it negative:', from: 'Ella entiende el problema.', to: 'Ella no entiende el problema.', en: "She doesn't understand the problem." },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Yo envío el correo.', to: 'Yo envié el correo.', en: 'I sent the email.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Nosotros vivimos en Madrid.', to: 'Nosotros vivíamos en Madrid.', en: 'We used to live in Madrid.' },
-  { type: 'transform', level: 2, instruction: 'Change the subject to vosotros:', from: 'Ellos gastaron mucho dinero.', to: 'Vosotros gastasteis mucho dinero.', en: 'You all spent a lot of money.' },
+  { type: 'transform', level: 2, instruction: 'Change the subject to ustedes:', from: 'Yo gasté mucho dinero.', to: 'Ustedes gastaron mucho dinero.', en: 'You all spent a lot of money.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the preterite (a finished past event):', from: 'Tú eliges la universidad.', to: 'Tú elegiste la universidad.', en: 'You chose the university.' },
   { type: 'transform', level: 2, instruction: 'Rewrite in the imperfect (a past habit/background):', from: 'Yo trabajo en una tienda.', to: 'Yo trabajaba en una tienda.', en: 'I used to work in a store.' },
   { type: 'transform', level: 3, instruction: 'Rewrite in the future:', from: 'Nosotros organizamos la fiesta.', to: 'Nosotros organizaremos la fiesta.', en: 'We will organize the party.' },
@@ -237,7 +237,7 @@ window.APPLY_ITEMS = [
   { type: 'transform', level: 4, instruction: 'Rewrite as a tú command:', from: 'Tú organizas tus cosas.', to: 'Organiza tus cosas.', en: 'Organize your things.' },
   { type: 'transform', level: 4, instruction: 'Rewrite in the pluscuamperfecto (already done before another past action):', from: 'Ellos eligen el restaurante.', to: 'Ellos habían elegido el restaurante.', en: 'They had chosen the restaurant.' },
   { type: 'transform', level: 4, instruction: 'Rewrite as a wish using “Quiero que…” + subjunctive:', from: 'Ella dirige el equipo.', to: 'Quiero que ella dirija el equipo.', en: 'I want her to lead the team.' },
-  { type: 'transform', level: 4, instruction: 'Rewrite as a vosotros command:', from: 'Vosotros escucháis la música.', to: 'Escuchad la música.', en: 'Listen to the music.' },
+  { type: 'transform', level: 4, instruction: 'Rewrite as an ustedes command:', from: 'Ustedes escuchan la música.', to: 'Escuchen la música.', en: 'Listen to the music.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the futuro perfecto (will have done by then):', from: 'Yo termino el informe.', to: 'Yo habré terminado el informe.', en: 'I will have finished the report.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the condicional perfecto (would have done):', from: 'Nosotros ahorramos más.', to: 'Nosotros habríamos ahorrado más.', en: 'We would have saved more.' },
   { type: 'transform', level: 5, instruction: 'Rewrite as a hope using “Espero que…” + pretérito perfecto de subjuntivo:', from: 'Ellos deciden algo.', to: 'Espero que ellos hayan decidido algo.', en: 'I hope they have decided something.' },
@@ -246,7 +246,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Todos los días yo ___ (trabajar) ocho horas en la oficina.', inf: 'trabajar', tense: 'presente', person: 'yo', en: 'Every day I work eight hours at the office.' },
   { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (comer) en un restaurante nuevo.', inf: 'comer', tense: 'preterito', person: 'nosotros', en: 'Yesterday we ate at a new restaurant.' },
   { type: 'cloze', level: 2, text: 'De joven, tú ___ (estudiar) música todos los sábados.', inf: 'estudiar', tense: 'imperfecto', person: 'tú', en: 'As a young person, you used to study music every Saturday.' },
-  { type: 'cloze', level: 1, text: 'Vosotros ___ (beber) demasiada agua con gas.', inf: 'beber', tense: 'presente', person: 'vosotros', en: 'You all drink too much sparkling water.' },
+  { type: 'cloze', level: 1, text: 'Ustedes ___ (beber) demasiada agua con gas.', inf: 'beber', tense: 'presente', person: 'ellos', en: 'You all drink too much sparkling water.' },
 
   { type: 'cloze', level: 1, text: 'El año pasado yo ___ (vivir) en otra ciudad.', inf: 'vivir', tense: 'preterito', person: 'yo', en: 'Last year I lived in another city.' },
   { type: 'cloze', level: 1, text: 'Ella ___ (escribir) un correo cada mañana.', inf: 'escribir', tense: 'presente', person: 'él/ella', en: 'She writes an email every morning.' },
@@ -256,7 +256,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (tener) una reunión muy larga.', inf: 'tener', tense: 'preterito', person: 'yo', en: 'Yesterday I had a very long meeting.' },
   { type: 'cloze', level: 1, text: 'El sábado pasado nosotros ___ (ir) al cine.', inf: 'ir', tense: 'preterito', person: 'nosotros', en: 'Last Saturday we went to the movies.' },
   { type: 'cloze', level: 1, text: 'Ella no ___ (poder) terminar el examen a tiempo.', inf: 'poder', tense: 'preterito', person: 'él/ella', en: "She couldn't finish the exam on time." },
-  { type: 'cloze', level: 1, text: 'Vosotros ___ (hacer) la cena todos los martes.', inf: 'hacer', tense: 'presente', person: 'vosotros', en: 'You all make dinner every Tuesday.' },
+  { type: 'cloze', level: 1, text: 'Ustedes ___ (hacer) la cena todos los martes.', inf: 'hacer', tense: 'presente', person: 'ellos', en: 'You all make dinner every Tuesday.' },
 
   { type: 'cloze', level: 1, text: 'Ayer mis padres me ___ (decir) la verdad.', inf: 'decir', tense: 'preterito', person: 'ellos', en: 'Yesterday my parents told me the truth.' },
   { type: 'cloze', level: 1, text: 'Yo ___ (saber) hablar tres idiomas.', inf: 'saber', tense: 'presente', person: 'yo', en: 'I know how to speak three languages.' },
@@ -270,7 +270,7 @@ window.APPLY_ITEMS = [
 
   { type: 'cloze', level: 1, text: 'Yo ___ (dormir) ocho horas cada noche.', inf: 'dormir', tense: 'presente', person: 'yo', en: 'I sleep eight hours every night.' },
   { type: 'cloze', level: 1, text: 'Anoche nosotros no ___ (oír) el despertador.', inf: 'oír', tense: 'preterito', person: 'nosotros', en: "Last night we didn't hear the alarm clock." },
-  { type: 'cloze', level: 1, text: 'El camarero ___ (servir) la comida muy rápido.', inf: 'servir', tense: 'presente', person: 'él/ella', en: 'The waiter serves the food very fast.' },
+  { type: 'cloze', level: 1, text: 'El mesero ___ (servir) la comida muy rápido.', inf: 'servir', tense: 'presente', person: 'él/ella', en: 'The waiter serves the food very fast.' },
   { type: 'cloze', level: 1, text: 'Ayer yo ___ (pedir) el mismo plato de siempre.', inf: 'pedir', tense: 'preterito', person: 'yo', en: 'Yesterday I ordered the same dish as always.' },
 
   { type: 'cloze', level: 1, text: 'Yo ___ (seguir) un plan de estudio cada semana.', inf: 'seguir', tense: 'presente', person: 'yo', en: 'I follow a study plan every week.' },
@@ -319,7 +319,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Ella ___ (necesitar) más tiempo para terminar.', inf: 'necesitar', tense: 'presente', person: 'él/ella', en: 'She needs more time to finish.' },
   { type: 'cloze', level: 1, text: 'Anoche nosotros ___ (pasar) horas hablando.', inf: 'pasar', tense: 'preterito', person: 'nosotros', en: 'Last night we spent hours talking.' },
 
-  { type: 'cloze', level: 1, text: 'Yo ___ (usar) el ordenador para trabajar.', inf: 'usar', tense: 'presente', person: 'yo', en: 'I use the computer to work.' },
+  { type: 'cloze', level: 1, text: 'Yo ___ (usar) el computador para trabajar.', inf: 'usar', tense: 'presente', person: 'yo', en: 'I use the computer to work.' },
   { type: 'cloze', level: 1, text: 'Ayer mi profesor me ___ (ayudar) con la tarea.', inf: 'ayudar', tense: 'preterito', person: 'él/ella', en: 'Yesterday my teacher helped me with the homework.' },
   { type: 'cloze', level: 1, text: 'Nosotros ___ (mirar) el mapa antes de salir.', inf: 'mirar', tense: 'presente', person: 'nosotros', en: 'We look at the map before leaving.' },
   { type: 'cloze', level: 1, text: 'Esta mañana yo ___ (tomar) café con mi hermana.', inf: 'tomar', tense: 'preterito', person: 'yo', en: 'This morning I had coffee with my sister.' },
@@ -336,7 +336,7 @@ window.APPLY_ITEMS = [
 
   // ==== verb-group lesson cloze (groups 19-27) ====
   { type: 'cloze', level: 1, text: 'Yo ___ (comprender) bien la gramática española.', inf: 'comprender', tense: 'presente', person: 'yo', en: 'I understand Spanish grammar well.' },
-  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (vender) el coche viejo.', inf: 'vender', tense: 'preterito', person: 'nosotros', en: 'Yesterday we sold the old car.' },
+  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (vender) el carro viejo.', inf: 'vender', tense: 'preterito', person: 'nosotros', en: 'Yesterday we sold the old car.' },
   { type: 'cloze', level: 1, text: 'Ella ___ (correr) cinco kilómetros cada mañana.', inf: 'correr', tense: 'presente', person: 'él/ella', en: 'She runs five kilometers every morning.' },
   { type: 'cloze', level: 1, text: 'Ayer yo le ___ (responder) rápido al mensaje.', inf: 'responder', tense: 'preterito', person: 'yo', en: 'Yesterday I replied to the message quickly.' },
 
@@ -353,10 +353,10 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Yo ___ (preparar) la cena todos los domingos.', inf: 'preparar', tense: 'presente', person: 'yo', en: 'I prepare dinner every Sunday.' },
   { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (invitar) a los vecinos a cenar.', inf: 'invitar', tense: 'preterito', person: 'nosotros', en: 'Yesterday we invited the neighbors to dinner.' },
   { type: 'cloze', level: 1, text: 'Ella siempre ___ (saludar) con una sonrisa.', inf: 'saludar', tense: 'presente', person: 'él/ella', en: 'She always greets with a smile.' },
-  { type: 'cloze', level: 1, text: 'Ayer yo ___ (olvidar) las llaves en el coche.', inf: 'olvidar', tense: 'preterito', person: 'yo', en: 'Yesterday I forgot the keys in the car.' },
+  { type: 'cloze', level: 1, text: 'Ayer yo ___ (olvidar) las llaves en el carro.', inf: 'olvidar', tense: 'preterito', person: 'yo', en: 'Yesterday I forgot the keys in the car.' },
 
   { type: 'cloze', level: 1, text: 'Yo ___ (nadar) en la piscina todos los veranos.', inf: 'nadar', tense: 'presente', person: 'yo', en: 'I swim in the pool every summer.' },
-  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (firmar) el contrato del piso.', inf: 'firmar', tense: 'preterito', person: 'nosotros', en: 'Yesterday we signed the apartment contract.' },
+  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (firmar) el contrato del apartamento.', inf: 'firmar', tense: 'preterito', person: 'nosotros', en: 'Yesterday we signed the apartment contract.' },
   { type: 'cloze', level: 1, text: 'Ella ___ (dibujar) muy bien los paisajes.', inf: 'dibujar', tense: 'presente', person: 'él/ella', en: 'She draws landscapes very well.' },
   { type: 'cloze', level: 1, text: 'Anoche yo ___ (lavar) toda la ropa sucia.', inf: 'lavar', tense: 'preterito', person: 'yo', en: 'Last night I washed all the dirty clothes.' },
 
@@ -382,8 +382,8 @@ window.APPLY_ITEMS = [
 
   // ==== verb-group lesson cloze (groups 28-37) ====
   { type: 'cloze', level: 1, text: 'Yo ___ (ahorrar) un poco de dinero cada mes.', inf: 'ahorrar', tense: 'presente', person: 'yo', en: 'I save a bit of money every month.' },
-  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (planear) las vacaciones de verano.', inf: 'planear', tense: 'preterito', person: 'nosotros', en: 'Yesterday we planned the summer vacation.' },
-  { type: 'cloze', level: 1, text: 'Ellos ___ (alquilar) un piso pequeño en el centro.', inf: 'alquilar', tense: 'presente', person: 'ellos', en: 'They rent a small apartment downtown.' },
+  { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (planear) las vacaciones.', inf: 'planear', tense: 'preterito', person: 'nosotros', en: 'Yesterday we planned the vacation.' },
+  { type: 'cloze', level: 1, text: 'Ellos ___ (alquilar) un apartamento pequeño en el centro.', inf: 'alquilar', tense: 'presente', person: 'ellos', en: 'They rent a small apartment downtown.' },
   { type: 'cloze', level: 1, text: 'El mes pasado yo ___ (gastar) demasiado en ropa.', inf: 'gastar', tense: 'preterito', person: 'yo', en: 'Last month I spent too much on clothes.' },
 
   { type: 'cloze', level: 1, text: 'Nosotros ___ (reservar) mesa para las nueve.', inf: 'reservar', tense: 'presente', person: 'nosotros', en: 'We reserve a table for nine.' },
@@ -393,7 +393,7 @@ window.APPLY_ITEMS = [
 
   { type: 'cloze', level: 1, text: 'Yo ___ (reciclar) el plástico y el papel.', inf: 'reciclar', tense: 'presente', person: 'yo', en: 'I recycle plastic and paper.' },
   { type: 'cloze', level: 1, text: 'Ayer tú ___ (instalar) el programa nuevo.', inf: 'instalar', tense: 'preterito', person: 'tú', en: 'Yesterday you installed the new program.' },
-  { type: 'cloze', level: 1, text: 'Nosotros ___ (conectar) el ordenador a la impresora.', inf: 'conectar', tense: 'presente', person: 'nosotros', en: 'We connect the computer to the printer.' },
+  { type: 'cloze', level: 1, text: 'Nosotros ___ (conectar) el computador a la impresora.', inf: 'conectar', tense: 'presente', person: 'nosotros', en: 'We connect the computer to the printer.' },
   { type: 'cloze', level: 1, text: 'Anoche yo ___ (actualizar) todos mis dispositivos.', inf: 'actualizar', tense: 'preterito', person: 'yo', en: 'Last night I updated all my devices.' },
 
   { type: 'cloze', level: 1, text: 'Yo ___ (descansar) los domingos por la tarde.', inf: 'descansar', tense: 'presente', person: 'yo', en: 'I rest on Sunday afternoons.' },
@@ -401,7 +401,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 1, text: 'Nosotros ___ (respirar) hondo antes del examen.', inf: 'respirar', tense: 'presente', person: 'nosotros', en: 'We breathe deeply before the exam.' },
   { type: 'cloze', level: 1, text: 'El año pasado los médicos ___ (curar) a muchos pacientes.', inf: 'curar', tense: 'preterito', person: 'ellos', en: 'Last year the doctors cured many patients.' },
 
-  { type: 'cloze', level: 1, text: 'Yo ___ (programar) aplicaciones para móviles.', inf: 'programar', tense: 'presente', person: 'yo', en: 'I program apps for mobile phones.' },
+  { type: 'cloze', level: 1, text: 'Yo ___ (programar) aplicaciones para celulares.', inf: 'programar', tense: 'presente', person: 'yo', en: 'I program apps for mobile phones.' },
   { type: 'cloze', level: 1, text: 'Ayer nosotros ___ (votar) por el nuevo diseño.', inf: 'votar', tense: 'preterito', person: 'nosotros', en: 'Yesterday we voted for the new design.' },
   { type: 'cloze', level: 1, text: 'Ella ___ (diseñar) la portada de la revista.', inf: 'diseñar', tense: 'presente', person: 'él/ella', en: 'She designs the cover of the magazine.' },
   { type: 'cloze', level: 1, text: 'El cliente ___ (reclamar) un descuento ayer.', inf: 'reclamar', tense: 'preterito', person: 'él/ella', en: 'The client demanded a discount yesterday.' },
@@ -444,22 +444,22 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Es importante que tú ___ (llegar) temprano a la entrevista.', inf: 'llegar', tense: 'presubj', person: 'tú', en: "It's important that you arrive early to the interview." },
   { type: 'cloze', level: 4, text: 'Ojalá que ella ___ (aprobar) el examen de conducir.', inf: 'aprobar', tense: 'presubj', person: 'él/ella', en: 'I hope she passes the driving test.' },
   { type: 'cloze', level: 4, text: 'El profesor espera que nosotros ___ (entregar) el trabajo a tiempo.', inf: 'entregar', tense: 'presubj', person: 'nosotros', en: 'The teacher hopes we hand in the work on time.' },
-  { type: 'cloze', level: 4, text: 'Prefiero que vosotros ___ (decidir) juntos el destino del viaje.', inf: 'decidir', tense: 'presubj', person: 'vosotros', en: 'I prefer that you all decide the trip destination together.' },
+  { type: 'cloze', level: 4, text: 'Prefiero que ustedes ___ (decidir) juntos el destino del viaje.', inf: 'decidir', tense: 'presubj', person: 'ellos', en: 'I prefer that you all decide the trip destination together.' },
   { type: 'cloze', level: 4, text: 'No creo que ellos ___ (saber) toda la verdad.', inf: 'saber', tense: 'presubj', person: 'ellos', en: "I don't think they know the whole truth." },
 
   // ---- level 4: imperfecto de subjuntivo ----
   { type: 'cloze', level: 4, text: 'Si yo ___ (tener) más tiempo libre, viajaría por Sudamérica.', inf: 'tener', tense: 'impsubj', person: 'yo', en: 'If I had more free time, I would travel around South America.' },
   { type: 'cloze', level: 4, text: 'Mi madre quería que tú la ___ (llamar) todos los domingos.', inf: 'llamar', tense: 'impsubj', person: 'tú', en: 'My mother wanted you to call her every Sunday.' },
-  { type: 'cloze', level: 4, text: 'Si ella ___ (saber) conducir, iría en coche al trabajo.', inf: 'saber', tense: 'impsubj', person: 'él/ella', en: 'If she knew how to drive, she would go to work by car.' },
+  { type: 'cloze', level: 4, text: 'Si ella ___ (saber) manejar, iría en carro al trabajo.', inf: 'saber', tense: 'impsubj', person: 'él/ella', en: 'If she knew how to drive, she would go to work by car.' },
   { type: 'cloze', level: 4, text: 'Si nosotros ___ (ganar) la lotería, compraríamos una casa.', inf: 'ganar', tense: 'impsubj', person: 'nosotros', en: 'If we won the lottery, we would buy a house.' },
-  { type: 'cloze', level: 4, text: 'El director pidió que vosotros ___ (terminar) el informe antes del viernes.', inf: 'terminar', tense: 'impsubj', person: 'vosotros', en: 'The director asked you all to finish the report before Friday.' },
+  { type: 'cloze', level: 4, text: 'El director pidió que ustedes ___ (terminar) el informe antes del viernes.', inf: 'terminar', tense: 'impsubj', person: 'ellos', en: 'The director asked you all to finish the report before Friday.' },
   { type: 'cloze', level: 4, text: 'Si ellos ___ (venir) a la fiesta, la pasaríamos genial.', inf: 'venir', tense: 'impsubj', person: 'ellos', en: 'If they came to the party, we would have a great time.' },
 
   // ---- level 4: imperativo ----
   { type: 'cloze', level: 4, text: '___ (cerrar) la puerta cuando salgas, por favor.', inf: 'cerrar', tense: 'imperativo', person: 'tú', en: 'Close the door when you leave, please.' },
   { type: 'cloze', level: 4, text: '___ (firmar) aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Sign here, please.' },
   { type: 'cloze', level: 4, text: '___ (empezar) la reunión sin más demora.', inf: 'empezar', tense: 'imperativo', person: 'nosotros', en: "Let's start the meeting without further delay." },
-  { type: 'cloze', level: 4, text: '___ (escuchar) con atención las instrucciones.', inf: 'escuchar', tense: 'imperativo', person: 'vosotros', en: 'Listen carefully to the instructions.' },
+  { type: 'cloze', level: 4, text: '___ (escuchar) con atención las instrucciones.', inf: 'escuchar', tense: 'imperativo', person: 'ustedes', en: 'Listen carefully to the instructions.' },
   { type: 'cloze', level: 4, text: '___ (pasar) por la puerta principal, por favor.', inf: 'pasar', tense: 'imperativo', person: 'ustedes', en: 'Go through the main door, please.' },
 
   // ---- level 4: pluscuamperfecto ----
@@ -467,7 +467,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 4, text: 'Cuando te conocí, tú ya ___ (viajar) por diez países.', inf: 'viajar', tense: 'plusc', person: 'tú', en: 'When I met you, you had already traveled through ten countries.' },
   { type: 'cloze', level: 4, text: 'Cuando llegó la policía, el ladrón ya ___ (salir) del banco.', inf: 'salir', tense: 'plusc', person: 'él/ella', en: 'When the police arrived, the thief had already left the bank.' },
   { type: 'cloze', level: 4, text: 'Antes de ese verano, nosotros nunca ___ (viajar) tan lejos.', inf: 'viajar', tense: 'plusc', person: 'nosotros', en: "Before that summer, we had never traveled so far." },
-  { type: 'cloze', level: 4, text: 'Cuando os conocimos, vosotros ya ___ (terminar) la carrera.', inf: 'terminar', tense: 'plusc', person: 'vosotros', en: 'When we met you all, you had already finished your degree.' },
+  { type: 'cloze', level: 4, text: 'Cuando los conocimos, ustedes ya ___ (terminar) la carrera.', inf: 'terminar', tense: 'plusc', person: 'ellos', en: 'When we met you all, you had already finished your degree.' },
   { type: 'cloze', level: 4, text: 'Cuando llegamos al cine, la película ya ___ (empezar).', inf: 'empezar', tense: 'plusc', person: 'él/ella', en: 'When we got to the cinema, the film had already started.' },
 
   // ---- level 5: futuro perfecto ----
@@ -475,7 +475,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Para el año que viene, tú ya ___ (acabar) la carrera.', inf: 'acabar', tense: 'futperf', person: 'tú', en: 'By next year, you will have finished your degree.' },
   { type: 'cloze', level: 5, text: 'Para diciembre, ella ya ___ (cambiar) de trabajo.', inf: 'cambiar', tense: 'futperf', person: 'él/ella', en: 'By December, she will have changed jobs.' },
   { type: 'cloze', level: 5, text: 'Para entonces, nosotros ya ___ (terminar) el proyecto.', inf: 'terminar', tense: 'futperf', person: 'nosotros', en: 'By then, we will have finished the project.' },
-  { type: 'cloze', level: 5, text: 'Cuando volváis, vosotros ya ___ (aprender) mucho español.', inf: 'aprender', tense: 'futperf', person: 'vosotros', en: 'By the time you all come back, you will have learned a lot of Spanish.' },
+  { type: 'cloze', level: 5, text: 'Cuando vuelvan, ustedes ya ___ (aprender) mucho español.', inf: 'aprender', tense: 'futperf', person: 'ellos', en: 'By the time you all come back, you will have learned a lot of Spanish.' },
   { type: 'cloze', level: 5, text: 'Para el viernes, ellos ya ___ (entregar) el proyecto.', inf: 'entregar', tense: 'futperf', person: 'ellos', en: 'By Friday, they will have handed in the project.' },
 
   // ---- level 5: condicional perfecto ----
@@ -483,7 +483,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'En mi lugar, tú ___ (hacer) lo mismo.', inf: 'hacer', tense: 'condperf', person: 'tú', en: 'In my place, you would have done the same.' },
   { type: 'cloze', level: 5, text: 'Con más tiempo, ella ___ (terminar) el proyecto mejor.', inf: 'terminar', tense: 'condperf', person: 'él/ella', en: 'With more time, she would have finished the project better.' },
   { type: 'cloze', level: 5, text: 'Sin el tráfico, nosotros ___ (llegar) mucho antes.', inf: 'llegar', tense: 'condperf', person: 'nosotros', en: 'Without the traffic, we would have arrived much earlier.' },
-  { type: 'cloze', level: 5, text: 'Con más práctica, vosotros ___ (mejorar) mucho más.', inf: 'mejorar', tense: 'condperf', person: 'vosotros', en: 'With more practice, you all would have improved much more.' },
+  { type: 'cloze', level: 5, text: 'Con más práctica, ustedes ___ (mejorar) mucho más.', inf: 'mejorar', tense: 'condperf', person: 'ellos', en: 'With more practice, you all would have improved much more.' },
   { type: 'cloze', level: 5, text: 'Sin ese error, ellos ___ (ganar) el partido.', inf: 'ganar', tense: 'condperf', person: 'ellos', en: 'Without that mistake, they would have won the match.' },
 
   // ---- level 5: pretérito perfecto de subjuntivo ----
@@ -491,7 +491,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Ojalá que tú ___ (llegar) bien a casa.', inf: 'llegar', tense: 'perfsubj', person: 'tú', en: 'I hope you have arrived home safely.' },
   { type: 'cloze', level: 5, text: 'Dudo que ella ya ___ (terminar) el informe.', inf: 'terminar', tense: 'perfsubj', person: 'él/ella', en: "I doubt she has finished the report yet." },
   { type: 'cloze', level: 5, text: 'Es una pena que nosotros no ___ (poder) verte esta vez.', inf: 'poder', tense: 'perfsubj', person: 'nosotros', en: "It's a shame we haven't been able to see you this time." },
-  { type: 'cloze', level: 5, text: 'Me alegro de que vosotros ___ (aprobar) todos los exámenes.', inf: 'aprobar', tense: 'perfsubj', person: 'vosotros', en: 'I\'m glad you all have passed all the exams.' },
+  { type: 'cloze', level: 5, text: 'Me alegro de que ustedes ___ (aprobar) todos los exámenes.', inf: 'aprobar', tense: 'perfsubj', person: 'ellos', en: 'I\'m glad you all have passed all the exams.' },
   { type: 'cloze', level: 5, text: 'No creo que ellos ___ (llegar) todavía.', inf: 'llegar', tense: 'perfsubj', person: 'ellos', en: "I don't think they have arrived yet." },
 
   // ---- transforms: level 4-5 ----
@@ -499,7 +499,7 @@ window.APPLY_ITEMS = [
   { type: 'transform', level: 4, instruction: 'Rewrite as an usted command:', from: 'Usted firma aquí.', to: 'Firme aquí.', en: 'Sign here.' },
   { type: 'transform', level: 4, instruction: 'Rewrite in the pluscuamperfecto (already done before another past action):', from: 'Nosotros terminamos el trabajo antes de la reunión.', to: 'Nosotros habíamos terminado el trabajo antes de la reunión.', en: 'We had finished the work before the meeting.' },
   { type: 'transform', level: 4, instruction: 'Rewrite as a nosotros command ("Let\'s..."):', from: 'Nosotros empezamos ahora.', to: 'Empecemos ahora.', en: "Let's start now." },
-  { type: 'transform', level: 4, instruction: 'Rewrite as a vosotros command:', from: 'Vosotros leéis las instrucciones.', to: 'Leed las instrucciones.', en: 'Read the instructions.' },
+  { type: 'transform', level: 4, instruction: 'Rewrite as an ustedes command:', from: 'Ustedes leen las instrucciones.', to: 'Lean las instrucciones.', en: 'Read the instructions.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the futuro perfecto (will have done by then):', from: 'Ellos terminan el proyecto.', to: 'Ellos habrán terminado el proyecto.', en: 'They will have finished the project.' },
   { type: 'transform', level: 5, instruction: 'Rewrite in the condicional perfecto (would have done):', from: 'Yo acepto la oferta.', to: 'Yo habría aceptado la oferta.', en: 'I would have accepted the offer.' },
   { type: 'transform', level: 5, instruction: 'Rewrite as a hope using "Ojalá que…" + pretérito perfecto de subjuntivo:', from: 'Ella llega a tiempo.', to: 'Ojalá que ella haya llegado a tiempo.', en: 'I hope she has arrived on time.' },
@@ -523,11 +523,11 @@ window.APPLY_ITEMS = [
   // ---- level 4: imperativo ----
   { type: 'cloze', level: 4, text: '___ (comprar) el pan de camino a casa.', inf: 'comprar', tense: 'imperativo', person: 'tú', en: 'Buy the bread on your way home.' },
   { type: 'cloze', level: 4, text: '___ (escribir) su nombre completo aquí.', inf: 'escribir', tense: 'imperativo', person: 'usted', en: 'Write your full name here.' },
-  { type: 'cloze', level: 4, text: '___ (limpiar) vuestra habitación antes de salir.', inf: 'limpiar', tense: 'imperativo', person: 'vosotros', en: 'Clean your room before you go out.' },
+  { type: 'cloze', level: 4, text: '___ (limpiar) su habitación antes de salir.', inf: 'limpiar', tense: 'imperativo', person: 'ustedes', en: 'Clean your room before you go out.' },
   { type: 'cloze', level: 4, text: '___ (elegir) la opción que prefieran.', inf: 'elegir', tense: 'imperativo', person: 'ustedes', en: 'Choose the option you prefer.' },
 
   // ---- level 4: pluscuamperfecto ----
-  { type: 'cloze', level: 4, text: 'Antes de aquel año, yo nunca ___ (comprar) un coche.', inf: 'comprar', tense: 'plusc', person: 'yo', en: 'Before that year, I had never bought a car.' },
+  { type: 'cloze', level: 4, text: 'Antes de aquel año, yo nunca ___ (comprar) un carro.', inf: 'comprar', tense: 'plusc', person: 'yo', en: 'Before that year, I had never bought a car.' },
   { type: 'cloze', level: 4, text: 'Cuando la conocí, ella ya ___ (publicar) su primer libro.', inf: 'publicar', tense: 'plusc', person: 'él/ella', en: 'When I met her, she had already published her first book.' },
   { type: 'cloze', level: 4, text: 'Antes de mudarnos, nosotros nunca ___ (vivir) en una ciudad grande.', inf: 'vivir', tense: 'plusc', person: 'nosotros', en: 'Before moving, we had never lived in a big city.' },
   { type: 'cloze', level: 4, text: 'Cuando llegamos, ellos ya ___ (limpiar) toda la casa.', inf: 'limpiar', tense: 'plusc', person: 'ellos', en: 'When we arrived, they had already cleaned the whole house.' },
@@ -548,7 +548,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: 'Ojalá que yo ___ (elegir) bien esta vez.', inf: 'elegir', tense: 'perfsubj', person: 'yo', en: 'I hope I have chosen well this time.' },
   { type: 'cloze', level: 5, text: 'Espero que tú ___ (escribir) la carta ya.', inf: 'escribir', tense: 'perfsubj', person: 'tú', en: 'I hope you have already written the letter.' },
   { type: 'cloze', level: 5, text: 'No creo que él ___ (decir) la verdad.', inf: 'decir', tense: 'perfsubj', person: 'él/ella', en: "I don't think he has told the truth." },
-  { type: 'cloze', level: 5, text: 'Me alegro de que vosotros ___ (aprender) tanto este curso.', inf: 'aprender', tense: 'perfsubj', person: 'vosotros', en: "I'm glad you all have learned so much this course." },
+  { type: 'cloze', level: 5, text: 'Me alegro de que ustedes ___ (aprender) tanto este curso.', inf: 'aprender', tense: 'perfsubj', person: 'ellos', en: "I'm glad you all have learned so much this course." },
   { type: 'cloze', level: 5, text: 'Dudo que ellos ___ (construir) el puente a tiempo.', inf: 'construir', tense: 'perfsubj', person: 'ellos', en: "I doubt they have built the bridge on time." },
 
   /* ============================================================================
@@ -560,7 +560,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Si el ayuntamiento ___ (invertir) más en transporte público, habría menos tráfico.', inf: 'invertir', tense: 'impsubj', person: 'él/ella', en: 'If the city council invested more in public transport, there would be less traffic.' },
   { type: 'cloze', level: 6, text: 'Para cuando lleguen los resultados, nosotros ya ___ (tomar) una decisión.', inf: 'tomar', tense: 'futperf', person: 'nosotros', en: 'By the time the results arrive, we will have already made a decision.' },
   { type: 'cloze', level: 6, text: 'Yo, en tu lugar, ___ (exigir) una explicación por escrito.', inf: 'exigir', tense: 'condicional', person: 'yo', en: "In your place, I would demand a written explanation." },
-  { type: 'cloze', level: 6, text: 'El jefe insiste en que vosotros ___ (comprometerse) con la nueva fecha de entrega.', inf: 'comprometerse', tense: 'presubj', person: 'vosotros', en: 'The boss insists that you all commit to the new delivery date.' },
+  { type: 'cloze', level: 6, text: 'El jefe insiste en que ustedes ___ (comprometerse) con la nueva fecha de entrega.', inf: 'comprometerse', tense: 'presubj', person: 'ellos', en: 'The boss insists that you all commit to the new delivery date.' },
   { type: 'cloze', level: 6, text: 'Ella se arrepiente de que nunca le ___ (proponer, ellos) el ascenso.', inf: 'proponer', tense: 'perfsubj', person: 'ellos', en: 'She regrets that they never offered her the promotion.' },
   { type: 'cloze', level: 7, text: 'Habrán cambiado de opinión, porque hasta ayer ___ (negarse) en redondo.', inf: 'negarse', tense: 'imperfecto', person: 'ellos', en: 'They must have changed their minds, because until yesterday they were flatly refusing.' },
   { type: 'cloze', level: 7, text: 'De haberlo sabido antes, ella ___ (renunciar) al puesto de inmediato.', inf: 'renunciar', tense: 'condperf', person: 'él/ella', en: 'Had she known beforehand, she would have resigned from the position immediately.' },
@@ -571,7 +571,7 @@ window.APPLY_ITEMS = [
   /* ---- B2 apply, batch 2 of 12 ---- */
   { type: 'cloze', level: 6, text: 'No dudes en llamarme en cuanto ___ (tener, tú) noticias.', inf: 'tener', tense: 'presubj', person: 'tú', en: "Don't hesitate to call me as soon as you have news." },
   { type: 'cloze', level: 6, text: 'El portavoz ___ (desmentir) esta mañana los rumores sobre su dimisión.', inf: 'desmentir', tense: 'preterito', person: 'él/ella', en: 'The spokesperson denied the resignation rumors this morning.' },
-  { type: 'cloze', level: 6, text: 'Si vosotros me ___ (advertir) antes, habría cambiado de planes.', inf: 'advertir', tense: 'impsubj', person: 'vosotros', en: 'If you all had warned me sooner, I would have changed plans.' },
+  { type: 'cloze', level: 6, text: 'Si ustedes me ___ (advertir) antes, habría cambiado de planes.', inf: 'advertir', tense: 'impsubj', person: 'ellos', en: 'If you all had warned me sooner, I would have changed plans.' },
   { type: 'cloze', level: 6, text: 'Para entonces, la empresa ya ___ (aplazar) la fecha de lanzamiento dos veces.', inf: 'aplazar', tense: 'plusc', person: 'él/ella', en: 'By then, the company had already postponed the launch date twice.' },
   { type: 'cloze', level: 7, text: 'Cuando el juez se lo pregunte directamente, no ___ (contradecir, tú) tu propia declaración anterior.', inf: 'contradecir', tense: 'presente', person: 'tú', en: "When the judge asks you directly, don't contradict your own earlier statement." },
   { type: 'cloze', level: 7, text: 'Los analistas ___ (prever) ya un crecimiento moderado para el próximo trimestre.', inf: 'prever', tense: 'perfecto', person: 'ellos', en: 'Analysts have already forecast moderate growth for next quarter.' },
@@ -579,7 +579,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'La asociación ___ (denunciar) públicamente las condiciones del centro la próxima semana.', inf: 'denunciar', tense: 'futuro', person: 'él/ella', en: 'The association will publicly denounce the center\'s conditions next week.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite using "de ahí que" + subjunctive to state a consequence:', from: 'El puente estaba en mal estado. Por eso lo cerraron.', to: 'El puente estaba en mal estado, de ahí que lo cerraran.', en: 'The bridge was in poor condition, hence why they closed it.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite avoiding "tú" — address the reader formally with "usted":', from: 'Si tienes alguna duda, puedes escribirnos cuando quieras.', to: 'Si tiene alguna duda, puede escribirnos cuando quiera.', en: 'If you have any doubts, you may write to us whenever you like.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite avoiding "tú": address the reader formally with "usted":', from: 'Si tienes alguna duda, puedes escribirnos cuando quieras.', to: 'Si tiene alguna duda, puede escribirnos cuando quiera.', en: 'If you have any doubts, you may write to us whenever you like.' },
 
   /* ---- B2 apply, batch 3 of 12 ---- */
   { type: 'cloze', level: 6, text: 'Al final, la dirección ___ (ceder) a las peticiones de los empleados.', inf: 'ceder', tense: 'preterito', person: 'él/ella', en: 'In the end, management gave in to the employees\' requests.' },
@@ -605,7 +605,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Durante años, los dos países ___ (pactar) acuerdos comerciales puntuales.', inf: 'pactar', tense: 'imperfecto', person: 'ellos', en: 'For years, the two countries used to negotiate occasional trade agreements.' },
 
   { type: 'transform', level: 7, instruction: 'Rewrite using the subjunctive after "aunque" to concede a point:', from: 'Es una buena oferta. Aun así, la rechazo.', to: 'Aunque sea una buena oferta, la rechazo.', en: 'Even though it may be a good offer, I reject it.' },
-  { type: 'transform', level: 6, instruction: 'Rewrite avoiding colloquialisms (avoidsAny: "o sea", "vale", "guay") for a formal register:', from: 'O sea, vale, lo hacemos así, qué guay.', to: 'De acuerdo, procederemos de esa manera.', en: "Understood, we will proceed that way." },
+  { type: 'transform', level: 6, instruction: 'Rewrite avoiding colloquialisms (avoidsAny: "o sea", "listo", "chévere") for a formal register:', from: 'O sea, listo, lo hacemos así, qué chévere.', to: 'De acuerdo, procederemos de esa manera.', en: "Understood, we will proceed that way." },
 
   /* ---- B2 apply, batch 5 of 12 ---- */
   { type: 'cloze', level: 6, text: 'Si no ___ (talar, ellos) tantos árboles, el suelo no se habría erosionado tan rápido.', inf: 'talar', tense: 'impsubj', person: 'ellos', en: "If they hadn't cut down so many trees, the soil wouldn't have eroded so fast." },
@@ -622,7 +622,7 @@ window.APPLY_ITEMS = [
 
   /* ---- B2 apply, batch 6 of 12 ---- */
   { type: 'cloze', level: 6, text: 'Desde que se fue, ella ___ (añorar) el ruido de la casa llena de gente.', inf: 'añorar', tense: 'presente', person: 'él/ella', en: 'Ever since she left, she misses the noise of a house full of people.' },
-  { type: 'cloze', level: 6, text: 'Ojalá vosotros ___ (apreciar) más lo que tenéis antes de perderlo.', inf: 'apreciar', tense: 'presubj', person: 'vosotros', en: 'I wish you all appreciated what you have before losing it.' },
+  { type: 'cloze', level: 6, text: 'Ojalá ustedes ___ (apreciar) más lo que tienen antes de perderlo.', inf: 'apreciar', tense: 'presubj', person: 'ellos', en: 'I wish you all appreciated what you have before losing it.' },
   { type: 'cloze', level: 7, text: 'Si él no ___ (desconfiar) tanto de todo el mundo, tendría más amigos.', inf: 'desconfiar', tense: 'presente', person: 'él/ella', en: "If he didn't distrust everyone so much, he would have more friends." },
   { type: 'cloze', level: 6, text: 'De joven, yo siempre ___ (anhelar) un cambio así en mi vida.', inf: 'anhelar', tense: 'imperfecto', person: 'yo', en: 'As a young person, I always longed for a change like this in my life.' },
   { type: 'cloze', level: 7, text: 'Al final, aquel malentendido ___ (frustrar) todos sus planes de boda.', inf: 'frustrar', tense: 'preterito', person: 'él/ella', en: 'In the end, that misunderstanding thwarted all their wedding plans.' },
@@ -643,7 +643,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Aquella empresa ___ (quebrar) apenas dos años después de fundarse.', inf: 'quebrar', tense: 'preterito', person: 'él/ella', en: 'That company went bankrupt barely two years after it was founded.' },
   { type: 'cloze', level: 6, text: 'Durante la crisis, muchas familias ___ (ahorrar) hasta el último céntimo posible.', inf: 'ahorrar', tense: 'imperfecto', person: 'ellos', en: 'During the crisis, many families saved every last cent they could.' },
 
-  { type: 'transform', level: 6, instruction: 'Rewrite using the pluscuamperfecto via a relative clause:', from: 'Compraron el piso. Antes lo habían visitado tres veces.', to: 'El piso que habían visitado tres veces fue el que finalmente compraron.', en: 'The apartment they had visited three times was the one they finally bought.' },
+  { type: 'transform', level: 6, instruction: 'Rewrite using the pluscuamperfecto via a relative clause:', from: 'Compraron el apartamento. Antes lo habían visitado tres veces.', to: 'El piso que habían visitado tres veces fue el que finalmente compraron.', en: 'The apartment they had visited three times was the one they finally bought.' },
   { type: 'transform', level: 7, instruction: 'Rewrite as reported speech using "dijo que" (correlación de marcas: tense and deixis shift):', from: 'La directora dijo: "Mañana anunciaremos los despidos aquí."', to: 'La directora dijo que al día siguiente anunciarían los despidos allí.', en: 'The director said that the next day they would announce the layoffs there.' },
 
   /* ---- B2 apply, batch 8 of 12 ---- */
@@ -657,7 +657,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Muchos pacientes ___ (padecer) esta enfermedad durante años sin saberlo.', inf: 'padecer', tense: 'imperfecto', person: 'ellos', en: 'Many patients used to suffer from this disease for years without knowing it.' },
 
   { type: 'transform', level: 6, instruction: 'Rewrite reaching the subjunctive after "para que":', from: 'Le recetaron el jarabe. Así dejaría de toser.', to: 'Le recetaron el jarabe para que dejara de toser.', en: 'They prescribed him the syrup so that he would stop coughing.' },
-  { type: 'transform', level: 7, instruction: 'Rewrite as a formal register write task avoiding informal words (avoidsAny: "vale", "tío", "guay"):', from: 'Vale, tío, el análisis salió guay, no te preocupes.', to: 'De acuerdo, los resultados del análisis son satisfactorios; no hay motivo de preocupación.', en: 'Understood, the test results are satisfactory; there is no reason for concern.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite as a formal register write task avoiding informal words (avoidsAny: "listo", "man", "chévere"):', from: 'Listo, man, el análisis salió chévere, no te preocupes.', to: 'De acuerdo, los resultados del análisis son satisfactorios; no hay motivo de preocupación.', en: 'Understood, the test results are satisfactory; there is no reason for concern.' },
 
   /* ---- B2 apply, batch 9 of 12 ---- */
   { type: 'cloze', level: 6, text: 'Cuando yo ___ (matricularse) en la universidad, todavía no existía internet.', inf: 'matricularse', tense: 'preterito', person: 'yo', en: 'When I enrolled at university, the internet didn\'t exist yet.' },
@@ -708,7 +708,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 6, text: 'Yo ___ (testificar) a su favor sin dudarlo, si me lo pidieran.', inf: 'testificar', tense: 'condicional', person: 'yo', en: 'I would testify in his favor without hesitation, if they asked me to.' },
   { type: 'cloze', level: 6, text: 'Para cuando acabe el juicio, el fiscal ya ___ (jurar) que apelaría cualquier absolución.', inf: 'jurar', tense: 'futperf', person: 'él/ella', en: 'By the time the trial ends, the prosecutor will have already sworn to appeal any acquittal.' },
 
-  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who fined the driver:', from: 'Un agente multó al conductor por aparcar mal.', to: 'Al conductor se le multó por aparcar mal.', en: 'The driver was fined for parking badly.' },
+  { type: 'transform', level: 7, instruction: 'Rewrite as a "se" construction avoiding naming who fined the driver:', from: 'Un agente multó al conductor por estacionar mal.', to: 'Al conductor se le multó por estacionar mal.', en: 'The driver was fined for parking badly.' },
   { type: 'transform', level: 6, instruction: 'Rewrite using at least three distinct tenses to narrate a legal case from start to resolution (distinctTenses: 3):', from: 'Lo demandaron.', to: 'Lo demandaron hace dos años, el juicio sigue abierto todavía, y para el próximo verano probablemente ya se habrá resuelto.', en: 'He was sued two years ago, the trial is still open, and by next summer it will probably have been resolved already.' },
 
   // ---- C1 ----
@@ -735,7 +735,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 5, text: '___ (hacer) ruido, que los niños están durmiendo.', inf: 'hacer', tense: 'impneg', person: 'tú', en: 'Don\'t make noise, the children are sleeping.' },
   { type: 'cloze', level: 5, text: 'Señores, ___ (fumar) dentro del edificio.', inf: 'fumar', tense: 'impneg', person: 'ustedes', en: 'Gentlemen, do not smoke inside the building.' },
   { type: 'cloze', level: 5, text: '___ (ir) por esa calle, está cortada.', inf: 'ir', tense: 'impneg', person: 'tú', en: 'Don\'t go down that street, it\'s closed off.' },
-  { type: 'cloze', level: 5, text: '___ (perder) el billete, lo piden a la salida.', inf: 'perder', tense: 'impneg', person: 'tú', en: 'Don\'t lose the ticket, they ask for it on the way out.' },
+  { type: 'cloze', level: 5, text: '___ (perder) el boleto, lo piden a la salida.', inf: 'perder', tense: 'impneg', person: 'tú', en: 'Don\'t lose the ticket, they ask for it on the way out.' },
   { type: 'cloze', level: 9, text: '___ (revelar) la fuente de la información bajo ninguna circunstancia.', inf: 'revelar', tense: 'impneg', person: 'usted', en: 'Do not reveal the source of the information under any circumstances.' },
   { type: 'transform', level: 9, instruction: 'Rewrite as reported speech, starting with "El ministro declaró que...":', from: 'El ministro dijo: "Revisaremos la ley el próximo mes."', to: 'El ministro declaró que revisarían la ley el mes siguiente.', en: 'The minister stated that they would review the law the following month.' },
   { type: 'transform', level: 9, instruction: 'Rewrite as an impersonal "se" construction, without naming who took the decision:', from: 'El comité tomó la decisión sin consultar a los empleados.', to: 'La decisión se tomó sin consultar a los empleados.', en: 'The decision was made without consulting the employees.' },
@@ -768,7 +768,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 9, text: 'Si lo hubiéramos sabido antes, nosotros ___ (responder) de otra forma.', inf: 'responder', tense: 'condperf', person: 'nosotros', en: 'If we had known beforehand, we would have responded differently.' },
   { type: 'cloze', level: 8, text: 'Para entonces, el equipo ya ___ (terminar) el proyecto.', inf: 'terminar', tense: 'futperf', person: 'él/ella', en: 'By then, the team will have already finished the project.' },
   { type: 'cloze', level: 8, text: 'Nadie se dio cuenta de que el sistema ya ___ (fallar) varias veces.', inf: 'fallar', tense: 'plusc', person: 'él/ella', en: 'No one noticed that the system had already failed several times.' },
-  { type: 'cloze', level: 8, text: '___ (firmar) aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Sign here, please.' },
+  { type: 'cloze', level: 8, text: 'Antes de salir, ___ (firmar) el contrato aquí, por favor.', inf: 'firmar', tense: 'imperativo', person: 'usted', en: 'Before you leave, sign the contract here, please.' },
   { type: 'cloze', level: 8, text: '___ (confirmar) la reserva todavía; falta revisar una cláusula.', inf: 'confirmar', tense: 'impneg', person: 'usted', en: 'Do not confirm the reservation yet; a clause still needs reviewing.' },
   { type: 'transform', level: 9, instruction: 'Rewrite using "para que" + subjunctive to express purpose:', from: 'Firmaron el acuerdo. Así evitarían una demanda.', to: 'Firmaron el acuerdo para que se evitara una demanda.', en: 'They signed the agreement so that a lawsuit would be avoided.' },
   { type: 'transform', level: 8, instruction: 'Rewrite as a negation:', from: 'Todos los socios aprobaron la fusión.', to: 'No todos los socios aprobaron la fusión.', en: 'Not all the partners approved the merger.' },
@@ -799,7 +799,7 @@ window.APPLY_ITEMS = [
   { type: 'cloze', level: 8, text: 'Nos recomendaron que ___ (reservar) con antelación.', inf: 'reservar', tense: 'impsubj', person: 'nosotros', en: 'They recommended that we book in advance.' },
   { type: 'cloze', level: 8, text: 'Qué raro que todavía no ___ (llegar) el paquete.', inf: 'llegar', tense: 'perfsubj', person: 'él/ella', en: 'How strange that the package still has not arrived.' },
   { type: 'cloze', level: 9, text: 'Sin su ayuda, jamás ___ (lograr) yo terminar el proyecto.', inf: 'lograr', tense: 'condperf', person: 'yo', en: 'Without their help, I would never have managed to finish the project.' },
-  { type: 'cloze', level: 8, text: 'El precio del billete ___ (subir) considerablemente en verano.', inf: 'subir', tense: 'futuro', person: 'él/ella', en: 'The ticket price will rise considerably in summer.' },
+  { type: 'cloze', level: 8, text: 'El precio del boleto ___ (subir) considerablemente en verano.', inf: 'subir', tense: 'futuro', person: 'él/ella', en: 'The ticket price will rise considerably in summer.' },
   { type: 'cloze', level: 9, text: 'Cuando el médico la examinó, la infección ya ___ (empeorar).', inf: 'empeorar', tense: 'plusc', person: 'él/ella', en: 'When the doctor examined her, the infection had already worsened.' },
   { type: 'cloze', level: 8, text: 'La compañía ___ (sacar) el producto antes de lo previsto.', inf: 'sacar', tense: 'preterito', person: 'él/ella', en: 'The company brought out the product earlier than planned.' },
   { type: 'cloze', level: 8, text: 'Mientras tanto, los pasajeros ___ (esperar) pacientemente en la sala.', inf: 'esperar', tense: 'imperfecto', person: 'ellos', en: 'Meanwhile, the passengers were waiting patiently in the room.' },
@@ -882,15 +882,15 @@ window.APPLY_ITEMS = [
 
   // ser vs estar
   { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mi hermana ___ profesora de inglés.', options: ['es', 'está'], answer: 0,
-    why: 'A job is what she is, not how she is — ser.', en: 'My sister is an English teacher.' },
+    why: 'A job is what she is, not how she is: ser.', en: 'My sister is an English teacher.' },
   { type: 'choice', level: 1, focus: 'ser-estar', text: 'La sopa ___ muy rica.', options: ['es', 'está'], answer: 1,
-    why: 'How it tastes right now — estar. With ser it would be a permanent quality.', en: 'The soup is delicious.' },
+    why: 'How it tastes right now: estar. With ser it would be a permanent quality.', en: 'The soup is delicious.' },
   { type: 'choice', level: 1, focus: 'ser-estar', text: '¿Dónde ___ la estación de tren?', options: ['es', 'está'], answer: 1,
     why: 'Location always takes estar.', en: 'Where is the train station?' },
   { type: 'choice', level: 1, focus: 'ser-estar', text: 'Hoy ___ martes.', options: ['es', 'está'], answer: 0,
     why: 'Days and dates take ser, even though they change.', en: 'Today is Tuesday.' },
   { type: 'choice', level: 1, focus: 'ser-estar', text: 'Mis padres ___ de Sevilla.', options: ['son', 'están'], answer: 0,
-    why: 'Origin is ser — where you are FROM, not where you are.', en: 'My parents are from Seville.' },
+    why: 'Origin is ser: where you are FROM, not where you are.', en: 'My parents are from Seville.' },
   { type: 'choice', level: 2, focus: 'ser-estar', text: 'Carlos ___ muy callado hoy, ¿le pasa algo?', options: ['es', 'está'], answer: 1,
     why: 'Estar makes it a change from normal; ser would mean he is a quiet person.', en: 'Carlos is very quiet today, is something wrong?' },
   { type: 'choice', level: 2, focus: 'ser-estar', text: 'El examen ___ en el aula 12.', options: ['es', 'está'], answer: 0,
@@ -898,39 +898,39 @@ window.APPLY_ITEMS = [
 
   // por vs para
   { type: 'choice', level: 2, focus: 'por-para', text: 'Este regalo es ___ ti.', options: ['por', 'para'], answer: 1,
-    why: 'The recipient — who it is destined for — takes para.', en: 'This present is for you.' },
+    why: 'The recipient, who it is destined for, takes para.', en: 'This present is for you.' },
   { type: 'choice', level: 2, focus: 'por-para', text: 'Gracias ___ tu ayuda.', options: ['por', 'para'], answer: 0,
-    why: 'The reason you are grateful — por.', en: 'Thanks for your help.' },
+    why: 'The reason you are grateful: por.', en: 'Thanks for your help.' },
   { type: 'choice', level: 2, focus: 'por-para', text: 'Estudio español ___ trabajar en Chile.', options: ['por', 'para'], answer: 1,
-    why: 'Purpose — what the studying is FOR.', en: 'I study Spanish in order to work in Chile.' },
+    why: 'Purpose: what the studying is FOR.', en: 'I study Spanish in order to work in Chile.' },
   { type: 'choice', level: 2, focus: 'por-para', text: 'Pasamos ___ el centro de camino a casa.', options: ['por', 'para'], answer: 0,
-    why: 'Movement THROUGH a place — por.', en: 'We went through the centre on the way home.' },
+    why: 'Movement THROUGH a place: por.', en: 'We went through the centre on the way home.' },
   { type: 'choice', level: 2, focus: 'por-para', text: 'El informe es ___ el lunes.', options: ['por', 'para'], answer: 1,
     why: 'A deadline takes para.', en: 'The report is due on Monday.' },
   { type: 'choice', level: 2, focus: 'por-para', text: 'Lo compré ___ veinte euros.', options: ['por', 'para'], answer: 0,
-    why: 'An exchange — what you swapped for it — takes por.', en: 'I bought it for twenty euros.' },
+    why: 'An exchange, what you swapped for it, takes por.', en: 'I bought it for twenty euros.' },
 
   // direct vs indirect object pronouns
   { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: '¿El libro? Ya ___ he leído.', options: ['lo', 'le'], answer: 0,
-    why: 'El libro is the direct object — lo.', en: 'The book? I have already read it.' },
+    why: 'El libro is the direct object: lo.', en: 'The book? I have already read it.' },
   { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: 'A mi madre ___ escribo todas las semanas.', options: ['la', 'le'], answer: 1,
-    why: 'You write TO her — indirect object, so le even though she is female.', en: 'I write to my mother every week.' },
+    why: 'You write TO her: indirect object, so le even though she is female.', en: 'I write to my mother every week.' },
   { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: '¿Las llaves? Las dejé ___ la mesa.', options: ['en', 'a'], answer: 0,
-    why: 'Position on a surface — en.', en: 'The keys? I left them on the table.' },
+    why: 'Position on a surface: en.', en: 'The keys? I left them on the table.' },
   { type: 'choice', level: 2, focus: 'gr-pronombres-atonos-a2', text: 'Ese dinero es de Ana: ___ lo doy mañana.', options: ['se', 'le'], answer: 0,
-    why: 'le + lo becomes se lo — le never survives in front of lo/la/los/las.', en: 'That money is Ana\'s: I am giving it to her tomorrow.' },
+    why: 'le + lo becomes se lo: le never survives in front of lo/la/los/las.', en: 'That money is Ana\'s: I am giving it to her tomorrow.' },
   { type: 'choice', level: 2, focus: 'gr-objeto-indirecto-a2', text: '___ di las gracias a los vecinos.', options: ['Les', 'Los'], answer: 0,
-    why: 'You gave thanks TO them — indirect object, les.', en: 'I thanked the neighbours.' },
+    why: 'You gave thanks TO them: indirect object, les.', en: 'I thanked the neighbours.' },
   { type: 'choice', level: 2, focus: 'gr-objeto-indirecto-a2', text: 'Compré flores para Marta y ___ las llevé a casa.', options: ['se', 'le'], answer: 0,
-    why: 'le + las becomes se las — le never survives in front of lo/la/los/las.', en: 'I bought flowers for Marta and took them to her house.' },
+    why: 'le + las becomes se las: le never survives in front of lo/la/los/las.', en: 'I bought flowers for Marta and took them to her house.' },
 
   // gustar-type agreement
   { type: 'choice', level: 1, focus: 'gr-verbos-predicativos-tipos-a2', text: 'Me ___ mucho los documentales.', options: ['gusta', 'gustan'], answer: 1,
     why: 'Los documentales is what the verb agrees with, not "me".', en: 'I really like documentaries.' },
   { type: 'choice', level: 1, focus: 'gr-verbos-predicativos-tipos-a2', text: 'A mis hermanos ___ encanta viajar.', options: ['les', 'los'], answer: 0,
-    why: 'Gustar-type verbs always take the indirect pronoun — les.', en: 'My brothers love travelling.' },
+    why: 'Gustar-type verbs always take the indirect pronoun: les.', en: 'My brothers love travelling.' },
   { type: 'choice', level: 2, focus: 'gr-verbos-predicativos-tipos-a2', text: '¿Te ___ la cabeza otra vez?', options: ['duele', 'dueles'], answer: 0,
-    why: 'La cabeza is singular and it is the subject — duele.', en: 'Is your head hurting again?' },
+    why: 'La cabeza is singular and it is the subject: duele.', en: 'Is your head hurting again?' },
 
   // personal a
   { type: 'choice', level: 1, focus: 'gr-objeto-directo-a1', text: 'Conozco ___ tu hermano desde el colegio.', options: ['a', 'al'], answer: 0,
@@ -942,29 +942,29 @@ window.APPLY_ITEMS = [
 
   // preterite vs imperfect — the CHOICE, which no item drilled
   { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Ayer ___ a las siete y desayuné rápido.', options: ['me levanté', 'me levantaba'], answer: 0,
-    why: 'One completed event at a stated time — preterite.', en: 'Yesterday I got up at seven and had a quick breakfast.' },
+    why: 'One completed event at a stated time: preterite.', en: 'Yesterday I got up at seven and had a quick breakfast.' },
   { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Cuando ___ pequeño, vivíamos en el campo.', options: ['fui', 'era'], answer: 1,
-    why: 'A background state with no endpoint — imperfect.', en: 'When I was little, we lived in the countryside.' },
+    why: 'A background state with no endpoint: imperfect.', en: 'When I was little, we lived in the countryside.' },
   { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Yo ___ la tele cuando sonó el teléfono.', options: ['vi', 'veía'], answer: 1,
-    why: 'The ongoing action that got interrupted — imperfect.', en: 'I was watching TV when the phone rang.' },
+    why: 'The ongoing action that got interrupted: imperfect.', en: 'I was watching TV when the phone rang.' },
   { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'El año pasado ___ a Portugal tres veces.', options: ['fuimos', 'íbamos'], answer: 0,
-    why: 'A counted number of completed trips — preterite.', en: 'Last year we went to Portugal three times.' },
+    why: 'A counted number of completed trips: preterite.', en: 'Last year we went to Portugal three times.' },
   { type: 'choice', level: 2, focus: 'preterite-imperfect', text: 'Todos los veranos ___ en casa de mi abuela.', options: ['estuvimos', 'estábamos'], answer: 1,
-    why: '"Every summer" is a repeated habit — imperfect.', en: 'Every summer we stayed at my grandmother\'s house.' },
+    why: '"Every summer" is a repeated habit: imperfect.', en: 'Every summer we stayed at my grandmother\'s house.' },
 
   // comparatives
-  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Este piso es ___ caro que el otro.', options: ['más', 'tan'], answer: 0,
-    why: 'más … que for an unequal comparison; tan needs como.', en: 'This flat is more expensive than the other one.' },
-  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi coche no corre ___ como el tuyo.', options: ['tanto', 'tan'], answer: 0,
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Este apartamento es ___ caro que el otro.', options: ['más', 'tan'], answer: 0,
+    why: 'más … que for an unequal comparison; tan needs como.', en: 'This apartment is more expensive than the other one.' },
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi carro no corre ___ como el tuyo.', options: ['tanto', 'tan'], answer: 0,
     why: 'Tanto modifies a verb; tan would need an adjective after it.', en: 'My car does not go as fast as yours.' },
-  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi hermana es ___ que yo — tiene treinta años.', options: ['mayor', 'más grande'], answer: 0,
-    why: 'Age between people is mayor/menor; más grande is size.', en: 'My sister is older than me — she is thirty.' },
+  { type: 'choice', level: 2, focus: 'gr-comparativos-a2', text: 'Mi hermana es ___ que yo: tiene treinta años.', options: ['mayor', 'más grande'], answer: 0,
+    why: 'Age between people is mayor/menor; más grande is size.', en: 'My sister is older than me: she is thirty.' },
 
   // un vs el — the article contrast English gives no help with
   { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'No me gusta ___ café, prefiero el té.', options: ['el', 'un'], answer: 0,
     why: 'A whole category takes the definite article, where English uses none.', en: 'I do not like coffee, I prefer tea.' },
-  { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'Necesito ___ bolígrafo, ¿tienes uno?', options: ['un', 'el'], answer: 0,
-    why: 'Any pen at all, mentioned for the first time — indefinite.', en: 'I need a pen, do you have one?' },
+  { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'Necesito ___ lapicero, ¿tienes uno?', options: ['un', 'el'], answer: 0,
+    why: 'Any pen at all, mentioned for the first time: indefinite.', en: 'I need a pen, do you have one?' },
   { type: 'choice', level: 2, focus: 'gr-articulo-definido-distribucion-a2', text: 'Me duele ___ cabeza.', options: ['la', 'mi'], answer: 0,
     why: 'Spanish uses the article, not the possessive, for your own body parts.', en: 'My head hurts.' },
 
@@ -972,7 +972,7 @@ window.APPLY_ITEMS = [
   { type: 'choice', level: 1, focus: 'gr-adverbios-lugar-tiempo-cantidad-a1', text: 'Estoy ___ cansada hoy.', options: ['muy', 'mucho'], answer: 0,
     why: 'Muy goes in front of an adjective; mucho never does.', en: 'I am very tired today.' },
   { type: 'choice', level: 1, focus: 'gr-adverbios-lugar-tiempo-cantidad-a1', text: 'Trabajo ___ los lunes.', options: ['mucho', 'muy'], answer: 0,
-    why: 'Mucho modifies the verb — how much you work.', en: 'I work a lot on Mondays.' },
+    why: 'Mucho modifies the verb: how much you work.', en: 'I work a lot on Mondays.' },
 
   // imperative
   { type: 'choice', level: 4, focus: 'gr-imperativo-forma-a2', text: '___ la puerta, por favor. (tú)', options: ['Cierra', 'Cierre'], answer: 0,
@@ -990,6 +990,6 @@ window.APPLY_ITEMS = [
   { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: '___ idiomas es muy útil.', options: ['Aprender', 'Aprendiendo'], answer: 0,
     why: 'English uses -ing as a noun; Spanish uses the infinitive.', en: 'Learning languages is very useful.' },
   { type: 'choice', level: 2, focus: 'gr-gerundio-a2', text: 'Estoy ___ la cena ahora mismo.', options: ['preparando', 'preparar'], answer: 0,
-    why: 'After estar, the gerund — something in progress right now.', en: 'I am making dinner right now.' }
+    why: 'After estar, the gerund: something in progress right now.', en: 'I am making dinner right now.' }
 
 ];

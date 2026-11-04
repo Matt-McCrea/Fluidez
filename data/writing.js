@@ -147,7 +147,7 @@ window.WRITING_TASKS = [
   { id: 'b-future-trip', type: 'build', level: 3, theme: 'viajes', en: 'Next year I will travel to Chile.',
     answer: 'El año que viene viajaré a Chile.' },
   { id: 'b-wish', type: 'build', level: 4, theme: 'relaciones', en: 'I hope you all arrive early.',
-    answer: 'Espero que vosotros lleguéis temprano.' },
+    answer: 'Espero que ustedes lleguen temprano.' },
 
   // ---- more guided translation ----
   { id: 't-cumple', type: 'translate', level: 1, theme: 'relaciones',
@@ -304,7 +304,7 @@ window.WRITING_TASKS = [
       { type: 'person', person: 'yo' },
       { type: 'containsWord', word: 'todos los días' }
     ],
-    models: ['Uso el ordenador todos los días.'] },
+    models: ['Uso el computador todos los días.'] },
 
   { id: 't-family-job', type: 'translate', level: 1, theme: 'trabajo',
     prompt: 'Translate: “My mother is a doctor and works in a hospital.”',
@@ -421,12 +421,12 @@ window.WRITING_TASKS = [
 
   { id: 't-used-to-drive', type: 'translate', level: 2, theme: 'relaciones',
     prompt: 'Translate: “My grandfather used to drive an old car.”',
-    hint: 'imperfect, conducir.',
+    hint: 'imperfect, manejar.',
     constraints: [
       { type: 'anyVerbInTense', tense: 'imperfecto' },
       { type: 'containsWord', word: 'antes' }
     ],
-    models: ['Antes, mi abuelo conducía un coche viejo.'] },
+    models: ['Antes, mi abuelo manejaba un carro viejo.'] },
 
   { id: 't-bought-for-gift', type: 'translate', level: 1, theme: 'compras',
     prompt: 'Translate: “I bought this gift for my sister.”',
@@ -491,7 +491,7 @@ window.WRITING_TASKS = [
       { type: 'anyVerbInTense', tense: 'condicional' },
       { type: 'minWords', n: 5 }
     ],
-    models: ['Ese coche valdría más si fuera nuevo.'] },
+    models: ['Ese carro valdría más si fuera nuevo.'] },
 
   { id: 't-have-hired', type: 'translate', level: 1, theme: 'trabajo',
     prompt: 'Translate: “The company has already hired a new designer.”',
@@ -546,13 +546,13 @@ window.WRITING_TASKS = [
     models: ['Quiero que ella dirija el equipo.'] },
 
   { id: 't-command-vosotros', type: 'translate', level: 4, theme: 'arte',
-    prompt: 'Translate: “Listen to the music!” (vosotros command)',
-    hint: 'vosotros imperative.',
+    prompt: 'Translate: “Listen to the music!” (ustedes command)',
+    hint: 'ustedes imperative.',
     constraints: [
       { type: 'anyVerbInTense', tense: 'imperativo' },
       { type: 'minWords', n: 2 }
     ],
-    models: ['¡Escuchad la música!'] },
+    models: ['¡Escuchen la música!'] },
 
   { id: 't-will-have-finished', type: 'translate', level: 5, theme: 'trabajo',
     prompt: 'Translate: “By Friday, I will have finished the project.”',
@@ -578,7 +578,7 @@ window.WRITING_TASKS = [
     constraints: [
       { type: 'anyVerbInTense', tense: 'perfsubj' }
     ],
-    models: ['Ojalá que vosotros hayáis terminado los estudios para entonces.'] },
+    models: ['Ojalá que ustedes hayan terminado los estudios para entonces.'] },
 
   { id: 't-will-have-saved', type: 'translate', level: 5, theme: 'economia',
     prompt: 'Translate: “By next year, we will have saved enough money.”',
@@ -607,7 +607,7 @@ window.WRITING_TASKS = [
       { type: 'anyVerbInTense', tense: 'presente' },
       { type: 'person', person: 'yo' }
     ],
-    models: ['Todos los días uso el móvil para hablar con mis amigos.', 'Todos los días uso la aplicación del banco.'] },
+    models: ['Todos los días uso el celular para hablar con mis amigos.', 'Todos los días uso la aplicación del banco.'] },
 
   { id: 'w-family-description', type: 'write', level: 1, theme: 'relaciones',
     prompt: 'Describe a family member using “ser” and an adjective.',
@@ -941,8 +941,8 @@ window.WRITING_TASKS = [
     models: ['Pienso mucho antes de decidir.'] },
   { id: 'w-drove-verbos9', type: 'write', level: 1, theme: 'naturaleza',
     prompt: 'Say where you drove to last weekend.',
-    constraints: [{ type: 'verbFormAny', inf: 'conducir', tense: 'preterito' }],
-    models: ['Conduje hasta la montaña el sábado.'] },
+    constraints: [{ type: 'verbFormAny', inf: 'manejar', tense: 'preterito' }],
+    models: ['Manejé hasta la montaña el sábado.'] },
 
   // ==== verb-group lesson writing tasks (groups 10-18) ====
   { id: 't-start-work-verbos10', type: 'translate', level: 1, theme: 'trabajo',
@@ -997,7 +997,7 @@ window.WRITING_TASKS = [
   { id: 'w-waited-verbos15', type: 'write', level: 1, theme: 'viajes',
     prompt: 'Say how long you waited for something recently.',
     constraints: [{ type: 'verbFormAny', inf: 'esperar', tense: 'preterito' }],
-    models: ['Esperé veinte minutos en la parada del autobús.'] },
+    models: ['Esperé veinte minutos en la parada del bus.'] },
 
   { id: 't-help-verbos16', type: 'translate', level: 1, theme: 'educacion',
     prompt: 'Translate: “The teacher helps us a lot.”',
@@ -1070,7 +1070,7 @@ window.WRITING_TASKS = [
   { id: 'w-signed-verbos23', type: 'write', level: 1, theme: 'vivienda',
     prompt: 'Say something you signed recently.',
     constraints: [{ type: 'verbFormAny', inf: 'firmar', tense: 'preterito' }],
-    models: ['Firmé el contrato del piso nuevo.'] },
+    models: ['Firmé el contrato del apartamento nuevo.'] },
 
   { id: 't-clean-house-verbos24', type: 'translate', level: 1, theme: 'vivienda',
     prompt: 'Translate: “We clean the house every Saturday.”',
@@ -1088,7 +1088,7 @@ window.WRITING_TASKS = [
   { id: 'w-argued-verbos25', type: 'write', level: 1, theme: 'relaciones',
     prompt: 'Say what you argued about with someone recently.',
     constraints: [{ type: 'verbFormAny', inf: 'discutir', tense: 'preterito' }],
-    models: ['Discutí con mi hermano sobre el coche.'] },
+    models: ['Discutí con mi hermano sobre el carro.'] },
 
   { id: 't-share-flat-verbos26', type: 'translate', level: 1, theme: 'vivienda',
     prompt: 'Translate: “We share an apartment with two friends.”',
@@ -1116,7 +1116,7 @@ window.WRITING_TASKS = [
   { id: 'w-rented-verbos28', type: 'write', level: 1, theme: 'vivienda',
     prompt: 'Say what you rent or would like to rent.',
     constraints: [{ type: 'verbFormAny', inf: 'alquilar', tense: 'presente' }],
-    models: ['Alquilo un piso pequeño cerca del centro.'] },
+    models: ['Alquilo un apartamento pequeño cerca del centro.'] },
 
   { id: 't-negotiate-verbos29', type: 'translate', level: 1, theme: 'economia',
     prompt: 'Translate: “We negotiate the price every time.”',
@@ -1148,7 +1148,7 @@ window.WRITING_TASKS = [
   { id: 't-program-apps-verbos32', type: 'translate', level: 1, theme: 'ciencia',
     prompt: 'Translate: “I program apps for mobile phones.”',
     constraints: [{ type: 'verbFormAny', inf: 'programar', tense: 'presente' }, { type: 'person', person: 'yo' }],
-    models: ['Programo aplicaciones para móviles.'] },
+    models: ['Programo aplicaciones para celulares.'] },
   { id: 'w-voted-verbos32', type: 'write', level: 1, theme: 'trabajo',
     prompt: 'Say what you voted for recently.',
     constraints: [{ type: 'verbFormAny', inf: 'votar', tense: 'preterito' }],
@@ -1261,7 +1261,7 @@ window.WRITING_TASKS = [
   { id: 'w-big-number-vocab7', type: 'write', level: 1, theme: 'compras',
     prompt: 'Say something that costs around a hundred or a thousand (euros/dollars).',
     constraints: [{ type: 'containsAny', words: ['cien', 'mil'] }],
-    models: ['Ese ordenador cuesta casi mil euros.'] },
+    models: ['Ese computador cuesta casi mil euros.'] },
 
   { id: 'w-order-vocab8', type: 'write', level: 1, theme: 'educacion',
     prompt: 'Say something about being first or last at something.',
@@ -1289,7 +1289,7 @@ window.WRITING_TASKS = [
   { id: 'w-describe-object-color-vocab10', type: 'write', level: 1, theme: 'compras',
     prompt: 'Describe an object using two colors.',
     constraints: [{ type: 'containsAny', words: ['rojo', 'azul', 'verde', 'amarillo', 'negro', 'blanco'] }, { type: 'minWords', n: 5 }],
-    models: ['Mi coche es blanco y negro.'] },
+    models: ['Mi carro es blanco y negro.'] },
 
   { id: 'w-city-country-vocab11', type: 'write', level: 1, theme: 'viajes',
     prompt: 'Say what city and country you live in.',
@@ -1348,11 +1348,11 @@ window.WRITING_TASKS = [
   { id: 'w-compare-things-vocab17', type: 'write', level: 1, theme: 'compras',
     prompt: 'Compare two things using opposite adjectives (grande/pequeño, caro/barato...).',
     constraints: [{ type: 'containsAny', words: ['grande', 'pequeño', 'caro', 'barato', 'fácil', 'difícil'] }, { type: 'minWords', n: 6 }],
-    models: ['Este piso es pequeño pero barato.'] },
+    models: ['Este apartamento es pequeño pero barato.'] },
   { id: 'w-new-old-vocab17', type: 'write', level: 1, theme: 'compras',
     prompt: 'Say if you prefer new or old things.',
     constraints: [{ type: 'containsAny', words: ['nuevo', 'viejo'] }],
-    models: ['Prefiero los coches nuevos.'] },
+    models: ['Prefiero los carros nuevos.'] },
 
   { id: 'w-fast-slow-vocab18', type: 'write', level: 1, theme: 'caracter',
     prompt: 'Say if you are fast or slow at something.',
@@ -1402,8 +1402,8 @@ window.WRITING_TASKS = [
 
   { id: 'w-school-supplies-vocab23', type: 'write', level: 1, theme: 'educacion',
     prompt: 'Say what you have in your backpack or on your desk.',
-    constraints: [{ type: 'containsAny', words: ['mochila', 'cuaderno', 'bolígrafo', 'lápiz', 'escritorio'] }, { type: 'minWords', n: 6 }],
-    models: ['En mi mochila tengo un cuaderno y un bolígrafo.'] },
+    constraints: [{ type: 'containsAny', words: ['mochila', 'cuaderno', 'lapicero', 'lápiz', 'escritorio'] }, { type: 'minWords', n: 6 }],
+    models: ['En mi mochila tengo un cuaderno y un lapicero.'] },
   { id: 'w-whiteboard-vocab23', type: 'write', level: 1, theme: 'educacion',
     prompt: 'Say what the teacher writes on the board.',
     constraints: [{ type: 'containsWord', word: 'pizarra' }],
@@ -1466,7 +1466,7 @@ window.WRITING_TASKS = [
 
   { id: 'w-transport-vocab-travel', type: 'write', level: 1, theme: 'viajes',
     prompt: 'Say how you prefer to travel (car, train, plane...).',
-    constraints: [{ type: 'containsAny', words: ['coche', 'tren', 'avión', 'autobús'] }],
+    constraints: [{ type: 'containsAny', words: ['carro', 'tren', 'avión', 'bus'] }],
     models: ['Prefiero viajar en tren.'] },
   { id: 'w-suitcase-vocab-travel', type: 'write', level: 1, theme: 'viajes',
     prompt: 'Say what you pack in your suitcase for a trip.',
@@ -1520,8 +1520,8 @@ window.WRITING_TASKS = [
 
   { id: 'w-computer-vocab-tech1', type: 'write', level: 1, theme: 'ciencia',
     prompt: 'Say what you use your computer or phone for.',
-    constraints: [{ type: 'containsAny', words: ['ordenador', 'móvil', 'aplicación'] }, { type: 'minWords', n: 5 }],
-    models: ['Uso el ordenador para trabajar y el móvil para hablar.'] },
+    constraints: [{ type: 'containsAny', words: ['computador', 'celular', 'aplicación'] }, { type: 'minWords', n: 5 }],
+    models: ['Uso el computador para trabajar y el celular para hablar.'] },
   { id: 'w-password-vocab-tech1', type: 'write', level: 1, theme: 'ciencia',
     prompt: 'Say something about passwords or wifi.',
     constraints: [{ type: 'containsAny', words: ['contraseña', 'wifi'] }],
@@ -1579,8 +1579,8 @@ window.WRITING_TASKS = [
     models: ['Me gustaría ser ingeniero algún día.'] },
   { id: 'w-waiter-police-vocab-professions', type: 'write', level: 1, theme: 'trabajo',
     prompt: 'Say something about a waiter or police officer.',
-    constraints: [{ type: 'containsAny', words: ['camarero', 'policía'] }],
-    models: ['El camarero de ese restaurante es muy amable.'] },
+    constraints: [{ type: 'containsAny', words: ['mesero', 'policía'] }],
+    models: ['El mesero de ese restaurante es muy amable.'] },
 
   { id: 'w-couple-vocab-relationships', type: 'write', level: 1, theme: 'relaciones',
     prompt: 'Say something about a couple you know (married, dating...).',
@@ -1855,8 +1855,8 @@ window.WRITING_TASKS = [
     models: ['Mirando atrás, habría estudiado algo diferente porque me interesa mucho la tecnología. También habría buscado experiencia antes de terminar la universidad, pero no puedo cambiar el pasado. Aun así, me gusta pensar en estas posibilidades.'] },
 
   // ==== batch 2: B1 (levels 4-5), final wave — build ====
-  { id: 'b-hope-rest-vosotros', type: 'build', level: 4, theme: 'salud', en: 'I hope you (vosotros) rest well.',
-    answer: 'Espero que descanséis bien.' },
+  { id: 'b-hope-rest-vosotros', type: 'build', level: 4, theme: 'salud', en: 'I hope you all rest well.',
+    answer: 'Espero que ustedes descansen bien.' },
   { id: 'b-open-window-usted', type: 'build', level: 4, theme: 'servicios', en: 'Open the window, please. (usted)',
     answer: 'Abra la ventana, por favor.' },
   { id: 'b-had-written-b1', type: 'build', level: 4, theme: 'relaciones', en: 'I had already written the letter.',
@@ -1928,16 +1928,16 @@ window.WRITING_TASKS = [
       { type: 'regex', pattern: 'sugiero que', label: 'start with "te sugiero que"' },
       { type: 'anyVerbInTense', tense: 'presubj' }
     ],
-    models: ['Te sugiero que dejes el móvil antes de dormir.', 'Te sugiero que apagues las luces antes.'] },
+    models: ['Te sugiero que dejes el celular antes de dormir.', 'Te sugiero que apagues las luces antes.'] },
 
   { id: 'w-command-vosotros-wait', type: 'write', level: 4, theme: 'relaciones',
-    prompt: 'Give a vosotros command telling a group to wait here.',
-    hint: 'vosotros imperative.',
+    prompt: 'Give an ustedes command telling a group to wait here.',
+    hint: 'ustedes imperative.',
     constraints: [
       { type: 'anyVerbInTense', tense: 'imperativo' },
       { type: 'minWords', n: 2 }
     ],
-    models: ['Esperad aquí, por favor.'] },
+    models: ['Esperen aquí, por favor.'] },
 
   { id: 'w-plusc-life-event', type: 'write', level: 4, theme: 'viajes',
     prompt: 'Say something you had never done before a specific moment in your life.',
@@ -2260,7 +2260,7 @@ window.WRITING_TASKS = [
 
   { id: 'b2w-escalada-ocio', type: 'write', level: 6, theme: 'ocio',
     prompt: 'Write, in a formal register, a short notice reminding club members to book a slot on the climbing wall in advance.',
-    hint: 'Address members as "ustedes", never "tú"; avoid the word "para" (it homographs a tú imperative) — use "con el fin de" instead.',
+    hint: 'Address members as "ustedes", never "tú"; avoid the word "para" (it homographs a tú imperative): use "con el fin de" instead.',
     constraints: [
       { type: 'avoidsPerson', person: 'tú' },
       { type: 'minWords', n: 15 }
@@ -2356,7 +2356,7 @@ window.WRITING_TASKS = [
 
   { id: 'b2t-hermanos-relaciones', type: 'translate', level: 6, theme: 'relaciones',
     prompt: 'Translate: "The hospital finally gave them back to each other, after ten years of silence."',
-    hint: 'This one is figurative — focus on the double object pronoun structure: "se los".',
+    hint: 'This one is figurative: focus on the double object pronoun structure: "se los".',
     constraints: [
       { type: 'cliticCluster' },
       { type: 'minWords', n: 5 }
@@ -2364,7 +2364,7 @@ window.WRITING_TASKS = [
     models: ['El hospital al final se los devolvió, tras diez años de silencio.'] },
 
   { id: 'b2b-autobus-viajes', type: 'build', level: 6, theme: 'viajes', en: 'It is likely that the tour bus has already left without them.',
-    answer: 'Es probable que el autobús turístico ya haya salido sin ellos.' },
+    answer: 'Es probable que el bus turístico ya haya salido sin ellos.' },
   { id: 'b2b-renta-economia', type: 'build', level: 7, theme: 'economia', en: 'If the government had tried the experiment sooner, the results would have been clearer.',
     answer: 'Si el gobierno hubiera probado el experimento antes, los resultados habrían sido más claros.' },
 
@@ -3261,7 +3261,7 @@ window.WRITING_TASKS = [
     hint: 'más/menos … que, joined with pero.',
     constraints: [{ type: 'containsWord', word: 'que' }, { type: 'containsWord', word: 'pero' },
                   { type: 'containsAny', words: ['más', 'menos'] }],
-    models: ['Este piso es más pequeño que el otro, pero es más barato.'] },
+    models: ['Este apartamento es más pequeño que el otro, pero es más barato.'] },
 
   { id: 't-a2-mayor', type: 'translate', level: 2, theme: 'relaciones',
     prompt: 'Translate: "My brother is older than me."',
@@ -3290,7 +3290,7 @@ window.WRITING_TASKS = [
 
   { id: 't-a2-repair', type: 'translate', level: 2, theme: 'educacion',
     prompt: 'Translate: "Sorry, I did not catch that. Can you say it again more slowly?"',
-    hint: 'Two fixed repair phrases — the exact wording matters more than the grammar.',
+    hint: 'Two fixed repair phrases: the exact wording matters more than the grammar.',
     constraints: [{ type: 'containsAny', words: ['perdona', 'perdón', 'perdone'] },
                   { type: 'containsWord', word: 'repetir' }, { type: 'question' }],
     models: ['Perdona, no te he entendido. ¿Puedes repetirlo más despacio?'] },
@@ -3311,34 +3311,34 @@ window.WRITING_TASKS = [
 
   { id: 't-a2-es-que', type: 'translate', level: 2, theme: 'relaciones',
     prompt: 'Translate: "I cannot come, it is just that I do not have time."',
-    hint: 'es que softens a refusal — it is how you say no without sounding blunt.',
+    hint: 'es que softens a refusal: it is how you say no without sounding blunt.',
     constraints: [{ type: 'containsWord', word: 'es' }, { type: 'containsWord', word: 'que' },
                   { type: 'negation' }],
     models: ['No puedo venir, es que no tengo tiempo.'] },
 
   { id: 't-a2-lo-pronoun', type: 'translate', level: 2, theme: 'ocio',
     prompt: 'Translate: "The book? I have already read it."',
-    hint: 'Replace the noun rather than repeating it — and the pronoun goes in front.',
+    hint: 'Replace the noun rather than repeating it, and the pronoun goes in front.',
     constraints: [{ type: 'containsWord', word: 'lo' }, { type: 'containsWord', word: 'ya' },
                   { type: 'anyVerbInTense', tense: 'perfecto' }],
     models: ['¿El libro? Ya lo he leído.'] },
 
   { id: 't-a2-le-escribo', type: 'translate', level: 2, theme: 'relaciones',
     prompt: 'Translate: "I write to my mother every week."',
-    hint: 'You write TO her — indirect object, so le even though she is female.',
+    hint: 'You write TO her: indirect object, so le even though she is female.',
     constraints: [{ type: 'containsWord', word: 'le' }, { type: 'person', person: 'yo' },
                   { type: 'anyVerbInTense', tense: 'presente' }],
     models: ['Le escribo a mi madre todas las semanas.'] },
 
   { id: 't-a2-doler', type: 'translate', level: 2, theme: 'salud',
     prompt: 'Translate: "My head hurts and my feet hurt too."',
-    hint: 'The body part is the subject, so the verb follows it — and Spanish uses the article, not "my".',
+    hint: 'The body part is the subject, so the verb follows it, and Spanish uses the article, not "my".',
     constraints: [{ type: 'containsWord', word: 'duele' }, { type: 'containsWord', word: 'duelen' }],
     models: ['Me duele la cabeza y también me duelen los pies.'] },
 
   { id: 't-a2-gerundio', type: 'translate', level: 2, theme: 'vivienda',
     prompt: 'Translate: "Learning languages is useful, and I am studying Spanish now."',
-    hint: 'English -ing does two jobs here; Spanish splits them — infinitive as a noun, gerund after estar.',
+    hint: 'English -ing does two jobs here; Spanish splits them: infinitive as a noun, gerund after estar.',
     constraints: [{ type: 'infinitiveUsed', inf: 'aprender' }, { type: 'containsWord', word: 'estoy' },
                   { type: 'containsWord', word: 'estudiando' }],
     models: ['Aprender idiomas es útil, y ahora estoy estudiando español.'] }
@@ -3396,7 +3396,7 @@ window.WRITING_TASKS = [
     prompt: 'Translate: "I want to buy a SIM card for my phone."',
     hint: 'querer + infinitive; para + possessive.',
     constraints: [{ type: 'infinitiveUsed', inf: 'comprar' }, { type: 'containsWord', word: 'para' }],
-    models: ['Quiero comprar una tarjeta SIM para mi móvil.'] },
+    models: ['Quiero comprar una tarjeta SIM para mi celular.'] },
   { id: 'b-serv-cuanto', type: 'build', level: 1, theme: 'servicios',
     en: 'How much does the repair cost?', answer: '¿Cuánto cuesta la reparación?' },
   { id: 't-serv-tarde', type: 'translate', level: 1, theme: 'servicios',
@@ -3504,7 +3504,7 @@ window.WRITING_TASKS = [
     models: ['Tengo frío y me duelen los pies.'] },
   { id: 'w-cuer-describir', type: 'write', level: 1, theme: 'cuerpo',
     prompt: 'Describe what a friend looks like, so somebody could pick them out.',
-    hint: 'Height, hair, eyes — tener for features, ser for build.',
+    hint: 'Height, hair, eyes: tener for features, ser for build.',
     constraints: [{ type: 'containsWord', word: 'pelo' }, { type: 'minWords', n: 15 }],
     models: ['Mi amiga Clara es baja y delgada. Tiene el pelo corto y rizado, y lleva gafas casi siempre.'] },
   { id: 'b-cuer-cabeza', type: 'build', level: 1, theme: 'cuerpo',
@@ -3527,12 +3527,12 @@ window.WRITING_TASKS = [
     models: ['Camino todos los días media hora y nado dos veces a la semana. Siempre me acuesto antes de las once, porque si duermo poco me duele la cabeza.'] },
   { id: 't-cuer-parecerse', type: 'translate', level: 2, theme: 'cuerpo',
     prompt: 'Translate: "She looks a lot like her mother."',
-    hint: 'parecerse a — a reflexive verb with a.',
+    hint: 'parecerse a: a reflexive verb with a.',
     constraints: [{ type: 'containsWord', word: 'parece' }, { type: 'containsWord', word: 'madre' }],
     models: ['Se parece mucho a su madre.'] },
   { id: 't-cuer-antes', type: 'translate', level: 2, theme: 'cuerpo',
     prompt: 'Translate: "When I was young I had longer hair."',
-    hint: 'Two imperfects — a past state, not an event.',
+    hint: 'Two imperfects: a past state, not an event.',
     constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'containsWord', word: 'pelo' }],
     models: ['Cuando era joven tenía el pelo más largo.'] },
   { id: 'p-cuer-cambio', type: 'paragraph', level: 2, theme: 'cuerpo',
@@ -3609,7 +3609,7 @@ window.WRITING_TASKS = [
     prompt: 'Write a message to work saying you are ill and will not come in.',
     hint: 'Say what is wrong and when you expect to be back.',
     constraints: [{ type: 'containsAny', words: ['no puedo', 'no voy a'] }, { type: 'minWords', n: 20 }],
-    models: ['Buenos días: hoy no puedo ir a la oficina porque tengo gripe y bastante fiebre. Voy al médico esta mañana y os digo algo esta tarde. Un saludo.'] },
+    models: ['Buenos días: hoy no puedo ir a la oficina porque tengo gripe y bastante fiebre. Voy al médico esta mañana y les digo algo esta tarde. Un saludo.'] },
   { id: 'b-salud-a2-mejor', type: 'build', level: 2, theme: 'salud',
     en: 'I am feeling better than yesterday.', answer: 'Me encuentro mejor que ayer.' },
   { id: 't-salud-b1-recomendar', type: 'translate', level: 3, theme: 'salud',
@@ -3626,7 +3626,7 @@ window.WRITING_TASKS = [
     prompt: 'Write about a habit you would like to change and what you would do differently.',
     hint: 'me gustaría / debería, and the conditional.',
     constraints: [{ type: 'anyVerbInTense', tense: 'condicional' }, { type: 'minWords', n: 35 }],
-    models: ['Me gustaría dejar de mirar el móvil por la noche, porque luego duermo fatal y al día siguiente no rindo. Lo dejaría cargando en otra habitación y leería un rato antes de dormir. Sé que suena fácil, pero llevo meses diciéndolo.'] },
+    models: ['Me gustaría dejar de mirar el celular por la noche, porque luego duermo fatal y al día siguiente no rindo. Lo dejaría cargando en otra habitación y leería un rato antes de dormir. Sé que suena fácil, pero llevo meses diciéndolo.'] },
   { id: 'w-salud-b2-debate', type: 'write', level: 5, theme: 'salud',
     prompt: 'Argue for or against making healthcare entirely free at the point of use.',
     hint: 'Concede something, then make your case.',
@@ -3693,7 +3693,7 @@ window.WRITING_TASKS = [
     prompt: 'Write a short paragraph about where you grew up and how it was different from now.',
     hint: 'Imperfect for how things were, present for now.',
     constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 30 }],
-    models: ['Crecí en un pueblo pequeño donde todo el mundo se conocía. No había cine ni casi tiendas, y los sábados íbamos a la ciudad en autobús. Ahora vivo en Barcelona y a veces echo de menos aquel silencio.'] },
+    models: ['Crecí en un pueblo pequeño donde todo el mundo se conocía. No había cine ni casi tiendas, y los sábados íbamos a la ciudad en bus. Ahora vivo en Barcelona y a veces echo de menos aquel silencio.'] },
   { id: 'b-iden-a2-doble', type: 'build', level: 2, theme: 'identidad',
     en: 'My father is Italian and my mother is Spanish.', answer: 'Mi padre es italiano y mi madre es española.' },
   { id: 'w-iden-a2-perfil', type: 'write', level: 2, theme: 'identidad',
@@ -3707,7 +3707,7 @@ window.WRITING_TASKS = [
     constraints: [{ type: 'containsWord', word: 'aunque' }, { type: 'anyVerbInTense', tense: 'preterito' }],
     models: ['Aunque nací en Francia, me siento español.'] },
   { id: 'w-iden-b1-pertenencia', type: 'write', level: 3, theme: 'identidad',
-    prompt: 'Write about what makes somebody "from" a place — where you were born, or where you live?',
+    prompt: 'Write about what makes somebody "from" a place: where you were born, or where you live?',
     hint: 'Take a position and give a reason.',
     constraints: [{ type: 'containsAny', words: ['creo', 'me parece', 'para mí'] }, { type: 'minWords', n: 35 }],
     models: ['Para mí uno es de donde tiene la vida, no de donde tiene los papeles. Conozco a gente que nació aquí y no sabe el nombre de su calle, y a otros que llegaron hace cinco años y conocen el barrio mejor que yo. El nacimiento es un accidente; el arraigo se construye.'] },
@@ -3727,7 +3727,7 @@ window.WRITING_TASKS = [
     en: 'My brother is very patient with children.', answer: 'Mi hermano es muy paciente con los niños.' },
   { id: 't-car-humor', type: 'translate', level: 1, theme: 'caracter',
     prompt: 'Translate: "She is in a bad mood today."',
-    hint: 'estar de mal humor — a state, not a trait.',
+    hint: 'estar de mal humor: a state, not a trait.',
     constraints: [{ type: 'containsWord', word: 'humor' }, { type: 'anyVerbInTense', tense: 'presente' }],
     models: ['Hoy está de mal humor.'] },
   { id: 'w-car-amigo', type: 'write', level: 1, theme: 'caracter',
@@ -3739,7 +3739,7 @@ window.WRITING_TASKS = [
     prompt: 'Translate: "He never gets angry."',
     hint: 'nunca before the verb takes no second no.',
     constraints: [{ type: 'containsWord', word: 'nunca' }, { type: 'anyVerbInTense', tense: 'presente' }],
-    models: ['Nunca se enfada.'] },
+    models: ['Nunca se pone bravo.'] },
   { id: 'b-car-parecido', type: 'build', level: 1, theme: 'caracter',
     en: 'We are very different but we get on well.', answer: 'Somos muy diferentes, pero nos llevamos bien.' },
   { id: 't-car-a2-antes', type: 'translate', level: 2, theme: 'caracter',
@@ -3793,7 +3793,7 @@ window.WRITING_TASKS = [
     constraints: [{ type: 'containsWord', word: 'noticias' }, { type: 'anyVerbInTense', tense: 'presente' }],
     models: ['Veo las noticias todas las tardes.'] },
   { id: 'b-med-periodico', type: 'build', level: 1, theme: 'medios',
-    en: 'I read the newspaper on my phone.', answer: 'Leo el periódico en el móvil.' },
+    en: 'I read the newspaper on my phone.', answer: 'Leo el periódico en el celular.' },
   { id: 't-med-serie', type: 'translate', level: 1, theme: 'medios',
     prompt: 'Translate: "This series is very good but very long."',
     hint: 'ser for a quality; pero to join.',
@@ -3804,14 +3804,14 @@ window.WRITING_TASKS = [
     hint: 'Say what you use and how often.',
     constraints: [{ type: 'containsAny', words: ['siempre', 'nunca', 'veces', 'todos los días'] },
                   { type: 'minWords', n: 15 }],
-    models: ['Casi siempre leo las noticias en el móvil por la mañana. Nunca veo la televisión, pero a veces escucho la radio en el coche.'] },
+    models: ['Casi siempre leo las noticias en el celular por la mañana. Nunca veo la televisión, pero a veces escucho la radio en el carro.'] },
   { id: 't-med-apagar', type: 'translate', level: 1, theme: 'medios',
     prompt: 'Translate: "Can you turn off the television, please?"',
     hint: 'poder + infinitive, as a request.',
     constraints: [{ type: 'infinitiveUsed', inf: 'apagar' }, { type: 'question' }],
     models: ['¿Puedes apagar la televisión, por favor?'] },
   { id: 'b-med-movil', type: 'build', level: 1, theme: 'medios',
-    en: 'I spend too much time on my phone.', answer: 'Paso demasiado tiempo con el móvil.' },
+    en: 'I spend too much time on my phone.', answer: 'Paso demasiado tiempo con el celular.' },
   { id: 't-med-a2-enterarse', type: 'translate', level: 2, theme: 'medios',
     prompt: 'Translate: "I found out yesterday because a friend sent it to me."',
     hint: 'Two completed events → preterite; me lo mandó.',
@@ -3876,8 +3876,8 @@ window.WRITING_TASKS = [
   { id: 't-pol-prohibido', type: 'translate', level: 1, theme: 'politica',
     prompt: 'Translate: "It is forbidden to park here."',
     hint: 'está prohibido + infinitive.',
-    constraints: [{ type: 'containsWord', word: 'prohibido' }, { type: 'infinitiveUsed', inf: 'aparcar' }],
-    models: ['Está prohibido aparcar aquí.'] },
+    constraints: [{ type: 'containsWord', word: 'prohibido' }, { type: 'containsWord', word: 'estacionar' }],
+    models: ['Está prohibido estacionar aquí.'] },
   { id: 'w-pol-barrio', type: 'write', level: 1, theme: 'politica',
     prompt: 'Write about one thing you would change in your neighbourhood.',
     hint: 'Say the problem, then what is needed.',
@@ -3899,7 +3899,7 @@ window.WRITING_TASKS = [
     prompt: 'Write a short paragraph about something that has changed in your town in recent years.',
     hint: 'Imperfect for how it was, present or perfect for now.',
     constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'minWords', n: 30 }],
-    models: ['Antes el centro estaba lleno de coches y casi no se podía caminar. Hace tres años lo cerraron al tráfico y ahora hay terrazas y bicicletas por todas partes. A los comerciantes no les gustó al principio, pero ahora viene más gente.'] },
+    models: ['Antes el centro estaba lleno de carros y casi no se podía caminar. Hace tres años lo cerraron al tráfico y ahora hay terrazas y bicicletas por todas partes. A los comerciantes no les gustó al principio, pero ahora viene más gente.'] },
   { id: 'w-pol-a2-carta', type: 'write', level: 2, theme: 'politica',
     prompt: 'Write a short message to your local council about a problem in your street.',
     hint: 'State the problem, say what you are asking for.',
@@ -3977,7 +3977,7 @@ window.WRITING_TASKS = [
     prompt: 'Write about why housing costs so much where you live, and what might help.',
     hint: 'Cause then proposal; porque and para are both useful.',
     constraints: [{ type: 'containsWord', word: 'porque' }, { type: 'minWords', n: 35 }],
-    models: ['Aquí la vivienda es cara porque se construye poco y buena parte de lo que hay está en alquiler turístico. La gente joven se va a vivir a treinta kilómetros y pasa dos horas al día en el coche. Limitar los pisos turísticos ayudaría, aunque no lo arregla solo.'] },
+    models: ['Aquí la vivienda es cara porque se construye poco y buena parte de lo que hay está en alquiler turístico. La gente joven se va a vivir a treinta kilómetros y pasa dos horas al día en el carro. Limitar los apartamentos turísticos ayudaría, aunque no lo arregla solo.'] },
   { id: 'p-eco-b2-trabajo', type: 'paragraph', level: 5, theme: 'economia',
     prompt: 'Write about whether working fewer hours for the same pay could work.',
     hint: 'Take a position and answer the obvious objection.',
@@ -4017,7 +4017,7 @@ window.WRITING_TASKS = [
     hint: 'Set the scene in the imperfect, tell what happened in the preterite.',
     constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'anyVerbInTense', tense: 'imperfecto' },
                   { type: 'minWords', n: 30 }],
-    models: ['Hace dos años fuimos a Galicia en coche sin reservar nada. Llovía casi todos los días y no nos importó nada. Comimos mejor que en ningún otro viaje y volvimos con ganas de repetir.'] }
+    models: ['Hace dos años fuimos a Galicia en carro sin reservar nada. Llovía casi todos los días y no nos importó nada. Comimos mejor que en ningún otro viaje y volvimos con ganas de repetir.'] }
 ,
 
   // ---- top-up to the target depth, weighted to A1/A2 ----------------------
@@ -4115,7 +4115,7 @@ window.WRITING_TASKS = [
     prompt: 'Write about a time you stopped using your phone for a while.',
     hint: 'Preterite for what you did, imperfect for how it felt.',
     constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'minWords', n: 25 }],
-    models: ['El verano pasado dejé el móvil en casa durante una semana en el pueblo. Los dos primeros días estaba nervioso y lo buscaba sin darme cuenta. Después se me olvidó por completo.'] },
+    models: ['El verano pasado dejé el celular en casa durante una semana en el pueblo. Los dos primeros días estaba nervioso y lo buscaba sin darme cuenta. Después se me olvidó por completo.'] },
   { id: 't-med-a2-suele', type: 'translate', level: 2, theme: 'medios',
     prompt: 'Translate: "He usually reads two newspapers a day."',
     hint: 'soler + infinitive.',
@@ -4179,7 +4179,7 @@ window.WRITING_TASKS = [
     prompt: 'Write about a decision in your town that people disagreed about.',
     hint: 'Say what happened and what people thought.',
     constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'minWords', n: 25 }],
-    models: ['El año pasado quitaron los aparcamientos del centro para hacer una zona peatonal. A los comerciantes no les gustó nada y hubo protestas, pero ahora casi nadie quiere volver atrás.'] },
+    models: ['El año pasado quitaron los parqueaderos del centro para hacer una zona peatonal. A los comerciantes no les gustó nada y hubo protestas, pero ahora casi nadie quiere volver atrás.'] },
   { id: 't-pol-a2-suba', type: 'translate', level: 2, theme: 'politica',
     prompt: 'Translate: "Nobody wants to pay more."',
     hint: 'nadie plus querer plus infinitive.',
@@ -4233,7 +4233,7 @@ window.WRITING_TASKS = [
     constraints: [{ type: 'anyVerbInTense', tense: 'imperfecto' }, { type: 'containsWord', word: 'ahora' }],
     models: ['Al principio era difícil, pero ahora me siento en casa.'] },
   { id: 'w-iden-a2-nombre', type: 'write', level: 2, theme: 'identidad',
-    prompt: 'Write about your name — who chose it, and whether it suits you.',
+    prompt: 'Write about your name: who chose it, and whether it suits you.',
     hint: 'Preterite for the choosing, present for now.',
     constraints: [{ type: 'anyVerbInTense', tense: 'preterito' }, { type: 'minWords', n: 25 }],
     models: ['Me pusieron el nombre de mi abuela, que murió el año antes de nacer yo. De pequeña no me gustaba nada porque era muy poco común en el colegio. Ahora me parece que me va bien.'] },
@@ -4254,7 +4254,7 @@ window.WRITING_TASKS = [
     constraints: [{ type: 'containsWord', word: 'parece' }, { type: 'containsWord', word: 'pero' }],
     models: ['Parece serio, pero es muy divertido.'] },
   { id: 'b-car-a2-enfadado', type: 'build', level: 2, theme: 'caracter',
-    en: 'She is angry because we arrived late.', answer: 'Está enfadada porque llegamos tarde.' },
+    en: 'She is angry because we arrived late.', answer: 'Está enojada porque llegamos tarde.' },
   { id: 't-car-b1-daria', type: 'translate', level: 3, theme: 'caracter',
     prompt: 'Translate: "He would never say anything like that."',
     hint: 'Conditional plus nunca.',
@@ -4317,7 +4317,7 @@ window.WRITING_TASKS = [
     prompt: 'Argue for or against extending the four-day week, to the committee that has to decide.',
     brief: 'Tu empresa ha probado la jornada de cuatro días durante seis meses en un solo departamento: el tuyo. El comité de dirección decide el martes si la amplía. Dos de los cinco miembros ya votaron en contra la primera vez. Escribe tu informe: te leen personas con prisa y con la decisión medio tomada.',
     plan: ['Reconoce lo que funcionó, con una cifra concreta',
-           'Admite la objeción más fuerte del otro lado — y respóndela',
+           'Admite la objeción más fuerte del otro lado, y respóndela',
            'Trae el dato que no está sobre la mesa',
            'Cierra con una propuesta acotada, no con un deseo'],
     hint: 'Usted-level register; concede antes de contraargumentar; cierra con una propuesta que se pueda votar.',
@@ -4337,7 +4337,7 @@ window.WRITING_TASKS = [
     brief: 'Contrataste una reforma con entrega el 30 de junio. Te la entregaron el 28 de septiembre y la factura final trae 2.400 euros de conceptos que nadie te comunicó por escrito. La empresa sigue trabajando en tu barrio y no quieres un pleito: quieres que anulen el importe y revisen el baño.',
     plan: ['Los hechos primero: fechas, importes, qué se firmó',
            'El argumento: qué cláusula se incumplió',
-           'La concesión — lo que sí les reconoces',
+           'La concesión: lo que sí les reconoces',
            'La petición, en una frase, con plazo'],
     hint: 'Usted a lo largo de toda la carta. Los hechos antes que las valoraciones. Impersonal con "se" donde señalar a alguien no ayuda.',
     constraints: [
@@ -4354,8 +4354,8 @@ window.WRITING_TASKS = [
   { id: 'b2e-moviles-educacion', type: 'essay', level: 6, cefr: 'B2', theme: 'educacion',
     rubric: 'opinion-debate',
     prompt: 'Take your turn in the staff-room debate: a colleague has proposed banning phones outright.',
-    brief: 'Estás en el claustro. Una compañera acaba de defender la prohibición total del móvil con datos buenos y con razón en casi todo. No estás de acuerdo con la medida, pero vas a seguir trabajando con ella el resto del curso. Tu turno.',
-    plan: ['Recoge lo que ha dicho — demuestra que lo has entendido',
+    brief: 'Estás en el claustro. Una compañera acaba de defender la prohibición total del celular con datos buenos y con razón en casi todo. No estás de acuerdo con la medida, pero vas a seguir trabajando con ella el resto del curso. Tu turno.',
+    plan: ['Recoge lo que ha dicho, demuestra que lo has entendido',
            'Atenúa antes de discrepar',
            'Discrepa del argumento, no de la persona',
            'Aporta algo nuevo: una alternativa concreta y comprobable'],
@@ -4368,15 +4368,15 @@ window.WRITING_TASKS = [
       { type: 'minSentences', n: 6 },
       { type: 'minWords', n: 150 }
     ],
-    models: ['Comparto buena parte de lo que se ha dicho: es cierto que el móvil interrumpe la clase y que muchos centros han llegado al límite. En cuanto al efecto sobre la atención, los datos que se citan son sólidos y no pretendo discutirlos. Ahora bien, no creo que la prohibición total resuelva el problema de fondo. Hasta cierto punto, retirar el aparato traslada el conflicto a la puerta del instituto, donde ya nadie lo supervisa. Dicho de otro modo, ganamos la hora de clase y perdemos la ocasión de enseñar a usarlo. Si no me equivoco, lo que se propuso en el claustro anterior iba en otra dirección: reservar el móvil para tareas concretas y retirarlo el resto del tiempo. Esa vía exige más trabajo del profesorado, todo hay que decirlo, pero no renuncia a formar a nadie. Propongo, en consecuencia, que probemos la fórmula mixta durante un trimestre y que comparemos los resultados con los de los grupos que mantengan la prohibición.'] },
+    models: ['Comparto buena parte de lo que se ha dicho: es cierto que el celular interrumpe la clase y que muchos centros han llegado al límite. En cuanto al efecto sobre la atención, los datos que se citan son sólidos y no pretendo discutirlos. Ahora bien, no creo que la prohibición total resuelva el problema de fondo. Hasta cierto punto, retirar el aparato traslada el conflicto a la puerta del colegio, donde ya nadie lo supervisa. Dicho de otro modo, ganamos la hora de clase y perdemos la ocasión de enseñar a usarlo. Si no me equivoco, lo que se propuso en el claustro anterior iba en otra dirección: reservar el celular para tareas concretas y retirarlo el resto del tiempo. Esa vía exige más trabajo del profesorado, todo hay que decirlo, pero no renuncia a formar a nadie. Propongo, en consecuencia, que probemos la fórmula mixta durante un trimestre y que comparemos los resultados con los de los grupos que mantengan la prohibición.'] },
 
   { id: 'b2e-pisos-turisticos-economia', type: 'essay', level: 7, cefr: 'B2', theme: 'economia',
     rubric: 'formal-transaccional',
     prompt: 'Write to the mayor on behalf of your neighbourhood association about the tourist-flat bylaw.',
-    brief: 'La ordenanza va a pleno el mes que viene. Tu asociación no pide la prohibición — la mitad del comercio del barrio vive del turismo y lo sabéis. Pedís tres cosas concretas, y las cifras que las sostienen son del propio ayuntamiento, que es lo que las hace difíciles de rebatir.',
+    brief: 'La ordenanza va a pleno el mes que viene. Tu asociación no pide la prohibición: la mitad del comercio del barrio vive del turismo y lo saben. Piden tres cosas concretas, y las cifras que las sostienen son del propio ayuntamiento, que es lo que las hace difíciles de rebatir.',
     plan: ['Sitúa quién escribe y sobre qué expediente',
            'Concede lo que el ayuntamiento tiene razón en defender',
-           'Los datos — y de dónde salen',
+           'Los datos, y de dónde salen',
            'Las peticiones, numerables y votables'],
     hint: 'Usted. Impersonal con "se" para los hechos administrativos. Las cifras antes que la indignación.',
     constraints: [
@@ -4396,7 +4396,7 @@ window.WRITING_TASKS = [
     brief: 'Te han pedido 250 palabras para la página de opinión de un diario que acaba de poner muro de pago y ha perdido un tercio de sus lectores. La redacción te lee. Los lectores que se fueron, también.',
     plan: ['Deshaz la confusión que la pregunta esconde',
            'Lo que se creyó durante veinte años, y en qué acabó',
-           'El reproche más serio al muro de pago — reconócelo entero',
+           'El reproche más serio al muro de pago, reconócelo entero',
            'Por qué la alternativa tampoco es gratis',
            'Cierra desplazando la pregunta, no repitiéndola'],
     hint: 'Contraargumentativos de C1. Impersonal con "se" para lo que se sostiene sin firmar. La conclusión debe decir algo nuevo.',
@@ -4433,11 +4433,11 @@ window.WRITING_TASKS = [
 
   { id: 'c1e-voto-politica', type: 'essay', level: 9, cefr: 'C1', theme: 'politica',
     rubric: 'opinion-debate',
-    prompt: 'Take your turn against compulsory voting — to somebody you agree with about the problem.',
+    prompt: 'Take your turn against compulsory voting: to somebody you agree with about the problem.',
     brief: 'La abstención en las últimas municipales fue del sesenta por ciento y quien propone el voto obligatorio tiene razón en el diagnóstico. Es amigo tuyo y vais a seguir hablando de esto. Discrepas de la medida, no del problema.',
     plan: ['Concede el diagnóstico sin reservas',
            'Reformula su argumento antes de responderlo',
-           'Trae la evidencia contraria — y señala tú mismo su límite',
+           'Trae la evidencia contraria, y señala tú mismo su límite',
            'Rescata la parte de su propuesta que sí apoyas',
            'Propón separar las dos medidas'],
     hint: 'Tuteo: es un debate entre iguales. Atenuadores de C1, y cuantifica en vez de afirmar en absoluto.',
@@ -4458,7 +4458,7 @@ window.WRITING_TASKS = [
     plan: ['Nombra la confusión que la pregunta esconde',
            'Concede lo razonable de pedir criterios',
            'El caso contrario, con ejemplos que no se puedan discutir',
-           'El sesgo del sistema alternativo — sin fingir que hay uno neutral',
+           'El sesgo del sistema alternativo, sin fingir que hay uno neutral',
            'Reformula la pregunta: no si evaluar, sino en qué plazo'],
     hint: 'Impersonal con "se" para lo que se debate. Un aditivo de C1 para el efecto que nadie contabiliza.',
     constraints: [
@@ -4477,7 +4477,7 @@ window.WRITING_TASKS = [
     brief: 'Ochenta piezas que casi nunca se han visto juntas, y un montaje cronológico que convierte una obsesión del pintor en una evolución. El museo te ha dado la acreditación. La reseña sale el viernes y la van a leer allí.',
     plan: ['Di qué justifica la visita, sin rodeos',
            'Gira: lo que el montaje hace en contra de la obra',
-           'Un ejemplo concreto y verificable — sala, obra, distancia',
+           'Un ejemplo concreto y verificable: sala, obra, distancia',
            'Lo que el museo ha hecho bien, y dilo de verdad',
            'Cierra con un juicio doble, no con una nota'],
     hint: 'Un comentador de C1 para girar. Un focalizador para bajar al ejemplo. El elogio tiene que ser específico o no cuenta.',
@@ -4494,9 +4494,9 @@ window.WRITING_TASKS = [
 
   { id: 'c1e-lobo-naturaleza', type: 'essay', level: 9, cefr: 'C1', theme: 'naturaleza',
     rubric: 'opinion-debate',
-    prompt: 'Persuade a hostile audience to postpone the motion — the people who lost the livestock.',
+    prompt: 'Persuade a hostile audience to postpone the motion: the people who lost the livestock.',
     brief: 'Asamblea de ganaderos. La moción pide retirar la protección del lobo y va a salir adelante esta tarde. Quien la ha presentado perdió seis ovejas en una noche. No te van a escuchar por compasión y no tienes autoridad aquí: tienes dos minutos y un dato.',
-    plan: ['Pide lo concreto al principio — no hagas esperar',
+    plan: ['Pide lo concreto al principio, no hagas esperar',
            'Reconoce el daño sin condescendencia y sin peros',
            'El argumento: por qué la medida no resuelve lo que duele',
            'Apoya la parte de la moción que sí funcionaría',
@@ -4564,7 +4564,7 @@ window.WRITING_TASKS = [
       { type: 'minSentences', n: 7 },
       { type: 'minWords', n: 150 }
     ],
-    models: ['Estimados señores: El pasado 12 de enero adquirí en su establecimiento un ordenador portátil por importe de novecientos euros, según la factura que se adjunta. En primer lugar, quiero dejar constancia de que el equipo dejó de encender a los catorce meses, es decir, dentro del periodo de garantía legal de tres años. Pues bien, en el servicio técnico se me informó de que el fallo corresponde a la placa base y de que la reparación no se cubre por tratarse de un uso indebido. Ahora bien, el equipo no ha sufrido ningún golpe ni contacto con líquidos, y en el propio informe técnico no se menciona daño externo alguno. Dado que la normativa presume que los defectos aparecidos en ese plazo son de origen, corresponde a la empresa acreditar lo contrario. No obstante, reconozco que el trato recibido en tienda fue correcto en todo momento y que se me atendió sin demora. Les solicito, en consecuencia, la reparación sin coste o, en su defecto, la sustitución del equipo. Quedo a la espera de su respuesta. Atentamente,'] },
+    models: ['Estimados señores: El pasado 12 de enero adquirí en su establecimiento un computador portátil por importe de novecientos euros, según la factura que se adjunta. En primer lugar, quiero dejar constancia de que el equipo dejó de encender a los catorce meses, es decir, dentro del periodo de garantía legal de tres años. Pues bien, en el servicio técnico se me informó de que el fallo corresponde a la placa base y de que la reparación no se cubre por tratarse de un uso indebido. Ahora bien, el equipo no ha sufrido ningún golpe ni contacto con líquidos, y en el propio informe técnico no se menciona daño externo alguno. Dado que la normativa presume que los defectos aparecidos en ese plazo son de origen, corresponde a la empresa acreditar lo contrario. No obstante, reconozco que el trato recibido en tienda fue correcto en todo momento y que se me atendió sin demora. Les solicito, en consecuencia, la reparación sin coste o, en su defecto, la sustitución del equipo. Quedo a la espera de su respuesta. Atentamente,'] },
 
   { id: 'b2e-comedor-alimentacion', type: 'essay', level: 6, cefr: 'B2', theme: 'alimentacion',
     rubric: 'opinion-debate',
@@ -4595,7 +4595,7 @@ window.WRITING_TASKS = [
            'Traslada el ahorro: quién acaba pagándolo',
            'Reformula la pregunta: rentable, o servicio',
            'Propón una salida intermedia y una fecha'],
-    hint: 'Usted. Impersonal con "se" para lo que dice el informe. Cierra con un ordenador de cierre, no con un ruego.',
+    hint: 'Usted. Impersonal con "se" para lo que dice el informe. Cierra con un computador de cierre, no con un ruego.',
     constraints: [
       { type: 'sePassive' },
       { type: 'connectorFrom', class: 'contraargumentativo', minLevel: 'B2' },
@@ -4636,7 +4636,7 @@ window.WRITING_TASKS = [
            'Compárala con una reforma anterior que ya nadie discute',
            'Nombra lo que de verdad incomoda',
            'Cierra sobre esa distinción'],
-    hint: 'Impersonal con "se": la norma no la aplica nadie en concreto. Cierra con un ordenador de cierre.',
+    hint: 'Impersonal con "se": la norma no la aplica nadie en concreto. Cierra con un computador de cierre.',
     constraints: [
       { type: 'sePassive' },
       { type: 'connectorFrom', class: 'contraargumentativo', minLevel: 'B2' },
@@ -4650,7 +4650,7 @@ window.WRITING_TASKS = [
 
   { id: 'b2e-recomendacion-caracter', type: 'essay', level: 6, cefr: 'B2', theme: 'caracter',
     rubric: 'formal-transaccional',
-    prompt: 'Write the reference letter for a former colleague — including the thing she is not good at.',
+    prompt: 'Write the reference letter for a former colleague: including the thing she is not good at.',
     brief: 'Cuatro años a tu cargo, llevando las incidencias ya escaladas. Es la mejor que has tenido en ese puesto. También tarda en pedir ayuda, y el puesto al que opta es de trabajo en equipo. Una carta que solo alabe no la ayuda: quien la lee ha leído cincuenta.',
     plan: ['Sitúa la relación: cuánto tiempo, en qué puesto',
            'Di qué exigía el puesto realmente',
@@ -4673,11 +4673,11 @@ window.WRITING_TASKS = [
   { id: 'b2e-encuentro-viajes', type: 'essay', level: 6, cefr: 'B2', theme: 'viajes',
     rubric: 'opinion-debate',
     prompt: 'Your colleague wants to cut the annual team meet-up. Argue for keeping it, in the meeting.',
-    brief: 'El presupuesto de formación se ha recortado un treinta por ciento y algo hay que quitar: en eso tiene razón. El encuentro anual es la partida más visible. El año que se canceló, el plan anual tardó cuatro meses en cerrarse en vez de tres semanas — y no puedes demostrar que una cosa causara la otra.',
+    brief: 'El presupuesto de formación se ha recortado un treinta por ciento y algo hay que quitar: en eso tiene razón. El encuentro anual es la partida más visible. El año que se canceló, el plan anual tardó cuatro meses en cerrarse en vez de tres semanas, y no puedes demostrar que una cosa causara la otra.',
     plan: ['Concede el recorte y de dónde sale la propuesta',
            'Dale la razón en lo que la tiene',
            'Di qué se compra de verdad con ese gasto',
-           'Trae tu evidencia — y admite su límite tú mismo',
+           'Trae tu evidencia, y admite su límite tú mismo',
            'Propón una versión más barata y una comparación'],
     hint: 'Tuteo entre iguales. Admitir el límite de tu propia prueba te hace más difícil de rebatir, no menos.',
     constraints: [
@@ -4713,7 +4713,7 @@ window.WRITING_TASKS = [
 
   { id: 'c1e-simbolos-religion', type: 'essay', level: 9, cefr: 'C1', theme: 'religion',
     rubric: 'argumentativa',
-    prompt: 'Argue the case on religious symbols in public buildings — where the real fault line is.',
+    prompt: 'Argue the case on religious symbols in public buildings: where the real fault line is.',
     brief: 'Para una revista de pensamiento cuyos lectores esperan que tomes partido por uno de los dos bandos. Ninguno de los dos bandos es el que ellos creen: hay creyentes a favor de retirarlos y agnósticos en contra.',
     plan: ['Desmonta la línea de fractura que se da por supuesta',
            'Toma en serio el mejor argumento de cada lado',
@@ -4756,11 +4756,11 @@ window.WRITING_TASKS = [
   { id: 'c1e-ia-redaccion-medios', type: 'essay', level: 9, cefr: 'C1', theme: 'medios',
     rubric: 'opinion-debate',
     prompt: 'Your editor wants to automate sport and election results first. Argue for starting elsewhere.',
-    brief: 'Si no automatizáis algo, cerráis antes: en eso estáis de acuerdo. Pero deportes y resultados son justo donde un error se propaga más rápido y se corrige más tarde, porque nadie relee un resultado. Es tu jefe y tiene que decidir esta semana.',
+    brief: 'Si no automatizan algo, cierran antes: en eso están de acuerdo. Pero deportes y resultados son justo donde un error se propaga más rápido y se corrige más tarde, porque nadie relee un resultado. Es tu jefe y tiene que decidir esta semana.',
     plan: ['Concede el diagnóstico sin fingir lo contrario',
            'Reformula su propuesta antes de responderla',
            'Di por qué ese es el peor sitio para empezar',
-           'Propón el sitio correcto — y admite qué ahorra menos',
+           'Propón el sitio correcto, y admite qué ahorra menos',
            'Rescata la parte que firmas hoy mismo'],
     hint: 'Tuteo: es una conversación de redacción. Atenuadores de C1, y un "antes bien" para el giro.',
     constraints: [
@@ -4775,7 +4775,7 @@ window.WRITING_TASKS = [
 
   { id: 'c1e-turismo-viajes', type: 'essay', level: 9, cefr: 'C1', theme: 'viajes',
     rubric: 'argumentativa',
-    prompt: 'Argue the case on limiting tourism — without either of the two words that end the argument.',
+    prompt: 'Argue the case on limiting tourism, without either of the two words that end the argument.',
     brief: 'Para un diario regional donde una palabra la usa un bando y la otra el suyo. Ni "turismofobia" ni "sostenibilidad" sirven ya para nada. El único dato medido en serio es la relación entre licencias turísticas por portal y subida del alquiler en ese portal.',
     plan: ['Desactiva la palabra que envenena el debate',
            'Toma en serio la cifra del sector y di por qué no zanja nada',
@@ -4797,12 +4797,12 @@ window.WRITING_TASKS = [
   { id: 'c1e-mecenazgo-arte', type: 'essay', level: 8, cefr: 'C1', theme: 'arte',
     rubric: 'opinion-debate',
     prompt: 'Answer the trustee who says private patronage has never shaped the museum programme.',
-    brief: 'Sin ese dinero, la mitad de las exposiciones de la última década no se habrían montado, y lo sabes. Pero de las catorce muestras patrocinadas por la fundación, once eran de artistas cuya obra ella colecciona. Probablemente nadie pidió nada — y ese es justamente el punto.',
+    brief: 'Sin ese dinero, la mitad de las exposiciones de la última década no se habrían montado, y lo sabes. Pero de las catorce muestras patrocinadas por la fundación, once eran de artistas cuya obra ella colecciona. Probablemente nadie pidió nada, y ese es justamente el punto.',
     plan: ['Concede la dependencia del dinero, sin rodeos',
            'Reformula su afirmación antes de responderla',
            'El dato, y lo que hace falta para leerlo',
            'La versión sin villanos, que es la incómoda',
-           'Concede que lo público tampoco es inocente — y di la diferencia'],
+           'Concede que lo público tampoco es inocente, y di la diferencia'],
     hint: 'Tuteo entre patronos. Un focalizador de C1 para bajar al dato. Pide algo concreto al final.',
     constraints: [
       { type: 'subjunctiveAfter', trigger: 'no creo que' },
@@ -4837,7 +4837,7 @@ window.WRITING_TASKS = [
 
   { id: 'c1e-callejero-identidad', type: 'essay', level: 9, cefr: 'C1', theme: 'identidad',
     rubric: 'argumentativa',
-    prompt: 'Argue the case on renaming streets — and on who gets to decide.',
+    prompt: 'Argue the case on renaming streets, and on who gets to decide.',
     brief: 'El pleno vota el jueves una lista de once nombres. Escribes en el diario local, donde la mitad de los lectores cree que borrar un nombre es borrar historia y la otra mitad cree que mantenerlo es suscribirlo.',
     plan: ['Distingue archivar de nombrar',
            'Toma en serio el argumento de borrar la historia, y muéstralo falso',

@@ -41,7 +41,7 @@ window.IDIOMS = [
 {es:'tener ganas de', en:'to feel like (doing something)', lit:'to have desire of'},
 {es:'dar un paseo', en:'to take a walk', lit:'to give a stroll'},
 {es:'hacer falta', en:'to be necessary / to lack', lit:'to make lack'},
-{es:'echar de menos', en:'to miss (someone)', lit:'to throw of less'},
+{es:'extrañar', en:'to miss (someone)', lit:'to find strange'},
 {es:'ponerse de acuerdo', en:'to come to an agreement', lit:'to put oneself of accord'},
 {es:'a menudo', en:'often', lit:'to menu'},
 
