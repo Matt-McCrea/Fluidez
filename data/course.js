@@ -890,7 +890,7 @@ window.COURSE = [
   { unit: 'b1-u39', band: 'B1', title: 'Joining ideas up',
     goal: 'I can link ideas by cause, result, concession and comparison.',
     canDo: ['give causes and results',
-            'concede with aunque, indicative or subjunctive',
+            'concede with aunque and the ordinary form',
             'compare with igual de and más de',
             'use soler, volver a, dejar de'],
     days: [
@@ -945,8 +945,8 @@ window.COURSE = [
 
   { unit: 'b1-u42', band: 'B1', title: 'If things had been different',
     goal: 'I can talk about what is not the case, and what would have been.',
-    canDo: ['use si + imperfect subjunctive + conditional',
-            'use si + pluperfect subjunctive + conditional perfect',
+    canDo: ['say an if that is not so: si + the -ra form + the -ría form',
+            'guess and regret with the future perfect and the conditional perfect',
             'match the tenses across the comma',
             'use the imperative beyond the order'],
     days: [
