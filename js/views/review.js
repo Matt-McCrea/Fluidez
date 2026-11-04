@@ -143,6 +143,14 @@ window.StageReview = (function () {
       items.push({ id: ph.id, es: ph.es, en: ph.en, kind: 'phrase',
                    hint: ph.note || null, enrolledOnly: true });
     });
+    /* Contrast items already served (js/contrasts.js): FSRS schedules each one by
+     * its own id, so once enrolled it comes back here like any other card. */
+    if (window.Contrasts && window.Contrasts.ready()) {
+      window.CONTRAST_ITEMS.forEach(function (it) {
+        var cid = 'x:' + it.id;
+        if (S.isEnrolled(cid)) { var c = window.Contrasts.cardOf(it); c.enrolledOnly = true; items.push(c); }
+      });
+    }
     if (ErrorLog) ErrorLog.cards().forEach(function (c) {               // {front, back, hint} — fixed
       items.push({ id: c.id, front: c.front, back: c.back, hint: c.hint || null, kind: 'error', fixed: true });
     });
@@ -151,9 +159,19 @@ window.StageReview = (function () {
     return window.Vetoed ? window.Vetoed.filter(items) : items;
   }
 
+  // the sentence with its gap shown as ___
+  function contrastFront(c) {
+    var g = c.gap || [0, 0];
+    return c.es.slice(0, g[0]) + '___' + c.es.slice(g[1]);
+  }
+
   // Resolve a card to a concrete direction: { front, back, mode, toSpanish, hint }
   function resolve(card, pr) {
     // a question written as a choice is asked as a choice, with ITS options
+    if (card.kind === 'contrast') {
+      return { front: contrastFront(card), back: card.options[card.answer], mode: 'contrast', toSpanish: true,
+               hint: card.why || null, options: card.options };
+    }
     if (card.fixed && card.probe && card.probe.kind === 'mcq' && (card.probe.options || []).length > 1) {
       return { front: card.front, back: card.back, mode: 'choice', toSpanish: true,
                options: card.probe.options,
@@ -233,7 +251,39 @@ window.StageReview = (function () {
     return out;
   }
 
+  /* ---- contrast cards: weekly-ish slots, not daily ----
+   * fluidez.progress.contrast = {n: review sessions begun, last: the n of the last
+   * session that carried contrast cards}. A slot opens when two sessions have
+   * passed since the last one, so at most one session in two. */
+  var BAND_ORDER = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4 };
+  function progGet() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
+  function contrastSlot(commit) {
+    var pg = progGet(), c = pg.contrast || { n: 0, last: -9 };
+    var n = (c.n || 0) + 1, open = n - (c.last == null ? -9 : c.last) >= 2;
+    if (commit) {
+      pg.contrast = { n: n, last: open ? n : c.last };
+      try { localStorage.setItem('fluidez.progress', JSON.stringify(pg)); } catch (e) {}
+    }
+    return open;
+  }
+  function wantsContrasts() { return (BAND_ORDER[P.current()] || 0) >= 1; }
+  /* js/contrasts.js and its data are injected on demand (not in index.html). */
+  function ensureContrasts(need, cb) {
+    if (!need || typeof document === 'undefined' || (window.Contrasts && window.Contrasts.ready())) { cb(); return; }
+    var go = function () { if (window.Contrasts) window.Contrasts.load(function () { cb(); }); else cb(); };
+    if (window.Contrasts) { go(); return; }
+    var s = document.createElement('script');
+    s.src = 'js/contrasts.js'; s.onload = go; s.onerror = function () { cb(); };
+    document.head.appendChild(s);
+  }
+
   function run(host, ctx, done) {
+    var rx = (ctx && ctx.step && ctx.step.extra) || {};
+    var need = wantsContrasts() || (Array.isArray(rx.queue) && rx.queue.some(function (id) { return /^x:x:/.test(id); }));
+    ensureContrasts(need, function () { runDeck(host, ctx, done); });
+  }
+
+  function runDeck(host, ctx, done) {
     var pr = P.params();
     /* Teach before test. A vocabulary or idiom card that has never been shown
      * is NOT drawn here: the Learn stage teaches it (see newToday, below) and
@@ -297,6 +347,22 @@ window.StageReview = (function () {
     } else {
       batch = S.batch(all, cap, fresh, !pr.orderedVocab, prefer);
       batch.forEach(function (it) { S.enrol(it.id); });
+      /* Contrast cards: from A2, when the plan has room and the weekly-ish slot is
+       * open, up to 3 items from contrasts whose every side is known. Never in a
+       * quick review. */
+      if (wantsContrasts() && !(ctx && ctx.mode === 'rapido') && window.Contrasts && window.Contrasts.ready() && window.Known) {
+        var room = Math.min(3, cap - batch.length);
+        if (contrastSlot(true) && room > 0) {
+          var pg = progGet(), dI = ctx && ctx.dayIndex != null ? ctx.dayIndex : -1;
+          var known = window.Known.forLearner(pg, dI);
+          var have = {}; batch.forEach(function (it) { have[it.id] = 1; });
+          var cc = window.Contrasts.cardsFor(known, room, null, { dayIndex: dI, isEnrolled: S.isEnrolled })
+            .filter(function (c) { return !have[c.id]; });
+          cc.forEach(function (c) { S.enrol(c.id); c.enrolledOnly = true; all.push(c); });
+          window.Contrasts.markSeen(cc);
+          batch = batch.concat(cc);
+        }
+      }
     }
 
     // recognition distractors: other English glosses of the same kind
@@ -400,6 +466,7 @@ window.StageReview = (function () {
       UI.clear(body);
       // an authored choice always has its options; a vocab card needs three
       // plausible distractors scavenged from the same kind before it can offer one
+      if (R.mode === 'contrast') { showContrast(); return; }
       var canChoose = R.mode === 'choice' &&
         (R.options ? R.options.length > 1
                    : (enByKind[cur.kind] || []).filter(function (b) { return b !== R.back; }).length >= 3);
@@ -428,6 +495,27 @@ window.StageReview = (function () {
           if (UI.isNothing(R.back)) feedback.textContent += ' (' + UI.NOTHING_NOTE + ')';
           feedback.className = 'feedback ' + (right ? 'good' : 'bad');
           setTimeout(function () { advance(right); }, right ? 450 : 1200);
+        });
+        grid.appendChild(b);
+      });
+      body.appendChild(grid);
+    }
+
+    // ---- a contrast item: the sentence with a gap, the forms as buttons, English under it ----
+    function showContrast() {
+      kind.textContent = UI.t('contraste', 'contrast');
+      body.appendChild(UI.el('div', 'muted', cur.en));
+      var answered = false, grid = UI.el('div', 'mcq-opts');
+      E.shuffle(R.options.slice()).forEach(function (opt) {
+        var b = UI.el('button', 'mcq-btn', UI.optLabel(opt)); b.type = 'button'; b.dataset.opt = opt;
+        b.addEventListener('click', function () {
+          if (answered) return; answered = true; stamp();
+          var right = opt === R.back;
+          b.classList.add(right ? 'right' : 'wrong');
+          if (!right) Array.prototype.forEach.call(grid.children, function (c) { if (c.dataset.opt === R.back) c.classList.add('right'); });
+          feedback.textContent = (right ? '¡Correcto! ' : UI.optLabel(R.back) + '. ') + (cur.why || '');
+          feedback.className = 'feedback ' + (right ? 'good' : 'bad');
+          setTimeout(function () { advance(right); }, right ? 1400 : 2600);
         });
         grid.appendChild(b);
       });
