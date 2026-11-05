@@ -214,8 +214,12 @@ window.StageReview = (function () {
       return true;
     });
   }
-  // the Settings number is a ceiling on due cards, and only when the learner set one
+  /* The Settings number is the most cards one session's Review takes: the number Settings shows, which is
+   * the band's default until the learner changes it. It used to apply only once the learner had typed a
+   * number, so the default on screen was never enforced and a day could run to 90 cards (playtest,
+   * 5 Nov 2026). */
   function manualCap() {
+    if (P.capFor) { var c = P.capFor(P.current()); if (c > 0) return c; }
     try { var o = JSON.parse(localStorage.getItem('fluidez.caps')) || {}; var v = o[P.current()]; return v > 0 ? v : 0; }
     catch (e) { return 0; }
   }
@@ -225,6 +229,9 @@ window.StageReview = (function () {
   function planFor(ctx) {
     if (ctx && ctx._plan) return ctx._plan;
     var pl = S.plan(reviewable(pool()), { manualCap: manualCap() });
+    /* the day's plan is cached at its first use; the cap is read now, so a change in Settings counts today */
+    var mc = manualCap();
+    if (mc > 0 && pl.dueCap > mc) pl = Object.assign({}, pl, { dueCap: mc });
     if (ctx) ctx._plan = pl;
     return pl;
   }
@@ -311,6 +318,44 @@ window.StageReview = (function () {
     document.head.appendChild(s);
   }
 
+  /* WHAT ONE REVIEW SESSION ASKS. Ordinary vocabulary (word meaning and form, verb meanings, idioms) is the
+   * bulk of the deck; everything else (grammar recall, conjugation in context, contrasts, phrases, sound
+   * natural, about me, the error log) takes at most a third of the cap, spread through the words rather
+   * than in a block, and fills further only when too few words are due. Within each side the most overdue
+   * and the leeches come first (SRS.batch), and what is left stays due for the next session. Contrast
+   * cards, from A2 and when the slot is open, are part of the third. */
+  var VOCAB_KINDS = { vocab: 1, verb: 1, idiom: 1 };
+  var OTHER_SHARE = 1 / 3;
+  function deckFor(all, cap, fresh, shuffleFresh, prefer, ctx) {
+    var vPool = all.filter(function (it) { return VOCAB_KINDS[it.kind]; });
+    var oPool = all.filter(function (it) { return !VOCAB_KINDS[it.kind]; });
+    var v = S.batch(vPool, null, 0, shuffleFresh, prefer);
+    var o = S.batch(oPool, null, fresh, shuffleFresh, prefer);
+    if (wantsContrasts() && !(ctx && ctx.mode === 'rapido') && window.Contrasts && window.Contrasts.ready() && window.Known && contrastSlot(true)) {
+      var pg = progGet(), dI = ctx && ctx.dayIndex != null ? ctx.dayIndex : -1;
+      var have = {}; o.forEach(function (it) { have[it.id] = 1; });
+      var cc = window.Contrasts.cardsFor(window.Known.forLearner(pg, dI), 3, null, { dayIndex: dI, isEnrolled: S.isEnrolled })
+        .filter(function (c) { return !have[c.id]; });
+      cc.forEach(function (c) { c.enrolledOnly = true; all.push(c); });
+      window.Contrasts.markSeen(cc);
+      o = cc.concat(o);
+    }
+    return mixDeck(v, o, cap);
+  }
+  function mixDeck(v, o, cap) {
+    if (cap == null) cap = v.length + o.length;
+    var nO = Math.min(o.length, Math.max(Math.round(cap * OTHER_SHARE), cap - v.length));
+    var nV = Math.min(v.length, cap - nO);
+    v = v.slice(0, nV); o = o.slice(0, nO);
+    var out = [], tot = v.length + o.length, placed = 0;
+    for (var k = 0, vi = 0; k < tot; k++) {
+      // the k-th card is a concept card when the running share of them falls behind
+      if (placed < o.length && (vi >= v.length || (placed + 1) * tot <= (k + 1) * o.length)) out.push(o[placed++]);
+      else out.push(v[vi++]);
+    }
+    return out;
+  }
+
   function run(host, ctx, done) {
     var rx = (ctx && ctx.step && ctx.step.extra) || {};
     var need = wantsContrasts() || (Array.isArray(rx.queue) && rx.queue.some(function (id) { return /^x:x:/.test(id); }));
@@ -390,24 +435,8 @@ window.StageReview = (function () {
       all.forEach(function (it) { byId[it.id] = it; });
       batch = ex.queue.map(function (id) { return byId[id]; }).filter(Boolean);
     } else {
-      batch = S.batch(all, cap, fresh, !pr.orderedVocab, prefer);
+      batch = deckFor(all, cap, fresh, !pr.orderedVocab, prefer, ctx);
       batch.forEach(function (it) { S.enrol(it.id); });
-      /* Contrast cards: from A2, when the plan has room and the weekly-ish slot is
-       * open, up to 3 items from contrasts whose every side is known. Never in a
-       * quick review. */
-      if (wantsContrasts() && !(ctx && ctx.mode === 'rapido') && window.Contrasts && window.Contrasts.ready() && window.Known) {
-        var room = Math.min(3, cap - batch.length);
-        if (contrastSlot(true) && room > 0) {
-          var pg = progGet(), dI = ctx && ctx.dayIndex != null ? ctx.dayIndex : -1;
-          var known = window.Known.forLearner(pg, dI);
-          var have = {}; batch.forEach(function (it) { have[it.id] = 1; });
-          var cc = window.Contrasts.cardsFor(known, room, null, { dayIndex: dI, isEnrolled: S.isEnrolled })
-            .filter(function (c) { return !have[c.id]; });
-          cc.forEach(function (c) { S.enrol(c.id); c.enrolledOnly = true; all.push(c); });
-          window.Contrasts.markSeen(cc);
-          batch = batch.concat(cc);
-        }
-      }
     }
 
     // recognition distractors: other English glosses of the same kind
@@ -642,6 +671,8 @@ window.StageReview = (function () {
        * accented form shown back. See js/checker.js checkExact. */
       function mOpts() {
         var o = { meaning: !!MEANING[cur.kind] };
+        // Spanish to English: the Spanish article licenses the English one ("la casa", "the house")
+        if (!R.toSpanish && typeof R.front === 'string') o.from = R.front;
         if (cur.kind === 'phrase' && R.toSpanish && window.Phrases) {
           // ...except where the accent is the only thing separating two words
           if (!window.Phrases.accentCritical(R.back)) o.accents = 'lenient';
@@ -738,5 +769,6 @@ window.StageReview = (function () {
     show();
   }
 
-  return { key: 'review', label: 'Repasar', icon: '🔁', run: run, pool: pool, newToday: newToday };
+  return { key: 'review', label: 'Repasar', icon: '🔁', run: run, pool: pool, newToday: newToday,
+           _mixDeck: mixDeck, _planFor: planFor };
 })();

@@ -185,7 +185,7 @@ window.Settings = (function () {
     if (window.Profile) {
       wrap.appendChild(UI.el('h3', null, UI.t('Tope de repaso', 'Review cap')));
       wrap.appendChild(UI.el('p', 'muted',
-        'The most items ' + UI.t('Repasar', 'Review') + ' will show in one session, per mode. The cap only lowers how many due cards one session takes: when more are due, the ones you keep missing and the most overdue come first, and the rest wait for the next session.'));
+        'The most cards ' + UI.t('Repasar', 'Review') + ' will show in one session, per level. When more are due, the ones you keep missing and the most overdue come first and the rest wait. Words are about two thirds of it; grammar, phrases and contrasts the rest. A low number also slows the new words a day, so the pile does not grow.'));
       var capRow = UI.el('div', 'cap-row');
       window.Profile.all().forEach(function (pf) {
         var field = UI.el('div', 'cap-field');

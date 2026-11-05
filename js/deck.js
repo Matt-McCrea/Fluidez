@@ -64,7 +64,7 @@ window.Deck = (function () {
     // A gloss with two meanings, or a gender bracket, accepts any one of them.
     var MEANING = { vocab: 1, idiom: 1, phrase: 1, capture: 1, verb: 1 };
     function meaningOpts() {
-      var o = { meaning: !!MEANING[cur.kind] };
+      var o = { meaning: !!MEANING[cur.kind], from: cur.front };   // the Spanish article licenses the English one (js/checker.js)
       // phrase cards are graded generously — see js/checker.js checkExact
       if (cur.kind === 'phrase' && window.Phrases) {
         // ...except where the accent is the only thing separating two words

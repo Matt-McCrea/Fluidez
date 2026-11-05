@@ -559,7 +559,29 @@ window.Checker = (function () {
     return E.normalize(s).replace(/[.,;:!?¡¿"“”'’]/g, '').replace(/\s+/g, ' ').trim();
   }
 
+  /* THE ARTICLE THE SPANISH GAVE YOU. A meaning card shows "la casa" and holds "house": typing "the house"
+   * translates exactly what was shown, so it passes. el, la, los, las and lo license "the"; un and una
+   * "a" or "an"; unos and unas "some". Only a leading article, only on meaning cards answered in English,
+   * and only when the Spanish itself starts with the matching article. */
+  var ARTICLE_EN = { el: /^(the)\s+/i, la: /^(the)\s+/i, los: /^(the)\s+/i, las: /^(the)\s+/i, lo: /^(the)\s+/i,
+                     un: /^(a|an)\s+/i, una: /^(a|an)\s+/i, unos: /^(some)\s+/i, unas: /^(some)\s+/i };
+  function articleStripped(input, from) {
+    var m = /^\s*[¿¡]?\s*(el|la|los|las|lo|un|una|unos|unas)\s+\S/i.exec(String(from || ''));
+    if (!m) return null;
+    var re = ARTICLE_EN[m[1].toLowerCase()], t = String(input || '').trim();
+    return re.test(t) ? t.replace(re, '') : null;
+  }
   function checkExact(input, accepted, opts) {
+    if (opts && opts.meaning && opts.from) {
+      var bareArt = articleStripped(input, opts.from);
+      if (bareArt) {
+        var o2 = Object.assign({}, opts); delete o2.from;
+        var r2 = checkExact(bareArt, accepted, o2);
+        if (r2.pass) return r2;
+        var r1 = checkExact(input, accepted, o2);
+        return r1.pass ? r1 : { pass: false, near: r1.near || r2.near };
+      }
+    }
     var norm = E.normalize(input);
     var list = Array.isArray(accepted) ? accepted : [accepted];
     if (opts && opts.meaning) {

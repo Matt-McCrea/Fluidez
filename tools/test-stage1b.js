@@ -59,6 +59,53 @@ ok(window.VOCAB_ADJECTIVES.every(a => window.VOCAB.some(w => w.es === a)), 'list
   ok(late.length === 3 && names === late.map(w => w.es).sort().join('|'), 'New today draws the lesson keywords first (' + names + ')');
 }
 
+// the review deck (playtest 5 Nov 2026): the Settings cap is the ceiling, ordinary vocabulary is the bulk,
+// concept cards at most a third of the cap and spread through it
+{
+  const vm = require('vm'), R = path.join(__dirname, '..');
+  const store = {};
+  const sb = { console, Math, JSON, Object, Array, String, Number, isFinite, parseInt, Promise, setTimeout: f => { f(); return 0; },
+    location: { search: '', hash: '' },
+    localStorage: { getItem: k => (k in store ? store[k] : null), setItem: (k, v) => { store[k] = String(v); }, removeItem: k => { delete store[k]; } } };
+  sb.window = sb;
+  sb.Profile = { current: () => 'B1', params: () => ({ orderedVocab: false, newPerDay: 8, maxGate: 99 }), wordAllowed: () => true,
+    catRank: () => 0, tenses: () => ['presente'], capFor: () => 20 };
+  sb.UI = {}; sb.ENGINE = { shuffle: a => a }; sb.Checker = {}; sb.ErrorLog = { cards: () => [] };
+  const ctx = vm.createContext(sb);
+  for (const f of ['js/lib.bundle.js', 'js/srs.js']) vm.runInContext(fs.readFileSync(path.join(R, f), 'utf8'), ctx);
+  vm.runInContext(fs.readFileSync(path.join(R, 'js/views/review.js'), 'utf8'), ctx);
+  const SR = sb.StageReview;
+  const V = n => Array.from({ length: n }, (_, i) => ({ id: 'v' + i, kind: 'vocab' }));
+  const O = n => Array.from({ length: n }, (_, i) => ({ id: 'g' + i, kind: 'grammar' }));
+  let d = SR._mixDeck(V(60), O(30), 20);
+  const nO = d.filter(c => c.kind !== 'vocab').length;
+  ok(d.length === 20, 'the deck stops at the cap (' + d.length + ')');
+  ok(nO === 7, 'concept cards take a third of the cap when words are plentiful (' + nO + ')');
+  let run = 0, worst = 0; d.forEach(c => { run = c.kind !== 'vocab' ? run + 1 : 0; worst = Math.max(worst, run); });
+  ok(worst === 1, 'and are spread through the words, never two in a row');
+  d = SR._mixDeck(V(5), O(30), 20);
+  ok(d.length === 20 && d.filter(c => c.kind === 'vocab').length === 5, 'with few words due, concept cards fill the rest');
+  d = SR._mixDeck(V(40), O(2), 20);
+  ok(d.length === 20 && d.filter(c => c.kind !== 'vocab').length === 2, 'with few concept cards due, words fill the rest');
+  const pl = SR._planFor({});
+  ok(pl.dueCap <= 20, 'the plan never serves more due cards than the cap Settings shows (' + pl.dueCap + ')');
+}
+
+// the English article that matches the Spanish one is accepted on a meaning card
+{
+  const W = { };
+  const sb2 = { console, Math, JSON, Object, Array, String, Number, RegExp, isFinite, parseInt };
+  sb2.window = sb2;
+  const vm = require('vm'), R = path.join(__dirname, '..'), c2 = vm.createContext(sb2);
+  for (const f of ['js/engine.js', 'js/checker.js']) vm.runInContext(fs.readFileSync(path.join(R, f), 'utf8'), c2);
+  const C = sb2.Checker, m = (i, a, f) => C.checkExact(i, a, { meaning: true, from: f }).pass;
+  ok(m('the house', 'house', 'la casa') && m('The books', 'books', 'los libros') && m('the problem', 'problem', 'el problema'), 'the for el, la, los');
+  ok(m('a dog', 'dog', 'un perro') && m('an apple', 'apple', 'una manzana') && m('some friends', 'friends', 'unos amigos'), 'a, an, some for un, una, unos');
+  ok(!m('the dog', 'dog', 'un perro') && !m('the house', 'house', 'casa'), 'not an article the Spanish did not have');
+  ok(m('house', 'house', 'la casa') && m('the house', 'the house', 'la casa'), 'without the article still passes');
+  ok(!m('the hose', 'house', 'la casa'), 'a wrong word with the article is still wrong');
+}
+
 // UI dash helper (pure parts, loaded with a stub document)
 window.Profile = { current: () => 'A1', term: (es, en) => en };
 global.document = { createElement: () => ({ style: {}, appendChild() {}, addEventListener() {} }) };

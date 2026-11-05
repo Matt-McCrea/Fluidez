@@ -1049,6 +1049,7 @@ window.StageLearn = (function () {
          * answer feeds it — see C.answerForms. */
         var r = C.checkExact(input.value, accepted, {
           meaning: it.kind !== 'grammar',
+          from: it.front,                         // the Spanish article licenses the English one (js/checker.js)
           also: C.answerForms ? C.answerForms(it.back) : null
         });
         if (r.pass) { fb.textContent = '¡Correcto!'; fb.className = 'feedback good'; setTimeout(function () { next(true); }, 300); }

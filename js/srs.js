@@ -341,7 +341,7 @@ window.SRS = (function () {
    * count into minutes. Within budget, the full new-card target is taught.
    * Over budget, new cards shrink toward a floor of 3 so the backlog cannot
    * grow; past twice the budget only 1.5 times the budget is served and still
-   * 3 new. `manualCap` (the Settings number, when the learner set one) is a
+   * 3 new. `manualCap` (the Settings number, the band's default until changed) is a
    * ceiling on the due cards only. The plan is fixed for the day once made. */
   /* SUCCESS STEERS DIFFICULTY. Yesterday's right share, read off the review
    * log (needs at least 10 reviews that day): under 0.80 the day's new-card
