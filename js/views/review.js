@@ -34,15 +34,15 @@ window.StageReview = (function () {
     var items = [];
     (window.VOCAB || []).forEach(function (w, idx) {
       if (!P.wordAllowed(w)) return;                     // your own words are never gated out
-      items.push({ id: 'v:' + w.es + ':meaning', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
-                   cat: w.cat, theme: w.theme || null, rank: P.catRank(w.cat), idx: idx });
-      /* From A2 a word is two cards: the meaning (recognition) and the form
-       * (type the Spanish). The form card exists once the meaning has been
-       * passed; it is never drawn as a new word. */
-      if (P.current() !== 'A1') {
-        items.push({ id: 'v:' + w.es + ':form', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
-                     form: true, enrolledOnly: true });
-      }
+      /* ONE CARD PER WORD, AND IT ASKS FOR THE SPANISH (owner's ruling, 5 Nov 2026: no Spanish to English
+       * cards). Until then a word from A2 was two cards, the meaning (Spanish shown, give the English) and the
+       * form (English shown, type the Spanish), and the form card only joined after the meaning was passed,
+       * so most of the deck went Spanish to English. A word whose form card was already enrolled keeps that
+       * card and its memory of producing the word; every other word is asked through its first card, which
+       * now also shows the English. */
+      var fid = 'v:' + w.es + ':form', hasForm = S.isEnrolled(fid);
+      items.push({ id: hasForm ? fid : 'v:' + w.es + ':meaning', es: (window.LexMatch ? window.LexMatch.shown(w.es) : w.es), en: w.en, kind: 'vocab',
+                   cat: w.cat, theme: w.theme || null, rank: P.catRank(w.cat), idx: idx, form: hasForm, enrolledOnly: hasForm });
     });
     (window.IDIOMS || []).forEach(function (x) {
       items.push({ id: 'i:' + x.es, es: x.es, en: x.en, lit: x.lit || null, kind: 'idiom' });
@@ -194,14 +194,8 @@ window.StageReview = (function () {
                hint: card.probe.options.some(UI.isNothing) ? (card.hint ? card.hint + ' (' : '(') + '"(nothing)" means ' + UI.NOTHING_NOTE + (card.hint ? ')' : ')') : (card.hint || null) };
     }
     if (card.fixed) return { front: card.front, back: card.back, mode: 'type', toSpanish: true, hint: card.hint || null };
-    var d = pr.reviewDirection;
-    if (card.form) d = 'en2es';
-    // from B1 typed recall is the default: the meaning card is "type the English" (graded with the
-    // meaning alternatives), and the form card types the Spanish. A1 and A2 keep their own direction.
-    else if (card.kind === 'vocab' && /^B[12]$|^C/.test(P.current())) d = 'es2en-type';
-    if (d === 'graduated') d = (S.boxOf(card.id) <= 1) ? 'es2en' : 'en2es';
-    if (d === 'es2en-type') return { front: card.es, back: card.en, mode: 'type', toSpanish: false, hint: card.hint || null };
-    if (d === 'es2en') return { front: card.es, back: card.en, mode: 'choice', toSpanish: false, hint: card.hint || null };
+    /* Every word, idiom, verb and phrase card shows the English and asks for the Spanish, at every band
+     * (no Spanish to English cards: see pool above). */
     return { front: card.en, back: card.es, mode: 'type', toSpanish: true,
       hint: card.kind === 'idiom' && card.lit ? 'lit: ' + card.lit : (card.hint || null) };
   }
@@ -368,14 +362,6 @@ window.StageReview = (function () {
      * is NOT drawn here: the Learn stage teaches it (see newToday, below) and
      * it joins this deck the next day. Only cards the learner has already met
      * can be asked, so nothing here is ever "new". */
-    if (P.current() !== 'A1') {                       // words passed before the production card existed
-      var made = 0;
-      (window.VOCAB || []).forEach(function (w) {
-        if (made >= 5) return;
-        var m = 'v:' + w.es + ':meaning', f = S.formId(m);
-        if (S.passed(m) && !S.isEnrolled(f)) { S.enrol(f, 1); made++; }
-      });
-    }
     var all = reviewable(pool());
     /* Five minutes after a full session: never re-ask a card already graded today. */
     if (ctx && ctx.mode === 'rapido') {

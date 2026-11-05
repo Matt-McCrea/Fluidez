@@ -296,10 +296,7 @@ window.StageLearn = (function () {
   // Quick-check direction: production (type the Spanish) for standard/refresher;
   // recognition (Spanish shown, give the English) for beginners — matching how
   // their brand-new words start in the graduated daily review.
-  function qcDir() {
-    var d = window.Profile ? window.Profile.params().reviewDirection : 'en2es';
-    return d === 'en2es' ? 'en2es' : 'es2en';
-  }
+  function qcDir() { return 'en2es'; }      // no Spanish to English cards (owner's ruling, 5 Nov 2026)
   function qcItem(id, es, en) {
     return qcDir() === 'es2en' ? { id: id, front: es, back: en } : { id: id, front: en, back: es };
   }

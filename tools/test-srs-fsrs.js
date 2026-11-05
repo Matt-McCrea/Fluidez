@@ -140,26 +140,19 @@ const rawStore = store => JSON.parse(store['fluidez.srs'] || '{}');
   ok(S.batch([{ id: 'x' }], 10, 0).length === 1, 'and still comes back through batch when its day arrives');
 }
 
-/* ---- 3 and 4. two cards per lexeme ---------------------------------------- */
+/* ---- 3 and 4. one card per word, asking for the Spanish (owner's ruling, 5 Nov 2026) ---------- */
 {
   clock.t = Date.UTC(2026, 0, 5, 9, 0, 0);
-  const store = {}; let W = world(store, 'A1'); let S = W.SRS;
-  S.enrol('v:perro:meaning'); S.grade('v:perro:meaning', true);
-  ok(!S.isEnrolled('v:perro:form'), 'A1: recognition only, no production card');
-  W = world({}, 'A2'); S = W.SRS;
-  S.enrol('v:perro:meaning', 1);
-  ok(!S.isEnrolled('v:perro:form'), 'A2: enrolling the meaning does not enrol the form');
-  S.grade('v:perro:meaning', false);
-  ok(!S.isEnrolled('v:perro:form'), 'A2: a failed first attempt does not enrol the form');
-  S.grade('v:perro:meaning', true);
-  ok(S.isEnrolled('v:perro:form') && S.formId('v:perro:meaning') === 'v:perro:form', 'A2: the form card joins when the meaning is first passed');
-  ok(!S.isDue('v:perro:form') && S.isEnrolled('v:perro:form'), 'the form card is due tomorrow, not in the same session');
-  clock.t += DAY * 20;
-  S.grade('v:perro:form', false);
-  ok(S.stabilityOf('v:perro:form') < S.stabilityOf('v:perro:meaning'), 'the two cards are scheduled independently');
-  S.grade('v:perro:meaning', true);
+  ['A1', 'A2', 'B1'].forEach(band => {
+    const W = world({}, band), S = W.SRS;
+    S.enrol('v:perro:meaning', 1); S.grade('v:perro:meaning', true);
+    ok(!S.isEnrolled('v:perro:form'), band + ': passing a word enrols no second card');
+  });
+  const W = world({}, 'B1'), S = W.SRS;
   S.enrol('v:gato:meaning'); S.enrol('v:gato:form');
-  ok(S.dueCount([{ id: 'v:gato:meaning' }]) === 2, 'the hub count reads both cards of a word');
+  ok(S.dueCount([{ id: 'v:gato:meaning' }]) === 1, 'a word with an older form card counts once, through that card');
+  S.enrol('v:casa:meaning');
+  ok(S.dueCount([{ id: 'v:casa:meaning' }]) === 1, 'a word with one card counts once');
 }
 
 /* ---- the review deck: learning steps, I do not know, hint ------------------ */
@@ -273,20 +266,24 @@ function stepStats(made) { return latest(made, 'muted review-stats').textContent
 }
 
 {
-  // B1 and above: the meaning card is typed (Spanish shown, type the English); the form card types the Spanish
+  // every band: the card shows the English and types the Spanish; a word with an older form card is asked through it
   clock.t = Date.UTC(2026, 0, 5, 9, 0, 0);
   const t = day0(), store = {};
   store['fluidez.srsSchema'] = '3';
-  store['fluidez.srs'] = JSON.stringify({ 'v:perro:meaning': { box: 3, due: t, reps: 3, last: t - 8 }, 'v:gato:form': { box: 3, due: t, reps: 3, last: t - 4 } });
+  store['fluidez.srs'] = JSON.stringify({ 'v:perro:meaning': { box: 3, due: t, reps: 3, last: t - 8 }, 'v:gato:meaning': { box: 3, due: t, reps: 3, last: t - 9 }, 'v:gato:form': { box: 3, due: t, reps: 3, last: t - 4 } });
   const { W, made } = deckWorld(store, 'B1');
   W.StageReview.run({ children: [], appendChild(c) { return c; } }, { results: {}, mode: 'diaria', step: { save() {} }, rng: Math.random }, () => {});
-  ok(shown(made).textContent === 'perro' && latest(made, 'answer-input') && latest(made, 'ghost-btn', 'I don\'t know'), 'B1: the meaning card shows the Spanish and is typed, with I do not know');
-  const inp = latest(made, 'answer-input'); inp.value = 'the perro (en)'; inp.listeners.input.forEach(fn => fn({}));
-  ok(rawStore(store)['v:perro:meaning'].reps === 4, 'B1: typing the English passes it');
-  ok(shown(made).textContent === 'the gato (en)', 'B1: the form card shows the English and types the Spanish');
-  const A2 = deckWorld({ 'fluidez.srsSchema': '3', 'fluidez.srs': JSON.stringify({ 'v:perro:meaning': { box: 1, due: t, reps: 1, last: t - 9 }, 'v:gato:meaning': { box: 1, due: t, reps: 1, last: t - 2 }, 'v:casa:meaning': { box: 1, due: t, reps: 1, last: t - 2 }, 'v:mesa:meaning': { box: 1, due: t, reps: 1, last: t - 2 } }) }, 'A2');
-  A2.W.StageReview.run({ children: [], appendChild(c) { return c; } }, { results: {}, mode: 'diaria', step: { save() {} }, rng: Math.random }, () => {});
-  ok(shown(A2.made).textContent === 'perro' && !latest(A2.made, 'answer-input'), 'A2: a fragile meaning card is still the graduated recognition choice');
+  const fronts = () => made.filter(x => x.className === 'card-front').map(x => x.textContent);
+  ok(shown(made).textContent === 'the perro (en)' && latest(made, 'answer-input') && latest(made, 'ghost-btn', 'I don\'t know'), 'B1: the card shows the English and is typed, with I do not know');
+  const inp = latest(made, 'answer-input'); inp.value = 'perro'; inp.listeners.input.forEach(fn => fn({}));
+  ok(rawStore(store)['v:perro:meaning'].reps === 4, 'B1: typing the Spanish passes it');
+  ok(shown(made).textContent === 'the gato (en)', 'a word with an older form card is asked once, through it');
+  ok(!fronts().some(f => f === 'perro' || f === 'gato'), 'no card shows the Spanish to be put into English');
+  ['A1', 'A2'].forEach(band => {
+    const X = deckWorld({ 'fluidez.srsSchema': '3', 'fluidez.srs': JSON.stringify({ 'v:perro:meaning': { box: 1, due: t, reps: 1, last: t - 9 } }) }, band);
+    X.W.StageReview.run({ children: [], appendChild(c) { return c; } }, { results: {}, mode: 'diaria', step: { save() {} }, rng: Math.random }, () => {});
+    ok(shown(X.made).textContent === 'the perro (en)' && latest(X.made, 'answer-input'), band + ': the card shows the English and types the Spanish');
+  });
 }
 
 /* ---- 5. budget and throttle ------------------------------------------------ */

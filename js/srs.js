@@ -232,7 +232,6 @@ window.SRS = (function () {
     } else {
       it.consecCorrect = 0;                       // not remembered, but no penalty streak
     }
-    var firstPass = right && !it.passed;
     if (right) it.passed = true;
     if (F) {
       ensureFs(it);
@@ -266,9 +265,8 @@ window.SRS = (function () {
     }
     save(s);
     logReview(id, right, prevLast);
-    // the production card of a word joins once its meaning card has been passed
-    var fid = formId(id);
-    if (firstPass && fid && band() !== 'A1') enrol(fid, 1);
+    /* A word is one card that asks for the Spanish (js/views/review.js pool): no second card is enrolled
+     * when the first is passed any more. */
   }
 
   // Due for normal review. A leech is simply due again later, like anything else.
@@ -428,8 +426,9 @@ window.SRS = (function () {
   // ids reads the production card too.
   function dueCount(pool) {
     return pool.reduce(function (n, it) {
+      /* a word is one card: its form card when that was enrolled (it carries the word's production memory), else its first card */
       var f = formId(it.id);
-      return n + (isDue(it.id) ? 1 : 0) + (f && isDue(f) ? 1 : 0);
+      return n + ((f && isEnrolled(f)) ? (isDue(f) ? 1 : 0) : (isDue(it.id) ? 1 : 0));
     }, 0);
   }
   function enrolledCount() { return Object.keys(load()).filter(function (k) { return k !== META; }).length; }
