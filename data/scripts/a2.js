@@ -3563,6 +3563,612 @@ window.SCRIPTS_A2 = {
     "Two little words together: *le* becomes *se* before *lo*. *Se lo di*, never *le lo di*.",
     "Keep the old version next to the new one. Seeing the two side by side is what makes it stick."
   ]
+},
+
+/* ---- lessons the re-sequenced course places on the A2 path ------------- */
+
+/* week · Yesterday, in full (1 of 2) */
+
+"gr-indefinido-irregular-a2": {
+  source: "rebuild",
+  hook: {
+    line: "You already tell your day with *trabajé* and *comí*, plus *fui* and *hice*. The verbs people use most in a story change their middle in this past: *tuve*, *pude*, *vino*, *dijo*. Here they are, as one family.",
+    es: "Laura: ¿Por qué no viniste anoche?\nDiego: Tuve que trabajar hasta tarde y no pude salir.\nDiego: Te escribí, pero el mensaje no llegó.",
+    en: "Laura: Why didn't you come last night?\nDiego: I had to work late and I couldn't go out.\nDiego: I texted you, but the message didn't arrive."
+  },
+  examples: [
+    { es: "El sábado tuve que trabajar, pero el domingo pude descansar.", en: "On Saturday I had to work, but on Sunday I managed to rest." },
+    { es: "¿Qué te dijo el médico?\nMe dijo que tengo que dormir más.", en: "What did the doctor tell you?\nShe told me I have to sleep more." },
+    { es: "Llegué tarde porque el bus no vino.", en: "I got there late because the bus didn't come." }
+  ],
+  rule: "These verbs take a new middle, then share one set of endings with no accent mark: *-e, -iste, -o, -imos, -ieron*.\n*tener*: *tuve, tuviste, tuvo, tuvimos, tuvieron*\n*estar*: *estuve*. *poder*: *pude*. *poner*: *puse*. *querer*: *quise*. *venir*: *vine*.\n*hacer*: *hice*, and *hizo* for he or she.\n*decir* and *traer* end in *j*, and the they form drops its *i*: *dije, dijeron*; *traje, trajeron*.\nThree spellings change in the I form only, to keep the sound: *busqué, llegué, empecé*.\n*Leer* writes a *y*: *leyó, leyeron*.\nThe *-ir* verbs that change in the present change for he, she and they: *pidió, pidieron, durmió, durmieron*.",
+  readAndPick: [
+    { q: "Who couldn't come?", es: "No pudo venir.",
+      options: ["Someone else", "A whole group", "The speaker"], answer: 0,
+      why: "*Pudo* ends in *-o* with no accent mark: he or she. I couldn't is *no pude*." },
+    { q: "Who ordered the soup?", es: "Yo pedí arroz y mi hermana pidió sopa.",
+      options: ["The sister", "The speaker", "Both of them"], answer: 0,
+      why: "*Pidió*: the *e* becomes *i* for he or she. The I form stays *pedí*." },
+    { q: "Did the speaker bring the wine?", es: "Traje el vino, pero no traje el pan.",
+      options: ["Yes, but not the bread", "No, only the bread", "Yes, and the bread"], answer: 0,
+      why: "*Traje* is I brought, from *traer*. The wine came; the bread didn't." },
+    { q: "Has she started the new job?", es: "Empecé el trabajo nuevo el lunes.",
+      options: ["Yes, on Monday", "Not yet", "No, next Monday"], answer: 0,
+      why: "*Empecé* is the past of *empezar*: the *z* is written *c* before *é*, same sound." },
+    { q: "What did they tell her?", es: "Me dijeron la verdad.",
+      options: ["The truth", "A lie", "Nothing at all"], answer: 0,
+      why: "*Dijeron*, from *decir*: they told. No *i* after the *j*." }
+  ],
+  yourTurn: [
+    { en: "I had to work on Saturday.", es: "Tuve que trabajar el sábado.", accept: ["(Yo) tuve que trabajar el sábado.", "El sábado (yo) tuve que trabajar.", "(Yo) tuve que trabajar el sábado pasado."] },
+    { en: "She couldn't come.", es: "No pudo venir.", accept: ["(Ella) no pudo venir.", "(Ella) no pudo ir.", "(Ella) no alcanzó a venir."] },
+    { en: "What did he tell you? (to a friend)", es: "¿Qué te dijo?", accept: ["¿Qué te dijo (él)?", "¿(Él) qué te dijo?", "¿Qué fue lo que te dijo?"] },
+    { en: "I brought the wine.", es: "Traje el vino.", accept: ["(Yo) traje el vino.", "(Yo) ya traje el vino.", "El vino lo traje yo."] },
+    { en: "My sister ordered soup.", es: "Mi hermana pidió sopa.", accept: ["Mi hermana pidió (una) sopa.", "Mi hermana pidió la sopa.", "Mi hermana se pidió una sopa."] }
+  ],
+  translate: [
+    { en: "On Saturday I had to work, but on Sunday I managed to rest.", es: "El sábado tuve que trabajar, pero el domingo pude descansar.", accept: ["El sábado (yo) tuve que trabajar, pero el domingo (yo) pude descansar.", "El sábado tuve que trabajar, pero el domingo alcancé a descansar.", "Tuve que trabajar el sábado, pero el domingo pude descansar."] },
+    { en: "I got there late because the bus didn't come.", es: "Llegué tarde porque el bus no vino.", accept: ["(Yo) llegué tarde porque el bus no [vino|pasó|llegó].", "(Yo) llegué tarde porque no [vino|pasó|llegó] el bus.", "(Yo) llegué tarde porque el bus nunca [vino|pasó|llegó]."] },
+    { en: "They told me the truth.", es: "Me dijeron la verdad.", accept: ["(Ellos) me dijeron la verdad.", "(Ellas) me dijeron la verdad.", "La verdad me la dijeron (ellos)."] },
+    { en: "She read the whole book in two days.", es: "Leyó todo el libro en dos días.", accept: ["(Ella) leyó todo el libro en dos días.", "(Ella) leyó el libro completo en dos días.", "(Ella) se leyó todo el libro en dos días."] }
+  ],
+  personal: {
+    prompt: "Think of a day last week that didn't go to plan. Write two true sentences: something you had to do, and something you couldn't do or didn't do.",
+    constraints: [
+      { type: "containsAny", words: ["tuve", "estuve", "pude", "hice", "dije", "vine", "traje", "puse", "quise"], label: "one of this lesson's pasts: *tuve*, *pude*, *hice*…" },
+      { type: "negation", label: "something that didn't happen, with *no*" },
+      { type: "minWords", n: 8, label: "at least eight words" }
+    ],
+    model: "El martes tuve que ir al médico, así que no pude ir al gimnasio y no hice la tarea."
+  },
+  pitfalls: [
+    "*Tení*, *hací* and *podí* follow the regular pattern, and for these verbs it's wrong: *tuve*, *hice*, *pude*.",
+    "No accent mark on the new forms: *tuve*, *pudo*, *hizo*, never *tuvé* or *pudó*.",
+    "After *j*, no *i*: *dijeron*, *trajeron*. *Dijieron* is the most common slip with these verbs."
+  ]
+},
+
+"dc-deixis-temporal-a2": {
+  source: "rebuild",
+  hook: {
+    line: "*Ayer* only means something if you know when it was said. Tell a story about another day and the time words move with it: *ese día*, *el día anterior*, *al día siguiente*.",
+    es: "Hoy estoy en Bogotá. Ayer llegué de Cali y mañana voy a Medellín.\nEse día estaba en Bogotá. El día anterior llegué de Cali y al día siguiente fui a Medellín.",
+    en: "Today I'm in Bogotá. I got here from Cali yesterday and tomorrow I'm going to Medellín.\nThat day I was in Bogotá. I got there from Cali the day before and the next day I went to Medellín."
+  },
+  examples: [
+    { es: "Llegué a Bogotá en 2020. Ese año conocí a Laura.", en: "I arrived in Bogotá in 2020. That year I met Laura." },
+    { es: "Llegamos a la finca el viernes y al día siguiente fuimos al río.", en: "We got to the farm on Friday and the next day we went to the river." },
+    { es: "Anoche no pude dormir.", en: "I couldn't sleep last night." }
+  ],
+  rule: "*Ahora, hoy, ayer, mañana, este año* point from the moment you're talking.\nTell a story set on another day and they move with it:\n*ahora*: now. *entonces* or *en ese momento*: then\n*hoy*: today. *ese día*: that day\n*ayer*: yesterday. *el día anterior*: the day before\n*mañana*: tomorrow. *al día siguiente*: the next day\n*esta semana*: this week. *esa semana*: that week\n*este año*: this year. *ese año* or *aquel año*: that year\n*Anoche* is last night; in a story, *la noche anterior*.\nTo put two events in order, *antes de* and *después de*, plus the dictionary form or a thing: *antes de salir*, *después del almuerzo*.",
+  readAndPick: [
+    { q: "Laura is telling a story about a trip. When did they go to the beach?", es: "Llegamos el sábado y al día siguiente fuimos a la playa.",
+      options: ["The Sunday", "Saturday", "Friday night"], answer: 0,
+      why: "*Al día siguiente*: the next day, counted from the Saturday in the story." },
+    { q: "Which day is *el día anterior* here?", es: "El examen fue el martes. El día anterior estudié diez horas.",
+      options: ["The Monday before", "The Wednesday", "That Tuesday"], answer: 0,
+      why: "*El día anterior*: the day before the Tuesday in the story, so Monday." },
+    { q: "Is Diego talking about today?", es: "Ese día llovió mucho y no salimos.",
+      options: ["No, another day", "Yes, this morning", "Yes, today"], answer: 0,
+      why: "*Ese día*: that day, in the story. Today would be *hoy*." },
+    { q: "When did the speaker meet Laura?", es: "Llegué a Bogotá en 2020. Ese año conocí a Laura.",
+      options: ["In 2020, that year", "Just this year", "The year after"], answer: 0,
+      why: "*Ese año* points back to 2020. This year would be *este año*." },
+    { q: "What came first?", es: "Antes de salir, cerré las ventanas.",
+      options: ["The windows", "Going out", "Both at the same time"], answer: 0,
+      why: "*Antes de salir*: before going out. The windows came first." }
+  ],
+  yourTurn: [
+    { en: "That day it rained a lot.", es: "Ese día llovió mucho.", accept: ["[Ese|Aquel] día llovió mucho.", "Llovió mucho [ese|aquel] día.", "Ese día llovió muchísimo."] },
+    { en: "The next day we went to the river.", es: "Al día siguiente fuimos al río.", accept: ["Al [día siguiente|otro día] (nosotros) fuimos al río.", "(Nosotros) fuimos al río al [día siguiente|otro día].", "Al día siguiente nos fuimos al río."] },
+    { en: "The day before, I studied ten hours.", es: "El día anterior estudié diez horas.", accept: ["El día anterior (yo) estudié diez horas.", "El día antes (yo) estudié diez horas.", "(Yo) estudié diez horas el día anterior."] },
+    { en: "I couldn't sleep last night.", es: "Anoche no pude dormir.", accept: ["Anoche (yo) no pude dormir.", "(Yo) no pude dormir anoche.", "(Yo) anoche no pude dormir."] },
+    { en: "Before going out, I closed the windows.", es: "Antes de salir, cerré las ventanas.", accept: ["Antes de salir, (yo) cerré las ventanas.", "(Yo) cerré las ventanas antes de salir.", "Antes de salir (yo) cerré las ventanas."] }
+  ],
+  translate: [
+    { en: "I arrived in Bogotá in 2020. That year I met Laura.", es: "Llegué a Bogotá en 2020. Ese año conocí a Laura.", accept: ["(Yo) llegué a Bogotá en 2020. [Ese|Aquel] año (yo) conocí a Laura.", "Llegué a Bogotá en 2020 y ese año conocí a Laura.", "Llegué a Bogotá en el 2020. Ese año conocí a Laura."] },
+    { en: "We got to the farm on Friday and the next day we went to the river.", es: "Llegamos a la finca el viernes y al día siguiente fuimos al río.", accept: ["(Nosotros) llegamos a la finca el viernes y al [día siguiente|otro día] fuimos al río.", "El viernes llegamos a la finca y al [día siguiente|otro día] fuimos al río.", "Llegamos a la finca el viernes, y al día siguiente fuimos al río."] },
+    { en: "At that moment the phone rang.", es: "En ese momento sonó el teléfono.", accept: ["En ese momento sonó el [teléfono|celular].", "Justo en ese momento sonó el [teléfono|celular].", "En ese momento el [teléfono|celular] sonó."] },
+    { en: "See you after lunch.", es: "Nos vemos después del almuerzo.", accept: ["Nos vemos después del almuerzo.", "Nos vemos después de almorzar.", "Después del almuerzo nos vemos."] }
+  ],
+  personal: {
+    prompt: "Think of a trip or a special day. Write two sentences about it: what happened that day, and what happened the day before or the day after.",
+    constraints: [
+      { type: "containsAny", words: ["ese día", "aquel día", "esa noche", "ese año"], label: "the day of the story: *ese día*, *esa noche*…" },
+      { type: "containsAny", words: ["el día anterior", "al día siguiente", "al otro día", "la noche anterior"], label: "*el día anterior* or *al día siguiente*" },
+      { type: "anyVerbInTense", tense: "preterito", label: "what happened, in the event past" }
+    ],
+    model: "Ese día llegué a Cartagena con mi esposa. Al día siguiente fuimos a la playa y comimos pescado."
+  },
+  pitfalls: [
+    "In a story set on another day, *ayer* and *mañana* point to the wrong day. Say *el día anterior* and *al día siguiente*.",
+    "*Al día siguiente*, with *al*: the next day. In Colombia you'll also hear *al otro día*.",
+    "After *antes de* and *después de*, the dictionary form: *antes de salir*, never *antes de salí*."
+  ]
+},
+
+/* week · Yesterday, in full (2 of 2) */
+
+"gr-perfecto-vs-indefinido-a2": {
+  source: "rebuild",
+  hook: {
+    line: "A course from Spain teaches *hoy he comido*. In Bogotá people say *hoy comí*: if it's over, it takes the event past, even if it was this morning. The *he* form keeps two jobs, and both are useful.",
+    es: "Laura: ¿Ya almorzaste?\nSam: Sí, almorcé con Diego hace un rato.\nLaura: ¿Has probado alguna vez la bandeja paisa?\nSam: No, nunca. Todavía no he ido a Medellín.",
+    en: "Laura: Have you had lunch yet?\nSam: Yes, I had lunch with Diego a little while ago.\nLaura: Have you ever tried bandeja paisa?\nSam: No, never. I haven't been to Medellín yet."
+  },
+  examples: [
+    { es: "Esta mañana fui al banco y después almorcé con Carlos.", en: "This morning I went to the bank and then had lunch with Carlos." },
+    { es: "¿Has estado alguna vez en Cartagena?", en: "Have you ever been to Cartagena?" },
+    { es: "Todavía no he leído el libro, pero vi la película el sábado.", en: "I haven't read the book yet, but I saw the film on Saturday." }
+  ],
+  rule: "Ask one question: is it a finished event, at a moment you could name?\nThen the event past, even for today: *Hoy fui al banco. Esta mañana desayuné con mi hermana. ¿Ya comiste?*\nThe *he* form has two jobs.\nYour life so far, with no date: *¿Has estado en Cartagena? Nunca he probado el ajiaco.* It goes with *alguna vez* and *nunca*.\nNot yet: *Todavía no he comido.*\nName the moment and you're back to the event past: *Fui a Cartagena en 2019.*\nIn Spain you'll hear *hoy he ido* for things done today. That's Spain only: understand it, don't copy it.\nOnly *he, has, ha, hemos, han* change; *ido* stays the same.",
+  readAndPick: [
+    { q: "Is Laura asking about one meal, or about ever?", es: "¿Has probado el ajiaco?",
+      options: ["Ever, in his life", "Today's lunch", "Last night's dinner"], answer: 0,
+      why: "*Has probado*, with no date: have you ever tried it." },
+    { q: "When did she go to the doctor?", es: "Hoy fui al médico.",
+      options: ["Earlier today", "Not yet", "Some time in her life"], answer: 0,
+      why: "It's finished, so the event past, even with *hoy*. Spain would say *hoy he ido*." },
+    { q: "Has the speaker eaten?", es: "Todavía no he comido, ¿y tú?",
+      options: ["No, not yet", "Yes, early", "Yes, twice"], answer: 0,
+      why: "*Todavía no he comido*: not yet. Not yet takes the *he* form." },
+    { q: "Which sentence says when?", es: "Nunca he ido a Cartagena.\nFui a Cartagena en 2019.",
+      options: ["The second one", "The first one", "Neither"], answer: 0,
+      why: "*En 2019* names the moment, so *fui*. *Nunca he ido* has no date: a whole life." },
+    { q: "What is Laura asking?", es: "¿Ya almorzaste?",
+      options: ["If you've had lunch", "Where you had lunch", "If you like lunch"], answer: 0,
+      why: "*¿Ya almorzaste?* is the everyday have you had lunch yet. In Colombia *ya* goes with the event past." }
+  ],
+  yourTurn: [
+    { en: "Today I went to the bank.", es: "Hoy fui al banco.", accept: ["Hoy (yo) fui al banco.", "(Yo) fui al banco hoy.", "(Yo) hoy fui al banco."] },
+    { en: "Have you ever been to Cartagena? (to a friend)", es: "¿Has estado alguna vez en Cartagena?", accept: ["¿(Tú) has estado (alguna vez) en Cartagena?", "¿Alguna vez has estado en Cartagena?", "¿(Tú) has ido (alguna vez) a Cartagena?", "¿Alguna vez has ido a Cartagena?"] },
+    { en: "I haven't eaten yet.", es: "Todavía no he comido.", accept: ["(Yo) todavía no he comido.", "(Yo) no he comido todavía.", "Aún no he comido.", "(Yo) todavía no comí."] },
+    { en: "I have never tried ajiaco.", es: "Nunca he probado el ajiaco.", accept: ["(Yo) nunca he probado (el) ajiaco.", "(Yo) no he probado nunca (el) ajiaco.", "(Yo) jamás he probado (el) ajiaco."] },
+    { en: "I went to Cartagena last year.", es: "Fui a Cartagena el año pasado.", accept: ["(Yo) fui a Cartagena el año pasado.", "El año pasado (yo) fui a Cartagena.", "(Yo) estuve en Cartagena el año pasado."] }
+  ],
+  translate: [
+    { en: "This morning I went to the bank and then had lunch with Carlos.", es: "Esta mañana fui al banco y después almorcé con Carlos.", accept: ["Esta mañana (yo) fui al banco y [después|luego] almorcé con Carlos.", "Hoy en la mañana fui al banco y [después|luego] almorcé con Carlos.", "(Yo) fui al banco esta mañana y [después|luego] almorcé con Carlos."] },
+    { en: "I haven't read the book yet, but I saw the film on Saturday.", es: "Todavía no he leído el libro, pero vi la película el sábado.", accept: ["(Yo) todavía no he leído el libro, pero (yo) vi la película el sábado.", "(Yo) no he leído el libro todavía, pero vi la película el sábado.", "Aún no he leído el libro, pero vi la película el sábado."] },
+    { en: "Have you had lunch yet? (to a friend)", es: "¿Ya almorzaste?", accept: ["¿(Tú) ya almorzaste?", "¿Almorzaste ya?", "¿Ya has almorzado?"] },
+    { en: "She has been to Mexico twice.", es: "Ha estado dos veces en México.", accept: ["(Ella) ha estado dos veces en México.", "(Ella) ha estado en México dos veces.", "(Ella) ha ido dos veces a México.", "(Ella) ha ido a México dos veces."] }
+  ],
+  personal: {
+    prompt: "Write two true sentences: one thing you did today, and one thing you have never done.",
+    constraints: [
+      { type: "anyVerbInTense", tense: "preterito", label: "something finished, in the event past: *fui*, *comí*…" },
+      { type: "regex", pattern: "\\b(he|has|ha|hemos|han)\\s+\\S+(ado|ido|to|cho)\\b", label: "the *he* form: *he ido*, *he visto*…" },
+      { type: "containsAny", words: ["nunca", "todavía no", "alguna vez", "jamás"], label: "*nunca*, *todavía no* or *alguna vez*" }
+    ],
+    model: "Hoy fui al gimnasio antes del trabajo. Nunca he visto un partido de fútbol en un estadio."
+  },
+  pitfalls: [
+    "Don't copy English *have* into every sentence with today or yet: *hoy fui* and *¿ya comiste?* are the normal forms in Colombia.",
+    "A date or a named moment takes the event past: *fui a Bogotá en 2020*, never *he ido a Bogotá en 2020*.",
+    "For not yet you'll also hear *todavía no comí*. Both are fine; the *he* form is the safe one."
+  ]
+},
+
+"task-a2-hoy-ayer": {
+  source: "rebuild",
+  hook: {
+    line: "This week ends with your own week, told to a friend: what you did, day by day, and what you still haven't got round to. Every verb asks the same question: is it finished, or is it not yet and never?",
+    es: "El lunes trabajé hasta tarde.\nEl miércoles, por fin, fui al gimnasio.\nHoy fui al supermercado.\nTodavía no he llamado a mi abuela.",
+    en: "On Monday I worked late.\nOn Wednesday I finally went to the gym.\nToday I went to the supermarket.\nI haven't called my grandmother yet."
+  },
+  examples: [
+    { es: "Hoy fui al supermercado y después limpié la casa.", en: "Today I went to the supermarket and then cleaned the house." },
+    { es: "El jueves mi hermano vino a cenar.", en: "On Thursday my brother came over for dinner." },
+    { es: "Nunca he ido a un partido de fútbol.", en: "I've never been to a football match." }
+  ],
+  rule: "Write eight to ten sentences, from Monday to today.\nMost of them say what you did: a time word, then the event past. *El lunes trabajé hasta tarde. Anoche cené con unos amigos. Hoy fui al supermercado.*\nOne or two say what you haven't done yet: *Todavía no he llamado a mi mamá.*\nOne is about your life so far: *Nunca he ido a un partido de fútbol.*\nThe word *hoy* decides nothing. Finished takes the event past, whatever the day.\nThe new pasts will come up all the time: *tuve, hice, pude, vine, dije*.\nFor how you felt, *estaba*: *Estaba cansada, pero fui.*",
+  readAndPick: [
+    { q: "Finished, or not yet?", es: "Todavía no he pagado el arriendo.",
+      options: ["Not yet, still to do", "Paid last week", "Paid today"], answer: 0,
+      why: "*Todavía no he pagado*: not done yet. *El arriendo* is the rent." },
+    { q: "When did this happen?", es: "Anoche cené con unos amigos.",
+      options: ["Last night", "Tonight", "Every night"], answer: 0,
+      why: "*Anoche* is last night, and *cené* is done. Tonight would be *esta noche*." },
+    { q: "One day, or his whole life?", es: "Nunca he montado a caballo.",
+      options: ["All his life", "Just yesterday", "This week"], answer: 0,
+      why: "*Nunca he montado*: never, in his life so far. No date, so the *he* form." },
+    { q: "Why does she write *fui* and not *he ido*?", es: "Hoy fui a clase de baile.",
+      options: ["Because it's over", "Because of *hoy*", "Because it's a habit"], answer: 0,
+      why: "Over and done, so the event past. *Hoy* decides nothing on its own." },
+    { q: "What did his brother do on Thursday?", es: "El jueves mi hermano vino a cenar.",
+      options: ["Came for dinner", "Cooked for everyone", "Asked him out"], answer: 0,
+      why: "*Vino* is the past of *venir*: he came. *A cenar*: for dinner." }
+  ],
+  yourTurn: [
+    { en: "On Monday I worked late.", es: "El lunes trabajé hasta tarde.", accept: ["El lunes (yo) trabajé hasta tarde.", "(Yo) trabajé hasta tarde el lunes.", "El lunes (yo) trabajé tarde."] },
+    { en: "Today I went to the supermarket.", es: "Hoy fui al supermercado.", accept: ["Hoy (yo) fui al [supermercado|súper].", "(Yo) fui al [supermercado|súper] hoy.", "(Yo) hoy fui al [supermercado|súper]."] },
+    { en: "I haven't called my grandmother yet.", es: "Todavía no he llamado a mi abuela.", accept: ["(Yo) todavía no he llamado a mi abuela.", "(Yo) no he llamado a mi abuela todavía.", "Aún no he llamado a mi abuela.", "(Yo) todavía no llamé a mi abuela."] },
+    { en: "On Thursday my brother came over for dinner.", es: "El jueves mi hermano vino a cenar.", accept: ["El jueves mi hermano vino a [cenar|comer].", "Mi hermano vino a [cenar|comer] el jueves.", "El jueves vino mi hermano a [cenar|comer]."] },
+    { en: "I've never been to a football match.", es: "Nunca he ido a un partido de fútbol.", accept: ["(Yo) nunca he ido a un partido de fútbol.", "(Yo) no he ido nunca a un partido de fútbol.", "(Yo) nunca he estado en un partido de fútbol."] }
+  ],
+  translate: [
+    { en: "Today I went to the supermarket and then cleaned the house.", es: "Hoy fui al supermercado y después limpié la casa.", accept: ["Hoy (yo) fui al supermercado y [después|luego] limpié la casa.", "Hoy fui al súper y [después|luego] limpié la casa.", "(Yo) fui al supermercado hoy y [después|luego] limpié la casa."] },
+    { en: "Last night I had dinner with some friends.", es: "Anoche cené con unos amigos.", accept: ["Anoche (yo) cené con unos amigos.", "(Yo) cené con unos amigos anoche.", "Anoche (yo) comí con unos amigos."] },
+    { en: "On Wednesday I finally went to the gym.", es: "El miércoles, por fin, fui al gimnasio.", accept: ["El miércoles (yo) por fin fui al gimnasio.", "Por fin (yo) fui al gimnasio el miércoles.", "El miércoles (yo) al fin fui al gimnasio."] },
+    { en: "I was tired, but I went.", es: "Estaba cansado, pero fui.", accept: ["(Yo) estaba [cansado|cansada], pero fui.", "(Yo) estaba [cansado|cansada], pero igual fui.", "(Yo) estaba [cansado|cansada], pero (yo) fui."] }
+  ],
+  personal: {
+    prompt: "Tell a friend about your week in three sentences: one day and what you did, one thing you haven't done yet, and one thing you have never done.",
+    constraints: [
+      { type: "anyVerbInTense", tense: "preterito", label: "what you did, in the event past: *fui*, *trabajé*…" },
+      { type: "containsWord", word: "todavía no", label: "something not done yet, with *todavía no*" },
+      { type: "containsWord", word: "nunca", label: "something you have never done, with *nunca*" },
+      { type: "minSentences", n: 3, label: "at least three sentences" }
+    ],
+    model: "El martes tuve una reunión muy larga. Todavía no he limpiado el apartamento. Nunca he probado el chontaduro."
+  },
+  pitfalls: [
+    "*Hoy* decides nothing: *hoy fui*, *hoy trabajé*. The *he* form waits for not yet and never.",
+    "Keep dates out of the *he* sentences: *el sábado fui*, never *el sábado he ido*.",
+    "Open with the day, then the verb: *El jueves vino mi hermano.* It keeps the week in order."
+  ]
+},
+
+/* week · How things used to be (2 of 2) */
+
+"gr-ser-estar-adjetivos-a2": {
+  source: "rebuild",
+  hook: {
+    line: "Diego's class is boring, and by the end so is Diego, in a different way. Spanish keeps the two apart: *es aburrida* says what the class is like, *está aburrido* says how he is right now.",
+    es: "Laura: ¿Qué tal la clase de historia?\nDiego: La clase es aburrida, y yo estoy aburrido.\nLaura: Bueno, ¿estás listo? Vamos a almorzar.",
+    en: "Laura: How's the history class?\nDiego: The class is boring, and I'm bored.\nLaura: Well, are you ready? Let's go and have lunch."
+  },
+  examples: [
+    { es: "Mi hermana es muy tranquila, pero hoy está nerviosa por el examen.", en: "My sister is very calm, but today she's nervous about the exam." },
+    { es: "¡Qué rico está este jugo!", en: "This juice tastes great!" },
+    { es: "¿Ya estás lista?\nSí, lista, vamos.", en: "Are you ready yet?\nYes, ready, let's go." }
+  ],
+  rule: "*Ser* says what someone or something is like. *Estar* says how they are now, which could change by tomorrow.\n*Don Hernando es tranquilo, pero hoy está nervioso.*\nA few describing words change their meaning:\n*es aburrido*: boring. *está aburrido*: bored\n*es listo*: clever. *está listo*: ready\n*es rico*: rich. *está rico*: tastes good\n*es seguro*: safe. *está seguro*: sure\nWith the food in front of you, *estar*: *La sopa está deliciosa.*\nIn Colombia *listo* alone means OK, done: *¿A las tres? Listo.*\nThe rest still holds: *ser* for who and where from, *estar* for where. Events take *ser*: *La fiesta es en mi casa.*",
+  readAndPick: [
+    { q: "Is Ana a boring person?", es: "Ana está aburrida en la fiesta.",
+      options: ["No, she's just bored", "Yes, very", "She isn't at the party"], answer: 0,
+      why: "*Está aburrida*: bored right now. A boring person *es aburrida*." },
+    { q: "What is Laura saying about the soup?", es: "¡Uy, la sopa está muy rica!",
+      options: ["It tastes great", "It's expensive", "It's a rich dish"], answer: 0,
+      why: "*Está rica*: it tastes good, this bowl, now. *Es rico*, said of a person, means he has money." },
+    { q: "Clever, or ready?", es: "Ya estoy listo, vamos.",
+      options: ["He's ready", "He's clever", "He's late"], answer: 0,
+      why: "*Estar listo* is to be ready. *Ser listo* is to be clever." },
+    { q: "What does the speaker mean?", es: "Mi jefe es muy rico.",
+      options: ["He's got lots of money", "He's in a good mood", "He's very kind"], answer: 0,
+      why: "*Ser rico*, said of a person: rich. It's who he is, not how he is today." },
+    { q: "Why *es* here, and not *está*?", es: "La fiesta es en la casa de Laura.",
+      options: ["A party is an event", "The house is big", "Laura lives there"], answer: 0,
+      why: "Events take *ser*, even with a place: *la fiesta es en…*, *la reunión es en…*" }
+  ],
+  yourTurn: [
+    { en: "I'm bored.", es: "Estoy aburrido.", accept: ["(Yo) estoy [aburrido|aburrida].", "(Yo) estoy muy [aburrido|aburrida].", "Me estoy aburriendo."] },
+    { en: "The film is boring.", es: "La película es aburrida.", accept: ["La película es (muy) aburrida.", "Esta película es aburrida.", "La película es bien aburrida."] },
+    { en: "Are you ready? (to a friend)", es: "¿Estás listo?", accept: ["¿(Tú) estás [listo|lista]?", "¿Ya estás [listo|lista]?", "¿Estás [listo|lista] ya?"] },
+    { en: "This juice tastes great.", es: "Este jugo está muy rico.", accept: ["Este jugo está (muy) [rico|delicioso].", "El jugo está (muy) [rico|delicioso].", "¡Qué rico está este jugo!"] },
+    { en: "My sister is calm, but today she's nervous.", es: "Mi hermana es tranquila, pero hoy está nerviosa.", accept: ["Mi hermana es (muy) tranquila, pero hoy está nerviosa.", "Mi hermana es tranquila, pero hoy está (muy) nerviosa.", "Mi hermana es calmada, pero hoy está nerviosa."] }
+  ],
+  translate: [
+    { en: "My boss is very rich.", es: "Mi jefe es muy rico.", accept: ["Mi jefe es (muy) rico.", "Mi jefa es (muy) rica.", "Mi jefe tiene mucha plata."] },
+    { en: "Are you sure? (to a friend)", es: "¿Estás seguro?", accept: ["¿(Tú) estás [seguro|segura]?", "¿Estás [seguro|segura] de eso?", "¿[Seguro|Segura]?"] },
+    { en: "The party is at my house.", es: "La fiesta es en mi casa.", accept: ["La fiesta es en mi casa.", "La rumba es en mi casa.", "La fiesta es en la casa mía."] },
+    { en: "Dinner is ready.", es: "La comida está lista.", accept: ["La [comida|cena] está lista.", "Ya está lista la [comida|cena].", "La [comida|cena] ya está lista."] }
+  ],
+  personal: {
+    prompt: "Describe someone you know in one or two sentences: what they are like, and how they are today.",
+    constraints: [
+      { type: "regex", pattern: "\\b(es|son)\\b", label: "what they're like, with *es*" },
+      { type: "regex", pattern: "\\best(á|án)(?=[\\s.,;!?]|$)", label: "how they are now, with *está*" },
+      { type: "minWords", n: 8, label: "at least eight words" }
+    ],
+    model: "Mi hermano es muy divertido, pero hoy está cansado porque trabajó hasta tarde."
+  },
+  pitfalls: [
+    "*Soy aburrido* tells people you're a boring person. Bored is *estoy aburrido*.",
+    "*Está rico* is about how food tastes now. *Es rico*, said of a person, means he has plata.",
+    "Events take *ser*, even with a place: *la reunión es en la sala 3*."
+  ]
+},
+
+/* week · Comparing (2 of 2) */
+
+"gr-modificadores-adverbios-b1": {
+  source: "rebuild",
+  hook: {
+    line: "After *más que* and *tan como*, Spanish has a few more ways to size things up: *el doble*, *carísimo*, *perfectamente*. Laura's new apartment needs two of them.",
+    es: "Laura: El apartamento nuevo es enorme, pero el arriendo cuesta el doble.\nDiego: ¿El doble? ¡Carísimo!\nLaura: Sí, pero el barrio es lindísimo.",
+    en: "Laura: The new apartment is huge, but the rent costs twice as much.\nDiego: Twice as much? That's really expensive!\nLaura: Yes, but the neighbourhood is gorgeous."
+  },
+  examples: [
+    { es: "Este celular cuesta el doble que el otro.", en: "This phone costs twice as much as the other one." },
+    { es: "El examen fue facilísimo.", en: "The exam was really easy." },
+    { es: "Habla inglés perfectamente.", en: "She speaks English perfectly." }
+  ],
+  rule: "Three ways to give a size or a manner.\nHow many times: *el doble*, twice as much; *el triple*; *la mitad*, half. *Cuesta el doble que el otro. Hoy todo está a mitad de precio.*\nVery, in one word: add *-ísimo*. *caro*, *carísimo*; *bueno*, *buenísimo*; *fácil*, *facilísimo*. It already means very, so no *muy* in front.\nSome words are big already: *enorme*, *precioso*. *Muy enorme* says it twice.\nHow you do something: take the *-a* form and add *-mente*. *perfecta*, *perfectamente*; *rápida*, *rápidamente*; *fácil*, *fácilmente*.\nTwo in a row, and only the last one keeps it: *clara y sencillamente*.",
+  readAndPick: [
+    { q: "How much does the new one cost?", es: "El nuevo cuesta el doble.",
+      options: ["Twice the price", "Half the price", "Almost the same price"], answer: 0,
+      why: "*El doble*: twice as much. Half would be *la mitad*." },
+    { q: "How easy was the exam?", es: "El examen fue facilísimo.",
+      options: ["Very, very easy", "A bit easy", "Not that easy"], answer: 0,
+      why: "*-ísimo* says very in one word: *facilísimo*, very easy." },
+    { q: "Which line sounds wrong?", es: "Es una casa enorme.\nEs una casa muy enorme.\nEs una casa muy grande.",
+      options: ["The middle one", "The very first", "The one at the end"], answer: 0,
+      why: "*Enorme* is already very big, so *muy* adds nothing." },
+    { q: "How does she speak English?", es: "Habla inglés perfectamente.",
+      options: ["Perfectly", "Badly", "Only a little"], answer: 0,
+      why: "*-mente* turns *perfecta* into how she does it: *perfectamente*, perfectly." },
+    { q: "What does Diego think of the shoes?", es: "¡Están carísimos!",
+      options: ["They cost a lot", "They're cheap", "They're lovely shoes"], answer: 0,
+      why: "*Carísimos*: very expensive. The ending matches *los zapatos*: *-ísimos*." }
+  ],
+  yourTurn: [
+    { en: "This phone costs twice as much as the other one.", es: "Este celular cuesta el doble que el otro.", accept: ["Este celular cuesta el doble que el otro.", "Este celular es el doble de caro que el otro.", "Este celular cuesta el doble del otro."] },
+    { en: "The exam was really easy.", es: "El examen fue facilísimo.", accept: ["El examen [fue|estuvo] facilísimo.", "El examen [fue|estuvo] muy fácil.", "El examen [fue|estuvo] súper fácil."] },
+    { en: "Their house is huge.", es: "Su casa es enorme.", accept: ["Su casa es enorme.", "La casa de [ellos|ellas] es enorme.", "Su casa es grandísima."] },
+    { en: "She speaks English perfectly.", es: "Habla inglés perfectamente.", accept: ["(Ella) habla inglés perfectamente.", "(Ella) habla perfectamente (el) inglés.", "(Ella) habla el inglés perfectamente."] },
+    { en: "She explained it clearly and simply.", es: "Lo explicó clara y sencillamente.", accept: ["(Ella) lo explicó clara y sencillamente.", "(Ella) lo explicó de forma clara y sencilla.", "(Ella) lo explicó de manera clara y sencilla."] }
+  ],
+  translate: [
+    { en: "Today everything is half price.", es: "Hoy todo está a mitad de precio.", accept: ["Hoy todo está a mitad de precio.", "Todo está a mitad de precio hoy.", "Hoy todo cuesta la mitad."] },
+    { en: "The shoes are really expensive.", es: "Los zapatos están carísimos.", accept: ["Los zapatos [están|son] carísimos.", "Los zapatos están muy caros.", "Los zapatos están carísimos."] },
+    { en: "The neighbourhood is gorgeous.", es: "El barrio es precioso.", accept: ["El barrio es precioso.", "El barrio es lindísimo.", "El barrio es bellísimo."] },
+    { en: "Fortunately, the bus came quickly.", es: "Afortunadamente, el bus pasó rápido.", accept: ["Afortunadamente, el bus [pasó|llegó|vino] rápido.", "Afortunadamente, el bus [pasó|llegó|vino] rápidamente.", "Por suerte, el bus [pasó|llegó|vino] rápido."] }
+  ],
+  personal: {
+    prompt: "Compare two prices or two places you know in one or two sentences, with *el doble*, *la mitad* or a word in *-ísimo*.",
+    constraints: [
+      { type: "containsAny", words: ["el doble", "el triple", "la mitad", "ísimo", "ísima", "ísimos", "ísimas"], label: "*el doble*, *la mitad* or *-ísimo*" },
+      { type: "minWords", n: 8, label: "at least eight words" }
+    ],
+    model: "En Toronto un café cuesta el doble que en Bogotá, y el de Bogotá es buenísimo."
+  },
+  pitfalls: [
+    "No *muy* with *-ísimo* or with *enorme*: *carísimo* or *muy caro*, never *muy carísimo*.",
+    "*-mente* goes on the *-a* form: *rápidamente*, *tranquilamente*, never *rápidomente*.",
+    "Two in a row, and only the last one takes it: *clara y sencillamente*."
+  ]
+},
+
+/* week · It, him, her, them (2 of 2) */
+
+"gr-posesivo-dativo-b1": {
+  source: "rebuild",
+  hook: {
+    line: "English says whose with *my* and *his*: they stole his phone. Spanish says who it happened to, with the little word before the verb, and the thing just takes *el* or *la*.",
+    es: "Laura: ¿Qué le pasó a Diego?\nSam: Le robaron el celular en el bus.\nLaura: ¡Qué pesar! ¿Y él cómo está?",
+    en: "Laura: What happened to Diego?\nSam: Someone stole his phone on the bus.\nLaura: Oh no! And how is he?"
+  },
+  examples: [
+    { es: "A mi hijo le duele el estómago.", en: "My son's stomach hurts." },
+    { es: "Le cortaron el pelo muy corto.", en: "They cut his hair very short." },
+    { es: "Se me cayó el celular y se me rompió la pantalla.", en: "I dropped my phone and the screen broke." }
+  ],
+  rule: "When something happens to someone's body or things, Spanish names the person with the little word, and the thing takes *el* or *la*:\n*Le robaron el celular.* They stole his phone.\n*¿Te lavo la camisa?* Shall I wash your shirt?\n*Su celular* or *mi cabeza* here sounds translated.\nFor accidents, *se* comes first: *Se me cayó el vaso.* I dropped the glass. *Se le olvidaron las llaves.* He forgot his keys. *Se nos dañó el carro.* Our car broke down.\nThe verb matches the thing, not the person: *se me cayó el vaso*, *se me cayeron los vasos*.\n*Mío* and *tuyo* stay for telling owners apart: *No es el mío, es el tuyo.*",
+  readAndPick: [
+    { q: "Whose phone was stolen?", es: "A Laura le robaron el celular.",
+      options: ["Laura's own phone", "The speaker's", "The thief's"], answer: 0,
+      why: "*Le* and *a Laura* say who it happened to. No *su* needed." },
+    { q: "What happened to the speaker's phone?", es: "Se me cayó el celular.",
+      options: ["She dropped it", "It got stolen", "She threw it away"], answer: 0,
+      why: "*Se me cayó*: it fell, and it happened to me. An accident, not on purpose." },
+    { q: "Who had the haircut?", es: "Ayer le cortaron el pelo a mi hijo.",
+      options: ["My son did", "I did", "The hairdresser did"], answer: 0,
+      why: "*Le* points to *a mi hijo*: it was done to him." },
+    { q: "How many glasses broke?", es: "Se me rompieron dos vasos.",
+      options: ["Two glasses", "Only one", "None of them"], answer: 0,
+      why: "*Rompieron* matches *dos vasos*. One glass would be *se me rompió*." },
+    { q: "Which line sounds the most natural?", es: "Me duele mi cabeza.\nMe duele la cabeza.\nDuele mi cabeza.",
+      options: ["The middle one", "The top one", "The bottom line"], answer: 0,
+      why: "*Me* already says whose head, so it's *la cabeza*." }
+  ],
+  yourTurn: [
+    { en: "They stole his phone.", es: "Le robaron el celular.", accept: ["(A él) le robaron el celular.", "Le robaron el [celular|teléfono].", "Le robaron el celular a él."] },
+    { en: "I dropped my phone.", es: "Se me cayó el celular.", accept: ["Se me cayó el [celular|teléfono].", "(A mí) se me cayó el celular.", "El celular se me cayó."] },
+    { en: "My son's stomach hurts.", es: "A mi hijo le duele el estómago.", accept: ["A mi hijo le duele el estómago.", "Le duele el estómago a mi hijo.", "A mi hijo le está doliendo el estómago."] },
+    { en: "Shall I wash your shirt? (to a friend)", es: "¿Te lavo la camisa?", accept: ["¿(Yo) te lavo la camisa?", "¿Te lavo la camisa (yo)?", "¿Te lavo esa camisa?"] },
+    { en: "He forgot his keys.", es: "Se le olvidaron las llaves.", accept: ["(A él) se le olvidaron las llaves.", "Se le olvidaron las llaves a él.", "(A él) se le quedaron las llaves."] }
+  ],
+  translate: [
+    { en: "I dropped my phone and the screen broke.", es: "Se me cayó el celular y se me rompió la pantalla.", accept: ["Se me cayó el [celular|teléfono] y se me rompió la pantalla.", "(A mí) se me cayó el celular y se me rompió la pantalla.", "Se me cayó el celular y se rompió la pantalla."] },
+    { en: "They cut his hair very short.", es: "Le cortaron el pelo muy corto.", accept: ["Le cortaron el pelo muy corto.", "(A él) le cortaron el pelo muy corto.", "Le cortaron el pelo bien corto."] },
+    { en: "Our car broke down on the way.", es: "Se nos dañó el carro en el camino.", accept: ["Se nos dañó el carro en el camino.", "Se nos varó el carro en el camino.", "Se nos dañó el carro por el camino."] },
+    { en: "That jacket isn't mine, it's hers.", es: "Esa chaqueta no es mía, es de ella.", accept: ["Esa chaqueta no es mía, es de ella.", "Esa chaqueta no es la mía, es la de ella.", "Esa chaqueta no es mía, es suya."] }
+  ],
+  personal: {
+    prompt: "Think of a small accident you had: something you dropped, broke, lost or forgot. Write one or two sentences about it.",
+    constraints: [
+      { type: "regex", pattern: "\\bse\\s+(me|te|le|nos|les)\\s+\\S+", label: "*se me* plus what happened: *se me cayó*, *se me olvidó*…" },
+      { type: "anyVerbInTense", tense: "preterito", label: "in the event past: *cayó*, *rompió*…" },
+      { type: "minWords", n: 6, label: "at least six words" }
+    ],
+    model: "La semana pasada se me cayó el celular en la calle y se me rompió la pantalla."
+  },
+  pitfalls: [
+    "*Me duele mi cabeza* says whose twice. *Me* is enough: *me duele la cabeza*.",
+    "*Robaron su celular* sounds translated from English. Say who it happened to: *le robaron el celular*.",
+    "In accidents the verb matches the thing, not the person: *se me cayeron las llaves*."
+  ]
+},
+
+/* week · Asking nicely (1 of 2) */
+
+"gr-pronombres-posicion-a2": {
+  source: "rebuild",
+  hook: {
+    line: "Laura has the book Sam wants. Watch where *lo* goes in each line: in front of the verb, on the end of it, or glued to a request.",
+    es: "Sam: ¿Tienes el libro? Lo quiero leer.\nLaura: Sí, pero estoy leyéndolo yo.\nSam: Listo, préstamelo el lunes.",
+    en: "Sam: Do you have the book? I want to read it.\nLaura: Yes, but I'm reading it myself.\nSam: OK, lend it to me on Monday."
+  },
+  examples: [
+    { es: "Tengo que llamar a mi mamá. La voy a llamar esta noche.", en: "I have to call my mom. I'm going to call her tonight." },
+    { es: "¿Dónde está el libro?\nNo sé, estoy buscándolo.", en: "Where's the book?\nI don't know, I'm looking for it." },
+    { es: "Si necesitas algo, llámame.", en: "If you need anything, call me." }
+  ],
+  rule: "With one ordinary verb, the little word goes in front: *Lo veo. Me llamó anoche.*\nWith two verbs, *voy a, tengo que, quiero, puedo, estoy* plus another, pick an end: in front of the first, or glued to the end of the second.\n*Lo voy a ver* or *Voy a verlo*. *Te quiero invitar* or *Quiero invitarte*. *Lo estoy leyendo* or *Estoy leyéndolo*.\nNever in the middle: not *voy lo a ver*.\n*Hay que* takes only the end: *Hay que hacerlo.*\nTelling someone to do it, the little word goes on the end, always: *Llámame. Cómpralo. Dámelo.* The accent mark keeps the weight where it was.\nTwo of them: the person first, then the thing: *me lo*, *te la*.",
+  readAndPick: [
+    { q: "Which line has the little word in the wrong place?", es: "Lo voy a llamar.\nVoy a llamarlo.\nVoy lo a llamar.",
+      options: ["The last one", "The first", "The middle"], answer: 0,
+      why: "It goes at one end: *lo voy a llamar* or *voy a llamarlo*, never in the middle." },
+    { q: "Do these two mean the same?", es: "Te quiero invitar.\nQuiero invitarte.",
+      options: ["Yes, they do", "No, they don't", "Only in writing"], answer: 0,
+      why: "Same meaning. With two verbs, either end works." },
+    { q: "Who gets the salt?", es: "Laura: Pásame la sal, por favor.",
+      options: ["Laura", "Sam", "Nobody yet"], answer: 0,
+      why: "*Pásame*: pass it to me. The *me* on the end is Laura." },
+    { q: "What is Laura doing with the book?", es: "Estoy leyéndolo.",
+      options: ["Reading it now", "Buying it", "Lending it to Sam"], answer: 0,
+      why: "*Leyéndolo*: reading it. *Lo* is glued to the end, with an accent mark on the *é*." },
+    { q: "Is this right?", es: "Lo hay que hacer hoy.",
+      options: ["No: hay que hacerlo", "Yes, it's fine", "No: hay lo que hacer"], answer: 0,
+      why: "With *hay que*, only the end works: *hay que hacerlo hoy*." }
+  ],
+  yourTurn: [
+    { en: "I'm going to call her tonight.", es: "La voy a llamar esta noche.", accept: ["(Yo) la voy a llamar esta noche.", "(Yo) voy a llamarla esta noche.", "Esta noche (yo) la voy a llamar.", "Esta noche (yo) voy a llamarla."] },
+    { en: "I'm looking for it.", es: "Estoy buscándolo.", accept: ["(Yo) estoy [buscándolo|buscándola].", "(Yo) lo estoy buscando.", "(Yo) la estoy buscando."] },
+    { en: "Call me tomorrow. (to a friend)", es: "Llámame mañana.", accept: ["Llámame mañana.", "Mañana llámame.", "Llámame mañana, por favor."] },
+    { en: "Give it to me, please. (the book, to a friend)", es: "Dámelo, por favor.", accept: ["Dámelo, por favor.", "Por favor, dámelo.", "Pásamelo, por favor."] },
+    { en: "You have to do it today. (nobody named)", es: "Hay que hacerlo hoy.", accept: ["Hay que hacerlo hoy.", "Hoy hay que hacerlo.", "Hay que hacerlo hoy mismo."] }
+  ],
+  translate: [
+    { en: "I have to call my mom. I'm going to call her tonight.", es: "Tengo que llamar a mi mamá. La voy a llamar esta noche.", accept: ["(Yo) tengo que llamar a mi [mamá|madre]. [La voy a llamar|Voy a llamarla] esta noche.", "Tengo que llamar a mi mamá. Esta noche [la voy a llamar|voy a llamarla].", "Tengo que llamar a mi mamá. Voy a llamarla hoy en la noche."] },
+    { en: "If you need anything, call me.", es: "Si necesitas algo, llámame.", accept: ["Si (tú) necesitas algo, llámame.", "Llámame si necesitas algo.", "Si necesitas cualquier cosa, llámame."] },
+    { en: "Can you help me? (to a friend)", es: "¿Me puedes ayudar?", accept: ["¿(Tú) me puedes ayudar?", "¿Puedes ayudarme?", "¿Me ayudas?"] },
+    { en: "Do you want to try them on? (the shoes, to a friend)", es: "¿Te los quieres medir?", accept: ["¿Te los quieres [medir|probar]?", "¿Quieres [medírtelos|probártelos]?", "¿(Tú) te los quieres medir?"] }
+  ],
+  personal: {
+    prompt: "Write two sentences: something you have to do soon, with the little word at either end, and a request to a friend with it glued on the end.",
+    constraints: [
+      { type: "regex", pattern: "\\b(voy a|vas a|tengo que|quiero|puedo|hay que)\\s+\\S+(lo|la|los|las|me|te|le|les|nos)\\b|\\b(lo|la|los|las|me|te|le|les|nos)\\s+(voy a|tengo que|quiero|puedo)\\b", label: "two verbs and a little word: *la voy a llamar*, *tengo que hacerlo*…" },
+      { type: "anyVerbInTense", tense: "imperativo", label: "a request with the little word on the end: *llámame*, *ayúdame*…" }
+    ],
+    model: "Tengo que llamar a mi jefe. Lo voy a llamar mañana. Diego, ayúdame con la maleta, por favor."
+  },
+  pitfalls: [
+    "Never in the middle: *voy a verlo* or *lo voy a ver*, never *voy lo a ver*.",
+    "On the end it's one word, no space: *verlo*, *llámame*. Longer ones take an accent mark: *dámelo*, *buscándolo*.",
+    "*Lo hay que hacer* is wrong, even though *lo tengo que hacer* is fine: *hay que hacerlo*."
+  ]
+},
+
+/* week · Getting things done (2 of 2) */
+
+"gr-se-multiuso-b1": {
+  source: "rebuild",
+  hook: {
+    line: "Walk down any street in Bogotá and the signs talk to nobody in particular. That *se* means someone, anyone, and it's one of three jobs the little word does this week.",
+    es: "Se arrienda apartamento.\nSe venden empanadas.\nAquí se habla inglés.",
+    en: "Apartment for rent.\nEmpanadas for sale.\nEnglish spoken here."
+  },
+  examples: [
+    { es: "En este restaurante se come muy bien.", en: "You eat really well in this restaurant." },
+    { es: "Laura y Diego se conocieron en la universidad.", en: "Laura and Diego met at university." },
+    { es: "Nos vemos el viernes.", en: "See you on Friday." }
+  ],
+  rule: "*Se* does three jobs here.\nSomeone, anyone: *se* plus the he or she form. *Aquí se habla español. ¿Se puede pagar con tarjeta?* The verb matches the thing after it: *se vende carro*, *se venden carros*.\nEach other: *se* for they, *nos* for we. *Se conocieron en 2015*: they met. *Nos escribimos todos los días*: we write to each other. *Nos vemos el lunes*: see you Monday.\nWeather has nobody at all: *Llueve. Está lloviendo. Hace frío.* No *it*, and no *se*.\nTo tell the first two apart, look for the people: two acting on each other, or nobody named.",
+  readAndPick: [
+    { q: "What does the sign tell you?", es: "Se habla inglés.",
+      options: ["English works here", "English classes", "Don't speak English"], answer: 0,
+      why: "*Se habla*: it's spoken here, by someone, anyone. Nobody in particular." },
+    { q: "What happened between Laura and Diego?", es: "Se conocieron en la universidad.",
+      options: ["They met at university", "They taught there", "They both studied there"], answer: 0,
+      why: "*Se conocieron*: they met each other. Two people, each acting on the other." },
+    { q: "Why *venden* and not *vende*?", es: "Se venden dos carros.",
+      options: ["It matches the cars", "There are two sellers", "It's more polite"], answer: 0,
+      why: "The verb matches the thing after it: *se vende un carro*, *se venden dos carros*." },
+    { q: "What does Laura mean?", es: "Nos vemos el lunes.",
+      options: ["See you on Monday", "We saw it on Monday", "Look at Monday"], answer: 0,
+      why: "*Nos vemos*: we see each other. It's the everyday see you." },
+    { q: "What's the weather doing?", es: "Está lloviendo mucho.",
+      options: ["Raining a lot", "Cloudy, no rain", "Sunny and hot"], answer: 0,
+      why: "*Llover* has nobody doing it: no *it* and no *se*." }
+  ],
+  yourTurn: [
+    { en: "English is spoken here.", es: "Aquí se habla inglés.", accept: ["[Aquí|Acá] se habla inglés.", "Se habla inglés [aquí|acá].", "Se habla inglés."] },
+    { en: "Can you pay by card here? (anyone)", es: "¿Se puede pagar con tarjeta?", accept: ["¿[Aquí|Acá] se puede pagar con tarjeta?", "¿Se puede pagar con tarjeta [aquí|acá]?", "¿Puedo pagar con tarjeta?"] },
+    { en: "Laura and Diego met at university.", es: "Laura y Diego se conocieron en la universidad.", accept: ["Laura y Diego se conocieron en la [universidad|U].", "Diego y Laura se conocieron en la [universidad|U].", "Laura y Diego se conocieron en la universidad."] },
+    { en: "We write to each other every week.", es: "Nos escribimos todas las semanas.", accept: ["(Nosotros) nos escribimos todas las semanas.", "Nos escribimos cada semana.", "(Nosotras) nos escribimos todas las semanas."] },
+    { en: "See you on Friday.", es: "Nos vemos el viernes.", accept: ["Nos vemos el viernes.", "Nos vemos el viernes, entonces.", "Entonces nos vemos el viernes."] }
+  ],
+  translate: [
+    { en: "You eat really well in this restaurant.", es: "En este restaurante se come muy bien.", accept: ["En este restaurante se come (muy) [bien|rico|delicioso].", "Se come muy bien en este restaurante.", "Se come (muy) [bien|rico] en este restaurante."] },
+    { en: "Apartment for rent.", es: "Se arrienda apartamento.", accept: ["Se arrienda (un) apartamento.", "Apartamento en arriendo.", "Se arrienda apartamento."] },
+    { en: "They love each other a lot.", es: "Se quieren mucho.", accept: ["Se quieren mucho.", "(Ellos) se quieren mucho.", "Se aman mucho."] },
+    { en: "It rained all night.", es: "Llovió toda la noche.", accept: ["Llovió toda la noche.", "Estuvo lloviendo toda la noche.", "Toda la noche llovió."] }
+  ],
+  personal: {
+    prompt: "Write two true sentences: something that is sold or done where you live, and someone you met, and where.",
+    constraints: [
+      { type: "sePassive", label: "*se* for anyone: *se habla*, *se venden*…" },
+      { type: "regex", pattern: "\\b(nos|se)\\s+conoc\\w+", label: "who you met: *nos conocimos*, *se conocieron*" },
+      { type: "minWords", n: 10, label: "at least ten words" }
+    ],
+    model: "En mi barrio se venden empanadas muy buenas. Mi esposa y yo nos conocimos en un bus en Toronto."
+  },
+  pitfalls: [
+    "The verb matches the thing after it: *se venden empanadas*, not *se vende empanadas*.",
+    "Weather needs no *it* and no *se*: *llueve*, *está lloviendo*, *hace frío*.",
+    "Two people and *se*: each other. Nobody named: anyone. Look for who is in the sentence."
+  ]
+},
+
+/* week · How are you feeling? (2 of 2) */
+
+"gr-formulas-subjuntivo-a2": {
+  source: "rebuild",
+  hook: {
+    line: "Diego has a cold and Laura has an interview tomorrow. Spanish has a ready phrase for each, and for now you take them whole, like *buen provecho*.",
+    es: "Diego: Estoy enfermo, tengo gripa.\nLaura: ¡Ay, que te mejores! Descansa.\nDiego: Gracias. ¿Y tu entrevista?\nLaura: Es mañana. ¡Ojalá que me vaya bien!",
+    en: "Diego: I'm ill, I've got a cold.\nLaura: Oh, get well soon! Get some rest.\nDiego: Thanks. And your interview?\nLaura: It's tomorrow. I hope it goes well!"
+  },
+  examples: [
+    { es: "Mañana tengo la entrevista.\n¡Que te vaya muy bien! No te preocupes.", en: "I have the interview tomorrow.\nAll the best! Don't worry." },
+    { es: "¿Crees que va a llover el sábado?\nOjalá que no, tenemos un asado.", en: "Do you think it's going to rain on Saturday?\nLet's hope not, we're having a barbecue." },
+    { es: "Perdón, llegué tarde.\nTranquila, no pasa nada.", en: "Sorry I'm late.\nDon't worry, it's fine." }
+  ],
+  rule: "These are wishes and comfort, and you learn them whole. The ending looks odd because it belongs to a form you'll meet at B1.\n*¡Que te mejores!* Get well soon. *¡Que te vaya bien!* All the best, to someone leaving or starting something.\n*¡Que la pases bien!* Have a good time. *¡Que descanses!* Sleep well.\nTo *usted*, *te* becomes *le* or *se*: *¡Que le vaya bien! ¡Que se mejore!*\n*Ojalá* is I hope so: *Ojalá que sí*, let's hope so; *Ojalá que no*, let's hope not.\nTo calm someone: *No te preocupes*, and to *usted*, *No se preocupe*. Also *No pasa nada*, and *Tranquilo* or *Tranquila*, which you'll hear all day in Colombia.",
+  readAndPick: [
+    { q: "Who is Laura talking to?", es: "¡Que se mejore, don Hernando!",
+      options: ["Don Hernando, politely", "A friend of his", "His whole family"], answer: 0,
+      why: "*Se mejore* goes with *usted*. To a friend: *que te mejores*." },
+    { q: "When would you say this?", es: "¡Que te vaya bien!",
+      options: ["A friend is leaving", "Someone is sick in bed", "Before lunch"], answer: 0,
+      why: "May it go well for you: for a trip, an exam, or just goodbye." },
+    { q: "Does the speaker want rain?", es: "¿Va a llover? Ojalá que no.",
+      options: ["No, not at all", "Yes, a lot", "She doesn't care"], answer: 0,
+      why: "*Ojalá que no*: let's hope not." },
+    { q: "What is Diego telling Laura?", es: "Tranquila, no pasa nada.",
+      options: ["It's all right", "Hurry up, please", "Nothing is happening"], answer: 0,
+      why: "*No pasa nada*: no harm done. *Tranquila* says relax, to a woman." },
+    { q: "Which wish fits a friend with the flu?", es: "Tengo gripa. Me duele todo.",
+      options: ["¡Que te mejores!", "¡Que te vaya bien!", "¡Buen provecho!"], answer: 0,
+      why: "To someone ill: *que te mejores*, get well soon." }
+  ],
+  yourTurn: [
+    { en: "Get well soon! (to a friend)", es: "¡Que te mejores!", accept: ["¡Que te mejores!", "¡Que te mejores pronto!", "Ojalá que te mejores pronto."] },
+    { en: "Get well soon! (to usted)", es: "¡Que se mejore!", accept: ["¡Que se mejore!", "¡Que se mejore pronto!", "Ojalá que se mejore pronto."] },
+    { en: "All the best! (to a friend)", es: "¡Que te vaya bien!", accept: ["¡Que te vaya (muy) bien!", "¡Que te vaya súper bien!", "Que te vaya bien."] },
+    { en: "Don't worry. (to usted)", es: "No se preocupe.", accept: ["No se preocupe.", "[Tranquilo|Tranquila], no se preocupe.", "No se preocupe, no pasa nada."] },
+    { en: "Let's hope so!", es: "¡Ojalá que sí!", accept: ["¡Ojalá que sí!", "¡Ojalá!", "Ojalá que sí."] }
+  ],
+  translate: [
+    { en: "Oh, get well soon! Get some rest.", es: "¡Ay, que te mejores! Descansa.", accept: ["¡Ay, que te mejores! Descansa (un poco).", "¡Que te mejores! Descansa (un poco).", "Ay, que te mejores. Descansa mucho."] },
+    { en: "Let's hope not, we're having a barbecue.", es: "Ojalá que no, tenemos un asado.", accept: ["Ojalá que no, tenemos un asado.", "Ojalá no, tenemos un asado.", "Ojalá que no, vamos a hacer un asado."] },
+    { en: "Don't worry, it's fine. (to a friend)", es: "Tranquilo, no pasa nada.", accept: ["[Tranquilo|Tranquila], no pasa nada.", "No te preocupes, no pasa nada.", "No te preocupes, todo bien."] },
+    { en: "All the best, sir.", es: "Que le vaya bien, señor.", accept: ["Que le vaya (muy) bien, señor.", "Señor, que le vaya (muy) bien.", "Que le vaya bien, caballero."] }
+  ],
+  personal: {
+    prompt: "A friend writes: *Mañana tengo un examen y estoy nerviosa.* Answer in one or two lines: wish her well and calm her down.",
+    constraints: [
+      { type: "containsAny", words: ["que te vaya", "ojalá"], label: "a wish: *que te vaya bien*, *ojalá*…" },
+      { type: "containsAny", words: ["no te preocupes", "tranquila", "no pasa nada"], label: "something calming: *no te preocupes*, *tranquila*…" }
+    ],
+    model: "¡Que te vaya muy bien! Tranquila, no te preocupes, tú estudiaste mucho."
+  },
+  pitfalls: [
+    "*¡Que te mejoras!* uses the everyday ending. The wish needs the other one: *¡Que te mejores!*",
+    "*No te preocupes* is for a friend. To your boss or an older stranger: *No se preocupe*.",
+    "Write *ojalá* with the accent mark on the last *a*."
+  ]
 }
 
 };

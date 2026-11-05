@@ -40,7 +40,7 @@ window.Grammar = (function () {
     lessons.forEach(function (l, i) {
       var row = UI.el('button', 'grammar-link');
       row.type = 'button'; row.dataset.id = l.id;
-      row.innerHTML = '<span class="gl-mark">' + (studied[l.id] ? '✓' : '·') + '</span>' +
+      row.innerHTML = '<span class="gl-mark">' + ((window.Lessons && window.Lessons.isStudied ? window.Lessons.isStudied(studied, l.id) : studied[l.id]) ? '✓' : '·') + '</span>' +
         '<span class="gl-title">' + l.title + '</span><span class="gl-level muted">L' + (l.level || 1) + '</span>';
       row.addEventListener('click', function () { showDoc(l); });
       list.appendChild(row);

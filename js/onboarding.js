@@ -54,8 +54,8 @@ window.Onboarding = (function () {
   /* An adaptive ladder over the course itself. Items are drawn from the
    * sentence bank (and the contrast items from B1) for a target course day, so
    * what is asked is what the course teaches around that day, not a separate
-   * set of probes. A rung is a course day, roughly every 20 days of the path. */
-  var RUNG_STEP = 20, RUNG_OFFSET = 5, MAX_ITEMS = 14, WINDOW = 10;
+   * set of probes. A rung is a course day: five a band, spaced by the band's length. */
+  var RUNG_STEP = 20, RUNGS_PER_BAND = 5, RUNG_OFFSET = 5, MAX_ITEMS = 14, WINDOW = 10;
 
   function days() { return window.COURSE_DAYS || []; }
   function bandStart(b) { return (window.COURSE_BANDS || {})[b] || 0; }
@@ -67,7 +67,12 @@ window.Onboarding = (function () {
     BANDS.forEach(function (b, i) {
       if (!(b in (window.COURSE_BANDS || {}))) return;
       var from = bandStart(b), to = i + 1 < BANDS.length && BANDS[i + 1] in window.COURSE_BANDS ? bandStart(BANDS[i + 1]) : total;
-      for (var d = from + RUNG_OFFSET; d < to; d += RUNG_STEP) list.push({ day: d, band: b });
+      /* Five rungs a band, spaced by the band's own length, so the climb from
+       * A1 reaches B1 in the same number of items whatever the calendar (the
+       * re-sequenced course of 5 November 2026 has 267 days before B1; at one
+       * rung every 20 days the 14-item ladder could never get there). */
+      var step = Math.max(RUNG_STEP, Math.floor((to - from) / RUNGS_PER_BAND));
+      for (var k = 0, d = from + RUNG_OFFSET; k < RUNGS_PER_BAND && d < to; k++, d += step) list.push({ day: d, band: b });
     });
     _rungs = { n: total, list: list };
     return list;
@@ -144,8 +149,8 @@ window.Onboarding = (function () {
     }
     return out;
   }
-  function candidates(rungIdx, span) {
-    var rg = rungs()[rungIdx], di = rg.day, near = nodesNear(di, span);
+  function candidates(rungIdx, span, any) {
+    var rg = rungs()[rungIdx], di = rg.day, near = any ? null : nodesNear(di, span);
     return bankRows(rg.band).filter(function (r) {
       if (r.d == null || r.d > di || r.d < di - span) return false;
       if (!near || !near.size) return true;
@@ -219,10 +224,14 @@ window.Onboarding = (function () {
       var x = rng();
       kinds = x < 0.25 ? ['contrast', 'cloze', 'translate'] : x < 0.65 ? ['cloze', 'translate'] : ['translate', 'cloze'];
     }
-    for (var k = 0; k < kinds.length; k++) {
-      if (kinds[k] === 'contrast') { var ci = contrastItem(rungIdx, rng, used); if (ci) { used[ci.bankId] = 1; return ci; } continue; }
+    /* Rows that target what the rung's own fortnight taught come first; when
+     * none of them makes an item (a week of chunk lessons whose rows have no
+     * gap, say), any row legal by the rung's day will do, so a rung is never
+     * empty while the bank has rows for its band. */
+    for (var pass = 0; pass < 2; pass++) for (var k = 0; k < kinds.length; k++) {
+      if (kinds[k] === 'contrast') { if (pass) continue; var ci = contrastItem(rungIdx, rng, used); if (ci) { used[ci.bankId] = 1; return ci; } continue; }
       for (var span = WINDOW; span <= 3 * WINDOW; span += WINDOW) {
-        var pool = shuffled(candidates(rungIdx, span), rng), tries = 0, seen = {};
+        var pool = shuffled(candidates(rungIdx, span, pass === 1), rng), tries = 0, seen = {};
         for (var i = 0; i < pool.length && tries < 400; i++) {
           var r = pool[i];
           if (used[r.id]) continue;
@@ -284,7 +293,7 @@ window.Onboarding = (function () {
   function placeAt(rungIdx) { return rungIdx < 0 ? 0 : rungs()[rungIdx].day; }
 
   /* ---- applying a result ------------------------------------------------------- */
-  function unitNo(id) { var m = /u(\d+)$/.exec(id || ''); return m ? parseInt(m[1], 10) : null; }
+  function unitNo(id) { var m = /[uw](\d+)$/.exec(id || ''); return m ? parseInt(m[1], 10) : null; }   // a1-u01 and, since the re-sequence, a1-w003
   function describe(day) {
     var d = days()[day] || {}, id = d.unit, u = id && window.COURSE_UNITS && window.COURSE_UNITS[id];
     if (!u) for (var i = day; i >= 0 && !u; i--) { id = days()[i] && days()[i].unit; u = id && window.COURSE_UNITS[id]; }

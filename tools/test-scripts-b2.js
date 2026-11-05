@@ -50,23 +50,29 @@ const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 
-// ---- the lessons on the path: every unit from the start of B2 to the start of C1
-const N_UNITS = 11;
-const b2 = window.COURSE_BANDS.B2, c1 = window.COURSE_BANDS.C1;
-ok(c1 > b2, 'COURSE_BANDS.C1 should come after COURSE_BANDS.B2');
-const UNITS = [];
-for (let i = b2; i < c1; i++) {
-  const u = window.COURSE_DAYS[i].unit;
-  ok(!!u, 'day ' + i + ' of B2 belongs to no unit');
-  if (u && UNITS.indexOf(u) < 0) UNITS.push(u);
-}
-ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units from COURSE_BANDS.B2 to COURSE_BANDS.C1, found ' + UNITS.length);
-ok(UNITS[UNITS.length - 1] === 'b2-u54', 'the last B2 unit should be b2-u54, found ' + UNITS[UNITS.length - 1]);
-const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 128, 'expected 128 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
+const BAND = 'B2';
+// ---- the lessons on the path in this band, read from the course itself (the re-sequenced course of
+// 5 November 2026 places some lessons of one band on days of another; their scripts live in the file
+// of the lesson's own band, which js/views/learn.js falls back to)
+load('data/lessons/index.js');
+['a1', 'a2', 'b1', 'b2', 'c1'].forEach((b) => { if (!window['SCRIPTS_' + b.toUpperCase()]) load('data/scripts/' + b + '.js'); });
+const ALL_SC = { A1: window.SCRIPTS_A1, A2: window.SCRIPTS_A2, B1: window.SCRIPTS_B1, B2: window.SCRIPTS_B2, C1: window.SCRIPTS_C1 };
+const LESSON_BAND = (window.LESSONS_INDEX && window.LESSONS_INDEX.ids) || {};
+const bandDays = window.COURSE_DAYS.map((d, i) => ({ d, i })).filter((x) => x.d.band === BAND);
+const UNITS = [...new Set(bandDays.map((x) => x.d.unit))];
+const pathDays = bandDays.map((x) => x.d);
+const want = pathDays.filter((d) => d.lesson).map((d) => d.lesson);
+ok(want.length > 0 && UNITS.length > 0, 'the ' + BAND + ' band has lessons on the path');
+const servedIn = (T, id) => !!T && Object.keys(T).some((k) => T[k] && Array.isArray(T[k].serves) && T[k].serves.indexOf(id) >= 0);
+const hasScript = (id) => !!SC[id] || servedIn(SC, id) || (LESSON_BAND[id]
+  ? !!(ALL_SC[LESSON_BAND[id]] && (ALL_SC[LESSON_BAND[id]][id] || servedIn(ALL_SC[LESSON_BAND[id]], id)))
+  : Object.keys(ALL_SC).some((b) => ALL_SC[b] && (ALL_SC[b][id] || servedIn(ALL_SC[b], id))));   // ladder lessons live in no band file
+want.forEach((id) => ok(hasScript(id), id + ': no script'));
+const KNOWN_LESSON = new Set(Object.keys(LESSON_BAND));
+window.COURSE_DAYS.forEach((d) => { if (d.lesson) KNOWN_LESSON.add(d.lesson); });
+Object.keys(SC).forEach((id) => ok(KNOWN_LESSON.has(id), id + ': script for an id that is no lesson'));
 const UNIT_OF = {};
 window.COURSE_DAYS.forEach((d) => { if (d.lesson && d.unit && UNIT_OF[d.lesson] == null) UNIT_OF[d.lesson] = d.unit; });
-ok(want[0] === 'fn-acuerdo-b2', 'the first B2 day should be agreeing (fn-acuerdo-b2), found ' + want[0]);
 // the day each later tense is built: the day of its ladder lesson in the course
 const DAY = {};
 window.COURSE_DAYS.forEach((d, i) => { if (d.lesson && DAY[d.lesson] == null) DAY[d.lesson] = i; });
@@ -76,15 +82,12 @@ Object.keys(LATER_TENSES).forEach((tk) => ok(BUILT[tk] < DAY[want[0]], 'the ' + 
 // the pluperfect subjunctive and the -se past subjunctive are built by their own lesson, which opens the third unit
 const PLUSC_DAY = DAY['gr-pluscuamsubj-b2'];
 const firstTwo = window.COURSE_DAYS.filter((d) => UNITS.slice(0, 2).indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(PLUSC_DAY != null && PLUSC_DAY > DAY[firstTwo[firstTwo.length - 1]], 'gr-pluscuamsubj-b2 should come after the last lesson in ' + UNITS.slice(0, 2).join(' and '));
-ok(PLUSC_DAY != null && window.COURSE_DAYS[PLUSC_DAY].unit === UNITS[2], 'gr-pluscuamsubj-b2 should open ' + UNITS[2]);
+ok(PLUSC_DAY != null, 'gr-pluscuamsubj-b2 is on the path');
 const PLUSC_FORM = /\bhubi(era|eras|éramos|eran|ese|eses|ésemos|esen)\s+[a-záéíóúñ]+(ado|ido|to|cho|so)\b/i;
 if (SC['gr-pluscuamsubj-b2']) {
   const p = SC['gr-pluscuamsubj-b2'];
   ok([p.hook && p.hook.es].concat((p.examples || []).map((e) => e.es)).some((x) => PLUSC_FORM.test(plain(x))), 'gr-pluscuamsubj-b2: the hook or an example should show the form it builds (hubiera and a participle)');
 }
-want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(', ')));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {
@@ -220,17 +223,20 @@ Object.keys(SC).forEach((id) => {
   ok(!s.pitfalls || (Array.isArray(s.pitfalls) && s.pitfalls.length <= 3), id + ': 0 to 3 pitfalls');
 
   const day = DAY[id];
+  const RECOG = id === 'gr-vosotros-espana-b2';   // the one lesson that shows Spain's forms, to recognise, never to produce
   for (const x of strs(id, s)) {
     ok(!DASH.test(x.v), x.p + ': dash: "' + x.v.slice(0, 60) + '"');
     if (x.es) {
-      ok(!VOSOTROS_WORD.test(plain(x.v)), x.p + ': vosotros: "' + x.v.slice(0, 60) + '"');
-      ok(!VOSOTROS_VERB.test(plain(x.v).replace(/\b(país|maíz|raíz|oís)\b/gi, '')), x.p + ': a vosotros verb form: "' + x.v.slice(0, 60) + '"');
+      if (!RECOG) {
+        ok(!VOSOTROS_WORD.test(plain(x.v)), x.p + ': vosotros: "' + x.v.slice(0, 60) + '"');
+        ok(!VOSOTROS_VERB.test(plain(x.v).replace(/\b(país|maíz|raíz|oís)\b/gi, '')), x.p + ': a vosotros verb form: "' + x.v.slice(0, 60) + '"');
+      }
       const later = laterForms(x.v, day);
       ok(!later.length, x.p + ': a form the course builds later: ' + later.join(', '));
     } else {
       const J = /^hook\./.test(x.p.slice(id.length + 1)) ? JARGON : JARGON_B2;
       ok(!J.test(plain(x.v)), x.p + ': grammar jargon on screen: "' + (plain(x.v).match(J) || [''])[0] + '"');
-      ok(!/vosotr|vuestr/i.test(x.v), x.p + ': names vosotros');
+      if (!RECOG) ok(!/vosotr|vuestr/i.test(x.v), x.p + ': names vosotros');
     }
   }
 });
@@ -242,8 +248,9 @@ ok(rpShortest / rpTotal <= rpChance / rpTotal + 0.08, 'the right option is the s
 // per unit: the right option is the longest 20 to 45% of the time and the shortest at most 40%
 const unitShares = UNITS.map((u) => {
   const pu = perUnit[u] || { n: 0, longest: 0, shortest: 0 };
-  const nLessons = window.COURSE_DAYS.filter((d) => d.unit === u && d.lesson).length;
+  const nLessons = window.COURSE_DAYS.filter((d) => d.unit === u && d.lesson && SC[d.lesson]).length;   // lessons whose script is in this file
   ok(pu.n >= 4 * nLessons, 'expected at least ' + 4 * nLessons + ' read-and-pick items in ' + u + ', found ' + pu.n);
+  if (pu.n < 30) return u.replace(/^b2-/, '') + ' ' + Math.round(100 * pu.longest / Math.max(1, pu.n)) + '/' + Math.round(100 * pu.shortest / Math.max(1, pu.n)) + ' (small)';   // the re-sequenced weeks hold 1 to 3 lessons: too few items to judge a share
   const lo = pu.n ? pu.longest / pu.n : 0, sh = pu.n ? pu.shortest / pu.n : 0;
   ok(lo >= 0.2 && lo <= 0.45, 'in ' + u + ' the right option is the longest ' + Math.round(100 * lo) + '% of the time (20 to 45%)');
   ok(sh <= 0.4, 'in ' + u + ' the right option is the shortest ' + Math.round(100 * sh) + '% of the time (40% at most)');

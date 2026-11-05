@@ -4065,6 +4065,540 @@ window.SCRIPTS_A1 = {
     "A text to a friend that opens *Estimada Laura* sounds like the bank: just start.",
     "An email to a stranger with no *Buenos días* or *Un saludo* looks rude in Spanish too."
   ]
+},
+
+/* ---- lessons the re-sequenced course brings onto the A1 path ------------ */
+
+"fn-no-entiendo-a1": {
+  source: "merged",
+  hook: {
+    line: "In your first weeks most Spanish will come at you too fast. That is normal. A handful of short lines get people to slow down, say it again, or give you the word.",
+    es: "Laura: ¿Quieres ir al parque o prefieres quedarte en la casa?\nSam: Perdón, no entiendo. ¿Más despacio, por favor?\nLaura: ¿Parque o casa?\nSam: ¡Parque!",
+    en: "Laura: Do you want to go to the park or would you rather stay at home?\nSam: Sorry, I don't understand. Slower, please?\nLaura: Park or home?\nSam: The park!"
+  },
+  examples: [
+    { es: "¿Cómo se dice “receipt” en español?", en: "How do you say “receipt” in Spanish?" },
+    { es: "¿Qué significa “chévere”?", en: "What does “chévere” mean?" },
+    { es: "Perdón, ¿puede repetir, por favor?", en: "Sorry, can you repeat that, please?" }
+  ],
+  rule: "Learn these whole. They do the entire job.\n*No entiendo.* I don't understand. *Perdón* in front makes it friendly: *Perdón, no entiendo.*\n*¿Cómo?* Sorry, what? For when you just didn't catch it.\n*Más despacio, por favor.* Slower, please. Fine with anyone.\nOnce more: *¿Me repites?* to a friend, *¿Puede repetir?* to someone you call *usted*.\nA word you don't have: *¿Cómo se dice…?* A word you just heard: *¿Qué significa…?* To write it down: *¿Cómo se escribe?*\nSay which part you missed, and people repeat just that: *No entiendo la última palabra.*",
+  readAndPick: [
+    { q: "A friend says this to you. What does she want?", es: "¿Me repites, por favor?",
+      options: ["To hear it again", "To go more slowly", "To know a word"], answer: 0,
+      why: "*Repetir* is to say again. *¿Me repites?* asks someone you call *tú*." },
+    { q: "Sam says this. What is he asking for?", es: "¿Cómo se dice “bill” en español?",
+      options: ["The Spanish word", "What a word means", "How to spell it"], answer: 0,
+      why: "*¿Cómo se dice…?* asks for the Spanish word for something." },
+    { q: "Ana hears a new word and asks this. What does she want?", es: "¿Qué significa “chévere”?",
+      options: ["What it means", "How to spell it", "Who said it"], answer: 0,
+      why: "*Significa*: it means. *Chévere* is great, and you hear it all over Colombia." },
+    { q: "Who is Sam talking to?", es: "Perdón, ¿puede repetir, por favor?",
+      options: ["Someone he calls usted", "A close friend", "His little brother at home"], answer: 0,
+      why: "*¿Puede…?* goes with *usted*. To a friend: *¿Me repites?*" },
+    { q: "Diego talks very fast. What does Laura ask him?", es: "Más despacio, por favor.",
+      options: ["To talk more slowly", "To talk a bit louder", "To talk in English"], answer: 0,
+      why: "*Despacio*: slowly. *Más despacio*: more slowly." }
+  ],
+  yourTurn: [
+    { en: "Sorry, I don't understand.", es: "Perdón, no entiendo.", accept: ["Perdón, (yo) no entiendo.", "[Disculpa|Disculpe|Lo siento], (yo) no entiendo.", "Perdón, no te entiendo."] },
+    { en: "Slower, please.", es: "Más despacio, por favor.", accept: ["Por favor, más despacio.", "¿Más despacio, por favor?", "¿Puede hablar más despacio(, por favor)?", "¿Puedes hablar más despacio(, por favor)?"] },
+    { en: "Can you say that again? (to a friend)", es: "¿Me repites?", accept: ["¿Me repites(, por favor)?", "¿Me lo repites(, por favor)?", "¿Me puedes repetir(, por favor)?", "¿Puedes repetir(, por favor)?"] },
+    { en: "How do you say this in Spanish?", es: "¿Cómo se dice esto en español?", accept: ["¿Cómo se dice [esto|eso] en español?", "¿[Esto|Eso] cómo se dice en español?", "¿Cómo se dice [esto|eso]?"] },
+    { en: "Can you repeat that, please? (to someone you call usted)", es: "¿Puede repetir, por favor?", accept: ["¿Puede repetir(, por favor)?", "¿Me puede repetir(, por favor)?", "¿Podría repetir(, por favor)?", "Por favor, ¿puede repetir?"] }
+  ],
+  register: [
+    { es: "¿Qué? ¿Me repites?", en: "What? Say that again?", when: "with a friend" },
+    { es: "Perdón, ¿puede hablar más despacio?", en: "Sorry, can you speak more slowly?", when: "to someone you call usted" },
+    { es: "Disculpe, ¿podría repetir, por favor?", en: "Excuse me, could you repeat that, please?", when: "the most polite, at an office or on the phone" }
+  ],
+  personal: {
+    prompt: "Which line will you need first? Picture someone talking too fast, and write what you say back: *no entiendo*, then one thing you ask for.",
+    constraints: [
+      { type: "containsWord", word: "no entiendo", label: "*no entiendo*" },
+      { type: "containsAny", words: ["despacio", "repet", "se dice", "significa", "se escribe"], label: "one request: *más despacio*, *¿me repites?*, *¿cómo se dice…?*" }
+    ],
+    model: "Perdón, no entiendo. ¿Más despacio, por favor?"
+  },
+  pitfalls: [
+    "*Yo no entiendo* sounds like you are setting yourself against someone. Plain *no entiendo* is the normal line.",
+    "A bare *¿Qué?* can sound blunt to a stranger. *¿Cómo?* or *Perdón, ¿cómo?* is softer.",
+    "*¿Cómo se dice…?* gets you the Spanish word; *¿Qué significa…?* explains a Spanish word you heard. Mix them up and you get the wrong answer."
+  ]
+},
+
+"gr-presente-yo-irregular-a1": {
+  source: "merged",
+  hook: {
+    line: "You've said *tengo* since the first day. Its odd *g* isn't a quirk of one verb: a handful of the most common verbs do the same, and only in the form for I.",
+    es: "¿Qué haces los sábados?\nHago ejercicio por la mañana y salgo con amigos por la noche.",
+    en: "What do you do on Saturdays?\nI exercise in the morning and go out with friends at night."
+  },
+  examples: [
+    { es: "Salgo de la casa a las siete.", en: "I leave home at seven." },
+    { es: "Mi hermano sale a las ocho.", en: "My brother leaves at eight." },
+    { es: "Pongo música en el carro.", en: "I put music on in the car." }
+  ],
+  rule: "A few everyday verbs add a *g* in the form for I, and only there:\n*tener*: *tengo*\n*hacer*: *hago*\n*poner*: *pongo*\n*salir*: *salgo*\n*venir*: *vengo*\n*decir*: *digo*\n*traer*: *traigo*\nAfter I, the usual endings come back: *salgo, sales, sale, salimos, salen*.\n*Tener, venir* and *decir* also change a vowel for you, he, she and they: *tienes, viene, dicen*. Learn those as they come.\nThree more with an odd form for I: *conocer*: *conozco*. *saber*: *sé*. *dar*: *doy*.\nThe question uses you, the answer uses I: *¿Qué haces?* *Hago…*",
+  readAndPick: [
+    { q: "Who is going out tonight?", es: "Esta noche salgo con Laura.",
+      options: ["The speaker and Laura", "Only Laura, tonight", "Laura and her whole family"], answer: 0,
+      why: "*Salgo*: I go out, with the *g*. Laura is who I go with." },
+    { q: "Who makes dinner?", es: "Mi hermano hace la cena.",
+      options: ["The brother", "The speaker", "Everyone at home"], answer: 0,
+      why: "*Hace*: he makes. For I it would be *hago*." },
+    { q: "Laura asks what you do on Sundays. Which answer fits?", es: "¿Qué haces los domingos?",
+      options: ["Hago deporte.", "Haces deporte.", "Hace deporte."], answer: 0,
+      why: "She asks with *haces*, the form for you. Your answer is about you: *hago*." },
+    { q: "Who brings the juice?", es: "Yo traigo el pan y tú traes el jugo.",
+      options: ["The one listening", "Diego, who is speaking", "Diego's mom"], answer: 0,
+      why: "*Traes*: you bring. *Traigo*, with the *g*, is the speaker's part: the bread." },
+    { q: "Which city has Ana been to?", es: "Conozco Medellín, pero no conozco Cali.",
+      options: ["Medellín, not Cali", "Cali, not Medellín", "Both of the cities"], answer: 0,
+      why: "*Conozco*: I know a place. *No conozco Cali*: she hasn't been there." }
+  ],
+  yourTurn: [
+    { en: "I go out with friends on Saturdays.", es: "Los sábados salgo con amigos.", accept: ["Los sábados (yo) salgo con (mis) amigos.", "(Yo) salgo con (mis) amigos los sábados.", "Los sábados salgo con [unos amigos|mis amigos]."] },
+    { en: "I make dinner.", es: "Hago la cena.", accept: ["(Yo) hago la [cena|comida].", "La [cena|comida] la hago yo.", "Yo hago la cena."] },
+    { en: "I put the keys on the table.", es: "Pongo las llaves en la mesa.", accept: ["(Yo) pongo las llaves [en|sobre] la mesa.", "Las llaves las pongo en la mesa.", "Yo pongo las llaves en la mesa."] },
+    { en: "I don't know Bogotá.", es: "No conozco Bogotá.", accept: ["(Yo) no conozco Bogotá.", "No conozco a Bogotá.", "Bogotá no la conozco."] },
+    { en: "What do you do on Sundays? (to a friend)", es: "¿Qué haces los domingos?", accept: ["¿(Y) qué haces los domingos?", "¿Tú qué haces los domingos?", "Los domingos, ¿qué haces?"] }
+  ],
+  personal: {
+    prompt: "What do you really do on a Saturday? Write one or two true lines with at least two of *hago*, *salgo*, *pongo*, *tengo*, *vengo*.",
+    constraints: [
+      { type: "regex", pattern: "\\b(hago|salgo|pongo|tengo|vengo|digo|traigo|conozco)\\b[\\s\\S]*\\b(hago|salgo|pongo|tengo|vengo|digo|traigo|conozco)\\b", label: "two forms for I with the odd ending: *hago*, *salgo*, *tengo*…" },
+      { type: "minWords", n: 6, label: "at least six words" }
+    ],
+    model: "Los sábados hago ejercicio por la mañana y por la noche salgo con mis amigos."
+  },
+  pitfalls: [
+    "*Salo*, *haco* and *teno* are slips. The form for I takes the *g*: *salgo*, *hago*, *tengo*.",
+    "The *g* stays in the form for I only: *sales*, not *salges*; *hace*, not *hage*.",
+    "*Sé* is for a fact, *conozco* for a person or a place: *Sé el número. Conozco Cali.*"
+  ]
+},
+
+"gr-imperfecto-estados-a1": {
+  source: "merged",
+  hook: {
+    line: "Telling what happened is half a story. The other half is what it was like: late, closed, packed. Four new words carry that half.",
+    es: "El sábado fui al banco, pero estaba cerrado.\nEra tarde y había mucha gente en la calle.",
+    en: "On Saturday I went to the bank, but it was closed.\nIt was late and there were a lot of people in the street."
+  },
+  examples: [
+    { es: "Llegué tarde porque había mucho tráfico.", en: "I got there late because there was a lot of traffic." },
+    { es: "Tenía hambre, así que comí una empanada.", en: "I was hungry, so I ate an empanada." },
+    { es: "Era domingo y hacía calor. Fuimos a la piscina.", en: "It was Sunday and it was hot. We went to the pool." }
+  ],
+  rule: "What happened, one thing after another, takes the past you know: *fui, llegué, comí*.\nWhat it was like at the time takes these four:\n*era*: it was, he or she was (from *ser*): *Era tarde.*\n*estaba*: it was, he or she was (from *estar*): *Estaba cerrado.*\n*tenía*: I had, he or she had (from *tener*): *Tenía hambre.*\n*había*: there was, there were (from *hay*): *Había mucha gente.*\nOne form for I and for he or she; the story tells you which.\n*Había* is the same for one thing or many, like *hay*.\nThe weather: *hacía frío*, *hacía calor*.\nScene first, then what happened: *Era tarde y no había taxis. Caminé.*",
+  readAndPick: [
+    { q: "Why didn't Sam buy any bread?", es: "Fui a la panadería, pero estaba cerrada.",
+      options: ["The shop was closed", "He had no money", "There was no bread left"], answer: 0,
+      why: "*Estaba cerrada*: how the bakery was when he got there." },
+    { q: "What was the party like?", es: "Había mucha gente y la música era muy buena.",
+      options: ["Packed, with good music", "Quiet, with no music at all", "Small, with bad music"], answer: 0,
+      why: "*Había mucha gente*: there were lots of people. *Era muy buena*: it was very good." },
+    { q: "What did they do?", es: "Era domingo. Hacía sol. Salimos a caminar.",
+      options: ["They went for a walk", "They sat in the sun", "They slept all Sunday"], answer: 0,
+      why: "*Salimos* tells what happened. *Era domingo* and *hacía sol* only set the scene." },
+    { q: "How old was Laura when she came to Bogotá?", es: "Cuando llegué a Bogotá, tenía veinte años.",
+      options: ["Twenty", "Twelve", "Thirty"], answer: 0,
+      why: "*Tenía veinte años*: she was twenty. Age in the past takes *tenía*." },
+    { q: "Why did Diego go to bed early?", es: "Estaba muy cansado, así que me acosté temprano.",
+      options: ["He was really tired", "He had an early job", "The night was so cold"], answer: 0,
+      why: "*Estaba cansado*: how he was. *Me acosté*: what he did about it." }
+  ],
+  yourTurn: [
+    { en: "The shop was closed.", es: "La tienda estaba cerrada.", accept: ["La tienda estaba cerrada.", "Estaba cerrada la tienda.", "(Y) la tienda estaba cerrada."] },
+    { en: "There were a lot of people.", es: "Había mucha gente.", accept: ["Había [mucha|muchísima] gente.", "Había harta gente.", "Había bastante gente."] },
+    { en: "I was hungry.", es: "Tenía hambre.", accept: ["(Yo) tenía hambre.", "(Yo) tenía [mucha|harta] hambre.", "Yo tenía hambre."] },
+    { en: "It was late and it was cold.", es: "Era tarde y hacía frío.", accept: ["(Ya) era tarde y hacía frío.", "Hacía frío y era tarde.", "Era tarde y hacía [mucho|harto] frío."] },
+    { en: "I got there late because there was a lot of traffic.", es: "Llegué tarde porque había mucho tráfico.", accept: ["(Yo) llegué tarde porque había [mucho|muchísimo|harto] tráfico.", "(Yo) llegué tarde porque había [mucho|harto] trancón.", "(Yo) llegué tarde porque había un trancón."] }
+  ],
+  personal: {
+    prompt: "Think of the last time you went out somewhere. Write two true lines: what it was like, with *era*, *estaba*, *tenía*, *había* or *hacía*, and one thing you did.",
+    constraints: [
+      { type: "regex", pattern: "\\b(era|estaba|tenía|tenia|había|habia|hacía|hacia)\\b", label: "the scene: *era*, *estaba*, *tenía*, *había* or *hacía*" },
+      { type: "regex", pattern: "\\b(fui|fuimos|fue|llegué|llegue|comí|comi|salí|sali|salimos|compré|compre|vi|hice|caminé|camine|[a-záéíóúñ]+(é|ó|í|aste|iste|amos|imos))\\b", label: "one thing you did, in the past you know: *fui*, *comí*, *llegué*" },
+      { type: "minWords", n: 6, label: "at least six words" }
+    ],
+    model: "El domingo fui al mercado. Había mucha gente y hacía mucho calor."
+  },
+  pitfalls: [
+    "*Estaba hambre* is a slip. Hunger is something you have: *tenía hambre*, like *tengo hambre*.",
+    "*Era* and *estaba* split the way *es* and *está* do: *era simpática*, what she was like; *estaba cansada*, how she was that day.",
+    "This past has many more forms. For now these four and *hacía* carry the scene; the rest comes later."
+  ]
+},
+
+"gr-pronombres-me-te-nos-a1": {
+  source: "merged",
+  hook: {
+    line: "You already say *me llamo*, *me gusta* and *nos vemos*. That *me* and that *nos* are small words for me and us, and friends use them in half of what they say.",
+    es: "¿Me ayudas con esto?\nClaro. Y mañana te llamo.\nListo. Nos vemos.",
+    en: "Will you help me with this?\nSure. And I'll call you tomorrow.\nGreat. See you."
+  },
+  examples: [
+    { es: "Ana me escribe todos los días.", en: "Ana writes to me every day." },
+    { es: "¿Me pasas la sal?", en: "Can you pass me the salt?" },
+    { es: "Mis papás nos invitan a almorzar.", en: "My parents are inviting us to lunch." }
+  ],
+  rule: "Three small words for who the action reaches:\n*me*: me, to me, for me\n*te*: you, to you, for you, someone you call *tú*\n*nos*: us, to us, for us\nThey go before the verb, where English puts them after: *Ana me llama*, Ana calls me.\nWith *no*: first *no*, then the small word, then the verb: *No te entiendo.*\nThe verb ending still says who acts: *te llamo*, I call you; *me llamas*, you call me.\nOne word covers me and to me: *me ayuda*, she helps me; *me escribe*, she writes to me.\nA question with *me* is the friendly way to ask for something: *¿Me pasas la sal?*",
+  readAndPick: [
+    { q: "Who calls whom?", es: "Te llamo mañana.",
+      options: ["The speaker calls you", "You call the speaker", "Somebody calls us both"], answer: 0,
+      why: "*Te*: you get the call. The *o* of *llamo* says I make it." },
+    { q: "Who gets the help?", es: "Mi hermana nos ayuda mucho.",
+      options: ["Us, the speaker's family", "The sister herself, alone", "Just the listener"], answer: 0,
+      why: "*Nos*: us. The sister is the one who helps." },
+    { q: "What does Laura want?", es: "¿Me prestas tu lapicero?",
+      options: ["To borrow your pen", "To give you her own pen", "To find a pen"], answer: 0,
+      why: "*Me prestas*: you lend to me. She is asking for your pen." },
+    { q: "Who is lost?", es: "Perdón, no te entiendo.",
+      options: ["The speaker", "The listener", "Both"], answer: 0,
+      why: "*No te entiendo*: I don't understand you. The speaker is the one lost." },
+    { q: "Is Diego giving his name here?", es: "Diego me llama todos los días.",
+      options: ["No, he phones the speaker", "Yes, his name is Diego", "No, the speaker phones him"], answer: 0,
+      why: "*Me llama*: he calls me. To give his name, Diego would say *me llamo Diego*." }
+  ],
+  yourTurn: [
+    { en: "Will you help me? (to a friend)", es: "¿Me ayudas?", accept: ["¿Me ayudas(, por favor)?", "¿Me puedes ayudar(, por favor)?", "¿Puedes ayudarme(, por favor)?"] },
+    { en: "I'll call you tomorrow.", es: "Te llamo mañana.", accept: ["(Yo) te llamo mañana.", "Mañana te llamo.", "Te voy a llamar mañana.", "Mañana te voy a llamar."] },
+    { en: "Can you pass me the salt? (to a friend)", es: "¿Me pasas la sal?", accept: ["¿Me pasas la sal(, por favor)?", "¿Me puedes pasar la sal(, por favor)?", "¿Me pasas la sal, porfa?"] },
+    { en: "Sorry, I don't understand you.", es: "Perdón, no te entiendo.", accept: ["[Perdón|Disculpa|Lo siento], (yo) no te entiendo.", "No te entiendo.", "Perdón, pero no te entiendo."] },
+    { en: "My parents are inviting us to dinner.", es: "Mis papás nos invitan a comer.", accept: ["Mis [papás|padres] nos invitan a [comer|cenar].", "Mis [papás|padres] nos están invitando a [comer|cenar].", "Nos invitan mis [papás|padres] a [comer|cenar]."] }
+  ],
+  personal: {
+    prompt: "Who helps you, writes to you or calls you? Write one or two true lines with *me*, *te* or *nos* before the verb.",
+    constraints: [
+      { type: "regex", pattern: "\\b(me|te|nos)\\s+(ayud|escrib|llam|invit|visit|pregunt|prest|habl|explic|manda|cuent|dic|dan|da|quier|enseñ)[a-záéíóúñ]*", label: "*me*, *te* or *nos* before the verb: *me llama*, *nos visitan*" },
+      { type: "minWords", n: 5, label: "at least five words" }
+    ],
+    model: "Mi mamá me llama todos los domingos y mis amigos me escriben por WhatsApp."
+  },
+  pitfalls: [
+    "*Llamo te* follows English order. The small word goes first: *te llamo*.",
+    "*Te no entiendo* puts *no* in the wrong place: *no te entiendo*.",
+    "*Te* is for one person you call *tú*. For a group, Latin America uses other words, which come later with him, her and them."
+  ]
+},
+
+"fn-cortesia-condicional-a1": {
+  source: "merged",
+  hook: {
+    line: "*Quiero un tinto* is correct, and with friends it's fine. At a counter or on the phone people soften it, and three set pieces do the job.",
+    es: "Buenos días. Quería un tinto y un pandebono, por favor.\nCon gusto. ¿Algo más?\nNo, gracias. ¿Me podría dar la clave del wifi?",
+    en: "Good morning. I'd like a black coffee and a cheese bread, please.\nSure. Anything else?\nNo, thanks. Could you give me the wifi password?"
+  },
+  examples: [
+    { es: "Me gustaría reservar una mesa para dos.", en: "I'd like to book a table for two." },
+    { es: "¿Podría traerme la cuenta, por favor?", en: "Could you bring me the bill, please?" },
+    { es: "¿Te gustaría venir el sábado?", en: "Would you like to come on Saturday?" }
+  ],
+  rule: "Three polite pieces. Learn them whole; how they are built comes much later.\n*Me gustaría*: I'd like. Then a thing or a verb: *Me gustaría un jugo.* *Me gustaría ir.* To a friend: *¿Te gustaría venir?*\n*Quería*: I'd like, said gently. It looks like a past, but at a counter it means now: *Quería dos empanadas.*\n*¿Podría…?*: could you…? Then the verb as the dictionary gives it: *¿Podría repetir?* To a friend, add *s*: *¿Podrías ayudarme?*\n*Quiero* isn't rude. With friends and family it's normal; with strangers these sound warmer.\nThe usual reply: *Claro* or *Con gusto*.",
+  readAndPick: [
+    { q: "Ana says this at a bakery. When does she want the bread?", es: "Quería dos panes, por favor.",
+      options: ["Now, at the counter", "She wanted it yesterday", "Later this week"], answer: 0,
+      why: "*Quería* looks like a past, but at a counter it is a gentle I'd like, now." },
+    { q: "Who is being asked?", es: "¿Podrías prestarme tu celular?",
+      options: ["A friend", "A stranger", "A group"], answer: 0,
+      why: "*Podrías*, with *s*, goes to someone you call *tú*." },
+    { q: "What is Diego doing?", es: "¿Te gustaría ir al cine el viernes?",
+      options: ["Inviting Laura out", "Asking about a film", "Saying he's busy"], answer: 0,
+      why: "*¿Te gustaría…?*: would you like to…? It's an invitation." },
+    { q: "The waiter hears this. What does the customer want?", es: "¿Me podría traer la cuenta, por favor?",
+      options: ["The bill, please", "The menu, please", "A table for two"], answer: 0,
+      why: "*La cuenta*: the bill. *¿Me podría traer…?*: could you bring me…?" },
+    { q: "A stranger says this to you. How does it sound?", es: "Disculpe, ¿me podría ayudar?",
+      options: ["Very polite", "Rather blunt", "Like an order"], answer: 0,
+      why: "*Disculpe* and *¿podría…?* together: about as polite as Spanish gets." }
+  ],
+  yourTurn: [
+    { en: "I'd like a coffee, please.", es: "Me gustaría un café, por favor.", accept: ["[Me gustaría|Quería|Quisiera] un [café|tinto](, por favor).", "Me gustaría tomar un [café|tinto](, por favor).", "Buenos días, [me gustaría|quería] un [café|tinto](, por favor)."] },
+    { en: "Could you bring me the bill? (to the waiter)", es: "¿Me podría traer la cuenta?", accept: ["¿Me podría [traer|dar] la cuenta(, por favor)?", "¿Podría traerme la cuenta(, por favor)?", "Disculpe, ¿me podría traer la cuenta(, por favor)?"] },
+    { en: "I'd like to book a table for two.", es: "Me gustaría reservar una mesa para dos.", accept: ["[Me gustaría|Quería|Quisiera] reservar una mesa para dos( personas)(, por favor).", "[Me gustaría|Quería] hacer una reserva para dos( personas)(, por favor).", "[Me gustaría|Quería] una mesa para dos(, por favor)."] },
+    { en: "Would you like to come on Saturday? (to a friend)", es: "¿Te gustaría venir el sábado?", accept: ["¿(Y) te gustaría venir el sábado?", "¿El sábado te gustaría venir?", "¿Te provoca venir el sábado?"] },
+    { en: "Could you help me? (to a friend)", es: "¿Podrías ayudarme?", accept: ["¿Podrías ayudarme(, por favor)?", "¿Me podrías ayudar(, por favor)?", "¿Tú podrías ayudarme(, por favor)?"] }
+  ],
+  register: [
+    { es: "Parce, ¿me prestas tu cargador?", en: "Hey, can you lend me your charger?", when: "with a close friend, in Colombia" },
+    { es: "Disculpe, ¿me podría ayudar con esto?", en: "Excuse me, could you help me with this?", when: "to someone you call usted" },
+    { es: "Buenas tardes, quería preguntar por una reserva.", en: "Good afternoon, I'd like to ask about a booking.", when: "on the phone or at a front desk" }
+  ],
+  personal: {
+    prompt: "Picture the café or bakery you go to most. Ask for what you always order, the polite way.",
+    constraints: [
+      { type: "containsAny", words: ["me gustaría", "quería", "podría", "quisiera"], label: "*me gustaría*, *quería* or *¿podría…?*" },
+      { type: "minWords", n: 4, label: "at least four words" }
+    ],
+    model: "Buenos días, quería un tinto y un pandebono, por favor."
+  },
+  pitfalls: [
+    "*Quería* here is not about yesterday. *Quería un café* at a counter is a polite I'd like, right now.",
+    "After *¿podría…?* the verb stays as the dictionary gives it: *¿Podría traer…?*, never *¿Podría trae…?*",
+    "*Me gustaría* keeps its *me*, like *me gusta*: never *yo gustaría*."
+  ]
+},
+
+"nt-dias-fechas-a1": {
+  source: "merged",
+  hook: {
+    line: "Forms, bookings, birthdays: sooner or later someone asks for a date. Spanish gives it small to large, the day first, with *de* holding it together.",
+    es: "¿Cuándo es tu cumpleaños?\nEs el doce de octubre.\n¡Uy, es la próxima semana!",
+    en: "When is your birthday?\nIt's the twelfth of October.\nOh, that's next week!"
+  },
+  examples: [
+    { es: "Hoy es martes, tres de junio.", en: "Today is Tuesday, the third of June." },
+    { es: "Nací el primero de mayo de 1998.", en: "I was born on the first of May, 1998." },
+    { es: "En diciembre no trabajo.", en: "In December I don't work." }
+  ],
+  rule: "A date runs day, month, year, with *de* between: *el 5 de mayo de 2024*.\nThe first of the month is *el primero*: *el primero de enero*. Then plain numbers: *el dos, el tres*.\nTo ask: *¿Qué fecha es hoy?* *Hoy es 3 de junio.* For the day: *¿Qué día es hoy?* *Hoy es lunes*, with no *el*.\nDays and months take a small letter: *lunes, martes, miércoles, jueves, viernes, sábado, domingo*; *enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre*.\nIn a month: *en marzo*.\nBorn: *nací el 3 de marzo* with a full date, *nací en 1995* with a year alone.",
+  readAndPick: [
+    { q: "When is Laura's birthday?", es: "Mi cumpleaños es el primero de julio.",
+      options: ["The first of July", "The seventh of January", "The first of June"], answer: 0,
+      why: "*El primero de julio*: the first of July. June is *junio*." },
+    { q: "When was Diego born?", es: "Nací en 1995.",
+      options: ["In the year 1995", "On the fifth of May", "In September"], answer: 0,
+      why: "*En* with a year on its own. A full date takes *el*: *nací el 5 de mayo*." },
+    { q: "What is the speaker telling you?", es: "Hoy es jueves.",
+      options: ["Today is Thursday", "Today is Tuesday", "Today is the third"], answer: 0,
+      why: "*Jueves* is Thursday. Tuesday is *martes*." },
+    { q: "When is Ana's exam?", es: "El examen es el 20 de marzo.",
+      options: ["March the twentieth", "Every day in March", "The twentieth of May"], answer: 0,
+      why: "*El 20 de marzo*: the day first, then the month. May is *mayo*." },
+    { q: "When is the family going to the beach?", es: "En agosto vamos a la playa.",
+      options: ["In August", "On a Sunday", "In April"], answer: 0,
+      why: "*Agosto* is August, and a month takes *en*: *en agosto*." }
+  ],
+  yourTurn: [
+    { en: "Today is Monday.", es: "Hoy es lunes.", accept: ["(Hoy) es lunes.", "Es lunes hoy.", "Hoy es día lunes."] },
+    { en: "My birthday is the third of March.", es: "Mi cumpleaños es el 3 de marzo.", accept: ["Mi [cumpleaños|cumple] es el [3|tres] de marzo.", "Cumplo años el [3|tres] de marzo.", "El [3|tres] de marzo es mi [cumpleaños|cumple]."] },
+    { en: "I was born in 1995.", es: "Nací en 1995.", accept: ["(Yo) nací en (el año) 1995.", "(Yo) nací en el 95.", "(Yo) nací en mil novecientos noventa y cinco."] },
+    { en: "What's the date today?", es: "¿Qué fecha es hoy?", accept: ["¿Hoy qué fecha es?", "¿Qué fecha es hoy, por favor?", "¿Sabes qué fecha es hoy?"] },
+    { en: "In December I'm going to Cartagena.", es: "En diciembre voy a Cartagena.", accept: ["En diciembre (yo) voy a Cartagena.", "(Yo) voy a Cartagena en diciembre.", "En diciembre voy a ir a Cartagena.", "Voy a ir a Cartagena en diciembre."] }
+  ],
+  personal: {
+    prompt: "When is your birthday? Write it in Spanish, and the year you were born if you like.",
+    constraints: [
+      { type: "regex", pattern: "\\b(primero|\\d{1,2}|[a-záéíóúñ]+) de (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre)\\b", label: "the day, *de*, the month: *el 12 de octubre*" },
+      { type: "containsAny", words: ["cumpleaños", "cumple", "nací", "naci", "cumplo"], label: "*mi cumpleaños es…* or *nací…*" }
+    ],
+    model: "Mi cumpleaños es el 12 de octubre. Nací en 1990."
+  },
+  pitfalls: [
+    "*Marzo 3* is English order. Spanish puts the day first: *el 3 de marzo*.",
+    "*Hoy es el lunes* is a slip. To say what day it is, no *el*: *Hoy es lunes.*",
+    "Capitals are a slip too: *lunes*, *marzo*, unless they start a sentence."
+  ]
+},
+
+"nt-frecuencia-a1": {
+  source: "merged",
+  hook: {
+    line: "You can already say *siempre* and *nunca*. Real answers to how often sit in between: almost always, twice a week, every day.",
+    es: "¿Cada cuánto vas al gimnasio?\nDos veces a la semana. Y casi nunca falto.",
+    en: "How often do you go to the gym?\nTwice a week. And I hardly ever miss."
+  },
+  examples: [
+    { es: "Todos los días me levanto a las seis.", en: "Every day I get up at six." },
+    { es: "Casi siempre almuerzo en la casa.", en: "I almost always have lunch at home." },
+    { es: "Llamo a mi abuela una vez al mes.", en: "I call my grandma once a month." }
+  ],
+  rule: "The scale, from most to least:\n*siempre*: always\n*casi siempre*: almost always\n*normalmente*: usually\n*a veces*: sometimes\n*casi nunca*: hardly ever\n*nunca*: never\nThey usually go before the verb: *Casi nunca me acuesto tarde.*\nAfter the verb, *nunca* and *casi nunca* need *no* in front: *No como pescado nunca.*\nTo count: *una vez*, *dos veces*, then *a la semana*, *al mes*, *al año*: *dos veces a la semana*.\nEvery: *todos los días*, *todas las semanas*, *cada mes*.\nTo ask: *¿Cada cuánto…?* or *¿Con qué frecuencia…?*",
+  readAndPick: [
+    { q: "How often does Laura go to the gym?", es: "Voy al gimnasio tres veces a la semana.",
+      options: ["Three times a week", "Three weeks a month", "Every third day"], answer: 0,
+      why: "*Tres veces a la semana*: three times in one week." },
+    { q: "Does Diego go to bed late?", es: "Casi nunca me acuesto tarde.",
+      options: ["Not often at all", "Almost every night", "No, never"], answer: 0,
+      why: "*Casi nunca*: almost never, so hardly ever." },
+    { q: "How often does Sam call his grandma?", es: "Llamo a mi abuela una vez al mes.",
+      options: ["Once each month", "One time a week", "Every day"], answer: 0,
+      why: "*Una vez al mes*: one time in a month." },
+    { q: "What does Ana always do?", es: "Siempre desayuno, pero a veces no almuerzo.",
+      options: ["Have breakfast", "Have lunch", "Skip both meals"], answer: 0,
+      why: "*Siempre desayuno*: I always have breakfast. Lunch is only *a veces*." },
+    { q: "How often does Laura watch TV?", es: "No veo televisión nunca.",
+      options: ["Never, ever", "Every night", "Now and then"], answer: 0,
+      why: "*No… nunca*: after the verb, *nunca* takes *no* in front. Still never." }
+  ],
+  yourTurn: [
+    { en: "I almost always have lunch at home.", es: "Casi siempre almuerzo en la casa.", accept: ["Casi siempre (yo) almuerzo en [la casa|casa|mi casa].", "(Yo) almuerzo en [la casa|casa|mi casa] casi siempre.", "Yo casi siempre almuerzo en [la casa|casa|mi casa]."] },
+    { en: "I go to the gym twice a week.", es: "Voy al gimnasio dos veces a la semana.", accept: ["(Yo) voy al [gimnasio|gym] dos veces [a la|por] semana.", "Dos veces [a la|por] semana (yo) voy al [gimnasio|gym].", "Yo voy al gimnasio dos veces a la semana."] },
+    { en: "I hardly ever go to bed late.", es: "Casi nunca me acuesto tarde.", accept: ["(Yo) casi nunca me acuesto tarde.", "No me acuesto tarde casi nunca.", "Yo casi nunca me acuesto tarde."] },
+    { en: "How often do you go to the cinema? (to a friend)", es: "¿Cada cuánto vas al cine?", accept: ["¿Cada cuánto (tiempo) vas al cine?", "¿Con qué frecuencia vas al cine?", "¿Tú cada cuánto vas al cine?"] },
+    { en: "Every Friday we go out to eat.", es: "Todos los viernes salimos a comer.", accept: ["Todos los viernes (nosotros) salimos a comer.", "(Nosotros) salimos a comer todos los viernes.", "Cada viernes salimos a comer.", "Los viernes siempre salimos a comer."] }
+  ],
+  personal: {
+    prompt: "Pick two things you do and say truly how often: *todos los días*, *dos veces a la semana*, *casi nunca*…",
+    constraints: [
+      { type: "containsAny", words: ["siempre", "normalmente", "a veces", "nunca", "todos los", "todas las", "cada", "vez", "veces"], label: "how often: *a veces*, *casi nunca*, *dos veces a la semana*…" },
+      { type: "minWords", n: 6, label: "at least six words" }
+    ],
+    model: "Juego fútbol dos veces a la semana y casi nunca veo televisión."
+  },
+  pitfalls: [
+    "*Casi nunca no me acuesto* doubles the no in the wrong place. Before the verb, *casi nunca* needs nothing else.",
+    "*Dos tiempos* is English thinking. Times, as in how many, is *veces*: *dos veces*.",
+    "Week and month take different small words: *a la semana*, but *al mes* and *al año*."
+  ]
+},
+
+"gr-tener-que-hay-que-a1": {
+  source: "merged",
+  hook: {
+    line: "A friend asks you out tonight. The honest answer is usually about what you have to do, and Spanish builds it from *tener*, which you already know.",
+    es: "¿Vamos al cine esta noche?\nNo puedo. Mañana tengo que trabajar temprano.",
+    en: "Shall we go to the cinema tonight?\nI can't. I have to work early tomorrow."
+  },
+  examples: [
+    { es: "Hay que pagar antes de entrar.", en: "You have to pay before going in." },
+    { es: "Necesito hablar con usted.", en: "I need to talk to you." },
+    { es: "No tienes que venir mañana.", en: "You don't have to come tomorrow." }
+  ],
+  rule: "What you have to do: *tener*, then *que*, then the verb as the dictionary gives it:\n*tengo que trabajar*: I have to work\n*tienes que*, *tiene que*, *tenemos que*, *tienen que*\nOnly *tener* changes, and the *que* never drops.\nA rule for anyone, with nobody named: *hay que*. It never changes: *Hay que pagar antes.*\nA need: *necesito*, then a thing or a verb, with no *que*: *Necesito un taxi. Necesito descansar.*\n*No tienes que* means there's no need, not you mustn't: *No tienes que venir.*\nFor not allowed: *no se puede*. *Aquí no se puede fumar.*",
+  readAndPick: [
+    { q: "Why can't Laura come?", es: "No puedo, tengo que estudiar.",
+      options: ["She's got to study", "She'd rather study", "She has a test"], answer: 0,
+      why: "*Tengo que estudiar*: I have to study. It's a duty, not a wish." },
+    { q: "Who has to pay first?", es: "Hay que pagar antes de entrar.",
+      options: ["Everyone who goes in", "Only the speaker", "The person at the door"], answer: 0,
+      why: "*Hay que*: a rule for anyone. Nobody in particular is named." },
+    { q: "Laura says this to Diego. What does she mean?", es: "Diego, no tienes que venir mañana.",
+      options: ["He doesn't need to", "He isn't allowed to", "He has to, early"], answer: 0,
+      why: "*No tienes que*: you don't have to. Not allowed would be *no puedes*." },
+    { q: "What does Ana need?", es: "Necesito hablar con el profesor.",
+      options: ["A word with the teacher", "To find a new teacher", "To teach the class herself"], answer: 0,
+      why: "*Necesito* plus a verb: I need to. *Hablar con*: talk to." },
+    { q: "Who has to work on Saturday?", es: "El sábado tenemos que trabajar.",
+      options: ["We all do", "I do, alone", "They do"], answer: 0,
+      why: "*Tenemos que*: we have to. The ending of *tener* says who." }
+  ],
+  yourTurn: [
+    { en: "I have to work tomorrow.", es: "Mañana tengo que trabajar.", accept: ["Mañana (yo) tengo que trabajar.", "(Yo) tengo que trabajar mañana.", "Mañana me toca trabajar."] },
+    { en: "You have to pay before going in. (anyone)", es: "Hay que pagar antes de entrar.", accept: ["Antes de entrar hay que pagar.", "Hay que pagar antes de [entrar|ingresar].", "Se tiene que pagar antes de entrar."] },
+    { en: "I need to rest.", es: "Necesito descansar.", accept: ["(Yo) necesito descansar.", "Necesito descansar un poco.", "Yo necesito descansar."] },
+    { en: "You don't have to come tomorrow. (to a friend)", es: "No tienes que venir mañana.", accept: ["(Tú) no tienes que venir mañana.", "Mañana no tienes que venir.", "No tienes que venir mañana(, tranquilo)."] },
+    { en: "We have to buy bread.", es: "Tenemos que comprar pan.", accept: ["(Nosotros) tenemos que comprar (el) pan.", "Hay que comprar pan.", "Toca comprar pan."] }
+  ],
+  personal: {
+    prompt: "What do you really have to do this week? Write one or two true lines with *tengo que*, and one thing you need with *necesito*.",
+    constraints: [
+      { type: "regex", pattern: "\\btengo que\\s+[a-záéíóúñ]+(ar|er|ir)\\b", label: "*tengo que*, then a verb: *tengo que trabajar*" },
+      { type: "regex", pattern: "\\bnecesito\\b", label: "something you need, with *necesito*" }
+    ],
+    model: "Esta semana tengo que terminar un informe y necesito dormir más."
+  },
+  pitfalls: [
+    "*Tengo trabajar* drops the *que*: *tengo que trabajar*.",
+    "*No tienes que* is no need, not you mustn't. For a ban: *no se puede* or *no puedes*.",
+    "*Hay que* never takes a person: *yo hay que* is a slip. For yourself, *tengo que*."
+  ]
+},
+
+"gr-indefinidos-negativos-b1": {
+  source: "merged",
+  hook: {
+    line: "At the door: is anyone home? At the shop: anything else? Two pairs of short words answer most of these, and with them Spanish says no twice.",
+    es: "¿Hay alguien en la casa?\nNo, no hay nadie.\n¿Quieres algo de la tienda?\nNo, gracias, no necesito nada.",
+    en: "Is anyone at home?\nNo, there's nobody.\nDo you want anything from the shop?\nNo, thanks, I don't need anything."
+  },
+  examples: [
+    { es: "Alguien te llamó esta mañana.", en: "Someone called you this morning." },
+    { es: "No compré nada en el mercado.", en: "I didn't buy anything at the market." },
+    { es: "¿Tienes alguna pregunta?", en: "Do you have any questions?" }
+  ],
+  rule: "Two pairs, a yes word and a no word:\n*algo*: something, anything. *nada*: nothing.\n*alguien*: someone, anyone. *nadie*: nobody.\nThese four never change.\nAfter the verb, the no word needs *no* in front. Spanish says no twice, and it is correct: *No hay nadie. No quiero nada.*\nBefore the verb, no *no*: *Nadie sabe.*\nWith a thing named, use *algún* and *ningún* with *el* words, *alguna* and *ninguna* with *la* words: *¿Tienes alguna pregunta?* *No tengo ningún problema.*\nIn a shop you will hear *¿Algo más?*: anything else?",
+  readAndPick: [
+    { q: "Is anyone at the office?", es: "No hay nadie en la oficina.",
+      options: ["No one, it's empty", "Someone, but not Ana", "Everyone from work"], answer: 0,
+      why: "*No hay nadie*: there's nobody. The two noes make one no." },
+    { q: "What did Diego buy?", es: "No compré nada.",
+      options: ["Nothing at all", "Just a little", "Something small"], answer: 0,
+      why: "*No… nada*: not anything. He bought nothing." },
+    { q: "What is the cashier asking?", es: "¿Algo más?",
+      options: ["If you want more", "If it costs a lot", "If you need help"], answer: 0,
+      why: "*Algo*: something, anything. *Más*: more. Together: anything else?" },
+    { q: "Who called?", es: "Alguien te llamó, pero no dijo el nombre.",
+      options: ["Someone, no name", "Nobody called", "Your boss, by name"], answer: 0,
+      why: "*Alguien*: someone. *No dijo el nombre*: they didn't say who." },
+    { q: "Does Ana have a problem?", es: "No, no tengo ningún problema.",
+      options: ["No, she's fine", "Yes, a big one", "Yes, several"], answer: 0,
+      why: "*Ningún problema*: not one problem. *Ningún*, because it is *el problema*." }
+  ],
+  yourTurn: [
+    { en: "There's nobody at home.", es: "No hay nadie en la casa.", accept: ["No hay nadie en [la casa|casa|mi casa].", "En [la casa|casa] no hay nadie.", "En mi casa no hay nadie."] },
+    { en: "I don't want anything, thanks.", es: "No quiero nada, gracias.", accept: ["(Yo) no quiero nada(, gracias).", "No, gracias, no quiero nada.", "Nada, gracias."] },
+    { en: "Someone called you. (to a friend)", es: "Alguien te llamó.", accept: ["Te llamó alguien.", "Alguien te llamó (hace un rato).", "Te llamaron."] },
+    { en: "Do you have any questions?", es: "¿Tienes alguna pregunta?", accept: ["¿(Tú) tienes alguna pregunta?", "¿[Tiene|Tienen] alguna pregunta?", "¿Hay alguna pregunta?"] },
+    { en: "Nobody knows.", es: "Nadie sabe.", accept: ["Nadie (lo) sabe.", "No (lo) sabe nadie.", "Nadie sabe eso."] }
+  ],
+  personal: {
+    prompt: "Think of last weekend. Write one true line with *nada* or *nadie*: something you didn't do, or a place where there was nobody.",
+    constraints: [
+      { type: "regex", pattern: "\\b(nada|nadie|ningún|ningun|ninguna|ninguno)\\b", label: "a no word: *nada*, *nadie* or *ningún*" },
+      { type: "minWords", n: 4, label: "at least four words" }
+    ],
+    model: "El domingo no hice nada: me quedé en la casa todo el día."
+  },
+  pitfalls: [
+    "*Hay nadie* drops a no. After the verb, Spanish says it twice: *No hay nadie.*",
+    "*No quiero algo* is English thinking. With *no*, the word is *nada*: *No quiero nada.*",
+    "*Algún* and *ningún* go with *el* words, *alguna* and *ninguna* with *la* words: *ningún problema*, *ninguna pregunta*."
+  ]
+},
+
+"gr-subordinadas-sustantivas-a1": {
+  source: "merged",
+  hook: {
+    line: "Two ways to hang one idea on another. What you want or like takes the next verb straight on. What you think, know or heard takes *que* and a whole sentence.",
+    es: "Quiero ir a Cartagena en diciembre.\nCreo que es muy caro en esa época.\nLaura dice que en enero es más barato.",
+    en: "I want to go to Cartagena in December.\nI think it's very expensive at that time of year.\nLaura says it's cheaper in January."
+  },
+  examples: [
+    { es: "Me gusta cocinar los domingos.", en: "I like cooking on Sundays." },
+    { es: "Sé que tienes mucho trabajo.", en: "I know you have a lot of work." },
+    { es: "Diego dice que viene a las ocho.", en: "Diego says he's coming at eight." }
+  ],
+  rule: "Want, like, need, can: the next verb comes straight on, as the dictionary gives it, with no *que*:\n*Quiero ir.* *Me gusta cocinar.* *Necesito dormir.* *Puedo venir.*\nThink, know, say: *que*, then a full sentence with its own verb ending:\n*Creo que es caro.* I think it's expensive.\n*Sé que tienes razón.* I know you're right.\n*Dice que viene mañana.* He says he's coming tomorrow.\nEnglish often drops that: I think it's late. Spanish never drops *que*: *Creo que es tarde.*\nAfter *que*, any time works: *Laura dice que llegó tarde.*",
+  readAndPick: [
+    { q: "What does Sam want?", es: "Quiero aprender a cocinar.",
+      options: ["To learn to cook", "To teach cooking", "To eat out more"], answer: 0,
+      why: "*Quiero*, then *aprender* straight on: the wanting and the learning are both Sam's." },
+    { q: "What does Laura think?", es: "Creo que el restaurante es muy caro.",
+      options: ["It's too expensive", "The food is very good", "It's closed today"], answer: 0,
+      why: "*Creo que*: I think, then her opinion: *es muy caro*." },
+    { q: "Who is coming at eight?", es: "Diego dice que viene a las ocho.",
+      options: ["Diego, so he says", "The one who's speaking", "Diego's mom"], answer: 0,
+      why: "*Viene*: he comes. *Dice que* reports what Diego said about himself." },
+    { q: "What does the speaker know?", es: "Sé que tienes mucho trabajo esta semana.",
+      options: ["You're busy this week", "You're free this week", "You lost your job"], answer: 0,
+      why: "*Sé que*, then the fact: *tienes mucho trabajo*, you have a lot of work." },
+    { q: "Who likes dancing?", es: "A mi hermana le gusta bailar.",
+      options: ["The sister, only", "The speaker", "The whole family"], answer: 0,
+      why: "*Le gusta bailar*: she likes dancing. The next verb comes straight on, no *que*." }
+  ],
+  yourTurn: [
+    { en: "I want to travel in January.", es: "Quiero viajar en enero.", accept: ["(Yo) quiero viajar en enero.", "En enero (yo) quiero viajar.", "Quiero ir de viaje en enero."] },
+    { en: "I think it's late.", es: "Creo que es tarde.", accept: ["(Yo) creo que (ya) es tarde.", "Me parece que (ya) es tarde.", "Creo que ya es muy tarde."] },
+    { en: "I know you're right. (to a friend)", es: "Sé que tienes razón.", accept: ["(Yo) sé que (tú) tienes razón.", "Ya sé que tienes razón.", "Sé que tú tienes razón."] },
+    { en: "Laura says she's coming tomorrow.", es: "Laura dice que viene mañana.", accept: ["Laura dice que mañana viene.", "Laura dice que va a venir mañana.", "Laura dice que mañana va a venir."] },
+    { en: "I like cooking on Sundays.", es: "Me gusta cocinar los domingos.", accept: ["Los domingos me gusta cocinar.", "A mí me gusta cocinar los domingos.", "Los domingos a mí me gusta cocinar."] }
+  ],
+  personal: {
+    prompt: "Write two true lines: one thing you want to do this year, with *quiero*, and one thing you think about it, with *creo que*.",
+    constraints: [
+      { type: "regex", pattern: "\\bquiero\\s+[a-záéíóúñ]+(ar|er|ir)\\b", label: "*quiero*, then the verb straight on: *quiero viajar*" },
+      { type: "containsWord", word: "creo que", label: "*creo que*, then a full sentence" }
+    ],
+    model: "Este año quiero aprender a bailar salsa. Creo que es difícil, pero muy divertido."
+  },
+  pitfalls: [
+    "*Quiero que voy* adds a *que* Spanish doesn't want. When you want something for yourself, the verb comes straight on: *quiero ir*.",
+    "*Creo es tarde* drops the *que*. English can drop that; Spanish can't: *creo que es tarde*.",
+    "After *que* comes a whole sentence with its own ending: *dice que viene*, never *dice que venir*."
+  ]
 }
+
 
 };

@@ -50,9 +50,12 @@
     "teaches": [
       "c:gracias-de-nada",
       "p:gracias-por",
-      "d:thank-and-reply"
+      "d:thank-and-reply",
+      "c:no-te-preocupes",
+      "c:se-me-hizo-tarde",
+      "c:tranquilo"
     ],
-    "note": "Thanking and the replies to thanks."
+    "note": "Thanking and the replies to thanks. Re-sequence: absorbs fn-disculparse-a2."
   },
   "task-presentarse": {
     "teaches": [],
@@ -66,10 +69,9 @@
   },
   "gr-pronombre-sujeto-a1": {
     "teaches": [
-      "x:tu-usted",
-      "g:vosotros-recognition"
+      "x:tu-usted"
     ],
-    "note": "Subject pronouns, including vosotros, and pro-drop. The graph has no subject-pronoun or pro-drop node; x:tu-usted is the closest (usted takes the él endings). g:vosotros-recognition because the forms table teaches vosotros as a pronoun of the learner's own Spanish."
+    "note": "Subject pronouns, including vosotros, and pro-drop. The graph has no subject-pronoun or pro-drop node; x:tu-usted is the closest (usted takes the él endings). g:vosotros-recognition because the forms table teaches vosotros as a pronoun of the learner's own Spanish. Re-sequence: gives g:vosotros-recognition to gr-vosotros-espana-b2."
   },
   "task-preguntar": {
     "teaches": [],
@@ -95,11 +97,9 @@
   "nt-referencias-generales-a1": {
     "teaches": [
       "p:telling-time",
-      "c:que-hora-es",
-      "p:days-el-lunes",
-      "p:frequency-scale"
+      "c:que-hora-es"
     ],
-    "note": "Time, days, parts of the day, frequency."
+    "note": "Time, days, parts of the day, frequency. Re-sequence: gives p:frequency-scale to nt-frecuencia-a1; gives p:days-el-lunes to nt-dias-fechas-a1."
   },
   "nt-valor-precio-a1": {
     "teaches": [
@@ -116,9 +116,12 @@
   "gr-verbos-predicativos-tipos-a2": {
     "teaches": [
       "g:gustar-full",
-      "p:me-duele"
+      "p:me-duele",
+      "d:likes-and-react",
+      "g:gustar-basic",
+      "c:que-te-gusta-hacer"
     ],
-    "note": "Backwards verbs encantar and doler with every indirect object pronoun."
+    "note": "Backwards verbs encantar and doler with every indirect object pronoun. Re-sequence: absorbs fn-preguntar-gustos-a2."
   },
   "fn-preguntar-gustos-a2": {
     "teaches": [
@@ -184,9 +187,11 @@
   },
   "gr-genero-adjetivo-a1": {
     "teaches": [
-      "g:adjective-agreement"
+      "g:adjective-agreement",
+      "p:el-rojo-la-grande",
+      "g:superlatives"
     ],
-    "note": "Adjective gender, including nationality adjectives."
+    "note": "Adjective gender, including nationality adjectives. Re-sequence: absorbs gr-adjetivos-calificativos-a1."
   },
   "gr-adjetivos-calificativos-a1": {
     "teaches": [
@@ -244,10 +249,9 @@
   "gr-preterito-perfecto-a2": {
     "teaches": [
       "g:perfecto-experience",
-      "g:spain-pasts",
       "x:perfecto-preterito"
     ],
-    "note": "Tense lesson (perfecto): experience and not-yet, plus the open time frame (hoy, este año + perfecto), which is Spain's usage and the graph's g:spain-pasts; contrasts he comido vs comí, x:perfecto-preterito."
+    "note": "Tense lesson (perfecto): experience and not-yet, plus the open time frame (hoy, este año + perfecto), which is Spain's usage and the graph's g:spain-pasts; contrasts he comido vs comí, x:perfecto-preterito. Re-sequence: gives g:spain-pasts to gr-vosotros-espana-b2."
   },
   "nt-anterioridad-a2": {
     "teaches": [
@@ -288,9 +292,12 @@
       "p:aqui-ahi-alla",
       "p:bien-mal-vs-bueno-malo",
       "x:muy-mucho",
-      "p:quantifiers-basic"
+      "p:quantifiers-basic",
+      "p:cerca-de",
+      "p:time-sequence-basic",
+      "g:negation-words"
     ],
-    "note": "Place, time, quantity and manner adverbs; adds the muy vs mucho contrast the lesson teaches."
+    "note": "Place, time, quantity and manner adverbs; adds the muy vs mucho contrast the lesson teaches. Re-sequence: absorbs gr-adverbios-circunstanciales-a2."
   },
   "task-rutina": {
     "teaches": [],
@@ -413,19 +420,18 @@
     "teaches": [
       "g:indirect-objects",
       "g:le-doubling",
-      "g:possessive-dative"
+      "g:possessive-dative",
+      "x:lo-le"
     ],
-    "note": "le and les, doubling, and the possessive and separation datives (robaron la cartera a muchas personas)."
+    "note": "le and les, doubling, and the possessive and separation datives (robaron la cartera a muchas personas). Re-sequence: takes g:indirect-objects, x:lo-le from gr-pronombres-atonos-a2."
   },
   "gr-pronombres-atonos-a2": {
     "teaches": [
       "g:direct-objects",
-      "g:indirect-objects",
-      "g:double-pronouns",
-      "x:lo-le",
-      "x:le-se-lo"
+      "p:personal-a",
+      "g:that-clauses"
     ],
-    "note": "Object pronouns: lo/la vs le/les, and le turning into se before lo."
+    "note": "Object pronouns: lo/la vs le/les, and le turning into se before lo. Re-sequence: gives g:indirect-objects, x:lo-le to gr-objeto-indirecto-a2; gives g:double-pronouns, x:le-se-lo to gr-pronombres-combinados-b1; absorbs gr-objeto-directo-a1."
   },
   "gr-pronombres-tonicos-a2": {
     "teaches": [
@@ -572,10 +578,9 @@
   },
   "gr-gerundio-a2": {
     "teaches": [
-      "g:estar-gerund",
-      "g:object-pronoun-position"
+      "g:estar-gerund"
     ],
-    "note": "Gerund form, estar + gerund, and the pronoun before or attached (le está escribiendo / está escribiéndole)."
+    "note": "Gerund form, estar + gerund, and the pronoun before or attached (le está escribiendo / está escribiéndole). Re-sequence: gives g:object-pronoun-position to gr-pronombres-posicion-a2."
   },
   "gr-adverbios-circunstanciales-a2": {
     "teaches": [
@@ -592,10 +597,9 @@
   "gr-presente-irregular-a2": {
     "teaches": [
       "g:stem-boot",
-      "g:stem-e-i",
-      "g:yo-irregular"
+      "g:stem-e-i"
     ],
-    "note": "The boot verbs (all three vowel changes) and the odd yo."
+    "note": "The boot verbs (all three vowel changes) and the odd yo. Re-sequence: gives g:yo-irregular to gr-presente-yo-irregular-a1."
   },
   "gr-articulo-definido-distribucion-a2": {
     "teaches": [
@@ -651,9 +655,13 @@
     "teaches": [
       "d:agree-disagree-b1",
       "p:estar-de-acuerdo-con-en",
-      "c:para-nada"
+      "c:para-nada",
+      "d:give-ask-opinion",
+      "p:que-opinas-de",
+      "c:ni-hablar",
+      "c:que-va"
     ],
-    "note": "Confirmed."
+    "note": "Confirmed. Re-sequence: absorbs fn-preguntar-si-acuerdo-b1; absorbs dc-intensificar-acuerdo-desacuerdo-b1."
   },
   "nt-conformidad-correccion-precision-b1": {
     "teaches": [
@@ -727,9 +735,13 @@
   "gr-subordinadas-sustantivas-b1": {
     "teaches": [
       "x:inf-vs-que-subj",
-      "g:subj-emotion"
+      "g:subj-emotion",
+      "d:hope-wish-b1",
+      "p:que-subj-deseo",
+      "p:sonar-con",
+      "c:ojala"
     ],
-    "note": "Infinitive vs que + subjunctive, generalised to emotion verbs (nos preocupa que)."
+    "note": "Infinitive vs que + subjunctive, generalised to emotion verbs (nos preocupa que). Re-sequence: absorbs fn-expresar-deseos-b1."
   },
   "fn-expresar-deseos-b1": {
     "teaches": [
@@ -802,9 +814,14 @@
       "d:tell-structured-story",
       "p:entonces-de-repente",
       "g:narrative-pasts",
-      "g:reported-backshift"
+      "g:reported-backshift",
+      "c:no-te-lo-vas-a-creer",
+      "d:open-close-story",
+      "p:darse-cuenta-de",
+      "p:al-final-en-resumen",
+      "c:total-que"
     ],
-    "note": "The five-part story using every past (estaba … hasta que sonó … había sido) and reported speech dropped into it (me contó que había perdido el vuelo y que tendría que esperar)."
+    "note": "The five-part story using every past (estaba … hasta que sonó … había sido) and reported speech dropped into it (me contó que había perdido el vuelo y que tendría que esperar). Re-sequence: absorbs fn-introducir-tema-relato-b1; absorbs fn-introducir-hecho-b1; absorbs fn-concluir-relato-b1."
   },
   "fn-concluir-relato-b1": {
     "teaches": [
@@ -840,9 +857,10 @@
       "d:share-news-heard",
       "p:oir-hablar-de",
       "c:ni-idea",
-      "c:que-yo-sepa"
+      "c:que-yo-sepa",
+      "p:enterarse-de"
     ],
-    "note": "oír que + indicative or subjunctive, and having no idea."
+    "note": "oír que + indicative or subjunctive, and having no idea. Re-sequence: absorbs fn-has-oido-b1."
   },
   "fn-pedir-informacion-b1": {
     "teaches": [
@@ -858,9 +876,11 @@
   "gr-relativas-b1": {
     "teaches": [
       "g:relative-que",
-      "g:relatives-donde-lo-que"
+      "g:relatives-donde-lo-que",
+      "d:identify-the-one",
+      "p:el-que-la-que"
     ],
-    "note": "que, quien, donde; restrictive vs non-restrictive. The graph has no node for the comma distinction."
+    "note": "que, quien, donde; restrictive vs non-restrictive. The graph has no node for the comma distinction. Re-sequence: absorbs gr-adverbios-relativos-b1; absorbs fn-identificar-b1."
   },
   "gr-adverbios-relativos-b1": {
     "teaches": [
@@ -879,10 +899,9 @@
   "gr-pronombres-combinados-b1": {
     "teaches": [
       "g:double-pronouns",
-      "x:le-se-lo",
-      "g:object-pronoun-position"
+      "x:le-se-lo"
     ],
-    "note": "te lo, se lo, and the pair moving as one unit before the verb or attached to an infinitive or gerund."
+    "note": "te lo, se lo, and the pair moving as one unit before the verb or attached to an infinitive or gerund. Re-sequence: takes g:double-pronouns, x:le-se-lo from gr-pronombres-atonos-a2; gives g:object-pronoun-position to gr-pronombres-posicion-a2."
   },
   "task-b1-describir": {
     "teaches": [],
@@ -1052,9 +1071,11 @@
   "gr-adverbios-evaluativos-b2": {
     "teaches": [
       "g:evaluative-adverbs",
-      "g:adverbs-mente"
+      "g:adverbs-mente",
+      "p:precisamente-concretamente",
+      "p:al-final-en-resumen"
     ],
-    "note": "Sentence adverbs in -mente (afortunadamente, lamentablemente) and how-the-subject-acted adverbs (generosamente)."
+    "note": "Sentence adverbs in -mente (afortunadamente, lamentablemente) and how-the-subject-acted adverbs (generosamente). Re-sequence: absorbs gr-adverbios-enunciacion-b2."
   },
   "gr-adverbios-enunciacion-b2": {
     "teaches": [
@@ -1139,9 +1160,15 @@
     "teaches": [
       "p:duplicarse",
       "p:subir-subida",
-      "g:comparatives-advanced"
+      "g:comparatives-advanced",
+      "p:indice-tasa",
+      "p:aproximar-cifras",
+      "p:por-ciento",
+      "p:repartir-entre",
+      "p:fracciones-de",
+      "d:news-figures"
     ],
-    "note": "Rises and falls, X veces más, cada vez más."
+    "note": "Rises and falls, X veces más, cada vez más. Re-sequence: absorbs nt-cantidad-numerica-b2; absorbs nt-proporcion-b2; absorbs nt-cantidad-relativa-b2."
   },
   "nt-referencias-generales-b2": {
     "teaches": [
@@ -1155,9 +1182,12 @@
     "teaches": [
       "p:llevar-sin-inf",
       "x:llevar-gerundio-sin",
-      "c:a-largo-plazo"
+      "c:a-largo-plazo",
+      "p:dar-tiempo",
+      "p:a-ultima-hora",
+      "p:hacia-las-nueve"
     ],
-    "note": "Confirmed."
+    "note": "Confirmed. Re-sequence: absorbs nt-referencias-generales-b2."
   },
   "task-b2-noticia": {
     "teaches": [],
@@ -1449,9 +1479,11 @@
     "teaches": [
       "p:como-es-que",
       "p:puedo-hacerte-una-pregunta",
-      "g:indirect-questions"
+      "g:indirect-questions",
+      "p:como-que-echo",
+      "g:subj-free-relatives"
     ],
-    "note": "¿cómo es que…?, ¿tienes idea de…?, ¿me permites…?"
+    "note": "¿cómo es que…?, ¿tienes idea de…?, ¿me permites…? Re-sequence: absorbs fn-dar-informacion-c1."
   },
   "fn-dar-informacion-c1": {
     "teaches": [
@@ -1738,8 +1770,496 @@
   },
   "gr-ir-a-infinitivo-a1": {
     "teaches": [
-      "g:ir-a-plans"
+      "g:ir-a-plans",
+      "c:voy-a"
     ],
-    "note": "new lesson 4 Nov 2026 for the untaught node"
+    "note": "new lesson 4 Nov 2026 for the untaught node Re-sequence node model."
+  },
+  "fn-pedir-informacion-a1": {
+    "teaches": [
+      "p:para-inf-purpose",
+      "x:para-porque",
+      "c:como-se-escribe",
+      "p:que-tipo-de",
+      "d:ask-basic-questions"
+    ],
+    "note": "Re-sequence: absorbs fn-pedir-informacion-a2."
+  },
+  "fn-no-entiendo-a1": {
+    "teaches": [
+      "c:no-entiendo",
+      "c:como-se-dice",
+      "c:mas-despacio"
+    ],
+    "note": "SEQ new lesson: survival chunks no entiendo, ¿cómo se dice?, más despacio / ¿puede repetir?"
+  },
+  "gr-presente-yo-irregular-a1": {
+    "teaches": [
+      "g:yo-irregular"
+    ],
+    "note": "SEQ split from gr-presente-irregular-a2: tengo, hago, pongo, salgo, vengo, digo, traigo, conozco, sé, doy"
+  },
+  "nt-cantidad-numerica-a1": {
+    "teaches": [
+      "c:mas-o-menos",
+      "p:la-gente-singular",
+      "p:ordinal-floor",
+      "p:numbers-un-una",
+      "p:ordinals-primer-tercer"
+    ],
+    "note": "Re-sequence: absorbs gr-numerales-a1."
+  },
+  "nt-existencia-a1": {
+    "teaches": [
+      "p:con-sin",
+      "p:lugar-tiene",
+      "d:describe-place-inventory",
+      "g:hay-vs-esta"
+    ],
+    "note": "Re-sequence: also teaches g:hay-vs-esta."
+  },
+  "gr-imperfecto-estados-a1": {
+    "teaches": [
+      "g:imperfect-states"
+    ],
+    "note": "SEQ new lesson: era, estaba, tenía, había (and hacía frío) as chunks for setting the scene"
+  },
+  "gr-pronombres-me-te-nos-a1": {
+    "teaches": [
+      "p:me-te-nos-objects"
+    ],
+    "note": "SEQ new lesson, Latin American title (no os): me, te, nos before the verb"
+  },
+  "nt-evaluacion-general-a1": {
+    "teaches": [
+      "p:bien-bueno",
+      "p:colour-claro-oscuro",
+      "d:give-quick-verdict",
+      "d:say-job",
+      "c:a-que-te-dedicas"
+    ],
+    "note": "Re-sequence: absorbs fn-valorar-a1."
+  },
+  "fn-acuerdo-a1": {
+    "teaches": [
+      "d:agree-disagree-simple",
+      "d:likes-and-react",
+      "c:que-rico",
+      "p:no-es-nada-adj",
+      "c:depende"
+    ],
+    "note": "Re-sequence: absorbs fn-acuerdo-a2."
+  },
+  "fn-cortesia-condicional-a1": {
+    "teaches": [
+      "c:me-gustaria"
+    ],
+    "note": "SEQ new lesson: me gustaría, quería, ¿podría(s)…? as polite chunks"
+  },
+  "nt-dias-fechas-a1": {
+    "teaches": [
+      "p:days-el-lunes",
+      "p:dates-years"
+    ],
+    "note": "SEQ split from nt-referencias-generales-a1: el lunes / los lunes, dates day-de-month-de-year, nací en / el"
+  },
+  "nt-frecuencia-a1": {
+    "teaches": [
+      "p:frequency-scale"
+    ],
+    "note": "Existing lesson (absorbed into nt-referencias-generales-a1 by MERGES today); the split gives it p:frequency-scale"
+  },
+  "gr-tener-que-hay-que-a1": {
+    "teaches": [
+      "g:tener-que-hay-que",
+      "c:tengo-que"
+    ],
+    "note": "SEQ new lesson: tener que, hay que, necesitar, deber, no tienes que vs no se puede"
+  },
+  "gr-indefinidos-negativos-b1": {
+    "teaches": [
+      "g:indefinites",
+      "p:indefinites-basic"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "nt-localizacion-a1": {
+    "teaches": [
+      "d:say-where-things-are",
+      "p:position-de",
+      "c:queda-cerquita",
+      "p:question-word-order"
+    ],
+    "note": "Re-sequence: absorbs dc-deixis-espacial-a1."
+  },
+  "nt-movimiento-estabilidad-a1": {
+    "teaches": [
+      "c:ya-voy",
+      "d:give-directions",
+      "p:ir-venir",
+      "p:subirse-bajarse",
+      "p:llevar-traer"
+    ],
+    "note": "Re-sequence: absorbs nt-movimiento-estabilidad-a2."
+  },
+  "gr-subordinadas-sustantivas-a1": {
+    "teaches": [
+      "g:that-clauses"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-indefinido-irregular-a2": {
+    "teaches": [
+      "g:preterite-irregular-strong",
+      "g:preterite-spelling-stem"
+    ],
+    "note": "SEQ split from preterito: tuve, estuve, pude, puse, quise, vine, hice, dije, traje; busqué, llegué, empecé, leyó; pidió, durmió"
+  },
+  "gr-perfecto-vs-indefinido-a2": {
+    "teaches": [
+      "x:pret-perfecto-latam"
+    ],
+    "note": "SEQ new lesson, Latin American split: preterite for anything finished (hoy fui, ¿ya comiste?), perfect for experience, not yet and still true"
+  },
+  "task-a2-hoy-ayer": {
+    "teaches": [],
+    "note": "Task lesson: practice of what earlier lessons taught, so it teaches no node; uses carries the nodes its rows need."
+  },
+  "gr-ser-estar-adjetivos-a2": {
+    "teaches": [
+      "g:ser-estar-adjectives",
+      "x:ser-estar-adj"
+    ],
+    "note": "SEQ split from ser-estar: es aburrido / está aburrido, listo, rico, malo, verde"
+  },
+  "gr-modificadores-adverbios-b1": {
+    "teaches": [
+      "g:adverbs-mente"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-posesivo-dativo-b1": {
+    "teaches": [
+      "g:possessive-dative"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-pronombres-posicion-a2": {
+    "teaches": [
+      "g:object-pronoun-position"
+    ],
+    "note": "SEQ split from gr-pronombres-atonos-a2: lo voy a ver = voy a verlo, estoy leyéndolo, llámame, dámelo, hay que hacerlo"
+  },
+  "gr-se-multiuso-b1": {
+    "teaches": [
+      "g:se-impersonal",
+      "p:se-reciproco"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "fn-preguntar-estado-animo-a2": {
+    "teaches": [
+      "c:me-siento-mal",
+      "d:say-what-hurts",
+      "p:doler",
+      "c:te-pasa-algo",
+      "d:react-to-others-feelings",
+      "d:answer-greeting",
+      "c:ahi-vamos",
+      "c:bien-y-tu"
+    ],
+    "note": "Re-sequence: absorbs fn-preguntar-estado-animo-b1; absorbs fn-responder-estado-b1."
+  },
+  "gr-formulas-subjuntivo-a2": {
+    "teaches": [
+      "c:que-te-mejores",
+      "c:ojala",
+      "c:no-te-preocupes"
+    ],
+    "note": "SEQ new lesson: subjunctive formulas as chunks ahead of the paradigm"
+  },
+  "fn-certeza-evidencia-b1": {
+    "teaches": [
+      "d:certainty-doubt",
+      "p:esta-claro-que",
+      "p:estar-seguro-de-que",
+      "p:de-pronto-igual"
+    ],
+    "note": "Re-sequence: absorbs nt-certeza-realidad-b1."
+  },
+  "gr-ser-impersonal-b1": {
+    "teaches": [],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-pasados-repaso-b1": {
+    "teaches": [],
+    "note": "SEQ new lesson: a review of the four pasts with the Latin American split; teaches no new node (reviews g:preterite-irregular-strong, g:imperfect-habitual, g:perfecto-experience, g:pluperfect, x:pret-imp, x:pret-perfecto-latam)"
+  },
+  "dc-mantenimiento-referente-b1": {
+    "teaches": [
+      "d:join-ideas",
+      "g:demonstratives",
+      "g:referring-back"
+    ],
+    "note": "Re-sequence: absorbs gr-demostrativos-valores-a2."
+  },
+  "gr-para-que-sin-que-b1": {
+    "teaches": [
+      "g:para-que",
+      "g:subj-purpose-full"
+    ],
+    "note": "Added by the proposal: para / sin / antes de + infinitive vs para que / sin que / antes de que + subjunctive"
+  },
+  "fn-valorar-b1": {
+    "teaches": [
+      "d:judge-actions",
+      "p:me-parece-bien-que",
+      "p:te-parece-bien-que"
+    ],
+    "note": "Re-sequence: absorbs fn-pedir-valoracion-b1."
+  },
+  "fn-proponer-sugerir-b1": {
+    "teaches": [
+      "d:propose-accept",
+      "p:podriamos-deberiamos",
+      "p:que-tal-si",
+      "c:bueno-si-insistes",
+      "c:dale",
+      "c:de-una"
+    ],
+    "note": "Re-sequence: absorbs fn-aceptar-propuesta-b1."
+  },
+  "gr-se-cambio-significado-b1": {
+    "teaches": [
+      "g:se-meaning-change",
+      "x:ir-irse"
+    ],
+    "note": "Added by the proposal: ir/irse, dormir/dormirse, quedar/quedarse, llevar/llevarse, comer/comerse, preocupar/preocuparse"
+  },
+  "fn-me-alegro-b1": {
+    "teaches": [
+      "d:express-pleasure",
+      "p:alegrarse-de-que",
+      "p:contento-con-de",
+      "p:pasarla-bien",
+      "p:es-increible-como",
+      "p:estar-orgulloso-de",
+      "p:enamorarse-de",
+      "p:extranar"
+    ],
+    "note": "Re-sequence: absorbs fn-contento-encantado-b1; absorbs fn-placer-diversion-b1; absorbs fn-admiracion-orgullo-b1; absorbs fn-afecto-b1."
+  },
+  "fn-miedo-ansiedad-preocupacion-b1": {
+    "teaches": [
+      "d:express-worry-sadness",
+      "p:me-da-miedo-que",
+      "p:me-pone-nervioso",
+      "p:extranar",
+      "p:me-da-pena-que",
+      "p:me-duele-que"
+    ],
+    "note": "Re-sequence: absorbs fn-tristeza-afliccion-b1; absorbs fn-me-duele-b1."
+  },
+  "fn-enfado-indignacion-b1": {
+    "teaches": [
+      "c:que-rabia",
+      "d:express-anger-dislike-indifference",
+      "p:enojarse-con",
+      "p:no-soportar-que",
+      "x:molesta-vs-no-soporto",
+      "c:que-pereza",
+      "p:aburrir-aburrirse"
+    ],
+    "note": "Re-sequence: absorbs fn-aversion-b1; absorbs fn-aburrimiento-b1; absorbs fn-no-me-importa-b1."
+  },
+  "fn-empatia-b1": {
+    "teaches": [
+      "c:me-imagino",
+      "d:react-to-others-feelings",
+      "p:entiendo-que-subj",
+      "c:en-serio",
+      "c:no-me-digas",
+      "c:no-es-para-tanto",
+      "c:son-cosas-que-pasan",
+      "c:ya-veras-que-todo-sale-bien",
+      "c:animo",
+      "c:dale"
+    ],
+    "note": "Re-sequence: absorbs fn-sorpresa-extraneza-b1; absorbs fn-tranquilizar-consolar-b1; absorbs fn-animar-b1."
+  },
+  "fn-expresar-gustos-b1": {
+    "teaches": [
+      "d:likes-preferences-b1",
+      "p:me-encanta-que",
+      "p:te-parece-bien-que"
+    ],
+    "note": "Re-sequence: absorbs fn-preguntar-gustos-b1."
+  },
+  "gr-por-para-b1": {
+    "teaches": [
+      "g:por-para-2"
+    ],
+    "note": "SEQ split from por-para: por for exchange, means, rate, time, estar por; para for opinion, deadline, comparison"
+  },
+  "fn-seguir-relato-interes-b1": {
+    "teaches": [
+      "c:en-serio",
+      "c:y-entonces",
+      "d:keep-conversation-going",
+      "c:me-escuchas",
+      "c:me-explico",
+      "d:interrupt-hold-attention"
+    ],
+    "note": "Re-sequence: absorbs fn-controlar-atencion-b1."
+  },
+  "gn-llamada-transaccional-b1": {
+    "teaches": [
+      "c:alo",
+      "c:de-parte-de-quien",
+      "c:eso-seria-todo",
+      "c:no-se-encuentra",
+      "c:numero-equivocado"
+    ],
+    "note": "Re-sequence: absorbs fn-preguntar-persona-telefono-b1."
+  },
+  "nt-reflexion-expresion-b1": {
+    "teaches": [
+      "d:realise-findout",
+      "p:contar-dos-sentidos",
+      "p:darse-cuenta-de",
+      "p:preguntar-pedir",
+      "g:reported-past-basic",
+      "c:me-conto-que"
+    ],
+    "note": "Re-sequence: absorbs nt-expresion-verbal-a2."
+  },
+  "gn-generos-orales-b1": {
+    "teaches": [],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-el-que-relativos-b2": {
+    "teaches": [
+      "g:relatives-prepositions"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "dc-intensificacion-discurso-b1": {
+    "teaches": [
+      "d:intensify-focus"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "gr-formas-no-personales-b1": {
+    "teaches": [
+      "g:gerund-ways",
+      "p:infinitive-instructions"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "nt-medidas-tamano-superficie-b1": {
+    "teaches": [
+      "d:describe-space",
+      "p:caber",
+      "p:medir",
+      "p:ser-de-material",
+      "p:tener-forma-de",
+      "d:climate",
+      "p:estar-a-grados",
+      "p:ir-a-velocidad"
+    ],
+    "note": "Re-sequence: absorbs nt-formas-materia-b1; absorbs nt-temperatura-velocidad-volumen-b1."
+  },
+  "nt-textura-consistencia-b1": {
+    "teaches": [
+      "p:humedo-mojado"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "nt-sentidos-b1": {
+    "teaches": [
+      "p:oler-a-saber-a"
+    ],
+    "note": "Re-sequence: lifted onto the path; provisional, from its title and summary."
+  },
+  "fn-expresar-certeza-b2": {
+    "teaches": [
+      "d:certainty-doubt",
+      "c:si-tu-lo-dices",
+      "c:sin-duda-alguna",
+      "d:certainty-necessity",
+      "p:de-pronto-igual",
+      "p:estar-convencido-de"
+    ],
+    "note": "Re-sequence: absorbs nt-certeza-b2."
+  },
+  "fn-tristeza-afliccion-b2": {
+    "teaches": [
+      "d:regret-disappointment",
+      "p:me-decepciono-que",
+      "p:es-una-lastima-que",
+      "d:fear-worry-shame",
+      "p:me-da-verguenza",
+      "d:anger-exasperation",
+      "d:relief-resignation",
+      "c:menos-mal",
+      "c:ni-modo"
+    ],
+    "note": "Re-sequence: absorbs fn-miedo-ansiedad-b2; absorbs fn-expresar-alivio-b2."
+  },
+  "fn-enfado-indignacion-b2": {
+    "teaches": [
+      "p:no-soporto-que",
+      "c:no-puedo-mas",
+      "c:que-rollo-spain",
+      "d:positive-feelings",
+      "p:me-pone-de-buen-genio",
+      "p:orgulloso-admiracion",
+      "c:echar-de-menos-spain"
+    ],
+    "note": "Re-sequence: absorbs fn-alegria-satisfaccion-b2."
+  },
+  "gr-vosotros-espana-b2": {
+    "teaches": [
+      "g:vosotros-recognition",
+      "g:spain-pasts"
+    ],
+    "note": "Added by the proposal: Latin American correction, vosotros and Spain's 'today' perfect for recognition only"
+  },
+  "fn-orden-instruccion-c1": {
+    "teaches": [
+      "d:order-and-request-ladder",
+      "p:cuantas-veces-tengo-que",
+      "g:que-wishes-commands"
+    ],
+    "note": "Re-sequence: absorbs fn-repetir-orden-c1."
+  },
+  "fn-saludar-c1": {
+    "teaches": [
+      "d:social-rituals-register",
+      "p:recordar-acordarse"
+    ],
+    "note": "Re-sequence: absorbs fn-responder-saludo-dirigirse-c1."
+  },
+  "fn-tristeza-placer-c1": {
+    "teaches": [
+      "d:express-mixed-emotion",
+      "d:positive-feelings",
+      "c:te-pasa-algo",
+      "p:estar-orgulloso-de",
+      "d:tastes-preferences",
+      "p:no-soporto-que",
+      "g:comparative-advanced-c1"
+    ],
+    "note": "Re-sequence: absorbs fn-estado-animo-alegria-c1; absorbs fn-gustos-aversion-c1."
+  },
+  "fn-miedo-nerviosismo-c1": {
+    "teaches": [
+      "d:fear-anger-relief",
+      "c:cruzo-los-dedos",
+      "p:ya-era-hora-de-que",
+      "p:no-me-extrana-que",
+      "d:comfort-and-encourage"
+    ],
+    "note": "Re-sequence: absorbs fn-empatia-alivio-esperanza-c1; absorbs fn-tranquilizar-animar-c1."
   }
 }

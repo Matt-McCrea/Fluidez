@@ -421,11 +421,24 @@ function checkProbes(l, tag) {
      * looking for — it ends when the explaining is done, and demanding a task
      * would make every deep dive cost a piece of homework nobody asked for. */
     if (!e.optional) {
+      /* Two ways to end. The first two units (a1-u01, a1-u02: week one) end on their task lesson. Every week after
+       * them ends on the review check, { practice, review, check }, the mixed review that closes the unit; the week
+       * before it holds the Output (the unit's task lesson) where the course has one. Either way the unit must hold
+       * a lesson day, and a unit that ends on a review must not be only practice days. */
       const lastDay = (e.days || [])[(e.days || []).length - 1] || {};
       const lastId = lastDay.lesson || '';
       const lastLesson = (window.ALL_LESSONS || []).find(l => l.id === lastId);
-      ok(lastLesson && lastLesson.strand === 'task',
-         `${tag}: last day is "${lastId || '(not a lesson)'}", which is not a task lesson`);
+      const endsOnTask = !!(lastLesson && lastLesson.strand === 'task');
+      const endsOnReview = !!(lastDay.practice && lastDay.review && lastDay.check);
+      ok(endsOnTask || endsOnReview,
+         `${tag}: last day is ${lastId ? `"${lastId}", which is not a task lesson` : 'not a task lesson or a review check day'}`);
+      if (e.unit === 'a1-u01' || e.unit === 'a1-u02') {
+        ok(endsOnTask, `${tag}: week one keeps its shape and ends on its task lesson`);
+      } else {
+        ok((e.days || []).some(d => d.lesson), `${tag}: a unit needs at least one lesson day`);
+        const task = (e.days || []).some(d => d.lesson && ((window.ALL_LESSONS || []).find(l => l.id === d.lesson) || {}).strand === 'task');
+        ok(task || endsOnReview, `${tag}: a unit needs a task lesson, an output day or a closing review check`);
+      }
     }
   });
   /* The loader can resolve every course day's lesson for a learner of that day's band. A learner has the bands up to

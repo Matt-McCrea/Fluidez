@@ -18,7 +18,7 @@ window.Hub = (function () {
       items.push({ id: 'v:' + w.es + ':meaning' });
     });
     (window.IDIOMS || []).forEach(function (x) { items.push({ id: 'i:' + x.es }); });
-    (window.GRAMMAR_LESSONS || []).forEach(function (l) {
+    (window.Lessons && window.Lessons.withAliasSources ? window.Lessons.withAliasSources() : (window.GRAMMAR_LESSONS || [])).forEach(function (l) {
       (l.recall || []).forEach(function (r) { if (r.srs !== false && S.isEnrolled(r.id)) items.push({ id: r.id }); });
     });
     (window.Phrases ? window.Phrases.all() : []).forEach(function (ph) {
@@ -75,6 +75,9 @@ window.Hub = (function () {
   function themeOffer(opts) {
     var F = window.Focus;
     if (!F || !F.themeOptions || offeredMap()[opts.unitId]) return null;
+    /* A theme is offered at a topic's first week, not at every week of it (re-drive 4). */
+    var u = (window.COURSE_UNITS || {})[opts.unitId], m = u && /\((\d+) of \d+\)$/.exec(u.title || '');
+    if (m && +m[1] > 1) return null;
     var list = F.themeOptions(opts.band);
     if (!list.length) return null;
     var box = UI.el('div', 'theme-offer');

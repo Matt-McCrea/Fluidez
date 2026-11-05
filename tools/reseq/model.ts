@@ -119,8 +119,13 @@ export type Deep = { band: string; title: string; goal: string; triggers: string
 export const NEW_DEEP: Record<string, Deep> = {
   'deep-describir': { band: 'A2', title: 'Describing objects, more practice', goal: 'I can describe an object until someone else could pick it out of a shop window.',
     triggers: ['lesson:gn-describir-objeto-a1'], lessons: ['gn-describir-objeto-a2', 'gn-describir-objeto-b1'] },
-  'deep-formulas-b1': { band: 'B1', title: 'Toasts and social formulas', goal: 'I can raise a glass and say the right thing at a celebration.',
-    triggers: ['lesson:fn-felicitar-b1'], lessons: ['fn-brindis-b1'] },
+  'deep-formulas-b1': { band: 'B1', title: 'Toasts, formulas and emphasis', goal: 'I can raise a glass, say the right thing at a celebration, and make one element of a text stand out.',
+    triggers: ['lesson:fn-felicitar-b1'], lessons: ['fn-brindis-b1', 'fn-destacar-elemento-b1'] },
+  // the six SEQ cuts are not deleted: they keep a home on the shelf (fn-destacar-elemento-b1 is above)
+  'deep-a1-oraciones': { band: 'A1', title: 'Sentence types and asking for quiet', goal: 'I can tell a statement from a question, a command and a wish, and ask for quiet politely.',
+    triggers: [], lessons: ['gr-oraciones-actitud-hablante-a1', 'fn-silencio-a1'] },
+  'deep-a2-oraciones': { band: 'A2', title: 'The shape of a sentence: verb types, sentence kinds and topic', goal: 'I can name the kind of verb and the kind of sentence I am reading, and say what a sentence is about.',
+    triggers: [], lessons: ['gr-nucleo-verbal-tipos-a2', 'gr-oraciones-simples-a2', 'dc-tematizacion-a2'] },
   'deep-el-articulo-b2': { band: 'B2', title: 'The article, where English has none: the B2 part', goal: 'I can use the article for the values a B2 text relies on.',
     triggers: ['lesson:gr-articulo-definido-distribucion-a2'], lessons: ['gr-articulo-definido-valores-b2', 'gr-articulo-indefinido-valores-b2', 'gr-nombres-escuetos-b2'] },
   'deep-b2-materia': { band: 'B2', title: 'How things feel, look and sound', goal: 'I can say what something is made of, how it feels and how it looks, beyond big and small.',
@@ -182,3 +187,8 @@ export const UNTAUGHT_28 = ['g:ir-a-plans', 'g:imperfect-progressive', 'g:diminu
   'g:register-ladder', 'g:subj-concessive', 'g:subj-conditions', 'g:conditional-rumour', 'g:lo-que-intensity', 'g:relatives-formal',
   'g:infinitive-perfect', 'g:subj-future-in-past', 'g:cuyo-relatives', 'g:nominalisation', 'g:consecutive-advanced', 'g:conditional-advanced',
   'g:agreement-tricky', 'g:voseo-recognition', 'g:future-subj-recognition', 'g:word-order-style'];
+
+/* A deep unit with one lesson is folded into a neighbour of its band (a deep unit needs two lessons). */
+export const DEEP_FOLD: Record<string, string> = {
+  'deep-formas-no-personales-c1': 'deep-sintaxis-c1',
+};

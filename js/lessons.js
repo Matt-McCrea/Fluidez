@@ -567,7 +567,7 @@
       ids: ['gr-demostrativos-distribucion-a1', 'gr-demostrativos-a2'] },
     { title: 'Comparativos: los tres marcos y los irregulares',
       ids: ['gr-comparativos-a2', 'gr-comparativo-a2'] },
-    { title: 'Estar de acuerdo — y no estarlo',
+    { title: 'Estar de acuerdo y no estarlo',
       // The second lesson's entire body said the first one's rule was unchanged.
       ids: ['fn-estoy-de-acuerdo-b1', 'fn-no-estoy-de-acuerdo-b1'] },
     { title: 'Pedir ayuda: directa, atenuada y encubierta',
@@ -586,7 +586,8 @@
     { title: 'Ir, venir y dar direcciones', ids: ['nt-movimiento-estabilidad-a1', 'nt-orientacion-direccion-a1'] },
     { title: 'Cantidad: números, más y menos', ids: ['nt-cantidad-numerica-a1', 'nt-cantidad-relativa-a1'] },
     { title: 'Precio y tamaño', ids: ['nt-valor-precio-a1', 'nt-tamano-a1'] },
-    { title: 'La hora, los días y la frecuencia', ids: ['nt-referencias-generales-a1', 'nt-frecuencia-a1'] },
+    /* nt-referencias-generales-a1 and nt-frecuencia-a1 were one lesson here; the re-sequenced course
+     * (data/course.js, 640 days) gives nt-frecuencia-a1 its own day, so they are two lessons again. */
     { title: 'Antes, después y cuándo pasa', ids: ['nt-duracion-transcurso-a1', 'nt-tiempo-futuro-presente-pasado-a1'] },
     { title: 'Hay, está, y entrar o salir', ids: ['nt-existencia-a1', 'nt-accesibilidad-a1'] },
     { title: 'De dónde eres y cuántos años tienes', ids: ['nt-origen-a1', 'nt-edad-vejez-a1'] },
@@ -1023,7 +1024,7 @@
     });
   }
   /* The band a lesson lives in, from the small index; null when unknown. */
-  function bandOf(id) { return idx().ids[id] || null; }
+  function bandOf(id) { return idx().ids[canon(id)] || idx().ids[id] || null; }
   function ensureLesson(id, cb) {
     cb = cb || function () {};
     var b = bandOf(id);
@@ -1054,6 +1055,78 @@
     });
   }
 
-  window.Lessons = { ensureBand: ensureBand, ensureUpTo: ensureUpTo, ensureLesson: ensureLesson,
+  /* ---- aliases -----------------------------------------------------------------
+   * data/lesson-aliases.js: window.LESSON_ALIASES = { mergedLessonId: targetLessonId, ... }. A lesson
+   * the re-sequenced course merged into another is gone from the path, but a learner's progress
+   * still names it. Every lookup by lesson id goes through canon(), and "studied" means the id, its
+   * target or any lesson merged into that target. With no LESSON_ALIASES loaded all of this is the
+   * identity, which is the old behaviour. The tables are cached against the object they came from. */
+  var aliasSrc = null, aliasFwd = {}, aliasRev = {};
+  function aliasTables() {
+    var A = window.LESSON_ALIASES;
+    if (A === aliasSrc) return;
+    aliasSrc = A; aliasFwd = {}; aliasRev = {};
+    if (!A) return;
+    Object.keys(A).forEach(function (k) {
+      var t = A[k], hop = 0;
+      while (t && A[t] && A[t] !== t && hop++ < 8) t = A[t];       // a chain of merges ends at the last target
+      if (!t || t === k) return;
+      aliasFwd[k] = t;
+      (aliasRev[t] = aliasRev[t] || []).push(k);
+    });
+  }
+  /* The lesson id a (possibly merged) id resolves to. */
+  function canon(id) { aliasTables(); return (id != null && aliasFwd[id]) || id; }
+  /* Every id that resolves to this lesson, itself first. */
+  function idsOf(id) { aliasTables(); var t = canon(id); return [t].concat(aliasRev[t] || []); }
+  function isAlias(id) { aliasTables(); return !!aliasFwd[id]; }
+  function aliasSources() { aliasTables(); return Object.keys(aliasFwd); }
+  /* The lesson with this id or the one it merged into: ALL_LESSONS first (it also holds the reference
+   * lessons), then the course. */
+  function byId(id) {
+    var t = canon(id), ls = window.ALL_LESSONS || window.GRAMMAR_LESSONS || [];
+    for (var i = 0; i < ls.length; i++) if (ls[i] && ls[i].id === t) return ls[i];
+    ls = window.GRAMMAR_LESSONS || [];
+    for (var j = 0; j < ls.length; j++) if (ls[j] && ls[j].id === t) return ls[j];
+    return null;
+  }
+  /* Is this lesson studied, in a fluidez.progress.studied map? A studied alias source counts. */
+  function isStudied(studied, id) {
+    if (!studied || id == null) return false;
+    if (studied[id]) return true;
+    var ids = idsOf(id);
+    for (var i = 0; i < ids.length; i++) if (studied[ids[i]]) return true;
+    return false;
+  }
+  /* Mark a lesson studied: the target is what gets written. Returns the map. */
+  function markStudied(studied, id) { studied[canon(id)] = 1; return studied; }
+  /* Un-mark: the id, its target and every source (or isStudied would find the source and bring it back). */
+  function unmarkStudied(studied, id) { idsOf(id).concat([id]).forEach(function (k) { delete studied[k]; }); return studied; }
+  /* Copy every studied alias source onto its target (the source key stays, so nothing is lost). True when
+   * anything changed. Run on load so readers that look the map up by lesson id directly still see it. */
+  function normalizeStudied(studied) {
+    if (!studied) return false;
+    aliasTables();
+    var changed = false;
+    Object.keys(studied).forEach(function (k) {
+      var t = aliasFwd[k];
+      if (t && studied[k] && !studied[t]) { studied[t] = studied[k]; changed = true; }
+    });
+    return changed;
+  }
+  /* The course's lessons plus the lessons merged away from it: a learner who enrolled a merged lesson's
+   * recall cards keeps reviewing them (the review pool reads recall from this). */
+  function withAliasSources() {
+    var out = (window.GRAMMAR_LESSONS || []).slice();
+    aliasTables();
+    if (!aliasSources().length) return out;
+    var have = {}; out.forEach(function (l) { if (l) have[l.id] = 1; });
+    (window.ALL_LESSONS || []).forEach(function (l) { if (l && aliasFwd[l.id] && !have[l.id]) { have[l.id] = 1; out.push(l); } });
+    return out;
+  }
+
+  window.Lessons = { canon: canon, idsOf: idsOf, isAlias: isAlias, aliasSources: aliasSources, byId: byId, lessonById: byId,
+                     isStudied: isStudied, markStudied: markStudied, unmarkStudied: unmarkStudied, normalizeStudied: normalizeStudied,
+                     withAliasSources: withAliasSources, ensureBand: ensureBand, ensureUpTo: ensureUpTo, ensureLesson: ensureLesson,
                      bandOf: bandOf, loadedBands: loadedBands, rebuild: rebuild, BANDS: BANDS, englishSentence: englishSentence };
 })();

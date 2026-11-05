@@ -17,6 +17,7 @@ window.LessonRun = (function () {
 
   function lessonById(id) {
     var ls = window.GRAMMAR_LESSONS || [];
+    if (window.Lessons && window.Lessons.canon) id = window.Lessons.canon(id);   // a merged lesson id resolves to its target
     for (var i = 0; i < ls.length; i++) if (ls[i].id === id) return ls[i];
     return null;
   }
@@ -25,7 +26,9 @@ window.LessonRun = (function () {
   }
   function markStudied(id) {
     var p; try { p = JSON.parse(localStorage.getItem(PKEY)) || {}; } catch (e) { p = {}; }
-    p.studied = p.studied || {}; p.studied[id] = 1;
+    p.studied = p.studied || {};
+    if (window.Lessons && window.Lessons.markStudied) window.Lessons.markStudied(p.studied, id); else p.studied[id] = 1;
+    if (p.catchUp && window.Lessons && window.Lessons.isStudied) p.catchUp = p.catchUp.filter(function (x) { return !window.Lessons.isStudied(p.studied, x); });
     try { localStorage.setItem(PKEY, JSON.stringify(p)); } catch (e) {}
   }
   // A stable identity for ANY focus (grammar lesson id, or a verb-group /

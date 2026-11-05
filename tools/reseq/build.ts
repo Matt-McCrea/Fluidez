@@ -1,12 +1,16 @@
 // ============================================================================
-// Stage 6 re-sequence, PROPOSAL run:   nice npx tsx tools/reseq/build.ts
+// Stage 6 re-sequence, the 640-day course:   nice npx tsx tools/reseq/build.ts --lean [--apply]
 //
 // Builds the proposed course spine from SEQ ("Fluidez Spanish course sequencing.md") and writes
-//   tools/reseq/out/course.proposed.js          a drop-in for data/course.js (same shape, same derived block)
+//   tools/reseq/out/course.proposed.js          a copy of the course (same shape and derived block as data/course.js)
 //   tools/reseq/out/lesson-aliases.proposed.js  SEQ's merges as {oldId: newId}, plus the cuts
 //   docs/plan-2026-11-04/resequence.md  the report (units, counts, legality, supply, stubs, aliases,
 //                                       reconciliation, judgement calls)
-// It replaces nothing: data/course.js is untouched and nothing loads the proposed files.
+// With --apply it makes the course live: data/course.js, data/lesson-aliases.js (window.LESSON_ALIASES), status and
+// `deeper` edits in data/strand-lessons.js (patch-lessons.ts) and the node rulings in tools/lesson-nodes.overrides.json;
+// then run tag-data.ts, split-data.ts, build-game-index.js, gen-assets.js, bump-cache.js and validate-content.js (section 10).
+// The generator reads week one and the old deep units from tools/reseq/base/course.pre-reseq.js, never from data/course.js,
+// so it reruns to the same result. Without --apply it writes only the proposed copies and the report.
 //
 // Order: SEQ's positions, then
 //   1. the Latin American correction (model.ts LATAM_SWAP, NODE_MOVES, the B2 recognition stub);
@@ -15,19 +19,22 @@
 //      (4 to 6 sessions; see weekify below for the rules);
 //   4. merges become aliases, splits and new lessons become stub days, make-optional lessons go to deep units.
 // The simulation (legality, supply, runs, contrasts) is simulate.ts; the learner mapping is reconcile.ts.
-// Flags: --no-write (print only), --quiet.
+// Flags: --no-write (print only), --quiet, --lean (the 640-day week shape), --apply (make it live).
 // ============================================================================
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, BANDS, loadApp, loadSeq, lessonKind, type SeqRow } from './data';
-import { FROZEN_UNITS, OFF_PATH, MERGE_EXCLUDED, LATAM_SWAP, KEEP_ON_PATH, STUBS, B1_VERB_SETS, NEW_DEEP, INTO_DEEP, WEEK, NODE_MOVES, NODE_ADDS, PROPOSED_TEACHES, UNTAUGHT_28 } from './model';
-import { simulate, type Course, type SimResult } from './simulate';
+import { ROOT, BANDS, BASE_COURSE, loadApp, loadSeq, lessonKind, type SeqRow } from './data';
+import { FROZEN_UNITS, OFF_PATH, MERGE_EXCLUDED, LATAM_SWAP, KEEP_ON_PATH, STUBS, B1_VERB_SETS, NEW_DEEP, INTO_DEEP, WEEK, NODE_MOVES, NODE_ADDS, PROPOSED_TEACHES, UNTAUGHT_28, DEEP_FOLD } from './model';
+import { simulate, nodeModel, type Course, type SimResult } from './simulate';
+import { patchStrandLessons, type Edit } from './patch-lessons';
 import { reconcile, oldLearner } from './reconcile';
 
 const args = new Set(process.argv.slice(2));
 const W = loadApp();
 const SEQ = loadSeq();
 const lessonById: Record<string, any> = Object.fromEntries((W.ALL_LESSONS as any[]).map((l) => [l.id, l]));
+// every lesson in data/strand-lessons.js, including the ones js/lessons.js MERGES folds into another for now
+const rawById: Record<string, any> = Object.fromEntries((W.STRAND_LESSONS as any[]).map((l) => [l.id, l]));
 const isDay = (v: string) => /^\d+$/.test(v);
 const rowOf: Record<string, SeqRow> = Object.fromEntries(SEQ.rows.map((r) => [r.lesson_id, r]));
 
@@ -222,11 +229,13 @@ function weekify(order: Slot[], o: Opts): Week[] {
  * 5. units and days
  * ------------------------------------------------------------------------- */
 const seqTheme = (u: string) => (unitRange[u] ? unitRange[u].theme : u);
+/* learner-facing lines carry no dashes (the playtest rule): a dash becomes a comma or a colon */
+const nodash = (s: string) => String(s || '').replace(/\s*[—–]\s*/g, ', ');
 const seqGoal = (u: string) => (unitRange[u] ? unitRange[u].goal : '');
 const titleOf = (id: string) => (lessonById[id] ? lessonById[id].title : STUBS[id]?.title || SEQ.NEW[id]?.title || id);
 function lessonDay(s: Slot, kind: string): any {
   const d: any = { lesson: s.id, kind };
-  if (s.stub || !lessonById[s.id!]) d.stub = true;
+  if (!rawById[s.id!] && !lessonById[s.id!]) d.stub = true;   // a lesson nobody has written yet
   return d;
 }
 type Unit = { unit: string; band: string; title: string; goal: string; canDo: string[]; seq: string; week: string; days: any[] };
@@ -255,14 +264,14 @@ function unitsOf(weeks: Week[], shape: Shape = { drillAfterInputLead: true, outp
     return {
       unit: `${band.toLowerCase()}-w${String(n).padStart(3, '0')}`, band,
       title: seqTheme(w.seq) + (k > 1 ? ` (${i} of ${k})` : ''),
-      goal: (() => {
+      goal: nodash((() => {
         const introCan = w.intro && lessonById[w.intro.id!] && lessonById[w.intro.id!].canDo;
         const c = Array.isArray(introCan) ? introCan[0] : introCan;
         if (i === k && seqGoal(w.seq)) return seqGoal(w.seq);
         if (c) return 'I can ' + String(c).replace(/^I can /i, '');
         return seqGoal(w.seq) || (canDo[0] ? 'I can ' + canDo[0].replace(/^I can /i, '') : big);
-      })(),
-      canDo, seq: w.seq, week: `${i}/${k}`, days,
+      })()),
+      canDo: canDo.map(nodash), seq: w.seq, week: `${i}/${k}`, days,
     };
   });
 }
@@ -270,7 +279,10 @@ function unitsOf(weeks: Week[], shape: Shape = { drillAfterInputLead: true, outp
 const PROPOSAL: Opts = { maxItems: WEEK.maxInputs + 1, maxGrammar: 2 };
 const weeks = weekify(seqOrder, PROPOSAL);
 const droppedGaps = (weeks as any).dropped as number;
-const units = unitsOf(weeks);
+// --lean: the 640-day calendar the owner chose on 5 November 2026: no Drill after a function, notion or
+// genre big lesson, and no Output practice day in a week with no task.
+const LEAN: Shape = { drillAfterInputLead: false, outputPractice: false };
+const units = unitsOf(weeks, args.has('--lean') ? LEAN : undefined);
 
 /* ---------------------------------------------------------------------------
  * 6. deep units, aliases, cuts, and the accounting that every id lands once
@@ -286,6 +298,85 @@ const newDeepIds = new Set(Object.values(NEW_DEEP).flatMap((d) => d.lessons));
 const deepUnits: any[] = oldDeep.map((u) => ({ ...u, days: u.days.filter((d: any) => !pathIds.has(d.lesson) && !aliases[d.lesson] && !INTO_DEEP[d.lesson] && !newDeepIds.has(d.lesson)).map((d: any) => ({ ...d })) }));
 Object.entries(INTO_DEEP).forEach(([id, uid]) => { const u = deepUnits.find((x) => x.unit === uid); if (!u) throw new Error('no deep unit ' + uid); u.days.push({ lesson: id }); });
 Object.entries(NEW_DEEP).forEach(([uid, d]) => deepUnits.push({ unit: uid, band: d.band, optional: true, triggers: d.triggers, title: d.title, goal: d.goal, canDo: [], days: d.lessons.map((id) => ({ lesson: id })), added: true }));
+
+/* Alias sources (the merged lessons) leave the path and become reference lessons that their target's page links to
+ * (`deeper`), so the target reaches what it absorbed. A source whose target cannot carry the link (a ladder lesson
+ * that is not in data/strand-lessons.js, or no lesson yet) goes to a deep unit instead, with the catch-all below. */
+const finalTarget = (id: string): string => { const seen = new Set<string>(); while (aliases[id] && !seen.has(id)) { seen.add(id); id = aliases[id]; } return id; };
+const deeperAdd: Record<string, string[]> = {};
+const aliasToShelf: string[] = [];      // alias sources reached through a deep unit instead of a deeper link
+const aliasPending: string[] = [];      // alias sources js/lessons.js MERGES still folds away: they get status + link once un-merged
+const oldDeepOf: Record<string, string> = {};
+oldDeep.forEach((u) => u.days.forEach((d: any) => { oldDeepOf[d.lesson] = u.unit; }));
+// the path as the learner meets it, to find a strand lesson next to a target that is a ladder lesson (presente, condperf, ...)
+const pathSeq: string[] = [...frozen.flatMap((u: any) => u.days.map((d: any) => d.lesson).filter(Boolean)), ...units.flatMap((u) => u.days.map((d: any) => d.lesson).filter(Boolean))];
+const carrierFor = (t: string, a: string): string | null => {
+  if (rawById[t] && lessonById[t] && t !== a && (pathIds.has(t) || deepUnits.some((u) => u.days.some((d: any) => d.lesson === t)))) return t;
+  const i = pathSeq.indexOf(t);
+  if (i < 0) return null;
+  for (let k = 1; k <= 6; k++) for (const j of [i - k, i + k]) { const c = pathSeq[j]; if (c && c !== a && rawById[c] && lessonById[c] && lessonById[c].strand !== 'task') return c; }
+  return null;
+};
+Object.keys(aliases).forEach((a) => {
+  if (!lessonById[a]) { aliasPending.push(a); return; }
+  if (oldDeepOf[a]) { deepUnits.find((u) => u.unit === oldDeepOf[a])!.days.push({ lesson: a }); return; }   // it was in a deep unit: it stays there
+  const c = carrierFor(finalTarget(a), a);
+  if (c) (deeperAdd[c] = deeperAdd[c] || []).push(a); else aliasToShelf.push(a);
+});
+
+/* The catch-all: every lesson in the app that SEQ neither puts on the path, nor in a deep unit, nor merges, nor cuts,
+ * and that is not kept off the path on purpose, goes to a deep unit of its band grouped by its `theme`. */
+const homed = new Set<string>([...pathIds, ...Object.keys(aliases), ...OFF_PATH, ...excludedMerges]);
+deepUnits.forEach((u) => u.days.forEach((d: any) => homed.add(d.lesson)));
+const themeLabel: Record<string, string> = Object.fromEntries(((W.THEMES as any[]) || []).map((t) => [t.id, t.label || t.title || t.id]));
+const orphans = (W.ALL_LESSONS as any[]).filter((l) => !homed.has(l.id));
+{
+  const groups: Record<string, any[]> = {};
+  orphans.forEach((l) => { const b = BANDS.includes(l.cefr) ? l.cefr : 'A1'; (groups[`${b}|${l.theme || l.strand}`] = groups[`${b}|${l.theme || l.strand}`] || []).push(l); });
+  const lone: Record<string, any[]> = {};
+  Object.entries(groups).forEach(([k, ls]) => {
+    const [b, th] = k.split('|');
+    if (ls.length >= 2) {
+      const lab = themeLabel[th] || th;
+      deepUnits.push({ unit: `deep-${b.toLowerCase()}-${th}`, band: b, optional: true, triggers: [], title: `More ${b} reference: ${lab}`, goal: `I can look up the finer points of ${lab} at ${b}.`, canDo: [], days: ls.map((l) => ({ lesson: l.id })), added: true });
+    } else (lone[b] = lone[b] || []).push(...ls);
+  });
+  Object.entries(lone).forEach(([b, ls]) => {
+    const home = deepUnits.find((u) => u.band === b && u.added) || deepUnits.find((u) => u.band === b);
+    if (ls.length >= 2 || !home) deepUnits.push({ unit: `deep-${b.toLowerCase()}-other`, band: b, optional: true, triggers: [], title: `More ${b} reference`, goal: `I can look up the finer points of ${b} Spanish.`, canDo: [], days: ls.map((l) => ({ lesson: l.id })), added: true });
+    else home.days.push(...ls.map((l) => ({ lesson: l.id })));
+  });
+}
+aliasToShelf.forEach((a) => {
+  const l = lessonById[a]; const b = BANDS.includes(l.cefr) ? l.cefr : 'A1';
+  const home = deepUnits.find((u) => u.band === b && u.added) || deepUnits.find((u) => u.band === b);
+  if (!home) throw new Error('no deep unit to take ' + a);
+  home.days.push({ lesson: a });
+});
+
+/* A deep unit needs two lessons: fold the single ones (model.ts DEEP_FOLD, else the first deep unit of the band). */
+for (const u of deepUnits.slice()) {
+  if (u.days.length >= 2) continue;
+  const into = deepUnits.find((x) => x.unit === DEEP_FOLD[u.unit]) || deepUnits.find((x) => x !== u && x.band === u.band && x.days.length >= 2);
+  if (!into) throw new Error('cannot fold single-lesson deep unit ' + u.unit);
+  into.days.push(...u.days); into.triggers = [...new Set([...(into.triggers || []), ...(u.triggers || [])])];
+  deepUnits.splice(deepUnits.indexOf(u), 1);
+}
+
+/* A deep unit says what the learner can do after it: its lessons' own can-dos, else a plain line from the first lesson's summary. */
+const plain = (h: string) => String(h || '').replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').replace(/[–—]/g, ',').replace(/\s+/g, ' ').trim();
+const canDoOf = (ids: string[]): string[] => {
+  const out: string[] = [];
+  ids.forEach((id) => { const c = (lessonById[id] || rawById[id] || {}).canDo; const t = (Array.isArray(c) ? c[0] : c) as string; if (t) { const x = plain(t).replace(/^I can /i, ''); if (!out.includes(x) && out.length < 4) out.push(x); } });
+  if (!out.length) {
+    const l = lessonById[ids[0]] || rawById[ids[0]] || {};
+    const first = plain(l.summary || l.title).split(/(?<=[.!?])\s/)[0].replace(/[.!?]$/, '');
+    out.push(`read about ${first.charAt(0).toLowerCase() + first.slice(1)}`.slice(0, 160));
+  }
+  return out;
+};
+deepUnits.forEach((u) => { if (!u.canDo || !u.canDo.length) u.canDo = canDoOf(u.days.map((d: any) => d.lesson)); });
+
 const deepIds = new Set<string>();
 deepUnits.forEach((u) => u.days.forEach((d: any) => {
   if (deepIds.has(d.lesson)) throw new Error('twice in deep units: ' + d.lesson);
@@ -294,13 +385,13 @@ deepUnits.forEach((u) => u.days.forEach((d: any) => {
   if (!l) throw new Error('deep lesson missing from the app: ' + d.lesson);
   if (l.status !== 'reference') d.status = 'reference';
 }));
-// every id in the app lands exactly once: path, deep, alias, cut or off the path
+// every id in the app lands exactly once: path, deep, alias, cut (in a deep unit) or off the path
 const placed: Record<string, string> = {};
 const land = (id: string, where: string) => { if (placed[id]) throw new Error(`${id} placed twice (${placed[id]}, ${where})`); placed[id] = where; };
 pathIds.forEach((id) => land(id, 'path'));
-deepIds.forEach((id) => land(id, 'deep'));
-Object.keys(aliases).forEach((id) => land(id, 'alias'));
-cuts.forEach((id) => land(id, 'cut'));
+deepIds.forEach((id) => land(id, cuts.includes(id) ? 'deep (cut)' : 'deep'));
+Object.keys(aliases).filter((id) => !deepIds.has(id)).forEach((id) => land(id, 'alias'));
+cuts.filter((id) => !deepIds.has(id)).forEach((id) => land(id, 'cut'));
 OFF_PATH.concat(excludedMerges.filter((id) => !pathIds.has(id))).forEach((id) => land(id, 'off-path reference'));
 const unplaced = (W.ALL_LESSONS as any[]).map((l) => l.id).filter((id: string) => !placed[id]);
 if (unplaced.length) throw new Error('lessons the proposal does not place: ' + unplaced.join(', '));
@@ -309,11 +400,27 @@ const missingStub = stubIds.filter((id) => !STUBS[id]);
 if (missingStub.length) throw new Error('stubs with no model entry: ' + missingStub.join(', '));
 const notOptional = SEQ.rows.filter((r) => r.action === 'make optional' && !KEEP_ON_PATH[r.lesson_id] && !deepIds.has(r.lesson_id));
 if (notOptional.length) throw new Error('make-optional lessons with no deep unit: ' + notOptional.map((r) => r.lesson_id).join(', '));
+// lessons in data/strand-lessons.js that MERGES hides from the app and that nothing homes yet (they get a home once un-merged and this reruns)
+const hidden = Object.keys(rawById).filter((id) => !lessonById[id] && !placed[id] && !aliases[id] && !pathIds.has(id));
+
+/* What the lesson file must say: reference for the shelf, path for the lifted, and the deeper links. */
+const shelf = new Set<string>([...deepIds, ...Object.keys(aliases), ...cuts, ...OFF_PATH, ...excludedMerges.filter((id) => !pathIds.has(id))]);
+const lessonEdits: Edit[] = [];
+Object.keys(rawById).forEach((id) => {
+  const r = rawById[id], isRef = r.status === 'reference';
+  const e: Edit = { id };
+  if (shelf.has(id) && !isRef) e.status = 'reference';
+  if (pathIds.has(id) && isRef) e.status = null;
+  if (deeperAdd[id]) e.addDeeper = deeperAdd[id];
+  const drop = ((r.deeper as string[]) || []).filter((x) => pathIds.has(x));      // a deeper link to a lesson now on the path is a no-op the gate refuses
+  if (drop.length) e.dropDeeper = drop;
+  if (e.status !== undefined || e.addDeeper || e.dropDeeper) lessonEdits.push(e);
+});
 
 /* ---------------------------------------------------------------------------
  * 7. write the proposed course (a drop-in for data/course.js) and the aliases
  * ------------------------------------------------------------------------- */
-const courseSrc = readFileSync(join(ROOT, 'data/course.js'), 'utf8');
+const courseSrc = readFileSync(join(ROOT, BASE_COURSE), 'utf8');
 const frozenSrc = courseSrc.slice(courseSrc.indexOf('  /* Unit 1 · Meet someone'), courseSrc.indexOf("  { unit: 'a1-u03'"));
 const derivedSrc = courseSrc.slice(courseSrc.lastIndexOf('/* ===', courseSrc.indexOf(' * DERIVED — the flat day list')));
 if (!frozenSrc.includes("unit: 'a1-u01'") || !frozenSrc.includes("unit: 'a1-u02'") || !derivedSrc.includes('window.COURSE_BANDS')) throw new Error('course.js layout changed; update the slice markers');
@@ -344,21 +451,21 @@ units.forEach((u) => {
   if (u.band !== lastBand) { body += bandHead(u.band, units.filter((x) => x.band === u.band).length); lastBand = u.band; }
   body += unitStr(u) + '\n\n';
 });
-const header = `/* ============================================================================
- * COURSE — PROPOSED re-sequence (Stage 6). GENERATED by tools/reseq/build.ts; do not edit by hand.
+const headerFor = (live: boolean) => `/* ============================================================================
+ * COURSE — the 640-day re-sequence (Stage 6). GENERATED by ${live ? '`nice npx tsx tools/reseq/build.ts --lean --apply`' : 'tools/reseq/build.ts'}; do not edit by hand.
  *
- * A drop-in for data/course.js with the same shape and the same derived block, written beside it for
- * review. Nothing loads it. It is SEQ's order (docs/research/Fluidez Spanish course sequencing.md) with
- * the Latin American correction, a1-u01 and a1-u02 exactly as they are, and every other unit cut into
- * weeks of five sessions (four to six where the lesson count forces it):
+ * ${live ? 'This IS the live course: index.html loads it, and everything that reads COURSE, COURSE_DAYS, COURSE_UNITS and COURSE_BANDS reads it.\n * Change the generator (tools/reseq/build.ts, tools/reseq/model.ts) and rerun it; the course before the re-sequence is kept as\n * tools/reseq/base/course.pre-reseq.js, which the generator reads for week one and the old deep units.' : 'A review copy of the course the generator would write to data/course.js (run it with --apply to make it live).'}
+ * It is SEQ's order (docs/research/Fluidez Spanish course sequencing.md) with
+ * the Latin American correction, a1-u01 and a1-u02 exactly as they were, and every other unit cut into
+ * weeks of Introduce, Input and a closing review (the lean 640-day calendar the owner chose on 5 November 2026):
  *   introduce  the week's big lesson (its grammar point when it has one)
- *   drill      { practice: true, drill: true }  (inserted: true where no SEQ practice day was near)
+ *   drill      { practice: true, drill: true } after a grammar Introduce (inserted: true where no SEQ practice day was near)
  *   input      a function, notion, genre or discourse lesson, or a verb day: reading and theme
- *   output     the unit's task lesson, else { practice: true, output: true }
- *   review     { practice: true, review: true, check: true }: mixed review and the unit check
- * A day with stub: true names a lesson that does not exist yet (see the report). Deep-unit days with
- * status: 'reference' are lessons this proposal takes off the path. Merges are not concatenated: they
- * are aliases, in tools/reseq/out/lesson-aliases.proposed.js.
+ *   output     the unit's task lesson, where SEQ has one
+ *   review     { practice: true, review: true, check: true }: mixed review and the unit check; a week ends here
+ * A day with stub: true names a lesson that does not exist yet. Deep-unit days with status: 'reference' are lessons
+ * this re-sequence takes off the path; a deep unit costs no day. Merges are not concatenated: they are aliases, in
+ * data/lesson-aliases.js (window.LESSON_ALIASES).
  *
  * Report: docs/plan-2026-11-04/resequence.md
  * ========================================================================== */
@@ -382,23 +489,23 @@ ${deepUnits.map(unitStr).join('\n\n')}
 
 
 ${derivedSrc}`;
+const header = headerFor(false), headerLive = headerFor(true);
 
-const aliasSrc = `/* ============================================================================
- * LESSON ALIASES — PROPOSED (Stage 6). GENERATED by tools/reseq/build.ts; do not edit by hand.
+const aliasHeader = (live: boolean) => `/* ============================================================================
+ * LESSON ALIASES${live ? '' : ' (review copy)'}. GENERATED by ${live ? '`nice npx tsx tools/reseq/build.ts --lean --apply`' : 'tools/reseq/build.ts'}; do not edit by hand.
  *
  * SEQ's merges as redirects, not concatenation: a merged lesson's id resolves to the lesson it merges
- * into, and so do its progress (fluidez.progress.studied) and its review records. The target lesson
+ * into, and so do its progress (fluidez.progress.studied) and its review records. The merged lesson stays in the
+ * app as a reference lesson, linked from its target's \`deeper\` list. The target lesson
  * needs a rewrite that absorbs what the merged one taught (SEQ: the hubs "need rewriting rather than
  * concatenation"). Not merged here: ${excludedMerges.join(', ')} (see the report).
- * Targets that are stubs (lessons not written yet): ${[...new Set(Object.values(aliases))].filter((t) => !lessonById[t]).join(', ') || 'none'}.
+ * Targets that are stubs (lessons not written yet): ${[...new Set(Object.values(aliases))].filter((t) => !rawById[t]).join(', ') || 'none'}.
+ * The six SEQ cuts (${cuts.join(', ')}) are not redirected: they are reference lessons in deep units.
  * ========================================================================== */
-window.LESSON_ALIASES_PROPOSED = {
-${Object.entries(aliases).map(([a, b]) => `  ${q(a)}: ${q(b)},`).join('\n')}
-};
-
-/* SEQ's cuts: no redirect; a learner who studied one keeps nothing to redirect. */
-window.LESSON_CUTS_PROPOSED = [${cuts.map(q).join(', ')}];
 `;
+const aliasBody = `{\n${Object.entries(aliases).map(([a, b]) => `  ${q(a)}: ${q(b)},`).join('\n')}\n};\n`;
+const aliasSrc = aliasHeader(false) + 'window.LESSON_ALIASES_PROPOSED = ' + aliasBody + `\n/* SEQ's cuts: no redirect; a learner who studied one keeps nothing to redirect. */\nwindow.LESSON_CUTS_PROPOSED = [${cuts.map(q).join(', ')}];\n`;
+const aliasLive = aliasHeader(true) + 'window.LESSON_ALIASES = ' + aliasBody;
 
 if (!args.has('--no-write')) {
   writeFileSync(join(ROOT, 'tools/reseq/out/course.proposed.js'), header);
@@ -448,11 +555,13 @@ const bandOrder = BANDS.filter((b) => proposed.bands[b] != null);
 const bandLen = (c: Course, b: string) => { const i = BANDS.indexOf(b); const from = c.bands[b]; const nexts = BANDS.slice(i + 1).map((x) => c.bands[x]).filter((x) => x != null); return (nexts.length ? Math.min(...nexts) : c.days.length) - from; };
 const allUnits = [...frozen.map((u: any) => ({ ...u, seq: 'week one', week: '' })), ...units];
 const kindCount = (b: string) => { const c: Record<string, number> = {}; proposed.days.forEach((d: any) => { if (d.band !== b) return; const k = d.kind || 'week one'; c[k] = (c[k] || 0) + 1; }); return c; };
-const stubDays = proposed.days.map((d: any, i: number) => ({ d, i })).filter((x: any) => x.d.stub);
+// days that the re-sequence added: SEQ's new lessons and splits, plus the three this proposal adds (written since as reference lessons, now on the path)
+const isNewLesson = (id: string) => !!(STUBS[id] || SEQ.NEW[id]);
+const stubDays = proposed.days.map((d: any, i: number) => ({ d, i })).filter((x: any) => x.d.lesson && isNewLesson(x.d.lesson));
 
-P('# Stage 6 re-sequence: the proposed spine');
+P('# Stage 6 re-sequence: the 640-day spine');
 P();
-P('Generated by `nice npx tsx tools/reseq/build.ts` on the `next` branch. A proposal: it writes `tools/reseq/out/course.proposed.js` (a drop-in for `data/course.js`, same shape and derived block) and `tools/reseq/out/lesson-aliases.proposed.js`, and replaces nothing. Inputs: SEQ (the sequencing document and its 674-row CSV), the evidence note (sections 2 and 3), the plan (the week as a chain; Stage 6), the live `data/course.js`, `data/lesson-nodes.js`, `data/graph.js`, `data/requires.js`, the bank and the tagging report. The legality and supply numbers come from `tools/reseq/simulate.ts`, which rebuilds `Known.taughtBy` on the proposed order (first day each node is taught, a chunk also teaching what it unpacks) and applies the serving rule of `js/known.js` without loading or changing it.');
+P('Generated by `nice npx tsx tools/reseq/build.ts --lean` (add `--apply` to make it live) on the `next` branch. The owner chose the 640-day lean calendar on 5 November 2026, and with `--apply` the generator writes it as `data/course.js` and `data/lesson-aliases.js`, edits `status` and `deeper` in `data/strand-lessons.js` (`tools/reseq/patch-lessons.ts`, entry heads only) and merges the node rulings into `tools/lesson-nodes.overrides.json`; without it, only `tools/reseq/out/course.proposed.js`, `tools/reseq/out/lesson-aliases.proposed.js` and this report are written. Inputs: SEQ (the sequencing document and its 674-row CSV), the evidence note (sections 2 and 3), the plan (the week as a chain; Stage 6), the course before the re-sequence (`tools/reseq/base/course.pre-reseq.js`, a copy of the old `data/course.js` that the generator reads for week one, the old deep units and the baseline), `data/lesson-nodes.js`, `data/graph.js`, `data/requires.js`, the bank and the tagging report. The legality and supply numbers come from `tools/reseq/simulate.ts`, which rebuilds `Known.taughtBy` on the proposed order (first day each node is taught, a chunk also teaching what it unpacks) and applies the serving rule of `js/known.js` without loading or changing it.');
 P();
 P('## Headline');
 P();
@@ -552,7 +661,7 @@ P(`- Grammar nodes first "taught" by a chunk that unpacks them (the gate's rule,
 P(`- Grammar nodes no lesson on the proposed spine teaches: ${sim.neverTaught.length} (${sim.neverTaught.map((x: any) => `${x.id} ${x.rows}`).join(', ')}; the number is bank rows that need it and so are never served).`);
 P();
 
-P('## Stubs needed (lessons to write)');
+P('## Lessons the re-sequence added (stub days, now written)');
 P();
 P('| day | band | unit | id | title | from | node model |');
 P('|---|---|---|---|---|---|---|');
@@ -563,7 +672,7 @@ stubDays.forEach(({ d, i }: any) => {
   P(`| ${i} | ${d.band} | ${d.unit} | ${id} | ${title} | ${from} | ${s.teaches.join(', ') || '(none)'}${s.reviews ? '; reviews ' + s.reviews.join(', ') : ''} |`);
 });
 P();
-P('Lessons the proposal brings onto the path from the shelf or a deep unit, which need `status` lifted from `reference` and a tagging ruling (their provisional node model is model.ts PROPOSED_TEACHES): ' + [...pathIds].filter((id) => lessonById[id] && lessonById[id].status === 'reference').join(', ') + '.');
+P('Lessons the re-sequence brings onto the path from the shelf or a deep unit (`--apply` lifts their `status` from `reference` and writes their node ruling from model.ts PROPOSED_TEACHES): ' + [...pathIds].filter((id) => rawById[id] && rawById[id].status === 'reference' && !isNewLesson(id)).join(', ') + '. The stubs written since (' + stubDays.map(({ d }: any) => d.lesson).join(', ') + ') are lifted the same way, with the rulings of tools/reseq/out/pending-overrides.json.');
 P();
 
 P('## Node model changes the simulation uses');
@@ -653,20 +762,23 @@ P();
 [
   `**The calendar.** ${proposed.days.length} days against SEQ's 537 and today's ${current.days.length}. Accept it (more retrieval days at every band, and SEQ itself says the course is short of hours), or drop the Drill after a non-grammar big lesson (${variants[3].total} days), and also the Output practice day in weeks with no task (${variants[4].total}), or cut and merge more B1 to C1 function lessons to get nearer 537. build.ts computes each variant on the same cut.`,
   '**The B2 notion lessons going optional** (38, plus nt-textura-consistencia-b1 kept). The standing rule is per-lesson triage; phase 0 found pattern content in many of them (nt-cualidad-general-b2, nt-formas-figuras-b2, nt-peso-b2, nt-orientacion-direccion-b2, nt-distancia-b2). This proposal follows the brief and SEQ; the triage should happen before it is applied.',
-  `**The stubs.** ${stubDays.length} path days name lessons that do not exist. The course cannot ship with them: each needs writing (Stage 5) or the day removed. The alias targets gr-tener-que-hay-que-a1 and nt-frecuencia-a1 are stubs, so those aliases cannot apply until the lessons exist.`,
+  `**The stubs.** ${stubDays.length} path days are lessons the re-sequence added; they are written (as reference lessons first) and now on the path, but the burn still has to give them scripts, scenes and bank rows. Days that still name a lesson nobody has written: ${proposed.days.filter((d: any) => d.stub).map((d: any) => d.lesson).join(', ') || 'none'}.`,
   `**Legality.** ${sim.legality.hardDays} lesson days have examples that need a grammar or contrast node the spine teaches later (${sim.legality.hardFrozen} of them in week one), and ${sim.legality.softOnlyDays} more need only a pattern or chunk taught later; ${sim.legality.neverDays} need a grammar node no lesson teaches. Most are lessons SEQ pulls earlier (listed above). Each needs an example audit before the move ships, which the plan already requires ("course moves wait for the legality gate").`,
   `**Catch-up size.** A learner at old day 150 would be queued ${learners[1].after.catchUp.length} catch-up lessons. Decide the serving rate, and whether stubs are queued before they exist.`,
   `**Irregular preterites earlier?** The preterite is day ${dayOf('preterito')} and SEQ's irregular-preterite day is ${dayOf('gr-indefinido-irregular-a2')}. The Latin American default past needs tuve, estuve, pude, dije far sooner, and the preterite lesson's own examples already use them (see the legality table). Moving gr-indefinido-irregular-a2 into "What happened", after the state imperfects, would cost no days.`,
   `**Spain-only examples before B2.** With vosotros recognition at B2 (day ${sim.firstDay.get('g:vosotros-recognition')}), these lessons\' examples use vosotros or Spain\'s past earlier and need the Latin American pass: ${needing('g:vosotros-recognition').concat(needing('g:spain-pasts')).join(', ') || 'none'}. The frozen presente and gr-pronombre-sujeto-a1 still show vosotros in their tables.`,
   `**Parecer with gustar.** SEQ teaches gustar, encantar, parecer and quedar as one construction on its day 38 (here gr-verbos-predicativos-tipos-a2, day ${proposed.days.findIndex((d: any) => d.lesson === 'gr-verbos-predicativos-tipos-a2')}), but that lesson covers encantar and doler, and the map puts g:parecer-quedar on nt-evaluacion-valor-b1 (day ${sim.firstDay.get('g:parecer-quedar')}). Examples that use it earlier: ${needing('g:parecer-quedar').join(', ')}. Rewriting the gustar lesson as SEQ describes clears them.`,
   `**The article in week one.** Week one\'s examples use el and la (g:gender-articles) from day 0; the lesson comes on day ${sim.firstDay.get('g:gender-articles')}, the first day after week one (SEQ had it on day 8). Either accept that week one meets articles as chunks, or move gender-articles into the frozen units.`,
-  '**The content gate and the proposal files.** tools/validate-content.js requires every data/*.js on disk to be loaded by index.html and cached by sw.js, so tools/reseq/out/course.proposed.js and tools/reseq/out/lesson-aliases.proposed.js add four failures while they sit in data/. Exempt them in the gate, or move them out of data/, before the next green-gate commit.',
+  `**Week shape in the gate.** The lean weeks end on the review check, and ${units.filter((u) => !u.days.some((d) => d.lesson && lessonKind(d.lesson) === 'task')).length} of the ${units.length} weeks have no task lesson and no output practice day (that is what the 640-day calendar drops). tools/validate-content.js now accepts a unit that ends on a task lesson or on a review check day, and still holds week one (a1-u01, a1-u02) to its task.`,
+  `**Lessons js/lessons.js MERGES hides.** ${hidden.length} lessons in data/strand-lessons.js are folded into another lesson by the MERGES table, so they are not in ALL_LESSONS and have no home in any unit; this generator homes them (by theme, in a deep unit of their band) the next time it runs after they are un-merged.`,
 ].forEach((s) => P(`- ${s}`));
 P();
 P('## Reproduce');
 P();
 P('```');
-P('nice npx tsx tools/reseq/build.ts          # writes the two proposed data files and this report');
+P('nice npx tsx tools/reseq/build.ts --lean          # writes the two proposed data files and this report');
+P('nice npx tsx tools/reseq/build.ts --lean --apply  # also writes data/course.js, data/lesson-aliases.js, the lesson edits and the node rulings');
+P('nice npx tsx tools/tag-data.ts                      # regenerates data/lesson-nodes.js, requires.js and the band split');
 P('nice npx tsx tools/reseq/reconcile.ts      # prints the three learners');
 P('```');
 
@@ -680,5 +792,56 @@ if (!args.has('--quiet')) {
   console.log(`runs: longest ${sim.runs.longest.len}; consecutive ${sim.rules.consecutive.length}; no drill ${sim.rules.noDrill.length}; close contrasts ${sim.contrasts.close.length}`);
   variants.forEach((v) => console.log(`variant ${v.total} ${JSON.stringify(v.per)} — ${v.name}`));
   learners.forEach((l) => console.log(`learner old ${l.oldDay} -> new ${l.after.position} (${l.after.band}), catch-up ${l.after.catchUp.length}, first-gap ${l.after.firstGap}`));
+}
+
+/* ---------------------------------------------------------------------------
+ * 10. --apply: make it the live course
+ *   data/strand-lessons.js          status and `deeper` edits (patch-lessons.ts), nothing else in the file
+ *   data/course.js                  the generated course, header saying it is live
+ *   data/lesson-aliases.js          window.LESSON_ALIASES
+ *   tools/lesson-nodes.overrides.json   the node-model rulings the simulation used (NODE_MOVES, NODE_ADDS, PROPOSED_TEACHES,
+ *                                   alias targets taking what their merged lessons taught, the written stubs' rulings)
+ * Then run: nice npx tsx tools/tag-data.ts; nice npx tsx tools/split-data.ts; node tools/build-game-index.js;
+ *           node tools/gen-assets.js; node tools/bump-cache.js; node tools/validate-content.js
+ * ------------------------------------------------------------------------- */
+if (args.has('--apply')) {
+  const edit = patchStrandLessons(ROOT, lessonEdits, true);
+  writeFileSync(join(ROOT, 'data/course.js'), headerLive);
+  writeFileSync(join(ROOT, 'data/lesson-aliases.js'), aliasLive);
+
+  const OVR = join(ROOT, 'tools/lesson-nodes.overrides.json');
+  const overrides: Record<string, { teaches: string[]; note?: string }> = existsSync(OVR) ? JSON.parse(readFileSync(OVR, 'utf8')) : {};
+  const PENDING = join(ROOT, 'tools/reseq/out/pending-overrides.json');
+  const pending: Record<string, { teaches: string[]; note?: string }> = existsSync(PENDING) ? JSON.parse(readFileSync(PENDING, 'utf8')) : {};
+  const model = nodeModel(W, { aliases, proposal: true }).teaches;
+  const why: Record<string, string[]> = {};
+  const note = (id: string, t: string) => (why[id] = why[id] || []).push(t);
+  NODE_MOVES.forEach((m) => { note(m.from, `gives ${m.nodes.join(', ')} to ${m.to}`); if (m.to) note(m.to, `takes ${m.nodes.join(', ')} from ${m.from}`); });
+  NODE_ADDS.forEach((m) => note(m.to, `also teaches ${m.nodes.join(', ')}`));
+  Object.entries(aliases).forEach(([a, b]) => { if ((W.LESSON_NODES[a]?.teaches || []).length) note(b, `absorbs ${a}`); });
+  const same = (x: string[], y: string[]) => x.length === y.length && x.every((n) => y.includes(n));
+  const wrote: string[] = [], stubDiff: string[] = [];
+  for (const id of pathIds) {
+    if (!rawById[id]) continue;
+    const have = overrides[id] ? overrides[id].teaches : W.LESSON_NODES[id]?.teaches;
+    const stubModel = STUBS[id]?.teaches;
+    if (pending[id] && stubModel && !same(pending[id].teaches, stubModel)) stubDiff.push(id);
+    const want: string[] | undefined = pending[id]?.teaches ?? PROPOSED_TEACHES[id] ?? (model.get(id) as string[] | undefined);
+    if (!want) continue;
+    if (have && same(want, have)) continue;
+    if (!have && !pending[id] && !PROPOSED_TEACHES[id]) continue;
+    const prior = overrides[id]?.note;
+    const tag = pending[id]?.note || (why[id] ? `Re-sequence: ${why[id].join('; ')}.` : PROPOSED_TEACHES[id] ? 'Re-sequence: lifted onto the path; provisional, from its title and summary.' : 'Re-sequence node model.');
+    overrides[id] = { teaches: want.slice(), note: prior && !pending[id] ? `${prior} ${tag}` : tag };
+    wrote.push(id);
+  }
+  writeFileSync(OVR, JSON.stringify(overrides, null, 2));
+  console.log(`apply: strand-lessons.js ${edit.changed.length} lessons edited${edit.missing.length ? ', NOT FOUND: ' + edit.missing.join(', ') : ''}; data/course.js, data/lesson-aliases.js written; ${wrote.length} node overrides written (${Object.keys(overrides).length} in file)`);
+  if (stubDiff.length) console.log(`apply: pending ruling differs from model.ts STUBS for ${stubDiff.join(', ')} (the pending ruling is used)`);
+}
+if (!args.has('--quiet')) {
+  if (aliasToShelf.length) console.log(`alias sources placed in deep units because the target cannot carry a link: ${aliasToShelf.map((a) => a + ' -> ' + finalTarget(a)).join(', ')}`);
+  console.log(`deep units ${deepUnits.length} (${deepIds.size} lessons); alias sources linked by deeper ${Object.values(deeperAdd).reduce((a, v) => a + v.length, 0)}, to deep units ${aliasToShelf.length}, pending un-merge ${aliasPending.length}${aliasPending.length ? ' (' + aliasPending.join(', ') + ')' : ''}; lesson edits ${lessonEdits.length}`);
+  if (hidden.length) console.log(`${hidden.length} lessons that js/lessons.js MERGES folds into another have no home yet (they get one when un-merged and this reruns): ${hidden.slice(0, 6).join(', ')}, ...`);
 }
 export type { SimResult };

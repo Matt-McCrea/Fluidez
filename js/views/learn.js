@@ -512,6 +512,21 @@ window.StageLearn = (function () {
   function withScript(host, ctx, l, cb) {
     var band = scriptBand(ctx, l), key = 'SCRIPTS_' + band;
     if (!band || !SCRIPT_BANDS[band] || scriptFailed[band]) { cb(null); return; }
+    /* The re-sequenced course places some A2 and B1 lessons on A1 days (and so
+     * on up the bands). Their scripts live in the file of the lesson's own
+     * band, so when the day's band file has nothing for the id, try that one. */
+    var own = l.cefr && SCRIPT_BANDS[l.cefr] && l.cefr !== band ? l.cefr : null;
+    if (window[key] && !scriptIn(window[key], l.id) && own) {
+      var okey = 'SCRIPTS_' + own;
+      if (window[okey]) { cb(scriptIn(window[okey], l.id), servedBy(window[okey], l.id)); return; }
+      if (!scriptFailed[own]) {
+        loadScripts(own, function (ok) {
+          var t = ok && window[okey] ? window[okey] : null;
+          cb(t ? scriptIn(t, l.id) : null, t ? servedBy(t, l.id) : false);
+        });
+        return;
+      }
+    }
     if (window[key]) { cb(scriptIn(window[key], l.id), servedBy(window[key], l.id)); return; }
     var settled = false, note = UI.el('p', 'muted', UI.t('Cargando la lección…', 'Loading the lesson…'));
     host.appendChild(note);
@@ -522,7 +537,18 @@ window.StageLearn = (function () {
       cb(sc, served);
     };
     var timer = setTimeout(function () { settle(null); }, SCRIPT_WAIT_MS);
-    loadScripts(band, function (ok) { clearTimeout(timer); settle(ok && window[key] ? scriptIn(window[key], l.id) : null, ok && window[key] ? servedBy(window[key], l.id) : false); });
+    loadScripts(band, function (ok) {
+      clearTimeout(timer);
+      var t = ok && window[key] ? window[key] : null;
+      if (t && !scriptIn(t, l.id) && own && !scriptFailed[own]) {
+        loadScripts(own, function (ok2) {
+          var t2 = ok2 && window['SCRIPTS_' + own] ? window['SCRIPTS_' + own] : null;
+          settle(t2 ? scriptIn(t2, l.id) : null, t2 ? servedBy(t2, l.id) : false);
+        });
+        return;
+      }
+      settle(t ? scriptIn(t, l.id) : null, t ? servedBy(t, l.id) : false);
+    });
   }
 
   // Script text: HTML-escaped, *Spanish* in italics, \n as a line break.
@@ -863,10 +889,27 @@ window.StageLearn = (function () {
 
   // ---- practice day (no new content) ----
   function teachPractice(host, ctx, done) {
-    var wrap = UI.el('div', 'panel');
-    wrap.appendChild(UI.el('h1', null, UI.t('Día de práctica y repaso', 'Practice & review day')));
-    if (ctx.focus && ctx.focus.note) wrap.appendChild(UI.el('p', 'muted', ctx.focus.note));
-    wrap.appendChild(UI.el('p', 'doc-summary', UI.t('Hoy no hay gramática nueva: un día para que se asiente lo que ya viste. El repaso, la lectura y los ejercicios usan cosas que ya conoces.', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.')));
+    var wrap = UI.el('div', 'panel'), f = ctx.focus || {};
+    /* The week's three practice days say which they are, as the Home card does (session.js kindLabel).
+     * A drill names the lesson it drills and repeats its one-line rule. */
+    var kind = f.drill ? 'drill' : f.output ? 'output' : f.review ? 'review' : (f.kind || null);
+    var il = kind === 'drill' && window.Known && window.Known.introLesson && ctx.dayIndex != null ? window.Known.introLesson(f, ctx.dayIndex) : null;
+    var it = il && window.Lessons && window.Lessons.byId ? window.Lessons.byId(il) : null;
+    if (kind === 'drill' && it) {
+      wrap.appendChild(UI.el('h1', null, UI.t('Ejercicios: ', 'Drill: ') + it.title));
+      if (it.summary) wrap.appendChild(UI.el('p', 'doc-summary', it.summary));
+      wrap.appendChild(UI.el('p', 'muted', UI.t('Hoy no hay lección nueva: los ejercicios y la producción vuelven sobre ' + it.title + ' para que se asiente.', 'No new lesson today: Apply and Produce come back to ' + it.title + ' so it settles.')));
+    } else if (kind === 'output') {
+      wrap.appendChild(UI.el('h1', null, UI.t('Día de producción', 'Output day')));
+      wrap.appendChild(UI.el('p', 'doc-summary', UI.t('Hoy escribes y hablas con lo de esta semana: la tarea de la semana abre la etapa Producir.', 'Today you write and speak with this week\'s material: the week\'s task opens Produce.')));
+    } else if (kind === 'review') {
+      wrap.appendChild(UI.el('h1', null, UI.t('Día de repaso', 'Review day')));
+      wrap.appendChild(UI.el('p', 'doc-summary', UI.t('La semana en repaso: nada nuevo, y al final la prueba de la unidad.', 'The week in review: nothing new, and the unit check at the end.')));
+    } else {
+      wrap.appendChild(UI.el('h1', null, UI.t('Día de práctica y repaso', 'Practice & review day')));
+      wrap.appendChild(UI.el('p', 'doc-summary', UI.t('Hoy no hay gramática nueva: un día para que se asiente lo que ya viste. El repaso, la lectura y los ejercicios usan cosas que ya conoces.', 'No new grammar today: a day to let what you\'ve met settle. The review, the reading and the exercises all draw on things you already know.')));
+    }
+    if (f.note) wrap.appendChild(UI.el('p', 'muted', f.note));
     wrap.appendChild(UI.nextBtn('Continuar →', done));
     host.appendChild(wrap);
   }

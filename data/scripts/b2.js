@@ -8773,5 +8773,82 @@ window.SCRIPTS_B2 = {
     "*Acaeció un incremento del canon arrendaticio* is pompous, not formal: read it aloud and climb down a rung."
   ]
 }
+,
+/* ---- the re-sequenced course: Spain's Spanish, for reading only -----------
+ * gr-vosotros-espana-b2 opens "Reading the news (1 of 2)" on day 460 of the
+ * Stage 6 spine. It is the one script in the course whose Spanish quotes
+ * vosotros, os, vuestro, the -d command and Spain's "today" perfect, and only
+ * in lines marked as Spain's: the hook, the examples, read-and-pick and the
+ * register card. Every line the learner types (yourTurn, translate, the
+ * personal sentence) is the Colombian equivalent, so nothing is produced in
+ * vosotros. tools/test-scripts-b2.js needs this one id exempt from its
+ * vosotros checks. */
 
+/* day 460, week "Reading the news (1 of 2)" */
+"gr-vosotros-espana-b2": {
+  source: "rebuild",
+  hook: {
+    line: "Your friend Lucía, in Madrid, writes to you and your sister, then sends a link to a news story. It is all Spanish you can read, but two habits are Spain's own: a second plural you, and the perfect for anything done today.",
+    es: "¿Qué tal estáis? Os escribo porque hoy he visto vuelos baratísimos a Madrid.\nSi queréis, venid en marzo y os enseño la ciudad. Vuestra habitación ya está lista.\nTitular: El Gobierno ha aprobado esta mañana la nueva ley de vivienda.",
+    en: "How are you both? I'm writing because today I saw really cheap flights to Madrid.\nIf you'd like, come in March and I'll show you the city. Your room is already ready.\nHeadline: The government approved the new housing law this morning."
+  },
+  examples: [
+    { es: "Hoy he ido al médico y me ha dicho que todo está bien, así que tranquilos.", en: "I went to the doctor today and he told me everything is fine, so don't worry." },
+    { es: "Chicos, ¿habéis comido ya? Si no, coged algo de la nevera y sentaos a la mesa.", en: "Kids, have you eaten yet? If not, grab something from the fridge and sit down at the table." },
+    { es: "En Bogotá dirían: muchachos, ¿ya comieron? Si no, saquen algo de la nevera y siéntense.", en: "In Bogotá they'd say: guys, have you eaten yet? If not, get something from the fridge and sit down." }
+  ],
+  rule: "Spain has a second plural you, *vosotros*, for friends and family. Read every piece of it as *ustedes*:\n*-áis*, *-éis*, *-ís* at the end: *estáis, tenéis, vais, habéis comido*, you all are, have, go, have eaten.\n*os*: you, to you all. *Os llamo mañana.*\n*vuestro*, *vuestra*: your, belonging to you all.\nCommands to a group end in *-d*: *venid, coged*. Before *os* the *d* drops: *sentaos*.\nSpain also uses the perfect for today: *Hoy he ido al médico* is Colombia's *Hoy fui al médico*. In a Madrid paper, *ha aprobado* just means approved.\n*Vale* is OK; *coger* is take or grab. Spain's *z* sound changes nothing on the page.\nUnderstand it all; keep saying *ustedes* and *fui*.",
+  readAndPick: [
+    { q: "In a series made in Madrid, a mother asks her two sons this. What does she mean?", es: "¿Habéis comido ya?",
+      options: ["Have they eaten yet?", "Have you boys eaten?", "Shall we eat now?"], answer: 1,
+      why: "*Habéis* ends in *-éis*: you all, here the two sons. Colombia: *¿Ya comieron?*" },
+    { q: "Lucía writes this to you and your sister. How would a Colombian friend write it?", es: "Os espero a las ocho en la puerta del cine.",
+      options: ["Te espero a las ocho en la puerta del cine.", "Los espero a las ocho en la puerta del cine.", "Nos esperamos a las ocho en la puerta del cine."], answer: 1,
+      why: "*Os* is you all as the one waited for: in Colombia, *los*." },
+    { q: "When did the government approve the law?", es: "El Gobierno ha aprobado esta mañana la nueva ley.",
+      options: ["This morning", "Years ago", "It hasn't yet"], answer: 0,
+      why: "Spain's perfect for today: *ha aprobado esta mañana* is Colombia's *aprobó esta mañana*." },
+    { q: "What is the waiter asking your group?", es: "¿Qué queréis tomar?",
+      options: ["What she wants to eat", "Whether he should bring the bill", "What you all want to drink"], answer: 2,
+      why: "*Queréis* is *quieren* in Colombia: *¿Qué quieren tomar?*" },
+    { q: "Lucía answers your plan for Saturday. What does she mean?", es: "Vale, coged el metro y nos vemos en Sol.",
+      options: ["OK, take the metro and see you at Sol", "Fine, it's worth taking the metro all the way to Sol", "Pack your things, we'll walk to Sol"], answer: 0,
+      why: "*Vale* is OK, and *coged* is the group command of *coger*, take: *cojan el metro*." }
+  ],
+  yourTurn: [
+    { en: "Sit down, please. (to a group, the Colombian way of saying *Sentaos, por favor*)", es: "Siéntense, por favor.", accept: ["Siéntense, por favor.", "Por favor, siéntense.", "Tomen asiento, por favor."] },
+    { en: "I'll call you all tomorrow. (the Colombian way of saying *Os llamo mañana*)", es: "Los llamo mañana.", accept: ["(Yo) los llamo mañana.", "Mañana los llamo.", "Los voy a llamar mañana."] },
+    { en: "What would you all like to drink? (the Colombian way of saying *¿Qué queréis tomar?*)", es: "¿Qué quieren tomar?", accept: ["¿Qué quieren tomar?", "¿Qué van a tomar?", "¿Qué les provoca tomar?"] },
+    { en: "I went to the doctor today. (the Colombian way of saying *Hoy he ido al médico*)", es: "Hoy fui al médico.", accept: ["Hoy fui al médico.", "Fui al médico hoy.", "Hoy fui donde el médico."] },
+    { en: "Take the metro and we'll meet at the station. (to a group, the Colombian way of saying *Coged el metro*)", es: "Cojan el metro y nos vemos en la estación.", accept: ["[Cojan|Tomen] el metro y nos vemos en la estación.", "[Cojan|Tomen] el metro y nos encontramos en la estación.", "Váyanse en metro y nos vemos en la estación."] }
+  ],
+  translate: [
+    { en: "Is this your house? (to a group, Colombian for *¿Esta es vuestra casa?*)", es: "¿Esta es la casa de ustedes?", accept: ["¿Esta es la casa de ustedes?", "¿Esta es su casa?", "¿Es esta la casa de ustedes?"] },
+    { en: "The government approved the new law this morning. (Colombian for *El Gobierno ha aprobado esta mañana la nueva ley*)", es: "El Gobierno aprobó esta mañana la nueva ley.", accept: ["El Gobierno aprobó esta mañana la nueva ley.", "El Gobierno aprobó la nueva ley esta mañana.", "Esta mañana el Gobierno aprobó la nueva ley."] },
+    { en: "Have you all bought the tickets yet? (Colombian for *¿Ya habéis comprado las entradas?*)", es: "¿Ya compraron las boletas?", accept: ["¿Ya compraron las [boletas|entradas]?", "¿Ustedes ya compraron las [boletas|entradas]?", "¿Ya compraron los [boletos|tiquetes]?"] },
+    { en: "OK, I'll take the bag. (Colombian for *Vale, cojo la bolsa*)", es: "Listo, yo cojo la bolsa.", accept: ["Listo, (yo) cojo la bolsa.", "[Listo|Bueno|Dale], (yo) llevo la bolsa.", "Listo, yo me llevo la bolsa."] },
+    { en: "Your friends are waiting for you all at the door. (Colombian for *Vuestros amigos os esperan en la puerta*)", es: "Sus amigos los están esperando en la puerta.", accept: ["[Sus amigos|Los amigos de ustedes] los están esperando en la puerta.", "[Sus amigos|Los amigos de ustedes] los esperan en la puerta.", "Sus amigos están esperándolos en la puerta."] },
+    { en: "This week I went to Barcelona with my parents. We ate really well and walked a lot. Did you get my photos? (to a group, Colombian for *Esta semana he ido a Barcelona con mis padres. Hemos comido muy bien y hemos caminado mucho. ¿Os han llegado mis fotos?*)", es: "Esta semana fui a Barcelona con mis papás. Comimos muy bien y caminamos mucho. ¿Les llegaron mis fotos?", accept: ["Esta semana fui a Barcelona con mis [papás|padres]. Comimos muy bien y caminamos mucho. ¿Les llegaron [mis|las] fotos?", "Esta semana estuve en Barcelona con mis [papás|padres]. Comimos muy bien y caminamos mucho. ¿Les llegaron [mis|las] fotos?", "Esta semana fui a Barcelona con mis [papás|padres]. Comimos delicioso y caminamos mucho. ¿Les llegaron [mis|las] fotos?"] }
+  ],
+  register: [
+    { es: "¿Qué queréis tomar?", en: "What would you all like to drink?", when: "Spain, a waiter to a group of friends" },
+    { es: "¿Qué van a tomar?", en: "What are you all having?", when: "Colombia, a waiter to any group" },
+    { es: "¿Qué desean tomar?", en: "What would you like to drink?", when: "a smart restaurant, in Spain or in Colombia" },
+    { es: "¿Qué les provoca?", en: "What do you all feel like?", when: "Colombia, a host to friends at home" }
+  ],
+  personal: {
+    prompt: "Lucía writes to you and your sister: *Hoy he ido al centro y os he comprado un regalo. ¿Cuándo venís?* Write the same message the way a Colombian friend would.",
+    constraints: [
+      { type: "regex", pattern: "\\bfui\\b", label: "today's past, the Colombian way: *hoy fui*" },
+      { type: "regex", pattern: "\\b(les|los) (compré|traje|tengo)", label: "to you all: *les compré*" },
+      { type: "regex", pattern: "\\b(vienen|van a venir)\\b", label: "the question: *¿cuándo vienen?*" }
+    ],
+    model: "Hoy fui al centro y les compré un regalo. ¿Cuándo vienen?"
+  },
+  pitfalls: [
+    "Don't start saying *vosotros* because you hear it: in Colombia it sounds theatrical. *Ustedes* is right for any group, friends included.",
+    "*Vos* is not *vosotros*: *vos* is one person, heard in Medellín and the coffee region (*vos sabés*). *Vosotros* is plural, and Spain's.",
+    "*Hoy he ido* is right in Madrid. In Colombia keep *hoy fui*; the perfect is for ever, never and not yet."
+  ]
+}
 };

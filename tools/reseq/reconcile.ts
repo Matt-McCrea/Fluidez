@@ -17,7 +17,7 @@
 // ============================================================================
 import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
-import { runFiles, loadCourse } from './data';
+import { runFiles, loadCourse, BASE_COURSE } from './data';
 import type { Course } from './simulate';
 
 export type Progress = { studied?: Record<string, any>; beginnerDay?: number; courseSig?: string | null; catchUp?: string[]; [k: string]: any };
@@ -56,7 +56,7 @@ export function reconcile(progress: Progress, C: Course, aliases: Record<string,
 
 /* ---- CLI ---- */
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  const cur = loadCourse('data/course.js'), prop = loadCourse('tools/reseq/out/course.proposed.js');
+  const cur = loadCourse(BASE_COURSE), prop = loadCourse('tools/reseq/out/course.proposed.js');
   const aliases = runFiles(['tools/reseq/out/lesson-aliases.proposed.js']).LESSON_ALIASES_PROPOSED as Record<string, string>;
   const C = (W: any): Course => ({ days: W.COURSE_DAYS, units: W.COURSE_UNITS, bands: W.COURSE_BANDS });
   const show = (label: string, p: Progress) => {

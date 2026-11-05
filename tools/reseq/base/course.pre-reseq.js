@@ -1,0 +1,1663 @@
+/* ============================================================================
+ * COURSE — the syllabus, written down.
+ *
+ * This file IS the teaching order. It replaced a sort: level, then strand rank,
+ * then seed index, then title. That sort worked, but the order it produced was
+ * emergent — nobody could read it, and for the ~600 PCIC strand lessons the
+ * LAST tiebreaker (localeCompare on the Spanish title) was the only thing
+ * separating them, so the sequence was an artifact of spelling. "Los posesivos
+ * átonos: dónde van" came before "Los posesivos: formas": where they go,
+ * before what they are.
+ *
+ * The deeper problem was that `level` was doing two unrelated jobs — deciding
+ * teaching order AND gating content difficulty — and the two kept contradicting
+ * each other. Gate 3 belongs to both A2 and B1, so the conditional could not be
+ * moved earlier for A2 without vanishing from B1. Splitting them fixes it:
+ * order lives here, and `level` goes back to meaning one thing, how hard a
+ * passage or cloze item is (js/session.js atLevel).
+ *
+ * Three kinds of entry:
+ *   { lesson: 'id' }   a lesson from GRAMMAR_LESSONS
+ *   { verbs: [...] }   a verb day — meet five new verbs by meaning
+ *   { practice: true } no new content; consolidate
+ *
+ * A day may also carry `passage: 'id'`, naming the reading it should serve
+ * instead of letting js/session.js choose. Used only by the opening two units,
+ * for the reason given there; anywhere else the scheduler picks better than a
+ * hand-written list would stay correct.
+ *
+ * COURSE_BANDS gives each CEFR band's start index. "Start at B1" means "start
+ * at index 192"; a learner runs off the end of their band straight into
+ * the next one, which is what finishing a band should do.
+ *
+ * The content gate (tools/validate-content.js) checks that every lesson appears
+ * exactly once and that no lesson's teaching sections use a verb form built
+ * later in this list. Adding a lesson means placing it — that is the point.
+ *
+ * Verb days were frozen from the VERB_TIERS table that used to live in
+ * js/curriculum.js: frequency order blended with the domestic verbs a beginner
+ * needs on day one and that raw corpus counts rank far too low.
+ * ========================================================================== */
+window.COURSE = [
+
+
+  /* ==== OPTIONAL DEEP UNITS ==============================================
+   * These cost no day. They are offered, not walked — from a core lesson's
+   * `deeper` link, from the error log when a learner keeps missing the same
+   * thing, and from a browsable index.
+   *
+   * Every one of them is a confusion that STARTS at A1 and persists for
+   * years, which is why they sit here rather than at B2: the learner who
+   * needs "why are there two verbs for to be" needs it in week one, and is
+   * the least able to get it from a grammar reference on their own.
+   *
+   * They re-home the lessons the A-band triage shelved. A shelf of seventy
+   * loose lessons is a junk drawer; the same lessons grouped under a goal
+   * are a curriculum you can choose to walk.
+   * ====================================================================== */
+  { unit: 'deep-ser-estar', band: 'A1', optional: true,
+    triggers: ['lesson:ser-estar', 'lesson:gr-atributo-a1', 'lesson:gr-nucleo-verbal-a1'],
+    title: 'Ser and estar, properly',
+    goal: 'I can choose between ser and estar without guessing, including the cases where both are possible and the meaning changes.',
+    canDo: ['choose ser or estar from what I mean, not from a memorised list',
+            'use both without an adjective at all',
+            'say what changes when the same adjective takes each one'],
+    days: [
+      { lesson: 'gr-atributo-a1' },
+      { lesson: 'gr-nucleo-verbal-a1' }
+    ] },
+
+  { unit: 'deep-genero', band: 'A1', optional: true,
+    triggers: ['lesson:gender-articles', 'lesson:gr-genero-sustantivos-a1', 'lesson:gr-genero-adjetivo-a1', 'lesson:gr-numero-sustantivos-a1'],
+    title: 'El or la?',
+    goal: 'I can work out a noun\'s gender from its shape, and I know which common words break the pattern.',
+    canDo: ['predict gender from a word ending',
+            'handle the words that look one gender and take the other',
+            'use the article on names, places and titles'],
+    days: [
+      { lesson: 'gr-nombres-propios-a1' },
+      { lesson: 'gr-masculino-a2' },
+      { lesson: 'gr-sustantivos-especiales-a2' },
+      { lesson: 'gr-numero-sustantivos-b2' },
+      { lesson: 'gr-posesivos-b2' },
+      { lesson: 'gr-concordancia-sn-verbo-b2' },
+    ] },
+
+  { unit: 'deep-el-articulo', band: 'A2', optional: true,
+    triggers: ['lesson:gr-articulo-definido-a1', 'lesson:gr-articulo-indefinido-a1', 'lesson:gr-articulo-definido-distribucion-a2'],
+    title: 'The article, where English has none',
+    goal: 'I can use el, la and un where Spanish needs them and English does not — and leave them out where Spanish does.',
+    canDo: ['use the definite article for generic statements',
+            'drop the article where Spanish drops it',
+            'hear what un adds beyond "a"'],
+    days: [
+      { lesson: 'gr-articulo-definido-valores-a2' },
+      { lesson: 'gr-articulo-indefinido-valores-a2' },
+      { lesson: 'gr-nombres-escuetos-a2' },
+      { lesson: 'gr-restrictivos-nominales-a2' },
+      { lesson: 'gr-articulo-definido-valores-b2' },
+      { lesson: 'gr-articulo-indefinido-valores-b2' },
+      { lesson: 'gr-nombres-escuetos-b2' },
+    ] },
+
+  /* ---- A1 · 94 days · starts at index 0 ------------------------------- */
+
+  /* Unit 1 · Meet someone · 12 days -------------------------------------
+   * "I can greet someone, say who I am and where I am from, and ask them
+   * the same."
+   *
+   * THE FIRST WEEK IS BUILT SO THAT NOTHING IS DRILLED BEFORE IT IS TAUGHT.
+   * Day 1 is chunks only: a real twelve-line meeting at a café counter in
+   * Bogotá, read twice, and the eleven fixed pieces it is made of (hola, soy,
+   * me llamo, soy de, ¿y tú?, mucho gusto, ¿cómo te llamas?, ¿de dónde eres?,
+   * quiero, ¿tienes…?). Day 2 is the head start every English speaker already
+   * has: seven endings that turn thousands of English words into Spanish ones,
+   * and ten false friends. Only on day 3 are the verbs inside those chunks
+   * opened up, and on day 4 the present tense that builds them. Day 7 adds
+   * nothing: six days of new material end with one that consolidates them.
+   *
+   * Sounds and stress are no longer path days. They sat at days 2 and 13, so
+   * a beginner met vowel rules before meeting anybody; they are now one
+   * reference card (gr-sonidos-a1), linked from day 2, with the longer accent
+   * lesson (gr-acentuacion-a1) behind it. Unit 2 gave up that day, unit 1
+   * gained the practice day, so every day after day 19 is where it was. */
+  { unit: 'a1-u01', band: 'A1', title: 'Meet someone',
+    goal: 'I can greet someone, say who I am and where I am from, and ask them the same.',
+    canDo: ['greet someone and answer a greeting',
+            'give my name and ask for one',
+            'say where I am from and how old I am',
+            'say thank you and reply to it',
+            'open a conversation and close it'],
+    /* ---- the opening fortnight names its own reading -----------------------
+     * `passage` is the fourth kind of thing a day can carry, and it exists for
+     * the first two units only. Everywhere else the session picks the reading
+     * itself, and does it well: it prefers a passage that uses the day's
+     * grammar, falls back to the day's theme, and chooses between equals by
+     * how much new vocabulary the text would teach per word read.
+     *
+     * The opening is the one stretch where that is not good enough. A chunk
+     * lesson, a cognate lesson and a verb day give those preferences nothing
+     * to bite on, so the scheduler was free to hand a beginner a list of
+     * character adjectives on the first verb day and a list of body parts on
+     * the second: technically at level, and nothing to do with the week they
+     * were living.
+     *
+     * So these days say what to read, under two rules. Keep the learner inside
+     * the world of the unit: unit 1 is people meeting each other, so most of
+     * its days read somebody meeting somebody, and where a lesson has a natural
+     * partner it gets it (day 2 a learner's own class, dense with cognates;
+     * day 6 the passage written to contrast ser and estar). And never put more
+     * than two words of one tight set (numbers in a run, family members,
+     * nationalities, a list of objects or of adjectives) in front of a beginner
+     * on one day: the texts that did (the family ages, the floors and their
+     * nationalities, the contents of a bag, ten character traits) were taken
+     * off these days. The two practice days re-read a text from earlier in
+     * their unit, because a practice day adds no new content and a fresh text
+     * would add a day of new words.
+     *
+     * Every one is presente-only on purpose: the preterite is not taught until
+     * day 47, and js/session.js withholds a text whose tenses the learner has
+     * not reached. A named passage that gets withheld is worse than none. */
+    days: [
+    { lesson: 'dlg-presentarse', passage: 'u1-cafeteria' },            // two students meet: names, origin
+    { lesson: 'gr-cognados-a1', passage: 'clase-espanol-verbos2' },    // estudiante, universidad, texto, progreso: read at sight
+    { verbs: ['ser', 'estar', 'llamarse', 'tener', 'haber'], passage: 'a1-serv-policia' },   // es de, está, tengo, hay: four of the five
+    { lesson: 'presente', passage: 'cena-vecinos-verbos22' },          // invitamos, preparo, traen, hablamos: the present across persons
+    { lesson: 'fn-responder-saludo-a2', passage: 'u1-recepcion' },     // buenas tardes, at a desk
+    { lesson: 'ser-estar', passage: 'ser-estar-contraste' },           // es alta / está cansada, es médico / está ocupado
+    { practice: true, passage: 'cena-vecinos-verbos22' },         // day 4 again: the present, and no new words
+    /* The day-1 text again, a week on, read this time for its origin
+     * exchange (¿Eres de Madrid? No, soy de Valencia. Soy de Irlanda.). The
+     * other clean texts about origin are already on days 3 and 5. */
+    { lesson: 'nt-origen-a1', passage: 'u1-cafeteria' },               // where from, and how old
+    { lesson: 'fn-identificar-a1', passage: 'u1-vecina' },             // ¿Eres la vecina nueva? Sí, soy Nadia.
+    { lesson: 'fn-agradecer-a1', passage: 'primer-dia-vecindario-vocab1' },   // muchas gracias, de nada, buenas noches
+    { lesson: 'fn-establecer-comunicacion-a1', passage: 'a1-rel-vecino-nuevo' },   // an opening and a closing, performed
+    /* Deliberately the same text as day 1. The unit opened with two strangers
+     * meeting; it closes by asking the learner to introduce themselves, and
+     * reading that first passage once more with the unit behind them is the
+     * point, not an oversight.
+     *
+     * `write` names the writing task this day must give a box for: the task
+     * lesson asks for a written first meeting, and until the day carried an id
+     * the produce stage could hand out anything at level. js/curriculum.js
+     * asFocus and js/session.js have to pass it through and serve it first;
+     * the task itself is w-iden-primer-encuentro in data/writing.js. */
+    { lesson: 'task-presentarse', passage: 'u1-cafeteria', write: 'w-iden-primer-encuentro' },
+    ] },
+
+  { unit: 'a1-u02', band: 'A1', title: 'Ask a question',
+    goal: 'I can ask for a name, a place, a price and a repeat, and say when I have not understood.',
+    canDo: ['ask with qué, dónde, cuánto, quién',
+            'turn a statement into a question with my voice',
+            'say I do not understand and ask for a repeat',
+            'ask a stranger for information'],
+    days: [
+      { lesson: 'gr-interrogativos-a1', passage: 'a1-serv-cuenta' },     // the most question-dense text in A1
+      { verbs: ['querer', 'poder', 'ir', 'hacer', 'dar'], passage: 'conversacion-amigas-verbos4' },   // quiere, da, puede: the scheduler served a body-parts list here
+      { lesson: 'dc-entonacion-a1' },   // left to the scheduler: alignment serves this one well enough
+      { lesson: 'gr-pronombre-sujeto-a1' },
+      { practice: true, passage: 'a1-serv-cuenta' },              // day 13 again: six questions, and no new words
+      { lesson: 'fn-pedir-informacion-a1', passage: 'a1-serv-tarjeta' },   // ¿Cuál es el problema? ¿Dónde hay un cajero?; left alone it drew a list of rooms and furniture
+      { lesson: 'task-preguntar', passage: 'a1-rel-vecino-nuevo' },   // day 11 again, read for its four questions to a stranger
+    ] },
+
+  { unit: 'a1-u03', band: 'A1', title: 'Be polite',
+    goal: 'I can apologise, agree, disagree, and choose between tú and usted.',
+    canDo: ['say sorry and reply when someone apologises',
+            'agree and disagree out loud',
+            'use tú or usted deliberately',
+            'say yes, no, me too and me neither'],
+    days: [
+      { lesson: 'fn-dirigirse-a1' },
+      { verbs: ['saber', 'conocer', 'ver', 'decir', 'poner'] },
+      { lesson: 'fn-disculparse-a2' },
+      { lesson: 'fn-acuerdo-a1' },
+      { practice: true },
+      { lesson: 'gr-adverbios-afirmacion-negacion-a1' },
+      { lesson: 'task-cortesia' },
+    ] },
+
+  { unit: 'a1-u04', band: 'A1', title: 'Numbers, time and money',
+    goal: 'I can say how many, what time, what day and how much.',
+    canDo: ['count and use numbers up to a hundred',
+            'say what you are going to do',
+            'tell the time and name the days',
+            'ask and understand a price',
+            'arrange a time to meet'],
+    days: [
+      { lesson: 'nt-cantidad-numerica-a1' },
+      { lesson: 'gr-numerales-a1' },
+      { verbs: ['hablar', 'trabajar', 'vivir', 'llamar', 'quedar'] },
+      { lesson: 'gr-ir-a-infinitivo-a1' },   // voy a plus a verb: the plans task-quedar arranges, and g:ir-a-plans, which no lesson taught
+      { lesson: 'nt-referencias-generales-a1' },
+      { practice: true },
+      { lesson: 'nt-valor-precio-a1' },
+      { lesson: 'task-quedar' },
+    ] },
+
+  { unit: 'a1-u05', band: 'A1', title: 'Say what you like',
+    goal: 'I can say what I like and hate, and react to what someone else likes.',
+    canDo: ['use me gusta and me gustan correctly',
+            'say me encanta and no me gusta nada',
+            'agree with a negative using a mí tampoco',
+            'ask what someone else likes'],
+    days: [
+      { lesson: 'gr-verbos-predicativos-tipos-a2' },
+      { lesson: 'fn-preguntar-gustos-a2' },
+      { verbs: ['comer', 'beber', 'comprar', 'necesitar', 'esperar'] },
+      { lesson: 'nt-evaluacion-general-a1' },
+      { practice: true },
+      { lesson: 'fn-valorar-a1' },
+      { lesson: 'task-gustos' },
+    ] },
+
+  { unit: 'a1-u06', band: 'A1', title: 'Order and buy',
+    goal: 'I can order food and drink, buy something and pay for it.',
+    canDo: ['order in a bar or café',
+            'ask whether something exists with hay',
+            'ask the price and pay',
+            'close a transaction politely'],
+    days: [
+      { lesson: 'gn-conversacion-transaccional-a1' },
+      { lesson: 'gr-articulo-indefinido-a1' },
+      { verbs: ['venir', 'salir', 'volver', 'empezar', 'terminar'] },
+      { lesson: 'nt-existencia-a1' },
+      { practice: true },
+      { lesson: 'task-cafe' },
+    ] },
+
+  /* ---- the two past tenses, moved into A1 and held apart ----------------
+   * These were the first two units of A2, which put the preterite on day 97
+   * of 671 and the present perfect on day 115. Before them an A1 learner had
+   * ninety passages to read and not one past tense in any of them, so a
+   * beginner could describe a routine for three months and still not answer
+   * "what did you do at the weekend".
+   *
+   * They are placed at SEAMS rather than dropped in together. The preterite
+   * follows "Order and buy" because that unit ends with the learner having
+   * bought something, and "what did you buy" is the next sentence they want;
+   * by then thirty verbs and the whole of "Numbers, time and money" are
+   * behind them. The present perfect follows "Where things are", where
+   * "¿has estado en…?" is the natural question about a place.
+   *
+   * The 24 days between them are deliberate. Taught back to back, two past
+   * tenses that compete for the same recent-past ground teach each other's
+   * exceptions; the gap lets the preterite settle first. The cost is a
+   * stretch where a learner will say "hoy comí" for "hoy he comido", which is
+   * why "Tell me what happened" is anchored on `ayer` and the week before —
+   * see its canDo and task-a2-ayer.
+   *
+   * They keep their `a2-` ids on purpose. A unit id is what
+   * `progress.studied` and the unit checks are keyed on, so renaming them to
+   * `a1-` would read better here and silently reset the progress of anyone
+   * who had already done them. The band tag is what decides which band's
+   * stretch a unit belongs to (COURSE_BANDS is derived from the first `band`
+   * seen), and that IS changed — leaving it at 'A2' would move the start of
+   * A2 back to this line and drag forty A1 days into it.
+   *
+   * The imperfect stays where it was, in A2. Having a past tense and choosing
+   * between two of them are different skills, and only the first one is what
+   * a beginner is missing — see the SEED comment in js/lessons.js.
+   * ---------------------------------------------------------------------- */
+
+  { unit: 'a2-u14', band: 'A1', title: 'Tell me what happened',
+    goal: 'I can say what happened, in order, in the past.',
+    canDo: ['use the preterite for completed events',
+            'chain events with primero, luego, después',
+            'handle fui, hice, tuve, estuve',
+            'vary the verb beyond decir'],
+    days: [
+      { lesson: 'preterito' },
+      { verbs: ['mejorar', 'empeorar', 'aumentar', 'evitar', 'crear'] },
+      { lesson: 'dc-deixis-temporal-a2' },
+      { lesson: 'nt-expresion-verbal-a2' },
+      { practice: true },
+      { lesson: 'task-a2-ayer' },
+    ] },
+
+  { unit: 'a1-u07', band: 'A1', title: 'Describe people and things',
+    goal: 'I can describe a person, a place or an object so that someone recognises it.',
+    canDo: ['make adjectives agree',
+            'say whose something is',
+            'point things out with este, ese, aquel',
+            'describe somebody until they are guessed'],
+    days: [
+      { lesson: 'gr-genero-adjetivo-a1' },
+      { lesson: 'gr-adjetivos-calificativos-a1' },
+      { verbs: ['entrar', 'pasar', 'llevar', 'tomar', 'dejar'] },
+      { lesson: 'gr-posesivos-forma-a1' },
+      { practice: true },
+      { lesson: 'gr-demostrativos-distribucion-a1' },
+      { lesson: 'nt-familia-a1' },
+      { lesson: 'gn-describir-persona-a1' },
+      { lesson: 'gn-describir-objeto-a1' },
+      { lesson: 'task-describir' },
+    ] },
+
+  { unit: 'a1-u08', band: 'A1', title: 'Where things are',
+    goal: 'I can say where something is and give directions to it.',
+    canDo: ['use hay for existence and está for location',
+            'say aquí, ahí, allí and mean the right one',
+            'give directions in a street',
+            'describe a place'],
+    days: [
+      { lesson: 'nt-localizacion-a1' },
+      { lesson: 'dc-deixis-espacial-a1' },
+      { verbs: ['mirar', 'escuchar', 'ayudar', 'usar', 'estudiar'] },
+      { lesson: 'nt-movimiento-estabilidad-a1' },
+      { practice: true },
+      { lesson: 'gn-describir-lugar-a1' },
+      { lesson: 'task-direcciones' },
+    ] },
+
+  { unit: 'a2-u17', band: 'A1', title: 'Have you ever…?',
+    goal: 'I can talk about experience — what I have and have not done.',
+    canDo: ['use the present perfect for experience',
+            'use ya and todavía no',
+            'form the irregular participles',
+            'switch to the preterite when asked when'],
+    days: [
+      { lesson: 'gr-preterito-perfecto-a2' },
+      { verbs: ['imaginar', 'dudar', 'notar', 'observar', 'comparar'] },
+      { lesson: 'nt-anterioridad-a2' },
+      { lesson: 'nt-existencia-inexistencia-a2' },
+      { practice: true },
+      { lesson: 'task-a2-experiencia' },
+    ] },
+
+  { unit: 'a1-u09', band: 'A1', title: 'Your day',
+    goal: 'I can describe my daily routine and say how often I do things.',
+    canDo: ['use reflexive verbs with their pronoun',
+            'say when and how often',
+            'talk about a whole day in order',
+            'use the present for habits'],
+    days: [
+      { lesson: 'gr-pronombre-se-a1' },
+      { lesson: 'gr-presente-indicativo-valores-a1' },
+      { verbs: ['preguntar', 'contestar', 'cocinar', 'lavar', 'limpiar'] },
+      { lesson: 'gr-adverbios-lugar-tiempo-cantidad-a1' },
+      { practice: true },
+      { lesson: 'nt-duracion-transcurso-a1' },
+      { lesson: 'task-rutina' },
+    ] },
+
+
+  { unit: 'a1-u10', band: 'A1', title: 'Want, need, ask for',
+    goal: 'I can say what I want, what I need and what I have to do — and ask for help.',
+    canDo: ['use a verb plus an infinitive',
+            'say what something is for with para',
+            'correct someone and say I do not know',
+            'ask three kinds of favour'],
+    days: [
+      { lesson: 'gr-infinitivo-usos-a1' },
+      { lesson: 'gr-oraciones-finales-a1' },
+      { verbs: ['ordenar', 'preparar', 'cuidar', 'aprender', 'subir'] },
+      { lesson: 'fn-corregir-informacion-a1' },
+      { practice: true },
+      { lesson: 'task-pedir' },
+    ] },
+
+  /* The third canDo used to read "replace a noun with lo, la, los, las". No
+   * lesson in this unit teaches object pronouns — gr-objeto-directo-a1 teaches
+   * the personal a — and they are not reached until a2-u18 on day 123. The
+   * promise came from the PCIC inventory line "El objeto directo" rather than
+   * from the day's content. See CURRICULUM_AUDIT.md §4.3. */
+  { unit: 'a1-u11', band: 'A1', title: 'Join it up',
+    goal: 'I can join short sentences so I sound connected rather than chopped up.',
+    canDo: ['link with y, pero, porque, también',
+            'use que to join a noun to a clause',
+            'put the personal a in front of a specific person',
+            'say how much with poco and mucho'],
+    days: [
+      { lesson: 'dc-conectores-a1' },
+      { lesson: 'gr-relativo-que-a1' },
+      { verbs: ['bajar', 'correr', 'caminar', 'viajar', 'visitar'] },
+      { lesson: 'gr-objeto-directo-a1' },
+      { practice: true },
+      { lesson: 'gr-cuantificadores-no-universales-a1' },
+      { lesson: 'task-contar' },
+    ] },
+
+  { unit: 'a1-u12', band: 'A1', title: 'The words behind the words',
+    goal: 'I understand why Spanish nouns have a gender, and I can find my own agreement mistakes.',
+    canDo: ['explain why a noun is el or la',
+            'form plurals on article, noun and adjective',
+            'use the definite article where English drops it',
+            'correct my own earlier writing'],
+    days: [
+      { lesson: 'gender-articles' },
+      { lesson: 'gr-genero-sustantivos-a1' },
+      { verbs: ['invitar', 'cantar', 'bailar', 'nadar', 'cambiar'] },
+      { lesson: 'gr-numero-sustantivos-a1' },
+      { lesson: 'gr-articulo-definido-a1' },
+      { practice: true },
+      { lesson: 'task-revisar' },
+    ] },
+
+  { unit: 'a1-u13', band: 'A1', title: 'Everyday writing',
+    goal: 'I can write the short texts people actually send.',
+    canDo: ['write a message cancelling a plan',
+            'open and close an email correctly',
+            'leave a note somebody can act on',
+            'write a postcard'],
+    days: [
+      { lesson: 'gn-generos-escritos-a1' },
+      { verbs: ['ganar', 'gastar', 'ahorrar', 'firmar', 'reservar'] },
+      { verbs: ['alquilar', 'olvidar', 'explicar', 'enseñar', 'aceptar'] },
+      { practice: true },
+      { lesson: 'task-escribir' },
+    ] },
+
+  /* ---- A2 · 104 days · starts at index 94 ------------------------------- */
+
+
+  { unit: 'a2-u15', band: 'A2', title: 'How things used to be',
+    goal: 'I can describe how things were and what I used to do.',
+    canDo: ['use the imperfect for habits and descriptions',
+            'know the only three irregulars',
+            'say when something lasted',
+            'say how often it happened'],
+    days: [
+      { lesson: 'imperfecto' },
+      { verbs: ['formar', 'tratar', 'resultar', 'señalar', 'indicar'] },
+      { lesson: 'nt-localizacion-tiempo-a2' },
+      { lesson: 'nt-frecuencia-a2' },
+      { practice: true },
+      { lesson: 'task-a2-antes' },
+    ] },
+
+  { unit: 'a2-u16', band: 'A2', title: 'Telling a story',
+    goal: 'I can tell an anecdote with both a background and a sequence of events.',
+    canDo: ['choose preterite or imperfect by what I mean',
+            'set a scene before anything happens',
+            'interrupt an ongoing action with cuando',
+            'structure a story from opening to close'],
+    days: [
+      { lesson: 'preterite-imperfect' },
+      { verbs: ['ocupar', 'asegurar', 'expresar', 'comentar', 'opinar'] },
+      { lesson: 'gn-narrar-anecdota-a2' },
+      { lesson: 'dc-estructuradores-a2' },
+      { practice: true },
+      { lesson: 'task-a2-anecdota' },
+    ] },
+
+
+  { unit: 'a2-u18', band: 'A2', title: 'It, him, her, them',
+    goal: 'I can stop repeating the noun.',
+    canDo: ['replace a direct object with lo, la, los, las',
+            'replace an indirect object with le, les',
+            'combine them as se lo',
+            'put a pronoun in the right place'],
+    days: [
+      { lesson: 'gr-objeto-indirecto-a2' },
+      { verbs: ['resumir', 'anunciar', 'publicar', 'celebrar', 'organizar'] },
+      { lesson: 'gr-pronombres-atonos-a2' },
+      { lesson: 'gr-pronombres-tonicos-a2' },
+      { practice: true },
+      { lesson: 'gr-posesivos-tonicos-a2' },
+      { lesson: 'task-a2-pronombres' },
+    ] },
+
+  { unit: 'a2-u19', band: 'A2', title: 'Asking nicely',
+    goal: 'I can make the same request from blunt to very polite, and refuse without offence.',
+    canDo: ['form the affirmative imperative',
+            'climb the politeness scale with poder and the conditional',
+            'say no with es que',
+            'give clear instructions'],
+    days: [
+      { lesson: 'gr-imperativo-forma-a2' },
+      { verbs: ['participar', 'colaborar', 'reciclar', 'contaminar', 'reparar'] },
+      { lesson: 'fn-atenuar-orden-a2' },
+      { lesson: 'fn-acceder-peticion-a2' },
+      { practice: true },
+      { lesson: 'dc-atenuacion-1apersona-a2' },
+      { lesson: 'gn-instrucciones-a2' },
+      { lesson: 'task-a2-pedir' },
+    ] },
+
+  { unit: 'a2-u20', band: 'A2', title: 'How are you feeling?',
+    goal: 'I can react to good and bad news the way a person actually does.',
+    canDo: ['ask how somebody is and mean it',
+            'react at the right size',
+            'congratulate and sympathise',
+            'agree and value what someone says'],
+    days: [
+      { lesson: 'fn-preguntar-estado-animo-a2' },
+      { verbs: ['solicitar', 'entregar', 'cobrar', 'reclamar', 'vender'] },
+      { lesson: 'fn-felicitar-a2' },
+      { lesson: 'fn-preguntar-deseos-a2' },
+      { practice: true },
+      { lesson: 'fn-acuerdo-a2' },
+      { lesson: 'task-a2-animo' },
+    ] },
+
+  { unit: 'a2-u21', band: 'A2', title: 'Comparing',
+    goal: 'I can compare two things and justify which I would pick.',
+    canDo: ['use más que, menos que, tan como',
+            'use mejor, peor, mayor, menor',
+            'say what something is made of',
+            'describe two things against each other'],
+    days: [
+      { lesson: 'gr-comparativos-a2' },
+      { verbs: ['funcionar', 'durar', 'faltar', 'suceder', 'practicar'] },
+      { lesson: 'nt-cualidad-material-a2' },
+      { lesson: 'gn-describir-persona-a2' },
+      { practice: true },
+      { lesson: 'gn-describir-objeto-a2' },
+      { lesson: 'task-a2-comparar' },
+    ] },
+
+  { unit: 'a2-u22', band: 'A2', title: 'Getting things done',
+    goal: 'I can handle a phone call, a shop and a desk — including when something is wrong.',
+    canDo: ['open and close a phone call',
+            'say what is wrong with something I bought',
+            'ask for information I need',
+            'say what I know and do not know'],
+    days: [
+      { lesson: 'gn-conversacion-transaccional-a2' },
+      { verbs: ['entrenar', 'montar', 'aparcar', 'arrancar', 'frenar'] },
+      { lesson: 'fn-responder-telefono-a2' },
+      { lesson: 'fn-pedir-informacion-a2' },
+      { practice: true },
+      { lesson: 'fn-preguntar-preferencias-a2' },
+      { lesson: 'nt-necesidad-obligacion-a2' },
+      { lesson: 'fn-preguntar-conocimiento-a2' },
+      { lesson: 'task-a2-gestion' },
+    ] },
+
+  { unit: 'a2-u23', band: 'A2', title: 'Reasons and conditions',
+    goal: 'I can explain why I did something and what would have changed it.',
+    canDo: ['give a cause with porque and como',
+            'give a purpose with para',
+            'say what happens if',
+            'advise somebody else'],
+    days: [
+      { lesson: 'gr-causales-a2' },
+      { verbs: ['cruzar', 'doblar', 'girar', 'parar', 'avisar'] },
+      { lesson: 'por-para' },
+      { lesson: 'gr-condicionales-a2' },
+      { practice: true },
+      { lesson: 'fn-aconsejar-a2' },
+      { lesson: 'fn-proponer-sugerir-a2' },
+      { lesson: 'task-a2-razones' },
+    ] },
+
+  { unit: 'a2-u24', band: 'A2', title: 'Getting around',
+    goal: 'I can guide someone through a place and describe what is there.',
+    canDo: ['use dentro, fuera, alrededor, al fondo',
+            'measure a short distance in minutes',
+            'describe a route somebody could follow',
+            'introduce someone along the way'],
+    days: [
+      { lesson: 'nt-posicion-relativa-distancia-a2' },
+      { verbs: ['informar', 'consultar', 'confirmar', 'cancelar', 'retrasar'] },
+      { lesson: 'nt-movimiento-estabilidad-a2' },
+      { lesson: 'gn-describir-lugar-a2' },
+      { practice: true },
+      { lesson: 'fn-dirigirse-a2' },
+      { lesson: 'task-a2-sitio' },
+    ] },
+
+  { unit: 'a2-u25', band: 'A2', title: 'Writing it down',
+    goal: 'I can write at paragraph length — a review and a semi-formal email.',
+    canDo: ['use the gerund for two things at once',
+            'hold a text together for three paragraphs',
+            'open and close a semi-formal email',
+            'keep usted consistent'],
+    days: [
+      { lesson: 'gr-gerundio-a2' },
+      { verbs: ['adelantar', 'pesar', 'calcular', 'sumar', 'restar'] },
+      { lesson: 'gr-adverbios-circunstanciales-a2' },
+      { lesson: 'gn-generos-escritos-a2' },
+      { practice: true },
+      { lesson: 'gn-presentacion-publica-a2' },
+      { lesson: 'task-a2-escribir' },
+    ] },
+
+  { unit: 'a2-u26', band: 'A2', title: 'The grammar under it',
+    goal: 'I understand the machinery behind what I have been writing, and can correct my own work.',
+    canDo: ['explain the irregular present patterns',
+            'use the definite article where English drops it',
+            'handle todo, otro, demasiado, nada',
+            'find my own tense and pronoun errors'],
+    days: [
+      { lesson: 'gr-presente-irregular-a2' },
+      { verbs: ['conectar', 'navegar', 'actualizar', 'instalar', 'suspender'] },
+      { lesson: 'gr-articulo-definido-distribucion-a2' },
+      { lesson: 'gr-cuantificadores-a2' },
+      { practice: true },
+      { lesson: 'gr-interrogativos-exclamativos-a2' },
+      { lesson: 'gr-demostrativos-valores-a2' },
+      { verbs: ['aprobar', 'quejarse', 'enfadarse', 'alegrarse', 'preocuparse'] },
+      { lesson: 'task-a2-repaso' },
+    ] },
+
+  /* ---- B1 · 189 days · starts at index 198 ------------------------------- */
+
+  { unit: 'b1-u27', band: 'B1', title: 'What I think',
+    goal: 'I can state an opinion and say what I do NOT think.',
+    canDo: ['give an opinion and back it',
+            'use no creo que + subjunctive',
+            'say how certain I am',
+            'ask what someone else thinks'],
+    days: [
+      { lesson: 'gr-presente-subjuntivo-b1' },
+      { lesson: 'fn-dar-opinion-b1' },
+      { lesson: 'fn-certeza-evidencia-b1' },
+      { lesson: 'nt-certeza-realidad-b1' },
+      { practice: true },
+      { lesson: 'fn-estoy-de-acuerdo-b1' },
+      { lesson: 'nt-conformidad-correccion-precision-b1' },
+      { lesson: 'task-b1-opinion' },
+    ] },
+
+  { unit: 'b1-u28', band: 'B1', title: 'Agreeing and arguing',
+    goal: 'I can disagree without it becoming a row.',
+    canDo: ['agree in part before pushing back',
+            'put a counter-argument',
+            'show scepticism',
+            'correct with no… sino'],
+    days: [
+      { lesson: 'fn-aprobacion-desaprobacion-b1' },
+      { lesson: 'fn-posicionarse-b1' },
+      { lesson: 'fn-contraargumento-b1' },
+      { lesson: 'fn-preguntar-si-acuerdo-b1' },
+      { practice: true },
+      { lesson: 'fn-mostrar-escepticismo-b1' },
+      { lesson: 'dc-intensificar-acuerdo-desacuerdo-b1' },
+      { lesson: 'fn-respuesta-afirmativa-b1' },
+      { lesson: 'task-b1-debate' },
+    ] },
+
+  { unit: 'b1-u29', band: 'B1', title: 'Plans and predictions',
+    goal: 'I can talk about the future and guess about the present.',
+    canDo: ['use ir a and the simple future',
+            'use cuando + subjunctive for a future moment',
+            'guess with the future of conjecture',
+            'talk about events and when they happen'],
+    days: [
+      { lesson: 'futuro' },
+      { lesson: 'fn-expresar-planes-b1' },
+      { lesson: 'gr-temporales-b1' },
+      { lesson: 'gr-modalidad-b1' },
+      { practice: true },
+      { lesson: 'nt-acontecimiento-b1' },
+      { lesson: 'fn-proponer-sugerir-b1' },
+      { lesson: 'fn-aceptar-propuesta-b1' },
+      { lesson: 'fn-ofrecer-invitar-b1' },
+      { lesson: 'nt-puntualidad-retraso-b1' },
+      { lesson: 'nt-tiempo-referencias-futuro-pasado-presente-b1' },
+      { lesson: 'task-b1-planes' },
+    ] },
+
+  { unit: 'b1-u30', band: 'B1', title: 'Advice and what I would do',
+    goal: 'I can advise someone at three levels of directness.',
+    canDo: ['use the conditional to soften',
+            'say yo que tú / lo mejor sería',
+            'soften by shifting the tense',
+            'value something and ask for a valuation'],
+    days: [
+      { lesson: 'condicional' },
+      { lesson: 'fn-aconsejar-b1' },
+      { lesson: 'gr-condicionales-b1' },
+      { lesson: 'dc-atenuacion-b1' },
+      { practice: true },
+      { lesson: 'fn-valorar-b1' },
+      { lesson: 'fn-pedir-valoracion-b1' },
+      { lesson: 'task-b1-consejo' },
+    ] },
+
+  /* ---- Plans, then Advice ---------------------------------------------------
+   * The conditional is built on the future stem, and data/grammar-docs.js says
+   * so in as many words: "Same irregular stems as the future". Advice used to
+   * run 16 days AHEAD of Plans, so the lesson explained its own formation by
+   * pointing at a tense the learner would not meet for another fortnight — and
+   * it teaches `si + futuro` besides. js/lessons.js deliberately keeps the
+   * ladder half as the merge head for this pair so the future lands first; the
+   * order is READ FROM HERE, so that only takes effect once this file agrees.
+   *
+   * They are adjacent on purpose: you learn the future stems, and the next
+   * unit reuses them.
+   *
+   * Wanting moves to the far side rather than between the two, for two
+   * reasons: it keeps the future and the conditional touching, and its own
+   * `me gustaría` / `¿te apetecería?` are conditional forms, so parking it
+   * before the conditional lesson would strand two more of them. What is left
+   * before that lesson — podrías, me gustaría, deberías — the course has
+   * already been teaching as fixed politeness chunks since A2, which is the
+   * only way to teach A2 requests at all.
+   *
+   * It also reads better: wanting something runs straight into asking for it.
+   * -------------------------------------------------------------------------- */
+  { unit: 'b1-u31', band: 'B1', title: 'What I want from you',
+    goal: 'I can say what I want someone else to do.',
+    canDo: ['use que + subjunctive after wanting',
+            'express hope and wishes',
+            'ask what someone wants',
+            'say what is and is not possible'],
+    days: [
+      { lesson: 'gr-subordinadas-sustantivas-b1' },
+      { lesson: 'fn-expresar-deseos-b1' },
+      { lesson: 'fn-espero-esperanza-b1' },
+      { lesson: 'fn-preguntar-deseos-b1' },
+      { practice: true },
+      { lesson: 'fn-posibilidad-b1' },
+      { lesson: 'nt-necesidad-obligacion-b1' },
+      { lesson: 'task-b1-deseos' },
+    ] },
+
+  { unit: 'b1-u32', band: 'B1', title: 'Asking, refusing, forbidding',
+    goal: 'I can ask at four levels, refuse without offence, and forbid clearly.',
+    canDo: ['ask a favour, permission and an object',
+            'refuse with a reason',
+            'give a direct order and a negative one',
+            'forbid and warn'],
+    days: [
+      { lesson: 'fn-pedir-ayuda-b1' },
+      { practice: true },
+      { lesson: 'fn-responder-orden-b1' },
+      { lesson: 'fn-rechazar-b1' },
+      { lesson: 'fn-ordenar-directo-b1' },
+      { lesson: 'impneg' },
+      { lesson: 'fn-prohibir-b1' },
+      { lesson: 'fn-obligacion-necesidad-b1' },
+      { lesson: 'fn-habilidad-b1' },
+      { lesson: 'task-b1-pedir' },
+    ] },
+
+  { unit: 'b1-u33', band: 'B1', title: 'Good feelings',
+    goal: 'I can express pleasure, pride and affection at the right intensity.',
+    canDo: ['express joy, pride and affection',
+            'intensify without sounding sarcastic',
+            'say I am glad for someone',
+            'express amusement'],
+    days: [
+      { lesson: 'fn-contento-encantado-b1' },
+      { lesson: 'fn-me-alegro-b1' },
+      { lesson: 'fn-placer-diversion-b1' },
+      { lesson: 'fn-admiracion-orgullo-b1' },
+      { practice: true },
+      { lesson: 'fn-afecto-b1' },
+      { lesson: 'fn-tristeza-afliccion-b1' },
+      { lesson: 'fn-me-duele-b1' },
+      { lesson: 'task-b1-alegria' },
+    ] },
+
+  { unit: 'b1-u34', band: 'B1', title: 'When it goes wrong',
+    goal: 'I can express anger, worry and indifference — and calm someone else down.',
+    canDo: ['express anger and indignation',
+            'express fear and worry',
+            'express boredom and indifference',
+            'calm and reassure someone'],
+    days: [
+      { lesson: 'fn-enfado-indignacion-b1' },
+      { lesson: 'fn-miedo-ansiedad-preocupacion-b1' },
+      { lesson: 'fn-aversion-b1' },
+      { lesson: 'fn-aburrimiento-b1' },
+      { practice: true },
+      { lesson: 'fn-no-me-importa-b1' },
+      { lesson: 'fn-sorpresa-extraneza-b1' },
+      { lesson: 'fn-empatia-b1' },
+      { lesson: 'fn-tranquilizar-consolar-b1' },
+      { lesson: 'fn-animar-b1' },
+      { lesson: 'task-b1-enfado' },
+    ] },
+
+  { unit: 'b1-u35', band: 'B1', title: 'Likes and how you are',
+    goal: 'I can talk about liking what other people do, and how I am feeling.',
+    canDo: ['use me gusta que + subjunctive',
+            'compare two preferences',
+            'describe physical sensations',
+            'ask and answer how things are going'],
+    days: [
+      { lesson: 'fn-expresar-gustos-b1' },
+      { lesson: 'fn-preguntar-gustos-b1' },
+      { lesson: 'fn-preferencia-b1' },
+      { lesson: 'fn-preguntar-preferencias-b1' },
+      { practice: true },
+      { lesson: 'fn-sensaciones-fisicas-b1' },
+      { lesson: 'fn-preguntar-estado-animo-b1' },
+      { lesson: 'fn-responder-estado-b1' },
+      { lesson: 'nt-evaluacion-valor-b1' },
+      { lesson: 'nt-exito-utilidad-importancia-b1' },
+      { lesson: 'task-b1-gustos' },
+    ] },
+
+  { unit: 'b1-u36', band: 'B1', title: 'Telling a longer story',
+    goal: 'I can tell a story that reaches back before its own beginning.',
+    canDo: ['use the pluperfect for an earlier past',
+            'structure a story in five parts',
+            'open, develop and close a narrative',
+            'keep track of who is who'],
+    days: [
+      { lesson: 'gr-pluscuamperfecto-b1' },
+      { lesson: 'gn-narrar-estructura-b1' },
+      { lesson: 'fn-introducir-tema-relato-b1' },
+      { lesson: 'fn-introducir-hecho-b1' },
+      { practice: true },
+      { lesson: 'fn-concluir-relato-b1' },
+      { lesson: 'dc-marcadores-discurso-b1' },
+      { lesson: 'dc-mantenimiento-referente-b1' },
+      { lesson: 'nt-ciclo-accion-b1' },
+      { lesson: 'nt-orientacion-orden-b1' },
+      { lesson: 'task-b1-relato' },
+    ] },
+
+  { unit: 'b1-u37', band: 'B1', title: 'Holding a conversation',
+    goal: 'I can keep a long conversation going without taking it over.',
+    canDo: ['signal that I am listening',
+            'interrupt without hijacking',
+            'hold the floor and hand it back',
+            'handle a transactional phone call'],
+    days: [
+      { lesson: 'fn-seguir-relato-interes-b1' },
+      { lesson: 'fn-interrumpir-b1' },
+      { lesson: 'fn-controlar-atencion-b1' },
+      { lesson: 'fn-has-oido-b1' },
+      { practice: true },
+      { lesson: 'fn-conocimiento-desconocimiento-b1' },
+      { lesson: 'gn-llamada-transaccional-b1' },
+      { lesson: 'fn-preguntar-persona-telefono-b1' },
+      { lesson: 'fn-pedir-informacion-b1' },
+      { lesson: 'dc-valores-ilocutivos-b1' },
+      { lesson: 'nt-reflexion-expresion-b1' },
+      { lesson: 'task-b1-conversar' },
+    ] },
+
+  { unit: 'b1-u38', band: 'B1', title: 'Describing at length',
+    goal: 'I can sustain a description for a paragraph.',
+    canDo: ['use que, quien and donde',
+            'identify with a relative clause',
+            'describe a person, a place and an object at B1 depth',
+            'add detail without starting a new sentence'],
+    days: [
+      { lesson: 'gr-relativas-b1' },
+      { lesson: 'gr-adverbios-relativos-b1' },
+      { lesson: 'fn-identificar-b1' },
+      { lesson: 'gn-describir-persona-b1' },
+      { practice: true },
+      { lesson: 'gn-describir-lugar-b1' },
+      { lesson: 'gn-describir-objeto-b1' },
+      { lesson: 'gr-pronombres-combinados-b1' },
+      { lesson: 'nt-cualidad-generalidad-b1' },
+      { lesson: 'nt-edad-vejez-b1' },
+      { lesson: 'nt-localizacion-posicion-b1' },
+      { lesson: 'nt-distancia-movimiento-b1' },
+      { lesson: 'task-b1-describir' },
+    ] },
+
+  { unit: 'b1-u39', band: 'B1', title: 'Joining ideas up',
+    goal: 'I can link ideas by cause, result, concession and comparison.',
+    canDo: ['give causes and results',
+            'concede with aunque and the ordinary form',
+            'compare with igual de and más de',
+            'use soler, volver a, dejar de'],
+    days: [
+      { lesson: 'gr-causales-b1' },
+      { lesson: 'gr-consecutivas-b1' },
+      { lesson: 'gr-concesivas-b1' },
+      { lesson: 'gr-comparativas-b1' },
+      { practice: true },
+      { lesson: 'gr-perifrasis-verbales-b1' },
+      { lesson: 'nt-cantidad-numerica-relativa-b1' },
+      { lesson: 'nt-aumento-proporcion-grado-b1' },
+      { lesson: 'task-b1-unir' },
+    ] },
+
+  { unit: 'b1-u40', band: 'B1', title: 'Courtesy and celebrations',
+    goal: 'I can handle the social moments where the formula is visible.',
+    canDo: ['congratulate and respond',
+            'wish someone well and propose a toast',
+            'apologise with a reason and respond',
+            'reproach gently'],
+    days: [
+      { lesson: 'fn-felicitar-b1' },
+      { lesson: 'fn-responder-felicitaciones-b1' },
+      { lesson: 'fn-buenos-deseos-b1' },
+      { lesson: 'fn-brindis-b1' },
+      { practice: true },
+      { lesson: 'fn-saludar-responder-b1' },
+      { lesson: 'fn-disculparse-b1' },
+      { lesson: 'fn-responder-disculpa-b1' },
+      { lesson: 'fn-reprochar-b1' },
+      { lesson: 'fn-advertir-b1' },
+      { lesson: 'task-b1-cortesia' },
+    ] },
+
+  { unit: 'b1-u41', band: 'B1', title: 'Writing at length',
+    goal: 'I can write a composition with a thesis, a development and a conclusion.',
+    canDo: ['structure an argument across four paragraphs',
+            'raise and answer a counter-argument',
+            'write a personal letter and a public talk',
+            'close a written text properly'],
+    days: [
+      { lesson: 'gn-composicion-escrita-b1' },
+      { lesson: 'gn-exponer-tema-b1' },
+      { lesson: 'gn-carta-personal-b1' },
+      { lesson: 'gn-presentacion-publica-b1' },
+      { practice: true },
+      { lesson: 'fn-despedida-escrita-b1' },
+      { lesson: 'fn-destacar-elemento-b1' },
+      { lesson: 'gn-generos-escritos-b1' },
+      { lesson: 'task-b1-escribir' },
+    ] },
+
+  { unit: 'b1-u42', band: 'B1', title: 'If things had been different',
+    goal: 'I can talk about what is not the case, and what would have been.',
+    canDo: ['say an if that is not so: si + the -ra form + the -ría form',
+            'guess and regret with the future perfect and the conditional perfect',
+            'match the tenses across the comma',
+            'use the imperative beyond the order'],
+    days: [
+      { lesson: 'impsubj' },
+      { lesson: 'futperf' },
+      { lesson: 'condperf' },
+      { lesson: 'perfsubj' },
+      { practice: true },
+      { lesson: 'gr-imperativo-valores-b1' },
+      { lesson: 'task-b1-hipotesis' },
+    ] },
+
+
+  { unit: 'b1-u43', band: 'B1', title: 'Describing the physical world',
+    goal: 'I can describe an object precisely — its size, shape, material, state and whether it is available.',
+    canDo: ['measure with medir and estar a',
+            'say what something is made of and what state it is in',
+            'tell lleno/vacío (contents) from libre/ocupado (availability)',
+            'say whether something fits'],
+    days: [
+      { lesson: 'nt-medidas-tamano-superficie-b1' },
+      { lesson: 'nt-formas-materia-b1' },
+      { lesson: 'nt-temperatura-velocidad-volumen-b1' },
+      { lesson: 'nt-existencia-disponibilidad-b1' },
+      { lesson: 'nt-acabado-b1' },
+      { practice: true },
+      { lesson: 'task-b1-fisico' },
+    ] },
+
+  /* ---- B2 · 169 days · starts at index 387 ------------------------------- */
+
+  { unit: 'b2-u44', band: 'B2', title: 'The register ladder',
+    goal: 'I can say the same thing in five registers and know which room each belongs to.',
+    canDo: ['place an expression on the register scale',
+            'commit more or less of myself deliberately',
+            'hedge before or after a claim',
+            'hear when a register is wrong'],
+    days: [
+      { lesson: 'fn-acuerdo-b2' },
+      { lesson: 'fn-dar-opinion-b2' },
+      { lesson: 'dc-atenuacion-b2' },
+      { lesson: 'fn-expresar-certeza-b2' },
+      { practice: true },
+      { lesson: 'nt-certeza-b2' },
+      { lesson: 'fn-aprobacion-desaprobacion-b2' },
+      { lesson: 'nt-adecuacion-b2' },
+      { lesson: 'nt-correccion-precision-b2' },
+      { lesson: 'task-b2-registro' },
+    ] },
+
+  { unit: 'b2-u45', band: 'B2', title: 'Building an argument',
+    goal: 'I can argue a case with evidence, a counter-argument and a reservation.',
+    canDo: ['state a thesis and support it',
+            'attribute evidence to a source',
+            'answer the strongest objection',
+            'close with a genuine reservation'],
+    days: [
+      { lesson: 'gn-argumentativa-b2' },
+      { lesson: 'gn-composicion-argumentativa-b2' },
+      { lesson: 'dc-marcadores-discurso-b2' },
+      { lesson: 'gr-adverbios-evaluativos-b2' },
+      { practice: true },
+      { lesson: 'gr-adverbios-enunciacion-b2' },
+      { lesson: 'nt-importancia-normalidad-b2' },
+      { lesson: 'nt-generalidad-especificidad-b2' },
+      { lesson: 'nt-cualidad-general-b2' },
+      { lesson: 'gr-subordinadas-sustantivas-b2' },
+      { lesson: 'task-b2-argumento' },
+    ] },
+
+  { unit: 'b2-u46', band: 'B2', title: 'What would have happened',
+    goal: 'I can talk about what did not happen, and hedge about what probably did.',
+    canDo: ['use the compound subjunctives',
+            'use the conditional and future of conjecture',
+            'match tenses across a si clause',
+            'say how sure I am inside the verb'],
+    days: [
+      { lesson: 'gr-pluscuamsubj-b2' },
+      { lesson: 'gr-condicional-compuesto-b2' },
+      { lesson: 'gr-futuro-perfecto-b2' },
+      { lesson: 'gr-perfsubj-valores-b2' },
+      { practice: true },
+      { lesson: 'gr-impsubj-valores-b2' },
+      { lesson: 'fn-posibilidad-b2' },
+      { lesson: 'nt-necesidad-contingencia-b2' },
+      { lesson: 'nt-permanencia-b2' },
+      { lesson: 'nt-existencia-b2' },
+      { lesson: 'task-b2-hipotesis' },
+    ] },
+
+  { unit: 'b2-u47', band: 'B2', title: 'Emotion, measured',
+    goal: 'I can express emotion with precision rather than volume.',
+    canDo: ['choose intensity deliberately',
+            'qualify or walk back a reaction',
+            'express relief, regret and resignation',
+            'console and encourage'],
+    days: [
+      { lesson: 'fn-enfado-indignacion-b2' },
+      { lesson: 'fn-alegria-satisfaccion-b2' },
+      { lesson: 'fn-tristeza-afliccion-b2' },
+      { lesson: 'fn-miedo-ansiedad-b2' },
+      { practice: true },
+      { lesson: 'fn-expresar-alivio-b2' },
+      { lesson: 'fn-empatia-b2' },
+      { lesson: 'fn-sorpresa-extraneza-b2' },
+      { lesson: 'nt-grado-b2' },
+      { lesson: 'nt-interes-b2' },
+      { lesson: 'nt-evaluacion-general-b2' },
+      { lesson: 'task-b2-emocion' },
+    ] },
+
+  { unit: 'b2-u48', band: 'B2', title: 'Reading the news',
+    goal: 'I can follow journalistic Spanish and say what I make of it.',
+    canDo: ['handle figures, rises and proportions',
+            'attribute and distance a claim',
+            'read the conditional of unverified report',
+            'summarise without copying'],
+    days: [
+      { lesson: 'nt-cantidad-numerica-b2' },
+      { lesson: 'nt-aumento-disminucion-b2' },
+      { lesson: 'nt-proporcion-b2' },
+      { lesson: 'nt-cantidad-relativa-b2' },
+      { practice: true },
+      { lesson: 'gn-expositiva-b2' },
+      { lesson: 'nt-realidad-ficcion-b2' },
+      { lesson: 'nt-acontecimiento-b2' },
+      { lesson: 'nt-exito-logro-b2' },
+      { lesson: 'nt-valor-precio-b2' },
+      { lesson: 'nt-referencias-generales-b2' },
+      { lesson: 'nt-localizacion-tiempo-b2' },
+      { lesson: 'task-b2-noticia' },
+    ] },
+
+  { unit: 'b2-u49', band: 'B2', title: 'Reporting what people said',
+    goal: 'I can report speech and let my choice of verb carry my judgement.',
+    canDo: ['backshift consistently',
+            'choose a speech verb that evaluates',
+            'use covert quotation',
+            'keep track of who said what'],
+    days: [
+      { lesson: 'dc-cita-b2' },
+      { lesson: 'nt-expresion-verbal-b2' },
+      { lesson: 'dc-perspectiva-temporal-b2' },
+      { lesson: 'dc-mantenimiento-referente-b2' },
+      { practice: true },
+      { lesson: 'fn-dar-informacion-b2' },
+      { lesson: 'fn-conocimiento-b2' },
+      { lesson: 'nt-reflexion-conocimiento-b2' },
+      { lesson: 'nt-anticipacion-b2' },
+      { lesson: 'nt-simultaneidad-b2' },
+      { lesson: 'nt-repeticion-b2' },
+      { lesson: 'task-b2-citar' },
+    ] },
+
+  { unit: 'b2-u50', band: 'B2', title: 'Putting the weight where you want it',
+    goal: 'I can move the emphasis in a sentence without changing the words.',
+    canDo: ['front an element with a doubled pronoun',
+            'build a cleft with fue… quien',
+            'use lo de and lo que pasa es que',
+            'intensify without repeating muy'],
+    days: [
+      { lesson: 'dc-rematizacion-tematizacion-b2' },
+      { lesson: 'dc-focalizacion-b2' },
+      { lesson: 'dc-intensificacion-b2' },
+      { lesson: 'gr-orden-interrogativos-b2' },
+      { practice: true },
+      { lesson: 'dc-negacion-b2' },
+      { lesson: 'gr-exclamativos-b2' },
+      { lesson: 'dc-entonacion-b2' },
+      { lesson: 'nt-presencia-ausencia-b2' },
+      { lesson: 'nt-disponibilidad-b2' },
+      { lesson: 'task-b2-enfasis' },
+    ] },
+
+  { unit: 'b2-u51', band: 'B2', title: 'Describing precisely',
+    goal: 'I can describe properties, quantities and processes exactly.',
+    canDo: ['replace vague adjectives with precise ones',
+            'describe texture, consistency and state',
+            'give measurements and proportions',
+            'describe a process somebody could follow'],
+    days: [
+      { lesson: 'nt-consistencia-resistencia-b2' },
+      { lesson: 'nt-textura-acabado-b2' },
+      { lesson: 'nt-materia-b2' },
+      { lesson: 'nt-formas-figuras-b2' },
+      { practice: true },
+      { lesson: 'nt-peso-b2' },
+      { lesson: 'nt-humedad-sequedad-b2' },
+      { lesson: 'nt-color-b2' },
+      { lesson: 'nt-limpieza-b2' },
+      { lesson: 'gn-descriptiva-objetos-b2' },
+      { lesson: 'nt-visibilidad-vision-b2' },
+      { lesson: 'nt-audibilidad-audicion-b2' },
+      { lesson: 'nt-sabor-olor-b2' },
+      { lesson: 'nt-origen-b2' },
+      { lesson: 'nt-edad-vejez-b2' },
+      { lesson: 'task-b2-precision' },
+    ] },
+
+  { unit: 'b2-u52', band: 'B2', title: 'Formal writing',
+    goal: 'I can write a formal letter that reads as formal rather than pompous.',
+    canDo: ['open and close a formal letter correctly',
+            'use impersonal and passive constructions',
+            'state facts with specifics',
+            'make a request or a complaint that works'],
+    days: [
+      { lesson: 'gn-carta-solicitud-trabajo-b2' },
+      { lesson: 'gn-reclamacion-b2' },
+      { lesson: 'gn-generos-escritos-b2' },
+      { lesson: 'gr-pronombre-personal-b2' },
+      { practice: true },
+      { lesson: 'fn-pedir-ayuda-b2' },
+      { lesson: 'fn-pedir-permiso-b2' },
+      { lesson: 'fn-falta-obligacion-b2' },
+      { lesson: 'nt-utilidad-uso-b2' },
+      { lesson: 'nt-capacidad-competencia-b2' },
+      { lesson: 'nt-facilidad-b2' },
+      { lesson: 'gr-complemento-preposicional-regido-b2' },
+      { lesson: 'task-b2-formal' },
+    ] },
+
+  { unit: 'b2-u53', band: 'B2', title: 'Difficult conversations',
+    goal: 'I can manage a conversation where we want different things.',
+    canDo: ['soften before bad news',
+            'hold the floor and hand it back',
+            'concede without collapsing',
+            'reach an agreed outcome'],
+    days: [
+      { lesson: 'fn-introducir-nuevo-tema-b2' },
+      { lesson: 'fn-solicitar-comienzo-relato-b2' },
+      { lesson: 'fn-proponer-sugerir-b2' },
+      { lesson: 'fn-aconsejar-b2' },
+      { practice: true },
+      { lesson: 'fn-disculparse-b2' },
+      { lesson: 'fn-saludar-responder-b2' },
+      { lesson: 'fn-preguntar-persona-telefono-b2' },
+      { lesson: 'gn-llamada-transaccional-b2' },
+      { lesson: 'gn-generos-orales-b2' },
+      { lesson: 'nt-orientacion-direccion-b2' },
+      { lesson: 'nt-orden-b2' },
+      { lesson: 'task-b2-conversar' },
+    ] },
+
+  { unit: 'b2-u54', band: 'B2', title: 'The band in review',
+    goal: 'I can take my own writing up and down the register ladder.',
+    canDo: ['apply the ladder to my own work',
+            'keep facts constant across registers',
+            'change word order and hedging, not just words',
+            'hear when formal has become pompous'],
+    days: [
+      { lesson: 'gn-narrativa-b2' },
+      { lesson: 'gn-descriptiva-personas-b2' },
+      { lesson: 'gn-descriptiva-lugares-b2' },
+      { lesson: 'gn-presentacion-publica-b2' },
+      { practice: true },
+      { lesson: 'fn-agradecer-b2' },
+      { lesson: 'fn-deseos-b2' },
+      { lesson: 'fn-habilidad-b2' },
+      { lesson: 'fn-expresar-recordar-b2' },
+      { lesson: 'fn-sensaciones-fisicas-b2' },
+      { lesson: 'fn-identificar-b2' },
+      { lesson: 'nt-localizacion-b2' },
+      { lesson: 'nt-posicion-relativa-b2' },
+      { lesson: 'nt-posicion-absoluta-b2' },
+      { lesson: 'nt-distancia-b2' },
+      { lesson: 'nt-movimiento-estabilidad-b2' },
+      { lesson: 'task-b2-repaso' },
+    ] },
+
+  { unit: 'deep-complementos', band: 'B2', optional: true,
+    triggers: ['lesson:gr-complementos-sa-b2'], title: 'What a noun and an adjective can carry',
+    goal: 'I can attach complements to nouns and adjectives correctly — difícil de, interesado en.',
+    canDo: ['use the fixed preposition an adjective demands',
+            'tell a restrictive complement from a non-restrictive one'],
+    days: [
+      { lesson: 'gr-complementos-sa-b2' },
+      { lesson: 'gr-complementos-nominales-b2' },
+    ] },
+
+  { unit: 'deep-relativas', band: 'B2', optional: true,
+    triggers: ['lesson:gr-relativas-b1', 'lesson:gr-relativo-que-a1', 'lesson:gr-adverbios-relativos-b1'], title: 'Relative clauses, the whole system',
+    goal: 'I can choose between que, quien, el que and donde, and know when a comma changes the meaning.',
+    canDo: ['choose the relative the preposition allows',
+            'use the comma that adds rather than selects',
+            'use donde and como as relatives'],
+    days: [
+      { lesson: 'gr-que-explicativo-b2' },
+      { lesson: 'gr-subordinadas-relativas-tipos-b2' },
+      { lesson: 'gr-el-que-relativos-b2' },
+      { lesson: 'gr-quien-quienes-b2' },
+      { lesson: 'gr-relativo-donde-b2' },
+      { lesson: 'gr-subordinadas-lugar-b2' },
+      { lesson: 'gr-subordinadas-modo-b2' },
+    ] },
+
+  { unit: 'deep-adverbios', band: 'B2', optional: true,
+    triggers: ['lesson:gr-adverbios-modo-cantidad-b1', 'lesson:gr-adverbios-lugar-tiempo-cantidad-a1'], title: 'Adverbs, quantifiers and where they sit',
+    goal: 'I can place an adverb so it modifies what I intend, and use the quantifier系 precisely.',
+    canDo: ['place an adverb by what it modifies',
+            'use partitive and multiplicative numerals',
+            'handle cualquier/cualquiera'],
+    days: [
+      { lesson: 'gr-adverbios-nucleares-b2' },
+      { lesson: 'gr-adverbios-frecuencia-topico-b2' },
+      { lesson: 'gr-cuantificadores-numerales-cualquier-b2' },
+      { lesson: 'gr-nucleo-verbal-copulativos-b2' },
+    ] },
+
+  { unit: 'deep-formas-no-personales', band: 'B2', optional: true,
+    triggers: ['lesson:gr-formas-no-personales-b1', 'lesson:gr-gerundio-a2', 'lesson:gr-infinitivo-usos-a1', 'tense:imperativo', 'tense:impneg'], title: 'Infinitive, gerund and participle beyond the basics',
+    goal: 'I can use the non-finite forms independently, and the imperative for things other than orders.',
+    canDo: ['use an infinitive or gerund as a clause',
+            'recognise the imperative used to soften, concede or threaten'],
+    days: [
+      { lesson: 'gr-formas-no-personales-b2' },
+      { lesson: 'gr-imperativo-valores-b2' },
+    ] },
+
+  { unit: 'deep-discurso', band: 'B2', optional: true,
+    triggers: ['lesson:dc-valores-ilocutivos-b1', 'lesson:dc-marcadores-discurso-b1'], title: 'Deixis, implicature and fixed metaphor',
+    goal: 'I can hear what a question is doing besides asking, and read the fixed metaphors natives reach for.',
+    canDo: ['read an echo question and a rhetorical one',
+            'use the mitigating se',
+            'recognise fixed animal and change metaphors'],
+    days: [
+      { lesson: 'dc-deixis-b2' },
+      { lesson: 'dc-valores-ilocutivos-b2' },
+      { lesson: 'dc-significados-interpretados-b2' },
+    ] },
+
+  /* ---- C1 · 229 days · starts at index 556 ------------------------------- */
+
+  { unit: 'c1-u55', band: 'C1', title: 'Idiom and the body',
+    goal: 'I can tell a story entirely in idiom, the way a native would.',
+    canDo: ['reach for the idiom before the neutral adjective',
+            'use the body to express state and reaction',
+            'hear when correct Spanish is Spanish nobody says'],
+    days: [
+      { lesson: 'fn-afecto-sensaciones-c1' },
+      { lesson: 'nt-temperatura-c1' },
+      { lesson: 'nt-sabor-c1' },
+      { lesson: 'nt-olor-c1' },
+      { practice: true },
+      { lesson: 'nt-textura-c1' },
+      { lesson: 'nt-visibilidad-vision-c1' },
+      { lesson: 'nt-audibilidad-audicion-c1' },
+      { lesson: 'fn-hartazgo-enfado-c1' },
+      { lesson: 'nt-color-c1' },
+      { lesson: 'nt-consistencia-resistencia-c1' },
+      { lesson: 'nt-humedad-sequedad-c1' },
+      { lesson: 'nt-acabado-c1' },
+      { lesson: 'nt-accesibilidad-limpieza-c1' },
+      { lesson: 'nt-edad-vejez-c1' },
+      { lesson: 'task-c1-idiom' },
+    ] },
+
+  { unit: 'c1-u56', band: 'C1', title: 'Irony and implicature',
+    goal: 'I can say the opposite of what I mean, and hear it done to me.',
+    canDo: ['mark irony so it is not mistaken for a lie',
+            'read an echo question and a rhetorical one',
+            'use the suspended ending'],
+    days: [
+      { lesson: 'dc-ironia-c1' },
+      { lesson: 'dc-valores-ilocutivos-c1' },
+      { lesson: 'dc-metaforas-c1' },
+      { lesson: 'dc-intensificacion-c1' },
+      { practice: true },
+      { lesson: 'fn-escepticismo-contraargumento-c1' },
+      { lesson: 'fn-sorpresa-admiracion-c1' },
+      { lesson: 'nt-atractivo-calidad-c1' },
+      { lesson: 'nt-normalidad-c1' },
+      { lesson: 'nt-interes-c1' },
+      { lesson: 'fn-estado-general-cosas-c1' },
+      { lesson: 'task-c1-ironia' },
+    ] },
+
+  { unit: 'c1-u57', band: 'C1', title: 'Saying it without owning it',
+    goal: 'I can criticise firmly without attributing the criticism to myself.',
+    canDo: ['attribute a claim to nobody',
+            'soften a disagreement without conceding it',
+            'negate by implication'],
+    days: [
+      { lesson: 'dc-citas-encubiertas-c1' },
+      { lesson: 'dc-atenuacion-c1' },
+      { lesson: 'dc-atenuacion-dialogica-c1' },
+      { lesson: 'dc-negacion-c1' },
+      { practice: true },
+      { lesson: 'dc-estilo-indirecto-c1' },
+      { lesson: 'dc-reformuladores-c1' },
+      { lesson: 'fn-expresar-desacuerdo-c1' },
+      { lesson: 'fn-expresar-acuerdo-c1' },
+      { lesson: 'fn-pedir-confirmacion-c1' },
+      { lesson: 'fn-confirmar-informacion-previa-c1' },
+      { lesson: 'fn-conocimiento-desconocimiento-c1' },
+      { lesson: 'nt-certeza-incertidumbre-c1' },
+      { lesson: 'nt-realidad-ficcion-c1' },
+      { lesson: 'task-c1-decirlo' },
+    ] },
+
+  { unit: 'c1-u58', band: 'C1', title: 'Institutional Spanish',
+    goal: 'I can write in institutional register without sounding like a form.',
+    canDo: ['nominalise where Spanish nominalises',
+            'carry a concession in the syntax',
+            'hold one register for a whole page'],
+    days: [
+      { lesson: 'gn-carta-comercial-c1' },
+      { lesson: 'gn-trabajo-academico-c1' },
+      { lesson: 'gn-generos-escritos-c1' },
+      { lesson: 'fn-saludar-c1' },
+      { practice: true },
+      { lesson: 'fn-felicitar-despedirse-c1' },
+      { lesson: 'fn-responder-saludo-dirigirse-c1' },
+      { lesson: 'gn-generos-orales-c1' },
+      { lesson: 'fn-pedir-informacion-c1' },
+      { lesson: 'fn-dar-informacion-c1' },
+      { lesson: 'gn-carta-reclamacion-c1' },
+      { lesson: 'gn-composicion-escrita-c1' },
+      { lesson: 'gn-presentacion-publica-c2' },
+      { lesson: 'fn-agradecer-pesame-c1' },
+      { lesson: 'fn-disculparse-responder-c1' },
+      { lesson: 'task-c1-formal' },
+    ] },
+
+  { unit: 'c1-u59', band: 'C1', title: 'The whole verb system at once',
+    goal: 'I can choose any tense or mood deliberately and say why.',
+    canDo: ['justify a tense by what it does, not by when it is',
+            'let the negation decide the mood',
+            'use the modal imperfect and the conjectural conditional'],
+    days: [
+      { lesson: 'gr-tiempos-indicativo-c1' },
+      { lesson: 'gr-tiempos-subjuntivo-c1' },
+      { lesson: 'dc-imperfecto-modal-c1' },
+      { lesson: 'dc-indefinido-perfecto-c1' },
+      { practice: true },
+      { lesson: 'gr-nucleo-verbal-c1' },
+      { lesson: 'gr-formas-no-personales-c1' },
+      { lesson: 'gr-imperativo-c1' },
+      { lesson: 'fn-hipotesis-posibilidad-c1' },
+      { lesson: 'fn-obligacion-necesidad-c1' },
+      { lesson: 'nt-necesidad-obligacion-c1' },
+      { lesson: 'fn-orden-instruccion-c1' },
+      { lesson: 'fn-repetir-orden-c1' },
+      { lesson: 'fn-responder-orden-peticion-c1' },
+      { lesson: 'fn-permiso-prohibicion-c1' },
+      { lesson: 'fn-favor-objetos-ayuda-c1' },
+      { lesson: 'task-c1-verbos' },
+    ] },
+
+  { unit: 'c1-u60', band: 'C1', title: 'Emotion at native pitch',
+    goal: 'I can express an emotion that has no single word for it.',
+    canDo: ['express emotion by understatement',
+            'express it through the body',
+            'use the fixed expressions of regret'],
+    days: [
+      { lesson: 'fn-arrepentimiento-verguenza-c1' },
+      { lesson: 'fn-tristeza-placer-c1' },
+      { lesson: 'fn-miedo-nerviosismo-c1' },
+      { lesson: 'fn-estado-animo-alegria-c1' },
+      { practice: true },
+      { lesson: 'fn-decepcion-resignacion-c1' },
+      { lesson: 'fn-empatia-alivio-esperanza-c1' },
+      { lesson: 'fn-gustos-aversion-c1' },
+      { lesson: 'fn-tranquilizar-animar-c1' },
+      { lesson: 'fn-preferencia-indiferencia-c1' },
+      { lesson: 'fn-deseos-planes-c1' },
+      { lesson: 'fn-recordar-olvidar-c1' },
+      { lesson: 'fn-reprochar-ofrecerse-c1' },
+      { lesson: 'nt-reflexion-conocimiento-c1' },
+      { lesson: 'nt-expresion-verbal-c1' },
+      { lesson: 'task-c1-emocion' },
+    ] },
+
+  { unit: 'c1-u61', band: 'C1', title: 'The argumentative essay',
+    goal: 'I can sustain an argument for a thousand words.',
+    canDo: ['open on the controversy rather than the conclusion',
+            'put the counter-case as its advocates would',
+            'end on a reservation that genuinely qualifies'],
+    days: [
+      { lesson: 'gn-argumentativa-c1' },
+      { lesson: 'gn-argumentativa-conectores-c1' },
+      { lesson: 'gn-expositiva-c1' },
+      { lesson: 'fn-pedir-dar-opinion-c1' },
+      { practice: true },
+      { lesson: 'fn-certeza-evidencia-c1' },
+      { lesson: 'fn-aprobacion-desaprobacion-c1' },
+      { lesson: 'fn-valorar-c1' },
+      { lesson: 'fn-proponer-ofrecer-confirmar-c1' },
+      { lesson: 'fn-aceptar-rechazar-propuesta-c1' },
+      { lesson: 'fn-aconsejar-advertir-amenazar-c1' },
+      { lesson: 'nt-importancia-c1' },
+      { lesson: 'nt-adecuacion-c1' },
+      { lesson: 'nt-aceptabilidad-c1' },
+      { lesson: 'nt-conformidad-c1' },
+      { lesson: 'nt-correccion-c1' },
+      { lesson: 'nt-generalidad-especificidad-c1' },
+      { lesson: 'nt-cualidad-general-c1' },
+      { lesson: 'task-c1-ensayo' },
+    ] },
+
+  { unit: 'c1-u62', band: 'C1', title: 'Precision',
+    goal: 'I can describe the physical and temporal world the way a native writer does.',
+    canDo: ['reach for the fixed expression over the adjective',
+            'give quantity loosely and exactly',
+            'place something in time with precision'],
+    days: [
+      { lesson: 'nt-medidas-generales-tamano-c1' },
+      { lesson: 'nt-peso-superficie-c1' },
+      { lesson: 'nt-volumen-capacidad-presion-c1' },
+      { lesson: 'nt-formas-figuras-c1' },
+      { practice: true },
+      { lesson: 'nt-materia-c1' },
+      { lesson: 'nt-proporcion-c1' },
+      { lesson: 'nt-precision-claridad-c1' },
+      { lesson: 'nt-localizacion-c1' },
+      { lesson: 'nt-cantidad-numerica-c1' },
+      { lesson: 'nt-cantidad-relativa-c1' },
+      { lesson: 'nt-aumento-disminucion-c1' },
+      { lesson: 'nt-grado-c1' },
+      { lesson: 'nt-referencias-generales-c1' },
+      { lesson: 'nt-localizacion-presente-c1' },
+      { lesson: 'nt-simultaneidad-c1' },
+      { lesson: 'nt-anterioridad-c1' },
+      { lesson: 'nt-posterioridad-c1' },
+      { lesson: 'nt-puntualidad-singularidad-c1' },
+      { lesson: 'nt-anticipacion-c1' },
+      { lesson: 'nt-retraso-c1' },
+      { lesson: 'nt-duracion-transcurso-c1' },
+      { lesson: 'nt-frecuencia-c1' },
+      { lesson: 'nt-repeticion-c1' },
+      { lesson: 'nt-inicio-c1' },
+      { lesson: 'nt-finalizacion-c1' },
+      { lesson: 'nt-continuacion-c1' },
+      { lesson: 'nt-cambio-c1' },
+      { lesson: 'nt-permanencia-c1' },
+      { lesson: 'nt-existencia-inexistencia-c1' },
+      { lesson: 'nt-presencia-ausencia-c1' },
+      { lesson: 'nt-disponibilidad-c1' },
+      { lesson: 'nt-acontecimiento-c1' },
+      { lesson: 'task-c1-precision' },
+    ] },
+
+  { unit: 'c1-u63', band: 'C1', title: 'A critical voice',
+    goal: 'I can judge something in public, in my own voice.',
+    canDo: ['reach a verdict rather than a balance',
+            'take evidence from the thing itself',
+            'sound like a person, not a summary'],
+    days: [
+      { lesson: 'gn-resena-c1' },
+      { lesson: 'gn-narrativa-c1' },
+      { lesson: 'gn-descriptiva-personas-c1' },
+      { lesson: 'gn-descriptiva-lugares-c1' },
+      { practice: true },
+      { lesson: 'gn-descriptiva-objetos-c1' },
+      { lesson: 'gn-presentacion-publica-c1' },
+      { lesson: 'fn-identificar-c1' },
+      { lesson: 'nt-posicion-absoluta-c1' },
+      { lesson: 'nt-posicion-relativa-c1' },
+      { lesson: 'nt-distancia-c1' },
+      { lesson: 'nt-distancia-velocidad-c1' },
+      { lesson: 'nt-movimiento-estabilidad-sustantivos-c1' },
+      { lesson: 'nt-orientacion-direccion-c1' },
+      { lesson: 'nt-orden-c1' },
+      { lesson: 'nt-origen-c1' },
+      { lesson: 'nt-evaluacion-general-c1' },
+      { lesson: 'nt-valor-precio-c1' },
+      { lesson: 'nt-exito-logro-c1' },
+      { lesson: 'nt-utilidad-uso-c1' },
+      { lesson: 'nt-capacidad-competencia-c1' },
+      { lesson: 'nt-facilidad-c1' },
+      { lesson: 'fn-habilidad-c1' },
+      { lesson: 'fn-introducir-relato-atencion-c1' },
+      { lesson: 'fn-destacar-silencio-tema-cierre-c1' },
+      { lesson: 'task-c1-final' },
+    ] },
+
+  { unit: 'deep-discurso-c1', band: 'C1', optional: true,
+    triggers: ['lesson:dc-mantenimiento-referente-b1', 'lesson:dc-rematizacion-tematizacion-b1'], title: 'Discourse structure at C1',
+    goal: 'I can control what a sentence foregrounds, and keep a long text tracking one referent.',
+    canDo: ['front and dislocate deliberately',
+            'keep a referent across paragraphs',
+            'use the pronoun that disambiguates or disparages'],
+    days: [
+      { lesson: 'dc-deixis-c1' },
+      { lesson: 'dc-focalizacion-c1' },
+      { lesson: 'dc-rematizacion-tematizacion-c1' },
+      { lesson: 'dc-mantenimiento-referente-c1' },
+    ] },
+
+  { unit: 'deep-sintaxis-c1', band: 'C1', optional: true,
+    triggers: ['tense:presubj', 'tense:impsubj', 'tense:perfsubj', 'lesson:gr-concesivas-b1', 'lesson:gr-condicionales-b1', 'lesson:gr-causales-b1'], title: 'The subordinate clause, exhaustively',
+    goal: 'I can build any adverbial or relative clause, and know what each one does to the mood.',
+    canDo: ['choose the mood a subordinator forces',
+            'use the C1 relatives — el cual, quien, cuyo',
+            'build concessive and consecutive clauses at C1 register'],
+    days: [
+      { lesson: 'gr-sub-adv-causales-c1' },
+      { lesson: 'gr-sub-adv-comparativas-c1' },
+      { lesson: 'gr-sub-adv-concesivas-c1' },
+      { lesson: 'gr-sub-adv-condicionales-c1' },
+      { lesson: 'gr-sub-adv-consecutivas-c1' },
+      { lesson: 'gr-sub-adv-lugar-modo-c1' },
+      { lesson: 'gr-sub-adv-finales-c1' },
+      { lesson: 'gr-sub-adv-temporales-c1' },
+      { lesson: 'gr-sub-sustantivas-c1' },
+      { lesson: 'gr-sub-adjetivas-relativo-c1' },
+      { lesson: 'gr-relativos-c1' },
+    ] },
+
+  { unit: 'deep-nominal-c1', band: 'C1', optional: true,
+    triggers: ['lesson:gr-demostrativos-valores-a2', 'lesson:gr-posesivos-tonicos-a2', 'lesson:gr-cuantificadores-a2'], title: 'The noun phrase at C1',
+    goal: 'I can use the article, gender, number and determiners where they carry meaning rather than agreement.',
+    canDo: ['use the article for emphasis and nominalisation',
+            'use the gender that changes the meaning',
+            'use demonstratives for discourse proximity and contempt'],
+    days: [
+      { lesson: 'gr-articulo-definido-c1' },
+      { lesson: 'gr-articulo-indefinido-c1' },
+      { lesson: 'gr-genero-sustantivos-c1' },
+      { lesson: 'gr-numero-sustantivos-c1' },
+      { lesson: 'gr-demostrativos-c1' },
+      { lesson: 'gr-posesivos-c1' },
+      { lesson: 'gr-nombres-escuetos-c1' },
+      { lesson: 'gr-clases-adjetivos-c1' },
+      { lesson: 'gr-cuantificadores-propios-c1' },
+      { lesson: 'gr-exclamativos-c1' },
+      { lesson: 'gr-interrogativos-c1' },
+    ] },
+
+  { unit: 'deep-complementos-c1', band: 'C1', optional: true,
+    triggers: ['lesson:gr-pronombres-atonos-a2', 'lesson:gr-objeto-indirecto-a2', 'lesson:gr-pronombres-combinados-b1', 'lesson:gr-objeto-directo-a1'], title: 'Complements, clitics and agreement at C1',
+    goal: 'I can handle leísmo, ad sensum agreement, and the complements a noun or adjective takes.',
+    canDo: ['recognise leísmo, laísmo and loísmo',
+            'use ad sensum agreement where sense beats grammar',
+            'attach complements to nouns and adjectives'],
+    days: [
+      { lesson: 'gr-complementos-adjetival-c1' },
+      { lesson: 'gr-complementos-nominal-c1' },
+      { lesson: 'gr-complementos-verbales-c1' },
+      { lesson: 'gr-concordancia-oracional-c1' },
+      { lesson: 'gr-pronombre-personal-c1' },
+      { lesson: 'gr-adverbios-conjuntivos-c1' },
+      { lesson: 'gr-adverbios-externos-c1' },
+      { lesson: 'gr-adverbios-nucleares-c1' },
+    ] },
+
+];
+
+
+
+/* ============================================================================
+ * DERIVED — the flat day list, the unit index, and where each band starts.
+ *
+ * COURSE above is what a person edits: units that own their days, with bare
+ * day entries for the stretches not yet organised into units. Everything that
+ * CONSUMES the course wants a flat list of days, so it is computed here once
+ * rather than in each of the three readers.
+ *
+ * COURSE_BANDS used to be a hand-written object of indices at the bottom of
+ * this file, and every insertion silently invalidated it — inserting four verb
+ * days into A1 moved four band starts, and nothing would have complained if
+ * they had not been updated by hand. It is derived now, so it cannot drift.
+ * ========================================================================== */
+(function () {
+  var days = [], units = {}, bands = {}, cur = null;
+
+  function mark(band) {
+    if (!band) return;
+    cur = band;
+    if (!(band in bands)) bands[band] = days.length;
+  }
+  function push(day, unitId) {
+    // Each day carries the unit it belongs to (null while unassigned), so the
+    // session can name the unit without searching back through COURSE.
+    var out = { unit: unitId || null, band: cur };
+    Object.keys(day).forEach(function (k) { out[k] = day[k]; });
+    days.push(out);
+  }
+
+  (window.COURSE || []).forEach(function (e) {
+    if (e.unit) {
+      /* An OPTIONAL unit costs no day. It is registered so it can be found,
+       * browsed and offered, but it is skipped when flattening, so the daily
+       * path never walks it — which is the whole point: some topics are too
+       * important to shelve and too big for the path. `se` is the example
+       * that forced this (reflexive, impersonal, passive, accidental, dative,
+       * reciprocal): six days of it in A1 would wreck the pacing, and one
+       * lesson does not cover it.
+       *
+       * `from`/`length` are meaningless for an optional unit — it has no
+       * position — so they are left null rather than pointing at whatever day
+       * happened to be next. */
+      if (e.optional) {
+        units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
+                          goal: e.goal || null, canDo: e.canDo || [],
+                          optional: true, triggers: e.triggers || [],
+                          lessons: (e.days || []).map(function (d) { return d.lesson; })
+                            .filter(Boolean), from: null, length: null };
+        return;
+      }
+      mark(e.band);
+      units[e.unit] = { id: e.unit, band: e.band || cur, title: e.title,
+                        goal: e.goal || null, canDo: e.canDo || [],
+                        optional: false, from: days.length, length: (e.days || []).length };
+      (e.days || []).forEach(function (d) { push(d, e.unit); });
+      return;
+    }
+    if (e.band && !e.days) { mark(e.band); return; }   // a bare band marker
+    push(e, null);
+  });
+
+  window.COURSE_DAYS  = days;    // the flat sequence every reader walks
+  window.COURSE_UNITS = units;   // id -> { title, goal, canDo, optional, from, length }
+  window.COURSE_BANDS = bands;   // band -> index of its first day
+})();

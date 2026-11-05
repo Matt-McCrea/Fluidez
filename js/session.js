@@ -235,6 +235,56 @@ window.Session = (function () {
     for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
     return seq.length + ':' + (h >>> 0).toString(36);
   }
+  /* The same fingerprint over the WHOLE course, not the band's slice: inserting a day in A1 moves where A2
+   * starts, so an A2 learner's counter shifts although A2's own days did not change. */
+  function courseSigAll() {
+    var all = window.Curriculum && window.Curriculum.all ? window.Curriculum.all() : null;
+    return all ? courseSig(all) : null;
+  }
+
+  /* ---- RECONCILIATION: keeping a learner's place when the course is re-sequenced ------------------------
+   * (tools/reseq/reconcile.ts is the reference; docs/plan-2026-11-04/resequence.md "Reconciliation".)
+   *
+   * Walking the new course from day 0 to the first unstudied lesson sends a day-60 learner back to week
+   * three, because the new spine puts unstudied lessons before their place. Instead:
+   *   1. a studied lesson that merged into another counts as the other studied (aliases resolved);
+   *   2. count the studied lessons that are on the new path, n: the learner lands on the day after the
+   *      n-th lesson day of the new spine, never earlier than the first unstudied lesson;
+   *   3. every lesson the new spine puts BEFORE that place which they have not studied is queued, in spine
+   *      order, in progress.catchUp. Practice days serve it (see catchUpLesson), one lesson a session.
+   * It never drops a studied mark. A learner who has studied nothing has nothing to reconcile. */
+  function reconcileProg(prog) {
+    var days = window.COURSE_DAYS || [], L = window.Lessons;
+    var canon = L && L.canon ? L.canon : function (x) { return x; };
+    var st = {}, stu = prog.studied || {};
+    Object.keys(stu).forEach(function (k) { if (stu[k]) st[canon(k)] = 1; });
+    var lessonDays = [], onPath = {};
+    days.forEach(function (d, i) { if (d.lesson) { lessonDays.push(i); onPath[canon(d.lesson)] = 1; } });
+    var counted = Object.keys(st).filter(function (id) { return onPath[id]; }).length;
+    var firstGap = days.length;
+    for (var g = 0; g < lessonDays.length; g++) if (!st[canon(days[lessonDays[g]].lesson)]) { firstGap = lessonDays[g]; break; }
+    var position = counted ? lessonDays[Math.min(counted, lessonDays.length) - 1] + 1 : 0;
+    position = Math.min(Math.max(position, firstGap), Math.max(0, days.length - 1));
+    var catchUp = [];
+    lessonDays.forEach(function (i) {
+      var id = canon(days[i].lesson);
+      if (i < position && !st[id] && catchUp.indexOf(id) === -1) catchUp.push(id);
+    });
+    return { position: position, counted: counted, catchUp: catchUp };
+  }
+  /* The next queued lesson that can be served: not studied since it was queued, and either loaded or in the
+   * lesson index (a stub that does not exist yet waits in the queue). */
+  function catchUpLesson(prog) {
+    var q = prog.catchUp, L = window.Lessons;
+    if (!q || !q.length) return null;
+    var stu = prog.studied || {};
+    for (var i = 0; i < q.length; i++) {
+      var id = L && L.canon ? L.canon(q[i]) : q[i];
+      if (L && L.isStudied ? L.isStudied(stu, id) : stu[id]) continue;
+      if (lessonById(id) || (L && L.bandOf && L.bandOf(id))) return id;
+    }
+    return null;
+  }
 
   var _writeSafe = {};
   function safeWriting(tasks) {
@@ -263,6 +313,7 @@ window.Session = (function () {
   // passages/cloze/writing built from grammar you've been taught.
   function lessonById(id) {
     var lessons = window.GRAMMAR_LESSONS || [];
+    if (window.Lessons && window.Lessons.canon) id = window.Lessons.canon(id);   // a merged lesson id resolves to its target
     for (var i = 0; i < lessons.length; i++) if (lessons[i].id === id) return lessons[i];
     return null;
   }
@@ -369,8 +420,19 @@ window.Session = (function () {
        *
        * A learner who has studied nothing loses nothing — their counter was 0
        * and stays 0. */
-      var sig = courseSig(seq), remapped = false;
-      if (!pinned && prog.courseSig !== sig) { di = 0; prog.courseSig = sig; remapped = true; }
+      var sig = courseSigAll() || courseSig(seq), remapped = false;
+      var bandFrom = window.Curriculum.startOf
+        ? window.Curriculum.startOf(pr.cefr || (window.Profile && window.Profile.current()))
+        : 0;
+      if (!pinned && prog.courseSig !== sig) {
+        /* Reconcile by the studied set, never from day 0 (see reconcileProg). A learner whose counter was
+         * never fingerprinted (new, or just placed) keeps a counter that is already in this layout. */
+        var rc = reconcileProg(prog);
+        di = rc.counted ? Math.max(0, rc.position - bandFrom) : 0;
+        if (prog.courseSig == null && prog.beginnerDay) di = Math.max(di, prog.beginnerDay);
+        prog.catchUp = rc.catchUp;
+        prog.courseSig = sig; remapped = true;
+      }
       /* The paced path walks a DAY COUNTER, not the studied set — so a lesson
        * marked done from Lecciones (js/unitcheck.js), by a unit check or by
        * hand, left the counter where it was and the session kept serving
@@ -382,6 +444,14 @@ window.Session = (function () {
       function doneAlready(f) {
         if (!f) return false;
         if (f.type === 'grammar') return !!studied[f.id];
+        /* A week's Drill, Output and Review days are served even when every lesson of the week is
+         * studied: by the Review day they always are, and stepping over it lost the Unit done card,
+         * the unit check and the catch-up slot (re-drive 4). Only a unit the learner cleared by hand
+         * or by unit check (unitsCleared, js/unitcheck.js), or whose Unit done moment already
+         * happened (unitsDone), is stepped over. */
+        if (f.type === 'practice' && f.kind) {
+          return !!(f.unit && ((prog.unitsDone && prog.unitsDone[f.unit]) || (prog.unitsCleared && prog.unitsCleared[f.unit])));
+        }
         /* A verb or practice day inside a unit the learner has cleared goes
          * too. "I know this unit" has to mean the whole unit, or somebody who
          * marks A1 done still walks thirty verb days to get out of it. */
@@ -390,6 +460,18 @@ window.Session = (function () {
       while (!pinned && di < seq.length && doneAlready(seq[di])) { di++; moved = true; }
       if (moved || remapped) { prog.beginnerDay = di; saveProg(prog); }
       focus = seq[Math.min(di, seq.length - 1)] || { type: 'practice' };
+      /* A PRACTICE DAY SERVES THE CATCH-UP QUEUE. A day with no lesson and no verbs teaches the next
+       * lesson the re-sequenced course put before the learner's place and they have not studied: the
+       * day becomes a lesson day (scripts, New today and marking studied all run as on any lesson day),
+       * one lesson a session. A resumed or repeated session keeps the lesson it started with. Quick
+       * sessions have no Learn stage, so they never convert. */
+      if (focus.type === 'practice') {
+        var snapped = !!(over && 'lessonId' in over);          // a resumed or repeated session names its lesson (null for none)
+        var cuId = snapped ? over.lessonId : (modeDef().keys.indexOf('learn') !== -1 && !(forSession && mode === 'rapido' && pinned) ? catchUpLesson(prog) : null);
+        if (cuId) {
+          focus = Object.assign({}, focus, { type: 'grammar', id: window.Lessons && window.Lessons.canon ? window.Lessons.canon(cuId) : cuId, catchUp: true });
+        }
+      }
       /* `di` indexes the BAND's slice; COURSE_UNITS.from indexes the whole
        * course, so the band's start has to be added back before the two can
        * be compared. Getting this wrong shows the learner "day -87 of 10". */
@@ -467,6 +549,13 @@ window.Session = (function () {
     var gating = !!(Kn && window.REQUIRES && window.GRAPH && !pr.unlockAll);
     var gi = dayIndex != null ? dayIndex : -1;
     var tNodes = gating ? Kn.todayNodes(focus, gi) : new Set();
+    /* A DRILL DAY practises the week's Introduce lesson: its nodes lead (items that target them are picked
+     * first); the unit so far stays in tNodes, so the gate still lets through what the week has taught. */
+    var tPref = tNodes;
+    if (gating && focus.type === 'practice' && focus.drill && Kn.introNodes) {
+      var iNodes = Kn.introNodes(focus, gi);
+      if (iNodes.size) tPref = iNodes;
+    }
     var known = gating ? Kn.forLearner(f.prog, gi) : null;
     var band = pr.cefr || null;
     /* A placed learner (position in band X, every earlier lesson studied) knows the band's vocabulary for coverage:
@@ -525,7 +614,7 @@ window.Session = (function () {
       var fresh = pool.filter(function (x) { return !recent(keyOf(x)); });
       var stale = pool.filter(function (x) { return recent(keyOf(x)); })
         .sort(function (a, b) { return seen[keyOf(a)] - seen[keyOf(b)]; });
-      var pref = gating ? fresh.filter(function (x) { return Kn.targets(keyOf(x), tNodes); }) : [];
+      var pref = gating ? fresh.filter(function (x) { return Kn.targets(keyOf(x), tPref); }) : [];
       var rest = fresh.filter(function (x) { return pref.indexOf(x) < 0; });
       var fn = matchFn || NONE;
       /* A theme focus keeps at least half of the picks on today's nodes (the lesson) and narrows only the rest. */
@@ -861,7 +950,8 @@ window.Session = (function () {
       if (!BI.ready(band)) {
         gaps.push({ kind: 'bank-unloaded', stage: 'apply' });
       } else {
-        var rows = tNodes.size ? BI.forNodes(tNodes, known, { band: band, recent: recent }) : [];
+        var rows = tPref.size ? BI.forNodes(tPref, known, { band: band, recent: recent }) : [];
+        if (!rows.length && tPref !== tNodes && tNodes.size) rows = BI.forNodes(tNodes, known, { band: band, recent: recent });
         /* A day that teaches no node of its own (a can-do day) practises the unit so far. */
         if (!rows.length && focus.unit) {
           var uNodes = Kn.todayNodes({ type: 'practice', unit: focus.unit }, gi);
@@ -871,7 +961,7 @@ window.Session = (function () {
         if (!rows.length) gaps.push({ kind: 'bank-empty', stage: 'apply' });
         else {
           var pool = sample(rows.slice(0, rows.primary), 600, rng).concat(sample(rows.slice(rows.primary), 300, rng)), used = {}, bankApply = [];
-          var isHit = function (x) { return x.bankId ? true : Kn.targets(applyKey(x), tNodes); };
+          var isHit = function (x) { return x.bankId ? true : Kn.targets(applyKey(x), tPref); };
           // Produce first: the translate slot(s) and the build come from the bank, then Apply fills the rest of the half
           var len = level >= 3 ? 16 : 10, free = function () { return rows.filter(function (r) { return !used[r.id]; }); };
           var tCount = produce.filter(function (t) { return t.type === 'translate'; }).length;
@@ -1002,14 +1092,23 @@ window.Session = (function () {
 
     // A day's authored writing task (data/course.js `write`, the unit task's own
     // box) comes first in Produce, ahead of whatever the pools chose.
-    if (focus && focus.write && window.WRITING_TASKS) {
-      var authoredWrite = window.WRITING_TASKS.filter(function (t) { return t.id === focus.write; })[0];
+    /* An OUTPUT day without a task of its own leads with the unit's: the first `write` any of the unit's days carries. */
+    var leadWrite = focus && focus.write;
+    if (!leadWrite && focus && (focus.output || focus.kind === 'output') && focus.unit) {
+      var uo = (window.COURSE_UNITS || {})[focus.unit];
+      if (uo && uo.from != null) {
+        var cds = window.COURSE_DAYS || [];
+        for (var wi = uo.from; wi < uo.from + uo.length && wi < cds.length; wi++) if (cds[wi] && cds[wi].write) { leadWrite = cds[wi].write; break; }
+      }
+    }
+    if (leadWrite && window.WRITING_TASKS) {
+      var authoredWrite = window.WRITING_TASKS.filter(function (t) { return t.id === leadWrite; })[0];
       if (authoredWrite) {
         // The unit's own task is served whatever the gate says; the playtest
         // counts it as an authored choice, not a gap in supply.
         var aw = Object.assign({}, authoredWrite, { authored: true });
         if (recent(writeKey(aw))) gaps.push({ kind: 'authored-repeat', stage: 'produce', keys: [writeKey(aw)] });
-        produce = [aw].concat(produce.filter(function (t) { return t.id !== focus.write; }));
+        produce = [aw].concat(produce.filter(function (t) { return t.id !== leadWrite; }));
       }
     }
 
@@ -1079,6 +1178,15 @@ window.Session = (function () {
     if (!f || !f.unit) return null;
     var u = (window.COURSE_UNITS || {})[f.unit];
     if (!u || u.optional || u.from == null) return null;
+    var pr = window.Profile ? window.Profile.params() : {};
+    if (!pr.usesCurriculum) {
+      /* Above A2 the path walks the unit's lessons, not its days, so the practice days do not exist
+       * for it: count lesson days, or the card reads "day 1 of 4" then "day 3 of 4". */
+      var st = loadProg().studied || {}, L = window.Lessons;
+      var ls = (window.COURSE_DAYS || []).slice(u.from, u.from + u.length).filter(function (d) { return !!d.lesson; });
+      var n = ls.filter(function (d) { return L && L.isStudied ? L.isStudied(st, d.lesson) : !!st[d.lesson]; }).length;
+      return { id: u.id, title: u.title, goal: u.goal, day: ls.length ? Math.min(ls.length, n + 1) : null, of: ls.length };
+    }
     var day = (ctx.dayIndex != null ? ctx.dayIndex : -1) - u.from + 1;
     return { id: u.id, title: u.title, goal: u.goal,
              day: day > 0 && day <= u.length ? day : null, of: u.length };
@@ -1089,10 +1197,16 @@ window.Session = (function () {
     if (f.type === 'grammar') return ctx.lesson ? ctx.lesson.title : 'A grammar lesson';
     if (f.type === 'vocab') return 'New words · ' + ((CAT_LABEL[f.cat] || f.cat) + (f.part ? ' ' + f.part : ''));
     if (f.type === 'verbs') return 'New verbs · ' + f.verbs.slice(0, 3).join(', ') + (f.verbs.length > 3 ? '…' : '');
-    return 'Practice & review day';
+    return kindLabel(f) ? ({ drill: 'Drill', output: 'Output', review: 'Review' }[f.drill ? 'drill' : f.output ? 'output' : 'review']) + ' day' : 'Practice & review day';
   }
   // ---- progress / streak -------------------------------------------------
-  function loadProg() { try { return JSON.parse(localStorage.getItem(PKEY)) || {}; } catch (e) { return {}; } }
+  function loadProg() {
+    var p; try { p = JSON.parse(localStorage.getItem(PKEY)) || {}; } catch (e) { return {}; }
+    /* A studied lesson that merged into another counts as the other studied (data/lesson-aliases.js). The
+     * target's mark is written back once, so the readers that look the map up by id see it too. */
+    if (p.studied && window.Lessons && window.Lessons.normalizeStudied && window.Lessons.normalizeStudied(p.studied)) saveProg(p);
+    return p;
+  }
   function saveProg(o) { try { localStorage.setItem(PKEY, JSON.stringify(o)); } catch (e) {} }
 
   /* WHICH PASSAGES HAVE BEEN READ.
@@ -1444,6 +1558,9 @@ window.Session = (function () {
       unit: unitLabel(c),
       focus: f.focus,
       lessonTitle: homeLabel(c),
+      kind: f.focus ? (f.focus.kind || null) : null,
+      kindLabel: kindLabel(f.focus),
+      catchUp: !!(f.focus && f.focus.catchUp),
       canSkipLesson: !f.pr.usesCurriculum && f.focus && f.focus.type === 'grammar' && !!f.lesson,
       lessonId: f.lesson ? f.lesson.id : null,
     };
@@ -1468,6 +1585,13 @@ window.Session = (function () {
     for (var i = di; i < seq.length && i < di + 40; i++) {
       var f = seq[i];
       if (!f) continue;
+      if (f.type === 'practice') {
+        /* a practice day will serve the catch-up queue (see pickFocus) */
+        var cu = catchUpLesson(prog), cl = cu && lessonById(cu);
+        if (cl) return { title: cl.title, kind: 'grammar', focus: { type: 'grammar', id: cl.id, unit: f.unit || null, catchUp: true },
+                         lessonId: cl.id, di: i, canDo: cl.canDo || null, catchUp: true };
+        continue;
+      }
       if (f.type === 'grammar') {
         if (studied[f.id]) continue;
         var l = lessonById(f.id);
@@ -1490,7 +1614,20 @@ window.Session = (function () {
     if (f.type === 'grammar') return c.lesson ? c.lesson.title : T('Una lección', 'A lesson');
     if (f.type === 'verbs') return T('Verbos nuevos', 'New verbs');
     if (f.type === 'vocab') return T('Palabras nuevas', 'New words');
+    var k = kindLabel(f);
+    if (k) {
+      /* a drill day names the lesson it drills */
+      var il = f.drill && window.Known && window.Known.introLesson && c.dayIndex != null ? window.Known.introLesson(f, c.dayIndex) : null;
+      var it = il && lessonById(il);
+      return k + (it ? ': ' + it.title : '');
+    }
     return T('Práctica y repaso', 'Practice and review');
+  }
+  /* The week is Introduce, Drill, Input, Output, Review: the three practice days say which they are. */
+  function kindLabel(f) {
+    if (!f || f.type !== 'practice') return null;
+    var k = f.drill ? 'drill' : f.output ? 'output' : f.review ? 'review' : f.kind;
+    return k === 'drill' ? T('Ejercicios', 'Drill') : k === 'output' ? T('Producción', 'Output') : k === 'review' ? T('Repaso', 'Review') : null;
   }
   var STAGE_LABEL_ES = { review: 'Repasar', learn: 'Aprender', comprehend: 'Comprender',
                          apply: 'Aplicar', produce: 'Producir' };
@@ -1504,7 +1641,8 @@ window.Session = (function () {
     var f = pickFocus();
     if (!f.lesson) return;
     var pp = loadProg();
-    pp.studied = pp.studied || {}; pp.studied[f.lesson.id] = 1;
+    pp.studied = pp.studied || {}; markStudiedId(pp.studied, f.lesson.id);
+    if (pp.catchUp) pruneCatchUp(pp);
     saveProg(pp);
     discardSession();
   }
@@ -1666,6 +1804,16 @@ window.Session = (function () {
     });
   }
 
+  /* Marking a lesson studied writes the lesson it resolves to (a merged lesson's target). */
+  function markStudiedId(studied, id) {
+    if (window.Lessons && window.Lessons.markStudied) window.Lessons.markStudied(studied, id); else studied[id] = 1;
+  }
+  /* Drop from the catch-up queue whatever is studied now. */
+  function pruneCatchUp(p) {
+    var L = window.Lessons, stu = p.studied || {};
+    p.catchUp = (p.catchUp || []).filter(function (id) { return !(L && L.isStudied ? L.isStudied(stu, id) : stu[id]); });
+  }
+
   /* The day's progress, written once, when the whole session completes. Quick
    * and short modes never ran Learn, so they never mark a lesson studied. A
    * repeat is practice, not progress. */
@@ -1677,10 +1825,11 @@ window.Session = (function () {
     if (pr.usesCurriculum) {               // paced path: step through the curriculum
       var base = c.di != null ? c.di : (p.beginnerDay || 0);
       p.beginnerDay = Math.max(p.beginnerDay || 0, base + 1);
-      if (c.focus && c.focus.type === 'grammar' && c.lesson) { p.studied = p.studied || {}; p.studied[c.lesson.id] = 1; }
+      if (c.focus && c.focus.type === 'grammar' && c.lesson) { p.studied = p.studied || {}; markStudiedId(p.studied, c.lesson.id); }
     } else if (c.lesson) {                 // standard/refresher: a grammar lesson each day
-      p.studied = p.studied || {}; p.studied[c.lesson.id] = 1;
+      p.studied = p.studied || {}; markStudiedId(p.studied, c.lesson.id);
     }
+    if (c.lesson && p.catchUp) pruneCatchUp(p);
     /* Five minutes after a full session works from this day, not tomorrow's (see pickFocus). */
     p.lastDone = { day: dayNumber(), di: c.di != null ? c.di : null, lessonId: c.lesson ? c.lesson.id : null };
     saveProg(p);
@@ -1739,7 +1888,7 @@ window.Session = (function () {
     var u = window.COURSE_UNITS[uid], p = loadProg();
     if (p.unitsDone && p.unitsDone[uid]) return null;
     var pr = window.Profile ? window.Profile.params() : {}, last;
-    if (pr.usesCurriculum) last = c.dayIndex === u.from + u.length - 1;
+    if (pr.usesCurriculum) last = c.dayIndex === u.from + u.length - 1 || !!(c.focus && c.focus.review && c.focus.check);
     else last = !!(c.lesson && window.UnitCheck && window.UnitCheck.isDone(u) &&
                    window.UnitCheck.lessonIds(u).indexOf(c.lesson.id) !== -1);
     if (!last) return null;
@@ -1984,7 +2133,7 @@ window.Session = (function () {
   return {
     start: start,
     // test hooks: build a context without starting a session; record what it served
-    _build: buildContext, _markSeen: markSeen, _isReadingDay: isReadingDay, _markRead: markRead, _setMode: function (m) { mode = m; },
+    _build: buildContext, _reconcile: reconcileProg, _markSeen: markSeen, _isReadingDay: isReadingDay, _markRead: markRead, _setMode: function (m) { mode = m; },
     today: today,
     skipLesson: skipLesson,
     modes: function () { return [rapidoDef(), MODES.corto, MODES.diaria, MODES.larga]; },

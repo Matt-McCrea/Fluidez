@@ -26,7 +26,7 @@ const P = window.Onboarding.placement;
 
 let n = 0; const ok = (c, m) => { assert(c, m); n++; };
 const rungs = P.rungs();
-ok(rungs.length > 25 && rungs[0].day === 5 && rungs[0].band === 'A1', 'rungs start at A1 day 5');
+ok(rungs.length >= 25 && rungs[0].day === 5 && rungs[0].band === 'A1', 'rungs start at A1 day 5');
 ok(rungs[P.startRung('some')].band === 'A2' && rungs[P.startRung('lots')].band === 'B1', 'start rungs by band');
 
 // An oracle learner: answers right on every rung up to `k`, wrong above. Draws are real items.

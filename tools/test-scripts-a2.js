@@ -33,7 +33,6 @@ const M = window.LIB.match, C = window.Checker, E = window.ENGINE, SC = window.S
 let errors = 0, checks = 0;
 function ok(c, m) { checks++; if (!c) { errors++; console.error('  x ' + m); } }
 
-const UNITS = ['a2-u15', 'a2-u16', 'a2-u18', 'a2-u19', 'a2-u20', 'a2-u21', 'a2-u22', 'a2-u23', 'a2-u24', 'a2-u25', 'a2-u26'];
 const DASH = /[—–]|\s-\s|^-\s|\s-$/m;
 const JARGON = /\b(stress(ed)?|clitics?|register|conjugat\w*|infinitives?|pronouns?|adjectives?|nouns?|intonation|interrogatives?|subjunctive|indicative|imperative|masculine|feminine|morphemes?|syllables?|tenses?)\b/i;
 const VOSOTROS_WORD = /(^|[^a-záéíóúñ])(vosotr[oa]s|vuestr[oa]s?|os)(?![a-záéíóúñ])/i;
@@ -45,12 +44,27 @@ const SPAIN_PERFECTO = /\b(he|has|ha|hemos|han)\s+[a-záéíóúñ]+(ado|ido)\b[
 const plain = (s) => String(s == null ? '' : s).replace(/\*/g, '');
 const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
-
-// ---- the lessons on the path, read from the course itself
-const want = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0 && d.lesson).map((d) => d.lesson);
-ok(want.length === 58, 'expected 58 lessons on the path in the eleven A2 units, found ' + want.length);
-want.forEach((id) => ok(!!SC[id], id + ': no script'));
-Object.keys(SC).forEach((id) => ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in the A2 units'));
+const BAND = 'A2';
+// ---- the lessons on the path in this band, read from the course itself (the re-sequenced course of
+// 5 November 2026 places some lessons of one band on days of another; their scripts live in the file
+// of the lesson's own band, which js/views/learn.js falls back to)
+load('data/lessons/index.js');
+['a1', 'a2', 'b1', 'b2', 'c1'].forEach((b) => { if (!window['SCRIPTS_' + b.toUpperCase()]) load('data/scripts/' + b + '.js'); });
+const ALL_SC = { A1: window.SCRIPTS_A1, A2: window.SCRIPTS_A2, B1: window.SCRIPTS_B1, B2: window.SCRIPTS_B2, C1: window.SCRIPTS_C1 };
+const LESSON_BAND = (window.LESSONS_INDEX && window.LESSONS_INDEX.ids) || {};
+const bandDays = window.COURSE_DAYS.map((d, i) => ({ d, i })).filter((x) => x.d.band === BAND);
+const UNITS = [...new Set(bandDays.map((x) => x.d.unit))];
+const pathDays = bandDays.map((x) => x.d);
+const want = pathDays.filter((d) => d.lesson).map((d) => d.lesson);
+ok(want.length > 0 && UNITS.length > 0, 'the ' + BAND + ' band has lessons on the path');
+const servedIn = (T, id) => !!T && Object.keys(T).some((k) => T[k] && Array.isArray(T[k].serves) && T[k].serves.indexOf(id) >= 0);
+const hasScript = (id) => !!SC[id] || servedIn(SC, id) || (LESSON_BAND[id]
+  ? !!(ALL_SC[LESSON_BAND[id]] && (ALL_SC[LESSON_BAND[id]][id] || servedIn(ALL_SC[LESSON_BAND[id]], id)))
+  : Object.keys(ALL_SC).some((b) => ALL_SC[b] && (ALL_SC[b][id] || servedIn(ALL_SC[b], id))));   // ladder lessons live in no band file
+want.forEach((id) => ok(hasScript(id), id + ': no script'));
+const KNOWN_LESSON = new Set(Object.keys(LESSON_BAND));
+window.COURSE_DAYS.forEach((d) => { if (d.lesson) KNOWN_LESSON.add(d.lesson); });
+Object.keys(SC).forEach((id) => ok(KNOWN_LESSON.has(id), id + ': script for an id that is no lesson'));
 
 // every string a learner sees, with whether it is Spanish
 function* strs(id, s) {

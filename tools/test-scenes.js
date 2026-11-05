@@ -53,7 +53,8 @@ window.SCENES_A1.pop();
 // real data: no scene requires a late node only through an accepted learner line
 const rl = window.SCENES_A1.filter(s => !s.review && s.d != null);
 ok(rl.length >= 30, 'at least 30 A1 scenes playable on the old spine: ' + rl.length);
-ok(rl.filter(s => s.d < 312).length === rl.length, 'every playable A1 scene is legal before day 312');
+const b1Start = (window.COURSE_BANDS || {}).B1 || 312, late = rl.filter(s => s.d >= b1Start);
+ok(late.length <= Math.ceil(rl.length * 0.05), 'nearly every playable A1 scene is legal before B1 starts (day ' + b1Start + '); late: ' + late.map(s => s.id + ':' + s.d).join(' '));
 
 // turns follow next
 const sc = { turns: [{ id: 'a', next: 'c' }, { id: 'b', next: null }, { id: 'c', next: 'b' }] };

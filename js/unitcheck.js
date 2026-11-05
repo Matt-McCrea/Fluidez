@@ -40,6 +40,9 @@ window.UnitCheck = (function () {
   function saveProg(o) { try { localStorage.setItem(PKEY, JSON.stringify(o)); } catch (e) {} }
   function studiedMap() { return loadProg().studied || {}; }
 
+  /* A lesson merged into another counts through its target (data/lesson-aliases.js). */
+  function isStudied(st, id) { return window.Lessons && window.Lessons.isStudied ? window.Lessons.isStudied(st, id) : !!st[id]; }
+
   function lessonIds(unit) {
     var D = window.COURSE_DAYS || [];
     if (!unit || unit.from == null) return [];
@@ -49,7 +52,7 @@ window.UnitCheck = (function () {
   }
   function doneCount(unit) {
     var st = studiedMap();
-    return lessonIds(unit).filter(function (id) { return st[id]; }).length;
+    return lessonIds(unit).filter(function (id) { return isStudied(st, id); }).length;
   }
   function isDone(unit) {
     var ids = lessonIds(unit);
@@ -59,11 +62,22 @@ window.UnitCheck = (function () {
   function setLessons(ids, done) {
     var p = loadProg();
     p.studied = p.studied || {};
-    ids.forEach(function (id) { if (done) p.studied[id] = 1; else delete p.studied[id]; });
+    var L = window.Lessons;
+    ids.forEach(function (id) {
+      if (done) { if (L && L.markStudied) L.markStudied(p.studied, id); else p.studied[id] = 1; }
+      /* un-marking also clears the lessons merged into it, or the merged mark would bring it straight back */
+      else if (L && L.unmarkStudied) L.unmarkStudied(p.studied, id); else delete p.studied[id];
+    });
+    if (p.catchUp) p.catchUp = p.catchUp.filter(function (id) { return !isStudied(p.studied, id); });
     saveProg(p);
   }
-  function setUnit(unit, done) { setLessons(lessonIds(unit), done); }
-
+  /* Clearing a unit here also steps the paced path over its practice days (js/session.js doneAlready). */
+  function setUnit(unit, done) {
+    setLessons(lessonIds(unit), done);
+    var p = loadProg(); p.unitsCleared = p.unitsCleared || {};
+    if (done) p.unitsCleared[unit.id] = 1; else delete p.unitsCleared[unit.id];
+    saveProg(p);
+  }
   function unitsIn(band) {
     var U = window.COURSE_UNITS || {};
     return Object.keys(U).map(function (k) { return U[k]; })
@@ -74,6 +88,9 @@ window.UnitCheck = (function () {
     var ids = [];
     unitsIn(band).forEach(function (u) { ids = ids.concat(lessonIds(u)); });
     setLessons(ids, done);
+    var p = loadProg(); p.unitsCleared = p.unitsCleared || {};
+    unitsIn(band).forEach(function (u) { if (done) p.unitsCleared[u.id] = 1; else delete p.unitsCleared[u.id]; });
+    saveProg(p);
     return ids.length;
   }
   function bandDone(band) {
@@ -81,33 +98,59 @@ window.UnitCheck = (function () {
     return us.length > 0 && us.every(isDone);
   }
 
-  /* Questions for a unit check. At most two from any one lesson, so six
-   * questions cover the unit rather than interrogating whichever lesson
+  /* A week's check asks about this week first and then the course so far: the earlier weeks of the
+   * same topic ("Ask, count, want (3 of 6)" draws on weeks 1 and 2), then the units before them, up
+   * to four units back. One week rarely has three testable lessons of its own, and without this the
+   * Unit done card of a short week had no check to offer. */
+  function earlierLessonIds(unit) {
+    var m = /^(.*) \((\d+) of (\d+)\)$/.exec(unit.title || ''), U = window.COURSE_UNITS || {};
+    if (unit.from == null) return [];
+    var prev = Object.keys(U).map(function (k) { return U[k]; })
+      .filter(function (x) { return x !== unit && !x.optional && x.from != null && x.from < unit.from && x.band === unit.band; })
+      .sort(function (a, b) { return b.from - a.from; });
+    var same = prev.filter(function (x) { return m && (x.title || '').indexOf(m[1] + ' (') === 0; });
+    var rest = prev.filter(function (x) { return same.indexOf(x) === -1; });
+    var ids = [], own = lessonIds(unit);
+    same.concat(rest).slice(0, 4).forEach(function (x) {
+      lessonIds(x).forEach(function (id) { if (own.indexOf(id) === -1 && ids.indexOf(id) === -1) ids.push(id); });
+    });
+    return ids;
+  }
+
+  // ---- the question pool ---------------------------------------------------
+  /* Up to ASK multiple-choice probes, this week's lessons first and the earlier ones only to fill:
+   * one per lesson, then a second round, so no lesson dominates because it
    * happened to be written with the most probes. Each carries the lesson it
    * came from, which is what makes a failure useful. */
   function questions(unit, rng) {
     var byId = {};
     (window.ALL_LESSONS || window.GRAMMAR_LESSONS || []).forEach(function (l) { byId[l.id] = l; });
-    var perLesson = [];
-    lessonIds(unit).forEach(function (id) {
-      var l = byId[id];
-      if (!l) return;
-      var mine = (l.probes || []).filter(function (p) {
-        return p.kind === 'mcq' && p.options && p.options.length >= 3 && p.answer != null;
+    function groups(ids) {
+      var per = [];
+      ids.forEach(function (id) {
+        var l = byId[id];
+        if (!l) return;
+        var mine = (l.probes || []).filter(function (p) {
+          return p.kind === 'mcq' && p.options && p.options.length >= 3 && p.answer != null;
+        });
+        if (mine.length) per.push({ id: id, title: l.title, qs: UI.shuffle(mine, rng) });
       });
-      if (mine.length) perLesson.push({ id: id, title: l.title, qs: UI.shuffle(mine, rng) });
-    });
-    // UI.shuffle returns a NEW array rather than sorting in place, so this has
-    // to be assigned — otherwise the check asks the same six questions from the
-    // same first lessons every time, and becomes something to memorise.
-    perLesson = UI.shuffle(perLesson, rng);
+      // UI.shuffle returns a NEW array rather than sorting in place, so this has
+      // to be assigned — otherwise the check asks the same six questions from the
+      // same first lessons every time, and becomes something to memorise.
+      return UI.shuffle(per, rng);
+    }
     var out = [];
-    for (var round = 0; round < 2 && out.length < ASK; round++) {
-      for (var i = 0; i < perLesson.length && out.length < ASK; i++) {
-        var src = perLesson[i];
-        if (src.qs.length > round) out.push({ q: src.qs[round], lesson: src.id, title: src.title });
+    function take(per) {
+      for (var round = 0; round < 2 && out.length < ASK; round++) {
+        for (var i = 0; i < per.length && out.length < ASK; i++) {
+          var src = per[i];
+          if (src.qs.length > round) out.push({ q: src.qs[round], lesson: src.id, title: src.title });
+        }
       }
     }
+    take(groups(lessonIds(unit)));
+    if (out.length < ASK) take(groups(earlierLessonIds(unit)));
     return out;
   }
   function testable(unit) { return questions(unit, Math.random).length >= MIN_POOL; }
@@ -207,7 +250,7 @@ window.UnitCheck = (function () {
 
   return {
     run: run, testable: testable,
-    lessonIds: lessonIds, doneCount: doneCount, isDone: isDone,
+    lessonIds: lessonIds, doneCount: doneCount, isDone: isDone, questions: questions,
     setUnit: setUnit, setBand: setBand, bandDone: bandDone, unitsIn: unitsIn
   };
 })();

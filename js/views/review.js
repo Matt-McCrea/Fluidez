@@ -47,7 +47,7 @@ window.StageReview = (function () {
     (window.IDIOMS || []).forEach(function (x) {
       items.push({ id: 'i:' + x.es, es: x.es, en: x.en, lit: x.lit || null, kind: 'idiom' });
     });
-    (window.GRAMMAR_LESSONS || []).forEach(function (l) {
+    (window.Lessons && window.Lessons.withAliasSources ? window.Lessons.withAliasSources() : (window.GRAMMAR_LESSONS || [])).forEach(function (l) {
       (l.recall || []).forEach(function (r) {
         // Questions ABOUT grammar, in English, are comprehension checks for the
         // end of a lesson — never review cards. Filtering here rather than only

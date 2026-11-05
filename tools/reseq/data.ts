@@ -18,9 +18,14 @@ export function runFiles(files: string[], ctx: any = { window: {}, console }): a
   return ctx.window;
 }
 
+/** The course as it was before the 640-day re-sequence went live (git HEAD of data/course.js on 5 November 2026). The generator reads
+ * week one, the twelve old deep units and the "today" baseline from this copy, so data/course.js can be the generated course and the
+ * generator still reruns to the same result. */
+export const BASE_COURSE = 'tools/reseq/base/course.pre-reseq.js';
+
 /** The app as the gate sees it: lessons, the live course, the skill graph, what each lesson teaches, what each item requires. */
 export function loadApp(): any {
-  return runFiles(['data/taxonomy.js', 'data/connectors.js', 'data/rubrics.js', 'data/strand-lessons.js', 'data/course.js',
+  return runFiles(['data/taxonomy.js', 'data/connectors.js', 'data/rubrics.js', 'data/strand-lessons.js', BASE_COURSE,
     'data/verbs.js', 'data/vocab.js', 'data/idioms.js', 'data/grammar-docs.js', 'data/grammar.js', 'data/passages.js',
     'data/apply.js', 'data/writing.js', 'data/topics.js', 'js/engine.js', 'js/lessons.js',
     'data/graph.js', 'data/lesson-nodes.js', 'data/requires.js']);

@@ -25,12 +25,22 @@ window.Curriculum = (function () {
     // `passage` likewise: the opening two units name their own reading
     // (data/course.js), and dropping it here is what would make that authored
     // choice silently do nothing.
-    if (e.verbs) return { type: 'verbs', verbs: e.verbs, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
-    if (e.practice) return { type: 'practice', unit: e.unit || null, passage: e.passage || null, write: e.write || null };
-    return { type: 'grammar', id: e.lesson, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    // `kind` is the day's place in the week (introduce, drill, input, output,
+    // review) and drill/output/review/check its practice-day flags; the
+    // pre-resequence course has none of them and they read null/false.
+    var f;
+    if (e.verbs) f = { type: 'verbs', verbs: e.verbs, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    else if (e.practice) f = { type: 'practice', unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    else f = { type: 'grammar', id: e.lesson, unit: e.unit || null, passage: e.passage || null, write: e.write || null };
+    f.kind = e.kind || (e.drill ? 'drill' : e.output ? 'output' : e.review ? 'review' : null);
+    if (e.drill) f.drill = true;
+    if (e.output) f.output = true;
+    if (e.review) f.review = true;
+    if (e.check) f.check = true;
+    return f;
   }
 
-  var CACHE = {};
+  var CACHE = {}, ALL = null;
   function build(cefr) {
     // COURSE is authored as units that own their days; COURSE_DAYS is that
     // flattened, which is the shape a band slice and the session both want.
@@ -54,6 +64,12 @@ window.Curriculum = (function () {
     lessonsFor: function (cefr) {
       return this.seq(cefr).filter(function (f) { return f.type === 'grammar'; })
         .map(function (f) { return f.id; });
+    },
+    // The whole course as focuses, for fingerprinting it as one.
+    all: function () {
+      var d = window.COURSE_DAYS || [];
+      if (!ALL || ALL.src !== d) ALL = { src: d, seq: d.map(asFocus) };
+      return ALL.seq;
     },
     startOf: function (cefr) { return (window.COURSE_BANDS || {})[cefr] || 0; }
   };

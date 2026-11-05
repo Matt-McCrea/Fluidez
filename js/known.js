@@ -111,7 +111,7 @@ window.Known = (function () {
     vocabByBand = {}; RANKS.forEach(function (b) { vocabByBand[b] = []; });
     (window.VOCAB || []).forEach(function (w) { if (w.es && vocabByBand[w.cefr || 'A1']) vocabByBand[w.cefr || 'A1'].push(bareEs(w.es)); });
     lessonById = {};
-    (window.GRAMMAR_LESSONS || []).forEach(function (l) { if (l) lessonById[l.id] = l; });
+    (window.Lessons && window.Lessons.withAliasSources ? window.Lessons.withAliasSources() : (window.GRAMMAR_LESSONS || [])).forEach(function (l) { if (l) lessonById[l.id] = l; });
   }
   function bandOfDay(di) {
     var starts = window.COURSE_BANDS || {}, b = 'A1';
@@ -190,16 +190,35 @@ window.Known = (function () {
     return res;
   }
 
+  /* The week's Introduce lesson for a practice day: the first lesson day of kind 'introduce' in the unit
+   * at or before `di`. Null when the course carries no kinds (the pre-resequence course) or no such day. */
+  function introLesson(focus, di) {
+    var days = window.COURSE_DAYS || [];
+    var u = focus && focus.unit && window.COURSE_UNITS && window.COURSE_UNITS[focus.unit];
+    if (!u || u.from == null) return null;
+    for (var i = u.from; i <= di && i < days.length && i < u.from + u.length; i++) {
+      if (days[i] && days[i].lesson && days[i].kind === 'introduce') return days[i].lesson;
+    }
+    return null;
+  }
+  function introNodes(focus, di) {
+    var s = new Set(), id = introLesson(focus, di);
+    if (id) teachesOf(id).forEach(function (n) { s.add(n); });
+    return s;
+  }
+
   function todayNodes(focus, di) {
     var s = new Set();
     if (!init() || !focus) return s;
     var days = window.COURSE_DAYS || [];
     if (focus.type === 'grammar' && focus.id) { teachesOf(focus.id).forEach(function (n) { s.add(n); }); return s; }
     if (focus.type === 'verbs') return verbNodes(focus.verbs);
-    // practice day: the nodes of the unit's lessons so far (or the last six days if it has no unit)
+    // practice day: the nodes of the unit's lessons so far (or the last six days if it has no unit),
+    // the week's Introduce lesson first
     var from = Math.max(0, di - 6);
     var u = focus.unit && window.COURSE_UNITS && window.COURSE_UNITS[focus.unit];
     if (u && u.from != null) from = u.from;
+    introNodes(focus, di).forEach(function (n) { s.add(n); });
     for (var i = from; i <= di && i < days.length; i++) {
       if (days[i] && days[i].lesson) teachesOf(days[i].lesson).forEach(function (n) { s.add(n); });
     }
@@ -233,7 +252,7 @@ window.Known = (function () {
     return false;
   }
 
-  return { taughtBy: taughtBy, forLearner: forLearner, todayNodes: todayNodes, allows: allows,
+  return { taughtBy: taughtBy, forLearner: forLearner, todayNodes: todayNodes, introNodes: introNodes, introLesson: introLesson, allows: allows,
            targets: targets, reset: reset, stats: stats,
            firstDay: function (id) { init(); return firstDay.get(id); } };
 })();

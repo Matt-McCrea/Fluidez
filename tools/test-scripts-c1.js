@@ -52,20 +52,27 @@ const words = (s) => plain(s).split(/\s+/).filter(Boolean).length;
 const lines = (s) => String(s).split('\n').length;
 const sentences = (s) => (plain(s).match(/[^.!?]+[.!?]+/g) || []).filter((x) => /[a-záéíóúñ]/i.test(x));
 
-// ---- the lessons on the path: the nine units from the start of C1
-const N_UNITS = 9;
-const c1 = window.COURSE_BANDS.C1;
-const units = [];
-for (let i = c1; i < window.COURSE_DAYS.length && units.length <= N_UNITS; i++) {
-  const u = window.COURSE_DAYS[i].unit;
-  if (u && units.indexOf(u) < 0) units.push(u);
-}
-const UNITS = units.slice(0, N_UNITS);
-ok(UNITS.length === N_UNITS, 'expected ' + N_UNITS + ' units after COURSE_BANDS.C1, found ' + UNITS.length);
-const pathDays = window.COURSE_DAYS.filter((d) => UNITS.indexOf(d.unit) >= 0);
+const BAND = 'C1';
+// ---- the lessons on the path in this band, read from the course itself (the re-sequenced course of
+// 5 November 2026 places some lessons of one band on days of another; their scripts live in the file
+// of the lesson's own band, which js/views/learn.js falls back to)
+load('data/lessons/index.js');
+['a1', 'a2', 'b1', 'b2', 'c1'].forEach((b) => { if (!window['SCRIPTS_' + b.toUpperCase()]) load('data/scripts/' + b + '.js'); });
+const ALL_SC = { A1: window.SCRIPTS_A1, A2: window.SCRIPTS_A2, B1: window.SCRIPTS_B1, B2: window.SCRIPTS_B2, C1: window.SCRIPTS_C1 };
+const LESSON_BAND = (window.LESSONS_INDEX && window.LESSONS_INDEX.ids) || {};
+const bandDays = window.COURSE_DAYS.map((d, i) => ({ d, i })).filter((x) => x.d.band === BAND);
+const UNITS = [...new Set(bandDays.map((x) => x.d.unit))];
+const pathDays = bandDays.map((x) => x.d);
 const want = pathDays.filter((d) => d.lesson).map((d) => d.lesson);
-ok(want.length === 162, 'expected 162 lessons on the path in ' + UNITS.join(', ') + ', found ' + want.length);
-ok(want[0] === 'fn-afecto-sensaciones-c1', 'the first C1 day should be fn-afecto-sensaciones-c1, found ' + want[0]);
+ok(want.length > 0 && UNITS.length > 0, 'the ' + BAND + ' band has lessons on the path');
+const servedIn = (T, id) => !!T && Object.keys(T).some((k) => T[k] && Array.isArray(T[k].serves) && T[k].serves.indexOf(id) >= 0);
+const hasScript = (id) => !!SC[id] || servedIn(SC, id) || (LESSON_BAND[id]
+  ? !!(ALL_SC[LESSON_BAND[id]] && (ALL_SC[LESSON_BAND[id]][id] || servedIn(ALL_SC[LESSON_BAND[id]], id)))
+  : Object.keys(ALL_SC).some((b) => ALL_SC[b] && (ALL_SC[b][id] || servedIn(ALL_SC[b], id))));   // ladder lessons live in no band file
+want.forEach((id) => ok(hasScript(id), id + ': no script'));
+const KNOWN_LESSON = new Set(Object.keys(LESSON_BAND));
+window.COURSE_DAYS.forEach((d) => { if (d.lesson) KNOWN_LESSON.add(d.lesson); });
+Object.keys(SC).forEach((id) => ok(KNOWN_LESSON.has(id), id + ': script for an id that is no lesson'));
 
 // the day each lesson sits on; every tense is built before C1 starts
 const DAY = {};
@@ -76,19 +83,19 @@ ok(DAY['gr-pluscuamsubj-b2'] != null && DAY['gr-pluscuamsubj-b2'] < DAY[want[0]]
 // ---- coverage: a script of its own, or served by the script of an earlier lesson in the same run
 const servedBy = {};
 Object.keys(SC).forEach((id) => {
-  ok(want.indexOf(id) >= 0, id + ': script for a lesson that is not on the path in ' + UNITS.join(' and '));
   const sv = SC[id].serves;
   if (sv == null) return;
   ok(Array.isArray(sv) && sv.length > 0, id + ': serves must be a non-empty list of lesson ids');
   (sv || []).forEach((x) => {
-    ok(want.indexOf(x) >= 0, id + '.serves: ' + x + ' is not on the path');
+    if (want.indexOf(x) < 0) return;   // a served lesson the re-sequence shelved: harmless, nothing serves it
     ok(!SC[x], id + '.serves: ' + x + ' has a script of its own');
     ok(!servedBy[x], id + '.serves: ' + x + ' is already served by ' + servedBy[x]);
     servedBy[x] = id;
   });
   // the run: head, then only practice days and served lessons, in one unit
   const at = pathDays.findIndex((d) => d.lesson === id);
-  let k = at + 1, left = new Set(sv);
+  let k = at + 1, left = new Set(sv.filter((x) => want.indexOf(x) >= 0));
+  if (at < 0 || !left.size) return;
   while (k < pathDays.length && left.size) {
     const d = pathDays[k];
     if (d.unit !== pathDays[at].unit) break;

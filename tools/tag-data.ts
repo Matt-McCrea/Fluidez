@@ -180,8 +180,14 @@ for (const d of W.COURSE_DAYS) {
 const OVR = join(ROOT, 'tools/lesson-nodes.overrides.json');
 const overrides: Record<string, { teaches: string[]; note?: string }> = existsSync(OVR) ? JSON.parse(readFileSync(OVR, 'utf8')) : {};
 let nOverride = 0;
+const parkedOverrides: string[] = [];
 for (const [id, o] of Object.entries(overrides)) {
-  if (!LN[id]) throw new Error(`override: ${id} is not a lesson in course order`);
+  if (!LN[id]) {
+    // a ruling for a lesson that is a reference lesson (in a deep unit or behind a deeper link) rather than on a course day is kept for
+    // when it is placed again, not applied: only an id that is no lesson at all is an error
+    if (byId.has(id) || (W.STRAND_LESSONS as any[]).some((l: any) => l.id === id)) { parkedOverrides.push(id); continue; }
+    throw new Error(`override: ${id} is not a lesson in course order`);
+  }
   for (const n of o.teaches) if (!graph.ids.has(n)) throw new Error(`override ${id}: ${n} is not in the graph`);
   const teaches = [...new Set(o.teaches)];
   LN[id] = { teaches, uses: rowNodes.get(id)!.filter((n) => !teaches.includes(n)).sort(), confidence: 1, how: 'override' };
@@ -216,6 +222,7 @@ md.push('## Top low-confidence reasons (rows)', '');
 md.push('', '## Lesson mapping method', '', `Lessons mapped: ${detail.length}.`, '');
 md.push(`- pcic codes: ${method.pcic}`, `- tense lessons (tense key map): ${method.tense}`, `- new-in-order: ${method['new-in-order']}`, `- frequency fallback: ${method.frequency}`, `- nothing found: ${method.none}`, '');
 md.push(`Overrides from tools/lesson-nodes.overrides.json applied after derivation: ${nOverride} (how "override", confidence 1). The counts above are what derivation chose before them.`, '');
+if (parkedOverrides.length) md.push(`Rulings kept but not applied, for ${parkedOverrides.length} reference lessons that are on no course day: ${parkedOverrides.join(', ')}.`, '');
 md.push('Tense key mapping used: ' + Object.entries(TENSE_NODE).map(([t, n]) => `${t} -> ${n}`).join(', '), '');
 md.push('## 40 lowest-confidence lesson mappings', '', '| lesson | title | how | conf | summary (first sentence) | proposed nodes |', '|---|---|---|---|---|---|');
 detail.slice().sort((a, b) => a.confidence - b.confidence || a.id.localeCompare(b.id)).slice(0, 40)
