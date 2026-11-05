@@ -194,26 +194,15 @@ window.StageLearn = (function () {
         if (g) wrap.appendChild(g);
       }
     });
-    if (l.contrasts && l.contrasts.length) {
-      wrap.appendChild(UI.el('h3', null, UI.t('Mismas palabras, otro sentido', 'Same words, different meaning')));
-      wrap.appendChild(UI.el('div', null, contrastTable(l.contrasts)));
-    }
+    /* The owner's read of twenty lessons side by side (5 Nov 2026): the "same words, different meaning"
+     * table taught nothing and the phrases split by tone of voice (with friends, at work, in writing) read
+     * badly. The contrast table is gone; a function lesson's phrases stay, in one plain table with each
+     * one's note, in the order the lesson gives them. */
     if (l.exponents && l.exponents.length) {
-      // A function lesson's exponents are grouped BY REGISTER, because the
-      // register contrast is the teaching point — an ungrouped list would read
-      // as a vocabulary dump and teach the wrong thing.
-      wrap.appendChild(UI.el('h3', null, UI.t('Formas de decirlo: con amigos, en el trabajo, por escrito', 'Ways to say it: with friends, at work, in writing')));
-      var order = (window.REGISTERS || []).map(function (r) { return r.id; });
-      var groups = {};
-      l.exponents.forEach(function (e) { (groups[e.register] = groups[e.register] || []).push(e); });
-      order.filter(function (r) { return groups[r]; }).forEach(function (r) {
-        var meta = (window.REGISTERS || []).filter(function (x) { return x.id === r; })[0] || { label: r, note: '' };
-        wrap.appendChild(UI.el('h4', 'register-head', meta.label +
-          (meta.note ? ' <span class="muted">(' + meta.note + ')</span>' : '')));
-        wrap.appendChild(UI.el('div', null, contrastTable(groups[r].map(function (e) {
-          return { es: e.es, en: e.en, note: e.note || '' };
-        }))));
-      });
+      wrap.appendChild(UI.el('h3', null, UI.t('Formas de decirlo', 'Ways to say it')));
+      wrap.appendChild(UI.el('div', null, contrastTable(l.exponents.map(function (e) {
+        return { es: e.es, en: e.en, note: e.note || '' };
+      }))));
     }
     if (l.moves && l.moves.length) {
       wrap.appendChild(UI.el('h3', null, UI.t('Cómo se construye el texto', 'How the text is built')));
@@ -453,9 +442,9 @@ window.StageLearn = (function () {
    * ninety seconds, read-and-pick items that can only be answered by reading
    * the form, typed production graded by the matcher with one hint and one
    * retry (as js/views/produce.js runBankTranslate), and one true sentence
-   * about the learner with a live checklist. The old lesson is not thrown
-   * away: all of it sits behind "Read more" at the end, and the quick check
-   * and phrase enrolment after it are unchanged.
+   * about the learner with a live checklist. Since 5 Nov 2026 the teaching
+   * page is the full lesson (see opening() in runScript) and only the script's
+   * practice runs; the quick check and phrase enrolment after it are unchanged.
    *
    * The band file is injected at stage start, the way js/bankitems.js loads
    * its band files, so the lesson page costs nothing on a day without one. If
@@ -609,45 +598,15 @@ window.StageLearn = (function () {
       speakify(wrap);
     }
 
-    // ---- hook, examples, the rule
+    // ---- the lesson itself: the full lesson teaches, the script's practice follows
+    /* The owner compared twenty lessons as script and full lesson (5 Nov 2026) and chose the full lesson
+     * 16 to 1 for the teaching: its summary, the words you need, the explanation and its watch-outs. The
+     * script's hook, examples and rule card taught little, so they are gone; its read and pick, typed
+     * items, translations and personal sentence stay as the practice. */
     function opening() {
       wrap.appendChild(UI.el('h1', null, esc(l.title)));
       if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-cando', '<span class="cando-label">' + UI.t('Después de esto puedes', 'After this you can') + '</span> ' + esc(l.canDo)));
-      if (sc.hook) {
-        var h = UI.el('div', 'script-hook');
-        h.appendChild(UI.el('p', 'hook-line', fmt(sc.hook.line)));
-        h.appendChild(pairs(sc.hook.es, sc.second ? '' : sc.hook.en));
-        wrap.appendChild(h);
-      } else {
-        var g = guessBlock(l);                    // no hook: the guess still comes first
-        if (g) wrap.appendChild(g);
-      }
-      if (sc.examples && sc.examples.length) {
-        wrap.appendChild(UI.el('h3', null, UI.t('Primero, en uso', 'See it in use')));
-        var exs = UI.el('div', 'examples');
-        sc.examples.forEach(function (e) { var d = UI.el('div', 'ex'); d.appendChild(pairs(e.es, e.en)); exs.appendChild(d); });
-        wrap.appendChild(exs);
-      }
-      if (sc.rule) {
-        var card = UI.el('div', 'rule-card');
-        card.appendChild(UI.el('div', 'script-eyebrow', UI.t('La regla', 'How it works')));
-        String(sc.rule).split('\n').forEach(function (line) {
-          if (line.trim()) card.appendChild(UI.el('p', 'rule-line', fmt(line)));
-        });
-        wrap.appendChild(card);
-      }
-      if (reg.length) {
-        var rc = UI.el('div', 'rule-card register-card');
-        rc.appendChild(UI.el('div', 'script-eyebrow', UI.t('Formas de decirlo', 'Ways to say it')));
-        reg.forEach(function (r) {
-          var d = UI.el('div', 'register-item');
-          d.appendChild(UI.el('div', 'ex-es', esc(r.es)));
-          d.appendChild(UI.el('div', 'ex-en', esc(r.en)));
-          if (r.when) d.appendChild(UI.el('div', 'register-when muted small', fmt(r.when)));
-          rc.appendChild(d);
-        });
-        wrap.appendChild(rc);
-      }
+      fillLesson(wrap, l, { fold: true, interactive: true });
       wrap.appendChild(UI.nextBtn(rp.length || yt.length || tr.length ? UI.t('Practícalo →', 'Try it →') : 'Continuar →', function () { go(1); }));
     }
 
@@ -817,7 +776,7 @@ window.StageLearn = (function () {
       skipB.addEventListener('click', function () { if (p.model) showModel(); else go(at + 1); });
     }
 
-    // ---- watch out, the whole old lesson behind Read more, then the quick check
+    // ---- watch out (where the lesson has none of its own), phrases met, then the quick check
     function closing() {
       wrap.appendChild(UI.el('h2', null, esc(l.title)));
       if (rp.length || yt.length || tr.length) {
@@ -826,16 +785,13 @@ window.StageLearn = (function () {
           (yt.length ? UI.t(' Te toca: ' + score.yt + ' de ' + yt.length + '.', ' Your turn: ' + score.yt + ' of ' + yt.length + '.') : '') +
           (tr.length ? UI.t(' Ahora traduce: ' + score.tr + ' de ' + tr.length + '.', ' Now translate: ' + score.tr + ' of ' + tr.length + '.') : '')));
       }
-      if (sc.pitfalls && sc.pitfalls.length) {
+      if (sc.pitfalls && sc.pitfalls.length && !(l.pitfalls && l.pitfalls.length)) {
         wrap.appendChild(UI.el('h3', null, UI.t('Ojo', 'Watch out')));
         var ul = UI.el('ul', 'pitfalls');
         sc.pitfalls.forEach(function (x) { ul.appendChild(UI.el('li', null, fmt(x))); });
         wrap.appendChild(ul);
       }
       if (l.canDo) wrap.appendChild(UI.el('p', 'lesson-nowyoucan', '<span class="cando-label">' + UI.t('Ahora puedes', 'Now you can') + '</span> ' + esc(l.canDo)));
-      var more = UI.el('details', 'read-more');
-      more.appendChild(UI.el('summary', null, UI.t('Leer más: la lección completa', 'Read more: the full lesson')));
-      more.appendChild(fillLesson(UI.el('div', 'read-more-body'), l, { fold: true }));
       var met = shownPhrases(l, sc);
       if (met.length) {
         wrap.appendChild(UI.el('h3', null, UI.t('Frases que viste', 'Phrases you met')));
@@ -843,7 +799,6 @@ window.StageLearn = (function () {
         met.forEach(function (p) { pl.appendChild(UI.el('li', null, '<i>' + esc(p.es) + '</i>: ' + esc(p.en))); });
         wrap.appendChild(pl);
       }
-      wrap.appendChild(more);
       enrolPhrases(l, met.map(function (p) { return p.id; }));
       var seenEs = {};
       yt.concat(tr).forEach(function (t) { seenEs[plainEs(t.es)] = 1; });
