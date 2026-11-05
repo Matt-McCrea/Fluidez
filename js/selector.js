@@ -38,7 +38,8 @@ window.Selector = (function () {
   function label(cat) { return CAT_LABEL[cat] || cat; }
 
   function loadProg() { try { return JSON.parse(localStorage.getItem('fluidez.progress')) || {}; } catch (e) { return {}; } }
-  function isBeginner() { return !!(window.Profile && window.Profile.isPaced()); }
+  function isBeginner() { return !!(window.Profile && window.Profile.params().earlyBand); }
+  function isPaced() { return !!(window.Profile && window.Profile.isPaced()); }
   // Beginner: strip conjugation cards (vt:) for verbs never introduced, so
   // Repaso inteligente's Stretch bucket can't hand a beginner a never-met
   // verb's conjugation. Verb-MEANING cards (vm:) are untouched — that's the
@@ -410,20 +411,20 @@ window.Selector = (function () {
   function frontier() {
     var prog = loadProg(), studied = prog.studied || {}, out = [];
 
-    if (isBeginner() && window.Curriculum) {
+    if (isPaced() && window.Curriculum) {
       var seq = window.Curriculum.seq(), day = prog.beginnerDay || 0;
       for (var i = day; i < seq.length && out.length < 2; i++) {
         var d = seq[i];
         if (d.type === 'practice') continue;
         if (d.type === 'grammar') {
           var l = (window.GRAMMAR_LESSONS || []).filter(function (x) { return x.id === d.id; })[0];
-          if (l && !studied[d.id]) out.push({ focus: { type: 'grammar', id: d.id }, title: l.title, why: 'Next on your beginner path.' });
+          if (l && !studied[d.id]) out.push({ focus: { type: 'grammar', id: d.id }, title: l.title, why: 'Next on your path.' });
         } else if (d.type === 'vocab') {
           var vkey = 'vocab:' + d.cat + ':' + (d.words[0] || '');
-          if (!studied[vkey]) out.push({ focus: { type: 'vocab', cat: d.cat, words: d.words }, title: 'New words · ' + label(d.cat), why: 'Next on your beginner path.' });
+          if (!studied[vkey]) out.push({ focus: { type: 'vocab', cat: d.cat, words: d.words }, title: 'New words · ' + label(d.cat), why: 'Next on your path.' });
         } else if (d.type === 'verbs') {
           var gkey = 'verbs:' + d.verbs.join(',');
-          if (!studied[gkey]) out.push({ focus: { type: 'verbs', verbs: d.verbs }, title: 'Verbs · ' + d.verbs.slice(0, 3).join(', '), why: 'Next on your beginner path.' });
+          if (!studied[gkey]) out.push({ focus: { type: 'verbs', verbs: d.verbs }, title: 'Verbs · ' + d.verbs.slice(0, 3).join(', '), why: 'Next on your path.' });
         }
       }
       return out;

@@ -235,5 +235,46 @@ if (D.some(d => d.kind)) {
   }
 } else console.log('note: the fixture course has no day kinds, week-shape checks skipped');
 
+/* ---- 5. every band walks the paced week (5 Nov 2026: B1 and up used to walk the next unstudied lesson) ---- */
+{
+  const before = at => { const st = {}; D.slice(0, at).forEach(d => { if (d.lesson) st[d.lesson] = 1; }); return st; };
+  const sigOf = (studied, band) => { setProg({ studied, beginnerDay: 0, dayBand: band, catchUp: [] }); window.Profile.set(band); S = reload(); S.today(); return prog().courseSig; };
+  ['B1', 'B2', 'C1'].forEach(b => ok(window.Profile.set(b) || window.Profile.params().usesCurriculum, b + ' is paced'));
+  window.Profile.set('B1'); ok(window.Profile.conjugableVerbs().length === window.VERBS.length, 'B1 keeps every verb conjugable (the met-verb limit is A1/A2 only)');
+  const b1 = B.B1, sig = sigOf(before(b1), 'B1');
+  // a placed B1 learner meets the week's drill and review days
+  const drill = D.findIndex((d, i) => i >= b1 && d.band === 'B1' && d.kind === 'drill');
+  const rev = D.findIndex((d, i) => i >= b1 && d.band === 'B1' && d.review && d.check);
+  setProg({ studied: before(drill), beginnerDay: drill - b1, dayBand: 'B1', courseSig: sig, catchUp: [] }); S = reload(); window.Profile.set('B1');
+  ok(S.today().kindLabel === 'Ejercicios' || S.today().kindLabel === 'Drill', 'a B1 drill day is served as a drill: ' + S.today().lessonTitle);
+  setProg({ studied: before(rev + 1), beginnerDay: rev - b1, dayBand: 'B1', courseSig: sig, catchUp: [] }); S = reload(); window.Profile.set('B1');
+  ok(/Repaso|Review/.test(S.today().kindLabel || ''), 'a B1 review day is served with every lesson of its week studied: ' + S.today().lessonTitle);
+  S.startAt(rev - b1, 'diaria'); finishDay();
+  ok(prog().unitsDone && prog().unitsDone[D[rev].unit], 'finishing the B1 review day records the unit done');
+  // a B1 learner from the unpaced path picks up at their first unstudied lesson
+  const b1Lessons = D.map((d, i) => [d, i]).filter(([d, i]) => i >= b1 && d.band === 'B1' && d.lesson);
+  const st3 = before(b1); b1Lessons.slice(0, 3).forEach(([d]) => { st3[d.lesson] = 1; });
+  setProg({ studied: st3, beginnerDay: 0, courseSig: sig, catchUp: ['gr-presente-yo-irregular-a1', b1Lessons[5][0].lesson] }); S = reload(); window.Profile.set('B1');
+  const t4 = S.today(), fourth = b1Lessons[3];
+  ok(prog().dayBand === 'B1' && prog().beginnerDay === fourth[1] - b1, 'an unpaced B1 learner picks up at their fourth lesson\'s day (' + prog().beginnerDay + ', want ' + (fourth[1] - b1) + ')');
+  ok(t4.lessonId === fourth[0].lesson, 'and is served it: ' + t4.lessonTitle);
+  ok(!(prog().catchUp || []).includes('gr-presente-yo-irregular-a1') && (prog().catchUp || []).includes(b1Lessons[5][0].lesson), 'the catch-up queue keeps only B1 lessons');
+  // each band keeps its own counter
+  const kept = prog().beginnerDay;
+  window.Profile.set('A1'); S = reload(); S.today();
+  ok(prog().dayBand === 'A1' && prog().bandDays && prog().bandDays.B1 === kept, 'switching to A1 saves the B1 counter (' + kept + ')');
+  const a1At = prog().beginnerDay;
+  window.Profile.set('B1'); S = reload(); S.today();
+  ok(prog().beginnerDay === kept && prog().bandDays.A1 === a1At, 'switching back restores it and saves A1\'s');
+  // the last day of a band moves the learner up
+  const a2End = B.B1 - 1;
+  setProg({ studied: before(B.B1), beginnerDay: a2End - B.A2, dayBand: 'A2', courseSig: sig, catchUp: [] }); window.Profile.set('A2'); S = reload();
+  S.startAt(a2End - B.A2, 'diaria'); finishDay();
+  ok(window.Profile.current() === 'B1' && prog().dayBand === 'B1' && prog().beginnerDay === 0, 'finishing A2\'s last day moves the learner to B1 day 1 (' + window.Profile.current() + ', ' + prog().beginnerDay + ')');
+  ok(prog().lastDone && prog().lastDone.di == null, 'and Five minutes after it works from the new band');
+  S = reload(); ok(S.today().lessonId === D[B.B1].lesson || S.today().unit, 'B1 opens on its first day: ' + S.today().lessonTitle);
+  window.Profile.set('A1');
+}
+
 console.log('\n' + (n - fails) + '/' + n + ' passed');
 process.exit(fails ? 1 : 0);

@@ -316,6 +316,7 @@ window.Onboarding = (function () {
       else if (d.verbs) prog.studied['verbs:' + d.verbs.join(',')] = 1;
     }
     prog.beginnerDay = day - bandStart(w.band);
+    prog.dayBand = w.band;               // the counter is this band's (js/session.js pickFocus)
     try { localStorage.setItem('fluidez.progress', JSON.stringify(prog)); } catch (e) {}
     if (window.Profile) window.Profile.set(w.band);
     return w.band;

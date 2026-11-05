@@ -53,7 +53,7 @@ window.Profile = (function () {
     var out = {};
     (window.LEVELS || []).forEach(function (L, i) {
       var maxGate = L.levels[L.levels.length - 1];
-      var early = i <= 1;                       // A1/A2 follow the paced curriculum
+      var early = i <= 1;                       // A1/A2 get the beginner scaffolds (met-verb limits, ordered vocab)
       out[L.code] = {
         name: L.code, label: L.label, cefr: L.code,
         gates: L.levels.slice(), maxGate: maxGate,
@@ -71,7 +71,10 @@ window.Profile = (function () {
         orderedVocab: early, vocabCats: null, maxCefr: L.code,
         syllabusPace: L.code === 'A1' ? 3 : 1,
         unlockAll: false,
-        usesCurriculum: early,
+        /* every band walks the paced week (Introduce, Drill, Input, Output, Review); until 5 Nov 2026
+         * only A1/A2 did, and B1 and up walked the next unstudied lesson with no practice days */
+        usesCurriculum: true,
+        earlyBand: early,
         bucketRatios: early ? { due: 0.65, focus: 0.25, stretch: 0.10 }
                             : { due: 0.50, focus: 0.30, stretch: 0.20 },
         tenses: early ? introducedTenseKeys : fullTenseSet,
@@ -247,7 +250,7 @@ window.Profile = (function () {
       var all = window.VERBS || [];
       // was `current !== 'beginner'`, which stopped matching anything when the
       // profiles became A1-C1 — the restriction had been silently dead
-      if (!PROFILES[current] || !PROFILES[current].usesCurriculum) return all;
+      if (!PROFILES[current] || !PROFILES[current].earlyBand) return all;
       var set = introducedVerbInfs();
       return all.filter(function (v) { return set[v.inf]; });
     },

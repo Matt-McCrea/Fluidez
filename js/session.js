@@ -272,6 +272,17 @@ window.Session = (function () {
     });
     return { position: position, counted: counted, catchUp: catchUp };
   }
+  /* Where a learner stands inside one band's slice of the course: the day of the first lesson they have not
+   * studied (the band's length when every lesson is studied). Above A2 the path used to walk exactly that,
+   * the next unstudied lesson, so it is where a learner who was on that path picks up the paced week. */
+  function firstUnstudiedDay(seq, studied) {
+    var L = window.Lessons;
+    for (var i = 0; i < seq.length; i++) {
+      var f = seq[i];
+      if (f && f.type === 'grammar' && !(L && L.isStudied ? L.isStudied(studied, f.id) : studied[f.id])) return i;
+    }
+    return seq.length;
+  }
   /* The next queued lesson that can be served: not studied since it was queued, and either loaded or in the
    * lesson index (a stub that does not exist yet waits in the queue). */
   function catchUpLesson(prog) {
@@ -432,6 +443,27 @@ window.Session = (function () {
         if (prog.courseSig == null && prog.beginnerDay) di = Math.max(di, prog.beginnerDay);
         prog.catchUp = rc.catchUp;
         prog.courseSig = sig; remapped = true;
+      }
+      /* THE DAY COUNTER BELONGS TO A BAND. beginnerDay counts days into the current band's slice, so it
+       * means something else in another band. Each band keeps its own counter (bandDays): leaving a band
+       * saves it, coming back restores it, and a band entered for the first time starts at its first
+       * unstudied lesson (a placed learner at the placement day, which is never later). A learner who
+       * was already on a band before the counter was tagged keeps it at A1 and A2, which were always
+       * paced; above A2 the path walked the next unstudied lesson, so that is where they pick up, and
+       * the catch-up queue keeps only this band's lessons (the reconcile can queue lower bands' lessons
+       * for somebody who chose B1 without placement). */
+      var band = pr.cefr || (window.Profile && window.Profile.current());
+      if (!pinned && band && prog.dayBand !== band) {
+        prog.bandDays = prog.bandDays || {};
+        var bandSeq = {}; seq.forEach(function (f) { if (f && f.type === 'grammar') bandSeq[f.id] = 1; });
+        if (prog.dayBand) {
+          prog.bandDays[prog.dayBand] = prog.beginnerDay || 0;
+          di = prog.bandDays[band] != null ? prog.bandDays[band] : firstUnstudiedDay(seq, studied);
+        } else if (band !== 'A1' && band !== 'A2') {
+          di = Math.max(prog.beginnerDay || 0, firstUnstudiedDay(seq, studied));
+          prog.catchUp = (prog.catchUp || []).filter(function (id) { return bandSeq[id]; });
+        }
+        prog.dayBand = band; remapped = true;
       }
       /* The paced path walks a DAY COUNTER, not the studied set — so a lesson
        * marked done from Lecciones (js/unitcheck.js), by a unit check or by
@@ -1178,15 +1210,6 @@ window.Session = (function () {
     if (!f || !f.unit) return null;
     var u = (window.COURSE_UNITS || {})[f.unit];
     if (!u || u.optional || u.from == null) return null;
-    var pr = window.Profile ? window.Profile.params() : {};
-    if (!pr.usesCurriculum) {
-      /* Above A2 the path walks the unit's lessons, not its days, so the practice days do not exist
-       * for it: count lesson days, or the card reads "day 1 of 4" then "day 3 of 4". */
-      var st = loadProg().studied || {}, L = window.Lessons;
-      var ls = (window.COURSE_DAYS || []).slice(u.from, u.from + u.length).filter(function (d) { return !!d.lesson; });
-      var n = ls.filter(function (d) { return L && L.isStudied ? L.isStudied(st, d.lesson) : !!st[d.lesson]; }).length;
-      return { id: u.id, title: u.title, goal: u.goal, day: ls.length ? Math.min(ls.length, n + 1) : null, of: ls.length };
-    }
     var day = (ctx.dayIndex != null ? ctx.dayIndex : -1) - u.from + 1;
     return { id: u.id, title: u.title, goal: u.goal,
              day: day > 0 && day <= u.length ? day : null, of: u.length };
@@ -1561,7 +1584,7 @@ window.Session = (function () {
       kind: f.focus ? (f.focus.kind || null) : null,
       kindLabel: kindLabel(f.focus),
       catchUp: !!(f.focus && f.focus.catchUp),
-      canSkipLesson: !f.pr.usesCurriculum && f.focus && f.focus.type === 'grammar' && !!f.lesson,
+      canSkipLesson: !f.pr.earlyBand && f.focus && f.focus.type === 'grammar' && !!f.lesson,
       lessonId: f.lesson ? f.lesson.id : null,
     };
   }
@@ -1826,12 +1849,24 @@ window.Session = (function () {
       var base = c.di != null ? c.di : (p.beginnerDay || 0);
       p.beginnerDay = Math.max(p.beginnerDay || 0, base + 1);
       if (c.focus && c.focus.type === 'grammar' && c.lesson) { p.studied = p.studied || {}; markStudiedId(p.studied, c.lesson.id); }
+      /* The last day of a band moves the learner up: the next band starts at its own counter (js/session.js
+       * pickFocus, "the day counter belongs to a band"). C1 has nowhere to go and stays on its last day. */
+      var cur = pr.cefr || (window.Profile && window.Profile.current()), nb = RANK[RANK.indexOf(cur) + 1];
+      if (nb && window.Curriculum && p.beginnerDay >= window.Curriculum.seq(cur).length && window.Profile) {
+        p.bandDays = p.bandDays || {}; p.bandDays[cur] = p.beginnerDay;
+        p.dayBand = nb; p.beginnerDay = p.bandDays[nb] != null ? p.bandDays[nb] : 0;
+        saveProg(p);
+        window.Profile.set(nb);
+        p = loadProg(); p._bandUp = true;
+      }
     } else if (c.lesson) {                 // standard/refresher: a grammar lesson each day
       p.studied = p.studied || {}; markStudiedId(p.studied, c.lesson.id);
     }
     if (c.lesson && p.catchUp) pruneCatchUp(p);
     /* Five minutes after a full session works from this day, not tomorrow's (see pickFocus). */
-    p.lastDone = { day: dayNumber(), di: c.di != null ? c.di : null, lessonId: c.lesson ? c.lesson.id : null };
+    /* after a move up the day just done is in the band below, so Five minutes works from the new band's counter */
+    p.lastDone = { day: dayNumber(), di: c.di != null && !p._bandUp ? c.di : null, lessonId: c.lesson ? c.lesson.id : null };
+    delete p._bandUp;
     saveProg(p);
   }
 
