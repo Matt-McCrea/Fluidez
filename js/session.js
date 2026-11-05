@@ -2015,14 +2015,15 @@ window.Session = (function () {
         recordUnitDay(ctx);
         var doneUnit = detectUnitDone(ctx);
         if (doneUnit) ctx.unitDone = doneUnit.id;
-        // A session that finished is what a focus is counted in — see js/focus.js.
-        if (window.Focus) window.Focus.tick();
+        var lessonDay = modeDef().keys.indexOf('learn') !== -1;
+        // A lesson session that finished is what a focus is counted in — see js/focus.js. Five minutes is not.
+        if (window.Focus && lessonDay) window.Focus.tick();
         // ...and what the league's «días» column counts — see js/liga.js.
         if (window.Liga && ctx.results) {
           window.Liga.sessionDone(ctx.results.review ? ctx.results.review.correct : 0);
         }
         // What "do it again" repeats: today's session as it was started.
-        writeRec(LKEY, { startedDay: ctx.startedDay, mode: mode, snap: ctx.snap });
+        if (lessonDay) writeRec(LKEY, { startedDay: ctx.startedDay, mode: mode, snap: ctx.snap });
       }
       dropRec(SKEY);
     }
@@ -2096,7 +2097,13 @@ window.Session = (function () {
       wrap.appendChild(reopen);
       window.Report.showAfter(reportData, wrap);
     }
-    wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana. Mañana hay material nuevo.', 'See you tomorrow. There will be new material.')));
+    var lessonDone = (loadProg().lastDone || {}).day === dayNumber();
+    if (lessonDone) wrap.appendChild(UI.el('p', 'muted', T('Hasta mañana. Mañana hay material nuevo.', 'See you tomorrow. There will be new material.')));
+    else {
+      /* a review or practice session is not the day's lesson: say so and offer it */
+      wrap.appendChild(UI.el('p', 'muted', T('La lección de hoy sigue esperándote.', 'Today\'s lesson is still waiting for you.')));
+      wrap.appendChild(UI.nextBtn(T('Empezar la lección de hoy →', 'Start today\'s lesson →'), function () { start('diaria'); }));
+    }
     var homeB = UI.nextBtn('← ' + T('Volver al inicio', 'Back to home'), function () { window.App.go('home'); });
     wrap.appendChild(homeB);
     var again = UI.nextBtn(T('Hacerla otra vez', 'Do it again'), function () { repeatToday(mode); });

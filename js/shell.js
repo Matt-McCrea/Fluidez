@@ -62,7 +62,10 @@ window.Shell = (function () {
     UI.clear(host);
     var p = loadProg();
     var due = (window.Hub && window.SRS) ? window.SRS.dueCount(window.Hub.reviewPool()) : 0;
-    var doneToday = window.SRS && p.lastDay === window.SRS.today();
+    /* "Done today" means today's LESSON session finished (markDone writes lastDone only for a session with a
+     * Learn stage). It used to read lastDay, which any finished session stamps, so ten cards of Five minutes
+     * replaced the day's lesson card with the done card (playtest, 5 Nov 2026). */
+    var doneToday = !!(window.SRS && p.lastDone && p.lastDone.day === window.SRS.today());
     var errors = window.ErrorLog ? window.ErrorLog.cards().length : 0;
 
     var rh = (window.Session && window.Session.rhythm) ? window.Session.rhythm() : null;
@@ -258,7 +261,7 @@ window.Shell = (function () {
      * the card above is the same recommender saying the same thing, and two
      * of them a centimetre apart is just noise. */
     if (!doneToday && window.QuickPlay && window.QuickPlay.card) {
-      var qp = window.QuickPlay.card();
+      var qp = window.QuickPlay.card({ skipReview: true });   // the session above starts with the review
       if (qp) host.appendChild(qp);
     }
 

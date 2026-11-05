@@ -145,8 +145,8 @@ window.QuickPlay = (function () {
 
   /* The home-screen card. Returns null rather than an empty shell, so the
    * caller can append it unconditionally. */
-  function card() {
-    var p = pick();
+  function card(opts) {
+    var p = pick(opts);
     if (!p) return null;
 
     var c = UI.el('button', 'quickplay' + (p.hot ? ' hot' : ''));
