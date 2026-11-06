@@ -182,13 +182,42 @@ window.Games = (function () {
      * reads fluidez.srs and never writes it, and records nothing but its own
      * best under `relampago`. A wrong answer costs more than a pass, so
      * guessing loses to knowing. */
-    { key: 'relampago', name: 'Relámpago', rule: 'Sixty seconds on things you already know', icon: '⚡',
+    { key: 'relampago', name: 'Relámpago', rule: 'lo que ya sabes, en 60 s', icon: '⚡',
       hue: '#d19a1a', secs: 60, custom: true, owned: true,
-      blurb: 'Sixty seconds on things you already know' }
+      blurb: 'Sesenta segundos con las palabras y formas que ya dominas.' },
+
+    /* THE JUEGOS SHELF (6 Nov 2026; see docs/juegos-refocus.md). Four games
+     * for the arcade board, which hides everything above this line. They are
+     * not rounds of their own so much as ways of dealing from the same index:
+     * `kind` names a generator in js/gameitems.js, and the arcade starts each
+     * one in two shapes, Tranquilo (ten questions, no clock) and Contrarreloj
+     * (sixty seconds) under the keys `<key>:t` and `<key>:c`, so a record in
+     * one shape is never compared with the other.
+     *
+     * New keys, deliberately: `verbos` already holds Conjugación's records,
+     * and a sentence game is not that game. tapFirst is the rule for every
+     * one of them: four Spanish options until an item has been answered
+     * right once, typed afterwards. */
+    { key: 'jugar', name: 'Jugar', rule: 'verbos, palabras y frases', icon: '▶', shelf: true,
+      hue: '#1f9d78', secs: 60, kind: 'smix', tapFirst: true, anyBand: true, maxRung: 10,
+      blurb: 'Un poco de todo: casi la mitad verbos, y lo que fallaste vuelve.' },
+    { key: 'verbos2', name: 'Verbos', rule: 'el verbo, en su frase', icon: '⚡', shelf: true,
+      hue: '#b5711a', secs: 60, kind: 'sverb', tapFirst: true,
+      blurb: 'Una frase con el verbo en blanco. Escribe o toca la forma.' },
+    { key: 'palabras', name: 'Palabras', rule: 'del inglés al español', icon: '📖', shelf: true,
+      hue: '#6f8f2a', secs: 60, kind: 'sword', tapFirst: true, anyBand: true, maxRung: 10,
+      blurb: 'Las palabras, una a una. Las que ya sabes se escriben.' },
+    { key: 'frases', name: 'Frases', rule: 'frases cortas', icon: '💬', shelf: true,
+      hue: '#1d7f8c', secs: 60, kind: 'sphrase', tapFirst: true,
+      blurb: 'Frases cortas del inglés al español.' }
   ];
   function byKey(k) { return GAMES.filter(function (g) { return g.key === k; })[0]; }
 
   function playable(g) {
+    // the Juegos shelf's four games live on the arcade board only (js/arcade.js
+    // has its own playable()); the app's list, recommendation and home card
+    // never offer them
+    if (g.shelf) return false;
     if (!g.needsVoice) return true;
     if (GS.silent()) return false;                  // "can't listen right now"
     return !!(window.Speak && window.Speak.available());
@@ -210,6 +239,7 @@ window.Games = (function () {
       sudden: !!g.sudden,
       maxRung: g.maxRung || 0,
       anyBand: !!g.anyBand,
+      tapFirst: !!g.tapFirst,
       silent: GS.silent() || !hasVoice(),
       onExit: backToList
     };
@@ -326,8 +356,8 @@ window.Games = (function () {
         if (ownedN < GI.OWN_MIN) {
           t.disabled = true;
           t.classList.add('g-tile-off');
-          t.title = 'Come back when you own twenty words and forms';
-          t.appendChild(el('div', 'g-tile-note', 'Come back when you own twenty words and forms'));
+          t.title = 'Vuelve cuando domines veinte palabras y formas';
+          t.appendChild(el('div', 'g-tile-note', 'Vuelve cuando domines veinte palabras y formas'));
         }
       }
       grid.appendChild(t);
@@ -775,13 +805,20 @@ window.Games = (function () {
   // ===========================================================================
   var BOARD_SIZES = [6, 6, 8, 8, 10];
 
+  /* The level filter goes on BEFORE the size check. It used to come after,
+   * so an A1 learner's third board climbed to A2, found every word filtered
+   * out, and the round ended thirty seconds early with no explanation. Now a
+   * board that cannot climb stays at the highest band that can fill it. */
   function vocabBoard(rung, n) {
-    var idx = GI.index(), band = GS.bandForRung(rung);
-    var pool = idx.vocab[band];
-    if (!pool || pool.length < n * 2) pool = idx.vocab.B1.concat(idx.vocab.A2, idx.vocab.A1);
-    var picked = E.shuffle(pool.slice()).filter(function (w) {
-      return !window.Profile || window.Profile.wordAllowed(w);
-    }).slice(0, n);
+    var idx = GI.index(), bi = GS.bandIndex(GS.bandForRung(rung)), band, pool = [];
+    function allowed(w) { return !window.Profile || window.Profile.wordAllowed(w); }
+    for (; bi >= 0; bi--) {
+      band = GS.BANDS[bi];
+      pool = (idx.vocab[band] || []).filter(allowed);
+      if (pool.length >= n * 2) break;
+    }
+    if (pool.length < n) return null;
+    var picked = E.shuffle(pool.slice()).slice(0, n);
     return picked.map(function (w) {
       return { id: 'v:' + w.es + ':meaning', a: w.es, b: w.en, cefr: w.cefr || band };
     });
@@ -882,7 +919,7 @@ window.Games = (function () {
       if (n >= 2) { comboPill.classList.remove('beat'); void comboPill.offsetWidth; comboPill.classList.add('beat'); }
     }
 
-    var open, matched, attempts, found, els, pairs, boardStart;
+    var open, matched, attempts, found, els, pairs, boardStart, dealtBand = 'A1';
     function deal() {
       if (ended) return;
       var n = BOARD_SIZES[Math.min(BOARD_SIZES.length - 1, boards)];
@@ -890,8 +927,11 @@ window.Games = (function () {
       var wantVerbs = boards >= 2 && boards % 2 === 0;
       pairs = (wantVerbs && verbBoard(rung, n)) || vocabBoard(rung, n);
       if (!pairs || !pairs.length) { finish(); return; }
-      band.textContent = GS.bandForRung(rung);
-      band.dataset.band = GS.bandForRung(rung);
+      // the band the board was actually dealt from, which can sit below the rung
+      var dealt = (pairs[0] && pairs[0].cefr) || GS.bandForRung(rung);
+      dealtBand = dealt;
+      band.textContent = dealt;
+      band.dataset.band = dealt;
       open = []; matched = {}; attempts = {}; found = 0; els = {};
       boardStart = Date.now();
       clear(columns);
@@ -926,6 +966,7 @@ window.Games = (function () {
                          'good', firstTry ? Math.min(ms, 4000) : 9000, combo);
         score += a.points; pairsDone++;
         if (firstTry) setCombo(combo + 1); else setCombo(0);
+        GS.sfx('good', combo);
         tween();
         pop('+' + GS.fmt(a.points), 'good');
         if (!recordHit && pb && score > pb) { recordHit = true; shell.dataset.record = '1'; pop('¡RÉCORD!', 'record'); }
@@ -939,6 +980,7 @@ window.Games = (function () {
             var bonus = Math.round(120 * (1 - elapsed / 8000) * pairs.length / 6);
             score += bonus; tween(); pop('+' + GS.fmt(bonus) + ' tablero', 'good');
           }
+          setTimeout(function () { GS.sfx('board'); }, 120);
           boards++;
           rung = Math.min(rungCap, rung + 1);
           setTimeout(deal, 340);
@@ -947,6 +989,7 @@ window.Games = (function () {
         attempts[open[0].pair] = (attempts[open[0].pair] || 0) + 1;
         attempts[open[1].pair] = (attempts[open[1].pair] || 0) + 1;
         setCombo(0);
+        GS.sfx('wrong');
         if (misses.length < 6 && open[0].item) misses.push({ prompt: open[0].item.a, answer: open[0].item.b });
         var two = open.slice();
         two.forEach(function (o) { els[o.uid].classList.add('miss'); });
@@ -960,7 +1003,7 @@ window.Games = (function () {
     function finish() {
       if (ended) return;
       stop();
-      var res = GS.record(g.key, { score: score, combo: bestCombo, band: GS.bandForRung(rung), run: pairsDone });
+      var res = GS.record(g.key, { score: score, combo: bestCombo, band: dealtBand, run: pairsDone });
       clear(h);
       var over = el('div', 'g-over');
       over.dataset.pb = res.isPb ? '1' : '';
@@ -977,7 +1020,7 @@ window.Games = (function () {
       stat(String(pairsDone), 'parejas');
       stat(String(boards + 1), 'tableros');
       stat('×' + (1 + Math.min(bestCombo, 10) * 0.1).toFixed(1), 'mejor combo');
-      stat(GS.bandForRung(rung), 'llegaste a');
+      stat(dealtBand, 'llegaste a');
       over.appendChild(stats);
       var back = el('button', 'g-back', '← Juegos');
       back.type = 'button';
@@ -999,9 +1042,6 @@ window.Games = (function () {
    * through GameScore. Right +2, pass 0, wrong -3 with the total floored at 0,
    * so tapping blind loses to knowing and a pass is the cheap way out.
    * ========================================================================= */
-  var NUM_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
-    'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
-  function numWord(n) { return n <= 20 ? NUM_WORDS[n] : String(n); }
 
   function runRelampago(h, g) {
     var pool = GI.owned();
@@ -1009,8 +1049,8 @@ window.Games = (function () {
     if (pool.count < GI.OWN_MIN) {
       var off = el('div', 'g-over');
       off.appendChild(el('div', 'g-over-eyebrow', g.name));
-      off.appendChild(el('p', 'g-over-verdict', 'Come back when you own twenty words and forms'));
-      var bk = el('button', 'g-back', 'Back');
+      off.appendChild(el('p', 'g-over-verdict', 'Vuelve cuando domines veinte palabras y formas'));
+      var bk = el('button', 'g-back', '← Juegos');
       bk.type = 'button';
       bk.addEventListener('click', backToList);
       off.appendChild(bk);
@@ -1031,7 +1071,7 @@ window.Games = (function () {
     var scoreEl = el('span', 'g-score', '0');
     var exit = el('button', 'g-exit', '✕');
     exit.type = 'button';
-    exit.setAttribute('aria-label', 'Exit');
+    exit.setAttribute('aria-label', 'Salir');
     exit.addEventListener('click', function () { stop(); backToList(); });
     top.appendChild(el('span', 'g-spacer'));
     top.appendChild(exit);
@@ -1052,8 +1092,8 @@ window.Games = (function () {
     var typeEl = el('input', 'g-rl-type');
     typeEl.type = 'text';
     typeEl.autocomplete = 'off'; typeEl.autocapitalize = 'off'; typeEl.spellcheck = false;
-    typeEl.placeholder = 'Or type it';
-    var passBtn = el('button', 'g-rl-pass', 'Pass');
+    typeEl.placeholder = 'o escríbelo';
+    var passBtn = el('button', 'g-rl-pass', 'Paso');
     passBtn.type = 'button';
     shell.appendChild(promptEl); shell.appendChild(hintEl); shell.appendChild(optsEl);
     shell.appendChild(typeEl); shell.appendChild(passBtn);
@@ -1113,9 +1153,11 @@ window.Games = (function () {
       if (result === 'right') {
         rights++; score += 2; streak++; bestStreak = Math.max(bestStreak, streak);
         if (btn) btn.classList.add('right');
+        GS.sfx('good', streak);
       } else if (result === 'wrong') {
         wrongs++; score = Math.max(0, score - 3); streak = 0;
         if (btn) btn.classList.add('wrong');
+        GS.sfx('wrong');
       } else {
         passes++; streak = 0;
       }
@@ -1132,28 +1174,28 @@ window.Games = (function () {
       var best = res.isPb && score > 0;
       var clean = wrongs === 0 && rights >= 5;
       var text, cheer = '';
-      if (best) { text = 'New best: ' + score + '.'; cheer = 'Nice.'; }
-      else if (clean) { text = 'A clean round.'; cheer = 'Nice.'; }
-      else if (rights === 0) text = 'No right answers this time.';
-      else text = numWord(rights) + ' right in sixty seconds.';
+      if (best) { text = '¡Récord! ' + score + '.'; }
+      else if (clean) { text = 'Ronda perfecta.'; cheer = '¡Bien!'; }
+      else if (rights === 0) text = 'Ninguna esta vez.';
+      else text = rights + (rights === 1 ? ' acierto' : ' aciertos') + ' en sesenta segundos.';
       clear(h);
       var over = el('div', 'g-over');
       over.dataset.pb = best ? '1' : '';
       over.appendChild(el('div', 'g-over-eyebrow', g.name));
       over.appendChild(el('div', 'g-over-score', String(score)));
       over.appendChild(el('div', 'g-over-verdict' + (best ? ' pb' : ''), text + (cheer ? ' ' + cheer : '')));
-      var again = el('button', 'g-again', 'Again');
+      var again = el('button', 'g-again', 'Otra vez');
       again.type = 'button';
       again.addEventListener('click', function () { runRelampago(h, g); });
       over.appendChild(again);
       var stats = el('div', 'g-over-stats');
       function stat(n, l) { var x = el('div', 'g-stat'); x.appendChild(el('b', null, n)); x.appendChild(el('span', null, l)); stats.appendChild(x); }
-      stat(String(rights), 'right');
-      stat(String(passes), 'passed');
-      stat(String(wrongs), 'wrong');
-      stat(g.secs + ' s', 'time');
+      stat(String(rights), 'bien');
+      stat(String(passes), 'pasadas');
+      stat(String(wrongs), 'mal');
+      stat(g.secs + ' s', 'tiempo');
       over.appendChild(stats);
-      var back = el('button', 'g-back', 'Back to games');
+      var back = el('button', 'g-back', '← Juegos');
       back.type = 'button';
       back.addEventListener('click', backToList);
       over.appendChild(back);
@@ -1207,9 +1249,9 @@ window.Games = (function () {
     page.style.setProperty('--game', g.hue);
     page.appendChild(el('div', 'g-over-eyebrow', g.name));
     if (decks.length < 1) {
-      page.appendChild(el('p', 'g-over-verdict', 'Come back when you have met both sides of a contrast'));
+      page.appendChild(el('p', 'g-over-verdict', 'Vuelve cuando hayas visto los dos lados de un contraste'));
     } else {
-      page.appendChild(el('p', 'g-over-verdict', 'Pick a contrast'));
+      page.appendChild(el('p', 'g-over-verdict', 'Elige un contraste'));
       var list = el('div', 'g-uno-decks');
       decks.forEach(function (d) {
         var b = el('button', 'g-uno-deck');
@@ -1217,13 +1259,13 @@ window.Games = (function () {
         b.appendChild(el('span', 'g-uno-deck-name', d.short));
         var best = GS.pb('uno:' + d.id);
         b.appendChild(el('span', 'g-uno-deck-meta',
-          d.count + ' items' + (d.timed ? ', timed' : '') + (best ? ', best ' + best : '')));
+          d.count + ' frases' + (d.timed ? ', con reloj' : '') + (best ? ', récord ' + best : '')));
         b.addEventListener('click', function () { unoRound(h, g, known, d); });
         list.appendChild(b);
       });
       page.appendChild(list);
     }
-    var bk = el('button', 'g-back', 'Back');
+    var bk = el('button', 'g-back', '← Juegos');
     bk.type = 'button';
     bk.addEventListener('click', backToList);
     page.appendChild(bk);
@@ -1234,7 +1276,7 @@ window.Games = (function () {
     clear(h);
     var items = GI.contrastRound(deck.id, UNO_N, Math.random, {}, known);
     if (!items.length) return unoChooser(h, g, known);
-    var idx = -1, rights = 0, locked = false, ended = false, timer = null, endAt = 0, item = null;
+    var idx = -1, rights = 0, run = 0, locked = false, ended = false, timer = null, endAt = 0, item = null;
 
     var shell = el('div', 'g-shell g-uno');
     shell.dataset.state = 'play';
@@ -1244,7 +1286,7 @@ window.Games = (function () {
     var scoreEl = el('span', 'g-score', '0');
     var exit = el('button', 'g-exit', '✕');
     exit.type = 'button';
-    exit.setAttribute('aria-label', 'Exit');
+    exit.setAttribute('aria-label', 'Salir');
     exit.addEventListener('click', function () { stop(); unoChooser(h, g, known); });
     top.appendChild(el('span', 'g-spacer'));
     top.appendChild(scoreEl);
@@ -1263,7 +1305,7 @@ window.Games = (function () {
     var hintEl = el('div', 'g-rl-hint');
     var optsEl = el('div', 'g-options');
     var whyEl = el('div', 'g-uno-why');
-    var nextBtn = el('button', 'g-again g-uno-next', 'Next');
+    var nextBtn = el('button', 'g-again g-uno-next', 'Siguiente');
     nextBtn.type = 'button';
     nextBtn.hidden = true;
     [countEl, promptEl, hintEl, optsEl, whyEl, nextBtn].forEach(function (n) { shell.appendChild(n); });
@@ -1286,7 +1328,7 @@ window.Games = (function () {
       if (idx >= items.length) return finish();
       item = items[idx];
       locked = false;
-      countEl.textContent = (idx + 1) + ' of ' + items.length;
+      countEl.textContent = (idx + 1) + ' de ' + items.length;
       promptEl.textContent = item.es;
       hintEl.textContent = item.en || '';
       whyEl.textContent = '';
@@ -1311,14 +1353,16 @@ window.Games = (function () {
       }
       if (btn) btn.classList.add(good ? 'right' : 'wrong');
       if (good) rights++;
+      run = good ? run + 1 : 0;
+      GS.sfx(good ? 'good' : 'wrong', run);
       scoreEl.textContent = String(rights);
       if (good && !item.both) {
         setTimeout(function () { if (!ended) deal(); }, 450);
         return;
       }
-      whyEl.textContent = (item.both ? 'Either works here. ' : (i < 0 ? 'Time. ' : '')) + item.why;
+      whyEl.textContent = (item.both ? 'Aquí valen las dos. ' : (i < 0 ? 'Se acabó el tiempo. ' : '')) + item.why;
       nextBtn.hidden = false;
-      nextBtn.textContent = idx + 1 >= items.length ? 'Finish' : 'Next';
+      nextBtn.textContent = idx + 1 >= items.length ? 'Terminar' : 'Siguiente';
       nextBtn.focus();
     }
     nextBtn.addEventListener('click', function () { if (locked && !ended) deal(); });
@@ -1330,9 +1374,9 @@ window.Games = (function () {
                                               seen: items.length, right: rights, ms: 0 });
       var best = res.isPb && rights > 0 && res.prevPb > 0;
       var text;
-      if (best) text = 'New best on ' + deck.short + ': ' + rights + '.';
-      else if (rights === items.length) text = 'A clean deck.';
-      else text = numWord(rights) + ' of ' + numWord(items.length).toLowerCase() + ' on ' + deck.short + '.';
+      if (best) text = '¡Récord en ' + deck.short + ': ' + rights + '!';
+      else if (rights === items.length) text = 'Mazo perfecto.';
+      else text = rights + ' de ' + items.length + ' en ' + deck.short + '.';
       clear(h);
       var over = el('div', 'g-over');
       over.style.setProperty('--game', g.hue);
@@ -1340,11 +1384,11 @@ window.Games = (function () {
       over.appendChild(el('div', 'g-over-eyebrow', g.name));
       over.appendChild(el('div', 'g-over-score', String(rights)));
       over.appendChild(el('div', 'g-over-verdict' + (best ? ' pb' : ''), text));
-      var again = el('button', 'g-again', 'Again');
+      var again = el('button', 'g-again', 'Otra vez');
       again.type = 'button';
       again.addEventListener('click', function () { unoRound(h, g, known, deck); });
       over.appendChild(again);
-      var back = el('button', 'g-back', 'Back');
+      var back = el('button', 'g-back', '← Otro contraste');
       back.type = 'button';
       back.addEventListener('click', function () { unoChooser(h, g, known); });
       over.appendChild(back);

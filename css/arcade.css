@@ -288,3 +288,42 @@ body { background:var(--bg); color:var(--text); }
 .study-row { justify-content:center; margin-top:26px; }
 .study-no { min-width:140px; }
 .study-yes { min-width:140px; }
+
+/* ---- the 6 Nov shelf: Jugar, the sheet, the tense chips ------------------
+   Jugar is the one big button; it is taller and louder than a tile because it
+   is what most people open the app to do. */
+.arc-jugar {
+  display:block; width:100%; text-align:left; cursor:pointer; position:relative;
+  border:1px solid var(--g); border-radius:var(--radius); background:var(--panel);
+  background:linear-gradient(135deg, color-mix(in srgb, var(--g) 30%, var(--panel)) 0%, var(--panel) 70%);
+  padding:22px 20px 20px; margin-bottom:18px; color:inherit; font:inherit; overflow:hidden;
+}
+.arc-jugar:active { transform:translateY(1px); }
+.arc-jugar-k {
+  display:block; font-size:1.7rem; font-weight:800; letter-spacing:-.01em; color:var(--text);
+}
+.arc-jugar-t { display:block; margin-top:3px; font-size:.95rem; font-weight:600; }
+.arc-jugar-s {
+  display:block; margin-top:8px; font-size:.8rem; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* the sheet: two big buttons, and under Verbos a wrap of tense chips */
+.arc-modes { display:flex; flex-direction:column; gap:12px; margin-top:22px; }
+.arc-mode {
+  display:flex; flex-direction:column; gap:4px; text-align:left; cursor:pointer;
+  font:inherit; color:inherit; background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); padding:18px 18px; position:relative;
+}
+.arc-mode b { font-size:1.12rem; font-weight:750; }
+.arc-mode span { font-size:.8rem; color:var(--muted); }
+.arc-mode::before { content:''; position:absolute; inset:0 auto 0 0; width:4px; background:var(--g, var(--accent)); border-radius:var(--radius) 0 0 var(--radius); }
+.arc-mode.on { border-color:var(--g, var(--accent)); background:var(--panel-2); }
+.arc-mode:active { transform:translateY(1px); }
+
+.arc-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.arc-chip {
+  border:1px solid var(--border); background:transparent; color:var(--muted);
+  border-radius:999px; padding:8px 13px; font:inherit; font-size:.84rem; cursor:pointer;
+}
+.arc-chip.on { background:var(--accent); border-color:var(--accent); color:#06222a; font-weight:700; }

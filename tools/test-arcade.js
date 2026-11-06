@@ -53,7 +53,8 @@ class El {
     this.classList = {
       add(c) { if (!self.cls().includes(c)) self.className = (self.className + ' ' + c).trim(); },
       remove(c) { self.className = self.cls().filter(x => x !== c).join(' '); },
-      contains(c) { return self.cls().includes(c); }
+      contains(c) { return self.cls().includes(c); },
+      toggle(c, on) { if (on === undefined ? !self.cls().includes(c) : on) this.add(c); else this.remove(c); }
     };
   }
   cls() { return String(this.className || '').split(/\s+/).filter(Boolean); }
@@ -102,18 +103,20 @@ global.requestAnimationFrame = () => 1;
 global.cancelAnimationFrame = () => {};
 
 const STAGE = new El('div');
+const DOCLISTENERS = {};
 global.document = {
   documentElement: new El('html'),
   body: new El('body'),
   createElement: t => new El(t),
   createElementNS: (ns, t) => new El(t, ns),
-  removeEventListener() {},
+  removeEventListener(ev, fn) { DOCLISTENERS[ev] = (DOCLISTENERS[ev] || []).filter(f => f !== fn); },
   querySelector: sel => {
     const cls = String(sel).replace(/^\./, '');
     return STAGE.all(n => n.cls().includes(cls))[0] || null;
   },
   getElementById: id => (id === 'stage-host' ? STAGE : null),
-  addEventListener() {}, readyState: 'complete'
+  // listeners are kept so a test can fire visibilitychange
+  addEventListener(ev, fn) { (DOCLISTENERS[ev] = DOCLISTENERS[ev] || []).push(fn); }, readyState: 'complete'
 };
 window.navigator = { language: 'en' };  // Node 20+ makes the global read-only
 
@@ -277,7 +280,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
             const it = W.GameItems.next('vocab', r, rng, Object.assign({ anyBand: true }, opts));
             if (!it) continue;
             out.n++;
-            const w = it.play === 'type' ? it.answer : it.prompt;
+            const w = it.answer;                    // the Spanish, typed or tapped
             if (VERB.test(String(w))) out.verbs++;
           }
         }
@@ -673,16 +676,21 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
  * a play button and the numbers sit behind their own control, and that the
  * stats panel survives both a game with history and one without. */
 {
+  /* The board was cut to Jugar plus three tiles on 6 Nov; everything below up
+   * to the shelf section tests the full board, which window.arcadeFull brings
+   * back (the code is hidden, not deleted). */
+  W.arcadeFull = true;
+  const OLD = W.Games.GAMES.filter(g => !g.shelf);
   W.navigator = window.navigator;
   W.addEventListener = (ev, fn) => { (WINLISTENERS[ev] = WINLISTENERS[ev] || []).push(fn); };
   (0, eval)(fs.readFileSync(path.join(ROOT, 'js/arcade.js'), 'utf8'));
 
   const tiles = STAGE.all(n => n.cls().includes('arc-tile'));
-  ok(tiles.length === W.Games.GAMES.length,
-     `the board drew ${tiles.length} tiles for ${W.Games.GAMES.length} games`);
+  ok(tiles.length === OLD.length,
+     `the board drew ${tiles.length} tiles for ${OLD.length} games`);
   ok(STAGE.all(n => n.cls().includes('arc-daily')).length === 1,
      "the board has no daily-challenge card");
-  W.Games.GAMES.forEach(g => {
+  OLD.forEach(g => {
     ok(STAGE.textContent.indexOf(g.name) !== -1, `the board does not name "${g.name}"`);
   });
   // A game never played shows no stats control — there is nothing to show.
@@ -691,7 +699,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
 
   /* Give one game a history and redraw: the control appears, and opening it
    * renders figures rather than throwing. */
-  const key = W.Games.GAMES[0].key;
+  const key = OLD[0].key;
   for (let i = 0; i < 12; i++) {
     W.GameScore.record(key, { score: 1000 + i * 137, combo: 4, band: 'B1', run: 6,
                               seen: 14, right: 11, ms: 90000 });
@@ -711,7 +719,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
   const back = STAGE.all(n => n.cls().includes('arc-back'))[0];
   ok(!!back, 'the stats panel has no way back');
   back.click();
-  ok(STAGE.all(n => n.cls().includes('arc-tile')).length === W.Games.GAMES.length,
+  ok(STAGE.all(n => n.cls().includes('arc-tile')).length === OLD.length,
      'going back from the stats panel did not restore the board');
 
   /* Derived numbers must refuse to appear on thin evidence: two rounds is not
@@ -896,7 +904,7 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
    * gesture, which is the only navigation an installed full-screen app gets,
    * closed the whole app from inside a panel. */
   {
-    const tileCount = W.Games.GAMES.length;
+    const tileCount = OLD.length;
     const onBoard = () => STAGE.all(n => n.cls().includes('arc-tile')).length === tileCount;
 
     W.Shell.go();
@@ -984,8 +992,215 @@ ok(!!t && W.GameItems.grade(t, t.answer) === 'good', 'a correct answer did not g
     W.GameScore.profileOf = keep;
     STAGE.children.length = 0;
     (0, eval)(fs.readFileSync(path.join(ROOT, 'js/arcade.js'), 'utf8'));
-    ok(STAGE.all(n => n.cls().includes('arc-tile')).length === W.Games.GAMES.length,
+    ok(STAGE.all(n => n.cls().includes('arc-tile')).length === OLD.length,
        'the board did not come back once the missing function was restored');
+  }
+
+  /* ---- the 6 Nov shelf: Jugar and three tiles, two shapes of round --------
+   * Everything above ran against the full board (arcadeFull). This is the board
+   * a player actually gets. */
+  {
+    W.arcadeFull = false;
+    localStorage.removeItem('fluidez.arcade');
+    localStorage.removeItem('fluidez.games');
+    localStorage.removeItem('fluidez.srs');
+    W.Profile.set('B1');
+    W.GameItems.reset();
+    const has = cls => STAGE.all(n => n.cls().includes(cls));
+    const textOf = n => n.textContent;
+    W.Shell.go();
+    const shelfTiles = has('arc-tile');
+    ok(shelfTiles.length === 3, `the shelf has ${shelfTiles.length} tiles, wanted Verbos, Palabras, Frases`);
+    ok(['Verbos', 'Palabras', 'Frases'].every((nm, i) => shelfTiles[i] && textOf(shelfTiles[i]).indexOf(nm) !== -1),
+       'the tiles are not Verbos, Palabras, Frases in that order');
+    ok(has('arc-jugar').length === 1, 'the board has no big Jugar card');
+    ['arc-daily', 'arc-focus', 'arc-study', 'liga'].forEach(c =>
+      ok(has(c).length === 0, `the ${c} card is still on the board`));
+    ok(has('arc-level').length === 1, 'the level button is gone');
+
+    // the sheet: two shapes, and a tense picker on Verbos only
+    shelfTiles[0].click();
+    const modes = has('arc-mode');
+    ok(modes.length === 2 && /Tranquilo · 10 preguntas/.test(textOf(modes[0])) &&
+       /Contrarreloj · 60 s/.test(textOf(modes[1])), 'the sheet does not offer Tranquilo and Contrarreloj');
+    const chips = has('arc-chip');
+    ok(chips.length === 1 + W.ENGINE.TENSES.length && /Todos los de tu nivel/.test(textOf(chips[0])),
+       `the tense picker has ${chips.length} chips`);
+    ok(chips[0].cls().includes('on'), '"Todos los de tu nivel" is not the default');
+    chips.filter(c => c.textContent === (W.ENGINE.TENSE_LABEL.condicional || 'condicional'))[0].click();
+    ok(JSON.stringify(JSON.parse(localStorage.getItem('fluidez.arcade')).tenses) === '["condicional"]',
+       'a tapped tense chip was not remembered');
+    ok(!has('arc-chip')[0].cls().includes('on'), '"Todos" still looks chosen after picking a tense');
+    STAGE.all(n => n.cls().includes('arc-back'))[0].click();
+    shelfTiles[1].click();
+    ok(has('arc-chip').length === 0, 'Palabras offers a tense picker');
+    STAGE.all(n => n.cls().includes('arc-back'))[0].click();
+
+    // timers and frames under the test's control from here
+    const TQ = [], RAFQ = [];
+    const realST = global.setTimeout, realRAF = global.requestAnimationFrame, realNow = Date.now;
+    let T = 1.8e12;
+    global.setTimeout = fn => { TQ.push(fn); return TQ.length; };
+    global.clearTimeout = () => {};
+    global.requestAnimationFrame = fn => { RAFQ.push(fn); return RAFQ.length; };
+    Date.now = () => T;
+    const flush = () => { let g = 0; while (TQ.length && g++ < 200) TQ.shift()(); };
+    const frame = () => { RAFQ.splice(0).forEach(f => f()); };
+    try {
+      // Tranquilo: ten questions, a "n / 10" count, no clock, a record of its own
+      shelfTiles[0].click();
+      has('arc-mode')[0].click();
+      ok(JSON.parse(localStorage.getItem('fluidez.arcade')).mode === 't', 'the last shape was not remembered');
+      ok(/^1 \/ 10$/.test(has('g-secs')[0].textContent), `Tranquilo HUD reads "${has('g-secs')[0].textContent}"`);
+      let answered = 0, guard = 0;
+      while (!has('g-over').length && guard++ < 80) {
+        // this loop only taps: forget right answers so nothing comes back typed
+        localStorage.removeItem('fluidez.srs');
+        const cont = has('g-continue')[0];
+        if (cont) { cont.click(); flush(); continue; }
+        const opt = has('g-opt')[0];
+        if (!opt) break;
+        opt.click(); answered++; localStorage.removeItem('fluidez.srs'); flush();
+      }
+      ok(has('g-over').length === 1, 'a Tranquilo round did not end');
+      ok(answered === 10, `a Tranquilo round asked ${answered} questions, not 10`);
+      ok(W.GameScore.profileOf('verbos2:t').plays === 1 && W.GameScore.profileOf('verbos2:c').plays === 0,
+         'a Tranquilo round was not filed under its own key');
+      ok((DOCLISTENERS.visibilitychange || []).length === 0, 'a Tranquilo round is watching visibility');
+
+      // Contrarreloj: the clock stops while the page is hidden, then 3-2-1
+      T += 1000;
+      W.Games.setListRenderer(function () { W.Shell.go(); });
+      W.Shell.go();
+      has('arc-tile')[1].click();                       // Palabras
+      has('arc-mode')[1].click();
+      const secs = () => has('g-secs')[0].textContent;
+      ok(secs() === '60', `Contrarreloj starts at ${secs()}`);
+      T += 10000; frame();
+      ok(secs() === '50', `ten seconds in, the clock reads ${secs()}`);
+      document.visibilityState = 'hidden';
+      (DOCLISTENERS.visibilitychange || []).forEach(f => f());
+      T += 30000; frame();
+      ok(secs() === '50', `the clock ran while the page was hidden (${secs()})`);
+      document.visibilityState = 'visible';
+      (DOCLISTENERS.visibilitychange || []).forEach(f => f());
+      ok(has('g-resume').length === 1 && has('g-resume')[0].textContent === '3', 'no 3-2-1 on return');
+      T += 2000; frame();
+      ok(secs() === '50', 'the clock ran during the countdown');
+      TQ.shift()(); ok(has('g-resume')[0].textContent === '2', 'the countdown does not count down');
+      flush();
+      ok(has('g-resume').length === 0, 'the countdown never finished');
+      T += 5000; frame();
+      ok(secs() === '45', `after the countdown the clock reads ${secs()}, wanted 45`);
+      has('g-exit')[0].click(); flush();
+    } finally {
+      global.setTimeout = realST; global.requestAnimationFrame = realRAF; Date.now = realNow;
+      document.visibilityState = 'visible';
+    }
+
+    // ---- what the shelf deals ----
+    const GI = W.GameItems;
+    const draws = (kind, n, opts) => { const out = []; for (let i = 0; i < n; i++) { const it = GI.next(kind, 1 + (i % 10), rng, opts || {}); if (it) out.push(it); } return out; };
+    localStorage.removeItem('fluidez.srs');
+
+    // tenses by band, cumulative
+    const counts = { A1: 1, A2: 6, B1: 10, B2: 14, C1: 14 };
+    Object.keys(counts).forEach(b => ok(GI.tensesForBand(b).length === counts[b], `${b} has ${GI.tensesForBand(b).length} tenses, wanted ${counts[b]}`));
+    ok(GI.tensesForBand('A1').join() === 'presente', 'A1 is not the present alone');
+
+    // Verbos: a sentence with a gap, tapped until known, then typed
+    W.Profile.set('A1'); GI.reset();
+    let vs = draws('sverb', 120, { tapFirst: true });
+    ok(vs.length >= 100, `only ${vs.length} of 120 Verbos draws dealt`);
+    ok(vs.every(i => i.topic === 'tense:presente'), 'an A1 Verbos round dealt a tense above A1');
+    ok(vs.every(i => i.play === 'choose' && i.options.length === 4 && i.options.indexOf(i.answer) !== -1),
+       'a Verbos item nobody has answered is not a four-way choice');
+    ok(vs.every(i => /＿＿＿/.test(i.prompt) && i.sub), 'a Verbos item is not a gapped sentence with its English');
+    ok(vs.every(i => i.kind === 'grammar' && i.id.indexOf('vt:') === 0), 'a Verbos item has no verb-tense SRS id');
+    W.Profile.set('B1'); GI.reset();
+    vs = draws('sverb', 200, {});
+    ok(vs.every(i => GI.tensesForBand('B1').indexOf(i.topic.replace('tense:', '')) !== -1), 'a B1 round dealt a B2 tense');
+    const picked = draws('sverb', 60, { tenses: ['impsubj'] });
+    ok(picked.length > 50 && picked.every(i => i.topic === 'tense:impsubj'), 'a chosen tense above the level was not honoured');
+    // known -> typed
+    const idxT = GI.index().byTense;
+    const srsAll = {};
+    Object.keys(idxT).forEach(t => idxT[t].forEach(r => { srsAll['vt:' + r.inf + ':' + r.tense] = { reps: 2 }; }));
+    localStorage.setItem('fluidez.srs', JSON.stringify(srsAll));
+    vs = draws('sverb', 80, {});
+    ok(vs.length > 60 && vs.every(i => i.play === 'type' && i.accept[0] === i.answer), 'verbs answered right are not asked typed');
+    ok(vs.every(i => i.options && i.options.indexOf(i.answer) !== -1), 'a typed verb item lost the options its revisit needs');
+    localStorage.removeItem('fluidez.srs');
+
+    // a thin tense falls back to the meaning-to-form question, without its label
+    {
+      W.Profile.set('C1'); GI.reset();
+      const saved = GI.index().byTense.presubj;
+      GI.index().byTense.presubj = [];
+      const fb = draws('sverb', 60, { tenses: ['presubj'] });
+      GI.index().byTense.presubj = saved;
+      ok(fb.length > 40, `the fallback dealt only ${fb.length} of 60`);
+      ok(fb.every(i => !/subjunctive/i.test(i.prompt)), 'a fallback verb prompt still carries "(subjunctive)"');
+      ok(fb.every(i => i.play === 'choose' && i.options.length === 4), 'a fallback verb item is not tapped first');
+    }
+    W.Profile.set('B1'); GI.reset();
+
+    // Palabras: English shown, Spanish options; typed only once answered
+    let ws = draws('sword', 150, {});
+    ok(ws.length > 120 && ws.every(i => i.play === 'choose' && i.options.length === 4),
+       'Palabras did not deal four-way choices');
+    ok(ws.every(i => i.options.indexOf(i.answer) !== -1 && i.prompt !== i.answer), 'a Palabras item is malformed');
+    const vocAll = {};
+    ['A1', 'A2', 'B1', 'B2', 'C1'].forEach(b => (GI.index().vocab[b] || []).forEach(w => { vocAll['v:' + w.es + ':meaning'] = { reps: 1 }; }));
+    localStorage.setItem('fluidez.srs', JSON.stringify(vocAll));
+    ws = draws('sword', 150, {});
+    const typedN = ws.filter(i => i.play === 'type').length;
+    ok(typedN > 100, `only ${typedN} of ${ws.length} known words came back typed`);
+    ok(ws.filter(i => i.play === 'type').every(i => GI.grade(i, i.answer.replace(/^(el|la|los|las)\s+/, '')) === 'good'),
+       'the article is not optional when a word is typed');
+    localStorage.removeItem('fluidez.srs');
+
+    // Frases: typed at six words or fewer, chips up to eight, nothing longer
+    const fr = draws('sphrase', 300, {});
+    ok(fr.length > 250, `Frases dealt only ${fr.length} of 300`);
+    const wc = i => String(i.es).trim().split(/\s+/).length;
+    ok(fr.every(i => wc(i) <= 8), 'Frases dealt a phrase longer than eight words');
+    ok(fr.filter(i => i.play === 'type').every(i => wc(i) <= 6), 'Frases asked a long phrase typed');
+    ok(fr.filter(i => i.play === 'build').every(i => wc(i) >= 7), 'Frases built a short phrase from chips');
+    ok(fr.some(i => i.play === 'build') && fr.some(i => i.play === 'type'), 'Frases uses only one way of answering');
+
+    // Jugar: 45% verbs, 40% words, 15% phrases
+    const mix = draws('smix', 1500, { tapFirst: true });
+    const share = f => mix.filter(f).length / mix.length;
+    const sv = share(i => i.id && /^vt:/.test(i.id)), sw = share(i => i.kind === 'vocab'), sp = share(i => i.kind === 'translate');
+    ok(Math.abs(sv - 0.45) < 0.07 && Math.abs(sw - 0.40) < 0.07 && Math.abs(sp - 0.15) < 0.06,
+       `Jugar dealt ${Math.round(sv * 100)}/${Math.round(sw * 100)}/${Math.round(sp * 100)} verbs/words/phrases`);
+
+    // the miss revisit knows the shelf's kinds
+    localStorage.removeItem('fluidez.errors');
+    W.ErrorLog.record({ id: 'vt:comer:presente', front: 'Yo ＿＿＿ (comer) pan.', back: 'como', kind: 'grammar',
+                        source: 'game', reviewable: false, options: ['como', 'comes', 'come', 'comemos'] });
+    W.ErrorLog.record({ id: 'v:la barca:meaning', front: 'small boat', back: 'la barca', es: 'la barca', en: 'small boat',
+                        kind: 'vocab', source: 'game', reviewable: false });
+    W.ErrorLog.record({ id: 'k:buenos dias', front: 'good morning', back: 'buenos días', es: 'buenos días', en: 'good morning',
+                        kind: 'translate', source: 'game', reviewable: false });
+    ok(GI.missDeck('sverb', 9).length === 1 && GI.missDeck('sword', 9).length === 1 && GI.missDeck('sphrase', 9).length === 1 &&
+       GI.missDeck('smix', 9).length === 3, 'the shelf kinds do not find their own misses');
+    // a missed word comes back tapped, not typed
+    const rv = GI.deckItem(GI.missDeck('sword', 9), rng, { tapFirst: true });
+    ok(rv && rv.play === 'choose' && rv.options.indexOf('la barca') !== -1, 'a revisited word is not asked tapped');
+    localStorage.removeItem('fluidez.errors');
+
+    // per tense, for the report
+    W.Profile.set('C1'); GI.reset();
+    const perTense = Object.keys(GI.index().byTense).map(t => t + ' ' + GI.index().byTense[t].length).join(', ');
+    console.log('  verb-gap sentences per tense: ' + perTense);
+
+    localStorage.removeItem('fluidez.arcade');
+    localStorage.removeItem('fluidez.games');
+    W.Profile.set('B1'); GI.reset();
+    W.arcadeFull = true;
+    W.Shell.go();
   }
 
   console.log('  board drew ' + tiles.length + ' tiles; stats panel renders and returns');

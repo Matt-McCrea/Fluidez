@@ -522,26 +522,43 @@ window.GameItems = (function () {
   // where a fixed set of chips has exactly one right order.
   var BUILD_FROM = 6;
 
+  /* HOW LONG A BUILT SENTENCE MAY BE, by rung. Measured on 5 Nov: from B1 up
+   * 85% of Traducción was chips, averaging eight words at EVERY rung, so a
+   * B1+ round was wall-to-wall scrambles of the same length and a sentence
+   * cost ten to fifteen seconds — three typed items' worth — however well you
+   * were doing. "Las frases se alargan según aciertas" was not true. Now the
+   * ceiling climbs with the run, and about half the items at the top are short
+   * typed ones, so the pace alternates instead of grinding. */
+  function buildMax(rung) { return rung <= 5 ? 7 : Math.min(14, rung + 2); }
+
   function translateItem(rung, rng) {
     var idx = index(), band = bandOf(rung);
-    var want = rung >= 6;                                   // long enough to build
+    var want = rung >= 6 && rnd(rng) < 0.55;              // long enough to build
+    var maxN = buildMax(rung);
     function shaped() {
       var got = fromBands(idx.pairs, band, rng);
       if (!got) return null;
       var p = got.item;
       var longish = p.n >= BUILD_FROM;
+      if (longish && p.n > maxN) return null;               // not this long yet
       if (want !== longish && rnd(rng) < 0.75) return null;  // mostly honour the shape
       return { p: p, cefr: got.cefr, build: longish };
     }
     var got = null;
-    for (var i = 0; i < 6 && !got; i++) got = shaped();
+    for (var i = 0; i < 10 && !got; i++) got = shaped();
     if (!got) { var g = fromBands(idx.pairs, band, rng); if (!g) return null; got = { p: g.item, cefr: g.cefr, build: g.item.n >= BUILD_FROM }; }
 
-    var p = got.p;
+    return pairItem(got.p, got.cefr, got.build);
+  }
+
+  /* One sentence pair as a question: typed, or built from chips. The caller
+   * decides which, because the line between them is a policy (translateItem
+   * draws it at six words, Frases at six typed and eight built). */
+  function pairItem(p, cefr, build) {
     var bonus = (p.bonus || 0) + Math.max(0, p.n - 3) * 10;
-    var base = { kind: 'translate', cefr: got.cefr, bonus: bonus, es: p.es,
+    var base = { kind: 'translate', cefr: cefr, bonus: bonus, es: p.es,
                  prompt: p.en, answer: p.es, note: p.note, topic: null, id: p.id || null };
-    if (!got.build) { base.play = 'type'; base.accept = [p.es]; return base; }
+    if (!build) { base.play = 'type'; base.accept = [p.es]; return base; }
 
     /* Chips carry no punctuation at all. A chip reading "noticia," asks the
      * learner to reproduce comma placement, which is not what this item is
@@ -776,7 +793,15 @@ window.GameItems = (function () {
    * REAL FORMS of the same verb — other persons of this tense and the same
    * person in other tenses. Every option is Spanish somebody says; only one of
    * them is what this sentence means. */
-  function applyOptions(it, rng) {
+  /* `samePerson` (Verbos): the wrong options are the SAME person in other
+   * tenses, never another person in the same tense. A sentence with no
+   * subject — "＿＿＿ (pasar) por la puerta, por favor" — is right with pase,
+   * pasa and pasen alike, so offering other persons made a fair answer wrong.
+   * Choosing the tense is the skill being drilled; the person is given by the
+   * sentence. Other persons fill in only when the sentence names its subject. */
+  var NAMED_SUBJECT = /(^|[\s¿¡,])(yo|tú|él|ella|usted|nosotros|nosotras|ellos|ellas|ustedes)\s/i;
+  var DISTRACTOR_TENSES = ['presente', 'preterito', 'imperfecto', 'futuro', 'condicional', 'presubj', 'perfecto'];
+  function applyOptions(it, rng, tensePool, samePerson) {
     var v = E.verbByInf(it.inf);
     if (!v) return null;
     var persons = E.personsFor(it.tense);
@@ -784,16 +809,26 @@ window.GameItems = (function () {
     if (pi < 0 || it.person === 'vosotros') return null;
     var right = E.conjugate(v, it.tense)[pi];
     if (!right) return null;
-    var others = [], allowed = window.Profile ? window.Profile.tenses() : [];
+    var others = [], allowed = tensePool || (window.Profile ? window.Profile.tenses() : []);
     E.shuffle((allowed.length ? allowed : ['presente', 'preterito', 'imperfecto', 'futuro', 'presubj'])
       .filter(function (t) { return t !== it.tense; })).forEach(function (tk) {
-      if (others.length >= 2) return;
+      if (others.length >= (samePerson ? 3 : 2)) return;
       var pj = E.personsFor(tk).indexOf(it.person);
       var f = pj >= 0 ? E.conjugate(v, tk)[pj] : null;
       if (f && f !== right && others.indexOf(f) === -1) others.push(f);
     });
+    if (samePerson) {
+      // a narrow level (A1 is the present alone) still needs wrong tenses to choose between
+      E.shuffle(DISTRACTOR_TENSES.slice()).forEach(function (tk) {
+        if (others.length >= 3 || tk === it.tense) return;
+        var pj = E.personsFor(tk).indexOf(it.person);
+        var f = pj >= 0 ? E.conjugate(v, tk)[pj] : null;
+        if (f && f !== right && others.indexOf(f) === -1) others.push(f);
+      });
+    }
+    var named = NAMED_SUBJECT.test(' ' + String(it.text || it.q || ''));
     E.shuffle(persons.map(function (_, i) { return i; })).forEach(function (i) {
-      if (others.length >= 3 || !notVos(it.tense, i)) return;
+      if (others.length >= 3 || !notVos(it.tense, i) || (samePerson && !named)) return;
       var f = E.conjugate(v, it.tense)[i];
       if (f && f !== right && others.indexOf(f) === -1) others.push(f);
     });
@@ -1053,7 +1088,7 @@ window.GameItems = (function () {
    * climb. Distractors still come from the index, because a four-way question
    * whose wrong answers were all in the pack you just read is a memory test of
    * the last ninety seconds rather than of the words. */
-  function deckItem(deck, rng) {
+  function deckItem(deck, rng, opts) {
     if (!deck || !deck.length) return null;
     var c = pick(deck, rng);
     if (!c) return null;
@@ -1066,6 +1101,8 @@ window.GameItems = (function () {
     }
     if (!c.es || !c.en) return null;
     var typed = TYPEABLE.test(c.es) && c.es.trim().split(/\s+/).length <= 3;
+    // a missed word has not been answered right yet, so the shelf asks it tapped
+    if (typed && opts && opts.tapFirst && c.id && !answeredRight(c.id) && /^v:/.test(c.id)) typed = false;
     var base = { kind: 'vocab', cefr: c.cefr || 'B1', bonus: 0, id: c.id,
                  topic: null, es: c.es, en: c.en, note: null };
     if (typed) {
@@ -1073,15 +1110,25 @@ window.GameItems = (function () {
       base.accept = [c.es, c.es.replace(/^(el|la|los|las)\s+/i, '')];
       return base;
     }
+    /* Too long to type, so a missed SENTENCE comes back as chips, the way a
+     * long Traducción item is asked; a long word or phrase as four Spanish
+     * options. Either way the English is shown and the Spanish is the answer:
+     * a miss asked back the other way round is a different, easier question. */
+    var words = c.es.replace(/[.,;:!?¿¡"“”]/g, '').replace(/\s+/g, ' ').trim().split(' ');
+    base.prompt = c.en;
+    if (words.length >= 4 && words.length <= 14 && /[.!?]$/.test(c.es.trim())) {
+      base.play = 'build'; base.words = words; base.answer = words.join(' '); base.reveal = c.es;
+      return base;
+    }
     var idx = index(), wrong = [];
     for (var i = 0; i < 24 && wrong.length < 3; i++) {
       var got = fromBands(idx.vocab, base.cefr, rng);
       var o = got && got.item;
-      if (o && o.en && o.en !== c.en && wrong.indexOf(o.en) === -1) wrong.push(o.en);
+      if (o && o.es && o.es !== c.es && wrong.indexOf(o.es) === -1) wrong.push(o.es);
     }
     if (wrong.length < 3) return null;
-    base.play = 'choose'; base.prompt = c.es; base.answer = c.en;
-    base.options = E.shuffle([c.en].concat(wrong), rng);
+    base.play = 'choose'; base.answer = c.es;
+    base.options = E.shuffle([c.es].concat(wrong), rng);
     return base;
   }
 
@@ -1107,13 +1154,25 @@ window.GameItems = (function () {
    * So there are two shapes of revisitable miss:
    *   a WORD  — es and en both known, asked meaning → Spanish either way round
    *   a GAP   — a prompt, an answer and the options it was tapped from */
+  /* The shelf's four kinds are not item kinds, so what each one may revisit is
+   * spelled out. Verbos takes verb-in-a-sentence gaps (their SRS id is
+   * vt:<inf>:<tense>, whatever kind they were filed under once replayed) and
+   * form questions; Palabras takes words; Frases takes sentences. */
+  function missWants(kind, e) {
+    var id = String(e.id || '');
+    if (kind === 'sverb') return /^vt:/.test(id) && (e.kind === 'grammar' || e.kind === 'verb' || e.kind === 'contrast');
+    if (kind === 'sword') return e.kind === 'vocab' && /^v:/.test(id);
+    if (kind === 'sphrase') return e.kind === 'translate';
+    if (kind === 'smix') return (/^vt:/.test(id) && e.kind !== 'vocab') || e.kind === 'vocab' || e.kind === 'translate';
+    return kind === e.kind;
+  }
   function missDeck(kind, max) {
     if (!window.ErrorLog) return [];
     var out = [];
     window.ErrorLog.list().forEach(function (e) {
       if (out.length >= (max || 20)) return;
       if (!e.id) return;
-      if (kind && kind !== 'mixed' && kind !== e.kind) return;
+      if (kind && kind !== 'mixed' && !missWants(kind, e)) return;
       if (e.es && e.en) {
         out.push({ id: e.id, es: String(e.es), en: String(e.en), cefr: e.cefr || 'B1' });
       } else if (e.front && e.back && e.options && e.options.length > 1) {
@@ -1201,6 +1260,14 @@ window.GameItems = (function () {
      * choosing rather than being dropped. */
     var short = wd.es.trim().split(/\s+/).length <= 3;
     var typed = short && (rung >= 5 || rnd(rng) < 0.35) && TYPEABLE.test(wd.es) && !/^\*/.test(wd.es);
+    /* TAP FIRST, TYPE ONCE KNOWN (the Juegos shelf). A word you have never
+     * answered right is shown as four Spanish options; once the SRS has a right
+     * answer for it, it comes back typed. The ladder's own coin flip no longer
+     * decides, because for a commuter with one thumb the cost of a typed word
+     * you do not know yet is a keyboard and a guess. */
+    if (opts && opts.tapFirst) {
+      typed = short && TYPEABLE.test(wd.es) && !/^\*/.test(wd.es) && answeredRight('v:' + wd.es + ':meaning');
+    }
     var item = { kind: 'vocab', cefr: got.cefr, bonus: 0, id: 'v:' + wd.es + ':meaning',
                  topic: null, note: (wd.collocations && wd.collocations[0]) || null };
     if (typed) {
@@ -1212,12 +1279,13 @@ window.GameItems = (function () {
     var wrong = [];
     for (var i = 0; i < 20 && wrong.length < 3; i++) {
       var o = pick(pool, rng);
-      if (o && o.en !== wd.en && wrong.indexOf(o.en) === -1) wrong.push(o.en);
+      if (o && o.es !== wd.es && o.en !== wd.en && wrong.indexOf(o.es) === -1) wrong.push(o.es);
     }
     if (wrong.length < 3) return null;
+    // English shown, Spanish chosen: the same direction as the typed question
     item.play = 'choose';
-    item.prompt = wd.es; item.answer = wd.en; item.es = wd.es;
-    item.options = E.shuffle([wd.en].concat(wrong));
+    item.prompt = wd.en; item.answer = wd.es; item.es = wd.es;
+    item.options = E.shuffle([wd.es].concat(wrong));
     return item;
   }
 
@@ -1247,6 +1315,135 @@ window.GameItems = (function () {
       }
     }
     return verbItem(rung, rng, { tense: tk });
+  }
+
+  /* ===========================================================================
+   * THE JUEGOS SHELF: Verbos, Palabras, Frases, and Jugar, which mixes them.
+   *
+   * Four generators, each answering one commuter question. They share one rule
+   * about HOW a question is asked: TAP FIRST, TYPE ONCE KNOWN. An item whose SRS
+   * card has been answered right at least once comes back typed; anything else
+   * is four Spanish options. Always the English (or a sentence) in front and
+   * the Spanish behind it, never the other way round.
+   * ========================================================================= */
+  function answeredRight(id) {
+    if (!id) return false;
+    var c = srsStore()[id];
+    return !!(c && typeof c === 'object' && c.reps > 0);
+  }
+
+  /* Which tenses are "yours", cumulative by band. Not Profile.tenses(), which
+   * is what the COURSE has taught and is the present alone for a fresh A1
+   * install; this is a practice shelf, and a band is a promise about what a
+   * player at that band is expected to handle. */
+  var BAND_TENSES = {
+    A1: ['presente'],
+    A2: ['preterito', 'imperfecto', 'perfecto', 'futuro', 'imperativo'],
+    B1: ['condicional', 'presubj', 'plusc', 'impneg'],
+    B2: ['impsubj', 'futperf', 'condperf', 'perfsubj']
+  };
+  function tensesForBand(band) {
+    var out = [];
+    for (var i = 0; i < BANDS.length; i++) {
+      (BAND_TENSES[BANDS[i]] || []).forEach(function (t) { out.push(t); });
+      if (BANDS[i] === band) break;
+    }
+    return out;
+  }
+  function playerBand() { return (window.Profile && window.Profile.current && window.Profile.current()) || 'A1'; }
+
+  function gapWords(q) { return String(q).replace(/_+/g, 'x').trim().split(/\s+/).length; }
+
+  /* A SENTENCE WITH THE VERB LEFT OUT. The infinitive sits in brackets inside
+   * the sentence (the corpus's own convention), the English rides under it in
+   * `sub`, and the answer is the conjugated form. Wrong options are the same
+   * person in other tenses (see applyOptions): all real Spanish, only one of
+   * them what this sentence means. Ten words or fewer is preferred; a tense with fewer
+   * than three such sentences borrows from its longer ones before it gives up. */
+  function verbGapItem(tk, rng, tensePool) {
+    var pool = own(index().byTense, tk) || [];
+    if (pool.length < 3) return null;
+    var short = pool.filter(function (r) { return gapWords(r.q) <= 10; });
+    var from = short.length >= 3 ? short : pool;
+    for (var i = 0; i < 8; i++) {
+      var q = pick(from, rng);
+      var o = applyOptions(q, rng, tensePool, true);
+      if (!o) continue;
+      var prompt = q.q.replace(/___+/g, '＿＿＿');
+      if (prompt.indexOf('(') === -1) prompt += ' (' + q.inf + ')';
+      var id = 'vt:' + q.inf + ':' + q.tense;
+      return { kind: 'grammar', play: answeredRight(id) ? 'type' : 'choose', cefr: q.cefr, inf: q.inf,
+        topic: 'tense:' + q.tense, id: id, prompt: prompt, answer: o.right, accept: [o.right],
+        // kept on typed items too: a miss is revisited as a tap, and the error
+        // log stores the options with it
+        // no note: the English is already on screen under the sentence
+        options: o.options, sub: q.en || null, note: null,
+        bonus: 20 + (TENSE_BONUS[q.tense] || 0) / 2 };
+    }
+    return null;
+  }
+
+  /* A tense with next to no sentences still has to be playable (a player can
+   * choose any tense, including one the corpus covers thinly). It falls back to
+   * the meaning-to-form question, minus the grammar label that question
+   * normally carries: this game says "(subjunctive)" nowhere. */
+  function verbFormItem(tk, rung, rng) {
+    var it = verbItem(rung, rng, { tense: tk });
+    if (!it) return null;
+    it.prompt = it.prompt.replace(/\s*\(subjunctive\)/, '');
+    var v = E.verbByInf(it.inf);
+    var forms = v ? E.conjugate(v, tk) : null;
+    var pi = forms ? forms.indexOf(it.answer) : -1;
+    var opts = pi >= 0 ? formOptions(v, tk, pi, it.answer) : null;
+    if (opts) {
+      it.options = opts;
+      it.play = answeredRight(it.id) ? 'type' : 'choose';
+    }
+    return it;
+  }
+
+  function sverbItem(rung, rng, opts) {
+    var band = playerBand();
+    var base = tensesForBand(band);
+    var chosen = opts && opts.tenses && opts.tenses.length ? opts.tenses : null;
+    var tenses = chosen || base;
+    var tensePool = base.concat((chosen || []).filter(function (t) { return base.indexOf(t) === -1; }));
+    for (var i = 0; i < 6; i++) {
+      var tk = pick(tenses, rng);
+      var it = verbGapItem(tk, rng, tensePool) || verbFormItem(tk, rung, rng);
+      if (it) return it;
+    }
+    return null;
+  }
+
+  function sphraseItem(rung, rng) {
+    var idx = index(), band = bandOf(rung);
+    for (var i = 0; i < 18; i++) {
+      var got = fromBands(idx.pairs, band, rng);
+      if (!got) continue;
+      var p = got.item;
+      if (p.n > 8 || p.n < 2) continue;             // too long to build on a phone; one word is Palabras
+      return pairItem(p, got.cefr, p.n > 6);         // typed at six words or fewer
+    }
+    return null;
+  }
+
+  function swordItem(rung, rng, opts) {
+    var o = { anyBand: true, tapFirst: true };
+    if (opts) { o.theme = opts.theme; o.only = opts.only; }
+    return vocabItem(rung, rng, o);
+  }
+
+  /* Jugar: forty-five parts verbs, forty words, fifteen phrases. */
+  function smixItem(rung, rng, opts) {
+    var r = rnd(rng);
+    var order = r < 0.45 ? ['sverb', 'sword', 'sphrase']
+              : r < 0.85 ? ['sword', 'sverb', 'sphrase'] : ['sphrase', 'sword', 'sverb'];
+    for (var i = 0; i < order.length; i++) {
+      var it = draw(order[i], rung, rng, opts);
+      if (it) return it;
+    }
+    return null;
   }
 
   // ---- the mix -------------------------------------------------------------
@@ -1298,6 +1495,10 @@ window.GameItems = (function () {
       case 'contrast':  return contrastItem(rung, rng);
       case 'vocab':     return vocabItem(rung, rng, opts);
       case 'tense':     return tenseItem(rung, rng, opts);
+      case 'sverb':     return sverbItem(rung, rng, opts);
+      case 'sword':     return swordItem(rung, rng, opts);
+      case 'sphrase':   return sphraseItem(rung, rng);
+      case 'smix':      return smixItem(rung, rng, opts);
       case 'mixed':     return mixedItem(rung, rng, opts);
       default:          return mixedItem(rung, rng, opts);
     }
@@ -1502,6 +1703,7 @@ window.GameItems = (function () {
     draw: draw, next: next, grade: grade, reset: reset, index: index, words: words,
     setFocus: setFocus, weakItem: weakItem, deckItem: deckItem, missDeck: missDeck,
     conjPrompt: conjPrompt,
+    answeredRight: answeredRight, tensesForBand: tensesForBand,
     listenRate: listenRate, bandForLevel: bandForLevel,
     enKey: enKey, altsFor: altsFor,
     owned: owned, relampagoItem: relampagoItem, OWN_MIN: OWN_MIN,

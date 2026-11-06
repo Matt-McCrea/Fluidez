@@ -56,7 +56,14 @@ window.GameRound = (function () {
      * death, where each ITEM carries the clock instead. */
     var lives = cfg.lives || (cfg.sudden ? 1 : 0);
     var livesLeft = lives;
-    var perItemClock = !cfg.duration;
+    /* TRANQUILO. cfg.count is a round of N questions with no clock at all: it
+     * ends when the Nth is answered, the HUD shows "3 / 10" where the seconds
+     * were, and the bar fills as you go. Speed still adds bonus points (that is
+     * the scoring formula and it needs no clock), it just never ends anything.
+     * Without a duration the engine used to mean sudden death; a count is
+     * neither that nor a sprint, so it is named explicitly. */
+    var counted = !!cfg.count;
+    var perItemClock = !cfg.duration && !counted;
 
     var startedAt = Date.now();
     /* The round's own shape, sampled at every score change, so a record round
@@ -72,6 +79,12 @@ window.GameRound = (function () {
     var comboBefore = 0, rungBefore = rung;
     var seen = 0, right = 0, runLen = 0, bestRun = 0, misses = [], usedPrompts = {};
     var ended = false, paused = false, pausedAt = 0, recordHit = false;
+    /* WHY THE CLOCK IS STOPPED. Two things can hold it: the correction screen
+     * ('fb') and the app being hidden ('vis': the phone locked, another app in
+     * front). It restarts only when neither does, so coming back to the app
+     * mid-correction cannot start a clock under a screen that is waiting for
+     * you to read it. */
+    var holds = { fb: false, vis: false };
     var endAt = cfg.duration ? Date.now() + cfg.duration : null;
     var itemStart = 0, itemWindow = 0, current = null, resolved = true;
     var raf = null, pendingContinue = null, lastTyped = '';
@@ -199,6 +212,12 @@ window.GameRound = (function () {
       var frac = Math.max(0, Math.min(1, left / total()));
       clockFill.style.transform = 'scaleX(' + frac + ')';
       var secs = Math.ceil(left / 1000);
+      if (counted) {
+        secsEl.textContent = Math.min(seen + 1, cfg.count) + ' / ' + cfg.count;
+        clockFill.style.transform = 'scaleX(' + Math.min(1, seen / cfg.count) + ')';
+        raf = requestAnimationFrame(tick);
+        return;
+      }
       if (perItemClock) {
         secsEl.textContent = runLen + (runLen === 1 ? ' seguida' : ' seguidas');
         clock.dataset.urgent = left < 3000 ? '1' : '';
@@ -225,16 +244,59 @@ window.GameRound = (function () {
       }
       raf = requestAnimationFrame(tick);
     }
-    function pause() { if (paused || ended) return; pausedAt = Date.now(); paused = true; }
-    function resume() {
-      if (!paused) return;
+    function anyHold() { return holds.fb || holds.vis; }
+    function pause(why) {
+      if (ended) return;
+      var was = anyHold();
+      holds[why || 'fb'] = true;
+      if (!was) { pausedAt = Date.now(); paused = true; }
+    }
+    function resume(why) {
+      why = why || 'fb';
+      if (!holds[why]) return;
+      holds[why] = false;
+      if (anyHold() || !paused) return;
       var slept = Date.now() - pausedAt;
       if (endAt) endAt += slept;
       itemStart += slept;
       paused = false;
     }
+
+    /* PAUSE ON HIDE (Contrarreloj only; a Tranquilo round has no clock to
+     * protect). A phone in a pocket locks itself, and a sixty-second round
+     * that kept running through that was a round lost to the lock screen.
+     * When the page is hidden the clock stops; when it comes back there is a
+     * 3-2-1 over the question rather than an instant restart, because the
+     * first second back is spent finding the screen again. */
+    var resumeBox = null, resumeTimers = [];
+    function clearResume() {
+      resumeTimers.forEach(clearTimeout); resumeTimers = [];
+      if (resumeBox && resumeBox.parentNode) resumeBox.parentNode.removeChild(resumeBox);
+      resumeBox = null;
+    }
+    function isHidden() { return document.visibilityState === 'hidden' || document.hidden === true; }
+    function onVisibility() {
+      if (ended) return;
+      if (isHidden()) { clearResume(); pause('vis'); return; }
+      if (!holds.vis || resumeBox) return;
+      resumeBox = el('div', 'g-resume');
+      shell.appendChild(resumeBox);
+      var step = cfg.resumeStepMs || 700, n = 3;
+      (function count() {
+        if (ended || !resumeBox) return;
+        resumeBox.textContent = n > 0 ? String(n) : '';
+        if (n === 0) { clearResume(); resume('vis'); return; }
+        n--;
+        resumeTimers.push(setTimeout(count, step));
+      })();
+    }
+    var watchVisibility = !!cfg.duration && !cfg.noAutoPause;
+    if (watchVisibility) document.addEventListener('visibilitychange', onVisibility);
+
     function stop() {
       ended = true;
+      clearResume();
+      document.removeEventListener('visibilitychange', onVisibility);
       if (raf) cancelAnimationFrame(raf);
       if (window.Speak) window.Speak.stop();
       document.removeEventListener('keydown', onKey);
@@ -293,25 +355,24 @@ window.GameRound = (function () {
       }
       if (item.id && S) S.enrol(item.id);      // eligible sooner, but not lapsed
       if (window.ErrorLog) {
-        /* es/en as well as front/back. The orientation of a game item flips
-         * with how it was played — a typed vocab question shows the English
-         * and a tapped one shows the Spanish — so front/back alone cannot say
-         * which side is which, and js/study.js needs to know in order to build
-         * a card that always asks meaning → Spanish. Derived rather than
-         * demanded, so no generator has to remember to supply it.
+        /* es/en as well as front/back, because js/study.js needs to know
+         * which side is which to build a card that asks meaning → Spanish.
+         * Every word, sentence and verb item now shows the English and asks
+         * for the Spanish whether it is typed, tapped or built, so the prompt
+         * is the meaning and the answer is the Spanish. (A tapped vocab
+         * question used to show the Spanish, and its revisit came back with
+         * the Spanish on both sides.)
          *
          * `reviewable` stays false on purpose: that flag makes ErrorLog grade
          * the card DOWN, and a mistype at second 58 must not demote something
          * you know. Coming back and being demoted are different things, and
          * the pack is how a game miss now comes back. */
         /* es/en only where the two sides really ARE a Spanish word and its
-         * meaning. For a vocabulary or translation item the orientation flips
-         * with how it was played, so it has to be derived; for a contrast item
+         * meaning. For a contrast item
          * the prompt is a Spanish sentence and the answer a Spanish word, and
          * calling either of them "the English" would put the card in the pack
          * backwards. Those fall back to front/back, which is already the right
          * way round: the gapped sentence, then the word that fills it. */
-        var side = item.play === 'type';
         var pair = item.kind === 'vocab' || item.kind === 'translate' || item.kind === 'verb';
         var rec = {
           // No id on many items (contrast carries none at all); ErrorLog
@@ -322,8 +383,8 @@ window.GameRound = (function () {
           options: item.options || null
         };
         if (pair) {
-          rec.es = item.es || (side ? item.answer : item.prompt);
-          rec.en = item.en || (side ? item.prompt : item.answer);
+          rec.es = item.es || item.answer;
+          rec.en = item.en || item.prompt;
         }
         window.ErrorLog.record(rec);
       }
@@ -332,6 +393,7 @@ window.GameRound = (function () {
     // ---- the loop ----------------------------------------------------------
     function nextItem() {
       if (ended) return;
+      if (counted && seen >= cfg.count) { finish(); return; }
       clear(fbHost);
       lastTyped = '';
       shell.dataset.state = 'play';
@@ -359,7 +421,7 @@ window.GameRound = (function () {
          * entry does not know yet whether it will be asked typed or tapped. */
         var deck = GI.missDeck(cfg.kind, 20);
         for (var d = 0; d < 6 && deck.length; d++) {
-          var cand = GI.deckItem(deck, rng);
+          var cand = GI.deckItem(deck, rng, { tapFirst: cfg.tapFirst });
           if (cand && !usedPrompts[keyOf(cand)]) { revisit = cand; break; }
         }
       }
@@ -371,11 +433,12 @@ window.GameRound = (function () {
          * steps rather than the ladder, and must deal the SAME sentences to
          * everyone on a seed — so no error-log revisits either (above). */
         var got = cfg.draw ? cfg.draw(rng)
-                : cfg.deck ? GI.deckItem(cfg.deck, rng)
+                : cfg.deck ? GI.deckItem(cfg.deck, rng, { tapFirst: cfg.tapFirst })
                 : cfg.topic ? GI.weakItem(cfg.topic, rung, rng)
                             : GI.next(cfg.kind, rung, rng,
                                 { silent: cfg.silent, tense: cfg.lockTense, tenses: cfg.tenses,
-                                  anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only });
+                                  anyBand: cfg.anyBand, theme: cfg.theme, only: cfg.only,
+                                  tapFirst: cfg.tapFirst });
         if (!got) continue;
         fallback = got;
         if (!usedPrompts[keyOf(got)]) { item = got; break; }
@@ -395,7 +458,7 @@ window.GameRound = (function () {
     function timeOut() { if (!resolved) resolve('wrong', true); }
 
     function resolve(result, timedOut) {
-      if (resolved || ended) return;
+      if (resolved || ended || holds.vis) return;
       resolved = true;
       var ms = Date.now() - itemStart;
       var item = current;
@@ -407,6 +470,7 @@ window.GameRound = (function () {
       var a = cfg.award ? cfg.award(item, result, ms, combo) : GS.award(item, result, ms, combo);
 
       if (result === 'wrong') {
+        GS.sfx('wrong');
         setCombo(0);
         misses.push(item);
         runLen = 0;
@@ -423,6 +487,9 @@ window.GameRound = (function () {
           recordHit = true;
           shell.dataset.record = '1';
           pop(cfg.recordText || '¡RÉCORD!', 'record');
+          GS.sfx('record');
+        } else {
+          GS.sfx(result, combo);
         }
       }
       writeBack(item, result);
@@ -431,6 +498,8 @@ window.GameRound = (function () {
       bestRung = Math.max(bestRung, rung);
 
       if (lives && livesLeft <= 0 && result === 'wrong') { showFeedback(item, result, timedOut, finish); return; }
+      /* The Nth answer ends a counted round, after its correction has been
+       * read: nextItem() is where the count is checked. */
       showFeedback(item, result, timedOut, nextItem);
     }
 
@@ -616,18 +685,34 @@ window.GameRound = (function () {
       var p = el('div', 'g-prompt' + (cls ? ' ' + cls : ''));
       var text = item.prompt || '';
       var m = /^(.*?)\s*\(([^()]*)\)\s*([.!?]?)$/.exec(text);
+      /* The blank is one unit: left to itself the browser breaks a run of
+       * full-width underscores across two lines ("__ / ____"). */
+      function addText(str) {
+        str.split('＿＿＿').forEach(function (part, i) {
+          if (i) p.appendChild(el('span', 'g-gap', '＿＿＿'));
+          if (part) p.appendChild(el('span', null, part));
+        });
+      }
       if (m && m[1].length > 3) {
-        p.appendChild(document.createTextNode(m[1] + m[3]));
+        addText(m[1] + m[3]);
         p.appendChild(el('span', 'g-prompt-note', m[2]));
       } else {
-        p.textContent = text;
+        addText(text);
       }
       if (text.length > 60) p.classList.add('long');
       return p;
     }
 
+    /* The English under a Spanish sentence (Verbos): small, and only when the
+     * item carries one. */
+    function subEl(item) {
+      return item.sub ? el('div', 'g-sub', item.sub) : null;
+    }
+
     function renderChoose(item) {
       itemHost.appendChild(promptEl(item));
+      var sub = subEl(item);
+      if (sub) itemHost.appendChild(sub);
       var opts = el('div', 'g-options');
       item.options.forEach(function (o) {
         var b = el('button', 'g-opt', o);
@@ -650,6 +735,8 @@ window.GameRound = (function () {
      * listeners are on the shared input above; this only has to present it. */
     function renderType(item) {
       itemHost.appendChild(promptEl(item));
+      var sub = subEl(item);
+      if (sub) itemHost.appendChild(sub);
       showTypeBox();
     }
 
@@ -678,43 +765,65 @@ window.GameRound = (function () {
       itemHost.appendChild(promptEl(item, 'build'));
       var lineEl = el('div', 'g-build');
       var bank = el('div', 'g-bank');
+      /* The bank is shuffled ONCE and every chip keeps its slot for the whole
+       * question: a used word greys out where it stands rather than leaving a
+       * hole that the rest close up, so your thumb never chases a word that
+       * moved. `built` holds bank indices, not words, so two copies of "la"
+       * are two different chips. */
       var built = [];
-      function remainingWords() {
-        var used = built.slice();
-        return item.words.filter(function (w) {
-          var i = used.indexOf(w);
-          if (i !== -1) { used.splice(i, 1); return false; }
-          return true;
+      var chips = E.shuffle(item.words.slice()).map(function (w, idx) {
+        var c = el('button', 'g-chip', w);
+        c.type = 'button';
+        c.addEventListener('click', function () {
+          if (resolved || built.indexOf(idx) !== -1) return;
+          reserve();
+          built.push(idx); draw();
+          if (built.length === item.words.length) {
+            var said = built.map(function (i) { return chips[i].textContent; }).join(' ');
+            var ok = said === item.answer;
+            lastTyped = said;                 // so the correction can show it
+            lineEl.classList.add(ok ? 'right' : 'wrong');
+            resolve(ok ? 'good' : 'wrong');
+          }
         });
-      }
+        bank.appendChild(c);
+        return c;
+      });
       function draw() {
-        clear(lineEl); clear(bank);
-        built.forEach(function (w, i) {
-          var c = el('button', 'g-chip chosen', w);
+        clear(lineEl);
+        built.forEach(function (idx, pos) {
+          var c = el('button', 'g-chip chosen', chips[idx].textContent);
           c.type = 'button';
-          c.addEventListener('click', function () { if (resolved) return; built.splice(i, 1); draw(); });
+          c.addEventListener('click', function () { if (resolved) return; built.splice(pos, 1); draw(); });
           lineEl.appendChild(c);
         });
         if (!built.length) lineEl.appendChild(el('span', 'g-build-hint', 'toca las palabras en orden'));
-        E.shuffle(remainingWords()).forEach(function (w) {
-          var c = el('button', 'g-chip', w);
-          c.type = 'button';
-          c.addEventListener('click', function () {
-            if (resolved) return;
-            built.push(w); draw();
-            if (built.length === item.words.length) {
-              var ok = built.join(' ') === item.answer;
-              lastTyped = built.join(' ');     // so the correction can show it
-              lineEl.classList.add(ok ? 'right' : 'wrong');
-              resolve(ok ? 'good' : 'wrong');
-            }
-          });
-          bank.appendChild(c);
+        chips.forEach(function (c, idx) {
+          var used = built.indexOf(idx) !== -1;
+          c.classList.toggle('used', used);
+          c.disabled = used;
         });
       }
       draw();
       itemHost.appendChild(lineEl);
       itemHost.appendChild(bank);
+      /* The answer line holds the same chips as the bank, so the bank's height
+       * is what the line will need when full. Reserving it means the line never
+       * grows and the bank never slides down as you build. The line is 30px
+       * narrower than the bank (padding and border), so one spare row covers a
+       * different wrap. Measured again on the first tap and on the next frame,
+       * because the question can be drawn while it is still hidden, where the
+       * bank measures 0 and nothing would be reserved. */
+      var reserved = false;
+      function reserve() {
+        if (reserved) return;
+        var bankH = bank.offsetHeight;
+        if (!bankH) return;
+        reserved = true;
+        lineEl.style.minHeight = (bankH + 26 + 47) + 'px';   // + padding and border, + a spare row
+      }
+      reserve();
+      if (!reserved && window.requestAnimationFrame) requestAnimationFrame(reserve);
     }
 
     function renderListen(item) {
@@ -790,7 +899,7 @@ window.GameRound = (function () {
       });
       // the daily challenge is one shared round; rating it would mean rating
       // everyone against the same draw, which is a different thing
-      var rated = cfg.key === GS.dailyKey() || cfg.award ? null : GS.rate(cfg.key, score);
+      var rated = cfg.key === GS.dailyKey() || cfg.award || counted ? null : GS.rate(cfg.key, score);
       /* A round that answers to somebody else says so here, in place of the
        * personal-best line: js/liga.js files the round and returns where it
        * leaves you in the week. */

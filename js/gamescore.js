@@ -372,6 +372,54 @@ window.GameScore = (function () {
     try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch (e) {}
   }
 
+  /* ---- the little sounds ---------------------------------------------------
+   * A right answer used to be silent: a green flash and a number. A short tone
+   * that climbs a step with every answer in the combo is the cheapest thing
+   * there is for making a run FEEL like a run, and the climb is what makes
+   * breaking it audible. Synthesised, so there is nothing to download and it
+   * works offline. "No puedo escuchar ahora" silences it with the rest, and
+   * so does the phone's own silent switch, which Web Audio respects. */
+  var actx = null;
+  var STEPS = [0, 2, 4, 7, 9, 12, 14, 16, 19, 21, 24];     // a major pentatonic run
+  function tone(freq, at, dur, type, vol) {
+    var o = actx.createOscillator(), g = actx.createGain();
+    o.type = type || 'sine';
+    o.frequency.setValueAtTime(freq, at);
+    g.gain.setValueAtTime(0.0001, at);
+    g.gain.exponentialRampToValueAtTime(vol || 0.12, at + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+    o.connect(g); g.connect(actx.destination);
+    o.start(at); o.stop(at + dur + 0.02);
+  }
+  function sfx(kind, combo) {
+    if (silent()) return;
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      actx = actx || new AC();
+      if (actx.state === 'suspended') actx.resume();
+      var t = actx.currentTime + 0.005, base = 523.25;        // C5
+      var f = function (step) { return base * Math.pow(2, step / 12); };
+      if (kind === 'good') {
+        var s = STEPS[Math.min(combo || 0, STEPS.length - 1)];
+        tone(f(s), t, 0.16, 'triangle', 0.13);
+        tone(f(s + 7), t + 0.05, 0.14, 'sine', 0.06);
+      } else if (kind === 'near') {
+        tone(f(0), t, 0.14, 'triangle', 0.1);
+      } else if (kind === 'wrong') {
+        tone(f(-5), t, 0.12, 'square', 0.035);
+        tone(f(-8), t + 0.09, 0.2, 'square', 0.035);
+      } else if (kind === 'record') {
+        [0, 4, 7, 12].forEach(function (st, i) { tone(f(st + 12), t + i * 0.07, 0.22, 'triangle', 0.1); });
+      } else if (kind === 'board') {
+        [0, 7, 12].forEach(function (st, i) { tone(f(st + 5), t + i * 0.06, 0.18, 'triangle', 0.1); });
+      }
+    } catch (e) {}
+    /* A buzz on a miss only: buzzing on every right answer would turn the
+     * phone into a pager. Android only; iOS has no vibrate and ignores it. */
+    if (kind === 'wrong' && navigator.vibrate) { try { navigator.vibrate(40); } catch (e) {} }
+  }
+
   /* ---- the rating ----------------------------------------------------------
    * A personal best only moves when you beat it, so most rounds produce
    * nothing at all — which is the opposite of what makes a chess rating grip.
@@ -447,7 +495,7 @@ window.GameScore = (function () {
     curveAt: curveAt, downsample: downsample,
     dailySeed: dailySeed, dailyKey: dailyKey, dailyLabel: dailyLabel, dailyStreak: dailyStreak,
     weekSummary: weekSummary, today: today, fmt: fmt,
-    silent: silent, setSilent: setSilent,
+    silent: silent, setSilent: setSilent, sfx: sfx,
     rating: rating, rate: rate,
     lastTenseCheck: lastTenseCheck, markTenseCheck: markTenseCheck, tenseSeen: tenseSeen,
     tenseRound: tenseRound

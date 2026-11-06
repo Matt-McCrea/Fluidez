@@ -397,9 +397,11 @@ window.StageProduce = (function () {
 
   /* ---- About me --------------------------------------------------------------
    * At a unit's output day: ONE true sentence about the learner, using the unit's
-   * point. The checker holds it to a constraint built from the unit's node; the
-   * learner may add the English. It joins the script (js/buildit.js) and becomes
-   * a review card. */
+   * point. The checker holds it to a constraint built from the unit's node.
+   *
+   * A TASK ONLY, by the owner's ruling (5 November). It used to be saved to the
+   * script (js/buildit.js) and come back as a review card; nothing is saved
+   * now. Lines saved before then stay in My script and in review. */
   function aboutDay(ctx) {
     var entry = sceneDay(ctx), BI = window.BuildIt;
     if (!entry || !BI || !entry.unit || entry.practice) return null;
@@ -423,18 +425,17 @@ window.StageProduce = (function () {
     return l.replace(/\s+[-\u2013\u2014]+\s+/g, ', ').replace(/[\u2013\u2014]/g, ', ').replace(/(\w)-(?=\s)/g, '$1');
   }
   function runAboutMe(body, ab, ctx, done) {
-    var BI = window.BuildIt, prompt = ab.spec.prompt || UI.t('Una línea verdadera para tu guion: di algo sobre ti ' + ab.spec.text + '.', 'Write one true line for your script: say something about you ' + ab.spec.text + '.');
-    if (ab.title) body.appendChild(UI.el('div', 'muted small', UI.t('Mi guion', 'My script') + ' · ' + esc(ab.title)));
+    var prompt = ab.spec.prompt || UI.t('Una línea verdadera: di algo sobre ti ' + ab.spec.text + '.', 'Write one true line: say something about you ' + ab.spec.text + '.');
+    if (ab.title) body.appendChild(UI.el('div', 'muted small', UI.t('Sobre ti', 'About you') + ' · ' + esc(ab.title)));
     body.appendChild(UI.el('h2', 'q-text', emph(prompt)));
     var ta = UI.el('textarea', 'answer-area');
     ta.rows = 2; ta.placeholder = 'escribe en español…'; ta.spellcheck = false;
-    var en = UI.el('input', 'answer-input wide'); en.type = 'text'; en.placeholder = UI.t('En inglés (opcional)', 'In English (optional)');
     var list = UI.el('ul', 'constraint-list');
-    var add = UI.el('button', 'primary-btn', UI.t('Agregar a mi guion', 'Add to my script')); add.type = 'button'; add.disabled = true;
+    var add = UI.el('button', 'primary-btn', UI.t('Listo', 'Done')); add.type = 'button'; add.disabled = true;
     var skip = UI.el('button', 'ghost-btn', UI.t('Saltar', 'Skip')); skip.type = 'button';
     var row = UI.el('div', 'row-controls'); row.appendChild(add); row.appendChild(skip);
     body.appendChild(ta); body.appendChild(UI.accentBar(function () { return ta; }));
-    body.appendChild(en); body.appendChild(list); body.appendChild(row);
+    body.appendChild(list); body.appendChild(row);
     ta.focus();
     function check() {
       var res = C.checkWriting({ type: 'scene', constraints: ab.spec.constraints }, ta.value);
@@ -446,17 +447,9 @@ window.StageProduce = (function () {
     check();
     add.addEventListener('click', function () {
       if (add.disabled) return;
-      if (BI.isDuplicate && BI.isDuplicate(ta.value)) {
-        var dm = body.querySelector('.about-dup');
-        if (!dm) { dm = UI.el('p', 'muted about-dup'); list.parentNode.insertBefore(dm, list); }
-        dm.textContent = BI.DUP_MSG;
-        return;
-      }
-      BI.add({ unit: ab.unit, es: ta.value, en: en.value, p: prompt.replace(/\*/g, ''), day: ctx.di });
       UI.clear(body);
-      body.appendChild(UI.el('h2', null, UI.t('Agregada a tu guion', 'Added to your script')));
+      body.appendChild(UI.el('h2', null, UI.t('¡Bien dicho!', 'Well said!')));
       body.appendChild(UI.el('p', 'model-answer', esc(ta.value.trim())));
-      body.appendChild(UI.el('p', 'muted', UI.t('Vuelve en tus repasos.', 'It comes back in your reviews.')));
       body.appendChild(UI.nextBtn(UI.t('Continuar →', 'Continue →'), done));
     });
     skip.addEventListener('click', done);
@@ -538,7 +531,7 @@ window.StageProduce = (function () {
     function playAbout() {
       aboutDone = true;
       UI.clear(body);
-      progress.textContent = 'Mi guion';
+      progress.textContent = UI.t('Sobre ti', 'About you');
       if (st) st.save(tasks.length, { done: doneCount, bd: 1, ab: 1 });
       runAboutMe(body, about, ctx, finish);
     }

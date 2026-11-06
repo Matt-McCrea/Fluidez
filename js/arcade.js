@@ -103,7 +103,14 @@
   var AKEY = 'fluidez.arcade';
   function loadArc() { try { return JSON.parse(localStorage.getItem(AKEY)) || {}; } catch (e) { return {}; } }
   function saveArc(o) { try { localStorage.setItem(AKEY, JSON.stringify(o)); } catch (e) {} }
-  function currentFocus() { var a = loadArc(); return a.focus || null; }
+  /* THE SHELF, NOT THE WHOLE ARCADE. On 6 Nov the board was cut to a big Jugar
+   * card and three tiles (Verbos, Palabras, Frases); the league, the daily
+   * challenge, the study card, the focus chip and the other nine games are
+   * hidden, not deleted. Setting window.arcadeFull = true before this file
+   * loads brings that board back as it was, and the old tests run against it. */
+  if (window.arcadeFull === undefined) window.arcadeFull = false;
+  function FULL() { return window.arcadeFull === true; }
+  function currentFocus() { if (!FULL()) return null; var a = loadArc(); return a.focus || null; }
   function setArcFocus(f) { var a = loadArc(); a.focus = f || null; saveArc(a); applyFocus(); }
 
   function tenseLabel(k) {
@@ -140,7 +147,7 @@
   // so a round started from anywhere is already pointed the right way.
   function applyFocus() {
     if (!window.GameItems) return;
-    var f = currentFocus();
+    var f = currentFocus();          // null unless the full board is on
     if (f && f.kind === 'tense') window.GameItems.setFocus({ type: 'grammar', id: f.tense, tense: f.tense });
     else window.GameItems.setFocus(null);
   }
@@ -355,7 +362,7 @@
     wrap.appendChild(top);
 
     // the league: the one number here that somebody else can beat
-    if (window.Liga) wrap.appendChild(window.Liga.card({ before: function () { pushView('round'); } }));
+    if (FULL() && window.Liga) wrap.appendChild(window.Liga.card({ before: function () { pushView('round'); } }));
 
     // today's challenge
     var dailyKey = GS.dailyKey();
@@ -368,7 +375,7 @@
       ? 'Hoy: ' + num(playedToday) + '  ·  récord ' + num(GS.pb(dailyKey))
       : 'Mixto · 90 s · el mismo para todos, hasta medianoche'));
     daily.addEventListener('click', function () { G.open(dailyKey, board); });
-    wrap.appendChild(daily);
+    if (FULL()) wrap.appendChild(daily);
 
     /* THE DAY'S PACK, above the games. It sits here rather than among the tiles
      * because it is not one: no clock, no score, no record to beat. The tiles
@@ -377,7 +384,7 @@
      * Shown as done rather than hidden once finished — hiding it would leave
      * the board looking like it had lost a feature, and the state is worth
      * seeing. */
-    var packed = window.Study ? window.Study.pack() : [];
+    var packed = FULL() && window.Study ? window.Study.pack() : [];
     if (packed.length) {
       var done = window.Study.doneToday();
       var st = el('button', 'arc-study' + (done ? ' done' : ''));
@@ -400,12 +407,22 @@
     chip.appendChild(el('b', null, focusLabel(f)));
     chip.appendChild(el('span', 'arc-focus-x', '▾'));
     chip.addEventListener('click', focusPicker);
-    wrap.appendChild(chip);
+    if (FULL()) wrap.appendChild(chip);
+
+    // JUGAR: the one big button. It deals the mix; the three tiles below are
+    // the same cards one kind at a time.
+    if (!FULL()) {
+      var jg = G.GAMES.filter(function (g) { return g.key === 'jugar'; })[0];
+      if (jg) wrap.appendChild(jugarCard(jg));
+    }
 
     // the shelf
     var grid = el('div', 'arc-grid');
-    G.GAMES.forEach(function (g) {
-      var p = GS.profileOf(g.key);
+    var shelf = G.GAMES.filter(function (g) { return FULL() ? !g.shelf : (g.shelf && g.key !== 'jugar'); });
+    // Verbos, Palabras, Frases, in that order, which is the order of the goal
+    shelf.forEach(function (g) {
+      var mk = shelfStats(g);
+      var p = mk.p;
       var tile = el('button', 'arc-tile');
       tile.type = 'button';
       tile.style.setProperty('--g', g.hue);
@@ -428,10 +445,10 @@
 
       var pb = el('span', 'arc-pb' + (p.pb ? '' : ' none'), p.pb ? num(p.pb) : 'sin récord');
       tile.appendChild(pb);
-      if (p.pb) tile.appendChild(el('span', 'arc-pb-k', 'récord'));
+      if (p.pb) tile.appendChild(el('span', 'arc-pb-k', mk.label ? 'récord · ' + mk.label : 'récord'));
       if (p.scores.length > 1) tile.appendChild(spark(p.scores, g.hue, 120, 20));
 
-      if (ok) tile.addEventListener('click', function () { play(g); });
+      if (ok) tile.addEventListener('click', function () { if (g.shelf) sheet(g); else play(g); });
 
       // The numbers, behind their own control so a tap on the tile always
       // means "play" — the one thing this screen must never make ambiguous.
@@ -439,7 +456,7 @@
         var data = el('button', 'arc-data', '≡');
         data.type = 'button';
         data.setAttribute('aria-label', 'Datos de ' + g.name);
-        data.addEventListener('click', function (e) { e.stopPropagation(); stats(g); });
+        data.addEventListener('click', function (e) { e.stopPropagation(); stats(mk.g); });
         tile.appendChild(data);
       }
       grid.appendChild(tile);
@@ -451,6 +468,124 @@
     wrap.appendChild(foot);
 
     h.appendChild(wrap);
+  }
+
+  /* ---- the shelf: records per shape, the Jugar card, the sheet ----------
+   * Each game keeps two records, `<key>:c` (Contrarreloj) and `<key>:t`
+   * (Tranquilo), because a score from ten untimed questions and a score from
+   * sixty seconds against a clock are different claims. The tile shows the
+   * clock record when there is one, since that is the one with a ghost, and
+   * says which it is showing. The old games have one record under their key. */
+  function modeKey(g, m) { return g.key + ':' + m; }
+  function shelfStats(g) {
+    if (!g.shelf) return { p: GS.profileOf(g.key), g: g, label: null };
+    var pc = GS.profileOf(modeKey(g, 'c')), pt = GS.profileOf(modeKey(g, 't'));
+    var useT = !pc.plays && pt.plays;
+    var p = useT ? pt : pc;
+    // plays are the two shapes together, so the stats control appears for either
+    p = Object.assign({}, p, { plays: pc.plays + pt.plays });
+    var sg = { key: modeKey(g, useT ? 't' : 'c'), name: g.name, rule: g.rule, hue: g.hue };
+    return { p: p, g: sg, label: p.pb ? (useT ? '10' : '60 s') : null };
+  }
+
+  function jugarCard(g) {
+    var mk = shelfStats(g);
+    var c = el('button', 'arc-jugar');
+    c.type = 'button';
+    c.style.setProperty('--g', g.hue);
+    c.appendChild(el('span', 'arc-jugar-k', 'Jugar'));
+    c.appendChild(el('span', 'arc-jugar-t', 'Un poco de todo'));
+    c.appendChild(el('span', 'arc-jugar-s', mk.p.pb
+      ? 'récord ' + num(mk.p.pb) + ' · ' + mk.label
+      : 'Verbos, palabras y frases'));
+    c.addEventListener('click', function () { sheet(g); });
+    return c;
+  }
+
+  /* What the player last chose, kept here (fluidez.arcade), never in the app's
+   * own keys. Both are optional: no tenses means "all of your level". */
+  function lastMode() { var a = loadArc(); return a.mode === 't' || a.mode === 'c' ? a.mode : 'c'; }
+  function chosenTenses() {
+    var a = loadArc(), ts = a.tenses;
+    if (!ts || !ts.length || !window.ENGINE) return [];
+    var known = window.ENGINE.TENSES.map(function (t) { return t.key; });
+    return ts.filter(function (t) { return known.indexOf(t) !== -1; });
+  }
+  function saveTenses(ts) { var a = loadArc(); a.tenses = ts; saveArc(a); }
+
+  /* THE SHEET. Tapping a tile does not start a round, it asks which kind: ten
+   * questions with no clock for a few stops on a bus, or sixty seconds against
+   * the record. Verbos adds its tense picker, because the useful question for a
+   * verb drill is "which tense", and the answer should survive to next time. */
+  function sheet(g) {
+    pushView('sheet');
+    var h = host();
+    clear(h);
+    var wrap = el('div', 'arc-stats');
+    wrap.style.setProperty('--g', g.hue);
+    var top = el('div', 'arc-stats-top');
+    var back = el('button', 'arc-back', '←');
+    back.type = 'button';
+    back.setAttribute('aria-label', 'Volver');
+    back.addEventListener('click', goBack);
+    top.appendChild(back);
+    top.appendChild(el('h2', null, g.name));
+    wrap.appendChild(top);
+    wrap.appendChild(el('p', 'arc-sub', g.blurb || g.rule));
+
+    if (g.key === 'verbos2' && window.ENGINE && window.ENGINE.TENSES) {
+      wrap.appendChild(el('div', 'arc-group', 'Tiempos'));
+      var chips = el('div', 'arc-chips');
+      var sel = chosenTenses();
+      var all = el('button', 'arc-chip', 'Todos los de tu nivel');
+      all.type = 'button';
+      var byKey = {};
+      function paint() {
+        all.classList.toggle('on', !sel.length);
+        Object.keys(byKey).forEach(function (k) { byKey[k].classList.toggle('on', sel.indexOf(k) !== -1); });
+      }
+      all.addEventListener('click', function () { sel = []; saveTenses(sel); paint(); });
+      chips.appendChild(all);
+      window.ENGINE.TENSES.forEach(function (t) {
+        var b = el('button', 'arc-chip', tenseLabel(t.key));
+        b.type = 'button';
+        b.addEventListener('click', function () {
+          var i = sel.indexOf(t.key);
+          if (i === -1) sel.push(t.key); else sel.splice(i, 1);
+          saveTenses(sel); paint();
+        });
+        byKey[t.key] = b;
+        chips.appendChild(b);
+      });
+      paint();
+      wrap.appendChild(chips);
+    }
+
+    var last = lastMode();
+    var modes = el('div', 'arc-modes');
+    function mode(m, title, note) {
+      var b = el('button', 'arc-mode' + (m === last ? ' on' : ''));
+      b.type = 'button';
+      b.appendChild(el('b', null, title));
+      b.appendChild(el('span', null, note));
+      b.addEventListener('click', function () { startShelf(g, m); });
+      modes.appendChild(b);
+    }
+    mode('t', 'Tranquilo · 10 preguntas', 'sin reloj; la rapidez solo suma puntos');
+    mode('c', 'Contrarreloj · 60 s', 'el reloj para si se bloquea el móvil');
+    wrap.appendChild(modes);
+    h.appendChild(wrap);
+  }
+
+  function startShelf(g, m) {
+    var a = loadArc(); a.mode = m; saveArc(a);
+    /* The sheet already owns this history entry; a round shares it rather than
+     * stacking a second, as the study pack does. */
+    VIEW = 'round';
+    var extra = m === 't' ? { key: modeKey(g, 't'), count: 10, duration: null }
+                          : { key: modeKey(g, 'c'), duration: 60000 };
+    if (g.key === 'verbos2') { var ts = chosenTenses(); if (ts.length) extra.tenses = ts; }
+    G.open(g.key, board, extra);
   }
 
   /* Start a game with the arcade's focus honoured as far as that game can:
